@@ -1,8 +1,6 @@
-" Documentation {{{
 " TODO:
 " 1 - Study error handling and failure method call stack
-" 2 - Formally define the delimiters for toggling on_valid_callname
-" 3 - Find next and previous method call
+" 2 - Find next and previous method call
 " Index_List:
 " moveForward.setSpeed(normalSpeed);
 " 0-----------1------2------------3
@@ -12,7 +10,9 @@
 " 3 - [aA]m_finish - around_finish
 " names   = [large_start , small_start , inside_finish , around_finish ]
 "
-" Two Important Functions - ParseLine and GetIndexListRelativeToCursor
+" Two Important Functions:
+" 1 - ParseLine 
+" 2 - GetIndexListRelativeToCursor
 "
 " ParseLine:
 " This function takes a line and parses it for methods and nested methods. The
@@ -267,6 +267,24 @@ onoremap  <silent> am :<c-u>call <sid>VisualSelect(<sid>CurrentFnameA())<CR>
 onoremap  <silent> aM :<c-u>call <sid>VisualSelect(<sid>CurrentFnameBigA())<CR>
 onoremap  <silent> iM :<c-u>call <sid>VisualSelect(<sid>CurrentFnameBigI())<CR>
 
+" console.log("hello");
+function! s:DeleteSurroundingMethod()
+    let pos_list = s:CurrentFnameBigA()
+    let [_, _, end_pos] = pos_list
+    let [_, _, around_finish_col, _] = end_pos
+    exec 'call cursor(".", ' . around_finish_col . ')'
+
+    let reg_save = @a
+    normal! "ayi)
+    call s:VisualSelect(pos_list)
+    normal! "ap
+    normal! `<
+
+    let @a = reg_save
+endfunction
+
+
+nnoremap  <silent> dsm :<c-u>call <sid>DeleteSurroundingMethod()<CR>
 " call textobj#user#plugin('fname', {
 " \    'code': {
 " \        '*sfile*': expand('<sfile>:p'),

@@ -3,8 +3,7 @@ set viminfo='10000,<50,s10,h,rA:,rB:,%,f1
 " Plugin & Filetypes {{{
 filetype indent plugin on | syntax on 
 " }}}
-colorscheme strawberry-light
-colorscheme strawberry_extended
+colorscheme codedark
 " Remaps {{{
 " hjkl to jkl; {{{
 noremap j h
@@ -12,10 +11,8 @@ noremap k gj
 noremap l gk
 noremap ; l
 inoremap jk 
-noremap j h
-noremap k gj
-noremap l gk
-noremap ; l
+inoremap Jk 
+inoremap jK 
 onoremap k j
 onoremap l k
 
@@ -78,13 +75,9 @@ set sidescroll=1
 
 " Searching {{{
 set ignorecase smartcase  
-set nohlsearch incsearch
 
-augroup ToggleHighlight
-    au!
-    au CmdlineEnter /,\? :set hlsearch
-    au CmdlineLeave /,\? :set nohlsearch
-augroup END
+set hlsearch
+set incsearch
 
 cno <expr>  <tab>    getcmdtype() =~ '[/?]' ? (getcmdtype() == '/' ? '<c-g>' : '<c-t>') : feedkeys('<tab>', 'int')[1]
 cno <expr>  <s-tab>  getcmdtype() =~ '[/?]' ? (getcmdtype() == '/' ? '<c-t>' : '<c-g>') : feedkeys('<s-tab>', 'int')[1]
@@ -97,10 +90,50 @@ set wildmode=full
 
 " }}}
 
-set guifont=Consolas:h24:cANSI:qDRAFT
+" Setting guifont causes vim to go from maximized mode to windowed mode
+if &guifont != 'Consolas:h12:cANSI:qDRAFT'
+    set guifont=Consolas:h12:cANSI:qDRAFT
+endif
+
 set guioptions=mre
 set showtabline=2
 set guitablabel=%t
-silent! unmenu NPP
-menu NPP.Open\ in\ Default\ Viewer :call system(shellescape(expand("%:p")))<CR>
-menu NPP.Show\ File\ in\ Directory :call system('explorer "' . expand("%:p:h") . '"')<CR>
+setlocal encoding=utf8
+silent! unmenu 📁
+menu 📁.▶\ \ Open\ in\ Default\ Viewer :call system(shellescape(expand("%:p")))<CR>
+menu 📁.📁\ \ Show\ File\ in\ Directory :call system('explorer "' . expand("%:p:h") . '"')<CR>
+menu 📁.📂\ \ Open\ Plugins\ Directory :call system('explorer %userprofile%\vimfiles\pack\plugins\opt')<CR>
+menu 📁.🔍\ \ Open\ Search\ Everything :call system('everything -path .')<CR>
+map <RightMouse> <C-o>
+set belloff=all
+
+inoremap <C-v> <C-r>+
+
+au! BufRead *.afl set filetype=afl 
+
+let &pythonthreedll='C:\Program Files (x86)\Python\Python37-32\python37.dll'
+
+if has('python3')
+    silent! python3 1
+endif
+
+let g:CoolTotalMatches=1
+let g:UltiSnipsJumpForwardTrigger='<tab>'
+
+iabbrev qq “”
+iabbrev -- –
+iabbrev –- <BS>—
+iabbrev 's ’s
+iabbrev 't ’t
+
+set scrolloff=10
+nnoremap p ]p
+nnoremap P ]P
+
+if mapcheck('<C-x>', "v") != ""
+    vunmap <C-x>
+endif
+
+if g:colors_name == "codedark"
+    hi IncSearch guibg=#682900
+endif

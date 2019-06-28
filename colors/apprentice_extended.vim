@@ -140,21 +140,11 @@ hi! link Constant Normal
 hi! link Statement Normal
 " hi! link PreProc ???
 hi! link Type Normal
-hi! link Special String
+hi String guifg=#8fafd7
+" hi! link Special String
 " hi! link Title Normal
 " hi! link Identifier Normal
 hi! link Folded Normal
 hi! link VertSplit StatusLineNC
-
-" }}}
-" HighlightGroupUnderCursor {{{
-function! HighlightGroupUnderCursor()
-    let a = synIDattr(synID(line("."),col("."),1),"name")
-    let b = synIDattr(synID(line("."),col("."),0),"name")
-    let c = synIDattr(synIDtrans(synID(line("."),col("."),1)),"name")
-    echo a . ' -> ' . b . ' -> ' . c 
-endfunction
-
-map <F10> :call HighlightGroupUnderCursor()<CR>
 
 " }}}

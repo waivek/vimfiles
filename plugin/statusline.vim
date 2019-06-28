@@ -37,7 +37,7 @@ function! Relpath()
 
 endfunction
 set statusline=%<%{Relpath()}
-set statusline+=%m%r%y%w%=%l/%-6L\ %3c 
+set statusline+=%m%r%y%w%=[%{FugitiveHead()}]\ %l/%-6L\ %3c 
 " set statusline=%f%m%r%y%w%=%l/%-6L\ %3c 
 " }}}
 " Error Lines {{{
@@ -90,9 +90,9 @@ function! PrintErrorMsg()
     endif
 endfunction
 
-au! CursorMoved *
+" au! CursorMoved *
 au! QuickFixCmdPost *
-au CursorMoved * call PrintErrorMsg()
+" au CursorMoved * call PrintErrorMsg()
 au QuickFixCmdPost * call ParseQuickfix()
 " }}}
 " Traverse Indent {{{

@@ -64,7 +64,7 @@ function! MruFunction(args)
     endif
     if !empty(fname)
         let pos_plus_one = GetStrBeforeColon(fname)
-        execute "tabedit " . v:oldfiles[pos_plus_one-1]
+        execute "edit " . v:oldfiles[pos_plus_one-1]
     else
         echo "Invalid Input"
     endif
