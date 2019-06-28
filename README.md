@@ -1,6 +1,6 @@
 # vimfiles
 
-Contains 3 custom plugins and 2 colorschemes.
+Contains 4 custom plugins and 2 colorschemes.
 
 Plugins:
 - method-textobj (300 lines) - Provides textobjects bound by default to `im`,
