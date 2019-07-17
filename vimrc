@@ -112,6 +112,7 @@ set belloff=all
 inoremap <C-v> <C-r>+
 
 au! BufRead *.afl set filetype=afl 
+au Filetype afl setlocal cms=#%s
 
 let &pythonthreedll='C:\Program Files (x86)\Python\Python37-32\python37.dll'
 
@@ -177,3 +178,5 @@ let g:ale_lint_on_text_changed = 0
 let g:ale_lint_on_enter = 0
 
 au GUIEnter * simalt ~x
+
+

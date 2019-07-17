@@ -1,6 +1,6 @@
 # vimfiles
 
-Contains 5 custom plugins and 2 colorschemes.
+Contains 5 custom plugins, 2 colorschemes, 3 ftplugins
 
 Plugins:
 - method-textobj (300 lines) - Provides textobjects bound by default to `im`,
@@ -20,3 +20,8 @@ Colorschemes:
 - apprentice+apprentice\_extended - Combination of the apprentice colorscheme and
   Jonathan Blow's emacs colorscheme
 - strawberry+strawberry\_extended - Modified pink, light colorscheme
+
+Ftplugin:
+- css.vim - Rule text object
+- python.vim - Print python variable
+- html.vim - Print javascript variable
