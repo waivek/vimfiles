@@ -26,14 +26,14 @@ Ftplugin:
 - python.vim - Print python variable
 - html.vim - Print javascript variable
 
-3rd Party Plugins:
+3rd Party Plugins (sorted from most frequently used to least frequently used):
 - tcomment\_vim
 - tabular
 - vim-surround
 - vim-repeat
 - traces.vim
-- vim-argumentative
 - vim-pasta
+- vim-argumentative
 - ultisnips
 - ale
 - jedi-vim
