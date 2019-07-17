@@ -1,4 +1,6 @@
 " Works on multi-line and multi-width characters :)
+" TODO: test lines containting ,  etc.
+" TODO: test multiline replace
 " TEST CASES:
 " array_index[12]                                                      | array_index[12]
 " $1                                                                   | $1
@@ -44,6 +46,20 @@ function! s:Visual2Search()
 
     return search_string
 endfunction
+
+" function! TestVisual2Search()
+"     let escape_chars =  '[]\$^*~."/'
+"     let last_miss_nr = -1
+"     for i in range(0, 50)
+"         let search_string = escape(nr2char(i), escape_chars)
+"         let search_string = substitute(search_string, "\\n", '\\n', "g")
+"         let match_result = match(nr2char(i), search_string)
+"         " if match_result != 0
+"             echo "False - number: " . i . ", symbol: " . nr2char(i) . ", search_string: " . search_string
+"         " endif
+"     endfor
+" endfunction
+" call TestVisual2Search()
 
 function! s:VisualHash()
     let search_string = s:Visual2Search()

@@ -36,21 +36,20 @@
 " QuickFix syntax : X:\Dropbox\.vim\syntax\qf.vim
 " Gvim.exe {{{
 if colors_name == "apprentice"
-  hi Visual gui=NONE
+  " hi Visual gui=NONE
+  " hi   Visual      guifg=black     guibg=#5faf8d
 
-  hi   Normal       guifg=#D6B089   guibg=#262626 
-  hi   MatchParen   guifg=black     guibg=#5fafaf
-  hi   Tag          guifg=#ff8700   guibg=NONE
-  hi   Cursor       guifg=black     guibg=white
-  " hi   String       guifg=#5fafaf   guibg=NONE 
-  hi   String      guifg=#87af87   guibg=NONE
-  hi   Visual      guifg=black     guibg=#5faf8d
-  hi   IncSearch   guifg=white     guibg=#af5f5f
-  hi   Search      guifg=black     guibg=#5fafaf
-  hi   Function    guifg=#d47777   guibg=NONE
+   hi     Normal       guifg=#D6B089       guibg=#262626
+   hi     MatchParen   guifg=black         guibg=#5fafaf
+   hi     Tag          guifg=#ff8700       guibg=NONE
+   hi     Cursor       guifg=black         guibg=white
+   hi     String       guifg=#87af87       guibg=NONE
+   hi     IncSearch    guifg=white         guibg=#af5f5f
+   hi     Search       guifg=black         guibg=#5fafaf
+   hi     Function     guifg=#d47777       guibg=NONE
+   hi     StatusLine   gui=reverse         guifg=NONE      guibg=NONE
+   hi     StatusLineNC guifg=black         guibg=#6c6c6c
 
-  hi   StatusLine   gui=reverse guifg=NONE guibg=NONE
-  hi StatusLineNC   guifg=black guibg=#6c6c6c
 endif
 " }}}
   hi   Visual         ctermfg=NONE ctermbg=NONE cterm=NONE term=NONE
@@ -140,8 +139,7 @@ hi! link Constant Normal
 hi! link Statement Normal
 " hi! link PreProc ???
 hi! link Type Normal
-hi String guifg=#8fafd7
-" hi! link Special String
+hi! link Special String
 " hi! link Title Normal
 " hi! link Identifier Normal
 hi! link Folded Normal

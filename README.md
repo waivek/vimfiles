@@ -1,6 +1,6 @@
 # vimfiles
 
-Contains 4 custom plugins and 2 colorschemes.
+Contains 5 custom plugins and 2 colorschemes.
 
 Plugins:
 - method-textobj (300 lines) - Provides textobjects bound by default to `im`,
@@ -13,6 +13,8 @@ Plugins:
   the changed text. The `.` command repeats the change for the next match. This
   is useful for renaming. Depends on the plugin romainl/vim-cool for
   highlighting.
+- modified version of romainl’s plugin `vim-cool`. works with `search.vim` to
+  turn off highlighting when cursor moves away from match.
 
 Colorschemes:
 - apprentice+apprentice\_extended - Combination of the apprentice colorscheme and

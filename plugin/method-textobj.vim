@@ -283,27 +283,4 @@ function! s:DeleteSurroundingMethod()
     let @a = reg_save
 endfunction
 
-
 nnoremap  <silent> dsm :<c-u>call <sid>DeleteSurroundingMethod()<CR>
-" call textobj#user#plugin('fname', {
-" \    'code': {
-" \        '*sfile*': expand('<sfile>:p'),
-" \        'select-a-function' : 's:CurrentFnameA',
-" \        'select-a' : 'am',
-" \        'select-i-function' : 's:CurrentFnameI',
-" \        'select-i' : 'im',
-" \    }
-" \})
-" 
-" call textobj#user#plugin('fnamebig', {
-" \    'code': {
-" \        '*sfile*': expand('<sfile>:p'),
-" \        'select-a-function' : 's:CurrentFnameBigA',
-" \        'select-a' : 'aM',
-" \        'select-i-function' : 's:CurrentFnameBigI',
-" \        'select-i' : 'iM',
-" \    }
-" \})
-
-" }}}
-

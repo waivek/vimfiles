@@ -1,5 +1,24 @@
 " Status Line {{{
 " 
+
+function! LinterStatus() abort
+    if ale#engine#IsCheckingBuffer(bufnr(''))
+        return "Linting..."
+    endif
+
+    let l:counts = ale#statusline#Count(bufnr(''))
+
+    let l:all_errors = l:counts.error + l:counts.style_error
+    let l:all_non_errors = l:counts.total - l:all_errors
+
+    return l:counts.total == 0 ? 'OK' : printf(
+    \   '%dW %dE',
+    \   all_non_errors,
+    \   all_errors
+    \)
+endfunction
+
+" set statusline=%{LinterStatus()}
 function! Relpath()
     if &ft == "help" || &ft == "man.cpp"
         return expand("%:t")
@@ -37,7 +56,7 @@ function! Relpath()
 
 endfunction
 set statusline=%<%{Relpath()}
-set statusline+=%m%r%y%w%=[%{FugitiveHead()}]\ %l/%-6L\ %3c 
+set statusline+=%m%r%y%w%=\ %l/%-6L\ %3c 
 " set statusline=%f%m%r%y%w%=%l/%-6L\ %3c 
 " }}}
 " Error Lines {{{
