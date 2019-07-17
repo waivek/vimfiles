@@ -46,6 +46,7 @@ xmap Q :norm! @a<CR>
 xmap . :norm! .<CR>
 
 nnoremap <silent> ch :cd %:p:h<CR>
+nnoremap <silent> c. :cd ..<CR>
 tnoremap jk <C-W>N
 " }}}
 " Option Settings {{{
@@ -81,6 +82,7 @@ set incsearch
 
 cno <expr>  <tab>    getcmdtype() =~ '[/?]' ? (getcmdtype() == '/' ? '<c-g>' : '<c-t>') : feedkeys('<tab>', 'int')[1]
 cno <expr>  <s-tab>  getcmdtype() =~ '[/?]' ? (getcmdtype() == '/' ? '<c-t>' : '<c-g>') : feedkeys('<s-tab>', 'int')[1]
+
 set nowrapscan
 " }}}
 " Completion {{{
@@ -120,15 +122,30 @@ endif
 let g:CoolTotalMatches=1
 let g:UltiSnipsJumpForwardTrigger='<tab>'
 
+" Argumentative is modified. At the end of s:MoveLeft() and s:MoveRight, these
+" two lines were inserted:
+"     call s:ArgMotion(0)
+"     call search('\S')
+" This positions the cursor at the beginning of the argument. 
+" Default behaviour positions the cursor at the end of the argument.
+nmap <Left> <Plug>Argumentative_MoveLeft
+nmap <Right> <Plug>Argumentative_MoveRight
+
+function! Eatchar(pat)
+   let c = nr2char(getchar(0))
+   return (c =~ a:pat) ? '' : c
+endfunc
+" iabbr <silent> if if ()<Left><C-R>=Eatchar('\s')<CR>
+
 iabbrev qq “”
 iabbrev -- –
-iabbrev –- <BS>—
+iabbrev –- —<C-R>=Eatchar('\s')<CR>
 iabbrev 's ’s
 iabbrev 't ’t
 
 set scrolloff=10
-nnoremap p ]p
-nnoremap P ]P
+" nnoremap p ]p
+" nnoremap P ]P
 
 if mapcheck('<C-x>', "v") != ""
     vunmap <C-x>
@@ -137,3 +154,26 @@ endif
 if g:colors_name == "codedark"
     hi IncSearch guibg=#682900
 endif
+
+set foldmethod=marker
+" }}}
+
+function! SetWebsitePath()
+    let working_directory = getcwd()
+    if getcwd() == 'C:\Users\vivek\Desktop\website'
+        let &path='.,,fonts/**'
+    else
+        set path&
+    endif
+endfunction
+
+au! DirChanged * call SetWebsitePath()
+
+let g:jedi#completions_enabled = 0
+let g:jedi#show_call_signatures = 0
+
+let g:ale_linters = { 'python' : [ 'pyflakes' ] }
+let g:ale_lint_on_text_changed = 0
+let g:ale_lint_on_enter = 0
+
+au GUIEnter * simalt ~x
