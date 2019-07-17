@@ -25,3 +25,17 @@ Ftplugin:
 - css.vim - Rule text object
 - python.vim - Print python variable
 - html.vim - Print javascript variable
+
+3rd Party Plugins:
+- tcomment\_vim
+- tabular
+- vim-surround
+- vim-repeat
+- traces.vim
+- vim-argumentative
+- vim-pasta
+- ultisnips
+- ale
+- jedi-vim
+- vim-coloresque (optional)
+- splitjoin.vim
