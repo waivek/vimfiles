@@ -50,6 +50,8 @@ if colors_name == "apprentice"
    hi     StatusLine   gui=reverse         guifg=NONE      guibg=NONE
    hi     StatusLineNC guifg=black         guibg=#6c6c6c
 
+hi Search guibg=#555555 guifg=NONE
+hi IncSearch guibg=#682900
 endif
 " }}}
   hi   Visual         ctermfg=NONE ctermbg=NONE cterm=NONE term=NONE

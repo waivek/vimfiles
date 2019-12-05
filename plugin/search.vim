@@ -1,3 +1,4 @@
+
 " Works on multi-line and multi-width characters :)
 " TODO: test lines containting ,  etc.
 " TODO: test multiline replace
@@ -15,7 +16,6 @@
 " array_index[12]$1^.^ab*cdma~da"quotes"/substitute/'singlequotes'📁📁 | array_index[12]$1^.^ab*cdma~da"quotes"/substitute/'singlequotes'📁📁
 "
 " array_index[12]$1^.^ab*cdma~da"quotes"/substitute/'singlequotes'📁📁 | array_index[12]$1^.^ab*cdma~da"quotes"/substitute/'singlequotes'📁📁
-
 
 " EXPLANATION: failed attempt at getting visual selection without usigng normal mode
 " " doesn’t work on mult-byte strings
@@ -46,20 +46,6 @@ function! s:Visual2Search()
 
     return search_string
 endfunction
-
-" function! TestVisual2Search()
-"     let escape_chars =  '[]\$^*~."/'
-"     let last_miss_nr = -1
-"     for i in range(0, 50)
-"         let search_string = escape(nr2char(i), escape_chars)
-"         let search_string = substitute(search_string, "\\n", '\\n', "g")
-"         let match_result = match(nr2char(i), search_string)
-"         " if match_result != 0
-"             echo "False - number: " . i . ", symbol: " . nr2char(i) . ", search_string: " . search_string
-"         " endif
-"     endfor
-" endfunction
-" call TestVisual2Search()
 
 function! s:VisualHash()
     let search_string = s:Visual2Search()
@@ -104,11 +90,6 @@ endfunction
 
 vnoremap s :<c-u>call <sid>VisualReplace()<CR>
 
-function! SearchToRegex()
-    let search_register = @/
-    let search_length = len(search_register)
-endfunction
-
 " doesn’t work for 'nomagic'
 function! s:ToggleWholeKeyword()
     let search_pattern = @/
@@ -125,5 +106,51 @@ endfunction
 
 nnoremap <silent> gs :call <sid>ToggleWholeKeyword()<CR>
 
+function! s:RepeatChange()
+    let magic_escape_chars =  '[]\$^*~."/'
+    let highlighted_string = @"
+    let search_string = escape(highlighted_string, magic_escape_chars)
+    let search_string = substitute(search_string, "\\n", '\\n', "g")
+    let @/ = search_string
+
+    " only to play well with vim-cool
+    call feedkeys(":set hls")
+
+    call feedkeys("cgn" . @. . "")
+endfunction
+nnoremap <silent> g. :call <sid>RepeatChange()<CR>
+
 cabbrev vv v/<C-r>=@/<CR>
 cabbrev gg g/<C-r>=@/<CR>
+
+let g:global_search_string = ""
+function! s:Change(args)
+    if a:args == "char"
+        silent exec 'normal! `[v`]'
+        normal! y
+        let magic_escape_chars =  '[]\$^*~."/'
+        let highlighted_string = @"
+        let search_string = escape(highlighted_string, magic_escape_chars)
+        let search_string = substitute(search_string, "\\n", '\\n', "g")
+
+        let g:global_search_string = @/
+        let @/ = search_string
+        call feedkeys("cgn")
+
+        augroup ChangeMode()
+            au!
+            au CursorMoved * call s:RestoreSearchRegister()
+        augroup END
+    else
+        silent exec 'normal! `[V`]'
+        call feedkeys("c")
+    endif
+endfunction
+
+function! s:RestoreSearchRegister()
+
+endfunction
+
+" nmap <silent> z :set opfunc=<sid>Change<CR>g@
+" nmap z; c;
+" nmap <silent> zgn cgn

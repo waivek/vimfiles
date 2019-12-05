@@ -8,3 +8,14 @@ function! PrintPythonVariable()
     let @a = reg_save
 endfunction
 vnoremap z :<c-u>call PrintPythonVariable()<CR>
+
+function! Enumerate()
+    if match(getline("."), "enumerate") == -1
+        s/for\s\+\zs/i, /
+        s/in \zs[^:]\+/enumerate(\0)
+    else
+        s/i, //
+        s/enumerate(\(.*\)):/\1:
+    endif
+endfunction
+command! Enumerate call Enumerate()

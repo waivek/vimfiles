@@ -1,4 +1,5 @@
 set encoding=utf8
+source ~/vimfiles/ftplugin/css.vim
 
 function! PrintJavaScriptVariable()
     let print_fmt = 'console.log("variable_name: " + variable_name);'

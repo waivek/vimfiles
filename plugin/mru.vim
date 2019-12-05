@@ -1,3 +1,4 @@
+
 " GetStrBeforeColon() {{{
 function! GetStrBeforeColon(str)
     let colon_pos = match(a:str, ":")

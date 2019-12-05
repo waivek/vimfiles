@@ -267,6 +267,16 @@ onoremap  <silent> am :<c-u>call <sid>VisualSelect(<sid>CurrentFnameA())<CR>
 onoremap  <silent> aM :<c-u>call <sid>VisualSelect(<sid>CurrentFnameBigA())<CR>
 onoremap  <silent> iM :<c-u>call <sid>VisualSelect(<sid>CurrentFnameBigI())<CR>
 
+au BufRead * silent! nunmap <buffer> ]m
+au BufRead * silent! vunmap <buffer> ]m
+nnoremap <silent> ]m :call search('[a-zA-Z.0-9_]\+\s*\ze(')<CR>
+vnoremap <silent> ]m :call search('[a-zA-Z.0-9_]\+\s*\ze(')<CR>
+
+au BufRead * silent! nunmap <buffer> [m
+au BufRead * silent! vunmap <buffer> [m
+nnoremap <silent> [m :call search('[a-zA-Z.0-9_]\+\s*\ze(', 'b')<CR>
+vnoremap <silent> [m :call search('[a-zA-Z.0-9_]\+\s*\ze(', 'b')<CR>
+
 " console.log("hello");
 function! s:DeleteSurroundingMethod()
     let pos_list = s:CurrentFnameBigA()
@@ -284,3 +294,4 @@ function! s:DeleteSurroundingMethod()
 endfunction
 
 nnoremap  <silent> dsm :<c-u>call <sid>DeleteSurroundingMethod()<CR>
+" }}}
