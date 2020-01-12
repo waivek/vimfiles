@@ -1,21 +1,30 @@
 set history=10000
 set viminfo='10000,<50,s10,h,rA:,rB:,%,f1,n~/vimfiles/_viminfo
-" set viminfo+='1000,
-" Plugin & Filetypes {{{
 filetype indent plugin on | syntax on 
-" }}}
-colorscheme codedark
+source ~\vimfiles\plugin\colorscheme.vim
+colorscheme apprentice
+colorscheme apprentice_extended
+set cursorline
 " Remaps {{{
-" hjkl to jkl; {{{
-noremap j h
+noremap j b
 noremap k gj
 noremap l gk
-noremap ; l
+noremap ; w
+noremap w $
+noremap b ^
+vnoremap w g_
+onoremap k j
+onoremap l k
+onoremap : W
+onoremap J B
+nnoremap , ;
+xnoremap , ;
 inoremap jk 
 inoremap Jk 
 inoremap jK 
-onoremap k j
-onoremap l k
+inoremap jk 
+cnoremap jk <C-f>
+tnoremap jk <C-W>N
 
 cnoremap <C-l> <Up>
 cnoremap <C-k> <Down>
@@ -33,31 +42,25 @@ nnoremap <C-w>: <C-w>L
 
 nnoremap zk zj
 nnoremap zl zk
-" }}}
-
-inoremap jk 
-cnoremap jk <C-f>
 
 nnoremap h "+
 nnoremap Q @:
 xnoremap h "+
-nnoremap , ;
-xnoremap , ;
 xmap Q :norm! @a<CR>
 xmap . :norm! .<CR>
 
 nnoremap <silent> ch :cd %:p:h<CR>
 nnoremap <silent> c. :cd ..<CR>
-tnoremap jk <C-W>N
+inoremap <C-v> <C-r>+
+
 " }}}
 " Option Settings {{{
-" Indentation {{{
+" Indentation
 set smartindent " Automatically indents when and where required
 set tabstop=4 " Sets tab width to 4 
 set shiftwidth=4 " Allows you to use < and > keys in -- VISUAL --
 set softtabstop=4 " Makes vim see four spaces as a <TAB>
 set expandtab " Inserts 4 spaces when <TAB> is pressed
-" }}}
 
 set undofile
 set undodir=C:/Users/vivek/vimfiles/undofiles,.
@@ -71,37 +74,25 @@ set laststatus=2
 
 set splitright
 set nowrap
-runtime macros/matchit.vim
 set sidescroll=1
 
-
-" Searching {{{
+" Searching 
 set ignorecase smartcase  
-
-set hlsearch
-set incsearch
-
+set hlsearch incsearch
+set nowrapscan
 cno <expr>  <tab>    getcmdtype() =~ '[/?]' ? (getcmdtype() == '/' ? '<c-g>' : '<c-t>') : feedkeys('<tab>', 'int')[1]
 cno <expr>  <s-tab>  getcmdtype() =~ '[/?]' ? (getcmdtype() == '/' ? '<c-t>' : '<c-g>') : feedkeys('<s-tab>', 'int')[1]
 
-set nowrapscan
-" }}}
-" Completion {{{
+" Completion
 set wildcharm=<C-z>
 set wildmenu
 set wildmode=full
 
-" }}}
-
-" Setting guifont causes vim to go from maximized mode to windowed mode
-if &guifont != 'Consolas:h12:cANSI:qDRAFT'
-    set guifont=Consolas:h12:cANSI:qDRAFT
-endif
-
+au GUIEnter * simalt ~x
 set guioptions=mre
 set showtabline=2
 set guitablabel=%t
-setlocal encoding=utf8
+
 silent! unmenu 📁
 menu 📁.▶\ \ Open\ in\ Default\ Viewer :call system(shellescape(expand("%:p")))<CR>
 menu 📁.📁\ \ Show\ File\ in\ Directory :call system('explorer "' . expand("%:p:h") . '"')<CR>
@@ -110,38 +101,17 @@ menu 📁.🔍\ \ Open\ Search\ Everything :call system('everything -path .')<CR
 map <RightMouse> <C-o>
 set belloff=all
 
-inoremap <C-v> <C-r>+
-
 au! BufRead *.afl set filetype=afl 
 au Filetype afl setlocal cms=#%s
-
-let &pythonthreedll='C:\Program Files (x86)\Python\Python37-32\python37.dll'
-
-if has('python3')
-    silent! python3 1
-endif
-
-let g:CoolTotalMatches=1
-let g:UltiSnipsJumpForwardTrigger='<tab>'
-
-" Argumentative is modified. At the end of s:MoveLeft() and s:MoveRight, these
-" two lines were inserted:
-"     call s:ArgMotion(0)
-"     call search('\S')
-" This positions the cursor at the beginning of the argument. 
-" Default behaviour positions the cursor at the end of the argument.
-nmap <Left> <Plug>Argumentative_MoveLeft
-nmap <Right> <Plug>Argumentative_MoveRight
 
 function! Eatchar(pat)
    let c = nr2char(getchar(0))
    return (c =~ a:pat) ? '' : c
 endfunc
-" iabbr <silent> if if ()<Left><C-R>=Eatchar('\s')<CR>
+iabbrev –- —<C-R>=Eatchar('\s')<CR>
 
 iabbrev qq “”
 iabbrev -- –
-iabbrev –- —<C-R>=Eatchar('\s')<CR>
 iabbrev 's ’s
 iabbrev 't ’t
 
@@ -151,35 +121,34 @@ if mapcheck('<C-x>', "v") != ""
     vunmap <C-x>
 endif
 
-if g:colors_name == "codedark"
-    hi IncSearch guibg=#682900
-endif
-
 set foldmethod=marker
+
 " }}}
+" GROUP TOGETHER FOR EASIER DEBUGGING {{{
+setlocal encoding=utf8
+let &pythonthreedll='C:\Program Files (x86)\Python\Python37-32\python37.dll'
+if has('python3')
+    silent! python3 1
+endif
+if &guifont != 'Consolas:h12:cANSI:qDRAFT'
+    " Setting guifont causes vim to go from maximized mode to windowed mode
+    set guifont=Consolas:h12:cANSI:qDRAFT
+endif
+" }}}
+" Plugin Settings {{{
 
-function! SetWebsitePath()
-    let working_directory = getcwd()
-    if getcwd() == 'C:\Users\vivek\Desktop\website'
-        let &path='.,,fonts/**'
-    else
-        set path&
-    endif
-endfunction
+packadd matchit
+packadd cfilter
 
-au! DirChanged * call SetWebsitePath()
+let g:CoolTotalMatches=1
+let g:UltiSnipsJumpForwardTrigger='<tab>'
 
-function! SetFileSpecificSettings()
-    let file_name = expand("%:p:t")
-    if file_name == "websites.html"
-        function! TransferIncompleteItem()
-            normal dd{{pcst<dl>f>,vityo<dd>"</dd>
-            normal lfd%lf>,vit
-        endfunction
-        command! -buffer TransferIncompleteItem call TransferIncompleteItem()
-    endif
-endfunction
-au! BufRead * call SetFileSpecificSettings()
+" Argumentative is modified. At the end of s:MoveLeft() and s:MoveRight, these two lines were inserted:
+"     call s:ArgMotion(0)
+"     call search('\S')
+" This positions the cursor at the beginning of the argument. Default behaviour positions the cursor at the end of the argument.
+nmap <Left> <Plug>Argumentative_MoveLeft
+nmap <Right> <Plug>Argumentative_MoveRight
 
 let g:jedi#completions_enabled = 0
 let g:jedi#show_call_signatures = 0
@@ -194,14 +163,42 @@ hi link CursorWord1 Search
 
 let g:pasta_enabled_filetypes = ['python', 'html']
 let g:markdown_fenced_languages = ['xml', 'python', 'html']
+" }}}
 
-au GUIEnter * simalt ~x
+let $PLUGINDIR = 'C:\users\vivek\vimfiles\pack\plugins'
+
+set grepprg=rg\ --vimgrep\ --smart-case
+let &grepformat = "%f:%l:%c:%m"
+set shellxescape-=\>
+set shellxescape-=\&
+set shellxquote=(
+
+function! SetFileSpecificSettings()
+    let file_name = expand("%:p:t")
+    if file_name == "websites.html"
+        function! TransferIncompleteItem()
+            normal dd{{pcst<dl>f>,vityo<dd>"</dd>
+            normal lfd%lf>,vit
+        endfunction
+        command! -buffer TransferIncompleteItem call TransferIncompleteItem()
+    endif
+endfunction
+au! BufRead * call SetFileSpecificSettings()
+
+function! PathSpecficSettings()
+    let working_directory = getcwd()
+    if getcwd() == 'C:\Users\vivek\Desktop\website'
+        let &path='.,,fonts/**'
+    else
+        set path&
+    endif
+endfunction
+au! DirChanged * call PathSpecficSettings()
 
 function! s:global_function_syntax_groups()
     syntax match Function /[a-zA-Z0-9_]\+\s*\ze(/
     syntax match FunctionWithPeriods /[a-zA-Z.0-9_]\+\s*\ze(/ contains=Function
 endfunction
-
 function! s:add_highlight_groups()
     if g:colors_name == "codedark"
         hi FunctionWithPeriods guifg=#a7a765
@@ -209,26 +206,13 @@ function! s:add_highlight_groups()
         hi FunctionWithPeriods guifg=#d8afaf
     endif
 endfunction
-
 augroup AddFunctionHighlightGroups
     au!
     au Syntax * call s:global_function_syntax_groups()
     au Syntax * call s:add_highlight_groups()
 augroup END
 
-noremap j b
-noremap ; w
-noremap w $
-noremap b ^
-vnoremap w g_
-
-let $PLUGINDIR = 'C:\users\vivek\vimfiles\pack\plugins'
-
-set grepprg=rg\ --vimgrep\ --smart-case
-let &grepformat = "%f:%l:%c:%m"
-" set grepprg=rg\ --vimgrep\ --no-heading\ --smart-case
-
-function! CurlyQuotes()
+function! s:normal_to_curly_quotes()
     call search("[\"']", "c", line("."))
     let visual_start_position = getpos("'<")
     let visual_end_position = getpos("'>")
@@ -253,12 +237,15 @@ function! CurlyQuotes()
     call setpos("'>", visual_end_position)
 
 endfunction
-nnoremap cq :call CurlyQuotes()<CR>
+nnoremap cq :call <SID>normal_to_curly_quotes()<CR>
 
-function! s:SearchInSelection()
-    let keyseq =  '/\%>' . (line("'<") - 1) . 'l\%<' . (line("'>") + 1) . "l"
-    call feedkeys(keyseq)
-endfunction
-vnoremap / :<c-u>call <sid>SearchInSelection()<CR>
-" vnoremap / :<c-u>call feedkeys('/\%>' . (line("'<") - 1) . 'l\%<' . (line("'>") + 1) . "l")<CR>
-let $TMP='C:\users\vivek\temp'
+" Group Together For Easier Debug
+let &pythonthreedll='C:\Program Files (x86)\Python\Python37-32\python37.dll'
+if has('python3')
+    silent! python3 1
+endif
+if &guifont != 'Consolas:h12:cANSI:qDRAFT'
+    " Setting guifont causes vim to go from maximized mode to windowed mode
+    set guifont=Consolas:h12:cANSI:qDRAFT
+endif
+setlocal encoding=utf8

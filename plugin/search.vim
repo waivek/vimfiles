@@ -1,66 +1,61 @@
-
+" FUNCTIONALITY:
+"     1. Visual selections can use *, #, gd
+"     2. If you replace a string with a new string, pressing dot searches for
+"     the next instance of the string and repeats the replacement on that
+"     string (similar to cgn). If you move the cursor, the dot command reverts
+"     to it’s original behaviour.
 " Works on multi-line and multi-width characters :)
-" TODO: test lines containting ,  etc.
-" TODO: test multiline replace
-" TEST CASES:
-" array_index[12]                                                      | array_index[12]
-" $1                                                                   | $1
-" ^.^                                                                  | ^.^
-" a*cd                                                                 | a*cd
-" ab*cd                                                                | ab*cd
-" ma~da                                                                | ma~da
-" "quotes"                                                             | "quotes"
-" /substitute/                                                         | /substitute/
-" 'singlequotes'                                                       | 'singlequotes'
-" 📁📁                                                                 | 📁📁
-" array_index[12]$1^.^ab*cdma~da"quotes"/substitute/'singlequotes'📁📁 | array_index[12]$1^.^ab*cdma~da"quotes"/substitute/'singlequotes'📁📁
-"
-" array_index[12]$1^.^ab*cdma~da"quotes"/substitute/'singlequotes'📁📁 | array_index[12]$1^.^ab*cdma~da"quotes"/substitute/'singlequotes'📁📁
+" Can repeat changes with digraphs in them :)
+" Can handle terminal keycodes :D
+" TODO: [cause: VIM-PEEKABOO](https://github.com/junegunn/vim-peekaboo/issues/30#ref-commit-809c853) 
+"       replacing visually selected text with contents in a register via CTRL-V, Paste
+" asdfasdf:
+" array_index[12]                                             | array_index[12]
+" $1                                                          | $1
+" ^.^                                                         | ^.^
+" a*cd                                                        | a*cd
+" ab*cd                                                       | ab*cd
+" ma~da                                                       | ma~da
+" "quotes"                                                    | "quotes"
+" /substitute/                                                | /substitute/
+" 'singlequotes'                                              | 'singlequotes'
+" 📁📁                                                        | 📁📁
+"                                                         | 
+" —                                                           | —
+" array_index[12]$1^.^ab*cdma~da"quotes"/sub/'singq'📁📁— | array_index[12]$1^.^ab*cdma~da"quotes"/sub/'singq'📁📁—
+" multi line search
+" array_index[12]$1^.^ab*cdma~da"quotes"/sub/'singq'📁📁— | array_index[12]$1^.^ab*cdma~da"quotes"/sub/'singq'📁📁—
+" multi line search
 
-" EXPLANATION: failed attempt at getting visual selection without usigng normal mode
-" " doesn’t work on mult-byte strings
+" EXPLANATION: failed attempt at getting visual selection without using normal mode
 " let highlighted_string = line[start_col-1:end_col-1]
 " works on multi-byte strings: https://www.reddit.com/r/vim/comments/5t08uo/vimscript_unicode/
 " let highlighted_string = strcharpart(getline("'<"), col("'<")-1, col("'>") - col("'<")+1)
 function! s:Visual2Search()
-    let magic_escape_chars =  '[]\$^*~."/'
-    " let magic_escape_chars =  '\$^/'
-    let no_magic_escape_chars = '\$^/'
-    if &magic
-        let escape_chars = magic_escape_chars
-    else
-        let escape_chars = no_magic_escape_chars
-    endif
-
     let reg_save = @a
     normal! gv"ay
-    let highlighted_string = @a
-    let @a = reg_save
 
-    let search_string = escape(highlighted_string, escape_chars)
+    " when you yank into ANY register, @" also gets that value [:help quote_quote]
+    let highlighted_string = @"
+    let magic_escape_chars =  '[]\$^*~."/'
+    let search_string = escape(highlighted_string, magic_escape_chars)
     let search_string = substitute(search_string, "\\n", '\\n', "g")
 
-    if &magic == 0
-        let search_string = "\\M" . search_string
-    endif
+    let @a = reg_save
 
     return search_string
 endfunction
 
-function! s:VisualHash()
-    let search_string = s:Visual2Search()
-    let search_string =  substitute(search_string, "'", "''", "g")
-    let cmd =  'call feedkeys(''?' . search_string . ''')'
-    execute cmd
-    call feedkeys("")
-endfunction
-
 function! s:VisualStar() 
     let search_string = s:Visual2Search()
-    let search_string =  substitute(search_string, "'", "''", "g")
-    let cmd =  'call feedkeys(''/' . search_string . ''')'
-    execute cmd
-    call feedkeys("")
+    let @/ = search_string
+    call feedkeys("/")
+endfunction
+
+function! s:VisualHash()
+    let search_string = s:Visual2Search()
+    let @/ = search_string
+    call feedkeys("?")
 endfunction
 
 function! s:Visual_gd()
@@ -74,10 +69,6 @@ function! s:Visual_gd()
     call feedkeys(":set hls")
 endfunction
 
-vnoremap * :<c-u>call <sid>VisualStar()<CR>
-vnoremap # :<c-u>call <sid>VisualHash()<CR>
-vnoremap gd :<c-u>call <sid>Visual_gd()<CR>
-
 function! s:VisualReplace()
     let search_string = s:Visual2Search()
     let @/ = search_string
@@ -88,9 +79,57 @@ function! s:VisualReplace()
     call feedkeys("cgn")
 endfunction
 
-vnoremap s :<c-u>call <sid>VisualReplace()<CR>
+vnoremap * :<c-u>call <SID>VisualStar()<CR>
+vnoremap # :<c-u>call <SID>VisualHash()<CR>
+vnoremap gd :<c-u>call <SID>Visual_gd()<CR>
+vnoremap s :<c-u>call <SID>VisualReplace()<CR>
 
-" doesn’t work for 'nomagic'
+" ^V<e2><80><fe>X<94>
+" —
+" http://www.ltg.ed.ac.uk/~richard/utf-8.cgi?input=%E2%80%94&mode=char
+" NOTE: Originally, feedkeys was happening by creating a string from the '@.'
+" register. This wasn’t working for digraphs, where the keys pressed were
+" being inserted insted of the digraph itself. So now we insert the contents
+" of the dot register via <C-r>
+function! s:RepeatChange()
+    let highlighted_string = @"
+    let magic_escape_chars =  '[]\$^*~."/'
+    let search_string = escape(highlighted_string, magic_escape_chars)
+    let search_string = substitute(search_string, "\\n", '\\n', "g")
+    let @/ = search_string
+    " only to play well with vim-cool
+    call feedkeys(":set hls")
+    " call feedkeys("cgn" . @. . "")
+    call feedkeys("cgn.")
+endfunction
+
+" TEST CASE MINI:
+" function | function
+" let sequ | let soccer
+let g:override_pos = []
+function! s:RemoveDotOverride()
+    " Ignores the first CursorMoved fired immediately after leaving InsertMode
+    if g:override_pos == getpos(".")
+        return
+    endif
+    let g:override_pos = []
+    au! DotOverride CursorMoved
+    nunmap .
+endfunction
+function! s:InitializeDotOverride()
+    " Prevents Overrides from overlapping
+    if g:override_pos != []
+        return
+    endif
+    let g:override_pos = getpos(".")
+    nnoremap <silent> . :call <SID>RepeatChange()<CR>
+    au DotOverride CursorMoved * call <SID>RemoveDotOverride()
+endfunction
+augroup DotOverride
+    au! 
+    au InsertLeave * call <SID>InitializeDotOverride()
+augroup END
+
 function! s:ToggleWholeKeyword()
     let search_pattern = @/
     let length = len(search_pattern)
@@ -103,54 +142,11 @@ function! s:ToggleWholeKeyword()
     let @/ = search_pattern
     echo "/" . search_pattern
 endfunction
-
-nnoremap <silent> gs :call <sid>ToggleWholeKeyword()<CR>
-
-function! s:RepeatChange()
-    let magic_escape_chars =  '[]\$^*~."/'
-    let highlighted_string = @"
-    let search_string = escape(highlighted_string, magic_escape_chars)
-    let search_string = substitute(search_string, "\\n", '\\n', "g")
-    let @/ = search_string
-
-    " only to play well with vim-cool
-    call feedkeys(":set hls")
-
-    call feedkeys("cgn" . @. . "")
-endfunction
-nnoremap <silent> g. :call <sid>RepeatChange()<CR>
+nnoremap <silent> gs :call <SID>ToggleWholeKeyword()<CR>
 
 cabbrev vv v/<C-r>=@/<CR>
 cabbrev gg g/<C-r>=@/<CR>
+" Search in selection
+vnoremap / :<c-u>call feedkeys('/\%>' . (line("'<") - 1) . 'l\%<' . (line("'>") + 1) . "l")<CR>
 
-let g:global_search_string = ""
-function! s:Change(args)
-    if a:args == "char"
-        silent exec 'normal! `[v`]'
-        normal! y
-        let magic_escape_chars =  '[]\$^*~."/'
-        let highlighted_string = @"
-        let search_string = escape(highlighted_string, magic_escape_chars)
-        let search_string = substitute(search_string, "\\n", '\\n', "g")
 
-        let g:global_search_string = @/
-        let @/ = search_string
-        call feedkeys("cgn")
-
-        augroup ChangeMode()
-            au!
-            au CursorMoved * call s:RestoreSearchRegister()
-        augroup END
-    else
-        silent exec 'normal! `[V`]'
-        call feedkeys("c")
-    endif
-endfunction
-
-function! s:RestoreSearchRegister()
-
-endfunction
-
-" nmap <silent> z :set opfunc=<sid>Change<CR>g@
-" nmap z; c;
-" nmap <silent> zgn cgn
