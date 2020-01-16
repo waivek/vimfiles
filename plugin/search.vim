@@ -12,8 +12,9 @@
 "       replacing visually selected text with contents in a register via CTRL-V, Paste
 " TODO: RepeatChange should not be called for successively making the same
 "       replacement. Bad performance because of the use of 
-" TODO: Make VisualA work for terminal keycodes and remain unaffected by textwidth
-
+" TODO: Make VisualA remain unaffected by textwidth
+" TODO: Because of DotOverride, gs functionality is broken. 
+"       FIXED for VisualReplace, not for RepeatChange
 " array_index[12]                                                   | array_index[12]
 " $1                                                                | $1
 " ^.^                                                               | ^.^
@@ -31,11 +32,14 @@
 " multi line search
 " array_index[12]$1^.^ab*cdma~da"quotes"/sub/'singq'📁📁—日本語 | array_index[12]$1^.^ab*cdma~da"quotes"/sub/'singq'📁📁—日本語
 " multi line search
+" 
 
 " EXPLANATION: failed attempt at getting visual selection without using normal mode
 " let highlighted_string = line[start_col-1:end_col-1]
 " works on multi-byte strings: https://www.reddit.com/r/vim/comments/5t08uo/vimscript_unicode/
 " let highlighted_string = strcharpart(getline("'<"), col("'<")-1, col("'>") - col("'<")+1)
+
+" hi Normal guifg=#D6B089 guibg=#262626
 function! s:Visual2Search()
     let reg_save = @a
     normal! gv"ay
@@ -149,6 +153,32 @@ function! s:RemoveDotOverride()
     let g:override_pos = []
     au! DotOverride CursorMoved
     nunmap .
+
+    au! DotOverride InsertLeave
+
+    nunmap n
+endfunction
+
+" When we enter normal after making a change, `n` is overriden. The new
+" behaviour updated the `@/` register to `@"` and then searches for the next
+" match of `@"`. Because it searches for the next match, the CursorMoved gets
+" fired, which unmaps `.` and `n`. We can use `n` normally till we find the
+" match we want to change. Pressing `.` over here does a normal (non cgn)
+" replacement, but `.` gets mapped to RepeatChange. If we press dot again, it
+" does a `cgn` replacement and goes into a well-known state.
+"
+" Pressing `n` after immediately making a change removes the old value of
+" `@/`, whatever it was. This is different from the expected behaviour in
+" vanilla in a small conditional case 
+" -   condition_1: some text replacement has taken place via `c`
+" -   condition_2: cursor has not moved after replacement
+function! NextPatternOverride()
+    let highlighted_string = @"
+    let magic_escape_chars =  '[]\$^*~."/'
+    let search_string = escape(highlighted_string, magic_escape_chars)
+    let search_string = substitute(search_string, "\\n", '\\n', "g")
+    let @/ = search_string
+    call feedkeys("n", "n")
 endfunction
 function! s:InitializeDotOverride()
     " Prevents Overrides from overlapping
@@ -157,12 +187,29 @@ function! s:InitializeDotOverride()
     endif
     let g:override_pos = getpos(".")
     nnoremap <silent> . :call <SID>RepeatChange()<CR>
+    nnoremap <silent> n :call NextPatternOverride()<CR>
+
     au DotOverride CursorMoved * call <SID>RemoveDotOverride()
 endfunction
+breakdel *
+function YankPost()
+    if v:event["operator"] == "y" || v:event["operator"] == "d"
+        return
+    endif
+    au DotOverride InsertLeave * call <SID>InitializeDotOverride()
+endfunction
+" Initially, we were using InsertLeave as the entry point. However, this was
+" breaking the dot operator on changes where only text is inserted, without
+" replacing any text. If we do `Anew_text` in NORMAL mode, this was not
+" repeatable as dot was being overriden. We also don’t want dot to ever be
+" overriden if text is only being inserted. We now use the TextYankPost event
+" to set up the InsertLeave event. In YankPost, we check if it was triggered
+" by the 'c' operator and then set up the InsertEnter auto command.
 augroup DotOverride
     au! 
-    au InsertLeave * call <SID>InitializeDotOverride()
+    au TextYankPost * call YankPost()
 augroup END
+
 
 function! s:ToggleWholeKeyword()
     let search_pattern = @/
@@ -175,6 +222,13 @@ function! s:ToggleWholeKeyword()
     endif
     let @/ = search_pattern
     echo "/" . search_pattern
+
+    " [works for s] RemoveDotOverride even if position is the same
+    let g:override_pos = []
+    au! DotOverride CursorMoved
+    if mapcheck('.', "n") != ""
+        nunmap .
+    endif
 endfunction
 
 vnoremap *  :<c-u>call <SID>VisualStar()<CR>
@@ -189,4 +243,5 @@ cabbrev gg g/<C-r>=@/<CR>
 
 " Search in selection
 vnoremap / :<c-u>call feedkeys('/\%>' . (line("'<") - 1) . 'l\%<' . (line("'>") + 1) . "l")<CR>
+
 
