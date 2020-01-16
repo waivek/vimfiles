@@ -1,3 +1,4 @@
+
 " Reference {{{
 
 "   #262626   Background    8   DarkGray    (38,38,38)
@@ -36,22 +37,21 @@
 " QuickFix syntax : X:\Dropbox\.vim\syntax\qf.vim
 " Gvim.exe {{{
 if colors_name == "apprentice"
-  " hi Visual gui=NONE
-  " hi   Visual      guifg=black     guibg=#5faf8d
+    " hi Visual gui=NONE
 
-   hi     Normal       guifg=#D6B089       guibg=#262626
-   hi     MatchParen   guifg=black         guibg=#5fafaf
-   hi     Tag          guifg=#ff8700       guibg=NONE
-   hi     Cursor       guifg=black         guibg=white
-   hi     String       guifg=#87af87       guibg=NONE
-   hi     IncSearch    guifg=white         guibg=#af5f5f
-   hi     Search       guifg=black         guibg=#5fafaf
-   hi     Function     guifg=#d47777       guibg=NONE
-   hi     StatusLine   gui=reverse         guifg=NONE      guibg=NONE
-   hi     StatusLineNC guifg=black         guibg=#6c6c6c
+   " hi     Normal       guifg=#D6B089       guibg=#262626
+     hi   Normal         guifg=#D6B089   guibg=#042428
+     hi   String         guifg=#87af87   guibg=NONE
+     hi   Search         guifg=NONE      guibg=#444444
+     hi   IncSearch                      guibg=#682900
+     hi   Cursor         guifg=black     guibg=white
+     hi   StatusLine     guifg=NONE      guibg=NONE     gui=reverse
+     hi   StatusLineNC   guifg=black     guibg=#6c6c6c
 
-hi Search guibg=#555555 guifg=NONE
-hi IncSearch guibg=#682900
+     hi   MatchParen     guifg=black     guibg=#5fafaf
+     hi   Tag            guifg=#ff8700   guibg=NONE
+     hi   Function       guifg=#d47777   guibg=NONE
+
 endif
 " }}}
   hi   Visual         ctermfg=NONE ctermbg=NONE cterm=NONE term=NONE
