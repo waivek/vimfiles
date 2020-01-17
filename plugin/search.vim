@@ -1,3 +1,4 @@
+" "विवेक बोस"
 " FUNCTIONALITY:
 " 1:   Visual selections can use *, #, gd
 " 2:   If you replace a string with a new string, pressing dot searches for
@@ -39,19 +40,18 @@
 " works on multi-byte strings: https://www.reddit.com/r/vim/comments/5t08uo/vimscript_unicode/
 " let highlighted_string = strcharpart(getline("'<"), col("'<")-1, col("'>") - col("'<")+1)
 
-" hi Normal guifg=#D6B089 guibg=#262626
-function! s:Visual2Search()
-    let reg_save = @a
-    normal! gv"ay
-
-    " when you yank into ANY register, @" also gets that value [:help quote_quote]
-    let highlighted_string = @"
+function! s:String2Pattern(string)
+    let highlighted_string = a:string
     let magic_escape_chars =  '[]\$^*~."/'
     let search_string = escape(highlighted_string, magic_escape_chars)
     let search_string = substitute(search_string, "\\n", '\\n', "g")
-
-    let @a = reg_save
-
+    return search_string
+endfunction
+function! s:Visual2Search()
+    let reg_save = @"
+    normal! gvy
+    let search_string = s:String2Pattern(@")
+    let @" = reg_save
     return search_string
 endfunction
 
@@ -60,13 +60,11 @@ function! s:VisualStar()
     let @/ = search_string
     call feedkeys("/")
 endfunction
-
 function! s:VisualHash()
     let search_string = s:Visual2Search()
     let @/ = search_string
     call feedkeys("?")
 endfunction
-
 function! s:Visual_gd()
     let search_string = s:Visual2Search()
 
@@ -77,7 +75,6 @@ function! s:Visual_gd()
     let @/ = search_string
     call feedkeys(":set hls")
 endfunction
-
 function! s:VisualReplace()
     let search_string = s:Visual2Search()
     let @/ = search_string
@@ -131,12 +128,14 @@ vnoremap <expr> A mode() ==? "\<C-V>" ?  'A'  :  ':<c-u>call VisualA()<CR>'
 " register. This wasn’t working for digraphs, where the keys pressed were
 " being inserted insted of the digraph itself. So now we insert the contents
 " of the dot register via <C-r>
-function! s:RepeatChange()
-    let highlighted_string = @"
-    let magic_escape_chars =  '[]\$^*~."/'
-    let search_string = escape(highlighted_string, magic_escape_chars)
-    let search_string = substitute(search_string, "\\n", '\\n', "g")
-    let @/ = search_string
+function! RepeatChange()
+    let whole_keyword_enabled = @/ ==# '\<' . @" . '\>'
+    let whole_keyword_disabled = !whole_keyword_enabled
+    if whole_keyword_disabled
+        let search_string = s:String2Pattern(@")
+        let @/ = search_string
+    endif
+
     call feedkeys("cgn.")
     call feedkeys(":set hls")
 endfunction
@@ -145,7 +144,7 @@ endfunction
 " function | function
 " let sequ | let soccer
 let g:override_pos = []
-function! s:RemoveDotOverride()
+function! s:RemovedAllOverrides()
     " Ignores the first CursorMoved fired immediately after leaving InsertMode
     if g:override_pos == getpos(".")
         return
@@ -157,6 +156,9 @@ function! s:RemoveDotOverride()
     au! DotOverride InsertLeave
 
     nunmap n
+
+    nunmap gs
+    nnoremap <silent> gs :call <SID>ToggleWholeKeyword()<CR>
 endfunction
 
 " When we enter normal after making a change, `n` is overriden. The new
@@ -170,15 +172,19 @@ endfunction
 " Pressing `n` after immediately making a change removes the old value of
 " `@/`, whatever it was. This is different from the expected behaviour in
 " vanilla in a small conditional case 
-" -   condition_1: some text replacement has taken place via `c`
-" -   condition_2: cursor has not moved after replacement
+" →   condition_1: some text replacement has taken place via `c`
+" →   condition_2: cursor has not moved after replacement
+
 function! NextPatternOverride()
-    let highlighted_string = @"
-    let magic_escape_chars =  '[]\$^*~."/'
-    let search_string = escape(highlighted_string, magic_escape_chars)
-    let search_string = substitute(search_string, "\\n", '\\n', "g")
+    let search_string = s:String2Pattern(@")
     let @/ = search_string
     call feedkeys("n", "n")
+endfunction
+function! ToggleWholeKeywordOverride()
+    let search_string = s:String2Pattern(@")
+    let @/ = search_string
+    call feedkeys(":set hls")
+    call s:ToggleWholeKeyword()
 endfunction
 function! s:InitializeDotOverride()
     " Prevents Overrides from overlapping
@@ -186,14 +192,14 @@ function! s:InitializeDotOverride()
         return
     endif
     let g:override_pos = getpos(".")
-    nnoremap <silent> . :call <SID>RepeatChange()<CR>
+    nnoremap <silent> . :call RepeatChange()<CR>
     nnoremap <silent> n :call NextPatternOverride()<CR>
+    nnoremap <silent> gs :call ToggleWholeKeywordOverride()<CR>
 
-    au DotOverride CursorMoved * call <SID>RemoveDotOverride()
+    au DotOverride CursorMoved * call <SID>RemovedAllOverrides()
 endfunction
-breakdel *
 function YankPost()
-    if v:event["operator"] == "y" || v:event["operator"] == "d"
+    if v:event["operator"] ==# "y" || v:event["operator"] ==# "d"
         return
     endif
     au DotOverride InsertLeave * call <SID>InitializeDotOverride()
@@ -211,6 +217,15 @@ augroup DotOverride
 augroup END
 
 
+" last_search_pattern
+" pos, rpos
+" pos, rpos
+" pos, rpos
+"
+" hls, nohls
+" hls, nohls
+" hls, nohls
+" last_search_pattern
 function! s:ToggleWholeKeyword()
     let search_pattern = @/
     let length = len(search_pattern)
@@ -221,14 +236,7 @@ function! s:ToggleWholeKeyword()
         let search_pattern = "\\<" . search_pattern . "\\>"
     endif
     let @/ = search_pattern
-    echo "/" . search_pattern
-
-    " [works for s] RemoveDotOverride even if position is the same
-    let g:override_pos = []
-    au! DotOverride CursorMoved
-    if mapcheck('.', "n") != ""
-        nunmap .
-    endif
+    redraw|echo "/" . search_pattern
 endfunction
 
 vnoremap *  :<c-u>call <SID>VisualStar()<CR>
