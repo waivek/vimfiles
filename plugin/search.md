@@ -1,6 +1,6 @@
 ## Functionality
 
-1. StackEdit
+1. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODAwNTQ5NzQyXX0=
+eyJoaXN0b3J5IjpbLTE0NDE4ODQ2NTJdfQ==
 -->
