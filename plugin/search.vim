@@ -1,4 +1,31 @@
-" "विवेक बोस"
+" unique_1
+" BUG: 
+" function | function | function | function
+" Press cgn on first 'function'. Press DOT. Undo twice. Press 0. 
+" Highlighting should be disabled, but stays enabled.
+" 
+" BUG: RepeatChange: Pressing DOT triggers repeat change. Pressing it again
+" does normal DOT command. Pressing it again triggers repeat change. This
+" alternates. Ideal behaviour would be always being on RepeatChange unitl a
+" cursor move that is not triggered by DOT.
+"
+" BUG_HIGH_PRIORITY: When you do RepeatChange via DOT, 'set hls' get’s
+" displayed instead of number of matches. This is useless information and very
+" annoying to the user.
+"
+" IDEA: give DOT operator same treatment as PASTE operator
+"       HISTORY of deleted text and replaced text
+"*d
+" BUG: search for 'C', then change first 'TextChangedI', then DOT
+" au TextChangedI * call CustomLogger("TextChangedI")
+"
+" CASE:
+" color      | Color | coloR
+" 
+" BUG: Use VisualStar in a macro and try to repeat the macro
+" BUG: (first) , (second) : ds( on first, go to second pair and do ds( again
+" 
+"
 " FUNCTIONALITY:
 " 1:   Visual selections can use *, #, gd
 " 2:   If you replace a string with a new string, pressing dot searches for
@@ -6,16 +33,15 @@
 "      string (similar to cgn). If you move the cursor, the dot command reverts
 "      to it’s original behaviour.
 "
-" Works on multi-line and multi-width characters :)
-" Can repeat changes with digraphs in them :)
-" Can handle terminal keycodes :D
+" Works on multi-line and multi-width characters ☻
+" Can repeat changes with digraphs in them ☻
+" Can handle terminal keycodes ☻
+" gs Works on 'c', DotOverride, RepeatChange, VisualA
 " TODO: [cause: VIM-PEEKABOO](https://github.com/junegunn/vim-peekaboo/issues/30#ref-commit-809c853) 
 "       replacing visually selected text with contents in a register via CTRL-V, Paste
 " TODO: RepeatChange should not be called for successively making the same
 "       replacement. Bad performance because of the use of 
 " TODO: Make VisualA remain unaffected by textwidth
-" TODO: Because of DotOverride, gs functionality is broken. 
-"       FIXED for VisualReplace, not for RepeatChange
 " array_index[12]                                                   | array_index[12]
 " $1                                                                | $1
 " ^.^                                                               | ^.^
@@ -58,47 +84,44 @@ endfunction
 function! s:VisualStar() 
     let search_string = s:Visual2Search()
     let @/ = search_string
-    call feedkeys("/")
+    call feedkeys("/\<CR>")
 endfunction
 function! s:VisualHash()
     let search_string = s:Visual2Search()
     let @/ = search_string
-    call feedkeys("?")
+    call feedkeys("?\<CR>")
 endfunction
 function! s:Visual_gd()
     let search_string = s:Visual2Search()
-
     let cmd = ":0/" . search_string "/"
     execute cmd
     call search(search_string, 'c')
-
     let @/ = search_string
-    call feedkeys(":set hls")
+    call feedkeys(":set hls\<CR>")
 endfunction
 function! s:VisualReplace()
     let search_string = s:Visual2Search()
     let @/ = search_string
-
     " only to play well with vim-cool
-    call feedkeys(":set hls")
-
+    call feedkeys(":set hls\<CR>")
     call feedkeys("cgn")
 endfunction
+
 
 " No VisualI, because it is not repeatable. After first replacement, cursor is
 " before the match, not after. So subsequent DOT commands operate on the same
 " match.
-" DOESN’T WORK FOR TERMINAL KEYCODES
 " GET’S AFFECTED BY TEXTWIDTH
-"
+
 " Terminal Keycodes work in RepeatChange() because we are using the @.
 " register which has the  escape sequence as that is what we type to be able
 " to enter terminal keycodes
-"     @. =          // feedkeys friendly
-"     @" =            // feedkeys unfriendly
-" a           | a
+" @. = \         // feedkeys friendly
+" @" = \           // feedkeys unfriendly
+" a\           | a\
 " array_index[12] | array_index[12]
-function! VisualA()
+
+function! s:VisualA()
 
     let search_string = s:Visual2Search()
     let @/ = search_string
@@ -119,8 +142,58 @@ function! VisualA()
     " call feedkeys("cgn\"", "n")
 
 endfunction
-vnoremap <expr> A mode() ==? "\<C-V>" ?  'A'  :  ':<c-u>call VisualA()<CR>' 
+vnoremap <expr> A mode() ==? "\<C-V>" ?  'A'  :  ':<c-u>call <SID>VisualA()<CR>' 
 
+" breakadd func 22 GetMatchByteOffsets
+function! GetMatchByteOffsets()
+    let view_save = winsaveview()
+    let pos_save  = getpos(".")
+
+    let match_positions = []
+    let wrapscan_option_save = &wrapscan
+    let search_incomplete = v:true
+
+
+
+    set wrapscan
+    while search_incomplete
+        keepjumps silent! normal! n
+        let byte_int = line2byte(".") + col(".") - 1
+        if len(match_positions) > 0 && byte_int == match_positions[0]
+            let search_incomplete = v:false
+        else
+            let match_positions = match_positions + [ byte_int ]
+        endif
+    endwhile
+
+    let &wrapscan = wrapscan_option_save
+    call winrestview(view_save)
+
+    call sort(match_positions, 'n')
+    return match_positions
+
+endfunction
+function! MatchByteOffsetsToString(match_positions)
+    let cursor_position = line2byte(".") + col(".") - 1
+    let cursor_on_match = index(a:match_positions, cursor_position) > -1
+    if cursor_on_match
+        let x_match_of_n_matches = index(a:match_positions, cursor_position) + 1
+        let total_matches = len(a:match_positions)
+        return printf("/%s MATCH %d of %d", @/, x_match_of_n_matches, total_matches)
+    else
+        let matches_before_cursor = 0
+        let matches_after_cursor = 0
+        for match_position in a:match_positions
+            if match_position < cursor_position
+                let matches_before_cursor = matches_before_cursor + 1
+            endif
+            if match_position > cursor_position
+                let matches_after_cursor = matches_after_cursor + 1
+            endif
+        endfor
+        return printf("/%s -%d | +%d", @/, matches_before_cursor, matches_after_cursor)
+    endif
+endfunction
 " ^V<e2><80><fe>X<94>
 " —
 " http://www.ltg.ed.ac.uk/~richard/utf-8.cgi?input=%E2%80%94&mode=char
@@ -128,25 +201,89 @@ vnoremap <expr> A mode() ==? "\<C-V>" ?  'A'  :  ':<c-u>call VisualA()<CR>'
 " register. This wasn’t working for digraphs, where the keys pressed were
 " being inserted insted of the digraph itself. So now we insert the contents
 " of the dot register via <C-r>
+"
+" pos, rpos
+" pos, rpos
+" pos, rpos
+" pos, rpos
+"
+" pos
+" pis
+" pes
+" pos
+
+nnoremap <silent> ga :echo MatchByteOffsetsToString(GetMatchByteOffsets())<CR>
+" blaugrana | blaugrana | blaugrana | blaugrana
 function! RepeatChange()
     let whole_keyword_enabled = @/ ==# '\<' . @" . '\>'
     let whole_keyword_disabled = !whole_keyword_enabled
-    if whole_keyword_disabled
+
+    " works on 1. gs, 2. cgn on regex
+    let pattern_matches_deleted_text = @" =~ @/
+    let pattern_does_not_match_deleted_text = !pattern_matches_deleted_text
+    if !pattern_matches_deleted_text
         let search_string = s:String2Pattern(@")
         let @/ = search_string
     endif
 
     call feedkeys("cgn.")
-    call feedkeys(":set hls")
+    call feedkeys(":set hls\<CR>")
+
+    " function! PrintMatchInfoAndDeleteAugroup()
+    "     let match_positions = GetMatchByteOffsets()
+    "     let match_info_string = MatchByteOffsetsToString(match_positions)
+    "     let feedkeys_command = printf(":echo '%s'\<CR>", match_info_string)
+    "     call feedkeys(feedkeys_command)
+    "     au! PostChange 
+    " endfunction
+    " augroup PostChange
+    "     au!
+    "     au InsertLeave * call PrintMatchInfoAndDeleteAugroup()
+    " augroup END
+
 endfunction
 
 " TEST CASE MINI:
-" function | function
-" let sequ | let soccer
+" let soccer | let soccer
 let g:override_pos = []
-function! s:RemovedAllOverrides()
+function! CheckIfCursorMoveWasCausedByDotOperator()
+    let condition_1 = @/ =~ @"
+
+    let current_position_save = getpos(".")
+    let visual_start_save     = getpos("'<")
+    let visual_end_save       = getpos("'>")
+    "unique_2
+    let yank_start_save       = getpos("'[")
+    let yank_end_save         = getpos("']")
+    let quote_reg_save        = @"
+
+    silent! normal! v`[y
+    let string_between_yank_start_and_cursor = @"
+
+    call setpos(".", current_position_save)
+    call setpos("'<", visual_start_save)
+    call setpos("'>", visual_end_save)
+    call setpos("'[", yank_start_save)
+    call setpos("']", yank_end_save)
+    let @" = quote_reg_save
+
+    let condition_2 = string_between_yank_start_and_cursor ==# @.
+    return condition_1 && condition_2
+
+endfunction
+
+" unique_4
+" unique_5
+" unique_6
+" unique_7
+
+function! RemovedAllOverrides()
     " Ignores the first CursorMoved fired immediately after leaving InsertMode
     if g:override_pos == getpos(".")
+        return
+    endif
+    let cursor_move_was_caused_by_dot_operator = CheckIfCursorMoveWasCausedByDotOperator()
+    if cursor_move_was_caused_by_dot_operator
         return
     endif
     let g:override_pos = []
@@ -161,6 +298,7 @@ function! s:RemovedAllOverrides()
     nnoremap <silent> gs :call <SID>ToggleWholeKeyword()<CR>
 endfunction
 
+" RepeatChange chaining, n overried edge case {{{
 " When we enter normal after making a change, `n` is overriden. The new
 " behaviour updated the `@/` register to `@"` and then searches for the next
 " match of `@"`. Because it searches for the next match, the CursorMoved gets
@@ -174,16 +312,17 @@ endfunction
 " vanilla in a small conditional case 
 " →   condition_1: some text replacement has taken place via `c`
 " →   condition_2: cursor has not moved after replacement
+" }}}
 
-function! NextPatternOverride()
+function! s:NextPatternOverride()
     let search_string = s:String2Pattern(@")
     let @/ = search_string
     call feedkeys("n", "n")
 endfunction
-function! ToggleWholeKeywordOverride()
+function! s:ToggleWholeKeywordOverride()
     let search_string = s:String2Pattern(@")
     let @/ = search_string
-    call feedkeys(":set hls")
+    call feedkeys(":set hls\<CR>")
     call s:ToggleWholeKeyword()
 endfunction
 function! s:InitializeDotOverride()
@@ -193,17 +332,18 @@ function! s:InitializeDotOverride()
     endif
     let g:override_pos = getpos(".")
     nnoremap <silent> . :call RepeatChange()<CR>
-    nnoremap <silent> n :call NextPatternOverride()<CR>
-    nnoremap <silent> gs :call ToggleWholeKeywordOverride()<CR>
+    nnoremap <silent> n :call <SID>NextPatternOverride()<CR>
+    nnoremap <silent> gs :call <SID>ToggleWholeKeywordOverride()<CR>
 
-    au DotOverride CursorMoved * call <SID>RemovedAllOverrides()
+    au DotOverride CursorMoved * call RemovedAllOverrides()
 endfunction
-function YankPost()
+function! s:YankPost()
     if v:event["operator"] ==# "y" || v:event["operator"] ==# "d"
         return
     endif
-    au DotOverride InsertLeave * call <SID>InitializeDotOverride()
+    au DotOverride InsertLeave * call s:InitializeDotOverride()
 endfunction
+" Yank Post Reasoning {{{
 " Initially, we were using InsertLeave as the entry point. However, this was
 " breaking the dot operator on changes where only text is inserted, without
 " replacing any text. If we do `Anew_text` in NORMAL mode, this was not
@@ -211,9 +351,10 @@ endfunction
 " overriden if text is only being inserted. We now use the TextYankPost event
 " to set up the InsertLeave event. In YankPost, we check if it was triggered
 " by the 'c' operator and then set up the InsertEnter auto command.
+" }}}
 augroup DotOverride
     au! 
-    au TextYankPost * call YankPost()
+    au TextYankPost * call s:YankPost()
 augroup END
 
 
@@ -248,8 +389,9 @@ nnoremap <silent> gs :call <SID>ToggleWholeKeyword()<CR>
 
 cabbrev vv v/<C-r>=@/<CR>
 cabbrev gg g/<C-r>=@/<CR>
+cabbrev ss s/<C-r>=@/<CR>
 
-" Search in selection
-vnoremap / :<c-u>call feedkeys('/\%>' . (line("'<") - 1) . 'l\%<' . (line("'>") + 1) . "l")<CR>
+" Search in selection if in VISUAL LINE mode
+vnoremap <expr> / mode() !=# 'V' ? '/' : ':<c-u>call feedkeys(''/\%>'' . (line("''<") - 1) . ''l\%<'' . (line("''>") + 1) . "l")<CR>'
 
-
+" unique_3
