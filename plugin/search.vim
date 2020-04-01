@@ -4,22 +4,36 @@
 " Press cgn on first 'function'. Press DOT. Undo twice. Press 0. 
 " Highlighting should be disabled, but stays enabled.
 " 
-" BUG: RepeatChange: Pressing DOT triggers repeat change. Pressing it again
-" does normal DOT command. Pressing it again triggers repeat change. This
-" alternates. Ideal behaviour would be always being on RepeatChange unitl a
-" cursor move that is not triggered by DOT.
+" [fixed, see below] RepeatChange: Pressing DOT triggers repeat change.
+" Pressing it again does normal DOT command. Pressing it again triggers repeat
+" change. This alternates. Ideal behaviour would be always being on
+" RepeatChange unitl a cursor move that is not triggered by DOT.
+" fix: We create a new function CheckIfCursorMoveWasCausedByDotOperator. This
+" checks for two conditions as a sort of heurisitc and if it evaluates to
+" true, we hold off on the DOT unmapping in the RemovedAllOverrides function
 "
-" BUG_HIGH_PRIORITY: When you do RepeatChange via DOT, 'set hls' get’s
+" [fixed, see below] When you do RepeatChange via DOT, 'set hls' get’s
 " displayed instead of number of matches. This is useless information and very
 " annoying to the user.
+" fix: We created two new functions: GetMatchByteOffsets and
+" MatchByteOffsetsToString. These are used to tell the user how many
+" occurences of the replaced string are still in the buffer after a
+" replacement has been made.
 "
 " IDEA: give DOT operator same treatment as PASTE operator
 "       HISTORY of deleted text and replaced text
-"*d
-" BUG: search for 'C', then change first 'TextChangedI', then DOT
+"
+" [fixed, see below] BUG: search for 'C', then change first 'TextChangedI', then DOT
 " au TextChangedI * call CustomLogger("TextChangedI")
+" fix: in the first line of RepeatChange, we were doing @" =~ @/. Instead we
+" should do @/ =~ @" for the regexp match to work.
+"
+" WHOLEKEYWORD:
+" some, something, somebody
+" some, something, somebody
 "
 " CASE:
+" color      | Color | coloR
 " color      | Color | coloR
 " 
 " BUG: Use VisualStar in a macro and try to repeat the macro
@@ -91,7 +105,8 @@ function! s:VisualHash()
     let @/ = search_string
     call feedkeys("?\<CR>")
 endfunction
-function! s:Visual_gd()
+" breakadd func 10 Visual_gd 
+function! Visual_gd()
     let search_string = s:Visual2Search()
     let cmd = ":0/" . search_string "/"
     execute cmd
@@ -130,7 +145,7 @@ function! s:VisualA()
     " TODO: Affected by text-width
     let substitute_command = 'substitute(@", "[]", "\\0", "g")'
     call feedkeys("cgn")
-    call feedkeys('=' . substitute_command . '', "n")
+    call feedkeys("\<C-r>=" . substitute_command . "\<Esc>", "n")
 
     " IMPLEMENTATION_2:
     " Not repeatable, this is the vanilla behaviour of cgn if you enter normal mode via CTRL-O
@@ -154,6 +169,18 @@ function! GetMatchByteOffsets()
     let search_incomplete = v:true
 
 
+    set nowrapscan
+    try
+        keepjumps normal! n
+    catch /^Vim[^)]\+):E385\D/
+        try
+            keepjumps normal! N
+        catch /^Vim[^)]\+):E384\D/
+            let search_incomplete = v:false
+        endtry
+    finally
+        call winrestview(view_save)
+    endtry
 
     set wrapscan
     while search_incomplete
@@ -174,12 +201,16 @@ function! GetMatchByteOffsets()
 
 endfunction
 function! MatchByteOffsetsToString(match_positions)
+    if len(a:match_positions) == 0
+        return ""
+        return printf("/%s not found", @/)
+    endif
     let cursor_position = line2byte(".") + col(".") - 1
     let cursor_on_match = index(a:match_positions, cursor_position) > -1
     if cursor_on_match
         let x_match_of_n_matches = index(a:match_positions, cursor_position) + 1
         let total_matches = len(a:match_positions)
-        return printf("/%s MATCH %d of %d", @/, x_match_of_n_matches, total_matches)
+        return printf("/%s MATCH %d of %d; match_positions %s", @/, x_match_of_n_matches, total_matches, a:match_positions)
     else
         let matches_before_cursor = 0
         let matches_after_cursor = 0
@@ -191,7 +222,19 @@ function! MatchByteOffsetsToString(match_positions)
                 let matches_after_cursor = matches_after_cursor + 1
             endif
         endfor
-        return printf("/%s -%d | +%d", @/, matches_before_cursor, matches_after_cursor)
+        let left_info_string = ''
+        let right_info_string = ''
+        let separator = ''
+        if matches_before_cursor > 0
+            let left_info_string = '-' . matches_before_cursor
+        endif
+        if matches_after_cursor > 0
+            let right_info_string = '+' . matches_after_cursor
+        endif
+        if matches_before_cursor > 0 && matches_after_cursor > 0
+            let separator = ' | '
+        endif
+        return printf("/%s %s%s%s", @/, left_info_string, separator, right_info_string)
     endif
 endfunction
 " ^V<e2><80><fe>X<94>
@@ -212,44 +255,91 @@ endfunction
 " pes
 " pos
 
-nnoremap <silent> ga :echo MatchByteOffsetsToString(GetMatchByteOffsets())<CR>
-" blaugrana | blaugrana | blaugrana | blaugrana
-function! RepeatChange()
-    let whole_keyword_enabled = @/ ==# '\<' . @" . '\>'
-    let whole_keyword_disabled = !whole_keyword_enabled
+function! AstartswithB(a, b)
+    let b_length = len(a:b)
+    let a_substring = a:a[0:b_length-1]
+    if a_substring ==# a:b
+        return v:true
+    endif
+    return v:false
+endfunction
 
-    " works on 1. gs, 2. cgn on regex
-    let pattern_matches_deleted_text = @" =~ @/
+" blaugrana | blaugrana | blaugrana | blaugrana
+function! RepeatChange(update_search_register = v:true)
+
+    " match({expr}, {pat} [, {start} [, {count}]])
+    let pattern_matches_deleted_text = match(@", @/) > -1
     let pattern_does_not_match_deleted_text = !pattern_matches_deleted_text
-    if !pattern_matches_deleted_text
+    if pattern_does_not_match_deleted_text
         let search_string = s:String2Pattern(@")
         let @/ = search_string
     endif
 
-    call feedkeys("cgn.")
-    call feedkeys(":set hls\<CR>")
 
-    " function! PrintMatchInfoAndDeleteAugroup()
-    "     let match_positions = GetMatchByteOffsets()
-    "     let match_info_string = MatchByteOffsetsToString(match_positions)
-    "     let feedkeys_command = printf(":echo '%s'\<CR>", match_info_string)
-    "     call feedkeys(feedkeys_command)
-    "     au! PostChange 
-    " endfunction
-    " augroup PostChange
-    "     au!
-    "     au InsertLeave * call PrintMatchInfoAndDeleteAugroup()
-    " augroup END
+    " If we don’t do this check, then 'gs' breaks sometimes. The bug case is
+    " when the search pattern is a substring of the deleted text. Eg. if we
+    " have the following case:
+    "
+    "     @/ = input
+    "     @" = input_element
+    "
+    " We press '.' and expect the next input_element to get changed. But @/
+    " does not get updated as in the previous code block the boolean
+    " 'pattern_matches_deleted_text' is true. 
+    " [match('input_element', 'input')]
+    "
+    " We check for this substring case by converting the deleted text to a
+    " pattern and comparing the raw strings of these two pattersn. 
+    "
+    " (Another feasible approach would have been to convert the pattern in @/
+    " to an unescaped original string and compare with the unmodified @"
+    " register.)
+    let deleted_text_as_pattern = s:String2Pattern(@")
+    " let deleted_text_pattern_startswith_search_pattern = AstartswithB(deleted_text_as_pattern, @/)
+    " if deleted_text_pattern_startswith_search_pattern
+
+    let deleted_text_pattern_contains_search_pattern = stridx(deleted_text_as_pattern, @/) > -1
+    if deleted_text_pattern_contains_search_pattern
+        let search_string = s:String2Pattern(@")
+        let @/ = search_string
+    endif
+
+
+    call feedkeys("cgn\<C-r>.\<Esc>")
+
+    function! PrintMatchInfoAndDeleteAugroup()
+        call feedkeys(":set hls\<CR>")
+        " set hls
+        let match_positions = GetMatchByteOffsets()
+        let match_info_string = MatchByteOffsetsToString(match_positions)
+        let feedkeys_command = printf(":echo '%s'\<CR>", match_info_string)
+        call feedkeys(feedkeys_command)
+        au! PostChange 
+    endfunction
+    augroup PostChange
+        au!
+        au InsertLeave * call PrintMatchInfoAndDeleteAugroup()
+    augroup END
 
 endfunction
 
 " TEST CASE MINI:
+" function | function | function | function
 " let soccer | let soccer
 let g:override_pos = []
+" breakadd func 1 CheckIfCursorMoveWasCausedByDotOperator
 function! CheckIfCursorMoveWasCausedByDotOperator()
+    " After a dot operator takes place, we end up in normal mode. The impetus
+    " for putting this check was interference with UltiSnips. In UltiSnips,
+    " pressing <Tab> to jump to the next placeholder was triggering this check
+    " as it was counted as a CursorMove. This function being executed in
+    " VisualMode was causing buggy behaviour.
+    if mode() == "v"
+        return v:false
+    endif
     let condition_1 = @/ =~ @"
 
-    let current_position_save = getpos(".")
+    let view_save = winsaveview()
     let visual_start_save     = getpos("'<")
     let visual_end_save       = getpos("'>")
     "unique_2
@@ -260,7 +350,7 @@ function! CheckIfCursorMoveWasCausedByDotOperator()
     silent! normal! v`[y
     let string_between_yank_start_and_cursor = @"
 
-    call setpos(".", current_position_save)
+    call winrestview(view_save)
     call setpos("'<", visual_start_save)
     call setpos("'>", visual_end_save)
     call setpos("'[", yank_start_save)
@@ -322,8 +412,9 @@ endfunction
 function! s:ToggleWholeKeywordOverride()
     let search_string = s:String2Pattern(@")
     let @/ = search_string
-    call feedkeys(":set hls\<CR>")
+    set hls
     call s:ToggleWholeKeyword()
+    nnoremap <silent> gs :call <SID>ToggleWholeKeyword()<CR>
 endfunction
 function! s:InitializeDotOverride()
     " Prevents Overrides from overlapping
@@ -367,6 +458,14 @@ augroup END
 " hls, nohls
 " hls, nohls
 " last_search_pattern
+function! ModifyDotOverride()
+    let normal_dot_map = mapcheck(".", "n")
+    let dot_mapped_to_repeat_change = stridx(normal_dot_map, "RepeatChange")
+    if dot_mapped_to_repeat_change
+        " v:false means don’t update the search register with the deleted text
+        nnoremap <silent> . :call RepeatChange(v:false)<CR>
+    endif
+endfunction
 function! s:ToggleWholeKeyword()
     let search_pattern = @/
     let length = len(search_pattern)
@@ -377,13 +476,15 @@ function! s:ToggleWholeKeyword()
         let search_pattern = "\\<" . search_pattern . "\\>"
     endif
     let @/ = search_pattern
+    set hls
+    call ModifyDotOverride()
     redraw|echo "/" . search_pattern
 endfunction
 
-vnoremap *  :<c-u>call <SID>VisualStar()<CR>
-vnoremap #  :<c-u>call <SID>VisualHash()<CR>
-vnoremap gd :<c-u>call <SID>Visual_gd()<CR>
-vnoremap s  :<c-u>call <SID>VisualReplace()<CR>
+vnoremap <silent> *  :<c-u>call <SID>VisualStar()<CR>
+vnoremap <silent> #  :<c-u>call <SID>VisualHash()<CR>
+vnoremap <silent> gd :<c-u>call Visual_gd()<CR>
+vnoremap <silent> s  :<c-u>call <SID>VisualReplace()<CR>
 
 nnoremap <silent> gs :call <SID>ToggleWholeKeyword()<CR>
 
@@ -393,5 +494,7 @@ cabbrev ss s/<C-r>=@/<CR>
 
 " Search in selection if in VISUAL LINE mode
 vnoremap <expr> / mode() !=# 'V' ? '/' : ':<c-u>call feedkeys(''/\%>'' . (line("''<") - 1) . ''l\%<'' . (line("''>") + 1) . "l")<CR>'
+
+
 
 " unique_3
