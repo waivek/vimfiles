@@ -74,11 +74,21 @@
 " array_index[12]$1^.^ab*cdma~da"quotes"/sub/'singq'📁📁—日本語 | array_index[12]$1^.^ab*cdma~da"quotes"/sub/'singq'📁📁—日本語
 " multi line search
 " 
-
 " EXPLANATION: failed attempt at getting visual selection without using normal mode
 " let highlighted_string = line[start_col-1:end_col-1]
 " works on multi-byte strings: https://www.reddit.com/r/vim/comments/5t08uo/vimscript_unicode/
 " let highlighted_string = strcharpart(getline("'<"), col("'<")-1, col("'>") - col("'<")+1)
+
+let g:dot_modifications_enabled = v:true
+function! ToggleDotModifications()
+    let g:dot_modifications_enabled = !g:dot_modifications_enabled
+    if g:dot_modifications_enabled
+        echo "Dot Modifications enabled"
+    else
+        echo "Dot Modifications disabled"
+    endif
+endfunction
+command! ToggleDotModifications call ToggleDotModifications()
 
 function! s:String2Pattern(string)
     let highlighted_string = a:string
@@ -265,45 +275,14 @@ function! AstartswithB(a, b)
 endfunction
 
 " blaugrana | blaugrana | blaugrana | blaugrana
-function! RepeatChange(update_search_register = v:true)
+function! RepeatChange()
 
-    " match({expr}, {pat} [, {start} [, {count}]])
-    let pattern_matches_deleted_text = match(@", @/) > -1
-    let pattern_does_not_match_deleted_text = !pattern_matches_deleted_text
-    if pattern_does_not_match_deleted_text
+    let pattern_matches_entire_deleted_text = matchstr(@", @/) ==# @"
+    let pattern_does_not_match_entire_deleted_text = !pattern_matches_entire_deleted_text
+    if pattern_does_not_match_entire_deleted_text
         let search_string = s:String2Pattern(@")
         let @/ = search_string
     endif
-
-
-    " If we don’t do this check, then 'gs' breaks sometimes. The bug case is
-    " when the search pattern is a substring of the deleted text. Eg. if we
-    " have the following case:
-    "
-    "     @/ = input
-    "     @" = input_element
-    "
-    " We press '.' and expect the next input_element to get changed. But @/
-    " does not get updated as in the previous code block the boolean
-    " 'pattern_matches_deleted_text' is true. 
-    " [match('input_element', 'input')]
-    "
-    " We check for this substring case by converting the deleted text to a
-    " pattern and comparing the raw strings of these two pattersn. 
-    "
-    " (Another feasible approach would have been to convert the pattern in @/
-    " to an unescaped original string and compare with the unmodified @"
-    " register.)
-    let deleted_text_as_pattern = s:String2Pattern(@")
-    " let deleted_text_pattern_startswith_search_pattern = AstartswithB(deleted_text_as_pattern, @/)
-    " if deleted_text_pattern_startswith_search_pattern
-
-    let deleted_text_pattern_contains_search_pattern = stridx(deleted_text_as_pattern, @/) > -1
-    if deleted_text_pattern_contains_search_pattern
-        let search_string = s:String2Pattern(@")
-        let @/ = search_string
-    endif
-
 
     call feedkeys("cgn\<C-r>.\<Esc>")
 
@@ -327,6 +306,69 @@ endfunction
 " function | function | function | function
 " let soccer | let soccer
 let g:override_pos = []
+let g:mappings = {}
+" https://vi.stackexchange.com/questions/7734/how-to-save-and-restore-a-mapping
+function! SaveMappings(keys, mode, global) abort
+    let mappings = {}
+
+    if a:global
+        for l:key in a:keys
+            let buf_local_map = maparg(l:key, a:mode, 0, 1)
+
+            sil! exe a:mode.'unmap <buffer> '.l:key
+
+            let map_info        = maparg(l:key, a:mode, 0, 1)
+            let mappings[l:key] = !empty(map_info)
+                        \     ? map_info
+                        \     : {
+                        \ 'unmapped' : 1,
+                        \ 'buffer'   : 0,
+                        \ 'lhs'      : l:key,
+                        \ 'mode'     : a:mode,
+                        \ }
+
+            call RestoreMappings({l:key : buf_local_map})
+        endfor
+
+    else
+        for l:key in a:keys
+            let map_info        = maparg(l:key, a:mode, 0, 1)
+            let mappings[l:key] = !empty(map_info)
+                        \     ? map_info
+                        \     : {
+                        \ 'unmapped' : 1,
+                        \ 'buffer'   : 1,
+                        \ 'lhs'      : l:key,
+                        \ 'mode'     : a:mode,
+                        \ }
+        endfor
+    endif
+
+    return mappings
+endfu
+function! RestoreMappings(mappings) abort
+
+    for mapping in values(a:mappings)
+        if !has_key(mapping, 'unmapped') && !empty(mapping)
+            exe     mapping.mode
+               \ . (mapping.noremap ? 'noremap   ' : 'map ')
+               \ . (mapping.buffer  ? ' <buffer> ' : '')
+               \ . (mapping.expr    ? ' <expr>   ' : '')
+               \ . (mapping.nowait  ? ' <nowait> ' : '')
+               \ . (mapping.silent  ? ' <silent> ' : '')
+               \ .  mapping.lhs
+               \ . ' '
+               \ . substitute(mapping.rhs, '<SID>', '<SNR>'.mapping.sid.'_', 'g')
+
+        elseif has_key(mapping, 'unmapped')
+            sil! exe mapping.mode.'unmap '
+                                \ .(mapping.buffer ? ' <buffer> ' : '')
+                                \ . mapping.lhs
+        endif
+    endfor
+
+endfu
+
 " breakadd func 1 CheckIfCursorMoveWasCausedByDotOperator
 function! CheckIfCursorMoveWasCausedByDotOperator()
     " After a dot operator takes place, we end up in normal mode. The impetus
@@ -362,12 +404,7 @@ function! CheckIfCursorMoveWasCausedByDotOperator()
 
 endfunction
 
-" unique_4
-" unique_5
-" unique_6
-" unique_7
-
-function! RemovedAllOverrides()
+function! s:RemovedAllOverrides()
     " Ignores the first CursorMoved fired immediately after leaving InsertMode
     if g:override_pos == getpos(".")
         return
@@ -378,17 +415,11 @@ function! RemovedAllOverrides()
     endif
     let g:override_pos = []
     au! DotOverride CursorMoved
-    nunmap .
-
     au! DotOverride InsertLeave
-
-    nunmap n
-
-    nunmap gs
-    nnoremap <silent> gs :call <SID>ToggleWholeKeyword()<CR>
+    call RestoreMappings(g:mappings)
 endfunction
 
-" RepeatChange chaining, n overried edge case {{{
+" RepeatChange chaining, n override edge case {{{
 " When we enter normal after making a change, `n` is overriden. The new
 " behaviour updated the `@/` register to `@"` and then searches for the next
 " match of `@"`. Because it searches for the next match, the CursorMoved gets
@@ -410,8 +441,13 @@ function! s:NextPatternOverride()
     call feedkeys("n", "n")
 endfunction
 function! s:ToggleWholeKeywordOverride()
-    let search_string = s:String2Pattern(@")
-    let @/ = search_string
+    " Duplicate 1, Original: RepeatChange
+    let pattern_matches_entire_deleted_text = matchstr(@", @/) == @"
+    let pattern_does_not_match_entire_deleted_text = !pattern_matches_entire_deleted_text
+    if pattern_does_not_match_entire_deleted_text
+        let search_string = s:String2Pattern(@")
+        let @/ = search_string
+    endif
     set hls
     call s:ToggleWholeKeyword()
     nnoremap <silent> gs :call <SID>ToggleWholeKeyword()<CR>
@@ -422,14 +458,18 @@ function! s:InitializeDotOverride()
         return
     endif
     let g:override_pos = getpos(".")
+    let g:mappings = SaveMappings([".", "n", "gs"], "n", v:true)
     nnoremap <silent> . :call RepeatChange()<CR>
     nnoremap <silent> n :call <SID>NextPatternOverride()<CR>
     nnoremap <silent> gs :call <SID>ToggleWholeKeywordOverride()<CR>
 
-    au DotOverride CursorMoved * call RemovedAllOverrides()
+    au DotOverride CursorMoved * call s:RemovedAllOverrides()
 endfunction
 function! s:YankPost()
     if v:event["operator"] ==# "y" || v:event["operator"] ==# "d"
+        return
+    endif
+    if !g:dot_modifications_enabled
         return
     endif
     au DotOverride InsertLeave * call s:InitializeDotOverride()
@@ -463,7 +503,7 @@ function! ModifyDotOverride()
     let dot_mapped_to_repeat_change = stridx(normal_dot_map, "RepeatChange")
     if dot_mapped_to_repeat_change
         " v:false means don’t update the search register with the deleted text
-        nnoremap <silent> . :call RepeatChange(v:false)<CR>
+        nnoremap <silent> . :call RepeatChange()<CR>
     endif
 endfunction
 function! s:ToggleWholeKeyword()
@@ -493,7 +533,8 @@ cabbrev gg g/<C-r>=@/<CR>
 cabbrev ss s/<C-r>=@/<CR>
 
 " Search in selection if in VISUAL LINE mode
-vnoremap <expr> / mode() !=# 'V' ? '/' : ':<c-u>call feedkeys(''/\%>'' . (line("''<") - 1) . ''l\%<'' . (line("''>") + 1) . "l")<CR>'
+" vnoremap <expr> / mode() !=# 'V' ? '/' : ':<c-u>call feedkeys(''/\%>'' . (line("''<") - 1) . ''l\%<'' . (line("''>") + 1) . "l")<CR>'
+
 
 
 

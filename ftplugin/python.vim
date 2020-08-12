@@ -19,3 +19,5 @@ function! Enumerate()
     endif
 endfunction
 command! Enumerate call Enumerate()
+
+setlocal path+=~/Documents/Python/

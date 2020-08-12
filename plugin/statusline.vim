@@ -1,7 +1,8 @@
+
 " Status Line {{{
 " 
 
-function! LinterStatus() abort
+function! s:LinterStatus() abort
     if ale#engine#IsCheckingBuffer(bufnr(''))
         return "Linting..."
     endif
@@ -18,7 +19,7 @@ function! LinterStatus() abort
     \)
 endfunction
 
-" set statusline=%{LinterStatus()}
+" set statusline=%{s:LinterStatus()}
 function! Relpath()
     if &ft == "help" || &ft == "man.cpp"
         return expand("%:t")
@@ -65,7 +66,7 @@ let g:error_buffers = []
 let g:error_lines = []
 let g:messages = []
 sign define piet text=>> texthl=MatchParen linehl=Normal
-function! ParseQuickfix()
+function! s:ParseQuickfix()
     let last_cmd = histget("cmd", histnr("cmd"))
     if last_cmd[:4] != "make"
         return
@@ -91,7 +92,7 @@ function! ParseQuickfix()
     endif
 endfunction
 
-function! PrintErrorMsg()
+function! s:PrintErrorMsg()
     let lnum = line(".")
     let bufnum = bufnr("%")
     let len = len(g:error_lines)
@@ -111,27 +112,10 @@ endfunction
 
 " au! CursorMoved *
 au! QuickFixCmdPost *
-" au CursorMoved * call PrintErrorMsg()
-au QuickFixCmdPost * call ParseQuickfix()
+" au CursorMoved * call s:PrintErrorMsg()
+au QuickFixCmdPost * call s:ParseQuickfix()
 " }}}
 " Traverse Indent {{{
-function! AddPositionToJumpList()
-    let save_a_mark = getpos("'a")
-    normal! ma
-    normal! `a
-    call setpos("'a", save_a_mark)
-endfunction
 
-function! PreviousIndent()
-    call AddPositionToJumpList()
-    let previous_indent = indent(".") - 1
-    if previous_indent == -1
-        let previous_indent = 0
-    endif
-    let regexp = printf('^\s\{0,%d\}\S', previous_indent)
-    call search(regexp, 'be')
-endfunction
-
-nnoremap <silent> <BS> :call PreviousIndent()<CR>
 " }}}
 

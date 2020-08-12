@@ -1,3 +1,5 @@
+" BUG: dsm doesn’t work for the following line:
+"     len(matchstr(@", @/)) len(@")
 " TODO:
 " 1 - Study error handling and failure method call stack
 " 2 - Find next and previous method call
@@ -266,6 +268,8 @@ onoremap  <silent> im :<c-u>call <sid>VisualSelect(<sid>CurrentFnameI())<CR>
 onoremap  <silent> am :<c-u>call <sid>VisualSelect(<sid>CurrentFnameA())<CR>
 onoremap  <silent> aM :<c-u>call <sid>VisualSelect(<sid>CurrentFnameBigA())<CR>
 onoremap  <silent> iM :<c-u>call <sid>VisualSelect(<sid>CurrentFnameBigI())<CR>
+
+nmap csm cim
 
 au BufRead * silent! nunmap <buffer> ]m
 au BufRead * silent! vunmap <buffer> ]m

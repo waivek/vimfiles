@@ -1,0 +1,28 @@
+snippet common
+import sys
+sys.path = [ "C:/users/vivek/Documents/Python/" ] + sys.path
+endsnippet
+
+snippet argparse
+parser = argparse.ArgumentParser(description="$1")
+parser.add_argument("${2:input}")
+args = parser.parse_args()
+endsnippet
+
+snippet columnar
+`!p import re
+input_string = t[1]
+input_tokens = [ token.strip() for token in input_string.split(",") ]
+output_tokens = []
+for input_token in input_tokens:
+	modified_token= input_token.replace(" ", "_").replace('"', "").lower()
+	output_tokens.append(modified_token)
+output_string = ", ".join(output_tokens)
+`
+# from columnar import columnar
+headers = [ ${1:"Name"} ]
+data = []
+data.append([`!p snip.rv=output_string `])
+table = columnar(data, headers, no_borders=True)
+print(table)
+endsnippet

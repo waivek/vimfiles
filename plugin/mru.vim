@@ -1,12 +1,13 @@
+
 " GetStrBeforeColon() {{{
-function! GetStrBeforeColon(str)
+function! s:GetStrBeforeColon(str)
     let colon_pos = match(a:str, ":")
     let fname = a:str[:colon_pos-1]
     return fname
 endfunction
 " }}}
 " MruDCompletion() {{{
-function! MruDCompletion (ArgLead, CmdLine, CursorPos)
+function! s:MruDCompletion (ArgLead, CmdLine, CursorPos)
     let filenames = []
     let tail = ""
     " file.c -> file\.c
@@ -28,7 +29,7 @@ function! MruDCompletion (ArgLead, CmdLine, CursorPos)
 endfunction
 " }}}
 " MruCompletion() {{{
-function! MruCompletion (ArgLead, CmdLine, CursorPos)
+function! s:MruCompletion (ArgLead, CmdLine, CursorPos)
     let filenames = []
     let tail = ""
     " file.c -> file\.c
@@ -50,11 +51,11 @@ endfunction
 " }}}
 " MruFunction () {{{
 " For empty string open's first file
-function! MruFunction(args)
+function! s:MruFunction(args)
     let fname = ""
     " They entered a full file name like `cs.vim`
     if match(a:args, ":") == -1
-        let filenames = MruCompletion(a:args, 0, 0)
+        let filenames = s:MruCompletion(a:args, 0, 0)
         " There is at least one result
         if !empty(filenames)
             let fname = filenames[0]
@@ -63,7 +64,7 @@ function! MruFunction(args)
         let fname = a:args
     endif
     if !empty(fname)
-        let pos_plus_one = GetStrBeforeColon(fname)
+        let pos_plus_one = s:GetStrBeforeColon(fname)
         execute "edit " . v:oldfiles[pos_plus_one-1]
     else
         echo "Invalid Input"
@@ -71,7 +72,7 @@ function! MruFunction(args)
 endfunction
 " }}}
 " MruQuickfix() {{{
-function! MruQuickfix(term) 
+function! s:MruQuickfix(term) 
     let L = []
     let regex = substitute(a:term, '\.', '\\.', "g")
     let regex = substitute(regex, "*", ".*", "g")
@@ -88,6 +89,6 @@ function! MruQuickfix(term)
     copen
 endfunction
 " }}}
-command! -complete=customlist,MruCompletion -nargs=? MRU call MruFunction("<args>")
-command! -complete=customlist,MruDCompletion -nargs=? MRUD call MruFunction("<args>")
-command! -nargs=? MRUQ call MruQuickfix("<args>")
+command! -complete=customlist,s:MruCompletion -nargs=? MRU call s:MruFunction("<args>")
+command! -complete=customlist,s:MruDCompletion -nargs=? MRUD call s:MruFunction("<args>")
+command! -nargs=? MRUQ call s:MruQuickfix("<args>")

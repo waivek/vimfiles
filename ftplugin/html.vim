@@ -1,5 +1,7 @@
 set encoding=utf8
+let &l:formatprg='tidy -indent --indent-spaces 4 -quiet --show-errors 0 --wrap-attributes no --wrap 0'
 source ~/vimfiles/ftplugin/css.vim
+
 
 function! PrintJavaScriptVariable()
     let print_fmt = 'console.log("variable_name: " + variable_name);'
@@ -80,3 +82,68 @@ function! CleanPDF()
     %s/'/’/g
     " call CorrectSpellingErrors()
 endfunction
+
+function! FixSingleQuoteTypography()
+    let words = [ "I'll", "I'm", "I've", "It's", "That's", "There's", "They're", "can't", "didn't", "doesn't", "don't", 
+                \ "he's", "isn't", "it's", "that's", "there's", "they're", "who'd", "you'll" ]
+
+    for word in words
+        let replacement = substitute(word, "'", "’", "")
+        let substitute_command = '%s/\<' . word . '\>/' . replacement . '/g'
+        execute substitute_command
+    endfor
+
+endfunction
+
+
+function! InStartTag()
+endfunction
+
+
+
+breakdel *
+" breakadd func 24 VisualSelectAroundAttribute
+" Doesn’t work for hyphens. Exmaple: data-type="some-content"
+function! VisualSelectAroundAttribute()
+    " Check if cursor is inside < and >
+    let pos_save = getpos(".")
+    let quote_register = @"
+    let @" = ""
+    normal! yi>
+    let yanked_text = @"
+    let @" = quote_register
+    call setpos(".", pos_save)
+    if yanked_text ==# ""
+        return
+    endif
+
+    " Check if tag has attributes
+    if stridx(yanked_text, "=") == -1
+        return
+    endif
+
+    " Check if cursor is inside the last attribute
+    let cursor_on_last_attribute = v:false
+    let last_attribute_pattern = search('\w\+="[^"]*"\s*>\?', "e")
+    normal! vy
+    let character_under_cursor = @"
+    let on_last_attribute = character_under_cursor ==# ">"
+    let @" = quote_register
+    call setpos(".", pos_save)
+
+    " Setting the pattern to ensure surrounding spaces are included in the
+    " appropriate context
+    let attribute_pattern = ""
+    if on_last_attribute
+        let attribute_pattern = '\s*\w\+="[^"]*"\s*\ze>'
+    else
+        let attribute_pattern = '\w\+="[^"]*"\s*'
+    endif
+    call search(attribute_pattern, "bc")
+    normal! v
+    call search(attribute_pattern, "ce")
+endfunction
+
+xnoremap  <silent> aa :<c-u>call VisualSelectAroundAttribute()<CR>
+onoremap  <silent> aa :<c-u>call VisualSelectAroundAttribute()<CR>
+

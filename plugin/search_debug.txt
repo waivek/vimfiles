@@ -1,0 +1,60 @@
+PATTERN: &nbsp;\ze\w
+
+LINES:
+<p>&nbsp;</p>
+A long&nbsp;time ago
+<p>&nbsp;</p>
+New ways&nbsp;to see
+
+var collapse_span = document.createElement("span");
+collapse_span.innerHTML = collapse_svg;
+collapse.
+
+RepeatChange test cases:
+→ / 'input'
+→ c 'input$word'
+→ .
+
+@/        , @"            , dot behaviour , status
+input     , input$word    , UPDATE        , PASS
+range     , input_range   , UPDATE        , PASS
+\<false\> , [false false] , UPDATE        , PASS
+\<word\>  , word          , STAY          , PASS
+
+CASE 1:
+input$
+input$word
+input$
+input$word
+
+CASE 2: 
+range
+input_range
+range
+input_range
+
+CASE 3: (previous search key after token)
+false
+[false false false]
+false
+[false false false]
+
+CASE 4: (toggle keyword test)
+word
+word_item
+word        word_item
+
+word_item   word
+
+----------- x ---------------
+See whether it works with surround.vim
+STEP 1 (SETUP):
+Change the first trigger to something else. Press DOT
+    news 1
+    news 2
+STEP 2:
+Do the following command on word_1. 
+    ysiw"
+Move the cursor onto word_2. Press DOT.
+    word_1
+    word_2

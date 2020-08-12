@@ -7,8 +7,9 @@
 " Location:	plugin/cool.vim
 " Website:	https://github.com/romainl/vim-cool
 
+
 if exists("g:loaded_cool") || v:version < 703 || &compatible
-    finish
+    " finish
 endif
 let g:loaded_cool = 1
 
@@ -27,7 +28,7 @@ if exists('##OptionSet')
     autocmd Cool OptionSet hlsearch call <SID>PlayItCool(v:option_old, v:option_new)
 endif
 
-let g:echo_count = 0
+
 function! s:StartHL()
     if !v:hlsearch || mode() isnot 'n' 
         return
@@ -39,9 +40,6 @@ function! s:StartHL()
 
     " TODO: Check out '^
     let on_last_change = getpos("'.") == getpos(".")
-    " let condition_1 = getpos("'[") != getpos("'<")
-    " echo g:echo_count "on_last_change" on_last_change "'." getpos("'.") "." getpos(".") 
-    " let g:echo_count += 1
     
     silent! exe "keepjumps go".(line2byte('.')+col('.')-(v:searchforward ? 2 : 0))
     try
@@ -68,6 +66,7 @@ function! s:StartHL()
     if cool_char !~ '[/?]'
         return
     endif
+
     let [f, ws, now, noOf] = [0, &wrapscan, reltime(), [0,0]]
     set nowrapscan
     try
