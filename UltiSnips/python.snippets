@@ -1,6 +1,7 @@
 snippet common
 import sys
 sys.path = [ "C:/users/vivek/Documents/Python/" ] + sys.path
+from common import 
 endsnippet
 
 snippet argparse
@@ -25,4 +26,33 @@ data = []
 data.append([`!p snip.rv=output_string `])
 table = columnar(data, headers, no_borders=True)
 print(table)
+endsnippet
+
+global !p
+import re
+def create_variable_placeholders(snip):
+
+	input_line = snip.buffer[snip.line].rstrip()
+	snip.buffer[snip.line] = ""
+
+	matches = re.findall("{[^}:]+", input_line)
+	variable_names = [ match[1:] for match in matches ]
+	assignments = []
+	for tabstop_index, v in enumerate(variable_names, start=1):
+		rhs = "${%d:%s}" % (tabstop_index, v)
+		tabstopped_assignment = "{lhs}={rhs}".format(lhs=v, rhs=rhs)
+		assignments.append(tabstopped_assignment)
+	argument_portion = ", ".join(assignments)
+	complete_expression = r'{string_portion_with_quotes}.format({argument_portion})'.format(string_portion_with_quotes=input_line, argument_portion=argument_portion)
+	snip.expand_anon(complete_expression)
+endglobal
+
+post_jump "create_variable_placeholders(snip)"
+snippet '".*{.+}.*?"' "doublequote" rA
+`!p snip.rv=match.group(0)`
+endsnippet
+
+post_jump "create_variable_placeholders(snip)"
+snippet "'.*{.+}.*?'" "singlequote" rA
+`!p snip.rv=match.group(0)`
 endsnippet

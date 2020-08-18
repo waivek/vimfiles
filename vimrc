@@ -165,7 +165,7 @@ iabbrev 's ’s
 iabbrev 't ’t
 " }}}
 " GROUP TOGETHER FOR EASIER DEBUGGING {{{
-let &pythonthreedll='C:\Program Files (x86)\Python\Python37-32\python37.dll'
+let &pythonthreedll='C:\Program Files (x86)\Python\Python38-32\python38.dll'
 if has('python3')
     silent! python3 1
 endif
@@ -396,7 +396,6 @@ nnoremap <silent> gt :call TabularizeCharacterUnderCursor()<CR>
 " }}}
 
 " trigger other text that exists here
-breakdel *
 " breakadd func 1 GetTabBehaviour
 function! GetTabBehaviour()
     let cursor_on_first_column = col('.') <= 1

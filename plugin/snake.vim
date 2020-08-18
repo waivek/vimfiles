@@ -137,8 +137,8 @@ nnoremap <silent> t_ :call <SID>Snake("t_")<CR>
 nnoremap <silent> T_ :call <SID>Snake("T_")<CR>
 
 
-nmap <silent> - f_
-nmap <silent> _ F_
+nmap <silent> - :call search('_\zs',  "", line("."))<CR>
+nmap <silent> _ :call search('_\zs', "b", line("."))<CR>
 xmap <silent> - f_
 xmap <silent> _ F_
 
