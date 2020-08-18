@@ -11,41 +11,195 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/jshint
+~MSle0~/ist_string
 
 # Last Substitute Search Pattern:
-~MSle0&ale_linters
+~MSle0&\s*$
 
 # Last Substitute String:
-$ 
+$\0"
 
 # Command Line History (newest to oldest):
+:q
+|2,0,1597782901,,"q"
+:w
+|2,0,1597714624,,"w"
+:write
+|2,0,1597714050,,"write"
+:58
+|2,0,1597708928,,"58"
+:b #
+|2,0,1597708812,,"b #"
+:b 
+|2,0,1597708811,,"b "
+:b
+|2,0,1597708779,,"b"
+:wr
+|2,0,1597708442,,"wr"
+:b common.py
+|2,0,1597708314,,"b common.py"
+:writ
+|2,0,1597707197,,"writ"
+:`
+|2,0,1597706637,,"`"
+:MRU 35:common.py
+|2,0,1597705955,,"MRU 35:common.py"
+:MRU Date
+|2,0,1597705949,,"MRU Date"
+:MRU date
+|2,0,1597705946,,"MRU date"
+:wriet
+|2,0,1597705524,,"wriet"
+:MRU common
+|2,0,1597704713,,"MRU common"
+:bd
+|2,0,1597704712,,"bd"
+:MRU 4:python_files.txt
+|2,0,1597671316,,"MRU 4:python_files.txt"
+:e ~\Desktop\website\schedule.html
+|2,0,1597657361,,"e ~\\Desktop\\website\\schedule.html"
+:MRU 
+|2,0,1597613022,,"MRU "
+:e ~\Documents\pw.txt
+|2,0,1597320375,,"e ~\\Documents\\pw.txt"
+:e pw.
+|2,0,1597320368,,"e pw."
+:FileGrep import 
+|2,0,1597250872,,"FileGrep import "
+:copen
+|2,0,1597250859,,"copen"
+:FileGrep -g imp*rt
+|2,0,1597250857,,"FileGrep -g imp*rt"
+:FileGrep imp*rt
+|2,0,1597250854,,"FileGrep imp*rt"
+:ocpe
+|2,0,1597250841,,"ocpe"
+:bd!
+|2,0,1597250835,,"bd!"
+:%sort u 
+|2,0,1597246922,,"%sort u "
+:%s/\s*$//
+|2,0,1597246919,,"%s/\\s*$//"
+:%so
+|2,0,1597246863,,"%so"
+:%s/from/import
+|2,0,1597246861,,"%s/from/import"
+:%s/\..*$//
+|2,0,1597246853,,"%s/\\..*$//"
+:%sort u
+|2,0,1597246839,,"%sort u"
+:%s/from .*\zsimport.*//g
+|2,0,1597246826,,"%s/from .*\\zsimport.*//g"
+:%sort
+|2,0,1597246793,,"%sort"
+:%s/\(import\|from\)//g
+|2,0,1597246757,,"%s/\\(import\\|from\\)//g"
+:enew
+|2,0,1597246717,,"enew"
+:FileGrep import
+|2,0,1597246711,,"FileGrep import"
+:FileGrep importasdf
+|2,0,1597246695,,"FileGrep importasdf"
+:so %
+|2,0,1597246683,,"so %"
+:echo len(getqflist())
+|2,0,1597246644,,"echo len(getqflist())"
+:echo getqflist()
+|2,0,1597246639,,"echo getqflist()"
+:cclose
+|2,0,1597246627,,"cclose"
+:cn
+|2,0,1597246550,,"cn"
+:FileGrep
+|2,0,1597246485,,"FileGrep"
+:%s/[^"]$/\0"/g
+|2,0,1597246384,,"%s/[^\"]$/\\0\"/g"
+:%s/^[^"]/"\0/g
+|2,0,1597246370,,"%s/^[^\"]/\"\\0/g"
+:%s/^["]/"\0/g
+|2,0,1597246360,,"%s/^[\"]/\"\\0/g"
+:%s/^["]//g
+|2,0,1597246354,,"%s/^[\"]//g"
+:verbose command MRU
+|2,0,1597246272,,"verbose command MRU"
+:call FileGrep()
+|2,0,1597246195,,"call FileGrep()"
+:echo F
+|2,0,1597246191,,"echo F"
+:MRU vimrc
+|2,0,1597246078,,"MRU vimrc"
+:b txt
+|2,0,1597246065,,"b txt"
+:MRU 5:twitch_utilities.py
+|2,0,1597246063,,"MRU 5:twitch_utilities.py"
+:execute 'grep import ' . join(readfile(expand('~\Desktop\python_files.txt')), " ")
+|2,0,1597246060,,"execute 'grep import ' . join(readfile(expand('~\\Desktop\\python_files.txt')), \" \")"
+:execute 'grep --files ' . join(readfile(expand('~\Desktop\python_files.txt')), " ") . " " . "import"
+|2,0,1597246026,,"execute 'grep --files ' . join(readfile(expand('~\\Desktop\\python_files.txt')), \" \") . \" \" . \"import\""
+:execute 'grep --file ' . join(readfile(expand('~\Desktop\python_files.txt')), " ") . " " . "import"
+|2,0,1597246007,,"execute 'grep --file ' . join(readfile(expand('~\\Desktop\\python_files.txt')), \" \") . \" \" . \"import\""
+:let files = readfile(expand('~\Desktop\python_files.txt'))
+|2,0,1597245988,,"let files = readfile(expand('~\\Desktop\\python_files.txt'))"
+:MRU rg.man
+|2,0,1597245897,,"MRU rg.man"
+:execute 'grep import "C:\Users\vivek\Desktop\HTML, Python, Jq\Captions\srt.py" "C:\Users\vivek\Desktop\HTML, Python, Jq\Captions\srt2json.py" "C:\Users\vivek\Desktop\HTML, Python, Jq\Captions\srt_to_html.py"'
+|2,0,1597245836,,"execute 'grep import \"C:\\Users\\vivek\\Desktop\\HTML, Python, Jq\\Captions\\srt.py\" \"C:\\Users\\vivek\\Desktop\\HTML, Python, Jq\\Captions\\srt2json.py\" \"C:\\Users\\vivek\\Desktop\\HTML, Python, Jq\\Captions\\srt_to_html.py\"'"
+:execute 'grep import "C:\Users\vivek\Desktop\HTML, Python, Jq\Captions\srt.py" "C:\Users\vivek\Desktop\HTML, Python, Jq\Captions\srt2json.py" "C:\Users\vivek\Desktop\HTML, Python, Jq\Captions\srt_to_html.py"
+|2,0,1597245828,,"execute 'grep import \"C:\\Users\\vivek\\Desktop\\HTML, Python, Jq\\Captions\\srt.py\" \"C:\\Users\\vivek\\Desktop\\HTML, Python, Jq\\Captions\\srt2json.py\" \"C:\\Users\\vivek\\Desktop\\HTML, Python, Jq\\Captions\\srt_to_html.py\""
+:execute "printf("grep %s %s", "import", join(readfile(expand('~\Desktop\python_files.txt')), " "))
+|2,0,1597245817,,"execute \"printf(\"grep %s %s\", \"import\", join(readfile(expand('~\\Desktop\\python_files.txt')), \" \"))"
+:grep import "C:\Users\vivek\Desktop\HTML, Python, Jq\Captions\srt.py" "C:\Users\vivek\Desktop\HTML, Python, Jq\Captions\srt2json.py" "C:\Users\vivek\Desktop\HTML, Python, Jq\Captions\srt_to_html.py"
+|2,0,1597245740,,"grep import \"C:\\Users\\vivek\\Desktop\\HTML, Python, Jq\\Captions\\srt.py\" \"C:\\Users\\vivek\\Desktop\\HTML, Python, Jq\\Captions\\srt2json.py\" \"C:\\Users\\vivek\\Desktop\\HTML, Python, Jq\\Captions\\srt_to_html.py\""
+:grep import "C:\Users\vivek\Desktop\HTML, Python, Jq\Captions\srt.py"
+|2,0,1597245713,,"grep import \"C:\\Users\\vivek\\Desktop\\HTML, Python, Jq\\Captions\\srt.py\""
+:b ~\Desktop\python_files.txt
+|2,0,1597245694,,"b ~\\Desktop\\python_files.txt"
+:grep -g 
+|2,0,1597245684,,"grep -g "
+:grep
+|2,0,1597245662,,"grep"
+:echo printf("%s", "HEY")
+|2,0,1597245552,,"echo printf(\"%s\", \"HEY\")"
+:echo join(files, " ")
+|2,0,1597245531,,"echo join(files, \" \")"
+:echo files
+|2,0,1597245526,,"echo files"
+:echo readfile(expand('~\Desktop\python_files.txt'))
+|2,0,1597245485,,"echo readfile(expand('~\\Desktop\\python_files.txt'))"
+:echo readfile('~\Desktop\python_files.txt')
+|2,0,1597245478,,"echo readfile('~\\Desktop\\python_files.txt')"
+:echo readfile("~\Desktop\python_files.txt")
+|2,0,1597245470,,"echo readfile(\"~\\Desktop\\python_files.txt\")"
+:h readfile()
+|2,0,1597245458,,"h readfile()"
+:write ~\Desktop\python_files.txt
+|2,0,1597245350,,"write ~\\Desktop\\python_files.txt"
+:%sort 
+|2,0,1597245337,,"%sort "
+:ALEInfo
+|2,0,1597239663,,"ALEInfo"
+:e
+|2,0,1597239662,,"e"
+:echo g:ale_linters
+|2,0,1597239424,,"echo g:ale_linters"
+:echo g:ale#util#error_priority
+|2,0,1597239421,,"echo g:ale#util#error_priority"
+:echo g
+|2,0,1597239416,,"echo g"
+:MRU vimr
+|2,0,1597239403,,"MRU vimr"
+:b vimrc
+|2,0,1597239401,,"b vimrc"
+:AL
+|2,0,1597239179,,"AL"
 :qa
 |2,0,1597239172,,"qa"
-:so %
-|2,0,1597239170,,"so %"
-:b #
-|2,0,1597239169,,"b #"
-:ALEInfo
-|2,0,1597239161,,"ALEInfo"
-:w
-|2,0,1597239158,,"w"
-:e
-|2,0,1597239157,,"e"
 :ALEEnable
 |2,0,1597239155,,"ALEEnable"
 :ALEDisable
 |2,0,1597239154,,"ALEDisable"
-:write
-|2,0,1597239150,,"write"
-:b vimrc
-|2,0,1597239142,,"b vimrc"
-:q
-|2,0,1597238584,,"q"
 :ALE
 |2,0,1597238545,,"ALE"
-:MRU vimrc
-|2,0,1597238537,,"MRU vimrc"
 :MRU js
 |2,0,1597238532,,"MRU js"
 :h ale
@@ -62,8 +216,6 @@ $
 |2,0,1597237575,,"verbose set g:ale_linters"
 :verbose set g:al
 |2,0,1597237548,,"verbose set g:al"
-:echo g:ale_linters
-|2,0,1597237533,,"echo g:ale_linters"
 :ALEDetail
 |2,0,1597237396,,"ALEDetail"
 :b content_script.js
@@ -84,8 +236,6 @@ $
 |2,0,1597227199,,"0read website\\template.html"
 :e ~\Desktop\website\resizes_on_font.html
 |2,0,1597227193,,"e ~\\Desktop\\website\\resizes_on_font.html"
-:wr
-|2,0,1597189965,,"wr"
 :MRU 1:bill_gates_wired_interview.html
 |2,0,1597189631,,"MRU 1:bill_gates_wired_interview.html"
 :e audio
@@ -112,8 +262,6 @@ $
 |2,0,1597071283,,"%s/\\w\\zs\\ze{/ "
 :%s/\w:\zs\ze\w/ /g
 |2,0,1597071255,,"%s/\\w:\\zs\\ze\\w/ /g"
-:writ
-|2,0,1597071232,,"writ"
 :set nowrap
 |2,0,1597071217,,"set nowrap"
 :echo '/\/\*!sc\*\/ -1 | +2'
@@ -146,8 +294,6 @@ $
 |2,0,1597070389,,"MRU bill_"
 :MRU 1235:100-billion-galaxies.ascii.txt
 |2,0,1597070386,,"MRU 1235:100-billion-galaxies.ascii.txt"
-:bd
-|2,0,1597070383,,"bd"
 :e ~\Documents\xoya_sypmtoms.txt
 |2,0,1597008598,,"e ~\\Documents\\xoya_sypmtoms.txt"
 :set ff=dos
@@ -162,10 +308,6 @@ $
 |2,0,1596998483,,"e! sample.html"
 :set e
 |2,0,1596998109,,"set e"
-:bd!
-|2,0,1596998095,,"bd!"
-:enew
-|2,0,1596997879,,"enew"
 :b! #
 |2,0,1596997878,,"b! #"
 :e!
@@ -198,8 +340,6 @@ $
 |2,0,1596996953,,"%s/,//g"
 :e sample.html
 |2,0,1596996578,,"e sample.html"
-:b
-|2,0,1596996367,,"b"
 :go 744
 |2,0,1596996340,,"go 744"
 :e output.html
@@ -256,8 +396,6 @@ $
 |2,0,1596991536,,"MRUD 190:website/output.html"
 :MRU 13:general.py
 |2,0,1596977616,,"MRU 13:general.py"
-:58
-|2,0,1596819474,,"58"
 :b extension_controls\content_script.js
 |2,0,1596708048,,"b extension_controls\\content_script.js"
 :e twitch_utilities.py
@@ -274,8 +412,6 @@ $
 |2,0,1596655703,,"wrie"
 :53
 |2,0,1596652511,,"53"
-:b 
-|2,0,1596650984,,"b "
 :b \Users\vivek\Documents\Python\common.py
 |2,0,1596650719,,"b \\Users\\vivek\\Documents\\Python\\common.py"
 :ToggleDotModifications
@@ -290,8 +426,6 @@ $
 |2,0,1596649606,,"DoMatchParen"
 :Dis
 |2,0,1596649603,,"Dis"
-:wriet
-|2,0,1596649018,,"wriet"
 :set 
 |2,0,1596648803,,"set "
 :MRU 9:common.py
@@ -430,8 +564,6 @@ $
 |2,0,1596135688,,"MRU 3:twitch_utilities.py"
 :wtie
 |2,0,1596135535,,"wtie"
-:MRU common
-|2,0,1596134810,,"MRU common"
 :MRU 6:workflow.py
 |2,0,1596133906,,"MRU 6:workflow.py"
 :NormalizeTwitchUrl
@@ -452,8 +584,6 @@ $
 |2,0,1596054664,,"125"
 :MRU 16:workflow.py
 |2,0,1596053959,,"MRU 16:workflow.py"
-:MRU 
-|2,0,1596053951,,"MRU "
 :e Database.py
 |2,0,1596053945,,"e Database.py"
 :MRU 1:twitch_utilities.py
@@ -476,8 +606,6 @@ $
 |2,0,1595959008,,"e ideas.txt"
 :e inspo.html
 |2,0,1595800571,,"e inspo.html"
-:%s/\s*$//
-|2,0,1595779346,,"%s/\\s*$//"
 :%s/\s\s\+/|/g
 |2,0,1595779324,,"%s/\\s\\s\\+/|/g"
 :%s/ \t /\t
@@ -652,8 +780,6 @@ $
 |2,0,1595254257,,"map Q :norm <C-r>a"
 :MRU search
 |2,0,1595254225,,"MRU search"
-:MRU vimr
-|2,0,1595254182,,"MRU vimr"
 :map Q
 |2,0,1595254173,,"map Q"
 :map 
@@ -716,10 +842,6 @@ $
 |2,0,1595176971,,"'<,'>g/ \\<[A-Z][a-z]\\+/d"
 :g/ \<[A-Z][a-z]\+/d
 |2,0,1595176968,,"g/ \\<[A-Z][a-z]\\+/d"
-:%sort u 
-|2,0,1595176830,,"%sort u "
-:%sort
-|2,0,1595176776,,"%sort"
 :v/\(CLIP\|CHANNEL\)/d
 |2,0,1595176773,,"v/\\(CLIP\\|CHANNEL\\)/d"
 :g/\(CLIP\|CHANNEL\)/d
@@ -738,16 +860,12 @@ $
 |2,0,1595176617,,"%s/\\d\\d\\.\\zs\\w\\+\\ze\\./\\0/g"
 :g/asset/d
 |2,0,1595176573,,"g/asset/d"
-:%sort u
-|2,0,1595176570,,"%sort u"
 :h count(
 |2,0,1595176498,,"h count("
 :call count(
 |2,0,1595176496,,"call count("
 :'<,'>norm I
 |2,0,1595176457,,"'<,'>norm I"
-:%sort 
-|2,0,1595176409,,"%sort "
 :v/SAMPLE/d
 |2,0,1595176399,,"v/SAMPLE/d"
 :%s/\.\([A-Z][a-zA-Z]\+\)\./SAMPLE: \1/g
@@ -808,8 +926,6 @@ $
 |2,0,1594845434,,"e 10_13\\about.txt"
 :e twitch
 |2,0,1594749410,,"e twitch"
-:MRU 5:twitch_utilities.py
-|2,0,1594713721,,"MRU 5:twitch_utilities.py"
 :e ~\Documents\mathematical_concepts.txt
 |2,0,1594679905,,"e ~\\Documents\\mathematical_concepts.txt"
 :MRU wo
@@ -1140,8 +1256,6 @@ $
 |2,0,1594040456,,"find"
 :set path+=C:/users/vivek/Documents/Python
 |2,0,1594040454,,"set path+=C:/users/vivek/Documents/Python"
-:cn
-|2,0,1594031610,,"cn"
 :grep -g */downloads.bat ffmpeg 
 |2,0,1594031573,,"grep -g */downloads.bat ffmpeg "
 :e 200705\downloads.bat
@@ -1522,8 +1636,6 @@ $
 |2,0,1593039971,,"%!sort -n"
 :%!sort -c 
 |2,0,1593039966,,"%!sort -c "
-:%so
-|2,0,1593039949,,"%so"
 :%`
 |2,0,1593039936,,"%`"
 :e 200624\
@@ -1778,8 +1890,6 @@ $
 |2,0,1592924228,,"e va"
 :h 'spell'
 |2,0,1592923664,,"h 'spell'"
-:copen
-|2,0,1592923283,,"copen"
 :grep -g *.py columnar 
 |2,0,1592923281,,"grep -g *.py columnar "
 :cd ~\Desktop\website\
@@ -3089,8 +3199,6 @@ $
 |2,0,1590518185,,"b paul_graham_genius.html"
 :MRU 14:anki_memory_nielsen.html
 |2,0,1590518176,,"MRU 14:anki_memory_nielsen.html"
-:cclose
-|2,0,1590517849,,"cclose"
 :compiler
 |2,0,1590489428,,"compiler"
 :compiler?
@@ -3779,8 +3887,6 @@ $
 |2,0,1585341576,,"earlier 1w"
 :grep -g *.html papyrus 
 |2,0,1585244424,,"grep -g *.html papyrus "
-:grep
-|2,0,1585244409,,"grep"
 :e plugin\debug.txt
 |2,0,1585240986,,"e plugin\\debug.txt"
 :e plugin\search.md
@@ -9684,8 +9790,6 @@ $
 |2,0,1575793384,,"v/\\d\\.\\d/d"
 :profile start ~\vimfiles\performance\v10.txt
 |2,0,1575793322,,"profile start ~\\vimfiles\\performance\\v10.txt"
-:grep -g 
-|2,0,1575793263,,"grep -g "
 :grep -g *.py root
 |2,0,1575793219,,"grep -g *.py root"
 :grep -g *.py def
@@ -11853,8 +11957,6 @@ $
 |<thebank.ascii.txt rethink\\turkeyjizz007.ascii.txt rethink\\w_isforweloveyou.ascii.txt"
 :next rethink\*.txt
 |2,0,1564874532,,"next rethink\\*.txt"
-:b common.py
-|2,0,1564874062,,"b common.py"
 :grep edit -g rethink/*.txt
 |2,0,1564873687,,"grep edit -g rethink/*.txt"
 :so $MYVIMRC
@@ -12454,8 +12556,6 @@ $
 |2,0,1563970954,,"b toc.md"
 :map <Left>
 |2,0,1563970781,,"map <Left>"
-:echo g
-|2,0,1563970537,,"echo g"
 :echo g:zip_nomax
 |2,0,1563970530,,"echo g:zip_nomax"
 :h unzip
@@ -14358,6 +14458,76 @@ $
 |2,0,1563191347,,"MRU 124:python.vim"
 
 # Search String History (newest to oldest):
+?/ist_string
+|2,1,1597714597,47,"ist_string"
+?/timezone
+|2,1,1597714587,47,"timezone"
+? \<data\>
+|2,1,1597714157,,"\\<data\\>"
+? \<timeago_string\>
+|2,1,1597708903,,"\\<timeago_string\\>"
+??timeago
+|2,1,1597708794,63,"timeago"
+?/timeago
+|2,1,1597708774,47,"timeago"
+?/timedelta
+|2,1,1597708484,47,"timedelta"
+? \<day_name\>
+|2,1,1597706915,,"\\<day_name\\>"
+?/Date
+|2,1,1597705957,47,"Date"
+? \<dateutil\>
+|2,1,1597704956,,"\\<dateutil\\>"
+? \<timezone_tz\>
+|2,1,1597704882,,"\\<timezone_tz\\>"
+?/dateutil
+|2,1,1597704773,47,"dateutil"
+?/ist
+|2,1,1597704716,47,"ist"
+?/video
+|2,1,1597624945,47,"video"
+?/interrup
+|2,1,1597624943,47,"interrup"
+?/hollyw
+|2,1,1597624388,47,"hollyw"
+??:\d
+|2,1,1597622803,63,":\\d"
+?/limi[^t]
+|2,1,1597622736,47,"limi[^t]"
+?/tdi
+|2,1,1597622686,47,"tdi"
+?/print(
+|2,1,1597622683,47,"print("
+? [^"]$
+|2,1,1597250872,,"[^\"]$"
+? ^[^"]
+|2,1,1597250872,,"^[^\"]"
+? \s*$
+|2,1,1597246919,,"\\s*$"
+?/,
+|2,1,1597246873,47,","
+? from
+|2,1,1597246861,,"from"
+? \..*$
+|2,1,1597246853,,"\\..*$"
+? from .*\zsimport.*
+|2,1,1597246826,,"from .*\\zsimport.*"
+? \(import\|from\)
+|2,1,1597246757,,"\\(import\\|from\\)"
+? ^["]
+|2,1,1597246360,,"^[\"]"
+?/nargs
+|2,1,1597246258,47,"nargs"
+? \<No\>
+|2,1,1597246256,,"\\<No\\>"
+? \<command\>
+|2,1,1597246214,,"\\<command\\>"
+? \<files_joined_by_space\>
+|2,1,1597246168,,"\\<files_joined_by_space\\>"
+?/--files
+|2,1,1597245974,47,"--files"
+?/files
+|2,1,1597245969,47,"files"
 ?/jshint
 |2,1,1597237921,47,"jshint"
 ?/ale
@@ -14528,8 +14698,6 @@ $
 |2,1,1596638948,47,"tw-border-t"
 ?/<style>
 |2,1,1596638198,47,"<style>"
-?/video
-|2,1,1596638176,47,"video"
 ?/<head.
 |2,1,1596638106,47,"<head."
 ? \<changeColor\>
@@ -14740,8 +14908,6 @@ $
 |2,1,1596033251,47,"twitch_ut"
 ?/xchoco
 |2,1,1595959203,47,"xchoco"
-? \s*$
-|2,1,1595779346,,"\\s*$"
 ?/  
 |2,1,1595715561,47,"  "
 ?  \t 
@@ -14790,8 +14956,6 @@ $
 |2,1,1595626981,47,"store"
 ? \<co\>
 |2,1,1595625474,,"\\<co\\>"
-?/Date
-|2,1,1595625199,47,"Date"
 ?/^\s*\S*\s\S
 |2,1,1595625010,47,"^\\s*\\S*\\s\\S"
 ?/\S\s\S
@@ -15048,16 +15212,12 @@ $
 |2,1,1595174131,47,"INVALID"
 ? \<timeago_str\>
 |2,1,1595172624,,"\\<timeago_str\\>"
-?/timeago
-|2,1,1595172526,47,"timeago"
 ?/ago
 |2,1,1595172394,47,"ago"
 ?/print_dict
 |2,1,1595172331,47,"print_dict"
 ?/parse
 |2,1,1595169964,47,"parse"
-?/dateutil
-|2,1,1595169795,47,"dateutil"
 ?/INDIAN
 |2,1,1595169757,47,"INDIAN"
 ?/dateut
@@ -15124,8 +15284,6 @@ $
 |2,1,1594664196,47,"breakpoint"
 ?/na gi
 |2,1,1594659765,47,"na gi"
-?/ist
-|2,1,1594658892,47,"ist"
 ?/def g
 |2,1,1594658525,47,"def g"
 ?/get
@@ -15194,8 +15352,6 @@ $
 |2,1,1594462732,47,"twitch_video"
 ??twitch_video_
 |2,1,1594462719,63,"twitch_video_"
-?/nargs
-|2,1,1594462571,47,"nargs"
 ?/Databas
 |2,1,1594457138,47,"Databas"
 ?/_at
@@ -15430,8 +15586,6 @@ $
 |2,1,1594297256,,"\\<get_livestream_platform\\>"
 ? \<get_channel_info_from_channel_name\>
 |2,1,1594297165,,"\\<get_channel_info_from_channel_name\\>"
-?/print(
-|2,1,1594296978,47,"print("
 ? print
 |2,1,1594296883,,"print"
 ? .*import \(.*\)$
@@ -15886,8 +16040,6 @@ $
 |2,1,1593002676,,"\\<duration\\>"
 ?/[]
 |2,1,1593002440,47,"[]"
-? \<data\>
-|2,1,1593002189,,"\\<data\\>"
 ?/playlist_id
 |2,1,1592999133,47,"playlist_id"
 ?/playlistt_
@@ -16648,8 +16800,6 @@ $
 |2,1,1591386735,47,"10\\/10"
 ?/","
 |2,1,1591369261,47,"\",\""
-?/,
-|2,1,1591369255,47,","
 ?/{
 |2,1,1591369150,47,"{"
 ?/}
@@ -22832,6 +22982,8 @@ $
 |2,1,1563191375,47,"signcolumn"
 
 # Expression History (newest to oldest):
+=join(readfile(expand('~\Desktop\python_files.txt')), " ")
+|2,2,1597245738,,"join(readfile(expand('~\\Desktop\\python_files.txt')), \" \")"
 =&formatprg
 |2,2,1596053833,,"&formatprg"
 =len(getline("."))
@@ -23101,6 +23253,8 @@ $
 |2,2,1563191474,,"&makeprg"
 
 # Input Line History (newest to oldest):
+@make_string_green
+|2,3,1597708643,,"make_string_green"
 @div
 |2,3,1597227401,,"div"
 @div>
@@ -23616,43 +23770,42 @@ $
 
 # Registers:
 ""0	CHAR	0
-	xo
-|3,1,0,0,1,0,1597239149,"xo"
+	sting
+|3,1,0,0,1,0,1597714616,"sting"
 "1	LINE	0
-	    afasdf
-|3,0,1,1,1,0,1597238581,"    afasdf"
+	print("{pst_string} is {ist_string} ({timeago_string})".format(pst_string=pst_string, ist_string=ist_string, timeago_string=timeago_string))
+|3,0,1,1,1,0,1597714484,"print(\"{pst_string} is {ist_string} ({timeago_string})\".format(pst_string=pst_string, ist_string=ist_string, timeago_string=timeago_string))"
 "2	LINE	0
-	    asdfasdf
-|3,0,2,1,1,0,1597237852,"    asdfasdf"
+	print("{pst_string} is {ist_string} ({timeago_string})".format(pst_string=pst_string, ist_string=ist_string, timeago_string=timeago_string))
+|3,0,2,1,1,0,1597714483,"print(\"{pst_string} is {ist_string} ({timeago_string})\".format(pst_string=pst_string, ist_string=ist_string, timeago_string=timeago_string))"
 "3	LINE	0
-	        clip_end_tstamp = Timestamp(seconds_difference + int(clip_D["duration"]))
-|3,0,3,1,1,0,1597230084,"        clip_end_tstamp = Timestamp(seconds_difference + int(clip_D[\"duration\"]))"
+	print(table)
+|3,0,3,1,1,0,1597714410,"print(table)"
 "4	LINE	0
-	        clip_end_timestamped_video_url = "{url}?t={twitch_timestamp}".format(url=matched_video_D["url"], twitch_timestamp=clip_end_tstamp.hh_mm_ss)
-|3,0,4,1,1,0,1597230083,"        clip_end_timestamped_video_url = \"{url}?t={twitch_timestamp}\".format(url=matched_video_D[\"url\"], twitch_timestamp=clip_end_tstamp.hh_mm_ss)"
+	print("{pst_string} is {ist_string} ({timeago_string})".format(pst_string=pst_string, ist_string=ist_string, timeago_string=timeago_string))
+|3,0,4,1,1,0,1597714408,"print(\"{pst_string} is {ist_string} ({timeago_string})\".format(pst_string=pst_string, ist_string=ist_string, timeago_string=timeago_string))"
 "5	LINE	0
-	  /* */
-|3,0,5,1,1,0,1597227543,"  /* */"
+	data.append([])
+|3,0,5,1,1,0,1597714138,"data.append([])"
 "6	LINE	0
-	        <script src="../Typography/Tool/load.js"></script>
-|3,0,6,1,1,0,1597227483,"        <script src=\"../Typography/Tool/load.js\"></script>"
+	headers = [  ]
+	data = []
+	data.append([])
+	table = columnar(data, headers, no_borders=True)
+	print(table)
+|3,0,6,1,5,0,1597714098,"headers = [  ]","data = []","data.append([])","table = columnar(data, headers, no_borders=True)","print(table)"
 "7	LINE	0
-	
-|3,0,7,1,1,0,1597227411,""
+	print(sys.argv)
+|3,0,7,1,1,0,1597713935,"print(sys.argv)"
 "8	LINE	0
 	
-|3,0,8,1,1,0,1597227410,""
-"9	CHAR	0
-	
-	            <div class="container">
-	                <nav><span>Vivek Bose</span><span>2012.08.12</span><span>Index</span></nav>
-	                <h1>Resize & Reflow</h1>
-	            </div>
-	        
-|3,0,9,0,6,0,1597227408,"","            <div class=\"container\">","                <nav><span>Vivek Bose</span><span>2012.08.12</span><span>Index</span></nav>","                <h1>Resize & Reflow</h1>","            </div>","        "
-"a@	CHAR	0
-	ggndat
-|3,2,10,0,1,0,1597070887,"ggndat"
+|3,0,8,1,1,0,1597709029,""
+"9	LINE	0
+	    breakpoint()
+|3,0,9,1,1,0,1597709025,"    breakpoint()"
+"a	CHAR	0
+	0df|df|
+|3,0,10,0,1,0,1597709065,"0df|df|"
 "d	LINE	0
 	    <span class="tier_label">1</span>
 |3,0,13,1,1,0,1595490176,"    <span class=\"tier_label\">1</span>"
@@ -23675,308 +23828,713 @@ $
 	02
 |3,0,28,0,1,0,1592950903,"02"
 "-	CHAR	0
-	xo
-|3,0,36,0,1,0,1597239145,"xo"
+	sting
+|3,0,36,0,1,0,1597714612,"sting"
 
 # File marks:
 'A  217  28  ~\vimfiles\pack\plugins\start\sideways.vim\autoload\sideways\parsing.vim
 |4,65,217,28,1561838033,"~\\vimfiles\\pack\\plugins\\start\\sideways.vim\\autoload\\sideways\\parsing.vim"
 'M  1564  44  C:\Program Files (x86)\Vim\vim82\doc\quickfix.txt
 |4,77,1564,44,1582635887,"C:\\Program Files (x86)\\Vim\\vim82\\doc\\quickfix.txt"
-'0  200  0  ~\vimfiles\vimrc
-|4,48,200,0,1597239172,"~\\vimfiles\\vimrc"
-'1  3  0  ~\Desktop\Twitch\extension_controls\content_script.js
-|4,49,3,0,1597238585,"~\\Desktop\\Twitch\\extension_controls\\content_script.js"
-'2  3  0  ~\Desktop\Twitch\extension_controls\content_script.js
-|4,50,3,0,1597238585,"~\\Desktop\\Twitch\\extension_controls\\content_script.js"
-'3  200  32  ~\vimfiles\vimrc
-|4,51,200,32,1597238156,"~\\vimfiles\\vimrc"
-'4  200  32  ~\vimfiles\vimrc
-|4,52,200,32,1597238156,"~\\vimfiles\\vimrc"
-'5  200  32  ~\vimfiles\vimrc
-|4,53,200,32,1597238156,"~\\vimfiles\\vimrc"
-'6  2  11  ~\Desktop\Twitch\extension_controls\content_script.js
-|4,54,2,11,1597237841,"~\\Desktop\\Twitch\\extension_controls\\content_script.js"
-'7  2  11  ~\Desktop\Twitch\extension_controls\content_script.js
-|4,55,2,11,1597237841,"~\\Desktop\\Twitch\\extension_controls\\content_script.js"
-'8  2  11  ~\Desktop\Twitch\extension_controls\content_script.js
-|4,56,2,11,1597237841,"~\\Desktop\\Twitch\\extension_controls\\content_script.js"
-'9  2  11  ~\Desktop\Twitch\extension_controls\content_script.js
-|4,57,2,11,1597237841,"~\\Desktop\\Twitch\\extension_controls\\content_script.js"
+'0  134  11  ~\Desktop\Twitch\channel_links.html
+|4,48,134,11,1597782902,"~\\Desktop\\Twitch\\channel_links.html"
+'1  69  75  ~\Documents\Python\time_zone.py
+|4,49,69,75,1597714672,"~\\Documents\\Python\\time_zone.py"
+'2  1  0  ~\Desktop\python_files.txt
+|4,50,1,0,1597713909,"~\\Desktop\\python_files.txt"
+'3  1  14  ~\Documents\pw.txt
+|4,51,1,14,1597361153,"~\\Documents\\pw.txt"
+'4  1  14  ~\Documents\pw.txt
+|4,52,1,14,1597361153,"~\\Documents\\pw.txt"
+'5  1  14  ~\Documents\pw.txt
+|4,53,1,14,1597361153,"~\\Documents\\pw.txt"
+'6  1  14  ~\Documents\pw.txt
+|4,54,1,14,1597361153,"~\\Documents\\pw.txt"
+'7  5  16  ~\Desktop\HTML, Python, Jq\Captions\srt.py
+|4,55,5,16,1597277565,"~\\Desktop\\HTML, Python, Jq\\Captions\\srt.py"
+'8  5  16  ~\Desktop\HTML, Python, Jq\Captions\srt.py
+|4,56,5,16,1597277565,"~\\Desktop\\HTML, Python, Jq\\Captions\\srt.py"
+'9  5  16  ~\Desktop\HTML, Python, Jq\Captions\srt.py
+|4,57,5,16,1597277565,"~\\Desktop\\HTML, Python, Jq\\Captions\\srt.py"
 
 # Jumplist (newest first):
--'  200  0  ~\vimfiles\vimrc
-|4,39,200,0,1597239172,"~\\vimfiles\\vimrc"
--'  3  0  ~\Desktop\Twitch\extension_controls\content_script.js
-|4,39,3,0,1597239169,"~\\Desktop\\Twitch\\extension_controls\\content_script.js"
--'  3  0  ~\Desktop\Twitch\extension_controls\content_script.js
-|4,39,3,0,1597238585,"~\\Desktop\\Twitch\\extension_controls\\content_script.js"
--'  2  19  ~\Desktop\Twitch\extension_controls\content_script.js
-|4,39,2,19,1597238580,"~\\Desktop\\Twitch\\extension_controls\\content_script.js"
--'  2  19  ~\Desktop\Twitch\extension_controls\content_script.js
-|4,39,2,19,1597238580,"~\\Desktop\\Twitch\\extension_controls\\content_script.js"
--'  200  32  ~\vimfiles\vimrc
-|4,39,200,32,1597238541,"~\\vimfiles\\vimrc"
--'  469  0  ~\vimfiles\vimrc
-|4,39,469,0,1597238540,"~\\vimfiles\\vimrc"
--'  469  0  ~\vimfiles\vimrc
-|4,39,469,0,1597238540,"~\\vimfiles\\vimrc"
--'  1  0  ~\vimfiles\vimrc
-|4,39,1,0,1597238538,"~\\vimfiles\\vimrc"
--'  1  0  ~\vimfiles\vimrc
-|4,39,1,0,1597238538,"~\\vimfiles\\vimrc"
--'  1  0  ~\Desktop\Twitch\extension_controls\content_script.js
-|4,39,1,0,1597238537,"~\\Desktop\\Twitch\\extension_controls\\content_script.js"
--'  1  0  ~\Desktop\Twitch\extension_controls\content_script.js
-|4,39,1,0,1597238537,"~\\Desktop\\Twitch\\extension_controls\\content_script.js"
--'  200  32  ~\vimfiles\vimrc
-|4,39,200,32,1597238156,"~\\vimfiles\\vimrc"
--'  1  0  ~\Desktop\Twitch\extension_controls\content_script.js
-|4,39,1,0,1597238147,"~\\Desktop\\Twitch\\extension_controls\\content_script.js"
--'  76  0  ~\Desktop\Twitch\extension_controls\content_script.js
-|4,39,76,0,1597237886,"~\\Desktop\\Twitch\\extension_controls\\content_script.js"
--'  76  0  ~\Desktop\Twitch\extension_controls\content_script.js
-|4,39,76,0,1597237886,"~\\Desktop\\Twitch\\extension_controls\\content_script.js"
--'  76  0  ~\Desktop\Twitch\extension_controls\content_script.js
-|4,39,76,0,1597237886,"~\\Desktop\\Twitch\\extension_controls\\content_script.js"
--'  2  11  ~\Desktop\Twitch\extension_controls\content_script.js
-|4,39,2,11,1597237841,"~\\Desktop\\Twitch\\extension_controls\\content_script.js"
--'  2  11  ~\Desktop\Twitch\extension_controls\content_script.js
-|4,39,2,11,1597237841,"~\\Desktop\\Twitch\\extension_controls\\content_script.js"
--'  1  0  ~\Desktop\Twitch\extension_controls\content_script.js
-|4,39,1,0,1597237813,"~\\Desktop\\Twitch\\extension_controls\\content_script.js"
--'  200  37  ~\vimfiles\vimrc
-|4,39,200,37,1597237790,"~\\vimfiles\\vimrc"
--'  202  6  ~\vimfiles\vimrc
-|4,39,202,6,1597237747,"~\\vimfiles\\vimrc"
--'  198  6  ~\vimfiles\vimrc
-|4,39,198,6,1597237747,"~\\vimfiles\\vimrc"
--'  202  6  ~\vimfiles\vimrc
-|4,39,202,6,1597237747,"~\\vimfiles\\vimrc"
--'  198  6  ~\vimfiles\vimrc
-|4,39,198,6,1597237747,"~\\vimfiles\\vimrc"
--'  202  6  ~\vimfiles\vimrc
-|4,39,202,6,1597237747,"~\\vimfiles\\vimrc"
--'  198  6  ~\vimfiles\vimrc
-|4,39,198,6,1597237747,"~\\vimfiles\\vimrc"
--'  202  6  ~\vimfiles\vimrc
-|4,39,202,6,1597237747,"~\\vimfiles\\vimrc"
--'  198  6  ~\vimfiles\vimrc
-|4,39,198,6,1597237747,"~\\vimfiles\\vimrc"
--'  203  6  ~\vimfiles\vimrc
-|4,39,203,6,1597237746,"~\\vimfiles\\vimrc"
--'  203  6  ~\vimfiles\vimrc
-|4,39,203,6,1597237746,"~\\vimfiles\\vimrc"
--'  203  6  ~\vimfiles\vimrc
-|4,39,203,6,1597237746,"~\\vimfiles\\vimrc"
--'  203  6  ~\vimfiles\vimrc
-|4,39,203,6,1597237746,"~\\vimfiles\\vimrc"
--'  201  0  ~\vimfiles\vimrc
-|4,39,201,0,1597237668,"~\\vimfiles\\vimrc"
--'  201  0  ~\vimfiles\vimrc
-|4,39,201,0,1597237668,"~\\vimfiles\\vimrc"
--'  201  0  ~\vimfiles\vimrc
-|4,39,201,0,1597237668,"~\\vimfiles\\vimrc"
--'  201  0  ~\vimfiles\vimrc
-|4,39,201,0,1597237668,"~\\vimfiles\\vimrc"
--'  199  39  ~\vimfiles\vimrc
-|4,39,199,39,1597237653,"~\\vimfiles\\vimrc"
--'  199  39  ~\vimfiles\vimrc
-|4,39,199,39,1597237653,"~\\vimfiles\\vimrc"
--'  199  39  ~\vimfiles\vimrc
-|4,39,199,39,1597237653,"~\\vimfiles\\vimrc"
--'  199  39  ~\vimfiles\vimrc
-|4,39,199,39,1597237653,"~\\vimfiles\\vimrc"
--'  1  0  ~\vimfiles\vimrc
-|4,39,1,0,1597237597,"~\\vimfiles\\vimrc"
--'  1  0  ~\vimfiles\vimrc
-|4,39,1,0,1597237597,"~\\vimfiles\\vimrc"
--'  9  4  ~\Desktop\Twitch\extension_controls\content_script.js
-|4,39,9,4,1597237390,"~\\Desktop\\Twitch\\extension_controls\\content_script.js"
--'  10  4  ~\Desktop\Twitch\extension_controls\content_script.js
-|4,39,10,4,1597237390,"~\\Desktop\\Twitch\\extension_controls\\content_script.js"
--'  9  4  ~\Desktop\Twitch\extension_controls\content_script.js
-|4,39,9,4,1597237390,"~\\Desktop\\Twitch\\extension_controls\\content_script.js"
--'  10  4  ~\Desktop\Twitch\extension_controls\content_script.js
-|4,39,10,4,1597237390,"~\\Desktop\\Twitch\\extension_controls\\content_script.js"
--'  9  4  ~\Desktop\Twitch\extension_controls\content_script.js
-|4,39,9,4,1597237390,"~\\Desktop\\Twitch\\extension_controls\\content_script.js"
--'  10  4  ~\Desktop\Twitch\extension_controls\content_script.js
-|4,39,10,4,1597237390,"~\\Desktop\\Twitch\\extension_controls\\content_script.js"
--'  241  20  ~\Desktop\Twitch\twitch_utilities.py
-|4,39,241,20,1597237049,"~\\Desktop\\Twitch\\twitch_utilities.py"
--'  241  20  ~\Desktop\Twitch\twitch_utilities.py
-|4,39,241,20,1597237049,"~\\Desktop\\Twitch\\twitch_utilities.py"
--'  241  20  ~\Desktop\Twitch\twitch_utilities.py
-|4,39,241,20,1597237049,"~\\Desktop\\Twitch\\twitch_utilities.py"
--'  241  20  ~\Desktop\Twitch\twitch_utilities.py
-|4,39,241,20,1597237049,"~\\Desktop\\Twitch\\twitch_utilities.py"
--'  296  40  ~\Desktop\Twitch\twitch_utilities.py
-|4,39,296,40,1597230124,"~\\Desktop\\Twitch\\twitch_utilities.py"
--'  296  40  ~\Desktop\Twitch\twitch_utilities.py
-|4,39,296,40,1597230124,"~\\Desktop\\Twitch\\twitch_utilities.py"
--'  296  40  ~\Desktop\Twitch\twitch_utilities.py
-|4,39,296,40,1597230124,"~\\Desktop\\Twitch\\twitch_utilities.py"
--'  296  40  ~\Desktop\Twitch\twitch_utilities.py
-|4,39,296,40,1597230124,"~\\Desktop\\Twitch\\twitch_utilities.py"
--'  306  49  ~\Desktop\Twitch\twitch_utilities.py
-|4,39,306,49,1597230099,"~\\Desktop\\Twitch\\twitch_utilities.py"
--'  294  49  ~\Desktop\Twitch\twitch_utilities.py
-|4,39,294,49,1597230099,"~\\Desktop\\Twitch\\twitch_utilities.py"
--'  306  49  ~\Desktop\Twitch\twitch_utilities.py
-|4,39,306,49,1597230099,"~\\Desktop\\Twitch\\twitch_utilities.py"
--'  294  49  ~\Desktop\Twitch\twitch_utilities.py
-|4,39,294,49,1597230099,"~\\Desktop\\Twitch\\twitch_utilities.py"
--'  306  49  ~\Desktop\Twitch\twitch_utilities.py
-|4,39,306,49,1597230099,"~\\Desktop\\Twitch\\twitch_utilities.py"
--'  294  49  ~\Desktop\Twitch\twitch_utilities.py
-|4,39,294,49,1597230099,"~\\Desktop\\Twitch\\twitch_utilities.py"
--'  306  49  ~\Desktop\Twitch\twitch_utilities.py
-|4,39,306,49,1597230099,"~\\Desktop\\Twitch\\twitch_utilities.py"
--'  294  49  ~\Desktop\Twitch\twitch_utilities.py
-|4,39,294,49,1597230099,"~\\Desktop\\Twitch\\twitch_utilities.py"
--'  298  0  ~\Desktop\Twitch\twitch_utilities.py
-|4,39,298,0,1597230095,"~\\Desktop\\Twitch\\twitch_utilities.py"
--'  302  79  ~\Desktop\Twitch\twitch_utilities.py
-|4,39,302,79,1597230095,"~\\Desktop\\Twitch\\twitch_utilities.py"
--'  298  0  ~\Desktop\Twitch\twitch_utilities.py
-|4,39,298,0,1597230095,"~\\Desktop\\Twitch\\twitch_utilities.py"
--'  302  79  ~\Desktop\Twitch\twitch_utilities.py
-|4,39,302,79,1597230095,"~\\Desktop\\Twitch\\twitch_utilities.py"
--'  298  0  ~\Desktop\Twitch\twitch_utilities.py
-|4,39,298,0,1597230095,"~\\Desktop\\Twitch\\twitch_utilities.py"
--'  302  79  ~\Desktop\Twitch\twitch_utilities.py
-|4,39,302,79,1597230095,"~\\Desktop\\Twitch\\twitch_utilities.py"
--'  298  0  ~\Desktop\Twitch\twitch_utilities.py
-|4,39,298,0,1597230095,"~\\Desktop\\Twitch\\twitch_utilities.py"
--'  302  79  ~\Desktop\Twitch\twitch_utilities.py
-|4,39,302,79,1597230095,"~\\Desktop\\Twitch\\twitch_utilities.py"
--'  299  8  ~\Desktop\Twitch\twitch_utilities.py
-|4,39,299,8,1597230088,"~\\Desktop\\Twitch\\twitch_utilities.py"
--'  299  8  ~\Desktop\Twitch\twitch_utilities.py
-|4,39,299,8,1597230088,"~\\Desktop\\Twitch\\twitch_utilities.py"
--'  299  8  ~\Desktop\Twitch\twitch_utilities.py
-|4,39,299,8,1597230088,"~\\Desktop\\Twitch\\twitch_utilities.py"
--'  299  8  ~\Desktop\Twitch\twitch_utilities.py
-|4,39,299,8,1597230088,"~\\Desktop\\Twitch\\twitch_utilities.py"
--'  300  8  ~\Desktop\Twitch\twitch_utilities.py
-|4,39,300,8,1597230083,"~\\Desktop\\Twitch\\twitch_utilities.py"
--'  300  8  ~\Desktop\Twitch\twitch_utilities.py
-|4,39,300,8,1597230083,"~\\Desktop\\Twitch\\twitch_utilities.py"
--'  300  8  ~\Desktop\Twitch\twitch_utilities.py
-|4,39,300,8,1597230083,"~\\Desktop\\Twitch\\twitch_utilities.py"
--'  300  8  ~\Desktop\Twitch\twitch_utilities.py
-|4,39,300,8,1597230083,"~\\Desktop\\Twitch\\twitch_utilities.py"
--'  297  8  ~\Desktop\Twitch\twitch_utilities.py
-|4,39,297,8,1597230080,"~\\Desktop\\Twitch\\twitch_utilities.py"
--'  297  8  ~\Desktop\Twitch\twitch_utilities.py
-|4,39,297,8,1597230080,"~\\Desktop\\Twitch\\twitch_utilities.py"
--'  297  8  ~\Desktop\Twitch\twitch_utilities.py
-|4,39,297,8,1597230080,"~\\Desktop\\Twitch\\twitch_utilities.py"
--'  297  8  ~\Desktop\Twitch\twitch_utilities.py
-|4,39,297,8,1597230080,"~\\Desktop\\Twitch\\twitch_utilities.py"
--'  249  32  ~\Desktop\Twitch\twitch_utilities.py
-|4,39,249,32,1597230073,"~\\Desktop\\Twitch\\twitch_utilities.py"
--'  249  32  ~\Desktop\Twitch\twitch_utilities.py
-|4,39,249,32,1597230073,"~\\Desktop\\Twitch\\twitch_utilities.py"
--'  249  32  ~\Desktop\Twitch\twitch_utilities.py
-|4,39,249,32,1597230073,"~\\Desktop\\Twitch\\twitch_utilities.py"
--'  249  32  ~\Desktop\Twitch\twitch_utilities.py
-|4,39,249,32,1597230073,"~\\Desktop\\Twitch\\twitch_utilities.py"
--'  245  22  ~\Desktop\Twitch\twitch_utilities.py
-|4,39,245,22,1597230051,"~\\Desktop\\Twitch\\twitch_utilities.py"
--'  245  22  ~\Desktop\Twitch\twitch_utilities.py
-|4,39,245,22,1597230051,"~\\Desktop\\Twitch\\twitch_utilities.py"
--'  245  22  ~\Desktop\Twitch\twitch_utilities.py
-|4,39,245,22,1597230051,"~\\Desktop\\Twitch\\twitch_utilities.py"
--'  245  22  ~\Desktop\Twitch\twitch_utilities.py
-|4,39,245,22,1597230051,"~\\Desktop\\Twitch\\twitch_utilities.py"
--'  244  8  ~\Desktop\Twitch\twitch_utilities.py
-|4,39,244,8,1597230049,"~\\Desktop\\Twitch\\twitch_utilities.py"
--'  244  8  ~\Desktop\Twitch\twitch_utilities.py
-|4,39,244,8,1597230049,"~\\Desktop\\Twitch\\twitch_utilities.py"
--'  244  8  ~\Desktop\Twitch\twitch_utilities.py
-|4,39,244,8,1597230049,"~\\Desktop\\Twitch\\twitch_utilities.py"
--'  244  8  ~\Desktop\Twitch\twitch_utilities.py
-|4,39,244,8,1597230049,"~\\Desktop\\Twitch\\twitch_utilities.py"
--'  46  15  ~\Desktop\Twitch\twitch_utilities.py
-|4,39,46,15,1597230048,"~\\Desktop\\Twitch\\twitch_utilities.py"
--'  46  15  ~\Desktop\Twitch\twitch_utilities.py
-|4,39,46,15,1597230048,"~\\Desktop\\Twitch\\twitch_utilities.py"
+-'  134  11  ~\Desktop\Twitch\channel_links.html
+|4,39,134,11,1597782902,"~\\Desktop\\Twitch\\channel_links.html"
+-'  1  0  ~\Desktop\Twitch\channel_links.html
+|4,39,1,0,1597782889,"~\\Desktop\\Twitch\\channel_links.html"
+-'  69  75  ~\Documents\Python\time_zone.py
+|4,39,69,75,1597714672,"~\\Documents\\Python\\time_zone.py"
+-'  69  75  ~\Documents\Python\time_zone.py
+|4,39,69,75,1597714672,"~\\Documents\\Python\\time_zone.py"
+-'  70  99  ~\Documents\Python\time_zone.py
+|4,39,70,99,1597714606,"~\\Documents\\Python\\time_zone.py"
+-'  70  99  ~\Documents\Python\time_zone.py
+|4,39,70,99,1597714606,"~\\Documents\\Python\\time_zone.py"
+-'  64  12  ~\Documents\Python\time_zone.py
+|4,39,64,12,1597714590,"~\\Documents\\Python\\time_zone.py"
+-'  57  22  ~\Documents\Python\time_zone.py
+|4,39,57,22,1597714590,"~\\Documents\\Python\\time_zone.py"
+-'  47  32  ~\Documents\Python\time_zone.py
+|4,39,47,32,1597714590,"~\\Documents\\Python\\time_zone.py"
+-'  45  66  ~\Documents\Python\time_zone.py
+|4,39,45,66,1597714590,"~\\Documents\\Python\\time_zone.py"
+-'  44  7  ~\Documents\Python\time_zone.py
+|4,39,44,7,1597714590,"~\\Documents\\Python\\time_zone.py"
+-'  64  12  ~\Documents\Python\time_zone.py
+|4,39,64,12,1597714590,"~\\Documents\\Python\\time_zone.py"
+-'  57  22  ~\Documents\Python\time_zone.py
+|4,39,57,22,1597714590,"~\\Documents\\Python\\time_zone.py"
+-'  47  32  ~\Documents\Python\time_zone.py
+|4,39,47,32,1597714590,"~\\Documents\\Python\\time_zone.py"
+-'  45  66  ~\Documents\Python\time_zone.py
+|4,39,45,66,1597714590,"~\\Documents\\Python\\time_zone.py"
+-'  44  7  ~\Documents\Python\time_zone.py
+|4,39,44,7,1597714590,"~\\Documents\\Python\\time_zone.py"
+-'  43  38  ~\Documents\Python\time_zone.py
+|4,39,43,38,1597714589,"~\\Documents\\Python\\time_zone.py"
+-'  41  34  ~\Documents\Python\time_zone.py
+|4,39,41,34,1597714589,"~\\Documents\\Python\\time_zone.py"
+-'  43  38  ~\Documents\Python\time_zone.py
+|4,39,43,38,1597714589,"~\\Documents\\Python\\time_zone.py"
+-'  41  34  ~\Documents\Python\time_zone.py
+|4,39,41,34,1597714589,"~\\Documents\\Python\\time_zone.py"
+-'  35  7  ~\Documents\Python\time_zone.py
+|4,39,35,7,1597714588,"~\\Documents\\Python\\time_zone.py"
+-'  35  7  ~\Documents\Python\time_zone.py
+|4,39,35,7,1597714588,"~\\Documents\\Python\\time_zone.py"
+-'  22  0  ~\Documents\Python\time_zone.py
+|4,39,22,0,1597714587,"~\\Documents\\Python\\time_zone.py"
+-'  1  0  ~\Documents\Python\time_zone.py
+|4,39,1,0,1597714587,"~\\Documents\\Python\\time_zone.py"
+-'  22  0  ~\Documents\Python\time_zone.py
+|4,39,22,0,1597714587,"~\\Documents\\Python\\time_zone.py"
+-'  1  0  ~\Documents\Python\time_zone.py
+|4,39,1,0,1597714587,"~\\Documents\\Python\\time_zone.py"
+-'  71  0  ~\Documents\Python\time_zone.py
+|4,39,71,0,1597714484,"~\\Documents\\Python\\time_zone.py"
+-'  71  0  ~\Documents\Python\time_zone.py
+|4,39,71,0,1597714484,"~\\Documents\\Python\\time_zone.py"
+-'  65  19  ~\Documents\Python\time_zone.py
+|4,39,65,19,1597714374,"~\\Documents\\Python\\time_zone.py"
+-'  65  19  ~\Documents\Python\time_zone.py
+|4,39,65,19,1597714374,"~\\Documents\\Python\\time_zone.py"
+-'  61  47  ~\Documents\Python\time_zone.py
+|4,39,61,47,1597714241,"~\\Documents\\Python\\time_zone.py"
+-'  61  47  ~\Documents\Python\time_zone.py
+|4,39,61,47,1597714241,"~\\Documents\\Python\\time_zone.py"
+-'  66  17  ~\Documents\Python\time_zone.py
+|4,39,66,17,1597714158,"~\\Documents\\Python\\time_zone.py"
+-'  66  17  ~\Documents\Python\time_zone.py
+|4,39,66,17,1597714158,"~\\Documents\\Python\\time_zone.py"
+-'  2  0  ~\Documents\Python\time_zone.py
+|4,39,2,0,1597714145,"~\\Documents\\Python\\time_zone.py"
+-'  2  0  ~\Documents\Python\time_zone.py
+|4,39,2,0,1597714145,"~\\Documents\\Python\\time_zone.py"
+-'  3  0  ~\Documents\Python\time_zone.py
+|4,39,3,0,1597714099,"~\\Documents\\Python\\time_zone.py"
+-'  3  0  ~\Documents\Python\time_zone.py
+|4,39,3,0,1597714099,"~\\Documents\\Python\\time_zone.py"
+-'  17  30  ~\Documents\Python\time_zone.py
+|4,39,17,30,1597714089,"~\\Documents\\Python\\time_zone.py"
+-'  17  30  ~\Documents\Python\time_zone.py
+|4,39,17,30,1597714089,"~\\Documents\\Python\\time_zone.py"
+-'  16  0  ~\Documents\Python\time_zone.py
+|4,39,16,0,1597713944,"~\\Documents\\Python\\time_zone.py"
+-'  16  0  ~\Documents\Python\time_zone.py
+|4,39,16,0,1597713944,"~\\Documents\\Python\\time_zone.py"
+-'  1  0  ~\Desktop\python_files.txt
+|4,39,1,0,1597713909,"~\\Desktop\\python_files.txt"
+-'  1  0  ~\Desktop\python_files.txt
+|4,39,1,0,1597713909,"~\\Desktop\\python_files.txt"
+-'  60  32  ~\Documents\Python\time_zone.py
+|4,39,60,32,1597709069,"~\\Documents\\Python\\time_zone.py"
+-'  60  32  ~\Documents\Python\time_zone.py
+|4,39,60,32,1597709069,"~\\Documents\\Python\\time_zone.py"
+-'  63  0  ~\Documents\Python\time_zone.py
+|4,39,63,0,1597708881,"~\\Documents\\Python\\time_zone.py"
+-'  63  0  ~\Documents\Python\time_zone.py
+|4,39,63,0,1597708881,"~\\Documents\\Python\\time_zone.py"
+-'  10  13  ~\Documents\Python\time_zone.py
+|4,39,10,13,1597708823,"~\\Documents\\Python\\time_zone.py"
+-'  10  13  ~\Documents\Python\time_zone.py
+|4,39,10,13,1597708823,"~\\Documents\\Python\\time_zone.py"
+-'  59  0  ~\Documents\Python\time_zone.py
+|4,39,59,0,1597708816,"~\\Documents\\Python\\time_zone.py"
+-'  59  0  ~\Documents\Python\time_zone.py
+|4,39,59,0,1597708816,"~\\Documents\\Python\\time_zone.py"
+-'  148  0  ~\Documents\Python\common.py
+|4,39,148,0,1597708812,"~\\Documents\\Python\\common.py"
+-'  148  0  ~\Documents\Python\common.py
+|4,39,148,0,1597708812,"~\\Documents\\Python\\common.py"
+-'  183  0  ~\Documents\Python\common.py
+|4,39,183,0,1597708794,"~\\Documents\\Python\\common.py"
+-'  183  0  ~\Documents\Python\common.py
+|4,39,183,0,1597708794,"~\\Documents\\Python\\common.py"
+-'  186  8  ~\Documents\Python\common.py
+|4,39,186,8,1597708776,"~\\Documents\\Python\\common.py"
+-'  186  8  ~\Documents\Python\common.py
+|4,39,186,8,1597708776,"~\\Documents\\Python\\common.py"
+-'  181  8  ~\Documents\Python\common.py
+|4,39,181,8,1597708774,"~\\Documents\\Python\\common.py"
+-'  156  0  ~\Documents\Python\common.py
+|4,39,156,0,1597708774,"~\\Documents\\Python\\common.py"
+-'  181  8  ~\Documents\Python\common.py
+|4,39,181,8,1597708774,"~\\Documents\\Python\\common.py"
+-'  156  0  ~\Documents\Python\common.py
+|4,39,156,0,1597708774,"~\\Documents\\Python\\common.py"
+-'  58  18  ~\Documents\Python\time_zone.py
+|4,39,58,18,1597708745,"~\\Documents\\Python\\time_zone.py"
+-'  58  18  ~\Documents\Python\time_zone.py
+|4,39,58,18,1597708745,"~\\Documents\\Python\\time_zone.py"
+-'  5  38  ~\Documents\Python\time_zone.py
+|4,39,5,38,1597708659,"~\\Documents\\Python\\time_zone.py"
+-'  5  38  ~\Documents\Python\time_zone.py
+|4,39,5,38,1597708659,"~\\Documents\\Python\\time_zone.py"
+-'  49  0  ~\Documents\Python\time_zone.py
+|4,39,49,0,1597708499,"~\\Documents\\Python\\time_zone.py"
+-'  49  0  ~\Documents\Python\time_zone.py
+|4,39,49,0,1597708499,"~\\Documents\\Python\\time_zone.py"
+-'  175  30  ~\Documents\Python\common.py
+|4,39,175,30,1597708498,"~\\Documents\\Python\\common.py"
+-'  175  30  ~\Documents\Python\common.py
+|4,39,175,30,1597708498,"~\\Documents\\Python\\common.py"
+-'  174  23  ~\Documents\Python\common.py
+|4,39,174,23,1597708486,"~\\Documents\\Python\\common.py"
+-'  172  30  ~\Documents\Python\common.py
+|4,39,172,30,1597708486,"~\\Documents\\Python\\common.py"
+-'  174  23  ~\Documents\Python\common.py
+|4,39,174,23,1597708486,"~\\Documents\\Python\\common.py"
+-'  172  30  ~\Documents\Python\common.py
+|4,39,172,30,1597708486,"~\\Documents\\Python\\common.py"
+-'  171  23  ~\Documents\Python\common.py
+|4,39,171,23,1597708485,"~\\Documents\\Python\\common.py"
+-'  168  44  ~\Documents\Python\common.py
+|4,39,168,44,1597708485,"~\\Documents\\Python\\common.py"
+-'  161  30  ~\Documents\Python\common.py
+|4,39,161,30,1597708485,"~\\Documents\\Python\\common.py"
+-'  171  23  ~\Documents\Python\common.py
+|4,39,171,23,1597708485,"~\\Documents\\Python\\common.py"
+-'  168  44  ~\Documents\Python\common.py
+|4,39,168,44,1597708485,"~\\Documents\\Python\\common.py"
+-'  161  30  ~\Documents\Python\common.py
+|4,39,161,30,1597708485,"~\\Documents\\Python\\common.py"
+-'  1  0  ~\Documents\Python\common.py
+|4,39,1,0,1597708484,"~\\Documents\\Python\\common.py"
+-'  1  0  ~\Documents\Python\common.py
+|4,39,1,0,1597708484,"~\\Documents\\Python\\common.py"
+-'  280  16  ~\Desktop\website\schedule.html
+|4,39,280,16,1597671316,"~\\Desktop\\website\\schedule.html"
+-'  280  16  ~\Desktop\website\schedule.html
+|4,39,280,16,1597671316,"~\\Desktop\\website\\schedule.html"
+-'  766  0  ~\Desktop\Running Man\Running.Man.E516.200816.1080p-NEXT.srt
+|4,39,766,0,1597657361,"~\\Desktop\\Running Man\\Running.Man.E516.200816.1080p-NEXT.srt"
+-'  766  0  ~\Desktop\Running Man\Running.Man.E516.200816.1080p-NEXT.srt
+|4,39,766,0,1597657361,"~\\Desktop\\Running Man\\Running.Man.E516.200816.1080p-NEXT.srt"
+-'  1  0  ~\Desktop\Running Man\Running.Man.E516.200816.1080p-NEXT.srt
+|4,39,1,0,1597624945,"~\\Desktop\\Running Man\\Running.Man.E516.200816.1080p-NEXT.srt"
+-'  1  0  ~\Desktop\Running Man\Running.Man.E516.200816.1080p-NEXT.srt
+|4,39,1,0,1597624945,"~\\Desktop\\Running Man\\Running.Man.E516.200816.1080p-NEXT.srt"
+-'  2917  16  ~\Desktop\Running Man\Running.Man.E516.200816.1080p-NEXT.srt
+|4,39,2917,16,1597624938,"~\\Desktop\\Running Man\\Running.Man.E516.200816.1080p-NEXT.srt"
+-'  2917  16  ~\Desktop\Running Man\Running.Man.E516.200816.1080p-NEXT.srt
+|4,39,2917,16,1597624938,"~\\Desktop\\Running Man\\Running.Man.E516.200816.1080p-NEXT.srt"
+-'  156  8  ~\Desktop\Reddit\reddit_utilities.py
+|4,39,156,8,1597624385,"~\\Desktop\\Reddit\\reddit_utilities.py"
+-'  156  8  ~\Desktop\Reddit\reddit_utilities.py
+|4,39,156,8,1597624385,"~\\Desktop\\Reddit\\reddit_utilities.py"
+-'  129  4  ~\Desktop\Reddit\reddit_utilities.py
+|4,39,129,4,1597622736,"~\\Desktop\\Reddit\\reddit_utilities.py"
+-'  129  4  ~\Desktop\Reddit\reddit_utilities.py
+|4,39,129,4,1597622736,"~\\Desktop\\Reddit\\reddit_utilities.py"
+-'  121  4  ~\Desktop\Reddit\reddit_utilities.py
+|4,39,121,4,1597622715,"~\\Desktop\\Reddit\\reddit_utilities.py"
+-'  121  4  ~\Desktop\Reddit\reddit_utilities.py
+|4,39,121,4,1597622715,"~\\Desktop\\Reddit\\reddit_utilities.py"
+-'  137  4  ~\Desktop\Reddit\reddit_utilities.py
+|4,39,137,4,1597622691,"~\\Desktop\\Reddit\\reddit_utilities.py"
+-'  137  4  ~\Desktop\Reddit\reddit_utilities.py
+|4,39,137,4,1597622691,"~\\Desktop\\Reddit\\reddit_utilities.py"
+-'  28  4  ~\Desktop\Reddit\reddit_utilities.py
+|4,39,28,4,1597622687,"~\\Desktop\\Reddit\\reddit_utilities.py"
+-'  28  4  ~\Desktop\Reddit\reddit_utilities.py
+|4,39,28,4,1597622687,"~\\Desktop\\Reddit\\reddit_utilities.py"
 
 # Buffer list:
-%~\Desktop\website\resizes_on_font.html	32	13
-%~\Desktop\Twitch\general.py	247	33
-%~\Desktop\Twitch\extension_controls\content_script.js	3	0
-%~\Desktop\website\output.html	1	0
-%~\Desktop\website\bill_gates_wired_interview.html	42	0
-%~\Desktop\website\clean_html.py	91	22
-%~\Desktop\website\html_helper_functions.py	5	0
-%~\Desktop\website\output.v2.html	1	0
-%~\Desktop\Reddit\reddit_utilities.py	135	0
-%~\Desktop\website\__doc__	6	0
-%~\Desktop\website\input.html	1	0
-%~\Desktop\website\sample.html	1	0
-%~\Desktop\website\encoding_knowledge.txt	7	14
-%~\Desktop\website\subset_knowledge.txt	1	0
-%~\Desktop\website\css_typography_knowledge.txt	1	0
-%~\vimfiles\ftplugin\html.vim	1	0
-%~\Documents\xoya_sypmtoms.txt	3	5
-%~\Desktop\website\f.css	1	0
-%~\Desktop\website\paul_graham_genius.html	8	9
-%~\Desktop\website\audio\bill_gates_wired_interview.mp3	1	0
-%~\Desktop\Twitch\twitch_utilities.py	241	20
-%~\vimfiles\vimrc	200	0
+%~\Desktop\Twitch\channel_links.html	134	11
 
 # History of marks within files (newest to oldest):
 
+> ~\Desktop\Twitch\channel_links.html
+	*	1597782899	0
+	"	134	11
+	^	15	62
+	.	15	61
+	+	287	16
+	+	285	89
+	+	287	89
+	+	285	40
+	+	287	40
+	+	286	63
+	+	55	0
+	+	73	54
+	+	73	0
+	+	71	55
+	+	73	48
+	+	71	28
+	+	71	27
+	+	71	39
+	+	73	0
+	+	71	20
+	+	71	0
+	+	71	90
+	+	52	0
+	+	49	0
+	+	48	41
+	+	49	67
+	+	49	0
+	+	52	0
+	+	49	69
+	+	50	0
+	+	59	50
+	+	49	0
+	+	49	33
+	+	49	60
+	+	50	73
+	+	50	61
+	+	51	50
+	+	35	55
+	+	36	0
+	+	37	0
+	+	36	25
+	+	37	27
+	+	37	0
+	+	38	0
+	+	39	8
+	+	40	8
+	+	41	8
+	+	35	0
+	+	36	19
+	+	40	19
+	+	37	0
+	+	41	0
+	+	39	47
+	+	40	47
+	+	41	47
+	+	74	0
+	+	75	59
+	+	76	51
+	+	77	52
+	+	80	40
+	+	71	0
+	+	70	0
+	+	59	29
+	+	64	0
+	+	72	26
+	+	59	27
+	+	71	70
+	+	67	0
+	+	67	43
+	+	49	0
+	+	60	0
+	+	67	47
+	+	69	0
+	+	59	0
+	+	80	0
+	+	56	0
+	+	57	0
+	+	56	0
+	+	55	81
+	+	59	0
+	+	61	39
+	+	59	0
+	+	55	0
+	+	59	0
+	+	55	21
+	+	56	41
+	+	57	27
+	+	59	0
+	+	43	31
+	+	67	0
+	+	51	0
+	+	66	0
+	+	50	0
+	+	68	0
+	+	73	0
+	+	58	0
+	+	15	12
+	+	44	0
+	+	15	61
+
+> ~\Documents\Python\time_zone.py
+	*	1597714671	0
+	"	69	75
+	^	69	76
+	.	69	75
+	+	29	28
+	+	16	23
+	+	33	0
+	+	29	61
+	+	30	50
+	+	51	0
+	+	52	0
+	+	56	0
+	+	32	33
+	+	52	61
+	+	56	9
+	+	71	37
+	+	16	18
+	+	50	19
+	+	50	69
+	+	50	39
+	+	50	0
+	+	71	0
+	+	52	6
+	+	71	0
+	+	71	18
+	+	71	37
+	+	16	15
+	+	71	0
+	+	49	40
+	+	49	7
+	+	49	4
+	+	49	0
+	+	53	15
+	+	54	38
+	+	71	92
+	+	71	0
+	+	71	5
+	+	71	98
+	+	5	57
+	+	71	0
+	+	5	38
+	+	71	12
+	+	57	0
+	+	71	0
+	+	57	10
+	+	57	18
+	+	57	0
+	+	71	0
+	+	63	0
+	+	58	22
+	+	71	87
+	+	57	18
+	+	63	0
+	+	60	13
+	+	60	0
+	+	59	0
+	+	10	13
+	+	60	5
+	+	60	6
+	+	60	34
+	+	71	107
+	+	71	0
+	+	71	139
+	+	54	0
+	+	57	0
+	+	55	0
+	+	60	32
+	+	16	16
+	+	5	19
+	+	14	0
+	+	17	30
+	+	1	0
+	+	3	0
+	+	64	0
+	+	67	0
+	+	71	0
+	+	64	40
+	+	65	31
+	+	66	0
+	+	2	0
+	+	65	35
+	+	62	0
+	+	61	22
+	+	65	0
+	+	64	19
+	+	71	0
+	+	67	0
+	+	69	83
+	+	68	16
+	+	69	91
+	+	70	0
+	+	71	0
+	+	70	27
+	+	69	98
+	+	70	108
+	+	69	58
+	+	70	38
+	+	69	75
+
+> ~\Documents\Python\common.py
+	*	1597708811	0
+	"	148	0
+	^	156	65
+	.	157	0
+	+	82	33
+	+	82	68
+	+	82	31
+	+	82	0
+	+	78	0
+	+	76	0
+	+	78	24
+	+	82	0
+	+	79	0
+	+	80	0
+	+	81	0
+	+	83	36
+	+	84	144
+	+	88	22
+	+	77	19
+	+	73	50
+	+	87	21
+	+	88	0
+	+	87	0
+	+	85	0
+	+	79	33
+	+	81	31
+	+	87	0
+	+	35	0
+	+	12	0
+	+	5	0
+	+	9	13
+	+	3	1
+	+	4	0
+	+	5	0
+	+	42	0
+	+	41	0
+	+	62	0
+	+	10	10
+	+	49	0
+	+	48	0
+	+	13	0
+	+	11	28
+	+	141	0
+	+	133	45
+	+	122	0
+	+	123	0
+	+	133	33
+	+	133	107
+	+	133	65
+	+	123	0
+	+	133	0
+	+	123	0
+	+	133	0
+	+	123	0
+	+	131	0
+	+	110	0
+	+	112	0
+	+	112	19
+	+	110	43
+	+	112	0
+	+	4	0
+	+	145	0
+	+	152	0
+	+	153	4
+	+	153	0
+	+	147	0
+	+	162	26
+	+	167	28
+	+	175	15
+	+	172	15
+	+	177	38
+	+	164	42
+	+	163	41
+	+	165	46
+	+	163	0
+	+	166	0
+	+	165	0
+	+	169	50
+	+	172	34
+	+	175	31
+	+	176	0
+	+	169	68
+	+	172	52
+	+	175	49
+	+	172	43
+	+	169	52
+	+	171	34
+	+	172	19
+	+	171	35
+	+	172	38
+	+	171	35
+	+	175	20
+	+	174	0
+	+	175	38
+	+	169	19
+	+	168	29
+	+	169	19
+	+	168	30
+	+	169	43
+	+	177	0
+	+	110	29
+	+	157	55
+	+	156	64
+	+	157	0
+
+> ~\Documents\Python\__doc__
+	*	1597707606	0
+	"	3	0
+	.	1	0
+	+	1	0
+
+> C:\Program Files (x86)\Python\Python37-32\Lib\datetime.py
+	*	1597705946	0
+	"	1	0
+
+> ~\Desktop\python_files.txt
+	*	1597699711	0
+	"	1	0
+	.	1	0
+	+	1	68
+	+	1	0
+	+	78	0
+	+	1	67
+	+	1	130
+	+	1	0
+	+	2	60
+	+	3	0
+	+	78	61
+	+	2	0
+	+	1	0
+	+	2	0
+	+	1	0
+
+> ~\Desktop\website\schedule.html
+	*	1597671307	0
+	"	280	16
+
+> ~\Desktop\Running Man\Running.Man.E516.200816.1080p-NEXT.srt
+	*	1597657343	0
+	"	766	0
+
+> ~\Desktop\Reddit\reddit_utilities.py
+	*	1597624385	0
+	"	156	8
+	^	155	61
+	.	155	60
+	+	74	0
+	+	79	29
+	+	9	12
+	+	79	0
+	+	78	0
+	+	76	54
+	+	78	12
+	+	66	0
+	+	61	0
+	+	59	51
+	+	60	40
+	+	79	0
+	+	78	0
+	+	25	48
+	+	27	28
+	+	31	0
+	+	35	0
+	+	39	0
+	+	30	4
+	+	30	0
+	+	31	0
+	+	29	28
+	+	33	38
+	+	35	0
+	+	37	12
+	+	41	12
+	+	25	14
+	+	29	14
+	+	33	14
+	+	37	14
+	+	41	14
+	+	37	28
+	+	41	0
+	+	25	14
+	+	29	14
+	+	33	14
+	+	37	14
+	+	27	0
+	+	31	0
+	+	27	0
+	+	28	0
+	+	32	0
+	+	36	0
+	+	40	0
+	+	17	22
+	+	26	64
+	+	30	64
+	+	34	84
+	+	38	64
+	+	25	0
+	+	128	12
+	+	128	22
+	+	128	15
+	+	112	20
+	+	113	20
+	+	114	20
+	+	117	18
+	+	10	16
+	+	117	120
+	+	116	27
+	+	117	19
+	+	116	28
+	+	116	163
+	+	117	101
+	+	117	0
+	+	119	0
+	+	117	0
+	+	121	21
+	+	119	18
+	+	121	30
+	+	122	86
+	+	12	10
+	+	14	42
+	+	15	29
+	+	16	0
+	+	17	0
+	+	117	31
+	+	117	0
+	+	115	0
+	+	122	0
+	+	120	4
+	+	120	0
+	+	119	0
+	+	120	52
+	+	128	0
+	+	126	0
+	+	127	0
+	+	131	19
+	+	130	12
+	+	131	24
+	+	68	28
+	+	106	55
+	+	107	0
+	+	80	39
+	+	89	9
+	+	81	0
+	+	130	12
+	+	77	8
+	+	137	0
+	+	155	60
+
+> ~\Documents\pw.txt
+	*	1597320382	0
+	"	1	14
+	.	1	0
+	+	1	0
+
+> ~\Desktop\Twitch\.gitignore
+	*	1597270987	0
+	"	1	12
+	^	1	13
+	.	1	12
+	+	1	12
+
+> ~\Desktop\HTML, Python, Jq\Captions\srt.py
+	*	1597250878	0
+	"	5	16
+
 > ~\vimfiles\vimrc
-	*	1597239171	0
-	"	200	0
-	^	200	39
-	.	200	38
-	+	461	0
-	+	481	0
-	+	482	109
-	+	481	0
-	+	500	0
-	+	461	0
-	+	483	23
-	+	500	0
-	+	461	0
-	+	500	0
-	+	461	0
-	+	500	0
-	+	485	77
-	+	499	8
-	+	479	50
-	+	480	52
-	+	480	162
-	+	481	46
-	+	482	107
-	+	483	64
-	+	501	0
-	+	461	0
-	+	482	0
-	+	461	0
-	+	480	0
-	+	461	0
-	+	489	32
-	+	496	30
-	+	461	0
-	+	487	53
-	+	487	45
-	+	487	0
-	+	488	0
-	+	489	0
-	+	494	0
-	+	461	0
-	+	482	0
-	+	456	0
-	+	461	0
-	+	485	78
-	+	489	0
-	+	496	0
+	*	1597246683	0
+	"	511	41
+	^	511	42
+	.	511	42
 	+	484	63
 	+	461	0
 	+	485	77
@@ -24022,9 +24580,9 @@ $
 	+	475	0
 	+	491	18
 	+	501	0
-	+	505	10
-	+	504	0
-	+	506	64
+	+	517	10
+	+	516	0
+	+	518	64
 	+	74	1
 	+	75	18
 	+	75	0
@@ -24034,13 +24592,63 @@ $
 	+	201	13
 	+	200	30
 	+	199	39
-	+	200	38
+	+	200	0
+	+	512	10
+	+	504	11
+	+	513	4
+	+	512	41
+	+	503	40
+	+	512	75
+	+	512	0
+	+	513	33
+	+	512	0
+	+	504	11
+	+	504	33
+	+	503	14
+	+	513	0
+	+	503	14
+	+	513	9
+	+	503	17
+	+	513	14
+	+	504	50
+	+	503	19
+	+	512	0
+	+	508	8
+	+	504	7
+	+	513	0
+	+	514	0
+	+	513	48
+	+	503	21
+	+	508	13
+	+	504	0
+	+	505	0
+	+	508	35
+	+	504	0
+	+	507	0
+	+	508	72
+	+	504	11
+	+	505	11
+	+	509	20
+	+	512	0
+	+	509	23
+	+	506	16
+	+	509	11
+	+	510	37
+	+	511	42
 	k	401	0
 
+> C:\Program Files (x86)\Vim\vim82\doc\map.txt
+	*	1597246296	0
+	"	1303	11
+
+> ~\rg.man
+	*	1597246027	0
+	"	301	8
+
 > ~\Desktop\Twitch\extension_controls\content_script.js
-	*	1597239168	0
+	*	1597245322	0
 	"	3	0
-	.	2	0
+	.	1	0
 	+	151	0
 	+	149	0
 	+	154	0
@@ -24135,11 +24743,11 @@ $
 	+	85	0
 	+	91	0
 	+	91	124
-	+	3	0
+	+	4	0
 	+	2	0
 	+	6	59
 	+	2	9
-	+	2	0
+	+	1	0
 
 > ~\vimfiles\pack\plugins\start\ale\doc\ale.txt
 	*	1597237947	0
@@ -24968,112 +25576,6 @@ $
 	.	1	0
 	+	1	0
 
-> ~\Desktop\Reddit\reddit_utilities.py
-	*	1596992101	0
-	"	135	0
-	^	77	9
-	.	77	8
-	+	70	0
-	+	79	9
-	+	74	0
-	+	79	29
-	+	9	12
-	+	79	0
-	+	78	0
-	+	76	54
-	+	78	12
-	+	66	0
-	+	61	0
-	+	59	51
-	+	60	40
-	+	79	0
-	+	78	0
-	+	25	48
-	+	27	28
-	+	31	0
-	+	35	0
-	+	39	0
-	+	30	4
-	+	30	0
-	+	31	0
-	+	29	28
-	+	33	38
-	+	35	0
-	+	37	12
-	+	41	12
-	+	25	14
-	+	29	14
-	+	33	14
-	+	37	14
-	+	41	14
-	+	37	28
-	+	41	0
-	+	25	14
-	+	29	14
-	+	33	14
-	+	37	14
-	+	27	0
-	+	31	0
-	+	27	0
-	+	28	0
-	+	32	0
-	+	36	0
-	+	40	0
-	+	17	22
-	+	26	64
-	+	30	64
-	+	34	84
-	+	38	64
-	+	25	0
-	+	128	12
-	+	128	22
-	+	128	15
-	+	112	20
-	+	113	20
-	+	114	20
-	+	117	18
-	+	10	16
-	+	117	120
-	+	116	27
-	+	117	19
-	+	116	28
-	+	116	163
-	+	117	101
-	+	117	0
-	+	119	0
-	+	117	0
-	+	121	21
-	+	119	18
-	+	121	30
-	+	122	86
-	+	12	10
-	+	14	42
-	+	15	29
-	+	16	0
-	+	17	0
-	+	117	31
-	+	117	0
-	+	115	0
-	+	122	0
-	+	120	4
-	+	120	0
-	+	119	0
-	+	120	52
-	+	128	0
-	+	126	0
-	+	127	0
-	+	131	19
-	+	130	12
-	+	131	24
-	+	68	28
-	+	106	55
-	+	107	0
-	+	80	39
-	+	89	9
-	+	81	0
-	+	130	12
-	+	77	8
-
 > ~\Desktop\website\output.v2.html
 	*	1596992044	0
 	"	1	0
@@ -25234,112 +25736,6 @@ $
 > ~\Desktop\Twitch\extension_demo\manifest.json
 	*	1596657328	0
 	"	2	4
-
-> ~\Documents\Python\common.py
-	*	1596651002	0
-	"	130	12
-	^	110	30
-	.	110	29
-	+	74	30
-	+	75	30
-	+	77	24
-	+	82	33
-	+	82	68
-	+	82	31
-	+	82	0
-	+	78	0
-	+	76	0
-	+	78	24
-	+	82	0
-	+	79	0
-	+	80	0
-	+	81	0
-	+	83	36
-	+	84	144
-	+	88	22
-	+	77	19
-	+	73	50
-	+	87	21
-	+	88	0
-	+	87	0
-	+	85	0
-	+	79	33
-	+	81	31
-	+	87	0
-	+	35	0
-	+	12	0
-	+	5	0
-	+	9	13
-	+	3	1
-	+	4	0
-	+	5	0
-	+	42	0
-	+	41	0
-	+	62	0
-	+	10	10
-	+	49	0
-	+	48	0
-	+	13	0
-	+	11	28
-	+	141	0
-	+	133	45
-	+	122	0
-	+	123	0
-	+	133	33
-	+	133	107
-	+	133	65
-	+	123	0
-	+	133	0
-	+	123	0
-	+	133	0
-	+	123	0
-	+	131	0
-	+	110	0
-	+	112	0
-	+	112	19
-	+	110	43
-	+	112	0
-	+	4	0
-	+	145	0
-	+	152	0
-	+	153	4
-	+	153	0
-	+	147	0
-	+	162	26
-	+	167	28
-	+	175	15
-	+	172	15
-	+	177	38
-	+	164	42
-	+	163	41
-	+	165	46
-	+	163	0
-	+	166	0
-	+	165	0
-	+	169	50
-	+	172	34
-	+	175	31
-	+	176	0
-	+	169	68
-	+	172	52
-	+	175	49
-	+	172	43
-	+	169	52
-	+	171	34
-	+	172	19
-	+	171	35
-	+	172	38
-	+	171	35
-	+	175	20
-	+	174	0
-	+	175	38
-	+	169	19
-	+	168	29
-	+	169	19
-	+	168	30
-	+	169	43
-	+	177	0
-	+	110	29
 
 > ~\Desktop\Twitch\extension_controls\options.js
 	*	1596636198	0
@@ -26471,107 +26867,6 @@ $
 	+	1	19
 	+	2	32
 	+	3	33
-
-> ~\Desktop\Twitch\channel_links.html
-	*	1595590269	0
-	"	87	20
-	^	15	62
-	.	15	61
-	+	287	16
-	+	285	89
-	+	287	89
-	+	285	40
-	+	287	40
-	+	286	63
-	+	55	0
-	+	73	54
-	+	73	0
-	+	71	55
-	+	73	48
-	+	71	28
-	+	71	27
-	+	71	39
-	+	73	0
-	+	71	20
-	+	71	0
-	+	71	90
-	+	52	0
-	+	49	0
-	+	48	41
-	+	49	67
-	+	49	0
-	+	52	0
-	+	49	69
-	+	50	0
-	+	59	50
-	+	49	0
-	+	49	33
-	+	49	60
-	+	50	73
-	+	50	61
-	+	51	50
-	+	35	55
-	+	36	0
-	+	37	0
-	+	36	25
-	+	37	27
-	+	37	0
-	+	38	0
-	+	39	8
-	+	40	8
-	+	41	8
-	+	35	0
-	+	36	19
-	+	40	19
-	+	37	0
-	+	41	0
-	+	39	47
-	+	40	47
-	+	41	47
-	+	74	0
-	+	75	59
-	+	76	51
-	+	77	52
-	+	80	40
-	+	71	0
-	+	70	0
-	+	59	29
-	+	64	0
-	+	72	26
-	+	59	27
-	+	71	70
-	+	67	0
-	+	67	43
-	+	49	0
-	+	60	0
-	+	67	47
-	+	69	0
-	+	59	0
-	+	80	0
-	+	56	0
-	+	57	0
-	+	56	0
-	+	55	81
-	+	59	0
-	+	61	39
-	+	59	0
-	+	55	0
-	+	59	0
-	+	55	21
-	+	56	41
-	+	57	27
-	+	59	0
-	+	43	31
-	+	67	0
-	+	51	0
-	+	66	0
-	+	50	0
-	+	68	0
-	+	73	0
-	+	58	0
-	+	15	12
-	+	44	0
-	+	15	61
 
 > ~\Desktop\Twitch\19_21\credits.txt
 	*	1595545121	0
@@ -29140,10 +29435,6 @@ $
 	+	2	0
 	+	1	0
 	+	2	0
-
-> C:\Program Files (x86)\Python\Python37-32\Lib\datetime.py
-	*	1592851138	0
-	"	599	8
 
 > ~\Desktop\Twitch\200622\input.txt
 	*	1592833986	0
@@ -33991,10 +34282,6 @@ $
 	+	270	0
 	+	90	0
 	k	282	20
-
-> C:\Program Files (x86)\Vim\vim82\doc\map.txt
-	*	1590567038	0
-	"	320	33
 
 > ~\Desktop\website\create_last_modified_page.py
 	*	1590485485	0
@@ -39588,12 +39875,6 @@ $
 	+	16	53
 	+	17	43
 
-> ~\Documents\Python\__doc__
-	*	1578334114	0
-	"	14	0
-	.	1	0
-	+	1	0
-
 > ~\Desktop\Typography\Tool\create_font_file_download_query.py
 	*	1578251333	0
 	"	32	30
@@ -40405,10 +40686,6 @@ $
 	+	3	4
 	+	9	0
 	+	4	0
-
-> ~\rg.man
-	*	1575722078	0
-	"	445	49
 
 > ~\ag.man
 	*	1575721795	0
