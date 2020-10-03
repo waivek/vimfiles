@@ -1,0 +1,121 @@
+
+-------------------------------
+
+ab~cd | ab~cd
+
+[problem] in the above case, using DOTTY was throwing an error in
+CheckIfCursorMoveWasCausedByDotOperator(). the problem was we were doing 
+`@/ =~ @"` without escaping the @" register. 
+
+[solution] we now escape the @" register. the new line is:
+@/ =~ s:String2Pattern(@")
+
+-------------------------------
+
+Press cgn on first 'function'. Press DOT. Undo twice. Press 0.  Highlighting
+should be disabled, but stays enabled.
+
+" span | function | function | function
+" span | function | function | function
+
+-------------------------------
+change r'/' to r'\/'
+
+intended behaviour, just unintuitive, as ending is same as deleted text
+
+line 1: <span></span>
+line 2: <span></span>
+line 3: <span></span>
+
+-------------------------------
+
+[problem] debugging why using '?' vivek and going to first match then pressing
+'.' was showing an errorhl even though functionality was preserved. 
+
+[solution] this was becuase the +nextmatches -previousmatches message system
+should have had a `:silent!` in its command.
+
+line 1: vivek
+line 2: vivek
+line 3: vivek
+
+-------------------------------
+PATTERN: &nbsp;\ze\w
+
+LINES:
+<p>&nbsp;</p>
+A long&nbsp;time ago
+<p>&nbsp;</p>
+New ways&nbsp;to see
+
+PATTERN: 
+
+pattern1: hello\zsworld, deleted_text: world
+pattern2: hello\zeworld, deleted_text: hello
+
+1,2: helloworld
+  1: hello
+  2: world
+1,2: helloworld
+  1: hello
+  2: world
+
+Elaboration: After deleting text, we lose context of the stuff before \zs or
+after \ze when doing the match.
+
+-------------------------------
+
+var collapse_span = document.createElement("span");
+collapse_span.innerHTML = collapse_svg;
+collapse.
+
+RepeatChange test cases:
+→ / 'input'
+→ c 'input$word'
+→ .
+
+@/        , @"            , dot behaviour , status
+input     , input$word    , UPDATE        , PASS
+range     , input_range   , UPDATE        , PASS
+\<false\> , [false false] , UPDATE        , PASS
+\<word\>  , word          , STAY          , PASS
+
+CASE 1:
+input$
+input$word
+input$
+input$word
+
+CASE 2: 
+range
+input_range
+range
+input_range
+
+CASE 3: (previous search key after token)
+false
+[false false false]
+false
+[false false false]
+
+CASE 4: (toggle keyword test)
+word
+word_item
+word        word_item
+
+word_item   word
+
+-------------------------------
+::
+See whether it works with surround.vim
+STEP 1 (SETUP):
+Change the first trigger to something else. Press DOT
+    news 1
+    news 2
+STEP 2:
+Do the following command on word_1. 
+    ysiw"
+Move the cursor onto word_2. Press DOT.
+    word_1
+    word_2
+
