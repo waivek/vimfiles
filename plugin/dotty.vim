@@ -102,6 +102,7 @@
 " works on multi-byte strings: https://www.reddit.com/r/vim/comments/5t08uo/vimscript_unicode/
 " let highlighted_string = strcharpart(getline("'<"), col("'<")-1, col("'>") - col("'<")+1)
 
+
 let g:dot_modifications_enabled = v:true
 function! ToggleDotModifications()
     let g:dot_modifications_enabled = !g:dot_modifications_enabled
@@ -192,6 +193,39 @@ function! s:VisualA()
 endfunction
 vnoremap <expr> A mode() ==? "\<C-V>" ?  'A'  :  ':<c-u>call <SID>VisualA()<CR>' 
 
+function! CursorIsOnMatch()
+    let view_save = winsaveview()
+    let pos_save  = getpos(".")
+    let wrapscan_option_save = &wrapscan
+
+    let current_byte = line2byte(".") + col(".") - 1
+    if current_byte > 1
+        let previous_byte = current_byte - 1
+        execute "keepjumps go " . previous_byte
+        silent! keepjumps normal! n
+        let pos_after_search = getpos(".")
+    else
+        let next_byte = current_byte + 1
+        execute "keepjumps go " . next_byte
+        silent! keepjumps normal! N
+        let pos_after_search = getpos(".")
+    endif
+
+    let &wrapscan = wrapscan_option_save
+    call winrestview(view_save)
+
+    if pos_after_search == pos_save
+        return v:true
+    endif
+    return v:false
+
+endfunction
+nnoremap gu :echo CursorIsOnMatch()<CR>
+" Returns the byte positions of occurences of @/. 
+" 1. First check if there are occurences of @/ before or after the cursor
+" 2. If there are, disable wrapscan and keep pressing 'n' and adding matches.
+"    We stop adding matches when the newest match byte is the same as the
+"    first match byte. This means we have cycled through the file.
 function! GetMatchByteOffsets()
     let view_save = winsaveview()
     let pos_save  = getpos(".")
@@ -200,10 +234,8 @@ function! GetMatchByteOffsets()
     let wrapscan_option_save = &wrapscan
     let search_incomplete = v:true
 
-
+    " 1. First check if there are occurences of @/ before or after the cursor
     set nowrapscan
-    let forward_count = 0
-    let backward_count = 0
     try
         " IMPORTANT: DON'T PUT :silent! HERE AS THAT DISABLES ERRORS
         keepjumps normal! n
@@ -211,22 +243,29 @@ function! GetMatchByteOffsets()
         try
             keepjumps normal! N
         catch /^Vim[^)]\+):E384\D/
-            let search_incomplete = v:false
+            let search_incomplete = v:false " there is no occurence of the pattern before or after the cursor
         endtry
     finally
         call winrestview(view_save)
     endtry
 
     set wrapscan
-    while search_incomplete
-        keepjumps silent! normal! n
-        let byte_int = line2byte(".") + col(".") - 1
-        if len(match_positions) > 0 && byte_int == match_positions[0]
-            let search_incomplete = v:false
-        else
-            let match_positions = match_positions + [ byte_int ]
+    if search_incomplete
+        while search_incomplete
+            keepjumps silent! normal! n
+            let byte_int = line2byte(".") + col(".") - 1
+            if len(match_positions) > 0 && byte_int == match_positions[0]
+                let search_incomplete = v:false
+            else
+                let match_positions = match_positions + [ byte_int ]
+            endif
+        endwhile
+    else
+        if CursorIsOnMatch()
+            let current_byte = line2byte(".") + col(".") - 1
+            let match_positions = match_positions + [ current_byte ]
         endif
-    endwhile
+    endif
 
     let &wrapscan = wrapscan_option_save
     call winrestview(view_save)
@@ -241,8 +280,9 @@ endfunction
 " STRING MATCH a of b: when you press 'n'
 " STRING -x +y: when you do DOT and more occurences remain
 function! MatchByteOffsetsToString(match_positions)
+    " return [@/, a:match_positions ]
     if len(a:match_positions) == 0
-        return ""
+        " return ""
         return [ @/, "not found" ]
     endif
     let cursor_position = line2byte(".") + col(".") - 1
@@ -251,7 +291,7 @@ function! MatchByteOffsetsToString(match_positions)
         let x_match_of_n_matches = index(a:match_positions, cursor_position) + 1
         let total_matches = len(a:match_positions)
         " return printf("/%s MATCH %d of %d; (getmatchbytoffset_1)", @/, x_match_of_n_matches, total_matches)
-        return printf("/%s MATCH %d of %d", @/, x_match_of_n_matches, total_matches)
+        " return printf("/%s MATCH %d of %d", @/, x_match_of_n_matches, total_matches)
         return [
                     \ printf("/%s",  @/),
                     \ printf("%d of %d", x_match_of_n_matches, total_matches)
@@ -279,7 +319,7 @@ function! MatchByteOffsetsToString(match_positions)
         if matches_before_cursor > 0 && matches_after_cursor > 0
             let separator = ' | '
         endif
-        return printf("/%s %s%s%s (getmatchbytoffset_2)", @/, left_info_string, separator, right_info_string)
+        " return printf("/%s %s%s%s (getmatchbytoffset_2)", @/, left_info_string, separator, right_info_string)
         return [
                     \ printf("/%s", @/), 
                     \ printf("%s%s%s", left_info_string, separator, right_info_string)
@@ -324,18 +364,34 @@ function! OldEcho()
     let feedkeys_command = printf(":echo '%s'\<CR>", match_info_string)
     call feedkeys(feedkeys_command)
 endfunction
+
+" We don’t use "%s" and instead inline the command in the feedkeys to avoid
+" all sorts of printing errors related to singlequotes and terminal characters
 function! EchoSearchInfo()
-    call OldEcho()
-    return
-    " OLD:
-    " let feedkeys_command = printf(":echo '%s'\<CR>", match_info_string)
     let match_positions = GetMatchByteOffsets()
-    let [ match, info ] = MatchByteOffsetsToString(match_positions)
+    let [ match_redundant, info ] = MatchByteOffsetsToString(match_positions)
+    " let match = strtrans(@/)
     " let match = Truncate(match, v:echospace-20)
-    let feedkeys_command = printf(":set hls | echon '%s' | echohl String | echon ' %s' | echohl Normal\<CR>", match, info)
-    let feedkeys_command = printf(":echo '%s'\<CR>", match)
+    let match_macro = 'Truncate(strtrans(@/),v:echospace-20)'
+    let feedkeys_command = printf(":set hls | echon %s | echohl String | echon \" %s\" | echohl Normal\<CR>", match_macro, info)
     call feedkeys(feedkeys_command)
 endfunction
+" a
+" b
+" a
+" b
+"
+" 
+" 
+" 
+" 
+" 
+" 
+" 
+" 'single'
+" 'single'
+" 'single'
+" 'single'
 function! PostCool()
     call EchoSearchInfo()
 endfunction
@@ -455,7 +511,6 @@ function! CheckIfCursorMoveWasCausedByDotOperator()
     let view_save = winsaveview()
     let visual_start_save     = getpos("'<")
     let visual_end_save       = getpos("'>")
-    "unique_2
     let yank_start_save       = getpos("'[")
     let yank_end_save         = getpos("']")
     let quote_reg_save        = @"
@@ -583,6 +638,7 @@ function! ModifyDotOverride()
         nnoremap <silent> . :call RepeatChange()<CR>
     endif
 endfunction
+
 function! s:ToggleWholeKeyword()
     let search_pattern = @/
     let length = len(search_pattern)
