@@ -1,30 +1,43 @@
 " IDEA: allow current DOT transformation to be a substitute and have hotkeys
-" for doing a global substitute, mapped to <SPACE><DOT>
+"       for doing a global substitute, mapped to <SPACE><DOT>
 "
 " IDEA: give DOT operator same treatment as PASTE operator
-"       HISTORY of deleted text and replaced text
+"       HISTORY of deleted text to replaced text transformations,
+"       accessed by ‘q.’
 "
-" BEHAVIOUR: w.r.t. '?' and '/'
+" IDEA: if replacement ends with the deleted text, do a check of
+"       that in RepeatChange and do an additional ‘n’ if so
+"
+" BEHAVIOUR: w.r.t. '?' and ‘/’
 " If you do a '?' and then a change, pressing dot unintuitively changes the
 " NEXT match i.e., works like `cgn` instead of `cgN`
+" BUG: RepeatChange map unmap cycle bug takes place on multiline replacememnts
+" [solution] Pattern matching problem, replaced let condition_1 = @/ =~ @"
+" with pattern_matches_entire_deleted_text logic
+"
+" BUG: GetMatchByteOffsets was returning Matches even after we were done
+" replacing. [solution] This was because we had a :silent in a try catch block
+" which disabled error handling. We removed the :silent.
+"
 " BUG:
 " fixed: this was intended behaviour, just unintuitive
 " </span> </span>
 " Select first '/', change it to '\/', press DOT. Goes into doesn’t repeat the
 " change on the next match
 " BUG: 
-" span | span | span | function
+" new_span | span | span | function
 " Press cgn on first 'function'. Press DOT. Undo twice. Press 0. 
 " Highlighting should be disabled, but stays enabled.
 " 
 " [fixed, see below] RepeatChange: Pressing DOT triggers repeat change.
-" Pressing it again does normal DOT command. Pressing it again triggers repeat
-" change. This alternates. Ideal behaviour would be always being on
-" RepeatChange unitl a cursor move that is not triggered by DOT.
-" fix: We create a new function CheckIfCursorMoveWasCausedByDotOperator. This
-" checks for two conditions as a sort of heurisitc and if it evaluates to
-" true, we hold off on the DOT unmapping in the RemovedAllOverrides function
-"
+" >  [problem] Pressing it again does normal DOT command. Pressing it again
+"              triggers repeat change. This alternates. Ideal behaviour would be
+"              always being on RepeatChange unitl a cursor move that is not
+"              triggered by DOT.
+" > [solution] We create a new function CheckIfCursorMoveWasCausedByDotOperator.
+"              This checks for two conditions as a sort of heurisitc and if it
+"              evaluates to true, we hold off on the DOT unmapping in the
+"              RemoveAllOverrides function
 " [fixed, see below] When you do RepeatChange via DOT, 'set hls' get’s
 " displayed instead of number of matches. This is useless information and very
 " annoying to the user.
@@ -43,16 +56,16 @@
 " some, something, somebody
 "
 " CASE:
-" color      | Color | coloR
-" color      | Color | coloR
+" color | Color | coloR
+" color | Color | coloR
 " 
 " BUG: Use VisualStar in a macro and try to repeat the macro
 " BUG: (first) , (second) : ds( on first, go to second pair and do ds( again
 " 
 "
-" FUNCTIONALITY:
+" FUNCTIONALITY OR FEATURES:
 " 1:   Visual selections can use *, #, gd
-" 2:   If you replace a string with a new string, pressing dot searches for
+" 2:   If you change one string to another, pressing dot searches for
 "      the next instance of the string and repeats the replacement on that
 "      string (similar to cgn). If you move the cursor, the dot command reverts
 "      to it’s original behaviour.
@@ -79,7 +92,6 @@
 "                                                               | 
 " —                                                                 | —
 " 日本語                                                            | 日本語
-
 " array_index[12]$1^.^ab*cdma~da"quotes"/sub/'singq'📁📁—日本語 | array_index[12]$1^.^ab*cdma~da"quotes"/sub/'singq'📁📁—日本語
 " multi line search
 " array_index[12]$1^.^ab*cdma~da"quotes"/sub/'singq'📁📁—日本語 | array_index[12]$1^.^ab*cdma~da"quotes"/sub/'singq'📁📁—日本語
@@ -101,7 +113,7 @@ function! ToggleDotModifications()
 endfunction
 command! ToggleDotModifications call ToggleDotModifications()
 
-function! s:String2Pattern(string)
+function! String2Pattern(string)
     let highlighted_string = a:string
     let magic_escape_chars =  '[]\$^*~."/'
     let search_string = escape(highlighted_string, magic_escape_chars)
@@ -111,7 +123,7 @@ endfunction
 function! s:Visual2Search()
     let reg_save = @"
     normal! gvy
-    let search_string = s:String2Pattern(@")
+    let search_string = String2Pattern(@")
     let @" = reg_save
     return search_string
 endfunction
@@ -126,7 +138,7 @@ function! s:VisualHash()
     let @/ = search_string
     call feedkeys("?\<CR>")
 endfunction
-" breakadd func 10 Visual_gd 
+" breakadd func 1 Visual_gd 
 function! Visual_gd()
     let search_string = s:Visual2Search()
     let cmd = ":0/" . search_string "/"
@@ -180,7 +192,6 @@ function! s:VisualA()
 endfunction
 vnoremap <expr> A mode() ==? "\<C-V>" ?  'A'  :  ':<c-u>call <SID>VisualA()<CR>' 
 
-" breakadd func 22 GetMatchByteOffsets
 function! GetMatchByteOffsets()
     let view_save = winsaveview()
     let pos_save  = getpos(".")
@@ -191,8 +202,11 @@ function! GetMatchByteOffsets()
 
 
     set nowrapscan
+    let forward_count = 0
+    let backward_count = 0
     try
-        silent! keepjumps normal! n
+        " IMPORTANT: DON'T PUT :silent! HERE AS THAT DISABLES ERRORS
+        keepjumps normal! n
     catch /^Vim[^)]\+):E385\D/
         try
             keepjumps normal! N
@@ -221,17 +235,27 @@ function! GetMatchByteOffsets()
     return match_positions
 
 endfunction
+
+" Thee return possibilties:
+" STRING not found: when you do DOT and keep changing until no more PATTERNS remain
+" STRING MATCH a of b: when you press 'n'
+" STRING -x +y: when you do DOT and more occurences remain
 function! MatchByteOffsetsToString(match_positions)
     if len(a:match_positions) == 0
         return ""
-        return printf("/%s not found", @/)
+        return [ @/, "not found" ]
     endif
     let cursor_position = line2byte(".") + col(".") - 1
     let cursor_on_match = index(a:match_positions, cursor_position) > -1
     if cursor_on_match
         let x_match_of_n_matches = index(a:match_positions, cursor_position) + 1
         let total_matches = len(a:match_positions)
-        return printf("/%s MATCH %d of %d; match_positions %s", @/, x_match_of_n_matches, total_matches, a:match_positions)
+        " return printf("/%s MATCH %d of %d; (getmatchbytoffset_1)", @/, x_match_of_n_matches, total_matches)
+        return printf("/%s MATCH %d of %d", @/, x_match_of_n_matches, total_matches)
+        return [
+                    \ printf("/%s",  @/),
+                    \ printf("%d of %d", x_match_of_n_matches, total_matches)
+                    \ ]
     else
         let matches_before_cursor = 0
         let matches_after_cursor = 0
@@ -255,7 +279,11 @@ function! MatchByteOffsetsToString(match_positions)
         if matches_before_cursor > 0 && matches_after_cursor > 0
             let separator = ' | '
         endif
-        return printf("/%s %s%s%s", @/, left_info_string, separator, right_info_string)
+        return printf("/%s %s%s%s (getmatchbytoffset_2)", @/, left_info_string, separator, right_info_string)
+        return [
+                    \ printf("/%s", @/), 
+                    \ printf("%s%s%s", left_info_string, separator, right_info_string)
+                    \ ]
     endif
 endfunction
 " ^V<e2><80><fe>X<94>
@@ -287,23 +315,47 @@ endfunction
 
 " nmap . values: <Plug>(RepeatDot)
 "                call RepeatChange()<CR>
+
+function! OldEcho()
+    call feedkeys(":set hls\<CR>")
+    " set hls
+    let match_positions = GetMatchByteOffsets()
+    let match_info_string = MatchByteOffsetsToString(match_positions)
+    let feedkeys_command = printf(":echo '%s'\<CR>", match_info_string)
+    call feedkeys(feedkeys_command)
+endfunction
+function! EchoSearchInfo()
+    call OldEcho()
+    return
+    " OLD:
+    " let feedkeys_command = printf(":echo '%s'\<CR>", match_info_string)
+    let match_positions = GetMatchByteOffsets()
+    let [ match, info ] = MatchByteOffsetsToString(match_positions)
+    " let match = Truncate(match, v:echospace-20)
+    let feedkeys_command = printf(":set hls | echon '%s' | echohl String | echon ' %s' | echohl Normal\<CR>", match, info)
+    let feedkeys_command = printf(":echo '%s'\<CR>", match)
+    call feedkeys(feedkeys_command)
+endfunction
+function! PostCool()
+    call EchoSearchInfo()
+endfunction
+function! PostRepeat()
+    call EchoSearchInfo()
+endfunction
 function! RepeatChange()
 
     let pattern_matches_entire_deleted_text = matchstr(@", @/) ==# @"
     let pattern_does_not_match_entire_deleted_text = !pattern_matches_entire_deleted_text
     if pattern_does_not_match_entire_deleted_text
-        let search_string = s:String2Pattern(@")
+        let search_string = String2Pattern(@")
         let @/ = search_string
     endif
 
     call feedkeys("cgn\<C-r>.\<Esc>")
 
     function! PrintMatchInfoAndDeleteAugroup()
-        call feedkeys(":set hls\<CR>")
         " set hls
-        let match_positions = GetMatchByteOffsets()
-        let match_info_string = MatchByteOffsetsToString(match_positions)
-        let feedkeys_command = printf(":echo '%s'\<CR>", match_info_string)
+        call PostRepeat()
         au! PostChange 
     endfunction
     augroup PostChange
@@ -381,8 +433,6 @@ function! RestoreMappings(mappings) abort
 endfu
 
 
-let g:A = ""
-let g:B = ""
 " Bug: ma~da | ma~da
 function! CheckIfCursorMoveWasCausedByDotOperator()
     " After a dot operator takes place, we end up in normal mode. The impetus
@@ -393,8 +443,14 @@ function! CheckIfCursorMoveWasCausedByDotOperator()
     if mode() == "v"
         return v:false
     endif
+    " previous attempts {{{
     " let condition_1 = @/ =~ @"
-    let condition_1 = @/ =~ s:String2Pattern(@")
+    " let condition_1 = @/ =~ String2Pattern(@")
+    " let condition_1 = match(@", @/) > -1
+    " }}}
+    let pattern_matches_entire_deleted_text = matchstr(@", @/) ==# @"
+    let condition_1 = pattern_matches_entire_deleted_text
+    " echoerr "condition_1: " . string(condition_1)
 
     let view_save = winsaveview()
     let visual_start_save     = getpos("'<")
@@ -419,7 +475,7 @@ function! CheckIfCursorMoveWasCausedByDotOperator()
 
 endfunction
 
-function! s:RemovedAllOverrides()
+function! s:RemoveAllOverrides()
     " Ignores the first CursorMoved fired immediately after leaving InsertMode
     if g:override_pos == getpos(".")
         return
@@ -434,7 +490,7 @@ function! s:RemovedAllOverrides()
     call RestoreMappings(g:mappings)
 endfunction
 
-" RepeatChange chaining, n override edge case {{{
+" [knowledge] RepeatChange chaining, n override edge case {{{
 " When we enter normal after making a change, `n` is overriden. The new
 " behaviour updated the `@/` register to `@"` and then searches for the next
 " match of `@"`. Because it searches for the next match, the CursorMoved gets
@@ -451,16 +507,22 @@ endfunction
 " }}}
 
 function! s:NextPatternOverride()
-    let search_string = s:String2Pattern(@")
-    let @/ = search_string
+    let pattern_matches_entire_deleted_text = matchstr(@", @/) ==# @"
+    let pattern_does_not_match_entire_deleted_text = !pattern_matches_entire_deleted_text
+    if pattern_does_not_match_entire_deleted_text
+        let search_string = String2Pattern(@")
+        let @/ = search_string
+    endif
+    " let search_string = String2Pattern(@")
+    " let @/ = search_string
     call feedkeys("n", "n")
 endfunction
 function! s:ToggleWholeKeywordOverride()
     " Duplicate 1, Original: RepeatChange
-    let pattern_matches_entire_deleted_text = matchstr(@", @/) == @"
+    let pattern_matches_entire_deleted_text = matchstr(@", @/) ==# @"
     let pattern_does_not_match_entire_deleted_text = !pattern_matches_entire_deleted_text
     if pattern_does_not_match_entire_deleted_text
-        let search_string = s:String2Pattern(@")
+        let search_string = String2Pattern(@")
         let @/ = search_string
     endif
     set hls
@@ -478,7 +540,7 @@ function! s:InitializeDotOverride()
     nnoremap <silent> n :call <SID>NextPatternOverride()<CR>
     nnoremap <silent> gs :call <SID>ToggleWholeKeywordOverride()<CR>
 
-    au DotOverride CursorMoved * call s:RemovedAllOverrides()
+    au DotOverride CursorMoved * call s:RemoveAllOverrides()
 endfunction
 function! s:YankPost()
     if v:event["operator"] ==# "y" || v:event["operator"] ==# "d"
@@ -546,11 +608,4 @@ nnoremap <silent> gs :call <SID>ToggleWholeKeyword()<CR>
 cabbrev vv v/<C-r>=@/<CR>
 cabbrev gg g/<C-r>=@/<CR>
 cabbrev ss s/<C-r>=@/<CR>
-
-" Search in selection if in VISUAL LINE mode
-" vnoremap <expr> / mode() !=# 'V' ? '/' : ':<c-u>call feedkeys(''/\%>'' . (line("''<") - 1) . ''l\%<'' . (line("''>") + 1) . "l")<CR>'
-
-
-
-
-" unique_3
+cabbrev tt Tab/<C-r>=@/<CR>
