@@ -1,3 +1,9 @@
 1.    All registers, including @" and @', should be unchanged after the plugin has been called
 2.    All marks, including '< and '>, should be unchanged after the plugin has been called
 3.    If the plugin is in an 'ftplugin', mappings should be local [:h map-local]
+4.    Preserve position of cursor (column AND row) and try to maintain this for undo
+
+Visual Override Specific:
+1. Is the command still repeatable if it was initially?
+2. Is the cursor position the same as the pre-override behaviour?
+

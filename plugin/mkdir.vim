@@ -13,4 +13,7 @@ function s:Mkdir()
   endif
 endfunction
 
-autocmd BufWritePre * call s:Mkdir()
+augroup MakeDir
+    au!
+    au BufWritePre * call s:Mkdir()
+augroup END

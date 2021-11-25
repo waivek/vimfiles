@@ -1,10 +1,23 @@
-
 set history=10000
 set viminfo='10000,<50,s10,h,rA:,rB:,%,f1,n~/vimfiles/_viminfo
 filetype indent plugin on | syntax on 
+set nocompatible
+
 
 setlocal encoding=utf8
+
+let this_blue_color = "Hello, World"
+let this_green_color = "Hello, World"
+
+
 let &pythonthreedll='C:\Program Files (x86)\Python\Python37-32\python37.dll'
+let s:vim_path = ""
+if has("win32")
+    let s:vim_path = glob("~/vimfiles")
+elseif has("unix")
+    let s:vim_path = glob("~/vim")
+endif
+
 if has('python3')
     silent! python3 1
 endif
@@ -14,6 +27,9 @@ endif
 
 set backspace=indent,eol,start " Fixes backspace inside insert mode
 set laststatus=2
+if len(glob(s:vim_path."/colors/codedark.vim")) > 0
+    colorscheme codedark
+endif
 
 " Search
 set ignorecase smartcase  
@@ -26,17 +42,59 @@ cno <expr>  <s-tab>  getcmdtype() =~ '[/?]' ? (getcmdtype() == '/' ? '<c-t>' : '
 set wildcharm=<C-z>
 set wildmenu
 set wildmode=full
+set belloff=all
+
+set smartindent   " Automatically indents when and where required
+set tabstop=4     " Sets tab width to 4
+set shiftwidth=4  " Allows you to use < and > keys in -- VISUAL --
+set softtabstop=4 " Makes vim see four spaces as a <TAB>
+set expandtab     " Inserts 4 spaces when <TAB> is pressed
+
+set guioptions=M
+au GUIEnter * simalt ~x " Maximized
 
 " Remaps {{{
-noremap j h
-noremap k gj
-noremap l gk
-noremap ; l
+
+" NONE   Normal, Visual, Select, Operator-pending
+" n      Normal
+" v      Visual and Select (YOU ALMOST NEVER WANT THIS)
+" s      Select
+" x      Visual            (YOU ALMOST ALWAYS WANT THIS)
+" o      Operator-pending
+
+" Horizontal Movement  
+" (b w) → (^ $)
+ noremap b ^
+ noremap w $
+xnoremap w g_
+
+" (j ;) → (b w)
+ noremap j b
+onoremap J B
+ noremap ; w
+onoremap : W
+
+" (C-j C-;) → (h l)
+xnoremap <C-j> h
+xnoremap <C-;> l
+
+" Vertical Movement
+ noremap <silent> l gk
+ noremap <silent> k gj
+onoremap l k
+onoremap k j
+
+nnoremap , ;
+xnoremap , ;
+
 inoremap jk 
 inoremap Jk 
 inoremap jK 
-onoremap k j
-onoremap l k
+inoremap JK 
+inoremap J: 
+inoremap j: 
+
+cnoremap jk <C-f>
 
 cnoremap <C-l> <Up>
 cnoremap <C-k> <Down>
@@ -65,4 +123,11 @@ xmap . :norm! .<CR>
 
 nnoremap <silent> ch :cd %:p:h<CR>
 nnoremap <silent> c. :cd ..<CR>
+
+nnoremap <C-k> <C-f>
+nnoremap <C-l> <C-b>
 " }}}
+
+
+
+nnoremap <Space>l <C-^>

@@ -1,6 +1,7 @@
 
 " Modified version of cool.vim to work with search.vim
 " vim-cool - Disable hlsearch when you are done searching.
+
 " Maintainer:	romainl <romainlafourcade@gmail.com>
 " Version:	0.0.2
 " License:	MIT License
@@ -29,26 +30,62 @@ if exists('##OptionSet')
 endif
 
 
+function! s:PrintMatchInfo()
+    " Check if cache needs to be refershed.
+    if !exists("b:changedtick_save")
+        let b:changedtick_save = -1
+    endif
+    if !exists("b:search_reg_save")
+        let b:search_reg_save = @/
+    endif
+    if !exists("b:cool_match_positions")
+        let b:cool_match_positions = []
+    endif
+    if !exists("b:call_count")
+        let b:call_count = 0
+    endif
+    if b:changedtick_save != b:changedtick || b:cool_match_positions == [] || b:search_reg_save !=# @/
+        let b:cool_match_positions = dotty#GetMatchByteOffsets()
+        let b:changedtick_save = b:changedtick
+        let cache_string = "Cache Refreshed"
+        let b:search_reg_save = @/
+    else
+        let cache_string = "Cache Used"
+    endif
+    let b:call_count = b:call_count + 1
+
+    
+    let cursor_position = line2byte(".") + col(".")-1
+    let match_number = index(b:cool_match_positions, cursor_position) + 1
+    let total_matches = len(b:cool_match_positions)
+    let info_string = printf("%d of %d", match_number, total_matches)
+    let match_macro = Truncate(strtrans(@/),v:echospace-20)
+    echon '/' . match_macro . " "
+    echohl String 
+    " echon info_string." (".cache_string."), Call Count: ".b:call_count
+    echon info_string
+    echohl Normal
+endfunction
+
 function! s:StartHL()
+    " return
     if !v:hlsearch || mode() isnot 'n' 
         return
+    endif
+
+    if g:repeating
+        " return
     endif
 
     " Store the position of the cursor
     let [pos, rpos] = [winsaveview(), getpos('.')]
     " After the cursor has moved, moved exactly one byte behind
-
-    " TODO: Check out '^
-    let on_last_change = getpos("'.") == getpos(".")
-    
     silent! exe "keepjumps go".(line2byte('.')+col('.')-(v:searchforward ? 2 : 0))
     try
         " Go to the next match
         silent keepjumps norm! n
-        if !on_last_change
-            if getpos('.') != rpos
-                throw 0
-            endif
+        if getpos('.') != rpos
+            throw 0
         endif
     catch /^\%(0$\|Vim\%(\w\|:Interrupt$\)\@!\)/
         call <SID>StopHL()
@@ -57,37 +94,43 @@ function! s:StartHL()
         call winrestview(pos)
     endtry
 
+    " call PostCool()
+    call s:PrintMatchInfo()
+    return
 
-    if !get(g:,'CoolTotalMatches') || !exists('*reltimestr')
-        return
-    endif
-    exe "silent! norm! :let g:cool_char=nr2char(screenchar(screenrow(),1))\<cr>"
-    let cool_char = remove(g:,'cool_char')
-    if cool_char !~ '[/?]'
-        return
-    endif
+    " Ported {{{
 
-    let [f, ws, now, noOf] = [0, &wrapscan, reltime(), [0,0]]
-    set nowrapscan
-    try
-        while f < 2
-            if reltimestr(reltime(now))[:-6] =~ '[1-9]'
-                " time >= 100ms
-                return
-            endif
-            let noOf[v:searchforward ? f : !f] += 1
-            try
-                silent exe "keepjumps norm! ".(f ? 'n' : 'N')
-            catch /^Vim[^)]\+):E38[45]\D/
-                call setpos('.',rpos)
-                let f += 1
-            endtry
-        endwhile
-    finally
-        call winrestview(pos)
-        let &wrapscan = ws
-    endtry
-    redraw|echo cool_char.@/ 'match' noOf[0] 'of' noOf[0] + noOf[1] - 1
+    " if !get(g:,'CoolTotalMatches') || !exists('*reltimestr')
+    "     return
+    " endif
+    " exe "silent! norm! :let g:cool_char=nr2char(screenchar(screenrow(),1))\<cr>"
+    " let cool_char = remove(g:,'cool_char')
+    " if cool_char !~ '[/?]'
+    "     return
+    " endif
+    " let [f, ws, now, noOf] = [0, &wrapscan, reltime(), [0,0]]
+    " set nowrapscan
+    " try
+    "     while f < 2
+    "         if reltimestr(reltime(now))[:-6] =~ '[1-9]'
+    "             " time >= 100ms
+    "             return
+    "         endif
+    "         let noOf[v:searchforward ? f : !f] += 1
+    "         try
+    "             silent exe "keepjumps norm! ".(f ? 'n' : 'N')
+    "         catch /^Vim[^)]\+):E38[45]\D/
+    "             call setpos('.',rpos)
+    "             let f += 1
+    "         endtry
+    "     endwhile
+    " finally
+    "     call winrestview(pos)
+    "     let &wrapscan = ws
+    " endtry
+    " redraw|echo cool_char.@/ 'match' noOf[0] 'of' noOf[0] + noOf[1] - 1
+
+    " }}}
 endfunction
 
 function! s:StopHL()
@@ -108,11 +151,17 @@ if !exists('*execute')
     endfunction
 endif
 
+function! StopCool()
+    " call feedkeys(":\<C-u>nohlsearch\<cr>")
+endfunction
 function! s:PlayItCool(old, new)
     if a:old == 0 && a:new == 1
         " nohls --> hls
         "   set up coolness
-        noremap <silent> <Plug>(StopHL) :<C-U>nohlsearch<cr>
+
+        " noremap <silent> <Plug>(StopHL) :<C-U>nohlsearch<cr>
+        noremap <silent> <Plug>(StopHL) :<C-U>nohlsearch<cr>:echo ""<cr>
+        " noremap <silent> <Plug>(StopHL) :call StopCool()<cr>
         if !exists('*execute')
             noremap! <expr> <Plug>(StopHL) <SID>AuNohlsearch()
         else

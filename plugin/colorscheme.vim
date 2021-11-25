@@ -30,9 +30,15 @@ function! s:ClearSelectedGroups()
     hi clear Operator
 endfunction
 function! s:Extend(c_name)
-    if g:colors_name ==# "codedark"
+    if a:c_name ==# "apprentice"
+        if has("win32")
+            so ~/vimfiles/colors/apprentice_extended.vim
+        else
+            so ~/.vim/colors/apprentice_extended.vim
+        endif
+    elseif a:c_name ==# "codedark"
         hi IncSearch guibg=#682900
-    elseif g:colors_name ==# 'strawberry-light'
+    elseif a:c_name ==# 'strawberry-light'
         hi Visual guifg=white guibg=DarkRed
         hi StatusLine guifg=#fff0f7 guibg=#d46a84
         hi Normal guifg=#75616b guibg=#fff0f7
@@ -40,17 +46,17 @@ function! s:Extend(c_name)
         hi Search guifg=#ffffff guibg=#1B9E9E gui=none
         set guicursor+=v:block-vCursor
         hi vCursor gui=reverse
-    elseif g:colors_name ==# 'plain'
+    elseif a:c_name ==# 'plain'
         hi WildMenu guibg=#FB007A guifg=white
         set background=light
-    elseif g:colors_name ==# 'onedark'
+    elseif a:c_name ==# 'onedark'
         let onedark_colorD = #{ 
                     \ red         : "#E06C75", dark_red    : "#BE5046", green        : "#98C379", yellow         : "#E5C07B",
                     \ dark_yellow : "#D19A66", blue        : "#61AFEF", purple       : "#C678DD", cyan           : "#56B6C2",
                     \ white       : "#ABB2BF", black       : "#282C34", comment_grey : "#5C6370", gutter_fg_grey : "#4B5263",
                     \ cursor_grey : "#2C323C", visual_grey : "#3E4452", menu_grey    : "#3E4452", special_grey   : "#3B4048"
                     \}
-        call s:ClearSelectedGroups()
+        " call s:ClearSelectedGroups()
         hi Todo gui=reverse guifg=NONE guibg=NONE
         hi Function guifg=#E06C75 
         hi String guifg=#E5C07B 
@@ -67,5 +73,3 @@ augroup ExtendColorScheme
 augroup END
 
 hi! link vimFunction Function
-
-

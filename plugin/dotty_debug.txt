@@ -1,3 +1,95 @@
+Count 1: remote! C() 
+Count 2: remote! C() 
+Count 3: remote! C() 
+Count 4: remote! C() 
+Count 5: remote! C() 
+Count 6: remote! C() 
+Count 7: remote! C() 
+Count 8: remote! C() 
+Count 9: remote! C() 
+
+" quiz! C() | dog! C() | dog! C() | dog! C() | dog! C() | dog! C()
+" cat! C() | cat! C() | cat! C() | cat! C() | cat! C() | cat! C()
+" bird! C() | bird! C() | bird! C() | bird! C() | bird! C() | bird! C()
+
+" uniq
+
+
+" f A
+" f B
+"
+" f A
+" f B
+"
+" f A
+" f B
+
+red
+blue
+red
+blue
+red
+blue
+
+
+-------------------------------
+
+Multiline Test Cases:
+
+" keyword! A() | keyword! A() | keyword! A() | keyword! A() | keyword! A() | keyword! A() | keyword! A() | keyword! A() | keyword! A()
+" keyword! B() | keyword! B() | keyword! B() | keyword! B() | keyword! B() | keyword! B() | keyword! B() | keyword! B() | keyword! B()
+" keyword! C() | keyword! C() | keyword! C() | keyword! C() | keyword! C() | keyword! C() | keyword! C() | keyword! C() | keyword! C()
+"              |              |              |              |              |              |              |              |             
+" keyword! A() | keyword! A() | keyword! A() | keyword! A() | keyword! A() | keyword! A() | keyword! A() | keyword! A() | keyword! A()
+" keyword! B() | keyword! B() | keyword! B() | keyword! B() | keyword! B() | keyword! B() | keyword! B() | keyword! B() | keyword! B()
+" keyword! C() | keyword! C() | keyword! C() | keyword! C() | keyword! C() | keyword! C() | keyword! C() | keyword! C() | keyword! C()
+
+" keyword! A() | keyword! A() | keyword! A() | keyword! A() | keyword! A() | keyword! A() | keyword! A() | keyword! A() | keyword! A()
+" keyword! B() | keyword! B() | keyword! B() | keyword! B() | keyword! B() | keyword! B() | keyword! B() | keyword! B() | keyword! B()
+" keyword! C() | keyword! C() | keyword! C() | keyword! C() | keyword! C() | keyword! C() | keyword! C() | keyword! C() | keyword! C()
+
+" keyword! A() | keyword! A() | keyword! A() | keyword! A() | keyword! A() | keyword! A() | keyword! A() | keyword! A() | keyword! A()
+" keyword! B() | keyword! B() | keyword! B() | keyword! B() | keyword! B() | keyword! B() | keyword! B() | keyword! B() | keyword! B()
+" keyword! C() | keyword! C() | keyword! C() | keyword! C() | keyword! C() | keyword! C() | keyword! C() | keyword! C() | keyword! C()
+
+" keyword! A() | keyword! A() | keyword! A() | keyword! A() | keyword! A() | keyword! A() | keyword! A() | keyword! A() | keyword! A()
+" keyword! B() | keyword! B() | keyword! B() | keyword! B() | keyword! B() | keyword! B() | keyword! B() | keyword! B() | keyword! B()
+" keyword! C() | keyword! C() | keyword! C() | keyword! C() | keyword! C() | keyword! C() | keyword! C() | keyword! C() | keyword! C()
+
+" dog! C() | dog! C() | dog! C() | dog! C() | dog! C() | dog! C()
+" cat! C() | cat! C() | cat! C() | cat! C() | cat! C() | cat! C()
+" bird! C() | bird! C() | bird! C() | bird! C() | bird! C() | bird! C()
+
+
+
+" f A
+" f B
+"
+" f A
+" f B
+"
+" f A
+" f B
+
+
+-------------------------------
+
+[problem] : clear @/
+          : change “B” to “word”
+          : press ‘gs’ to turn /B to /\<B\>
+          : press ‘n’
+          : instead of going to line 3, it goes to line 2
+
+[solution] we weren’t using `pattern_matches_entire_deleted_text` like we did
+           in RepeatChange(), copy pasting those lines fixed the issue
+
+
+    1 | let g:B = ""
+    2 | function! GetBiggestCarb()
+    3 |     let g:B = max
+    4 |     GetBiggestCarb()
+    5 |     let g:B = max
+    6 | endfunction
 
 -------------------------------
 

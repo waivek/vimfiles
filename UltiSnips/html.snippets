@@ -1,10 +1,75 @@
+snippet !"([^"]+)"! "Double Quote to Curly Quote" r
+“`!p snip.rv=match.group(1)`”
+endsnippet
+
+snippet !“([^”]+)”! "Curly Quote to Double Quote" r
+"`!p snip.rv=match.group(1)`"
+endsnippet
+
+snippet p
+<p>$1</p>
+endsnippet
+# snippet p
+# <p>
+# 	$1
+# </p>
+# endsnippet
+snippet li
+<li>$1</li>
+endsnippet
+snippet span
+<span>$1</span>
+endsnippet
+snippet b
+<b>$1</b>
+endsnippet
+snippet em
+<em>$1</em>
+endsnippet
+snippet `
+<code>$1</code>
+endsnippet
+
+snippet style
+<style>
+	$1
+</style>
+endsnippet
+snippet script
+<script>
+	function ${1:init} () {
+		$0
+	}
+	$1();
+</script>
+endsnippet
+snippet div
+<div>
+	$1
+</div>
+endsnippet
+snippet ol
+<ol>
+	li$1
+</ol>
+endsnippet
+snippet ul
+<ul>
+	li$1
+</ul>
+endsnippet
+snippet pre "Pre" m
+<pre>
+$1</pre>
+endsnippet
+
 snippet tw
 <li><a href="https://www.twitch.tv/${1:pokimane}/videos">$1</a></li>
 <li><a href="https://www.twitch.tv/$1/videos?filter=clips&amp;range=24hr">$1 24 hours</a></li>
 endsnippet
 
 snippet media
-@media all and (${1:min}-width: ${2:800}px) { ${3:html} { $0 } }
+@media all and (${1:max}-width: ${2:600}px) { ${3:html} { $0 } }
 endsnippet
 
 snippet link
@@ -37,10 +102,286 @@ for (var i = 0; i < ${1:item}s.length; i++) {
 }
 endsnippet
 
-snippet "http\S*" "Link" r
+# snippet "([^">])(http\S*)" "Link" r
+# `!p snip.rv=match.group(1)`<a href="`!p snip.rv=match.group(2)`">${1:`!p snip.rv=match.group(2)`}</a>
+# endsnippet
+
+# <a href="`!p snip.rv=match.group(0)`">${1:`!p snip.rv=match.group(0)`}</a>
+global !p
+def expansion_checker(snip):
+	line = snip.buffer[snip.line]
+	cursor_index = snip.column # zero-indexed
+	match_start = line.rfind("http", 0, cursor_index)
+	match_end = cursor_index
+	if match_start == 0:
+		# vim.command("let g:r='first-true'")
+		return True
+	prev_char = line[match_start-1]
+	prev_char_index = match_start-1
+	if prev_char == '"' or prev_char == "'":
+		# vim.command("let g:r='first-false'")
+		return False
+	if prev_char == ">":
+		tag_start = line.rfind("<", 0, prev_char_index)
+		tag_char = line[tag_start+1]
+		if tag_char == "a":
+			# vim.command("let g:r='second-false'")
+			return False # prevent recusive expansion
+		else:
+			# vim.command(r"let g:c={a}".format(a={"tag_char":tag_char, "tag_start":tag_start}))
+			# vim.command("let g:r='second-true'")
+			return True # allow expansion on <p>https://google.com</p>
+	# vim.command("let g:r='default true'")
+	return True
+endglobal
+# Test Cases:
+#
+#	  1. <a href="https://sunflowers.com">https://sunflowers.com</a> (n)
+#	  2. "https://youtu.be/PMotykw0SIk?t=745" (n)
+#	  3. <p>https://youtu.be/PMotykw0SIk?t=745 (y)
+#	  4. https://youtu.be/PMotykw0SIk?t=745 (y)
+#	  5. https://news.com https://correct.com https://webstorm.com (y)
+# 
+context "expansion_checker(snip)"
+snippet "https[^ >]*" "Link tag" re
+<a href="`!p snip.rv=match.group(0)`">`!p snip.rv=match.group(0)`$1</a>$0
+endsnippet
+
+snippet <a "Anchor" i
+<a href="${1}">${2:$1}</a>
+endsnippet
+
+snippet "\w+\.html" "Relative HTML Link" r
 <a href="`!p snip.rv=match.group(0)`">`!p snip.rv=match.group(0)`</a>
 endsnippet
 
 snippet "`(\w+)`" "Initialize" r
 <code>`!p snip.rv=match.group(1)`</code>
+endsnippet
+
+snippet website_item
+<dt><a href="`!v @+`">$2</a></dt>
+<dd>
+	$0
+</dd>
+endsnippet
+
+snippet hn_thread
+<div class="thread">
+	<h2>$1</h2>
+	<div class="link">
+		<a href="`!v @+`">`!v @+`</a>
+	</div>
+	$2
+</div>
+endsnippet
+
+snippet hn_comment ""
+<div class="comment">
+`!p 
+import pyperclip
+import vim
+indent = int(vim.eval("indent('.')")) + 4
+clipboard = pyperclip.paste()
+clipboard = clipboard.replace(">", "&gt;")
+lines = clipboard.replace("\r", "\n").split("\n")
+paragraphs = [ "{spaces}<p>{line}</p>".format(spaces=" " * indent, line=line) for line in lines if line.strip() != "" ]
+paragraphs[0] = "    " + paragraphs[0].lstrip()
+snip.rv = "\n".join(paragraphs)
+`
+</div>
+endsnippet
+
+snippet css_recommendation
+`!p
+def link_description(link):
+	if not link.startswith("http") and "." in link:
+		root, extension = link.rsplit(".", 1)
+		return extension
+	if "youtu" in link:
+		return "youtube"
+	if "twitter" in link:
+		return "twitter"
+	return "link"
+`
+<div class="recommendation">
+	<p><a href="${1:resource_link}">${2:one-line description}</a> (`!p snip.rv=link_description(t[1])`)<span class="expando closed"></span></p>
+	<div class="expansion expansion_closed">
+		<a class="source_link" href="$3">$3</a>
+		<!-- copy paste comment here -->
+	</div>
+</div>
+endsnippet
+
+snippet snl_item
+`!p 
+from furl import furl
+def extract_id_from_youtube_url(url):
+	if "youtu.be" in url:
+		url = url.replace("?", "&")
+		url = url.replace("youtu.be/", "www.youtube.com/watch?v=")
+	normalized_url = url
+	f = furl(normalized_url) 
+	video_id = f.args["v"]
+	return video_id
+import pyperclip
+import vim
+clipboard = pyperclip.paste()
+url = clipboard
+video_id = extract_id_from_youtube_url(url)
+indent = int(vim.eval("indent('.')"))
+indent_string = " " * indent
+`<a href="https://www.youtube.com/watch?v=`!p snip.rv=video_id`">
+	<img src="https://i.ytimg.com/vi_webp/`!p snip.rv=video_id`/maxresdefault.webp" alt="Thumbnail" />
+</a>
+<div class="text">
+	<h6>$1</h6>
+	<p>$2</p>
+	<div class="comments">
+		<p>$3</p>$0
+	</div>
+</div>
+endsnippet
+
+snippet article_item
+`!p
+import pyperclip
+import re
+from datetime import datetime
+clipboard = pyperclip.paste()
+url = clipboard
+domain = re.sub(r"https?://(www\.)?", "", url)
+domain = re.sub(r"/.*", "", domain)
+date = "2010"
+date = datetime.now().strftime("%Y-%m-%d")
+`<div><b>`!p snip.rv=date`</b> <span><a href="`!p snip.rv=url`">$1</a> (`!p snip.rv=domain`)</span></div>
+endsnippet
+
+snippet todo_item
+
+<!-- ======================================================================= -->
+
+<h3>$0</h3>
+<p>
+	
+</p>
+endsnippet
+
+snippet a_anim
+${1}a, $1a:hover { 
+	text-decoration: none; 
+
+	transition-property: box-shadow,color;
+	transition-duration: 0.1s;
+	transition-timing-function: cubic-bezier(0.46, 0.03, 0.52, 0.96); /* In-Out · Quadratic */
+}
+$1a       { box-shadow: inset 0px   0px 0px 0px black; color: black; border-bottom: dotted 1px black; }
+$1a:hover { box-shadow: inset 0px -18px 0px 0px black; color: white; border-bottom: dotted 0px black; }
+endsnippet
+
+snippet span;
+document.createElement("span");
+endsnippet
+
+snippet div;
+document.createElement("div");
+endsnippet
+
+snippet "(--[a-zA-Z0-9_-]+);" "raw css variable (rhs)" ri
+var(`!p snip.rv=match.group(1)`);
+endsnippet
+
+snippet jquery
+<script src="lib/jquery/jquery-3.5.1.js"></script>
+<script>
+	function ${1:init}() {
+		$0
+	}
+	$1();
+</script>
+endsnippet
+
+snippet jquerycdn
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+	function ${1:init}() {
+		$0
+	}
+	$1();
+</script>
+endsnippet
+
+snippet list
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<title>$1</title>
+		<link rel="stylesheet" type="text/css" href="css/list.css" />
+	</head>
+	<body>
+		<div class="grid">
+			<!--navigation {{{ -->
+			<nav>
+				<h4 class="heading">more lists.</h4>
+				<ul>
+					<!-- generated by update_lists.py -->
+						<li><a href="academia.html">academia.html</a></li>
+					<!-- generated by update_lists.py -->
+					</ul>
+			</nav>
+			<!-- }}} -->
+			<main>
+				<h4 class="heading">${1:`!p snip.rv=snip.fn`}</h4>
+				<p>$0</p>
+			</main>
+		</div>
+	</body>
+</html>
+endsnippet
+
+snippet template
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<title>$1</title>
+	<style>
+		html { }
+		h1, h2, h3, h4, h5, h6, body, p, hr, pre, header { margin: 0; padding: 0; }
+		a { text-decoration: none; }
+		a, a:visited { color: black; border-bottom: dotted 1px black; box-shadow: inset 0   0   0 0 black; }
+		a:hover      { color: white; border-bottom: dotted 1px white; box-shadow: inset 0 -20px 0 0 black; }
+		a, a:hover { transition-property: box-shadow,color,border-bottom-color; transition-duration: 0.1s; transition-timing-function: cubic-bezier(0.46, 0.03, 0.52, 0.96) /* In-Out · Quadratic */; }
+		a:hover    { transition-delay: 0.08s; } /* a -> a:hover */
+		a          { transition-delay: 0s;    } /* a:hover -> a */
+		main { padding: 8px 16px; }
+	</style>
+	</head>
+	<body>
+		<main>
+			$0
+		</main>
+	</body>
+</html>
+endsnippet
+
+snippet today
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>$0</title>
+	</head>
+	<body><pre>
+
+	</pre></body>
+</html>
+endsnippet
+snippet less
+<style type="text/less">
+	$0
+</style>
+<script src="https://cdn.jsdelivr.net/npm/less@3.13" ></script>
 endsnippet

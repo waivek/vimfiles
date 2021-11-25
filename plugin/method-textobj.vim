@@ -1,5 +1,3 @@
-" BUG: dsm doesn’t work for the following line:
-"     len(matchstr(@", @/)) len(@")
 " TODO:
 " 1 - Study error handling and failure method call stack
 " 2 - Find next and previous method call
@@ -65,12 +63,12 @@ function! s:ParseLine(line)
         let c = current_line[index]
         
         if !on_valid_fname
-            if c =~ '\w'
+            if c =~ '\w\|[-]'
                 let on_valid_fname = v:true
                 let fname_begin_index = index
             endif
         elseif on_valid_fname
-            if c !~ '\w'
+            if c !~ '\w\|[-]'
                 let on_valid_fname = v:false
                 let fname_end_index = index - 1
             endif
@@ -109,7 +107,7 @@ endfunction
 " Test Cases
 " Examples:
 " Fine:
-"*long.name.function(horizontal)
+"*long.name.functio(horizontal)
 " g()
 " vanilla_func(one_arg)
 " 2 * 3 * long_name_number_2 (nice_stuff)
@@ -271,18 +269,27 @@ onoremap  <silent> iM :<c-u>call <sid>VisualSelect(<sid>CurrentFnameBigI())<CR>
 
 nmap csm cim
 
-au BufRead * silent! nunmap <buffer> ]m
-au BufRead * silent! vunmap <buffer> ]m
+augroup MethodTextObj
+    au!
+    au BufRead * silent! nunmap <buffer> ]m
+    au BufRead * silent! vunmap <buffer> ]m
+    au BufRead * silent! nunmap <buffer> [m
+    au BufRead * silent! vunmap <buffer> [m
+augroup END
 nnoremap <silent> ]m :call search('[a-zA-Z.0-9_]\+\s*\ze(')<CR>
 vnoremap <silent> ]m :call search('[a-zA-Z.0-9_]\+\s*\ze(')<CR>
 
-au BufRead * silent! nunmap <buffer> [m
-au BufRead * silent! vunmap <buffer> [m
 nnoremap <silent> [m :call search('[a-zA-Z.0-9_]\+\s*\ze(', 'b')<CR>
 vnoremap <silent> [m :call search('[a-zA-Z.0-9_]\+\s*\ze(', 'b')<CR>
 
 " console.log("hello");
+" print("Hey")
+" print("Hey")
+" print("Hey")
+" print("Hey")
+" print("Hey")
 function! s:DeleteSurroundingMethod()
+    call repeat#set("\<Plug>DeleteSurroundingMethod")
     let pos_list = s:CurrentFnameBigA()
     let [_, _, end_pos] = pos_list
     let [_, _, around_finish_col, _] = end_pos
@@ -297,5 +304,17 @@ function! s:DeleteSurroundingMethod()
     let @a = reg_save
 endfunction
 
-nnoremap  <silent> dsm :<c-u>call <sid>DeleteSurroundingMethod()<CR>
+nmap  <silent> <Plug>DeleteSurroundingMethod :<c-u>call <sid>DeleteSurroundingMethod()<CR>
+nmap  <silent> dsm <Plug>DeleteSurroundingMethod
 " }}}
+
+function! Log(m, poslist)
+    let mode = a:m
+    call s:VisualSelect(s:CurrentFnameBigA())
+    let lines = [ mode ]
+    let log_filepath = expand('~\vimfiles\plugin\method_usecases.txt')
+    call writefile(lines, log_filepath, "a")
+endfunction
+
+
+nmap <Space>m ysiWf

@@ -15,10 +15,11 @@ endif
 
 " Dollar sign is permitted anywhere in an identifier
 if (v:version > 704 || v:version == 704 && has('patch1142')) && main_syntax == 'javascript'
-  syntax iskeyword @,48-57,_,192-255,$
+  syntax iskeyword @,48-57,_,192-255,$ 
 else
   setlocal iskeyword+=$
 endif
+setlocal isk-=$
 
 syntax sync fromstart
 " TODO: Figure out what type of casing I need

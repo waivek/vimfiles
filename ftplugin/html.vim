@@ -1,5 +1,20 @@
+
+function! TidySelection()
+    '<,'>!tidy  -quiet -indent --indent-spaces 4 --show-body-only 1
+    normal! V`]=
+endfunction
+function! TidyFunction(...)
+    '[,']!tidy  -quiet -indent --indent-spaces 4 --show-body-only 1
+    normal! V`]=
+endfunction
+
+let &l:formatprg='tidy -quiet -indent --indent-spaces 4 --show-errors 0 --wrap-attributes no --wrap 0 --tidy-mark no'
+let &l:formatprg=''
+" xnoremap <buffer> gq :<c-u>call TidySelection()<CR>
+" nnoremap <buffer> gq :set opfunc=TidyFunction<CR>g@
+nnoremap <buffer> gqG :%!tidy -quiet -indent --indent-spaces 4 --show-errors 0 --wrap-attributes no --wrap 0 --tidy-mark no<CR>
+
 set encoding=utf8
-let &l:formatprg='tidy -indent --indent-spaces 4 -quiet --show-errors 0 --wrap-attributes no --wrap 0'
 source ~/vimfiles/ftplugin/css.vim
 
 
@@ -130,6 +145,8 @@ function! VisualSelectAroundAttribute()
     let on_last_attribute = character_under_cursor ==# ">"
     let @" = quote_register
     call setpos(".", pos_save)
+    " \w = [0-9A-Za-z_]
+    " Tailwind needs hyphen [0-9A-Za-z_-]
 
     " Setting the pattern to ensure surrounding spaces are included in the
     " appropriate context
@@ -146,4 +163,306 @@ endfunction
 
 xnoremap  <silent> aa :<c-u>call VisualSelectAroundAttribute()<CR>
 onoremap  <silent> aa :<c-u>call VisualSelectAroundAttribute()<CR>
+
+vnoremap <Plug>LeftBracket <
+vmap <silent> <expr> < mode() ==# "v" ?  '<Plug>VSurround<'  :  '<Plug>LeftBracket'
+
+function! Isolate(pattern) range
+    if len(a:pattern) == 0
+        let pattern = @/
+    else
+        let pattern = substitute(a:pattern, "^/", "", "")
+        let pattern = substitute(pattern, "/$", "", "")
+    endif
+    let range_passed = a:firstline != a:lastline
+    let range_passed = v:false " Override because range is buggy
+    if range_passed
+        execute printf('%d,%ds/' . pattern . '/\0/g', a:firstline, a:lastline)
+        execute printf('%d,%dv/' . pattern . '/d', a:firstline, a:lastline)
+        execute printf('silent! normal! %dGgu%dG', a:firstline, a:lastline)
+        execute printf('silent! %d,%dsort', a:firstline, a:lastline)
+        " execute printf('silent! %d,%d!uniq -c', a:firstline, a:lastline)
+        " execute printf('silent! %d,%dsort! n', a:firstline, a:lastline)
+    else
+        execute '%s/' . pattern . '/\0/g'
+        execute 'v/' . pattern . '/d'
+        silent! normal! ggguG
+        silent! %sort
+        silent! %!uniq -c 
+        silent! %sort! n
+    endif
+endfunction
+command! -range -nargs=? Isolate <line1>,<line2>call Isolate(<q-args>)
+
+" Doesn’t work
+function! ShowDoubleQuotes()
+    Isolate /[^=]"[^"=>]*"/
+endfunction
+command! ShowDoubleQuotes call ShowDoubleQuotes()
+
+function! NextDoubleQuotes()
+    call feedkeys('/[^=]\zs"[^"=>]*"')
+endfunction
+command! NextDoubleQuotes call NextDoubleQuotes()
+
+function! ShowSingleQuotes()
+    Isolate /\(\<\w\+\)'\(\w\w\?\>\)/
+endfunction
+command! ShowSingleQuotes call ShowSingleQuotes()
+
+function! ReplaceSingleQuoteWithCurlyQuote()
+    %s/\(\<\w\+\)'\(\w\w\?\>\)/\1’\2/g
+endfunction
+command! ReplaceSingleQuoteWithCurlyQuote call ReplaceSingleQuoteWithCurlyQuote()
+
+function! TemplateHTML()
+    0read template.html
+    call search("<title>")
+    let register = @"
+    let @" = expand("%")
+    norma! vitp
+    let @" = register
+    normal! gv
+endfunction
+command! TemplateHTML call TemplateHTML()
+
+function! ToggleEntities()
+    let quote_save = @"
+    silent! normal! gvy
+    let selection = @"
+    let @" = quote_save
+    let escaped_lt_count = count(selection, "&lt;")
+    let unescaped_lt_count = count(selection, "<")
+    let escaped_gt_count = count(selection, "&gt;")
+    let unescaped_gt_count = count(selection, ">")
+    let escaped_entity_count = escaped_lt_count + escaped_gt_count
+    let unescaped_entity_count = unescaped_lt_count + unescaped_gt_count
+
+    if unescaped_entity_count > escaped_entity_count
+        silent! '<,'>s/</\&lt;/g
+        silent! '<,'>s/>/\&gt;/g
+    elseif unescaped_entity_count < escaped_entity_count
+        silent! '<,'>s/&lt;/</g
+        silent! '<,'>s/&gt;/>/g
+    else
+    endif
+endfunction
+command! -range ToggleEntities call ToggleEntities()
+
+" TODO: Modfy syntax/html.vim, indent/html.vim to enable this via gq
+function! GetOpeningAndClosingTagLines()
+    let view_save = winsaveview()
+    let reg_save = @"
+
+    normal! $
+    let tag_found = search('<\zsli\|<\zsp\|<\zsdd', "bc")
+    if !tag_found
+        return [0, 0]
+    endif
+    normal! yiw
+    let tag = @"
+    let opening_tag_line = line(".")
+    call search('<\/'.tag.'>')
+    let closing_tag_line = line(".")
+
+    let @" = reg_save
+    call winrestview(view_save)
+    return [opening_tag_line, closing_tag_line]
+endfunction
+
+function! SplitParagraphOrListItem()
+    let start_indent = indent(".")
+
+
+    let current_line = line(".")
+    let [opening_tag_line, closing_tag_line] = GetOpeningAndClosingTagLines()
+    let on_same_line = opening_tag_line == closing_tag_line && current_line == opening_tag_line
+    let can_split = on_same_line
+
+
+    if !can_split
+        return
+    endif
+    s/>/>
+    s/.*\zs</<
+    normal! =at
+    normal! j
+    if indent(".") == start_indent
+        normal! >>
+    endif
+    normal! gqq
+
+    normal! $
+    call search('<\zsli\|<\zsp\|<\zsdd', "bc")
+endfunction
+function! JoinParagraphOrListItem()
+    let can_join = v:true
+    let current_line = line(".")
+    let [opening_tag_line, closing_tag_line] = GetOpeningAndClosingTagLines()
+    let not_on_same_line = opening_tag_line != closing_tag_line
+    let between_tags = current_line >= opening_tag_line && current_line <= closing_tag_line
+    let can_join = not_on_same_line && between_tags
+    " echo 'opening_tag_line: '.opening_tag_line.", closing_tag_line: ".closing_tag_line
+    " echo 'not_on_same_line: '.not_on_same_line.", between_tags: ".between_tags
+    if !can_join
+        return
+    endif
+
+    call search('<li\|<p\|<dd', "bc")
+    normal! vatJ
+    s/^\s*<\(li\|p\|dd\)[^>]*>\zs\s*//g
+    s/\s*\ze<\/\(li\|p\|dd\)>\s*$//g
+
+    normal! $
+    call search('<\zsli\|<\zsp\|<\zsdd', "bc")
+endfunction
+function! SplitjoinParagraphOrListItem()
+    let current_line = line(".")
+    let [opening_tag_line, closing_tag_line] = GetOpeningAndClosingTagLines()
+    if opening_tag_line == 0
+        return
+    endif
+    if current_line < opening_tag_line
+        return
+    endif
+    if opening_tag_line == closing_tag_line
+        call SplitParagraphOrListItem()
+    else
+        call JoinParagraphOrListItem()
+    endif
+endfunction
+nnoremap <buffer> gu :call SplitjoinParagraphOrListItem()<CR>
+" ~\Desktop\website\css_rules.txt
+" iabbrev <buffer> tdn text-decoration: none;
+" iabbrev <buffer> tdu text-decoration: underline;
+
+" MARGIN
+" iabbrev <buffer> ma margin: auto;
+" iabbrev <buffer> m0 margin: 0;
+" iabbrev <buffer> mla margin-left: auto;
+" iabbrev <buffer> mra margin-right: auto;
+" iabbrev <buffer> mt0 margin-top: 0;
+" iabbrev <buffer> mt1 margin-top: 1rem;
+" iabbrev <buffer> mb0 margin-bottom: 0;
+" iabbrev <buffer> mb1 margin-bottom: 1rem;
+
+" iabbrev <buffer> mt margin-top:
+" iabbrev <buffer> mb margin-bottom:
+" iabbrev <buffer> ml margin-left:
+" iabbrev <buffer> mr margin-right:
+
+" iabbrev <buffer> mt1 margin-top: 1rem;
+" iabbrev <buffer> mb1 margin-bottom: 1rem;
+" iabbrev <buffer> ml1 margin-left: 1rem;
+" iabbrev <buffer> mr1 margin-right: 1rem;
+
+" iabbrev <buffer> mt0 margin-top: 0rem;
+" iabbrev <buffer> mb0 margin-bottom: 0rem;
+" iabbrev <buffer> ml0 margin-left: 0rem;
+" iabbrev <buffer> mr0 margin-right: 0rem;
+
+" PADDING
+" iabbrev <buffer> p0 padding: 0;
+
+" iabbrev <buffer> pt padding-top:
+" iabbrev <buffer> pb padding-bottom:
+" iabbrev <buffer> pl padding-left:
+" iabbrev <buffer> pr padding-right:
+
+" iabbrev <buffer> pt1 padding-top: 1rem;
+" iabbrev <buffer> pb1 padding-bottom: 1rem;
+" iabbrev <buffer> pl1 padding-left: 1rem;
+" iabbrev <buffer> pr1 padding-right: 1rem;
+
+" iabbrev <buffer> pt0 padding-top: 0rem;
+" iabbrev <buffer> pb0 padding-bottom: 0rem;
+" iabbrev <buffer> pl0 padding-left: 0rem;
+" iabbrev <buffer> pr0 padding-right: 0rem;
+
+" iabbrev <buffer> mw max-width:
+" iabbrev <buffer> pa position: absolute;
+
+" iabbrev <buffer> ls letter-spacing:
+" iabbrev <buffer> lh line-height:
+" iabbrev <buffer> fs font-size:
+" iabbrev <buffer> ttu text-transform: uppercase;
+" iabbrev <buffer> ttl text-transform: lowercase;
+" iabbrev <buffer> ff font-family:
+" iabbrev <buffer> fw font-weight:
+
+" iabbrev <buffer> bg background:
+" iabbrev <buffer> tac text-align: center;
+" iabbrev <buffer> tar text-align: right;
+" iabbrev <buffer> taj text-align: justify;
+" iabbrev <buffer> tal text-align: left;
+
+" iabbrev <buffer> dg display: grid;
+" iabbrev <buffer> gtc grid-template-columns:
+" iabbrev <buffer> gtr grid-template-rows:
+" iabbrev <buffer> gc grid-column:
+" iabbrev <buffer> gr grid-row:
+
+" iabbrev <buffer> df display: flex;
+" iabbrev <buffer> fdr flex-direction: row;
+" iabbrev <buffer> fdc flex-direction: column;
+" iabbrev <buffer> jcfs justify-content: flex-start;
+" iabbrev <buffer> jcfe justify-content: flex-end;
+" iabbrev <buffer> jcsa justify-content: space-around;
+" iabbrev <buffer> jcsb justify-content: space-between;
+
+" iabbrev <buffer> dib display: inline-block;
+" iabbrev <buffer> dn  display: none;
+
+" iabbrev <buffer> fvsc font-variant: small-caps;
+
+" iabbrev <buffer> br border-radius:
+
+
+nnoremap <silent> gS :call sj#css#SplitDefinition()<CR>
+nnoremap <silent> gJ :call sj#css#JoinDefinition()<CR>
+function! s:GotoStyleTagEnd()
+    " We have the screenline check to check if the <\/style> tag is in the
+    " current window. If it is, then we restore the view. This avoids an extra
+    " alignment change / animation that you would have got similar to how
+    " pressing zz does one.
+    let view_save = winsaveview()
+    let oldBotScreenLine = min([line(".") - winline() + winheight(0), line("$")])
+    normal! G
+    let search_line_number = search('<\/style>', "b")
+    if search_line_number == 0
+        call winrestview(view_save)
+        return
+    endif
+    let newTopScreenLine = line(".") - winline() + 1
+    if oldBotScreenLine >= newTopScreenLine
+        call winrestview(view_save)
+        normal! L
+        call search('<\/style>', "bc")
+    endif
+
+    normal! k^
+endfunction
+nnoremap <silent> <buffer> 's :call <SID>GotoStyleTagEnd()<CR>
+nnoremap <silent> <buffer> `s :call <SID>GotoStyleTagEnd()<CR>
+
+" iabbrev <buffer> btl border-top-left-radius:
+" iabbrev <buffer> btr border-top-right-radius:
+" iabbrev <buffer> bbl border-bottom-left-radius:
+" iabbrev <buffer> bbr border-bottom-right-radius:
+
+" iabbrev <buffer> h* h1, h2, h3, h4, h5, h6
+
+function! ShowClasses()
+    %s/class="[^"]*"/\0/g
+    v/class/d
+    %s/class="//
+    %s/"$//
+    %s/ //g
+    %sort
+    %!uniq -c
+    %sort! n
+endfunction
+command! ShowClasses silent! call ShowClasses()
+
+" iabbrev reset h1, h2, h3, h4, h5, h6, body, p, hr, pre, ol, ul, header, nav, button { margin: 0; padding: 0; }
 

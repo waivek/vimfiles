@@ -1,3 +1,5 @@
+" BUG: change word. gcc. press DOT.
+"
 " IDEA: allow current DOT transformation to be a substitute and have hotkeys
 "       for doing a global substitute, mapped to <SPACE><DOT>
 "
@@ -25,7 +27,7 @@
 " Select first '/', change it to '\/', press DOT. Goes into doesn’t repeat the
 " change on the next match
 " BUG: 
-" new_span | span | span | function
+" function | function | function | function
 " Press cgn on first 'function'. Press DOT. Undo twice. Press 0. 
 " Highlighting should be disabled, but stays enabled.
 " 
@@ -86,6 +88,11 @@
 " ab*cd                                                             | ab*cd
 " ma~da                                                             | ma~da
 " "quotes"                                                          | "quotes"
+" /quality/                                                      | /quality/
+" /quality/                                                      | /quality/
+" /quality/                                                      | /substitute/
+" /substitute/                                                      | /substitute/
+" /substitute/                                                      | /substitute/
 " /substitute/                                                      | /substitute/
 " 'singlequotes'                                                    | 'singlequotes' 
 " 📁📁                                                              | 📁📁
@@ -102,14 +109,13 @@
 " works on multi-byte strings: https://www.reddit.com/r/vim/comments/5t08uo/vimscript_unicode/
 " let highlighted_string = strcharpart(getline("'<"), col("'<")-1, col("'>") - col("'<")+1)
 
-
 let g:dot_modifications_enabled = v:true
 function! ToggleDotModifications()
     let g:dot_modifications_enabled = !g:dot_modifications_enabled
     if g:dot_modifications_enabled
         echo "Dot Modifications enabled"
     else
-        echo "Dot Modifications disabled"
+        echo 'Dot Modifications disabled'
     endif
 endfunction
 command! ToggleDotModifications call ToggleDotModifications()
@@ -193,81 +199,52 @@ function! s:VisualA()
 endfunction
 vnoremap <expr> A mode() ==? "\<C-V>" ?  'A'  :  ':<c-u>call <SID>VisualA()<CR>' 
 
-function! CursorIsOnMatch()
-    let view_save = winsaveview()
-    let pos_save  = getpos(".")
-    let wrapscan_option_save = &wrapscan
-
-    let current_byte = line2byte(".") + col(".") - 1
-    if current_byte > 1
-        let previous_byte = current_byte - 1
-        execute "keepjumps go " . previous_byte
-        silent! keepjumps normal! n
-        let pos_after_search = getpos(".")
-    else
-        let next_byte = current_byte + 1
-        execute "keepjumps go " . next_byte
-        silent! keepjumps normal! N
-        let pos_after_search = getpos(".")
-    endif
-
-    let &wrapscan = wrapscan_option_save
-    call winrestview(view_save)
-
-    if pos_after_search == pos_save
-        return v:true
-    endif
-    return v:false
-
-endfunction
-nnoremap gu :echo CursorIsOnMatch()<CR>
 " Returns the byte positions of occurences of @/. 
-" 1. First check if there are occurences of @/ before or after the cursor
-" 2. If there are, disable wrapscan and keep pressing 'n' and adding matches.
-"    We stop adding matches when the newest match byte is the same as the
-"    first match byte. This means we have cycled through the file.
-function! GetMatchByteOffsets()
+function! dotty#GetMatchByteOffsets()
     let view_save = winsaveview()
     let pos_save  = getpos(".")
+    let fold_save = &foldenable
+    let wrapscan_option_save = &wrapscan
+    let shortmess_save = &shortmess
 
     let match_positions = []
-    let wrapscan_option_save = &wrapscan
-    let search_incomplete = v:true
 
-    " 1. First check if there are occurences of @/ before or after the cursor
-    set nowrapscan
+    " If there are no matches in the file, return []
+    set wrapscan
+    set shortmess+=s " So that we don’t pollute :messages
+    set nofoldenable
     try
-        " IMPORTANT: DON'T PUT :silent! HERE AS THAT DISABLES ERRORS
         keepjumps normal! n
-    catch /^Vim[^)]\+):E385\D/
-        try
-            keepjumps normal! N
-        catch /^Vim[^)]\+):E384\D/
-            let search_incomplete = v:false " there is no occurence of the pattern before or after the cursor
-        endtry
-    finally
+    catch /^Vim[^)]\+):E486\D/
+        let &wrapscan = wrapscan_option_save
+        let &shortmess = shortmess_save
         call winrestview(view_save)
+        return []
     endtry
 
-    set wrapscan
-    if search_incomplete
-        while search_incomplete
-            keepjumps silent! normal! n
-            let byte_int = line2byte(".") + col(".") - 1
-            if len(match_positions) > 0 && byte_int == match_positions[0]
-                let search_incomplete = v:false
-            else
-                let match_positions = match_positions + [ byte_int ]
-            endif
-        endwhile
-    else
-        if CursorIsOnMatch()
-            let current_byte = line2byte(".") + col(".") - 1
-            let match_positions = match_positions + [ current_byte ]
+    " return []
+
+    " Keep pressing 'n' and storing positions. Once latest position matchei
+    " first stored position, we have cycled through the file. Exit.
+    " let COUNT_LIMIT = 1500
+    let COUNT_LIMIT = 10000 " For performance reasons
+    while v:true
+        " keepjumps normal! n
+        call search(@/)
+        let byte_int = line2byte(".") + col(".") - 1
+        if len(match_positions) > 0 && byte_int == match_positions[0]
+            break
         endif
-    endif
+        if len(match_positions) == COUNT_LIMIT
+            break
+        endif
+        " let match_positions = match_positions + [ byte_int ]
+        call add(match_positions, byte_int)
+    endwhile
 
     let &wrapscan = wrapscan_option_save
+    let &shortmess = shortmess_save
+    let &foldenable = fold_save
     call winrestview(view_save)
 
     call sort(match_positions, 'n')
@@ -275,10 +252,10 @@ function! GetMatchByteOffsets()
 
 endfunction
 
-" Thee return possibilties:
-" STRING not found: when you do DOT and keep changing until no more PATTERNS remain
-" STRING MATCH a of b: when you press 'n'
-" STRING -x +y: when you do DOT and more occurences remain
+" Three return possibilties:
+"   1. STRING not found: when you do DOT and keep changing until no more PATTERNS remain
+"   1. STRING MATCH a of b: when you press 'n'
+"   1. STRING -x +y: when you do DOT and more occurences remain
 function! MatchByteOffsetsToString(match_positions)
     " return [@/, a:match_positions ]
     if len(a:match_positions) == 0
@@ -326,6 +303,41 @@ function! MatchByteOffsetsToString(match_positions)
                     \ ]
     endif
 endfunction
+function! SplitMatchPositions(match_positions)
+    let match_positions = a:match_positions
+    let l:cursor_position = line2byte(".") + col(".") - 1
+
+
+    " 0.0019
+    let positions_before_match = filter(copy(match_positions), { _, value -> value < l:cursor_position })
+    let positions_after_match = filter(copy(match_positions), { _, value -> value > l:cursor_position })
+    " let before_count = len(positions_before_match)
+    " let after_count = len(positions_after_match)
+    " echo "before_count: ".before_count.", after_count: ".after_count
+
+    return match_positions
+endfunction
+let s:print_count = 0
+function! PrintRepeatInfo()
+    function! MyPrint(...)
+        let s:print_count = s:print_count + 1
+        echo "MyPrint: " . s:print_count
+    endfunction
+    call timer_start(1, function("MyPrint"))
+    " call MyPrint()
+endfunction
+function! s:Time()
+    return reltimefloat(reltime())
+endfunction
+function! Profile()
+endfunction
+" let match_positions = dotty#GetMatchByteOffsets()
+" let start_time = s:Time()
+" call SplitMatchPositions(match_positions)
+" call Profile()
+" let time_taken = string(s:Time() - start_time)
+" echo time_taken
+
 " ^V<e2><80><fe>X<94>
 " —
 " http://www.ltg.ed.ac.uk/~richard/utf-8.cgi?input=%E2%80%94&mode=char
@@ -344,6 +356,13 @@ endfunction
 " pes
 " pos
 
+function! AendswithB(a, b)
+    let b_length = len(a:b)
+    let a_length = len(a:a)
+    let a_substring = strpart(a:a, a_length - b_length, a_length)
+    return a_substring ==# a:b
+endfunction
+" NOTE strpart(s, 0, 5) != s[0:5]
 function! AstartswithB(a, b)
     let b_length = len(a:b)
     let a_substring = a:a[0:b_length-1]
@@ -352,80 +371,210 @@ function! AstartswithB(a, b)
     endif
     return v:false
 endfunction
+" nmap . values: <Plug>
 
-" nmap . values: <Plug>(RepeatDot)
-"                call RepeatChange()<CR>
 
-function! OldEcho()
-    call feedkeys(":set hls\<CR>")
-    " set hls
-    let match_positions = GetMatchByteOffsets()
-    let match_info_string = MatchByteOffsetsToString(match_positions)
-    let feedkeys_command = printf(":echo '%s'\<CR>", match_info_string)
-    call feedkeys(feedkeys_command)
-endfunction
+
+
+
+
+" function! OldEcho()
+"     call feedkeys(":set hls\<CR>")
+"     " set hls
+"     let match_positions = dotty#GetMatchByteOffsets()
+"     let match_info_string = MatchByteOffsetsToString(match_positions)
+"     let feedkeys_command = printf(":echo '%s'\<CR>", match_info_string)
+"     call feedkeys(feedkeys_command)
+" endfunction
+
+
+let g:cached_positions = []
+let g:pattern = ""
+let g:changedtick = -1
 
 " We don’t use "%s" and instead inline the command in the feedkeys to avoid
 " all sorts of printing errors related to singlequotes and terminal characters
 function! EchoSearchInfo()
-    let match_positions = GetMatchByteOffsets()
+
+    if g:pattern !=# @/
+        let g:pattern = @/
+        let g:cached_positions = dotty#GetMatchByteOffsets()
+    elseif g:changedtick != b:changedtick
+        let g:changedtick = b:changedtick
+        let g:cached_positions = dotty#GetMatchByteOffsets()
+    endif
+    let match_positions = g:cached_positions
+
+
+
+    if empty(match_positions)
+        return
+    endif
     let [ match_redundant, info ] = MatchByteOffsetsToString(match_positions)
     " let match = strtrans(@/)
     " let match = Truncate(match, v:echospace-20)
     let match_macro = 'Truncate(strtrans(@/),v:echospace-20)'
-    let feedkeys_command = printf(":set hls | echon %s | echohl String | echon \" %s\" | echohl Normal\<CR>", match_macro, info)
+    let feedkeys_command = printf(":set hls | echon '/' . %s | echohl String | echon \" %s\" | echohl Normal\<CR>", match_macro, info)
+
+    " Implementation 1: Need this for highlighting to show up when you press DOT
     call feedkeys(feedkeys_command)
+    " echon '/' . Truncate(strtrans(@/),v:echospace-20) . ' '
+
+    " call feedkeys(":set hls\<CR>")
+    " set hls
+
+    " Implementation 2
+    " echon '/' . strtrans(@/). ' '
+    " echohl String 
+    " echon info 
+    " echohl Normal
+
 endfunction
-" a
-" b
-" a
-" b
-"
-" 
-" 
-" 
-" 
-" 
-" 
-" 
-" 'single'
-" 'single'
-" 'single'
-" 'single'
-function! PostCool()
-    call EchoSearchInfo()
+
+let g:repeating = v:false
+let g:n_required = v:false
+
+" Tests - 
+"     red, red, red, red, red
+"     1, 1, 1, 1, 1
+"     lime, lime, lime, lime
+"     
+function! UpdatePositionCache(...)
+    let g:repeat_position_cache = dotty#GetMatchByteOffsets()
 endfunction
-function! PostRepeat()
-    call EchoSearchInfo()
+
+function! s:SetHls(timer_id)
+    call feedkeys(":set hls\<CR>")
+
+endfunction
+function! PrintDebugInfo(...)
+    " let g:repeat_position_cache = dotty#GetMatchByteOffsets()
+
+    let l:cursor_position = line2byte(".") + col(".") - 1
+
+    " 0.0019
+    let positions_before_match = filter(copy(g:repeat_position_cache), { _, value -> value < l:cursor_position })
+    let positions_after_match = filter(copy(g:repeat_position_cache), { _, value -> value > l:cursor_position })
+    let before_count = string(len(positions_before_match))
+    let after_count = string(len(positions_after_match))
+
+    " let cache_integrity = g:repeat_position_cache == dotty#GetMatchByteOffsets()
+    " let l:message = "Before: ".before_count.", After: ".after_count.", cache_integrity: ".cache_integrity
+    let l:message = "Before: ".before_count.", After: ".after_count
+    " call  timer_start(1, function('dotty#Callback', [l:message]))
+
+    call common#AsyncPrint(l:message, 1)
+
+endfunction
+function! UpdateCacheAndPrintInfo(...)
+    call  UpdatePositionCache()
+    call  PrintDebugInfo()
+endfunction
+let g:repeat_position_cache = []
+let g:match_identifier = -1
+
+function! SliceList(L, start, end=-1)
+    if a:start == a:end
+        return []
+    endif
+    if a:end == -1
+        return a:L[a:start:]
+    endif
+    return a:L[a:start:a:end-1]
+endfunction
+
+
+function! ResetRepeatMaps()
+    nnoremap . :norm! .<CR>
+    nunmap n
 endfunction
 function! RepeatChange()
 
-    let pattern_matches_entire_deleted_text = matchstr(@", @/) ==# @"
-    let pattern_does_not_match_entire_deleted_text = !pattern_matches_entire_deleted_text
-    if pattern_does_not_match_entire_deleted_text
-        let search_string = String2Pattern(@")
-        let @/ = search_string
+    " When we want to rename ‘keyword’ to ‘my_keyword’
+    " Simple heuristic check. 
+    " Logical idea is to check via match() if the end of the inserted string,
+    " @., matches the search pattern @/
+    " Logging {{{
+    let n_old = g:n_required
+    let r_old = g:repeating
+    let repeat_msg = "n_req,repeating:(".n_old.",".r_old.")->(".g:n_required.",".g:repeating.")"
+    call NewCell(repeat_msg, "RepeatChange")
+    " }}}
+
+    " call NewCell(repeat_msg, "RepeatChange")
+    if !g:n_required
+        let pos_save = getpos(".")
+        let col_save = col(".")
+        call search(@/, "ce", line("."))
+        let cursor_on_match_end = col_save ==# col(".")
+        if cursor_on_match_end
+            let g:n_required = v:true
+            " normal! n
+        endif
+        call setpos(".", pos_save)
     endif
 
-    call feedkeys("cgn\<C-r>.\<Esc>")
+    " if g:n_required
+    "     normal! n
+    " endif
+    let index_to_remove = -1
+    if g:repeating
+        silent! normal! n
+        let cursor_position = line2byte(".") + col(".") - 1
+        let index_to_remove = index(g:repeat_position_cache, cursor_position)
+        if index_to_remove == -1
+            echoerr "index_to_remove == -1; byte offset: ".cursor_position." not found"
+        endif
 
-    function! PrintMatchInfoAndDeleteAugroup()
-        " set hls
-        call PostRepeat()
-        au! PostChange 
-    endfunction
-    augroup PostChange
-        au!
-        au InsertLeave * call PrintMatchInfoAndDeleteAugroup()
-    augroup END
+        let positions_before_match = SliceList(g:repeat_position_cache, 0, index_to_remove)
+        let positions_after_match = SliceList(g:repeat_position_cache, index_to_remove+1)
+
+        call remove(g:repeat_position_cache, index_to_remove)
+
+        normal! .
+
+        let difference = strlen(@.) - strlen(@")
+        call map(g:repeat_position_cache, { _, position -> position > cursor_position ? position + difference : position })
+
+        call PrintDebugInfo(1)
+        " call timer_start(1, function("PrintDebugInfo"))
+    else
+        let pattern_matches_entire_deleted_text = matchstr(@", @/) ==# @"
+        let pattern_does_not_match_entire_deleted_text = !pattern_matches_entire_deleted_text
+        if pattern_does_not_match_entire_deleted_text
+            let search_string = String2Pattern(@")
+            let @/ = search_string
+        endif
+
+        call feedkeys("cgn\<C-r>.\<Esc>")
+        let g:repeating = v:true
+        " call  timer_start(1, function('UpdatePositionCache'))
+        " call  timer_start(50, function('PrintDebugInfo'))
+        call  timer_start(1, function('UpdateCacheAndPrintInfo'))
+        " call s:SetHls(1)
+        let g:match_identifier = matchadd('Search', @/)
+
+    endif
+
+
+
 
 endfunction
+function! s:PrintByteOffset()
+    let byte_offset = line2byte(".") + col(".") - 1
+    echo "Byte Offset: " . byte_offset
+endfunction
+nnoremap <silent> go :call <SID>PrintByteOffset()<CR>
+
+
 
 " TEST CASE MINI:
 " function | function | function | function
 " let soccer | let soccer
 let g:override_pos = []
-let g:mappings = {}
+if !exists("g:mappings")
+    let g:mappings = {}
+endif
 " https://vi.stackexchange.com/questions/7734/how-to-save-and-restore-a-mapping
 function! SaveMappings(keys, mode, global) abort
     let mappings = {}
@@ -464,7 +613,7 @@ function! SaveMappings(keys, mode, global) abort
     endif
 
     return mappings
-endfu
+endfunction
 function! RestoreMappings(mappings) abort
 
     for mapping in values(a:mappings)
@@ -492,11 +641,11 @@ endfu
 " Bug: ma~da | ma~da
 function! CheckIfCursorMoveWasCausedByDotOperator()
     " After a dot operator takes place, we end up in normal mode. The impetus
-    " for putting this check was interference with UltiSnips. In UltiSnips,
-    " pressing <Tab> to jump to the next placeholder was triggering this check
-    " as it was counted as a CursorMove. This function being executed in
-    " VisualMode was causing buggy behaviour.
-    if mode() == "v"
+    " for putting this if-condition was interference with UltiSnips. In
+    " UltiSnips, pressing <Tab> to jump to the next placeholder was triggering
+    " this check as it was counted as a CursorMove. This function being
+    " executed in VisualMode was causing buggy behaviour.
+    if mode() == "v" || mode() == "s"
         return v:false
     endif
     " previous attempts {{{
@@ -531,18 +680,31 @@ function! CheckIfCursorMoveWasCausedByDotOperator()
 endfunction
 
 function! s:RemoveAllOverrides()
+    call NewCell("fail", "RemoveAllOverrides")
+    let pass_message = "pass: mappings, globals & au’s reset"
+    let fail_message = "fail: cursor moved by dot operator"
     " Ignores the first CursorMoved fired immediately after leaving InsertMode
     if g:override_pos == getpos(".")
         return
     endif
     let cursor_move_was_caused_by_dot_operator = CheckIfCursorMoveWasCausedByDotOperator()
     if cursor_move_was_caused_by_dot_operator
+        call UpdateCell("fail: cursor moved by dot operator")
         return
     endif
+
+    if g:repeating
+        call matchdelete(g:match_identifier)
+        let g:match_identifier = -1
+    endif
+
     let g:override_pos = []
+    let g:repeating = v:false
+    let g:n_required = v:false
     au! DotOverride CursorMoved
     au! DotOverride InsertLeave
     call RestoreMappings(g:mappings)
+    call UpdateCell("pass")
 endfunction
 
 " [knowledge] RepeatChange chaining, n override edge case {{{
@@ -582,9 +744,12 @@ function! s:ToggleWholeKeywordOverride()
     endif
     set hls
     call s:ToggleWholeKeyword()
+    call ModifyDotOverride()
     nnoremap <silent> gs :call <SID>ToggleWholeKeyword()<CR>
 endfunction
 function! s:InitializeDotOverride()
+
+    call NewRow("fail", "InitializeDotOverride")
     " Prevents Overrides from overlapping
     if g:override_pos != []
         return
@@ -596,7 +761,9 @@ function! s:InitializeDotOverride()
     nnoremap <silent> gs :call <SID>ToggleWholeKeywordOverride()<CR>
 
     au DotOverride CursorMoved * call s:RemoveAllOverrides()
+    call UpdateCell("pass")
 endfunction
+
 function! s:YankPost()
     if v:event["operator"] ==# "y" || v:event["operator"] ==# "d"
         return
@@ -650,7 +817,6 @@ function! s:ToggleWholeKeyword()
     endif
     let @/ = search_pattern
     set hls
-    call ModifyDotOverride()
     redraw|echo "/" . search_pattern
 endfunction
 
@@ -664,4 +830,290 @@ nnoremap <silent> gs :call <SID>ToggleWholeKeyword()<CR>
 cabbrev vv v/<C-r>=@/<CR>
 cabbrev gg g/<C-r>=@/<CR>
 cabbrev ss s/<C-r>=@/<CR>
-cabbrev tt Tab/<C-r>=@/<CR>
+cabbrev <expr> tt getcmdtype() ==# ":" ? 'Tab/<C-r>=@/<CR>' : 'tt'
+
+" [1] Initial State
+" ... let two = 1
+"         ^
+" ... let one = 2
+"
+" [2] Change 'two to 'one'
+"
+" [3] Changed State-
+" ... let one = 1
+"           ^
+" ... let one = 2
+"
+" [4] Registers before function call
+"  @. = 'one', @" = 'two' 
+
+
+let g:time_counter = 0
+let g:loglines = []
+function! ResetLogs()
+    let g:time_counter = 0
+    let g:loglines = []
+endfunction
+function! NewRow(message, fname)
+    " let g:time_counter = 0
+    call insert(g:loglines, [], 0) " Create a new entry
+    call NewCell(a:message, a:fname)
+endfunction
+function! NewCell(message, fname)
+    call insert(g:loglines[0], [a:fname, a:message, g:time_counter], 0)
+    let g:time_counter = g:time_counter + 1
+endfunction
+function! UpdateCell(message)
+    let row = g:loglines[0]
+    let cell = row[0]
+    let g:loglines[0][0] = [ cell[0], a:message, cell[2] ]
+endfunction
+function! PrintLogs()
+    for row in g:loglines
+        for cell in row
+            let [func, msg, order] = cell
+            echo order.":".func.": ".msg
+        endfor
+        echo "----------------------------------"
+    endfor
+endfunction
+
+" call NewRow("pass", "InitializeDotOverride")
+" call NewCell("fail", "RemoveAllOverrides")
+" call UpdateCell("pass")
+
+" call NewRow("pass", "CursorMoved")
+" call NewCell("fail", "String2Pattern")
+" call NewCell("fail", "NewRow")
+" call PrintLogs()
+
+
+function s:Exchange()
+    let search_string = String2Pattern(@.)
+    let @/ = search_string
+    " nunmap n
+    call search(@/)
+    call feedkeys("cgn\<C-r>0\<Esc>")
+endfunction
+
+" let two = 1
+" let one = 2
+" -----------
+" let two = 1
+" let one = 2
+nnoremap  cx :call <SID>Exchange()<CR>
+
+
+if !exists("g:permanent_mappings")
+    const g:permanent_mappings = SaveMappings([".", "n", "gs"], "n", v:true)
+endif
+function! HardRestoreMappings()
+    call RestoreMappings(g:permanent_mappings)
+endfunction
+
+" let search_key = "for"
+function! s:MatchCount(search_key)
+    let buffer_contents = join(getline(1, '$'), "\n")
+    let search_key = a:search_key
+    let match_count = 1
+    let indices = []
+    while v:true
+        let match_index = match(buffer_contents, search_key, 0, match_count)
+        if match_index == -1 || match_count > 10000
+            break
+        endif
+        call add(indices, match_index)
+        let match_count = match_count + 1
+    endwhile
+    let total_matches = len(indices)
+    echo "total_matches: ".total_matches
+endfunction
+command! -nargs=1  MatchCount call <SID>MatchCount(<q-args>)
+
+
+" let total_matches = count(buffer_contents, search_key)
+
+
+
+
+finish
+
+function! s:DrawPopupOnCmdline(string)
+    let popup_id = popup_create(a:string, {"borderhighlight": ["StatusLineNC"], "line" : winheight(0)+2, "col": 1, "zindex": 1 })
+    call setwinvar(popup_id, '&wincolor', 'String')
+    return popup_id
+endfunction
+
+function! s:ClosePopup()
+    call popup_close(s:popup_id)
+    let s:popup_id = -1
+endfunction
+
+" let s:buffer_contents = ""
+let s:popup_id = -1
+function! s:InitializeCountInfo()
+    " let s:buffer_contents = join(getline(1, '$'), "\n")
+    let s:popup_id = s:DrawPopupOnCmdline("Sample Text")
+endfunction
+
+
+" Debug {{{
+function! s:ReproduceSearchError()
+    let search_string = '/^\s*function!\?\s\+\('
+    call search(search_string, 'wn')
+    return search_string
+endfunction
+nnoremap <expr> ga <SID>ReproduceSearchError()
+let s:log_call_count = 0
+let s:log_cache = ''
+function! s:Log(symbol)
+    let symbol = a:symbol
+    let s:log_call_count = s:log_call_count + 1
+    if symbol !=# "LEAVE"
+        let s:log_cache = getcmdline()
+    endif
+    if symbol ==# "LEAVE"
+        " echoerr "s:log_call_count: ".s:log_call_count.'; s:log_cache: '.s:log_cache
+        " let s:log_call_count = 0
+        " let s:log_cache = ''
+        let search_value = search(s:log_cache, 'wn')
+        echoerr 'search_value: '.search_value
+    endif
+    
+endfunction
+augroup LogCmdlineEvents
+    au!
+    " au CmdlineEnter   /,\? call s:Log("ENTER")
+    " au CmdlineChanged /,\? call s:Log("CHANGE")
+    " au CmdlineLeave   /,\? call s:Log("LEAVE")
+augroup END
+
+function! s:CompareBufferFetchMethods()
+    let reg_save = @"
+    silent 1,$y
+    let buf1 = @"[:-2]
+    let @" = reg_save
+    let buf2 = join(getline(1, '$'), "\n")
+    echo "buf1: ".len(buf1)
+    echo "buf2: ".len(buf2)
+    let is_equal = buf1 ==# buf2
+    echo "is_equal: ".is_equal
+
+endfunction
+
+function! s:Count_Implementation_2()
+    let start_time = common#Time()
+    " 0.001
+    " let buffer_contents = join(getline(1, '$'), "\n")
+    " let pattern_count = count(buffer_contents, @/)
+
+    " 0.02
+    " let offsets = dotty#GetMatchByteOffsets()
+    " let pattern_count = len(offsets)
+
+    let search_result = search(@/, 'wn')
+    if search_result == 0
+        let pattern_count = 0
+    else
+        let msg = ""
+        redir => msg
+        silent %s///gn
+        redir END
+        let pattern_count = str2nr(trim(msg))
+    endif
+
+
+    let time_taken = common#Time() - start_time
+    echo "time_taken: ".printf("%f", time_taken).", count: ".pattern_count
+    " echo "time_taken: ".printf("%f", time_taken)
+
+    
+endfunction
+" }}}
+
+function! s:HandleBackslash(s)
+    let s = a:s
+    let index = match(s, '\\\+$')
+    if count(s[index:], '\') % 2 == 1
+        let s = strpart(s, 0, len(s)-1)
+    endif
+    return s
+endfunction
+" echo s:HandleBackslash('^abcd\\\\efgh\\\\')
+
+
+function! s:GetErrorMessage()
+    try
+        call search('\z', 'wn')
+    catch
+        let @" = v:exception
+        echo 'let @" = '''.v:exception.''''
+    endtry
+endfunction
+
+" BUG: As you type a group, there is a chance of an unmatched group being
+" searched. Example: '/function\(s:\)'. While typing, a search(@/) is being
+" executed on every keystroke. This throws an E54 unmatched \( error. If you
+" type '/function\(' and then press ENTER, you will also see an E54 error.
+"
+" SOLUTION: Catch errors in serach() call and return on error
+function! s:PrintCountInfo()
+    if getcmdline() == ""
+        call popup_move(s:popup_id, {"col" : 4 })
+        call popup_settext(s:popup_id, "")
+        return
+    endif
+
+    " let search_result = search(cmdline, 'wn') {{{
+    let cmdline = getcmdline()
+    " Implementation 1 (doesn’t work for regular expressions)
+    " " let pattern_count = count(s:buffer_contents, cmdline)
+    " Implementation 2
+    " let search_result = search(cmdline, 'wn')
+    let cmdline = s:HandleBackslash(cmdline)
+    let search_result = search(cmdline, 'wn')
+    try
+        let search_result = search(cmdline, 'wn')
+    catch /^Vim(let):E54/
+        " PATTERN = /\(/
+        return
+    catch /^Vim(call):E867/
+        " PATTERN = /\z/
+        return
+    catch /^Vim(let):E385/
+        " WRAPPED AROUND
+        return
+    endtry
+    " }}}
+
+    if search_result == 0
+        let pattern_count = 0
+    else
+        let msg = ""
+        redir => msg
+        silent execute '%s/'.cmdline.'//gn'
+        redir END
+        let g:t = cmdline
+        let pattern_count = str2nr(trim(msg))
+    endif
+    if !exists("pattern_count")
+        let pattern_count = -1
+    endif
+
+    let message_color = pattern_count > 0 ? 'String' : 'WarningMsg'
+    let occurence_string = pattern_count == 1 ? 'occurence' : 'occurences'
+    let text = pattern_count.' '.occurence_string
+    call popup_move(s:popup_id, {"col" : 4 + len(cmdline)})
+    call popup_settext(s:popup_id, text)
+    call setwinvar(s:popup_id, '&wincolor', message_color)
+endfunction
+
+
+
+augroup ShowCountWhileTyping
+    au!
+    au CmdlineEnter   / call s:InitializeCountInfo()
+    au CmdlineChanged / call s:PrintCountInfo()
+    au CmdlineLeave   / call s:ClosePopup()
+augroup END
+

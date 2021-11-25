@@ -20,10 +20,13 @@ function! s:LinterStatus() abort
 endfunction
 
 " set statusline=%{s:LinterStatus()}
-function! Relpath()
+function! GetRelpath()
     if &ft == "help" || &ft == "man.cpp"
-        return expand("%:t")
+        let b:relpath = expand("%:t")
+        return b:relpath
     endif
+
+
 
     let file_drive = expand("%:p")[0]
     let dir_drive = getcwd()[0]
@@ -54,11 +57,77 @@ function! Relpath()
     else
         return expand("%")
     endif
+endfunction
 
+function! Relpath()
+    if !exists('b:relpath_cache')
+        let b:relpath_cache = GetRelpath()
+    endif
+    return b:relpath_cache
+endfunction
+
+function! DeleteRelpathCache()
+    if exists("b:relpath_cache")
+        unlet b:relpath_cache
+    endif
+endfunction
+
+augroup StatusLineUpdateRelpathCache
+    au!
+    au DirChanged * call DeleteRelpathCache()
+    au BufEnter   * call DeleteRelpathCache()
+augroup END
+
+let s:dotty_script_id = -1
+function! DotMap()
+    let dotty_path = '~/vimfiles/plugin/dotty.vim'
+    if s:dotty_script_id == -1
+        let s:dotty_script_id = GetSid(dotty_path)
+    endif
+    let dot_map = ':call RepeatChange()<CR>'
+    let gs_1_map = printf(':call <SNR>%d_ToggleWholeKeywordOverride()<CR>', s:dotty_script_id)
+    let gs_2_map = printf(':call <SNR>%d_ToggleWholeKeyword()<CR>', s:dotty_script_id)
+    let n_map = printf(':call <SNR>%d_NextPatternOverride()<CR>', s:dotty_script_id)
+    if dot_map == maparg(".", "n")
+        let dot_status = "DOT"
+    else
+        let dot_status = ""
+    endif
+	
+    if gs_1_map == maparg("gs", "n")
+        let gs_status = "GSO"
+    elseif gs_2_map == maparg("gs", "n")
+        let gs_status = "GS"
+    else
+        let gs_status = ""
+    endif
+
+    if n_map == maparg("n", "n")
+        let n_status = "N"
+    else
+        let n_status = ""
+    endif
+
+    if &ws
+        let ws_status = "WS"
+    else
+        let ws_status = ""
+    endif
+
+    let dotty_status = join([dot_status, gs_status, n_status, ws_status], " ")
+    let dotty_status = trim(dotty_status)
+    return "[" . dotty_status . "]"
 endfunction
 set statusline=%<%{Relpath()}
-set statusline+=%m%r%y%w%=\ %l/%-6L\ %3c 
-" set statusline=%f%m%r%y%w%=%l/%-6L\ %3c 
+" options.txt[-][RO][help]
+"   options.txt - Relpath()
+"           [-] - %m (modfiied flag)
+"          [RO] - %r (read-only flag)
+"        [help] - %y (type of file)
+"     [Preview] - %w (preview window flag, not present in example)
+"                  = (separation point b/w left & right aligned fields)
+"
+set statusline+=%m%r%y%w%{DotMap()}%=\ %l/%-6L\ %3c 
 " }}}
 " Error Lines {{{
 let g:last_command = ""
@@ -110,10 +179,11 @@ function! s:PrintErrorMsg()
     endif
 endfunction
 
-" au! CursorMoved *
-au! QuickFixCmdPost *
-" au CursorMoved * call s:PrintErrorMsg()
-au QuickFixCmdPost * call s:ParseQuickfix()
+augroup StatusLineEnhanced
+    au!
+    au QuickFixCmdPost * call s:ParseQuickfix()
+    " au CursorMoved * call s:PrintErrorMsg()
+augroup END
 " }}}
 " Traverse Indent {{{
 

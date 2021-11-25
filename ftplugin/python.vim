@@ -21,3 +21,180 @@ endfunction
 command! Enumerate call Enumerate()
 
 setlocal path+=~/Documents/Python/
+
+iabbrev <buffer> respones response
+
+function! ProfileImport()
+    s/.*import \(.*\)/s = time(); \0; performances.append({"duration": time() - s, "package": "\1"})
+endfunction
+
+function! GdInFile()
+    " pre_yank {{{
+    let reg_save = @"
+    let yank_start = getpos("'[")
+    let yank_end = getpos("']")
+    " }}}
+
+    normal! yiw
+    let search_pattern = 'def\s\+\zs'.@".'\>'
+
+    let @/ = search_pattern
+
+    let view_save = winsaveview()
+    let wrap_save = &wrapscan
+    let &wrapscan = 1
+    try
+        silent normal! N
+        if view_save["lnum"] != line(".")
+            normal! zt
+        endif
+    catch /^Vim[^)]\+):E486\D/
+        echohl Directory | echon "Definition not found: " | echohl Normal | echon @"."()"
+        call winrestview(view_save)
+    endtry
+    let &wrapscan = wrap_save
+
+    " post_yank {{{
+    let @" = reg_save
+    call setpos("'[", yank_start)
+    call setpos("']", yank_end)
+    " }}}
+endfunction
+nnoremap <buffer> <silent> gd :call GdInFile()<CR>
+
+function! s:PreviousIndentSpecialized()
+    let start_indent = indent(".")
+    let previous_indent = start_indent == 0 ? 0 : start_indent-1
+    let regexp = printf('^\s\{0,%d\}\S', previous_indent)
+    keepjumps call search(regexp, 'be')
+endfunction
+function! s:DetectIfInTryBlock()
+    let result = v:false
+    let view_save = winsaveview()
+    let while_limit = 100
+    let while_counter = 0
+    while indent(".") != 0 && while_counter < while_limit
+        let current_line = trim(getline("."))
+        if stridx(current_line, "try:") == 0 || stridx(current_line, "except") == 0
+           let result = v:true
+        endif
+        call s:PreviousIndentSpecialized()
+        let while_counter = while_counter + 1
+    endwhile
+    if while_counter == while_limit
+        echohl Error | echo "Hit While Limit: ".string(while_limit) | echohl Normal
+    endif
+    call winrestview(view_save)
+    return result
+endfunction
+function! s:GoToTryBlockEnd()
+    normal! $
+    call search('try:', 'bc')
+    call search('^\s\+except')
+
+    let except_line_nr = line(".")
+    let except_line_indent = indent(except_line_nr)
+    let line_numbers = range(except_line_nr+1, line("$"))
+    let except_end_line_nr = except_line_nr
+    for line_number in line_numbers
+        let current_indent = indent(line_number)
+        if current_indent > except_line_indent
+            let except_end_line_nr = line_number
+            continue
+        elseif trim(getline(line_number)) == ""
+            continue
+        else
+            break
+        endif
+    endfor
+
+    execute except_end_line_nr
+endfunction
+function! s:RemoveTryBlock()
+    normal! $
+    call search('try:', 'bc')
+    normal! j
+    normal! ma
+    call search('^\s\+except')
+    normal! k
+    normal! mb
+    normal! 'aV'bd
+
+    call search('try:', 'bc')
+    normal! ma
+    call s:GoToTryBlockEnd()
+    normal! mb
+    normal! 'aV'bp
+    normal! '[<']
+endfunction
+function! s:SingleLineBreakpoint()
+    normal! V
+    call s:InsertBreakpointVisual()
+endfunction
+function! s:InsertBreakpointVisual()
+    let reg_save = @"
+    let indent = indent(".")
+    let spaces = repeat(" ", indent)
+    normal! gvd
+    let lines = split(@", "\n")
+    let lines_with_extra_indent = []
+    for line in lines
+        call add(lines_with_extra_indent, "    ".line)
+    endfor
+    let lines = [ spaces."try:" ] + lines_with_extra_indent + [ spaces."except Exception as e:", spaces."    error = e", spaces."    breakpoint()" ]
+    let @" = join(lines, "\n") . "\n"
+    normal! P
+    " normal! ']jdd
+    " normal! ``
+    let @" = reg_save
+endfunction
+
+function s:ToggleBreakpointNormal()
+    let in_try = s:DetectIfInTryBlock()
+    if in_try
+        call s:RemoveTryBlock()
+    else
+        call s:SingleLineBreakpoint()
+    endif
+endfunction
+
+nnoremap <buffer> <silent> <space>b :call <SID>ToggleBreakpointNormal()<CR>
+vnoremap <buffer> <silent> <space>b :<c-u>call <SID>InsertBreakpointVisual()<CR>
+
+function! s:GoToRepeatChangeFunction()
+    normal! gg
+    call search("function! RepeatChange()")
+    normal! zt
+endfunction
+
+function! s:GoToMainPythonFunction()
+    normal! gg
+    call search("def main()")
+    normal! zt
+    normal! M
+endfunction
+nnoremap <silent> <buffer> 'm :call <SID>GoToMainPythonFunction()<CR>
+nnoremap <silent> <buffer> `m :call <SID>GoToMainPythonFunction()<CR>
+
+function! s:SingleLineTimer()
+    let indent = indent(".")
+    let spaces = repeat(" ", indent)
+    let line = getline(".")
+    let first_function =  matchstrpos(line, '\w\+\ze(')[0]
+    if len(first_function) == 0
+        return
+    endif
+    let start_string = printf('%stimer.start("%s")', spaces, first_function)."\n"
+    let print_string = printf('%stimer.print("%s")', spaces, first_function)."\n"
+    let reg_save = @"
+    let yank_start_save = getpos("'[")
+    let yank_stop_save = getpos("']")
+    let @" = start_string
+    normal! P
+    normal! j
+    let @" = print_string
+    normal! p
+    normal! k
+    normal! 
+endfunction
+nnoremap <silent> <buffer> <space>t :call <SID>SingleLineTimer()<CR>

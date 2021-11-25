@@ -1,6 +1,6 @@
 snippet common
 import sys
-sys.path = [ "C:/users/vivek/Documents/Python/" ] + sys.path
+sys.path.insert(0, "C:/users/vivek/Documents/Python/")
 from common import 
 endsnippet
 
@@ -28,6 +28,10 @@ table = columnar(data, headers, no_borders=True)
 print(table)
 endsnippet
 
+# FAIL: double quotes nested inside single quotes
+# DETS: errors happens on the first double quote at "blue"
+# PATH: parse entire line instead of using regex
+# r'<span class="red">{red_line}</span><span class="blue">{blue_line}</span>'
 global !p
 import re
 def create_variable_placeholders(snip):
@@ -48,11 +52,34 @@ def create_variable_placeholders(snip):
 endglobal
 
 post_jump "create_variable_placeholders(snip)"
-snippet '".*{.+}.*?"' "doublequote" rA
+snippet '".*{.+}.*?"' "doublequote" r
 `!p snip.rv=match.group(0)`
 endsnippet
 
-post_jump "create_variable_placeholders(snip)"
-snippet "'.*{.+}.*?'" "singlequote" rA
+# post_jump "create_variable_placeholders(snip)"
+snippet "'.*{.+}.*?'" "singlequote" r
 `!p snip.rv=match.group(0)`
+endsnippet
+
+snippet template
+import sys
+sys.path.insert(0, "C:/users/vivek/Documents/Python/")
+from common import Timer, print_error_information
+timer = Timer()
+
+def main():
+	$0
+
+try:
+	main()
+except Exception as e:
+	import bdb
+	import pdb
+	error = e
+	if type(e) == bdb.BdbQuit:
+		# Exit Via CTRL-D
+		pass
+	else:
+		print_error_information(e)
+		pdb.post_mortem(e.__traceback__)
 endsnippet
