@@ -1,0 +1,144 @@
+let g:rev = ""
+function! SmartPaste()
+    let isImagePowershell = 'powershell -NoProfile -Command "& {Add-Type -AssemblyName System.Windows.Forms; [System.Windows.Forms.Clipboard]::ContainsImage()}"'
+    let is_image = trim(system(isImagePowershell )) ==# "True"
+    " let isImageBatch = "cscript /nologo /e:JScript test.vbs"
+
+endfunction
+
+function! Group(pattern)
+    let reg_a = @a
+    let reg_quote = @"
+    let reg_slash = @/
+
+    let @a = ""
+    let cmd = 'g/'.a:pattern.'/d A'
+    execute cmd
+    let opening_line = '" '.a:pattern.' {{{'
+    let closing_line = '" }}}'
+    let lines = [opening_line] + split(@a, "\n") + [closing_line]
+    let grouped_string = join(lines, "\n")
+    let @a = grouped_string
+    normal! Go
+    normal! G"ap
+endfunction
+function! GroupPatterns()
+    let patterns = [ 'css\.vim', 'gitcommit\.vim', 'html\.vim', 'javascript\.vim', 'json\.vim', 'lua\.vim', 'markdown\.vim', 'ocaml\.vim', 'perl\.vim', 'php\.vim', 'plantuml\.vim', 'python\.vim', 'rst\.vim', 'ruby\.vim', 'rust\.vim', 'sass\.vim', 'sh\.vim', 'tex\.vim', 'typescript\.vim', 'typescriptreact\.vim', 'vim\.vim', 'xml\.vim', 'yaml\.vim' ]
+    for pattern in patterns
+        call Group(pattern)
+    endfor
+endfunction
+
+function! s:Time()
+    return reltimefloat(reltime())
+endfunction
+function! NumberNotes()
+    let reg_a = @a
+    let reg_quote = @"
+    let reg_slash = @/
+
+    normal! gg
+    let @/='note-\zs00'
+    for i in range(30)
+        let note_count = string(i+1)
+        execute 'normal gn'.note_count.''
+    endfor
+
+
+    let @a = reg_a
+    let @" = reg_quote
+    let @/ = reg_slash
+endfunction
+let s:greppable_python_paths = []
+function! s:PyGrep(key)
+    let regex = '\.py$'
+    let key = a:key
+    " let python_paths = filter(copy(v:oldfiles), 'v:val =~? regex')
+    if empty(s:greppable_python_paths)
+        let python_paths = filter(copy(v:oldfiles), 'v:val =~? regex')
+        call filter(python_paths, { _, path -> filereadable(expand(path)) })
+        call filter(python_paths, { _, path -> stridx(tolower(path), "appdata") == -1})
+        call filter(python_paths, { _, path -> stridx(tolower(path), "program files") == -1})
+        call filter(python_paths, { _, path -> stridx(tolower(path), "undofiles") == -1})
+        call map(python_paths, { _, path -> '"'.expand(path).'"'})
+        let s:greppable_python_paths = python_paths
+    else
+        let python_paths = s:greppable_python_paths
+    endif
+    let path_string = join(python_paths, " ")
+    let grep_command = printf('grep "%s" %s', key, path_string)
+    if len(grep_command) > 8192
+        echo "Too many files"
+        return
+    endif
+
+    " let @+=grep_command
+    " return
+    echo "Searching " . len(python_paths) . " files"
+    silent! execute grep_command
+    redraw
+    let match_count = len(getqflist())
+    echo printf("%d Matches", match_count)
+endfunction
+" call timer_start(1, function("PyGrep"))
+" call PyGrep()
+command! -nargs=1 PyGrep call s:PyGrep(<q-args>)
+
+
+" call common#AsyncPrint("[AsyncPrint] Called")
+
+function! s:BlockSum()
+    if visualmode() !=? "\<C-v>"
+        return
+    endif
+    " let l:message = "VISUAL-BLOCK"
+    " call  timer_start(1, function('dotty#Callback', [l:message]))
+    let reg_save = @"
+    silent! normal! gvy
+    let lines = @"
+    let @" = reg_save
+
+    try
+        let result = eval(join(split(lines, "\n"), "+"))
+    catch /.*/
+        let result = "Invalid Block Selection"
+    endtry
+    call  timer_start(1, function('dotty#Callback', [result]))
+
+endfunction
+" vnoremap <silent> ga :<c-u>call <SID>BlockSum()<CR>
+
+
+function! s:MakeUppercaseMaps()
+    let uppercase_letters = map(range(char2nr("A"), char2nr("Z")), {_, num -> nr2char(num)})
+    let uppercase_letters = uppercase_letters[0:2]
+    for letter in uppercase_letters
+
+    endfor
+endfunction
+call s:MakeUppercaseMaps()
+function! s:JumpUppercase(letter)
+    let letter = a:letter
+    let view_save = winsaveview()
+    let scrolloff_save = &scrolloff
+
+    set scrolloff=0
+
+    let search_result = search("C", "", line("w$"))
+    if search_result == 0
+        call winrestview(view_save)
+    endif
+
+    let &scrolloff = scrolloff_save
+endfunction
+" nnoremap <silent> <Space>C :call <SID>JumpUppercase("C")<CR>
+
+function! s:NextWordstart()
+    " \%>102l\%<141lcall
+    let top_line_pattern = '\%>'.string(line("w0")-1)."l"
+    let bot_line_pattern = '\%<'.string(line("w$")+1)."l"
+    return '/'.top_line_pattern.bot_line_pattern.'\<'
+    " return '/^\s*function!\?\s\+\(s:\)\?'
+endfunction
+" echo s:NextWordstart()
+nnoremap  <expr> gu <SID>NextWordstart()

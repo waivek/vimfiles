@@ -1,0 +1,178 @@
+" au TextChangedI * call CustomLogger("TextChangedI")
+function! ToggleDotModifications()
+endfunction
+command! ToggleDotModifications call ToggleDotModifications()
+function! s:String2Pattern(string)
+endfunction
+function! s:Visual2Search()
+    let search_string = s:String2Pattern(@")
+endfunction
+function! s:VisualStar() 
+    let search_string = s:Visual2Search()
+endfunction
+function! s:VisualHash()
+    let search_string = s:Visual2Search()
+endfunction
+function! Visual_gd()
+    let search_string = s:Visual2Search()
+endfunction
+function! s:VisualReplace()
+    let search_string = s:Visual2Search()
+endfunction
+" Terminal Keycodes work in RepeatChange() because we are using the @.
+function! s:VisualA()
+    let search_string = s:Visual2Search()
+endfunction
+vnoremap <expr> A mode() ==? "\<C-V>" ?  'A'  :  ':<c-u>call <SID>VisualA()<CR>' 
+function! GetMatchByteOffsets()
+endfunction
+function! MatchByteOffsetsToString(match_positions)
+endfunction
+function! AstartswithB(a, b)
+endfunction
+"                call RepeatChange()<CR>
+function! RepeatChange()
+        let search_string = s:String2Pattern(@")
+    function! PrintMatchInfoAndDeleteAugroup()
+        let match_positions = GetMatchByteOffsets()
+        let match_info_string = MatchByteOffsetsToString(match_positions)
+        au! PostChange 
+    endfunction
+    augroup PostChange
+        au!
+        au InsertLeave * call PrintMatchInfoAndDeleteAugroup()
+    augroup END
+endfunction
+function! SaveMappings(keys, mode, global) abort
+            call RestoreMappings({l:key : buf_local_map})
+endfunction
+function! RestoreMappings(mappings) abort
+               \ . (mapping.noremap ? 'noremap   ' : 'map ')
+endfunction
+function! CheckIfCursorMoveWasCausedByDotOperator()
+    let condition_1 = @/ =~ s:String2Pattern(@")
+endfunction
+function! s:RemoveAllOverrides()
+    let cursor_move_was_caused_by_dot_operator = CheckIfCursorMoveWasCausedByDotOperator()
+    au! DotOverride CursorMoved
+    au! DotOverride InsertLeave
+    call RestoreMappings(g:mappings)
+endfunction
+function! s:NextPatternOverride()
+        let search_string = s:String2Pattern(@")
+    " let search_string = s:String2Pattern(@")
+endfunction
+function! s:ToggleWholeKeywordOverride()
+        let search_string = s:String2Pattern(@")
+    call s:ToggleWholeKeyword()
+    nnoremap <silent> gs :call <SID>ToggleWholeKeyword()<CR>
+endfunction
+function! s:InitializeDotOverride()
+    let g:mappings = SaveMappings([".", "n", "gs"], "n", v:true)
+    nnoremap <silent> . :call RepeatChange()<CR>
+    nnoremap <silent> n :call <SID>NextPatternOverride()<CR>
+    nnoremap <silent> gs :call <SID>ToggleWholeKeywordOverride()<CR>
+    au DotOverride CursorMoved * call s:RemoveAllOverrides()
+endfunction
+function! s:YankPost()
+    au DotOverride InsertLeave * call s:InitializeDotOverride()
+endfunction
+augroup DotOverride
+    au! 
+    au TextYankPost * call s:YankPost()
+augroup END
+function! ModifyDotOverride()
+        nnoremap <silent> . :call RepeatChange()<CR>
+endfunction
+function! s:ToggleWholeKeyword()
+    call ModifyDotOverride()
+endfunction
+vnoremap <silent> *  :<c-u>call <SID>VisualStar()<CR>
+vnoremap <silent> #  :<c-u>call <SID>VisualHash()<CR>
+vnoremap <silent> gd :<c-u>call Visual_gd()<CR>
+vnoremap <silent> s  :<c-u>call <SID>VisualReplace()<CR>
+nnoremap <silent> gs :call <SID>ToggleWholeKeyword()<CR>
+au TextYankPost YankPost():
+    au InsertLeave InitializeDotOverride():
+        SaveMappings():
+            if RestoreMappings():
+        map RepeatchChange():
+            if String2Pattern()
+        map NextPatternOverride()
+            if String2Pattern()
+        map ToggleWholeKeywordOverwride()
+            if String2Pattern()
+            ToggleWholeKeyword()
+            map ToggleWholeKeyword():
+                ModifyDotOverride():
+                    if map RepeatChange()
+        au CursorMoved RemoveAllOverrides():
+            CheckIfCursorMoveWasCausedByDotOperator():
+                String2Pattern()
+            au! CursorMoved
+            au! InsertLeave
+            RestoreMappings()
+
+CheckIfCursorMoveWasCausedByDotOperator
+InitializeDotOverride
+ModifyDotOverride
+NextPatternOverride
+RemoveAllOverrides
+RepeatchChange
+RestoreMappings
+SaveMappings
+String2Pattern
+ToggleWholeKeyword
+ToggleWholeKeywordOverwride
+YankPost
+
+YankPost->InitializeDotOverride:
+    InitializeDotOverride->SaveMappings:
+        SaveMappings->RestoreMappings:
+    InitializeDotOverride->RepeatchChange:
+        RepeatChange->String2Pattern:
+    InitializeDotOverride->NextPatternOverride:
+        NextPatternOverride->String2Pattern:
+    InitializeDotOverride->ToggleWholeKeywordOverwride:
+        ToggleWholeKeywordOverwride->String2Pattern:
+        ToggleWholeKeywordOverwride->ToggleWholeKeyword:
+            ToggleWholeKeyword->ModifyDotOverride:
+                ModifyDotOverride->RepeatChange:
+    InitializeDotOverride->RemoveAllOverrides:
+        RemoveAllOverrides->CheckIfCursorMoveWasCausedByDotOperator:
+            CheckIfCursorMoveWasCausedByDotOperator->String2Pattern:
+        RemoveAllOverrides->RestoreMappings:
+
+digraph dotty { 
+    node [fontname="Concourse T4"];
+    node [shape=box];
+    node [style="rounded"];
+    CheckIfCursorMoveWasCausedByDotOperator;
+    InitializeDotOverride;
+    ModifyDotOverride;
+    NextPatternOverride;
+    RemoveAllOverrides;
+    RepeatChange;
+    RestoreMappings;
+    SaveMappings;
+    String2Pattern;
+    ToggleWholeKeyword;
+    ToggleWholeKeywordOverwride;
+    YankPost;
+    YankPost->InitializeDotOverride;
+    InitializeDotOverride->SaveMappings;
+    SaveMappings->RestoreMappings;
+    InitializeDotOverride->RepeatChange;
+    RepeatChange->String2Pattern;
+    InitializeDotOverride->NextPatternOverride;
+    NextPatternOverride->String2Pattern;
+    InitializeDotOverride->ToggleWholeKeywordOverwride;
+    ToggleWholeKeywordOverwride->String2Pattern;
+    ToggleWholeKeywordOverwride->ToggleWholeKeyword;
+    ToggleWholeKeyword->ModifyDotOverride;
+    ModifyDotOverride->RepeatChange;
+    InitializeDotOverride->RemoveAllOverrides;
+    RemoveAllOverrides->CheckIfCursorMoveWasCausedByDotOperator;
+    CheckIfCursorMoveWasCausedByDotOperator->String2Pattern;
+    RemoveAllOverrides->RestoreMappings;
+}

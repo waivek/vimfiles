@@ -1,0 +1,48 @@
+
+snippet for
+for i in range(len(${1}s))
+	let $1 = $1s[i]
+endfor
+endsnippet
+
+snippet aug
+augroup $1
+	au!
+	au $0
+augroup END
+endsnippet
+
+snippet timerfn
+function! $1(...)
+	echo "$0"
+endfunction
+call timer_start(1, "$1")
+endsnippet
+
+snippet mapfn
+function! s:$1()
+endfunction
+nnoremap <silent> ${0:PLACEHOLDER} :call <SID>$1()<CR>
+endsnippet
+
+snippet cmdfn
+function! s:$1(${2:variable})
+	let $2 = a:$2
+	$0
+endfunction
+command! -nargs=1 $1 call <SID>$1(<q-args>)
+endsnippet
+
+snippet fn
+function! s:$1()
+	$0
+endfunction
+call s:$1()
+endsnippet
+
+snippet time_taken
+let start_time = common#Time()
+$0
+let time_taken = common#Time() - start_time
+echo "time_taken: ".printf("%f", time_taken)
+endsnippet

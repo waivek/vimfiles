@@ -1,0 +1,9 @@
+microsoft terminal - fix colors on selection and completion
+microsoft terminal - make CTRL-<Left> and CTRL-<Right> shortcuts work
+shell              - unify shortcuts on microsoft terminal, bashonubunutonwindows, ssh
+python             - package print_object, print_dict and print_table along with a shut_up() shorthand
+python             - move error handling helper to common package
+python             - make generalizable async getter for urls with the option of getting JSON or HTML
+python             - fetch_sqlite.py / dark mode generator / webscraper: make something that gets all urls on a domain, takes care of redirects and prevents duplication of html_contents in sqlite cache
+permissions        - fix permissions so that `sudo touch /etc/nginx/sites-available/scrape.conf;` does not ask for a password
+permissions        - fix permissions so that mkdir and rmdir in `var/www` does not ask for a password
