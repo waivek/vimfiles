@@ -176,16 +176,32 @@ endfunction
 nnoremap <silent> <buffer> 'm :call <SID>GoToMainPythonFunction()<CR>
 nnoremap <silent> <buffer> `m :call <SID>GoToMainPythonFunction()<CR>
 
-function! s:SingleLineTimer()
-    let indent = indent(".")
-    let spaces = repeat(" ", indent)
-    let line = getline(".")
-    let first_function =  matchstrpos(line, '\w\+\ze(')[0]
-    if len(first_function) == 0
+function! s:InsertFileTimer()
+    let view_save = winsaveview()
+    normal! gg
+    let timer_line = search("Timer(")
+    if timer_line == 0
+        echohl Error | echo "Missing: Timer()" | echohl Normal
         return
     endif
-    let start_string = printf('%stimer.start("%s")', spaces, first_function)."\n"
-    let print_string = printf('%stimer.print("%s")', spaces, first_function)."\n"
+    let timer_id = expand("%:t")
+    let start_string = printf('timer.start("%s")', timer_id)."\n"
+    let print_string = printf('timer.print("%s")', timer_id)."\n"
+    put=start_string
+    $put=print_string
+endfunction
+
+function! s:SingleLineTimer()
+    let first_function =  matchstrpos(getline("."), '\w\+\ze(')[0]
+    let import_line = matchstrpos(getline("."), 'import [^#;]*')[0]
+    if len(first_function) == 0 && len(import_line) == 0
+        return
+    endif
+    let timer_id = len(first_function) == 0 ? import_line : first_function
+    let indent = indent(".")
+    let spaces = repeat(" ", indent)
+    let start_string = printf('%stimer.start("%s")', spaces, timer_id)."\n"
+    let print_string = printf('%stimer.print("%s")', spaces, timer_id)."\n"
     let reg_save = @"
     let yank_start_save = getpos("'[")
     let yank_stop_save = getpos("']")
@@ -197,4 +213,43 @@ function! s:SingleLineTimer()
     normal! k
     normal! 
 endfunction
-nnoremap <silent> <buffer> <space>t :call <SID>SingleLineTimer()<CR>
+
+function! s:DeleteTimer()
+    if stridx(getline("."), "timer") == -1
+        return
+    endif
+    let reg_save = @"
+    normal! 0f"ya"
+    let timer_id = @"
+    let @" = reg_save
+    let partial_pattern = String2Pattern(timer_id)
+    let full_pattern = 'timer\..*'.partial_pattern
+    if stridx(getline("."), "start") > -1
+        normal! j
+        normal! ma
+    elseif stridx(getline("."), "print") > -1
+        normal! k
+        normal! ma
+    endif
+    execute 'g/'.full_pattern.'/d'
+    normal! 'a
+endfunction
+function! s:ToggleTimerSingleLine()
+    if stridx(getline("."), "timer") == -1
+        call s:SingleLineTimer()
+    else
+        call s:DeleteTimer()
+    endif
+endfunction
+
+function! s:VisualUltisnipsTimer()
+    call UltiSnips#SaveLastVisualSelection()
+    normal! gvstimer
+    call feedkeys("A\<C-j>")
+    return
+endfunction
+
+nnoremap <silent> <buffer> <space>t :call <SID>ToggleTimerSingleLine()<CR>
+vnoremap <silent> <space>t :<c-u>call <SID>VisualUltisnipsTimer()<CR>
+
+nnoremap <silent> <space>T :call <SID>InsertFileTimer()<CR>

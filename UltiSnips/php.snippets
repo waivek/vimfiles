@@ -6,3 +6,52 @@ snippet php
 $0
 ?>
 endsnippet
+
+priority 1
+snippet template
+<?php
+// TailwindCSS, VueJS via CDN
+ini_set('display_errors', '1');
+include 'share.php';
+?>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<title></title>
+		<style type="text/tailwindcss">
+		</style>
+		<script src="https://cdn-tailwindcss.vercel.app/3.0.0-alpha.2?plugins=line-clamp@0.2.2"></script>
+		<script src="https://unpkg.com/vue@3.2.26/dist/vue.global.js"></script>
+	</head>
+	<body>
+		<main>
+			<!--
+			<div v-for="D in date_dictionaries">
+				{{ D.key }}
+			</div>
+			-->
+		</main>
+		<?php
+		?>
+		<script>
+const app = Vue.createApp({
+	data() {
+		return { 
+		}
+	},
+	methods: {
+	},
+	computed: {
+	},
+	watch: {
+	}
+})
+const vm = app.mount('main')
+		</script>
+	</body>
+</html>
+endsnippet
+priority 0
+

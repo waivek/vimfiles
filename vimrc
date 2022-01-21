@@ -13,6 +13,10 @@ endif
 " }}}
 filetype indent plugin on | syntax on 
 
+let $PLUGINDIR = glob('~/vimfiles/pack/plugins')
+let $WSL = 'C:\Users\vivek\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\'
+
+
 if has("win32")
     source ~/vimfiles/plugin/colorscheme.vim
     colorscheme apprentice
@@ -198,11 +202,9 @@ iabbrev 's ’s
 iabbrev 't ’t
 " }}}
 " GROUP TOGETHER FOR EASIER DEBUGGING {{{
-if glob('C:\Program Files (x86)\Python\Python38-32\python38.dll')
-    let &pythonthreedll='C:\Program Files (x86)\Python\Python38-32\python38.dll'
-else
-    let &pythonthreedll='C:\Program Files (x86)\Python\Python37-32\python37.dll'
-endif
+let &pythonthreedll='C:\Program Files (x86)\Python\Python37-32\python37.dll'
+let &pythonthreedll='C:\Program Files\Python310\python310.dll'
+
 if has('python3')
     silent! python3 1
 endif
@@ -214,7 +216,6 @@ endif
 setlocal encoding=utf8
 " }}}
 " Plugin Settings {{{
-let $PLUGINDIR = glob('~/vimfiles/pack/plugins')
 packadd matchit
 packadd cfilter
 
@@ -230,8 +231,9 @@ let g:CoolTotalMatches=1
 nmap <Left> <Plug>Argumentative_MoveLeft
 nmap <Right> <Plug>Argumentative_MoveRight
 
+let g:jedi#added_sys_path = [ '/Users/vivek/Documents/Python' ]
 let g:jedi#completions_enabled    = 0
-let g:jedi#show_call_signatures   = 0
+let g:jedi#show_call_signatures   = 1
 let g:jedi#auto_vim_configuration = 0 " to prevent jedi from overriding 'completeopt'
 
 function! PyflakesRefinedCallback(buffer, lines) abort
@@ -289,6 +291,10 @@ let g:ale_linters = {
             \ 'javascript' : ['xo'],
             \ 'php' : ["php"]
             \ }
+" let g:ale_fixers = {
+"             \ 'python' : [ 'autoimport' ]
+"             \}
+" let g:ale_fix_on_save = 1
 let g:ale_lint_on_text_changed = 0
 let g:ale_lint_on_enter = 0
 let g:ale_html_tidy_options = '-q -e -language en --escape-scripts 0'
@@ -391,6 +397,26 @@ augroup AddFunctionHighlightGroups
     au!
     au Syntax * call s:FunctionSyntaxGroups()
     au Syntax * call s:AddHighlightGroups()
+augroup END
+
+function! s:PathSyntax()
+    syntax clear PathVariable
+    syntax clear PathBasename
+    syntax clear PathLinuxDirectory
+
+    syntax match PathVariable /\$[a-z_A-Z0-9]\+/
+    syntax match PathVariable /\~/
+
+    syntax match PathBasename /[^\/\\]\+\(["']\|$\)/
+    syntax match PathLinuxDirectory /\/.*\// contains=ALL
+
+    hi link PathVariable Identifier
+    hi link PathBasename Function
+    hi link PathLinuxDirectory String
+endfunction
+augroup AddPathHighlightGroups
+    au!
+    " au Syntax * call s:PathSyntax()
 augroup END
 
 function! s:normal_to_curly_quotes()
@@ -1108,3 +1134,9 @@ function! s:AmazonItem()
     call setpos(".", pos_save)
 endfunction
 command! AmazonItem call <SID>AmazonItem()
+
+function! s:WslFiles()
+    %s/C:\\Users\\vivek\\AppData\\Local\\Packages\\CanonicalGroupLimited\.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs/$WSL
+    %s/\\/\//g
+endfunction
+command! WslFiles call <SID>WslFiles()
