@@ -2,6 +2,22 @@
 " Auto-indenting of hypens (-)     = 'comments'
 " Auto-indenting of the word 'for' = 'cinwords'
 
+" VIMRC GUIDES:
+"
+" 1. Reduce as many functions into nested ternary operators. Avoids complexity
+"    and reduces `function` blocks from polluting vimrc
+"
+" 2. Ensure compatibility. Check for `repeat#set` function existence etc. You
+"    should be able to use this vimrc in WSL and linux without getting errors.
+"
+" 3. Prioritize typing latency and buffer switching latency. Plugins slow you
+"    down when typing. Without jedi, scroll.vim it feels faster and more
+"    productive. tagalong.vim was also incurring mental overhead cost as it 
+"    kept fucking up PASTE operation.
+"
+"    Filetypes: .vim 329, .html 324, .py 292, .json 107, .css 89, .bat 79, 
+"               .js 57, .md 46, .php 36, .afl 25, .go 24, .svg 21, .log 18, 
+"               .rst 14, .m3u8 13, .sql 10, .snippets 10 
 
 
 set history=10000
@@ -13,8 +29,17 @@ endif
 " }}}
 filetype indent plugin on | syntax on 
 
-let $PLUGINDIR = glob('~/vimfiles/pack/plugins')
-let $WSL = 'C:\Users\vivek\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\'
+call plug#begin()
+Plug 'dense-analysis/ale'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+call plug#end()
+if has("win32")
+    source ~/vimfiles/ide.vim
+endif
+
+if has("win32")
+    let $WSL = 'C:\Users\vivek\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\'
+endif
 
 
 if has("win32")
@@ -24,6 +49,10 @@ if has("win32")
 
 endif
 
+set nobackup
+" set backup
+" set writebackup " Only creates Dropbox Errors
+" set backupdir=C:/Users/vivek/vimfiles/backupfiles,.
 
 " Unix {{{
 if has("unix")
@@ -129,7 +158,7 @@ set shiftwidth=4  " Allows you to use < and > keys in -- VISUAL --
 set softtabstop=4 " Makes vim see four spaces as a <TAB>
 set expandtab     " Inserts 4 spaces when <TAB> is pressed
 
-set nowritebackup " Only creates Dropbox Errors
+" set nowritebackup " Only creates Dropbox Errors
 set noswapfile " Only creates Dropbox Errors
 
 set nrformats-=octal " To make CTRL-A work on 07
@@ -277,7 +306,9 @@ augroup VimrcAle
 augroup END
 
 function! DisableUltiSnipsTracker()
-    au! UltiSnips_AutoTrigger
+    if exists("#UltiSnips_AutoTrigger")
+        au! UltiSnips_AutoTrigger
+    endif
 endfunction
 augroup VimrcDisableUltiSnipsTracker
     au!
@@ -503,7 +534,7 @@ function! PreviousIndent(mode)
         call search(regexp, 'be')
     endif
 
-    " Handle if <Tab>'s are used for indentation. These are not found my the
+    " Handle if <Tab>'s are used for indentation. These are not found by the
     " regexp. We then manually go up each line
     if indent(".") == start_indent && indent(".") > 0
         let reversed_line_numbers = reverse(range(line("."))[1:])
@@ -969,7 +1000,9 @@ function! DateInsert()
         au CompleteDone * call DateRestore()
     augroup END
     return "\<C-x>\<C-u>"
+
 endfunction
+
 inoremap <expr> <A-;> DateInsert()
 
 
@@ -1135,8 +1168,25 @@ function! s:AmazonItem()
 endfunction
 command! AmazonItem call <SID>AmazonItem()
 
-function! s:WslFiles()
+function! s:WslFilesSubstitute()
     %s/C:\\Users\\vivek\\AppData\\Local\\Packages\\CanonicalGroupLimited\.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs/$WSL
     %s/\\/\//g
 endfunction
-command! WslFiles call <SID>WslFiles()
+command! WslFilesSubstitute call <SID>WslFilesSubstitute()
+
+function! s:Frequency()
+    %sort
+    %!uniq -c
+    %sort! n
+endfunction
+command! Frequency call <SID>Frequency()
+
+cabbrev <expr> V len(getcmdline()) == 1 ? (bufexists($MYVIMRC) ? "b ".expand($MYVIMRC): "edit $MYVIMRC") : 'V'
+
+nnoremap <silent> <Space>/ :s#\\#/#g<CR>
+nnoremap <silent> <Space>\ :s#/#\\#g<CR>
+
+nmap <space>f <Plug>SearchOnScreen
+
+cabbrev <expr> ln len(getcmdline()) == 2 && getcmdtype() == ":" ? 'lnext' : 'ln'
+

@@ -19,7 +19,7 @@ endfunction
 " }}}
 function! s:SearchVimFunction()
     call s:RestoreWrapscanOnCmdlineLeave()
-    return '/^\s*function!\?\s\+\(s:\)\?\(\w\+#\)\?'
+    return '/^\s*function!\?\s\+\(s:\)\?\(\w\+#\)\?\w*'
     " Doesn’t handle dotty#GetMatchByteOffsets()
     " return '/^\s*function!\?\s\+\(s:\)\?'
 endfunction

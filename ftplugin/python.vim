@@ -36,7 +36,7 @@ function! GdInFile()
     " }}}
 
     normal! yiw
-    let search_pattern = 'def\s\+\zs'.@".'\>'
+    let search_pattern = '\(def\|class\)\s\+\zs'.@".'\>'
 
     let @/ = search_pattern
 
@@ -253,3 +253,78 @@ nnoremap <silent> <buffer> <space>t :call <SID>ToggleTimerSingleLine()<CR>
 vnoremap <silent> <space>t :<c-u>call <SID>VisualUltisnipsTimer()<CR>
 
 nnoremap <silent> <space>T :call <SID>InsertFileTimer()<CR>
+
+function! s:PythonShortcuts()
+    " [[ PREVIOUS class|def
+    " ]] NEXT class|def
+    " [M PREVIOUS Method End
+    " ]M NEXT Method End
+endfunction
+
+function! s:ClassOrMethodEnd(value)
+    if a:value == 'class'
+        let error_string = "Not in class"
+        let search_regexp = '^\s*class'
+    elseif a:value == 'method'
+        let error_string = "Not in method"
+        let search_regexp = '^\s*def'
+    endif
+    let view_save = winsaveview()
+    let initial_line = line(".")
+    let structure_start_line = search(search_regexp, 'bc')
+    if structure_start_line == 0
+        echo error_string
+        return
+    endif
+    let structure_start_indent = indent(structure_start_line)
+    let regexp = printf('^\s\{0,%d\}\S', structure_start_indent)
+    let search_line = search(regexp)
+    if search_line == 0 " The class is the last structure in the file.
+        normal! G
+    endif
+    let regexp = printf('^\s\{%d,\}[^# ]', structure_start_indent+1)
+    call search(regexp, 'b')
+    normal! $
+    if line(".") < initial_line
+        call winrestview(view_save)
+        echo error_string
+    endif
+endfunction
+
+function! s:MethodEnd()
+    call s:ClassOrMethodEnd('method')
+endfunction
+function! s:MethodEndVisual()
+    let start_pos = getpos(".")
+    call s:MethodEnd()
+    let end_pos = getpos(".")
+    call setpos("'<", start_pos)
+    call setpos("'>", end_pos)
+    normal! gv
+endfunction
+
+
+function! s:ClassEnd()
+    call s:ClassOrMethodEnd('class')
+endfunction
+function! s:ClassEndVisual()
+    let start_pos = getpos(".")
+    call s:ClassEnd()
+    let end_pos = getpos(".")
+    call setpos("'<", start_pos)
+    call setpos("'>", end_pos)
+    normal! gv
+endfunction
+
+function! s:AsyncMethodMappings(timer_id)
+    nmap <silent> <buffer> ]m :call <SID>MethodEnd()<CR>
+    xmap <silent> <buffer> ]m :<c-u>call <SID>MethodEndVisual()<CR>
+    omap <silent> <buffer> ]m :<c-u>call <SID>MethodEndVisual()<CR>
+endfunction
+
+call timer_start(1, function('s:AsyncMethodMappings'))
+
+nmap <buffer> <silent> ]c :call <SID>ClassEnd()<CR>
+xmap <buffer> <silent> ]c :<c-u>call <SID>ClassEndVisual()<CR>
+onoremap ]c :<c-u>call <SID>ClassEndVisual()<CR>
+

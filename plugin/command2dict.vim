@@ -1,11 +1,11 @@
 " s:ListCursorAutocommands() {{{
 " [au_group] | Cool  CursorMoved
 " [au_cmd]   |    *         call <SID>StartHL()
-function! s:ListCursorAutocommands()
+function! ListCursorAutocommands()
     let l:messages = ""
     redir => l:messages
     " silent au CursorMoved
-    " silent au CursorMovedI
+    silent au CursorMovedI
     " silent au TextChanged
     " silent au TextChangedI
     " silent au InsertChange

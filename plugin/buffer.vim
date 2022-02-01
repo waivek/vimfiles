@@ -1,4 +1,6 @@
 
+finish
+
 function! s:DrawPopupOnCmdline(string)
     let popup_id = popup_create(a:string, {"borderhighlight": ["StatusLineNC"], "line" : winheight(0)+2, "col": 1, "zindex": 1 })
     call setwinvar(popup_id, '&wincolor', 'String')

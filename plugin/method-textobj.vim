@@ -257,30 +257,30 @@ function! s:VisualSelect(L)
     call setpos('.', end_pos)
 endfunction
 
-xnoremap  <silent> im :<c-u>call <sid>VisualSelect(<sid>CurrentFnameI())<CR>
-xnoremap  <silent> am :<c-u>call <sid>VisualSelect(<sid>CurrentFnameA())<CR>
-xnoremap  <silent> aM :<c-u>call <sid>VisualSelect(<sid>CurrentFnameBigA())<CR>
-xnoremap  <silent> iM :<c-u>call <sid>VisualSelect(<sid>CurrentFnameBigI())<CR>
+xnoremap  <silent> if :<c-u>call <sid>VisualSelect(<sid>CurrentFnameI())<CR>
+xnoremap  <silent> af :<c-u>call <sid>VisualSelect(<sid>CurrentFnameA())<CR>
+xnoremap  <silent> af :<c-u>call <sid>VisualSelect(<sid>CurrentFnameBigA())<CR>
+xnoremap  <silent> if :<c-u>call <sid>VisualSelect(<sid>CurrentFnameBigI())<CR>
 
-onoremap  <silent> im :<c-u>call <sid>VisualSelect(<sid>CurrentFnameI())<CR>
-onoremap  <silent> am :<c-u>call <sid>VisualSelect(<sid>CurrentFnameA())<CR>
-onoremap  <silent> aM :<c-u>call <sid>VisualSelect(<sid>CurrentFnameBigA())<CR>
-onoremap  <silent> iM :<c-u>call <sid>VisualSelect(<sid>CurrentFnameBigI())<CR>
+onoremap  <silent> if :<c-u>call <sid>VisualSelect(<sid>CurrentFnameI())<CR>
+onoremap  <silent> af :<c-u>call <sid>VisualSelect(<sid>CurrentFnameA())<CR>
+onoremap  <silent> af :<c-u>call <sid>VisualSelect(<sid>CurrentFnameBigA())<CR>
+onoremap  <silent> if :<c-u>call <sid>VisualSelect(<sid>CurrentFnameBigI())<CR>
 
-nmap csm cim
+nmap csf cif
 
 augroup MethodTextObj
     au!
-    au BufRead * silent! nunmap <buffer> ]m
-    au BufRead * silent! vunmap <buffer> ]m
-    au BufRead * silent! nunmap <buffer> [m
-    au BufRead * silent! vunmap <buffer> [m
+    au BufRead * silent! nunmap <buffer> ]f
+    au BufRead * silent! vunmap <buffer> ]f
+    au BufRead * silent! nunmap <buffer> [f
+    au BufRead * silent! vunmap <buffer> [f
 augroup END
-nnoremap <silent> ]m :call search('[a-zA-Z.0-9_]\+\s*\ze(')<CR>
-vnoremap <silent> ]m :call search('[a-zA-Z.0-9_]\+\s*\ze(')<CR>
+nnoremap <silent> ]f :call search('[a-zA-Z.0-9_]\+\s*\ze(')<CR>
+vnoremap <silent> ]f :call search('[a-zA-Z.0-9_]\+\s*\ze(')<CR>
 
-nnoremap <silent> [m :call search('[a-zA-Z.0-9_]\+\s*\ze(', 'b')<CR>
-vnoremap <silent> [m :call search('[a-zA-Z.0-9_]\+\s*\ze(', 'b')<CR>
+nnoremap <silent> [f :call search('[a-zA-Z.0-9_]\+\s*\ze(', 'b')<CR>
+vnoremap <silent> [f :call search('[a-zA-Z.0-9_]\+\s*\ze(', 'b')<CR>
 
 " console.log("hello");
 " print("Hey")
@@ -305,7 +305,7 @@ function! s:DeleteSurroundingMethod()
 endfunction
 
 nmap  <silent> <Plug>DeleteSurroundingMethod :<c-u>call <sid>DeleteSurroundingMethod()<CR>
-nmap  <silent> dsm <Plug>DeleteSurroundingMethod
+nmap  <silent> dsf <Plug>DeleteSurroundingMethod
 " }}}
 
 function! Log(m, poslist)
@@ -317,4 +317,4 @@ function! Log(m, poslist)
 endfunction
 
 
-nmap <Space>m ysiWf
+nmap <Space>f ysiWf

@@ -443,11 +443,18 @@ function! UpdatePositionCache(...)
     let g:repeat_position_cache = dotty#GetMatchByteOffsets()
 endfunction
 
-function! s:SetHls(timer_id)
+function! SetHls(timer_id)
     call feedkeys(":set hls\<CR>")
-
 endfunction
-function! PrintDebugInfo(...)
+
+function! ShowHighlight(timer_id)
+    set hls
+endfunction
+function! AsyncShowHighlight()
+    call timer_start(1000, function("ShowHighlight"))
+endfunction
+
+function! PrintDebugInfo()
     " let g:repeat_position_cache = dotty#GetMatchByteOffsets()
 
     let l:cursor_position = line2byte(".") + col(".") - 1
@@ -466,12 +473,13 @@ function! PrintDebugInfo(...)
     call common#AsyncPrint(l:message, 1)
 
 endfunction
-function! UpdateCacheAndPrintInfo(...)
+function! UpdatePositionCacheAndPrintDebugInfo(...)
     call  UpdatePositionCache()
     call  PrintDebugInfo()
 endfunction
 let g:repeat_position_cache = []
 let g:match_identifier = -1
+let g:match_window = -1
 
 function! SliceList(L, start, end=-1)
     if a:start == a:end
@@ -485,7 +493,8 @@ endfunction
 
 
 function! ResetRepeatMaps()
-    nnoremap . :norm! .<CR>
+    " nnoremap . :norm! .<CR>
+    nunmap .
     nunmap n
 endfunction
 function! RepeatChange()
@@ -523,6 +532,10 @@ function! RepeatChange()
         let cursor_position = line2byte(".") + col(".") - 1
         let index_to_remove = index(g:repeat_position_cache, cursor_position)
         if index_to_remove == -1
+            echohl Error | echo "No more matches" | echohl Normal
+            return
+            let cache_size = len(g:repeat_position_cache)
+            echoerr "len(g:repeat_position_cache) = " . cache_size
             echoerr "index_to_remove == -1; byte offset: ".cursor_position." not found"
         endif
 
@@ -536,7 +549,7 @@ function! RepeatChange()
         let difference = strlen(@.) - strlen(@")
         call map(g:repeat_position_cache, { _, position -> position > cursor_position ? position + difference : position })
 
-        call PrintDebugInfo(1)
+        call PrintDebugInfo()
         " call timer_start(1, function("PrintDebugInfo"))
     else
         let pattern_matches_entire_deleted_text = matchstr(@", @/) ==# @"
@@ -550,9 +563,10 @@ function! RepeatChange()
         let g:repeating = v:true
         " call  timer_start(1, function('UpdatePositionCache'))
         " call  timer_start(50, function('PrintDebugInfo'))
-        call  timer_start(1, function('UpdateCacheAndPrintInfo'))
+        call  timer_start(1, function('UpdatePositionCacheAndPrintDebugInfo'))
         " call s:SetHls(1)
         let g:match_identifier = matchadd('Search', @/)
+        let g:match_window = win_getid()
 
     endif
 
@@ -640,6 +654,12 @@ endfu
 
 " Bug: ma~da | ma~da
 function! CheckIfCursorMoveWasCausedByDotOperator()
+    " ASSUMPTION: Only works if the last CursorMove was triggered by a change.
+    " If you do a change -> ESCAPE -> Go somewhere else then comeback manually,
+    " this fn returns v:true which is incorrect. This function is only accurate
+    " if we have already established the most recent cursor move was from a
+    " change.
+    "
     " After a dot operator takes place, we end up in normal mode. The impetus
     " for putting this if-condition was interference with UltiSnips. In
     " UltiSnips, pressing <Tab> to jump to the next placeholder was triggering
@@ -679,6 +699,19 @@ function! CheckIfCursorMoveWasCausedByDotOperator()
 
 endfunction
 
+function! CursorOnMatch()
+    let [search_line, search_pos] = searchpos(@/, "cn")
+    let [_, cursor_line, cursor_pos, _] = getpos(".")
+    return search_line == cursor_line && search_pos == cursor_pos
+endfunction
+
+function! CursorOnMatchEnd()
+    let [search_line, search_pos] = searchpos(@/, "cn")
+    let [_, cursor_line, cursor_pos, _] = getpos(".")
+    return search_line == cursor_line && search_pos == cursor_pos
+endfunction
+
+
 function! s:RemoveAllOverrides()
     call NewCell("fail", "RemoveAllOverrides")
     let pass_message = "pass: mappings, globals & au’s reset"
@@ -687,15 +720,27 @@ function! s:RemoveAllOverrides()
     if g:override_pos == getpos(".")
         return
     endif
+
     let cursor_move_was_caused_by_dot_operator = CheckIfCursorMoveWasCausedByDotOperator()
     if cursor_move_was_caused_by_dot_operator
         call UpdateCell("fail: cursor moved by dot operator")
         return
     endif
 
+    let cursor_on_match = CursorOnMatch()
+    if cursor_on_match
+        " Offload StopHl() responsibility to cool.vim
+        " If dotty is only concerned about HL DURING Repeat, it removes a lof
+        " of complexity from RepeatChange, InitializeDotOverride and
+        " RemoveAllOverrides
+        call s:SetHls(1) 
+    endif
+
+
     if g:repeating
-        call matchdelete(g:match_identifier)
+        call matchdelete(g:match_identifier, g:match_window)
         let g:match_identifier = -1
+        let g:match_window = -1
     endif
 
     let g:override_pos = []
@@ -747,6 +792,7 @@ function! s:ToggleWholeKeywordOverride()
     call ModifyDotOverride()
     nnoremap <silent> gs :call <SID>ToggleWholeKeyword()<CR>
 endfunction
+
 function! s:InitializeDotOverride()
 
     call NewRow("fail", "InitializeDotOverride")
@@ -760,8 +806,24 @@ function! s:InitializeDotOverride()
     nnoremap <silent> n :call <SID>NextPatternOverride()<CR>
     nnoremap <silent> gs :call <SID>ToggleWholeKeywordOverride()<CR>
 
+
+    let should_check_cursor_move = v:false
+    let cursor_move_was_caused_by_dot_operator = CheckIfCursorMoveWasCausedByDotOperator()
+    if should_check_cursor_move && cursor_move_was_caused_by_dot_operator
+        " let g:repeating = v:true
+        " call  timer_start(1, function('UpdatePositionCacheAndPrintDebugInfo'))
+        
+        echoerr "IN IF"
+        call UpdatePositionCache()
+        let g:match_identifier = matchadd('Search', @/)
+        let g:match_window = win_getid()
+
+    endif
+
     au DotOverride CursorMoved * call s:RemoveAllOverrides()
     call UpdateCell("pass")
+
+
 endfunction
 
 function! s:YankPost()

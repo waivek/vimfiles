@@ -4,6 +4,11 @@
 "   map ga, gr to Reset()
 "   set global_glob in the vim file itself, above UI() function
 
+" :e   - Edit file in current directory or relative path
+" :fi  - Find file 'path'
+" :b   - Go to loaded buffer
+" :MRU - Filter v:oldfiles
+" Log access count via :e :b :MRU len(undolist)
 
 function! s:GetStrBeforeColon(str)
     let colon_pos = match(a:str, ":")
@@ -349,7 +354,7 @@ augroup MruPreview
     au CmdlineChanged : call GuiIfMru()
     au CmdlineLeave : call CloseUI2Popup()
     "
-    " au CmdlineChanged : call timer_start(0, {_-> _})
+    au CmdlineChanged : call timer_start(0, {_-> _})
 augroup END
 function! EnableHotReload()
     augroup HotReload
@@ -357,3 +362,4 @@ function! EnableHotReload()
         au BufWritePost <buffer> source %
     augroup END
 endfunction
+

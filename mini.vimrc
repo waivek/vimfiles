@@ -6,16 +6,27 @@ set nocompatible
 
 setlocal encoding=utf8
 
-let this_blue_color = "Hello, World"
-let this_green_color = "Hello, World"
+
+" Reasons To Use over /pack/
+" 1. Faster to toggle plugins. With /pack/ you have to open Folder and move
+" 2. Automates `helptags .`, and documentation is always taken care of
+call plug#begin()
+Plug 'dense-analysis/ale'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+call plug#end()
 
 
-let &pythonthreedll='C:\Program Files (x86)\Python\Python37-32\python37.dll'
+let &pythonthreedll='C:\Program Files\Python310\python310.dll'
 let s:vim_path = ""
 if has("win32")
     let s:vim_path = glob("~/vimfiles")
 elseif has("unix")
     let s:vim_path = glob("~/vim")
+endif
+
+set undofile
+if has("win32")
+    set undodir=C:/Users/vivek/vimfiles/undofiles,.
 endif
 
 if has('python3')
@@ -43,12 +54,15 @@ set wildcharm=<C-z>
 set wildmenu
 set wildmode=full
 set belloff=all
+set completeopt=menuone,popup
 
 set smartindent   " Automatically indents when and where required
 set tabstop=4     " Sets tab width to 4
 set shiftwidth=4  " Allows you to use < and > keys in -- VISUAL --
 set softtabstop=4 " Makes vim see four spaces as a <TAB>
 set expandtab     " Inserts 4 spaces when <TAB> is pressed
+
+set foldmethod=marker
 
 set guioptions=M
 au GUIEnter * simalt ~x " Maximized
@@ -111,6 +125,7 @@ nnoremap <C-w>L <C-w>K
 nnoremap <C-w>: <C-w>L
 
 inoremap jk 
+inoremap <C-v> <C-r>+
 cnoremap jk <C-f>
 
 nnoremap h "+
@@ -128,6 +143,12 @@ nnoremap <C-k> <C-f>
 nnoremap <C-l> <C-b>
 " }}}
 
-
-
 nnoremap <Space>l <C-^>
+nnoremap <silent> <Space>/ :s#\\#/#g<CR>
+nnoremap <silent> <Space>\ :s#/#\\#g<CR>
+
+inoremap <C-v> <C-r>+
+
+set nowrap
+
+source ~/vimfiles/ide.vim

@@ -10,8 +10,9 @@
 
 
 if exists("g:loaded_cool") || v:version < 703 || &compatible
-    " finish
+    finish
 endif
+
 let g:loaded_cool = 1
 
 let s:save_cpo = &cpo
