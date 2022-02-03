@@ -193,7 +193,7 @@ endfunction
 
 function! s:SingleLineTimer()
     let first_function =  matchstrpos(getline("."), '\w\+\ze(')[0]
-    let import_line = matchstrpos(getline("."), 'import [^#;]*')[0]
+    let import_line = matchstrpos(getline("."), 'import [^#; ]*')[0]
     if len(first_function) == 0 && len(import_line) == 0
         return
     endif

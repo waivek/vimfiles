@@ -775,7 +775,6 @@ function! WriteAbbrev()
     endfor
 endfunction
 call WriteAbbrev()
-cabbrev <expr> o len(getcmdline()) == 1 ? "!start %" : "o"
 
 function! s:GetRecentBufNrs()
     let first_window_nr = 1
@@ -820,10 +819,6 @@ augroup VimrcDeleteNonRecentBuffers
     au!
     au VimLeavePre * call <SID>DeleteNonRecentBuffers()
 augroup END
-
-cabbrev grep grep -g *.<C-r>=expand("%:e")<CR>
-
-cabbrev <expr> W len(getcmdline()) == 1 ? 'e ~\Desktop\website' : 'W'
 
 
 
@@ -897,7 +892,6 @@ let g:asyncomplete_enable_for_all = 0
 let g:SuperTabDefaultCompletionType="context"
 let g:SuperTabCrMapping=1
 let g:SuperTabCompleteCase="match"
-set completeopt=menuone
 set shortmess+=c " Don’t show message and errors in ins-completion-menu
 set completeslash=slash " In windows, we want HTML file-completion in insert mode to have '/' in the path
 
@@ -1129,15 +1123,6 @@ endfunction
 " call PyGrep()
 command! -nargs=1 PyGrep call s:PyGrep(<q-args>)
 
-
-function! s:OpenTodoFile()
-    let date_str = strftime("%y%m%d")
-    let filename = date_str . ".txt"
-    let path = "~/vimfiles/todo/".filename
-    execute "edit ".path
-endfunction
-nnoremap <silent> <space>o :call <SID>OpenTodoFile()<CR>
-
 function! s:GoAfterEqual()
     if stridx(getline("."), "=") > -1
         normal! 0f=w
@@ -1181,6 +1166,29 @@ function! s:Frequency()
 endfunction
 command! Frequency call <SID>Frequency()
 
+function! s:HighlightKeywords()
+    call matchadd("Identifier", "TODO")
+    call matchadd("String", "WRITE")
+endfunction
+command! HighlightKeywords call <SID>HighlightKeywords()
+
+
+function! s:OpenTodoFile()
+    let date_str = strftime("%y%m%d")
+    let filename = date_str . ".txt"
+    let path = "~/vimfiles/todo/".filename
+    execute "edit ".path
+endfunction
+
+
+cabbrev grep grep -g *.<C-r>=expand("%:e")<CR>
+
+cabbrev <expr> W len(getcmdline()) == 1 ? 'e ~\Desktop\website' : 'W'
+
+
+nnoremap <silent> <space>o :call <SID>OpenTodoFile()<CR>
+cabbrev <expr> o len(getcmdline()) == 1 ? "!start %" : "o"
+
 cabbrev <expr> V len(getcmdline()) == 1 ? (bufexists($MYVIMRC) ? "b ".expand($MYVIMRC): "edit $MYVIMRC") : 'V'
 
 nnoremap <silent> <Space>/ :s#\\#/#g<CR>
@@ -1189,4 +1197,3 @@ nnoremap <silent> <Space>\ :s#/#\\#g<CR>
 nmap <space>f <Plug>SearchOnScreen
 
 cabbrev <expr> ln len(getcmdline()) == 2 && getcmdtype() == ":" ? 'lnext' : 'ln'
-

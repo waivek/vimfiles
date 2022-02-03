@@ -317,4 +317,4 @@ function! Log(m, poslist)
 endfunction
 
 
-nmap <Space>f ysiWf
+" nmap <Space>f ysiWf

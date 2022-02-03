@@ -153,6 +153,7 @@ function! ShowDocumentation()
     endif
 endfunction
 
+set completeopt=menuone,popup
 set complete=.,w
 inoremap <silent> <expr> <c-space>  coc#refresh()
 nnoremap <silent>        <leader>d  :call CocAction('jumpDefinition')<CR>

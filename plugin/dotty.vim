@@ -443,7 +443,7 @@ function! UpdatePositionCache(...)
     let g:repeat_position_cache = dotty#GetMatchByteOffsets()
 endfunction
 
-function! SetHls(timer_id)
+function! s:SetHls(timer_id)
     call feedkeys(":set hls\<CR>")
 endfunction
 
