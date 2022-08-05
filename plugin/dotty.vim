@@ -110,6 +110,11 @@
 " let highlighted_string = strcharpart(getline("'<"), col("'<")-1, col("'>") - col("'<")+1)
 
 let g:dot_modifications_enabled = v:true
+
+let s:underline_highlight_group = 'VisualNOS'
+let s:search_highlight_group = s:underline_highlight_group
+let s:search_highlight_group = 'Search'
+
 function! ToggleDotModifications()
     let g:dot_modifications_enabled = !g:dot_modifications_enabled
     if g:dot_modifications_enabled
@@ -565,7 +570,7 @@ function! RepeatChange()
         " call  timer_start(50, function('PrintDebugInfo'))
         call  timer_start(1, function('UpdatePositionCacheAndPrintDebugInfo'))
         " call s:SetHls(1)
-        let g:match_identifier = matchadd('Search', @/)
+        let g:match_identifier = matchadd(s:search_highlight_group, @/)
         let g:match_window = win_getid()
 
     endif
@@ -722,6 +727,7 @@ function! s:RemoveAllOverrides()
     endif
 
     let cursor_move_was_caused_by_dot_operator = CheckIfCursorMoveWasCausedByDotOperator()
+    " echoerr "cursor_move_was_caused_by_dot_operator: " . cursor_move_was_caused_by_dot_operator
     if cursor_move_was_caused_by_dot_operator
         call UpdateCell("fail: cursor moved by dot operator")
         return
@@ -733,7 +739,8 @@ function! s:RemoveAllOverrides()
         " If dotty is only concerned about HL DURING Repeat, it removes a lof
         " of complexity from RepeatChange, InitializeDotOverride and
         " RemoveAllOverrides
-        call s:SetHls(1) 
+
+        " call s:SetHls(1) 
     endif
 
 
@@ -768,6 +775,7 @@ endfunction
 " →   condition_2: cursor has not moved after replacement
 " }}}
 
+
 function! s:NextPatternOverride()
     let pattern_matches_entire_deleted_text = matchstr(@", @/) ==# @"
     let pattern_does_not_match_entire_deleted_text = !pattern_matches_entire_deleted_text
@@ -775,10 +783,16 @@ function! s:NextPatternOverride()
         let search_string = String2Pattern(@")
         let @/ = search_string
     endif
-    " let search_string = String2Pattern(@")
-    " let @/ = search_string
-    call feedkeys("n", "n")
+    " let no_more_matches = search()
+    let no_more_matches = search(@/, 'n') == 0
+    if no_more_matches
+        " echo 'no more matches'
+        call UpdatePositionCacheAndPrintDebugInfo()
+    else
+        call feedkeys("n", "n")
+    endif
 endfunction
+
 function! s:ToggleWholeKeywordOverride()
     " Duplicate 1, Original: RepeatChange
     let pattern_matches_entire_deleted_text = matchstr(@", @/) ==# @"
@@ -807,15 +821,13 @@ function! s:InitializeDotOverride()
     nnoremap <silent> gs :call <SID>ToggleWholeKeywordOverride()<CR>
 
 
-    let should_check_cursor_move = v:false
+    let should_check_cursor_move = v:true
     let cursor_move_was_caused_by_dot_operator = CheckIfCursorMoveWasCausedByDotOperator()
-    if should_check_cursor_move && cursor_move_was_caused_by_dot_operator
-        " let g:repeating = v:true
-        " call  timer_start(1, function('UpdatePositionCacheAndPrintDebugInfo'))
-        
-        echoerr "IN IF"
+    if should_check_cursor_move && cursor_move_was_caused_by_dot_operator && v:hlsearch
+        " v:hlsearch solves Problem 2 and Problem 4
         call UpdatePositionCache()
-        let g:match_identifier = matchadd('Search', @/)
+        let g:repeating = v:true
+        let g:match_identifier = matchadd(s:search_highlight_group, @/)
         let g:match_window = win_getid()
 
     endif

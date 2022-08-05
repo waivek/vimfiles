@@ -1,8 +1,8 @@
-dotty       - When there is only 1 match to a new search, we get an error We should instead get 'Match 1 of 1'
-dotty       - When we are on last match, we get error. We should instead get 'Match n of n'
-gd [python] - Make 'gd' work on class declarations as well
+dotty       - When there is only 1 match to a new search, we get an error We should instead get ‘Match 1 of 1’
+dotty       - When we are on last match, we get error. We should instead get ‘Match n of n’
+gd [python] - Make `gd` work on class declarations as well
 * / #       - Star is not case sensitive. 
               It break the ‘Match n of N’ message when you press * on something that starts with uppercase and there is also a match that starts with lowercase. 
               It breaks the normalization of ‘?’ and ‘/’ in BetterQuestionMark.
-              This seems to be because of 'smartcase' and the search (@/) beginning with '\<'
+              This seems to be because of `smartcase` and the search (@/) beginning with `\<`
 gd [python] - You don’t gd on a non-method/class. So if gd is invalid, make it search for a method backwards and gd that i.e., nmap gd [mgd

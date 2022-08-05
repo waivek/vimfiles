@@ -289,7 +289,9 @@ vnoremap <silent> [f :call search('[a-zA-Z.0-9_]\+\s*\ze(', 'b')<CR>
 " print("Hey")
 " print("Hey")
 function! s:DeleteSurroundingMethod()
-    call repeat#set("\<Plug>DeleteSurroundingMethod")
+    if exists("*repeat#set")
+        call repeat#set("\<Plug>DeleteSurroundingMethod")
+    endif
     let pos_list = s:CurrentFnameBigA()
     let [_, _, end_pos] = pos_list
     let [_, _, around_finish_col, _] = end_pos

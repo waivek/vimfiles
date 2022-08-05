@@ -177,18 +177,28 @@ command! Jlast call LastJump()
 " 2. JavaScript code blocks & comment blocks
 " 3. VimScript code blocks & comment blocks
 function! BetterZF()
-    let fmt_save = &formatoptions
-    set formatoptions-=o
-    execute "normal! '>o" . repeat("}", 3)
-    TComment
-    execute "normal! '<O" . repeat("{", 3)
-    TComment
+    " We do it this way to avoid 'indent', 'expandtab' headaches
+    let reg_save = @"
+    let start_line = getline("'<")
+    let cms = trim(printf(&cms, ""))
+    let sub_string = cms . " " . repeat("{", 3)
+    let fold_start_line = substitute(start_line, '^\s*\zs\S.*', sub_string, "") . "\n"
+    let fold_end_line = substitute(fold_start_line, "{", "}", "g")
+    let @" = fold_end_line
+    normal! '>p
+    let @" = fold_start_line
+    normal! '<P
     normal! ^f 
-    let &formatoptions = fmt_save
+    let @" = reg_save
     call feedkeys("i ")
 endfunction
 vnoremap zf :<c-u>call BetterZF()<CR>
 
+function s:Test()
+    print("HELLO")
+        print("No"
+    endif
+endfunction
 " }}}
 
 " BD_Bang {{{
@@ -234,6 +244,7 @@ endfunction
 " nnoremap <silent> `` :call BetterBacktick()<CR>
 " }}}
 
+" ChangeUp {{{
 function! ChangeUp()
     let [change_dictionaries, current_change_number] = getchangelist()
     if current_change_number > len(change_dictionaries)-1
@@ -252,6 +263,9 @@ function! ChangeUp()
     endfor
     call cursor(target_pos)
 endfunction
+" }}}
+
+" ChangeDown {{{
 function! ChangeDown()
     let [change_dictionaries, current_change_number] = getchangelist()
     if current_change_number > len(change_dictionaries)-1
@@ -270,6 +284,8 @@ function! ChangeDown()
     endfor
     call cursor(target_pos)
 endfunction
+" }}}
+
 nnoremap <silent> `l :call ChangeUp()<CR>
 nnoremap <silent> `k :call ChangeDown()<CR>
 
@@ -289,6 +305,7 @@ nnoremap <silent> `k :call ChangeDown()<CR>
 "     </div>
 " </body>
 " }}}
+" BetterIT {{{
 function! BetterIT(mode)
 
     let is_selection = a:mode ==# "selection"
@@ -313,14 +330,12 @@ function! BetterIT(mode)
         endif
     endif
 endfunction
+" }}}
+
 xnoremap it :<c-u>call BetterIT("selection")<CR>
 onoremap it :<c-u>call BetterIT("operation")<CR>
 
-" augroup HotReload
-"     au!
-"     au BufWritePost <buffer> source %
-" augroup END
-
+" BetterQuestionMark (deprecated, too complex, easier to remap n and N) {{{
 function! Unmap()
     if getcmdtype() !=# "/"
         return
@@ -329,23 +344,33 @@ function! Unmap()
     nunmap N
     au! UnmapN
 endfunction
-function! BetterQuestionMark()
+function! BetterQuestionMark(...)
     if getcmdtype() !=# "?"
         return
     endif
-    nnoremap n :normal! N<CR>
-    nnoremap N :normal! n<CR>
-    augroup UnmapN
-        au!
-        au CmdlineLeave * call Unmap()
-    augroup END
+    " echoerr 'BetterQuestionMark'
+    let v:searchforward = 1
+    echoerr "Set searchforward"
+    " echo "v:searchforward - " . v:searchforward
+    " nnoremap n :normal! N<CR>
+    " nnoremap N :normal! n<CR>
+    " augroup UnmapN
+    "     au!
+    "     au CmdlineLeave * call Unmap()
+    " augroup END
 endfunction
-augroup BetterQuestionMark
+function! ResetSearchForward(...)
+    " call feedkeys(":let v:searchforward = 1\<CR>:echo ''\<CR>") 
+    silent! ://
+endfunction
+augroup BQM
     au!
-    au CmdlineLeave * call BetterQuestionMark()
+    " au CmdlineLeave \? call ResetSearchForward()
+    " au CmdlineLeave \? call timer_start(1000, function('ResetSearchForward'))
 augroup END
+" }}}
 
-
+" BetterStar {{{
 function! s:BetterStar()
     call search('\k', 'c')
     " let yanked_word = normal! yiw {{{
@@ -361,6 +386,9 @@ function! s:BetterStar()
     let @/ = '\C\<'.yanked_word.'\>'
     call feedkeys("n")
 endfunction
+" }}}
+
+" BetterHash {{{
 function! s:BetterHash()
     call search('\k', 'c')
     " let yanked_word = normal! yiw {{{
@@ -376,6 +404,11 @@ function! s:BetterHash()
     let @/ = '\C\<'.yanked_word.'\>'
     call feedkeys("N")
 endfunction
+" }}}
 
 nnoremap <silent> * :call <SID>BetterStar()<CR>
 nnoremap <silent> # :call <SID>BetterHash()<CR>
+
+noremap <expr> n v:searchforward == 1 ? 'n' : 'N'
+noremap <expr> N v:searchforward == 1 ? 'N' : 'n'
+

@@ -1,4 +1,12 @@
 
+jersey
+
+asdfasdfasdfasdfasf
+
+jersey
+
+-------------------------------
+
 Problem 1: Change `honolulu` to `india`. Press DOT twice. UNDO. The highlighting 
            goes when it should still be there. This is because we trigger a 
            CursorMove event not via the DOT operator.
@@ -11,14 +19,19 @@ Solution: We seamlessly transition from matchadd() to :set hls highlighting and
 Problem 2: Change `honolulu` to `india`. Press DOT. Go to the top of the file. 
            Press DOT. The dotty is fired correctly but highlighting is not set 
            until you press DOT again. This is because we have no way of 
-           differentiating between a DOT repeat cgn outside of dotty and a normal cw change.
+           differentiating between a DOT repeat cgn outside of dotty and a 
+           normal cw change.
 
 Problem 3: Change `honolulu` to `india`. Press DOT. Go up. Highlight should be 
            turned off, but if you are on the 'a' of india, dotty thinks this
            is a CursorMove caused by the DOT operator and doesn’t remove the
            overrides.
 
-honolulu 
+Problem 4: Change first `honolulu` to `india`. 
+           Press 'n'. Press DOT. 
+           Change happens but the highlighting goes away.
+
+honolulu
 honolulu
 honolulu
 honolulu
@@ -26,14 +39,14 @@ honolulu
 -------------------------------
 
 Count 1: quiz! C() 
-Count 2: remote! C() 
-Count 3: remote! C() 
-Count 4: remote! C() 
-Count 5: remote! C() 
-Count 6: remote! C() 
-Count 7: remote! C() 
-Count 8: remote! C() 
-Count 9: remote! C() 
+Count 2: however! C() 
+Count 3: however! C() 
+Count 4: however! C() 
+Count 5: however! C() 
+Count 6: however! C() 
+Count 7: however! C() 
+Count 8: however! C() 
+Count 9: however! C() 
 
 " quiz! C() | dog! C() | dog! C() | dog! C() | dog! C() | dog! C()
 " cat! C() | cat! C() | cat! C() | cat! C() | cat! C() | cat! C()

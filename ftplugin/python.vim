@@ -18,49 +18,10 @@ function! Enumerate()
         s/enumerate(\(.*\)):/\1:
     endif
 endfunction
-command! Enumerate call Enumerate()
-
-setlocal path+=~/Documents/Python/
-
-iabbrev <buffer> respones response
 
 function! ProfileImport()
     s/.*import \(.*\)/s = time(); \0; performances.append({"duration": time() - s, "package": "\1"})
 endfunction
-
-function! GdInFile()
-    " pre_yank {{{
-    let reg_save = @"
-    let yank_start = getpos("'[")
-    let yank_end = getpos("']")
-    " }}}
-
-    normal! yiw
-    let search_pattern = '\(def\|class\)\s\+\zs'.@".'\>'
-
-    let @/ = search_pattern
-
-    let view_save = winsaveview()
-    let wrap_save = &wrapscan
-    let &wrapscan = 1
-    try
-        silent normal! N
-        if view_save["lnum"] != line(".")
-            normal! zt
-        endif
-    catch /^Vim[^)]\+):E486\D/
-        echohl Directory | echon "Definition not found: " | echohl Normal | echon @"."()"
-        call winrestview(view_save)
-    endtry
-    let &wrapscan = wrap_save
-
-    " post_yank {{{
-    let @" = reg_save
-    call setpos("'[", yank_start)
-    call setpos("']", yank_end)
-    " }}}
-endfunction
-nnoremap <buffer> <silent> gd :call GdInFile()<CR>
 
 function! s:PreviousIndentSpecialized()
     let start_indent = indent(".")
@@ -158,8 +119,6 @@ function s:ToggleBreakpointNormal()
     endif
 endfunction
 
-nnoremap <buffer> <silent> <space>b :call <SID>ToggleBreakpointNormal()<CR>
-vnoremap <buffer> <silent> <space>b :<c-u>call <SID>InsertBreakpointVisual()<CR>
 
 function! s:GoToRepeatChangeFunction()
     normal! gg
@@ -173,8 +132,6 @@ function! s:GoToMainPythonFunction()
     normal! zt
     normal! M
 endfunction
-nnoremap <silent> <buffer> 'm :call <SID>GoToMainPythonFunction()<CR>
-nnoremap <silent> <buffer> `m :call <SID>GoToMainPythonFunction()<CR>
 
 function! s:InsertFileTimer()
     let view_save = winsaveview()
@@ -232,7 +189,9 @@ function! s:DeleteTimer()
         normal! ma
     endif
     execute 'g/'.full_pattern.'/d'
-    normal! 'a
+    if getpos("'a") != [ 0, 0, 0, 0 ]
+        normal! 'a
+    endif
 endfunction
 function! s:ToggleTimerSingleLine()
     if stridx(getline("."), "timer") == -1
@@ -249,10 +208,6 @@ function! s:VisualUltisnipsTimer()
     return
 endfunction
 
-nnoremap <silent> <buffer> <space>t :call <SID>ToggleTimerSingleLine()<CR>
-vnoremap <silent> <space>t :<c-u>call <SID>VisualUltisnipsTimer()<CR>
-
-nnoremap <silent> <space>T :call <SID>InsertFileTimer()<CR>
 
 function! s:PythonShortcuts()
     " [[ PREVIOUS class|def
@@ -322,9 +277,32 @@ function! s:AsyncMethodMappings(timer_id)
     omap <silent> <buffer> ]m :<c-u>call <SID>MethodEndVisual()<CR>
 endfunction
 
-call timer_start(1, function('s:AsyncMethodMappings'))
+function! s:PythonTernary()
+    s/=\s*\([^?]\+\)\s*?\s*\([^:]\+\)\s*:\s*\(.\+\)$/= \2 if \1 else \3
+    s/\S\zs  \ze\S/ /g
+endfunction
 
+call timer_start(1, function('s:AsyncMethodMappings'))
+nnoremap <silent> <buffer> 'm :call <SID>GoToMainPythonFunction()<CR>
+nnoremap <silent> <buffer> `m :call <SID>GoToMainPythonFunction()<CR>
 nmap <buffer> <silent> ]c :call <SID>ClassEnd()<CR>
 xmap <buffer> <silent> ]c :<c-u>call <SID>ClassEndVisual()<CR>
 onoremap ]c :<c-u>call <SID>ClassEndVisual()<CR>
 
+
+nnoremap <buffer> <silent> <space>b :call <SID>ToggleBreakpointNormal()<CR>
+vnoremap <buffer> <silent> <space>b :<c-u>call <SID>InsertBreakpointVisual()<CR>
+nnoremap <silent> <buffer> <space>t :call <SID>ToggleTimerSingleLine()<CR>
+vnoremap <silent> <space>t :<c-u>call <SID>VisualUltisnipsTimer()<CR>
+nnoremap <silent> <space>T :call <SID>InsertFileTimer()<CR>
+
+setlocal path+=~/Documents/Python/
+
+iabbrev <buffer> respones response
+
+command! Enumerate call Enumerate()
+command! Ternary call s:PythonTernary()
+
+setlocal nosmartindent " To indent lines /^#/ with >
+
+command! Py !start python -i C:/Users/vivek/repl.py

@@ -19,14 +19,34 @@ function! s:LinterStatus() abort
     \)
 endfunction
 
+function! Debug()
+    echo "1"
+    let filename = expand("%:p")
+    let cwd = getcwd()
+
+    let index = 0
+    let length = len(cwd)
+
+    while index < length
+        if filename[index] != cwd[index]
+            break
+        endif
+        let index = index + 1
+    endwhile
+
+    let file_not_in_cd = index < length
+    echo "file_not_in_cd: " . file_not_in_cd
+    echo "index: " . index
+    echo "length: " . length
+    return expand("%")
+endfunction
+
 " set statusline=%{s:LinterStatus()}
 function! GetRelpath()
     if &ft == "help" || &ft == "man.cpp"
         let b:relpath = expand("%:t")
         return b:relpath
     endif
-
-
 
     let file_drive = expand("%:p")[0]
     let dir_drive = getcwd()[0]
@@ -66,20 +86,35 @@ function! Relpath()
     return b:relpath_cache
 endfunction
 
-function! DeleteRelpathCache()
-    if exists("b:relpath_cache")
-        unlet b:relpath_cache
-    endif
+function! s:DeleteCacheInAllBuffers()
+    " echoerr "DeleteRelpathCache called"
+    " https://vim-use.narkive.com/AjYpj0zx/unlet-ing-variables-in-buffers
+    for D in getwininfo()
+        let buf_D = getbufvar(D['bufnr'], '')
+        call filter(buf_D, "v:key != 'relpath_cache'")
+        " echo getbufvar(D['bufnr'], 'relpath_cache')
+    endfor
 endfunction
+" call s:DeleteCacheInAllBuffers()
+
+" function! DeleteRelpathCache()
+"     if exists("b:relpath_cache")
+"         unlet b:relpath_cache
+"     endif
+" endfunction
 
 augroup StatusLineUpdateRelpathCache
     au!
-    au DirChanged * call DeleteRelpathCache()
-    au BufEnter   * call DeleteRelpathCache()
+    au DirChanged * call s:DeleteCacheInAllBuffers()
+    au BufEnter   * call s:DeleteCacheInAllBuffers()
+    au BufNew   * call s:DeleteCacheInAllBuffers()
+    au BufCreate   * call s:DeleteCacheInAllBuffers()
+    au BufFilePost * call s:DeleteCacheInAllBuffers()
 augroup END
 
 let s:dotty_script_id = -1
 function! DotMap()
+    return "DOTMAP"
     let dotty_path = '~/vimfiles/plugin/dotty.vim'
     if s:dotty_script_id == -1
         let s:dotty_script_id = GetSid(dotty_path)

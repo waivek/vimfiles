@@ -35,6 +35,7 @@ nmap <silent> <C-x> <Plug>DecrementNumber
 " left, right, center, justify
 " relative, absolute
 " opened, closed
+" start, end
 
 function! MarkNumber()
     " while character under cursor not in [0-9.], move back by 1 byte
@@ -77,7 +78,9 @@ function! cacx#PadIfReqd(from, to)
 endfunction
 function! IncrementNumber(count1)
 
-    call repeat#set("\<Plug>IncrementNumber", a:count1)
+    if exists("*repeat#set")
+        call repeat#set("\<Plug>IncrementNumber", a:count1)
+    endif
 
     " @a, @b, @"
     call MarkNumber()
@@ -107,7 +110,9 @@ function! IncrementNumber(count1)
 endfunction
 
 function! DecrementNumber(count1)
-    call repeat#set("\<Plug>DecrementNumber", a:count1)
+    if exists("*repeat#set")
+        call repeat#set("\<Plug>DecrementNumber", a:count1)
+    endif
     " @a, @b, @"
     call MarkNumber()
     let number_str = @"

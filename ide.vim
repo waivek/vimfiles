@@ -159,3 +159,4 @@ inoremap <silent> <expr> <c-space>  coc#refresh()
 nnoremap <silent>        <leader>d  :call CocAction('jumpDefinition')<CR>
 nnoremap <silent> <expr> K          ShowDocumentation()
 inoremap <silent> <expr> <TAB>      TabCompletion()
+inoremap <silent> <expr> <S-Tab> pumvisible() ? '<C-p>' : '<Tab>'

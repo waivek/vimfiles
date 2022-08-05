@@ -356,10 +356,3 @@ augroup MruPreview
     "
     au CmdlineChanged : call timer_start(0, {_-> _})
 augroup END
-function! EnableHotReload()
-    augroup HotReload
-        au!
-        au BufWritePost <buffer> source %
-    augroup END
-endfunction
-

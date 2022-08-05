@@ -8,7 +8,7 @@
 " 6. Duplicate examples ftplugin/html.vim, autoload/html.vim
 " 7. Handle conflicts how you handle MRU but with an SQLite db storing
 "    filename -> path mappings which can be updated when duplicates are
-"    encountered. Filename: SMALLEST UNIQUE FILENAME. Linke FILENAME to PATH.
+"    encountered. Filename: SMALLEST UNIQUE FILENAME. Link FILENAME to PATH.
 "
 "    Detect MOVE, RENAME, DELETE
 "    MOVE -> UPDATE PATH, RECALCULATE SMALLEST UNIQUE FILENAME

@@ -11,13 +11,13 @@
 "    should be able to use this vimrc in WSL and linux without getting errors.
 "
 " 3. Prioritize typing latency and buffer switching latency. Plugins slow you
-"    down when typing. Without jedi, scroll.vim it feels faster and more
-"    productive. tagalong.vim was also incurring mental overhead cost as it 
+"    down when typing. Without `jedi` & `scroll.vim` it feels faster and more
+"    productive. `tagalong.vim` was also incurring mental overhead cost as it 
 "    kept fucking up PASTE operation.
 "
-"    Filetypes: .vim 329, .html 324, .py 292, .json 107, .css 89, .bat 79, 
-"               .js 57, .md 46, .php 36, .afl 25, .go 24, .svg 21, .log 18, 
-"               .rst 14, .m3u8 13, .sql 10, .snippets 10 
+"    Filetypes: .vim 329, .html 324, .py  292, .json 107, .css      89, .bat 79, 
+"               .js   57, .md    46, .php  36, .afl   25, .go       24, .svg 21, 
+"               .log  18, .rst   14, .m3u8 13, .sql   10, .snippets 10 
 
 
 set history=10000
@@ -32,6 +32,7 @@ filetype indent plugin on | syntax on
 call plug#begin()
 Plug 'dense-analysis/ale'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'ctrlpvim/ctrlp.vim'
 call plug#end()
 if has("win32")
     source ~/vimfiles/ide.vim
@@ -150,13 +151,14 @@ nnoremap <C-l> <C-b>
 
 " }}}
 " Option Settings {{{
-set complete=.,w
 " Indentation
 set smartindent   " Automatically indents when and where required
 set tabstop=4     " Sets tab width to 4
 set shiftwidth=4  " Allows you to use < and > keys in -- VISUAL --
 set softtabstop=4 " Makes vim see four spaces as a <TAB>
 set expandtab     " Inserts 4 spaces when <TAB> is pressed
+set formatoptions+=j " Remove comment leader when joining lines, where it makes sense
+set formatoptions+=ro
 
 " set nowritebackup " Only creates Dropbox Errors
 set noswapfile " Only creates Dropbox Errors
@@ -214,6 +216,7 @@ augroup OneLineFtplugins
     let Cursor2Highlight = { -> synIDattr(synID(line("."),col("."),1),"name") }
     au! 
     au BufRead *.afl set filetype=afl 
+    au BufRead *.vue set filetype=php 
     au FileType afl setlocal cms=#%s
     au FileType help nnoremap <buffer> <expr> K index([ "helpHyperTextJump", "helpSpecial", "helpOption", "helpBar", "Function" ], Cursor2Highlight()) > -1 ? 'K' : ':helpc<CR>'
     au BufRead *.md set formatprg=
@@ -345,12 +348,12 @@ let g:terminal_kill = "term"
 " when you launch a terminal, it cd’s to the currentworkingdirecotry
 let g:terminal_cwd = 0
 
-nmap <silent> <C-k>      <C-f>
-nmap <silent> <PageDown> <Plug>scroll_page_down
+map <silent> <C-k>      <C-f>
+map <silent> <PageDown> <Plug>scroll_page_down
 " nmap <silent> <C-f>      <Plug>scroll_page_down
 
-nmap <silent> <C-l>      <C-b>
-nmap <silent> <PageUp>   <Plug>scroll_page_up
+map <silent> <C-l>      <C-b>
+map <silent> <PageUp>   <Plug>scroll_page_up
 " nmap <silent> <C-b>      <Plug>scroll_page_up
 
 let g:scroll_smoothness = 1
@@ -409,6 +412,9 @@ augroup VimrcPathSpecificSettings
 augroup END
 
 function! s:FunctionSyntaxGroups()
+    if &filetype == 'text'
+        return
+    endif
     syntax match Function /[a-zA-Z0-9_]\+\s*\ze(/
     syntax match FunctionWithPeriods /[a-zA-Z.0-9_]\+\s*\ze(/ contains=Function
     syntax match CustomMode /\s\+vim:.*/
@@ -610,11 +616,6 @@ function! RedrawAtTopIfBufferSizeLessThanWindowSize()
 endfunction
 nnoremap <expr> gd RedrawAtTopIfBufferSizeLessThanWindowSize()
 
-function NormalizeTwitchUrl()
-    s/https:\/\/www\.twitch\.tv\/\w\+\/clip\/\([a-zA-Z]\+\)?[a-zA-Z_0-9=&]\+/https:\/\/clips.twitch.tv\/\1
-endfunction
-command! NormalizeTwitchUrl call NormalizeTwitchUrl()
-
 function! EnableSpellApplyFirstSuggestionDisableSpell()
     set spell
     normal! 1z=
@@ -636,10 +637,6 @@ function! FileGrep(key)
 endfunction
 command! -nargs=1 FileGrep call FileGrep(<q-args>)
 
-function! YoutubeUrlToThumbnailUrl()
-    s/https:\/\/www\.youtube\.com\/watch?v=\(\w\{-}\)\W/https:\/\/i.ytimg.com\/vi\/\1\/maxresdefault.jpg
-endfunction
-command! YoutubeUrlToThumbnailUrl call YoutubeUrlToThumbnailUrl()
 
 function! ConsoleCompletion(ArgLead, CmdLine, CursorPos)
     let pattern = a:ArgLead
@@ -649,6 +646,10 @@ function! Console(flag)
     let flag = a:flag
     if flag == ""
         silent !start cmd
+    elseif flag == "."
+        let file_dir = expand("%:p:h") . '\'
+        let command = 'silent !start cmd /k "cd '.file_dir.'"'
+        execute command
     elseif flag == "plugin"
         silent !start cmd /k "cd C:\Users\vivek\vimfiles\pack\plugins\start\"
     elseif flag == "website"
@@ -691,7 +692,7 @@ function! ChangeDirectory(flag)
 endfunction
 command! -complete=customlist,ChangeDirectoryCompletion -nargs=? CD call ChangeDirectory(<q-args>)
 
-function! AddFile(u, n)
+function! AddAriaFile(u, n)
     if stridx(a:u, "http") > -1
         echoerr "First argument is a URL"
         let url = a:u
@@ -710,11 +711,17 @@ function! AddFile(u, n)
     " let @+ = download_command
     execute "!" . download_command
 endfunction
-command! -nargs=* AddFile call AddFile(<f-args>)
+command! -nargs=* AddAriaFile call AddAriaFile(<f-args>)
 
 " Preconditions:
 "     HTML file should contain a <nav> tag
 "     <nav> tag should contain an li a.href={filename}
+
+" how to run
+"   
+"   cd website
+"   grep -g *.html "css/list.css"
+"   cdo UpdateNavigation
 function! UpdateNavigation()
     let fold_save = &foldenable
     let &foldenable = 0
@@ -765,7 +772,7 @@ function! Chars(string)
 endfunction
 function! WriteAbbrev()
     let variations = [ "wirte", "rwite", "wite" ]
-    let abbrev_command_fmt = 'cabbrev <expr> %s len(getcmdline()) == %d ? "write" : "%s"'
+    let abbrev_command_fmt = 'cabbrev <expr> %s len(getcmdline()) == %d && getcmdtype() == ":" ? "write" : "%s"'
     for variation in variations
         for i in range(len(variation))
             let subcommand = variation[:i]
@@ -825,16 +832,6 @@ augroup END
 "  let g:vimspector_enable_mappings = "HUMAN"
 
 nmap <silent> U <Plug>LineLetters
-
-" new words
-function! Remote()
-    set stl=
-    let b:asyncomplete_enable=0
-    ALEDisable
-endfunction
-command! Remote call Remote()
-" stl
-" asyncomplete
 
 set number
 
@@ -941,7 +938,6 @@ function! GetTabBehaviour()
 endfunction
 " inoremap <silent> <expr> <Tab> GetTabBehaviour()
 
-set formatoptions+=j " Remove comment leader when joining lines, where it makes sense
 
 function! Ftplugin()
     let filetype = &filetype
@@ -1129,16 +1125,7 @@ function! s:GoAfterEqual()
         startinsert
     endif
 endfunction
-nnoremap <silent> E :call <SID>GoAfterEqual()<CR>
-
-
-function! s:MyCommand()
-    normal dst
-    normal dst
-    normal cst<h4>
-endfunction
-command! MyCommand call <SID>MyCommand()
-
+" nnoremap <silent> E :call <SID>GoAfterEqual()<CR>
 
 function! s:AmazonItem()
     let pos_save = getpos(".")
@@ -1151,13 +1138,6 @@ function! s:AmazonItem()
     s/http.*dp\/\([^\/]\+\)\/.*$/https:\/\/www\.amazon.in\/dp\/\1\/
     call setpos(".", pos_save)
 endfunction
-command! AmazonItem call <SID>AmazonItem()
-
-function! s:WslFilesSubstitute()
-    %s/C:\\Users\\vivek\\AppData\\Local\\Packages\\CanonicalGroupLimited\.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs/$WSL
-    %s/\\/\//g
-endfunction
-command! WslFilesSubstitute call <SID>WslFilesSubstitute()
 
 function! s:Frequency()
     %sort
@@ -1167,11 +1147,16 @@ endfunction
 command! Frequency call <SID>Frequency()
 
 function! s:HighlightKeywords()
-    call matchadd("Identifier", "TODO")
-    call matchadd("String", "WRITE")
+    call clearmatches()
+    call matchadd("Identifier", '\[TODO\]')
+    call matchadd("String", '\[WRITE\]')
+    call matchadd("Function", '\[PRIORITY\]')
 endfunction
 command! HighlightKeywords call <SID>HighlightKeywords()
-
+augroup ConfigHl
+    au!
+    au BufRead ~/vimfiles/config.txt call s:HighlightKeywords()
+augroup END
 
 function! s:OpenTodoFile()
     let date_str = strftime("%y%m%d")
@@ -1180,20 +1165,110 @@ function! s:OpenTodoFile()
     execute "edit ".path
 endfunction
 
+function! s:OpenMainFile()
+    let filename = strftime("main-%Y-%m-%b.txt")
+    let path = "~/vimfiles/todo/".filename
+    execute "edit ".path
+endfunction
 
-cabbrev grep grep -g *.<C-r>=expand("%:e")<CR>
+function! s:OpenProbabilitiesFile()
+    let date_str = strftime("%y%m%d")
+    let filename = date_str . ".txt"
+    let path = "~/vimfiles/probability/".filename
+    execute "edit ".path
+endfunction
 
-cabbrev <expr> W len(getcmdline()) == 1 ? 'e ~\Desktop\website' : 'W'
 
+function! s:ConfigHelper1()
+    let directory = 'C:\Users\vivek\Documents\config\PowerShell'
+    let default_path = expand("%:p")
+    let fname = expand("%:t")
+    let config_path = directory.'\'.fname
+    let save_as_command = printf(":saveas %s", config_path)
+    let mklink_command = printf("mklink %s %s", default_path, config_path)
+    echo save_as_command
+    echo mklink_command
+endfunction
+command! ConfigHelper1 call s:ConfigHelper1()
+
+function! s:Gather()
+    execute ":g//m " . line(".")
+endfunction
+
+function! s:PrintSingleLineCommandsAndMaps()
+endfunction
+
+function! s:ToList()
+    %s/\(.*\)\n/"\1", /g
+    s/.*/[ \0 ]/
+    s/,  \ze]/ /
+endfunction
+
+
+function! s:FormatZomato()
+    g/jumbo-tracker/normal! vatJ
+    v/Pro/d
+    %s/<[^>]\+>//g
+    %s/^\s*\(Promoted\)\?\s*//
+    %s/\s*star-fill.*//
+endfunction
+
+function! s:EnableHotReload()
+    echo "(hmr) " . expand("%:p")
+    augroup HotReload
+        au!
+        au BufWritePost <buffer> source %
+    augroup END
+endfunction
+
+function! s:GoBackToQuoteAndStartInsert()
+    normal! F"
+    startinsert
+endfunction
+nnoremap <silent> "I :call <SID>GoBackToQuoteAndStartInsert()<CR>
+
+
+" Uncategorized
+command! HotReload call s:EnableHotReload()
+command! FormatZomato call<SID>FormatZomato()
+
+" Single File Specific Commands
+command! NormalizeTwitchUrl         s/https:\/\/www\.twitch\.tv\/\w\+\/clip\/\([a-zA-Z]\+\)?[a-zA-Z_0-9=&]\+/https:\/\/clips.twitch.tv\/\1
+command! YoutubeUrlToThumbnailUrl   s/https:\/\/www\.youtube\.com\/watch?v=\(\w\{-}\)\W/https:\/\/i.ytimg.com\/vi\/\1\/maxresdefault.jpg
+command! AmazonItem call <SID>AmazonItem()
+command! WslFilesSubstitute        %s/C:\\Users\\vivek\\AppData\\Local\\Packages\\CanonicalGroupLimited\.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs/$WSL/|%s/\\/\//g
+
+command! Gather call s:Gather()
+command! ToList call s:ToList()
+command! RunLine execute(substitute(getline("."), '^"\s*', '', ''))
+
+" Remaining: :command, :augroup, :map
+" Command:
+"     g/^command/v/-complete/|normal! ``
+
+cabbrev <expr> grep len(getcmdline()) == 4 && getcmdtype() == ":" ? "grep -g *.".expand("%:e") : "grep"
+cabbrev <expr> W    len(getcmdline()) == 1 && getcmdtype() == ":" ? 'e ~\Desktop\website' : 'W'
+cabbrev <expr> o    len(getcmdline()) == 1 && getcmdtype() == ":" ? "!start %" : "o"
+cabbrev <expr> V    len(getcmdline()) == 1 && getcmdtype() == ":" ? (bufexists($MYVIMRC) ? "b ".expand($MYVIMRC): "edit $MYVIMRC") : 'V'
+cabbrev <expr> ln   len(getcmdline()) == 2 && getcmdtype() == ":" ? 'lnext' : 'ln'
+cabbrev <expr> E    len(getcmdline()) == 1 && getcmdtype() == ":" ? '!start everything -path .' : 'E'
+cabbrev <expr> P    len(getcmdline()) == 1 && getcmdtype() == ":" ? '!start everything -parent .' : 'P'
+cabbrev <expr> D    len(getcmdline()) == 1 && getcmdtype() == ":" ? '!start .' : 'D'
 
 nnoremap <silent> <space>o :call <SID>OpenTodoFile()<CR>
-cabbrev <expr> o len(getcmdline()) == 1 ? "!start %" : "o"
+nnoremap <silent> <space>i :call <SID>OpenMainFile()<CR>
+nnoremap <silent> <space>p :call <SID>OpenProbabilitiesFile()<CR>
 
-cabbrev <expr> V len(getcmdline()) == 1 ? (bufexists($MYVIMRC) ? "b ".expand($MYVIMRC): "edit $MYVIMRC") : 'V'
-
-nnoremap <silent> <Space>/ :s#\\#/#g<CR>
-nnoremap <silent> <Space>\ :s#/#\\#g<CR>
+nnoremap <silent> <space>/ :s#\\#/#g<CR>
+nnoremap <silent> <space>\ :s#/#\\#g<CR>
 
 nmap <space>f <Plug>SearchOnScreen
 
-cabbrev <expr> ln len(getcmdline()) == 2 && getcmdtype() == ":" ? 'lnext' : 'ln'
+command! Bk !start cmd /k "cd C:\Users\vivek\Desktop\bkp\"
+command! Sq !start cmd /k "sqlite3 C:\Users\vivek\Documents\Python\backup-flask\data.db"
+command! TD !start cmd /c "chrome live.co/todo.php"
+nnoremap ga :!start python C:\Users\vivek\Documents\Python\backup.py<CR>
+
+" wt -w 0 nt -p "Command Prompt" python C:\Users\vivek\Documents\Python\backup.py --server; sp -p "Command Prompt" python C:\Users\vivek\Documents\Python\backup.py --backup
+" wt -w 0 nt -p "Command Prompt" python C:\Users\vivek\Documents\Python\backup.py --backup
+

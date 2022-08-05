@@ -1,5 +1,5 @@
 
-" Modified version of cool.vim to work with search.vim
+" Modified version of cool.vim to work with dotty.vim
 " vim-cool - Disable hlsearch when you are done searching.
 
 " Maintainer:	romainl <romainlafourcade@gmail.com>
@@ -10,7 +10,7 @@
 
 
 if exists("g:loaded_cool") || v:version < 703 || &compatible
-    finish
+    " finish
 endif
 
 let g:loaded_cool = 1
@@ -30,7 +30,6 @@ if exists('##OptionSet')
     autocmd Cool OptionSet hlsearch call <SID>PlayItCool(v:option_old, v:option_new)
 endif
 
-
 function! s:PrintMatchInfo()
     " Check if cache needs to be refershed.
     if !exists("b:changedtick_save")
@@ -45,7 +44,8 @@ function! s:PrintMatchInfo()
     if !exists("b:call_count")
         let b:call_count = 0
     endif
-    if b:changedtick_save != b:changedtick || b:cool_match_positions == [] || b:search_reg_save !=# @/
+    let cache_expired = b:changedtick_save != b:changedtick || b:cool_match_positions == [] || b:search_reg_save !=# @/
+    if cache_expired
         let b:cool_match_positions = dotty#GetMatchByteOffsets()
         let b:changedtick_save = b:changedtick
         let cache_string = "Cache Refreshed"
@@ -54,7 +54,6 @@ function! s:PrintMatchInfo()
         let cache_string = "Cache Used"
     endif
     let b:call_count = b:call_count + 1
-
     
     let cursor_position = line2byte(".") + col(".")-1
     let match_number = index(b:cool_match_positions, cursor_position) + 1
@@ -69,21 +68,19 @@ function! s:PrintMatchInfo()
 endfunction
 
 function! s:StartHL()
-    " return
+
     if !v:hlsearch || mode() isnot 'n' 
         return
     endif
 
-    if g:repeating
-        " return
-    endif
+    " if g:repeating
+    "     return
+    " endif
 
-    " Store the position of the cursor
     let [pos, rpos] = [winsaveview(), getpos('.')]
     " After the cursor has moved, moved exactly one byte behind
     silent! exe "keepjumps go".(line2byte('.')+col('.')-(v:searchforward ? 2 : 0))
     try
-        " Go to the next match
         silent keepjumps norm! n
         if getpos('.') != rpos
             throw 0
@@ -95,7 +92,6 @@ function! s:StartHL()
         call winrestview(pos)
     endtry
 
-    " call PostCool()
     call s:PrintMatchInfo()
     return
 
@@ -137,9 +133,8 @@ endfunction
 function! s:StopHL()
     if !v:hlsearch || mode() isnot 'n'
         return
-    else
-        silent call feedkeys("\<Plug>(StopHL)", 'm')
     endif
+    silent call feedkeys("\<Plug>(StopHL)", 'm')
 endfunction
 
 if !exists('*execute')
@@ -152,9 +147,6 @@ if !exists('*execute')
     endfunction
 endif
 
-function! StopCool()
-    " call feedkeys(":\<C-u>nohlsearch\<cr>")
-endfunction
 function! s:PlayItCool(old, new)
     if a:old == 0 && a:new == 1
         " nohls --> hls

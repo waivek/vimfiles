@@ -9,5 +9,7 @@ function! s:Rename(new_name)
     call rename(old_path, new_path)
     execute "edit ".new_path
     bd #
+
+    " This is required to update the value of expand("%")
 endfunction
 command -nargs=1 Rename call <SID>Rename(<q-args>)

@@ -55,6 +55,8 @@ function! ToggleTemplateStrings()
         call AddTemplateStrings()
     endif
 endfunction
+function! Timeout()
+endfunction
 command! RemoveTemplateStrings call RemoveTemplateStrings()
 command! AddTemplateStrings call AddTemplateStrings()
 command! ToggleTemplateStrings call ToggleTemplateStrings()
