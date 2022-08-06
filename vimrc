@@ -993,7 +993,9 @@ function! DateInsert()
 
 endfunction
 
+
 inoremap <expr> <A-;> DateInsert()
+cnoremap <expr> <A-;> strftime("%y%m%d")
 
 
 
@@ -1272,3 +1274,4 @@ nnoremap ga :!start python C:\Users\vivek\Documents\Python\backup.py<CR>
 " wt -w 0 nt -p "Command Prompt" python C:\Users\vivek\Documents\Python\backup.py --server; sp -p "Command Prompt" python C:\Users\vivek\Documents\Python\backup.py --backup
 " wt -w 0 nt -p "Command Prompt" python C:\Users\vivek\Documents\Python\backup.py --backup
 
+source ~/vimfiles/performance/performance.vim

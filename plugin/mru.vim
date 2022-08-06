@@ -342,7 +342,6 @@ endfunction
 
 
 nnoremap <silent> gr :call Reset()<CR>
-nmap ga gr
 nnoremap g: :au! MruPreview<CR>
 
 

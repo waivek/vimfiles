@@ -194,7 +194,7 @@ function! BetterZF()
 endfunction
 vnoremap zf :<c-u>call BetterZF()<CR>
 
-function s:Test()
+function! s:Test()
     print("HELLO")
         print("No"
     endif

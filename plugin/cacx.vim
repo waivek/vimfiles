@@ -49,7 +49,7 @@ function! MarkNumber()
     normal! `av`by
 endfunction
 
-function LeadingZeroes(number_str)
+function! LeadingZeroes(number_str)
     let int_str = split(a:number_str, '[\.-]')[0] " -012.34 -> 012
     return len(int_str) - len(str2nr(int_str))
 endfunction

@@ -30,7 +30,7 @@ endfunction
 " endfunction
 " echo common#FindMatches("abcdef", 'a\(.\)cd')
 
-function Truncate(s, l)
+function! Truncate(s, l)
     let string = a:s
     let length = a:l
     if len(string) < length

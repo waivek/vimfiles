@@ -962,7 +962,7 @@ endfunction
 " call PrintLogs()
 
 
-function s:Exchange()
+function! s:Exchange()
     let search_string = String2Pattern(@.)
     let @/ = search_string
     " nunmap n

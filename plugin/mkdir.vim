@@ -4,7 +4,7 @@ endif
 
 let g:mkdir_loaded = 1
 
-function s:Mkdir()
+function! s:Mkdir()
   let dir = expand('%:p:h')
 
   if !isdirectory(dir)

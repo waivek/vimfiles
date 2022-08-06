@@ -1,4 +1,4 @@
-function PrintVimSelection()
+function! PrintVimSelection()
     let reg_save = @"
     normal! gvy
     if match(@", ",") > -1

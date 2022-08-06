@@ -110,7 +110,7 @@ function! s:InsertBreakpointVisual()
     let @" = reg_save
 endfunction
 
-function s:ToggleBreakpointNormal()
+function! s:ToggleBreakpointNormal()
     let in_try = s:DetectIfInTryBlock()
     if in_try
         call s:RemoveTryBlock()

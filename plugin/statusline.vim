@@ -105,16 +105,15 @@ endfunction
 
 augroup StatusLineUpdateRelpathCache
     au!
-    au DirChanged * call s:DeleteCacheInAllBuffers()
-    au BufEnter   * call s:DeleteCacheInAllBuffers()
-    au BufNew   * call s:DeleteCacheInAllBuffers()
+    au DirChanged  * call s:DeleteCacheInAllBuffers()
+    au BufEnter    * call s:DeleteCacheInAllBuffers()
+    au BufNew      * call s:DeleteCacheInAllBuffers()
     au BufCreate   * call s:DeleteCacheInAllBuffers()
     au BufFilePost * call s:DeleteCacheInAllBuffers()
 augroup END
 
 let s:dotty_script_id = -1
 function! DotMap()
-    return "DOTMAP"
     let dotty_path = '~/vimfiles/plugin/dotty.vim'
     if s:dotty_script_id == -1
         let s:dotty_script_id = GetSid(dotty_path)

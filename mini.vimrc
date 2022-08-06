@@ -6,14 +6,17 @@ set nocompatible
 
 setlocal encoding=utf8
 
+" source ~/vimfiles/performance/performance.vim
+
 
 " Reasons To Use over /pack/
 " 1. Faster to toggle plugins. With /pack/ you have to open Folder and move
 " 2. Automates `helptags .`, and documentation is always taken care of
-call plug#begin()
-Plug 'dense-analysis/ale'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-call plug#end()
+
+" call plug#begin()
+" Plug 'dense-analysis/ale'
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" call plug#end()
 
 
 let &pythonthreedll='C:\Program Files\Python310\python310.dll'
@@ -151,4 +154,4 @@ inoremap <C-v> <C-r>+
 
 set nowrap
 
-source ~/vimfiles/ide.vim
+" source ~/vimfiles/ide.vim
