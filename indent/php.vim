@@ -16,7 +16,7 @@ runtime! indent/html.vim
 unlet b:did_indent
 runtime! indent/php.vim
 unlet s:doing_indent_inits
-function! InsideScriptBlock()
+function! s:InsideScriptBlock()
     " let script_start = search('<script>', "bnc")
     " if script_start == 0
     "     return v:false
@@ -42,8 +42,8 @@ function! InsideScriptBlock()
     " echoerr "Last False: before_script_type: ".before_script_type.", after_script_type: ".after_script_type
     return v:false
 endfunction
-function! GetPhpHtmlIndent(lnum)
-    if InsideScriptBlock()
+function! s:GetPhpHtmlIndent(lnum)
+    if s:InsideScriptBlock()
         return GetJavascriptIndent()
     endif
   if exists('*HtmlIndent')
@@ -65,5 +65,5 @@ function! GetPhpHtmlIndent(lnum)
   endif
   return -1
 endfunction
-setlocal indentexpr=GetPhpHtmlIndent(v:lnum)
+setlocal indentexpr=s:GetPhpHtmlIndent(v:lnum)
 setlocal indentkeys+=<>>

@@ -1,7 +1,7 @@
 " s:ListCursorAutocommands() {{{
 " [au_group] | Cool  CursorMoved
 " [au_cmd]   |    *         call <SID>StartHL()
-function! ListCursorAutocommands()
+function! s:ListCursorAutocommands()
     let l:messages = ""
     redir => l:messages
     " silent au CursorMoved
@@ -159,9 +159,7 @@ function! s:PopulateScriptnamesDictionary()
         let s:script_D[key] = sid
     endfor
 endfunction
-
-
-function! GetSid(path)
+function! command2dict#GetSid(path)
     if !exists("s:script_D") || len(s:script_D) == 0
         call s:PopulateScriptnamesDictionary()
     endif
@@ -173,5 +171,3 @@ function! GetSid(path)
         return  -1
     endif
 endfunction
-" let s:test_path = '~\vimfiles\plugin\dotty.vim'
-" call GetSid(s:test_path)

@@ -1,4 +1,4 @@
-function! PrintPythonVariable()
+function! s:PrintPythonVariable()
     let print_fmt = 'print("variable_name: %s" % (variable_name))'
     let reg_save = @a
     normal! gv"ay
@@ -7,9 +7,9 @@ function! PrintPythonVariable()
     normal! ^
     let @a = reg_save
 endfunction
-vnoremap z :<c-u>call PrintPythonVariable()<CR>
+vnoremap z :<c-u>call <SID>PrintPythonVariable()<CR>
 
-function! Enumerate()
+function! s:Enumerate()
     if match(getline("."), "enumerate") == -1
         s/for\s\+\zs/i, /
         s/in \zs[^:]\+/enumerate(\0)
@@ -19,7 +19,7 @@ function! Enumerate()
     endif
 endfunction
 
-function! ProfileImport()
+function! s:ProfileImport()
     s/.*import \(.*\)/s = time(); \0; performances.append({"duration": time() - s, "package": "\1"})
 endfunction
 
@@ -282,6 +282,17 @@ function! s:PythonTernary()
     s/\S\zs  \ze\S/ /g
 endfunction
 
+function! s:PythonComprehension()
+    execute "normal! i "
+    execute "normal! x"
+    let start_space = substitute(getline("."), '\S.*', "", "")
+    call search('^\s*for ', 'bc')
+    s/:\s*$/ ]/
+    m.+1
+    .-1join
+    s/^\s*/\=start_space.'[ '/
+endfunction
+
 call timer_start(1, function('s:AsyncMethodMappings'))
 nnoremap <silent> <buffer> 'm :call <SID>GoToMainPythonFunction()<CR>
 nnoremap <silent> <buffer> `m :call <SID>GoToMainPythonFunction()<CR>
@@ -299,10 +310,15 @@ nnoremap <silent> <space>T :call <SID>InsertFileTimer()<CR>
 setlocal path+=~/Documents/Python/
 
 iabbrev <buffer> respones response
+iabbrev <buffer> Respones Response
 
-command! Enumerate call Enumerate()
+command! Enumerate call s:Enumerate()
 command! Ternary call s:PythonTernary()
+command! Comprehension call s:PythonComprehension()
 
 setlocal nosmartindent " To indent lines /^#/ with >
 
 command! Py !start python -i C:/Users/vivek/repl.py
+
+
+

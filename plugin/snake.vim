@@ -24,7 +24,7 @@ let g:word_line = -1
 let g:autocommands = ["START"]
 let g:cursor_relative_index = -1
 
-function! CompressList2String(list)
+function! s:CompressList2String(list)
     let duplicate_value = v:null
     let frequencies = []
     let duplicate_count = 0
@@ -50,16 +50,16 @@ function! CompressList2String(list)
     return rep_string
 endfunction
 
-function! Log(autocmd_name)
+function! s:Log(autocmd_name)
     let g:cursor_relative_index = col(".") - g:word_start_col
     call add(g:autocommands, a:autocmd_name)
     if s:show_debug_messages
-        echo printf("[%2d/%2d] %s", g:cursor_relative_index, (g:word_end_col - g:word_start_col), CompressList2String(g:autocommands))
+        echo printf("[%2d/%2d] %s", g:cursor_relative_index, (g:word_end_col - g:word_start_col), s:CompressList2String(g:autocommands))
     endif
 endfunction
 
-function! VerifyBounds()
-    call Log("CM")
+function! s:VerifyBounds()
+    call s:Log("CM")
     if !s:show_debug_messages
         echohl ModeMsg | echo "-- SNAKE MODE --" | echohl None
     endif
@@ -70,8 +70,8 @@ function! VerifyBounds()
     endif
 
     " Exit Snake Mode
-    set isk+=_
-    call Log("END")
+    set iskeyword+=_
+    call s:Log("END")
     au! SnakeMode
     let g:word_start_col = -1
     let g:word_end_col = -1
@@ -83,34 +83,34 @@ endfunction
 
 breakdel *
 " breakadd func 1 YankPost
-function! YankPost()
-    call Log("TYP")
-    if v:event["operator"] ==# "c" || v:event["operator"] == "d"
+function! s:YankPost()
+    call s:Log("TYP")
+    if v:event["operator"] ==# "c" || v:event["operator"] ==# "d"
         let text_length = len(v:event["regcontents"][0])
         let g:word_end_col = g:word_end_col - text_length
     endif
 endfunction
 
-function! LeftInsert()
+function! s:LeftInsert()
     let backspace_count = count(@., "\<BS>")
     let dot_register_without_backspaces = substitute(@., "\<BS>", "", "g")
     let number_of_characters_inserted = len(dot_register_without_backspaces) - backspace_count
     let g:word_end_col = g:word_end_col + number_of_characters_inserted
-    call Log("I_Leave")
+    call s:Log("I_Leave")
 endfunction
 
-function! StartSnakeMode()
-    set isk-=_
+function! s:StartSnakeMode()
+    set iskeyword-=_
     augroup SnakeMode
         au!
-        au TextYankPost * call YankPost()
-        au InsertLeave  * call LeftInsert()
-        au CursorMoved * call VerifyBounds()
-        au InsertChange * call Log("InsertChange")
-        au InsertEnter  * call Log("InsertEnter")
-        au TextChanged  * call Log("TC")
-        au TextChangedI * call Log("TCI")
-        au TextChangedP * call Log("TC_P")
+        au TextYankPost * call s:YankPost()
+        au InsertLeave  * call s:LeftInsert()
+        au CursorMoved * call s:VerifyBounds()
+        au InsertChange * call s:Log("InsertChange")
+        au InsertEnter  * call s:Log("InsertEnter")
+        au TextChanged  * call s:Log("TC")
+        au TextChangedI * call s:Log("TCI")
+        au TextChangedP * call s:Log("TC_P")
     augroup END
 endfunction
 
@@ -127,7 +127,7 @@ function! s:Snake(command)
     let g:word_end_col = col("']")
     let g:word_line = line(".")
 
-    call StartSnakeMode()
+    call s:StartSnakeMode()
 
 endfunction
 

@@ -30,7 +30,7 @@ endfunction
 " endfunction
 " echo common#FindMatches("abcdef", 'a\(.\)cd')
 
-function! Truncate(s, l)
+function! common#Truncate(s, l)
     let string = a:s
     let length = a:l
     if len(string) < length
@@ -59,9 +59,9 @@ function! Truncate(s, l)
     endif
 endfunction
 
-function! PrintDict(D)
+function! s:PrintDict(D)
     for [key, value] in items(a:D)
-        let fmt = printf("%s : %s", key, Truncate(value, 40))
+        let fmt = printf("%s : %s", key, common#Truncate(value, 40))
         echo fmt
     endfor
 endfunction
@@ -71,5 +71,6 @@ let D = {
             \ "colors" : [ "green", "yellow" ] , 
             \ "nests" : { "pink" : "magenta", "turquoise" : "cyan" }
             \ }
-" call PrintDict(undotree())
-" echo Truncate("a new way to hide this", 8)
+" call s:PrintDict(undotree())
+" echo common#Truncate("a new way to hide this", 8)
+

@@ -29,24 +29,24 @@ function! s:MruFunction(args)
     endif
     if !empty(fname)
         let pos_plus_one = s:GetStrBeforeColon(fname)
-        call CloseUI2Popup(v:true)
+        call s:CloseUI2Popup(v:true)
         execute "edit " . v:oldfiles[pos_plus_one-1]
     else
         echo "Invalid Input"
     endif
 endfunction
 
-function! Draw(list_or_string)
+function! s:Draw(list_or_string)
     return popup_create(a:list_or_string, #{ maxwidth: 60, minwidth: 60, padding : [3,4,2,4], title: "Recent Files", scrollbar: 0})
 endfunction
-function! Reset()
+function! s:Reset()
     call popup_clear()
 endfunction
 
 
 
 let g:results_D = {}
-function! OldFilesSource(glob="*", get_first_match=v:false)
+function! s:OldFilesSource(glob="*", get_first_match=v:false)
     " We don’t want general regex. We want specific queries. 
     " Ideally, 
     "
@@ -110,9 +110,9 @@ function! OldFilesSource(glob="*", get_first_match=v:false)
 endfunction
 
 function! s:MruCompletion (ArgLead, CmdLine, CursorPos)
-    let filename_dictionaries = OldFilesSource(a:ArgLead)
+    let filename_dictionaries = s:OldFilesSource(a:ArgLead)
     if len(filename_dictionaries) < 100
-        let filename_dictionaries = IncrementUntilUnique(filename_dictionaries)
+        let filename_dictionaries = s:IncrementUntilUnique(filename_dictionaries)
     endif
     let filenames = []
     for filename_D in filename_dictionaries
@@ -154,7 +154,7 @@ let global_glob = "failingquery"
 let global_glob = "uti"
 " let global_glob = "html.vim"
 
-function! CloseUI2Popup(redraw=v:false)
+function! s:CloseUI2Popup(redraw=v:false)
     if g:ui2_popup_id != -1
         call popup_close(g:ui2_popup_id)
         let g:ui2_popup_id = -1
@@ -163,8 +163,9 @@ function! CloseUI2Popup(redraw=v:false)
         redraw
     endif
 endfunction
-function! UI2(string="single line of text", redraw=v:true)
-    let popup_id = popup_create(a:string, {"borderhighlight": ["StatusLineNC"], "line" : winheight(0)+2, "col": 1, "zindex": 1 })
+function! s:UI2(string="single line of text", redraw=v:true)
+    " let popup_id = popup_create(a:string, {"borderhighlight": ["StatusLineNC"], "line" : winheight(0)+2, "col": 1, "zindex": 1 })
+    let popup_id = popup_create(a:string, {"borderhighlight": ["StatusLineNC"], "line" : &lines, "col": 1, "zindex": 1 })
     let g:ui2_popup_id = popup_id
     call setwinvar(popup_id, '&wincolor', 'String')
     if a:redraw
@@ -172,7 +173,7 @@ function! UI2(string="single line of text", redraw=v:true)
     endif
 endfunction
 
-function! GuiIfMru()
+function! s:GuiIfMru()
     if getcmdtype() !=# ":"
         return
     endif
@@ -181,19 +182,19 @@ function! GuiIfMru()
         return
     endif
     if g:ui2_popup_id == -1 && cmdline ==# "MRU"
-        call UI2("a single line of text", v:false)
+        call s:UI2("a single line of text", v:false)
     endif
     if len(cmdline) < 3
-        call CloseUI2Popup(v:true)
+        call s:CloseUI2Popup(v:true)
     endif
     let cmdline_glob = trim(strpart(cmdline, 3))
     if g:ui2_popup_id != -1 && match(cmdline_glob, '^\d\+:') > -1
-        call CloseUI2Popup(v:true)
+        call s:CloseUI2Popup(v:true)
     endif
 
     let hl_groups = [ "WarningMsg", "VisualNOS" ]
     if g:ui2_popup_id != -1
-        let filename_dictionaries = OldFilesSource(cmdline_glob, v:true) " OldFilesSource(glob, get_first_match)
+        let filename_dictionaries = s:OldFilesSource(cmdline_glob, v:true) " OldFilesSource(glob, get_first_match)
         call popup_move(g:ui2_popup_id, {"col" : 4 + len(cmdline)})
 
 
@@ -212,20 +213,20 @@ function! GuiIfMru()
 endfunction
 
 " Doesn’t work all the way till C:\
-function! FastIncrementTailDepth(tail, absolute_path)
+function! s:FastIncrementTailDepth(tail, absolute_path)
     let tail_length = len(a:tail)
     let nontail = a:absolute_path[0:-tail_length-1]
     return split(nontail, "\\")[-1]."\\".a:tail
 endfunction
 " Test FastIncrementTailDepth {{{
 " let fullpath = 'C:\Program Files (x86)\Vim\vim82\doc\eval.txt'
-" let tail1 = FastIncrementTailDepth("", fullpath)
-" let tail2 = FastIncrementTailDepth(tail1, fullpath)
-" let tail3 = FastIncrementTailDepth(tail2, fullpath)
-" let tail4 = FastIncrementTailDepth(tail3, fullpath)
-" let tail5 = FastIncrementTailDepth(tail4, fullpath)
-" let tail6 = FastIncrementTailDepth(tail5, fullpath)
-" let tail7 = FastIncrementTailDepth(tail6, fullpath)
+" let tail1 = s:FastIncrementTailDepth("", fullpath)
+" let tail2 = s:FastIncrementTailDepth(tail1, fullpath)
+" let tail3 = s:FastIncrementTailDepth(tail2, fullpath)
+" let tail4 = s:FastIncrementTailDepth(tail3, fullpath)
+" let tail5 = s:FastIncrementTailDepth(tail4, fullpath)
+" let tail6 = s:FastIncrementTailDepth(tail5, fullpath)
+" let tail7 = s:FastIncrementTailDepth(tail6, fullpath)
 " echo tail1
 " echo tail2
 " echo tail3
@@ -236,14 +237,14 @@ endfunction
 " }}}
 " echo tail1
 " for i in range(1)
-"     let tail1 = FastIncrementTailDepth(tail1, fullpath)
+"     let tail1 = s:FastIncrementTailDepth(tail1, fullpath)
 "     echo tail1
 " endfor
 
 
 
 
-function! IncrementTailDepth(tail, absolute_path)
+function! s:IncrementTailDepth(tail, absolute_path)
     if a:tail == ""
         return fnamemodify(a:absolute_path, ":t")
     endif
@@ -260,13 +261,13 @@ function! IncrementTailDepth(tail, absolute_path)
 endfunction
 " Test IncrementTailDepth {{{
 " let fullpath = 'C:\Program Files (x86)\Vim\vim82\doc\eval.txt'
-" let tail1 = IncrementTailDepth("", fullpath)
-" let tail2 = IncrementTailDepth(tail1, fullpath)
-" let tail3 = IncrementTailDepth(tail2, fullpath)
-" let tail4 = IncrementTailDepth(tail3, fullpath)
-" let tail5 = IncrementTailDepth(tail4, fullpath)
-" let tail6 = IncrementTailDepth(tail5, fullpath)
-" let tail7 = IncrementTailDepth(tail6, fullpath)
+" let tail1 = s:IncrementTailDepth("", fullpath)
+" let tail2 = s:IncrementTailDepth(tail1, fullpath)
+" let tail3 = s:IncrementTailDepth(tail2, fullpath)
+" let tail4 = s:IncrementTailDepth(tail3, fullpath)
+" let tail5 = s:IncrementTailDepth(tail4, fullpath)
+" let tail6 = s:IncrementTailDepth(tail5, fullpath)
+" let tail7 = s:IncrementTailDepth(tail6, fullpath)
 " echo tail1
 " echo tail2
 " echo tail3
@@ -276,7 +277,7 @@ endfunction
 " echo tail7
 " }}}
 
-function! IncrementTails(dicts)
+function! s:IncrementTails(dicts)
     let filename_dictionaries = a:dicts
     let filename2_dictionaries = []
     for filename_D in filename_dictionaries
@@ -285,13 +286,13 @@ function! IncrementTails(dicts)
         if tail == "" || tail ==# path || stridx(path, "\\") == -1
             call add(filename2_dictionaries, filename_D)
         else
-            let filename_D["uniquetail"] = FastIncrementTailDepth(tail, path)
+            let filename_D["uniquetail"] = s:FastIncrementTailDepth(tail, path)
             call add(filename2_dictionaries, filename_D)
         endif
     endfor
     return filename2_dictionaries
 endfunction
-function! IncrementUntilUnique(dicts)
+function! s:IncrementUntilUnique(dicts)
     let filename_dictionaries = a:dicts
     let oldtails = []
 
@@ -315,17 +316,17 @@ function! IncrementUntilUnique(dicts)
             break
         endif
 
-        let filename_dictionaries = IncrementTails(filename_dictionaries)
+        let filename_dictionaries = s:IncrementTails(filename_dictionaries)
         let loop_counter = loop_counter + 1
     endwhile
     return filename_dictionaries
 endfunction
-" let filename_dictionaries = OldFilesSource("html.vim")
-" let filename_dictionaries = OldFilesSource("*")
-" let filename_dictionaries = IncrementUntilUnique(filename_dictionaries)
+" let filename_dictionaries = s:OldFilesSource("html.vim")
+" let filename_dictionaries = s:OldFilesSource("*")
+" let filename_dictionaries = s:IncrementUntilUnique(filename_dictionaries)
 " echo map(filename_dictionaries, {_, D -> D["uniquetail"]})
 
-function! PathExists(dicts)
+function! s:PathExists(dicts)
     let filename_dictionaries = a:dicts
     let notexists = []
     for filename_D in filename_dictionaries
@@ -336,12 +337,12 @@ function! PathExists(dicts)
     endfor
     return notexists
 endfunction
-" let filename_dictionaries = OldFilesSource("*")
-" let filtered_dictionaries = PathExists(filename_dictionaries)
+" let filename_dictionaries = s:OldFilesSource("*")
+" let filtered_dictionaries = s:PathExists(filename_dictionaries)
 " let notexist_list = map(filtered_dictionaries, {_, D -> [D["oldfiles_index"], D["text"]]})
 
 
-nnoremap <silent> gr :call Reset()<CR>
+nnoremap <silent> gr :call <SID>Reset()<CR>
 nnoremap g: :au! MruPreview<CR>
 
 
@@ -350,8 +351,8 @@ let g:ui2_popup_id = -1
 
 augroup MruPreview
     au!
-    au CmdlineChanged : call GuiIfMru()
-    au CmdlineLeave : call CloseUI2Popup()
+    au CmdlineChanged : call s:GuiIfMru()
+    au CmdlineLeave : call s:CloseUI2Popup()
     "
     au CmdlineChanged : call timer_start(0, {_-> _})
 augroup END

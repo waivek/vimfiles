@@ -25,9 +25,9 @@
 " uppercase
 
 " 8.30 / 139
-nmap <silent> <Plug>IncrementNumber :<c-u>call IncrementNumber(v:count1)<CR>
+nmap <silent> <Plug>IncrementNumber :<c-u>call <SID>IncrementNumber(v:count1)<CR>
 nmap <silent> <C-a> <Plug>IncrementNumber
-nmap <silent> <Plug>DecrementNumber :<c-u>call DecrementNumber(v:count1)<CR>
+nmap <silent> <Plug>DecrementNumber :<c-u>call <SID>DecrementNumber(v:count1)<CR>
 nmap <silent> <C-x> <Plug>DecrementNumber
 
 " <c-c> cycle:
@@ -37,7 +37,7 @@ nmap <silent> <C-x> <Plug>DecrementNumber
 " opened, closed
 " start, end
 
-function! MarkNumber()
+function! s:MarkNumber()
     " while character under cursor not in [0-9.], move back by 1 byte
     call search('-\?[0-9]\+\(\.\?[0-9]\+\)\?', "ce", line(".")) " we want to search forward first
 
@@ -49,7 +49,7 @@ function! MarkNumber()
     normal! `av`by
 endfunction
 
-function! LeadingZeroes(number_str)
+function! s:LeadingZeroes(number_str)
     let int_str = split(a:number_str, '[\.-]')[0] " -012.34 -> 012
     return len(int_str) - len(str2nr(int_str))
 endfunction
@@ -57,7 +57,7 @@ endfunction
 function! cacx#PadIfReqd(from, to)
 
     " Without this check, 1000 decrement will go to 0999. Automatically inserts padding.
-    let has_leading_zeroes = LeadingZeroes(a:from) 
+    let has_leading_zeroes = s:LeadingZeroes(a:from) 
     if !has_leading_zeroes
         return a:to
     endif
@@ -76,14 +76,14 @@ function! cacx#PadIfReqd(from, to)
 
     return minus_str.before_dot_str.dot_str.after_dot_str
 endfunction
-function! IncrementNumber(count1)
+function! s:IncrementNumber(count1)
 
     if exists("*repeat#set")
         call repeat#set("\<Plug>IncrementNumber", a:count1)
     endif
 
     " @a, @b, @"
-    call MarkNumber()
+    call s:MarkNumber()
     let number_str = @"
     let number_float = str2float(number_str)
 
@@ -109,12 +109,12 @@ function! IncrementNumber(count1)
     " normal! `[
 endfunction
 
-function! DecrementNumber(count1)
+function! s:DecrementNumber(count1)
     if exists("*repeat#set")
         call repeat#set("\<Plug>DecrementNumber", a:count1)
     endif
     " @a, @b, @"
-    call MarkNumber()
+    call s:MarkNumber()
     let number_str = @"
     let number_float = str2float(number_str)
     if stridx(number_str, ".") == -1

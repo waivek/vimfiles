@@ -1,4 +1,4 @@
-function! GetTextIndent(lnum)
+function! s:GetTextIndent(lnum)
 
     let lnum = a:lnum
     let pline = getline(lnum-1)
@@ -14,8 +14,4 @@ function! GetTextIndent(lnum)
 endfunction
 
 " set debug=msg
-" setlocal indentexpr=GetTextIndent(v:lnum)
-augroup HotReloadText
-    au! 
-    au WinEnter indent.txt edit
-augroup END
+" setlocal indentexpr=s:GetTextIndent(v:lnum)

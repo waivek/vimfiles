@@ -2,5 +2,12 @@
     "python.linting.enabled": false,
     "pyright.disableDiagnostics": true,
     "python.analysis.extraPaths": [ "~/Documents/Python/" ],
-    "suggest.autoTrigger": "always"
+    "suggest.autoTrigger": "always",
+    "suggest.noselect": true,
+    "suggest.maxCompleteItemCount": 5,
+    "suggest.localityBonus": true,
+    
+
+    "volar.enable": true,
+    "volar.diagnostics.enable": false
 }

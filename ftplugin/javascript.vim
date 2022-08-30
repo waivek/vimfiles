@@ -1,4 +1,4 @@
-function! PrintDomVariable()
+function! s:PrintDomVariable()
     let reg_save = @"
     normal! gvy
 
@@ -9,7 +9,7 @@ function! PrintDomVariable()
     normal! ^
     let @" = reg_save
 endfunction
-function! PrintJavaScriptVariable()
+function! s:PrintJavaScriptVariable()
     let reg_save = @"
     normal! gvy
     if match(@", ",") > -1
@@ -28,17 +28,17 @@ function! PrintJavaScriptVariable()
     normal! ^
     let @" = reg_save
 endfunction
-vnoremap z :<c-u>call PrintJavaScriptVariable()<CR>
-vnoremap Z :<c-u>call PrintDomVariable()<CR>
+vnoremap z :<c-u>call <SID>PrintJavaScriptVariable()<CR>
+vnoremap Z :<c-u>call <SID>PrintDomVariable()<CR>
 
 nnoremap <silent> ) :call search("^function")<CR>
 nnoremap <silent> ( :call search("^function", "b")<CR>
 
-function! RemoveTemplateStrings()
+function! s:RemoveTemplateStrings()
     s/\${\([^}]*\)}/" + \1 + "/g
     s/`/"/g
 endfunction
-function! AddTemplateStrings()
+function! s:AddTemplateStrings()
     s/"\s*+\s*\([^"][^ +]*\)\s*+\s*"/${\1}/g
     s/"/`/g
 endfunction
@@ -46,18 +46,18 @@ endfunction
 " ASSUMPTIONS -
 " 1. in non-template string, the double-quote (") is used for strings
 " 2. the backtick (`) only occurs as a representation of template strings and nowhere else
-function! ToggleTemplateStrings()
+function! s:ToggleTemplateStrings()
     let current_line = getline(".")
     let is_template_string = stridx(current_line, "`") > -1
     if is_template_string
-        call RemoveTemplateStrings()
+        call s:RemoveTemplateStrings()
     else
-        call AddTemplateStrings()
+        call s:AddTemplateStrings()
     endif
 endfunction
-function! Timeout()
+function! s:Timeout()
 endfunction
-command! RemoveTemplateStrings call RemoveTemplateStrings()
-command! AddTemplateStrings call AddTemplateStrings()
-command! ToggleTemplateStrings call ToggleTemplateStrings()
-nnoremap  <silent> <buffer> g' :call ToggleTemplateStrings()<CR>
+command! RemoveTemplateStrings call s:RemoveTemplateStrings()
+command! AddTemplateStrings call s:AddTemplateStrings()
+command! ToggleTemplateStrings call s:ToggleTemplateStrings()
+nnoremap  <silent> <buffer> g' :call <SID>ToggleTemplateStrings()<CR>

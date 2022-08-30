@@ -12,7 +12,7 @@
 
 " Note: We are now doing linewise changelist. Multiple changes on the same line
 " will be merged in the context of g;
-function! BetterPreviousChangelist() range
+function! s:BetterPreviousChangelist() range
     let line_save = line(".")
     " line    |    45 |    45 |    45 |    45
     " cushion |     0 |     1 |     2 |     3
@@ -32,18 +32,17 @@ function! BetterPreviousChangelist() range
         endif
     endwhile
 endfunction
-nnoremap <silent> g; :call BetterPreviousChangelist()<CR>
+nnoremap <silent> g; :call <SID>BetterPreviousChangelist()<CR>
 command! -range Shim :echo "Range"<CR>
-nnoremap <silent> g; :Shim<CR>
+" nnoremap <silent> g; :Shim<CR>
 " nnoremap <expr> g; ':<C-u>echo ' . v:count1 . '<CR>'
-nnoremap  g; :<C-u>call BetterPreviousChangelist()<CR>
 
 " nnoremap <silent> <expr> g; ":echo 'HEY'" . v:count1 . "<CR>"
 " }}}
 
 " BetterPreviousJumplist {{{
 let g:lines = ""
-function! GetJumpList()
+function! s:GetJumpList()
     let reg_save = @"
     redir @"
     silent jumps
@@ -111,8 +110,8 @@ endfunction
 " IDEA: Implement <Space>i to go forward
 " IDEA: Let the commands accept COUNT’s
 " IDEA: Change it to something more spammable instead of <Space>
-function! BetterPreviousJumplist()
-    let jump_dicts = GetJumpList()
+function! s:BetterPreviousJumplist()
+    let jump_dicts = s:GetJumpList()
     let start_index = -1
     for i in range(len(jump_dicts))
         let D = jump_dicts[i]
@@ -144,8 +143,8 @@ function! BetterPreviousJumplist()
     execute jump_command
 endfunction
 
-function! LastJump()
-    let jump_dicts = GetJumpList()
+function! s:LastJump()
+    let jump_dicts = s:GetJumpList()
     let last_jump_dict = jump_dicts[-1]
     let last_jump_int = str2nr(last_jump_dict["jump"])
     if last_jump_int <= 0
@@ -162,13 +161,13 @@ cabbrev   jp      Jprevious
 cabbrev   jpr     Jprevious
 cabbrev   jpre    Jprevious
 cabbrev   jprev   Jprevious
-command! Jprevious call BetterPreviousJumplist()
+command! Jprevious call s:BetterPreviousJumplist()
 
 cabbrev   jl      Jlast
 cabbrev   jla     Jlast
 cabbrev   jlas    Jlast
 cabbrev   jlast   Jlast
-command! Jlast call LastJump()
+command! Jlast call s:LastJump()
 " }}}
 
 " BetterZF {{{
@@ -176,7 +175,7 @@ command! Jlast call LastJump()
 " 1. Python code blocks & comment blocks
 " 2. JavaScript code blocks & comment blocks
 " 3. VimScript code blocks & comment blocks
-function! BetterZF()
+function! s:BetterZF()
     " We do it this way to avoid 'indent', 'expandtab' headaches
     let reg_save = @"
     let start_line = getline("'<")
@@ -192,17 +191,12 @@ function! BetterZF()
     let @" = reg_save
     call feedkeys("i ")
 endfunction
-vnoremap zf :<c-u>call BetterZF()<CR>
+vnoremap zf :<c-u>call <SID>BetterZF()<CR>
 
-function! s:Test()
-    print("HELLO")
-        print("No"
-    endif
-endfunction
 " }}}
 
 " BD_Bang {{{
-function! BD_Bang()
+function! s:BD_Bang()
     let only_one_window = winnr("$") == 1
     if only_one_window
         return "bd!"
@@ -210,11 +204,11 @@ function! BD_Bang()
         return "b!# | bd! #"
     endif
 endfunction
-cabbrev <expr> bd! BD_Bang()
+cabbrev <expr> bd! <SID>BD_Bang()
 " }}}
 
 " BetterBacktick (buggy,deprecated){{{
-function! BetterBacktick()
+function! s:BetterBacktick()
     if empty(getchangelist()[0])
         " Jump to previous jump. Useful in Read-Only files.
         normal! ``
@@ -241,11 +235,11 @@ function! BetterBacktick()
         normal! 100g,
     endif
 endfunction
-" nnoremap <silent> `` :call BetterBacktick()<CR>
+" nnoremap <silent> `` :call <SID>BetterBacktick()<CR>
 " }}}
 
 " ChangeUp {{{
-function! ChangeUp()
+function! s:ChangeUp()
     let [change_dictionaries, current_change_number] = getchangelist()
     if current_change_number > len(change_dictionaries)-1
         let current_change_number = len(change_dictionaries)-1
@@ -266,7 +260,7 @@ endfunction
 " }}}
 
 " ChangeDown {{{
-function! ChangeDown()
+function! s:ChangeDown()
     let [change_dictionaries, current_change_number] = getchangelist()
     if current_change_number > len(change_dictionaries)-1
         let current_change_number = len(change_dictionaries)-1
@@ -286,8 +280,8 @@ function! ChangeDown()
 endfunction
 " }}}
 
-nnoremap <silent> `l :call ChangeUp()<CR>
-nnoremap <silent> `k :call ChangeDown()<CR>
+nnoremap <silent> `l :call <SID>ChangeUp()<CR>
+nnoremap <silent> `k :call <SID>ChangeDown()<CR>
 
 " Test Case: {{{
 " <span><a></a></span>
@@ -306,7 +300,7 @@ nnoremap <silent> `k :call ChangeDown()<CR>
 " </body>
 " }}}
 " BetterIT {{{
-function! BetterIT(mode)
+function! s:BetterIT(mode)
 
     let is_selection = a:mode ==# "selection"
     let visual_is_one_char = getpos("'<") == getpos("'>")
@@ -332,11 +326,11 @@ function! BetterIT(mode)
 endfunction
 " }}}
 
-xnoremap it :<c-u>call BetterIT("selection")<CR>
-onoremap it :<c-u>call BetterIT("operation")<CR>
+xnoremap it :<c-u>call <SID>BetterIT("selection")<CR>
+onoremap it :<c-u>call <SID>BetterIT("operation")<CR>
 
 " BetterQuestionMark (deprecated, too complex, easier to remap n and N) {{{
-function! Unmap()
+function! s:Unmap()
     if getcmdtype() !=# "/"
         return
     endif
@@ -344,7 +338,7 @@ function! Unmap()
     nunmap N
     au! UnmapN
 endfunction
-function! BetterQuestionMark(...)
+function! s:BetterQuestionMark(...)
     if getcmdtype() !=# "?"
         return
     endif
@@ -356,17 +350,17 @@ function! BetterQuestionMark(...)
     " nnoremap N :normal! n<CR>
     " augroup UnmapN
     "     au!
-    "     au CmdlineLeave * call Unmap()
+    "     au CmdlineLeave * call s:Unmap()
     " augroup END
 endfunction
-function! ResetSearchForward(...)
+function! s:ResetSearchForward(...)
     " call feedkeys(":let v:searchforward = 1\<CR>:echo ''\<CR>") 
     silent! ://
 endfunction
 augroup BQM
     au!
-    " au CmdlineLeave \? call ResetSearchForward()
-    " au CmdlineLeave \? call timer_start(1000, function('ResetSearchForward'))
+    " au CmdlineLeave \? call s:ResetSearchForward()
+    " au CmdlineLeave \? call timer_start(1000, function('s:ResetSearchForward'))
 augroup END
 " }}}
 
@@ -405,6 +399,45 @@ function! s:BetterHash()
     call feedkeys("N")
 endfunction
 " }}}
+
+function! s:GetActiveBuffers()
+    " https://vi.stackexchange.com/questions/21006/how-to-get-the-names-of-all-open-buffers
+    let l:blist = getbufinfo({ 'buflisted': 1 })
+    let l:result = []
+    for l:item in l:blist
+        "skip unnamed buffers; also skip hidden buffers?
+        if empty(l:item.name) || l:item.hidden
+            continue
+        endif
+        " call add(l:result, { 'bufnr': l:item.bufnr, 'changedtick': l:item.changedtick, 'name': shellescape(l:item.name) })
+        " call add(l:result, { 'bufnr': l:item.bufnr, 'changedtick': l:item.changedtick, 'name': l:item.name })
+        call add(l:result, { 'bufnr': l:item.bufnr, 'name': l:item.name })
+    endfor
+    return l:result
+endfunction
+
+
+function! s:GetModifiedFiles()
+
+    let l:dictionaries = []
+    let l:buffers = s:GetActiveBuffers()
+    for l:item in l:buffers
+        let l:time = getftime(l:item['name'])
+        let seconds_passed = localtime() - l:time
+        if seconds_passed > 3600 * 6 || bufnr() == l:item['bufnr']
+            continue
+        endif
+        let l:item['time'] = l:time
+        call add(l:dictionaries, l:item)
+    endfor
+    let l:results = map(copy(l:dictionaries), { idx, D -> { 'bufnr': D['bufnr'], 'name': fnamemodify(D['name'], ":t") } })
+    call sort(l:results, { d1, d2 -> d1['name'] > d2['name'] ? 1 : -1 })
+    let l:lines = map(copy(l:results), { idx, D -> printf(" %2d : %s", D['bufnr'], D['name']) })
+    echo join(l:lines, "\n")
+    call feedkeys(":b")
+endfunction
+command! GMF call s:GetModifiedFiles()
+nnoremap g' :call <SID>GetModifiedFiles()<CR>
 
 nnoremap <silent> * :call <SID>BetterStar()<CR>
 nnoremap <silent> # :call <SID>BetterHash()<CR>

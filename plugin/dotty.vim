@@ -115,7 +115,7 @@ let s:underline_highlight_group = 'VisualNOS'
 let s:search_highlight_group = s:underline_highlight_group
 let s:search_highlight_group = 'Search'
 
-function! ToggleDotModifications()
+function! s:ToggleDotModifications()
     let g:dot_modifications_enabled = !g:dot_modifications_enabled
     if g:dot_modifications_enabled
         echo "Dot Modifications enabled"
@@ -123,7 +123,7 @@ function! ToggleDotModifications()
         echo 'Dot Modifications disabled'
     endif
 endfunction
-command! ToggleDotModifications call ToggleDotModifications()
+command! ToggleDotModifications call s:ToggleDotModifications()
 
 function! String2Pattern(string)
     let highlighted_string = a:string
@@ -151,7 +151,7 @@ function! s:VisualHash()
     call feedkeys("?\<CR>")
 endfunction
 " breakadd func 1 Visual_gd 
-function! Visual_gd()
+function! s:Visual_gd()
     let search_string = s:Visual2Search()
     let cmd = ":0/" . search_string "/"
     execute cmd
@@ -323,18 +323,16 @@ function! SplitMatchPositions(match_positions)
     return match_positions
 endfunction
 let s:print_count = 0
-function! PrintRepeatInfo()
-    function! MyPrint(...)
+function! s:PrintRepeatInfo()
+    function! s:MyPrint(...)
         let s:print_count = s:print_count + 1
         echo "MyPrint: " . s:print_count
     endfunction
-    call timer_start(1, function("MyPrint"))
-    " call MyPrint()
+    call timer_start(1, function("s:MyPrint"))
+    " call s:MyPrint()
 endfunction
 function! s:Time()
     return reltimefloat(reltime())
-endfunction
-function! Profile()
 endfunction
 " let match_positions = dotty#GetMatchByteOffsets()
 " let start_time = s:Time()
@@ -399,7 +397,7 @@ let g:changedtick = -1
 
 " We don’t use "%s" and instead inline the command in the feedkeys to avoid
 " all sorts of printing errors related to singlequotes and terminal characters
-function! EchoSearchInfo()
+function! s:EchoSearchInfo()
 
     if g:pattern !=# @/
         let g:pattern = @/
@@ -417,8 +415,8 @@ function! EchoSearchInfo()
     endif
     let [ match_redundant, info ] = MatchByteOffsetsToString(match_positions)
     " let match = strtrans(@/)
-    " let match = Truncate(match, v:echospace-20)
-    let match_macro = 'Truncate(strtrans(@/),v:echospace-20)'
+    " let match = common#Truncate(match, v:echospace-20)
+    let match_macro = 'common#Truncate(strtrans(@/),v:echospace-20)'
     let feedkeys_command = printf(":set hls | echon '/' . %s | echohl String | echon \" %s\" | echohl Normal\<CR>", match_macro, info)
 
     " Implementation 1: Need this for highlighting to show up when you press DOT
@@ -444,7 +442,7 @@ let g:n_required = v:false
 "     1, 1, 1, 1, 1
 "     lime, lime, lime, lime
 "     
-function! UpdatePositionCache(...)
+function! s:UpdatePositionCache(...)
     let g:repeat_position_cache = dotty#GetMatchByteOffsets()
 endfunction
 
@@ -452,14 +450,14 @@ function! s:SetHls(timer_id)
     call feedkeys(":set hls\<CR>")
 endfunction
 
-function! ShowHighlight(timer_id)
+function! s:ShowHighlight(timer_id)
     set hls
 endfunction
-function! AsyncShowHighlight()
-    call timer_start(1000, function("ShowHighlight"))
+function! s:AsyncShowHighlight()
+    call timer_start(1000, function("s:ShowHighlight"))
 endfunction
 
-function! PrintDebugInfo()
+function! s:PrintDebugInfo()
     " let g:repeat_position_cache = dotty#GetMatchByteOffsets()
 
     let l:cursor_position = line2byte(".") + col(".") - 1
@@ -478,15 +476,15 @@ function! PrintDebugInfo()
     call common#AsyncPrint(l:message, 1)
 
 endfunction
-function! UpdatePositionCacheAndPrintDebugInfo(...)
-    call  UpdatePositionCache()
-    call  PrintDebugInfo()
+function! s:UpdatePositionCacheAndPrintDebugInfo(...)
+    call  s:UpdatePositionCache()
+    call  s:PrintDebugInfo()
 endfunction
 let g:repeat_position_cache = []
 let g:match_identifier = -1
 let g:match_window = -1
 
-function! SliceList(L, start, end=-1)
+function! s:SliceList(L, start, end=-1)
     if a:start == a:end
         return []
     endif
@@ -502,7 +500,7 @@ function! ResetRepeatMaps()
     nunmap .
     nunmap n
 endfunction
-function! RepeatChange()
+function! s:RepeatChange()
 
     " When we want to rename ‘keyword’ to ‘my_keyword’
     " Simple heuristic check. 
@@ -512,10 +510,10 @@ function! RepeatChange()
     let n_old = g:n_required
     let r_old = g:repeating
     let repeat_msg = "n_req,repeating:(".n_old.",".r_old.")->(".g:n_required.",".g:repeating.")"
-    call NewCell(repeat_msg, "RepeatChange")
+    call s:NewCell(repeat_msg, "RepeatChange")
     " }}}
 
-    " call NewCell(repeat_msg, "RepeatChange")
+    " call s:NewCell(repeat_msg, "RepeatChange")
     if !g:n_required
         let pos_save = getpos(".")
         let col_save = col(".")
@@ -544,8 +542,8 @@ function! RepeatChange()
             echoerr "index_to_remove == -1; byte offset: ".cursor_position." not found"
         endif
 
-        let positions_before_match = SliceList(g:repeat_position_cache, 0, index_to_remove)
-        let positions_after_match = SliceList(g:repeat_position_cache, index_to_remove+1)
+        let positions_before_match = s:SliceList(g:repeat_position_cache, 0, index_to_remove)
+        let positions_after_match = s:SliceList(g:repeat_position_cache, index_to_remove+1)
 
         call remove(g:repeat_position_cache, index_to_remove)
 
@@ -554,8 +552,8 @@ function! RepeatChange()
         let difference = strlen(@.) - strlen(@")
         call map(g:repeat_position_cache, { _, position -> position > cursor_position ? position + difference : position })
 
-        call PrintDebugInfo()
-        " call timer_start(1, function("PrintDebugInfo"))
+        call s:PrintDebugInfo()
+        " call timer_start(1, function("s:PrintDebugInfo"))
     else
         let pattern_matches_entire_deleted_text = matchstr(@", @/) ==# @"
         let pattern_does_not_match_entire_deleted_text = !pattern_matches_entire_deleted_text
@@ -566,9 +564,9 @@ function! RepeatChange()
 
         call feedkeys("cgn\<C-r>.\<Esc>")
         let g:repeating = v:true
-        " call  timer_start(1, function('UpdatePositionCache'))
-        " call  timer_start(50, function('PrintDebugInfo'))
-        call  timer_start(1, function('UpdatePositionCacheAndPrintDebugInfo'))
+        " call  timer_start(1, function('s:UpdatePositionCache'))
+        " call  timer_start(50, function('s:PrintDebugInfo'))
+        call  timer_start(1, function('s:UpdatePositionCacheAndPrintDebugInfo'))
         " call s:SetHls(1)
         let g:match_identifier = matchadd(s:search_highlight_group, @/)
         let g:match_window = win_getid()
@@ -595,7 +593,7 @@ if !exists("g:mappings")
     let g:mappings = {}
 endif
 " https://vi.stackexchange.com/questions/7734/how-to-save-and-restore-a-mapping
-function! SaveMappings(keys, mode, global) abort
+function! s:SaveMappings(keys, mode, global) abort
     let mappings = {}
 
     if a:global
@@ -614,7 +612,7 @@ function! SaveMappings(keys, mode, global) abort
                         \ 'mode'     : a:mode,
                         \ }
 
-            call RestoreMappings({l:key : buf_local_map})
+            call s:RestoreMappings({l:key : buf_local_map})
         endfor
 
     else
@@ -633,7 +631,7 @@ function! SaveMappings(keys, mode, global) abort
 
     return mappings
 endfunction
-function! RestoreMappings(mappings) abort
+function! s:RestoreMappings(mappings) abort
 
     for mapping in values(a:mappings)
         if !has_key(mapping, 'unmapped') && !empty(mapping)
@@ -658,7 +656,7 @@ endfu
 
 
 " Bug: ma~da | ma~da
-function! CheckIfCursorMoveWasCausedByDotOperator()
+function! s:CheckIfCursorMoveWasCausedByDotOperator()
     " ASSUMPTION: Only works if the last CursorMove was triggered by a change.
     " If you do a change -> ESCAPE -> Go somewhere else then comeback manually,
     " this fn returns v:true which is incorrect. This function is only accurate
@@ -704,13 +702,13 @@ function! CheckIfCursorMoveWasCausedByDotOperator()
 
 endfunction
 
-function! CursorOnMatch()
+function! s:CursorOnMatch()
     let [search_line, search_pos] = searchpos(@/, "cn")
     let [_, cursor_line, cursor_pos, _] = getpos(".")
     return search_line == cursor_line && search_pos == cursor_pos
 endfunction
 
-function! CursorOnMatchEnd()
+function! s:CursorOnMatchEnd()
     let [search_line, search_pos] = searchpos(@/, "cn")
     let [_, cursor_line, cursor_pos, _] = getpos(".")
     return search_line == cursor_line && search_pos == cursor_pos
@@ -718,7 +716,7 @@ endfunction
 
 
 function! s:RemoveAllOverrides()
-    call NewCell("fail", "RemoveAllOverrides")
+    call s:NewCell("fail", "RemoveAllOverrides")
     let pass_message = "pass: mappings, globals & au’s reset"
     let fail_message = "fail: cursor moved by dot operator"
     " Ignores the first CursorMoved fired immediately after leaving InsertMode
@@ -726,14 +724,14 @@ function! s:RemoveAllOverrides()
         return
     endif
 
-    let cursor_move_was_caused_by_dot_operator = CheckIfCursorMoveWasCausedByDotOperator()
+    let cursor_move_was_caused_by_dot_operator = s:CheckIfCursorMoveWasCausedByDotOperator()
     " echoerr "cursor_move_was_caused_by_dot_operator: " . cursor_move_was_caused_by_dot_operator
     if cursor_move_was_caused_by_dot_operator
-        call UpdateCell("fail: cursor moved by dot operator")
+        call s:UpdateCell("fail: cursor moved by dot operator")
         return
     endif
 
-    let cursor_on_match = CursorOnMatch()
+    let cursor_on_match = s:CursorOnMatch()
     if cursor_on_match
         " Offload StopHl() responsibility to cool.vim
         " If dotty is only concerned about HL DURING Repeat, it removes a lof
@@ -755,8 +753,8 @@ function! s:RemoveAllOverrides()
     let g:n_required = v:false
     au! DotOverride CursorMoved
     au! DotOverride InsertLeave
-    call RestoreMappings(g:mappings)
-    call UpdateCell("pass")
+    call s:RestoreMappings(g:mappings)
+    call s:UpdateCell("pass")
 endfunction
 
 " [knowledge] RepeatChange chaining, n override edge case {{{
@@ -787,7 +785,7 @@ function! s:NextPatternOverride()
     let no_more_matches = search(@/, 'n') == 0
     if no_more_matches
         " echo 'no more matches'
-        call UpdatePositionCacheAndPrintDebugInfo()
+        call s:UpdatePositionCacheAndPrintDebugInfo()
     else
         call feedkeys("n", "n")
     endif
@@ -803,29 +801,29 @@ function! s:ToggleWholeKeywordOverride()
     endif
     set hls
     call s:ToggleWholeKeyword()
-    call ModifyDotOverride()
+    call s:ModifyDotOverride()
     nnoremap <silent> gs :call <SID>ToggleWholeKeyword()<CR>
 endfunction
 
 function! s:InitializeDotOverride()
 
-    call NewRow("fail", "InitializeDotOverride")
+    call s:NewRow("fail", "InitializeDotOverride")
     " Prevents Overrides from overlapping
     if g:override_pos != []
         return
     endif
     let g:override_pos = getpos(".")
-    let g:mappings = SaveMappings([".", "n", "gs"], "n", v:true)
-    nnoremap <silent> . :call RepeatChange()<CR>
+    let g:mappings = s:SaveMappings([".", "n", "gs"], "n", v:true)
+    nnoremap <silent> . :call <SID>RepeatChange()<CR>
     nnoremap <silent> n :call <SID>NextPatternOverride()<CR>
     nnoremap <silent> gs :call <SID>ToggleWholeKeywordOverride()<CR>
 
 
     let should_check_cursor_move = v:true
-    let cursor_move_was_caused_by_dot_operator = CheckIfCursorMoveWasCausedByDotOperator()
+    let cursor_move_was_caused_by_dot_operator = s:CheckIfCursorMoveWasCausedByDotOperator()
     if should_check_cursor_move && cursor_move_was_caused_by_dot_operator && v:hlsearch
         " v:hlsearch solves Problem 2 and Problem 4
-        call UpdatePositionCache()
+        call s:UpdatePositionCache()
         let g:repeating = v:true
         let g:match_identifier = matchadd(s:search_highlight_group, @/)
         let g:match_window = win_getid()
@@ -833,7 +831,7 @@ function! s:InitializeDotOverride()
     endif
 
     au DotOverride CursorMoved * call s:RemoveAllOverrides()
-    call UpdateCell("pass")
+    call s:UpdateCell("pass")
 
 
 endfunction
@@ -871,12 +869,12 @@ augroup END
 " hls, nohls
 " hls, nohls
 " last_search_pattern
-function! ModifyDotOverride()
+function! s:ModifyDotOverride()
     let normal_dot_map = mapcheck(".", "n")
     let dot_mapped_to_repeat_change = stridx(normal_dot_map, "RepeatChange")
     if dot_mapped_to_repeat_change
         " v:false means don’t update the search register with the deleted text
-        nnoremap <silent> . :call RepeatChange()<CR>
+        nnoremap <silent> . :call <SID>RepeatChange()<CR>
     endif
 endfunction
 
@@ -896,7 +894,7 @@ endfunction
 
 vnoremap <silent> *  :<c-u>call <SID>VisualStar()<CR>
 vnoremap <silent> #  :<c-u>call <SID>VisualHash()<CR>
-vnoremap <silent> gd :<c-u>call Visual_gd()<CR>
+vnoremap <silent> gd :<c-u>call <SID>Visual_gd()<CR>
 vnoremap <silent> s  :<c-u>call <SID>VisualReplace()<CR>
 
 nnoremap <silent> gs :call <SID>ToggleWholeKeyword()<CR>
@@ -924,25 +922,25 @@ cabbrev <expr> tt getcmdtype() ==# ":" ? 'Tab/<C-r>=@/<CR>' : 'tt'
 
 let g:time_counter = 0
 let g:loglines = []
-function! ResetLogs()
+function! s:ResetLogs()
     let g:time_counter = 0
     let g:loglines = []
 endfunction
-function! NewRow(message, fname)
+function! s:NewRow(message, fname)
     " let g:time_counter = 0
     call insert(g:loglines, [], 0) " Create a new entry
-    call NewCell(a:message, a:fname)
+    call s:NewCell(a:message, a:fname)
 endfunction
-function! NewCell(message, fname)
+function! s:NewCell(message, fname)
     call insert(g:loglines[0], [a:fname, a:message, g:time_counter], 0)
     let g:time_counter = g:time_counter + 1
 endfunction
-function! UpdateCell(message)
+function! s:UpdateCell(message)
     let row = g:loglines[0]
     let cell = row[0]
     let g:loglines[0][0] = [ cell[0], a:message, cell[2] ]
 endfunction
-function! PrintLogs()
+function! s:PrintLogs()
     for row in g:loglines
         for cell in row
             let [func, msg, order] = cell
@@ -952,14 +950,14 @@ function! PrintLogs()
     endfor
 endfunction
 
-" call NewRow("pass", "InitializeDotOverride")
-" call NewCell("fail", "RemoveAllOverrides")
-" call UpdateCell("pass")
+" call s:NewRow("pass", "InitializeDotOverride")
+" call s:NewCell("fail", "RemoveAllOverrides")
+" call s:UpdateCell("pass")
 
-" call NewRow("pass", "CursorMoved")
-" call NewCell("fail", "String2Pattern")
-" call NewCell("fail", "NewRow")
-" call PrintLogs()
+" call s:NewRow("pass", "CursorMoved")
+" call s:NewCell("fail", "String2Pattern")
+" call s:NewCell("fail", "NewRow")
+" call s:PrintLogs()
 
 
 function! s:Exchange()
@@ -979,10 +977,10 @@ nnoremap  cx :call <SID>Exchange()<CR>
 
 
 if !exists("g:permanent_mappings")
-    const g:permanent_mappings = SaveMappings([".", "n", "gs"], "n", v:true)
+    const g:permanent_mappings = s:SaveMappings([".", "n", "gs"], "n", v:true)
 endif
-function! HardRestoreMappings()
-    call RestoreMappings(g:permanent_mappings)
+function! s:HardRestoreMappings()
+    call s:RestoreMappings(g:permanent_mappings)
 endfunction
 
 " let search_key = "for"

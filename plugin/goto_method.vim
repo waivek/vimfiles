@@ -43,8 +43,14 @@ function! s:SearchVimProfileFunction()
     return '/\c^FUNCTION  .*'
 endfunction
 
-function! GdInFile()
+function! s:SearchEvalFunction()
+    call s:RestoreWrapscanOnCmdlineLeave()
+    return '/^[a-z]*'
+endfunction
+
+function! s:GdInFile()
     " pre_yank {{{
+    let search_save = @/
     let reg_save = @"
     let yank_start = getpos("'[")
     let yank_end = getpos("']")
@@ -74,6 +80,7 @@ function! GdInFile()
     let &wrapscan = wrap_save
 
     " post_yank {{{
+    let @/ = search_save
     let @" = reg_save
     call setpos("'[", yank_start)
     call setpos("']", yank_end)
@@ -85,6 +92,7 @@ au BufRead vimrc nnoremap  <expr> <buffer> gm <SID>SearchVimFunction()
 au BufRead *.py nnoremap  <expr> <buffer> gm <SID>SearchPythonFunction()
 au BufRead *.js,*.html nnoremap  <expr> <buffer> gm <SID>SearchJavascriptFunction()
 au BufRead ~/vimfiles/performance/*.txt nnoremap  <expr> <buffer> gm <SID>SearchVimProfileFunction()
+au BufRead builtin.txt nnoremap <expr> <buffer> gm <SID>SearchEvalFunction()
 
-au BufRead vimrc,*.vim nnoremap <buffer> <silent> gd :call GdInFile()<CR>
-au BufRead *.py nnoremap <buffer> <silent> gd :call GdInFile()<CR>
+au BufRead vimrc,*.vim nnoremap <buffer> <silent> gd :call <SID>GdInFile()<CR>
+au BufRead *.py nnoremap <buffer> <silent> gd :call <SID>GdInFile()<CR>

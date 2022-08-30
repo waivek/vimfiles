@@ -19,7 +19,7 @@ function! s:LinterStatus() abort
     \)
 endfunction
 
-function! Debug()
+function! s:Debug()
     echo "1"
     let filename = expand("%:p")
     let cwd = getcwd()
@@ -42,11 +42,13 @@ function! Debug()
 endfunction
 
 " set statusline=%{s:LinterStatus()}
-function! GetRelpath()
-    if &ft == "help" || &ft == "man.cpp"
+function! s:GetRelpath()
+    cd . " Required to update `expand('%')`
+    if &filetype ==#  "help" || &filetype ==#  "man.cpp"
         let b:relpath = expand("%:t")
         return b:relpath
     endif
+
 
     let file_drive = expand("%:p")[0]
     let dir_drive = getcwd()[0]
@@ -81,7 +83,7 @@ endfunction
 
 function! Relpath()
     if !exists('b:relpath_cache')
-        let b:relpath_cache = GetRelpath()
+        let b:relpath_cache = s:GetRelpath()
     endif
     return b:relpath_cache
 endfunction
@@ -91,7 +93,7 @@ function! s:DeleteCacheInAllBuffers()
     " https://vim-use.narkive.com/AjYpj0zx/unlet-ing-variables-in-buffers
     for D in getwininfo()
         let buf_D = getbufvar(D['bufnr'], '')
-        call filter(buf_D, "v:key != 'relpath_cache'")
+        call filter(buf_D, "v:key !=# 'relpath_cache'")
         " echo getbufvar(D['bufnr'], 'relpath_cache')
     endfor
 endfunction
@@ -116,12 +118,14 @@ let s:dotty_script_id = -1
 function! DotMap()
     let dotty_path = '~/vimfiles/plugin/dotty.vim'
     if s:dotty_script_id == -1
-        let s:dotty_script_id = GetSid(dotty_path)
+        let s:dotty_script_id = command2dict#GetSid(dotty_path)
     endif
-    let dot_map = ':call RepeatChange()<CR>'
+
+    let dot_map = printf(':call <SNR>%d_RepeatChange()<CR>', s:dotty_script_id)
     let gs_1_map = printf(':call <SNR>%d_ToggleWholeKeywordOverride()<CR>', s:dotty_script_id)
     let gs_2_map = printf(':call <SNR>%d_ToggleWholeKeyword()<CR>', s:dotty_script_id)
     let n_map = printf(':call <SNR>%d_NextPatternOverride()<CR>', s:dotty_script_id)
+
     if dot_map == maparg(".", "n")
         let dot_status = "DOT"
     else
@@ -142,7 +146,7 @@ function! DotMap()
         let n_status = ""
     endif
 
-    if &ws
+    if &wrapscan
         let ws_status = "WS"
     else
         let ws_status = ""
@@ -171,7 +175,7 @@ let g:messages = []
 sign define piet text=>> texthl=MatchParen linehl=Normal
 function! s:ParseQuickfix()
     let last_cmd = histget("cmd", histnr("cmd"))
-    if last_cmd[:4] != "make"
+    if last_cmd[:4] !=# "make"
         return
     endif
     sign unplace *

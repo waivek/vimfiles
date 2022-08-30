@@ -1,4 +1,4 @@
-function! PrintVimSelection()
+function! s:PrintVimSelection()
     let reg_save = @"
     normal! gvy
     if match(@", ",") > -1
@@ -21,7 +21,7 @@ function! PrintVimSelection()
 endfunction
 
 " TESTS:
-function! Test()
+function! s:Test()
     " col(".")
     echo 'col("."): ' . (type(col(".")) == v:t_string ? col(".") : string(col(".")))
 
@@ -42,7 +42,7 @@ function! Test()
 
 endfunction
 
-function! Escape()
+function! s:Escape()
     
     let reg_save = @"
     normal! gvy
@@ -56,7 +56,7 @@ function! Escape()
 
     let @" = reg_save
 endfunction
-xnoremap <Space>z :<c-u>call Escape()<CR>
+xnoremap <Space>z :<c-u>call <SID>Escape()<CR>
 
 " iabbrev <buffer> time_taken time_taken = string(s:Time() - start_time)
 function! s:TestFunction1()
@@ -96,3 +96,15 @@ function! s:ExtractArguments()
 
 endfunction
 command! ExtractArguments call <SID>ExtractArguments()
+
+function! s:VimHashAbbrev()
+    let line = getline(".")
+    let match_index = match(line, '^\s*#')
+    let line_starts_with_hash = match_index != -1
+
+    if line_starts_with_hash
+        return '"'
+    endif
+    return '#'
+endfunction
+iabbrev <buffer> <expr> # <SID>VimHashAbbrev()

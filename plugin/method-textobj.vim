@@ -310,7 +310,7 @@ nmap  <silent> <Plug>DeleteSurroundingMethod :<c-u>call <sid>DeleteSurroundingMe
 nmap  <silent> dsf <Plug>DeleteSurroundingMethod
 " }}}
 
-function! Log(m, poslist)
+function! s:Log(m, poslist)
     let mode = a:m
     call s:VisualSelect(s:CurrentFnameBigA())
     let lines = [ mode ]

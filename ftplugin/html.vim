@@ -1,16 +1,16 @@
 
-function! TidySelection()
+function! s:TidySelection()
     '<,'>!tidy  -quiet -indent --indent-spaces 4 --show-body-only 1
     normal! V`]=
 endfunction
-function! TidyFunction(...)
+function! s:TidyFunction(...)
     '[,']!tidy  -quiet -indent --indent-spaces 4 --show-body-only 1
     normal! V`]=
 endfunction
 
 let &l:formatprg='tidy -quiet -indent --indent-spaces 4 --show-errors 0 --wrap-attributes no --wrap 0 --tidy-mark no'
 let &l:formatprg=''
-" xnoremap <buffer> gq :<c-u>call TidySelection()<CR>
+" xnoremap <buffer> gq :<c-u>call <SID>TidySelection()<CR>
 " nnoremap <buffer> gq :set opfunc=TidyFunction<CR>g@
 nnoremap <buffer> gqG :%!tidy -quiet -indent --indent-spaces 4 --show-errors 0 --wrap-attributes no --wrap 0 --tidy-mark no<CR>
 
@@ -18,7 +18,7 @@ set encoding=utf8
 source ~/vimfiles/ftplugin/css.vim
 
 
-function! PrintJavaScriptVariable()
+function! s:PrintJavaScriptVariable()
     let print_fmt = 'console.log("variable_name: " + variable_name);'
     let reg_save = @a
     normal! gv"ay
@@ -27,9 +27,9 @@ function! PrintJavaScriptVariable()
     normal! ^
     let @a = reg_save
 endfunction
-vnoremap z :<c-u>call PrintJavaScriptVariable()<CR>
+vnoremap z :<c-u>call <SID>PrintJavaScriptVariable()<CR>
 
-function! SplitDiff()
+function! s:SplitDiff()
     g/^Required Reading: /d
     normal! ggguG
     %s/[ \t]//g
@@ -69,7 +69,7 @@ endfunction
 " of writing
 " }}}
 
-function! CorrectOneError()
+function! s:CorrectOneError()
     normal! ]S
     let [w, _] = spellbadword()
     if w == ''
@@ -79,7 +79,7 @@ function! CorrectOneError()
         normal! lli 
     endif
 endfunction
-function! CorrectSpellingErrors()
+function! s:CorrectSpellingErrors()
     normal! gg
     while v:true
         normal! ]S
@@ -92,13 +92,13 @@ function! CorrectSpellingErrors()
         endif
     endwhile
 endfunction
-function! CleanPDF()
+function! s:CleanPDF()
     %s/modem/modern/g
     %s/'/’/g
-    " call CorrectSpellingErrors()
+    " call s:CorrectSpellingErrors()
 endfunction
 
-function! FixSingleQuoteTypography()
+function! s:FixSingleQuoteTypography()
     let words = [ "I'll", "I'm", "I've", "It's", "That's", "There's", "They're", "can't", "didn't", "doesn't", "don't", 
                 \ "he's", "isn't", "it's", "that's", "there's", "they're", "who'd", "you'll" ]
 
@@ -111,15 +111,12 @@ function! FixSingleQuoteTypography()
 endfunction
 
 
-function! InStartTag()
-endfunction
 
 
 
-breakdel *
 " breakadd func 24 VisualSelectAroundAttribute
 " Doesn’t work for hyphens. Exmaple: data-type="some-content"
-function! VisualSelectAroundAttribute()
+function! s:VisualSelectAroundAttribute()
     " Check if cursor is inside < and >
     let pos_save = getpos(".")
     let quote_register = @"
@@ -161,61 +158,35 @@ function! VisualSelectAroundAttribute()
     call search(attribute_pattern, "ce")
 endfunction
 
-xnoremap  <silent> aa :<c-u>call VisualSelectAroundAttribute()<CR>
-onoremap  <silent> aa :<c-u>call VisualSelectAroundAttribute()<CR>
+xnoremap  <silent> aa :<c-u>call <SID>VisualSelectAroundAttribute()<CR>
+onoremap  <silent> aa :<c-u>call <SID>VisualSelectAroundAttribute()<CR>
 
 vnoremap <Plug>LeftBracket <
 vmap <silent> <expr> < mode() ==# "v" ?  '<Plug>VSurround<'  :  '<Plug>LeftBracket'
 
-function! Isolate(pattern) range
-    if len(a:pattern) == 0
-        let pattern = @/
-    else
-        let pattern = substitute(a:pattern, "^/", "", "")
-        let pattern = substitute(pattern, "/$", "", "")
-    endif
-    let range_passed = a:firstline != a:lastline
-    let range_passed = v:false " Override because range is buggy
-    if range_passed
-        execute printf('%d,%ds/' . pattern . '/\0/g', a:firstline, a:lastline)
-        execute printf('%d,%dv/' . pattern . '/d', a:firstline, a:lastline)
-        execute printf('silent! normal! %dGgu%dG', a:firstline, a:lastline)
-        execute printf('silent! %d,%dsort', a:firstline, a:lastline)
-        " execute printf('silent! %d,%d!uniq -c', a:firstline, a:lastline)
-        " execute printf('silent! %d,%dsort! n', a:firstline, a:lastline)
-    else
-        execute '%s/' . pattern . '/\0/g'
-        execute 'v/' . pattern . '/d'
-        silent! normal! ggguG
-        silent! %sort
-        silent! %!uniq -c 
-        silent! %sort! n
-    endif
-endfunction
-command! -range -nargs=? Isolate <line1>,<line2>call Isolate(<q-args>)
 
 " Doesn’t work
-function! ShowDoubleQuotes()
+function! s:ShowDoubleQuotes()
     Isolate /[^=]"[^"=>]*"/
 endfunction
-command! ShowDoubleQuotes call ShowDoubleQuotes()
+command! ShowDoubleQuotes call s:ShowDoubleQuotes()
 
-function! NextDoubleQuotes()
+function! s:NextDoubleQuotes()
     call feedkeys('/[^=]\zs"[^"=>]*"')
 endfunction
-command! NextDoubleQuotes call NextDoubleQuotes()
+command! NextDoubleQuotes call s:NextDoubleQuotes()
 
-function! ShowSingleQuotes()
+function! s:ShowSingleQuotes()
     Isolate /\(\<\w\+\)'\(\w\w\?\>\)/
 endfunction
-command! ShowSingleQuotes call ShowSingleQuotes()
+command! ShowSingleQuotes call s:ShowSingleQuotes()
 
-function! ReplaceSingleQuoteWithCurlyQuote()
+function! s:ReplaceSingleQuoteWithCurlyQuote()
     %s/\(\<\w\+\)'\(\w\w\?\>\)/\1’\2/g
 endfunction
-command! ReplaceSingleQuoteWithCurlyQuote call ReplaceSingleQuoteWithCurlyQuote()
+command! ReplaceSingleQuoteWithCurlyQuote call s:ReplaceSingleQuoteWithCurlyQuote()
 
-function! TemplateHTML()
+function! s:TemplateHTML()
     0read template.html
     call search("<title>")
     let register = @"
@@ -224,9 +195,9 @@ function! TemplateHTML()
     let @" = register
     normal! gv
 endfunction
-command! TemplateHTML call TemplateHTML()
+command! TemplateHTML call s:TemplateHTML()
 
-function! ToggleEntities()
+function! s:ToggleEntities()
     let quote_save = @"
     silent! normal! gvy
     let selection = @"
@@ -247,10 +218,10 @@ function! ToggleEntities()
     else
     endif
 endfunction
-command! -range ToggleEntities call ToggleEntities()
+command! -range ToggleEntities call s:ToggleEntities()
 
 " TODO: Modfy syntax/html.vim, indent/html.vim to enable this via gq
-function! GetOpeningAndClosingTagLines()
+function! s:GetOpeningAndClosingTagLines()
     let view_save = winsaveview()
     let reg_save = @"
 
@@ -270,12 +241,12 @@ function! GetOpeningAndClosingTagLines()
     return [opening_tag_line, closing_tag_line]
 endfunction
 
-function! SplitParagraphOrListItem()
+function! s:SplitParagraphOrListItem()
     let start_indent = indent(".")
 
 
     let current_line = line(".")
-    let [opening_tag_line, closing_tag_line] = GetOpeningAndClosingTagLines()
+    let [opening_tag_line, closing_tag_line] = s:GetOpeningAndClosingTagLines()
     let on_same_line = opening_tag_line == closing_tag_line && current_line == opening_tag_line
     let can_split = on_same_line
 
@@ -295,10 +266,10 @@ function! SplitParagraphOrListItem()
     normal! $
     call search('<\zsli\|<\zsp\|<\zsdd', "bc")
 endfunction
-function! JoinParagraphOrListItem()
+function! s:JoinParagraphOrListItem()
     let can_join = v:true
     let current_line = line(".")
-    let [opening_tag_line, closing_tag_line] = GetOpeningAndClosingTagLines()
+    let [opening_tag_line, closing_tag_line] = s:GetOpeningAndClosingTagLines()
     let not_on_same_line = opening_tag_line != closing_tag_line
     let between_tags = current_line >= opening_tag_line && current_line <= closing_tag_line
     let can_join = not_on_same_line && between_tags
@@ -316,9 +287,9 @@ function! JoinParagraphOrListItem()
     normal! $
     call search('<\zsli\|<\zsp\|<\zsdd', "bc")
 endfunction
-function! SplitjoinParagraphOrListItem()
+function! s:SplitjoinParagraphOrListItem()
     let current_line = line(".")
-    let [opening_tag_line, closing_tag_line] = GetOpeningAndClosingTagLines()
+    let [opening_tag_line, closing_tag_line] = s:GetOpeningAndClosingTagLines()
     if opening_tag_line == 0
         return
     endif
@@ -326,12 +297,12 @@ function! SplitjoinParagraphOrListItem()
         return
     endif
     if opening_tag_line == closing_tag_line
-        call SplitParagraphOrListItem()
+        call s:SplitParagraphOrListItem()
     else
-        call JoinParagraphOrListItem()
+        call s:JoinParagraphOrListItem()
     endif
 endfunction
-nnoremap <buffer> gu :call SplitjoinParagraphOrListItem()<CR>
+nnoremap <buffer> gu :call <SID>SplitjoinParagraphOrListItem()<CR>
 " ~\Desktop\website\css_rules.txt
 " iabbrev <buffer> tdn text-decoration: none;
 " iabbrev <buffer> tdu text-decoration: underline;
@@ -452,7 +423,7 @@ nnoremap <silent> <buffer> `s :call <SID>GotoStyleTagEnd()<CR>
 
 " iabbrev <buffer> h* h1, h2, h3, h4, h5, h6
 
-function! ShowClasses()
+function! s:ShowClasses()
     %s/class="[^"]*"/\0/g
     v/class/d
     %s/class="//
@@ -462,7 +433,7 @@ function! ShowClasses()
     %!uniq -c
     %sort! n
 endfunction
-command! ShowClasses silent! call ShowClasses()
+command! ShowClasses silent! call s:ShowClasses()
 
 " iabbrev reset h1, h2, h3, h4, h5, h6, body, p, hr, pre, ol, ul, header, nav, button { margin: 0; padding: 0; }
 

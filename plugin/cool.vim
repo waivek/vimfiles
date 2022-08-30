@@ -59,7 +59,7 @@ function! s:PrintMatchInfo()
     let match_number = index(b:cool_match_positions, cursor_position) + 1
     let total_matches = len(b:cool_match_positions)
     let info_string = printf("%d of %d", match_number, total_matches)
-    let match_macro = Truncate(strtrans(@/),v:echospace-20)
+    let match_macro = common#Truncate(strtrans(@/),v:echospace-20)
     echon '/' . match_macro . " "
     echohl String 
     " echon info_string." (".cache_string."), Call Count: ".b:call_count

@@ -7,6 +7,7 @@ set nocompatible
 setlocal encoding=utf8
 
 " source ~/vimfiles/performance/performance.vim
+" source ~/vimfiles/ide.vim
 
 
 " Reasons To Use over /pack/
@@ -17,7 +18,6 @@ setlocal encoding=utf8
 " Plug 'dense-analysis/ale'
 " Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " call plug#end()
-
 
 let &pythonthreedll='C:\Program Files\Python310\python310.dll'
 let s:vim_path = ""
@@ -154,4 +154,3 @@ inoremap <C-v> <C-r>+
 
 set nowrap
 
-" source ~/vimfiles/ide.vim
