@@ -41,6 +41,86 @@ function! s:Debug()
     return expand("%")
 endfunction
 
+function! s:PathSplit()
+    let path = 'C:\Users\vivek\Desktop\blender.lnk'
+    let folders = split(path, '\')
+    echo folders
+endfunction
+
+function! s:NormPath(path)
+    let separator = "\\"
+    let norm_path = substitute(a:path, '/', separator, "g")
+    return norm_path
+endfunction
+
+function! s:GetRelpath_2()
+    if &filetype ==#  "help" || &filetype ==#  "man.cpp"
+        let b:relpath = expand("%:t")
+        return b:relpath
+    endif
+
+
+    let file_drive = expand("%:p")[0]
+    let dir_drive = getcwd()[0]
+
+    if file_drive != dir_drive
+        return expand("%") 
+    endif
+
+    let filepath = expand("%:p")
+    let cwd = getcwd()
+    let last_char_is_slash = cwd[len(cwd)-1] ==# '\'
+    if last_char_is_slash
+        let cwd = slice(cwd, 0, len(cwd)-1)
+    endif
+
+
+    let file_in_cwd = stridx(filepath, cwd) == 0
+    if file_in_cwd
+        let path = strpart(filepath, len(cwd.'\'))
+        return s:NormPath(path)
+    else
+        let cwd_parts = split(cwd, '\')
+        let filepath_parts = split(filepath, '\')
+
+        let for_end = min([len(cwd_parts), len(filepath_parts)])
+        let common_count = -1
+        for idx in range(for_end)
+            " echo "cwd_parts[idx]: " . string(cwd_parts[idx])
+            " echo "filepath_parts[idx]: " . string(filepath_parts[idx])
+            if cwd_parts[idx] !=# filepath_parts[idx]
+                let common_count = idx
+                break
+            endif
+            let idx = idx + 1
+        endfor
+
+
+        " echo "--- x ---"
+        " echo "cwd: " . cwd
+        " echo "filepath: " . filepath
+        let common_parts = slice(cwd_parts, 0, common_count)
+        let common_path = join(common_parts, '\')
+        " echo "common_path: " . common_path
+        let dot_count = len(cwd_parts) - common_count
+        " echo "dot_count: " . dot_count
+        let path = strpart(filepath, len(common_path.'\'))
+        let dot_path = repeat('..\', dot_count) . path
+        return s:NormPath(dot_path)
+    endif
+    " C:\Users\vivek\Desktop\Twitch\chats\
+    "               x
+    " C:\Users\vivek\Documents\Python\ic.py
+    " ----- 3 ----- y
+
+    endif
+
+
+
+endfunction
+" echo s:GetRelpath_2()
+
+
 " set statusline=%{s:LinterStatus()}
 function! s:GetRelpath()
     cd . " Required to update `expand('%')`
@@ -83,12 +163,23 @@ endfunction
 
 function! Relpath()
     if !exists('b:relpath_cache')
-        let b:relpath_cache = s:GetRelpath()
+        let b:relpath_cache = s:GetRelpath_2()
     endif
     return b:relpath_cache
 endfunction
 
-function! s:DeleteCacheInAllBuffers()
+function! s:DeleteCacheInAllBuffers(call_au_group)
+    if a:call_au_group ==# "DirChanged"
+        let x = 1
+    elseif a:call_au_group ==# "BufEnter"
+        let x = 2
+    elseif a:call_au_group ==# "BufNew"
+        let x = 3
+    elseif a:call_au_group ==# "BufCreate"
+        let x = 4
+    elseif a:call_au_group ==# "BufFilePost"
+        let x = 5
+    endif
     " echoerr "DeleteRelpathCache called"
     " https://vim-use.narkive.com/AjYpj0zx/unlet-ing-variables-in-buffers
     for D in getwininfo()
@@ -107,11 +198,11 @@ endfunction
 
 augroup StatusLineUpdateRelpathCache
     au!
-    au DirChanged  * call s:DeleteCacheInAllBuffers()
-    au BufEnter    * call s:DeleteCacheInAllBuffers()
-    au BufNew      * call s:DeleteCacheInAllBuffers()
-    au BufCreate   * call s:DeleteCacheInAllBuffers()
-    au BufFilePost * call s:DeleteCacheInAllBuffers()
+    au DirChanged  * call s:DeleteCacheInAllBuffers("DirChanged")
+    au BufEnter    * call s:DeleteCacheInAllBuffers("BufEnter")
+    au BufNew      * call s:DeleteCacheInAllBuffers("BufNew")
+    au BufCreate   * call s:DeleteCacheInAllBuffers("BufCreate")
+    au BufFilePost * call s:DeleteCacheInAllBuffers("BufFilePost")
 augroup END
 
 let s:dotty_script_id = -1

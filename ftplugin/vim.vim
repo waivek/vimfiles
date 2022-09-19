@@ -95,6 +95,8 @@ function! s:ExtractArguments()
     normal! `[v`]=
 
 endfunction
+
+
 command! ExtractArguments call <SID>ExtractArguments()
 
 function! s:VimHashAbbrev()

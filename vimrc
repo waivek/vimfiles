@@ -31,8 +31,10 @@ filetype indent plugin on | syntax on
 
 call plug#begin()
 Plug 'dense-analysis/ale'
-Plug 'neoclide/coc.nvim', { 'tag': 'v0.0.81' }
+" Plug 'neoclide/coc.nvim', { 'tag': 'v0.0.81' }
+Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'AndrewRadev/sideways.vim'
+Plug 'puremourning/vimspector'
 call plug#end()
 if has("win32")
     source ~/vimfiles/ide.vim
@@ -1048,6 +1050,7 @@ let g:sqh_connections = {
 
 let s:greppable_python_paths = []
 function! s:PyGrep(key)
+    " echoerr "s:greppable_python_paths: " . string(s:greppable_python_paths)
     let regex = '\.py$'
     let key = a:key
     " let python_paths = filter(copy(v:oldfiles), 'v:val =~? regex')
@@ -1353,14 +1356,19 @@ endfunction
 
 
 function! s:SurroundWithBracketAndInsert(...)
+    " normal! `[v`]d
     let function_name = input("function: ")
+    if function_name ==# ""
+        return
+    endif
     let reg_save = @"
-    normal! gvy
+    normal! `[v`]y
     let @" = function_name . '(' . @" . ')'
     normal! gvp`[
+    let @" = reg_save
 endfunction
 
-nnoremap <silent> ) :set opfunc=<SID>SurroundWithBracketAndInsert<cr>g@
+nmap <silent> ) :set opfunc=<SID>SurroundWithBracketAndInsert<cr>g@
 
 function! s:MoveEmoteFunction()
     normal V]md
@@ -1373,6 +1381,9 @@ endfunction
 command! MEF call s:MoveEmoteFunction()
 command! MN call search("^def")
 
+cabbrev   <expr> <         len(getcmdline()) == 1 && getcmdtype() =~ '[/?]' ? '\C\\><Left><Left>' : '<'
+nnoremap         <space>w                                                     /\C\<\><Left><Left>
+
 
 command! CapitalizeSqlite call s:CapitalizeSqlite()
 
@@ -1381,9 +1392,9 @@ command! -range -nargs=? Isolate <line1>,<line2>call s:Isolate(<q-args>)
 nnoremap <expr> gt <SID>DotRepeat() " 1.
 
 
-nnoremap <space>y :call <SID>script_id_yank()<CR>
-nnoremap <space>n :call <SID>script_id_next()<CR>
-nnoremap <space>r :call <SID>script_id_replace()<CR>
+" nnoremap <space>y :call <SID>script_id_yank()<CR>
+" nnoremap <space>n :call <SID>script_id_next()<CR>
+" nnoremap <space>r :call <SID>script_id_replace()<CR>
 
 
 
@@ -1401,7 +1412,7 @@ command! WslFilesSubstitute        %s/C:\\Users\\vivek\\AppData\\Local\\Packages
 
 command! Gather call s:Gather()
 command! ToList call s:ToList()
-command! RunLine execute(substitute(getline("."), '^"\s*', '', ''))
+" command! RunLine execute(substitute(getline("."), '^"\s*', '', ''))
 
 " Remaining: :command, :augroup, :map
 " Command:
@@ -1416,7 +1427,6 @@ cabbrev <expr> P    len(getcmdline()) == 1 && getcmdtype() == ":" ? '!start ever
 cabbrev <expr> D    len(getcmdline()) == 1 && getcmdtype() == ":" ? '!start .' : 'D'
 cabbrev <expr> coc  getcmdline() == "h coc" && getcmdtype() == ":" ? 'coc-nvim' : 'coc'
 
-
 nnoremap <silent> <space>o :call <SID>OpenTodoFile()<CR>
 nnoremap <silent> <space>i :call <SID>OpenMainFile()<CR>
 nnoremap <silent> <space>p :call <SID>OpenProbabilitiesFile()<CR>
@@ -1424,14 +1434,18 @@ nnoremap <silent> <space>p :call <SID>OpenProbabilitiesFile()<CR>
 nnoremap <silent> <space>/ :s#\\#/#g<CR>
 nnoremap <silent> <space>\ :s#/#\\#g<CR>
 
+nnoremap          <space>l <C-^>
+nnoremap <silent> <space>k :call <SID>LoadKMarkedFile()<CR>
+
+nmap              <space>f <Plug>SearchOnScreen
+nmap     <silent> <space>; <Plug>Run
+
 
 function! s:AppendCommaToRange()
-    '<,'>s/[^,]\zs$/,
+    silent! '<,'>s/[^,]\zs$/,
 endfunction
-vmap <expr> <silent> , visualmode() ==# 'V' ? ":<c-u>call <SID>AppendCommaToRange()<CR>" : ','
+noremap <expr> <silent> , mode() ==# 'V' ? ":<c-u>call <SID>AppendCommaToRange()<CR>" : ';'
 
-nnoremap <Space>l <C-^>
-nnoremap <silent> <Space>k :call <SID>LoadKMarkedFile()<CR>
 
 " -- START: `:w` to WRITE
 function! s:RemoveTempRemaps(...)
@@ -1463,7 +1477,6 @@ nnoremap <silent> <S-CR> :w<CR>
 cnoremap <expr> w len(getcmdline()) == 0 && getcmdtype() == ":" ? "w<CR>" : "w"
 " -- END: `:w` to WRITE
 
-nmap <space>f <Plug>SearchOnScreen
 nnoremap d) dt)
 
 command! Bk !start cmd /k "cd C:\Users\vivek\Desktop\bkp\"
@@ -1475,4 +1488,11 @@ nnoremap ga :!start python C:\Users\vivek\Documents\Python\backup.py<CR>
 " wt -w 0 nt -p "Command Prompt" python C:\Users\vivek\Documents\Python\backup.py --backup
 
 source ~/vimfiles/performance/performance.vim
+
+nmap 3 #
+nmap 8 *
+
+
+
+
 

@@ -91,9 +91,9 @@ let g:ale_linters = {
             \ 'go' : [ 'gobuild' ]
             \ }
 
-            " \ 'python' : [ 'autoimport' ]
 let g:ale_fixers = {
-            \ 'go' : [ 'gofmt', 'goimports' ]
+            \ 'go' : [ 'gofmt', 'goimports' ],
+            \ 'python' : [ 'autoimport' ]
             \}
 
 " let g:ale_lint_on_enter = 0
@@ -172,37 +172,49 @@ function! s:TabCompletion()
     " results for <C-n>. Simplify this switch b/w <C-n> and <C-p>
 
 
-    let message = printf("pumvisible: %s, mode: %s", string(pumvisible()), string(complete_info()["mode"]))
-    if pumvisible() && complete_info()["mode"] !=# "keyword"
-        return "\<C-n>"
-    endif
-    if pumvisible() && complete_info()["mode"] ==# "keyword"
-        return "\<C-p>"
-    endif
+    " REMOVE 1:
+    " let message = printf("pumvisible: %s, mode: %s", string(pumvisible()), string(complete_info()["mode"]))
+
+    " REMOVE 2:
+    " let pum_is_visible = pumvisible()
+    " 
+    " if pum_is_visible && complete_info()["mode"] !=# "keyword"
+    "     return "\<C-n>"
+    " endif
+    " if pum_is_visible && complete_info()["mode"] ==# "keyword"
+    "     return "\<C-p>"
+    " endif
 
     " Not available on 'coc v0.0.81'
-    " if coc#pum#visible()
-    "     return coc#pum#next(1)
-    " endif
+
+    if coc#pum#visible()
+        return coc#pum#next(1)
+    endif
+
+    " REMOVE 6:
     if s:Nothing_before_cursor()
         return "\<TAB>"
     endif
+    " REMOVE 5:
     if s:Space_before_cursor()
         return "\<TAB>"
     endif
 
-    if exists('b:coc_suggest_disable') && b:coc_suggest_disable == 1
-        if s:Period_before_cursor()
-            return "\<C-x>\<C-o>" " Start omni-completion
-        else
-            return "\<C-p>" " Start keyword completion
-            " return "\<C-n>" 
-        endif
-    endif
-    if !exists("*coc#refresh")
-        return "\<C-p>" " Start keyword completion
-        " return "\<C-n>" 
-    endif
+    " REMOVE 3:
+    " if exists('b:coc_suggest_disable') && b:coc_suggest_disable == 1
+    "     if s:Period_before_cursor()
+    "         return "\<C-x>\<C-o>" " Start omni-completion
+    "     else
+    "         return "\<C-p>" " Start keyword completion
+    "         " return "\<C-n>" 
+    "     endif
+    " endif
+
+    " REMOVE 4:
+    " if !exists("*coc#refresh")
+    "     return "\<C-p>" " Start keyword completion
+    "     " return "\<C-n>" 
+    " endif
     call coc#refresh() " Start Coc Completion
 endfunction
 
@@ -220,4 +232,103 @@ inoremap <silent> <expr> <c-space>  coc#refresh()
 nnoremap <silent>        <leader>d  :call CocAction('jumpDefinition')<CR>
 nnoremap <silent> <expr> K          <SID>ShowDocumentation()
 inoremap <silent> <expr> <TAB>      <SID>TabCompletion()
-inoremap <silent> <expr> <S-Tab> pumvisible() ? '<C-p>' : '<Tab>'
+" inoremap <silent> <expr> <S-Tab> pumvisible() ? '<C-p>' : '<Tab>'
+inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
+
+
+
+" <<<<<<<<<< VIMSPECTOR
+
+
+" nnoremap <Leader>dT :call vimspector#ClearBreakpoints()<CR>
+" 
+" nmap <Leader>dc <Plug>VimspectorContinue
+" nmap <Leader>dl <Plug>VimspectorRestart
+
+
+" windows:
+"     expression
+"     variable
+"     breakpoints
+"     frames
+"     console
+"     code
+" 
+" [home] dh - [free]
+" 
+" [wide] de - [free] never used because we have d;
+" [wide] do - [free]
+" [wide] dm - [free]
+" [wide] dn - [free]
+" [wide] dp - [free]
+" [wide] du - [free]
+" [wide] dy - [free]
+" 
+" [narr] dc - [free]
+" [narr] dq - [free]
+" [narr] dr - [free]
+" [narr] dx - [free]
+" [narr] dz - [free]
+" 
+" da - delete around
+" db - delete back
+" dd - delete line
+" df - delete f inclusive
+" dg - delete next match via dgn
+" di - delete inside
+" dj - delete back
+" dk - delete line below
+" dl - delete line above
+" ds - vim-surround
+" dt - delete f exclusive
+" dv - delete visual
+" dw - delete from cursor to end
+
+" <Plug>VimspectorContinue                    vimspector#Continue()
+" <Plug>VimspectorStop                        vimspector#Stop()
+" <Plug>VimpectorRestart                      vimspector#Restart()
+" <Plug>VimspectorPause                       vimspector#Pause()
+" <Plug>VimspectorBreakpoints                 vimspector#ListBreakpoints()
+
+
+" <Plug>VimspectorToggleConditionalBreakpoint vimspector#ToggleBreakpoint( { trigger expr, hit count expr } )
+" <Plug>VimspectorAddFunctionBreakpoint       vimspector#AddFunctionBreakpoint( <cexpr> )
+" <Plug>VimspectorGoToCurrentLine             vimspector#GoToCurrentLine()
+
+
+" <Plug>VimspectorJumpToNextBreakpoint        vimspector#JumpToNextBreakpoint()
+" <Plug>VimspectorJumpToPreviousBreakpoint    vimspector#JumpToPreviousBreakpoint()
+" <Plug>VimspectorJumpToProgramCounter        vimspector#JumpToProgramCounter()
+" <Plug>VimspectorBalloonEval                 _internal_
+
+function! s:VimspectorIsEnabled()
+    if g:vimspector_session_windows == { 'breakpoints': v:none }
+        return v:false
+    else
+        return v:true
+    endif
+endfunction
+
+if !exists("s:left_save")
+    let s:left_save = maparg("<Left>", "n")
+    let s:right_save = maparg("<Right>", "n")
+endif
+
+nmap <expr> <Left>  <SID>VimspectorIsEnabled() ? '<Plug>VimspectorStepOut' : '<Plug>SidewaysLeftExtended'
+nmap <expr> <Right> <SID>VimspectorIsEnabled() ? '<Plug>VimspectorStepInto' : '<Plug>SidewaysRightExtended'
+nmap <expr> <CR> <SID>VimspectorIsEnabled() ? "<Plug>VimspectorStepOver" : "<CR>"
+
+nmap <Up>    <Plug>VimspectorUpFrame
+nmap <Down>  <Plug>VimspectorDownFrame
+
+
+" nnoremap <Leader>dt :call vimspector#ToggleBreakpoint()<CR>
+nmap dp <Plug>VimspectorToggleBreakpoint
+nmap dh <Plug>VimspectorRunToCursor
+nmap dy <Plug>VimspectorBalloonEval
+
+nnoremap dq :call vimspector#Reset()<CR>
+nnoremap do :call vimspector#LaunchWithSettings({ 'configuration': 'run' })<CR>
+
+" VIMSPECTOR >>>>>>>>>>
+

@@ -150,7 +150,7 @@ endfunction
 
 function! s:SingleLineTimer()
     let first_function =  matchstrpos(getline("."), '\w\+\ze(')[0]
-    let import_line = matchstrpos(getline("."), 'import [^#; ]*')[0]
+    let import_line = trim(matchstrpos(getline("."), 'import [^#;]*')[0])
     if len(first_function) == 0 && len(import_line) == 0
         return
     endif
@@ -206,6 +206,21 @@ function! s:VisualUltisnipsTimer()
     normal! gvstimer
     call feedkeys("A\<C-j>")
     return
+endfunction
+
+function! s:InsertTimerVisual()
+    let timer_id = input('Timer ID: ')
+    if timer_id ==# ""
+        return
+    endif
+    execute "normal! i "
+    execute "normal! x"
+    let indent = indent(".")
+    let spaces = repeat(" ", indent)
+    let start_string = printf('%stimer.start("%s")', spaces, timer_id)."\n"
+    let print_string = printf('%stimer.print("%s")', spaces, timer_id)."\n"
+    '>put=print_string
+    '<-1put=start_string
 endfunction
 
 
@@ -293,6 +308,50 @@ function! s:PythonComprehension()
     s/^\s*/\=start_space.'[ '/
 endfunction
 
+let s:alphabet = "A"
+function! s:InsertAlphabetPrint()
+    " if trim(getline(":")
+    " let start_space = substitute(getline("."), '\S.*', "", "")
+    " let alphabet_line = start_space . printf('print("%s")', s:alphabet)
+    " let s:alphabet = nr2char(char2nr(s:alphabet) + 1)
+    " put=alphabet_line
+endfunction
+
+function! s:QF2Buffer()
+    let lines = map(getqflist(), { idx, D -> D['text'] })
+    let lines = map(lines, { idx, text -> substitute(text, '^\s*#\s*', '', '') })
+    let lines = map(lines, { idx, text -> trim(text) })
+    let lines_joined = join(lines, "\n")
+    let filename = strftime("%y%m%d") . ".py"
+    let filepath = "~/temp/" . filename
+    execute "edit " . filepath
+    g/^/d
+    put=lines_joined
+    g/^[A-Za-z!)0-9>%<;(|`+$@{?-\*#&}\-_=~^]\{77,\}$/d
+    g/^\s*$/d
+    write
+endfunction
+
+
+function! s:PythonNewTestFunction()
+    let l:function_name = "test_" . input("def test_")
+    %s/^\zedef main/\='def ' . l:function_name .'():    pass'
+    %s/def main():\n    \zs\ze\S.*()\n/\=l:function_name.'()    # ' 
+    call search('pass', 'b')
+endfunction
+
+command! -buffer NTF call s:PythonNewTestFunction()
+
+command! Q2B call s:QF2Buffer()
+
+
+command! -buffer IAP call s:InsertAlphabetPrint()
+
+command! -buffer Enumerate call s:Enumerate()
+command! -buffer Ternary call s:PythonTernary()
+command! -buffer Comprehension call s:PythonComprehension()
+
+
 call timer_start(1, function('s:AsyncMethodMappings'))
 nnoremap <silent> <buffer> 'm :call <SID>GoToMainPythonFunction()<CR>
 nnoremap <silent> <buffer> `m :call <SID>GoToMainPythonFunction()<CR>
@@ -304,7 +363,7 @@ onoremap ]c :<c-u>call <SID>ClassEndVisual()<CR>
 nnoremap <buffer> <silent> <space>b :call <SID>ToggleBreakpointNormal()<CR>
 vnoremap <buffer> <silent> <space>b :<c-u>call <SID>InsertBreakpointVisual()<CR>
 nnoremap <silent> <buffer> <space>t :call <SID>ToggleTimerSingleLine()<CR>
-vnoremap <silent> <space>t :<c-u>call <SID>VisualUltisnipsTimer()<CR>
+vnoremap <silent> <space>t :<c-u>call <SID>InsertTimerVisual()<CR>
 nnoremap <silent> <space>T :call <SID>InsertFileTimer()<CR>
 
 setlocal path+=~/Documents/Python/
@@ -312,13 +371,9 @@ setlocal path+=~/Documents/Python/
 iabbrev <buffer> respones response
 iabbrev <buffer> Respones Response
 
-command! Enumerate call s:Enumerate()
-command! Ternary call s:PythonTernary()
-command! Comprehension call s:PythonComprehension()
-
 setlocal nosmartindent " To indent lines /^#/ with >
 
 command! Py !start python -i C:/Users/vivek/repl.py
 
 
-
+let g:pyindent_searchpair_timeout = 10

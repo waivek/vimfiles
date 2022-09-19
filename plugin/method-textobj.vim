@@ -292,6 +292,8 @@ function! s:DeleteSurroundingMethod()
     if exists("*repeat#set")
         call repeat#set("\<Plug>DeleteSurroundingMethod")
     endif
+    execute "normal! i "
+    execute "normal! x"
     let pos_list = s:CurrentFnameBigA()
     let [_, _, end_pos] = pos_list
     let [_, _, around_finish_col, _] = end_pos
