@@ -1,3 +1,49 @@
+let g:coc_global_extensions = [ 'coc-vimlsp' ]
+" [disabled] Insert Mode Completions {{{
+
+" if (executable('pyls'))
+"     augroup VimrcLsp
+"         au!
+"         au User lsp_setup call lsp#register_server({
+"         \ 'name': 'pyls',
+"         \ 'cmd': {server_info->['pyls']},
+"         \ 'allowlist': ['python'],
+"         \ 'config': { 'hover_coneal' : 1},
+"         \ 'workspace_config': {'pyls': { 'plugins': {'pydocstyle': {'enabled': v:false} } } }
+"         \ })
+"     augroup END
+" endif
+" 
+" 
+" let g:lsp_log_file = expand('~/Desktop/neovim/lsp.log')
+" 
+" function! s:on_lsp_buffer_enabled() abort
+"     setlocal omnifunc=lsp#complete
+"     " nmap <buffer> gd <plug>(lsp-definition)
+"     nmap <buffer> <f2> <plug>(lsp-rename)
+" endfunction
+" augroup lsp_install
+"     au!
+"     autocmd User lsp_buffer_enabled call s:on_lsp_buffer_enabled()
+" augroup END
+" let g:lsp_diagnostics_enabled = 0
+" let g:asyncomplete_auto_completeopt = 0
+" let g:asyncomplete_popup_delay = 0
+" let g:asyncomplete_enable_for_all = 0
+" 
+" 
+" let g:SuperTabDefaultCompletionType="context"
+" let g:SuperTabCrMapping=1
+" let g:SuperTabCompleteCase="match"
+" 
+" 
+" 
+" let g:UltiSnipsExpandTrigger='<c-j>'
+" let g:UltiSnipsJumpForwardTrigger='<c-j>'
+
+
+
+" }}}
 
 " PyflakesRefinedCallback(buffer, lines) {{{
 function! PyflakesRefinedCallback(buffer, lines) abort
@@ -105,8 +151,16 @@ let g:ale_lint_on_insert_leave = 0 " Default: 1
 let g:ale_lint_on_text_changed = 0 " Default: 'normal'
 let g:ale_lint_delay = 0 " Default: 200
 
-
 let g:ale_html_tidy_options = '-q -e -language en --escape-scripts 0'
+
+" Put this in ~/.eslintrc.json
+" {
+"   "extends": [
+"     "plugin:vue/base"
+"   ]
+" }
+let g:ale_javascript_eslint_options='--resolve-plugins-relative-to=C:\Users\vivek\AppData\Roaming\npm'
+
 " }}}
 
 " Jedi g:{{{
@@ -118,7 +172,7 @@ let g:jedi#show_call_signatures   = 1
 let g:jedi#auto_vim_configuration = 0 " to prevent jedi from overriding 'completeopt'
 " }}}
 
-" Disable file with size > 1MB
+"  Disable file with size > 1MB
 
 function! s:ConfigureCoc()
     let ONE_KB = 1024
@@ -190,6 +244,9 @@ function! s:TabCompletion()
     if coc#pum#visible()
         return coc#pum#next(1)
     endif
+    if pumvisible()
+        return "\<C-n>"
+    endif
 
     " REMOVE 6:
     if s:Nothing_before_cursor()
@@ -219,6 +276,14 @@ function! s:TabCompletion()
 endfunction
 
 
+function! s:ShowDocumentationVim()
+    let NewLineCount = { str -> count(trim(substitute(str, '```\(help\)\?', '', 'g')), "\n") }
+    if exists("*CocHasProvider") && CocHasProvider('hover') && CocAction('getHover') != [] && NewLineCount(CocAction('getHover')[0]) != 0
+        call CocAction('doHover')
+    else
+        normal! K
+    endif
+endfunction
 function! s:ShowDocumentation()
     if exists("*CocHasProvider") && CocHasProvider('hover')
         return ":call CocAction('doHover')\<CR>"
@@ -229,11 +294,28 @@ endfunction
 set completeopt=menuone,popup
 set complete=.,w
 inoremap <silent> <expr> <c-space>  coc#refresh()
+
+" h coc-locations-api
 nnoremap <silent>        <leader>d  :call CocAction('jumpDefinition')<CR>
+nnoremap <silent>        <leader>u  :call CocAction('jumpUsed')<CR>
 nnoremap <silent> <expr> K          <SID>ShowDocumentation()
+augroup IDEShowDoc
+    au!
+    au BufRead *.vim nnoremap <buffer> K :call <SID>ShowDocumentationVim()<CR>
+augroup END
 inoremap <silent> <expr> <TAB>      <SID>TabCompletion()
 " inoremap <silent> <expr> <S-Tab> pumvisible() ? '<C-p>' : '<Tab>'
-inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
+function! s:ShiftTab()
+    if coc#pum#visible()
+        return coc#pum#prev(1)
+    endif
+    if pumvisible()
+        return "\<C-p>"
+    endif
+    return "\<C-h>"
+endfunction
+" inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
+inoremap <silent> <expr>  <S-TAB> <SID>ShiftTab()
 
 
 
@@ -316,7 +398,6 @@ endif
 
 nmap <expr> <Left>  <SID>VimspectorIsEnabled() ? '<Plug>VimspectorStepOut' : '<Plug>SidewaysLeftExtended'
 nmap <expr> <Right> <SID>VimspectorIsEnabled() ? '<Plug>VimspectorStepInto' : '<Plug>SidewaysRightExtended'
-nmap <expr> <CR> <SID>VimspectorIsEnabled() ? "<Plug>VimspectorStepOver" : "<CR>"
 
 nmap <Up>    <Plug>VimspectorUpFrame
 nmap <Down>  <Plug>VimspectorDownFrame
@@ -328,7 +409,29 @@ nmap dh <Plug>VimspectorRunToCursor
 nmap dy <Plug>VimspectorBalloonEval
 
 nnoremap dq :call vimspector#Reset()<CR>
-nnoremap do :call vimspector#LaunchWithSettings({ 'configuration': 'run' })<CR>
+
+
+" ~/vimfiles/vimspector/configurations/windows/_all/global.json
+nnoremap do :call vimspector#Launch()<CR>
 
 " VIMSPECTOR >>>>>>>>>>
 
+function! s:StartInsert(...)
+    call feedkeys("i", "n")
+endfunction
+
+function! s:PC()
+    call timer_start(10, function("s:StartInsert"))
+    return "\<CR>"
+endfunction
+
+augroup ConsoleMaps
+    au!
+    au BufEnter Vimspector.Console inoremap <buffer> <expr> <CR> <SID>PC()
+augroup END
+
+nmap <expr> <CR> <SID>VimspectorIsEnabled() ? "<Plug>VimspectorStepOver" : "<CR>"
+" let console_bufnr = getwininfo(g:vimspector_session_windows.output)[0]['bufnr']
+
+let g:vimspector_install_gadgets = [ 'debugpy' ]
+let g:vimspector_base_dir = expand('~/vimfiles/vimspector')

@@ -45,7 +45,7 @@ endfunction
 
 function! s:SearchEvalFunction()
     call s:RestoreWrapscanOnCmdlineLeave()
-    return '/^[a-z]*'
+    return '/^[a-z_]*'
 endfunction
 
 function! s:GdInFile()

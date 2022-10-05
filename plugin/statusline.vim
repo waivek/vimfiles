@@ -209,7 +209,7 @@ let s:dotty_script_id = -1
 function! DotMap()
     let dotty_path = '~/vimfiles/plugin/dotty.vim'
     if s:dotty_script_id == -1
-        let s:dotty_script_id = command2dict#GetSid(dotty_path)
+        let s:dotty_script_id = introspect#GetSid(dotty_path)
     endif
 
     let dot_map = printf(':call <SNR>%d_RepeatChange()<CR>', s:dotty_script_id)

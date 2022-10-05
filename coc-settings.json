@@ -1,12 +1,16 @@
 {
     "python.linting.enabled": false,
     "pyright.disableDiagnostics": true,
+    "suggest.virtualText": true,
     "python.analysis.extraPaths": [ "~/Documents/Python/" ],
     "suggest.autoTrigger": "always",
     "suggest.noselect": true,
     "suggest.localityBonus": true,
-    
+
+    "vimlsp.diagnostic.enable": true,
 
     "volar.enable": true,
     "volar.diagnostics.enable": false
+
+
 }

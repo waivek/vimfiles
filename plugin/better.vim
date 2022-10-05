@@ -417,6 +417,37 @@ function! s:GetActiveBuffers()
 endfunction
 
 
+let s:function_surround_call_count = 0
+let s:function_save = ""
+" https://www.vikasraj.dev/blog/vim-dot-repeat
+function! s:SurroundWithBracketAndInsert(motion = v:null)
+    if a:motion == v:null
+        let s:function_surround_call_count = 0
+        set operatorfunc=s:SurroundWithBracketAndInsert
+        return 'g@'
+    endif
+
+    if s:function_surround_call_count == 0
+        let function_name = input("function: ")
+        if function_name ==# ""
+            return
+        endif
+        let s:function_save = function_name
+    endif
+
+    let function_name = s:function_save
+
+    let reg_save = @"
+    normal! `[v`]y
+    let @" = function_name . '(' . @" . ')'
+    normal! gvp`[
+    let @" = reg_save
+    let s:function_surround_call_count = s:function_surround_call_count + 1
+endfunction
+
+" nmap <silent> ) :set opfunc=<SID>SurroundWithBracketAndInsert<cr>g@
+nmap <expr> <silent> ) <SID>SurroundWithBracketAndInsert()
+
 function! s:GetModifiedFiles()
 
     let l:dictionaries = []

@@ -365,6 +365,7 @@ function! AendswithB(a, b)
     let a_substring = strpart(a:a, a_length - b_length, a_length)
     return a_substring ==# a:b
 endfunction
+
 " NOTE strpart(s, 0, 5) != s[0:5]
 function! AstartswithB(a, b)
     let b_length = len(a:b)

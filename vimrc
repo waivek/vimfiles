@@ -35,6 +35,7 @@ Plug 'dense-analysis/ale'
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'AndrewRadev/sideways.vim'
 Plug 'puremourning/vimspector'
+Plug 'leafOfTree/vim-vue-plugin'
 call plug#end()
 if has("win32")
     source ~/vimfiles/ide.vim
@@ -703,8 +704,8 @@ function! s:UpdateNavigation()
 endfunction
 command! UpdateNavigation call s:UpdateNavigation()
 
-let &fillchars='vert:|,fold: '
 
+let &fillchars='vert:|,fold: '
 hi! link Folded Function
 function! s:FoldTextMinimal()
     let indent = indent(v:foldstart)
@@ -717,34 +718,6 @@ function! s:FoldTextMinimal()
 endfunction
 set foldtext=s:FoldTextMinimal()
 
-
-" ---------- LATEST SNIPPETS ----------
-
-nnoremap V Vg$
-
-" set synmaxcol=200 " We disable syntax highlighting for long lines
-
-
-
-" h express-mappings
-" h g:
-" h g=
-
-function! s:Chars(string)
-    return split(a:string, '\zs')
-endfunction
-function! s:WriteAbbrev()
-    let variations = [ "wirte", "rwite", "wite" ]
-    let abbrev_command_fmt = 'cabbrev <expr> %s len(getcmdline()) == %d && getcmdtype() == ":" ? "write" : "%s"'
-    for variation in variations
-        for i in range(len(variation))
-            let subcommand = variation[:i]
-            let abbrev_command = printf(abbrev_command_fmt, subcommand, len(subcommand), subcommand)
-            execute abbrev_command
-        endfor
-    endfor
-endfunction
-" call s:WriteAbbrev()
 
 function! s:GetRecentBufNrs()
     let first_window_nr = 1
@@ -792,114 +765,14 @@ augroup END
 
 
 
-"  let g:vimspector_enable_mappings = "HUMAN"
-
+nnoremap V Vg$
 nmap <silent> U <Plug>LineLetters
-
 set number
-
-
-
-" Insert Mode Completions {{{
-
-if (executable('pyls'))
-    augroup VimrcLsp
-        au!
-        au User lsp_setup call lsp#register_server({
-        \ 'name': 'pyls',
-        \ 'cmd': {server_info->['pyls']},
-        \ 'allowlist': ['python'],
-        \ 'config': { 'hover_coneal' : 1},
-        \ 'workspace_config': {'pyls': { 'plugins': {'pydocstyle': {'enabled': v:false} } } }
-        \ })
-    augroup END
-endif
-
-
-" \ 'cmd': {server_info->['tailwindcss-language-server --stdio']},
-" \ 'cmd': {server_info->[&shell, &shellcmdflag, 'tailwindcss-language-server --stdio']},
-let g:lsp_log_file = expand('~/Desktop/neovim/lsp.log')
-" if (executable('tailwindcss-language-server'))
-"     augroup TailwindLSP
-"         au!
-"         au User lsp_setup call lsp#register_server({
-"             \ 'name': 'tailwindcss-language-server',
-"             \ 'cmd': {server_info->[&shell, &shellcmdflag, 'tailwindcss-language-server --stdio']},
-"             \ 'root_uri': {server_info->lsp#utils#path_to_uri(lsp#utils#find_nearest_parent_file_directory(lsp#utils#get_buffer_path(), 'tailwind.config.js'))},
-"             \ 'initialization_options': {},
-"             \ 'whitelist': ['css', 'php', 'less', 'sass', 'scss', 'vue'],
-"             \ })
-"     augroup END
-" endif
-
-function! s:on_lsp_buffer_enabled() abort
-    setlocal omnifunc=lsp#complete
-    " nmap <buffer> gd <plug>(lsp-definition)
-    nmap <buffer> <f2> <plug>(lsp-rename)
-endfunction
-augroup lsp_install
-    au!
-    autocmd User lsp_buffer_enabled call s:on_lsp_buffer_enabled()
-augroup END
-let g:lsp_diagnostics_enabled = 0
-let g:asyncomplete_auto_completeopt = 0
-let g:asyncomplete_popup_delay = 0
-let g:asyncomplete_enable_for_all = 0
-
-
-
-
-let g:SuperTabDefaultCompletionType="context"
-let g:SuperTabCrMapping=1
-let g:SuperTabCompleteCase="match"
 set shortmess+=c " Don’t show message and errors in ins-completion-menu
 set completeslash=slash " In windows, we want HTML file-completion in insert mode to have '/' in the path
 
 
 
-let g:UltiSnipsExpandTrigger='<c-j>'
-let g:UltiSnipsJumpForwardTrigger='<c-j>'
-
-
-
-" }}}
-
-
-
-
-
-" trigger other text that exists here
-" breakadd func 1 GetTabBehaviour
-function! s:GetTabBehaviour()
-    let cursor_on_first_column = col('.') <= 1
-    if cursor_on_first_column
-        " Insert 4 Spaces
-        return "\<C-R>=UltiSnips#ExpandSnippetOrJump()\<CR>"
-    endif
-
-    let cursor_after_space = !empty(matchstr(getline('.'), '\%' . (col('.') - 1) . 'c\s'))
-    if cursor_after_space
-        " Insert 4 Spaces
-        return "\<C-R>=UltiSnips#ExpandSnippetOrJump()\<CR>"
-    endif
-
-    " cursor_after_space     = v:false
-    " cursor_on_first_column = v:false
-    let no_snippets_in_scope = empty(UltiSnips#SnippetsInCurrentScope())
-    let snippets_in_scope = !empty(UltiSnips#SnippetsInCurrentScope())
-    " :help UltiSnips-snippet-options
-    " if snippets_in_scope
-    "     let line_substring = getline(".")[:col(".") - 2]
-    " endif
-
-    let ulti_snips_is_expandable = !(cursor_on_first_column || cursor_after_space || no_snippets_in_scope)
-    if ulti_snips_is_expandable
-        return "\<C-R>=UltiSnips#ExpandSnippetOrJump()\<CR>"
-    else
-        return "\<C-n>"
-    endif
-endfunction
-" inoremap <silent> <expr> <Tab> <SID>GetTabBehaviour()
 
 
 function! s:Ftplugin()
@@ -928,14 +801,13 @@ function! s:DateCompleteFunc(findstart, base)
         return [ fmt_filename, fmt_dot, fmt_hyphen, fmt_dotspace, fmt_hyphenspace ]
     endif
 endfunction
-
 " 2021.01.01
 " 2021 . 01 . 01 
 " 2021 . 01 . 01 
 " 210101 2021 . 01 . 01 2021 . 01 . 01
 " 2021 . 01 . 01 
 " 2021-02-19
-let s:cfu = ""
+ "let s:cfu = ""
 function! s:DateInsert()
     let s:cfu=&completefunc
     set completefunc=s:DateCompleteFunc
@@ -952,15 +824,16 @@ function! s:DateInsert()
         au CompleteDone * call s:DateRestore()
     augroup END
     return "\<C-x>\<C-u>"
-
 endfunction
-
-
 inoremap <expr> <A-;> <SID>DateInsert()
 cnoremap <expr> <A-;> strftime("%y%m%d")
 
 
 
+" 0.000191
+" 0.000221
+" 0.000030
+" 0.000027
 function! s:BlockSum()
     " let l:message = "VISUAL-BLOCK"
     " call  timer_start(1, function('dotty#Callback', [l:message]))
@@ -979,28 +852,7 @@ function! s:BlockSum()
     call common#AsyncPrint(result, 1)
 
 endfunction
-
-function! s:GetVisualMode()
-endfunction
-function! s:GetMapString()
-    echoerr visualmode()
-    if visualmode() !=? "\<C-v>"
-        echoerr "True"
-        return "s"
-    endif
-    echoerr "False"
-    return ":<c-u>echo 'True'\<CR>"
-endfunction
-
-" 0.000191
-" 0.000221
-" 0.000030
-" 0.000027
-
-
-" vmap <silent> <expr> s visualmode() !=? "\<C-v>" ? ":<c-u>call <SID>BlockSum()<CR>" : "s"
 vmap <silent> gu :<c-u>call <SID>BlockSum()<CR>
-
 
 function! s:PrintCmdlineUpDictionaries()
     for D in g:cmdline_up_dictionaries
@@ -1028,95 +880,15 @@ function! s:LogCmdlineUp()
                 au!
                 au CmdlineLeave : call <SID>LeaveCmdline()
             augroup END
-
         endif
         return "\<Up>"
     endfunction
     cnoremap <expr> <C-l> <SID>CmdlineUp()
-
-
 endfunction
 
-" call s:LogCmdlineUp()
+call s:LogCmdlineUp()
 
     
-let g:sqh_provider = 'sqlite'
-
-let g:sqh_connections = {
-      \ 'default': {
-      \   'database': 'C:/Users/vivek/vimfiles/logs/mru.db'
-      \}
-\}
-
-let s:greppable_python_paths = []
-function! s:PyGrep(key)
-    " echoerr "s:greppable_python_paths: " . string(s:greppable_python_paths)
-    let regex = '\.py$'
-    let key = a:key
-    " let python_paths = filter(copy(v:oldfiles), 'v:val =~? regex')
-    if empty(s:greppable_python_paths)
-        let python_paths = filter(copy(v:oldfiles), 'v:val =~? regex')
-        call filter(python_paths, { _, path -> filereadable(expand(path)) })
-        call filter(python_paths, { _, path -> stridx(tolower(path), "appdata") == -1})
-        call filter(python_paths, { _, path -> stridx(tolower(path), "program files") == -1})
-        call filter(python_paths, { _, path -> stridx(tolower(path), "undofiles") == -1})
-        call map(python_paths, { _, path -> '"'.expand(path).'"'})
-        let s:greppable_python_paths = python_paths
-    else
-        let python_paths = s:greppable_python_paths
-    endif
-    let path_string = join(python_paths, " ")
-    let grep_command = printf('grep "%s" %s', key, path_string)
-    if len(grep_command) > 8192
-        echo "Too many files"
-        return
-    endif
-
-    " let @+=grep_command
-    " return
-    echo "Searching " . len(python_paths) . " files"
-    silent! execute grep_command
-    redraw
-    let match_count = len(getqflist())
-    echo printf("%d Matches", match_count)
-endfunction
-" call timer_start(1, function("PyGrep"))
-" call PyGrep()
-command! -nargs=1 PyGrep call s:PyGrep(<q-args>)
-
-let s:greppable_all_paths = []
-function! s:AllGrep(key)
-    let key = a:key
-    " let paths = filter(copy(v:oldfiles), 'v:val =~? regex')
-    if empty(s:greppable_all_paths)
-        let paths = copy(v:oldfiles)
-        call filter(paths, { _, path -> filereadable(expand(path)) })
-        call filter(paths, { _, path -> stridx(tolower(path), "appdata") == -1})
-        call filter(paths, { _, path -> stridx(tolower(path), "program files") == -1})
-        call filter(paths, { _, path -> stridx(tolower(path), "undofiles") == -1})
-        call map(paths, { _, path -> '"'.expand(path).'"'})
-        let s:greppable_all_paths = paths
-    else
-        let paths = s:greppable_all_paths
-    endif
-    let @a = join(s:greppable_all_paths, "\n")
-    let path_string = join(paths, " ")
-    let grep_command = printf('grep "%s" %s', key, path_string)
-    if len(grep_command) > 8192
-        echo "Too many files"
-        return
-    endif
-
-    " let @+=grep_command
-    " return
-    echo "Searching " . len(paths) . " files"
-    silent! execute grep_command
-    redraw
-    let match_count = len(getqflist())
-    echo printf("%d Matches", match_count)
-endfunction
-command! -nargs=1 AllGrep call s:AllGrep(<q-args>)
-
 function! s:GoAfterEqual()
     if stridx(getline("."), "=") > -1
         normal! 0f=w
@@ -1136,6 +908,7 @@ function! s:AmazonItem()
     s/http.*dp\/\([^\/]\+\)\/.*$/https:\/\/www\.amazon.in\/dp\/\1\/
     call setpos(".", pos_save)
 endfunction
+command! AmazonItem call <SID>AmazonItem()
 
 function! s:Frequency()
     %sort
@@ -1202,6 +975,7 @@ function! s:Gather()
 
     call s:RestoreRegister('a')
 endfunction
+command! Gather call s:Gather()
 
 function! s:PrintSingleLineCommandsAndMaps()
 endfunction
@@ -1211,6 +985,7 @@ function! s:ToList()
     s/.*/[ \0 ]/
     s/,  \ze]/ /
 endfunction
+command! ToList call s:ToList()
 
 
 function! s:FormatZomato()
@@ -1220,15 +995,18 @@ function! s:FormatZomato()
     %s/^\s*\(Promoted\)\?\s*//
     %s/\s*star-fill.*//
 endfunction
+command! FormatZomato call<SID>FormatZomato()
 
 
 function! s:EnableHotReload()
+    source %
     echo "(hmr) " . expand("%:p")
     augroup HotReload
         au!
         au BufWritePost <buffer> source %
     augroup END
 endfunction
+command! HotReload call s:EnableHotReload()
 
 function! s:GoBackToQuoteAndStartInsert()
     normal! F"
@@ -1246,67 +1024,19 @@ augroup SpaceSpace
     au BufRead ~/vimfiles/temp/comma_samples.txt nnoremap <buffer> <space><space> :call <SID>SelectSample()<CR>
 augroup END
 
-let s:current_function_name = ''
-
-function! s:script_id_yank()
-    let s:current_function_name = matchlist(getline("."), 'function! \([A-Z][^( ]*\)(')[1]
-    execute 's/\ze'.s:current_function_name.'/s:'
-endfunction
-
-function! s:script_id_next()
-    " let pattern = '\(command\|map\| au\|call\|indentexpr\|abbrev\).*'.s:current_function_name.'('
-    normal! $
-    " \<ShowHighlight\s*(.*)\|function("ShowHighlight
-    let pattern = '\<'.s:current_function_name . '\s*(.*)\|function("'.s:current_function_name
-    let result = search(pattern)
-    if result == 0 
-        w
-        cn
-    endif
-endfunction
-
-function! s:script_id_replace()
-    if stridx(getline("."), "<CR>") > -1 || stridx(getline("."), "<expr>") > -1
-        execute 's/\ze'.s:current_function_name.'\s*(/<SID>'
-    else
-        execute 's/\ze'.s:current_function_name.'\s*(/s:'
-    endif
-endfunction
-
 function! s:SearchUserFunctions()
     cd ~/vimfiles
     grep -g *.vim "^.* [A-Z]\w+\("
     Cfilter! /^\s*"/
-    Cfilter! /\(String2Pattern\|CocAction\|CocHasProvider\)(/
+    execute 'Cfilter! /\(String2Pattern\|CocAction\|CocHasProvider\)(/'
     Cfilter! /^\s*\(function\|class\)/
     Cfilter! autoload
     Cfilter! plugged
     normal! 
     copen
 endfunction
+command! SUF call s:SearchUserFunctions()
 
-
-function! s:FiletypeToExtension()
-    let file_extension = expand("%:e")
-    if file_extension ==# ""
-        return &filetype
-    endif
-    return file_extension
-endfunction
-
-
-" https://www.vikasraj.dev/blog/vim-dot-repeat
-let s:counter = 0
-function s:DotRepeat(motion = v:null) " 4.
-    if a:motion == v:null
-        let s:counter = 0
-        set operatorfunc=s:DotRepeat " 3.
-        return 'g@' " 2.
-    endif
-
-    echo 'counter:' s:counter 'motion:' a:motion
-    let s:counter += 1
-endfunction
 
 function! s:Isolate(pattern) range
     if len(a:pattern) == 0
@@ -1333,6 +1063,7 @@ function! s:Isolate(pattern) range
         silent! %sort! n
     endif
 endfunction
+command! -range -nargs=? Isolate <line1>,<line2>call s:Isolate(<q-args>)
 
 function! s:LoadKMarkedFile()
     let single_list = filter(getmarklist(), {idx, D -> D['mark'] ==# "'K"})
@@ -1353,71 +1084,48 @@ endfunction
 function! s:CapitalizeSqlite()
     silent! s/table\|create\|drop\|in\|by\|having\|order\|count\|group\|select\|from\|inner\|join\|using\|where\|like/\U\0/g
 endfunction
+command! CapitalizeSqlite call s:CapitalizeSqlite()
+
+function! s:EqualHeader()
+    t.
+    s/^\s*\S \zs.*/\=substitute(submatch(0), ".", "=", "g")
+endfunction
 
 
-function! s:SurroundWithBracketAndInsert(...)
-    " normal! `[v`]d
-    let function_name = input("function: ")
-    if function_name ==# ""
-        return
+
+function! s:GrepAbbrev()
+    if &filetype ==# "vim"
+        return "grep -g *.vim -g vimrc"
     endif
-    let reg_save = @"
-    normal! `[v`]y
-    let @" = function_name . '(' . @" . ')'
-    normal! gvp`[
-    let @" = reg_save
+    let extension = expand("%:e")
+    if extension == ""
+        return "grep -g *.". &filetype
+    endif
+    return "grep -g *.". extension
 endfunction
 
-nmap <silent> ) :set opfunc=<SID>SurroundWithBracketAndInsert<cr>g@
 
-function! s:MoveEmoteFunction()
-    normal V]md
-    normal! 
-    normal! GpO
-
-    normal! 
-    call search("^def")
-endfunction
-command! MEF call s:MoveEmoteFunction()
-command! MN call search("^def")
+nnoremap =r :call <SID>EqualHeader()<CR>
 
 cabbrev   <expr> <         len(getcmdline()) == 1 && getcmdtype() =~ '[/?]' ? '\C\\><Left><Left>' : '<'
 nnoremap         <space>w                                                     /\C\<\><Left><Left>
-
-
-command! CapitalizeSqlite call s:CapitalizeSqlite()
-
-command! -range -nargs=? Isolate <line1>,<line2>call s:Isolate(<q-args>)
-
 nnoremap <expr> gt <SID>DotRepeat() " 1.
 
 
-" nnoremap <space>y :call <SID>script_id_yank()<CR>
-" nnoremap <space>n :call <SID>script_id_next()<CR>
-" nnoremap <space>r :call <SID>script_id_replace()<CR>
-
-
-
 " Uncategorized
-command! HotReload call s:EnableHotReload()
-command! FormatZomato call<SID>FormatZomato()
-command! SUF call s:SearchUserFunctions()
 
 
 " Single File Specific Commands
 command! NormalizeTwitchUrl         s/https:\/\/www\.twitch\.tv\/\w\+\/clip\/\([a-zA-Z]\+\)?[a-zA-Z_0-9=&]\+/https:\/\/clips.twitch.tv\/\1
 command! YoutubeUrlToThumbnailUrl   s/https:\/\/www\.youtube\.com\/watch?v=\(\w\{-}\)\W/https:\/\/i.ytimg.com\/vi\/\1\/maxresdefault.jpg
-command! AmazonItem call <SID>AmazonItem()
 command! WslFilesSubstitute        %s/C:\\Users\\vivek\\AppData\\Local\\Packages\\CanonicalGroupLimited\.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs/$WSL/|%s/\\/\//g
 
-command! Gather call s:Gather()
-command! ToList call s:ToList()
 " command! RunLine execute(substitute(getline("."), '^"\s*', '', ''))
 
 " Remaining: :command, :augroup, :map
 " Command:
 "     g/^command/v/-complete/|normal! ``
-cabbrev <expr> grep len(getcmdline()) == 4 && getcmdtype() == ":" ? "grep -g *.".<SID>FiletypeToExtension() : "grep"
+cabbrev <expr> grep len(getcmdline()) == 4 && getcmdtype() == ":" ? <SID>GrepAbbrev() : "grep"
 cabbrev <expr> W    len(getcmdline()) == 1 && getcmdtype() == ":" ? 'e ~\Desktop\website' : 'W'
 cabbrev <expr> o    len(getcmdline()) == 1 && getcmdtype() == ":" ? "!start %" : "o"
 cabbrev <expr> V    len(getcmdline()) == 1 && getcmdtype() == ":" ? (bufexists($MYVIMRC) ? "b ".expand($MYVIMRC): "edit $MYVIMRC") : 'V'
@@ -1436,6 +1144,7 @@ nnoremap <silent> <space>\ :s#/#\\#g<CR>
 
 nnoremap          <space>l <C-^>
 nnoremap <silent> <space>k :call <SID>LoadKMarkedFile()<CR>
+nnoremap          <space>r :MRU 
 
 nmap              <space>f <Plug>SearchOnScreen
 nmap     <silent> <space>; <Plug>Run
@@ -1477,22 +1186,33 @@ nnoremap <silent> <S-CR> :w<CR>
 cnoremap <expr> w len(getcmdline()) == 0 && getcmdtype() == ":" ? "w<CR>" : "w"
 " -- END: `:w` to WRITE
 
+" Global Functions:
+" function! s:ReadHandlerErrorFile(path, cf_nr)
+function! RHEF(path, cf_nr)
+    let error_format_save = &errorformat
+    let &errorformat = "%f:%l:%c:%m"
+    execute 'cgetfile ' . a:path
+    execute 'cc ' . string(a:cf_nr)
+    let &errorformat = error_format_save
+endfunction
+
+function! PrintList(items)
+    echo join(a:items, "\n\n")
+endfunction
+
+
 nnoremap d) dt)
 
 command! Bk !start cmd /k "cd C:\Users\vivek\Desktop\bkp\"
 command! Sq !start cmd /k "sqlite3 C:\Users\vivek\Documents\Python\backup-flask\data.db"
-command! TD !start cmd /c "chrome live.co/todo.php"
-nnoremap ga :!start python C:\Users\vivek\Documents\Python\backup.py<CR>
-
-" wt -w 0 nt -p "Command Prompt" python C:\Users\vivek\Documents\Python\backup.py --server; sp -p "Command Prompt" python C:\Users\vivek\Documents\Python\backup.py --backup
-" wt -w 0 nt -p "Command Prompt" python C:\Users\vivek\Documents\Python\backup.py --backup
-
-source ~/vimfiles/performance/performance.vim
 
 nmap 3 #
 nmap 8 *
+vmap 3 #
+vmap 8 *
 
+cnoremap <expr> M len(getcmdline()) == 0 && getcmdtype() == ":" ? "call <SID>ObnoxiousErrorMessage('MRU')<CR>" : "M"
 
-
+source ~/vimfiles/performance/performance.vim
 
 

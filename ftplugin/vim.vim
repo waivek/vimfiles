@@ -110,3 +110,9 @@ function! s:VimHashAbbrev()
     return '#'
 endfunction
 iabbrev <buffer> <expr> # <SID>VimHashAbbrev()
+
+inoremap <buffer> jm call map(, { idx, D -> D})T(
+inoremap <buffer> jl call filter(, { idx, D -> D})T(
+inoremap <buffer> js call substitute({string}, {pat}, {sub}, {flags})T(
+
+

@@ -1,3 +1,19 @@
+function! common#AendswithB(a, b)
+    let b_length = len(a:b)
+    let a_length = len(a:a)
+    let a_substring = strpart(a:a, a_length - b_length, a_length)
+    return a_substring ==# a:b
+endfunction
+" NOTE strpart(s, 0, 5) != s[0:5]
+function! common#AstartswithB(a, b)
+    let b_length = len(a:b)
+    let a_substring = a:a[0:b_length-1]
+    if a_substring ==# a:b
+        return v:true
+    endif
+    return v:false
+endfunction
+
 function! common#Time()
     return reltimefloat(reltime())
 endfunction
@@ -59,7 +75,7 @@ function! common#Truncate(s, l)
     endif
 endfunction
 
-function! s:PrintDict(D)
+function! common#PrintDict(D)
     for [key, value] in items(a:D)
         let fmt = printf("%s : %s", key, common#Truncate(value, 40))
         echo fmt

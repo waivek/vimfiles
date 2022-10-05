@@ -309,7 +309,33 @@ function! s:DeleteSurroundingMethod()
 endfunction
 
 nmap  <silent> <Plug>DeleteSurroundingMethod :<c-u>call <sid>DeleteSurroundingMethod()<CR>
-nmap  <silent> dsf <Plug>DeleteSurroundingMethod
+" nmap  <silent> dsf <Plug>DeleteSurroundingMethod
+
+function! s:DeleteSurroundingMethodRepeatable(motion = v:null)
+    if a:motion == v:null
+        set operatorfunc=s:DeleteSurroundingMethodRepeatable
+        return 'g@l'
+    endif
+
+    execute "normal! i "
+    execute "normal! x"
+
+    let pos_list = s:CurrentFnameBigA()
+    let [_, _, end_pos] = pos_list
+    let [_, _, around_finish_col, _] = end_pos
+    exec 'call cursor(".", ' . around_finish_col . ')'
+
+    let reg_save = @a
+
+    normal! "ayi)
+    call s:VisualSelect(pos_list)
+    normal! "ap
+    normal! `<
+
+    let @a = reg_save
+endfunction
+
+nnoremap  <expr> <silent> dsf <SID>DeleteSurroundingMethodRepeatable()
 " }}}
 
 function! s:Log(m, poslist)

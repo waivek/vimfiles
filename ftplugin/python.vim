@@ -1,13 +1,16 @@
-function! s:PrintPythonVariable()
-    let print_fmt = 'print("variable_name: %s" % (variable_name))'
-    let reg_save = @a
-    normal! gv"ay
-    let @a = substitute(print_fmt, "variable_name", @a, "g")
-    normal! oa
-    normal! ^
-    let @a = reg_save
-endfunction
-vnoremap z :<c-u>call <SID>PrintPythonVariable()<CR>
+
+
+
+" function! s:PrintPythonVariable()
+"     let print_fmt = 'print("variable_name: %s" % (variable_name))'
+"     let reg_save = @a
+"     normal! gv"ay
+"     let @a = substitute(print_fmt, "variable_name", @a, "g")
+"     normal! oa
+"     normal! ^
+"     let @a = reg_save
+" endfunction
+" vnoremap z :<c-u>call <SID>PrintPythonVariable()<CR>
 
 function! s:Enumerate()
     if match(getline("."), "enumerate") == -1
@@ -231,6 +234,20 @@ function! s:PythonShortcuts()
     " ]M NEXT Method End
 endfunction
 
+function! s:GetBlockIndent()
+    " Edge-Case 1:
+    " ============
+    "
+    " def main():
+    ">
+    "     pass
+    let candidate_lineno = search('\S', 'bcn')
+    let candidate_is_def_line = getline(candidate_lineno) =~# '^\s*def'
+    if candidate_is_def_line
+        let candidate_lineno = search('\S', 'cn')
+    endif
+    return indent(candidate_lineno)
+endfunction
 function! s:ClassOrMethodEnd(value)
     if a:value == 'class'
         let error_string = "Not in class"
@@ -241,7 +258,35 @@ function! s:ClassOrMethodEnd(value)
     endif
     let view_save = winsaveview()
     let initial_line = line(".")
-    let structure_start_line = search(search_regexp, 'bc')
+
+    " go to method START (take care of nested methods)
+
+    if a:value == 'method'
+        let on_def_line = getline(".") =~# '^\s*def'
+        let structure_start_line = line(".")
+        if on_def_line == v:false
+            let line_start_indent = s:GetBlockIndent()
+            let infinity_index = 10
+            while v:true
+                let structure_start_line = search(search_regexp, 'b') " no 'c' is used here since we've asserted that we are not on a 'def' line
+                if structure_start_line == 0
+                    break
+                endif
+                if indent(".") < line_start_indent
+                    let structure_start_line = line(".")
+                    break
+                endif
+                let infinity_index = infinity_index - 1
+                if infinity_index == 0
+                    echoerr "infinity_index: 0"
+                    return
+                endif
+            endwhile
+        endif
+    else
+        let structure_start_line = search(search_regexp, 'bc')
+    endif
+
     if structure_start_line == 0
         echo error_string
         return
@@ -290,6 +335,10 @@ function! s:AsyncMethodMappings(timer_id)
     nmap <silent> <buffer> ]m :call <SID>MethodEnd()<CR>
     xmap <silent> <buffer> ]m :<c-u>call <SID>MethodEndVisual()<CR>
     omap <silent> <buffer> ]m :<c-u>call <SID>MethodEndVisual()<CR>
+
+    nmap <silent> <buffer> <CR> :call <SID>MethodEnd()<CR>
+    xmap <silent> <buffer> <CR> :<c-u>call <SID>MethodEndVisual()<CR>
+    omap <silent> <buffer> <CR> :<c-u>call <SID>MethodEndVisual()<CR>
 endfunction
 
 function! s:PythonTernary()
@@ -317,32 +366,42 @@ function! s:InsertAlphabetPrint()
     " put=alphabet_line
 endfunction
 
-function! s:QF2Buffer()
-    let lines = map(getqflist(), { idx, D -> D['text'] })
-    let lines = map(lines, { idx, text -> substitute(text, '^\s*#\s*', '', '') })
-    let lines = map(lines, { idx, text -> trim(text) })
-    let lines_joined = join(lines, "\n")
-    let filename = strftime("%y%m%d") . ".py"
-    let filepath = "~/temp/" . filename
-    execute "edit " . filepath
-    g/^/d
-    put=lines_joined
-    g/^[A-Za-z!)0-9>%<;(|`+$@{?-\*#&}\-_=~^]\{77,\}$/d
-    g/^\s*$/d
-    write
-endfunction
+if !exists("s:q2b_is_running") 
+    let s:q2b_is_running = v:false
+endif
+if s:q2b_is_running == v:false
+    function! s:QF2Buffer()
+        let s:q2b_is_running = v:true
+        let lines = map(getqflist(), { idx, D -> D['text'] })
+        let lines = map(lines, { idx, text -> substitute(text, '^\s*#\s*', '', '') })
+        let lines = map(lines, { idx, text -> trim(text) })
+        let lines_joined = join(lines, "\n")
+        let filename = strftime("%y%m%d") . ".py"
+        let filepath = "~/temp/" . filename
+        execute "edit " . filepath
+        g/^/d
+        put=lines_joined
+        g/^[A-Za-z!)0-9>%<;(|`+$@{?-\*#&}\-_=~^]\{77,\}$/d
+        g/^\s*$/d
+        write
+        let s:q2b_is_running = v:false
+    endfunction
+endif
 
 
 function! s:PythonNewTestFunction()
     let l:function_name = "test_" . input("def test_")
-    %s/^\zedef main/\='def ' . l:function_name .'():    pass'
+    let l:string = 'def ' . l:function_name . "(): \n    pass\n\n"
+    " %s/^\zedef main/\='def ' . l:function_name .'():    pass'
+    silent! /^def main/ | '{put=l:string
     %s/def main():\n    \zs\ze\S.*()\n/\=l:function_name.'()    # ' 
     call search('pass', 'b')
 endfunction
 
+
 command! -buffer NTF call s:PythonNewTestFunction()
 
-command! Q2B call s:QF2Buffer()
+command! Q2B silent call s:QF2Buffer()
 
 
 command! -buffer IAP call s:InsertAlphabetPrint()
@@ -374,6 +433,7 @@ iabbrev <buffer> Respones Response
 setlocal nosmartindent " To indent lines /^#/ with >
 
 command! Py !start python -i C:/Users/vivek/repl.py
+
 
 
 let g:pyindent_searchpair_timeout = 10

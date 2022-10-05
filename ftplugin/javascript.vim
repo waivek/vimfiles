@@ -31,8 +31,8 @@ endfunction
 vnoremap z :<c-u>call <SID>PrintJavaScriptVariable()<CR>
 vnoremap Z :<c-u>call <SID>PrintDomVariable()<CR>
 
-nnoremap <silent> ) :call search("^function")<CR>
-nnoremap <silent> ( :call search("^function", "b")<CR>
+" nnoremap <buffer> <silent> ) :call search("^function")<CR>
+" nnoremap <buffer> <silent> ( :call search("^function", "b")<CR>
 
 function! s:RemoveTemplateStrings()
     s/\${\([^}]*\)}/" + \1 + "/g
