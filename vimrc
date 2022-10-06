@@ -481,7 +481,7 @@ function! s:ToggleScreencastMode()
         let &number = remove(g:options_D, "number")
     endif
 endfunction
-command! ToggleScreencastMode call <SID>ToggleScreencastMode()
+command! ToggleScreencastMode call s:ToggleScreencastMode()
 
 function! s:AddPositionToJumpList()
     let save_a_mark = getpos("'a")
@@ -908,14 +908,14 @@ function! s:AmazonItem()
     s/http.*dp\/\([^\/]\+\)\/.*$/https:\/\/www\.amazon.in\/dp\/\1\/
     call setpos(".", pos_save)
 endfunction
-command! AmazonItem call <SID>AmazonItem()
+command! AmazonItem call s:AmazonItem()
 
 function! s:Frequency()
     %sort
     %!uniq -c
     %sort! n
 endfunction
-command! Frequency call <SID>Frequency()
+command! Frequency call s:Frequency()
 
 function! s:HighlightKeywords()
     call clearmatches()
@@ -923,7 +923,7 @@ function! s:HighlightKeywords()
     call matchadd("String", '\[WRITE\]')
     call matchadd("Function", '\[PRIORITY\]')
 endfunction
-command! HighlightKeywords call <SID>HighlightKeywords()
+command! HighlightKeywords call s:HighlightKeywords()
 augroup ConfigHl
     au!
     au BufRead ~/vimfiles/config.txt call s:HighlightKeywords()
@@ -995,7 +995,7 @@ function! s:FormatZomato()
     %s/^\s*\(Promoted\)\?\s*//
     %s/\s*star-fill.*//
 endfunction
-command! FormatZomato call<SID>FormatZomato()
+command! FormatZomato call s:FormatZomato()
 
 
 function! s:EnableHotReload()

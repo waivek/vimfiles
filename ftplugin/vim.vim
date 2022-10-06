@@ -97,7 +97,7 @@ function! s:ExtractArguments()
 endfunction
 
 
-command! ExtractArguments call <SID>ExtractArguments()
+command! ExtractArguments call s:ExtractArguments()
 
 function! s:VimHashAbbrev()
     let line = getline(".")

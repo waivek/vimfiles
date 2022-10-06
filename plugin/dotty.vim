@@ -1001,7 +1001,7 @@ function! s:MatchCount(search_key)
     let total_matches = len(indices)
     echo "total_matches: ".total_matches
 endfunction
-command! -nargs=1  MatchCount call <SID>MatchCount(<q-args>)
+command! -nargs=1  MatchCount call  s:MatchCount(<q-args>)
 
 
 " let total_matches = count(buffer_contents, search_key)

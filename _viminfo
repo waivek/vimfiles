@@ -11,37 +11,429 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/CocInstall
+~MSle0~/\C\<ic\>
 
 # Last Substitute Search Pattern:
-~MSle0&for \w\w\+\s*, \w\w\+ in 
+~MSle0&<sid>
 
 # Last Substitute String:
-$\0
+$s:
 
 # Command Line History (newest to oldest):
+:MRU 221:Documents\access_token.txt
+|2,0,1664991719,,"MRU 221:Documents\\access_token.txt"
+:MRU acces_
+|2,0,1664991715,,"MRU acces_"
+:e assets/
+|2,0,1664991318,,"e assets/"
+:CMD
+|2,0,1664991248,,"CMD"
+:MRU back
+|2,0,1664991234,,"MRU back"
+:MRU py
+|2,0,1664990201,,"MRU py"
+:cclose | copen
+|2,0,1664979492,,"cclose | copen"
+:h statusline
+|2,0,1664979449,,"h statusline"
+:Cfilter Li
+|2,0,1664979397,,"Cfilter Li"
+:MRU status
+|2,0,1664979229,,"MRU status"
+:copen
+|2,0,1664979133,,"copen"
+:cclose
+|2,0,1664979132,,"cclose"
+:echo w:quickfix_title
+|2,0,1664979124,,"echo w:quickfix_title"
+:e
+|2,0,1664979108,,"e"
+:e ~/vimfiles/after/ftplugin/qf.vim
+|2,0,1664979071,,"e ~/vimfiles/after/ftplugin/qf.vim"
+:MRU qf
+|2,0,1664979064,,"MRU qf"
+:scriptnames
+|2,0,1664979055,,"scriptnames"
+:set stl?
+|2,0,1664979052,,"set stl?"
+:VimGrep function
+|2,0,1664979043,,"VimGrep function"
 :qa
-|2,0,1664924719,,"qa"
+|2,0,1664979029,,"qa"
+:set statusline?
+|2,0,1664978947,,"set statusline?"
+:so 
+|2,0,1664978934,,"so "
+:MRU statusline
+|2,0,1664978916,,"MRU statusline"
+:se
+|2,0,1664978898,,"se"
+:e ~/vimfiles/ftplugin/qf.vim
+|2,0,1664978869,,"e ~/vimfiles/ftplugin/qf.vim"
+:2y
+|2,0,1664978829,,"2y"
+:verbose set statusline?
+|2,0,1664978814,,"verbose set statusline?"
+:bd
+|2,0,1664978776,,"bd"
+:diffthis
+|2,0,1664976703,,"diffthis"
+:diff
+|2,0,1664976693,,"diff"
+:MRU rend
+|2,0,1664976692,,"MRU rend"
+:e ~/vimfiles/temp/221005.black.py
+|2,0,1664976609,,"e ~/vimfiles/temp/221005.black.py"
+:MRU blan
+|2,0,1664975262,,"MRU blan"
+:h s:
+|2,0,1664975220,,"h s:"
+:au! Blank
+|2,0,1664975199,,"au! Blank"
+:so %
+|2,0,1664975020,,"so %"
+:HotReload
+|2,0,1664974786,,"HotReload"
+:b blank.vim
+|2,0,1664974761,,"b blank.vim"
+:MRU bl*vim
+|2,0,1664974759,,"MRU bl*vim"
+:MRU blank
+|2,0,1664974754,,"MRU blank"
+:cn
+|2,0,1664972741,,"cn"
+:grep -g *.vim -g vimrc execute.*s:
+|2,0,1664972738,,"grep -g *.vim -g vimrc execute.*s:"
+:grep -g *.vim -g vimrc 
+|2,0,1664972729,,"grep -g *.vim -g vimrc "
+:grep -g *.vim -g vimrc au.*call.*s:
+|2,0,1664972719,,"grep -g *.vim -g vimrc au.*call.*s:"
+:grep -g *.vim -g vimrc au.*call.*SID
+|2,0,1664972685,,"grep -g *.vim -g vimrc au.*call.*SID"
+:grep -g *.vim -g vimrc SID
+|2,0,1664972674,,"grep -g *.vim -g vimrc SID"
+:grep -g *.vim -g vimrc :call.*s:
+|2,0,1664972650,,"grep -g *.vim -g vimrc :call.*s:"
+:grep -g *.vim -g vimrc :.*s:
+|2,0,1664972641,,"grep -g *.vim -g vimrc :.*s:"
+:so ~/vimfiles/vimrc
+|2,0,1664972621,,"so ~/vimfiles/vimrc"
+:s/<sid>/s:
+|2,0,1664972566,,"s/<sid>/s:"
+:ExtractArguments
+|2,0,1664972535,,"ExtractArguments"
+:Ftplugin
+|2,0,1664972531,,"Ftplugin"
+:Explore
+|2,0,1664972526,,"Explore"
+:grep -g *.vim -g vimrc command.*SID
+|2,0,1664972472,,"grep -g *.vim -g vimrc command.*SID"
+:map K
+|2,0,1664971069,,"map K"
+:h E120
+|2,0,1664970972,,"h E120"
+:MRU vimr
+|2,0,1664970801,,"MRU vimr"
+:grep -g *.py 
+|2,0,1664970797,,"grep -g *.py "
+:grep -g *.
+|2,0,1664970794,,"grep -g *."
+:e .gitignore
+|2,0,1664970641,,"e .gitignore"
+:h <SID>
+|2,0,1664970492,,"h <SID>"
+:'<,'>sort
+|2,0,1664970453,,"'<,'>sort"
+:v/s:[A-Z]/d
+|2,0,1664970365,,"v/s:[A-Z]/d"
+:g/^command/d
+|2,0,1664970325,,"g/^command/d"
+:g/
+|2,0,1664970319,,"g/"
+:g/^call/d
+|2,0,1664970304,,"g/^call/d"
+:%sort
+|2,0,1664970254,,"%sort"
+:%s
+|2,0,1664970222,,"%s"
+:v/\<s:\f\+(/d
+|2,0,1664970208,,"v/\\<s:\\f\\+(/d"
+:v/(/d
+|2,0,1664970162,,"v/(/d"
+:Gather
+|2,0,1664970096,,"Gather"
+:g/let s:/d
+|2,0,1664970070,,"g/let s:/d"
+:b ~\vimfiles\temp\221005.sid_s_colon.txt
+|2,0,1664970056,,"b ~\\vimfiles\\temp\\221005.sid_s_colon.txt"
+:b todo\221005.txt
+|2,0,1664970052,,"b todo\\221005.txt"
+:g/^function/d
+|2,0,1664970040,,"g/^function/d"
+:%s/^"\s*//g
+|2,0,1664970035,,"%s/^\"\\s*//g"
+:Rename 221005.vim
+|2,0,1664970018,,"Rename 221005.vim"
+:Q2B
+|2,0,1664970013,,"Q2B"
+:grep -g *.vim -g vimrc s:
+|2,0,1664970004,,"grep -g *.vim -g vimrc s:"
+:pwd
+|2,0,1664970001,,"pwd"
+: w ~/vimfiles/temp/221005.sid_s_colon.txt
+|2,0,1664969862,," w ~/vimfiles/temp/221005.sid_s_colon.txt"
+:enew
+|2,0,1664969751,,"enew"
+:cd ~/vimfiles/
+|2,0,1664969725,,"cd ~/vimfiles/"
+:b!# | bd! #
+|2,0,1664969686,,"b!# | bd! #"
+:g/map /d
+|2,0,1664969649,,"g/map /d"
+:g/remap/d
+|2,0,1664969622,,"g/remap/d"
+:Rename 
+|2,0,1664969445,,"Rename "
+:Cfilter SID
+|2,0,1664969428,,"Cfilter SID"
+:Cfilter! function!
+|2,0,1664969413,,"Cfilter! function!"
+:cfile temp/results.txt
+|2,0,1664969383,,"cfile temp/results.txt"
+:b C:\Users\vivek\vimfiles\vimrc
+|2,0,1664969338,,"b C:\\Users\\vivek\\vimfiles\\vimrc"
+:grep -g *.vim -g vimrc 's:\|\<SID>'
+|2,0,1664969303,,"grep -g *.vim -g vimrc 's:\\|\\<SID>'"
+:grep -g *.vim -g vimrc 's:\|<SID>'
+|2,0,1664969287,,"grep -g *.vim -g vimrc 's:\\|<SID>'"
+:grep -g *.vim -g vimrc 's:|<SID>'
+|2,0,1664969280,,"grep -g *.vim -g vimrc 's:|<SID>'"
+:grep -g *.vim -g vimrc "s:\|<SID>"
+|2,0,1664969275,,"grep -g *.vim -g vimrc \"s:\\|<SID>\""
+:grep -g *.vim -g vimrc "s:|<SID>"
+|2,0,1664969271,,"grep -g *.vim -g vimrc \"s:|<SID>\""
+:grep -g *.vim -g vimrc s:|<SID>
+|2,0,1664969192,,"grep -g *.vim -g vimrc s:|<SID>"
+:VimGrep s:\|SID
+|2,0,1664969183,,"VimGrep s:\\|SID"
+:VimGrep s:|SID
+|2,0,1664969137,,"VimGrep s:|SID"
+:VimGrep s:
+|2,0,1664969118,,"VimGrep s:"
+:h |
+|2,0,1664969111,,"h |"
+:h E683
+|2,0,1664969105,,"h E683"
+:h E693
+|2,0,1664969102,,"h E693"
+:vimgrep s:|SID
+|2,0,1664969099,,"vimgrep s:|SID"
+:vimgrep s:\\|SID
+|2,0,1664969095,,"vimgrep s:\\\\|SID"
+:h :bar
+|2,0,1664969088,,"h :bar"
+:vimgrep s:\|SID
+|2,0,1664969042,,"vimgrep s:\\|SID"
+:vimgrep (s:|SID)
+|2,0,1664969037,,"vimgrep (s:|SID)"
+:VimGrep SID
+|2,0,1664969024,,"VimGrep SID"
+:VimGrep \\<SID\\>
+|2,0,1664969020,,"VimGrep \\\\<SID\\\\>"
+:VimGrep \<SID\>
+|2,0,1664969014,,"VimGrep \\<SID\\>"
+:VimGrep <SID>
+|2,0,1664969008,,"VimGrep <SID>"
+:VimGrep s:|<SID>
+|2,0,1664968993,,"VimGrep s:|<SID>"
+:VimGrep s:\|<SID>
+|2,0,1664968989,,"VimGrep s:\\|<SID>"
+:normal! K
+|2,0,1664968904,,"normal! K"
+:normal K
+|2,0,1664968898,,"normal K"
+:V
+|2,0,1664967693,,"V"
+:PyGrep import
+|2,0,1664967601,,"PyGrep import"
+:messages
+|2,0,1664967578,,"messages"
+:call CocAction('refactor')
+|2,0,1664967097,,"call CocAction('refactor')"
+:MRU gre
+|2,0,1664966953,,"MRU gre"
+:let regex = '\.vim$\|vimrc$'
+|2,0,1664966946,,"let regex = '\\.vim$\\|vimrc$'"
+:VIm
+|2,0,1664966914,,"VIm"
+:let regex = '\.vim$\|vimrc'
+|2,0,1664966904,,"let regex = '\\.vim$\\|vimrc'"
+:echo filter(copy(v:oldfiles), 'v:val =~? regex')
+|2,0,1664966884,,"echo filter(copy(v:oldfiles), 'v:val =~? regex')"
+:@"
+|2,0,1664966882,,"@\""
+:RunLine
+|2,0,1664966879,,"RunLine"
+:call
+|2,0,1664966845,,"call"
+:PyGrep function
+|2,0,1664966764,,"PyGrep function"
+:MRU grep
+|2,0,1664966745,,"MRU grep"
+:PyGrep re.sub
+|2,0,1664966547,,"PyGrep re.sub"
+:MRU ide
+|2,0,1664966405,,"MRU ide"
+:e sqlite.py
+|2,0,1664966293,,"e sqlite.py"
+:Cfilter! Downloads
+|2,0,1664966276,,"Cfilter! Downloads"
+:Cfilter! Documents
+|2,0,1664966272,,"Cfilter! Documents"
+:Cfilter! Desktop
+|2,0,1664966268,,"Cfilter! Desktop"
+:Cfilter! temp
+|2,0,1664966263,,"Cfilter! temp"
+:Cfilter! Twitch
+|2,0,1664966238,,"Cfilter! Twitch"
+:echo count(trim(substitute(CocAction('getHover')[0], '```\(help\)\?', '', 'g')), "\n")
+|2,0,1664965877,,"echo count(trim(substitute(CocAction('getHover')[0], '```\\(help\\)\\?', '', 'g')), \"\\n\")"
+:echo trim(substitute(CocAction('getHover')[0], '```\(help\)\?', '', 'g'))
+|2,0,1664965846,,"echo trim(substitute(CocAction('getHover')[0], '```\\(help\\)\\?', '', 'g'))"
+:echo trim(substitute(CocAction('getHover')[0], '```\(help\)\', '', 'g'))
+|2,0,1664965837,,"echo trim(substitute(CocAction('getHover')[0], '```\\(help\\)\\', '', 'g'))"
+:echo trim(substitute(CocAction('getHover')[0], '```', '', 'g'))
+|2,0,1664965826,,"echo trim(substitute(CocAction('getHover')[0], '```', '', 'g'))"
+:echo substitute(CocAction('getHover')[0], '```', '', 'g')
+|2,0,1664965819,,"echo substitute(CocAction('getHover')[0], '```', '', 'g')"
+:echo CocAction('getHover')[0]
+|2,0,1664965801,,"echo CocAction('getHover')[0]"
+:echo CocAction('getHover')
+|2,0,1664965770,,"echo CocAction('getHover')"
+:map \
+|2,0,1664965590,,"map \\"
+:call 
+|2,0,1664965584,,"call "
+:echo expand(fnamemodify(tempname(), ":h") . '/result.txt')
+|2,0,1664965478,,"echo expand(fnamemodify(tempname(), \":h\") . '/result.txt')"
+:echo pathshorten(fnamemodify(tempname(), ":h") . '/result.txt')
+|2,0,1664965439,,"echo pathshorten(fnamemodify(tempname(), \":h\") . '/result.txt')"
+:echo simplify(fnamemodify(tempname(), ":h") . '/result.txt')
+|2,0,1664965396,,"echo simplify(fnamemodify(tempname(), \":h\") . '/result.txt')"
+:echo resolve(fnamemodify(tempname(), ":h") . '/result.txt')
+|2,0,1664965389,,"echo resolve(fnamemodify(tempname(), \":h\") . '/result.txt')"
+:echo fnamemodify(tempname(), ":h") . '/result.txt'
+|2,0,1664965381,,"echo fnamemodify(tempname(), \":h\") . '/result.txt'"
+:echo fnamemodify(tempname(), ":h")
+|2,0,1664965365,,"echo fnamemodify(tempname(), \":h\")"
+:h builtin
+|2,0,1664965337,,"h builtin"
+:h sep
+|2,0,1664965334,,"h sep"
+:echo fnamemodify(tempname(), ":t")
+|2,0,1664965290,,"echo fnamemodify(tempname(), \":t\")"
+:call fnamemodify(tempname(), ":t")
+|2,0,1664965287,,"call fnamemodify(tempname(), \":t\")"
+:echo fnamemo
+|2,0,1664965273,,"echo fnamemo"
+:echo file_readable(
+|2,0,1664965251,,"echo file_readable("
+:echo tempname()
+|2,0,1664965245,,"echo tempname()"
+:filter /vim$/ oldfiles
+|2,0,1664965168,,"filter /vim$/ oldfiles"
+:h :filter
+|2,0,1664965160,,"h :filter"
+:h 
+|2,0,1664965155,,"h "
+:h filter
+|2,0,1664965149,,"h filter"
+:filter v:oldfiles /vim/
+|2,0,1664965147,,"filter v:oldfiles /vim/"
+:filter v:oldfiles
+|2,0,1664965144,,"filter v:oldfiles"
+:filter /vim/ v:oldfiles
+|2,0,1664965135,,"filter /vim/ v:oldfiles"
+:echo v:oldfiles
+|2,0,1664965124,,"echo v:oldfiles"
+:grep -g *.vim vimrc 
+|2,0,1664965091,,"grep -g *.vim vimrc "
+:grep -g *.vim 
+|2,0,1664965029,,"grep -g *.vim "
+:call PrintList(CocAction('codeActions'))
+|2,0,1664964967,,"call PrintList(CocAction('codeActions'))"
+:call Pri
+|2,0,1664964895,,"call Pri"
+:echo CocAction('codeActions')
+|2,0,1664964876,,"echo CocAction('codeActions')"
+:call CocAction('codeActions')
+|2,0,1664964854,,"call CocAction('codeActions')"
+:call CocAction('refactor.inline')
+|2,0,1664964840,,"call CocAction('refactor.inline')"
+:Call
+|2,0,1664964833,,"Call"
+:h coc-nvim
+|2,0,1664964819,,"h coc-nvim"
+:echo 
+|2,0,1664964647,,"echo "
+:MRU 
+|2,0,1664964587,,"MRU "
+:MRU prin
+|2,0,1664964399,,"MRU prin"
+:CocConfig
+|2,0,1664964298,,"CocConfig"
+:MRU 1230:make_black.py
+|2,0,1664964280,,"MRU 1230:make_black.py"
+:MRU bla
+|2,0,1664964274,,"MRU bla"
+:CocDiagnostics
+|2,0,1664964263,,"CocDiagnostics"
+:d
+|2,0,1664932756,,"d"
+:255
+|2,0,1664932725,,"255"
+:verbose @:
+|2,0,1664932719,,"verbose @:"
+:call CocAction('getHover')
+|2,0,1664932586,,"call CocAction('getHover')"
+:me
+|2,0,1664932497,,"me"
+:!start %
+|2,0,1664932472,,"!start %"
+:ll
+|2,0,1664927144,,"ll"
+:h 'showcmd'
+|2,0,1664925166,,"h 'showcmd'"
+:MRU vimrc
+|2,0,1664925074,,"MRU vimrc"
+:MRU 3:vim.vim
+|2,0,1664925069,,"MRU 3:vim.vim"
+:MRU  
+|2,0,1664925066,,"MRU  "
+:e 
+|2,0,1664925064,,"e "
+:cd plugin/
+|2,0,1664925062,,"cd plugin/"
+:e ~/vimfiles/blank.vim
+|2,0,1664924873,,"e ~/vimfiles/blank.vim"
+:h nvim_buf
+|2,0,1664924801,,"h nvim_buf"
+:call nvim_bu
+|2,0,1664924798,,"call nvim_bu"
+:CocInstall coc-vimlsp
+|2,0,1664924736,,"CocInstall coc-vimlsp"
 :CocInstall
-|2,0,1664924712,,"CocInstall"
+|2,0,1664924732,,"CocInstall"
 :h CocInstall
 |2,0,1664924687,,"h CocInstall"
-:so %
-|2,0,1664924680,,"so %"
 :echo g:coc_global_extensions
 |2,0,1664924662,,"echo g:coc_global_extensions"
 :MRU ide.vim
 |2,0,1664924646,,"MRU ide.vim"
 :call coc#config()
 |2,0,1664924586,,"call coc#config()"
-:h coc-nvim
-|2,0,1664924539,,"h coc-nvim"
 :h <cmd>
 |2,0,1664924172,,"h <cmd>"
-:e
-|2,0,1664924135,,"e"
-:HotReload
-|2,0,1664924113,,"HotReload"
 :MRU vim.vim
 |2,0,1664924059,,"MRU vim.vim"
 :Isolate /\f\+(/
@@ -58,12 +450,6 @@ $\0
 |2,0,1664923957,,"Isol"
 :set ft=vim
 |2,0,1664923936,,"set ft=vim"
-:copen
-|2,0,1664923903,,"copen"
-:enew
-|2,0,1664923898,,"enew"
-:Q2B
-|2,0,1664923888,,"Q2B"
 :Cfilter! syntax
 |2,0,1664923883,,"Cfilter! syntax"
 :Cfilter! colors
@@ -72,12 +458,8 @@ $\0
 |2,0,1664923820,,"Cfilter! iceberg"
 :Cfilter! plugged
 |2,0,1664923807,,"Cfilter! plugged"
-:Cfilter! function!
-|2,0,1664923789,,"Cfilter! function!"
 :grep -g *.vim -g vimrc \w+\(
 |2,0,1664923772,,"grep -g *.vim -g vimrc \\w+\\("
-:cn
-|2,0,1664923757,,"cn"
 :grep -g *.vim -g vimrc \b[^A_Z]\w+\(
 |2,0,1664923753,,"grep -g *.vim -g vimrc \\b[^A_Z]\\w+\\("
 :grep -g *.vim -g vimrc \b[a-z_0-9]+\(
@@ -110,8 +492,6 @@ $\0
 |2,0,1664808143,,"echo 'a' > 'b'"
 :echo 'a' < 'b'
 |2,0,1664808136,,"echo 'a' < 'b'"
-:h builtin
-|2,0,1664808086,,"h builtin"
 :h strcmp
 |2,0,1664808082,,"h strcmp"
 :h uniq()
@@ -144,12 +524,8 @@ $\0
 |2,0,1664796572,,"h index("
 :h index
 |2,0,1664796569,,"h index"
-:MRU ide
-|2,0,1664796549,,"MRU ide"
 :call substitute(getline("."), '[(,*]\s*\zs\w\+', '\=add(lst, submatch(0))', 'g')
 |2,0,1664796378,,"call substitute(getline(\".\"), '[(,*]\\s*\\zs\\w\\+', '\\=add(lst, submatch(0))', 'g')"
-:MRU 
-|2,0,1664796317,,"MRU "
 :echo lst
 |2,0,1664796313,,"echo lst"
 :let lst=[]
@@ -184,8 +560,6 @@ $\0
 |2,0,1664795564,,"echo matchlist(getline(\".\"), \"a\")"
 :echo getline(".")
 |2,0,1664795555,,"echo getline(\".\")"
-:MRU blan
-|2,0,1664795504,,"MRU blan"
 :v/
 |2,0,1664795466,,"v/"
 :Py
@@ -198,14 +572,10 @@ $\0
 |2,0,1664795016,,"g/for \\w\\w\\+ in /d"
 :g/for [a-z]\+ in/d
 |2,0,1664794947,,"g/for [a-z]\\+ in/d"
-:MRU bla
-|2,0,1664794906,,"MRU bla"
 :Q2
 |2,0,1664794858,,"Q2"
 :call L
 |2,0,1664794839,,"call L"
-:bd
-|2,0,1664794828,,"bd"
 :Cfilter /^for/
 |2,0,1664794792,,"Cfilter /^for/"
 :PyGrep \bfor\b.*\bin\b
@@ -268,12 +638,6 @@ $\0
 |2,0,1664791804,,"MRU pr"
 :MRU re
 |2,0,1664791773,,"MRU re"
-:MRU rend
-|2,0,1664790788,,"MRU rend"
-:messages
-|2,0,1664790719,,"messages"
-:MRU prin
-|2,0,1664790668,,"MRU prin"
 :echo strftime("%c")
 |2,0,1664790663,,"echo strftime(\"%c\")"
 :echo strftime("%c", localtime())
@@ -324,8 +688,6 @@ $\0
 |2,0,1664787361,,"h find"
 :echo g:coc_status
 |2,0,1664787243,,"echo g:coc_status"
-:echo 
-|2,0,1664787241,,"echo "
 :CocList services
 |2,0,1664787221,,"CocList services"
 :MRU init
@@ -372,8 +734,6 @@ $\0
 |2,0,1664786066,,"call bufload('vardump.py')"
 :cd temp
 |2,0,1664786060,,"cd temp"
-:pwd
-|2,0,1664786057,,"pwd"
 :call bufload('temp/vardump.py')
 |2,0,1664786055,,"call bufload('temp/vardump.py')"
 :call bufload('C:/Users/vivek/vimfiles/temp/vardump.py')
@@ -456,8 +816,6 @@ $\0
 |2,0,1664784664,,"lopen"
 :map Q
 |2,0,1664784548,,"map Q"
-:@"
-|2,0,1664784533,,"@\""
 :@:
 |2,0,1664784521,,"@:"
 :h <expr> | /side effect
@@ -478,14 +836,10 @@ $\0
 |2,0,1664749187,,"call bufload('~/vimfiles/vimrc')"
 :call bufload('~/item')
 |2,0,1664749183,,"call bufload('~/item')"
-:h 
-|2,0,1664748745,,"h "
 :echo bufloaded
 |2,0,1664748674,,"echo bufloaded"
 :echo bufloaded(8)
 |2,0,1664748667,,"echo bufloaded(8)"
-:b!# | bd! #
-|2,0,1664748643,,"b!# | bd! #"
 :set modified?
 |2,0,1664748593,,"set modified?"
 :b vard
@@ -596,8 +950,6 @@ $\0
 |2,0,1664712620,,"set completefunc?"
 :b \Users\vivek\vimfiles\temp\vardump.py
 |2,0,1664712612,,"b \\Users\\vivek\\vimfiles\\temp\\vardump.py"
-:b C:\Users\vivek\vimfiles\vimrc
-|2,0,1664712459,,"b C:\\Users\\vivek\\vimfiles\\vimrc"
 :au CompleteDone
 |2,0,1664712449,,"au CompleteDone"
 :MRU goto
@@ -606,8 +958,6 @@ $\0
 |2,0,1664711799,,"h E565"
 :messages[10]
 |2,0,1664711785,,"messages[10]"
-:so 
-|2,0,1664711319,,"so "
 :b #
 |2,0,1664711184,,"b #"
 :b dump
@@ -838,8 +1188,6 @@ $\0
 |2,0,1664667535,,"MRU word.vim"
 :e ~
 |2,0,1664667531,,"e ~"
-:verbose @:
-|2,0,1664667525,,"verbose @:"
 :map ga
 |2,0,1664667521,,"map ga"
 :PSS
@@ -910,14 +1258,8 @@ $\0
 |2,0,1664665569,,"b 337"
 :echo CocAction('documentSymbols', 337)
 |2,0,1664665441,,"echo CocAction('documentSymbols', 337)"
-:MRU blank
-|2,0,1664665393,,"MRU blank"
 :CocCommand document.jumpToNextSymbol
 |2,0,1664665323,,"CocCommand document.jumpToNextSymbol"
-:echo CocAction('codeActions')
-|2,0,1664665268,,"echo CocAction('codeActions')"
-:call
-|2,0,1664665261,,"call"
 :call CocAction('documentSymbols') 337
 |2,0,1664665203,,"call CocAction('documentSymbols') 337"
 :echo bufload('~/vimfiles/vimrc')
@@ -940,8 +1282,6 @@ $\0
 |2,0,1664664819,,"h getlines"
 :echo &cms
 |2,0,1664664683,,"echo &cms"
-:d
-|2,0,1664664656,,"d"
 :set cms?
 |2,0,1664664626,,"set cms?"
 :set ft=pytho
@@ -964,8 +1304,6 @@ $\0
 |2,0,1664664164,,"1008"
 :verbose command HotReload
 |2,0,1664664160,,"verbose command HotReload"
-:call 
-|2,0,1664664152,,"call "
 :b python
 |2,0,1664664105,,"b python"
 :e ~/vimfiles/plugin/printvar.vim
@@ -1038,8 +1376,6 @@ $\0
 |2,0,1664633136,,"map )"
 :so ~/vimfiles/plugin/method-textobj.vim
 |2,0,1664633135,,"so ~/vimfiles/plugin/method-textobj.vim"
-:so ~/vimfiles/vimrc
-|2,0,1664633126,,"so ~/vimfiles/vimrc"
 :MRU method
 |2,0,1664633116,,"MRU method"
 :nunmap )
@@ -1128,8 +1464,6 @@ $\0
 |2,0,1664627713,,"b color"
 :MRU color.
 |2,0,1664627657,,"MRU color."
-:MRU py
-|2,0,1664626767,,"MRU py"
 :g/\C\<ObnoxiousErrorMessage\>/
 |2,0,1664626748,,"g/\\C\\<ObnoxiousErrorMessage\\>/"
 :v/\C\<ObnoxiousErrorMessage\>/
@@ -1160,8 +1494,6 @@ $\0
 |2,0,1664492685,,"MRU main"
 :b char
 |2,0,1664492222,,"b char"
-:!start %
-|2,0,1664491992,,"!start %"
 :MRU wsl
 |2,0,1664491990,,"MRU wsl"
 :MRU App
@@ -1202,8 +1534,6 @@ $\0
 |2,0,1664483868,,"e vi"
 :e vit
 |2,0,1664483864,,"e vit"
-:MRU back
-|2,0,1664483825,,"MRU back"
 :e api.py
 |2,0,1664483808,,"e api.py"
 :e Chart.vue
@@ -1232,8 +1562,6 @@ $\0
 |2,0,1664483538,,"e tailwind.config.cjs"
 :e tail
 |2,0,1664483532,,"e tail"
-:CMD
-|2,0,1664483470,,"CMD"
 :MRU 10:Desktop\backup\volar-test\App.vue
 |2,0,1664482366,,"MRU 10:Desktop\\backup\\volar-test\\App.vue"
 :MRU main.php
@@ -1326,8 +1654,6 @@ $\0
 |2,0,1664225854,,"resize"
 :map gd
 |2,0,1664224814,,"map gd"
-:call CocAction('refactor')
-|2,0,1664223063,,"call CocAction('refactor')"
 :CocCo
 |2,0,1664223055,,"CocCo"
 :call CocAction('rename')
@@ -1374,8 +1700,6 @@ $\0
 |2,0,1664208105,,"MRU bett"
 :MRU pytho
 |2,0,1664208053,,"MRU pytho"
-:Ftplugin
-|2,0,1664208049,,"Ftplugin"
 :verbose map
 |2,0,1664206095,,"verbose map"
 :verbose imap
@@ -1434,8 +1758,6 @@ $\0
 |2,0,1664203705,,"set completeslash"
 :Isolate /verbose\s*\S\+
 |2,0,1664203668,,"Isolate /verbose\\s*\\S\\+"
-:%sort
-|2,0,1664203619,,"%sort"
 :v/^verb/d
 |2,0,1664203608,,"v/^verb/d"
 :e ~/vimfiles/temp/220926.vim_command_verbose.txt
@@ -1448,8 +1770,6 @@ $\0
 |2,0,1664203434,,"verbose abbrev grep"
 :abbrev grep
 |2,0,1664203408,,"abbrev grep"
-:grep -g *.vim -g vimrc 
-|2,0,1664203396,,"grep -g *.vim -g vimrc "
 :Rename introspect.vim
 |2,0,1664203319,,"Rename introspect.vim"
 :e plugin/command2dict.vim
@@ -1494,8 +1814,6 @@ $\0
 |2,0,1664194516,,"e other.py"
 :CocList
 |2,0,1664194441,,"CocList"
-:CocDiagnostics
-|2,0,1664194351,,"CocDiagnostics"
 :CocA
 |2,0,1664194348,,"CocA"
 :h CocWatch
@@ -1510,8 +1828,6 @@ $\0
 |2,0,1664194174,,"call CocAction('references')"
 :CocRestart
 |2,0,1664194151,,"CocRestart"
-:CocConfig
-|2,0,1664194093,,"CocConfig"
 :call setloclist(0, reflist)
 |2,0,1664193805,,"call setloclist(0, reflist)"
 :echo reflist
@@ -1566,8 +1882,6 @@ $\0
 |2,0,1664189877,,"Isolate frame\\.[a-z_.]\\+"
 :'<,'>sort /frame/
 |2,0,1664189848,,"'<,'>sort /frame/"
-:'<,'>sort
-|2,0,1664189829,,"'<,'>sort"
 :h \f
 |2,0,1664189736,,"h \\f"
 :Isolate frame\.\f\+
@@ -1622,8 +1936,6 @@ $\0
 |2,0,1664187945,,"MRU pdbr"
 :b error.py
 |2,0,1664182211,,"b error.py"
-:MRU grep
-|2,0,1664182116,,"MRU grep"
 :ec
 |2,0,1664182093,,"ec"
 :u
@@ -1666,8 +1978,6 @@ $\0
 |2,0,1664179390,,"PyGrep dq"
 :MRU error
 |2,0,1664179330,,"MRU error"
-:ll
-|2,0,1664179311,,"ll"
 :lopne
 |2,0,1664179270,,"lopne"
 :CocRes
@@ -1896,8 +2206,6 @@ $\0
 |2,0,1663943678,,"find better.vim"
 :e better
 |2,0,1663943674,,"e better"
-:MRU vimrc
-|2,0,1663943642,,"MRU vimrc"
 :so ~/vimrc
 |2,0,1663943637,,"so ~/vimrc"
 :e ~/vimfiles/plugin/repeat_template.vim
@@ -1958,8 +2266,6 @@ $\0
 |2,0,1663788820,,"nnoremap <buffer=17> g12 :echo \"17\"<CR>"
 :h setbufvar
 |2,0,1663788764,,"h setbufvar"
-:MRU status
-|2,0,1663788745,,"MRU status"
 :MRU mru
 |2,0,1663788629,,"MRU mru"
 :verbose set isk?
@@ -2156,8 +2462,6 @@ $\0
 |2,0,1663679612,,"b vimspector.StackTrace"
 :b vimspector.Console
 |2,0,1663679603,,"b vimspector.Console"
-:V
-|2,0,1663679317,,"V"
 :VimspectorInstall
 |2,0,1663679305,,"VimspectorInstall"
 :'<,'>!
@@ -2268,8 +2572,6 @@ $\0
 |2,0,1663634915,,"e 220919.txt"
 :e 22
 |2,0,1663634909,,"e 22"
-:PyGrep import
-|2,0,1663634675,,"PyGrep import"
 :PyGrep ""
 |2,0,1663634625,,"PyGrep \"\""
 :PyGrep 
@@ -2300,8 +2602,6 @@ $\0
 |2,0,1663633993,,"h system("
 :h writefile
 |2,0,1663633839,,"h writefile"
-:echo tempname()
-|2,0,1663633804,,"echo tempname()"
 :Rename grep.vim
 |2,0,1663633707,,"Rename grep.vim"
 :e ~/vimfiles/plugin/grep.py
@@ -2464,8 +2764,6 @@ $\0
 |2,0,1663596579,," "
 :e encode_error.py
 |2,0,1663596563,,"e encode_error.py"
-:e 
-|2,0,1663596550,,"e "
 :set fileencoding?
 |2,0,1663596528,,"set fileencoding?"
 :set fe?
@@ -2550,8 +2848,6 @@ $\0
 |2,0,1663585523,,"%ss"
 :v/slug=\"\/film\//d
 |2,0,1663585502,,"v/slug=\\\"\\/film\\//d"
-:g/
-|2,0,1663585480,,"g/"
 :v/https:\/\/letterboxd\.com\/film\/castaway-on-the-moon\//
 |2,0,1663585478,,"v/https:\\/\\/letterboxd\\.com\\/film\\/castaway-on-the-moon\\//"
 :e file.html
@@ -2590,8 +2886,6 @@ $\0
 |2,0,1663585113,," w letterboxd_ten.py"
 :%s/[a-z]\zs[A-Z].*\ze(/ /
 |2,0,1663584511,,"%s/[a-z]\\zs[A-Z].*\\ze(/ /"
-:v/(/d
-|2,0,1663584437,,"v/(/d"
 :Rename dictionaries.txt
 |2,0,1663584041,,"Rename dictionaries.txt"
 :save
@@ -2668,8 +2962,6 @@ $\0
 |2,0,1663535503,,"PyGrep db"
 :e!
 |2,0,1663535495,,"e!"
-:map \
-|2,0,1663535282,,"map \\"
 :echo s:left_save
 |2,0,1663535069,,"echo s:left_save"
 :map <left>
@@ -2914,8 +3206,6 @@ $\0
 |2,0,1663325136,,"h strip("
 :h trim(
 |2,0,1663325130,,"h trim("
-:map K
-|2,0,1663325057,,"map K"
 :echo map(getqflist(), { idx, D -> D['text'] })
 |2,0,1663324976,,"echo map(getqflist(), { idx, D -> D['text'] })"
 :echo getqflist()
@@ -2942,8 +3232,6 @@ $\0
 |2,0,1663288612,,"91"
 :filter /indent/ scriptnames
 |2,0,1663287721,,"filter /indent/ scriptnames"
-:scriptnames
-|2,0,1663287713,,"scriptnames"
 :sourcenames
 |2,0,1663287711,,"sourcenames"
 :echo g:pyindent_searchpair_timeout
@@ -3014,8 +3302,6 @@ $\0
 |2,0,1663074479,,"e channel_dl.py"
 :e ~/Desktop/youtube_dl/upload_date.py
 |2,0,1663074474,,"e ~/Desktop/youtube_dl/upload_date.py"
-:%s
-|2,0,1663072740,,"%s"
 :%s/,.*//
 |2,0,1663072734,,"%s/,.*//"
 :v/\C\<R\>/d
@@ -3464,8 +3750,6 @@ $\0
 |2,0,1662413973,,"h literal-string"
 :h literal
 |2,0,1662413970,,"h literal"
-:set statusline?
-|2,0,1662413347,,"set statusline?"
 :b main
 |2,0,1662413336,,"b main"
 :e adobe.ahk
@@ -3744,8 +4028,6 @@ $\0
 |2,0,1661865073,,"%!js"
 :%!python -m json.tool
 |2,0,1661865070,,"%!python -m json.tool"
-:diffthis
-|2,0,1661864974,,"diffthis"
 :MRU 35:1559906717.json
 |2,0,1661864950,,"MRU 35:1559906717.json"
 :MRU 17:ffz-global.json
@@ -3908,8 +4190,6 @@ $\0
 |2,0,1661290767,,"grep -g *.vim comment"
 :cd plugin
 |2,0,1661290765,,"cd plugin"
-:grep -g *.py 
-|2,0,1661290752,,"grep -g *.py "
 :MRU 754:comment.vim
 |2,0,1661290724,,"MRU 754:comment.vim"
 :set ft=php
@@ -4046,8 +4326,6 @@ $\0
 |2,0,1661189336,,"'<,'>s/;//"
 :'<,'>g/gql/d
 |2,0,1661188920,,"'<,'>g/gql/d"
-:Gather
-|2,0,1661188909,,"Gather"
 :MRU Tw
 |2,0,1661188556,,"MRU Tw"
 :MRU 19:ChatRenderer.cs
@@ -4806,8 +5084,6 @@ $\0
 |2,0,1660373440,,"MRU ba"
 :MRU back*py
 |2,0,1660373436,,"MRU back*py"
-:echo v:oldfiles
-|2,0,1660373281,,"echo v:oldfiles"
 :e ~/vimfiles/temp/220813.oldfiles_undo.vim
 |2,0,1660373202,,"e ~/vimfiles/temp/220813.oldfiles_undo.vim"
 :h :undo
@@ -4894,8 +5170,6 @@ $\0
 |2,0,1660339570,,"lnext "
 :ln
 |2,0,1660339568,,"ln"
-:grep -g *.vim 
-|2,0,1660339526,,"grep -g *.vim "
 :Cfilter! /<expr>
 |2,0,1660339474,,"Cfilter! /<expr>"
 :Cfitler! /<expr>/
@@ -4922,8 +5196,6 @@ $\0
 |2,0,1660339138,,"grep -g *.python "
 :grep -g *..vim 
 |2,0,1660339116,,"grep -g *..vim "
-:grep -g *.
-|2,0,1660339008,,"grep -g *."
 :grep -g *.vim \<expr\>.*s:
 |2,0,1660338664,,"grep -g *.vim \\<expr\\>.*s:"
 :grep -g *.vim <expr>.*s:
@@ -5108,8 +5380,6 @@ $\0
 |2,0,1660312638,,"cfirst"
 :SID
 |2,0,1660311227,,"SID"
-:h statusline
-|2,0,1660311014,,"h statusline"
 :so statusline.vim
 |2,0,1660310928,,"so statusline.vim"
 :SI
@@ -6464,8 +6734,6 @@ $\0
 |2,0,1659011163,,"grep -g *.py astimezone"
 :e ~/temp/date.py
 |2,0,1659010296,,"e ~/temp/date.py"
-:cclose
-|2,0,1659009486,,"cclose"
 :grep -g *.py da
 |2,0,1659009461,,"grep -g *.py da"
 :e data.db
@@ -6674,8 +6942,6 @@ $\0
 |2,0,1658736548,,"saveas ~/Desktop/backup/backup-vite/index.html"
 :saveas ~/Desktop/backup/backup-vite/App.vue
 |2,0,1658736521,,"saveas ~/Desktop/backup/backup-vite/App.vue"
-:e .gitignore
-|2,0,1658735303,,"e .gitignore"
 :b \Users\vivek\Documents\Python\backup-flask\backup.py
 |2,0,1658735277,,"b \\Users\\vivek\\Documents\\Python\\backup-flask\\backup.py"
 :269
@@ -6736,8 +7002,6 @@ $\0
 |2,0,1658681659,,"b run.vim"
 :MRU r
 |2,0,1658681658,,"MRU r"
-:MRU vimr
-|2,0,1658681656,,"MRU vimr"
 :grep -g *.vim hot
 |2,0,1658681453,,"grep -g *.vim hot"
 :call Ho
@@ -6748,12 +7012,8 @@ $\0
 |2,0,1658681296,,"command b"
 :grep -g *. command.*buffer
 |2,0,1658681271,,"grep -g *. command.*buffer"
-:cd plugin/
-|2,0,1658681267,,"cd plugin/"
 :e ~/vimfiles/plugin/run.vim
 |2,0,1658681246,,"e ~/vimfiles/plugin/run.vim"
-:RunLine
-|2,0,1658681217,,"RunLine"
 :29
 |2,0,1658672623,,"29"
 :find materialsymbolsoutlined.v26.subset.woff2
@@ -6848,8 +7108,6 @@ $\0
 |2,0,1658559749,,"b \\Users\\vivek\\backup-vite\\Tooltip.vue"
 :b Tooltip.js
 |2,0,1658559743,,"b Tooltip.js"
-:e assets/
-|2,0,1658537500,,"e assets/"
 :e ~/Documents/autocomplete_js.txt
 |2,0,1658537444,,"e ~/Documents/autocomplete_js.txt"
 :wriet
@@ -7000,8 +7258,6 @@ $\0
 |2,0,1658173600,,"verbose map E"
 :MRU 179:cacx.vim
 |2,0,1658172911,,"MRU 179:cacx.vim"
-:diff
-|2,0,1658165762,,"diff"
 :s/\s*,\s*//g
 |2,0,1658165755,,"s/\\s*,\\s*//g"
 :e subprocess_2.txt
@@ -7236,8 +7492,6 @@ $\0
 |2,0,1658002731,,"filter \\<[a-z] command"
 :filter \<[a-z]
 |2,0,1658002727,,"filter \\<[a-z]"
-:h :filter
-|2,0,1658002708,,"h :filter"
 :filter /\<[d-z]/ abbrev
 |2,0,1658002705,,"filter /\\<[d-z]/ abbrev"
 :h `
@@ -7410,8 +7664,6 @@ $\0
 |2,0,1657704411,,"e dist/index.html"
 :MRU index.h
 |2,0,1657704283,,"MRU index.h"
-:se
-|2,0,1657698588,,"se"
 :MRU gui.html
 |2,0,1657698093,,"MRU gui.html"
 :'<,'>w
@@ -7480,8 +7732,6 @@ $\0
 |2,0,1657649555,,"Rename subset_outlined.bat"
 :au BufFilePost
 |2,0,1657649542,,"au BufFilePost"
-:Rename 
-|2,0,1657649539,,"Rename "
 :Rename asdf.txt
 |2,0,1657649531,,"Rename asdf.txt"
 :MRU 61:~\vimfiles\plugin\statusline.vim
@@ -7960,8 +8210,6 @@ $\0
 |2,0,1654073746,,"verbose map zf"
 :CMD plugin
 |2,0,1653892912,,"CMD plugin"
-:Explore
-|2,0,1653892906,,"Explore"
 :!start everything -path . p
 |2,0,1653892904,,"!start everything -path . p"
 :556
@@ -9182,8 +9430,6 @@ $\0
 |2,0,1643799936,,"'<,'>%!pyhom -m "
 :'<,'>%!pyhom -m json.tool 
 |2,0,1643799928,,"'<,'>%!pyhom -m json.tool "
-:normal! K
-|2,0,1643799911,,"normal! K"
 :call jedi#goto()
 |2,0,1643799898,,"call jedi#goto()"
 :call jedi#goto
@@ -9500,10 +9746,6 @@ $\0
 |2,0,1643717152,,"let D1 = CocAction('sourceStat')"
 :echo CocAction('sourceStat')
 |2,0,1643717139,,"echo CocAction('sourceStat')"
-:echo CocAction('getHover')
-|2,0,1643717134,,"echo CocAction('getHover')"
-:call CocAction('getHover')
-|2,0,1643717132,,"call CocAction('getHover')"
 :call CocAction('toggleSource')
 |2,0,1643717118,,"call CocAction('toggleSource')"
 :call CocAction('sourceStat')
@@ -11924,8 +12166,6 @@ $\0
 |2,0,1637084877,,"MRU cl"
 :LspStopServer
 |2,0,1637084852,,"LspStopServer"
-:me
-|2,0,1637083660,,"me"
 :e mixed.php
 |2,0,1637083658,,"e mixed.php"
 :cd ~/Desktop/neovim/
@@ -12387,8 +12627,6 @@ $\0
 |2,0,1634476841,,"Fi"
 :b dan_luu_productivity_velocity.html
 |2,0,1634474256,,"b dan_luu_productivity_velocity.html"
-:Cfilter! Twitch
-|2,0,1634474097,,"Cfilter! Twitch"
 :PyGrep download
 |2,0,1634474072,,"PyGrep download"
 :Rename dl.py
@@ -13800,8 +14038,6 @@ $\0
 |2,0,1624977258,,"MatchCount re.eat"
 :MatchCount
 |2,0,1624977217,,"MatchCount"
-:ExtractArguments
-|2,0,1624977193,,"ExtractArguments"
 :map Do
 |2,0,1624977075,,"map Do"
 :call HardRestoreMappings()
@@ -14238,8 +14474,6 @@ $\0
 |2,0,1624463535,,"filter au <SID>"
 :filter au s:
 |2,0,1624463532,,"filter au s:"
-:set stl?
-|2,0,1624463362,,"set stl?"
 :set laststatus=2
 |2,0,1624460902,,"set laststatus=2"
 :set statusline=2
@@ -14740,8 +14974,6 @@ $\0
 |2,0,1624286538,,"PyGrep insert or replace"
 :PyGrep upsert
 |2,0,1624286507,,"PyGrep upsert"
-:e sqlite.py
-|2,0,1624285548,,"e sqlite.py"
 :b performance.vim
 |2,0,1624285445,,"b performance.vim"
 :b ~\vimfiles\performance\2106021.vim_exit_latency.v01.txt
@@ -14866,10 +15098,124 @@ $\0
 |2,0,1624224290,,"wviminfo"
 
 # Search String History (newest to oldest):
+?/\C\<y\>
+|2,1,1664979472,47,"\\C\\<y\\>"
+?/\C\<r\>
+|2,1,1664979460,47,"\\C\\<r\\>"
+?/LinterStatus
+|2,1,1664979232,47,"LinterStatus"
+?/set st
+|2,1,1664979167,47,"set st"
+?/6L
+|2,1,1664978920,47,"6L"
+?/statuslin
+|2,1,1664978852,47,"statuslin"
+?/\s
+|2,1,1664976734,47,"\\s"
+? <sid>
+|2,1,1664972566,,"<sid>"
+? @$
+|2,1,1664972526,,"@$"
+? ^$
+|2,1,1664972526,,"^$"
+?/map
+|2,1,1664970416,47,"map"
+? s:[A-Z]
+|2,1,1664970365,,"s:[A-Z]"
+?/s:
+|2,1,1664970346,47,"s:"
+? ^command
+|2,1,1664970325,,"^command"
+? ^call
+|2,1,1664970304,,"^call"
+? \<s:\f\+(
+|2,1,1664970208,,"\\<s:\\f\\+("
+?/\<s:\f\+(
+|2,1,1664970205,47,"\\<s:\\f\\+("
+?/\k\+
+|2,1,1664970190,47,"\\k\\+"
+?/s:\k
+|2,1,1664970186,47,"s:\\k"
+? (
+|2,1,1664970162,,"("
+?/function(.s:
+|2,1,1664970086,47,"function(.s:"
+? let s:
+|2,1,1664970070,,"let s:"
+? ^function
+|2,1,1664970040,,"^function"
+? ^"\s*
+|2,1,1664970035,,"^\"\\s*"
+? ^\s*$
+|2,1,1664970014,,"^\\s*$"
+? ^[A-Za-z!)0-9>%<;(|`+$@{?-\*#&}\-_=~^]\{77,\}$
+|2,1,1664970014,,"^[A-Za-z!)0-9>%<;(|`+$@{?-\\*#&}\\-_=~^]\\{77,\\}$"
+?/<SID>
+|2,1,1664969910,47,"<SID>"
+?/call
+|2,1,1664969880,47,"call"
+? map 
+|2,1,1664969649,,"map "
+? remap
+|2,1,1664969622,,"remap"
+?/<expr>
+|2,1,1664969563,47,"<expr>"
+?/map.*s:
+|2,1,1664969546,47,"map.*s:"
+?/vimgrep
+|2,1,1664969340,47,"vimgrep"
+?/vimrc
+|2,1,1664966931,47,"vimrc"
+?/python_paths
+|2,1,1664965565,47,"python_paths"
+?/path
+|2,1,1664965412,47,"path"
+?/separator
+|2,1,1664965343,47,"separator"
+?/^[a-z_]*sep
+|2,1,1664965339,47,"^[a-z_]*sep"
+?/oldfiles
+|2,1,1664965151,47,"oldfiles"
+? vim
+|2,1,1664965147,,"vim"
+? oldfiles
+|2,1,1664965135,,"oldfiles"
+?/global
+|2,1,1664964907,47,"global"
+?/inline
+|2,1,1664964821,47,"inline"
+?/abbrev.*grep
+|2,1,1664964468,47,"abbrev.*grep"
+?/vim.*grep
+|2,1,1664964460,47,"vim.*grep"
+?/grep.*vim
+|2,1,1664964438,47,"grep.*vim"
+??vim
+|2,1,1664964431,63,"vim"
+?/submatch
+|2,1,1664964410,47,"submatch"
+?/def
+|2,1,1664964404,47,"def"
+?/lint
+|2,1,1664964365,47,"lint"
+?/save
+|2,1,1664964353,47,"save"
+?/K
+|2,1,1664932731,47,"K"
+?/hover
+|2,1,1664932574,47,"hover"
+?/silent
+|2,1,1664932569,47,"silent"
+?/doHover
+|2,1,1664932319,47,"doHover"
+?/^\s*function!\?\s\+\(s:\)\?\(\w\+#\)\?\w*showdoc
+|2,1,1664932220,47,"^\\s*function!\\?\\s\\+\\(s:\\)\\?\\(\\w\\+#\\)\\?\\w*showdoc"
+?/ 
+|2,1,1664927179,47," "
+?/^\s*function!\?\s\+\(s:\)\?\(\w\+#\)\?\w*Show
+|2,1,1664925172,47,"^\\s*function!\\?\\s\\+\\(s:\\)\\?\\(\\w\\+#\\)\\?\\w*Show"
 ?/CocInstall
 |2,1,1664924696,47,"CocInstall"
-?/global
-|2,1,1664924649,47,"global"
 ?/global_exte
 |2,1,1664924634,47,"global_exte"
 ?/install
@@ -14890,10 +15236,6 @@ $\0
 |2,1,1664923934,47,"[a-zA-Z#"
 ?/\w\+\
 |2,1,1664923924,47,"\\w\\+\\"
-? ^\s*$
-|2,1,1664923888,,"^\\s*$"
-? ^[A-Za-z!)0-9>%<;(|`+$@{?-\*#&}\-_=~^]\{77,\}$
-|2,1,1664923888,,"^[A-Za-z!)0-9>%<;(|`+$@{?-\\*#&}\\-_=~^]\\{77,\\}$"
 ? ^
 |2,1,1664923888,,"^"
 ?/echo
@@ -14972,8 +15314,6 @@ $\0
 |2,1,1664794867,47,"^"
 ?/right
 |2,1,1664793686,47,"right"
-?/path
-|2,1,1664793474,47,"path"
 ?/autocmd
 |2,1,1664790806,47,"autocmd"
 ?/mo
@@ -15164,8 +15504,6 @@ $\0
 |2,1,1664664987,47,"return"
 ?/bufexi
 |2,1,1664664949,47,"bufexi"
-?/def
-|2,1,1664664767,47,"def"
 ?/^[a-z]*file
 |2,1,1664664442,47,"^[a-z]*file"
 ?/^\s*function!\?\s\+\(s:\)\?\(\w\+#\)\?\w*g
@@ -15244,10 +15582,6 @@ $\0
 |2,1,1664484065,47,"w-full"
 ?/tailwind
 |2,1,1664484043,47,"tailwind"
-? @$
-|2,1,1664483919,,"@$"
-? ^$
-|2,1,1664483919,,"^$"
 ?/iframe
 |2,1,1664483042,47,"iframe"
 ?/twitch
@@ -15270,8 +15604,6 @@ $\0
 |2,1,1664393065,47,"click"
 ?/flask_data
 |2,1,1664392289,47,"flask_data"
-?/map
-|2,1,1664391893,47,"map"
 ?/Kong
 |2,1,1664235871,47,"Kong"
 ?/5173
@@ -15724,8 +16056,6 @@ $\0
 |2,1,1663585181,,"\\/film\\/d"
 ? [a-z]\zs[A-Z].*\ze(
 |2,1,1663584511,,"[a-z]\\zs[A-Z].*\\ze("
-? (
-|2,1,1663584437,,"("
 ?/sachit
 |2,1,1663583964,47,"sachit"
 ?/evaluat
@@ -16538,8 +16868,6 @@ $\0
 |2,1,1661866076,47,"goimport"
 ?/g:ale_fix
 |2,1,1661865823,47,"g:ale_fix"
-?/save
-|2,1,1661865805,47,"save"
 ?/write[^-]
 |2,1,1661865789,47,"write[^-]"
 ?/write
@@ -17352,8 +17680,6 @@ $\0
 |2,1,1660676253,,"\\s\\+$"
 ?/\<s:
 |2,1,1660559455,47,"\\<s:"
-?/s:
-|2,1,1660559452,47,"s:"
 ?/Side
 |2,1,1660418324,47,"Side"
 ?/I
@@ -18258,8 +18584,6 @@ $\0
 |2,1,1659734517,,"/"
 ?/exist
 |2,1,1659734219,47,"exist"
-?/call
-|2,1,1659734007,47,"call"
 ?/time_taken
 |2,1,1659733993,47,"time_taken"
 ?/m-;
@@ -21099,8 +21423,6 @@ $\0
 |2,1,1643883068,47,"todo"
 ? <expr> 
 |2,1,1643882427,,"<expr> "
-? map 
-|2,1,1643882363,,"map "
 ? ^\s*[^" ]*map 
 |2,1,1643882290,,"^\\s*[^\" ]*map "
 ? ^\s*[^" ].*map 
@@ -21139,8 +21461,6 @@ $\0
 |2,1,1643839989,47,"defau"
 ?/nginx
 |2,1,1643839983,47,"nginx"
-?/ 
-|2,1,1643839470,47," "
 ?/lite
 |2,1,1643839371,47,"lite"
 ? \C\<Docuements\>
@@ -23907,8 +24227,6 @@ $\0
 |2,1,1629809935,47,"print_er"
 ?/codeblock
 |2,1,1629809376,47,"codeblock"
-?/hover
-|2,1,1629807458,47,"hover"
 ?/button
 |2,1,1629806444,47,"button"
 ?/#fff
@@ -24839,8 +25157,6 @@ $\0
 |2,1,1624620033,47,"\\z"
 ?/\(
 |2,1,1624619519,47,"\\("
-?/\s
-|2,1,1624619516,47,"\\s"
 ? le
 |2,1,1624619376,,"le"
 ? \/
@@ -25049,8 +25365,6 @@ $\0
 |2,1,1624522000,,"au"
 ? a
 |2,1,1624522000,,"a"
-?/silent
-|2,1,1624521962,47,"silent"
 ?/sa
 |2,1,1624521949,47,"sa"
 ?/else
@@ -26867,36 +27181,44 @@ $\0
 |2,4,1578747110,,"echo \"HELLO\""
 
 # Registers:
-""0	CHAR	0
-	filter
-|3,1,0,0,1,0,1664924391,"filter"
+"0	LINE	0
+	        server(debug_hmr=False)
+|3,0,0,1,1,0,1664991396,"        server(debug_hmr=False)"
 "1	LINE	0
-	call filter(, { idx, D -> D})
-|3,0,1,1,1,0,1664924345,"call filter(, { idx, D -> D})"
+	
+|3,0,1,1,1,0,1664990724,""
 "2	LINE	0
-	call map(, { idx, D -> D})
-|3,0,2,1,1,0,1664924323,"call map(, { idx, D -> D})"
+	
+|3,0,2,1,1,0,1664990672,""
 "3	LINE	0
-	call map(, { idx, D -> D})
-|3,0,3,1,1,0,1664924264,"call map(, { idx, D -> D})"
+	def _replace(L, a, b, c: dict[int,str], number=foo(), results=100, *args: Any, **kwargs: Any) -> dict[int,str]:
+	    pass
+|3,0,3,1,2,0,1664990668,"def _replace(L, a, b, c: dict[int,str], number=foo(), results=100, *args: Any, **kwargs: Any) -> dict[int,str]:","    pass"
 "4	LINE	0
-	call map(, { idx, D -> D})
-|3,0,4,1,1,0,1664924254,"call map(, { idx, D -> D})"
+	def _replace(L, a, b, c: dict[int,str], number=foo(), results=100, *args: Any, **kwargs: Any) -> dict[int,str]:
+	    pass
+|3,0,4,1,2,0,1664990667,"def _replace(L, a, b, c: dict[int,str], number=foo(), results=100, *args: Any, **kwargs: Any) -> dict[int,str]:","    pass"
 "5	LINE	0
-	call map(, { idx, D -> D})
-|3,0,5,1,1,0,1664924238,"call map(, { idx, D -> D})"
+	def _replace(L, a, b, c: dict[int,str], number=foo(), results=100, *args: Any, **kwargs: Any) -> dict[int,str]:
+	    pass
+|3,0,5,1,2,0,1664990666,"def _replace(L, a, b, c: dict[int,str], number=foo(), results=100, *args: Any, **kwargs: Any) -> dict[int,str]:","    pass"
 "6	LINE	0
-	call map(, { idx, D -> D})
-|3,0,6,1,1,0,1664924229,"call map(, { idx, D -> D})"
+	def _replace(L, a, b, c: dict[int,str], number=foo(), results=100, *args: Any, **kwargs: Any) -> dict[int,str]:
+	    pass
+|3,0,6,1,2,0,1664990666,"def _replace(L, a, b, c: dict[int,str], number=foo(), results=100, *args: Any, **kwargs: Any) -> dict[int,str]:","    pass"
 "7	LINE	0
-	call map(, { idx, D -> D})
-|3,0,7,1,1,0,1664924217,"call map(, { idx, D -> D})"
+	
+	
+|3,0,7,1,2,0,1664990662,"",""
 "8	LINE	0
-	'call map(, { idx, D -> D})'
-|3,0,8,1,1,0,1664924212,"'call map(, { idx, D -> D})'"
+	
+|3,0,8,1,1,0,1664990641,""
 "9	LINE	0
-	call map(, { idx, D -> D})
-|3,0,9,1,1,0,1664924158,"call map(, { idx, D -> D})"
+	    ic()
+|3,0,9,1,1,0,1664990633,"    ic()"
+"a	CHAR	0
+	:s/<sid>/s:u
+|3,0,10,0,1,0,1664972568,":s/<sid>/s:u"
 "b	LINE	0
 	        cursor, connection = log_db()
 |3,0,11,1,1,0,1657748821,"        cursor, connection = log_db()"
@@ -26939,8 +27261,9 @@ $\0
 	k
 |3,0,26,0,1,0,1618239658,"k"
 "s	LINE	0
-	" Undo Tree: 727
-|3,0,28,1,1,0,1664785855,"\" Undo Tree: 727"
+	remap <SID>
+	map <SID>
+|3,0,28,1,2,0,1664969683,"remap <SID>","map <SID>"
 "v	LINE	0
 	0 - SUNDAY - EXAM
 	1 - MONDAY
@@ -26972,8 +27295,8 @@ $\0
 	id="tna-auto-twitter-cta"
 |3,0,33,1,6,0,1602258057,"id=\"audio-tooltip\"","id=\"jump-to-top\"","id=\"navbar-main\"","id=\"sticky-header\"","id=\"tna-auto-sub-cta\"","id=\"tna-auto-twitter-cta\""
 "-	CHAR	0
-	filter
-|3,0,36,0,1,0,1664924385,"filter"
+	w
+|3,0,36,0,1,0,1664979488,"w"
 
 # File marks:
 'A  217  28  ~\vimfiles\pack\plugins\start\sideways.vim\autoload\sideways\parsing.vim
@@ -26988,355 +27311,1807 @@ $\0
 |4,75,11,0,1664397883,"~\\Desktop\\Twitch\\coffee-vps\\flask-vue\\vuejs\\Chart.vue"
 'M  1564  44  C:\Program Files (x86)\Vim\vim82\doc\quickfix.txt
 |4,77,1564,44,1582635887,"C:\\Program Files (x86)\\Vim\\vim82\\doc\\quickfix.txt"
-'0  1  45  ~\vimfiles\ide.vim
-|4,48,1,45,1664924720,"~\\vimfiles\\ide.vim"
-'1  331  8  ~\Desktop\Twitch\coffee-vps\code\render_chat.py
-|4,49,331,8,1664810625,"~\\Desktop\\Twitch\\coffee-vps\\code\\render_chat.py"
-'2  331  8  ~\Desktop\Twitch\coffee-vps\code\render_chat.py
-|4,50,331,8,1664810625,"~\\Desktop\\Twitch\\coffee-vps\\code\\render_chat.py"
-'3  184  5  ~\vimfiles\plugin\printvar.vim
-|4,51,184,5,1664791809,"~\\vimfiles\\plugin\\printvar.vim"
-'4  118  5  ~\vimfiles\plugin\printvar.vim
-|4,52,118,5,1664791809,"~\\vimfiles\\plugin\\printvar.vim"
-'5  184  5  ~\vimfiles\plugin\printvar.vim
-|4,53,184,5,1664791809,"~\\vimfiles\\plugin\\printvar.vim"
-'6  118  5  ~\vimfiles\plugin\printvar.vim
-|4,54,118,5,1664791809,"~\\vimfiles\\plugin\\printvar.vim"
-'7  2655  1  ~\vimfiles\plugged\coc.nvim\doc\coc.txt
-|4,55,2655,1,1664791763,"~\\vimfiles\\plugged\\coc.nvim\\doc\\coc.txt"
-'8  2655  1  ~\vimfiles\plugged\coc.nvim\doc\coc.txt
-|4,56,2655,1,1664791763,"~\\vimfiles\\plugged\\coc.nvim\\doc\\coc.txt"
-'9  2655  1  ~\vimfiles\plugged\coc.nvim\doc\coc.txt
-|4,57,2655,1,1664791763,"~\\vimfiles\\plugged\\coc.nvim\\doc\\coc.txt"
+'0  13  0  ~\Documents\access_token.txt
+|4,48,13,0,1664991947,"~\\Documents\\access_token.txt"
+'1  13  0  ~\Documents\access_token.txt
+|4,49,13,0,1664991947,"~\\Documents\\access_token.txt"
+'2  1  0  ~\vimfiles\ftplugin\qf.vim
+|4,50,1,0,1664979030,"~\\vimfiles\\ftplugin\\qf.vim"
+'3  2  0  ~\vimfiles\ftplugin\qf.vim
+|4,51,2,0,1664979030,"~\\vimfiles\\ftplugin\\qf.vim"
+'4  1  0  ~\vimfiles\ftplugin\qf.vim
+|4,52,1,0,1664979030,"~\\vimfiles\\ftplugin\\qf.vim"
+'5  2  0  ~\vimfiles\ftplugin\qf.vim
+|4,53,2,0,1664979030,"~\\vimfiles\\ftplugin\\qf.vim"
+'6  1  45  ~\vimfiles\ide.vim
+|4,54,1,45,1664924720,"~\\vimfiles\\ide.vim"
+'7  1  45  ~\vimfiles\ide.vim
+|4,55,1,45,1664924720,"~\\vimfiles\\ide.vim"
+'8  1  45  ~\vimfiles\ide.vim
+|4,56,1,45,1664924720,"~\\vimfiles\\ide.vim"
+'9  1  45  ~\vimfiles\ide.vim
+|4,57,1,45,1664924720,"~\\vimfiles\\ide.vim"
 
 # Jumplist (newest first):
--'  1  45  ~\vimfiles\ide.vim
-|4,39,1,45,1664924720,"~\\vimfiles\\ide.vim"
--'  402  52  ~\vimfiles\ide.vim
-|4,39,402,52,1664924651,"~\\vimfiles\\ide.vim"
--'  2  0  ~\vimfiles\ide.vim
-|4,39,2,0,1664924649,"~\\vimfiles\\ide.vim"
--'  292  0  ~\vimfiles\ide.vim
-|4,39,292,0,1664924647,"~\\vimfiles\\ide.vim"
--'  291  42  ~\vimfiles\ide.vim
-|4,39,291,42,1664924486,"~\\vimfiles\\ide.vim"
--'  281  22  ~\vimfiles\ide.vim
-|4,39,281,22,1664924485,"~\\vimfiles\\ide.vim"
--'  280  36  ~\vimfiles\ide.vim
-|4,39,280,36,1664924485,"~\\vimfiles\\ide.vim"
--'  275  31  ~\vimfiles\ide.vim
-|4,39,275,31,1664924484,"~\\vimfiles\\ide.vim"
--'  185  41  ~\vimfiles\ide.vim
-|4,39,185,41,1664924484,"~\\vimfiles\\ide.vim"
--'  183  8  ~\vimfiles\ide.vim
-|4,39,183,8,1664924484,"~\\vimfiles\\ide.vim"
--'  177  21  ~\vimfiles\ide.vim
-|4,39,177,21,1664924483,"~\\vimfiles\\ide.vim"
--'  14  12  ~\vimfiles\temp\221005.q2b_vim_funccalls.vim
-|4,39,14,12,1664924481,"~\\vimfiles\\temp\\221005.q2b_vim_funccalls.vim"
--'  13  18  ~\vimfiles\temp\221005.q2b_vim_funccalls.vim
-|4,39,13,18,1664924393,"~\\vimfiles\\temp\\221005.q2b_vim_funccalls.vim"
--'  3  0  ~\vimfiles\temp\221005.q2b_vim_funccalls.vim
-|4,39,3,0,1664924147,"~\\vimfiles\\temp\\221005.q2b_vim_funccalls.vim"
--'  4  4  ~\vimfiles\temp\221005.q2b_vim_funccalls.vim
-|4,39,4,4,1664924135,"~\\vimfiles\\temp\\221005.q2b_vim_funccalls.vim"
--'  1  0  ~\vimfiles\temp\221005.q2b_vim_funccalls.vim
-|4,39,1,0,1664924119,"~\\vimfiles\\temp\\221005.q2b_vim_funccalls.vim"
--'  2  17  ~\vimfiles\220922.error_test.vim
-|4,39,2,17,1664923898,"~\\vimfiles\\220922.error_test.vim"
--'  1690  6  ~\vimfiles\autoload\plug.vim
-|4,39,1690,6,1664923772,"~\\vimfiles\\autoload\\plug.vim"
--'  1674  18  ~\vimfiles\autoload\plug.vim
-|4,39,1674,18,1664923763,"~\\vimfiles\\autoload\\plug.vim"
--'  1636  6  ~\vimfiles\autoload\plug.vim
-|4,39,1636,6,1664923761,"~\\vimfiles\\autoload\\plug.vim"
--'  1629  6  ~\vimfiles\autoload\plug.vim
-|4,39,1629,6,1664923761,"~\\vimfiles\\autoload\\plug.vim"
--'  1625  6  ~\vimfiles\autoload\plug.vim
-|4,39,1625,6,1664923760,"~\\vimfiles\\autoload\\plug.vim"
--'  1617  6  ~\vimfiles\autoload\plug.vim
-|4,39,1617,6,1664923759,"~\\vimfiles\\autoload\\plug.vim"
--'  365  57  ~\vimfiles\ide.vim
-|4,39,365,57,1664923757,"~\\vimfiles\\ide.vim"
--'  1  0  ~\vimfiles\vimrc
-|4,39,1,0,1664923657,"~\\vimfiles\\vimrc"
--'  401  0  ~\Desktop\Twitch\coffee-vps\code\render_chat.py
-|4,39,401,0,1664923645,"~\\Desktop\\Twitch\\coffee-vps\\code\\render_chat.py"
--'  400  3  ~\Desktop\Twitch\coffee-vps\code\render_chat.py
-|4,39,400,3,1664923617,"~\\Desktop\\Twitch\\coffee-vps\\code\\render_chat.py"
--'  331  8  ~\Desktop\Twitch\coffee-vps\code\render_chat.py
-|4,39,331,8,1664810625,"~\\Desktop\\Twitch\\coffee-vps\\code\\render_chat.py"
--'  331  8  ~\Desktop\Twitch\coffee-vps\code\render_chat.py
-|4,39,331,8,1664810625,"~\\Desktop\\Twitch\\coffee-vps\\code\\render_chat.py"
--'  328  5  ~\Desktop\Twitch\coffee-vps\code\render_chat.py
-|4,39,328,5,1664809107,"~\\Desktop\\Twitch\\coffee-vps\\code\\render_chat.py"
--'  328  5  ~\Desktop\Twitch\coffee-vps\code\render_chat.py
-|4,39,328,5,1664809107,"~\\Desktop\\Twitch\\coffee-vps\\code\\render_chat.py"
--'  327  6  ~\Desktop\Twitch\coffee-vps\code\render_chat.py
-|4,39,327,6,1664809088,"~\\Desktop\\Twitch\\coffee-vps\\code\\render_chat.py"
--'  327  6  ~\Desktop\Twitch\coffee-vps\code\render_chat.py
-|4,39,327,6,1664809088,"~\\Desktop\\Twitch\\coffee-vps\\code\\render_chat.py"
--'  400  4  ~\Desktop\Twitch\coffee-vps\code\render_chat.py
-|4,39,400,4,1664809044,"~\\Desktop\\Twitch\\coffee-vps\\code\\render_chat.py"
--'  21  11  ~\Documents\Python\blank.py
-|4,39,21,11,1664808911,"~\\Documents\\Python\\blank.py"
--'  21  11  ~\Documents\Python\blank.py
-|4,39,21,11,1664808911,"~\\Documents\\Python\\blank.py"
--'  4  0  ~\Documents\Python\blank.py
-|4,39,4,0,1664808660,"~\\Documents\\Python\\blank.py"
--'  4  0  ~\Documents\Python\blank.py
-|4,39,4,0,1664808660,"~\\Documents\\Python\\blank.py"
--'  6  0  ~\Documents\Python\blank.py
-|4,39,6,0,1664808588,"~\\Documents\\Python\\blank.py"
--'  6  0  ~\Documents\Python\blank.py
-|4,39,6,0,1664808588,"~\\Documents\\Python\\blank.py"
--'  28  5  ~\Documents\Python\blank.py
-|4,39,28,5,1664808531,"~\\Documents\\Python\\blank.py"
--'  28  5  ~\Documents\Python\blank.py
-|4,39,28,5,1664808531,"~\\Documents\\Python\\blank.py"
--'  1  0  ~\Documents\Python\blank.py
-|4,39,1,0,1664807999,"~\\Documents\\Python\\blank.py"
--'  1  0  ~\Documents\Python\blank.py
-|4,39,1,0,1664807999,"~\\Documents\\Python\\blank.py"
+-'  13  0  ~\Documents\access_token.txt
+|4,39,13,0,1664991947,"~\\Documents\\access_token.txt"
+-'  13  0  ~\Documents\access_token.txt
+|4,39,13,0,1664991947,"~\\Documents\\access_token.txt"
+-'  1  0  ~\Documents\access_token.txt
+|4,39,1,0,1664991720,"~\\Documents\\access_token.txt"
+-'  1  0  ~\Documents\access_token.txt
+|4,39,1,0,1664991720,"~\\Documents\\access_token.txt"
+-'  1005  8  ~\Desktop\backup\backup-flask\backup.py
+|4,39,1005,8,1664991719,"~\\Desktop\\backup\\backup-flask\\backup.py"
+-'  1005  8  ~\Desktop\backup\backup-flask\backup.py
+|4,39,1005,8,1664991719,"~\\Desktop\\backup\\backup-flask\\backup.py"
+-'  1  0  ~\Desktop\backup\backup-flask\backup.py
+|4,39,1,0,1664991234,"~\\Desktop\\backup\\backup-flask\\backup.py"
+-'  32  0  ~\Documents\Python\blank.py
+|4,39,32,0,1664991234,"~\\Documents\\Python\\blank.py"
+-'  1  0  ~\Desktop\backup\backup-flask\backup.py
+|4,39,1,0,1664991234,"~\\Desktop\\backup\\backup-flask\\backup.py"
+-'  32  0  ~\Documents\Python\blank.py
+|4,39,32,0,1664991234,"~\\Documents\\Python\\blank.py"
+-'  26  0  ~\Documents\Python\blank.py
+|4,39,26,0,1664990739,"~\\Documents\\Python\\blank.py"
+-'  23  0  ~\Documents\Python\blank.py
+|4,39,23,0,1664990739,"~\\Documents\\Python\\blank.py"
+-'  20  0  ~\Documents\Python\blank.py
+|4,39,20,0,1664990739,"~\\Documents\\Python\\blank.py"
+-'  17  0  ~\Documents\Python\blank.py
+|4,39,17,0,1664990739,"~\\Documents\\Python\\blank.py"
+-'  14  0  ~\Documents\Python\blank.py
+|4,39,14,0,1664990739,"~\\Documents\\Python\\blank.py"
 -'  10  0  ~\Documents\Python\blank.py
-|4,39,10,0,1664807524,"~\\Documents\\Python\\blank.py"
+|4,39,10,0,1664990739,"~\\Documents\\Python\\blank.py"
+-'  7  0  ~\Documents\Python\blank.py
+|4,39,7,0,1664990739,"~\\Documents\\Python\\blank.py"
+-'  1  0  ~\Documents\Python\blank.py
+|4,39,1,0,1664990739,"~\\Documents\\Python\\blank.py"
+-'  26  0  ~\Documents\Python\blank.py
+|4,39,26,0,1664990739,"~\\Documents\\Python\\blank.py"
+-'  23  0  ~\Documents\Python\blank.py
+|4,39,23,0,1664990739,"~\\Documents\\Python\\blank.py"
+-'  20  0  ~\Documents\Python\blank.py
+|4,39,20,0,1664990739,"~\\Documents\\Python\\blank.py"
+-'  17  0  ~\Documents\Python\blank.py
+|4,39,17,0,1664990739,"~\\Documents\\Python\\blank.py"
+-'  14  0  ~\Documents\Python\blank.py
+|4,39,14,0,1664990739,"~\\Documents\\Python\\blank.py"
 -'  10  0  ~\Documents\Python\blank.py
-|4,39,10,0,1664807524,"~\\Documents\\Python\\blank.py"
--'  19  0  ~\Documents\Python\blank.py
-|4,39,19,0,1664806666,"~\\Documents\\Python\\blank.py"
--'  19  0  ~\Documents\Python\blank.py
-|4,39,19,0,1664806666,"~\\Documents\\Python\\blank.py"
--'  30  0  ~\Documents\Python\blank.py
-|4,39,30,0,1664795754,"~\\Documents\\Python\\blank.py"
--'  30  0  ~\Documents\Python\blank.py
-|4,39,30,0,1664795754,"~\\Documents\\Python\\blank.py"
--'  29  10  ~\Documents\Python\blank.py
-|4,39,29,10,1664795752,"~\\Documents\\Python\\blank.py"
--'  29  10  ~\Documents\Python\blank.py
-|4,39,29,10,1664795752,"~\\Documents\\Python\\blank.py"
--'  24  11  ~\Documents\Python\blank.py
-|4,39,24,11,1664795745,"~\\Documents\\Python\\blank.py"
--'  23  24  ~\Documents\Python\blank.py
-|4,39,23,24,1664795745,"~\\Documents\\Python\\blank.py"
--'  24  11  ~\Documents\Python\blank.py
-|4,39,24,11,1664795745,"~\\Documents\\Python\\blank.py"
--'  23  24  ~\Documents\Python\blank.py
-|4,39,23,24,1664795745,"~\\Documents\\Python\\blank.py"
--'  20  34  ~\Documents\Python\blank.py
-|4,39,20,34,1664795736,"~\\Documents\\Python\\blank.py"
--'  20  34  ~\Documents\Python\blank.py
-|4,39,20,34,1664795736,"~\\Documents\\Python\\blank.py"
--'  18  11  ~\Documents\Python\blank.py
-|4,39,18,11,1664795734,"~\\Documents\\Python\\blank.py"
--'  17  26  ~\Documents\Python\blank.py
-|4,39,17,26,1664795734,"~\\Documents\\Python\\blank.py"
--'  18  11  ~\Documents\Python\blank.py
-|4,39,18,11,1664795734,"~\\Documents\\Python\\blank.py"
--'  17  26  ~\Documents\Python\blank.py
-|4,39,17,26,1664795734,"~\\Documents\\Python\\blank.py"
--'  11  24  ~\Documents\Python\blank.py
-|4,39,11,24,1664795731,"~\\Documents\\Python\\blank.py"
--'  11  24  ~\Documents\Python\blank.py
-|4,39,11,24,1664795731,"~\\Documents\\Python\\blank.py"
--'  5  0  ~\Documents\Python\blank.py
-|4,39,5,0,1664795715,"~\\Documents\\Python\\blank.py"
--'  5  0  ~\Documents\Python\blank.py
-|4,39,5,0,1664795715,"~\\Documents\\Python\\blank.py"
+|4,39,10,0,1664990739,"~\\Documents\\Python\\blank.py"
+-'  7  0  ~\Documents\Python\blank.py
+|4,39,7,0,1664990739,"~\\Documents\\Python\\blank.py"
+-'  1  0  ~\Documents\Python\blank.py
+|4,39,1,0,1664990739,"~\\Documents\\Python\\blank.py"
+-'  2  0  ~\vimfiles\ftplugin\qf.vim
+|4,39,2,0,1664979030,"~\\vimfiles\\ftplugin\\qf.vim"
+-'  2  0  ~\vimfiles\ftplugin\qf.vim
+|4,39,2,0,1664979030,"~\\vimfiles\\ftplugin\\qf.vim"
+-'  1  26  ~\vimfiles\ftplugin\qf.vim
+|4,39,1,26,1664979008,"~\\vimfiles\\ftplugin\\qf.vim"
+-'  1  26  ~\vimfiles\ftplugin\qf.vim
+|4,39,1,26,1664979008,"~\\vimfiles\\ftplugin\\qf.vim"
+-'  17  0  C:\Program Files\Vim\vim90\ftplugin\qf.vim
+|4,39,17,0,1664978869,"C:\\Program Files\\Vim\\vim90\\ftplugin\\qf.vim"
+-'  17  0  C:\Program Files\Vim\vim90\ftplugin\qf.vim
+|4,39,17,0,1664978869,"C:\\Program Files\\Vim\\vim90\\ftplugin\\qf.vim"
+-'  1  0  C:\Program Files\Vim\vim90\ftplugin\qf.vim
+|4,39,1,0,1664978852,"C:\\Program Files\\Vim\\vim90\\ftplugin\\qf.vim"
+-'  1  0  C:\Program Files\Vim\vim90\ftplugin\qf.vim
+|4,39,1,0,1664978852,"C:\\Program Files\\Vim\\vim90\\ftplugin\\qf.vim"
+-'  10  0  ~\Documents\Python\blank.py
+|4,39,10,0,1664978849,"~\\Documents\\Python\\blank.py"
+-'  1071  0  ~\vimfiles\temp\221005.black.py
+|4,39,1071,0,1664978779,"~\\vimfiles\\temp\\221005.black.py"
+-'  1071  0  ~\vimfiles\temp\221005.black.py
+|4,39,1071,0,1664978779,"~\\vimfiles\\temp\\221005.black.py"
+-'  1  0  ~\Desktop\Twitch\coffee-vps\code\render_chat.py
+|4,39,1,0,1664978776,"~\\Desktop\\Twitch\\coffee-vps\\code\\render_chat.py"
+-'  1  0  ~\Desktop\Twitch\coffee-vps\code\render_chat.py
+|4,39,1,0,1664978776,"~\\Desktop\\Twitch\\coffee-vps\\code\\render_chat.py"
+-'  937  4  ~\Desktop\Twitch\coffee-vps\code\render_chat.py
+|4,39,937,4,1664978774,"~\\Desktop\\Twitch\\coffee-vps\\code\\render_chat.py"
+-'  937  4  ~\Desktop\Twitch\coffee-vps\code\render_chat.py
+|4,39,937,4,1664978774,"~\\Desktop\\Twitch\\coffee-vps\\code\\render_chat.py"
+-'  9  0  ~\Desktop\Twitch\coffee-vps\code\render_chat.py
+|4,39,9,0,1664976695,"~\\Desktop\\Twitch\\coffee-vps\\code\\render_chat.py"
+-'  9  0  ~\Desktop\Twitch\coffee-vps\code\render_chat.py
+|4,39,9,0,1664976695,"~\\Desktop\\Twitch\\coffee-vps\\code\\render_chat.py"
+-'  1  0  ~\vimfiles\temp\221005.black.py
+|4,39,1,0,1664976692,"~\\vimfiles\\temp\\221005.black.py"
+-'  1  0  ~\vimfiles\temp\221005.black.py
+|4,39,1,0,1664976692,"~\\vimfiles\\temp\\221005.black.py"
+-'  292  4  ~\vimfiles\temp\221005.black.py
+|4,39,292,4,1664976685,"~\\vimfiles\\temp\\221005.black.py"
+-'  292  4  ~\vimfiles\temp\221005.black.py
+|4,39,292,4,1664976685,"~\\vimfiles\\temp\\221005.black.py"
+-'  29  0  ~\Documents\Python\blank.py
+|4,39,29,0,1664976609,"~\\Documents\\Python\\blank.py"
+-'  29  0  ~\Documents\Python\blank.py
+|4,39,29,0,1664976609,"~\\Documents\\Python\\blank.py"
+-'  8  0  ~\Documents\Python\blank.py
+|4,39,8,0,1664975281,"~\\Documents\\Python\\blank.py"
+-'  8  0  ~\Documents\Python\blank.py
+|4,39,8,0,1664975281,"~\\Documents\\Python\\blank.py"
 -'  31  0  ~\Documents\Python\blank.py
-|4,39,31,0,1664795694,"~\\Documents\\Python\\blank.py"
+|4,39,31,0,1664975280,"~\\Documents\\Python\\blank.py"
 -'  31  0  ~\Documents\Python\blank.py
-|4,39,31,0,1664795694,"~\\Documents\\Python\\blank.py"
--'  26  17  ~\vimfiles\plugin\printvar.vim
-|4,39,26,17,1664795504,"~\\vimfiles\\plugin\\printvar.vim"
--'  26  17  ~\vimfiles\plugin\printvar.vim
-|4,39,26,17,1664795504,"~\\vimfiles\\plugin\\printvar.vim"
--'  7  17  ~\vimfiles\plugin\printvar.vim
-|4,39,7,17,1664795349,"~\\vimfiles\\plugin\\printvar.vim"
--'  6  27  ~\vimfiles\plugin\printvar.vim
-|4,39,6,27,1664795349,"~\\vimfiles\\plugin\\printvar.vim"
--'  7  17  ~\vimfiles\plugin\printvar.vim
-|4,39,7,17,1664795349,"~\\vimfiles\\plugin\\printvar.vim"
--'  6  27  ~\vimfiles\plugin\printvar.vim
-|4,39,6,27,1664795349,"~\\vimfiles\\plugin\\printvar.vim"
--'  9  17  ~\vimfiles\plugin\printvar.vim
-|4,39,9,17,1664795330,"~\\vimfiles\\plugin\\printvar.vim"
--'  9  17  ~\vimfiles\plugin\printvar.vim
-|4,39,9,17,1664795330,"~\\vimfiles\\plugin\\printvar.vim"
--'  65  0  ~\vimfiles\plugin\printvar.vim
-|4,39,65,0,1664795304,"~\\vimfiles\\plugin\\printvar.vim"
--'  65  0  ~\vimfiles\plugin\printvar.vim
-|4,39,65,0,1664795304,"~\\vimfiles\\plugin\\printvar.vim"
--'  3  83  ~\vimfiles\todo\221003.txt
-|4,39,3,83,1664795267,"~\\vimfiles\\todo\\221003.txt"
--'  3  83  ~\vimfiles\todo\221003.txt
-|4,39,3,83,1664795267,"~\\vimfiles\\todo\\221003.txt"
--'  44  30  ~\vimfiles\plugin\printvar.vim
-|4,39,44,30,1664795252,"~\\vimfiles\\plugin\\printvar.vim"
--'  44  30  ~\vimfiles\plugin\printvar.vim
-|4,39,44,30,1664795252,"~\\vimfiles\\plugin\\printvar.vim"
--'  39  30  ~\vimfiles\plugin\printvar.vim
-|4,39,39,30,1664795215,"~\\vimfiles\\plugin\\printvar.vim"
--'  40  30  ~\vimfiles\plugin\printvar.vim
-|4,39,40,30,1664795215,"~\\vimfiles\\plugin\\printvar.vim"
--'  39  30  ~\vimfiles\plugin\printvar.vim
-|4,39,39,30,1664795215,"~\\vimfiles\\plugin\\printvar.vim"
--'  40  30  ~\vimfiles\plugin\printvar.vim
-|4,39,40,30,1664795215,"~\\vimfiles\\plugin\\printvar.vim"
--'  16  0  ~\Documents\Python\blank.py
-|4,39,16,0,1664795112,"~\\Documents\\Python\\blank.py"
--'  16  0  ~\Documents\Python\blank.py
-|4,39,16,0,1664795112,"~\\Documents\\Python\\blank.py"
--'  1  0  ~\temp\221003.py
-|4,39,1,0,1664794906,"~\\temp\\221003.py"
--'  1  0  ~\temp\221003.py
-|4,39,1,0,1664794906,"~\\temp\\221003.py"
--'  3  16  ~\vimfiles\plugin\printvar.vim
-|4,39,3,16,1664794844,"~\\vimfiles\\plugin\\printvar.vim"
--'  3  16  ~\vimfiles\plugin\printvar.vim
-|4,39,3,16,1664794844,"~\\vimfiles\\plugin\\printvar.vim"
--'  1  0  ~\vimfiles\temp\vardump.py
-|4,39,1,0,1664794833,"~\\vimfiles\\temp\\vardump.py"
--'  1  0  ~\vimfiles\temp\vardump.py
-|4,39,1,0,1664794833,"~\\vimfiles\\temp\\vardump.py"
--'  190  4  ~\Desktop\Twitch\coffee-vps\code\render_chat.py
-|4,39,190,4,1664794808,"~\\Desktop\\Twitch\\coffee-vps\\code\\render_chat.py"
--'  190  4  ~\Desktop\Twitch\coffee-vps\code\render_chat.py
-|4,39,190,4,1664794808,"~\\Desktop\\Twitch\\coffee-vps\\code\\render_chat.py"
--'  191  8  ~\Desktop\Twitch\coffee-vps\code\render_chat.py
-|4,39,191,8,1664794762,"~\\Desktop\\Twitch\\coffee-vps\\code\\render_chat.py"
--'  191  8  ~\Desktop\Twitch\coffee-vps\code\render_chat.py
-|4,39,191,8,1664794762,"~\\Desktop\\Twitch\\coffee-vps\\code\\render_chat.py"
--'  175  15  ~\Desktop\Twitch\coffee-vps\code\render_chat.py
-|4,39,175,15,1664794718,"~\\Desktop\\Twitch\\coffee-vps\\code\\render_chat.py"
+|4,39,31,0,1664975280,"~\\Documents\\Python\\blank.py"
+-'  32  2  ~\Documents\Python\blank.py
+|4,39,32,2,1664975280,"~\\Documents\\Python\\blank.py"
+-'  9  0  ~\Documents\Python\blank.py
+|4,39,9,0,1664975278,"~\\Documents\\Python\\blank.py"
+-'  9  0  ~\Documents\Python\blank.py
+|4,39,9,0,1664975278,"~\\Documents\\Python\\blank.py"
+-'  5  16  ~\Documents\Python\blank.py
+|4,39,5,16,1664975273,"~\\Documents\\Python\\blank.py"
+-'  5  16  ~\Documents\Python\blank.py
+|4,39,5,16,1664975273,"~\\Documents\\Python\\blank.py"
+-'  1  0  ~\temp\221005.py
+|4,39,1,0,1664975262,"~\\temp\\221005.py"
+-'  1  0  ~\Documents\Python\blank.py
+|4,39,1,0,1664975262,"~\\Documents\\Python\\blank.py"
+-'  1  0  ~\temp\221005.py
+|4,39,1,0,1664975262,"~\\temp\\221005.py"
+-'  5  0  ~\vimfiles\blank.vim
+|4,39,5,0,1664975253,"~\\vimfiles\\blank.vim"
+-'  5  0  ~\vimfiles\blank.vim
+|4,39,5,0,1664975253,"~\\vimfiles\\blank.vim"
+-'  6  0  ~\vimfiles\blank.vim
+|4,39,6,0,1664975194,"~\\vimfiles\\blank.vim"
+-'  6  0  ~\vimfiles\blank.vim
+|4,39,6,0,1664975194,"~\\vimfiles\\blank.vim"
+-'  4  7  ~\vimfiles\blank.vim
+|4,39,4,7,1664975174,"~\\vimfiles\\blank.vim"
+-'  3  7  ~\vimfiles\blank.vim
+|4,39,3,7,1664975174,"~\\vimfiles\\blank.vim"
+-'  4  7  ~\vimfiles\blank.vim
+|4,39,4,7,1664975174,"~\\vimfiles\\blank.vim"
+-'  3  7  ~\vimfiles\blank.vim
+|4,39,3,7,1664975174,"~\\vimfiles\\blank.vim"
+-'  2  0  ~\vimfiles\blank.vim
+|4,39,2,0,1664975023,"~\\vimfiles\\blank.vim"
+-'  2  0  ~\vimfiles\blank.vim
+|4,39,2,0,1664975023,"~\\vimfiles\\blank.vim"
+-'  3  0  ~\Documents\Python\blank.py
+|4,39,3,0,1664974761,"~\\Documents\\Python\\blank.py"
+-'  3  0  ~\Documents\Python\blank.py
+|4,39,3,0,1664974761,"~\\Documents\\Python\\blank.py"
+-'  330  4  ~\vimfiles\plugin\better.vim
+|4,39,330,4,1664974754,"~\\vimfiles\\plugin\\better.vim"
+-'  330  4  ~\vimfiles\plugin\better.vim
+|4,39,330,4,1664974754,"~\\vimfiles\\plugin\\better.vim"
+-'  1042  6  ~\vimfiles\autoload\plug.vim
+|4,39,1042,6,1664974704,"~\\vimfiles\\autoload\\plug.vim"
+-'  1042  6  ~\vimfiles\autoload\plug.vim
+|4,39,1042,6,1664974704,"~\\vimfiles\\autoload\\plug.vim"
+-'  353  4  ~\vimfiles\plugin\better.vim
+|4,39,353,4,1664974703,"~\\vimfiles\\plugin\\better.vim"
+-'  353  4  ~\vimfiles\plugin\better.vim
+|4,39,353,4,1664974703,"~\\vimfiles\\plugin\\better.vim"
+-'  908  4  ~\vimfiles\autoload\plug.vim
+|4,39,908,4,1664972750,"~\\vimfiles\\autoload\\plug.vim"
+-'  908  4  ~\vimfiles\autoload\plug.vim
+|4,39,908,4,1664972750,"~\\vimfiles\\autoload\\plug.vim"
+-'  907  4  ~\vimfiles\autoload\plug.vim
+|4,39,907,4,1664972749,"~\\vimfiles\\autoload\\plug.vim"
+-'  887  4  ~\vimfiles\autoload\plug.vim
+|4,39,887,4,1664972749,"~\\vimfiles\\autoload\\plug.vim"
+-'  800  14  ~\vimfiles\autoload\plug.vim
+|4,39,800,14,1664972749,"~\\vimfiles\\autoload\\plug.vim"
+-'  907  4  ~\vimfiles\autoload\plug.vim
+|4,39,907,4,1664972749,"~\\vimfiles\\autoload\\plug.vim"
+-'  887  4  ~\vimfiles\autoload\plug.vim
+|4,39,887,4,1664972749,"~\\vimfiles\\autoload\\plug.vim"
+-'  800  14  ~\vimfiles\autoload\plug.vim
+|4,39,800,14,1664972749,"~\\vimfiles\\autoload\\plug.vim"
+-'  585  4  ~\vimfiles\autoload\plug.vim
+|4,39,585,4,1664972748,"~\\vimfiles\\autoload\\plug.vim"
+-'  585  4  ~\vimfiles\autoload\plug.vim
+|4,39,585,4,1664972748,"~\\vimfiles\\autoload\\plug.vim"
+-'  584  4  ~\vimfiles\autoload\plug.vim
+|4,39,584,4,1664972747,"~\\vimfiles\\autoload\\plug.vim"
+-'  584  4  ~\vimfiles\autoload\plug.vim
+|4,39,584,4,1664972747,"~\\vimfiles\\autoload\\plug.vim"
+-'  565  4  ~\vimfiles\autoload\plug.vim
+|4,39,565,4,1664972746,"~\\vimfiles\\autoload\\plug.vim"
+-'  564  4  ~\vimfiles\autoload\plug.vim
+|4,39,564,4,1664972746,"~\\vimfiles\\autoload\\plug.vim"
+-'  565  4  ~\vimfiles\autoload\plug.vim
+|4,39,565,4,1664972746,"~\\vimfiles\\autoload\\plug.vim"
+-'  564  4  ~\vimfiles\autoload\plug.vim
+|4,39,564,4,1664972746,"~\\vimfiles\\autoload\\plug.vim"
+-'  557  6  ~\vimfiles\autoload\plug.vim
+|4,39,557,6,1664972745,"~\\vimfiles\\autoload\\plug.vim"
+-'  557  6  ~\vimfiles\autoload\plug.vim
+|4,39,557,6,1664972745,"~\\vimfiles\\autoload\\plug.vim"
+-'  554  4  ~\vimfiles\autoload\plug.vim
+|4,39,554,4,1664972744,"~\\vimfiles\\autoload\\plug.vim"
+-'  554  4  ~\vimfiles\autoload\plug.vim
+|4,39,554,4,1664972744,"~\\vimfiles\\autoload\\plug.vim"
 
 # Buffer list:
-%~\Desktop\Twitch\coffee-vps\code\render_chat.py	401	0
-%~\vimfiles\vimrc	1	0
-%~\vimfiles\220922.error_test.vim	2	17
-%~\vimfiles\ide.vim	1	45
-%~\vimfiles\autoload\plug.vim	1690	6
-%~\vimfiles\temp\221005.q2b_vim_funccalls.vim	14	12
+%~\Documents\Python\blank.py	32	0
+%~\vimfiles\ftplugin\qf.vim	1	0
+%~\Desktop\backup\backup-flask\backup.py	1005	8
+%~\Documents\access_token.txt	13	0
 
 # History of marks within files (newest to oldest):
 
-> ~\vimfiles\ide.vim
-	*	1664924716	0
-	"	1	45
-	^	1	46
-	.	1	45
-	+	316	0
-	+	309	0
-	+	310	0
-	+	252	1
-	+	253	0
-	+	252	2
+> ~\Documents\access_token.txt
+	*	1664991943	0
+	"	13	0
+	^	13	0
+	.	13	0
+	+	3	0
+	+	1	6
+	+	9	39
+	+	2	0
+	+	8	4
+	+	13	0
+
+> ~\Desktop\backup\backup-flask\backup.py
+	*	1664991715	0
+	"	1005	8
+	.	154	0
+	+	1011	0
+	+	152	0
+	+	208	0
+	+	35	0
+	+	208	0
+	+	35	16
+	+	35	0
+	+	936	0
+	+	931	0
+	+	829	0
+	+	830	0
+	+	829	38
+	+	854	0
+	+	854	18
+	+	829	18
+	+	837	0
+	+	837	20
+	+	829	20
+	+	837	29
+	+	843	0
+	+	843	41
+	+	848	0
+	+	848	36
+	+	850	0
+	+	850	35
+	+	851	28
+	+	854	0
+	+	854	60
+	+	840	0
+	+	839	12
+	+	839	13
+	+	839	12
+	+	839	18
+	+	839	13
+	+	840	0
+	+	839	34
+	+	839	40
+	+	838	0
+	+	839	31
+	+	839	24
+	+	854	59
+	+	229	0
+	+	829	0
+	+	35	0
+	+	387	0
+	+	350	17
+	+	445	0
+	+	448	0
+	+	462	0
+	+	618	0
+	+	858	0
+	+	862	0
+	+	866	0
+	+	909	0
+	+	910	0
+	+	973	66
+	+	969	0
+	+	972	0
+	+	970	104
+	+	588	0
+	+	588	3
+	+	588	0
+	+	588	32
+	+	588	19
+	+	588	48
+	+	588	0
+	+	588	41
+	+	588	0
+	+	588	43
+	+	588	39
+	+	106	0
+	+	109	0
+	+	588	0
+	+	588	25
+	+	588	9
+	+	576	0
+	+	588	0
+	+	576	0
+	+	973	0
+	+	970	0
+	+	969	66
+	+	970	42
+	+	969	28
+	+	970	29
+	+	969	69
+	+	970	58
+	+	969	77
+	+	970	77
+	+	969	0
+	+	1001	31
+	+	1004	36
+	+	1007	36
+	+	660	21
+	+	659	22
+	+	660	28
+	+	661	0
+	+	662	0
+	+	663	28
+	+	663	0
+	+	154	0
+	a	871	19
+	b	871	21
+
+> C:\Program Files\Vim\vim90\doc\options.txt
+	*	1664991392	0
+	"	7589	1
+
+> ~\Documents\Python\blank.py
+	*	1664991233	0
+	"	32	0
+	^	32	0
+	.	32	0
+	+	32	0
+	+	32	1
+	+	32	0
+	+	32	3
+	+	32	0
+	+	32	4
+	+	32	0
+	+	3	0
+	+	32	0
+	+	32	36
+	+	32	66
+	+	32	37
+	+	31	27
+	+	32	0
+	+	31	16
+	+	32	0
+	+	31	0
+	+	32	71
+	+	32	0
+	+	32	66
+	+	32	71
+	+	32	0
+	+	32	71
+	+	32	0
+	+	28	0
+	+	7	0
+	+	32	0
+	+	12	14
+	+	13	7
+	+	14	0
+	+	31	0
+	+	25	7
+	+	24	0
+	+	18	3
+	+	20	0
+	+	21	0
+	+	23	0
+	+	22	12
+	+	15	0
+	+	17	0
+	+	11	0
+	+	11	7
+	+	11	77
+	+	32	0
+	+	5	21
+	+	15	13
+	+	11	0
+	+	12	0
+	+	18	26
+	+	21	34
+	+	11	8
+	+	24	24
+	+	31	10
+	+	32	0
+	+	11	0
+	+	30	5
+	+	32	0
+	+	6	16
+	+	32	0
+	+	11	0
+	+	10	0
+	+	32	0
+	+	10	0
+	+	11	0
+	+	14	0
+	+	13	0
+	+	10	0
+	+	11	0
+	+	14	0
+	+	13	0
+	+	10	0
+	+	10	15
+	+	10	0
+	+	14	0
+	+	13	0
+	+	11	0
+	+	10	0
+	+	8	0
+	+	3	0
+	+	1	0
+	+	26	0
+	+	32	0
+
+> ~\vimfiles\after\ftplugin\qf.vim
+	*	1664990198	0
+	"	11	0
+	^	11	20
+	.	11	21
+	+	9	18
+	+	1	9
+	+	11	0
+	+	8	10
+	+	11	44
+	+	4	61
+	+	11	30
+	+	2	10
+	+	3	6
+	+	4	11
+	+	3	7
+	+	4	0
+	+	5	0
+	+	6	0
+	+	7	0
+	+	4	36
+	+	6	15
+	+	11	0
+	+	10	19
+	+	11	29
+	+	10	20
+	+	11	21
+
+> ~\vimfiles\ftplugin\qf.vim
+	*	1664990197	0
+	"	1	0
+	.	1	0
+	+	1	0
+	+	1	95
+	+	1	0
+
+> ~\vimfiles\plugin\statusline.vim
+	*	1664979331	0
+	"	124	21
+	^	212	42
+	.	212	41
+	+	82	0
+	+	83	0
+	+	82	16
+	+	116	8
+	+	80	25
+	+	80	35
+	+	80	26
+	+	80	44
+	+	82	0
+	+	81	13
+	+	80	0
+	+	84	48
+	+	118	59
+	+	118	19
+	+	118	12
+	+	118	45
+	+	118	24
+	+	118	9
+	+	118	0
+	+	86	0
+	+	85	0
+	+	115	0
+	+	113	36
+	+	112	0
+	+	114	14
+	+	112	15
+	+	114	15
+	+	111	35
+	+	105	30
+	+	107	0
+	+	102	47
+	+	107	51
+	+	111	1
+	+	112	16
+	+	113	1
+	+	114	1
+	+	112	0
+	+	114	2
+	+	108	39
+	+	109	22
+	+	110	8
+	+	121	3
+	+	111	0
+	+	106	37
+	+	104	41
+	+	95	32
+	+	88	14
+	+	91	51
+	+	92	37
+	+	95	24
+	+	102	41
+	+	89	59
+	+	90	57
+	+	93	20
+	+	98	0
+	+	102	0
+	+	100	25
+	+	99	14
+	+	101	35
+	+	99	22
+	+	102	23
+	+	103	40
+	+	76	0
+	+	75	8
+	+	76	0
+	+	89	0
+	+	166	43
+	+	70	8
+	+	71	8
+	+	72	8
+	+	70	8
+	+	71	8
+	+	72	8
+	+	74	12
+	+	78	8
+	+	80	12
+	+	83	12
+	+	84	12
+	+	86	12
+	+	70	0
+	+	121	1
+	+	55	0
+	+	54	10
+	+	50	24
+	+	52	32
+	+	53	19
+	+	81	30
+	+	109	15
+	+	81	15
+	+	109	15
+	+	81	15
+	+	109	15
+	+	293	5
 	+	293	0
-	+	250	0
-	+	242	87
-	+	250	0
-	+	252	0
-	+	250	0
-	+	251	0
-	+	242	95
-	+	250	8
-	+	242	87
-	+	246	4
-	+	245	0
-	+	250	5
-	+	250	0
-	+	244	0
-	+	245	0
-	+	250	5
-	+	252	0
-	+	250	0
-	+	245	0
-	+	243	0
-	+	250	0
-	+	243	0
-	+	245	0
-	+	243	0
-	+	243	10
-	+	243	0
-	+	350	0
-	+	345	0
-	+	351	0
-	+	344	0
-	+	340	0
-	+	346	0
-	+	371	0
-	+	372	35
-	+	350	77
-	+	372	36
-	+	350	36
-	+	349	62
-	+	371	0
-	+	361	10
-	+	359	26
-	+	356	10
-	+	355	14
-	+	359	52
-	+	360	16
-	+	354	26
-	+	360	12
-	+	355	12
-	+	355	23
-	+	360	16
-	+	355	14
-	+	355	5
-	+	360	12
-	+	355	0
-	+	355	4
-	+	355	26
-	+	355	20
-	+	359	22
-	+	358	11
-	+	336	0
-	+	368	0
-	+	370	0
-	+	369	14
-	+	369	0
-	+	370	0
-	+	355	0
-	+	352	0
+	+	293	5
+	+	293	0
+	+	292	0
+	+	212	41
+	a	181	16
+	b	181	16
+
+> C:\Program Files\Vim\vim90\ftplugin\qf.vim
+	*	1664978857	0
+	"	17	0
+
+> ~\vimfiles\temp\221005.black.py
+	*	1664978779	0
+	"	1071	0
+	.	1	0
+	+	1	0
+
+> ~\Desktop\Twitch\coffee-vps\code\render_chat.py
+	*	1664978774	0
+	"	1	0
+	.	1	0
+	+	956	0
+	+	957	0
+	+	950	0
+	+	938	0
+	+	1013	0
+	+	1022	0
+	+	1040	0
+	+	1207	0
+	+	1196	0
+	+	1040	0
+	+	778	0
+	+	764	0
+	+	754	0
+	+	753	0
+	+	766	0
+	+	771	0
+	+	770	0
+	+	768	0
+	+	754	0
+	+	742	0
+	+	733	0
+	+	713	0
+	+	9	0
+	+	207	0
+	+	162	0
+	+	156	0
+	+	162	0
+	+	170	0
+	+	177	0
+	+	167	0
+	+	163	0
+	+	164	0
+	+	168	0
+	+	170	0
+	+	181	7
+	+	170	7
+	+	181	0
+	+	170	0
+	+	163	0
+	+	884	0
+	+	886	0
+	+	885	11
+	+	1147	0
+	+	37	0
+	+	1207	0
+	+	501	0
+	+	502	0
+	+	89	0
+	+	90	0
+	+	76	0
+	+	502	0
+	+	199	0
+	+	502	0
+	+	456	0
+	+	124	0
+	+	402	0
+	+	9	0
+	+	502	0
+	+	503	0
+	+	502	0
+	+	473	0
+	+	402	0
+	+	401	0
+	+	929	0
+	+	401	0
+	+	401	24
+	+	401	0
+	+	401	4
+	+	401	0
+	+	360	0
+	+	359	0
 	+	354	0
-	+	356	0
-	+	366	0
-	+	365	55
-	+	369	1
-	+	365	69
-	+	359	22
-	+	365	13
-	+	284	60
-	+	282	20
-	+	284	33
+	+	349	0
+	+	328	0
+	+	327	0
+	+	328	0
+	+	330	0
+	+	331	0
+	+	332	0
+	+	331	0
+	+	401	0
+	+	1	0
+	a	1203	16
+	b	358	38
+
+> ~\vimfiles\temp\221005.sid_s_colon.txt
+	*	1664976594	0
+	"	3	39
+	^	3	40
+	.	3	39
+	+	5	0
+	+	7	19
+	+	8	14
+	+	9	22
+	+	10	19
+	+	11	16
+	+	13	11
+	+	14	17
+	+	15	6
+	+	16	20
+	+	17	8
+	+	18	12
+	+	10	19
+	+	19	4
+	+	20	5
+	+	21	6
+	+	13	0
+	+	5	0
+	+	7	2
+	+	5	0
+	+	13	0
+	+	15	0
+	+	7	0
+	+	25	15
+	+	24	9
+	+	25	20
+	+	7	15
+	+	2	17
+	+	4	0
+	+	7	0
+	+	2	5
+	+	3	39
+
+> ~\temp\221005.py
+	*	1664975259	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~\vimfiles\blank.vim
+	*	1664975252	0
+	"	5	0
+	.	6	0
+	+	6	5
+	+	6	4
+	+	6	0
+	+	6	9
+	+	6	0
+	+	6	24
+	+	5	0
+	+	6	0
+	+	5	11
+	+	6	0
+	+	5	0
+	+	6	0
+	+	4	16
+	+	3	17
+	+	6	13
+	+	6	0
+	+	6	4
+	+	6	0
+	+	6	32
+	+	3	10
+	+	6	0
+	+	3	0
+	+	6	0
+	+	2	0
+	+	3	15
+	+	6	0
+	+	3	9
+	+	6	26
+	+	6	0
+	+	3	7
+	+	6	19
+	+	6	0
+
+> C:\Program Files\Vim\vim90\doc\eval.txt
+	*	1664975247	0
+	"	1858	35
+
+> ~\vimfiles\plugin\better.vim
+	*	1664974752	0
+	"	330	4
+	^	435	60
+	.	435	63
+	+	424	45
+	+	420	0
+	+	433	0
+	+	433	64
+	+	436	22
+	+	433	113
 	+	413	0
+	+	412	9
+	+	413	95
+	+	434	51
+	+	423	34
+	+	436	32
+	+	434	60
+	+	427	11
+	+	424	0
+	+	427	0
+	+	419	0
+	+	420	25
+	+	420	0
+	+	420	4
+	+	427	0
+	+	432	0
+	+	420	12
+	+	420	3
+	+	420	29
+	+	421	38
+	+	421	0
+	+	421	45
+	+	421	0
+	+	421	8
+	+	432	0
+	+	427	0
+	+	426	9
+	+	426	0
+	+	426	9
+	+	426	29
+	+	426	9
+	+	425	36
+	+	426	0
+	+	430	0
+	+	427	0
+	+	425	15
+	+	430	30
+	+	425	13
+	+	426	48
+	+	427	0
+	+	420	0
+	+	421	0
+	+	424	0
+	+	433	0
+	+	431	0
+	+	420	0
+	+	421	0
+	+	420	0
+	+	422	24
+	+	431	18
+	+	433	0
+	+	430	0
+	+	425	0
+	+	427	0
+	+	425	22
+	+	427	46
+	+	425	0
+	+	427	0
+	+	420	19
+	+	439	27
+	+	420	22
+	+	439	11
+	+	422	21
+	+	431	30
+	+	422	21
+	+	431	30
+	+	433	42
+	+	423	0
+	+	419	0
+	+	433	0
+	+	424	0
+	+	436	0
+	+	414	0
+	+	413	9
+	+	414	50
+	+	432	0
+	+	37	1
+	+	440	20
+	+	437	15
+	+	440	23
+	+	437	0
+	+	436	0
+	+	437	0
+	+	436	0
+	+	423	0
+	+	433	0
+	+	436	0
+	+	440	44
+	+	437	23
+	+	435	93
+	+	436	20
+	+	435	63
+
+> ~\vimfiles\autoload\plug.vim
+	*	1664974703	0
+	"	1042	6
+
+> ~\vimfiles\plugin\buffer.vim
+	*	1664972725	0
+	"	56	4
+	^	3	0
+	.	2	0
+	+	21	55
+	+	25	52
+	+	18	51
+	+	21	53
+	+	25	50
+	+	57	0
+	+	48	8
+	+	48	0
+	+	47	0
+	+	33	0
+	+	47	0
+	+	33	19
+	+	57	0
+	+	47	0
+	+	57	29
+	+	29	0
+	+	57	0
+	+	57	19
+	+	57	14
+	+	57	0
+	+	47	0
+	+	42	38
+	+	47	27
+	+	34	26
+	+	42	37
+	+	34	27
+	+	47	0
+	+	42	61
+	+	43	33
+	+	47	0
+	+	44	36
+	+	45	32
+	+	44	0
+	+	31	0
+	+	29	0
+	+	31	0
+	+	54	50
+	+	57	0
+	+	31	0
+	+	15	55
+	+	31	0
+	+	15	0
+	+	31	0
+	+	47	0
+	+	48	0
+	+	32	28
+	+	32	49
+	+	33	47
+	+	45	48
+	+	42	69
+	+	45	60
+	+	48	0
+	+	46	14
+	+	36	32
+	+	35	27
+	+	38	18
+	+	41	12
+	+	42	0
+	+	29	0
+	+	26	0
+	+	29	0
+	+	10	10
+	+	10	0
+	+	7	0
+	+	7	9
+	+	7	17
+	+	7	0
+	+	10	44
+	+	26	35
+	+	7	21
+	+	26	0
+	+	10	24
+	+	7	5
+	+	10	0
+	+	10	5
+	+	46	0
+	+	10	0
+	+	7	22
+	+	22	25
+	+	26	25
+	+	54	41
+	+	23	14
+	+	29	0
+	+	27	14
+	+	27	0
+	+	28	0
+	+	46	14
+	+	28	0
+	+	18	0
+	+	6	0
+	+	10	0
+	+	54	52
+	+	15	56
+	+	18	41
+	+	32	49
+	+	7	0
+	+	36	51
+	+	4	0
+	+	2	0
+	a	15	47
+	b	15	47
+
+> ~\vimfiles\popup_bug.vim
+	*	1664972724	0
+	"	26	4
+	^	8	6
+	.	8	5
+	+	1	4
+	+	132	4
+	+	6	20
+	+	142	26
+	+	153	10
+	+	158	0
+	+	156	20
+	+	142	13
+	+	156	34
+	+	144	29
+	+	134	4
+	+	145	0
+	+	144	22
+	+	145	0
+	+	148	8
+	+	157	21
+	+	141	10
+	+	137	36
+	+	139	8
+	+	141	9
+	+	150	18
+	+	144	0
+	+	150	0
+	+	150	55
+	+	151	41
+	+	152	9
+	+	146	14
+	+	145	42
+	+	150	0
+	+	143	0
+	+	157	26
+	+	148	0
+	+	146	0
+	+	145	0
+	+	140	0
+	+	143	37
+	+	146	0
+	+	145	0
+	+	142	16
+	+	156	35
+	+	3	21
+	+	2	18
+	+	4	22
+	+	1	18
+	+	31	4
+	+	3	11
+	+	10	11
+	+	8	0
+	+	20	5
+	+	21	0
+	+	24	30
+	+	25	28
+	+	20	4
+	+	8	4
+	+	31	5
+	+	30	5
+	+	20	5
+	+	30	4
+	+	20	4
+	+	31	5
+	+	20	5
+	+	8	5
+
+> ~\vimfiles\ide.vim
+	*	1664972723	0
+	"	185	4
+	.	298	0
+	+	362	77
+	+	384	36
+	+	362	36
+	+	361	62
+	+	383	0
+	+	373	10
+	+	371	26
+	+	368	10
+	+	367	14
+	+	371	52
+	+	372	16
+	+	366	26
+	+	372	12
+	+	367	12
+	+	367	23
+	+	372	16
+	+	367	14
+	+	367	5
+	+	372	12
+	+	367	0
+	+	367	4
+	+	367	26
+	+	367	20
+	+	371	22
+	+	370	11
+	+	348	0
+	+	380	0
+	+	382	0
+	+	381	14
+	+	381	0
+	+	382	0
+	+	367	0
+	+	364	0
+	+	366	0
+	+	368	0
+	+	378	0
+	+	377	55
+	+	381	1
+	+	377	69
+	+	371	22
+	+	377	13
+	+	292	60
+	+	290	20
+	+	292	33
+	+	425	0
 	+	246	0
 	+	249	0
-	+	304	10
-	+	305	1
-	+	306	0
-	+	304	0
-	+	297	0
-	+	298	26
-	+	301	20
-	+	303	11
-	+	306	0
+	+	316	10
+	+	317	1
+	+	318	0
+	+	316	0
+	+	309	0
+	+	310	26
+	+	313	20
+	+	315	11
+	+	318	0
 	+	84	169
 	+	84	0
 	+	1	45
+	+	199	0
+	+	288	0
+	+	419	0
+	+	279	31
+	+	304	71
+	+	284	16
+	+	283	21
+	+	283	0
+	+	302	17
+	+	304	0
+	+	306	0
+	+	303	6
+	+	305	0
+	+	306	0
+	+	304	40
+	+	283	8
+	+	283	19
+	+	283	0
+	+	283	18
+	+	283	37
+	+	283	16
+	+	283	0
+	+	281	62
+	+	283	11
+	+	281	63
+	+	283	0
+	+	282	32
+	+	283	0
+	+	280	93
+	+	281	130
+	+	175	2
+	+	302	0
+	+	302	33
+	+	298	10
+	+	298	13
+	+	302	0
+	+	298	0
 
-> ~\vimfiles\plugged\coc.nvim\doc\coc.txt
-	*	1664924704	0
-	"	221	2
+> ~\vimfiles\plugin\goto_method.vim
+	*	1664972714	0
+	"	97	0
+	^	48	19
+	.	48	18
+	+	20	0
+	+	26	16
+	+	20	0
+	+	41	10
+	+	42	61
+	+	18	10
+	+	24	0
+	+	11	0
+	+	21	39
+	+	4	11
+	+	11	0
+	+	12	0
+	+	15	49
+	+	13	18
+	+	15	40
+	+	13	30
+	+	15	66
+	+	13	0
+	+	4	10
+	+	4	23
+	+	15	48
+	+	4	0
+	+	15	47
+	+	4	0
+	+	5	0
+	+	10	0
+	+	7	26
+	+	16	0
+	+	15	0
+	+	5	15
+	+	15	61
+	+	8	9
+	+	3	34
+	+	31	0
+	+	2	71
+	+	3	0
+	+	40	12
+	+	43	0
+	+	52	10
+	+	50	0
+	+	54	39
+	+	54	74
+	+	44	17
+	+	54	97
+	+	51	0
+	+	51	12
+	+	22	50
+	+	24	5
+	+	22	9
+	+	23	49
+	+	22	0
+	+	24	0
+	+	23	0
+	+	24	0
+	+	22	0
+	+	26	0
+	+	27	15
+	+	40	0
+	+	8	15
+	+	40	33
+	+	22	53
+	+	97	16
+	+	33	0
+	+	32	0
+	+	33	27
+	+	36	0
+	+	35	5
+	+	36	5
+	+	39	0
+	+	37	71
+	+	38	55
+	+	37	5
+	+	38	4
+	+	93	21
+	+	38	12
+	+	51	0
+	+	97	0
+	+	98	0
+	+	95	72
+	+	49	11
+	+	47	0
+	+	48	16
+	+	95	15
+	+	48	18
+	+	44	0
+	+	66	0
+	+	53	13
+	+	83	23
+	+	84	0
+	+	48	18
+
+> ~\vimfiles\plugin\cool.vim
+	*	1664972713	0
+	"	165	10
+	^	62	29
+	.	62	28
+	+	47	121
+	+	52	0
+	+	34	42
+	+	58	8
+	+	59	8
+	+	58	0
+	+	57	0
+	+	33	5
+	+	33	11
+	+	33	0
+	+	47	67
+	+	49	13
+	+	59	30
+	+	49	12
+	+	50	12
+	+	51	12
+	+	52	12
+	+	54	12
+	+	58	8
+	+	59	8
+	+	60	8
+	+	61	8
+	+	49	0
+	+	33	25
+	+	47	87
+	+	49	33
+	+	34	0
+	+	35	0
+	+	49	0
+	+	59	29
+	+	33	0
+	+	43	8
+	+	47	72
+	+	49	18
+	+	59	35
+	+	60	34
+	+	46	8
+	+	47	58
+	+	51	0
+	+	66	69
+	+	47	24
+	+	56	0
+	+	77	9
+	+	69	0
+	+	66	0
+	+	66	5
+	+	66	20
+	+	63	0
+	+	51	10
+	+	52	10
+	+	51	0
+	+	52	0
+	+	13	4
+	+	15	0
+	+	13	4
+	+	61	30
+	+	64	0
+	+	81	0
+	+	71	0
+	+	81	24
+	+	13	5
+	+	81	0
+	+	71	5
+	+	33	10
+	+	31	62
+	+	33	16
+	+	33	8
+	+	33	26
+	+	33	32
+	+	33	0
+	+	33	5
+	+	33	9
+	+	31	59
+	+	25	10
+	+	25	9
+	+	31	36
+	+	25	4
+	+	31	81
+	+	25	0
+	+	31	0
+	+	71	0
+	+	77	8
+	+	77	0
+	+	2	48
+	+	33	0
+	+	84	0
+	+	80	0
+	+	95	0
+	+	137	0
+	+	136	8
+	+	138	0
+	+	137	0
+	+	150	0
+	+	47	23
+	+	47	24
+	+	49	0
+	+	48	19
+	+	65	0
+	+	57	0
+	+	62	28
+
+> ~\vimfiles\vimrc
+	*	1664972703	0
+	"	1024	110
+	^	998	29
+	.	998	28
+	+	1533	0
+	+	1531	0
+	+	1533	0
+	+	1053	0
+	+	1054	5
+	+	1086	1
+	+	1104	0
+	+	1093	0
+	+	1092	0
+	+	1093	16
+	+	1093	43
+	+	1093	16
+	+	1093	0
+	+	1093	1
+	+	1093	35
+	+	1093	9
+	+	1093	52
+	+	1093	13
+	+	1093	0
+	+	1093	25
+	+	1093	0
+	+	1093	32
+	+	1093	0
+	+	1093	28
+	+	1093	16
+	+	1211	7
+	+	1095	9
+	+	1093	0
+	+	1186	0
+	+	1189	0
+	+	1188	1
+	+	1187	0
+	+	1188	18
+	+	1204	10
+	+	1204	0
+	+	1146	31
+	+	1095	0
+	+	1218	0
+	+	1217	0
+	+	1218	0
+	+	1214	0
+	+	1215	0
+	+	1214	108
+	+	1002	11
+	+	814	0
+	+	1214	0
+	+	1070	0
+	+	1051	0
+	+	1052	2
+	+	1063	7
+	+	1061	0
+	+	1062	0
+	+	225	0
+	+	1128	81
+	+	1104	0
+	+	1096	23
+	+	1104	0
+	+	1105	10
+	+	1104	15
+	+	1104	16
+	+	1128	72
+	+	1104	0
+	+	1100	19
+	+	1104	71
+	+	1100	20
+	+	1104	0
+	+	1102	35
+	+	1104	0
+	+	1102	20
+	+	1103	0
+	+	1104	31
+	+	1104	0
+	+	1102	21
+	+	1102	0
+	+	1095	0
+	+	1219	0
+	+	1204	10
+	+	1204	0
+	+	1199	0
+	+	1104	41
+	+	1104	0
+	+	1097	0
+	+	1100	0
+	+	1098	21
+	+	1098	0
+	+	1102	15
+	+	1104	0
+	+	1102	0
+	+	1100	0
+	+	1098	32
+	+	484	36
+	+	911	26
+	+	918	25
+	+	926	33
+	+	998	28
+
+> ~\vimfiles\build_command.vim
+	*	1664972678	0
+	"	6	20
+	^	6	24
+	.	6	0
+	+	1	0
+	+	3	11
+	+	6	9
+	+	2	11
+	+	6	0
+	+	4	18
+	+	4	102
+	+	4	0
+	+	1	11
+	+	1	0
+	+	8	0
+	+	1	0
+	+	6	0
+
+> ~\vimfiles\performance\performance.vim
+	*	1664972664	0
+	"	277	14
+	^	352	12
+	.	352	11
+	+	310	10
+	+	310	41
+	+	315	0
+	+	310	0
+	+	310	39
+	+	310	18
+	+	315	19
+	+	310	0
+	+	310	23
+	+	311	10
+	+	315	5
+	+	315	0
+	+	314	5
+	+	315	31
+	+	315	9
+	+	315	28
+	+	315	0
+	+	312	0
+	+	315	0
+	+	313	0
+	+	315	18
+	+	315	16
+	+	357	1
+	+	316	46
+	+	315	0
+	+	314	0
+	+	355	11
+	+	311	0
+	+	310	0
+	+	355	32
+	+	311	16
+	+	311	10
+	+	311	4
+	+	355	0
+	+	356	0
+	+	355	24
+	+	311	0
+	+	355	32
+	+	311	12
+	+	331	0
+	+	355	3
+	+	354	53
+	+	355	34
+	+	354	57
+	+	355	8
+	+	354	42
+	+	355	29
+	+	354	1
+	+	314	5
+	+	311	0
+	+	316	1
+	+	318	0
+	+	308	10
+	+	310	0
+	+	294	0
+	+	297	50
+	+	300	0
+	+	310	53
+	+	309	0
+	+	310	11
+	+	312	19
+	+	310	0
+	+	314	0
+	+	321	0
+	+	317	0
+	+	323	0
+	+	318	33
+	+	323	43
+	+	311	33
+	+	311	0
+	+	323	12
+	+	319	57
+	+	100	0
+	+	72	52
+	+	331	0
+	+	324	0
+	+	331	25
+	+	331	48
+	+	331	33
+	+	331	0
+	+	325	0
+	+	332	0
+	+	337	18
+	+	332	21
+	+	337	11
+	+	332	24
+	+	337	32
+	+	333	50
+	+	340	30
+	+	344	10
+	+	341	50
+	+	346	0
+	+	345	37
+	+	351	10
+	+	348	53
+	+	352	11
+	+	347	25
+	+	352	33
+	+	348	48
+	+	352	11
+
+> ~\vimfiles\plugin\introspect.vim
+	*	1664972636	0
+	"	3	3
+	^	136	48
+	.	136	47
+	+	175	0
+	+	174	0
+	+	176	0
+	+	204	0
+	+	201	40
+	+	204	0
+	+	162	19
+	+	136	47
+
+> C:\Program Files\Vim\vim90\doc\autocmd.txt
+	*	1664972614	0
+	"	75	13
+
+> ~\vimfiles\plugin\rename.vim
+	*	1664972587	0
+	"	25	46
+	^	25	47
+	.	25	46
+	+	22	6
+	+	21	10
+	+	22	41
+	+	2	18
+	+	2	26
+	+	22	48
+	+	23	11
+	+	22	17
+	+	23	0
+	+	4	15
+	+	23	7
+	+	21	16
+	+	2	5
+	+	21	4
+	+	17	28
+	+	21	11
+	+	17	15
+	+	17	33
+	+	17	43
+	+	21	16
+	+	17	0
+	+	5	28
+	+	17	28
+	+	5	10
+	+	17	0
+	+	23	0
+	+	23	22
+	+	23	13
+	+	23	24
+	+	23	17
+	+	23	26
+	+	23	0
+	+	23	20
+	+	23	0
+	+	23	15
+	+	23	0
+	+	21	47
+	+	21	8
+	+	21	0
+	+	23	0
+	+	21	16
+	+	23	9
+	+	21	27
+	+	21	0
+	+	2	0
+	+	23	15
+	+	17	34
+	+	23	0
+	+	18	27
+	+	21	0
+	+	18	0
+	+	19	0
+	+	21	7
+	+	20	56
+	+	21	0
+	+	22	21
+	+	20	0
+	+	17	9
+	+	9	12
+	+	9	75
+	+	17	0
+	+	9	0
+	+	9	80
+	+	9	21
+	+	12	51
+	+	13	23
+	+	15	14
+	+	14	31
+	+	16	8
+	+	17	0
+	+	18	0
+	+	17	9
+	+	10	40
+	+	11	0
+	+	12	21
+	+	17	0
+	+	6	0
+	+	7	0
+	+	12	0
+	+	17	0
+	+	2	0
+	+	23	0
+	+	26	0
+	+	25	46
+
+> ~\vimfiles\plugin\dotty.vim
+	*	1664972578	0
+	"	1004	37
+	^	1004	38
+	.	1004	37
+	+	785	45
+	+	776	0
+	+	789	28
+	+	787	9
+	+	788	50
+	+	789	0
+	+	450	0
+	+	742	0
+	+	741	9
+	+	740	0
+	+	532	0
+	+	963	8
+	+	400	0
+	+	445	0
+	+	480	0
+	+	826	0
+	+	453	0
+	+	400	11
+	+	118	0
+	+	126	0
+	+	128	0
+	+	138	0
+	+	561	0
+	+	676	0
+	+	781	0
+	+	799	0
+	+	128	0
+	+	154	0
+	+	897	0
+	+	326	0
+	+	327	0
+	+	332	0
+	+	331	35
+	+	337	0
+	+	362	0
+	+	369	0
+	+	445	0
+	+	480	0
+	+	567	42
+	+	826	0
+	+	453	11
+	+	457	38
+	+	454	0
+	+	453	0
+	+	457	38
+	+	456	11
+	+	460	0
+	+	481	0
+	+	555	0
+	+	556	41
+	+	479	0
+	+	788	0
+	+	487	0
+	+	545	0
+	+	546	0
+	+	503	0
+	+	817	0
+	+	877	0
+	+	596	0
+	+	816	0
+	+	980	0
+	+	634	0
+	+	756	0
+	+	983	0
+	+	659	0
+	+	727	0
+	+	823	0
+	+	705	0
+	+	734	0
+	+	872	0
+	+	925	0
+	+	929	0
+	+	953	0
+	+	957	0
+	+	934	0
+	+	954	0
+	+	958	0
+	+	959	0
+	+	938	0
+	+	955	0
+	+	943	0
+	+	960	0
+	+	982	0
+	+	711	0
+	+	418	24
+	+	419	29
+	+	615	18
+	+	513	10
+	+	516	12
+	+	932	10
+	+	719	10
+	+	810	10
+	+	834	10
+	+	757	10
+	+	730	14
+	+	804	10
+	+	953	0
+	+	569	40
+	+	568	43
+	+	1004	37
+	a	26	0
+	f	503	10
+	g	97	2
+	i	808	12
 
 > ~\vimfiles\ftplugin\vim.vim
-	*	1664924537	0
-	"	116	35
-	.	117	0
-	+	81	0
-	+	80	0
-	+	75	48
-	+	80	0
+	*	1664972537	0
+	"	102	26
+	^	102	30
+	.	102	0
 	+	77	53
 	+	78	12
 	+	79	24
@@ -27432,238 +29207,388 @@ $\0
 	+	117	0
 	+	116	35
 	+	117	0
+	+	102	28
+	+	102	0
+	+	100	32
+	+	102	29
+	+	102	0
 	a	68	24
 	b	68	24
 
-> ~\vimfiles\temp\221005.q2b_vim_funccalls.vim
-	*	1664924478	0
-	"	14	12
-	^	2	0
-	.	2	0
-	+	4	0
-	+	1	0
-	+	4	0
-	+	3	0
-	+	2	0
-
 > C:\Program Files\Vim\vim90\doc\builtin.txt
-	*	1664924449	0
-	"	5094	27
+	*	1664972491	0
+	"	3754	8
 
 > C:\Program Files\Vim\vim90\doc\map.txt
-	*	1664924245	0
-	"	355	6
+	*	1664971071	0
+	"	70	44
 
-> ~\vimfiles\220922.error_test.vim
-	*	1664923896	0
-	"	2	17
+> ~\vimfiles\.gitignore
+	*	1664970794	0
+	"	7	4
+	^	1	6
+	.	7	5
+	+	1	5
+	+	2	7
+	+	7	0
+	+	2	8
+	+	7	5
 
-> ~\temp\221005.py
-	*	1664923892	0
-	"	3668	0
+> ~\temp\221005.vim
+	*	1664970493	0
+	"	1	0
 	.	1	0
 	+	1	0
 
-> ~\vimfiles\autoload\plug.vim
-	*	1664923763	0
-	"	1690	6
-
-> ~\vimfiles\vimrc
-	*	1664923645	0
+> ~\vimfiles\todo\221005.txt
+	*	1664970052	0
 	"	1	0
-	.	814	0
-	+	1461	0
-	+	1461	89
-	+	1459	4
-	+	1461	0
-	+	1462	0
-	+	1459	11
-	+	1390	3
-	+	1382	5
-	+	1383	5
-	+	1385	5
-	+	1386	5
-	+	1384	5
-	+	1381	5
-	+	1382	4
-	+	1384	0
-	+	1385	0
-	+	1387	20
-	+	1402	10
-	+	1402	28
-	+	1402	10
-	+	1402	46
-	+	1402	25
-	+	1402	32
-	+	1402	28
-	+	1402	5
-	+	1402	25
-	+	1402	12
-	+	1402	1
-	+	1403	81
-	+	197	0
-	+	1402	0
-	+	1403	80
-	+	1404	1
-	+	1403	16
-	+	1403	27
-	+	1403	1
-	+	1403	39
-	+	1404	37
-	+	1403	0
-	+	1404	0
-	+	1403	91
-	+	1404	11
-	+	1403	19
-	+	1404	69
-	+	1403	0
-	+	1404	16
-	+	1403	26
-	+	1404	78
-	+	1402	0
-	+	1407	0
-	+	1514	8
-	+	1515	7
-	+	38	0
-	+	37	3
-	+	38	0
-	+	1520	0
-	+	1518	0
-	+	1520	0
-	+	1053	0
-	+	1054	5
-	+	1086	1
-	+	1095	0
-	+	1093	0
-	+	1092	0
-	+	1093	16
-	+	1093	43
-	+	1093	16
-	+	1093	0
-	+	1093	1
-	+	1093	35
-	+	1093	9
-	+	1093	52
-	+	1093	13
-	+	1093	0
-	+	1093	25
-	+	1093	0
-	+	1093	32
-	+	1093	0
-	+	1093	28
-	+	1093	16
-	+	1197	7
-	+	1094	9
-	+	1093	0
-	+	1176	0
-	+	1179	0
-	+	1178	1
-	+	1177	0
-	+	1178	18
-	+	1188	10
-	+	1188	0
-	+	1136	31
-	+	1094	0
-	+	1204	0
-	+	1203	0
-	+	1204	0
-	+	1200	0
-	+	1201	0
-	+	1200	108
-	+	1002	11
-	+	814	0
+	^	1	37
+	.	1	36
+	+	1	36
 
-> ~\Desktop\Twitch\coffee-vps\code\render_chat.py
-	*	1664923642	0
-	"	401	0
-	.	401	0
-	+	956	0
-	+	957	0
-	+	950	0
-	+	938	0
-	+	1013	0
-	+	1022	0
-	+	1040	0
-	+	1207	0
-	+	1196	0
-	+	1040	0
-	+	778	0
-	+	764	0
-	+	754	0
-	+	753	0
-	+	766	0
-	+	771	0
-	+	770	0
-	+	768	0
-	+	754	0
-	+	742	0
-	+	733	0
-	+	713	0
-	+	1	0
-	+	207	0
-	+	162	0
-	+	156	0
-	+	162	0
-	+	170	0
-	+	177	0
-	+	167	0
-	+	163	0
-	+	164	0
-	+	168	0
-	+	170	0
-	+	181	7
-	+	170	7
-	+	181	0
-	+	170	0
-	+	163	0
-	+	884	0
-	+	886	0
-	+	885	11
-	+	1147	0
-	+	37	0
-	+	1207	0
-	+	501	0
-	+	502	0
-	+	89	0
-	+	90	0
-	+	76	0
-	+	502	0
-	+	199	0
-	+	502	0
-	+	456	0
-	+	124	0
-	+	402	0
-	+	9	0
-	+	502	0
-	+	503	0
-	+	502	0
-	+	473	0
-	+	402	0
-	+	401	0
-	+	929	0
-	+	401	0
-	+	401	24
-	+	401	0
-	+	401	4
-	+	401	0
-	+	360	0
-	+	359	0
-	+	354	0
-	+	349	0
-	+	328	0
-	+	327	0
-	+	328	0
-	+	330	0
-	+	331	0
-	+	332	0
-	+	331	0
-	+	401	0
-	a	1203	16
-	b	358	38
+> ~\vimfiles\220922.error_test.vim
+	*	1664970049	0
+	"	1	0
+
+> ~\vimfiles\after\syntax\python.vim
+	*	1664969400	0
+	"	4	25
+	^	1	2
+	.	2	0
+	+	2	0
+	+	1	9
+	+	7	28
+	+	8	0
+	+	9	4
+	+	17	37
+	+	17	0
+	+	2	0
+
+> ~\vimfiles\plugin\grep.vim
+	*	1664969183	0
+	"	49	0
+	^	50	0
+	.	50	0
+	+	39	0
+	+	39	31
+	+	39	35
+	+	39	9
+	+	39	31
+	+	39	0
+	+	53	0
+	+	39	28
+	+	39	18
+	+	39	0
+	+	39	5
+	+	51	0
+	+	39	0
+	+	53	0
+	+	38	0
+	+	36	61
+	+	39	0
+	+	39	30
+	+	39	0
+	+	39	72
+	+	34	0
+	+	2	0
+	+	39	0
+	+	15	0
+	+	39	0
+	+	32	10
+	+	15	31
+	+	16	0
+	+	15	21
+	+	16	22
+	+	17	28
+	+	38	35
+	+	52	35
+	+	41	14
+	+	45	21
+	+	45	38
+	+	45	30
+	+	15	0
+	+	47	0
+	+	18	0
+	+	17	0
+	+	15	53
+	+	17	0
+	+	13	10
+	+	6	0
+	+	3	34
+	+	4	22
+	+	3	44
+	+	5	28
+	+	12	15
+	+	14	0
+	+	45	23
+	+	45	22
+	+	45	61
+	+	45	0
+	+	42	0
+	+	17	22
+	+	15	43
+	+	33	0
+	+	45	48
+	+	38	20
+	+	38	19
+	+	41	0
+	+	38	51
+	+	16	0
+	+	17	0
+	+	15	22
+	+	38	21
+	+	45	21
+	+	45	0
+	+	38	0
+	+	49	19
+	+	45	0
+	+	44	91
+	+	45	0
+	+	37	44
+	+	44	38
+	+	43	0
+	+	42	0
+	+	36	0
+	+	35	14
+	+	38	16
+	+	35	0
+	+	42	0
+	+	45	17
+	+	40	0
+	+	30	0
+	+	50	0
+
+> C:\Program Files\Vim\vim90\doc\quickfix.txt
+	*	1664969111	0
+	"	1036	30
+
+> C:\Program Files\Vim\vim90\doc\motion.txt
+	*	1664969089	0
+	"	259	7
+
+> C:\Program Files\Vim\vim90\doc\cmdline.txt
+	*	1664969072	0
+	"	582	7
+
+> C:\Program Files\Vim\vim90\doc\various.txt
+	*	1664968960	0
+	"	19	15
+
+> C:\Program Files\Vim\vim90\doc\pattern.txt
+	*	1664968958	0
+	"	320	26
+
+> C:\Program Files\Vim\vim90\doc\userfunc.txt
+	*	1664968886	0
+	"	47	10
+
+> ~\Desktop\Twitch\coffee-vps\code\twitch_utilities.py
+	*	1664966562	0
+	"	4708	14
+	.	5581	0
+	+	5609	19
+	+	5609	25
+	+	5609	47
+	+	5609	0
+	+	5609	80
+	+	5609	0
+	+	5609	5
+	+	5609	0
+	+	5609	16
+	+	5607	36
+	+	5609	0
+	+	5606	0
+	+	5588	26
+	+	5609	0
+	+	5589	0
+	+	5608	0
+	+	5605	21
+	+	5608	41
+	+	21	32
+	+	5632	21
+	+	5648	0
+	+	5632	27
+	+	5648	0
+	+	5635	24
+	+	5634	47
+	+	5648	103
+	+	5637	0
+	+	5636	0
+	+	5641	42
+	+	5642	0
+	+	5637	0
+	+	5633	22
+	+	5645	20
+	+	5644	15
+	+	5643	0
+	+	5625	0
+	+	5632	0
+	+	5631	0
+	+	5628	35
+	+	5627	62
+	+	5631	0
+	+	5630	14
+	+	5644	30
+	+	5645	30
+	+	5646	35
+	+	5737	0
+	+	5646	23
+	+	5737	63
+	+	5632	28
+	+	5646	23
+	+	5738	21
+	+	5646	0
+	+	5645	57
+	+	5533	0
+	+	5532	29
+	+	5533	0
+	+	5500	0
+	+	5533	0
+	+	5574	0
+	+	5575	0
+	+	5574	18
+	+	5573	0
+	+	5574	0
+	+	5575	0
+	+	5574	0
+	+	5575	0
+	+	5574	0
+	+	5575	0
+	+	5574	26
+	+	5644	0
+	+	5645	0
+	+	128	0
+	+	117	0
+	+	5736	0
+	+	5574	5
+	+	5759	0
+	+	5764	0
+	+	5648	0
+	+	35	50
+	+	1346	0
+	+	88	0
+	+	5740	0
+	+	5735	0
+	+	5736	0
+	+	5642	0
+	+	5624	0
+	+	5621	0
+	+	5619	11
+	+	5619	0
+	+	5620	0
+	+	5740	0
+	+	5604	0
+	+	5593	0
+	+	5581	0
+	a	5248	16
+	d	2632	28
+	x	2562	4
+	z	5532	127
+
+> ~\vimfiles\sqlite.py
+	*	1664966295	0
+	"	1	0
+	^	35	4
+	.	33	37
+	+	2	0
+	+	3	13
+	+	8	0
+	+	18	0
+	+	38	0
+	+	23	0
+	+	11	0
+	+	12	29
+	+	13	11
+	+	14	15
+	+	13	31
+	+	38	0
+	+	11	19
+	+	22	34
+	+	10	13
+	+	4	13
+	+	10	69
+	+	18	32
+	+	38	4
+	+	27	0
+	+	30	0
+	+	26	41
+	+	14	9
+	+	26	50
+	+	28	21
+	+	29	18
+	+	27	36
+	+	30	11
+	+	38	0
+	+	24	0
+	+	24	30
+	+	29	19
+	+	25	0
+	+	38	78
+	+	25	16
+	+	38	82
+	+	39	0
+	+	41	33
+	+	42	0
+	+	44	0
+	+	5	0
+	+	7	29
+	+	46	17
+	+	45	17
+	+	45	0
+	+	43	9
+	+	19	0
+	+	38	72
+	+	25	15
+	+	38	0
+	+	44	15
+	+	37	49
+	+	13	29
+	+	16	20
+	+	13	21
+	+	16	9
+	+	13	38
+	+	16	0
+	+	13	0
+	+	15	9
+	+	21	31
+	+	36	10
+	+	37	16
+	+	33	0
+	+	37	30
+	+	33	37
+	+	34	26
+	+	34	54
+	+	33	39
+	+	36	0
+	+	33	39
+	+	34	15
+	+	33	39
+	+	32	0
+	+	35	30
+	+	33	37
+	a	33	37
+	b	33	37
+
+> C:\Program Files\Vim\vim90\doc\syntax.txt
+	*	1664966063	0
+	"	4020	7
+
+> ~\vimfiles\plugged\coc.nvim\doc\coc.txt
+	*	1664966004	0
+	"	1972	35
+
+> C:\Program Files\Vim\vim90\doc\gui.txt
+	*	1664965335	0
+	"	735	7
+
+> C:\Program Files\Vim\vim90\doc\change.txt
+	*	1664965155	0
+	"	551	24
 
 > ~\vimfiles\plugin\printvar.vim
-	*	1664809044	0
-	"	164	39
+	*	1664964414	0
+	"	17	57
 	^	164	40
 	.	164	39
 	+	57	42
@@ -27765,123 +29690,86 @@ $\0
 	a	60	133
 	b	60	133
 
-> ~\Documents\Python\blank.py
-	*	1664808907	0
-	"	21	11
-	^	28	6
-	.	28	5
-	+	25	18
-	+	25	0
-	+	5	0
-	+	25	26
-	+	30	18
-	+	30	0
-	+	30	10
-	+	30	0
-	+	30	13
-	+	30	0
-	+	25	33
-	+	30	8
-	+	30	2
-	+	30	8
-	+	30	2
-	+	30	8
-	+	25	33
-	+	30	0
-	+	25	0
-	+	30	14
-	+	25	0
-	+	30	18
-	+	25	24
-	+	30	28
-	+	25	0
-	+	30	0
-	+	30	21
-	+	26	7
-	+	30	6
-	+	26	7
-	+	27	7
-	+	30	46
-	+	27	18
-	+	30	18
-	+	30	0
-	+	30	13
-	+	30	0
-	+	2	16
-	+	30	0
-	+	2	20
-	+	30	0
-	+	2	27
-	+	30	0
-	+	30	1
-	+	30	0
-	+	30	3
-	+	30	0
-	+	30	4
-	+	30	0
+> ~\vimfiles\coc-settings.json
+	*	1664964333	0
+	"	10	4
+	.	10	0
+	+	1	30
+	+	1	0
+	+	1	26
+	+	1	5
+	+	1	0
+	+	1	5
+	+	1	0
+	+	1	47
+	+	1	0
 	+	2	0
-	+	30	0
-	+	31	36
-	+	31	66
-	+	31	37
-	+	29	27
-	+	30	0
-	+	29	16
-	+	30	0
-	+	29	0
-	+	31	71
-	+	31	0
-	+	31	66
-	+	31	71
-	+	31	0
-	+	32	71
-	+	32	0
-	+	30	0
-	+	26	0
-	+	5	0
-	+	32	0
-	+	11	14
-	+	12	7
-	+	13	0
-	+	29	0
-	+	24	7
-	+	23	0
-	+	17	3
-	+	19	0
-	+	20	0
-	+	22	0
-	+	21	12
-	+	14	0
+	+	3	4
+	+	3	0
 	+	16	0
-	+	6	0
-	+	8	0
-	+	7	7
-	+	6	77
-	+	31	0
-	+	4	21
-	+	14	13
-	+	9	0
 	+	11	0
-	+	17	26
-	+	20	34
-	+	10	8
-	+	23	24
-	+	29	10
-	+	31	0
-	+	6	0
-	+	28	5
+	+	5	0
+	+	16	35
+	+	12	24
+	+	11	0
+	+	16	0
+	+	16	35
+	+	16	0
+	+	16	35
+	+	16	0
+	+	16	33
+	+	16	35
+	+	16	0
+	+	16	33
+	+	16	0
+	+	16	36
+	+	16	0
+	+	16	36
+	+	16	0
+	+	13	0
+	+	16	0
+	+	13	0
+	+	11	4
+	+	11	0
+	+	11	28
+	+	11	0
+	+	7	0
+	+	11	0
+	+	8	38
+	+	11	0
+	+	8	0
+	+	11	0
+	+	2	6
+	+	3	6
+	+	4	31
+	+	4	0
+	+	12	0
+	+	2	4
+	+	3	4
+	+	16	0
+	+	12	0
+	+	11	0
+	+	15	0
+	+	11	0
+	+	10	37
+	+	11	0
+	+	10	0
 
-> C:\Program Files\Vim\vim90\doc\change.txt
-	*	1664808755	0
-	"	551	24
+> ~\vimfiles\temp\221005.q2b_vim_funccalls.vim
+	*	1664964182	0
+	"	1	0
+	.	2	0
+	+	2	0
+	+	1	0
+	+	2	0
+
+> ~\vimfiles\plugged\ale\doc\ale.txt
+	*	1664932482	0
+	"	4517	52
 
 > C:\Program Files\Vim\vim90\doc\help.txt
 	*	1664799514	0
 	"	1	0
-
-> C:\Program Files\Vim\vim90\doc\eval.txt
-	*	1664799448	0
-	"	261	6
 
 > C:\Program Files\Vim\vim90\doc\index.txt
 	*	1664796569	0
@@ -27904,113 +29792,6 @@ $\0
 	+	2	52
 	+	3	83
 
-> ~\Desktop\Twitch\coffee-vps\code\twitch_utilities.py
-	*	1664794242	0
-	"	1	0
-	.	5581	0
-	+	5609	19
-	+	5609	25
-	+	5609	47
-	+	5609	0
-	+	5609	80
-	+	5609	0
-	+	5609	5
-	+	5609	0
-	+	5609	16
-	+	5607	36
-	+	5609	0
-	+	5606	0
-	+	5588	26
-	+	5609	0
-	+	5589	0
-	+	5608	0
-	+	5605	21
-	+	5608	41
-	+	21	32
-	+	5632	21
-	+	5648	0
-	+	5632	27
-	+	5648	0
-	+	5635	24
-	+	5634	47
-	+	5648	103
-	+	5637	0
-	+	5636	0
-	+	5641	42
-	+	5642	0
-	+	5637	0
-	+	5633	22
-	+	5645	20
-	+	5644	15
-	+	5643	0
-	+	5625	0
-	+	5632	0
-	+	5631	0
-	+	5628	35
-	+	5627	62
-	+	5631	0
-	+	5630	14
-	+	5644	30
-	+	5645	30
-	+	5646	35
-	+	5737	0
-	+	5646	23
-	+	5737	63
-	+	5632	28
-	+	5646	23
-	+	5738	21
-	+	5646	0
-	+	5645	57
-	+	5533	0
-	+	5532	29
-	+	5533	0
-	+	5500	0
-	+	5533	0
-	+	5574	0
-	+	5575	0
-	+	5574	18
-	+	5573	0
-	+	5574	0
-	+	5575	0
-	+	5574	0
-	+	5575	0
-	+	5574	0
-	+	5575	0
-	+	5574	26
-	+	5644	0
-	+	5645	0
-	+	128	0
-	+	117	0
-	+	5736	0
-	+	5574	5
-	+	5759	0
-	+	5764	0
-	+	5648	0
-	+	35	50
-	+	1346	0
-	+	88	0
-	+	5740	0
-	+	5735	0
-	+	5736	0
-	+	5642	0
-	+	5624	0
-	+	5621	0
-	+	5619	11
-	+	5619	0
-	+	5620	0
-	+	5740	0
-	+	5604	0
-	+	5593	0
-	+	5581	0
-	a	5248	16
-	d	2632	28
-	x	2562	4
-	z	5532	127
-
-> C:\Program Files\Vim\vim90\doc\pattern.txt
-	*	1664793865	0
-	"	1041	34
-
 > ~\vimfiles\performance\221003.coc_vars.v06.txt
 	*	1664789244	0
 	"	2818	64
@@ -28019,29 +29800,13 @@ $\0
 	*	1664789080	0
 	"	4692	40
 
-> C:\Program Files\Vim\vim90\doc\userfunc.txt
-	*	1664788344	0
-	"	312	13
-
-> C:\Program Files\Vim\vim90\doc\various.txt
-	*	1664787820	0
-	"	695	0
-
 > C:\Program Files\Vim\vim90\doc\editing.txt
 	*	1664787362	0
 	"	247	14
 
-> C:\Program Files\Vim\vim90\doc\autocmd.txt
-	*	1664786749	0
-	"	1292	7
-
 > C:\Program Files\Vim\vim90\doc\windows.txt
 	*	1664786577	0
 	"	1143	4
-
-> C:\Program Files\Vim\vim90\doc\motion.txt
-	*	1664785793	0
-	"	361	41
 
 > C:\Program Files\Vim\vim90\doc\sign.txt
 	*	1664785199	0
@@ -28052,10 +29817,6 @@ $\0
 	"	1	0
 	.	1	0
 	+	1	0
-
-> C:\Program Files\Vim\vim90\doc\options.txt
-	*	1664784178	0
-	"	5445	4
 
 > ~\vimfiles\temp\vardump.txt
 	*	1664783873	0
@@ -28284,102 +30045,6 @@ $\0
 	a	50	29
 	b	50	30
 
-> ~\vimfiles\plugin\goto_method.vim
-	*	1664712206	0
-	"	1	0
-	^	48	19
-	.	48	18
-	+	20	0
-	+	26	16
-	+	20	0
-	+	41	10
-	+	42	61
-	+	18	10
-	+	24	0
-	+	11	0
-	+	21	39
-	+	4	11
-	+	11	0
-	+	12	0
-	+	15	49
-	+	13	18
-	+	15	40
-	+	13	30
-	+	15	66
-	+	13	0
-	+	4	10
-	+	4	23
-	+	15	48
-	+	4	0
-	+	15	47
-	+	4	0
-	+	5	0
-	+	10	0
-	+	7	26
-	+	16	0
-	+	15	0
-	+	5	15
-	+	15	61
-	+	8	9
-	+	3	34
-	+	31	0
-	+	2	71
-	+	3	0
-	+	40	12
-	+	43	0
-	+	52	10
-	+	50	0
-	+	54	39
-	+	54	74
-	+	44	17
-	+	54	97
-	+	51	0
-	+	51	12
-	+	22	50
-	+	24	5
-	+	22	9
-	+	23	49
-	+	22	0
-	+	24	0
-	+	23	0
-	+	24	0
-	+	22	0
-	+	26	0
-	+	27	15
-	+	40	0
-	+	8	15
-	+	40	33
-	+	22	53
-	+	97	16
-	+	33	0
-	+	32	0
-	+	33	27
-	+	36	0
-	+	35	5
-	+	36	5
-	+	39	0
-	+	37	71
-	+	38	55
-	+	37	5
-	+	38	4
-	+	93	21
-	+	38	12
-	+	51	0
-	+	97	0
-	+	98	0
-	+	95	72
-	+	49	11
-	+	47	0
-	+	48	16
-	+	95	15
-	+	48	18
-	+	44	0
-	+	66	0
-	+	53	13
-	+	83	23
-	+	84	0
-	+	48	18
-
 > ~\Documents\Python\ic.py
 	*	1664709782	0
 	"	146	4
@@ -28498,112 +30163,6 @@ $\0
 > ~\vimfiles\performance\221002.coc_vars.v01.txt
 	*	1664709482	0
 	"	313	54
-
-> ~\vimfiles\performance\performance.vim
-	*	1664708070	0
-	"	352	11
-	^	352	12
-	.	352	11
-	+	310	10
-	+	310	41
-	+	315	0
-	+	310	0
-	+	310	39
-	+	310	18
-	+	315	19
-	+	310	0
-	+	310	23
-	+	311	10
-	+	315	5
-	+	315	0
-	+	314	5
-	+	315	31
-	+	315	9
-	+	315	28
-	+	315	0
-	+	312	0
-	+	315	0
-	+	313	0
-	+	315	18
-	+	315	16
-	+	357	1
-	+	316	46
-	+	315	0
-	+	314	0
-	+	355	11
-	+	311	0
-	+	310	0
-	+	355	32
-	+	311	16
-	+	311	10
-	+	311	4
-	+	355	0
-	+	356	0
-	+	355	24
-	+	311	0
-	+	355	32
-	+	311	12
-	+	331	0
-	+	355	3
-	+	354	53
-	+	355	34
-	+	354	57
-	+	355	8
-	+	354	42
-	+	355	29
-	+	354	1
-	+	314	5
-	+	311	0
-	+	316	1
-	+	318	0
-	+	308	10
-	+	310	0
-	+	294	0
-	+	297	50
-	+	300	0
-	+	310	53
-	+	309	0
-	+	310	11
-	+	312	19
-	+	310	0
-	+	314	0
-	+	321	0
-	+	317	0
-	+	323	0
-	+	318	33
-	+	323	43
-	+	311	33
-	+	311	0
-	+	323	12
-	+	319	57
-	+	100	0
-	+	72	52
-	+	331	0
-	+	324	0
-	+	331	25
-	+	331	48
-	+	331	33
-	+	331	0
-	+	325	0
-	+	332	0
-	+	337	18
-	+	332	21
-	+	337	11
-	+	332	24
-	+	337	32
-	+	333	50
-	+	340	30
-	+	344	10
-	+	341	50
-	+	346	0
-	+	345	37
-	+	351	10
-	+	348	53
-	+	352	11
-	+	347	25
-	+	352	33
-	+	348	48
-	+	352	11
 
 > C:\Program Files\Vim\vim90\doc\vim9.txt
 	*	1664699223	0
@@ -29129,184 +30688,9 @@ $\0
 	a	11	12
 	b	58	17
 
-> ~\Desktop\backup\backup-flask\backup.py
-	*	1664629393	0
-	"	640	4
-	.	154	0
-	+	1011	0
-	+	152	0
-	+	208	0
-	+	35	0
-	+	208	0
-	+	35	16
-	+	35	0
-	+	936	0
-	+	931	0
-	+	829	0
-	+	830	0
-	+	829	38
-	+	854	0
-	+	854	18
-	+	829	18
-	+	837	0
-	+	837	20
-	+	829	20
-	+	837	29
-	+	843	0
-	+	843	41
-	+	848	0
-	+	848	36
-	+	850	0
-	+	850	35
-	+	851	28
-	+	854	0
-	+	854	60
-	+	840	0
-	+	839	12
-	+	839	13
-	+	839	12
-	+	839	18
-	+	839	13
-	+	840	0
-	+	839	34
-	+	839	40
-	+	838	0
-	+	839	31
-	+	839	24
-	+	854	59
-	+	229	0
-	+	829	0
-	+	35	0
-	+	387	0
-	+	350	17
-	+	445	0
-	+	448	0
-	+	462	0
-	+	618	0
-	+	858	0
-	+	862	0
-	+	866	0
-	+	909	0
-	+	910	0
-	+	973	66
-	+	969	0
-	+	972	0
-	+	970	104
-	+	588	0
-	+	588	3
-	+	588	0
-	+	588	32
-	+	588	19
-	+	588	48
-	+	588	0
-	+	588	41
-	+	588	0
-	+	588	43
-	+	588	39
-	+	106	0
-	+	109	0
-	+	588	0
-	+	588	25
-	+	588	9
-	+	576	0
-	+	588	0
-	+	576	0
-	+	973	0
-	+	970	0
-	+	969	66
-	+	970	42
-	+	969	28
-	+	970	29
-	+	969	69
-	+	970	58
-	+	969	77
-	+	970	77
-	+	969	0
-	+	1001	31
-	+	1004	36
-	+	1007	36
-	+	660	21
-	+	659	22
-	+	660	28
-	+	661	0
-	+	662	0
-	+	663	28
-	+	663	0
-	+	154	0
-	a	871	19
-	b	871	21
-
 > ~\vimfiles\plugged\ale\doc\ale-prolog.txt
 	*	1664629250	0
 	"	33	10
-
-> ~\vimfiles\popup_bug.vim
-	*	1664629026	0
-	"	32	36
-	^	8	6
-	.	8	5
-	+	1	4
-	+	132	4
-	+	6	20
-	+	142	26
-	+	153	10
-	+	158	0
-	+	156	20
-	+	142	13
-	+	156	34
-	+	144	29
-	+	134	4
-	+	145	0
-	+	144	22
-	+	145	0
-	+	148	8
-	+	157	21
-	+	141	10
-	+	137	36
-	+	139	8
-	+	141	9
-	+	150	18
-	+	144	0
-	+	150	0
-	+	150	55
-	+	151	41
-	+	152	9
-	+	146	14
-	+	145	42
-	+	150	0
-	+	143	0
-	+	157	26
-	+	148	0
-	+	146	0
-	+	145	0
-	+	140	0
-	+	143	37
-	+	146	0
-	+	145	0
-	+	142	16
-	+	156	35
-	+	3	21
-	+	2	18
-	+	4	22
-	+	1	18
-	+	31	4
-	+	3	11
-	+	10	11
-	+	8	0
-	+	20	5
-	+	21	0
-	+	24	30
-	+	25	28
-	+	20	4
-	+	8	4
-	+	31	5
-	+	30	5
-	+	20	5
-	+	30	4
-	+	20	4
-	+	31	5
-	+	20	5
-	+	8	5
 
 > ~\Documents\Python\color.py
 	*	1664627721	0
@@ -30425,19 +31809,6 @@ $\0
 	"	1	0
 	^	1	0
 
-> ~\vimfiles\plugin\introspect.vim
-	*	1664230931	0
-	"	164	0
-	^	162	20
-	.	162	19
-	+	175	0
-	+	174	0
-	+	176	0
-	+	204	0
-	+	201	40
-	+	204	0
-	+	162	19
-
 > ~\temp\220927.refactor_text_import.py
 	*	1664230929	0
 	"	4	9
@@ -30569,112 +31940,6 @@ $\0
 	+	1	0
 	+	134485	12
 
-> ~\vimfiles\plugin\statusline.vim
-	*	1664227042	0
-	"	220	33
-	^	212	42
-	.	212	41
-	+	82	0
-	+	83	0
-	+	82	16
-	+	116	8
-	+	80	25
-	+	80	35
-	+	80	26
-	+	80	44
-	+	82	0
-	+	81	13
-	+	80	0
-	+	84	48
-	+	118	59
-	+	118	19
-	+	118	12
-	+	118	45
-	+	118	24
-	+	118	9
-	+	118	0
-	+	86	0
-	+	85	0
-	+	115	0
-	+	113	36
-	+	112	0
-	+	114	14
-	+	112	15
-	+	114	15
-	+	111	35
-	+	105	30
-	+	107	0
-	+	102	47
-	+	107	51
-	+	111	1
-	+	112	16
-	+	113	1
-	+	114	1
-	+	112	0
-	+	114	2
-	+	108	39
-	+	109	22
-	+	110	8
-	+	121	3
-	+	111	0
-	+	106	37
-	+	104	41
-	+	95	32
-	+	88	14
-	+	91	51
-	+	92	37
-	+	95	24
-	+	102	41
-	+	89	59
-	+	90	57
-	+	93	20
-	+	98	0
-	+	102	0
-	+	100	25
-	+	99	14
-	+	101	35
-	+	99	22
-	+	102	23
-	+	103	40
-	+	76	0
-	+	75	8
-	+	76	0
-	+	89	0
-	+	166	43
-	+	70	8
-	+	71	8
-	+	72	8
-	+	70	8
-	+	71	8
-	+	72	8
-	+	74	12
-	+	78	8
-	+	80	12
-	+	83	12
-	+	84	12
-	+	86	12
-	+	70	0
-	+	121	1
-	+	55	0
-	+	54	10
-	+	50	24
-	+	52	32
-	+	53	19
-	+	81	30
-	+	109	15
-	+	81	15
-	+	109	15
-	+	81	15
-	+	109	15
-	+	293	5
-	+	293	0
-	+	293	5
-	+	293	0
-	+	292	0
-	+	212	41
-	a	181	16
-	b	181	16
-
 > ~\220927.refactor\blue.py
 	*	1664225163	0
 	"	1	0
@@ -30731,110 +31996,6 @@ $\0
 > C:\Program Files\Vim\vim82\doc\intro.txt
 	*	1664208112	0
 	"	1	0
-
-> ~\vimfiles\plugin\better.vim
-	*	1664208108	0
-	"	403	0
-	^	435	60
-	.	435	63
-	+	424	45
-	+	420	0
-	+	433	0
-	+	433	64
-	+	436	22
-	+	433	113
-	+	413	0
-	+	412	9
-	+	413	95
-	+	434	51
-	+	423	34
-	+	436	32
-	+	434	60
-	+	427	11
-	+	424	0
-	+	427	0
-	+	419	0
-	+	420	25
-	+	420	0
-	+	420	4
-	+	427	0
-	+	432	0
-	+	420	12
-	+	420	3
-	+	420	29
-	+	421	38
-	+	421	0
-	+	421	45
-	+	421	0
-	+	421	8
-	+	432	0
-	+	427	0
-	+	426	9
-	+	426	0
-	+	426	9
-	+	426	29
-	+	426	9
-	+	425	36
-	+	426	0
-	+	430	0
-	+	427	0
-	+	425	15
-	+	430	30
-	+	425	13
-	+	426	48
-	+	427	0
-	+	420	0
-	+	421	0
-	+	424	0
-	+	433	0
-	+	431	0
-	+	420	0
-	+	421	0
-	+	420	0
-	+	422	24
-	+	431	18
-	+	433	0
-	+	430	0
-	+	425	0
-	+	427	0
-	+	425	22
-	+	427	46
-	+	425	0
-	+	427	0
-	+	420	19
-	+	439	27
-	+	420	22
-	+	439	11
-	+	422	21
-	+	431	30
-	+	422	21
-	+	431	30
-	+	433	42
-	+	423	0
-	+	419	0
-	+	433	0
-	+	424	0
-	+	436	0
-	+	414	0
-	+	413	9
-	+	414	50
-	+	432	0
-	+	37	1
-	+	440	20
-	+	437	15
-	+	440	23
-	+	437	0
-	+	436	0
-	+	437	0
-	+	436	0
-	+	423	0
-	+	433	0
-	+	436	0
-	+	440	44
-	+	437	23
-	+	435	93
-	+	436	20
-	+	435	63
 
 > ~\vimfiles\temp\220926.vim_command_verbose.txt
 	*	1664208049	0
@@ -31108,66 +32269,6 @@ $\0
 > ~\neovim\coc\extensions\node_modules\coc-pyright\node_modules\pyright\dist\typeshed-fallback\stdlib\builtins.pyi
 	*	1664194886	0
 	"	1772	4
-
-> ~\vimfiles\coc-settings.json
-	*	1664194487	0
-	"	10	0
-	.	10	0
-	+	1	30
-	+	1	0
-	+	1	26
-	+	1	5
-	+	1	0
-	+	1	5
-	+	1	0
-	+	1	47
-	+	1	0
-	+	2	0
-	+	3	4
-	+	3	0
-	+	14	0
-	+	10	0
-	+	5	0
-	+	14	35
-	+	11	24
-	+	10	0
-	+	14	0
-	+	14	35
-	+	14	0
-	+	14	35
-	+	14	0
-	+	14	33
-	+	14	35
-	+	14	0
-	+	14	33
-	+	14	0
-	+	14	36
-	+	14	0
-	+	14	36
-	+	14	0
-	+	12	0
-	+	14	0
-	+	12	0
-	+	10	4
-	+	10	0
-	+	10	28
-	+	10	0
-	+	7	0
-	+	10	0
-	+	8	38
-	+	10	0
-	+	8	0
-	+	10	0
-	+	2	6
-	+	3	6
-	+	4	31
-	+	4	0
-	+	11	0
-	+	2	4
-	+	3	4
-	+	14	0
-	+	11	0
-	+	10	0
 
 > ~\Documents\Python\reltools.py
 	*	1664193726	0
@@ -31938,63 +33039,6 @@ $\0
 	*	1664182204	0
 	"	1	0
 
-> ~\vimfiles\plugin\grep.vim
-	*	1664182168	0
-	"	22	93
-	^	22	41
-	.	23	0
-	+	2	0
-	+	3	0
-	+	5	0
-	+	7	0
-	+	34	1
-	+	30	0
-	+	19	28
-	+	21	42
-	+	30	0
-	+	30	16
-	+	30	20
-	+	31	16
-	+	30	3
-	+	19	19
-	+	30	0
-	+	21	0
-	+	30	0
-	+	21	0
-	+	30	0
-	+	22	4
-	+	22	89
-	+	22	10
-	+	22	97
-	+	22	7
-	+	23	39
-	+	22	125
-	+	22	0
-	+	25	28
-	+	23	5
-	+	20	72
-	+	22	134
-	+	26	22
-	+	27	0
-	+	26	0
-	+	25	0
-	+	23	0
-	+	26	0
-	+	27	0
-	+	22	121
-	+	31	1
-	+	34	0
-	+	25	0
-	+	21	0
-	+	21	31
-	+	22	35
-	+	22	9
-	+	22	31
-	+	22	0
-	+	21	0
-	+	22	0
-	+	23	0
-
 > ~\Documents\Python\counter.py
 	*	1664180380	0
 	"	12	0
@@ -32055,10 +33099,6 @@ $\0
 	.	50	0
 	+	50	0
 
-> C:\Program Files\Vim\vim90\doc\syntax.txt
-	*	1664156678	0
-	"	5722	7
-
 > ~\vimfiles\plugged\ale\doc\ale-cpp.txt
 	*	1664156639	0
 	"	1	0
@@ -32071,20 +33111,12 @@ $\0
 	*	1664155614	0
 	"	1456	8
 
-> ~\vimfiles\plugged\ale\doc\ale.txt
-	*	1664150972	0
-	"	41	26
-
 > C:\Program Files\Python310\Lib\pathlib.py
 	*	1664150545	0
 	"	1176	16
 	^	1176	16
 	.	1176	0
 	+	1176	0
-
-> C:\Program Files\Vim\vim90\doc\quickfix.txt
-	*	1664150490	0
-	"	265	34
 
 > ~\vimfiles\temp\220926.temp_qf.txt
 	*	1664150368	0
@@ -32972,116 +34004,6 @@ $\0
 	+	25	0
 	+	14	26
 
-> ~\vimfiles\plugin\dotty.vim
-	*	1663606628	0
-	"	901	0
-	^	568	44
-	.	568	43
-	+	791	8
-	+	785	45
-	+	776	0
-	+	789	28
-	+	787	9
-	+	788	50
-	+	789	0
-	+	450	0
-	+	742	0
-	+	741	9
-	+	740	0
-	+	532	0
-	+	963	8
-	+	400	0
-	+	445	0
-	+	480	0
-	+	826	0
-	+	453	0
-	+	400	11
-	+	118	0
-	+	126	0
-	+	128	0
-	+	138	0
-	+	561	0
-	+	676	0
-	+	781	0
-	+	799	0
-	+	128	0
-	+	154	0
-	+	897	0
-	+	326	0
-	+	327	0
-	+	332	0
-	+	331	35
-	+	337	0
-	+	362	0
-	+	369	0
-	+	445	0
-	+	480	0
-	+	567	42
-	+	826	0
-	+	453	11
-	+	457	38
-	+	454	0
-	+	453	0
-	+	457	38
-	+	456	11
-	+	460	0
-	+	481	0
-	+	555	0
-	+	556	41
-	+	479	0
-	+	788	0
-	+	487	0
-	+	545	0
-	+	546	0
-	+	503	0
-	+	817	0
-	+	877	0
-	+	596	0
-	+	816	0
-	+	980	0
-	+	634	0
-	+	756	0
-	+	983	0
-	+	659	0
-	+	727	0
-	+	823	0
-	+	705	0
-	+	734	0
-	+	872	0
-	+	925	0
-	+	929	0
-	+	953	0
-	+	957	0
-	+	934	0
-	+	954	0
-	+	958	0
-	+	959	0
-	+	938	0
-	+	955	0
-	+	943	0
-	+	960	0
-	+	982	0
-	+	711	0
-	+	418	24
-	+	419	29
-	+	615	18
-	+	513	10
-	+	516	12
-	+	932	10
-	+	719	10
-	+	810	10
-	+	834	10
-	+	757	10
-	+	730	14
-	+	804	10
-	+	953	0
-	+	569	40
-	+	568	43
-	a	26	0
-	f	503	10
-	g	97	2
-	i	808	12
-
 > ~\vimfiles\plugged\vimspector\tests\vimrc
 	*	1663606626	0
 	"	1	0
@@ -33221,18 +34143,6 @@ $\0
 	+	9	1
 	+	158	0
 	+	10	0
-
-> ~\Documents\access_token.txt
-	*	1663600391	0
-	"	13	0
-	^	13	0
-	.	13	0
-	+	3	0
-	+	1	6
-	+	9	39
-	+	2	0
-	+	8	4
-	+	13	0
 
 > ~\vimfiles\plugged\vimspector\support\custom_ui_vimrc
 	*	1663600340	0
@@ -35274,20 +36184,6 @@ $\0
 	+	3	58
 	+	4	0
 
-> ~\vimfiles\after\syntax\python.vim
-	*	1662930910	0
-	"	1	0
-	^	1	2
-	.	2	0
-	+	2	0
-	+	1	9
-	+	7	28
-	+	8	0
-	+	9	4
-	+	17	37
-	+	17	0
-	+	2	0
-
 > C:\Program Files\Python310\Lib\sqlite3\__init__.py
 	*	1662929291	0
 	"	29	4
@@ -35629,94 +36525,6 @@ $\0
 <~\vimfiles\undofiles\C\Users\vivek\Documents\Python\common.py\Users\vivek\Documents\Python\common.pyUsers\Users\vivek\Documents\Python\common.pyvivek\Users\vivek\Documents\Python\common.pyDesktop\Users\vivek\Documents\Python\common.pybackup\Users\vivek\Documents\Python\common.pybackup-flask\Users\vivek\Documents\Python\common.pybackup.py
 	*	1661896900	0
 	"	1	0
-
-> ~\vimfiles\plugin\rename.vim
-	*	1661889796	0
-	"	9	0
-	.	26	0
-	+	22	6
-	+	21	10
-	+	22	41
-	+	2	18
-	+	2	26
-	+	22	48
-	+	23	11
-	+	22	17
-	+	23	0
-	+	4	15
-	+	23	7
-	+	21	16
-	+	2	5
-	+	21	4
-	+	17	28
-	+	21	11
-	+	17	15
-	+	17	33
-	+	17	43
-	+	21	16
-	+	17	0
-	+	5	28
-	+	17	28
-	+	5	10
-	+	17	0
-	+	23	0
-	+	23	22
-	+	23	13
-	+	23	24
-	+	23	17
-	+	23	26
-	+	23	0
-	+	23	20
-	+	23	0
-	+	23	15
-	+	23	0
-	+	21	47
-	+	21	8
-	+	21	0
-	+	23	0
-	+	21	16
-	+	23	9
-	+	21	27
-	+	21	0
-	+	2	0
-	+	23	15
-	+	17	34
-	+	23	0
-	+	18	27
-	+	21	0
-	+	18	0
-	+	19	0
-	+	21	7
-	+	20	56
-	+	21	0
-	+	22	21
-	+	20	0
-	+	17	9
-	+	9	12
-	+	9	75
-	+	17	0
-	+	9	0
-	+	9	80
-	+	9	21
-	+	12	51
-	+	13	23
-	+	15	14
-	+	14	31
-	+	16	8
-	+	17	0
-	+	18	0
-	+	17	9
-	+	10	40
-	+	11	0
-	+	12	21
-	+	17	0
-	+	6	0
-	+	7	0
-	+	12	0
-	+	17	0
-	+	2	0
-	+	23	0
-	+	26	0
 
 > ~\Desktop\vim_coc_repro\autoload\plug.vim
 	*	1661872545	0
@@ -37270,131 +38078,6 @@ $\0
 > C:\Program Files\Vim\vim82\doc\vim9.txt
 	*	1660328694	0
 	"	7	47
-
-> ~\vimfiles\plugin\cool.vim
-	*	1660314644	0
-	"	157	0
-	^	62	29
-	.	62	28
-	+	47	121
-	+	52	0
-	+	34	42
-	+	58	8
-	+	59	8
-	+	58	0
-	+	57	0
-	+	33	5
-	+	33	11
-	+	33	0
-	+	47	67
-	+	49	13
-	+	59	30
-	+	49	12
-	+	50	12
-	+	51	12
-	+	52	12
-	+	54	12
-	+	58	8
-	+	59	8
-	+	60	8
-	+	61	8
-	+	49	0
-	+	33	25
-	+	47	87
-	+	49	33
-	+	34	0
-	+	35	0
-	+	49	0
-	+	59	29
-	+	33	0
-	+	43	8
-	+	47	72
-	+	49	18
-	+	59	35
-	+	60	34
-	+	46	8
-	+	47	58
-	+	51	0
-	+	66	69
-	+	47	24
-	+	56	0
-	+	77	9
-	+	69	0
-	+	66	0
-	+	66	5
-	+	66	20
-	+	63	0
-	+	51	10
-	+	52	10
-	+	51	0
-	+	52	0
-	+	13	4
-	+	15	0
-	+	13	4
-	+	61	30
-	+	64	0
-	+	81	0
-	+	71	0
-	+	81	24
-	+	13	5
-	+	81	0
-	+	71	5
-	+	33	10
-	+	31	62
-	+	33	16
-	+	33	8
-	+	33	26
-	+	33	32
-	+	33	0
-	+	33	5
-	+	33	9
-	+	31	59
-	+	25	10
-	+	25	9
-	+	31	36
-	+	25	4
-	+	31	81
-	+	25	0
-	+	31	0
-	+	71	0
-	+	77	8
-	+	77	0
-	+	2	48
-	+	33	0
-	+	84	0
-	+	80	0
-	+	95	0
-	+	137	0
-	+	136	8
-	+	138	0
-	+	137	0
-	+	150	0
-	+	47	23
-	+	47	24
-	+	49	0
-	+	48	19
-	+	65	0
-	+	57	0
-	+	62	28
-
-> ~\vimfiles\build_command.vim
-	*	1660314468	0
-	"	1	12
-	^	6	24
-	.	6	0
-	+	1	0
-	+	3	11
-	+	6	9
-	+	2	11
-	+	6	0
-	+	4	18
-	+	4	102
-	+	4	0
-	+	1	11
-	+	1	0
-	+	8	0
-	+	1	0
-	+	6	0
 
 > ~\vimfiles\temp\scratch.vim
 	*	1660313573	0
@@ -48588,113 +49271,6 @@ $\0
 	*	1643558452	0
 	"	1	0
 
-> ~\vimfiles\plugin\buffer.vim
-	*	1643530034	0
-	"	21	47
-	^	3	0
-	.	2	0
-	+	21	55
-	+	25	52
-	+	18	51
-	+	21	53
-	+	25	50
-	+	57	0
-	+	48	8
-	+	48	0
-	+	47	0
-	+	33	0
-	+	47	0
-	+	33	19
-	+	57	0
-	+	47	0
-	+	57	29
-	+	29	0
-	+	57	0
-	+	57	19
-	+	57	14
-	+	57	0
-	+	47	0
-	+	42	38
-	+	47	27
-	+	34	26
-	+	42	37
-	+	34	27
-	+	47	0
-	+	42	61
-	+	43	33
-	+	47	0
-	+	44	36
-	+	45	32
-	+	44	0
-	+	31	0
-	+	29	0
-	+	31	0
-	+	54	50
-	+	57	0
-	+	31	0
-	+	15	55
-	+	31	0
-	+	15	0
-	+	31	0
-	+	47	0
-	+	48	0
-	+	32	28
-	+	32	49
-	+	33	47
-	+	45	48
-	+	42	69
-	+	45	60
-	+	48	0
-	+	46	14
-	+	36	32
-	+	35	27
-	+	38	18
-	+	41	12
-	+	42	0
-	+	29	0
-	+	26	0
-	+	29	0
-	+	10	10
-	+	10	0
-	+	7	0
-	+	7	9
-	+	7	17
-	+	7	0
-	+	10	44
-	+	26	35
-	+	7	21
-	+	26	0
-	+	10	24
-	+	7	5
-	+	10	0
-	+	10	5
-	+	46	0
-	+	10	0
-	+	7	22
-	+	22	25
-	+	26	25
-	+	54	41
-	+	23	14
-	+	29	0
-	+	27	14
-	+	27	0
-	+	28	0
-	+	46	14
-	+	28	0
-	+	18	0
-	+	6	0
-	+	10	0
-	+	54	52
-	+	15	56
-	+	18	41
-	+	32	49
-	+	7	0
-	+	36	51
-	+	4	0
-	+	2	0
-	a	15	47
-	b	15	47
-
 > ~\vimfiles\after\syntax\html.vim
 	*	1643528198	0
 	"	1	0
@@ -59494,90 +60070,6 @@ $\0
 > ~\vimfiles\pack\plugins\start\SQHell.vim\plugin\sqhell.vim
 	*	1624307144	0
 	"	13	36
-
-> ~\vimfiles\sqlite.py
-	*	1624304191	0
-	"	33	30
-	^	35	4
-	.	33	37
-	+	2	0
-	+	3	13
-	+	8	0
-	+	18	0
-	+	38	0
-	+	23	0
-	+	11	0
-	+	12	29
-	+	13	11
-	+	14	15
-	+	13	31
-	+	38	0
-	+	11	19
-	+	22	34
-	+	10	13
-	+	4	13
-	+	10	69
-	+	18	32
-	+	38	4
-	+	27	0
-	+	30	0
-	+	26	41
-	+	14	9
-	+	26	50
-	+	28	21
-	+	29	18
-	+	27	36
-	+	30	11
-	+	38	0
-	+	24	0
-	+	24	30
-	+	29	19
-	+	25	0
-	+	38	78
-	+	25	16
-	+	38	82
-	+	39	0
-	+	41	33
-	+	42	0
-	+	44	0
-	+	5	0
-	+	7	29
-	+	46	17
-	+	45	17
-	+	45	0
-	+	43	9
-	+	19	0
-	+	38	72
-	+	25	15
-	+	38	0
-	+	44	15
-	+	37	49
-	+	13	29
-	+	16	20
-	+	13	21
-	+	16	9
-	+	13	38
-	+	16	0
-	+	13	0
-	+	15	9
-	+	21	31
-	+	36	10
-	+	37	16
-	+	33	0
-	+	37	30
-	+	33	37
-	+	34	26
-	+	34	54
-	+	33	39
-	+	36	0
-	+	33	39
-	+	34	15
-	+	33	39
-	+	32	0
-	+	35	30
-	+	33	37
-	a	33	37
-	b	33	37
 
 > C:\Program Files (x86)\Vim\vim82\doc\textprop.txt
 	*	1624279328	0
@@ -80683,13 +81175,6 @@ $\0
 	+	3	0
 	+	4	0
 	+	1	0
-
-> ~\vimfiles\.gitignore
-	*	1579778019	0
-	"	1	0
-	^	1	6
-	.	1	5
-	+	1	5
 
 > C:\Program Files (x86)\Vim\vim82\plugin\matchparen.vim:25
 	*	1579720057	0

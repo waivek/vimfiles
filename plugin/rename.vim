@@ -22,4 +22,4 @@ function! s:Rename(new_name)
     bd #
     " This is required to update the value of expand("%")
 endfunction
-command -complete=file -nargs=1 Rename call <SID>Rename(<q-args>)
+command -complete=file -nargs=1 Rename call  s:Rename(<q-args>)
