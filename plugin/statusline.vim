@@ -44,7 +44,6 @@ function! s:RunJob()
     let directory = fnamemodify(path, ":h")
     let command = printf('cd %s && git status -s %s', directory, path)
     let job = job_start(["cmd.exe", "/c", command], { 
-                \"exit_cb": function('s:ExitCB'),
                 \"close_cb": function('s:CloseCB') })
 endfunction
 

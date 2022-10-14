@@ -1,0 +1,36 @@
+
+Repo 1: Powershell, Terminal, WSL, Everything with mklink automatic
+Repo 2: php, bash, nginx
+Always keep filenames same as system default. Never programmatically change default location except for [WRITE] files where mklink breaks.
+
+$APPDATA/Microsoft/Windows/PowerShell/PSReadLine/ConsoleHost_history.txt [WRITE]
+[TODO] $SH/rootfs/etc/php/7.0/fpm/php.ini
+[TODO] ~/.wslconfig
+[TODO] ~/pip/pip.ini
+$APPDATA/Microsoft/Windows/Start Menu/Programs/Startup/wsl_server_start.bat
+~/.pdbrc
+~/repl.py
+~/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json
+~/DisableWinCompat.powershell.config.json
+~/Documents/PowerShell/profile.ps1
+~/Documents/WindowsPowerShell/Microsoft.PowerShell_profile.ps1
+
+folder: regex:^.git$ !\plugged !\vimfiles !\neovim !\nvim !\FreeFonts !\Mingw !\github.com !\PyResearchDb
+Git Repositories:
+    [PRIORITY] ~/vimfiles *.vim vimrc coc-settings.json _viminfo[WRITE]
+    [PRIORITY] ~/Documents/Python *.py
+    [PRIORITY] ~/Desktop/Twitch /html/*.php, /code/*.py
+    [PRIORITY] ~/Desktop/backup
+    [PRIORITY] ~/Documents/config
+    ~/Documents/bat
+    ~/Desktop/website
+    ~/go/src
+    ~/Documents/AutoHotkey
+
+    [TODO] $APPDATA/Everything [WRITE]
+    [TODO] ~/Documents/texts/
+    [TODO] ~/Desktop/live
+    [TODO] ~/.ipython [WRITE]
+    [TODO] $WSL/etc/nginx/sites-available
+    [TODO] $SH/rootfs/home/waivek (.ssh, .bashrc, .dircolors, .tmux.conf, .profile, .bash_aliases, .inputrc) [WRITE] (.bash_history)
+    [TODO] C:/Users/vivek/AppData/Local/dbcli/litecli [WRITE]
