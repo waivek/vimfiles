@@ -36,6 +36,8 @@ Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'AndrewRadev/sideways.vim'
 Plug 'puremourning/vimspector'
 Plug 'leafOfTree/vim-vue-plugin'
+
+Plug 'arcticicestudio/nord-vim'
 call plug#end()
 if has("win32")
     source ~/vimfiles/ide.vim
@@ -1105,6 +1107,53 @@ function! s:GrepAbbrev()
 endfunction
 
 
+function! s:SurroundWithBracket(motion = v:null)
+    if a:motion == v:null
+        set operatorfunc=s:SurroundWithBracket
+        return 'g@'
+    endif
+
+    let yank_start_save = getpos("'[")
+    let yank_end_save = getpos("']")
+    execute "normal! i "
+    execute "normal! x"
+    call setpos("'[", yank_start_save)
+    call setpos("']", yank_end_save)
+
+    let reg_save = @"
+    normal! `[v`]y
+    let @" = '(' . @" . ')'
+    normal! gvp`[
+    let @" = reg_save
+
+endfunction
+function! s:SurroundLineWithBracket()
+    execute "normal! i "
+    execute "normal! x"
+    s/^\s*\zs.*\ze\s*$/(\0)/
+endfunction
+
+
+function! s:ToSingleQuote()
+    let pos_save = getpos(".")
+    execute "normal! i "
+    execute "normal! x"
+    normal cs"'
+    call setpos(".", pos_save)
+endfunction
+
+function! s:ToDobuleQuote()
+    let pos_save = getpos(".")
+    execute "normal! i "
+    execute "normal! x"
+    normal cs'"
+    call setpos(".", pos_save)
+endfunction
+
+nnoremap <expr> <silent> ( <SID>SurroundWithBracket()
+nnoremap        <silent> (( :call <SID>SurroundLineWithBracket()<CR>
+
+
 nnoremap =r :call <SID>EqualHeader()<CR>
 
 cabbrev   <expr> <         len(getcmdline()) == 1 && getcmdtype() =~ '[/?]' ? '\C\\><Left><Left>' : '<'
@@ -1141,6 +1190,9 @@ nnoremap <silent> <space>p :call <SID>OpenProbabilitiesFile()<CR>
 
 nnoremap <silent> <space>/ :s#\\#/#g<CR>
 nnoremap <silent> <space>\ :s#/#\\#g<CR>
+
+nnoremap <silent> <space>' :call <SID>ToSingleQuote()<CR>
+nnoremap <silent> <space>" :call <SID>ToDobuleQuote()<CR>
 
 nnoremap          <space>l <C-^>
 nnoremap <silent> <space>k :call <SID>LoadKMarkedFile()<CR>
@@ -1184,6 +1236,7 @@ endfunction
 nnoremap <silent> <CR> :call <SID>ObnoxiousErrorMessage('CR')<CR>
 nnoremap <silent> <S-CR> :w<CR>
 cnoremap <expr> w len(getcmdline()) == 0 && getcmdtype() == ":" ? "w<CR>" : "w"
+cabbrev <expr> command len(getcmdline()) == 7 && getcmdtype() == ":" ? "verbose command" : "command"
 " -- END: `:w` to WRITE
 
 " Global Functions:
@@ -1211,7 +1264,7 @@ nmap 8 *
 vmap 3 #
 vmap 8 *
 
-cnoremap <expr> M len(getcmdline()) == 0 && getcmdtype() == ":" ? "call <SID>ObnoxiousErrorMessage('MRU')<CR>" : "M"
+command! Elevate silent normal vi,yvafp
 
 source ~/vimfiles/performance/performance.vim
 

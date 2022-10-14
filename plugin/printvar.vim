@@ -27,12 +27,20 @@ function! s:ArgMatches(line)
     return lst
 endfunction
 
-function! VardumpEntry()
-    " echo s:ArgMatches(getline("."))
-    " return
-    let path = expand('~/Documents/Python/blank.py')
+function! s:PathToBufLines(path)
+    let path = a:path
+    let path = expand(path)
     let buf_nr = bufnr(path)
-    let lines = getline(1, '$')
+    let lines = getbufline(buf_nr, 1, '$')
+    return lines
+endfunction
+function! VardumpEntry()
+    let lines = s:PathToBufLines('~/Desktop/Twitch/coffee-vps/code/twitch_utilities.py')
+    call filter(lines, { idx, line -> line =~# '^\w\+\s*=' })
+    echo join(lines, "\n")
+    return
+
+    let lines = s:PathToBufLines('~/Documents/Python/blank.py')
     call s:ParseLines(lines)
 endfunction
 
@@ -92,7 +100,6 @@ function! s:ParseLines(lines)
     call sort(variables, function("s:OrderVariables")) " Line Number
     call map(variables, { _, D -> D['variable'] })
     call reverse(variables)
-    echo variables
     return variables
 
 endfunction
@@ -103,7 +110,6 @@ endfunction
 
 function! s:AsyncInitCallback(error, response)
     let g:printvar_response = { "error": error, "response": response }
-    echo "Loaded printvar"
 endfunction
 
 function! s:AsyncInit(extension, timer_id)
@@ -195,7 +201,7 @@ endfunction
 function! s:PrintPythonVariable()
     let s:items = s:RegexDocumentSymbols()
     call s:PythonSetUpCFU()
-    let ic_exists = search('from ic import.*ic', 'wn') != 0
+    let ic_exists = search('^\s*from ic import.*ic', 'wn') != 0
     if ic_exists
         imap <buffer> <expr> <Plug>InsertPrintvarText "ic()\<Left>\<C-x>\<C-u>\<C-p>"
         call feedkeys("\<Plug>InsertPrintvarText")

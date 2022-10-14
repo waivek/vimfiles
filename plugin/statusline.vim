@@ -1,4 +1,73 @@
 
+function! StatuslineEntry()
+    call s:RunJob()
+endfunction
+
+
+function! s:CloseCB(channel)
+    try
+        let lines = []
+        while ch_canread(a:channel)
+            let lines = lines + [ ch_read(a:channel) ]
+        endwhile
+        let msg = lines
+    catch
+        let msg = 'no message'
+    endtry
+    try
+        let err = ch_readraw(a:channel, #{part: 'err'})
+    catch
+        let err = 'no error'
+    endtry
+    if stridx(err, "not a git repository") != -1
+        " echo 'Not A Git Repo.'
+        let b:stl_git = 'notagitrepo'
+        return
+    endif
+    if empty(lines)
+        " echo 'Unmodified.'
+        let b:stl_git = 'unmodified'
+        return
+    endif
+    if slice(lines[0], 0, 2) ==# '??'
+        " echo 'Untracked.'
+        let b:stl_git = 'untracked'
+        return
+    endif
+    " echo string(lines)
+    " echoerr "msg: " . string(msg) . ", err: " . err
+
+endfunction
+
+function! s:RunJob()
+    let path = expand("%:p")
+    let directory = fnamemodify(path, ":h")
+    let command = printf('cd %s && git status -s %s', directory, path)
+    let job = job_start(["cmd.exe", "/c", command], { 
+                \"exit_cb": function('s:ExitCB'),
+                \"close_cb": function('s:CloseCB') })
+endfunction
+
+augroup GitStatusLine
+    au!
+    au BufRead  * call s:RunJob()
+    au BufWrite * call s:RunJob()
+augroup END
+
+function! GetGitStl()
+    if !exists('b:stl_git')
+        return ''
+    endif
+    if b:stl_git !=# 'untracked'
+        return ''
+    endif
+    let change_count = getchangelist()[1]
+    if change_count < 20
+        return ''
+    endif
+    return 'UNTRACKED'
+endfunction
+
 " Status Line {{{
 " 
 
@@ -113,7 +182,6 @@ function! s:GetRelpath_2()
     " C:\Users\vivek\Documents\Python\ic.py
     " ----- 3 ----- y
 
-    endif
 
 
 
@@ -256,7 +324,7 @@ set statusline=%<%{Relpath()}
 "     [Preview] - %w (preview window flag, not present in example)
 "                  = (separation point b/w left & right aligned fields)
 "
-set statusline+=%m%r%y%w%{DotMap()}%=\ %l/%-6L\ %3c 
+set statusline+=%m%r%y%w%{DotMap()}%#Error#%{GetGitStl()}%0*%=\ %l/%-6L\ %3c 
 " }}}
 " Error Lines {{{
 let g:last_command = ""

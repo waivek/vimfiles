@@ -445,8 +445,11 @@ function! s:SurroundWithBracketAndInsert(motion = v:null)
     let s:function_surround_call_count = s:function_surround_call_count + 1
 endfunction
 
+" Command To Search Vimfiles:
+" grep -g *.vim -g vimrc "^\s*\b[nvxo]?(nore)?map[^(]*\)"
 " nmap <silent> ) :set opfunc=<SID>SurroundWithBracketAndInsert<cr>g@
 nmap <expr> <silent> ) <SID>SurroundWithBracketAndInsert()
+xmap <expr> <silent> ) <SID>SurroundWithBracketAndInsert()
 
 function! s:GetModifiedFiles()
 
@@ -467,6 +470,8 @@ function! s:GetModifiedFiles()
     echo join(l:lines, "\n")
     call feedkeys(":b")
 endfunction
+
+
 command! GMF call s:GetModifiedFiles()
 nnoremap g' :call <SID>GetModifiedFiles()<CR>
 

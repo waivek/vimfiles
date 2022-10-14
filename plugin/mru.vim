@@ -18,6 +18,7 @@ endfunction
 " For empty string open's first file
 function! s:MruFunction(args)
     " They entered a full file name like `cs.vim`
+    let fname = ''
     if match(a:args, ":") == -1
         let filenames = s:MruCompletion(a:args, 0, 0)
         " There is at least one result
@@ -30,7 +31,13 @@ function! s:MruFunction(args)
     if !empty(fname)
         let pos_plus_one = s:GetStrBeforeColon(fname)
         call s:CloseUI2Popup(v:true)
-        execute "edit " . v:oldfiles[pos_plus_one-1]
+
+        let path = v:oldfiles[pos_plus_one-1]
+        if bufexists(expand(path))
+            execute "b " . path
+        else
+            execute "edit " . v:oldfiles[pos_plus_one-1]
+        endif
     else
         echo "Invalid Input"
     endif

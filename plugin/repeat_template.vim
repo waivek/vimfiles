@@ -13,8 +13,12 @@ function! s:FunctionName(motion = v:null)
     endif
 
     " Merge undoblock
+    let yank_start_save = getpos("'[")
+    let yank_end_save = getpos("']")
     execute "normal! i "
     execute "normal! x"
+    call setpos("'[", yank_start_save)
+    call setpos("']", yank_end_save)
 
     " Load stuff from s:save_D by default
 

@@ -9,7 +9,7 @@ hi   StatusLineNC   guifg=black     guibg=#6c6c6c
 hi   MatchParen     guifg=black     guibg=#5fafaf
 hi   Tag            guifg=#ff8700   guibg=NONE
 hi   Function       guifg=#d47777   guibg=NONE
-
+hi   LineNr         guibg=#042428   guifg=#585858 
 
 hi! link PreProc Normal
 hi! link Special Normal
@@ -24,4 +24,3 @@ hi! link Folded Function
 hi link helpOption Identifier
 hi link helpSpecial String
 
-hi LineNr guibg=#042428 guifg=#585858 
