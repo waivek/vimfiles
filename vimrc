@@ -120,12 +120,12 @@ onoremap k j
 nnoremap , ;
 xnoremap , ;
 
-inoremap jk 
-inoremap Jk 
-inoremap jK 
-inoremap JK 
-inoremap J: 
-inoremap j: 
+inoremap jk <Esc>
+inoremap Jk <Esc>
+inoremap jK <Esc>
+inoremap JK <Esc>
+inoremap J: <Esc>
+inoremap j: <Esc>
 
 cnoremap jk <C-f>
 tnoremap jk <C-W>N
@@ -431,6 +431,7 @@ augroup AddPathHighlightGroups
     " au Syntax * call s:PathSyntax()
 augroup END
 
+
 function! s:normal_to_curly_quotes()
     let view_save = winsaveview()
     let col_save = col(".")
@@ -445,12 +446,12 @@ function! s:normal_to_curly_quotes()
     let @" = reg_save
 
     if quote_type == '"'
-        normal! vi"
+        execute "normal! vi\"\<esc>"
         normal! `<hr“
         normal! f"r”
         normal! `<
     elseif quote_type == "'"
-        normal! vi'
+        execute "normal! vi'\<esc>"
         normal! `<hr‘
         normal! f'r’
         normal! `<
