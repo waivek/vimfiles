@@ -1,7 +1,13 @@
 
+
 function! s:RunPython()
     let command = '!start cmd /k python ' . expand("%:p")
     " let command = '!start wt -w 0 nt -p "Command Prompt" python ' . expand("%:p")
+    execute command
+endfunction
+
+function! s:RunNode()
+    let command = '!start cmd /k node ' . expand("%:p")
     execute command
 endfunction
 
@@ -30,6 +36,8 @@ endfunction
 function! s:Run()
     if &ft == "python"
         call s:RunPython()
+    elseif &ft == "javascript"
+        call s:RunNode()
     elseif &ft == "go"
         call s:RunGo()
     elseif expand("%:p:h") == expand("~/vimfiles/todo")

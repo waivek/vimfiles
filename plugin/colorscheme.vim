@@ -73,3 +73,5 @@ augroup ExtendColorScheme
 augroup END
 
 hi! link vimFunction Function
+
+command! ListColors so $VIMRUNTIME/syntax/hitest.vim

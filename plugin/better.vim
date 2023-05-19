@@ -326,8 +326,8 @@ function! s:BetterIT(mode)
 endfunction
 " }}}
 
-xnoremap it :<c-u>call <SID>BetterIT("selection")<CR>
-onoremap it :<c-u>call <SID>BetterIT("operation")<CR>
+xnoremap iT :<c-u>call <SID>BetterIT("selection")<CR>
+onoremap iT :<c-u>call <SID>BetterIT("operation")<CR>
 
 " BetterQuestionMark (deprecated, too complex, easier to remap n and N) {{{
 function! s:Unmap()

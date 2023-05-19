@@ -31,6 +31,13 @@ function! s:Grep(key, paths)
     echo printf("%d Matches", match_count)
 endfunction
 
+function! s:VueGrep(key)
+    let regex = '\.vue$'
+    let excludes = [ 'undofiles' ]
+    let s:vue_paths = empty(s:vue_paths) ? s:GetGreppablePaths(regex, excludes) : s:vue_paths
+    call s:Grep(a:key, s:vue_paths)
+endfunction
+
 function! s:PyGrep(key)
     let regex = '\.py$'
     let excludes = [ 'appdata', 'program files', 'undofiles' ]
@@ -47,7 +54,9 @@ endfunction
 
 let s:python_paths = []
 let s:vim_paths = []
+let s:vue_paths = []
 
 command! -nargs=1 PyGrep call s:PyGrep(<q-args>)
 command! -nargs=1 VimGrep call s:VimGrep(<q-args>)
+command! -nargs=1 VueGrep call s:VueGrep(<q-args>)
 

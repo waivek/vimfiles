@@ -424,6 +424,7 @@ vnoremap <buffer> <silent> <space>b :<c-u>call <SID>InsertBreakpointVisual()<CR>
 nnoremap <silent> <buffer> <space>t :call <SID>ToggleTimerSingleLine()<CR>
 vnoremap <silent> <space>t :<c-u>call <SID>InsertTimerVisual()<CR>
 nnoremap <silent> <space>T :call <SID>InsertFileTimer()<CR>
+inoremap <buffer> jF print(f"{}")T{
 
 setlocal path+=~/Documents/Python/
 

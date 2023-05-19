@@ -17,7 +17,7 @@ $APPDATA/Microsoft/Windows/Start Menu/Programs/Startup/wsl_server_start.bat
 
 folder: regex:^.git$ !\plugged !\vimfiles !\neovim !\nvim !\FreeFonts !\Mingw !\github.com !\PyResearchDb
 Git Repositories:
-    [PRIORITY] ~/vimfiles *.vim vimrc coc-settings.json _viminfo[WRITE]
+    [PRIORITY] ~/vimfiles *.vim vimrc coc-settings.json _viminfo [WRITE]
     [PRIORITY] ~/Documents/Python *.py
     [PRIORITY] ~/Desktop/Twitch /html/*.php, /code/*.py
     [PRIORITY] ~/Desktop/backup
@@ -34,3 +34,4 @@ Git Repositories:
     [TODO] $WSL/etc/nginx/sites-available
     [TODO] $SH/rootfs/home/waivek (.ssh, .bashrc, .dircolors, .tmux.conf, .profile, .bash_aliases, .inputrc) [WRITE] (.bash_history)
     [TODO] C:/Users/vivek/AppData/Local/dbcli/litecli [WRITE]
+

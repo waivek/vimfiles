@@ -9,3 +9,13 @@
 "
 " Probably have to use tcomment and map shortcuts.
 " Definitely read autoload/tcomment.vim and plugin/tcomment.vim  to understand edge cases.
+
+
+function! s:ToggleComment()
+    TComment
+endfunction
+
+nnoremap <Plug>ToggleComment :call <SID>ToggleComment()<CR>
+vnoremap <Plug>ToggleComment :call <SID>ToggleComment()<CR>
+
+

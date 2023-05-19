@@ -1,3 +1,7 @@
+" Buffer Idea’s
+" :b should be smart-case sensitive
+" Unlisted / hidden buffers?
+"
 
 finish
 

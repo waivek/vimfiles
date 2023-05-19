@@ -33,11 +33,19 @@ call plug#begin()
 Plug 'dense-analysis/ale'
 " Plug 'neoclide/coc.nvim', { 'tag': 'v0.0.81' }
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
+Plug 'tomtom/tcomment_vim'
+Plug 'tommcdo/vim-exchange'
 Plug 'AndrewRadev/sideways.vim'
+
+
+
 Plug 'puremourning/vimspector'
 Plug 'leafOfTree/vim-vue-plugin'
 
 Plug 'arcticicestudio/nord-vim'
+Plug 'AndrewRadev/splitjoin.vim'
+
+Plug 'github/copilot.vim'
 call plug#end()
 if has("win32")
     source ~/vimfiles/ide.vim
@@ -1150,6 +1158,16 @@ function! s:ToDobuleQuote()
     call setpos(".", pos_save)
 endfunction
 
+function! s:PhpToPython()
+    '<,'>s/;$//
+    '<,'>s/as_json/query2json
+    '<,'>s/\$//g
+endfunction
+
+
+
+command! PhpToPython call s:PhpToPython()
+
 nnoremap <expr> <silent> ( <SID>SurroundWithBracket()
 nnoremap        <silent> (( :call <SID>SurroundLineWithBracket()<CR>
 
@@ -1200,6 +1218,9 @@ nnoremap          <space>r :MRU
 
 nmap              <space>f <Plug>SearchOnScreen
 nmap     <silent> <space>; <Plug>Run
+
+nmap     <silent> <space>t <Plug>ToggleComment
+vmap     <silent> <space>t <Plug>ToggleComment
 
 
 function! s:AppendCommaToRange()

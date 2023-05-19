@@ -136,7 +136,8 @@ function! s:VisualSelectAroundAttribute()
 
     " Check if cursor is inside the last attribute
     let cursor_on_last_attribute = v:false
-    let last_attribute_pattern = search('\w\+="[^"]*"\s*>\?', "e")
+    " let last_attribute_pattern = search('\w\+="[^"]*"\s*>\?', "e")
+    let last_attribute_pattern = search('\S\+="[^"]*"\s*>\?', "e")
     normal! vy
     let character_under_cursor = @"
     let on_last_attribute = character_under_cursor ==# ">"
@@ -149,9 +150,11 @@ function! s:VisualSelectAroundAttribute()
     " appropriate context
     let attribute_pattern = ""
     if on_last_attribute
-        let attribute_pattern = '\s*\w\+="[^"]*"\s*\ze>'
+        " let attribute_pattern = '\s*\w\+="[^"]*"\s*\ze>'
+        let attribute_pattern = '\s*\S\+="[^"]*"\s*\ze>'
     else
-        let attribute_pattern = '\w\+="[^"]*"\s*'
+        " let attribute_pattern = '\w\+="[^"]*"\s*'
+        let attribute_pattern = '\S\+="[^"]*"\s*'
     endif
     call search(attribute_pattern, "bc")
     normal! v

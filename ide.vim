@@ -1,4 +1,9 @@
 let g:coc_global_extensions = [ 'coc-vimlsp' ]
+
+
+" For yaegassy/coc-tailwindcss3
+au FileType html let b:coc_root_patterns = ['.git', '.env', 'tailwind.config.js', 'tailwind.config.cjs']
+
 " [disabled] Insert Mode Completions {{{
 
 " if (executable('pyls'))
@@ -384,11 +389,16 @@ inoremap <silent> <expr>  <S-TAB> <SID>ShiftTab()
 " <Plug>VimspectorBalloonEval                 _internal_
 
 function! s:VimspectorIsEnabled()
+    if !exists("g:vimspector_session_windows")
+        return v:false
+    endif
     if g:vimspector_session_windows == { 'breakpoints': v:none }
         return v:false
-    else
-        return v:true
     endif
+    if g:vimspector_session_windows == {}
+        return v:false
+    endif
+    return v:true
 endfunction
 
 if !exists("s:left_save")
@@ -396,8 +406,8 @@ if !exists("s:left_save")
     let s:right_save = maparg("<Right>", "n")
 endif
 
-nmap <expr> <Left>  <SID>VimspectorIsEnabled() ? '<Plug>VimspectorStepOut' : '<Plug>SidewaysLeftExtended'
-nmap <expr> <Right> <SID>VimspectorIsEnabled() ? '<Plug>VimspectorStepInto' : '<Plug>SidewaysRightExtended'
+nmap <silent> <expr> <Left>  <SID>VimspectorIsEnabled() ? '<Plug>VimspectorStepOut' : '<Plug>SidewaysLeftExtended'
+nmap <silent> <expr> <Right> <SID>VimspectorIsEnabled() ? '<Plug>VimspectorStepInto' : '<Plug>SidewaysRightExtended'
 
 nmap <Up>    <Plug>VimspectorUpFrame
 nmap <Down>  <Plug>VimspectorDownFrame
