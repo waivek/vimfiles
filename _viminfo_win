@@ -20,10 +20,14 @@
 $
 
 # Command Line History (newest to oldest):
+:CMD .
+|2,0,1684877594,,"CMD ."
+:41
+|2,0,1684877586,,"41"
+:b C:\Users\vivek\vimfiles\vimrc
+|2,0,1684877584,,"b C:\\Users\\vivek\\vimfiles\\vimrc"
 :q
 |2,0,1684877387,,"q"
-:b C:\Users\vivek\vimfiles\vimrc
-|2,0,1684877375,,"b C:\\Users\\vivek\\vimfiles\\vimrc"
 :CMD
 |2,0,1684877304,,"CMD"
 :cd plugged/
@@ -826,8 +830,6 @@ $
 |2,0,1675641364,,"MRU access"
 :e fonts/
 |2,0,1675641267,,"e fonts/"
-:CMD .
-|2,0,1675641174,,"CMD ."
 :e ~/Desktop/Typography/FontServer/
 |2,0,1675641020,,"e ~/Desktop/Typography/FontServer/"
 :MRU host
@@ -29557,33 +29559,38 @@ $
 	C:/Users/vivek/vimfiles
 |3,0,0,0,1,0,1684877381,"C:/Users/vivek/vimfiles"
 ""1	LINE	0
-	colo codedark
-|3,1,1,1,1,0,1684877383,"colo codedark"
+	
+	" Unix {{{
+	if has("unix")
+	    set viminfo='10000,<50,s10,h,rA:,rB:,%,f1,n~/.vim/_viminfo
+	endif
+	" }}}
+|3,1,1,1,6,0,1684877590,"","\" Unix {{{","if has(\"unix\")","    set viminfo='10000,<50,s10,h,rA:,rB:,%,f1,n~/.vim/_viminfo","endif","\" }}}"
 "2	LINE	0
-	    source ~/.vim/plugin/colorscheme.vim
-|3,0,2,1,1,0,1684876857,"    source ~/.vim/plugin/colorscheme.vim"
+	colo codedark
+|3,0,2,1,1,0,1684877383,"colo codedark"
 "3	LINE	0
-	    source ~/.vim/ide.vim
-|3,0,3,1,1,0,1684876837,"    source ~/.vim/ide.vim"
+	    source ~/.vim/plugin/colorscheme.vim
+|3,0,3,1,1,0,1684876857,"    source ~/.vim/plugin/colorscheme.vim"
 "4	LINE	0
+	    source ~/.vim/ide.vim
+|3,0,4,1,1,0,1684876837,"    source ~/.vim/ide.vim"
+"5	LINE	0
 	    " colorscheme apprentice
 	    " colorscheme dracula
-|3,0,4,1,2,0,1684876833,"    \" colorscheme apprentice","    \" colorscheme dracula"
-"5	LINE	0
-	    colorscheme codedark
-|3,0,5,1,1,0,1684876828,"    colorscheme codedark"
+|3,0,5,1,2,0,1684876833,"    \" colorscheme apprentice","    \" colorscheme dracula"
 "6	LINE	0
-	
-|3,0,6,1,1,0,1684876816,""
+	    colorscheme codedark
+|3,0,6,1,1,0,1684876828,"    colorscheme codedark"
 "7	LINE	0
 	
-|3,0,7,1,1,0,1684876801,""
+|3,0,7,1,1,0,1684876816,""
 "8	LINE	0
-	???
-|3,0,8,1,1,0,1684838774,"???"
+	
+|3,0,8,1,1,0,1684876801,""
 "9	LINE	0
-	item = 1
-|3,0,9,1,1,0,1684835260,"item = 1"
+	???
+|3,0,9,1,1,0,1684838774,"???"
 "a	CHAR	0
 	0i'jkA',
 |3,0,10,0,1,0,1683934292,"0i'jkA',"
@@ -29698,40 +29705,52 @@ $
 |4,75,10,0,1664397883,"~\\Desktop\\Twitch\\coffee-vps\\flask-vue\\vuejs\\Chart.vue"
 'M  1564  44  C:\Program Files (x86)\Vim\vim82\doc\quickfix.txt
 |4,77,1564,44,1582635887,"C:\\Program Files (x86)\\Vim\\vim82\\doc\\quickfix.txt"
-'0  1320  0  ~\vimfiles\vimrc
-|4,48,1320,0,1684877580,"~\\vimfiles\\vimrc"
+'0  13  76  ~\vimfiles\vimrc
+|4,48,13,76,1684877612,"~\\vimfiles\\vimrc"
 '1  1320  0  ~\vimfiles\vimrc
-|4,49,1320,0,1684877388,"~\\vimfiles\\vimrc"
-'2  14  4  ~\vimfiles\syntax\javascript.vim
-|4,50,14,4,1684877348,"~\\vimfiles\\syntax\\javascript.vim"
-'3  14  4  ~\vimfiles\syntax\javascript.vim
-|4,51,14,4,1684877348,"~\\vimfiles\\syntax\\javascript.vim"
+|4,49,1320,0,1684877580,"~\\vimfiles\\vimrc"
+'2  1314  0  ~\vimfiles\vimrc
+|4,50,1314,0,1684877388,"~\\vimfiles\\vimrc"
+'3  1320  0  ~\vimfiles\vimrc
+|4,51,1320,0,1684877388,"~\\vimfiles\\vimrc"
 '4  14  4  ~\vimfiles\syntax\javascript.vim
 |4,52,14,4,1684877348,"~\\vimfiles\\syntax\\javascript.vim"
 '5  14  4  ~\vimfiles\syntax\javascript.vim
 |4,53,14,4,1684877348,"~\\vimfiles\\syntax\\javascript.vim"
-'6  1  0  ~\vimfiles\plugin\argument-textobj.vim
-|4,54,1,0,1684876459,"~\\vimfiles\\plugin\\argument-textobj.vim"
-'7  1  0  ~\vimfiles\plugin\argument-textobj.vim
-|4,55,1,0,1684876459,"~\\vimfiles\\plugin\\argument-textobj.vim"
-'8  1  0  ~\vimfiles\plugin\argument-textobj.vim
-|4,56,1,0,1684876459,"~\\vimfiles\\plugin\\argument-textobj.vim"
-'9  1  0  ~\vimfiles\plugin\argument-textobj.vim
-|4,57,1,0,1684876459,"~\\vimfiles\\plugin\\argument-textobj.vim"
+'6  14  4  ~\vimfiles\syntax\javascript.vim
+|4,54,14,4,1684877348,"~\\vimfiles\\syntax\\javascript.vim"
+'7  14  4  ~\vimfiles\syntax\javascript.vim
+|4,55,14,4,1684877348,"~\\vimfiles\\syntax\\javascript.vim"
+'8  14  4  ~\vimfiles\syntax\javascript.vim
+|4,56,14,4,1684877348,"~\\vimfiles\\syntax\\javascript.vim"
+'9  14  4  ~\vimfiles\syntax\javascript.vim
+|4,57,14,4,1684877348,"~\\vimfiles\\syntax\\javascript.vim"
 
 # Jumplist (newest first):
+-'  13  76  ~\vimfiles\vimrc
+|4,39,13,76,1684877612,"~\\vimfiles\\vimrc"
+-'  38  5  ~\vimfiles\vimrc
+|4,39,38,5,1684877590,"~\\vimfiles\\vimrc"
+-'  1314  0  ~\vimfiles\vimrc
+|4,39,1314,0,1684877585,"~\\vimfiles\\vimrc"
 -'  1320  0  ~\vimfiles\vimrc
 |4,39,1320,0,1684877580,"~\\vimfiles\\vimrc"
 -'  1320  0  ~\vimfiles\vimrc
 |4,39,1320,0,1684877388,"~\\vimfiles\\vimrc"
+-'  416  26  ~\vimfiles\vimrc
+|4,39,416,26,1684877382,"~\\vimfiles\\vimrc"
 -'  422  26  ~\vimfiles\vimrc
 |4,39,422,26,1684877382,"~\\vimfiles\\vimrc"
 -'  422  26  ~\vimfiles\vimrc
 |4,39,422,26,1684877382,"~\\vimfiles\\vimrc"
+-'  1315  5  ~\vimfiles\vimrc
+|4,39,1315,5,1684877381,"~\\vimfiles\\vimrc"
 -'  1321  5  ~\vimfiles\vimrc
 |4,39,1321,5,1684877381,"~\\vimfiles\\vimrc"
 -'  1321  5  ~\vimfiles\vimrc
 |4,39,1321,5,1684877381,"~\\vimfiles\\vimrc"
+-'  97  0  ~\vimfiles\vimrc
+|4,39,97,0,1684877376,"~\\vimfiles\\vimrc"
 -'  103  0  ~\vimfiles\vimrc
 |4,39,103,0,1684877376,"~\\vimfiles\\vimrc"
 -'  103  0  ~\vimfiles\vimrc
@@ -29742,6 +29761,12 @@ $
 |4,39,14,4,1684877348,"~\\vimfiles\\syntax\\javascript.vim"
 -'  14  4  ~\vimfiles\syntax\javascript.vim
 |4,39,14,4,1684877348,"~\\vimfiles\\syntax\\javascript.vim"
+-'  14  4  ~\vimfiles\syntax\javascript.vim
+|4,39,14,4,1684877348,"~\\vimfiles\\syntax\\javascript.vim"
+-'  1  0  ~\vimfiles\syntax\javascript.vim
+|4,39,1,0,1684877271,"~\\vimfiles\\syntax\\javascript.vim"
+-'  1  0  ~\vimfiles\syntax\html.vim
+|4,39,1,0,1684877271,"~\\vimfiles\\syntax\\html.vim"
 -'  1  0  ~\vimfiles\syntax\javascript.vim
 |4,39,1,0,1684877271,"~\\vimfiles\\syntax\\javascript.vim"
 -'  1  0  ~\vimfiles\syntax\html.vim
@@ -29760,6 +29785,10 @@ $
 |4,39,1,0,1684877268,"~\\vimfiles\\syntax\\conceal.vim"
 -'  1  0  ~\vimfiles\syntax\conceal.vim
 |4,39,1,0,1684877268,"~\\vimfiles\\syntax\\conceal.vim"
+-'  1  0  ~\vimfiles\syntax\conceal.vim
+|4,39,1,0,1684877268,"~\\vimfiles\\syntax\\conceal.vim"
+-'  1  0  ~\vimfiles\syntax\afl.vim
+|4,39,1,0,1684877257,"~\\vimfiles\\syntax\\afl.vim"
 -'  1  0  ~\vimfiles\syntax\afl.vim
 |4,39,1,0,1684877257,"~\\vimfiles\\syntax\\afl.vim"
 -'  1  0  ~\vimfiles\syntax\afl.vim
@@ -29774,6 +29803,10 @@ $
 |4,39,1,0,1684877172,"~\\vimfiles\\ftplugin\\vue.vim"
 -'  1  0  ~\vimfiles\ftplugin\vue.vim
 |4,39,1,0,1684877172,"~\\vimfiles\\ftplugin\\vue.vim"
+-'  1  0  ~\vimfiles\ftplugin\vue.vim
+|4,39,1,0,1684877172,"~\\vimfiles\\ftplugin\\vue.vim"
+-'  1  0  ~\vimfiles\ftplugin\vim.vim
+|4,39,1,0,1684877152,"~\\vimfiles\\ftplugin\\vim.vim"
 -'  1  0  ~\vimfiles\ftplugin\vim.vim
 |4,39,1,0,1684877152,"~\\vimfiles\\ftplugin\\vim.vim"
 -'  1  0  ~\vimfiles\ftplugin\vim.vim
@@ -29786,6 +29819,10 @@ $
 |4,39,1,0,1684877150,"~\\vimfiles\\ftplugin\\qf.vim"
 -'  1  0  ~\vimfiles\ftplugin\qf.vim
 |4,39,1,0,1684877150,"~\\vimfiles\\ftplugin\\qf.vim"
+-'  1  0  ~\vimfiles\ftplugin\qf.vim
+|4,39,1,0,1684877150,"~\\vimfiles\\ftplugin\\qf.vim"
+-'  1  0  ~\vimfiles\ftplugin\python.vim
+|4,39,1,0,1684877148,"~\\vimfiles\\ftplugin\\python.vim"
 -'  1  0  ~\vimfiles\ftplugin\python.vim
 |4,39,1,0,1684877148,"~\\vimfiles\\ftplugin\\python.vim"
 -'  1  0  ~\vimfiles\ftplugin\python.vim
@@ -29798,6 +29835,10 @@ $
 |4,39,1,0,1684877142,"~\\vimfiles\\ftplugin\\markdown.vim"
 -'  1  0  ~\vimfiles\ftplugin\markdown.vim
 |4,39,1,0,1684877142,"~\\vimfiles\\ftplugin\\markdown.vim"
+-'  1  0  ~\vimfiles\ftplugin\markdown.vim
+|4,39,1,0,1684877142,"~\\vimfiles\\ftplugin\\markdown.vim"
+-'  1  0  ~\vimfiles\ftplugin\json.vim
+|4,39,1,0,1684877133,"~\\vimfiles\\ftplugin\\json.vim"
 -'  1  0  ~\vimfiles\ftplugin\json.vim
 |4,39,1,0,1684877133,"~\\vimfiles\\ftplugin\\json.vim"
 -'  1  0  ~\vimfiles\ftplugin\json.vim
@@ -29810,6 +29851,10 @@ $
 |4,39,1,0,1684877131,"~\\vimfiles\\ftplugin\\javascript.vim"
 -'  1  0  ~\vimfiles\ftplugin\javascript.vim
 |4,39,1,0,1684877131,"~\\vimfiles\\ftplugin\\javascript.vim"
+-'  1  0  ~\vimfiles\ftplugin\javascript.vim
+|4,39,1,0,1684877131,"~\\vimfiles\\ftplugin\\javascript.vim"
+-'  1  0  ~\vimfiles\ftplugin\html.vim
+|4,39,1,0,1684877130,"~\\vimfiles\\ftplugin\\html.vim"
 -'  1  0  ~\vimfiles\ftplugin\html.vim
 |4,39,1,0,1684877130,"~\\vimfiles\\ftplugin\\html.vim"
 -'  1  0  ~\vimfiles\ftplugin\html.vim
@@ -29822,6 +29867,10 @@ $
 |4,39,1,0,1684877126,"~\\vimfiles\\ftplugin\\css.vim"
 -'  1  0  ~\vimfiles\ftplugin\css.vim
 |4,39,1,0,1684877126,"~\\vimfiles\\ftplugin\\css.vim"
+-'  1  0  ~\vimfiles\ftplugin\css.vim
+|4,39,1,0,1684877126,"~\\vimfiles\\ftplugin\\css.vim"
+-'  1  0  ~\vimfiles\ftplugin\conceal.vim
+|4,39,1,0,1684877124,"~\\vimfiles\\ftplugin\\conceal.vim"
 -'  1  0  ~\vimfiles\ftplugin\conceal.vim
 |4,39,1,0,1684877124,"~\\vimfiles\\ftplugin\\conceal.vim"
 -'  1  0  ~\vimfiles\ftplugin\conceal.vim
@@ -29834,6 +29883,10 @@ $
 |4,39,1,0,1684877054,"~\\vimfiles\\after\\ftplugin\\python.vim"
 -'  1  0  ~\vimfiles\after\ftplugin\python.vim
 |4,39,1,0,1684877054,"~\\vimfiles\\after\\ftplugin\\python.vim"
+-'  1  0  ~\vimfiles\after\ftplugin\python.vim
+|4,39,1,0,1684877054,"~\\vimfiles\\after\\ftplugin\\python.vim"
+-'  1  0  ~\vimfiles\after\ftplugin\qf.vim
+|4,39,1,0,1684877053,"~\\vimfiles\\after\\ftplugin\\qf.vim"
 -'  1  0  ~\vimfiles\after\ftplugin\qf.vim
 |4,39,1,0,1684877053,"~\\vimfiles\\after\\ftplugin\\qf.vim"
 -'  1  0  ~\vimfiles\after\ftplugin\qf.vim
@@ -29846,6 +29899,10 @@ $
 |4,39,1,0,1684877052,"~\\vimfiles\\after\\indent\\vue.vim"
 -'  1  0  ~\vimfiles\after\indent\vue.vim
 |4,39,1,0,1684877052,"~\\vimfiles\\after\\indent\\vue.vim"
+-'  1  0  ~\vimfiles\after\indent\vue.vim
+|4,39,1,0,1684877052,"~\\vimfiles\\after\\indent\\vue.vim"
+-'  382  0  ~\vimfiles\after\syntax\cs.vim
+|4,39,382,0,1684877050,"~\\vimfiles\\after\\syntax\\cs.vim"
 -'  382  0  ~\vimfiles\after\syntax\cs.vim
 |4,39,382,0,1684877050,"~\\vimfiles\\after\\syntax\\cs.vim"
 -'  382  0  ~\vimfiles\after\syntax\cs.vim
@@ -29858,69 +29915,19 @@ $
 |4,39,1,0,1684877049,"~\\vimfiles\\after\\syntax\\json.vim"
 -'  1  0  ~\vimfiles\after\syntax\json.vim
 |4,39,1,0,1684877049,"~\\vimfiles\\after\\syntax\\json.vim"
+-'  1  0  ~\vimfiles\after\syntax\json.vim
+|4,39,1,0,1684877049,"~\\vimfiles\\after\\syntax\\json.vim"
 -'  1  0  ~\vimfiles\after\syntax\python.vim
 |4,39,1,0,1684877048,"~\\vimfiles\\after\\syntax\\python.vim"
 -'  1  0  ~\vimfiles\after\syntax\python.vim
 |4,39,1,0,1684877048,"~\\vimfiles\\after\\syntax\\python.vim"
 -'  1  0  ~\vimfiles\after\syntax\python.vim
 |4,39,1,0,1684877048,"~\\vimfiles\\after\\syntax\\python.vim"
--'  1  0  ~\vimfiles\after\syntax\vue.vim
-|4,39,1,0,1684877046,"~\\vimfiles\\after\\syntax\\vue.vim"
--'  1  0  ~\vimfiles\after\syntax\vue.vim
-|4,39,1,0,1684877046,"~\\vimfiles\\after\\syntax\\vue.vim"
--'  1  0  ~\vimfiles\after\syntax\vue.vim
-|4,39,1,0,1684877046,"~\\vimfiles\\after\\syntax\\vue.vim"
--'  1  0  ~\vimfiles\after\syntax\cs.vim
-|4,39,1,0,1684877011,"~\\vimfiles\\after\\syntax\\cs.vim"
--'  1  0  ~\vimfiles\after\syntax\cs.vim
-|4,39,1,0,1684877011,"~\\vimfiles\\after\\syntax\\cs.vim"
--'  1  0  ~\vimfiles\after\syntax\cs.vim
-|4,39,1,0,1684877011,"~\\vimfiles\\after\\syntax\\cs.vim"
--'  100  21  ~\vimfiles\vimrc
-|4,39,100,21,1684876871,"~\\vimfiles\\vimrc"
--'  100  21  ~\vimfiles\vimrc
-|4,39,100,21,1684876871,"~\\vimfiles\\vimrc"
--'  100  21  ~\vimfiles\vimrc
-|4,39,100,21,1684876871,"~\\vimfiles\\vimrc"
--'  101  21  ~\vimfiles\vimrc
-|4,39,101,21,1684876869,"~\\vimfiles\\vimrc"
--'  101  21  ~\vimfiles\vimrc
-|4,39,101,21,1684876869,"~\\vimfiles\\vimrc"
--'  101  21  ~\vimfiles\vimrc
-|4,39,101,21,1684876869,"~\\vimfiles\\vimrc"
--'  82  4  ~\vimfiles\vimrc
-|4,39,82,4,1684876841,"~\\vimfiles\\vimrc"
--'  82  4  ~\vimfiles\vimrc
-|4,39,82,4,1684876841,"~\\vimfiles\\vimrc"
--'  82  4  ~\vimfiles\vimrc
-|4,39,82,4,1684876841,"~\\vimfiles\\vimrc"
--'  81  16  ~\vimfiles\vimrc
-|4,39,81,16,1684876840,"~\\vimfiles\\vimrc"
--'  81  16  ~\vimfiles\vimrc
-|4,39,81,16,1684876840,"~\\vimfiles\\vimrc"
--'  81  16  ~\vimfiles\vimrc
-|4,39,81,16,1684876840,"~\\vimfiles\\vimrc"
--'  68  4  ~\vimfiles\vimrc
-|4,39,68,4,1684876800,"~\\vimfiles\\vimrc"
--'  69  4  ~\vimfiles\vimrc
-|4,39,69,4,1684876800,"~\\vimfiles\\vimrc"
--'  68  4  ~\vimfiles\vimrc
-|4,39,68,4,1684876800,"~\\vimfiles\\vimrc"
--'  69  4  ~\vimfiles\vimrc
-|4,39,69,4,1684876800,"~\\vimfiles\\vimrc"
--'  68  4  ~\vimfiles\vimrc
-|4,39,68,4,1684876800,"~\\vimfiles\\vimrc"
--'  69  4  ~\vimfiles\vimrc
-|4,39,69,4,1684876800,"~\\vimfiles\\vimrc"
--'  1301  0  ~\vimfiles\vimrc
-|4,39,1301,0,1684876778,"~\\vimfiles\\vimrc"
--'  1301  0  ~\vimfiles\vimrc
-|4,39,1301,0,1684876778,"~\\vimfiles\\vimrc"
--'  1301  0  ~\vimfiles\vimrc
-|4,39,1301,0,1684876778,"~\\vimfiles\\vimrc"
+-'  1  0  ~\vimfiles\after\syntax\python.vim
+|4,39,1,0,1684877048,"~\\vimfiles\\after\\syntax\\python.vim"
 
 # Buffer list:
-%~\vimfiles\vimrc	1320	0
+%~\vimfiles\vimrc	13	76
 %~\vimfiles\syntax\afl.vim	1	0
 %~\vimfiles\syntax\conceal.vim	1	0
 %~\vimfiles\syntax\html.vim	1	0
@@ -29929,110 +29936,110 @@ $
 # History of marks within files (newest to oldest):
 
 > ~\vimfiles\vimrc
-	*	1684877576	0
-	"	1320	0
-	^	101	22
-	.	1321	0
-	+	1139	4
-	+	1140	4
-	+	1130	35
-	+	1131	4
-	+	1132	4
-	+	1135	0
-	+	1133	0
-	+	1177	36
-	+	1147	10
-	+	1177	67
-	+	1146	3
-	+	1146	4
-	+	1144	0
-	+	1143	0
-	+	1176	0
-	+	1149	0
-	+	1136	0
+	*	1684877609	0
+	"	13	76
+	^	95	22
+	.	38	0
+	+	1134	4
+	+	1124	35
+	+	1125	4
+	+	1126	4
 	+	1129	0
-	+	1125	0
+	+	1127	0
+	+	1171	36
+	+	1141	10
+	+	1171	67
+	+	1140	3
+	+	1140	4
+	+	1138	0
+	+	1137	0
+	+	1170	0
+	+	1143	0
+	+	1130	0
 	+	1123	0
-	+	45	30
-	+	44	0
-	+	47	0
-	+	1217	43
-	+	1218	0
-	+	1217	34
-	+	1218	25
-	+	1217	25
-	+	1217	10
-	+	1217	24
-	+	1217	50
-	+	1217	3
-	+	1217	19
-	+	1217	13
-	+	1218	45
-	+	1232	0
-	+	1217	0
-	+	1217	52
-	+	1218	52
-	+	1217	28
-	+	1217	29
-	+	1217	0
-	+	1217	26
-	+	1217	0
-	+	1150	0
-	+	1157	0
-	+	1170	10
-	+	1167	0
-	+	1174	40
-	+	46	31
-	+	1166	24
-	+	49	0
-	+	40	0
+	+	1119	0
+	+	1117	0
+	+	39	30
+	+	38	0
+	+	41	0
+	+	1211	43
+	+	1212	0
+	+	1211	34
+	+	1212	25
+	+	1211	25
+	+	1211	10
+	+	1211	24
+	+	1211	50
+	+	1211	3
+	+	1211	19
+	+	1211	13
+	+	1212	45
+	+	1226	0
+	+	1211	0
+	+	1211	52
+	+	1212	52
+	+	1211	28
+	+	1211	29
+	+	1211	0
+	+	1211	26
+	+	1211	0
+	+	1144	0
+	+	1151	0
+	+	1164	10
+	+	1161	0
+	+	1168	40
+	+	40	31
+	+	1160	24
+	+	43	0
+	+	38	0
 	+	36	25
-	+	1229	56
-	+	1174	28
-	+	1174	10
-	+	1174	0
-	+	1174	8
-	+	1174	0
+	+	1223	56
+	+	1168	28
+	+	1168	10
+	+	1168	0
+	+	1168	8
+	+	1168	0
 	+	34	0
-	+	1230	56
+	+	1224	56
 	+	15	0
 	+	13	0
 	+	16	0
 	+	13	0
 	+	7	0
-	+	1174	10
-	+	1174	65
-	+	1174	0
-	+	1174	21
-	+	1174	0
-	+	1174	13
-	+	1174	0
-	+	1174	10
-	+	1174	0
-	+	1229	46
-	+	1230	46
-	+	1229	0
-	+	1230	16
-	+	1229	16
+	+	1168	10
+	+	1168	65
+	+	1168	0
+	+	1168	21
+	+	1168	0
+	+	1168	13
+	+	1168	0
+	+	1168	10
+	+	1168	0
+	+	1223	46
+	+	1224	46
+	+	1223	0
+	+	1224	16
+	+	1223	16
 	+	37	26
-	+	40	0
-	+	1298	0
-	+	1299	64
-	+	1300	0
-	+	1301	0
-	+	70	0
-	+	68	16
-	+	69	0
-	+	67	0
-	+	79	0
-	+	80	0
-	+	79	0
-	+	83	0
-	+	79	0
-	+	81	16
-	+	100	0
-	+	101	21
-	+	1321	0
+	+	38	0
+	+	1292	0
+	+	1293	64
+	+	1294	0
+	+	1295	0
+	+	64	0
+	+	62	16
+	+	63	0
+	+	61	0
+	+	73	0
+	+	74	0
+	+	73	0
+	+	77	0
+	+	73	0
+	+	75	16
+	+	94	0
+	+	95	21
+	+	1315	0
+	+	38	0
 
 > ~\vimfiles\syntax\javascript.vim
 	*	1684877346	0

@@ -81,12 +81,6 @@ set nobackup
 " set writebackup " Only creates Dropbox Errors
 " set backupdir=C:/Users/vivek/vimfiles/backupfiles,.
 
-" Unix {{{
-if has("unix")
-    source ~/.vim/plugin/colorscheme.vim
-    colorscheme apprentice
-endif
-" }}}
 set undofile
 if has("win32")
     set undodir=C:/Users/vivek/vimfiles/undofiles,.
@@ -94,11 +88,6 @@ endif
 if has('unix') || has('linux')
     set undodir=~/.vim/undofiles,.
 endif
-" Unix {{{
-if has("unix")
-    set undodir=C:/Users/vivek/.vim/undofiles,.
-endif
-" }}}
 set sidescroll=0
 
 " Remaps {{{
