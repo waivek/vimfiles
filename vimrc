@@ -21,7 +21,21 @@
 
 
 set history=10000
-set viminfo='10000,<50,s10,h,rA:,rB:,%,f1,n~/vimfiles/_viminfo
+
+" set viminfo='10000,<50,s10,h,rA:,rB:,%,f1,n~/vimfiles/_viminfo
+set viminfo='10000,<50,s10,h,rA:,rB:,%,f1,n
+
+" Windows-specific viminfo file
+if has('win32') || has('win64')
+    let &viminfo = &viminfo . '~/vimfiles/_viminfo_win'
+endif
+
+" Linux-specific viminfo file
+if has('unix') || has('linux')
+    let &viminfo = &viminfo . '~/.vim/_viminfo_linux'
+endif
+
+
 " Unix {{{
 if has("unix")
     set viminfo='10000,<50,s10,h,rA:,rB:,%,f1,n~/.vim/_viminfo
@@ -1293,4 +1307,8 @@ if filereadable(expand("~/vimfiles/performance/performance.vim"))
     source ~/vimfiles/performance/performance.vim
 endif
 
+" BASH
 
+set t_Co=256
+set t_ut=
+colo codedark

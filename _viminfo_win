@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/8080
+~MSle0~/vimfiles
 
 # Last Substitute Search Pattern:
 ~MSle0&^zsh
@@ -20,6 +20,46 @@
 $
 
 # Command Line History (newest to oldest):
+:q
+|2,0,1684876342,,"q"
+:echo &viminfo
+|2,0,1684876294,,"echo &viminfo"
+:echo vimspector#AbortInstall()
+|2,0,1684876272,,"echo vimspector#AbortInstall()"
+:echo $HOMEPATH
+|2,0,1684875699,,"echo $HOMEPATH"
+:echo $VIMRUNTIME
+|2,0,1684875688,,"echo $VIMRUNTIME"
+:echo $VIM
+|2,0,1684875680,,"echo $VIM"
+:echo len(v:oldfiles)
+|2,0,1684875642,,"echo len(v:oldfiles)"
+:MRU act
+|2,0,1684838771,,"MRU act"
+:MRU vm.bat
+|2,0,1684836215,,"MRU vm.bat"
+:echo GetVimIndent()
+|2,0,1684835542,,"echo GetVimIndent()"
+:CMD
+|2,0,1684835294,,"CMD"
+:bd!
+|2,0,1684835261,,"bd!"
+:e item.py
+|2,0,1684835256,,"e item.py"
+:bd
+|2,0,1684834999,,"bd"
+:copen
+|2,0,1684834992,,"copen"
+:cn
+|2,0,1684834989,,"cn"
+:grep -g *.vim -g vimrc filereadable
+|2,0,1684834981,,"grep -g *.vim -g vimrc filereadable"
+:grep -g *.vim -g vim9.txt
+|2,0,1684834978,,"grep -g *.vim -g vim9.txt"
+:1291
+|2,0,1684834963,,"1291"
+:edit $MYVIMRC
+|2,0,1684834960,,"edit $MYVIMRC"
 : wviminfo
 |2,0,1684833369,," wviminfo"
 :e ubuntu-dockerfile
@@ -36,8 +76,6 @@ $
 |2,0,1684494954,,"MRU Butt"
 :b python-dockerfile
 |2,0,1684493078,,"b python-dockerfile"
-:bd!
-|2,0,1684449948,,"bd!"
 :enew
 |2,0,1684449736,,"enew"
 :MRU dockerfile
@@ -62,8 +100,6 @@ $
 |2,0,1684444253,,"b ~\\Desktop\\Docker\\vm.bat"
 :b zsh
 |2,0,1684444229,,"b zsh"
-:bd
-|2,0,1684444227,,"bd"
 :MRU zsh
 |2,0,1684444226,,"MRU zsh"
 :b!# | bd! #
@@ -90,10 +126,6 @@ $
 |2,0,1684356927,,"Cfilter /\\<TAB\\>/"
 :C
 |2,0,1684356918,,"C"
-:copen
-|2,0,1684356916,,"copen"
-:cn
-|2,0,1684356909,,"cn"
 :grep -g *.txt TAB
 |2,0,1684356906,,"grep -g *.txt TAB"
 :grep -g *.netrw TAB
@@ -156,8 +188,6 @@ $
 |2,0,1684171741,,"MRU api"
 :e gunicorn_config.py
 |2,0,1684171111,,"e gunicorn_config.py"
-:CMD
-|2,0,1684170975,,"CMD"
 :e __pycache__/
 |2,0,1684170964,,"e __pycache__/"
 :e api.py
@@ -204,8 +234,6 @@ $
 |2,0,1684106287,,"MRU twitch_vue"
 :e ~/Documents/zuckmemes_authors.txt
 |2,0,1684100362,,"e ~/Documents/zuckmemes_authors.txt"
-:q
-|2,0,1684152280,,"q"
 :!start everything -path .
 |2,0,1683971715,,"!start everything -path ."
 :!start .
@@ -314,8 +342,6 @@ $
 |2,0,1683824197,,"messages"
 :Pl
 |2,0,1683824138,,"Pl"
-:edit $MYVIMRC
-|2,0,1683824128,,"edit $MYVIMRC"
 :b
 |2,0,1683823986,,"b"
 :CocList extensions
@@ -5802,10 +5828,6 @@ $
 |2,0,1661905796,,"echo expanduser"
 :h vimfiles
 |2,0,1661905770,,"h vimfiles"
-:echo $VIM
-|2,0,1661905767,,"echo $VIM"
-:echo $VIMRUNTIME
-|2,0,1661905765,,"echo $VIMRUNTIME"
 :echo $VIMHOME
 |2,0,1661905760,,"echo $VIMHOME"
 :echo $HOME
@@ -8526,8 +8548,6 @@ $
 |2,0,1659024958,,"b actio"
 :g actio
 |2,0,1659017650,,"g actio"
-:MRU act
-|2,0,1659017029,,"MRU act"
 :b code_actions.txt
 |2,0,1659017027,,"b code_actions.txt"
 :MRU chat.y
@@ -11604,8 +11624,6 @@ $
 |2,0,1643704121,,"e ic"
 :MRU 188:rich\__init__.py
 |2,0,1643704052,,"MRU 188:rich\\__init__.py"
-:echo len(v:oldfiles)
-|2,0,1643704029,,"echo len(v:oldfiles)"
 :cunabbrev v
 |2,0,1643703942,,"cunabbrev v"
 :V 
@@ -16790,6 +16808,18 @@ $
 |2,0,1624224290,,"wviminfo"
 
 # Search String History (newest to oldest):
+?/ex
+|2,1,1684836221,47,"ex"
+?/filerea
+|2,1,1684834972,47,"filerea"
+?/vimfiles
+|2,1,1684834861,47,"vimfiles"
+?/vim
+|2,1,1684834778,47,"vim"
+?/update
+|2,1,1684834625,47,"update"
+?/rupa
+|2,1,1684833444,47,"rupa"
 ?/sudo
 |2,1,1684449268,47,"sudo"
 ?/run
@@ -29484,49 +29514,35 @@ $
 
 # Registers:
 "0	CHAR	0
-	5173
-|3,0,0,0,1,0,1684492956,"5173"
+	~/vimfiles/performance/performance.vim
+|3,0,0,0,1,0,1684835007,"~/vimfiles/performance/performance.vim"
 ""1	LINE	0
-	        <h1>Hello</h1>
-|3,1,1,1,1,0,1684494988,"        <h1>Hello</h1>"
+	???
+|3,1,1,1,1,0,1684838774,"???"
 "2	LINE	0
-	    rem docker run -it --name container-py -v ~/Desktop/Twitch/coffee-vps:/home/vivek/coffee-vps -p 5173:5173 image-py
-|3,0,2,1,1,0,1684450282,"    rem docker run -it --name container-py -v ~/Desktop/Twitch/coffee-vps:/home/vivek/coffee-vps -p 5173:5173 image-py"
+	item = 1
+|3,0,2,1,1,0,1684835260,"item = 1"
 "3	LINE	0
-	With this command, the node_modules directory and its contents will be excluded from the synchronization. Only the remaining files and directories within ~/coffee-vps/flask-vue/vuejs/ will be copied to /opt/myapp/.
-|3,0,3,1,1,0,1684449754,"With this command, the node_modules directory and its contents will be excluded from the synchronization. Only the remaining files and directories within ~/coffee-vps/flask-vue/vuejs/ will be copied to /opt/myapp/."
+	item
+|3,0,3,1,1,0,1684835259,"item"
 "4	LINE	0
-	
-|3,0,4,1,1,0,1684448975,""
+	#
+|3,0,4,1,1,0,1684833756,"#"
 "5	LINE	0
-	    docker run -it --name %CONTAINER% %IMAGE%
-|3,0,5,1,1,0,1684448974,"    docker run -it --name %CONTAINER% %IMAGE%"
-"6	LINE	0
-	    docker run -v ~\Desktop\Twitch\coffee-vps:/home/vivek/coffee-vps your_image_name
-|3,0,6,1,1,0,1684448962,"    docker run -v ~\\Desktop\\Twitch\\coffee-vps:/home/vivek/coffee-vps your_image_name"
-"7	LINE	0
-	
-|3,0,7,1,1,0,1684444398,""
-"8	LINE	0
-	RUN echo 'zstyle ':completion:*' menu select' >> ~/.config/setup.zsh \
-	    && echo 'zstyle ':completion:*' format 'Completing %d'' >> ~/.config/setup.zsh \
-	    && echo 'bindkey '^I' menu-complete' >> ~/.config/setup.zsh \
-	    && echo 'bindkey -M menuselect '^M' .accept-line' >> ~/.config/setup.zsh \
-	    && echo 'SPACESHIP_PROMPT_ORDER=(user host dir git node exec_time line_sep jobs exit_code char)' >> ~/.config/setup.zsh \
-	    && echo 'source /usr/share/doc/fzf/examples/key-bindings.zsh' >> ~/.config/setup.zsh \
-	    && echo 'source /usr/share/doc/fzf/examples/completion.zsh' >> ~/.config/setup.zsh \
-	    && echo 'source /opt/z/z.sh' >> ~/.config/setup.zsh \
-	    && echo 'ZSH_THEME="spaceship"' >> ~/.config/setup.zsh \
-	    && echo 'source "$ZSH_CUSTOM/themes/$ZSH_THEME.zsh-theme"' >> ~/.config/setup.zsh
 	    # && echo 'source $ZSH/oh-my-zsh.sh' >> ~/.config/setup.zsh
-|3,0,8,1,11,0,1684444349,"RUN echo 'zstyle ':completion:*' menu select' >> ~/.config/setup.zsh \\","    && echo 'zstyle ':completion:*' format 'Completing %d'' >> ~/.config/setup.zsh \\","    && echo 'bindkey '^I' menu-complete' >> ~/.config/setup.zsh \\","    && echo 'bindkey -M menuselect '^M' .accept-line' >> ~/.config/setup.zsh \\",>128
-|<"    && echo 'SPACESHIP_PROMPT_ORDER=(user host dir git node exec_time line_sep jobs exit_code char)' >> ~/.config/setup.zsh \\","    && echo 'source /usr/share/doc/fzf/examples/key-bindings.zsh' >> ~/.config/setup.zsh \\","    && echo 'source /usr/share/doc/fzf/examples/completion.zsh' >> ~/.config/setup.zsh \\","    && echo 'source /opt/z/z.sh' >> ~/.config/setup.zsh \\","    && echo 'ZSH_THEME=\"spaceship\"' >> ~/.config/setup.zsh \\",>89
-|<"    && echo 'source \"$ZSH_CUSTOM/themes/$ZSH_THEME.zsh-theme\"' >> ~/.config/setup.zsh","    # && echo 'source $ZSH/oh-my-zsh.sh' >> ~/.config/setup.zsh"
+|3,0,5,1,1,0,1684833746,"    # && echo 'source $ZSH/oh-my-zsh.sh' >> ~/.config/setup.zsh"
+"6	LINE	0
+	        <h1>Hello</h1>
+|3,0,6,1,1,0,1684494988,"        <h1>Hello</h1>"
+"7	LINE	0
+	    rem docker run -it --name container-py -v ~/Desktop/Twitch/coffee-vps:/home/vivek/coffee-vps -p 5173:5173 image-py
+|3,0,7,1,1,0,1684450282,"    rem docker run -it --name container-py -v ~/Desktop/Twitch/coffee-vps:/home/vivek/coffee-vps -p 5173:5173 image-py"
+"8	LINE	0
+	With this command, the node_modules directory and its contents will be excluded from the synchronization. Only the remaining files and directories within ~/coffee-vps/flask-vue/vuejs/ will be copied to /opt/myapp/.
+|3,0,8,1,1,0,1684449754,"With this command, the node_modules directory and its contents will be excluded from the synchronization. Only the remaining files and directories within ~/coffee-vps/flask-vue/vuejs/ will be copied to /opt/myapp/."
 "9	LINE	0
-	SHELL [ "/usr/bin/zsh", "-c" ]
-	RUN git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1 \
-	    && ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
-|3,0,9,1,3,0,1684444053,"SHELL [ \"/usr/bin/zsh\", \"-c\" ]","RUN git clone https://github.com/spaceship-prompt/spaceship-prompt.git \"$ZSH_CUSTOM/themes/spaceship-prompt\" --depth=1 \\","    && ln -s \"$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme\" \"$ZSH_CUSTOM/themes/spaceship.zsh-theme\""
+	
+|3,0,9,1,1,0,1684448975,""
 "a	CHAR	0
 	0i'jkA',
 |3,0,10,0,1,0,1683934292,"0i'jkA',"
@@ -29625,8 +29641,8 @@ $
 	id="tna-auto-twitter-cta"
 |3,0,33,1,6,0,1602258057,"id=\"audio-tooltip\"","id=\"jump-to-top\"","id=\"navbar-main\"","id=\"sticky-header\"","id=\"tna-auto-sub-cta\"","id=\"tna-auto-twitter-cta\""
 "-	CHAR	0
-	5174
-|3,0,36,0,1,0,1684492956,"5174"
+	# 
+|3,0,36,0,1,0,1684834780,"# "
 
 # File marks:
 'A  217  28  ~\vimfiles\pack\plugins\start\sideways.vim\autoload\sideways\parsing.vim
@@ -29641,239 +29657,416 @@ $
 |4,75,10,0,1664397883,"~\\Desktop\\Twitch\\coffee-vps\\flask-vue\\vuejs\\Chart.vue"
 'M  1564  44  C:\Program Files (x86)\Vim\vim82\doc\quickfix.txt
 |4,77,1564,44,1582635887,"C:\\Program Files (x86)\\Vim\\vim82\\doc\\quickfix.txt"
-'0  1  0  ~\Desktop\Docker\ubuntu-dockerfile
-|4,48,1,0,1684833369,"~\\Desktop\\Docker\\ubuntu-dockerfile"
-'1  72  8  ~\Desktop\Twitch\coffee-vps\flask-vue\vuejs\ButtonShowcase.vue
-|4,49,72,8,1684495043,"~\\Desktop\\Twitch\\coffee-vps\\flask-vue\\vuejs\\ButtonShowcase.vue"
-'2  72  8  ~\Desktop\Twitch\coffee-vps\flask-vue\vuejs\ButtonShowcase.vue
-|4,50,72,8,1684495043,"~\\Desktop\\Twitch\\coffee-vps\\flask-vue\\vuejs\\ButtonShowcase.vue"
-'3  72  8  ~\Desktop\Twitch\coffee-vps\flask-vue\vuejs\ButtonShowcase.vue
-|4,51,72,8,1684495043,"~\\Desktop\\Twitch\\coffee-vps\\flask-vue\\vuejs\\ButtonShowcase.vue"
-'4  72  8  ~\Desktop\Twitch\coffee-vps\flask-vue\vuejs\ButtonShowcase.vue
-|4,52,72,8,1684495043,"~\\Desktop\\Twitch\\coffee-vps\\flask-vue\\vuejs\\ButtonShowcase.vue"
-'5  6  4  ~\vimfiles\temp\sample.inputrc
-|4,53,6,4,1684360554,"~\\vimfiles\\temp\\sample.inputrc"
-'6  6  4  ~\vimfiles\temp\sample.inputrc
-|4,54,6,4,1684360554,"~\\vimfiles\\temp\\sample.inputrc"
-'7  6  4  ~\vimfiles\temp\sample.inputrc
-|4,55,6,4,1684360554,"~\\vimfiles\\temp\\sample.inputrc"
-'8  6  4  ~\vimfiles\temp\sample.inputrc
-|4,56,6,4,1684360554,"~\\vimfiles\\temp\\sample.inputrc"
-'9  6  4  ~\vimfiles\temp\sample.inputrc
-|4,57,6,4,1684360554,"~\\vimfiles\\temp\\sample.inputrc"
+'0  9  0  ~\Documents\actresses.txt
+|4,48,9,0,1684876335,"~\\Documents\\actresses.txt"
+'1  9  0  ~\Documents\actresses.txt
+|4,49,9,0,1684876335,"~\\Documents\\actresses.txt"
+'2  9  56355  ~\Documents\actresses.txt
+|4,50,9,56355,1684838899,"~\\Documents\\actresses.txt"
+'3  9  56355  ~\Documents\actresses.txt
+|4,51,9,56355,1684838899,"~\\Documents\\actresses.txt"
+'4  9  56355  ~\Documents\actresses.txt
+|4,52,9,56355,1684838899,"~\\Documents\\actresses.txt"
+'5  9  56355  ~\Documents\actresses.txt
+|4,53,9,56355,1684838899,"~\\Documents\\actresses.txt"
+'6  9  56355  ~\Documents\actresses.txt
+|4,54,9,56355,1684838899,"~\\Documents\\actresses.txt"
+'7  9  56355  ~\Documents\actresses.txt
+|4,55,9,56355,1684838899,"~\\Documents\\actresses.txt"
+'8  9  56355  ~\Documents\actresses.txt
+|4,56,9,56355,1684838899,"~\\Documents\\actresses.txt"
+'9  9  56355  ~\Documents\actresses.txt
+|4,57,9,56355,1684838899,"~\\Documents\\actresses.txt"
 
 # Jumplist (newest first):
--'  1  0  ~\Desktop\Docker\ubuntu-dockerfile
-|4,39,1,0,1684833369,"~\\Desktop\\Docker\\ubuntu-dockerfile"
--'  9  0  ~\Desktop\Docker\python-dockerfile
-|4,39,9,0,1684833363,"~\\Desktop\\Docker\\python-dockerfile"
--'  72  8  ~\Desktop\Twitch\coffee-vps\flask-vue\vuejs\ButtonShowcase.vue
-|4,39,72,8,1684495043,"~\\Desktop\\Twitch\\coffee-vps\\flask-vue\\vuejs\\ButtonShowcase.vue"
--'  72  8  ~\Desktop\Twitch\coffee-vps\flask-vue\vuejs\ButtonShowcase.vue
-|4,39,72,8,1684495043,"~\\Desktop\\Twitch\\coffee-vps\\flask-vue\\vuejs\\ButtonShowcase.vue"
--'  72  8  ~\Desktop\Twitch\coffee-vps\flask-vue\vuejs\ButtonShowcase.vue
-|4,39,72,8,1684495043,"~\\Desktop\\Twitch\\coffee-vps\\flask-vue\\vuejs\\ButtonShowcase.vue"
--'  73  8  ~\Desktop\Twitch\coffee-vps\flask-vue\vuejs\ButtonShowcase.vue
-|4,39,73,8,1684494989,"~\\Desktop\\Twitch\\coffee-vps\\flask-vue\\vuejs\\ButtonShowcase.vue"
--'  73  8  ~\Desktop\Twitch\coffee-vps\flask-vue\vuejs\ButtonShowcase.vue
-|4,39,73,8,1684494989,"~\\Desktop\\Twitch\\coffee-vps\\flask-vue\\vuejs\\ButtonShowcase.vue"
--'  73  8  ~\Desktop\Twitch\coffee-vps\flask-vue\vuejs\ButtonShowcase.vue
-|4,39,73,8,1684494989,"~\\Desktop\\Twitch\\coffee-vps\\flask-vue\\vuejs\\ButtonShowcase.vue"
--'  1  0  ~\Desktop\Twitch\coffee-vps\flask-vue\vuejs\ButtonShowcase.vue
-|4,39,1,0,1684494957,"~\\Desktop\\Twitch\\coffee-vps\\flask-vue\\vuejs\\ButtonShowcase.vue"
--'  1  0  ~\Desktop\Twitch\coffee-vps\flask-vue\vuejs\ButtonShowcase.vue
-|4,39,1,0,1684494957,"~\\Desktop\\Twitch\\coffee-vps\\flask-vue\\vuejs\\ButtonShowcase.vue"
--'  1  0  ~\Desktop\Twitch\coffee-vps\flask-vue\vuejs\ButtonShowcase.vue
-|4,39,1,0,1684494957,"~\\Desktop\\Twitch\\coffee-vps\\flask-vue\\vuejs\\ButtonShowcase.vue"
--'  9  42  ~\Desktop\Docker\python-dockerfile
-|4,39,9,42,1684494954,"~\\Desktop\\Docker\\python-dockerfile"
--'  9  42  ~\Desktop\Docker\python-dockerfile
-|4,39,9,42,1684494954,"~\\Desktop\\Docker\\python-dockerfile"
--'  8  4  ~\Desktop\Docker\vm.bat
-|4,39,8,4,1684494404,"~\\Desktop\\Docker\\vm.bat"
--'  8  4  ~\Desktop\Docker\vm.bat
-|4,39,8,4,1684494404,"~\\Desktop\\Docker\\vm.bat"
--'  8  4  ~\Desktop\Docker\vm.bat
-|4,39,8,4,1684494404,"~\\Desktop\\Docker\\vm.bat"
--'  16  4  ~\Desktop\Docker\python-dockerfile
-|4,39,16,4,1684493689,"~\\Desktop\\Docker\\python-dockerfile"
--'  16  4  ~\Desktop\Docker\python-dockerfile
-|4,39,16,4,1684493689,"~\\Desktop\\Docker\\python-dockerfile"
--'  16  4  ~\Desktop\Docker\python-dockerfile
-|4,39,16,4,1684493689,"~\\Desktop\\Docker\\python-dockerfile"
--'  49  0  ~\Desktop\Docker\python-dockerfile
-|4,39,49,0,1684493686,"~\\Desktop\\Docker\\python-dockerfile"
--'  49  0  ~\Desktop\Docker\python-dockerfile
-|4,39,49,0,1684493686,"~\\Desktop\\Docker\\python-dockerfile"
--'  49  0  ~\Desktop\Docker\python-dockerfile
-|4,39,49,0,1684493686,"~\\Desktop\\Docker\\python-dockerfile"
--'  13  0  ~\Desktop\Docker\python-dockerfile
-|4,39,13,0,1684493079,"~\\Desktop\\Docker\\python-dockerfile"
--'  13  0  ~\Desktop\Docker\python-dockerfile
-|4,39,13,0,1684493079,"~\\Desktop\\Docker\\python-dockerfile"
--'  13  0  ~\Desktop\Docker\python-dockerfile
-|4,39,13,0,1684493079,"~\\Desktop\\Docker\\python-dockerfile"
--'  17  100  ~\Desktop\Docker\vm.bat
-|4,39,17,100,1684492956,"~\\Desktop\\Docker\\vm.bat"
--'  17  100  ~\Desktop\Docker\vm.bat
-|4,39,17,100,1684492956,"~\\Desktop\\Docker\\vm.bat"
--'  17  100  ~\Desktop\Docker\vm.bat
-|4,39,17,100,1684492956,"~\\Desktop\\Docker\\vm.bat"
--'  18  4  ~\Desktop\Docker\vm.bat
-|4,39,18,4,1684450268,"~\\Desktop\\Docker\\vm.bat"
--'  18  4  ~\Desktop\Docker\vm.bat
-|4,39,18,4,1684450268,"~\\Desktop\\Docker\\vm.bat"
--'  18  4  ~\Desktop\Docker\vm.bat
-|4,39,18,4,1684450268,"~\\Desktop\\Docker\\vm.bat"
--'  7  0  ~\Desktop\Docker\python-dockerfile
-|4,39,7,0,1684450041,"~\\Desktop\\Docker\\python-dockerfile"
--'  7  0  ~\Desktop\Docker\python-dockerfile
-|4,39,7,0,1684450041,"~\\Desktop\\Docker\\python-dockerfile"
--'  7  0  ~\Desktop\Docker\python-dockerfile
-|4,39,7,0,1684450041,"~\\Desktop\\Docker\\python-dockerfile"
--'  47  0  ~\Desktop\Docker\python-dockerfile
-|4,39,47,0,1684449266,"~\\Desktop\\Docker\\python-dockerfile"
--'  47  0  ~\Desktop\Docker\python-dockerfile
-|4,39,47,0,1684449266,"~\\Desktop\\Docker\\python-dockerfile"
--'  47  0  ~\Desktop\Docker\python-dockerfile
-|4,39,47,0,1684449266,"~\\Desktop\\Docker\\python-dockerfile"
--'  12  0  ~\Desktop\Docker\vm.bat
-|4,39,12,0,1684448933,"~\\Desktop\\Docker\\vm.bat"
--'  12  0  ~\Desktop\Docker\vm.bat
-|4,39,12,0,1684448933,"~\\Desktop\\Docker\\vm.bat"
--'  12  0  ~\Desktop\Docker\vm.bat
-|4,39,12,0,1684448933,"~\\Desktop\\Docker\\vm.bat"
--'  1  0  ~\Desktop\Docker\config\zsh_install.zsh
-|4,39,1,0,1684448931,"~\\Desktop\\Docker\\config\\zsh_install.zsh"
--'  1  0  ~\Desktop\Docker\config\zsh_install.zsh
-|4,39,1,0,1684448931,"~\\Desktop\\Docker\\config\\zsh_install.zsh"
--'  1  0  ~\Desktop\Docker\config\zsh_install.zsh
-|4,39,1,0,1684448931,"~\\Desktop\\Docker\\config\\zsh_install.zsh"
--'  6  38  ~\Desktop\Docker\config\zsh_install.zsh
-|4,39,6,38,1684444239,"~\\Desktop\\Docker\\config\\zsh_install.zsh"
--'  6  38  ~\Desktop\Docker\config\zsh_install.zsh
-|4,39,6,38,1684444239,"~\\Desktop\\Docker\\config\\zsh_install.zsh"
--'  6  38  ~\Desktop\Docker\config\zsh_install.zsh
-|4,39,6,38,1684444239,"~\\Desktop\\Docker\\config\\zsh_install.zsh"
--'  1  0  C:\Program Files\Vim\vim82\syntax\zsh.vim
-|4,39,1,0,1684444227,"C:\\Program Files\\Vim\\vim82\\syntax\\zsh.vim"
--'  1  0  C:\Program Files\Vim\vim82\syntax\zsh.vim
-|4,39,1,0,1684444227,"C:\\Program Files\\Vim\\vim82\\syntax\\zsh.vim"
--'  1  0  C:\Program Files\Vim\vim82\syntax\zsh.vim
-|4,39,1,0,1684444227,"C:\\Program Files\\Vim\\vim82\\syntax\\zsh.vim"
--'  25  0  ~\Desktop\Docker\python-dockerfile
-|4,39,25,0,1684444226,"~\\Desktop\\Docker\\python-dockerfile"
--'  25  0  ~\Desktop\Docker\python-dockerfile
-|4,39,25,0,1684444226,"~\\Desktop\\Docker\\python-dockerfile"
--'  25  0  ~\Desktop\Docker\python-dockerfile
-|4,39,25,0,1684444226,"~\\Desktop\\Docker\\python-dockerfile"
--'  10  0  ~\Desktop\Docker\python-dockerfile
-|4,39,10,0,1684442960,"~\\Desktop\\Docker\\python-dockerfile"
--'  10  0  ~\Desktop\Docker\python-dockerfile
-|4,39,10,0,1684442960,"~\\Desktop\\Docker\\python-dockerfile"
--'  10  0  ~\Desktop\Docker\python-dockerfile
-|4,39,10,0,1684442960,"~\\Desktop\\Docker\\python-dockerfile"
--'  48  53  ~\Desktop\Docker\python-dockerfile
-|4,39,48,53,1684442296,"~\\Desktop\\Docker\\python-dockerfile"
--'  48  53  ~\Desktop\Docker\python-dockerfile
-|4,39,48,53,1684442296,"~\\Desktop\\Docker\\python-dockerfile"
--'  48  53  ~\Desktop\Docker\python-dockerfile
-|4,39,48,53,1684442296,"~\\Desktop\\Docker\\python-dockerfile"
--'  33  48  ~\Desktop\Docker\python-dockerfile
-|4,39,33,48,1684442293,"~\\Desktop\\Docker\\python-dockerfile"
--'  33  48  ~\Desktop\Docker\python-dockerfile
-|4,39,33,48,1684442293,"~\\Desktop\\Docker\\python-dockerfile"
--'  33  48  ~\Desktop\Docker\python-dockerfile
-|4,39,33,48,1684442293,"~\\Desktop\\Docker\\python-dockerfile"
--'  17  0  ~\Desktop\Docker\python-dockerfile
-|4,39,17,0,1684435511,"~\\Desktop\\Docker\\python-dockerfile"
--'  17  0  ~\Desktop\Docker\python-dockerfile
-|4,39,17,0,1684435511,"~\\Desktop\\Docker\\python-dockerfile"
--'  17  0  ~\Desktop\Docker\python-dockerfile
-|4,39,17,0,1684435511,"~\\Desktop\\Docker\\python-dockerfile"
--'  34  0  ~\Desktop\Docker\python-dockerfile
-|4,39,34,0,1684431647,"~\\Desktop\\Docker\\python-dockerfile"
--'  34  0  ~\Desktop\Docker\python-dockerfile
-|4,39,34,0,1684431647,"~\\Desktop\\Docker\\python-dockerfile"
--'  34  0  ~\Desktop\Docker\python-dockerfile
-|4,39,34,0,1684431647,"~\\Desktop\\Docker\\python-dockerfile"
--'  12  34  ~\Desktop\Docker\config\zsh_install.zsh
-|4,39,12,34,1684431281,"~\\Desktop\\Docker\\config\\zsh_install.zsh"
--'  12  34  ~\Desktop\Docker\config\zsh_install.zsh
-|4,39,12,34,1684431281,"~\\Desktop\\Docker\\config\\zsh_install.zsh"
--'  12  34  ~\Desktop\Docker\config\zsh_install.zsh
-|4,39,12,34,1684431281,"~\\Desktop\\Docker\\config\\zsh_install.zsh"
--'  6  4  ~\vimfiles\temp\sample.inputrc
-|4,39,6,4,1684360554,"~\\vimfiles\\temp\\sample.inputrc"
--'  6  4  ~\vimfiles\temp\sample.inputrc
-|4,39,6,4,1684360554,"~\\vimfiles\\temp\\sample.inputrc"
--'  6  4  ~\vimfiles\temp\sample.inputrc
-|4,39,6,4,1684360554,"~\\vimfiles\\temp\\sample.inputrc"
--'  6  4  ~\vimfiles\temp\sample.inputrc
-|4,39,6,4,1684360554,"~\\vimfiles\\temp\\sample.inputrc"
--'  6  4  ~\vimfiles\temp\sample.inputrc
-|4,39,6,4,1684360554,"~\\vimfiles\\temp\\sample.inputrc"
--'  9  1  ~\Desktop\Docker\vm.bat
-|4,39,9,1,1684358333,"~\\Desktop\\Docker\\vm.bat"
--'  9  1  ~\Desktop\Docker\vm.bat
-|4,39,9,1,1684358333,"~\\Desktop\\Docker\\vm.bat"
--'  9  1  ~\Desktop\Docker\vm.bat
-|4,39,9,1,1684358333,"~\\Desktop\\Docker\\vm.bat"
--'  9  1  ~\Desktop\Docker\vm.bat
-|4,39,9,1,1684358333,"~\\Desktop\\Docker\\vm.bat"
--'  18  21  ~\vimfiles\temp\sample.inputrc
-|4,39,18,21,1684358022,"~\\vimfiles\\temp\\sample.inputrc"
--'  18  21  ~\vimfiles\temp\sample.inputrc
-|4,39,18,21,1684358022,"~\\vimfiles\\temp\\sample.inputrc"
--'  18  21  ~\vimfiles\temp\sample.inputrc
-|4,39,18,21,1684358022,"~\\vimfiles\\temp\\sample.inputrc"
--'  18  21  ~\vimfiles\temp\sample.inputrc
-|4,39,18,21,1684358022,"~\\vimfiles\\temp\\sample.inputrc"
--'  18  21  ~\vimfiles\temp\sample.inputrc
-|4,39,18,21,1684358022,"~\\vimfiles\\temp\\sample.inputrc"
--'  1  18  ~\vimfiles\temp\sample.inputrc
-|4,39,1,18,1684357998,"~\\vimfiles\\temp\\sample.inputrc"
--'  1  18  ~\vimfiles\temp\sample.inputrc
-|4,39,1,18,1684357998,"~\\vimfiles\\temp\\sample.inputrc"
--'  1  18  ~\vimfiles\temp\sample.inputrc
-|4,39,1,18,1684357998,"~\\vimfiles\\temp\\sample.inputrc"
--'  1  18  ~\vimfiles\temp\sample.inputrc
-|4,39,1,18,1684357998,"~\\vimfiles\\temp\\sample.inputrc"
--'  1  18  ~\vimfiles\temp\sample.inputrc
-|4,39,1,18,1684357998,"~\\vimfiles\\temp\\sample.inputrc"
--'  4  0  ~\vimfiles\temp\sample.inputrc
-|4,39,4,0,1684357997,"~\\vimfiles\\temp\\sample.inputrc"
--'  4  0  ~\vimfiles\temp\sample.inputrc
-|4,39,4,0,1684357997,"~\\vimfiles\\temp\\sample.inputrc"
--'  4  0  ~\vimfiles\temp\sample.inputrc
-|4,39,4,0,1684357997,"~\\vimfiles\\temp\\sample.inputrc"
--'  4  0  ~\vimfiles\temp\sample.inputrc
-|4,39,4,0,1684357997,"~\\vimfiles\\temp\\sample.inputrc"
--'  4  0  ~\vimfiles\temp\sample.inputrc
-|4,39,4,0,1684357997,"~\\vimfiles\\temp\\sample.inputrc"
--'  11  26  ~\Desktop\Docker\vm.bat
-|4,39,11,26,1684357996,"~\\Desktop\\Docker\\vm.bat"
--'  11  26  ~\Desktop\Docker\vm.bat
-|4,39,11,26,1684357996,"~\\Desktop\\Docker\\vm.bat"
--'  11  26  ~\Desktop\Docker\vm.bat
-|4,39,11,26,1684357996,"~\\Desktop\\Docker\\vm.bat"
--'  8  26  ~\Desktop\Docker\vm.bat
-|4,39,8,26,1684357996,"~\\Desktop\\Docker\\vm.bat"
--'  8  26  ~\Desktop\Docker\vm.bat
-|4,39,8,26,1684357996,"~\\Desktop\\Docker\\vm.bat"
+-'  9  0  ~\Documents\actresses.txt
+|4,39,9,0,1684876335,"~\\Documents\\actresses.txt"
+-'  9  0  ~\Documents\actresses.txt
+|4,39,9,0,1684876335,"~\\Documents\\actresses.txt"
+-'  9  56355  ~\Documents\actresses.txt
+|4,39,9,56355,1684838899,"~\\Documents\\actresses.txt"
+-'  9  56355  ~\Documents\actresses.txt
+|4,39,9,56355,1684838899,"~\\Documents\\actresses.txt"
+-'  9  56355  ~\Documents\actresses.txt
+|4,39,9,56355,1684838899,"~\\Documents\\actresses.txt"
+-'  9  56355  ~\Documents\actresses.txt
+|4,39,9,56355,1684838899,"~\\Documents\\actresses.txt"
+-'  19  38  ~\Desktop\Docker\vm.bat
+|4,39,19,38,1684838771,"~\\Desktop\\Docker\\vm.bat"
+-'  19  38  ~\Desktop\Docker\vm.bat
+|4,39,19,38,1684838771,"~\\Desktop\\Docker\\vm.bat"
+-'  19  38  ~\Desktop\Docker\vm.bat
+|4,39,19,38,1684838771,"~\\Desktop\\Docker\\vm.bat"
+-'  19  38  ~\Desktop\Docker\vm.bat
+|4,39,19,38,1684838771,"~\\Desktop\\Docker\\vm.bat"
+-'  19  38  ~\Desktop\Docker\vm.bat
+|4,39,19,38,1684838771,"~\\Desktop\\Docker\\vm.bat"
+-'  19  38  ~\Desktop\Docker\vm.bat
+|4,39,19,38,1684838771,"~\\Desktop\\Docker\\vm.bat"
+-'  1294  0  ~\vimfiles\vimrc
+|4,39,1294,0,1684836215,"~\\vimfiles\\vimrc"
+-'  1294  0  ~\vimfiles\vimrc
+|4,39,1294,0,1684836215,"~\\vimfiles\\vimrc"
+-'  1294  0  ~\vimfiles\vimrc
+|4,39,1294,0,1684836215,"~\\vimfiles\\vimrc"
+-'  1294  0  ~\vimfiles\vimrc
+|4,39,1294,0,1684836215,"~\\vimfiles\\vimrc"
+-'  1294  0  ~\vimfiles\vimrc
+|4,39,1294,0,1684836215,"~\\vimfiles\\vimrc"
+-'  1294  0  ~\vimfiles\vimrc
+|4,39,1294,0,1684836215,"~\\vimfiles\\vimrc"
+-'  6  14  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\waivek\.dircolors
+|4,39,6,14,1684836209,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\home\\waivek\\.dircolors"
+-'  6  14  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\waivek\.dircolors
+|4,39,6,14,1684836209,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\home\\waivek\\.dircolors"
+-'  6  14  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\waivek\.dircolors
+|4,39,6,14,1684836209,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\home\\waivek\\.dircolors"
+-'  6  14  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\waivek\.dircolors
+|4,39,6,14,1684836209,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\home\\waivek\\.dircolors"
+-'  6  14  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\waivek\.dircolors
+|4,39,6,14,1684836209,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\home\\waivek\\.dircolors"
+-'  6  14  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\waivek\.dircolors
+|4,39,6,14,1684836209,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\home\\waivek\\.dircolors"
+-'  1  80  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\waivek\.dircolors
+|4,39,1,80,1684836073,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\home\\waivek\\.dircolors"
+-'  36  0  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\waivek\.dircolors
+|4,39,36,0,1684836073,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\home\\waivek\\.dircolors"
+-'  1  80  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\waivek\.dircolors
+|4,39,1,80,1684836073,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\home\\waivek\\.dircolors"
+-'  36  0  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\waivek\.dircolors
+|4,39,36,0,1684836073,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\home\\waivek\\.dircolors"
+-'  1  80  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\waivek\.dircolors
+|4,39,1,80,1684836073,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\home\\waivek\\.dircolors"
+-'  36  0  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\waivek\.dircolors
+|4,39,36,0,1684836073,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\home\\waivek\\.dircolors"
+-'  1  80  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\waivek\.dircolors
+|4,39,1,80,1684836073,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\home\\waivek\\.dircolors"
+-'  36  0  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\waivek\.dircolors
+|4,39,36,0,1684836073,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\home\\waivek\\.dircolors"
+-'  1  80  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\waivek\.dircolors
+|4,39,1,80,1684836073,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\home\\waivek\\.dircolors"
+-'  36  0  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\waivek\.dircolors
+|4,39,36,0,1684836073,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\home\\waivek\\.dircolors"
+-'  1  80  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\waivek\.dircolors
+|4,39,1,80,1684836073,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\home\\waivek\\.dircolors"
+-'  36  0  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\waivek\.dircolors
+|4,39,36,0,1684836073,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\home\\waivek\\.dircolors"
+-'  256  0  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\waivek\.dircolors
+|4,39,256,0,1684836069,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\home\\waivek\\.dircolors"
+-'  256  0  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\waivek\.dircolors
+|4,39,256,0,1684836069,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\home\\waivek\\.dircolors"
+-'  256  0  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\waivek\.dircolors
+|4,39,256,0,1684836069,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\home\\waivek\\.dircolors"
+-'  256  0  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\waivek\.dircolors
+|4,39,256,0,1684836069,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\home\\waivek\\.dircolors"
+-'  256  0  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\waivek\.dircolors
+|4,39,256,0,1684836069,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\home\\waivek\\.dircolors"
+-'  256  0  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\waivek\.dircolors
+|4,39,256,0,1684836069,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\home\\waivek\\.dircolors"
+-'  1  0  ~\vimfiles\item.py
+|4,39,1,0,1684835261,"~\\vimfiles\\item.py"
+-'  1  0  ~\vimfiles\item.py
+|4,39,1,0,1684835261,"~\\vimfiles\\item.py"
+-'  1  0  ~\vimfiles\item.py
+|4,39,1,0,1684835261,"~\\vimfiles\\item.py"
+-'  1  0  ~\vimfiles\item.py
+|4,39,1,0,1684835261,"~\\vimfiles\\item.py"
+-'  1  0  ~\vimfiles\item.py
+|4,39,1,0,1684835261,"~\\vimfiles\\item.py"
+-'  1  0  ~\vimfiles\item.py
+|4,39,1,0,1684835261,"~\\vimfiles\\item.py"
+-'  1  0  ~\vimfiles\vimrc
+|4,39,1,0,1684835000,"~\\vimfiles\\vimrc"
+-'  1  0  ~\vimfiles\vimrc
+|4,39,1,0,1684835000,"~\\vimfiles\\vimrc"
+-'  1  0  ~\vimfiles\vimrc
+|4,39,1,0,1684835000,"~\\vimfiles\\vimrc"
+-'  1  0  ~\vimfiles\vimrc
+|4,39,1,0,1684835000,"~\\vimfiles\\vimrc"
+-'  1  0  ~\vimfiles\vimrc
+|4,39,1,0,1684835000,"~\\vimfiles\\vimrc"
+-'  1  0  ~\vimfiles\vimrc
+|4,39,1,0,1684835000,"~\\vimfiles\\vimrc"
+-'  164  5  ~\vimfiles\autoload\plug.vim
+|4,39,164,5,1684834999,"~\\vimfiles\\autoload\\plug.vim"
+-'  164  5  ~\vimfiles\autoload\plug.vim
+|4,39,164,5,1684834999,"~\\vimfiles\\autoload\\plug.vim"
+-'  164  5  ~\vimfiles\autoload\plug.vim
+|4,39,164,5,1684834999,"~\\vimfiles\\autoload\\plug.vim"
+-'  164  5  ~\vimfiles\autoload\plug.vim
+|4,39,164,5,1684834999,"~\\vimfiles\\autoload\\plug.vim"
+-'  164  5  ~\vimfiles\autoload\plug.vim
+|4,39,164,5,1684834999,"~\\vimfiles\\autoload\\plug.vim"
+-'  164  5  ~\vimfiles\autoload\plug.vim
+|4,39,164,5,1684834999,"~\\vimfiles\\autoload\\plug.vim"
+-'  154  23  ~\vimfiles\autoload\plug.vim
+|4,39,154,23,1684834991,"~\\vimfiles\\autoload\\plug.vim"
+-'  145  23  ~\vimfiles\autoload\plug.vim
+|4,39,145,23,1684834991,"~\\vimfiles\\autoload\\plug.vim"
+-'  154  23  ~\vimfiles\autoload\plug.vim
+|4,39,154,23,1684834991,"~\\vimfiles\\autoload\\plug.vim"
+-'  145  23  ~\vimfiles\autoload\plug.vim
+|4,39,145,23,1684834991,"~\\vimfiles\\autoload\\plug.vim"
+-'  154  23  ~\vimfiles\autoload\plug.vim
+|4,39,154,23,1684834991,"~\\vimfiles\\autoload\\plug.vim"
+-'  145  23  ~\vimfiles\autoload\plug.vim
+|4,39,145,23,1684834991,"~\\vimfiles\\autoload\\plug.vim"
+-'  154  23  ~\vimfiles\autoload\plug.vim
+|4,39,154,23,1684834991,"~\\vimfiles\\autoload\\plug.vim"
+-'  145  23  ~\vimfiles\autoload\plug.vim
+|4,39,145,23,1684834991,"~\\vimfiles\\autoload\\plug.vim"
+-'  154  23  ~\vimfiles\autoload\plug.vim
+|4,39,154,23,1684834991,"~\\vimfiles\\autoload\\plug.vim"
+-'  145  23  ~\vimfiles\autoload\plug.vim
+|4,39,145,23,1684834991,"~\\vimfiles\\autoload\\plug.vim"
+-'  154  23  ~\vimfiles\autoload\plug.vim
+|4,39,154,23,1684834991,"~\\vimfiles\\autoload\\plug.vim"
+-'  145  23  ~\vimfiles\autoload\plug.vim
+|4,39,145,23,1684834991,"~\\vimfiles\\autoload\\plug.vim"
+-'  132  6  ~\vimfiles\autoload\plug.vim
+|4,39,132,6,1684834989,"~\\vimfiles\\autoload\\plug.vim"
+-'  132  6  ~\vimfiles\autoload\plug.vim
+|4,39,132,6,1684834989,"~\\vimfiles\\autoload\\plug.vim"
+-'  132  6  ~\vimfiles\autoload\plug.vim
+|4,39,132,6,1684834989,"~\\vimfiles\\autoload\\plug.vim"
+-'  132  6  ~\vimfiles\autoload\plug.vim
+|4,39,132,6,1684834989,"~\\vimfiles\\autoload\\plug.vim"
+-'  132  6  ~\vimfiles\autoload\plug.vim
+|4,39,132,6,1684834989,"~\\vimfiles\\autoload\\plug.vim"
+-'  132  6  ~\vimfiles\autoload\plug.vim
+|4,39,132,6,1684834989,"~\\vimfiles\\autoload\\plug.vim"
+-'  1291  0  ~\vimfiles\vimrc
+|4,39,1291,0,1684834970,"~\\vimfiles\\vimrc"
+-'  1291  0  ~\vimfiles\vimrc
+|4,39,1291,0,1684834970,"~\\vimfiles\\vimrc"
+-'  1291  0  ~\vimfiles\vimrc
+|4,39,1291,0,1684834970,"~\\vimfiles\\vimrc"
+-'  1291  0  ~\vimfiles\vimrc
+|4,39,1291,0,1684834970,"~\\vimfiles\\vimrc"
+-'  1291  0  ~\vimfiles\vimrc
+|4,39,1291,0,1684834970,"~\\vimfiles\\vimrc"
+-'  1291  0  ~\vimfiles\vimrc
+|4,39,1291,0,1684834970,"~\\vimfiles\\vimrc"
+-'  11  22  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,11,22,1684834960,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  11  22  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,11,22,1684834960,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  11  22  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,11,22,1684834960,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  11  22  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,11,22,1684834960,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  11  22  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,11,22,1684834960,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  11  22  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,11,22,1684834960,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  5  12  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,5,12,1684834778,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  5  12  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,5,12,1684834778,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  5  12  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,5,12,1684834778,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  5  12  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,5,12,1684834778,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  5  12  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,5,12,1684834778,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  5  12  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,5,12,1684834778,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  16  2  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,16,2,1684834643,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  16  2  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,16,2,1684834643,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  16  2  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,16,2,1684834643,"~\\Desktop\\Docker\\ubuntu-dockerfile"
 
 # Buffer list:
-%~\Desktop\Docker\vm.bat	8	4
-%~\Desktop\Docker\python-dockerfile	9	0
-%~\Desktop\Docker\config\zsh_install.zsh	1	0
-%~\Desktop\Twitch\coffee-vps\flask-vue\vuejs\ButtonShowcase.vue	72	8
-%~\Desktop\Docker\ubuntu-dockerfile	1	0
+%~\Desktop\Docker\vm.bat	19	38
+%~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\waivek\.dircolors	6	14
+%~\vimfiles\vimrc	1294	0
+%~\Documents\actresses.txt	9	0
 
 # History of marks within files (newest to oldest):
 
-> ~\Desktop\Docker\ubuntu-dockerfile
-	*	1684833366	0
+> ~\Documents\actresses.txt
+	*	1684876332	0
+	"	9	0
+	^	8	93
+	.	9	56354
+	+	6	0
+	+	8	92
+	+	9	56354
+
+> ~\Desktop\Docker\vm.bat
+	*	1684838769	0
+	"	19	38
+	^	19	39
+	.	19	38
+	+	2	0
+	+	3	25
+	+	4	17
+	+	5	15
+	+	14	8
+	+	16	8
+	+	18	8
+	+	20	21
+	+	21	20
+	+	12	18
+	+	10	13
+	+	11	27
+	+	12	1
+	+	13	0
+	+	17	0
+	+	18	0
+	+	17	98
+	+	17	0
+	+	17	103
+	+	6	0
+	+	8	4
+	+	18	117
+	+	18	0
+	+	7	0
+	+	17	100
+	+	19	38
+	a	17	100
+	b	17	103
+
+> ~\vimfiles\vimrc
+	*	1684836213	0
+	"	1294	0
+	^	1294	5
+	.	1294	0
+	+	1134	0
+	+	1171	0
+	+	1136	53
+	+	1131	5
+	+	1132	5
+	+	1133	5
+	+	1124	5
+	+	1125	5
+	+	1122	0
+	+	1131	4
+	+	1132	4
+	+	1133	4
+	+	1123	35
+	+	1124	4
+	+	1125	4
+	+	1128	0
+	+	1126	0
+	+	1170	36
+	+	1140	10
+	+	1170	67
+	+	1139	3
+	+	1139	4
+	+	1137	0
+	+	1136	0
+	+	1169	0
+	+	1142	0
+	+	1129	0
+	+	1122	0
+	+	1118	0
+	+	1116	0
+	+	45	30
+	+	44	0
+	+	47	0
+	+	1210	43
+	+	1211	0
+	+	1210	34
+	+	1211	25
+	+	1210	25
+	+	1210	10
+	+	1210	24
+	+	1210	50
+	+	1210	3
+	+	1210	19
+	+	1210	13
+	+	1211	45
+	+	1225	0
+	+	1210	0
+	+	1210	52
+	+	1211	52
+	+	1210	28
+	+	1210	29
+	+	1210	0
+	+	1210	26
+	+	1210	0
+	+	1143	0
+	+	1150	0
+	+	1163	10
+	+	1160	0
+	+	1167	40
+	+	46	31
+	+	1159	24
+	+	49	0
+	+	40	0
+	+	36	25
+	+	1222	56
+	+	1167	28
+	+	1167	10
+	+	1167	0
+	+	1167	8
+	+	1167	0
+	+	34	0
+	+	1223	56
+	+	15	0
+	+	13	0
+	+	16	0
+	+	13	0
+	+	7	0
+	+	1167	10
+	+	1167	65
+	+	1167	0
+	+	1167	21
+	+	1167	0
+	+	1167	13
+	+	1167	0
+	+	1167	10
+	+	1167	0
+	+	1222	46
+	+	1223	46
+	+	1222	0
+	+	1223	16
+	+	1222	16
+	+	37	26
+	+	40	0
+	+	1291	0
+	+	1292	64
+	+	1293	0
+	+	1294	0
+
+> ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\waivek\.dircolors
+	*	1684836208	0
+	"	6	14
+
+> ~\vimfiles\item.py
+	*	1684835260	0
 	"	1	0
+	.	2	0
+	+	2	0
+
+> ~\vimfiles\autoload\plug.vim
+	*	1684834999	0
+	"	164	5
+	.	1675	0
+	+	1675	0
+
+> ~\Desktop\Docker\ubuntu-dockerfile
+	*	1684834958	0
+	"	11	22
+	^	80	0
+	.	17	0
+	+	79	1
+	+	71	0
+	+	73	0
+	+	75	0
+	+	74	0
+	+	73	30
+	+	73	26
+	+	73	32
+	+	73	2
+	+	73	19
+	+	74	0
+	+	73	37
+	+	80	0
+	+	17	0
 
 > ~\Desktop\Docker\python-dockerfile
 	*	1684833360	0
@@ -30009,38 +30202,6 @@ $
 	+	73	0
 	+	72	0
 
-> ~\Desktop\Docker\vm.bat
-	*	1684494388	0
-	"	8	4
-	.	17	100
-	+	2	0
-	+	3	25
-	+	4	17
-	+	5	15
-	+	14	8
-	+	16	8
-	+	18	8
-	+	20	21
-	+	21	20
-	+	12	18
-	+	10	13
-	+	11	27
-	+	12	1
-	+	13	0
-	+	17	0
-	+	18	0
-	+	17	98
-	+	17	0
-	+	17	103
-	+	6	0
-	+	8	4
-	+	18	117
-	+	18	0
-	+	7	0
-	+	17	100
-	a	17	100
-	b	17	103
-
 > ~\Documents\docker_description.txt
 	*	1684448936	0
 	"	20	50
@@ -30088,10 +30249,6 @@ $
 	.	5	0
 	+	28	0
 	+	5	0
-
-> ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\waivek\.dircolors
-	*	1684357570	0
-	"	67	0
 
 > ~\temp\backup_wt_commands.txt
 	*	1684357255	0
@@ -30423,13 +30580,6 @@ $
 	+	6	0
 	+	14	0
 	+	4	0
-
-> ~\Documents\actresses.txt
-	*	1684172895	0
-	"	6	0
-	^	6	16
-	.	6	15
-	+	6	15
 
 > ~\Desktop\Twitch\coffee-vps\flask-vue\api.py
 	*	1684172324	0
@@ -31006,104 +31156,6 @@ $
 > ~\Desktop\coc_tailwind\output.css
 	*	1683843428	0
 	"	564	0
-
-> ~\vimfiles\vimrc
-	*	1683843397	0
-	"	40	0
-	.	40	0
-	+	1134	0
-	+	1171	0
-	+	1136	53
-	+	1131	5
-	+	1132	5
-	+	1133	5
-	+	1124	5
-	+	1125	5
-	+	1122	0
-	+	1131	4
-	+	1132	4
-	+	1133	4
-	+	1123	35
-	+	1124	4
-	+	1125	4
-	+	1128	0
-	+	1126	0
-	+	1170	36
-	+	1140	10
-	+	1170	67
-	+	1139	3
-	+	1139	4
-	+	1137	0
-	+	1136	0
-	+	1169	0
-	+	1142	0
-	+	1129	0
-	+	1122	0
-	+	1118	0
-	+	1116	0
-	+	45	30
-	+	44	0
-	+	47	0
-	+	1210	43
-	+	1211	0
-	+	1210	34
-	+	1211	25
-	+	1210	25
-	+	1210	10
-	+	1210	24
-	+	1210	50
-	+	1210	3
-	+	1210	19
-	+	1210	13
-	+	1211	45
-	+	1225	0
-	+	1210	0
-	+	1210	52
-	+	1211	52
-	+	1210	28
-	+	1210	29
-	+	1210	0
-	+	1210	26
-	+	1210	0
-	+	1143	0
-	+	1150	0
-	+	1163	10
-	+	1160	0
-	+	1167	40
-	+	46	31
-	+	1159	24
-	+	49	0
-	+	40	0
-	+	36	25
-	+	1222	56
-	+	1167	28
-	+	1167	10
-	+	1167	0
-	+	1167	8
-	+	1167	0
-	+	34	0
-	+	1223	56
-	+	15	0
-	+	13	0
-	+	16	0
-	+	13	0
-	+	7	0
-	+	1167	10
-	+	1167	65
-	+	1167	0
-	+	1167	21
-	+	1167	0
-	+	1167	13
-	+	1167	0
-	+	1167	10
-	+	1167	0
-	+	1222	46
-	+	1223	46
-	+	1222	0
-	+	1223	16
-	+	1222	16
-	+	37	26
-	+	40	0
 
 > ~\vimfiles\plugged\coc.nvim\doc\coc.txt
 	*	1683842664	0
@@ -39002,12 +39054,6 @@ $
 	+	64	1
 	+	61	3
 	+	61	0
-
-> ~\vimfiles\autoload\plug.vim
-	*	1665059728	0
-	"	373	29
-	.	1675	0
-	+	1675	0
 
 > ~\vimfiles\build_command.vim
 	*	1665059650	0
