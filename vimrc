@@ -35,12 +35,6 @@ if has('unix') || has('linux')
     let &viminfo = &viminfo . '~/.vim/_viminfo_linux'
 endif
 
-
-" Unix {{{
-if has("unix")
-    set viminfo='10000,<50,s10,h,rA:,rB:,%,f1,n~/.vim/_viminfo
-endif
-" }}}
 filetype indent plugin on | syntax on 
 
 call plug#begin()
@@ -1318,4 +1312,3 @@ endif
 
 set t_Co=256
 set t_ut=
-colo codedark

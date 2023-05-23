@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/vimfiles
+~MSle0~/\C\<codedark\>
 
 # Last Substitute Search Pattern:
 ~MSle0&^zsh
@@ -20,16 +20,70 @@
 $
 
 # Command Line History (newest to oldest):
+:q
+|2,0,1684877387,,"q"
+:b C:\Users\vivek\vimfiles\vimrc
+|2,0,1684877375,,"b C:\\Users\\vivek\\vimfiles\\vimrc"
+:CMD
+|2,0,1684877304,,"CMD"
+:cd plugged/
+|2,0,1684877303,,"cd plugged/"
+:cd ..
+|2,0,1684877290,,"cd .."
+:e 
+|2,0,1684877288,,"e "
+:cd ftdetect/
+|2,0,1684877285,,"cd ftdetect/"
+:argd *
+|2,0,1684877279,,"argd *"
+:next
+|2,0,1684877268,,"next"
+:first
+|2,0,1684877256,,"first"
 :argdo set ff=unix | write
-|2,0,1684876440,,"argdo set ff=unix | write"
+|2,0,1684877240,,"argdo set ff=unix | write"
+:!start everything -path .
+|2,0,1684877232,,"!start everything -path ."
+:argadd *.vim
+|2,0,1684877225,,"argadd *.vim"
+:e afl.vim
+|2,0,1684877222,,"e afl.vim"
+:!ls
+|2,0,1684877215,,"!ls"
+:ls
+|2,0,1684877213,,"ls"
+:cd syntax/
+|2,0,1684877209,,"cd syntax/"
+:cd 
+|2,0,1684877206,,"cd "
+:cd colors/
+|2,0,1684877200,,"cd colors/"
+:pd
+|2,0,1684877188,,"pd"
+:argadd ind
+|2,0,1684877180,,"argadd ind"
+:argdelete *
+|2,0,1684877168,,"argdelete *"
+:args
+|2,0,1684877097,,"args"
+:argdelete after/*/*.vim
+|2,0,1684877095,,"argdelete after/*/*.vim"
+:argadd ftplugin/*.vim
+|2,0,1684877067,,"argadd ftplugin/*.vim"
+:bd
+|2,0,1684877046,,"bd"
+:argadd ftplugin/python.vim ftplugin/qf.vim indent/vue.vim syntax/cs.vim syntax/json.vim syntax/python.vim syntax/vue.vim
+|2,0,1684876943,,"argadd ftplugin/python.vim ftplugin/qf.vim indent/vue.vim syntax/cs.vim syntax/json.vim syntax/python.vim syntax/vue.vim"
+:pwd
+|2,0,1684876933,,"pwd"
+:cd after
+|2,0,1684876929,,"cd after"
+:set ff
+|2,0,1684876882,,"set ff"
 :argdo set ff=unix | update
 |2,0,1684876429,,"argdo set ff=unix | update"
 :argdo set ff=unix
 |2,0,1684876425,,"argdo set ff=unix"
-:args
-|2,0,1684876418,,"args"
-:argadd *.vim
-|2,0,1684876416,,"argadd *.vim"
 :cd plugin
 |2,0,1684876412,,"cd plugin"
 :set ff?
@@ -38,14 +92,8 @@ $
 |2,0,1684876392,,"e ~/vimfiles/autoload/plug.vim"
 :set ff=unix
 |2,0,1684876381,,"set ff=unix"
-:CMD
-|2,0,1684876354,,"CMD"
-:b C:\Users\vivek\vimfiles\vimrc
-|2,0,1684876351,,"b C:\\Users\\vivek\\vimfiles\\vimrc"
 :CM
 |2,0,1684876348,,"CM"
-:q
-|2,0,1684876342,,"q"
 :echo &viminfo
 |2,0,1684876294,,"echo &viminfo"
 :echo vimspector#AbortInstall()
@@ -68,8 +116,6 @@ $
 |2,0,1684835261,,"bd!"
 :e item.py
 |2,0,1684835256,,"e item.py"
-:bd
-|2,0,1684834999,,"bd"
 :copen
 |2,0,1684834992,,"copen"
 :cn
@@ -196,8 +242,6 @@ $
 |2,0,1684172864,,"grep -g *.txt pm2"
 :grep -g *.txt medlina
 |2,0,1684172860,,"grep -g *.txt medlina"
-:pwd
-|2,0,1684172855,,"pwd"
 :grep -g *.txt julie
 |2,0,1684172848,,"grep -g *.txt julie"
 :MRU wom
@@ -232,8 +276,6 @@ $
 |2,0,1684145061,,"CocUpdate "
 :CocUpdate
 |2,0,1684145013,,"CocUpdate"
-:e 
-|2,0,1684108395,,"e "
 :e package-lock.json
 |2,0,1684108361,,"e package-lock.json"
 :e package.json
@@ -256,8 +298,6 @@ $
 |2,0,1684106287,,"MRU twitch_vue"
 :e ~/Documents/zuckmemes_authors.txt
 |2,0,1684100362,,"e ~/Documents/zuckmemes_authors.txt"
-:!start everything -path .
-|2,0,1683971715,,"!start everything -path ."
 :!start .
 |2,0,1683971684,,"!start ."
 :!start %
@@ -858,8 +898,6 @@ $
 |2,0,1674954339,,"e pa"
 :e vuejsknowledge/.gitignore
 |2,0,1674954139,,"e vuejsknowledge/.gitignore"
-:cd ..
-|2,0,1674953654,,"cd .."
 :e node_modules/
 |2,0,1674953652,,"e node_modules/"
 :e!
@@ -1078,8 +1116,6 @@ $
 |2,0,1673974490,,"b main"
 :MRU M
 |2,0,1673969180,,"MRU M"
-:set ff
-|2,0,1673968784,,"set ff"
 :'<,'>o
 |2,0,1673968671,,"'<,'>o"
 :MRU st
@@ -1392,8 +1428,6 @@ $
 |2,0,1667524399,,"b4"
 :ls!
 |2,0,1667522722,,"ls!"
-:ls
-|2,0,1667522720,,"ls"
 :b126
 |2,0,1667522719,,"b126"
 :b125
@@ -6308,8 +6342,6 @@ $
 |2,0,1661177096,,"v/emoticon.*_id/d"
 :saveas skia-render\1559906717.json
 |2,0,1661177051,,"saveas skia-render\\1559906717.json"
-:next
-|2,0,1661176988,,"next"
 :profile pause
 |2,0,1661097887,,"profile pause"
 :MRU profile
@@ -7044,8 +7076,6 @@ $
 |2,0,1660373074,,"h changes"
 :ne
 |2,0,1660369093,,"ne"
-:first
-|2,0,1660369092,,"first"
 :prev
 |2,0,1660368464,,"prev"
 :nex
@@ -9176,8 +9206,6 @@ $
 |2,0,1658141339,,"e clean_downloads_folder.py"
 :cd id-to-offset/
 |2,0,1658141169,,"cd id-to-offset/"
-:cd 
-|2,0,1658141166,,"cd "
 :cd bin/
 |2,0,1658141163,,"cd bin/"
 :Echo ex
@@ -29526,35 +29554,36 @@ $
 
 # Registers:
 "0	CHAR	0
-	~/vimfiles/performance/performance.vim
-|3,0,0,0,1,0,1684835007,"~/vimfiles/performance/performance.vim"
+	C:/Users/vivek/vimfiles
+|3,0,0,0,1,0,1684877381,"C:/Users/vivek/vimfiles"
 ""1	LINE	0
-	???
-|3,1,1,1,1,0,1684838774,"???"
+	colo codedark
+|3,1,1,1,1,0,1684877383,"colo codedark"
 "2	LINE	0
-	item = 1
-|3,0,2,1,1,0,1684835260,"item = 1"
+	    source ~/.vim/plugin/colorscheme.vim
+|3,0,2,1,1,0,1684876857,"    source ~/.vim/plugin/colorscheme.vim"
 "3	LINE	0
-	item
-|3,0,3,1,1,0,1684835259,"item"
+	    source ~/.vim/ide.vim
+|3,0,3,1,1,0,1684876837,"    source ~/.vim/ide.vim"
 "4	LINE	0
-	#
-|3,0,4,1,1,0,1684833756,"#"
+	    " colorscheme apprentice
+	    " colorscheme dracula
+|3,0,4,1,2,0,1684876833,"    \" colorscheme apprentice","    \" colorscheme dracula"
 "5	LINE	0
-	    # && echo 'source $ZSH/oh-my-zsh.sh' >> ~/.config/setup.zsh
-|3,0,5,1,1,0,1684833746,"    # && echo 'source $ZSH/oh-my-zsh.sh' >> ~/.config/setup.zsh"
+	    colorscheme codedark
+|3,0,5,1,1,0,1684876828,"    colorscheme codedark"
 "6	LINE	0
-	        <h1>Hello</h1>
-|3,0,6,1,1,0,1684494988,"        <h1>Hello</h1>"
-"7	LINE	0
-	    rem docker run -it --name container-py -v ~/Desktop/Twitch/coffee-vps:/home/vivek/coffee-vps -p 5173:5173 image-py
-|3,0,7,1,1,0,1684450282,"    rem docker run -it --name container-py -v ~/Desktop/Twitch/coffee-vps:/home/vivek/coffee-vps -p 5173:5173 image-py"
-"8	LINE	0
-	With this command, the node_modules directory and its contents will be excluded from the synchronization. Only the remaining files and directories within ~/coffee-vps/flask-vue/vuejs/ will be copied to /opt/myapp/.
-|3,0,8,1,1,0,1684449754,"With this command, the node_modules directory and its contents will be excluded from the synchronization. Only the remaining files and directories within ~/coffee-vps/flask-vue/vuejs/ will be copied to /opt/myapp/."
-"9	LINE	0
 	
-|3,0,9,1,1,0,1684448975,""
+|3,0,6,1,1,0,1684876816,""
+"7	LINE	0
+	
+|3,0,7,1,1,0,1684876801,""
+"8	LINE	0
+	???
+|3,0,8,1,1,0,1684838774,"???"
+"9	LINE	0
+	item = 1
+|3,0,9,1,1,0,1684835260,"item = 1"
 "a	CHAR	0
 	0i'jkA',
 |3,0,10,0,1,0,1683934292,"0i'jkA',"
@@ -29653,8 +29682,8 @@ $
 	id="tna-auto-twitter-cta"
 |3,0,33,1,6,0,1602258057,"id=\"audio-tooltip\"","id=\"jump-to-top\"","id=\"navbar-main\"","id=\"sticky-header\"","id=\"tna-auto-sub-cta\"","id=\"tna-auto-twitter-cta\""
 "-	CHAR	0
-	# 
-|3,0,36,0,1,0,1684834780,"# "
+	C:/Users/vivek/vimfiles
+|3,0,36,0,1,0,1684876867,"C:/Users/vivek/vimfiles"
 
 # File marks:
 'A  217  28  ~\vimfiles\pack\plugins\start\sideways.vim\autoload\sideways\parsing.vim
@@ -29669,239 +29698,1003 @@ $
 |4,75,10,0,1664397883,"~\\Desktop\\Twitch\\coffee-vps\\flask-vue\\vuejs\\Chart.vue"
 'M  1564  44  C:\Program Files (x86)\Vim\vim82\doc\quickfix.txt
 |4,77,1564,44,1582635887,"C:\\Program Files (x86)\\Vim\\vim82\\doc\\quickfix.txt"
-'0  1  0  ~\vimfiles\plugin\argument-textobj.vim
-|4,48,1,0,1684876459,"~\\vimfiles\\plugin\\argument-textobj.vim"
-'1  9  0  ~\Documents\actresses.txt
-|4,49,9,0,1684876335,"~\\Documents\\actresses.txt"
-'2  9  0  ~\Documents\actresses.txt
-|4,50,9,0,1684876335,"~\\Documents\\actresses.txt"
-'3  9  0  ~\Documents\actresses.txt
-|4,51,9,0,1684876335,"~\\Documents\\actresses.txt"
-'4  9  0  ~\Documents\actresses.txt
-|4,52,9,0,1684876335,"~\\Documents\\actresses.txt"
-'5  9  56355  ~\Documents\actresses.txt
-|4,53,9,56355,1684838899,"~\\Documents\\actresses.txt"
-'6  9  56355  ~\Documents\actresses.txt
-|4,54,9,56355,1684838899,"~\\Documents\\actresses.txt"
-'7  9  56355  ~\Documents\actresses.txt
-|4,55,9,56355,1684838899,"~\\Documents\\actresses.txt"
-'8  9  56355  ~\Documents\actresses.txt
-|4,56,9,56355,1684838899,"~\\Documents\\actresses.txt"
-'9  9  56355  ~\Documents\actresses.txt
-|4,57,9,56355,1684838899,"~\\Documents\\actresses.txt"
+'0  1320  0  ~\vimfiles\vimrc
+|4,48,1320,0,1684877580,"~\\vimfiles\\vimrc"
+'1  1320  0  ~\vimfiles\vimrc
+|4,49,1320,0,1684877388,"~\\vimfiles\\vimrc"
+'2  14  4  ~\vimfiles\syntax\javascript.vim
+|4,50,14,4,1684877348,"~\\vimfiles\\syntax\\javascript.vim"
+'3  14  4  ~\vimfiles\syntax\javascript.vim
+|4,51,14,4,1684877348,"~\\vimfiles\\syntax\\javascript.vim"
+'4  14  4  ~\vimfiles\syntax\javascript.vim
+|4,52,14,4,1684877348,"~\\vimfiles\\syntax\\javascript.vim"
+'5  14  4  ~\vimfiles\syntax\javascript.vim
+|4,53,14,4,1684877348,"~\\vimfiles\\syntax\\javascript.vim"
+'6  1  0  ~\vimfiles\plugin\argument-textobj.vim
+|4,54,1,0,1684876459,"~\\vimfiles\\plugin\\argument-textobj.vim"
+'7  1  0  ~\vimfiles\plugin\argument-textobj.vim
+|4,55,1,0,1684876459,"~\\vimfiles\\plugin\\argument-textobj.vim"
+'8  1  0  ~\vimfiles\plugin\argument-textobj.vim
+|4,56,1,0,1684876459,"~\\vimfiles\\plugin\\argument-textobj.vim"
+'9  1  0  ~\vimfiles\plugin\argument-textobj.vim
+|4,57,1,0,1684876459,"~\\vimfiles\\plugin\\argument-textobj.vim"
 
 # Jumplist (newest first):
--'  1  0  ~\vimfiles\plugin\argument-textobj.vim
-|4,39,1,0,1684876459,"~\\vimfiles\\plugin\\argument-textobj.vim"
--'  1  0  ~\vimfiles\plugin\word.vim
-|4,39,1,0,1684876457,"~\\vimfiles\\plugin\\word.vim"
--'  1294  0  ~\vimfiles\vimrc
-|4,39,1294,0,1684876425,"~\\vimfiles\\vimrc"
--'  1  0  ~\vimfiles\autoload\plug.vim
-|4,39,1,0,1684876397,"~\\vimfiles\\autoload\\plug.vim"
--'  9  0  ~\Documents\actresses.txt
-|4,39,9,0,1684876335,"~\\Documents\\actresses.txt"
--'  9  0  ~\Documents\actresses.txt
-|4,39,9,0,1684876335,"~\\Documents\\actresses.txt"
--'  9  0  ~\Documents\actresses.txt
-|4,39,9,0,1684876335,"~\\Documents\\actresses.txt"
--'  9  56355  ~\Documents\actresses.txt
-|4,39,9,56355,1684838899,"~\\Documents\\actresses.txt"
--'  9  56355  ~\Documents\actresses.txt
-|4,39,9,56355,1684838899,"~\\Documents\\actresses.txt"
--'  9  56355  ~\Documents\actresses.txt
-|4,39,9,56355,1684838899,"~\\Documents\\actresses.txt"
--'  9  56355  ~\Documents\actresses.txt
-|4,39,9,56355,1684838899,"~\\Documents\\actresses.txt"
--'  19  38  ~\Desktop\Docker\vm.bat
-|4,39,19,38,1684838771,"~\\Desktop\\Docker\\vm.bat"
--'  19  38  ~\Desktop\Docker\vm.bat
-|4,39,19,38,1684838771,"~\\Desktop\\Docker\\vm.bat"
--'  19  38  ~\Desktop\Docker\vm.bat
-|4,39,19,38,1684838771,"~\\Desktop\\Docker\\vm.bat"
--'  19  38  ~\Desktop\Docker\vm.bat
-|4,39,19,38,1684838771,"~\\Desktop\\Docker\\vm.bat"
--'  19  38  ~\Desktop\Docker\vm.bat
-|4,39,19,38,1684838771,"~\\Desktop\\Docker\\vm.bat"
--'  19  38  ~\Desktop\Docker\vm.bat
-|4,39,19,38,1684838771,"~\\Desktop\\Docker\\vm.bat"
--'  19  38  ~\Desktop\Docker\vm.bat
-|4,39,19,38,1684838771,"~\\Desktop\\Docker\\vm.bat"
--'  1294  0  ~\vimfiles\vimrc
-|4,39,1294,0,1684836215,"~\\vimfiles\\vimrc"
--'  1294  0  ~\vimfiles\vimrc
-|4,39,1294,0,1684836215,"~\\vimfiles\\vimrc"
--'  1294  0  ~\vimfiles\vimrc
-|4,39,1294,0,1684836215,"~\\vimfiles\\vimrc"
--'  1294  0  ~\vimfiles\vimrc
-|4,39,1294,0,1684836215,"~\\vimfiles\\vimrc"
--'  1294  0  ~\vimfiles\vimrc
-|4,39,1294,0,1684836215,"~\\vimfiles\\vimrc"
--'  1294  0  ~\vimfiles\vimrc
-|4,39,1294,0,1684836215,"~\\vimfiles\\vimrc"
--'  6  14  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\waivek\.dircolors
-|4,39,6,14,1684836209,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\home\\waivek\\.dircolors"
--'  6  14  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\waivek\.dircolors
-|4,39,6,14,1684836209,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\home\\waivek\\.dircolors"
--'  6  14  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\waivek\.dircolors
-|4,39,6,14,1684836209,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\home\\waivek\\.dircolors"
--'  6  14  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\waivek\.dircolors
-|4,39,6,14,1684836209,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\home\\waivek\\.dircolors"
--'  6  14  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\waivek\.dircolors
-|4,39,6,14,1684836209,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\home\\waivek\\.dircolors"
--'  6  14  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\waivek\.dircolors
-|4,39,6,14,1684836209,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\home\\waivek\\.dircolors"
--'  6  14  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\waivek\.dircolors
-|4,39,6,14,1684836209,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\home\\waivek\\.dircolors"
--'  1  80  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\waivek\.dircolors
-|4,39,1,80,1684836073,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\home\\waivek\\.dircolors"
--'  36  0  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\waivek\.dircolors
-|4,39,36,0,1684836073,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\home\\waivek\\.dircolors"
--'  1  80  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\waivek\.dircolors
-|4,39,1,80,1684836073,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\home\\waivek\\.dircolors"
--'  36  0  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\waivek\.dircolors
-|4,39,36,0,1684836073,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\home\\waivek\\.dircolors"
--'  1  80  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\waivek\.dircolors
-|4,39,1,80,1684836073,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\home\\waivek\\.dircolors"
--'  36  0  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\waivek\.dircolors
-|4,39,36,0,1684836073,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\home\\waivek\\.dircolors"
--'  1  80  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\waivek\.dircolors
-|4,39,1,80,1684836073,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\home\\waivek\\.dircolors"
--'  36  0  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\waivek\.dircolors
-|4,39,36,0,1684836073,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\home\\waivek\\.dircolors"
--'  1  80  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\waivek\.dircolors
-|4,39,1,80,1684836073,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\home\\waivek\\.dircolors"
--'  36  0  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\waivek\.dircolors
-|4,39,36,0,1684836073,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\home\\waivek\\.dircolors"
--'  1  80  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\waivek\.dircolors
-|4,39,1,80,1684836073,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\home\\waivek\\.dircolors"
--'  36  0  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\waivek\.dircolors
-|4,39,36,0,1684836073,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\home\\waivek\\.dircolors"
--'  1  80  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\waivek\.dircolors
-|4,39,1,80,1684836073,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\home\\waivek\\.dircolors"
--'  36  0  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\waivek\.dircolors
-|4,39,36,0,1684836073,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\home\\waivek\\.dircolors"
--'  256  0  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\waivek\.dircolors
-|4,39,256,0,1684836069,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\home\\waivek\\.dircolors"
--'  256  0  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\waivek\.dircolors
-|4,39,256,0,1684836069,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\home\\waivek\\.dircolors"
--'  256  0  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\waivek\.dircolors
-|4,39,256,0,1684836069,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\home\\waivek\\.dircolors"
--'  256  0  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\waivek\.dircolors
-|4,39,256,0,1684836069,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\home\\waivek\\.dircolors"
--'  256  0  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\waivek\.dircolors
-|4,39,256,0,1684836069,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\home\\waivek\\.dircolors"
--'  256  0  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\waivek\.dircolors
-|4,39,256,0,1684836069,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\home\\waivek\\.dircolors"
--'  256  0  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\waivek\.dircolors
-|4,39,256,0,1684836069,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\home\\waivek\\.dircolors"
--'  1  0  ~\vimfiles\item.py
-|4,39,1,0,1684835261,"~\\vimfiles\\item.py"
--'  1  0  ~\vimfiles\item.py
-|4,39,1,0,1684835261,"~\\vimfiles\\item.py"
--'  1  0  ~\vimfiles\item.py
-|4,39,1,0,1684835261,"~\\vimfiles\\item.py"
--'  1  0  ~\vimfiles\item.py
-|4,39,1,0,1684835261,"~\\vimfiles\\item.py"
--'  1  0  ~\vimfiles\item.py
-|4,39,1,0,1684835261,"~\\vimfiles\\item.py"
--'  1  0  ~\vimfiles\item.py
-|4,39,1,0,1684835261,"~\\vimfiles\\item.py"
--'  1  0  ~\vimfiles\item.py
-|4,39,1,0,1684835261,"~\\vimfiles\\item.py"
--'  1  0  ~\vimfiles\vimrc
-|4,39,1,0,1684835000,"~\\vimfiles\\vimrc"
--'  1  0  ~\vimfiles\vimrc
-|4,39,1,0,1684835000,"~\\vimfiles\\vimrc"
--'  1  0  ~\vimfiles\vimrc
-|4,39,1,0,1684835000,"~\\vimfiles\\vimrc"
--'  1  0  ~\vimfiles\vimrc
-|4,39,1,0,1684835000,"~\\vimfiles\\vimrc"
--'  1  0  ~\vimfiles\vimrc
-|4,39,1,0,1684835000,"~\\vimfiles\\vimrc"
--'  1  0  ~\vimfiles\vimrc
-|4,39,1,0,1684835000,"~\\vimfiles\\vimrc"
--'  1  0  ~\vimfiles\vimrc
-|4,39,1,0,1684835000,"~\\vimfiles\\vimrc"
--'  164  5  ~\vimfiles\autoload\plug.vim
-|4,39,164,5,1684834999,"~\\vimfiles\\autoload\\plug.vim"
--'  164  5  ~\vimfiles\autoload\plug.vim
-|4,39,164,5,1684834999,"~\\vimfiles\\autoload\\plug.vim"
--'  164  5  ~\vimfiles\autoload\plug.vim
-|4,39,164,5,1684834999,"~\\vimfiles\\autoload\\plug.vim"
--'  164  5  ~\vimfiles\autoload\plug.vim
-|4,39,164,5,1684834999,"~\\vimfiles\\autoload\\plug.vim"
--'  164  5  ~\vimfiles\autoload\plug.vim
-|4,39,164,5,1684834999,"~\\vimfiles\\autoload\\plug.vim"
--'  164  5  ~\vimfiles\autoload\plug.vim
-|4,39,164,5,1684834999,"~\\vimfiles\\autoload\\plug.vim"
--'  164  5  ~\vimfiles\autoload\plug.vim
-|4,39,164,5,1684834999,"~\\vimfiles\\autoload\\plug.vim"
--'  154  23  ~\vimfiles\autoload\plug.vim
-|4,39,154,23,1684834991,"~\\vimfiles\\autoload\\plug.vim"
--'  145  23  ~\vimfiles\autoload\plug.vim
-|4,39,145,23,1684834991,"~\\vimfiles\\autoload\\plug.vim"
--'  154  23  ~\vimfiles\autoload\plug.vim
-|4,39,154,23,1684834991,"~\\vimfiles\\autoload\\plug.vim"
--'  145  23  ~\vimfiles\autoload\plug.vim
-|4,39,145,23,1684834991,"~\\vimfiles\\autoload\\plug.vim"
--'  154  23  ~\vimfiles\autoload\plug.vim
-|4,39,154,23,1684834991,"~\\vimfiles\\autoload\\plug.vim"
--'  145  23  ~\vimfiles\autoload\plug.vim
-|4,39,145,23,1684834991,"~\\vimfiles\\autoload\\plug.vim"
--'  154  23  ~\vimfiles\autoload\plug.vim
-|4,39,154,23,1684834991,"~\\vimfiles\\autoload\\plug.vim"
--'  145  23  ~\vimfiles\autoload\plug.vim
-|4,39,145,23,1684834991,"~\\vimfiles\\autoload\\plug.vim"
--'  154  23  ~\vimfiles\autoload\plug.vim
-|4,39,154,23,1684834991,"~\\vimfiles\\autoload\\plug.vim"
--'  145  23  ~\vimfiles\autoload\plug.vim
-|4,39,145,23,1684834991,"~\\vimfiles\\autoload\\plug.vim"
--'  154  23  ~\vimfiles\autoload\plug.vim
-|4,39,154,23,1684834991,"~\\vimfiles\\autoload\\plug.vim"
--'  145  23  ~\vimfiles\autoload\plug.vim
-|4,39,145,23,1684834991,"~\\vimfiles\\autoload\\plug.vim"
--'  154  23  ~\vimfiles\autoload\plug.vim
-|4,39,154,23,1684834991,"~\\vimfiles\\autoload\\plug.vim"
--'  145  23  ~\vimfiles\autoload\plug.vim
-|4,39,145,23,1684834991,"~\\vimfiles\\autoload\\plug.vim"
--'  132  6  ~\vimfiles\autoload\plug.vim
-|4,39,132,6,1684834989,"~\\vimfiles\\autoload\\plug.vim"
--'  132  6  ~\vimfiles\autoload\plug.vim
-|4,39,132,6,1684834989,"~\\vimfiles\\autoload\\plug.vim"
--'  132  6  ~\vimfiles\autoload\plug.vim
-|4,39,132,6,1684834989,"~\\vimfiles\\autoload\\plug.vim"
--'  132  6  ~\vimfiles\autoload\plug.vim
-|4,39,132,6,1684834989,"~\\vimfiles\\autoload\\plug.vim"
--'  132  6  ~\vimfiles\autoload\plug.vim
-|4,39,132,6,1684834989,"~\\vimfiles\\autoload\\plug.vim"
--'  132  6  ~\vimfiles\autoload\plug.vim
-|4,39,132,6,1684834989,"~\\vimfiles\\autoload\\plug.vim"
--'  132  6  ~\vimfiles\autoload\plug.vim
-|4,39,132,6,1684834989,"~\\vimfiles\\autoload\\plug.vim"
--'  1291  0  ~\vimfiles\vimrc
-|4,39,1291,0,1684834970,"~\\vimfiles\\vimrc"
--'  1291  0  ~\vimfiles\vimrc
-|4,39,1291,0,1684834970,"~\\vimfiles\\vimrc"
--'  1291  0  ~\vimfiles\vimrc
-|4,39,1291,0,1684834970,"~\\vimfiles\\vimrc"
--'  1291  0  ~\vimfiles\vimrc
-|4,39,1291,0,1684834970,"~\\vimfiles\\vimrc"
--'  1291  0  ~\vimfiles\vimrc
-|4,39,1291,0,1684834970,"~\\vimfiles\\vimrc"
+-'  1320  0  ~\vimfiles\vimrc
+|4,39,1320,0,1684877580,"~\\vimfiles\\vimrc"
+-'  1320  0  ~\vimfiles\vimrc
+|4,39,1320,0,1684877388,"~\\vimfiles\\vimrc"
+-'  422  26  ~\vimfiles\vimrc
+|4,39,422,26,1684877382,"~\\vimfiles\\vimrc"
+-'  422  26  ~\vimfiles\vimrc
+|4,39,422,26,1684877382,"~\\vimfiles\\vimrc"
+-'  1321  5  ~\vimfiles\vimrc
+|4,39,1321,5,1684877381,"~\\vimfiles\\vimrc"
+-'  1321  5  ~\vimfiles\vimrc
+|4,39,1321,5,1684877381,"~\\vimfiles\\vimrc"
+-'  103  0  ~\vimfiles\vimrc
+|4,39,103,0,1684877376,"~\\vimfiles\\vimrc"
+-'  103  0  ~\vimfiles\vimrc
+|4,39,103,0,1684877376,"~\\vimfiles\\vimrc"
+-'  14  4  ~\vimfiles\syntax\javascript.vim
+|4,39,14,4,1684877348,"~\\vimfiles\\syntax\\javascript.vim"
+-'  14  4  ~\vimfiles\syntax\javascript.vim
+|4,39,14,4,1684877348,"~\\vimfiles\\syntax\\javascript.vim"
+-'  14  4  ~\vimfiles\syntax\javascript.vim
+|4,39,14,4,1684877348,"~\\vimfiles\\syntax\\javascript.vim"
+-'  1  0  ~\vimfiles\syntax\javascript.vim
+|4,39,1,0,1684877271,"~\\vimfiles\\syntax\\javascript.vim"
+-'  1  0  ~\vimfiles\syntax\html.vim
+|4,39,1,0,1684877271,"~\\vimfiles\\syntax\\html.vim"
+-'  1  0  ~\vimfiles\syntax\javascript.vim
+|4,39,1,0,1684877271,"~\\vimfiles\\syntax\\javascript.vim"
+-'  1  0  ~\vimfiles\syntax\html.vim
+|4,39,1,0,1684877271,"~\\vimfiles\\syntax\\html.vim"
+-'  1  0  ~\vimfiles\syntax\javascript.vim
+|4,39,1,0,1684877271,"~\\vimfiles\\syntax\\javascript.vim"
+-'  1  0  ~\vimfiles\syntax\html.vim
+|4,39,1,0,1684877271,"~\\vimfiles\\syntax\\html.vim"
+-'  1  0  ~\vimfiles\syntax\conceal.vim
+|4,39,1,0,1684877268,"~\\vimfiles\\syntax\\conceal.vim"
+-'  1  0  ~\vimfiles\syntax\conceal.vim
+|4,39,1,0,1684877268,"~\\vimfiles\\syntax\\conceal.vim"
+-'  1  0  ~\vimfiles\syntax\conceal.vim
+|4,39,1,0,1684877268,"~\\vimfiles\\syntax\\conceal.vim"
+-'  1  0  ~\vimfiles\syntax\afl.vim
+|4,39,1,0,1684877257,"~\\vimfiles\\syntax\\afl.vim"
+-'  1  0  ~\vimfiles\syntax\afl.vim
+|4,39,1,0,1684877257,"~\\vimfiles\\syntax\\afl.vim"
+-'  1  0  ~\vimfiles\syntax\afl.vim
+|4,39,1,0,1684877257,"~\\vimfiles\\syntax\\afl.vim"
+-'  103  0  ~\vimfiles\vimrc
+|4,39,103,0,1684877227,"~\\vimfiles\\vimrc"
+-'  1  0  ~\vimfiles\ftplugin\vue.vim
+|4,39,1,0,1684877172,"~\\vimfiles\\ftplugin\\vue.vim"
+-'  1  0  ~\vimfiles\ftplugin\vue.vim
+|4,39,1,0,1684877172,"~\\vimfiles\\ftplugin\\vue.vim"
+-'  1  0  ~\vimfiles\ftplugin\vue.vim
+|4,39,1,0,1684877172,"~\\vimfiles\\ftplugin\\vue.vim"
+-'  1  0  ~\vimfiles\ftplugin\vim.vim
+|4,39,1,0,1684877152,"~\\vimfiles\\ftplugin\\vim.vim"
+-'  1  0  ~\vimfiles\ftplugin\vim.vim
+|4,39,1,0,1684877152,"~\\vimfiles\\ftplugin\\vim.vim"
+-'  1  0  ~\vimfiles\ftplugin\vim.vim
+|4,39,1,0,1684877152,"~\\vimfiles\\ftplugin\\vim.vim"
+-'  1  0  ~\vimfiles\ftplugin\qf.vim
+|4,39,1,0,1684877150,"~\\vimfiles\\ftplugin\\qf.vim"
+-'  1  0  ~\vimfiles\ftplugin\qf.vim
+|4,39,1,0,1684877150,"~\\vimfiles\\ftplugin\\qf.vim"
+-'  1  0  ~\vimfiles\ftplugin\qf.vim
+|4,39,1,0,1684877150,"~\\vimfiles\\ftplugin\\qf.vim"
+-'  1  0  ~\vimfiles\ftplugin\python.vim
+|4,39,1,0,1684877148,"~\\vimfiles\\ftplugin\\python.vim"
+-'  1  0  ~\vimfiles\ftplugin\python.vim
+|4,39,1,0,1684877148,"~\\vimfiles\\ftplugin\\python.vim"
+-'  1  0  ~\vimfiles\ftplugin\python.vim
+|4,39,1,0,1684877148,"~\\vimfiles\\ftplugin\\python.vim"
+-'  1  0  ~\vimfiles\ftplugin\markdown.vim
+|4,39,1,0,1684877142,"~\\vimfiles\\ftplugin\\markdown.vim"
+-'  1  0  ~\vimfiles\ftplugin\markdown.vim
+|4,39,1,0,1684877142,"~\\vimfiles\\ftplugin\\markdown.vim"
+-'  1  0  ~\vimfiles\ftplugin\markdown.vim
+|4,39,1,0,1684877142,"~\\vimfiles\\ftplugin\\markdown.vim"
+-'  1  0  ~\vimfiles\ftplugin\json.vim
+|4,39,1,0,1684877133,"~\\vimfiles\\ftplugin\\json.vim"
+-'  1  0  ~\vimfiles\ftplugin\json.vim
+|4,39,1,0,1684877133,"~\\vimfiles\\ftplugin\\json.vim"
+-'  1  0  ~\vimfiles\ftplugin\json.vim
+|4,39,1,0,1684877133,"~\\vimfiles\\ftplugin\\json.vim"
+-'  1  0  ~\vimfiles\ftplugin\javascript.vim
+|4,39,1,0,1684877131,"~\\vimfiles\\ftplugin\\javascript.vim"
+-'  1  0  ~\vimfiles\ftplugin\javascript.vim
+|4,39,1,0,1684877131,"~\\vimfiles\\ftplugin\\javascript.vim"
+-'  1  0  ~\vimfiles\ftplugin\javascript.vim
+|4,39,1,0,1684877131,"~\\vimfiles\\ftplugin\\javascript.vim"
+-'  1  0  ~\vimfiles\ftplugin\html.vim
+|4,39,1,0,1684877130,"~\\vimfiles\\ftplugin\\html.vim"
+-'  1  0  ~\vimfiles\ftplugin\html.vim
+|4,39,1,0,1684877130,"~\\vimfiles\\ftplugin\\html.vim"
+-'  1  0  ~\vimfiles\ftplugin\html.vim
+|4,39,1,0,1684877130,"~\\vimfiles\\ftplugin\\html.vim"
+-'  1  0  ~\vimfiles\ftplugin\css.vim
+|4,39,1,0,1684877126,"~\\vimfiles\\ftplugin\\css.vim"
+-'  1  0  ~\vimfiles\ftplugin\css.vim
+|4,39,1,0,1684877126,"~\\vimfiles\\ftplugin\\css.vim"
+-'  1  0  ~\vimfiles\ftplugin\css.vim
+|4,39,1,0,1684877126,"~\\vimfiles\\ftplugin\\css.vim"
+-'  1  0  ~\vimfiles\ftplugin\conceal.vim
+|4,39,1,0,1684877124,"~\\vimfiles\\ftplugin\\conceal.vim"
+-'  1  0  ~\vimfiles\ftplugin\conceal.vim
+|4,39,1,0,1684877124,"~\\vimfiles\\ftplugin\\conceal.vim"
+-'  1  0  ~\vimfiles\ftplugin\conceal.vim
+|4,39,1,0,1684877124,"~\\vimfiles\\ftplugin\\conceal.vim"
+-'  1  0  ~\vimfiles\after\ftplugin\python.vim
+|4,39,1,0,1684877054,"~\\vimfiles\\after\\ftplugin\\python.vim"
+-'  1  0  ~\vimfiles\after\ftplugin\python.vim
+|4,39,1,0,1684877054,"~\\vimfiles\\after\\ftplugin\\python.vim"
+-'  1  0  ~\vimfiles\after\ftplugin\python.vim
+|4,39,1,0,1684877054,"~\\vimfiles\\after\\ftplugin\\python.vim"
+-'  1  0  ~\vimfiles\after\ftplugin\qf.vim
+|4,39,1,0,1684877053,"~\\vimfiles\\after\\ftplugin\\qf.vim"
+-'  1  0  ~\vimfiles\after\ftplugin\qf.vim
+|4,39,1,0,1684877053,"~\\vimfiles\\after\\ftplugin\\qf.vim"
+-'  1  0  ~\vimfiles\after\ftplugin\qf.vim
+|4,39,1,0,1684877053,"~\\vimfiles\\after\\ftplugin\\qf.vim"
+-'  1  0  ~\vimfiles\after\indent\vue.vim
+|4,39,1,0,1684877052,"~\\vimfiles\\after\\indent\\vue.vim"
+-'  1  0  ~\vimfiles\after\indent\vue.vim
+|4,39,1,0,1684877052,"~\\vimfiles\\after\\indent\\vue.vim"
+-'  1  0  ~\vimfiles\after\indent\vue.vim
+|4,39,1,0,1684877052,"~\\vimfiles\\after\\indent\\vue.vim"
+-'  382  0  ~\vimfiles\after\syntax\cs.vim
+|4,39,382,0,1684877050,"~\\vimfiles\\after\\syntax\\cs.vim"
+-'  382  0  ~\vimfiles\after\syntax\cs.vim
+|4,39,382,0,1684877050,"~\\vimfiles\\after\\syntax\\cs.vim"
+-'  382  0  ~\vimfiles\after\syntax\cs.vim
+|4,39,382,0,1684877050,"~\\vimfiles\\after\\syntax\\cs.vim"
+-'  1  0  ~\vimfiles\after\syntax\json.vim
+|4,39,1,0,1684877049,"~\\vimfiles\\after\\syntax\\json.vim"
+-'  1  0  ~\vimfiles\after\syntax\json.vim
+|4,39,1,0,1684877049,"~\\vimfiles\\after\\syntax\\json.vim"
+-'  1  0  ~\vimfiles\after\syntax\json.vim
+|4,39,1,0,1684877049,"~\\vimfiles\\after\\syntax\\json.vim"
+-'  1  0  ~\vimfiles\after\syntax\python.vim
+|4,39,1,0,1684877048,"~\\vimfiles\\after\\syntax\\python.vim"
+-'  1  0  ~\vimfiles\after\syntax\python.vim
+|4,39,1,0,1684877048,"~\\vimfiles\\after\\syntax\\python.vim"
+-'  1  0  ~\vimfiles\after\syntax\python.vim
+|4,39,1,0,1684877048,"~\\vimfiles\\after\\syntax\\python.vim"
+-'  1  0  ~\vimfiles\after\syntax\vue.vim
+|4,39,1,0,1684877046,"~\\vimfiles\\after\\syntax\\vue.vim"
+-'  1  0  ~\vimfiles\after\syntax\vue.vim
+|4,39,1,0,1684877046,"~\\vimfiles\\after\\syntax\\vue.vim"
+-'  1  0  ~\vimfiles\after\syntax\vue.vim
+|4,39,1,0,1684877046,"~\\vimfiles\\after\\syntax\\vue.vim"
+-'  1  0  ~\vimfiles\after\syntax\cs.vim
+|4,39,1,0,1684877011,"~\\vimfiles\\after\\syntax\\cs.vim"
+-'  1  0  ~\vimfiles\after\syntax\cs.vim
+|4,39,1,0,1684877011,"~\\vimfiles\\after\\syntax\\cs.vim"
+-'  1  0  ~\vimfiles\after\syntax\cs.vim
+|4,39,1,0,1684877011,"~\\vimfiles\\after\\syntax\\cs.vim"
+-'  100  21  ~\vimfiles\vimrc
+|4,39,100,21,1684876871,"~\\vimfiles\\vimrc"
+-'  100  21  ~\vimfiles\vimrc
+|4,39,100,21,1684876871,"~\\vimfiles\\vimrc"
+-'  100  21  ~\vimfiles\vimrc
+|4,39,100,21,1684876871,"~\\vimfiles\\vimrc"
+-'  101  21  ~\vimfiles\vimrc
+|4,39,101,21,1684876869,"~\\vimfiles\\vimrc"
+-'  101  21  ~\vimfiles\vimrc
+|4,39,101,21,1684876869,"~\\vimfiles\\vimrc"
+-'  101  21  ~\vimfiles\vimrc
+|4,39,101,21,1684876869,"~\\vimfiles\\vimrc"
+-'  82  4  ~\vimfiles\vimrc
+|4,39,82,4,1684876841,"~\\vimfiles\\vimrc"
+-'  82  4  ~\vimfiles\vimrc
+|4,39,82,4,1684876841,"~\\vimfiles\\vimrc"
+-'  82  4  ~\vimfiles\vimrc
+|4,39,82,4,1684876841,"~\\vimfiles\\vimrc"
+-'  81  16  ~\vimfiles\vimrc
+|4,39,81,16,1684876840,"~\\vimfiles\\vimrc"
+-'  81  16  ~\vimfiles\vimrc
+|4,39,81,16,1684876840,"~\\vimfiles\\vimrc"
+-'  81  16  ~\vimfiles\vimrc
+|4,39,81,16,1684876840,"~\\vimfiles\\vimrc"
+-'  68  4  ~\vimfiles\vimrc
+|4,39,68,4,1684876800,"~\\vimfiles\\vimrc"
+-'  69  4  ~\vimfiles\vimrc
+|4,39,69,4,1684876800,"~\\vimfiles\\vimrc"
+-'  68  4  ~\vimfiles\vimrc
+|4,39,68,4,1684876800,"~\\vimfiles\\vimrc"
+-'  69  4  ~\vimfiles\vimrc
+|4,39,69,4,1684876800,"~\\vimfiles\\vimrc"
+-'  68  4  ~\vimfiles\vimrc
+|4,39,68,4,1684876800,"~\\vimfiles\\vimrc"
+-'  69  4  ~\vimfiles\vimrc
+|4,39,69,4,1684876800,"~\\vimfiles\\vimrc"
+-'  1301  0  ~\vimfiles\vimrc
+|4,39,1301,0,1684876778,"~\\vimfiles\\vimrc"
+-'  1301  0  ~\vimfiles\vimrc
+|4,39,1301,0,1684876778,"~\\vimfiles\\vimrc"
+-'  1301  0  ~\vimfiles\vimrc
+|4,39,1301,0,1684876778,"~\\vimfiles\\vimrc"
 
 # Buffer list:
-%~\Desktop\Docker\vm.bat	19	38
-%~\vimfiles\vimrc	1294	0
-%~\Documents\actresses.txt	9	0
-%~\vimfiles\autoload\plug.vim	1	0
-%~\vimfiles\plugin\argument-textobj.vim	1	0
+%~\vimfiles\vimrc	1320	0
+%~\vimfiles\syntax\afl.vim	1	0
+%~\vimfiles\syntax\conceal.vim	1	0
+%~\vimfiles\syntax\html.vim	1	0
+%~\vimfiles\syntax\javascript.vim	14	4
 
 # History of marks within files (newest to oldest):
 
-> ~\vimfiles\plugin\argument-textobj.vim
-	*	1684876458	0
+> ~\vimfiles\vimrc
+	*	1684877576	0
+	"	1320	0
+	^	101	22
+	.	1321	0
+	+	1139	4
+	+	1140	4
+	+	1130	35
+	+	1131	4
+	+	1132	4
+	+	1135	0
+	+	1133	0
+	+	1177	36
+	+	1147	10
+	+	1177	67
+	+	1146	3
+	+	1146	4
+	+	1144	0
+	+	1143	0
+	+	1176	0
+	+	1149	0
+	+	1136	0
+	+	1129	0
+	+	1125	0
+	+	1123	0
+	+	45	30
+	+	44	0
+	+	47	0
+	+	1217	43
+	+	1218	0
+	+	1217	34
+	+	1218	25
+	+	1217	25
+	+	1217	10
+	+	1217	24
+	+	1217	50
+	+	1217	3
+	+	1217	19
+	+	1217	13
+	+	1218	45
+	+	1232	0
+	+	1217	0
+	+	1217	52
+	+	1218	52
+	+	1217	28
+	+	1217	29
+	+	1217	0
+	+	1217	26
+	+	1217	0
+	+	1150	0
+	+	1157	0
+	+	1170	10
+	+	1167	0
+	+	1174	40
+	+	46	31
+	+	1166	24
+	+	49	0
+	+	40	0
+	+	36	25
+	+	1229	56
+	+	1174	28
+	+	1174	10
+	+	1174	0
+	+	1174	8
+	+	1174	0
+	+	34	0
+	+	1230	56
+	+	15	0
+	+	13	0
+	+	16	0
+	+	13	0
+	+	7	0
+	+	1174	10
+	+	1174	65
+	+	1174	0
+	+	1174	21
+	+	1174	0
+	+	1174	13
+	+	1174	0
+	+	1174	10
+	+	1174	0
+	+	1229	46
+	+	1230	46
+	+	1229	0
+	+	1230	16
+	+	1229	16
+	+	37	26
+	+	40	0
+	+	1298	0
+	+	1299	64
+	+	1300	0
+	+	1301	0
+	+	70	0
+	+	68	16
+	+	69	0
+	+	67	0
+	+	79	0
+	+	80	0
+	+	79	0
+	+	83	0
+	+	79	0
+	+	81	16
+	+	100	0
+	+	101	21
+	+	1321	0
+
+> ~\vimfiles\syntax\javascript.vim
+	*	1684877346	0
+	"	14	4
+	^	22	15
+	.	22	14
+	+	1	0
+	+	395	0
+	+	1	0
+	+	147	0
+	+	155	0
+	+	156	0
+	+	147	0
+	+	395	0
+	+	147	141
+	+	18	0
+	+	19	35
+	+	18	41
+	+	18	12
+	+	20	0
+	+	19	0
+	+	18	0
+	+	22	14
+
+> ~\vimfiles\syntax\html.vim
+	*	1684877271	0
 	"	1	0
+	.	6	0
+	+	3	57
+	+	3	31
+	+	3	0
+	+	3	22
+	+	3	0
+	+	3	32
+	+	3	0
+	+	3	20
+	+	3	41
+	+	3	0
+	+	8	0
+	+	8	39
+	+	9	44
+	+	8	0
+	+	9	8
+	+	8	15
+	+	8	5
+	+	9	5
+	+	8	21
+	+	8	4
+	+	9	4
+	+	8	20
+	+	8	72
+	+	8	0
+	+	3	0
+	+	3	22
+	+	3	21
+	+	8	52
+	+	8	0
+	+	9	64
+	+	8	69
+	+	9	65
+	+	6	0
+	+	7	0
+	+	1	0
+	+	2	0
+	+	8	47
+	+	8	50
+	+	9	46
+	+	8	45
+	+	9	41
+	+	8	0
+	+	7	0
+	+	8	3
+	+	9	3
+	+	8	21
+	+	9	22
+	+	8	59
+	+	8	0
+	+	5	18
+	+	9	5
+	+	8	63
+	+	9	58
+	+	4	17
+	+	5	19
+	+	6	19
+	+	8	30
+	+	7	17
+	+	9	28
+	+	6	28
+	+	7	26
+	+	6	20
+	+	6	18
+	+	6	15
+	+	6	0
+
+> ~\vimfiles\syntax\conceal.vim
+	*	1684877267	0
+	"	1	0
+
+> ~\vimfiles\syntax\afl.vim
+	*	1684877256	0
+	"	1	0
+	^	2	43
+	.	2	42
+	+	1	0
+	+	3	0
+	+	6	0
+	+	1	65
+	+	3	0
+	+	6	0
+	+	1	21
+	+	4	14
+	+	1	25
+	+	1	30
+	+	3	18
+	+	6	25
+	+	3	0
+	+	2	0
+	+	5	12
+	+	2	23
+	+	1	47
+	+	2	42
+
+> ~\vimfiles\ftplugin\vue.vim
+	*	1684877170	0
+	"	1	0
+	^	1	27
+	.	1	26
+	+	2	0
+	+	1	25
+	+	2	0
+	+	1	26
+
+> ~\vimfiles\ftplugin\vim.vim
+	*	1684877152	0
+	"	1	0
+	^	102	30
+	.	102	0
+	+	77	53
+	+	78	12
+	+	79	24
+	+	81	0
+	+	91	0
+	+	91	85
+	+	91	0
+	+	65	0
+	+	91	85
+	+	65	0
+	+	67	0
+	+	69	0
+	+	68	51
+	+	69	0
+	+	65	0
+	+	67	0
+	+	69	0
+	+	20	0
+	+	1	8
+	+	112	32
+	+	102	18
+	+	112	25
+	+	111	11
+	+	111	0
+	+	111	11
+	+	112	0
+	+	111	13
+	+	112	21
+	+	110	0
+	+	104	21
+	+	105	22
+	+	111	12
+	+	105	48
+	+	107	28
+	+	106	0
+	+	109	8
+	+	108	16
+	+	110	0
+	+	111	0
+	+	110	0
+	+	112	16
+	+	112	0
+	+	1	11
+	+	24	11
+	+	59	0
+	+	99	23
+	+	99	10
+	+	99	0
+	+	99	28
+	+	99	3
+	+	99	0
+	+	99	7
+	+	99	15
+	+	99	17
+	+	99	16
+	+	99	84
+	+	99	0
+	+	99	28
+	+	99	12
+	+	99	24
+	+	99	0
+	+	99	42
+	+	99	38
+	+	99	0
+	+	114	7
+	+	118	0
+	+	114	0
+	+	118	0
+	+	114	55
+	+	118	0
+	+	114	52
+	+	118	0
+	+	114	0
+	+	118	0
+	+	114	47
+	+	118	0
+	+	114	54
+	+	118	0
+	+	114	58
+	+	118	0
+	+	119	0
+	+	114	60
+	+	118	0
+	+	114	47
+	+	118	0
+	+	114	50
+	+	118	0
+	+	114	48
+	+	118	0
+	+	115	31
+	+	118	0
+	+	116	19
+	+	117	0
+	+	116	35
+	+	117	0
+	+	102	28
+	+	102	0
+	+	100	32
+	+	102	29
+	+	102	0
+	a	68	24
+	b	68	24
+
+> ~\vimfiles\ftplugin\qf.vim
+	*	1684877150	0
+	"	1	0
+	.	1	0
+	+	1	0
+	+	1	95
+	+	1	0
+
+> ~\vimfiles\ftplugin\python.vim
+	*	1684877148	0
+	"	1	0
+	.	437	0
+	+	3	0
+	+	2	27
+	+	2	0
+	+	2	51
+	+	401	0
+	+	2	0
+	+	2	25
+	+	2	0
+	+	2	5
+	+	2	27
+	+	2	0
+	+	2	30
+	+	2	20
+	+	2	9
+	+	2	27
+	+	5	0
+	+	2	0
+	+	5	0
+	+	2	40
+	+	2	16
+	+	2	0
+	+	2	22
+	+	2	18
+	+	2	4
+	+	2	0
+	+	2	5
+	+	2	4
+	+	2	0
+	+	2	21
+	+	2	9
+	+	2	19
+	+	2	8
+	+	2	4
+	+	2	0
+	+	2	8
+	+	2	24
+	+	2	41
+	+	2	0
+	+	2	37
+	+	2	0
+	+	2	31
+	+	2	18
+	+	2	0
+	+	2	20
+	+	2	31
+	+	2	0
+	+	2	32
+	+	2	34
+	+	2	10
+	+	2	37
+	+	2	20
+	+	2	0
+	+	2	7
+	+	2	37
+	+	2	0
+	+	2	33
+	+	2	28
+	+	2	0
+	+	2	95
+	+	2	74
+	+	2	10
+	+	2	0
+	+	2	46
+	+	2	33
+	+	2	0
+	+	437	0
+
+> ~\vimfiles\ftplugin\markdown.vim
+	*	1684877141	0
+	"	1	0
+	^	1	19
+	.	1	0
+	+	1	0
+
+> ~\vimfiles\ftplugin\json.vim
+	*	1684877133	0
+	"	1	0
+	^	1	57
+	.	1	56
+	+	1	56
+
+> ~\vimfiles\ftplugin\javascript.vim
+	*	1684877131	0
+	"	1	0
+	^	35	20
+	.	35	19
+	+	31	35
+	+	31	73
+	+	31	88
+	+	31	0
+	+	31	23
+	+	31	0
+	+	31	48
+	+	31	0
+	+	31	72
+	+	31	28
+	+	31	78
+	+	31	54
+	+	12	0
+	+	31	0
+	+	17	0
+	+	23	0
+	+	27	0
+	+	25	0
+	+	13	0
+	+	24	0
+	+	31	0
+	+	17	14
+	+	31	22
+	+	17	0
+	+	15	25
+	+	17	0
+	+	16	24
+	+	33	0
+	+	34	0
+	+	34	45
+	+	35	0
+	+	35	49
+	+	34	49
+	+	35	54
+	+	34	18
+	+	35	18
+	+	11	10
+	+	11	0
+	+	11	20
+	+	11	15
+	+	11	14
+	+	11	0
+	+	13	20
+	+	15	14
+	+	16	23
+	+	18	39
+	+	19	42
+	+	22	13
+	+	25	57
+	+	29	9
+	+	14	14
+	+	27	14
+	+	2	0
+	+	4	0
+	+	7	0
+	+	5	64
+	+	32	37
+	+	40	10
+	+	38	0
+	+	41	58
+	+	44	10
+	+	43	0
+	+	42	0
+	+	43	0
+	+	43	8
+	+	44	0
+	+	43	8
+	+	61	35
+	+	41	0
+	+	60	0
+	+	57	10
+	+	50	0
+	+	48	77
+	+	49	0
+	+	48	77
+	+	46	13
+	+	50	34
+	+	51	58
+	+	53	12
+	+	56	8
+	+	62	63
+	+	62	59
+	+	63	32
+	+	63	28
+	+	64	0
+	+	59	10
+	+	32	0
+	+	31	0
+	+	37	11
+	+	53	14
+	+	60	0
+	+	62	0
+	+	55	0
+	+	61	34
+	+	63	41
+	+	58	11
+	+	34	1
+	+	35	1
+	+	34	19
+	+	35	19
+
+> ~\vimfiles\ftplugin\html.vim
+	*	1684877130	0
+	"	1	0
+	^	139	6
+	.	140	42
+	+	313	21
+	+	314	25
+	+	258	48
+	+	312	13
+	+	453	41
+	+	464	10
+	+	457	12
+	+	465	38
+	+	456	0
+	+	460	11
+	+	463	11
+	+	465	28
+	+	467	0
+	+	466	0
+	+	467	13
+	+	469	0
+	+	445	1
+	+	444	10
+	+	428	32
+	+	431	31
+	+	443	12
+	+	445	62
+	+	431	24
+	+	443	13
+	+	443	0
+	+	431	43
+	+	443	0
+	+	431	0
+	+	443	0
+	+	433	34
+	+	435	8
+	+	434	13
+	+	443	31
+	+	429	11
+	+	436	10
+	+	437	10
+	+	442	0
+	+	437	42
+	+	441	8
+	+	438	0
+	+	443	0
+	+	439	16
+	+	440	35
+	+	423	11
+	+	445	46
+	+	429	0
+	+	437	0
+	+	427	26
+	+	445	27
+	+	446	27
+	+	336	0
+	+	467	0
+	+	146	10
+	+	147	27
+	+	148	0
+	+	147	39
+	+	129	0
+	+	13	0
+	+	6	0
+	+	30	0
+	+	72	0
+	+	95	0
+	+	114	0
+	+	117	0
+	+	164	0
+	+	165	37
+	+	170	0
+	+	195	0
+	+	206	0
+	+	211	0
+	+	216	0
+	+	227	0
+	+	250	0
+	+	253	11
+	+	278	0
+	+	301	48
+	+	321	48
+	+	334	0
+	+	6	0
+	+	32	0
+	+	72	0
+	+	95	0
+	+	101	0
+	+	198	0
+	+	201	0
+	+	273	0
+	+	329	0
+	+	298	0
+	+	331	0
+	+	455	0
+	+	465	0
+	+	153	0
+	+	154	0
+	+	153	9
+	+	156	9
+	+	154	37
+	+	157	35
+	+	140	0
+	+	139	5
+	+	140	42
+
+> ~\vimfiles\ftplugin\css.vim
+	*	1684877126	0
+	"	1	0
+	.	1	0
+	+	1	51
+	+	1	21
+	+	1	9
+	+	1	0
+	+	1	9
+	+	1	0
+	+	1	4
+	+	1	30
+	+	1	4
+	+	1	28
+	+	1	31
+	+	1	28
+	+	1	0
+	+	1	11
+	+	1	42
+	+	1	0
+	+	1	17
+	+	1	41
+	+	1	0
+
+> ~\vimfiles\ftplugin\conceal.vim
+	*	1684877122	0
+	"	1	0
+
+> ~\vimfiles\after\ftplugin\python.vim
+	*	1684877054	0
+	"	1	0
+	.	2	0
+	+	2	0
+	+	1	0
+	+	2	11
+	+	2	17
+	+	2	8
+	+	2	0
+	+	2	5
+	+	2	0
+
+> ~\vimfiles\after\ftplugin\qf.vim
+	*	1684877053	0
+	"	1	0
+	^	11	20
+	.	11	21
+	+	9	18
+	+	1	9
+	+	11	0
+	+	8	10
+	+	11	44
+	+	4	61
+	+	11	30
+	+	2	10
+	+	3	6
+	+	4	11
+	+	3	7
+	+	4	0
+	+	5	0
+	+	6	0
+	+	7	0
+	+	4	36
+	+	6	15
+	+	11	0
+	+	10	19
+	+	11	29
+	+	10	20
+	+	11	21
+
+> ~\vimfiles\after\indent\vue.vim
+	*	1684877052	0
+	"	1	0
+	^	1	20
+	.	1	19
+	+	1	19
+
+> ~\vimfiles\after\syntax\cs.vim
+	*	1684877050	0
+	"	382	0
+	^	6	2
+	.	7	0
+	+	1	0
+	+	7	0
+
+> ~\vimfiles\after\syntax\json.vim
+	*	1684877049	0
+	"	1	0
+	^	2	21
+	.	2	20
+	+	1	0
+	+	3	0
+	+	2	20
+
+> ~\vimfiles\after\syntax\python.vim
+	*	1684877048	0
+	"	1	0
+	^	1	2
+	.	2	0
+	+	2	0
+	+	1	9
+	+	7	28
+	+	8	0
+	+	9	4
+	+	17	37
+	+	17	0
+	+	2	0
+
+> ~\vimfiles\after\syntax\vue.vim
+	*	1684877045	0
+	"	1	0
+	^	1	18
+	.	1	17
+	+	1	17
+
+> ~\vimfiles\plugin\argument-textobj.vim
+	*	1684876774	0
+	"	34	12
 	^	27	6
 	.	27	5
 	+	104	42
@@ -32386,109 +33179,6 @@ $
 	+	448	28
 	+	329	10
 	+	330	10
-
-> ~\vimfiles\vimrc
-	*	1684876420	0
-	"	1294	0
-	^	1294	5
-	.	1294	0
-	+	1134	0
-	+	1171	0
-	+	1136	53
-	+	1131	5
-	+	1132	5
-	+	1133	5
-	+	1124	5
-	+	1125	5
-	+	1122	0
-	+	1131	4
-	+	1132	4
-	+	1133	4
-	+	1123	35
-	+	1124	4
-	+	1125	4
-	+	1128	0
-	+	1126	0
-	+	1170	36
-	+	1140	10
-	+	1170	67
-	+	1139	3
-	+	1139	4
-	+	1137	0
-	+	1136	0
-	+	1169	0
-	+	1142	0
-	+	1129	0
-	+	1122	0
-	+	1118	0
-	+	1116	0
-	+	45	30
-	+	44	0
-	+	47	0
-	+	1210	43
-	+	1211	0
-	+	1210	34
-	+	1211	25
-	+	1210	25
-	+	1210	10
-	+	1210	24
-	+	1210	50
-	+	1210	3
-	+	1210	19
-	+	1210	13
-	+	1211	45
-	+	1225	0
-	+	1210	0
-	+	1210	52
-	+	1211	52
-	+	1210	28
-	+	1210	29
-	+	1210	0
-	+	1210	26
-	+	1210	0
-	+	1143	0
-	+	1150	0
-	+	1163	10
-	+	1160	0
-	+	1167	40
-	+	46	31
-	+	1159	24
-	+	49	0
-	+	40	0
-	+	36	25
-	+	1222	56
-	+	1167	28
-	+	1167	10
-	+	1167	0
-	+	1167	8
-	+	1167	0
-	+	34	0
-	+	1223	56
-	+	15	0
-	+	13	0
-	+	16	0
-	+	13	0
-	+	7	0
-	+	1167	10
-	+	1167	65
-	+	1167	0
-	+	1167	21
-	+	1167	0
-	+	1167	13
-	+	1167	0
-	+	1167	10
-	+	1167	0
-	+	1222	46
-	+	1223	46
-	+	1222	0
-	+	1223	16
-	+	1222	16
-	+	37	26
-	+	40	0
-	+	1291	0
-	+	1292	64
-	+	1293	0
-	+	1294	0
 
 > ~\vimfiles\autoload\plug.vim
 	*	1684876396	0
@@ -35155,13 +35845,6 @@ $
 	+	18	0
 	+	17	0
 
-> ~\vimfiles\after\indent\vue.vim
-	*	1680100801	0
-	"	1	0
-	^	1	20
-	.	1	19
-	+	1	19
-
 > ~\Desktop\vuets\hello.txt
 	*	1680027248	0
 	"	1	0
@@ -36291,259 +36974,6 @@ $
 > ~\vimfiles\ftplugin\vimrc
 	*	1674570122	0
 	"	1	0
-
-> ~\vimfiles\ftplugin\html.vim
-	*	1674569712	0
-	"	154	35
-	^	139	6
-	.	140	42
-	+	313	21
-	+	314	25
-	+	258	48
-	+	312	13
-	+	453	41
-	+	464	10
-	+	457	12
-	+	465	38
-	+	456	0
-	+	460	11
-	+	463	11
-	+	465	28
-	+	467	0
-	+	466	0
-	+	467	13
-	+	469	0
-	+	445	1
-	+	444	10
-	+	428	32
-	+	431	31
-	+	443	12
-	+	445	62
-	+	431	24
-	+	443	13
-	+	443	0
-	+	431	43
-	+	443	0
-	+	431	0
-	+	443	0
-	+	433	34
-	+	435	8
-	+	434	13
-	+	443	31
-	+	429	11
-	+	436	10
-	+	437	10
-	+	442	0
-	+	437	42
-	+	441	8
-	+	438	0
-	+	443	0
-	+	439	16
-	+	440	35
-	+	423	11
-	+	445	46
-	+	429	0
-	+	437	0
-	+	427	26
-	+	445	27
-	+	446	27
-	+	336	0
-	+	467	0
-	+	146	10
-	+	147	27
-	+	148	0
-	+	147	39
-	+	129	0
-	+	13	0
-	+	6	0
-	+	30	0
-	+	72	0
-	+	95	0
-	+	114	0
-	+	117	0
-	+	164	0
-	+	165	37
-	+	170	0
-	+	195	0
-	+	206	0
-	+	211	0
-	+	216	0
-	+	227	0
-	+	250	0
-	+	253	11
-	+	278	0
-	+	301	48
-	+	321	48
-	+	334	0
-	+	6	0
-	+	32	0
-	+	72	0
-	+	95	0
-	+	101	0
-	+	198	0
-	+	201	0
-	+	273	0
-	+	329	0
-	+	298	0
-	+	331	0
-	+	455	0
-	+	465	0
-	+	153	0
-	+	154	0
-	+	153	9
-	+	156	9
-	+	154	37
-	+	157	35
-	+	140	0
-	+	139	5
-	+	140	42
-
-> ~\vimfiles\ftplugin\vue.vim
-	*	1674569059	0
-	"	1	26
-	^	1	27
-	.	1	26
-	+	2	0
-	+	1	25
-	+	2	0
-	+	1	26
-
-> ~\vimfiles\ftplugin\javascript.vim
-	*	1674569003	0
-	"	63	0
-	^	35	20
-	.	35	19
-	+	31	35
-	+	31	73
-	+	31	88
-	+	31	0
-	+	31	23
-	+	31	0
-	+	31	48
-	+	31	0
-	+	31	72
-	+	31	28
-	+	31	78
-	+	31	54
-	+	12	0
-	+	31	0
-	+	17	0
-	+	23	0
-	+	27	0
-	+	25	0
-	+	13	0
-	+	24	0
-	+	31	0
-	+	17	14
-	+	31	22
-	+	17	0
-	+	15	25
-	+	17	0
-	+	16	24
-	+	33	0
-	+	34	0
-	+	34	45
-	+	35	0
-	+	35	49
-	+	34	49
-	+	35	54
-	+	34	18
-	+	35	18
-	+	11	10
-	+	11	0
-	+	11	20
-	+	11	15
-	+	11	14
-	+	11	0
-	+	13	20
-	+	15	14
-	+	16	23
-	+	18	39
-	+	19	42
-	+	22	13
-	+	25	57
-	+	29	9
-	+	14	14
-	+	27	14
-	+	2	0
-	+	4	0
-	+	7	0
-	+	5	64
-	+	32	37
-	+	40	10
-	+	38	0
-	+	41	58
-	+	44	10
-	+	43	0
-	+	42	0
-	+	43	0
-	+	43	8
-	+	44	0
-	+	43	8
-	+	61	35
-	+	41	0
-	+	60	0
-	+	57	10
-	+	50	0
-	+	48	77
-	+	49	0
-	+	48	77
-	+	46	13
-	+	50	34
-	+	51	58
-	+	53	12
-	+	56	8
-	+	62	63
-	+	62	59
-	+	63	32
-	+	63	28
-	+	64	0
-	+	59	10
-	+	32	0
-	+	31	0
-	+	37	11
-	+	53	14
-	+	60	0
-	+	62	0
-	+	55	0
-	+	61	34
-	+	63	41
-	+	58	11
-	+	34	1
-	+	35	1
-	+	34	19
-	+	35	19
-
-> ~\vimfiles\ftplugin\css.vim
-	*	1674568987	0
-	"	1	0
-	.	1	0
-	+	1	51
-	+	1	21
-	+	1	9
-	+	1	0
-	+	1	9
-	+	1	0
-	+	1	4
-	+	1	30
-	+	1	4
-	+	1	28
-	+	1	31
-	+	1	28
-	+	1	0
-	+	1	11
-	+	1	42
-	+	1	0
-	+	1	17
-	+	1	41
-	+	1	0
-
-> ~\vimfiles\ftplugin\json.vim
-	*	1674568985	0
-	"	1	0
-	^	1	57
-	.	1	56
-	+	1	56
 
 > ~\Desktop\mwh\attempt2\frontend\Autocomplete-mwh.vue
 	*	1674271144	0
@@ -37843,77 +38273,6 @@ $
 	*	1673828665	0
 	"	8	1357
 
-> ~\vimfiles\ftplugin\python.vim
-	*	1673825701	0
-	"	1	0
-	.	437	0
-	+	3	0
-	+	2	27
-	+	2	0
-	+	2	51
-	+	401	0
-	+	2	0
-	+	2	25
-	+	2	0
-	+	2	5
-	+	2	27
-	+	2	0
-	+	2	30
-	+	2	20
-	+	2	9
-	+	2	27
-	+	5	0
-	+	2	0
-	+	5	0
-	+	2	40
-	+	2	16
-	+	2	0
-	+	2	22
-	+	2	18
-	+	2	4
-	+	2	0
-	+	2	5
-	+	2	4
-	+	2	0
-	+	2	21
-	+	2	9
-	+	2	19
-	+	2	8
-	+	2	4
-	+	2	0
-	+	2	8
-	+	2	24
-	+	2	41
-	+	2	0
-	+	2	37
-	+	2	0
-	+	2	31
-	+	2	18
-	+	2	0
-	+	2	20
-	+	2	31
-	+	2	0
-	+	2	32
-	+	2	34
-	+	2	10
-	+	2	37
-	+	2	20
-	+	2	0
-	+	2	7
-	+	2	37
-	+	2	0
-	+	2	33
-	+	2	28
-	+	2	0
-	+	2	95
-	+	2	74
-	+	2	10
-	+	2	0
-	+	2	46
-	+	2	33
-	+	2	0
-	+	437	0
-
 > ~\Desktop\website\download.201012.tolstoy_philosopher.html
 	*	1673092735	0
 	"	1	0
@@ -39212,13 +39571,6 @@ $
 	.	1	0
 	+	2	0
 	+	1	0
-
-> ~\vimfiles\after\syntax\vue.vim
-	*	1667213461	0
-	"	1	17
-	^	1	18
-	.	1	17
-	+	1	17
 
 > ~\vimfiles\plugged\vim-vue-plugin\syntax\vue.vim
 	*	1667125976	0
@@ -40528,114 +40880,6 @@ $
 	*	1665050981	0
 	"	375	8
 
-> ~\vimfiles\ftplugin\vim.vim
-	*	1665049742	0
-	"	86	0
-	^	102	30
-	.	102	0
-	+	77	53
-	+	78	12
-	+	79	24
-	+	81	0
-	+	91	0
-	+	91	85
-	+	91	0
-	+	65	0
-	+	91	85
-	+	65	0
-	+	67	0
-	+	69	0
-	+	68	51
-	+	69	0
-	+	65	0
-	+	67	0
-	+	69	0
-	+	20	0
-	+	1	8
-	+	112	32
-	+	102	18
-	+	112	25
-	+	111	11
-	+	111	0
-	+	111	11
-	+	112	0
-	+	111	13
-	+	112	21
-	+	110	0
-	+	104	21
-	+	105	22
-	+	111	12
-	+	105	48
-	+	107	28
-	+	106	0
-	+	109	8
-	+	108	16
-	+	110	0
-	+	111	0
-	+	110	0
-	+	112	16
-	+	112	0
-	+	1	11
-	+	24	11
-	+	59	0
-	+	99	23
-	+	99	10
-	+	99	0
-	+	99	28
-	+	99	3
-	+	99	0
-	+	99	7
-	+	99	15
-	+	99	17
-	+	99	16
-	+	99	84
-	+	99	0
-	+	99	28
-	+	99	12
-	+	99	24
-	+	99	0
-	+	99	42
-	+	99	38
-	+	99	0
-	+	114	7
-	+	118	0
-	+	114	0
-	+	118	0
-	+	114	55
-	+	118	0
-	+	114	52
-	+	118	0
-	+	114	0
-	+	118	0
-	+	114	47
-	+	118	0
-	+	114	54
-	+	118	0
-	+	114	58
-	+	118	0
-	+	119	0
-	+	114	60
-	+	118	0
-	+	114	47
-	+	118	0
-	+	114	50
-	+	118	0
-	+	114	48
-	+	118	0
-	+	115	31
-	+	118	0
-	+	116	19
-	+	117	0
-	+	116	35
-	+	117	0
-	+	102	28
-	+	102	0
-	+	100	32
-	+	102	29
-	+	102	0
-	a	68	24
-	b	68	24
-
 > C:\Program Files\Vim\vim90\doc\message.txt
 	*	1665048747	0
 	"	20	15
@@ -40976,42 +41220,6 @@ $
 	*	1665005402	0
 	"	128	13
 
-> ~\vimfiles\after\ftplugin\qf.vim
-	*	1664990198	0
-	"	11	0
-	^	11	20
-	.	11	21
-	+	9	18
-	+	1	9
-	+	11	0
-	+	8	10
-	+	11	44
-	+	4	61
-	+	11	30
-	+	2	10
-	+	3	6
-	+	4	11
-	+	3	7
-	+	4	0
-	+	5	0
-	+	6	0
-	+	7	0
-	+	4	36
-	+	6	15
-	+	11	0
-	+	10	19
-	+	11	29
-	+	10	20
-	+	11	21
-
-> ~\vimfiles\ftplugin\qf.vim
-	*	1664990197	0
-	"	1	0
-	.	1	0
-	+	1	0
-	+	1	95
-	+	1	0
-
 > C:\Program Files\Vim\vim90\ftplugin\qf.vim
 	*	1664978857	0
 	"	17	0
@@ -41261,20 +41469,6 @@ $
 	^	1	37
 	.	1	36
 	+	1	36
-
-> ~\vimfiles\after\syntax\python.vim
-	*	1664969400	0
-	"	4	25
-	^	1	2
-	.	2	0
-	+	2	0
-	+	1	9
-	+	7	28
-	+	8	0
-	+	9	4
-	+	17	37
-	+	17	0
-	+	2	0
 
 > C:\Program Files\Vim\vim90\doc\quickfix.txt
 	*	1664969111	0
@@ -43622,23 +43816,6 @@ $
 	.	2	10
 	+	4	0
 	+	2	10
-
-> ~\vimfiles\after\syntax\json.vim
-	*	1663518095	0
-	"	3	0
-	^	2	21
-	.	2	20
-	+	1	0
-	+	3	0
-	+	2	20
-
-> ~\vimfiles\after\syntax\cs.vim
-	*	1663518091	0
-	"	1	0
-	^	6	2
-	.	7	0
-	+	1	0
-	+	7	0
 
 > C:\Program Files\Vim\vim90\doc\gui_x11.txt
 	*	1663517138	0
@@ -56104,19 +56281,6 @@ $
 	+	26	0
 	+	29	0
 	+	30	0
-
-> ~\vimfiles\after\ftplugin\python.vim
-	*	1643736487	0
-	"	1	0
-	.	2	0
-	+	2	0
-	+	1	0
-	+	2	11
-	+	2	17
-	+	2	8
-	+	2	0
-	+	2	5
-	+	2	0
 
 > C:\Program Files\Vim\vim82\doc\usr_41.txt
 	*	1643735905	0
@@ -68711,29 +68875,6 @@ $
 	*	1620877289	0
 	"	188	0
 
-> ~\vimfiles\syntax\javascript.vim
-	*	1619543152	0
-	"	22	14
-	^	22	15
-	.	22	14
-	+	1	0
-	+	395	0
-	+	1	0
-	+	147	0
-	+	155	0
-	+	156	0
-	+	147	0
-	+	395	0
-	+	147	141
-	+	18	0
-	+	19	35
-	+	18	41
-	+	18	12
-	+	20	0
-	+	19	0
-	+	18	0
-	+	22	14
-
 > ~\Desktop\Twitch\coffee-vps\data\987201168-offsets.json
 	*	1619542717	0
 	"	1	0
@@ -74222,76 +74363,6 @@ $
 	+	181	0
 	+	156	0
 
-> ~\vimfiles\syntax\html.vim
-	*	1611821171	0
-	"	1	0
-	.	6	0
-	+	3	57
-	+	3	31
-	+	3	0
-	+	3	22
-	+	3	0
-	+	3	32
-	+	3	0
-	+	3	20
-	+	3	41
-	+	3	0
-	+	8	0
-	+	8	39
-	+	9	44
-	+	8	0
-	+	9	8
-	+	8	15
-	+	8	5
-	+	9	5
-	+	8	21
-	+	8	4
-	+	9	4
-	+	8	20
-	+	8	72
-	+	8	0
-	+	3	0
-	+	3	22
-	+	3	21
-	+	8	52
-	+	8	0
-	+	9	64
-	+	8	69
-	+	9	65
-	+	6	0
-	+	7	0
-	+	1	0
-	+	2	0
-	+	8	47
-	+	8	50
-	+	9	46
-	+	8	45
-	+	9	41
-	+	8	0
-	+	7	0
-	+	8	3
-	+	9	3
-	+	8	21
-	+	9	22
-	+	8	59
-	+	8	0
-	+	5	18
-	+	9	5
-	+	8	63
-	+	9	58
-	+	4	17
-	+	5	19
-	+	6	19
-	+	8	30
-	+	7	17
-	+	9	28
-	+	6	28
-	+	7	26
-	+	6	20
-	+	6	18
-	+	6	15
-	+	6	0
-
 > ~\Desktop\website\hovercard.html
 	*	1611821075	0
 	"	123	0
@@ -74473,14 +74544,6 @@ $
 	+	37	71
 	+	39	0
 	+	35	68
-
-> ~\vimfiles\ftplugin\conceal.vim
-	*	1611795840	0
-	"	1	0
-
-> ~\vimfiles\syntax\conceal.vim
-	*	1611795836	0
-	"	1	0
 
 > ~\Desktop\website\chrome_tabs.html
 	*	1611750923	0
@@ -79431,13 +79494,6 @@ $
 > ~\vimfiles\pack\plugins\start\scroll.vim\Readme.md
 	*	1601372910	0
 	"	1	0
-
-> ~\vimfiles\ftplugin\markdown.vim
-	*	1601372889	0
-	"	1	0
-	^	1	19
-	.	1	0
-	+	1	0
 
 > ~\Desktop\website\sample.html
 	*	1601317987	0
@@ -93286,30 +93342,6 @@ $
 	+	7	0
 	+	12	17
 	+	1	0
-
-> ~\vimfiles\syntax\afl.vim
-	*	1565122299	0
-	"	1	0
-	^	2	43
-	.	2	42
-	+	1	0
-	+	3	0
-	+	6	0
-	+	1	65
-	+	3	0
-	+	6	0
-	+	1	21
-	+	4	14
-	+	1	25
-	+	1	30
-	+	3	18
-	+	6	25
-	+	3	0
-	+	2	0
-	+	5	12
-	+	2	23
-	+	1	47
-	+	2	42
 
 > ~\vimfiles\temp\anchor.afl
 	*	1565121816	0
