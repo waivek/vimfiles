@@ -1288,6 +1288,9 @@ vmap 8 *
 
 command! Elevate silent normal vi,yvafp
 
-source ~/vimfiles/performance/performance.vim
+
+if filereadable(expand("~/vimfiles/performance/performance.vim"))
+    source ~/vimfiles/performance/performance.vim
+endif
 
 
