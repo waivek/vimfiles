@@ -64,6 +64,10 @@ call plug#end()
 if has("win32")
     source ~/vimfiles/ide.vim
 endif
+if has('unix') || has('linux')
+    source ~/.vim/ide.vim
+endif
+
 
 if has("win32")
     let $WSL = 'C:\Users\vivek\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\'
@@ -72,11 +76,11 @@ endif
 
 if has("win32")
     source ~/vimfiles/plugin/colorscheme.vim
-    colorscheme codedark
-    " colorscheme apprentice
-    " colorscheme dracula
-
 endif
+if has('unix') || has('linux')
+    source ~/.vim/plugin/colorscheme.vim
+endif
+colorscheme codedark
 
 set nobackup
 " set backup
@@ -92,6 +96,9 @@ endif
 set undofile
 if has("win32")
     set undodir=C:/Users/vivek/vimfiles/undofiles,.
+endif
+if has('unix') || has('linux')
+    set undodir=~/.vim/undofiles,.
 endif
 " Unix {{{
 if has("unix")
@@ -1262,7 +1269,7 @@ function! s:ObnoxiousErrorMessage(keystroke)
     let is_command_window = len(getcmdwintype()) > 0
     let is_quickfix_or_loclist = getwininfo(bufwinid("%"))[0]["quickfix"] == 1
     if is_command_window || is_quickfix_or_loclist
-        normal! 
+        normal! 
         return
     endif
     for i in range(20)

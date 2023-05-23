@@ -257,7 +257,7 @@ function! s:SplitParagraphOrListItem()
     if !can_split
         return
     endif
-    s/>/>
+    s/>/>
     s/.*\zs</<
     normal! =at
     normal! j
