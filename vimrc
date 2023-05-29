@@ -45,6 +45,13 @@ Plug 'tomtom/tcomment_vim'
 Plug 'tommcdo/vim-exchange'
 Plug 'AndrewRadev/sideways.vim'
 
+let fzf_dir = has('win32') ? expand('~/vimfiles/.fzf') : expand('~/.vim/.fzf')
+Plug 'junegunn/fzf', { 'dir': fzf_dir, 'do': './install --all' }
+
+" Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+
+
 
 
 Plug 'puremourning/vimspector'
@@ -61,6 +68,15 @@ endif
 if has('unix') || has('linux')
     source ~/.vim/ide.vim
 endif
+
+
+
+" Enable fzf.vim plugin
+let g:fzf_preview_window = 'right:50%:sharp'
+let g:fzf_layout = { 'window': { 'width': 0.8, 'height': 0.6, 'highlight': 'Pmenu,Normal:Normal' } }
+" let g:fzf_colors = { 'fg': 'fg', 'bg': 'bg', 'hl': 'String', 'fg+': 'fg', 'bg+': 'bg', 'hl+': 'Statement', 'info': 'fg+0', 'border': 'fg+0' }
+" let g:fzf_action = { 'ctrl-t': 'tab split', 'ctrl-s': 'split', 'ctrl-v': 'vsplit' }
+
 
 
 if has("win32")
