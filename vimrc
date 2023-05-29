@@ -46,7 +46,7 @@ Plug 'tommcdo/vim-exchange'
 Plug 'AndrewRadev/sideways.vim'
 
 let fzf_dir = has('win32') ? expand('~/vimfiles/.fzf') : expand('~/.vim/.fzf')
-" Plug 'junegunn/fzf', { 'dir': fzf_dir, 'do': './install --all' }
+Plug 'junegunn/fzf', { 'dir': fzf_dir, 'do': './install --all' }
 
 " Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
