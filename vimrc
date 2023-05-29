@@ -95,15 +95,19 @@ colorscheme codedark
 set nobackup
 " set backup
 " set writebackup " Only creates Dropbox Errors
+
 " set backupdir=C:/Users/vivek/vimfiles/backupfiles,.
 
 set undofile
-if has("win32")
-    set undodir=C:/Users/vivek/vimfiles/undofiles,.
+let undopath = has('unix') ? '~/.vim/undofiles' : has('win32') || has('win64') ? '~/vimfiles/undofiles' : ''
+let undopath = expand(undopath)
+if !isdirectory(undopath)
+  call mkdir(undopath, 'p')
 endif
-if has('unix') || has('linux')
-    set undodir=~/.vim/undofiles,.
-endif
+let &undodir=undopath . ',.'
+
+
+
 set sidescroll=0
 
 " Remaps {{{

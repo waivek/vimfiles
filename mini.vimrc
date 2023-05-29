@@ -1,6 +1,8 @@
 set history=10000
 set viminfo='10000,<50,s10,h,rA:,rB:,%,f1,n
 
+"
+
 " Windows-specific viminfo file
 if has('win32') || has('win64')
     let &viminfo = &viminfo . '~/vimfiles/_viminfo_win_mini'
