@@ -11,25 +11,71 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/\C\<codedark\>
+~MSle0~/\~\/\.[a-zA-Z]\w*
 
 # Last Substitute Search Pattern:
-~MSle0&^zsh
+~MSle0&\~\/\.[a-zA-Z]
 
 # Last Substitute String:
-$
+$\0
 
 # Command Line History (newest to oldest):
+:q
+|2,0,1685376149,,"q"
+:b \Users\vivek\Documents\mad_max_links.txt
+|2,0,1685376148,,"b \\Users\\vivek\\Documents\\mad_max_links.txt"
+:MRU mad
+|2,0,1685376144,,"MRU mad"
+:b \Users\vivek\Desktop\Docker\ubuntu-dockerfile
+|2,0,1685359398,,"b \\Users\\vivek\\Desktop\\Docker\\ubuntu-dockerfile"
+:Isolate
+|2,0,1685359338,,"Isolate"
+:v/\~\/\.[a-zA-Z]/d
+|2,0,1685359317,,"v/\\~\\/\\.[a-zA-Z]/d"
+:v/[^a-zA-Z]\.[a-zA-Z]/d
+|2,0,1685359273,,"v/[^a-zA-Z]\\.[a-zA-Z]/d"
+:e bash.txt
+|2,0,1685359223,,"e bash.txt"
+:e bash.md
+|2,0,1685359161,,"e bash.md"
+:CMD
+|2,0,1685359144,,"CMD"
+:e ~/temp/bash.html
+|2,0,1685359132,,"e ~/temp/bash.html"
+:e bas
+|2,0,1685359127,,"e bas"
+:enew
+|2,0,1685359072,,"enew"
+: w ~/temp/bash_files.txt
+|2,0,1685359070,," w ~/temp/bash_files.txt"
+:%sort u
+|2,0,1685359005,,"%sort u"
+:%s/:.*//
+|2,0,1685358997,,"%s/:.*//"
+:%s:.*//
+|2,0,1685358990,,"%s:.*//"
+:MRU 
+|2,0,1685358704,,"MRU "
+:e ~/Documents/mad_max_links.txt
+|2,0,1685308909,,"e ~/Documents/mad_max_links.txt"
+:MRU ubu
+|2,0,1685234041,,"MRU ubu"
+:MRU tdd
+|2,0,1685142850,,"MRU tdd"
+:e ~/Documents/git.txt
+|2,0,1685137460,,"e ~/Documents/git.txt"
+:b 
+|2,0,1685137456,,"b "
+:MRU git.txt
+|2,0,1685137454,,"MRU git.txt"
+:MRU ub
+|2,0,1685135314,,"MRU ub"
 :CMD .
 |2,0,1684877594,,"CMD ."
 :41
 |2,0,1684877586,,"41"
 :b C:\Users\vivek\vimfiles\vimrc
 |2,0,1684877584,,"b C:\\Users\\vivek\\vimfiles\\vimrc"
-:q
-|2,0,1684877387,,"q"
-:CMD
-|2,0,1684877304,,"CMD"
 :cd plugged/
 |2,0,1684877303,,"cd plugged/"
 :cd ..
@@ -138,8 +184,6 @@ $
 |2,0,1684833363,,"e ubuntu-dockerfile"
 :MRU dock
 |2,0,1684833360,,"MRU dock"
-:MRU ubu
-|2,0,1684833356,,"MRU ubu"
 :b ubu
 |2,0,1684833355,,"b ubu"
 :MRU pytho
@@ -148,8 +192,6 @@ $
 |2,0,1684494954,,"MRU Butt"
 :b python-dockerfile
 |2,0,1684493078,,"b python-dockerfile"
-:enew
-|2,0,1684449736,,"enew"
 :MRU dockerfile
 |2,0,1684449264,,"MRU dockerfile"
 :MRU vm.b
@@ -204,8 +246,6 @@ $
 |2,0,1684356887,,"grep -g *.netrw TAB"
 :e ~/Documents/
 |2,0,1684356859,,"e ~/Documents/"
-:MRU 
-|2,0,1684356856,,"MRU "
 :MRU inputrc
 |2,0,1684356788,,"MRU inputrc"
 :MRU 27:~\vimfiles\config.txt
@@ -580,8 +620,6 @@ $
 |2,0,1680357159,,"e ~/Documents/prompts/bin_jio.txt"
 :b ButtonShowcase.vue
 |2,0,1680354194,,"b ButtonShowcase.vue"
-:%sort u
-|2,0,1680354134,,"%sort u"
 :v/class="ma/d
 |2,0,1680354059,,"v/class=\"ma/d"
 :%s/class="ma/\0
@@ -1414,8 +1452,6 @@ $
 |2,0,1667690190,,"e get"
 :MRU Ro
 |2,0,1667690179,,"MRU Ro"
-:b 
-|2,0,1667687640,,"b "
 :MRU back
 |2,0,1667524914,,"MRU back"
 :MRU 613:code\api.py
@@ -2748,8 +2784,6 @@ $
 |2,0,1664923989,," w ~/vimfiles/temp/221005.q2b_vim_funccalls.vim"
 :Isolate \f\+\ze(
 |2,0,1664923968,,"Isolate \\f\\+\\ze("
-:Isolate
-|2,0,1664923963,,"Isolate"
 :Isol
 |2,0,1664923957,,"Isol"
 :set ft=vim
@@ -16850,14 +16884,36 @@ $
 |2,0,1624224290,,"wviminfo"
 
 # Search String History (newest to oldest):
+? \~\/\.[a-zA-Z]\w*
+|2,1,1685359338,,"\\~\\/\\.[a-zA-Z]\\w*"
+?/\~\/\.[a-zA-Z]\w*
+|2,1,1685359335,47,"\\~\\/\\.[a-zA-Z]\\w*"
+? \~\/\.[a-zA-Z]
+|2,1,1685359317,,"\\~\\/\\.[a-zA-Z]"
+?/\~\/\.[a-zA-Z]
+|2,1,1685359315,47,"\\~\\/\\.[a-zA-Z]"
+? [^a-zA-Z]\.[a-zA-Z]
+|2,1,1685359273,,"[^a-zA-Z]\\.[a-zA-Z]"
+? :.*
+|2,1,1685358997,,":.*"
+? .*//
+|2,1,1685358990,,".*//"
+?/curl
+|2,1,1685234050,47,"curl"
+?/ > 
+|2,1,1685137800,47," > "
+?/> 
+|2,1,1685137795,47,"> "
+?/token
+|2,1,1685137423,47,"token"
+?/vim
+|2,1,1685135746,47,"vim"
 ?/ex
 |2,1,1684836221,47,"ex"
 ?/filerea
 |2,1,1684834972,47,"filerea"
 ?/vimfiles
 |2,1,1684834861,47,"vimfiles"
-?/vim
-|2,1,1684834778,47,"vim"
 ?/update
 |2,1,1684834625,47,"update"
 ?/rupa
@@ -23127,8 +23183,6 @@ $
 |2,1,1649591519,47,"video_dic"
 ?/update_video
 |2,1,1649591516,47,"update_video"
-? :.*
-|2,1,1649581815,,":.*"
 ?/offsetSeconds
 |2,1,1649581770,47,"offsetSeconds"
 ?/id\>
@@ -25507,8 +25561,6 @@ $
 |2,1,1635803238,47,"error_repo"
 ?/extension=curl
 |2,1,1635802148,47,"extension=curl"
-?/curl
-|2,1,1635800801,47,"curl"
 ?/GROUP
 |2,1,1635773559,47,"GROUP"
 ?/kv_table
@@ -29556,44 +29608,52 @@ $
 
 # Registers:
 "0	CHAR	0
-	C:/Users/vivek/vimfiles
-|3,0,0,0,1,0,1684877381,"C:/Users/vivek/vimfiles"
-""1	LINE	0
-	
-	" Unix {{{
-	if has("unix")
-	    set viminfo='10000,<50,s10,h,rA:,rB:,%,f1,n~/.vim/_viminfo
-	endif
-	" }}}
-|3,1,1,1,6,0,1684877590,"","\" Unix {{{","if has(\"unix\")","    set viminfo='10000,<50,s10,h,rA:,rB:,%,f1,n~/.vim/_viminfo","endif","\" }}}"
+	>> ~/.config/setup.sh && \
+|3,0,0,0,1,0,1685359522,">> ~/.config/setup.sh && \\"
+"1	BLOCK	1
+	~/
+	~/
+	~/
+	~/
+	~/
+	~/
+	~/
+	~/
+|3,0,1,2,8,1,1685359494,"~/","~/","~/","~/","~/","~/","~/","~/"
 "2	LINE	0
-	colo codedark
-|3,0,2,1,1,0,1684877383,"colo codedark"
-"3	LINE	0
-	    source ~/.vim/plugin/colorscheme.vim
-|3,0,3,1,1,0,1684876857,"    source ~/.vim/plugin/colorscheme.vim"
+	
+|3,0,2,1,1,0,1685359419,""
+"3	BLOCK	1
+	7 
+	3 
+	3 
+	2 
+	2 
+	2 
+	1 
+	1 
+|3,0,3,2,8,1,1685359365,"7 ","3 ","3 ","2 ","2 ","2 ","1 ","1 "
 "4	LINE	0
-	    source ~/.vim/ide.vim
-|3,0,4,1,1,0,1684876837,"    source ~/.vim/ide.vim"
+	  ------------ -----------------------------------------------------------------------------------------
+|3,0,4,1,1,0,1685359338,"  ------------ -----------------------------------------------------------------------------------------"
 "5	LINE	0
-	    " colorscheme apprentice
-	    " colorscheme dracula
-|3,0,5,1,2,0,1684876833,"    \" colorscheme apprentice","    \" colorscheme dracula"
+	  Jump to:     A   B   C   D   E   F   H   I   J   K   L   M   N   O   P   Q   R   S   T   V   W   Y  
+|3,0,5,1,1,0,1685359338,"  Jump to:     A   B   C   D   E   F   H   I   J   K   L   M   N   O   P   Q   R   S   T   V   W   Y  "
 "6	LINE	0
-	    colorscheme codedark
-|3,0,6,1,1,0,1684876828,"    colorscheme codedark"
+	  ------------ -----------------------------------------------------------------------------------------
+|3,0,6,1,1,0,1685359338,"  ------------ -----------------------------------------------------------------------------------------"
 "7	LINE	0
 	
-|3,0,7,1,1,0,1684876816,""
+|3,0,7,1,1,0,1685359338,""
 "8	LINE	0
-	
-|3,0,8,1,1,0,1684876801,""
+	------------------------------------------------------------------------
+|3,0,8,1,1,0,1685359338,"------------------------------------------------------------------------"
 "9	LINE	0
-	???
-|3,0,9,1,1,0,1684838774,"???"
-"a	CHAR	0
-	0i'jkA',
-|3,0,10,0,1,0,1683934292,"0i'jkA',"
+	
+|3,0,9,1,1,0,1685359338,""
+"a@	CHAR	0
+	0i"jkA"
+|3,2,10,0,1,0,1685359018,"0i\"jkA\""
 "b	LINE	0
 	        cursor, connection = log_db()
 |3,0,11,1,1,0,1657748821,"        cursor, connection = log_db()"
@@ -29688,9 +29748,9 @@ $
 	id="tna-auto-sub-cta"
 	id="tna-auto-twitter-cta"
 |3,0,33,1,6,0,1602258057,"id=\"audio-tooltip\"","id=\"jump-to-top\"","id=\"navbar-main\"","id=\"sticky-header\"","id=\"tna-auto-sub-cta\"","id=\"tna-auto-twitter-cta\""
-"-	CHAR	0
-	C:/Users/vivek/vimfiles
-|3,0,36,0,1,0,1684876867,"C:/Users/vivek/vimfiles"
+""-	CHAR	0
+	>>
+|3,1,36,0,1,0,1685359524,">>"
 
 # File marks:
 'A  217  28  ~\vimfiles\pack\plugins\start\sideways.vim\autoload\sideways\parsing.vim
@@ -29705,235 +29765,384 @@ $
 |4,75,10,0,1664397883,"~\\Desktop\\Twitch\\coffee-vps\\flask-vue\\vuejs\\Chart.vue"
 'M  1564  44  C:\Program Files (x86)\Vim\vim82\doc\quickfix.txt
 |4,77,1564,44,1582635887,"C:\\Program Files (x86)\\Vim\\vim82\\doc\\quickfix.txt"
-'0  13  76  ~\vimfiles\vimrc
-|4,48,13,76,1684877612,"~\\vimfiles\\vimrc"
-'1  1320  0  ~\vimfiles\vimrc
-|4,49,1320,0,1684877580,"~\\vimfiles\\vimrc"
-'2  1314  0  ~\vimfiles\vimrc
-|4,50,1314,0,1684877388,"~\\vimfiles\\vimrc"
-'3  1320  0  ~\vimfiles\vimrc
-|4,51,1320,0,1684877388,"~\\vimfiles\\vimrc"
-'4  14  4  ~\vimfiles\syntax\javascript.vim
-|4,52,14,4,1684877348,"~\\vimfiles\\syntax\\javascript.vim"
-'5  14  4  ~\vimfiles\syntax\javascript.vim
-|4,53,14,4,1684877348,"~\\vimfiles\\syntax\\javascript.vim"
-'6  14  4  ~\vimfiles\syntax\javascript.vim
-|4,54,14,4,1684877348,"~\\vimfiles\\syntax\\javascript.vim"
-'7  14  4  ~\vimfiles\syntax\javascript.vim
-|4,55,14,4,1684877348,"~\\vimfiles\\syntax\\javascript.vim"
-'8  14  4  ~\vimfiles\syntax\javascript.vim
-|4,56,14,4,1684877348,"~\\vimfiles\\syntax\\javascript.vim"
-'9  14  4  ~\vimfiles\syntax\javascript.vim
-|4,57,14,4,1684877348,"~\\vimfiles\\syntax\\javascript.vim"
+'0  10  0  ~\Documents\mad_max_links.txt
+|4,48,10,0,1685376150,"~\\Documents\\mad_max_links.txt"
+'1  93  4  ~\Desktop\Docker\ubuntu-dockerfile
+|4,49,93,4,1685235791,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+'2  89  4  ~\Desktop\Docker\ubuntu-dockerfile
+|4,50,89,4,1685235791,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+'3  26  0  ~\Documents\Python\tdd.py
+|4,51,26,0,1685142862,"~\\Documents\\Python\\tdd.py"
+'4  26  0  ~\Documents\Python\tdd.py
+|4,52,26,0,1685142862,"~\\Documents\\Python\\tdd.py"
+'5  26  0  ~\Documents\Python\tdd.py
+|4,53,26,0,1685142862,"~\\Documents\\Python\\tdd.py"
+'6  26  0  ~\Documents\Python\tdd.py
+|4,54,26,0,1685142862,"~\\Documents\\Python\\tdd.py"
+'7  13  76  ~\vimfiles\vimrc
+|4,55,13,76,1684877612,"~\\vimfiles\\vimrc"
+'8  13  76  ~\vimfiles\vimrc
+|4,56,13,76,1684877612,"~\\vimfiles\\vimrc"
+'9  13  76  ~\vimfiles\vimrc
+|4,57,13,76,1684877612,"~\\vimfiles\\vimrc"
 
 # Jumplist (newest first):
--'  13  76  ~\vimfiles\vimrc
-|4,39,13,76,1684877612,"~\\vimfiles\\vimrc"
--'  38  5  ~\vimfiles\vimrc
-|4,39,38,5,1684877590,"~\\vimfiles\\vimrc"
--'  1314  0  ~\vimfiles\vimrc
-|4,39,1314,0,1684877585,"~\\vimfiles\\vimrc"
--'  1320  0  ~\vimfiles\vimrc
-|4,39,1320,0,1684877580,"~\\vimfiles\\vimrc"
--'  1320  0  ~\vimfiles\vimrc
-|4,39,1320,0,1684877388,"~\\vimfiles\\vimrc"
--'  416  26  ~\vimfiles\vimrc
-|4,39,416,26,1684877382,"~\\vimfiles\\vimrc"
--'  422  26  ~\vimfiles\vimrc
-|4,39,422,26,1684877382,"~\\vimfiles\\vimrc"
--'  422  26  ~\vimfiles\vimrc
-|4,39,422,26,1684877382,"~\\vimfiles\\vimrc"
--'  1315  5  ~\vimfiles\vimrc
-|4,39,1315,5,1684877381,"~\\vimfiles\\vimrc"
--'  1321  5  ~\vimfiles\vimrc
-|4,39,1321,5,1684877381,"~\\vimfiles\\vimrc"
--'  1321  5  ~\vimfiles\vimrc
-|4,39,1321,5,1684877381,"~\\vimfiles\\vimrc"
--'  97  0  ~\vimfiles\vimrc
-|4,39,97,0,1684877376,"~\\vimfiles\\vimrc"
--'  103  0  ~\vimfiles\vimrc
-|4,39,103,0,1684877376,"~\\vimfiles\\vimrc"
--'  103  0  ~\vimfiles\vimrc
-|4,39,103,0,1684877376,"~\\vimfiles\\vimrc"
--'  14  4  ~\vimfiles\syntax\javascript.vim
-|4,39,14,4,1684877348,"~\\vimfiles\\syntax\\javascript.vim"
--'  14  4  ~\vimfiles\syntax\javascript.vim
-|4,39,14,4,1684877348,"~\\vimfiles\\syntax\\javascript.vim"
--'  14  4  ~\vimfiles\syntax\javascript.vim
-|4,39,14,4,1684877348,"~\\vimfiles\\syntax\\javascript.vim"
--'  14  4  ~\vimfiles\syntax\javascript.vim
-|4,39,14,4,1684877348,"~\\vimfiles\\syntax\\javascript.vim"
--'  1  0  ~\vimfiles\syntax\javascript.vim
-|4,39,1,0,1684877271,"~\\vimfiles\\syntax\\javascript.vim"
--'  1  0  ~\vimfiles\syntax\html.vim
-|4,39,1,0,1684877271,"~\\vimfiles\\syntax\\html.vim"
--'  1  0  ~\vimfiles\syntax\javascript.vim
-|4,39,1,0,1684877271,"~\\vimfiles\\syntax\\javascript.vim"
--'  1  0  ~\vimfiles\syntax\html.vim
-|4,39,1,0,1684877271,"~\\vimfiles\\syntax\\html.vim"
--'  1  0  ~\vimfiles\syntax\javascript.vim
-|4,39,1,0,1684877271,"~\\vimfiles\\syntax\\javascript.vim"
--'  1  0  ~\vimfiles\syntax\html.vim
-|4,39,1,0,1684877271,"~\\vimfiles\\syntax\\html.vim"
--'  1  0  ~\vimfiles\syntax\javascript.vim
-|4,39,1,0,1684877271,"~\\vimfiles\\syntax\\javascript.vim"
--'  1  0  ~\vimfiles\syntax\html.vim
-|4,39,1,0,1684877271,"~\\vimfiles\\syntax\\html.vim"
--'  1  0  ~\vimfiles\syntax\conceal.vim
-|4,39,1,0,1684877268,"~\\vimfiles\\syntax\\conceal.vim"
--'  1  0  ~\vimfiles\syntax\conceal.vim
-|4,39,1,0,1684877268,"~\\vimfiles\\syntax\\conceal.vim"
--'  1  0  ~\vimfiles\syntax\conceal.vim
-|4,39,1,0,1684877268,"~\\vimfiles\\syntax\\conceal.vim"
--'  1  0  ~\vimfiles\syntax\conceal.vim
-|4,39,1,0,1684877268,"~\\vimfiles\\syntax\\conceal.vim"
--'  1  0  ~\vimfiles\syntax\afl.vim
-|4,39,1,0,1684877257,"~\\vimfiles\\syntax\\afl.vim"
--'  1  0  ~\vimfiles\syntax\afl.vim
-|4,39,1,0,1684877257,"~\\vimfiles\\syntax\\afl.vim"
--'  1  0  ~\vimfiles\syntax\afl.vim
-|4,39,1,0,1684877257,"~\\vimfiles\\syntax\\afl.vim"
--'  1  0  ~\vimfiles\syntax\afl.vim
-|4,39,1,0,1684877257,"~\\vimfiles\\syntax\\afl.vim"
--'  103  0  ~\vimfiles\vimrc
-|4,39,103,0,1684877227,"~\\vimfiles\\vimrc"
--'  1  0  ~\vimfiles\ftplugin\vue.vim
-|4,39,1,0,1684877172,"~\\vimfiles\\ftplugin\\vue.vim"
--'  1  0  ~\vimfiles\ftplugin\vue.vim
-|4,39,1,0,1684877172,"~\\vimfiles\\ftplugin\\vue.vim"
--'  1  0  ~\vimfiles\ftplugin\vue.vim
-|4,39,1,0,1684877172,"~\\vimfiles\\ftplugin\\vue.vim"
--'  1  0  ~\vimfiles\ftplugin\vue.vim
-|4,39,1,0,1684877172,"~\\vimfiles\\ftplugin\\vue.vim"
--'  1  0  ~\vimfiles\ftplugin\vim.vim
-|4,39,1,0,1684877152,"~\\vimfiles\\ftplugin\\vim.vim"
--'  1  0  ~\vimfiles\ftplugin\vim.vim
-|4,39,1,0,1684877152,"~\\vimfiles\\ftplugin\\vim.vim"
--'  1  0  ~\vimfiles\ftplugin\vim.vim
-|4,39,1,0,1684877152,"~\\vimfiles\\ftplugin\\vim.vim"
--'  1  0  ~\vimfiles\ftplugin\vim.vim
-|4,39,1,0,1684877152,"~\\vimfiles\\ftplugin\\vim.vim"
--'  1  0  ~\vimfiles\ftplugin\qf.vim
-|4,39,1,0,1684877150,"~\\vimfiles\\ftplugin\\qf.vim"
--'  1  0  ~\vimfiles\ftplugin\qf.vim
-|4,39,1,0,1684877150,"~\\vimfiles\\ftplugin\\qf.vim"
--'  1  0  ~\vimfiles\ftplugin\qf.vim
-|4,39,1,0,1684877150,"~\\vimfiles\\ftplugin\\qf.vim"
--'  1  0  ~\vimfiles\ftplugin\qf.vim
-|4,39,1,0,1684877150,"~\\vimfiles\\ftplugin\\qf.vim"
--'  1  0  ~\vimfiles\ftplugin\python.vim
-|4,39,1,0,1684877148,"~\\vimfiles\\ftplugin\\python.vim"
--'  1  0  ~\vimfiles\ftplugin\python.vim
-|4,39,1,0,1684877148,"~\\vimfiles\\ftplugin\\python.vim"
--'  1  0  ~\vimfiles\ftplugin\python.vim
-|4,39,1,0,1684877148,"~\\vimfiles\\ftplugin\\python.vim"
--'  1  0  ~\vimfiles\ftplugin\python.vim
-|4,39,1,0,1684877148,"~\\vimfiles\\ftplugin\\python.vim"
--'  1  0  ~\vimfiles\ftplugin\markdown.vim
-|4,39,1,0,1684877142,"~\\vimfiles\\ftplugin\\markdown.vim"
--'  1  0  ~\vimfiles\ftplugin\markdown.vim
-|4,39,1,0,1684877142,"~\\vimfiles\\ftplugin\\markdown.vim"
--'  1  0  ~\vimfiles\ftplugin\markdown.vim
-|4,39,1,0,1684877142,"~\\vimfiles\\ftplugin\\markdown.vim"
--'  1  0  ~\vimfiles\ftplugin\markdown.vim
-|4,39,1,0,1684877142,"~\\vimfiles\\ftplugin\\markdown.vim"
--'  1  0  ~\vimfiles\ftplugin\json.vim
-|4,39,1,0,1684877133,"~\\vimfiles\\ftplugin\\json.vim"
--'  1  0  ~\vimfiles\ftplugin\json.vim
-|4,39,1,0,1684877133,"~\\vimfiles\\ftplugin\\json.vim"
--'  1  0  ~\vimfiles\ftplugin\json.vim
-|4,39,1,0,1684877133,"~\\vimfiles\\ftplugin\\json.vim"
--'  1  0  ~\vimfiles\ftplugin\json.vim
-|4,39,1,0,1684877133,"~\\vimfiles\\ftplugin\\json.vim"
--'  1  0  ~\vimfiles\ftplugin\javascript.vim
-|4,39,1,0,1684877131,"~\\vimfiles\\ftplugin\\javascript.vim"
--'  1  0  ~\vimfiles\ftplugin\javascript.vim
-|4,39,1,0,1684877131,"~\\vimfiles\\ftplugin\\javascript.vim"
--'  1  0  ~\vimfiles\ftplugin\javascript.vim
-|4,39,1,0,1684877131,"~\\vimfiles\\ftplugin\\javascript.vim"
--'  1  0  ~\vimfiles\ftplugin\javascript.vim
-|4,39,1,0,1684877131,"~\\vimfiles\\ftplugin\\javascript.vim"
--'  1  0  ~\vimfiles\ftplugin\html.vim
-|4,39,1,0,1684877130,"~\\vimfiles\\ftplugin\\html.vim"
--'  1  0  ~\vimfiles\ftplugin\html.vim
-|4,39,1,0,1684877130,"~\\vimfiles\\ftplugin\\html.vim"
--'  1  0  ~\vimfiles\ftplugin\html.vim
-|4,39,1,0,1684877130,"~\\vimfiles\\ftplugin\\html.vim"
--'  1  0  ~\vimfiles\ftplugin\html.vim
-|4,39,1,0,1684877130,"~\\vimfiles\\ftplugin\\html.vim"
--'  1  0  ~\vimfiles\ftplugin\css.vim
-|4,39,1,0,1684877126,"~\\vimfiles\\ftplugin\\css.vim"
--'  1  0  ~\vimfiles\ftplugin\css.vim
-|4,39,1,0,1684877126,"~\\vimfiles\\ftplugin\\css.vim"
--'  1  0  ~\vimfiles\ftplugin\css.vim
-|4,39,1,0,1684877126,"~\\vimfiles\\ftplugin\\css.vim"
--'  1  0  ~\vimfiles\ftplugin\css.vim
-|4,39,1,0,1684877126,"~\\vimfiles\\ftplugin\\css.vim"
--'  1  0  ~\vimfiles\ftplugin\conceal.vim
-|4,39,1,0,1684877124,"~\\vimfiles\\ftplugin\\conceal.vim"
--'  1  0  ~\vimfiles\ftplugin\conceal.vim
-|4,39,1,0,1684877124,"~\\vimfiles\\ftplugin\\conceal.vim"
--'  1  0  ~\vimfiles\ftplugin\conceal.vim
-|4,39,1,0,1684877124,"~\\vimfiles\\ftplugin\\conceal.vim"
--'  1  0  ~\vimfiles\ftplugin\conceal.vim
-|4,39,1,0,1684877124,"~\\vimfiles\\ftplugin\\conceal.vim"
--'  1  0  ~\vimfiles\after\ftplugin\python.vim
-|4,39,1,0,1684877054,"~\\vimfiles\\after\\ftplugin\\python.vim"
--'  1  0  ~\vimfiles\after\ftplugin\python.vim
-|4,39,1,0,1684877054,"~\\vimfiles\\after\\ftplugin\\python.vim"
--'  1  0  ~\vimfiles\after\ftplugin\python.vim
-|4,39,1,0,1684877054,"~\\vimfiles\\after\\ftplugin\\python.vim"
--'  1  0  ~\vimfiles\after\ftplugin\python.vim
-|4,39,1,0,1684877054,"~\\vimfiles\\after\\ftplugin\\python.vim"
--'  1  0  ~\vimfiles\after\ftplugin\qf.vim
-|4,39,1,0,1684877053,"~\\vimfiles\\after\\ftplugin\\qf.vim"
--'  1  0  ~\vimfiles\after\ftplugin\qf.vim
-|4,39,1,0,1684877053,"~\\vimfiles\\after\\ftplugin\\qf.vim"
--'  1  0  ~\vimfiles\after\ftplugin\qf.vim
-|4,39,1,0,1684877053,"~\\vimfiles\\after\\ftplugin\\qf.vim"
--'  1  0  ~\vimfiles\after\ftplugin\qf.vim
-|4,39,1,0,1684877053,"~\\vimfiles\\after\\ftplugin\\qf.vim"
--'  1  0  ~\vimfiles\after\indent\vue.vim
-|4,39,1,0,1684877052,"~\\vimfiles\\after\\indent\\vue.vim"
--'  1  0  ~\vimfiles\after\indent\vue.vim
-|4,39,1,0,1684877052,"~\\vimfiles\\after\\indent\\vue.vim"
--'  1  0  ~\vimfiles\after\indent\vue.vim
-|4,39,1,0,1684877052,"~\\vimfiles\\after\\indent\\vue.vim"
--'  1  0  ~\vimfiles\after\indent\vue.vim
-|4,39,1,0,1684877052,"~\\vimfiles\\after\\indent\\vue.vim"
--'  382  0  ~\vimfiles\after\syntax\cs.vim
-|4,39,382,0,1684877050,"~\\vimfiles\\after\\syntax\\cs.vim"
--'  382  0  ~\vimfiles\after\syntax\cs.vim
-|4,39,382,0,1684877050,"~\\vimfiles\\after\\syntax\\cs.vim"
--'  382  0  ~\vimfiles\after\syntax\cs.vim
-|4,39,382,0,1684877050,"~\\vimfiles\\after\\syntax\\cs.vim"
--'  382  0  ~\vimfiles\after\syntax\cs.vim
-|4,39,382,0,1684877050,"~\\vimfiles\\after\\syntax\\cs.vim"
--'  1  0  ~\vimfiles\after\syntax\json.vim
-|4,39,1,0,1684877049,"~\\vimfiles\\after\\syntax\\json.vim"
--'  1  0  ~\vimfiles\after\syntax\json.vim
-|4,39,1,0,1684877049,"~\\vimfiles\\after\\syntax\\json.vim"
--'  1  0  ~\vimfiles\after\syntax\json.vim
-|4,39,1,0,1684877049,"~\\vimfiles\\after\\syntax\\json.vim"
--'  1  0  ~\vimfiles\after\syntax\json.vim
-|4,39,1,0,1684877049,"~\\vimfiles\\after\\syntax\\json.vim"
--'  1  0  ~\vimfiles\after\syntax\python.vim
-|4,39,1,0,1684877048,"~\\vimfiles\\after\\syntax\\python.vim"
--'  1  0  ~\vimfiles\after\syntax\python.vim
-|4,39,1,0,1684877048,"~\\vimfiles\\after\\syntax\\python.vim"
--'  1  0  ~\vimfiles\after\syntax\python.vim
-|4,39,1,0,1684877048,"~\\vimfiles\\after\\syntax\\python.vim"
--'  1  0  ~\vimfiles\after\syntax\python.vim
-|4,39,1,0,1684877048,"~\\vimfiles\\after\\syntax\\python.vim"
+-'  10  0  ~\Documents\mad_max_links.txt
+|4,39,10,0,1685376150,"~\\Documents\\mad_max_links.txt"
+-'  92  11  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,92,11,1685376148,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  16128  0  ~\temp\bash.txt
+|4,39,16128,0,1685359398,"~\\temp\\bash.txt"
+-'  15  0  ~\temp\bash.md
+|4,39,15,0,1685359223,"~\\temp\\bash.md"
+-'  35  2  ~\temp\bash.html
+|4,39,35,2,1685359161,"~\\temp\\bash.html"
+-'  1  0  ~\temp\bash.html
+|4,39,1,0,1685359132,"~\\temp\\bash.html"
+-'  1  0  ~\temp\bash_files.txt
+|4,39,1,0,1685359072,"~\\temp\\bash_files.txt"
+-'  4  22  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,4,22,1685358979,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  7  0  ~\Documents\mad_max_links.txt
+|4,39,7,0,1685309598,"~\\Documents\\mad_max_links.txt"
+-'  6  0  ~\Documents\mad_max_links.txt
+|4,39,6,0,1685309292,"~\\Documents\\mad_max_links.txt"
+-'  9  5  ~\Documents\mad_max_links.txt
+|4,39,9,5,1685309289,"~\\Documents\\mad_max_links.txt"
+-'  1  12  ~\Documents\mad_max_links.txt
+|4,39,1,12,1685308956,"~\\Documents\\mad_max_links.txt"
+-'  8  0  ~\Documents\mad_max_links.txt
+|4,39,8,0,1685308930,"~\\Documents\\mad_max_links.txt"
+-'  93  4  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,93,4,1685235791,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  89  4  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,89,4,1685235791,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  8  0  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,8,0,1685234050,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  5  0  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,5,0,1685234050,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  103  0  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,103,0,1685234043,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  99  0  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,99,0,1685234043,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  26  0  ~\Documents\Python\tdd.py
+|4,39,26,0,1685142862,"~\\Documents\\Python\\tdd.py"
+-'  26  0  ~\Documents\Python\tdd.py
+|4,39,26,0,1685142862,"~\\Documents\\Python\\tdd.py"
+-'  26  0  ~\Documents\Python\tdd.py
+|4,39,26,0,1685142862,"~\\Documents\\Python\\tdd.py"
+-'  1  0  ~\Documents\Python\tdd.py
+|4,39,1,0,1685142851,"~\\Documents\\Python\\tdd.py"
+-'  1  0  ~\Documents\Python\tdd.py
+|4,39,1,0,1685142851,"~\\Documents\\Python\\tdd.py"
+-'  1  0  ~\Documents\Python\tdd.py
+|4,39,1,0,1685142851,"~\\Documents\\Python\\tdd.py"
+-'  102  40  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,102,40,1685142850,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  98  40  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,98,40,1685142850,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  101  38  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,101,38,1685138162,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  98  38  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,98,38,1685138162,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  97  38  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,97,38,1685138162,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  75  45  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,75,45,1685137976,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  72  45  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,72,45,1685137976,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  72  45  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,72,45,1685137976,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  76  52  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,76,52,1685137972,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  73  52  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,73,52,1685137972,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  73  52  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,73,52,1685137972,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  97  46  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,97,46,1685137800,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  96  46  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,96,46,1685137800,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  93  46  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,93,46,1685137800,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  92  46  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,92,46,1685137800,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  95  38  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,95,38,1685137797,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  94  38  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,94,38,1685137797,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  91  38  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,91,38,1685137797,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  90  38  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,90,38,1685137797,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  91  54  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,91,54,1685137796,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  90  56  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,90,56,1685137796,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  88  40  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,88,40,1685137796,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  87  54  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,87,54,1685137796,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  86  56  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,86,56,1685137796,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  89  40  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,89,40,1685137796,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  88  54  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,88,54,1685137796,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  87  56  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,87,56,1685137796,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  86  57  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,86,57,1685137795,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  40  80  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,40,80,1685137692,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  37  80  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,37,80,1685137692,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  37  80  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,37,80,1685137692,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  111  20  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,111,20,1685137616,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  110  20  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,110,20,1685137616,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  107  20  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,107,20,1685137616,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  106  20  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,106,20,1685137616,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  107  20  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,107,20,1685137615,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  106  20  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,106,20,1685137615,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  103  20  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,103,20,1685137615,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  102  20  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,102,20,1685137615,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  122  9  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,122,9,1685137588,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  121  9  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,121,9,1685137588,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  118  9  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,118,9,1685137588,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  117  9  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,117,9,1685137588,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  28  44  ~\Documents\git.txt
+|4,39,28,44,1685137550,"~\\Documents\\git.txt"
+-'  28  44  ~\Documents\git.txt
+|4,39,28,44,1685137550,"~\\Documents\\git.txt"
+-'  28  44  ~\Documents\git.txt
+|4,39,28,44,1685137550,"~\\Documents\\git.txt"
+-'  45  7  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,45,7,1685137460,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  42  7  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,42,7,1685137460,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  42  7  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,42,7,1685137460,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  52  10  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,52,10,1685137428,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  49  10  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,49,10,1685137428,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  49  10  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,49,10,1685137428,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  1  0  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,1,0,1685137423,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  1  0  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,1,0,1685137423,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  1  0  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,1,0,1685137423,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  72  18  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,72,18,1685137422,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  69  18  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,69,18,1685137422,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  69  18  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,69,18,1685137422,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  69  50  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,69,50,1685137400,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  66  50  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,66,50,1685137400,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  66  50  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,66,50,1685137400,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  41  10  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,41,10,1685137391,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  41  10  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,41,10,1685137391,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  65  20  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,65,20,1685137388,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  65  20  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,65,20,1685137388,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  114  8  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,114,8,1685136199,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  113  8  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,113,8,1685136199,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  50  26  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,50,26,1685136197,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  50  26  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,50,26,1685136197,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  57  0  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,57,0,1685135958,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  57  0  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,57,0,1685135958,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  11  25  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,11,25,1685135746,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  11  25  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,11,25,1685135746,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  70  54  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,70,54,1685135438,"~\\Desktop\\Docker\\ubuntu-dockerfile"
+-'  70  54  ~\Desktop\Docker\ubuntu-dockerfile
+|4,39,70,54,1685135438,"~\\Desktop\\Docker\\ubuntu-dockerfile"
 
 # Buffer list:
-%~\vimfiles\vimrc	13	76
-%~\vimfiles\syntax\afl.vim	1	0
-%~\vimfiles\syntax\conceal.vim	1	0
-%~\vimfiles\syntax\html.vim	1	0
-%~\vimfiles\syntax\javascript.vim	14	4
+%~\Documents\mad_max_links.txt	10	0
+%~\Desktop\Docker\ubuntu-dockerfile	92	11
+%~\temp\bash_files.txt	1	0
+%~\temp\bash.html	35	2
+%~\temp\bash.md	15	0
+%~\temp\bash.txt	543	0
 
 # History of marks within files (newest to oldest):
+
+> ~\Documents\mad_max_links.txt
+	*	1685376148	0
+	"	10	0
+	.	13	0
+	+	8	0
+	+	1	5
+	+	5	7
+	+	7	0
+	+	10	0
+	+	1	6
+	+	7	26
+	+	7	0
+	+	10	5
+	+	11	14
+	+	9	95
+	+	9	11
+	+	9	91
+	+	4	59
+	+	5	14
+	+	3	86
+	+	3	6
+	+	7	4
+	+	7	5
+	+	9	0
+	+	7	0
+	+	3	0
+	+	2	0
+	+	7	0
+	+	13	0
+
+> ~\Desktop\Docker\ubuntu-dockerfile
+	*	1685376147	0
+	"	92	11
+	^	85	12
+	.	85	11
+	+	80	1
+	+	63	0
+	+	72	0
+	+	74	0
+	+	73	0
+	+	72	30
+	+	72	26
+	+	72	32
+	+	72	2
+	+	72	19
+	+	73	0
+	+	72	37
+	+	81	0
+	+	20	0
+	+	92	21
+	+	91	28
+	+	87	45
+	+	90	38
+	+	111	41
+	+	74	70
+	+	60	0
+	+	130	0
+	+	64	0
+	+	48	0
+	+	65	0
+	+	130	0
+	+	88	3
+	+	87	10
+	+	88	0
+	+	45	6
+	+	69	50
+	+	122	0
+	+	111	0
+	+	108	0
+	+	98	0
+	+	40	0
+	+	35	0
+	+	102	64
+	+	103	31
+	+	75	45
+	+	76	52
+	+	100	66
+	+	102	38
+	+	103	40
+	+	25	46
+	+	112	0
+	+	94	79
+	+	90	0
+	+	93	0
+	+	26	0
+	+	25	93
+	+	4	27
+	+	7	12
+	+	4	22
+	+	85	4
+	+	86	3
+	+	85	4
+	+	85	102
+	+	85	11
+
+> ~\temp\bash.txt
+	*	1685359560	0
+	"	543	0
+	.	6098	0
+	+	16128	0
+	+	16128	7
+	+	16128	0
+	+	16128	5
+	+	16128	96
+	+	6098	0
+
+> ~\temp\bash.md
+	*	1685359221	0
+	"	15	0
+
+> ~\temp\bash.html
+	*	1685359160	0
+	"	35	2
+
+> ~\temp\bash_files.txt
+	*	1685359071	0
+	"	1	0
+	^	1	100
+	.	2	0
+	+	1	0
+	+	1	102
+	+	1	91
+	+	1	13
+	+	1	99
+	+	2	0
+
+> ~\Documents\Python\tdd.py
+	*	1685142857	0
+	"	26	0
+	^	12	59
+	.	12	58
+	+	2	0
+	+	10	26
+	+	12	58
+
+> ~\Documents\git.txt
+	*	1685137548	0
+	"	28	44
+	^	2	21
+	.	2	20
+	+	2	17
+	+	4	29
+	+	5	0
+	+	4	21
+	+	2	20
 
 > ~\vimfiles\vimrc
 	*	1684877609	0
@@ -33245,26 +33454,6 @@ $
 	"	1	0
 	.	2	0
 	+	2	0
-
-> ~\Desktop\Docker\ubuntu-dockerfile
-	*	1684834958	0
-	"	11	22
-	^	80	0
-	.	17	0
-	+	79	1
-	+	71	0
-	+	73	0
-	+	75	0
-	+	74	0
-	+	73	30
-	+	73	26
-	+	73	32
-	+	73	2
-	+	73	19
-	+	74	0
-	+	73	37
-	+	80	0
-	+	17	0
 
 > ~\Desktop\Docker\python-dockerfile
 	*	1684833360	0
@@ -44093,15 +44282,6 @@ $
 > C:\Program Files\Python310\Lib\tokenize.py
 	*	1663274153	0
 	"	390	4
-
-> ~\Documents\Python\tdd.py
-	*	1663273867	0
-	"	1	0
-	^	12	59
-	.	12	58
-	+	2	0
-	+	10	26
-	+	12	58
 
 > ~\AppData\Local\qBittorrent\BT_backup\7faf1fded1400940a3476b82da5c0e666a45593c.torrent
 	*	1663085697	0
