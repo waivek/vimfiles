@@ -1,74 +1,20 @@
 set history=10000
-set viminfo='10000,<50,s10,h,rA:,rB:,%,f1,n~/vimfiles/_viminfo
+set viminfo='10000,<50,s10,h,rA:,rB:,%,f1,n
+
+" Windows-specific viminfo file
+if has('win32') || has('win64')
+    let &viminfo = &viminfo . '~/vimfiles/_viminfo_win_mini'
+endif
+
+" Linux-specific viminfo file
+if has('unix') || has('linux')
+    let &viminfo = &viminfo . '~/.vim/_viminfo_linux_mini'
+endif
 filetype indent plugin on | syntax on 
 set nocompatible
 
 
 setlocal encoding=utf8
-
-" source ~/vimfiles/performance/performance.vim
-" source ~/vimfiles/ide.vim
-
-
-" Reasons To Use over /pack/
-" 1. Faster to toggle plugins. With /pack/ you have to open Folder and move
-" 2. Automates `helptags .`, and documentation is always taken care of
-
-" call plug#begin()
-" Plug 'dense-analysis/ale'
-" Plug 'neoclide/coc.nvim', {'branch': 'release'}
-" call plug#end()
-
-let &pythonthreedll='C:\Program Files\Python310\python310.dll'
-let s:vim_path = ""
-if has("win32")
-    let s:vim_path = glob("~/vimfiles")
-elseif has("unix")
-    let s:vim_path = glob("~/vim")
-endif
-
-set undofile
-if has("win32")
-    set undodir=C:/Users/vivek/vimfiles/undofiles,.
-endif
-
-if has('python3')
-    silent! python3 1
-endif
-if &guifont != 'Consolas:h12:cANSI:qDRAFT'
-    set guifont=Consolas:h12:cANSI:qDRAFT
-endif
-
-set backspace=indent,eol,start " Fixes backspace inside insert mode
-set laststatus=2
-if len(glob(s:vim_path."/colors/codedark.vim")) > 0
-    colorscheme codedark
-endif
-
-" Search
-set ignorecase smartcase  
-set hlsearch incsearch
-set nowrapscan
-cno <expr>  <tab>    getcmdtype() =~ '[/?]' ? (getcmdtype() == '/' ? '<c-g>' : '<c-t>') : feedkeys('<tab>', 'int')[1]
-cno <expr>  <s-tab>  getcmdtype() =~ '[/?]' ? (getcmdtype() == '/' ? '<c-t>' : '<c-g>') : feedkeys('<s-tab>', 'int')[1]
-
-" Completion
-set wildcharm=<C-z>
-set wildmenu
-set wildmode=full
-set belloff=all
-set completeopt=menuone,popup
-
-set smartindent   " Automatically indents when and where required
-set tabstop=4     " Sets tab width to 4
-set shiftwidth=4  " Allows you to use < and > keys in -- VISUAL --
-set softtabstop=4 " Makes vim see four spaces as a <TAB>
-set expandtab     " Inserts 4 spaces when <TAB> is pressed
-
-set foldmethod=marker
-
-set guioptions=M
-au GUIEnter * simalt ~x " Maximized
 
 " Remaps {{{
 
@@ -145,6 +91,73 @@ nnoremap <silent> c. :cd ..<CR>
 nnoremap <C-k> <C-f>
 nnoremap <C-l> <C-b>
 " }}}
+
+
+finish
+" source ~/vimfiles/performance/performance.vim
+" source ~/vimfiles/ide.vim
+
+
+" Reasons To Use over /pack/
+" 1. Faster to toggle plugins. With /pack/ you have to open Folder and move
+" 2. Automates `helptags .`, and documentation is always taken care of
+
+" call plug#begin()
+" Plug 'dense-analysis/ale'
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" call plug#end()
+
+let &pythonthreedll='C:\Program Files\Python310\python310.dll'
+let s:vim_path = ""
+if has("win32")
+    let s:vim_path = glob("~/vimfiles")
+elseif has("unix")
+    let s:vim_path = glob("~/vim")
+endif
+
+set undofile
+if has("win32")
+    set undodir=C:/Users/vivek/vimfiles/undofiles,.
+endif
+
+if has('python3')
+    silent! python3 1
+endif
+if &guifont != 'Consolas:h12:cANSI:qDRAFT'
+    set guifont=Consolas:h12:cANSI:qDRAFT
+endif
+
+set backspace=indent,eol,start " Fixes backspace inside insert mode
+set laststatus=2
+if len(glob(s:vim_path."/colors/codedark.vim")) > 0
+    colorscheme codedark
+endif
+
+" Search
+set ignorecase smartcase  
+set hlsearch incsearch
+set nowrapscan
+cno <expr>  <tab>    getcmdtype() =~ '[/?]' ? (getcmdtype() == '/' ? '<c-g>' : '<c-t>') : feedkeys('<tab>', 'int')[1]
+cno <expr>  <s-tab>  getcmdtype() =~ '[/?]' ? (getcmdtype() == '/' ? '<c-t>' : '<c-g>') : feedkeys('<s-tab>', 'int')[1]
+
+" Completion
+set wildcharm=<C-z>
+set wildmenu
+set wildmode=full
+set belloff=all
+set completeopt=menuone,popup
+
+set smartindent   " Automatically indents when and where required
+set tabstop=4     " Sets tab width to 4
+set shiftwidth=4  " Allows you to use < and > keys in -- VISUAL --
+set softtabstop=4 " Makes vim see four spaces as a <TAB>
+set expandtab     " Inserts 4 spaces when <TAB> is pressed
+
+set foldmethod=marker
+
+set guioptions=M
+au GUIEnter * simalt ~x " Maximized
+
 
 nnoremap <Space>l <C-^>
 nnoremap <silent> <Space>/ :s#\\#/#g<CR>

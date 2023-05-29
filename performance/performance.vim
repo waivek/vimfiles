@@ -294,7 +294,11 @@ function! s:GetProfileFilepath(name)
     let date_string = strftime("%y%m%d")
     let file_version = -1
     let version_string = printf("%02d", file_version)
-    let file_format = '~/vimfiles/performance/%s.%s.v%02d.txt'
+    let vimhome = has('win32') ? '~/vimfiles' : '~/.vim'
+    let path_end = 'performance/%s.%s.v%02d.txt'
+    let separator = '/'
+    let file_format = join([vimhome, path_end], separator)
+
     let filepath = v:null
     for i in range(1, 50)
         let filepath = printf(file_format, date_string, a:name, i)
@@ -350,6 +354,13 @@ function! s:ProfileCocVars()
     execute command
 endfunction
 command! PCV call s:ProfileCocVars()
+
+function! s:ProfileLongPauseLinuxTerm()
+    let filepath = s:GetProfileFilepath('long_pause_linux_term')
+    let command = printf('profile start %s | profile func * | profile file *', filepath)
+    execute command
+endfunction
+command! PLPLT call s:ProfileLongPauseLinuxTerm()
 
 " nnoremap <Plug>PlugProfilePause :call <SID>ProfilePause()<CR>
 nnoremap ga :profile pause<CR>

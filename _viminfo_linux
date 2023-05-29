@@ -11,23 +11,149 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/preview
+~MSle0~/viminfo
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1685390720,,"q"
+|2,0,1685397192,,"q"
+:edit $MYVIMRC
+|2,0,1685397189,,"edit $MYVIMRC"
+:Files
+|2,0,1685394818,,"Files"
+:set ttimeoutlen=0
+|2,0,1685394812,,"set ttimeoutlen=0"
+:set timeoutlen=0
+|2,0,1685394802,,"set timeoutlen=0"
+:q!
+|2,0,1685394785,,"q!"
+:qa
+|2,0,1685394783,,"qa"
+:so %
+|2,0,1685394780,,"so %"
+:b /home/vivek/.vim/vimrc
+|2,0,1685394753,,"b /home/vivek/.vim/vimrc"
+:set ttimeoutlen?
+|2,0,1685394750,,"set ttimeoutlen?"
+:set timeoutlen=1000
+|2,0,1685394713,,"set timeoutlen=1000"
+:set timeoutlen=50
+|2,0,1685394709,,"set timeoutlen=50"
+:set timeoutlen?
+|2,0,1685394706,,"set timeoutlen?"
+:set ttimeoutlen=50
+|2,0,1685394693,,"set ttimeoutlen=50"
+:set 
+|2,0,1685394651,,"set "
+:set timeoutlen=100
+|2,0,1685394648,,"set timeoutlen=100"
+:set c
+|2,0,1685394633,,"set c"
+:set ttimeout
+|2,0,1685394615,,"set ttimeout"
+:set notimeout
+|2,0,1685394612,,"set notimeout"
+:set nottimeout
+|2,0,1685394598,,"set nottimeout"
+:set timeout
+|2,0,1685394588,,"set timeout"
+:set timeout=on
+|2,0,1685394586,,"set timeout=on"
+:set timeout?
+|2,0,1685394560,,"set timeout?"
+:cmap
+|2,0,1685394537,,"cmap"
+:set timeoutlen&
+|2,0,1685394529,,"set timeoutlen&"
+:enew
+|2,0,1685394525,,"enew"
+:b!# | bd! #
+|2,0,1685394522,,"b!# | bd! #"
+:jk
+|2,0,1685394508,,"jk"
+:echo &timeoutlen
+|2,0,1685394460,,"echo &timeoutlen"
+:h timeoutlen
+|2,0,1685394425,,"h timeoutlen"
+:MRU 
+|2,0,1685394422,,"MRU "
+:MRU 4:statusline.vim
+|2,0,1685394405,,"MRU 4:statusline.vim"
+:FZF
+|2,0,1685394397,,"FZF"
+:e vimrc
+|2,0,1685393663,,"e vimrc"
+:e mini.vimrc
+|2,0,1685393659,,"e mini.vimrc"
+:stopinsert
+|2,0,1685393653,,"stopinsert"
+:au CmdwinLeave
+|2,0,1685392506,,"au CmdwinLeave"
+:au CmdlineLeave
+|2,0,1685392502,,"au CmdlineLeave"
+:map <Esc>
+|2,0,1685392491,,"map <Esc>"
+:version
+|2,0,1685392471,,"version"
+:MRU mru
+|2,0,1685392469,,"MRU mru"
+:au CmdlineChanged
+|2,0,1685392465,,"au CmdlineChanged"
+:PLPLT
+|2,0,1685392432,,"PLPLT"
+:e 230529.long_pause_linux_term.v03.txt
+|2,0,1685392402,,"e 230529.long_pause_linux_term.v03.txt"
+:PCV
+|2,0,1685392347,,"PCV"
+:au Cmd
+|2,0,1685392316,,"au Cmd"
+:profile pause
+|2,0,1685392263,,"profile pause"
+:MRU per
+|2,0,1685392163,,"MRU per"
+:Rg vimfiles
+|2,0,1685392070,,"Rg vimfiles"
+:bd
+|2,0,1685392061,,"bd"
+:PV
+|2,0,1685391977,,"PV"
+:  
+|2,0,1685391962,,"  "
+:map <C-t
+|2,0,1685391935,,"map <C-t"
+:map <C-A>
+|2,0,1685391927,,"map <C-A>"
+:map <C-
+|2,0,1685391923,,"map <C-"
+:map <C-v>
+|2,0,1685391920,,"map <C-v>"
+:map <C-T>
+|2,0,1685391913,,"map <C-T>"
+:map <C-Space>
+|2,0,1685391908,,"map <C-Space>"
+:echo join('a', 'b', 'c', '/')
+|2,0,1685391798,,"echo join('a', 'b', 'c', '/')"
+:h builtin
+|2,0,1685391707,,"h builtin"
+:h menu-separator
+|2,0,1685391706,,"h menu-separator"
+:e ~/.
+|2,0,1685391666,,"e ~/."
+:Cmdl
+|2,0,1685391609,,"Cmdl"
+:h 
+|2,0,1685391585,,"h "
+:h join(
+|2,0,1685391579,,"h join("
+:h join
+|2,0,1685391577,,"h join"
 :GFiles
 |2,0,1685390714,,"GFiles"
 :e common.egg-info/
 |2,0,1685390712,,"e common.egg-info/"
 :MRU perfo
 |2,0,1685390613,,"MRU perfo"
-:so %
-|2,0,1685390588,,"so %"
 :so 
 |2,0,1685390585,,"so "
-:FZF
-|2,0,1685390569,,"FZF"
 :Coc
 |2,0,1685390541,,"Coc"
 :lopen
@@ -36,12 +162,8 @@
 |2,0,1685390510,,"ll"
 :PlugInstall
 |2,0,1685390507,,"PlugInstall"
-:edit $MYVIMRC
-|2,0,1685390504,,"edit $MYVIMRC"
 :MRU
 |2,0,1685390500,,"MRU"
-:Files
-|2,0,1685390487,,"Files"
 :pwd
 |2,0,1685390480,,"pwd"
 :e ic.py
@@ -58,12 +180,8 @@
 |2,0,1685375484,,"files"
 :h fzf
 |2,0,1685375364,,"h fzf"
-:b /home/vivek/.vim/vimrc
-|2,0,1685375321,,"b /home/vivek/.vim/vimrc"
 :messages
 |2,0,1685375284,,"messages"
-:q!
-|2,0,1685375267,,"q!"
 :!fzf
 |2,0,1685375262,,"!fzf"
 :!ls
@@ -92,6 +210,20 @@
 |2,0,1685142608,,"bd!"
 
 # Search String History (newest to oldest):
+?/viminfo
+|2,1,1685393666,47,"viminfo"
+?/DotMap
+|2,1,1685392388,47,"DotMap"
+?/cmdline
+|2,1,1685392319,47,"cmdline"
+?/fileform
+|2,1,1685391762,47,"fileform"
+?/separator
+|2,1,1685391710,47,"separator"
+?/normali
+|2,1,1685391605,47,"normali"
+?/path
+|2,1,1685391589,47,"path"
 ?/preview
 |2,1,1685375366,47,"preview"
 ?/completion
@@ -116,272 +248,289 @@
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	CHAR	0
-	'~/.fzf'
-|3,0,0,0,1,0,1685375028,"'~/.fzf'"
-"1	LINE	0
+"0	LINE	0
+	set viminfo='10000,<50,s10,h,rA:,rB:,%,f1,n
 	
-|3,0,1,1,1,0,1685379523,""
+	" Windows-specific viminfo file
+	if has('win32') || has('win64')
+	    let &viminfo = &viminfo . '~/vimfiles/_viminfo_win'
+	endif
+	
+	" Linux-specific viminfo file
+	if has('unix') || has('linux')
+	    let &viminfo = &viminfo . '~/.vim/_viminfo_linux'
+	endif
+|3,0,0,1,11,0,1685393678,"set viminfo='10000,<50,s10,h,rA:,rB:,%,f1,n","","\" Windows-specific viminfo file","if has('win32') || has('win64')","    let &viminfo = &viminfo . '~/vimfiles/_viminfo_win'","endif","","\" Linux-specific viminfo file","if has('unix') || has('linux')","    let &viminfo = &viminfo . '~/.vim/_viminfo_linux'","endif"
+""1	LINE	0
+	
+	
+|3,1,1,1,2,0,1685394622,"",""
 "2	LINE	0
 	
-|3,0,2,1,1,0,1685375029,""
+	
+|3,0,2,1,2,0,1685394572,"",""
 "3	LINE	0
-	nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn: 1685232934:0;vim ~/.config/shell_data/.zsh_history
-|3,0,3,1,1,0,1685232959,"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n: 1685232934:0;vim ~/.config/shell_data/.zsh_history"
+	jk
+|3,0,3,1,1,0,1685394520,"jk"
 "4	LINE	0
-	ic(rel_path, abs_path)
-|3,0,4,1,1,0,1685153107,"ic(rel_path, abs_path)"
+	    return '[n/a]'
+|3,0,4,1,1,0,1685394408,"    return '[n/a]'"
 "5	LINE	0
-	print
-|3,0,5,1,1,0,1685153077,"print"
+	finish
+|3,0,5,1,1,0,1685394401,"finish"
 "6	LINE	0
 	
-	
-|3,0,6,1,2,0,1685152883,"",""
+|3,0,6,1,1,0,1685392104,""
 "7	LINE	0
-	db_init(
-|3,0,7,1,1,0,1685152831,"db_init("
+	endif
+|3,0,7,1,1,0,1685392054,"endif"
 "8	LINE	0
-	ic(1)
-|3,0,8,1,1,0,1685144934,"ic(1)"
-""-	CHAR	0
-	" 
-|3,1,36,0,1,0,1685390586,"\" "
+	if filereadable(expand("~/vimfiles/performance/performance.vim"))
+|3,0,8,1,1,0,1685392052,"if filereadable(expand(\"~/vimfiles/performance/performance.vim\"))"
+"9	LINE	0
+	    let command = 
+|3,0,9,1,1,0,1685391882,"    let command = "
+"-	CHAR	0
+	vimfiles
+|3,0,36,0,1,0,1685392124,"vimfiles"
 
 # File marks:
-'0  49  0  ~/.vim/vimrc
-|4,48,49,0,1685390589,"~/.vim/vimrc"
-'1  49  0  ~/.vim/vimrc
-|4,49,49,0,1685390589,"~/.vim/vimrc"
-'2  49  0  ~/.vim/vimrc
-|4,50,49,0,1685390589,"~/.vim/vimrc"
-'3  49  0  ~/.vim/vimrc
-|4,51,49,0,1685390589,"~/.vim/vimrc"
-'4  1083  2  ~/.vim/vimrc
-|4,52,1083,2,1685390543,"~/.vim/vimrc"
-'5  1083  2  ~/.vim/vimrc
-|4,53,1083,2,1685390543,"~/.vim/vimrc"
-'6  1083  2  ~/.vim/vimrc
-|4,54,1083,2,1685390543,"~/.vim/vimrc"
-'7  1083  2  ~/.vim/vimrc
-|4,55,1083,2,1685390543,"~/.vim/vimrc"
-'8  1083  2  ~/.vim/vimrc
-|4,56,1083,2,1685390543,"~/.vim/vimrc"
-'9  1083  2  ~/.vim/vimrc
-|4,57,1083,2,1685390543,"~/.vim/vimrc"
+'0  1323  0  ~/.vim/vimrc
+|4,48,1323,0,1685397192,"~/.vim/vimrc"
+'1  277  4  ~/.vim/plugin/statusline.vim
+|4,49,277,4,1685394411,"~/.vim/plugin/statusline.vim"
+'2  277  4  ~/.vim/plugin/statusline.vim
+|4,50,277,4,1685394411,"~/.vim/plugin/statusline.vim"
+'3  277  4  ~/.vim/plugin/statusline.vim
+|4,51,277,4,1685394411,"~/.vim/plugin/statusline.vim"
+'4  277  4  ~/.vim/plugin/statusline.vim
+|4,52,277,4,1685394411,"~/.vim/plugin/statusline.vim"
+'5  277  4  ~/.vim/plugin/statusline.vim
+|4,53,277,4,1685394411,"~/.vim/plugin/statusline.vim"
+'6  277  4  ~/.vim/plugin/statusline.vim
+|4,54,277,4,1685394411,"~/.vim/plugin/statusline.vim"
+'7  277  4  ~/.vim/plugin/statusline.vim
+|4,55,277,4,1685394411,"~/.vim/plugin/statusline.vim"
+'8  277  4  ~/.vim/plugin/statusline.vim
+|4,56,277,4,1685394411,"~/.vim/plugin/statusline.vim"
+'9  1  0  ~/.vim/vimrc
+|4,57,1,0,1685393994,"~/.vim/vimrc"
 
 # Jumplist (newest first):
--'  49  0  ~/.vim/vimrc
-|4,39,49,0,1685390589,"~/.vim/vimrc"
--'  49  0  ~/.vim/vimrc
-|4,39,49,0,1685390589,"~/.vim/vimrc"
--'  49  0  ~/.vim/vimrc
-|4,39,49,0,1685390589,"~/.vim/vimrc"
--'  51  0  ~/.vim/vimrc
-|4,39,51,0,1685390585,"~/.vim/vimrc"
--'  51  0  ~/.vim/vimrc
-|4,39,51,0,1685390585,"~/.vim/vimrc"
--'  51  0  ~/.vim/vimrc
-|4,39,51,0,1685390585,"~/.vim/vimrc"
--'  1083  8  ~/.vim/vimrc
-|4,39,1083,8,1685390575,"~/.vim/vimrc"
--'  1083  8  ~/.vim/vimrc
-|4,39,1083,8,1685390575,"~/.vim/vimrc"
--'  1083  8  ~/.vim/vimrc
-|4,39,1083,8,1685390575,"~/.vim/vimrc"
--'  1083  2  ~/.vim/vimrc
-|4,39,1083,2,1685390543,"~/.vim/vimrc"
--'  1083  2  ~/.vim/vimrc
-|4,39,1083,2,1685390543,"~/.vim/vimrc"
--'  1083  2  ~/.vim/vimrc
-|4,39,1083,2,1685390543,"~/.vim/vimrc"
+-'  1323  0  ~/.vim/vimrc
+|4,39,1323,0,1685397192,"~/.vim/vimrc"
 -'  1  0  ~/.vim/vimrc
-|4,39,1,0,1685390504,"~/.vim/vimrc"
+|4,39,1,0,1685397190,"~/.vim/vimrc"
+-'  8314  4  /usr/share/vim/vim90/doc/options.txt
+|4,39,8314,4,1685394525,"/usr/share/vim/vim90/doc/options.txt"
+-'  8314  4  /usr/share/vim/vim90/doc/options.txt
+|4,39,8314,4,1685394525,"/usr/share/vim/vim90/doc/options.txt"
+-'  8314  4  /usr/share/vim/vim90/doc/options.txt
+|4,39,8314,4,1685394525,"/usr/share/vim/vim90/doc/options.txt"
+-'  1  0  /usr/share/vim/vim90/doc/options.txt
+|4,39,1,0,1685394425,"/usr/share/vim/vim90/doc/options.txt"
+-'  1  0  /usr/share/vim/vim90/doc/options.txt
+|4,39,1,0,1685394425,"/usr/share/vim/vim90/doc/options.txt"
+-'  1  0  /usr/share/vim/vim90/doc/options.txt
+|4,39,1,0,1685394425,"/usr/share/vim/vim90/doc/options.txt"
+-'  277  4  ~/.vim/plugin/statusline.vim
+|4,39,277,4,1685394411,"~/.vim/plugin/statusline.vim"
+-'  277  4  ~/.vim/plugin/statusline.vim
+|4,39,277,4,1685394411,"~/.vim/plugin/statusline.vim"
+-'  277  4  ~/.vim/plugin/statusline.vim
+|4,39,277,4,1685394411,"~/.vim/plugin/statusline.vim"
+-'  277  4  ~/.vim/plugin/statusline.vim
+|4,39,277,4,1685394411,"~/.vim/plugin/statusline.vim"
+-'  1  0  ~/.vim/plugin/statusline.vim
+|4,39,1,0,1685394406,"~/.vim/plugin/statusline.vim"
+-'  1  0  ~/.vim/plugin/statusline.vim
+|4,39,1,0,1685394406,"~/.vim/plugin/statusline.vim"
+-'  1  0  ~/.vim/plugin/statusline.vim
+|4,39,1,0,1685394406,"~/.vim/plugin/statusline.vim"
+-'  1  0  ~/.vim/plugin/statusline.vim
+|4,39,1,0,1685394406,"~/.vim/plugin/statusline.vim"
+-'  13  0  ~/.vim/plugin/mru.vim
+|4,39,13,0,1685394405,"~/.vim/plugin/mru.vim"
+-'  13  0  ~/.vim/plugin/mru.vim
+|4,39,13,0,1685394405,"~/.vim/plugin/mru.vim"
+-'  13  0  ~/.vim/plugin/mru.vim
+|4,39,13,0,1685394405,"~/.vim/plugin/mru.vim"
+-'  13  0  ~/.vim/plugin/mru.vim
+|4,39,13,0,1685394405,"~/.vim/plugin/mru.vim"
+-'  331  4  ~/.vim/performance/230529.long_pause_linux_term.v04.txt
+|4,39,331,4,1685394398,"~/.vim/performance/230529.long_pause_linux_term.v04.txt"
+-'  331  4  ~/.vim/performance/230529.long_pause_linux_term.v04.txt
+|4,39,331,4,1685394398,"~/.vim/performance/230529.long_pause_linux_term.v04.txt"
+-'  331  4  ~/.vim/performance/230529.long_pause_linux_term.v04.txt
+|4,39,331,4,1685394398,"~/.vim/performance/230529.long_pause_linux_term.v04.txt"
+-'  331  4  ~/.vim/performance/230529.long_pause_linux_term.v04.txt
+|4,39,331,4,1685394398,"~/.vim/performance/230529.long_pause_linux_term.v04.txt"
 -'  1  0  ~/.vim/vimrc
-|4,39,1,0,1685390504,"~/.vim/vimrc"
+|4,39,1,0,1685394394,"~/.vim/vimrc"
 -'  1  0  ~/.vim/vimrc
-|4,39,1,0,1685390504,"~/.vim/vimrc"
+|4,39,1,0,1685394394,"~/.vim/vimrc"
 -'  1  0  ~/.vim/vimrc
-|4,39,1,0,1685390504,"~/.vim/vimrc"
+|4,39,1,0,1685394394,"~/.vim/vimrc"
 -'  1  0  ~/.vim/vimrc
-|4,39,1,0,1685390504,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1685390504,"~/.vim/vimrc"
--'  1  0  ~/python_common/ic.py
-|4,39,1,0,1685390492,"~/python_common/ic.py"
--'  1  0  ~/python_common/ic.py
-|4,39,1,0,1685390492,"~/python_common/ic.py"
--'  1  0  ~/python_common/ic.py
-|4,39,1,0,1685390492,"~/python_common/ic.py"
--'  1  0  ~/python_common/ic.py
-|4,39,1,0,1685390492,"~/python_common/ic.py"
--'  1  0  ~/python_common/ic.py
-|4,39,1,0,1685390492,"~/python_common/ic.py"
--'  1  0  ~/python_common/ic.py
-|4,39,1,0,1685390492,"~/python_common/ic.py"
--'  1  0  ~/python_common/ic.py
-|4,39,1,0,1685390492,"~/python_common/ic.py"
--'  25  22  ~/.gitconfig
-|4,39,25,22,1685379612,"~/.gitconfig"
--'  25  22  ~/.gitconfig
-|4,39,25,22,1685379612,"~/.gitconfig"
--'  25  22  ~/.gitconfig
-|4,39,25,22,1685379612,"~/.gitconfig"
--'  25  22  ~/.gitconfig
-|4,39,25,22,1685379612,"~/.gitconfig"
--'  25  22  ~/.gitconfig
-|4,39,25,22,1685379612,"~/.gitconfig"
--'  25  22  ~/.gitconfig
-|4,39,25,22,1685379612,"~/.gitconfig"
--'  25  22  ~/.gitconfig
-|4,39,25,22,1685379612,"~/.gitconfig"
--'  25  22  ~/.gitconfig
-|4,39,25,22,1685379612,"~/.gitconfig"
--'  25  22  ~/.gitconfig
-|4,39,25,22,1685379612,"~/.gitconfig"
--'  13  0  ~/.gitconfig
-|4,39,13,0,1685379530,"~/.gitconfig"
--'  13  0  ~/.gitconfig
-|4,39,13,0,1685379530,"~/.gitconfig"
--'  13  0  ~/.gitconfig
-|4,39,13,0,1685379530,"~/.gitconfig"
--'  13  0  ~/.gitconfig
-|4,39,13,0,1685379530,"~/.gitconfig"
--'  13  0  ~/.gitconfig
-|4,39,13,0,1685379530,"~/.gitconfig"
--'  13  0  ~/.gitconfig
-|4,39,13,0,1685379530,"~/.gitconfig"
--'  13  0  ~/.gitconfig
-|4,39,13,0,1685379530,"~/.gitconfig"
--'  13  0  ~/.gitconfig
-|4,39,13,0,1685379530,"~/.gitconfig"
--'  13  0  ~/.gitconfig
-|4,39,13,0,1685379530,"~/.gitconfig"
--'  13  0  ~/.gitconfig
-|4,39,13,0,1685379530,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1685379514,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1685379514,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1685379514,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1685379514,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1685379514,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1685379514,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1685379514,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1685379514,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1685379514,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1685379514,"~/.gitconfig"
--'  1  0  ~/python_common/ic.py
-|4,39,1,0,1685378350,"~/python_common/ic.py"
--'  1  0  ~/python_common/ic.py
-|4,39,1,0,1685378350,"~/python_common/ic.py"
--'  1  0  ~/python_common/ic.py
-|4,39,1,0,1685378350,"~/python_common/ic.py"
--'  1  0  ~/python_common/ic.py
-|4,39,1,0,1685378350,"~/python_common/ic.py"
--'  51  1  ~/.vim/vimrc
-|4,39,51,1,1685375570,"~/.vim/vimrc"
--'  51  1  ~/.vim/vimrc
-|4,39,51,1,1685375570,"~/.vim/vimrc"
--'  51  1  ~/.vim/vimrc
-|4,39,51,1,1685375570,"~/.vim/vimrc"
--'  51  1  ~/.vim/vimrc
-|4,39,51,1,1685375570,"~/.vim/vimrc"
--'  51  1  ~/.vim/vimrc
-|4,39,51,1,1685375570,"~/.vim/vimrc"
--'  51  1  ~/.vim/vimrc
-|4,39,51,1,1685375570,"~/.vim/vimrc"
--'  51  1  ~/.vim/vimrc
-|4,39,51,1,1685375570,"~/.vim/vimrc"
--'  51  1  ~/.vim/vimrc
-|4,39,51,1,1685375570,"~/.vim/vimrc"
--'  76  0  ~/.vim/vimrc
-|4,39,76,0,1685375341,"~/.vim/vimrc"
--'  76  0  ~/.vim/vimrc
-|4,39,76,0,1685375341,"~/.vim/vimrc"
--'  76  0  ~/.vim/vimrc
-|4,39,76,0,1685375341,"~/.vim/vimrc"
--'  76  0  ~/.vim/vimrc
-|4,39,76,0,1685375341,"~/.vim/vimrc"
--'  76  0  ~/.vim/vimrc
-|4,39,76,0,1685375341,"~/.vim/vimrc"
--'  76  0  ~/.vim/vimrc
-|4,39,76,0,1685375341,"~/.vim/vimrc"
--'  76  0  ~/.vim/vimrc
-|4,39,76,0,1685375341,"~/.vim/vimrc"
--'  76  0  ~/.vim/vimrc
-|4,39,76,0,1685375341,"~/.vim/vimrc"
--'  76  0  ~/.vim/vimrc
-|4,39,76,0,1685375341,"~/.vim/vimrc"
--'  76  0  ~/.vim/vimrc
-|4,39,76,0,1685375341,"~/.vim/vimrc"
--'  76  0  ~/.vim/vimrc
-|4,39,76,0,1685375341,"~/.vim/vimrc"
--'  75  0  ~/.vim/vimrc
-|4,39,75,0,1685375330,"~/.vim/vimrc"
--'  75  0  ~/.vim/vimrc
-|4,39,75,0,1685375330,"~/.vim/vimrc"
--'  75  0  ~/.vim/vimrc
-|4,39,75,0,1685375330,"~/.vim/vimrc"
--'  75  0  ~/.vim/vimrc
-|4,39,75,0,1685375330,"~/.vim/vimrc"
--'  75  0  ~/.vim/vimrc
-|4,39,75,0,1685375330,"~/.vim/vimrc"
--'  75  0  ~/.vim/vimrc
-|4,39,75,0,1685375330,"~/.vim/vimrc"
--'  75  0  ~/.vim/vimrc
-|4,39,75,0,1685375330,"~/.vim/vimrc"
--'  75  0  ~/.vim/vimrc
-|4,39,75,0,1685375330,"~/.vim/vimrc"
--'  75  0  ~/.vim/vimrc
-|4,39,75,0,1685375330,"~/.vim/vimrc"
--'  75  0  ~/.vim/vimrc
-|4,39,75,0,1685375330,"~/.vim/vimrc"
--'  75  0  ~/.vim/vimrc
-|4,39,75,0,1685375330,"~/.vim/vimrc"
--'  105  0  ~/.vim/vimrc
-|4,39,105,0,1685375325,"~/.vim/vimrc"
--'  105  0  ~/.vim/vimrc
-|4,39,105,0,1685375325,"~/.vim/vimrc"
--'  105  0  ~/.vim/vimrc
-|4,39,105,0,1685375325,"~/.vim/vimrc"
--'  105  0  ~/.vim/vimrc
-|4,39,105,0,1685375325,"~/.vim/vimrc"
--'  105  0  ~/.vim/vimrc
-|4,39,105,0,1685375325,"~/.vim/vimrc"
--'  105  0  ~/.vim/vimrc
-|4,39,105,0,1685375325,"~/.vim/vimrc"
--'  105  0  ~/.vim/vimrc
-|4,39,105,0,1685375325,"~/.vim/vimrc"
--'  105  0  ~/.vim/vimrc
-|4,39,105,0,1685375325,"~/.vim/vimrc"
--'  105  0  ~/.vim/vimrc
-|4,39,105,0,1685375325,"~/.vim/vimrc"
--'  105  0  ~/.vim/vimrc
-|4,39,105,0,1685375325,"~/.vim/vimrc"
--'  105  0  ~/.vim/vimrc
-|4,39,105,0,1685375325,"~/.vim/vimrc"
+|4,39,1,0,1685393994,"~/.vim/vimrc"
+-'  1315  16  ~/.vim/vimrc
+|4,39,1315,16,1685393993,"~/.vim/vimrc"
+-'  1315  16  ~/.vim/vimrc
+|4,39,1315,16,1685393993,"~/.vim/vimrc"
+-'  1315  16  ~/.vim/vimrc
+|4,39,1315,16,1685393993,"~/.vim/vimrc"
+-'  1315  16  ~/.vim/vimrc
+|4,39,1315,16,1685393993,"~/.vim/vimrc"
+-'  1315  16  ~/.vim/vimrc
+|4,39,1315,16,1685393993,"~/.vim/vimrc"
+-'  11  56  ~/.vim/mini.vimrc
+|4,39,11,56,1685393695,"~/.vim/mini.vimrc"
+-'  11  56  ~/.vim/mini.vimrc
+|4,39,11,56,1685393695,"~/.vim/mini.vimrc"
+-'  11  56  ~/.vim/mini.vimrc
+|4,39,11,56,1685393695,"~/.vim/mini.vimrc"
+-'  11  56  ~/.vim/mini.vimrc
+|4,39,11,56,1685393695,"~/.vim/mini.vimrc"
+-'  331  0  ~/.vim/performance/230529.long_pause_linux_term.v04.txt
+|4,39,331,0,1685393695,"~/.vim/performance/230529.long_pause_linux_term.v04.txt"
+-'  11  56  ~/.vim/mini.vimrc
+|4,39,11,56,1685393695,"~/.vim/mini.vimrc"
+-'  331  0  ~/.vim/performance/230529.long_pause_linux_term.v04.txt
+|4,39,331,0,1685393695,"~/.vim/performance/230529.long_pause_linux_term.v04.txt"
+-'  11  56  ~/.vim/mini.vimrc
+|4,39,11,56,1685393695,"~/.vim/mini.vimrc"
+-'  1  0  ~/.vim/performance/230529.long_pause_linux_term.v04.txt
+|4,39,1,0,1685393640,"~/.vim/performance/230529.long_pause_linux_term.v04.txt"
+-'  1  0  ~/.vim/performance/230529.long_pause_linux_term.v04.txt
+|4,39,1,0,1685393640,"~/.vim/performance/230529.long_pause_linux_term.v04.txt"
+-'  1  0  ~/.vim/performance/230529.long_pause_linux_term.v04.txt
+|4,39,1,0,1685393640,"~/.vim/performance/230529.long_pause_linux_term.v04.txt"
+-'  1  0  ~/.vim/performance/230529.long_pause_linux_term.v04.txt
+|4,39,1,0,1685393640,"~/.vim/performance/230529.long_pause_linux_term.v04.txt"
+-'  1  0  ~/.vim/performance/230529.long_pause_linux_term.v04.txt
+|4,39,1,0,1685393640,"~/.vim/performance/230529.long_pause_linux_term.v04.txt"
+-'  1  0  ~/.vim/performance/230529.long_pause_linux_term.v04.txt
+|4,39,1,0,1685393640,"~/.vim/performance/230529.long_pause_linux_term.v04.txt"
+-'  356  0  ~/.vim/performance/230529.long_pause_linux_term.v04.txt
+|4,39,356,0,1685393632,"~/.vim/performance/230529.long_pause_linux_term.v04.txt"
+-'  356  0  ~/.vim/performance/230529.long_pause_linux_term.v04.txt
+|4,39,356,0,1685393632,"~/.vim/performance/230529.long_pause_linux_term.v04.txt"
+-'  356  0  ~/.vim/performance/230529.long_pause_linux_term.v04.txt
+|4,39,356,0,1685393632,"~/.vim/performance/230529.long_pause_linux_term.v04.txt"
+-'  356  0  ~/.vim/performance/230529.long_pause_linux_term.v04.txt
+|4,39,356,0,1685393632,"~/.vim/performance/230529.long_pause_linux_term.v04.txt"
+-'  356  0  ~/.vim/performance/230529.long_pause_linux_term.v04.txt
+|4,39,356,0,1685393632,"~/.vim/performance/230529.long_pause_linux_term.v04.txt"
+-'  356  0  ~/.vim/performance/230529.long_pause_linux_term.v04.txt
+|4,39,356,0,1685393632,"~/.vim/performance/230529.long_pause_linux_term.v04.txt"
+-'  313  0  ~/.vim/performance/230529.long_pause_linux_term.v04.txt
+|4,39,313,0,1685393630,"~/.vim/performance/230529.long_pause_linux_term.v04.txt"
+-'  313  0  ~/.vim/performance/230529.long_pause_linux_term.v04.txt
+|4,39,313,0,1685393630,"~/.vim/performance/230529.long_pause_linux_term.v04.txt"
+-'  313  0  ~/.vim/performance/230529.long_pause_linux_term.v04.txt
+|4,39,313,0,1685393630,"~/.vim/performance/230529.long_pause_linux_term.v04.txt"
+-'  313  0  ~/.vim/performance/230529.long_pause_linux_term.v04.txt
+|4,39,313,0,1685393630,"~/.vim/performance/230529.long_pause_linux_term.v04.txt"
+-'  313  0  ~/.vim/performance/230529.long_pause_linux_term.v04.txt
+|4,39,313,0,1685393630,"~/.vim/performance/230529.long_pause_linux_term.v04.txt"
+-'  313  0  ~/.vim/performance/230529.long_pause_linux_term.v04.txt
+|4,39,313,0,1685393630,"~/.vim/performance/230529.long_pause_linux_term.v04.txt"
+-'  277  17  ~/.vim/plugin/statusline.vim
+|4,39,277,17,1685392437,"~/.vim/plugin/statusline.vim"
+-'  277  17  ~/.vim/plugin/statusline.vim
+|4,39,277,17,1685392437,"~/.vim/plugin/statusline.vim"
+-'  277  17  ~/.vim/plugin/statusline.vim
+|4,39,277,17,1685392437,"~/.vim/plugin/statusline.vim"
+-'  1  0  ~/.vim/plugin/statusline.vim
+|4,39,1,0,1685392388,"~/.vim/plugin/statusline.vim"
+-'  1  0  ~/.vim/plugin/statusline.vim
+|4,39,1,0,1685392388,"~/.vim/plugin/statusline.vim"
+-'  1  0  ~/.vim/plugin/statusline.vim
+|4,39,1,0,1685392388,"~/.vim/plugin/statusline.vim"
+-'  1567  13  ~/.vim/performance/230529.long_pause_linux_term.v03.txt
+|4,39,1567,13,1685392384,"~/.vim/performance/230529.long_pause_linux_term.v03.txt"
+-'  1567  13  ~/.vim/performance/230529.long_pause_linux_term.v03.txt
+|4,39,1567,13,1685392384,"~/.vim/performance/230529.long_pause_linux_term.v03.txt"
+-'  1567  13  ~/.vim/performance/230529.long_pause_linux_term.v03.txt
+|4,39,1567,13,1685392384,"~/.vim/performance/230529.long_pause_linux_term.v03.txt"
+-'  1567  13  ~/.vim/performance/230529.long_pause_linux_term.v03.txt
+|4,39,1567,13,1685392384,"~/.vim/performance/230529.long_pause_linux_term.v03.txt"
+-'  1567  13  ~/.vim/performance/230529.long_pause_linux_term.v03.txt
+|4,39,1567,13,1685392384,"~/.vim/performance/230529.long_pause_linux_term.v03.txt"
+-'  1567  13  ~/.vim/performance/230529.long_pause_linux_term.v03.txt
+|4,39,1567,13,1685392384,"~/.vim/performance/230529.long_pause_linux_term.v03.txt"
+-'  1567  13  ~/.vim/performance/230529.long_pause_linux_term.v03.txt
+|4,39,1567,13,1685392384,"~/.vim/performance/230529.long_pause_linux_term.v03.txt"
+-'  1916  29  ~/.vim/performance/230529.long_pause_linux_term.v03.txt
+|4,39,1916,29,1685392381,"~/.vim/performance/230529.long_pause_linux_term.v03.txt"
+-'  1916  29  ~/.vim/performance/230529.long_pause_linux_term.v03.txt
+|4,39,1916,29,1685392381,"~/.vim/performance/230529.long_pause_linux_term.v03.txt"
+-'  1916  29  ~/.vim/performance/230529.long_pause_linux_term.v03.txt
+|4,39,1916,29,1685392381,"~/.vim/performance/230529.long_pause_linux_term.v03.txt"
+-'  1916  29  ~/.vim/performance/230529.long_pause_linux_term.v03.txt
+|4,39,1916,29,1685392381,"~/.vim/performance/230529.long_pause_linux_term.v03.txt"
+-'  1916  29  ~/.vim/performance/230529.long_pause_linux_term.v03.txt
+|4,39,1916,29,1685392381,"~/.vim/performance/230529.long_pause_linux_term.v03.txt"
+-'  1916  29  ~/.vim/performance/230529.long_pause_linux_term.v03.txt
+|4,39,1916,29,1685392381,"~/.vim/performance/230529.long_pause_linux_term.v03.txt"
+-'  1916  29  ~/.vim/performance/230529.long_pause_linux_term.v03.txt
+|4,39,1916,29,1685392381,"~/.vim/performance/230529.long_pause_linux_term.v03.txt"
+-'  1939  29  ~/.vim/performance/230529.long_pause_linux_term.v03.txt
+|4,39,1939,29,1685392380,"~/.vim/performance/230529.long_pause_linux_term.v03.txt"
+-'  1939  29  ~/.vim/performance/230529.long_pause_linux_term.v03.txt
+|4,39,1939,29,1685392380,"~/.vim/performance/230529.long_pause_linux_term.v03.txt"
+-'  1939  29  ~/.vim/performance/230529.long_pause_linux_term.v03.txt
+|4,39,1939,29,1685392380,"~/.vim/performance/230529.long_pause_linux_term.v03.txt"
+-'  1939  29  ~/.vim/performance/230529.long_pause_linux_term.v03.txt
+|4,39,1939,29,1685392380,"~/.vim/performance/230529.long_pause_linux_term.v03.txt"
+-'  1939  29  ~/.vim/performance/230529.long_pause_linux_term.v03.txt
+|4,39,1939,29,1685392380,"~/.vim/performance/230529.long_pause_linux_term.v03.txt"
+-'  1939  29  ~/.vim/performance/230529.long_pause_linux_term.v03.txt
+|4,39,1939,29,1685392380,"~/.vim/performance/230529.long_pause_linux_term.v03.txt"
+-'  1939  29  ~/.vim/performance/230529.long_pause_linux_term.v03.txt
+|4,39,1939,29,1685392380,"~/.vim/performance/230529.long_pause_linux_term.v03.txt"
+-'  1  0  ~/.vim/performance/230529.long_pause_linux_term.v03.txt
+|4,39,1,0,1685392375,"~/.vim/performance/230529.long_pause_linux_term.v03.txt"
+-'  1  0  ~/.vim/performance/230529.long_pause_linux_term.v03.txt
+|4,39,1,0,1685392375,"~/.vim/performance/230529.long_pause_linux_term.v03.txt"
+-'  1  0  ~/.vim/performance/230529.long_pause_linux_term.v03.txt
+|4,39,1,0,1685392375,"~/.vim/performance/230529.long_pause_linux_term.v03.txt"
+-'  1  0  ~/.vim/performance/230529.long_pause_linux_term.v03.txt
+|4,39,1,0,1685392375,"~/.vim/performance/230529.long_pause_linux_term.v03.txt"
+-'  1  0  ~/.vim/performance/230529.long_pause_linux_term.v03.txt
+|4,39,1,0,1685392375,"~/.vim/performance/230529.long_pause_linux_term.v03.txt"
+-'  1  0  ~/.vim/performance/230529.long_pause_linux_term.v03.txt
+|4,39,1,0,1685392375,"~/.vim/performance/230529.long_pause_linux_term.v03.txt"
+-'  1  0  ~/.vim/performance/230529.long_pause_linux_term.v03.txt
+|4,39,1,0,1685392375,"~/.vim/performance/230529.long_pause_linux_term.v03.txt"
+-'  1765  0  ~/.vim/performance/230529.long_pause_linux_term.v02.txt
+|4,39,1765,0,1685392336,"~/.vim/performance/230529.long_pause_linux_term.v02.txt"
+-'  1765  0  ~/.vim/performance/230529.long_pause_linux_term.v02.txt
+|4,39,1765,0,1685392336,"~/.vim/performance/230529.long_pause_linux_term.v02.txt"
+-'  1765  0  ~/.vim/performance/230529.long_pause_linux_term.v02.txt
+|4,39,1765,0,1685392336,"~/.vim/performance/230529.long_pause_linux_term.v02.txt"
+-'  1765  0  ~/.vim/performance/230529.long_pause_linux_term.v02.txt
+|4,39,1765,0,1685392336,"~/.vim/performance/230529.long_pause_linux_term.v02.txt"
+-'  1765  0  ~/.vim/performance/230529.long_pause_linux_term.v02.txt
+|4,39,1765,0,1685392336,"~/.vim/performance/230529.long_pause_linux_term.v02.txt"
+-'  13  5  ~/.vim/plugin/mru.vim
+|4,39,13,5,1685392336,"~/.vim/plugin/mru.vim"
+-'  1765  0  ~/.vim/performance/230529.long_pause_linux_term.v02.txt
+|4,39,1765,0,1685392336,"~/.vim/performance/230529.long_pause_linux_term.v02.txt"
 
 # Buffer list:
-%~/.vim/vimrc	49	0
-%~/python_common/ic.py	1	0
-%~/.gitconfig	25	22
+%~/.vim/vimrc	1323	0
+%~/.vim/performance/230529.long_pause_linux_term.v04.txt	331	4
+%~/.vim/plugin/mru.vim	13	0
+%~/.vim/plugin/statusline.vim	277	4
 
 # History of marks within files (newest to oldest):
 
 > ~/.vim/vimrc
-	*	1685390588	0
-	"	49	0
-	^	51	2
-	.	49	0
+	*	1685397190	0
+	"	1323	0
+	^	1323	71
+	.	1323	70
 	+	49	65
 	+	47	0
 	+	48	7
@@ -395,6 +544,93 @@
 	+	49	1
 	+	51	0
 	+	49	0
+	+	1313	0
+	+	1318	0
+	+	1313	0
+	+	1312	30
+	+	1313	0
+	+	1317	0
+	+	1315	16
+	+	1316	0
+	+	1323	70
+
+> /usr/share/vim/vim90/doc/options.txt
+	*	1685394750	0
+	"	8362	8
+
+> ~/.vim/plugin/statusline.vim
+	*	1685394410	0
+	"	277	4
+	.	277	0
+	+	277	0
+
+> ~/.vim/plugin/mru.vim
+	*	1685394402	0
+	"	13	0
+	.	13	0
+	+	13	0
+
+> ~/.vim/performance/230529.long_pause_linux_term.v04.txt
+	*	1685394394	0
+	"	331	4
+
+> ~/.vim/mini.vimrc
+	*	1685393691	0
+	"	11	56
+	^	11	57
+	.	11	56
+	+	2	0
+	+	6	58
+	+	11	56
+
+> ~/.vim/performance/230529.long_pause_linux_term.v03.txt
+	*	1685392383	0
+	"	1567	13
+
+> ~/.vim/performance/230529.long_pause_linux_term.v02.txt
+	*	1685392336	0
+	"	1765	0
+
+> ~/.vim/performance/230529.long_pause_linux_term.v01.txt
+	*	1685392242	0
+	"	506	0
+
+> ~/.vim/performance/performance.vim
+	*	1685392189	0
+	"	361	18
+	^	361	19
+	.	361	18
+	+	362	10
+	+	362	0
+	+	301	0
+	+	302	0
+	+	301	55
+	+	301	31
+	+	301	22
+	+	301	14
+	+	301	34
+	+	301	46
+	+	301	0
+	+	301	15
+	+	301	0
+	+	300	78
+	+	298	18
+	+	300	44
+	+	298	19
+	+	301	0
+	+	358	36
+	+	362	0
+	+	360	0
+	+	363	48
+	+	361	18
+
+> /usr/share/vim/vim90/doc/builtin.txt
+	*	1685391714	0
+	"	7287	8
+
+> /usr/share/vim/vim90/doc/change.txt
+	*	1685391577	0
+	"	129	12
 
 > ~/python_common/ic.py
 	*	1685390490	0

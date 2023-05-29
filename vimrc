@@ -1309,11 +1309,15 @@ vmap 8 *
 command! Elevate silent normal vi,yvafp
 
 
-if filereadable(expand("~/vimfiles/performance/performance.vim"))
+if has('win32') || has('win64')
     source ~/vimfiles/performance/performance.vim
+else
+    source ~/.vim/performance/performance.vim
 endif
+
 
 " BASH
 
 set t_Co=256
 set t_ut=
+set ttimeoutlen=25 " Otherwise i get delay when i press ESC in ':' mode
