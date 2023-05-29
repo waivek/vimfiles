@@ -15,7 +15,11 @@
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1685398470,,"q"
+|2,0,1685398835,,"q"
+:qa
+|2,0,1685398727,,"qa"
+:h fzf
+|2,0,1685398647,,"h fzf"
 :b /home/vivek/.vim/vimrc
 |2,0,1685398467,,"b /home/vivek/.vim/vimrc"
 :echo &undodir
@@ -62,8 +66,6 @@
 |2,0,1685394812,,"set ttimeoutlen=0"
 :set timeoutlen=0
 |2,0,1685394802,,"set timeoutlen=0"
-:qa
-|2,0,1685394783,,"qa"
 :so %
 |2,0,1685394780,,"so %"
 :set ttimeoutlen?
@@ -210,8 +212,6 @@
 |2,0,1685375545,,"cd ~/python_common/"
 :files
 |2,0,1685375484,,"files"
-:h fzf
-|2,0,1685375364,,"h fzf"
 :messages
 |2,0,1685375284,,"messages"
 :!fzf
@@ -342,30 +342,50 @@
 |3,1,36,0,1,0,1685398387,"expand(undopath)"
 
 # File marks:
-'0  98  0  ~/.vim/vimrc
-|4,48,98,0,1685398470,"~/.vim/vimrc"
-'1  97  0  ~/.vim/vimrc
-|4,49,97,0,1685398443,"~/.vim/vimrc"
-'2  97  0  ~/.vim/vimrc
-|4,50,97,0,1685398443,"~/.vim/vimrc"
-'3  104  16  ~/.vim/vimrc
-|4,51,104,16,1685398393,"~/.vim/vimrc"
-'4  104  16  ~/.vim/vimrc
-|4,52,104,16,1685398393,"~/.vim/vimrc"
-'5  103  16  ~/.vim/vimrc
-|4,53,103,16,1685398393,"~/.vim/vimrc"
-'6  103  16  ~/.vim/vimrc
-|4,54,103,16,1685398393,"~/.vim/vimrc"
-'7  108  0  ~/.vim/vimrc
-|4,55,108,0,1685398349,"~/.vim/vimrc"
-'8  107  0  ~/.vim/vimrc
-|4,56,107,0,1685398349,"~/.vim/vimrc"
-'9  108  0  ~/.vim/vimrc
-|4,57,108,0,1685398349,"~/.vim/vimrc"
+'0  10  27  ~/.config/setup.sh
+|4,48,10,27,1685398835,"~/.config/setup.sh"
+'1  48  0  ~/.vim/.fzf/doc/fzf.txt
+|4,49,48,0,1685398727,"~/.vim/.fzf/doc/fzf.txt"
+'2  48  0  ~/.vim/.fzf/doc/fzf.txt
+|4,50,48,0,1685398727,"~/.vim/.fzf/doc/fzf.txt"
+'3  98  0  ~/.vim/vimrc
+|4,51,98,0,1685398470,"~/.vim/vimrc"
+'4  98  0  ~/.vim/vimrc
+|4,52,98,0,1685398470,"~/.vim/vimrc"
+'5  98  0  ~/.vim/vimrc
+|4,53,98,0,1685398470,"~/.vim/vimrc"
+'6  98  0  ~/.vim/vimrc
+|4,54,98,0,1685398470,"~/.vim/vimrc"
+'7  97  0  ~/.vim/vimrc
+|4,55,97,0,1685398443,"~/.vim/vimrc"
+'8  97  0  ~/.vim/vimrc
+|4,56,97,0,1685398443,"~/.vim/vimrc"
+'9  97  0  ~/.vim/vimrc
+|4,57,97,0,1685398443,"~/.vim/vimrc"
 
 # Jumplist (newest first):
+-'  10  27  ~/.config/setup.sh
+|4,39,10,27,1685398835,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1685398832,"~/.config/setup.sh"
+-'  48  0  ~/.vim/.fzf/doc/fzf.txt
+|4,39,48,0,1685398727,"~/.vim/.fzf/doc/fzf.txt"
+-'  48  0  ~/.vim/.fzf/doc/fzf.txt
+|4,39,48,0,1685398727,"~/.vim/.fzf/doc/fzf.txt"
+-'  1  0  ~/.vim/.fzf/doc/fzf.txt
+|4,39,1,0,1685398647,"~/.vim/.fzf/doc/fzf.txt"
+-'  1  0  ~/.vim/.fzf/doc/fzf.txt
+|4,39,1,0,1685398647,"~/.vim/.fzf/doc/fzf.txt"
 -'  98  0  ~/.vim/vimrc
 |4,39,98,0,1685398470,"~/.vim/vimrc"
+-'  98  0  ~/.vim/vimrc
+|4,39,98,0,1685398470,"~/.vim/vimrc"
+-'  98  0  ~/.vim/vimrc
+|4,39,98,0,1685398470,"~/.vim/vimrc"
+-'  97  0  ~/.vim/vimrc
+|4,39,97,0,1685398443,"~/.vim/vimrc"
+-'  97  0  ~/.vim/vimrc
+|4,39,97,0,1685398443,"~/.vim/vimrc"
 -'  97  0  ~/.vim/vimrc
 |4,39,97,0,1685398443,"~/.vim/vimrc"
 -'  97  0  ~/.vim/vimrc
@@ -374,14 +394,38 @@
 |4,39,104,16,1685398393,"~/.vim/vimrc"
 -'  103  16  ~/.vim/vimrc
 |4,39,103,16,1685398393,"~/.vim/vimrc"
+-'  104  16  ~/.vim/vimrc
+|4,39,104,16,1685398393,"~/.vim/vimrc"
 -'  103  16  ~/.vim/vimrc
 |4,39,103,16,1685398393,"~/.vim/vimrc"
+-'  104  16  ~/.vim/vimrc
+|4,39,104,16,1685398393,"~/.vim/vimrc"
+-'  103  16  ~/.vim/vimrc
+|4,39,103,16,1685398393,"~/.vim/vimrc"
+-'  103  16  ~/.vim/vimrc
+|4,39,103,16,1685398393,"~/.vim/vimrc"
+-'  105  20  ~/.vim/vimrc
+|4,39,105,20,1685398384,"~/.vim/vimrc"
+-'  105  20  ~/.vim/vimrc
+|4,39,105,20,1685398384,"~/.vim/vimrc"
 -'  105  20  ~/.vim/vimrc
 |4,39,105,20,1685398384,"~/.vim/vimrc"
 -'  104  20  ~/.vim/vimrc
 |4,39,104,20,1685398384,"~/.vim/vimrc"
 -'  104  20  ~/.vim/vimrc
 |4,39,104,20,1685398384,"~/.vim/vimrc"
+-'  108  0  ~/.vim/vimrc
+|4,39,108,0,1685398349,"~/.vim/vimrc"
+-'  107  0  ~/.vim/vimrc
+|4,39,107,0,1685398349,"~/.vim/vimrc"
+-'  106  0  ~/.vim/vimrc
+|4,39,106,0,1685398349,"~/.vim/vimrc"
+-'  108  0  ~/.vim/vimrc
+|4,39,108,0,1685398349,"~/.vim/vimrc"
+-'  107  0  ~/.vim/vimrc
+|4,39,107,0,1685398349,"~/.vim/vimrc"
+-'  106  0  ~/.vim/vimrc
+|4,39,106,0,1685398349,"~/.vim/vimrc"
 -'  108  0  ~/.vim/vimrc
 |4,39,108,0,1685398349,"~/.vim/vimrc"
 -'  107  0  ~/.vim/vimrc
@@ -394,6 +438,10 @@
 |4,39,107,0,1685398349,"~/.vim/vimrc"
 -'  106  0  ~/.vim/vimrc
 |4,39,106,0,1685398349,"~/.vim/vimrc"
+-'  109  0  ~/.vim/vimrc
+|4,39,109,0,1685398326,"~/.vim/vimrc"
+-'  109  0  ~/.vim/vimrc
+|4,39,109,0,1685398326,"~/.vim/vimrc"
 -'  109  0  ~/.vim/vimrc
 |4,39,109,0,1685398326,"~/.vim/vimrc"
 -'  108  0  ~/.vim/vimrc
@@ -422,6 +470,10 @@
 |4,39,105,21,1685398232,"~/.vim/vimrc"
 -'  105  21  ~/.vim/vimrc
 |4,39,105,21,1685398232,"~/.vim/vimrc"
+-'  110  0  ~/.vim/vimrc
+|4,39,110,0,1685398204,"~/.vim/vimrc"
+-'  110  0  ~/.vim/vimrc
+|4,39,110,0,1685398204,"~/.vim/vimrc"
 -'  110  0  ~/.vim/vimrc
 |4,39,110,0,1685398204,"~/.vim/vimrc"
 -'  109  0  ~/.vim/vimrc
@@ -458,6 +510,14 @@
 |4,39,1,0,1685397643,"~/.vim/vimrc"
 -'  1  0  ~/.vim/vimrc
 |4,39,1,0,1685397643,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1685397643,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1685397643,"~/.vim/vimrc"
+-'  4  0  ~/.vim/mini.vimrc
+|4,39,4,0,1685397599,"~/.vim/mini.vimrc"
+-'  4  0  ~/.vim/mini.vimrc
+|4,39,4,0,1685397599,"~/.vim/mini.vimrc"
 -'  4  0  ~/.vim/mini.vimrc
 |4,39,4,0,1685397599,"~/.vim/mini.vimrc"
 -'  4  0  ~/.vim/mini.vimrc
@@ -498,76 +558,29 @@
 |4,39,5,0,1685397595,"~/.vim/mini.vimrc"
 -'  5  0  ~/.vim/mini.vimrc
 |4,39,5,0,1685397595,"~/.vim/mini.vimrc"
+-'  5  0  ~/.vim/mini.vimrc
+|4,39,5,0,1685397595,"~/.vim/mini.vimrc"
+-'  5  0  ~/.vim/mini.vimrc
+|4,39,5,0,1685397595,"~/.vim/mini.vimrc"
 -'  1  0  ~/.vim/mini.vimrc
 |4,39,1,0,1685397593,"~/.vim/mini.vimrc"
--'  1  0  ~/.vim/mini.vimrc
-|4,39,1,0,1685397593,"~/.vim/mini.vimrc"
--'  1  0  ~/.vim/mini.vimrc
-|4,39,1,0,1685397593,"~/.vim/mini.vimrc"
--'  1  0  ~/.vim/mini.vimrc
-|4,39,1,0,1685397593,"~/.vim/mini.vimrc"
--'  1  0  ~/.vim/mini.vimrc
-|4,39,1,0,1685397593,"~/.vim/mini.vimrc"
--'  1  0  ~/.vim/mini.vimrc
-|4,39,1,0,1685397593,"~/.vim/mini.vimrc"
--'  1  0  ~/.vim/mini.vimrc
-|4,39,1,0,1685397593,"~/.vim/mini.vimrc"
--'  1  0  ~/.vim/mini.vimrc
-|4,39,1,0,1685397593,"~/.vim/mini.vimrc"
--'  1  0  ~/.vim/mini.vimrc
-|4,39,1,0,1685397593,"~/.vim/mini.vimrc"
--'  1  0  ~/.vim/mini.vimrc
-|4,39,1,0,1685397593,"~/.vim/mini.vimrc"
--'  1  0  ~/.vim/mini.vimrc
-|4,39,1,0,1685397590,"~/.vim/mini.vimrc"
--'  1327  0  ~/.vim/vimrc
-|4,39,1327,0,1685397192,"~/.vim/vimrc"
--'  1326  0  ~/.vim/vimrc
-|4,39,1326,0,1685397192,"~/.vim/vimrc"
--'  1325  0  ~/.vim/vimrc
-|4,39,1325,0,1685397192,"~/.vim/vimrc"
--'  1324  0  ~/.vim/vimrc
-|4,39,1324,0,1685397192,"~/.vim/vimrc"
--'  1326  0  ~/.vim/vimrc
-|4,39,1326,0,1685397192,"~/.vim/vimrc"
--'  1325  0  ~/.vim/vimrc
-|4,39,1325,0,1685397192,"~/.vim/vimrc"
--'  1324  0  ~/.vim/vimrc
-|4,39,1324,0,1685397192,"~/.vim/vimrc"
--'  1323  0  ~/.vim/vimrc
-|4,39,1323,0,1685397192,"~/.vim/vimrc"
--'  1326  0  ~/.vim/vimrc
-|4,39,1326,0,1685397192,"~/.vim/vimrc"
--'  1325  0  ~/.vim/vimrc
-|4,39,1325,0,1685397192,"~/.vim/vimrc"
--'  1324  0  ~/.vim/vimrc
-|4,39,1324,0,1685397192,"~/.vim/vimrc"
--'  1325  0  ~/.vim/vimrc
-|4,39,1325,0,1685397192,"~/.vim/vimrc"
--'  1324  0  ~/.vim/vimrc
-|4,39,1324,0,1685397192,"~/.vim/vimrc"
--'  1324  0  ~/.vim/vimrc
-|4,39,1324,0,1685397192,"~/.vim/vimrc"
--'  1323  0  ~/.vim/vimrc
-|4,39,1323,0,1685397192,"~/.vim/vimrc"
--'  1323  0  ~/.vim/vimrc
-|4,39,1323,0,1685397192,"~/.vim/vimrc"
--'  1323  0  ~/.vim/vimrc
-|4,39,1323,0,1685397192,"~/.vim/vimrc"
--'  1323  0  ~/.vim/vimrc
-|4,39,1323,0,1685397192,"~/.vim/vimrc"
--'  1323  0  ~/.vim/vimrc
-|4,39,1323,0,1685397192,"~/.vim/vimrc"
--'  1323  0  ~/.vim/vimrc
-|4,39,1323,0,1685397192,"~/.vim/vimrc"
--'  1323  0  ~/.vim/vimrc
-|4,39,1323,0,1685397192,"~/.vim/vimrc"
 
 # Buffer list:
-%~/.vim/vimrc	98	0
-%~/.vim/mini.vimrc	4	0
+%~/.config/setup.sh	10	27
 
 # History of marks within files (newest to oldest):
+
+> ~/.config/setup.sh
+	*	1685398834	0
+	"	10	27
+	^	10	28
+	.	10	27
+	+	9	68
+	+	10	27
+
+> ~/.vim/.fzf/doc/fzf.txt
+	*	1685398683	0
+	"	48	0
 
 > ~/.vim/vimrc
 	*	1685398469	0
@@ -701,17 +714,6 @@
 	+	14	0
 	+	12	0
 	+	25	22
-
-> ~/.vim/.fzf/doc/fzf.txt
-	*	1685375371	0
-	"	219	80
-
-> ~/.config/setup.sh
-	*	1685235730	0
-	"	9	0
-	^	9	69
-	.	9	68
-	+	9	68
 
 > /etc/timezone
 	*	1685235262	0
