@@ -11,13 +11,19 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/variable
+~MSle0~/_z --add
 
 # Command Line History (newest to oldest):
+:q
+|2,0,1685446358,,"q"
+:MRU z.sh
+|2,0,1685445838,,"MRU z.sh"
+:w
+|2,0,1685445019,,"w"
+:q!
+|2,0,1685444652,,"q!"
 :qa!
 |2,0,1685405629,,"qa!"
-:q
-|2,0,1685405626,,"q"
 :qa
 |2,0,1685398727,,"qa"
 :h fzf
@@ -60,8 +66,6 @@
 |2,0,1685397646,,"echo undodir"
 :edit $MYVIMRC
 |2,0,1685397640,,"edit $MYVIMRC"
-:q!
-|2,0,1685397504,,"q!"
 :Files
 |2,0,1685394818,,"Files"
 :set ttimeoutlen=0
@@ -244,6 +248,10 @@
 |2,0,1685142608,,"bd!"
 
 # Search String History (newest to oldest):
+?/_z --add
+|2,1,1685445878,47,"_z --add"
+?/match
+|2,1,1685444638,47,"match"
 ?/variable
 |2,1,1685398261,47,"variable"
 ?/user
@@ -303,280 +311,318 @@
 
 # Registers:
 "0	CHAR	0
-	set
-|3,0,0,0,1,0,1685398285,"set"
-"1	LINE	0
-	
-|3,0,1,1,1,0,1685398223,""
+	source
+|3,0,0,0,1,0,1685445158,"source"
+""1	LINE	0
+	PROMPT_COMMAND='history -a'
+|3,1,1,1,1,0,1685445947,"PROMPT_COMMAND='history -a'"
 "2	LINE	0
-	
-|3,0,2,1,1,0,1685398221,""
+	source
+|3,0,2,1,1,0,1685445204,"source"
 "3	LINE	0
+	source /opt/z/z.sh
+|3,0,3,1,1,0,1685445028,"source /opt/z/z.sh"
+"4	LINE	0
+	source /opt/z/z.sh
+|3,0,4,1,1,0,1685445017,"source /opt/z/z.sh"
+"5	LINE	0
+	export _Z_DATA="$HOME/.config/shell_data/.z"
+|3,0,5,1,1,0,1685444371,"export _Z_DATA=\"$HOME/.config/shell_data/.z\""
+"6	LINE	0
+	
+|3,0,6,1,1,0,1685398223,""
+"7	LINE	0
+	
+|3,0,7,1,1,0,1685398221,""
+"8	LINE	0
 	if has("win32")
 	    set undodir=C:/Users/vivek/vimfiles/undofiles,.
 	endif
 	if has('unix') || has('linux')
 	    set undodir=~/.vim/undofiles,.
 	endif
-|3,0,3,1,6,0,1685398202,"if has(\"win32\")","    set undodir=C:/Users/vivek/vimfiles/undofiles,.","endif","if has('unix') || has('linux')","    set undodir=~/.vim/undofiles,.","endif"
-"4	LINE	0
-	
-|3,0,4,1,1,0,1685397842,""
-"5	LINE	0
-	
-	
-|3,0,5,1,2,0,1685394622,"",""
-"6	LINE	0
-	
-	
-|3,0,6,1,2,0,1685394572,"",""
-"7	LINE	0
-	jk
-|3,0,7,1,1,0,1685394520,"jk"
-"8	LINE	0
-	    return '[n/a]'
-|3,0,8,1,1,0,1685394408,"    return '[n/a]'"
+|3,0,8,1,6,0,1685398202,"if has(\"win32\")","    set undodir=C:/Users/vivek/vimfiles/undofiles,.","endif","if has('unix') || has('linux')","    set undodir=~/.vim/undofiles,.","endif"
 "9	LINE	0
-	finish
-|3,0,9,1,1,0,1685394401,"finish"
-""-	CHAR	0
-	expand(undopath)
-|3,1,36,0,1,0,1685398387,"expand(undopath)"
+	
+|3,0,9,1,1,0,1685397842,""
+"-	CHAR	0
+	source
+|3,0,36,0,1,0,1685445157,"source"
 
 # File marks:
-'0  10  27  ~/.config/setup.sh
-|4,48,10,27,1685398835,"~/.config/setup.sh"
-'1  10  27  ~/.config/setup.sh
-|4,49,10,27,1685398835,"~/.config/setup.sh"
-'2  48  0  ~/.vim/.fzf/doc/fzf.txt
-|4,50,48,0,1685398727,"~/.vim/.fzf/doc/fzf.txt"
-'3  48  0  ~/.vim/.fzf/doc/fzf.txt
-|4,51,48,0,1685398727,"~/.vim/.fzf/doc/fzf.txt"
-'4  48  0  ~/.vim/.fzf/doc/fzf.txt
-|4,52,48,0,1685398727,"~/.vim/.fzf/doc/fzf.txt"
-'5  48  0  ~/.vim/.fzf/doc/fzf.txt
-|4,53,48,0,1685398727,"~/.vim/.fzf/doc/fzf.txt"
-'6  98  0  ~/.vim/vimrc
-|4,54,98,0,1685398470,"~/.vim/vimrc"
-'7  98  0  ~/.vim/vimrc
-|4,55,98,0,1685398470,"~/.vim/vimrc"
-'8  98  0  ~/.vim/vimrc
-|4,56,98,0,1685398470,"~/.vim/vimrc"
-'9  98  0  ~/.vim/vimrc
-|4,57,98,0,1685398470,"~/.vim/vimrc"
+'0  1  0  ~/.gitconfig
+|4,48,1,0,1685446358,"~/.gitconfig"
+'1  2  0  ~/.config/setup.sh
+|4,49,2,0,1685445955,"~/.config/setup.sh"
+'2  2  0  ~/.config/setup.sh
+|4,50,2,0,1685445955,"~/.config/setup.sh"
+'3  264  51  /opt/z/z.sh
+|4,51,264,51,1685445899,"/opt/z/z.sh"
+'4  264  51  /opt/z/z.sh
+|4,52,264,51,1685445899,"/opt/z/z.sh"
+'5  264  51  /opt/z/z.sh
+|4,53,264,51,1685445899,"/opt/z/z.sh"
+'6  264  51  /opt/z/z.sh
+|4,54,264,51,1685445899,"/opt/z/z.sh"
+'7  30  0  /opt/z/z.sh
+|4,55,30,0,1685445861,"/opt/z/z.sh"
+'8  30  0  /opt/z/z.sh
+|4,56,30,0,1685445861,"/opt/z/z.sh"
+'9  30  0  /opt/z/z.sh
+|4,57,30,0,1685445861,"/opt/z/z.sh"
 
 # Jumplist (newest first):
--'  10  27  ~/.config/setup.sh
-|4,39,10,27,1685398835,"~/.config/setup.sh"
--'  10  27  ~/.config/setup.sh
-|4,39,10,27,1685398835,"~/.config/setup.sh"
+-'  1  0  ~/.gitconfig
+|4,39,1,0,1685446358,"~/.gitconfig"
+-'  2  0  ~/.config/setup.sh
+|4,39,2,0,1685445955,"~/.config/setup.sh"
+-'  2  0  ~/.config/setup.sh
+|4,39,2,0,1685445955,"~/.config/setup.sh"
 -'  1  0  ~/.config/setup.sh
-|4,39,1,0,1685398832,"~/.config/setup.sh"
+|4,39,1,0,1685445943,"~/.config/setup.sh"
 -'  1  0  ~/.config/setup.sh
-|4,39,1,0,1685398832,"~/.config/setup.sh"
--'  48  0  ~/.vim/.fzf/doc/fzf.txt
-|4,39,48,0,1685398727,"~/.vim/.fzf/doc/fzf.txt"
--'  48  0  ~/.vim/.fzf/doc/fzf.txt
-|4,39,48,0,1685398727,"~/.vim/.fzf/doc/fzf.txt"
--'  48  0  ~/.vim/.fzf/doc/fzf.txt
-|4,39,48,0,1685398727,"~/.vim/.fzf/doc/fzf.txt"
--'  1  0  ~/.vim/.fzf/doc/fzf.txt
-|4,39,1,0,1685398647,"~/.vim/.fzf/doc/fzf.txt"
--'  1  0  ~/.vim/.fzf/doc/fzf.txt
-|4,39,1,0,1685398647,"~/.vim/.fzf/doc/fzf.txt"
--'  1  0  ~/.vim/.fzf/doc/fzf.txt
-|4,39,1,0,1685398647,"~/.vim/.fzf/doc/fzf.txt"
--'  98  0  ~/.vim/vimrc
-|4,39,98,0,1685398470,"~/.vim/vimrc"
--'  98  0  ~/.vim/vimrc
-|4,39,98,0,1685398470,"~/.vim/vimrc"
--'  98  0  ~/.vim/vimrc
-|4,39,98,0,1685398470,"~/.vim/vimrc"
--'  98  0  ~/.vim/vimrc
-|4,39,98,0,1685398470,"~/.vim/vimrc"
--'  97  0  ~/.vim/vimrc
-|4,39,97,0,1685398443,"~/.vim/vimrc"
--'  97  0  ~/.vim/vimrc
-|4,39,97,0,1685398443,"~/.vim/vimrc"
--'  97  0  ~/.vim/vimrc
-|4,39,97,0,1685398443,"~/.vim/vimrc"
--'  97  0  ~/.vim/vimrc
-|4,39,97,0,1685398443,"~/.vim/vimrc"
--'  97  0  ~/.vim/vimrc
-|4,39,97,0,1685398443,"~/.vim/vimrc"
--'  104  16  ~/.vim/vimrc
-|4,39,104,16,1685398393,"~/.vim/vimrc"
--'  103  16  ~/.vim/vimrc
-|4,39,103,16,1685398393,"~/.vim/vimrc"
--'  104  16  ~/.vim/vimrc
-|4,39,104,16,1685398393,"~/.vim/vimrc"
--'  103  16  ~/.vim/vimrc
-|4,39,103,16,1685398393,"~/.vim/vimrc"
--'  104  16  ~/.vim/vimrc
-|4,39,104,16,1685398393,"~/.vim/vimrc"
--'  103  16  ~/.vim/vimrc
-|4,39,103,16,1685398393,"~/.vim/vimrc"
--'  104  16  ~/.vim/vimrc
-|4,39,104,16,1685398393,"~/.vim/vimrc"
--'  103  16  ~/.vim/vimrc
-|4,39,103,16,1685398393,"~/.vim/vimrc"
--'  103  16  ~/.vim/vimrc
-|4,39,103,16,1685398393,"~/.vim/vimrc"
--'  105  20  ~/.vim/vimrc
-|4,39,105,20,1685398384,"~/.vim/vimrc"
--'  105  20  ~/.vim/vimrc
-|4,39,105,20,1685398384,"~/.vim/vimrc"
--'  105  20  ~/.vim/vimrc
-|4,39,105,20,1685398384,"~/.vim/vimrc"
--'  105  20  ~/.vim/vimrc
-|4,39,105,20,1685398384,"~/.vim/vimrc"
--'  104  20  ~/.vim/vimrc
-|4,39,104,20,1685398384,"~/.vim/vimrc"
--'  104  20  ~/.vim/vimrc
-|4,39,104,20,1685398384,"~/.vim/vimrc"
--'  108  0  ~/.vim/vimrc
-|4,39,108,0,1685398349,"~/.vim/vimrc"
--'  107  0  ~/.vim/vimrc
-|4,39,107,0,1685398349,"~/.vim/vimrc"
--'  106  0  ~/.vim/vimrc
-|4,39,106,0,1685398349,"~/.vim/vimrc"
--'  108  0  ~/.vim/vimrc
-|4,39,108,0,1685398349,"~/.vim/vimrc"
--'  107  0  ~/.vim/vimrc
-|4,39,107,0,1685398349,"~/.vim/vimrc"
--'  106  0  ~/.vim/vimrc
-|4,39,106,0,1685398349,"~/.vim/vimrc"
--'  108  0  ~/.vim/vimrc
-|4,39,108,0,1685398349,"~/.vim/vimrc"
--'  107  0  ~/.vim/vimrc
-|4,39,107,0,1685398349,"~/.vim/vimrc"
--'  106  0  ~/.vim/vimrc
-|4,39,106,0,1685398349,"~/.vim/vimrc"
--'  108  0  ~/.vim/vimrc
-|4,39,108,0,1685398349,"~/.vim/vimrc"
--'  107  0  ~/.vim/vimrc
-|4,39,107,0,1685398349,"~/.vim/vimrc"
--'  107  0  ~/.vim/vimrc
-|4,39,107,0,1685398349,"~/.vim/vimrc"
--'  106  0  ~/.vim/vimrc
-|4,39,106,0,1685398349,"~/.vim/vimrc"
--'  107  0  ~/.vim/vimrc
-|4,39,107,0,1685398349,"~/.vim/vimrc"
--'  106  0  ~/.vim/vimrc
-|4,39,106,0,1685398349,"~/.vim/vimrc"
--'  109  0  ~/.vim/vimrc
-|4,39,109,0,1685398326,"~/.vim/vimrc"
--'  109  0  ~/.vim/vimrc
-|4,39,109,0,1685398326,"~/.vim/vimrc"
--'  109  0  ~/.vim/vimrc
-|4,39,109,0,1685398326,"~/.vim/vimrc"
--'  109  0  ~/.vim/vimrc
-|4,39,109,0,1685398326,"~/.vim/vimrc"
--'  108  0  ~/.vim/vimrc
-|4,39,108,0,1685398326,"~/.vim/vimrc"
--'  108  0  ~/.vim/vimrc
-|4,39,108,0,1685398326,"~/.vim/vimrc"
--'  107  0  ~/.vim/vimrc
-|4,39,107,0,1685398326,"~/.vim/vimrc"
--'  106  0  ~/.vim/vimrc
-|4,39,106,0,1685398326,"~/.vim/vimrc"
--'  106  27  ~/.vim/vimrc
-|4,39,106,27,1685398319,"~/.vim/vimrc"
--'  105  27  ~/.vim/vimrc
-|4,39,105,27,1685398319,"~/.vim/vimrc"
--'  106  27  ~/.vim/vimrc
-|4,39,106,27,1685398319,"~/.vim/vimrc"
--'  105  27  ~/.vim/vimrc
-|4,39,105,27,1685398319,"~/.vim/vimrc"
--'  105  27  ~/.vim/vimrc
-|4,39,105,27,1685398319,"~/.vim/vimrc"
--'  105  27  ~/.vim/vimrc
-|4,39,105,27,1685398319,"~/.vim/vimrc"
--'  105  27  ~/.vim/vimrc
-|4,39,105,27,1685398305,"~/.vim/vimrc"
--'  105  21  ~/.vim/vimrc
-|4,39,105,21,1685398232,"~/.vim/vimrc"
--'  105  21  ~/.vim/vimrc
-|4,39,105,21,1685398232,"~/.vim/vimrc"
--'  110  0  ~/.vim/vimrc
-|4,39,110,0,1685398204,"~/.vim/vimrc"
--'  110  0  ~/.vim/vimrc
-|4,39,110,0,1685398204,"~/.vim/vimrc"
--'  110  0  ~/.vim/vimrc
-|4,39,110,0,1685398204,"~/.vim/vimrc"
--'  110  0  ~/.vim/vimrc
-|4,39,110,0,1685398204,"~/.vim/vimrc"
--'  109  0  ~/.vim/vimrc
-|4,39,109,0,1685398204,"~/.vim/vimrc"
--'  109  0  ~/.vim/vimrc
-|4,39,109,0,1685398204,"~/.vim/vimrc"
--'  108  0  ~/.vim/vimrc
-|4,39,108,0,1685398204,"~/.vim/vimrc"
--'  107  0  ~/.vim/vimrc
-|4,39,107,0,1685398204,"~/.vim/vimrc"
--'  106  0  ~/.vim/vimrc
-|4,39,106,0,1685398204,"~/.vim/vimrc"
--'  106  0  ~/.vim/vimrc
-|4,39,106,0,1685398204,"~/.vim/vimrc"
--'  106  0  ~/.vim/vimrc
-|4,39,106,0,1685398204,"~/.vim/vimrc"
--'  106  0  ~/.vim/vimrc
-|4,39,106,0,1685398204,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1685397643,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1685397643,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1685397643,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1685397643,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1685397643,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1685397643,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1685397643,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1685397643,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1685397643,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1685397643,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1685397643,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1685397643,"~/.vim/vimrc"
--'  4  0  ~/.vim/mini.vimrc
-|4,39,4,0,1685397599,"~/.vim/mini.vimrc"
--'  4  0  ~/.vim/mini.vimrc
-|4,39,4,0,1685397599,"~/.vim/mini.vimrc"
--'  4  0  ~/.vim/mini.vimrc
-|4,39,4,0,1685397599,"~/.vim/mini.vimrc"
--'  4  0  ~/.vim/mini.vimrc
-|4,39,4,0,1685397599,"~/.vim/mini.vimrc"
--'  4  0  ~/.vim/mini.vimrc
-|4,39,4,0,1685397599,"~/.vim/mini.vimrc"
--'  4  0  ~/.vim/mini.vimrc
-|4,39,4,0,1685397599,"~/.vim/mini.vimrc"
--'  4  0  ~/.vim/mini.vimrc
-|4,39,4,0,1685397599,"~/.vim/mini.vimrc"
--'  4  0  ~/.vim/mini.vimrc
-|4,39,4,0,1685397599,"~/.vim/mini.vimrc"
--'  4  0  ~/.vim/mini.vimrc
-|4,39,4,0,1685397599,"~/.vim/mini.vimrc"
+|4,39,1,0,1685445943,"~/.config/setup.sh"
+-'  264  51  /opt/z/z.sh
+|4,39,264,51,1685445899,"/opt/z/z.sh"
+-'  264  51  /opt/z/z.sh
+|4,39,264,51,1685445899,"/opt/z/z.sh"
+-'  264  51  /opt/z/z.sh
+|4,39,264,51,1685445899,"/opt/z/z.sh"
+-'  263  14  /opt/z/z.sh
+|4,39,263,14,1685445890,"/opt/z/z.sh"
+-'  263  14  /opt/z/z.sh
+|4,39,263,14,1685445890,"/opt/z/z.sh"
+-'  263  14  /opt/z/z.sh
+|4,39,263,14,1685445890,"/opt/z/z.sh"
+-'  242  17  /opt/z/z.sh
+|4,39,242,17,1685445887,"/opt/z/z.sh"
+-'  242  17  /opt/z/z.sh
+|4,39,242,17,1685445887,"/opt/z/z.sh"
+-'  242  17  /opt/z/z.sh
+|4,39,242,17,1685445887,"/opt/z/z.sh"
+-'  237  17  /opt/z/z.sh
+|4,39,237,17,1685445883,"/opt/z/z.sh"
+-'  237  17  /opt/z/z.sh
+|4,39,237,17,1685445883,"/opt/z/z.sh"
+-'  237  17  /opt/z/z.sh
+|4,39,237,17,1685445883,"/opt/z/z.sh"
+-'  30  0  /opt/z/z.sh
+|4,39,30,0,1685445878,"/opt/z/z.sh"
+-'  30  0  /opt/z/z.sh
+|4,39,30,0,1685445878,"/opt/z/z.sh"
+-'  30  0  /opt/z/z.sh
+|4,39,30,0,1685445878,"/opt/z/z.sh"
+-'  30  0  /opt/z/z.sh
+|4,39,30,0,1685445861,"/opt/z/z.sh"
+-'  12  25  /opt/z/z.sh
+|4,39,12,25,1685445284,"/opt/z/z.sh"
+-'  12  25  /opt/z/z.sh
+|4,39,12,25,1685445284,"/opt/z/z.sh"
+-'  12  25  /opt/z/z.sh
+|4,39,12,25,1685445284,"/opt/z/z.sh"
+-'  12  25  /opt/z/z.sh
+|4,39,12,25,1685445284,"/opt/z/z.sh"
+-'  12  25  /opt/z/z.sh
+|4,39,12,25,1685445284,"/opt/z/z.sh"
+-'  1  0  /opt/z/z.sh
+|4,39,1,0,1685445240,"/opt/z/z.sh"
+-'  1  0  /opt/z/z.sh
+|4,39,1,0,1685445240,"/opt/z/z.sh"
+-'  1  0  /opt/z/z.sh
+|4,39,1,0,1685445240,"/opt/z/z.sh"
+-'  1  0  /opt/z/z.sh
+|4,39,1,0,1685445240,"/opt/z/z.sh"
+-'  1  0  /opt/z/z.sh
+|4,39,1,0,1685445240,"/opt/z/z.sh"
+-'  119  0  ~/.bashrc
+|4,39,119,0,1685445206,"~/.bashrc"
+-'  119  0  ~/.bashrc
+|4,39,119,0,1685445206,"~/.bashrc"
+-'  119  0  ~/.bashrc
+|4,39,119,0,1685445206,"~/.bashrc"
+-'  119  0  ~/.bashrc
+|4,39,119,0,1685445206,"~/.bashrc"
+-'  119  0  ~/.bashrc
+|4,39,119,0,1685445206,"~/.bashrc"
+-'  119  0  ~/.bashrc
+|4,39,119,0,1685445206,"~/.bashrc"
+-'  1  0  ~/.config/bindings.inputrc
+|4,39,1,0,1685445199,"~/.config/bindings.inputrc"
+-'  1  0  ~/.config/bindings.inputrc
+|4,39,1,0,1685445199,"~/.config/bindings.inputrc"
+-'  1  0  ~/.config/bindings.inputrc
+|4,39,1,0,1685445199,"~/.config/bindings.inputrc"
+-'  1  0  ~/.config/bindings.inputrc
+|4,39,1,0,1685445199,"~/.config/bindings.inputrc"
+-'  1  0  ~/.config/bindings.inputrc
+|4,39,1,0,1685445199,"~/.config/bindings.inputrc"
+-'  1  0  ~/.config/bindings.inputrc
+|4,39,1,0,1685445199,"~/.config/bindings.inputrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1685445184,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1685445184,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1685445184,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1685445184,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1685445184,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1685445184,"~/.bashrc"
+-'  3  12  ~/.config/setup.sh
+|4,39,3,12,1685445161,"~/.config/setup.sh"
+-'  3  12  ~/.config/setup.sh
+|4,39,3,12,1685445161,"~/.config/setup.sh"
+-'  2  12  ~/.config/setup.sh
+|4,39,2,12,1685445161,"~/.config/setup.sh"
+-'  2  12  ~/.config/setup.sh
+|4,39,2,12,1685445161,"~/.config/setup.sh"
+-'  2  12  ~/.config/setup.sh
+|4,39,2,12,1685445161,"~/.config/setup.sh"
+-'  2  12  ~/.config/setup.sh
+|4,39,2,12,1685445161,"~/.config/setup.sh"
+-'  2  12  ~/.config/setup.sh
+|4,39,2,12,1685445161,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1685445124,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1685445124,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1685445124,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1685445124,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1685445124,"~/.config/setup.sh"
+-'  2  0  ~/.config/setup.sh
+|4,39,2,0,1685445034,"~/.config/setup.sh"
+-'  5  0  ~/.config/setup.sh
+|4,39,5,0,1685445017,"~/.config/setup.sh"
+-'  4  0  ~/.config/setup.sh
+|4,39,4,0,1685445017,"~/.config/setup.sh"
+-'  5  0  ~/.config/setup.sh
+|4,39,5,0,1685445017,"~/.config/setup.sh"
+-'  4  0  ~/.config/setup.sh
+|4,39,4,0,1685445017,"~/.config/setup.sh"
+-'  4  0  ~/.config/setup.sh
+|4,39,4,0,1685445017,"~/.config/setup.sh"
+-'  4  0  ~/.config/setup.sh
+|4,39,4,0,1685445017,"~/.config/setup.sh"
+-'  4  0  ~/.config/setup.sh
+|4,39,4,0,1685445017,"~/.config/setup.sh"
+-'  4  0  ~/.config/setup.sh
+|4,39,4,0,1685445017,"~/.config/setup.sh"
+-'  4  0  ~/.config/setup.sh
+|4,39,4,0,1685445017,"~/.config/setup.sh"
+-'  1  0  /opt/z/z.sh
+|4,39,1,0,1685445001,"/opt/z/z.sh"
+-'  1  0  /opt/z/z.sh
+|4,39,1,0,1685445001,"/opt/z/z.sh"
+-'  1  0  /opt/z/z.sh
+|4,39,1,0,1685445001,"/opt/z/z.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1685444997,"~/.config/setup.sh"
+-'  4  0  ~/.config/setup.sh
+|4,39,4,0,1685444906,"~/.config/setup.sh"
+-'  3  0  ~/.config/setup.sh
+|4,39,3,0,1685444906,"~/.config/setup.sh"
+-'  3  0  ~/.config/setup.sh
+|4,39,3,0,1685444906,"~/.config/setup.sh"
+-'  3  0  ~/.config/setup.sh
+|4,39,3,0,1685444906,"~/.config/setup.sh"
+-'  3  0  ~/.config/setup.sh
+|4,39,3,0,1685444906,"~/.config/setup.sh"
+-'  3  0  ~/.config/setup.sh
+|4,39,3,0,1685444906,"~/.config/setup.sh"
+-'  3  0  ~/.config/setup.sh
+|4,39,3,0,1685444906,"~/.config/setup.sh"
+-'  2  0  ~/.config/setup.sh
+|4,39,2,0,1685444906,"~/.config/setup.sh"
+-'  2  0  ~/.config/setup.sh
+|4,39,2,0,1685444906,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1685444895,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1685444895,"~/.config/setup.sh"
+-'  11  34  ~/.config/setup.sh
+|4,39,11,34,1685444543,"~/.config/setup.sh"
+-'  11  34  ~/.config/setup.sh
+|4,39,11,34,1685444543,"~/.config/setup.sh"
+-'  11  34  ~/.config/setup.sh
+|4,39,11,34,1685444543,"~/.config/setup.sh"
+-'  11  34  ~/.config/setup.sh
+|4,39,11,34,1685444543,"~/.config/setup.sh"
+-'  11  34  ~/.config/setup.sh
+|4,39,11,34,1685444543,"~/.config/setup.sh"
+-'  11  34  ~/.config/setup.sh
+|4,39,11,34,1685444543,"~/.config/setup.sh"
+-'  11  34  ~/.config/setup.sh
+|4,39,11,34,1685444543,"~/.config/setup.sh"
+-'  11  34  ~/.config/setup.sh
+|4,39,11,34,1685444543,"~/.config/setup.sh"
+-'  11  34  ~/.config/setup.sh
+|4,39,11,34,1685444543,"~/.config/setup.sh"
+-'  11  34  ~/.config/setup.sh
+|4,39,11,34,1685444543,"~/.config/setup.sh"
+-'  11  34  ~/.config/setup.sh
+|4,39,11,34,1685444543,"~/.config/setup.sh"
+-'  11  34  ~/.config/setup.sh
+|4,39,11,34,1685444543,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1685444531,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1685444531,"~/.config/setup.sh"
 
 # Buffer list:
-%~/.config/setup.sh	10	27
+%~/.gitconfig	1	0
 
 # History of marks within files (newest to oldest):
 
+> ~/.gitconfig
+	*	1685446352	0
+	"	1	0
+	^	25	23
+	.	25	22
+	+	15	0
+	+	31	23
+	+	14	0
+	+	12	0
+	+	25	22
+
 > ~/.config/setup.sh
-	*	1685398834	0
-	"	10	27
-	^	10	28
-	.	10	27
+	*	1685445950	0
+	"	2	0
+	^	3	1
+	.	2	0
 	+	9	68
 	+	10	27
+	+	5	0
+	+	4	1
+	+	11	34
+	+	4	0
+	+	5	0
+	+	12	0
+	+	3	0
+	+	9	0
+	+	2	0
+
+> /opt/z/z.sh
+	*	1685445890	0
+	"	264	51
+
+> ~/.bashrc
+	*	1685445204	0
+	"	119	0
+	.	120	0
+	+	120	0
+
+> ~/.config/bindings.inputrc
+	*	1685445196	0
+	"	1	0
+
+> /etc/bash_completion.d/.gita-completion.bash
+	*	1685412339	0
+	"	1	0
 
 > ~/.vim/.fzf/doc/fzf.txt
 	*	1685398683	0
@@ -703,17 +749,6 @@
 > ~/python_common/ic.py
 	*	1685390490	0
 	"	1	0
-
-> ~/.gitconfig
-	*	1685379612	0
-	"	25	22
-	^	25	23
-	.	25	22
-	+	15	0
-	+	31	23
-	+	14	0
-	+	12	0
-	+	25	22
 
 > /etc/timezone
 	*	1685235262	0
