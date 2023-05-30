@@ -11,17 +11,17 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/_z --add
+~MSle0~/comple
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1685446486,,"q"
+|2,0,1685449316,,"q"
+:q!
+|2,0,1685449187,,"q!"
 :MRU z.sh
 |2,0,1685445838,,"MRU z.sh"
 :w
 |2,0,1685445019,,"w"
-:q!
-|2,0,1685444652,,"q!"
 :qa!
 |2,0,1685405629,,"qa!"
 :qa
@@ -248,6 +248,10 @@
 |2,0,1685142608,,"bd!"
 
 # Search String History (newest to oldest):
+?/comple
+|2,1,1685449182,47,"comple"
+?/z\.1
+|2,1,1685447380,47,"z\\.1"
 ?/_z --add
 |2,1,1685445878,47,"_z --add"
 ?/match
@@ -346,38 +350,130 @@
 |3,0,36,0,1,0,1685446456,"."
 
 # File marks:
-'0  10  9  ~/.config/setup.sh
-|4,48,10,9,1685446486,"~/.config/setup.sh"
-'1  1  0  ~/.gitconfig
-|4,49,1,0,1685446358,"~/.gitconfig"
-'2  1  0  ~/.gitconfig
-|4,50,1,0,1685446358,"~/.gitconfig"
-'3  2  0  ~/.config/setup.sh
-|4,51,2,0,1685445955,"~/.config/setup.sh"
-'4  2  0  ~/.config/setup.sh
-|4,52,2,0,1685445955,"~/.config/setup.sh"
-'5  2  0  ~/.config/setup.sh
-|4,53,2,0,1685445955,"~/.config/setup.sh"
-'6  2  0  ~/.config/setup.sh
-|4,54,2,0,1685445955,"~/.config/setup.sh"
-'7  264  51  /opt/z/z.sh
-|4,55,264,51,1685445899,"/opt/z/z.sh"
-'8  264  51  /opt/z/z.sh
-|4,56,264,51,1685445899,"/opt/z/z.sh"
-'9  264  51  /opt/z/z.sh
-|4,57,264,51,1685445899,"/opt/z/z.sh"
+'0  1  0  /usr/share/doc/aria2/bash_completion/README.txt
+|4,48,1,0,1685449316,"/usr/share/doc/aria2/bash_completion/README.txt"
+'1  1  0  /opt/z/z.sh
+|4,49,1,0,1685447427,"/opt/z/z.sh"
+'2  1  0  /opt/z/z.sh
+|4,50,1,0,1685447427,"/opt/z/z.sh"
+'3  1  0  /opt/z/z.sh
+|4,51,1,0,1685447427,"/opt/z/z.sh"
+'4  1  0  /opt/z/z.sh
+|4,52,1,0,1685447427,"/opt/z/z.sh"
+'5  1  0  /opt/z/z.sh
+|4,53,1,0,1685447365,"/opt/z/z.sh"
+'6  1  0  /opt/z/z.sh
+|4,54,1,0,1685447365,"/opt/z/z.sh"
+'7  1  0  /opt/z/z.sh
+|4,55,1,0,1685447365,"/opt/z/z.sh"
+'8  1  0  /opt/z/z.sh
+|4,56,1,0,1685447365,"/opt/z/z.sh"
+'9  1  0  /usr/bin/exa
+|4,57,1,0,1685447344,"/usr/bin/exa"
 
 # Jumplist (newest first):
+-'  1  0  /usr/share/doc/aria2/bash_completion/README.txt
+|4,39,1,0,1685449316,"/usr/share/doc/aria2/bash_completion/README.txt"
+-'  1  0  /opt/z/z.sh
+|4,39,1,0,1685447427,"/opt/z/z.sh"
+-'  1  0  /opt/z/z.sh
+|4,39,1,0,1685447427,"/opt/z/z.sh"
+-'  1  0  /opt/z/z.sh
+|4,39,1,0,1685447427,"/opt/z/z.sh"
+-'  1  0  /opt/z/z.sh
+|4,39,1,0,1685447365,"/opt/z/z.sh"
+-'  1  0  /usr/bin/exa
+|4,39,1,0,1685447344,"/usr/bin/exa"
+-'  1  0  /usr/bin/exa
+|4,39,1,0,1685447344,"/usr/bin/exa"
+-'  1  0  /usr/bin/exa
+|4,39,1,0,1685447344,"/usr/bin/exa"
+-'  1  0  /usr/bin/exa
+|4,39,1,0,1685447344,"/usr/bin/exa"
+-'  1  0  /usr/bin/exa
+|4,39,1,0,1685447344,"/usr/bin/exa"
+-'  1  0  /usr/local/bin/gita
+|4,39,1,0,1685447339,"/usr/local/bin/gita"
+-'  1  0  /usr/local/bin/gita
+|4,39,1,0,1685447339,"/usr/local/bin/gita"
+-'  1  0  /usr/local/bin/gita
+|4,39,1,0,1685447339,"/usr/local/bin/gita"
+-'  1  0  /usr/local/bin/gita
+|4,39,1,0,1685447339,"/usr/local/bin/gita"
+-'  1  0  /usr/local/bin/gita
+|4,39,1,0,1685447339,"/usr/local/bin/gita"
+-'  1  0  /usr/local/bin/gita
+|4,39,1,0,1685447339,"/usr/local/bin/gita"
+-'  10  9  ~/.config/setup.sh
+|4,39,10,9,1685446486,"~/.config/setup.sh"
+-'  10  9  ~/.config/setup.sh
+|4,39,10,9,1685446486,"~/.config/setup.sh"
+-'  10  9  ~/.config/setup.sh
+|4,39,10,9,1685446486,"~/.config/setup.sh"
+-'  10  9  ~/.config/setup.sh
+|4,39,10,9,1685446486,"~/.config/setup.sh"
+-'  10  9  ~/.config/setup.sh
+|4,39,10,9,1685446486,"~/.config/setup.sh"
+-'  10  9  ~/.config/setup.sh
+|4,39,10,9,1685446486,"~/.config/setup.sh"
 -'  10  9  ~/.config/setup.sh
 |4,39,10,9,1685446486,"~/.config/setup.sh"
 -'  3  0  ~/.config/setup.sh
 |4,39,3,0,1685446458,"~/.config/setup.sh"
+-'  3  0  ~/.config/setup.sh
+|4,39,3,0,1685446458,"~/.config/setup.sh"
+-'  3  0  ~/.config/setup.sh
+|4,39,3,0,1685446458,"~/.config/setup.sh"
+-'  3  0  ~/.config/setup.sh
+|4,39,3,0,1685446458,"~/.config/setup.sh"
+-'  3  0  ~/.config/setup.sh
+|4,39,3,0,1685446458,"~/.config/setup.sh"
+-'  3  0  ~/.config/setup.sh
+|4,39,3,0,1685446458,"~/.config/setup.sh"
+-'  3  0  ~/.config/setup.sh
+|4,39,3,0,1685446458,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1685446451,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1685446451,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1685446451,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1685446451,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1685446451,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1685446451,"~/.config/setup.sh"
 -'  1  0  ~/.config/setup.sh
 |4,39,1,0,1685446451,"~/.config/setup.sh"
 -'  1  0  ~/.gitconfig
 |4,39,1,0,1685446358,"~/.gitconfig"
 -'  1  0  ~/.gitconfig
 |4,39,1,0,1685446358,"~/.gitconfig"
+-'  1  0  ~/.gitconfig
+|4,39,1,0,1685446358,"~/.gitconfig"
+-'  1  0  ~/.gitconfig
+|4,39,1,0,1685446358,"~/.gitconfig"
+-'  1  0  ~/.gitconfig
+|4,39,1,0,1685446358,"~/.gitconfig"
+-'  1  0  ~/.gitconfig
+|4,39,1,0,1685446358,"~/.gitconfig"
+-'  1  0  ~/.gitconfig
+|4,39,1,0,1685446358,"~/.gitconfig"
+-'  1  0  ~/.gitconfig
+|4,39,1,0,1685446358,"~/.gitconfig"
+-'  2  0  ~/.config/setup.sh
+|4,39,2,0,1685445955,"~/.config/setup.sh"
+-'  2  0  ~/.config/setup.sh
+|4,39,2,0,1685445955,"~/.config/setup.sh"
+-'  2  0  ~/.config/setup.sh
+|4,39,2,0,1685445955,"~/.config/setup.sh"
+-'  2  0  ~/.config/setup.sh
+|4,39,2,0,1685445955,"~/.config/setup.sh"
+-'  2  0  ~/.config/setup.sh
+|4,39,2,0,1685445955,"~/.config/setup.sh"
+-'  2  0  ~/.config/setup.sh
+|4,39,2,0,1685445955,"~/.config/setup.sh"
 -'  2  0  ~/.config/setup.sh
 |4,39,2,0,1685445955,"~/.config/setup.sh"
 -'  2  0  ~/.config/setup.sh
@@ -396,6 +492,30 @@
 |4,39,264,51,1685445899,"/opt/z/z.sh"
 -'  264  51  /opt/z/z.sh
 |4,39,264,51,1685445899,"/opt/z/z.sh"
+-'  264  51  /opt/z/z.sh
+|4,39,264,51,1685445899,"/opt/z/z.sh"
+-'  264  51  /opt/z/z.sh
+|4,39,264,51,1685445899,"/opt/z/z.sh"
+-'  264  51  /opt/z/z.sh
+|4,39,264,51,1685445899,"/opt/z/z.sh"
+-'  264  51  /opt/z/z.sh
+|4,39,264,51,1685445899,"/opt/z/z.sh"
+-'  264  51  /opt/z/z.sh
+|4,39,264,51,1685445899,"/opt/z/z.sh"
+-'  264  51  /opt/z/z.sh
+|4,39,264,51,1685445899,"/opt/z/z.sh"
+-'  263  14  /opt/z/z.sh
+|4,39,263,14,1685445890,"/opt/z/z.sh"
+-'  263  14  /opt/z/z.sh
+|4,39,263,14,1685445890,"/opt/z/z.sh"
+-'  263  14  /opt/z/z.sh
+|4,39,263,14,1685445890,"/opt/z/z.sh"
+-'  263  14  /opt/z/z.sh
+|4,39,263,14,1685445890,"/opt/z/z.sh"
+-'  263  14  /opt/z/z.sh
+|4,39,263,14,1685445890,"/opt/z/z.sh"
+-'  263  14  /opt/z/z.sh
+|4,39,263,14,1685445890,"/opt/z/z.sh"
 -'  263  14  /opt/z/z.sh
 |4,39,263,14,1685445890,"/opt/z/z.sh"
 -'  263  14  /opt/z/z.sh
@@ -412,6 +532,30 @@
 |4,39,242,17,1685445887,"/opt/z/z.sh"
 -'  242  17  /opt/z/z.sh
 |4,39,242,17,1685445887,"/opt/z/z.sh"
+-'  242  17  /opt/z/z.sh
+|4,39,242,17,1685445887,"/opt/z/z.sh"
+-'  242  17  /opt/z/z.sh
+|4,39,242,17,1685445887,"/opt/z/z.sh"
+-'  242  17  /opt/z/z.sh
+|4,39,242,17,1685445887,"/opt/z/z.sh"
+-'  242  17  /opt/z/z.sh
+|4,39,242,17,1685445887,"/opt/z/z.sh"
+-'  242  17  /opt/z/z.sh
+|4,39,242,17,1685445887,"/opt/z/z.sh"
+-'  242  17  /opt/z/z.sh
+|4,39,242,17,1685445887,"/opt/z/z.sh"
+-'  237  17  /opt/z/z.sh
+|4,39,237,17,1685445883,"/opt/z/z.sh"
+-'  237  17  /opt/z/z.sh
+|4,39,237,17,1685445883,"/opt/z/z.sh"
+-'  237  17  /opt/z/z.sh
+|4,39,237,17,1685445883,"/opt/z/z.sh"
+-'  237  17  /opt/z/z.sh
+|4,39,237,17,1685445883,"/opt/z/z.sh"
+-'  237  17  /opt/z/z.sh
+|4,39,237,17,1685445883,"/opt/z/z.sh"
+-'  237  17  /opt/z/z.sh
+|4,39,237,17,1685445883,"/opt/z/z.sh"
 -'  237  17  /opt/z/z.sh
 |4,39,237,17,1685445883,"/opt/z/z.sh"
 -'  237  17  /opt/z/z.sh
@@ -428,151 +572,27 @@
 |4,39,30,0,1685445878,"/opt/z/z.sh"
 -'  30  0  /opt/z/z.sh
 |4,39,30,0,1685445878,"/opt/z/z.sh"
--'  30  0  /opt/z/z.sh
-|4,39,30,0,1685445861,"/opt/z/z.sh"
--'  12  25  /opt/z/z.sh
-|4,39,12,25,1685445284,"/opt/z/z.sh"
--'  12  25  /opt/z/z.sh
-|4,39,12,25,1685445284,"/opt/z/z.sh"
--'  12  25  /opt/z/z.sh
-|4,39,12,25,1685445284,"/opt/z/z.sh"
--'  12  25  /opt/z/z.sh
-|4,39,12,25,1685445284,"/opt/z/z.sh"
--'  12  25  /opt/z/z.sh
-|4,39,12,25,1685445284,"/opt/z/z.sh"
--'  12  25  /opt/z/z.sh
-|4,39,12,25,1685445284,"/opt/z/z.sh"
--'  1  0  /opt/z/z.sh
-|4,39,1,0,1685445240,"/opt/z/z.sh"
--'  1  0  /opt/z/z.sh
-|4,39,1,0,1685445240,"/opt/z/z.sh"
--'  1  0  /opt/z/z.sh
-|4,39,1,0,1685445240,"/opt/z/z.sh"
--'  1  0  /opt/z/z.sh
-|4,39,1,0,1685445240,"/opt/z/z.sh"
--'  1  0  /opt/z/z.sh
-|4,39,1,0,1685445240,"/opt/z/z.sh"
--'  1  0  /opt/z/z.sh
-|4,39,1,0,1685445240,"/opt/z/z.sh"
--'  119  0  ~/.bashrc
-|4,39,119,0,1685445206,"~/.bashrc"
--'  119  0  ~/.bashrc
-|4,39,119,0,1685445206,"~/.bashrc"
--'  119  0  ~/.bashrc
-|4,39,119,0,1685445206,"~/.bashrc"
--'  119  0  ~/.bashrc
-|4,39,119,0,1685445206,"~/.bashrc"
--'  119  0  ~/.bashrc
-|4,39,119,0,1685445206,"~/.bashrc"
--'  119  0  ~/.bashrc
-|4,39,119,0,1685445206,"~/.bashrc"
--'  119  0  ~/.bashrc
-|4,39,119,0,1685445206,"~/.bashrc"
--'  1  0  ~/.config/bindings.inputrc
-|4,39,1,0,1685445199,"~/.config/bindings.inputrc"
--'  1  0  ~/.config/bindings.inputrc
-|4,39,1,0,1685445199,"~/.config/bindings.inputrc"
--'  1  0  ~/.config/bindings.inputrc
-|4,39,1,0,1685445199,"~/.config/bindings.inputrc"
--'  1  0  ~/.config/bindings.inputrc
-|4,39,1,0,1685445199,"~/.config/bindings.inputrc"
--'  1  0  ~/.config/bindings.inputrc
-|4,39,1,0,1685445199,"~/.config/bindings.inputrc"
--'  1  0  ~/.config/bindings.inputrc
-|4,39,1,0,1685445199,"~/.config/bindings.inputrc"
--'  1  0  ~/.config/bindings.inputrc
-|4,39,1,0,1685445199,"~/.config/bindings.inputrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1685445184,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1685445184,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1685445184,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1685445184,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1685445184,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1685445184,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1685445184,"~/.bashrc"
--'  3  12  ~/.config/setup.sh
-|4,39,3,12,1685445161,"~/.config/setup.sh"
--'  3  12  ~/.config/setup.sh
-|4,39,3,12,1685445161,"~/.config/setup.sh"
--'  2  12  ~/.config/setup.sh
-|4,39,2,12,1685445161,"~/.config/setup.sh"
--'  2  12  ~/.config/setup.sh
-|4,39,2,12,1685445161,"~/.config/setup.sh"
--'  2  12  ~/.config/setup.sh
-|4,39,2,12,1685445161,"~/.config/setup.sh"
--'  2  12  ~/.config/setup.sh
-|4,39,2,12,1685445161,"~/.config/setup.sh"
--'  2  12  ~/.config/setup.sh
-|4,39,2,12,1685445161,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1685445124,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1685445124,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1685445124,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1685445124,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1685445124,"~/.config/setup.sh"
--'  2  0  ~/.config/setup.sh
-|4,39,2,0,1685445034,"~/.config/setup.sh"
--'  4  0  ~/.config/setup.sh
-|4,39,4,0,1685445017,"~/.config/setup.sh"
--'  5  0  ~/.config/setup.sh
-|4,39,5,0,1685445017,"~/.config/setup.sh"
--'  4  0  ~/.config/setup.sh
-|4,39,4,0,1685445017,"~/.config/setup.sh"
--'  5  0  ~/.config/setup.sh
-|4,39,5,0,1685445017,"~/.config/setup.sh"
--'  4  0  ~/.config/setup.sh
-|4,39,4,0,1685445017,"~/.config/setup.sh"
--'  4  0  ~/.config/setup.sh
-|4,39,4,0,1685445017,"~/.config/setup.sh"
--'  4  0  ~/.config/setup.sh
-|4,39,4,0,1685445017,"~/.config/setup.sh"
--'  4  0  ~/.config/setup.sh
-|4,39,4,0,1685445017,"~/.config/setup.sh"
--'  4  0  ~/.config/setup.sh
-|4,39,4,0,1685445017,"~/.config/setup.sh"
--'  4  0  ~/.config/setup.sh
-|4,39,4,0,1685445017,"~/.config/setup.sh"
--'  1  0  /opt/z/z.sh
-|4,39,1,0,1685445001,"/opt/z/z.sh"
--'  1  0  /opt/z/z.sh
-|4,39,1,0,1685445001,"/opt/z/z.sh"
--'  1  0  /opt/z/z.sh
-|4,39,1,0,1685445001,"/opt/z/z.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1685444997,"~/.config/setup.sh"
--'  4  0  ~/.config/setup.sh
-|4,39,4,0,1685444906,"~/.config/setup.sh"
--'  3  0  ~/.config/setup.sh
-|4,39,3,0,1685444906,"~/.config/setup.sh"
--'  3  0  ~/.config/setup.sh
-|4,39,3,0,1685444906,"~/.config/setup.sh"
--'  3  0  ~/.config/setup.sh
-|4,39,3,0,1685444906,"~/.config/setup.sh"
--'  3  0  ~/.config/setup.sh
-|4,39,3,0,1685444906,"~/.config/setup.sh"
--'  3  0  ~/.config/setup.sh
-|4,39,3,0,1685444906,"~/.config/setup.sh"
--'  3  0  ~/.config/setup.sh
-|4,39,3,0,1685444906,"~/.config/setup.sh"
--'  2  0  ~/.config/setup.sh
-|4,39,2,0,1685444906,"~/.config/setup.sh"
--'  2  0  ~/.config/setup.sh
-|4,39,2,0,1685444906,"~/.config/setup.sh"
 
 # Buffer list:
-%~/.config/setup.sh	10	9
+%/usr/share/doc/aria2/bash_completion/README.txt	1	0
 
 # History of marks within files (newest to oldest):
+
+> /usr/share/doc/aria2/bash_completion/README.txt
+	*	1685449313	0
+	"	1	0
+
+> /opt/z/z.sh
+	*	1685447380	0
+	"	1	0
+
+> /usr/bin/exa
+	*	1685447343	0
+	"	1	0
+
+> /usr/local/bin/gita
+	*	1685447336	0
+	"	1	0
 
 > ~/.config/setup.sh
 	*	1685446479	0
@@ -606,10 +626,6 @@
 	+	14	0
 	+	12	0
 	+	25	22
-
-> /opt/z/z.sh
-	*	1685445890	0
-	"	264	51
 
 > ~/.bashrc
 	*	1685445204	0
