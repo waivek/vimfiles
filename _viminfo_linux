@@ -15,7 +15,7 @@
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1685446358,,"q"
+|2,0,1685446486,,"q"
 :MRU z.sh
 |2,0,1685445838,,"MRU z.sh"
 :w
@@ -314,70 +314,76 @@
 	source
 |3,0,0,0,1,0,1685445158,"source"
 ""1	LINE	0
-	PROMPT_COMMAND='history -a'
-|3,1,1,1,1,0,1685445947,"PROMPT_COMMAND='history -a'"
+	source /usr/share/doc/fzf/examples/key-bindings.bash
+	source /usr/share/doc/fzf/examples/completion.bash
+|3,1,1,1,2,0,1685446462,"source /usr/share/doc/fzf/examples/key-bindings.bash","source /usr/share/doc/fzf/examples/completion.bash"
 "2	LINE	0
-	source
-|3,0,2,1,1,0,1685445204,"source"
+	source /opt/z/z.sh
+|3,0,2,1,1,0,1685446458,"source /opt/z/z.sh"
 "3	LINE	0
-	source /opt/z/z.sh
-|3,0,3,1,1,0,1685445028,"source /opt/z/z.sh"
+	PROMPT_COMMAND='history -a'
+|3,0,3,1,1,0,1685445947,"PROMPT_COMMAND='history -a'"
 "4	LINE	0
-	source /opt/z/z.sh
-|3,0,4,1,1,0,1685445017,"source /opt/z/z.sh"
+	source
+|3,0,4,1,1,0,1685445204,"source"
 "5	LINE	0
-	export _Z_DATA="$HOME/.config/shell_data/.z"
-|3,0,5,1,1,0,1685444371,"export _Z_DATA=\"$HOME/.config/shell_data/.z\""
+	source /opt/z/z.sh
+|3,0,5,1,1,0,1685445028,"source /opt/z/z.sh"
 "6	LINE	0
-	
-|3,0,6,1,1,0,1685398223,""
+	source /opt/z/z.sh
+|3,0,6,1,1,0,1685445017,"source /opt/z/z.sh"
 "7	LINE	0
-	
-|3,0,7,1,1,0,1685398221,""
+	export _Z_DATA="$HOME/.config/shell_data/.z"
+|3,0,7,1,1,0,1685444371,"export _Z_DATA=\"$HOME/.config/shell_data/.z\""
 "8	LINE	0
-	if has("win32")
-	    set undodir=C:/Users/vivek/vimfiles/undofiles,.
-	endif
-	if has('unix') || has('linux')
-	    set undodir=~/.vim/undofiles,.
-	endif
-|3,0,8,1,6,0,1685398202,"if has(\"win32\")","    set undodir=C:/Users/vivek/vimfiles/undofiles,.","endif","if has('unix') || has('linux')","    set undodir=~/.vim/undofiles,.","endif"
+	
+|3,0,8,1,1,0,1685398223,""
 "9	LINE	0
 	
-|3,0,9,1,1,0,1685397842,""
+|3,0,9,1,1,0,1685398221,""
 "-	CHAR	0
-	source
-|3,0,36,0,1,0,1685445157,"source"
+	.
+|3,0,36,0,1,0,1685446456,"."
 
 # File marks:
-'0  1  0  ~/.gitconfig
-|4,48,1,0,1685446358,"~/.gitconfig"
-'1  2  0  ~/.config/setup.sh
-|4,49,2,0,1685445955,"~/.config/setup.sh"
-'2  2  0  ~/.config/setup.sh
-|4,50,2,0,1685445955,"~/.config/setup.sh"
-'3  264  51  /opt/z/z.sh
-|4,51,264,51,1685445899,"/opt/z/z.sh"
-'4  264  51  /opt/z/z.sh
-|4,52,264,51,1685445899,"/opt/z/z.sh"
-'5  264  51  /opt/z/z.sh
-|4,53,264,51,1685445899,"/opt/z/z.sh"
-'6  264  51  /opt/z/z.sh
-|4,54,264,51,1685445899,"/opt/z/z.sh"
-'7  30  0  /opt/z/z.sh
-|4,55,30,0,1685445861,"/opt/z/z.sh"
-'8  30  0  /opt/z/z.sh
-|4,56,30,0,1685445861,"/opt/z/z.sh"
-'9  30  0  /opt/z/z.sh
-|4,57,30,0,1685445861,"/opt/z/z.sh"
+'0  10  9  ~/.config/setup.sh
+|4,48,10,9,1685446486,"~/.config/setup.sh"
+'1  1  0  ~/.gitconfig
+|4,49,1,0,1685446358,"~/.gitconfig"
+'2  1  0  ~/.gitconfig
+|4,50,1,0,1685446358,"~/.gitconfig"
+'3  2  0  ~/.config/setup.sh
+|4,51,2,0,1685445955,"~/.config/setup.sh"
+'4  2  0  ~/.config/setup.sh
+|4,52,2,0,1685445955,"~/.config/setup.sh"
+'5  2  0  ~/.config/setup.sh
+|4,53,2,0,1685445955,"~/.config/setup.sh"
+'6  2  0  ~/.config/setup.sh
+|4,54,2,0,1685445955,"~/.config/setup.sh"
+'7  264  51  /opt/z/z.sh
+|4,55,264,51,1685445899,"/opt/z/z.sh"
+'8  264  51  /opt/z/z.sh
+|4,56,264,51,1685445899,"/opt/z/z.sh"
+'9  264  51  /opt/z/z.sh
+|4,57,264,51,1685445899,"/opt/z/z.sh"
 
 # Jumplist (newest first):
+-'  10  9  ~/.config/setup.sh
+|4,39,10,9,1685446486,"~/.config/setup.sh"
+-'  3  0  ~/.config/setup.sh
+|4,39,3,0,1685446458,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1685446451,"~/.config/setup.sh"
+-'  1  0  ~/.gitconfig
+|4,39,1,0,1685446358,"~/.gitconfig"
 -'  1  0  ~/.gitconfig
 |4,39,1,0,1685446358,"~/.gitconfig"
 -'  2  0  ~/.config/setup.sh
 |4,39,2,0,1685445955,"~/.config/setup.sh"
 -'  2  0  ~/.config/setup.sh
 |4,39,2,0,1685445955,"~/.config/setup.sh"
+-'  2  0  ~/.config/setup.sh
+|4,39,2,0,1685445955,"~/.config/setup.sh"
 -'  1  0  ~/.config/setup.sh
 |4,39,1,0,1685445943,"~/.config/setup.sh"
 -'  1  0  ~/.config/setup.sh
@@ -388,6 +394,10 @@
 |4,39,264,51,1685445899,"/opt/z/z.sh"
 -'  264  51  /opt/z/z.sh
 |4,39,264,51,1685445899,"/opt/z/z.sh"
+-'  264  51  /opt/z/z.sh
+|4,39,264,51,1685445899,"/opt/z/z.sh"
+-'  263  14  /opt/z/z.sh
+|4,39,263,14,1685445890,"/opt/z/z.sh"
 -'  263  14  /opt/z/z.sh
 |4,39,263,14,1685445890,"/opt/z/z.sh"
 -'  263  14  /opt/z/z.sh
@@ -400,12 +410,18 @@
 |4,39,242,17,1685445887,"/opt/z/z.sh"
 -'  242  17  /opt/z/z.sh
 |4,39,242,17,1685445887,"/opt/z/z.sh"
+-'  242  17  /opt/z/z.sh
+|4,39,242,17,1685445887,"/opt/z/z.sh"
 -'  237  17  /opt/z/z.sh
 |4,39,237,17,1685445883,"/opt/z/z.sh"
 -'  237  17  /opt/z/z.sh
 |4,39,237,17,1685445883,"/opt/z/z.sh"
 -'  237  17  /opt/z/z.sh
 |4,39,237,17,1685445883,"/opt/z/z.sh"
+-'  237  17  /opt/z/z.sh
+|4,39,237,17,1685445883,"/opt/z/z.sh"
+-'  30  0  /opt/z/z.sh
+|4,39,30,0,1685445878,"/opt/z/z.sh"
 -'  30  0  /opt/z/z.sh
 |4,39,30,0,1685445878,"/opt/z/z.sh"
 -'  30  0  /opt/z/z.sh
@@ -424,6 +440,8 @@
 |4,39,12,25,1685445284,"/opt/z/z.sh"
 -'  12  25  /opt/z/z.sh
 |4,39,12,25,1685445284,"/opt/z/z.sh"
+-'  12  25  /opt/z/z.sh
+|4,39,12,25,1685445284,"/opt/z/z.sh"
 -'  1  0  /opt/z/z.sh
 |4,39,1,0,1685445240,"/opt/z/z.sh"
 -'  1  0  /opt/z/z.sh
@@ -434,6 +452,10 @@
 |4,39,1,0,1685445240,"/opt/z/z.sh"
 -'  1  0  /opt/z/z.sh
 |4,39,1,0,1685445240,"/opt/z/z.sh"
+-'  1  0  /opt/z/z.sh
+|4,39,1,0,1685445240,"/opt/z/z.sh"
+-'  119  0  ~/.bashrc
+|4,39,119,0,1685445206,"~/.bashrc"
 -'  119  0  ~/.bashrc
 |4,39,119,0,1685445206,"~/.bashrc"
 -'  119  0  ~/.bashrc
@@ -458,6 +480,10 @@
 |4,39,1,0,1685445199,"~/.config/bindings.inputrc"
 -'  1  0  ~/.config/bindings.inputrc
 |4,39,1,0,1685445199,"~/.config/bindings.inputrc"
+-'  1  0  ~/.config/bindings.inputrc
+|4,39,1,0,1685445199,"~/.config/bindings.inputrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1685445184,"~/.bashrc"
 -'  1  0  ~/.bashrc
 |4,39,1,0,1685445184,"~/.bashrc"
 -'  1  0  ~/.bashrc
@@ -496,6 +522,8 @@
 |4,39,1,0,1685445124,"~/.config/setup.sh"
 -'  2  0  ~/.config/setup.sh
 |4,39,2,0,1685445034,"~/.config/setup.sh"
+-'  4  0  ~/.config/setup.sh
+|4,39,4,0,1685445017,"~/.config/setup.sh"
 -'  5  0  ~/.config/setup.sh
 |4,39,5,0,1685445017,"~/.config/setup.sh"
 -'  4  0  ~/.config/setup.sh
@@ -540,43 +568,33 @@
 |4,39,2,0,1685444906,"~/.config/setup.sh"
 -'  2  0  ~/.config/setup.sh
 |4,39,2,0,1685444906,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1685444895,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1685444895,"~/.config/setup.sh"
--'  11  34  ~/.config/setup.sh
-|4,39,11,34,1685444543,"~/.config/setup.sh"
--'  11  34  ~/.config/setup.sh
-|4,39,11,34,1685444543,"~/.config/setup.sh"
--'  11  34  ~/.config/setup.sh
-|4,39,11,34,1685444543,"~/.config/setup.sh"
--'  11  34  ~/.config/setup.sh
-|4,39,11,34,1685444543,"~/.config/setup.sh"
--'  11  34  ~/.config/setup.sh
-|4,39,11,34,1685444543,"~/.config/setup.sh"
--'  11  34  ~/.config/setup.sh
-|4,39,11,34,1685444543,"~/.config/setup.sh"
--'  11  34  ~/.config/setup.sh
-|4,39,11,34,1685444543,"~/.config/setup.sh"
--'  11  34  ~/.config/setup.sh
-|4,39,11,34,1685444543,"~/.config/setup.sh"
--'  11  34  ~/.config/setup.sh
-|4,39,11,34,1685444543,"~/.config/setup.sh"
--'  11  34  ~/.config/setup.sh
-|4,39,11,34,1685444543,"~/.config/setup.sh"
--'  11  34  ~/.config/setup.sh
-|4,39,11,34,1685444543,"~/.config/setup.sh"
--'  11  34  ~/.config/setup.sh
-|4,39,11,34,1685444543,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1685444531,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1685444531,"~/.config/setup.sh"
 
 # Buffer list:
-%~/.gitconfig	1	0
+%~/.config/setup.sh	10	9
 
 # History of marks within files (newest to oldest):
+
+> ~/.config/setup.sh
+	*	1685446479	0
+	"	10	9
+	^	10	2
+	.	10	1
+	+	6	68
+	+	7	27
+	+	4	0
+	+	3	1
+	+	8	34
+	+	3	0
+	+	4	0
+	+	11	0
+	+	3	0
+	+	6	0
+	+	2	0
+	+	3	0
+	+	11	0
+	+	4	0
+	+	9	0
+	+	10	1
 
 > ~/.gitconfig
 	*	1685446352	0
@@ -588,23 +606,6 @@
 	+	14	0
 	+	12	0
 	+	25	22
-
-> ~/.config/setup.sh
-	*	1685445950	0
-	"	2	0
-	^	3	1
-	.	2	0
-	+	9	68
-	+	10	27
-	+	5	0
-	+	4	1
-	+	11	34
-	+	4	0
-	+	5	0
-	+	12	0
-	+	3	0
-	+	9	0
-	+	2	0
 
 > /opt/z/z.sh
 	*	1685445890	0
