@@ -11,21 +11,45 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/comple
+~MSle0~/ignore
 
 # Command Line History (newest to oldest):
-:q
-|2,0,1685449316,,"q"
 :q!
-|2,0,1685449187,,"q!"
+|2,0,1685570792,,"q!"
+:q
+|2,0,1685570678,,"q"
+:set nonumber
+|2,0,1685569324,,"set nonumber"
+:so %
+|2,0,1685537651,,"so %"
+:qa
+|2,0,1685531986,,"qa"
+:bd!
+|2,0,1685531977,,"bd!"
+:echoconsole -n 'hello'
+|2,0,1685531975,,"echoconsole -n 'hello'"
+:h :echoconsole
+|2,0,1685531962,,"h :echoconsole"
+:qa!
+|2,0,1685531881,,"qa!"
+:echowindow
+|2,0,1685531879,,"echowindow"
+:echoconsole 'hello'
+|2,0,1685531726,,"echoconsole 'hello'"
+:echoconsole
+|2,0,1685531708,,"echoconsole"
+:echo "\n"
+|2,0,1685531653,,"echo \"\\n\""
+:messages
+|2,0,1685528996,,"messages"
+:message
+|2,0,1685528990,,"message"
+:CocUninstall 
+|2,0,1685487836,,"CocUninstall "
 :MRU z.sh
 |2,0,1685445838,,"MRU z.sh"
 :w
 |2,0,1685445019,,"w"
-:qa!
-|2,0,1685405629,,"qa!"
-:qa
-|2,0,1685398727,,"qa"
 :h fzf
 |2,0,1685398647,,"h fzf"
 :b /home/vivek/.vim/vimrc
@@ -72,8 +96,6 @@
 |2,0,1685394812,,"set ttimeoutlen=0"
 :set timeoutlen=0
 |2,0,1685394802,,"set timeoutlen=0"
-:so %
-|2,0,1685394780,,"so %"
 :set ttimeoutlen?
 |2,0,1685394750,,"set ttimeoutlen?"
 :set timeoutlen=1000
@@ -218,8 +240,6 @@
 |2,0,1685375545,,"cd ~/python_common/"
 :files
 |2,0,1685375484,,"files"
-:messages
-|2,0,1685375284,,"messages"
 :!fzf
 |2,0,1685375262,,"!fzf"
 :!ls
@@ -244,10 +264,32 @@
 |2,0,1685142836,,"439"
 :570
 |2,0,1685142682,,"570"
-:bd!
-|2,0,1685142608,,"bd!"
 
 # Search String History (newest to oldest):
+?/ignore
+|2,1,1685570780,47,"ignore"
+?/\t
+|2,1,1685568828,47,"\\t"
+?/ 
+|2,1,1685568812,47," "
+?/vcs
+|2,1,1685560982,47,"vcs"
+?/--ignore
+|2,1,1685560969,47,"--ignore"
+?/sort
+|2,1,1685556351,47,"sort"
+?/time
+|2,1,1685555128,47,"time"
+?/mod
+|2,1,1685537842,47,"mod"
+?/{}
+|2,1,1685536262,47,"{}"
+?/ex
+|2,1,1685536261,47,"ex"
+?/\n
+|2,1,1685531827,47,"\\n"
+?/hello
+|2,1,1685531031,47,"hello"
 ?/comple
 |2,1,1685449182,47,"comple"
 ?/z\.1
@@ -315,268 +357,368 @@
 
 # Registers:
 "0	CHAR	0
-	source
-|3,0,0,0,1,0,1685445158,"source"
+	colb
+|3,0,0,0,1,0,1685569318,"colb"
 ""1	LINE	0
+	alias c='cd $(fd --hidden --type file --exec-batch lsd --long  --all {} | fzf | awk '{print $NF}' | xargs -I {} dirname {})'
+|3,1,1,1,1,0,1685570676,"alias c='cd $(fd --hidden --type file --exec-batch lsd --long  --all {} | fzf | awk '{print $NF}' | xargs -I {} dirname {})'"
+"2	LINE	0
+	# alias cola='awk -v col="$1" "{print (col >= 0) ? \$(col + 1) : \$(NF + col + 1)}"'
+	# alias colc="awk -v col='\$1' '{print (col >= 0) ? \$(col+1) : \$(NF + col + 1)}'"
+	alias colc='awk -v col="$1" "{print (col >= 0) ? \$(col+1) : \$(NF + col + 1)}"'
+|3,0,2,1,3,0,1685569296,"# alias cola='awk -v col=\"$1\" \"{print (col >= 0) ? \\$(col + 1) : \\$(NF + col + 1)}\"'","# alias colc=\"awk -v col='\\$1' '{print (col >= 0) ? \\$(col+1) : \\$(NF + col + 1)}'\"","alias colc='awk -v col=\"$1\" \"{print (col >= 0) ? \\$(col+1) : \\$(NF + col + 1)}\"'"
+"3	LINE	0
+	    awk -v col="$column+1" '{print $col}'
+|3,0,3,1,1,0,1685568726,"    awk -v col=\"$column+1\" '{print $col}'"
+"4	LINE	0
+	col() {
+	  local column="$1"
+	
+	  if (( column >= 0 )); then
+	    awk -v col="$column+1" '{print $col}'
+	  else
+	    awk -v col="$(( -column ))" '{print $(NF - col + 1)}'
+	  fi
+	}
+	
+|3,0,4,1,10,0,1685568673,"col() {","  local column=\"$1\"","","  if (( column >= 0 )); then","    awk -v col=\"$column+1\" '{print $col}'","  else","    awk -v col=\"$(( -column ))\" '{print $(NF - col + 1)}'","  fi","}",""
+"5	LINE	0
+	
+|3,0,5,1,1,0,1685560866,""
+"6	LINE	0
+	
+	
+|3,0,6,1,2,0,1685537012,"",""
+"7	LINE	0
+	export FZF_DEFAULT_OPTS="--bind='ctrl-d:cd_parent'"
+|3,0,7,1,1,0,1685536884,"export FZF_DEFAULT_OPTS=\"--bind='ctrl-d:cd_parent'\""
+"8	LINE	0
 	source /usr/share/doc/fzf/examples/key-bindings.bash
 	source /usr/share/doc/fzf/examples/completion.bash
-|3,1,1,1,2,0,1685446462,"source /usr/share/doc/fzf/examples/key-bindings.bash","source /usr/share/doc/fzf/examples/completion.bash"
-"2	LINE	0
-	source /opt/z/z.sh
-|3,0,2,1,1,0,1685446458,"source /opt/z/z.sh"
-"3	LINE	0
-	PROMPT_COMMAND='history -a'
-|3,0,3,1,1,0,1685445947,"PROMPT_COMMAND='history -a'"
-"4	LINE	0
-	source
-|3,0,4,1,1,0,1685445204,"source"
-"5	LINE	0
-	source /opt/z/z.sh
-|3,0,5,1,1,0,1685445028,"source /opt/z/z.sh"
-"6	LINE	0
-	source /opt/z/z.sh
-|3,0,6,1,1,0,1685445017,"source /opt/z/z.sh"
-"7	LINE	0
-	export _Z_DATA="$HOME/.config/shell_data/.z"
-|3,0,7,1,1,0,1685444371,"export _Z_DATA=\"$HOME/.config/shell_data/.z\""
-"8	LINE	0
-	
-|3,0,8,1,1,0,1685398223,""
+|3,0,8,1,2,0,1685446462,"source /usr/share/doc/fzf/examples/key-bindings.bash","source /usr/share/doc/fzf/examples/completion.bash"
 "9	LINE	0
-	
-|3,0,9,1,1,0,1685398221,""
+	source /opt/z/z.sh
+|3,0,9,1,1,0,1685446458,"source /opt/z/z.sh"
 "-	CHAR	0
-	.
-|3,0,36,0,1,0,1685446456,"."
+	# cd to the directory of a file
+|3,0,36,0,1,0,1685570644,"# cd to the directory of a file"
 
 # File marks:
-'0  1  0  /usr/share/doc/aria2/bash_completion/README.txt
-|4,48,1,0,1685449316,"/usr/share/doc/aria2/bash_completion/README.txt"
-'1  1  0  /opt/z/z.sh
-|4,49,1,0,1685447427,"/opt/z/z.sh"
-'2  1  0  /opt/z/z.sh
-|4,50,1,0,1685447427,"/opt/z/z.sh"
-'3  1  0  /opt/z/z.sh
-|4,51,1,0,1685447427,"/opt/z/z.sh"
-'4  1  0  /opt/z/z.sh
-|4,52,1,0,1685447427,"/opt/z/z.sh"
-'5  1  0  /opt/z/z.sh
-|4,53,1,0,1685447365,"/opt/z/z.sh"
-'6  1  0  /opt/z/z.sh
-|4,54,1,0,1685447365,"/opt/z/z.sh"
-'7  1  0  /opt/z/z.sh
-|4,55,1,0,1685447365,"/opt/z/z.sh"
-'8  1  0  /opt/z/z.sh
-|4,56,1,0,1685447365,"/opt/z/z.sh"
-'9  1  0  /usr/bin/exa
-|4,57,1,0,1685447344,"/usr/bin/exa"
+'0  11  0  ~/.config/setup.sh
+|4,48,11,0,1685570678,"~/.config/setup.sh"
+'1  11  0  ~/.config/setup.sh
+|4,49,11,0,1685570678,"~/.config/setup.sh"
+'2  12  8  ~/.config/setup.sh
+|4,50,12,8,1685570663,"~/.config/setup.sh"
+'3  12  8  ~/.config/setup.sh
+|4,51,12,8,1685570663,"~/.config/setup.sh"
+'4  12  8  ~/.config/setup.sh
+|4,52,12,8,1685570663,"~/.config/setup.sh"
+'5  12  8  ~/.config/setup.sh
+|4,53,12,8,1685570663,"~/.config/setup.sh"
+'6  11  0  ~/.config/setup.sh
+|4,54,11,0,1685570606,"~/.config/setup.sh"
+'7  11  0  ~/.config/setup.sh
+|4,55,11,0,1685570606,"~/.config/setup.sh"
+'8  11  0  ~/.config/setup.sh
+|4,56,11,0,1685570606,"~/.config/setup.sh"
+'9  11  0  ~/.config/setup.sh
+|4,57,11,0,1685570606,"~/.config/setup.sh"
 
 # Jumplist (newest first):
--'  1  0  /usr/share/doc/aria2/bash_completion/README.txt
-|4,39,1,0,1685449316,"/usr/share/doc/aria2/bash_completion/README.txt"
--'  1  0  /opt/z/z.sh
-|4,39,1,0,1685447427,"/opt/z/z.sh"
--'  1  0  /opt/z/z.sh
-|4,39,1,0,1685447427,"/opt/z/z.sh"
--'  1  0  /opt/z/z.sh
-|4,39,1,0,1685447427,"/opt/z/z.sh"
--'  1  0  /opt/z/z.sh
-|4,39,1,0,1685447365,"/opt/z/z.sh"
--'  1  0  /usr/bin/exa
-|4,39,1,0,1685447344,"/usr/bin/exa"
--'  1  0  /usr/bin/exa
-|4,39,1,0,1685447344,"/usr/bin/exa"
--'  1  0  /usr/bin/exa
-|4,39,1,0,1685447344,"/usr/bin/exa"
--'  1  0  /usr/bin/exa
-|4,39,1,0,1685447344,"/usr/bin/exa"
--'  1  0  /usr/bin/exa
-|4,39,1,0,1685447344,"/usr/bin/exa"
--'  1  0  /usr/local/bin/gita
-|4,39,1,0,1685447339,"/usr/local/bin/gita"
--'  1  0  /usr/local/bin/gita
-|4,39,1,0,1685447339,"/usr/local/bin/gita"
--'  1  0  /usr/local/bin/gita
-|4,39,1,0,1685447339,"/usr/local/bin/gita"
--'  1  0  /usr/local/bin/gita
-|4,39,1,0,1685447339,"/usr/local/bin/gita"
--'  1  0  /usr/local/bin/gita
-|4,39,1,0,1685447339,"/usr/local/bin/gita"
--'  1  0  /usr/local/bin/gita
-|4,39,1,0,1685447339,"/usr/local/bin/gita"
--'  10  9  ~/.config/setup.sh
-|4,39,10,9,1685446486,"~/.config/setup.sh"
--'  10  9  ~/.config/setup.sh
-|4,39,10,9,1685446486,"~/.config/setup.sh"
--'  10  9  ~/.config/setup.sh
-|4,39,10,9,1685446486,"~/.config/setup.sh"
--'  10  9  ~/.config/setup.sh
-|4,39,10,9,1685446486,"~/.config/setup.sh"
--'  10  9  ~/.config/setup.sh
-|4,39,10,9,1685446486,"~/.config/setup.sh"
--'  10  9  ~/.config/setup.sh
-|4,39,10,9,1685446486,"~/.config/setup.sh"
--'  10  9  ~/.config/setup.sh
-|4,39,10,9,1685446486,"~/.config/setup.sh"
--'  3  0  ~/.config/setup.sh
-|4,39,3,0,1685446458,"~/.config/setup.sh"
--'  3  0  ~/.config/setup.sh
-|4,39,3,0,1685446458,"~/.config/setup.sh"
--'  3  0  ~/.config/setup.sh
-|4,39,3,0,1685446458,"~/.config/setup.sh"
--'  3  0  ~/.config/setup.sh
-|4,39,3,0,1685446458,"~/.config/setup.sh"
--'  3  0  ~/.config/setup.sh
-|4,39,3,0,1685446458,"~/.config/setup.sh"
--'  3  0  ~/.config/setup.sh
-|4,39,3,0,1685446458,"~/.config/setup.sh"
--'  3  0  ~/.config/setup.sh
-|4,39,3,0,1685446458,"~/.config/setup.sh"
+-'  11  0  ~/.config/setup.sh
+|4,39,11,0,1685570678,"~/.config/setup.sh"
+-'  11  0  ~/.config/setup.sh
+|4,39,11,0,1685570678,"~/.config/setup.sh"
+-'  12  8  ~/.config/setup.sh
+|4,39,12,8,1685570663,"~/.config/setup.sh"
+-'  12  8  ~/.config/setup.sh
+|4,39,12,8,1685570663,"~/.config/setup.sh"
+-'  12  8  ~/.config/setup.sh
+|4,39,12,8,1685570663,"~/.config/setup.sh"
+-'  11  0  ~/.config/setup.sh
+|4,39,11,0,1685570606,"~/.config/setup.sh"
+-'  11  0  ~/.config/setup.sh
+|4,39,11,0,1685570606,"~/.config/setup.sh"
 -'  1  0  ~/.config/setup.sh
-|4,39,1,0,1685446451,"~/.config/setup.sh"
+|4,39,1,0,1685570599,"~/.config/setup.sh"
 -'  1  0  ~/.config/setup.sh
-|4,39,1,0,1685446451,"~/.config/setup.sh"
+|4,39,1,0,1685570599,"~/.config/setup.sh"
 -'  1  0  ~/.config/setup.sh
-|4,39,1,0,1685446451,"~/.config/setup.sh"
+|4,39,1,0,1685570599,"~/.config/setup.sh"
 -'  1  0  ~/.config/setup.sh
-|4,39,1,0,1685446451,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1685446451,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1685446451,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1685446451,"~/.config/setup.sh"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1685446358,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1685446358,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1685446358,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1685446358,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1685446358,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1685446358,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1685446358,"~/.gitconfig"
--'  1  0  ~/.gitconfig
-|4,39,1,0,1685446358,"~/.gitconfig"
--'  2  0  ~/.config/setup.sh
-|4,39,2,0,1685445955,"~/.config/setup.sh"
--'  2  0  ~/.config/setup.sh
-|4,39,2,0,1685445955,"~/.config/setup.sh"
--'  2  0  ~/.config/setup.sh
-|4,39,2,0,1685445955,"~/.config/setup.sh"
--'  2  0  ~/.config/setup.sh
-|4,39,2,0,1685445955,"~/.config/setup.sh"
--'  2  0  ~/.config/setup.sh
-|4,39,2,0,1685445955,"~/.config/setup.sh"
--'  2  0  ~/.config/setup.sh
-|4,39,2,0,1685445955,"~/.config/setup.sh"
--'  2  0  ~/.config/setup.sh
-|4,39,2,0,1685445955,"~/.config/setup.sh"
--'  2  0  ~/.config/setup.sh
-|4,39,2,0,1685445955,"~/.config/setup.sh"
--'  2  0  ~/.config/setup.sh
-|4,39,2,0,1685445955,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1685445943,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1685445943,"~/.config/setup.sh"
--'  264  51  /opt/z/z.sh
-|4,39,264,51,1685445899,"/opt/z/z.sh"
--'  264  51  /opt/z/z.sh
-|4,39,264,51,1685445899,"/opt/z/z.sh"
--'  264  51  /opt/z/z.sh
-|4,39,264,51,1685445899,"/opt/z/z.sh"
--'  264  51  /opt/z/z.sh
-|4,39,264,51,1685445899,"/opt/z/z.sh"
--'  264  51  /opt/z/z.sh
-|4,39,264,51,1685445899,"/opt/z/z.sh"
--'  264  51  /opt/z/z.sh
-|4,39,264,51,1685445899,"/opt/z/z.sh"
--'  264  51  /opt/z/z.sh
-|4,39,264,51,1685445899,"/opt/z/z.sh"
--'  264  51  /opt/z/z.sh
-|4,39,264,51,1685445899,"/opt/z/z.sh"
--'  264  51  /opt/z/z.sh
-|4,39,264,51,1685445899,"/opt/z/z.sh"
--'  264  51  /opt/z/z.sh
-|4,39,264,51,1685445899,"/opt/z/z.sh"
--'  263  14  /opt/z/z.sh
-|4,39,263,14,1685445890,"/opt/z/z.sh"
--'  263  14  /opt/z/z.sh
-|4,39,263,14,1685445890,"/opt/z/z.sh"
--'  263  14  /opt/z/z.sh
-|4,39,263,14,1685445890,"/opt/z/z.sh"
--'  263  14  /opt/z/z.sh
-|4,39,263,14,1685445890,"/opt/z/z.sh"
--'  263  14  /opt/z/z.sh
-|4,39,263,14,1685445890,"/opt/z/z.sh"
--'  263  14  /opt/z/z.sh
-|4,39,263,14,1685445890,"/opt/z/z.sh"
--'  263  14  /opt/z/z.sh
-|4,39,263,14,1685445890,"/opt/z/z.sh"
--'  263  14  /opt/z/z.sh
-|4,39,263,14,1685445890,"/opt/z/z.sh"
--'  263  14  /opt/z/z.sh
-|4,39,263,14,1685445890,"/opt/z/z.sh"
--'  263  14  /opt/z/z.sh
-|4,39,263,14,1685445890,"/opt/z/z.sh"
--'  242  17  /opt/z/z.sh
-|4,39,242,17,1685445887,"/opt/z/z.sh"
--'  242  17  /opt/z/z.sh
-|4,39,242,17,1685445887,"/opt/z/z.sh"
--'  242  17  /opt/z/z.sh
-|4,39,242,17,1685445887,"/opt/z/z.sh"
--'  242  17  /opt/z/z.sh
-|4,39,242,17,1685445887,"/opt/z/z.sh"
--'  242  17  /opt/z/z.sh
-|4,39,242,17,1685445887,"/opt/z/z.sh"
--'  242  17  /opt/z/z.sh
-|4,39,242,17,1685445887,"/opt/z/z.sh"
--'  242  17  /opt/z/z.sh
-|4,39,242,17,1685445887,"/opt/z/z.sh"
--'  242  17  /opt/z/z.sh
-|4,39,242,17,1685445887,"/opt/z/z.sh"
--'  242  17  /opt/z/z.sh
-|4,39,242,17,1685445887,"/opt/z/z.sh"
--'  242  17  /opt/z/z.sh
-|4,39,242,17,1685445887,"/opt/z/z.sh"
--'  237  17  /opt/z/z.sh
-|4,39,237,17,1685445883,"/opt/z/z.sh"
--'  237  17  /opt/z/z.sh
-|4,39,237,17,1685445883,"/opt/z/z.sh"
--'  237  17  /opt/z/z.sh
-|4,39,237,17,1685445883,"/opt/z/z.sh"
--'  237  17  /opt/z/z.sh
-|4,39,237,17,1685445883,"/opt/z/z.sh"
--'  237  17  /opt/z/z.sh
-|4,39,237,17,1685445883,"/opt/z/z.sh"
--'  237  17  /opt/z/z.sh
-|4,39,237,17,1685445883,"/opt/z/z.sh"
--'  237  17  /opt/z/z.sh
-|4,39,237,17,1685445883,"/opt/z/z.sh"
--'  237  17  /opt/z/z.sh
-|4,39,237,17,1685445883,"/opt/z/z.sh"
--'  237  17  /opt/z/z.sh
-|4,39,237,17,1685445883,"/opt/z/z.sh"
--'  237  17  /opt/z/z.sh
-|4,39,237,17,1685445883,"/opt/z/z.sh"
--'  30  0  /opt/z/z.sh
-|4,39,30,0,1685445878,"/opt/z/z.sh"
--'  30  0  /opt/z/z.sh
-|4,39,30,0,1685445878,"/opt/z/z.sh"
--'  30  0  /opt/z/z.sh
-|4,39,30,0,1685445878,"/opt/z/z.sh"
--'  30  0  /opt/z/z.sh
-|4,39,30,0,1685445878,"/opt/z/z.sh"
+|4,39,1,0,1685570599,"~/.config/setup.sh"
+-'  2  1  ~/.inputrc
+|4,39,2,1,1685570574,"~/.inputrc"
+-'  2  1  ~/.inputrc
+|4,39,2,1,1685570574,"~/.inputrc"
+-'  2  1  ~/.inputrc
+|4,39,2,1,1685570574,"~/.inputrc"
+-'  2  1  ~/.inputrc
+|4,39,2,1,1685570574,"~/.inputrc"
+-'  2  1  ~/.inputrc
+|4,39,2,1,1685570574,"~/.inputrc"
+-'  1  0  ~/.inputrc
+|4,39,1,0,1685570556,"~/.inputrc"
+-'  1  0  ~/.inputrc
+|4,39,1,0,1685570556,"~/.inputrc"
+-'  1  0  ~/.inputrc
+|4,39,1,0,1685570556,"~/.inputrc"
+-'  1  0  ~/.inputrc
+|4,39,1,0,1685570556,"~/.inputrc"
+-'  1  0  ~/.inputrc
+|4,39,1,0,1685570556,"~/.inputrc"
+-'  13  0  ~/awk_function.sh
+|4,39,13,0,1685569441,"~/awk_function.sh"
+-'  13  0  ~/awk_function.sh
+|4,39,13,0,1685569441,"~/awk_function.sh"
+-'  13  0  ~/awk_function.sh
+|4,39,13,0,1685569441,"~/awk_function.sh"
+-'  13  0  ~/awk_function.sh
+|4,39,13,0,1685569441,"~/awk_function.sh"
+-'  13  0  ~/awk_function.sh
+|4,39,13,0,1685569441,"~/awk_function.sh"
+-'  13  0  ~/awk_function.sh
+|4,39,13,0,1685569441,"~/awk_function.sh"
+-'  11  2  ~/awk_function.sh
+|4,39,11,2,1685569318,"~/awk_function.sh"
+-'  11  2  ~/awk_function.sh
+|4,39,11,2,1685569318,"~/awk_function.sh"
+-'  11  2  ~/awk_function.sh
+|4,39,11,2,1685569318,"~/awk_function.sh"
+-'  11  2  ~/awk_function.sh
+|4,39,11,2,1685569318,"~/awk_function.sh"
+-'  11  2  ~/awk_function.sh
+|4,39,11,2,1685569318,"~/awk_function.sh"
+-'  11  2  ~/awk_function.sh
+|4,39,11,2,1685569318,"~/awk_function.sh"
+-'  4  29  ~/awk_function.sh
+|4,39,4,29,1685569307,"~/awk_function.sh"
+-'  4  29  ~/awk_function.sh
+|4,39,4,29,1685569307,"~/awk_function.sh"
+-'  4  29  ~/awk_function.sh
+|4,39,4,29,1685569307,"~/awk_function.sh"
+-'  4  29  ~/awk_function.sh
+|4,39,4,29,1685569307,"~/awk_function.sh"
+-'  4  29  ~/awk_function.sh
+|4,39,4,29,1685569307,"~/awk_function.sh"
+-'  4  29  ~/awk_function.sh
+|4,39,4,29,1685569307,"~/awk_function.sh"
+-'  1  0  ~/awk_function.sh
+|4,39,1,0,1685569291,"~/awk_function.sh"
+-'  1  0  ~/awk_function.sh
+|4,39,1,0,1685569291,"~/awk_function.sh"
+-'  1  0  ~/awk_function.sh
+|4,39,1,0,1685569291,"~/awk_function.sh"
+-'  1  0  ~/awk_function.sh
+|4,39,1,0,1685569291,"~/awk_function.sh"
+-'  1  0  ~/awk_function.sh
+|4,39,1,0,1685569291,"~/awk_function.sh"
+-'  1  0  ~/awk_function.sh
+|4,39,1,0,1685569291,"~/awk_function.sh"
+-'  14  1  ~/awk_function.sh
+|4,39,14,1,1685569277,"~/awk_function.sh"
+-'  15  1  ~/awk_function.sh
+|4,39,15,1,1685569277,"~/awk_function.sh"
+-'  14  1  ~/awk_function.sh
+|4,39,14,1,1685569277,"~/awk_function.sh"
+-'  15  1  ~/awk_function.sh
+|4,39,15,1,1685569277,"~/awk_function.sh"
+-'  14  1  ~/awk_function.sh
+|4,39,14,1,1685569277,"~/awk_function.sh"
+-'  15  1  ~/awk_function.sh
+|4,39,15,1,1685569277,"~/awk_function.sh"
+-'  14  1  ~/awk_function.sh
+|4,39,14,1,1685569277,"~/awk_function.sh"
+-'  15  1  ~/awk_function.sh
+|4,39,15,1,1685569277,"~/awk_function.sh"
+-'  14  1  ~/awk_function.sh
+|4,39,14,1,1685569277,"~/awk_function.sh"
+-'  15  1  ~/awk_function.sh
+|4,39,15,1,1685569277,"~/awk_function.sh"
+-'  14  1  ~/awk_function.sh
+|4,39,14,1,1685569277,"~/awk_function.sh"
+-'  15  1  ~/awk_function.sh
+|4,39,15,1,1685569277,"~/awk_function.sh"
+-'  1  0  ~/awk_function.sh
+|4,39,1,0,1685569268,"~/awk_function.sh"
+-'  16  0  ~/awk_function.sh
+|4,39,16,0,1685569244,"~/awk_function.sh"
+-'  16  0  ~/awk_function.sh
+|4,39,16,0,1685569244,"~/awk_function.sh"
+-'  16  0  ~/awk_function.sh
+|4,39,16,0,1685569244,"~/awk_function.sh"
+-'  16  0  ~/awk_function.sh
+|4,39,16,0,1685569244,"~/awk_function.sh"
+-'  16  0  ~/awk_function.sh
+|4,39,16,0,1685569244,"~/awk_function.sh"
+-'  16  0  ~/awk_function.sh
+|4,39,16,0,1685569244,"~/awk_function.sh"
+-'  16  0  ~/awk_function.sh
+|4,39,16,0,1685569244,"~/awk_function.sh"
+-'  13  0  ~/awk_function.sh
+|4,39,13,0,1685569199,"~/awk_function.sh"
+-'  13  0  ~/awk_function.sh
+|4,39,13,0,1685569199,"~/awk_function.sh"
+-'  1  0  ~/awk_function.sh
+|4,39,1,0,1685569170,"~/awk_function.sh"
+-'  11  3  ~/awk_function.sh
+|4,39,11,3,1685569149,"~/awk_function.sh"
+-'  11  3  ~/awk_function.sh
+|4,39,11,3,1685569149,"~/awk_function.sh"
+-'  11  3  ~/awk_function.sh
+|4,39,11,3,1685569149,"~/awk_function.sh"
+-'  1  0  ~/awk_function.sh
+|4,39,1,0,1685569131,"~/awk_function.sh"
+-'  14  9  ~/awk_function.sh
+|4,39,14,9,1685569114,"~/awk_function.sh"
+-'  14  9  ~/awk_function.sh
+|4,39,14,9,1685569114,"~/awk_function.sh"
+-'  14  9  ~/awk_function.sh
+|4,39,14,9,1685569114,"~/awk_function.sh"
+-'  14  9  ~/awk_function.sh
+|4,39,14,9,1685569114,"~/awk_function.sh"
+-'  1  0  ~/awk_function.sh
+|4,39,1,0,1685569013,"~/awk_function.sh"
+-'  12  48  ~/awk_function.sh
+|4,39,12,48,1685568998,"~/awk_function.sh"
+-'  12  48  ~/awk_function.sh
+|4,39,12,48,1685568998,"~/awk_function.sh"
+-'  12  48  ~/awk_function.sh
+|4,39,12,48,1685568998,"~/awk_function.sh"
+-'  12  48  ~/awk_function.sh
+|4,39,12,48,1685568998,"~/awk_function.sh"
+-'  12  48  ~/awk_function.sh
+|4,39,12,48,1685568998,"~/awk_function.sh"
+-'  12  48  ~/awk_function.sh
+|4,39,12,48,1685568998,"~/awk_function.sh"
+-'  12  48  ~/awk_function.sh
+|4,39,12,48,1685568998,"~/awk_function.sh"
+-'  12  48  ~/awk_function.sh
+|4,39,12,48,1685568998,"~/awk_function.sh"
+-'  12  48  ~/awk_function.sh
+|4,39,12,48,1685568998,"~/awk_function.sh"
+-'  12  48  ~/awk_function.sh
+|4,39,12,48,1685568998,"~/awk_function.sh"
+-'  1  0  ~/awk_function.sh
+|4,39,1,0,1685568990,"~/awk_function.sh"
+-'  12  44  ~/awk_function.sh
+|4,39,12,44,1685568971,"~/awk_function.sh"
 
 # Buffer list:
-%/usr/share/doc/aria2/bash_completion/README.txt	1	0
+%~/.config/setup.sh	11	0
 
 # History of marks within files (newest to oldest):
+
+> ~/.config/setup.sh
+	*	1685570677	0
+	"	11	0
+	.	12	0
+	+	6	68
+	+	7	27
+	+	4	0
+	+	3	1
+	+	10	34
+	+	3	0
+	+	4	0
+	+	12	0
+	+	3	0
+	+	6	0
+	+	2	0
+	+	3	0
+	+	12	0
+	+	4	0
+	+	11	0
+	+	12	1
+	+	8	8
+	+	9	10
+	+	12	155
+	+	12	8
+	+	12	123
+	+	12	0
+
+> ~/.inputrc
+	*	1685570573	0
+	"	2	1
+	^	2	2
+	.	2	1
+	+	2	1
+
+> ~/awk_function.sh
+	*	1685569328	0
+	"	13	0
+	^	11	3
+	.	11	2
+	+	11	1
+	+	11	24
+	+	11	1
+	+	11	0
+	+	5	0
+	+	11	76
+	+	1	1
+	+	2	0
+	+	11	8
+	+	14	81
+	+	11	75
+	+	14	9
+	+	11	75
+	+	11	3
+	+	11	75
+	+	14	81
+	+	14	80
+	+	14	1
+	+	14	0
+	+	11	74
+	+	11	8
+	+	11	74
+	+	11	2
+
+> ~/output.tmp
+	*	1685568828	0
+	"	1	0
+
+> ~/.gitignore
+	*	1685560879	0
+	"	1	13
+	^	1	14
+	.	1	13
+	+	1	13
+
+> ~/fzf_cd.sh
+	*	1685537089	0
+	"	3	0
+	.	6	0
+	+	6	51
+	+	5	27
+	+	6	0
+
+> ~/.config/coc/extensions/install.sh
+	*	1685531985	0
+	"	1	70
+	.	1	70
+	+	1	70
+
+> /usr/share/vim/vim90/doc/eval.txt
+	*	1685531975	0
+	"	3423	38
+
+> ~/.config/coc/extensions/file.txt
+	*	1685531879	0
+	"	1	0
+	^	1	2
+	.	1	1
+	+	1	1
+
+> ~/tmp/script.sh
+	*	1685528770	0
+	"	5	0
+
+> ~/tmp/script.vim
+	*	1685528702	0
+	"	13	0
+	^	13	0
+	.	12	51
+	+	12	51
 
 > /usr/share/doc/aria2/bash_completion/README.txt
 	*	1685449313	0
@@ -593,28 +735,6 @@
 > /usr/local/bin/gita
 	*	1685447336	0
 	"	1	0
-
-> ~/.config/setup.sh
-	*	1685446479	0
-	"	10	9
-	^	10	2
-	.	10	1
-	+	6	68
-	+	7	27
-	+	4	0
-	+	3	1
-	+	8	34
-	+	3	0
-	+	4	0
-	+	11	0
-	+	3	0
-	+	6	0
-	+	2	0
-	+	3	0
-	+	11	0
-	+	4	0
-	+	9	0
-	+	10	1
 
 > ~/.gitconfig
 	*	1685446352	0
@@ -858,4 +978,7 @@
 
 > ~/python_common/requirements.txt
 	*	1685142715	0
+	"	1	0
+
+> ~/.config/coc/extensions/)
 	"	1	0
