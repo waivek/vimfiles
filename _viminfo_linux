@@ -15,7 +15,7 @@
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1686160146,,"q"
+|2,0,1686160181,,"q"
 :qa
 |2,0,1685617668,,"qa"
 :Copilot setup
@@ -406,8 +406,8 @@
 |3,0,36,0,1,0,1685570644,"# cd to the directory of a file"
 
 # File marks:
-'0  1  0  ~/[Plugins]
-|4,48,1,0,1685616539,"~/[Plugins]"
+'0  7  4  ~/.vim/.gitignore
+|4,48,7,4,1686160181,"~/.vim/.gitignore"
 '1  1  0  ~/[Plugins]
 |4,49,1,0,1685616539,"~/[Plugins]"
 '2  1  0  ~/[Plugins]
@@ -422,12 +422,20 @@
 |4,54,1,0,1685616539,"~/[Plugins]"
 '7  1  0  ~/[Plugins]
 |4,55,1,0,1685616539,"~/[Plugins]"
-'8  11  0  ~/.config/setup.sh
-|4,56,11,0,1685570678,"~/.config/setup.sh"
-'9  11  0  ~/.config/setup.sh
-|4,57,11,0,1685570678,"~/.config/setup.sh"
+'8  1  0  ~/[Plugins]
+|4,56,1,0,1685616539,"~/[Plugins]"
+'9  1  0  ~/[Plugins]
+|4,57,1,0,1685616539,"~/[Plugins]"
 
 # Jumplist (newest first):
+-'  7  4  ~/.vim/.gitignore
+|4,39,7,4,1686160181,"~/.vim/.gitignore"
+-'  1  0  ~/.vim/.gitignore
+|4,39,1,0,1686160176,"~/.vim/.gitignore"
+-'  1  0  ~/[Plugins]
+|4,39,1,0,1685616539,"~/[Plugins]"
+-'  6  0  ~/[Plugins]
+|4,39,6,0,1685616539,"~/[Plugins]"
 -'  1  0  ~/[Plugins]
 |4,39,1,0,1685616539,"~/[Plugins]"
 -'  6  0  ~/[Plugins]
@@ -452,6 +460,8 @@
 |4,39,8,0,1685616538,"~/[Plugins]"
 -'  8  0  ~/[Plugins]
 |4,39,8,0,1685616538,"~/[Plugins]"
+-'  8  0  ~/[Plugins]
+|4,39,8,0,1685616538,"~/[Plugins]"
 -'  2  0  ~/[Plugins]
 |4,39,2,0,1685616533,"~/[Plugins]"
 -'  2  0  ~/[Plugins]
@@ -460,6 +470,8 @@
 |4,39,2,0,1685616533,"~/[Plugins]"
 -'  2  0  ~/[Plugins]
 |4,39,2,0,1685616533,"~/[Plugins]"
+-'  2  0  ~/[Plugins]
+|4,39,2,0,1685616533,"~/[Plugins]"
 -'  11  0  ~/.config/setup.sh
 |4,39,11,0,1685570678,"~/.config/setup.sh"
 -'  11  0  ~/.config/setup.sh
@@ -470,6 +482,10 @@
 |4,39,11,0,1685570678,"~/.config/setup.sh"
 -'  11  0  ~/.config/setup.sh
 |4,39,11,0,1685570678,"~/.config/setup.sh"
+-'  11  0  ~/.config/setup.sh
+|4,39,11,0,1685570678,"~/.config/setup.sh"
+-'  12  8  ~/.config/setup.sh
+|4,39,12,8,1685570663,"~/.config/setup.sh"
 -'  12  8  ~/.config/setup.sh
 |4,39,12,8,1685570663,"~/.config/setup.sh"
 -'  12  8  ~/.config/setup.sh
@@ -500,6 +516,10 @@
 |4,39,1,0,1685570599,"~/.config/setup.sh"
 -'  1  0  ~/.config/setup.sh
 |4,39,1,0,1685570599,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1685570599,"~/.config/setup.sh"
+-'  2  1  ~/.inputrc
+|4,39,2,1,1685570574,"~/.inputrc"
 -'  2  1  ~/.inputrc
 |4,39,2,1,1685570574,"~/.inputrc"
 -'  2  1  ~/.inputrc
@@ -532,6 +552,10 @@
 |4,39,1,0,1685570556,"~/.inputrc"
 -'  1  0  ~/.inputrc
 |4,39,1,0,1685570556,"~/.inputrc"
+-'  1  0  ~/.inputrc
+|4,39,1,0,1685570556,"~/.inputrc"
+-'  13  0  ~/awk_function.sh
+|4,39,13,0,1685569441,"~/awk_function.sh"
 -'  13  0  ~/awk_function.sh
 |4,39,13,0,1685569441,"~/awk_function.sh"
 -'  13  0  ~/awk_function.sh
@@ -568,6 +592,10 @@
 |4,39,11,2,1685569318,"~/awk_function.sh"
 -'  11  2  ~/awk_function.sh
 |4,39,11,2,1685569318,"~/awk_function.sh"
+-'  11  2  ~/awk_function.sh
+|4,39,11,2,1685569318,"~/awk_function.sh"
+-'  4  29  ~/awk_function.sh
+|4,39,4,29,1685569307,"~/awk_function.sh"
 -'  4  29  ~/awk_function.sh
 |4,39,4,29,1685569307,"~/awk_function.sh"
 -'  4  29  ~/awk_function.sh
@@ -600,37 +628,18 @@
 |4,39,1,0,1685569291,"~/awk_function.sh"
 -'  1  0  ~/awk_function.sh
 |4,39,1,0,1685569291,"~/awk_function.sh"
--'  1  0  ~/awk_function.sh
-|4,39,1,0,1685569291,"~/awk_function.sh"
--'  1  0  ~/awk_function.sh
-|4,39,1,0,1685569291,"~/awk_function.sh"
--'  14  1  ~/awk_function.sh
-|4,39,14,1,1685569277,"~/awk_function.sh"
--'  15  1  ~/awk_function.sh
-|4,39,15,1,1685569277,"~/awk_function.sh"
--'  14  1  ~/awk_function.sh
-|4,39,14,1,1685569277,"~/awk_function.sh"
--'  15  1  ~/awk_function.sh
-|4,39,15,1,1685569277,"~/awk_function.sh"
--'  14  1  ~/awk_function.sh
-|4,39,14,1,1685569277,"~/awk_function.sh"
--'  15  1  ~/awk_function.sh
-|4,39,15,1,1685569277,"~/awk_function.sh"
--'  14  1  ~/awk_function.sh
-|4,39,14,1,1685569277,"~/awk_function.sh"
--'  15  1  ~/awk_function.sh
-|4,39,15,1,1685569277,"~/awk_function.sh"
--'  14  1  ~/awk_function.sh
-|4,39,14,1,1685569277,"~/awk_function.sh"
--'  15  1  ~/awk_function.sh
-|4,39,15,1,1685569277,"~/awk_function.sh"
--'  14  1  ~/awk_function.sh
-|4,39,14,1,1685569277,"~/awk_function.sh"
 
 # Buffer list:
-%~/.config/setup.sh	11	0
+%~/.vim/.gitignore	7	4
 
 # History of marks within files (newest to oldest):
+
+> ~/.vim/.gitignore
+	*	1686160181	0
+	"	7	4
+	^	7	5
+	.	7	4
+	+	7	4
 
 > ~/.config/setup.sh
 	*	1685570677	0
