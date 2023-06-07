@@ -51,6 +51,8 @@ Plug 'junegunn/fzf', { 'dir': fzf_dir, 'do': './install --all' }
 " Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
+Plug 'tpope/vim-fugitive'
+
 
 
 

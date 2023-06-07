@@ -11,47 +11,23 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/git clone.*nnn
+~MSle0~/ignore
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1685666048,,"q"
-:MRU bash_his
-|2,0,1685665976,,"MRU bash_his"
-:MRU setup.sh
-|2,0,1685665819,,"MRU setup.sh"
-:'<,'>
-|2,0,1685665758,,"'<,'>"
+|2,0,1686160129,,"q"
 :qa
-|2,0,1685664924,,"qa"
-:echo has("clipboard")
-|2,0,1685664869,,"echo has(\"clipboard\")"
-:pwd
-|2,0,1685664865,,"pwd"
-:h +clipboard
-|2,0,1685664846,,"h +clipboard"
-:h clipboard
-|2,0,1685664841,,"h clipboard"
-:q!
-|2,0,1685664467,,"q!"
-:set nonumber
-|2,0,1685663915,,"set nonumber"
-:MRU nn
-|2,0,1685660041,,"MRU nn"
-:!source %
-|2,0,1685659343,,"!source %"
-:MRU 3:setup.sh
-|2,0,1685659326,,"MRU 3:setup.sh"
-:bd!
-|2,0,1685659322,,"bd!"
-:args
-|2,0,1685633802,,"args"
-:e sum.py
-|2,0,1685617937,,"e sum.py"
+|2,0,1685617668,,"qa"
 :Copilot setup
 |2,0,1685617619,,"Copilot setup"
+:q!
+|2,0,1685570792,,"q!"
+:set nonumber
+|2,0,1685569324,,"set nonumber"
 :so %
 |2,0,1685537651,,"so %"
+:bd!
+|2,0,1685531977,,"bd!"
 :echoconsole -n 'hello'
 |2,0,1685531975,,"echoconsole -n 'hello'"
 :h :echoconsole
@@ -252,6 +228,8 @@
 |2,0,1685390507,,"PlugInstall"
 :MRU
 |2,0,1685390500,,"MRU"
+:pwd
+|2,0,1685390480,,"pwd"
 :e ic.py
 |2,0,1685390476,,"e ic.py"
 :Rg import
@@ -290,50 +268,6 @@
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
-?/git clone.*nnn
-|2,1,1685665982,47,"git clone.*nnn"
-?/curl.*mcfly
-|2,1,1685665743,47,"curl.*mcfly"
-??mcfly
-|2,1,1685665736,63,"mcfly"
-?/"
-|2,1,1685665142,47,"\""
-?/`
-|2,1,1685660728,47,"`"
-?/session
-|2,1,1685660645,47,"session"
-?/shell
-|2,1,1685660473,47,"shell"
-?/ct
-|2,1,1685660437,47,"ct"
-?/enter
-|2,1,1685660083,47,"enter"
-?/'ret'
-|2,1,1685660073,47,"'ret'"
-?/ret
-|2,1,1685660071,47,"ret"
-?/
-|2,1,1685660068,47,""
-?/'enter'
-|2,1,1685660062,47,"'enter'"
-?/'cr'
-|2,1,1685660059,47,"'cr'"
-?/'e'
-|2,1,1685660044,47,"'e'"
-?/';'
-|2,1,1685659989,47,"';'"
-?/':'
-|2,1,1685659981,47,"':'"
-?/':
-|2,1,1685659979,47,"':"
-?/'h'
-|2,1,1685659934,47,"'h'"
-?/\C\<h\>
-|2,1,1685659919,47,"\\C\\<h\\>"
-?/profilex
-|2,1,1685654192,47,"profilex"
-?/SHELL
-|2,1,1685635602,47,"SHELL"
 ?/ignore
 |2,1,1685570780,47,"ignore"
 ?/\t
@@ -424,54 +358,62 @@
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	LINE	0
-	q
-	
-|3,0,0,1,2,0,1685664467,"q",""
+"0	CHAR	0
+	colb
+|3,0,0,0,1,0,1685569318,"colb"
 ""1	LINE	0
-	export PATH="$HOME/isomorphic-copy/bin:$PATH"
-|3,1,1,1,1,0,1685665152,"export PATH=\"$HOME/isomorphic-copy/bin:$PATH\""
+	alias c='cd $(fd --hidden --type file --exec-batch lsd --long  --all {} | fzf | awk '{print $NF}' | xargs -I {} dirname {})'
+|3,1,1,1,1,0,1685570676,"alias c='cd $(fd --hidden --type file --exec-batch lsd --long  --all {} | fzf | awk '{print $NF}' | xargs -I {} dirname {})'"
 "2	LINE	0
-	alias cdf='cd ' # cd to the directory of a file
-|3,0,2,1,1,0,1685665139,"alias cdf='cd ' # cd to the directory of a file"
+	# alias cola='awk -v col="$1" "{print (col >= 0) ? \$(col + 1) : \$(NF + col + 1)}"'
+	# alias colc="awk -v col='\$1' '{print (col >= 0) ? \$(col+1) : \$(NF + col + 1)}'"
+	alias colc='awk -v col="$1" "{print (col >= 0) ? \$(col+1) : \$(NF + col + 1)}"'
+|3,0,2,1,3,0,1685569296,"# alias cola='awk -v col=\"$1\" \"{print (col >= 0) ? \\$(col + 1) : \\$(NF + col + 1)}\"'","# alias colc=\"awk -v col='\\$1' '{print (col >= 0) ? \\$(col+1) : \\$(NF + col + 1)}'\"","alias colc='awk -v col=\"$1\" \"{print (col >= 0) ? \\$(col+1) : \\$(NF + col + 1)}\"'"
 "3	LINE	0
-	alias 
-|3,0,3,1,1,0,1685665120,"alias "
+	    awk -v col="$column+1" '{print $col}'
+|3,0,3,1,1,0,1685568726,"    awk -v col=\"$column+1\" '{print $col}'"
 "4	LINE	0
-	alias 
-|3,0,4,1,1,0,1685665116,"alias "
+	col() {
+	  local column="$1"
+	
+	  if (( column >= 0 )); then
+	    awk -v col="$column+1" '{print $col}'
+	  else
+	    awk -v col="$(( -column ))" '{print $(NF - col + 1)}'
+	  fi
+	}
+	
+|3,0,4,1,10,0,1685568673,"col() {","  local column=\"$1\"","","  if (( column >= 0 )); then","    awk -v col=\"$column+1\" '{print $col}'","  else","    awk -v col=\"$(( -column ))\" '{print $(NF - col + 1)}'","  fi","}",""
 "5	LINE	0
-	alias 
-|3,0,5,1,1,0,1685665111,"alias "
+	
+|3,0,5,1,1,0,1685560866,""
 "6	LINE	0
-	alias u='sudo apt-get update'
-	alias up='sudo apt-get upgrade'
-	alias 
-|3,0,6,1,3,0,1685665108,"alias u='sudo apt-get update'","alias up='sudo apt-get upgrade'","alias "
+	
+	
+|3,0,6,1,2,0,1685537012,"",""
 "7	LINE	0
-	export PATH="$HOME/.local/bin:$PATH"
-	export PATH="$HOME/.cargo/bin:$PATH"
-|3,0,7,1,2,0,1685665097,"export PATH=\"$HOME/.local/bin:$PATH\"","export PATH=\"$HOME/.cargo/bin:$PATH\""
+	export FZF_DEFAULT_OPTS="--bind='ctrl-d:cd_parent'"
+|3,0,7,1,1,0,1685536884,"export FZF_DEFAULT_OPTS=\"--bind='ctrl-d:cd_parent'\""
 "8	LINE	0
-	# cd  # cd to the directory of a file
-|3,0,8,1,1,0,1685665020,"# cd  # cd to the directory of a file"
+	source /usr/share/doc/fzf/examples/key-bindings.bash
+	source /usr/share/doc/fzf/examples/completion.bash
+|3,0,8,1,2,0,1685446462,"source /usr/share/doc/fzf/examples/key-bindings.bash","source /usr/share/doc/fzf/examples/completion.bash"
 "9	LINE	0
-	# nnn -H -o -e -E
-|3,0,9,1,1,0,1685664998,"# nnn -H -o -e -E"
+	source /opt/z/z.sh
+|3,0,9,1,1,0,1685446458,"source /opt/z/z.sh"
 "-	CHAR	0
-	# Update .bash_history after each command
-|3,0,36,0,1,0,1685664979,"# Update .bash_history after each command"
+	# cd to the directory of a file
+|3,0,36,0,1,0,1685570644,"# cd to the directory of a file"
 
 # File marks:
-<<<<<<< HEAD
 '0  1  0  ~/[Plugins]
 |4,48,1,0,1685616539,"~/[Plugins]"
 '1  1  0  ~/[Plugins]
 |4,49,1,0,1685616539,"~/[Plugins]"
-'2  11  0  ~/.config/setup.sh
-|4,50,11,0,1685570678,"~/.config/setup.sh"
-'3  11  0  ~/.config/setup.sh
-|4,51,11,0,1685570678,"~/.config/setup.sh"
+'2  1  0  ~/[Plugins]
+|4,50,1,0,1685616539,"~/[Plugins]"
+'3  1  0  ~/[Plugins]
+|4,51,1,0,1685616539,"~/[Plugins]"
 '4  11  0  ~/.config/setup.sh
 |4,52,11,0,1685570678,"~/.config/setup.sh"
 '5  11  0  ~/.config/setup.sh
@@ -494,6 +436,12 @@
 |4,39,1,0,1685616539,"~/[Plugins]"
 -'  6  0  ~/[Plugins]
 |4,39,6,0,1685616539,"~/[Plugins]"
+-'  1  0  ~/[Plugins]
+|4,39,1,0,1685616539,"~/[Plugins]"
+-'  6  0  ~/[Plugins]
+|4,39,6,0,1685616539,"~/[Plugins]"
+-'  8  0  ~/[Plugins]
+|4,39,8,0,1685616538,"~/[Plugins]"
 -'  8  0  ~/[Plugins]
 |4,39,8,0,1685616538,"~/[Plugins]"
 -'  8  0  ~/[Plugins]
@@ -502,12 +450,18 @@
 |4,39,2,0,1685616533,"~/[Plugins]"
 -'  2  0  ~/[Plugins]
 |4,39,2,0,1685616533,"~/[Plugins]"
+-'  2  0  ~/[Plugins]
+|4,39,2,0,1685616533,"~/[Plugins]"
 -'  11  0  ~/.config/setup.sh
 |4,39,11,0,1685570678,"~/.config/setup.sh"
 -'  11  0  ~/.config/setup.sh
 |4,39,11,0,1685570678,"~/.config/setup.sh"
 -'  11  0  ~/.config/setup.sh
 |4,39,11,0,1685570678,"~/.config/setup.sh"
+-'  11  0  ~/.config/setup.sh
+|4,39,11,0,1685570678,"~/.config/setup.sh"
+-'  12  8  ~/.config/setup.sh
+|4,39,12,8,1685570663,"~/.config/setup.sh"
 -'  12  8  ~/.config/setup.sh
 |4,39,12,8,1685570663,"~/.config/setup.sh"
 -'  12  8  ~/.config/setup.sh
@@ -520,158 +474,15 @@
 |4,39,11,0,1685570606,"~/.config/setup.sh"
 -'  11  0  ~/.config/setup.sh
 |4,39,11,0,1685570606,"~/.config/setup.sh"
-=======
-'0  1741  63  ~/.config/shell_data/.bash_history
-|4,48,1741,63,1685666048,"~/.config/shell_data/.bash_history"
-'1  1  0  ~/.config/setup.sh
-|4,49,1,0,1685665899,"~/.config/setup.sh"
-'2  1  0  ~/.config/setup.sh
-|4,50,1,0,1685665899,"~/.config/setup.sh"
-'3  25  24  ~/.config/setup.sh
-|4,51,25,24,1685665606,"~/.config/setup.sh"
-'4  25  24  ~/.config/setup.sh
-|4,52,25,24,1685665606,"~/.config/setup.sh"
-'5  25  24  ~/.config/setup.sh
-|4,53,25,24,1685665606,"~/.config/setup.sh"
-'6  25  24  ~/.config/setup.sh
-|4,54,25,24,1685665606,"~/.config/setup.sh"
-'7  1  0  ~/isomorphic_copy/bin/csshd
-|4,55,1,0,1685664478,"~/isomorphic_copy/bin/csshd"
-'8  1  0  ~/isomorphic_copy/bin/csshd
-|4,56,1,0,1685664478,"~/isomorphic_copy/bin/csshd"
-'9  1  0  ~/isomorphic_copy/bin/xclip
-|4,57,1,0,1685664468,"~/isomorphic_copy/bin/xclip"
-
-# Jumplist (newest first):
--'  1741  63  ~/.config/shell_data/.bash_history
-|4,39,1741,63,1685666048,"~/.config/shell_data/.bash_history"
--'  1  0  ~/.config/shell_data/.bash_history
-|4,39,1,0,1685665982,"~/.config/shell_data/.bash_history"
->>>>>>> refs/remotes/origin/master
 -'  1  0  ~/.config/setup.sh
-|4,39,1,0,1685665976,"~/.config/setup.sh"
+|4,39,1,0,1685570599,"~/.config/setup.sh"
 -'  1  0  ~/.config/setup.sh
-|4,39,1,0,1685665899,"~/.config/setup.sh"
--'  1926  0  ~/.config/shell_data/.bash_history
-|4,39,1926,0,1685665819,"~/.config/shell_data/.bash_history"
--'  1926  0  ~/.config/shell_data/.bash_history
-|4,39,1926,0,1685665819,"~/.config/shell_data/.bash_history"
--'  2009  0  ~/.config/shell_data/.bash_history
-|4,39,2009,0,1685665744,"~/.config/shell_data/.bash_history"
--'  1911  0  ~/.config/shell_data/.bash_history
-|4,39,1911,0,1685665744,"~/.config/shell_data/.bash_history"
--'  2009  0  ~/.config/shell_data/.bash_history
-|4,39,2009,0,1685665744,"~/.config/shell_data/.bash_history"
--'  1911  0  ~/.config/shell_data/.bash_history
-|4,39,1911,0,1685665744,"~/.config/shell_data/.bash_history"
--'  1  0  ~/.config/shell_data/.bash_history
-|4,39,1,0,1685665743,"~/.config/shell_data/.bash_history"
--'  25  24  ~/.config/setup.sh
-|4,39,25,24,1685665606,"~/.config/setup.sh"
--'  25  24  ~/.config/setup.sh
-|4,39,25,24,1685665606,"~/.config/setup.sh"
--'  25  24  ~/.config/setup.sh
-|4,39,25,24,1685665606,"~/.config/setup.sh"
--'  21  24  ~/.config/setup.sh
-|4,39,21,24,1685665158,"~/.config/setup.sh"
--'  21  24  ~/.config/setup.sh
-|4,39,21,24,1685665158,"~/.config/setup.sh"
--'  21  24  ~/.config/setup.sh
-|4,39,21,24,1685665158,"~/.config/setup.sh"
--'  19  74  ~/.config/setup.sh
-|4,39,19,74,1685665153,"~/.config/setup.sh"
--'  19  74  ~/.config/setup.sh
-|4,39,19,74,1685665153,"~/.config/setup.sh"
--'  19  74  ~/.config/setup.sh
-|4,39,19,74,1685665153,"~/.config/setup.sh"
--'  6  0  ~/.config/setup.sh
-|4,39,6,0,1685665152,"~/.config/setup.sh"
--'  6  0  ~/.config/setup.sh
-|4,39,6,0,1685665152,"~/.config/setup.sh"
--'  6  0  ~/.config/setup.sh
-|4,39,6,0,1685665152,"~/.config/setup.sh"
--'  4  0  ~/.config/setup.sh
-|4,39,4,0,1685665142,"~/.config/setup.sh"
--'  4  0  ~/.config/setup.sh
-|4,39,4,0,1685665142,"~/.config/setup.sh"
--'  4  0  ~/.config/setup.sh
-|4,39,4,0,1685665142,"~/.config/setup.sh"
--'  8  67  ~/.config/setup.sh
-|4,39,8,67,1685664981,"~/.config/setup.sh"
--'  8  67  ~/.config/setup.sh
-|4,39,8,67,1685664981,"~/.config/setup.sh"
--'  8  67  ~/.config/setup.sh
-|4,39,8,67,1685664981,"~/.config/setup.sh"
+|4,39,1,0,1685570599,"~/.config/setup.sh"
 -'  1  0  ~/.config/setup.sh
-|4,39,1,0,1685664929,"~/.config/setup.sh"
--'  1  0  ~/isomorphic_copy/bin/csshd
-|4,39,1,0,1685664478,"~/isomorphic_copy/bin/csshd"
--'  1  0  ~/isomorphic_copy/bin/csshd
-|4,39,1,0,1685664478,"~/isomorphic_copy/bin/csshd"
--'  1  0  ~/isomorphic_copy/bin/csshd
-|4,39,1,0,1685664478,"~/isomorphic_copy/bin/csshd"
--'  1  0  ~/isomorphic_copy/bin/csshd
-|4,39,1,0,1685664478,"~/isomorphic_copy/bin/csshd"
--'  1  0  ~/isomorphic_copy/bin/csshd
-|4,39,1,0,1685664478,"~/isomorphic_copy/bin/csshd"
--'  1  0  ~/isomorphic_copy/bin/csshd
-|4,39,1,0,1685664478,"~/isomorphic_copy/bin/csshd"
--'  1  0  ~/isomorphic_copy/bin/csshd
-|4,39,1,0,1685664478,"~/isomorphic_copy/bin/csshd"
--'  1  0  ~/isomorphic_copy/bin/csshd
-|4,39,1,0,1685664478,"~/isomorphic_copy/bin/csshd"
--'  1  0  ~/isomorphic_copy/bin/csshd
-|4,39,1,0,1685664478,"~/isomorphic_copy/bin/csshd"
--'  1  0  ~/isomorphic_copy/bin/csshd
-|4,39,1,0,1685664478,"~/isomorphic_copy/bin/csshd"
--'  1  0  ~/isomorphic_copy/bin/csshd
-|4,39,1,0,1685664478,"~/isomorphic_copy/bin/csshd"
--'  1  0  ~/isomorphic_copy/bin/csshd
-|4,39,1,0,1685664478,"~/isomorphic_copy/bin/csshd"
--'  1  0  ~/isomorphic_copy/bin/csshd
-|4,39,1,0,1685664478,"~/isomorphic_copy/bin/csshd"
--'  1  0  ~/isomorphic_copy/bin/csshd
-|4,39,1,0,1685664478,"~/isomorphic_copy/bin/csshd"
--'  1  0  ~/isomorphic_copy/bin/csshd
-|4,39,1,0,1685664478,"~/isomorphic_copy/bin/csshd"
--'  1  0  ~/isomorphic_copy/bin/csshd
-|4,39,1,0,1685664478,"~/isomorphic_copy/bin/csshd"
--'  1  0  ~/isomorphic_copy/bin/xclip
-|4,39,1,0,1685664468,"~/isomorphic_copy/bin/xclip"
--'  1  0  ~/isomorphic_copy/bin/xclip
-|4,39,1,0,1685664468,"~/isomorphic_copy/bin/xclip"
--'  1  0  ~/isomorphic_copy/bin/xclip
-|4,39,1,0,1685664468,"~/isomorphic_copy/bin/xclip"
--'  1  0  ~/isomorphic_copy/bin/xclip
-|4,39,1,0,1685664468,"~/isomorphic_copy/bin/xclip"
--'  1  0  ~/isomorphic_copy/bin/xclip
-|4,39,1,0,1685664468,"~/isomorphic_copy/bin/xclip"
--'  1  0  ~/isomorphic_copy/bin/xclip
-|4,39,1,0,1685664468,"~/isomorphic_copy/bin/xclip"
--'  1  0  ~/isomorphic_copy/bin/xclip
-|4,39,1,0,1685664468,"~/isomorphic_copy/bin/xclip"
--'  7  0  ~/.config/setup.sh
-|4,39,7,0,1685664428,"~/.config/setup.sh"
--'  7  0  ~/.config/setup.sh
-|4,39,7,0,1685664428,"~/.config/setup.sh"
--'  7  0  ~/.config/setup.sh
-|4,39,7,0,1685664428,"~/.config/setup.sh"
--'  7  0  ~/.config/setup.sh
-|4,39,7,0,1685664428,"~/.config/setup.sh"
--'  7  0  ~/.config/setup.sh
-|4,39,7,0,1685664428,"~/.config/setup.sh"
--'  7  0  ~/.config/setup.sh
-|4,39,7,0,1685664428,"~/.config/setup.sh"
--'  6  17  ~/.config/setup.sh
-|4,39,6,17,1685664417,"~/.config/setup.sh"
--'  6  17  ~/.config/setup.sh
-|4,39,6,17,1685664417,"~/.config/setup.sh"
--'  6  17  ~/.config/setup.sh
-|4,39,6,17,1685664417,"~/.config/setup.sh"
--'  6  17  ~/.config/setup.sh
-|4,39,6,17,1685664417,"~/.config/setup.sh"
+|4,39,1,0,1685570599,"~/.config/setup.sh"
 -'  1  0  ~/.config/setup.sh
-<<<<<<< HEAD
+|4,39,1,0,1685570599,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
 |4,39,1,0,1685570599,"~/.config/setup.sh"
 -'  1  0  ~/.config/setup.sh
 |4,39,1,0,1685570599,"~/.config/setup.sh"
@@ -687,6 +498,8 @@
 |4,39,2,1,1685570574,"~/.inputrc"
 -'  2  1  ~/.inputrc
 |4,39,2,1,1685570574,"~/.inputrc"
+-'  2  1  ~/.inputrc
+|4,39,2,1,1685570574,"~/.inputrc"
 -'  1  0  ~/.inputrc
 |4,39,1,0,1685570556,"~/.inputrc"
 -'  1  0  ~/.inputrc
@@ -699,6 +512,10 @@
 |4,39,1,0,1685570556,"~/.inputrc"
 -'  1  0  ~/.inputrc
 |4,39,1,0,1685570556,"~/.inputrc"
+-'  1  0  ~/.inputrc
+|4,39,1,0,1685570556,"~/.inputrc"
+-'  13  0  ~/awk_function.sh
+|4,39,13,0,1685569441,"~/awk_function.sh"
 -'  13  0  ~/awk_function.sh
 |4,39,13,0,1685569441,"~/awk_function.sh"
 -'  13  0  ~/awk_function.sh
@@ -727,6 +544,10 @@
 |4,39,11,2,1685569318,"~/awk_function.sh"
 -'  11  2  ~/awk_function.sh
 |4,39,11,2,1685569318,"~/awk_function.sh"
+-'  11  2  ~/awk_function.sh
+|4,39,11,2,1685569318,"~/awk_function.sh"
+-'  4  29  ~/awk_function.sh
+|4,39,4,29,1685569307,"~/awk_function.sh"
 -'  4  29  ~/awk_function.sh
 |4,39,4,29,1685569307,"~/awk_function.sh"
 -'  4  29  ~/awk_function.sh
@@ -755,6 +576,12 @@
 |4,39,1,0,1685569291,"~/awk_function.sh"
 -'  1  0  ~/awk_function.sh
 |4,39,1,0,1685569291,"~/awk_function.sh"
+-'  1  0  ~/awk_function.sh
+|4,39,1,0,1685569291,"~/awk_function.sh"
+-'  14  1  ~/awk_function.sh
+|4,39,14,1,1685569277,"~/awk_function.sh"
+-'  15  1  ~/awk_function.sh
+|4,39,15,1,1685569277,"~/awk_function.sh"
 -'  14  1  ~/awk_function.sh
 |4,39,14,1,1685569277,"~/awk_function.sh"
 -'  15  1  ~/awk_function.sh
@@ -799,312 +626,38 @@
 |4,39,16,0,1685569244,"~/awk_function.sh"
 -'  16  0  ~/awk_function.sh
 |4,39,16,0,1685569244,"~/awk_function.sh"
--'  16  0  ~/awk_function.sh
-|4,39,16,0,1685569244,"~/awk_function.sh"
--'  13  0  ~/awk_function.sh
-|4,39,13,0,1685569199,"~/awk_function.sh"
--'  13  0  ~/awk_function.sh
-|4,39,13,0,1685569199,"~/awk_function.sh"
--'  1  0  ~/awk_function.sh
-|4,39,1,0,1685569170,"~/awk_function.sh"
--'  11  3  ~/awk_function.sh
-|4,39,11,3,1685569149,"~/awk_function.sh"
--'  11  3  ~/awk_function.sh
-|4,39,11,3,1685569149,"~/awk_function.sh"
--'  11  3  ~/awk_function.sh
-|4,39,11,3,1685569149,"~/awk_function.sh"
--'  1  0  ~/awk_function.sh
-|4,39,1,0,1685569131,"~/awk_function.sh"
--'  14  9  ~/awk_function.sh
-|4,39,14,9,1685569114,"~/awk_function.sh"
--'  14  9  ~/awk_function.sh
-|4,39,14,9,1685569114,"~/awk_function.sh"
--'  14  9  ~/awk_function.sh
-|4,39,14,9,1685569114,"~/awk_function.sh"
--'  14  9  ~/awk_function.sh
-|4,39,14,9,1685569114,"~/awk_function.sh"
--'  1  0  ~/awk_function.sh
-|4,39,1,0,1685569013,"~/awk_function.sh"
--'  12  48  ~/awk_function.sh
-|4,39,12,48,1685568998,"~/awk_function.sh"
--'  12  48  ~/awk_function.sh
-|4,39,12,48,1685568998,"~/awk_function.sh"
-=======
-|4,39,1,0,1685664414,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1685664414,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1685664414,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1685664414,"~/.config/setup.sh"
--'  6  29  ~/.config/setup.sh
-|4,39,6,29,1685664408,"~/.config/setup.sh"
--'  3  0  ~/.config/setup.sh
-|4,39,3,0,1685664393,"~/.config/setup.sh"
--'  2  0  ~/.config/setup.sh
-|4,39,2,0,1685664393,"~/.config/setup.sh"
--'  3  0  ~/.config/setup.sh
-|4,39,3,0,1685664393,"~/.config/setup.sh"
--'  2  0  ~/.config/setup.sh
-|4,39,2,0,1685664393,"~/.config/setup.sh"
--'  3  0  ~/.config/setup.sh
-|4,39,3,0,1685664393,"~/.config/setup.sh"
--'  2  0  ~/.config/setup.sh
-|4,39,2,0,1685664393,"~/.config/setup.sh"
--'  2  0  ~/.config/setup.sh
-|4,39,2,0,1685664393,"~/.config/setup.sh"
--'  2  0  ~/.config/setup.sh
-|4,39,2,0,1685664393,"~/.config/setup.sh"
--'  2  0  ~/.config/setup.sh
-|4,39,2,0,1685664393,"~/.config/setup.sh"
--'  2  0  ~/.config/setup.sh
-|4,39,2,0,1685664393,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1685664392,"~/.config/setup.sh"
--'  14  32  ~/.config/setup.sh
-|4,39,14,32,1685664079,"~/.config/setup.sh"
--'  12  32  ~/.config/setup.sh
-|4,39,12,32,1685664079,"~/.config/setup.sh"
--'  16  32  ~/.config/setup.sh
-|4,39,16,32,1685664079,"~/.config/setup.sh"
--'  14  32  ~/.config/setup.sh
-|4,39,14,32,1685664079,"~/.config/setup.sh"
--'  12  32  ~/.config/setup.sh
-|4,39,12,32,1685664079,"~/.config/setup.sh"
--'  16  32  ~/.config/setup.sh
-|4,39,16,32,1685664079,"~/.config/setup.sh"
--'  14  32  ~/.config/setup.sh
-|4,39,14,32,1685664079,"~/.config/setup.sh"
--'  12  32  ~/.config/setup.sh
-|4,39,12,32,1685664079,"~/.config/setup.sh"
--'  16  32  ~/.config/setup.sh
-|4,39,16,32,1685664079,"~/.config/setup.sh"
--'  14  32  ~/.config/setup.sh
-|4,39,14,32,1685664079,"~/.config/setup.sh"
--'  16  32  ~/.config/setup.sh
-|4,39,16,32,1685664079,"~/.config/setup.sh"
--'  14  32  ~/.config/setup.sh
-|4,39,14,32,1685664079,"~/.config/setup.sh"
--'  16  32  ~/.config/setup.sh
-|4,39,16,32,1685664079,"~/.config/setup.sh"
--'  14  32  ~/.config/setup.sh
-|4,39,14,32,1685664079,"~/.config/setup.sh"
--'  16  32  ~/.config/setup.sh
-|4,39,16,32,1685664079,"~/.config/setup.sh"
--'  14  32  ~/.config/setup.sh
-|4,39,14,32,1685664079,"~/.config/setup.sh"
--'  16  32  ~/.config/setup.sh
-|4,39,16,32,1685664079,"~/.config/setup.sh"
--'  14  32  ~/.config/setup.sh
-|4,39,14,32,1685664079,"~/.config/setup.sh"
--'  3  0  ~/.config/setup.sh
-|4,39,3,0,1685664057,"~/.config/setup.sh"
--'  3  0  ~/.config/setup.sh
-|4,39,3,0,1685664057,"~/.config/setup.sh"
--'  3  0  ~/.config/setup.sh
-|4,39,3,0,1685664057,"~/.config/setup.sh"
->>>>>>> refs/remotes/origin/master
 
 # Buffer list:
-%~/.config/setup.sh	1	0
-%~/.config/shell_data/.bash_history	1741	63
+%~/.config/setup.sh	11	0
 
 # History of marks within files (newest to oldest):
 
-> ~/.config/shell_data/.bash_history
-	*	1685665990	0
-	"	1741	63
-
 > ~/.config/setup.sh
-	*	1685665973	0
-	"	1	0
-	^	11	40
-	.	25	0
-	+	8	68
-	+	9	27
-	+	8	0
-	+	8	1
-	+	19	34
-	+	8	0
-	+	20	0
-	+	8	0
-	+	20	0
-	+	8	0
-	+	19	0
-	+	20	1
-	+	10	8
-	+	12	10
-	+	20	155
-	+	20	8
-	+	20	123
-	+	20	0
-	+	8	13
-	+	26	25
-	+	26	0
-	+	12	0
-	+	25	0
-	+	13	31
-	+	26	52
-	+	12	6
-	+	3	16
+	*	1685570677	0
+	"	11	0
+	.	12	0
+	+	6	68
+	+	7	27
+	+	4	0
+	+	3	1
+	+	10	34
 	+	3	0
-	+	14	31
-	+	26	0
-	+	5	0
-	+	6	17
-	+	8	0
-	+	16	0
-	+	15	0
-	+	7	0
-	+	3	0
-	+	2	0
-	+	19	0
-	+	18	0
-	+	22	0
-	+	6	36
-	+	6	0
-	+	15	29
-	+	15	31
-	+	15	0
-	+	14	0
-	+	13	0
-	+	10	0
-	+	11	6
+	+	4	0
 	+	12	0
+	+	3	0
 	+	6	0
-	+	25	0
-
-> /usr/share/vim/vim90/doc/various.txt
-	*	1685664857	0
-	"	347	3
-
-> /usr/share/vim/vim90/doc/gui.txt
-	*	1685664844	0
-	"	442	56
-
-> ~/isomorphic_copy/bin/csshd
-	*	1685664476	0
-	"	1	0
-
-> ~/isomorphic_copy/bin/xclip
-	*	1685664467	0
-	"	1	0
-
-> /tmp/nnn/src/nnn.h
-	*	1685660773	0
-	"	228	4
-	.	260	4
-	+	134	4
-	+	142	4
-	+	145	4
-	+	140	4
-	+	260	4
-
-> ~/python_common/ic.py
-	*	1685660296	0
-	"	1	0
-
-> ~/setup.sh
-	*	1685659320	0
-	"	1	0
-
-> /tmp/nnnOPT8TS/_viminfo_linux
-	*	1685659221	0
-	"	1	0
-
-> /tmp/nnnEaaOPI/after/ftplugin/qf.vim
-	*	1685654383	0
-	"	1	0
-	^	1	1
-	.	1	0
-	+	1	0
-
-> /tmp/.nnnsUkWVC
-	*	1685654194	0
-	"	10	12
-	.	10	13
-	+	10	13
-
-> /tmp/.nnndzSaJe
-	*	1685654186	0
-	"	10	13
-	^	10	14
-	.	10	13
-	+	10	13
-
-> /tmp/nnnplugins/getplus
-	*	1685651059	0
-	"	70	35
-	^	70	36
-	.	70	35
-	+	70	35
-
-> ~/.bashrc
-	*	1685635605	0
-	"	31	36
-	.	120	0
-	+	120	0
-
-> ~/.config/nnn/nnnrc
-	*	1685635539	0
-	"	2	0
-	^	2	0
-	.	2	0
 	+	2	0
-
-> /tmp/nnn/nnn.1
-	*	1685634127	0
-	"	1	0
-
-> ~/.fzf.bash
-	*	1685633802	0
-	"	1	0
-
-> /tmp/.nnniHkRB6
-	*	1685633795	0
-	"	1	0
-
-> ~/.bash_history
-	*	1685633781	0
-	"	1	0
-
-> ~/python_common/common.py
-	*	1685622596	0
-	"	1	0
-
-> ~/python_common/color.py
-	*	1685622593	0
-	"	1	0
-
-> ~/python_common/reltools.py
-	*	1685622565	0
-	"	1	0
-
-> ~/python_common/error.py
-	*	1685622550	0
-	"	1	0
-	^	334	35
-	.	334	34
-	+	307	18
-	+	319	0
-	+	320	0
-	+	308	17
-	+	313	12
-	+	316	14
-	+	318	18
-	+	317	30
-	+	313	26
-	+	317	39
-	+	334	34
-
-> ~/sum.py
-	*	1685617963	0
-	"	6	11
-	^	5	12
-	.	5	11
-	+	3	16
-	+	6	4
-	+	5	11
+	+	3	0
+	+	12	0
+	+	4	0
+	+	11	0
+	+	12	1
+	+	8	8
+	+	9	10
+	+	12	155
+	+	12	8
+	+	12	123
+	+	12	0
 
 > ~/.inputrc
 	*	1685570573	0
@@ -1215,6 +768,12 @@
 	+	14	0
 	+	12	0
 	+	25	22
+
+> ~/.bashrc
+	*	1685445204	0
+	"	119	0
+	.	120	0
+	+	120	0
 
 > ~/.config/bindings.inputrc
 	*	1685445196	0
@@ -1346,6 +905,10 @@
 	*	1685391577	0
 	"	129	12
 
+> ~/python_common/ic.py
+	*	1685390490	0
+	"	1	0
+
 > /etc/timezone
 	*	1685235262	0
 	"	1	0
@@ -1401,6 +964,23 @@
 	+	10	17
 	+	19	0
 	+	17	0
+
+> ~/python_common/error.py
+	*	1685152641	0
+	"	334	15
+	^	334	35
+	.	334	34
+	+	307	18
+	+	319	0
+	+	320	0
+	+	308	17
+	+	313	12
+	+	316	14
+	+	318	18
+	+	317	30
+	+	313	26
+	+	317	39
+	+	334	34
 
 > ~/python_common/db.py
 	*	1685152396	0
