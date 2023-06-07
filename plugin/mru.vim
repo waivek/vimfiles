@@ -209,13 +209,17 @@ function! s:GuiIfMru()
             let filename_text = filename_dictionaries[0]["text"]
             let tail = fnamemodify(filename_text, ":t")
             call popup_settext(g:ui2_popup_id, tail)
+            " echoerr "text: " . l:tail
             call setwinvar(g:ui2_popup_id, '&wincolor', 'String')
         else
             call popup_settext(g:ui2_popup_id, "No matches")
             call setwinvar(g:ui2_popup_id, '&wincolor', 'WarningMsg')
         endif
-        " redraw
-        redraws
+        if has("gui_running")
+            redraws
+        else
+            redraw
+        endif
     endif
 endfunction
 

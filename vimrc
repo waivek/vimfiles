@@ -1325,3 +1325,5 @@ endif
 set t_Co=256
 set t_ut=
 set ttimeoutlen=25 " Otherwise i get delay when i press ESC in ':' mode
+let &t_SI = "\e[6 q"
+let &t_EI = "\e[2 q"

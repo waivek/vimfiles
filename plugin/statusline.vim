@@ -115,11 +115,23 @@ function! s:PathSplit()
     echo folders
 endfunction
 
+function! s:GetSeparator()
+    let is_windows = has('win32') || has('win64')
+    return is_windows ? '\' : '/'
+endfunction
+
 function! s:NormPath(path)
-    let separator = "\\"
-    let norm_path = substitute(a:path, '/', separator, "g")
+    let separator = s:GetSeparator()
+    let is_windows = has('win32') || has('win64')
+    if is_windows
+        let norm_path = substitute(a:path, '/', separator, "g")
+    else
+        let norm_path = substitute(a:path, '\', separator, "g")
+    endif
     return norm_path
 endfunction
+
+nnoremap ga :echo <SID>GetRelpath_2()<CR>
 
 function! s:GetRelpath_2()
     if &filetype ==#  "help" || &filetype ==#  "man.cpp"
@@ -135,9 +147,10 @@ function! s:GetRelpath_2()
         return expand("%") 
     endif
 
+    let separator = s:GetSeparator()
     let filepath = expand("%:p")
     let cwd = getcwd()
-    let last_char_is_slash = cwd[len(cwd)-1] ==# '\'
+    let last_char_is_slash = cwd[len(cwd)-1] ==# separator
     if last_char_is_slash
         let cwd = slice(cwd, 0, len(cwd)-1)
     endif
@@ -145,11 +158,13 @@ function! s:GetRelpath_2()
 
     let file_in_cwd = stridx(filepath, cwd) == 0
     if file_in_cwd
-        let path = strpart(filepath, len(cwd.'\'))
+        let path = strpart(filepath, len(cwd.separator))
         return s:NormPath(path)
     else
-        let cwd_parts = split(cwd, '\')
-        let filepath_parts = split(filepath, '\')
+        " let cwd_parts = split(cwd, separator)
+        let cwd_parts = split(cwd, separator, v:true) " We add v:true for Linux where we want split('/home/vivek') to have leading [ '' ] so that join gives us the original result
+        " let filepath_parts = split(filepath, separator)
+        let filepath_parts = split(filepath, separator, v:true)
 
         let for_end = min([len(cwd_parts), len(filepath_parts)])
         let common_count = -1
@@ -168,12 +183,15 @@ function! s:GetRelpath_2()
         " echo "cwd: " . cwd
         " echo "filepath: " . filepath
         let common_parts = slice(cwd_parts, 0, common_count)
-        let common_path = join(common_parts, '\')
-        " echo "common_path: " . common_path
+        let common_path = join(common_parts, separator)
         let dot_count = len(cwd_parts) - common_count
-        " echo "dot_count: " . dot_count
-        let path = strpart(filepath, len(common_path.'\'))
-        let dot_path = repeat('..\', dot_count) . path
+        let path = strpart(filepath, len(common_path.separator))
+        let dot_path = repeat('..' . separator, dot_count) . path
+        " echom "cwd_parts   | " . string(cwd_parts)
+        " echom "filepath    | " . filepath
+        " echom "common_path | " . common_path
+        " echom "path        | " . path
+        " echom "dot_path    | " . dot_path
         return s:NormPath(dot_path)
     endif
     " C:\Users\vivek\Desktop\Twitch\chats\
