@@ -100,7 +100,7 @@ function! s:OldFilesSource(glob="*", get_first_match=v:false)
     " Primary use point is by wildcard for extensions and word boundaries
     let MinusOne = { s -> strpart(s, 0, len(s)-1) }
     if !exists("g:existing_oldfiles")
-        let g:existing_oldfiles = s:GetExistingOldFiles()
+        let g:existing_oldfiles = s:GetExistingOldFilesDictionaries()
     endif
 
     " file.c -> file\.c

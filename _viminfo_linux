@@ -11,21 +11,65 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/ignore
+~MSle0~/^\s*function!\?\s\+\(s:\)\?\(\w\+#\)\?\w*Until
 
 # Command Line History (newest to oldest):
-:q
-|2,0,1686160181,,"q"
 :qa
-|2,0,1685617668,,"qa"
+|2,0,1688303494,,"qa"
+:MRU
+|2,0,1688303489,,"MRU"
+:so %
+|2,0,1688303486,,"so %"
+:mesages
+|2,0,1688303484,,"mesages"
+:10messages
+|2,0,1688303478,,"10messages"
+:5messages
+|2,0,1688303475,,"5messages"
+:messages
+|2,0,1688303458,,"messages"
+:MRUm
+|2,0,1688303441,,"MRUm"
+:MRU 1:/home/vivek/.vim/plugin/\mru.vim
+|2,0,1688303407,,"MRU 1:/home/vivek/.vim/plugin/\\mru.vim"
+:MRU 23:/home/vivek/.vim/\vimrc
+|2,0,1688303402,,"MRU 23:/home/vivek/.vim/\\vimrc"
+:MRU 10:/usr/share/vim/vim90/doc/\eval.txt
+|2,0,1688303397,,"MRU 10:/usr/share/vim/vim90/doc/\\eval.txt"
+:echo s:Get
+|2,0,1688303322,,"echo s:Get"
+:MRU 
+|2,0,1688303319,,"MRU "
+:echo g:existing_oldfiles
+|2,0,1688303149,,"echo g:existing_oldfiles"
+:echo g:ol
+|2,0,1688303114,,"echo g:ol"
+:MRU Un
+|2,0,1688302358,,"MRU Un"
+:MRU 15:z.sh
+|2,0,1688302352,,"MRU 15:z.sh"
+:MRU 16:exa
+|2,0,1688302286,,"MRU 16:exa"
+:find ~/.vim/plugin/mru.vim
+|2,0,1688302247,,"find ~/.vim/plugin/mru.vim"
+:MRU mru
+|2,0,1688302244,,"MRU mru"
+:echo v:oldfiles
+|2,0,1688302236,,"echo v:oldfiles"
+:MRU 17:gita
+|2,0,1688302219,,"MRU 17:gita"
+:q
+|2,0,1688302213,,"q"
+:echo g:
+|2,0,1688302210,,"echo g:"
+:echo g:old
+|2,0,1688302208,,"echo g:old"
 :Copilot setup
 |2,0,1685617619,,"Copilot setup"
 :q!
 |2,0,1685570792,,"q!"
 :set nonumber
 |2,0,1685569324,,"set nonumber"
-:so %
-|2,0,1685537651,,"so %"
 :bd!
 |2,0,1685531977,,"bd!"
 :echoconsole -n 'hello'
@@ -42,8 +86,6 @@
 |2,0,1685531708,,"echoconsole"
 :echo "\n"
 |2,0,1685531653,,"echo \"\\n\""
-:messages
-|2,0,1685528996,,"messages"
 :message
 |2,0,1685528990,,"message"
 :CocUninstall 
@@ -140,8 +182,6 @@
 |2,0,1685394460,,"echo &timeoutlen"
 :h timeoutlen
 |2,0,1685394425,,"h timeoutlen"
-:MRU 
-|2,0,1685394422,,"MRU "
 :MRU 4:statusline.vim
 |2,0,1685394405,,"MRU 4:statusline.vim"
 :FZF
@@ -160,8 +200,6 @@
 |2,0,1685392491,,"map <Esc>"
 :version
 |2,0,1685392471,,"version"
-:MRU mru
-|2,0,1685392469,,"MRU mru"
 :au CmdlineChanged
 |2,0,1685392465,,"au CmdlineChanged"
 :PLPLT
@@ -226,8 +264,6 @@
 |2,0,1685390510,,"ll"
 :PlugInstall
 |2,0,1685390507,,"PlugInstall"
-:MRU
-|2,0,1685390500,,"MRU"
 :pwd
 |2,0,1685390480,,"pwd"
 :e ic.py
@@ -268,6 +304,20 @@
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/^\s*function!\?\s\+\(s:\)\?\(\w\+#\)\?\w*Until
+|2,1,1688303468,47,"^\\s*function!\\?\\s\\+\\(s:\\)\\?\\(\\w\\+#\\)\\?\\w*Until"
+?/filter(
+|2,1,1688302452,47,"filter("
+?/^\s*function!\?\s\+\(s:\)\?\(\w\+#\)\?\w*Incre
+|2,1,1688302349,47,"^\\s*function!\\?\\s\\+\\(s:\\)\\?\\(\\w\\+#\\)\\?\\w*Incre"
+?/VimEnter
+|2,1,1688302338,47,"VimEnter"
+?/echo
+|2,1,1688302325,47,"echo"
+?/^\s*function!\?\s\+\(s:\)\?\(\w\+#\)\?\w*Increment
+|2,1,1688302254,47,"^\\s*function!\\?\\s\\+\\(s:\\)\\?\\(\\w\\+#\\)\\?\\w*Increment"
+?/oldfil
+|2,1,1688302097,47,"oldfil"
 ?/ignore
 |2,1,1685570780,47,"ignore"
 ?/\t
@@ -358,68 +408,99 @@
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	CHAR	0
-	colb
-|3,0,0,0,1,0,1685569318,"colb"
-""1	LINE	0
-	alias c='cd $(fd --hidden --type file --exec-batch lsd --long  --all {} | fzf | awk '{print $NF}' | xargs -I {} dirname {})'
-|3,1,1,1,1,0,1685570676,"alias c='cd $(fd --hidden --type file --exec-batch lsd --long  --all {} | fzf | awk '{print $NF}' | xargs -I {} dirname {})'"
+""0	CHAR	0
+	GetExistingOldFiles()
+|3,1,0,0,1,0,1688303468,"GetExistingOldFiles()"
+"1	LINE	0
+	echo s:GetE
+|3,0,1,1,1,0,1688303377,"echo s:GetE"
 "2	LINE	0
+	echo filename_dictionaries
+|3,0,2,1,1,0,1688303209,"echo filename_dictionaries"
+"3	LINE	0
+	        echo oldtails
+|3,0,3,1,1,0,1688303065,"        echo oldtails"
+"4	CHAR	0
+	"\\") == -1
+	            call add(filename2_dictionaries, filename_D)
+	        else
+	            let filename_D["uniquetail"] = s:FastIncrementTailDepth(tail, path)
+	            call add(filename2_dictionaries, filename_D)
+	        endif
+	    endfor
+	    return filename2_dictionaries
+	endfunction
+	function! s:IncrementUntilUnique(dicts)
+	    let filename_dictionaries = a:dicts
+	    let oldtails = []
+	
+	    let loop_counter = 0
+	    let max_loop = 10
+	    while v:true
+	        if loop_counter == max_loop
+	            echoerr "Error: Hit upper iteration limit"
+	            break
+	        endif
+	
+	        let tails = map(copy(filename_dictionaries), {_, D -> D["uniquetail"]})
+	        if oldtails == tails
+	            break
+	        else
+	            let oldtails = tails
+	        endif
+	
+	        let duplicates_exist = len(uniq(copy(sort(tails)))) != len(tails)
+	        if !duplicates_exist
+	            break
+	        endif
+	
+	        let filename_dictionaries = s:IncrementTails(filename_dictionaries)
+	        let loop_counter = loop_counter + 1
+	    endwhile
+	    return filename_dictionaries
+	endfunction
+	" let filename_dictionaries = s:OldFilesSource("html.vim")
+|3,0,4,0,39,0,1688302409,"\"\\\\\") == -1","            call add(filename2_dictionaries, filename_D)","        else","            let filename_D[\"uniquetail\"] = s:FastIncrementTailDepth(tail, path)","            call add(filename2_dictionaries, filename_D)","        endif","    endfor","    return filename2_dictionaries","endfunction","function! s:IncrementUntilUnique(dicts)","    let filename_dictionaries = a:dicts","    let oldtails = []","",>26
+|<"    let loop_counter = 0","    let max_loop = 10","    while v:true","        if loop_counter == max_loop","            echoerr \"Error: Hit upper iteration limit\"","            break","        endif","","        let tails = map(copy(filename_dictionaries), {_, D -> D[\"uniquetail\"]})","        if oldtails == tails","            break","        else","            let oldtails = tails","        endif","","        let duplicates_exist = len(uniq(copy(sort(tails)))) != len(tails)",>30
+|<"        if !duplicates_exist","            break","        endif","","        let filename_dictionaries = s:IncrementTails(filename_dictionaries)","        let loop_counter = loop_counter + 1","    endwhile","    return filename_dictionaries","endfunction","\" let filename_dictionaries = s:OldFilesSource(\"html.vim\")"
+"5	LINE	0
+	    let sep = 
+|3,0,5,1,1,0,1688302395,"    let sep = "
+"6	LINE	0
+	let s:temp = s:GetExistingOldFilesDictionaries()
+	echo "len(s:temp) = " . string(len(s:temp))
+	
+|3,0,6,1,3,0,1688302212,"let s:temp = s:GetExistingOldFilesDictionaries()","echo \"len(s:temp) = \" . string(len(s:temp))",""
+"7	LINE	0
+	alias c='cd $(fd --hidden --type file --exec-batch lsd --long  --all {} | fzf | awk '{print $NF}' | xargs -I {} dirname {})'
+|3,0,7,1,1,0,1685570676,"alias c='cd $(fd --hidden --type file --exec-batch lsd --long  --all {} | fzf | awk '{print $NF}' | xargs -I {} dirname {})'"
+"8	LINE	0
 	# alias cola='awk -v col="$1" "{print (col >= 0) ? \$(col + 1) : \$(NF + col + 1)}"'
 	# alias colc="awk -v col='\$1' '{print (col >= 0) ? \$(col+1) : \$(NF + col + 1)}'"
 	alias colc='awk -v col="$1" "{print (col >= 0) ? \$(col+1) : \$(NF + col + 1)}"'
-|3,0,2,1,3,0,1685569296,"# alias cola='awk -v col=\"$1\" \"{print (col >= 0) ? \\$(col + 1) : \\$(NF + col + 1)}\"'","# alias colc=\"awk -v col='\\$1' '{print (col >= 0) ? \\$(col+1) : \\$(NF + col + 1)}'\"","alias colc='awk -v col=\"$1\" \"{print (col >= 0) ? \\$(col+1) : \\$(NF + col + 1)}\"'"
-"3	LINE	0
-	    awk -v col="$column+1" '{print $col}'
-|3,0,3,1,1,0,1685568726,"    awk -v col=\"$column+1\" '{print $col}'"
-"4	LINE	0
-	col() {
-	  local column="$1"
-	
-	  if (( column >= 0 )); then
-	    awk -v col="$column+1" '{print $col}'
-	  else
-	    awk -v col="$(( -column ))" '{print $(NF - col + 1)}'
-	  fi
-	}
-	
-|3,0,4,1,10,0,1685568673,"col() {","  local column=\"$1\"","","  if (( column >= 0 )); then","    awk -v col=\"$column+1\" '{print $col}'","  else","    awk -v col=\"$(( -column ))\" '{print $(NF - col + 1)}'","  fi","}",""
-"5	LINE	0
-	
-|3,0,5,1,1,0,1685560866,""
-"6	LINE	0
-	
-	
-|3,0,6,1,2,0,1685537012,"",""
-"7	LINE	0
-	export FZF_DEFAULT_OPTS="--bind='ctrl-d:cd_parent'"
-|3,0,7,1,1,0,1685536884,"export FZF_DEFAULT_OPTS=\"--bind='ctrl-d:cd_parent'\""
-"8	LINE	0
-	source /usr/share/doc/fzf/examples/key-bindings.bash
-	source /usr/share/doc/fzf/examples/completion.bash
-|3,0,8,1,2,0,1685446462,"source /usr/share/doc/fzf/examples/key-bindings.bash","source /usr/share/doc/fzf/examples/completion.bash"
+|3,0,8,1,3,0,1685569296,"# alias cola='awk -v col=\"$1\" \"{print (col >= 0) ? \\$(col + 1) : \\$(NF + col + 1)}\"'","# alias colc=\"awk -v col='\\$1' '{print (col >= 0) ? \\$(col+1) : \\$(NF + col + 1)}'\"","alias colc='awk -v col=\"$1\" \"{print (col >= 0) ? \\$(col+1) : \\$(NF + col + 1)}\"'"
 "9	LINE	0
-	source /opt/z/z.sh
-|3,0,9,1,1,0,1685446458,"source /opt/z/z.sh"
+	    awk -v col="$column+1" '{print $col}'
+|3,0,9,1,1,0,1685568726,"    awk -v col=\"$column+1\" '{print $col}'"
 "-	CHAR	0
-	# cd to the directory of a file
-|3,0,36,0,1,0,1685570644,"# cd to the directory of a file"
+	GetExistingOldFiles()
+|3,0,36,0,1,0,1688303451,"GetExistingOldFiles()"
 
 # File marks:
-'0  7  4  ~/.vim/.gitignore
-|4,48,7,4,1686160181,"~/.vim/.gitignore"
-'1  1  0  ~/[Plugins]
-|4,49,1,0,1685616539,"~/[Plugins]"
-'2  1  0  ~/[Plugins]
-|4,50,1,0,1685616539,"~/[Plugins]"
-'3  1  0  ~/[Plugins]
-|4,51,1,0,1685616539,"~/[Plugins]"
-'4  1  0  ~/[Plugins]
-|4,52,1,0,1685616539,"~/[Plugins]"
-'5  1  0  ~/[Plugins]
-|4,53,1,0,1685616539,"~/[Plugins]"
-'6  1  0  ~/[Plugins]
-|4,54,1,0,1685616539,"~/[Plugins]"
+'0  318  0  ~/.vim/plugin/mru.vim
+|4,48,318,0,1688303494,"~/.vim/plugin/mru.vim"
+'1  82  0  ~/.vim/plugin/mru.vim
+|4,49,82,0,1688302213,"~/.vim/plugin/mru.vim"
+'2  81  0  ~/.vim/plugin/mru.vim
+|4,50,81,0,1688302213,"~/.vim/plugin/mru.vim"
+'3  7  4  ~/.vim/.gitignore
+|4,51,7,4,1686160181,"~/.vim/.gitignore"
+'4  7  4  ~/.vim/.gitignore
+|4,52,7,4,1686160181,"~/.vim/.gitignore"
+'5  7  4  ~/.vim/.gitignore
+|4,53,7,4,1686160181,"~/.vim/.gitignore"
+'6  7  4  ~/.vim/.gitignore
+|4,54,7,4,1686160181,"~/.vim/.gitignore"
 '7  1  0  ~/[Plugins]
 |4,55,1,0,1685616539,"~/[Plugins]"
 '8  1  0  ~/[Plugins]
@@ -428,10 +509,138 @@
 |4,57,1,0,1685616539,"~/[Plugins]"
 
 # Jumplist (newest first):
+-'  318  0  ~/.vim/plugin/mru.vim
+|4,39,318,0,1688303494,"~/.vim/plugin/mru.vim"
+-'  304  0  ~/.vim/plugin/mru.vim
+|4,39,304,0,1688303468,"~/.vim/plugin/mru.vim"
+-'  103  68  ~/.vim/plugin/mru.vim
+|4,39,103,68,1688303468,"~/.vim/plugin/mru.vim"
+-'  54  12  ~/.vim/plugin/mru.vim
+|4,39,54,12,1688303448,"~/.vim/plugin/mru.vim"
+-'  81  0  ~/.vim/plugin/mru.vim
+|4,39,81,0,1688303430,"~/.vim/plugin/mru.vim"
+-'  70  45  ~/.vim/plugin/mru.vim
+|4,39,70,45,1688303430,"~/.vim/plugin/mru.vim"
+-'  291  12  ~/.vim/plugin/mru.vim
+|4,39,291,12,1688303430,"~/.vim/plugin/mru.vim"
+-'  292  4  ~/.vim/plugin/mru.vim
+|4,39,292,4,1688303430,"~/.vim/plugin/mru.vim"
+-'  295  55  ~/.vim/plugin/mru.vim
+|4,39,295,55,1688303430,"~/.vim/plugin/mru.vim"
+-'  316  16  ~/.vim/plugin/mru.vim
+|4,39,316,16,1688303430,"~/.vim/plugin/mru.vim"
+-'  317  8  ~/.vim/plugin/mru.vim
+|4,39,317,8,1688303430,"~/.vim/plugin/mru.vim"
+-'  334  0  ~/.vim/plugin/mru.vim
+|4,39,334,0,1688303430,"~/.vim/plugin/mru.vim"
+-'  335  0  ~/.vim/plugin/mru.vim
+|4,39,335,0,1688303430,"~/.vim/plugin/mru.vim"
+-'  102  36  ~/.vim/plugin/mru.vim
+|4,39,102,36,1688303429,"~/.vim/plugin/mru.vim"
+-'  58  45  ~/.vim/plugin/mru.vim
+|4,39,58,45,1688303429,"~/.vim/plugin/mru.vim"
+-'  337  0  ~/.vim/plugin/mru.vim
+|4,39,337,0,1688303429,"~/.vim/plugin/mru.vim"
+-'  66  12  ~/.vim/plugin/mru.vim
+|4,39,66,12,1688303362,"~/.vim/plugin/mru.vim"
+-'  91  12  ~/.vim/plugin/mru.vim
+|4,39,91,12,1688303218,"~/.vim/plugin/mru.vim"
+-'  333  32  ~/.vim/plugin/mru.vim
+|4,39,333,32,1688303199,"~/.vim/plugin/mru.vim"
+-'  349  32  ~/.vim/plugin/mru.vim
+|4,39,349,32,1688303198,"~/.vim/plugin/mru.vim"
+-'  306  8  ~/.vim/plugin/mru.vim
+|4,39,306,8,1688303039,"~/.vim/plugin/mru.vim"
+-'  320  16  ~/.vim/plugin/mru.vim
+|4,39,320,16,1688303038,"~/.vim/plugin/mru.vim"
+-'  60  16  ~/.vim/plugin/mru.vim
+|4,39,60,16,1688302458,"~/.vim/plugin/mru.vim"
+-'  72  16  ~/.vim/plugin/mru.vim
+|4,39,72,16,1688302456,"~/.vim/plugin/mru.vim"
+-'  77  24  ~/.vim/plugin/mru.vim
+|4,39,77,24,1688302456,"~/.vim/plugin/mru.vim"
+-'  119  22  ~/.vim/plugin/mru.vim
+|4,39,119,22,1688302455,"~/.vim/plugin/mru.vim"
+-'  128  20  ~/.vim/plugin/mru.vim
+|4,39,128,20,1688302455,"~/.vim/plugin/mru.vim"
+-'  225  0  ~/.vim/plugin/mru.vim
+|4,39,225,0,1688302359,"~/.vim/plugin/mru.vim"
+-'  87  7  ~/.vim/plugin/mru.vim
+|4,39,87,7,1688302349,"~/.vim/plugin/mru.vim"
+-'  1  0  ~/.vim/plugin/mru.vim
+|4,39,1,0,1688302338,"~/.vim/plugin/mru.vim"
+-'  286  2  ~/.vim/plugin/mru.vim
+|4,39,286,2,1688302332,"~/.vim/plugin/mru.vim"
+-'  285  2  ~/.vim/plugin/mru.vim
+|4,39,285,2,1688302331,"~/.vim/plugin/mru.vim"
+-'  284  2  ~/.vim/plugin/mru.vim
+|4,39,284,2,1688302331,"~/.vim/plugin/mru.vim"
+-'  283  2  ~/.vim/plugin/mru.vim
+|4,39,283,2,1688302331,"~/.vim/plugin/mru.vim"
+-'  282  2  ~/.vim/plugin/mru.vim
+|4,39,282,2,1688302331,"~/.vim/plugin/mru.vim"
+-'  281  2  ~/.vim/plugin/mru.vim
+|4,39,281,2,1688302331,"~/.vim/plugin/mru.vim"
+-'  280  2  ~/.vim/plugin/mru.vim
+|4,39,280,2,1688302330,"~/.vim/plugin/mru.vim"
+-'  250  6  ~/.vim/plugin/mru.vim
+|4,39,250,6,1688302330,"~/.vim/plugin/mru.vim"
+-'  247  2  ~/.vim/plugin/mru.vim
+|4,39,247,2,1688302330,"~/.vim/plugin/mru.vim"
+-'  245  2  ~/.vim/plugin/mru.vim
+|4,39,245,2,1688302330,"~/.vim/plugin/mru.vim"
+-'  244  2  ~/.vim/plugin/mru.vim
+|4,39,244,2,1688302329,"~/.vim/plugin/mru.vim"
+-'  243  2  ~/.vim/plugin/mru.vim
+|4,39,243,2,1688302329,"~/.vim/plugin/mru.vim"
+-'  242  2  ~/.vim/plugin/mru.vim
+|4,39,242,2,1688302329,"~/.vim/plugin/mru.vim"
+-'  241  2  ~/.vim/plugin/mru.vim
+|4,39,241,2,1688302329,"~/.vim/plugin/mru.vim"
+-'  240  2  ~/.vim/plugin/mru.vim
+|4,39,240,2,1688302329,"~/.vim/plugin/mru.vim"
+-'  239  2  ~/.vim/plugin/mru.vim
+|4,39,239,2,1688302328,"~/.vim/plugin/mru.vim"
+-'  210  14  ~/.vim/plugin/mru.vim
+|4,39,210,14,1688302328,"~/.vim/plugin/mru.vim"
+-'  138  2  ~/.vim/plugin/mru.vim
+|4,39,138,2,1688302327,"~/.vim/plugin/mru.vim"
+-'  137  2  ~/.vim/plugin/mru.vim
+|4,39,137,2,1688302327,"~/.vim/plugin/mru.vim"
+-'  62  6  ~/.vim/plugin/mru.vim
+|4,39,62,6,1688302326,"~/.vim/plugin/mru.vim"
+-'  42  8  ~/.vim/plugin/mru.vim
+|4,39,42,8,1688302325,"~/.vim/plugin/mru.vim"
+-'  13  0  ~/.vim/plugin/mru.vim
+|4,39,13,0,1688302325,"~/.vim/plugin/mru.vim"
+-'  256  0  ~/.vim/plugin/mru.vim
+|4,39,256,0,1688302315,"~/.vim/plugin/mru.vim"
+-'  289  0  ~/.vim/plugin/mru.vim
+|4,39,289,0,1688302256,"~/.vim/plugin/mru.vim"
+-'  82  0  ~/.vim/plugin/mru.vim
+|4,39,82,0,1688302213,"~/.vim/plugin/mru.vim"
+-'  81  0  ~/.vim/plugin/mru.vim
+|4,39,81,0,1688302213,"~/.vim/plugin/mru.vim"
+-'  1  0  ~/.vim/plugin/mru.vim
+|4,39,1,0,1688302093,"~/.vim/plugin/mru.vim"
+-'  7  4  ~/.vim/.gitignore
+|4,39,7,4,1686160181,"~/.vim/.gitignore"
+-'  7  4  ~/.vim/.gitignore
+|4,39,7,4,1686160181,"~/.vim/.gitignore"
 -'  7  4  ~/.vim/.gitignore
 |4,39,7,4,1686160181,"~/.vim/.gitignore"
 -'  1  0  ~/.vim/.gitignore
 |4,39,1,0,1686160176,"~/.vim/.gitignore"
+-'  1  0  ~/.vim/.gitignore
+|4,39,1,0,1686160176,"~/.vim/.gitignore"
+-'  1  0  ~/.vim/.gitignore
+|4,39,1,0,1686160176,"~/.vim/.gitignore"
+-'  1  0  ~/[Plugins]
+|4,39,1,0,1685616539,"~/[Plugins]"
+-'  1  0  ~/[Plugins]
+|4,39,1,0,1685616539,"~/[Plugins]"
+-'  6  0  ~/[Plugins]
+|4,39,6,0,1685616539,"~/[Plugins]"
 -'  1  0  ~/[Plugins]
 |4,39,1,0,1685616539,"~/[Plugins]"
 -'  6  0  ~/[Plugins]
@@ -462,6 +671,8 @@
 |4,39,8,0,1685616538,"~/[Plugins]"
 -'  8  0  ~/[Plugins]
 |4,39,8,0,1685616538,"~/[Plugins]"
+-'  8  0  ~/[Plugins]
+|4,39,8,0,1685616538,"~/[Plugins]"
 -'  2  0  ~/[Plugins]
 |4,39,2,0,1685616533,"~/[Plugins]"
 -'  2  0  ~/[Plugins]
@@ -472,6 +683,8 @@
 |4,39,2,0,1685616533,"~/[Plugins]"
 -'  2  0  ~/[Plugins]
 |4,39,2,0,1685616533,"~/[Plugins]"
+-'  2  0  ~/[Plugins]
+|4,39,2,0,1685616533,"~/[Plugins]"
 -'  11  0  ~/.config/setup.sh
 |4,39,11,0,1685570678,"~/.config/setup.sh"
 -'  11  0  ~/.config/setup.sh
@@ -484,155 +697,54 @@
 |4,39,11,0,1685570678,"~/.config/setup.sh"
 -'  11  0  ~/.config/setup.sh
 |4,39,11,0,1685570678,"~/.config/setup.sh"
--'  12  8  ~/.config/setup.sh
-|4,39,12,8,1685570663,"~/.config/setup.sh"
--'  12  8  ~/.config/setup.sh
-|4,39,12,8,1685570663,"~/.config/setup.sh"
--'  12  8  ~/.config/setup.sh
-|4,39,12,8,1685570663,"~/.config/setup.sh"
--'  12  8  ~/.config/setup.sh
-|4,39,12,8,1685570663,"~/.config/setup.sh"
--'  12  8  ~/.config/setup.sh
-|4,39,12,8,1685570663,"~/.config/setup.sh"
--'  12  8  ~/.config/setup.sh
-|4,39,12,8,1685570663,"~/.config/setup.sh"
--'  12  8  ~/.config/setup.sh
-|4,39,12,8,1685570663,"~/.config/setup.sh"
 -'  11  0  ~/.config/setup.sh
-|4,39,11,0,1685570606,"~/.config/setup.sh"
--'  11  0  ~/.config/setup.sh
-|4,39,11,0,1685570606,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1685570599,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1685570599,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1685570599,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1685570599,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1685570599,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1685570599,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1685570599,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1685570599,"~/.config/setup.sh"
--'  2  1  ~/.inputrc
-|4,39,2,1,1685570574,"~/.inputrc"
--'  2  1  ~/.inputrc
-|4,39,2,1,1685570574,"~/.inputrc"
--'  2  1  ~/.inputrc
-|4,39,2,1,1685570574,"~/.inputrc"
--'  2  1  ~/.inputrc
-|4,39,2,1,1685570574,"~/.inputrc"
--'  2  1  ~/.inputrc
-|4,39,2,1,1685570574,"~/.inputrc"
--'  2  1  ~/.inputrc
-|4,39,2,1,1685570574,"~/.inputrc"
--'  2  1  ~/.inputrc
-|4,39,2,1,1685570574,"~/.inputrc"
--'  2  1  ~/.inputrc
-|4,39,2,1,1685570574,"~/.inputrc"
--'  2  1  ~/.inputrc
-|4,39,2,1,1685570574,"~/.inputrc"
--'  1  0  ~/.inputrc
-|4,39,1,0,1685570556,"~/.inputrc"
--'  1  0  ~/.inputrc
-|4,39,1,0,1685570556,"~/.inputrc"
--'  1  0  ~/.inputrc
-|4,39,1,0,1685570556,"~/.inputrc"
--'  1  0  ~/.inputrc
-|4,39,1,0,1685570556,"~/.inputrc"
--'  1  0  ~/.inputrc
-|4,39,1,0,1685570556,"~/.inputrc"
--'  1  0  ~/.inputrc
-|4,39,1,0,1685570556,"~/.inputrc"
--'  1  0  ~/.inputrc
-|4,39,1,0,1685570556,"~/.inputrc"
--'  1  0  ~/.inputrc
-|4,39,1,0,1685570556,"~/.inputrc"
--'  1  0  ~/.inputrc
-|4,39,1,0,1685570556,"~/.inputrc"
--'  13  0  ~/awk_function.sh
-|4,39,13,0,1685569441,"~/awk_function.sh"
--'  13  0  ~/awk_function.sh
-|4,39,13,0,1685569441,"~/awk_function.sh"
--'  13  0  ~/awk_function.sh
-|4,39,13,0,1685569441,"~/awk_function.sh"
--'  13  0  ~/awk_function.sh
-|4,39,13,0,1685569441,"~/awk_function.sh"
--'  13  0  ~/awk_function.sh
-|4,39,13,0,1685569441,"~/awk_function.sh"
--'  13  0  ~/awk_function.sh
-|4,39,13,0,1685569441,"~/awk_function.sh"
--'  13  0  ~/awk_function.sh
-|4,39,13,0,1685569441,"~/awk_function.sh"
--'  13  0  ~/awk_function.sh
-|4,39,13,0,1685569441,"~/awk_function.sh"
--'  13  0  ~/awk_function.sh
-|4,39,13,0,1685569441,"~/awk_function.sh"
--'  13  0  ~/awk_function.sh
-|4,39,13,0,1685569441,"~/awk_function.sh"
--'  11  2  ~/awk_function.sh
-|4,39,11,2,1685569318,"~/awk_function.sh"
--'  11  2  ~/awk_function.sh
-|4,39,11,2,1685569318,"~/awk_function.sh"
--'  11  2  ~/awk_function.sh
-|4,39,11,2,1685569318,"~/awk_function.sh"
--'  11  2  ~/awk_function.sh
-|4,39,11,2,1685569318,"~/awk_function.sh"
--'  11  2  ~/awk_function.sh
-|4,39,11,2,1685569318,"~/awk_function.sh"
--'  11  2  ~/awk_function.sh
-|4,39,11,2,1685569318,"~/awk_function.sh"
--'  11  2  ~/awk_function.sh
-|4,39,11,2,1685569318,"~/awk_function.sh"
--'  11  2  ~/awk_function.sh
-|4,39,11,2,1685569318,"~/awk_function.sh"
--'  11  2  ~/awk_function.sh
-|4,39,11,2,1685569318,"~/awk_function.sh"
--'  11  2  ~/awk_function.sh
-|4,39,11,2,1685569318,"~/awk_function.sh"
--'  4  29  ~/awk_function.sh
-|4,39,4,29,1685569307,"~/awk_function.sh"
--'  4  29  ~/awk_function.sh
-|4,39,4,29,1685569307,"~/awk_function.sh"
--'  4  29  ~/awk_function.sh
-|4,39,4,29,1685569307,"~/awk_function.sh"
--'  4  29  ~/awk_function.sh
-|4,39,4,29,1685569307,"~/awk_function.sh"
--'  4  29  ~/awk_function.sh
-|4,39,4,29,1685569307,"~/awk_function.sh"
--'  4  29  ~/awk_function.sh
-|4,39,4,29,1685569307,"~/awk_function.sh"
--'  4  29  ~/awk_function.sh
-|4,39,4,29,1685569307,"~/awk_function.sh"
--'  4  29  ~/awk_function.sh
-|4,39,4,29,1685569307,"~/awk_function.sh"
--'  4  29  ~/awk_function.sh
-|4,39,4,29,1685569307,"~/awk_function.sh"
--'  4  29  ~/awk_function.sh
-|4,39,4,29,1685569307,"~/awk_function.sh"
--'  1  0  ~/awk_function.sh
-|4,39,1,0,1685569291,"~/awk_function.sh"
--'  1  0  ~/awk_function.sh
-|4,39,1,0,1685569291,"~/awk_function.sh"
--'  1  0  ~/awk_function.sh
-|4,39,1,0,1685569291,"~/awk_function.sh"
--'  1  0  ~/awk_function.sh
-|4,39,1,0,1685569291,"~/awk_function.sh"
--'  1  0  ~/awk_function.sh
-|4,39,1,0,1685569291,"~/awk_function.sh"
--'  1  0  ~/awk_function.sh
-|4,39,1,0,1685569291,"~/awk_function.sh"
--'  1  0  ~/awk_function.sh
-|4,39,1,0,1685569291,"~/awk_function.sh"
+|4,39,11,0,1685570678,"~/.config/setup.sh"
+-'  12  8  ~/.config/setup.sh
+|4,39,12,8,1685570663,"~/.config/setup.sh"
+-'  12  8  ~/.config/setup.sh
+|4,39,12,8,1685570663,"~/.config/setup.sh"
+-'  12  8  ~/.config/setup.sh
+|4,39,12,8,1685570663,"~/.config/setup.sh"
+-'  12  8  ~/.config/setup.sh
+|4,39,12,8,1685570663,"~/.config/setup.sh"
 
 # Buffer list:
+%~/.vim/plugin/mru.vim	336	0
 %~/.vim/.gitignore	7	4
 
 # History of marks within files (newest to oldest):
+
+> ~/.vim/plugin/mru.vim
+	*	1688303489	0
+	"	336	0
+	^	103	69
+	.	103	36
+	+	13	0
+	+	82	11
+	+	82	10
+	+	70	46
+	+	82	0
+	+	292	50
+	+	292	14
+	+	295	57
+	+	317	0
+	+	334	0
+	+	335	1
+	+	334	0
+	+	102	41
+	+	58	46
+	+	335	0
+	+	335	27
+	+	334	30
+	+	335	5
+	+	58	44
+	+	70	44
+	+	335	10
+	+	103	36
+	+	335	0
+	+	334	50
+	+	81	0
+	+	103	36
 
 > ~/.vim/.gitignore
 	*	1686160181	0
@@ -858,12 +970,6 @@
 	"	277	4
 	.	277	0
 	+	277	0
-
-> ~/.vim/plugin/mru.vim
-	*	1685394402	0
-	"	13	0
-	.	13	0
-	+	13	0
 
 > ~/.vim/performance/230529.long_pause_linux_term.v04.txt
 	*	1685394394	0
