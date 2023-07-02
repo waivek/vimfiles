@@ -51,23 +51,11 @@ function! s:Reset()
 endfunction
 
 
-function! s:GetExistingOldFiles()
-    let start_time = reltimefloat(reltime())
-    let is_windows = has('win32') || has('win64')
-    let l:home = is_windows ? escape(expand("~"), '\') : expand("~")
-    let l:pattern = is_windows ? "^\\~" : "^/~"
-    let expanded_paths = map(copy(v:oldfiles), 'substitute(v:val, l:pattern, l:home, "")') " we use substitute instead of escape for faster but less accurate result
-    let paths = filter(expanded_paths, 'filereadable(v:val)')
-    let time_taken = reltimefloat(reltime()) - start_time
-    " echo "Time taken to get existing oldfiles: " . string(time_taken)
-    return paths
-endfunction
-
 function! s:GetExistingOldFilesDictionaries()
     let start_time = reltimefloat(reltime())
     let is_windows = has('win32') || has('win64')
     let l:home = is_windows ? escape(expand("~"), '\') : expand("~")
-    let l:pattern = is_windows ? "^\\~" : "^/~"
+    let l:pattern = "^\\~"
     let expanded_paths = map(copy(v:oldfiles), 'substitute(v:val, l:pattern, l:home, "")') " we use substitute instead of escape for faster but less accurate result
     let paths = filter(expanded_paths, 'filereadable(v:val)')
     let time_taken = reltimefloat(reltime()) - start_time
@@ -77,7 +65,6 @@ function! s:GetExistingOldFilesDictionaries()
     let l:filtered_a3 = filter(copy(l:a1), 'filereadable(v:val["text"])')
     return l:filtered_a3
 endfunction
-
 
 
 " Introducing Latency for startup but worth it to remove the lag when typing MRU
