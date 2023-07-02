@@ -14,8 +14,12 @@
 ~MSle0~/\C\<IncrementUntilUnique\>
 
 # Command Line History (newest to oldest):
+:q
+|2,0,1688310897,,"q"
 :qa
-|2,0,1688310205,,"qa"
+|2,0,1688310869,,"qa"
+:MRU 17:z/z.sh
+|2,0,1688310822,,"MRU 17:z/z.sh"
 :MRU 34:performance/performance.vim
 |2,0,1688310199,,"MRU 34:performance/performance.vim"
 :MRU 28:.vim/mini.vimrc
@@ -94,8 +98,6 @@
 |2,0,1688308540,,"MRU 26:mini.vimrc"
 :MRU 17:gita
 |2,0,1688308526,,"MRU 17:gita"
-:q
-|2,0,1688303664,,"q"
 :echo v:oldfiles
 |2,0,1688303612,,"echo v:oldfiles"
 :mesages
@@ -625,88 +627,202 @@
 |3,0,36,0,1,0,1688309859,"copy(tails)"
 
 # File marks:
-'0  333  0  ~/.vim/plugin/mru.vim
-|4,48,333,0,1688310205,"~/.vim/plugin/mru.vim"
-'1  58  4  ~/.vim/plugin/mru.vim
-|4,49,58,4,1688303664,"~/.vim/plugin/mru.vim"
-'2  58  4  ~/.vim/plugin/mru.vim
-|4,50,58,4,1688303664,"~/.vim/plugin/mru.vim"
-'3  58  4  ~/.vim/plugin/mru.vim
-|4,51,58,4,1688303664,"~/.vim/plugin/mru.vim"
-'4  58  4  ~/.vim/plugin/mru.vim
-|4,52,58,4,1688303664,"~/.vim/plugin/mru.vim"
-'5  313  0  ~/.vim/plugin/mru.vim
-|4,53,313,0,1688303494,"~/.vim/plugin/mru.vim"
-'6  330  0  ~/.vim/plugin/mru.vim
-|4,54,330,0,1688303494,"~/.vim/plugin/mru.vim"
-'7  308  0  ~/.vim/plugin/mru.vim
-|4,55,308,0,1688303494,"~/.vim/plugin/mru.vim"
-'8  319  0  ~/.vim/plugin/mru.vim
-|4,56,319,0,1688303494,"~/.vim/plugin/mru.vim"
-'9  313  0  ~/.vim/plugin/mru.vim
-|4,57,313,0,1688303494,"~/.vim/plugin/mru.vim"
+'0  1  0  ~/.vim/coc-settings.json
+|4,48,1,0,1688310897,"~/.vim/coc-settings.json"
+'1  333  0  ~/.vim/plugin/mru.vim
+|4,49,333,0,1688310205,"~/.vim/plugin/mru.vim"
+'2  333  0  ~/.vim/plugin/mru.vim
+|4,50,333,0,1688310205,"~/.vim/plugin/mru.vim"
+'3  333  0  ~/.vim/plugin/mru.vim
+|4,51,333,0,1688310205,"~/.vim/plugin/mru.vim"
+'4  333  0  ~/.vim/plugin/mru.vim
+|4,52,333,0,1688310205,"~/.vim/plugin/mru.vim"
+'5  58  4  ~/.vim/plugin/mru.vim
+|4,53,58,4,1688303664,"~/.vim/plugin/mru.vim"
+'6  58  4  ~/.vim/plugin/mru.vim
+|4,54,58,4,1688303664,"~/.vim/plugin/mru.vim"
+'7  58  4  ~/.vim/plugin/mru.vim
+|4,55,58,4,1688303664,"~/.vim/plugin/mru.vim"
+'8  58  4  ~/.vim/plugin/mru.vim
+|4,56,58,4,1688303664,"~/.vim/plugin/mru.vim"
+'9  58  4  ~/.vim/plugin/mru.vim
+|4,57,58,4,1688303664,"~/.vim/plugin/mru.vim"
 
 # Jumplist (newest first):
+-'  1  0  ~/.vim/coc-settings.json
+|4,39,1,0,1688310897,"~/.vim/coc-settings.json"
+-'  333  0  ~/.vim/plugin/mru.vim
+|4,39,333,0,1688310205,"~/.vim/plugin/mru.vim"
+-'  333  0  ~/.vim/plugin/mru.vim
+|4,39,333,0,1688310205,"~/.vim/plugin/mru.vim"
 -'  333  0  ~/.vim/plugin/mru.vim
 |4,39,333,0,1688310205,"~/.vim/plugin/mru.vim"
 -'  220  37  ~/.vim/plugin/mru.vim
 |4,39,220,37,1688309818,"~/.vim/plugin/mru.vim"
+-'  220  37  ~/.vim/plugin/mru.vim
+|4,39,220,37,1688309818,"~/.vim/plugin/mru.vim"
+-'  220  37  ~/.vim/plugin/mru.vim
+|4,39,220,37,1688309818,"~/.vim/plugin/mru.vim"
 -'  292  45  ~/.vim/plugin/mru.vim
 |4,39,292,45,1688309800,"~/.vim/plugin/mru.vim"
+-'  292  45  ~/.vim/plugin/mru.vim
+|4,39,292,45,1688309800,"~/.vim/plugin/mru.vim"
+-'  292  45  ~/.vim/plugin/mru.vim
+|4,39,292,45,1688309800,"~/.vim/plugin/mru.vim"
+-'  310  65  ~/.vim/plugin/mru.vim
+|4,39,310,65,1688309798,"~/.vim/plugin/mru.vim"
+-'  310  65  ~/.vim/plugin/mru.vim
+|4,39,310,65,1688309798,"~/.vim/plugin/mru.vim"
 -'  310  65  ~/.vim/plugin/mru.vim
 |4,39,310,65,1688309798,"~/.vim/plugin/mru.vim"
 -'  286  31  ~/.vim/plugin/mru.vim
 |4,39,286,31,1688309797,"~/.vim/plugin/mru.vim"
 -'  139  68  ~/.vim/plugin/mru.vim
 |4,39,139,68,1688309797,"~/.vim/plugin/mru.vim"
+-'  286  31  ~/.vim/plugin/mru.vim
+|4,39,286,31,1688309797,"~/.vim/plugin/mru.vim"
+-'  139  68  ~/.vim/plugin/mru.vim
+|4,39,139,68,1688309797,"~/.vim/plugin/mru.vim"
+-'  286  31  ~/.vim/plugin/mru.vim
+|4,39,286,31,1688309797,"~/.vim/plugin/mru.vim"
+-'  139  68  ~/.vim/plugin/mru.vim
+|4,39,139,68,1688309797,"~/.vim/plugin/mru.vim"
+-'  337  46  ~/.vim/plugin/mru.vim
+|4,39,337,46,1688309790,"~/.vim/plugin/mru.vim"
+-'  337  46  ~/.vim/plugin/mru.vim
+|4,39,337,46,1688309790,"~/.vim/plugin/mru.vim"
 -'  337  46  ~/.vim/plugin/mru.vim
 |4,39,337,46,1688309790,"~/.vim/plugin/mru.vim"
 -'  300  0  ~/.vim/plugin/mru.vim
 |4,39,300,0,1688309788,"~/.vim/plugin/mru.vim"
+-'  300  0  ~/.vim/plugin/mru.vim
+|4,39,300,0,1688309788,"~/.vim/plugin/mru.vim"
+-'  300  0  ~/.vim/plugin/mru.vim
+|4,39,300,0,1688309788,"~/.vim/plugin/mru.vim"
+-'  124  4  ~/.vim/plugin/mru.vim
+|4,39,124,4,1688309744,"~/.vim/plugin/mru.vim"
+-'  124  4  ~/.vim/plugin/mru.vim
+|4,39,124,4,1688309744,"~/.vim/plugin/mru.vim"
 -'  124  4  ~/.vim/plugin/mru.vim
 |4,39,124,4,1688309744,"~/.vim/plugin/mru.vim"
 -'  80  0  ~/.vim/plugin/mru.vim
 |4,39,80,0,1688309703,"~/.vim/plugin/mru.vim"
+-'  80  0  ~/.vim/plugin/mru.vim
+|4,39,80,0,1688309703,"~/.vim/plugin/mru.vim"
+-'  80  0  ~/.vim/plugin/mru.vim
+|4,39,80,0,1688309703,"~/.vim/plugin/mru.vim"
+-'  75  26  ~/.vim/plugin/mru.vim
+|4,39,75,26,1688309680,"~/.vim/plugin/mru.vim"
+-'  75  26  ~/.vim/plugin/mru.vim
+|4,39,75,26,1688309680,"~/.vim/plugin/mru.vim"
 -'  75  26  ~/.vim/plugin/mru.vim
 |4,39,75,26,1688309680,"~/.vim/plugin/mru.vim"
 -'  1  0  ~/.vim/plugin/mru.vim
 |4,39,1,0,1688309676,"~/.vim/plugin/mru.vim"
+-'  1  0  ~/.vim/plugin/mru.vim
+|4,39,1,0,1688309676,"~/.vim/plugin/mru.vim"
+-'  1  0  ~/.vim/plugin/mru.vim
+|4,39,1,0,1688309676,"~/.vim/plugin/mru.vim"
+-'  252  4  ~/.vim/plugin/mru.vim
+|4,39,252,4,1688309675,"~/.vim/plugin/mru.vim"
+-'  252  4  ~/.vim/plugin/mru.vim
+|4,39,252,4,1688309675,"~/.vim/plugin/mru.vim"
 -'  252  4  ~/.vim/plugin/mru.vim
 |4,39,252,4,1688309675,"~/.vim/plugin/mru.vim"
 -'  288  57  ~/.vim/plugin/mru.vim
 |4,39,288,57,1688309672,"~/.vim/plugin/mru.vim"
+-'  288  57  ~/.vim/plugin/mru.vim
+|4,39,288,57,1688309672,"~/.vim/plugin/mru.vim"
+-'  288  57  ~/.vim/plugin/mru.vim
+|4,39,288,57,1688309672,"~/.vim/plugin/mru.vim"
+-'  289  57  ~/.vim/plugin/mru.vim
+|4,39,289,57,1688309663,"~/.vim/plugin/mru.vim"
+-'  289  57  ~/.vim/plugin/mru.vim
+|4,39,289,57,1688309663,"~/.vim/plugin/mru.vim"
 -'  289  57  ~/.vim/plugin/mru.vim
 |4,39,289,57,1688309663,"~/.vim/plugin/mru.vim"
 -'  263  10  ~/.vim/plugin/mru.vim
 |4,39,263,10,1688309612,"~/.vim/plugin/mru.vim"
+-'  263  10  ~/.vim/plugin/mru.vim
+|4,39,263,10,1688309612,"~/.vim/plugin/mru.vim"
+-'  263  10  ~/.vim/plugin/mru.vim
+|4,39,263,10,1688309612,"~/.vim/plugin/mru.vim"
+-'  64  67  ~/.vim/plugin/mru.vim
+|4,39,64,67,1688309586,"~/.vim/plugin/mru.vim"
+-'  64  67  ~/.vim/plugin/mru.vim
+|4,39,64,67,1688309586,"~/.vim/plugin/mru.vim"
 -'  64  67  ~/.vim/plugin/mru.vim
 |4,39,64,67,1688309586,"~/.vim/plugin/mru.vim"
 -'  334  38  ~/.vim/plugin/mru.vim
 |4,39,334,38,1688309523,"~/.vim/plugin/mru.vim"
+-'  334  38  ~/.vim/plugin/mru.vim
+|4,39,334,38,1688309523,"~/.vim/plugin/mru.vim"
+-'  334  38  ~/.vim/plugin/mru.vim
+|4,39,334,38,1688309523,"~/.vim/plugin/mru.vim"
+-'  316  27  ~/.vim/plugin/mru.vim
+|4,39,316,27,1688309483,"~/.vim/plugin/mru.vim"
+-'  316  27  ~/.vim/plugin/mru.vim
+|4,39,316,27,1688309483,"~/.vim/plugin/mru.vim"
 -'  316  27  ~/.vim/plugin/mru.vim
 |4,39,316,27,1688309483,"~/.vim/plugin/mru.vim"
 -'  1  0  ~/.vim/.gitignore
 |4,39,1,0,1688309315,"~/.vim/.gitignore"
 -'  1  0  ~/.vim/.gitignore
 |4,39,1,0,1688309315,"~/.vim/.gitignore"
+-'  1  0  ~/.vim/.gitignore
+|4,39,1,0,1688309315,"~/.vim/.gitignore"
+-'  1  0  ~/.vim/.gitignore
+|4,39,1,0,1688309315,"~/.vim/.gitignore"
 -'  333  0  ~/.vim/plugin/mru.vim
 |4,39,333,0,1688309274,"~/.vim/plugin/mru.vim"
+-'  332  54  ~/.vim/plugin/mru.vim
+|4,39,332,54,1688309248,"~/.vim/plugin/mru.vim"
+-'  332  54  ~/.vim/plugin/mru.vim
+|4,39,332,54,1688309248,"~/.vim/plugin/mru.vim"
 -'  334  54  ~/.vim/plugin/mru.vim
 |4,39,334,54,1688309248,"~/.vim/plugin/mru.vim"
 -'  332  54  ~/.vim/plugin/mru.vim
 |4,39,332,54,1688309248,"~/.vim/plugin/mru.vim"
 -'  317  12  ~/.vim/plugin/mru.vim
 |4,39,317,12,1688309242,"~/.vim/plugin/mru.vim"
+-'  317  12  ~/.vim/plugin/mru.vim
+|4,39,317,12,1688309242,"~/.vim/plugin/mru.vim"
+-'  317  12  ~/.vim/plugin/mru.vim
+|4,39,317,12,1688309242,"~/.vim/plugin/mru.vim"
 -'  316  12  ~/.vim/plugin/mru.vim
 |4,39,316,12,1688309242,"~/.vim/plugin/mru.vim"
+-'  315  27  ~/.vim/plugin/mru.vim
+|4,39,315,27,1688309222,"~/.vim/plugin/mru.vim"
+-'  315  27  ~/.vim/plugin/mru.vim
+|4,39,315,27,1688309222,"~/.vim/plugin/mru.vim"
 -'  315  27  ~/.vim/plugin/mru.vim
 |4,39,315,27,1688309222,"~/.vim/plugin/mru.vim"
 -'  311  30  ~/.vim/plugin/mru.vim
 |4,39,311,30,1688309046,"~/.vim/plugin/mru.vim"
 -'  309  30  ~/.vim/plugin/mru.vim
 |4,39,309,30,1688309046,"~/.vim/plugin/mru.vim"
+-'  311  30  ~/.vim/plugin/mru.vim
+|4,39,311,30,1688309046,"~/.vim/plugin/mru.vim"
+-'  309  30  ~/.vim/plugin/mru.vim
+|4,39,309,30,1688309046,"~/.vim/plugin/mru.vim"
+-'  311  30  ~/.vim/plugin/mru.vim
+|4,39,311,30,1688309046,"~/.vim/plugin/mru.vim"
+-'  309  30  ~/.vim/plugin/mru.vim
+|4,39,309,30,1688309046,"~/.vim/plugin/mru.vim"
 -'  308  30  ~/.vim/plugin/mru.vim
 |4,39,308,30,1688309043,"~/.vim/plugin/mru.vim"
+-'  308  30  ~/.vim/plugin/mru.vim
+|4,39,308,30,1688309043,"~/.vim/plugin/mru.vim"
+-'  308  30  ~/.vim/plugin/mru.vim
+|4,39,308,30,1688309043,"~/.vim/plugin/mru.vim"
+-'  298  12  ~/.vim/plugin/mru.vim
+|4,39,298,12,1688308845,"~/.vim/plugin/mru.vim"
+-'  295  12  ~/.vim/plugin/mru.vim
+|4,39,295,12,1688308845,"~/.vim/plugin/mru.vim"
+-'  298  12  ~/.vim/plugin/mru.vim
+|4,39,298,12,1688308845,"~/.vim/plugin/mru.vim"
+-'  295  12  ~/.vim/plugin/mru.vim
+|4,39,295,12,1688308845,"~/.vim/plugin/mru.vim"
 -'  298  12  ~/.vim/plugin/mru.vim
 |4,39,298,12,1688308845,"~/.vim/plugin/mru.vim"
 -'  295  12  ~/.vim/plugin/mru.vim
@@ -715,6 +831,14 @@
 |4,39,93,69,1688308811,"~/.vim/plugin/mru.vim"
 -'  93  69  ~/.vim/plugin/mru.vim
 |4,39,93,69,1688308811,"~/.vim/plugin/mru.vim"
+-'  93  69  ~/.vim/plugin/mru.vim
+|4,39,93,69,1688308811,"~/.vim/plugin/mru.vim"
+-'  93  69  ~/.vim/plugin/mru.vim
+|4,39,93,69,1688308811,"~/.vim/plugin/mru.vim"
+-'  69  46  ~/.vim/plugin/mru.vim
+|4,39,69,46,1688308665,"~/.vim/plugin/mru.vim"
+-'  69  46  ~/.vim/plugin/mru.vim
+|4,39,69,46,1688308665,"~/.vim/plugin/mru.vim"
 -'  69  46  ~/.vim/plugin/mru.vim
 |4,39,69,46,1688308665,"~/.vim/plugin/mru.vim"
 -'  69  46  ~/.vim/plugin/mru.vim
@@ -723,134 +847,17 @@
 |4,39,72,5,1688308631,"~/.vim/plugin/mru.vim"
 -'  72  5  ~/.vim/plugin/mru.vim
 |4,39,72,5,1688308631,"~/.vim/plugin/mru.vim"
--'  71  10  ~/.vim/plugin/mru.vim
-|4,39,71,10,1688308625,"~/.vim/plugin/mru.vim"
--'  70  14  ~/.vim/plugin/mru.vim
-|4,39,70,14,1688308625,"~/.vim/plugin/mru.vim"
--'  71  10  ~/.vim/plugin/mru.vim
-|4,39,71,10,1688308625,"~/.vim/plugin/mru.vim"
--'  70  14  ~/.vim/plugin/mru.vim
-|4,39,70,14,1688308625,"~/.vim/plugin/mru.vim"
--'  57  45  ~/.vim/plugin/mru.vim
-|4,39,57,45,1688308578,"~/.vim/plugin/mru.vim"
--'  57  45  ~/.vim/plugin/mru.vim
-|4,39,57,45,1688308578,"~/.vim/plugin/mru.vim"
--'  58  24  ~/.vim/plugin/mru.vim
-|4,39,58,24,1688308577,"~/.vim/plugin/mru.vim"
--'  110  72  ~/.vim/plugin/mru.vim
-|4,39,110,72,1688308577,"~/.vim/plugin/mru.vim"
--'  119  55  ~/.vim/plugin/mru.vim
-|4,39,119,55,1688308577,"~/.vim/plugin/mru.vim"
--'  138  41  ~/.vim/plugin/mru.vim
-|4,39,138,41,1688308577,"~/.vim/plugin/mru.vim"
--'  58  24  ~/.vim/plugin/mru.vim
-|4,39,58,24,1688308577,"~/.vim/plugin/mru.vim"
--'  110  72  ~/.vim/plugin/mru.vim
-|4,39,110,72,1688308577,"~/.vim/plugin/mru.vim"
--'  119  55  ~/.vim/plugin/mru.vim
-|4,39,119,55,1688308577,"~/.vim/plugin/mru.vim"
--'  138  41  ~/.vim/plugin/mru.vim
-|4,39,138,41,1688308577,"~/.vim/plugin/mru.vim"
--'  58  4  ~/.vim/plugin/mru.vim
-|4,39,58,4,1688303664,"~/.vim/plugin/mru.vim"
--'  57  65  ~/.vim/plugin/mru.vim
-|4,39,57,65,1688303589,"~/.vim/plugin/mru.vim"
--'  54  0  ~/.vim/plugin/mru.vim
-|4,39,54,0,1688303580,"~/.vim/plugin/mru.vim"
--'  54  0  ~/.vim/plugin/mru.vim
-|4,39,54,0,1688303580,"~/.vim/plugin/mru.vim"
--'  54  0  ~/.vim/plugin/mru.vim
-|4,39,54,0,1688303580,"~/.vim/plugin/mru.vim"
--'  1  0  ~/.vim/plugin/mru.vim
-|4,39,1,0,1688303564,"~/.vim/plugin/mru.vim"
--'  1  0  ~/.vim/plugin/mru.vim
-|4,39,1,0,1688303564,"~/.vim/plugin/mru.vim"
--'  294  0  ~/.vim/plugin/mru.vim
-|4,39,294,0,1688303562,"~/.vim/plugin/mru.vim"
--'  291  0  ~/.vim/plugin/mru.vim
-|4,39,291,0,1688303562,"~/.vim/plugin/mru.vim"
--'  313  0  ~/.vim/plugin/mru.vim
-|4,39,313,0,1688303494,"~/.vim/plugin/mru.vim"
--'  330  0  ~/.vim/plugin/mru.vim
-|4,39,330,0,1688303494,"~/.vim/plugin/mru.vim"
--'  308  0  ~/.vim/plugin/mru.vim
-|4,39,308,0,1688303494,"~/.vim/plugin/mru.vim"
--'  319  0  ~/.vim/plugin/mru.vim
-|4,39,319,0,1688303494,"~/.vim/plugin/mru.vim"
--'  313  0  ~/.vim/plugin/mru.vim
-|4,39,313,0,1688303494,"~/.vim/plugin/mru.vim"
--'  329  0  ~/.vim/plugin/mru.vim
-|4,39,329,0,1688303494,"~/.vim/plugin/mru.vim"
--'  305  0  ~/.vim/plugin/mru.vim
-|4,39,305,0,1688303494,"~/.vim/plugin/mru.vim"
--'  318  0  ~/.vim/plugin/mru.vim
-|4,39,318,0,1688303494,"~/.vim/plugin/mru.vim"
--'  94  68  ~/.vim/plugin/mru.vim
-|4,39,94,68,1688303468,"~/.vim/plugin/mru.vim"
--'  312  0  ~/.vim/plugin/mru.vim
-|4,39,312,0,1688303468,"~/.vim/plugin/mru.vim"
--'  107  68  ~/.vim/plugin/mru.vim
-|4,39,107,68,1688303468,"~/.vim/plugin/mru.vim"
--'  90  68  ~/.vim/plugin/mru.vim
-|4,39,90,68,1688303468,"~/.vim/plugin/mru.vim"
--'  307  0  ~/.vim/plugin/mru.vim
-|4,39,307,0,1688303468,"~/.vim/plugin/mru.vim"
--'  103  68  ~/.vim/plugin/mru.vim
-|4,39,103,68,1688303468,"~/.vim/plugin/mru.vim"
--'  94  68  ~/.vim/plugin/mru.vim
-|4,39,94,68,1688303468,"~/.vim/plugin/mru.vim"
--'  312  0  ~/.vim/plugin/mru.vim
-|4,39,312,0,1688303468,"~/.vim/plugin/mru.vim"
--'  107  68  ~/.vim/plugin/mru.vim
-|4,39,107,68,1688303468,"~/.vim/plugin/mru.vim"
--'  90  68  ~/.vim/plugin/mru.vim
-|4,39,90,68,1688303468,"~/.vim/plugin/mru.vim"
--'  304  0  ~/.vim/plugin/mru.vim
-|4,39,304,0,1688303468,"~/.vim/plugin/mru.vim"
--'  103  68  ~/.vim/plugin/mru.vim
-|4,39,103,68,1688303468,"~/.vim/plugin/mru.vim"
--'  54  12  ~/.vim/plugin/mru.vim
-|4,39,54,12,1688303448,"~/.vim/plugin/mru.vim"
--'  73  0  ~/.vim/plugin/mru.vim
-|4,39,73,0,1688303430,"~/.vim/plugin/mru.vim"
--'  284  12  ~/.vim/plugin/mru.vim
-|4,39,284,12,1688303430,"~/.vim/plugin/mru.vim"
--'  285  4  ~/.vim/plugin/mru.vim
-|4,39,285,4,1688303430,"~/.vim/plugin/mru.vim"
--'  85  0  ~/.vim/plugin/mru.vim
-|4,39,85,0,1688303430,"~/.vim/plugin/mru.vim"
--'  74  45  ~/.vim/plugin/mru.vim
-|4,39,74,45,1688303430,"~/.vim/plugin/mru.vim"
--'  299  4  ~/.vim/plugin/mru.vim
-|4,39,299,4,1688303430,"~/.vim/plugin/mru.vim"
--'  302  55  ~/.vim/plugin/mru.vim
-|4,39,302,55,1688303430,"~/.vim/plugin/mru.vim"
--'  328  16  ~/.vim/plugin/mru.vim
-|4,39,328,16,1688303430,"~/.vim/plugin/mru.vim"
--'  329  8  ~/.vim/plugin/mru.vim
-|4,39,329,8,1688303430,"~/.vim/plugin/mru.vim"
--'  348  0  ~/.vim/plugin/mru.vim
-|4,39,348,0,1688303430,"~/.vim/plugin/mru.vim"
--'  349  0  ~/.vim/plugin/mru.vim
-|4,39,349,0,1688303430,"~/.vim/plugin/mru.vim"
--'  280  12  ~/.vim/plugin/mru.vim
-|4,39,280,12,1688303430,"~/.vim/plugin/mru.vim"
--'  281  4  ~/.vim/plugin/mru.vim
-|4,39,281,4,1688303430,"~/.vim/plugin/mru.vim"
--'  306  16  ~/.vim/plugin/mru.vim
-|4,39,306,16,1688303430,"~/.vim/plugin/mru.vim"
--'  322  0  ~/.vim/plugin/mru.vim
-|4,39,322,0,1688303430,"~/.vim/plugin/mru.vim"
--'  323  0  ~/.vim/plugin/mru.vim
-|4,39,323,0,1688303430,"~/.vim/plugin/mru.vim"
--'  81  0  ~/.vim/plugin/mru.vim
-|4,39,81,0,1688303430,"~/.vim/plugin/mru.vim"
+-'  72  5  ~/.vim/plugin/mru.vim
+|4,39,72,5,1688308631,"~/.vim/plugin/mru.vim"
 
 # Buffer list:
-%~/.vim/plugin/mru.vim	134	38
-%~/.vim/.gitignore	1	0
+%~/.vim/coc-settings.json	1	0
 
 # History of marks within files (newest to oldest):
+
+> ~/.vim/coc-settings.json
+	*	1688310893	0
+	"	1	0
 
 > ~/.vim/plugin/mru.vim
 	*	1688310202	0
