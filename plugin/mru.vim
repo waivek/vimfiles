@@ -65,6 +65,10 @@ function! s:GetExistingOldFilesDictionaries()
     let l:filtered_a3 = filter(copy(l:a1), 'filereadable(v:val["text"])')
     return l:filtered_a3
 endfunction
+function! s:PrintList(list)
+    let string = join(map(copy(a:list), 'v:val'), "\n")
+    echo string
+endfunction
 
 
 " Introducing Latency for startup but worth it to remove the lag when typing MRU
@@ -86,7 +90,7 @@ function! s:OldFilesSource(glob="*", get_first_match=v:false)
     "
     " Primary use point is by wildcard for extensions and word boundaries
     let MinusOne = { s -> strpart(s, 0, len(s)-1) }
-    if !exists("g:existing_oldfiles")
+    if !exists("g:existing_oldfiles") || g:existing_oldfiles == v:null
         let g:existing_oldfiles = s:GetExistingOldFilesDictionaries()
     endif
 
@@ -212,7 +216,9 @@ endfunction
 function! s:FastIncrementTailDepth(tail, absolute_path)
     let tail_length = len(a:tail)
     let nontail = a:absolute_path[0:-tail_length-1]
-    return split(nontail, "\\")[-1]."\\".a:tail
+    let sep = has("win32") || has("win64") ? "\\" : "/"
+    return split(nontail, sep)[-1].sep.a:tail
+    " return split(nontail, "\\")[-1]."\\".a:tail
 endfunction
 " Test FastIncrementTailDepth {{{
 " let fullpath = 'C:\Program Files (x86)\Vim\vim82\doc\eval.txt'
@@ -279,7 +285,8 @@ function! s:IncrementTails(dicts)
     for filename_D in filename_dictionaries
         let tail = filename_D["uniquetail"]
         let path = filename_D["text"]
-        if tail == "" || tail ==# path || stridx(path, "\\") == -1
+        let sep = has("win32") || has("win64") ? "\\" : "/"
+        if tail == "" || tail ==# path || stridx(path, sep) == -1
             call add(filename2_dictionaries, filename_D)
         else
             let filename_D["uniquetail"] = s:FastIncrementTailDepth(tail, path)
@@ -301,10 +308,15 @@ function! s:IncrementUntilUnique(dicts)
         endif
 
         let tails = map(copy(filename_dictionaries), {_, D -> D["uniquetail"]})
+
         if oldtails == tails
             break
         else
             let oldtails = tails
+            " let oldtails = copy(tails)
+            " if len(oldtails) > 0 && len(tails) > 0
+            "     echo printf("Iteration %d: oldtails[0] = %s, tails[0] = %s", loop_counter, string(oldtails[0]), string(tails[0]))
+            " endif
         endif
 
         let duplicates_exist = len(uniq(copy(sort(tails)))) != len(tails)
@@ -318,8 +330,10 @@ function! s:IncrementUntilUnique(dicts)
     return filename_dictionaries
 endfunction
 " let filename_dictionaries = s:OldFilesSource("html.vim")
-" let filename_dictionaries = s:OldFilesSource("*")
+" let filename_dictionaries = s:OldFilesSource("item")
 " let filename_dictionaries = s:IncrementUntilUnique(filename_dictionaries)
+" call s:PrintList(filename_dictionaries)
+
 " echo map(filename_dictionaries, {_, D -> D["uniquetail"]})
 
 function! s:PathExists(dicts)

@@ -11,27 +11,99 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/\~
+~MSle0~/\C\<IncrementUntilUnique\>
 
 # Command Line History (newest to oldest):
+:qa
+|2,0,1688310205,,"qa"
+:MRU 34:performance/performance.vim
+|2,0,1688310199,,"MRU 34:performance/performance.vim"
+:MRU 28:.vim/mini.vimrc
+|2,0,1688310195,,"MRU 28:.vim/mini.vimrc"
+:MRU 2:v01/item.txt
+|2,0,1688310102,,"MRU 2:v01/item.txt"
+:MRU 
+|2,0,1688310098,,"MRU "
+:MRU 4:.vim/.gitignore
+|2,0,1688309931,,"MRU 4:.vim/.gitignore"
+:so %
+|2,0,1688309911,,"so %"
+:MRU 19:bin/gita
+|2,0,1688309908,,"MRU 19:bin/gita"
+:MRU 3:plugin/mru.vim
+|2,0,1688309902,,"MRU 3:plugin/mru.vim"
+:MRU 35:doc/change.txt
+|2,0,1688309882,,"MRU 35:doc/change.txt"
+:MRU 2:mru/v01/item.txt
+|2,0,1688309865,,"MRU 2:mru/v01/item.txt"
+:MRU 2:0
+|2,0,1688309773,,"MRU 2:0"
+:call s:Prin
+|2,0,1688309743,,"call s:Prin"
+:echo g
+|2,0,1688309740,,"echo g"
+:echo g:ol
+|2,0,1688309737,,"echo g:ol"
+:echo g:existing_oldfiles
+|2,0,1688309690,,"echo g:existing_oldfiles"
+:b!# | bd! #
+|2,0,1688309578,,"b!# | bd! #"
+:MRU 1:item.txt
+|2,0,1688309482,,"MRU 1:item.txt"
+:MRU mru
+|2,0,1688309474,,"MRU mru"
+:qa!
+|2,0,1688309458,,"qa!"
+:e /tmp/mru/v02/item.txt
+|2,0,1688309454,,"e /tmp/mru/v02/item.txt"
+:e /tmp/mru/v01/item.txt
+|2,0,1688309446,,"e /tmp/mru/v01/item.txt"
+:%sort /.*\//
+|2,0,1688309363,,"%sort /.*\\//"
+:%sort /.*\/
+|2,0,1688309358,,"%sort /.*\\/"
+:%s
+|2,0,1688309331,,"%s"
+:enew
+|2,0,1688309274,,"enew"
+:MRU 2:.gitignore
+|2,0,1688309220,,"MRU 2:.gitignore"
+:MRU 18:.gitconfig
+|2,0,1688309205,,"MRU 18:.gitconfig"
+:%!uniq 
+|2,0,1688309188,,"%!uniq "
+:%sort
+|2,0,1688309185,,"%sort"
+:%!uniq -c
+|2,0,1688309182,,"%!uniq -c"
+:MRU 33:change.txt
+|2,0,1688309168,,"MRU 33:change.txt"
+:MRU 22:fzf.txt
+|2,0,1688309157,,"MRU 22:fzf.txt"
+:call sideways#textobj#Argument('i')
+|2,0,1688308984,,"call sideways#textobj#Argument('i')"
+:so 
+|2,0,1688308769,,"so "
+:messages
+|2,0,1688308745,,"messages"
+:MRU
+|2,0,1688308744,,"MRU"
+:MRU m
+|2,0,1688308550,,"MRU m"
+:MRU 26:mini.vimrc
+|2,0,1688308540,,"MRU 26:mini.vimrc"
+:MRU 17:gita
+|2,0,1688308526,,"MRU 17:gita"
 :q
 |2,0,1688303664,,"q"
-:so %
-|2,0,1688303663,,"so %"
 :echo v:oldfiles
 |2,0,1688303612,,"echo v:oldfiles"
-:qa
-|2,0,1688303494,,"qa"
-:MRU
-|2,0,1688303489,,"MRU"
 :mesages
 |2,0,1688303484,,"mesages"
 :10messages
 |2,0,1688303478,,"10messages"
 :5messages
 |2,0,1688303475,,"5messages"
-:messages
-|2,0,1688303458,,"messages"
 :MRUm
 |2,0,1688303441,,"MRUm"
 :MRU 1:/home/vivek/.vim/plugin/\mru.vim
@@ -42,12 +114,6 @@
 |2,0,1688303397,,"MRU 10:/usr/share/vim/vim90/doc/\\eval.txt"
 :echo s:Get
 |2,0,1688303322,,"echo s:Get"
-:MRU 
-|2,0,1688303319,,"MRU "
-:echo g:existing_oldfiles
-|2,0,1688303149,,"echo g:existing_oldfiles"
-:echo g:ol
-|2,0,1688303114,,"echo g:ol"
 :MRU Un
 |2,0,1688302358,,"MRU Un"
 :MRU 15:z.sh
@@ -56,10 +122,6 @@
 |2,0,1688302286,,"MRU 16:exa"
 :find ~/.vim/plugin/mru.vim
 |2,0,1688302247,,"find ~/.vim/plugin/mru.vim"
-:MRU mru
-|2,0,1688302244,,"MRU mru"
-:MRU 17:gita
-|2,0,1688302219,,"MRU 17:gita"
 :echo g:
 |2,0,1688302210,,"echo g:"
 :echo g:old
@@ -76,8 +138,6 @@
 |2,0,1685531975,,"echoconsole -n 'hello'"
 :h :echoconsole
 |2,0,1685531962,,"h :echoconsole"
-:qa!
-|2,0,1685531881,,"qa!"
 :echowindow
 |2,0,1685531879,,"echowindow"
 :echoconsole 'hello'
@@ -172,10 +232,6 @@
 |2,0,1685394537,,"cmap"
 :set timeoutlen&
 |2,0,1685394529,,"set timeoutlen&"
-:enew
-|2,0,1685394525,,"enew"
-:b!# | bd! #
-|2,0,1685394522,,"b!# | bd! #"
 :jk
 |2,0,1685394508,,"jk"
 :echo &timeoutlen
@@ -254,8 +310,6 @@
 |2,0,1685390712,,"e common.egg-info/"
 :MRU perfo
 |2,0,1685390613,,"MRU perfo"
-:so 
-|2,0,1685390585,,"so "
 :Coc
 |2,0,1685390541,,"Coc"
 :lopen
@@ -304,6 +358,18 @@
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/^\s*[^# ].*\C\<FastIncrementTailDepth\>
+|2,1,1688310136,47,"^\\s*[^# ].*\\C\\<FastIncrementTailDepth\\>"
+?/uniquetail
+|2,1,1688310111,47,"uniquetail"
+?/v:null
+|2,1,1688309676,47,"v:null"
+?/.*\/
+|2,1,1688309350,47,".*\\/"
+?/gitignore
+|2,1,1688309306,47,"gitignore"
+?/gitignor
+|2,1,1688309289,47,"gitignor"
 ?/\~
 |2,1,1688303580,47,"\\~"
 ?/^\s*function!\?\s\+\(s:\)\?\(\w\+#\)\?\w*Until
@@ -402,140 +468,341 @@
 |2,1,1685152394,47,"handle_error"
 
 # Expression History (newest to oldest):
+=g:existing_oldfiles
+|2,2,1688309495,,"g:existing_oldfiles"
+=v:oldfiles
+|2,2,1688309303,,"v:oldfiles"
 
 # Input Line History (newest to oldest):
+@string
+|2,3,1688309009,,"string"
 @os.path.expanduser
 |2,3,1685152605,,"os.path.expanduser"
 
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	CHAR	0
-	GetExistingOldFiles()
-|3,0,0,0,1,0,1688303570,"GetExistingOldFiles()"
-""1	LINE	0
-	    " let l:pattern = is_windows ? "^\\~" : "^/~"
-|3,1,1,1,1,0,1688303652,"    \" let l:pattern = is_windows ? \"^\\\\~\" : \"^/~\""
+""0	CHAR	0
+	copy(tails)
+|3,1,0,0,1,0,1688310165,"copy(tails)"
+"1	LINE	0
+	call s:PrintList(filename_dictionaries)
+|3,0,1,1,1,0,1688309753,"call s:PrintList(filename_dictionaries)"
 "2	LINE	0
-	echo s:GetExistingOldFilesDictionaries()
-	
-|3,0,2,1,2,0,1688303645,"echo s:GetExistingOldFilesDictionaries()",""
+	        let has_windows = 
+|3,0,2,1,1,0,1688309654,"        let has_windows = "
 "3	LINE	0
-	function! s:GetExistingOldFiles()
-	    let start_time = reltimefloat(reltime())
-	    let is_windows = has('win32') || has('win64')
-	    let l:home = is_windows ? escape(expand("~"), '\') : expand("~")
-	    let l:pattern = is_windows ? "^\\~" : "^/~"
-	    let expanded_paths = map(copy(v:oldfiles), 'substitute(v:val, l:pattern, l:home, "")') " we use substitute instead of escape for faster but less accurate result
-	    let paths = filter(expanded_paths, 'filereadable(v:val)')
-	    let time_taken = reltimefloat(reltime()) - start_time
-	    " echo "Time taken to get existing oldfiles: " . string(time_taken)
-	    return paths
-	endfunction
-	
-|3,0,3,1,12,0,1688303574,"function! s:GetExistingOldFiles()","    let start_time = reltimefloat(reltime())","    let is_windows = has('win32') || has('win64')","    let l:home = is_windows ? escape(expand(\"~\"), '\\') : expand(\"~\")","    let l:pattern = is_windows ? \"^\\\\~\" : \"^/~\"","    let expanded_paths = map(copy(v:oldfiles), 'substitute(v:val, l:pattern, l:home, \"\")') \" we use substitute instead of escape for faster but less accurate result",>63
-|<"    let paths = filter(expanded_paths, 'filereadable(v:val)')","    let time_taken = reltimefloat(reltime()) - start_time","    \" echo \"Time taken to get existing oldfiles: \" . string(time_taken)","    return paths","endfunction",""
+	        let sep = 
+|3,0,3,1,1,0,1688309640,"        let sep = "
 "4	LINE	0
-	echo s:GetE
-|3,0,4,1,1,0,1688303377,"echo s:GetE"
+	        if len(oldtails) > 0 && len(tails) > 0
+	            echo printf("Iteration %d: oldtails[0] = %s, tails[0] = %s", loop_counter, string(oldtails[0]), string(tails[0]))
+	        endif
+|3,0,4,1,3,0,1688309539,"        if len(oldtails) > 0 && len(tails) > 0","            echo printf(\"Iteration %d: oldtails[0] = %s, tails[0] = %s\", loop_counter, string(oldtails[0]), string(tails[0]))","        endif"
 "5	LINE	0
-	echo filename_dictionaries
-|3,0,5,1,1,0,1688303209,"echo filename_dictionaries"
+	{'oldfiles_index': 1, 'tail': 'item.txt', 'uniquetail': 'item.txt', 'text': '/tmp/mru/v02/item.txt'}
+	{'oldfiles_index': 2, 'tail': 'item.txt', 'uniquetail': 'item.txt', 'text': '/tmp/mru/v01/item.txt'}
+	{'oldfiles_index': 3, 'tail': 'mru.vim', 'uniquetail': 'mru.vim', 'text': '/home/vivek/.vim/plugin/mru.vim'}
+	{'oldfiles_index': 4, 'tail': '.gitignore', 'uniquetail': '.gitignore', 'text': '/home/vivek/.vim/.gitignore'}
+	{'oldfiles_index': 5, 'tail': 'setup.sh', 'uniquetail': 'setup.sh', 'text': '/home/vivek/.config/setup.sh'}
+	{'oldfiles_index': 12, 'tail': 'eval.txt', 'uniquetail': 'eval.txt', 'text': '/usr/share/vim/vim90/doc/eval.txt'}
+	{'oldfiles_index': 17, 'tail': 'z.sh', 'uniquetail': 'z.sh', 'text': '/opt/z/z.sh'}
+	{'oldfiles_index': 18, 'tail': 'exa', 'uniquetail': 'exa', 'text': '/usr/bin/exa'}
+	{'oldfiles_index': 19, 'tail': 'gita', 'uniquetail': 'gita', 'text': '/usr/local/bin/gita'}
+	{'oldfiles_index': 20, 'tail': '.gitconfig', 'uniquetail': '.gitconfig', 'text': '/home/vivek/.gitconfig'}
+	{'oldfiles_index': 21, 'tail': '.bashrc', 'uniquetail': '.bashrc', 'text': '/home/vivek/.bashrc'}
+	{'oldfiles_index': 22, 'tail': 'bindings.inputrc', 'uniquetail': 'bindings.inputrc', 'text': '/home/vivek/.config/bindings.inputrc'}
+	{'oldfiles_index': 24, 'tail': 'fzf.txt', 'uniquetail': 'fzf.txt', 'text': '/home/vivek/.vim/.fzf/doc/fzf.txt'}
+	{'oldfiles_index': 25, 'tail': 'vimrc', 'uniquetail': 'vimrc', 'text': '/home/vivek/.vim/vimrc'}
+	{'oldfiles_index': 26, 'tail': 'options.txt', 'uniquetail': 'options.txt', 'text': '/usr/share/vim/vim90/doc/options.txt'}
+	{'oldfiles_index': 27, 'tail': 'builtin.txt', 'uniquetail': 'builtin.txt', 'text': '/usr/share/vim/vim90/doc/builtin.txt'}
+	{'oldfiles_index': 28, 'tail': 'mini.vimrc', 'uniquetail': 'mini.vimrc', 'text': '/home/vivek/.vim/mini.vimrc'}
+	{'oldfiles_index': 29, 'tail': 'statusline.vim', 'uniquetail': 'statusline.vim', 'text': '/home/vivek/.vim/plugin/statusline.vim'}
+	{'oldfiles_index': 34, 'tail': 'performance.vim', 'uniquetail': 'performance.vim', 'text': '/home/vivek/.vim/performance/performance.vim'}
+	{'oldfiles_index': 35, 'tail': 'change.txt', 'uniquetail': 'change.txt', 'text': '/usr/share/vim/vim90/doc/change.txt'}
+	{'oldfiles_index': 37, 'tail': 'timezone', 'uniquetail': 'timezone', 'text': '/etc/timezone'}
+	{'oldfiles_index': 39, 'tail': 'exa', 'uniquetail': 'exa', 'text': '/usr/share/bash-completion/completions/exa'}
+	{'oldfiles_index': 40, 'tail': '.zsh_history', 'uniquetail': '.zsh_history', 'text': '/home/vivek/.config/shell_data/.zsh_history'}
+	{'oldfiles_index': 41, 'tail': 'setup.zsh', 'uniquetail': 'setup.zsh', 'text': '/home/vivek/.config/setup.zsh'}
+	
+|3,0,5,1,25,0,1688309504,"{'oldfiles_index': 1, 'tail': 'item.txt', 'uniquetail': 'item.txt', 'text': '/tmp/mru/v02/item.txt'}","{'oldfiles_index': 2, 'tail': 'item.txt', 'uniquetail': 'item.txt', 'text': '/tmp/mru/v01/item.txt'}","{'oldfiles_index': 3, 'tail': 'mru.vim', 'uniquetail': 'mru.vim', 'text': '/home/vivek/.vim/plugin/mru.vim'}","{'oldfiles_index': 4, 'tail': '.gitignore', 'uniquetail': '.gitignore', 'text': '/home/vivek/.vim/.gitignore'}",>109
+|<"{'oldfiles_index': 5, 'tail': 'setup.sh', 'uniquetail': 'setup.sh', 'text': '/home/vivek/.config/setup.sh'}","{'oldfiles_index': 12, 'tail': 'eval.txt', 'uniquetail': 'eval.txt', 'text': '/usr/share/vim/vim90/doc/eval.txt'}","{'oldfiles_index': 17, 'tail': 'z.sh', 'uniquetail': 'z.sh', 'text': '/opt/z/z.sh'}","{'oldfiles_index': 18, 'tail': 'exa', 'uniquetail': 'exa', 'text': '/usr/bin/exa'}","{'oldfiles_index': 19, 'tail': 'gita', 'uniquetail': 'gita', 'text': '/usr/local/bin/gita'}",>108
+|<"{'oldfiles_index': 20, 'tail': '.gitconfig', 'uniquetail': '.gitconfig', 'text': '/home/vivek/.gitconfig'}","{'oldfiles_index': 21, 'tail': '.bashrc', 'uniquetail': '.bashrc', 'text': '/home/vivek/.bashrc'}","{'oldfiles_index': 22, 'tail': 'bindings.inputrc', 'uniquetail': 'bindings.inputrc', 'text': '/home/vivek/.config/bindings.inputrc'}","{'oldfiles_index': 24, 'tail': 'fzf.txt', 'uniquetail': 'fzf.txt', 'text': '/home/vivek/.vim/.fzf/doc/fzf.txt'}",>98
+|<"{'oldfiles_index': 25, 'tail': 'vimrc', 'uniquetail': 'vimrc', 'text': '/home/vivek/.vim/vimrc'}","{'oldfiles_index': 26, 'tail': 'options.txt', 'uniquetail': 'options.txt', 'text': '/usr/share/vim/vim90/doc/options.txt'}","{'oldfiles_index': 27, 'tail': 'builtin.txt', 'uniquetail': 'builtin.txt', 'text': '/usr/share/vim/vim90/doc/builtin.txt'}","{'oldfiles_index': 28, 'tail': 'mini.vimrc', 'uniquetail': 'mini.vimrc', 'text': '/home/vivek/.vim/mini.vimrc'}",>132
+|<"{'oldfiles_index': 29, 'tail': 'statusline.vim', 'uniquetail': 'statusline.vim', 'text': '/home/vivek/.vim/plugin/statusline.vim'}","{'oldfiles_index': 34, 'tail': 'performance.vim', 'uniquetail': 'performance.vim', 'text': '/home/vivek/.vim/performance/performance.vim'}","{'oldfiles_index': 35, 'tail': 'change.txt', 'uniquetail': 'change.txt', 'text': '/usr/share/vim/vim90/doc/change.txt'}",>95
+|<"{'oldfiles_index': 37, 'tail': 'timezone', 'uniquetail': 'timezone', 'text': '/etc/timezone'}","{'oldfiles_index': 39, 'tail': 'exa', 'uniquetail': 'exa', 'text': '/usr/share/bash-completion/completions/exa'}","{'oldfiles_index': 40, 'tail': '.zsh_history', 'uniquetail': '.zsh_history', 'text': '/home/vivek/.config/shell_data/.zsh_history'}","{'oldfiles_index': 41, 'tail': 'setup.zsh', 'uniquetail': 'setup.zsh', 'text': '/home/vivek/.config/setup.zsh'}",""
 "6	LINE	0
-	        echo oldtails
-|3,0,6,1,1,0,1688303065,"        echo oldtails"
-"7	CHAR	0
-	"\\") == -1
-	            call add(filename2_dictionaries, filename_D)
-	        else
-	            let filename_D["uniquetail"] = s:FastIncrementTailDepth(tail, path)
-	            call add(filename2_dictionaries, filename_D)
-	        endif
-	    endfor
-	    return filename2_dictionaries
-	endfunction
-	function! s:IncrementUntilUnique(dicts)
-	    let filename_dictionaries = a:dicts
-	    let oldtails = []
 	
-	    let loop_counter = 0
-	    let max_loop = 10
-	    while v:true
-	        if loop_counter == max_loop
-	            echoerr "Error: Hit upper iteration limit"
-	            break
-	        endif
+	~/.config/coc/extensions/)
+	~/.bashrc
+	/etc/bash_completion.d/.gita-completion.bash
+	~/.gitconfig
+	~/.vim/.gitignore
+	~/.gitignore
+	~/python_common/.gitignore
+	~/.inputrc
+	~/.config/shell_data/.zsh_history
+	~/.vim/performance/230529.long_pause_linux_term.v01.txt
+	~/.vim/performance/230529.long_pause_linux_term.v02.txt
+	~/.vim/performance/230529.long_pause_linux_term.v03.txt
+	~/.vim/performance/230529.long_pause_linux_term.v04.txt
+	/usr/share/doc/aria2/bash_completion/README.txt
+	~/awk_function.sh
+	~/.config/bindings.inputrc
+	/usr/share/vim/vim90/doc/builtin.txt
+	/usr/share/vim/vim90/doc/change.txt
+	~/python_common/db.py
+	~/python_common/error.py
+	/usr/share/vim/vim90/doc/eval.txt
+	/usr/bin/exa
+	~/.config/completion/exa
+	/usr/share/bash-completion/completions/exa
+	~/.config/coc/extensions/file.txt
+	~/.vim/.fzf/doc/fzf.txt
+	~/fzf_cd.sh
+	/usr/local/bin/gita
+	~/python_common/ic.py
+	~/.config/coc/extensions/install.sh
+	~/.vim/mini.vimrc
+	~/.vim/plugin/mru.vim
+	/usr/share/vim/vim90/doc/options.txt
+	~/output.tmp
+	~/.vim/performance/performance.vim
+	~/python_common/requirements.txt
+	~/tmp/script.sh
+	~/tmp/script.vim
+	~/python_common/setup.py
+	~/.config/setup.sh
+	~/.config/setup.zsh
+	~/.vim/plugin/statusline.vim
+	~/tmp/test.py
+	/etc/timezone
+	~/.vim/vimrc
+	/opt/z/z.sh
+|3,0,6,1,47,0,1688309386,"","~/.config/coc/extensions/)","~/.bashrc","/etc/bash_completion.d/.gita-completion.bash","~/.gitconfig","~/.vim/.gitignore","~/.gitignore","~/python_common/.gitignore","~/.inputrc","~/.config/shell_data/.zsh_history","~/.vim/performance/230529.long_pause_linux_term.v01.txt","~/.vim/performance/230529.long_pause_linux_term.v02.txt","~/.vim/performance/230529.long_pause_linux_term.v03.txt",>57
+|<"~/.vim/performance/230529.long_pause_linux_term.v04.txt","/usr/share/doc/aria2/bash_completion/README.txt","~/awk_function.sh","~/.config/bindings.inputrc","/usr/share/vim/vim90/doc/builtin.txt","/usr/share/vim/vim90/doc/change.txt","~/python_common/db.py","~/python_common/error.py","/usr/share/vim/vim90/doc/eval.txt","/usr/bin/exa","~/.config/completion/exa","/usr/share/bash-completion/completions/exa","~/.config/coc/extensions/file.txt","~/.vim/.fzf/doc/fzf.txt","~/fzf_cd.sh",>21
+|<"/usr/local/bin/gita","~/python_common/ic.py","~/.config/coc/extensions/install.sh","~/.vim/mini.vimrc","~/.vim/plugin/mru.vim","/usr/share/vim/vim90/doc/options.txt","~/output.tmp","~/.vim/performance/performance.vim","~/python_common/requirements.txt","~/tmp/script.sh","~/tmp/script.vim","~/python_common/setup.py","~/.config/setup.sh","~/.config/setup.zsh","~/.vim/plugin/statusline.vim","~/tmp/test.py","/etc/timezone","~/.vim/vimrc","/opt/z/z.sh"
+"7	LINE	0
+	{'oldfiles_index': 1, 'tail': 'mru.vim', 'uniquetail': 'mru.vim', 'text': '/home/vivek/.vim/plugin/mru.vim'}
+	{'oldfiles_index': 2, 'tail': '.gitignore', 'uniquetail': '.gitignore', 'text': '/home/vivek/.vim/.gitignore'}
+	{'oldfiles_index': 3, 'tail': 'setup.sh', 'uniquetail': 'setup.sh', 'text': '/home/vivek/.config/setup.sh'}
+	{'oldfiles_index': 10, 'tail': 'eval.txt', 'uniquetail': 'eval.txt', 'text': '/usr/share/vim/vim90/doc/eval.txt'}
+	{'oldfiles_index': 15, 'tail': 'z.sh', 'uniquetail': 'z.sh', 'text': '/opt/z/z.sh'}
+	{'oldfiles_index': 16, 'tail': 'exa', 'uniquetail': 'exa', 'text': '/usr/bin/exa'}
+	{'oldfiles_index': 17, 'tail': 'gita', 'uniquetail': 'gita', 'text': '/usr/local/bin/gita'}
+	{'oldfiles_index': 18, 'tail': '.gitconfig', 'uniquetail': '.gitconfig', 'text': '/home/vivek/.gitconfig'}
+	{'oldfiles_index': 19, 'tail': '.bashrc', 'uniquetail': '.bashrc', 'text': '/home/vivek/.bashrc'}
+	{'oldfiles_index': 20, 'tail': 'bindings.inputrc', 'uniquetail': 'bindings.inputrc', 'text': '/home/vivek/.config/bindings.inputrc'}
+	{'oldfiles_index': 22, 'tail': 'fzf.txt', 'uniquetail': 'fzf.txt', 'text': '/home/vivek/.vim/.fzf/doc/fzf.txt'}
+	{'oldfiles_index': 23, 'tail': 'vimrc', 'uniquetail': 'vimrc', 'text': '/home/vivek/.vim/vimrc'}
+	{'oldfiles_index': 24, 'tail': 'options.txt', 'uniquetail': 'options.txt', 'text': '/usr/share/vim/vim90/doc/options.txt'}
+	{'oldfiles_index': 25, 'tail': 'builtin.txt', 'uniquetail': 'builtin.txt', 'text': '/usr/share/vim/vim90/doc/builtin.txt'}
+	{'oldfiles_index': 26, 'tail': 'mini.vimrc', 'uniquetail': 'mini.vimrc', 'text': '/home/vivek/.vim/mini.vimrc'}
+	{'oldfiles_index': 27, 'tail': 'statusline.vim', 'uniquetail': 'statusline.vim', 'text': '/home/vivek/.vim/plugin/statusline.vim'}
+	{'oldfiles_index': 32, 'tail': 'performance.vim', 'uniquetail': 'performance.vim', 'text': '/home/vivek/.vim/performance/performance.vim'}
+	{'oldfiles_index': 33, 'tail': 'change.txt', 'uniquetail': 'change.txt', 'text': '/usr/share/vim/vim90/doc/change.txt'}
+	{'oldfiles_index': 35, 'tail': 'timezone', 'uniquetail': 'timezone', 'text': '/etc/timezone'}
+	{'oldfiles_index': 37, 'tail': 'exa', 'uniquetail': 'exa', 'text': '/usr/share/bash-completion/completions/exa'}
+	{'oldfiles_index': 38, 'tail': '.zsh_history', 'uniquetail': '.zsh_history', 'text': '/home/vivek/.config/shell_data/.zsh_history'}
+	{'oldfiles_index': 39, 'tail': 'setup.zsh', 'uniquetail': 'setup.zsh', 'text': '/home/vivek/.config/setup.zsh'}
 	
-	        let tails = map(copy(filename_dictionaries), {_, D -> D["uniquetail"]})
-	        if oldtails == tails
-	            break
-	        else
-	            let oldtails = tails
-	        endif
-	
-	        let duplicates_exist = len(uniq(copy(sort(tails)))) != len(tails)
-	        if !duplicates_exist
-	            break
-	        endif
-	
-	        let filename_dictionaries = s:IncrementTails(filename_dictionaries)
-	        let loop_counter = loop_counter + 1
-	    endwhile
-	    return filename_dictionaries
-	endfunction
-	" let filename_dictionaries = s:OldFilesSource("html.vim")
-|3,0,7,0,39,0,1688302409,"\"\\\\\") == -1","            call add(filename2_dictionaries, filename_D)","        else","            let filename_D[\"uniquetail\"] = s:FastIncrementTailDepth(tail, path)","            call add(filename2_dictionaries, filename_D)","        endif","    endfor","    return filename2_dictionaries","endfunction","function! s:IncrementUntilUnique(dicts)","    let filename_dictionaries = a:dicts","    let oldtails = []","",>26
-|<"    let loop_counter = 0","    let max_loop = 10","    while v:true","        if loop_counter == max_loop","            echoerr \"Error: Hit upper iteration limit\"","            break","        endif","","        let tails = map(copy(filename_dictionaries), {_, D -> D[\"uniquetail\"]})","        if oldtails == tails","            break","        else","            let oldtails = tails","        endif","","        let duplicates_exist = len(uniq(copy(sort(tails)))) != len(tails)",>30
-|<"        if !duplicates_exist","            break","        endif","","        let filename_dictionaries = s:IncrementTails(filename_dictionaries)","        let loop_counter = loop_counter + 1","    endwhile","    return filename_dictionaries","endfunction","\" let filename_dictionaries = s:OldFilesSource(\"html.vim\")"
+|3,0,7,1,23,0,1688309299,"{'oldfiles_index': 1, 'tail': 'mru.vim', 'uniquetail': 'mru.vim', 'text': '/home/vivek/.vim/plugin/mru.vim'}","{'oldfiles_index': 2, 'tail': '.gitignore', 'uniquetail': '.gitignore', 'text': '/home/vivek/.vim/.gitignore'}","{'oldfiles_index': 3, 'tail': 'setup.sh', 'uniquetail': 'setup.sh', 'text': '/home/vivek/.config/setup.sh'}",>115
+|<"{'oldfiles_index': 10, 'tail': 'eval.txt', 'uniquetail': 'eval.txt', 'text': '/usr/share/vim/vim90/doc/eval.txt'}","{'oldfiles_index': 15, 'tail': 'z.sh', 'uniquetail': 'z.sh', 'text': '/opt/z/z.sh'}","{'oldfiles_index': 16, 'tail': 'exa', 'uniquetail': 'exa', 'text': '/usr/bin/exa'}","{'oldfiles_index': 17, 'tail': 'gita', 'uniquetail': 'gita', 'text': '/usr/local/bin/gita'}","{'oldfiles_index': 18, 'tail': '.gitconfig', 'uniquetail': '.gitconfig', 'text': '/home/vivek/.gitconfig'}",>99
+|<"{'oldfiles_index': 19, 'tail': '.bashrc', 'uniquetail': '.bashrc', 'text': '/home/vivek/.bashrc'}","{'oldfiles_index': 20, 'tail': 'bindings.inputrc', 'uniquetail': 'bindings.inputrc', 'text': '/home/vivek/.config/bindings.inputrc'}","{'oldfiles_index': 22, 'tail': 'fzf.txt', 'uniquetail': 'fzf.txt', 'text': '/home/vivek/.vim/.fzf/doc/fzf.txt'}","{'oldfiles_index': 23, 'tail': 'vimrc', 'uniquetail': 'vimrc', 'text': '/home/vivek/.vim/vimrc'}",>124
+|<"{'oldfiles_index': 24, 'tail': 'options.txt', 'uniquetail': 'options.txt', 'text': '/usr/share/vim/vim90/doc/options.txt'}","{'oldfiles_index': 25, 'tail': 'builtin.txt', 'uniquetail': 'builtin.txt', 'text': '/usr/share/vim/vim90/doc/builtin.txt'}","{'oldfiles_index': 26, 'tail': 'mini.vimrc', 'uniquetail': 'mini.vimrc', 'text': '/home/vivek/.vim/mini.vimrc'}",>132
+|<"{'oldfiles_index': 27, 'tail': 'statusline.vim', 'uniquetail': 'statusline.vim', 'text': '/home/vivek/.vim/plugin/statusline.vim'}","{'oldfiles_index': 32, 'tail': 'performance.vim', 'uniquetail': 'performance.vim', 'text': '/home/vivek/.vim/performance/performance.vim'}","{'oldfiles_index': 33, 'tail': 'change.txt', 'uniquetail': 'change.txt', 'text': '/usr/share/vim/vim90/doc/change.txt'}",>95
+|<"{'oldfiles_index': 35, 'tail': 'timezone', 'uniquetail': 'timezone', 'text': '/etc/timezone'}","{'oldfiles_index': 37, 'tail': 'exa', 'uniquetail': 'exa', 'text': '/usr/share/bash-completion/completions/exa'}","{'oldfiles_index': 38, 'tail': '.zsh_history', 'uniquetail': '.zsh_history', 'text': '/home/vivek/.config/shell_data/.zsh_history'}","{'oldfiles_index': 39, 'tail': 'setup.zsh', 'uniquetail': 'setup.zsh', 'text': '/home/vivek/.config/setup.zsh'}",""
 "8	LINE	0
-	    let sep = 
-|3,0,8,1,1,0,1688302395,"    let sep = "
-"9	LINE	0
-	let s:temp = s:GetExistingOldFilesDictionaries()
-	echo "len(s:temp) = " . string(len(s:temp))
-	
-|3,0,9,1,3,0,1688302212,"let s:temp = s:GetExistingOldFilesDictionaries()","echo \"len(s:temp) = \" . string(len(s:temp))",""
+	" call s:PrintList(filename_dictionaries)
+|3,0,8,1,1,0,1688309253,"\" call s:PrintList(filename_dictionaries)"
+"9	BLOCK	1
+	" 
+	" 
+	" 
+|3,0,9,2,3,1,1688309240,"\" ","\" ","\" "
 "-	CHAR	0
-	GetExistingOldFiles()
-|3,0,36,0,1,0,1688303451,"GetExistingOldFiles()"
+	copy(tails)
+|3,0,36,0,1,0,1688309859,"copy(tails)"
 
 # File marks:
-'0  58  4  ~/.vim/plugin/mru.vim
-|4,48,58,4,1688303664,"~/.vim/plugin/mru.vim"
-'1  305  0  ~/.vim/plugin/mru.vim
-|4,49,305,0,1688303494,"~/.vim/plugin/mru.vim"
-'2  318  0  ~/.vim/plugin/mru.vim
-|4,50,318,0,1688303494,"~/.vim/plugin/mru.vim"
-'3  69  0  ~/.vim/plugin/mru.vim
-|4,51,69,0,1688302213,"~/.vim/plugin/mru.vim"
-'4  69  0  ~/.vim/plugin/mru.vim
-|4,52,69,0,1688302213,"~/.vim/plugin/mru.vim"
-'5  82  0  ~/.vim/plugin/mru.vim
-|4,53,82,0,1688302213,"~/.vim/plugin/mru.vim"
-'6  81  0  ~/.vim/plugin/mru.vim
-|4,54,81,0,1688302213,"~/.vim/plugin/mru.vim"
-'7  7  4  ~/.vim/.gitignore
-|4,55,7,4,1686160181,"~/.vim/.gitignore"
-'8  7  4  ~/.vim/.gitignore
-|4,56,7,4,1686160181,"~/.vim/.gitignore"
-'9  7  4  ~/.vim/.gitignore
-|4,57,7,4,1686160181,"~/.vim/.gitignore"
+'0  333  0  ~/.vim/plugin/mru.vim
+|4,48,333,0,1688310205,"~/.vim/plugin/mru.vim"
+'1  58  4  ~/.vim/plugin/mru.vim
+|4,49,58,4,1688303664,"~/.vim/plugin/mru.vim"
+'2  58  4  ~/.vim/plugin/mru.vim
+|4,50,58,4,1688303664,"~/.vim/plugin/mru.vim"
+'3  58  4  ~/.vim/plugin/mru.vim
+|4,51,58,4,1688303664,"~/.vim/plugin/mru.vim"
+'4  58  4  ~/.vim/plugin/mru.vim
+|4,52,58,4,1688303664,"~/.vim/plugin/mru.vim"
+'5  313  0  ~/.vim/plugin/mru.vim
+|4,53,313,0,1688303494,"~/.vim/plugin/mru.vim"
+'6  330  0  ~/.vim/plugin/mru.vim
+|4,54,330,0,1688303494,"~/.vim/plugin/mru.vim"
+'7  308  0  ~/.vim/plugin/mru.vim
+|4,55,308,0,1688303494,"~/.vim/plugin/mru.vim"
+'8  319  0  ~/.vim/plugin/mru.vim
+|4,56,319,0,1688303494,"~/.vim/plugin/mru.vim"
+'9  313  0  ~/.vim/plugin/mru.vim
+|4,57,313,0,1688303494,"~/.vim/plugin/mru.vim"
 
 # Jumplist (newest first):
+-'  333  0  ~/.vim/plugin/mru.vim
+|4,39,333,0,1688310205,"~/.vim/plugin/mru.vim"
+-'  220  37  ~/.vim/plugin/mru.vim
+|4,39,220,37,1688309818,"~/.vim/plugin/mru.vim"
+-'  292  45  ~/.vim/plugin/mru.vim
+|4,39,292,45,1688309800,"~/.vim/plugin/mru.vim"
+-'  310  65  ~/.vim/plugin/mru.vim
+|4,39,310,65,1688309798,"~/.vim/plugin/mru.vim"
+-'  286  31  ~/.vim/plugin/mru.vim
+|4,39,286,31,1688309797,"~/.vim/plugin/mru.vim"
+-'  139  68  ~/.vim/plugin/mru.vim
+|4,39,139,68,1688309797,"~/.vim/plugin/mru.vim"
+-'  337  46  ~/.vim/plugin/mru.vim
+|4,39,337,46,1688309790,"~/.vim/plugin/mru.vim"
+-'  300  0  ~/.vim/plugin/mru.vim
+|4,39,300,0,1688309788,"~/.vim/plugin/mru.vim"
+-'  124  4  ~/.vim/plugin/mru.vim
+|4,39,124,4,1688309744,"~/.vim/plugin/mru.vim"
+-'  80  0  ~/.vim/plugin/mru.vim
+|4,39,80,0,1688309703,"~/.vim/plugin/mru.vim"
+-'  75  26  ~/.vim/plugin/mru.vim
+|4,39,75,26,1688309680,"~/.vim/plugin/mru.vim"
+-'  1  0  ~/.vim/plugin/mru.vim
+|4,39,1,0,1688309676,"~/.vim/plugin/mru.vim"
+-'  252  4  ~/.vim/plugin/mru.vim
+|4,39,252,4,1688309675,"~/.vim/plugin/mru.vim"
+-'  288  57  ~/.vim/plugin/mru.vim
+|4,39,288,57,1688309672,"~/.vim/plugin/mru.vim"
+-'  289  57  ~/.vim/plugin/mru.vim
+|4,39,289,57,1688309663,"~/.vim/plugin/mru.vim"
+-'  263  10  ~/.vim/plugin/mru.vim
+|4,39,263,10,1688309612,"~/.vim/plugin/mru.vim"
+-'  64  67  ~/.vim/plugin/mru.vim
+|4,39,64,67,1688309586,"~/.vim/plugin/mru.vim"
+-'  334  38  ~/.vim/plugin/mru.vim
+|4,39,334,38,1688309523,"~/.vim/plugin/mru.vim"
+-'  316  27  ~/.vim/plugin/mru.vim
+|4,39,316,27,1688309483,"~/.vim/plugin/mru.vim"
+-'  1  0  ~/.vim/.gitignore
+|4,39,1,0,1688309315,"~/.vim/.gitignore"
+-'  1  0  ~/.vim/.gitignore
+|4,39,1,0,1688309315,"~/.vim/.gitignore"
+-'  333  0  ~/.vim/plugin/mru.vim
+|4,39,333,0,1688309274,"~/.vim/plugin/mru.vim"
+-'  334  54  ~/.vim/plugin/mru.vim
+|4,39,334,54,1688309248,"~/.vim/plugin/mru.vim"
+-'  332  54  ~/.vim/plugin/mru.vim
+|4,39,332,54,1688309248,"~/.vim/plugin/mru.vim"
+-'  317  12  ~/.vim/plugin/mru.vim
+|4,39,317,12,1688309242,"~/.vim/plugin/mru.vim"
+-'  316  12  ~/.vim/plugin/mru.vim
+|4,39,316,12,1688309242,"~/.vim/plugin/mru.vim"
+-'  315  27  ~/.vim/plugin/mru.vim
+|4,39,315,27,1688309222,"~/.vim/plugin/mru.vim"
+-'  311  30  ~/.vim/plugin/mru.vim
+|4,39,311,30,1688309046,"~/.vim/plugin/mru.vim"
+-'  309  30  ~/.vim/plugin/mru.vim
+|4,39,309,30,1688309046,"~/.vim/plugin/mru.vim"
+-'  308  30  ~/.vim/plugin/mru.vim
+|4,39,308,30,1688309043,"~/.vim/plugin/mru.vim"
+-'  298  12  ~/.vim/plugin/mru.vim
+|4,39,298,12,1688308845,"~/.vim/plugin/mru.vim"
+-'  295  12  ~/.vim/plugin/mru.vim
+|4,39,295,12,1688308845,"~/.vim/plugin/mru.vim"
+-'  93  69  ~/.vim/plugin/mru.vim
+|4,39,93,69,1688308811,"~/.vim/plugin/mru.vim"
+-'  93  69  ~/.vim/plugin/mru.vim
+|4,39,93,69,1688308811,"~/.vim/plugin/mru.vim"
+-'  69  46  ~/.vim/plugin/mru.vim
+|4,39,69,46,1688308665,"~/.vim/plugin/mru.vim"
+-'  69  46  ~/.vim/plugin/mru.vim
+|4,39,69,46,1688308665,"~/.vim/plugin/mru.vim"
+-'  72  5  ~/.vim/plugin/mru.vim
+|4,39,72,5,1688308631,"~/.vim/plugin/mru.vim"
+-'  72  5  ~/.vim/plugin/mru.vim
+|4,39,72,5,1688308631,"~/.vim/plugin/mru.vim"
+-'  71  10  ~/.vim/plugin/mru.vim
+|4,39,71,10,1688308625,"~/.vim/plugin/mru.vim"
+-'  70  14  ~/.vim/plugin/mru.vim
+|4,39,70,14,1688308625,"~/.vim/plugin/mru.vim"
+-'  71  10  ~/.vim/plugin/mru.vim
+|4,39,71,10,1688308625,"~/.vim/plugin/mru.vim"
+-'  70  14  ~/.vim/plugin/mru.vim
+|4,39,70,14,1688308625,"~/.vim/plugin/mru.vim"
+-'  57  45  ~/.vim/plugin/mru.vim
+|4,39,57,45,1688308578,"~/.vim/plugin/mru.vim"
+-'  57  45  ~/.vim/plugin/mru.vim
+|4,39,57,45,1688308578,"~/.vim/plugin/mru.vim"
+-'  58  24  ~/.vim/plugin/mru.vim
+|4,39,58,24,1688308577,"~/.vim/plugin/mru.vim"
+-'  110  72  ~/.vim/plugin/mru.vim
+|4,39,110,72,1688308577,"~/.vim/plugin/mru.vim"
+-'  119  55  ~/.vim/plugin/mru.vim
+|4,39,119,55,1688308577,"~/.vim/plugin/mru.vim"
+-'  138  41  ~/.vim/plugin/mru.vim
+|4,39,138,41,1688308577,"~/.vim/plugin/mru.vim"
+-'  58  24  ~/.vim/plugin/mru.vim
+|4,39,58,24,1688308577,"~/.vim/plugin/mru.vim"
+-'  110  72  ~/.vim/plugin/mru.vim
+|4,39,110,72,1688308577,"~/.vim/plugin/mru.vim"
+-'  119  55  ~/.vim/plugin/mru.vim
+|4,39,119,55,1688308577,"~/.vim/plugin/mru.vim"
+-'  138  41  ~/.vim/plugin/mru.vim
+|4,39,138,41,1688308577,"~/.vim/plugin/mru.vim"
 -'  58  4  ~/.vim/plugin/mru.vim
 |4,39,58,4,1688303664,"~/.vim/plugin/mru.vim"
 -'  57  65  ~/.vim/plugin/mru.vim
 |4,39,57,65,1688303589,"~/.vim/plugin/mru.vim"
 -'  54  0  ~/.vim/plugin/mru.vim
 |4,39,54,0,1688303580,"~/.vim/plugin/mru.vim"
+-'  54  0  ~/.vim/plugin/mru.vim
+|4,39,54,0,1688303580,"~/.vim/plugin/mru.vim"
+-'  54  0  ~/.vim/plugin/mru.vim
+|4,39,54,0,1688303580,"~/.vim/plugin/mru.vim"
 -'  1  0  ~/.vim/plugin/mru.vim
 |4,39,1,0,1688303564,"~/.vim/plugin/mru.vim"
+-'  1  0  ~/.vim/plugin/mru.vim
+|4,39,1,0,1688303564,"~/.vim/plugin/mru.vim"
+-'  294  0  ~/.vim/plugin/mru.vim
+|4,39,294,0,1688303562,"~/.vim/plugin/mru.vim"
 -'  291  0  ~/.vim/plugin/mru.vim
 |4,39,291,0,1688303562,"~/.vim/plugin/mru.vim"
+-'  313  0  ~/.vim/plugin/mru.vim
+|4,39,313,0,1688303494,"~/.vim/plugin/mru.vim"
+-'  330  0  ~/.vim/plugin/mru.vim
+|4,39,330,0,1688303494,"~/.vim/plugin/mru.vim"
+-'  308  0  ~/.vim/plugin/mru.vim
+|4,39,308,0,1688303494,"~/.vim/plugin/mru.vim"
+-'  319  0  ~/.vim/plugin/mru.vim
+|4,39,319,0,1688303494,"~/.vim/plugin/mru.vim"
+-'  313  0  ~/.vim/plugin/mru.vim
+|4,39,313,0,1688303494,"~/.vim/plugin/mru.vim"
+-'  329  0  ~/.vim/plugin/mru.vim
+|4,39,329,0,1688303494,"~/.vim/plugin/mru.vim"
 -'  305  0  ~/.vim/plugin/mru.vim
 |4,39,305,0,1688303494,"~/.vim/plugin/mru.vim"
 -'  318  0  ~/.vim/plugin/mru.vim
 |4,39,318,0,1688303494,"~/.vim/plugin/mru.vim"
+-'  94  68  ~/.vim/plugin/mru.vim
+|4,39,94,68,1688303468,"~/.vim/plugin/mru.vim"
+-'  312  0  ~/.vim/plugin/mru.vim
+|4,39,312,0,1688303468,"~/.vim/plugin/mru.vim"
+-'  107  68  ~/.vim/plugin/mru.vim
+|4,39,107,68,1688303468,"~/.vim/plugin/mru.vim"
+-'  90  68  ~/.vim/plugin/mru.vim
+|4,39,90,68,1688303468,"~/.vim/plugin/mru.vim"
+-'  307  0  ~/.vim/plugin/mru.vim
+|4,39,307,0,1688303468,"~/.vim/plugin/mru.vim"
+-'  103  68  ~/.vim/plugin/mru.vim
+|4,39,103,68,1688303468,"~/.vim/plugin/mru.vim"
+-'  94  68  ~/.vim/plugin/mru.vim
+|4,39,94,68,1688303468,"~/.vim/plugin/mru.vim"
+-'  312  0  ~/.vim/plugin/mru.vim
+|4,39,312,0,1688303468,"~/.vim/plugin/mru.vim"
+-'  107  68  ~/.vim/plugin/mru.vim
+|4,39,107,68,1688303468,"~/.vim/plugin/mru.vim"
 -'  90  68  ~/.vim/plugin/mru.vim
 |4,39,90,68,1688303468,"~/.vim/plugin/mru.vim"
 -'  304  0  ~/.vim/plugin/mru.vim
@@ -544,230 +811,151 @@
 |4,39,103,68,1688303468,"~/.vim/plugin/mru.vim"
 -'  54  12  ~/.vim/plugin/mru.vim
 |4,39,54,12,1688303448,"~/.vim/plugin/mru.vim"
--'  69  0  ~/.vim/plugin/mru.vim
-|4,39,69,0,1688303430,"~/.vim/plugin/mru.vim"
--'  278  12  ~/.vim/plugin/mru.vim
-|4,39,278,12,1688303430,"~/.vim/plugin/mru.vim"
--'  279  4  ~/.vim/plugin/mru.vim
-|4,39,279,4,1688303430,"~/.vim/plugin/mru.vim"
--'  282  55  ~/.vim/plugin/mru.vim
-|4,39,282,55,1688303430,"~/.vim/plugin/mru.vim"
--'  303  16  ~/.vim/plugin/mru.vim
-|4,39,303,16,1688303430,"~/.vim/plugin/mru.vim"
--'  304  8  ~/.vim/plugin/mru.vim
-|4,39,304,8,1688303430,"~/.vim/plugin/mru.vim"
--'  321  0  ~/.vim/plugin/mru.vim
-|4,39,321,0,1688303430,"~/.vim/plugin/mru.vim"
+-'  73  0  ~/.vim/plugin/mru.vim
+|4,39,73,0,1688303430,"~/.vim/plugin/mru.vim"
+-'  284  12  ~/.vim/plugin/mru.vim
+|4,39,284,12,1688303430,"~/.vim/plugin/mru.vim"
+-'  285  4  ~/.vim/plugin/mru.vim
+|4,39,285,4,1688303430,"~/.vim/plugin/mru.vim"
+-'  85  0  ~/.vim/plugin/mru.vim
+|4,39,85,0,1688303430,"~/.vim/plugin/mru.vim"
+-'  74  45  ~/.vim/plugin/mru.vim
+|4,39,74,45,1688303430,"~/.vim/plugin/mru.vim"
+-'  299  4  ~/.vim/plugin/mru.vim
+|4,39,299,4,1688303430,"~/.vim/plugin/mru.vim"
+-'  302  55  ~/.vim/plugin/mru.vim
+|4,39,302,55,1688303430,"~/.vim/plugin/mru.vim"
+-'  328  16  ~/.vim/plugin/mru.vim
+|4,39,328,16,1688303430,"~/.vim/plugin/mru.vim"
+-'  329  8  ~/.vim/plugin/mru.vim
+|4,39,329,8,1688303430,"~/.vim/plugin/mru.vim"
+-'  348  0  ~/.vim/plugin/mru.vim
+|4,39,348,0,1688303430,"~/.vim/plugin/mru.vim"
+-'  349  0  ~/.vim/plugin/mru.vim
+|4,39,349,0,1688303430,"~/.vim/plugin/mru.vim"
+-'  280  12  ~/.vim/plugin/mru.vim
+|4,39,280,12,1688303430,"~/.vim/plugin/mru.vim"
+-'  281  4  ~/.vim/plugin/mru.vim
+|4,39,281,4,1688303430,"~/.vim/plugin/mru.vim"
+-'  306  16  ~/.vim/plugin/mru.vim
+|4,39,306,16,1688303430,"~/.vim/plugin/mru.vim"
 -'  322  0  ~/.vim/plugin/mru.vim
 |4,39,322,0,1688303430,"~/.vim/plugin/mru.vim"
+-'  323  0  ~/.vim/plugin/mru.vim
+|4,39,323,0,1688303430,"~/.vim/plugin/mru.vim"
 -'  81  0  ~/.vim/plugin/mru.vim
 |4,39,81,0,1688303430,"~/.vim/plugin/mru.vim"
--'  70  45  ~/.vim/plugin/mru.vim
-|4,39,70,45,1688303430,"~/.vim/plugin/mru.vim"
--'  291  12  ~/.vim/plugin/mru.vim
-|4,39,291,12,1688303430,"~/.vim/plugin/mru.vim"
--'  292  4  ~/.vim/plugin/mru.vim
-|4,39,292,4,1688303430,"~/.vim/plugin/mru.vim"
--'  295  55  ~/.vim/plugin/mru.vim
-|4,39,295,55,1688303430,"~/.vim/plugin/mru.vim"
--'  316  16  ~/.vim/plugin/mru.vim
-|4,39,316,16,1688303430,"~/.vim/plugin/mru.vim"
--'  317  8  ~/.vim/plugin/mru.vim
-|4,39,317,8,1688303430,"~/.vim/plugin/mru.vim"
--'  334  0  ~/.vim/plugin/mru.vim
-|4,39,334,0,1688303430,"~/.vim/plugin/mru.vim"
--'  335  0  ~/.vim/plugin/mru.vim
-|4,39,335,0,1688303430,"~/.vim/plugin/mru.vim"
--'  89  36  ~/.vim/plugin/mru.vim
-|4,39,89,36,1688303429,"~/.vim/plugin/mru.vim"
--'  324  0  ~/.vim/plugin/mru.vim
-|4,39,324,0,1688303429,"~/.vim/plugin/mru.vim"
--'  102  36  ~/.vim/plugin/mru.vim
-|4,39,102,36,1688303429,"~/.vim/plugin/mru.vim"
--'  58  45  ~/.vim/plugin/mru.vim
-|4,39,58,45,1688303429,"~/.vim/plugin/mru.vim"
--'  337  0  ~/.vim/plugin/mru.vim
-|4,39,337,0,1688303429,"~/.vim/plugin/mru.vim"
--'  66  12  ~/.vim/plugin/mru.vim
-|4,39,66,12,1688303362,"~/.vim/plugin/mru.vim"
--'  78  12  ~/.vim/plugin/mru.vim
-|4,39,78,12,1688303218,"~/.vim/plugin/mru.vim"
--'  91  12  ~/.vim/plugin/mru.vim
-|4,39,91,12,1688303218,"~/.vim/plugin/mru.vim"
--'  320  32  ~/.vim/plugin/mru.vim
-|4,39,320,32,1688303199,"~/.vim/plugin/mru.vim"
--'  333  32  ~/.vim/plugin/mru.vim
-|4,39,333,32,1688303199,"~/.vim/plugin/mru.vim"
--'  336  32  ~/.vim/plugin/mru.vim
-|4,39,336,32,1688303198,"~/.vim/plugin/mru.vim"
--'  349  32  ~/.vim/plugin/mru.vim
-|4,39,349,32,1688303198,"~/.vim/plugin/mru.vim"
--'  293  8  ~/.vim/plugin/mru.vim
-|4,39,293,8,1688303039,"~/.vim/plugin/mru.vim"
--'  306  8  ~/.vim/plugin/mru.vim
-|4,39,306,8,1688303039,"~/.vim/plugin/mru.vim"
--'  307  16  ~/.vim/plugin/mru.vim
-|4,39,307,16,1688303038,"~/.vim/plugin/mru.vim"
--'  320  16  ~/.vim/plugin/mru.vim
-|4,39,320,16,1688303038,"~/.vim/plugin/mru.vim"
--'  60  16  ~/.vim/plugin/mru.vim
-|4,39,60,16,1688302458,"~/.vim/plugin/mru.vim"
--'  60  16  ~/.vim/plugin/mru.vim
-|4,39,60,16,1688302456,"~/.vim/plugin/mru.vim"
--'  65  24  ~/.vim/plugin/mru.vim
-|4,39,65,24,1688302456,"~/.vim/plugin/mru.vim"
--'  72  16  ~/.vim/plugin/mru.vim
-|4,39,72,16,1688302456,"~/.vim/plugin/mru.vim"
--'  77  24  ~/.vim/plugin/mru.vim
-|4,39,77,24,1688302456,"~/.vim/plugin/mru.vim"
--'  106  22  ~/.vim/plugin/mru.vim
-|4,39,106,22,1688302455,"~/.vim/plugin/mru.vim"
--'  115  20  ~/.vim/plugin/mru.vim
-|4,39,115,20,1688302455,"~/.vim/plugin/mru.vim"
--'  119  22  ~/.vim/plugin/mru.vim
-|4,39,119,22,1688302455,"~/.vim/plugin/mru.vim"
--'  128  20  ~/.vim/plugin/mru.vim
-|4,39,128,20,1688302455,"~/.vim/plugin/mru.vim"
--'  212  0  ~/.vim/plugin/mru.vim
-|4,39,212,0,1688302359,"~/.vim/plugin/mru.vim"
--'  225  0  ~/.vim/plugin/mru.vim
-|4,39,225,0,1688302359,"~/.vim/plugin/mru.vim"
--'  74  7  ~/.vim/plugin/mru.vim
-|4,39,74,7,1688302349,"~/.vim/plugin/mru.vim"
--'  87  7  ~/.vim/plugin/mru.vim
-|4,39,87,7,1688302349,"~/.vim/plugin/mru.vim"
--'  1  0  ~/.vim/plugin/mru.vim
-|4,39,1,0,1688302338,"~/.vim/plugin/mru.vim"
--'  273  2  ~/.vim/plugin/mru.vim
-|4,39,273,2,1688302332,"~/.vim/plugin/mru.vim"
--'  286  2  ~/.vim/plugin/mru.vim
-|4,39,286,2,1688302332,"~/.vim/plugin/mru.vim"
--'  272  2  ~/.vim/plugin/mru.vim
-|4,39,272,2,1688302331,"~/.vim/plugin/mru.vim"
--'  271  2  ~/.vim/plugin/mru.vim
-|4,39,271,2,1688302331,"~/.vim/plugin/mru.vim"
--'  270  2  ~/.vim/plugin/mru.vim
-|4,39,270,2,1688302331,"~/.vim/plugin/mru.vim"
--'  269  2  ~/.vim/plugin/mru.vim
-|4,39,269,2,1688302331,"~/.vim/plugin/mru.vim"
--'  268  2  ~/.vim/plugin/mru.vim
-|4,39,268,2,1688302331,"~/.vim/plugin/mru.vim"
--'  285  2  ~/.vim/plugin/mru.vim
-|4,39,285,2,1688302331,"~/.vim/plugin/mru.vim"
--'  284  2  ~/.vim/plugin/mru.vim
-|4,39,284,2,1688302331,"~/.vim/plugin/mru.vim"
--'  283  2  ~/.vim/plugin/mru.vim
-|4,39,283,2,1688302331,"~/.vim/plugin/mru.vim"
--'  282  2  ~/.vim/plugin/mru.vim
-|4,39,282,2,1688302331,"~/.vim/plugin/mru.vim"
--'  281  2  ~/.vim/plugin/mru.vim
-|4,39,281,2,1688302331,"~/.vim/plugin/mru.vim"
--'  267  2  ~/.vim/plugin/mru.vim
-|4,39,267,2,1688302330,"~/.vim/plugin/mru.vim"
--'  237  6  ~/.vim/plugin/mru.vim
-|4,39,237,6,1688302330,"~/.vim/plugin/mru.vim"
--'  234  2  ~/.vim/plugin/mru.vim
-|4,39,234,2,1688302330,"~/.vim/plugin/mru.vim"
--'  232  2  ~/.vim/plugin/mru.vim
-|4,39,232,2,1688302330,"~/.vim/plugin/mru.vim"
--'  280  2  ~/.vim/plugin/mru.vim
-|4,39,280,2,1688302330,"~/.vim/plugin/mru.vim"
--'  250  6  ~/.vim/plugin/mru.vim
-|4,39,250,6,1688302330,"~/.vim/plugin/mru.vim"
--'  247  2  ~/.vim/plugin/mru.vim
-|4,39,247,2,1688302330,"~/.vim/plugin/mru.vim"
--'  245  2  ~/.vim/plugin/mru.vim
-|4,39,245,2,1688302330,"~/.vim/plugin/mru.vim"
--'  231  2  ~/.vim/plugin/mru.vim
-|4,39,231,2,1688302329,"~/.vim/plugin/mru.vim"
--'  230  2  ~/.vim/plugin/mru.vim
-|4,39,230,2,1688302329,"~/.vim/plugin/mru.vim"
--'  229  2  ~/.vim/plugin/mru.vim
-|4,39,229,2,1688302329,"~/.vim/plugin/mru.vim"
--'  228  2  ~/.vim/plugin/mru.vim
-|4,39,228,2,1688302329,"~/.vim/plugin/mru.vim"
--'  227  2  ~/.vim/plugin/mru.vim
-|4,39,227,2,1688302329,"~/.vim/plugin/mru.vim"
--'  244  2  ~/.vim/plugin/mru.vim
-|4,39,244,2,1688302329,"~/.vim/plugin/mru.vim"
--'  243  2  ~/.vim/plugin/mru.vim
-|4,39,243,2,1688302329,"~/.vim/plugin/mru.vim"
--'  242  2  ~/.vim/plugin/mru.vim
-|4,39,242,2,1688302329,"~/.vim/plugin/mru.vim"
--'  241  2  ~/.vim/plugin/mru.vim
-|4,39,241,2,1688302329,"~/.vim/plugin/mru.vim"
--'  240  2  ~/.vim/plugin/mru.vim
-|4,39,240,2,1688302329,"~/.vim/plugin/mru.vim"
--'  226  2  ~/.vim/plugin/mru.vim
-|4,39,226,2,1688302328,"~/.vim/plugin/mru.vim"
--'  197  14  ~/.vim/plugin/mru.vim
-|4,39,197,14,1688302328,"~/.vim/plugin/mru.vim"
--'  239  2  ~/.vim/plugin/mru.vim
-|4,39,239,2,1688302328,"~/.vim/plugin/mru.vim"
--'  210  14  ~/.vim/plugin/mru.vim
-|4,39,210,14,1688302328,"~/.vim/plugin/mru.vim"
--'  125  2  ~/.vim/plugin/mru.vim
-|4,39,125,2,1688302327,"~/.vim/plugin/mru.vim"
--'  124  2  ~/.vim/plugin/mru.vim
-|4,39,124,2,1688302327,"~/.vim/plugin/mru.vim"
--'  138  2  ~/.vim/plugin/mru.vim
-|4,39,138,2,1688302327,"~/.vim/plugin/mru.vim"
--'  137  2  ~/.vim/plugin/mru.vim
-|4,39,137,2,1688302327,"~/.vim/plugin/mru.vim"
--'  62  6  ~/.vim/plugin/mru.vim
-|4,39,62,6,1688302326,"~/.vim/plugin/mru.vim"
--'  42  8  ~/.vim/plugin/mru.vim
-|4,39,42,8,1688302325,"~/.vim/plugin/mru.vim"
--'  13  0  ~/.vim/plugin/mru.vim
-|4,39,13,0,1688302325,"~/.vim/plugin/mru.vim"
--'  42  8  ~/.vim/plugin/mru.vim
-|4,39,42,8,1688302325,"~/.vim/plugin/mru.vim"
 
 # Buffer list:
-%~/.vim/plugin/mru.vim	58	4
+%~/.vim/plugin/mru.vim	134	38
+%~/.vim/.gitignore	1	0
 
 # History of marks within files (newest to oldest):
 
 > ~/.vim/plugin/mru.vim
-	*	1688303663	0
-	"	58	4
-	.	58	0
+	*	1688310202	0
+	"	134	38
+	^	333	2
+	.	334	0
 	+	13	0
-	+	69	11
-	+	69	10
+	+	73	11
+	+	73	10
 	+	58	46
-	+	69	0
-	+	279	50
-	+	279	14
-	+	282	57
-	+	304	0
-	+	321	0
-	+	322	1
-	+	321	0
-	+	89	41
+	+	73	0
+	+	285	50
+	+	285	14
+	+	289	57
+	+	312	0
+	+	333	0
+	+	337	1
+	+	333	0
+	+	93	41
 	+	54	46
-	+	322	0
-	+	322	27
-	+	321	30
-	+	322	5
+	+	337	0
+	+	337	27
+	+	333	30
+	+	337	5
 	+	54	44
 	+	58	44
-	+	322	10
-	+	90	36
-	+	322	0
-	+	321	50
-	+	69	0
-	+	90	36
+	+	337	10
+	+	94	36
+	+	337	0
+	+	333	50
+	+	73	0
+	+	94	36
 	+	54	0
-	+	69	39
+	+	73	39
 	+	58	25
 	+	58	5
-	+	69	0
+	+	73	0
 	+	58	0
+	+	72	10
+	+	71	10
+	+	69	0
+	+	68	27
+	+	69	63
+	+	70	14
+	+	72	52
+	+	68	22
+	+	69	46
+	+	72	0
+	+	333	0
+	+	336	24
+	+	336	25
+	+	336	1
+	+	336	0
+	+	93	41
+	+	336	0
+	+	337	0
+	+	334	0
+	+	311	0
+	+	336	1
+	+	311	30
+	+	311	92
+	+	311	46
+	+	311	0
+	+	311	30
+	+	311	23
+	+	311	26
+	+	311	0
+	+	317	0
+	+	316	37
+	+	318	0
+	+	316	0
+	+	317	0
+	+	333	54
+	+	336	0
+	+	334	0
+	+	316	0
+	+	333	49
+	+	311	0
+	+	288	54
+	+	288	18
+	+	288	26
+	+	288	0
+	+	289	57
+	+	334	0
+	+	335	0
+	+	219	54
+	+	220	0
+	+	221	5
+	+	220	37
+	+	315	0
+	+	316	13
+	+	315	27
+	+	334	0
+
+> /tmp/mru/v02/item.txt
+	*	1688309454	0
+	"	1	0
+
+> /tmp/mru/v01/item.txt
+	*	1688309447	0
+	"	1	0
 
 > ~/.vim/.gitignore
-	*	1686160181	0
-	"	7	4
+	*	1688309315	0
+	"	1	0
 	^	7	5
 	.	7	4
 	+	7	4
