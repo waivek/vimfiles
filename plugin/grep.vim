@@ -21,6 +21,7 @@ function! s:Grep(key, paths)
     " let quickfix_filepath = 'C:\Users\vivek\AppData\Local\Temp\result.txt'
     let quickfix_filepath = expand(directory . '/result.txt')
     call writefile(paths, filepath)
+    echom "filepath: " . filepath
     let rush_command = printf('rush -i %s --keep-order "rg --vimgrep %s {}" > %s', filepath, key, quickfix_filepath)
 
     echo "Searching " . len(paths) . " files"

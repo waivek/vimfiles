@@ -1,7 +1,16 @@
 
 
 function! s:RunPython()
-    let command = '!start cmd /k python ' . expand("%:p")
+    let path = expand("%:p:h")
+    let module_path = 'C:\Users\vivek\Python\waivek\waivek'
+    let working_dir = 'C:\Users\vivek\Python\waivek'
+    if path == module_path
+        let filename_without_extension = expand("%:t:r")
+        let directory = module_path
+        let command = '!start cmd /k cd ' . working_dir . ' && python -m waivek.' . filename_without_extension
+    else
+        let command = '!start cmd /k python ' . expand("%:p")
+    endif
     " let command = '!start wt -w 0 nt -p "Command Prompt" python ' . expand("%:p")
     execute command
 endfunction

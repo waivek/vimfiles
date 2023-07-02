@@ -201,7 +201,7 @@ endfunction
 function! s:PrintPythonVariable()
     let s:items = s:RegexDocumentSymbols()
     call s:PythonSetUpCFU()
-    let ic_exists = search('^\s*from ic import.*ic', 'wn') != 0
+    let ic_exists = search('^\s*from \.\?\(ic\|waivek\) import.*ic', 'wn') != 0
     if ic_exists
         imap <buffer> <expr> <Plug>InsertPrintvarText "ic()\<Left>\<C-x>\<C-u>\<C-p>"
         call feedkeys("\<Plug>InsertPrintvarText")

@@ -393,6 +393,7 @@ augroup VimrcFileSpecificSettings
     au BufRead * call s:SetFileSpecificSettings()
 augroup END
 
+set path+=~/Python/waivek/waivek
 function! s:PathSpecficSettings()
     let working_directory = getcwd()
     if working_directory ==# glob('~/Desktop/website')
@@ -401,6 +402,7 @@ function! s:PathSpecficSettings()
         let &path='.,,plugin/,colors/'
     else
         set path&
+        set path+=~/Python/waivek/waivek
     endif
 endfunction
 augroup VimrcPathSpecificSettings
@@ -1024,6 +1026,15 @@ function! s:ToList()
 endfunction
 command! ToList call s:ToList()
 
+function! s:ToListRange(line1, line2)
+    '<,'>s/\(.*\)/"\1", /g
+    '<,'>join
+    '<,'>s/.*/[ \0 ]/
+    '<,'>s/,  \ze]/ /
+endfunction
+command! -range ToListRange :call s:ToListRange(<line1>, <line2>)
+
+
 
 function! s:FormatZomato()
     g/jumbo-tracker/normal! vatJ
@@ -1320,6 +1331,7 @@ if has('win32') || has('win64')
 else
     source ~/.vim/performance/performance.vim
 endif
+
 
 
 " BASH

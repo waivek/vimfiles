@@ -440,3 +440,7 @@ command! ShowClasses silent! call s:ShowClasses()
 
 " iabbrev reset h1, h2, h3, h4, h5, h6, body, p, hr, pre, ol, ul, header, nav, button { margin: 0; padding: 0; }
 
+function! ChangeHTMLClassToVueClass()
+    s/ class="\([^"]*\)"/ :class="[ '\1', { 'bg-red-400': true } ]"/
+endfunction
+command! -nargs=0 ChangeHTMLClassToVueClass :call ChangeHTMLClassToVueClass()

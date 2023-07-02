@@ -424,9 +424,7 @@ vnoremap <buffer> <silent> <space>b :<c-u>call <SID>InsertBreakpointVisual()<CR>
 nnoremap <silent> <buffer> <space>t :call <SID>ToggleTimerSingleLine()<CR>
 vnoremap <silent> <space>t :<c-u>call <SID>InsertTimerVisual()<CR>
 nnoremap <silent> <space>T :call <SID>InsertFileTimer()<CR>
-inoremap <buffer> jF print(f"{}")T{
-
-setlocal path+=~/Documents/Python/
+inoremap <buffer> jF print(f"{ = }")T{
 
 iabbrev <buffer> respones response
 iabbrev <buffer> Respones Response
@@ -438,3 +436,4 @@ command! Py !start python -i C:/Users/vivek/repl.py
 
 
 let g:pyindent_searchpair_timeout = 10
+

@@ -51,6 +51,41 @@ function! s:Reset()
 endfunction
 
 
+function! s:GetExistingOldFiles()
+    let start_time = reltimefloat(reltime())
+    let is_windows = has('win32') || has('win64')
+    let l:home = is_windows ? escape(expand("~"), '\') : expand("~")
+    let l:pattern = is_windows ? "^\\~" : "^/~"
+    let expanded_paths = map(copy(v:oldfiles), 'substitute(v:val, l:pattern, l:home, "")') " we use substitute instead of escape for faster but less accurate result
+    let paths = filter(expanded_paths, 'filereadable(v:val)')
+    let time_taken = reltimefloat(reltime()) - start_time
+    " echo "Time taken to get existing oldfiles: " . string(time_taken)
+    return paths
+endfunction
+
+function! s:GetExistingOldFilesDictionaries()
+    let start_time = reltimefloat(reltime())
+    let is_windows = has('win32') || has('win64')
+    let l:home = is_windows ? escape(expand("~"), '\') : expand("~")
+    let l:pattern = is_windows ? "^\\~" : "^/~"
+    let expanded_paths = map(copy(v:oldfiles), 'substitute(v:val, l:pattern, l:home, "")') " we use substitute instead of escape for faster but less accurate result
+    let paths = filter(expanded_paths, 'filereadable(v:val)')
+    let time_taken = reltimefloat(reltime()) - start_time
+
+
+    let l:a1 = map(copy(v:oldfiles), '{"oldfiles_index": v:key+1, "uniquetail": fnamemodify(v:val, ":t"), "tail": fnamemodify(v:val, ":t"), "text": substitute(v:val, l:pattern, l:home, "")  }')
+    let l:filtered_a3 = filter(copy(l:a1), 'filereadable(v:val["text"])')
+    return l:filtered_a3
+endfunction
+
+
+
+" Introducing Latency for startup but worth it to remove the lag when typing MRU
+let g:existing_oldfiles = v:null
+augroup UpdateOldfilesOnStartup
+    au!
+    au VimEnter * let g:existing_oldfiles = s:GetExistingOldFilesDictionaries()
+augroup END
 
 let g:results_D = {}
 function! s:OldFilesSource(glob="*", get_first_match=v:false)
@@ -64,9 +99,8 @@ function! s:OldFilesSource(glob="*", get_first_match=v:false)
     "
     " Primary use point is by wildcard for extensions and word boundaries
     let MinusOne = { s -> strpart(s, 0, len(s)-1) }
-    if !exists("g:tails_cache")
-        " let s:tails_cache = map(copy(v:oldfiles), 'fnamemodify(v:val, ":t")')
-        let g:tails_cache = map(copy(v:oldfiles), '{"oldfiles_index": v:key+1, "uniquetail": fnamemodify(v:val, ":t"), "tail": fnamemodify(v:val, ":t"), "text": v:val  }')
+    if !exists("g:existing_oldfiles")
+        let g:existing_oldfiles = s:GetExistingOldFiles()
     endif
 
     " file.c -> file\.c
@@ -80,32 +114,16 @@ function! s:OldFilesSource(glob="*", get_first_match=v:false)
     " Even though, we lose the ability to do v:oldfiles_index[index] as we are now off by one.
     let isk_save=&iskeyword
     set isk-=_
-    " Implementation 1: Slow if statements
-    " Implementation 1 {{{
-    " let filenames = []
-    " let i = 1 
-    " for fname in v:oldfiles
-    "     let tail = fnamemodify(fname, ":t")
-    "     if tail =~# '\<' . regex
-    "         let D = {"text": fname, "oldfiles_index": i, "tail" : tail, "uniquetail": tail}
-    "         call add(filenames, D)
-    "         if a:get_first_match
-    "             break
-    "         endif
-    "     endif
-    "     let i = i+1
-    " endfor
-    " }}}
 
     " Implementation 2: Fast filter method
-    " let filenames = filter(copy(g:tails_cache), 'v:val["tail"] =~# pattern_string')
+    " let filenames = filter(copy(g:existing_oldfiles), 'v:val["tail"] =~# pattern_string')
 
     " Implementation 3: Fast-er filtering with caching
     let previous_regex = MinusOne(regex)
     if has_key(g:results_D, previous_regex)
         let tails_copy = copy(g:results_D[previous_regex])
     else
-        let tails_copy = copy(g:tails_cache)
+        let tails_copy = copy(g:existing_oldfiles)
     endif
     let filenames = filter(tails_copy, 'v:val["tail"] =~# pattern_string')
     if !has_key(g:results_D, regex)
@@ -115,6 +133,9 @@ function! s:OldFilesSource(glob="*", get_first_match=v:false)
     let &iskeyword=isk_save
     return filenames 
 endfunction
+" let oldfiles = s:OldFilesSource()
+" echo "oldfiles[0]: " . string(oldfiles[0])
+" echo "len(oldfiles): " . string(len(oldfiles))
 
 function! s:MruCompletion (ArgLead, CmdLine, CursorPos)
     let filename_dictionaries = s:OldFilesSource(a:ArgLead)
@@ -130,31 +151,8 @@ function! s:MruCompletion (ArgLead, CmdLine, CursorPos)
     call feedkeys("\<Tab>")
     " call feedkeys("\<S-Tab>")
     return filenames
-
-
-
-
-
-
-
-    let filenames = []
-    let tail = ""
-    " file.c -> file\.c
-    let regex = substitute(a:ArgLead, '\.', '\\.', "g")
-    " f*x -> f.*x
-    let regex = substitute(regex, "*", ".*", "g")
-    let serial_number = ""
-    let i = 1
-    for fname in v:oldfiles
-        let tail = fnamemodify(fname, ":t")
-        if tail =~# '\<' . regex
-            let serial_number = i . ":" . tail
-            call add(filenames, serial_number)
-        endif
-        let i = i+1
-    endfor
-    return filenames
 endfunction
+
 let global_glob = "*.txt"
 let global_glob = "uti"
 let global_glob = "failingquery"

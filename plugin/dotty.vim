@@ -447,8 +447,10 @@ function! s:UpdatePositionCache(...)
     let g:repeat_position_cache = dotty#GetMatchByteOffsets()
 endfunction
 
+noremap <silent> <Plug>(StartHL) :<C-U>set hlsearch<cr>
 function! s:SetHls(timer_id)
-    call feedkeys(":set hls\<CR>")
+    " silent call feedkeys(":silent set hls\<CR>")
+    silent call feedkeys("\<Plug>(StartHL)", 'm')
 endfunction
 
 function! s:ShowHighlight(timer_id)
@@ -739,7 +741,7 @@ function! s:RemoveAllOverrides()
         " of complexity from RepeatChange, InitializeDotOverride and
         " RemoveAllOverrides
 
-        " call s:SetHls(1) 
+        call s:SetHls(1) 
     endif
 
 
