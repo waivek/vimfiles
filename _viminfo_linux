@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/\~
+~MSle0~/Date\.now()\.dt
 
 # Last Substitute Search Pattern:
 ~MSle0&\~
@@ -21,9 +21,111 @@ $
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1688368675,,"q"
+|2,0,1688409861,,"q"
+:cmd
+|2,0,1688408842,,"cmd"
+:e twitch_utilities.py
+|2,0,1688408804,,"e twitch_utilities.py"
+:Jprevious
+|2,0,1688408553,,"Jprevious"
+:d
+|2,0,1688408262,,"d"
 :qa
-|2,0,1688368665,,"qa"
+|2,0,1688408177,,"qa"
+:e data/c
+|2,0,1688408075,,"e data/c"
+:MRU env
+|2,0,1688407545,,"MRU env"
+:CMD
+|2,0,1688407481,,"CMD"
+:e auth.py
+|2,0,1688407417,,"e auth.py"
+:MRU cli
+|2,0,1688407300,,"MRU cli"
+:b cli
+|2,0,1688407299,,"b cli"
+:e ~/.vim/plugin/template.vim
+|2,0,1688407193,,"e ~/.vim/plugin/template.vim"
+:Template
+|2,0,1688407181,,"Template"
+:e clips.py
+|2,0,1688407010,,"e clips.py"
+:e ../flask-vue/
+|2,0,1688406973,,"e ../flask-vue/"
+:e ../code/
+|2,0,1688406971,,"e ../code/"
+:e data/
+|2,0,1688406967,,"e data/"
+:copen
+|2,0,1688406781,,"copen"
+:grep "\.db" -g *.py 
+|2,0,1688406768,,"grep \"\\.db\" -g *.py "
+:e actions-chat.py
+|2,0,1688406761,,"e actions-chat.py"
+:grep -g *.
+|2,0,1688406758,,"grep -g *."
+:q!
+|2,0,1688406633,,"q!"
+:set grepprg
+|2,0,1688406591,,"set grepprg"
+:grep -g *.py db
+|2,0,1688406589,,"grep -g *.py db"
+:grep -g *.py .db
+|2,0,1688406580,,"grep -g *.py .db"
+:grep -g *.py \\.db
+|2,0,1688406574,,"grep -g *.py \\\\.db"
+:grep -g *.py \.db
+|2,0,1688406562,,"grep -g *.py \\.db"
+:messages
+|2,0,1688406558,,"messages"
+:grep -g *.py 
+|2,0,1688406555,,"grep -g *.py "
+:Copilot status
+|2,0,1688406442,,"Copilot status"
+:b vuejs/backend.html
+|2,0,1688394062,,"b vuejs/backend.html"
+:e 
+|2,0,1688394060,,"e "
+:e requirements.txt
+|2,0,1688393878,,"e requirements.txt"
+:e api.py
+|2,0,1688393650,,"e api.py"
+:MRU 
+|2,0,1688393648,,"MRU "
+:e Db.vue
+|2,0,1688393600,,"e Db.vue"
+:set ft?
+|2,0,1688393585,,"set ft?"
+:'<,'>
+|2,0,1688393582,,"'<,'>"
+:'<,'>T
+|2,0,1688393577,,"'<,'>T"
+:TemplateHTML
+|2,0,1688393575,,"TemplateHTML"
+:e Backend.vue
+|2,0,1688393572,,"e Backend.vue"
+:e backend.html
+|2,0,1688393554,,"e backend.html"
+:Jpre
+|2,0,1688393544,,"Jpre"
+:e twitch_vue.html
+|2,0,1688393540,,"e twitch_vue.html"
+:e db.html
+|2,0,1688393533,,"e db.html"
+:e index.html
+|2,0,1688393529,,"e index.html"
+:e vuejs/backend.html
+|2,0,1688393468,,"e vuejs/backend.html"
+:MRU set
+|2,0,1688393098,,"MRU set"
+:MRU setup
+|2,0,1688392481,,"MRU setup"
+:MRU 37:plugin/statusline.vim
+|2,0,1688390220,,"MRU 37:plugin/statusline.vim"
+:MRU 7:ftplugin/html.vim
+|2,0,1688390216,,"MRU 7:ftplugin/html.vim"
+:MRU 6:vuejs/db.html
+|2,0,1688390214,,"MRU 6:vuejs/db.html"
 :g/\~/
 |2,0,1688368453,,"g/\\~/"
 :so %
@@ -32,8 +134,6 @@ $
 |2,0,1688368419,,"pwd"
 :s
 |2,0,1688368418,,"s"
-:CMD
-|2,0,1688368350,,"CMD"
 :!python
 |2,0,1688368301,,"!python"
 :%s/ .*//
@@ -44,8 +144,6 @@ $
 |2,0,1688367984,,"%"
 :v/import/d
 |2,0,1688367983,,"v/import/d"
-:e requirements.txt
-|2,0,1688367977,,"e requirements.txt"
 :e re
 |2,0,1688367970,,"e re"
 :MRU db.
@@ -70,8 +168,6 @@ $
 |2,0,1688311237,,"MRU ftpl"
 :e ~/.vim/ftplugin/
 |2,0,1688311236,,"e ~/.vim/ftplugin/"
-:messages
-|2,0,1688311217,,"messages"
 :e
 |2,0,1688311214,,"e"
 :MRU 17:z/z.sh
@@ -82,8 +178,6 @@ $
 |2,0,1688310195,,"MRU 28:.vim/mini.vimrc"
 :MRU 2:v01/item.txt
 |2,0,1688310102,,"MRU 2:v01/item.txt"
-:MRU 
-|2,0,1688310098,,"MRU "
 :MRU 4:.vim/.gitignore
 |2,0,1688309931,,"MRU 4:.vim/.gitignore"
 :MRU 19:bin/gita
@@ -180,8 +274,6 @@ $
 |2,0,1688302208,,"echo g:old"
 :Copilot setup
 |2,0,1685617619,,"Copilot setup"
-:q!
-|2,0,1685570792,,"q!"
 :set nonumber
 |2,0,1685569324,,"set nonumber"
 :echoconsole -n 'hello'
@@ -402,6 +494,44 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/\(def\|class\)\s\+\w*rfc
+|2,1,1688408806,47,"\\(def\\|class\\)\\s\\+\\w*rfc"
+?/lambda
+|2,1,1688408357,47,"lambda"
+?/client_id
+|2,1,1688408324,47,"client_id"
+?/url2
+|2,1,1688408316,47,"url2"
+? timer\..*\"helix_name2id\"
+|2,1,1688408212,,"timer\\..*\\\"helix_name2id\\\""
+?/helix_name2id
+|2,1,1688408206,47,"helix_name2id"
+?/helix.*clips
+|2,1,1688408002,47,"helix.*clips"
+?/helix
+|2,1,1688407998,47,"helix"
+?/get
+|2,1,1688407962,47,"get"
+?/aget
+|2,1,1688407956,47,"aget"
+?/\(def\|class\)\s\+\w*clips
+|2,1,1688407938,47,"\\(def\\|class\\)\\s\\+\\w*clips"
+?/aio
+|2,1,1688407873,47,"aio"
+?/rel2abs
+|2,1,1688406887,47,"rel2abs"
+?/main\.db
+|2,1,1688406842,47,"main\\.db"
+?/main
+|2,1,1688406805,47,"main"
+?/-g 
+|2,1,1688406624,47,"-g "
+?/c
+|2,1,1688403204,47,"c"
+?/sys
+|2,1,1688393994,47,"sys"
+?/cors
+|2,1,1688393860,47,"cors"
 ? \~
 |2,1,1688368453,,"\\~"
 ?/\~
@@ -536,282 +666,587 @@ $
 # Debug Line History (newest to oldest):
 
 # Registers:
-""0	CHAR	0
-	,
-|3,1,0,0,1,0,1688368482,","
-"1	LINE	0
-	time
-|3,0,1,1,1,0,1688368091,"time"
-"2	LINE	0
-	import sqlite3
-	import sys
-|3,0,2,1,2,0,1688368014,"import sqlite3","import sys"
-"3	LINE	0
-	import sqlite3
-	import sys
-	import timeago
-|3,0,3,1,3,0,1688368012,"import sqlite3","import sys","import timeago"
-"4	LINE	0
-	import json
-	import os
-	import os.path
-|3,0,4,1,3,0,1688368005,"import json","import os","import os.path"
-"5	LINE	0
-	from waivek import Timer   # Single Use
-	from waivek import handler # Single Use
-	from waivek import ic, ib     # Multi-Use, import time: 70ms - 110ms
-|3,0,5,1,3,0,1688367999,"from waivek import Timer   # Single Use","from waivek import handler # Single Use","from waivek import ic, ib     # Multi-Use, import time: 70ms - 110ms"
-"6	LINE	0
-	from flask import render_template
-	from flask import request
-|3,0,6,1,2,0,1688367995,"from flask import render_template","from flask import request"
-"7	LINE	0
-	from datetime import datetime
-	from datetime import datetime, timedelta
-	from datetime import timedelta
-|3,0,7,1,3,0,1688367992,"from datetime import datetime","from datetime import datetime, timedelta","from datetime import timedelta"
-"8	LINE	0
+"0	CHAR	0
+	rows
+|3,0,0,0,1,0,1688409489,"rows"
+""1	LINE	0
 	
-|3,0,8,1,1,0,1688367983,""
+|3,1,1,1,1,0,1688409594,""
+"2	LINE	0
+	    breakpoint()
+|3,0,2,1,1,0,1688409357,"    breakpoint()"
+"3	LINE	0
+	from waivek import Date
+|3,0,3,1,1,0,1688409340,"from waivek import Date"
+"4	LINE	0
+	    ic(urls)
+|3,0,4,1,1,0,1688409333,"    ic(urls)"
+"5	LINE	0
+	    ic(urls)
+|3,0,5,1,1,0,1688409194,"    ic(urls)"
+"6	LINE	0
+	    ic(table)
+	    breakpoint()
+|3,0,6,1,2,0,1688409168,"    ic(table)","    breakpoint()"
+"7	LINE	0
+	    user_ids = helix_name2id(usernames)
+|3,0,7,1,1,0,1688409033,"    user_ids = helix_name2id(usernames)"
+"8	LINE	0
+	    # url = 
+|3,0,8,1,1,0,1688408742,"    # url = "
 "9	LINE	0
-	        main()
-|3,0,9,1,1,0,1688367983,"        main()"
+	    # url = f"https://api.twitch.tv/helix/clips?broadcaster_id={user_id}&first=100&started_at={started_at}&ended_at={ended_at}"
+|3,0,9,1,1,0,1688408733,"    # url = f\"https://api.twitch.tv/helix/clips?broadcaster_id={user_id}&first=100&started_at={started_at}&ended_at={ended_at}\""
+"s	LINE	0
+	        {
+	            "name": "twitch-backend",
+	            "script": "api.py",
+	            "interpreter": "python"
+	        }
+|3,0,28,1,5,0,1688403814,"        {","            \"name\": \"twitch-backend\",","            \"script\": \"api.py\",","            \"interpreter\": \"python\"","        }"
 "-	CHAR	0
-	"~/Twitch/coffee-vps/code/data/main.db"
-|3,0,36,0,1,0,1688368482,"\"~/Twitch/coffee-vps/code/data/main.db\""
+	rows
+|3,0,36,0,1,0,1688409488,"rows"
 
 # File marks:
-'0  4  0  ~/Twitch/coffee-vps/flask-vue/requirements.txt
-|4,48,4,0,1688368675,"~/Twitch/coffee-vps/flask-vue/requirements.txt"
-'1  1  0  ~/Twitch/coffee-vps/flask-vue/requirements.txt
-|4,49,1,0,1688368665,"~/Twitch/coffee-vps/flask-vue/requirements.txt"
-'2  1  0  ~/Twitch/coffee-vps/flask-vue/requirements.txt
-|4,50,1,0,1688368665,"~/Twitch/coffee-vps/flask-vue/requirements.txt"
-'3  348  15  ~/Twitch/coffee-vps/flask-vue/api.py
-|4,51,348,15,1688368543,"~/Twitch/coffee-vps/flask-vue/api.py"
-'4  348  15  ~/Twitch/coffee-vps/flask-vue/api.py
-|4,52,348,15,1688368543,"~/Twitch/coffee-vps/flask-vue/api.py"
-'5  348  15  ~/Twitch/coffee-vps/flask-vue/api.py
-|4,53,348,15,1688368543,"~/Twitch/coffee-vps/flask-vue/api.py"
-'6  348  15  ~/Twitch/coffee-vps/flask-vue/api.py
-|4,54,348,15,1688368543,"~/Twitch/coffee-vps/flask-vue/api.py"
-'7  312  40  ~/Twitch/coffee-vps/flask-vue/api.py
-|4,55,312,40,1688368492,"~/Twitch/coffee-vps/flask-vue/api.py"
-'8  312  40  ~/Twitch/coffee-vps/flask-vue/api.py
-|4,56,312,40,1688368492,"~/Twitch/coffee-vps/flask-vue/api.py"
-'9  312  40  ~/Twitch/coffee-vps/flask-vue/api.py
-|4,57,312,40,1688368492,"~/Twitch/coffee-vps/flask-vue/api.py"
+'0  55  8  ~/Twitch/coffee-vps/code/clips.py
+|4,48,55,8,1688409861,"~/Twitch/coffee-vps/code/clips.py"
+'1  10  0  ~/Twitch/.gitignore
+|4,49,10,0,1688409597,"~/Twitch/.gitignore"
+'2  10  0  ~/Twitch/.gitignore
+|4,50,10,0,1688409597,"~/Twitch/.gitignore"
+'3  1  0  ~/Twitch/coffee-vps/code/clips.py
+|4,51,1,0,1688409493,"~/Twitch/coffee-vps/code/clips.py"
+'4  1  0  ~/Twitch/coffee-vps/code/clips.py
+|4,52,1,0,1688409493,"~/Twitch/coffee-vps/code/clips.py"
+'5  1  0  ~/Twitch/coffee-vps/code/clips.py
+|4,53,1,0,1688409493,"~/Twitch/coffee-vps/code/clips.py"
+'6  1  0  ~/Twitch/coffee-vps/code/clips.py
+|4,54,1,0,1688409493,"~/Twitch/coffee-vps/code/clips.py"
+'7  47  11  ~/Twitch/coffee-vps/code/clips.py
+|4,55,47,11,1688409490,"~/Twitch/coffee-vps/code/clips.py"
+'8  47  11  ~/Twitch/coffee-vps/code/clips.py
+|4,56,47,11,1688409490,"~/Twitch/coffee-vps/code/clips.py"
+'9  47  11  ~/Twitch/coffee-vps/code/clips.py
+|4,57,47,11,1688409490,"~/Twitch/coffee-vps/code/clips.py"
 
 # Jumplist (newest first):
--'  4  0  ~/Twitch/coffee-vps/flask-vue/requirements.txt
-|4,39,4,0,1688368675,"~/Twitch/coffee-vps/flask-vue/requirements.txt"
--'  1  0  ~/Twitch/coffee-vps/flask-vue/requirements.txt
-|4,39,1,0,1688368673,"~/Twitch/coffee-vps/flask-vue/requirements.txt"
--'  1  0  ~/Twitch/coffee-vps/flask-vue/requirements.txt
-|4,39,1,0,1688368665,"~/Twitch/coffee-vps/flask-vue/requirements.txt"
--'  348  15  ~/Twitch/coffee-vps/flask-vue/api.py
-|4,39,348,15,1688368543,"~/Twitch/coffee-vps/flask-vue/api.py"
--'  348  15  ~/Twitch/coffee-vps/flask-vue/api.py
-|4,39,348,15,1688368543,"~/Twitch/coffee-vps/flask-vue/api.py"
--'  348  15  ~/Twitch/coffee-vps/flask-vue/api.py
-|4,39,348,15,1688368543,"~/Twitch/coffee-vps/flask-vue/api.py"
--'  1  0  ~/Twitch/coffee-vps/flask-vue/api.py
-|4,39,1,0,1688368531,"~/Twitch/coffee-vps/flask-vue/api.py"
--'  1  0  ~/Twitch/coffee-vps/flask-vue/api.py
-|4,39,1,0,1688368531,"~/Twitch/coffee-vps/flask-vue/api.py"
--'  1  0  ~/Twitch/coffee-vps/flask-vue/api.py
-|4,39,1,0,1688368531,"~/Twitch/coffee-vps/flask-vue/api.py"
--'  312  40  ~/Twitch/coffee-vps/flask-vue/api.py
-|4,39,312,40,1688368492,"~/Twitch/coffee-vps/flask-vue/api.py"
--'  312  40  ~/Twitch/coffee-vps/flask-vue/api.py
-|4,39,312,40,1688368492,"~/Twitch/coffee-vps/flask-vue/api.py"
--'  312  40  ~/Twitch/coffee-vps/flask-vue/api.py
-|4,39,312,40,1688368492,"~/Twitch/coffee-vps/flask-vue/api.py"
--'  312  40  ~/Twitch/coffee-vps/flask-vue/api.py
-|4,39,312,40,1688368492,"~/Twitch/coffee-vps/flask-vue/api.py"
--'  261  38  ~/Twitch/coffee-vps/flask-vue/api.py
-|4,39,261,38,1688368488,"~/Twitch/coffee-vps/flask-vue/api.py"
--'  261  38  ~/Twitch/coffee-vps/flask-vue/api.py
-|4,39,261,38,1688368488,"~/Twitch/coffee-vps/flask-vue/api.py"
--'  261  38  ~/Twitch/coffee-vps/flask-vue/api.py
-|4,39,261,38,1688368488,"~/Twitch/coffee-vps/flask-vue/api.py"
--'  261  38  ~/Twitch/coffee-vps/flask-vue/api.py
-|4,39,261,38,1688368488,"~/Twitch/coffee-vps/flask-vue/api.py"
--'  87  27  ~/Twitch/coffee-vps/flask-vue/api.py
-|4,39,87,27,1688368485,"~/Twitch/coffee-vps/flask-vue/api.py"
--'  87  27  ~/Twitch/coffee-vps/flask-vue/api.py
-|4,39,87,27,1688368485,"~/Twitch/coffee-vps/flask-vue/api.py"
--'  87  27  ~/Twitch/coffee-vps/flask-vue/api.py
-|4,39,87,27,1688368485,"~/Twitch/coffee-vps/flask-vue/api.py"
--'  87  27  ~/Twitch/coffee-vps/flask-vue/api.py
-|4,39,87,27,1688368485,"~/Twitch/coffee-vps/flask-vue/api.py"
--'  86  29  ~/Twitch/coffee-vps/flask-vue/api.py
-|4,39,86,29,1688368484,"~/Twitch/coffee-vps/flask-vue/api.py"
--'  86  29  ~/Twitch/coffee-vps/flask-vue/api.py
-|4,39,86,29,1688368484,"~/Twitch/coffee-vps/flask-vue/api.py"
--'  86  29  ~/Twitch/coffee-vps/flask-vue/api.py
-|4,39,86,29,1688368484,"~/Twitch/coffee-vps/flask-vue/api.py"
--'  86  29  ~/Twitch/coffee-vps/flask-vue/api.py
-|4,39,86,29,1688368484,"~/Twitch/coffee-vps/flask-vue/api.py"
--'  2  0  ~/Twitch/coffee-vps/flask-vue/api.py
-|4,39,2,0,1688368381,"~/Twitch/coffee-vps/flask-vue/api.py"
--'  2  0  ~/Twitch/coffee-vps/flask-vue/api.py
-|4,39,2,0,1688368381,"~/Twitch/coffee-vps/flask-vue/api.py"
--'  2  0  ~/Twitch/coffee-vps/flask-vue/api.py
-|4,39,2,0,1688368381,"~/Twitch/coffee-vps/flask-vue/api.py"
--'  2  0  ~/Twitch/coffee-vps/flask-vue/api.py
-|4,39,2,0,1688368381,"~/Twitch/coffee-vps/flask-vue/api.py"
--'  1  0  ~/Twitch/coffee-vps/flask-vue/api.py
-|4,39,1,0,1688368377,"~/Twitch/coffee-vps/flask-vue/api.py"
--'  4  16  ~/Twitch/coffee-vps/flask-vue/test.py
-|4,39,4,16,1688368353,"~/Twitch/coffee-vps/flask-vue/test.py"
--'  4  16  ~/Twitch/coffee-vps/flask-vue/test.py
-|4,39,4,16,1688368353,"~/Twitch/coffee-vps/flask-vue/test.py"
--'  4  16  ~/Twitch/coffee-vps/flask-vue/test.py
-|4,39,4,16,1688368353,"~/Twitch/coffee-vps/flask-vue/test.py"
--'  4  16  ~/Twitch/coffee-vps/flask-vue/test.py
-|4,39,4,16,1688368353,"~/Twitch/coffee-vps/flask-vue/test.py"
--'  4  16  ~/Twitch/coffee-vps/flask-vue/test.py
-|4,39,4,16,1688368353,"~/Twitch/coffee-vps/flask-vue/test.py"
--'  3  16  ~/Twitch/coffee-vps/flask-vue/test.py
-|4,39,3,16,1688368340,"~/Twitch/coffee-vps/flask-vue/test.py"
--'  3  16  ~/Twitch/coffee-vps/flask-vue/test.py
-|4,39,3,16,1688368340,"~/Twitch/coffee-vps/flask-vue/test.py"
--'  3  16  ~/Twitch/coffee-vps/flask-vue/test.py
-|4,39,3,16,1688368340,"~/Twitch/coffee-vps/flask-vue/test.py"
--'  3  16  ~/Twitch/coffee-vps/flask-vue/test.py
-|4,39,3,16,1688368340,"~/Twitch/coffee-vps/flask-vue/test.py"
--'  3  16  ~/Twitch/coffee-vps/flask-vue/test.py
-|4,39,3,16,1688368340,"~/Twitch/coffee-vps/flask-vue/test.py"
--'  2  20  ~/Twitch/coffee-vps/flask-vue/test.py
-|4,39,2,20,1688368339,"~/Twitch/coffee-vps/flask-vue/test.py"
--'  2  20  ~/Twitch/coffee-vps/flask-vue/test.py
-|4,39,2,20,1688368339,"~/Twitch/coffee-vps/flask-vue/test.py"
--'  2  20  ~/Twitch/coffee-vps/flask-vue/test.py
-|4,39,2,20,1688368339,"~/Twitch/coffee-vps/flask-vue/test.py"
--'  2  20  ~/Twitch/coffee-vps/flask-vue/test.py
-|4,39,2,20,1688368339,"~/Twitch/coffee-vps/flask-vue/test.py"
--'  2  20  ~/Twitch/coffee-vps/flask-vue/test.py
-|4,39,2,20,1688368339,"~/Twitch/coffee-vps/flask-vue/test.py"
--'  1  0  ~/Twitch/coffee-vps/flask-vue/test.py
-|4,39,1,0,1688368321,"~/Twitch/coffee-vps/flask-vue/test.py"
--'  1  0  ~/Twitch/coffee-vps/flask-vue/test.py
-|4,39,1,0,1688368321,"~/Twitch/coffee-vps/flask-vue/test.py"
--'  1  0  ~/Twitch/coffee-vps/flask-vue/test.py
-|4,39,1,0,1688368321,"~/Twitch/coffee-vps/flask-vue/test.py"
--'  1  0  ~/Twitch/coffee-vps/flask-vue/test.py
-|4,39,1,0,1688368321,"~/Twitch/coffee-vps/flask-vue/test.py"
--'  1  0  ~/Twitch/coffee-vps/flask-vue/test.py
-|4,39,1,0,1688368321,"~/Twitch/coffee-vps/flask-vue/test.py"
--'  87  7  ~/Twitch/coffee-vps/flask-vue/api.py
-|4,39,87,7,1688368315,"~/Twitch/coffee-vps/flask-vue/api.py"
--'  87  7  ~/Twitch/coffee-vps/flask-vue/api.py
-|4,39,87,7,1688368315,"~/Twitch/coffee-vps/flask-vue/api.py"
--'  261  20  ~/Twitch/coffee-vps/flask-vue/api.py
-|4,39,261,20,1688368291,"~/Twitch/coffee-vps/flask-vue/api.py"
--'  261  20  ~/Twitch/coffee-vps/flask-vue/api.py
-|4,39,261,20,1688368291,"~/Twitch/coffee-vps/flask-vue/api.py"
--'  86  11  ~/Twitch/coffee-vps/flask-vue/api.py
-|4,39,86,11,1688368280,"~/Twitch/coffee-vps/flask-vue/api.py"
--'  86  11  ~/Twitch/coffee-vps/flask-vue/api.py
-|4,39,86,11,1688368280,"~/Twitch/coffee-vps/flask-vue/api.py"
--'  312  22  ~/Twitch/coffee-vps/flask-vue/api.py
-|4,39,312,22,1688368279,"~/Twitch/coffee-vps/flask-vue/api.py"
--'  312  22  ~/Twitch/coffee-vps/flask-vue/api.py
-|4,39,312,22,1688368279,"~/Twitch/coffee-vps/flask-vue/api.py"
--'  337  33  ~/Twitch/coffee-vps/flask-vue/api.py
-|4,39,337,33,1688368274,"~/Twitch/coffee-vps/flask-vue/api.py"
--'  337  33  ~/Twitch/coffee-vps/flask-vue/api.py
-|4,39,337,33,1688368274,"~/Twitch/coffee-vps/flask-vue/api.py"
--'  337  33  ~/Twitch/coffee-vps/flask-vue/api.py
-|4,39,337,33,1688368274,"~/Twitch/coffee-vps/flask-vue/api.py"
--'  337  33  ~/Twitch/coffee-vps/flask-vue/api.py
-|4,39,337,33,1688368274,"~/Twitch/coffee-vps/flask-vue/api.py"
--'  337  33  ~/Twitch/coffee-vps/flask-vue/api.py
-|4,39,337,33,1688368274,"~/Twitch/coffee-vps/flask-vue/api.py"
--'  337  33  ~/Twitch/coffee-vps/flask-vue/api.py
-|4,39,337,33,1688368274,"~/Twitch/coffee-vps/flask-vue/api.py"
--'  1  0  ~/Twitch/coffee-vps/flask-vue/api.py
-|4,39,1,0,1688368237,"~/Twitch/coffee-vps/flask-vue/api.py"
--'  1  0  ~/Twitch/coffee-vps/flask-vue/api.py
-|4,39,1,0,1688368237,"~/Twitch/coffee-vps/flask-vue/api.py"
--'  1  0  ~/Twitch/coffee-vps/flask-vue/.flaskenv
-|4,39,1,0,1688368192,"~/Twitch/coffee-vps/flask-vue/.flaskenv"
--'  1  0  ~/Twitch/coffee-vps/flask-vue/.flaskenv
-|4,39,1,0,1688368192,"~/Twitch/coffee-vps/flask-vue/.flaskenv"
--'  1  0  ~/Twitch/coffee-vps/flask-vue/.flaskenv
-|4,39,1,0,1688368192,"~/Twitch/coffee-vps/flask-vue/.flaskenv"
--'  1  0  ~/Twitch/coffee-vps/flask-vue/.flaskenv
-|4,39,1,0,1688368192,"~/Twitch/coffee-vps/flask-vue/.flaskenv"
--'  1  0  ~/Twitch/coffee-vps/flask-vue/.flaskenv
-|4,39,1,0,1688368192,"~/Twitch/coffee-vps/flask-vue/.flaskenv"
--'  1  0  ~/Twitch/coffee-vps/flask-vue/.flaskenv
-|4,39,1,0,1688368192,"~/Twitch/coffee-vps/flask-vue/.flaskenv"
--'  1  0  ~/Twitch/coffee-vps/flask-vue/.flaskenv
-|4,39,1,0,1688368192,"~/Twitch/coffee-vps/flask-vue/.flaskenv"
--'  1  0  ~/Twitch/coffee-vps/flask-vue/.flaskenv
-|4,39,1,0,1688368192,"~/Twitch/coffee-vps/flask-vue/.flaskenv"
--'  1  0  ~/Twitch/coffee-vps/flask-vue/.flaskenv
-|4,39,1,0,1688368163,"~/Twitch/coffee-vps/flask-vue/.flaskenv"
--'  1  0  ~/Twitch/coffee-vps/flask-vue/start_flask.sh
-|4,39,1,0,1688368144,"~/Twitch/coffee-vps/flask-vue/start_flask.sh"
--'  1  0  ~/Twitch/coffee-vps/flask-vue/start_flask.sh
-|4,39,1,0,1688368144,"~/Twitch/coffee-vps/flask-vue/start_flask.sh"
--'  1  0  ~/Twitch/coffee-vps/flask-vue/start_flask.sh
-|4,39,1,0,1688368144,"~/Twitch/coffee-vps/flask-vue/start_flask.sh"
--'  1  0  ~/Twitch/coffee-vps/flask-vue/start_flask.sh
-|4,39,1,0,1688368144,"~/Twitch/coffee-vps/flask-vue/start_flask.sh"
--'  1  0  ~/Twitch/coffee-vps/flask-vue/start_flask.sh
-|4,39,1,0,1688368144,"~/Twitch/coffee-vps/flask-vue/start_flask.sh"
--'  1  0  ~/Twitch/coffee-vps/flask-vue/start_flask.sh
-|4,39,1,0,1688368144,"~/Twitch/coffee-vps/flask-vue/start_flask.sh"
--'  1  0  ~/Twitch/coffee-vps/flask-vue/start_flask.sh
-|4,39,1,0,1688368144,"~/Twitch/coffee-vps/flask-vue/start_flask.sh"
--'  1  0  ~/Twitch/coffee-vps/flask-vue/start_flask.sh
-|4,39,1,0,1688368144,"~/Twitch/coffee-vps/flask-vue/start_flask.sh"
--'  1  0  ~/Twitch/coffee-vps/flask-vue/start_flask.sh
-|4,39,1,0,1688368144,"~/Twitch/coffee-vps/flask-vue/start_flask.sh"
--'  1  0  ~/Twitch/coffee-vps/flask-vue/start_flask.sh
-|4,39,1,0,1688368144,"~/Twitch/coffee-vps/flask-vue/start_flask.sh"
--'  3  0  ~/Twitch/coffee-vps/flask-vue/requirements.txt
-|4,39,3,0,1688368092,"~/Twitch/coffee-vps/flask-vue/requirements.txt"
--'  3  0  ~/Twitch/coffee-vps/flask-vue/requirements.txt
-|4,39,3,0,1688368092,"~/Twitch/coffee-vps/flask-vue/requirements.txt"
--'  3  0  ~/Twitch/coffee-vps/flask-vue/requirements.txt
-|4,39,3,0,1688368092,"~/Twitch/coffee-vps/flask-vue/requirements.txt"
--'  3  0  ~/Twitch/coffee-vps/flask-vue/requirements.txt
-|4,39,3,0,1688368092,"~/Twitch/coffee-vps/flask-vue/requirements.txt"
--'  3  0  ~/Twitch/coffee-vps/flask-vue/requirements.txt
-|4,39,3,0,1688368092,"~/Twitch/coffee-vps/flask-vue/requirements.txt"
--'  3  0  ~/Twitch/coffee-vps/flask-vue/requirements.txt
-|4,39,3,0,1688368092,"~/Twitch/coffee-vps/flask-vue/requirements.txt"
--'  3  0  ~/Twitch/coffee-vps/flask-vue/requirements.txt
-|4,39,3,0,1688368092,"~/Twitch/coffee-vps/flask-vue/requirements.txt"
--'  3  0  ~/Twitch/coffee-vps/flask-vue/requirements.txt
-|4,39,3,0,1688368092,"~/Twitch/coffee-vps/flask-vue/requirements.txt"
--'  3  0  ~/Twitch/coffee-vps/flask-vue/requirements.txt
-|4,39,3,0,1688368092,"~/Twitch/coffee-vps/flask-vue/requirements.txt"
--'  3  0  ~/Twitch/coffee-vps/flask-vue/requirements.txt
-|4,39,3,0,1688368092,"~/Twitch/coffee-vps/flask-vue/requirements.txt"
--'  3  0  ~/Twitch/coffee-vps/flask-vue/requirements.txt
-|4,39,3,0,1688368092,"~/Twitch/coffee-vps/flask-vue/requirements.txt"
--'  1  0  ~/Twitch/coffee-vps/flask-vue/requirements.txt
-|4,39,1,0,1688368089,"~/Twitch/coffee-vps/flask-vue/requirements.txt"
--'  1  0  ~/Twitch/coffee-vps/flask-vue/requirements.txt
-|4,39,1,0,1688368089,"~/Twitch/coffee-vps/flask-vue/requirements.txt"
--'  1  0  ~/Twitch/coffee-vps/flask-vue/requirements.txt
-|4,39,1,0,1688368089,"~/Twitch/coffee-vps/flask-vue/requirements.txt"
--'  1  0  ~/Twitch/coffee-vps/flask-vue/requirements.txt
-|4,39,1,0,1688368089,"~/Twitch/coffee-vps/flask-vue/requirements.txt"
+-'  55  8  ~/Twitch/coffee-vps/code/clips.py
+|4,39,55,8,1688409861,"~/Twitch/coffee-vps/code/clips.py"
+-'  1  0  ~/Twitch/coffee-vps/code/clips.py
+|4,39,1,0,1688409624,"~/Twitch/coffee-vps/code/clips.py"
+-'  10  0  ~/Twitch/.gitignore
+|4,39,10,0,1688409597,"~/Twitch/.gitignore"
+-'  10  0  ~/Twitch/.gitignore
+|4,39,10,0,1688409597,"~/Twitch/.gitignore"
+-'  1  0  ~/Twitch/.gitignore
+|4,39,1,0,1688409585,"~/Twitch/.gitignore"
+-'  1  0  ~/Twitch/.gitignore
+|4,39,1,0,1688409585,"~/Twitch/.gitignore"
+-'  1  0  ~/Twitch/coffee-vps/code/clips.py
+|4,39,1,0,1688409493,"~/Twitch/coffee-vps/code/clips.py"
+-'  1  0  ~/Twitch/coffee-vps/code/clips.py
+|4,39,1,0,1688409493,"~/Twitch/coffee-vps/code/clips.py"
+-'  47  11  ~/Twitch/coffee-vps/code/clips.py
+|4,39,47,11,1688409490,"~/Twitch/coffee-vps/code/clips.py"
+-'  47  11  ~/Twitch/coffee-vps/code/clips.py
+|4,39,47,11,1688409490,"~/Twitch/coffee-vps/code/clips.py"
+-'  47  11  ~/Twitch/coffee-vps/code/clips.py
+|4,39,47,11,1688409490,"~/Twitch/coffee-vps/code/clips.py"
+-'  47  11  ~/Twitch/coffee-vps/code/clips.py
+|4,39,47,11,1688409490,"~/Twitch/coffee-vps/code/clips.py"
+-'  1  0  ~/Twitch/coffee-vps/code/clips.py
+|4,39,1,0,1688409476,"~/Twitch/coffee-vps/code/clips.py"
+-'  40  21  ~/Twitch/coffee-vps/code/clips.py
+|4,39,40,21,1688409468,"~/Twitch/coffee-vps/code/clips.py"
+-'  40  21  ~/Twitch/coffee-vps/code/clips.py
+|4,39,40,21,1688409468,"~/Twitch/coffee-vps/code/clips.py"
+-'  40  21  ~/Twitch/coffee-vps/code/clips.py
+|4,39,40,21,1688409468,"~/Twitch/coffee-vps/code/clips.py"
+-'  40  21  ~/Twitch/coffee-vps/code/clips.py
+|4,39,40,21,1688409468,"~/Twitch/coffee-vps/code/clips.py"
+-'  40  21  ~/Twitch/coffee-vps/code/clips.py
+|4,39,40,21,1688409468,"~/Twitch/coffee-vps/code/clips.py"
+-'  5  0  ~/Twitch/coffee-vps/code/clips.py
+|4,39,5,0,1688409462,"~/Twitch/coffee-vps/code/clips.py"
+-'  5  0  ~/Twitch/coffee-vps/code/clips.py
+|4,39,5,0,1688409462,"~/Twitch/coffee-vps/code/clips.py"
+-'  5  0  ~/Twitch/coffee-vps/code/clips.py
+|4,39,5,0,1688409462,"~/Twitch/coffee-vps/code/clips.py"
+-'  5  0  ~/Twitch/coffee-vps/code/clips.py
+|4,39,5,0,1688409462,"~/Twitch/coffee-vps/code/clips.py"
+-'  5  0  ~/Twitch/coffee-vps/code/clips.py
+|4,39,5,0,1688409462,"~/Twitch/coffee-vps/code/clips.py"
+-'  1  0  ~/Twitch/coffee-vps/code/clips.py
+|4,39,1,0,1688409461,"~/Twitch/coffee-vps/code/clips.py"
+-'  46  11  ~/Twitch/coffee-vps/code/clips.py
+|4,39,46,11,1688409450,"~/Twitch/coffee-vps/code/clips.py"
+-'  46  11  ~/Twitch/coffee-vps/code/clips.py
+|4,39,46,11,1688409450,"~/Twitch/coffee-vps/code/clips.py"
+-'  46  11  ~/Twitch/coffee-vps/code/clips.py
+|4,39,46,11,1688409450,"~/Twitch/coffee-vps/code/clips.py"
+-'  46  11  ~/Twitch/coffee-vps/code/clips.py
+|4,39,46,11,1688409450,"~/Twitch/coffee-vps/code/clips.py"
+-'  46  11  ~/Twitch/coffee-vps/code/clips.py
+|4,39,46,11,1688409450,"~/Twitch/coffee-vps/code/clips.py"
+-'  42  22  ~/Twitch/coffee-vps/code/clips.py
+|4,39,42,22,1688409413,"~/Twitch/coffee-vps/code/clips.py"
+-'  42  22  ~/Twitch/coffee-vps/code/clips.py
+|4,39,42,22,1688409413,"~/Twitch/coffee-vps/code/clips.py"
+-'  42  22  ~/Twitch/coffee-vps/code/clips.py
+|4,39,42,22,1688409413,"~/Twitch/coffee-vps/code/clips.py"
+-'  42  22  ~/Twitch/coffee-vps/code/clips.py
+|4,39,42,22,1688409413,"~/Twitch/coffee-vps/code/clips.py"
+-'  42  22  ~/Twitch/coffee-vps/code/clips.py
+|4,39,42,22,1688409413,"~/Twitch/coffee-vps/code/clips.py"
+-'  42  22  ~/Twitch/coffee-vps/code/clips.py
+|4,39,42,22,1688409413,"~/Twitch/coffee-vps/code/clips.py"
+-'  41  46  ~/Twitch/coffee-vps/code/clips.py
+|4,39,41,46,1688409404,"~/Twitch/coffee-vps/code/clips.py"
+-'  41  46  ~/Twitch/coffee-vps/code/clips.py
+|4,39,41,46,1688409404,"~/Twitch/coffee-vps/code/clips.py"
+-'  41  46  ~/Twitch/coffee-vps/code/clips.py
+|4,39,41,46,1688409404,"~/Twitch/coffee-vps/code/clips.py"
+-'  41  46  ~/Twitch/coffee-vps/code/clips.py
+|4,39,41,46,1688409404,"~/Twitch/coffee-vps/code/clips.py"
+-'  41  46  ~/Twitch/coffee-vps/code/clips.py
+|4,39,41,46,1688409404,"~/Twitch/coffee-vps/code/clips.py"
+-'  41  46  ~/Twitch/coffee-vps/code/clips.py
+|4,39,41,46,1688409404,"~/Twitch/coffee-vps/code/clips.py"
+-'  12  37  ~/Twitch/coffee-vps/code/clips.py
+|4,39,12,37,1688409376,"~/Twitch/coffee-vps/code/clips.py"
+-'  54  8  ~/Twitch/coffee-vps/code/clips.py
+|4,39,54,8,1688409376,"~/Twitch/coffee-vps/code/clips.py"
+-'  55  8  ~/Twitch/coffee-vps/code/clips.py
+|4,39,55,8,1688409376,"~/Twitch/coffee-vps/code/clips.py"
+-'  12  37  ~/Twitch/coffee-vps/code/clips.py
+|4,39,12,37,1688409376,"~/Twitch/coffee-vps/code/clips.py"
+-'  54  8  ~/Twitch/coffee-vps/code/clips.py
+|4,39,54,8,1688409376,"~/Twitch/coffee-vps/code/clips.py"
+-'  55  8  ~/Twitch/coffee-vps/code/clips.py
+|4,39,55,8,1688409376,"~/Twitch/coffee-vps/code/clips.py"
+-'  12  37  ~/Twitch/coffee-vps/code/clips.py
+|4,39,12,37,1688409376,"~/Twitch/coffee-vps/code/clips.py"
+-'  54  8  ~/Twitch/coffee-vps/code/clips.py
+|4,39,54,8,1688409376,"~/Twitch/coffee-vps/code/clips.py"
+-'  55  8  ~/Twitch/coffee-vps/code/clips.py
+|4,39,55,8,1688409376,"~/Twitch/coffee-vps/code/clips.py"
+-'  12  37  ~/Twitch/coffee-vps/code/clips.py
+|4,39,12,37,1688409376,"~/Twitch/coffee-vps/code/clips.py"
+-'  54  8  ~/Twitch/coffee-vps/code/clips.py
+|4,39,54,8,1688409376,"~/Twitch/coffee-vps/code/clips.py"
+-'  12  37  ~/Twitch/coffee-vps/code/clips.py
+|4,39,12,37,1688409376,"~/Twitch/coffee-vps/code/clips.py"
+-'  54  8  ~/Twitch/coffee-vps/code/clips.py
+|4,39,54,8,1688409376,"~/Twitch/coffee-vps/code/clips.py"
+-'  12  37  ~/Twitch/coffee-vps/code/clips.py
+|4,39,12,37,1688409376,"~/Twitch/coffee-vps/code/clips.py"
+-'  40  25  ~/Twitch/coffee-vps/code/clips.py
+|4,39,40,25,1688409366,"~/Twitch/coffee-vps/code/clips.py"
+-'  11  25  ~/Twitch/coffee-vps/code/clips.py
+|4,39,11,25,1688409343,"~/Twitch/coffee-vps/code/clips.py"
+-'  11  25  ~/Twitch/coffee-vps/code/clips.py
+|4,39,11,25,1688409343,"~/Twitch/coffee-vps/code/clips.py"
+-'  11  25  ~/Twitch/coffee-vps/code/clips.py
+|4,39,11,25,1688409343,"~/Twitch/coffee-vps/code/clips.py"
+-'  11  25  ~/Twitch/coffee-vps/code/clips.py
+|4,39,11,25,1688409343,"~/Twitch/coffee-vps/code/clips.py"
+-'  11  25  ~/Twitch/coffee-vps/code/clips.py
+|4,39,11,25,1688409343,"~/Twitch/coffee-vps/code/clips.py"
+-'  11  25  ~/Twitch/coffee-vps/code/clips.py
+|4,39,11,25,1688409343,"~/Twitch/coffee-vps/code/clips.py"
+-'  13  0  ~/Twitch/coffee-vps/code/clips.py
+|4,39,13,0,1688409341,"~/Twitch/coffee-vps/code/clips.py"
+-'  13  0  ~/Twitch/coffee-vps/code/clips.py
+|4,39,13,0,1688409341,"~/Twitch/coffee-vps/code/clips.py"
+-'  13  0  ~/Twitch/coffee-vps/code/clips.py
+|4,39,13,0,1688409341,"~/Twitch/coffee-vps/code/clips.py"
+-'  13  0  ~/Twitch/coffee-vps/code/clips.py
+|4,39,13,0,1688409341,"~/Twitch/coffee-vps/code/clips.py"
+-'  13  0  ~/Twitch/coffee-vps/code/clips.py
+|4,39,13,0,1688409341,"~/Twitch/coffee-vps/code/clips.py"
+-'  13  0  ~/Twitch/coffee-vps/code/clips.py
+|4,39,13,0,1688409341,"~/Twitch/coffee-vps/code/clips.py"
+-'  39  4  ~/Twitch/coffee-vps/code/clips.py
+|4,39,39,4,1688409337,"~/Twitch/coffee-vps/code/clips.py"
+-'  39  4  ~/Twitch/coffee-vps/code/clips.py
+|4,39,39,4,1688409337,"~/Twitch/coffee-vps/code/clips.py"
+-'  39  4  ~/Twitch/coffee-vps/code/clips.py
+|4,39,39,4,1688409337,"~/Twitch/coffee-vps/code/clips.py"
+-'  39  4  ~/Twitch/coffee-vps/code/clips.py
+|4,39,39,4,1688409337,"~/Twitch/coffee-vps/code/clips.py"
+-'  39  4  ~/Twitch/coffee-vps/code/clips.py
+|4,39,39,4,1688409337,"~/Twitch/coffee-vps/code/clips.py"
+-'  39  4  ~/Twitch/coffee-vps/code/clips.py
+|4,39,39,4,1688409337,"~/Twitch/coffee-vps/code/clips.py"
+-'  1  0  ~/Twitch/coffee-vps/code/clips.py
+|4,39,1,0,1688409328,"~/Twitch/coffee-vps/code/clips.py"
+-'  40  15  ~/Twitch/coffee-vps/code/clips.py
+|4,39,40,15,1688409276,"~/Twitch/coffee-vps/code/clips.py"
+-'  1  0  ~/Twitch/coffee-vps/code/clips.py
+|4,39,1,0,1688409266,"~/Twitch/coffee-vps/code/clips.py"
+-'  34  28  ~/Twitch/coffee-vps/code/clips.py
+|4,39,34,28,1688409257,"~/Twitch/coffee-vps/code/clips.py"
+-'  33  28  ~/Twitch/coffee-vps/code/clips.py
+|4,39,33,28,1688409257,"~/Twitch/coffee-vps/code/clips.py"
+-'  34  28  ~/Twitch/coffee-vps/code/clips.py
+|4,39,34,28,1688409257,"~/Twitch/coffee-vps/code/clips.py"
+-'  33  28  ~/Twitch/coffee-vps/code/clips.py
+|4,39,33,28,1688409257,"~/Twitch/coffee-vps/code/clips.py"
+-'  34  28  ~/Twitch/coffee-vps/code/clips.py
+|4,39,34,28,1688409257,"~/Twitch/coffee-vps/code/clips.py"
+-'  33  28  ~/Twitch/coffee-vps/code/clips.py
+|4,39,33,28,1688409257,"~/Twitch/coffee-vps/code/clips.py"
+-'  34  28  ~/Twitch/coffee-vps/code/clips.py
+|4,39,34,28,1688409257,"~/Twitch/coffee-vps/code/clips.py"
+-'  33  28  ~/Twitch/coffee-vps/code/clips.py
+|4,39,33,28,1688409257,"~/Twitch/coffee-vps/code/clips.py"
+-'  34  28  ~/Twitch/coffee-vps/code/clips.py
+|4,39,34,28,1688409257,"~/Twitch/coffee-vps/code/clips.py"
+-'  33  28  ~/Twitch/coffee-vps/code/clips.py
+|4,39,33,28,1688409257,"~/Twitch/coffee-vps/code/clips.py"
+-'  34  28  ~/Twitch/coffee-vps/code/clips.py
+|4,39,34,28,1688409257,"~/Twitch/coffee-vps/code/clips.py"
+-'  33  28  ~/Twitch/coffee-vps/code/clips.py
+|4,39,33,28,1688409257,"~/Twitch/coffee-vps/code/clips.py"
+-'  33  28  ~/Twitch/coffee-vps/code/clips.py
+|4,39,33,28,1688409257,"~/Twitch/coffee-vps/code/clips.py"
+-'  32  30  ~/Twitch/coffee-vps/code/clips.py
+|4,39,32,30,1688409252,"~/Twitch/coffee-vps/code/clips.py"
+-'  32  30  ~/Twitch/coffee-vps/code/clips.py
+|4,39,32,30,1688409252,"~/Twitch/coffee-vps/code/clips.py"
+-'  32  30  ~/Twitch/coffee-vps/code/clips.py
+|4,39,32,30,1688409252,"~/Twitch/coffee-vps/code/clips.py"
+-'  32  30  ~/Twitch/coffee-vps/code/clips.py
+|4,39,32,30,1688409252,"~/Twitch/coffee-vps/code/clips.py"
+-'  32  30  ~/Twitch/coffee-vps/code/clips.py
+|4,39,32,30,1688409252,"~/Twitch/coffee-vps/code/clips.py"
+-'  33  30  ~/Twitch/coffee-vps/code/clips.py
+|4,39,33,30,1688409252,"~/Twitch/coffee-vps/code/clips.py"
+-'  32  30  ~/Twitch/coffee-vps/code/clips.py
+|4,39,32,30,1688409252,"~/Twitch/coffee-vps/code/clips.py"
+-'  32  30  ~/Twitch/coffee-vps/code/clips.py
+|4,39,32,30,1688409252,"~/Twitch/coffee-vps/code/clips.py"
+-'  1  0  ~/Twitch/coffee-vps/code/clips.py
+|4,39,1,0,1688409236,"~/Twitch/coffee-vps/code/clips.py"
+-'  36  4  ~/Twitch/coffee-vps/code/clips.py
+|4,39,36,4,1688409195,"~/Twitch/coffee-vps/code/clips.py"
 
 # Buffer list:
-%~/Twitch/coffee-vps/flask-vue/requirements.txt	4	0
+%~/Twitch/coffee-vps/code/clips.py	55	8
 
 # History of marks within files (newest to oldest):
 
+> ~/Twitch/coffee-vps/code/clips.py
+	*	1688409634	0
+	"	55	8
+	^	47	12
+	.	47	11
+	+	1	0
+	+	6	25
+	+	13	14
+	+	50	31
+	+	48	0
+	+	15	12
+	+	17	44
+	+	19	14
+	+	7	50
+	+	29	4
+	+	51	23
+	+	35	27
+	+	48	29
+	+	16	20
+	+	8	41
+	+	51	14
+	+	51	15
+	+	51	5
+	+	51	0
+	+	35	0
+	+	51	0
+	+	35	0
+	+	32	0
+	+	35	0
+	+	29	0
+	+	32	0
+	+	35	0
+	+	35	5
+	+	35	12
+	+	35	82
+	+	10	22
+	+	37	25
+	+	36	71
+	+	37	32
+	+	48	0
+	+	37	15
+	+	48	0
+	+	38	23
+	+	48	4
+	+	51	4
+	+	37	16
+	+	37	45
+	+	37	16
+	+	37	0
+	+	39	23
+	+	48	0
+	+	48	15
+	+	48	11
+	+	35	12
+	+	35	0
+	+	21	29
+	+	22	38
+	+	23	25
+	+	26	4
+	+	27	4
+	+	9	39
+	+	13	22
+	+	35	83
+	+	35	20
+	+	33	29
+	+	30	33
+	+	34	15
+	+	35	7
+	+	37	24
+	+	24	40
+	+	25	4
+	+	35	11
+	+	48	0
+	+	37	39
+	+	35	0
+	+	36	0
+	+	31	32
+	+	33	30
+	+	34	28
+	+	40	15
+	+	36	0
+	+	11	25
+	+	40	23
+	+	12	37
+	+	41	46
+	+	42	22
+	+	43	41
+	+	44	25
+	+	45	28
+	+	47	11
+	+	40	21
+	+	46	40
+	+	47	11
+
+> ~/Twitch/.gitignore
+	*	1688409595	0
+	"	10	0
+	.	11	0
+	+	10	6
+	+	11	0
+
+> ~/Twitch/coffee-vps/code/twitch_utilities.py
+	*	1688408825	0
+	"	3556	19
+	^	5192	47
+	.	5347	0
+	+	32	25
+	+	5191	0
+	+	5192	47
+	+	5189	4
+	+	5347	0
+	a	5346	16
+
+> ~/Twitch/coffee-vps/code/.direnv/python-3.10.6/lib/python3.10/site-packages/waivek/get.py
+	*	1688408552	0
+	"	231	11
+
+> ~/Twitch/coffee-vps/code/requirements.txt
+	*	1688407875	0
+	"	10	6
+	^	15	6
+	.	10	7
+	+	15	5
+	+	10	7
+
+> ~/Twitch/coffee-vps/code/.envrc
+	*	1688407548	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/Twitch/coffee-vps/flask-vue/.envrc
+	*	1688407546	0
+	"	2	0
+	.	3	0
+	+	2	13
+	+	1	22
+	+	2	13
+	+	3	0
+
+> ~/Twitch/coffee-vps/flask-vue/.direnv/python-3.10.6/lib/python3.10/site-packages/waivek/template.py
+	*	1688407299	0
+	"	1	0
+
+> ~/.vim/plugin/template.vim
+	*	1688407221	0
+	"	5	73
+
+> ~/.local/lib/python3.10/site-packages/waivek/db.py
+	*	1688406940	0
+	"	46	4
+
+> ~/Twitch/coffee-vps/code/video_stats.py
+	*	1688406837	0
+	"	283	4
+
+> ~/Twitch/coffee-vps/code/actions-chat.py
+	*	1688406761	0
+	"	1	0
+
+> ~/.config/starship.toml
+	*	1688406493	0
+	"	3	6
+	^	3	12
+	.	3	6
+	+	1	11
+	+	2	17
+	+	3	6
+
+> ~/Twitch/coffee-vps/flask-vue/config.json
+	*	1688406305	0
+	"	1	0
+	^	7	10
+	.	7	9
+	+	1	1
+	+	1	0
+	+	1	31
+	+	1	0
+	+	1	9
+	+	1	30
+	+	1	0
+	+	1	33
+	+	1	0
+	+	1	28
+	+	1	41
+	+	1	32
+	+	1	0
+	+	1	34
+	+	1	45
+	+	1	33
+	+	1	0
+	+	1	28
+	+	1	0
+	+	3	0
+	+	7	9
+
+> ~/Twitch/coffee-vps/flask-vue/api.py
+	*	1688403745	0
+	"	382	52
+	^	382	69
+	.	382	52
+	+	87	0
+	+	88	0
+	+	87	1
+	+	88	65
+	+	262	20
+	+	313	22
+	+	87	11
+	+	313	79
+	+	262	16
+	+	87	9
+	+	366	15
+	+	370	0
+	+	367	30
+	+	369	0
+	+	368	3
+	+	366	49
+	+	367	72
+	+	367	0
+	+	15	5
+	+	344	15
+	+	367	0
+	+	366	0
+	+	345	0
+	+	343	18
+	+	344	10
+	+	366	53
+	+	356	16
+	+	359	7
+	+	362	0
+	+	360	20
+	+	360	0
+	+	343	0
+	+	360	3
+	+	343	12
+	+	361	17
+	+	347	0
+	+	346	17
+	+	360	0
+	+	357	0
+	+	346	32
+	+	383	0
+	+	382	0
+	+	383	0
+	+	382	52
+
+> ~/Twitch/coffee-vps/flask-vue/.direnv/python-3.10.6/bin/python
+	*	1688403403	0
+	"	1	0
+
+> ~/.bashrc
+	*	1688402019	0
+	"	128	0
+	.	120	0
+	+	120	0
+
+> ~/Twitch/coffee-vps/flask-vue/vuejs/Backend.vue
+	*	1688394324	0
+	"	20	23
+	^	42	68
+	.	42	23
+	+	2	0
+	+	22	0
+	+	25	0
+	+	27	0
+	+	33	0
+	+	59	0
+	+	45	25
+	+	59	9
+	+	29	52
+	+	29	42
+	+	30	43
+	+	32	0
+	+	21	25
+	+	31	13
+	+	59	8
+	+	29	25
+	+	45	0
+	+	43	49
+	+	44	13
+	+	58	11
+	+	52	19
+	+	53	24
+	+	54	27
+	+	55	28
+	+	56	23
+	+	46	8
+	+	51	12
+	+	52	38
+	+	20	26
+	+	29	42
+	+	41	0
+	+	42	23
+
+> ~/Twitch/coffee-vps/flask-vue/vuejs/backend.html
+	*	1688394064	0
+	"	13	23
+	^	14	29
+	.	14	28
+	+	1	0
+	+	13	29
+	+	14	28
+
+> ~/Twitch/coffee-vps/flask-vue/.direnv/python-3.10.6/lib/python3.10/site-packages/flask_cors/extension.py
+	*	1688393882	0
+	"	27	6
+
 > ~/Twitch/coffee-vps/flask-vue/requirements.txt
-	*	1688368674	0
-	"	4	0
+	*	1688393878	0
+	"	1	0
 	^	4	23
 	.	3	0
 	+	1	0
@@ -829,22 +1264,52 @@ $
 	+	2	5
 	+	3	0
 
-> ~/Twitch/coffee-vps/flask-vue/api.py
-	*	1688368542	0
-	"	348	15
-	^	348	16
-	.	348	15
-	+	86	0
-	+	87	0
-	+	86	1
-	+	87	65
-	+	261	20
-	+	312	22
-	+	86	11
-	+	312	79
-	+	261	16
-	+	86	9
-	+	348	15
+> ~/Twitch/coffee-vps/flask-vue/vuejs/Db.vue
+	*	1688393649	0
+	"	1	0
+
+> ~/Twitch/coffee-vps/flask-vue/vuejs/index.html
+	*	1688393551	0
+	"	1	0
+
+> ~/Twitch/coffee-vps/flask-vue/vuejs/db.html
+	*	1688393542	0
+	"	1	0
+
+> ~/Twitch/coffee-vps/flask-vue/vuejs/twitch_vue.html
+	*	1688393540	0
+	"	1	0
+
+> ~/.config/setup.sh
+	*	1688393101	0
+	"	28	27
+	^	28	28
+	.	28	27
+	+	6	68
+	+	7	27
+	+	4	0
+	+	3	1
+	+	10	34
+	+	3	0
+	+	4	0
+	+	12	0
+	+	3	0
+	+	6	0
+	+	2	0
+	+	3	0
+	+	12	0
+	+	4	0
+	+	11	0
+	+	12	1
+	+	8	8
+	+	9	10
+	+	12	155
+	+	12	8
+	+	12	123
+	+	12	0
+	+	15	0
+	+	27	26
+	+	28	27
 
 > ~/Twitch/coffee-vps/flask-vue/test.py
 	*	1688368353	0
@@ -864,10 +1329,6 @@ $
 > ~/Twitch/coffee-vps/flask-vue/start_flask.sh
 	*	1688368143	0
 	"	1	0
-
-> ~/Twitch/coffee-vps/flask-vue/vuejs/db.html
-	*	1688311432	0
-	"	16	14
 
 > ~/.vim/ftplugin/html.vim
 	*	1688311417	0
@@ -1042,33 +1503,6 @@ $
 	.	7	4
 	+	7	4
 
-> ~/.config/setup.sh
-	*	1685570677	0
-	"	11	0
-	.	12	0
-	+	6	68
-	+	7	27
-	+	4	0
-	+	3	1
-	+	10	34
-	+	3	0
-	+	4	0
-	+	12	0
-	+	3	0
-	+	6	0
-	+	2	0
-	+	3	0
-	+	12	0
-	+	4	0
-	+	11	0
-	+	12	1
-	+	8	8
-	+	9	10
-	+	12	155
-	+	12	8
-	+	12	123
-	+	12	0
-
 > ~/.inputrc
 	*	1685570573	0
 	"	2	1
@@ -1178,12 +1612,6 @@ $
 	+	14	0
 	+	12	0
 	+	25	22
-
-> ~/.bashrc
-	*	1685445204	0
-	"	119	0
-	.	120	0
-	+	120	0
 
 > ~/.config/bindings.inputrc
 	*	1685445196	0
