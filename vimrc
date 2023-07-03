@@ -816,7 +816,8 @@ set completeslash=slash " In windows, we want HTML file-completion in insert mod
 
 function! s:Ftplugin()
     let filetype = &filetype
-    let relpath = "~/vimfiles/ftplugin/".filetype.".vim"
+    let has_windows = has("win32") || has("win64")
+    let relpath = has_windows ? "~/vimfiles/ftplugin/".filetype.".vim" : "~/.vim/ftplugin/".filetype.".vim"
     let path = expand(relpath)
     let file_exists = !empty(glob(path))
     if file_exists

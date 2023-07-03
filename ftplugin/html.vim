@@ -15,7 +15,11 @@ let &l:formatprg=''
 nnoremap <buffer> gqG :%!tidy -quiet -indent --indent-spaces 4 --show-errors 0 --wrap-attributes no --wrap 0 --tidy-mark no<CR>
 
 set encoding=utf8
-source ~/vimfiles/ftplugin/css.vim
+if has("win32") || has("win64")
+    source ~/vimfiles/ftplugin/css.vim
+else
+    source ~/.vim/ftplugin/css.vim
+endif
 
 
 function! s:PrintJavaScriptVariable()

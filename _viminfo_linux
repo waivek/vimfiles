@@ -11,11 +11,71 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/\C\<IncrementUntilUnique\>
+~MSle0~/\~
+
+# Last Substitute Search Pattern:
+~MSle0&\~
+
+# Last Substitute String:
+$
 
 # Command Line History (newest to oldest):
+:q
+|2,0,1688368675,,"q"
 :qa
-|2,0,1688310205,,"qa"
+|2,0,1688368665,,"qa"
+:g/\~/
+|2,0,1688368453,,"g/\\~/"
+:so %
+|2,0,1688368429,,"so %"
+:pwd
+|2,0,1688368419,,"pwd"
+:s
+|2,0,1688368418,,"s"
+:CMD
+|2,0,1688368350,,"CMD"
+:!python
+|2,0,1688368301,,"!python"
+:%s/ .*//
+|2,0,1688368023,,"%s/ .*//"
+:%sort u
+|2,0,1688367988,,"%sort u"
+:%
+|2,0,1688367984,,"%"
+:v/import/d
+|2,0,1688367983,,"v/import/d"
+:e requirements.txt
+|2,0,1688367977,,"e requirements.txt"
+:e re
+|2,0,1688367970,,"e re"
+:MRU db.
+|2,0,1688311421,,"MRU db."
+:Ftplugin
+|2,0,1688311359,,"Ftplugin"
+:bd!
+|2,0,1688311357,,"bd!"
+:so k
+|2,0,1688311349,,"so k"
+:so 
+|2,0,1688311321,,"so "
+:828
+|2,0,1688311258,,"828"
+:edit $MYVIMRC
+|2,0,1688311256,,"edit $MYVIMRC"
+:verbose command Ftplugin
+|2,0,1688311254,,"verbose command Ftplugin"
+:e ~/.vim/plugin/better.vim
+|2,0,1688311251,,"e ~/.vim/plugin/better.vim"
+:MRU ftpl
+|2,0,1688311237,,"MRU ftpl"
+:e ~/.vim/ftplugin/
+|2,0,1688311236,,"e ~/.vim/ftplugin/"
+:messages
+|2,0,1688311217,,"messages"
+:e
+|2,0,1688311214,,"e"
+:MRU 17:z/z.sh
+|2,0,1688310822,,"MRU 17:z/z.sh"
 :MRU 34:performance/performance.vim
 |2,0,1688310199,,"MRU 34:performance/performance.vim"
 :MRU 28:.vim/mini.vimrc
@@ -26,8 +86,6 @@
 |2,0,1688310098,,"MRU "
 :MRU 4:.vim/.gitignore
 |2,0,1688309931,,"MRU 4:.vim/.gitignore"
-:so %
-|2,0,1688309911,,"so %"
 :MRU 19:bin/gita
 |2,0,1688309908,,"MRU 19:bin/gita"
 :MRU 3:plugin/mru.vim
@@ -82,10 +140,6 @@
 |2,0,1688309157,,"MRU 22:fzf.txt"
 :call sideways#textobj#Argument('i')
 |2,0,1688308984,,"call sideways#textobj#Argument('i')"
-:so 
-|2,0,1688308769,,"so "
-:messages
-|2,0,1688308745,,"messages"
 :MRU
 |2,0,1688308744,,"MRU"
 :MRU m
@@ -94,8 +148,6 @@
 |2,0,1688308540,,"MRU 26:mini.vimrc"
 :MRU 17:gita
 |2,0,1688308526,,"MRU 17:gita"
-:q
-|2,0,1688303664,,"q"
 :echo v:oldfiles
 |2,0,1688303612,,"echo v:oldfiles"
 :mesages
@@ -132,8 +184,6 @@
 |2,0,1685570792,,"q!"
 :set nonumber
 |2,0,1685569324,,"set nonumber"
-:bd!
-|2,0,1685531977,,"bd!"
 :echoconsole -n 'hello'
 |2,0,1685531975,,"echoconsole -n 'hello'"
 :h :echoconsole
@@ -192,8 +242,6 @@
 |2,0,1685397657,,"e ~/.vim/un"
 :echo undodir
 |2,0,1685397646,,"echo undodir"
-:edit $MYVIMRC
-|2,0,1685397640,,"edit $MYVIMRC"
 :Files
 |2,0,1685394818,,"Files"
 :set ttimeoutlen=0
@@ -318,8 +366,6 @@
 |2,0,1685390510,,"ll"
 :PlugInstall
 |2,0,1685390507,,"PlugInstall"
-:pwd
-|2,0,1685390480,,"pwd"
 :e ic.py
 |2,0,1685390476,,"e ic.py"
 :Rg import
@@ -350,14 +396,24 @@
 |2,0,1685375051,,"PlugInstall "
 :MRU 2:setup.sh
 |2,0,1685235729,,"MRU 2:setup.sh"
-:s
-|2,0,1685152640,,"s"
 :439
 |2,0,1685142836,,"439"
 :570
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+? \~
+|2,1,1688368453,,"\\~"
+?/\~
+|2,1,1688368377,47,"\\~"
+?/mnt
+|2,1,1688368237,47,"mnt"
+?  .*
+|2,1,1688368023,," .*"
+? import
+|2,1,1688367983,,"import"
+?/vimfi
+|2,1,1688311365,47,"vimfi"
 ?/^\s*[^# ].*\C\<FastIncrementTailDepth\>
 |2,1,1688310136,47,"^\\s*[^# ].*\\C\\<FastIncrementTailDepth\\>"
 ?/uniquetail
@@ -370,8 +426,6 @@
 |2,1,1688309306,47,"gitignore"
 ?/gitignor
 |2,1,1688309289,47,"gitignor"
-?/\~
-|2,1,1688303580,47,"\\~"
 ?/^\s*function!\?\s\+\(s:\)\?\(\w\+#\)\?\w*Until
 |2,1,1688303561,47,"^\\s*function!\\?\\s\\+\\(s:\\)\\?\\(\\w\\+#\\)\\?\\w*Until"
 ?/filter(
@@ -474,383 +528,411 @@
 |2,2,1688309303,,"v:oldfiles"
 
 # Input Line History (newest to oldest):
+@os.path.expanduser
+|2,3,1688368479,,"os.path.expanduser"
 @string
 |2,3,1688309009,,"string"
-@os.path.expanduser
-|2,3,1685152605,,"os.path.expanduser"
 
 # Debug Line History (newest to oldest):
 
 # Registers:
 ""0	CHAR	0
-	copy(tails)
-|3,1,0,0,1,0,1688310165,"copy(tails)"
+	,
+|3,1,0,0,1,0,1688368482,","
 "1	LINE	0
-	call s:PrintList(filename_dictionaries)
-|3,0,1,1,1,0,1688309753,"call s:PrintList(filename_dictionaries)"
+	time
+|3,0,1,1,1,0,1688368091,"time"
 "2	LINE	0
-	        let has_windows = 
-|3,0,2,1,1,0,1688309654,"        let has_windows = "
+	import sqlite3
+	import sys
+|3,0,2,1,2,0,1688368014,"import sqlite3","import sys"
 "3	LINE	0
-	        let sep = 
-|3,0,3,1,1,0,1688309640,"        let sep = "
+	import sqlite3
+	import sys
+	import timeago
+|3,0,3,1,3,0,1688368012,"import sqlite3","import sys","import timeago"
 "4	LINE	0
-	        if len(oldtails) > 0 && len(tails) > 0
-	            echo printf("Iteration %d: oldtails[0] = %s, tails[0] = %s", loop_counter, string(oldtails[0]), string(tails[0]))
-	        endif
-|3,0,4,1,3,0,1688309539,"        if len(oldtails) > 0 && len(tails) > 0","            echo printf(\"Iteration %d: oldtails[0] = %s, tails[0] = %s\", loop_counter, string(oldtails[0]), string(tails[0]))","        endif"
+	import json
+	import os
+	import os.path
+|3,0,4,1,3,0,1688368005,"import json","import os","import os.path"
 "5	LINE	0
-	{'oldfiles_index': 1, 'tail': 'item.txt', 'uniquetail': 'item.txt', 'text': '/tmp/mru/v02/item.txt'}
-	{'oldfiles_index': 2, 'tail': 'item.txt', 'uniquetail': 'item.txt', 'text': '/tmp/mru/v01/item.txt'}
-	{'oldfiles_index': 3, 'tail': 'mru.vim', 'uniquetail': 'mru.vim', 'text': '/home/vivek/.vim/plugin/mru.vim'}
-	{'oldfiles_index': 4, 'tail': '.gitignore', 'uniquetail': '.gitignore', 'text': '/home/vivek/.vim/.gitignore'}
-	{'oldfiles_index': 5, 'tail': 'setup.sh', 'uniquetail': 'setup.sh', 'text': '/home/vivek/.config/setup.sh'}
-	{'oldfiles_index': 12, 'tail': 'eval.txt', 'uniquetail': 'eval.txt', 'text': '/usr/share/vim/vim90/doc/eval.txt'}
-	{'oldfiles_index': 17, 'tail': 'z.sh', 'uniquetail': 'z.sh', 'text': '/opt/z/z.sh'}
-	{'oldfiles_index': 18, 'tail': 'exa', 'uniquetail': 'exa', 'text': '/usr/bin/exa'}
-	{'oldfiles_index': 19, 'tail': 'gita', 'uniquetail': 'gita', 'text': '/usr/local/bin/gita'}
-	{'oldfiles_index': 20, 'tail': '.gitconfig', 'uniquetail': '.gitconfig', 'text': '/home/vivek/.gitconfig'}
-	{'oldfiles_index': 21, 'tail': '.bashrc', 'uniquetail': '.bashrc', 'text': '/home/vivek/.bashrc'}
-	{'oldfiles_index': 22, 'tail': 'bindings.inputrc', 'uniquetail': 'bindings.inputrc', 'text': '/home/vivek/.config/bindings.inputrc'}
-	{'oldfiles_index': 24, 'tail': 'fzf.txt', 'uniquetail': 'fzf.txt', 'text': '/home/vivek/.vim/.fzf/doc/fzf.txt'}
-	{'oldfiles_index': 25, 'tail': 'vimrc', 'uniquetail': 'vimrc', 'text': '/home/vivek/.vim/vimrc'}
-	{'oldfiles_index': 26, 'tail': 'options.txt', 'uniquetail': 'options.txt', 'text': '/usr/share/vim/vim90/doc/options.txt'}
-	{'oldfiles_index': 27, 'tail': 'builtin.txt', 'uniquetail': 'builtin.txt', 'text': '/usr/share/vim/vim90/doc/builtin.txt'}
-	{'oldfiles_index': 28, 'tail': 'mini.vimrc', 'uniquetail': 'mini.vimrc', 'text': '/home/vivek/.vim/mini.vimrc'}
-	{'oldfiles_index': 29, 'tail': 'statusline.vim', 'uniquetail': 'statusline.vim', 'text': '/home/vivek/.vim/plugin/statusline.vim'}
-	{'oldfiles_index': 34, 'tail': 'performance.vim', 'uniquetail': 'performance.vim', 'text': '/home/vivek/.vim/performance/performance.vim'}
-	{'oldfiles_index': 35, 'tail': 'change.txt', 'uniquetail': 'change.txt', 'text': '/usr/share/vim/vim90/doc/change.txt'}
-	{'oldfiles_index': 37, 'tail': 'timezone', 'uniquetail': 'timezone', 'text': '/etc/timezone'}
-	{'oldfiles_index': 39, 'tail': 'exa', 'uniquetail': 'exa', 'text': '/usr/share/bash-completion/completions/exa'}
-	{'oldfiles_index': 40, 'tail': '.zsh_history', 'uniquetail': '.zsh_history', 'text': '/home/vivek/.config/shell_data/.zsh_history'}
-	{'oldfiles_index': 41, 'tail': 'setup.zsh', 'uniquetail': 'setup.zsh', 'text': '/home/vivek/.config/setup.zsh'}
-	
-|3,0,5,1,25,0,1688309504,"{'oldfiles_index': 1, 'tail': 'item.txt', 'uniquetail': 'item.txt', 'text': '/tmp/mru/v02/item.txt'}","{'oldfiles_index': 2, 'tail': 'item.txt', 'uniquetail': 'item.txt', 'text': '/tmp/mru/v01/item.txt'}","{'oldfiles_index': 3, 'tail': 'mru.vim', 'uniquetail': 'mru.vim', 'text': '/home/vivek/.vim/plugin/mru.vim'}","{'oldfiles_index': 4, 'tail': '.gitignore', 'uniquetail': '.gitignore', 'text': '/home/vivek/.vim/.gitignore'}",>109
-|<"{'oldfiles_index': 5, 'tail': 'setup.sh', 'uniquetail': 'setup.sh', 'text': '/home/vivek/.config/setup.sh'}","{'oldfiles_index': 12, 'tail': 'eval.txt', 'uniquetail': 'eval.txt', 'text': '/usr/share/vim/vim90/doc/eval.txt'}","{'oldfiles_index': 17, 'tail': 'z.sh', 'uniquetail': 'z.sh', 'text': '/opt/z/z.sh'}","{'oldfiles_index': 18, 'tail': 'exa', 'uniquetail': 'exa', 'text': '/usr/bin/exa'}","{'oldfiles_index': 19, 'tail': 'gita', 'uniquetail': 'gita', 'text': '/usr/local/bin/gita'}",>108
-|<"{'oldfiles_index': 20, 'tail': '.gitconfig', 'uniquetail': '.gitconfig', 'text': '/home/vivek/.gitconfig'}","{'oldfiles_index': 21, 'tail': '.bashrc', 'uniquetail': '.bashrc', 'text': '/home/vivek/.bashrc'}","{'oldfiles_index': 22, 'tail': 'bindings.inputrc', 'uniquetail': 'bindings.inputrc', 'text': '/home/vivek/.config/bindings.inputrc'}","{'oldfiles_index': 24, 'tail': 'fzf.txt', 'uniquetail': 'fzf.txt', 'text': '/home/vivek/.vim/.fzf/doc/fzf.txt'}",>98
-|<"{'oldfiles_index': 25, 'tail': 'vimrc', 'uniquetail': 'vimrc', 'text': '/home/vivek/.vim/vimrc'}","{'oldfiles_index': 26, 'tail': 'options.txt', 'uniquetail': 'options.txt', 'text': '/usr/share/vim/vim90/doc/options.txt'}","{'oldfiles_index': 27, 'tail': 'builtin.txt', 'uniquetail': 'builtin.txt', 'text': '/usr/share/vim/vim90/doc/builtin.txt'}","{'oldfiles_index': 28, 'tail': 'mini.vimrc', 'uniquetail': 'mini.vimrc', 'text': '/home/vivek/.vim/mini.vimrc'}",>132
-|<"{'oldfiles_index': 29, 'tail': 'statusline.vim', 'uniquetail': 'statusline.vim', 'text': '/home/vivek/.vim/plugin/statusline.vim'}","{'oldfiles_index': 34, 'tail': 'performance.vim', 'uniquetail': 'performance.vim', 'text': '/home/vivek/.vim/performance/performance.vim'}","{'oldfiles_index': 35, 'tail': 'change.txt', 'uniquetail': 'change.txt', 'text': '/usr/share/vim/vim90/doc/change.txt'}",>95
-|<"{'oldfiles_index': 37, 'tail': 'timezone', 'uniquetail': 'timezone', 'text': '/etc/timezone'}","{'oldfiles_index': 39, 'tail': 'exa', 'uniquetail': 'exa', 'text': '/usr/share/bash-completion/completions/exa'}","{'oldfiles_index': 40, 'tail': '.zsh_history', 'uniquetail': '.zsh_history', 'text': '/home/vivek/.config/shell_data/.zsh_history'}","{'oldfiles_index': 41, 'tail': 'setup.zsh', 'uniquetail': 'setup.zsh', 'text': '/home/vivek/.config/setup.zsh'}",""
+	from waivek import Timer   # Single Use
+	from waivek import handler # Single Use
+	from waivek import ic, ib     # Multi-Use, import time: 70ms - 110ms
+|3,0,5,1,3,0,1688367999,"from waivek import Timer   # Single Use","from waivek import handler # Single Use","from waivek import ic, ib     # Multi-Use, import time: 70ms - 110ms"
 "6	LINE	0
-	
-	~/.config/coc/extensions/)
-	~/.bashrc
-	/etc/bash_completion.d/.gita-completion.bash
-	~/.gitconfig
-	~/.vim/.gitignore
-	~/.gitignore
-	~/python_common/.gitignore
-	~/.inputrc
-	~/.config/shell_data/.zsh_history
-	~/.vim/performance/230529.long_pause_linux_term.v01.txt
-	~/.vim/performance/230529.long_pause_linux_term.v02.txt
-	~/.vim/performance/230529.long_pause_linux_term.v03.txt
-	~/.vim/performance/230529.long_pause_linux_term.v04.txt
-	/usr/share/doc/aria2/bash_completion/README.txt
-	~/awk_function.sh
-	~/.config/bindings.inputrc
-	/usr/share/vim/vim90/doc/builtin.txt
-	/usr/share/vim/vim90/doc/change.txt
-	~/python_common/db.py
-	~/python_common/error.py
-	/usr/share/vim/vim90/doc/eval.txt
-	/usr/bin/exa
-	~/.config/completion/exa
-	/usr/share/bash-completion/completions/exa
-	~/.config/coc/extensions/file.txt
-	~/.vim/.fzf/doc/fzf.txt
-	~/fzf_cd.sh
-	/usr/local/bin/gita
-	~/python_common/ic.py
-	~/.config/coc/extensions/install.sh
-	~/.vim/mini.vimrc
-	~/.vim/plugin/mru.vim
-	/usr/share/vim/vim90/doc/options.txt
-	~/output.tmp
-	~/.vim/performance/performance.vim
-	~/python_common/requirements.txt
-	~/tmp/script.sh
-	~/tmp/script.vim
-	~/python_common/setup.py
-	~/.config/setup.sh
-	~/.config/setup.zsh
-	~/.vim/plugin/statusline.vim
-	~/tmp/test.py
-	/etc/timezone
-	~/.vim/vimrc
-	/opt/z/z.sh
-|3,0,6,1,47,0,1688309386,"","~/.config/coc/extensions/)","~/.bashrc","/etc/bash_completion.d/.gita-completion.bash","~/.gitconfig","~/.vim/.gitignore","~/.gitignore","~/python_common/.gitignore","~/.inputrc","~/.config/shell_data/.zsh_history","~/.vim/performance/230529.long_pause_linux_term.v01.txt","~/.vim/performance/230529.long_pause_linux_term.v02.txt","~/.vim/performance/230529.long_pause_linux_term.v03.txt",>57
-|<"~/.vim/performance/230529.long_pause_linux_term.v04.txt","/usr/share/doc/aria2/bash_completion/README.txt","~/awk_function.sh","~/.config/bindings.inputrc","/usr/share/vim/vim90/doc/builtin.txt","/usr/share/vim/vim90/doc/change.txt","~/python_common/db.py","~/python_common/error.py","/usr/share/vim/vim90/doc/eval.txt","/usr/bin/exa","~/.config/completion/exa","/usr/share/bash-completion/completions/exa","~/.config/coc/extensions/file.txt","~/.vim/.fzf/doc/fzf.txt","~/fzf_cd.sh",>21
-|<"/usr/local/bin/gita","~/python_common/ic.py","~/.config/coc/extensions/install.sh","~/.vim/mini.vimrc","~/.vim/plugin/mru.vim","/usr/share/vim/vim90/doc/options.txt","~/output.tmp","~/.vim/performance/performance.vim","~/python_common/requirements.txt","~/tmp/script.sh","~/tmp/script.vim","~/python_common/setup.py","~/.config/setup.sh","~/.config/setup.zsh","~/.vim/plugin/statusline.vim","~/tmp/test.py","/etc/timezone","~/.vim/vimrc","/opt/z/z.sh"
+	from flask import render_template
+	from flask import request
+|3,0,6,1,2,0,1688367995,"from flask import render_template","from flask import request"
 "7	LINE	0
-	{'oldfiles_index': 1, 'tail': 'mru.vim', 'uniquetail': 'mru.vim', 'text': '/home/vivek/.vim/plugin/mru.vim'}
-	{'oldfiles_index': 2, 'tail': '.gitignore', 'uniquetail': '.gitignore', 'text': '/home/vivek/.vim/.gitignore'}
-	{'oldfiles_index': 3, 'tail': 'setup.sh', 'uniquetail': 'setup.sh', 'text': '/home/vivek/.config/setup.sh'}
-	{'oldfiles_index': 10, 'tail': 'eval.txt', 'uniquetail': 'eval.txt', 'text': '/usr/share/vim/vim90/doc/eval.txt'}
-	{'oldfiles_index': 15, 'tail': 'z.sh', 'uniquetail': 'z.sh', 'text': '/opt/z/z.sh'}
-	{'oldfiles_index': 16, 'tail': 'exa', 'uniquetail': 'exa', 'text': '/usr/bin/exa'}
-	{'oldfiles_index': 17, 'tail': 'gita', 'uniquetail': 'gita', 'text': '/usr/local/bin/gita'}
-	{'oldfiles_index': 18, 'tail': '.gitconfig', 'uniquetail': '.gitconfig', 'text': '/home/vivek/.gitconfig'}
-	{'oldfiles_index': 19, 'tail': '.bashrc', 'uniquetail': '.bashrc', 'text': '/home/vivek/.bashrc'}
-	{'oldfiles_index': 20, 'tail': 'bindings.inputrc', 'uniquetail': 'bindings.inputrc', 'text': '/home/vivek/.config/bindings.inputrc'}
-	{'oldfiles_index': 22, 'tail': 'fzf.txt', 'uniquetail': 'fzf.txt', 'text': '/home/vivek/.vim/.fzf/doc/fzf.txt'}
-	{'oldfiles_index': 23, 'tail': 'vimrc', 'uniquetail': 'vimrc', 'text': '/home/vivek/.vim/vimrc'}
-	{'oldfiles_index': 24, 'tail': 'options.txt', 'uniquetail': 'options.txt', 'text': '/usr/share/vim/vim90/doc/options.txt'}
-	{'oldfiles_index': 25, 'tail': 'builtin.txt', 'uniquetail': 'builtin.txt', 'text': '/usr/share/vim/vim90/doc/builtin.txt'}
-	{'oldfiles_index': 26, 'tail': 'mini.vimrc', 'uniquetail': 'mini.vimrc', 'text': '/home/vivek/.vim/mini.vimrc'}
-	{'oldfiles_index': 27, 'tail': 'statusline.vim', 'uniquetail': 'statusline.vim', 'text': '/home/vivek/.vim/plugin/statusline.vim'}
-	{'oldfiles_index': 32, 'tail': 'performance.vim', 'uniquetail': 'performance.vim', 'text': '/home/vivek/.vim/performance/performance.vim'}
-	{'oldfiles_index': 33, 'tail': 'change.txt', 'uniquetail': 'change.txt', 'text': '/usr/share/vim/vim90/doc/change.txt'}
-	{'oldfiles_index': 35, 'tail': 'timezone', 'uniquetail': 'timezone', 'text': '/etc/timezone'}
-	{'oldfiles_index': 37, 'tail': 'exa', 'uniquetail': 'exa', 'text': '/usr/share/bash-completion/completions/exa'}
-	{'oldfiles_index': 38, 'tail': '.zsh_history', 'uniquetail': '.zsh_history', 'text': '/home/vivek/.config/shell_data/.zsh_history'}
-	{'oldfiles_index': 39, 'tail': 'setup.zsh', 'uniquetail': 'setup.zsh', 'text': '/home/vivek/.config/setup.zsh'}
-	
-|3,0,7,1,23,0,1688309299,"{'oldfiles_index': 1, 'tail': 'mru.vim', 'uniquetail': 'mru.vim', 'text': '/home/vivek/.vim/plugin/mru.vim'}","{'oldfiles_index': 2, 'tail': '.gitignore', 'uniquetail': '.gitignore', 'text': '/home/vivek/.vim/.gitignore'}","{'oldfiles_index': 3, 'tail': 'setup.sh', 'uniquetail': 'setup.sh', 'text': '/home/vivek/.config/setup.sh'}",>115
-|<"{'oldfiles_index': 10, 'tail': 'eval.txt', 'uniquetail': 'eval.txt', 'text': '/usr/share/vim/vim90/doc/eval.txt'}","{'oldfiles_index': 15, 'tail': 'z.sh', 'uniquetail': 'z.sh', 'text': '/opt/z/z.sh'}","{'oldfiles_index': 16, 'tail': 'exa', 'uniquetail': 'exa', 'text': '/usr/bin/exa'}","{'oldfiles_index': 17, 'tail': 'gita', 'uniquetail': 'gita', 'text': '/usr/local/bin/gita'}","{'oldfiles_index': 18, 'tail': '.gitconfig', 'uniquetail': '.gitconfig', 'text': '/home/vivek/.gitconfig'}",>99
-|<"{'oldfiles_index': 19, 'tail': '.bashrc', 'uniquetail': '.bashrc', 'text': '/home/vivek/.bashrc'}","{'oldfiles_index': 20, 'tail': 'bindings.inputrc', 'uniquetail': 'bindings.inputrc', 'text': '/home/vivek/.config/bindings.inputrc'}","{'oldfiles_index': 22, 'tail': 'fzf.txt', 'uniquetail': 'fzf.txt', 'text': '/home/vivek/.vim/.fzf/doc/fzf.txt'}","{'oldfiles_index': 23, 'tail': 'vimrc', 'uniquetail': 'vimrc', 'text': '/home/vivek/.vim/vimrc'}",>124
-|<"{'oldfiles_index': 24, 'tail': 'options.txt', 'uniquetail': 'options.txt', 'text': '/usr/share/vim/vim90/doc/options.txt'}","{'oldfiles_index': 25, 'tail': 'builtin.txt', 'uniquetail': 'builtin.txt', 'text': '/usr/share/vim/vim90/doc/builtin.txt'}","{'oldfiles_index': 26, 'tail': 'mini.vimrc', 'uniquetail': 'mini.vimrc', 'text': '/home/vivek/.vim/mini.vimrc'}",>132
-|<"{'oldfiles_index': 27, 'tail': 'statusline.vim', 'uniquetail': 'statusline.vim', 'text': '/home/vivek/.vim/plugin/statusline.vim'}","{'oldfiles_index': 32, 'tail': 'performance.vim', 'uniquetail': 'performance.vim', 'text': '/home/vivek/.vim/performance/performance.vim'}","{'oldfiles_index': 33, 'tail': 'change.txt', 'uniquetail': 'change.txt', 'text': '/usr/share/vim/vim90/doc/change.txt'}",>95
-|<"{'oldfiles_index': 35, 'tail': 'timezone', 'uniquetail': 'timezone', 'text': '/etc/timezone'}","{'oldfiles_index': 37, 'tail': 'exa', 'uniquetail': 'exa', 'text': '/usr/share/bash-completion/completions/exa'}","{'oldfiles_index': 38, 'tail': '.zsh_history', 'uniquetail': '.zsh_history', 'text': '/home/vivek/.config/shell_data/.zsh_history'}","{'oldfiles_index': 39, 'tail': 'setup.zsh', 'uniquetail': 'setup.zsh', 'text': '/home/vivek/.config/setup.zsh'}",""
+	from datetime import datetime
+	from datetime import datetime, timedelta
+	from datetime import timedelta
+|3,0,7,1,3,0,1688367992,"from datetime import datetime","from datetime import datetime, timedelta","from datetime import timedelta"
 "8	LINE	0
-	" call s:PrintList(filename_dictionaries)
-|3,0,8,1,1,0,1688309253,"\" call s:PrintList(filename_dictionaries)"
-"9	BLOCK	1
-	" 
-	" 
-	" 
-|3,0,9,2,3,1,1688309240,"\" ","\" ","\" "
+	
+|3,0,8,1,1,0,1688367983,""
+"9	LINE	0
+	        main()
+|3,0,9,1,1,0,1688367983,"        main()"
 "-	CHAR	0
-	copy(tails)
-|3,0,36,0,1,0,1688309859,"copy(tails)"
+	"~/Twitch/coffee-vps/code/data/main.db"
+|3,0,36,0,1,0,1688368482,"\"~/Twitch/coffee-vps/code/data/main.db\""
 
 # File marks:
-'0  333  0  ~/.vim/plugin/mru.vim
-|4,48,333,0,1688310205,"~/.vim/plugin/mru.vim"
-'1  58  4  ~/.vim/plugin/mru.vim
-|4,49,58,4,1688303664,"~/.vim/plugin/mru.vim"
-'2  58  4  ~/.vim/plugin/mru.vim
-|4,50,58,4,1688303664,"~/.vim/plugin/mru.vim"
-'3  58  4  ~/.vim/plugin/mru.vim
-|4,51,58,4,1688303664,"~/.vim/plugin/mru.vim"
-'4  58  4  ~/.vim/plugin/mru.vim
-|4,52,58,4,1688303664,"~/.vim/plugin/mru.vim"
-'5  313  0  ~/.vim/plugin/mru.vim
-|4,53,313,0,1688303494,"~/.vim/plugin/mru.vim"
-'6  330  0  ~/.vim/plugin/mru.vim
-|4,54,330,0,1688303494,"~/.vim/plugin/mru.vim"
-'7  308  0  ~/.vim/plugin/mru.vim
-|4,55,308,0,1688303494,"~/.vim/plugin/mru.vim"
-'8  319  0  ~/.vim/plugin/mru.vim
-|4,56,319,0,1688303494,"~/.vim/plugin/mru.vim"
-'9  313  0  ~/.vim/plugin/mru.vim
-|4,57,313,0,1688303494,"~/.vim/plugin/mru.vim"
+'0  4  0  ~/Twitch/coffee-vps/flask-vue/requirements.txt
+|4,48,4,0,1688368675,"~/Twitch/coffee-vps/flask-vue/requirements.txt"
+'1  1  0  ~/Twitch/coffee-vps/flask-vue/requirements.txt
+|4,49,1,0,1688368665,"~/Twitch/coffee-vps/flask-vue/requirements.txt"
+'2  1  0  ~/Twitch/coffee-vps/flask-vue/requirements.txt
+|4,50,1,0,1688368665,"~/Twitch/coffee-vps/flask-vue/requirements.txt"
+'3  348  15  ~/Twitch/coffee-vps/flask-vue/api.py
+|4,51,348,15,1688368543,"~/Twitch/coffee-vps/flask-vue/api.py"
+'4  348  15  ~/Twitch/coffee-vps/flask-vue/api.py
+|4,52,348,15,1688368543,"~/Twitch/coffee-vps/flask-vue/api.py"
+'5  348  15  ~/Twitch/coffee-vps/flask-vue/api.py
+|4,53,348,15,1688368543,"~/Twitch/coffee-vps/flask-vue/api.py"
+'6  348  15  ~/Twitch/coffee-vps/flask-vue/api.py
+|4,54,348,15,1688368543,"~/Twitch/coffee-vps/flask-vue/api.py"
+'7  312  40  ~/Twitch/coffee-vps/flask-vue/api.py
+|4,55,312,40,1688368492,"~/Twitch/coffee-vps/flask-vue/api.py"
+'8  312  40  ~/Twitch/coffee-vps/flask-vue/api.py
+|4,56,312,40,1688368492,"~/Twitch/coffee-vps/flask-vue/api.py"
+'9  312  40  ~/Twitch/coffee-vps/flask-vue/api.py
+|4,57,312,40,1688368492,"~/Twitch/coffee-vps/flask-vue/api.py"
 
 # Jumplist (newest first):
--'  333  0  ~/.vim/plugin/mru.vim
-|4,39,333,0,1688310205,"~/.vim/plugin/mru.vim"
--'  220  37  ~/.vim/plugin/mru.vim
-|4,39,220,37,1688309818,"~/.vim/plugin/mru.vim"
--'  292  45  ~/.vim/plugin/mru.vim
-|4,39,292,45,1688309800,"~/.vim/plugin/mru.vim"
--'  310  65  ~/.vim/plugin/mru.vim
-|4,39,310,65,1688309798,"~/.vim/plugin/mru.vim"
--'  286  31  ~/.vim/plugin/mru.vim
-|4,39,286,31,1688309797,"~/.vim/plugin/mru.vim"
--'  139  68  ~/.vim/plugin/mru.vim
-|4,39,139,68,1688309797,"~/.vim/plugin/mru.vim"
--'  337  46  ~/.vim/plugin/mru.vim
-|4,39,337,46,1688309790,"~/.vim/plugin/mru.vim"
--'  300  0  ~/.vim/plugin/mru.vim
-|4,39,300,0,1688309788,"~/.vim/plugin/mru.vim"
--'  124  4  ~/.vim/plugin/mru.vim
-|4,39,124,4,1688309744,"~/.vim/plugin/mru.vim"
--'  80  0  ~/.vim/plugin/mru.vim
-|4,39,80,0,1688309703,"~/.vim/plugin/mru.vim"
--'  75  26  ~/.vim/plugin/mru.vim
-|4,39,75,26,1688309680,"~/.vim/plugin/mru.vim"
--'  1  0  ~/.vim/plugin/mru.vim
-|4,39,1,0,1688309676,"~/.vim/plugin/mru.vim"
--'  252  4  ~/.vim/plugin/mru.vim
-|4,39,252,4,1688309675,"~/.vim/plugin/mru.vim"
--'  288  57  ~/.vim/plugin/mru.vim
-|4,39,288,57,1688309672,"~/.vim/plugin/mru.vim"
--'  289  57  ~/.vim/plugin/mru.vim
-|4,39,289,57,1688309663,"~/.vim/plugin/mru.vim"
--'  263  10  ~/.vim/plugin/mru.vim
-|4,39,263,10,1688309612,"~/.vim/plugin/mru.vim"
--'  64  67  ~/.vim/plugin/mru.vim
-|4,39,64,67,1688309586,"~/.vim/plugin/mru.vim"
--'  334  38  ~/.vim/plugin/mru.vim
-|4,39,334,38,1688309523,"~/.vim/plugin/mru.vim"
--'  316  27  ~/.vim/plugin/mru.vim
-|4,39,316,27,1688309483,"~/.vim/plugin/mru.vim"
--'  1  0  ~/.vim/.gitignore
-|4,39,1,0,1688309315,"~/.vim/.gitignore"
--'  1  0  ~/.vim/.gitignore
-|4,39,1,0,1688309315,"~/.vim/.gitignore"
--'  333  0  ~/.vim/plugin/mru.vim
-|4,39,333,0,1688309274,"~/.vim/plugin/mru.vim"
--'  334  54  ~/.vim/plugin/mru.vim
-|4,39,334,54,1688309248,"~/.vim/plugin/mru.vim"
--'  332  54  ~/.vim/plugin/mru.vim
-|4,39,332,54,1688309248,"~/.vim/plugin/mru.vim"
--'  317  12  ~/.vim/plugin/mru.vim
-|4,39,317,12,1688309242,"~/.vim/plugin/mru.vim"
--'  316  12  ~/.vim/plugin/mru.vim
-|4,39,316,12,1688309242,"~/.vim/plugin/mru.vim"
--'  315  27  ~/.vim/plugin/mru.vim
-|4,39,315,27,1688309222,"~/.vim/plugin/mru.vim"
--'  311  30  ~/.vim/plugin/mru.vim
-|4,39,311,30,1688309046,"~/.vim/plugin/mru.vim"
--'  309  30  ~/.vim/plugin/mru.vim
-|4,39,309,30,1688309046,"~/.vim/plugin/mru.vim"
--'  308  30  ~/.vim/plugin/mru.vim
-|4,39,308,30,1688309043,"~/.vim/plugin/mru.vim"
--'  298  12  ~/.vim/plugin/mru.vim
-|4,39,298,12,1688308845,"~/.vim/plugin/mru.vim"
--'  295  12  ~/.vim/plugin/mru.vim
-|4,39,295,12,1688308845,"~/.vim/plugin/mru.vim"
--'  93  69  ~/.vim/plugin/mru.vim
-|4,39,93,69,1688308811,"~/.vim/plugin/mru.vim"
--'  93  69  ~/.vim/plugin/mru.vim
-|4,39,93,69,1688308811,"~/.vim/plugin/mru.vim"
--'  69  46  ~/.vim/plugin/mru.vim
-|4,39,69,46,1688308665,"~/.vim/plugin/mru.vim"
--'  69  46  ~/.vim/plugin/mru.vim
-|4,39,69,46,1688308665,"~/.vim/plugin/mru.vim"
--'  72  5  ~/.vim/plugin/mru.vim
-|4,39,72,5,1688308631,"~/.vim/plugin/mru.vim"
--'  72  5  ~/.vim/plugin/mru.vim
-|4,39,72,5,1688308631,"~/.vim/plugin/mru.vim"
--'  71  10  ~/.vim/plugin/mru.vim
-|4,39,71,10,1688308625,"~/.vim/plugin/mru.vim"
--'  70  14  ~/.vim/plugin/mru.vim
-|4,39,70,14,1688308625,"~/.vim/plugin/mru.vim"
--'  71  10  ~/.vim/plugin/mru.vim
-|4,39,71,10,1688308625,"~/.vim/plugin/mru.vim"
--'  70  14  ~/.vim/plugin/mru.vim
-|4,39,70,14,1688308625,"~/.vim/plugin/mru.vim"
--'  57  45  ~/.vim/plugin/mru.vim
-|4,39,57,45,1688308578,"~/.vim/plugin/mru.vim"
--'  57  45  ~/.vim/plugin/mru.vim
-|4,39,57,45,1688308578,"~/.vim/plugin/mru.vim"
--'  58  24  ~/.vim/plugin/mru.vim
-|4,39,58,24,1688308577,"~/.vim/plugin/mru.vim"
--'  110  72  ~/.vim/plugin/mru.vim
-|4,39,110,72,1688308577,"~/.vim/plugin/mru.vim"
--'  119  55  ~/.vim/plugin/mru.vim
-|4,39,119,55,1688308577,"~/.vim/plugin/mru.vim"
--'  138  41  ~/.vim/plugin/mru.vim
-|4,39,138,41,1688308577,"~/.vim/plugin/mru.vim"
--'  58  24  ~/.vim/plugin/mru.vim
-|4,39,58,24,1688308577,"~/.vim/plugin/mru.vim"
--'  110  72  ~/.vim/plugin/mru.vim
-|4,39,110,72,1688308577,"~/.vim/plugin/mru.vim"
--'  119  55  ~/.vim/plugin/mru.vim
-|4,39,119,55,1688308577,"~/.vim/plugin/mru.vim"
--'  138  41  ~/.vim/plugin/mru.vim
-|4,39,138,41,1688308577,"~/.vim/plugin/mru.vim"
--'  58  4  ~/.vim/plugin/mru.vim
-|4,39,58,4,1688303664,"~/.vim/plugin/mru.vim"
--'  57  65  ~/.vim/plugin/mru.vim
-|4,39,57,65,1688303589,"~/.vim/plugin/mru.vim"
--'  54  0  ~/.vim/plugin/mru.vim
-|4,39,54,0,1688303580,"~/.vim/plugin/mru.vim"
--'  54  0  ~/.vim/plugin/mru.vim
-|4,39,54,0,1688303580,"~/.vim/plugin/mru.vim"
--'  54  0  ~/.vim/plugin/mru.vim
-|4,39,54,0,1688303580,"~/.vim/plugin/mru.vim"
--'  1  0  ~/.vim/plugin/mru.vim
-|4,39,1,0,1688303564,"~/.vim/plugin/mru.vim"
--'  1  0  ~/.vim/plugin/mru.vim
-|4,39,1,0,1688303564,"~/.vim/plugin/mru.vim"
--'  294  0  ~/.vim/plugin/mru.vim
-|4,39,294,0,1688303562,"~/.vim/plugin/mru.vim"
--'  291  0  ~/.vim/plugin/mru.vim
-|4,39,291,0,1688303562,"~/.vim/plugin/mru.vim"
--'  313  0  ~/.vim/plugin/mru.vim
-|4,39,313,0,1688303494,"~/.vim/plugin/mru.vim"
--'  330  0  ~/.vim/plugin/mru.vim
-|4,39,330,0,1688303494,"~/.vim/plugin/mru.vim"
--'  308  0  ~/.vim/plugin/mru.vim
-|4,39,308,0,1688303494,"~/.vim/plugin/mru.vim"
--'  319  0  ~/.vim/plugin/mru.vim
-|4,39,319,0,1688303494,"~/.vim/plugin/mru.vim"
--'  313  0  ~/.vim/plugin/mru.vim
-|4,39,313,0,1688303494,"~/.vim/plugin/mru.vim"
--'  329  0  ~/.vim/plugin/mru.vim
-|4,39,329,0,1688303494,"~/.vim/plugin/mru.vim"
--'  305  0  ~/.vim/plugin/mru.vim
-|4,39,305,0,1688303494,"~/.vim/plugin/mru.vim"
--'  318  0  ~/.vim/plugin/mru.vim
-|4,39,318,0,1688303494,"~/.vim/plugin/mru.vim"
--'  94  68  ~/.vim/plugin/mru.vim
-|4,39,94,68,1688303468,"~/.vim/plugin/mru.vim"
--'  312  0  ~/.vim/plugin/mru.vim
-|4,39,312,0,1688303468,"~/.vim/plugin/mru.vim"
--'  107  68  ~/.vim/plugin/mru.vim
-|4,39,107,68,1688303468,"~/.vim/plugin/mru.vim"
--'  90  68  ~/.vim/plugin/mru.vim
-|4,39,90,68,1688303468,"~/.vim/plugin/mru.vim"
--'  307  0  ~/.vim/plugin/mru.vim
-|4,39,307,0,1688303468,"~/.vim/plugin/mru.vim"
--'  103  68  ~/.vim/plugin/mru.vim
-|4,39,103,68,1688303468,"~/.vim/plugin/mru.vim"
--'  94  68  ~/.vim/plugin/mru.vim
-|4,39,94,68,1688303468,"~/.vim/plugin/mru.vim"
--'  312  0  ~/.vim/plugin/mru.vim
-|4,39,312,0,1688303468,"~/.vim/plugin/mru.vim"
--'  107  68  ~/.vim/plugin/mru.vim
-|4,39,107,68,1688303468,"~/.vim/plugin/mru.vim"
--'  90  68  ~/.vim/plugin/mru.vim
-|4,39,90,68,1688303468,"~/.vim/plugin/mru.vim"
--'  304  0  ~/.vim/plugin/mru.vim
-|4,39,304,0,1688303468,"~/.vim/plugin/mru.vim"
--'  103  68  ~/.vim/plugin/mru.vim
-|4,39,103,68,1688303468,"~/.vim/plugin/mru.vim"
--'  54  12  ~/.vim/plugin/mru.vim
-|4,39,54,12,1688303448,"~/.vim/plugin/mru.vim"
--'  73  0  ~/.vim/plugin/mru.vim
-|4,39,73,0,1688303430,"~/.vim/plugin/mru.vim"
--'  284  12  ~/.vim/plugin/mru.vim
-|4,39,284,12,1688303430,"~/.vim/plugin/mru.vim"
--'  285  4  ~/.vim/plugin/mru.vim
-|4,39,285,4,1688303430,"~/.vim/plugin/mru.vim"
--'  85  0  ~/.vim/plugin/mru.vim
-|4,39,85,0,1688303430,"~/.vim/plugin/mru.vim"
--'  74  45  ~/.vim/plugin/mru.vim
-|4,39,74,45,1688303430,"~/.vim/plugin/mru.vim"
--'  299  4  ~/.vim/plugin/mru.vim
-|4,39,299,4,1688303430,"~/.vim/plugin/mru.vim"
--'  302  55  ~/.vim/plugin/mru.vim
-|4,39,302,55,1688303430,"~/.vim/plugin/mru.vim"
--'  328  16  ~/.vim/plugin/mru.vim
-|4,39,328,16,1688303430,"~/.vim/plugin/mru.vim"
--'  329  8  ~/.vim/plugin/mru.vim
-|4,39,329,8,1688303430,"~/.vim/plugin/mru.vim"
--'  348  0  ~/.vim/plugin/mru.vim
-|4,39,348,0,1688303430,"~/.vim/plugin/mru.vim"
--'  349  0  ~/.vim/plugin/mru.vim
-|4,39,349,0,1688303430,"~/.vim/plugin/mru.vim"
--'  280  12  ~/.vim/plugin/mru.vim
-|4,39,280,12,1688303430,"~/.vim/plugin/mru.vim"
--'  281  4  ~/.vim/plugin/mru.vim
-|4,39,281,4,1688303430,"~/.vim/plugin/mru.vim"
--'  306  16  ~/.vim/plugin/mru.vim
-|4,39,306,16,1688303430,"~/.vim/plugin/mru.vim"
--'  322  0  ~/.vim/plugin/mru.vim
-|4,39,322,0,1688303430,"~/.vim/plugin/mru.vim"
--'  323  0  ~/.vim/plugin/mru.vim
-|4,39,323,0,1688303430,"~/.vim/plugin/mru.vim"
--'  81  0  ~/.vim/plugin/mru.vim
-|4,39,81,0,1688303430,"~/.vim/plugin/mru.vim"
+-'  4  0  ~/Twitch/coffee-vps/flask-vue/requirements.txt
+|4,39,4,0,1688368675,"~/Twitch/coffee-vps/flask-vue/requirements.txt"
+-'  1  0  ~/Twitch/coffee-vps/flask-vue/requirements.txt
+|4,39,1,0,1688368673,"~/Twitch/coffee-vps/flask-vue/requirements.txt"
+-'  1  0  ~/Twitch/coffee-vps/flask-vue/requirements.txt
+|4,39,1,0,1688368665,"~/Twitch/coffee-vps/flask-vue/requirements.txt"
+-'  348  15  ~/Twitch/coffee-vps/flask-vue/api.py
+|4,39,348,15,1688368543,"~/Twitch/coffee-vps/flask-vue/api.py"
+-'  348  15  ~/Twitch/coffee-vps/flask-vue/api.py
+|4,39,348,15,1688368543,"~/Twitch/coffee-vps/flask-vue/api.py"
+-'  348  15  ~/Twitch/coffee-vps/flask-vue/api.py
+|4,39,348,15,1688368543,"~/Twitch/coffee-vps/flask-vue/api.py"
+-'  1  0  ~/Twitch/coffee-vps/flask-vue/api.py
+|4,39,1,0,1688368531,"~/Twitch/coffee-vps/flask-vue/api.py"
+-'  1  0  ~/Twitch/coffee-vps/flask-vue/api.py
+|4,39,1,0,1688368531,"~/Twitch/coffee-vps/flask-vue/api.py"
+-'  1  0  ~/Twitch/coffee-vps/flask-vue/api.py
+|4,39,1,0,1688368531,"~/Twitch/coffee-vps/flask-vue/api.py"
+-'  312  40  ~/Twitch/coffee-vps/flask-vue/api.py
+|4,39,312,40,1688368492,"~/Twitch/coffee-vps/flask-vue/api.py"
+-'  312  40  ~/Twitch/coffee-vps/flask-vue/api.py
+|4,39,312,40,1688368492,"~/Twitch/coffee-vps/flask-vue/api.py"
+-'  312  40  ~/Twitch/coffee-vps/flask-vue/api.py
+|4,39,312,40,1688368492,"~/Twitch/coffee-vps/flask-vue/api.py"
+-'  312  40  ~/Twitch/coffee-vps/flask-vue/api.py
+|4,39,312,40,1688368492,"~/Twitch/coffee-vps/flask-vue/api.py"
+-'  261  38  ~/Twitch/coffee-vps/flask-vue/api.py
+|4,39,261,38,1688368488,"~/Twitch/coffee-vps/flask-vue/api.py"
+-'  261  38  ~/Twitch/coffee-vps/flask-vue/api.py
+|4,39,261,38,1688368488,"~/Twitch/coffee-vps/flask-vue/api.py"
+-'  261  38  ~/Twitch/coffee-vps/flask-vue/api.py
+|4,39,261,38,1688368488,"~/Twitch/coffee-vps/flask-vue/api.py"
+-'  261  38  ~/Twitch/coffee-vps/flask-vue/api.py
+|4,39,261,38,1688368488,"~/Twitch/coffee-vps/flask-vue/api.py"
+-'  87  27  ~/Twitch/coffee-vps/flask-vue/api.py
+|4,39,87,27,1688368485,"~/Twitch/coffee-vps/flask-vue/api.py"
+-'  87  27  ~/Twitch/coffee-vps/flask-vue/api.py
+|4,39,87,27,1688368485,"~/Twitch/coffee-vps/flask-vue/api.py"
+-'  87  27  ~/Twitch/coffee-vps/flask-vue/api.py
+|4,39,87,27,1688368485,"~/Twitch/coffee-vps/flask-vue/api.py"
+-'  87  27  ~/Twitch/coffee-vps/flask-vue/api.py
+|4,39,87,27,1688368485,"~/Twitch/coffee-vps/flask-vue/api.py"
+-'  86  29  ~/Twitch/coffee-vps/flask-vue/api.py
+|4,39,86,29,1688368484,"~/Twitch/coffee-vps/flask-vue/api.py"
+-'  86  29  ~/Twitch/coffee-vps/flask-vue/api.py
+|4,39,86,29,1688368484,"~/Twitch/coffee-vps/flask-vue/api.py"
+-'  86  29  ~/Twitch/coffee-vps/flask-vue/api.py
+|4,39,86,29,1688368484,"~/Twitch/coffee-vps/flask-vue/api.py"
+-'  86  29  ~/Twitch/coffee-vps/flask-vue/api.py
+|4,39,86,29,1688368484,"~/Twitch/coffee-vps/flask-vue/api.py"
+-'  2  0  ~/Twitch/coffee-vps/flask-vue/api.py
+|4,39,2,0,1688368381,"~/Twitch/coffee-vps/flask-vue/api.py"
+-'  2  0  ~/Twitch/coffee-vps/flask-vue/api.py
+|4,39,2,0,1688368381,"~/Twitch/coffee-vps/flask-vue/api.py"
+-'  2  0  ~/Twitch/coffee-vps/flask-vue/api.py
+|4,39,2,0,1688368381,"~/Twitch/coffee-vps/flask-vue/api.py"
+-'  2  0  ~/Twitch/coffee-vps/flask-vue/api.py
+|4,39,2,0,1688368381,"~/Twitch/coffee-vps/flask-vue/api.py"
+-'  1  0  ~/Twitch/coffee-vps/flask-vue/api.py
+|4,39,1,0,1688368377,"~/Twitch/coffee-vps/flask-vue/api.py"
+-'  4  16  ~/Twitch/coffee-vps/flask-vue/test.py
+|4,39,4,16,1688368353,"~/Twitch/coffee-vps/flask-vue/test.py"
+-'  4  16  ~/Twitch/coffee-vps/flask-vue/test.py
+|4,39,4,16,1688368353,"~/Twitch/coffee-vps/flask-vue/test.py"
+-'  4  16  ~/Twitch/coffee-vps/flask-vue/test.py
+|4,39,4,16,1688368353,"~/Twitch/coffee-vps/flask-vue/test.py"
+-'  4  16  ~/Twitch/coffee-vps/flask-vue/test.py
+|4,39,4,16,1688368353,"~/Twitch/coffee-vps/flask-vue/test.py"
+-'  4  16  ~/Twitch/coffee-vps/flask-vue/test.py
+|4,39,4,16,1688368353,"~/Twitch/coffee-vps/flask-vue/test.py"
+-'  3  16  ~/Twitch/coffee-vps/flask-vue/test.py
+|4,39,3,16,1688368340,"~/Twitch/coffee-vps/flask-vue/test.py"
+-'  3  16  ~/Twitch/coffee-vps/flask-vue/test.py
+|4,39,3,16,1688368340,"~/Twitch/coffee-vps/flask-vue/test.py"
+-'  3  16  ~/Twitch/coffee-vps/flask-vue/test.py
+|4,39,3,16,1688368340,"~/Twitch/coffee-vps/flask-vue/test.py"
+-'  3  16  ~/Twitch/coffee-vps/flask-vue/test.py
+|4,39,3,16,1688368340,"~/Twitch/coffee-vps/flask-vue/test.py"
+-'  3  16  ~/Twitch/coffee-vps/flask-vue/test.py
+|4,39,3,16,1688368340,"~/Twitch/coffee-vps/flask-vue/test.py"
+-'  2  20  ~/Twitch/coffee-vps/flask-vue/test.py
+|4,39,2,20,1688368339,"~/Twitch/coffee-vps/flask-vue/test.py"
+-'  2  20  ~/Twitch/coffee-vps/flask-vue/test.py
+|4,39,2,20,1688368339,"~/Twitch/coffee-vps/flask-vue/test.py"
+-'  2  20  ~/Twitch/coffee-vps/flask-vue/test.py
+|4,39,2,20,1688368339,"~/Twitch/coffee-vps/flask-vue/test.py"
+-'  2  20  ~/Twitch/coffee-vps/flask-vue/test.py
+|4,39,2,20,1688368339,"~/Twitch/coffee-vps/flask-vue/test.py"
+-'  2  20  ~/Twitch/coffee-vps/flask-vue/test.py
+|4,39,2,20,1688368339,"~/Twitch/coffee-vps/flask-vue/test.py"
+-'  1  0  ~/Twitch/coffee-vps/flask-vue/test.py
+|4,39,1,0,1688368321,"~/Twitch/coffee-vps/flask-vue/test.py"
+-'  1  0  ~/Twitch/coffee-vps/flask-vue/test.py
+|4,39,1,0,1688368321,"~/Twitch/coffee-vps/flask-vue/test.py"
+-'  1  0  ~/Twitch/coffee-vps/flask-vue/test.py
+|4,39,1,0,1688368321,"~/Twitch/coffee-vps/flask-vue/test.py"
+-'  1  0  ~/Twitch/coffee-vps/flask-vue/test.py
+|4,39,1,0,1688368321,"~/Twitch/coffee-vps/flask-vue/test.py"
+-'  1  0  ~/Twitch/coffee-vps/flask-vue/test.py
+|4,39,1,0,1688368321,"~/Twitch/coffee-vps/flask-vue/test.py"
+-'  87  7  ~/Twitch/coffee-vps/flask-vue/api.py
+|4,39,87,7,1688368315,"~/Twitch/coffee-vps/flask-vue/api.py"
+-'  87  7  ~/Twitch/coffee-vps/flask-vue/api.py
+|4,39,87,7,1688368315,"~/Twitch/coffee-vps/flask-vue/api.py"
+-'  261  20  ~/Twitch/coffee-vps/flask-vue/api.py
+|4,39,261,20,1688368291,"~/Twitch/coffee-vps/flask-vue/api.py"
+-'  261  20  ~/Twitch/coffee-vps/flask-vue/api.py
+|4,39,261,20,1688368291,"~/Twitch/coffee-vps/flask-vue/api.py"
+-'  86  11  ~/Twitch/coffee-vps/flask-vue/api.py
+|4,39,86,11,1688368280,"~/Twitch/coffee-vps/flask-vue/api.py"
+-'  86  11  ~/Twitch/coffee-vps/flask-vue/api.py
+|4,39,86,11,1688368280,"~/Twitch/coffee-vps/flask-vue/api.py"
+-'  312  22  ~/Twitch/coffee-vps/flask-vue/api.py
+|4,39,312,22,1688368279,"~/Twitch/coffee-vps/flask-vue/api.py"
+-'  312  22  ~/Twitch/coffee-vps/flask-vue/api.py
+|4,39,312,22,1688368279,"~/Twitch/coffee-vps/flask-vue/api.py"
+-'  337  33  ~/Twitch/coffee-vps/flask-vue/api.py
+|4,39,337,33,1688368274,"~/Twitch/coffee-vps/flask-vue/api.py"
+-'  337  33  ~/Twitch/coffee-vps/flask-vue/api.py
+|4,39,337,33,1688368274,"~/Twitch/coffee-vps/flask-vue/api.py"
+-'  337  33  ~/Twitch/coffee-vps/flask-vue/api.py
+|4,39,337,33,1688368274,"~/Twitch/coffee-vps/flask-vue/api.py"
+-'  337  33  ~/Twitch/coffee-vps/flask-vue/api.py
+|4,39,337,33,1688368274,"~/Twitch/coffee-vps/flask-vue/api.py"
+-'  337  33  ~/Twitch/coffee-vps/flask-vue/api.py
+|4,39,337,33,1688368274,"~/Twitch/coffee-vps/flask-vue/api.py"
+-'  337  33  ~/Twitch/coffee-vps/flask-vue/api.py
+|4,39,337,33,1688368274,"~/Twitch/coffee-vps/flask-vue/api.py"
+-'  1  0  ~/Twitch/coffee-vps/flask-vue/api.py
+|4,39,1,0,1688368237,"~/Twitch/coffee-vps/flask-vue/api.py"
+-'  1  0  ~/Twitch/coffee-vps/flask-vue/api.py
+|4,39,1,0,1688368237,"~/Twitch/coffee-vps/flask-vue/api.py"
+-'  1  0  ~/Twitch/coffee-vps/flask-vue/.flaskenv
+|4,39,1,0,1688368192,"~/Twitch/coffee-vps/flask-vue/.flaskenv"
+-'  1  0  ~/Twitch/coffee-vps/flask-vue/.flaskenv
+|4,39,1,0,1688368192,"~/Twitch/coffee-vps/flask-vue/.flaskenv"
+-'  1  0  ~/Twitch/coffee-vps/flask-vue/.flaskenv
+|4,39,1,0,1688368192,"~/Twitch/coffee-vps/flask-vue/.flaskenv"
+-'  1  0  ~/Twitch/coffee-vps/flask-vue/.flaskenv
+|4,39,1,0,1688368192,"~/Twitch/coffee-vps/flask-vue/.flaskenv"
+-'  1  0  ~/Twitch/coffee-vps/flask-vue/.flaskenv
+|4,39,1,0,1688368192,"~/Twitch/coffee-vps/flask-vue/.flaskenv"
+-'  1  0  ~/Twitch/coffee-vps/flask-vue/.flaskenv
+|4,39,1,0,1688368192,"~/Twitch/coffee-vps/flask-vue/.flaskenv"
+-'  1  0  ~/Twitch/coffee-vps/flask-vue/.flaskenv
+|4,39,1,0,1688368192,"~/Twitch/coffee-vps/flask-vue/.flaskenv"
+-'  1  0  ~/Twitch/coffee-vps/flask-vue/.flaskenv
+|4,39,1,0,1688368192,"~/Twitch/coffee-vps/flask-vue/.flaskenv"
+-'  1  0  ~/Twitch/coffee-vps/flask-vue/.flaskenv
+|4,39,1,0,1688368163,"~/Twitch/coffee-vps/flask-vue/.flaskenv"
+-'  1  0  ~/Twitch/coffee-vps/flask-vue/start_flask.sh
+|4,39,1,0,1688368144,"~/Twitch/coffee-vps/flask-vue/start_flask.sh"
+-'  1  0  ~/Twitch/coffee-vps/flask-vue/start_flask.sh
+|4,39,1,0,1688368144,"~/Twitch/coffee-vps/flask-vue/start_flask.sh"
+-'  1  0  ~/Twitch/coffee-vps/flask-vue/start_flask.sh
+|4,39,1,0,1688368144,"~/Twitch/coffee-vps/flask-vue/start_flask.sh"
+-'  1  0  ~/Twitch/coffee-vps/flask-vue/start_flask.sh
+|4,39,1,0,1688368144,"~/Twitch/coffee-vps/flask-vue/start_flask.sh"
+-'  1  0  ~/Twitch/coffee-vps/flask-vue/start_flask.sh
+|4,39,1,0,1688368144,"~/Twitch/coffee-vps/flask-vue/start_flask.sh"
+-'  1  0  ~/Twitch/coffee-vps/flask-vue/start_flask.sh
+|4,39,1,0,1688368144,"~/Twitch/coffee-vps/flask-vue/start_flask.sh"
+-'  1  0  ~/Twitch/coffee-vps/flask-vue/start_flask.sh
+|4,39,1,0,1688368144,"~/Twitch/coffee-vps/flask-vue/start_flask.sh"
+-'  1  0  ~/Twitch/coffee-vps/flask-vue/start_flask.sh
+|4,39,1,0,1688368144,"~/Twitch/coffee-vps/flask-vue/start_flask.sh"
+-'  1  0  ~/Twitch/coffee-vps/flask-vue/start_flask.sh
+|4,39,1,0,1688368144,"~/Twitch/coffee-vps/flask-vue/start_flask.sh"
+-'  1  0  ~/Twitch/coffee-vps/flask-vue/start_flask.sh
+|4,39,1,0,1688368144,"~/Twitch/coffee-vps/flask-vue/start_flask.sh"
+-'  3  0  ~/Twitch/coffee-vps/flask-vue/requirements.txt
+|4,39,3,0,1688368092,"~/Twitch/coffee-vps/flask-vue/requirements.txt"
+-'  3  0  ~/Twitch/coffee-vps/flask-vue/requirements.txt
+|4,39,3,0,1688368092,"~/Twitch/coffee-vps/flask-vue/requirements.txt"
+-'  3  0  ~/Twitch/coffee-vps/flask-vue/requirements.txt
+|4,39,3,0,1688368092,"~/Twitch/coffee-vps/flask-vue/requirements.txt"
+-'  3  0  ~/Twitch/coffee-vps/flask-vue/requirements.txt
+|4,39,3,0,1688368092,"~/Twitch/coffee-vps/flask-vue/requirements.txt"
+-'  3  0  ~/Twitch/coffee-vps/flask-vue/requirements.txt
+|4,39,3,0,1688368092,"~/Twitch/coffee-vps/flask-vue/requirements.txt"
+-'  3  0  ~/Twitch/coffee-vps/flask-vue/requirements.txt
+|4,39,3,0,1688368092,"~/Twitch/coffee-vps/flask-vue/requirements.txt"
+-'  3  0  ~/Twitch/coffee-vps/flask-vue/requirements.txt
+|4,39,3,0,1688368092,"~/Twitch/coffee-vps/flask-vue/requirements.txt"
+-'  3  0  ~/Twitch/coffee-vps/flask-vue/requirements.txt
+|4,39,3,0,1688368092,"~/Twitch/coffee-vps/flask-vue/requirements.txt"
+-'  3  0  ~/Twitch/coffee-vps/flask-vue/requirements.txt
+|4,39,3,0,1688368092,"~/Twitch/coffee-vps/flask-vue/requirements.txt"
+-'  3  0  ~/Twitch/coffee-vps/flask-vue/requirements.txt
+|4,39,3,0,1688368092,"~/Twitch/coffee-vps/flask-vue/requirements.txt"
+-'  3  0  ~/Twitch/coffee-vps/flask-vue/requirements.txt
+|4,39,3,0,1688368092,"~/Twitch/coffee-vps/flask-vue/requirements.txt"
+-'  1  0  ~/Twitch/coffee-vps/flask-vue/requirements.txt
+|4,39,1,0,1688368089,"~/Twitch/coffee-vps/flask-vue/requirements.txt"
+-'  1  0  ~/Twitch/coffee-vps/flask-vue/requirements.txt
+|4,39,1,0,1688368089,"~/Twitch/coffee-vps/flask-vue/requirements.txt"
+-'  1  0  ~/Twitch/coffee-vps/flask-vue/requirements.txt
+|4,39,1,0,1688368089,"~/Twitch/coffee-vps/flask-vue/requirements.txt"
+-'  1  0  ~/Twitch/coffee-vps/flask-vue/requirements.txt
+|4,39,1,0,1688368089,"~/Twitch/coffee-vps/flask-vue/requirements.txt"
 
 # Buffer list:
-%~/.vim/plugin/mru.vim	134	38
-%~/.vim/.gitignore	1	0
+%~/Twitch/coffee-vps/flask-vue/requirements.txt	4	0
 
 # History of marks within files (newest to oldest):
+
+> ~/Twitch/coffee-vps/flask-vue/requirements.txt
+	*	1688368674	0
+	"	4	0
+	^	4	23
+	.	3	0
+	+	1	0
+	+	6	0
+	+	1	0
+	+	2	0
+	+	4	22
+	+	5	0
+	+	1	0
+	+	2	0
+	+	3	0
+	+	4	0
+	+	5	0
+	+	1	0
+	+	2	5
+	+	3	0
+
+> ~/Twitch/coffee-vps/flask-vue/api.py
+	*	1688368542	0
+	"	348	15
+	^	348	16
+	.	348	15
+	+	86	0
+	+	87	0
+	+	86	1
+	+	87	65
+	+	261	20
+	+	312	22
+	+	86	11
+	+	312	79
+	+	261	16
+	+	86	9
+	+	348	15
+
+> ~/Twitch/coffee-vps/flask-vue/test.py
+	*	1688368353	0
+	"	4	16
+	^	4	17
+	.	4	3
+	+	1	25
+	+	3	16
+	+	5	0
+	+	2	20
+	+	4	3
+
+> ~/Twitch/coffee-vps/flask-vue/.flaskenv
+	*	1688368190	0
+	"	1	0
+
+> ~/Twitch/coffee-vps/flask-vue/start_flask.sh
+	*	1688368143	0
+	"	1	0
+
+> ~/Twitch/coffee-vps/flask-vue/vuejs/db.html
+	*	1688311432	0
+	"	16	14
+
+> ~/.vim/ftplugin/html.vim
+	*	1688311417	0
+	"	22	4
+	^	22	5
+	.	22	0
+	+	19	0
+	+	18	6
+	+	19	0
+	+	18	19
+	+	19	0
+	+	20	4
+	+	21	16
+	+	22	0
+
+> ~/.vim/vimrc
+	*	1688311355	0
+	"	820	71
+	^	820	72
+	.	820	71
+	+	49	65
+	+	47	0
+	+	48	7
+	+	49	0
+	+	78	83
+	+	75	1
+	+	76	0
+	+	75	0
+	+	76	0
+	+	52	23
+	+	49	1
+	+	51	0
+	+	49	0
+	+	1318	0
+	+	1323	0
+	+	1318	0
+	+	1317	30
+	+	1318	0
+	+	1322	0
+	+	1320	16
+	+	1321	0
+	+	1328	70
+	+	102	0
+	+	107	22
+	+	104	0
+	+	107	27
+	+	109	0
+	+	108	0
+	+	103	30
+	+	105	13
+	+	104	16
+	+	98	0
+	+	820	19
+	+	820	5
+	+	820	80
+	+	820	22
+	+	820	0
+	+	819	21
+	+	820	28
+	+	819	22
+	+	820	71
+
+> ~/.vim/coc-settings.json
+	*	1688310893	0
+	"	1	0
 
 > ~/.vim/plugin/mru.vim
 	*	1688310202	0
@@ -1114,44 +1196,6 @@
 > ~/.vim/.fzf/doc/fzf.txt
 	*	1685398683	0
 	"	48	0
-
-> ~/.vim/vimrc
-	*	1685398469	0
-	"	98	0
-	^	98	0
-	.	98	0
-	+	49	65
-	+	47	0
-	+	48	7
-	+	49	0
-	+	78	83
-	+	75	1
-	+	76	0
-	+	75	0
-	+	76	0
-	+	52	23
-	+	49	1
-	+	51	0
-	+	49	0
-	+	1317	0
-	+	1322	0
-	+	1317	0
-	+	1316	30
-	+	1317	0
-	+	1321	0
-	+	1319	16
-	+	1320	0
-	+	1327	70
-	+	102	0
-	+	107	22
-	+	104	0
-	+	107	27
-	+	109	0
-	+	108	0
-	+	103	30
-	+	105	13
-	+	104	16
-	+	98	0
 
 > /usr/share/vim/vim90/doc/options.txt
 	*	1685398279	0
