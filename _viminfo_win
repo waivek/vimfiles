@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/list
+~MSle0~/oldtails
 
 # Last Substitute Search Pattern:
 ~MSle0&
@@ -20,16 +20,96 @@
 $enumerate(\0)
 
 # Command Line History (newest to oldest):
+:MRU 198:temp\python_summaries.txt
+|2,0,1688310786,,"MRU 198:temp\\python_summaries.txt"
+:MRU 6:db.py
+|2,0,1688310779,,"MRU 6:db.py"
+:MRU 554:vimfiles\221006.python_list_comprehension_initializations.txt
+|2,0,1688310723,,"MRU 554:vimfiles\\221006.python_list_comprehension_initializations.txt"
+:MRU 1425:knowledge\twitch_clip_knowledge.txt
+|2,0,1688310712,,"MRU 1425:knowledge\\twitch_clip_knowledge.txt"
+:MRU 1303:knowledge\twitch_api_knowledge.txt
+|2,0,1688310708,,"MRU 1303:knowledge\\twitch_api_knowledge.txt"
+:MRU 2:mru.vim
+|2,0,1688310702,,"MRU 2:mru.vim"
+:qa
+|2,0,1688310697,,"qa"
+:MRU
+|2,0,1688310696,,"MRU"
+:so %
+|2,0,1688310692,,"so %"
+:CMD .
+|2,0,1688310606,,"CMD ."
+:CMD
+|2,0,1688310602,,"CMD"
+:CMd
+|2,0,1688310601,,"CMd"
+:MRU 336:vuejs\twitch_vue.html
+|2,0,1688310589,,"MRU 336:vuejs\\twitch_vue.html"
+:echo g:existing_oldfiles
+|2,0,1688310567,,"echo g:existing_oldfiles"
+:MRU 2352:Documents\twitch_clips.txt
+|2,0,1688310560,,"MRU 2352:Documents\\twitch_clips.txt"
+:MRU 626:js\twitch_clips_embed.js
+|2,0,1688310537,,"MRU 626:js\\twitch_clips_embed.js"
+:MRU 1425:knowledge\twitch_clip_knowledge.txt 
+|2,0,1688310531,,"MRU 1425:knowledge\\twitch_clip_knowledge.txt "
+:MRU 338:flask-vue\twitch_vue.html
+|2,0,1688310507,,"MRU 338:flask-vue\\twitch_vue.html"
+:MRU twi
+|2,0,1688310502,,"MRU twi"
+:MRU 506:stdlib\sqlite3\dbapi2.pyi
+|2,0,1688310490,,"MRU 506:stdlib\\sqlite3\\dbapi2.pyi"
+:MRU 5:waivek\waivek\ic.py
+|2,0,1688310486,,"MRU 5:waivek\\waivek\\ic.py"
+:MRU 11:ideas.txt
+|2,0,1688310482,,"MRU 11:ideas.txt"
+:MRU 4:db.py
+|2,0,1688310461,,"MRU 4:db.py"
+:MRU 2:vivek\vimfiles\plugin\mru.vim
+|2,0,1688310448,,"MRU 2:vivek\\vimfiles\\plugin\\mru.vim"
+:MRU 4372:echapmancarter.f80utg9.timings.txt
+|2,0,1688310443,,"MRU 4372:echapmancarter.f80utg9.timings.txt"
+:MRU mru
+|2,0,1688310423,,"MRU mru"
+:MRU 81:code\twitch_utilities.py
+|2,0,1688310420,,"MRU 81:code\\twitch_utilities.py"
+:MRU 75:waivek\waivek\common.py
+|2,0,1688310402,,"MRU 75:waivek\\waivek\\common.py"
+:MRU 3:Python\v01\test_ic.py
+|2,0,1688310393,,"MRU 3:Python\\v01\\test_ic.py"
+:ll
+|2,0,1688310358,,"ll"
+:e
+|2,0,1688310353,,"e"
+:MRU pytho
+|2,0,1688310342,,"MRU pytho"
+:MRU 697:vimspector\support\custom_ui_vimrc
+|2,0,1688310318,,"MRU 697:vimspector\\support\\custom_ui_vimrc"
+:MRU python.vim
+|2,0,1688310308,,"MRU python.vim"
+:MRU 7:vimspector.txt
+|2,0,1688310302,,"MRU 7:vimspector.txt"
+:MRU 126:.\everything_python_paths.txt
+|2,0,1688310298,,"MRU 126:.\\everything_python_paths.txt"
+:MRU 62:python_refactoring_waivek\python_dotstar_documents_cfile.txt
+|2,0,1688310265,,"MRU 62:python_refactoring_waivek\\python_dotstar_documents_cfile.txt"
+:MRU 3:test_ic.py
+|2,0,1688310258,,"MRU 3:test_ic.py"
+:MRU 9:__init__.py
+|2,0,1688310255,,"MRU 9:__init__.py"
+:MRU 133:.\everything_python_paths.txt
+|2,0,1688309896,,"MRU 133:.\\everything_python_paths.txt"
+:MRU 91:patternfile
+|2,0,1688309892,,"MRU 91:patternfile"
+:MRU 4256:undofiles\C%%Users%vivek%vimfiles%syntax%python.vim
+|2,0,1688309560,,"MRU 4256:undofiles\\C%%Users%vivek%vimfiles%syntax%python.vim"
+:MRU mru.vim
+|2,0,1688308688,,"MRU mru.vim"
 :find db
 |2,0,1688277631,,"find db"
 :MRU db
 |2,0,1688277630,,"MRU db"
-:e
-|2,0,1688277337,,"e"
-:CMD
-|2,0,1688277293,,"CMD"
-:CMD .
-|2,0,1688277290,,"CMD ."
 :find ic.py
 |2,0,1688277280,,"find ic.py"
 :Enumerate
@@ -112,8 +192,6 @@ $enumerate(\0)
 |2,0,1688243691,,"MRU waivek"
 :e ic
 |2,0,1688243616,,"e ic"
-:so %
-|2,0,1688243546,,"so %"
 :verbose set path
 |2,0,1688243519,,"verbose set path"
 :set path?
@@ -160,8 +238,6 @@ $enumerate(\0)
 |2,0,1688231221,,"find ic"
 :find common.py
 |2,0,1688231218,,"find common.py"
-:qa
-|2,0,1688231199,,"qa"
 :b C:\Users\vivek\vimfiles\vimrc
 |2,0,1688231190,,"b C:\\Users\\vivek\\vimfiles\\vimrc"
 :Py
@@ -182,8 +258,6 @@ $enumerate(\0)
 |2,0,1688195528,,"MRU rip*res"
 :b \Users\vivek\Desktop\ripgrep_manual\python_refactoring_waivek\patternfie_2
 |2,0,1688195457,,"b \\Users\\vivek\\Desktop\\ripgrep_manual\\python_refactoring_waivek\\patternfie_2"
-:ll
-|2,0,1688195425,,"ll"
 :'<,'>sort /^\w\+\s/
 |2,0,1688195343,,"'<,'>sort /^\\w\\+\\s/"
 :'<,'>sort /^\w\+\s
@@ -232,8 +306,6 @@ $enumerate(\0)
 |2,0,1688191416,,"cpre"
 :PyGrep file_to_string
 |2,0,1688191390,,"PyGrep file_to_string"
-:MRU twi
-|2,0,1688191381,,"MRU twi"
 :'<,'>
 |2,0,1688190417,,"'<,'>"
 :e cfile.txt
@@ -306,8 +378,6 @@ $enumerate(\0)
 |2,0,1688145555,,"find frame.py"
 :find error.py
 |2,0,1688145538,,"find error.py"
-:MRU python.vim
-|2,0,1688145397,,"MRU python.vim"
 :MRU ftpl
 |2,0,1688145391,,"MRU ftpl"
 :lnext
@@ -562,8 +632,6 @@ $enumerate(\0)
 |2,0,1688016883,,"MRU ic"
 :MRU python
 |2,0,1688016791,,"MRU python"
-:MRU mru
-|2,0,1687970356,,"MRU mru"
 :MRU 7:sm.py
 |2,0,1687970354,,"MRU 7:sm.py"
 :MRU pdbrc
@@ -572,8 +640,6 @@ $enumerate(\0)
 |2,0,1687970342,,"MRU 2:reltools.py"
 :let l:a1 = map(copy(v:oldfiles), '{"oldfiles_index": v:key+1, "uniquetail": fnamemodify(v:val, ":t"), "tail": fnamemodify(v:val, ":t"), "text": v:val  }')
 |2,0,1687970170,,"let l:a1 = map(copy(v:oldfiles), '{\"oldfiles_index\": v:key+1, \"uniquetail\": fnamemodify(v:val, \":t\"), \"tail\": fnamemodify(v:val, \":t\"), \"text\": v:val  }')"
-:echo g:existing_oldfiles
-|2,0,1687970154,,"echo g:existing_oldfiles"
 :echo v:oldfiles
 |2,0,1687970142,,"echo v:oldfiles"
 :echo len(g:existing_oldfiles)
@@ -1243,8 +1309,6 @@ $enumerate(\0)
 |2,0,1684833360,,"MRU dock"
 :b ubu
 |2,0,1684833355,,"b ubu"
-:MRU pytho
-|2,0,1684798050,,"MRU pytho"
 :MRU Butt
 |2,0,1684494954,,"MRU Butt"
 :b python-dockerfile
@@ -4633,8 +4697,6 @@ $enumerate(\0)
 |2,0,1664626324,,"map M"
 :M 
 |2,0,1664626319,,"M "
-:MRU
-|2,0,1664626203,,"MRU"
 :MRU main.p
 |2,0,1664492689,,"MRU main.p"
 :b char
@@ -17621,6 +17683,14 @@ $enumerate(\0)
 |2,0,1624224290,,"wviminfo"
 
 # Search String History (newest to oldest):
+?/oldtails
+|2,1,1688310429,47,"oldtails"
+?/cop(
+|2,1,1688310425,47,"cop("
+?/pass
+|2,1,1688310366,47,"pass"
+?/^\s*function!\?\s\+\(s:\)\?\(\w\+#\)\?\w*Old
+|2,1,1688308693,47,"^\\s*function!\\?\\s\\+\\(s:\\)\\?\\(\\w\\+#\\)\\?\\w*Old"
 ?/list
 |2,1,1688277677,47,"list"
 ?/dict
@@ -17859,8 +17929,6 @@ $enumerate(\0)
 |2,1,1687869846,47,"cal \\(filter\\|map\\)"
 ?/call
 |2,1,1687869836,47,"call"
-?/^\s*function!\?\s\+\(s:\)\?\(\w\+#\)\?\w*Old
-|2,1,1687869818,47,"^\\s*function!\\?\\s\\+\\(s:\\)\\?\\(\\w\\+#\\)\\?\\w*Old"
 ?/^#
 |2,1,1687869746,47,"^#"
 ?/History of marks
@@ -30588,39 +30656,43 @@ $enumerate(\0)
 |2,4,1578747110,,"echo \"HELLO\""
 
 # Registers:
-"1	LINE	0
-	
-|3,0,1,1,1,0,1688277072,""
+"1	BLOCK	3
+	 68 
+	 69 
+	 70 
+	 71 
+	 72 
+|3,0,1,2,5,3,1688308715," 68 "," 69 "," 70 "," 71 "," 72 "
 "2	LINE	0
-	    total_length_ne_terminal_length = total_length != terminal_length:
-|3,0,2,1,1,0,1688276803,"    total_length_ne_terminal_length = total_length != terminal_length:"
+	RUN git clone https://github.com/waivek/python_common
+|3,0,2,1,1,0,1688300427,"RUN git clone https://github.com/waivek/python_common"
 "3	LINE	0
-	    ic(
-|3,0,3,1,1,0,1688276652,"    ic("
+	
+|3,0,3,1,1,0,1688277072,""
 "4	LINE	0
+	    total_length_ne_terminal_length = total_length != terminal_length:
+|3,0,4,1,1,0,1688276803,"    total_length_ne_terminal_length = total_length != terminal_length:"
+"5	LINE	0
+	    ic(
+|3,0,5,1,1,0,1688276652,"    ic("
+"6	LINE	0
 	        if final_lengths[i] == initial_lengths[i]:
 	            continue
-|3,0,4,1,2,0,1688276578,"        if final_lengths[i] == initial_lengths[i]:","            continue"
-"5	LINE	0
+|3,0,6,1,2,0,1688276578,"        if final_lengths[i] == initial_lengths[i]:","            continue"
+"7	LINE	0
 	        total_length += length
-|3,0,5,1,1,0,1688276531,"        total_length += length"
-"6	LINE	0
+|3,0,7,1,1,0,1688276531,"        total_length += length"
+"8	LINE	0
 	    for i in range(total_length):
 	        final_lengths[i % len(final_lengths)] += 1
 	    return final_lengths
-|3,0,6,1,3,0,1688276493,"    for i in range(total_length):","        final_lengths[i % len(final_lengths)] += 1","    return final_lengths"
-"7	LINE	0
-	        print()
-|3,0,7,1,1,0,1688274181,"        print()"
-"8	LINE	0
-	        print(f"{ = }")
-|3,0,8,1,1,0,1688273985,"        print(f\"{ = }\")"
+|3,0,8,1,3,0,1688276493,"    for i in range(total_length):","        final_lengths[i % len(final_lengths)] += 1","    return final_lengths"
 "9	LINE	0
-	        print(f"{}")
-|3,0,9,1,1,0,1688273934,"        print(f\"{}\")"
+	        print()
+|3,0,9,1,1,0,1688274181,"        print()"
 "a	CHAR	0
 	0nf(vi)y>>O€kbwith oep€kb€kbpen(jkpa, "rb") as f:jknvafcf.read().decode("utf-8")jk
-|3,0,10,0,1,0,1688243427,"0nf(vi)y>>O€kbwith oep€kb€kbpen(jkpa, \"rb\") as f:jknvafcf.read().decode(\"utf-8\")jk"
+|3,0,10,0,1,0,1688310584,"0nf(vi)y>>O€kbwith oep€kb€kbpen(jkpa, \"rb\") as f:jknvafcf.read().decode(\"utf-8\")jk"
 "b	LINE	0
 	        cursor, connection = log_db()
 |3,0,11,1,1,0,1657748821,"        cursor, connection = log_db()"
@@ -30706,9 +30778,9 @@ $enumerate(\0)
 	id="tna-auto-sub-cta"
 	id="tna-auto-twitter-cta"
 |3,0,33,1,6,0,1602258057,"id=\"audio-tooltip\"","id=\"jump-to-top\"","id=\"navbar-main\"","id=\"sticky-header\"","id=\"tna-auto-sub-cta\"","id=\"tna-auto-twitter-cta\""
-"-	CHAR	0
-	distribute(
-|3,0,36,0,1,0,1688277007,"distribute("
+""-	CHAR	0
+	copy(tails)
+|3,1,36,0,1,0,1688310584,"copy(tails)"
 
 # File marks:
 'A  217  28  ~\vimfiles\pack\plugins\start\sideways.vim\autoload\sideways\parsing.vim
@@ -30723,235 +30795,441 @@ $enumerate(\0)
 |4,75,10,0,1664397883,"~\\Desktop\\Twitch\\coffee-vps\\flask-vue\\vuejs\\Chart.vue"
 'M  1564  44  C:\Program Files (x86)\Vim\vim82\doc\quickfix.txt
 |4,77,1564,44,1582635887,"C:\\Program Files (x86)\\Vim\\vim82\\doc\\quickfix.txt"
-'0  83  0  ~\Python\v01\test_ic.py
-|4,48,83,0,1688278593,"~\\Python\\v01\\test_ic.py"
-'1  41  10  ~\Python\v01\test_ic.py
-|4,49,41,10,1688243874,"~\\Python\\v01\\test_ic.py"
-'2  35  10  ~\Python\v01\test_ic.py
-|4,50,35,10,1688243874,"~\\Python\\v01\\test_ic.py"
-'3  32  14  ~\Python\v01\test_ic.py
-|4,51,32,14,1688243053,"~\\Python\\v01\\test_ic.py"
-'4  28  14  ~\Python\v01\test_ic.py
-|4,52,28,14,1688243053,"~\\Python\\v01\\test_ic.py"
-'5  25  14  ~\Python\v01\test_ic.py
-|4,53,25,14,1688243053,"~\\Python\\v01\\test_ic.py"
-'6  21  14  ~\Python\v01\test_ic.py
-|4,54,21,14,1688243053,"~\\Python\\v01\\test_ic.py"
-'7  1  24  ~\Desktop\ripgrep_manual\python_refactoring_waivek\ripgrep_helper.py
-|4,55,1,24,1688231200,"~\\Desktop\\ripgrep_manual\\python_refactoring_waivek\\ripgrep_helper.py"
-'8  1  24  ~\Desktop\ripgrep_manual\python_refactoring_waivek\ripgrep_helper.py
-|4,56,1,24,1688231200,"~\\Desktop\\ripgrep_manual\\python_refactoring_waivek\\ripgrep_helper.py"
-'9  1  24  ~\Desktop\ripgrep_manual\python_refactoring_waivek\ripgrep_helper.py
-|4,57,1,24,1688231200,"~\\Desktop\\ripgrep_manual\\python_refactoring_waivek\\ripgrep_helper.py"
+'0  372  29  ~\vimfiles\ftplugin\python.vim
+|4,48,372,29,1688310698,"~\\vimfiles\\ftplugin\\python.vim"
+'1  372  29  ~\vimfiles\ftplugin\python.vim
+|4,49,372,29,1688310698,"~\\vimfiles\\ftplugin\\python.vim"
+'2  372  29  ~\vimfiles\ftplugin\python.vim
+|4,50,372,29,1688310698,"~\\vimfiles\\ftplugin\\python.vim"
+'3  372  29  ~\vimfiles\ftplugin\python.vim
+|4,51,372,29,1688310698,"~\\vimfiles\\ftplugin\\python.vim"
+'4  372  29  ~\vimfiles\ftplugin\python.vim
+|4,52,372,29,1688310698,"~\\vimfiles\\ftplugin\\python.vim"
+'5  372  29  ~\vimfiles\ftplugin\python.vim
+|4,53,372,29,1688310698,"~\\vimfiles\\ftplugin\\python.vim"
+'6  372  29  ~\vimfiles\ftplugin\python.vim
+|4,54,372,29,1688310698,"~\\vimfiles\\ftplugin\\python.vim"
+'7  372  29  ~\vimfiles\ftplugin\python.vim
+|4,55,372,29,1688310698,"~\\vimfiles\\ftplugin\\python.vim"
+'8  372  29  ~\vimfiles\ftplugin\python.vim
+|4,56,372,29,1688310698,"~\\vimfiles\\ftplugin\\python.vim"
+'9  372  29  ~\vimfiles\ftplugin\python.vim
+|4,57,372,29,1688310698,"~\\vimfiles\\ftplugin\\python.vim"
 
 # Jumplist (newest first):
--'  83  0  ~\Python\v01\test_ic.py
-|4,39,83,0,1688278593,"~\\Python\\v01\\test_ic.py"
--'  42  4  ~\Python\waivek\waivek\db.py
-|4,39,42,4,1688277696,"~\\Python\\waivek\\waivek\\db.py"
--'  85  4  ~\Python\v01\test_ic.py
-|4,39,85,4,1688277696,"~\\Python\\v01\\test_ic.py"
--'  25  18  ~\Python\waivek\waivek\db.py
-|4,39,25,18,1688277678,"~\\Python\\waivek\\waivek\\db.py"
--'  24  9  ~\Python\waivek\waivek\db.py
-|4,39,24,9,1688277678,"~\\Python\\waivek\\waivek\\db.py"
--'  1  0  ~\Python\waivek\waivek\db.py
-|4,39,1,0,1688277677,"~\\Python\\waivek\\waivek\\db.py"
--'  62  10  ~\Python\waivek\waivek\db.py
-|4,39,62,10,1688277677,"~\\Python\\waivek\\waivek\\db.py"
--'  65  12  ~\Python\waivek\waivek\db.py
-|4,39,65,12,1688277675,"~\\Python\\waivek\\waivek\\db.py"
--'  68  22  ~\Python\waivek\waivek\db.py
-|4,39,68,22,1688277675,"~\\Python\\waivek\\waivek\\db.py"
--'  69  36  ~\Python\waivek\waivek\db.py
-|4,39,69,36,1688277670,"~\\Python\\waivek\\waivek\\db.py"
--'  442  6  ~\Python\waivek\waivek\db.py
-|4,39,442,6,1688277667,"~\\Python\\waivek\\waivek\\db.py"
--'  160  191  ~\Python\waivek\waivek\db.py
-|4,39,160,191,1688277665,"~\\Python\\waivek\\waivek\\db.py"
--'  131  40  ~\Python\waivek\waivek\db.py
-|4,39,131,40,1688277663,"~\\Python\\waivek\\waivek\\db.py"
--'  125  5  ~\Python\waivek\waivek\db.py
-|4,39,125,5,1688277663,"~\\Python\\waivek\\waivek\\db.py"
--'  119  12  ~\Python\waivek\waivek\db.py
-|4,39,119,12,1688277663,"~\\Python\\waivek\\waivek\\db.py"
--'  113  138  ~\Python\waivek\waivek\db.py
-|4,39,113,138,1688277656,"~\\Python\\waivek\\waivek\\db.py"
--'  112  138  ~\Python\waivek\waivek\db.py
-|4,39,112,138,1688277656,"~\\Python\\waivek\\waivek\\db.py"
--'  108  66  ~\Python\waivek\waivek\db.py
-|4,39,108,66,1688277655,"~\\Python\\waivek\\waivek\\db.py"
--'  103  4  ~\Python\waivek\waivek\db.py
-|4,39,103,4,1688277654,"~\\Python\\waivek\\waivek\\db.py"
--'  79  18  ~\Python\waivek\waivek\db.py
-|4,39,79,18,1688277650,"~\\Python\\waivek\\waivek\\db.py"
--'  57  15  ~\Python\waivek\waivek\db.py
-|4,39,57,15,1688277650,"~\\Python\\waivek\\waivek\\db.py"
--'  56  68  ~\Python\waivek\waivek\db.py
-|4,39,56,68,1688277648,"~\\Python\\waivek\\waivek\\db.py"
--'  54  12  ~\Python\waivek\waivek\db.py
-|4,39,54,12,1688277647,"~\\Python\\waivek\\waivek\\db.py"
--'  43  32  ~\Python\waivek\waivek\db.py
-|4,39,43,32,1688277645,"~\\Python\\waivek\\waivek\\db.py"
--'  39  0  ~\Python\waivek\waivek\db.py
-|4,39,39,0,1688277635,"~\\Python\\waivek\\waivek\\db.py"
--'  81  10  ~\Python\v01\test_ic.py
-|4,39,81,10,1688277477,"~\\Python\\v01\\test_ic.py"
--'  93  0  ~\Python\v01\test_ic.py
-|4,39,93,0,1688277461,"~\\Python\\v01\\test_ic.py"
--'  447  0  ~\Python\waivek\waivek\ic.py
-|4,39,447,0,1688277457,"~\\Python\\waivek\\waivek\\ic.py"
--'  1  0  ~\Python\waivek\waivek\ic.py
-|4,39,1,0,1688277428,"~\\Python\\waivek\\waivek\\ic.py"
--'  869  42  ~\Python\waivek\waivek\ic.py
-|4,39,869,42,1688277285,"~\\Python\\waivek\\waivek\\ic.py"
--'  91  4  ~\Python\v01\test_ic.py
-|4,39,91,4,1688277205,"~\\Python\\v01\\test_ic.py"
--'  49  0  ~\Python\v01\test_ic.py
-|4,39,49,0,1688277202,"~\\Python\\v01\\test_ic.py"
--'  64  24  ~\Python\v01\test_ic.py
-|4,39,64,24,1688277049,"~\\Python\\v01\\test_ic.py"
--'  70  4  ~\Python\v01\test_ic.py
-|4,39,70,4,1688276894,"~\\Python\\v01\\test_ic.py"
--'  54  8  ~\Python\v01\test_ic.py
-|4,39,54,8,1688276836,"~\\Python\\v01\\test_ic.py"
--'  53  67  ~\Python\v01\test_ic.py
-|4,39,53,67,1688276791,"~\\Python\\v01\\test_ic.py"
--'  69  31  ~\Python\v01\test_ic.py
-|4,39,69,31,1688276752,"~\\Python\\v01\\test_ic.py"
--'  57  24  ~\Python\v01\test_ic.py
-|4,39,57,24,1688276712,"~\\Python\\v01\\test_ic.py"
--'  90  10  ~\Python\v01\test_ic.py
-|4,39,90,10,1688276669,"~\\Python\\v01\\test_ic.py"
--'  73  4  ~\Python\v01\test_ic.py
-|4,39,73,4,1688276656,"~\\Python\\v01\\test_ic.py"
--'  71  4  ~\Python\v01\test_ic.py
-|4,39,71,4,1688276646,"~\\Python\\v01\\test_ic.py"
--'  68  4  ~\Python\v01\test_ic.py
-|4,39,68,4,1688276645,"~\\Python\\v01\\test_ic.py"
--'  67  20  ~\Python\v01\test_ic.py
-|4,39,67,20,1688276644,"~\\Python\\v01\\test_ic.py"
--'  76  2  ~\Python\v01\test_ic.py
-|4,39,76,2,1688276632,"~\\Python\\v01\\test_ic.py"
--'  60  46  ~\Python\v01\test_ic.py
-|4,39,60,46,1688276549,"~\\Python\\v01\\test_ic.py"
--'  77  0  ~\Python\v01\test_ic.py
-|4,39,77,0,1688276532,"~\\Python\\v01\\test_ic.py"
--'  35  10  ~\Python\v01\test_ic.py
-|4,39,35,10,1688243874,"~\\Python\\v01\\test_ic.py"
--'  39  24  ~\Python\v01\test_ic.py
-|4,39,39,24,1688243796,"~\\Python\\v01\\test_ic.py"
--'  58  4  ~\Python\waivek\waivek\reltools.py
-|4,39,58,4,1688243793,"~\\Python\\waivek\\waivek\\reltools.py"
--'  1  0  ~\Python\waivek\waivek\reltools.py
-|4,39,1,0,1688243696,"~\\Python\\waivek\\waivek\\reltools.py"
--'  38  4  ~\Python\v01\test_ic.py
-|4,39,38,4,1688243580,"~\\Python\\v01\\test_ic.py"
--'  56  0  ~\Python\waivek\waivek\reltools.py
-|4,39,56,0,1688243556,"~\\Python\\waivek\\waivek\\reltools.py"
--'  6  25  ~\Python\v01\test_ic.py
-|4,39,6,25,1688243502,"~\\Python\\v01\\test_ic.py"
--'  28  39  ~\Python\v01\test_ic.py
-|4,39,28,39,1688243427,"~\\Python\\v01\\test_ic.py"
--'  41  7  ~\Python\v01\test_ic.py
-|4,39,41,7,1688243285,"~\\Python\\v01\\test_ic.py"
--'  25  62  ~\Python\v01\test_ic.py
-|4,39,25,62,1688243072,"~\\Python\\v01\\test_ic.py"
--'  21  14  ~\Python\v01\test_ic.py
-|4,39,21,14,1688243053,"~\\Python\\v01\\test_ic.py"
--'  11  4  ~\Python\v01\test_ic.py
-|4,39,11,4,1688242978,"~\\Python\\v01\\test_ic.py"
--'  9  4  ~\Python\v01\test_ic.py
-|4,39,9,4,1688242978,"~\\Python\\v01\\test_ic.py"
--'  12  0  ~\Python\v01\test_ic.py
-|4,39,12,0,1688242925,"~\\Python\\v01\\test_ic.py"
--'  10  0  ~\Python\v01\test_ic.py
-|4,39,10,0,1688242925,"~\\Python\\v01\\test_ic.py"
--'  1  0  ~\Python\v01\test_ic.py
-|4,39,1,0,1688242903,"~\\Python\\v01\\test_ic.py"
--'  1  0  ~\Python\v01\test_ic.py
-|4,39,1,0,1688242903,"~\\Python\\v01\\test_ic.py"
--'  44  0  ~\Python\v01\test_ic.py
-|4,39,44,0,1688242811,"~\\Python\\v01\\test_ic.py"
--'  26  0  ~\Python\v01\test_ic.py
-|4,39,26,0,1688242811,"~\\Python\\v01\\test_ic.py"
--'  77  61  ~\vimfiles\plugged\tcomment_vim\plugin\tcomment.vim
-|4,39,77,61,1688242760,"~\\vimfiles\\plugged\\tcomment_vim\\plugin\\tcomment.vim"
--'  77  61  ~\vimfiles\plugged\tcomment_vim\plugin\tcomment.vim
-|4,39,77,61,1688242760,"~\\vimfiles\\plugged\\tcomment_vim\\plugin\\tcomment.vim"
--'  47  81  ~\Python\v01\test_ic.py
-|4,39,47,81,1688242557,"~\\Python\\v01\\test_ic.py"
--'  29  81  ~\Python\v01\test_ic.py
-|4,39,29,81,1688242557,"~\\Python\\v01\\test_ic.py"
--'  1  0  ~\Python\v01\v1.py
-|4,39,1,0,1688242553,"~\\Python\\v01\\v1.py"
--'  1  0  ~\Python\v01\v1.py
-|4,39,1,0,1688242553,"~\\Python\\v01\\v1.py"
--'  212  0  ~\Python\waivek\waivek\ic.py
-|4,39,212,0,1688242550,"~\\Python\\waivek\\waivek\\ic.py"
--'  212  0  ~\Python\waivek\waivek\ic.py
-|4,39,212,0,1688242550,"~\\Python\\waivek\\waivek\\ic.py"
--'  1  0  ~\Documents\zuckmemes_authors.txt
-|4,39,1,0,1688242544,"~\\Documents\\zuckmemes_authors.txt"
--'  1  0  ~\Documents\zuckmemes_authors.txt
-|4,39,1,0,1688242544,"~\\Documents\\zuckmemes_authors.txt"
--'  385  9  ~\Python\waivek\waivek\ic.py
-|4,39,385,9,1688231233,"~\\Python\\waivek\\waivek\\ic.py"
--'  385  9  ~\Python\waivek\waivek\ic.py
-|4,39,385,9,1688231233,"~\\Python\\waivek\\waivek\\ic.py"
--'  1  0  ~\Python\waivek\waivek\ic.py
-|4,39,1,0,1688231231,"~\\Python\\waivek\\waivek\\ic.py"
--'  1  0  ~\Python\waivek\waivek\ic.py
-|4,39,1,0,1688231231,"~\\Python\\waivek\\waivek\\ic.py"
--'  783  0  ~\Python\waivek\waivek\ic.py
-|4,39,783,0,1688231229,"~\\Python\\waivek\\waivek\\ic.py"
--'  783  0  ~\Python\waivek\waivek\ic.py
-|4,39,783,0,1688231229,"~\\Python\\waivek\\waivek\\ic.py"
--'  1  24  ~\Desktop\ripgrep_manual\python_refactoring_waivek\ripgrep_helper.py
-|4,39,1,24,1688231200,"~\\Desktop\\ripgrep_manual\\python_refactoring_waivek\\ripgrep_helper.py"
--'  1  24  ~\Desktop\ripgrep_manual\python_refactoring_waivek\ripgrep_helper.py
-|4,39,1,24,1688231200,"~\\Desktop\\ripgrep_manual\\python_refactoring_waivek\\ripgrep_helper.py"
--'  1  24  ~\Desktop\ripgrep_manual\python_refactoring_waivek\ripgrep_helper.py
-|4,39,1,24,1688231200,"~\\Desktop\\ripgrep_manual\\python_refactoring_waivek\\ripgrep_helper.py"
--'  182  0  ~\Desktop\ripgrep_manual\python_refactoring_waivek\ripgrep_helper.py
-|4,39,182,0,1688196503,"~\\Desktop\\ripgrep_manual\\python_refactoring_waivek\\ripgrep_helper.py"
--'  182  0  ~\Desktop\ripgrep_manual\python_refactoring_waivek\ripgrep_helper.py
-|4,39,182,0,1688196503,"~\\Desktop\\ripgrep_manual\\python_refactoring_waivek\\ripgrep_helper.py"
--'  182  0  ~\Desktop\ripgrep_manual\python_refactoring_waivek\ripgrep_helper.py
-|4,39,182,0,1688196503,"~\\Desktop\\ripgrep_manual\\python_refactoring_waivek\\ripgrep_helper.py"
--'  13  0  ~\Documents\samples\letterboxd_ten.py
-|4,39,13,0,1688196502,"~\\Documents\\samples\\letterboxd_ten.py"
--'  13  0  ~\Documents\samples\letterboxd_ten.py
-|4,39,13,0,1688196502,"~\\Documents\\samples\\letterboxd_ten.py"
--'  13  0  ~\Documents\samples\letterboxd_ten.py
-|4,39,13,0,1688196502,"~\\Documents\\samples\\letterboxd_ten.py"
--'  2  0  ~\Documents\samples\letterboxd_ten.py
-|4,39,2,0,1688196401,"~\\Documents\\samples\\letterboxd_ten.py"
--'  2  0  ~\Documents\samples\letterboxd_ten.py
-|4,39,2,0,1688196401,"~\\Documents\\samples\\letterboxd_ten.py"
--'  2  0  ~\Documents\samples\letterboxd_ten.py
-|4,39,2,0,1688196401,"~\\Documents\\samples\\letterboxd_ten.py"
--'  3  20  ~\Desktop\Twitch\coffee-vps\code\auth.py
-|4,39,3,20,1688196399,"~\\Desktop\\Twitch\\coffee-vps\\code\\auth.py"
--'  3  20  ~\Desktop\Twitch\coffee-vps\code\auth.py
-|4,39,3,20,1688196399,"~\\Desktop\\Twitch\\coffee-vps\\code\\auth.py"
--'  3  20  ~\Desktop\Twitch\coffee-vps\code\auth.py
-|4,39,3,20,1688196399,"~\\Desktop\\Twitch\\coffee-vps\\code\\auth.py"
--'  2  0  ~\Desktop\Twitch\coffee-vps\code\auth.py
-|4,39,2,0,1688196394,"~\\Desktop\\Twitch\\coffee-vps\\code\\auth.py"
--'  2  0  ~\Desktop\Twitch\coffee-vps\code\auth.py
-|4,39,2,0,1688196394,"~\\Desktop\\Twitch\\coffee-vps\\code\\auth.py"
--'  2  0  ~\Desktop\Twitch\coffee-vps\code\auth.py
-|4,39,2,0,1688196394,"~\\Desktop\\Twitch\\coffee-vps\\code\\auth.py"
--'  2  0  ~\Desktop\youtube_dl\html_files\normalize_html.py
-|4,39,2,0,1688196383,"~\\Desktop\\youtube_dl\\html_files\\normalize_html.py"
+-'  372  29  ~\vimfiles\ftplugin\python.vim
+|4,39,372,29,1688310698,"~\\vimfiles\\ftplugin\\python.vim"
+-'  372  29  ~\vimfiles\ftplugin\python.vim
+|4,39,372,29,1688310698,"~\\vimfiles\\ftplugin\\python.vim"
+-'  372  29  ~\vimfiles\ftplugin\python.vim
+|4,39,372,29,1688310698,"~\\vimfiles\\ftplugin\\python.vim"
+-'  372  29  ~\vimfiles\ftplugin\python.vim
+|4,39,372,29,1688310698,"~\\vimfiles\\ftplugin\\python.vim"
+-'  372  29  ~\vimfiles\ftplugin\python.vim
+|4,39,372,29,1688310698,"~\\vimfiles\\ftplugin\\python.vim"
+-'  372  29  ~\vimfiles\ftplugin\python.vim
+|4,39,372,29,1688310698,"~\\vimfiles\\ftplugin\\python.vim"
+-'  372  29  ~\vimfiles\ftplugin\python.vim
+|4,39,372,29,1688310698,"~\\vimfiles\\ftplugin\\python.vim"
+-'  1  0  ~\Desktop\Twitch\coffee-vps\html\js\twitch_clips_embed.js
+|4,39,1,0,1688310538,"~\\Desktop\\Twitch\\coffee-vps\\html\\js\\twitch_clips_embed.js"
+-'  1  0  ~\Desktop\Twitch\coffee-vps\html\js\twitch_clips_embed.js
+|4,39,1,0,1688310538,"~\\Desktop\\Twitch\\coffee-vps\\html\\js\\twitch_clips_embed.js"
+-'  1  0  ~\Desktop\Twitch\coffee-vps\html\js\twitch_clips_embed.js
+|4,39,1,0,1688310538,"~\\Desktop\\Twitch\\coffee-vps\\html\\js\\twitch_clips_embed.js"
+-'  1  0  ~\Desktop\Twitch\coffee-vps\html\js\twitch_clips_embed.js
+|4,39,1,0,1688310538,"~\\Desktop\\Twitch\\coffee-vps\\html\\js\\twitch_clips_embed.js"
+-'  1  0  ~\Desktop\Twitch\coffee-vps\html\js\twitch_clips_embed.js
+|4,39,1,0,1688310538,"~\\Desktop\\Twitch\\coffee-vps\\html\\js\\twitch_clips_embed.js"
+-'  1  0  ~\Desktop\Twitch\coffee-vps\html\js\twitch_clips_embed.js
+|4,39,1,0,1688310538,"~\\Desktop\\Twitch\\coffee-vps\\html\\js\\twitch_clips_embed.js"
+-'  1  0  ~\Desktop\Twitch\coffee-vps\html\js\twitch_clips_embed.js
+|4,39,1,0,1688310538,"~\\Desktop\\Twitch\\coffee-vps\\html\\js\\twitch_clips_embed.js"
+-'  394  57  ~\vimfiles\ftplugin\python.vim
+|4,39,394,57,1688310367,"~\\vimfiles\\ftplugin\\python.vim"
+-'  394  57  ~\vimfiles\ftplugin\python.vim
+|4,39,394,57,1688310367,"~\\vimfiles\\ftplugin\\python.vim"
+-'  394  57  ~\vimfiles\ftplugin\python.vim
+|4,39,394,57,1688310367,"~\\vimfiles\\ftplugin\\python.vim"
+-'  394  57  ~\vimfiles\ftplugin\python.vim
+|4,39,394,57,1688310367,"~\\vimfiles\\ftplugin\\python.vim"
+-'  394  57  ~\vimfiles\ftplugin\python.vim
+|4,39,394,57,1688310367,"~\\vimfiles\\ftplugin\\python.vim"
+-'  394  57  ~\vimfiles\ftplugin\python.vim
+|4,39,394,57,1688310367,"~\\vimfiles\\ftplugin\\python.vim"
+-'  394  57  ~\vimfiles\ftplugin\python.vim
+|4,39,394,57,1688310367,"~\\vimfiles\\ftplugin\\python.vim"
+-'  392  4  ~\vimfiles\ftplugin\python.vim
+|4,39,392,4,1688310366,"~\\vimfiles\\ftplugin\\python.vim"
+-'  392  4  ~\vimfiles\ftplugin\python.vim
+|4,39,392,4,1688310366,"~\\vimfiles\\ftplugin\\python.vim"
+-'  392  4  ~\vimfiles\ftplugin\python.vim
+|4,39,392,4,1688310366,"~\\vimfiles\\ftplugin\\python.vim"
+-'  392  4  ~\vimfiles\ftplugin\python.vim
+|4,39,392,4,1688310366,"~\\vimfiles\\ftplugin\\python.vim"
+-'  392  4  ~\vimfiles\ftplugin\python.vim
+|4,39,392,4,1688310366,"~\\vimfiles\\ftplugin\\python.vim"
+-'  392  4  ~\vimfiles\ftplugin\python.vim
+|4,39,392,4,1688310366,"~\\vimfiles\\ftplugin\\python.vim"
+-'  392  4  ~\vimfiles\ftplugin\python.vim
+|4,39,392,4,1688310366,"~\\vimfiles\\ftplugin\\python.vim"
+-'  439  0  ~\vimfiles\ftplugin\python.vim
+|4,39,439,0,1688310353,"~\\vimfiles\\ftplugin\\python.vim"
+-'  439  0  ~\vimfiles\ftplugin\python.vim
+|4,39,439,0,1688310353,"~\\vimfiles\\ftplugin\\python.vim"
+-'  439  0  ~\vimfiles\ftplugin\python.vim
+|4,39,439,0,1688310353,"~\\vimfiles\\ftplugin\\python.vim"
+-'  439  0  ~\vimfiles\ftplugin\python.vim
+|4,39,439,0,1688310353,"~\\vimfiles\\ftplugin\\python.vim"
+-'  439  0  ~\vimfiles\ftplugin\python.vim
+|4,39,439,0,1688310353,"~\\vimfiles\\ftplugin\\python.vim"
+-'  439  0  ~\vimfiles\ftplugin\python.vim
+|4,39,439,0,1688310353,"~\\vimfiles\\ftplugin\\python.vim"
+-'  439  0  ~\vimfiles\ftplugin\python.vim
+|4,39,439,0,1688310353,"~\\vimfiles\\ftplugin\\python.vim"
+-'  15  0  ~\vimfiles\ftplugin\python.vim
+|4,39,15,0,1688310347,"~\\vimfiles\\ftplugin\\python.vim"
+-'  15  0  ~\vimfiles\ftplugin\python.vim
+|4,39,15,0,1688310347,"~\\vimfiles\\ftplugin\\python.vim"
+-'  15  0  ~\vimfiles\ftplugin\python.vim
+|4,39,15,0,1688310347,"~\\vimfiles\\ftplugin\\python.vim"
+-'  15  0  ~\vimfiles\ftplugin\python.vim
+|4,39,15,0,1688310347,"~\\vimfiles\\ftplugin\\python.vim"
+-'  15  0  ~\vimfiles\ftplugin\python.vim
+|4,39,15,0,1688310347,"~\\vimfiles\\ftplugin\\python.vim"
+-'  15  0  ~\vimfiles\ftplugin\python.vim
+|4,39,15,0,1688310347,"~\\vimfiles\\ftplugin\\python.vim"
+-'  15  0  ~\vimfiles\ftplugin\python.vim
+|4,39,15,0,1688310347,"~\\vimfiles\\ftplugin\\python.vim"
+-'  1  0  ~\Desktop\ripgrep_manual\python_refactoring_waivek\.\everything_python_paths.txt
+|4,39,1,0,1688310342,"~\\Desktop\\ripgrep_manual\\python_refactoring_waivek\\.\\everything_python_paths.txt"
+-'  1  0  ~\Desktop\ripgrep_manual\python_refactoring_waivek\.\everything_python_paths.txt
+|4,39,1,0,1688310342,"~\\Desktop\\ripgrep_manual\\python_refactoring_waivek\\.\\everything_python_paths.txt"
+-'  1  0  ~\Desktop\ripgrep_manual\python_refactoring_waivek\.\everything_python_paths.txt
+|4,39,1,0,1688310342,"~\\Desktop\\ripgrep_manual\\python_refactoring_waivek\\.\\everything_python_paths.txt"
+-'  1  0  ~\Desktop\ripgrep_manual\python_refactoring_waivek\.\everything_python_paths.txt
+|4,39,1,0,1688310342,"~\\Desktop\\ripgrep_manual\\python_refactoring_waivek\\.\\everything_python_paths.txt"
+-'  1  0  ~\Desktop\ripgrep_manual\python_refactoring_waivek\.\everything_python_paths.txt
+|4,39,1,0,1688310342,"~\\Desktop\\ripgrep_manual\\python_refactoring_waivek\\.\\everything_python_paths.txt"
+-'  1  0  ~\Desktop\ripgrep_manual\python_refactoring_waivek\.\everything_python_paths.txt
+|4,39,1,0,1688310342,"~\\Desktop\\ripgrep_manual\\python_refactoring_waivek\\.\\everything_python_paths.txt"
+-'  1  0  ~\Desktop\ripgrep_manual\python_refactoring_waivek\.\everything_python_paths.txt
+|4,39,1,0,1688310342,"~\\Desktop\\ripgrep_manual\\python_refactoring_waivek\\.\\everything_python_paths.txt"
+-'  1  0  ~\vimfiles\ftplugin\python.vim
+|4,39,1,0,1688310249,"~\\vimfiles\\ftplugin\\python.vim"
+-'  1  0  ~\vimfiles\ftplugin\python.vim
+|4,39,1,0,1688310249,"~\\vimfiles\\ftplugin\\python.vim"
+-'  1  0  ~\vimfiles\ftplugin\python.vim
+|4,39,1,0,1688310249,"~\\vimfiles\\ftplugin\\python.vim"
+-'  1  0  ~\vimfiles\ftplugin\python.vim
+|4,39,1,0,1688310249,"~\\vimfiles\\ftplugin\\python.vim"
+-'  1  0  ~\vimfiles\ftplugin\python.vim
+|4,39,1,0,1688310249,"~\\vimfiles\\ftplugin\\python.vim"
+-'  1  0  ~\vimfiles\ftplugin\python.vim
+|4,39,1,0,1688310249,"~\\vimfiles\\ftplugin\\python.vim"
+-'  1  0  ~\vimfiles\ftplugin\python.vim
+|4,39,1,0,1688310249,"~\\vimfiles\\ftplugin\\python.vim"
+-'  1  0  ~\vimfiles\ftplugin\python.vim
+|4,39,1,0,1688310249,"~\\vimfiles\\ftplugin\\python.vim"
+-'  52  0  ~\vimfiles\plugin\mru.vim
+|4,39,52,0,1688309554,"~\\vimfiles\\plugin\\mru.vim"
+-'  52  0  ~\vimfiles\plugin\mru.vim
+|4,39,52,0,1688309554,"~\\vimfiles\\plugin\\mru.vim"
+-'  52  0  ~\vimfiles\plugin\mru.vim
+|4,39,52,0,1688309554,"~\\vimfiles\\plugin\\mru.vim"
+-'  52  0  ~\vimfiles\plugin\mru.vim
+|4,39,52,0,1688309554,"~\\vimfiles\\plugin\\mru.vim"
+-'  52  0  ~\vimfiles\plugin\mru.vim
+|4,39,52,0,1688309554,"~\\vimfiles\\plugin\\mru.vim"
+-'  52  0  ~\vimfiles\plugin\mru.vim
+|4,39,52,0,1688309554,"~\\vimfiles\\plugin\\mru.vim"
+-'  52  0  ~\vimfiles\plugin\mru.vim
+|4,39,52,0,1688309554,"~\\vimfiles\\plugin\\mru.vim"
+-'  52  0  ~\vimfiles\plugin\mru.vim
+|4,39,52,0,1688309554,"~\\vimfiles\\plugin\\mru.vim"
+-'  159  0  ~\vimfiles\plugin\mru.vim
+|4,39,159,0,1688308693,"~\\vimfiles\\plugin\\mru.vim"
+-'  159  0  ~\vimfiles\plugin\mru.vim
+|4,39,159,0,1688308693,"~\\vimfiles\\plugin\\mru.vim"
+-'  159  0  ~\vimfiles\plugin\mru.vim
+|4,39,159,0,1688308693,"~\\vimfiles\\plugin\\mru.vim"
+-'  159  0  ~\vimfiles\plugin\mru.vim
+|4,39,159,0,1688308693,"~\\vimfiles\\plugin\\mru.vim"
+-'  159  0  ~\vimfiles\plugin\mru.vim
+|4,39,159,0,1688308693,"~\\vimfiles\\plugin\\mru.vim"
+-'  159  0  ~\vimfiles\plugin\mru.vim
+|4,39,159,0,1688308693,"~\\vimfiles\\plugin\\mru.vim"
+-'  159  0  ~\vimfiles\plugin\mru.vim
+|4,39,159,0,1688308693,"~\\vimfiles\\plugin\\mru.vim"
+-'  159  0  ~\vimfiles\plugin\mru.vim
+|4,39,159,0,1688308693,"~\\vimfiles\\plugin\\mru.vim"
+-'  1  0  ~\vimfiles\plugin\mru.vim
+|4,39,1,0,1688308689,"~\\vimfiles\\plugin\\mru.vim"
+-'  1  0  ~\vimfiles\plugin\mru.vim
+|4,39,1,0,1688308689,"~\\vimfiles\\plugin\\mru.vim"
+-'  1  0  ~\vimfiles\plugin\mru.vim
+|4,39,1,0,1688308689,"~\\vimfiles\\plugin\\mru.vim"
+-'  1  0  ~\vimfiles\plugin\mru.vim
+|4,39,1,0,1688308689,"~\\vimfiles\\plugin\\mru.vim"
+-'  1  0  ~\vimfiles\plugin\mru.vim
+|4,39,1,0,1688308689,"~\\vimfiles\\plugin\\mru.vim"
+-'  1  0  ~\vimfiles\plugin\mru.vim
+|4,39,1,0,1688308689,"~\\vimfiles\\plugin\\mru.vim"
+-'  1  0  ~\vimfiles\plugin\mru.vim
+|4,39,1,0,1688308689,"~\\vimfiles\\plugin\\mru.vim"
+-'  1  0  ~\vimfiles\plugin\mru.vim
+|4,39,1,0,1688308689,"~\\vimfiles\\plugin\\mru.vim"
+-'  81  0  ~\Documents\AutoHotkey\main.ahk
+|4,39,81,0,1688303505,"~\\Documents\\AutoHotkey\\main.ahk"
+-'  81  0  ~\Documents\AutoHotkey\main.ahk
+|4,39,81,0,1688303505,"~\\Documents\\AutoHotkey\\main.ahk"
+-'  81  0  ~\Documents\AutoHotkey\main.ahk
+|4,39,81,0,1688303505,"~\\Documents\\AutoHotkey\\main.ahk"
+-'  81  0  ~\Documents\AutoHotkey\main.ahk
+|4,39,81,0,1688303505,"~\\Documents\\AutoHotkey\\main.ahk"
+-'  81  0  ~\Documents\AutoHotkey\main.ahk
+|4,39,81,0,1688303505,"~\\Documents\\AutoHotkey\\main.ahk"
+-'  81  0  ~\Documents\AutoHotkey\main.ahk
+|4,39,81,0,1688303505,"~\\Documents\\AutoHotkey\\main.ahk"
+-'  81  0  ~\Documents\AutoHotkey\main.ahk
+|4,39,81,0,1688303505,"~\\Documents\\AutoHotkey\\main.ahk"
+-'  81  0  ~\Documents\AutoHotkey\main.ahk
+|4,39,81,0,1688303505,"~\\Documents\\AutoHotkey\\main.ahk"
+-'  65  9  ~\Documents\AutoHotkey\main.ahk
+|4,39,65,9,1688302948,"~\\Documents\\AutoHotkey\\main.ahk"
+-'  65  9  ~\Documents\AutoHotkey\main.ahk
+|4,39,65,9,1688302948,"~\\Documents\\AutoHotkey\\main.ahk"
+-'  65  9  ~\Documents\AutoHotkey\main.ahk
+|4,39,65,9,1688302948,"~\\Documents\\AutoHotkey\\main.ahk"
+-'  65  9  ~\Documents\AutoHotkey\main.ahk
+|4,39,65,9,1688302948,"~\\Documents\\AutoHotkey\\main.ahk"
+-'  65  9  ~\Documents\AutoHotkey\main.ahk
+|4,39,65,9,1688302948,"~\\Documents\\AutoHotkey\\main.ahk"
+-'  65  9  ~\Documents\AutoHotkey\main.ahk
+|4,39,65,9,1688302948,"~\\Documents\\AutoHotkey\\main.ahk"
+-'  65  9  ~\Documents\AutoHotkey\main.ahk
+|4,39,65,9,1688302948,"~\\Documents\\AutoHotkey\\main.ahk"
+-'  65  9  ~\Documents\AutoHotkey\main.ahk
+|4,39,65,9,1688302948,"~\\Documents\\AutoHotkey\\main.ahk"
+-'  1  42  ~\Documents\AutoHotkey\main.ahk
+|4,39,1,42,1688302946,"~\\Documents\\AutoHotkey\\main.ahk"
+-'  1  42  ~\Documents\AutoHotkey\main.ahk
+|4,39,1,42,1688302946,"~\\Documents\\AutoHotkey\\main.ahk"
 
 # Buffer list:
-%~\Python\waivek\waivek\ic.py	447	0
-%~\Python\v01\test_ic.py	83	0
-%~\Python\waivek\waivek\db.py	42	4
+%~\Desktop\ripgrep_manual\python_refactoring_waivek\.\everything_python_paths.txt	1	0
+%~\vimfiles\plugin\mru.vim	303	10
+%~\Documents\AutoHotkey\main.ahk	81	0
+%~\vimfiles\ftplugin\python.vim	372	29
+%~\Desktop\Twitch\coffee-vps\html\js\twitch_clips_embed.js	1	0
 
 # History of marks within files (newest to oldest):
+
+> ~\vimfiles\ftplugin\python.vim
+	*	1688310696	0
+	"	372	29
+	^	427	33
+	.	427	32
+	+	3	0
+	+	2	27
+	+	2	0
+	+	2	51
+	+	401	0
+	+	2	0
+	+	2	25
+	+	2	0
+	+	2	5
+	+	2	27
+	+	2	0
+	+	2	30
+	+	2	20
+	+	2	9
+	+	2	27
+	+	5	0
+	+	2	0
+	+	5	0
+	+	2	40
+	+	2	16
+	+	2	0
+	+	2	22
+	+	2	18
+	+	2	4
+	+	2	0
+	+	2	5
+	+	2	4
+	+	2	0
+	+	2	21
+	+	2	9
+	+	2	19
+	+	2	8
+	+	2	4
+	+	2	0
+	+	2	8
+	+	2	24
+	+	2	41
+	+	2	0
+	+	2	37
+	+	2	0
+	+	2	31
+	+	2	18
+	+	2	0
+	+	2	20
+	+	2	31
+	+	2	0
+	+	2	32
+	+	2	34
+	+	2	10
+	+	2	37
+	+	2	20
+	+	2	0
+	+	2	7
+	+	2	37
+	+	2	0
+	+	2	33
+	+	2	28
+	+	2	0
+	+	2	95
+	+	2	74
+	+	2	10
+	+	2	0
+	+	2	46
+	+	2	33
+	+	2	0
+	+	435	0
+	+	440	0
+	+	2	62
+	+	2	36
+	+	2	0
+	+	2	46
+	+	2	0
+	+	429	0
+	+	429	18
+	+	429	0
+	+	427	32
+
+> ~\vimfiles\plugin\mru.vim
+	*	1688310692	0
+	"	303	10
+	^	315	38
+	.	315	27
+	+	177	94
+	+	34	0
+	+	35	19
+	+	40	0
+	+	37	30
+	+	36	26
+	+	41	0
+	+	38	0
+	+	33	44
+	+	21	17
+	+	33	0
+	+	140	25
+	+	141	4
+	+	140	33
+	+	141	34
+	+	142	45
+	+	141	23
+	+	138	0
+	+	138	16
+	+	138	61
+	+	142	0
+	+	138	0
+	+	109	32
+	+	54	0
+	+	109	0
+	+	109	34
+	+	109	55
+	+	56	40
+	+	56	0
+	+	55	34
+	+	61	15
+	+	62	21
+	+	62	8
+	+	85	27
+	+	55	34
+	+	61	17
+	+	62	5
+	+	85	0
+	+	86	0
+	+	93	29
+	+	88	14
+	+	93	0
+	+	88	95
+	+	93	0
+	+	91	58
+	+	92	0
+	+	91	40
+	+	88	31
+	+	109	37
+	+	66	0
+	+	65	0
+	+	66	42
+	+	80	0
+	+	79	0
+	+	83	5
+	+	83	0
+	+	78	0
+	+	83	0
+	+	80	11
+	+	81	9
+	+	80	8
+	+	81	64
+	+	81	78
+	+	83	22
+	+	91	76
+	+	109	0
+	+	109	9
+	+	109	46
+	+	84	39
+	+	81	14
+	+	84	13
+	+	84	12
+	+	81	0
+	+	83	0
+	+	84	19
+	+	81	0
+	+	82	23
+	+	81	59
+	+	80	148
+	+	81	0
+	+	83	0
+	+	84	0
+	+	100	0
+	+	158	0
+	+	117	0
+	+	100	0
+	+	88	0
+	+	87	2
+	+	109	30
+	+	123	52
+	+	130	48
+	+	109	32
+	+	109	0
+	+	106	0
+	+	107	56
+	+	121	0
+	+	158	0
+	+	159	0
+	+	68	0
+	+	315	27
+	a	328	49
+	b	328	49
+
+> ~\Desktop\Twitch\coffee-vps\html\js\twitch_clips_embed.js
+	*	1688310537	0
+	"	1	0
+	^	45	23
+	.	45	0
+	+	11	0
+	+	43	0
+	+	41	21
+	+	45	0
+
+> ~\Desktop\ripgrep_manual\python_refactoring_waivek\.\everything_python_paths.txt
+	*	1688310322	0
+	"	1	0
+	.	61	0
+	+	61	0
 
 > ~\Python\v01\test_ic.py
 	*	1688278551	0
@@ -31142,88 +31420,6 @@ $enumerate(\0)
 	+	447	0
 	+	477	12
 	+	479	27
-
-> ~\vimfiles\ftplugin\python.vim
-	*	1688273918	0
-	"	427	32
-	^	427	33
-	.	427	32
-	+	3	0
-	+	2	27
-	+	2	0
-	+	2	51
-	+	401	0
-	+	2	0
-	+	2	25
-	+	2	0
-	+	2	5
-	+	2	27
-	+	2	0
-	+	2	30
-	+	2	20
-	+	2	9
-	+	2	27
-	+	5	0
-	+	2	0
-	+	5	0
-	+	2	40
-	+	2	16
-	+	2	0
-	+	2	22
-	+	2	18
-	+	2	4
-	+	2	0
-	+	2	5
-	+	2	4
-	+	2	0
-	+	2	21
-	+	2	9
-	+	2	19
-	+	2	8
-	+	2	4
-	+	2	0
-	+	2	8
-	+	2	24
-	+	2	41
-	+	2	0
-	+	2	37
-	+	2	0
-	+	2	31
-	+	2	18
-	+	2	0
-	+	2	20
-	+	2	31
-	+	2	0
-	+	2	32
-	+	2	34
-	+	2	10
-	+	2	37
-	+	2	20
-	+	2	0
-	+	2	7
-	+	2	37
-	+	2	0
-	+	2	33
-	+	2	28
-	+	2	0
-	+	2	95
-	+	2	74
-	+	2	10
-	+	2	0
-	+	2	46
-	+	2	33
-	+	2	0
-	+	435	0
-	+	440	0
-	+	2	62
-	+	2	36
-	+	2	0
-	+	2	46
-	+	2	0
-	+	429	0
-	+	429	18
-	+	429	0
-	+	427	32
 
 > ~\vimfiles\plugged\vimspector\doc\vimspector.txt
 	*	1688273441	0
@@ -36044,12 +36240,6 @@ $enumerate(\0)
 	*	1688128388	0
 	"	78	8
 
-> ~\Desktop\ripgrep_manual\python_refactoring_waivek\.\everything_python_paths.txt
-	*	1688127532	0
-	"	1	0
-	.	61	0
-	+	61	0
-
 > ~\vimfiles\temp\220912.import_samples.py
 	*	1688127485	0
 	"	1	0
@@ -36601,112 +36791,6 @@ $enumerate(\0)
 	"	1	0
 	.	1	0
 	+	1	0
-
-> ~\vimfiles\plugin\mru.vim
-	*	1688016881	0
-	"	64	7
-	^	155	0
-	.	155	0
-	+	173	94
-	+	34	0
-	+	35	19
-	+	40	0
-	+	37	30
-	+	36	26
-	+	41	0
-	+	38	0
-	+	33	44
-	+	21	17
-	+	33	0
-	+	136	25
-	+	137	4
-	+	136	33
-	+	137	34
-	+	138	45
-	+	137	23
-	+	134	0
-	+	134	16
-	+	134	61
-	+	138	0
-	+	134	0
-	+	105	32
-	+	54	0
-	+	105	0
-	+	105	34
-	+	105	55
-	+	56	40
-	+	56	0
-	+	55	34
-	+	61	15
-	+	62	21
-	+	62	8
-	+	81	27
-	+	55	34
-	+	61	17
-	+	62	5
-	+	81	0
-	+	82	0
-	+	89	29
-	+	84	14
-	+	89	0
-	+	84	95
-	+	89	0
-	+	87	58
-	+	88	0
-	+	87	40
-	+	84	31
-	+	105	37
-	+	66	0
-	+	65	0
-	+	66	42
-	+	76	0
-	+	75	0
-	+	79	5
-	+	79	0
-	+	74	0
-	+	79	0
-	+	76	11
-	+	77	9
-	+	76	8
-	+	77	64
-	+	77	78
-	+	79	22
-	+	87	76
-	+	105	0
-	+	105	9
-	+	105	46
-	+	80	39
-	+	77	14
-	+	80	13
-	+	80	12
-	+	77	0
-	+	79	0
-	+	80	19
-	+	77	0
-	+	78	23
-	+	77	59
-	+	76	148
-	+	77	0
-	+	79	0
-	+	80	0
-	+	96	0
-	+	154	0
-	+	113	0
-	+	96	0
-	+	84	0
-	+	83	2
-	+	105	30
-	+	119	52
-	+	126	48
-	+	105	32
-	+	105	0
-	+	102	0
-	+	103	56
-	+	117	0
-	+	154	0
-	+	155	0
-	a	324	49
-	b	324	49
 
 > ~\.pdbrc
 	*	1687970354	0
@@ -48476,16 +48560,6 @@ $enumerate(\0)
 	+	2	0
 	+	7	0
 	+	2	51
-
-> ~\Desktop\Twitch\coffee-vps\html\js\twitch_clips_embed.js
-	*	1664406470	0
-	"	2	9
-	^	45	23
-	.	45	0
-	+	11	0
-	+	43	0
-	+	41	21
-	+	45	0
 
 > ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\var\log\nginx\error.log
 	*	1664399597	0
