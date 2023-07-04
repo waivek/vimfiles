@@ -1332,6 +1332,9 @@ if has('win32') || has('win64')
 else
     source ~/.vim/performance/performance.vim
 endif
+" Simulate Ctrl+Shift+V key combination
+set pastetoggle=<F9>
+
 
 
 

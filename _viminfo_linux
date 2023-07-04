@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/INTEGER
+~MSle0~/mrucom
 
 # Last Substitute Search Pattern:
 ~MSle0&\s*$
@@ -21,23 +21,117 @@ $
 
 # Command Line History (newest to oldest):
 :qa
-|2,0,1688457476,,"qa"
+|2,0,1688469340,,"qa"
+:Template
+|2,0,1688469330,,"Template"
+:MRU template.py
+|2,0,1688469290,,"MRU template.py"
+:e template.py
+|2,0,1688469286,,"e template.py"
+:e template.vue
+|2,0,1688469281,,"e template.vue"
+:Template vuehtml
+|2,0,1688469258,,"Template vuehtml"
+:Template 
+|2,0,1688469253,,"Template "
+:Jprevious
+|2,0,1688469219,,"Jprevious"
+:MRU mru
+|2,0,1688469201,,"MRU mru"
+:echo GetTemplateNames()
+|2,0,1688469163,,"echo GetTemplateNames()"
+:MRU h
+|2,0,1688469128,,"MRU h"
+:!ls
+|2,0,1688468942,,"!ls"
+:cd ~/.vim/templates/
+|2,0,1688468941,,"cd ~/.vim/templates/"
+:pwd
+|2,0,1688468932,,"pwd"
+:b ~/Twitch/coffee-vps/flask-vue/vuejs/actions.html
+|2,0,1688468716,,"b ~/Twitch/coffee-vps/flask-vue/vuejs/actions.html"
+:MRU 
+|2,0,1688468711,,"MRU "
+:MRU 44:Db.vue
+|2,0,1688468708,,"MRU 44:Db.vue"
+:call append(0, 'a')
+|2,0,1688468694,,"call append(0, 'a')"
+:b vue
+|2,0,1688468650,,"b vue"
+:MRU py
+|2,0,1688468641,,"MRU py"
+:so %
+|2,0,1688468561,,"so %"
+:h eval
+|2,0,1688468080,,"h eval"
+:e ~/.vim/templates/
+|2,0,1688467936,,"e ~/.vim/templates/"
+:Template vuehtml a
+|2,0,1688467856,,"Template vuehtml a"
+:Template v
+|2,0,1688467836,,"Template v"
+:so 
+|2,0,1688467815,,"so "
+:Template html
+|2,0,1688467793,,"Template html"
+:HotReload
+|2,0,1688467789,,"HotReload"
+:MRU te
+|2,0,1688467775,,"MRU te"
+:Copilot status
+|2,0,1688467769,,"Copilot status"
+:MRU template.vim
+|2,0,1688467731,,"MRU template.vim"
+:e vuehtml.html
+|2,0,1688467691,,"e vuehtml.html"
+:h 'pastetoggle'
+|2,0,1688467606,,"h 'pastetoggle'"
+:set pastetoggle?
+|2,0,1688467581,,"set pastetoggle?"
+:call ExecuteCtrlShiftV()
+|2,0,1688467451,,"call ExecuteCtrlShiftV()"
+:call 
+|2,0,1688467445,,"call "
+:set nopaste
+|2,0,1688467434,,"set nopaste"
+:set paste
+|2,0,1688467428,,"set paste"
+:normal! i\<Ctrl+v>
+|2,0,1688467382,,"normal! i\\<Ctrl+v>"
+:normal! i<Ctrl+v>
+|2,0,1688467377,,"normal! i<Ctrl+v>"
+:normal! <Ctrl+v>
+|2,0,1688467373,,"normal! <Ctrl+v>"
+:normal! I
+|2,0,1688467300,,"normal! I"
+:normal! I<style>
+|2,0,1688467284,,"normal! I<style>"
+:DockerPaste
+|2,0,1688467245,,"DockerPaste"
+:edit $MYVIMRC
+|2,0,1688467212,,"edit $MYVIMRC"
+:e
+|2,0,1688467189,,"e"
+:Ftplugin
+|2,0,1688467166,,"Ftplugin"
+:messages
+|2,0,1688467157,,"messages"
+:e ~/.vim/templates/template.vue
+|2,0,1688467155,,"e ~/.vim/templates/template.vue"
+:e actions.html
+|2,0,1688467127,,"e actions.html"
+:F
+|2,0,1688467111,,"F"
 :CocConfig
 |2,0,1688457445,,"CocConfig"
-:MRU 
-|2,0,1688457441,,"MRU "
 :CocInfo
 |2,0,1688457403,,"CocInfo"
 :e .sqllsrc.json
 |2,0,1688457386,,"e .sqllsrc.json"
-:e
-|2,0,1688457380,,"e"
 :MRU 5:.sqllsrc.json
 |2,0,1688457378,,"MRU 5:.sqllsrc.json"
 :e 
 |2,0,1688457375,,"e "
-:pwd
-|2,0,1688457373,,"pwd"
 :q
 |2,0,1688457259,,"q"
 :MRU sql
@@ -50,10 +144,6 @@ $
 |2,0,1688456873,,"b!# | bd! #"
 :enew
 |2,0,1688456852,,"enew"
-:set nopaste
-|2,0,1688456802,,"set nopaste"
-:set paste
-|2,0,1688456794,,"set paste"
 :e ~/.config/sql-language-server/.sqllsrc.json
 |2,0,1688456772,,"e ~/.config/sql-language-server/.sqllsrc.json"
 :CocInstall @sql-language-server
@@ -132,8 +222,6 @@ $
 |2,0,1688408842,,"cmd"
 :e twitch_utilities.py
 |2,0,1688408804,,"e twitch_utilities.py"
-:Jprevious
-|2,0,1688408553,,"Jprevious"
 :d
 |2,0,1688408262,,"d"
 :e data/c
@@ -150,8 +238,6 @@ $
 |2,0,1688407299,,"b cli"
 :e ~/.vim/plugin/template.vim
 |2,0,1688407193,,"e ~/.vim/plugin/template.vim"
-:Template
-|2,0,1688407181,,"Template"
 :e clips.py
 |2,0,1688407010,,"e clips.py"
 :e ../flask-vue/
@@ -178,12 +264,8 @@ $
 |2,0,1688406574,,"grep -g *.py \\\\.db"
 :grep -g *.py \.db
 |2,0,1688406562,,"grep -g *.py \\.db"
-:messages
-|2,0,1688406558,,"messages"
 :grep -g *.py 
 |2,0,1688406555,,"grep -g *.py "
-:Copilot status
-|2,0,1688406442,,"Copilot status"
 :b vuejs/backend.html
 |2,0,1688394062,,"b vuejs/backend.html"
 :e requirements.txt
@@ -224,8 +306,6 @@ $
 |2,0,1688390214,,"MRU 6:vuejs/db.html"
 :g/\~/
 |2,0,1688368453,,"g/\\~/"
-:so %
-|2,0,1688368429,,"so %"
 :s
 |2,0,1688368418,,"s"
 :!python
@@ -242,18 +322,12 @@ $
 |2,0,1688367970,,"e re"
 :MRU db.
 |2,0,1688311421,,"MRU db."
-:Ftplugin
-|2,0,1688311359,,"Ftplugin"
 :bd!
 |2,0,1688311357,,"bd!"
 :so k
 |2,0,1688311349,,"so k"
-:so 
-|2,0,1688311321,,"so "
 :828
 |2,0,1688311258,,"828"
-:edit $MYVIMRC
-|2,0,1688311256,,"edit $MYVIMRC"
 :verbose command Ftplugin
 |2,0,1688311254,,"verbose command Ftplugin"
 :e ~/.vim/plugin/better.vim
@@ -292,8 +366,6 @@ $
 |2,0,1688309690,,"echo g:existing_oldfiles"
 :MRU 1:item.txt
 |2,0,1688309482,,"MRU 1:item.txt"
-:MRU mru
-|2,0,1688309474,,"MRU mru"
 :qa!
 |2,0,1688309458,,"qa!"
 :e /tmp/mru/v02/item.txt
@@ -556,8 +628,6 @@ $
 |2,0,1685375484,,"files"
 :!fzf
 |2,0,1685375262,,"!fzf"
-:!ls
-|2,0,1685375255,,"!ls"
 :cd bin
 |2,0,1685375253,,"cd bin"
 :cd .fzf
@@ -578,6 +648,12 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/mrucom
+|2,1,1688469204,47,"mrucom"
+?/args
+|2,1,1688468216,47,"args"
+?/join
+|2,1,1688468082,47,"join"
 ? @$
 |2,1,1688457369,,"@$"
 ? \s*$
@@ -764,71 +840,68 @@ $
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	CHAR	0
-	;
-|3,0,0,0,1,0,1688457445,";"
-""1	LINE	0
-	    "editor.
-|3,1,1,1,1,0,1688457458,"    \"editor."
-"2	LINE	0
+"0	LINE	0
+	from waivek import Timer   # Single Use
+	timer = Timer()
+	from waivek import Code    # Multi-Use
+	from waivek import handler # Single Use
+	from waivek import ic, ib     # Multi-Use, import time: 70ms - 110ms
+	Code; ic; ib; handler
 	
-|3,0,2,1,1,0,1688457390,""
+	def main():
+	    pass
+	
+	if __name__ == "__main__":
+	    with handler():
+	        main()
+|3,0,0,1,13,0,1688469291,"from waivek import Timer   # Single Use","timer = Timer()","from waivek import Code    # Multi-Use","from waivek import handler # Single Use","from waivek import ic, ib     # Multi-Use, import time: 70ms - 110ms","Code; ic; ib; handler","","def main():","    pass","","if __name__ == \"__main__\":","    with handler():","        main()"
+"1	LINE	0
+	from reltools ipor
+|3,0,1,1,1,0,1688469301,"from reltools ipor"
+"2	LINE	0
+	MruCompletion
+|3,0,2,1,1,0,1688469243,"MruCompletion"
 "3	LINE	0
-	                            "driver": "mysql",
-	                            "host": "localhost",
-	                            "port": 3306,
-	                            "username": "root",
-	                            "password": "root",
-	                            "database": "test"
-|3,0,3,1,6,0,1688457099,"                            \"driver\": \"mysql\",","                            \"host\": \"localhost\",","                            \"port\": 3306,","                            \"username\": \"root\",","                            \"password\": \"root\",","                            \"database\": \"test\""
+	
+	function! GetTemplateNames()
+	    let extension = expand("%:e")
+	    let pattern =  '*.'.extension
+	    echo pattern
+	    let files_in_directory = split(globpath(s:GetTemplateDir(), pattern), '\n')
+	    let template_names = []
+	    for file in files_in_directory
+	        echo file
+	        let template_names = template_names + [fnamemodify(file, ':t:r')]
+	    endfor
+	    return template_names
+	endfunction
+|3,0,3,1,13,0,1688469173,"","function! GetTemplateNames()","    let extension = expand(\"%:e\")","    let pattern =  '*.'.extension","    echo pattern","    let files_in_directory = split(globpath(s:GetTemplateDir(), pattern), '\\n')","    let template_names = []","    for file in files_in_directory","        echo file","        let template_names = template_names + [fnamemodify(file, ':t:r')]","    endfor","    return template_names","endfunction"
 "4	LINE	0
-	SELECT * FROM 
-|3,0,4,1,1,0,1688456972,"SELECT * FROM "
+	
+|3,0,4,1,1,0,1688469055,""
 "5	LINE	0
 	
-|3,0,5,1,1,0,1688456963,""
+|3,0,5,1,1,0,1688469038,""
 "6	LINE	0
-	
-|3,0,6,1,1,0,1688456962,""
+	    let filename_without_extension = fnamemodify(file, ':t:r')
+	    let extension = fnamemodify(file, ':e')
+	    if filename_without_extension == 'template'
+	        continue
+	    endif
+	    if !has_key(extension_to_files, extension)
+	        let extension_to_files[extension] = []
+	    endif
+	    call add(extension_to_files[extension], filename_without_extension)
+|3,0,6,1,9,0,1688469033,"    let filename_without_extension = fnamemodify(file, ':t:r')","    let extension = fnamemodify(file, ':e')","    if filename_without_extension == 'template'","        continue","    endif","    if !has_key(extension_to_files, extension)","        let extension_to_files[extension] = []","    endif","    call add(extension_to_files[extension], filename_without_extension)"
 "7	LINE	0
-	SELECT
-	FROM clips;
-|3,0,7,1,2,0,1688456932,"SELECT","FROM clips;"
+	let extension_to_files = {}
+|3,0,7,1,1,0,1688469020,"let extension_to_files = {}"
 "8	LINE	0
-	    {
-	      "name": "sql-language-server",
-	      "adapter": "mysql",
-	      "host": "localhost",
-	      "port": 3307,
-	      "user": "username",
-	      "password": "password",
-	      "database": "mysql-development",
-	      "projectPaths": ["/Users/joe-re/src/sql-language-server"],
-	      "ssh": {
-	        "user": "ubuntu",
-	        "remoteHost": "ec2-xxx-xxx-xxx-xxx.ap-southeast-1.compute.amazonaws.com",
-	        "dbHost": "127.0.0.1",
-	        "port": 3306,
-	        "identityFile": "~/.ssh/id_rsa",
-	        "passphrase": "123456"
-	      }
-	    },
-	    {
-	      "name": "postgres-project",
-	      "adapter": "postgres",
-	      "host": "localhost",
-	      "port": 5432,
-	      "user": "postgres",
-	      "password": "pg_pass",
-	      "database": "pg_test",
-	      "projectPaths": ["/Users/joe-re/src/postgres_project"]
-	    },
-|3,0,8,1,28,0,1688456810,"    {","      \"name\": \"sql-language-server\",","      \"adapter\": \"mysql\",","      \"host\": \"localhost\",","      \"port\": 3307,","      \"user\": \"username\",","      \"password\": \"password\",","      \"database\": \"mysql-development\",","      \"projectPaths\": [\"/Users/joe-re/src/sql-language-server\"],","      \"ssh\": {","        \"user\": \"ubuntu\",",>87
-|<"        \"remoteHost\": \"ec2-xxx-xxx-xxx-xxx.ap-southeast-1.compute.amazonaws.com\",","        \"dbHost\": \"127.0.0.1\",","        \"port\": 3306,","        \"identityFile\": \"~/.ssh/id_rsa\",","        \"passphrase\": \"123456\"","      }","    },","    {","      \"name\": \"postgres-project\",","      \"adapter\": \"postgres\",","      \"host\": \"localhost\",","      \"port\": 5432,","      \"user\": \"postgres\",","      \"password\": \"pg_pass\",",>34
-|<"      \"database\": \"pg_test\",","      \"projectPaths\": [\"/Users/joe-re/src/postgres_project\"]","    },"
+	    else
+|3,0,8,1,1,0,1688468964,"    else"
 "9	LINE	0
-	    clip.schema
-|3,0,9,1,1,0,1688455305,"    clip.schema"
+	    endif
+|3,0,9,1,1,0,1688468963,"    endif"
 "s	LINE	0
 	        {
 	            "name": "twitch-backend",
@@ -836,51 +909,135 @@ $
 	            "interpreter": "python"
 	        }
 |3,0,28,1,5,0,1688403814,"        {","            \"name\": \"twitch-backend\",","            \"script\": \"api.py\",","            \"interpreter\": \"python\"","        }"
-"-	CHAR	0
-	;
-|3,0,36,0,1,0,1688457442,";"
+""-	CHAR	0
+	; handler
+|3,1,36,0,1,0,1688469303,"; handler"
 
 # File marks:
-'0  29  4  ~/.vim/coc-settings.json
-|4,48,29,4,1688457476,"~/.vim/coc-settings.json"
-'1  1  0  ~/.config/sql-language-server/.sqllsrc.json
-|4,49,1,0,1688457391,"~/.config/sql-language-server/.sqllsrc.json"
-'2  1  0  ~/.config/sql-language-server/.sqllsrc.json
-|4,50,1,0,1688457391,"~/.config/sql-language-server/.sqllsrc.json"
-'3  2  0  ~/Twitch/coffee-vps/code/query.sql
-|4,51,2,0,1688457259,"~/Twitch/coffee-vps/code/query.sql"
-'4  2  0  ~/Twitch/coffee-vps/code/query.sql
-|4,52,2,0,1688457259,"~/Twitch/coffee-vps/code/query.sql"
-'5  2  0  ~/Twitch/coffee-vps/code/query.sql
-|4,53,2,0,1688457259,"~/Twitch/coffee-vps/code/query.sql"
-'6  2  0  ~/Twitch/coffee-vps/code/query.sql
-|4,54,2,0,1688457259,"~/Twitch/coffee-vps/code/query.sql"
-'7  33  40  ~/.vim/coc-settings.json
-|4,55,33,40,1688457170,"~/.vim/coc-settings.json"
-'8  33  40  ~/.vim/coc-settings.json
-|4,56,33,40,1688457170,"~/.vim/coc-settings.json"
-'9  33  40  ~/.vim/coc-settings.json
-|4,57,33,40,1688457170,"~/.vim/coc-settings.json"
+'0  2  31  ~/.vim/plugin/template.vim
+|4,48,2,31,1688469340,"~/.vim/plugin/template.vim"
+'1  34  8  ~/.vim/plugin/template.vim
+|4,49,34,8,1688467772,"~/.vim/plugin/template.vim"
+'2  3  8  ~/.vim/plugin/template.vim
+|4,50,3,8,1688467772,"~/.vim/plugin/template.vim"
+'3  29  4  ~/.vim/coc-settings.json
+|4,51,29,4,1688457476,"~/.vim/coc-settings.json"
+'4  29  4  ~/.vim/coc-settings.json
+|4,52,29,4,1688457476,"~/.vim/coc-settings.json"
+'5  29  4  ~/.vim/coc-settings.json
+|4,53,29,4,1688457476,"~/.vim/coc-settings.json"
+'6  29  4  ~/.vim/coc-settings.json
+|4,54,29,4,1688457476,"~/.vim/coc-settings.json"
+'7  1  0  ~/.config/sql-language-server/.sqllsrc.json
+|4,55,1,0,1688457391,"~/.config/sql-language-server/.sqllsrc.json"
+'8  1  0  ~/.config/sql-language-server/.sqllsrc.json
+|4,56,1,0,1688457391,"~/.config/sql-language-server/.sqllsrc.json"
+'9  1  0  ~/.config/sql-language-server/.sqllsrc.json
+|4,57,1,0,1688457391,"~/.config/sql-language-server/.sqllsrc.json"
 
 # Jumplist (newest first):
+-'  2  31  ~/.vim/plugin/template.vim
+|4,39,2,31,1688469340,"~/.vim/plugin/template.vim"
+-'  41  0  ~/.vim/plugin/template.vim
+|4,39,41,0,1688469248,"~/.vim/plugin/template.vim"
+-'  359  9  ~/.vim/plugin/mru.vim
+|4,39,359,9,1688469219,"~/.vim/plugin/mru.vim"
+-'  131  12  ~/.vim/plugin/mru.vim
+|4,39,131,12,1688469206,"~/.vim/plugin/mru.vim"
+-'  23  26  ~/.vim/plugin/mru.vim
+|4,39,23,26,1688469205,"~/.vim/plugin/mru.vim"
+-'  1  0  ~/.vim/plugin/mru.vim
+|4,39,1,0,1688469204,"~/.vim/plugin/mru.vim"
+-'  1  0  ~/.vim/plugin/template.vim
+|4,39,1,0,1688469178,"~/.vim/plugin/template.vim"
+-'  42  0  ~/.vim/plugin/template.vim
+|4,39,42,0,1688469173,"~/.vim/plugin/template.vim"
+-'  32  25  ~/.vim/plugin/template.vim
+|4,39,32,25,1688468535,"~/.vim/plugin/template.vim"
+-'  33  39  ~/.vim/plugin/template.vim
+|4,39,33,39,1688468528,"~/.vim/plugin/template.vim"
+-'  34  9  ~/.vim/plugin/template.vim
+|4,39,34,9,1688468483,"~/.vim/plugin/template.vim"
+-'  16  27  ~/.vim/plugin/template.vim
+|4,39,16,27,1688468435,"~/.vim/plugin/template.vim"
+-'  15  27  ~/.vim/plugin/template.vim
+|4,39,15,27,1688468435,"~/.vim/plugin/template.vim"
+-'  39  8  ~/.vim/plugin/template.vim
+|4,39,39,8,1688467880,"~/.vim/plugin/template.vim"
+-'  40  8  ~/.vim/plugin/template.vim
+|4,39,40,8,1688467879,"~/.vim/plugin/template.vim"
+-'  3  8  ~/.vim/plugin/template.vim
+|4,39,3,8,1688467772,"~/.vim/plugin/template.vim"
+-'  21  0  ~/.vim/plugin/template.vim
+|4,39,21,0,1688467732,"~/.vim/plugin/template.vim"
+-'  1  0  ~/.vim/plugin/template.vim
+|4,39,1,0,1688467732,"~/.vim/plugin/template.vim"
+-'  1338  0  ~/.vim/vimrc
+|4,39,1338,0,1688467731,"~/.vim/vimrc"
+-'  1338  0  ~/.vim/vimrc
+|4,39,1338,0,1688467731,"~/.vim/vimrc"
+-'  1335  0  ~/.vim/vimrc
+|4,39,1335,0,1688467426,"~/.vim/vimrc"
+-'  1335  0  ~/.vim/vimrc
+|4,39,1335,0,1688467426,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1688467213,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1688467213,"~/.vim/vimrc"
+-'  1  0  ~/Twitch/coffee-vps/flask-vue/vuejs/actions.html
+|4,39,1,0,1688467113,"~/Twitch/coffee-vps/flask-vue/vuejs/actions.html"
+-'  1  0  ~/Twitch/coffee-vps/flask-vue/vuejs/actions.html
+|4,39,1,0,1688467113,"~/Twitch/coffee-vps/flask-vue/vuejs/actions.html"
+-'  29  4  ~/.vim/coc-settings.json
+|4,39,29,4,1688457476,"~/.vim/coc-settings.json"
+-'  29  4  ~/.vim/coc-settings.json
+|4,39,29,4,1688457476,"~/.vim/coc-settings.json"
 -'  29  4  ~/.vim/coc-settings.json
 |4,39,29,4,1688457476,"~/.vim/coc-settings.json"
 -'  1  0  ~/.vim/coc-settings.json
 |4,39,1,0,1688457446,"~/.vim/coc-settings.json"
+-'  1  0  ~/.vim/coc-settings.json
+|4,39,1,0,1688457446,"~/.vim/coc-settings.json"
+-'  1  0  ~/.vim/coc-settings.json
+|4,39,1,0,1688457446,"~/.vim/coc-settings.json"
+-'  4  5  ~/Twitch/coffee-vps/code/query.sql
+|4,39,4,5,1688457445,"~/Twitch/coffee-vps/code/query.sql"
+-'  4  5  ~/Twitch/coffee-vps/code/query.sql
+|4,39,4,5,1688457445,"~/Twitch/coffee-vps/code/query.sql"
 -'  4  5  ~/Twitch/coffee-vps/code/query.sql
 |4,39,4,5,1688457445,"~/Twitch/coffee-vps/code/query.sql"
 -'  2  0  ~/Twitch/coffee-vps/code/query.sql
 |4,39,2,0,1688457412,"~/Twitch/coffee-vps/code/query.sql"
+-'  2  0  ~/Twitch/coffee-vps/code/query.sql
+|4,39,2,0,1688457412,"~/Twitch/coffee-vps/code/query.sql"
+-'  2  0  ~/Twitch/coffee-vps/code/query.sql
+|4,39,2,0,1688457412,"~/Twitch/coffee-vps/code/query.sql"
+-'  1  0  ~/Twitch/coffee-vps/code/query.sql
+|4,39,1,0,1688457395,"~/Twitch/coffee-vps/code/query.sql"
+-'  1  0  ~/Twitch/coffee-vps/code/query.sql
+|4,39,1,0,1688457395,"~/Twitch/coffee-vps/code/query.sql"
 -'  1  0  ~/Twitch/coffee-vps/code/query.sql
 |4,39,1,0,1688457395,"~/Twitch/coffee-vps/code/query.sql"
 -'  1  0  ~/.config/sql-language-server/.sqllsrc.json
 |4,39,1,0,1688457391,"~/.config/sql-language-server/.sqllsrc.json"
 -'  1  0  ~/.config/sql-language-server/.sqllsrc.json
 |4,39,1,0,1688457391,"~/.config/sql-language-server/.sqllsrc.json"
+-'  1  0  ~/.config/sql-language-server/.sqllsrc.json
+|4,39,1,0,1688457391,"~/.config/sql-language-server/.sqllsrc.json"
+-'  1  0  ~/.config/sql-language-server/.sqllsrc.json
+|4,39,1,0,1688457391,"~/.config/sql-language-server/.sqllsrc.json"
 -'  35  76  ~/.vim/coc-settings.json
 |4,39,35,76,1688457378,"~/.vim/coc-settings.json"
 -'  35  76  ~/.vim/coc-settings.json
 |4,39,35,76,1688457378,"~/.vim/coc-settings.json"
+-'  35  76  ~/.vim/coc-settings.json
+|4,39,35,76,1688457378,"~/.vim/coc-settings.json"
+-'  35  76  ~/.vim/coc-settings.json
+|4,39,35,76,1688457378,"~/.vim/coc-settings.json"
+-'  8  0  ~/Twitch/coffee-vps/code
+|4,39,8,0,1688457371,"~/Twitch/coffee-vps/code"
+-'  8  0  ~/Twitch/coffee-vps/code
+|4,39,8,0,1688457371,"~/Twitch/coffee-vps/code"
 -'  8  0  ~/Twitch/coffee-vps/code
 |4,39,8,0,1688457371,"~/Twitch/coffee-vps/code"
 -'  8  0  ~/Twitch/coffee-vps/code
@@ -901,6 +1058,14 @@ $
 |4,39,33,40,1688457170,"~/.vim/coc-settings.json"
 -'  33  40  ~/.vim/coc-settings.json
 |4,39,33,40,1688457170,"~/.vim/coc-settings.json"
+-'  33  40  ~/.vim/coc-settings.json
+|4,39,33,40,1688457170,"~/.vim/coc-settings.json"
+-'  33  40  ~/.vim/coc-settings.json
+|4,39,33,40,1688457170,"~/.vim/coc-settings.json"
+-'  1  0  ~/Twitch/coffee-vps/code/data/clips.db
+|4,39,1,0,1688457157,"~/Twitch/coffee-vps/code/data/clips.db"
+-'  1  0  ~/Twitch/coffee-vps/code/data/clips.db
+|4,39,1,0,1688457157,"~/Twitch/coffee-vps/code/data/clips.db"
 -'  1  0  ~/Twitch/coffee-vps/code/data/clips.db
 |4,39,1,0,1688457157,"~/Twitch/coffee-vps/code/data/clips.db"
 -'  1  0  ~/Twitch/coffee-vps/code/data/clips.db
@@ -917,6 +1082,10 @@ $
 |4,39,34,77,1688457156,"~/.vim/coc-settings.json"
 -'  34  77  ~/.vim/coc-settings.json
 |4,39,34,77,1688457156,"~/.vim/coc-settings.json"
+-'  34  77  ~/.vim/coc-settings.json
+|4,39,34,77,1688457156,"~/.vim/coc-settings.json"
+-'  34  77  ~/.vim/coc-settings.json
+|4,39,34,77,1688457156,"~/.vim/coc-settings.json"
 -'  1  0  /usr/lib/node_modules/sql-language-server/dist/bin/cli.js
 |4,39,1,0,1688457146,"/usr/lib/node_modules/sql-language-server/dist/bin/cli.js"
 -'  1  0  /usr/lib/node_modules/sql-language-server/dist/bin/cli.js
@@ -925,6 +1094,14 @@ $
 |4,39,1,0,1688457146,"/usr/lib/node_modules/sql-language-server/dist/bin/cli.js"
 -'  1  0  /usr/lib/node_modules/sql-language-server/dist/bin/cli.js
 |4,39,1,0,1688457146,"/usr/lib/node_modules/sql-language-server/dist/bin/cli.js"
+-'  1  0  /usr/lib/node_modules/sql-language-server/dist/bin/cli.js
+|4,39,1,0,1688457146,"/usr/lib/node_modules/sql-language-server/dist/bin/cli.js"
+-'  1  0  /usr/lib/node_modules/sql-language-server/dist/bin/cli.js
+|4,39,1,0,1688457146,"/usr/lib/node_modules/sql-language-server/dist/bin/cli.js"
+-'  25  77  ~/.vim/coc-settings.json
+|4,39,25,77,1688457144,"~/.vim/coc-settings.json"
+-'  25  77  ~/.vim/coc-settings.json
+|4,39,25,77,1688457144,"~/.vim/coc-settings.json"
 -'  25  77  ~/.vim/coc-settings.json
 |4,39,25,77,1688457144,"~/.vim/coc-settings.json"
 -'  25  77  ~/.vim/coc-settings.json
@@ -955,123 +1132,383 @@ $
 |4,39,4,0,1688457106,"~/.config/sql-language-server/.sqllsrc.json"
 -'  4  0  ~/.config/sql-language-server/.sqllsrc.json
 |4,39,4,0,1688457106,"~/.config/sql-language-server/.sqllsrc.json"
--'  27  0  ~/.vim/coc-settings.json
-|4,39,27,0,1688457044,"~/.vim/coc-settings.json"
--'  27  0  ~/.vim/coc-settings.json
-|4,39,27,0,1688457044,"~/.vim/coc-settings.json"
--'  27  0  ~/.vim/coc-settings.json
-|4,39,27,0,1688457044,"~/.vim/coc-settings.json"
--'  27  0  ~/.vim/coc-settings.json
-|4,39,27,0,1688457044,"~/.vim/coc-settings.json"
--'  27  0  ~/.vim/coc-settings.json
-|4,39,27,0,1688457044,"~/.vim/coc-settings.json"
--'  27  0  ~/.vim/coc-settings.json
-|4,39,27,0,1688457044,"~/.vim/coc-settings.json"
--'  1  0  ~/.vim/coc-settings.json
-|4,39,1,0,1688457038,"~/.vim/coc-settings.json"
--'  1  0  ~/.vim/coc-settings.json
-|4,39,1,0,1688457038,"~/.vim/coc-settings.json"
--'  1  0  ~/Twitch/coffee-vps/code/query.sql
-|4,39,1,0,1688456983,"~/Twitch/coffee-vps/code/query.sql"
--'  1  0  ~/Twitch/coffee-vps/code/query.sql
-|4,39,1,0,1688456983,"~/Twitch/coffee-vps/code/query.sql"
--'  4  15  ~/.config/sql-language-server/.sqllsrc.json
-|4,39,4,15,1688456922,"~/.config/sql-language-server/.sqllsrc.json"
--'  4  15  ~/.config/sql-language-server/.sqllsrc.json
-|4,39,4,15,1688456922,"~/.config/sql-language-server/.sqllsrc.json"
--'  7  24  ~/.config/sql-language-server/.sqllsrc.json
-|4,39,7,24,1688456891,"~/.config/sql-language-server/.sqllsrc.json"
--'  7  24  ~/.config/sql-language-server/.sqllsrc.json
-|4,39,7,24,1688456891,"~/.config/sql-language-server/.sqllsrc.json"
--'  7  24  ~/.config/sql-language-server/.sqllsrc.json
-|4,39,7,24,1688456891,"~/.config/sql-language-server/.sqllsrc.json"
--'  7  24  ~/.config/sql-language-server/.sqllsrc.json
-|4,39,7,24,1688456891,"~/.config/sql-language-server/.sqllsrc.json"
--'  7  24  ~/.config/sql-language-server/.sqllsrc.json
-|4,39,7,24,1688456891,"~/.config/sql-language-server/.sqllsrc.json"
--'  7  24  ~/.config/sql-language-server/.sqllsrc.json
-|4,39,7,24,1688456891,"~/.config/sql-language-server/.sqllsrc.json"
--'  7  24  ~/.config/sql-language-server/.sqllsrc.json
-|4,39,7,24,1688456891,"~/.config/sql-language-server/.sqllsrc.json"
--'  7  24  ~/.config/sql-language-server/.sqllsrc.json
-|4,39,7,24,1688456891,"~/.config/sql-language-server/.sqllsrc.json"
--'  6  19  ~/.config/sql-language-server/.sqllsrc.json
-|4,39,6,19,1688456879,"~/.config/sql-language-server/.sqllsrc.json"
--'  6  19  ~/.config/sql-language-server/.sqllsrc.json
-|4,39,6,19,1688456879,"~/.config/sql-language-server/.sqllsrc.json"
--'  6  19  ~/.config/sql-language-server/.sqllsrc.json
-|4,39,6,19,1688456879,"~/.config/sql-language-server/.sqllsrc.json"
--'  6  19  ~/.config/sql-language-server/.sqllsrc.json
-|4,39,6,19,1688456879,"~/.config/sql-language-server/.sqllsrc.json"
--'  6  19  ~/.config/sql-language-server/.sqllsrc.json
-|4,39,6,19,1688456879,"~/.config/sql-language-server/.sqllsrc.json"
--'  6  19  ~/.config/sql-language-server/.sqllsrc.json
-|4,39,6,19,1688456879,"~/.config/sql-language-server/.sqllsrc.json"
--'  6  19  ~/.config/sql-language-server/.sqllsrc.json
-|4,39,6,19,1688456879,"~/.config/sql-language-server/.sqllsrc.json"
--'  6  19  ~/.config/sql-language-server/.sqllsrc.json
-|4,39,6,19,1688456879,"~/.config/sql-language-server/.sqllsrc.json"
--'  1  0  ~/.config/sql-language-server/.sqllsrc.json
-|4,39,1,0,1688456785,"~/.config/sql-language-server/.sqllsrc.json"
--'  1  0  ~/.config/sql-language-server/.sqllsrc.json
-|4,39,1,0,1688456785,"~/.config/sql-language-server/.sqllsrc.json"
--'  1  0  ~/.config/sql-language-server/.sqllsrc.json
-|4,39,1,0,1688456785,"~/.config/sql-language-server/.sqllsrc.json"
--'  1  0  ~/.config/sql-language-server/.sqllsrc.json
-|4,39,1,0,1688456785,"~/.config/sql-language-server/.sqllsrc.json"
--'  1  0  ~/.config/sql-language-server/.sqllsrc.json
-|4,39,1,0,1688456785,"~/.config/sql-language-server/.sqllsrc.json"
--'  1  0  ~/.config/sql-language-server/.sqllsrc.json
-|4,39,1,0,1688456785,"~/.config/sql-language-server/.sqllsrc.json"
--'  2  6  ~/Twitch/coffee-vps/code/query.sql
-|4,39,2,6,1688456708,"~/Twitch/coffee-vps/code/query.sql"
--'  2  6  ~/Twitch/coffee-vps/code/query.sql
-|4,39,2,6,1688456708,"~/Twitch/coffee-vps/code/query.sql"
--'  2  6  ~/Twitch/coffee-vps/code/query.sql
-|4,39,2,6,1688456708,"~/Twitch/coffee-vps/code/query.sql"
--'  2  6  ~/Twitch/coffee-vps/code/query.sql
-|4,39,2,6,1688456708,"~/Twitch/coffee-vps/code/query.sql"
--'  2  6  ~/Twitch/coffee-vps/code/query.sql
-|4,39,2,6,1688456708,"~/Twitch/coffee-vps/code/query.sql"
--'  1  0  ~/Twitch/coffee-vps/code/query.sql
-|4,39,1,0,1688456688,"~/Twitch/coffee-vps/code/query.sql"
--'  1  0  ~/Twitch/coffee-vps/code/query.sql
-|4,39,1,0,1688456688,"~/Twitch/coffee-vps/code/query.sql"
--'  25  72  ~/.vim/coc-settings.json
-|4,39,25,72,1688456671,"~/.vim/coc-settings.json"
--'  25  72  ~/.vim/coc-settings.json
-|4,39,25,72,1688456671,"~/.vim/coc-settings.json"
--'  25  72  ~/.vim/coc-settings.json
-|4,39,25,72,1688456671,"~/.vim/coc-settings.json"
--'  25  72  ~/.vim/coc-settings.json
-|4,39,25,72,1688456671,"~/.vim/coc-settings.json"
--'  25  72  ~/.vim/coc-settings.json
-|4,39,25,72,1688456671,"~/.vim/coc-settings.json"
--'  25  72  ~/.vim/coc-settings.json
-|4,39,25,72,1688456671,"~/.vim/coc-settings.json"
--'  1  0  /usr/lib/node_modules/sql-language-server/dist/bin/cli.js
-|4,39,1,0,1688456667,"/usr/lib/node_modules/sql-language-server/dist/bin/cli.js"
--'  1  0  /usr/lib/node_modules/sql-language-server/dist/bin/cli.js
-|4,39,1,0,1688456667,"/usr/lib/node_modules/sql-language-server/dist/bin/cli.js"
--'  1  0  /usr/lib/node_modules/sql-language-server/dist/bin/cli.js
-|4,39,1,0,1688456667,"/usr/lib/node_modules/sql-language-server/dist/bin/cli.js"
--'  1  0  /usr/lib/node_modules/sql-language-server/dist/bin/cli.js
-|4,39,1,0,1688456667,"/usr/lib/node_modules/sql-language-server/dist/bin/cli.js"
--'  1  0  /usr/lib/node_modules/sql-language-server/dist/bin/cli.js
-|4,39,1,0,1688456667,"/usr/lib/node_modules/sql-language-server/dist/bin/cli.js"
--'  1  0  /usr/lib/node_modules/sql-language-server/dist/bin/cli.js
-|4,39,1,0,1688456667,"/usr/lib/node_modules/sql-language-server/dist/bin/cli.js"
--'  27  39  ~/.vim/coc-settings.json
-|4,39,27,39,1688456630,"~/.vim/coc-settings.json"
+-'  4  0  ~/.config/sql-language-server/.sqllsrc.json
+|4,39,4,0,1688457106,"~/.config/sql-language-server/.sqllsrc.json"
 
 # Buffer list:
-%~/Twitch/coffee-vps/code/query.sql	4	5
+%~/Twitch/coffee-vps/flask-vue/vuejs/actions.html	1	0
+%~/.vim/plugin/template.vim	2	31
 %~/.vim/coc-settings.json	29	4
+%~/.vim/plugin/mru.vim	359	9
 
 # History of marks within files (newest to oldest):
 
+> ~/.vim/plugin/template.vim
+	*	1688469338	0
+	"	2	31
+	^	2	32
+	.	2	31
+	+	34	24
+	+	34	51
+	+	34	0
+	+	34	48
+	+	34	109
+	+	34	11
+	+	37	0
+	+	34	0
+	+	40	0
+	+	20	10
+	+	34	0
+	+	16	0
+	+	34	54
+	+	20	0
+	+	34	0
+	+	30	3
+	+	24	0
+	+	25	37
+	+	25	51
+	+	26	8
+	+	27	8
+	+	25	0
+	+	23	0
+	+	27	47
+	+	28	9
+	+	29	18
+	+	34	9
+	+	33	24
+	+	34	0
+	+	33	0
+	+	20	0
+	+	15	26
+	+	16	0
+	+	20	0
+	+	18	53
+	+	31	0
+	+	33	41
+	+	34	22
+	+	34	9
+	+	33	39
+	+	18	43
+	+	19	11
+	+	34	0
+	+	40	0
+	+	34	0
+	+	40	0
+	+	35	34
+	+	34	0
+	+	42	71
+	+	42	9
+	+	42	15
+	+	42	0
+	+	42	16
+	+	42	27
+	+	42	9
+	+	42	34
+	+	42	0
+	+	42	24
+	+	42	8
+	+	42	20
+	+	42	26
+	+	42	4
+	+	42	75
+	+	42	0
+	+	42	22
+	+	42	0
+	+	42	63
+	+	42	16
+	+	42	73
+	+	42	0
+	+	42	22
+	+	42	53
+	+	42	0
+	+	42	5
+	+	42	0
+	+	42	41
+	+	42	12
+	+	42	0
+	+	42	13
+	+	42	46
+	+	42	14
+	+	42	59
+	+	42	15
+	+	42	11
+	+	42	29
+	+	42	0
+	+	42	10
+	+	42	0
+	+	14	0
+	+	1	0
+	+	41	0
+	+	41	47
+	+	41	0
+	+	2	11
+	+	41	0
+	+	2	31
+
+> ~/.vim/templates/template.py
+	*	1688469335	0
+	"	1	0
+	.	1	0
+	+	1	0
+	+	6	12
+	+	1	0
+
+> ~/Twitch/coffee-vps/flask-vue/.direnv/python-3.10.6/lib/python3.10/site-packages/waivek/template.py
+	*	1688469291	0
+	"	1	0
+
+> ~/.vim/templates/template.vue
+	*	1688469283	0
+	"	1	0
+	.	1	0
+	+	1	19
+	+	1	39
+	+	1	7
+	+	1	11
+	+	1	0
+
+> ~/.vim/templates/vuehtml.html
+	*	1688469262	0
+	"	1	0
+	^	21	0
+	.	20	0
+	+	20	0
+
+> ~/.vim/plugin/mru.vim
+	*	1688469217	0
+	"	359	9
+	^	333	2
+	.	334	0
+	+	13	0
+	+	73	11
+	+	73	10
+	+	58	46
+	+	73	0
+	+	285	50
+	+	285	14
+	+	289	57
+	+	312	0
+	+	333	0
+	+	337	1
+	+	333	0
+	+	93	41
+	+	54	46
+	+	337	0
+	+	337	27
+	+	333	30
+	+	337	5
+	+	54	44
+	+	58	44
+	+	337	10
+	+	94	36
+	+	337	0
+	+	333	50
+	+	73	0
+	+	94	36
+	+	54	0
+	+	73	39
+	+	58	25
+	+	58	5
+	+	73	0
+	+	58	0
+	+	72	10
+	+	71	10
+	+	69	0
+	+	68	27
+	+	69	63
+	+	70	14
+	+	72	52
+	+	68	22
+	+	69	46
+	+	72	0
+	+	333	0
+	+	336	24
+	+	336	25
+	+	336	1
+	+	336	0
+	+	93	41
+	+	336	0
+	+	337	0
+	+	334	0
+	+	311	0
+	+	336	1
+	+	311	30
+	+	311	92
+	+	311	46
+	+	311	0
+	+	311	30
+	+	311	23
+	+	311	26
+	+	311	0
+	+	317	0
+	+	316	37
+	+	318	0
+	+	316	0
+	+	317	0
+	+	333	54
+	+	336	0
+	+	334	0
+	+	316	0
+	+	333	49
+	+	311	0
+	+	288	54
+	+	288	18
+	+	288	26
+	+	288	0
+	+	289	57
+	+	334	0
+	+	335	0
+	+	219	54
+	+	220	0
+	+	221	5
+	+	220	37
+	+	315	0
+	+	316	13
+	+	315	27
+	+	334	0
+
+> ~/Twitch/coffee-vps/flask-vue/vuejs/actions.html
+	*	1688468726	0
+	"	1	0
+
+> ~/Twitch/coffee-vps/code/db_query.py
+	*	1688468644	0
+	"	1	0
+	.	25	0
+	+	1	0
+	+	8	30
+	+	9	0
+	+	6	0
+	+	7	24
+	+	8	0
+	+	9	0
+	+	6	0
+	+	9	0
+	+	6	0
+	+	28	17
+	+	28	0
+	+	12	0
+	+	13	4
+	+	14	0
+	+	25	0
+	+	28	0
+	+	25	3
+	+	15	3
+	+	14	3
+	+	25	0
+	+	27	3
+	+	28	0
+	+	30	0
+	+	28	0
+	+	25	4
+	+	26	16
+	+	26	0
+	+	21	11
+	+	22	12
+	+	21	0
+	+	22	0
+	+	23	37
+	+	25	19
+	+	25	0
+	+	23	8
+	+	25	4
+	+	25	0
+	+	31	0
+	+	25	0
+	+	25	15
+	+	23	8
+	+	25	18
+	+	25	42
+	+	24	18
+	+	25	0
+	+	24	8
+	+	24	18
+	+	25	0
+	+	25	10
+	+	25	15
+	+	25	0
+
+> /usr/share/vim/vim90/doc/eval.txt
+	*	1688468085	0
+	"	1411	5
+
+> /usr/share/vim/vim90/doc/map.txt
+	*	1688467754	0
+	"	1538	30
+
+> ~/.vim/vimrc
+	*	1688467728	0
+	"	1338	0
+	^	1336	20
+	.	1338	0
+	+	49	65
+	+	47	0
+	+	48	7
+	+	49	0
+	+	78	83
+	+	75	1
+	+	76	0
+	+	75	0
+	+	76	0
+	+	52	23
+	+	49	1
+	+	51	0
+	+	49	0
+	+	1318	0
+	+	1323	0
+	+	1318	0
+	+	1317	30
+	+	1318	0
+	+	1322	0
+	+	1320	16
+	+	1321	0
+	+	1328	70
+	+	102	0
+	+	107	22
+	+	104	0
+	+	107	27
+	+	109	0
+	+	108	0
+	+	103	30
+	+	105	13
+	+	104	16
+	+	98	0
+	+	820	19
+	+	820	5
+	+	820	80
+	+	820	22
+	+	820	0
+	+	819	21
+	+	820	28
+	+	819	22
+	+	820	71
+	+	1338	8
+	+	1338	24
+	+	1338	40
+	+	1338	0
+	+	1335	39
+	+	1338	0
+	+	1336	19
+	+	1337	0
+	+	1338	0
+
+> /usr/share/vim/vim90/doc/options.txt
+	*	1688467608	0
+	"	5899	35
+
+> ~/.vim/ftplugin/vue.vim
+	*	1688467187	0
+	"	5	4
+	^	5	5
+	.	5	0
+	+	1	19
+	+	2	0
+	+	3	0
+	+	4	16
+	+	5	0
+
 > ~/.vim/coc-settings.json
-	*	1688457475	0
+	*	1688467123	0
 	"	29	4
 	.	29	0
 	+	10	0
@@ -1132,77 +1569,12 @@ $
 	*	1688457145	0
 	"	1	0
 
-> ~/Twitch/coffee-vps/code/db_query.py
-	*	1688456274	0
-	"	24	4
-	.	25	0
-	+	1	0
-	+	8	30
-	+	9	0
-	+	6	0
-	+	7	24
-	+	8	0
-	+	9	0
-	+	6	0
-	+	9	0
-	+	6	0
-	+	28	17
-	+	28	0
-	+	12	0
-	+	13	4
-	+	14	0
-	+	25	0
-	+	28	0
-	+	25	3
-	+	15	3
-	+	14	3
-	+	25	0
-	+	27	3
-	+	28	0
-	+	30	0
-	+	28	0
-	+	25	4
-	+	26	16
-	+	26	0
-	+	21	11
-	+	22	12
-	+	21	0
-	+	22	0
-	+	23	37
-	+	25	19
-	+	25	0
-	+	23	8
-	+	25	4
-	+	25	0
-	+	31	0
-	+	25	0
-	+	25	15
-	+	23	8
-	+	25	18
-	+	25	42
-	+	24	18
-	+	25	0
-	+	24	8
-	+	24	18
-	+	25	0
-	+	25	10
-	+	25	15
-	+	25	0
-
 > ~/Twitch/coffee-vps/code/schema.prisma
 	*	1688454957	0
 	"	1	0
 	^	14	11
 	.	14	10
 	+	14	10
-
-> ~/Twitch/coffee-vps/flask-vue/.direnv/python-3.10.6/lib/python3.10/site-packages/waivek/template.py
-	*	1688453987	0
-	"	1	0
-
-> ~/.vim/plugin/template.vim
-	*	1688453983	0
-	"	1	0
 
 > ~/Twitch/coffee-vps/code/preview_db.py
 	*	1688453854	0
@@ -1793,146 +2165,6 @@ $
 	+	21	16
 	+	22	0
 
-> ~/.vim/vimrc
-	*	1688311355	0
-	"	820	71
-	^	820	72
-	.	820	71
-	+	49	65
-	+	47	0
-	+	48	7
-	+	49	0
-	+	78	83
-	+	75	1
-	+	76	0
-	+	75	0
-	+	76	0
-	+	52	23
-	+	49	1
-	+	51	0
-	+	49	0
-	+	1318	0
-	+	1323	0
-	+	1318	0
-	+	1317	30
-	+	1318	0
-	+	1322	0
-	+	1320	16
-	+	1321	0
-	+	1328	70
-	+	102	0
-	+	107	22
-	+	104	0
-	+	107	27
-	+	109	0
-	+	108	0
-	+	103	30
-	+	105	13
-	+	104	16
-	+	98	0
-	+	820	19
-	+	820	5
-	+	820	80
-	+	820	22
-	+	820	0
-	+	819	21
-	+	820	28
-	+	819	22
-	+	820	71
-
-> ~/.vim/plugin/mru.vim
-	*	1688310202	0
-	"	134	38
-	^	333	2
-	.	334	0
-	+	13	0
-	+	73	11
-	+	73	10
-	+	58	46
-	+	73	0
-	+	285	50
-	+	285	14
-	+	289	57
-	+	312	0
-	+	333	0
-	+	337	1
-	+	333	0
-	+	93	41
-	+	54	46
-	+	337	0
-	+	337	27
-	+	333	30
-	+	337	5
-	+	54	44
-	+	58	44
-	+	337	10
-	+	94	36
-	+	337	0
-	+	333	50
-	+	73	0
-	+	94	36
-	+	54	0
-	+	73	39
-	+	58	25
-	+	58	5
-	+	73	0
-	+	58	0
-	+	72	10
-	+	71	10
-	+	69	0
-	+	68	27
-	+	69	63
-	+	70	14
-	+	72	52
-	+	68	22
-	+	69	46
-	+	72	0
-	+	333	0
-	+	336	24
-	+	336	25
-	+	336	1
-	+	336	0
-	+	93	41
-	+	336	0
-	+	337	0
-	+	334	0
-	+	311	0
-	+	336	1
-	+	311	30
-	+	311	92
-	+	311	46
-	+	311	0
-	+	311	30
-	+	311	23
-	+	311	26
-	+	311	0
-	+	317	0
-	+	316	37
-	+	318	0
-	+	316	0
-	+	317	0
-	+	333	54
-	+	336	0
-	+	334	0
-	+	316	0
-	+	333	49
-	+	311	0
-	+	288	54
-	+	288	18
-	+	288	26
-	+	288	0
-	+	289	57
-	+	334	0
-	+	335	0
-	+	219	54
-	+	220	0
-	+	221	5
-	+	220	37
-	+	315	0
-	+	316	13
-	+	315	27
-	+	334	0
-
 > /tmp/mru/v02/item.txt
 	*	1688309454	0
 	"	1	0
@@ -2009,10 +2241,6 @@ $
 	.	1	70
 	+	1	70
 
-> /usr/share/vim/vim90/doc/eval.txt
-	*	1685531975	0
-	"	3423	38
-
 > ~/.config/coc/extensions/file.txt
 	*	1685531879	0
 	"	1	0
@@ -2069,10 +2297,6 @@ $
 > ~/.vim/.fzf/doc/fzf.txt
 	*	1685398683	0
 	"	48	0
-
-> /usr/share/vim/vim90/doc/options.txt
-	*	1685398279	0
-	"	3091	13
 
 > /usr/share/vim/vim90/doc/builtin.txt
 	*	1685397942	0
