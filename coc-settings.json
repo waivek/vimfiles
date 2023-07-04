@@ -18,6 +18,27 @@
     "tailwindCSS.enable": true,
     "editor.quickSuggestions": {
         "strings": true
+    },
+
+    "languageserver": {
+        "sql": {
+            "module": "/usr/lib/node_modules/sql-language-server/dist/bin/cli.js",
+            "args": ["up", "--method", "node-ipc"],
+            "filetypes": ["sql", "mysql"],
+            "settings": {
+                "sql-language-server": {
+                    "connections": [
+                        {
+                            "name": "sqlite3-project",
+                            "adapter": "sqlite3",
+                            "filename": "/home/vivek/Twitch/coffee-vps/code/data/clips.db",
+                            "projectPaths": ["/home/vivek/Twitch/coffee-vps/code"]
+                        }
+                    ]
+                }
+            }
+        }
     }
+
 
 }
