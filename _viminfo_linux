@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/args
+~MSle0~/dotenv
 
 # Last Substitute Search Pattern:
 ~MSle0&, 
@@ -20,46 +20,142 @@
 $
 
 # Command Line History (newest to oldest):
+:q
+|2,0,1688836166,,"q"
+:MRU ac
+|2,0,1688820098,,"MRU ac"
+:bd
+|2,0,1688820097,,"bd"
+:set nopaste
+|2,0,1688819185,,"set nopaste"
+:bd!
+|2,0,1688819169,,"bd!"
+:set paste
+|2,0,1688819164,,"set paste"
+:enew
+|2,0,1688819148,,"enew"
+:e actions-chat.py
+|2,0,1688819126,,"e actions-chat.py"
+:464
+|2,0,1688814484,,"464"
+:e curl_cursor.sh
+|2,0,1688814407,,"e curl_cursor.sh"
+:b actions-chat.py
+|2,0,1688814332,,"b actions-chat.py"
+:MRU 
+|2,0,1688814329,,"MRU "
+:b cur
+|2,0,1688814286,,"b cur"
+:e so
+|2,0,1688814284,,"e so"
+:set nowrap
+|2,0,1688814022,,"set nowrap"
+:set wrap
+|2,0,1688813976,,"set wrap"
+:e
+|2,0,1688811803,,"e"
+:ql
+|2,0,1688811099,,"ql"
+:'<,'>
+|2,0,1688808836,,"'<,'>"
 :qa
-|2,0,1688678381,,"qa"
-:e Portions.vue
-|2,0,1688678325,,"e Portions.vue"
+|2,0,1688808599,,"qa"
+:MRU act
+|2,0,1688808509,,"MRU act"
+:MRU aci
+|2,0,1688808507,,"MRU aci"
+:set 
+|2,0,1688808499,,"set "
+:w
+|2,0,1688808441,,"w"
+:e curl_integrity.sh
+|2,0,1688808433,,"e curl_integrity.sh"
+:e curl_gql_comments.sh
+|2,0,1688808117,,"e curl_gql_comments.sh"
+:MRU util
+|2,0,1688801232,,"MRU util"
+:e ~/.pdbrc
+|2,0,1688800631,,"e ~/.pdbrc"
+:MRU pdbrc
+|2,0,1688800625,,"MRU pdbrc"
+:e twitch_utilities.py
+|2,0,1688797032,,"e twitch_utilities.py"
+:set nonumber
+|2,0,1688796570,,"set nonumber"
+:MRU 37:setup.sh
+|2,0,1688796318,,"MRU 37:setup.sh"
+:MRU 61:make_gist.sh
+|2,0,1688796314,,"MRU 61:make_gist.sh"
+:e *.sh
+|2,0,1688796256,,"e *.sh"
+:cn
+|2,0,1688796050,,"cn"
+:copen
+|2,0,1688796002,,"copen"
+:copn
+|2,0,1688796000,,"copn"
+:grep gql -g *.py 
+|2,0,1688795997,,"grep gql -g *.py "
+:w:set nopaste
+|2,0,1688738899,,"w:set nopaste"
+:set
+|2,0,1688738892,,"set"
+:60
+|2,0,1688738589,,"60"
+:Template
+|2,0,1688719956,,"Template"
+:e test_chat.py
+|2,0,1688719920,,"e test_chat.py"
+:e users.py
+|2,0,1688719917,,"e users.py"
+:e test_upsert.py
+|2,0,1688719909,,"e test_upsert.py"
+:pwd
+|2,0,1688719687,,"pwd"
+:e *.json
+|2,0,1688719686,,"e *.json"
 :e Actions.vue
-|2,0,1688678311,,"e Actions.vue"
+|2,0,1688714283,,"e Actions.vue"
 :e Portion.vue
-|2,0,1688678231,,"e Portion.vue"
+|2,0,1688714239,,"e Portion.vue"
+:e Portions.vue
+|2,0,1688713989,,"e Portions.vue"
+:65
+|2,0,1688713841,,"65"
+:72
+|2,0,1688712150,,"72"
+:58
+|2,0,1688711969,,"58"
+:e Clip.vue
+|2,0,1688708560,,"e Clip.vue"
+:MRU <F1>ch
+|2,0,1688708073,,"MRU <F1>ch"
+:MRU P
+|2,0,1688708067,,"MRU P"
+:e .direnv/
+|2,0,1688707938,,"e .direnv/"
+:MRU config.
+|2,0,1688707574,,"MRU config."
 :e 
 |2,0,1688675946,,"e "
 :e Por
 |2,0,1688675876,,"e Por"
 :54
 |2,0,1688674563,,"54"
-:'<,'>
-|2,0,1688669249,,"'<,'>"
 :'<,'>S
 |2,0,1688669213,,"'<,'>S"
 :MRU 14:api.py
 |2,0,1688667301,,"MRU 14:api.py"
-:e
-|2,0,1688664055,,"e"
 :MRU esl
 |2,0,1688664041,,"MRU esl"
 :set number
 |2,0,1688663619,,"set number"
-:set nonumber
-|2,0,1688663390,,"set nonumber"
 :e Po
 |2,0,1688663379,,"e Po"
-:MRU ac
-|2,0,1688663327,,"MRU ac"
-:q
-|2,0,1688663323,,"q"
 :e ~/.eslintrc.json
 |2,0,1688663286,,"e ~/.eslintrc.json"
 :e Users.vue
 |2,0,1688662927,,"e Users.vue"
-:copen
-|2,0,1688662499,,"copen"
 :grep autocomplete -g *.vue
 |2,0,1688662495,,"grep autocomplete -g *.vue"
 :e Autocomplete.vue
@@ -68,8 +164,6 @@ $
 |2,0,1688646200,,"45"
 :33
 |2,0,1688646134,,"33"
-:MRU 
-|2,0,1688646027,,"MRU "
 :MRU Portions
 |2,0,1688646013,,"MRU Portions"
 :ALEInfo
@@ -114,8 +208,6 @@ $
 |2,0,1688561854,,"Copilot status"
 :MRU api
 |2,0,1688561259,,"MRU api"
-:e Clip.vue
-|2,0,1688556647,,"e Clip.vue"
 :e Ac
 |2,0,1688556517,,"e Ac"
 :save
@@ -134,8 +226,6 @@ $
 |2,0,1688552987,,"e Types.js"
 :b acti
 |2,0,1688552980,,"b acti"
-:cn
-|2,0,1688552920,,"cn"
 :grep selection -g *
 |2,0,1688552917,,"grep selection -g *"
 :grep -g * selection
@@ -146,8 +236,6 @@ $
 |2,0,1688552842,,"e ."
 :MRU vue
 |2,0,1688552839,,"MRU vue"
-:pwd
-|2,0,1688552825,,"pwd"
 :e se
 |2,0,1688552824,,"e se"
 :verbose set isk
@@ -158,8 +246,6 @@ $
 |2,0,1688552690,,"e User.vue"
 :<F1>
 |2,0,1688552580,,"<F1>"
-:bd
-|2,0,1688552561,,"bd"
 :PlugInstall
 |2,0,1688552554,,"PlugInstall"
 :verbose set is
@@ -174,8 +260,6 @@ $
 |2,0,1688552040,,"e clips.py"
 :e videos.py
 |2,0,1688551965,,"e videos.py"
-:e users.py
-|2,0,1688551912,,"e users.py"
 : users.py
 |2,0,1688551732,," users.py"
 :b!# | bd! #
@@ -184,10 +268,6 @@ $
 |2,0,1688551603,,"s/, //g"
 :s/"//g
 |2,0,1688551596,,"s/\"//g"
-:enew
-|2,0,1688551590,,"enew"
-:e twitch_utilities.py
-|2,0,1688551577,,"e twitch_utilities.py"
 :saveas ../../code/usernames.txt
 |2,0,1688551557,,"saveas ../../code/usernames.txt"
 :e usernames.txt
@@ -230,8 +310,6 @@ $
 |2,0,1688531495,,"MRU videos."
 :MRU Vid
 |2,0,1688531292,,"MRU Vid"
-:Template
-|2,0,1688489634,,"Template"
 :MRU Clips
 |2,0,1688489625,,"MRU Clips"
 :MRU vi
@@ -316,10 +394,6 @@ $
 |2,0,1688467451,,"call ExecuteCtrlShiftV()"
 :call 
 |2,0,1688467445,,"call "
-:set nopaste
-|2,0,1688467434,,"set nopaste"
-:set paste
-|2,0,1688467428,,"set paste"
 :normal! i\<Ctrl+v>
 |2,0,1688467382,,"normal! i\\<Ctrl+v>"
 :normal! i<Ctrl+v>
@@ -446,8 +520,6 @@ $
 |2,0,1688406967,,"e data/"
 :grep "\.db" -g *.py 
 |2,0,1688406768,,"grep \"\\.db\" -g *.py "
-:e actions-chat.py
-|2,0,1688406761,,"e actions-chat.py"
 :grep -g *.
 |2,0,1688406758,,"grep -g *."
 :set grepprg
@@ -514,8 +586,6 @@ $
 |2,0,1688367970,,"e re"
 :MRU db.
 |2,0,1688311421,,"MRU db."
-:bd!
-|2,0,1688311357,,"bd!"
 :so k
 |2,0,1688311349,,"so k"
 :828
@@ -642,8 +712,6 @@ $
 |2,0,1685487836,,"CocUninstall "
 :MRU z.sh
 |2,0,1685445838,,"MRU z.sh"
-:w
-|2,0,1685445019,,"w"
 :h fzf
 |2,0,1685398647,,"h fzf"
 :b /home/vivek/.vim/vimrc
@@ -698,8 +766,6 @@ $
 |2,0,1685394706,,"set timeoutlen?"
 :set ttimeoutlen=50
 |2,0,1685394693,,"set ttimeoutlen=50"
-:set 
-|2,0,1685394651,,"set "
 :set timeoutlen=100
 |2,0,1685394648,,"set timeoutlen=100"
 :set c
@@ -834,10 +900,52 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
-?/args
-|2,1,1688678327,47,"args"
+?/dotenv
+|2,1,1688836158,47,"dotenv"
+?/fVnqFMIZjUp8g8UaYYuPTEbnyGCHJ4lsE1
+|2,1,1688814047,47,"fVnqFMIZjUp8g8UaYYuPTEbnyGCHJ4lsE1"
+?/videoOffset
+|2,1,1688808908,47,"videoOffset"
+??break
+|2,1,1688808780,63,"break"
+?/data
+|2,1,1688801678,47,"data"
+?/\(def\|class\)\s\+\w*Block
+|2,1,1688801581,47,"\\(def\\|class\\)\\s\\+\\w*Block"
+?/\(def\|class\)\s\+\w*stitch
+|2,1,1688801239,47,"\\(def\\|class\\)\\s\\+\\w*stitch"
+?/\(def\|class\)\s\+\w*strict
+|2,1,1688801213,47,"\\(def\\|class\\)\\s\\+\\w*strict"
+?/fragment
+|2,1,1688801208,47,"fragment"
+?/edges
+|2,1,1688801205,47,"edges"
+?/ic
+|2,1,1688800689,47,"ic"
+?/\(def\|class\)\s\+\w*gql
+|2,1,1688797038,47,"\\(def\\|class\\)\\s\\+\\w*gql"
+?/\(def\|class\)\s\+\w*post
+|2,1,1688796217,47,"\\(def\\|class\\)\\s\\+\\w*post"
+?/gql
+|2,1,1688795989,47,"gql"
+?/action
+|2,1,1688720004,47,"action"
+?/Source
+|2,1,1688714242,47,"Source"
+?/pov_videos
+|2,1,1688713458,47,"pov_videos"
 ?/portions
-|2,1,1688674582,47,"portions"
+|2,1,1688712283,47,"portions"
+?/portoins
+|2,1,1688712281,47,"portoins"
+?/arg
+|2,1,1688711868,47,"arg"
+?/args
+|2,1,1688711865,47,"args"
+?/<Portion
+|2,1,1688711413,47,"<Portion"
+?/mitt
+|2,1,1688678449,47,"mitt"
 ?/black
 |2,1,1688668695,47,"black"
 ?/event.*
@@ -1074,12 +1182,18 @@ $
 |2,1,1685152394,47,"handle_error"
 
 # Expression History (newest to oldest):
+=expand("%:p:h")
+|2,2,1688707880,,"expand(\"%:p:h\")"
 =g:existing_oldfiles
 |2,2,1688309495,,"g:existing_oldfiles"
 =v:oldfiles
 |2,2,1688309303,,"v:oldfiles"
 
 # Input Line History (newest to oldest):
+@truncate
+|2,3,1688807575,,"truncate"
+@div v-if="debug">
+|2,3,1688714127,,"div v-if=\"debug\">"
 @div class="flex gap-2 items-center"
 |2,3,1688674255,,"div class=\"flex gap-2 items-center\""
 @div class="flex gap-2 items-center flex-wrap">
@@ -1102,405 +1216,751 @@ $
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	CHAR	0
-	this.emitter.emit('event_set_portion', new_portion);
-|3,0,0,0,1,0,1688678284,"this.emitter.emit('event_set_portion', new_portion);"
-""1	LINE	0
-	        'portion': async function (new_portion, old_portion) {
-	            
-	        },
-|3,1,1,1,3,0,1688678290,"        'portion': async function (new_portion, old_portion) {","            ","        },"
+""0	LINE	0
+	    print(
+|3,1,0,1,1,0,1688836064,"    print("
+"1	LINE	0
+	    print(
+|3,0,1,1,1,0,1688836057,"    print("
 "2	LINE	0
-	                    const { id, user_name, user_id } = video;
-	                    return { id, user_name, user_id };
-|3,0,2,1,2,0,1688675698,"                    const { id, user_name, user_id } = video;","                    return { id, user_name, user_id };"
+	    # response = session.post('https://gql.twitch.tv/gql', headers=headers, data=data_string)
+	    # response = requests.post('https://gql.twitch.tv/gql', headers=headers, data=data_string)
+|3,0,2,1,2,0,1688820731,"    # response = session.post('https://gql.twitch.tv/gql', headers=headers, data=data_string)","    # response = requests.post('https://gql.twitch.tv/gql', headers=headers, data=data_string)"
 "3	LINE	0
-	            return 1;
-|3,0,3,1,1,0,1688675638,"            return 1;"
+	
+|3,0,3,1,1,0,1688820731,""
 "4	LINE	0
-	                <div v-else class="flex items-center">
-	                    {{ portions_repr }}
-	                </div>
-|3,0,4,1,3,0,1688675557,"                <div v-else class=\"flex items-center\">","                    {{ portions_repr }}","                </div>"
+	
+|3,0,4,1,1,0,1688820730,""
 "5	LINE	0
-	        data_without_portion() {
-	            this.$data.filter((key) => key !== 'portions');
-|3,0,5,1,2,0,1688675538,"        data_without_portion() {","            this.$data.filter((key) => key !== 'portions');"
+	
+	
+|3,0,5,1,2,0,1688820729,"",""
 "6	LINE	0
-	                const { start, end, type, id } = portion;
-	                return { start, end, type, id };
-|3,0,6,1,2,0,1688675405,"                const { start, end, type, id } = portion;","                return { start, end, type, id };"
+	    session = requests.Session()
+|3,0,6,1,1,0,1688820677,"    session = requests.Session()"
 "7	LINE	0
-	        remove_key_from_dictionaries(key, dictionaries)
-|3,0,7,1,1,0,1688675297,"        remove_key_from_dictionaries(key, dictionaries)"
+	    session.headers.update(headers)
+|3,0,7,1,1,0,1688820676,"    session.headers.update(headers)"
 "8	LINE	0
-	                    <span>{{ key }}: </span>
-	                    <span v-for="portion in value" :key="portion.id">
-	                        <span>{</span>
-	                        <span>"id": {{ portion.id }}</span>
-	                        <span>}</span>
-	                    </span>
-|3,0,8,1,6,0,1688675237,"                    <span>{{ key }}: </span>","                    <span v-for=\"portion in value\" :key=\"portion.id\">","                        <span>{</span>","                        <span>\"id\": {{ portion.id }}</span>","                        <span>}</span>","                    </span>"
+	    global session
+|3,0,8,1,1,0,1688820632,"    global session"
 "9	LINE	0
-	                    <span v-for="portion in value" :key="portion.id">
-	                        {{ portion.id }}
-	                    </span>
-|3,0,9,1,3,0,1688674985,"                    <span v-for=\"portion in value\" :key=\"portion.id\">","                        {{ portion.id }}","                    </span>"
+	    global CONFIG
+|3,0,9,1,1,0,1688820628,"    global CONFIG"
 "s	LINE	0
 	    emits: ['event_set_clip_id', 'event_set_video_id', 'event_set_user_id'],
 |3,0,28,1,1,0,1688545212,"    emits: ['event_set_clip_id', 'event_set_video_id', 'event_set_user_id'],"
 "-	CHAR	0
-	this.emitter.emit('event_set_portion', new_portion);
-|3,0,36,0,1,0,1688678279,"this.emitter.emit('event_set_portion', new_portion);"
+	:
+|3,0,36,0,1,0,1688820705,":"
 
 # File marks:
-'0  102  39  ~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue
-|4,48,102,39,1688678381,"~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue"
-'1  15  8  ~/Twitch/coffee-vps/flask-vue/vuejs/Portions.vue
-|4,49,15,8,1688664050,"~/Twitch/coffee-vps/flask-vue/vuejs/Portions.vue"
-'2  19  8  ~/Twitch/coffee-vps/flask-vue/vuejs/Portions.vue
-|4,50,19,8,1688664050,"~/Twitch/coffee-vps/flask-vue/vuejs/Portions.vue"
-'3  5  4  ~/.eslintrc.json
-|4,51,5,4,1688663323,"~/.eslintrc.json"
-'4  5  4  ~/.eslintrc.json
-|4,52,5,4,1688663323,"~/.eslintrc.json"
-'5  5  4  ~/.eslintrc.json
-|4,53,5,4,1688663323,"~/.eslintrc.json"
-'6  5  4  ~/.eslintrc.json
-|4,54,5,4,1688663323,"~/.eslintrc.json"
-'7  11  0  ~/Twitch/coffee-vps/flask-vue/vuejs/Users.vue
-|4,55,11,0,1688663110,"~/Twitch/coffee-vps/flask-vue/vuejs/Users.vue"
-'8  11  0  ~/Twitch/coffee-vps/flask-vue/vuejs/Users.vue
-|4,56,11,0,1688663110,"~/Twitch/coffee-vps/flask-vue/vuejs/Users.vue"
-'9  11  0  ~/Twitch/coffee-vps/flask-vue/vuejs/Users.vue
-|4,57,11,0,1688663110,"~/Twitch/coffee-vps/flask-vue/vuejs/Users.vue"
+'0  1  0  ~/Twitch/coffee-vps/code/.envrc
+|4,48,1,0,1688836166,"~/Twitch/coffee-vps/code/.envrc"
+'1  1  0  ~/Twitch/coffee-vps/code/requirements.txt
+|4,49,1,0,1688836161,"~/Twitch/coffee-vps/code/requirements.txt"
+'2  1  0  ~/Twitch/coffee-vps/code/requirements.txt
+|4,50,1,0,1688836161,"~/Twitch/coffee-vps/code/requirements.txt"
+'3  550  11  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,51,550,11,1688836085,"~/Twitch/coffee-vps/code/actions-chat.py"
+'4  550  11  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,52,550,11,1688836085,"~/Twitch/coffee-vps/code/actions-chat.py"
+'5  550  11  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,53,550,11,1688836085,"~/Twitch/coffee-vps/code/actions-chat.py"
+'6  550  11  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,54,550,11,1688836085,"~/Twitch/coffee-vps/code/actions-chat.py"
+'7  561  4  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,55,561,4,1688833324,"~/Twitch/coffee-vps/code/actions-chat.py"
+'8  555  4  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,56,555,4,1688833324,"~/Twitch/coffee-vps/code/actions-chat.py"
+'9  561  4  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,57,561,4,1688833324,"~/Twitch/coffee-vps/code/actions-chat.py"
 
 # Jumplist (newest first):
--'  102  39  ~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue
-|4,39,102,39,1688678381,"~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue"
--'  21  4  ~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue
-|4,39,21,4,1688678311,"~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue"
--'  80  11  ~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue
-|4,39,80,11,1688678284,"~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue"
--'  49  52  ~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue
-|4,39,49,52,1688678255,"~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue"
--'  79  8  ~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue
-|4,39,79,8,1688678255,"~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue"
--'  78  9  ~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue
-|4,39,78,9,1688678252,"~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue"
--'  26  13  ~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue
-|4,39,26,13,1688678231,"~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue"
--'  82  8  ~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue
-|4,39,82,8,1688676975,"~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue"
--'  14  11  ~/Twitch/coffee-vps/flask-vue/vuejs/Portions.vue
-|4,39,14,11,1688675971,"~/Twitch/coffee-vps/flask-vue/vuejs/Portions.vue"
--'  20  30  ~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue
-|4,39,20,30,1688675959,"~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue"
--'  42  8  ~/Twitch/coffee-vps/flask-vue/vuejs/Portions.vue
-|4,39,42,8,1688675881,"~/Twitch/coffee-vps/flask-vue/vuejs/Portions.vue"
--'  54  8  ~/Twitch/coffee-vps/flask-vue/vuejs/Portions.vue
-|4,39,54,8,1688674565,"~/Twitch/coffee-vps/flask-vue/vuejs/Portions.vue"
--'  51  12  ~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue
-|4,39,51,12,1688674561,"~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue"
--'  97  16  ~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue
-|4,39,97,16,1688674526,"~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue"
--'  37  4  ~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue
-|4,39,37,4,1688674523,"~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue"
--'  63  62  ~/Twitch/coffee-vps/flask-vue/vuejs/Portions.vue
-|4,39,63,62,1688674493,"~/Twitch/coffee-vps/flask-vue/vuejs/Portions.vue"
--'  57  48  ~/Twitch/coffee-vps/flask-vue/vuejs/Portions.vue
-|4,39,57,48,1688674468,"~/Twitch/coffee-vps/flask-vue/vuejs/Portions.vue"
--'  55  19  ~/Twitch/coffee-vps/flask-vue/vuejs/Portions.vue
-|4,39,55,19,1688674467,"~/Twitch/coffee-vps/flask-vue/vuejs/Portions.vue"
--'  43  16  ~/Twitch/coffee-vps/flask-vue/vuejs/Portions.vue
-|4,39,43,16,1688674464,"~/Twitch/coffee-vps/flask-vue/vuejs/Portions.vue"
--'  38  20  ~/Twitch/coffee-vps/flask-vue/vuejs/Portions.vue
-|4,39,38,20,1688674463,"~/Twitch/coffee-vps/flask-vue/vuejs/Portions.vue"
--'  36  36  ~/Twitch/coffee-vps/flask-vue/vuejs/Portions.vue
-|4,39,36,36,1688674463,"~/Twitch/coffee-vps/flask-vue/vuejs/Portions.vue"
--'  35  0  ~/Twitch/coffee-vps/flask-vue/vuejs/Portions.vue
-|4,39,35,0,1688674460,"~/Twitch/coffee-vps/flask-vue/vuejs/Portions.vue"
--'  21  12  ~/Twitch/coffee-vps/flask-vue/vuejs/Portions.vue
-|4,39,21,12,1688674444,"~/Twitch/coffee-vps/flask-vue/vuejs/Portions.vue"
--'  1  0  ~/Twitch/coffee-vps/flask-vue/vuejs/Portions.vue
-|4,39,1,0,1688674443,"~/Twitch/coffee-vps/flask-vue/vuejs/Portions.vue"
--'  29  55  ~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue
-|4,39,29,55,1688674440,"~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue"
--'  33  29  ~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue
-|4,39,33,29,1688674410,"~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue"
--'  1  0  ~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue
-|4,39,1,0,1688674392,"~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue"
--'  105  39  ~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue
-|4,39,105,39,1688674390,"~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue"
--'  96  47  ~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue
-|4,39,96,47,1688674355,"~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue"
--'  91  20  ~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue
-|4,39,91,20,1688674255,"~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue"
--'  69  34  ~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue
-|4,39,69,34,1688674228,"~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue"
--'  68  37  ~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue
-|4,39,68,37,1688674228,"~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue"
--'  67  27  ~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue
-|4,39,67,27,1688674227,"~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue"
--'  58  34  ~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue
-|4,39,58,34,1688674227,"~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue"
--'  57  36  ~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue
-|4,39,57,36,1688674227,"~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue"
--'  56  20  ~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue
-|4,39,56,20,1688674226,"~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue"
--'  50  15  ~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue
-|4,39,50,15,1688674226,"~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue"
--'  42  8  ~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue
-|4,39,42,8,1688674223,"~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue"
--'  12  13  ~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue
-|4,39,12,13,1688674220,"~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue"
--'  126  0  ~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue
-|4,39,126,0,1688674218,"~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue"
--'  100  51  ~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue
-|4,39,100,51,1688671032,"~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue"
--'  13  12  ~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue
-|4,39,13,12,1688670965,"~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue"
--'  26  25  ~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue
-|4,39,26,25,1688670954,"~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue"
--'  70  78  ~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue
-|4,39,70,78,1688670954,"~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue"
--'  76  81  ~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue
-|4,39,76,81,1688670954,"~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue"
--'  65  20  ~/Twitch/coffee-vps/flask-vue/vuejs/Portions.vue
-|4,39,65,20,1688670920,"~/Twitch/coffee-vps/flask-vue/vuejs/Portions.vue"
--'  67  16  ~/Twitch/coffee-vps/flask-vue/vuejs/Portions.vue
-|4,39,67,16,1688670837,"~/Twitch/coffee-vps/flask-vue/vuejs/Portions.vue"
--'  85  49  ~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue
-|4,39,85,49,1688670799,"~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue"
--'  87  51  ~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue
-|4,39,87,51,1688669448,"~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue"
--'  118  21  ~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue
-|4,39,118,21,1688669434,"~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue"
--'  119  46  ~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue
-|4,39,119,46,1688669364,"~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue"
--'  106  43  ~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue
-|4,39,106,43,1688669364,"~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue"
--'  104  46  ~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue
-|4,39,104,46,1688669363,"~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue"
--'  120  52  ~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue
-|4,39,120,52,1688669353,"~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue"
--'  105  51  ~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue
-|4,39,105,51,1688669352,"~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue"
--'  19  8  ~/Twitch/coffee-vps/flask-vue/vuejs/Portions.vue
-|4,39,19,8,1688664050,"~/Twitch/coffee-vps/flask-vue/vuejs/Portions.vue"
--'  4  4  ~/.eslintrc.json
-|4,39,4,4,1688664046,"~/.eslintrc.json"
--'  16  67  ~/Twitch/coffee-vps/flask-vue/vuejs/Portions.vue
-|4,39,16,67,1688664008,"~/Twitch/coffee-vps/flask-vue/vuejs/Portions.vue"
--'  63  40  ~/Twitch/coffee-vps/flask-vue/vuejs/Portions.vue
-|4,39,63,40,1688663895,"~/Twitch/coffee-vps/flask-vue/vuejs/Portions.vue"
--'  64  40  ~/Twitch/coffee-vps/flask-vue/vuejs/Portions.vue
-|4,39,64,40,1688663865,"~/Twitch/coffee-vps/flask-vue/vuejs/Portions.vue"
--'  26  8  ~/Twitch/coffee-vps/flask-vue/vuejs/Portions.vue
-|4,39,26,8,1688663848,"~/Twitch/coffee-vps/flask-vue/vuejs/Portions.vue"
--'  37  12  ~/Twitch/coffee-vps/flask-vue/vuejs/Portions.vue
-|4,39,37,12,1688663766,"~/Twitch/coffee-vps/flask-vue/vuejs/Portions.vue"
--'  32  90  ~/Twitch/coffee-vps/flask-vue/vuejs/Portions.vue
-|4,39,32,90,1688663734,"~/Twitch/coffee-vps/flask-vue/vuejs/Portions.vue"
--'  28  8  ~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue
-|4,39,28,8,1688663719,"~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue"
--'  93  56  ~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue
-|4,39,93,56,1688663710,"~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue"
--'  29  55  ~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue
-|4,39,29,55,1688663704,"~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue"
--'  30  12  ~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue
-|4,39,30,12,1688663678,"~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue"
--'  40  58  ~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue
-|4,39,40,58,1688663675,"~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue"
--'  35  4  ~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue
-|4,39,35,4,1688663657,"~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue"
--'  88  25  ~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue
-|4,39,88,25,1688663611,"~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue"
--'  1  0  ~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue
-|4,39,1,0,1688663383,"~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue"
--'  21  14  ~/Twitch/coffee-vps/flask-vue/vuejs/actions.html
-|4,39,21,14,1688663381,"~/Twitch/coffee-vps/flask-vue/vuejs/actions.html"
--'  9  28  ~/Twitch/coffee-vps/flask-vue/vuejs/actions.html
-|4,39,9,28,1688663348,"~/Twitch/coffee-vps/flask-vue/vuejs/actions.html"
--'  5  4  ~/.eslintrc.json
-|4,39,5,4,1688663323,"~/.eslintrc.json"
--'  5  4  ~/.eslintrc.json
-|4,39,5,4,1688663323,"~/.eslintrc.json"
--'  1  0  ~/.eslintrc.json
-|4,39,1,0,1688663303,"~/.eslintrc.json"
--'  1  0  ~/.eslintrc.json
-|4,39,1,0,1688663303,"~/.eslintrc.json"
--'  24  6  ~/Twitch/coffee-vps/flask-vue/vuejs/actions.html
-|4,39,24,6,1688663286,"~/Twitch/coffee-vps/flask-vue/vuejs/actions.html"
--'  24  6  ~/Twitch/coffee-vps/flask-vue/vuejs/actions.html
-|4,39,24,6,1688663286,"~/Twitch/coffee-vps/flask-vue/vuejs/actions.html"
--'  1  0  ~/Twitch/coffee-vps/flask-vue/vuejs/actions.html
-|4,39,1,0,1688663201,"~/Twitch/coffee-vps/flask-vue/vuejs/actions.html"
--'  1  0  ~/Twitch/coffee-vps/flask-vue/vuejs/actions.html
-|4,39,1,0,1688663201,"~/Twitch/coffee-vps/flask-vue/vuejs/actions.html"
--'  11  0  ~/Twitch/coffee-vps/flask-vue/vuejs/Users.vue
-|4,39,11,0,1688663110,"~/Twitch/coffee-vps/flask-vue/vuejs/Users.vue"
--'  11  0  ~/Twitch/coffee-vps/flask-vue/vuejs/Users.vue
-|4,39,11,0,1688663110,"~/Twitch/coffee-vps/flask-vue/vuejs/Users.vue"
--'  11  0  ~/Twitch/coffee-vps/flask-vue/vuejs/Users.vue
-|4,39,11,0,1688663110,"~/Twitch/coffee-vps/flask-vue/vuejs/Users.vue"
--'  11  0  ~/Twitch/coffee-vps/flask-vue/vuejs/Users.vue
-|4,39,11,0,1688663110,"~/Twitch/coffee-vps/flask-vue/vuejs/Users.vue"
--'  24  4  ~/Twitch/coffee-vps/flask-vue/vuejs/Users.vue
-|4,39,24,4,1688663053,"~/Twitch/coffee-vps/flask-vue/vuejs/Users.vue"
--'  24  4  ~/Twitch/coffee-vps/flask-vue/vuejs/Users.vue
-|4,39,24,4,1688663053,"~/Twitch/coffee-vps/flask-vue/vuejs/Users.vue"
--'  24  4  ~/Twitch/coffee-vps/flask-vue/vuejs/Users.vue
-|4,39,24,4,1688663053,"~/Twitch/coffee-vps/flask-vue/vuejs/Users.vue"
--'  24  4  ~/Twitch/coffee-vps/flask-vue/vuejs/Users.vue
-|4,39,24,4,1688663053,"~/Twitch/coffee-vps/flask-vue/vuejs/Users.vue"
--'  15  4  ~/Twitch/coffee-vps/flask-vue/vuejs/Users.vue
-|4,39,15,4,1688662994,"~/Twitch/coffee-vps/flask-vue/vuejs/Users.vue"
--'  15  4  ~/Twitch/coffee-vps/flask-vue/vuejs/Users.vue
-|4,39,15,4,1688662994,"~/Twitch/coffee-vps/flask-vue/vuejs/Users.vue"
--'  15  4  ~/Twitch/coffee-vps/flask-vue/vuejs/Users.vue
-|4,39,15,4,1688662994,"~/Twitch/coffee-vps/flask-vue/vuejs/Users.vue"
--'  15  4  ~/Twitch/coffee-vps/flask-vue/vuejs/Users.vue
-|4,39,15,4,1688662994,"~/Twitch/coffee-vps/flask-vue/vuejs/Users.vue"
--'  1  0  ~/Twitch/coffee-vps/flask-vue/vuejs/Users.vue
-|4,39,1,0,1688662927,"~/Twitch/coffee-vps/flask-vue/vuejs/Users.vue"
--'  227  16  ~/Twitch/coffee-vps/flask-vue/vuejs/Chart.vue
-|4,39,227,16,1688662927,"~/Twitch/coffee-vps/flask-vue/vuejs/Chart.vue"
--'  1  0  ~/Twitch/coffee-vps/flask-vue/vuejs/Users.vue
-|4,39,1,0,1688662927,"~/Twitch/coffee-vps/flask-vue/vuejs/Users.vue"
--'  227  16  ~/Twitch/coffee-vps/flask-vue/vuejs/Chart.vue
-|4,39,227,16,1688662927,"~/Twitch/coffee-vps/flask-vue/vuejs/Chart.vue"
--'  1  0  ~/Twitch/coffee-vps/flask-vue/vuejs/Users.vue
-|4,39,1,0,1688662927,"~/Twitch/coffee-vps/flask-vue/vuejs/Users.vue"
--'  227  16  ~/Twitch/coffee-vps/flask-vue/vuejs/Chart.vue
-|4,39,227,16,1688662927,"~/Twitch/coffee-vps/flask-vue/vuejs/Chart.vue"
--'  1  0  ~/Twitch/coffee-vps/flask-vue/vuejs/Users.vue
-|4,39,1,0,1688662927,"~/Twitch/coffee-vps/flask-vue/vuejs/Users.vue"
+-'  1  0  ~/Twitch/coffee-vps/code/.envrc
+|4,39,1,0,1688836166,"~/Twitch/coffee-vps/code/.envrc"
+-'  1  0  ~/Twitch/coffee-vps/code/requirements.txt
+|4,39,1,0,1688836161,"~/Twitch/coffee-vps/code/requirements.txt"
+-'  1  0  ~/Twitch/coffee-vps/code/requirements.txt
+|4,39,1,0,1688836161,"~/Twitch/coffee-vps/code/requirements.txt"
+-'  15  0  ~/Twitch/coffee-vps/code/requirements.txt
+|4,39,15,0,1688836157,"~/Twitch/coffee-vps/code/requirements.txt"
+-'  15  0  ~/Twitch/coffee-vps/code/requirements.txt
+|4,39,15,0,1688836157,"~/Twitch/coffee-vps/code/requirements.txt"
+-'  550  11  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,550,11,1688836085,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  550  11  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,550,11,1688836085,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  550  11  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,550,11,1688836085,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  552  20  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,552,20,1688836064,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  552  20  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,552,20,1688836064,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  552  20  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,552,20,1688836064,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  549  20  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,549,20,1688836060,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  549  20  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,549,20,1688836060,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  549  20  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,549,20,1688836060,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  561  4  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,561,4,1688833324,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  555  4  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,555,4,1688833324,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  561  4  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,561,4,1688833324,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  555  4  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,555,4,1688833324,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  561  4  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,561,4,1688833324,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  555  4  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,555,4,1688833324,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  562  4  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,562,4,1688833319,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  556  4  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,556,4,1688833319,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  562  4  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,562,4,1688833319,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  556  4  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,556,4,1688833319,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  562  4  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,562,4,1688833319,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  556  4  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,556,4,1688833319,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  556  4  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,556,4,1688833319,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  555  0  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,555,0,1688820821,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  555  0  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,555,0,1688820821,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  495  4  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,495,4,1688820817,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  495  4  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,495,4,1688820817,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  495  4  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,495,4,1688820817,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  495  4  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,495,4,1688820817,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  495  4  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,495,4,1688820817,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  495  4  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,495,4,1688820817,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  495  4  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,495,4,1688820751,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  530  8  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,530,8,1688820744,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  539  12  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,539,12,1688820744,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  529  8  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,529,8,1688820744,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  537  12  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,537,12,1688820744,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  530  8  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,530,8,1688820744,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  539  12  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,539,12,1688820744,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  529  8  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,529,8,1688820744,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  537  12  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,537,12,1688820744,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  530  8  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,530,8,1688820744,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  539  12  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,539,12,1688820744,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  529  8  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,529,8,1688820744,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  537  12  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,537,12,1688820744,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  529  8  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,529,8,1688820744,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  537  12  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,537,12,1688820744,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  529  8  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,529,8,1688820744,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  537  12  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,537,12,1688820744,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  529  8  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,529,8,1688820744,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  537  12  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,537,12,1688820744,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  486  4  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,486,4,1688820739,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  486  4  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,486,4,1688820739,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  486  4  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,486,4,1688820739,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  486  4  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,486,4,1688820739,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  486  4  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,486,4,1688820739,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  486  4  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,486,4,1688820739,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  486  4  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,486,4,1688820739,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  498  4  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,498,4,1688820732,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  498  4  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,498,4,1688820732,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  498  4  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,498,4,1688820732,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  498  4  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,498,4,1688820732,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  498  4  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,498,4,1688820732,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  498  4  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,498,4,1688820732,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  498  4  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,498,4,1688820732,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  16  0  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,16,0,1688820613,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  16  0  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,16,0,1688820613,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  16  0  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,16,0,1688820613,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  16  0  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,16,0,1688820613,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  16  0  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,16,0,1688820613,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  16  0  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,16,0,1688820613,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  16  0  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,16,0,1688820613,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  471  15  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,471,15,1688820611,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  471  15  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,471,15,1688820611,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  471  15  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,471,15,1688820611,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  471  15  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,471,15,1688820611,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  471  15  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,471,15,1688820611,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  471  15  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,471,15,1688820611,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  471  15  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,471,15,1688820611,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  474  0  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,474,0,1688820570,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  474  0  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,474,0,1688820570,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  474  0  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,474,0,1688820570,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  474  0  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,474,0,1688820570,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  474  0  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,474,0,1688820570,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  474  0  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,474,0,1688820570,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  474  0  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,474,0,1688820570,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  492  10  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,492,10,1688820548,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  492  10  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,492,10,1688820548,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  492  10  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,492,10,1688820548,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  492  10  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,492,10,1688820548,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  492  10  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,492,10,1688820548,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  492  10  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,492,10,1688820548,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  492  10  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,492,10,1688820548,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  423  4  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,423,4,1688820485,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  423  4  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,423,4,1688820485,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  423  4  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,423,4,1688820485,"~/Twitch/coffee-vps/code/actions-chat.py"
+-'  423  4  ~/Twitch/coffee-vps/code/actions-chat.py
+|4,39,423,4,1688820485,"~/Twitch/coffee-vps/code/actions-chat.py"
 
 # Buffer list:
-%~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue	102	39
-%~/Twitch/coffee-vps/flask-vue/vuejs/Portions.vue	1	0
-%~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue	21	4
+%~/Twitch/coffee-vps/code/.envrc	1	0
 
 # History of marks within files (newest to oldest):
 
-> ~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue
-	*	1688678337	0
-	"	102	39
-	^	70	71
-	.	70	70
-	+	43	12
-	+	88	0
-	+	34	15
-	+	96	0
-	+	97	8
-	+	113	8
-	+	118	52
-	+	56	55
-	+	57	89
-	+	58	16
+> ~/Twitch/coffee-vps/code/.envrc
+	*	1688836163	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/Twitch/coffee-vps/code/requirements.txt
+	*	1688836158	0
+	"	1	0
+	^	15	6
+	.	10	7
+	+	15	5
+	+	10	7
+
+> ~/Twitch/coffee-vps/code/actions-chat.py
+	*	1688836084	0
+	"	550	11
+	^	550	12
+	.	550	11
+	+	55	20
+	+	54	0
+	+	567	0
+	+	1	0
+	+	13	14
+	+	536	4
+	+	537	0
+	+	568	0
+	+	533	15
+	+	522	0
+	+	511	0
+	+	521	9
+	+	533	0
+	+	534	23
+	+	520	54
+	+	519	3
+	+	520	13
+	+	520	14
+	+	520	3
+	+	520	13
+	+	521	14
+	+	536	12
+	+	537	16
+	+	555	0
+	+	518	15
+	+	521	0
+	+	534	0
+	+	546	42
+	+	547	15
+	+	528	34
+	+	547	12
+	+	548	26
+	+	554	0
+	+	12	23
+	+	552	11
+	+	552	23
+	+	523	25
+	+	530	0
+	+	560	0
+	+	561	51
+	+	565	0
+	+	564	0
+	+	561	17
+	+	562	38
+	+	563	32
+	+	561	0
+	+	567	25
+	+	553	17
+	+	552	0
+	+	524	0
+	+	527	21
 	+	20	0
-	+	22	16
-	+	35	17
-	+	112	0
-	+	103	20
-	+	111	27
-	+	21	35
-	+	33	16
-	+	107	0
-	+	107	16
-	+	21	9
-	+	107	0
-	+	107	25
-	+	100	39
-	+	107	0
+	+	563	0
+	+	12	29
+	+	563	0
+	+	537	0
+	+	536	0
+	+	498	32
+	+	498	4
+	+	498	0
+	+	498	45
+	+	498	48
+	+	498	0
+	+	498	10
+	+	474	10
+	+	474	0
+	+	16	0
+	+	487	17
+	+	471	15
+	+	16	0
+	+	474	0
+	+	484	0
+	+	483	0
+	+	489	0
+	+	475	0
+	+	487	0
+	+	473	0
+	+	487	0
+	+	482	0
+	+	479	3
+	+	480	35
+	+	481	4
+	+	485	13
+	+	488	17
+	+	472	18
+	+	498	0
+	+	494	31
+	+	498	0
+	+	498	17
+	+	498	0
+	+	495	74
+	+	498	0
+	+	496	0
+	+	563	0
+	+	529	20
+	+	531	20
+	+	540	7
+	+	549	20
+	+	551	0
+	+	550	11
+
+> ~/Twitch/coffee-vps/code/.direnv/python-3.10.6/lib/python3.10/site-packages/waivek/reltools.py
+	*	1688820169	0
+	"	56	4
+
+> ~/Twitch/coffee-vps/code/tmp.json
+	*	1688820093	0
+	"	38	4
+
+> ~/Twitch/coffee-vps/code/curl_cursor.sh
+	*	1688819123	0
+	"	5	2
+	.	5	0
+	+	1	190
+	+	1	258
+	+	1	57
+	+	1	34
+	+	6	13
+	+	5	0
+	+	2	0
+	+	5	0
+	+	4	0
+	+	5	0
+	+	5	19
+	+	4	19
+	+	5	0
+	+	9	0
+	+	5	0
+	+	4	19
+	+	5	0
+
+> ~/Twitch/coffee-vps/code/curl_integrity.sh
+	*	1688808547	0
+	"	1	5
+	.	3	48
+	+	4	14
+	+	3	0
+	+	4	0
+	+	3	48
+
+> ~/Twitch/coffee-vps/code/curl_gql_comments.sh
+	*	1688808459	0
+	"	4	0
+	^	1	23
+	.	4	0
+	+	22	4
+	+	21	15
+	+	22	0
+	+	21	15
+	+	1	22
+	+	3	0
+	+	4	0
+
+> ~/Twitch/coffee-vps/code/twitch_utilities.py
+	*	1688801248	0
+	"	2015	0
+	^	5192	47
+	.	5347	0
+	+	32	25
+	+	5191	0
+	+	5192	47
+	+	5189	4
+	+	5347	0
+	a	5346	16
+
+> ~/.pdbrc
+	*	1688801183	0
+	"	4	61
+	.	16	0
+	+	1	10
+	+	16	0
+
+> ~/Twitch/coffee-vps/code/curl_sample.sh
+	*	1688796325	0
+	"	1	0
+	^	24	14
+	.	24	14
+	+	1	34
+	+	24	14
+
+> ~/.config/setup.sh
+	*	1688796318	0
+	"	1	0
+	^	28	28
+	.	28	27
+	+	6	68
+	+	7	27
+	+	4	0
+	+	3	1
+	+	10	34
+	+	3	0
+	+	4	0
+	+	12	0
+	+	3	0
+	+	6	0
+	+	2	0
+	+	3	0
+	+	12	0
+	+	4	0
+	+	11	0
+	+	12	1
+	+	8	8
+	+	9	10
+	+	12	155
+	+	12	8
+	+	12	123
+	+	12	0
+	+	15	0
+	+	27	26
+	+	28	27
+
+> ~/Twitch/coffee-vps/code/helix.py
+	*	1688796133	0
+	"	437	21
+
+> ~/Twitch/coffee-vps/code/video_stats.py
+	*	1688796000	0
+	"	346	52
+
+> ~/Twitch/coffee-vps/code/test_chat.py
+	*	1688738574	0
+	"	14	19
+	^	13	27
+	.	13	26
+	+	24	0
+	+	1	0
+	+	8	0
+	+	16	25
+	+	8	16
+	+	9	10
+	+	10	0
+	+	15	45
+	+	14	19
+	+	15	18
+	+	17	9
+	+	6	12
+	+	17	28
+	+	13	26
+
+> ~/Twitch/coffee-vps/code/test_upsert.py
+	*	1688719917	0
+	"	1	0
+
+> ~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue
+	*	1688714749	0
+	"	84	12
+	.	73	0
+	+	113	43
+	+	115	34
+	+	112	34
+	+	115	41
+	+	113	29
+	+	142	30
+	+	113	32
+	+	111	66
+	+	115	70
+	+	41	0
+	+	42	25
+	+	70	35
 	+	104	0
+	+	70	38
+	+	104	34
+	+	70	37
+	+	104	41
+	+	104	0
+	+	76	0
+	+	79	40
+	+	104	0
+	+	80	0
+	+	70	13
+	+	80	21
+	+	81	37
+	+	82	35
+	+	91	28
+	+	92	38
+	+	93	35
+	+	90	0
+	+	101	0
+	+	76	17
+	+	103	34
+	+	104	0
+	+	63	0
+	+	59	14
+	+	59	40
+	+	63	0
+	+	60	31
+	+	61	13
+	+	59	0
+	+	61	18
+	+	63	0
+	+	61	51
+	+	62	18
+	+	58	13
+	+	65	0
+	+	65	30
+	+	66	27
+	+	64	13
+	+	146	0
+	+	154	0
+	+	154	21
+	+	77	12
+	+	78	12
+	+	79	12
+	+	86	16
+	+	87	16
+	+	97	16
+	+	98	16
+	+	146	0
+	+	154	0
+	+	145	0
+	+	89	0
 	+	100	0
-	+	41	24
-	+	99	39
-	+	105	39
-	+	104	25
-	+	105	40
-	+	88	36
-	+	88	43
-	+	88	25
-	+	88	32
-	+	88	48
-	+	88	25
-	+	88	36
-	+	88	41
-	+	88	15
-	+	88	0
-	+	87	39
-	+	89	45
-	+	90	40
-	+	90	31
-	+	90	0
-	+	90	44
-	+	90	40
-	+	90	26
-	+	90	19
-	+	90	20
-	+	89	73
-	+	88	15
-	+	90	16
-	+	88	0
-	+	90	0
-	+	90	43
-	+	90	52
-	+	87	38
-	+	90	57
-	+	90	0
-	+	90	30
-	+	90	37
-	+	90	0
-	+	90	52
-	+	90	0
-	+	60	0
+	+	66	30
+	+	153	39
+	+	55	21
+	+	38	0
+	+	37	24
+	+	132	0
+	+	41	0
+	+	59	0
+	+	65	0
+	+	72	30
+	+	72	25
+	+	76	0
+	+	76	16
+	+	76	0
 	+	72	0
-	+	64	17
-	+	62	15
-	+	64	57
-	+	65	12
-	+	63	61
-	+	66	16
-	+	70	29
-	+	90	32
-	+	72	20
-	+	88	0
-	+	73	30
-	+	88	41
+	+	76	34
+	+	76	38
+	+	76	0
+	+	76	60
+	+	76	79
+	+	76	0
+	+	76	16
+	+	71	16
+	+	76	0
+	+	72	54
+	+	72	73
+	+	76	0
+	+	74	16
+	+	72	65
 	+	73	0
-	+	90	38
-	+	89	20
-	+	90	0
-	+	91	0
-	+	88	45
-	+	89	45
-	+	72	0
-	+	70	0
-	+	67	38
-	+	68	43
-	+	70	34
-	+	67	34
-	+	70	41
-	+	68	29
-	+	92	30
-	+	68	32
-	+	66	66
-	+	70	70
+
+> ~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue
+	*	1688714278	0
+	"	40	5
+	^	70	40
+	.	70	39
+	+	58	0
+	+	19	24
+	+	64	34
+	+	40	45
+	+	40	44
+	+	30	9
+	+	97	47
+	+	82	47
+	+	96	137
+	+	111	149
+	+	111	0
+	+	97	59
+	+	82	54
+	+	97	39
+	+	82	28
+	+	96	0
+	+	111	0
+	+	96	23
+	+	96	0
+	+	84	0
+	+	99	0
+	+	100	27
+	+	109	28
+	+	83	51
+	+	98	52
+	+	82	46
+	+	97	46
+	+	65	0
+	+	63	49
+	+	40	0
+	+	40	28
+	+	19	0
+	+	40	0
+	+	78	0
+	+	76	0
+	+	69	0
+	+	70	38
+	+	74	25
+	+	12	29
+	+	30	0
+	+	29	27
+	+	58	24
+	+	58	36
+	+	58	44
+	+	58	0
+	+	58	34
+	+	58	0
+	+	58	18
+	+	58	0
+	+	12	12
+	+	58	0
+	+	70	39
+	+	71	64
+	+	72	42
+	+	73	42
+	+	74	42
+	+	40	0
+	+	58	15
+	+	12	32
+	+	19	0
+	+	58	0
+	+	70	26
+	+	19	0
+	+	113	0
+	+	64	20
+	+	116	0
+	+	64	0
+	+	12	12
+	+	64	0
+	+	116	0
+	+	117	0
+	+	27	12
+	+	28	12
+	+	29	0
+	+	30	0
+	+	40	0
+	+	46	52
+	+	57	0
+	+	48	53
+	+	52	0
+	+	49	0
+	+	50	0
+	+	49	30
+	+	47	30
+	+	48	16
+	+	49	43
+	+	50	0
+	+	49	24
+	+	46	24
+	+	51	16
+	+	52	19
+	+	56	0
+	+	53	55
+	+	56	0
+	+	54	0
+	+	55	0
+	+	56	0
+	+	70	39
 
 > ~/Twitch/coffee-vps/flask-vue/vuejs/Portions.vue
-	*	1688678327	0
-	"	1	0
-	^	14	22
-	.	38	0
-	+	53	32
-	+	54	36
-	+	43	0
-	+	40	5
-	+	35	55
-	+	68	40
+	*	1688714026	0
+	"	27	8
+	^	27	41
+	.	28	0
+	+	50	32
+	+	51	36
+	+	40	0
+	+	37	5
+	+	32	55
+	+	65	40
 	+	15	54
 	+	15	25
 	+	15	0
@@ -1509,154 +1969,196 @@ $
 	+	15	0
 	+	16	5
 	+	15	75
-	+	36	73
-	+	38	0
-	+	36	87
-	+	38	0
-	+	36	24
-	+	37	26
-	+	37	34
-	+	38	0
-	+	39	0
+	+	33	73
+	+	35	0
+	+	33	87
+	+	35	0
+	+	33	24
+	+	34	26
+	+	34	34
+	+	35	0
+	+	36	0
 	+	27	64
-	+	68	89
+	+	65	89
 	+	15	78
-	+	29	54
-	+	30	0
-	+	28	42
-	+	29	28
-	+	68	32
-	+	68	45
-	+	68	66
-	+	63	120
-	+	72	104
-	+	75	0
-	+	75	97
-	+	75	0
-	+	71	0
-	+	74	20
-	+	64	0
-	+	63	92
-	+	64	51
+	+	27	77
+	+	27	65
+	+	27	51
+	+	65	32
+	+	65	45
+	+	65	66
+	+	60	120
+	+	69	104
+	+	72	0
+	+	72	97
+	+	72	0
+	+	68	0
+	+	71	20
+	+	61	0
+	+	60	92
+	+	61	51
+	+	65	50
+	+	61	21
+	+	65	47
+	+	67	24
 	+	68	50
-	+	64	21
-	+	68	47
-	+	70	24
-	+	71	50
-	+	70	61
-	+	73	21
-	+	71	0
-	+	72	54
-	+	70	68
-	+	68	28
-	+	70	77
-	+	67	0
-	+	65	0
+	+	67	61
+	+	70	21
+	+	68	0
+	+	69	54
+	+	67	68
+	+	65	28
+	+	67	77
+	+	64	0
+	+	62	0
 	+	21	0
 	+	14	21
+	+	32	0
 	+	35	0
-	+	38	0
-
-> ~/Twitch/coffee-vps/flask-vue/vuejs/Portion.vue
-	*	1688678306	0
-	"	21	4
-	.	80	0
-	+	14	22
-	+	20	18
-	+	21	0
-	+	38	64
-	+	44	84
-	+	45	23
-	+	46	0
-	+	58	59
-	+	56	0
-	+	54	0
-	+	53	39
-	+	51	37
-	+	51	39
+	+	45	20
 	+	45	0
-	+	79	0
-	+	21	0
-	+	51	0
-	+	50	0
-	+	49	0
-	+	74	63
-	+	75	63
-	+	76	0
-	+	74	80
-	+	73	35
-	+	102	66
-	+	27	24
-	+	30	0
-	+	102	75
-	+	27	26
-	+	30	32
-	+	30	34
-	+	30	24
-	+	30	68
-	+	30	12
-	+	30	0
-	+	29	0
-	+	12	30
-	+	29	28
-	+	39	5
-	+	43	66
-	+	30	0
-	+	43	0
-	+	29	0
-	+	30	0
-	+	12	18
-	+	53	0
-	+	19	24
-	+	52	0
-	+	19	24
-	+	86	34
-	+	40	45
-	+	41	44
-	+	30	9
-	+	119	47
-	+	104	47
-	+	118	137
-	+	133	149
-	+	133	0
-	+	119	59
-	+	104	54
-	+	119	39
-	+	104	28
-	+	118	0
-	+	133	0
-	+	118	23
-	+	118	0
-	+	106	0
-	+	121	0
-	+	122	27
-	+	131	28
-	+	105	51
-	+	120	52
-	+	104	46
-	+	119	46
-	+	87	0
-	+	85	49
-	+	41	0
-	+	42	28
-	+	20	0
-	+	42	0
-	+	100	0
-	+	98	0
-	+	91	0
-	+	92	38
-	+	96	25
-	+	12	29
-	+	29	0
-	+	28	27
-	+	51	24
-	+	51	36
+	+	27	35
+	+	27	77
+	+	28	0
+
+> ~/Twitch/coffee-vps/flask-vue/vuejs/Clip.vue
+	*	1688711427	0
+	"	24	8
+	^	30	118
+	.	31	0
+	+	71	0
+	+	24	18
+	+	24	26
+	+	70	9
+	+	70	8
+	+	65	0
+	+	14	22
+	+	24	0
+	+	70	19
+	+	24	23
+	+	70	11
+	+	24	19
+	+	70	26
+	+	24	0
+	+	70	0
+	+	65	8
+	+	65	9
+	+	65	0
+	+	65	15
+	+	65	0
+	+	65	45
+	+	65	13
+	+	65	26
+	+	51	8
+	+	65	0
+	+	69	9
 	+	51	44
-	+	51	0
-	+	55	34
-	+	78	0
-	+	80	18
-	+	80	0
+	+	65	53
+	+	68	0
+	+	65	0
+	+	66	53
+	+	65	42
+	+	15	0
+	+	40	55
+	+	41	78
+	+	42	20
+	+	36	20
+	+	36	70
+	+	36	16
+	+	35	9
+	+	21	20
+	+	65	0
+	+	65	66
+	+	65	47
+	+	65	24
+	+	14	19
+	+	36	0
+	+	65	41
+	+	65	40
+	+	27	34
+	+	27	76
+	+	28	31
+	+	28	70
+	+	29	36
+	+	29	80
+	+	32	0
+	+	52	0
+	+	63	17
+	+	60	100
+	+	30	56
+	+	23	0
+	+	22	22
+	+	23	21
+	+	44	36
+	+	30	84
+	+	60	102
+	+	63	0
+	+	60	122
+	+	53	48
+	+	52	12
+	+	30	119
+	+	15	101
+	+	29	82
+	+	41	0
+	+	43	0
+	+	44	0
+	+	52	45
+	+	43	27
+	+	43	0
+	+	45	0
+	+	43	0
+	+	45	0
+	+	44	33
+	+	52	0
+	+	15	98
+	+	30	89
+	+	60	117
+	+	45	0
+	+	46	9
+	+	46	8
+	+	45	0
+	+	46	0
+	+	15	88
+	+	30	82
+	+	60	108
+	+	61	28
+	+	62	42
+	+	59	47
+	+	31	0
+
+> ~/Twitch/coffee-vps/flask-vue/config.json
+	*	1688708010	0
+	"	6	34
+	.	6	35
+	+	1	1
+	+	1	0
+	+	1	31
+	+	1	0
+	+	1	9
+	+	1	30
+	+	1	0
+	+	1	33
+	+	1	0
+	+	1	28
+	+	1	41
+	+	1	32
+	+	1	0
+	+	1	34
+	+	1	45
+	+	1	33
+	+	1	0
+	+	1	28
+	+	1	0
+	+	3	0
+	+	7	9
+	+	7	21
+	+	12	50
+	+	7	0
+	+	6	35
+
+> ~/Twitch/coffee-vps/flask-vue/package-lock.json
+	*	1688678451	0
+	"	897	46
 
 > ~/Twitch/coffee-vps/flask-vue/api.py
 	*	1688667415	0
@@ -1996,124 +2498,6 @@ $
 	+	315	27
 	+	334	0
 
-> ~/Twitch/coffee-vps/code/twitch_utilities.py
-	*	1688562515	0
-	"	377	14
-	^	5192	47
-	.	5347	0
-	+	32	25
-	+	5191	0
-	+	5192	47
-	+	5189	4
-	+	5347	0
-	a	5346	16
-
-> ~/Twitch/coffee-vps/flask-vue/vuejs/Clip.vue
-	*	1688556654	0
-	"	30	8
-	^	58	48
-	.	58	47
-	+	108	0
-	+	1	0
-	+	70	0
-	+	24	18
-	+	24	26
-	+	69	9
-	+	69	8
-	+	64	0
-	+	14	22
-	+	24	0
-	+	69	19
-	+	24	23
-	+	69	11
-	+	24	19
-	+	69	26
-	+	24	0
-	+	69	0
-	+	64	8
-	+	64	9
-	+	64	0
-	+	64	15
-	+	64	0
-	+	64	45
-	+	64	13
-	+	64	26
-	+	50	8
-	+	64	0
-	+	68	9
-	+	50	44
-	+	64	53
-	+	67	0
-	+	64	0
-	+	65	53
-	+	64	42
-	+	15	0
-	+	39	55
-	+	40	78
-	+	41	20
-	+	35	20
-	+	35	70
-	+	35	16
-	+	34	9
-	+	21	20
-	+	64	0
-	+	64	66
-	+	64	47
-	+	64	24
-	+	14	19
-	+	35	0
-	+	64	41
-	+	64	40
-	+	27	34
-	+	27	76
-	+	28	31
-	+	28	70
-	+	29	36
-	+	29	80
-	+	31	0
-	+	51	0
-	+	62	17
-	+	59	100
-	+	30	56
-	+	23	0
-	+	22	22
-	+	23	21
-	+	43	36
-	+	30	84
-	+	59	102
-	+	62	0
-	+	59	122
-	+	52	48
-	+	51	12
-	+	30	119
-	+	15	101
-	+	29	82
-	+	40	0
-	+	42	0
-	+	43	0
-	+	51	45
-	+	42	27
-	+	42	0
-	+	44	0
-	+	42	0
-	+	44	0
-	+	43	33
-	+	51	0
-	+	15	98
-	+	30	89
-	+	59	117
-	+	44	0
-	+	45	9
-	+	45	8
-	+	44	0
-	+	45	0
-	+	15	88
-	+	30	82
-	+	59	108
-	+	60	28
-	+	61	42
-	+	58	47
-
 > ~/Twitch/coffee-vps/flask-vue/vuejs/Selection.vue
 	*	1688554849	0
 	"	1	0
@@ -2418,10 +2802,6 @@ $
 	+	42	0
 	+	39	0
 
-> ~/Twitch/coffee-vps/code/video_stats.py
-	*	1688551962	0
-	"	357	0
-
 > ~/Twitch/coffee-vps/code/users.py
 	*	1688551918	0
 	"	38	0
@@ -2577,37 +2957,6 @@ $
 	+	26	36
 	+	26	80
 	+	27	0
-
-> ~/.config/setup.sh
-	*	1688492300	0
-	"	6	0
-	^	28	28
-	.	28	27
-	+	6	68
-	+	7	27
-	+	4	0
-	+	3	1
-	+	10	34
-	+	3	0
-	+	4	0
-	+	12	0
-	+	3	0
-	+	6	0
-	+	2	0
-	+	3	0
-	+	12	0
-	+	4	0
-	+	11	0
-	+	12	1
-	+	8	8
-	+	9	10
-	+	12	155
-	+	12	8
-	+	12	123
-	+	12	0
-	+	15	0
-	+	27	26
-	+	28	27
 
 > ~/Twitch/coffee-vps/code/auth.py
 	*	1688491822	0
@@ -3105,20 +3454,6 @@ $
 	*	1688408552	0
 	"	231	11
 
-> ~/Twitch/coffee-vps/code/requirements.txt
-	*	1688407875	0
-	"	10	6
-	^	15	6
-	.	10	7
-	+	15	5
-	+	10	7
-
-> ~/Twitch/coffee-vps/code/.envrc
-	*	1688407548	0
-	"	1	0
-	.	1	0
-	+	1	0
-
 > ~/Twitch/coffee-vps/flask-vue/.envrc
 	*	1688407546	0
 	"	2	0
@@ -3132,10 +3467,6 @@ $
 	*	1688406940	0
 	"	46	4
 
-> ~/Twitch/coffee-vps/code/actions-chat.py
-	*	1688406761	0
-	"	1	0
-
 > ~/.config/starship.toml
 	*	1688406493	0
 	"	3	6
@@ -3144,33 +3475,6 @@ $
 	+	1	11
 	+	2	17
 	+	3	6
-
-> ~/Twitch/coffee-vps/flask-vue/config.json
-	*	1688406305	0
-	"	1	0
-	^	7	10
-	.	7	9
-	+	1	1
-	+	1	0
-	+	1	31
-	+	1	0
-	+	1	9
-	+	1	30
-	+	1	0
-	+	1	33
-	+	1	0
-	+	1	28
-	+	1	41
-	+	1	32
-	+	1	0
-	+	1	34
-	+	1	45
-	+	1	33
-	+	1	0
-	+	1	28
-	+	1	0
-	+	3	0
-	+	7	9
 
 > ~/Twitch/coffee-vps/flask-vue/.direnv/python-3.10.6/bin/python
 	*	1688403403	0
