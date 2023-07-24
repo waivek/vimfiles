@@ -435,5 +435,5 @@ command! Py !start python -i C:/Users/vivek/repl.py
 
 
 
-let g:pyindent_searchpair_timeout = 10
+let g:pyindent_searchpair_timeout = 50
 
