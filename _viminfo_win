@@ -20,6 +20,14 @@
 $enumerate(\0)
 
 # Command Line History (newest to oldest):
+:MRU c
+|2,0,1690246232,,"MRU c"
+:bd
+|2,0,1690244593,,"bd"
+:e test.txt
+|2,0,1690244558,,"e test.txt"
+:MRU config
+|2,0,1690244039,,"MRU config"
 :MRU 198:temp\python_summaries.txt
 |2,0,1688310786,,"MRU 198:temp\\python_summaries.txt"
 :MRU 6:db.py
@@ -282,8 +290,6 @@ $enumerate(\0)
 |2,0,1688195137,,"b results"
 :b \Users\vivek\Desktop\ripgrep_manual\python_refactoring_waivek\cfile.txt
 |2,0,1688195135,,"b \\Users\\vivek\\Desktop\\ripgrep_manual\\python_refactoring_waivek\\cfile.txt"
-:bd
-|2,0,1688194720,,"bd"
 :MRU frame
 |2,0,1688194661,,"MRU frame"
 :%s///
@@ -1029,8 +1035,6 @@ $enumerate(\0)
 |2,0,1687767034,,"!start . "
 :MRU setup.
 |2,0,1687766881,,"MRU setup."
-:MRU config
-|2,0,1687762690,,"MRU config"
 :MRU re
 |2,0,1687761968,,"MRU re"
 :e ~/bat/recycle_folder.bat
@@ -30795,18 +30799,18 @@ $enumerate(\0)
 |4,75,10,0,1664397883,"~\\Desktop\\Twitch\\coffee-vps\\flask-vue\\vuejs\\Chart.vue"
 'M  1564  44  C:\Program Files (x86)\Vim\vim82\doc\quickfix.txt
 |4,77,1564,44,1582635887,"C:\\Program Files (x86)\\Vim\\vim82\\doc\\quickfix.txt"
-'0  372  29  ~\vimfiles\ftplugin\python.vim
-|4,48,372,29,1688310698,"~\\vimfiles\\ftplugin\\python.vim"
-'1  372  29  ~\vimfiles\ftplugin\python.vim
-|4,49,372,29,1688310698,"~\\vimfiles\\ftplugin\\python.vim"
-'2  372  29  ~\vimfiles\ftplugin\python.vim
-|4,50,372,29,1688310698,"~\\vimfiles\\ftplugin\\python.vim"
-'3  372  29  ~\vimfiles\ftplugin\python.vim
-|4,51,372,29,1688310698,"~\\vimfiles\\ftplugin\\python.vim"
-'4  372  29  ~\vimfiles\ftplugin\python.vim
-|4,52,372,29,1688310698,"~\\vimfiles\\ftplugin\\python.vim"
-'5  372  29  ~\vimfiles\ftplugin\python.vim
-|4,53,372,29,1688310698,"~\\vimfiles\\ftplugin\\python.vim"
+'0  6  0  ~\vimfiles\config.txt
+|4,48,6,0,1690246239,"~\\vimfiles\\config.txt"
+'1  6  0  ~\vimfiles\config.txt
+|4,49,6,0,1690244636,"~\\vimfiles\\config.txt"
+'2  74  0  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\etc\nginx\sites-available\default
+|4,50,74,0,1690244562,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\etc\\nginx\\sites-available\\default"
+'3  74  0  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\etc\nginx\sites-available\default
+|4,51,74,0,1690244562,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\etc\\nginx\\sites-available\\default"
+'4  74  0  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\etc\nginx\sites-available\default
+|4,52,74,0,1690244562,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\etc\\nginx\\sites-available\\default"
+'5  74  0  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\etc\nginx\sites-available\default
+|4,53,74,0,1690244562,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\etc\\nginx\\sites-available\\default"
 '6  372  29  ~\vimfiles\ftplugin\python.vim
 |4,54,372,29,1688310698,"~\\vimfiles\\ftplugin\\python.vim"
 '7  372  29  ~\vimfiles\ftplugin\python.vim
@@ -30817,6 +30821,52 @@ $enumerate(\0)
 |4,57,372,29,1688310698,"~\\vimfiles\\ftplugin\\python.vim"
 
 # Jumplist (newest first):
+-'  6  0  ~\vimfiles\config.txt
+|4,39,6,0,1690246239,"~\\vimfiles\\config.txt"
+-'  6  0  ~\vimfiles\config.txt
+|4,39,6,0,1690244636,"~\\vimfiles\\config.txt"
+-'  1  0  ~\pip\pip.ini
+|4,39,1,0,1690244609,"~\\pip\\pip.ini"
+-'  1  0  ~\pip\pip.ini
+|4,39,1,0,1690244609,"~\\pip\\pip.ini"
+-'  9  7  ~\vimfiles\config.txt
+|4,39,9,7,1690244608,"~\\vimfiles\\config.txt"
+-'  9  7  ~\vimfiles\config.txt
+|4,39,9,7,1690244608,"~\\vimfiles\\config.txt"
+-'  97  4  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\etc\nginx\sites-available\default
+|4,39,97,4,1690244593,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\etc\\nginx\\sites-available\\default"
+-'  97  4  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\etc\nginx\sites-available\default
+|4,39,97,4,1690244593,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\etc\\nginx\\sites-available\\default"
+-'  74  0  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\etc\nginx\sites-available\default
+|4,39,74,0,1690244562,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\etc\\nginx\\sites-available\\default"
+-'  74  0  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\etc\nginx\sites-available\default
+|4,39,74,0,1690244562,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\etc\\nginx\\sites-available\\default"
+-'  74  0  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\etc\nginx\sites-available\default
+|4,39,74,0,1690244562,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\etc\\nginx\\sites-available\\default"
+-'  1  0  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\etc\nginx\sites-available\default
+|4,39,1,0,1690244543,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\etc\\nginx\\sites-available\\default"
+-'  33  7  ~\vimfiles\config.txt
+|4,39,33,7,1690244543,"~\\vimfiles\\config.txt"
+-'  1  0  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\etc\nginx\sites-available\default
+|4,39,1,0,1690244543,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\etc\\nginx\\sites-available\\default"
+-'  33  7  ~\vimfiles\config.txt
+|4,39,33,7,1690244543,"~\\vimfiles\\config.txt"
+-'  1  0  ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\etc\nginx\sites-available\default
+|4,39,1,0,1690244543,"~\\AppData\\Local\\Packages\\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\\LocalState\\rootfs\\etc\\nginx\\sites-available\\default"
+-'  33  7  ~\vimfiles\config.txt
+|4,39,33,7,1690244543,"~\\vimfiles\\config.txt"
+-'  1  0  ~\vimfiles\config.txt
+|4,39,1,0,1690244039,"~\\vimfiles\\config.txt"
+-'  1  0  ~\vimfiles\config.txt
+|4,39,1,0,1690244039,"~\\vimfiles\\config.txt"
+-'  1  0  ~\vimfiles\config.txt
+|4,39,1,0,1690244039,"~\\vimfiles\\config.txt"
+-'  372  29  ~\vimfiles\ftplugin\python.vim
+|4,39,372,29,1688310698,"~\\vimfiles\\ftplugin\\python.vim"
+-'  372  29  ~\vimfiles\ftplugin\python.vim
+|4,39,372,29,1688310698,"~\\vimfiles\\ftplugin\\python.vim"
+-'  372  29  ~\vimfiles\ftplugin\python.vim
+|4,39,372,29,1688310698,"~\\vimfiles\\ftplugin\\python.vim"
 -'  372  29  ~\vimfiles\ftplugin\python.vim
 |4,39,372,29,1688310698,"~\\vimfiles\\ftplugin\\python.vim"
 -'  372  29  ~\vimfiles\ftplugin\python.vim
@@ -30845,6 +30895,18 @@ $enumerate(\0)
 |4,39,1,0,1688310538,"~\\Desktop\\Twitch\\coffee-vps\\html\\js\\twitch_clips_embed.js"
 -'  1  0  ~\Desktop\Twitch\coffee-vps\html\js\twitch_clips_embed.js
 |4,39,1,0,1688310538,"~\\Desktop\\Twitch\\coffee-vps\\html\\js\\twitch_clips_embed.js"
+-'  1  0  ~\Desktop\Twitch\coffee-vps\html\js\twitch_clips_embed.js
+|4,39,1,0,1688310538,"~\\Desktop\\Twitch\\coffee-vps\\html\\js\\twitch_clips_embed.js"
+-'  1  0  ~\Desktop\Twitch\coffee-vps\html\js\twitch_clips_embed.js
+|4,39,1,0,1688310538,"~\\Desktop\\Twitch\\coffee-vps\\html\\js\\twitch_clips_embed.js"
+-'  1  0  ~\Desktop\Twitch\coffee-vps\html\js\twitch_clips_embed.js
+|4,39,1,0,1688310538,"~\\Desktop\\Twitch\\coffee-vps\\html\\js\\twitch_clips_embed.js"
+-'  394  57  ~\vimfiles\ftplugin\python.vim
+|4,39,394,57,1688310367,"~\\vimfiles\\ftplugin\\python.vim"
+-'  394  57  ~\vimfiles\ftplugin\python.vim
+|4,39,394,57,1688310367,"~\\vimfiles\\ftplugin\\python.vim"
+-'  394  57  ~\vimfiles\ftplugin\python.vim
+|4,39,394,57,1688310367,"~\\vimfiles\\ftplugin\\python.vim"
 -'  394  57  ~\vimfiles\ftplugin\python.vim
 |4,39,394,57,1688310367,"~\\vimfiles\\ftplugin\\python.vim"
 -'  394  57  ~\vimfiles\ftplugin\python.vim
@@ -30873,6 +30935,18 @@ $enumerate(\0)
 |4,39,392,4,1688310366,"~\\vimfiles\\ftplugin\\python.vim"
 -'  392  4  ~\vimfiles\ftplugin\python.vim
 |4,39,392,4,1688310366,"~\\vimfiles\\ftplugin\\python.vim"
+-'  392  4  ~\vimfiles\ftplugin\python.vim
+|4,39,392,4,1688310366,"~\\vimfiles\\ftplugin\\python.vim"
+-'  392  4  ~\vimfiles\ftplugin\python.vim
+|4,39,392,4,1688310366,"~\\vimfiles\\ftplugin\\python.vim"
+-'  392  4  ~\vimfiles\ftplugin\python.vim
+|4,39,392,4,1688310366,"~\\vimfiles\\ftplugin\\python.vim"
+-'  439  0  ~\vimfiles\ftplugin\python.vim
+|4,39,439,0,1688310353,"~\\vimfiles\\ftplugin\\python.vim"
+-'  439  0  ~\vimfiles\ftplugin\python.vim
+|4,39,439,0,1688310353,"~\\vimfiles\\ftplugin\\python.vim"
+-'  439  0  ~\vimfiles\ftplugin\python.vim
+|4,39,439,0,1688310353,"~\\vimfiles\\ftplugin\\python.vim"
 -'  439  0  ~\vimfiles\ftplugin\python.vim
 |4,39,439,0,1688310353,"~\\vimfiles\\ftplugin\\python.vim"
 -'  439  0  ~\vimfiles\ftplugin\python.vim
@@ -30901,6 +30975,12 @@ $enumerate(\0)
 |4,39,15,0,1688310347,"~\\vimfiles\\ftplugin\\python.vim"
 -'  15  0  ~\vimfiles\ftplugin\python.vim
 |4,39,15,0,1688310347,"~\\vimfiles\\ftplugin\\python.vim"
+-'  15  0  ~\vimfiles\ftplugin\python.vim
+|4,39,15,0,1688310347,"~\\vimfiles\\ftplugin\\python.vim"
+-'  15  0  ~\vimfiles\ftplugin\python.vim
+|4,39,15,0,1688310347,"~\\vimfiles\\ftplugin\\python.vim"
+-'  15  0  ~\vimfiles\ftplugin\python.vim
+|4,39,15,0,1688310347,"~\\vimfiles\\ftplugin\\python.vim"
 -'  1  0  ~\Desktop\ripgrep_manual\python_refactoring_waivek\.\everything_python_paths.txt
 |4,39,1,0,1688310342,"~\\Desktop\\ripgrep_manual\\python_refactoring_waivek\\.\\everything_python_paths.txt"
 -'  1  0  ~\Desktop\ripgrep_manual\python_refactoring_waivek\.\everything_python_paths.txt
@@ -30915,6 +30995,12 @@ $enumerate(\0)
 |4,39,1,0,1688310342,"~\\Desktop\\ripgrep_manual\\python_refactoring_waivek\\.\\everything_python_paths.txt"
 -'  1  0  ~\Desktop\ripgrep_manual\python_refactoring_waivek\.\everything_python_paths.txt
 |4,39,1,0,1688310342,"~\\Desktop\\ripgrep_manual\\python_refactoring_waivek\\.\\everything_python_paths.txt"
+-'  1  0  ~\Desktop\ripgrep_manual\python_refactoring_waivek\.\everything_python_paths.txt
+|4,39,1,0,1688310342,"~\\Desktop\\ripgrep_manual\\python_refactoring_waivek\\.\\everything_python_paths.txt"
+-'  1  0  ~\Desktop\ripgrep_manual\python_refactoring_waivek\.\everything_python_paths.txt
+|4,39,1,0,1688310342,"~\\Desktop\\ripgrep_manual\\python_refactoring_waivek\\.\\everything_python_paths.txt"
+-'  1  0  ~\Desktop\ripgrep_manual\python_refactoring_waivek\.\everything_python_paths.txt
+|4,39,1,0,1688310342,"~\\Desktop\\ripgrep_manual\\python_refactoring_waivek\\.\\everything_python_paths.txt"
 -'  1  0  ~\vimfiles\ftplugin\python.vim
 |4,39,1,0,1688310249,"~\\vimfiles\\ftplugin\\python.vim"
 -'  1  0  ~\vimfiles\ftplugin\python.vim
@@ -30931,99 +31017,173 @@ $enumerate(\0)
 |4,39,1,0,1688310249,"~\\vimfiles\\ftplugin\\python.vim"
 -'  1  0  ~\vimfiles\ftplugin\python.vim
 |4,39,1,0,1688310249,"~\\vimfiles\\ftplugin\\python.vim"
--'  52  0  ~\vimfiles\plugin\mru.vim
-|4,39,52,0,1688309554,"~\\vimfiles\\plugin\\mru.vim"
--'  52  0  ~\vimfiles\plugin\mru.vim
-|4,39,52,0,1688309554,"~\\vimfiles\\plugin\\mru.vim"
--'  52  0  ~\vimfiles\plugin\mru.vim
-|4,39,52,0,1688309554,"~\\vimfiles\\plugin\\mru.vim"
--'  52  0  ~\vimfiles\plugin\mru.vim
-|4,39,52,0,1688309554,"~\\vimfiles\\plugin\\mru.vim"
--'  52  0  ~\vimfiles\plugin\mru.vim
-|4,39,52,0,1688309554,"~\\vimfiles\\plugin\\mru.vim"
--'  52  0  ~\vimfiles\plugin\mru.vim
-|4,39,52,0,1688309554,"~\\vimfiles\\plugin\\mru.vim"
--'  52  0  ~\vimfiles\plugin\mru.vim
-|4,39,52,0,1688309554,"~\\vimfiles\\plugin\\mru.vim"
--'  52  0  ~\vimfiles\plugin\mru.vim
-|4,39,52,0,1688309554,"~\\vimfiles\\plugin\\mru.vim"
--'  159  0  ~\vimfiles\plugin\mru.vim
-|4,39,159,0,1688308693,"~\\vimfiles\\plugin\\mru.vim"
--'  159  0  ~\vimfiles\plugin\mru.vim
-|4,39,159,0,1688308693,"~\\vimfiles\\plugin\\mru.vim"
--'  159  0  ~\vimfiles\plugin\mru.vim
-|4,39,159,0,1688308693,"~\\vimfiles\\plugin\\mru.vim"
--'  159  0  ~\vimfiles\plugin\mru.vim
-|4,39,159,0,1688308693,"~\\vimfiles\\plugin\\mru.vim"
--'  159  0  ~\vimfiles\plugin\mru.vim
-|4,39,159,0,1688308693,"~\\vimfiles\\plugin\\mru.vim"
--'  159  0  ~\vimfiles\plugin\mru.vim
-|4,39,159,0,1688308693,"~\\vimfiles\\plugin\\mru.vim"
--'  159  0  ~\vimfiles\plugin\mru.vim
-|4,39,159,0,1688308693,"~\\vimfiles\\plugin\\mru.vim"
--'  159  0  ~\vimfiles\plugin\mru.vim
-|4,39,159,0,1688308693,"~\\vimfiles\\plugin\\mru.vim"
--'  1  0  ~\vimfiles\plugin\mru.vim
-|4,39,1,0,1688308689,"~\\vimfiles\\plugin\\mru.vim"
--'  1  0  ~\vimfiles\plugin\mru.vim
-|4,39,1,0,1688308689,"~\\vimfiles\\plugin\\mru.vim"
--'  1  0  ~\vimfiles\plugin\mru.vim
-|4,39,1,0,1688308689,"~\\vimfiles\\plugin\\mru.vim"
--'  1  0  ~\vimfiles\plugin\mru.vim
-|4,39,1,0,1688308689,"~\\vimfiles\\plugin\\mru.vim"
--'  1  0  ~\vimfiles\plugin\mru.vim
-|4,39,1,0,1688308689,"~\\vimfiles\\plugin\\mru.vim"
--'  1  0  ~\vimfiles\plugin\mru.vim
-|4,39,1,0,1688308689,"~\\vimfiles\\plugin\\mru.vim"
--'  1  0  ~\vimfiles\plugin\mru.vim
-|4,39,1,0,1688308689,"~\\vimfiles\\plugin\\mru.vim"
--'  1  0  ~\vimfiles\plugin\mru.vim
-|4,39,1,0,1688308689,"~\\vimfiles\\plugin\\mru.vim"
--'  81  0  ~\Documents\AutoHotkey\main.ahk
-|4,39,81,0,1688303505,"~\\Documents\\AutoHotkey\\main.ahk"
--'  81  0  ~\Documents\AutoHotkey\main.ahk
-|4,39,81,0,1688303505,"~\\Documents\\AutoHotkey\\main.ahk"
--'  81  0  ~\Documents\AutoHotkey\main.ahk
-|4,39,81,0,1688303505,"~\\Documents\\AutoHotkey\\main.ahk"
--'  81  0  ~\Documents\AutoHotkey\main.ahk
-|4,39,81,0,1688303505,"~\\Documents\\AutoHotkey\\main.ahk"
--'  81  0  ~\Documents\AutoHotkey\main.ahk
-|4,39,81,0,1688303505,"~\\Documents\\AutoHotkey\\main.ahk"
--'  81  0  ~\Documents\AutoHotkey\main.ahk
-|4,39,81,0,1688303505,"~\\Documents\\AutoHotkey\\main.ahk"
--'  81  0  ~\Documents\AutoHotkey\main.ahk
-|4,39,81,0,1688303505,"~\\Documents\\AutoHotkey\\main.ahk"
--'  81  0  ~\Documents\AutoHotkey\main.ahk
-|4,39,81,0,1688303505,"~\\Documents\\AutoHotkey\\main.ahk"
--'  65  9  ~\Documents\AutoHotkey\main.ahk
-|4,39,65,9,1688302948,"~\\Documents\\AutoHotkey\\main.ahk"
--'  65  9  ~\Documents\AutoHotkey\main.ahk
-|4,39,65,9,1688302948,"~\\Documents\\AutoHotkey\\main.ahk"
--'  65  9  ~\Documents\AutoHotkey\main.ahk
-|4,39,65,9,1688302948,"~\\Documents\\AutoHotkey\\main.ahk"
--'  65  9  ~\Documents\AutoHotkey\main.ahk
-|4,39,65,9,1688302948,"~\\Documents\\AutoHotkey\\main.ahk"
--'  65  9  ~\Documents\AutoHotkey\main.ahk
-|4,39,65,9,1688302948,"~\\Documents\\AutoHotkey\\main.ahk"
--'  65  9  ~\Documents\AutoHotkey\main.ahk
-|4,39,65,9,1688302948,"~\\Documents\\AutoHotkey\\main.ahk"
--'  65  9  ~\Documents\AutoHotkey\main.ahk
-|4,39,65,9,1688302948,"~\\Documents\\AutoHotkey\\main.ahk"
--'  65  9  ~\Documents\AutoHotkey\main.ahk
-|4,39,65,9,1688302948,"~\\Documents\\AutoHotkey\\main.ahk"
--'  1  42  ~\Documents\AutoHotkey\main.ahk
-|4,39,1,42,1688302946,"~\\Documents\\AutoHotkey\\main.ahk"
--'  1  42  ~\Documents\AutoHotkey\main.ahk
-|4,39,1,42,1688302946,"~\\Documents\\AutoHotkey\\main.ahk"
+-'  1  0  ~\vimfiles\ftplugin\python.vim
+|4,39,1,0,1688310249,"~\\vimfiles\\ftplugin\\python.vim"
 
 # Buffer list:
-%~\Desktop\ripgrep_manual\python_refactoring_waivek\.\everything_python_paths.txt	1	0
-%~\vimfiles\plugin\mru.vim	303	10
-%~\Documents\AutoHotkey\main.ahk	81	0
+%~\vimfiles\config.txt	6	0
 %~\vimfiles\ftplugin\python.vim	372	29
 %~\Desktop\Twitch\coffee-vps\html\js\twitch_clips_embed.js	1	0
+%~\pip\pip.ini	1	0
 
 # History of marks within files (newest to oldest):
+
+> ~\vimfiles\config.txt
+	*	1690246236	0
+	"	6	0
+	^	34	8
+	.	34	7
+	+	17	4
+	+	17	62
+	+	17	0
+	+	35	33
+	+	17	0
+	+	8	7
+	+	9	7
+	+	6	0
+	+	8	0
+	+	6	14
+	+	11	6
+	+	17	0
+	+	11	7
+	+	11	0
+	+	6	15
+	+	11	0
+	+	13	7
+	+	14	7
+	+	13	6
+	+	14	6
+	+	13	0
+	+	14	0
+	+	17	6
+	+	17	0
+	+	8	0
+	+	17	0
+	+	11	0
+	+	15	0
+	+	6	0
+	+	17	0
+	+	12	0
+	+	36	53
+	+	14	0
+	+	2	29
+	+	5	0
+	+	2	45
+	+	5	0
+	+	2	5
+	+	3	23
+	+	2	66
+	+	5	0
+	+	6	86
+	+	35	129
+	+	33	28
+	+	36	60
+	+	37	0
+	+	30	30
+	+	13	0
+	+	20	14
+	+	21	14
+	+	22	14
+	+	35	131
+	+	20	30
+	+	21	37
+	+	22	50
+	+	17	33
+	+	9	0
+	+	13	0
+	+	2	0
+	+	2	2
+	+	2	0
+	+	9	0
+	+	12	0
+	+	4	119
+	+	34	14
+	+	35	0
+	+	2	0
+	+	33	0
+	+	12	0
+	+	9	0
+	+	37	32
+	+	23	30
+	+	33	0
+	+	27	4
+	+	29	0
+	+	6	0
+	+	20	55
+	+	37	0
+	+	28	4
+	+	24	32
+	+	25	18
+	+	9	0
+	+	10	0
+	+	9	0
+	+	7	0
+	+	1	0
+	+	20	70
+	+	17	0
+	+	24	7
+	+	25	7
+	+	23	7
+	+	20	7
+	+	26	7
+	+	27	7
+	+	28	7
+	+	30	7
+	+	31	7
+	+	32	7
+	+	33	7
+	+	34	7
+
+> ~\pip\pip.ini
+	*	1690244608	0
+	"	1	0
+	^	3	19
+	.	3	18
+	+	2	7
+	+	1	0
+	+	4	32
+	+	5	0
+	+	2	1
+	+	4	0
+	+	2	1
+	+	4	0
+	+	2	9
+	+	3	8
+	+	4	0
+	+	3	18
+
+> ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\etc\nginx\sites-available\default
+	*	1690244592	0
+	"	97	4
+	^	87	33
+	.	87	32
+	+	65	4
+	+	65	7
+	+	65	0
+	+	65	26
+	+	65	0
+	+	65	55
+	+	65	0
+	+	65	9
+	+	65	0
+	+	65	9
+	+	65	0
+	+	37	0
+	+	38	0
+	+	65	5
+	+	63	0
+	+	65	4
+	+	65	0
+	+	64	0
+	+	65	5
+	+	65	0
+	+	49	0
+	+	65	0
+	+	50	0
+	+	63	0
+	+	88	5
+	+	89	0
+	+	87	32
 
 > ~\vimfiles\ftplugin\python.vim
 	*	1688310696	0
@@ -38618,112 +38778,6 @@ $enumerate(\0)
 > ~\Documents\PythonSandbox\venv\Lib\site-packages\common-1.0-py3.10.egg-info\dependency_links.txt
 	*	1687766872	0
 	"	1	0
-
-> ~\vimfiles\config.txt
-	*	1687762695	0
-	"	15	12
-	^	20	71
-	.	17	0
-	+	9	0
-	+	17	129
-	+	17	191
-	+	17	6
-	+	17	15
-	+	17	27
-	+	17	39
-	+	17	49
-	+	17	64
-	+	17	6
-	+	35	0
-	+	17	6
-	+	17	4
-	+	17	62
-	+	17	0
-	+	35	33
-	+	17	0
-	+	8	7
-	+	9	7
-	+	6	0
-	+	8	0
-	+	6	14
-	+	11	6
-	+	17	0
-	+	11	7
-	+	11	0
-	+	6	15
-	+	11	0
-	+	13	7
-	+	14	7
-	+	13	6
-	+	14	6
-	+	13	0
-	+	14	0
-	+	17	6
-	+	17	0
-	+	8	0
-	+	17	0
-	+	11	0
-	+	15	0
-	+	6	0
-	+	17	0
-	+	12	0
-	+	36	53
-	+	14	0
-	+	2	29
-	+	5	0
-	+	2	45
-	+	5	0
-	+	2	5
-	+	3	23
-	+	2	66
-	+	5	0
-	+	6	86
-	+	35	129
-	+	33	28
-	+	36	60
-	+	37	0
-	+	30	30
-	+	13	0
-	+	20	14
-	+	21	14
-	+	22	14
-	+	35	131
-	+	20	30
-	+	21	37
-	+	22	50
-	+	17	33
-	+	9	0
-	+	13	0
-	+	2	0
-	+	2	2
-	+	2	0
-	+	9	0
-	+	12	0
-	+	4	119
-	+	34	14
-	+	35	0
-	+	2	0
-	+	33	0
-	+	12	0
-	+	9	0
-	+	37	32
-	+	23	30
-	+	33	0
-	+	27	4
-	+	29	0
-	+	6	0
-	+	20	55
-	+	37	0
-	+	28	4
-	+	24	32
-	+	25	18
-	+	9	0
-	+	10	0
-	+	9	0
-	+	7	0
-	+	1	0
-	+	20	70
-	+	17	0
 
 > ~\bat\recycle_folder.bat
 	*	1687761967	0
@@ -47865,24 +47919,6 @@ $enumerate(\0)
 > ~\Desktop\backup\backup-vite\.gitignore
 	*	1665017470	0
 	"	1	0
-
-> ~\pip\pip.ini
-	*	1665017234	0
-	"	1	0
-	^	3	19
-	.	3	18
-	+	2	7
-	+	1	0
-	+	4	32
-	+	5	0
-	+	2	1
-	+	4	0
-	+	2	1
-	+	4	0
-	+	2	9
-	+	3	8
-	+	4	0
-	+	3	18
 
 > ~\go\src\onevim\go.sum
 	*	1665016212	0
@@ -58054,39 +58090,6 @@ $enumerate(\0)
 > ~\Desktop\Twitch\coffee-vps\html\css\tailwind.css
 	*	1649607158	0
 	"	68	0
-
-> ~\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\etc\nginx\sites-available\default
-	*	1649592090	0
-	"	96	0
-	^	87	33
-	.	87	32
-	+	65	4
-	+	65	7
-	+	65	0
-	+	65	26
-	+	65	0
-	+	65	55
-	+	65	0
-	+	65	9
-	+	65	0
-	+	65	9
-	+	65	0
-	+	37	0
-	+	38	0
-	+	65	5
-	+	63	0
-	+	65	4
-	+	65	0
-	+	64	0
-	+	65	5
-	+	65	0
-	+	49	0
-	+	65	0
-	+	50	0
-	+	63	0
-	+	88	5
-	+	89	0
-	+	87	32
 
 > ~\Downloads\index-dvr (9).m3u8
 	*	1649591461	0

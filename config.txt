@@ -7,6 +7,7 @@ $APPDATA/Microsoft/Windows/PowerShell/PSReadLine/ConsoleHost_history.txt [WRITE]
 [TODO] $SH/rootfs/etc/php/7.0/fpm/php.ini
 [TODO] ~/.wslconfig
 [TODO] ~/pip/pip.ini
+[TODO] ~/AppData/Local/clink/clink_history
 $APPDATA/Microsoft/Windows/Start Menu/Programs/Startup/wsl_server_start.bat
 ~/.pdbrc
 ~/repl.py
@@ -17,21 +18,21 @@ $APPDATA/Microsoft/Windows/Start Menu/Programs/Startup/wsl_server_start.bat
 
 folder: regex:^.git$ !\plugged !\vimfiles !\neovim !\nvim !\FreeFonts !\Mingw !\github.com !\PyResearchDb
 Git Repositories:
-    [PRIORITY] ~/vimfiles *.vim vimrc coc-settings.json _viminfo [WRITE]
+    [1] [PRIORITY] ~/vimfiles *.vim vimrc coc-settings.json _viminfo [WRITE]
     [PRIORITY] ~/Documents/Python *.py
     [PRIORITY] ~/Desktop/Twitch /html/*.php, /code/*.py
-    [PRIORITY] ~/Desktop/backup
-    [PRIORITY] ~/Documents/config
-    ~/Documents/bat
-    ~/Desktop/website
-    ~/go/src
-    ~/Documents/AutoHotkey
+    [1] [PRIORITY] ~/Desktop/backup
+    [1] [PRIORITY] ~/Documents/config
+    [1] ~/Documents/bat
+    [1] ~/Desktop/website
+    [1] ~/go/src
+    [1] ~/Documents/AutoHotkey
 
-    [TODO] $APPDATA/Everything [WRITE]
-    [TODO] ~/Documents/texts/
-    [TODO] ~/Desktop/live
-    [TODO] ~/.ipython [WRITE]
-    [TODO] $WSL/etc/nginx/sites-available
+    [1] [TODO] $APPDATA/Everything [WRITE]
+    [1] [TODO] ~/Documents/texts/
+    [1] [TODO] ~/Desktop/live
+    [1] [TODO] ~/.ipython [WRITE]
+    [1] [TODO] $WSL/etc/nginx/sites-available
     [TODO] $SH/rootfs/home/waivek (.ssh, .bashrc, .dircolors, .tmux.conf, .profile, .bash_aliases, .inputrc) [WRITE] (.bash_history)
     [TODO] C:/Users/vivek/AppData/Local/dbcli/litecli [WRITE]
 
