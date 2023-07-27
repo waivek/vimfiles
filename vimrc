@@ -37,7 +37,9 @@ endif
 
 filetype indent plugin on | syntax on 
 
+
 call plug#begin()
+" Make sure pyflakes and eslint are installed
 Plug 'dense-analysis/ale'
 " Plug 'neoclide/coc.nvim', { 'tag': 'v0.0.81' }
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }

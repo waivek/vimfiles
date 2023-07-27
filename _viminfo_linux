@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/\C\<offset\>
+~MSle0~/\<sid\>
 
 # Last Substitute Search Pattern:
 ~MSle0&, 
@@ -21,9 +21,55 @@ $
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1689188527,,"q"
+|2,0,1690489069,,"q"
+:MRU 
+|2,0,1690488957,,"MRU "
+:b /home/vivek/.vim/vimrc
+|2,0,1690488865,,"b /home/vivek/.vim/vimrc"
 :qa
-|2,0,1689187637,,"qa"
+|2,0,1690488634,,"qa"
+:PlugInstall
+|2,0,1690488614,,"PlugInstall"
+:so %
+|2,0,1690488611,,"so %"
+:echo expand('<SID>')
+|2,0,1690488551,,"echo expand('<SID>')"
+:h ..
+|2,0,1690488530,,"h .."
+:h SID
+|2,0,1690488467,,"h SID"
+:Copilot status
+|2,0,1690488451,,"Copilot status"
+:echo GetVimIndent()
+|2,0,1690488424,,"echo GetVimIndent()"
+:e plugin/better.vim
+|2,0,1690488413,,"e plugin/better.vim"
+:MRU better
+|2,0,1690488406,,"MRU better"
+:PlugClean
+|2,0,1690488328,,"PlugClean"
+:h PlugInstall
+|2,0,1690488085,,"h PlugInstall"
+:h vim-plug
+|2,0,1690488080,,"h vim-plug"
+:h plug
+|2,0,1690488077,,"h plug"
+:h ale
+|2,0,1690488053,,"h ale"
+:ALEEnable
+|2,0,1690481102,,"ALEEnable"
+:ALEDisable
+|2,0,1690481096,,"ALEDisable"
+:MRU py$
+|2,0,1690481075,,"MRU py$"
+:MRU set
+|2,0,1690481008,,"MRU set"
+:edit $MYVIMRC
+|2,0,1690480691,,"edit $MYVIMRC"
+:h ale-python-pyflakes
+|2,0,1690480552,,"h ale-python-pyflakes"
+:Copilot setup
+|2,0,1690414965,,"Copilot setup"
 :MRU Vid
 |2,0,1689187112,,"MRU Vid"
 :MRU ch
@@ -38,8 +84,6 @@ $
 |2,0,1689186274,,"MRU api"
 :ll
 |2,0,1689185979,,"ll"
-:MRU 
-|2,0,1689184661,,"MRU "
 :MRU 2:package.json
 |2,0,1689184658,,"MRU 2:package.json"
 :MRU 5:actions.html
@@ -178,12 +222,8 @@ $
 |2,0,1688894989,,"echo "
 :echo g:python_indent.search_pair_timeout
 |2,0,1688891856,,"echo g:python_indent.search_pair_timeout"
-:MRU py$
-|2,0,1688891850,,"MRU py$"
 :echo g:python_indent
 |2,0,1688891841,,"echo g:python_indent"
-:so %
-|2,0,1688891829,,"so %"
 :Ftplugin
 |2,0,1688856620,,"Ftplugin"
 :verbose let g:python_indent
@@ -230,8 +270,6 @@ $
 |2,0,1688856282,,"`"
 :set ttimeoutlen=200
 |2,0,1688856280,,"set ttimeoutlen=200"
-:edit $MYVIMRC
-|2,0,1688856267,,"edit $MYVIMRC"
 :MRU ac
 |2,0,1688820098,,"MRU ac"
 :bd!
@@ -378,8 +416,6 @@ $
 |2,0,1688584018,,"MRU 24:0"
 :MRU uti
 |2,0,1688562491,,"MRU uti"
-:Copilot status
-|2,0,1688561854,,"Copilot status"
 :e Ac
 |2,0,1688556517,,"e Ac"
 :save
@@ -416,8 +452,6 @@ $
 |2,0,1688552690,,"e User.vue"
 :<F1>
 |2,0,1688552580,,"<F1>"
-:PlugInstall
-|2,0,1688552554,,"PlugInstall"
 :verbose set is
 |2,0,1688552507,,"verbose set is"
 :MRU Ac
@@ -718,8 +752,6 @@ $
 |2,0,1688393529,,"e index.html"
 :e vuejs/backend.html
 |2,0,1688393468,,"e vuejs/backend.html"
-:MRU set
-|2,0,1688393098,,"MRU set"
 :MRU 37:plugin/statusline.vim
 |2,0,1688390220,,"MRU 37:plugin/statusline.vim"
 :MRU 7:ftplugin/html.vim
@@ -850,8 +882,6 @@ $
 |2,0,1688302210,,"echo g:"
 :echo g:old
 |2,0,1688302208,,"echo g:old"
-:Copilot setup
-|2,0,1685617619,,"Copilot setup"
 :echoconsole -n 'hello'
 |2,0,1685531975,,"echoconsole -n 'hello'"
 :h :echoconsole
@@ -872,8 +902,6 @@ $
 |2,0,1685445838,,"MRU z.sh"
 :h fzf
 |2,0,1685398647,,"h fzf"
-:b /home/vivek/.vim/vimrc
-|2,0,1685398467,,"b /home/vivek/.vim/vimrc"
 :echo &undodir
 |2,0,1685398438,,"echo &undodir"
 :set undodir?
@@ -1054,6 +1082,18 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/sid
+|2,1,1690488414,47,"sid"
+?/\C\<do\>
+|2,1,1690488064,47,"\\C\\<do\\>"
+?/hook
+|2,1,1690488056,47,"hook"
+?/path
+|2,1,1690481009,47,"path"
+?/ale
+|2,1,1690480692,47,"ale"
+?/install
+|2,1,1690480538,47,"install"
 ?/oneliner
 |2,1,1689186922,47,"oneliner"
 ?/print_D
@@ -1418,8 +1458,6 @@ $
 |2,1,1685391710,47,"separator"
 ?/normali
 |2,1,1685391605,47,"normali"
-?/path
-|2,1,1685391589,47,"path"
 ?/preview
 |2,1,1685375366,47,"preview"
 ?/usr
@@ -1442,6 +1480,8 @@ $
 |2,2,1688309303,,"v:oldfiles"
 
 # Input Line History (newest to oldest):
+@y
+|2,3,1690488332,,"y"
 @ic
 |2,3,1688934724,,"ic"
 @ast,linecache
@@ -1472,278 +1512,541 @@ $
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	LINE	0
-	        offset = last_offset
-|3,0,0,1,1,0,1689188403,"        offset = last_offset"
+"0	CHAR	0
+	expand('<SID>') . 'InstallLintTools'
+|3,0,0,0,1,0,1690488592,"expand('<SID>') . 'InstallLintTools'"
 ""1	LINE	0
-	        ic(offset)
-|3,1,1,1,1,0,1689188495,"        ic(offset)"
+	function! s:InstallLintTools(info)
+	    !pip install pyflakes
+	    !npm install -g eslint
+	endfunction
+	
+|3,1,1,1,5,0,1690488874,"function! s:InstallLintTools(info)","    !pip install pyflakes","    !npm install -g eslint","endfunction",""
 "2	LINE	0
-	        offset = last_offset
-|3,0,2,1,1,0,1689188396,"        offset = last_offset"
+	let function_name = expand('<SID>') . 'InstallLintTools'
+|3,0,2,1,1,0,1690488870,"let function_name = expand('<SID>') . 'InstallLintTools'"
 "3	LINE	0
-	        print(
-|3,0,3,1,1,0,1689188227,"        print("
+	let function_name = 'adsfas'
+|3,0,3,1,1,0,1690488609,"let function_name = 'adsfas'"
 "4	LINE	0
-	        i
-|3,0,4,1,1,0,1689187926,"        i"
+	let function_name = expand('<SID>')
+|3,0,4,1,1,0,1690488570,"let function_name = expand('<SID>')"
 "5	LINE	0
-	        if first_offset == 2103:
-	            breakpoint()
-|3,0,5,1,2,0,1689187921,"        if first_offset == 2103:","            breakpoint()"
+	function! s:GetScriptId()
+	
+	endfunction
+|3,0,5,1,3,0,1690488480,"function! s:GetScriptId()","","endfunction"
 "6	LINE	0
-	    write_progress_json(duration, duration, video_id, "Completed")
-|3,0,6,1,1,0,1689186353,"    write_progress_json(duration, duration, video_id, \"Completed\")"
+	let script_id = 
+|3,0,6,1,1,0,1690488451,"let script_id = "
 "7	LINE	0
-	            const response_3 = await fetch(`http://localhost:8000/chat/top_offsets/${new_video_id}`);
-	            const status_code = await response_3.status;
-	            if (status_code == 404) {
-	                this.top_offsets = null;
-	                return;
-	            }
-	            this.top_offsets = await response_3.json();
-|3,0,7,1,7,0,1689186209,"            const response_3 = await fetch(`http://localhost:8000/chat/top_offsets/${new_video_id}`);","            const status_code = await response_3.status;","            if (status_code == 404) {","                this.top_offsets = null;","                return;","            }","            this.top_offsets = await response_3.json();"
+	    print(x)
+|3,0,7,1,1,0,1690481104,"    print(x)"
 "8	LINE	0
-	            fetch(`http://localhost:8000/chat/top_offsets/${this.video_id}`)
-	                .then(response => response.json())
-	                .then(data => this.top_offsets = data);
-|3,0,8,1,3,0,1689186200,"            fetch(`http://localhost:8000/chat/top_offsets/${this.video_id}`)","                .then(response => response.json())","                .then(data => this.top_offsets = data);"
+	    print(x)
+|3,0,8,1,1,0,1690481093,"    print(x)"
 "9	LINE	0
-	                console.log(
-|3,0,9,1,1,0,1689185943,"                console.log("
+	    print(x)
+|3,0,9,1,1,0,1690481091,"    print(x)"
 "s	LINE	0
 	                <button class="bg-yellow-400" @click="do_emit_create_video_portion(video.id, start, end)">Create Portion (video)</button>
 |3,0,28,1,1,0,1689175020,"                <button class=\"bg-yellow-400\" @click=\"do_emit_create_video_portion(video.id, start, end)\">Create Portion (video)</button>"
 "-	CHAR	0
-	last_offset + 1
-|3,0,36,0,1,0,1689188064,"last_offset + 1"
+	, { 'do': function(function_name) }
+|3,0,36,0,1,0,1690488869,", { 'do': function(function_name) }"
 
 # File marks:
-'0  636  8  ~/Twitch/coffee-vps/code/chat.py
-|4,48,636,8,1689188527,"~/Twitch/coffee-vps/code/chat.py"
-'1  657  12  ~/Twitch/coffee-vps/code/chat.py
-|4,49,657,12,1689188406,"~/Twitch/coffee-vps/code/chat.py"
-'2  658  12  ~/Twitch/coffee-vps/code/chat.py
-|4,50,658,12,1689188406,"~/Twitch/coffee-vps/code/chat.py"
-'3  660  27  ~/Twitch/coffee-vps/code/chat.py
-|4,51,660,27,1689188318,"~/Twitch/coffee-vps/code/chat.py"
-'4  660  27  ~/Twitch/coffee-vps/code/chat.py
-|4,52,660,27,1689188318,"~/Twitch/coffee-vps/code/chat.py"
-'5  661  27  ~/Twitch/coffee-vps/code/chat.py
-|4,53,661,27,1689188318,"~/Twitch/coffee-vps/code/chat.py"
-'6  661  27  ~/Twitch/coffee-vps/code/chat.py
-|4,54,661,27,1689188318,"~/Twitch/coffee-vps/code/chat.py"
-'7  639  13  ~/Twitch/coffee-vps/code/chat.py
-|4,55,639,13,1689188281,"~/Twitch/coffee-vps/code/chat.py"
-'8  639  13  ~/Twitch/coffee-vps/code/chat.py
-|4,56,639,13,1689188281,"~/Twitch/coffee-vps/code/chat.py"
-'9  639  13  ~/Twitch/coffee-vps/code/chat.py
-|4,57,639,13,1689188281,"~/Twitch/coffee-vps/code/chat.py"
+'0  11  15  ~/Twitch/.gitignore
+|4,48,11,15,1690489069,"~/Twitch/.gitignore"
+'1  11  5  ~/Twitch/.gitignore
+|4,49,11,5,1690489057,"~/Twitch/.gitignore"
+'2  1  0  ~/.config/setup.sh
+|4,50,1,0,1690489015,"~/.config/setup.sh"
+'3  1  0  ~/.config/setup.sh
+|4,51,1,0,1690489015,"~/.config/setup.sh"
+'4  1  0  ~/.config/setup.sh
+|4,52,1,0,1690489015,"~/.config/setup.sh"
+'5  1  0  ~/.config/setup.sh
+|4,53,1,0,1690489015,"~/.config/setup.sh"
+'6  42  44  ~/.vim/vimrc
+|4,54,42,44,1690488958,"~/.vim/vimrc"
+'7  42  44  ~/.vim/vimrc
+|4,55,42,44,1690488958,"~/.vim/vimrc"
+'8  42  44  ~/.vim/vimrc
+|4,56,42,44,1690488958,"~/.vim/vimrc"
+'9  42  44  ~/.vim/vimrc
+|4,57,42,44,1690488958,"~/.vim/vimrc"
 
 # Jumplist (newest first):
--'  636  8  ~/Twitch/coffee-vps/code/chat.py
-|4,39,636,8,1689188527,"~/Twitch/coffee-vps/code/chat.py"
--'  657  12  ~/Twitch/coffee-vps/code/chat.py
-|4,39,657,12,1689188406,"~/Twitch/coffee-vps/code/chat.py"
--'  658  12  ~/Twitch/coffee-vps/code/chat.py
-|4,39,658,12,1689188406,"~/Twitch/coffee-vps/code/chat.py"
--'  659  12  ~/Twitch/coffee-vps/code/chat.py
-|4,39,659,12,1689188405,"~/Twitch/coffee-vps/code/chat.py"
--'  666  33  ~/Twitch/coffee-vps/code/chat.py
-|4,39,666,33,1689188405,"~/Twitch/coffee-vps/code/chat.py"
--'  660  12  ~/Twitch/coffee-vps/code/chat.py
-|4,39,660,12,1689188405,"~/Twitch/coffee-vps/code/chat.py"
--'  667  33  ~/Twitch/coffee-vps/code/chat.py
-|4,39,667,33,1689188405,"~/Twitch/coffee-vps/code/chat.py"
--'  656  11  ~/Twitch/coffee-vps/code/chat.py
-|4,39,656,11,1689188403,"~/Twitch/coffee-vps/code/chat.py"
--'  657  11  ~/Twitch/coffee-vps/code/chat.py
-|4,39,657,11,1689188403,"~/Twitch/coffee-vps/code/chat.py"
--'  656  11  ~/Twitch/coffee-vps/code/chat.py
-|4,39,656,11,1689188403,"~/Twitch/coffee-vps/code/chat.py"
--'  660  27  ~/Twitch/coffee-vps/code/chat.py
-|4,39,660,27,1689188318,"~/Twitch/coffee-vps/code/chat.py"
--'  661  27  ~/Twitch/coffee-vps/code/chat.py
-|4,39,661,27,1689188318,"~/Twitch/coffee-vps/code/chat.py"
--'  661  27  ~/Twitch/coffee-vps/code/chat.py
-|4,39,661,27,1689188318,"~/Twitch/coffee-vps/code/chat.py"
--'  639  13  ~/Twitch/coffee-vps/code/chat.py
-|4,39,639,13,1689188281,"~/Twitch/coffee-vps/code/chat.py"
--'  639  13  ~/Twitch/coffee-vps/code/chat.py
-|4,39,639,13,1689188281,"~/Twitch/coffee-vps/code/chat.py"
--'  639  13  ~/Twitch/coffee-vps/code/chat.py
-|4,39,639,13,1689188281,"~/Twitch/coffee-vps/code/chat.py"
--'  639  13  ~/Twitch/coffee-vps/code/chat.py
-|4,39,639,13,1689188281,"~/Twitch/coffee-vps/code/chat.py"
--'  662  12  ~/Twitch/coffee-vps/code/chat.py
-|4,39,662,12,1689188264,"~/Twitch/coffee-vps/code/chat.py"
--'  661  12  ~/Twitch/coffee-vps/code/chat.py
-|4,39,661,12,1689188264,"~/Twitch/coffee-vps/code/chat.py"
--'  663  12  ~/Twitch/coffee-vps/code/chat.py
-|4,39,663,12,1689188264,"~/Twitch/coffee-vps/code/chat.py"
--'  663  12  ~/Twitch/coffee-vps/code/chat.py
-|4,39,663,12,1689188264,"~/Twitch/coffee-vps/code/chat.py"
--'  662  12  ~/Twitch/coffee-vps/code/chat.py
-|4,39,662,12,1689188264,"~/Twitch/coffee-vps/code/chat.py"
--'  664  12  ~/Twitch/coffee-vps/code/chat.py
-|4,39,664,12,1689188264,"~/Twitch/coffee-vps/code/chat.py"
--'  663  12  ~/Twitch/coffee-vps/code/chat.py
-|4,39,663,12,1689188264,"~/Twitch/coffee-vps/code/chat.py"
--'  660  14  ~/Twitch/coffee-vps/code/chat.py
-|4,39,660,14,1689188263,"~/Twitch/coffee-vps/code/chat.py"
--'  658  23  ~/Twitch/coffee-vps/code/chat.py
-|4,39,658,23,1689188263,"~/Twitch/coffee-vps/code/chat.py"
--'  657  13  ~/Twitch/coffee-vps/code/chat.py
-|4,39,657,13,1689188263,"~/Twitch/coffee-vps/code/chat.py"
--'  660  14  ~/Twitch/coffee-vps/code/chat.py
-|4,39,660,14,1689188263,"~/Twitch/coffee-vps/code/chat.py"
--'  658  23  ~/Twitch/coffee-vps/code/chat.py
-|4,39,658,23,1689188263,"~/Twitch/coffee-vps/code/chat.py"
--'  657  13  ~/Twitch/coffee-vps/code/chat.py
-|4,39,657,13,1689188263,"~/Twitch/coffee-vps/code/chat.py"
--'  656  18  ~/Twitch/coffee-vps/code/chat.py
-|4,39,656,18,1689188262,"~/Twitch/coffee-vps/code/chat.py"
--'  656  18  ~/Twitch/coffee-vps/code/chat.py
-|4,39,656,18,1689188262,"~/Twitch/coffee-vps/code/chat.py"
--'  665  33  ~/Twitch/coffee-vps/code/chat.py
-|4,39,665,33,1689188250,"~/Twitch/coffee-vps/code/chat.py"
--'  664  33  ~/Twitch/coffee-vps/code/chat.py
-|4,39,664,33,1689188250,"~/Twitch/coffee-vps/code/chat.py"
--'  667  33  ~/Twitch/coffee-vps/code/chat.py
-|4,39,667,33,1689188250,"~/Twitch/coffee-vps/code/chat.py"
--'  664  33  ~/Twitch/coffee-vps/code/chat.py
-|4,39,664,33,1689188250,"~/Twitch/coffee-vps/code/chat.py"
--'  666  33  ~/Twitch/coffee-vps/code/chat.py
-|4,39,666,33,1689188250,"~/Twitch/coffee-vps/code/chat.py"
--'  665  33  ~/Twitch/coffee-vps/code/chat.py
-|4,39,665,33,1689188250,"~/Twitch/coffee-vps/code/chat.py"
--'  668  33  ~/Twitch/coffee-vps/code/chat.py
-|4,39,668,33,1689188250,"~/Twitch/coffee-vps/code/chat.py"
--'  664  33  ~/Twitch/coffee-vps/code/chat.py
-|4,39,664,33,1689188250,"~/Twitch/coffee-vps/code/chat.py"
--'  667  33  ~/Twitch/coffee-vps/code/chat.py
-|4,39,667,33,1689188250,"~/Twitch/coffee-vps/code/chat.py"
--'  594  14  ~/Twitch/coffee-vps/code/chat.py
-|4,39,594,14,1689188214,"~/Twitch/coffee-vps/code/chat.py"
--'  594  14  ~/Twitch/coffee-vps/code/chat.py
-|4,39,594,14,1689188214,"~/Twitch/coffee-vps/code/chat.py"
--'  594  14  ~/Twitch/coffee-vps/code/chat.py
-|4,39,594,14,1689188214,"~/Twitch/coffee-vps/code/chat.py"
--'  594  14  ~/Twitch/coffee-vps/code/chat.py
-|4,39,594,14,1689188214,"~/Twitch/coffee-vps/code/chat.py"
--'  582  27  ~/Twitch/coffee-vps/code/chat.py
-|4,39,582,27,1689188207,"~/Twitch/coffee-vps/code/chat.py"
--'  582  27  ~/Twitch/coffee-vps/code/chat.py
-|4,39,582,27,1689188207,"~/Twitch/coffee-vps/code/chat.py"
--'  582  27  ~/Twitch/coffee-vps/code/chat.py
-|4,39,582,27,1689188207,"~/Twitch/coffee-vps/code/chat.py"
--'  582  27  ~/Twitch/coffee-vps/code/chat.py
-|4,39,582,27,1689188207,"~/Twitch/coffee-vps/code/chat.py"
--'  519  4  ~/Twitch/coffee-vps/code/chat.py
-|4,39,519,4,1689188205,"~/Twitch/coffee-vps/code/chat.py"
--'  519  4  ~/Twitch/coffee-vps/code/chat.py
-|4,39,519,4,1689188205,"~/Twitch/coffee-vps/code/chat.py"
--'  519  4  ~/Twitch/coffee-vps/code/chat.py
-|4,39,519,4,1689188205,"~/Twitch/coffee-vps/code/chat.py"
--'  519  4  ~/Twitch/coffee-vps/code/chat.py
-|4,39,519,4,1689188205,"~/Twitch/coffee-vps/code/chat.py"
--'  650  14  ~/Twitch/coffee-vps/code/chat.py
-|4,39,650,14,1689188195,"~/Twitch/coffee-vps/code/chat.py"
--'  650  14  ~/Twitch/coffee-vps/code/chat.py
-|4,39,650,14,1689188195,"~/Twitch/coffee-vps/code/chat.py"
--'  650  14  ~/Twitch/coffee-vps/code/chat.py
-|4,39,650,14,1689188195,"~/Twitch/coffee-vps/code/chat.py"
--'  650  14  ~/Twitch/coffee-vps/code/chat.py
-|4,39,650,14,1689188195,"~/Twitch/coffee-vps/code/chat.py"
--'  657  30  ~/Twitch/coffee-vps/code/chat.py
-|4,39,657,30,1689188089,"~/Twitch/coffee-vps/code/chat.py"
--'  656  30  ~/Twitch/coffee-vps/code/chat.py
-|4,39,656,30,1689188066,"~/Twitch/coffee-vps/code/chat.py"
--'  658  12  ~/Twitch/coffee-vps/code/chat.py
-|4,39,658,12,1689187956,"~/Twitch/coffee-vps/code/chat.py"
--'  659  12  ~/Twitch/coffee-vps/code/chat.py
-|4,39,659,12,1689187956,"~/Twitch/coffee-vps/code/chat.py"
--'  659  12  ~/Twitch/coffee-vps/code/chat.py
-|4,39,659,12,1689187956,"~/Twitch/coffee-vps/code/chat.py"
--'  659  12  ~/Twitch/coffee-vps/code/chat.py
-|4,39,659,12,1689187956,"~/Twitch/coffee-vps/code/chat.py"
--'  659  12  ~/Twitch/coffee-vps/code/chat.py
-|4,39,659,12,1689187956,"~/Twitch/coffee-vps/code/chat.py"
--'  653  23  ~/Twitch/coffee-vps/code/chat.py
-|4,39,653,23,1689187786,"~/Twitch/coffee-vps/code/chat.py"
--'  654  23  ~/Twitch/coffee-vps/code/chat.py
-|4,39,654,23,1689187786,"~/Twitch/coffee-vps/code/chat.py"
--'  653  23  ~/Twitch/coffee-vps/code/chat.py
-|4,39,653,23,1689187786,"~/Twitch/coffee-vps/code/chat.py"
--'  654  23  ~/Twitch/coffee-vps/code/chat.py
-|4,39,654,23,1689187786,"~/Twitch/coffee-vps/code/chat.py"
--'  653  23  ~/Twitch/coffee-vps/code/chat.py
-|4,39,653,23,1689187786,"~/Twitch/coffee-vps/code/chat.py"
--'  654  23  ~/Twitch/coffee-vps/code/chat.py
-|4,39,654,23,1689187786,"~/Twitch/coffee-vps/code/chat.py"
--'  653  23  ~/Twitch/coffee-vps/code/chat.py
-|4,39,653,23,1689187786,"~/Twitch/coffee-vps/code/chat.py"
--'  654  23  ~/Twitch/coffee-vps/code/chat.py
-|4,39,654,23,1689187786,"~/Twitch/coffee-vps/code/chat.py"
--'  653  23  ~/Twitch/coffee-vps/code/chat.py
-|4,39,653,23,1689187786,"~/Twitch/coffee-vps/code/chat.py"
--'  654  23  ~/Twitch/coffee-vps/code/chat.py
-|4,39,654,23,1689187786,"~/Twitch/coffee-vps/code/chat.py"
--'  653  23  ~/Twitch/coffee-vps/code/chat.py
-|4,39,653,23,1689187786,"~/Twitch/coffee-vps/code/chat.py"
--'  654  23  ~/Twitch/coffee-vps/code/chat.py
-|4,39,654,23,1689187786,"~/Twitch/coffee-vps/code/chat.py"
--'  773  4  ~/Twitch/coffee-vps/code/chat.py
-|4,39,773,4,1689187752,"~/Twitch/coffee-vps/code/chat.py"
--'  771  4  ~/Twitch/coffee-vps/code/chat.py
-|4,39,771,4,1689187752,"~/Twitch/coffee-vps/code/chat.py"
--'  772  4  ~/Twitch/coffee-vps/code/chat.py
-|4,39,772,4,1689187752,"~/Twitch/coffee-vps/code/chat.py"
--'  770  4  ~/Twitch/coffee-vps/code/chat.py
-|4,39,770,4,1689187752,"~/Twitch/coffee-vps/code/chat.py"
--'  769  4  ~/Twitch/coffee-vps/code/chat.py
-|4,39,769,4,1689187752,"~/Twitch/coffee-vps/code/chat.py"
--'  774  4  ~/Twitch/coffee-vps/code/chat.py
-|4,39,774,4,1689187752,"~/Twitch/coffee-vps/code/chat.py"
--'  774  4  ~/Twitch/coffee-vps/code/chat.py
-|4,39,774,4,1689187752,"~/Twitch/coffee-vps/code/chat.py"
--'  772  4  ~/Twitch/coffee-vps/code/chat.py
-|4,39,772,4,1689187752,"~/Twitch/coffee-vps/code/chat.py"
--'  773  4  ~/Twitch/coffee-vps/code/chat.py
-|4,39,773,4,1689187752,"~/Twitch/coffee-vps/code/chat.py"
--'  771  4  ~/Twitch/coffee-vps/code/chat.py
-|4,39,771,4,1689187752,"~/Twitch/coffee-vps/code/chat.py"
--'  770  4  ~/Twitch/coffee-vps/code/chat.py
-|4,39,770,4,1689187752,"~/Twitch/coffee-vps/code/chat.py"
--'  775  4  ~/Twitch/coffee-vps/code/chat.py
-|4,39,775,4,1689187752,"~/Twitch/coffee-vps/code/chat.py"
--'  773  4  ~/Twitch/coffee-vps/code/chat.py
-|4,39,773,4,1689187752,"~/Twitch/coffee-vps/code/chat.py"
--'  774  4  ~/Twitch/coffee-vps/code/chat.py
-|4,39,774,4,1689187752,"~/Twitch/coffee-vps/code/chat.py"
--'  772  4  ~/Twitch/coffee-vps/code/chat.py
-|4,39,772,4,1689187752,"~/Twitch/coffee-vps/code/chat.py"
--'  774  4  ~/Twitch/coffee-vps/code/chat.py
-|4,39,774,4,1689187752,"~/Twitch/coffee-vps/code/chat.py"
--'  772  4  ~/Twitch/coffee-vps/code/chat.py
-|4,39,772,4,1689187752,"~/Twitch/coffee-vps/code/chat.py"
--'  773  4  ~/Twitch/coffee-vps/code/chat.py
-|4,39,773,4,1689187752,"~/Twitch/coffee-vps/code/chat.py"
--'  771  4  ~/Twitch/coffee-vps/code/chat.py
-|4,39,771,4,1689187752,"~/Twitch/coffee-vps/code/chat.py"
--'  773  4  ~/Twitch/coffee-vps/code/chat.py
-|4,39,773,4,1689187752,"~/Twitch/coffee-vps/code/chat.py"
--'  771  4  ~/Twitch/coffee-vps/code/chat.py
-|4,39,771,4,1689187752,"~/Twitch/coffee-vps/code/chat.py"
--'  1  0  ~/Twitch/coffee-vps/code/chat.py
-|4,39,1,0,1689187750,"~/Twitch/coffee-vps/code/chat.py"
--'  1  0  ~/Twitch/coffee-vps/code/chat.py
-|4,39,1,0,1689187750,"~/Twitch/coffee-vps/code/chat.py"
+-'  11  15  ~/Twitch/.gitignore
+|4,39,11,15,1690489069,"~/Twitch/.gitignore"
+-'  11  5  ~/Twitch/.gitignore
+|4,39,11,5,1690489057,"~/Twitch/.gitignore"
+-'  1  0  ~/Twitch/.gitignore
+|4,39,1,0,1690489052,"~/Twitch/.gitignore"
+-'  1  0  ~/Twitch/.gitignore
+|4,39,1,0,1690489052,"~/Twitch/.gitignore"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1690489015,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1690489015,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1690489015,"~/.config/setup.sh"
+-'  42  44  ~/.vim/vimrc
+|4,39,42,44,1690488958,"~/.vim/vimrc"
+-'  42  44  ~/.vim/vimrc
+|4,39,42,44,1690488958,"~/.vim/vimrc"
+-'  42  44  ~/.vim/vimrc
+|4,39,42,44,1690488958,"~/.vim/vimrc"
+-'  42  44  ~/.vim/vimrc
+|4,39,42,44,1690488958,"~/.vim/vimrc"
+-'  41  34  ~/.vim/vimrc
+|4,39,41,34,1690488872,"~/.vim/vimrc"
+-'  41  34  ~/.vim/vimrc
+|4,39,41,34,1690488872,"~/.vim/vimrc"
+-'  41  34  ~/.vim/vimrc
+|4,39,41,34,1690488872,"~/.vim/vimrc"
+-'  41  34  ~/.vim/vimrc
+|4,39,41,34,1690488872,"~/.vim/vimrc"
+-'  1  0  ~/[Plugins] (2)
+|4,39,1,0,1690488865,"~/[Plugins] (2)"
+-'  1  0  ~/[Plugins] (2)
+|4,39,1,0,1690488865,"~/[Plugins] (2)"
+-'  1  0  ~/[Plugins] (2)
+|4,39,1,0,1690488865,"~/[Plugins] (2)"
+-'  1  0  ~/[Plugins] (2)
+|4,39,1,0,1690488865,"~/[Plugins] (2)"
+-'  1  0  ~/[Plugins] (2)
+|4,39,1,0,1690488634,"~/[Plugins] (2)"
+-'  5  0  ~/[Plugins] (2)
+|4,39,5,0,1690488631,"~/[Plugins] (2)"
+-'  5  0  ~/[Plugins] (2)
+|4,39,5,0,1690488631,"~/[Plugins] (2)"
+-'  5  0  ~/[Plugins] (2)
+|4,39,5,0,1690488631,"~/[Plugins] (2)"
+-'  5  0  ~/[Plugins] (2)
+|4,39,5,0,1690488631,"~/[Plugins] (2)"
+-'  5  0  ~/[Plugins] (2)
+|4,39,5,0,1690488631,"~/[Plugins] (2)"
+-'  6  0  ~/[Plugins] (2)
+|4,39,6,0,1690488626,"~/[Plugins] (2)"
+-'  10  0  ~/[Plugins] (2)
+|4,39,10,0,1690488626,"~/[Plugins] (2)"
+-'  18  0  ~/[Plugins] (2)
+|4,39,18,0,1690488626,"~/[Plugins] (2)"
+-'  6  0  ~/[Plugins] (2)
+|4,39,6,0,1690488626,"~/[Plugins] (2)"
+-'  10  0  ~/[Plugins] (2)
+|4,39,10,0,1690488626,"~/[Plugins] (2)"
+-'  18  0  ~/[Plugins] (2)
+|4,39,18,0,1690488626,"~/[Plugins] (2)"
+-'  6  0  ~/[Plugins] (2)
+|4,39,6,0,1690488626,"~/[Plugins] (2)"
+-'  10  0  ~/[Plugins] (2)
+|4,39,10,0,1690488626,"~/[Plugins] (2)"
+-'  18  0  ~/[Plugins] (2)
+|4,39,18,0,1690488626,"~/[Plugins] (2)"
+-'  6  0  ~/[Plugins] (2)
+|4,39,6,0,1690488626,"~/[Plugins] (2)"
+-'  10  0  ~/[Plugins] (2)
+|4,39,10,0,1690488626,"~/[Plugins] (2)"
+-'  18  0  ~/[Plugins] (2)
+|4,39,18,0,1690488626,"~/[Plugins] (2)"
+-'  6  0  ~/[Plugins] (2)
+|4,39,6,0,1690488626,"~/[Plugins] (2)"
+-'  10  0  ~/[Plugins] (2)
+|4,39,10,0,1690488626,"~/[Plugins] (2)"
+-'  18  0  ~/[Plugins] (2)
+|4,39,18,0,1690488626,"~/[Plugins] (2)"
+-'  15  0  ~/[Plugins] (2)
+|4,39,15,0,1690488624,"~/[Plugins] (2)"
+-'  14  0  ~/[Plugins] (2)
+|4,39,14,0,1690488624,"~/[Plugins] (2)"
+-'  13  0  ~/[Plugins] (2)
+|4,39,13,0,1690488624,"~/[Plugins] (2)"
+-'  12  0  ~/[Plugins] (2)
+|4,39,12,0,1690488624,"~/[Plugins] (2)"
+-'  11  0  ~/[Plugins] (2)
+|4,39,11,0,1690488624,"~/[Plugins] (2)"
+-'  15  0  ~/[Plugins] (2)
+|4,39,15,0,1690488624,"~/[Plugins] (2)"
+-'  14  0  ~/[Plugins] (2)
+|4,39,14,0,1690488624,"~/[Plugins] (2)"
+-'  13  0  ~/[Plugins] (2)
+|4,39,13,0,1690488624,"~/[Plugins] (2)"
+-'  12  0  ~/[Plugins] (2)
+|4,39,12,0,1690488624,"~/[Plugins] (2)"
+-'  11  0  ~/[Plugins] (2)
+|4,39,11,0,1690488624,"~/[Plugins] (2)"
+-'  15  0  ~/[Plugins] (2)
+|4,39,15,0,1690488624,"~/[Plugins] (2)"
+-'  14  0  ~/[Plugins] (2)
+|4,39,14,0,1690488624,"~/[Plugins] (2)"
+-'  13  0  ~/[Plugins] (2)
+|4,39,13,0,1690488624,"~/[Plugins] (2)"
+-'  12  0  ~/[Plugins] (2)
+|4,39,12,0,1690488624,"~/[Plugins] (2)"
+-'  11  0  ~/[Plugins] (2)
+|4,39,11,0,1690488624,"~/[Plugins] (2)"
+-'  15  0  ~/[Plugins] (2)
+|4,39,15,0,1690488624,"~/[Plugins] (2)"
+-'  14  0  ~/[Plugins] (2)
+|4,39,14,0,1690488624,"~/[Plugins] (2)"
+-'  13  0  ~/[Plugins] (2)
+|4,39,13,0,1690488624,"~/[Plugins] (2)"
+-'  12  0  ~/[Plugins] (2)
+|4,39,12,0,1690488624,"~/[Plugins] (2)"
+-'  11  0  ~/[Plugins] (2)
+|4,39,11,0,1690488624,"~/[Plugins] (2)"
+-'  15  0  ~/[Plugins] (2)
+|4,39,15,0,1690488624,"~/[Plugins] (2)"
+-'  14  0  ~/[Plugins] (2)
+|4,39,14,0,1690488624,"~/[Plugins] (2)"
+-'  13  0  ~/[Plugins] (2)
+|4,39,13,0,1690488624,"~/[Plugins] (2)"
+-'  12  0  ~/[Plugins] (2)
+|4,39,12,0,1690488624,"~/[Plugins] (2)"
+-'  11  0  ~/[Plugins] (2)
+|4,39,11,0,1690488624,"~/[Plugins] (2)"
+-'  9  0  ~/[Plugins] (2)
+|4,39,9,0,1690488623,"~/[Plugins] (2)"
+-'  9  0  ~/[Plugins] (2)
+|4,39,9,0,1690488623,"~/[Plugins] (2)"
+-'  9  0  ~/[Plugins] (2)
+|4,39,9,0,1690488623,"~/[Plugins] (2)"
+-'  9  0  ~/[Plugins] (2)
+|4,39,9,0,1690488623,"~/[Plugins] (2)"
+-'  9  0  ~/[Plugins] (2)
+|4,39,9,0,1690488623,"~/[Plugins] (2)"
+-'  7  0  ~/[Plugins] (2)
+|4,39,7,0,1690488622,"~/[Plugins] (2)"
+-'  7  0  ~/[Plugins] (2)
+|4,39,7,0,1690488622,"~/[Plugins] (2)"
+-'  7  0  ~/[Plugins] (2)
+|4,39,7,0,1690488622,"~/[Plugins] (2)"
+-'  7  0  ~/[Plugins] (2)
+|4,39,7,0,1690488622,"~/[Plugins] (2)"
+-'  7  0  ~/[Plugins] (2)
+|4,39,7,0,1690488622,"~/[Plugins] (2)"
+-'  3  0  ~/[Plugins] (2)
+|4,39,3,0,1690488621,"~/[Plugins] (2)"
+-'  2  0  ~/[Plugins] (2)
+|4,39,2,0,1690488621,"~/[Plugins] (2)"
+-'  3  0  ~/[Plugins] (2)
+|4,39,3,0,1690488621,"~/[Plugins] (2)"
+-'  2  0  ~/[Plugins] (2)
+|4,39,2,0,1690488621,"~/[Plugins] (2)"
+-'  3  0  ~/[Plugins] (2)
+|4,39,3,0,1690488621,"~/[Plugins] (2)"
+-'  2  0  ~/[Plugins] (2)
+|4,39,2,0,1690488621,"~/[Plugins] (2)"
+-'  3  0  ~/[Plugins] (2)
+|4,39,3,0,1690488621,"~/[Plugins] (2)"
+-'  2  0  ~/[Plugins] (2)
+|4,39,2,0,1690488621,"~/[Plugins] (2)"
+-'  3  0  ~/[Plugins] (2)
+|4,39,3,0,1690488621,"~/[Plugins] (2)"
+-'  2  0  ~/[Plugins] (2)
+|4,39,2,0,1690488621,"~/[Plugins] (2)"
+-'  39  0  ~/.vim/vimrc
+|4,39,39,0,1690488431,"~/.vim/vimrc"
+-'  39  0  ~/.vim/vimrc
+|4,39,39,0,1690488431,"~/.vim/vimrc"
+-'  39  0  ~/.vim/vimrc
+|4,39,39,0,1690488431,"~/.vim/vimrc"
+-'  39  0  ~/.vim/vimrc
+|4,39,39,0,1690488431,"~/.vim/vimrc"
+-'  39  0  ~/.vim/vimrc
+|4,39,39,0,1690488431,"~/.vim/vimrc"
+-'  40  10  ~/.vim/vimrc
+|4,39,40,10,1690488400,"~/.vim/vimrc"
+-'  40  10  ~/.vim/vimrc
+|4,39,40,10,1690488400,"~/.vim/vimrc"
+-'  40  10  ~/.vim/vimrc
+|4,39,40,10,1690488400,"~/.vim/vimrc"
+-'  40  10  ~/.vim/vimrc
+|4,39,40,10,1690488400,"~/.vim/vimrc"
+-'  40  10  ~/.vim/vimrc
+|4,39,40,10,1690488400,"~/.vim/vimrc"
+-'  46  46  ~/.vim/vimrc
+|4,39,46,46,1690488399,"~/.vim/vimrc"
+-'  46  46  ~/.vim/vimrc
+|4,39,46,46,1690488399,"~/.vim/vimrc"
+-'  46  46  ~/.vim/vimrc
+|4,39,46,46,1690488399,"~/.vim/vimrc"
+-'  46  46  ~/.vim/vimrc
+|4,39,46,46,1690488399,"~/.vim/vimrc"
 
 # Buffer list:
-%~/Twitch/coffee-vps/code/chat.py	636	8
+%~/Twitch/.gitignore	11	15
 
 # History of marks within files (newest to oldest):
+
+> ~/Twitch/.gitignore
+	*	1690489069	0
+	"	11	15
+	^	11	16
+	.	11	15
+	+	10	6
+	+	11	15
+
+> ~/.config/setup.sh
+	*	1690488959	0
+	"	1	0
+	^	7	75
+	.	8	0
+	+	9	68
+	+	10	27
+	+	4	0
+	+	3	1
+	+	13	34
+	+	3	0
+	+	4	0
+	+	15	0
+	+	3	0
+	+	9	0
+	+	2	0
+	+	3	0
+	+	15	0
+	+	4	0
+	+	14	0
+	+	15	1
+	+	11	8
+	+	12	10
+	+	15	155
+	+	15	8
+	+	15	123
+	+	15	0
+	+	18	0
+	+	30	26
+	+	31	27
+	+	6	41
+	+	7	23
+	+	8	0
+	+	7	75
+	+	8	0
+
+> ~/.vim/vimrc
+	*	1690488957	0
+	"	42	44
+	^	42	45
+	.	42	44
+	+	51	65
+	+	49	0
+	+	50	7
+	+	51	0
+	+	81	83
+	+	78	1
+	+	79	0
+	+	78	0
+	+	79	0
+	+	54	23
+	+	51	1
+	+	53	0
+	+	51	0
+	+	1321	0
+	+	1326	0
+	+	1321	0
+	+	1320	30
+	+	1321	0
+	+	1325	0
+	+	1323	16
+	+	1324	0
+	+	1331	70
+	+	105	0
+	+	110	22
+	+	107	0
+	+	110	27
+	+	112	0
+	+	111	0
+	+	106	30
+	+	108	13
+	+	107	16
+	+	101	0
+	+	823	19
+	+	823	5
+	+	823	80
+	+	823	22
+	+	823	0
+	+	822	21
+	+	823	28
+	+	822	22
+	+	823	71
+	+	1341	8
+	+	1341	24
+	+	1341	40
+	+	1341	0
+	+	1338	39
+	+	1341	0
+	+	1339	19
+	+	1340	0
+	+	1341	0
+	+	57	0
+	+	43	38
+	+	43	21
+	+	43	0
+	+	41	10
+	+	41	25
+	+	43	0
+	+	41	32
+	+	43	0
+	+	41	10
+	+	43	0
+	+	41	0
+	+	40	25
+	+	40	10
+	+	40	0
+	+	43	60
+	+	41	0
+	+	43	55
+	+	43	0
+	+	41	0
+	+	42	44
+
+> ~/[Plugins] (2)
+	*	1690488862	0
+	"	1	0
+
+> /usr/share/vim/vim90/doc/map.txt
+	*	1690488563	0
+	"	1391	27
+
+> /usr/share/vim/vim90/doc/userfunc.txt
+	*	1690488530	0
+	"	206	32
+
+> ~/.vim/plugin/better.vim
+	*	1690488424	0
+	"	26	15
+
+> /usr/share/vim/vim90/doc/filetype.txt
+	*	1690488409	0
+	"	780	10
+
+> /usr/share/vim/vim90/doc/usr_05.txt
+	*	1690488077	0
+	"	423	40
+
+> ~/.vim/plugged/ale/doc/ale.txt
+	*	1690488073	0
+	"	4450	2
+
+> ~/Twitch/coffee-vps/flask-vue/api.py
+	*	1690481142	0
+	"	17	26
+	^	17	29
+	.	17	0
+	+	158	0
+	+	163	31
+	+	163	76
+	+	166	8
+	+	178	0
+	+	166	25
+	+	172	36
+	+	177	38
+	+	177	29
+	+	177	0
+	+	145	31
+	+	177	0
+	+	172	15
+	+	172	59
+	+	166	18
+	+	172	30
+	+	173	45
+	+	176	0
+	+	164	18
+	+	174	36
+	+	175	20
+	+	171	0
+	+	172	11
+	+	172	0
+	+	172	29
+	+	169	41
+	+	171	36
+	+	169	12
+	+	171	57
+	+	171	0
+	+	167	0
+	+	168	55
+	+	169	13
+	+	172	0
+	+	171	0
+	+	140	0
+	+	127	30
+	+	127	0
+	+	127	49
+	+	127	21
+	+	127	37
+	+	127	0
+	+	8	0
+	+	151	0
+	+	149	17
+	+	151	0
+	+	149	1
+	+	163	0
+	+	161	0
+	+	152	0
+	+	155	0
+	+	160	0
+	+	22	0
+	+	22	10
+	+	20	25
+	+	22	30
+	+	22	10
+	+	22	0
+	+	22	5
+	+	22	0
+	+	29	0
+	+	147	16
+	+	158	45
+	+	158	16
+	+	158	28
+	+	158	23
+	+	162	31
+	+	158	0
+	+	156	0
+	+	157	38
+	+	172	0
+	+	18	35
+	+	89	1
+	+	121	4
+	+	125	66
+	+	127	0
+	+	119	44
+	+	126	35
+	+	18	0
+	+	89	0
+	+	126	0
+	+	128	53
+	+	139	0
+	+	130	0
+	+	138	0
+	+	131	52
+	+	132	37
+	+	137	0
+	+	133	79
+	+	136	0
+	+	134	7
+	+	135	11
+	+	7	0
+	+	21	22
+	+	24	0
+	+	17	0
+
+> ~/.vim/plugged/ale/doc/ale-python.txt
+	*	1690480574	0
+	"	772	7
+
+> ~/.gitconfig
+	*	1690479985	0
+	"	10	0
+	^	25	23
+	.	25	22
+	+	15	0
+	+	31	23
+	+	14	0
+	+	12	0
+	+	25	22
 
 > ~/Twitch/coffee-vps/code/chat.py
 	*	1689188525	0
@@ -1947,112 +2250,6 @@ $
 	+	65	37
 	a	112	69
 	b	112	69
-
-> ~/Twitch/coffee-vps/flask-vue/api.py
-	*	1689186275	0
-	"	1	0
-	^	21	23
-	.	21	22
-	+	162	62
-	+	163	9
-	+	162	63
-	+	163	0
-	+	158	19
-	+	162	81
-	+	158	0
-	+	163	31
-	+	163	76
-	+	166	8
-	+	178	0
-	+	166	25
-	+	172	36
-	+	177	38
-	+	177	29
-	+	177	0
-	+	145	31
-	+	177	0
-	+	172	15
-	+	172	59
-	+	166	18
-	+	172	30
-	+	173	45
-	+	176	0
-	+	164	18
-	+	174	36
-	+	175	20
-	+	171	0
-	+	172	11
-	+	172	0
-	+	172	29
-	+	169	41
-	+	171	36
-	+	169	12
-	+	171	57
-	+	171	0
-	+	167	0
-	+	168	55
-	+	169	13
-	+	172	0
-	+	171	0
-	+	140	0
-	+	127	30
-	+	127	0
-	+	127	49
-	+	127	21
-	+	127	37
-	+	127	0
-	+	8	0
-	+	151	0
-	+	149	17
-	+	151	0
-	+	149	1
-	+	163	0
-	+	161	0
-	+	152	0
-	+	155	0
-	+	160	0
-	+	22	0
-	+	22	10
-	+	20	25
-	+	22	30
-	+	22	10
-	+	22	0
-	+	22	5
-	+	22	0
-	+	29	0
-	+	147	16
-	+	158	45
-	+	158	16
-	+	158	28
-	+	158	23
-	+	162	31
-	+	158	0
-	+	156	0
-	+	157	38
-	+	172	0
-	+	18	35
-	+	89	1
-	+	121	4
-	+	125	66
-	+	127	0
-	+	119	44
-	+	126	35
-	+	18	0
-	+	89	0
-	+	126	0
-	+	128	53
-	+	139	0
-	+	130	0
-	+	138	0
-	+	131	52
-	+	132	37
-	+	137	0
-	+	133	79
-	+	136	0
-	+	134	7
-	+	135	11
-	+	7	0
-	+	21	22
 
 > ~/Twitch/coffee-vps/code/data/offsets/1863704634.json
 	*	1689186061	0
@@ -2748,63 +2945,6 @@ $
 	*	1688856612	0
 	"	14	33
 
-> ~/.vim/vimrc
-	*	1688856301	0
-	"	1346	14
-	^	55	16
-	.	55	0
-	+	49	65
-	+	47	0
-	+	48	7
-	+	49	0
-	+	79	83
-	+	76	1
-	+	77	0
-	+	76	0
-	+	77	0
-	+	52	23
-	+	49	1
-	+	51	0
-	+	49	0
-	+	1319	0
-	+	1324	0
-	+	1319	0
-	+	1318	30
-	+	1319	0
-	+	1323	0
-	+	1321	16
-	+	1322	0
-	+	1329	70
-	+	103	0
-	+	108	22
-	+	105	0
-	+	108	27
-	+	110	0
-	+	109	0
-	+	104	30
-	+	106	13
-	+	105	16
-	+	99	0
-	+	821	19
-	+	821	5
-	+	821	80
-	+	821	22
-	+	821	0
-	+	820	21
-	+	821	28
-	+	820	22
-	+	821	71
-	+	1339	8
-	+	1339	24
-	+	1339	40
-	+	1339	0
-	+	1336	39
-	+	1339	0
-	+	1337	19
-	+	1338	0
-	+	1339	0
-	+	55	0
-
 > /usr/share/vim/vim90/doc/options.txt
 	*	1688856300	0
 	"	8340	6
@@ -2893,37 +3033,6 @@ $
 	.	24	14
 	+	1	34
 	+	24	14
-
-> ~/.config/setup.sh
-	*	1688796318	0
-	"	1	0
-	^	28	28
-	.	28	27
-	+	6	68
-	+	7	27
-	+	4	0
-	+	3	1
-	+	10	34
-	+	3	0
-	+	4	0
-	+	12	0
-	+	3	0
-	+	6	0
-	+	2	0
-	+	3	0
-	+	12	0
-	+	4	0
-	+	11	0
-	+	12	1
-	+	8	8
-	+	9	10
-	+	12	155
-	+	12	8
-	+	12	123
-	+	12	0
-	+	15	0
-	+	27	26
-	+	28	27
 
 > ~/Twitch/coffee-vps/code/helix.py
 	*	1688796133	0
@@ -3988,10 +4097,6 @@ $
 	*	1688468085	0
 	"	1411	5
 
-> /usr/share/vim/vim90/doc/map.txt
-	*	1688467754	0
-	"	1538	30
-
 > ~/.vim/ftplugin/vue.vim
 	*	1688467187	0
 	"	5	4
@@ -4244,13 +4349,6 @@ $
 	.	120	0
 	+	120	0
 
-> ~/Twitch/.gitignore
-	*	1688409595	0
-	"	10	0
-	.	11	0
-	+	10	6
-	+	11	0
-
 > ~/Twitch/coffee-vps/code/.direnv/python-3.10.6/lib/python3.10/site-packages/waivek/get.py
 	*	1688408552	0
 	"	231	11
@@ -4486,17 +4584,6 @@ $
 > /usr/local/bin/gita
 	*	1685447336	0
 	"	1	0
-
-> ~/.gitconfig
-	*	1685446352	0
-	"	1	0
-	^	25	23
-	.	25	22
-	+	15	0
-	+	31	23
-	+	14	0
-	+	12	0
-	+	25	22
 
 > ~/.config/bindings.inputrc
 	*	1685445196	0
