@@ -1,5 +1,8 @@
 {
   "extends": [
     "plugin:vue/base"
-  ]
+  ],
+  "rules": {
+      "vue/comment-directive": 0
+  }
 }
