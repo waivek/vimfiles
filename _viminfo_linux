@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/C:\\Users\\vivek\\AppData\\Roaming\\npm
+~MSle0~/actions
 
 # Last Substitute Search Pattern:
 ~MSle0&, 
@@ -21,7 +21,55 @@ $
 
 # Command Line History (newest to oldest):
 :qa
-|2,0,1690595916,,"qa"
+|2,0,1690596970,,"qa"
+:MRU ide
+|2,0,1690596964,,"MRU ide"
+:CocInstall coc-css
+|2,0,1690596961,,"CocInstall coc-css"
+:echo CocAction('codeActions')
+|2,0,1690596923,,"echo CocAction('codeActions')"
+:call CocAction('codeActions')
+|2,0,1690596888,,"call CocAction('codeActions')"
+:h coc-nvim
+|2,0,1690596873,,"h coc-nvim"
+:CocRestart
+|2,0,1690596834,,"CocRestart"
+:e
+|2,0,1690596828,,"e"
+:b coc-settings.json
+|2,0,1690596787,,"b coc-settings.json"
+:MRU 2:Actions.vue
+|2,0,1690596780,,"MRU 2:Actions.vue"
+:q
+|2,0,1690596777,,"q"
+:MRU Ac
+|2,0,1690596735,,"MRU Ac"
+:b act
+|2,0,1690596734,,"b act"
+:e ac
+|2,0,1690596731,,"e ac"
+:CocConfig
+|2,0,1690596522,,"CocConfig"
+:CocInfo
+|2,0,1690596166,,"CocInfo"
+:b ~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue
+|2,0,1690596155,,"b ~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue"
+:CocInstall  @yaegassy/coc-volar
+|2,0,1690596099,,"CocInstall  @yaegassy/coc-volar"
+:Coc
+|2,0,1690596091,,"Coc"
+:CocInstall
+|2,0,1690596085,,"CocInstall"
+:so %
+|2,0,1690596082,,"so %"
+:b ide
+|2,0,1690596070,,"b ide"
+:CocUninstall coc-vimlsp
+|2,0,1690596032,,"CocUninstall coc-vimlsp"
+:CocUninstall 
+|2,0,1690596028,,"CocUninstall "
+:CocStatus
+|2,0,1690595992,,"CocStatus"
 :e Actions.vue
 |2,0,1690595902,,"e Actions.vue"
 :MRU json
@@ -32,10 +80,6 @@ $
 |2,0,1690595805,,"e "
 :MRU acti
 |2,0,1690595802,,"MRU acti"
-:MRU ide
-|2,0,1690595545,,"MRU ide"
-:q
-|2,0,1690595448,,"q"
 :e /usr/local/
 |2,0,1690595301,,"e /usr/local/"
 :e actions.html
@@ -44,8 +88,6 @@ $
 |2,0,1690595151,,"ALEInfo"
 :MRU vue
 |2,0,1690595048,,"MRU vue"
-:b ide
-|2,0,1690595010,,"b ide"
 :ll
 |2,0,1690594986,,"ll"
 :MRU id
@@ -76,8 +118,6 @@ $
 |2,0,1690488865,,"b /home/vivek/.vim/vimrc"
 :PlugInstall
 |2,0,1690488614,,"PlugInstall"
-:so %
-|2,0,1690488611,,"so %"
 :echo expand('<SID>')
 |2,0,1690488551,,"echo expand('<SID>')"
 :h ..
@@ -126,8 +166,6 @@ $
 |2,0,1689184658,,"MRU 2:package.json"
 :MRU 5:actions.html
 |2,0,1689184655,,"MRU 5:actions.html"
-:e
-|2,0,1689184618,,"e"
 :e requirements.txt
 |2,0,1689184575,,"e requirements.txt"
 :e ../requirements.txt
@@ -190,8 +228,6 @@ $
 |2,0,1689085884,,"grep -g *. "
 :e .
 |2,0,1689085872,,"e ."
-:b act
-|2,0,1688990840,,"b act"
 :set nopaset
 |2,0,1688974032,,"set nopaset"
 :set paset
@@ -478,8 +514,6 @@ $
 |2,0,1688552580,,"<F1>"
 :verbose set is
 |2,0,1688552507,,"verbose set is"
-:MRU Ac
-|2,0,1688552473,,"MRU Ac"
 :MRU 14:Video.vue
 |2,0,1688552414,,"MRU 14:Video.vue"
 :e clips.py
@@ -634,10 +668,6 @@ $
 |2,0,1688467155,,"e ~/.vim/templates/template.vue"
 :F
 |2,0,1688467111,,"F"
-:CocConfig
-|2,0,1688457445,,"CocConfig"
-:CocInfo
-|2,0,1688457403,,"CocInfo"
 :e .sqllsrc.json
 |2,0,1688457386,,"e .sqllsrc.json"
 :MRU 5:.sqllsrc.json
@@ -918,8 +948,6 @@ $
 |2,0,1685531653,,"echo \"\\n\""
 :message
 |2,0,1685528990,,"message"
-:CocUninstall 
-|2,0,1685487836,,"CocUninstall "
 :MRU z.sh
 |2,0,1685445838,,"MRU z.sh"
 :h fzf
@@ -1066,8 +1094,6 @@ $
 |2,0,1685390712,,"e common.egg-info/"
 :MRU perfo
 |2,0,1685390613,,"MRU perfo"
-:Coc
-|2,0,1685390541,,"Coc"
 :lopen
 |2,0,1685390512,,"lopen"
 :e ic.py
@@ -1102,6 +1128,14 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/actions
+|2,1,1690596898,47,"actions"
+?/action
+|2,1,1690596875,47,"action"
+??action
+|2,1,1690596854,63,"action"
+?/vue
+|2,1,1690596000,47,"vue"
 ?/eslint
 |2,1,1690594850,47,"eslint"
 ?/sid
@@ -1254,8 +1288,6 @@ $
 |2,1,1688796217,47,"\\(def\\|class\\)\\s\\+\\w*post"
 ?/gql
 |2,1,1688795989,47,"gql"
-?/action
-|2,1,1688720004,47,"action"
 ?/Source
 |2,1,1688714242,47,"Source"
 ?/pov_videos
@@ -1534,283 +1566,516 @@ $
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	CHAR	0
-	 
-|3,0,0,0,1,0,1690595885," "
-"1	LINE	0
-	
-|3,0,1,1,1,0,1690595894,""
+"0	LINE	0
+	    "tailwindCSS.validate": true,
+|3,0,0,1,1,0,1690596545,"    \"tailwindCSS.validate\": true,"
+""1	LINE	0
+	    "editor.quickSuggestions": {
+	        "strings": true
+	    },
+|3,1,1,1,3,0,1690596820,"    \"editor.quickSuggestions\": {","        \"strings\": true","    },"
 "2	LINE	0
-	    let g:ale_esl
-|3,0,2,1,1,0,1690595313,"    let g:ale_esl"
+	    unknownAtRules
+|3,0,2,1,1,0,1690596817,"    unknownAtRules"
 "3	LINE	0
-	    let g:ale_javascript_eslint_options='--resolve-plugins-relative-to=/Users/vivek/.npm'
-|3,0,3,1,1,0,1690595251,"    let g:ale_javascript_eslint_options='--resolve-plugins-relative-to=/Users/vivek/.npm'"
+	    "css.lint.unknownAtRules": "ignore",
+|3,0,3,1,1,0,1690596774,"    \"css.lint.unknownAtRules\": \"ignore\","
 "4	LINE	0
-	let g:ale_javascript_eslint_options='--config ~/.vim/lint/eslint_config.json'
-|3,0,4,1,1,0,1690595250,"let g:ale_javascript_eslint_options='--config ~/.vim/lint/eslint_config.json'"
+	    unkno
+|3,0,4,1,1,0,1690596659,"    unkno"
 "5	LINE	0
-	
-|3,0,5,1,1,0,1690594957,""
-"6	BLOCK	1
-	" 
-	" 
-	" 
-	" 
-	" 
-|3,0,6,2,5,1,1690594956,"\" ","\" ","\" ","\" ","\" "
+	    "tailwindCSS.validate": true,
+|3,0,5,1,1,0,1690596546,"    \"tailwindCSS.validate\": true,"
+"6	LINE	0
+	    "tailwindCSS.validate": true,
+|3,0,6,1,1,0,1690596537,"    \"tailwindCSS.validate\": true,"
 "7	LINE	0
-	let g:ale_javascript_eslint_options=
-|3,0,7,1,1,0,1690594935,"let g:ale_javascript_eslint_options="
+	export default {
+|3,0,7,1,1,0,1690596495,"export default {"
 "8	LINE	0
-	let g:ale_javascript_eslint_options='--resolve-plugins-relative-to=C:\Users\vivek\AppData\Roaming\npm'
-|3,0,8,1,1,0,1690594900,"let g:ale_javascript_eslint_options='--resolve-plugins-relative-to=C:\\Users\\vivek\\AppData\\Roaming\\npm'"
+	export default {
+|3,0,8,1,1,0,1690596479,"export default {"
 "9	LINE	0
-	let g
-|3,0,9,1,1,0,1690594891,"let g"
+	import Clips from './Clips.vue'
+|3,0,9,1,1,0,1690596431,"import Clips from './Clips.vue'"
 "s	LINE	0
 	                <button class="bg-yellow-400" @click="do_emit_create_video_portion(video.id, start, end)">Create Portion (video)</button>
 |3,0,28,1,1,0,1689175020,"                <button class=\"bg-yellow-400\" @click=\"do_emit_create_video_portion(video.id, start, end)\">Create Portion (video)</button>"
-""-	CHAR	0
-	,
-|3,1,36,0,1,0,1690595904,","
+"-	CHAR	0
+	ClipsVue
+|3,0,36,0,1,0,1690596469,"ClipsVue"
 
 # File marks:
-'0  1  0  ~/.vim/lint/eslint_config.json
-|4,48,1,0,1690595916,"~/.vim/lint/eslint_config.json"
-'1  11  12  ~/.vim/.gitignore
-|4,49,11,12,1690595448,"~/.vim/.gitignore"
-'2  11  12  ~/.vim/.gitignore
-|4,50,11,12,1690595448,"~/.vim/.gitignore"
-'3  170  80  ~/.vim/ide.vim
-|4,51,170,80,1690595346,"~/.vim/ide.vim"
-'4  170  80  ~/.vim/ide.vim
-|4,52,170,80,1690595346,"~/.vim/ide.vim"
-'5  170  80  ~/.vim/ide.vim
-|4,53,170,80,1690595346,"~/.vim/ide.vim"
-'6  170  80  ~/.vim/ide.vim
-|4,54,170,80,1690595346,"~/.vim/ide.vim"
-'7  28  5  ~/Twitch/coffee-vps/flask-vue/vuejs/Video.vue
-|4,55,28,5,1690595168,"~/Twitch/coffee-vps/flask-vue/vuejs/Video.vue"
-'8  28  5  ~/Twitch/coffee-vps/flask-vue/vuejs/Video.vue
-|4,56,28,5,1690595168,"~/Twitch/coffee-vps/flask-vue/vuejs/Video.vue"
-'9  28  5  ~/Twitch/coffee-vps/flask-vue/vuejs/Video.vue
-|4,57,28,5,1690595168,"~/Twitch/coffee-vps/flask-vue/vuejs/Video.vue"
+'0  1  135  ~/.vim/ide.vim
+|4,48,1,135,1690596970,"~/.vim/ide.vim"
+'1  17  0  ~/.vim/coc-settings.json
+|4,49,17,0,1690596777,"~/.vim/coc-settings.json"
+'2  16  0  ~/.vim/coc-settings.json
+|4,50,16,0,1690596777,"~/.vim/coc-settings.json"
+'3  7  4  ~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue
+|4,51,7,4,1690596760,"~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue"
+'4  7  4  ~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue
+|4,52,7,4,1690596760,"~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue"
+'5  7  4  ~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue
+|4,53,7,4,1690596760,"~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue"
+'6  7  4  ~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue
+|4,54,7,4,1690596760,"~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue"
+'7  27  20  ~/.vim/coc-settings.json
+|4,55,27,20,1690596251,"~/.vim/coc-settings.json"
+'8  26  20  ~/.vim/coc-settings.json
+|4,56,26,20,1690596251,"~/.vim/coc-settings.json"
+'9  28  20  ~/.vim/coc-settings.json
+|4,57,28,20,1690596251,"~/.vim/coc-settings.json"
 
 # Jumplist (newest first):
+-'  1  135  ~/.vim/ide.vim
+|4,39,1,135,1690596970,"~/.vim/ide.vim"
+-'  1  6  ~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue
+|4,39,1,6,1690596964,"~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue"
+-'  15  4  ~/.vim/coc-settings.json
+|4,39,15,4,1690596831,"~/.vim/coc-settings.json"
+-'  5  0  ~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue
+|4,39,5,0,1690596830,"~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue"
+-'  7  13  ~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue
+|4,39,7,13,1690596787,"~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue"
+-'  17  0  ~/.vim/coc-settings.json
+|4,39,17,0,1690596777,"~/.vim/coc-settings.json"
+-'  16  0  ~/.vim/coc-settings.json
+|4,39,16,0,1690596777,"~/.vim/coc-settings.json"
+-'  7  4  ~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue
+|4,39,7,4,1690596773,"~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue"
+-'  7  4  ~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue
+|4,39,7,4,1690596760,"~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue"
+-'  16  39  ~/.vim/coc-settings.json
+|4,39,16,39,1690596756,"~/.vim/coc-settings.json"
+-'  1  0  ~/.vim/coc-settings.json
+|4,39,1,0,1690596735,"~/.vim/coc-settings.json"
+-'  1  0  ~/.vim/coc-settings.json
+|4,39,1,0,1690596735,"~/.vim/coc-settings.json"
+-'  1  0  ~/.vim/coc-settings.json
+|4,39,1,0,1690596735,"~/.vim/coc-settings.json"
+-'  18  0  ~/.vim/coc-settings.json
+|4,39,18,0,1690596724,"~/.vim/coc-settings.json"
+-'  17  0  ~/.vim/coc-settings.json
+|4,39,17,0,1690596724,"~/.vim/coc-settings.json"
+-'  3  0  ~/Twitch/coffee-vps/flask-vue/vuejs/Clips.vue
+|4,39,3,0,1690596654,"~/Twitch/coffee-vps/flask-vue/vuejs/Clips.vue"
+-'  3  0  ~/Twitch/coffee-vps/flask-vue/vuejs/Clips.vue
+|4,39,3,0,1690596654,"~/Twitch/coffee-vps/flask-vue/vuejs/Clips.vue"
+-'  3  0  ~/Twitch/coffee-vps/flask-vue/vuejs/Clips.vue
+|4,39,3,0,1690596654,"~/Twitch/coffee-vps/flask-vue/vuejs/Clips.vue"
+-'  32  8  ~/Twitch/coffee-vps/flask-vue/vuejs/Clips.vue
+|4,39,32,8,1690596507,"~/Twitch/coffee-vps/flask-vue/vuejs/Clips.vue"
+-'  32  8  ~/Twitch/coffee-vps/flask-vue/vuejs/Clips.vue
+|4,39,32,8,1690596507,"~/Twitch/coffee-vps/flask-vue/vuejs/Clips.vue"
+-'  32  8  ~/Twitch/coffee-vps/flask-vue/vuejs/Clips.vue
+|4,39,32,8,1690596507,"~/Twitch/coffee-vps/flask-vue/vuejs/Clips.vue"
+-'  13  15  ~/Twitch/coffee-vps/flask-vue/vuejs/Clips.vue
+|4,39,13,15,1690596501,"~/Twitch/coffee-vps/flask-vue/vuejs/Clips.vue"
+-'  13  15  ~/Twitch/coffee-vps/flask-vue/vuejs/Clips.vue
+|4,39,13,15,1690596501,"~/Twitch/coffee-vps/flask-vue/vuejs/Clips.vue"
+-'  13  15  ~/Twitch/coffee-vps/flask-vue/vuejs/Clips.vue
+|4,39,13,15,1690596501,"~/Twitch/coffee-vps/flask-vue/vuejs/Clips.vue"
+-'  14  15  ~/Twitch/coffee-vps/flask-vue/vuejs/Clips.vue
+|4,39,14,15,1690596500,"~/Twitch/coffee-vps/flask-vue/vuejs/Clips.vue"
+-'  14  15  ~/Twitch/coffee-vps/flask-vue/vuejs/Clips.vue
+|4,39,14,15,1690596500,"~/Twitch/coffee-vps/flask-vue/vuejs/Clips.vue"
+-'  14  15  ~/Twitch/coffee-vps/flask-vue/vuejs/Clips.vue
+|4,39,14,15,1690596500,"~/Twitch/coffee-vps/flask-vue/vuejs/Clips.vue"
+-'  15  21  ~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue
+|4,39,15,21,1690596475,"~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue"
+-'  15  21  ~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue
+|4,39,15,21,1690596475,"~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue"
+-'  15  21  ~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue
+|4,39,15,21,1690596475,"~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue"
+-'  27  20  ~/.vim/coc-settings.json
+|4,39,27,20,1690596251,"~/.vim/coc-settings.json"
+-'  26  20  ~/.vim/coc-settings.json
+|4,39,26,20,1690596251,"~/.vim/coc-settings.json"
+-'  28  20  ~/.vim/coc-settings.json
+|4,39,28,20,1690596251,"~/.vim/coc-settings.json"
+-'  29  20  ~/.vim/coc-settings.json
+|4,39,29,20,1690596251,"~/.vim/coc-settings.json"
+-'  28  20  ~/.vim/coc-settings.json
+|4,39,28,20,1690596251,"~/.vim/coc-settings.json"
+-'  30  20  ~/.vim/coc-settings.json
+|4,39,30,20,1690596251,"~/.vim/coc-settings.json"
+-'  29  20  ~/.vim/coc-settings.json
+|4,39,29,20,1690596251,"~/.vim/coc-settings.json"
+-'  16  37  ~/.vim/coc-settings.json
+|4,39,16,37,1690596236,"~/.vim/coc-settings.json"
+-'  85  22  ~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue
+|4,39,85,22,1690596211,"~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue"
+-'  84  22  ~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue
+|4,39,84,22,1690596211,"~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue"
+-'  85  22  ~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue
+|4,39,85,22,1690596211,"~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue"
+-'  84  22  ~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue
+|4,39,84,22,1690596211,"~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue"
+-'  85  22  ~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue
+|4,39,85,22,1690596211,"~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue"
+-'  84  22  ~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue
+|4,39,84,22,1690596211,"~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue"
+-'  96  37  ~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue
+|4,39,96,37,1690596201,"~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue"
+-'  95  37  ~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue
+|4,39,95,37,1690596201,"~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue"
+-'  96  37  ~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue
+|4,39,96,37,1690596201,"~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue"
+-'  95  37  ~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue
+|4,39,95,37,1690596201,"~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue"
+-'  96  37  ~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue
+|4,39,96,37,1690596201,"~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue"
+-'  95  37  ~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue
+|4,39,95,37,1690596201,"~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue"
+-'  103  0  ~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue
+|4,39,103,0,1690596156,"~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue"
+-'  102  0  ~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue
+|4,39,102,0,1690596156,"~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue"
+-'  103  0  ~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue
+|4,39,103,0,1690596156,"~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue"
+-'  102  0  ~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue
+|4,39,102,0,1690596156,"~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue"
+-'  103  0  ~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue
+|4,39,103,0,1690596156,"~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue"
+-'  102  0  ~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue
+|4,39,102,0,1690596156,"~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue"
+-'  1  0  ~/.vim/ide.vim
+|4,39,1,0,1690596155,"~/.vim/ide.vim"
+-'  1  0  ~/.vim/ide.vim
+|4,39,1,0,1690596155,"~/.vim/ide.vim"
+-'  1  0  ~/.vim/ide.vim
+|4,39,1,0,1690596155,"~/.vim/ide.vim"
+-'  183  30  ~/.vim/ide.vim
+|4,39,183,30,1690596093,"~/.vim/ide.vim"
+-'  183  30  ~/.vim/ide.vim
+|4,39,183,30,1690596093,"~/.vim/ide.vim"
+-'  183  30  ~/.vim/ide.vim
+|4,39,183,30,1690596093,"~/.vim/ide.vim"
+-'  183  30  ~/.vim/ide.vim
+|4,39,183,30,1690596093,"~/.vim/ide.vim"
+-'  158  0  ~/.vim/ide.vim
+|4,39,158,0,1690596072,"~/.vim/ide.vim"
+-'  158  0  ~/.vim/ide.vim
+|4,39,158,0,1690596072,"~/.vim/ide.vim"
+-'  158  0  ~/.vim/ide.vim
+|4,39,158,0,1690596072,"~/.vim/ide.vim"
+-'  158  0  ~/.vim/ide.vim
+|4,39,158,0,1690596072,"~/.vim/ide.vim"
+-'  165  37  ~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue
+|4,39,165,37,1690596014,"~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue"
+-'  164  37  ~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue
+|4,39,164,37,1690596014,"~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue"
+-'  165  37  ~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue
+|4,39,165,37,1690596014,"~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue"
+-'  164  37  ~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue
+|4,39,164,37,1690596014,"~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue"
+-'  165  37  ~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue
+|4,39,165,37,1690596014,"~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue"
+-'  164  37  ~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue
+|4,39,164,37,1690596014,"~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue"
+-'  8  0  ~/.vim/lint/eslint_config.json
+|4,39,8,0,1690595962,"~/.vim/lint/eslint_config.json"
+-'  8  0  ~/.vim/lint/eslint_config.json
+|4,39,8,0,1690595962,"~/.vim/lint/eslint_config.json"
+-'  8  0  ~/.vim/lint/eslint_config.json
+|4,39,8,0,1690595962,"~/.vim/lint/eslint_config.json"
+-'  8  0  ~/.vim/lint/eslint_config.json
+|4,39,8,0,1690595962,"~/.vim/lint/eslint_config.json"
+-'  1  0  ~/.vim/lint/eslint_config.json
+|4,39,1,0,1690595916,"~/.vim/lint/eslint_config.json"
+-'  1  0  ~/.vim/lint/eslint_config.json
+|4,39,1,0,1690595916,"~/.vim/lint/eslint_config.json"
+-'  1  0  ~/.vim/lint/eslint_config.json
+|4,39,1,0,1690595916,"~/.vim/lint/eslint_config.json"
+-'  1  0  ~/.vim/lint/eslint_config.json
+|4,39,1,0,1690595916,"~/.vim/lint/eslint_config.json"
 -'  1  0  ~/.vim/lint/eslint_config.json
 |4,39,1,0,1690595916,"~/.vim/lint/eslint_config.json"
 -'  5  8  ~/.vim/lint/eslint_config.json
 |4,39,5,8,1690595885,"~/.vim/lint/eslint_config.json"
+-'  5  8  ~/.vim/lint/eslint_config.json
+|4,39,5,8,1690595885,"~/.vim/lint/eslint_config.json"
+-'  5  8  ~/.vim/lint/eslint_config.json
+|4,39,5,8,1690595885,"~/.vim/lint/eslint_config.json"
+-'  5  8  ~/.vim/lint/eslint_config.json
+|4,39,5,8,1690595885,"~/.vim/lint/eslint_config.json"
+-'  5  8  ~/.vim/lint/eslint_config.json
+|4,39,5,8,1690595885,"~/.vim/lint/eslint_config.json"
+-'  24  0  ~/Twitch/coffee-vps/flask-vue/vuejs/actions.html
+|4,39,24,0,1690595865,"~/Twitch/coffee-vps/flask-vue/vuejs/actions.html"
+-'  24  0  ~/Twitch/coffee-vps/flask-vue/vuejs/actions.html
+|4,39,24,0,1690595865,"~/Twitch/coffee-vps/flask-vue/vuejs/actions.html"
+-'  24  0  ~/Twitch/coffee-vps/flask-vue/vuejs/actions.html
+|4,39,24,0,1690595865,"~/Twitch/coffee-vps/flask-vue/vuejs/actions.html"
+-'  24  0  ~/Twitch/coffee-vps/flask-vue/vuejs/actions.html
+|4,39,24,0,1690595865,"~/Twitch/coffee-vps/flask-vue/vuejs/actions.html"
 -'  24  0  ~/Twitch/coffee-vps/flask-vue/vuejs/actions.html
 |4,39,24,0,1690595865,"~/Twitch/coffee-vps/flask-vue/vuejs/actions.html"
 -'  158  68  ~/.vim/ide.vim
 |4,39,158,68,1690595802,"~/.vim/ide.vim"
 -'  170  76  ~/.vim/ide.vim
 |4,39,170,76,1690595552,"~/.vim/ide.vim"
+-'  170  76  ~/.vim/ide.vim
+|4,39,170,76,1690595552,"~/.vim/ide.vim"
+-'  170  76  ~/.vim/ide.vim
+|4,39,170,76,1690595552,"~/.vim/ide.vim"
+-'  170  76  ~/.vim/ide.vim
+|4,39,170,76,1690595552,"~/.vim/ide.vim"
+-'  170  76  ~/.vim/ide.vim
+|4,39,170,76,1690595552,"~/.vim/ide.vim"
 -'  1  0  ~/.vim/ide.vim
 |4,39,1,0,1690595547,"~/.vim/ide.vim"
--'  11  12  ~/.vim/.gitignore
-|4,39,11,12,1690595448,"~/.vim/.gitignore"
--'  11  12  ~/.vim/.gitignore
-|4,39,11,12,1690595448,"~/.vim/.gitignore"
--'  4  0  ~/.vim/.gitignore
-|4,39,4,0,1690595443,"~/.vim/.gitignore"
--'  4  0  ~/.vim/.gitignore
-|4,39,4,0,1690595443,"~/.vim/.gitignore"
--'  1  0  ~/.vim/.gitignore
-|4,39,1,0,1690595441,"~/.vim/.gitignore"
--'  1  0  ~/.vim/.gitignore
-|4,39,1,0,1690595441,"~/.vim/.gitignore"
--'  170  80  ~/.vim/ide.vim
-|4,39,170,80,1690595346,"~/.vim/ide.vim"
--'  170  80  ~/.vim/ide.vim
-|4,39,170,80,1690595346,"~/.vim/ide.vim"
--'  166  69  ~/.vim/ide.vim
-|4,39,166,69,1690595290,"~/.vim/ide.vim"
--'  166  69  ~/.vim/ide.vim
-|4,39,166,69,1690595290,"~/.vim/ide.vim"
--'  166  69  ~/.vim/ide.vim
-|4,39,166,69,1690595290,"~/.vim/ide.vim"
--'  169  3  ~/.vim/ide.vim
-|4,39,169,3,1690595264,"~/.vim/ide.vim"
--'  168  59  ~/.vim/ide.vim
-|4,39,168,59,1690595264,"~/.vim/ide.vim"
--'  169  3  ~/.vim/ide.vim
-|4,39,169,3,1690595264,"~/.vim/ide.vim"
--'  168  59  ~/.vim/ide.vim
-|4,39,168,59,1690595264,"~/.vim/ide.vim"
--'  169  3  ~/.vim/ide.vim
-|4,39,169,3,1690595264,"~/.vim/ide.vim"
--'  168  59  ~/.vim/ide.vim
-|4,39,168,59,1690595264,"~/.vim/ide.vim"
--'  1  0  ~/.vim/ide.vim
-|4,39,1,0,1690595234,"~/.vim/ide.vim"
--'  1  0  ~/.vim/ide.vim
-|4,39,1,0,1690595234,"~/.vim/ide.vim"
--'  24  6  ~/Twitch/coffee-vps/flask-vue/vuejs/actions.html
-|4,39,24,6,1690595227,"~/Twitch/coffee-vps/flask-vue/vuejs/actions.html"
--'  24  6  ~/Twitch/coffee-vps/flask-vue/vuejs/actions.html
-|4,39,24,6,1690595227,"~/Twitch/coffee-vps/flask-vue/vuejs/actions.html"
--'  1  0  ~/Twitch/coffee-vps/flask-vue/vuejs/actions.html
-|4,39,1,0,1690595212,"~/Twitch/coffee-vps/flask-vue/vuejs/actions.html"
--'  1  0  ~/Twitch/coffee-vps/flask-vue/vuejs/actions.html
-|4,39,1,0,1690595212,"~/Twitch/coffee-vps/flask-vue/vuejs/actions.html"
--'  1  0  ~/Twitch/coffee-vps/flask-vue/vuejs/actions.html
-|4,39,1,0,1690595212,"~/Twitch/coffee-vps/flask-vue/vuejs/actions.html"
--'  40  5  ~/Twitch/coffee-vps/flask-vue/vuejs/Video.vue
-|4,39,40,5,1690595210,"~/Twitch/coffee-vps/flask-vue/vuejs/Video.vue"
--'  40  5  ~/Twitch/coffee-vps/flask-vue/vuejs/Video.vue
-|4,39,40,5,1690595210,"~/Twitch/coffee-vps/flask-vue/vuejs/Video.vue"
--'  40  5  ~/Twitch/coffee-vps/flask-vue/vuejs/Video.vue
-|4,39,40,5,1690595210,"~/Twitch/coffee-vps/flask-vue/vuejs/Video.vue"
--'  28  4  ~/Twitch/coffee-vps/flask-vue/vuejs/Video.vue
-|4,39,28,4,1690595204,"~/Twitch/coffee-vps/flask-vue/vuejs/Video.vue"
--'  28  4  ~/Twitch/coffee-vps/flask-vue/vuejs/Video.vue
-|4,39,28,4,1690595204,"~/Twitch/coffee-vps/flask-vue/vuejs/Video.vue"
--'  28  4  ~/Twitch/coffee-vps/flask-vue/vuejs/Video.vue
-|4,39,28,4,1690595204,"~/Twitch/coffee-vps/flask-vue/vuejs/Video.vue"
--'  28  5  ~/Twitch/coffee-vps/flask-vue/vuejs/Video.vue
-|4,39,28,5,1690595168,"~/Twitch/coffee-vps/flask-vue/vuejs/Video.vue"
--'  28  5  ~/Twitch/coffee-vps/flask-vue/vuejs/Video.vue
-|4,39,28,5,1690595115,"~/Twitch/coffee-vps/flask-vue/vuejs/Video.vue"
--'  1  0  ~/Twitch/coffee-vps/flask-vue/vuejs/Video.vue
-|4,39,1,0,1690595048,"~/Twitch/coffee-vps/flask-vue/vuejs/Video.vue"
--'  1  0  ~/Twitch/coffee-vps/flask-vue/vuejs/Video.vue
-|4,39,1,0,1690595048,"~/Twitch/coffee-vps/flask-vue/vuejs/Video.vue"
--'  1  0  ~/Twitch/coffee-vps/flask-vue/vuejs/Video.vue
-|4,39,1,0,1690595048,"~/Twitch/coffee-vps/flask-vue/vuejs/Video.vue"
--'  1  0  ~/Twitch/coffee-vps/flask-vue/vuejs/Video.vue
-|4,39,1,0,1690595048,"~/Twitch/coffee-vps/flask-vue/vuejs/Video.vue"
--'  1  0  ~/Twitch/coffee-vps/flask-vue/vuejs/Video.vue
-|4,39,1,0,1690595048,"~/Twitch/coffee-vps/flask-vue/vuejs/Video.vue"
--'  1350  0  ~/.vim/vimrc
-|4,39,1350,0,1690595018,"~/.vim/vimrc"
--'  154  0  ~/.vim/ide.vim
-|4,39,154,0,1690595018,"~/.vim/ide.vim"
--'  1350  0  ~/.vim/vimrc
-|4,39,1350,0,1690595018,"~/.vim/vimrc"
--'  154  0  ~/.vim/ide.vim
-|4,39,154,0,1690595018,"~/.vim/ide.vim"
--'  1350  0  ~/.vim/vimrc
-|4,39,1350,0,1690595018,"~/.vim/vimrc"
--'  154  0  ~/.vim/ide.vim
-|4,39,154,0,1690595018,"~/.vim/ide.vim"
--'  1350  0  ~/.vim/vimrc
-|4,39,1350,0,1690595018,"~/.vim/vimrc"
--'  154  0  ~/.vim/ide.vim
-|4,39,154,0,1690595018,"~/.vim/ide.vim"
--'  1350  0  ~/.vim/vimrc
-|4,39,1350,0,1690595018,"~/.vim/vimrc"
--'  154  0  ~/.vim/ide.vim
-|4,39,154,0,1690595018,"~/.vim/ide.vim"
--'  1350  0  ~/.vim/vimrc
-|4,39,1350,0,1690595018,"~/.vim/vimrc"
--'  154  0  ~/.vim/ide.vim
-|4,39,154,0,1690595018,"~/.vim/ide.vim"
--'  24  58  ~/.vim/plugged/ale/doc/ale-javascript.txt
-|4,39,24,58,1690594983,"~/.vim/plugged/ale/doc/ale-javascript.txt"
--'  24  58  ~/.vim/plugged/ale/doc/ale-javascript.txt
-|4,39,24,58,1690594983,"~/.vim/plugged/ale/doc/ale-javascript.txt"
--'  24  58  ~/.vim/plugged/ale/doc/ale-javascript.txt
-|4,39,24,58,1690594983,"~/.vim/plugged/ale/doc/ale-javascript.txt"
--'  24  58  ~/.vim/plugged/ale/doc/ale-javascript.txt
-|4,39,24,58,1690594983,"~/.vim/plugged/ale/doc/ale-javascript.txt"
--'  24  58  ~/.vim/plugged/ale/doc/ale-javascript.txt
-|4,39,24,58,1690594983,"~/.vim/plugged/ale/doc/ale-javascript.txt"
--'  24  58  ~/.vim/plugged/ale/doc/ale-javascript.txt
-|4,39,24,58,1690594983,"~/.vim/plugged/ale/doc/ale-javascript.txt"
--'  81  17  ~/.vim/plugged/ale/doc/ale-javascript.txt
-|4,39,81,17,1690594981,"~/.vim/plugged/ale/doc/ale-javascript.txt"
--'  81  17  ~/.vim/plugged/ale/doc/ale-javascript.txt
-|4,39,81,17,1690594981,"~/.vim/plugged/ale/doc/ale-javascript.txt"
--'  81  17  ~/.vim/plugged/ale/doc/ale-javascript.txt
-|4,39,81,17,1690594981,"~/.vim/plugged/ale/doc/ale-javascript.txt"
--'  81  17  ~/.vim/plugged/ale/doc/ale-javascript.txt
-|4,39,81,17,1690594981,"~/.vim/plugged/ale/doc/ale-javascript.txt"
--'  81  17  ~/.vim/plugged/ale/doc/ale-javascript.txt
-|4,39,81,17,1690594981,"~/.vim/plugged/ale/doc/ale-javascript.txt"
--'  81  17  ~/.vim/plugged/ale/doc/ale-javascript.txt
-|4,39,81,17,1690594981,"~/.vim/plugged/ale/doc/ale-javascript.txt"
--'  54  72  ~/.vim/plugged/ale/doc/ale-javascript.txt
-|4,39,54,72,1690594836,"~/.vim/plugged/ale/doc/ale-javascript.txt"
--'  54  72  ~/.vim/plugged/ale/doc/ale-javascript.txt
-|4,39,54,72,1690594836,"~/.vim/plugged/ale/doc/ale-javascript.txt"
--'  54  72  ~/.vim/plugged/ale/doc/ale-javascript.txt
-|4,39,54,72,1690594836,"~/.vim/plugged/ale/doc/ale-javascript.txt"
--'  54  72  ~/.vim/plugged/ale/doc/ale-javascript.txt
-|4,39,54,72,1690594836,"~/.vim/plugged/ale/doc/ale-javascript.txt"
--'  54  72  ~/.vim/plugged/ale/doc/ale-javascript.txt
-|4,39,54,72,1690594836,"~/.vim/plugged/ale/doc/ale-javascript.txt"
--'  54  72  ~/.vim/plugged/ale/doc/ale-javascript.txt
-|4,39,54,72,1690594836,"~/.vim/plugged/ale/doc/ale-javascript.txt"
--'  23  54  ~/.vim/plugged/ale/doc/ale-javascript.txt
-|4,39,23,54,1690594831,"~/.vim/plugged/ale/doc/ale-javascript.txt"
--'  23  54  ~/.vim/plugged/ale/doc/ale-javascript.txt
-|4,39,23,54,1690594831,"~/.vim/plugged/ale/doc/ale-javascript.txt"
--'  23  54  ~/.vim/plugged/ale/doc/ale-javascript.txt
-|4,39,23,54,1690594831,"~/.vim/plugged/ale/doc/ale-javascript.txt"
--'  23  54  ~/.vim/plugged/ale/doc/ale-javascript.txt
-|4,39,23,54,1690594831,"~/.vim/plugged/ale/doc/ale-javascript.txt"
--'  23  54  ~/.vim/plugged/ale/doc/ale-javascript.txt
-|4,39,23,54,1690594831,"~/.vim/plugged/ale/doc/ale-javascript.txt"
--'  23  54  ~/.vim/plugged/ale/doc/ale-javascript.txt
-|4,39,23,54,1690594831,"~/.vim/plugged/ale/doc/ale-javascript.txt"
--'  22  18  ~/.vim/plugged/ale/doc/ale-javascript.txt
-|4,39,22,18,1690594828,"~/.vim/plugged/ale/doc/ale-javascript.txt"
--'  22  18  ~/.vim/plugged/ale/doc/ale-javascript.txt
-|4,39,22,18,1690594828,"~/.vim/plugged/ale/doc/ale-javascript.txt"
--'  22  18  ~/.vim/plugged/ale/doc/ale-javascript.txt
-|4,39,22,18,1690594828,"~/.vim/plugged/ale/doc/ale-javascript.txt"
--'  22  18  ~/.vim/plugged/ale/doc/ale-javascript.txt
-|4,39,22,18,1690594828,"~/.vim/plugged/ale/doc/ale-javascript.txt"
--'  22  18  ~/.vim/plugged/ale/doc/ale-javascript.txt
-|4,39,22,18,1690594828,"~/.vim/plugged/ale/doc/ale-javascript.txt"
--'  22  18  ~/.vim/plugged/ale/doc/ale-javascript.txt
-|4,39,22,18,1690594828,"~/.vim/plugged/ale/doc/ale-javascript.txt"
--'  18  17  ~/.vim/plugged/ale/doc/ale-javascript.txt
-|4,39,18,17,1690594827,"~/.vim/plugged/ale/doc/ale-javascript.txt"
--'  18  17  ~/.vim/plugged/ale/doc/ale-javascript.txt
-|4,39,18,17,1690594827,"~/.vim/plugged/ale/doc/ale-javascript.txt"
--'  18  17  ~/.vim/plugged/ale/doc/ale-javascript.txt
-|4,39,18,17,1690594827,"~/.vim/plugged/ale/doc/ale-javascript.txt"
--'  18  17  ~/.vim/plugged/ale/doc/ale-javascript.txt
-|4,39,18,17,1690594827,"~/.vim/plugged/ale/doc/ale-javascript.txt"
--'  18  17  ~/.vim/plugged/ale/doc/ale-javascript.txt
-|4,39,18,17,1690594827,"~/.vim/plugged/ale/doc/ale-javascript.txt"
--'  18  17  ~/.vim/plugged/ale/doc/ale-javascript.txt
-|4,39,18,17,1690594827,"~/.vim/plugged/ale/doc/ale-javascript.txt"
--'  17  13  ~/.vim/plugged/ale/doc/ale-javascript.txt
-|4,39,17,13,1690594826,"~/.vim/plugged/ale/doc/ale-javascript.txt"
--'  17  13  ~/.vim/plugged/ale/doc/ale-javascript.txt
-|4,39,17,13,1690594826,"~/.vim/plugged/ale/doc/ale-javascript.txt"
--'  17  13  ~/.vim/plugged/ale/doc/ale-javascript.txt
-|4,39,17,13,1690594826,"~/.vim/plugged/ale/doc/ale-javascript.txt"
--'  17  13  ~/.vim/plugged/ale/doc/ale-javascript.txt
-|4,39,17,13,1690594826,"~/.vim/plugged/ale/doc/ale-javascript.txt"
--'  17  13  ~/.vim/plugged/ale/doc/ale-javascript.txt
-|4,39,17,13,1690594826,"~/.vim/plugged/ale/doc/ale-javascript.txt"
--'  17  13  ~/.vim/plugged/ale/doc/ale-javascript.txt
-|4,39,17,13,1690594826,"~/.vim/plugged/ale/doc/ale-javascript.txt"
--'  14  7  ~/.vim/plugged/ale/doc/ale-javascript.txt
-|4,39,14,7,1690594825,"~/.vim/plugged/ale/doc/ale-javascript.txt"
--'  13  8  ~/.vim/plugged/ale/doc/ale-javascript.txt
-|4,39,13,8,1690594825,"~/.vim/plugged/ale/doc/ale-javascript.txt"
--'  14  7  ~/.vim/plugged/ale/doc/ale-javascript.txt
-|4,39,14,7,1690594825,"~/.vim/plugged/ale/doc/ale-javascript.txt"
 
 # Buffer list:
-%~/.vim/ide.vim	158	68
-%~/.vim/.gitignore	11	12
-%~/.vim/lint/eslint_config.json	1	0
-%~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue	32	12
+%~/.vim/ide.vim	1	135
+%~/.vim/lint/eslint_config.json	8	0
+%~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue	1	6
+%~/.vim/coc-settings.json	15	4
+%~/Twitch/coffee-vps/flask-vue/vuejs/Clips.vue	3	0
 
 # History of marks within files (newest to oldest):
 
+> ~/.vim/ide.vim
+	*	1690596969	0
+	"	1	135
+	^	1	136
+	.	1	135
+	+	172	5
+	+	172	0
+	+	172	35
+	+	172	0
+	+	166	0
+	+	172	0
+	+	166	0
+	+	167	3
+	+	172	0
+	+	170	3
+	+	169	0
+	+	168	59
+	+	171	0
+	+	168	94
+	+	170	81
+	+	171	0
+	+	170	80
+	+	1	135
+
+> ~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue
+	*	1690596961	0
+	"	1	6
+	^	15	12
+	.	15	11
+	+	114	29
+	+	143	30
+	+	114	32
+	+	112	66
+	+	116	70
+	+	42	0
+	+	43	25
+	+	71	35
+	+	105	0
+	+	71	38
+	+	105	34
+	+	71	37
+	+	105	41
+	+	105	0
+	+	77	0
+	+	80	40
+	+	105	0
+	+	81	0
+	+	71	13
+	+	81	21
+	+	82	37
+	+	83	35
+	+	92	28
+	+	93	38
+	+	94	35
+	+	91	0
+	+	102	0
+	+	77	17
+	+	104	34
+	+	105	0
+	+	64	0
+	+	60	14
+	+	60	40
+	+	64	0
+	+	61	31
+	+	62	13
+	+	60	0
+	+	62	18
+	+	64	0
+	+	62	51
+	+	63	18
+	+	59	13
+	+	66	0
+	+	66	30
+	+	67	27
+	+	65	13
+	+	147	0
+	+	155	0
+	+	155	21
+	+	78	12
+	+	79	12
+	+	80	12
+	+	87	16
+	+	88	16
+	+	98	16
+	+	99	16
+	+	147	0
+	+	155	0
+	+	146	0
+	+	90	0
+	+	101	0
+	+	67	30
+	+	154	39
+	+	56	21
+	+	39	0
+	+	38	24
+	+	133	0
+	+	42	0
+	+	60	0
+	+	66	0
+	+	73	30
+	+	73	25
+	+	77	0
+	+	77	16
+	+	77	0
+	+	73	0
+	+	77	34
+	+	77	38
+	+	77	0
+	+	77	60
+	+	77	79
+	+	77	0
+	+	77	16
+	+	72	16
+	+	77	0
+	+	73	54
+	+	73	73
+	+	77	0
+	+	75	16
+	+	73	65
+	+	74	0
+	+	33	0
+	+	85	0
+	+	80	0
+	+	165	0
+	+	69	0
+	+	80	0
+	+	16	0
+	+	14	0
+	+	15	11
+
+> ~/.vim/plugged/coc.nvim/doc/coc.txt
+	*	1690596915	0
+	"	3393	16
+
+> ~/.vim/coc-settings.json
+	*	1690596830	0
+	"	15	4
+	.	19	0
+	+	10	0
+	+	20	23
+	+	38	0
+	+	37	26
+	+	22	0
+	+	24	40
+	+	22	72
+	+	25	25
+	+	36	0
+	+	26	16
+	+	24	41
+	+	29	0
+	+	19	0
+	+	26	0
+	+	17	0
+	+	16	39
+	+	17	0
+	+	19	0
+
+> ~/Twitch/coffee-vps/flask-vue/vuejs/Clips.vue
+	*	1690596556	0
+	"	3	0
+	^	14	16
+	.	14	7
+	+	56	43
+	+	16	22
+	+	56	48
+	+	53	0
+	+	45	0
+	+	45	29
+	+	22	28
+	+	45	9
+	+	22	0
+	+	26	17
+	+	56	41
+	+	26	38
+	+	26	22
+	+	56	42
+	+	26	20
+	+	56	40
+	+	26	52
+	+	56	0
+	+	26	27
+	+	56	47
+	+	26	17
+	+	56	37
+	+	16	23
+	+	16	26
+	+	26	57
+	+	26	14
+	+	56	34
+	+	45	0
+	+	43	8
+	+	44	0
+	+	59	9
+	+	43	39
+	+	46	43
+	+	43	43
+	+	55	46
+	+	26	19
+	+	27	0
+	+	26	72
+	+	27	26
+	+	27	71
+	+	55	44
+	+	56	43
+	+	55	58
+	+	27	29
+	+	27	80
+	+	16	36
+	+	47	89
+	+	43	63
+	+	16	70
+	+	25	26
+	+	54	65
+	+	25	27
+	+	25	63
+	+	16	72
+	+	54	46
+	+	25	22
+	+	16	48
+	+	27	66
+	+	27	23
+	+	55	47
+	+	16	29
+	+	26	22
+	+	26	60
+	+	56	54
+	+	15	0
+	+	25	76
+	+	26	31
+	+	26	70
+	+	27	36
+	+	27	80
+	+	28	0
+	+	14	0
+	+	13	17
+	+	14	7
+
 > ~/.vim/lint/eslint_config.json
-	*	1690595914	0
-	"	1	0
-	^	4	4
+	*	1690595959	0
+	"	8	0
 	.	8	0
 	+	1	1
 	+	1	0
@@ -1818,107 +2083,8 @@ $
 	+	5	2
 	+	4	3
 	+	8	0
-
-> ~/Twitch/coffee-vps/flask-vue/vuejs/Actions.vue
-	*	1690595907	0
-	"	32	12
-	.	32	0
-	+	113	43
-	+	115	34
-	+	112	34
-	+	115	41
-	+	113	29
-	+	142	30
-	+	113	32
-	+	111	66
-	+	115	70
-	+	41	0
-	+	42	25
-	+	70	35
-	+	104	0
-	+	70	38
-	+	104	34
-	+	70	37
-	+	104	41
-	+	104	0
-	+	76	0
-	+	79	40
-	+	104	0
-	+	80	0
-	+	70	13
-	+	80	21
-	+	81	37
-	+	82	35
-	+	91	28
-	+	92	38
-	+	93	35
-	+	90	0
-	+	101	0
-	+	76	17
-	+	103	34
-	+	104	0
-	+	63	0
-	+	59	14
-	+	59	40
-	+	63	0
-	+	60	31
-	+	61	13
-	+	59	0
-	+	61	18
-	+	63	0
-	+	61	51
-	+	62	18
-	+	58	13
-	+	65	0
-	+	65	30
-	+	66	27
-	+	64	13
-	+	146	0
-	+	154	0
-	+	154	21
-	+	77	12
-	+	78	12
-	+	79	12
-	+	86	16
-	+	87	16
-	+	97	16
-	+	98	16
-	+	146	0
-	+	154	0
-	+	145	0
-	+	89	0
-	+	100	0
-	+	66	30
-	+	153	39
-	+	55	21
-	+	38	0
-	+	37	24
-	+	132	0
-	+	41	0
-	+	59	0
-	+	65	0
-	+	72	30
-	+	72	25
-	+	76	0
-	+	76	16
-	+	76	0
-	+	72	0
-	+	76	34
-	+	76	38
-	+	76	0
-	+	76	60
-	+	76	79
-	+	76	0
-	+	76	16
-	+	71	16
-	+	76	0
-	+	72	54
-	+	72	73
-	+	76	0
-	+	74	16
-	+	72	65
-	+	73	0
-	+	32	0
+	+	7	3
+	+	8	0
 
 > ~/Twitch/coffee-vps/flask-vue/vuejs/actions.html
 	*	1690595900	0
@@ -1938,28 +2104,6 @@ $
 	+	19	0
 	+	14	30
 	+	11	0
-
-> ~/.vim/ide.vim
-	*	1690595801	0
-	"	158	68
-	.	170	80
-	+	172	5
-	+	172	0
-	+	172	35
-	+	172	0
-	+	166	0
-	+	172	0
-	+	166	0
-	+	167	3
-	+	172	0
-	+	170	3
-	+	169	0
-	+	168	59
-	+	171	0
-	+	168	94
-	+	170	81
-	+	171	0
-	+	170	80
 
 > ~/.vim/.gitignore
 	*	1690595448	0
@@ -4005,83 +4149,6 @@ $
 	+	12	10
 	+	13	7
 
-> ~/Twitch/coffee-vps/flask-vue/vuejs/Clips.vue
-	*	1688545853	0
-	"	24	78
-	^	55	55
-	.	27	0
-	+	55	43
-	+	15	22
-	+	55	48
-	+	52	0
-	+	44	0
-	+	44	29
-	+	21	28
-	+	44	9
-	+	21	0
-	+	25	17
-	+	55	41
-	+	25	38
-	+	25	22
-	+	55	42
-	+	25	20
-	+	55	40
-	+	25	52
-	+	55	0
-	+	25	27
-	+	55	47
-	+	25	17
-	+	55	37
-	+	15	23
-	+	15	26
-	+	25	57
-	+	25	14
-	+	55	34
-	+	44	0
-	+	42	8
-	+	43	0
-	+	58	9
-	+	42	39
-	+	45	43
-	+	42	43
-	+	54	46
-	+	25	19
-	+	26	0
-	+	25	72
-	+	26	26
-	+	26	71
-	+	54	44
-	+	55	43
-	+	54	58
-	+	26	29
-	+	26	80
-	+	15	36
-	+	46	89
-	+	42	63
-	+	15	70
-	+	24	26
-	+	53	65
-	+	24	27
-	+	24	63
-	+	15	72
-	+	53	46
-	+	24	22
-	+	15	48
-	+	26	66
-	+	26	23
-	+	54	47
-	+	15	29
-	+	25	22
-	+	25	60
-	+	55	54
-	+	14	0
-	+	24	76
-	+	25	31
-	+	25	70
-	+	26	36
-	+	26	80
-	+	27	0
-
 > ~/Twitch/coffee-vps/code/auth.py
 	*	1688491822	0
 	"	21	42
@@ -4203,25 +4270,6 @@ $
 	+	3	0
 	+	4	16
 	+	5	0
-
-> ~/.vim/coc-settings.json
-	*	1688467123	0
-	"	29	4
-	.	29	0
-	+	10	0
-	+	23	23
-	+	41	0
-	+	40	26
-	+	25	0
-	+	27	40
-	+	25	72
-	+	28	25
-	+	39	0
-	+	29	16
-	+	27	41
-	+	32	0
-	+	19	0
-	+	29	0
 
 > ~/Twitch/coffee-vps/code/.sqllsrc.json
 	*	1688457390	0
