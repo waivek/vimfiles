@@ -341,7 +341,7 @@ set statusline=%<%{Relpath()}
 "     [Preview] - %w (preview window flag, not present in example)
 "                  = (separation point b/w left & right aligned fields)
 "
-set statusline+=%m%r%y%w%{DotMap()}%#Error#%{GetGitStl()}%0*%=\ %l/%-6L\ %3c 
+set statusline+=%m%r%y%w%{DotMap()}%#Error#%{GetGitStl()}%{coc#status()}%0*%=\ %l/%-6L\ %3c 
 " }}}
 " Error Lines {{{
 let g:last_command = ""
