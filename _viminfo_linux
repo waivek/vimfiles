@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/\<sid\>
+~MSle0~/C:\\Users\\vivek\\AppData\\Roaming\\npm
 
 # Last Substitute Search Pattern:
 ~MSle0&, 
@@ -21,7 +21,45 @@ $
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1690489069,,"q"
+|2,0,1690595346,,"q"
+:e /usr/local/
+|2,0,1690595301,,"e /usr/local/"
+:MRU ide
+|2,0,1690595227,,"MRU ide"
+:e actions.html
+|2,0,1690595210,,"e actions.html"
+:ALEInfo
+|2,0,1690595151,,"ALEInfo"
+:MRU vue
+|2,0,1690595048,,"MRU vue"
+:b ide
+|2,0,1690595010,,"b ide"
+:ll
+|2,0,1690594986,,"ll"
+:MRU id
+|2,0,1690594985,,"MRU id"
+:edit $MYVIMRC
+|2,0,1690594983,,"edit $MYVIMRC"
+:echo g:ale_javascript_eslint_options
+|2,0,1690594888,,"echo g:ale_javascript_eslint_options"
+:set wrap
+|2,0,1690594864,,"set wrap"
+:e ide.vim
+|2,0,1690594848,,"e ide.vim"
+:h ale-eslint-nested-configuration-files
+|2,0,1690594809,,"h ale-eslint-nested-configuration-files"
+:h 
+|2,0,1690594798,,"h "
+:h ale
+|2,0,1690594793,,"h ale"
+:e ~/.vim/lint/eslint_config.json
+|2,0,1690594626,,"e ~/.vim/lint/eslint_config.json"
+:MRU con
+|2,0,1690593125,,"MRU con"
+:Copilot status
+|2,0,1690592885,,"Copilot status"
+:MRU 5:doc/map.txt
+|2,0,1690592836,,"MRU 5:doc/map.txt"
 :MRU 
 |2,0,1690488957,,"MRU "
 :b /home/vivek/.vim/vimrc
@@ -38,8 +76,6 @@ $
 |2,0,1690488530,,"h .."
 :h SID
 |2,0,1690488467,,"h SID"
-:Copilot status
-|2,0,1690488451,,"Copilot status"
 :echo GetVimIndent()
 |2,0,1690488424,,"echo GetVimIndent()"
 :e plugin/better.vim
@@ -54,8 +90,6 @@ $
 |2,0,1690488080,,"h vim-plug"
 :h plug
 |2,0,1690488077,,"h plug"
-:h ale
-|2,0,1690488053,,"h ale"
 :ALEEnable
 |2,0,1690481102,,"ALEEnable"
 :ALEDisable
@@ -64,8 +98,6 @@ $
 |2,0,1690481075,,"MRU py$"
 :MRU set
 |2,0,1690481008,,"MRU set"
-:edit $MYVIMRC
-|2,0,1690480691,,"edit $MYVIMRC"
 :h ale-python-pyflakes
 |2,0,1690480552,,"h ale-python-pyflakes"
 :Copilot setup
@@ -82,8 +114,6 @@ $
 |2,0,1689186277,,"MRU chat"
 :MRU api
 |2,0,1689186274,,"MRU api"
-:ll
-|2,0,1689185979,,"ll"
 :MRU 2:package.json
 |2,0,1689184658,,"MRU 2:package.json"
 :MRU 5:actions.html
@@ -96,8 +126,6 @@ $
 |2,0,1689180289,,"e ../requirements.txt"
 :e package.json
 |2,0,1689180284,,"e package.json"
-:e actions.html
-|2,0,1689180006,,"e actions.html"
 :e Video.vue
 |2,0,1689179123,,"e Video.vue"
 :MRU Vi
@@ -196,8 +224,6 @@ $
 |2,0,1688936106,,"Enumerate"
 :kkl
 |2,0,1688935816,,"kkl"
-:ALEInfo
-|2,0,1688934430,,"ALEInfo"
 :find error.h
 |2,0,1688934372,,"find error.h"
 :pwd
@@ -288,8 +314,6 @@ $
 |2,0,1688814284,,"e so"
 :set nowrap
 |2,0,1688814022,,"set nowrap"
-:set wrap
-|2,0,1688813976,,"set wrap"
 :ql
 |2,0,1688811099,,"ql"
 :'<,'>
@@ -440,8 +464,6 @@ $
 |2,0,1688552910,,"grep -g * selection"
 :e twitch_vue.html
 |2,0,1688552874,,"e twitch_vue.html"
-:MRU vue
-|2,0,1688552839,,"MRU vue"
 :e se
 |2,0,1688552824,,"e se"
 :verbose set isk
@@ -1034,8 +1056,6 @@ $
 |2,0,1685391666,,"e ~/."
 :Cmdl
 |2,0,1685391609,,"Cmdl"
-:h 
-|2,0,1685391585,,"h "
 :h join(
 |2,0,1685391579,,"h join("
 :h join
@@ -1082,6 +1102,8 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/eslint
+|2,1,1690594850,47,"eslint"
 ?/sid
 |2,1,1690488414,47,"sid"
 ?/\C\<do\>
@@ -1513,322 +1535,432 @@ $
 
 # Registers:
 "0	CHAR	0
-	expand('<SID>') . 'InstallLintTools'
-|3,0,0,0,1,0,1690488592,"expand('<SID>') . 'InstallLintTools'"
-""1	LINE	0
-	function! s:InstallLintTools(info)
-	    !pip install pyflakes
-	    !npm install -g eslint
-	endfunction
-	
-|3,1,1,1,5,0,1690488874,"function! s:InstallLintTools(info)","    !pip install pyflakes","    !npm install -g eslint","endfunction",""
+	--'
+|3,0,0,0,1,0,1690595297,"--'"
+"1	LINE	0
+	    let g:ale_esl
+|3,0,1,1,1,0,1690595313,"    let g:ale_esl"
 "2	LINE	0
-	let function_name = expand('<SID>') . 'InstallLintTools'
-|3,0,2,1,1,0,1690488870,"let function_name = expand('<SID>') . 'InstallLintTools'"
+	    let g:ale_javascript_eslint_options='--resolve-plugins-relative-to=/Users/vivek/.npm'
+|3,0,2,1,1,0,1690595251,"    let g:ale_javascript_eslint_options='--resolve-plugins-relative-to=/Users/vivek/.npm'"
 "3	LINE	0
-	let function_name = 'adsfas'
-|3,0,3,1,1,0,1690488609,"let function_name = 'adsfas'"
+	let g:ale_javascript_eslint_options='--config ~/.vim/lint/eslint_config.json'
+|3,0,3,1,1,0,1690595250,"let g:ale_javascript_eslint_options='--config ~/.vim/lint/eslint_config.json'"
 "4	LINE	0
-	let function_name = expand('<SID>')
-|3,0,4,1,1,0,1690488570,"let function_name = expand('<SID>')"
-"5	LINE	0
-	function! s:GetScriptId()
 	
-	endfunction
-|3,0,5,1,3,0,1690488480,"function! s:GetScriptId()","","endfunction"
+|3,0,4,1,1,0,1690594957,""
+"5	BLOCK	1
+	" 
+	" 
+	" 
+	" 
+	" 
+|3,0,5,2,5,1,1690594956,"\" ","\" ","\" ","\" ","\" "
 "6	LINE	0
-	let script_id = 
-|3,0,6,1,1,0,1690488451,"let script_id = "
+	let g:ale_javascript_eslint_options=
+|3,0,6,1,1,0,1690594935,"let g:ale_javascript_eslint_options="
 "7	LINE	0
-	    print(x)
-|3,0,7,1,1,0,1690481104,"    print(x)"
+	let g:ale_javascript_eslint_options='--resolve-plugins-relative-to=C:\Users\vivek\AppData\Roaming\npm'
+|3,0,7,1,1,0,1690594900,"let g:ale_javascript_eslint_options='--resolve-plugins-relative-to=C:\\Users\\vivek\\AppData\\Roaming\\npm'"
 "8	LINE	0
-	    print(x)
-|3,0,8,1,1,0,1690481093,"    print(x)"
+	let g
+|3,0,8,1,1,0,1690594891,"let g"
 "9	LINE	0
-	    print(x)
-|3,0,9,1,1,0,1690481091,"    print(x)"
+	
+|3,0,9,1,1,0,1690594890,""
 "s	LINE	0
 	                <button class="bg-yellow-400" @click="do_emit_create_video_portion(video.id, start, end)">Create Portion (video)</button>
 |3,0,28,1,1,0,1689175020,"                <button class=\"bg-yellow-400\" @click=\"do_emit_create_video_portion(video.id, start, end)\">Create Portion (video)</button>"
-"-	CHAR	0
-	, { 'do': function(function_name) }
-|3,0,36,0,1,0,1690488869,", { 'do': function(function_name) }"
+""-	CHAR	0
+	 
+|3,1,36,0,1,0,1690595338," "
 
 # File marks:
-'0  11  15  ~/Twitch/.gitignore
-|4,48,11,15,1690489069,"~/Twitch/.gitignore"
-'1  11  5  ~/Twitch/.gitignore
-|4,49,11,5,1690489057,"~/Twitch/.gitignore"
-'2  1  0  ~/.config/setup.sh
-|4,50,1,0,1690489015,"~/.config/setup.sh"
-'3  1  0  ~/.config/setup.sh
-|4,51,1,0,1690489015,"~/.config/setup.sh"
-'4  1  0  ~/.config/setup.sh
-|4,52,1,0,1690489015,"~/.config/setup.sh"
-'5  1  0  ~/.config/setup.sh
-|4,53,1,0,1690489015,"~/.config/setup.sh"
-'6  42  44  ~/.vim/vimrc
-|4,54,42,44,1690488958,"~/.vim/vimrc"
-'7  42  44  ~/.vim/vimrc
-|4,55,42,44,1690488958,"~/.vim/vimrc"
-'8  42  44  ~/.vim/vimrc
-|4,56,42,44,1690488958,"~/.vim/vimrc"
-'9  42  44  ~/.vim/vimrc
-|4,57,42,44,1690488958,"~/.vim/vimrc"
+'0  170  80  ~/.vim/ide.vim
+|4,48,170,80,1690595346,"~/.vim/ide.vim"
+'1  28  5  ~/Twitch/coffee-vps/flask-vue/vuejs/Video.vue
+|4,49,28,5,1690595168,"~/Twitch/coffee-vps/flask-vue/vuejs/Video.vue"
+'2  28  5  ~/Twitch/coffee-vps/flask-vue/vuejs/Video.vue
+|4,50,28,5,1690595168,"~/Twitch/coffee-vps/flask-vue/vuejs/Video.vue"
+'3  28  5  ~/Twitch/coffee-vps/flask-vue/vuejs/Video.vue
+|4,51,28,5,1690595115,"~/Twitch/coffee-vps/flask-vue/vuejs/Video.vue"
+'4  28  5  ~/Twitch/coffee-vps/flask-vue/vuejs/Video.vue
+|4,52,28,5,1690595115,"~/Twitch/coffee-vps/flask-vue/vuejs/Video.vue"
+'5  1350  0  ~/.vim/vimrc
+|4,53,1350,0,1690595018,"~/.vim/vimrc"
+'6  1350  0  ~/.vim/vimrc
+|4,54,1350,0,1690595018,"~/.vim/vimrc"
+'7  1350  0  ~/.vim/vimrc
+|4,55,1350,0,1690595018,"~/.vim/vimrc"
+'8  1350  0  ~/.vim/vimrc
+|4,56,1350,0,1690595018,"~/.vim/vimrc"
+'9  1350  0  ~/.vim/vimrc
+|4,57,1350,0,1690595018,"~/.vim/vimrc"
 
 # Jumplist (newest first):
--'  11  15  ~/Twitch/.gitignore
-|4,39,11,15,1690489069,"~/Twitch/.gitignore"
--'  11  5  ~/Twitch/.gitignore
-|4,39,11,5,1690489057,"~/Twitch/.gitignore"
--'  1  0  ~/Twitch/.gitignore
-|4,39,1,0,1690489052,"~/Twitch/.gitignore"
--'  1  0  ~/Twitch/.gitignore
-|4,39,1,0,1690489052,"~/Twitch/.gitignore"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1690489015,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1690489015,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1690489015,"~/.config/setup.sh"
--'  42  44  ~/.vim/vimrc
-|4,39,42,44,1690488958,"~/.vim/vimrc"
--'  42  44  ~/.vim/vimrc
-|4,39,42,44,1690488958,"~/.vim/vimrc"
--'  42  44  ~/.vim/vimrc
-|4,39,42,44,1690488958,"~/.vim/vimrc"
--'  42  44  ~/.vim/vimrc
-|4,39,42,44,1690488958,"~/.vim/vimrc"
--'  41  34  ~/.vim/vimrc
-|4,39,41,34,1690488872,"~/.vim/vimrc"
--'  41  34  ~/.vim/vimrc
-|4,39,41,34,1690488872,"~/.vim/vimrc"
--'  41  34  ~/.vim/vimrc
-|4,39,41,34,1690488872,"~/.vim/vimrc"
--'  41  34  ~/.vim/vimrc
-|4,39,41,34,1690488872,"~/.vim/vimrc"
--'  1  0  ~/[Plugins] (2)
-|4,39,1,0,1690488865,"~/[Plugins] (2)"
--'  1  0  ~/[Plugins] (2)
-|4,39,1,0,1690488865,"~/[Plugins] (2)"
--'  1  0  ~/[Plugins] (2)
-|4,39,1,0,1690488865,"~/[Plugins] (2)"
--'  1  0  ~/[Plugins] (2)
-|4,39,1,0,1690488865,"~/[Plugins] (2)"
--'  1  0  ~/[Plugins] (2)
-|4,39,1,0,1690488634,"~/[Plugins] (2)"
--'  5  0  ~/[Plugins] (2)
-|4,39,5,0,1690488631,"~/[Plugins] (2)"
--'  5  0  ~/[Plugins] (2)
-|4,39,5,0,1690488631,"~/[Plugins] (2)"
--'  5  0  ~/[Plugins] (2)
-|4,39,5,0,1690488631,"~/[Plugins] (2)"
--'  5  0  ~/[Plugins] (2)
-|4,39,5,0,1690488631,"~/[Plugins] (2)"
--'  5  0  ~/[Plugins] (2)
-|4,39,5,0,1690488631,"~/[Plugins] (2)"
--'  6  0  ~/[Plugins] (2)
-|4,39,6,0,1690488626,"~/[Plugins] (2)"
--'  10  0  ~/[Plugins] (2)
-|4,39,10,0,1690488626,"~/[Plugins] (2)"
--'  18  0  ~/[Plugins] (2)
-|4,39,18,0,1690488626,"~/[Plugins] (2)"
--'  6  0  ~/[Plugins] (2)
-|4,39,6,0,1690488626,"~/[Plugins] (2)"
--'  10  0  ~/[Plugins] (2)
-|4,39,10,0,1690488626,"~/[Plugins] (2)"
--'  18  0  ~/[Plugins] (2)
-|4,39,18,0,1690488626,"~/[Plugins] (2)"
--'  6  0  ~/[Plugins] (2)
-|4,39,6,0,1690488626,"~/[Plugins] (2)"
--'  10  0  ~/[Plugins] (2)
-|4,39,10,0,1690488626,"~/[Plugins] (2)"
--'  18  0  ~/[Plugins] (2)
-|4,39,18,0,1690488626,"~/[Plugins] (2)"
--'  6  0  ~/[Plugins] (2)
-|4,39,6,0,1690488626,"~/[Plugins] (2)"
--'  10  0  ~/[Plugins] (2)
-|4,39,10,0,1690488626,"~/[Plugins] (2)"
--'  18  0  ~/[Plugins] (2)
-|4,39,18,0,1690488626,"~/[Plugins] (2)"
--'  6  0  ~/[Plugins] (2)
-|4,39,6,0,1690488626,"~/[Plugins] (2)"
--'  10  0  ~/[Plugins] (2)
-|4,39,10,0,1690488626,"~/[Plugins] (2)"
--'  18  0  ~/[Plugins] (2)
-|4,39,18,0,1690488626,"~/[Plugins] (2)"
--'  15  0  ~/[Plugins] (2)
-|4,39,15,0,1690488624,"~/[Plugins] (2)"
--'  14  0  ~/[Plugins] (2)
-|4,39,14,0,1690488624,"~/[Plugins] (2)"
--'  13  0  ~/[Plugins] (2)
-|4,39,13,0,1690488624,"~/[Plugins] (2)"
--'  12  0  ~/[Plugins] (2)
-|4,39,12,0,1690488624,"~/[Plugins] (2)"
--'  11  0  ~/[Plugins] (2)
-|4,39,11,0,1690488624,"~/[Plugins] (2)"
--'  15  0  ~/[Plugins] (2)
-|4,39,15,0,1690488624,"~/[Plugins] (2)"
--'  14  0  ~/[Plugins] (2)
-|4,39,14,0,1690488624,"~/[Plugins] (2)"
--'  13  0  ~/[Plugins] (2)
-|4,39,13,0,1690488624,"~/[Plugins] (2)"
--'  12  0  ~/[Plugins] (2)
-|4,39,12,0,1690488624,"~/[Plugins] (2)"
--'  11  0  ~/[Plugins] (2)
-|4,39,11,0,1690488624,"~/[Plugins] (2)"
--'  15  0  ~/[Plugins] (2)
-|4,39,15,0,1690488624,"~/[Plugins] (2)"
--'  14  0  ~/[Plugins] (2)
-|4,39,14,0,1690488624,"~/[Plugins] (2)"
--'  13  0  ~/[Plugins] (2)
-|4,39,13,0,1690488624,"~/[Plugins] (2)"
--'  12  0  ~/[Plugins] (2)
-|4,39,12,0,1690488624,"~/[Plugins] (2)"
--'  11  0  ~/[Plugins] (2)
-|4,39,11,0,1690488624,"~/[Plugins] (2)"
--'  15  0  ~/[Plugins] (2)
-|4,39,15,0,1690488624,"~/[Plugins] (2)"
--'  14  0  ~/[Plugins] (2)
-|4,39,14,0,1690488624,"~/[Plugins] (2)"
--'  13  0  ~/[Plugins] (2)
-|4,39,13,0,1690488624,"~/[Plugins] (2)"
--'  12  0  ~/[Plugins] (2)
-|4,39,12,0,1690488624,"~/[Plugins] (2)"
--'  11  0  ~/[Plugins] (2)
-|4,39,11,0,1690488624,"~/[Plugins] (2)"
--'  15  0  ~/[Plugins] (2)
-|4,39,15,0,1690488624,"~/[Plugins] (2)"
--'  14  0  ~/[Plugins] (2)
-|4,39,14,0,1690488624,"~/[Plugins] (2)"
--'  13  0  ~/[Plugins] (2)
-|4,39,13,0,1690488624,"~/[Plugins] (2)"
--'  12  0  ~/[Plugins] (2)
-|4,39,12,0,1690488624,"~/[Plugins] (2)"
--'  11  0  ~/[Plugins] (2)
-|4,39,11,0,1690488624,"~/[Plugins] (2)"
--'  9  0  ~/[Plugins] (2)
-|4,39,9,0,1690488623,"~/[Plugins] (2)"
--'  9  0  ~/[Plugins] (2)
-|4,39,9,0,1690488623,"~/[Plugins] (2)"
--'  9  0  ~/[Plugins] (2)
-|4,39,9,0,1690488623,"~/[Plugins] (2)"
--'  9  0  ~/[Plugins] (2)
-|4,39,9,0,1690488623,"~/[Plugins] (2)"
--'  9  0  ~/[Plugins] (2)
-|4,39,9,0,1690488623,"~/[Plugins] (2)"
--'  7  0  ~/[Plugins] (2)
-|4,39,7,0,1690488622,"~/[Plugins] (2)"
--'  7  0  ~/[Plugins] (2)
-|4,39,7,0,1690488622,"~/[Plugins] (2)"
--'  7  0  ~/[Plugins] (2)
-|4,39,7,0,1690488622,"~/[Plugins] (2)"
--'  7  0  ~/[Plugins] (2)
-|4,39,7,0,1690488622,"~/[Plugins] (2)"
--'  7  0  ~/[Plugins] (2)
-|4,39,7,0,1690488622,"~/[Plugins] (2)"
--'  3  0  ~/[Plugins] (2)
-|4,39,3,0,1690488621,"~/[Plugins] (2)"
--'  2  0  ~/[Plugins] (2)
-|4,39,2,0,1690488621,"~/[Plugins] (2)"
--'  3  0  ~/[Plugins] (2)
-|4,39,3,0,1690488621,"~/[Plugins] (2)"
--'  2  0  ~/[Plugins] (2)
-|4,39,2,0,1690488621,"~/[Plugins] (2)"
--'  3  0  ~/[Plugins] (2)
-|4,39,3,0,1690488621,"~/[Plugins] (2)"
--'  2  0  ~/[Plugins] (2)
-|4,39,2,0,1690488621,"~/[Plugins] (2)"
--'  3  0  ~/[Plugins] (2)
-|4,39,3,0,1690488621,"~/[Plugins] (2)"
--'  2  0  ~/[Plugins] (2)
-|4,39,2,0,1690488621,"~/[Plugins] (2)"
--'  3  0  ~/[Plugins] (2)
-|4,39,3,0,1690488621,"~/[Plugins] (2)"
--'  2  0  ~/[Plugins] (2)
-|4,39,2,0,1690488621,"~/[Plugins] (2)"
--'  39  0  ~/.vim/vimrc
-|4,39,39,0,1690488431,"~/.vim/vimrc"
--'  39  0  ~/.vim/vimrc
-|4,39,39,0,1690488431,"~/.vim/vimrc"
--'  39  0  ~/.vim/vimrc
-|4,39,39,0,1690488431,"~/.vim/vimrc"
--'  39  0  ~/.vim/vimrc
-|4,39,39,0,1690488431,"~/.vim/vimrc"
--'  39  0  ~/.vim/vimrc
-|4,39,39,0,1690488431,"~/.vim/vimrc"
--'  40  10  ~/.vim/vimrc
-|4,39,40,10,1690488400,"~/.vim/vimrc"
--'  40  10  ~/.vim/vimrc
-|4,39,40,10,1690488400,"~/.vim/vimrc"
--'  40  10  ~/.vim/vimrc
-|4,39,40,10,1690488400,"~/.vim/vimrc"
--'  40  10  ~/.vim/vimrc
-|4,39,40,10,1690488400,"~/.vim/vimrc"
--'  40  10  ~/.vim/vimrc
-|4,39,40,10,1690488400,"~/.vim/vimrc"
--'  46  46  ~/.vim/vimrc
-|4,39,46,46,1690488399,"~/.vim/vimrc"
--'  46  46  ~/.vim/vimrc
-|4,39,46,46,1690488399,"~/.vim/vimrc"
--'  46  46  ~/.vim/vimrc
-|4,39,46,46,1690488399,"~/.vim/vimrc"
--'  46  46  ~/.vim/vimrc
-|4,39,46,46,1690488399,"~/.vim/vimrc"
+-'  170  80  ~/.vim/ide.vim
+|4,39,170,80,1690595346,"~/.vim/ide.vim"
+-'  166  69  ~/.vim/ide.vim
+|4,39,166,69,1690595290,"~/.vim/ide.vim"
+-'  169  3  ~/.vim/ide.vim
+|4,39,169,3,1690595264,"~/.vim/ide.vim"
+-'  168  59  ~/.vim/ide.vim
+|4,39,168,59,1690595264,"~/.vim/ide.vim"
+-'  1  0  ~/.vim/ide.vim
+|4,39,1,0,1690595234,"~/.vim/ide.vim"
+-'  24  6  ~/Twitch/coffee-vps/flask-vue/vuejs/actions.html
+|4,39,24,6,1690595227,"~/Twitch/coffee-vps/flask-vue/vuejs/actions.html"
+-'  1  0  ~/Twitch/coffee-vps/flask-vue/vuejs/actions.html
+|4,39,1,0,1690595212,"~/Twitch/coffee-vps/flask-vue/vuejs/actions.html"
+-'  40  5  ~/Twitch/coffee-vps/flask-vue/vuejs/Video.vue
+|4,39,40,5,1690595210,"~/Twitch/coffee-vps/flask-vue/vuejs/Video.vue"
+-'  28  4  ~/Twitch/coffee-vps/flask-vue/vuejs/Video.vue
+|4,39,28,4,1690595204,"~/Twitch/coffee-vps/flask-vue/vuejs/Video.vue"
+-'  28  5  ~/Twitch/coffee-vps/flask-vue/vuejs/Video.vue
+|4,39,28,5,1690595168,"~/Twitch/coffee-vps/flask-vue/vuejs/Video.vue"
+-'  28  5  ~/Twitch/coffee-vps/flask-vue/vuejs/Video.vue
+|4,39,28,5,1690595115,"~/Twitch/coffee-vps/flask-vue/vuejs/Video.vue"
+-'  1  0  ~/Twitch/coffee-vps/flask-vue/vuejs/Video.vue
+|4,39,1,0,1690595048,"~/Twitch/coffee-vps/flask-vue/vuejs/Video.vue"
+-'  1  0  ~/Twitch/coffee-vps/flask-vue/vuejs/Video.vue
+|4,39,1,0,1690595048,"~/Twitch/coffee-vps/flask-vue/vuejs/Video.vue"
+-'  1  0  ~/Twitch/coffee-vps/flask-vue/vuejs/Video.vue
+|4,39,1,0,1690595048,"~/Twitch/coffee-vps/flask-vue/vuejs/Video.vue"
+-'  1350  0  ~/.vim/vimrc
+|4,39,1350,0,1690595018,"~/.vim/vimrc"
+-'  154  0  ~/.vim/ide.vim
+|4,39,154,0,1690595018,"~/.vim/ide.vim"
+-'  1350  0  ~/.vim/vimrc
+|4,39,1350,0,1690595018,"~/.vim/vimrc"
+-'  154  0  ~/.vim/ide.vim
+|4,39,154,0,1690595018,"~/.vim/ide.vim"
+-'  1350  0  ~/.vim/vimrc
+|4,39,1350,0,1690595018,"~/.vim/vimrc"
+-'  154  0  ~/.vim/ide.vim
+|4,39,154,0,1690595018,"~/.vim/ide.vim"
+-'  1350  0  ~/.vim/vimrc
+|4,39,1350,0,1690595018,"~/.vim/vimrc"
+-'  154  0  ~/.vim/ide.vim
+|4,39,154,0,1690595018,"~/.vim/ide.vim"
+-'  24  58  ~/.vim/plugged/ale/doc/ale-javascript.txt
+|4,39,24,58,1690594983,"~/.vim/plugged/ale/doc/ale-javascript.txt"
+-'  24  58  ~/.vim/plugged/ale/doc/ale-javascript.txt
+|4,39,24,58,1690594983,"~/.vim/plugged/ale/doc/ale-javascript.txt"
+-'  24  58  ~/.vim/plugged/ale/doc/ale-javascript.txt
+|4,39,24,58,1690594983,"~/.vim/plugged/ale/doc/ale-javascript.txt"
+-'  24  58  ~/.vim/plugged/ale/doc/ale-javascript.txt
+|4,39,24,58,1690594983,"~/.vim/plugged/ale/doc/ale-javascript.txt"
+-'  81  17  ~/.vim/plugged/ale/doc/ale-javascript.txt
+|4,39,81,17,1690594981,"~/.vim/plugged/ale/doc/ale-javascript.txt"
+-'  81  17  ~/.vim/plugged/ale/doc/ale-javascript.txt
+|4,39,81,17,1690594981,"~/.vim/plugged/ale/doc/ale-javascript.txt"
+-'  81  17  ~/.vim/plugged/ale/doc/ale-javascript.txt
+|4,39,81,17,1690594981,"~/.vim/plugged/ale/doc/ale-javascript.txt"
+-'  81  17  ~/.vim/plugged/ale/doc/ale-javascript.txt
+|4,39,81,17,1690594981,"~/.vim/plugged/ale/doc/ale-javascript.txt"
+-'  54  72  ~/.vim/plugged/ale/doc/ale-javascript.txt
+|4,39,54,72,1690594836,"~/.vim/plugged/ale/doc/ale-javascript.txt"
+-'  54  72  ~/.vim/plugged/ale/doc/ale-javascript.txt
+|4,39,54,72,1690594836,"~/.vim/plugged/ale/doc/ale-javascript.txt"
+-'  54  72  ~/.vim/plugged/ale/doc/ale-javascript.txt
+|4,39,54,72,1690594836,"~/.vim/plugged/ale/doc/ale-javascript.txt"
+-'  54  72  ~/.vim/plugged/ale/doc/ale-javascript.txt
+|4,39,54,72,1690594836,"~/.vim/plugged/ale/doc/ale-javascript.txt"
+-'  23  54  ~/.vim/plugged/ale/doc/ale-javascript.txt
+|4,39,23,54,1690594831,"~/.vim/plugged/ale/doc/ale-javascript.txt"
+-'  23  54  ~/.vim/plugged/ale/doc/ale-javascript.txt
+|4,39,23,54,1690594831,"~/.vim/plugged/ale/doc/ale-javascript.txt"
+-'  23  54  ~/.vim/plugged/ale/doc/ale-javascript.txt
+|4,39,23,54,1690594831,"~/.vim/plugged/ale/doc/ale-javascript.txt"
+-'  23  54  ~/.vim/plugged/ale/doc/ale-javascript.txt
+|4,39,23,54,1690594831,"~/.vim/plugged/ale/doc/ale-javascript.txt"
+-'  22  18  ~/.vim/plugged/ale/doc/ale-javascript.txt
+|4,39,22,18,1690594828,"~/.vim/plugged/ale/doc/ale-javascript.txt"
+-'  22  18  ~/.vim/plugged/ale/doc/ale-javascript.txt
+|4,39,22,18,1690594828,"~/.vim/plugged/ale/doc/ale-javascript.txt"
+-'  22  18  ~/.vim/plugged/ale/doc/ale-javascript.txt
+|4,39,22,18,1690594828,"~/.vim/plugged/ale/doc/ale-javascript.txt"
+-'  22  18  ~/.vim/plugged/ale/doc/ale-javascript.txt
+|4,39,22,18,1690594828,"~/.vim/plugged/ale/doc/ale-javascript.txt"
+-'  18  17  ~/.vim/plugged/ale/doc/ale-javascript.txt
+|4,39,18,17,1690594827,"~/.vim/plugged/ale/doc/ale-javascript.txt"
+-'  18  17  ~/.vim/plugged/ale/doc/ale-javascript.txt
+|4,39,18,17,1690594827,"~/.vim/plugged/ale/doc/ale-javascript.txt"
+-'  18  17  ~/.vim/plugged/ale/doc/ale-javascript.txt
+|4,39,18,17,1690594827,"~/.vim/plugged/ale/doc/ale-javascript.txt"
+-'  18  17  ~/.vim/plugged/ale/doc/ale-javascript.txt
+|4,39,18,17,1690594827,"~/.vim/plugged/ale/doc/ale-javascript.txt"
+-'  17  13  ~/.vim/plugged/ale/doc/ale-javascript.txt
+|4,39,17,13,1690594826,"~/.vim/plugged/ale/doc/ale-javascript.txt"
+-'  17  13  ~/.vim/plugged/ale/doc/ale-javascript.txt
+|4,39,17,13,1690594826,"~/.vim/plugged/ale/doc/ale-javascript.txt"
+-'  17  13  ~/.vim/plugged/ale/doc/ale-javascript.txt
+|4,39,17,13,1690594826,"~/.vim/plugged/ale/doc/ale-javascript.txt"
+-'  17  13  ~/.vim/plugged/ale/doc/ale-javascript.txt
+|4,39,17,13,1690594826,"~/.vim/plugged/ale/doc/ale-javascript.txt"
+-'  14  7  ~/.vim/plugged/ale/doc/ale-javascript.txt
+|4,39,14,7,1690594825,"~/.vim/plugged/ale/doc/ale-javascript.txt"
+-'  13  8  ~/.vim/plugged/ale/doc/ale-javascript.txt
+|4,39,13,8,1690594825,"~/.vim/plugged/ale/doc/ale-javascript.txt"
+-'  14  7  ~/.vim/plugged/ale/doc/ale-javascript.txt
+|4,39,14,7,1690594825,"~/.vim/plugged/ale/doc/ale-javascript.txt"
+-'  13  8  ~/.vim/plugged/ale/doc/ale-javascript.txt
+|4,39,13,8,1690594825,"~/.vim/plugged/ale/doc/ale-javascript.txt"
+-'  14  7  ~/.vim/plugged/ale/doc/ale-javascript.txt
+|4,39,14,7,1690594825,"~/.vim/plugged/ale/doc/ale-javascript.txt"
+-'  13  8  ~/.vim/plugged/ale/doc/ale-javascript.txt
+|4,39,13,8,1690594825,"~/.vim/plugged/ale/doc/ale-javascript.txt"
+-'  14  7  ~/.vim/plugged/ale/doc/ale-javascript.txt
+|4,39,14,7,1690594825,"~/.vim/plugged/ale/doc/ale-javascript.txt"
+-'  13  8  ~/.vim/plugged/ale/doc/ale-javascript.txt
+|4,39,13,8,1690594825,"~/.vim/plugged/ale/doc/ale-javascript.txt"
+-'  6  22  ~/.vim/plugged/ale/doc/ale-javascript.txt
+|4,39,6,22,1690594822,"~/.vim/plugged/ale/doc/ale-javascript.txt"
+-'  6  22  ~/.vim/plugged/ale/doc/ale-javascript.txt
+|4,39,6,22,1690594822,"~/.vim/plugged/ale/doc/ale-javascript.txt"
+-'  6  22  ~/.vim/plugged/ale/doc/ale-javascript.txt
+|4,39,6,22,1690594822,"~/.vim/plugged/ale/doc/ale-javascript.txt"
+-'  6  22  ~/.vim/plugged/ale/doc/ale-javascript.txt
+|4,39,6,22,1690594822,"~/.vim/plugged/ale/doc/ale-javascript.txt"
+-'  4  45  ~/.vim/plugged/ale/doc/ale-javascript.txt
+|4,39,4,45,1690594817,"~/.vim/plugged/ale/doc/ale-javascript.txt"
+-'  4  45  ~/.vim/plugged/ale/doc/ale-javascript.txt
+|4,39,4,45,1690594817,"~/.vim/plugged/ale/doc/ale-javascript.txt"
+-'  4  45  ~/.vim/plugged/ale/doc/ale-javascript.txt
+|4,39,4,45,1690594817,"~/.vim/plugged/ale/doc/ale-javascript.txt"
+-'  4  45  ~/.vim/plugged/ale/doc/ale-javascript.txt
+|4,39,4,45,1690594817,"~/.vim/plugged/ale/doc/ale-javascript.txt"
+-'  1  0  ~/.vim/plugged/ale/doc/ale-javascript.txt
+|4,39,1,0,1690594815,"~/.vim/plugged/ale/doc/ale-javascript.txt"
+-'  1  0  ~/.vim/plugged/ale/doc/ale-javascript.txt
+|4,39,1,0,1690594815,"~/.vim/plugged/ale/doc/ale-javascript.txt"
+-'  1  0  ~/.vim/plugged/ale/doc/ale-javascript.txt
+|4,39,1,0,1690594815,"~/.vim/plugged/ale/doc/ale-javascript.txt"
+-'  1  0  ~/.vim/plugged/ale/doc/ale-javascript.txt
+|4,39,1,0,1690594815,"~/.vim/plugged/ale/doc/ale-javascript.txt"
+-'  21  9  ~/.vim/plugged/ale/doc/ale-javascript.txt
+|4,39,21,9,1690594813,"~/.vim/plugged/ale/doc/ale-javascript.txt"
+-'  21  9  ~/.vim/plugged/ale/doc/ale-javascript.txt
+|4,39,21,9,1690594813,"~/.vim/plugged/ale/doc/ale-javascript.txt"
+-'  21  9  ~/.vim/plugged/ale/doc/ale-javascript.txt
+|4,39,21,9,1690594813,"~/.vim/plugged/ale/doc/ale-javascript.txt"
+-'  21  9  ~/.vim/plugged/ale/doc/ale-javascript.txt
+|4,39,21,9,1690594813,"~/.vim/plugged/ale/doc/ale-javascript.txt"
+-'  1667  42  ~/.vim/plugged/ale/doc/ale.txt
+|4,39,1667,42,1690594809,"~/.vim/plugged/ale/doc/ale.txt"
+-'  1667  42  ~/.vim/plugged/ale/doc/ale.txt
+|4,39,1667,42,1690594809,"~/.vim/plugged/ale/doc/ale.txt"
+-'  1667  42  ~/.vim/plugged/ale/doc/ale.txt
+|4,39,1667,42,1690594809,"~/.vim/plugged/ale/doc/ale.txt"
+-'  1667  42  ~/.vim/plugged/ale/doc/ale.txt
+|4,39,1667,42,1690594809,"~/.vim/plugged/ale/doc/ale.txt"
+-'  1660  15  ~/.vim/plugged/ale/doc/ale.txt
+|4,39,1660,15,1690594805,"~/.vim/plugged/ale/doc/ale.txt"
+-'  421  7  ~/.vim/plugged/ale/doc/ale.txt
+|4,39,421,7,1690594805,"~/.vim/plugged/ale/doc/ale.txt"
+-'  1660  15  ~/.vim/plugged/ale/doc/ale.txt
+|4,39,1660,15,1690594805,"~/.vim/plugged/ale/doc/ale.txt"
+-'  421  7  ~/.vim/plugged/ale/doc/ale.txt
+|4,39,421,7,1690594805,"~/.vim/plugged/ale/doc/ale.txt"
+-'  1660  15  ~/.vim/plugged/ale/doc/ale.txt
+|4,39,1660,15,1690594805,"~/.vim/plugged/ale/doc/ale.txt"
+-'  421  7  ~/.vim/plugged/ale/doc/ale.txt
+|4,39,421,7,1690594805,"~/.vim/plugged/ale/doc/ale.txt"
+-'  1660  15  ~/.vim/plugged/ale/doc/ale.txt
+|4,39,1660,15,1690594805,"~/.vim/plugged/ale/doc/ale.txt"
+-'  421  7  ~/.vim/plugged/ale/doc/ale.txt
+|4,39,421,7,1690594805,"~/.vim/plugged/ale/doc/ale.txt"
+-'  411  39  ~/.vim/plugged/ale/doc/ale.txt
+|4,39,411,39,1690594804,"~/.vim/plugged/ale/doc/ale.txt"
+-'  411  39  ~/.vim/plugged/ale/doc/ale.txt
+|4,39,411,39,1690594804,"~/.vim/plugged/ale/doc/ale.txt"
+-'  411  39  ~/.vim/plugged/ale/doc/ale.txt
+|4,39,411,39,1690594804,"~/.vim/plugged/ale/doc/ale.txt"
+-'  411  39  ~/.vim/plugged/ale/doc/ale.txt
+|4,39,411,39,1690594804,"~/.vim/plugged/ale/doc/ale.txt"
+-'  403  11  ~/.vim/plugged/ale/doc/ale.txt
+|4,39,403,11,1690594802,"~/.vim/plugged/ale/doc/ale.txt"
+-'  403  11  ~/.vim/plugged/ale/doc/ale.txt
+|4,39,403,11,1690594802,"~/.vim/plugged/ale/doc/ale.txt"
+-'  403  11  ~/.vim/plugged/ale/doc/ale.txt
+|4,39,403,11,1690594802,"~/.vim/plugged/ale/doc/ale.txt"
+-'  403  11  ~/.vim/plugged/ale/doc/ale.txt
+|4,39,403,11,1690594802,"~/.vim/plugged/ale/doc/ale.txt"
+-'  2  0  ~/.vim/plugged/ale/doc/ale.txt
+|4,39,2,0,1690594800,"~/.vim/plugged/ale/doc/ale.txt"
+-'  2  0  ~/.vim/plugged/ale/doc/ale.txt
+|4,39,2,0,1690594800,"~/.vim/plugged/ale/doc/ale.txt"
+-'  2  0  ~/.vim/plugged/ale/doc/ale.txt
+|4,39,2,0,1690594800,"~/.vim/plugged/ale/doc/ale.txt"
+-'  2  0  ~/.vim/plugged/ale/doc/ale.txt
+|4,39,2,0,1690594800,"~/.vim/plugged/ale/doc/ale.txt"
+-'  1  0  ~/.vim/plugged/ale/doc/ale.txt
+|4,39,1,0,1690594793,"~/.vim/plugged/ale/doc/ale.txt"
 
 # Buffer list:
-%~/Twitch/.gitignore	11	15
+%~/Twitch/coffee-vps/flask-vue/vuejs/Video.vue	40	5
+%~/.vim/vimrc	1350	0
+%~/Twitch/coffee-vps/flask-vue/vuejs/actions.html	24	6
+%~/.vim/ide.vim	170	80
 
 # History of marks within files (newest to oldest):
 
-> ~/Twitch/.gitignore
-	*	1690489069	0
-	"	11	15
-	^	11	16
-	.	11	15
-	+	10	6
-	+	11	15
+> ~/.vim/ide.vim
+	*	1690595343	0
+	"	170	80
+	.	170	80
+	+	172	5
+	+	172	0
+	+	172	35
+	+	172	0
+	+	166	0
+	+	172	0
+	+	166	0
+	+	167	3
+	+	172	0
+	+	170	3
+	+	169	0
+	+	168	59
+	+	171	0
+	+	168	94
+	+	170	81
+	+	171	0
+	+	170	80
 
-> ~/.config/setup.sh
-	*	1690488959	0
-	"	1	0
-	^	7	75
-	.	8	0
-	+	9	68
-	+	10	27
-	+	4	0
-	+	3	1
-	+	13	34
-	+	3	0
-	+	4	0
+> ~/.vim/plugged/ale/doc/ale-javascript.txt
+	*	1690595333	0
+	"	59	2
+
+> ~/Twitch/coffee-vps/flask-vue/vuejs/actions.html
+	*	1690595225	0
+	"	24	6
+	^	18	46
+	.	11	0
+	+	1	0
+	+	25	0
+	+	13	29
+	+	14	28
+	+	6	21
+	+	9	45
+	+	19	0
+	+	16	24
+	+	17	23
+	+	18	46
+	+	19	0
+	+	14	30
+	+	11	0
+
+> ~/Twitch/coffee-vps/flask-vue/vuejs/Video.vue
+	*	1690595208	0
+	"	40	5
+	^	65	37
+	.	28	0
+	+	110	50
+	+	114	17
+	+	111	44
+	+	109	54
+	+	102	0
+	+	111	84
+	+	51	8
+	+	53	93
+	+	67	0
+	+	67	12
+	+	53	41
+	+	20	9
+	+	72	56
+	+	73	41
+	+	75	6
+	+	73	0
+	+	34	26
+	+	20	0
+	+	12	0
+	+	12	35
+	+	20	13
+	+	20	0
+	+	12	38
+	+	20	0
+	+	13	0
 	+	15	0
-	+	3	0
-	+	9	0
-	+	2	0
-	+	3	0
-	+	15	0
-	+	4	0
-	+	14	0
-	+	15	1
-	+	11	8
-	+	12	10
-	+	15	155
-	+	15	8
-	+	15	123
-	+	15	0
-	+	18	0
-	+	30	26
-	+	31	27
-	+	6	41
-	+	7	23
-	+	8	0
-	+	7	75
-	+	8	0
+	+	16	0
+	+	12	0
+	+	15	33
+	+	16	0
+	+	11	0
+	+	18	2
+	+	16	2
+	+	11	2
+	+	11	38
+	+	75	0
+	+	11	12
+	+	75	0
+	+	11	0
+	+	11	16
+	+	12	22
+	+	11	2
+	+	11	0
+	+	111	72
+	+	51	32
+	+	53	77
+	+	67	87
+	+	53	70
+	+	67	28
+	+	56	40
+	+	67	66
+	+	67	12
+	+	67	0
+	+	54	0
+	+	58	66
+	+	67	12
+	+	67	0
+	+	58	18
+	+	67	0
+	+	11	0
+	+	75	0
+	+	58	0
+	+	52	25
+	+	56	36
+	+	62	0
+	+	61	33
+	+	63	29
+	+	112	47
+	+	112	69
+	+	63	0
+	+	61	0
+	+	56	0
+	+	58	0
+	+	61	0
+	+	57	25
+	+	59	61
+	+	60	31
+	+	112	36
+	+	58	46
+	+	66	0
+	+	42	13
+	+	50	0
+	+	87	50
+	+	42	41
+	+	43	25
+	+	44	45
+	+	49	44
+	+	43	0
+	+	43	83
+	+	58	43
+	+	111	48
+	+	113	68
+	+	65	37
+	+	111	107
+	+	51	41
+	+	53	70
+	+	54	99
+	+	62	100
+	+	65	37
+	+	28	0
+	a	112	69
+	b	112	69
 
 > ~/.vim/vimrc
-	*	1690488957	0
-	"	42	44
+	*	1690595018	0
+	"	1350	0
 	^	42	45
 	.	42	44
 	+	51	65
@@ -1903,39 +2035,79 @@ $
 	+	41	0
 	+	42	44
 
-> ~/[Plugins] (2)
-	*	1690488862	0
-	"	1	0
-
-> /usr/share/vim/vim90/doc/map.txt
-	*	1690488563	0
-	"	1391	27
-
-> /usr/share/vim/vim90/doc/userfunc.txt
-	*	1690488530	0
-	"	206	32
-
-> ~/.vim/plugin/better.vim
-	*	1690488424	0
-	"	26	15
-
-> /usr/share/vim/vim90/doc/filetype.txt
-	*	1690488409	0
-	"	780	10
-
-> /usr/share/vim/vim90/doc/usr_05.txt
-	*	1690488077	0
-	"	423	40
+> ~/.vim/lint/eslint_config.json
+	*	1690594964	0
+	"	5	0
+	.	1	0
+	+	1	1
+	+	1	0
 
 > ~/.vim/plugged/ale/doc/ale.txt
-	*	1690488073	0
-	"	4450	2
+	*	1690594805	0
+	"	1667	42
+
+> ~/.config/git/config
+	*	1690593171	0
+	"	10	0
+	.	10	0
+	+	8	17
+	+	9	8
+	+	10	0
+
+> ~/.config/setup.sh
+	*	1690593044	0
+	"	8	0
+	^	8	55
+	.	8	54
+	+	10	68
+	+	11	27
+	+	4	0
+	+	3	1
+	+	14	34
+	+	3	0
+	+	4	0
+	+	16	0
+	+	3	0
+	+	10	0
+	+	2	0
+	+	3	0
+	+	16	0
+	+	4	0
+	+	15	0
+	+	16	1
+	+	12	8
+	+	13	10
+	+	16	155
+	+	16	8
+	+	16	123
+	+	16	0
+	+	19	0
+	+	31	26
+	+	32	27
+	+	6	41
+	+	7	23
+	+	9	0
+	+	7	75
+	+	9	0
+	+	8	63
+	+	9	0
+	+	8	54
+
+> ~/.config/starship.toml
+	*	1690592945	0
+	"	2	16
+	^	2	16
+	.	2	16
+	+	1	11
+	+	3	17
+	+	4	6
+	+	3	3
+	+	2	16
 
 > ~/Twitch/coffee-vps/flask-vue/api.py
-	*	1690481142	0
-	"	17	26
-	^	17	29
-	.	17	0
+	*	1690592847	0
+	"	24	4
+	.	24	0
 	+	158	0
 	+	163	31
 	+	163	76
@@ -2032,6 +2204,39 @@ $
 	+	21	22
 	+	24	0
 	+	17	0
+	+	24	0
+
+> ~/Twitch/.gitignore
+	*	1690592836	0
+	"	11	15
+	^	11	16
+	.	11	15
+	+	10	6
+	+	11	15
+
+> ~/[Plugins] (2)
+	*	1690488862	0
+	"	1	0
+
+> /usr/share/vim/vim90/doc/map.txt
+	*	1690488563	0
+	"	1391	27
+
+> /usr/share/vim/vim90/doc/userfunc.txt
+	*	1690488530	0
+	"	206	32
+
+> ~/.vim/plugin/better.vim
+	*	1690488424	0
+	"	26	15
+
+> /usr/share/vim/vim90/doc/filetype.txt
+	*	1690488409	0
+	"	780	10
+
+> /usr/share/vim/vim90/doc/usr_05.txt
+	*	1690488077	0
+	"	423	40
 
 > ~/.vim/plugged/ale/doc/ale-python.txt
 	*	1690480574	0
@@ -2143,114 +2348,6 @@ $
 	+	659	0
 	+	656	0
 
-> ~/Twitch/coffee-vps/flask-vue/vuejs/Video.vue
-	*	1689187372	0
-	"	64	12
-	^	65	37
-	.	65	37
-	+	106	43
-	+	110	50
-	+	114	17
-	+	111	44
-	+	109	54
-	+	102	0
-	+	111	84
-	+	51	8
-	+	53	93
-	+	67	0
-	+	67	12
-	+	53	41
-	+	20	9
-	+	72	56
-	+	73	41
-	+	75	6
-	+	73	0
-	+	34	26
-	+	20	0
-	+	12	0
-	+	12	35
-	+	20	13
-	+	20	0
-	+	12	38
-	+	20	0
-	+	13	0
-	+	15	0
-	+	16	0
-	+	12	0
-	+	15	33
-	+	16	0
-	+	11	0
-	+	18	2
-	+	16	2
-	+	11	2
-	+	11	38
-	+	75	0
-	+	11	12
-	+	75	0
-	+	11	0
-	+	11	16
-	+	12	22
-	+	11	2
-	+	11	0
-	+	111	72
-	+	51	32
-	+	53	77
-	+	67	87
-	+	53	70
-	+	67	28
-	+	56	40
-	+	67	66
-	+	67	12
-	+	67	0
-	+	54	0
-	+	58	66
-	+	67	12
-	+	67	0
-	+	58	18
-	+	67	0
-	+	11	0
-	+	75	0
-	+	58	0
-	+	52	25
-	+	56	36
-	+	62	0
-	+	61	33
-	+	63	29
-	+	112	47
-	+	112	69
-	+	63	0
-	+	61	0
-	+	56	0
-	+	58	0
-	+	61	0
-	+	57	25
-	+	59	61
-	+	60	31
-	+	112	36
-	+	58	46
-	+	66	0
-	+	42	13
-	+	50	0
-	+	87	50
-	+	42	41
-	+	43	25
-	+	44	45
-	+	49	44
-	+	43	0
-	+	43	83
-	+	58	43
-	+	111	48
-	+	113	68
-	+	65	37
-	+	111	107
-	+	51	41
-	+	53	70
-	+	54	99
-	+	62	100
-	+	65	37
-	a	112	69
-	b	112	69
-
 > ~/Twitch/coffee-vps/code/data/offsets/1863704634.json
 	*	1689186061	0
 	"	1	0
@@ -2294,25 +2391,6 @@ $
 > ~/Twitch/coffee-vps/flask-vue/vuejs/package-lock.json
 	*	1689180353	0
 	"	1	0
-
-> ~/Twitch/coffee-vps/flask-vue/vuejs/actions.html
-	*	1689180007	0
-	"	1	0
-	^	18	46
-	.	11	0
-	+	1	0
-	+	25	0
-	+	13	29
-	+	14	28
-	+	6	21
-	+	9	45
-	+	19	0
-	+	16	24
-	+	17	23
-	+	18	46
-	+	19	0
-	+	14	30
-	+	11	0
 
 > ~/Twitch/coffee-vps/flask-vue/vuejs/socket.js
 	*	1689179475	0
@@ -4365,15 +4443,6 @@ $
 > ~/.local/lib/python3.10/site-packages/waivek/db.py
 	*	1688406940	0
 	"	46	4
-
-> ~/.config/starship.toml
-	*	1688406493	0
-	"	3	6
-	^	3	12
-	.	3	6
-	+	1	11
-	+	2	17
-	+	3	6
 
 > ~/Twitch/coffee-vps/flask-vue/.direnv/python-3.10.6/bin/python
 	*	1688403403	0

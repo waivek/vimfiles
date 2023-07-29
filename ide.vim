@@ -163,8 +163,12 @@ let g:ale_html_tidy_options = '-q -e -language en --escape-scripts 0'
 "     "plugin:vue/base"
 "   ]
 " }
-let g:ale_javascript_eslint_options='--resolve-plugins-relative-to=C:\Users\vivek\AppData\Roaming\npm'
-
+" let g:ale_javascript_eslint_options='--resolve-plugins-relative-to=C:\Users\vivek\AppData\Roaming\npm'
+if has('win32')
+    let g:ale_javascript_eslint_options='--config ~/vimfiles/lint/eslint_config.json --resolve-plugins-relative-to=C:\Users\vivek\AppData\Roaming\npm'
+else
+    let g:ale_javascript_eslint_options='--config ~/.vim/lint/eslint_config.json'
+endif
 " }}}
 
 " Jedi g:{{{
