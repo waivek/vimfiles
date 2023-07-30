@@ -292,7 +292,11 @@ augroup END
 
 let s:dotty_script_id = -1
 function! DotMap()
-    let dotty_path = '~/vimfiles/plugin/dotty.vim'
+    if has('win32')
+        let dotty_path = '~/vimfiles/plugin/dotty.vim'
+    else
+        let dotty_path = '~/.vim/plugin/dotty.vim'
+    endif
     if s:dotty_script_id == -1
         let s:dotty_script_id = introspect#GetSid(dotty_path)
     endif
@@ -330,8 +334,19 @@ function! DotMap()
 
     let dotty_status = join([dot_status, gs_status, n_status, ws_status], " ")
     let dotty_status = trim(dotty_status)
-    return "[" . dotty_status . "]"
+    if dotty_status == "GS" || dotty_status == "DOT GS N" || dotty_status == "DOT GSO N"
+        return ""
+    endif
+    return "[ERROR:" . dotty_status . "]"
 endfunction
+function! CocStatus()
+    let coc_status = coc#status()
+    if coc_status == "Volar"
+        return ""
+    endif
+    return coc_status
+endfunction
+
 set statusline=%<%{Relpath()}
 " options.txt[-][RO][help]
 "   options.txt - Relpath()
@@ -340,8 +355,9 @@ set statusline=%<%{Relpath()}
 "        [help] - %y (type of file)
 "     [Preview] - %w (preview window flag, not present in example)
 "                  = (separation point b/w left & right aligned fields)
+"    %#Error#<...>%0* = Error highlight group
 "
-set statusline+=%m%r%y%w%{DotMap()}%#Error#%{GetGitStl()}%{coc#status()}%0*%=\ %l/%-6L\ %3c 
+set statusline+=%m%r%y%w%{DotMap()}%#Error#%{GetGitStl()}%{CocStatus()}%0*%=\ %l/%-6L\ %3c 
 " }}}
 " Error Lines {{{
 let g:last_command = ""
