@@ -4,5 +4,6 @@ else
     source ~/.vim/ftplugin/html.vim
 endif
 
+set suffixesadd=.vue
 
 
