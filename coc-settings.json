@@ -8,13 +8,28 @@
     "suggest.localityBonus": true,
     "inlayHint.enable": false,
 
+
     "python.analysis.autoImportCompletions": false,
 
     "vimlsp.diagnostic.enable": true,
 
     "volar.enable": true,
     "css.lint.unknownAtRules": "ignore",
-    "diagnostic.showUnused": false,
+
+
+    "javascript.validate.enable": false, // re-enable once await googleapi.videos.list({}); stops showing errors
+    "javascript.showUnused": false,
+
+
+    "coc.source.buffer.enable": false,
+    "coc.source.file.enable": false,
+    "coc.source.around.enable": false,
+    "coc.source.file.priority": 0,
+    "coc.source.buffer.priority": 0,
+
+
+
+
 
     "tailwindCSS.enable": true,
 

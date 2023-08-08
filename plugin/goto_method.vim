@@ -35,7 +35,10 @@ function! s:SearchJavascriptFunction()
     " return '/\(def\|class\)\s\+\w*'
     " return '/^\s*\(async\)\?\s
     " return '\v^\s*(async)?\s*(if|for|while|else)@!\w+\s*\(.*\)\s*[^;]*$'
-    return '/\v^\s*\zs(async)?\s*(if|for|while|else)@!\w*'
+    " return '/\v^\s*\zs(async)?\s*(if|for|while|else)@!\w*\s*'
+    " return '/\v^\s*\zs(async)?\s*(if|for|while|else)@!\w*\s*[^(]*'
+    return '/\v^\s*\zs(async)?\s*function\s*\zs\w*\s*[^(]*'
+
 endfunction
 
 function! s:SearchVimProfileFunction()

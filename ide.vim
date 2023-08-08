@@ -135,7 +135,7 @@ augroup VimrcAle
 augroup END
 let g:ale_linters = { 
             \ 'python' : [ 'pyflakes_refined' ],
-            \ 'javascript' : ['xo'],
+            \ 'javascript' : ['quick-lint-js'],
             \ 'php' : ["php"],
             \ 'vim': ['vint_refined' ],
             \ 'go' : [ 'gobuild' ]
@@ -166,8 +166,10 @@ let g:ale_html_tidy_options = '-q -e -language en --escape-scripts 0'
 " let g:ale_javascript_eslint_options='--resolve-plugins-relative-to=C:\Users\vivek\AppData\Roaming\npm'
 if has('win32')
     let g:ale_javascript_eslint_options='--config ~/vimfiles/lint/eslint_config.json --resolve-plugins-relative-to=C:\Users\vivek\AppData\Roaming\npm'
+    " let g:ale_javascript_eslint_options=''
 else
     let g:ale_javascript_eslint_options='--config ~/.vim/lint/eslint_config.json'
+    " let g:ale_javascript_eslint_options=''
 endif
 " }}}
 

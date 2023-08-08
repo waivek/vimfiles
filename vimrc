@@ -40,6 +40,7 @@ filetype indent plugin on | syntax on
 
 call plug#begin()
 " Make sure pyflakes and eslint are installed
+
 Plug 'posva/vim-vue'
 Plug 'dense-analysis/ale'
 " Plug 'neoclide/coc.nvim', { 'tag': 'v0.0.81' }
@@ -47,6 +48,8 @@ Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'tomtom/tcomment_vim'
 Plug 'tommcdo/vim-exchange'
 Plug 'AndrewRadev/sideways.vim'
+
+Plug 'quick-lint/quick-lint-js', {'rtp': 'plugin/vim/quick-lint-js.vim', 'tag': '2.15.0'}
 
 let fzf_dir = has('win32') ? expand('~/vimfiles/.fzf') : expand('~/.vim/.fzf')
 Plug 'junegunn/fzf', { 'dir': fzf_dir, 'do': './install --all' }
