@@ -21,7 +21,9 @@ $
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1691834242,,"q"
+|2,0,1691844051,,"q"
+:MRU set
+|2,0,1691844034,,"MRU set"
 :set nonumber
 |2,0,1691827788,,"set nonumber"
 :MRU 34:TwitchEmbed.vue
@@ -898,8 +900,6 @@ $
 |2,0,1690481096,,"ALEDisable"
 :MRU py$
 |2,0,1690481075,,"MRU py$"
-:MRU set
-|2,0,1690481008,,"MRU set"
 :h ale-python-pyflakes
 |2,0,1690480552,,"h ale-python-pyflakes"
 :Copilot setup
@@ -2718,9 +2718,9 @@ $
 # Debug Line History (newest to oldest):
 
 # Registers:
-"0	CHAR	0
-	Float32Array
-|3,0,0,0,1,0,1691823294,"Float32Array"
+""0	CHAR	0
+	eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+|3,1,0,0,1,0,1691844028,"eval \"$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)\""
 "1	LINE	0
 	vue - vue router?
 |3,0,1,1,1,0,1691824783,"vue - vue router?"
@@ -2755,47 +2755,61 @@ $
 "s	LINE	0
 	                <button class="bg-yellow-400" @click="do_emit_create_video_portion(video.id, start, end)">Create Portion (video)</button>
 |3,0,28,1,1,0,1689175020,"                <button class=\"bg-yellow-400\" @click=\"do_emit_create_video_portion(video.id, start, end)\">Create Portion (video)</button>"
-""-	CHAR	0
+"-	CHAR	0
 	explore 
-|3,1,36,0,1,0,1691829278,"explore "
+|3,0,36,0,1,0,1691829278,"explore "
 
 # File marks:
-'0  26  17  ~/.config/setup.sh
-|4,48,26,17,1691834242,"~/.config/setup.sh"
-'1  1  0  ~/Twitch/coffee-vps/code/tmp/yt_videos.py
-|4,49,1,0,1691834191,"~/Twitch/coffee-vps/code/tmp/yt_videos.py"
-'2  1  0  ~/Twitch/coffee-vps/code/tmp/yt_videos.py
-|4,50,1,0,1691834191,"~/Twitch/coffee-vps/code/tmp/yt_videos.py"
-'3  1  0  ~/.config/gita/repos.csv
-|4,51,1,0,1691834139,"~/.config/gita/repos.csv"
-'4  1  0  ~/.config/gita/repos.csv
-|4,52,1,0,1691834139,"~/.config/gita/repos.csv"
-'5  1  0  ~/.config/gita/repos.csv
-|4,53,1,0,1691834139,"~/.config/gita/repos.csv"
-'6  1  0  ~/.config/gita/repos.csv
-|4,54,1,0,1691834139,"~/.config/gita/repos.csv"
-'7  3  6  ~/vimfiles/todo/230812.txt
-|4,55,3,6,1691834083,"~/vimfiles/todo/230812.txt"
-'8  3  6  ~/vimfiles/todo/230812.txt
-|4,56,3,6,1691834083,"~/vimfiles/todo/230812.txt"
-'9  3  6  ~/vimfiles/todo/230812.txt
-|4,57,3,6,1691834083,"~/vimfiles/todo/230812.txt"
+'0  2  0  ~/temp/brew.sh
+|4,48,2,0,1691844051,"~/temp/brew.sh"
+'1  26  17  ~/.config/setup.sh
+|4,49,26,17,1691834242,"~/.config/setup.sh"
+'2  26  17  ~/.config/setup.sh
+|4,50,26,17,1691834242,"~/.config/setup.sh"
+'3  1  0  ~/Twitch/coffee-vps/code/tmp/yt_videos.py
+|4,51,1,0,1691834191,"~/Twitch/coffee-vps/code/tmp/yt_videos.py"
+'4  1  0  ~/Twitch/coffee-vps/code/tmp/yt_videos.py
+|4,52,1,0,1691834191,"~/Twitch/coffee-vps/code/tmp/yt_videos.py"
+'5  1  0  ~/Twitch/coffee-vps/code/tmp/yt_videos.py
+|4,53,1,0,1691834191,"~/Twitch/coffee-vps/code/tmp/yt_videos.py"
+'6  1  0  ~/Twitch/coffee-vps/code/tmp/yt_videos.py
+|4,54,1,0,1691834191,"~/Twitch/coffee-vps/code/tmp/yt_videos.py"
+'7  1  0  ~/.config/gita/repos.csv
+|4,55,1,0,1691834139,"~/.config/gita/repos.csv"
+'8  1  0  ~/.config/gita/repos.csv
+|4,56,1,0,1691834139,"~/.config/gita/repos.csv"
+'9  1  0  ~/.config/gita/repos.csv
+|4,57,1,0,1691834139,"~/.config/gita/repos.csv"
 
 # Jumplist (newest first):
+-'  2  0  ~/temp/brew.sh
+|4,39,2,0,1691844051,"~/temp/brew.sh"
+-'  1  0  /home/linuxbrew/.linuxbrew/bin/brew
+|4,39,1,0,1691844024,"/home/linuxbrew/.linuxbrew/bin/brew"
+-'  1  0  ~/temp/brew.sh
+|4,39,1,0,1691843956,"~/temp/brew.sh"
 -'  26  17  ~/.config/setup.sh
 |4,39,26,17,1691834242,"~/.config/setup.sh"
+-'  26  17  ~/.config/setup.sh
+|4,39,26,17,1691834242,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1691834233,"~/.config/setup.sh"
 -'  1  0  ~/.config/setup.sh
 |4,39,1,0,1691834233,"~/.config/setup.sh"
 -'  1  0  ~/Twitch/coffee-vps/code/tmp/yt_videos.py
 |4,39,1,0,1691834191,"~/Twitch/coffee-vps/code/tmp/yt_videos.py"
 -'  1  0  ~/Twitch/coffee-vps/code/tmp/yt_videos.py
 |4,39,1,0,1691834191,"~/Twitch/coffee-vps/code/tmp/yt_videos.py"
+-'  1  0  ~/Twitch/coffee-vps/code/tmp/yt_videos.py
+|4,39,1,0,1691834191,"~/Twitch/coffee-vps/code/tmp/yt_videos.py"
 -'  1  0  ~/.config/gita/repos.csv
 |4,39,1,0,1691834139,"~/.config/gita/repos.csv"
 -'  1  0  ~/.config/gita/repos.csv
 |4,39,1,0,1691834139,"~/.config/gita/repos.csv"
 -'  1  0  ~/.config/gita/repos.csv
 |4,39,1,0,1691834139,"~/.config/gita/repos.csv"
+-'  1  0  ~/.config/gita/repos.csv
+|4,39,1,0,1691834139,"~/.config/gita/repos.csv"
 -'  3  6  ~/vimfiles/todo/230812.txt
 |4,39,3,6,1691834083,"~/vimfiles/todo/230812.txt"
 -'  3  6  ~/vimfiles/todo/230812.txt
@@ -2804,6 +2818,10 @@ $
 |4,39,3,6,1691834083,"~/vimfiles/todo/230812.txt"
 -'  3  6  ~/vimfiles/todo/230812.txt
 |4,39,3,6,1691834083,"~/vimfiles/todo/230812.txt"
+-'  3  6  ~/vimfiles/todo/230812.txt
+|4,39,3,6,1691834083,"~/vimfiles/todo/230812.txt"
+-'  1  0  ~/Twitch/coffee-vps/flask-vue/vuejs/TwitchEmbed.vue
+|4,39,1,0,1691828554,"~/Twitch/coffee-vps/flask-vue/vuejs/TwitchEmbed.vue"
 -'  1  0  ~/Twitch/coffee-vps/flask-vue/vuejs/TwitchEmbed.vue
 |4,39,1,0,1691828554,"~/Twitch/coffee-vps/flask-vue/vuejs/TwitchEmbed.vue"
 -'  1  0  ~/Twitch/coffee-vps/flask-vue/vuejs/TwitchEmbed.vue
@@ -2824,6 +2842,10 @@ $
 |4,39,129,0,1691827790,"~/Twitch/coffee-vps/flask-vue/vuejs/TwitchEmbed.vue"
 -'  129  0  ~/Twitch/coffee-vps/flask-vue/vuejs/TwitchEmbed.vue
 |4,39,129,0,1691827790,"~/Twitch/coffee-vps/flask-vue/vuejs/TwitchEmbed.vue"
+-'  129  0  ~/Twitch/coffee-vps/flask-vue/vuejs/TwitchEmbed.vue
+|4,39,129,0,1691827790,"~/Twitch/coffee-vps/flask-vue/vuejs/TwitchEmbed.vue"
+-'  7  43  ~/vimfiles/todo/230812.txt
+|4,39,7,43,1691827783,"~/vimfiles/todo/230812.txt"
 -'  7  43  ~/vimfiles/todo/230812.txt
 |4,39,7,43,1691827783,"~/vimfiles/todo/230812.txt"
 -'  7  43  ~/vimfiles/todo/230812.txt
@@ -2844,6 +2866,10 @@ $
 |4,39,1,0,1691827193,"~/tsnuxt/components/HelloWorld.vue"
 -'  1  0  ~/tsnuxt/components/HelloWorld.vue
 |4,39,1,0,1691827193,"~/tsnuxt/components/HelloWorld.vue"
+-'  1  0  ~/tsnuxt/components/HelloWorld.vue
+|4,39,1,0,1691827193,"~/tsnuxt/components/HelloWorld.vue"
+-'  6  8  ~/vimfiles/todo/230812.txt
+|4,39,6,8,1691826487,"~/vimfiles/todo/230812.txt"
 -'  6  8  ~/vimfiles/todo/230812.txt
 |4,39,6,8,1691826487,"~/vimfiles/todo/230812.txt"
 -'  6  8  ~/vimfiles/todo/230812.txt
@@ -2864,6 +2890,10 @@ $
 |4,39,6,0,1691824737,"~/tsnuxt/components/HelloWorld.vue"
 -'  6  0  ~/tsnuxt/components/HelloWorld.vue
 |4,39,6,0,1691824737,"~/tsnuxt/components/HelloWorld.vue"
+-'  6  0  ~/tsnuxt/components/HelloWorld.vue
+|4,39,6,0,1691824737,"~/tsnuxt/components/HelloWorld.vue"
+-'  12  20  ~/tsnuxt/components/HelloWorld.vue
+|4,39,12,20,1691823293,"~/tsnuxt/components/HelloWorld.vue"
 -'  12  20  ~/tsnuxt/components/HelloWorld.vue
 |4,39,12,20,1691823293,"~/tsnuxt/components/HelloWorld.vue"
 -'  12  20  ~/tsnuxt/components/HelloWorld.vue
@@ -2884,6 +2914,10 @@ $
 |4,39,11,9,1691823187,"~/tsnuxt/components/HelloWorld.vue"
 -'  11  9  ~/tsnuxt/components/HelloWorld.vue
 |4,39,11,9,1691823187,"~/tsnuxt/components/HelloWorld.vue"
+-'  11  9  ~/tsnuxt/components/HelloWorld.vue
+|4,39,11,9,1691823187,"~/tsnuxt/components/HelloWorld.vue"
+-'  21  4  ~/tsnuxt/.nuxt/tsconfig.json
+|4,39,21,4,1691822942,"~/tsnuxt/.nuxt/tsconfig.json"
 -'  21  4  ~/tsnuxt/.nuxt/tsconfig.json
 |4,39,21,4,1691822942,"~/tsnuxt/.nuxt/tsconfig.json"
 -'  21  4  ~/tsnuxt/.nuxt/tsconfig.json
@@ -2904,6 +2938,10 @@ $
 |4,39,3,17,1691822935,"~/tsnuxt/tsconfig.json"
 -'  3  17  ~/tsnuxt/tsconfig.json
 |4,39,3,17,1691822935,"~/tsnuxt/tsconfig.json"
+-'  3  17  ~/tsnuxt/tsconfig.json
+|4,39,3,17,1691822935,"~/tsnuxt/tsconfig.json"
+-'  11  0  ~/tsnuxt/.nuxt/tsconfig.json
+|4,39,11,0,1691822918,"~/tsnuxt/.nuxt/tsconfig.json"
 -'  11  0  ~/tsnuxt/.nuxt/tsconfig.json
 |4,39,11,0,1691822918,"~/tsnuxt/.nuxt/tsconfig.json"
 -'  11  0  ~/tsnuxt/.nuxt/tsconfig.json
@@ -2924,6 +2962,10 @@ $
 |4,39,86,4,1691822912,"~/tsnuxt/.nuxt/tsconfig.json"
 -'  86  4  ~/tsnuxt/.nuxt/tsconfig.json
 |4,39,86,4,1691822912,"~/tsnuxt/.nuxt/tsconfig.json"
+-'  86  4  ~/tsnuxt/.nuxt/tsconfig.json
+|4,39,86,4,1691822912,"~/tsnuxt/.nuxt/tsconfig.json"
+-'  7  0  ~/tsnuxt/nuxt.config.ts
+|4,39,7,0,1691822908,"~/tsnuxt/nuxt.config.ts"
 -'  7  0  ~/tsnuxt/nuxt.config.ts
 |4,39,7,0,1691822908,"~/tsnuxt/nuxt.config.ts"
 -'  7  0  ~/tsnuxt/nuxt.config.ts
@@ -2940,59 +2982,22 @@ $
 |4,39,2,35,1691822901,"~/tsnuxt/nuxt.config.ts"
 -'  2  35  ~/tsnuxt/nuxt.config.ts
 |4,39,2,35,1691822901,"~/tsnuxt/nuxt.config.ts"
--'  2  35  ~/tsnuxt/nuxt.config.ts
-|4,39,2,35,1691822901,"~/tsnuxt/nuxt.config.ts"
--'  2  35  ~/tsnuxt/nuxt.config.ts
-|4,39,2,35,1691822901,"~/tsnuxt/nuxt.config.ts"
--'  14  4  ~/tsnuxt/components/HelloWorld.vue
-|4,39,14,4,1691822784,"~/tsnuxt/components/HelloWorld.vue"
--'  14  4  ~/tsnuxt/components/HelloWorld.vue
-|4,39,14,4,1691822784,"~/tsnuxt/components/HelloWorld.vue"
--'  14  4  ~/tsnuxt/components/HelloWorld.vue
-|4,39,14,4,1691822784,"~/tsnuxt/components/HelloWorld.vue"
--'  14  4  ~/tsnuxt/components/HelloWorld.vue
-|4,39,14,4,1691822784,"~/tsnuxt/components/HelloWorld.vue"
--'  14  4  ~/tsnuxt/components/HelloWorld.vue
-|4,39,14,4,1691822784,"~/tsnuxt/components/HelloWorld.vue"
--'  15  0  ~/tsnuxt/package.json
-|4,39,15,0,1691822646,"~/tsnuxt/package.json"
--'  15  0  ~/tsnuxt/package.json
-|4,39,15,0,1691822646,"~/tsnuxt/package.json"
--'  15  0  ~/tsnuxt/package.json
-|4,39,15,0,1691822646,"~/tsnuxt/package.json"
--'  15  0  ~/tsnuxt/package.json
-|4,39,15,0,1691822646,"~/tsnuxt/package.json"
--'  15  0  ~/tsnuxt/package.json
-|4,39,15,0,1691822646,"~/tsnuxt/package.json"
--'  3  16  ~/tsnuxt/nuxt.config.ts
-|4,39,3,16,1691822634,"~/tsnuxt/nuxt.config.ts"
--'  3  16  ~/tsnuxt/nuxt.config.ts
-|4,39,3,16,1691822634,"~/tsnuxt/nuxt.config.ts"
--'  3  16  ~/tsnuxt/nuxt.config.ts
-|4,39,3,16,1691822634,"~/tsnuxt/nuxt.config.ts"
--'  3  16  ~/tsnuxt/nuxt.config.ts
-|4,39,3,16,1691822634,"~/tsnuxt/nuxt.config.ts"
--'  3  16  ~/tsnuxt/nuxt.config.ts
-|4,39,3,16,1691822634,"~/tsnuxt/nuxt.config.ts"
--'  2  0  ~/tsnuxt/nuxt.config.ts
-|4,39,2,0,1691822582,"~/tsnuxt/nuxt.config.ts"
--'  15  0  ~/tsnuxt/package.json
-|4,39,15,0,1691822581,"~/tsnuxt/package.json"
--'  1  0  ~/tsnuxt/nuxt.config.ts
-|4,39,1,0,1691822437,"~/tsnuxt/nuxt.config.ts"
--'  1  0  ~/tsnuxt/nuxt.config.ts
-|4,39,1,0,1691822437,"~/tsnuxt/nuxt.config.ts"
 
 # Buffer list:
-%~/.config/setup.sh	26	17
+%~/temp/brew.sh	2	0
+%/home/linuxbrew/.linuxbrew/bin/brew	1	0
 
 # History of marks within files (newest to oldest):
 
+> ~/temp/brew.sh
+	*	1691844050	0
+	"	2	0
+
 > ~/.config/setup.sh
-	*	1691834241	0
-	"	26	17
-	^	26	18
-	.	26	17
+	*	1691844049	0
+	"	42	53
+	^	42	0
+	.	42	0
 	+	14	68
 	+	15	27
 	+	4	0
@@ -3037,6 +3042,11 @@ $
 	+	10	0
 	+	25	9
 	+	26	17
+	+	42	0
+
+> /home/linuxbrew/.linuxbrew/bin/brew
+	*	1691844023	0
+	"	1	0
 
 > ~/Twitch/coffee-vps/code/tmp/yt_videos.py
 	*	1691834185	0
