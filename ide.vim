@@ -284,6 +284,7 @@ function! s:TabCompletion()
     " endif
     call coc#refresh() " Start Coc Completion
 endfunction
+inoremap <silent> <expr> <C-u> coc#refresh()
 
 
 function! s:ShowDocumentationVim()

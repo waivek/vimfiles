@@ -41,6 +41,7 @@ filetype indent plugin on | syntax on
 call plug#begin()
 " Make sure pyflakes and eslint are installed
 " Install tabular
+Plug 'preservim/vim-markdown'
 Plug 'godlygeek/tabular'
 Plug 'posva/vim-vue'
 Plug 'dense-analysis/ale'
@@ -1152,13 +1153,13 @@ endfunction
 
 function! s:GrepAbbrev()
     if &filetype ==# "vim"
-        return "grep -g *.vim -g vimrc"
+        return "grep -g '*.vim' -g 'vimrc'"
     endif
     let extension = expand("%:e")
     if extension == ""
-        return "grep -g *.". &filetype
+        return "grep -g '*.". &filetype . "'"
     endif
-    return "grep -g *.". extension
+    return "grep -g '*.". extension . "'"
 endfunction
 
 
@@ -1223,7 +1224,7 @@ nnoremap =r :call <SID>EqualHeader()<CR>
 
 cabbrev   <expr> <         len(getcmdline()) == 1 && getcmdtype() =~ '[/?]' ? '\C\\><Left><Left>' : '<'
 nnoremap         <space>w                                                     /\C\<\><Left><Left>
-nnoremap <expr> gt <SID>DotRepeat() " 1.
+" nnoremap <expr> gt <SID>DotRepeat() " 1.
 
 
 " Uncategorized

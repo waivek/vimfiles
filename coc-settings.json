@@ -1,15 +1,13 @@
 {
-    "python.linting.enabled": false,
-    "pyright.disableDiagnostics": true,
+    "python.linting.enabled": true,
+    "pyright.disableDiagnostics": false,
+    "python.analysis.autoImportCompletions": true,
+
     "suggest.virtualText": true,
-    "python.analysis.extraPaths": [ "~/Documents/Python/" ],
     "suggest.autoTrigger": "always",
     "suggest.noselect": true,
     "suggest.localityBonus": true,
     "inlayHint.enable": false,
-
-
-    "python.analysis.autoImportCompletions": false,
 
     "vimlsp.diagnostic.enable": true,
 
@@ -19,9 +17,9 @@
     "css.lint.unknownAtRules": "ignore",
 
 
-    "javascript.validate.enable": false, // re-enable once await googleapi.videos.list({}); stops showing errors
-    "javascript.showUnused": false,
 
+    "javascript.validate.enable": false, // re-enable once await googleapi.videos.list({}); stops showing errors
+    "diagnostic.showUnused": false,
 
 
     "tailwindCSS.enable": true,
