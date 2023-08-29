@@ -25,6 +25,8 @@ set history=10000
 " set viminfo='10000,<50,s10,h,rA:,rB:,%,f1,n~/vimfiles/_viminfo
 set viminfo='10000,<50,s10,h,rA:,rB:,%,f1,n
 
+set modeline
+
 " Windows-specific viminfo file
 if has('win32') || has('win64')
     let &viminfo = &viminfo . '~/vimfiles/_viminfo_win'
@@ -41,6 +43,7 @@ filetype indent plugin on | syntax on
 call plug#begin()
 " Make sure pyflakes and eslint are installed
 " Install tabular
+Plug 'dag/vim-fish'
 Plug 'preservim/vim-markdown'
 Plug 'godlygeek/tabular'
 Plug 'posva/vim-vue'
@@ -1294,7 +1297,8 @@ augroup END
 function! s:ObnoxiousErrorMessage(keystroke)
     let is_command_window = len(getcmdwintype()) > 0
     let is_quickfix_or_loclist = getwininfo(bufwinid("%"))[0]["quickfix"] == 1
-    if is_command_window || is_quickfix_or_loclist
+    let is_terminal = &buftype == 'terminal'
+    if is_command_window || is_quickfix_or_loclist || is_terminal
         normal! 
         return
     endif

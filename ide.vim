@@ -450,4 +450,8 @@ nmap <expr> <CR> <SID>VimspectorIsEnabled() ? "<Plug>VimspectorStepOver" : "<CR>
 " let console_bufnr = getwininfo(g:vimspector_session_windows.output)[0]['bufnr']
 
 let g:vimspector_install_gadgets = [ 'debugpy' ]
-let g:vimspector_base_dir = expand('~/vimfiles/vimspector')
+if has('win32')
+    let g:vimspector_base_dir = expand('~/vimfiles/vimspector')
+else
+    let g:vimspector_base_dir = expand('~/.vim/vimspector')
+endif

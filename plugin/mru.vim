@@ -130,7 +130,7 @@ endfunction
 
 function! s:MruCompletion (ArgLead, CmdLine, CursorPos)
     let filename_dictionaries = s:OldFilesSource(a:ArgLead)
-    if len(filename_dictionaries) < 100
+    if len(filename_dictionaries) < 10
         let filename_dictionaries = s:IncrementUntilUnique(filename_dictionaries)
     endif
     let filenames = []
@@ -213,6 +213,10 @@ function! s:GuiIfMru()
 endfunction
 
 " Doesn’t work all the way till C:\
+"
+" Buggy on introspection.py belonging to different waivek packages in
+" different venvs
+"
 function! s:FastIncrementTailDepth(tail, absolute_path)
     let tail_length = len(a:tail)
     let nontail = a:absolute_path[0:-tail_length-1]
@@ -255,10 +259,10 @@ function! s:IncrementTailDepth(tail, absolute_path)
     endif
     let relative_parent = strpart(a:absolute_path, 0, len(a:absolute_path)-len(a:tail)-1)
     let new_tail = fnamemodify(relative_parent, ":t")
-    if &shellslash
-        return new_tail . '/' . a:tail
-    else
+    if has("win32") || has("win64")
         return new_tail . '\' . a:tail
+    else
+        return new_tail . '/' . a:tail
     endif
 endfunction
 " Test IncrementTailDepth {{{
@@ -289,7 +293,7 @@ function! s:IncrementTails(dicts)
         if tail == "" || tail ==# path || stridx(path, sep) == -1
             call add(filename2_dictionaries, filename_D)
         else
-            let filename_D["uniquetail"] = s:FastIncrementTailDepth(tail, path)
+            let filename_D["uniquetail"] = s:IncrementTailDepth(tail, path)
             call add(filename2_dictionaries, filename_D)
         endif
     endfor
@@ -308,6 +312,7 @@ function! s:IncrementUntilUnique(dicts)
         endif
 
         let tails = map(copy(filename_dictionaries), {_, D -> D["uniquetail"]})
+        " echo "tails: " . string(tails)
 
         if oldtails == tails
             break
@@ -325,12 +330,17 @@ function! s:IncrementUntilUnique(dicts)
         endif
 
         let filename_dictionaries = s:IncrementTails(filename_dictionaries)
+        " let filename_dictionaries = s:FastIncrementTailDepth(filename_dictionaries)
         let loop_counter = loop_counter + 1
     endwhile
     return filename_dictionaries
 endfunction
-" let filename_dictionaries = s:OldFilesSource("html.vim")
+
 " let filename_dictionaries = s:OldFilesSource("item")
+" let sliced = slice(filename_dictionaries, 18, 32)
+" filter filename_dictionaries where filename_D['tail'] is 'introspection.py'
+" let filename_dictionaries = s:OldFilesSource("introspection.py")
+" call PrintList(filename_dictionaries)
 " let filename_dictionaries = s:IncrementUntilUnique(filename_dictionaries)
 " call s:PrintList(filename_dictionaries)
 

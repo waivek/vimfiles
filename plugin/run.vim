@@ -1,14 +1,14 @@
 
 function! s:RunTerminalCommand(command)
     execute a:command
-    while &buftype != 'terminal'
-        sleep 10m
-    endwhile
-    while term_getstatus(bufnr()) == 'running'
-        sleep 10m
-    endwhile
-    sleep 10m
-    normal! gg
+    " while &buftype != 'terminal'
+    "     sleep 10m
+    " endwhile
+    " while term_getstatus(bufnr()) == 'running'
+    "     sleep 10m
+    " endwhile
+    " sleep 10m
+    " normal! gg
 endfunction
 
 function! s:RunPython()
@@ -26,7 +26,8 @@ function! s:RunPython()
         " let command = '!start wt -w 0 nt -p "Command Prompt" python ' . expand("%:p")
         execute command
     else
-        let command = 'vert terminal python ' . expand("%:p")
+        " let command = 'vert terminal python ' . expand("%:p")
+        let command = 'vert terminal python %'
         call s:RunTerminalCommand(command)
     endif
 endfunction
