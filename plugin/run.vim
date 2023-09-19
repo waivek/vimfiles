@@ -13,12 +13,12 @@ endfunction
 
 function! s:RunPython()
     if has('win32')
-        let path = expand("%:p:h")
-        let module_path = 'C:\Users\vivek\Python\waivek\waivek'
-        let working_dir = 'C:\Users\vivek\Python\waivek'
-        if path == module_path
+        " let path = expand("%:p:h")
+        " let module_path = 'C:\Users\vivek\Python\waivek\waivek'
+        " let working_dir = 'C:\Users\vivek\Python\waivek'
+        let parent_folder_name = expand("%:p:h:t")
+        if parent_folder_name == 'waivek'
             let filename_without_extension = expand("%:t:r")
-            let directory = module_path
             let command = '!start cmd /k cd ' . working_dir . ' && python -m waivek.' . filename_without_extension
         else
             let command = '!start cmd /k python ' . expand("%:p")
@@ -27,7 +27,14 @@ function! s:RunPython()
         execute command
     else
         " let command = 'vert terminal python ' . expand("%:p")
-        let command = 'vert terminal python %'
+        let parent_folder_name = expand("%:p:h:t")
+        if parent_folder_name == 'waivek'
+            let filename_without_extension = expand("%:t:r")
+            let command = 'vert terminal python -m waivek.' . filename_without_extension
+
+        else
+            let command = 'vert terminal python %'
+        endif
         call s:RunTerminalCommand(command)
     endif
 endfunction

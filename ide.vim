@@ -61,6 +61,11 @@ function! PyflakesRefinedCallback(buffer, lines) abort
         if stridx(l:match[3], "assigned to but never used") > -1
             continue
         endif
+
+        if stridx(l:match[3], "imported but unused") > -1
+            continue
+        endif
+
         " CUSTOMIZATION - End
 
         call add(l:output, {

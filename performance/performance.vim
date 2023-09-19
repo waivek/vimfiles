@@ -362,6 +362,13 @@ function! s:ProfileLongPauseLinuxTerm()
 endfunction
 command! PLPLT call s:ProfileLongPauseLinuxTerm()
 
+function! s:ProfileVueFileRead()
+    let filepath = s:GetProfileFilepath('vue_file_read')
+    let command = printf('profile start %s | profile func * | profile file *', filepath)
+    execute command
+endfunction
+command! PVFR call s:ProfileVueFileRead()
+
 " nnoremap <Plug>PlugProfilePause :call <SID>ProfilePause()<CR>
 nnoremap ga :profile pause<CR>
 

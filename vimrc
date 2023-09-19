@@ -43,6 +43,8 @@ filetype indent plugin on | syntax on
 call plug#begin()
 " Make sure pyflakes and eslint are installed
 " Install tabular
+Plug 'mogelbrod/vim-jsonpath' " example using vim-plug
+
 Plug 'dag/vim-fish'
 Plug 'preservim/vim-markdown'
 Plug 'godlygeek/tabular'
@@ -403,23 +405,6 @@ endfunction
 augroup VimrcFileSpecificSettings
     au!
     au BufRead * call s:SetFileSpecificSettings()
-augroup END
-
-set path+=~/Python/waivek/waivek
-function! s:PathSpecficSettings()
-    let working_directory = getcwd()
-    if working_directory ==# glob('~/Desktop/website')
-        let &path='.,,fonts/**,css/**'
-    elseif working_directory ==# glob('~/vimfiles')
-        let &path='.,,plugin/,colors/'
-    else
-        set path&
-        set path+=~/Python/waivek/waivek
-    endif
-endfunction
-augroup VimrcPathSpecificSettings
-    au!
-    au DirChanged * call s:PathSpecficSettings()
 augroup END
 
 function! s:FunctionSyntaxGroups()
@@ -1267,7 +1252,7 @@ nnoremap          <space>l <C-^>
 nnoremap <silent> <space>k :call <SID>LoadKMarkedFile()<CR>
 nnoremap          <space>r :MRU 
 
-nmap              <space>f <Plug>SearchOnScreen
+" nmap              <space>f <Plug>SearchOnScreen
 nmap     <silent> <space>; <Plug>Run
 
 nmap     <silent> <space>t <Plug>ToggleComment

@@ -6,4 +6,4 @@ endif
 
 set suffixesadd=.vue
 
-
+let g:vue_pre_processors = [] " Speeds up reading time of vue files

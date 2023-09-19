@@ -33,10 +33,10 @@ function! s:SetVuePathLocal()
 endfunction
 " command! A call s:SetVuePathLocal()
 
-augroup vue
-    autocmd!
-    autocmd BufEnter * call s:SetVuePathLocal()
-augroup END
+" augroup vue
+"     autocmd!
+"     autocmd BufEnter * call s:SetVuePathLocal()
+" augroup END
 
 
 " function! NuxtLocalPath()

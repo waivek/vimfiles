@@ -15,12 +15,12 @@ function! s:IsInsideNuxtProject()
     let value = !empty(l:nuxt_dir) && (l:nuxt_dir != '.') && !empty(l:components_dir) && (l:components_dir != '.')
     return value
 endfunction
-command! IsInsideNuxtProject call s:IsInsideNuxtProject()
+" command! IsInsideNuxtProject call s:IsInsideNuxtProject()
 
 
-function! NuxtLocalPath()
-    setlocal path+=pages
-    setlocal path+=components
-    setlocal path+=server/api
-endfunction
-command! NuxtLocalPath call NuxtLocalPath()
+" function! NuxtLocalPath()
+"     setlocal path+=pages
+"     setlocal path+=components
+"     setlocal path+=server/api
+" endfunction
+" command! NuxtLocalPath call NuxtLocalPath()
