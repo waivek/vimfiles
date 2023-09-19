@@ -1,0 +1,37 @@
+{
+    "$schema": "https://puremourning.github.io/vimspector/schema/vimspector.schema.json#",
+    "configurations": {
+        // "<configuration name>": {
+        //       "adapter": "<adapter name>",
+        //       "filetypes": [ /* list of filetypes this applies to */ ],
+        //       "configuration": {
+        //             "request": "<launch or attach>",
+        //             <debug configuration>
+        //       },
+        //       "breakpoints" {} 
+        // }
+        "python": {
+            "adapter": "debugpy",
+            "filetypes": [ "python" ],
+            "configuration": {
+                "request": "launch",
+                "program": "${file}",
+                "cwd": "${cwd}",
+                "stopOnEntry": false,
+                "console": "integratedTerminal",
+                "justMyCode": false,
+                "purpose": ["debug-in-terminal"]
+            },
+            "breakpoints": {
+                "exception": {
+                    "raised": "N",
+                    "uncaught": "",
+                    "userUnhandled": ""
+                }
+            }
+
+        }
+    }
+}
+// vim: ft=jsonc
+
