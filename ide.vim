@@ -1,3 +1,4 @@
+
 let g:coc_global_extensions = [ 'coc-json', 'coc-pyright', 'coc-vimlsp', '@yaegassy/coc-tailwindcss3', '@yaegassy/coc-volar', 'coc-css', 'coc-tsserver' ]
 
 " For yaegassy/coc-tailwindcss3
