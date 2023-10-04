@@ -25,3 +25,6 @@ xnoremap <silent> ar :<c-u>call <sid>AroundRule()<CR>
 
 onoremap <silent> ir :<c-u>call <sid>InnerRule()<CR>
 onoremap <silent> ar :<c-u>call <sid>AroundRule()<CR>
+
+set isk-=-
+setlocal isk-=-

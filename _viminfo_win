@@ -11,29 +11,109 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/sm
+~MSle0~/\C\<scriptnames\>
 
 # Last Substitute Search Pattern:
-~MSle0&tr>
+~MSle0& .*
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1695188840,,"q"
-:set tw=120
-|2,0,1695177553,,"set tw=120"
+|2,0,1696453850,,"q"
+:e ~/vimfiles/after/ftplugin/css.vim
+|2,0,1695801703,,"e ~/vimfiles/after/ftplugin/css.vim"
+:set isk?
+|2,0,1695801694,,"set isk?"
+:e
+|2,0,1695801692,,"e"
+:au OptionSet iskeyword set isk-=-
+|2,0,1695801690,,"au OptionSet iskeyword set isk-=-"
+:au OptionSet set isk-=-
+|2,0,1695801685,,"au OptionSet set isk-=-"
+:MRU html
+|2,0,1695801610,,"MRU html"
+:filter css scriptnames
+|2,0,1695801590,,"filter css scriptnames"
+:scriptnames filter /css/
+|2,0,1695801572,,"scriptnames filter /css/"
+:scriptnames
+|2,0,1695801566,,"scriptnames"
+:verbose set isk
+|2,0,1695801559,,"verbose set isk"
+:set isk-=-
+|2,0,1695801539,,"set isk-=-"
+:Ftplugin
+|2,0,1695801514,,"Ftplugin"
+:e ~/vimfiles/
+|2,0,1695801511,,"e ~/vimfiles/"
+:verbose set isk?
+|2,0,1695801506,,"verbose set isk?"
+:set 
+|2,0,1695801499,,"set "
+:e input.css
+|2,0,1695801233,,"e input.css"
+:CMD
+|2,0,1695801165,,"CMD"
 :!start %
-|2,0,1695177446,,"!start %"
+|2,0,1695801134,,"!start %"
+:MRU ind
+|2,0,1695801131,,"MRU ind"
+:MRU cdn
+|2,0,1695724041,,"MRU cdn"
+:e 
+|2,0,1695723983,,"e "
+:e tailwind.config.js
+|2,0,1695721072,,"e tailwind.config.js"
+:b index
+|2,0,1695718002,,"b index"
+:MRU template_cdn
+|2,0,1695717987,,"MRU template_cdn"
+:MRU template_vue
+|2,0,1695717984,,"MRU template_vue"
+:e index.html
+|2,0,1695717889,,"e index.html"
+:Jprevious
+|2,0,1695717881,,"Jprevious"
+:e .
+|2,0,1695717810,,"e ."
+:e css/sheet1.css
+|2,0,1695717656,,"e css/sheet1.css"
+:MRU para
+|2,0,1695717460,,"MRU para"
+:C
+|2,0,1695717410,,"C"
+:e css
+|2,0,1695717135,,"e css"
+:MRU 23:personal_code.html
+|2,0,1695717104,,"MRU 23:personal_code.html"
+:MRU 3:cookie_run.html
+|2,0,1695717052,,"MRU 3:cookie_run.html"
+:Copilot status
+|2,0,1695717037,,"Copilot status"
+:o
+|2,0,1695717027,,"o"
+:Template
+|2,0,1695716962,,"Template"
+:MRU 
+|2,0,1695561910,,"MRU "
+:bd!
+|2,0,1695561908,,"bd!"
+:%s/ .*//
+|2,0,1695381615,,"%s/ .*//"
+:enew
+|2,0,1695381579,,"enew"
+:set tw=120
+|2,0,1695213345,,"set tw=120"
+:b!# | bd! #
+|2,0,1695193933,,"b!# | bd! #"
+:MRU acc
+|2,0,1695188887,,"MRU acc"
+:MRU gitconfig
+|2,0,1695188881,,"MRU gitconfig"
 :CocInfo
 |2,0,1695111948,,"CocInfo"
-:e
-|2,0,1695111848,,"e"
-:e tailwind.config.js
-|2,0,1695111845,,"e tailwind.config.js"
-:e 
-|2,0,1695111839,,"e "
 :MRU ide
 |2,0,1695111787,,"MRU ide"
 :b ide
@@ -56,8 +136,6 @@ $
 |2,0,1695100706,,"MRU list_te"
 :0read app
 |2,0,1695100696,,"0read app"
-:Template
-|2,0,1695100686,,"Template"
 :e ~/Desktop/website/cooking_run.html
 |2,0,1695100672,,"e ~/Desktop/website/cooking_run.html"
 :b \Users\vivek\Documents\texts\cookie_run_coral_missions.txt
@@ -76,8 +154,6 @@ $
 |2,0,1695099375,,"MRU main.ahk"
 :MRU acto
 |2,0,1695013252,,"MRU acto"
-:bd!
-|2,0,1694995632,,"bd!"
 :set wrap
 |2,0,1694995608,,"set wrap"
 :g/tr>/d
@@ -102,12 +178,8 @@ $
 |2,0,1694995440,,"%s/style=\"[^\"]*\"/g"
 :%s/style="[^"]*"
 |2,0,1694995415,,"%s/style=\"[^\"]*\""
-:enew
-|2,0,1694995332,,"enew"
 :q!
 |2,0,1694995328,,"q!"
-:b!# | bd! #
-|2,0,1694995327,,"b!# | bd! #"
 : w ~/Documents/texts/cookie_run_coral_missions.txt
 |2,0,1694988857,," w ~/Documents/texts/cookie_run_coral_missions.txt"
 :%sort! n
@@ -132,8 +204,6 @@ $
 |2,0,1694826753,,"v/x5/d"
 :MRU api
 |2,0,1694696357,,"MRU api"
-:MRU 
-|2,0,1694695720,,"MRU "
 :MRU wikipedia.css
 |2,0,1694574095,,"MRU wikipedia.css"
 :e fonts/Adobe_Jenson_Pro_Subhead/
@@ -162,8 +232,6 @@ $
 |2,0,1694572687,,"bd"
 :scriptnames filter indent
 |2,0,1694572684,,"scriptnames filter indent"
-:scriptnames
-|2,0,1694572674,,"scriptnames"
 :e personal_code.html
 |2,0,1694572460,,"e personal_code.html"
 :e!
@@ -240,8 +308,6 @@ $
 |2,0,1692611315,,"MRU Doc"
 :MRU vm.
 |2,0,1692517623,,"MRU vm."
-:MRU acc
-|2,0,1692517519,,"MRU acc"
 :set nowrapscan
 |2,0,1692456971,,"set nowrapscan"
 :set f
@@ -302,8 +368,6 @@ $
 |2,0,1691910854,,"MRU enco"
 :MRU 4:post_save.txt
 |2,0,1691896592,,"MRU 4:post_save.txt"
-:CMD
-|2,0,1691845602,,"CMD"
 :e accounts.txt
 |2,0,1691845525,,"e accounts.txt"
 :e ~/Documents/texts/
@@ -454,8 +518,6 @@ $
 |2,0,1688277280,,"find ic.py"
 :Enumerate
 |2,0,1688276535,,"Enumerate"
-:Ftplugin
-|2,0,1688273909,,"Ftplugin"
 :columns[0]
 |2,0,1688273752,,"columns[0]"
 :VimspectorWatch initial_widths terminal_width
@@ -490,8 +552,6 @@ $
 |2,0,1688244590,,"map | filter vimsp"
 :map 
 |2,0,1688244585,,"map "
-:Jprevious
-|2,0,1688244530,,"Jprevious"
 :MRU ide.vim
 |2,0,1688244500,,"MRU ide.vim"
 :MRU skia
@@ -694,8 +754,6 @@ $
 |2,0,1688145650,,"MRU t"
 :b gcq
 |2,0,1688145648,,"b gcq"
-:Copilot status
-|2,0,1688145625,,"Copilot status"
 :find frame.py
 |2,0,1688145555,,"find frame.py"
 :find error.py
@@ -836,8 +894,6 @@ $
 |2,0,1688117746,,"f"
 :e o
 |2,0,1688117650,,"e o"
-:C
-|2,0,1688116634,,"C"
 :%s/#//
 |2,0,1688116614,,"%s/#//"
 :e ~/Python/waivek/waivek/__init__.py
@@ -1357,8 +1413,6 @@ $
 |2,0,1687645671,,"grep -g *.py general"
 :e clink_settings
 |2,0,1687645461,,"e clink_settings"
-:e .
-|2,0,1687645419,,"e ."
 :e clink_se
 |2,0,1687645409,,"e clink_se"
 :e clink_settings_link
@@ -1713,8 +1767,6 @@ $
 |2,0,1684108358,,"e package.json"
 :e node_modules/@babel/
 |2,0,1684108354,,"e node_modules/@babel/"
-:e index.html
-|2,0,1684106422,,"e index.html"
 :e Autocomplete.vue
 |2,0,1684106421,,"e Autocomplete.vue"
 :e ButtonShowcase.vue
@@ -1835,14 +1887,10 @@ $
 |2,0,1683822693,,"CocEnable "
 :call CocAction('getHover')
 |2,0,1683822662,,"call CocAction('getHover')"
-:MRU html
-|2,0,1683822617,,"MRU html"
 :CocInstall coc-json
 |2,0,1683822588,,"CocInstall coc-json"
 :MRU template.html
 |2,0,1683797488,,"MRU template.html"
-:MRU template_cdn
-|2,0,1683797474,,"MRU template_cdn"
 :TemplateHTML
 |2,0,1683797461,,"TemplateHTML"
 :e v03/tw.html
@@ -1851,8 +1899,6 @@ $
 |2,0,1683797444,,"e ./"
 :set filetype?
 |2,0,1683797386,,"set filetype?"
-:MRU ind
-|2,0,1683797248,,"MRU ind"
 :PlugUpdate
 |2,0,1683797124,,"PlugUpdate"
 :e tai
@@ -1915,8 +1961,6 @@ $
 |2,0,1683285487,,"b birthdays.html"
 :b cdn
 |2,0,1683282798,,"b cdn"
-:MRU cdn
-|2,0,1683282785,,"MRU cdn"
 :e date.html
 |2,0,1683282781,,"e date.html"
 :MRU bir
@@ -2457,12 +2501,8 @@ $
 |2,0,1673977710,,"e mwh-api.py"
 :b mwh2
 |2,0,1673977531,,"b mwh2"
-:set isk-=-
-|2,0,1673975959,,"set isk-=-"
 :set isk+=-
 |2,0,1673975956,,"set isk+=-"
-:set isk?
-|2,0,1673975952,,"set isk?"
 :e Rou
 |2,0,1673975031,,"e Rou"
 :MRU App.vue
@@ -2851,14 +2891,10 @@ $
 |2,0,1667125937,,"191"
 :e ~/vimfiles/plugged/vim-vue-plugin/syntax/vue.vim
 |2,0,1667125936,,"e ~/vimfiles/plugged/vim-vue-plugin/syntax/vue.vim"
-:verbose set isk?
-|2,0,1667125928,,"verbose set isk?"
 :verboset set isk
 |2,0,1667125924,,"verboset set isk"
 :verboset set isk?
 |2,0,1667125922,,"verboset set isk?"
-:verbose set isk
-|2,0,1667125907,,"verbose set isk"
 :e ~/vimfiles/after/syntax/vue.vim
 |2,0,1667125892,,"e ~/vimfiles/after/syntax/vue.vim"
 :filter vue\.vim scriptnames
@@ -2999,8 +3035,6 @@ $
 |2,0,1665657611,,"echo getchangelist()"
 :MRU wsl_s
 |2,0,1665657517,,"MRU wsl_s"
-:o
-|2,0,1665657514,,"o"
 :MRU todo
 |2,0,1665657513,,"MRU todo"
 :cd Desktop/
@@ -6995,8 +7029,6 @@ $
 |2,0,1661907378,,"g/^def /y A"
 :e ~/Desktop/live/www/html/template.php
 |2,0,1661907220,,"e ~/Desktop/live/www/html/template.php"
-:e ~/vimfiles/
-|2,0,1661907206,,"e ~/vimfiles/"
 :h coc-nvi
 |2,0,1661907150,,"h coc-nvi"
 :echo g:ale_fixers
@@ -9423,8 +9455,6 @@ $
 |2,0,1659735344,,"call feedkeys(\";\", \"n\")"
 :b para
 |2,0,1659735195,,"b para"
-:MRU para
-|2,0,1659735187,,"MRU para"
 :e ~/vimfiles/performance/220806.horizontal_movement.v01.txt
 |2,0,1659735183,,"e ~/vimfiles/performance/220806.horizontal_movement.v01.txt"
 :e ~/temp/file_13.txt
@@ -10973,8 +11003,6 @@ $
 |2,0,1656234116,,"echo v:hlsearch"
 :set hl
 |2,0,1656234111,,"set hl"
-:set 
-|2,0,1656234108,,"set "
 :au OptionSet
 |2,0,1656234081,,"au OptionSet"
 :au Cool
@@ -17895,6 +17923,28 @@ $
 |2,0,1624224290,,"wviminfo"
 
 # Search String History (newest to oldest):
+?/bg-
+|2,1,1695724002,47,"bg-"
+?/\C\<p\>
+|2,1,1695723986,47,"\\C\\<p\\>"
+? @$
+|2,1,1695717882,,"@$"
+? ^$
+|2,1,1695717882,,"^$"
+?/bg-slate
+|2,1,1695717797,47,"bg-slate"
+?/red-
+|2,1,1695717247,47,"red-"
+?  .*
+|2,1,1695381615,," .*"
+?/Lv\d
+|2,1,1695381598,47,"Lv\\d"
+?/treas
+|2,1,1695287136,47,"treas"
+?/soul
+|2,1,1695287105,47,"soul"
+?/chest
+|2,1,1695278237,47,"chest"
 ?/sm
 |2,1,1695113383,47,"sm"
 ?/tailwind
@@ -18015,10 +18065,6 @@ $
 |2,1,1691847835,47,"mcfly"
 ?/brew
 |2,1,1691845839,47,"brew"
-? @$
-|2,1,1691845519,,"@$"
-? ^$
-|2,1,1691845519,,"^$"
 ?/secre
 |2,1,1691843418,47,"secre"
 ?/g
@@ -18539,8 +18585,6 @@ $
 |2,1,1680354059,,"class=\"ma"
 ?/class="ma
 |2,1,1680354042,47,"class=\"ma"
-?/bg-
-|2,1,1680342299,47,"bg-"
 ?/rounded
 |2,1,1680340886,47,"rounded"
 ?/tab
@@ -25860,8 +25904,6 @@ $
 |2,1,1642697455,47,"_path"
 ? print(f\"T
 |2,1,1642696462,,"print(f\\\"T"
-?  .*
-|2,1,1642696057,," .*"
 ?/Fore
 |2,1,1642694778,47,"Fore"
 ?/make_string_\(green\|red\)([^()]\+)
@@ -25980,8 +26022,6 @@ $
 |2,1,1642404896,47,"output\\"
 ?/str
 |2,1,1642364038,47,"str"
-?/bg-slate
-|2,1,1642361746,47,"bg-slate"
 ?/sorted
 |2,1,1642338641,47,"sorted"
 ?/rela
@@ -30018,8 +30058,14 @@ $
 |2,2,1563191474,,"&makeprg"
 
 # Input Line History (newest to oldest):
+@[{y(es)},n(o),a(ll),q(uit)] y
+|2,3,1695717816,,"[{y(es)},n(o),a(ll),q(uit)] y"
+@main>
+|2,3,1695717268,,"main>"
 @div>
-|2,3,1695177465,,"div>"
+|2,3,1695213427,,"div>"
+@p>
+|2,3,1695213360,,"p>"
 @li>
 |2,3,1695102074,,"li>"
 @article>
@@ -30062,8 +30108,6 @@ $
 |2,3,1683795860,,"a href=\"\">"
 @div class="flex flex-row">
 |2,3,1683795807,,"div class=\"flex flex-row\">"
-@p>
-|2,3,1683795706,,"p>"
 @span>
 |2,3,1680353866,,"span>"
 @o
@@ -30210,8 +30254,6 @@ $
 |2,3,1637082717,,"thumbnails"
 @div class="border-2"
 |2,3,1635979562,,"div class=\"border-2\""
-@main>
-|2,3,1635099598,,"main>"
 @span class="highlight">
 |2,3,1634573779,,"span class=\"highlight\">"
 @strong>
@@ -30648,8 +30690,6 @@ $
 |2,3,1564786099,,";;"
 @C:/Users/vivek/Desktop/reddit_to_youtube/scariest_thing_while_driving_at_night.json
 |2,3,1564349275,,"C:/Users/vivek/Desktop/reddit_to_youtube/scariest_thing_while_driving_at_night.json"
-@[{y(es)},n(o),a(ll),q(uit)] y
-|2,3,1564060122,,"[{y(es)},n(o),a(ll),q(uit)] y"
 @C:/Users/vivek/Downloads/kchi.html
 |2,3,1563977143,,"C:/Users/vivek/Downloads/kchi.html"
 @C:/Users/vivek/Desktop/epub_to_html/emyth.epub
@@ -30974,79 +31014,169 @@ $
 |2,4,1578747110,,"echo \"HELLO\""
 
 # Registers:
-"0	LINE	0
-	
-|3,0,0,1,1,0,1695177804,""
-""1	LINE	0
-	                    <div class="flex flex-row gap-2">
-	                        <div class="font-bold">Summary:</div>
-	                        <div>
-	                            <p>Create new account with a new email</p>
-	                            <p>Submit a ticket to Devsisters support saying you lost access to your account somehow</p>
-	                            <p>You'll get an automated response. Reply to it and ask if you can gt any more help than
-	                            that
-	                        </div>
-	                    </div>
-|3,1,1,1,9,0,1695177822,"                    <div class=\"flex flex-row gap-2\">","                        <div class=\"font-bold\">Summary:</div>","                        <div>","                            <p>Create new account with a new email</p>","                            <p>Submit a ticket to Devsisters support saying you lost access to your account somehow</p>",>119
-|<"                            <p>You'll get an automated response. Reply to it and ask if you can gt any more help than","                            that","                        </div>","                    </div>"
+"0	CHAR	0
+	vue
+|3,0,0,0,1,0,1695801588,"vue"
+"1	LINE	0
+	p { @apply bg-slate-600 px-3 py-1 text-justify; }
+|3,0,1,1,1,0,1695801237,"p { @apply bg-slate-600 px-3 py-1 text-justify; }"
 "2	LINE	0
+	            <p>Okay, sure, but: many physical attributes, social perceptions, and pervasive mental habits probably do become increasingly solidified, even if fatalism about
+	            it is counterproductive. Sure, there’s plenty of late bloomers, but how many of them do you get from a broken late starting point, and how many do you get from
+	            people who worked slowly and methodically and did the right slow things earlier on, taking care of their minds, bodies, social connections, growing their
+	            resources, gaining experiences, broadening and/or fine-tuning their abilities, and so on? Do fit/rich/popular/etc.  35-year-olds regularly get there from a
+	            truly broken (including internally!) state at 31, or is it more that they actually took all the advice about regular exercise/investing/graciousness/etc. back
+	            when they were 25, kept taking it, and maybe despaired in the moment about it not seeming to work while actually stacking up tons of invisible long-term
+	            bonuses?</p>
 	
-|3,0,2,1,1,0,1695177758,""
+	            <p>I’m trying to come off about a decade of poor habits myself, due to a number of factors which are undoubtedly my responsibility but which it’s not clear
+	            whether I could have realistically avoided. I’ve had some minor successes but have never really stabilized so far, including in all the little things like the
+	            above. I don’t usually see this case handled clearly in the “it’s okay to be a late bloomer!” inspiration crowd. (More personally, it doesn’t help that the
+	            things I most want to do in life probably require being exceptional in specific ways that I’m not sure I can predict in advance and not just “successful” in a
+	            generic sort of way, and beyond a certain limited extent, I don’t consider the wanting-what-I-have approach to be a viable one (except insofar as having that
+	            attitude on the face of things may make it more likely to reach my original desires anyway).)</p>
+	
+	            <p>The society will not like your attitude; expect to experience continuous peer pressure. Nearly everyone is hard-coded with the unconditional “never give up”,
+	            “hope dies last” and so on. The common arguments “might as well make the best out of it”, together with the anti-suicidal “if you are going to die, sell
+	            everything and give your life another chance”, I find annoying. All attempts require efforts. Sometimes you know in advance that a reward will not justify an
+	            effort, sometimes it’s a giant gamble of many years and you decide not to take the risk. I don’t want to put an unbearable burden onto myself only to end up
+	            regretting it in the end, where I will know that I inflicted the pain of all efforts and the pain of the final defeat with my own hands. When you know that you
+	            could’ve idled while being sufficiently content and happy with your “unsuccessful” level, but you succumbed to momentary inebriation of inspiration and drove
+	            yourself into a trap where you are not happy with your prospects, but you don’t want to give up because you already invested much efforts. Because of their
+	            inexhaustible fountain of optimism people tend to ignore that efforts are unpleasant, and one cannot sign oneself up to a giant contract of work just because
+	            muh “might as well make the best out of it”.</p>
+	
+	            <p>At one time I thought highly successful people would be more like each other than less successful people. I believed it even more when it was explained as
+	            the Anna Karenina principle. But my experience hasn’t borne it out. There are many things you can point to as advantages or “best practices” but in the end it
+	            all seems to dissolve into our penchant for telling stories. One guy is successful because he was born into it, it’s all he saw growing up, every element was
+	            demonstrated for him and instilled in him as normal his whole life. Another guy is successful because he was born with nothing and had to fight for every little
+	            thing, and he kept fighting for the next thing until he had a whole company. These are both coherent stories, but they don’t explain the difference between
+	            those two and all the other people who were born to success but reverted to the mean or who were born into poverty and stayed there.</p>
+	
+	            <p>I’ve seen people succeed with vastly different, contradictory strategies. I’ve seen engineers promoted to management earn respect by getting in the weeds and
+	            doing unwanted grunt work, and I’ve seen engineers promoted to management stay so hands-off from technical stuff that new employees assumed they were MBAs who
+	            didn’t understand the work they were managing. I’ve seen people with humble origins flaunt them at every opportunity and others all but deny them. I’ve seen
+	            people who immersed themselves in detail to see the whole picture and people who carefully rationed the information they consumed to avoid being overwhelmed,
+	            systematically delegating the responsibility for details.</p>
+	
+	            <p>Conclusion: that’s the wrong way to try to understand the difference between luck and skill. Suppose you ran a huge experiment where you had 1000 chess
+	            grandmasters, 1000 masters, 1000 good amateurs, and so on down to 1000 chronic duffers, and they each inherited a thousand games starting at move eight
+	            (crediting the first seven moves to luck, circumstances, and childhood.) You wouldn’t learn much by asking whether the winners attacked or defended, opened the
+	            middle or jammed it up, preferred their knights or their bishops. Those aren’t the right questions. A grandmaster doesn’t move a knight just because she likes
+	            knights, or because moving knights is the baller thing that all the grandmasters do. It’s because it accomplishes something in their situation. If life was a
+	            game you could play over and over again, with executive control gradually fading in starting in the teenage years, a brilliant player might play each lifetime
+	            very differently. It’s an interesting thought experiment to ask what skills you would develop as you “played” dozens or hundreds of lifetimes! Certainly not
+	            rigid rules like “wake up at 5am” or “wear the same thing every day.”</p>
+|3,0,2,1,46,0,1695801156,"            <p>Okay, sure, but: many physical attributes, social perceptions, and pervasive mental habits probably do become increasingly solidified, even if fatalism about","            it is counterproductive. Sure, there’s plenty of late bloomers, but how many of them do you get from a broken late starting point, and how many do you get from",>167
+|<"            people who worked slowly and methodically and did the right slow things earlier on, taking care of their minds, bodies, social connections, growing their","            resources, gaining experiences, broadening and/or fine-tuning their abilities, and so on? Do fit/rich/popular/etc.  35-year-olds regularly get there from a",>172
+|<"            truly broken (including internally!) state at 31, or is it more that they actually took all the advice about regular exercise/investing/graciousness/etc. back","            when they were 25, kept taking it, and maybe despaired in the moment about it not seeming to work while actually stacking up tons of invisible long-term","            bonuses?</p>","",>173
+|<"            <p>I’m trying to come off about a decade of poor habits myself, due to a number of factors which are undoubtedly my responsibility but which it’s not clear","            whether I could have realistically avoided. I’ve had some minor successes but have never really stabilized so far, including in all the little things like the",>179
+|<"            above. I don’t usually see this case handled clearly in the “it’s okay to be a late bloomer!” inspiration crowd. (More personally, it doesn’t help that the","            things I most want to do in life probably require being exceptional in specific ways that I’m not sure I can predict in advance and not just “successful” in a",>173
+|<"            generic sort of way, and beyond a certain limited extent, I don’t consider the wanting-what-I-have approach to be a viable one (except insofar as having that","            attitude on the face of things may make it more likely to reach my original desires anyway).)</p>","","            <p>The society will not like your attitude; expect to experience continuous peer pressure. Nearly everyone is hard-coded with the unconditional “never give up”,",>176
+|<"            “hope dies last” and so on. The common arguments “might as well make the best out of it”, together with the anti-suicidal “if you are going to die, sell","            everything and give your life another chance”, I find annoying. All attempts require efforts. Sometimes you know in advance that a reward will not justify an",>174
+|<"            effort, sometimes it’s a giant gamble of many years and you decide not to take the risk. I don’t want to put an unbearable burden onto myself only to end up","            regretting it in the end, where I will know that I inflicted the pain of all efforts and the pain of the final defeat with my own hands. When you know that you",>177
+|<"            could’ve idled while being sufficiently content and happy with your “unsuccessful” level, but you succumbed to momentary inebriation of inspiration and drove","            yourself into a trap where you are not happy with your prospects, but you don’t want to give up because you already invested much efforts. Because of their",>171
+|<"            inexhaustible fountain of optimism people tend to ignore that efforts are unpleasant, and one cannot sign oneself up to a giant contract of work just because","            muh “might as well make the best out of it”.</p>","","            <p>At one time I thought highly successful people would be more like each other than less successful people. I believed it even more when it was explained as",>178
+|<"            the Anna Karenina principle. But my experience hasn’t borne it out. There are many things you can point to as advantages or “best practices” but in the end it","            all seems to dissolve into our penchant for telling stories. One guy is successful because he was born into it, it’s all he saw growing up, every element was",>174
+|<"            demonstrated for him and instilled in him as normal his whole life. Another guy is successful because he was born with nothing and had to fight for every little","            thing, and he kept fighting for the next thing until he had a whole company. These are both coherent stories, but they don’t explain the difference between",>150
+|<"            those two and all the other people who were born to success but reverted to the mean or who were born into poverty and stayed there.</p>","","            <p>I’ve seen people succeed with vastly different, contradictory strategies. I’ve seen engineers promoted to management earn respect by getting in the weeds and",>174
+|<"            doing unwanted grunt work, and I’ve seen engineers promoted to management stay so hands-off from technical stuff that new employees assumed they were MBAs who","            didn’t understand the work they were managing. I’ve seen people with humble origins flaunt them at every opportunity and others all but deny them. I’ve seen",>171
+|<"            people who immersed themselves in detail to see the whole picture and people who carefully rationed the information they consumed to avoid being overwhelmed,","            systematically delegating the responsibility for details.</p>","","            <p>Conclusion: that’s the wrong way to try to understand the difference between luck and skill. Suppose you ran a huge experiment where you had 1000 chess",>165
+|<"            grandmasters, 1000 masters, 1000 good amateurs, and so on down to 1000 chronic duffers, and they each inherited a thousand games starting at move eight","            (crediting the first seven moves to luck, circumstances, and childhood.) You wouldn’t learn much by asking whether the winners attacked or defended, opened the",>176
+|<"            middle or jammed it up, preferred their knights or their bishops. Those aren’t the right questions. A grandmaster doesn’t move a knight just because she likes","            knights, or because moving knights is the baller thing that all the grandmasters do. It’s because it accomplishes something in their situation. If life was a",>172
+|<"            game you could play over and over again, with executive control gradually fading in starting in the teenage years, a brilliant player might play each lifetime","            very differently. It’s an interesting thought experiment to ask what skills you would develop as you “played” dozens or hundreds of lifetimes! Certainly not","            rigid rules like “wake up at 5am” or “wear the same thing every day.”</p>"
 "3	LINE	0
+	            <p>Okay, sure, but: many physical attributes, social perceptions, and pervasive mental habits probably do become increasingly solidified, even if fatalism about
+	            it is counterproductive. Sure, there’s plenty of late bloomers, but how many of them do you get from a broken late starting point, and how many do you get from
+	            people who worked slowly and methodically and did the right slow things earlier on, taking care of their minds, bodies, social connections, growing their
+	            resources, gaining experiences, broadening and/or fine-tuning their abilities, and so on? Do fit/rich/popular/etc.  35-year-olds regularly get there from a
+	            truly broken (including internally!) state at 31, or is it more that they actually took all the advice about regular exercise/investing/graciousness/etc. back
+	            when they were 25, kept taking it, and maybe despaired in the moment about it not seeming to work while actually stacking up tons of invisible long-term
+	            bonuses?</p>
 	
-|3,0,3,1,1,0,1695177650,""
+	            <p>I’m trying to come off about a decade of poor habits myself, due to a number of factors which are undoubtedly my responsibility but which it’s not clear
+	            whether I could have realistically avoided. I’ve had some minor successes but have never really stabilized so far, including in all the little things like the
+	            above. I don’t usually see this case handled clearly in the “it’s okay to be a late bloomer!” inspiration crowd. (More personally, it doesn’t help that the
+	            things I most want to do in life probably require being exceptional in specific ways that I’m not sure I can predict in advance and not just “successful” in a
+	            generic sort of way, and beyond a certain limited extent, I don’t consider the wanting-what-I-have approach to be a viable one (except insofar as having that
+	            attitude on the face of things may make it more likely to reach my original desires anyway).)</p>
+	
+	            <p>The society will not like your attitude; expect to experience continuous peer pressure. Nearly everyone is hard-coded with the unconditional “never give up”,
+	            “hope dies last” and so on. The common arguments “might as well make the best out of it”, together with the anti-suicidal “if you are going to die, sell
+	            everything and give your life another chance”, I find annoying. All attempts require efforts. Sometimes you know in advance that a reward will not justify an
+	            effort, sometimes it’s a giant gamble of many years and you decide not to take the risk. I don’t want to put an unbearable burden onto myself only to end up
+	            regretting it in the end, where I will know that I inflicted the pain of all efforts and the pain of the final defeat with my own hands. When you know that you
+	            could’ve idled while being sufficiently content and happy with your “unsuccessful” level, but you succumbed to momentary inebriation of inspiration and drove
+	            yourself into a trap where you are not happy with your prospects, but you don’t want to give up because you already invested much efforts. Because of their
+	            inexhaustible fountain of optimism people tend to ignore that efforts are unpleasant, and one cannot sign oneself up to a giant contract of work just because
+	            muh “might as well make the best out of it”.</p>
+	
+	            <p>At one time I thought highly successful people would be more like each other than less successful people. I believed it even more when it was explained as
+	            the Anna Karenina principle. But my experience hasn’t borne it out. There are many things you can point to as advantages or “best practices” but in the end it
+	            all seems to dissolve into our penchant for telling stories. One guy is successful because he was born into it, it’s all he saw growing up, every element was
+	            demonstrated for him and instilled in him as normal his whole life. Another guy is successful because he was born with nothing and had to fight for every little
+	            thing, and he kept fighting for the next thing until he had a whole company. These are both coherent stories, but they don’t explain the difference between
+	            those two and all the other people who were born to success but reverted to the mean or who were born into poverty and stayed there.</p>
+	
+	            <p>I’ve seen people succeed with vastly different, contradictory strategies. I’ve seen engineers promoted to management earn respect by getting in the weeds and
+	            doing unwanted grunt work, and I’ve seen engineers promoted to management stay so hands-off from technical stuff that new employees assumed they were MBAs who
+	            didn’t understand the work they were managing. I’ve seen people with humble origins flaunt them at every opportunity and others all but deny them. I’ve seen
+	            people who immersed themselves in detail to see the whole picture and people who carefully rationed the information they consumed to avoid being overwhelmed,
+	            systematically delegating the responsibility for details.</p>
+	
+	            <p>Conclusion: that’s the wrong way to try to understand the difference between luck and skill. Suppose you ran a huge experiment where you had 1000 chess
+	            grandmasters, 1000 masters, 1000 good amateurs, and so on down to 1000 chronic duffers, and they each inherited a thousand games starting at move eight
+	            (crediting the first seven moves to luck, circumstances, and childhood.) You wouldn’t learn much by asking whether the winners attacked or defended, opened the
+	            middle or jammed it up, preferred their knights or their bishops. Those aren’t the right questions. A grandmaster doesn’t move a knight just because she likes
+	            knights, or because moving knights is the baller thing that all the grandmasters do. It’s because it accomplishes something in their situation. If life was a
+	            game you could play over and over again, with executive control gradually fading in starting in the teenage years, a brilliant player might play each lifetime
+	            very differently. It’s an interesting thought experiment to ask what skills you would develop as you “played” dozens or hundreds of lifetimes! Certainly not
+	            rigid rules like “wake up at 5am” or “wear the same thing every day.”</p>
+	                
+	        </main>
+	    </body>
+	</html>
+|3,0,3,1,50,0,1695801154,"            <p>Okay, sure, but: many physical attributes, social perceptions, and pervasive mental habits probably do become increasingly solidified, even if fatalism about","            it is counterproductive. Sure, there’s plenty of late bloomers, but how many of them do you get from a broken late starting point, and how many do you get from",>167
+|<"            people who worked slowly and methodically and did the right slow things earlier on, taking care of their minds, bodies, social connections, growing their","            resources, gaining experiences, broadening and/or fine-tuning their abilities, and so on? Do fit/rich/popular/etc.  35-year-olds regularly get there from a",>172
+|<"            truly broken (including internally!) state at 31, or is it more that they actually took all the advice about regular exercise/investing/graciousness/etc. back","            when they were 25, kept taking it, and maybe despaired in the moment about it not seeming to work while actually stacking up tons of invisible long-term","            bonuses?</p>","",>173
+|<"            <p>I’m trying to come off about a decade of poor habits myself, due to a number of factors which are undoubtedly my responsibility but which it’s not clear","            whether I could have realistically avoided. I’ve had some minor successes but have never really stabilized so far, including in all the little things like the",>179
+|<"            above. I don’t usually see this case handled clearly in the “it’s okay to be a late bloomer!” inspiration crowd. (More personally, it doesn’t help that the","            things I most want to do in life probably require being exceptional in specific ways that I’m not sure I can predict in advance and not just “successful” in a",>173
+|<"            generic sort of way, and beyond a certain limited extent, I don’t consider the wanting-what-I-have approach to be a viable one (except insofar as having that","            attitude on the face of things may make it more likely to reach my original desires anyway).)</p>","","            <p>The society will not like your attitude; expect to experience continuous peer pressure. Nearly everyone is hard-coded with the unconditional “never give up”,",>176
+|<"            “hope dies last” and so on. The common arguments “might as well make the best out of it”, together with the anti-suicidal “if you are going to die, sell","            everything and give your life another chance”, I find annoying. All attempts require efforts. Sometimes you know in advance that a reward will not justify an",>174
+|<"            effort, sometimes it’s a giant gamble of many years and you decide not to take the risk. I don’t want to put an unbearable burden onto myself only to end up","            regretting it in the end, where I will know that I inflicted the pain of all efforts and the pain of the final defeat with my own hands. When you know that you",>177
+|<"            could’ve idled while being sufficiently content and happy with your “unsuccessful” level, but you succumbed to momentary inebriation of inspiration and drove","            yourself into a trap where you are not happy with your prospects, but you don’t want to give up because you already invested much efforts. Because of their",>171
+|<"            inexhaustible fountain of optimism people tend to ignore that efforts are unpleasant, and one cannot sign oneself up to a giant contract of work just because","            muh “might as well make the best out of it”.</p>","","            <p>At one time I thought highly successful people would be more like each other than less successful people. I believed it even more when it was explained as",>178
+|<"            the Anna Karenina principle. But my experience hasn’t borne it out. There are many things you can point to as advantages or “best practices” but in the end it","            all seems to dissolve into our penchant for telling stories. One guy is successful because he was born into it, it’s all he saw growing up, every element was",>174
+|<"            demonstrated for him and instilled in him as normal his whole life. Another guy is successful because he was born with nothing and had to fight for every little","            thing, and he kept fighting for the next thing until he had a whole company. These are both coherent stories, but they don’t explain the difference between",>150
+|<"            those two and all the other people who were born to success but reverted to the mean or who were born into poverty and stayed there.</p>","","            <p>I’ve seen people succeed with vastly different, contradictory strategies. I’ve seen engineers promoted to management earn respect by getting in the weeds and",>174
+|<"            doing unwanted grunt work, and I’ve seen engineers promoted to management stay so hands-off from technical stuff that new employees assumed they were MBAs who","            didn’t understand the work they were managing. I’ve seen people with humble origins flaunt them at every opportunity and others all but deny them. I’ve seen",>171
+|<"            people who immersed themselves in detail to see the whole picture and people who carefully rationed the information they consumed to avoid being overwhelmed,","            systematically delegating the responsibility for details.</p>","","            <p>Conclusion: that’s the wrong way to try to understand the difference between luck and skill. Suppose you ran a huge experiment where you had 1000 chess",>165
+|<"            grandmasters, 1000 masters, 1000 good amateurs, and so on down to 1000 chronic duffers, and they each inherited a thousand games starting at move eight","            (crediting the first seven moves to luck, circumstances, and childhood.) You wouldn’t learn much by asking whether the winners attacked or defended, opened the",>176
+|<"            middle or jammed it up, preferred their knights or their bishops. Those aren’t the right questions. A grandmaster doesn’t move a knight just because she likes","            knights, or because moving knights is the baller thing that all the grandmasters do. It’s because it accomplishes something in their situation. If life was a",>172
+|<"            game you could play over and over again, with executive control gradually fading in starting in the teenage years, a brilliant player might play each lifetime","            very differently. It’s an interesting thought experiment to ask what skills you would develop as you “played” dozens or hundreds of lifetimes! Certainly not","            rigid rules like “wake up at 5am” or “wear the same thing every day.”</p>","                ","        </main>",>13
+|<"    </body>","</html>"
 "4	LINE	0
-	                            <p>Rush EXP star jelly production (lab)</p>
-	                            <p>Rush balloon and fountain speed so you can upgrade the statue faster (lab)</p>
-	                            <p>
-	                                <a href="https://youtu.be/Qg31b_a1glA?t=669">@11:09</a>
-	                                Rush maxing out required toppings
-	                            </p>
-|3,0,4,1,6,0,1695177597,"                            <p>Rush EXP star jelly production (lab)</p>","                            <p>Rush balloon and fountain speed so you can upgrade the statue faster (lab)</p>","                            <p>","                                <a href=\"https://youtu.be/Qg31b_a1glA?t=669\">@11:09</a>","                                Rush maxing out required toppings","                            </p>"
+	            @layer components {
+|3,0,4,1,1,0,1695724030,"            @layer components {"
 "5	LINE	0
-	
-	
-|3,0,5,1,2,0,1695177575,"",""
+	            p { @apply bg-slate-300; }
+|3,0,5,1,1,0,1695724012,"            p { @apply bg-slate-300; }"
 "6	LINE	0
-	
-|3,0,6,1,1,0,1695177570,""
+	                p { 
+|3,0,6,1,1,0,1695721029,"                p { "
 "7	LINE	0
-	
-	
-|3,0,7,1,2,0,1695177569,"",""
+	            @tailwind base;
+|3,0,7,1,1,0,1695721121,"            @tailwind base;"
 "8	LINE	0
-	                    <p>
-	                        You're not able to do it easily, but it is doable. You need to make an account
-	                        with a separate email and everything, then submit a ticket with Devsisters
-	                        support saying that you lost access to your old account somehow (I wanted to
-	                        see if I could get my IAPs reimbursed but eventually decided on refunding them)
-	                        then you'll probably get an automated response. Send a reply to the email
-	                        asking them if you're able to get any more help than that, and you might
-	                        receive a message telling you to create a new account which they will then copy
-	                        progress over to. By doing this you're able to transfer your save to a
-	                        different server and continue your progress over there.
-	                    </p>
-|3,0,8,1,11,0,1695177465,"                    <p>","                        You're not able to do it easily, but it is doable. You need to make an account","                        with a separate email and everything, then submit a ticket with Devsisters","                        support saying that you lost access to your old account somehow (I wanted to",>105
-|<"                        see if I could get my IAPs reimbursed but eventually decided on refunding them)","                        then you'll probably get an automated response. Send a reply to the email","                        asking them if you're able to get any more help than that, and you might","                        receive a message telling you to create a new account which they will then copy",>96
-|<"                        progress over to. By doing this you're able to transfer your save to a","                        different server and continue your progress over there.","                    </p>"
+	            @tailwind components;
+	            @tailwind utilities;
+|3,0,8,1,2,0,1695721121,"            @tailwind components;","            @tailwind utilities;"
 "9	LINE	0
-	                    <p>
-	                        You're not able to do it easily, but it is doable. You need to make an account
-	                        with a separate email and everything, then submit a ticket with Devsisters
-	                        support saying that you lost access to your old account somehow (I wanted to
-	                        see if I could get my IAPs reimbursed but eventually decided on refunding them)
-	                        then you'll probably get an automated response. Send a reply to the email
-	                        asking them if you're able to get any more help than that, and you might
-	                        receive a message telling you to create a new account which they will then copy
-	                        progress over to. By doing this you're able to transfer your save to a
-	                        different server and continue your progress over there.
-	                    </p>
-|3,0,9,1,11,0,1695177461,"                    <p>","                        You're not able to do it easily, but it is doable. You need to make an account","                        with a separate email and everything, then submit a ticket with Devsisters","                        support saying that you lost access to your old account somehow (I wanted to",>105
-|<"                        see if I could get my IAPs reimbursed but eventually decided on refunding them)","                        then you'll probably get an automated response. Send a reply to the email","                        asking them if you're able to get any more help than that, and you might","                        receive a message telling you to create a new account which they will then copy",>96
-|<"                        progress over to. By doing this you're able to transfer your save to a","                        different server and continue your progress over there.","                    </p>"
+	                p { 
+|3,0,9,1,1,0,1695721029,"                p { "
 "a	CHAR	0
-	0wda)b0Pds)
-|3,0,10,0,1,0,1691911532,"0wda)b0Pds)"
+	0nd0
+|3,0,10,0,1,0,1695381603,"0nd0"
 "b	LINE	0
 	        cursor, connection = log_db()
 |3,0,11,1,1,0,1657748821,"        cursor, connection = log_db()"
@@ -31132,9 +31262,9 @@ $
 	id="tna-auto-sub-cta"
 	id="tna-auto-twitter-cta"
 |3,0,33,1,6,0,1602258057,"id=\"audio-tooltip\"","id=\"jump-to-top\"","id=\"navbar-main\"","id=\"sticky-header\"","id=\"tna-auto-sub-cta\"","id=\"tna-auto-twitter-cta\""
-"-	CHAR	0
-	https://www.youtube.com/watch?v=Qg31b_a1glA&amp;lc=UgxGwllOWwcUPx0Ti-t4AaABAg
-|3,0,36,0,1,0,1695177535,"https://www.youtube.com/watch?v=Qg31b_a1glA&amp;lc=UgxGwllOWwcUPx0Ti-t4AaABAg"
+""-	CHAR	0
+	text-sky-300
+|3,1,36,0,1,0,1695801648,"text-sky-300"
 
 # File marks:
 'A  217  28  ~\vimfiles\pack\plugins\start\sideways.vim\autoload\sideways\parsing.vim
@@ -31149,338 +31279,636 @@ $
 |4,75,10,0,1664397883,"~\\Desktop\\Twitch\\coffee-vps\\flask-vue\\vuejs\\Chart.vue"
 'M  1564  44  C:\Program Files (x86)\Vim\vim82\doc\quickfix.txt
 |4,77,1564,44,1582635887,"C:\\Program Files (x86)\\Vim\\vim82\\doc\\quickfix.txt"
-'0  68  20  ~\Desktop\website\cookie_run.html
-|4,48,68,20,1695188842,"~\\Desktop\\website\\cookie_run.html"
-'1  25  72  ~\Desktop\website\cookie_run.html
-|4,49,25,72,1695111859,"~\\Desktop\\website\\cookie_run.html"
-'2  25  72  ~\Desktop\website\cookie_run.html
-|4,50,25,72,1695111859,"~\\Desktop\\website\\cookie_run.html"
-'3  41  30  ~\Desktop\website\cooking_run.html
-|4,51,41,30,1695100921,"~\\Desktop\\website\\cooking_run.html"
-'4  25  30  ~\Desktop\website\cooking_run.html
-|4,52,25,30,1695100921,"~\\Desktop\\website\\cooking_run.html"
-'5  41  30  ~\Desktop\website\cooking_run.html
-|4,53,41,30,1695100921,"~\\Desktop\\website\\cooking_run.html"
-'6  25  30  ~\Desktop\website\cooking_run.html
-|4,54,25,30,1695100921,"~\\Desktop\\website\\cooking_run.html"
-'7  84  0  ~\Desktop\website\weight_loss_2023.html
-|4,55,84,0,1694903374,"~\\Desktop\\website\\weight_loss_2023.html"
-'8  84  0  ~\Desktop\website\weight_loss_2023.html
-|4,56,84,0,1694903374,"~\\Desktop\\website\\weight_loss_2023.html"
-'9  84  0  ~\Desktop\website\weight_loss_2023.html
-|4,57,84,0,1694739249,"~\\Desktop\\website\\weight_loss_2023.html"
+'0  7  0  ~\Desktop\tailwind\input.css
+|4,48,7,0,1695801713,"~\\Desktop\\tailwind\\input.css"
+'1  7  0  ~\Desktop\tailwind\input.css
+|4,49,7,0,1695801713,"~\\Desktop\\tailwind\\input.css"
+'2  6  17  ~\Desktop\tailwind\input.css
+|4,50,6,17,1695801544,"~\\Desktop\\tailwind\\input.css"
+'3  6  17  ~\Desktop\tailwind\input.css
+|4,51,6,17,1695801544,"~\\Desktop\\tailwind\\input.css"
+'4  6  17  ~\Desktop\tailwind\input.css
+|4,52,6,17,1695801544,"~\\Desktop\\tailwind\\input.css"
+'5  6  17  ~\Desktop\tailwind\input.css
+|4,53,6,17,1695801544,"~\\Desktop\\tailwind\\input.css"
+'6  1  0  ~\Desktop\backup\volar-test\postcss.config.js
+|4,54,1,0,1695724663,"~\\Desktop\\backup\\volar-test\\postcss.config.js"
+'7  1  0  ~\Desktop\backup\volar-test\postcss.config.js
+|4,55,1,0,1695724663,"~\\Desktop\\backup\\volar-test\\postcss.config.js"
+'8  1  0  ~\Desktop\backup\volar-test\postcss.config.js
+|4,56,1,0,1695724663,"~\\Desktop\\backup\\volar-test\\postcss.config.js"
+'9  1  0  ~\Desktop\backup\volar-test\postcss.config.js
+|4,57,1,0,1695724663,"~\\Desktop\\backup\\volar-test\\postcss.config.js"
 
 # Jumplist (newest first):
--'  68  20  ~\Desktop\website\cookie_run.html
-|4,39,68,20,1695188842,"~\\Desktop\\website\\cookie_run.html"
--'  60  75  ~\Desktop\website\cookie_run.html
-|4,39,60,75,1695177804,"~\\Desktop\\website\\cookie_run.html"
--'  29  17  ~\Desktop\website\cookie_run.html
-|4,39,29,17,1695177565,"~\\Desktop\\website\\cookie_run.html"
--'  61  24  ~\Desktop\website\cookie_run.html
-|4,39,61,24,1695177551,"~\\Desktop\\website\\cookie_run.html"
--'  57  0  ~\Desktop\website\cookie_run.html
-|4,39,57,0,1695177544,"~\\Desktop\\website\\cookie_run.html"
--'  58  53  ~\Desktop\website\cookie_run.html
-|4,39,58,53,1695177523,"~\\Desktop\\website\\cookie_run.html"
--'  32  53  ~\Desktop\website\cookie_run.html
-|4,39,32,53,1695177518,"~\\Desktop\\website\\cookie_run.html"
--'  55  20  ~\Desktop\website\cookie_run.html
-|4,39,55,20,1695177465,"~\\Desktop\\website\\cookie_run.html"
--'  53  17  ~\Desktop\website\cookie_run.html
-|4,39,53,17,1695177457,"~\\Desktop\\website\\cookie_run.html"
--'  33  21  ~\Desktop\website\cookie_run.html
-|4,39,33,21,1695177441,"~\\Desktop\\website\\cookie_run.html"
--'  30  21  ~\Desktop\website\cookie_run.html
-|4,39,30,21,1695177440,"~\\Desktop\\website\\cookie_run.html"
--'  25  65  ~\Desktop\website\cookie_run.html
-|4,39,25,65,1695113456,"~\\Desktop\\website\\cookie_run.html"
--'  1  0  ~\Desktop\website\cookie_run.html
-|4,39,1,0,1695113383,"~\\Desktop\\website\\cookie_run.html"
--'  82  60  ~\Desktop\website\cookie_run.html
-|4,39,82,60,1695113376,"~\\Desktop\\website\\cookie_run.html"
--'  25  72  ~\Desktop\website\cookie_run.html
-|4,39,25,72,1695111859,"~\\Desktop\\website\\cookie_run.html"
--'  81  16  ~\Desktop\website\cookie_run.html
-|4,39,81,16,1695111848,"~\\Desktop\\website\\cookie_run.html"
--'  66  16  ~\Desktop\website\cookie_run.html
-|4,39,66,16,1695111848,"~\\Desktop\\website\\cookie_run.html"
--'  1  0  ~\Desktop\website\tailwind.config.js
-|4,39,1,0,1695111846,"~\\Desktop\\website\\tailwind.config.js"
--'  1  0  ~\Desktop\website\tailwind.config.js
-|4,39,1,0,1695111846,"~\\Desktop\\website\\tailwind.config.js"
--'  5  103  ~\vimfiles\ide.vim
-|4,39,5,103,1695111839,"~\\vimfiles\\ide.vim"
--'  5  103  ~\vimfiles\ide.vim
-|4,39,5,103,1695111839,"~\\vimfiles\\ide.vim"
--'  76  113  ~\Desktop\website\cookie_run.html
-|4,39,76,113,1695107264,"~\\Desktop\\website\\cookie_run.html"
--'  63  113  ~\Desktop\website\cookie_run.html
-|4,39,63,113,1695107264,"~\\Desktop\\website\\cookie_run.html"
--'  79  113  ~\Desktop\website\cookie_run.html
-|4,39,79,113,1695107262,"~\\Desktop\\website\\cookie_run.html"
--'  64  113  ~\Desktop\website\cookie_run.html
-|4,39,64,113,1695107262,"~\\Desktop\\website\\cookie_run.html"
--'  37  28  ~\Desktop\website\cookie_run.html
-|4,39,37,28,1695107152,"~\\Desktop\\website\\cookie_run.html"
--'  38  28  ~\Desktop\website\cookie_run.html
-|4,39,38,28,1695107152,"~\\Desktop\\website\\cookie_run.html"
--'  40  32  ~\Desktop\website\cookie_run.html
-|4,39,40,32,1695107108,"~\\Desktop\\website\\cookie_run.html"
--'  41  32  ~\Desktop\website\cookie_run.html
-|4,39,41,32,1695107108,"~\\Desktop\\website\\cookie_run.html"
--'  34  0  ~\Desktop\website\cookie_run.html
-|4,39,34,0,1695107084,"~\\Desktop\\website\\cookie_run.html"
--'  34  0  ~\Desktop\website\cookie_run.html
-|4,39,34,0,1695107084,"~\\Desktop\\website\\cookie_run.html"
--'  22  23  ~\Desktop\website\cookie_run.html
-|4,39,22,23,1695107074,"~\\Desktop\\website\\cookie_run.html"
--'  22  23  ~\Desktop\website\cookie_run.html
-|4,39,22,23,1695107074,"~\\Desktop\\website\\cookie_run.html"
--'  90  25  ~\Desktop\website\cookie_run.html
-|4,39,90,25,1695107055,"~\\Desktop\\website\\cookie_run.html"
--'  73  25  ~\Desktop\website\cookie_run.html
-|4,39,73,25,1695107055,"~\\Desktop\\website\\cookie_run.html"
--'  85  34  ~\Desktop\website\cookie_run.html
-|4,39,85,34,1695107052,"~\\Desktop\\website\\cookie_run.html"
--'  68  34  ~\Desktop\website\cookie_run.html
-|4,39,68,34,1695107052,"~\\Desktop\\website\\cookie_run.html"
--'  29  64  ~\Desktop\website\cookie_run.html
-|4,39,29,64,1695107031,"~\\Desktop\\website\\cookie_run.html"
--'  73  44  ~\Desktop\website\cookie_run.html
-|4,39,73,44,1695106313,"~\\Desktop\\website\\cookie_run.html"
--'  60  44  ~\Desktop\website\cookie_run.html
-|4,39,60,44,1695106313,"~\\Desktop\\website\\cookie_run.html"
--'  72  103  ~\Desktop\website\cookie_run.html
-|4,39,72,103,1695106279,"~\\Desktop\\website\\cookie_run.html"
--'  59  103  ~\Desktop\website\cookie_run.html
-|4,39,59,103,1695106279,"~\\Desktop\\website\\cookie_run.html"
--'  92  77  ~\Desktop\website\cookie_run.html
-|4,39,92,77,1695106173,"~\\Desktop\\website\\cookie_run.html"
--'  75  77  ~\Desktop\website\cookie_run.html
-|4,39,75,77,1695106173,"~\\Desktop\\website\\cookie_run.html"
--'  27  0  ~\Desktop\website\cookie_run.html
-|4,39,27,0,1695102508,"~\\Desktop\\website\\cookie_run.html"
--'  27  0  ~\Desktop\website\cookie_run.html
-|4,39,27,0,1695102508,"~\\Desktop\\website\\cookie_run.html"
--'  31  68  ~\Desktop\website\cookie_run.html
-|4,39,31,68,1695102438,"~\\Desktop\\website\\cookie_run.html"
--'  30  68  ~\Desktop\website\cookie_run.html
-|4,39,30,68,1695102438,"~\\Desktop\\website\\cookie_run.html"
--'  12  68  ~\Desktop\website\cookie_run.html
-|4,39,12,68,1695102431,"~\\Desktop\\website\\cookie_run.html"
--'  12  68  ~\Desktop\website\cookie_run.html
-|4,39,12,68,1695102431,"~\\Desktop\\website\\cookie_run.html"
--'  41  64  ~\Desktop\website\cookie_run.html
-|4,39,41,64,1695102419,"~\\Desktop\\website\\cookie_run.html"
--'  42  64  ~\Desktop\website\cookie_run.html
-|4,39,42,64,1695102419,"~\\Desktop\\website\\cookie_run.html"
--'  42  31  ~\Desktop\website\cookie_run.html
-|4,39,42,31,1695102411,"~\\Desktop\\website\\cookie_run.html"
--'  43  31  ~\Desktop\website\cookie_run.html
-|4,39,43,31,1695102411,"~\\Desktop\\website\\cookie_run.html"
--'  38  31  ~\Desktop\website\cookie_run.html
-|4,39,38,31,1695102174,"~\\Desktop\\website\\cookie_run.html"
--'  39  31  ~\Desktop\website\cookie_run.html
-|4,39,39,31,1695102174,"~\\Desktop\\website\\cookie_run.html"
--'  36  28  ~\Desktop\website\cookie_run.html
-|4,39,36,28,1695102156,"~\\Desktop\\website\\cookie_run.html"
--'  37  28  ~\Desktop\website\cookie_run.html
-|4,39,37,28,1695102156,"~\\Desktop\\website\\cookie_run.html"
--'  35  42  ~\Desktop\website\cookie_run.html
-|4,39,35,42,1695102132,"~\\Desktop\\website\\cookie_run.html"
--'  36  42  ~\Desktop\website\cookie_run.html
-|4,39,36,42,1695102132,"~\\Desktop\\website\\cookie_run.html"
--'  35  44  ~\Desktop\website\cookie_run.html
-|4,39,35,44,1695102132,"~\\Desktop\\website\\cookie_run.html"
--'  45  105  ~\Desktop\website\cookie_run.html
-|4,39,45,105,1695102074,"~\\Desktop\\website\\cookie_run.html"
--'  46  105  ~\Desktop\website\cookie_run.html
-|4,39,46,105,1695102074,"~\\Desktop\\website\\cookie_run.html"
--'  47  46  ~\Desktop\website\cookie_run.html
-|4,39,47,46,1695101448,"~\\Desktop\\website\\cookie_run.html"
--'  48  46  ~\Desktop\website\cookie_run.html
-|4,39,48,46,1695101448,"~\\Desktop\\website\\cookie_run.html"
--'  29  22  ~\Desktop\website\cooking_run.html
-|4,39,29,22,1695101442,"~\\Desktop\\website\\cooking_run.html"
--'  29  22  ~\Desktop\website\cooking_run.html
-|4,39,29,22,1695101442,"~\\Desktop\\website\\cooking_run.html"
--'  25  12  ~\Desktop\website\cooking_run.html
-|4,39,25,12,1695101275,"~\\Desktop\\website\\cooking_run.html"
--'  25  12  ~\Desktop\website\cooking_run.html
-|4,39,25,12,1695101275,"~\\Desktop\\website\\cooking_run.html"
--'  24  51  ~\Desktop\website\cooking_run.html
-|4,39,24,51,1695101269,"~\\Desktop\\website\\cooking_run.html"
--'  24  51  ~\Desktop\website\cooking_run.html
-|4,39,24,51,1695101269,"~\\Desktop\\website\\cooking_run.html"
--'  25  30  ~\Desktop\website\cooking_run.html
-|4,39,25,30,1695100921,"~\\Desktop\\website\\cooking_run.html"
--'  7  24  ~\Desktop\website\cooking_run.html
-|4,39,7,24,1695100836,"~\\Desktop\\website\\cooking_run.html"
--'  7  24  ~\Desktop\website\cooking_run.html
-|4,39,7,24,1695100836,"~\\Desktop\\website\\cooking_run.html"
--'  6  24  ~\Desktop\website\cooking_run.html
-|4,39,6,24,1695100835,"~\\Desktop\\website\\cooking_run.html"
--'  24  8  ~\Desktop\website\cooking_run.html
-|4,39,24,8,1695100814,"~\\Desktop\\website\\cooking_run.html"
--'  28  0  ~\Desktop\website\cooking_run.html
-|4,39,28,0,1695100790,"~\\Desktop\\website\\cooking_run.html"
--'  29  6  ~\Desktop\website\cooking_run.html
-|4,39,29,6,1695100770,"~\\Desktop\\website\\cooking_run.html"
--'  3  0  ~\Documents\texts\cookie_run_coral_missions.txt
-|4,39,3,0,1695100672,"~\\Documents\\texts\\cookie_run_coral_missions.txt"
--'  6  0  ~\Documents\AutoHotkey\main.ahk
-|4,39,6,0,1695099739,"~\\Documents\\AutoHotkey\\main.ahk"
--'  55  150  ~\Documents\AutoHotkey\main.ahk
-|4,39,55,150,1695099548,"~\\Documents\\AutoHotkey\\main.ahk"
--'  1  0  ~\Documents\AutoHotkey\chrome.ahk
-|4,39,1,0,1695099473,"~\\Documents\\AutoHotkey\\chrome.ahk"
--'  1  0  ~\Documents\AutoHotkey\adobe.ahk
-|4,39,1,0,1695099406,"~\\Documents\\AutoHotkey\\adobe.ahk"
--'  56  0  ~\Documents\AutoHotkey\main.ahk
-|4,39,56,0,1695099395,"~\\Documents\\AutoHotkey\\main.ahk"
--'  1  0  ~\Documents\AutoHotkey\main.ahk
-|4,39,1,0,1695099376,"~\\Documents\\AutoHotkey\\main.ahk"
--'  5  18  ~\Documents\texts\actors.txt
-|4,39,5,18,1695091755,"~\\Documents\\texts\\actors.txt"
--'  3  13  ~\Documents\texts\actors.txt
-|4,39,3,13,1695013262,"~\\Documents\\texts\\actors.txt"
--'  2  13  ~\Documents\texts\actors.txt
-|4,39,2,13,1695013262,"~\\Documents\\texts\\actors.txt"
--'  1  0  ~\Documents\texts\actors.txt
-|4,39,1,0,1695013252,"~\\Documents\\texts\\actors.txt"
--'  168  0  ~\Desktop\Docker\Dockerfile-ubuntu
-|4,39,168,0,1694995652,"~\\Desktop\\Docker\\Dockerfile-ubuntu"
--'  1  0  ~\Desktop\Docker\Dockerfile-ubuntu
-|4,39,1,0,1694904970,"~\\Desktop\\Docker\\Dockerfile-ubuntu"
--'  84  0  ~\Desktop\website\weight_loss_2023.html
-|4,39,84,0,1694903374,"~\\Desktop\\website\\weight_loss_2023.html"
--'  84  0  ~\Desktop\website\weight_loss_2023.html
-|4,39,84,0,1694903374,"~\\Desktop\\website\\weight_loss_2023.html"
--'  84  0  ~\Desktop\website\weight_loss_2023.html
-|4,39,84,0,1694739249,"~\\Desktop\\website\\weight_loss_2023.html"
--'  1  0  ~\Desktop\Twitch\coffee-vps\flask-vue\api.py
-|4,39,1,0,1694739247,"~\\Desktop\\Twitch\\coffee-vps\\flask-vue\\api.py"
--'  1  0  ~\Desktop\Twitch\coffee-vps\flask-vue\api.py
-|4,39,1,0,1694739247,"~\\Desktop\\Twitch\\coffee-vps\\flask-vue\\api.py"
--'  1  0  ~\Desktop\Twitch\coffee-vps\flask-vue\api.py
-|4,39,1,0,1694739247,"~\\Desktop\\Twitch\\coffee-vps\\flask-vue\\api.py"
--'  84  61  ~\Desktop\website\weight_loss_2023.html
-|4,39,84,61,1694672118,"~\\Desktop\\website\\weight_loss_2023.html"
--'  84  61  ~\Desktop\website\weight_loss_2023.html
-|4,39,84,61,1694672118,"~\\Desktop\\website\\weight_loss_2023.html"
+-'  7  0  ~\Desktop\tailwind\input.css
+|4,39,7,0,1695801713,"~\\Desktop\\tailwind\\input.css"
+-'  7  0  ~\Desktop\tailwind\input.css
+|4,39,7,0,1695801713,"~\\Desktop\\tailwind\\input.css"
+-'  3  14  ~\vimfiles\after\ftplugin\css.vim
+|4,39,3,14,1695801711,"~\\vimfiles\\after\\ftplugin\\css.vim"
+-'  3  14  ~\vimfiles\after\ftplugin\css.vim
+|4,39,3,14,1695801711,"~\\vimfiles\\after\\ftplugin\\css.vim"
+-'  13  10  ~\Desktop\tailwind\index.html
+|4,39,13,10,1695801644,"~\\Desktop\\tailwind\\index.html"
+-'  13  10  ~\Desktop\tailwind\index.html
+|4,39,13,10,1695801644,"~\\Desktop\\tailwind\\index.html"
+-'  8  0  ~\Desktop\tailwind\input.css
+|4,39,8,0,1695801610,"~\\Desktop\\tailwind\\input.css"
+-'  8  0  ~\Desktop\tailwind\input.css
+|4,39,8,0,1695801610,"~\\Desktop\\tailwind\\input.css"
+-'  1  0  ~\Documents\AutoHotkey\filter \css\
+|4,39,1,0,1695801575,"~\\Documents\\AutoHotkey\\filter \\css\\"
+-'  1  0  ~\Documents\AutoHotkey\filter \css\
+|4,39,1,0,1695801575,"~\\Documents\\AutoHotkey\\filter \\css\\"
+-'  6  17  ~\Desktop\tailwind\input.css
+|4,39,6,17,1695801544,"~\\Desktop\\tailwind\\input.css"
+-'  6  17  ~\Desktop\tailwind\input.css
+|4,39,6,17,1695801544,"~\\Desktop\\tailwind\\input.css"
+-'  6  17  ~\Desktop\tailwind\input.css
+|4,39,6,17,1695801544,"~\\Desktop\\tailwind\\input.css"
+-'  30  14  ~\vimfiles\ftplugin\css.vim
+|4,39,30,14,1695801535,"~\\vimfiles\\ftplugin\\css.vim"
+-'  30  14  ~\vimfiles\ftplugin\css.vim
+|4,39,30,14,1695801535,"~\\vimfiles\\ftplugin\\css.vim"
+-'  30  14  ~\vimfiles\ftplugin\css.vim
+|4,39,30,14,1695801535,"~\\vimfiles\\ftplugin\\css.vim"
+-'  9  0  ~\Desktop\tailwind\input.css
+|4,39,9,0,1695801524,"~\\Desktop\\tailwind\\input.css"
+-'  9  0  ~\Desktop\tailwind\input.css
+|4,39,9,0,1695801524,"~\\Desktop\\tailwind\\input.css"
+-'  29  9  ~\vimfiles\ftplugin\css.vim
+|4,39,29,9,1695801520,"~\\vimfiles\\ftplugin\\css.vim"
+-'  29  9  ~\vimfiles\ftplugin\css.vim
+|4,39,29,9,1695801520,"~\\vimfiles\\ftplugin\\css.vim"
+-'  29  9  ~\vimfiles\ftplugin\css.vim
+|4,39,29,9,1695801520,"~\\vimfiles\\ftplugin\\css.vim"
+-'  1  0  ~\vimfiles\ftplugin\css.vim
+|4,39,1,0,1695801515,"~\\vimfiles\\ftplugin\\css.vim"
+-'  1  0  ~\vimfiles\ftplugin\css.vim
+|4,39,1,0,1695801515,"~\\vimfiles\\ftplugin\\css.vim"
+-'  1  0  ~\vimfiles\ftplugin\css.vim
+|4,39,1,0,1695801515,"~\\vimfiles\\ftplugin\\css.vim"
+-'  13  17  ~\Desktop\tailwind\index.html
+|4,39,13,17,1695801466,"~\\Desktop\\tailwind\\index.html"
+-'  8  22  ~\Desktop\tailwind\input.css
+|4,39,8,22,1695801460,"~\\Desktop\\tailwind\\input.css"
+-'  11  8  ~\Desktop\tailwind\index.html
+|4,39,11,8,1695801233,"~\\Desktop\\tailwind\\index.html"
+-'  11  8  ~\Desktop\tailwind\index.html
+|4,39,11,8,1695801233,"~\\Desktop\\tailwind\\index.html"
+-'  11  8  ~\Desktop\tailwind\index.html
+|4,39,11,8,1695801233,"~\\Desktop\\tailwind\\index.html"
+-'  600  0  ~\Desktop\tailwind\output.css
+|4,39,600,0,1695801230,"~\\Desktop\\tailwind\\output.css"
+-'  13  0  ~\Desktop\tailwind\output.css
+|4,39,13,0,1695801230,"~\\Desktop\\tailwind\\output.css"
+-'  600  0  ~\Desktop\tailwind\output.css
+|4,39,600,0,1695801230,"~\\Desktop\\tailwind\\output.css"
+-'  13  0  ~\Desktop\tailwind\output.css
+|4,39,13,0,1695801230,"~\\Desktop\\tailwind\\output.css"
+-'  600  0  ~\Desktop\tailwind\output.css
+|4,39,600,0,1695801230,"~\\Desktop\\tailwind\\output.css"
+-'  13  0  ~\Desktop\tailwind\output.css
+|4,39,13,0,1695801230,"~\\Desktop\\tailwind\\output.css"
+-'  514  0  ~\Desktop\tailwind\output.css
+|4,39,514,0,1695801228,"~\\Desktop\\tailwind\\output.css"
+-'  514  0  ~\Desktop\tailwind\output.css
+|4,39,514,0,1695801228,"~\\Desktop\\tailwind\\output.css"
+-'  514  0  ~\Desktop\tailwind\output.css
+|4,39,514,0,1695801228,"~\\Desktop\\tailwind\\output.css"
+-'  20  0  ~\Desktop\tailwind\output.css
+|4,39,20,0,1695801224,"~\\Desktop\\tailwind\\output.css"
+-'  20  0  ~\Desktop\tailwind\output.css
+|4,39,20,0,1695801224,"~\\Desktop\\tailwind\\output.css"
+-'  20  0  ~\Desktop\tailwind\output.css
+|4,39,20,0,1695801224,"~\\Desktop\\tailwind\\output.css"
+-'  14  54  ~\Desktop\tailwind\index.html
+|4,39,14,54,1695801188,"~\\Desktop\\tailwind\\index.html"
+-'  14  54  ~\Desktop\tailwind\index.html
+|4,39,14,54,1695801188,"~\\Desktop\\tailwind\\index.html"
+-'  14  54  ~\Desktop\tailwind\index.html
+|4,39,14,54,1695801188,"~\\Desktop\\tailwind\\index.html"
+-'  18  165  ~\Desktop\tailwind\index.html
+|4,39,18,165,1695801155,"~\\Desktop\\tailwind\\index.html"
+-'  18  165  ~\Desktop\tailwind\index.html
+|4,39,18,165,1695801155,"~\\Desktop\\tailwind\\index.html"
+-'  18  165  ~\Desktop\tailwind\index.html
+|4,39,18,165,1695801155,"~\\Desktop\\tailwind\\index.html"
+-'  17  0  ~\Desktop\tailwind\index.html
+|4,39,17,0,1695801154,"~\\Desktop\\tailwind\\index.html"
+-'  22  0  ~\Desktop\tailwind\index.html
+|4,39,22,0,1695801154,"~\\Desktop\\tailwind\\index.html"
+-'  17  0  ~\Desktop\tailwind\index.html
+|4,39,17,0,1695801154,"~\\Desktop\\tailwind\\index.html"
+-'  22  0  ~\Desktop\tailwind\index.html
+|4,39,22,0,1695801154,"~\\Desktop\\tailwind\\index.html"
+-'  17  0  ~\Desktop\tailwind\index.html
+|4,39,17,0,1695801154,"~\\Desktop\\tailwind\\index.html"
+-'  22  0  ~\Desktop\tailwind\index.html
+|4,39,22,0,1695801154,"~\\Desktop\\tailwind\\index.html"
+-'  1  0  ~\Desktop\backup\volar-test\postcss.config.js
+|4,39,1,0,1695724663,"~\\Desktop\\backup\\volar-test\\postcss.config.js"
+-'  1  0  ~\Desktop\backup\volar-test\postcss.config.js
+|4,39,1,0,1695724663,"~\\Desktop\\backup\\volar-test\\postcss.config.js"
+-'  1  0  ~\Desktop\backup\volar-test\postcss.config.js
+|4,39,1,0,1695724663,"~\\Desktop\\backup\\volar-test\\postcss.config.js"
+-'  1  0  ~\Desktop\backup\volar-test\postcss.config.js
+|4,39,1,0,1695724663,"~\\Desktop\\backup\\volar-test\\postcss.config.js"
+-'  3  0  ~\Desktop\tailwind\postcss.config.js
+|4,39,3,0,1695724660,"~\\Desktop\\tailwind\\postcss.config.js"
+-'  3  0  ~\Desktop\tailwind\postcss.config.js
+|4,39,3,0,1695724660,"~\\Desktop\\tailwind\\postcss.config.js"
+-'  3  0  ~\Desktop\tailwind\postcss.config.js
+|4,39,3,0,1695724660,"~\\Desktop\\tailwind\\postcss.config.js"
+-'  3  0  ~\Desktop\tailwind\postcss.config.js
+|4,39,3,0,1695724660,"~\\Desktop\\tailwind\\postcss.config.js"
+-'  1  0  ~\Desktop\tailwind\postcss.config.js
+|4,39,1,0,1695724546,"~\\Desktop\\tailwind\\postcss.config.js"
+-'  1  0  ~\Desktop\tailwind\postcss.config.js
+|4,39,1,0,1695724546,"~\\Desktop\\tailwind\\postcss.config.js"
+-'  1  0  ~\Desktop\tailwind\postcss.config.js
+|4,39,1,0,1695724546,"~\\Desktop\\tailwind\\postcss.config.js"
+-'  1  0  ~\Desktop\tailwind\postcss.config.js
+|4,39,1,0,1695724546,"~\\Desktop\\tailwind\\postcss.config.js"
+-'  11  12  ~\Desktop\tailwind\index.html
+|4,39,11,12,1695724546,"~\\Desktop\\tailwind\\index.html"
+-'  1  0  ~\Documents\vuejs\template_cdn.html
+|4,39,1,0,1695724054,"~\\Documents\\vuejs\\template_cdn.html"
+-'  1  0  ~\Documents\vuejs\template_cdn.html
+|4,39,1,0,1695724054,"~\\Documents\\vuejs\\template_cdn.html"
+-'  1  0  ~\Documents\vuejs\template_cdn.html
+|4,39,1,0,1695724054,"~\\Documents\\vuejs\\template_cdn.html"
+-'  1  0  ~\Documents\vuejs\template_cdn.html
+|4,39,1,0,1695724054,"~\\Documents\\vuejs\\template_cdn.html"
+-'  10  31  ~\Desktop\tailwind\index.html
+|4,39,10,31,1695724032,"~\\Desktop\\tailwind\\index.html"
+-'  10  31  ~\Desktop\tailwind\index.html
+|4,39,10,31,1695724032,"~\\Desktop\\tailwind\\index.html"
+-'  10  31  ~\Desktop\tailwind\index.html
+|4,39,10,31,1695724032,"~\\Desktop\\tailwind\\index.html"
+-'  10  31  ~\Desktop\tailwind\index.html
+|4,39,10,31,1695724032,"~\\Desktop\\tailwind\\index.html"
+-'  563  2  ~\Desktop\tailwind\dist\output.css
+|4,39,563,2,1695724018,"~\\Desktop\\tailwind\\dist\\output.css"
+-'  563  2  ~\Desktop\tailwind\dist\output.css
+|4,39,563,2,1695724018,"~\\Desktop\\tailwind\\dist\\output.css"
+-'  563  2  ~\Desktop\tailwind\dist\output.css
+|4,39,563,2,1695724018,"~\\Desktop\\tailwind\\dist\\output.css"
+-'  563  2  ~\Desktop\tailwind\dist\output.css
+|4,39,563,2,1695724018,"~\\Desktop\\tailwind\\dist\\output.css"
+-'  12  16  ~\Desktop\tailwind\index.html
+|4,39,12,16,1695724017,"~\\Desktop\\tailwind\\index.html"
+-'  12  16  ~\Desktop\tailwind\index.html
+|4,39,12,16,1695724017,"~\\Desktop\\tailwind\\index.html"
+-'  12  16  ~\Desktop\tailwind\index.html
+|4,39,12,16,1695724017,"~\\Desktop\\tailwind\\index.html"
+-'  12  16  ~\Desktop\tailwind\index.html
+|4,39,12,16,1695724017,"~\\Desktop\\tailwind\\index.html"
+-'  562  1  ~\Desktop\tailwind\dist\output.css
+|4,39,562,1,1695724010,"~\\Desktop\\tailwind\\dist\\output.css"
+-'  559  47  ~\Desktop\tailwind\dist\output.css
+|4,39,559,47,1695724010,"~\\Desktop\\tailwind\\dist\\output.css"
+-'  558  7  ~\Desktop\tailwind\dist\output.css
+|4,39,558,7,1695724010,"~\\Desktop\\tailwind\\dist\\output.css"
+-'  562  1  ~\Desktop\tailwind\dist\output.css
+|4,39,562,1,1695724010,"~\\Desktop\\tailwind\\dist\\output.css"
+-'  559  47  ~\Desktop\tailwind\dist\output.css
+|4,39,559,47,1695724010,"~\\Desktop\\tailwind\\dist\\output.css"
+-'  558  7  ~\Desktop\tailwind\dist\output.css
+|4,39,558,7,1695724010,"~\\Desktop\\tailwind\\dist\\output.css"
+-'  562  1  ~\Desktop\tailwind\dist\output.css
+|4,39,562,1,1695724010,"~\\Desktop\\tailwind\\dist\\output.css"
+-'  559  47  ~\Desktop\tailwind\dist\output.css
+|4,39,559,47,1695724010,"~\\Desktop\\tailwind\\dist\\output.css"
+-'  558  7  ~\Desktop\tailwind\dist\output.css
+|4,39,558,7,1695724010,"~\\Desktop\\tailwind\\dist\\output.css"
+-'  562  1  ~\Desktop\tailwind\dist\output.css
+|4,39,562,1,1695724010,"~\\Desktop\\tailwind\\dist\\output.css"
+-'  559  47  ~\Desktop\tailwind\dist\output.css
+|4,39,559,47,1695724010,"~\\Desktop\\tailwind\\dist\\output.css"
+-'  558  7  ~\Desktop\tailwind\dist\output.css
+|4,39,558,7,1695724010,"~\\Desktop\\tailwind\\dist\\output.css"
+-'  557  1  ~\Desktop\tailwind\dist\output.css
+|4,39,557,1,1695724009,"~\\Desktop\\tailwind\\dist\\output.css"
+-'  557  1  ~\Desktop\tailwind\dist\output.css
+|4,39,557,1,1695724009,"~\\Desktop\\tailwind\\dist\\output.css"
+-'  557  1  ~\Desktop\tailwind\dist\output.css
+|4,39,557,1,1695724009,"~\\Desktop\\tailwind\\dist\\output.css"
+-'  557  1  ~\Desktop\tailwind\dist\output.css
+|4,39,557,1,1695724009,"~\\Desktop\\tailwind\\dist\\output.css"
+-'  1  0  ~\Desktop\tailwind\dist\output.css
+|4,39,1,0,1695724002,"~\\Desktop\\tailwind\\dist\\output.css"
 
 # Buffer list:
-%~\Desktop\website\cookie_run.html	68	20
-%~\vimfiles\ide.vim	5	103
-%~\Desktop\website\tailwind.config.js	1	0
+%~\Desktop\tailwind\index.html	13	10
+%~\Desktop\tailwind\input.css	7	0
+%~\vimfiles\ftplugin\css.vim	30	14
+%~\Documents\AutoHotkey\filter \css\	1	0
 
 # History of marks within files (newest to oldest):
 
-> ~\Desktop\website\cookie_run.html
-	*	1695177829	0
-	"	68	20
-	.	60	0
-	+	30	50
-	+	46	0
-	+	51	0
-	+	45	42
-	+	32	41
-	+	31	58
-	+	31	139
-	+	31	72
-	+	34	0
-	+	25	68
-	+	45	22
-	+	45	59
-	+	45	97
-	+	45	0
-	+	45	22
-	+	45	23
-	+	45	24
-	+	45	0
-	+	34	0
-	+	35	42
-	+	34	44
-	+	35	45
-	+	44	0
-	+	36	0
-	+	37	68
-	+	38	106
-	+	37	42
-	+	37	71
-	+	38	109
-	+	37	0
-	+	38	31
-	+	33	0
-	+	39	31
-	+	42	0
-	+	40	35
-	+	13	36
-	+	31	27
-	+	40	78
-	+	93	0
-	+	76	0
-	+	92	0
-	+	76	108
-	+	92	75
-	+	74	0
-	+	72	103
-	+	73	75
-	+	74	0
-	+	25	41
-	+	30	64
-	+	91	0
-	+	85	34
-	+	90	0
-	+	92	0
-	+	87	27
-	+	88	27
-	+	85	39
-	+	84	20
-	+	89	106
-	+	84	41
-	+	79	113
-	+	80	59
-	+	81	86
-	+	25	72
-	+	79	0
-	+	78	38
-	+	82	57
-	+	25	40
+> ~\Desktop\tailwind\input.css
+	*	1695801711	0
+	"	7	0
+	^	7	102
+	.	8	0
+	+	6	106
+	+	7	114
+	+	6	63
+	+	6	29
+	+	6	0
+	+	8	0
+	+	7	103
+	+	7	102
+	+	8	0
+
+> ~\vimfiles\after\ftplugin\css.vim
+	*	1695801711	0
+	"	3	14
+	^	3	15
+	.	3	14
+	+	3	14
+
+> ~\Desktop\tailwind\index.html
+	*	1695801618	0
+	"	13	10
+	^	16	35
+	.	13	17
 	+	25	0
-	+	83	59
-	+	84	0
-	+	53	0
-	+	53	21
-	+	53	22
-	+	53	0
-	+	53	78
-	+	53	70
-	+	53	0
-	+	70	0
-	+	55	0
-	+	54	0
-	+	55	20
-	+	32	53
-	+	58	53
-	+	57	234
-	+	61	0
-	+	61	102
-	+	66	117
-	+	53	0
-	+	28	0
-	+	34	0
+	+	24	0
+	+	6	38
+	+	24	31
+	+	6	0
+	+	4	0
+	+	1	14
+	+	17	0
+	+	15	62
+	+	24	29
+	+	15	0
+	+	22	33
+	+	23	0
+	+	22	35
+	+	22	47
+	+	22	23
+	+	22	13
+	+	22	9
+	+	22	24
+	+	22	88
+	+	22	0
+	+	22	38
+	+	17	7
+	+	17	25
+	+	17	0
+	+	22	0
+	+	17	0
+	+	17	19
+	+	17	0
+	+	17	37
+	+	17	0
+	+	17	39
+	+	22	34
+	+	17	0
+	+	7	0
+	+	13	0
+	+	14	17
+	+	7	14
+	+	14	0
+	+	13	20
+	+	14	16
+	+	13	0
+	+	22	14
+	+	7	37
+	+	12	48
+	+	12	0
+	+	9	0
+	+	12	38
+	+	14	0
+	+	12	0
+	+	11	0
+	+	18	0
+	+	14	0
+	+	16	34
+	+	13	17
+
+> ~\vimfiles\ftplugin\css.vim
+	*	1695801535	0
+	"	30	14
+	^	30	15
+	.	30	14
+	+	1	51
+	+	1	21
+	+	1	9
+	+	1	0
+	+	1	9
+	+	1	0
+	+	1	4
+	+	1	30
+	+	1	4
+	+	1	28
+	+	1	31
+	+	1	28
+	+	1	0
+	+	1	11
+	+	1	42
+	+	1	0
+	+	1	17
+	+	1	41
+	+	1	0
+	+	29	9
+	+	30	14
+
+> ~\Desktop\tailwind\output.css
+	*	1695801230	0
+	"	600	0
+
+> ~\Desktop\backup\volar-test\postcss.config.js
+	*	1695724660	0
+	"	1	0
+
+> ~\Desktop\tailwind\postcss.config.js
+	*	1695724660	0
+	"	3	0
+
+> ~\Documents\vuejs\template_cdn.html
+	*	1695724051	0
+	"	1	0
+	^	52	119
+	.	15	48
+	+	37	0
+	+	52	118
+	+	42	0
+	+	15	48
+
+> ~\Desktop\tailwind\dist\output.css
+	*	1695724017	0
+	"	563	2
+	.	1	0
+	+	1	0
+
+> ~\Desktop\tailwind\tailwind.config.js
+	*	1695721077	0
+	"	3	19
+	^	3	20
+	.	3	20
+	+	3	20
+
+> ~\Documents\vuejs\template_vue.html
+	*	1695717999	0
+	"	1	0
+	^	11	29
+	.	11	28
+	+	11	28
+
+> ~\Desktop\tailwind\css\sheet1.css
+	*	1695717657	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~\Desktop\website\sample_paragraphs.txt
+	*	1695717473	0
+	"	1	0
+	^	39	0
+	.	46	162
+	+	2	0
+	+	27	0
+	+	26	0
+	+	2	0
+	+	6	158
+	+	9	0
+	+	7	152
+	+	14	159
+	+	16	0
+	+	24	157
+	+	27	0
+	+	33	0
+	+	39	0
+	+	31	157
+	+	37	157
+	+	46	162
+
+> ~\Desktop\website\personal_code.html
+	*	1695717107	0
+	"	7	0
+	^	75	34
+	.	75	33
+	+	1	47
+	+	1	37
+	+	1	58
+	+	1	0
+	+	1	20
+	+	1	0
+	+	1	20
+	+	1	0
+	+	44	24
+	+	60	44
+	+	59	92
+	+	17	7
+	+	8	0
+	+	9	39
+	+	59	42
+	+	68	40
+	+	59	103
+	+	60	56
+	+	68	47
 	+	60	0
-	+	60	111
+	+	88	0
+	+	74	0
+	+	60	67
+	+	74	47
+	+	76	28
+	+	77	18
+	+	76	18
+	+	60	70
+	+	76	18
+	+	74	41
+	+	78	43
 	+	60	0
-	+	60	114
+	+	66	22
+	+	60	32
 	+	60	0
-	+	26	41
-	+	60	117
-	+	60	0
-	a	58	53
-	b	58	54
+	+	61	19
+	+	67	20
+	+	62	16
+	+	63	34
+	+	64	23
+	+	65	0
+	+	66	0
+	+	64	19
+	+	65	0
+	+	66	0
+	+	62	0
+	+	76	0
+	+	69	0
+	+	73	0
+	+	70	25
+	+	71	29
+	+	68	37
+	+	60	33
+	+	10	0
+	+	61	34
+	+	69	34
+	+	60	24
+	+	68	27
+	+	18	0
+	+	15	61
+	+	59	59
+	+	87	0
+	+	67	0
+	+	74	0
+	+	72	0
+	+	80	0
+	+	81	6
+	+	82	6
+	+	84	7
+	+	85	24
+	+	80	0
+	+	85	0
+	+	87	0
+	+	72	0
+	+	75	35
+	+	76	0
+	+	86	0
+	+	16	122
+	+	16	0
+	+	17	132
+	+	16	123
+	+	17	142
+	+	78	0
+	+	17	133
+	+	17	0
+	+	17	87
+	+	17	0
+	+	17	14
+	+	17	0
+	+	16	14
+	+	16	130
+	+	17	0
+	+	75	18
+	+	86	19
+	+	76	20
+	+	85	20
+	+	73	0
+	+	75	33
+
+> ~\Desktop\website\cookie_run.html
+	*	1695717059	0
+	"	4	31
+	^	130	77
+	.	130	76
+	+	163	61
+	+	154	0
+	+	171	0
+	+	19	39
+	+	17	34
+	+	19	38
+	+	17	32
+	+	23	0
+	+	19	48
+	+	20	41
+	+	17	62
+	+	19	65
+	+	20	50
+	+	17	72
+	+	19	0
+	+	17	33
+	+	18	44
+	+	17	0
+	+	18	51
+	+	17	69
+	+	19	56
+	+	20	40
+	+	17	33
+	+	15	76
+	+	16	0
+	+	15	76
+	+	17	0
+	+	160	55
+	+	167	33
+	+	170	16
+	+	169	0
+	+	168	31
+	+	13	46
+	+	12	43
+	+	34	45
+	+	41	61
+	+	67	61
+	+	41	54
+	+	67	54
+	+	34	45
+	+	12	41
+	+	158	0
+	+	156	55
+	+	168	24
+	+	114	0
+	+	114	54
+	+	114	119
+	+	114	120
+	+	114	0
+	+	114	120
+	+	114	22
+	+	114	0
+	+	114	22
+	+	114	0
+	+	114	67
+	+	114	26
+	+	114	0
+	+	114	262
+	+	114	0
+	+	115	0
+	+	82	0
+	+	81	0
+	+	109	24
+	+	112	20955
+	+	113	0
+	+	147	51
+	+	131	0
+	+	129	0
+	+	127	40
+	+	126	47
+	+	123	39
+	+	124	30
+	+	128	41
+	+	129	0
+	+	123	29
+	+	129	0
+	+	123	36
+	+	22	17
+	+	23	50
+	+	23	33
+	+	22	48
+	+	23	49
+	+	23	29
+	+	23	34
+	+	22	48
+	+	23	80
+	+	23	34
+	+	23	0
+	+	22	73
+	+	130	76
+	a	85	67
+	b	85	68
+
+> ~\.gitconfig
+	*	1695193934	0
+	"	12	60
+	^	11	37
+	.	12	21
+	+	8	0
+	+	11	36
+	+	12	21
+
+> ~\Documents\texts\access_token.txt
+	*	1695193930	0
+	"	28	0
+	^	28	40
+	.	27	3
+	+	27	5
+	+	28	39
+	+	27	3
+	a	27	3
+	b	27	4
 
 > ~\Desktop\website\tailwind.config.js
 	*	1695111845	0
@@ -31633,16 +32061,6 @@ $
 	"	1	0
 	.	1	0
 	+	1	0
-
-> ~\Documents\vuejs\template_cdn.html
-	*	1695100767	0
-	"	1	0
-	^	52	119
-	.	15	48
-	+	37	0
-	+	52	118
-	+	42	0
-	+	15	48
 
 > ~\vimfiles\template.html
 	*	1695100725	0
@@ -32183,110 +32601,6 @@ $
 	+	7	21
 	+	8	0
 
-> ~\Desktop\website\personal_code.html
-	*	1694573036	0
-	"	1	0
-	^	75	34
-	.	75	33
-	+	1	47
-	+	1	37
-	+	1	58
-	+	1	0
-	+	1	20
-	+	1	0
-	+	1	20
-	+	1	0
-	+	44	24
-	+	60	44
-	+	59	92
-	+	17	7
-	+	8	0
-	+	9	39
-	+	59	42
-	+	68	40
-	+	59	103
-	+	60	56
-	+	68	47
-	+	60	0
-	+	88	0
-	+	74	0
-	+	60	67
-	+	74	47
-	+	76	28
-	+	77	18
-	+	76	18
-	+	60	70
-	+	76	18
-	+	74	41
-	+	78	43
-	+	60	0
-	+	66	22
-	+	60	32
-	+	60	0
-	+	61	19
-	+	67	20
-	+	62	16
-	+	63	34
-	+	64	23
-	+	65	0
-	+	66	0
-	+	64	19
-	+	65	0
-	+	66	0
-	+	62	0
-	+	76	0
-	+	69	0
-	+	73	0
-	+	70	25
-	+	71	29
-	+	68	37
-	+	60	33
-	+	10	0
-	+	61	34
-	+	69	34
-	+	60	24
-	+	68	27
-	+	18	0
-	+	15	61
-	+	59	59
-	+	87	0
-	+	67	0
-	+	74	0
-	+	72	0
-	+	80	0
-	+	81	6
-	+	82	6
-	+	84	7
-	+	85	24
-	+	80	0
-	+	85	0
-	+	87	0
-	+	72	0
-	+	75	35
-	+	76	0
-	+	86	0
-	+	16	122
-	+	16	0
-	+	17	132
-	+	16	123
-	+	17	142
-	+	78	0
-	+	17	133
-	+	17	0
-	+	17	87
-	+	17	0
-	+	17	14
-	+	17	0
-	+	16	14
-	+	16	130
-	+	17	0
-	+	75	18
-	+	86	19
-	+	76	20
-	+	85	20
-	+	73	0
-	+	75	33
-
 > ~\Documents\AutoHotkey\[Plugins]
 	*	1694572829	0
 	"	1	0
@@ -32502,17 +32816,6 @@ $
 > ~\Desktop\Twitch\coffee-vps\code\knowledge\remote_knowledge.txt
 	*	1693521582	0
 	"	36	8
-
-> ~\Documents\texts\access_token.txt
-	*	1693521328	0
-	"	28	0
-	^	28	40
-	.	27	3
-	+	27	5
-	+	28	39
-	+	27	3
-	a	27	3
-	b	27	4
 
 > ~\Documents\test.py
 	*	1692966846	0
@@ -41734,30 +42037,6 @@ $
 	+	139	5
 	+	140	42
 
-> ~\vimfiles\ftplugin\css.vim
-	*	1684877126	0
-	"	1	0
-	.	1	0
-	+	1	51
-	+	1	21
-	+	1	9
-	+	1	0
-	+	1	9
-	+	1	0
-	+	1	4
-	+	1	30
-	+	1	4
-	+	1	28
-	+	1	31
-	+	1	28
-	+	1	0
-	+	1	11
-	+	1	42
-	+	1	0
-	+	1	17
-	+	1	41
-	+	1	0
-
 > ~\vimfiles\ftplugin\conceal.vim
 	*	1684877122	0
 	"	1	0
@@ -44651,13 +44930,6 @@ $
 	+	85	112
 	+	85	0
 
-> ~\Documents\vuejs\template_vue.html
-	*	1683795611	0
-	"	11	28
-	^	11	29
-	.	11	28
-	+	11	28
-
 > ~\Documents\vuejs\template.vue
 	*	1683795475	0
 	"	38	0
@@ -45768,15 +46040,6 @@ $
 > ~\Desktop\website\.git\hooks\post-commit
 	*	1675642855	0
 	"	1	0
-
-> ~\.gitconfig
-	*	1675641639	0
-	"	7	5
-	^	11	37
-	.	12	21
-	+	8	0
-	+	11	36
-	+	12	21
 
 > ~\Desktop\website\.\fonts\confluence\confluence.css
 	*	1675641318	0
@@ -53667,28 +53930,6 @@ $
 > C:\Program Files\Vim\vim82\doc\insert.txt
 	*	1659735813	0
 	"	1207	0
-
-> ~\Desktop\website\sample_paragraphs.txt
-	*	1659735187	0
-	"	1	0
-	^	39	0
-	.	46	162
-	+	2	0
-	+	27	0
-	+	26	0
-	+	2	0
-	+	6	158
-	+	9	0
-	+	7	152
-	+	14	159
-	+	16	0
-	+	24	157
-	+	27	0
-	+	33	0
-	+	39	0
-	+	31	157
-	+	37	157
-	+	46	162
 
 > ~\vimfiles\temp\220806.measure_cursor.v01.txt
 	*	1659733600	0
