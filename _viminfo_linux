@@ -11,37 +11,79 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/\C\<WitnessLoop\>
+~MSle0~/cookie_id
 
 # Last Substitute Search Pattern:
-~MSle0&teal
+~MSle0&\s*\d.*
 
 # Last Substitute String:
-$red
+$ 
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1695100885,,"q"
+|2,0,1699488981,,"q"
+:Template
+|2,0,1696455648,,"Template"
+:e Switcher.vue
+|2,0,1696455645,,"e Switcher.vue"
+:FIND Twi
+|2,0,1696454956,,"FIND Twi"
+:FIND A
+|2,0,1696454925,,"FIND A"
+:FIND Em
+|2,0,1696454923,,"FIND Em"
+:qa
+|2,0,1695210479,,"qa"
+:e tiers.sql
+|2,0,1695201805,,"e tiers.sql"
+:MRU sql
+|2,0,1695201797,,"MRU sql"
+:e cookies.sql
+|2,0,1695201697,,"e cookies.sql"
+:e 
+|2,0,1695201693,,"e "
+:nmap <space>
+|2,0,1695201400,,"nmap <space>"
+:map <space>
+|2,0,1695201388,,"map <space>"
+:e schema.txt
+|2,0,1695201328,,"e schema.txt"
+:call CocActionAsync("rename")
+|2,0,1695200353,,"call CocActionAsync(\"rename\")"
+:q!
+|2,0,1695198753,,"q!"
+:Enumerate
+|2,0,1695198494,,"Enumerate"
+:b!# | bd! #
+|2,0,1695198429,,"b!# | bd! #"
+:ToList
+|2,0,1695198424,,"ToList"
+:%s/\s*\d.*//
+|2,0,1695198417,,"%s/\\s*\\d.*//"
+:enew
+|2,0,1695198314,,"enew"
+:w
+|2,0,1695197295,,"w"
+:'<,'>v/cate/d
+|2,0,1695196751,,"'<,'>v/cate/d"
+:C
+|2,0,1695189270,,"C"
+:term pip install -r requirements.txt
+|2,0,1695189226,,"term pip install -r requirements.txt"
+:e requirements.txt
+|2,0,1695189111,,"e requirements.txt"
+:MRU genp
+|2,0,1695188954,,"MRU genp"
 :bd!
 |2,0,1695096325,,"bd!"
-:qa
-|2,0,1695096278,,"qa"
-:b!# | bd! #
-|2,0,1695096277,,"b!# | bd! #"
 : ;
 |2,0,1694907065,," ;"
 :b Rian.vue
 |2,0,1694906167,,"b Rian.vue"
-:FIND A
-|2,0,1694906135,,"FIND A"
 :FIND 
 |2,0,1694906131,,"FIND "
 :find
 |2,0,1694906130,,"find"
-:e 
-|2,0,1694906129,,"e "
-:Template
-|2,0,1694906123,,"Template"
 :e Rian.vue
 |2,0,1694906121,,"e Rian.vue"
 :%s/teal/red/g
@@ -62,8 +104,6 @@ $red
 |2,0,1694701405,,"diffoff"
 :diffthis
 |2,0,1694701400,,"diffthis"
-:enew
-|2,0,1694701389,,"enew"
 :find videos.sql
 |2,0,1694701316,,"find videos.sql"
 :esche
@@ -90,8 +130,6 @@ $red
 |2,0,1694419391,,"terminal (cd .. && python)"
 :terminal cd .. && python
 |2,0,1694419379,,"terminal cd .. && python"
-:q!
-|2,0,1694419376,,"q!"
 :terminal cd ..
 |2,0,1694419374,,"terminal cd .."
 :terminal pwd
@@ -368,8 +406,6 @@ $red
 |2,0,1694107462,,"PFVR"
 :map ga
 |2,0,1694107459,,"map ga"
-:FIND Em
-|2,0,1694107448,,"FIND Em"
 :dd
 |2,0,1694107313,,"dd"
 :set number
@@ -442,8 +478,6 @@ $red
 |2,0,1694096027,,"MRU Actio"
 :MRU 6:README.md
 |2,0,1694096023,,"MRU 6:README.md"
-:w
-|2,0,1694095894,,"w"
 :c
 |2,0,1694095861,,"c"
 :FI mru.vim
@@ -824,8 +858,6 @@ $red
 |2,0,1694034602,,"e 5WtJH"
 :e curler.py
 |2,0,1694034220,,"e curler.py"
-:e requirements.txt
-|2,0,1694033201,,"e requirements.txt"
 :!
 |2,0,1694033124,,"!"
 :alias 
@@ -874,8 +906,6 @@ $red
 |2,0,1693665464,,"h $VIM_TERMINAL"
 :h VIM_TERMINAL
 |2,0,1693665461,,"h VIM_TERMINAL"
-:call CocActionAsync("rename")
-|2,0,1693665375,,"call CocActionAsync(\"rename\")"
 :map <Leader>ca <Plug>(coc-codeaction-selected) 
 |2,0,1693665359,,"map <Leader>ca <Plug>(coc-codeaction-selected) "
 :n
@@ -1348,8 +1378,6 @@ $red
 |2,0,1693083239,,"MRU se"
 :saveas s2.sh
 |2,0,1693082162,,"saveas s2.sh"
-:MRU sql
-|2,0,1693071253,,"MRU sql"
 :kkkkkkkkklllllllllll
 |2,0,1693071243,,"kkkkkkkkklllllllllll"
 :MRU movie
@@ -1474,8 +1502,6 @@ $red
 |2,0,1692908922,,"e test.html"
 :MRU actions.html
 |2,0,1692908887,,"MRU actions.html"
-:ToList
-|2,0,1692907974,,"ToList"
 :ALEEnable
 |2,0,1692907560,,"ALEEnable"
 :358
@@ -2544,8 +2570,6 @@ $red
 |2,0,1691527150,,"Term"
 :158
 |2,0,1691525304,,"158"
-:C
-|2,0,1691494668,,"C"
 :!node ytjs.js
 |2,0,1691494264,,"!node ytjs.js"
 :MRU goto
@@ -2776,8 +2800,6 @@ $red
 |2,0,1690938329,,"colo apprentice"
 :grep print_formatted -g *.py 
 |2,0,1690938302,,"grep print_formatted -g *.py "
-:Enumerate
-|2,0,1690938234,,"Enumerate"
 :e flask-vue/requirements.txt
 |2,0,1690935363,,"e flask-vue/requirements.txt"
 :5369
@@ -3774,6 +3796,30 @@ $red
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/\C\<Coo\>
+|2,1,1695201378,47,"\\C\\<Coo\\>"
+? ,  \ze]
+|2,1,1695198424,,",  \\ze]"
+? \s*\d.*
+|2,1,1695198417,,"\\s*\\d.*"
+?/BTS
+|2,1,1695198209,47,"BTS"
+? cate
+|2,1,1695196751,,"cate"
+?/tr
+|2,1,1695191407,47,"tr"
+?/row
+|2,1,1695191026,47,"row"
+?/title
+|2,1,1695190984,47,"title"
+? in \zs[^:]\+
+|2,1,1695189965,,"in \\zs[^:]\\+"
+?/<a href
+|2,1,1695189639,47,"<a href"
+? timer\..*\"BeautifulSoup\"
+|2,1,1695189451,,"timer\\..*\\\"BeautifulSoup\\\""
+?/import aiohttp
+|2,1,1695189405,47,"import aiohttp"
 ? teal
 |2,1,1694905991,,"teal"
 ?/teal
@@ -4042,8 +4088,6 @@ $red
 |2,1,1692911031,47,"^\\s*@app.route([\"']\\/clips\\/pagecount"
 ?/static_folder
 |2,1,1692910527,47,"static_folder"
-? ,  \ze]
-|2,1,1692907974,,",  \\ze]"
 ?/import aiohtt
 |2,1,1692907793,47,"import aiohtt"
 ? timer\..*\"to_dict\"
@@ -4320,8 +4364,6 @@ $red
 |2,1,1691669962,47,"dark:"
 ?/READY
 |2,1,1691665912,47,"READY"
-?/title
-|2,1,1691586948,47,"title"
 ?/snip
 |2,1,1691586559,47,"snip"
 ?/fuslie
@@ -4558,8 +4600,6 @@ $red
 |2,1,1690944467,47,"actualStartTime"
 ?/print_formatted
 |2,1,1690938267,47,"print_formatted"
-? in \zs[^:]\+
-|2,1,1690938234,,"in \\zs[^:]\\+"
 ?/img
 |2,1,1690924777,47,"img"
 ?/blue
@@ -5092,6 +5132,12 @@ $red
 |2,2,1688309303,,"v:oldfiles"
 
 # Input Line History (newest to oldest):
+@normalize_link
+|2,3,1695201454,,"normalize_link"
+@list
+|2,3,1695198635,,"list"
+@enumerate_count
+|2,3,1695198510,,"enumerate_count"
 @div>
 |2,3,1694906190,,"div>"
 @ic
@@ -5160,141 +5206,60 @@ $red
 |2,4,1693311567,,"cont"
 
 # Registers:
-""0	CHAR	0
-	print_message_with_coloring
-|3,1,0,0,1,0,1694907120,"print_message_with_coloring"
+"0	CHAR	0
+	INTEGER
+|3,0,0,0,1,0,1695201872,"INTEGER"
 "1	LINE	0
-	def print_message_with_coloring(message):
-	    print(f"\033[1;32;40m{message}\033[0m")
-|3,0,1,1,2,0,1694907095,"def print_message_with_coloring(message):","    print(f\"\\033[1;32;40m{message}\\033[0m\")"
+	// If being imported by *.html then use this
+	// export { createApp } from 'vue'
+	export default {
+	    props: [],
+	    emits: [],
+	    components: {
+	
+	    },
+	    data() {
+	        return { 
+	        }
+	    },
+	    methods: {
+	    },
+	    computed: {
+	    },
+	    mounted() {
+	    },
+	    updated() {
+	    },
+	    watch: {
+	    },
+	}
+|3,0,1,1,23,0,1696455654,"// If being imported by *.html then use this","// export { createApp } from 'vue'","export default {","    props: [],","    emits: [],","    components: {","","    },","    data() {","        return { ","        }","    },","    methods: {","    },","    computed: {","    },","    mounted() {","    },","    updated() {","    },","    watch: {","    },","}"
 "2	LINE	0
-	def print_message(message):
-|3,0,2,1,1,0,1694907070,"def print_message(message):"
+	
+|3,0,2,1,1,0,1696454942,""
 "3	LINE	0
-	    print(message)
-|3,0,3,1,1,0,1694907068,"    print(message)"
+	
+|3,0,3,1,1,0,1695201930,""
 "4	LINE	0
-	    capitalize() {
-	      return this.name.toUpperCase()
-	    }
-|3,0,4,1,3,0,1694906964,"    capitalize() {","      return this.name.toUpperCase()","    }"
+	    F
+|3,0,4,1,1,0,1695201903,"    F"
 "5	LINE	0
-	  filters: {
-	    capitalize(value) {
-	      return value.toUpperCase()
-	    }
-	  }
-|3,0,5,1,5,0,1694906938,"  filters: {","    capitalize(value) {","      return value.toUpperCase()","    }","  }"
+	CREATE 
+|3,0,5,1,1,0,1695201787,"CREATE "
 "6	LINE	0
-	<style>
-	
-	@tailwind base;
-	@tailwind components;
-	@tailwind utilities;
-	@layer utilities {
-	}
-	</style>
-	
-	<script>
-	// If being imported by *.html then use this
-	// export { createApp } from 'vue'
-	export default {
-	    props: [],
-	    emits: [],
-	    components: {
-	
-	    },
-	    data() {
-	        return { 
-	            number: 0
-	        }
-	    },
-	    methods: {
-	    },
-	    computed: {
-	    },
-	    mounted() {
-	    },
-	    updated() {
-	    },
-	    watch: {
-	    },
-	}
-	</script>
-	
-	<template>
-	    gg
-	</template>
 	
 	
-|3,0,6,1,41,0,1694906857,"<style>","","@tailwind base;","@tailwind components;","@tailwind utilities;","@layer utilities {","}","</style>","","<script>","// If being imported by *.html then use this","// export { createApp } from 'vue'","export default {","    props: [],","    emits: [],","    components: {","","    },","    data() {","        return { ","            number: 0","        }","    },","    methods: {","    },","    computed: {","    },",>17
-|<"    mounted() {","    },","    updated() {","    },","    watch: {","    },","}","</script>","","<template>","    gg","</template>","",""
+|3,0,6,1,2,0,1695201681,"",""
 "7	LINE	0
-	    <!-- generate a page that tak
-|3,0,7,1,1,0,1694906855,"    <!-- generate a page that tak"
+	            hrefs_set.update([ cookie.link for cookie in cookies ])
+	
+|3,0,7,1,2,0,1695201680,"            hrefs_set.update([ cookie.link for cookie in cookies ])",""
 "8	LINE	0
-	    <div class="p-2 bg-red-900 text-white">
-	        <h1>Hi I'm Rian</h1>
-	        <p>The Number is {{ number }}</p>
-	        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" @click="number--">Decrement</button>
-	        <p>Twice times the number is: {{ number * 2 }}</p>
-	        <p>Thrice times the number is: {{ number * 3 }}</p>
-	        <p>Four times the number is: {{ number * 4 }}</p>
-	    </div>
-|3,0,8,1,8,0,1694906846,"    <div class=\"p-2 bg-red-900 text-white\">","        <h1>Hi I'm Rian</h1>","        <p>The Number is {{ number }}</p>","        <button class=\"bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded\" @click=\"number--\">Decrement</button>","        <p>Twice times the number is: {{ number * 2 }}</p>","        <p>Thrice times the number is: {{ number * 3 }}</p>",>59
-|<"        <p>Four times the number is: {{ number * 4 }}</p>","    </div>"
+	        print()
+|3,0,8,1,1,0,1695201678,"        print()"
 "9	LINE	0
-	<style>
-	
-	@tailwind base;
-	@tailwind components;
-	@tailwind utilities;
-	@layer utilities {
-	}
-	</style>
-	
-	<script>
-	// If being imported by *.html then use this
-	// export { createApp } from 'vue'
-	export default {
-	    props: [],
-	    emits: [],
-	    components: {
-	
-	    },
-	    data() {
-	        return { 
-	            number: 0
-	        }
-	    },
-	    methods: {
-	    },
-	    computed: {
-	    },
-	    mounted() {
-	    },
-	    updated() {
-	    },
-	    watch: {
-	    },
-	}
-	</script>
-	
-	<template>
-	    <div class="p-2 bg-red-900 text-white">
-	        <h1>Hi I'm Rian</h1>
-	        <p>The Number is {{ number }}</p>
-	        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" @click="number--">Decrement</button>
-	        <p>Twice times the number is: {{ number * 2 }}</p>
-	        <p>Thrice times the number is: {{ number * 3 }}</p>
-	        <p>Four times the number is: {{ number * 4 }}</p>
-	    </div>
-	</template>
-	
-	
-|3,0,9,1,48,0,1694906837,"<style>","","@tailwind base;","@tailwind components;","@tailwind utilities;","@layer utilities {","}","</style>","","<script>","// If being imported by *.html then use this","// export { createApp } from 'vue'","export default {","    props: [],","    emits: [],","    components: {","","    },","    data() {","        return { ","            number: 0","        }","    },","    methods: {","    },","    computed: {","    },",>17
-|<"    mounted() {","    },","    updated() {","    },","    watch: {","    },","}","</script>","","<template>","    <div class=\"p-2 bg-red-900 text-white\">","        <h1>Hi I'm Rian</h1>","        <p>The Number is {{ number }}</p>","        <button class=\"bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded\" @click=\"number--\">Decrement</button>","        <p>Twice times the number is: {{ number * 2 }}</p>",>61
-|<"        <p>Thrice times the number is: {{ number * 3 }}</p>","        <p>Four times the number is: {{ number * 4 }}</p>","    </div>","</template>","",""
+	        print()
+|3,0,9,1,1,0,1695201672,"        print()"
 "a	CHAR	0
 	0;veykwjcw{ "route": jkp
 |3,0,10,0,1,0,1694049664,"0;veykwjcw{ \"route\": jkp"
@@ -5311,238 +5276,616 @@ $red
 	    endfor
 	    return results
 |3,0,28,1,8,0,1694047383,"    let i = 0","    for path in relpaths","        if path =~? a:ArgLead","            call add(results, basenames[i])","        endif","        let i += 1","    endfor","    return results"
-"-	CHAR	0
-	print_message_with_coloring
-|3,0,36,0,1,0,1694907117,"print_message_with_coloring"
+""-	CHAR	0
+	 
+|3,1,36,0,1,0,1696455660," "
 
 # File marks:
-'0  1  0  ~/.vim/.vimspector.json
-|4,48,1,0,1695100885,"~/.vim/.vimspector.json"
-'1  1  0  ~/.vim/.vimspector.json
-|4,49,1,0,1695100876,"~/.vim/.vimspector.json"
-'2  20  0  ~/frontend/src/components/Rian.vue
-|4,50,20,0,1695096327,"~/frontend/src/components/Rian.vue"
-'3  20  0  ~/frontend/src/components/Rian.vue
-|4,51,20,0,1695096327,"~/frontend/src/components/Rian.vue"
-'4  20  0  ~/frontend/src/components/Rian.vue
-|4,52,20,0,1695096327,"~/frontend/src/components/Rian.vue"
-'5  20  0  ~/frontend/src/components/Rian.vue
-|4,53,20,0,1695096327,"~/frontend/src/components/Rian.vue"
-'6  5  25  ~/frontend/src/components/Rian.vue
-|4,54,5,25,1694907003,"~/frontend/src/components/Rian.vue"
-'7  5  25  ~/frontend/src/components/Rian.vue
-|4,55,5,25,1694907003,"~/frontend/src/components/Rian.vue"
-'8  5  25  ~/frontend/src/components/Rian.vue
-|4,56,5,25,1694907003,"~/frontend/src/components/Rian.vue"
-'9  5  25  ~/frontend/src/components/Rian.vue
-|4,57,5,25,1694907003,"~/frontend/src/components/Rian.vue"
+'0  1  0  ~/.config/secrets.sh
+|4,48,1,0,1699488981,"~/.config/secrets.sh"
+'1  1  0  ~/.config/nushell/config.nu
+|4,49,1,0,1699488855,"~/.config/nushell/config.nu"
+'2  1  0  ~/.config/nushell/config.nu
+|4,50,1,0,1699488855,"~/.config/nushell/config.nu"
+'3  1  0  ~/.config/nushell/env.nu
+|4,51,1,0,1699488843,"~/.config/nushell/env.nu"
+'4  1  0  ~/.config/nushell/env.nu
+|4,52,1,0,1699488843,"~/.config/nushell/env.nu"
+'5  1  0  ~/.config/nushell/env.nu
+|4,53,1,0,1699488843,"~/.config/nushell/env.nu"
+'6  1  0  ~/.config/nushell/env.nu
+|4,54,1,0,1699488843,"~/.config/nushell/env.nu"
+'7  1  0  ~/.config/nushell/history.txt
+|4,55,1,0,1699488836,"~/.config/nushell/history.txt"
+'8  1  0  ~/.config/nushell/history.txt
+|4,56,1,0,1699488836,"~/.config/nushell/history.txt"
+'9  1  0  ~/.config/nushell/history.txt
+|4,57,1,0,1699488836,"~/.config/nushell/history.txt"
 
 # Jumplist (newest first):
--'  1  0  ~/.vim/.vimspector.json
-|4,39,1,0,1695100885,"~/.vim/.vimspector.json"
--'  1  0  ~/.vim/.vimspector.json
-|4,39,1,0,1695100876,"~/.vim/.vimspector.json"
--'  20  0  ~/frontend/src/components/Rian.vue
-|4,39,20,0,1695096327,"~/frontend/src/components/Rian.vue"
--'  20  0  ~/frontend/src/components/Rian.vue
-|4,39,20,0,1695096327,"~/frontend/src/components/Rian.vue"
--'  20  0  ~/frontend/src/components/Rian.vue
-|4,39,20,0,1695096327,"~/frontend/src/components/Rian.vue"
--'  25  24  ~/Twitch/coffee-vps/code/test.py
-|4,39,25,24,1694907120,"~/Twitch/coffee-vps/code/test.py"
--'  25  24  ~/Twitch/coffee-vps/code/test.py
-|4,39,25,24,1694907120,"~/Twitch/coffee-vps/code/test.py"
--'  25  24  ~/Twitch/coffee-vps/code/test.py
-|4,39,25,24,1694907120,"~/Twitch/coffee-vps/code/test.py"
--'  25  24  ~/Twitch/coffee-vps/code/test.py
-|4,39,25,24,1694907120,"~/Twitch/coffee-vps/code/test.py"
--'  17  40  ~/Twitch/coffee-vps/code/test.py
-|4,39,17,40,1694907100,"~/Twitch/coffee-vps/code/test.py"
--'  17  40  ~/Twitch/coffee-vps/code/test.py
-|4,39,17,40,1694907100,"~/Twitch/coffee-vps/code/test.py"
--'  17  40  ~/Twitch/coffee-vps/code/test.py
-|4,39,17,40,1694907100,"~/Twitch/coffee-vps/code/test.py"
--'  17  40  ~/Twitch/coffee-vps/code/test.py
-|4,39,17,40,1694907100,"~/Twitch/coffee-vps/code/test.py"
--'  21  0  ~/Twitch/coffee-vps/code/test.py
-|4,39,21,0,1694907080,"~/Twitch/coffee-vps/code/test.py"
--'  21  0  ~/Twitch/coffee-vps/code/test.py
-|4,39,21,0,1694907080,"~/Twitch/coffee-vps/code/test.py"
--'  21  0  ~/Twitch/coffee-vps/code/test.py
-|4,39,21,0,1694907080,"~/Twitch/coffee-vps/code/test.py"
--'  21  0  ~/Twitch/coffee-vps/code/test.py
-|4,39,21,0,1694907080,"~/Twitch/coffee-vps/code/test.py"
--'  26  0  ~/Twitch/coffee-vps/code/test.py
-|4,39,26,0,1694907058,"~/Twitch/coffee-vps/code/test.py"
--'  26  0  ~/Twitch/coffee-vps/code/test.py
-|4,39,26,0,1694907058,"~/Twitch/coffee-vps/code/test.py"
--'  26  0  ~/Twitch/coffee-vps/code/test.py
-|4,39,26,0,1694907058,"~/Twitch/coffee-vps/code/test.py"
--'  26  0  ~/Twitch/coffee-vps/code/test.py
-|4,39,26,0,1694907058,"~/Twitch/coffee-vps/code/test.py"
--'  1  0  ~/Twitch/coffee-vps/code/test.py
-|4,39,1,0,1694907015,"~/Twitch/coffee-vps/code/test.py"
--'  1  0  ~/Twitch/coffee-vps/code/test.py
-|4,39,1,0,1694907015,"~/Twitch/coffee-vps/code/test.py"
--'  1  0  ~/Twitch/coffee-vps/code/test.py
-|4,39,1,0,1694907015,"~/Twitch/coffee-vps/code/test.py"
--'  1  0  ~/Twitch/coffee-vps/code/test.py
-|4,39,1,0,1694907015,"~/Twitch/coffee-vps/code/test.py"
--'  5  25  ~/frontend/src/components/Rian.vue
-|4,39,5,25,1694907003,"~/frontend/src/components/Rian.vue"
--'  5  25  ~/frontend/src/components/Rian.vue
-|4,39,5,25,1694907003,"~/frontend/src/components/Rian.vue"
--'  5  25  ~/frontend/src/components/Rian.vue
-|4,39,5,25,1694907003,"~/frontend/src/components/Rian.vue"
--'  5  25  ~/frontend/src/components/Rian.vue
-|4,39,5,25,1694907003,"~/frontend/src/components/Rian.vue"
--'  5  25  ~/frontend/src/components/Rian.vue
-|4,39,5,25,1694907003,"~/frontend/src/components/Rian.vue"
--'  20  2  ~/frontend/src/components/Rian.vue
-|4,39,20,2,1694906990,"~/frontend/src/components/Rian.vue"
--'  20  2  ~/frontend/src/components/Rian.vue
-|4,39,20,2,1694906990,"~/frontend/src/components/Rian.vue"
--'  19  6  ~/frontend/src/components/Rian.vue
-|4,39,19,6,1694906969,"~/frontend/src/components/Rian.vue"
--'  19  6  ~/frontend/src/components/Rian.vue
-|4,39,19,6,1694906969,"~/frontend/src/components/Rian.vue"
--'  19  6  ~/frontend/src/components/Rian.vue
-|4,39,19,6,1694906969,"~/frontend/src/components/Rian.vue"
--'  19  6  ~/frontend/src/components/Rian.vue
-|4,39,19,6,1694906969,"~/frontend/src/components/Rian.vue"
--'  19  6  ~/frontend/src/components/Rian.vue
-|4,39,19,6,1694906969,"~/frontend/src/components/Rian.vue"
--'  6  7  ~/frontend/src/components/Rian.vue
-|4,39,6,7,1694906959,"~/frontend/src/components/Rian.vue"
--'  6  7  ~/frontend/src/components/Rian.vue
-|4,39,6,7,1694906959,"~/frontend/src/components/Rian.vue"
--'  6  7  ~/frontend/src/components/Rian.vue
-|4,39,6,7,1694906959,"~/frontend/src/components/Rian.vue"
--'  6  7  ~/frontend/src/components/Rian.vue
-|4,39,6,7,1694906959,"~/frontend/src/components/Rian.vue"
--'  6  7  ~/frontend/src/components/Rian.vue
-|4,39,6,7,1694906959,"~/frontend/src/components/Rian.vue"
--'  8  0  ~/frontend/src/components/Rian.vue
-|4,39,8,0,1694906917,"~/frontend/src/components/Rian.vue"
--'  8  0  ~/frontend/src/components/Rian.vue
-|4,39,8,0,1694906917,"~/frontend/src/components/Rian.vue"
--'  8  0  ~/frontend/src/components/Rian.vue
-|4,39,8,0,1694906917,"~/frontend/src/components/Rian.vue"
--'  8  0  ~/frontend/src/components/Rian.vue
-|4,39,8,0,1694906917,"~/frontend/src/components/Rian.vue"
--'  8  0  ~/frontend/src/components/Rian.vue
-|4,39,8,0,1694906917,"~/frontend/src/components/Rian.vue"
--'  1  75  ~/frontend/src/components/Rian.vue
-|4,39,1,75,1694906916,"~/frontend/src/components/Rian.vue"
--'  1  75  ~/frontend/src/components/Rian.vue
-|4,39,1,75,1694906916,"~/frontend/src/components/Rian.vue"
--'  1  75  ~/frontend/src/components/Rian.vue
-|4,39,1,75,1694906916,"~/frontend/src/components/Rian.vue"
--'  1  75  ~/frontend/src/components/Rian.vue
-|4,39,1,75,1694906916,"~/frontend/src/components/Rian.vue"
--'  1  75  ~/frontend/src/components/Rian.vue
-|4,39,1,75,1694906916,"~/frontend/src/components/Rian.vue"
--'  23  0  ~/frontend/src/components/Rian.vue
-|4,39,23,0,1694906912,"~/frontend/src/components/Rian.vue"
--'  23  0  ~/frontend/src/components/Rian.vue
-|4,39,23,0,1694906912,"~/frontend/src/components/Rian.vue"
--'  23  0  ~/frontend/src/components/Rian.vue
-|4,39,23,0,1694906912,"~/frontend/src/components/Rian.vue"
--'  23  0  ~/frontend/src/components/Rian.vue
-|4,39,23,0,1694906912,"~/frontend/src/components/Rian.vue"
--'  23  0  ~/frontend/src/components/Rian.vue
-|4,39,23,0,1694906912,"~/frontend/src/components/Rian.vue"
--'  2  5  ~/frontend/src/components/Rian.vue
-|4,39,2,5,1694906857,"~/frontend/src/components/Rian.vue"
--'  2  5  ~/frontend/src/components/Rian.vue
-|4,39,2,5,1694906857,"~/frontend/src/components/Rian.vue"
--'  2  5  ~/frontend/src/components/Rian.vue
-|4,39,2,5,1694906857,"~/frontend/src/components/Rian.vue"
--'  2  5  ~/frontend/src/components/Rian.vue
-|4,39,2,5,1694906857,"~/frontend/src/components/Rian.vue"
--'  2  5  ~/frontend/src/components/Rian.vue
-|4,39,2,5,1694906857,"~/frontend/src/components/Rian.vue"
--'  145  0  ~/frontend/src/components/Portion.vue
-|4,39,145,0,1694906167,"~/frontend/src/components/Portion.vue"
--'  145  0  ~/frontend/src/components/Portion.vue
-|4,39,145,0,1694906167,"~/frontend/src/components/Portion.vue"
--'  145  0  ~/frontend/src/components/Portion.vue
-|4,39,145,0,1694906167,"~/frontend/src/components/Portion.vue"
--'  145  0  ~/frontend/src/components/Portion.vue
-|4,39,145,0,1694906167,"~/frontend/src/components/Portion.vue"
--'  145  0  ~/frontend/src/components/Portion.vue
-|4,39,145,0,1694906167,"~/frontend/src/components/Portion.vue"
--'  20  4  ~/frontend/src/components/Portion.vue
-|4,39,20,4,1694906164,"~/frontend/src/components/Portion.vue"
--'  20  4  ~/frontend/src/components/Portion.vue
-|4,39,20,4,1694906164,"~/frontend/src/components/Portion.vue"
--'  20  4  ~/frontend/src/components/Portion.vue
-|4,39,20,4,1694906164,"~/frontend/src/components/Portion.vue"
--'  20  4  ~/frontend/src/components/Portion.vue
-|4,39,20,4,1694906164,"~/frontend/src/components/Portion.vue"
--'  20  4  ~/frontend/src/components/Portion.vue
-|4,39,20,4,1694906164,"~/frontend/src/components/Portion.vue"
--'  23  39  ~/frontend/src/Actions.vue
-|4,39,23,39,1694906163,"~/frontend/src/Actions.vue"
--'  23  39  ~/frontend/src/Actions.vue
-|4,39,23,39,1694906163,"~/frontend/src/Actions.vue"
--'  23  39  ~/frontend/src/Actions.vue
-|4,39,23,39,1694906163,"~/frontend/src/Actions.vue"
--'  23  39  ~/frontend/src/Actions.vue
-|4,39,23,39,1694906163,"~/frontend/src/Actions.vue"
--'  23  39  ~/frontend/src/Actions.vue
-|4,39,23,39,1694906163,"~/frontend/src/Actions.vue"
--'  133  32  ~/frontend/src/components/Portion.vue
-|4,39,133,32,1694906002,"~/frontend/src/components/Portion.vue"
--'  133  32  ~/frontend/src/components/Portion.vue
-|4,39,133,32,1694906002,"~/frontend/src/components/Portion.vue"
--'  133  32  ~/frontend/src/components/Portion.vue
-|4,39,133,32,1694906002,"~/frontend/src/components/Portion.vue"
--'  133  32  ~/frontend/src/components/Portion.vue
-|4,39,133,32,1694906002,"~/frontend/src/components/Portion.vue"
--'  133  32  ~/frontend/src/components/Portion.vue
-|4,39,133,32,1694906002,"~/frontend/src/components/Portion.vue"
--'  89  32  ~/frontend/src/components/Portion.vue
-|4,39,89,32,1694905991,"~/frontend/src/components/Portion.vue"
--'  89  32  ~/frontend/src/components/Portion.vue
-|4,39,89,32,1694905991,"~/frontend/src/components/Portion.vue"
--'  89  32  ~/frontend/src/components/Portion.vue
-|4,39,89,32,1694905991,"~/frontend/src/components/Portion.vue"
--'  89  32  ~/frontend/src/components/Portion.vue
-|4,39,89,32,1694905991,"~/frontend/src/components/Portion.vue"
--'  89  32  ~/frontend/src/components/Portion.vue
-|4,39,89,32,1694905991,"~/frontend/src/components/Portion.vue"
--'  1  0  ~/frontend/src/components/Portion.vue
-|4,39,1,0,1694905974,"~/frontend/src/components/Portion.vue"
--'  1  0  ~/frontend/src/components/Portion.vue
-|4,39,1,0,1694905974,"~/frontend/src/components/Portion.vue"
--'  1  0  ~/frontend/src/components/Portion.vue
-|4,39,1,0,1694905974,"~/frontend/src/components/Portion.vue"
--'  1  0  ~/frontend/src/components/Portion.vue
-|4,39,1,0,1694905974,"~/frontend/src/components/Portion.vue"
--'  1  0  ~/frontend/src/components/Portion.vue
-|4,39,1,0,1694905974,"~/frontend/src/components/Portion.vue"
--'  212  23  ~/frontend/src/Actions.vue
-|4,39,212,23,1694905534,"~/frontend/src/Actions.vue"
--'  207  23  ~/frontend/src/Actions.vue
-|4,39,207,23,1694905534,"~/frontend/src/Actions.vue"
--'  212  23  ~/frontend/src/Actions.vue
-|4,39,212,23,1694905534,"~/frontend/src/Actions.vue"
--'  207  23  ~/frontend/src/Actions.vue
-|4,39,207,23,1694905534,"~/frontend/src/Actions.vue"
--'  212  23  ~/frontend/src/Actions.vue
-|4,39,212,23,1694905534,"~/frontend/src/Actions.vue"
--'  207  23  ~/frontend/src/Actions.vue
-|4,39,207,23,1694905534,"~/frontend/src/Actions.vue"
--'  212  23  ~/frontend/src/Actions.vue
-|4,39,212,23,1694905534,"~/frontend/src/Actions.vue"
--'  207  23  ~/frontend/src/Actions.vue
-|4,39,207,23,1694905534,"~/frontend/src/Actions.vue"
+-'  1  0  ~/.config/secrets.sh
+|4,39,1,0,1699488981,"~/.config/secrets.sh"
+-'  1  0  ~/.config/nushell/config.nu
+|4,39,1,0,1699488855,"~/.config/nushell/config.nu"
+-'  1  0  ~/.config/nushell/config.nu
+|4,39,1,0,1699488855,"~/.config/nushell/config.nu"
+-'  1  0  ~/.config/nushell/env.nu
+|4,39,1,0,1699488843,"~/.config/nushell/env.nu"
+-'  1  0  ~/.config/nushell/env.nu
+|4,39,1,0,1699488843,"~/.config/nushell/env.nu"
+-'  1  0  ~/.config/nushell/env.nu
+|4,39,1,0,1699488843,"~/.config/nushell/env.nu"
+-'  1  0  ~/.config/nushell/history.txt
+|4,39,1,0,1699488836,"~/.config/nushell/history.txt"
+-'  1  0  ~/.config/nushell/history.txt
+|4,39,1,0,1699488836,"~/.config/nushell/history.txt"
+-'  1  0  ~/.config/nushell/history.txt
+|4,39,1,0,1699488836,"~/.config/nushell/history.txt"
+-'  1  0  ~/.config/nushell/history.txt
+|4,39,1,0,1699488836,"~/.config/nushell/history.txt"
+-'  1  0  ~/.config/fish/fish_plugins
+|4,39,1,0,1699488813,"~/.config/fish/fish_plugins"
+-'  1  0  ~/.config/fish/fish_plugins
+|4,39,1,0,1699488813,"~/.config/fish/fish_plugins"
+-'  1  0  ~/.config/fish/fish_plugins
+|4,39,1,0,1699488813,"~/.config/fish/fish_plugins"
+-'  1  0  ~/.config/fish/fish_plugins
+|4,39,1,0,1699488813,"~/.config/fish/fish_plugins"
+-'  1  0  ~/.config/fish/fish_plugins
+|4,39,1,0,1699488813,"~/.config/fish/fish_plugins"
+-'  7  0  ~/.config/fish/fish_variables
+|4,39,7,0,1699488807,"~/.config/fish/fish_variables"
+-'  7  0  ~/.config/fish/fish_variables
+|4,39,7,0,1699488807,"~/.config/fish/fish_variables"
+-'  7  0  ~/.config/fish/fish_variables
+|4,39,7,0,1699488807,"~/.config/fish/fish_variables"
+-'  7  0  ~/.config/fish/fish_variables
+|4,39,7,0,1699488807,"~/.config/fish/fish_variables"
+-'  7  0  ~/.config/fish/fish_variables
+|4,39,7,0,1699488807,"~/.config/fish/fish_variables"
+-'  7  0  ~/.config/fish/fish_variables
+|4,39,7,0,1699488807,"~/.config/fish/fish_variables"
+-'  1  0  ~/.config/fish/fish_variables
+|4,39,1,0,1699488804,"~/.config/fish/fish_variables"
+-'  1  0  ~/.config/fish/fish_variables
+|4,39,1,0,1699488804,"~/.config/fish/fish_variables"
+-'  1  0  ~/.config/fish/fish_variables
+|4,39,1,0,1699488804,"~/.config/fish/fish_variables"
+-'  1  0  ~/.config/fish/fish_variables
+|4,39,1,0,1699488804,"~/.config/fish/fish_variables"
+-'  1  0  ~/.config/fish/fish_variables
+|4,39,1,0,1699488804,"~/.config/fish/fish_variables"
+-'  1  0  ~/.config/fish/fish_variables
+|4,39,1,0,1699488804,"~/.config/fish/fish_variables"
+-'  10  7  ~/frontend/src/components/Switcher.vue
+|4,39,10,7,1696456489,"~/frontend/src/components/Switcher.vue"
+-'  10  7  ~/frontend/src/components/Switcher.vue
+|4,39,10,7,1696456489,"~/frontend/src/components/Switcher.vue"
+-'  10  7  ~/frontend/src/components/Switcher.vue
+|4,39,10,7,1696456489,"~/frontend/src/components/Switcher.vue"
+-'  10  7  ~/frontend/src/components/Switcher.vue
+|4,39,10,7,1696456489,"~/frontend/src/components/Switcher.vue"
+-'  10  7  ~/frontend/src/components/Switcher.vue
+|4,39,10,7,1696456489,"~/frontend/src/components/Switcher.vue"
+-'  10  7  ~/frontend/src/components/Switcher.vue
+|4,39,10,7,1696456489,"~/frontend/src/components/Switcher.vue"
+-'  10  7  ~/frontend/src/components/Switcher.vue
+|4,39,10,7,1696456489,"~/frontend/src/components/Switcher.vue"
+-'  10  7  ~/frontend/src/components/Switcher.vue
+|4,39,10,7,1696456489,"~/frontend/src/components/Switcher.vue"
+-'  38  40  ~/frontend/src/components/TwitchEmbed.vue
+|4,39,38,40,1696455645,"~/frontend/src/components/TwitchEmbed.vue"
+-'  38  40  ~/frontend/src/components/TwitchEmbed.vue
+|4,39,38,40,1696455645,"~/frontend/src/components/TwitchEmbed.vue"
+-'  38  40  ~/frontend/src/components/TwitchEmbed.vue
+|4,39,38,40,1696455645,"~/frontend/src/components/TwitchEmbed.vue"
+-'  38  40  ~/frontend/src/components/TwitchEmbed.vue
+|4,39,38,40,1696455645,"~/frontend/src/components/TwitchEmbed.vue"
+-'  38  40  ~/frontend/src/components/TwitchEmbed.vue
+|4,39,38,40,1696455645,"~/frontend/src/components/TwitchEmbed.vue"
+-'  38  40  ~/frontend/src/components/TwitchEmbed.vue
+|4,39,38,40,1696455645,"~/frontend/src/components/TwitchEmbed.vue"
+-'  38  40  ~/frontend/src/components/TwitchEmbed.vue
+|4,39,38,40,1696455645,"~/frontend/src/components/TwitchEmbed.vue"
+-'  38  40  ~/frontend/src/components/TwitchEmbed.vue
+|4,39,38,40,1696455645,"~/frontend/src/components/TwitchEmbed.vue"
+-'  167  8  ~/frontend/src/components/Embed.vue
+|4,39,167,8,1696454956,"~/frontend/src/components/Embed.vue"
+-'  167  8  ~/frontend/src/components/Embed.vue
+|4,39,167,8,1696454956,"~/frontend/src/components/Embed.vue"
+-'  167  8  ~/frontend/src/components/Embed.vue
+|4,39,167,8,1696454956,"~/frontend/src/components/Embed.vue"
+-'  167  8  ~/frontend/src/components/Embed.vue
+|4,39,167,8,1696454956,"~/frontend/src/components/Embed.vue"
+-'  167  8  ~/frontend/src/components/Embed.vue
+|4,39,167,8,1696454956,"~/frontend/src/components/Embed.vue"
+-'  167  8  ~/frontend/src/components/Embed.vue
+|4,39,167,8,1696454956,"~/frontend/src/components/Embed.vue"
+-'  167  8  ~/frontend/src/components/Embed.vue
+|4,39,167,8,1696454956,"~/frontend/src/components/Embed.vue"
+-'  167  8  ~/frontend/src/components/Embed.vue
+|4,39,167,8,1696454956,"~/frontend/src/components/Embed.vue"
+-'  1  0  ~/frontend/src/Actions.vue
+|4,39,1,0,1696454927,"~/frontend/src/Actions.vue"
+-'  1  0  ~/frontend/src/Actions.vue
+|4,39,1,0,1696454927,"~/frontend/src/Actions.vue"
+-'  1  0  ~/frontend/src/Actions.vue
+|4,39,1,0,1696454927,"~/frontend/src/Actions.vue"
+-'  1  0  ~/frontend/src/Actions.vue
+|4,39,1,0,1696454927,"~/frontend/src/Actions.vue"
+-'  1  0  ~/frontend/src/Actions.vue
+|4,39,1,0,1696454927,"~/frontend/src/Actions.vue"
+-'  1  0  ~/frontend/src/Actions.vue
+|4,39,1,0,1696454927,"~/frontend/src/Actions.vue"
+-'  1  0  ~/frontend/src/Actions.vue
+|4,39,1,0,1696454927,"~/frontend/src/Actions.vue"
+-'  1  0  ~/frontend/src/Actions.vue
+|4,39,1,0,1696454927,"~/frontend/src/Actions.vue"
+-'  42  16  ~/frontend/src/components/Embed.vue
+|4,39,42,16,1696454926,"~/frontend/src/components/Embed.vue"
+-'  42  16  ~/frontend/src/components/Embed.vue
+|4,39,42,16,1696454926,"~/frontend/src/components/Embed.vue"
+-'  42  16  ~/frontend/src/components/Embed.vue
+|4,39,42,16,1696454926,"~/frontend/src/components/Embed.vue"
+-'  42  16  ~/frontend/src/components/Embed.vue
+|4,39,42,16,1696454926,"~/frontend/src/components/Embed.vue"
+-'  42  16  ~/frontend/src/components/Embed.vue
+|4,39,42,16,1696454926,"~/frontend/src/components/Embed.vue"
+-'  42  16  ~/frontend/src/components/Embed.vue
+|4,39,42,16,1696454926,"~/frontend/src/components/Embed.vue"
+-'  42  16  ~/frontend/src/components/Embed.vue
+|4,39,42,16,1696454926,"~/frontend/src/components/Embed.vue"
+-'  42  16  ~/frontend/src/components/Embed.vue
+|4,39,42,16,1696454926,"~/frontend/src/components/Embed.vue"
+-'  1  0  ~/frontend/src/components/Embed.vue
+|4,39,1,0,1696454923,"~/frontend/src/components/Embed.vue"
+-'  1  0  ~/frontend/src/components/Embed.vue
+|4,39,1,0,1696454923,"~/frontend/src/components/Embed.vue"
+-'  1  0  ~/frontend/src/components/Embed.vue
+|4,39,1,0,1696454923,"~/frontend/src/components/Embed.vue"
+-'  1  0  ~/frontend/src/components/Embed.vue
+|4,39,1,0,1696454923,"~/frontend/src/components/Embed.vue"
+-'  1  0  ~/frontend/src/components/Embed.vue
+|4,39,1,0,1696454923,"~/frontend/src/components/Embed.vue"
+-'  1  0  ~/frontend/src/components/Embed.vue
+|4,39,1,0,1696454923,"~/frontend/src/components/Embed.vue"
+-'  1  0  ~/frontend/src/components/Embed.vue
+|4,39,1,0,1696454923,"~/frontend/src/components/Embed.vue"
+-'  1  0  ~/frontend/src/components/Embed.vue
+|4,39,1,0,1696454923,"~/frontend/src/components/Embed.vue"
+-'  126  0  ~/cookierun/cookierun.py
+|4,39,126,0,1695210479,"~/cookierun/cookierun.py"
+-'  126  0  ~/cookierun/cookierun.py
+|4,39,126,0,1695210479,"~/cookierun/cookierun.py"
+-'  126  0  ~/cookierun/cookierun.py
+|4,39,126,0,1695210479,"~/cookierun/cookierun.py"
+-'  126  0  ~/cookierun/cookierun.py
+|4,39,126,0,1695210479,"~/cookierun/cookierun.py"
+-'  126  0  ~/cookierun/cookierun.py
+|4,39,126,0,1695210479,"~/cookierun/cookierun.py"
+-'  126  0  ~/cookierun/cookierun.py
+|4,39,126,0,1695210479,"~/cookierun/cookierun.py"
+-'  126  0  ~/cookierun/cookierun.py
+|4,39,126,0,1695210479,"~/cookierun/cookierun.py"
+-'  126  0  ~/cookierun/cookierun.py
+|4,39,126,0,1695210479,"~/cookierun/cookierun.py"
+-'  126  0  ~/cookierun/cookierun.py
+|4,39,126,0,1695210479,"~/cookierun/cookierun.py"
+-'  1  0  ~/Twitch/coffee-vps/code/schema/clips.sql
+|4,39,1,0,1695201799,"~/Twitch/coffee-vps/code/schema/clips.sql"
+-'  1  0  ~/Twitch/coffee-vps/code/schema/clips.sql
+|4,39,1,0,1695201799,"~/Twitch/coffee-vps/code/schema/clips.sql"
+-'  1  0  ~/Twitch/coffee-vps/code/schema/clips.sql
+|4,39,1,0,1695201799,"~/Twitch/coffee-vps/code/schema/clips.sql"
+-'  1  0  ~/Twitch/coffee-vps/code/schema/clips.sql
+|4,39,1,0,1695201799,"~/Twitch/coffee-vps/code/schema/clips.sql"
+-'  1  0  ~/Twitch/coffee-vps/code/schema/clips.sql
+|4,39,1,0,1695201799,"~/Twitch/coffee-vps/code/schema/clips.sql"
+-'  1  0  ~/Twitch/coffee-vps/code/schema/clips.sql
+|4,39,1,0,1695201799,"~/Twitch/coffee-vps/code/schema/clips.sql"
+-'  1  0  ~/Twitch/coffee-vps/code/schema/clips.sql
+|4,39,1,0,1695201799,"~/Twitch/coffee-vps/code/schema/clips.sql"
+-'  1  0  ~/Twitch/coffee-vps/code/schema/clips.sql
+|4,39,1,0,1695201799,"~/Twitch/coffee-vps/code/schema/clips.sql"
+-'  1  0  ~/Twitch/coffee-vps/code/schema/clips.sql
+|4,39,1,0,1695201799,"~/Twitch/coffee-vps/code/schema/clips.sql"
+-'  136  0  ~/cookierun/cookierun.py
+|4,39,136,0,1695201797,"~/cookierun/cookierun.py"
+-'  136  0  ~/cookierun/cookierun.py
+|4,39,136,0,1695201797,"~/cookierun/cookierun.py"
+-'  136  0  ~/cookierun/cookierun.py
+|4,39,136,0,1695201797,"~/cookierun/cookierun.py"
+-'  136  0  ~/cookierun/cookierun.py
+|4,39,136,0,1695201797,"~/cookierun/cookierun.py"
+-'  136  0  ~/cookierun/cookierun.py
+|4,39,136,0,1695201797,"~/cookierun/cookierun.py"
+-'  136  0  ~/cookierun/cookierun.py
+|4,39,136,0,1695201797,"~/cookierun/cookierun.py"
+-'  136  0  ~/cookierun/cookierun.py
+|4,39,136,0,1695201797,"~/cookierun/cookierun.py"
 
 # Buffer list:
-%~/.vim/.vimspector.json	1	0
+%~/.config/secrets.sh	1	0
 
 # History of marks within files (newest to oldest):
+
+> ~/.config/secrets.sh
+	*	1699488905	0
+	"	1	0
+	.	3	0
+	+	2	69
+	+	3	0
+
+> ~/.config/nushell/config.nu
+	*	1699488854	0
+	"	1	0
+
+> ~/.config/nushell/env.nu
+	*	1699488842	0
+	"	1	0
+
+> ~/.config/nushell/history.txt
+	*	1699488834	0
+	"	1	0
+
+> ~/.config/fish/fish_plugins
+	*	1699488809	0
+	"	1	0
+
+> ~/.config/fish/fish_variables
+	*	1699488805	0
+	"	7	0
+
+> ~/frontend/src/components/Switcher.vue
+	*	1696455668	0
+	"	10	7
+	^	10	8
+	.	10	0
+	+	1	0
+	+	11	0
+	+	10	0
+
+> ~/frontend/src/components/TwitchEmbed.vue
+	*	1696455640	0
+	"	38	40
+	^	114	41
+	.	114	40
+	+	114	40
+
+> ~/frontend/src/components/Embed.vue
+	*	1696454949	0
+	"	167	8
+	.	168	0
+	+	12	0
+	+	34	37
+	+	16	0
+	+	34	21
+	+	15	40
+	+	16	12
+	+	15	41
+	+	168	0
+
+> ~/frontend/src/Actions.vue
+	*	1696454926	0
+	"	1	0
+	^	23	40
+	.	23	20
+	+	263	4
+	+	263	0
+	+	263	8
+	+	263	0
+	+	263	13
+	+	263	0
+	+	263	28
+	+	263	0
+	+	263	24
+	+	263	9
+	+	263	0
+	+	263	86
+	+	263	72
+	+	263	0
+	+	263	4
+	+	263	5
+	+	1	0
+	+	263	0
+	+	263	3
+	+	263	2
+	+	263	59
+	+	265	0
+	+	264	0
+	+	264	44
+	+	264	0
+	+	265	0
+	+	263	0
+	+	263	9
+	+	263	0
+	+	263	25
+	+	263	0
+	+	263	30
+	+	263	25
+	+	263	7
+	+	263	0
+	+	263	30
+	+	263	0
+	+	263	75
+	+	263	0
+	+	263	19
+	+	263	8
+	+	263	4
+	+	263	28
+	+	263	26
+	+	263	0
+	+	263	8
+	+	263	0
+	+	263	20
+	+	263	28
+	+	263	76
+	+	263	61
+	+	263	2
+	+	263	3
+	+	265	0
+	+	263	0
+	+	264	0
+	+	265	0
+	+	164	0
+	+	264	0
+	+	242	0
+	+	264	0
+	+	16	0
+	+	15	0
+	+	243	0
+	+	233	31
+	+	234	0
+	+	168	0
+	+	167	0
+	+	207	0
+	+	200	38
+	+	247	0
+	+	248	0
+	+	67	21
+	+	91	0
+	+	138	27
+	+	137	9
+	+	241	27
+	+	250	0
+	+	259	0
+	+	250	0
+	+	241	0
+	+	201	16
+	+	201	0
+	+	205	20
+	+	206	0
+	+	205	0
+	+	208	20
+	+	208	0
+	+	205	0
+	+	206	0
+	+	204	16
+	+	207	0
+	+	206	36
+	+	202	0
+	+	203	0
+	+	216	0
+	+	217	24
+	+	182	18
+	+	41	12
+	+	23	20
+
+> ~/cookierun/cookierun.py
+	*	1695210478	0
+	"	126	0
+	^	137	36
+	.	126	0
+	+	11	33
+	+	153	41
+	+	160	0
+	+	153	16
+	+	154	0
+	+	153	0
+	+	154	19
+	+	158	27
+	+	162	10
+	+	153	65
+	+	65	16
+	+	158	45
+	+	158	17
+	+	159	0
+	+	158	10
+	+	158	28
+	+	158	20
+	+	158	0
+	+	154	0
+	+	165	4
+	+	160	0
+	+	154	0
+	+	157	0
+	+	156	23
+	+	157	0
+	+	155	16
+	+	149	10
+	+	165	0
+	+	166	0
+	+	179	0
+	+	167	0
+	+	167	4
+	+	167	0
+	+	128	0
+	+	79	16
+	+	128	0
+	+	80	0
+	+	125	16
+	+	129	13
+	+	143	0
+	+	141	19
+	+	143	0
+	+	125	28
+	+	129	21
+	+	129	0
+	+	141	20
+	+	143	12
+	+	143	9
+	+	139	16
+	+	143	21
+	+	141	0
+	+	143	25
+	+	143	0
+	+	143	17
+	+	141	21
+	+	143	22
+	+	143	0
+	+	145	0
+	+	146	0
+	+	145	0
+	+	146	0
+	+	164	0
+	+	52	0
+	+	48	0
+	+	49	7
+	+	51	24
+	+	52	0
+	+	108	30
+	+	147	0
+	+	148	9
+	+	146	0
+	+	143	0
+	+	140	10
+	+	143	0
+	+	143	4
+	+	143	10
+	+	143	0
+	+	132	0
+	+	133	15
+	+	134	19
+	+	135	41
+	+	136	26
+	+	131	13
+	+	136	21
+	+	137	16
+	+	138	0
+	+	147	0
+	+	142	0
+	+	143	0
+	+	126	0
+
+> ~/cookierun/schema.txt
+	*	1695210284	0
+	"	12	4
+	^	12	8
+	.	12	0
+	+	2	5
+	+	5	0
+	+	6	0
+	+	7	0
+	+	8	0
+	+	11	0
+	+	11	3
+	+	5	0
+	+	3	0
+	+	11	0
+	+	15	12
+	+	4	10
+	+	15	0
+	+	12	0
+	+	15	0
+	+	14	7
+	+	15	0
+	+	4	14
+	+	12	0
+
+> ~/cookierun/cookies.sql
+	*	1695210283	0
+	"	1	0
+	^	1	0
+	.	1	0
+	+	4	28
+	+	5	23
+	+	6	27
+	+	7	31
+	+	8	9
+	+	10	0
+	+	4	14
+	+	8	0
+	+	1	0
+
+> ~/cookierun/tiers.sql
+	*	1695210281	0
+	"	2	8
+	^	8	9
+	.	8	0
+	+	4	27
+	+	5	23
+	+	6	40
+	+	7	62
+	+	8	0
+
+> ~/Twitch/coffee-vps/code/schema/clips.sql
+	*	1695201797	0
+	"	1	0
+	^	15	25
+	.	15	0
+	+	1	0
+	+	1	94
+	+	1	187
+	+	1	280
+	+	1	187
+	+	1	93
+	+	1	280
+	+	1	186
+	+	1	328
+	+	2	0
+	+	2	294
+	+	2	0
+	+	3	0
+	+	2	31
+	+	3	0
+	+	4	27
+	+	5	32
+	+	6	34
+	+	7	28
+	+	8	30
+	+	9	26
+	+	9	25
+	+	10	26
+	+	11	23
+	+	12	31
+	+	13	28
+	+	14	31
+	+	15	29
+	+	16	31
+	+	9	0
+	+	17	0
+	+	16	0
+	+	18	31
+	+	17	18
+	+	18	23
+	+	18	0
+	+	19	7
+	+	1	13
+	+	16	36
+	+	18	29
+	+	15	0
+
+> ~/cookierun/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/get.py
+	*	1695189415	0
+	"	210	16
+
+> ~/cookierun/requirements.txt
+	*	1695189120	0
+	"	3	7
+	^	3	8
+	.	3	7
+	+	3	7
+
+> ~/genproject/python.sh
+	*	1695188962	0
+	"	39	0
+	^	17	10
+	.	17	9
+	+	6	0
+	+	2	0
+	+	4	9
+	+	11	9
+	+	17	9
 
 > ~/.vim/.vimspector.json
 	*	1695100882	0
@@ -5654,112 +5997,6 @@ $red
 	+	12	29
 	+	11	12
 	+	89	0
-
-> ~/frontend/src/Actions.vue
-	*	1694906162	0
-	"	23	39
-	^	23	40
-	.	23	20
-	+	263	4
-	+	263	0
-	+	263	8
-	+	263	0
-	+	263	13
-	+	263	0
-	+	263	28
-	+	263	0
-	+	263	24
-	+	263	9
-	+	263	0
-	+	263	86
-	+	263	72
-	+	263	0
-	+	263	4
-	+	263	5
-	+	1	0
-	+	263	0
-	+	263	3
-	+	263	2
-	+	263	59
-	+	265	0
-	+	264	0
-	+	264	44
-	+	264	0
-	+	265	0
-	+	263	0
-	+	263	9
-	+	263	0
-	+	263	25
-	+	263	0
-	+	263	30
-	+	263	25
-	+	263	7
-	+	263	0
-	+	263	30
-	+	263	0
-	+	263	75
-	+	263	0
-	+	263	19
-	+	263	8
-	+	263	4
-	+	263	28
-	+	263	26
-	+	263	0
-	+	263	8
-	+	263	0
-	+	263	20
-	+	263	28
-	+	263	76
-	+	263	61
-	+	263	2
-	+	263	3
-	+	265	0
-	+	263	0
-	+	264	0
-	+	265	0
-	+	164	0
-	+	264	0
-	+	242	0
-	+	264	0
-	+	16	0
-	+	15	0
-	+	243	0
-	+	233	31
-	+	234	0
-	+	168	0
-	+	167	0
-	+	207	0
-	+	200	38
-	+	247	0
-	+	248	0
-	+	67	21
-	+	91	0
-	+	138	27
-	+	137	9
-	+	241	27
-	+	250	0
-	+	259	0
-	+	250	0
-	+	241	0
-	+	201	16
-	+	201	0
-	+	205	20
-	+	206	0
-	+	205	0
-	+	208	20
-	+	208	0
-	+	205	0
-	+	206	0
-	+	204	16
-	+	207	0
-	+	206	36
-	+	202	0
-	+	203	0
-	+	216	0
-	+	217	24
-	+	182	18
-	+	41	12
-	+	23	20
 
 > ~/Twitch/coffee-vps/code/clips.py
 	*	1694905030	0
@@ -5970,53 +6207,6 @@ $red
 	+	64	0
 	+	83	0
 	+	84	68
-
-> ~/Twitch/coffee-vps/code/schema/clips.sql
-	*	1694701480	0
-	"	15	21
-	^	15	25
-	.	15	0
-	+	1	0
-	+	1	94
-	+	1	187
-	+	1	280
-	+	1	187
-	+	1	93
-	+	1	280
-	+	1	186
-	+	1	328
-	+	2	0
-	+	2	294
-	+	2	0
-	+	3	0
-	+	2	31
-	+	3	0
-	+	4	27
-	+	5	32
-	+	6	34
-	+	7	28
-	+	8	30
-	+	9	26
-	+	9	25
-	+	10	26
-	+	11	23
-	+	12	31
-	+	13	28
-	+	14	31
-	+	15	29
-	+	16	31
-	+	9	0
-	+	17	0
-	+	16	0
-	+	18	31
-	+	17	18
-	+	18	23
-	+	18	0
-	+	19	7
-	+	1	13
-	+	16	36
-	+	18	29
-	+	15	0
 
 > ~/Twitch/coffee-vps/code/schema/videos.sql
 	*	1694701322	0
@@ -7236,19 +7426,6 @@ $red
 	+	55	72
 	+	2	0
 
-> ~/frontend/src/components/Embed.vue
-	*	1694108313	0
-	"	162	4
-	^	15	42
-	.	15	41
-	+	12	0
-	+	34	37
-	+	16	0
-	+	34	21
-	+	15	40
-	+	16	12
-	+	15	41
-
 > ~/.vim/performance/230907.vue_file_read.v01.txt
 	*	1694108285	0
 	"	5958	4
@@ -7543,10 +7720,6 @@ $red
 	.	36	0
 	+	35	0
 	+	36	0
-
-> ~/frontend/src/components/TwitchEmbed.vue
-	*	1694045115	0
-	"	39	16
 
 > ~/frontend/src/components/ClipEmbed.vue
 	*	1694045099	0
@@ -8066,17 +8239,6 @@ $red
 	+	2	3
 	+	3	3
 	+	4	0
-
-> ~/genproject/python.sh
-	*	1694032939	0
-	"	17	9
-	^	17	10
-	.	17	9
-	+	6	0
-	+	2	0
-	+	4	9
-	+	11	9
-	+	17	9
 
 > ~/projectpython/../genproject/python.sh
 	*	1694032774	0
@@ -8644,13 +8806,6 @@ $red
 	+	8	14
 	+	9	0
 	+	8	17
-
-> ~/.config/secrets.sh
-	*	1693521677	0
-	"	2	0
-	.	3	0
-	+	2	69
-	+	3	0
 
 > ~/Twitch/coffee-vps/code/requirements.txt
 	*	1693520788	0
@@ -9346,10 +9501,6 @@ $red
 	*	1693128680	0
 	"	1	0
 
-> ~/.config/fish/fish_variables
-	*	1693128463	0
-	"	39	0
-
 > ~/.config/fish/conf.d/z.fish
 	*	1693128422	0
 	"	1	0
@@ -9364,10 +9515,6 @@ $red
 	+	4	6
 	+	3	3
 	+	2	16
-
-> ~/.config/fish/fish_plugins
-	*	1693084992	0
-	"	1	0
 
 > ~/.config/shell_data/.z
 	*	1693084367	0
