@@ -30,24 +30,36 @@
     "tailwindCSS.enable": true,
 
     "languageserver": {
+        //"sql": {
+        //    "module": "/usr/lib/node_modules/sql-language-server/dist/bin/cli.js",
+        //    // "args": ["up", "--method", "node-ipc"],
+        //    "args": ["up", "--method", "stdio"],
+        //    "filetypes": ["sql", "mysql"],
+        //    "settings": {
+        //        "sql-language-server": {
+        //            "connections": [
+        //                {
+        //                    "name": "sqlite3-project",
+        //                    "adapter": "sqlite3",
+        //                    "filename": "/home/vivek/Twitch/coffee-vps/code/data/clips.db",
+        //                    "projectPaths": ["/home/vivek/Twitch/coffee-vps/code"]
+        //                },
+        //                {
+        //                    "name": "hateoas-backend-sqlite",
+        //                    "adapter": "sqlite3",
+        //                    "filename": "/home/vivek/hateoas/hateoas_backend/data/downloads.db",
+        //                    "projectPaths": ["/home/vivek/hateoas/hateoas_backend"]
+        //                }
+        //            ]
+        //        }
+        //    }
+        //}
         "sql": {
-            "module": "/usr/lib/node_modules/sql-language-server/dist/bin/cli.js",
-            "args": ["up", "--method", "node-ipc"],
-            "filetypes": ["sql", "mysql"],
-            "settings": {
-                "sql-language-server": {
-                    "connections": [
-                        {
-                            "name": "sqlite3-project",
-                            "adapter": "sqlite3",
-                            "filename": "/home/vivek/Twitch/coffee-vps/code/data/clips.db",
-                            "projectPaths": ["/home/vivek/Twitch/coffee-vps/code"]
-                        }
-                    ]
-                }
-            }
+            "command": "/home/vivek/go/bin/sqls",
+            "args": ["-config", "/home/vivek/.config/sqls/config.yml"],
+           "filetypes": ["sql"], 
+            "shell": true
         }
+
     }
-
-
 }

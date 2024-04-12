@@ -11,23 +11,505 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/Add
+~MSle0~/alias
 
 # Last Substitute Search Pattern:
-~MSle0&:
+~MSle0&\s\s\+
 
 # Last Substitute String:
-$
+$ 
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1711563599,,"q"
+|2,0,1712960279,,"q"
+:MRU alias
+|2,0,1712960137,,"MRU alias"
+:e 
+|2,0,1712960136,,"e "
+:MRU bashrc
+|2,0,1712960130,,"MRU bashrc"
+:MRU input-bin
+|2,0,1712960127,,"MRU input-bin"
+:bd
+|2,0,1712959303,,"bd"
+:CocInfo
+|2,0,1712951927,,"CocInfo"
+:e
+|2,0,1712951922,,"e"
+:CocInf
+|2,0,1712951906,,"CocInf"
+:MRU sql
+|2,0,1712951902,,"MRU sql"
+:MRU 
+|2,0,1712951872,,"MRU "
+:qa
+|2,0,1712951789,,"qa"
+:CocStatus
+|2,0,1712951772,,"CocStatus"
+:CocStart
+|2,0,1712951762,,"CocStart"
+:CocRestart
+|2,0,1712951753,,"CocRestart"
+:CocConfig
+|2,0,1712951703,,"CocConfig"
+:e ~/hateoas/hateoas_backend/sample.sql
+|2,0,1712951688,,"e ~/hateoas/hateoas_backend/sample.sql"
+:e ~/.config/sqls/config.yml
+|2,0,1712951398,,"e ~/.config/sqls/config.yml"
+:MRU settings
+|2,0,1712951306,,"MRU settings"
+:MRU Db.
+|2,0,1712843764,,"MRU Db."
+:q!
+|2,0,1712793355,,"q!"
+:e authtest.py
+|2,0,1712793338,,"e authtest.py"
+:22
+|2,0,1712793195,,"22"
+:e mwhauth.py
+|2,0,1712793194,,"e mwhauth.py"
+:MRU 2:authtest.py
+|2,0,1712793171,,"MRU 2:authtest.py"
+:e req1.txt
+|2,0,1712793127,,"e req1.txt"
+:b authtest.py
+|2,0,1712793096,,"b authtest.py"
+:e v
+|2,0,1712793094,,"e v"
+:e cookie_temp.json
+|2,0,1712793080,,"e cookie_temp.json"
+:e cookies-temp.json
+|2,0,1712792112,,"e cookies-temp.json"
+:e knowledge_mwh.txt
+|2,0,1712791782,,"e knowledge_mwh.txt"
+:e mwh2.py
+|2,0,1712791758,,"e mwh2.py"
+:cfirst
+|2,0,1712791755,,"cfirst"
+:grep -g '*.py' pages
+|2,0,1712791730,,"grep -g '*.py' pages"
+:cd pa
+|2,0,1712791726,,"cd pa"
+:e pa
+|2,0,1712791723,,"e pa"
+:e req2.txt
+|2,0,1712791649,,"e req2.txt"
+:e curl.py
+|2,0,1712791632,,"e curl.py"
+:17
+|2,0,1712791609,,"17"
+:Q
+|2,0,1712791558,,"Q"
+:call CocActionAsync('codeActions')
+|2,0,1712727261,,"call CocActionAsync('codeActions')"
+:call CocAction('codeActions')
+|2,0,1712727252,,"call CocAction('codeActions')"
+:call CocAction('doCodeAction')
+|2,0,1712727240,,"call CocAction('doCodeAction')"
+:CocList 
+|2,0,1712727206,,"CocList "
+:Copilot disable
+|2,0,1712727046,,"Copilot disable"
+:MRU 4:downloads.sql
+|2,0,1712726928,,"MRU 4:downloads.sql"
+:C`
+|2,0,1712726874,,"C`"
+:MRU down
+|2,0,1712726837,,"MRU down"
+:e downloads.sql
+|2,0,1712726748,,"e downloads.sql"
+:e ~/.config/sql-language-server/.sqllsrc.json
+|2,0,1712726696,,"e ~/.config/sql-language-server/.sqllsrc.json"
+:CocEnable
+|2,0,1712726637,,"CocEnable"
+:CocDisable
+|2,0,1712726634,,"CocDisable"
+:e access_logs.sql
+|2,0,1712726566,,"e access_logs.sql"
+:CocConfi
+|2,0,1712726559,,"CocConfi"
+:ALEEnable
+|2,0,1712726552,,"ALEEnable"
+:ALEDisable
+|2,0,1712726549,,"ALEDisable"
+:e flask-server.py
+|2,0,1712572792,,"e flask-server.py"
+:pwd
+|2,0,1712572785,,"pwd"
+:!vd data/downloads.db
+|2,0,1712572649,,"!vd data/downloads.db"
+:e data/download_logs.db
+|2,0,1712572636,,"e data/download_logs.db"
+:e verify_integrity.py
+|2,0,1712572599,,"e verify_integrity.py"
+:b sse
+|2,0,1712523359,,"b sse"
+:b downloader_routes.py
+|2,0,1712523229,,"b downloader_routes.py"
+:b bridge
+|2,0,1712523079,,"b bridge"
+:e sse.py
+|2,0,1712522498,,"e sse.py"
+:bd download_logs.sql
+|2,0,1712521391,,"bd download_logs.sql"
+:bd downloads.sql
+|2,0,1712521388,,"bd downloads.sql"
+:bd *.sql
+|2,0,1712521384,,"bd *.sql"
+:bd #
+|2,0,1712521380,,"bd #"
+:b 
+|2,0,1712521378,,"b "
+:b downloader.py
+|2,0,1712521374,,"b downloader.py"
+:e download_logs.sql
+|2,0,1712521224,,"e download_logs.sql"
+:e bridge.py
+|2,0,1712521185,,"e bridge.py"
+:e downloader_routes.py
+|2,0,1712521179,,"e downloader_routes.py"
+:term
+|2,0,1712520681,,"term"
+:e downloader.py
+|2,0,1712519157,,"e downloader.py"
+:Jprevious
+|2,0,1712519059,,"Jprevious"
+:e ~/python_common/waivek/db.py
+|2,0,1712519035,,"e ~/python_common/waivek/db.py"
+:MRU db.
+|2,0,1712518963,,"MRU db."
+:e hateoas-api.py
+|2,0,1712518758,,"e hateoas-api.py"
+:set nonumber
+|2,0,1712518683,,"set nonumber"
+:!rm downloads
+|2,0,1712518471,,"!rm downloads"
+:e downloads
+|2,0,1712518468,,"e downloads"
+:Copilot panel
+|2,0,1712504121,,"Copilot panel"
+:cn
+|2,0,1712503802,,"cn"
+:cpre
+|2,0,1712503732,,"cpre"
+:cp
+|2,0,1712503720,,"cp"
+:copen
+|2,0,1712503611,,"copen"
+:grep -g '*.py' db_init
+|2,0,1712503589,,"grep -g '*.py' db_init"
+:MRU ha
+|2,0,1712503287,,"MRU ha"
+:e ~/
+|2,0,1712503150,,"e ~/"
+:ll
+|2,0,1712497920,,"ll"
+:b sse.py
+|2,0,1712496150,,"b sse.py"
+:b hateo
+|2,0,1712496127,,"b hateo"
+:e requirements.txt
+|2,0,1712493174,,"e requirements.txt"
+:MRU 3:downloader.py
+|2,0,1712453693,,"MRU 3:downloader.py"
+:b!# | bd! #
+|2,0,1712452830,,"b!# | bd! #"
+:!rm download_endpoints.py
+|2,0,1712452825,,"!rm download_endpoints.py"
+:e download_endpoints.py
+|2,0,1712452763,,"e download_endpoints.py"
+:e curl-ws.py
+|2,0,1712452739,,"e curl-ws.py"
+:Rename downloader_routes.py
+|2,0,1712452435,,"Rename downloader_routes.py"
+:e downloader-routes.py
+|2,0,1712452338,,"e downloader-routes.py"
+:Py
+|2,0,1712451088,,"Py"
+:'<,'>s/\s\s\+/ /g
+|2,0,1712445168,,"'<,'>s/\\s\\s\\+/ /g"
+:Template
+|2,0,1712444985,,"Template"
+:Tab /THEN
+|2,0,1712444660,,"Tab /THEN"
+:Tab /TEHN
+|2,0,1712444656,,"Tab /TEHN"
+:'<,'>Tab /NOT NULL
+|2,0,1712444328,,"'<,'>Tab /NOT NULL"
+:'<,'>Tab /TEXT\|INTEGER
+|2,0,1712444322,,"'<,'>Tab /TEXT\\|INTEGER"
+:'<,'>
+|2,0,1712444282,,"'<,'>"
+:'<,'>Tab /CHECK/
+|2,0,1712444276,,"'<,'>Tab /CHECK/"
+:'<,'>Tab /TEXT\|INTEGER/
+|2,0,1712444266,,"'<,'>Tab /TEXT\\|INTEGER/"
+:nonumber
+|2,0,1712443770,,"nonumber"
+:Copilot :
+|2,0,1712443768,,"Copilot :"
+:e data/
+|2,0,1712443319,,"e data/"
+:e ta
+|2,0,1712443313,,"e ta"
+:e down
+|2,0,1712443302,,"e down"
+:g/request\./
+|2,0,1712407889,,"g/request\\./"
+:b hateoas-api.py
+|2,0,1712405855,,"b hateoas-api.py"
+:grep -g '*.vim' -g 'vimrc' select
+|2,0,1712405656,,"grep -g '*.vim' -g 'vimrc' select"
+:gre
+|2,0,1712405652,,"gre"
+:b /home/vivek/.vim/vimrc
+|2,0,1712405651,,"b /home/vivek/.vim/vimrc"
+:grep -g '*.sql' 
+|2,0,1712405649,,"grep -g '*.sql' "
+:e after/syntax/python.vim
+|2,0,1712405606,,"e after/syntax/python.vim"
+:grep -g '*.vim' -g 'vimrc' SELECT
+|2,0,1712405590,,"grep -g '*.vim' -g 'vimrc' SELECT"
+:edit $MYVIMRC
+|2,0,1712405576,,"edit $MYVIMRC"
+:Ftplugin
+|2,0,1712405573,,"Ftplugin"
+:e ~
+|2,0,1712405571,,"e ~"
+:SQLGetType
+|2,0,1712405534,,"SQLGetType"
+:MRU sq
+|2,0,1712405527,,"MRU sq"
+:e create_databases.py
+|2,0,1712365064,,"e create_databases.py"
+:'<,'>e 
+|2,0,1712364942,,"'<,'>e "
+:Copilot status
+|2,0,1712364825,,"Copilot status"
+:e endpoints.sql
+|2,0,1712356154,,"e endpoints.sql"
+:MRU 19:sql_checklist.txt
+|2,0,1712352095,,"MRU 19:sql_checklist.txt"
+:g/app.route
+|2,0,1712352002,,"g/app.route"
+:e ws3.py
+|2,0,1712266049,,"e ws3.py"
+:MRU app
+|2,0,1712265619,,"MRU app"
+:MRU app.py
+|2,0,1712263907,,"MRU app.py"
+:861
+|2,0,1712260232,,"861"
+:MRU 1:hateoas-api.py
+|2,0,1712260230,,"MRU 1:hateoas-api.py"
+:w
+|2,0,1712260188,,"w"
+:Rename curl-ws.py
+|2,0,1712259730,,"Rename curl-ws.py"
+:MRU 3:hateoas_downloader/Flask-SocketIO/example/app.py
+|2,0,1712259527,,"MRU 3:hateoas_downloader/Flask-SocketIO/example/app.py"
+:e make-ws-client-request.py
+|2,0,1712259498,,"e make-ws-client-request.py"
+:find templates/index.html
+|2,0,1712259127,,"find templates/index.html"
+:MRU 1:hateoas_downloader/Flask-SocketIO/example/app.py
+|2,0,1712259115,,"MRU 1:hateoas_downloader/Flask-SocketIO/example/app.py"
+:e!
+|2,0,1712258852,,"e!"
+:MRU 9:hateoas-websocket.py
+|2,0,1712258774,,"MRU 9:hateoas-websocket.py"
+:MRU 2:requirements.txt
+|2,0,1712258771,,"MRU 2:requirements.txt"
+:MRU 7:ws2.py
+|2,0,1712258762,,"MRU 7:ws2.py"
+:e Flask-SocketIO/example/app.py
+|2,0,1712258728,,"e Flask-SocketIO/example/app.py"
+:e hateoas_downloader/
+|2,0,1712258704,,"e hateoas_downloader/"
+:862
+|2,0,1712258991,,"862"
+:e app.py
+|2,0,1712258828,,"e app.py"
+:!start everything -path . app
+|2,0,1712258826,,"!start everything -path . app"
+:e hateoas-downloader-server.py
+|2,0,1712095558,,"e hateoas-downloader-server.py"
+:e ws2.py
+|2,0,1712095237,,"e ws2.py"
+:e ../requirements.txt
+|2,0,1712095181,,"e ../requirements.txt"
+:e hateoas-websocket.py
+|2,0,1712094568,,"e hateoas-websocket.py"
+:MRU 2:hateoas-downloader-server.py
+|2,0,1712094257,,"MRU 2:hateoas-downloader-server.py"
+:echo expand("%:p")
+|2,0,1712090268,,"echo expand(\"%:p\")"
+:u
+|2,0,1712088996,,"u"
+:echo keys(copilot#Agent().workspaceFolders)
+|2,0,1712064472,,"echo keys(copilot#Agent().workspaceFolders)"
+:e tasks.sql
+|2,0,1712061180,,"e tasks.sql"
+:e sq
+|2,0,1712061174,,"e sq"
+:!start everything -path . 
+|2,0,1712061172,,"!start everything -path . "
+:e portions.sql
+|2,0,1712060335,,"e portions.sql"
+:MRU crea
+|2,0,1712060329,,"MRU crea"
+:e ~/tooling/main.txt
+|2,0,1712058110,,"e ~/tooling/main.txt"
+:MRU 5:hateoas_backend/portions.sql
+|2,0,1712057615,,"MRU 5:hateoas_backend/portions.sql"
+:MRU 62:schemas/pflix.sql
+|2,0,1712057599,,"MRU 62:schemas/pflix.sql"
+:e videos.sql
+|2,0,1712057575,,"e videos.sql"
+:e users.sql
+|2,0,1712057572,,"e users.sql"
+:MRU 17:schema/clips.sql
+|2,0,1712057568,,"MRU 17:schema/clips.sql"
+:MRU 15:hateoas_backend/sequences.sql
+|2,0,1712057562,,"MRU 15:hateoas_backend/sequences.sql"
+:MRU 6:hateoas_backend/pov_videos.sql
+|2,0,1712057557,,"MRU 6:hateoas_backend/pov_videos.sql"
+:e ~/genproject/sql_checklist.txt
+|2,0,1712057465,,"e ~/genproject/sql_checklist.txt"
+:set linebreak
+|2,0,1712030419,,"set linebreak"
+:set wrap
+|2,0,1712030415,,"set wrap"
+:bd!
+|2,0,1712030391,,"bd!"
+:enew
+|2,0,1712030332,,"enew"
+:e pov_videos.sql
+|2,0,1712025409,,"e pov_videos.sql"
+:MRU 3:hateoas-api.py
+|2,0,1712025403,,"MRU 3:hateoas-api.py"
+:%s/,\s*/,    /g
+|2,0,1712025233,,"%s/,\\s*/,    /g"
+:%s/,/,    /g
+|2,0,1712025179,,"%s/,/,    /g"
+:s/
+|2,0,1712025167,,"s/"
+:%
+|2,0,1712025166,,"%"
+:%s/,   /g
+|2,0,1712025163,,"%s/,   /g"
+:s/\(,\)
+|2,0,1712025145,,"s/\\(,\\)"
+:%s/
+|2,0,1712025122,,"%s/"
+:MRU h
+|2,0,1712022121,,"MRU h"
+:s/,/,/g
+|2,0,1712022020,,"s/,/,/g"
+:s/[(
+|2,0,1712022012,,"s/[("
+:MRU api
+|2,0,1712021755,,"MRU api"
+:MRU pov
+|2,0,1712016957,,"MRU pov"
+:l
+|2,0,1712015172,,"l"
+:MRU 2:flask-vue/api.py
+|2,0,1712008219,,"MRU 2:flask-vue/api.py"
+:379
+|2,0,1712000230,,"379"
+:MRU 38:flask-vue/api.py
+|2,0,1711997020,,"MRU 38:flask-vue/api.py"
+:set number
+|2,0,1711970870,,"set number"
+:e form_update_question.tmp
+|2,0,1711969791,,"e form_update_question.tmp"
+:e t
+|2,0,1711969788,,"e t"
+:MRU 2:hateoas_backend/hateoas-api.py
+|2,0,1711966768,,"MRU 2:hateoas_backend/hateoas-api.py"
+: w form_update_question.tmp
+|2,0,1711966764,," w form_update_question.tmp"
+: w ~/.
+|2,0,1711966750,," w ~/."
+:set ft=sql
+|2,0,1711926251,,"set ft=sql"
+:MRU s
+|2,0,1711926189,,"MRU s"
+:e sequences.sql
+|2,0,1711915779,,"e sequences.sql"
+:!start %
+|2,0,1711909710,,"!start %"
+:Rename create_databases.py
+|2,0,1711909390,,"Rename create_databases.py"
+:MRU llll
+|2,0,1711901821,,"MRU llll"
+:MRU c
+|2,0,1711901766,,"MRU c"
+:MRU 84:frontend/src/Data.ts
+|2,0,1711893495,,"MRU 84:frontend/src/Data.ts"
+:MRU Data
+|2,0,1711893489,,"MRU Data"
+:let @"=expand("%:p")
+|2,0,1711875654,,"let @\"=expand(\"%:p\")"
+:e .direnv/python-3.10.12/bin/
+|2,0,1711875641,,"e .direnv/python-3.10.12/bin/"
+:e ./
+|2,0,1711875632,,"e ./"
+:cd /home/vivek/hateoas/hateoas_backend/
+|2,0,1711875629,,"cd /home/vivek/hateoas/hateoas_backend/"
+:CocInstall coc-pyright
+|2,0,1711875220,,"CocInstall coc-pyright"
+:CocUpdate pyright
+|2,0,1711875216,,"CocUpdate pyright"
+:CocUpdate coc-pyright
+|2,0,1711875212,,"CocUpdate coc-pyright"
+:CocUpdate coc-pyright 
+|2,0,1711875210,,"CocUpdate coc-pyright "
+:e pyrightconfig.json
+|2,0,1711875191,,"e pyrightconfig.json"
+:Coc
+|2,0,1711875178,,"Coc"
+:CocList services
+|2,0,1711875170,,"CocList services"
+:C
+|2,0,1711874955,,"C"
+:ALEInfo
+|2,0,1711874936,,"ALEInfo"
+:MRU api.py
+|2,0,1711874593,,"MRU api.py"
+:MRU 39:elements_backend/requirements.txt
+|2,0,1711874542,,"MRU 39:elements_backend/requirements.txt"
+:e ~/genproject/python.sh
+|2,0,1711871135,,"e ~/genproject/python.sh"
+:MRU genpro
+|2,0,1711871128,,"MRU genpro"
+:FIND Ac
+|2,0,1711570220,,"FIND Ac"
+:FIND Embe
+|2,0,1711570217,,"FIND Embe"
+:FIND Load
+|2,0,1711569868,,"FIND Load"
+:FIND Vid
+|2,0,1711569844,,"FIND Vid"
+:MRU Emb
+|2,0,1711568270,,"MRU Emb"
+:e package.json
+|2,0,1711567997,,"e package.json"
+:FIND Em
+|2,0,1711567598,,"FIND Em"
+:qa!
+|2,0,1711563907,,"qa!"
+:'<,'>sort
+|2,0,1711563872,,"'<,'>sort"
+:'<,'>s/\s\+.*//
+|2,0,1711563864,,"'<,'>s/\\s\\+.*//"
+:s/\s\+//g
+|2,0,1711563855,,"s/\\s\\+//g"
+:s/\s\+///g
+|2,0,1711563850,,"s/\\s\\+///g"
 :MRU Ele
 |2,0,1711553908,,"MRU Ele"
-:MRU 
-|2,0,1711546356,,"MRU "
-:qa
-|2,0,1711545269,,"qa"
 :MRU 2:elements.html
 |2,0,1711545247,,"MRU 2:elements.html"
 :MRU 11:elements.html
@@ -44,8 +526,6 @@ $
 |2,0,1711444438,,"s/://g"
 :MRU du
 |2,0,1711443981,,"MRU du"
-:bd
-|2,0,1711443819,,"bd"
 :MRU p
 |2,0,1711443808,,"MRU p"
 :MRU eco
@@ -54,8 +534,6 @@ $
 |2,0,1711443297,,"MRU dum"
 :MRU el
 |2,0,1711111018,,"MRU el"
-:echo expand("%:p")
-|2,0,1711110679,,"echo expand(\"%:p\")"
 :MRU el-
 |2,0,1711110676,,"MRU el-"
 :MRU El
@@ -68,8 +546,6 @@ $
 |2,0,1711088750,,"MRU ele"
 :242
 |2,0,1711063660,,"242"
-:MRU 2:flask-vue/api.py
-|2,0,1711063374,,"MRU 2:flask-vue/api.py"
 :MRU 3:Elements.vue
 |2,0,1711062952,,"MRU 3:Elements.vue"
 :MRU 22:flask-vue/api.py
@@ -80,8 +556,6 @@ $
 |2,0,1711062112,,"b el-api"
 :e src/Data.ts
 |2,0,1711042528,,"e src/Data.ts"
-:MRU Data
-|2,0,1711042521,,"MRU Data"
 :'<,'>v/type"/d
 |2,0,1711026457,,"'<,'>v/type\"/d"
 :ChangeHTMLClassToVueClass
@@ -134,16 +608,8 @@ $
 |2,0,1711008193,,"e src/Index.vue"
 :e index.html
 |2,0,1711008108,,"e index.html"
-:CocRestart
-|2,0,1711008079,,"CocRestart"
-:Template
-|2,0,1711008058,,"Template"
 :template
 |2,0,1711008056,,"template"
-:C
-|2,0,1711007956,,"C"
-:e
-|2,0,1711007954,,"e"
 :FIND main
 |2,0,1711007890,,"FIND main"
 :e src/components/Elements.vue
@@ -158,12 +624,6 @@ $
 |2,0,1711007699,,"MRU tailwin"
 :e ../data/main.db
 |2,0,1711007615,,"e ../data/main.db"
-:CocInfo
-|2,0,1711007427,,"CocInfo"
-:e 
-|2,0,1711007351,,"e "
-:e requirements.txt
-|2,0,1711007316,,"e requirements.txt"
 :MRU 6:pflix_backend/api.py
 |2,0,1711007247,,"MRU 6:pflix_backend/api.py"
 :MRU 26:pflix_backend/requirements.txt
@@ -172,8 +632,6 @@ $
 |2,0,1711005387,,"b scrape/genre_test.py"
 :MRU genre
 |2,0,1711005385,,"MRU genre"
-:Jprevious
-|2,0,1711005103,,"Jprevious"
 :e scrape/schemas/pflix.sql
 |2,0,1711005096,,"e scrape/schemas/pflix.sql"
 :e sch
@@ -188,8 +646,6 @@ $
 |2,0,1711005052,,"b ~/pflix/pflix_backend/api.py"
 :b api.py
 |2,0,1711004987,,"b api.py"
-:MRU api
-|2,0,1711004985,,"MRU api"
 :b ~/mwh/mwh2.py
 |2,0,1711004892,,"b ~/mwh/mwh2.py"
 :e pm2_commands.txt
@@ -210,8 +666,6 @@ $
 |2,0,1711004769,,"cd scrape/"
 :grep -g '*' \bwebtoon\b
 |2,0,1711004760,,"grep -g '*' \\bwebtoon\\b"
-:copen
-|2,0,1711004726,,"copen"
 :grep -g '*.py' CREATE
 |2,0,1711004717,,"grep -g '*.py' CREATE"
 :MRU mwh-a
@@ -226,18 +680,8 @@ $
 |2,0,1710995343,,"b genre_test.py"
 :MRU mw
 |2,0,1710991508,,"MRU mw"
-:set nonumber
-|2,0,1710990798,,"set nonumber"
-:set number
-|2,0,1710989035,,"set number"
-:q!
-|2,0,1710987711,,"q!"
-:term
-|2,0,1710987696,,"term"
 :e schemas/pflix.sql
 |2,0,1710987436,,"e schemas/pflix.sql"
-:b!# | bd! #
-|2,0,1710987112,,"b!# | bd! #"
 :MRU 3:pflix_backend/api.py
 |2,0,1710986971,,"MRU 3:pflix_backend/api.py"
 :e scrape_pflix.py
@@ -248,20 +692,12 @@ $
 |2,0,1710986941,,"MRU db.py"
 :e genre_test.py
 |2,0,1710986923,,"e genre_test.py"
-:set ft=sql
-|2,0,1710986468,,"set ft=sql"
-:enew
-|2,0,1710986462,,"enew"
 :ter
 |2,0,1710986455,,"ter"
-:bd!
-|2,0,1710986438,,"bd!"
 :MRU pfl
 |2,0,1710803876,,"MRU pfl"
 :MRU mwh-api
 |2,0,1710803720,,"MRU mwh-api"
-:MRU sql
-|2,0,1710803188,,"MRU sql"
 :e ../s
 |2,0,1710803186,,"e ../s"
 :e Data.ts
@@ -274,8 +710,6 @@ $
 |2,0,1710802940,,"Rename Index.vue"
 :MRU inde
 |2,0,1710802872,,"MRU inde"
-:cn
-|2,0,1710802801,,"cn"
 :grep -g '*.vue' await
 |2,0,1710802762,,"grep -g '*.vue' await"
 :MRU Video
@@ -290,8 +724,6 @@ $
 |2,0,1710802156,,"e .flaskenv"
 :e .flask
 |2,0,1710802149,,"e .flask"
-:MRU 2:requirements.txt
-|2,0,1710802144,,"MRU 2:requirements.txt"
 :cd pflix_backend/
 |2,0,1710802039,,"cd pflix_backend/"
 :cd node_modules/
@@ -348,8 +780,6 @@ $
 |2,0,1710795987,,"RENAME"
 :RENAME scrape_pflix.py
 |2,0,1710795985,,"RENAME scrape_pflix.py"
-:!start %
-|2,0,1710795604,,"!start %"
 :%s/\\n//g
 |2,0,1710795583,,"%s/\\\\n//g"
 :e 1.html
@@ -388,8 +818,6 @@ $
 |2,0,1710040735,,"%s/\":.*//"
 :FIND Portion
 |2,0,1710040615,,"FIND Portion"
-:FIND Ac
-|2,0,1710034015,,"FIND Ac"
 :MRU YTEm
 |2,0,1709991642,,"MRU YTEm"
 :MRU Embed
@@ -422,8 +850,6 @@ $
 |2,0,1709958168,,"FIND usePlayer.ts"
 :MRU temp
 |2,0,1709957522,,"MRU temp"
-:FIND Vid
-|2,0,1709957049,,"FIND Vid"
 :FIND Emb
 |2,0,1709956919,,"FIND Emb"
 :68
@@ -432,18 +858,12 @@ $
 |2,0,1709956865,,"58"
 :FIND YT
 |2,0,1709956864,,"FIND YT"
-:FIND Load
-|2,0,1709956822,,"FIND Load"
-:FIND Embe
-|2,0,1709956806,,"FIND Embe"
 :FIND Da
 |2,0,1709953313,,"FIND Da"
 :grep -g '*.vue' second_embed
 |2,0,1709953075,,"grep -g '*.vue' second_embed"
 :%s/second_embed/embed/g
 |2,0,1709953049,,"%s/second_embed/embed/g"
-:cpre
-|2,0,1709952964,,"cpre"
 :grep -g '*.vue' event_\\w+embed
 |2,0,1709952951,,"grep -g '*.vue' event_\\\\w+embed"
 :grep -g '*.vue' 
@@ -494,8 +914,6 @@ $
 |2,0,1709942993,,"MRU Em"
 :MRU A
 |2,0,1709941635,,"MRU A"
-:pwd
-|2,0,1709941209,,"pwd"
 :e ~/.vim/templates/template.vue
 |2,0,1709941154,,"e ~/.vim/templates/template.vue"
 :cd ~/vimfil
@@ -510,8 +928,6 @@ $
 |2,0,1709941111,,"e EmbedModify.vue"
 :FIND EmbedDis
 |2,0,1709941034,,"FIND EmbedDis"
-:MRU Emb
-|2,0,1709940884,,"MRU Emb"
 :e Backend.vue
 |2,0,1709940825,,"e Backend.vue"
 :MRU Ac
@@ -522,8 +938,6 @@ $
 |2,0,1709940604,,"MRU Use"
 :e components/EmbedDisplay.vue
 |2,0,1709940582,,"e components/EmbedDisplay.vue"
-:FIND Em
-|2,0,1709940555,,"FIND Em"
 :e Emb
 |2,0,1709940553,,"e Emb"
 :295
@@ -566,8 +980,6 @@ $
 |2,0,1709773186,,"MRU Twit"
 :lnex
 |2,0,1709772754,,"lnex"
-:ll
-|2,0,1709772752,,"ll"
 :MRU Tw
 |2,0,1709772439,,"MRU Tw"
 :MRU V
@@ -588,16 +1000,12 @@ $
 |2,0,1709765519,,"FIND Twit"
 :MRU embed
 |2,0,1709765494,,"MRU embed"
-:Copilot status
-|2,0,1709765283,,"Copilot status"
 :k
 |2,0,1709765273,,"k"
 :PlugUpdate
 |2,0,1709765257,,"PlugUpdate"
 :Copilot update
 |2,0,1709765253,,"Copilot update"
-:e req1.txt
-|2,0,1706313255,,"e req1.txt"
 :grep
 |2,0,1706144254,,"grep"
 :e Clips.vue
@@ -686,8 +1094,6 @@ $
 |2,0,1705978180,,"F"
 :MRU Vid
 |2,0,1705978011,,"MRU Vid"
-:e!
-|2,0,1705977815,,"e!"
 :MRU 1:api.py
 |2,0,1705977365,,"MRU 1:api.py"
 :b YT
@@ -728,8 +1134,6 @@ $
 |2,0,1705923363,,"grep -g '*.vue' utility"
 :map <space>
 |2,0,1705923137,,"map <space>"
-:edit $MYVIMRC
-|2,0,1705923122,,"edit $MYVIMRC"
 :map
 |2,0,1705923108,,"map"
 :map )
@@ -818,8 +1222,6 @@ $
 |2,0,1695198424,,"ToList"
 :%s/\s*\d.*//
 |2,0,1695198417,,"%s/\\s*\\d.*//"
-:w
-|2,0,1695197295,,"w"
 :'<,'>v/cate/d
 |2,0,1695196751,,"'<,'>v/cate/d"
 :term pip install -r requirements.txt
@@ -914,8 +1316,6 @@ $
 |2,0,1694315276,,"b ../python_common/waivek/introspection.py"
 :e in
 |2,0,1694315200,,"e in"
-:e pyrightconfig.json
-|2,0,1694276348,,"e pyrightconfig.json"
 :!python waivek/null.py
 |2,0,1694276190,,"!python waivek/null.py"
 :!python -m waivek null.py
@@ -928,12 +1328,8 @@ $
 |2,0,1694276063,,"!python3 null.py"
 :!python %
 |2,0,1694276057,,"!python %"
-:ALEDisable
-|2,0,1694276000,,"ALEDisable"
 :ALEDIsable
 |2,0,1694275996,,"ALEDIsable"
-:b /home/vivek/.vim/vimrc
-|2,0,1694275881,,"b /home/vivek/.vim/vimrc"
 :Rename Book.js
 |2,0,1694275784,,"Rename Book.js"
 :FIND Ani
@@ -1138,8 +1534,6 @@ $
 |2,0,1694107182,,"verbose command Profile"
 :Profile
 |2,0,1694107179,,"Profile"
-:CocDisable
-|2,0,1694107132,,"CocDisable"
 :au
 |2,0,1694107118,,"au"
 :au BufEnter
@@ -1156,8 +1550,6 @@ $
 |2,0,1694096893,,"messages"
 :FI 
 |2,0,1694096828,,"FI "
-:set wrap
-|2,0,1694096380,,"set wrap"
 :h vim9script
 |2,0,1694096247,,"h vim9script"
 :au CmdUndefined
@@ -1434,8 +1826,6 @@ $
 |2,0,1694045112,,"find You"
 :find TwitchEmbed.vue
 |2,0,1694045104,,"find TwitchEmbed.vue"
-:CocConfig
-|2,0,1694045052,,"CocConfig"
 :find Data.ts
 |2,0,1694044901,,"find Data.ts"
 :find actions.ts
@@ -1602,8 +1992,6 @@ $
 |2,0,1693665351,,"n"
 :call CocActionAsync("showOutline")
 |2,0,1693664995,,"call CocActionAsync(\"showOutline\")"
-:CocList 
-|2,0,1693664635,,"CocList "
 :CocList actions
 |2,0,1693664630,,"CocList actions"
 :call CocActionAsync("refactor.extract")
@@ -1612,8 +2000,6 @@ $
 |2,0,1693664564,,"h <Plug>(coc-codeaction)"
 :'<,'>call CocActionAsync("codeAction")
 |2,0,1693664551,,"'<,'>call CocActionAsync(\"codeAction\")"
-:e ./
-|2,0,1693663755,,"e ./"
 :e zomatosearch.py
 |2,0,1693663751,,"e zomatosearch.py"
 :MRU 86:vivek/tooling/main.txt
@@ -1664,8 +2050,6 @@ $
 |2,0,1693516981,,"h"
 :e p
 |2,0,1693516812,,"e p"
-:bd #
-|2,0,1693516808,,"bd #"
 :e validate_db.py
 |2,0,1693516805,,"e validate_db.py"
 :e .pyrightconfig.json
@@ -1682,8 +2066,6 @@ $
 |2,0,1693516178,,"hi ALEError"
 :hl 
 |2,0,1693516169,,"hl "
-:ALEInfo
-|2,0,1693516143,,"ALEInfo"
 :!term
 |2,0,1693516079,,"!term"
 :MRU ide
@@ -1696,8 +2078,6 @@ $
 |2,0,1693515940,,"ALEDisableBuffer"
 :e pyexamples/
 |2,0,1693515733,,"e pyexamples/"
-:MRU c
-|2,0,1693515583,,"MRU c"
 :e ~/.vim/templates/template.py
 |2,0,1693432136,,"e ~/.vim/templates/template.py"
 :MRU py
@@ -1894,8 +2274,6 @@ $
 |2,0,1693292288,,"term python"
 :term echo "HELLO"
 |2,0,1693292279,,"term echo \"HELLO\""
-:MRU bashrc
-|2,0,1693292123,,"MRU bashrc"
 :MRU lo
 |2,0,1693292039,,"MRU lo"
 :MRU compl
@@ -2128,8 +2506,6 @@ $
 |2,0,1693047598,,"e vite.config.ts"
 :e pro
 |2,0,1693047555,,"e pro"
-:qa!
-|2,0,1693047084,,"qa!"
 :vim vite.config.ts
 |2,0,1693047059,,"vim vite.config.ts"
 :e un
@@ -2170,8 +2546,6 @@ $
 |2,0,1692908922,,"e test.html"
 :MRU actions.html
 |2,0,1692908887,,"MRU actions.html"
-:ALEEnable
-|2,0,1692907560,,"ALEEnable"
 :358
 |2,0,1692905371,,"358"
 :MRU waivek
@@ -2260,8 +2634,6 @@ $
 |2,0,1692791738,,"e ../actions.html"
 :b waivek.js
 |2,0,1692790863,,"b waivek.js"
-:e package.json
-|2,0,1692790849,,"e package.json"
 :e package-lock.json
 |2,0,1692790839,,"e package-lock.json"
 :MRU code/waivek
@@ -2274,16 +2646,12 @@ $
 |2,0,1692790778,,"e ~/Twitch/coffee-vps/flask-vue/vuejs/utility.js"
 :MRU waiv
 |2,0,1692790559,,"MRU waiv"
-:u
-|2,0,1692790425,,"u"
 :grep -g '*.js' -g '*.ts' -g '*.vue' now_string
 |2,0,1692790396,,"grep -g '*.js' -g '*.ts' -g '*.vue' now_string"
 :rg 
 |2,0,1692790379,,"rg "
 :e ~/frontend/src/waive.js
 |2,0,1692790213,,"e ~/frontend/src/waive.js"
-:e ~
-|2,0,1692790208,,"e ~"
 :MRU 140:coffee-vps/code/waivek.js
 |2,0,1692790083,,"MRU 140:coffee-vps/code/waivek.js"
 :MRU 9:vivek/frontend/tsconfig.json
@@ -2302,10 +2670,6 @@ $
 |2,0,1692734216,,"e .eslintrc.json"
 :e ~/.
 |2,0,1692734212,,"e ~/."
-:CocList services
-|2,0,1692733489,,"CocList services"
-:CocEnable
-|2,0,1692733484,,"CocEnable"
 :e ~/.es
 |2,0,1692733150,,"e ~/.es"
 :e .esl
@@ -2468,8 +2832,6 @@ $
 |2,0,1692611073,,"tabs"
 :grep -g '*.vue' to_hh_mm_ss.*utility
 |2,0,1692554801,,"grep -g '*.vue' to_hh_mm_ss.*utility"
-:l
-|2,0,1692554676,,"l"
 :import
 |2,0,1692554622,,"import"
 :grep -g '*.vue' to_hh_mm_ss
@@ -2718,8 +3080,6 @@ $
 |2,0,1692290890,,"saveas validate.py"
 :e type.py
 |2,0,1692290845,,"e type.py"
-:MRU api.py
-|2,0,1692284525,,"MRU api.py"
 :e prompt.txt
 |2,0,1692279143,,"e prompt.txt"
 :%s/ .*/"
@@ -2748,12 +3108,8 @@ $
 |2,0,1692257061,,"call CocAction('quickfixes')"
 :call CocAction('doQuickFix')
 |2,0,1692257052,,"call CocAction('doQuickFix')"
-:call CocAction('doCodeAction')
-|2,0,1692257043,,"call CocAction('doCodeAction')"
 :call CocAction('fixAll')
 |2,0,1692257032,,"call CocAction('fixAll')"
-:Coc
-|2,0,1692247734,,"Coc"
 :CocCommand codeAction
 |2,0,1692247731,,"CocCommand codeAction"
 :call CocAction('codeAction')
@@ -2868,8 +3224,6 @@ $
 |2,0,1691923312,,"b"
 :MRU 3:tooling.txt
 |2,0,1691923310,,"MRU 3:tooling.txt"
-:e ~/
-|2,0,1691923276,,"e ~/"
 :grep -g '*.vue' HelloWorld
 |2,0,1691919402,,"grep -g '*.vue' HelloWorld"
 :e app.
@@ -3036,8 +3390,6 @@ $
 |2,0,1691681514,,"!node % "
 :Tab TEX
 |2,0,1691680945,,"Tab TEX"
-:s/,/,/g
-|2,0,1691680937,,"s/,/,/g"
 :e users.py
 |2,0,1691678564,,"e users.py"
 :MRU Twi
@@ -3106,8 +3458,6 @@ $
 |2,0,1691572361,,"!rm data/videos.db"
 :e sc
 |2,0,1691572102,,"e sc"
-:e data/
-|2,0,1691571896,,"e data/"
 :e schema.sql
 |2,0,1691571894,,"e schema.sql"
 :Tab /,/
@@ -3200,8 +3550,6 @@ $
 |2,0,1691442926,,"h quick-lint-js-configure-coc-nvim"
 :call CocAction('diagnosticNext')
 |2,0,1691440588,,"call CocAction('diagnosticNext')"
-:CocStatus
-|2,0,1691440408,,"CocStatus"
 :cd sr
 |2,0,1691439758,,"cd sr"
 :e query_database.js
@@ -3242,8 +3590,6 @@ $
 |2,0,1691400122,,"let g:ale_lint_on_text_changed='always'"
 :15
 |2,0,1691399322,,"15"
-:Ftplugin
-|2,0,1691399235,,"Ftplugin"
 :echo g:
 |2,0,1691399220,,"echo g:"
 :echo coc#status()
@@ -3356,8 +3702,6 @@ $
 |2,0,1691096807,,"e test_upsert.py"
 :e json/
 |2,0,1691096805,,"e json/"
-:17
-|2,0,1691087828,,"17"
 :e youtube_streamers.txt
 |2,0,1691043802,,"e youtube_streamers.txt"
 :Co
@@ -3566,8 +3910,6 @@ $
 |2,0,1690670772,,"MRU status"
 :CocInstall coc-css
 |2,0,1690596961,,"CocInstall coc-css"
-:call CocAction('codeActions')
-|2,0,1690596888,,"call CocAction('codeActions')"
 :b coc-settings.json
 |2,0,1690596787,,"b coc-settings.json"
 :MRU 2:Actions.vue
@@ -3630,8 +3972,6 @@ $
 |2,0,1689184658,,"MRU 2:package.json"
 :MRU 5:actions.html
 |2,0,1689184655,,"MRU 5:actions.html"
-:e ../requirements.txt
-|2,0,1689180289,,"e ../requirements.txt"
 :grep COMPONENT -g *.vue
 |2,0,1689179049,,"grep COMPONENT -g *.vue"
 :grep import -g *.vue 
@@ -3762,8 +4102,6 @@ $
 |2,0,1688814286,,"b cur"
 :e so
 |2,0,1688814284,,"e so"
-:'<,'>
-|2,0,1688808836,,"'<,'>"
 :MRU aci
 |2,0,1688808507,,"MRU aci"
 :e curl_integrity.sh
@@ -3938,8 +4276,6 @@ $
 |2,0,1688469253,,"Template "
 :echo GetTemplateNames()
 |2,0,1688469163,,"echo GetTemplateNames()"
-:MRU h
-|2,0,1688469128,,"MRU h"
 :cd ~/.vim/templates/
 |2,0,1688468941,,"cd ~/.vim/templates/"
 :b ~/Twitch/coffee-vps/flask-vue/vuejs/actions.html
@@ -3988,8 +4324,6 @@ $
 |2,0,1688457378,,"MRU 5:.sqllsrc.json"
 :e query.sql
 |2,0,1688457111,,"e query.sql"
-:e ~/.config/sql-language-server/.sqllsrc.json
-|2,0,1688456772,,"e ~/.config/sql-language-server/.sqllsrc.json"
 :CocInstall @sql-language-server
 |2,0,1688456268,,"CocInstall @sql-language-server"
 :CocInstall @joe-re/sql-language-server
@@ -4090,14 +4424,10 @@ $
 |2,0,1688368023,,"%s/ .*//"
 :%sort u
 |2,0,1688367988,,"%sort u"
-:%
-|2,0,1688367984,,"%"
 :v/import/d
 |2,0,1688367983,,"v/import/d"
 :e re
 |2,0,1688367970,,"e re"
-:MRU db.
-|2,0,1688311421,,"MRU db."
 :so k
 |2,0,1688311349,,"so k"
 :828
@@ -4364,6 +4694,348 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/alias
+|2,1,1712960117,47,"alias"
+?/undetec
+|2,1,1712793130,47,"undetec"
+?/starship
+|2,1,1712731193,47,"starship"
+?/source
+|2,1,1712731071,47,"source"
+?/coc.*action
+|2,1,1712727249,47,"coc.*action"
+??action
+|2,1,1712727213,63,"action"
+?/path
+|2,1,1712521743,47,"path"
+?/\C\!\>
+|2,1,1712521463,47,"\\C\\!\\>"
+?/downloads_h
+|2,1,1712519124,47,"downloads_h"
+?/factory
+|2,1,1712519038,47,"factory"
+?/downloads_html
+|2,1,1712518760,47,"downloads_html"
+?/announc
+|2,1,1712518178,47,"announc"
+?/announcer
+|2,1,1712518173,47,"announcer"
+?/annou
+|2,1,1712517992,47,"annou"
+?/announce
+|2,1,1712517743,47,"announce"
+?/"    "
+|2,1,1712504817,47,"\"    \""
+?/dict(row
+|2,1,1712504489,47,"dict(row"
+?/\(def\|class\)\s\+\w*db_init
+|2,1,1712503380,47,"\\(def\\|class\\)\\s\\+\\w*db_init"
+?/db
+|2,1,1712503273,47,"db"
+?/htmx
+|2,1,1712497362,47,"htmx"
+?/Done
+|2,1,1712496577,47,"Done"
+?/\(def\|class\)\s\+\w*pong
+|2,1,1712496405,47,"\\(def\\|class\\)\\s\\+\\w*pong"
+?/\(def\|class\)\s\+\w*poing
+|2,1,1712496402,47,"\\(def\\|class\\)\\s\\+\\w*poing"
+?/downloads
+|2,1,1712493711,47,"downloads"
+?/sse
+|2,1,1712493700,47,"sse"
+?/sseclient
+|2,1,1712493552,47,"sseclient"
+?/CORS
+|2,1,1712493007,47,"CORS"
+?/-->
+|2,1,1712454065,47,"-->"
+?/\(def\|class\)\s\+\w*generator
+|2,1,1712445582,47,"\\(def\\|class\\)\\s\\+\\w*generator"
+? \s\s\+
+|2,1,1712445168,,"\\s\\s\\+"
+? request\.
+|2,1,1712407889,,"request\\."
+?/\(def\|class\)\s\+\w*video(
+|2,1,1712406596,47,"\\(def\\|class\\)\\s\\+\\w*video("
+?/\(def\|class\)\s\+\w*videos
+|2,1,1712406559,47,"\\(def\\|class\\)\\s\\+\\w*videos"
+?/url_map
+|2,1,1712405984,47,"url_map"
+??setlect.*delete
+|2,1,1712405817,63,"setlect.*delete"
+?/SELECT
+|2,1,1712405580,47,"SELECT"
+??sql
+|2,1,1712405540,63,"sql"
+?/before
+|2,1,1712365020,47,"before"
+?/\(def\|class\)\s\+\w*vivek
+|2,1,1712364245,47,"\\(def\\|class\\)\\s\\+\\w*vivek"
+?/\(def\|class\)\s\+\w*test
+|2,1,1712364243,47,"\\(def\\|class\\)\\s\\+\\w*test"
+?/test
+|2,1,1712364150,47,"test"
+?/\C\<endpoint\>
+|2,1,1712363942,47,"\\C\\<endpoint\\>"
+?/endpoint
+|2,1,1712363932,47,"endpoint"
+?/last_epoch
+|2,1,1712363793,47,"last_epoch"
+?/access_count
+|2,1,1712363563,47,"access_count"
+?/epoch_added
+|2,1,1712363393,47,"epoch_added"
+?/ORDER BY
+|2,1,1712363310,47,"ORDER BY"
+?/json\.dumps
+|2,1,1712355600,47,"json\\.dumps"
+?/from
+|2,1,1712354629,47,"from"
+?/\~
+|2,1,1712353432,47,"\\~"
+?/three
+|2,1,1712353321,47,"three"
+?/thre
+|2,1,1712353318,47,"thre"
+?/\(def\|class\)\s\+\w*three
+|2,1,1712353299,47,"\\(def\\|class\\)\\s\\+\\w*three"
+? app.route
+|2,1,1712352002,,"app.route"
+?/socket
+|2,1,1712351822,47,"socket"
+?/broadcast
+|2,1,1712265621,47,"broadcast"
+?/<sc
+|2,1,1712262086,47,"<sc"
+?/@so
+|2,1,1712259878,47,"@so"
+?/script
+|2,1,1712259121,47,"script"
+?/<script
+|2,1,1712259118,47,"<script"
+? @$
+|2,1,1712258704,,"@$"
+?/\@app
+|2,1,1712095833,47,"\\@app"
+?/cors
+|2,1,1712094570,47,"cors"
+?/socketio
+|2,1,1712091780,47,"socketio"
+?/for
+|2,1,1712091658,47,"for"
+?/while
+|2,1,1712091651,47,"while"
+?/\(def\|class\)\s\+\w*update
+|2,1,1712090138,47,"\\(def\\|class\\)\\s\\+\\w*update"
+?/fake_task_
+|2,1,1712089304,47,"fake_task_"
+?/message
+|2,1,1712089233,47,"message"
+?/ta
+|2,1,1712089003,47,"ta"
+?/SELECT pro
+|2,1,1712088987,47,"SELECT pro"
+?/fake_task
+|2,1,1712088521,47,"fake_task"
+?/app
+|2,1,1712087944,47,"app"
+?/videoid
+|2,1,1712061087,47,"videoid"
+?/\C\<task\>
+|2,1,1712061018,47,"\\C\\<task\\>"
+?/Tasks
+|2,1,1712060882,47,"Tasks"
+?/SERIAL
+|2,1,1712060495,47,"SERIAL"
+?/enum
+|2,1,1712060040,47,"enum"
+?/CHECK
+|2,1,1712057564,47,"CHECK"
+?/\(def\|class\)\s\+\w*portion(
+|2,1,1712025675,47,"\\(def\\|class\\)\\s\\+\\w*portion("
+?/form_por
+|2,1,1712025464,47,"form_por"
+?/portion
+|2,1,1712025415,47,"portion"
+?/portoin
+|2,1,1712025413,47,"portoin"
+? ,\s*
+|2,1,1712025233,,",\\s*"
+? ,
+|2,1,1712025179,,","
+? ,   
+|2,1,1712025163,,",   "
+?/JOIN
+|2,1,1712025087,47,"JOIN"
+?/SELECT.*pov_
+|2,1,1712024598,47,"SELECT.*pov_"
+?/userna
+|2,1,1712022854,47,"userna"
+?/user_n
+|2,1,1712022852,47,"user_n"
+?/Candi
+|2,1,1712022830,47,"Candi"
+??Cand
+|2,1,1712022606,63,"Cand"
+?/@app.*\(delete\|remove\)
+|2,1,1712022558,47,"@app.*\\(delete\\|remove\\)"
+?/add_pov
+|2,1,1712022544,47,"add_pov"
+?/candidate
+|2,1,1712022508,47,"candidate"
+?/all_pov
+|2,1,1712022424,47,"all_pov"
+?/\(def\|class\)\s\+\w*pov
+|2,1,1712022406,47,"\\(def\\|class\\)\\s\\+\\w*pov"
+?/pov_videos
+|2,1,1712022364,47,"pov_videos"
+?/+t
+|2,1,1712011855,47,"+t"
+?/epoch
+|2,1,1712011524,47,"epoch"
+?/offset
+|2,1,1712010673,47,"offset"
+?/video
+|2,1,1712010144,47,"video"
+?/created_at_epoch
+|2,1,1712010107,47,"created_at_epoch"
+?/start_epoch
+|2,1,1712009824,47,"start_epoch"
+?/duration
+|2,1,1712009770,47,"duration"
+?/start_epoch <
+|2,1,1712009725,47,"start_epoch <"
+?/datetime
+|2,1,1712009400,47,"datetime"
+?/pov
+|2,1,1712009323,47,"pov"
+?/\(def\|class\)\s\+\w*portion
+|2,1,1712008121,47,"\\(def\\|class\\)\\s\\+\\w*portion"
+?/url_for
+|2,1,1712007884,47,"url_for"
+?/request\.args
+|2,1,1712004297,47,"request\\.args"
+?/request\.form
+|2,1,1712004285,47,"request\\.form"
+?/pageCount
+|2,1,1712003127,47,"pageCount"
+?/(
+|2,1,1712001677,47,"("
+?/User
+|2,1,1712000699,47,"User"
+?/items
+|2,1,1711999229,47,"items"
+?/sqlite:
+|2,1,1711998922,47,"sqlite:"
+?/start
+|2,1,1711998717,47,"start"
+?/user_id
+|2,1,1711997344,47,"user_id"
+?/\(def\|class\)\s\+\w*query_videos
+|2,1,1711997316,47,"\\(def\\|class\\)\\s\\+\\w*query_videos"
+?/\(def\|class\)\s\+\w*pagin
+|2,1,1711997301,47,"\\(def\\|class\\)\\s\\+\\w*pagin"
+?/paginate
+|2,1,1711997024,47,"paginate"
+?/form_port
+|2,1,1711984576,47,"form_port"
+?/@app\.route('\/[^')]*\<sequence
+|2,1,1711983465,47,"@app\\.route('\\/[^')]*\\<sequence"
+?/\/sequences"
+|2,1,1711983456,47,"\\/sequences\""
+?/delete
+|2,1,1711983454,47,"delete"
+?/Form En
+|2,1,1711983320,47,"Form En"
+?/red
+|2,1,1711979954,47,"red"
+?/Session Error
+|2,1,1711971309,47,"Session Error"
+?/\(def\|class\)\s\+\w*flash(
+|2,1,1711971151,47,"\\(def\\|class\\)\\s\\+\\w*flash("
+?/session
+|2,1,1711971148,47,"session"
+?/flash
+|2,1,1711970401,47,"flash"
+?/302
+|2,1,1711966804,47,"302"
+?/flash(
+|2,1,1711928179,47,"flash("
+?/@app\.route('\/[^')]*\<portions
+|2,1,1711928013,47,"@app\\.route('\\/[^')]*\\<portions"
+?/@app\.route('\/[^')]*\<portions'
+|2,1,1711928002,47,"@app\\.route('\\/[^')]*\\<portions'"
+?/@app\.route('\/[^')]*\<portions"
+|2,1,1711927998,47,"@app\\.route('\\/[^')]*\\<portions\""
+?/\/edit
+|2,1,1711927796,47,"\\/edit"
+?/check
+|2,1,1711926191,47,"check"
+?/@app\.route('\/[^')]*\<videos
+|2,1,1711917015,47,"@app\\.route('\\/[^')]*\\<videos"
+?/pass
+|2,1,1711915802,47,"pass"
+?/passs
+|2,1,1711915801,47,"passs"
+?/@app\.route('\/[^')]*\<
+|2,1,1711915578,47,"@app\\.route('\\/[^')]*\\<"
+?/^\s*@app.route\\(
+|2,1,1711915561,47,"^\\s*@app.route\\\\("
+?/^\s*@app.route\('
+|2,1,1711915540,47,"^\\s*@app.route\\('"
+?/^\s*@app.route(./[^,)]*\<videos
+|2,1,1711915530,47,"^\\s*@app.route(./[^,)]*\\<videos"
+?/^\s*@app.route('/[^,)]*\<videos
+|2,1,1711915519,47,"^\\s*@app.route('/[^,)]*\\<videos"
+?/^\s*@app.route(\'/[^,)]*\<videos
+|2,1,1711915514,47,"^\\s*@app.route(\\'/[^,)]*\\<videos"
+?/^\s*@app.route('/[^,)]*
+|2,1,1711915491,47,"^\\s*@app.route('/[^,)]*"
+?/^\s*@app.route('/[^,)]*videos
+|2,1,1711915481,47,"^\\s*@app.route('/[^,)]*videos"
+?/@app.route
+|2,1,1711915451,47,"@app.route"
+?/videos
+|2,1,1711915444,47,"videos"
+?/dashboard
+|2,1,1711915267,47,"dashboard"
+?/redirecting
+|2,1,1711912032,47,"redirecting"
+?/sequence_id
+|2,1,1711912010,47,"sequence_id"
+?/sequ
+|2,1,1711909763,47,"sequ"
+?/main
+|2,1,1711909696,47,"main"
+?/main sequenc
+|2,1,1711909695,47,"main sequenc"
+?/se
+|2,1,1711909532,47,"se"
+?/database
+|2,1,1711909530,47,"database"
+?/endif
+|2,1,1711909520,47,"endif"
+?/routes
+|2,1,1711876837,47,"routes"
+??\a
+|2,1,1711875641,63,"\\a"
+??pyright
+|2,1,1711875194,63,"pyright"
+?/rel2abs
+|2,1,1711874622,47,"rel2abs"
+?/vue
+|2,1,1711570849,47,"vue"
+?/k
+|2,1,1711569772,47,"k"
+?/\C\<embed\>
+|2,1,1711567624,47,"\\C\\<embed\\>"
+?/embed
+|2,1,1711567605,47,"embed"
+? \s\+.*
+|2,1,1711563864,,"\\s\\+.*"
+? \s\+
+|2,1,1711563855,,"\\s\\+"
 ?/Add
 |2,1,1711554941,47,"Add"
 ?/wide
@@ -4388,8 +5060,6 @@ $
 |2,1,1711443330,47,"backend"
 ?/direnv
 |2,1,1711443299,47,"direnv"
-? @$
-|2,1,1711110338,,"@$"
 ?/load_db
 |2,1,1711089394,47,"load_db"
 ?/app\.config
@@ -4432,16 +5102,10 @@ $
 |2,1,1711005055,47,"CREATE TABLE"
 ?/webtoon
 |2,1,1711004779,47,"webtoon"
-?/SELECT
-|2,1,1711004737,47,"SELECT"
 ?/TEM
 |2,1,1711004730,47,"TEM"
 ?/\.db
 |2,1,1711004673,47,"\\.db"
-?/video
-|2,1,1710996032,47,"video"
-?/paginate
-|2,1,1710995711,47,"paginate"
 ?/HAVING
 |2,1,1710995667,47,"HAVING"
 ?/Video
@@ -4490,14 +5154,10 @@ $
 |2,1,1710040760,,"\\s"
 ? :.*
 |2,1,1710040754,,":.*"
-? \s\+
-|2,1,1710040746,,"\\s\\+"
 ? "
 |2,1,1710040738,,"\""
 ? ":.*
 |2,1,1710040735,,"\":.*"
-?/offset
-|2,1,1710040675,47,"offset"
 ?/\(.*\)\.value = \1;
 |2,1,1710034150,47,"\\(.*\\)\\.value = \\1;"
 ?/\(\w\+\)\.value
@@ -4534,8 +5194,6 @@ $
 |2,1,1709956823,47,"log"
 ?/second`
 |2,1,1709956800,47,"second`"
-?/embed
-|2,1,1709956798,47,"embed"
 ? second_embed
 |2,1,1709953049,,"second_embed"
 ?/second_embed
@@ -4548,8 +5206,6 @@ $
 |2,1,1709950370,47,"<Embed"
 ?/<load
 |2,1,1709949954,47,"<load"
-?/source
-|2,1,1709949602,47,"source"
 ?/create
 |2,1,1709949600,47,"create"
 ?/create_
@@ -4634,10 +5290,6 @@ $
 |2,1,1709770736,47,"player.value"
 ?/player.*=
 |2,1,1709768673,47,"player.*="
-?/start
-|2,1,1709764916,47,"start"
-?/portion
-|2,1,1709764902,47,"portion"
 ?/pysqlite3
 |2,1,1706313258,47,"pysqlite3"
 ?/Set Embed
@@ -4828,8 +5480,6 @@ $
 |2,1,1694043553,63,"imple"
 ?/';'
 |2,1,1694041692,47,"';'"
-?/path
-|2,1,1694041381,47,"path"
 ?/cookie
 |2,1,1694034854,47,"cookie"
 ?/human
@@ -4874,8 +5524,6 @@ $
 |2,1,1693554220,47,"\\(def\\|class\\)\\s\\+\\w*create"
 ?/\.start
 |2,1,1693520735,47,"\\.start"
-?/duration
-|2,1,1693518128,47,"duration"
 ?/import chat
 |2,1,1693516388,47,"import chat"
 ?/\(def\|class\)\s\+\w*
@@ -4966,8 +5614,6 @@ $
 |2,1,1693083251,47,"mcfly"
 ?/SHELL
 |2,1,1693082187,47,"SHELL"
-??\a
-|2,1,1693060316,63,"\\a"
 ?/Actions
 |2,1,1693060029,47,"Actions"
 ?/Action
@@ -5016,8 +5662,6 @@ $
 |2,1,1692905479,,"timer\\..*\\\"videos\\\""
 ? timer\..*\"videos\/<page>\"
 |2,1,1692905301,,"timer\\..*\\\"videos\\/<page>\\\""
-?/videos
-|2,1,1692905295,47,"videos"
 ? timer\..*black
 |2,1,1692905214,,"timer\\..*black"
 ?/\(def\|class\)\s\+\w*query2json
@@ -5220,8 +5864,6 @@ $
 |2,1,1691681477,47,"Code"
 ?/modify
 |2,1,1691681156,47,"modify"
-? ,
-|2,1,1691680937,,","
 ?/is_youtube
 |2,1,1691680611,47,"is_youtube"
 ?/durat
@@ -5398,8 +6040,6 @@ $
 |2,1,1691291061,47,","
 ?/user_id.*username
 |2,1,1691291037,47,"user_id.*username"
-?/user_id
-|2,1,1691291012,47,"user_id"
 ?/user_name
 |2,1,1691290946,47,"user_name"
 ?/\v^\s*\zs(async)?\s*function\s*\w*\s*[^(]*sqlite
@@ -5484,8 +6124,6 @@ $
 |2,1,1691089163,47,"videos\\?"
 ?/@@
 |2,1,1691087865,47,"@@"
-?/delete
-|2,1,1691030800,47,"delete"
 ?/peterpark
 |2,1,1690965760,47,"peterpark"
 ?/actualStartTime
@@ -5518,8 +6156,6 @@ $
 |2,1,1690917850,47,"\\(def\\|class\\)\\s\\+\\w*Clip"
 ?/slug
 |2,1,1690917641,47,"slug"
-?/vue
-|2,1,1690908660,47,"vue"
 ??Vue
 |2,1,1690908657,63,"Vue"
 ?/view_
@@ -5558,14 +6194,10 @@ $
 |2,1,1690863591,,"this\\.log"
 ?/st
 |2,1,1690863349,47,"st"
-?/datetime
-|2,1,1690862017,47,"datetime"
 ?/insert
 |2,1,1690861557,47,"insert"
 ? rose
 |2,1,1690861530,,"rose"
-?/red
-|2,1,1690861139,47,"red"
 ?/bla
 |2,1,1690851509,47,"bla"
 ?/blauset
@@ -5668,8 +6300,6 @@ $
 |2,1,1690671033,47,"quickfix"
 ?/actions
 |2,1,1690596898,47,"actions"
-??action
-|2,1,1690596854,63,"action"
 ?/sid
 |2,1,1690488414,47,"sid"
 ?/\C\<do\>
@@ -5692,8 +6322,6 @@ $
 |2,1,1689184638,47,"poll"
 ?/vu
 |2,1,1689180443,47,"vu"
-?/socket
-|2,1,1689180364,47,"socket"
 ?/vite
 |2,1,1689179319,47,"vite"
 ?/mitt
@@ -5792,8 +6420,6 @@ $
 |2,1,1688796217,47,"\\(def\\|class\\)\\s\\+\\w*post"
 ?/gql
 |2,1,1688795989,47,"gql"
-?/pov_videos
-|2,1,1688713458,47,"pov_videos"
 ?/portions
 |2,1,1688712283,47,"portions"
 ?/portoins
@@ -5818,8 +6444,6 @@ $
 |2,1,1688554883,47,"selection"
 ?/tpop
 |2,1,1688552498,47,"tpop"
-?/\(def\|class\)\s\+\w*videos
-|2,1,1688552210,47,"\\(def\\|class\\)\\s\\+\\w*videos"
 ?/xchocobars
 |2,1,1688551860,47,"xchocobars"
 ?/clip_data
@@ -5830,8 +6454,6 @@ $
 |2,1,1688542918,47,"vi"
 ?/sl
 |2,1,1688532381,47,"sl"
-?/alias
-|2,1,1688492294,47,"alias"
 ?/videos\.db
 |2,1,1688491803,47,"videos\\.db"
 ?/\>
@@ -5870,20 +6492,12 @@ $
 |2,1,1688407962,47,"get"
 ?/aio
 |2,1,1688407873,47,"aio"
-?/rel2abs
-|2,1,1688406887,47,"rel2abs"
 ?/main\.db
 |2,1,1688406842,47,"main\\.db"
-?/main
-|2,1,1688406805,47,"main"
 ?/-g 
 |2,1,1688406624,47,"-g "
-?/cors
-|2,1,1688393860,47,"cors"
 ? \~
 |2,1,1688368453,,"\\~"
-?/\~
-|2,1,1688368377,47,"\\~"
 ?/mnt
 |2,1,1688368237,47,"mnt"
 ? import
@@ -5988,8 +6602,20 @@ $
 |2,2,1688309303,,"v:oldfiles"
 
 # Input Line History (newest to oldest):
+@html>
+|2,3,1712453482,,"html>"
+@set
+|2,3,1712353073,,"set"
+@div class="tall">
+|2,3,1712022534,,"div class=\"tall\">"
 @div>
-|2,3,1711089339,,"div>"
+|2,3,1712022524,,"div>"
+@span>
+|2,3,1711915363,,"span>"
+@main>
+|2,3,1711891652,,"main>"
+@span class="bold">
+|2,3,1711878309,,"span class=\"bold\">"
 @div class="p-2">
 |2,3,1711008486,,"div class=\"p-2\">"
 @hms
@@ -6032,8 +6658,6 @@ $
 |2,3,1692259142,,"repr"
 @table.append(
 |2,3,1692257362,,"table.append("
-@span>
-|2,3,1691935809,,"span>"
 @rel2abs
 |2,3,1691579485,,"rel2abs"
 @y
@@ -6074,292 +6698,3452 @@ $
 |2,4,1693311567,,"cont"
 
 # Registers:
-"0	CHAR	0
-	C:\Users\vivek\Desktop\public\tailwind-base.css
-|3,0,0,0,1,0,1711553844,"C:\\Users\\vivek\\Desktop\\public\\tailwind-base.css"
+"0	LINE	0
+	SELECT
+	    br
+|3,0,0,1,2,0,1712953339,"SELECT","    br"
 ""1	LINE	0
-	
-|3,1,1,1,1,0,1711560498,""
+	echo "alias l='exa --header --long --icons --all --group-directories-first'" 
+|3,1,1,1,1,0,1712960207,"echo \"alias l='exa --header --long --icons --all --group-directories-first'\" "
 "2	LINE	0
-	/* style for when button is pressed */
-|3,0,2,1,1,0,1711553911,"/* style for when button is pressed */"
+	echo "alias fdf='fd --hidden --type file'"
+	echo "alias fdd='fd --hidden --type directory'"
+|3,0,2,1,2,0,1712960194,"echo \"alias fdf='fd --hidden --type file'\"","echo \"alias fdd='fd --hidden --type directory'\""
 "3	LINE	0
-	
-|3,0,3,1,1,0,1711553844,""
+	echo "alias cdf='cd $(fd --type file --hidden | fzf | xargs -I {} dirname {})'"
+|3,0,3,1,1,0,1712960192,"echo \"alias cdf='cd $(fd --type file --hidden | fzf | xargs -I {} dirname {})'\""
 "4	LINE	0
-	}
-|3,0,4,1,1,0,1711553831,"}"
+	echo "alias start='direnv exec ~/Twitch/coffee-vps/flask-vue/ pm2 start ~/Twitch/coffee-vps/flask-vue/config.json'"
+	echo "alias delete='pm2 delete all'"
+|3,0,4,1,2,0,1712960190,"echo \"alias start='direnv exec ~/Twitch/coffee-vps/flask-vue/ pm2 start ~/Twitch/coffee-vps/flask-vue/config.json'\"","echo \"alias delete='pm2 delete all'\""
 "5	LINE	0
-	}
-|3,0,5,1,1,0,1711546370,"}"
+	echo "alias rm=gomi"
+|3,0,5,1,1,0,1712960187,"echo \"alias rm=gomi\""
 "6	LINE	0
-	@layer components {
-|3,0,6,1,1,0,1711546368,"@layer components {"
+	# echo "alias cd='cd $(fd --type file --hidden | fzf | xargs -I {} dirname {})'"
+	#
+|3,0,6,1,2,0,1712960184,"# echo \"alias cd='cd $(fd --type file --hidden | fzf | xargs -I {} dirname {})'\"","#"
 "7	LINE	0
-	@tailwind base;
-	@tailwind components;
-	@tailwind utilities;
-	
-	@layer components {
-	    .wide { @apply flex flex-row items-center gap-2; }
-	    .tall { @apply flex flex-col justify-center gap-2; }
-	}
-|3,0,7,1,8,0,1711545423,"@tailwind base;","@tailwind components;","@tailwind utilities;","","@layer components {","    .wide { @apply flex flex-row items-center gap-2; }","    .tall { @apply flex flex-col justify-center gap-2; }","}"
-"8	LINE	0
-	  .btn {
-	    @apply px-4 py-2 text-white bg-blue-500 rounded;
-	  }
-|3,0,8,1,3,0,1711545264,"  .btn {","    @apply px-4 py-2 text-white bg-blue-500 rounded;","  }"
+	SELECT
+	    br
+|3,0,7,1,2,0,1712953339,"SELECT","    br"
+"8	CHAR	0
+	COUNT(broadcaster_id) AS broadcaster_count
+	FROM clips;
+|3,0,8,0,2,0,1712953332,"COUNT(broadcaster_id) AS broadcaster_count","FROM clips;"
 "9	LINE	0
-	.wide { @apply flex flex-row items-center gap-2; }
-	.tall { @apply flex flex-col justify-center gap-2; }
-|3,0,9,1,2,0,1711545263,".wide { @apply flex flex-row items-center gap-2; }",".tall { @apply flex flex-col justify-center gap-2; }"
-"a	CHAR	0
-	Tabularize /:/l1c1l1
-|3,0,10,0,1,0,1711042126,"Tabularize /:/l1c1l1"
+	SELECT COUNT(*) AS FROM clips;
+|3,0,9,1,1,0,1712952803,"SELECT COUNT(*) AS FROM clips;"
+"a@	CHAR	0
+	f"ct,INTE€kb€kbDENT_FOURjk
+|3,2,10,0,1,0,1712521901,"f\"ct,INTE€kb€kbDENT_FOURjk"
 "l	CHAR	0
 	ll
 |3,0,21,0,1,0,1690934784,"ll"
 "s	LINE	0
-	    let i = 0
-	    for path in relpaths
-	        if path =~? a:ArgLead
-	            call add(results, basenames[i])
-	        endif
-	        let i += 1
-	    endfor
-	    return results
-|3,0,28,1,8,0,1694047383,"    let i = 0","    for path in relpaths","        if path =~? a:ArgLead","            call add(results, basenames[i])","        endif","        let i += 1","    endfor","    return results"
+	    return render_template_string("""
+	    <ul>
+	        {% for id, name, downloaded_path, progress, status in downloads %}
+	            <li>
+	                <a href="/download/{{ id }}">{{ name }}</a>
+	                <span>{{ status }}</span>
+	                <progress value="{{ progress }}" max="100"></progress>
+	                <span>{{ progress }}%</span>
+	                {% if status == 'paused' %}
+	                <form method="POST" action="/resume_download">
+	                    <input type="hidden" name="id" value="{{ id }}">
+	                    <input type="submit" value="Resume">
+	                </form>
+	                {% endif %}
+	                {% if status == 'downloading' %}
+	                <form method="POST" action="/pause_download">
+	                    <input type="hidden" name="id" value="{{ id }}">
+	                    <input type="submit" value="Pause">
+	                </form>
+	                {% endif %}
+	
+	            </li>
+	        {% endfor %}
+	    </ul>""", downloads=downloads)
+|3,0,28,1,24,0,1712521850,"    return render_template_string(\"\"\"","    <ul>","        {% for id, name, downloaded_path, progress, status in downloads %}","            <li>","                <a href=\"/download/{{ id }}\">{{ name }}</a>","                <span>{{ status }}</span>","                <progress value=\"{{ progress }}\" max=\"100\"></progress>","                <span>{{ progress }}%</span>","                {% if status == 'paused' %}",>68
+|<"                <form method=\"POST\" action=\"/resume_download\">","                    <input type=\"hidden\" name=\"id\" value=\"{{ id }}\">","                    <input type=\"submit\" value=\"Resume\">","                </form>","                {% endif %}","                {% if status == 'downloading' %}","                <form method=\"POST\" action=\"/pause_download\">","                    <input type=\"hidden\" name=\"id\" value=\"{{ id }}\">",>61
+|<"                    <input type=\"submit\" value=\"Pause\">","                </form>","                {% endif %}","","            </li>","        {% endfor %}","    </ul>\"\"\", downloads=downloads)"
 "-	CHAR	0
-	C:\Users\vivek\Desktop\public\tailwind-base.css
-|3,0,36,0,1,0,1711553843,"C:\\Users\\vivek\\Desktop\\public\\tailwind-base.css"
+	>> ~/.bashrc
+|3,0,36,0,1,0,1712960157,">> ~/.bashrc"
 
 # File marks:
-'0  10  0  ~/public/input.css
-|4,48,10,0,1711563599,"~/public/input.css"
-'1  7  0  ~/public/input.css
-|4,49,7,0,1711557079,"~/public/input.css"
-'2  7  0  ~/public/input.css
-|4,50,7,0,1711557079,"~/public/input.css"
-'3  1  12  ~/public/.gitignore
-|4,51,1,12,1711552148,"~/public/.gitignore"
-'4  1  12  ~/public/.gitignore
-|4,52,1,12,1711552148,"~/public/.gitignore"
-'5  1  12  ~/public/.gitignore
-|4,53,1,12,1711552148,"~/public/.gitignore"
-'6  1  12  ~/public/.gitignore
-|4,54,1,12,1711552148,"~/public/.gitignore"
-'7  1  0  ~/public/tailwindcss-base.css
-|4,55,1,0,1711552087,"~/public/tailwindcss-base.css"
-'8  1  0  ~/public/tailwindcss-base.css
-|4,56,1,0,1711552087,"~/public/tailwindcss-base.css"
-'9  1  0  ~/public/tailwindcss-base.css
-|4,57,1,0,1711552087,"~/public/tailwindcss-base.css"
+'0  1  0  ~/.config/alias.sh
+|4,48,1,0,1712960279,"~/.config/alias.sh"
+'1  1  0  ~/.config/setup.sh
+|4,49,1,0,1712960275,"~/.config/setup.sh"
+'2  1  0  ~/.config/setup.sh
+|4,50,1,0,1712960275,"~/.config/setup.sh"
+'3  1  0  ~/.config/bindings.inputrc
+|4,51,1,0,1712960273,"~/.config/bindings.inputrc"
+'4  1  0  ~/.config/bindings.inputrc
+|4,52,1,0,1712960273,"~/.config/bindings.inputrc"
+'5  1  0  ~/.config/bindings.inputrc
+|4,53,1,0,1712960273,"~/.config/bindings.inputrc"
+'6  1  0  ~/.config/bindings.inputrc
+|4,54,1,0,1712960273,"~/.config/bindings.inputrc"
+'7  22  19  ~/.config/alias.sh
+|4,55,22,19,1712960244,"~/.config/alias.sh"
+'8  22  19  ~/.config/alias.sh
+|4,56,22,19,1712960244,"~/.config/alias.sh"
+'9  22  19  ~/.config/alias.sh
+|4,57,22,19,1712960244,"~/.config/alias.sh"
 
 # Jumplist (newest first):
--'  10  0  ~/public/input.css
-|4,39,10,0,1711563599,"~/public/input.css"
--'  7  0  ~/public/input.css
-|4,39,7,0,1711557079,"~/public/input.css"
--'  12  6  ~/elements/elements_frontend/src/components/Elements.vue
-|4,39,12,6,1711557079,"~/elements/elements_frontend/src/components/Elements.vue"
--'  7  0  ~/public/input.css
-|4,39,7,0,1711557079,"~/public/input.css"
--'  12  6  ~/elements/elements_frontend/src/components/Elements.vue
-|4,39,12,6,1711557079,"~/elements/elements_frontend/src/components/Elements.vue"
--'  8  0  ~/public/input.css
-|4,39,8,0,1711553844,"~/public/input.css"
--'  8  0  ~/public/input.css
-|4,39,8,0,1711553844,"~/public/input.css"
--'  1  0  ~/public/input.css
-|4,39,1,0,1711553811,"~/public/input.css"
--'  1  0  ~/public/input.css
-|4,39,1,0,1711553811,"~/public/input.css"
--'  1  12  ~/public/.gitignore
-|4,39,1,12,1711552148,"~/public/.gitignore"
--'  1  12  ~/public/.gitignore
-|4,39,1,12,1711552148,"~/public/.gitignore"
--'  1  12  ~/public/.gitignore
-|4,39,1,12,1711552148,"~/public/.gitignore"
--'  1  0  ~/public/tailwindcss-base.css
-|4,39,1,0,1711552087,"~/public/tailwindcss-base.css"
--'  1  0  ~/public/tailwindcss-base.css
-|4,39,1,0,1711552087,"~/public/tailwindcss-base.css"
--'  1  0  ~/public/tailwindcss-base.css
-|4,39,1,0,1711552087,"~/public/tailwindcss-base.css"
--'  1  0  ~/public/tailwindcss-base.css
-|4,39,1,0,1711552087,"~/public/tailwindcss-base.css"
--'  550  0  ~/public/tailwindcss-output.css
-|4,39,550,0,1711552036,"~/public/tailwindcss-output.css"
--'  550  0  ~/public/tailwindcss-output.css
-|4,39,550,0,1711552036,"~/public/tailwindcss-output.css"
--'  550  0  ~/public/tailwindcss-output.css
-|4,39,550,0,1711552036,"~/public/tailwindcss-output.css"
--'  550  0  ~/public/tailwindcss-output.css
-|4,39,550,0,1711552036,"~/public/tailwindcss-output.css"
--'  550  0  ~/public/tailwindcss-output.css
-|4,39,550,0,1711552036,"~/public/tailwindcss-output.css"
--'  102  0  ~/public/tailwindcss-output.css
-|4,39,102,0,1711552032,"~/public/tailwindcss-output.css"
--'  102  0  ~/public/tailwindcss-output.css
-|4,39,102,0,1711552032,"~/public/tailwindcss-output.css"
--'  102  0  ~/public/tailwindcss-output.css
-|4,39,102,0,1711552032,"~/public/tailwindcss-output.css"
--'  102  0  ~/public/tailwindcss-output.css
-|4,39,102,0,1711552032,"~/public/tailwindcss-output.css"
--'  102  0  ~/public/tailwindcss-output.css
-|4,39,102,0,1711552032,"~/public/tailwindcss-output.css"
--'  1  0  ~/public/tailwindcss-output.css
-|4,39,1,0,1711552027,"~/public/tailwindcss-output.css"
--'  1  0  ~/public/tailwindcss-output.css
-|4,39,1,0,1711552027,"~/public/tailwindcss-output.css"
--'  1  0  ~/public/tailwindcss-output.css
-|4,39,1,0,1711552027,"~/public/tailwindcss-output.css"
--'  1  0  ~/public/tailwindcss-output.css
-|4,39,1,0,1711552027,"~/public/tailwindcss-output.css"
--'  1  0  ~/public/tailwindcss-output.css
-|4,39,1,0,1711552027,"~/public/tailwindcss-output.css"
--'  1  0  ~/.npm/_logs/2024-03-27T15_00_37_825Z-debug-0.log
-|4,39,1,0,1711551670,"~/.npm/_logs/2024-03-27T15_00_37_825Z-debug-0.log"
--'  1  0  ~/.npm/_logs/2024-03-27T15_00_37_825Z-debug-0.log
-|4,39,1,0,1711551670,"~/.npm/_logs/2024-03-27T15_00_37_825Z-debug-0.log"
--'  1  0  ~/.npm/_logs/2024-03-27T15_00_37_825Z-debug-0.log
-|4,39,1,0,1711551670,"~/.npm/_logs/2024-03-27T15_00_37_825Z-debug-0.log"
--'  1  0  ~/.npm/_logs/2024-03-27T15_00_37_825Z-debug-0.log
-|4,39,1,0,1711551670,"~/.npm/_logs/2024-03-27T15_00_37_825Z-debug-0.log"
--'  1  0  ~/.npm/_logs/2024-03-27T15_00_37_825Z-debug-0.log
-|4,39,1,0,1711551670,"~/.npm/_logs/2024-03-27T15_00_37_825Z-debug-0.log"
--'  1  0  ~/.npm/_logs/2024-03-27T15_00_37_825Z-debug-0.log
-|4,39,1,0,1711551670,"~/.npm/_logs/2024-03-27T15_00_37_825Z-debug-0.log"
--'  1  0  ~/public/tailwind-base.css
-|4,39,1,0,1711546506,"~/public/tailwind-base.css"
--'  1  0  ~/public/tailwind-base.css
-|4,39,1,0,1711546506,"~/public/tailwind-base.css"
--'  1  0  ~/public/tailwind-base.css
-|4,39,1,0,1711546506,"~/public/tailwind-base.css"
--'  1  0  ~/public/tailwind-base.css
-|4,39,1,0,1711546506,"~/public/tailwind-base.css"
--'  1  0  ~/public/tailwind-base.css
-|4,39,1,0,1711546506,"~/public/tailwind-base.css"
--'  1  0  ~/public/tailwind-base.css
-|4,39,1,0,1711546506,"~/public/tailwind-base.css"
--'  1  0  ~/public/tailwind-base.css
-|4,39,1,0,1711546506,"~/public/tailwind-base.css"
--'  9  0  ~/public/tailwind-base.css
-|4,39,9,0,1711546381,"~/public/tailwind-base.css"
--'  9  0  ~/public/tailwind-base.css
-|4,39,9,0,1711546381,"~/public/tailwind-base.css"
--'  9  0  ~/public/tailwind-base.css
-|4,39,9,0,1711546381,"~/public/tailwind-base.css"
--'  9  0  ~/public/tailwind-base.css
-|4,39,9,0,1711546381,"~/public/tailwind-base.css"
--'  9  0  ~/public/tailwind-base.css
-|4,39,9,0,1711546381,"~/public/tailwind-base.css"
--'  9  0  ~/public/tailwind-base.css
-|4,39,9,0,1711546381,"~/public/tailwind-base.css"
--'  9  0  ~/public/tailwind-base.css
-|4,39,9,0,1711546381,"~/public/tailwind-base.css"
--'  9  0  ~/public/tailwind-base.css
-|4,39,9,0,1711546381,"~/public/tailwind-base.css"
--'  1  0  ~/public/tailwind-base.css
-|4,39,1,0,1711546360,"~/public/tailwind-base.css"
--'  10  0  ~/.config/setup.sh
-|4,39,10,0,1711546357,"~/.config/setup.sh"
--'  10  0  ~/.config/setup.sh
-|4,39,10,0,1711546357,"~/.config/setup.sh"
--'  10  0  ~/.config/setup.sh
-|4,39,10,0,1711546357,"~/.config/setup.sh"
--'  10  0  ~/.config/setup.sh
-|4,39,10,0,1711546357,"~/.config/setup.sh"
--'  10  0  ~/.config/setup.sh
-|4,39,10,0,1711546357,"~/.config/setup.sh"
--'  10  0  ~/.config/setup.sh
-|4,39,10,0,1711546357,"~/.config/setup.sh"
--'  10  0  ~/.config/setup.sh
-|4,39,10,0,1711546357,"~/.config/setup.sh"
--'  10  0  ~/.config/setup.sh
-|4,39,10,0,1711546357,"~/.config/setup.sh"
--'  10  0  ~/.config/setup.sh
-|4,39,10,0,1711546357,"~/.config/setup.sh"
+-'  1  0  ~/.config/alias.sh
+|4,39,1,0,1712960279,"~/.config/alias.sh"
 -'  1  0  ~/.config/setup.sh
-|4,39,1,0,1711545981,"~/.config/setup.sh"
+|4,39,1,0,1712960275,"~/.config/setup.sh"
 -'  1  0  ~/.config/setup.sh
-|4,39,1,0,1711545981,"~/.config/setup.sh"
+|4,39,1,0,1712960275,"~/.config/setup.sh"
+-'  1  0  ~/.config/bindings.inputrc
+|4,39,1,0,1712960273,"~/.config/bindings.inputrc"
+-'  1  0  ~/.config/bindings.inputrc
+|4,39,1,0,1712960273,"~/.config/bindings.inputrc"
+-'  1  0  ~/.config/bindings.inputrc
+|4,39,1,0,1712960273,"~/.config/bindings.inputrc"
+-'  22  19  ~/.config/alias.sh
+|4,39,22,19,1712960244,"~/.config/alias.sh"
+-'  22  19  ~/.config/alias.sh
+|4,39,22,19,1712960244,"~/.config/alias.sh"
+-'  22  19  ~/.config/alias.sh
+|4,39,22,19,1712960244,"~/.config/alias.sh"
+-'  22  19  ~/.config/alias.sh
+|4,39,22,19,1712960244,"~/.config/alias.sh"
+-'  22  19  ~/.config/alias.sh
+|4,39,22,19,1712960241,"~/.config/alias.sh"
+-'  18  0  ~/.config/alias.sh
+|4,39,18,0,1712960235,"~/.config/alias.sh"
+-'  18  0  ~/.config/alias.sh
+|4,39,18,0,1712960235,"~/.config/alias.sh"
+-'  18  0  ~/.config/alias.sh
+|4,39,18,0,1712960235,"~/.config/alias.sh"
+-'  18  0  ~/.config/alias.sh
+|4,39,18,0,1712960235,"~/.config/alias.sh"
+-'  18  0  ~/.config/alias.sh
+|4,39,18,0,1712960235,"~/.config/alias.sh"
+-'  18  0  ~/.config/alias.sh
+|4,39,18,0,1712960223,"~/.config/alias.sh"
+-'  18  0  ~/.config/alias.sh
+|4,39,18,0,1712960218,"~/.config/alias.sh"
+-'  1  0  ~/.config/alias.sh
+|4,39,1,0,1712960139,"~/.config/alias.sh"
+-'  1  0  ~/.config/alias.sh
+|4,39,1,0,1712960139,"~/.config/alias.sh"
+-'  1  0  ~/.config/alias.sh
+|4,39,1,0,1712960139,"~/.config/alias.sh"
+-'  1  0  ~/.config/alias.sh
+|4,39,1,0,1712960139,"~/.config/alias.sh"
+-'  1  0  ~/.config/alias.sh
+|4,39,1,0,1712960139,"~/.config/alias.sh"
+-'  1  0  ~/.config/alias.sh
+|4,39,1,0,1712960139,"~/.config/alias.sh"
+-'  3  0  ~/.config/setup.sh
+|4,39,3,0,1712960137,"~/.config/setup.sh"
+-'  3  0  ~/.config/setup.sh
+|4,39,3,0,1712960137,"~/.config/setup.sh"
+-'  3  0  ~/.config/setup.sh
+|4,39,3,0,1712960137,"~/.config/setup.sh"
+-'  3  0  ~/.config/setup.sh
+|4,39,3,0,1712960137,"~/.config/setup.sh"
+-'  3  0  ~/.config/setup.sh
+|4,39,3,0,1712960137,"~/.config/setup.sh"
+-'  3  0  ~/.config/setup.sh
+|4,39,3,0,1712960137,"~/.config/setup.sh"
+-'  3  0  ~/.config/setup.sh
+|4,39,3,0,1712960137,"~/.config/setup.sh"
+-'  121  24  ~/.bashrc
+|4,39,121,24,1712960134,"~/.bashrc"
+-'  121  24  ~/.bashrc
+|4,39,121,24,1712960134,"~/.bashrc"
+-'  121  24  ~/.bashrc
+|4,39,121,24,1712960134,"~/.bashrc"
+-'  121  24  ~/.bashrc
+|4,39,121,24,1712960134,"~/.bashrc"
+-'  121  24  ~/.bashrc
+|4,39,121,24,1712960134,"~/.bashrc"
+-'  121  24  ~/.bashrc
+|4,39,121,24,1712960134,"~/.bashrc"
+-'  121  24  ~/.bashrc
+|4,39,121,24,1712960134,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1712960131,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1712960131,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1712960131,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1712960131,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1712960131,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1712960131,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1712960131,"~/.bashrc"
 -'  1  0  ~/.config/setup.sh
-|4,39,1,0,1711545981,"~/.config/setup.sh"
+|4,39,1,0,1712960112,"~/.config/setup.sh"
 -'  1  0  ~/.config/setup.sh
-|4,39,1,0,1711545981,"~/.config/setup.sh"
+|4,39,1,0,1712960112,"~/.config/setup.sh"
 -'  1  0  ~/.config/setup.sh
-|4,39,1,0,1711545981,"~/.config/setup.sh"
+|4,39,1,0,1712960112,"~/.config/setup.sh"
 -'  1  0  ~/.config/setup.sh
-|4,39,1,0,1711545981,"~/.config/setup.sh"
+|4,39,1,0,1712960112,"~/.config/setup.sh"
 -'  1  0  ~/.config/setup.sh
-|4,39,1,0,1711545981,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1711545981,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1711545981,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1711545981,"~/.config/setup.sh"
--'  8  2  ~/public/tailwind-base.css
-|4,39,8,2,1711545973,"~/public/tailwind-base.css"
--'  8  2  ~/public/tailwind-base.css
-|4,39,8,2,1711545973,"~/public/tailwind-base.css"
--'  8  2  ~/public/tailwind-base.css
-|4,39,8,2,1711545973,"~/public/tailwind-base.css"
--'  8  2  ~/public/tailwind-base.css
-|4,39,8,2,1711545973,"~/public/tailwind-base.css"
--'  8  2  ~/public/tailwind-base.css
-|4,39,8,2,1711545973,"~/public/tailwind-base.css"
--'  8  2  ~/public/tailwind-base.css
-|4,39,8,2,1711545973,"~/public/tailwind-base.css"
--'  8  2  ~/public/tailwind-base.css
-|4,39,8,2,1711545973,"~/public/tailwind-base.css"
--'  8  2  ~/public/tailwind-base.css
-|4,39,8,2,1711545973,"~/public/tailwind-base.css"
--'  8  2  ~/public/tailwind-base.css
-|4,39,8,2,1711545973,"~/public/tailwind-base.css"
--'  8  2  ~/public/tailwind-base.css
-|4,39,8,2,1711545973,"~/public/tailwind-base.css"
--'  8  2  ~/public/tailwind-base.css
-|4,39,8,2,1711545973,"~/public/tailwind-base.css"
--'  11  0  ~/public/tailwind-base.css
-|4,39,11,0,1711545950,"~/public/tailwind-base.css"
--'  12  0  ~/public/tailwind-base.css
-|4,39,12,0,1711545950,"~/public/tailwind-base.css"
--'  11  0  ~/public/tailwind-base.css
-|4,39,11,0,1711545950,"~/public/tailwind-base.css"
--'  12  0  ~/public/tailwind-base.css
-|4,39,12,0,1711545950,"~/public/tailwind-base.css"
--'  11  0  ~/public/tailwind-base.css
-|4,39,11,0,1711545950,"~/public/tailwind-base.css"
--'  12  0  ~/public/tailwind-base.css
-|4,39,12,0,1711545950,"~/public/tailwind-base.css"
--'  11  0  ~/public/tailwind-base.css
-|4,39,11,0,1711545950,"~/public/tailwind-base.css"
--'  12  0  ~/public/tailwind-base.css
-|4,39,12,0,1711545950,"~/public/tailwind-base.css"
--'  11  0  ~/public/tailwind-base.css
-|4,39,11,0,1711545950,"~/public/tailwind-base.css"
--'  12  0  ~/public/tailwind-base.css
-|4,39,12,0,1711545950,"~/public/tailwind-base.css"
--'  11  0  ~/public/tailwind-base.css
-|4,39,11,0,1711545950,"~/public/tailwind-base.css"
--'  12  0  ~/public/tailwind-base.css
-|4,39,12,0,1711545950,"~/public/tailwind-base.css"
--'  11  0  ~/public/tailwind-base.css
-|4,39,11,0,1711545950,"~/public/tailwind-base.css"
--'  12  0  ~/public/tailwind-base.css
-|4,39,12,0,1711545950,"~/public/tailwind-base.css"
--'  11  0  ~/public/tailwind-base.css
-|4,39,11,0,1711545950,"~/public/tailwind-base.css"
--'  12  0  ~/public/tailwind-base.css
-|4,39,12,0,1711545950,"~/public/tailwind-base.css"
+|4,39,1,0,1712960112,"~/.config/setup.sh"
+-'  1  0  ~/genproject/sql_checklist.txt
+|4,39,1,0,1712960094,"~/genproject/sql_checklist.txt"
+-'  1  0  ~/genproject/sql_checklist.txt
+|4,39,1,0,1712960094,"~/genproject/sql_checklist.txt"
+-'  1  0  ~/genproject/sql_checklist.txt
+|4,39,1,0,1712960094,"~/genproject/sql_checklist.txt"
+-'  1  0  ~/genproject/sql_checklist.txt
+|4,39,1,0,1712960094,"~/genproject/sql_checklist.txt"
+-'  1  0  ~/genproject/sql_checklist.txt
+|4,39,1,0,1712960094,"~/genproject/sql_checklist.txt"
+-'  1  0  ~/genproject/sql_checklist.txt
+|4,39,1,0,1712960094,"~/genproject/sql_checklist.txt"
+-'  1  0  ~/genproject/sql_checklist.txt
+|4,39,1,0,1712960094,"~/genproject/sql_checklist.txt"
+-'  1  0  ~/genproject/sql_checklist.txt
+|4,39,1,0,1712960094,"~/genproject/sql_checklist.txt"
+-'  1  0  ~/.config/gita/repos.csv
+|4,39,1,0,1712959462,"~/.config/gita/repos.csv"
+-'  1  0  ~/.config/gita/repos.csv
+|4,39,1,0,1712959462,"~/.config/gita/repos.csv"
+-'  1  0  ~/.config/gita/repos.csv
+|4,39,1,0,1712959462,"~/.config/gita/repos.csv"
+-'  1  0  ~/.config/gita/repos.csv
+|4,39,1,0,1712959462,"~/.config/gita/repos.csv"
+-'  1  0  ~/.config/gita/repos.csv
+|4,39,1,0,1712959462,"~/.config/gita/repos.csv"
+-'  1  0  ~/.config/gita/repos.csv
+|4,39,1,0,1712959462,"~/.config/gita/repos.csv"
+-'  1  0  ~/.config/gita/repos.csv
+|4,39,1,0,1712959462,"~/.config/gita/repos.csv"
+-'  1  0  ~/.config/gita/repos.csv
+|4,39,1,0,1712959462,"~/.config/gita/repos.csv"
+-'  1  0  ~/.config/gita/repos.csv
+|4,39,1,0,1712959462,"~/.config/gita/repos.csv"
+-'  1  0  ~/.config/gita/repos.csv
+|4,39,1,0,1712959455,"~/.config/gita/repos.csv"
+-'  1  0  ~/hateoas/hateoas_backend/sample.sql
+|4,39,1,0,1712959304,"~/hateoas/hateoas_backend/sample.sql"
+-'  1  0  ~/hateoas/hateoas_backend/sample.sql
+|4,39,1,0,1712959304,"~/hateoas/hateoas_backend/sample.sql"
+-'  1  0  ~/hateoas/hateoas_backend/sample.sql
+|4,39,1,0,1712959304,"~/hateoas/hateoas_backend/sample.sql"
+-'  1  0  ~/hateoas/hateoas_backend/sample.sql
+|4,39,1,0,1712959304,"~/hateoas/hateoas_backend/sample.sql"
+-'  1  0  ~/hateoas/hateoas_backend/sample.sql
+|4,39,1,0,1712959304,"~/hateoas/hateoas_backend/sample.sql"
+-'  1  0  ~/hateoas/hateoas_backend/sample.sql
+|4,39,1,0,1712959304,"~/hateoas/hateoas_backend/sample.sql"
+-'  1  0  ~/hateoas/hateoas_backend/sample.sql
+|4,39,1,0,1712959304,"~/hateoas/hateoas_backend/sample.sql"
+-'  1  0  ~/hateoas/hateoas_backend/sample.sql
+|4,39,1,0,1712959304,"~/hateoas/hateoas_backend/sample.sql"
+-'  1  0  ~/hateoas/hateoas_backend/sample.sql
+|4,39,1,0,1712959304,"~/hateoas/hateoas_backend/sample.sql"
+-'  1  0  ~/hateoas/hateoas_backend/sample.sql
+|4,39,1,0,1712959304,"~/hateoas/hateoas_backend/sample.sql"
+-'  1  0  ~/hateoas/hateoas_backend/sample.sql
+|4,39,1,0,1712959304,"~/hateoas/hateoas_backend/sample.sql"
+-'  57  15  ~/.vim/coc-settings.json
+|4,39,57,15,1712959267,"~/.vim/coc-settings.json"
+-'  57  15  ~/.vim/coc-settings.json
+|4,39,57,15,1712959267,"~/.vim/coc-settings.json"
+-'  57  15  ~/.vim/coc-settings.json
+|4,39,57,15,1712959267,"~/.vim/coc-settings.json"
+-'  57  15  ~/.vim/coc-settings.json
+|4,39,57,15,1712959267,"~/.vim/coc-settings.json"
+-'  57  15  ~/.vim/coc-settings.json
+|4,39,57,15,1712959267,"~/.vim/coc-settings.json"
+-'  57  15  ~/.vim/coc-settings.json
+|4,39,57,15,1712959267,"~/.vim/coc-settings.json"
+-'  57  15  ~/.vim/coc-settings.json
+|4,39,57,15,1712959267,"~/.vim/coc-settings.json"
+-'  57  15  ~/.vim/coc-settings.json
+|4,39,57,15,1712959267,"~/.vim/coc-settings.json"
+-'  57  15  ~/.vim/coc-settings.json
+|4,39,57,15,1712959267,"~/.vim/coc-settings.json"
+-'  57  15  ~/.vim/coc-settings.json
+|4,39,57,15,1712959267,"~/.vim/coc-settings.json"
+-'  57  15  ~/.vim/coc-settings.json
+|4,39,57,15,1712959267,"~/.vim/coc-settings.json"
+-'  2  5  ~/hateoas/hateoas_backend/sample.sql
+|4,39,2,5,1712953339,"~/hateoas/hateoas_backend/sample.sql"
+-'  2  5  ~/hateoas/hateoas_backend/sample.sql
+|4,39,2,5,1712953339,"~/hateoas/hateoas_backend/sample.sql"
+-'  2  5  ~/hateoas/hateoas_backend/sample.sql
+|4,39,2,5,1712953339,"~/hateoas/hateoas_backend/sample.sql"
+-'  2  5  ~/hateoas/hateoas_backend/sample.sql
+|4,39,2,5,1712953339,"~/hateoas/hateoas_backend/sample.sql"
+-'  2  5  ~/hateoas/hateoas_backend/sample.sql
+|4,39,2,5,1712953339,"~/hateoas/hateoas_backend/sample.sql"
+-'  2  5  ~/hateoas/hateoas_backend/sample.sql
+|4,39,2,5,1712953339,"~/hateoas/hateoas_backend/sample.sql"
+-'  2  5  ~/hateoas/hateoas_backend/sample.sql
+|4,39,2,5,1712953339,"~/hateoas/hateoas_backend/sample.sql"
+-'  2  5  ~/hateoas/hateoas_backend/sample.sql
+|4,39,2,5,1712953339,"~/hateoas/hateoas_backend/sample.sql"
+-'  2  5  ~/hateoas/hateoas_backend/sample.sql
+|4,39,2,5,1712953339,"~/hateoas/hateoas_backend/sample.sql"
+-'  2  5  ~/hateoas/hateoas_backend/sample.sql
+|4,39,2,5,1712953339,"~/hateoas/hateoas_backend/sample.sql"
 
 # Buffer list:
-%~/public/input.css	10	0
+%~/.config/alias.sh	1	0
 
 # History of marks within files (newest to oldest):
+
+> ~/.config/alias.sh
+	*	1712960278	0
+	"	1	0
+	^	22	20
+	.	22	19
+	+	2	0
+	+	15	37
+	+	18	77
+	+	18	42
+	+	18	47
+	+	18	32
+	+	19	39
+	+	20	40
+	+	21	79
+	+	21	0
+	+	21	36
+	+	21	20
+	+	21	25
+	+	22	45
+	+	23	0
+	+	21	0
+	+	18	0
+	+	22	19
+
+> ~/.config/setup.sh
+	*	1712960274	0
+	"	1	0
+	.	25	0
+	+	13	68
+	+	13	27
+	+	5	0
+	+	4	1
+	+	13	34
+	+	4	0
+	+	5	0
+	+	13	0
+	+	4	0
+	+	13	0
+	+	3	0
+	+	4	0
+	+	13	0
+	+	5	0
+	+	13	0
+	+	13	1
+	+	13	8
+	+	13	10
+	+	13	155
+	+	13	8
+	+	13	123
+	+	13	0
+	+	24	26
+	+	25	27
+	+	7	41
+	+	9	23
+	+	12	0
+	+	9	75
+	+	12	0
+	+	9	63
+	+	12	0
+	+	9	54
+	+	13	71
+	+	13	89
+	+	13	0
+	+	11	38
+	+	10	0
+	+	10	13
+	+	10	0
+	+	13	9
+	+	13	17
+	+	26	0
+	+	4	0
+	+	15	0
+	+	13	14
+	+	27	34
+	+	9	0
+	+	9	29
+	+	1	11
+	+	13	0
+	+	14	0
+	+	13	0
+	+	23	0
+	+	9	0
+	+	10	0
+	+	13	0
+	+	27	0
+	+	8	0
+	+	13	0
+	+	30	35
+	+	25	1
+	+	28	0
+	+	31	0
+	+	25	0
+
+> ~/.config/bindings.inputrc
+	*	1712960270	0
+	"	1	0
+
+> ~/.bashrc
+	*	1712960133	0
+	"	121	24
+	^	125	0
+	.	130	0
+	+	120	0
+	+	120	55
+	+	120	0
+	+	120	47
+	+	126	0
+	+	120	0
+	+	126	0
+	+	125	0
+	+	129	0
+	+	130	0
+
+> ~/genproject/sql_checklist.txt
+	*	1712960092	0
+	"	1	0
+	.	10	0
+	+	12	29
+	+	13	29
+	+	13	0
+	+	12	40
+	+	13	0
+	+	4	19
+	+	13	45
+	+	4	0
+	+	27	35
+	+	27	4
+	+	27	82
+	+	27	81
+	+	27	4
+	+	27	0
+	+	27	90
+	+	27	26
+	+	27	24
+	+	27	26
+	+	27	0
+	+	17	8
+	+	27	0
+	+	16	0
+	+	27	0
+	+	21	54
+	+	21	35
+	+	22	53
+	+	23	39
+	+	27	49
+	+	27	0
+	+	21	0
+	+	27	0
+	+	27	55
+	+	27	56
+	+	27	0
+	+	27	49
+	+	27	55
+	+	27	56
+	+	27	0
+	+	21	0
+	+	26	0
+	+	27	69
+	+	27	4
+	+	27	0
+	+	24	0
+	+	27	44
+	+	27	0
+	+	19	0
+	+	27	0
+	+	27	76
+	+	27	0
+	+	18	0
+	+	27	0
+	+	27	3
+	+	27	26
+	+	27	18
+	+	27	35
+	+	27	0
+	+	11	24
+	+	20	26
+	+	10	0
+	+	6	9
+	+	9	21
+	+	10	0
+	+	12	0
+	+	5	0
+	+	6	15
+	+	11	24
+	+	20	19
+	+	2	33
+	+	27	14
+	+	27	4
+	+	27	77
+	+	27	79
+	+	27	4
+	+	27	0
+	+	25	0
+	+	27	0
+	+	14	52
+	+	15	19
+	+	16	0
+	+	17	0
+	+	10	30
+	+	9	4
+	+	10	0
+
+> ~/.config/gita/repos.csv
+	*	1712959462	0
+	"	1	0
+
+> ~/hateoas/hateoas_backend/sample.sql
+	*	1712959303	0
+	"	1	0
+	.	2	0
+	+	1	0
+	+	2	32
+	+	2	7
+	+	2	0
+
+> ~/.vim/coc-settings.json
+	*	1712959266	0
+	"	57	15
+	^	58	49
+	.	60	30
+	+	23	0
+	+	30	14
+	+	23	0
+	+	30	0
+	+	30	33
+	+	25	38
+	+	30	0
+	+	25	0
+	+	24	0
+	+	24	34
+	+	24	0
+	+	23	0
+	+	31	0
+	+	31	33
+	+	31	0
+	+	56	21
+	+	56	9
+	+	64	0
+	+	30	0
+	+	24	0
+	+	24	111
+	+	16	0
+	+	13	0
+	+	15	0
+	+	30	0
+	+	30	33
+	+	30	35
+	+	30	0
+	+	30	9
+	+	30	0
+	+	30	37
+	+	30	32
+	+	30	34
+	+	30	0
+	+	21	0
+	+	19	39
+	+	21	0
+	+	20	28
+	+	19	37
+	+	2	0
+	+	30	0
+	+	30	11
+	+	30	0
+	+	2	0
+	+	14	0
+	+	15	0
+	+	16	0
+	+	15	0
+	+	2	33
+	+	3	38
+	+	16	0
+	+	4	0
+	+	9	0
+	+	11	0
+	+	20	0
+	+	16	0
+	+	19	0
+	+	20	0
+	+	21	0
+	+	29	42
+	+	22	0
+	+	29	0
+	+	25	34
+	+	29	0
+	+	28	0
+	+	25	0
+	+	4	0
+	+	23	0
+	+	4	0
+	+	28	0
+	+	26	37
+	+	3	38
+	+	9	0
+	+	6	33
+	+	9	0
+	+	7	49
+	+	9	0
+	+	5	0
+	+	8	131
+	+	7	78
+	+	5	0
+	+	20	0
+	+	47	0
+	+	46	25
+	+	47	0
+	+	65	0
+	+	35	14
+	+	36	44
+	+	34	0
+	+	63	0
+	+	62	0
+	+	59	71
+	+	60	33
+	+	62	0
+	+	61	16
+	+	62	0
+	+	61	25
+	+	60	11
+	+	58	48
+	+	60	30
+
+> ~/.config/sqls/config.yml
+	*	1712951765	0
+	"	5	24
+	^	5	25
+	.	5	24
+	+	1	15
+	+	5	4
+	+	4	16
+	+	5	24
+
+> ~/frontend/src/components/Db.vue
+	*	1712951301	0
+	"	1	0
+
+> ~/mwh/authtest.py
+	*	1712794158	0
+	"	3	0
+	^	2	10
+	.	6	7
+	+	12	20
+	+	20	0
+	+	16	8
+	+	20	0
+	+	11	20
+	+	20	12
+	+	20	0
+	+	18	27
+	+	20	3
+	+	18	5
+	+	20	8
+	+	19	0
+	+	13	14
+	+	18	11
+	+	20	0
+	+	21	2
+	+	14	13
+	+	21	0
+	+	14	13
+	+	21	25
+	+	22	2
+	+	7	39
+	+	22	0
+	+	8	0
+	+	5	0
+	+	2	9
+	+	4	7
+	+	6	7
+	a	6	7
+	b	6	7
+
+> ~/mwh/mwhauth.py
+	*	1712793332	0
+	"	24	0
+	^	24	87
+	.	24	68
+	+	22	53
+	+	23	0
+	+	22	3
+	+	24	68
+
+> ~/mwh/req1.txt
+	*	1712793147	0
+	"	41	22
+	^	25	42
+	.	25	41
+	+	26	15
+	+	25	41
+
+> ~/mwh/cookies-temp.json
+	*	1712793094	0
+	"	2	14
+	^	2	15
+	.	2	14
+	+	2	14
+
+> ~/mwh/cookie_temp.json
+	*	1712793080	0
+	"	1	0
+
+> ~/mwh/curl.py
+	*	1712791925	0
+	"	39	20
+
+> ~/mwh/mwhscrape.py
+	*	1712791900	0
+	"	78	23
+	^	9	2
+	.	209	0
+	+	9	1
+	+	211	4
+	+	88	0
+	+	210	0
+	+	209	0
+
+> ~/mwh/knowledge_mwh.txt
+	*	1712791786	0
+	"	1	13
+
+> ~/mwh/mwh2.py
+	*	1712791781	0
+	"	156	8
+
+> ~/mwh/req2.txt
+	*	1712791653	0
+	"	2	8
+	^	2	0
+	.	2	0
+	+	1	5
+	+	2	0
+
+> ~/hateoas/hateoas_backend/hateoas-api.py
+	*	1712731443	0
+	"	951	6
+	^	951	7
+	.	951	6
+	+	985	0
+	+	22	0
+	+	65	0
+	+	66	0
+	+	51	0
+	+	22	0
+	+	932	0
+	+	22	57
+	+	66	3
+	+	932	19
+	+	932	57
+	+	932	22
+	+	932	64
+	+	932	13
+	+	932	26
+	+	932	14
+	+	932	48
+	+	932	30
+	+	932	89
+	+	960	0
+	+	932	0
+	+	934	41
+	+	934	15
+	+	934	0
+	+	934	16
+	+	934	25
+	+	934	0
+	+	934	33
+	+	934	44
+	+	934	4
+	+	934	0
+	+	934	53
+	+	934	4
+	+	934	0
+	+	934	4
+	+	934	11
+	+	934	62
+	+	934	4
+	+	934	0
+	+	934	12
+	+	934	22
+	+	906	0
+	+	907	31
+	+	932	0
+	+	932	4
+	+	932	33
+	+	932	34
+	+	932	0
+	+	932	4
+	+	934	4
+	+	934	18
+	+	934	59
+	+	932	17
+	+	932	118
+	+	932	0
+	+	934	0
+	+	934	21
+	+	934	0
+	+	934	1
+	+	934	3
+	+	22	0
+	+	66	0
+	+	932	0
+	+	934	1
+	+	932	0
+	+	934	17
+	+	934	27
+	+	934	39
+	+	934	0
+	+	933	0
+	+	934	0
+	+	78	0
+	+	79	0
+	+	934	0
+	+	933	0
+	+	83	0
+	+	82	0
+	+	83	0
+	+	22	0
+	+	70	0
+	+	69	0
+	+	71	0
+	+	70	55
+	+	78	0
+	+	77	0
+	+	76	51
+	+	951	6
+	a	397	14
+	b	397	14
+	v	163	5
+
+> ~/downloads/index.html
+	*	1712730581	0
+	"	102	14
+
+> ~/hateoas/hateoas_backend/downloads.sql
+	*	1712730287	0
+	"	8	0
+	.	18	0
+	+	17	29
+	+	17	30
+	+	17	0
+	+	17	29
+	+	17	27
+	+	17	0
+	+	17	33
+	+	17	0
+	+	17	5
+	+	17	57
+	+	17	32
+	+	17	6
+	+	17	0
+	+	17	130
+	+	17	77
+	+	17	32
+	+	17	0
+	+	17	59
+	+	17	0
+	+	17	8
+	+	17	12
+	+	17	0
+	+	17	79
+	+	17	51
+	+	17	37
+	+	17	0
+	+	17	29
+	+	17	0
+	+	17	4
+	+	17	0
+	+	17	9
+	+	17	0
+	+	17	28
+	+	17	0
+	+	17	13
+	+	17	0
+	+	17	54
+	+	17	0
+	+	17	41
+	+	17	38
+	+	17	7
+	+	17	34
+	+	17	37
+	+	17	26
+	+	17	63
+	+	17	38
+	+	17	0
+	+	17	71
+	+	17	4
+	+	17	0
+	+	17	80
+	+	17	51
+	+	17	71
+	+	17	66
+	+	17	54
+	+	17	65
+	+	17	0
+	+	17	121
+	+	17	0
+	+	17	8
+	+	17	0
+	+	17	22
+	+	17	0
+	+	17	8
+	+	17	0
+	+	17	3
+	+	17	8
+	+	17	0
+	+	17	8
+	+	18	13
+	+	17	0
+	+	18	16
+	+	17	0
+	+	18	13
+	+	18	22
+	+	18	0
+	+	18	6
+	+	18	3
+	+	18	4
+	+	18	0
+	+	18	19
+	+	18	4
+	+	18	0
+	+	1	0
+	+	18	0
+	+	16	0
+	+	18	0
+
+> ~/hateoas/hateoas_backend/data/downloads.db
+	*	1712727034	0
+	"	1	0
+
+> ~/.config/sql-language-server/.sqllsrc.json
+	*	1712726888	0
+	"	3	0
+	^	4	37
+	.	2	0
+	+	1	1
+	+	3	1
+	+	3	0
+	+	3	58
+	+	10	0
+	+	3	0
+	+	6	73
+	+	7	44
+	+	4	36
+	+	3	0
+	+	2	0
+
+> /usr/lib/node_modules/sql-language-server/dist/bin/cli.js
+	*	1712726879	0
+	"	1	0
+
+> ~/hateoas/hateoas_backend/access_logs.sql
+	*	1712726739	0
+	"	6	4
+	^	6	63
+	.	6	62
+	+	2	41
+	+	10	0
+	+	8	30
+	+	9	8
+	+	8	31
+	+	5	59
+	+	6	65
+	+	7	0
+	+	4	11
+	+	6	62
+
+> ~/hateoas/hateoas_backend/verify_integrity.py
+	*	1712572947	0
+	"	2	0
+	.	2	0
+	+	12	0
+	+	12	27
+	+	12	0
+	+	12	74
+	+	12	27
+	+	12	21
+	+	12	48
+	+	12	14
+	+	12	0
+	+	12	53
+	+	12	64
+	+	12	34
+	+	12	13
+	+	12	0
+	+	2	0
+
+> ~/hateoas/hateoas_backend/flask-server.py
+	*	1712572792	0
+	"	1	0
+	^	22	40
+	.	22	35
+	+	1	0
+	+	4	40
+	+	5	41
+	+	7	21
+	+	9	24
+	+	11	15
+	+	12	12
+	+	19	0
+	+	4	46
+	+	13	37
+	+	18	15
+	+	19	6
+	+	19	34
+	+	19	7
+	+	19	6
+	+	19	28
+	+	19	68
+	+	19	4
+	+	19	13
+	+	19	7
+	+	19	0
+	+	19	7
+	+	19	0
+	+	18	0
+	+	13	36
+	+	15	23
+	+	16	0
+	+	18	0
+	+	19	20
+	+	20	0
+	+	24	26
+	+	25	38
+	+	24	8
+	+	9	0
+	+	8	11
+	+	9	0
+	+	24	0
+	+	20	16
+	+	20	0
+	+	24	0
+	+	22	21
+	+	24	0
+	+	22	35
+
+> ~/hateoas/hateoas_backend/video_download.txt
+	*	1712542340	0
+	"	11	0
+	^	11	0
+	.	10	0
+	+	3	20
+	+	2	62
+	+	3	90
+	+	10	0
+	+	10	66
+	+	10	43
+	+	10	0
+	+	10	34
+	+	10	0
+	+	7	51
+	+	8	34
+	+	9	45
+	+	10	0
+	+	10	39
+	+	10	41
+	+	10	43
+	+	10	0
+
+> ~/hateoas/hateoas_backend/sse.py
+	*	1712523591	0
+	"	4	0
+	^	57	5
+	.	57	0
+	+	1	12
+	+	41	37
+	+	41	3
+	+	41	0
+	+	41	14
+	+	41	0
+	+	41	53
+	+	41	0
+	+	41	27
+	+	41	29
+	+	41	0
+	+	2	25
+	+	41	3
+	+	2	32
+	+	41	0
+	+	41	26
+	+	41	4
+	+	41	55
+	+	3	11
+	+	41	2
+	+	41	0
+	+	41	8
+	+	41	1
+	+	41	16
+	+	6	0
+	+	41	12
+	+	41	0
+	+	41	18
+	+	41	32
+	+	41	0
+	+	41	6
+	+	41	0
+	+	24	0
+	+	23	0
+	+	37	0
+	+	51	0
+	+	50	0
+	+	4	8
+	+	62	0
+	+	61	0
+	+	62	0
+	+	5	32
+	+	59	29
+	+	60	17
+	+	59	4
+	+	52	4
+	+	59	17
+	+	59	0
+	+	53	48
+	+	54	0
+	+	60	27
+	+	60	0
+	+	58	20
+	+	59	52
+	+	58	0
+	+	57	0
+
+> ~/hateoas/hateoas_backend/downloader_routes.py
+	*	1712523542	0
+	"	129	77
+	^	113	78
+	.	113	77
+	+	89	17
+	+	89	18
+	+	89	48
+	+	89	16
+	+	89	23
+	+	89	16
+	+	71	21
+	+	72	4
+	+	89	19
+	+	118	67
+	+	118	12
+	+	118	0
+	+	118	40
+	+	118	0
+	+	118	72
+	+	118	29
+	+	118	0
+	+	118	63
+	+	118	44
+	+	118	52
+	+	118	20
+	+	99	70
+	+	118	37
+	+	118	60
+	+	118	19
+	+	118	20
+	+	118	59
+	+	118	50
+	+	118	28
+	+	118	15
+	+	118	0
+	+	118	56
+	+	118	0
+	+	118	42
+	+	108	0
+	+	118	0
+	+	118	18
+	+	118	27
+	+	118	0
+	+	118	16
+	+	118	20
+	+	118	73
+	+	118	0
+	+	118	20
+	+	118	73
+	+	118	16
+	+	118	0
+	+	7	0
+	+	9	0
+	+	8	11
+	+	118	62
+	+	118	40
+	+	118	18
+	+	118	46
+	+	118	38
+	+	118	29
+	+	118	39
+	+	118	37
+	+	118	0
+	+	118	36
+	+	118	0
+	+	118	33
+	+	118	0
+	+	118	48
+	+	100	85
+	+	99	62
+	+	113	16
+	+	113	132
+	+	113	12
+	+	113	125
+	+	113	36
+	+	117	8
+	+	117	0
+	+	117	12
+	+	117	51
+	+	118	0
+	+	117	0
+	+	106	15
+	+	105	25
+	+	91	0
+	+	89	0
+	+	90	0
+	+	89	0
+	+	5	32
+	+	118	6
+	+	118	74
+	+	113	15
+	+	117	14
+	+	118	15
+	+	118	11
+	+	118	0
+	+	118	84
+	+	118	0
+	+	113	0
+	+	117	0
+	+	118	0
+	+	113	87
+	+	113	17
+	+	117	0
+	+	113	77
+
+> ~/hateoas/hateoas_backend/bridge.py
+	*	1712523161	0
+	"	40	0
+	.	39	34
+	+	8	0
+	+	2	0
+	+	3	0
+	+	7	0
+	+	5	109
+	+	5	9
+	+	7	0
+	+	5	84
+	+	6	13
+	+	5	84
+	+	6	0
+	+	6	48
+	+	10	0
+	+	9	25
+	+	10	0
+	+	11	0
+	+	15	0
+	+	15	43
+	+	14	38
+	+	15	0
+	+	15	24
+	+	4	10
+	+	15	31
+	+	14	51
+	+	15	0
+	+	14	26
+	+	15	0
+	+	14	18
+	+	15	24
+	+	14	26
+	+	15	11
+	+	14	18
+	+	13	27
+	+	14	21
+	+	13	47
+	+	14	88
+	+	16	46
+	+	15	0
+	+	14	0
+	+	15	0
+	+	16	11
+	+	16	23
+	+	16	11
+	+	16	23
+	+	16	0
+	+	16	19
+	+	16	34
+	+	16	18
+	+	16	29
+	+	16	20
+	+	16	19
+	+	16	38
+	+	16	20
+	+	16	37
+	+	16	0
+	+	16	14
+	+	16	24
+	+	16	15
+	+	16	0
+	+	15	0
+	+	39	52
+	+	40	45
+	+	42	6
+	+	41	32
+	+	42	0
+	+	39	34
+
+> /usr/share/vim/vim90/doc/help.txt
+	*	1712523100	0
+	"	1	0
+
+> ~/hateoas/hateoas_backend/downloader.py
+	*	1712521378	0
+	"	53	0
+	.	53	0
+	+	62	0
+	+	2	0
+	+	3	0
+	+	1	0
+	+	2	0
+	+	54	11
+	+	11	14
+	+	30	0
+	+	12	18
+	+	11	0
+	+	13	0
+	+	42	18
+	+	48	18
+	+	51	22
+	+	55	14
+	+	56	0
+	+	42	53
+	+	48	55
+	+	47	0
+	+	44	28
+	+	45	19
+	+	46	0
+	+	47	0
+	+	46	0
+	+	20	31
+	+	30	42
+	+	30	77
+	+	30	40
+	+	30	81
+	+	30	44
+	+	30	0
+	+	30	77
+	+	30	28
+	+	30	0
+	+	30	51
+	+	30	28
+	+	30	16
+	+	30	36
+	+	30	29
+	+	30	0
+	+	30	8
+	+	30	40
+	+	30	0
+	+	30	61
+	+	30	15
+	+	30	23
+	+	30	35
+	+	30	0
+	+	30	62
+	+	30	0
+	+	53	8
+	+	20	71
+	+	30	0
+	+	30	16
+	+	30	4
+	+	30	0
+	+	30	23
+	+	30	0
+	+	30	21
+	+	30	0
+	+	20	4
+	+	30	0
+	+	18	0
+	+	21	35
+	+	23	29
+	+	30	4
+	+	23	36
+	+	23	8
+	+	61	0
+	+	60	0
+	+	60	21
+	+	23	9
+	+	30	0
+	+	23	29
+	+	20	0
+	+	23	0
+	+	19	0
+	+	24	4
+	+	19	0
+	+	25	4
+	+	26	28
+	+	27	4
+	+	27	9
+	+	28	4
+	+	22	0
+	+	30	0
+	+	28	4
+	+	29	6
+	+	29	8
+	+	28	0
+	+	23	0
+	+	28	50
+	+	29	0
+	+	30	0
+	+	60	4
+	+	61	4
+	+	58	0
+	+	53	0
+
+> ~/python_common/waivek/db.py
+	*	1712519058	0
+	"	68	77
+	^	70	55
+	.	68	77
+	+	15	45
+	+	128	5
+	+	49	0
+	+	41	14
+	+	54	0
+	+	76	0
+	+	54	11
+	+	65	0
+	+	64	0
+	+	65	0
+	+	56	4
+	+	63	0
+	+	58	31
+	+	61	0
+	+	59	44
+	+	61	0
+	+	68	65
+	+	75	0
+	+	60	102
+	+	75	0
+	+	74	0
+	+	75	33
+	+	75	0
+	+	75	46
+	+	74	0
+	+	67	0
+	+	74	0
+	+	65	0
+	+	74	0
+	+	68	68
+	+	74	4
+	+	74	0
+	+	54	26
+	+	68	76
+	+	70	49
+	+	72	39
+	+	72	42
+	+	73	35
+	+	74	42
+	+	74	0
+	+	70	14
+	+	72	0
+	+	74	0
+	+	73	22
+	+	74	0
+	+	73	0
+	+	72	9
+	+	71	5
+	+	73	24
+	+	72	13
+	+	73	13
+	+	72	6
+	+	73	6
+	+	70	54
+	+	69	0
+	+	68	77
+
+> ~/hateoas/hateoas_backend/download_logs.sql
+	*	1712518563	0
+	"	1	0
+	.	2	0
+	+	2	0
+
+> ~/hateoas/hateoas_backend/downloads
+	*	1712518472	0
+	"	1	0
+
+> ~/.pypirc
+	*	1712512714	0
+	"	8	0
+	.	9	0
+	+	9	0
+	+	8	23
+	+	9	0
+
+> ~/python_common/setup.py
+	*	1712512621	0
+	"	36	4
+	^	29	21
+	.	29	20
+	+	54	9
+	+	52	6
+	+	30	44
+	+	34	48
+	+	36	7
+	+	38	0
+	+	37	0
+	+	38	42
+	+	40	27
+	+	42	109
+	+	44	11
+	+	51	23
+	+	44	0
+	+	51	18
+	+	53	10
+	+	54	0
+	+	52	7
+	+	1	0
+	+	7	0
+	+	5	10
+	+	53	14
+	+	30	24
+	+	32	47
+	+	36	31
+	+	40	33
+	+	36	37
+	+	40	39
+	+	66	0
+	+	30	19
+	+	43	0
+	+	44	19
+	+	48	14
+	+	44	19
+	+	48	14
+	+	29	20
+
+> ~/python_common/waivek/reltools.py
+	*	1712512222	0
+	"	16	4
+
+> ~/hateoas/hateoas_backend/test-sqlite-row-factory.py
+	*	1712505360	0
+	"	36	6
+	.	49	0
+	+	18	0
+	+	17	0
+	+	26	0
+	+	24	27
+	+	17	0
+	+	11	135
+	+	11	0
+	+	24	20
+	+	25	4
+	+	17	1
+	+	17	0
+	+	30	11
+	+	17	0
+	+	40	0
+	+	32	0
+	+	40	0
+	+	45	28
+	+	47	36
+	+	50	43
+	+	51	28
+	+	56	48
+	+	57	4
+	+	3	22
+	+	15	0
+	+	15	47
+	+	40	0
+	+	40	27
+	+	15	0
+	+	25	16
+	+	31	14
+	+	51	17
+	+	57	17
+	+	25	19
+	+	25	0
+	+	51	0
+	+	5	20
+	+	6	4
+	+	25	20
+	+	31	20
+	+	51	20
+	+	57	20
+	+	23	11
+	+	22	6
+	+	24	0
+	+	28	0
+	+	29	13
+	+	27	0
+	+	28	0
+	+	30	17
+	+	29	25
+	+	24	31
+	+	23	40
+	+	50	31
+	+	56	11
+	+	53	0
+	+	54	0
+	+	52	0
+	+	56	11
+	+	48	0
+	+	49	7
+	+	54	0
+	+	55	7
+	+	40	6
+	+	40	47
+	+	40	23
+	+	40	0
+	+	34	0
+	+	33	0
+	+	36	7
+	+	37	0
+	+	28	0
+	+	22	0
+	+	48	0
+	+	54	0
+	+	58	0
+	+	44	66
+	+	44	7
+	+	44	75
+	+	44	0
+	+	40	0
+	+	40	5
+	+	40	0
+	+	42	0
+	+	41	0
+	+	40	15
+	+	40	0
+	+	40	16
+	+	40	0
+	+	40	26
+	+	40	27
+	+	40	0
+	+	40	8
+	+	40	0
+	+	49	15
+	+	50	8
+	+	49	0
+
+> ~/python_common/waivek/data.py
+	*	1712503810	0
+	"	31	17
+	^	32	32
+	.	32	31
+	+	23	31
+	+	32	31
+
+> ~/python_common/waivek/test.py
+	*	1712503788	0
+	"	666	0
+	.	666	0
+	+	751	11
+	+	752	26
+	+	758	13
+	+	753	15
+	+	758	18
+	+	753	35
+	+	753	0
+	+	749	23
+	+	752	16
+	+	757	29
+	+	758	20
+	+	751	18
+	+	753	20
+	+	751	18
+	+	753	0
+	+	65	4
+	+	66	31
+	+	666	0
+
+> ~/python_common/waivek/ic.py
+	*	1712503736	0
+	"	837	25
+	^	838	38
+	.	838	23
+	+	398	4
+	+	399	31
+	+	838	23
+
+> ~/python_common/waivek/tdd.py
+	*	1712503666	0
+	"	14	15
+	^	15	32
+	.	15	4
+	+	14	4
+	+	15	4
+
+> ~/python_common/waivek/get.py
+	*	1712503640	0
+	"	236	50
+	.	236	51
+	+	236	51
+
+> ~/python_common/waivek/__init__.py
+	*	1712503613	0
+	"	10	16
+	^	17	39
+	.	1	0
+	+	19	1
+	+	17	38
+	+	1	0
+
+> ~/hateoas/hateoas_backend/.direnv/python-3.10.12/lib/python3.10/site-packages/timeago/__init__.py
+	*	1712498342	0
+	"	54	41
+
+> ~/hateoas/hateoas_backend/.direnv/python-3.10.12/lib/python3.10/site-packages/sseclient.py
+	*	1712493569	0
+	"	24	0
+
+> ~/hateoas/hateoas_backend/requirements.txt
+	*	1712493531	0
+	"	16	91
+	^	16	92
+	.	16	91
+	+	3	0
+	+	7	0
+	+	6	9
+	+	17	0
+	+	10	7
+	+	17	8
+	+	10	1
+	+	2	9
+	+	16	37
+	+	14	0
+	+	15	0
+	+	16	91
+
+> ~/hateoas/hateoas_backend/download_endpoints.py
+	*	1712452828	0
+	"	1	0
+	^	22	69
+	.	22	68
+	+	2	0
+	+	22	68
+
+> ~/hateoas/hateoas_backend/downloader-routes.py
+	*	1712452428	0
+	"	1	0
+	^	8	49
+	.	10	0
+	+	10	0
+	+	2	11
+	+	10	0
+	+	5	46
+	+	7	7
+	+	10	0
+
+> ~/hateoas/hateoas_backend/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/db.py
+	*	1712445389	0
+	"	41	0
+
+> ~/hateoas/hateoas_backend/create_databases.py
+	*	1712444917	0
+	"	1	0
+	^	32	76
+	.	4	0
+	+	18	23
+	+	20	52
+	+	21	9
+	+	18	0
+	+	21	45
+	+	23	40
+	+	38	4
+	+	2	26
+	+	38	12
+	+	18	32
+	+	25	0
+	+	36	53
+	+	38	0
+	+	38	8
+	+	25	0
+	+	26	63
+	+	28	0
+	+	18	48
+	+	17	0
+	+	6	30
+	+	9	0
+	+	38	0
+	+	10	0
+	+	38	0
+	+	10	13
+	+	18	0
+	+	19	10
+	+	5	8
+	+	12	0
+	+	5	25
+	+	21	0
+	+	5	0
+	+	14	0
+	+	3	0
+	+	17	32
+	+	38	0
+	+	36	29
+	+	26	0
+	+	24	27
+	+	38	0
+	+	36	29
+	+	30	19
+	+	37	27
+	+	38	19
+	+	32	27
+	+	32	56
+	+	33	8
+	+	36	0
+	+	33	0
+	+	4	0
+	+	32	33
+	+	33	0
+	+	32	33
+	+	38	0
+	+	35	12
+	+	36	0
+	+	4	22
+	+	33	37
+	+	35	0
+	+	36	38
+	+	32	21
+	+	30	39
+	+	33	13
+	+	34	15
+	+	38	0
+	+	32	44
+	+	33	0
+	+	32	0
+	+	4	0
+
+> ~/.vim/vimrc
+	*	1712405853	0
+	"	33	0
+	.	47	0
+	+	62	65
+	+	58	0
+	+	61	7
+	+	62	0
+	+	92	83
+	+	89	1
+	+	90	0
+	+	89	0
+	+	90	0
+	+	65	23
+	+	62	1
+	+	64	0
+	+	62	0
+	+	1316	0
+	+	1321	0
+	+	1316	0
+	+	1315	30
+	+	1316	0
+	+	1320	0
+	+	1318	16
+	+	1319	0
+	+	1326	70
+	+	116	0
+	+	121	22
+	+	118	0
+	+	121	27
+	+	123	0
+	+	122	0
+	+	117	30
+	+	119	13
+	+	118	16
+	+	112	0
+	+	817	19
+	+	817	5
+	+	817	80
+	+	817	22
+	+	817	0
+	+	816	21
+	+	817	28
+	+	816	22
+	+	817	71
+	+	1336	8
+	+	1336	24
+	+	1336	40
+	+	1336	0
+	+	1333	39
+	+	1336	0
+	+	1334	19
+	+	1335	0
+	+	1336	0
+	+	68	0
+	+	52	38
+	+	52	21
+	+	52	0
+	+	43	10
+	+	43	25
+	+	52	0
+	+	43	32
+	+	52	0
+	+	43	10
+	+	52	0
+	+	43	0
+	+	42	25
+	+	42	10
+	+	42	0
+	+	52	60
+	+	43	0
+	+	52	55
+	+	52	0
+	+	43	0
+	+	44	44
+	+	44	0
+	+	51	19
+	+	51	71
+	+	51	0
+	+	59	0
+	+	60	0
+	+	51	0
+	+	50	23
+	+	1144	41
+	+	1148	44
+	+	1150	40
+	+	49	28
+	+	1215	0
+	+	28	11
+	+	48	18
+	+	1285	43
+	+	1286	64
+	+	46	54
+	+	410	0
+	+	1255	0
+	+	46	31
+	+	46	0
+	+	47	0
+
+> ~/.vim/performance/performance.vim
+	*	1712405852	0
+	"	375	4
+	^	370	41
+	.	370	0
+	+	362	10
+	+	362	0
+	+	301	0
+	+	302	0
+	+	301	55
+	+	301	31
+	+	301	22
+	+	301	14
+	+	301	34
+	+	301	46
+	+	301	0
+	+	301	15
+	+	301	0
+	+	300	78
+	+	298	18
+	+	300	44
+	+	298	19
+	+	301	0
+	+	358	36
+	+	362	0
+	+	360	0
+	+	363	48
+	+	361	18
+	+	371	0
+	+	365	32
+	+	369	10
+	+	366	56
+	+	367	4
+	+	368	4
+	+	370	0
+
+> ~/.vim/after/syntax/python.vim
+	*	1712405613	0
+	"	26	0
+
+> ~/hateoas/hateoas_backend/endpoints.sql
+	*	1712364984	0
+	"	1	0
+	^	6	74
+	.	6	23
+	+	1	0
+	+	5	47
+	+	6	23
+
+> ~/hateoas/hateoas_backend/curl-ws.py
+	*	1712268597	0
+	"	4	34
+	^	4	35
+	.	4	34
+	+	2	0
+	+	2	11
+	+	2	23
+	+	2	10
+	+	2	14
+	+	2	35
+	+	2	10
+	+	2	0
+	+	2	10
+	+	2	0
+	+	2	39
+	+	2	10
+	+	2	0
+	+	2	18
+	+	2	0
+	+	2	4
+	+	2	13
+	+	2	0
+	+	2	24
+	+	2	20
+	+	2	40
+	+	2	0
+	+	2	46
+	+	2	0
+	+	2	46
+	+	2	15
+	+	2	0
+	+	9	7
+	+	4	34
+
+> ~/hateoas/hateoas_backend/ws3.py
+	*	1712266670	0
+	"	12	8
+	.	12	0
+	+	1	15
+	+	1	11
+	+	1	16
+	+	1	10
+	+	1	28
+	+	1	18
+	+	1	24
+	+	1	16
+	+	1	17
+	+	1	27
+	+	1	16
+	+	1	4
+	+	1	26
+	+	1	4
+	+	1	15
+	+	1	0
+	+	1	20
+	+	1	10
+	+	1	0
+	+	1	4
+	+	1	0
+	+	1	17
+	+	1	10
+	+	1	0
+	+	1	53
+	+	1	0
+	+	1	14
+	+	1	18
+	+	1	4
+	+	1	52
+	+	1	0
+	+	1	47
+	+	1	43
+	+	1	16
+	+	1	0
+	+	2	0
+	+	14	0
+	+	10	34
+	+	11	22
+	+	6	15
+	+	15	2
+	+	13	20
+	+	10	41
+	+	12	0
+
+> ~/hateoas/hateoas_backend/hateoas_downloader/Flask-SocketIO/example/app.py
+	*	1712265642	0
+	"	41	1
+	^	119	32
+	.	119	31
+	+	119	31
+
+> ~/hateoas/hateoas_backend/hateoas_downloader/Flask-SocketIO/example/templates/index.html
+	*	1712262169	0
+	"	10	12
+
+> ~/hateoas/hateoas_backend/make-ws-client-request.py
+	*	1712259725	0
+	"	1	0
+	^	11	58
+	.	11	57
+	+	5	14
+	+	6	17
+	+	8	18
+	+	14	4
+	+	16	52
+	+	3	40
+	+	14	0
+	+	8	18
+	+	14	0
+	+	9	4
+	+	11	57
+
+> ~/tmpws/Flask-SocketIO/example/app.py
+	*	1712258826	0
+	"	119	0
+	.	120	0
+	+	119	47
+	+	120	0
+
+> ~/hateoas/hateoas_backend/hateoas_downloader/hateoas-websocket.py
+	*	1712258777	0
+	"	1	0
+	^	63	0
+	.	63	0
+	+	1	0
+	+	23	0
+	+	22	0
+	+	39	0
+	+	43	48
+	+	44	58
+	+	45	23
+	+	46	20
+	+	48	15
+	+	50	43
+	+	51	36
+	+	52	0
+	+	14	19
+	+	53	1
+	+	66	2
+	+	68	0
+	+	67	67
+	+	52	0
+	+	55	15
+	+	55	1
+	+	64	0
+	+	55	23
+	+	56	0
+	+	60	26
+	+	61	0
+	+	63	0
+
+> ~/hateoas/hateoas_backend/hateoas_downloader/ws2.py
+	*	1712258767	0
+	"	22	0
+	^	11	14
+	.	11	13
+	+	1	23
+	+	1	66
+	+	1	0
+	+	2	0
+	+	19	21
+	+	21	9
+	+	23	0
+	+	22	45
+	+	14	0
+	+	9	0
+	+	8	0
+	+	7	0
+	+	9	20
+	+	22	44
+	+	9	21
+	+	11	22
+	+	12	0
+	+	13	18
+	+	11	13
+
+> ~/tmpws/Flask-SocketIO/example/requirements.txt
+	*	1712096417	0
+	"	1	0
+
+> ~/tmpws/requirements.txt
+	*	1712096104	0
+	"	1	0
+
+> ~/hateoas/hateoas_backend/hateoas_downloader/Flask-SocketIO/example/requirements.txt
+	*	1712095812	0
+	"	1	0
+
+> ~/hateoas/hateoas_backend/hateoas_downloader/hateoas-downloader-server.py
+	*	1712095569	0
+	"	181	3
+	^	191	56
+	.	191	55
+	+	83	6
+	+	85	0
+	+	86	0
+	+	83	0
+	+	84	0
+	+	73	0
+	+	72	4
+	+	93	6
+	+	94	0
+	+	145	7
+	+	145	0
+	+	165	0
+	+	159	0
+	+	145	0
+	+	150	0
+	+	148	0
+	+	145	0
+	+	159	0
+	+	147	12
+	+	148	0
+	+	159	13
+	+	81	12
+	+	68	0
+	+	92	0
+	+	143	0
+	+	158	0
+	+	155	0
+	+	59	0
+	+	23	0
+	+	21	46
+	+	22	0
+	+	53	53
+	+	54	15
+	+	144	7
+	+	160	8
+	+	192	0
+	+	191	0
+	+	192	0
+	+	183	0
+	+	146	0
+	+	52	19
+	+	147	25
+	+	147	24
+	+	160	26
+	+	161	8
+	+	163	8
+	+	147	0
+	+	190	0
+	+	183	0
+	+	189	0
+	+	119	11
+	+	136	10
+	+	185	23
+	+	189	0
+	+	188	0
+	+	186	17
+	+	187	0
+	+	186	0
+	+	185	0
+	+	184	86
+	+	185	0
+	+	182	22
+	+	186	24
+	+	185	5
+	+	164	0
+	+	141	10
+	+	147	0
+	+	160	0
+	+	154	0
+	+	157	0
+	+	186	0
+	+	186	6
+	+	185	0
+	+	186	0
+	+	189	4
+	+	119	0
+	+	189	0
+	+	192	30
+	+	59	0
+	+	192	80
+	+	58	0
+	+	59	0
+	+	192	0
+	+	191	4
+	+	9	0
+	+	121	14
+	+	122	0
+	+	128	56
+	+	129	49
+	+	133	0
+	+	128	12
+	+	129	12
+	+	133	0
+	+	129	42
+	+	130	0
+	+	134	11
+	+	191	55
+	+	136	0
+	+	119	0
+	+	191	55
+
+> ~/hateoas/hateoas_backend/hateoas_downloader/tasks.sql
+	*	1712073823	0
+	"	3	0
+	.	7	0
+	+	2	8
+	+	5	35
+	+	6	33
+	+	3	26
+	+	6	37
+	+	4	43
+	+	3	0
+	+	6	41
+	+	7	7
+	+	2	0
+	+	3	10
+	+	4	15
+	+	5	14
+	+	7	19
+	+	6	16
+	+	4	46
+	+	7	0
+	+	6	56
+	+	7	0
+
+> ~/hateoas/hateoas_backend/hateoas_downloader/data/tasks.db
+	*	1712060846	0
+	"	1	0
+
+> ~/tooling/main.txt
+	*	1712058113	0
+	"	40	0
+	^	40	41
+	.	36	0
+	+	1	0
+	+	1	73
+	+	1	32
+	+	1	9
+	+	1	67
+	+	1	0
+	+	1	8
+	+	1	0
+	+	1	25
+	+	1	53
+	+	1	33
+	+	1	0
+	+	1	7
+	+	1	6
+	+	1	8
+	+	1	0
+	+	1	18
+	+	1	0
+	+	1	48
+	+	1	18
+	+	1	14
+	+	1	69
+	+	1	0
+	+	1	114
+	+	1	0
+	+	1	19
+	+	1	41
+	+	1	62
+	+	1	8
+	+	1	11
+	+	1	0
+	+	1	6
+	+	1	17
+	+	1	0
+	+	1	78
+	+	1	0
+	+	1	72
+	+	1	0
+	+	1	65
+	+	1	3
+	+	1	0
+	+	1	2
+	+	1	0
+	+	1	8
+	+	1	13
+	+	1	26
+	+	1	2
+	+	1	0
+	+	1	3
+	+	1	73
+	+	1	72
+	+	1	0
+	+	12	72
+	+	17	76
+	+	29	73
+	+	33	0
+	+	34	139
+	+	34	0
+	+	34	131
+	+	36	27
+	+	39	36
+	+	40	0
+	+	38	3
+	+	39	3
+	+	40	40
+	+	36	0
+
+> ~/pflix/scrape/schemas/pflix.sql
+	*	1712057615	0
+	"	1	0
+	^	7	22
+	.	6	18
+	+	2	16
+	+	7	17
+	+	8	0
+	+	2	11
+	+	3	16
+	+	4	21
+	+	5	13
+	+	6	17
+	+	7	12
+	+	4	29
+	+	2	0
+	+	8	1
+	+	2	23
+	+	5	0
+	+	2	32
+	+	6	26
+	+	7	21
+	+	6	18
+
+> ~/Twitch/coffee-vps/code/schema/videos.sql
+	*	1712057596	0
+	"	1	0
+	^	21	8
+	.	22	0
+	+	1	0
+	+	21	2
+	+	10	38
+	+	22	0
+	+	10	37
+	+	22	0
+	+	10	38
+	+	22	0
+	+	22	93
+	+	22	0
+	+	10	0
+	+	1	13
+	+	20	0
+	+	14	0
+	+	11	0
+	+	21	7
+	+	22	0
+
+> ~/Twitch/coffee-vps/code/schema/users.sql
+	*	1712057572	0
+	"	1	0
+	^	13	8
+	.	13	7
+	+	1	196
+	+	1	0
+	+	3	201
+	+	3	0
+	+	2	0
+	+	1	19
+	+	12	19
+	+	12	0
+	+	2	48
+	+	3	36
+	+	4	36
+	+	12	28
+	+	5	37
+	+	12	0
+	+	5	38
+	+	12	37
+	+	12	0
+	+	6	0
+	+	13	7
+
+> ~/Twitch/coffee-vps/code/schema/clips.sql
+	*	1712057569	0
+	"	1	0
+	^	15	25
+	.	15	0
+	+	1	0
+	+	1	94
+	+	1	187
+	+	1	280
+	+	1	187
+	+	1	93
+	+	1	280
+	+	1	186
+	+	1	328
+	+	2	0
+	+	2	294
+	+	2	0
+	+	3	0
+	+	2	31
+	+	3	0
+	+	4	27
+	+	5	32
+	+	6	34
+	+	7	28
+	+	8	30
+	+	9	26
+	+	9	25
+	+	10	26
+	+	11	23
+	+	12	31
+	+	13	28
+	+	14	31
+	+	15	29
+	+	16	31
+	+	9	0
+	+	17	0
+	+	16	0
+	+	18	31
+	+	17	18
+	+	18	23
+	+	18	0
+	+	19	7
+	+	1	13
+	+	16	36
+	+	18	29
+	+	15	0
+
+> ~/hateoas/hateoas_backend/sequences.sql
+	*	1712057564	0
+	"	1	4
+	^	2	0
+	.	1	114
+	+	1	114
+
+> ~/hateoas/hateoas_backend/pov_videos.sql
+	*	1712057557	0
+	"	1	0
+	^	10	54
+	.	10	53
+	+	1	27
+	+	2	0
+	+	2	239
+	+	2	0
+	+	3	0
+	+	8	0
+	+	7	0
+	+	12	4
+	+	3	0
+	+	11	32
+	+	6	12
+	+	10	4
+	+	6	12
+	+	10	53
+
+> ~/hateoas/hateoas_backend/portions.sql
+	*	1712057552	0
+	"	1	0
+	.	13	0
+	+	1	0
+	+	1	13
+	+	1	0
+	+	1	3
+	+	1	25
+	+	2	0
+	+	12	72
+	+	11	0
+	+	10	13
+	+	13	0
+
+> ~/hateoas/hateoas_backend/.envrc
+	*	1712053924	0
+	"	1	0
+
+> ~/Twitch/coffee-vps/flask-vue/pov_videos.sql
+	*	1712016965	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/Twitch/coffee-vps/flask-vue/api.py
+	*	1712011698	0
+	"	283	26
+	^	233	2
+	.	233	1
+	+	710	23
+	+	710	0
+	+	1	0
+	+	710	0
+	+	1	0
+	+	710	0
+	+	1	0
+	+	710	0
+	+	1	0
+	+	710	0
+	+	1	0
+	+	710	0
+	+	1	0
+	+	710	0
+	+	1	0
+	+	710	0
+	+	1	0
+	+	1	12
+	+	1	0
+	+	714	0
+	+	1	0
+	+	717	0
+	+	1	12
+	+	1	0
+	+	710	0
+	+	712	37
+	+	1	0
+	+	718	0
+	+	1	58
+	+	1	0
+	+	714	0
+	+	712	0
+	+	714	0
+	+	712	4
+	+	1	0
+	+	1	15
+	+	1	0
+	+	1	34
+	+	1	0
+	+	1	20
+	+	1	0
+	+	1	8
+	+	1	0
+	+	1	31
+	+	1	36
+	+	1	11
+	+	1	12
+	+	1	11
+	+	712	0
+	+	239	17
+	+	233	0
+	+	243	0
+	+	228	30
+	+	228	0
+	+	232	0
+	+	231	28
+	+	240	7
+	+	242	8
+	+	243	0
+	+	90	0
+	+	7	11
+	+	90	0
+	+	34	0
+	+	33	0
+	+	90	0
+	+	93	0
+	+	94	0
+	+	90	0
+	+	93	0
+	+	106	0
+	+	99	0
+	+	98	0
+	+	240	0
+	+	241	22
+	+	241	23
+	+	238	14
+	+	238	19
+	+	238	16
+	+	241	0
+	+	240	31
+	+	225	0
+	+	219	4
+	+	214	0
+	+	217	7
+	+	218	11
+	+	240	0
+	+	238	0
+	+	240	0
+	+	448	7
+	+	452	30
+	+	452	0
+	+	425	0
+	+	424	0
+	+	424	13
+	+	424	18
+	+	424	14
+	+	424	0
+	+	234	0
+	+	233	1
+	a	231	28
+	b	231	29
+
+> ~/hateoas/hateoas_backend/.direnv/python-3.10.12/lib/python3.10/site-packages/flask/helpers.py
+	*	1711972484	0
+	"	287	11
+
+> ~/hateoas/hateoas_backend/.direnv/python-3.10.12/lib/python3.10/site-packages/werkzeug/utils.py
+	*	1711972483	0
+	"	278	16
+
+> ~/hateoas/hateoas_backend/.direnv/python-3.10.12/lib/python3.10/site-packages/flask/templating.py
+	*	1711971642	0
+	"	150	4
+
+> ~/hateoas/hateoas_backend/.direnv/python-3.10.12/lib/python3.10/site-packages/flask/globals.py
+	*	1711971172	0
+	"	11	0
+
+> ~/hateoas/hateoas_backend/form_update_question.tmp
+	*	1711969878	0
+	"	1	0
+	^	27	0
+	.	22	0
+	+	25	0
+	+	2	0
+	+	4	0
+	+	25	0
+	+	28	0
+	+	27	0
+	+	2	0
+	+	5	0
+	+	7	0
+	+	23	0
+	+	22	0
+
+> ~/hateoas/hateoas_backend/create_databases.html
+	*	1711909389	0
+	"	2	2
+	^	2	3
+	.	2	2
+	+	2	2
+
+> ~/elements/elements_frontend/src/Data.ts
+	*	1711909110	0
+	"	1	0
+	^	3	1
+	.	3	0
+	+	2	17
+	+	3	0
+
+> ~/frontend/src/Data.ts
+	*	1711901979	0
+	"	23	4
+	^	21	18
+	.	21	17
+	+	40	28
+	+	41	28
+	+	42	28
+	+	30	28
+	+	33	28
+	+	34	28
+	+	35	28
+	+	23	42
+	+	32	42
+	+	36	32
+	+	37	0
+	+	23	33
+	+	24	33
+	+	25	33
+	+	26	33
+	+	27	33
+	+	29	33
+	+	30	30
+	+	31	33
+	+	32	33
+	+	33	30
+	+	34	30
+	+	35	30
+	+	22	10
+	+	41	0
+	+	42	37
+	+	45	15
+	+	45	30
+	+	45	29
+	+	45	35
+	+	45	18
+	+	45	14
+	+	45	13
+	+	46	38
+	+	47	38
+	+	48	38
+	+	49	38
+	+	60	0
+	+	49	38
+	+	50	38
+	+	54	38
+	+	55	38
+	+	56	38
+	+	57	38
+	+	58	38
+	+	59	1
+	+	61	0
+	+	64	0
+	+	66	13
+	+	67	38
+	+	68	38
+	+	69	38
+	+	70	38
+	+	71	38
+	+	72	38
+	+	73	38
+	+	74	38
+	+	75	38
+	+	76	38
+	+	77	38
+	+	78	38
+	+	79	38
+	+	80	38
+	+	81	38
+	+	82	38
+	+	83	38
+	+	84	2
+	+	85	15
+	+	85	14
+	+	85	36
+	+	85	0
+	+	20	0
+	+	11	0
+	+	3	20
+	+	4	20
+	+	5	20
+	+	6	20
+	+	7	0
+	+	43	1
+	+	23	26
+	+	29	18
+	+	29	16
+	+	29	0
+	+	24	12
+	+	29	0
+	+	13	0
+	+	19	0
+	+	13	0
+	+	12	28
+	+	15	34
+	+	9	79
+	+	10	0
+	+	15	26
+	+	6	43
+	+	15	0
+	+	23	24
+	+	53	0
+	+	52	20
+	+	23	37
+	+	21	17
+
+> ~/servers/hateoas.config.js
+	*	1711875676	0
+	"	10	4
+	^	8	17
+	.	10	5
+	+	2	0
+	+	4	19
+	+	5	28
+	+	6	48
+	+	8	0
+	+	11	0
+	+	10	5
+
+> ~/servers/elements.config.js
+	*	1711875539	0
+	"	1	0
+
+> ~/hateoas/hateoas_backend/pyrightconfig.json
+	*	1711875185	0
+	"	1	0
+
+> ~/elements/elements_backend/el-api.py
+	*	1711874596	0
+	"	1	0
+	^	242	68
+	.	242	20
+	+	124	16
+	+	125	8
+	+	129	0
+	+	131	0
+	+	69	38
+	+	70	4
+	+	72	82
+	+	73	4
+	+	80	4
+	+	181	47
+	+	182	12
+	+	183	33
+	+	76	38
+	+	77	12
+	+	82	32
+	+	83	4
+	+	186	41
+	+	187	12
+	+	94	37
+	+	96	4
+	+	107	38
+	+	110	30
+	+	191	46
+	+	191	0
+	+	156	9
+	+	161	9
+	+	98	4
+	+	95	12
+	+	98	0
+	+	107	55
+	+	109	24
+	+	109	0
+	+	98	16
+	+	99	8
+	+	101	0
+	+	107	71
+	+	108	12
+	+	112	35
+	+	113	4
+	+	171	44
+	+	172	12
+	+	235	77
+	+	236	0
+	+	269	0
+	+	239	29
+	+	247	47
+	+	247	4
+	+	247	22
+	+	248	8
+	+	247	22
+	+	251	4
+	+	268	0
+	+	261	76
+	+	262	0
+	+	266	25
+	+	262	29
+	+	261	44
+	+	140	34
+	+	141	21
+	+	158	24
+	+	163	24
+	+	168	24
+	+	173	24
+	+	178	24
+	+	183	24
+	+	188	24
+	+	193	24
+	+	215	0
+	+	235	0
+	+	254	11
+	+	259	4
+	+	247	56
+	+	235	76
+	+	237	31
+	+	238	19
+	+	236	0
+	+	259	10
+	+	259	13
+	+	259	0
+	+	269	0
+	+	268	19
+	+	268	2
+	+	235	0
+	+	268	17
+	+	268	0
+	+	132	0
+	+	139	0
+	+	27	0
+	+	28	0
+	+	27	43
+	+	28	0
+	+	237	0
+	+	239	0
+	+	247	0
+	+	251	10
+	+	239	0
+	+	240	0
+	+	241	43
+	+	243	8
+	+	242	20
+
+> ~/elements/elements_backend/requirements.txt
+	*	1711874551	0
+	"	1	0
+	.	11	0
+	+	2	0
+	+	11	0
+
+> ~/genproject/python.sh
+	*	1711871217	0
+	"	11	0
+	^	17	10
+	.	17	9
+	+	6	0
+	+	2	0
+	+	4	9
+	+	11	9
+	+	17	9
+
+> ~/frontend/package.json
+	*	1711570906	0
+	"	17	5
+	^	17	18
+	.	17	0
+	+	17	0
+
+> ~/frontend/package-lock.json
+	*	1711570864	0
+	"	636	47
+
+> ~/frontend/src/Actions.vue
+	*	1711570634	0
+	"	47	35
+	.	51	0
+	+	147	63
+	+	149	72
+	+	150	20
+	+	163	52
+	+	163	0
+	+	163	52
+	+	134	33
+	+	30	29
+	+	134	42
+	+	30	27
+	+	30	5
+	+	33	0
+	+	30	0
+	+	134	0
+	+	134	32
+	+	134	76
+	+	107	5
+	+	107	4
+	+	134	0
+	+	134	61
+	+	134	39
+	+	134	0
+	+	134	26
+	+	107	0
+	+	107	10
+	+	107	0
+	+	107	14
+	+	111	42
+	+	111	56
+	+	111	42
+	+	111	56
+	+	111	50
+	+	178	0
+	+	29	0
+	+	30	0
+	+	107	0
+	+	107	4
+	+	107	0
+	+	134	78
+	+	163	0
+	+	134	0
+	+	32	22
+	+	32	0
+	+	31	40
+	+	32	25
+	+	32	16
+	+	32	0
+	+	168	0
+	+	107	0
+	+	107	31
+	+	162	76
+	+	111	42
+	+	111	0
+	+	112	0
+	+	111	0
+	+	30	0
+	+	107	0
+	+	36	0
+	+	69	52
+	+	81	0
+	+	55	0
+	+	163	51
+	+	163	52
+	+	163	51
+	+	162	78
+	+	162	79
+	+	163	0
+	+	162	79
+	+	163	52
+	+	164	0
+	+	163	52
+	+	162	0
+	+	164	0
+	+	162	43
+	+	163	28
+	+	29	10
+	+	108	8
+	+	163	35
+	+	24	0
+	+	55	86
+	+	59	0
+	+	58	0
+	+	56	31
+	+	63	0
+	+	107	44
+	+	108	0
+	+	172	32
+	+	47	40
+	+	48	30
+	+	51	0
+	+	44	30
+	+	43	40
+	+	52	28
+	+	51	38
+	+	177	0
+	+	51	0
+
+> ~/frontend/src/components/Video.vue
+	*	1711570548	0
+	"	30	0
+	^	146	61
+	.	146	60
+	+	152	52
+	+	107	24
+	+	108	0
+	+	108	38
+	+	106	27
+	+	106	10
+	+	106	0
+	+	12	32
+	+	107	0
+	+	153	0
+	+	106	0
+	+	153	50
+	+	25	31
+	+	24	24
+	+	108	10
+	+	157	25
+	+	157	23
+	+	155	0
+	+	156	0
+	+	156	12
+	+	156	0
+	+	156	30
+	+	156	49
+	+	156	30
+	+	156	26
+	+	156	11
+	+	156	0
+	+	153	0
+	+	157	25
+	+	157	0
+	+	157	23
+	+	157	90
+	+	158	0
+	+	124	20
+	+	124	22
+	+	124	0
+	+	151	48
+	+	125	6
+	+	124	59
+	+	124	60
+	+	124	4
+	+	124	0
+	+	124	7
+	+	124	23
+	+	124	41
+	+	124	8
+	+	124	13
+	+	103	32
+	+	125	0
+	+	111	0
+	+	123	0
+	+	18	82
+	+	150	0
+	+	147	0
+	+	149	0
+	+	149	52
+	+	149	0
+	+	149	12
+	+	147	0
+	+	148	75
+	+	129	27
+	+	133	33
+	+	134	19
+	+	12	45
+	+	135	0
+	+	141	0
+	+	135	0
+	+	148	79
+	+	133	44
+	+	136	29
+	+	139	8
+	+	137	45
+	+	137	0
+	+	136	52
+	+	154	124
+	+	154	22
+	+	133	19
+	+	136	21
+	+	154	96
+	+	149	44
+	+	154	98
+	+	132	0
+	+	133	8
+	+	134	20
+	+	149	0
+	+	175	0
+	+	170	52
+	+	175	52
+	+	169	45
+	+	174	43
+	+	157	0
+	+	156	0
+	+	157	0
+	+	156	19
+	+	156	0
+	+	146	51
+	+	156	0
+	+	146	60
+
+> ~/frontend/src/components/Embed.vue
+	*	1711570217	0
+	"	1	0
+	^	22	41
+	.	22	18
+	+	12	0
+	+	27	37
+	+	16	0
+	+	27	21
+	+	15	40
+	+	16	12
+	+	15	41
+	+	65	0
+	+	78	49
+	+	79	0
+	+	80	12
+	+	82	0
+	+	80	60
+	+	91	0
+	+	83	16
+	+	84	64
+	+	85	0
+	+	87	72
+	+	90	0
+	+	88	51
+	+	89	16
+	+	84	60
+	+	73	0
+	+	73	17
+	+	75	0
+	+	74	35
+	+	73	28
+	+	73	0
+	+	73	32
+	+	73	40
+	+	74	106
+	+	73	46
+	+	74	132
+	+	73	56
+	+	74	101
+	+	74	0
+	+	74	101
+	+	75	0
+	+	74	100
+	+	73	58
+	+	74	157
+	+	73	0
+	+	67	0
+	+	71	28
+	+	74	190
+	+	73	64
+	+	26	26
+	+	78	72
+	+	81	76
+	+	78	36
+	+	78	0
+	+	27	11
+	+	27	9
+	+	27	13
+	+	52	0
+	+	59	45
+	+	58	39
+	+	61	44
+	+	64	44
+	+	30	0
+	+	27	0
+	+	73	0
+	+	30	0
+	+	27	0
+	+	26	0
+	+	26	27
+	+	52	0
+	+	21	41
+	+	27	0
+	+	30	0
+	+	26	0
+	+	24	0
+	+	21	0
+	+	26	0
+	+	23	26
+	+	26	0
+	+	21	0
+	+	19	12
+	+	22	17
+	+	21	0
+	+	22	18
+
+> ~/frontend/src/components/Load.vue
+	*	1711570214	0
+	"	58	0
+	^	21	37
+	.	79	0
+	+	82	0
+	+	81	20
+	+	67	0
+	+	81	27
+	+	63	8
+	+	9	38
+	+	78	22
+	+	78	0
+	+	9	0
+	+	62	11
+	+	68	0
+	+	60	0
+	+	14	8
+	+	59	1
+	+	15	0
+	+	10	0
+	+	13	0
+	+	15	0
+	+	14	28
+	+	57	0
+	+	69	57
+	+	69	0
+	+	77	1
+	+	65	0
+	+	64	0
+	+	69	0
+	+	77	0
+	+	83	0
+	+	60	0
+	+	79	0
+	+	8	0
+	+	79	12
+	+	79	0
+	+	69	60
+	+	69	11
+	+	69	3
+	+	69	0
+	+	62	0
+	+	69	0
+	+	69	16
+	+	69	5
+	+	69	0
+	+	69	24
+	+	69	26
+	+	69	1
+	+	69	28
+	+	69	0
+	+	69	32
+	+	69	0
+	+	69	24
+	+	69	0
+	+	69	4
+	+	69	15
+	+	69	21
+	+	69	0
+	+	69	37
+	+	74	39
+	+	76	0
+	+	70	63
+	+	71	4
+	+	73	11
+	+	74	51
+	+	75	0
+	+	74	54
+	+	62	0
+	+	69	0
+	+	86	0
+	+	25	4
+	+	30	6
+	+	38	5
+	+	27	39
+	+	28	42
+	+	29	8
+	+	26	36
+	+	38	5
+	+	31	16
+	+	38	5
+	+	31	51
+	+	32	4
+	+	34	35
+	+	35	71
+	+	35	45
+	+	36	42
+	+	37	8
+	+	38	5
+	+	39	0
+	+	38	10
+	+	35	0
+	+	33	19
+	+	79	61
+	+	81	0
+	+	9	0
+	+	79	0
+	+	21	30
+	+	79	0
+
+> ~/frontend/src/components/YTEmbed.vue
+	*	1711569866	0
+	"	32	16
+	.	10	0
+	+	96	50
+	+	100	0
+	+	99	0
+	+	97	0
+	+	89	0
+	+	136	0
+	+	147	25
+	+	110	0
+	+	116	0
+	+	88	0
+	+	101	0
+	+	93	23
+	+	117	0
+	+	132	34
+	+	133	0
+	+	132	44
+	+	133	24
+	+	76	15
+	+	83	26
+	+	147	0
+	+	83	0
+	+	76	0
+	+	76	17
+	+	85	12
+	+	85	29
+	+	147	0
+	+	85	0
+	+	4	24
+	+	4	8
+	+	4	35
+	+	4	31
+	+	4	0
+	+	4	4
+	+	4	0
+	+	147	0
+	+	82	24
+	+	147	0
+	+	76	0
+	+	5	0
+	+	25	0
+	+	29	0
+	+	40	0
+	+	17	0
+	+	16	19
+	+	44	0
+	+	45	0
+	+	7	9
+	+	13	8
+	+	47	37
+	+	71	0
+	+	160	0
+	+	67	25
+	+	69	27
+	+	47	0
+	+	47	56
+	+	47	57
+	+	47	8
+	+	47	24
+	+	46	4
+	+	33	0
+	+	32	20
+	+	33	0
+	+	35	22
+	+	30	23
+	+	40	1
+	+	32	0
+	+	41	4
+	+	182	0
+	+	181	0
+	+	182	39
+	+	48	0
+	+	47	0
+	+	48	53
+	+	180	8
+	+	32	0
+	+	35	0
+	+	46	0
+	+	47	0
+	+	61	4
+	+	7	8
+	+	18	0
+	+	7	0
+	+	6	53
+	+	11	0
+	+	34	0
+	+	70	0
+	+	71	0
+	+	69	56
+	+	167	53
+	+	168	55
+	+	167	34
+	+	168	35
+	+	167	61
+	+	168	63
+	+	13	0
+	+	16	0
+	+	14	0
+	+	13	0
+	+	15	11
+	+	10	0
 
 > ~/public/input.css
 	*	1711560502	0
@@ -6509,70 +10293,6 @@ $
 	+	9	0
 	+	11	0
 
-> ~/.config/setup.sh
-	*	1711546356	0
-	"	10	0
-	.	13	0
-	+	13	68
-	+	13	27
-	+	5	0
-	+	4	1
-	+	13	34
-	+	4	0
-	+	5	0
-	+	13	0
-	+	4	0
-	+	13	0
-	+	3	0
-	+	4	0
-	+	13	0
-	+	5	0
-	+	13	0
-	+	13	1
-	+	13	8
-	+	13	10
-	+	13	155
-	+	13	8
-	+	13	123
-	+	13	0
-	+	24	26
-	+	25	27
-	+	7	41
-	+	9	23
-	+	12	0
-	+	9	75
-	+	12	0
-	+	9	63
-	+	12	0
-	+	9	54
-	+	13	71
-	+	13	89
-	+	13	0
-	+	11	38
-	+	10	0
-	+	10	13
-	+	10	0
-	+	13	9
-	+	13	17
-	+	26	0
-	+	4	0
-	+	15	0
-	+	13	14
-	+	27	34
-	+	9	0
-	+	9	29
-	+	1	11
-	+	13	0
-	+	14	0
-	+	13	0
-	+	23	0
-	+	9	0
-	+	10	0
-	+	13	0
-	+	27	0
-	+	8	0
-	+	13	0
-
 > ~/elements/elements_frontend/elements.html
 	*	1711545247	0
 	"	1	0
@@ -6609,10 +10329,6 @@ $
 	+	9	8
 	+	10	0
 
-> ~/servers/elements.config.js
-	*	1711444686	0
-	"	1	0
-
 > ~/servers/elements.js
 	*	1711444676	0
 	"	1	0
@@ -6642,227 +10358,6 @@ $
 > ~/.pm2/module_conf.json
 	*	1711442903	0
 	"	1	0
-
-> ~/elements/elements_backend/el-api.py
-	*	1711111069	0
-	"	140	16
-	^	242	68
-	.	242	20
-	+	124	16
-	+	125	8
-	+	129	0
-	+	131	0
-	+	69	38
-	+	70	4
-	+	72	82
-	+	73	4
-	+	80	4
-	+	181	47
-	+	182	12
-	+	183	33
-	+	76	38
-	+	77	12
-	+	82	32
-	+	83	4
-	+	186	41
-	+	187	12
-	+	94	37
-	+	96	4
-	+	107	38
-	+	110	30
-	+	191	46
-	+	191	0
-	+	156	9
-	+	161	9
-	+	98	4
-	+	95	12
-	+	98	0
-	+	107	55
-	+	109	24
-	+	109	0
-	+	98	16
-	+	99	8
-	+	101	0
-	+	107	71
-	+	108	12
-	+	112	35
-	+	113	4
-	+	171	44
-	+	172	12
-	+	235	77
-	+	236	0
-	+	269	0
-	+	239	29
-	+	247	47
-	+	247	4
-	+	247	22
-	+	248	8
-	+	247	22
-	+	251	4
-	+	268	0
-	+	261	76
-	+	262	0
-	+	266	25
-	+	262	29
-	+	261	44
-	+	140	34
-	+	141	21
-	+	158	24
-	+	163	24
-	+	168	24
-	+	173	24
-	+	178	24
-	+	183	24
-	+	188	24
-	+	193	24
-	+	215	0
-	+	235	0
-	+	254	11
-	+	259	4
-	+	247	56
-	+	235	76
-	+	237	31
-	+	238	19
-	+	236	0
-	+	259	10
-	+	259	13
-	+	259	0
-	+	269	0
-	+	268	19
-	+	268	2
-	+	235	0
-	+	268	17
-	+	268	0
-	+	132	0
-	+	139	0
-	+	27	0
-	+	28	0
-	+	27	43
-	+	28	0
-	+	237	0
-	+	239	0
-	+	247	0
-	+	251	10
-	+	239	0
-	+	240	0
-	+	241	43
-	+	243	8
-	+	242	20
-
-> ~/Twitch/coffee-vps/flask-vue/api.py
-	*	1711063389	0
-	"	99	0
-	^	233	2
-	.	233	1
-	+	710	23
-	+	710	0
-	+	1	0
-	+	710	0
-	+	1	0
-	+	710	0
-	+	1	0
-	+	710	0
-	+	1	0
-	+	710	0
-	+	1	0
-	+	710	0
-	+	1	0
-	+	710	0
-	+	1	0
-	+	710	0
-	+	1	0
-	+	1	12
-	+	1	0
-	+	714	0
-	+	1	0
-	+	717	0
-	+	1	12
-	+	1	0
-	+	710	0
-	+	712	37
-	+	1	0
-	+	718	0
-	+	1	58
-	+	1	0
-	+	714	0
-	+	712	0
-	+	714	0
-	+	712	4
-	+	1	0
-	+	1	15
-	+	1	0
-	+	1	34
-	+	1	0
-	+	1	20
-	+	1	0
-	+	1	8
-	+	1	0
-	+	1	31
-	+	1	36
-	+	1	11
-	+	1	12
-	+	1	11
-	+	712	0
-	+	239	17
-	+	233	0
-	+	243	0
-	+	228	30
-	+	228	0
-	+	232	0
-	+	231	28
-	+	240	7
-	+	242	8
-	+	243	0
-	+	90	0
-	+	7	11
-	+	90	0
-	+	34	0
-	+	33	0
-	+	90	0
-	+	93	0
-	+	94	0
-	+	90	0
-	+	93	0
-	+	106	0
-	+	99	0
-	+	98	0
-	+	240	0
-	+	241	22
-	+	241	23
-	+	238	14
-	+	238	19
-	+	238	16
-	+	241	0
-	+	240	31
-	+	225	0
-	+	219	4
-	+	214	0
-	+	217	7
-	+	218	11
-	+	240	0
-	+	238	0
-	+	240	0
-	+	448	7
-	+	452	30
-	+	452	0
-	+	425	0
-	+	424	0
-	+	424	13
-	+	424	18
-	+	424	14
-	+	424	0
-	+	234	0
-	+	233	1
-	a	231	28
-	b	231	29
-
-> ~/elements/elements_frontend/src/Data.ts
-	*	1711042557	0
-	"	3	0
-	^	3	1
-	.	3	0
-	+	2	17
-	+	3	0
 
 > ~/pflix/pflix_frontend/src/Data.ts
 	*	1711042521	0
@@ -7039,13 +10534,6 @@ $
 	*	1711007351	0
 	"	1	0
 
-> ~/elements/elements_backend/requirements.txt
-	*	1711007320	0
-	"	1	0
-	.	11	0
-	+	2	0
-	+	11	0
-
 > ~/pflix/pflix_backend/api.py
 	*	1711007254	0
 	"	1	0
@@ -7103,17 +10591,6 @@ $
 	+	51	18
 	+	54	11
 	+	55	11
-
-> ~/genproject/python.sh
-	*	1711007175	0
-	"	34	0
-	^	17	10
-	.	17	9
-	+	6	0
-	+	2	0
-	+	4	9
-	+	11	9
-	+	17	9
 
 > ~/pflix/pflix_backend/requirements.txt
 	*	1711007132	0
@@ -7329,34 +10806,6 @@ $
 	+	104	23
 	+	104	0
 
-> ~/pflix/scrape/schemas/pflix.sql
-	*	1711005102	0
-	"	2	0
-	^	7	22
-	.	6	18
-	+	2	16
-	+	7	17
-	+	8	0
-	+	2	11
-	+	3	16
-	+	4	21
-	+	5	13
-	+	6	17
-	+	7	12
-	+	4	29
-	+	2	0
-	+	8	1
-	+	2	23
-	+	5	0
-	+	2	32
-	+	6	26
-	+	7	21
-	+	6	18
-
-> ~/mwh/mwh2.py
-	*	1711004985	0
-	"	82	12
-
 > ~/mwh/mwh-rebuild.py
 	*	1711004801	0
 	"	6	0
@@ -7375,10 +10824,6 @@ $
 	^	40	20
 	.	40	0
 	+	40	0
-
-> ~/mwh/mwhscrape.py
-	*	1711004712	0
-	"	1	0
 
 > ~/pflix/scrape/.direnv/python-3.10.12/lib/python3.10/site-packages/pysqlite3/__init__.py
 	*	1710987133	0
@@ -7628,214 +11073,6 @@ $
 	+	207	0
 	+	205	91
 	+	206	71
-
-> ~/frontend/src/components/Db.vue
-	*	1710802775	0
-	"	62	16
-
-> ~/frontend/src/components/Video.vue
-	*	1710802760	0
-	"	6	0
-	^	146	61
-	.	146	60
-	+	152	52
-	+	107	24
-	+	108	0
-	+	108	38
-	+	106	27
-	+	106	10
-	+	106	0
-	+	12	32
-	+	107	0
-	+	153	0
-	+	106	0
-	+	153	50
-	+	25	31
-	+	24	24
-	+	108	10
-	+	157	25
-	+	157	23
-	+	155	0
-	+	156	0
-	+	156	12
-	+	156	0
-	+	156	30
-	+	156	49
-	+	156	30
-	+	156	26
-	+	156	11
-	+	156	0
-	+	153	0
-	+	157	25
-	+	157	0
-	+	157	23
-	+	157	90
-	+	158	0
-	+	124	20
-	+	124	22
-	+	124	0
-	+	151	48
-	+	125	6
-	+	124	59
-	+	124	60
-	+	124	4
-	+	124	0
-	+	124	7
-	+	124	23
-	+	124	41
-	+	124	8
-	+	124	13
-	+	103	32
-	+	125	0
-	+	111	0
-	+	123	0
-	+	18	82
-	+	150	0
-	+	147	0
-	+	149	0
-	+	149	52
-	+	149	0
-	+	149	12
-	+	147	0
-	+	148	75
-	+	129	27
-	+	133	33
-	+	134	19
-	+	12	45
-	+	135	0
-	+	141	0
-	+	135	0
-	+	148	79
-	+	133	44
-	+	136	29
-	+	139	8
-	+	137	45
-	+	137	0
-	+	136	52
-	+	154	124
-	+	154	22
-	+	133	19
-	+	136	21
-	+	154	96
-	+	149	44
-	+	154	98
-	+	132	0
-	+	133	8
-	+	134	20
-	+	149	0
-	+	175	0
-	+	170	52
-	+	175	52
-	+	169	45
-	+	174	43
-	+	157	0
-	+	156	0
-	+	157	0
-	+	156	19
-	+	156	0
-	+	146	51
-	+	156	0
-	+	146	60
-
-> ~/frontend/src/Actions.vue
-	*	1710802724	0
-	"	99	8
-	^	51	39
-	.	51	38
-	+	147	63
-	+	149	72
-	+	150	20
-	+	163	52
-	+	163	0
-	+	163	52
-	+	134	33
-	+	30	29
-	+	134	42
-	+	30	27
-	+	30	5
-	+	33	0
-	+	30	0
-	+	134	0
-	+	134	32
-	+	134	76
-	+	107	5
-	+	107	4
-	+	134	0
-	+	134	61
-	+	134	39
-	+	134	0
-	+	134	26
-	+	107	0
-	+	107	10
-	+	107	0
-	+	107	14
-	+	111	42
-	+	111	56
-	+	111	42
-	+	111	56
-	+	111	50
-	+	178	0
-	+	29	0
-	+	30	0
-	+	107	0
-	+	107	4
-	+	107	0
-	+	134	78
-	+	163	0
-	+	134	0
-	+	32	22
-	+	32	0
-	+	31	40
-	+	32	25
-	+	32	16
-	+	32	0
-	+	168	0
-	+	107	0
-	+	107	31
-	+	162	76
-	+	111	42
-	+	111	0
-	+	112	0
-	+	111	0
-	+	30	0
-	+	107	0
-	+	36	0
-	+	69	52
-	+	81	0
-	+	55	0
-	+	163	51
-	+	163	52
-	+	163	51
-	+	162	78
-	+	162	79
-	+	163	0
-	+	162	79
-	+	163	52
-	+	164	0
-	+	163	52
-	+	162	0
-	+	164	0
-	+	162	43
-	+	163	28
-	+	29	10
-	+	108	8
-	+	163	35
-	+	24	0
-	+	55	86
-	+	59	0
-	+	58	0
-	+	56	31
-	+	63	0
-	+	107	44
-	+	108	0
-	+	172	32
-	+	47	40
-	+	48	30
-	+	51	0
-	+	44	30
-	+	43	40
-	+	52	28
-	+	51	38
 
 > ~/Twitch/coffee-vps/flask-vue/.flaskenv
 	*	1710802164	0
@@ -8279,112 +11516,6 @@ $
 	+	80	20
 	+	80	127
 
-> ~/frontend/src/Data.ts
-	*	1710042005	0
-	"	21	4
-	^	21	18
-	.	21	17
-	+	40	28
-	+	41	28
-	+	42	28
-	+	30	28
-	+	33	28
-	+	34	28
-	+	35	28
-	+	23	42
-	+	32	42
-	+	36	32
-	+	37	0
-	+	23	33
-	+	24	33
-	+	25	33
-	+	26	33
-	+	27	33
-	+	29	33
-	+	30	30
-	+	31	33
-	+	32	33
-	+	33	30
-	+	34	30
-	+	35	30
-	+	22	10
-	+	41	0
-	+	42	37
-	+	45	15
-	+	45	30
-	+	45	29
-	+	45	35
-	+	45	18
-	+	45	14
-	+	45	13
-	+	46	38
-	+	47	38
-	+	48	38
-	+	49	38
-	+	60	0
-	+	49	38
-	+	50	38
-	+	54	38
-	+	55	38
-	+	56	38
-	+	57	38
-	+	58	38
-	+	59	1
-	+	61	0
-	+	64	0
-	+	66	13
-	+	67	38
-	+	68	38
-	+	69	38
-	+	70	38
-	+	71	38
-	+	72	38
-	+	73	38
-	+	74	38
-	+	75	38
-	+	76	38
-	+	77	38
-	+	78	38
-	+	79	38
-	+	80	38
-	+	81	38
-	+	82	38
-	+	83	38
-	+	84	2
-	+	85	15
-	+	85	14
-	+	85	36
-	+	85	0
-	+	20	0
-	+	11	0
-	+	3	20
-	+	4	20
-	+	5	20
-	+	6	20
-	+	7	0
-	+	43	1
-	+	23	26
-	+	29	18
-	+	29	16
-	+	29	0
-	+	24	12
-	+	29	0
-	+	13	0
-	+	19	0
-	+	13	0
-	+	12	28
-	+	15	34
-	+	9	79
-	+	10	0
-	+	15	26
-	+	6	43
-	+	15	0
-	+	23	24
-	+	53	0
-	+	52	20
-	+	23	37
-	+	21	17
-
 > ~/frontend/src/components/TwitchEmbed.vue
 	*	1709993303	0
 	"	36	0
@@ -8489,196 +11620,6 @@ $
 	a	126	4
 	l	13	15
 
-> ~/frontend/src/components/YTEmbed.vue
-	*	1709991642	0
-	"	15	0
-	^	15	12
-	.	15	11
-	+	101	55
-	+	96	50
-	+	100	0
-	+	99	0
-	+	97	0
-	+	89	0
-	+	136	0
-	+	147	25
-	+	110	0
-	+	116	0
-	+	88	0
-	+	101	0
-	+	93	23
-	+	117	0
-	+	132	34
-	+	133	0
-	+	132	44
-	+	133	24
-	+	76	15
-	+	83	26
-	+	147	0
-	+	83	0
-	+	76	0
-	+	76	17
-	+	85	12
-	+	85	29
-	+	147	0
-	+	85	0
-	+	4	24
-	+	4	8
-	+	4	35
-	+	4	31
-	+	4	0
-	+	4	4
-	+	4	0
-	+	147	0
-	+	82	24
-	+	147	0
-	+	76	0
-	+	5	0
-	+	25	0
-	+	29	0
-	+	40	0
-	+	17	0
-	+	16	19
-	+	44	0
-	+	45	0
-	+	7	9
-	+	13	8
-	+	47	37
-	+	71	0
-	+	160	0
-	+	67	25
-	+	69	27
-	+	47	0
-	+	47	56
-	+	47	57
-	+	47	8
-	+	47	24
-	+	46	4
-	+	33	0
-	+	32	20
-	+	33	0
-	+	35	22
-	+	30	23
-	+	40	1
-	+	32	0
-	+	41	4
-	+	182	0
-	+	181	0
-	+	182	39
-	+	48	0
-	+	47	0
-	+	48	53
-	+	180	8
-	+	32	0
-	+	35	0
-	+	46	0
-	+	47	0
-	+	61	4
-	+	7	8
-	+	18	0
-	+	7	0
-	+	6	53
-	+	11	0
-	+	34	0
-	+	70	0
-	+	71	0
-	+	69	56
-	+	167	53
-	+	168	55
-	+	167	34
-	+	168	35
-	+	167	61
-	+	168	63
-	+	13	0
-	+	16	0
-	+	14	0
-	+	13	0
-	+	15	11
-
-> ~/frontend/src/components/Embed.vue
-	*	1709991289	0
-	"	61	44
-	^	19	44
-	.	19	12
-	+	12	0
-	+	26	37
-	+	16	0
-	+	26	21
-	+	15	40
-	+	16	12
-	+	15	41
-	+	64	0
-	+	77	49
-	+	78	0
-	+	79	12
-	+	81	0
-	+	79	60
-	+	90	0
-	+	82	16
-	+	83	64
-	+	84	0
-	+	86	72
-	+	89	0
-	+	87	51
-	+	88	16
-	+	83	60
-	+	72	0
-	+	72	17
-	+	74	0
-	+	73	35
-	+	72	28
-	+	72	0
-	+	72	32
-	+	72	40
-	+	73	106
-	+	72	46
-	+	73	132
-	+	72	56
-	+	73	101
-	+	73	0
-	+	73	101
-	+	74	0
-	+	73	100
-	+	72	58
-	+	73	157
-	+	72	0
-	+	66	0
-	+	70	28
-	+	73	190
-	+	72	64
-	+	25	26
-	+	77	72
-	+	80	76
-	+	77	36
-	+	77	0
-	+	26	11
-	+	26	9
-	+	26	13
-	+	51	0
-	+	58	45
-	+	57	39
-	+	60	44
-	+	63	44
-	+	29	0
-	+	26	0
-	+	72	0
-	+	29	0
-	+	26	0
-	+	25	0
-	+	25	27
-	+	51	0
-	+	21	41
-	+	26	0
-	+	29	0
-	+	25	0
-	+	23	0
-	+	21	0
-	+	25	0
-	+	22	26
-	+	25	0
-	+	21	0
-	+	19	12
-
 > ~/.vim/templates/template.vue
 	*	1709991077	0
 	"	3	1
@@ -8732,107 +11673,6 @@ $
 	+	10	0
 	+	8	0
 	+	7	18
-
-> ~/frontend/src/components/Load.vue
-	*	1709956916	0
-	"	88	0
-	^	21	37
-	.	79	0
-	+	82	0
-	+	81	20
-	+	67	0
-	+	81	27
-	+	63	8
-	+	9	38
-	+	78	22
-	+	78	0
-	+	9	0
-	+	62	11
-	+	68	0
-	+	60	0
-	+	14	8
-	+	59	1
-	+	15	0
-	+	10	0
-	+	13	0
-	+	15	0
-	+	14	28
-	+	57	0
-	+	69	57
-	+	69	0
-	+	77	1
-	+	65	0
-	+	64	0
-	+	69	0
-	+	77	0
-	+	83	0
-	+	60	0
-	+	79	0
-	+	8	0
-	+	79	12
-	+	79	0
-	+	69	60
-	+	69	11
-	+	69	3
-	+	69	0
-	+	62	0
-	+	69	0
-	+	69	16
-	+	69	5
-	+	69	0
-	+	69	24
-	+	69	26
-	+	69	1
-	+	69	28
-	+	69	0
-	+	69	32
-	+	69	0
-	+	69	24
-	+	69	0
-	+	69	4
-	+	69	15
-	+	69	21
-	+	69	0
-	+	69	37
-	+	74	39
-	+	76	0
-	+	70	63
-	+	71	4
-	+	73	11
-	+	74	51
-	+	75	0
-	+	74	54
-	+	62	0
-	+	69	0
-	+	86	0
-	+	25	4
-	+	30	6
-	+	38	5
-	+	27	39
-	+	28	42
-	+	29	8
-	+	26	36
-	+	38	5
-	+	31	16
-	+	38	5
-	+	31	51
-	+	32	4
-	+	34	35
-	+	35	71
-	+	35	45
-	+	36	42
-	+	37	8
-	+	38	5
-	+	39	0
-	+	38	10
-	+	35	0
-	+	33	19
-	+	79	61
-	+	81	0
-	+	9	0
-	+	79	0
-	+	21	30
-	+	79	0
 
 > ~/vimfiles/todo/main-2024-03-Mar.txt
 	*	1709956668	0
@@ -9276,10 +12116,6 @@ $
 	+	127	22
 	+	141	93
 
-> /usr/share/vim/vim90/doc/help.txt
-	*	1709848613	0
-	"	1	0
-
 > ~/frontend/src/components/Videos.vue
 	*	1709772216	0
 	"	15	8
@@ -9420,18 +12256,6 @@ $
 	^	1	14
 	.	1	13
 	+	1	13
-
-> ~/mwh/req1.txt
-	*	1709764869	0
-	"	25	41
-	^	25	42
-	.	25	41
-	+	26	15
-	+	25	41
-
-> ~/mwh/knowledge_mwh.txt
-	*	1706313106	0
-	"	1	0
 
 > ~/frontend/src/components/Clips
 	*	1706144197	0
@@ -9880,105 +12704,6 @@ $
 > ~/frontend/src/components/Route.vue
 	*	1705923696	0
 	"	39	0
-
-> ~/.vim/vimrc
-	*	1705923132	0
-	"	1284	0
-	.	47	0
-	+	62	65
-	+	58	0
-	+	61	7
-	+	62	0
-	+	92	83
-	+	89	1
-	+	90	0
-	+	89	0
-	+	90	0
-	+	65	23
-	+	62	1
-	+	64	0
-	+	62	0
-	+	1316	0
-	+	1321	0
-	+	1316	0
-	+	1315	30
-	+	1316	0
-	+	1320	0
-	+	1318	16
-	+	1319	0
-	+	1326	70
-	+	116	0
-	+	121	22
-	+	118	0
-	+	121	27
-	+	123	0
-	+	122	0
-	+	117	30
-	+	119	13
-	+	118	16
-	+	112	0
-	+	817	19
-	+	817	5
-	+	817	80
-	+	817	22
-	+	817	0
-	+	816	21
-	+	817	28
-	+	816	22
-	+	817	71
-	+	1336	8
-	+	1336	24
-	+	1336	40
-	+	1336	0
-	+	1333	39
-	+	1336	0
-	+	1334	19
-	+	1335	0
-	+	1336	0
-	+	68	0
-	+	52	38
-	+	52	21
-	+	52	0
-	+	43	10
-	+	43	25
-	+	52	0
-	+	43	32
-	+	52	0
-	+	43	10
-	+	52	0
-	+	43	0
-	+	42	25
-	+	42	10
-	+	42	0
-	+	52	60
-	+	43	0
-	+	52	55
-	+	52	0
-	+	43	0
-	+	44	44
-	+	44	0
-	+	51	19
-	+	51	71
-	+	51	0
-	+	59	0
-	+	60	0
-	+	51	0
-	+	50	23
-	+	1144	41
-	+	1148	44
-	+	1150	40
-	+	49	28
-	+	1215	0
-	+	28	11
-	+	48	18
-	+	1285	43
-	+	1286	64
-	+	46	54
-	+	410	0
-	+	1255	0
-	+	46	31
-	+	46	0
-	+	47	0
 
 > ~/frontend/src/waivek.js
 	*	1705886807	0
@@ -10444,53 +13169,6 @@ $
 	+	7	62
 	+	8	0
 
-> ~/Twitch/coffee-vps/code/schema/clips.sql
-	*	1695201797	0
-	"	1	0
-	^	15	25
-	.	15	0
-	+	1	0
-	+	1	94
-	+	1	187
-	+	1	280
-	+	1	187
-	+	1	93
-	+	1	280
-	+	1	186
-	+	1	328
-	+	2	0
-	+	2	294
-	+	2	0
-	+	3	0
-	+	2	31
-	+	3	0
-	+	4	27
-	+	5	32
-	+	6	34
-	+	7	28
-	+	8	30
-	+	9	26
-	+	9	25
-	+	10	26
-	+	11	23
-	+	12	31
-	+	13	28
-	+	14	31
-	+	15	29
-	+	16	31
-	+	9	0
-	+	17	0
-	+	16	0
-	+	18	31
-	+	17	18
-	+	18	23
-	+	18	0
-	+	19	7
-	+	1	13
-	+	16	36
-	+	18	29
-	+	15	0
-
 > ~/cookierun/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/get.py
 	*	1695189415	0
 	"	210	16
@@ -10806,29 +13484,6 @@ $
 	+	83	0
 	+	84	68
 
-> ~/Twitch/coffee-vps/code/schema/videos.sql
-	*	1694701322	0
-	"	11	0
-	^	21	8
-	.	22	0
-	+	1	0
-	+	21	2
-	+	10	38
-	+	22	0
-	+	10	37
-	+	22	0
-	+	10	38
-	+	22	0
-	+	22	93
-	+	22	0
-	+	10	0
-	+	1	13
-	+	20	0
-	+	14	0
-	+	11	0
-	+	21	7
-	+	22	0
-
 > ~/Twitch/coffee-vps/code/video_stats.py
 	*	1694701203	0
 	"	1	0
@@ -10975,47 +13630,6 @@ $
 	+	22	0
 	+	33	48
 
-> ~/python_common/setup.py
-	*	1694418977	0
-	"	69	13
-	^	29	21
-	.	29	20
-	+	54	9
-	+	52	6
-	+	30	44
-	+	34	48
-	+	36	7
-	+	38	0
-	+	37	0
-	+	38	42
-	+	40	27
-	+	42	109
-	+	44	11
-	+	51	23
-	+	44	0
-	+	51	18
-	+	53	10
-	+	54	0
-	+	52	7
-	+	1	0
-	+	7	0
-	+	5	10
-	+	53	14
-	+	30	24
-	+	32	47
-	+	36	31
-	+	40	33
-	+	36	37
-	+	40	39
-	+	66	0
-	+	30	19
-	+	43	0
-	+	44	19
-	+	48	14
-	+	44	19
-	+	48	14
-	+	29	20
-
 > ~/python_common/requirements.txt
 	*	1694418874	0
 	"	1	0
@@ -11027,15 +13641,6 @@ $
 > ~/python_common/waivek/reqs.py
 	*	1694418816	0
 	"	1	0
-
-> ~/python_common/waivek/__init__.py
-	*	1694418719	0
-	"	1	0
-	^	17	39
-	.	1	0
-	+	19	1
-	+	17	38
-	+	1	0
 
 > ~/nullpy/null.py
 	*	1694416989	0
@@ -11144,10 +13749,6 @@ $
 > ~/python_common/waivek/introspection.py
 	*	1694315749	0
 	"	4	19
-
-> ~/python_common/waivek/ic.py
-	*	1694315316	0
-	"	819	24
 
 > ~/nullpy/pyrightconfig.json
 	*	1694276348	0
@@ -11515,42 +14116,6 @@ $
 	*	1694108285	0
 	"	5958	4
 
-> ~/.vim/performance/performance.vim
-	*	1694107443	0
-	"	370	9
-	^	370	41
-	.	370	0
-	+	362	10
-	+	362	0
-	+	301	0
-	+	302	0
-	+	301	55
-	+	301	31
-	+	301	22
-	+	301	14
-	+	301	34
-	+	301	46
-	+	301	0
-	+	301	15
-	+	301	0
-	+	300	78
-	+	298	18
-	+	300	44
-	+	298	19
-	+	301	0
-	+	358	36
-	+	362	0
-	+	360	0
-	+	363	48
-	+	361	18
-	+	371	0
-	+	365	32
-	+	369	10
-	+	366	56
-	+	367	4
-	+	368	4
-	+	370	0
-
 > ~/.vim/plugin/goto_method.vim
 	*	1694107352	0
 	"	97	0
@@ -11601,10 +14166,6 @@ $
 	*	1694048850	0
 	"	49	33
 
-> ~/frontend/package.json
-	*	1694048678	0
-	"	1	0
-
 > ~/frontend/buttons.html
 	*	1694047655	0
 	"	1	0
@@ -11620,111 +14181,6 @@ $
 > /usr/share/vim/vim90/doc/editing.txt
 	*	1694046204	0
 	"	249	18
-
-> ~/.vim/coc-settings.json
-	*	1694046200	0
-	"	1	0
-	.	20	0
-	+	34	72
-	+	37	25
-	+	48	0
-	+	38	16
-	+	36	41
-	+	41	0
-	+	31	0
-	+	38	0
-	+	30	0
-	+	21	39
-	+	30	0
-	+	31	0
-	+	23	33
-	+	21	0
-	+	30	0
-	+	25	83
-	+	30	0
-	+	25	37
-	+	23	0
-	+	30	14
-	+	23	0
-	+	30	0
-	+	30	33
-	+	25	38
-	+	30	0
-	+	25	0
-	+	24	0
-	+	24	34
-	+	24	0
-	+	23	0
-	+	31	0
-	+	31	33
-	+	31	0
-	+	49	21
-	+	49	9
-	+	50	0
-	+	30	0
-	+	24	0
-	+	24	111
-	+	16	0
-	+	13	0
-	+	15	0
-	+	30	0
-	+	30	33
-	+	30	35
-	+	30	0
-	+	30	9
-	+	30	0
-	+	30	37
-	+	30	32
-	+	30	34
-	+	30	0
-	+	21	0
-	+	19	39
-	+	21	0
-	+	20	28
-	+	19	37
-	+	2	0
-	+	30	0
-	+	30	11
-	+	30	0
-	+	2	0
-	+	14	0
-	+	15	0
-	+	16	0
-	+	15	0
-	+	2	33
-	+	3	38
-	+	16	0
-	+	4	0
-	+	9	0
-	+	11	0
-	+	20	0
-	+	16	0
-	+	19	0
-	+	20	0
-	+	21	0
-	+	29	42
-	+	22	0
-	+	29	0
-	+	25	34
-	+	29	0
-	+	28	0
-	+	25	0
-	+	4	0
-	+	23	0
-	+	4	0
-	+	28	0
-	+	26	37
-	+	3	38
-	+	9	0
-	+	6	33
-	+	9	0
-	+	7	49
-	+	9	0
-	+	5	0
-	+	8	131
-	+	7	78
-	+	5	0
-	+	20	0
 
 > ~/.vim/plugged/coc.nvim/doc/coc.txt
 	*	1694043610	0
@@ -12102,78 +14558,6 @@ $
 	+	39	0
 	+	44	0
 	+	45	0
-
-> ~/tooling/main.txt
-	*	1694032772	0
-	"	40	0
-	^	40	41
-	.	36	0
-	+	1	0
-	+	1	73
-	+	1	32
-	+	1	9
-	+	1	67
-	+	1	0
-	+	1	8
-	+	1	0
-	+	1	25
-	+	1	53
-	+	1	33
-	+	1	0
-	+	1	7
-	+	1	6
-	+	1	8
-	+	1	0
-	+	1	18
-	+	1	0
-	+	1	48
-	+	1	18
-	+	1	14
-	+	1	69
-	+	1	0
-	+	1	114
-	+	1	0
-	+	1	19
-	+	1	41
-	+	1	62
-	+	1	8
-	+	1	11
-	+	1	0
-	+	1	6
-	+	1	17
-	+	1	0
-	+	1	78
-	+	1	0
-	+	1	72
-	+	1	0
-	+	1	65
-	+	1	3
-	+	1	0
-	+	1	2
-	+	1	0
-	+	1	8
-	+	1	13
-	+	1	26
-	+	1	2
-	+	1	0
-	+	1	3
-	+	1	73
-	+	1	72
-	+	1	0
-	+	12	72
-	+	17	76
-	+	29	73
-	+	33	0
-	+	34	139
-	+	34	0
-	+	34	131
-	+	36	27
-	+	39	36
-	+	40	0
-	+	38	3
-	+	39	3
-	+	40	40
-	+	36	0
 
 > ~/zomato/pyrightconfig.json
 	*	1694032573	0
@@ -12718,22 +15102,6 @@ $
 	*	1693292661	0
 	"	97	16
 
-> ~/.bashrc
-	*	1693292197	0
-	"	129	0
-	^	125	0
-	.	130	0
-	+	120	0
-	+	120	55
-	+	120	0
-	+	120	47
-	+	126	0
-	+	120	0
-	+	126	0
-	+	125	0
-	+	129	0
-	+	130	0
-
 > ~/.config/load_completions.bash
 	*	1693292039	0
 	"	6	0
@@ -12892,14 +15260,6 @@ $
 	+	4	0
 	+	5	27
 
-> ~/.config/alias.sh
-	*	1693208198	0
-	"	15	37
-	^	15	38
-	.	15	37
-	+	2	0
-	+	15	37
-
 > ~/.config/starship/starship.toml
 	*	1693208134	0
 	"	1	0
@@ -12951,10 +15311,6 @@ $
 > /usr/share/doc/fzf/examples/key-bindings.bash
 	*	1693206577	0
 	"	40	38
-
-> ~/.config/bindings.inputrc
-	*	1693206528	0
-	"	1	0
 
 > ~/.config/completions/starship.sh
 	*	1693203027	0
@@ -13611,31 +15967,6 @@ $
 	+	7	26
 	+	7	0
 	+	6	32
-
-> ~/Twitch/coffee-vps/code/schema/users.sql
-	*	1692712351	0
-	"	13	7
-	^	13	8
-	.	13	7
-	+	1	196
-	+	1	0
-	+	3	201
-	+	3	0
-	+	2	0
-	+	1	19
-	+	12	19
-	+	12	0
-	+	2	48
-	+	3	36
-	+	4	36
-	+	12	28
-	+	5	37
-	+	12	0
-	+	5	38
-	+	12	37
-	+	12	0
-	+	6	0
-	+	13	7
 
 > ~/frontend/node_modules/unplugin-auto-import/dist/vite.d.ts
 	*	1692706207	0
@@ -14866,14 +17197,6 @@ $
 	^	1	13
 	.	1	12
 	+	1	12
-
-> ~/.pypirc
-	*	1692456723	0
-	"	9	0
-	^	9	0
-	.	8	23
-	+	9	0
-	+	8	23
 
 > ~/pytypes/.direnv/python-3.10.6/lib/python3.10/site-packages/waivek/introspection.py
 	*	1692449992	0
@@ -16356,10 +18679,6 @@ $
 	*	1691834185	0
 	"	1	0
 
-> ~/.config/gita/repos.csv
-	*	1691834128	0
-	"	1	0
-
 > ~/vimfiles/todo/230812.txt
 	*	1691834082	0
 	"	3	6
@@ -17113,10 +19432,6 @@ $
 	+	2	0
 	+	20	0
 	+	2	0
-
-> /usr/lib/node_modules/sql-language-server/dist/bin/cli.js
-	*	1691571743	0
-	"	1	0
 
 > ~/Twitch/coffee-vps/code/yt_no_user_name.json
 	*	1691571512	0
@@ -18178,26 +20493,6 @@ $
 	+	39	0
 	+	65	0
 
-> ~/python_common/waivek/test.py
-	*	1688973696	0
-	"	741	23
-	.	752	0
-	+	750	11
-	+	751	26
-	+	757	13
-	+	752	15
-	+	757	18
-	+	752	35
-	+	752	0
-	+	748	23
-	+	751	16
-	+	756	29
-	+	757	20
-	+	750	18
-	+	752	20
-	+	750	18
-	+	752	0
-
 > ~/.vim/plugin/template.vim
 	*	1688914813	0
 	"	30	0
@@ -18514,17 +20809,6 @@ $
 	"	1	0
 	.	1	0
 	+	1	0
-
-> ~/.config/sql-language-server/.sqllsrc.json
-	*	1688457388	0
-	"	1	0
-	^	6	19
-	.	7	58
-	+	1	1
-	+	10	1
-	+	3	0
-	+	6	0
-	+	7	58
 
 > ~/Twitch/coffee-vps/code/data/clips.db
 	*	1688457156	0
