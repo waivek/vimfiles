@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/\C\<paths\>
+~MSle0~/\C\<DELETE\>
 
 # Last Substitute Search Pattern:
 ~MSle0&"
@@ -20,32 +20,60 @@
 $
 
 # Command Line History (newest to oldest):
+:qa
+|2,0,1713289931,,"qa"
+:q!
+|2,0,1713289730,,"q!"
+:term vd data/main.db
+|2,0,1713289723,,"term vd data/main.db"
+:set nonumber
+|2,0,1713288784,,"set nonumber"
+:b ~/hateoas/templates/elements.html
+|2,0,1713288456,,"b ~/hateoas/templates/elements.html"
+:e ele
+|2,0,1713288454,,"e ele"
+:e hateoas-api.py
+|2,0,1713288220,,"e hateoas-api.py"
+:MRU 3:package.json
+|2,0,1713288216,,"MRU 3:package.json"
+:e main.sql
+|2,0,1713288207,,"e main.sql"
+:e templates/base.html
+|2,0,1713288124,,"e templates/base.html"
+:e base
+|2,0,1713288119,,"e base"
+:e templates/nav.html
+|2,0,1713288066,,"e templates/nav.html"
+:MRU ele
+|2,0,1713287887,,"MRU ele"
+:b ele
+|2,0,1713287886,,"b ele"
+:MRU css
+|2,0,1713287742,,"MRU css"
+:b css
+|2,0,1713287739,,"b css"
+:MRU py
+|2,0,1713287253,,"MRU py"
 :q
-|2,0,1713282414,,"q"
+|2,0,1713287247,,"q"
+:CocInfo
+|2,0,1713287241,,"CocInfo"
+:CocRestart
+|2,0,1713287234,,"CocRestart"
 :e pack
 |2,0,1713282359,,"e pack"
-:qa
-|2,0,1713281554,,"qa"
 :'<,'>s/"//g
 |2,0,1713281526,,"'<,'>s/\"//g"
 :Tab /INTEGER\|TEXT
 |2,0,1713281113,,"Tab /INTEGER\\|TEXT"
-:e main.sql
-|2,0,1713280826,,"e main.sql"
 :e dbutils.py
 |2,0,1713280775,,"e dbutils.py"
 :e 
 |2,0,1713280211,,"e "
-:b css
-|2,0,1713279357,,"b css"
-:e templates/nav.html
-|2,0,1713279279,,"e templates/nav.html"
 :b templates/elements.html
 |2,0,1713279059,,"b templates/elements.html"
 :bd
 |2,0,1713279058,,"bd"
-:e ele
-|2,0,1713279056,,"e ele"
 :b py
 |2,0,1713278837,,"b py"
 :e static/
@@ -54,18 +82,12 @@ $
 |2,0,1713278539,,"e sty"
 :e templates/elements.html
 |2,0,1713278457,,"e templates/elements.html"
-:q!
-|2,0,1713278423,,"q!"
 :term
 |2,0,1713278342,,"term"
-:e hateoas-api.py
-|2,0,1713278226,,"e hateoas-api.py"
 :e in
 |2,0,1713278221,,"e in"
 :MRU 7:hateoas.css
 |2,0,1713278095,,"MRU 7:hateoas.css"
-:e templates/base.html
-|2,0,1713278088,,"e templates/base.html"
 :MRU dump
 |2,0,1713276861,,"MRU dump"
 :e hateoas.config.js
@@ -110,8 +132,6 @@ $
 |2,0,1712960130,,"MRU bashrc"
 :MRU input-bin
 |2,0,1712960127,,"MRU input-bin"
-:CocInfo
-|2,0,1712951927,,"CocInfo"
 :e
 |2,0,1712951922,,"e"
 :CocInf
@@ -124,8 +144,6 @@ $
 |2,0,1712951772,,"CocStatus"
 :CocStart
 |2,0,1712951762,,"CocStart"
-:CocRestart
-|2,0,1712951753,,"CocRestart"
 :CocConfig
 |2,0,1712951703,,"CocConfig"
 :e ~/hateoas/hateoas_backend/sample.sql
@@ -250,8 +268,6 @@ $
 |2,0,1712519035,,"e ~/python_common/waivek/db.py"
 :MRU db.
 |2,0,1712518963,,"MRU db."
-:set nonumber
-|2,0,1712518683,,"set nonumber"
 :!rm downloads
 |2,0,1712518471,,"!rm downloads"
 :e downloads
@@ -606,8 +622,6 @@ $
 |2,0,1711110338,,"e /mnt/"
 :b ~/elements/elements_backend/el-api.py
 |2,0,1711089566,,"b ~/elements/elements_backend/el-api.py"
-:MRU ele
-|2,0,1711088750,,"MRU ele"
 :242
 |2,0,1711063660,,"242"
 :MRU 3:Elements.vue
@@ -2140,8 +2154,6 @@ $
 |2,0,1693515733,,"e pyexamples/"
 :e ~/.vim/templates/template.py
 |2,0,1693432136,,"e ~/.vim/templates/template.py"
-:MRU py
-|2,0,1693431273,,"MRU py"
 :Buffers
 |2,0,1693431259,,"Buffers"
 :h coc-json
@@ -4748,6 +4760,10 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/title
+|2,1,1713289733,47,"title"
+?/box
+|2,1,1713287743,47,"box"
 ? "
 |2,1,1713281526,,"\""
 ?/script
@@ -5450,8 +5466,6 @@ $
 |2,1,1695191407,47,"tr"
 ?/row
 |2,1,1695191026,47,"row"
-?/title
-|2,1,1695190984,47,"title"
 ? in \zs[^:]\+
 |2,1,1695189965,,"in \\zs[^:]\\+"
 ?/<a href
@@ -6663,7 +6677,9 @@ $
 
 # Input Line History (newest to oldest):
 @div>
-|2,3,1713278961,,"div>"
+|2,3,1713289671,,"div>"
+@div class="box">
+|2,3,1713289636,,"div class=\"box\">"
 @di>
 |2,3,1713278958,,"di>"
 @div class="tall">
@@ -6761,49 +6777,48 @@ $
 
 # Registers:
 ""0	CHAR	0
-	)
-|3,1,0,0,1,0,1713282263,")"
+	Title
+|3,1,0,0,1,0,1713289916,"Title"
 "1	LINE	0
-	
-|3,0,1,1,1,0,1713281254,""
+	                <button type="submit">Create</button>
+|3,0,1,1,1,0,1713289671,"                <button type=\"submit\">Create</button>"
 "2	LINE	0
-	CREATE TABLE "portionoriginals" (
-	    "portion_id" INTEGER NOT NULL UNIQUE,
-	    "user_id"    TEXT    NOT NULL,
-	    "url"        TEXT    NOT NULL
-	);
-	
-	
-	
-	
-	
-|3,0,2,1,10,0,1713281252,"CREATE TABLE \"portionoriginals\" (","    \"portion_id\" INTEGER NOT NULL UNIQUE,","    \"user_id\"    TEXT    NOT NULL,","    \"url\"        TEXT    NOT NULL",");","","","","",""
+	                <input type="text" name="title" placeholder="Title">
+	                <input type="text" name="description" placeholder="Description">
+|3,0,2,1,2,0,1713289668,"                <input type=\"text\" name=\"title\" placeholder=\"Title\">","                <input type=\"text\" name=\"description\" placeholder=\"Description\">"
 "3	LINE	0
-	    "url" TEXT NOT NULL,
-|3,0,3,1,1,0,1713280970,"    \"url\" TEXT NOT NULL,"
+	        <form action="{{ url_for('create_sequence') }}" method="POST">
+	            <input type="text" name="title" placeholder="Title">
+	            <input type="text" name="description" placeholder="Description">
+	            <button type="submit">Create</button>
+	        </form>
+|3,0,3,1,5,0,1713289636,"        <form action=\"{{ url_for('create_sequence') }}\" method=\"POST\">","            <input type=\"text\" name=\"title\" placeholder=\"Title\">","            <input type=\"text\" name=\"description\" placeholder=\"Description\">","            <button type=\"submit\">Create</button>","        </form>"
 "4	LINE	0
-	    "description" TEXT,
-|3,0,4,1,1,0,1713280910,"    \"description\" TEXT,"
+	
+|3,0,4,1,1,0,1713289625,""
 "5	LINE	0
-	
-|3,0,5,1,1,0,1713280886,""
+	    cursor = connection.cursor()
+	    cursor.execute("INSERT INTO sequences (sequence) VALUES (?)", (sequence,))
+	    connection.commit()
+|3,0,5,1,3,0,1713289574,"    cursor = connection.cursor()","    cursor.execute(\"INSERT INTO sequences (sequence) VALUES (?)\", (sequence,))","    connection.commit()"
 "6	LINE	0
-	    "start" INTEGER NOT NULL,
-	    "end" INTEGER NOT NULL,
-|3,0,6,1,2,0,1713280877,"    \"start\" INTEGER NOT NULL,","    \"end\" INTEGER NOT NULL,"
+	                    <a href="{{ url_for('edit_sequence', id=seq['id']) }}">Edit</a>
+|3,0,6,1,1,0,1713289121,"                    <a href=\"{{ url_for('edit_sequence', id=seq['id']) }}\">Edit</a>"
 "7	LINE	0
-	    "description" TEXT,
-|3,0,7,1,1,0,1713280875,"    \"description\" TEXT,"
+	                }}" method="DELETE">
+|3,0,7,1,1,0,1713289108,"                }}\" method=\"DELETE\">"
 "8	LINE	0
-	    "sequence" TEXT NOT NULL,
-|3,0,8,1,1,0,1713280867,"    \"sequence\" TEXT NOT NULL,"
+	                <button
+|3,0,8,1,1,0,1713289055,"                <button"
 "9	LINE	0
-	print(f"{db_paths = }")
-	
-|3,0,9,1,2,0,1713280586,"print(f\"{db_paths = }\")",""
+	        {{ sequences | html_list | safe }}
+|3,0,9,1,1,0,1713288994,"        {{ sequences | html_list | safe }}"
 "a	CHAR	0
 	f"ct,INTE€kb€kbDENT_FOURjk
 |3,0,10,0,1,0,1712521901,"f\"ct,INTE€kb€kbDENT_FOURjk"
+"j	CHAR	0
+	k:q!kkkkkkkkkkkgg/titlec/€ýa
+|3,0,19,0,1,0,1713289736,"k:q!kkkkkkkkkkkgg/titlec/€ýa"
 "l	CHAR	0
 	ll
 |3,0,21,0,1,0,1690934784,"ll"
@@ -6836,32 +6851,132 @@ $
 |<"                <form method=\"POST\" action=\"/resume_download\">","                    <input type=\"hidden\" name=\"id\" value=\"{{ id }}\">","                    <input type=\"submit\" value=\"Resume\">","                </form>","                {% endif %}","                {% if status == 'downloading' %}","                <form method=\"POST\" action=\"/pause_download\">","                    <input type=\"hidden\" name=\"id\" value=\"{{ id }}\">",>61
 |<"                    <input type=\"submit\" value=\"Pause\">","                </form>","                {% endif %}","","            </li>","        {% endfor %}","    </ul>\"\"\", downloads=downloads)"
 "-	CHAR	0
-	)
-|3,0,36,0,1,0,1713282075,")"
+	Title
+|3,0,36,0,1,0,1713289744,"Title"
 
 # File marks:
-'0  1  0  ~/Twitch/coffee-vps/code/package.json
-|4,48,1,0,1713282414,"~/Twitch/coffee-vps/code/package.json"
-'1  1  0  ~/Twitch/coffee-vps/code/package.json
-|4,49,1,0,1713282396,"~/Twitch/coffee-vps/code/package.json"
-'2  1  0  ~/Twitch/coffee-vps/code/package.json
-|4,50,1,0,1713282360,"~/Twitch/coffee-vps/code/package.json"
-'3  1  0  ~/Twitch/coffee-vps/code/package.json
-|4,51,1,0,1713282360,"~/Twitch/coffee-vps/code/package.json"
-'4  89  12  ~/Twitch/coffee-vps/code/yt_users.js
-|4,52,89,12,1713282272,"~/Twitch/coffee-vps/code/yt_users.js"
-'5  89  12  ~/Twitch/coffee-vps/code/yt_users.js
-|4,53,89,12,1713282272,"~/Twitch/coffee-vps/code/yt_users.js"
-'6  89  12  ~/Twitch/coffee-vps/code/yt_users.js
-|4,54,89,12,1713282272,"~/Twitch/coffee-vps/code/yt_users.js"
-'7  89  12  ~/Twitch/coffee-vps/code/yt_users.js
-|4,55,89,12,1713282272,"~/Twitch/coffee-vps/code/yt_users.js"
-'8  89  12  ~/Twitch/coffee-vps/code/yt_users.js
-|4,56,89,12,1713282272,"~/Twitch/coffee-vps/code/yt_users.js"
-'9  89  12  ~/Twitch/coffee-vps/code/yt_users.js
-|4,57,89,12,1713282272,"~/Twitch/coffee-vps/code/yt_users.js"
+'0  68  86  ~/hateoas/hateoas-api.py
+|4,48,68,86,1713289931,"~/hateoas/hateoas-api.py"
+'1  1  0  ~/hateoas/main.sql
+|4,49,1,0,1713287247,"~/hateoas/main.sql"
+'2  1  0  ~/hateoas/main.sql
+|4,50,1,0,1713287247,"~/hateoas/main.sql"
+'3  2  8  ~/hateoas/.gitignore
+|4,51,2,8,1713287179,"~/hateoas/.gitignore"
+'4  2  8  ~/hateoas/.gitignore
+|4,52,2,8,1713287179,"~/hateoas/.gitignore"
+'5  2  8  ~/hateoas/.gitignore
+|4,53,2,8,1713287179,"~/hateoas/.gitignore"
+'6  2  8  ~/hateoas/.gitignore
+|4,54,2,8,1713287179,"~/hateoas/.gitignore"
+'7  2  5  ~/hateoas/.gitignore
+|4,55,2,5,1713287154,"~/hateoas/.gitignore"
+'8  2  5  ~/hateoas/.gitignore
+|4,56,2,5,1713287154,"~/hateoas/.gitignore"
+'9  2  5  ~/hateoas/.gitignore
+|4,57,2,5,1713287154,"~/hateoas/.gitignore"
 
 # Jumplist (newest first):
+-'  68  86  ~/hateoas/hateoas-api.py
+|4,39,68,86,1713289931,"~/hateoas/hateoas-api.py"
+-'  35  20  ~/hateoas/hateoas-api.py
+|4,39,35,20,1713289917,"~/hateoas/hateoas-api.py"
+-'  32  44  ~/hateoas/hateoas-api.py
+|4,39,32,44,1713289916,"~/hateoas/hateoas-api.py"
+-'  93  17  ~/hateoas/hateoas-api.py
+|4,39,93,17,1713289744,"~/hateoas/hateoas-api.py"
+-'  78  67  ~/hateoas/hateoas-api.py
+|4,39,78,67,1713289744,"~/hateoas/hateoas-api.py"
+-'  59  13  ~/hateoas/hateoas-api.py
+|4,39,59,13,1713289743,"~/hateoas/hateoas-api.py"
+-'  44  82  ~/hateoas/hateoas-api.py
+|4,39,44,82,1713289740,"~/hateoas/hateoas-api.py"
+-'  41  32  ~/hateoas/hateoas-api.py
+|4,39,41,32,1713289738,"~/hateoas/hateoas-api.py"
+-'  1  0  ~/hateoas/hateoas-api.py
+|4,39,1,0,1713289733,"~/hateoas/hateoas-api.py"
+-'  58  28  ~/hateoas/hateoas-api.py
+|4,39,58,28,1713289732,"~/hateoas/hateoas-api.py"
+-'  47  0  ~/hateoas/hateoas-api.py
+|4,39,47,0,1713289723,"~/hateoas/hateoas-api.py"
+-'  81  16  ~/hateoas/hateoas-api.py
+|4,39,81,16,1713289671,"~/hateoas/hateoas-api.py"
+-'  77  16  ~/hateoas/hateoas-api.py
+|4,39,77,16,1713289668,"~/hateoas/hateoas-api.py"
+-'  75  34  ~/hateoas/hateoas-api.py
+|4,39,75,34,1713289653,"~/hateoas/hateoas-api.py"
+-'  74  8  ~/hateoas/hateoas-api.py
+|4,39,74,8,1713289636,"~/hateoas/hateoas-api.py"
+-'  45  22  ~/hateoas/hateoas-api.py
+|4,39,45,22,1713289593,"~/hateoas/hateoas-api.py"
+-'  42  4  ~/hateoas/hateoas-api.py
+|4,39,42,4,1713289584,"~/hateoas/hateoas-api.py"
+-'  70  16  ~/hateoas/hateoas-api.py
+|4,39,70,16,1713289124,"~/hateoas/hateoas-api.py"
+-'  72  35  ~/hateoas/hateoas-api.py
+|4,39,72,35,1713289107,"~/hateoas/hateoas-api.py"
+-'  67  29  ~/hateoas/hateoas-api.py
+|4,39,67,29,1713289094,"~/hateoas/hateoas-api.py"
+-'  73  8  ~/hateoas/hateoas-api.py
+|4,39,73,8,1713289004,"~/hateoas/hateoas-api.py"
+-'  86  0  ~/hateoas/hateoas-api.py
+|4,39,86,0,1713289004,"~/hateoas/hateoas-api.py"
+-'  64  23  ~/hateoas/hateoas-api.py
+|4,39,64,23,1713288912,"~/hateoas/hateoas-api.py"
+-'  22  4  ~/hateoas/hateoas-api.py
+|4,39,22,4,1713288911,"~/hateoas/hateoas-api.py"
+-'  21  19  ~/hateoas/hateoas-api.py
+|4,39,21,19,1713288873,"~/hateoas/hateoas-api.py"
+-'  98  12  ~/hateoas/hateoas-api.py
+|4,39,98,12,1713288384,"~/hateoas/hateoas-api.py"
+-'  8  8  ~/hateoas/templates/base.html
+|4,39,8,8,1713288220,"~/hateoas/templates/base.html"
+-'  9  0  ~/hateoas/templates/elements.html
+|4,39,9,0,1713288124,"~/hateoas/templates/elements.html"
+-'  10  50  ~/hateoas/templates/elements.html
+|4,39,10,50,1713287938,"~/hateoas/templates/elements.html"
+-'  57  8  ~/hateoas/hateoas-api.py
+|4,39,57,8,1713287887,"~/hateoas/hateoas-api.py"
+-'  48  0  ~/hateoas/hateoas-api.py
+|4,39,48,0,1713287831,"~/hateoas/hateoas-api.py"
+-'  9  37  ~/hateoas/static/css/hateoas.css
+|4,39,9,37,1713287781,"~/hateoas/static/css/hateoas.css"
+-'  27  16  ~/hateoas/hateoas-api.py
+|4,39,27,16,1713287755,"~/hateoas/hateoas-api.py"
+-'  4  43  ~/hateoas/static/css/hateoas.css
+|4,39,4,43,1713287752,"~/hateoas/static/css/hateoas.css"
+-'  1  0  ~/hateoas/static/css/hateoas.css
+|4,39,1,0,1713287743,"~/hateoas/static/css/hateoas.css"
+-'  26  28  ~/hateoas/hateoas-api.py
+|4,39,26,28,1713287742,"~/hateoas/hateoas-api.py"
+-'  89  7  ~/hateoas/hateoas-api.py
+|4,39,89,7,1713287621,"~/hateoas/hateoas-api.py"
+-'  1  0  ~/hateoas/main.sql
+|4,39,1,0,1713287247,"~/hateoas/main.sql"
+-'  2  8  ~/hateoas/.gitignore
+|4,39,2,8,1713287179,"~/hateoas/.gitignore"
+-'  2  8  ~/hateoas/.gitignore
+|4,39,2,8,1713287179,"~/hateoas/.gitignore"
+-'  1  0  ~/hateoas/.gitignore
+|4,39,1,0,1713287177,"~/hateoas/.gitignore"
+-'  1  0  ~/hateoas/.gitignore
+|4,39,1,0,1713287177,"~/hateoas/.gitignore"
+-'  2  5  ~/hateoas/.gitignore
+|4,39,2,5,1713287154,"~/hateoas/.gitignore"
+-'  1  0  ~/hateoas/.gitignore
+|4,39,1,0,1713287152,"~/hateoas/.gitignore"
+-'  2  0  ~/hateoas/.gitignore
+|4,39,2,0,1713287146,"~/hateoas/.gitignore"
+-'  1  0  ~/hateoas/.gitignore
+|4,39,1,0,1713287139,"~/hateoas/.gitignore"
+-'  1  0  ~/Twitch/coffee-vps/code/package.json
+|4,39,1,0,1713282414,"~/Twitch/coffee-vps/code/package.json"
+-'  1  0  ~/Twitch/coffee-vps/code/package.json
+|4,39,1,0,1713282414,"~/Twitch/coffee-vps/code/package.json"
+-'  1  0  ~/Twitch/coffee-vps/code/package.json
+|4,39,1,0,1713282414,"~/Twitch/coffee-vps/code/package.json"
+-'  1  0  ~/Twitch/coffee-vps/code/package.json
+|4,39,1,0,1713282414,"~/Twitch/coffee-vps/code/package.json"
 -'  1  0  ~/Twitch/coffee-vps/code/package.json
 |4,39,1,0,1713282414,"~/Twitch/coffee-vps/code/package.json"
 -'  1  0  ~/Twitch/coffee-vps/code/package.json
@@ -6876,6 +6991,22 @@ $
 |4,39,89,12,1713282272,"~/Twitch/coffee-vps/code/yt_users.js"
 -'  89  12  ~/Twitch/coffee-vps/code/yt_users.js
 |4,39,89,12,1713282272,"~/Twitch/coffee-vps/code/yt_users.js"
+-'  89  12  ~/Twitch/coffee-vps/code/yt_users.js
+|4,39,89,12,1713282272,"~/Twitch/coffee-vps/code/yt_users.js"
+-'  89  12  ~/Twitch/coffee-vps/code/yt_users.js
+|4,39,89,12,1713282272,"~/Twitch/coffee-vps/code/yt_users.js"
+-'  89  12  ~/Twitch/coffee-vps/code/yt_users.js
+|4,39,89,12,1713282272,"~/Twitch/coffee-vps/code/yt_users.js"
+-'  89  12  ~/Twitch/coffee-vps/code/yt_users.js
+|4,39,89,12,1713282272,"~/Twitch/coffee-vps/code/yt_users.js"
+-'  76  28  ~/Twitch/coffee-vps/code/yt_users.js
+|4,39,76,28,1713282269,"~/Twitch/coffee-vps/code/yt_users.js"
+-'  76  28  ~/Twitch/coffee-vps/code/yt_users.js
+|4,39,76,28,1713282269,"~/Twitch/coffee-vps/code/yt_users.js"
+-'  76  28  ~/Twitch/coffee-vps/code/yt_users.js
+|4,39,76,28,1713282269,"~/Twitch/coffee-vps/code/yt_users.js"
+-'  76  28  ~/Twitch/coffee-vps/code/yt_users.js
+|4,39,76,28,1713282269,"~/Twitch/coffee-vps/code/yt_users.js"
 -'  76  28  ~/Twitch/coffee-vps/code/yt_users.js
 |4,39,76,28,1713282269,"~/Twitch/coffee-vps/code/yt_users.js"
 -'  76  28  ~/Twitch/coffee-vps/code/yt_users.js
@@ -6892,6 +7023,14 @@ $
 |4,39,28,6,1713282263,"~/Twitch/coffee-vps/code/yt_users.js"
 -'  28  6  ~/Twitch/coffee-vps/code/yt_users.js
 |4,39,28,6,1713282263,"~/Twitch/coffee-vps/code/yt_users.js"
+-'  28  6  ~/Twitch/coffee-vps/code/yt_users.js
+|4,39,28,6,1713282263,"~/Twitch/coffee-vps/code/yt_users.js"
+-'  28  6  ~/Twitch/coffee-vps/code/yt_users.js
+|4,39,28,6,1713282263,"~/Twitch/coffee-vps/code/yt_users.js"
+-'  28  6  ~/Twitch/coffee-vps/code/yt_users.js
+|4,39,28,6,1713282263,"~/Twitch/coffee-vps/code/yt_users.js"
+-'  28  6  ~/Twitch/coffee-vps/code/yt_users.js
+|4,39,28,6,1713282263,"~/Twitch/coffee-vps/code/yt_users.js"
 -'  10  6  ~/Twitch/coffee-vps/code/yt_users.js
 |4,39,10,6,1713282259,"~/Twitch/coffee-vps/code/yt_users.js"
 -'  10  6  ~/Twitch/coffee-vps/code/yt_users.js
@@ -6900,6 +7039,22 @@ $
 |4,39,10,6,1713282259,"~/Twitch/coffee-vps/code/yt_users.js"
 -'  10  6  ~/Twitch/coffee-vps/code/yt_users.js
 |4,39,10,6,1713282259,"~/Twitch/coffee-vps/code/yt_users.js"
+-'  10  6  ~/Twitch/coffee-vps/code/yt_users.js
+|4,39,10,6,1713282259,"~/Twitch/coffee-vps/code/yt_users.js"
+-'  10  6  ~/Twitch/coffee-vps/code/yt_users.js
+|4,39,10,6,1713282259,"~/Twitch/coffee-vps/code/yt_users.js"
+-'  10  6  ~/Twitch/coffee-vps/code/yt_users.js
+|4,39,10,6,1713282259,"~/Twitch/coffee-vps/code/yt_users.js"
+-'  10  6  ~/Twitch/coffee-vps/code/yt_users.js
+|4,39,10,6,1713282259,"~/Twitch/coffee-vps/code/yt_users.js"
+-'  1  0  ~/Twitch/coffee-vps/code/yt_users.js
+|4,39,1,0,1713282247,"~/Twitch/coffee-vps/code/yt_users.js"
+-'  1  0  ~/Twitch/coffee-vps/code/yt_users.js
+|4,39,1,0,1713282247,"~/Twitch/coffee-vps/code/yt_users.js"
+-'  1  0  ~/Twitch/coffee-vps/code/yt_users.js
+|4,39,1,0,1713282247,"~/Twitch/coffee-vps/code/yt_users.js"
+-'  1  0  ~/Twitch/coffee-vps/code/yt_users.js
+|4,39,1,0,1713282247,"~/Twitch/coffee-vps/code/yt_users.js"
 -'  1  0  ~/Twitch/coffee-vps/code/yt_users.js
 |4,39,1,0,1713282247,"~/Twitch/coffee-vps/code/yt_users.js"
 -'  1  0  ~/Twitch/coffee-vps/code/yt_users.js
@@ -6919,154 +7074,308 @@ $
 -'  10  89  ~/Twitch/coffee-vps/code/schema/videos.sql
 |4,39,10,89,1713282078,"~/Twitch/coffee-vps/code/schema/videos.sql"
 -'  10  89  ~/Twitch/coffee-vps/code/schema/videos.sql
-|4,39,10,89,1713282058,"~/Twitch/coffee-vps/code/schema/videos.sql"
--'  10  95  ~/Twitch/coffee-vps/code/schema/videos.sql
-|4,39,10,95,1713282035,"~/Twitch/coffee-vps/code/schema/videos.sql"
--'  1  0  ~/Twitch/coffee-vps/code/schema/videos.sql
-|4,39,1,0,1713281956,"~/Twitch/coffee-vps/code/schema/videos.sql"
--'  1  0  ~/Twitch/coffee-vps/code/schema/videos.sql
-|4,39,1,0,1713281956,"~/Twitch/coffee-vps/code/schema/videos.sql"
--'  1  0  ~/Twitch/coffee-vps/code/schema/videos.sql
-|4,39,1,0,1713281956,"~/Twitch/coffee-vps/code/schema/videos.sql"
--'  1  0  ~/Twitch/coffee-vps/code/schema/videos.sql
-|4,39,1,0,1713281956,"~/Twitch/coffee-vps/code/schema/videos.sql"
--'  1  0  ~/Twitch/coffee-vps/code/schema/videos.sql
-|4,39,1,0,1713281956,"~/Twitch/coffee-vps/code/schema/videos.sql"
--'  1  0  ~/Twitch/coffee-vps/code/schema/videos.sql
-|4,39,1,0,1713281956,"~/Twitch/coffee-vps/code/schema/videos.sql"
--'  1  0  ~/Twitch/coffee-vps/code/schema/videos.sql
-|4,39,1,0,1713281956,"~/Twitch/coffee-vps/code/schema/videos.sql"
--'  5  31  ~/hateoas/main.sql
-|4,39,5,31,1713281554,"~/hateoas/main.sql"
--'  5  31  ~/hateoas/main.sql
-|4,39,5,31,1713281554,"~/hateoas/main.sql"
--'  5  31  ~/hateoas/main.sql
-|4,39,5,31,1713281554,"~/hateoas/main.sql"
--'  5  31  ~/hateoas/main.sql
-|4,39,5,31,1713281554,"~/hateoas/main.sql"
--'  5  31  ~/hateoas/main.sql
-|4,39,5,31,1713281554,"~/hateoas/main.sql"
--'  5  31  ~/hateoas/main.sql
-|4,39,5,31,1713281554,"~/hateoas/main.sql"
--'  5  31  ~/hateoas/main.sql
-|4,39,5,31,1713281554,"~/hateoas/main.sql"
--'  5  31  ~/hateoas/main.sql
-|4,39,5,31,1713281554,"~/hateoas/main.sql"
--'  3  0  ~/hateoas/main.sql
-|4,39,3,0,1713281526,"~/hateoas/main.sql"
--'  3  0  ~/hateoas/main.sql
-|4,39,3,0,1713281526,"~/hateoas/main.sql"
--'  3  0  ~/hateoas/main.sql
-|4,39,3,0,1713281526,"~/hateoas/main.sql"
--'  3  0  ~/hateoas/main.sql
-|4,39,3,0,1713281526,"~/hateoas/main.sql"
--'  3  0  ~/hateoas/main.sql
-|4,39,3,0,1713281526,"~/hateoas/main.sql"
--'  3  0  ~/hateoas/main.sql
-|4,39,3,0,1713281526,"~/hateoas/main.sql"
--'  3  0  ~/hateoas/main.sql
-|4,39,3,0,1713281526,"~/hateoas/main.sql"
--'  3  0  ~/hateoas/main.sql
-|4,39,3,0,1713281526,"~/hateoas/main.sql"
--'  9  0  ~/hateoas/main.sql
-|4,39,9,0,1713281523,"~/hateoas/main.sql"
--'  9  0  ~/hateoas/main.sql
-|4,39,9,0,1713281523,"~/hateoas/main.sql"
--'  9  0  ~/hateoas/main.sql
-|4,39,9,0,1713281523,"~/hateoas/main.sql"
--'  9  0  ~/hateoas/main.sql
-|4,39,9,0,1713281523,"~/hateoas/main.sql"
--'  9  0  ~/hateoas/main.sql
-|4,39,9,0,1713281523,"~/hateoas/main.sql"
--'  9  0  ~/hateoas/main.sql
-|4,39,9,0,1713281523,"~/hateoas/main.sql"
--'  9  0  ~/hateoas/main.sql
-|4,39,9,0,1713281523,"~/hateoas/main.sql"
--'  9  0  ~/hateoas/main.sql
-|4,39,9,0,1713281523,"~/hateoas/main.sql"
--'  19  0  ~/hateoas/main.sql
-|4,39,19,0,1713281516,"~/hateoas/main.sql"
--'  19  0  ~/hateoas/main.sql
-|4,39,19,0,1713281516,"~/hateoas/main.sql"
--'  19  0  ~/hateoas/main.sql
-|4,39,19,0,1713281516,"~/hateoas/main.sql"
--'  19  0  ~/hateoas/main.sql
-|4,39,19,0,1713281516,"~/hateoas/main.sql"
--'  19  0  ~/hateoas/main.sql
-|4,39,19,0,1713281516,"~/hateoas/main.sql"
--'  19  0  ~/hateoas/main.sql
-|4,39,19,0,1713281516,"~/hateoas/main.sql"
--'  19  0  ~/hateoas/main.sql
-|4,39,19,0,1713281516,"~/hateoas/main.sql"
--'  19  0  ~/hateoas/main.sql
-|4,39,19,0,1713281516,"~/hateoas/main.sql"
--'  24  49  ~/hateoas/main.sql
-|4,39,24,49,1713281511,"~/hateoas/main.sql"
--'  24  49  ~/hateoas/main.sql
-|4,39,24,49,1713281511,"~/hateoas/main.sql"
--'  24  49  ~/hateoas/main.sql
-|4,39,24,49,1713281511,"~/hateoas/main.sql"
--'  24  49  ~/hateoas/main.sql
-|4,39,24,49,1713281511,"~/hateoas/main.sql"
--'  24  49  ~/hateoas/main.sql
-|4,39,24,49,1713281511,"~/hateoas/main.sql"
--'  24  49  ~/hateoas/main.sql
-|4,39,24,49,1713281511,"~/hateoas/main.sql"
--'  24  49  ~/hateoas/main.sql
-|4,39,24,49,1713281511,"~/hateoas/main.sql"
--'  24  49  ~/hateoas/main.sql
-|4,39,24,49,1713281511,"~/hateoas/main.sql"
--'  25  25  ~/hateoas/main.sql
-|4,39,25,25,1713281505,"~/hateoas/main.sql"
--'  25  25  ~/hateoas/main.sql
-|4,39,25,25,1713281505,"~/hateoas/main.sql"
--'  25  25  ~/hateoas/main.sql
-|4,39,25,25,1713281505,"~/hateoas/main.sql"
--'  25  25  ~/hateoas/main.sql
-|4,39,25,25,1713281505,"~/hateoas/main.sql"
--'  25  25  ~/hateoas/main.sql
-|4,39,25,25,1713281505,"~/hateoas/main.sql"
--'  25  25  ~/hateoas/main.sql
-|4,39,25,25,1713281505,"~/hateoas/main.sql"
--'  25  25  ~/hateoas/main.sql
-|4,39,25,25,1713281505,"~/hateoas/main.sql"
--'  25  25  ~/hateoas/main.sql
-|4,39,25,25,1713281505,"~/hateoas/main.sql"
--'  15  57  ~/hateoas/main.sql
-|4,39,15,57,1713281489,"~/hateoas/main.sql"
--'  15  57  ~/hateoas/main.sql
-|4,39,15,57,1713281489,"~/hateoas/main.sql"
--'  15  57  ~/hateoas/main.sql
-|4,39,15,57,1713281489,"~/hateoas/main.sql"
--'  15  57  ~/hateoas/main.sql
-|4,39,15,57,1713281489,"~/hateoas/main.sql"
--'  15  57  ~/hateoas/main.sql
-|4,39,15,57,1713281489,"~/hateoas/main.sql"
--'  15  57  ~/hateoas/main.sql
-|4,39,15,57,1713281489,"~/hateoas/main.sql"
--'  15  57  ~/hateoas/main.sql
-|4,39,15,57,1713281489,"~/hateoas/main.sql"
--'  15  57  ~/hateoas/main.sql
-|4,39,15,57,1713281489,"~/hateoas/main.sql"
--'  27  33  ~/hateoas/main.sql
-|4,39,27,33,1713281252,"~/hateoas/main.sql"
--'  27  33  ~/hateoas/main.sql
-|4,39,27,33,1713281252,"~/hateoas/main.sql"
--'  27  33  ~/hateoas/main.sql
-|4,39,27,33,1713281252,"~/hateoas/main.sql"
--'  27  33  ~/hateoas/main.sql
-|4,39,27,33,1713281252,"~/hateoas/main.sql"
--'  27  33  ~/hateoas/main.sql
-|4,39,27,33,1713281252,"~/hateoas/main.sql"
--'  27  33  ~/hateoas/main.sql
-|4,39,27,33,1713281252,"~/hateoas/main.sql"
--'  27  33  ~/hateoas/main.sql
-|4,39,27,33,1713281252,"~/hateoas/main.sql"
+|4,39,10,89,1713282078,"~/Twitch/coffee-vps/code/schema/videos.sql"
+-'  10  89  ~/Twitch/coffee-vps/code/schema/videos.sql
+|4,39,10,89,1713282078,"~/Twitch/coffee-vps/code/schema/videos.sql"
 
 # Buffer list:
-%~/Twitch/coffee-vps/code/package.json	1	0
+%~/hateoas/hateoas-api.py	68	86
+%~/hateoas/static/css/hateoas.css	9	37
+%~/hateoas/templates/elements.html	6	4
+%~/hateoas/templates/base.html	8	8
 
 # History of marks within files (newest to oldest):
+
+> ~/hateoas/hateoas-api.py
+	*	1713289923	0
+	"	68	86
+	^	78	68
+	.	78	67
+	+	59	4
+	+	61	4
+	+	64	8
+	+	64	36
+	+	86	4
+	+	56	0
+	+	14	0
+	+	9	29
+	+	15	38
+	+	53	53
+	+	54	41
+	+	55	0
+	+	51	6
+	+	86	15
+	+	64	34
+	+	86	0
+	+	22	18
+	+	23	37
+	+	28	0
+	+	25	0
+	+	26	0
+	+	29	12
+	+	25	0
+	+	30	14
+	+	31	0
+	+	30	19
+	+	27	20
+	+	52	21
+	+	53	13
+	+	54	25
+	+	52	0
+	+	86	11
+	+	87	0
+	+	87	18
+	+	88	0
+	+	87	18
+	+	90	7
+	+	21	21
+	+	54	55
+	+	64	37
+	+	64	48
+	+	48	0
+	+	64	29
+	+	98	11
+	+	64	0
+	+	98	0
+	+	98	58
+	+	98	0
+	+	63	32
+	+	64	0
+	+	97	11
+	+	98	0
+	+	98	46
+	+	98	0
+	+	64	0
+	+	63	0
+	+	21	19
+	+	64	34
+	+	65	8
+	+	72	14
+	+	73	20
+	+	86	0
+	+	30	0
+	+	65	27
+	+	68	91
+	+	72	0
+	+	69	57
+	+	70	0
+	+	33	10
+	+	32	43
+	+	37	19
+	+	71	0
+	+	40	10
+	+	39	23
+	+	40	20
+	+	41	37
+	+	42	43
+	+	47	0
+	+	42	49
+	+	43	32
+	+	44	4
+	+	45	4
+	+	46	4
+	+	86	70
+	+	86	12
+	+	86	8
+	+	86	0
+	+	74	0
+	+	75	13
+	+	74	27
+	+	75	34
+	+	77	0
+	+	81	0
+	+	76	85
+	+	41	32
+	+	44	82
+	+	59	0
+	+	78	67
+	a	75	34
+	b	75	34
+
+> ~/hateoas/templates/nav.html
+	*	1713288705	0
+	"	1	0
+	^	1	0
+	.	1	0
+	+	2	0
+	+	3	16
+	+	10	0
+	+	3	0
+	+	7	8
+	+	9	0
+	+	7	0
+	+	9	0
+	+	2	16
+	+	6	8
+	+	8	0
+	+	3	0
+	+	1	0
+
+> ~/hateoas/templates/elements.html
+	*	1713288494	0
+	"	6	4
+	^	9	0
+	.	8	0
+	+	1	11
+	+	5	12
+	+	6	17
+	+	40	34
+	+	40	4
+	+	40	0
+	+	40	4
+	+	40	19
+	+	40	0
+	+	40	23
+	+	40	0
+	+	16	0
+	+	6	26
+	+	39	0
+	+	29	13
+	+	38	8
+	+	38	0
+	+	37	0
+	+	30	0
+	+	29	56
+	+	28	16
+	+	37	0
+	+	34	22
+	+	35	95
+	+	10	28
+	+	10	0
+	+	11	0
+	+	10	0
+	+	9	3
+	+	10	0
+	+	9	28
+	+	9	0
+	+	10	0
+	+	8	0
+
+> ~/hateoas/templates/base.html
+	*	1713288216	0
+	"	8	8
+	.	8	0
+	+	10	0
+	+	6	0
+	+	4	50
+	+	5	78
+	+	6	0
+	+	6	8
+	+	4	0
+	+	6	0
+	+	9	0
+	+	10	0
+	+	8	20
+	+	9	0
+	+	8	12
+	+	8	0
+	+	8	55
+	+	8	67
+	+	8	0
+
+> ~/hateoas/static/css/hateoas.css
+	*	1713287764	0
+	"	9	37
+	^	9	38
+	.	9	37
+	+	2	48
+	+	3	45
+	+	4	50
+	+	11	39
+	+	8	0
+	+	9	36
+	+	10	0
+	+	12	40
+	+	5	45
+	+	6	8
+	+	4	29
+	+	2	49
+	+	3	44
+	+	9	34
+	+	13	59
+	+	14	12
+	+	4	43
+	+	17	83
+	+	17	0
+	+	17	94
+	+	16	10
+	+	15	0
+	+	16	60
+	+	17	57
+	+	16	47
+	+	16	86
+	+	17	83
+	+	2	54
+	+	3	51
+	+	18	127
+	+	18	89
+	+	4	0
+	+	9	37
+
+> ~/hateoas/dbutils.py
+	*	1713287255	0
+	"	5	0
+	^	15	85
+	.	15	4
+	+	15	4
+
+> ~/hateoas/main.sql
+	*	1713287247	0
+	"	1	0
+	^	5	32
+	.	5	31
+	+	3	4
+	+	6	0
+	+	5	22
+	+	7	0
+	+	9	4
+	+	15	0
+	+	11	9
+	+	13	0
+	+	13	32
+	+	15	0
+	+	12	11
+	+	19	4
+	+	24	0
+	+	27	0
+	+	27	34
+	+	27	24
+	+	27	0
+	+	27	31
+	+	27	0
+	+	27	17
+	+	27	24
+	+	27	0
+	+	27	39
+	+	27	0
+	+	27	23
+	+	27	1
+	+	18	24
+	+	25	6
+	+	21	0
+	+	27	0
+	+	13	0
+	+	5	0
+	+	14	10
+	+	22	34
+	+	23	8
+	+	27	0
+	+	15	60
+	+	24	58
+	+	25	23
+	+	24	48
+	+	19	0
+	+	9	0
+	+	3	0
+	+	5	31
+
+> ~/hateoas/.gitignore
+	*	1713287179	0
+	"	2	8
+	^	2	9
+	.	2	8
+	+	1	7
+	+	2	8
 
 > ~/Twitch/coffee-vps/code/package.json
 	*	1713282412	0
@@ -7198,71 +7507,6 @@ $
 	+	22	0
 	+	10	89
 
-> ~/hateoas/main.sql
-	*	1713281536	0
-	"	5	31
-	^	5	32
-	.	5	31
-	+	3	4
-	+	6	0
-	+	5	22
-	+	7	0
-	+	9	4
-	+	15	0
-	+	11	9
-	+	13	0
-	+	13	32
-	+	15	0
-	+	12	11
-	+	19	4
-	+	24	0
-	+	27	0
-	+	27	34
-	+	27	24
-	+	27	0
-	+	27	31
-	+	27	0
-	+	27	17
-	+	27	24
-	+	27	0
-	+	27	39
-	+	27	0
-	+	27	23
-	+	27	1
-	+	18	24
-	+	25	6
-	+	21	0
-	+	27	0
-	+	13	0
-	+	5	0
-	+	14	10
-	+	22	34
-	+	23	8
-	+	27	0
-	+	15	60
-	+	24	58
-	+	25	23
-	+	24	48
-	+	19	0
-	+	9	0
-	+	3	0
-	+	5	31
-
-> ~/hateoas/dbutils.py
-	*	1713280812	0
-	"	15	84
-	^	15	85
-	.	15	4
-	+	15	4
-
-> ~/hateoas/.gitignore
-	*	1713280598	0
-	"	2	4
-	^	2	5
-	.	2	4
-	+	1	7
-	+	2	4
-
 > ~/hateoas/create-databases.py
 	*	1713280587	0
 	"	15	0
@@ -7291,143 +7535,9 @@ $
 	+	8	13
 	+	15	0
 
-> ~/hateoas/static/css/hateoas.css
-	*	1713280244	0
-	"	18	0
-	^	18	90
-	.	18	89
-	+	2	48
-	+	3	45
-	+	4	50
-	+	11	39
-	+	8	0
-	+	9	36
-	+	10	0
-	+	12	40
-	+	5	45
-	+	6	8
-	+	4	29
-	+	2	49
-	+	3	44
-	+	9	34
-	+	13	59
-	+	14	12
-	+	4	43
-	+	17	83
-	+	17	0
-	+	17	94
-	+	16	10
-	+	15	0
-	+	16	60
-	+	17	57
-	+	16	47
-	+	16	86
-	+	17	83
-	+	2	54
-	+	3	51
-	+	18	127
-	+	18	89
-
-> ~/hateoas/templates/nav.html
-	*	1713279355	0
-	"	1	0
-	.	1	0
-	+	1	0
-
-> ~/hateoas/templates/elements.html
-	*	1713279323	0
-	"	8	4
-	.	8	0
-	+	1	11
-	+	5	12
-	+	6	17
-	+	41	34
-	+	41	4
-	+	41	0
-	+	41	4
-	+	41	19
-	+	41	0
-	+	41	23
-	+	41	0
-	+	17	0
-	+	6	26
-	+	40	0
-	+	30	13
-	+	39	8
-	+	39	0
-	+	38	0
-	+	31	0
-	+	30	56
-	+	29	16
-	+	38	0
-	+	35	22
-	+	36	95
-	+	11	28
-	+	11	0
-	+	12	0
-	+	8	0
-
 > ~/hateoas/ele
 	*	1713279056	0
 	"	1	0
-
-> ~/hateoas/hateoas-api.py
-	*	1713279054	0
-	"	24	8
-	^	24	30
-	.	24	29
-	+	2	25
-	+	3	39
-	+	6	26
-	+	7	25
-	+	9	0
-	+	10	21
-	+	8	26
-	+	38	0
-	+	11	0
-	+	38	0
-	+	11	47
-	+	12	9
-	+	18	15
-	+	20	25
-	+	34	69
-	+	37	4
-	+	38	0
-	+	20	37
-	+	21	33
-	+	23	24
-	+	25	25
-	+	29	0
-	+	30	22
-	+	31	0
-	+	24	25
-	+	22	0
-	+	25	0
-	+	27	59
-	+	28	0
-	+	14	23
-	+	15	0
-	+	16	27
-	+	3	40
-	+	4	0
-	+	24	29
-
-> ~/hateoas/templates/base.html
-	*	1713278088	0
-	"	1	0
-	^	8	21
-	.	8	20
-	+	10	0
-	+	6	0
-	+	4	50
-	+	5	78
-	+	6	0
-	+	6	8
-	+	4	0
-	+	6	0
-	+	9	0
-	+	10	0
-	+	8	20
 
 > ~/servers/hateoas.config.js
 	*	1713277110	0
