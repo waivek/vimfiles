@@ -11,15 +11,19 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0/1
+~MSle0~/\C\<paths\>
 
 # Last Substitute Search Pattern:
-~MSle0~&"
+~MSle0&"
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
+:q
+|2,0,1713282414,,"q"
+:e pack
+|2,0,1713282359,,"e pack"
 :qa
 |2,0,1713281554,,"qa"
 :'<,'>s/"//g
@@ -30,8 +34,6 @@ $
 |2,0,1713280826,,"e main.sql"
 :e dbutils.py
 |2,0,1713280775,,"e dbutils.py"
-:q
-|2,0,1713280643,,"q"
 :e 
 |2,0,1713280211,,"e "
 :b css
@@ -6760,7 +6762,7 @@ $
 # Registers:
 ""0	CHAR	0
 	)
-|3,1,0,0,1,0,1713281511,")"
+|3,1,0,0,1,0,1713282263,")"
 "1	LINE	0
 	
 |3,0,1,1,1,0,1713281254,""
@@ -6834,236 +6836,367 @@ $
 |<"                <form method=\"POST\" action=\"/resume_download\">","                    <input type=\"hidden\" name=\"id\" value=\"{{ id }}\">","                    <input type=\"submit\" value=\"Resume\">","                </form>","                {% endif %}","                {% if status == 'downloading' %}","                <form method=\"POST\" action=\"/pause_download\">","                    <input type=\"hidden\" name=\"id\" value=\"{{ id }}\">",>61
 |<"                    <input type=\"submit\" value=\"Pause\">","                </form>","                {% endif %}","","            </li>","        {% endfor %}","    </ul>\"\"\", downloads=downloads)"
 "-	CHAR	0
-	" "
-|3,0,36,0,1,0,1713281511,"\" \""
+	)
+|3,0,36,0,1,0,1713282075,")"
 
 # File marks:
-'0  5  31  ~/hateoas/main.sql
-|4,48,5,31,1713281554,"~/hateoas/main.sql"
-'1  7  0  ~/hateoas/main.sql
-|4,49,7,0,1713280643,"~/hateoas/main.sql"
-'2  7  0  ~/hateoas/main.sql
-|4,50,7,0,1713280643,"~/hateoas/main.sql"
-'3  2  4  ~/hateoas/.gitignore
-|4,51,2,4,1713280599,"~/hateoas/.gitignore"
-'4  2  4  ~/hateoas/.gitignore
-|4,52,2,4,1713280599,"~/hateoas/.gitignore"
-'5  2  4  ~/hateoas/.gitignore
-|4,53,2,4,1713280599,"~/hateoas/.gitignore"
-'6  2  4  ~/hateoas/.gitignore
-|4,54,2,4,1713280599,"~/hateoas/.gitignore"
-'7  15  0  ~/hateoas/create-databases.py
-|4,55,15,0,1713280589,"~/hateoas/create-databases.py"
-'8  15  0  ~/hateoas/create-databases.py
-|4,56,15,0,1713280589,"~/hateoas/create-databases.py"
-'9  15  0  ~/hateoas/create-databases.py
-|4,57,15,0,1713280589,"~/hateoas/create-databases.py"
+'0  1  0  ~/Twitch/coffee-vps/code/package.json
+|4,48,1,0,1713282414,"~/Twitch/coffee-vps/code/package.json"
+'1  1  0  ~/Twitch/coffee-vps/code/package.json
+|4,49,1,0,1713282396,"~/Twitch/coffee-vps/code/package.json"
+'2  1  0  ~/Twitch/coffee-vps/code/package.json
+|4,50,1,0,1713282360,"~/Twitch/coffee-vps/code/package.json"
+'3  1  0  ~/Twitch/coffee-vps/code/package.json
+|4,51,1,0,1713282360,"~/Twitch/coffee-vps/code/package.json"
+'4  89  12  ~/Twitch/coffee-vps/code/yt_users.js
+|4,52,89,12,1713282272,"~/Twitch/coffee-vps/code/yt_users.js"
+'5  89  12  ~/Twitch/coffee-vps/code/yt_users.js
+|4,53,89,12,1713282272,"~/Twitch/coffee-vps/code/yt_users.js"
+'6  89  12  ~/Twitch/coffee-vps/code/yt_users.js
+|4,54,89,12,1713282272,"~/Twitch/coffee-vps/code/yt_users.js"
+'7  89  12  ~/Twitch/coffee-vps/code/yt_users.js
+|4,55,89,12,1713282272,"~/Twitch/coffee-vps/code/yt_users.js"
+'8  89  12  ~/Twitch/coffee-vps/code/yt_users.js
+|4,56,89,12,1713282272,"~/Twitch/coffee-vps/code/yt_users.js"
+'9  89  12  ~/Twitch/coffee-vps/code/yt_users.js
+|4,57,89,12,1713282272,"~/Twitch/coffee-vps/code/yt_users.js"
 
 # Jumplist (newest first):
+-'  1  0  ~/Twitch/coffee-vps/code/package.json
+|4,39,1,0,1713282414,"~/Twitch/coffee-vps/code/package.json"
+-'  1  0  ~/Twitch/coffee-vps/code/package.json
+|4,39,1,0,1713282396,"~/Twitch/coffee-vps/code/package.json"
+-'  1  0  ~/Twitch/coffee-vps/code/package.json
+|4,39,1,0,1713282360,"~/Twitch/coffee-vps/code/package.json"
+-'  89  12  ~/Twitch/coffee-vps/code/yt_users.js
+|4,39,89,12,1713282272,"~/Twitch/coffee-vps/code/yt_users.js"
+-'  89  12  ~/Twitch/coffee-vps/code/yt_users.js
+|4,39,89,12,1713282272,"~/Twitch/coffee-vps/code/yt_users.js"
+-'  89  12  ~/Twitch/coffee-vps/code/yt_users.js
+|4,39,89,12,1713282272,"~/Twitch/coffee-vps/code/yt_users.js"
+-'  89  12  ~/Twitch/coffee-vps/code/yt_users.js
+|4,39,89,12,1713282272,"~/Twitch/coffee-vps/code/yt_users.js"
+-'  76  28  ~/Twitch/coffee-vps/code/yt_users.js
+|4,39,76,28,1713282269,"~/Twitch/coffee-vps/code/yt_users.js"
+-'  76  28  ~/Twitch/coffee-vps/code/yt_users.js
+|4,39,76,28,1713282269,"~/Twitch/coffee-vps/code/yt_users.js"
+-'  76  28  ~/Twitch/coffee-vps/code/yt_users.js
+|4,39,76,28,1713282269,"~/Twitch/coffee-vps/code/yt_users.js"
+-'  76  28  ~/Twitch/coffee-vps/code/yt_users.js
+|4,39,76,28,1713282269,"~/Twitch/coffee-vps/code/yt_users.js"
+-'  28  6  ~/Twitch/coffee-vps/code/yt_users.js
+|4,39,28,6,1713282263,"~/Twitch/coffee-vps/code/yt_users.js"
+-'  28  6  ~/Twitch/coffee-vps/code/yt_users.js
+|4,39,28,6,1713282263,"~/Twitch/coffee-vps/code/yt_users.js"
+-'  28  6  ~/Twitch/coffee-vps/code/yt_users.js
+|4,39,28,6,1713282263,"~/Twitch/coffee-vps/code/yt_users.js"
+-'  28  6  ~/Twitch/coffee-vps/code/yt_users.js
+|4,39,28,6,1713282263,"~/Twitch/coffee-vps/code/yt_users.js"
+-'  10  6  ~/Twitch/coffee-vps/code/yt_users.js
+|4,39,10,6,1713282259,"~/Twitch/coffee-vps/code/yt_users.js"
+-'  10  6  ~/Twitch/coffee-vps/code/yt_users.js
+|4,39,10,6,1713282259,"~/Twitch/coffee-vps/code/yt_users.js"
+-'  10  6  ~/Twitch/coffee-vps/code/yt_users.js
+|4,39,10,6,1713282259,"~/Twitch/coffee-vps/code/yt_users.js"
+-'  10  6  ~/Twitch/coffee-vps/code/yt_users.js
+|4,39,10,6,1713282259,"~/Twitch/coffee-vps/code/yt_users.js"
+-'  1  0  ~/Twitch/coffee-vps/code/yt_users.js
+|4,39,1,0,1713282247,"~/Twitch/coffee-vps/code/yt_users.js"
+-'  1  0  ~/Twitch/coffee-vps/code/yt_users.js
+|4,39,1,0,1713282247,"~/Twitch/coffee-vps/code/yt_users.js"
+-'  1  0  ~/Twitch/coffee-vps/code/yt_users.js
+|4,39,1,0,1713282247,"~/Twitch/coffee-vps/code/yt_users.js"
+-'  1  0  ~/Twitch/coffee-vps/code/yt_users.js
+|4,39,1,0,1713282247,"~/Twitch/coffee-vps/code/yt_users.js"
+-'  10  89  ~/Twitch/coffee-vps/code/schema/videos.sql
+|4,39,10,89,1713282078,"~/Twitch/coffee-vps/code/schema/videos.sql"
+-'  10  89  ~/Twitch/coffee-vps/code/schema/videos.sql
+|4,39,10,89,1713282078,"~/Twitch/coffee-vps/code/schema/videos.sql"
+-'  10  89  ~/Twitch/coffee-vps/code/schema/videos.sql
+|4,39,10,89,1713282078,"~/Twitch/coffee-vps/code/schema/videos.sql"
+-'  10  89  ~/Twitch/coffee-vps/code/schema/videos.sql
+|4,39,10,89,1713282078,"~/Twitch/coffee-vps/code/schema/videos.sql"
+-'  10  89  ~/Twitch/coffee-vps/code/schema/videos.sql
+|4,39,10,89,1713282078,"~/Twitch/coffee-vps/code/schema/videos.sql"
+-'  10  89  ~/Twitch/coffee-vps/code/schema/videos.sql
+|4,39,10,89,1713282058,"~/Twitch/coffee-vps/code/schema/videos.sql"
+-'  10  95  ~/Twitch/coffee-vps/code/schema/videos.sql
+|4,39,10,95,1713282035,"~/Twitch/coffee-vps/code/schema/videos.sql"
+-'  1  0  ~/Twitch/coffee-vps/code/schema/videos.sql
+|4,39,1,0,1713281956,"~/Twitch/coffee-vps/code/schema/videos.sql"
+-'  1  0  ~/Twitch/coffee-vps/code/schema/videos.sql
+|4,39,1,0,1713281956,"~/Twitch/coffee-vps/code/schema/videos.sql"
+-'  1  0  ~/Twitch/coffee-vps/code/schema/videos.sql
+|4,39,1,0,1713281956,"~/Twitch/coffee-vps/code/schema/videos.sql"
+-'  1  0  ~/Twitch/coffee-vps/code/schema/videos.sql
+|4,39,1,0,1713281956,"~/Twitch/coffee-vps/code/schema/videos.sql"
+-'  1  0  ~/Twitch/coffee-vps/code/schema/videos.sql
+|4,39,1,0,1713281956,"~/Twitch/coffee-vps/code/schema/videos.sql"
+-'  1  0  ~/Twitch/coffee-vps/code/schema/videos.sql
+|4,39,1,0,1713281956,"~/Twitch/coffee-vps/code/schema/videos.sql"
+-'  1  0  ~/Twitch/coffee-vps/code/schema/videos.sql
+|4,39,1,0,1713281956,"~/Twitch/coffee-vps/code/schema/videos.sql"
+-'  5  31  ~/hateoas/main.sql
+|4,39,5,31,1713281554,"~/hateoas/main.sql"
+-'  5  31  ~/hateoas/main.sql
+|4,39,5,31,1713281554,"~/hateoas/main.sql"
+-'  5  31  ~/hateoas/main.sql
+|4,39,5,31,1713281554,"~/hateoas/main.sql"
+-'  5  31  ~/hateoas/main.sql
+|4,39,5,31,1713281554,"~/hateoas/main.sql"
+-'  5  31  ~/hateoas/main.sql
+|4,39,5,31,1713281554,"~/hateoas/main.sql"
+-'  5  31  ~/hateoas/main.sql
+|4,39,5,31,1713281554,"~/hateoas/main.sql"
+-'  5  31  ~/hateoas/main.sql
+|4,39,5,31,1713281554,"~/hateoas/main.sql"
 -'  5  31  ~/hateoas/main.sql
 |4,39,5,31,1713281554,"~/hateoas/main.sql"
 -'  3  0  ~/hateoas/main.sql
 |4,39,3,0,1713281526,"~/hateoas/main.sql"
+-'  3  0  ~/hateoas/main.sql
+|4,39,3,0,1713281526,"~/hateoas/main.sql"
+-'  3  0  ~/hateoas/main.sql
+|4,39,3,0,1713281526,"~/hateoas/main.sql"
+-'  3  0  ~/hateoas/main.sql
+|4,39,3,0,1713281526,"~/hateoas/main.sql"
+-'  3  0  ~/hateoas/main.sql
+|4,39,3,0,1713281526,"~/hateoas/main.sql"
+-'  3  0  ~/hateoas/main.sql
+|4,39,3,0,1713281526,"~/hateoas/main.sql"
+-'  3  0  ~/hateoas/main.sql
+|4,39,3,0,1713281526,"~/hateoas/main.sql"
+-'  3  0  ~/hateoas/main.sql
+|4,39,3,0,1713281526,"~/hateoas/main.sql"
+-'  9  0  ~/hateoas/main.sql
+|4,39,9,0,1713281523,"~/hateoas/main.sql"
+-'  9  0  ~/hateoas/main.sql
+|4,39,9,0,1713281523,"~/hateoas/main.sql"
+-'  9  0  ~/hateoas/main.sql
+|4,39,9,0,1713281523,"~/hateoas/main.sql"
+-'  9  0  ~/hateoas/main.sql
+|4,39,9,0,1713281523,"~/hateoas/main.sql"
+-'  9  0  ~/hateoas/main.sql
+|4,39,9,0,1713281523,"~/hateoas/main.sql"
+-'  9  0  ~/hateoas/main.sql
+|4,39,9,0,1713281523,"~/hateoas/main.sql"
+-'  9  0  ~/hateoas/main.sql
+|4,39,9,0,1713281523,"~/hateoas/main.sql"
 -'  9  0  ~/hateoas/main.sql
 |4,39,9,0,1713281523,"~/hateoas/main.sql"
 -'  19  0  ~/hateoas/main.sql
 |4,39,19,0,1713281516,"~/hateoas/main.sql"
+-'  19  0  ~/hateoas/main.sql
+|4,39,19,0,1713281516,"~/hateoas/main.sql"
+-'  19  0  ~/hateoas/main.sql
+|4,39,19,0,1713281516,"~/hateoas/main.sql"
+-'  19  0  ~/hateoas/main.sql
+|4,39,19,0,1713281516,"~/hateoas/main.sql"
+-'  19  0  ~/hateoas/main.sql
+|4,39,19,0,1713281516,"~/hateoas/main.sql"
+-'  19  0  ~/hateoas/main.sql
+|4,39,19,0,1713281516,"~/hateoas/main.sql"
+-'  19  0  ~/hateoas/main.sql
+|4,39,19,0,1713281516,"~/hateoas/main.sql"
+-'  19  0  ~/hateoas/main.sql
+|4,39,19,0,1713281516,"~/hateoas/main.sql"
+-'  24  49  ~/hateoas/main.sql
+|4,39,24,49,1713281511,"~/hateoas/main.sql"
+-'  24  49  ~/hateoas/main.sql
+|4,39,24,49,1713281511,"~/hateoas/main.sql"
+-'  24  49  ~/hateoas/main.sql
+|4,39,24,49,1713281511,"~/hateoas/main.sql"
+-'  24  49  ~/hateoas/main.sql
+|4,39,24,49,1713281511,"~/hateoas/main.sql"
+-'  24  49  ~/hateoas/main.sql
+|4,39,24,49,1713281511,"~/hateoas/main.sql"
+-'  24  49  ~/hateoas/main.sql
+|4,39,24,49,1713281511,"~/hateoas/main.sql"
+-'  24  49  ~/hateoas/main.sql
+|4,39,24,49,1713281511,"~/hateoas/main.sql"
 -'  24  49  ~/hateoas/main.sql
 |4,39,24,49,1713281511,"~/hateoas/main.sql"
 -'  25  25  ~/hateoas/main.sql
 |4,39,25,25,1713281505,"~/hateoas/main.sql"
+-'  25  25  ~/hateoas/main.sql
+|4,39,25,25,1713281505,"~/hateoas/main.sql"
+-'  25  25  ~/hateoas/main.sql
+|4,39,25,25,1713281505,"~/hateoas/main.sql"
+-'  25  25  ~/hateoas/main.sql
+|4,39,25,25,1713281505,"~/hateoas/main.sql"
+-'  25  25  ~/hateoas/main.sql
+|4,39,25,25,1713281505,"~/hateoas/main.sql"
+-'  25  25  ~/hateoas/main.sql
+|4,39,25,25,1713281505,"~/hateoas/main.sql"
+-'  25  25  ~/hateoas/main.sql
+|4,39,25,25,1713281505,"~/hateoas/main.sql"
+-'  25  25  ~/hateoas/main.sql
+|4,39,25,25,1713281505,"~/hateoas/main.sql"
+-'  15  57  ~/hateoas/main.sql
+|4,39,15,57,1713281489,"~/hateoas/main.sql"
+-'  15  57  ~/hateoas/main.sql
+|4,39,15,57,1713281489,"~/hateoas/main.sql"
+-'  15  57  ~/hateoas/main.sql
+|4,39,15,57,1713281489,"~/hateoas/main.sql"
+-'  15  57  ~/hateoas/main.sql
+|4,39,15,57,1713281489,"~/hateoas/main.sql"
+-'  15  57  ~/hateoas/main.sql
+|4,39,15,57,1713281489,"~/hateoas/main.sql"
+-'  15  57  ~/hateoas/main.sql
+|4,39,15,57,1713281489,"~/hateoas/main.sql"
+-'  15  57  ~/hateoas/main.sql
+|4,39,15,57,1713281489,"~/hateoas/main.sql"
 -'  15  57  ~/hateoas/main.sql
 |4,39,15,57,1713281489,"~/hateoas/main.sql"
 -'  27  33  ~/hateoas/main.sql
 |4,39,27,33,1713281252,"~/hateoas/main.sql"
--'  18  24  ~/hateoas/main.sql
-|4,39,18,24,1713281067,"~/hateoas/main.sql"
--'  21  4  ~/hateoas/main.sql
-|4,39,21,4,1713280932,"~/hateoas/main.sql"
--'  17  0  ~/hateoas/main.sql
-|4,39,17,0,1713280896,"~/hateoas/main.sql"
--'  12  28  ~/hateoas/main.sql
-|4,39,12,28,1713280895,"~/hateoas/main.sql"
--'  13  4  ~/hateoas/main.sql
-|4,39,13,4,1713280885,"~/hateoas/main.sql"
--'  11  9  ~/hateoas/main.sql
-|4,39,11,9,1713280874,"~/hateoas/main.sql"
--'  8  0  ~/hateoas/main.sql
-|4,39,8,0,1713280827,"~/hateoas/main.sql"
--'  1  0  ~/hateoas/main.sql
-|4,39,1,0,1713280826,"~/hateoas/main.sql"
--'  15  84  ~/hateoas/dbutils.py
-|4,39,15,84,1713280826,"~/hateoas/dbutils.py"
--'  7  0  ~/hateoas/main.sql
-|4,39,7,0,1713280775,"~/hateoas/main.sql"
--'  7  0  ~/hateoas/main.sql
-|4,39,7,0,1713280643,"~/hateoas/main.sql"
--'  1  0  ~/hateoas/main.sql
-|4,39,1,0,1713280635,"~/hateoas/main.sql"
--'  2  4  ~/hateoas/.gitignore
-|4,39,2,4,1713280599,"~/hateoas/.gitignore"
--'  2  4  ~/hateoas/.gitignore
-|4,39,2,4,1713280599,"~/hateoas/.gitignore"
--'  2  4  ~/hateoas/.gitignore
-|4,39,2,4,1713280599,"~/hateoas/.gitignore"
--'  1  0  ~/hateoas/.gitignore
-|4,39,1,0,1713280596,"~/hateoas/.gitignore"
--'  1  0  ~/hateoas/.gitignore
-|4,39,1,0,1713280596,"~/hateoas/.gitignore"
--'  1  0  ~/hateoas/.gitignore
-|4,39,1,0,1713280596,"~/hateoas/.gitignore"
--'  15  0  ~/hateoas/create-databases.py
-|4,39,15,0,1713280589,"~/hateoas/create-databases.py"
--'  15  0  ~/hateoas/create-databases.py
-|4,39,15,0,1713280589,"~/hateoas/create-databases.py"
--'  15  0  ~/hateoas/create-databases.py
-|4,39,15,0,1713280589,"~/hateoas/create-databases.py"
--'  15  0  ~/hateoas/create-databases.py
-|4,39,15,0,1713280589,"~/hateoas/create-databases.py"
--'  1  0  ~/hateoas/create-databases.py
-|4,39,1,0,1713280584,"~/hateoas/create-databases.py"
--'  1  0  ~/hateoas/create-databases.py
-|4,39,1,0,1713280584,"~/hateoas/create-databases.py"
--'  1  0  ~/hateoas/create-databases.py
-|4,39,1,0,1713280584,"~/hateoas/create-databases.py"
--'  1  0  ~/hateoas/create-databases.py
-|4,39,1,0,1713280584,"~/hateoas/create-databases.py"
--'  5  21  ~/hateoas/main.sql
-|4,39,5,21,1713280571,"~/hateoas/main.sql"
--'  5  21  ~/hateoas/main.sql
-|4,39,5,21,1713280571,"~/hateoas/main.sql"
--'  5  21  ~/hateoas/main.sql
-|4,39,5,21,1713280571,"~/hateoas/main.sql"
--'  5  21  ~/hateoas/main.sql
-|4,39,5,21,1713280571,"~/hateoas/main.sql"
--'  5  21  ~/hateoas/main.sql
-|4,39,5,21,1713280554,"~/hateoas/main.sql"
--'  1  0  ~/hateoas/main.sql
-|4,39,1,0,1713280551,"~/hateoas/main.sql"
--'  1  0  ~/hateoas/main.sql
-|4,39,1,0,1713280551,"~/hateoas/main.sql"
--'  1  0  ~/hateoas/main.sql
-|4,39,1,0,1713280551,"~/hateoas/main.sql"
--'  1  0  ~/hateoas/main.sql
-|4,39,1,0,1713280551,"~/hateoas/main.sql"
--'  8  33  ~/hateoas/create-databases.py
-|4,39,8,33,1713280514,"~/hateoas/create-databases.py"
--'  8  33  ~/hateoas/create-databases.py
-|4,39,8,33,1713280514,"~/hateoas/create-databases.py"
--'  8  33  ~/hateoas/create-databases.py
-|4,39,8,33,1713280514,"~/hateoas/create-databases.py"
--'  8  33  ~/hateoas/create-databases.py
-|4,39,8,33,1713280514,"~/hateoas/create-databases.py"
--'  8  33  ~/hateoas/create-databases.py
-|4,39,8,33,1713280514,"~/hateoas/create-databases.py"
--'  8  33  ~/hateoas/create-databases.py
-|4,39,8,33,1713280514,"~/hateoas/create-databases.py"
--'  8  33  ~/hateoas/create-databases.py
-|4,39,8,33,1713280514,"~/hateoas/create-databases.py"
--'  24  3  ~/hateoas/create-databases.py
-|4,39,24,3,1713280466,"~/hateoas/create-databases.py"
--'  22  3  ~/hateoas/create-databases.py
-|4,39,22,3,1713280466,"~/hateoas/create-databases.py"
--'  26  3  ~/hateoas/create-databases.py
-|4,39,26,3,1713280466,"~/hateoas/create-databases.py"
--'  24  3  ~/hateoas/create-databases.py
-|4,39,24,3,1713280466,"~/hateoas/create-databases.py"
--'  22  3  ~/hateoas/create-databases.py
-|4,39,22,3,1713280466,"~/hateoas/create-databases.py"
--'  26  3  ~/hateoas/create-databases.py
-|4,39,26,3,1713280466,"~/hateoas/create-databases.py"
--'  24  3  ~/hateoas/create-databases.py
-|4,39,24,3,1713280466,"~/hateoas/create-databases.py"
--'  22  3  ~/hateoas/create-databases.py
-|4,39,22,3,1713280466,"~/hateoas/create-databases.py"
--'  26  3  ~/hateoas/create-databases.py
-|4,39,26,3,1713280466,"~/hateoas/create-databases.py"
--'  24  3  ~/hateoas/create-databases.py
-|4,39,24,3,1713280466,"~/hateoas/create-databases.py"
--'  22  3  ~/hateoas/create-databases.py
-|4,39,22,3,1713280466,"~/hateoas/create-databases.py"
--'  26  3  ~/hateoas/create-databases.py
-|4,39,26,3,1713280466,"~/hateoas/create-databases.py"
--'  24  3  ~/hateoas/create-databases.py
-|4,39,24,3,1713280466,"~/hateoas/create-databases.py"
--'  26  3  ~/hateoas/create-databases.py
-|4,39,26,3,1713280466,"~/hateoas/create-databases.py"
--'  24  3  ~/hateoas/create-databases.py
-|4,39,24,3,1713280466,"~/hateoas/create-databases.py"
--'  26  3  ~/hateoas/create-databases.py
-|4,39,26,3,1713280466,"~/hateoas/create-databases.py"
--'  24  3  ~/hateoas/create-databases.py
-|4,39,24,3,1713280466,"~/hateoas/create-databases.py"
--'  19  3  ~/hateoas/create-databases.py
-|4,39,19,3,1713280453,"~/hateoas/create-databases.py"
--'  17  3  ~/hateoas/create-databases.py
-|4,39,17,3,1713280453,"~/hateoas/create-databases.py"
--'  21  3  ~/hateoas/create-databases.py
-|4,39,21,3,1713280453,"~/hateoas/create-databases.py"
--'  19  3  ~/hateoas/create-databases.py
-|4,39,19,3,1713280453,"~/hateoas/create-databases.py"
--'  17  3  ~/hateoas/create-databases.py
-|4,39,17,3,1713280453,"~/hateoas/create-databases.py"
--'  21  3  ~/hateoas/create-databases.py
-|4,39,21,3,1713280453,"~/hateoas/create-databases.py"
--'  19  3  ~/hateoas/create-databases.py
-|4,39,19,3,1713280453,"~/hateoas/create-databases.py"
--'  17  3  ~/hateoas/create-databases.py
-|4,39,17,3,1713280453,"~/hateoas/create-databases.py"
--'  21  3  ~/hateoas/create-databases.py
-|4,39,21,3,1713280453,"~/hateoas/create-databases.py"
--'  19  3  ~/hateoas/create-databases.py
-|4,39,19,3,1713280453,"~/hateoas/create-databases.py"
--'  17  3  ~/hateoas/create-databases.py
-|4,39,17,3,1713280453,"~/hateoas/create-databases.py"
--'  21  3  ~/hateoas/create-databases.py
-|4,39,21,3,1713280453,"~/hateoas/create-databases.py"
--'  19  3  ~/hateoas/create-databases.py
-|4,39,19,3,1713280453,"~/hateoas/create-databases.py"
--'  21  3  ~/hateoas/create-databases.py
-|4,39,21,3,1713280453,"~/hateoas/create-databases.py"
--'  19  3  ~/hateoas/create-databases.py
-|4,39,19,3,1713280453,"~/hateoas/create-databases.py"
--'  21  3  ~/hateoas/create-databases.py
-|4,39,21,3,1713280453,"~/hateoas/create-databases.py"
--'  19  3  ~/hateoas/create-databases.py
-|4,39,19,3,1713280453,"~/hateoas/create-databases.py"
--'  16  47  ~/hateoas/create-databases.py
-|4,39,16,47,1713280421,"~/hateoas/create-databases.py"
--'  25  47  ~/hateoas/create-databases.py
-|4,39,25,47,1713280421,"~/hateoas/create-databases.py"
--'  23  47  ~/hateoas/create-databases.py
-|4,39,23,47,1713280421,"~/hateoas/create-databases.py"
--'  18  47  ~/hateoas/create-databases.py
-|4,39,18,47,1713280421,"~/hateoas/create-databases.py"
--'  27  47  ~/hateoas/create-databases.py
-|4,39,27,47,1713280421,"~/hateoas/create-databases.py"
--'  16  47  ~/hateoas/create-databases.py
-|4,39,16,47,1713280421,"~/hateoas/create-databases.py"
--'  25  47  ~/hateoas/create-databases.py
-|4,39,25,47,1713280421,"~/hateoas/create-databases.py"
--'  23  47  ~/hateoas/create-databases.py
-|4,39,23,47,1713280421,"~/hateoas/create-databases.py"
--'  18  47  ~/hateoas/create-databases.py
-|4,39,18,47,1713280421,"~/hateoas/create-databases.py"
--'  27  47  ~/hateoas/create-databases.py
-|4,39,27,47,1713280421,"~/hateoas/create-databases.py"
--'  16  47  ~/hateoas/create-databases.py
-|4,39,16,47,1713280421,"~/hateoas/create-databases.py"
--'  25  47  ~/hateoas/create-databases.py
-|4,39,25,47,1713280421,"~/hateoas/create-databases.py"
--'  23  47  ~/hateoas/create-databases.py
-|4,39,23,47,1713280421,"~/hateoas/create-databases.py"
--'  18  47  ~/hateoas/create-databases.py
-|4,39,18,47,1713280421,"~/hateoas/create-databases.py"
--'  27  47  ~/hateoas/create-databases.py
-|4,39,27,47,1713280421,"~/hateoas/create-databases.py"
+-'  27  33  ~/hateoas/main.sql
+|4,39,27,33,1713281252,"~/hateoas/main.sql"
+-'  27  33  ~/hateoas/main.sql
+|4,39,27,33,1713281252,"~/hateoas/main.sql"
+-'  27  33  ~/hateoas/main.sql
+|4,39,27,33,1713281252,"~/hateoas/main.sql"
+-'  27  33  ~/hateoas/main.sql
+|4,39,27,33,1713281252,"~/hateoas/main.sql"
+-'  27  33  ~/hateoas/main.sql
+|4,39,27,33,1713281252,"~/hateoas/main.sql"
+-'  27  33  ~/hateoas/main.sql
+|4,39,27,33,1713281252,"~/hateoas/main.sql"
 
 # Buffer list:
-%~/hateoas/main.sql	5	31
-%~/hateoas/dbutils.py	15	84
+%~/Twitch/coffee-vps/code/package.json	1	0
 
 # History of marks within files (newest to oldest):
+
+> ~/Twitch/coffee-vps/code/package.json
+	*	1713282412	0
+	"	1	0
+	^	5	18
+	.	5	7
+	+	5	7
+
+> ~/Twitch/coffee-vps/code/yt_users.js
+	*	1713282271	0
+	"	89	12
+	^	38	45
+	.	77	0
+	+	42	0
+	+	34	57
+	+	34	64
+	+	34	52
+	+	34	24
+	+	34	23
+	+	34	7
+	+	34	27
+	+	34	33
+	+	34	0
+	+	76	8
+	+	76	35
+	+	76	25
+	+	76	37
+	+	42	30
+	+	44	0
+	+	43	19
+	+	46	17
+	+	49	0
+	+	66	0
+	+	50	22
+	+	44	0
+	+	50	8
+	+	50	38
+	+	50	43
+	+	50	32
+	+	66	43
+	+	66	26
+	+	50	29
+	+	50	0
+	+	50	37
+	+	50	28
+	+	50	38
+	+	50	0
+	+	50	26
+	+	50	0
+	+	50	56
+	+	50	0
+	+	50	36
+	+	50	22
+	+	50	0
+	+	50	19
+	+	45	32
+	+	50	38
+	+	50	36
+	+	50	0
+	+	50	118
+	+	50	0
+	+	50	24
+	+	66	0
+	+	50	0
+	+	66	0
+	+	50	44
+	+	52	8
+	+	64	6
+	+	50	35
+	+	52	0
+	+	50	37
+	+	52	0
+	+	50	0
+	+	49	0
+	+	67	0
+	+	65	15
+	+	42	53
+	+	43	29
+	+	76	48
+	+	47	9
+	+	76	0
+	+	79	25
+	+	81	20
+	+	76	0
+	+	88	0
+	+	7	11
+	+	35	0
+	+	81	46
+	+	88	0
+	+	7	0
+	+	4	0
+	+	88	0
+	+	80	7
+	+	81	0
+	+	84	15
+	+	88	0
+	+	4	26
+	+	82	0
+	+	82	102
+	+	87	0
+	+	83	4
+	+	85	4
+	+	86	4
+	+	38	44
+	+	76	0
+	+	77	0
+
+> ~/Twitch/coffee-vps/code/schema/videos.sql
+	*	1713282077	0
+	"	10	89
+	^	10	142
+	.	10	89
+	+	1	0
+	+	21	2
+	+	10	38
+	+	22	0
+	+	10	37
+	+	22	0
+	+	10	38
+	+	22	0
+	+	22	93
+	+	22	0
+	+	10	0
+	+	1	13
+	+	20	0
+	+	14	0
+	+	11	0
+	+	21	7
+	+	22	0
+	+	10	89
 
 > ~/hateoas/main.sql
 	*	1713281536	0
@@ -9625,29 +9758,6 @@ $
 	+	6	26
 	+	7	21
 	+	6	18
-
-> ~/Twitch/coffee-vps/code/schema/videos.sql
-	*	1712057596	0
-	"	1	0
-	^	21	8
-	.	22	0
-	+	1	0
-	+	21	2
-	+	10	38
-	+	22	0
-	+	10	37
-	+	22	0
-	+	10	38
-	+	22	0
-	+	22	93
-	+	22	0
-	+	10	0
-	+	1	13
-	+	20	0
-	+	14	0
-	+	11	0
-	+	21	7
-	+	22	0
 
 > ~/Twitch/coffee-vps/code/schema/users.sql
 	*	1712057572	0
@@ -16219,13 +16329,6 @@ $
 	*	1692790860	0
 	"	2764	4
 
-> ~/Twitch/coffee-vps/code/package.json
-	*	1692790853	0
-	"	1	0
-	^	5	18
-	.	5	7
-	+	5	7
-
 > ~/Twitch/coffee-vps/flask-vue/vuejs/utility.js
 	*	1692790780	0
 	"	1	0
@@ -19442,105 +19545,6 @@ $
 	+	10	0
 	+	8	0
 	+	9	54
-
-> ~/Twitch/coffee-vps/code/yt_users.js
-	*	1691663507	0
-	"	77	4
-	^	38	45
-	.	77	0
-	+	42	0
-	+	34	57
-	+	34	64
-	+	34	52
-	+	34	24
-	+	34	23
-	+	34	7
-	+	34	27
-	+	34	33
-	+	34	0
-	+	76	8
-	+	76	35
-	+	76	25
-	+	76	37
-	+	42	30
-	+	44	0
-	+	43	19
-	+	46	17
-	+	49	0
-	+	66	0
-	+	50	22
-	+	44	0
-	+	50	8
-	+	50	38
-	+	50	43
-	+	50	32
-	+	66	43
-	+	66	26
-	+	50	29
-	+	50	0
-	+	50	37
-	+	50	28
-	+	50	38
-	+	50	0
-	+	50	26
-	+	50	0
-	+	50	56
-	+	50	0
-	+	50	36
-	+	50	22
-	+	50	0
-	+	50	19
-	+	45	32
-	+	50	38
-	+	50	36
-	+	50	0
-	+	50	118
-	+	50	0
-	+	50	24
-	+	66	0
-	+	50	0
-	+	66	0
-	+	50	44
-	+	52	8
-	+	64	6
-	+	50	35
-	+	52	0
-	+	50	37
-	+	52	0
-	+	50	0
-	+	49	0
-	+	67	0
-	+	65	15
-	+	42	53
-	+	43	29
-	+	76	48
-	+	47	9
-	+	76	0
-	+	79	25
-	+	81	20
-	+	76	0
-	+	88	0
-	+	7	11
-	+	35	0
-	+	81	46
-	+	88	0
-	+	7	0
-	+	4	0
-	+	88	0
-	+	80	7
-	+	81	0
-	+	84	15
-	+	88	0
-	+	4	26
-	+	82	0
-	+	82	102
-	+	87	0
-	+	83	4
-	+	85	4
-	+	86	4
-	+	38	44
-	+	76	0
-	+	77	0
 
 > ~/Twitch/coffee-vps/code/yt_usernames.txt
 	*	1691587060	0
