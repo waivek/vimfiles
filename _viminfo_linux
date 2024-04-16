@@ -11,21 +11,67 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/alias
+~MSle0~/script
 
 # Last Substitute Search Pattern:
-~MSle0&\s\s\+
+~MSle0&:
 
 # Last Substitute String:
-$ 
+$
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1712960279,,"q"
+|2,0,1713277112,,"q"
+:q!
+|2,0,1713277075,,"q!"
+:MRU dump
+|2,0,1713276861,,"MRU dump"
+:e hateoas.config.js
+|2,0,1713276859,,"e hateoas.config.js"
+:term
+|2,0,1713276817,,"term"
+:s/://g
+|2,0,1713276789,,"s/://g"
+:v/python/d
+|2,0,1713276657,,"v/python/d"
+:v/cwd/d
+|2,0,1713276656,,"v/cwd/d"
+:e templates/base.html
+|2,0,1713270036,,"e templates/base.html"
+:e static/css/hateoas.css
+|2,0,1713270032,,"e static/css/hateoas.css"
+:e sty
+|2,0,1713270026,,"e sty"
+:e 
+|2,0,1713267956,,"e "
+:MRU 7:api.py
+|2,0,1713267788,,"MRU 7:api.py"
+:map <C-p>
+|2,0,1713267748,,"map <C-p>"
+:imap <C-p>
+|2,0,1713267741,,"imap <C-p>"
+:imap <C-n>
+|2,0,1713267735,,"imap <C-n>"
+:MRU 153:flask-vue/requirements.txt
+|2,0,1713267107,,"MRU 153:flask-vue/requirements.txt"
+:MRU 10:gita/repos.csv
+|2,0,1713267094,,"MRU 10:gita/repos.csv"
+:MRU req1
+|2,0,1713267089,,"MRU req1"
+:e requirements.txt
+|2,0,1713267079,,"e requirements.txt"
+:bd!
+|2,0,1713265220,,"bd!"
+:MRU 85:api.py
+|2,0,1713265204,,"MRU 85:api.py"
+:VD
+|2,0,1713265194,,"VD"
+:MRU 1:alias.sh
+|2,0,1713265186,,"MRU 1:alias.sh"
+:Copilot setup
+|2,0,1713263573,,"Copilot setup"
 :MRU alias
 |2,0,1712960137,,"MRU alias"
-:e 
-|2,0,1712960136,,"e "
 :MRU bashrc
 |2,0,1712960130,,"MRU bashrc"
 :MRU input-bin
@@ -60,8 +106,6 @@ $
 |2,0,1712951306,,"MRU settings"
 :MRU Db.
 |2,0,1712843764,,"MRU Db."
-:q!
-|2,0,1712793355,,"q!"
 :e authtest.py
 |2,0,1712793338,,"e authtest.py"
 :22
@@ -168,8 +212,6 @@ $
 |2,0,1712521185,,"e bridge.py"
 :e downloader_routes.py
 |2,0,1712521179,,"e downloader_routes.py"
-:term
-|2,0,1712520681,,"term"
 :e downloader.py
 |2,0,1712519157,,"e downloader.py"
 :Jprevious
@@ -208,8 +250,6 @@ $
 |2,0,1712496150,,"b sse.py"
 :b hateo
 |2,0,1712496127,,"b hateo"
-:e requirements.txt
-|2,0,1712493174,,"e requirements.txt"
 :MRU 3:downloader.py
 |2,0,1712453693,,"MRU 3:downloader.py"
 :b!# | bd! #
@@ -380,8 +420,6 @@ $
 |2,0,1712030419,,"set linebreak"
 :set wrap
 |2,0,1712030415,,"set wrap"
-:bd!
-|2,0,1712030391,,"bd!"
 :enew
 |2,0,1712030332,,"enew"
 :e pov_videos.sql
@@ -522,8 +560,6 @@ $
 |2,0,1711444634,,"Rename elements.js"
 :RENAME elements.js
 |2,0,1711444629,,"RENAME elements.js"
-:s/://g
-|2,0,1711444438,,"s/://g"
 :MRU du
 |2,0,1711443981,,"MRU du"
 :MRU p
@@ -3538,12 +3574,8 @@ $
 |2,0,1691444164,,"Ms"
 :MsgShow
 |2,0,1691444161,,"MsgShow"
-:imap <C-p>
-|2,0,1691444158,,"imap <C-p>"
 :map <C-A>
 |2,0,1691444156,,"map <C-A>"
-:imap <C-n>
-|2,0,1691443798,,"imap <C-n>"
 :e /usr/lib/node_modules/typescript/lib/ja/
 |2,0,1691443185,,"e /usr/lib/node_modules/typescript/lib/ja/"
 :h quick-lint-js-configure-coc-nvim
@@ -3962,8 +3994,6 @@ $
 |2,0,1690481075,,"MRU py$"
 :h ale-python-pyflakes
 |2,0,1690480552,,"h ale-python-pyflakes"
-:Copilot setup
-|2,0,1690414965,,"Copilot setup"
 :MRU ch
 |2,0,1689186912,,"MRU ch"
 :44
@@ -4694,6 +4724,20 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/script
+|2,1,1713276869,47,"script"
+? :
+|2,1,1713276789,,":"
+?/interpreter
+|2,1,1713276753,47,"interpreter"
+? python
+|2,1,1713276657,,"python"
+?/cwd
+|2,1,1713276616,47,"cwd"
+?/python
+|2,1,1713276596,47,"python"
+?/name
+|2,1,1713276545,47,"name"
 ?/alias
 |2,1,1712960117,47,"alias"
 ?/undetec
@@ -4810,8 +4854,6 @@ $
 |2,1,1712262086,47,"<sc"
 ?/@so
 |2,1,1712259878,47,"@so"
-?/script
-|2,1,1712259121,47,"script"
 ?/<script
 |2,1,1712259118,47,"<script"
 ? @$
@@ -5042,14 +5084,10 @@ $
 |2,1,1711552032,47,"wide"
 ?/GH_TOKEN
 |2,1,1711544801,47,"GH_TOKEN"
-? :
-|2,1,1711444438,,":"
 ??script
 |2,1,1711443853,63,"script"
 ?/api\.py
 |2,1,1711443845,47,"api\\.py"
-?/interpreter
-|2,1,1711443813,47,"interpreter"
 ?/VIRTUAL_ENV
 |2,1,1711443700,47,"VIRTUAL_ENV"
 ?/VIRTU
@@ -5542,8 +5580,6 @@ $
 |2,1,1693379862,47,"show"
 ?/cli
 |2,1,1693379726,47,"cli"
-?/python
-|2,1,1693379721,47,"python"
 ?/pyright
 |2,1,1693379719,47,"pyright"
 ?/terminal
@@ -6698,42 +6734,51 @@ $
 |2,4,1693311567,,"cont"
 
 # Registers:
-"0	LINE	0
-	SELECT
-	    br
-|3,0,0,1,2,0,1712953339,"SELECT","    br"
+"0	CHAR	0
+	hateoas.py',
+|3,0,0,0,1,0,1713277009,"hateoas.py',"
 ""1	LINE	0
-	echo "alias l='exa --header --long --icons --all --group-directories-first'" 
-|3,1,1,1,1,0,1712960207,"echo \"alias l='exa --header --long --icons --all --group-directories-first'\" "
+	        
+|3,1,1,1,1,0,1713277079,"        "
 "2	LINE	0
-	echo "alias fdf='fd --hidden --type file'"
-	echo "alias fdd='fd --hidden --type directory'"
-|3,0,2,1,2,0,1712960194,"echo \"alias fdf='fd --hidden --type file'\"","echo \"alias fdd='fd --hidden --type directory'\""
+	            VIRTUAL_ENV: "/home/vivek/hateoas/.direnv/python-3.10.12",
+|3,0,2,1,1,0,1713277052,"            VIRTUAL_ENV: \"/home/vivek/hateoas/.direnv/python-3.10.12\","
 "3	LINE	0
-	echo "alias cdf='cd $(fd --type file --hidden | fzf | xargs -I {} dirname {})'"
-|3,0,3,1,1,0,1712960192,"echo \"alias cdf='cd $(fd --type file --hidden | fzf | xargs -I {} dirname {})'\""
+	        env: {
+	            VIRTUAL_ENV: "/home/vivek/hateoas/.direnv/python-3.10.12",
+	            PATH: "/home/vivek/hateoas/.direnv/python-3.10.12/bin"
+	        }
+|3,0,3,1,4,0,1713277032,"        env: {","            VIRTUAL_ENV: \"/home/vivek/hateoas/.direnv/python-3.10.12\",","            PATH: \"/home/vivek/hateoas/.direnv/python-3.10.12/bin\"","        }"
 "4	LINE	0
-	echo "alias start='direnv exec ~/Twitch/coffee-vps/flask-vue/ pm2 start ~/Twitch/coffee-vps/flask-vue/config.json'"
-	echo "alias delete='pm2 delete all'"
-|3,0,4,1,2,0,1712960190,"echo \"alias start='direnv exec ~/Twitch/coffee-vps/flask-vue/ pm2 start ~/Twitch/coffee-vps/flask-vue/config.json'\"","echo \"alias delete='pm2 delete all'\""
+	        args: [ "-c", "python hateoas.py" ],
+|3,0,4,1,1,0,1713276974,"        args: [ \"-c\", \"python hateoas.py\" ],"
 "5	LINE	0
-	echo "alias rm=gomi"
-|3,0,5,1,1,0,1712960187,"echo \"alias rm=gomi\""
+	/home/vivek/.vim/.fzf/bin",
+|3,0,5,1,1,0,1713276793,"/home/vivek/.vim/.fzf/bin\","
 "6	LINE	0
-	# echo "alias cd='cd $(fd --type file --hidden | fzf | xargs -I {} dirname {})'"
-	#
-|3,0,6,1,2,0,1712960184,"# echo \"alias cd='cd $(fd --type file --hidden | fzf | xargs -I {} dirname {})'\"","#"
+	/home/vivek/.local/bin
+	/home/linuxbrew/.linuxbrew/bin
+	/home/linuxbrew/.linuxbrew/sbin
+	/home/vivek/.deno/bin
+	/home/vivek/.local/bin
+	/home/linuxbrew/.linuxbrew/bin
+	/home/linuxbrew/.linuxbrew/sbin
+	/usr/local/sbin
+	/usr/local/bin
+	/usr/sbin
+	/usr/bin
+	/sbin
+	/bin
+|3,0,6,1,13,0,1713276792,"/home/vivek/.local/bin","/home/linuxbrew/.linuxbrew/bin","/home/linuxbrew/.linuxbrew/sbin","/home/vivek/.deno/bin","/home/vivek/.local/bin","/home/linuxbrew/.linuxbrew/bin","/home/linuxbrew/.linuxbrew/sbin","/usr/local/sbin","/usr/local/bin","/usr/sbin","/usr/bin","/sbin","/bin"
 "7	LINE	0
-	SELECT
-	    br
-|3,0,7,1,2,0,1712953339,"SELECT","    br"
-"8	CHAR	0
-	COUNT(broadcaster_id) AS broadcaster_count
-	FROM clips;
-|3,0,8,0,2,0,1712953332,"COUNT(broadcaster_id) AS broadcaster_count","FROM clips;"
+	
+|3,0,7,1,1,0,1713276759,""
+"8	LINE	0
+	
+|3,0,8,1,1,0,1713276680,""
 "9	LINE	0
-	SELECT COUNT(*) AS FROM clips;
-|3,0,9,1,1,0,1712952803,"SELECT COUNT(*) AS FROM clips;"
+	      "python hateoas-api.py"
+|3,0,9,1,1,0,1713276668,"      \"python hateoas-api.py\""
 "a@	CHAR	0
 	f"ct,INTE€kb€kbDENT_FOURjk
 |3,2,10,0,1,0,1712521901,"f\"ct,INTE€kb€kbDENT_FOURjk"
@@ -6769,241 +6814,554 @@ $
 |<"                <form method=\"POST\" action=\"/resume_download\">","                    <input type=\"hidden\" name=\"id\" value=\"{{ id }}\">","                    <input type=\"submit\" value=\"Resume\">","                </form>","                {% endif %}","                {% if status == 'downloading' %}","                <form method=\"POST\" action=\"/pause_download\">","                    <input type=\"hidden\" name=\"id\" value=\"{{ id }}\">",>61
 |<"                    <input type=\"submit\" value=\"Pause\">","                </form>","                {% endif %}","","            </li>","        {% endfor %}","    </ul>\"\"\", downloads=downloads)"
 "-	CHAR	0
-	>> ~/.bashrc
-|3,0,36,0,1,0,1712960157,">> ~/.bashrc"
+	hateoas.py',
+|3,0,36,0,1,0,1713277002,"hateoas.py',"
 
 # File marks:
-'0  1  0  ~/.config/alias.sh
-|4,48,1,0,1712960279,"~/.config/alias.sh"
-'1  1  0  ~/.config/setup.sh
-|4,49,1,0,1712960275,"~/.config/setup.sh"
-'2  1  0  ~/.config/setup.sh
-|4,50,1,0,1712960275,"~/.config/setup.sh"
-'3  1  0  ~/.config/bindings.inputrc
-|4,51,1,0,1712960273,"~/.config/bindings.inputrc"
-'4  1  0  ~/.config/bindings.inputrc
-|4,52,1,0,1712960273,"~/.config/bindings.inputrc"
-'5  1  0  ~/.config/bindings.inputrc
-|4,53,1,0,1712960273,"~/.config/bindings.inputrc"
-'6  1  0  ~/.config/bindings.inputrc
-|4,54,1,0,1712960273,"~/.config/bindings.inputrc"
-'7  22  19  ~/.config/alias.sh
-|4,55,22,19,1712960244,"~/.config/alias.sh"
-'8  22  19  ~/.config/alias.sh
-|4,56,22,19,1712960244,"~/.config/alias.sh"
-'9  22  19  ~/.config/alias.sh
-|4,57,22,19,1712960244,"~/.config/alias.sh"
+'0  1  8  ~/servers/hateoas.config.js
+|4,48,1,8,1713277112,"~/servers/hateoas.config.js"
+'1  12  0  ~/servers/hateoas.config.js
+|4,49,12,0,1713276383,"~/servers/hateoas.config.js"
+'2  3  0  ~/servers/hateoas.config.js
+|4,50,3,0,1713276383,"~/servers/hateoas.config.js"
+'3  32  0  ~/servers/hateoas.config.js
+|4,51,32,0,1713270560,"~/servers/hateoas.config.js"
+'4  23  0  ~/servers/hateoas.config.js
+|4,52,23,0,1713270560,"~/servers/hateoas.config.js"
+'5  1  0  ~/servers/hateoas.config.js
+|4,53,1,0,1713270560,"~/servers/hateoas.config.js"
+'6  32  0  ~/servers/hateoas.config.js
+|4,54,32,0,1713270367,"~/servers/hateoas.config.js"
+'7  1  0  ~/servers/hateoas.config.js
+|4,55,1,0,1713270367,"~/servers/hateoas.config.js"
+'8  23  0  ~/servers/hateoas.config.js
+|4,56,23,0,1713270367,"~/servers/hateoas.config.js"
+'9  1  0  ~/servers/hateoas.config.js
+|4,57,1,0,1713270367,"~/servers/hateoas.config.js"
 
 # Jumplist (newest first):
--'  1  0  ~/.config/alias.sh
-|4,39,1,0,1712960279,"~/.config/alias.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1712960275,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1712960275,"~/.config/setup.sh"
--'  1  0  ~/.config/bindings.inputrc
-|4,39,1,0,1712960273,"~/.config/bindings.inputrc"
--'  1  0  ~/.config/bindings.inputrc
-|4,39,1,0,1712960273,"~/.config/bindings.inputrc"
--'  1  0  ~/.config/bindings.inputrc
-|4,39,1,0,1712960273,"~/.config/bindings.inputrc"
--'  22  19  ~/.config/alias.sh
-|4,39,22,19,1712960244,"~/.config/alias.sh"
--'  22  19  ~/.config/alias.sh
-|4,39,22,19,1712960244,"~/.config/alias.sh"
--'  22  19  ~/.config/alias.sh
-|4,39,22,19,1712960244,"~/.config/alias.sh"
--'  22  19  ~/.config/alias.sh
-|4,39,22,19,1712960244,"~/.config/alias.sh"
--'  22  19  ~/.config/alias.sh
-|4,39,22,19,1712960241,"~/.config/alias.sh"
--'  18  0  ~/.config/alias.sh
-|4,39,18,0,1712960235,"~/.config/alias.sh"
--'  18  0  ~/.config/alias.sh
-|4,39,18,0,1712960235,"~/.config/alias.sh"
--'  18  0  ~/.config/alias.sh
-|4,39,18,0,1712960235,"~/.config/alias.sh"
--'  18  0  ~/.config/alias.sh
-|4,39,18,0,1712960235,"~/.config/alias.sh"
--'  18  0  ~/.config/alias.sh
-|4,39,18,0,1712960235,"~/.config/alias.sh"
--'  18  0  ~/.config/alias.sh
-|4,39,18,0,1712960223,"~/.config/alias.sh"
--'  18  0  ~/.config/alias.sh
-|4,39,18,0,1712960218,"~/.config/alias.sh"
--'  1  0  ~/.config/alias.sh
-|4,39,1,0,1712960139,"~/.config/alias.sh"
--'  1  0  ~/.config/alias.sh
-|4,39,1,0,1712960139,"~/.config/alias.sh"
--'  1  0  ~/.config/alias.sh
-|4,39,1,0,1712960139,"~/.config/alias.sh"
--'  1  0  ~/.config/alias.sh
-|4,39,1,0,1712960139,"~/.config/alias.sh"
--'  1  0  ~/.config/alias.sh
-|4,39,1,0,1712960139,"~/.config/alias.sh"
--'  1  0  ~/.config/alias.sh
-|4,39,1,0,1712960139,"~/.config/alias.sh"
--'  3  0  ~/.config/setup.sh
-|4,39,3,0,1712960137,"~/.config/setup.sh"
--'  3  0  ~/.config/setup.sh
-|4,39,3,0,1712960137,"~/.config/setup.sh"
--'  3  0  ~/.config/setup.sh
-|4,39,3,0,1712960137,"~/.config/setup.sh"
--'  3  0  ~/.config/setup.sh
-|4,39,3,0,1712960137,"~/.config/setup.sh"
--'  3  0  ~/.config/setup.sh
-|4,39,3,0,1712960137,"~/.config/setup.sh"
--'  3  0  ~/.config/setup.sh
-|4,39,3,0,1712960137,"~/.config/setup.sh"
--'  3  0  ~/.config/setup.sh
-|4,39,3,0,1712960137,"~/.config/setup.sh"
--'  121  24  ~/.bashrc
-|4,39,121,24,1712960134,"~/.bashrc"
--'  121  24  ~/.bashrc
-|4,39,121,24,1712960134,"~/.bashrc"
--'  121  24  ~/.bashrc
-|4,39,121,24,1712960134,"~/.bashrc"
--'  121  24  ~/.bashrc
-|4,39,121,24,1712960134,"~/.bashrc"
--'  121  24  ~/.bashrc
-|4,39,121,24,1712960134,"~/.bashrc"
--'  121  24  ~/.bashrc
-|4,39,121,24,1712960134,"~/.bashrc"
--'  121  24  ~/.bashrc
-|4,39,121,24,1712960134,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1712960131,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1712960131,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1712960131,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1712960131,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1712960131,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1712960131,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1712960131,"~/.bashrc"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1712960112,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1712960112,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1712960112,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1712960112,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1712960112,"~/.config/setup.sh"
--'  1  0  ~/genproject/sql_checklist.txt
-|4,39,1,0,1712960094,"~/genproject/sql_checklist.txt"
--'  1  0  ~/genproject/sql_checklist.txt
-|4,39,1,0,1712960094,"~/genproject/sql_checklist.txt"
--'  1  0  ~/genproject/sql_checklist.txt
-|4,39,1,0,1712960094,"~/genproject/sql_checklist.txt"
--'  1  0  ~/genproject/sql_checklist.txt
-|4,39,1,0,1712960094,"~/genproject/sql_checklist.txt"
--'  1  0  ~/genproject/sql_checklist.txt
-|4,39,1,0,1712960094,"~/genproject/sql_checklist.txt"
--'  1  0  ~/genproject/sql_checklist.txt
-|4,39,1,0,1712960094,"~/genproject/sql_checklist.txt"
--'  1  0  ~/genproject/sql_checklist.txt
-|4,39,1,0,1712960094,"~/genproject/sql_checklist.txt"
--'  1  0  ~/genproject/sql_checklist.txt
-|4,39,1,0,1712960094,"~/genproject/sql_checklist.txt"
--'  1  0  ~/.config/gita/repos.csv
-|4,39,1,0,1712959462,"~/.config/gita/repos.csv"
--'  1  0  ~/.config/gita/repos.csv
-|4,39,1,0,1712959462,"~/.config/gita/repos.csv"
--'  1  0  ~/.config/gita/repos.csv
-|4,39,1,0,1712959462,"~/.config/gita/repos.csv"
--'  1  0  ~/.config/gita/repos.csv
-|4,39,1,0,1712959462,"~/.config/gita/repos.csv"
--'  1  0  ~/.config/gita/repos.csv
-|4,39,1,0,1712959462,"~/.config/gita/repos.csv"
--'  1  0  ~/.config/gita/repos.csv
-|4,39,1,0,1712959462,"~/.config/gita/repos.csv"
--'  1  0  ~/.config/gita/repos.csv
-|4,39,1,0,1712959462,"~/.config/gita/repos.csv"
--'  1  0  ~/.config/gita/repos.csv
-|4,39,1,0,1712959462,"~/.config/gita/repos.csv"
--'  1  0  ~/.config/gita/repos.csv
-|4,39,1,0,1712959462,"~/.config/gita/repos.csv"
--'  1  0  ~/.config/gita/repos.csv
-|4,39,1,0,1712959455,"~/.config/gita/repos.csv"
--'  1  0  ~/hateoas/hateoas_backend/sample.sql
-|4,39,1,0,1712959304,"~/hateoas/hateoas_backend/sample.sql"
--'  1  0  ~/hateoas/hateoas_backend/sample.sql
-|4,39,1,0,1712959304,"~/hateoas/hateoas_backend/sample.sql"
--'  1  0  ~/hateoas/hateoas_backend/sample.sql
-|4,39,1,0,1712959304,"~/hateoas/hateoas_backend/sample.sql"
--'  1  0  ~/hateoas/hateoas_backend/sample.sql
-|4,39,1,0,1712959304,"~/hateoas/hateoas_backend/sample.sql"
--'  1  0  ~/hateoas/hateoas_backend/sample.sql
-|4,39,1,0,1712959304,"~/hateoas/hateoas_backend/sample.sql"
--'  1  0  ~/hateoas/hateoas_backend/sample.sql
-|4,39,1,0,1712959304,"~/hateoas/hateoas_backend/sample.sql"
--'  1  0  ~/hateoas/hateoas_backend/sample.sql
-|4,39,1,0,1712959304,"~/hateoas/hateoas_backend/sample.sql"
--'  1  0  ~/hateoas/hateoas_backend/sample.sql
-|4,39,1,0,1712959304,"~/hateoas/hateoas_backend/sample.sql"
--'  1  0  ~/hateoas/hateoas_backend/sample.sql
-|4,39,1,0,1712959304,"~/hateoas/hateoas_backend/sample.sql"
--'  1  0  ~/hateoas/hateoas_backend/sample.sql
-|4,39,1,0,1712959304,"~/hateoas/hateoas_backend/sample.sql"
--'  1  0  ~/hateoas/hateoas_backend/sample.sql
-|4,39,1,0,1712959304,"~/hateoas/hateoas_backend/sample.sql"
--'  57  15  ~/.vim/coc-settings.json
-|4,39,57,15,1712959267,"~/.vim/coc-settings.json"
--'  57  15  ~/.vim/coc-settings.json
-|4,39,57,15,1712959267,"~/.vim/coc-settings.json"
--'  57  15  ~/.vim/coc-settings.json
-|4,39,57,15,1712959267,"~/.vim/coc-settings.json"
--'  57  15  ~/.vim/coc-settings.json
-|4,39,57,15,1712959267,"~/.vim/coc-settings.json"
--'  57  15  ~/.vim/coc-settings.json
-|4,39,57,15,1712959267,"~/.vim/coc-settings.json"
--'  57  15  ~/.vim/coc-settings.json
-|4,39,57,15,1712959267,"~/.vim/coc-settings.json"
--'  57  15  ~/.vim/coc-settings.json
-|4,39,57,15,1712959267,"~/.vim/coc-settings.json"
--'  57  15  ~/.vim/coc-settings.json
-|4,39,57,15,1712959267,"~/.vim/coc-settings.json"
--'  57  15  ~/.vim/coc-settings.json
-|4,39,57,15,1712959267,"~/.vim/coc-settings.json"
--'  57  15  ~/.vim/coc-settings.json
-|4,39,57,15,1712959267,"~/.vim/coc-settings.json"
--'  57  15  ~/.vim/coc-settings.json
-|4,39,57,15,1712959267,"~/.vim/coc-settings.json"
--'  2  5  ~/hateoas/hateoas_backend/sample.sql
-|4,39,2,5,1712953339,"~/hateoas/hateoas_backend/sample.sql"
--'  2  5  ~/hateoas/hateoas_backend/sample.sql
-|4,39,2,5,1712953339,"~/hateoas/hateoas_backend/sample.sql"
--'  2  5  ~/hateoas/hateoas_backend/sample.sql
-|4,39,2,5,1712953339,"~/hateoas/hateoas_backend/sample.sql"
--'  2  5  ~/hateoas/hateoas_backend/sample.sql
-|4,39,2,5,1712953339,"~/hateoas/hateoas_backend/sample.sql"
--'  2  5  ~/hateoas/hateoas_backend/sample.sql
-|4,39,2,5,1712953339,"~/hateoas/hateoas_backend/sample.sql"
--'  2  5  ~/hateoas/hateoas_backend/sample.sql
-|4,39,2,5,1712953339,"~/hateoas/hateoas_backend/sample.sql"
--'  2  5  ~/hateoas/hateoas_backend/sample.sql
-|4,39,2,5,1712953339,"~/hateoas/hateoas_backend/sample.sql"
--'  2  5  ~/hateoas/hateoas_backend/sample.sql
-|4,39,2,5,1712953339,"~/hateoas/hateoas_backend/sample.sql"
--'  2  5  ~/hateoas/hateoas_backend/sample.sql
-|4,39,2,5,1712953339,"~/hateoas/hateoas_backend/sample.sql"
--'  2  5  ~/hateoas/hateoas_backend/sample.sql
-|4,39,2,5,1712953339,"~/hateoas/hateoas_backend/sample.sql"
+-'  1  8  ~/servers/hateoas.config.js
+|4,39,1,8,1713277112,"~/servers/hateoas.config.js"
+-'  10  4  ~/servers/hateoas.config.js
+|4,39,10,4,1713277047,"~/servers/hateoas.config.js"
+-'  5  32  ~/servers/hateoas.config.js
+|4,39,5,32,1713277009,"~/servers/hateoas.config.js"
+-'  6  16  ~/servers/hateoas.config.js
+|4,39,6,16,1713276979,"~/servers/hateoas.config.js"
+-'  105  4  ~/.pm2/dump.pm2
+|4,39,105,4,1713276899,"~/.pm2/dump.pm2"
+-'  29  6  ~/.pm2/dump.pm2
+|4,39,29,6,1713276867,"~/.pm2/dump.pm2"
+-'  58  11  ~/.pm2/dump.pm2
+|4,39,58,11,1713276866,"~/.pm2/dump.pm2"
+-'  88  4  ~/.pm2/dump.pm2
+|4,39,88,4,1713276866,"~/.pm2/dump.pm2"
+-'  106  5  ~/.pm2/dump.pm2
+|4,39,106,5,1713276865,"~/.pm2/dump.pm2"
+-'  126  0  ~/.pm2/dump.pm2
+|4,39,126,0,1713276865,"~/.pm2/dump.pm2"
+-'  47  6  ~/.pm2/dump.pm2
+|4,39,47,6,1713276501,"~/.pm2/dump.pm2"
+-'  12  0  ~/servers/hateoas.config.js
+|4,39,12,0,1713276383,"~/servers/hateoas.config.js"
+-'  3  0  ~/servers/hateoas.config.js
+|4,39,3,0,1713276383,"~/servers/hateoas.config.js"
+-'  32  1  ~/servers/hateoas.config.js
+|4,39,32,1,1713270571,"~/servers/hateoas.config.js"
+-'  1  0  ~/servers/ecosystem.config.js
+|4,39,1,0,1713270571,"~/servers/ecosystem.config.js"
+-'  23  1  ~/servers/hateoas.config.js
+|4,39,23,1,1713270571,"~/servers/hateoas.config.js"
+-'  1  0  ~/servers/ecosystem.config.js
+|4,39,1,0,1713270571,"~/servers/ecosystem.config.js"
+-'  1  0  ~/servers/hateoas.config.js
+|4,39,1,0,1713270560,"~/servers/hateoas.config.js"
+-'  1  0  ~/servers/hateoas.config.js
+|4,39,1,0,1713270367,"~/servers/hateoas.config.js"
+-'  1  7  ~/hateoas/.gitignore
+|4,39,1,7,1713270239,"~/hateoas/.gitignore"
+-'  1  7  ~/hateoas/.gitignore
+|4,39,1,7,1713270239,"~/hateoas/.gitignore"
+-'  1  7  ~/hateoas/.gitignore
+|4,39,1,7,1713270239,"~/hateoas/.gitignore"
+-'  1  7  ~/hateoas/.gitignore
+|4,39,1,7,1713270239,"~/hateoas/.gitignore"
+-'  1  7  ~/hateoas/.gitignore
+|4,39,1,7,1713270239,"~/hateoas/.gitignore"
+-'  22  4  ~/hateoas/hateoas-api.py
+|4,39,22,4,1713270172,"~/hateoas/hateoas-api.py"
+-'  22  4  ~/hateoas/hateoas-api.py
+|4,39,22,4,1713270172,"~/hateoas/hateoas-api.py"
+-'  22  4  ~/hateoas/hateoas-api.py
+|4,39,22,4,1713270172,"~/hateoas/hateoas-api.py"
+-'  22  4  ~/hateoas/hateoas-api.py
+|4,39,22,4,1713270172,"~/hateoas/hateoas-api.py"
+-'  22  4  ~/hateoas/hateoas-api.py
+|4,39,22,4,1713270172,"~/hateoas/hateoas-api.py"
+-'  22  4  ~/hateoas/hateoas-api.py
+|4,39,22,4,1713270172,"~/hateoas/hateoas-api.py"
+-'  20  8  ~/hateoas/hateoas-api.py
+|4,39,20,8,1713270155,"~/hateoas/hateoas-api.py"
+-'  20  8  ~/hateoas/hateoas-api.py
+|4,39,20,8,1713270155,"~/hateoas/hateoas-api.py"
+-'  20  8  ~/hateoas/hateoas-api.py
+|4,39,20,8,1713270155,"~/hateoas/hateoas-api.py"
+-'  20  8  ~/hateoas/hateoas-api.py
+|4,39,20,8,1713270155,"~/hateoas/hateoas-api.py"
+-'  20  8  ~/hateoas/hateoas-api.py
+|4,39,20,8,1713270155,"~/hateoas/hateoas-api.py"
+-'  20  8  ~/hateoas/hateoas-api.py
+|4,39,20,8,1713270155,"~/hateoas/hateoas-api.py"
+-'  13  0  ~/hateoas/hateoas-api.py
+|4,39,13,0,1713270127,"~/hateoas/hateoas-api.py"
+-'  8  20  ~/hateoas/templates/base.html
+|4,39,8,20,1713270127,"~/hateoas/templates/base.html"
+-'  13  0  ~/hateoas/hateoas-api.py
+|4,39,13,0,1713270127,"~/hateoas/hateoas-api.py"
+-'  8  20  ~/hateoas/templates/base.html
+|4,39,8,20,1713270127,"~/hateoas/templates/base.html"
+-'  13  0  ~/hateoas/hateoas-api.py
+|4,39,13,0,1713270127,"~/hateoas/hateoas-api.py"
+-'  8  20  ~/hateoas/templates/base.html
+|4,39,8,20,1713270127,"~/hateoas/templates/base.html"
+-'  13  0  ~/hateoas/hateoas-api.py
+|4,39,13,0,1713270127,"~/hateoas/hateoas-api.py"
+-'  8  20  ~/hateoas/templates/base.html
+|4,39,8,20,1713270127,"~/hateoas/templates/base.html"
+-'  13  0  ~/hateoas/hateoas-api.py
+|4,39,13,0,1713270127,"~/hateoas/hateoas-api.py"
+-'  8  20  ~/hateoas/templates/base.html
+|4,39,8,20,1713270127,"~/hateoas/templates/base.html"
+-'  13  0  ~/hateoas/hateoas-api.py
+|4,39,13,0,1713270127,"~/hateoas/hateoas-api.py"
+-'  8  20  ~/hateoas/templates/base.html
+|4,39,8,20,1713270127,"~/hateoas/templates/base.html"
+-'  4  44  ~/hateoas/templates/base.html
+|4,39,4,44,1713270098,"~/hateoas/templates/base.html"
+-'  4  44  ~/hateoas/templates/base.html
+|4,39,4,44,1713270098,"~/hateoas/templates/base.html"
+-'  4  44  ~/hateoas/templates/base.html
+|4,39,4,44,1713270098,"~/hateoas/templates/base.html"
+-'  4  44  ~/hateoas/templates/base.html
+|4,39,4,44,1713270098,"~/hateoas/templates/base.html"
+-'  4  44  ~/hateoas/templates/base.html
+|4,39,4,44,1713270098,"~/hateoas/templates/base.html"
+-'  4  44  ~/hateoas/templates/base.html
+|4,39,4,44,1713270098,"~/hateoas/templates/base.html"
+-'  6  29  ~/hateoas/templates/base.html
+|4,39,6,29,1713270093,"~/hateoas/templates/base.html"
+-'  6  29  ~/hateoas/templates/base.html
+|4,39,6,29,1713270093,"~/hateoas/templates/base.html"
+-'  6  29  ~/hateoas/templates/base.html
+|4,39,6,29,1713270093,"~/hateoas/templates/base.html"
+-'  6  29  ~/hateoas/templates/base.html
+|4,39,6,29,1713270093,"~/hateoas/templates/base.html"
+-'  6  29  ~/hateoas/templates/base.html
+|4,39,6,29,1713270093,"~/hateoas/templates/base.html"
+-'  6  29  ~/hateoas/templates/base.html
+|4,39,6,29,1713270093,"~/hateoas/templates/base.html"
+-'  10  0  ~/hateoas/templates/base.html
+|4,39,10,0,1713270087,"~/hateoas/templates/base.html"
+-'  10  0  ~/hateoas/templates/base.html
+|4,39,10,0,1713270087,"~/hateoas/templates/base.html"
+-'  10  0  ~/hateoas/templates/base.html
+|4,39,10,0,1713270087,"~/hateoas/templates/base.html"
+-'  10  0  ~/hateoas/templates/base.html
+|4,39,10,0,1713270087,"~/hateoas/templates/base.html"
+-'  10  0  ~/hateoas/templates/base.html
+|4,39,10,0,1713270087,"~/hateoas/templates/base.html"
+-'  10  0  ~/hateoas/templates/base.html
+|4,39,10,0,1713270087,"~/hateoas/templates/base.html"
+-'  5  78  ~/hateoas/templates/base.html
+|4,39,5,78,1713270071,"~/hateoas/templates/base.html"
+-'  5  78  ~/hateoas/templates/base.html
+|4,39,5,78,1713270071,"~/hateoas/templates/base.html"
+-'  5  78  ~/hateoas/templates/base.html
+|4,39,5,78,1713270071,"~/hateoas/templates/base.html"
+-'  5  78  ~/hateoas/templates/base.html
+|4,39,5,78,1713270071,"~/hateoas/templates/base.html"
+-'  5  78  ~/hateoas/templates/base.html
+|4,39,5,78,1713270071,"~/hateoas/templates/base.html"
+-'  5  78  ~/hateoas/templates/base.html
+|4,39,5,78,1713270071,"~/hateoas/templates/base.html"
+-'  3  9  ~/hateoas/templates/base.html
+|4,39,3,9,1713270049,"~/hateoas/templates/base.html"
+-'  3  9  ~/hateoas/templates/base.html
+|4,39,3,9,1713270049,"~/hateoas/templates/base.html"
+-'  3  9  ~/hateoas/templates/base.html
+|4,39,3,9,1713270049,"~/hateoas/templates/base.html"
+-'  3  9  ~/hateoas/templates/base.html
+|4,39,3,9,1713270049,"~/hateoas/templates/base.html"
+-'  3  9  ~/hateoas/templates/base.html
+|4,39,3,9,1713270049,"~/hateoas/templates/base.html"
+-'  3  9  ~/hateoas/templates/base.html
+|4,39,3,9,1713270049,"~/hateoas/templates/base.html"
+-'  1  0  ~/hateoas/templates/base.html
+|4,39,1,0,1713270038,"~/hateoas/templates/base.html"
+-'  1  0  ~/hateoas/templates/base.html
+|4,39,1,0,1713270038,"~/hateoas/templates/base.html"
+-'  1  0  ~/hateoas/templates/base.html
+|4,39,1,0,1713270038,"~/hateoas/templates/base.html"
+-'  1  0  ~/hateoas/templates/base.html
+|4,39,1,0,1713270038,"~/hateoas/templates/base.html"
+-'  1  0  ~/hateoas/templates/base.html
+|4,39,1,0,1713270038,"~/hateoas/templates/base.html"
+-'  1  0  ~/hateoas/templates/base.html
+|4,39,1,0,1713270038,"~/hateoas/templates/base.html"
+-'  4  50  ~/hateoas/static/css/hateoas.css
+|4,39,4,50,1713268011,"~/hateoas/static/css/hateoas.css"
+-'  4  50  ~/hateoas/static/css/hateoas.css
+|4,39,4,50,1713268011,"~/hateoas/static/css/hateoas.css"
+-'  4  50  ~/hateoas/static/css/hateoas.css
+|4,39,4,50,1713268011,"~/hateoas/static/css/hateoas.css"
+-'  4  50  ~/hateoas/static/css/hateoas.css
+|4,39,4,50,1713268011,"~/hateoas/static/css/hateoas.css"
+-'  4  50  ~/hateoas/static/css/hateoas.css
+|4,39,4,50,1713268011,"~/hateoas/static/css/hateoas.css"
+-'  4  50  ~/hateoas/static/css/hateoas.css
+|4,39,4,50,1713268011,"~/hateoas/static/css/hateoas.css"
+-'  24  4  ~/hateoas/hateoas-api.py
+|4,39,24,4,1713267975,"~/hateoas/hateoas-api.py"
+-'  24  4  ~/hateoas/hateoas-api.py
+|4,39,24,4,1713267975,"~/hateoas/hateoas-api.py"
+-'  24  4  ~/hateoas/hateoas-api.py
+|4,39,24,4,1713267975,"~/hateoas/hateoas-api.py"
+-'  24  4  ~/hateoas/hateoas-api.py
+|4,39,24,4,1713267975,"~/hateoas/hateoas-api.py"
+-'  24  4  ~/hateoas/hateoas-api.py
+|4,39,24,4,1713267975,"~/hateoas/hateoas-api.py"
+-'  24  4  ~/hateoas/hateoas-api.py
+|4,39,24,4,1713267975,"~/hateoas/hateoas-api.py"
+-'  28  9  ~/hateoas/hateoas-api.py
+|4,39,28,9,1713267921,"~/hateoas/hateoas-api.py"
+-'  28  9  ~/hateoas/hateoas-api.py
+|4,39,28,9,1713267921,"~/hateoas/hateoas-api.py"
+-'  28  9  ~/hateoas/hateoas-api.py
+|4,39,28,9,1713267921,"~/hateoas/hateoas-api.py"
+-'  28  9  ~/hateoas/hateoas-api.py
+|4,39,28,9,1713267921,"~/hateoas/hateoas-api.py"
 
 # Buffer list:
-%~/.config/alias.sh	1	0
+%~/.pm2/dump.pm2	105	4
+%~/servers/ecosystem.config.js	1	0
+%~/servers/hateoas.config.js	1	8
 
 # History of marks within files (newest to oldest):
 
-> ~/.config/alias.sh
-	*	1712960278	0
+> ~/servers/hateoas.config.js
+	*	1713277110	0
+	"	1	8
+	^	5	33
+	.	7	0
+	+	32	0
+	+	33	19
+	+	34	28
+	+	35	48
+	+	37	0
+	+	40	0
+	+	39	5
+	+	32	0
+	+	32	23
+	+	32	11
+	+	32	9
+	+	32	0
+	+	11	0
+	+	10	5
+	+	10	0
+	+	10	8
+	+	3	0
+	+	6	35
+	+	10	0
+	+	10	13
+	+	10	25
+	+	10	65
+	+	10	0
+	+	7	8
+	+	6	0
+	+	4	22
+	+	5	32
+	+	7	0
+	+	8	0
+	+	7	0
+
+> ~/.pm2/dump.pm2
+	*	1713276898	0
+	"	105	4
+	.	1	0
+	+	126	0
+	+	29	11
+	+	88	5
+	+	126	0
+	+	29	0
+	+	126	0
+	+	1	0
+
+> ~/servers/ecosystem.config.js
+	*	1713270568	0
 	"	1	0
+	.	7	0
+	+	20	2
+	+	8	24
+	+	8	0
+	+	8	361
+	+	8	16
+	+	5	0
+	+	4	21
+	+	8	81
+	+	8	0
+	+	8	81
+	+	7	0
+	+	8	0
+	+	7	0
+
+> ~/hateoas/.gitignore
+	*	1713270238	0
+	"	1	7
+	^	1	8
+	.	1	7
+	+	1	7
+
+> ~/hateoas/hateoas-api.py
+	*	1713270169	0
+	"	22	4
+	^	22	12
+	.	22	0
+	+	2	25
+	+	3	39
+	+	5	26
+	+	6	25
+	+	8	0
+	+	9	21
+	+	7	26
+	+	29	0
+	+	10	0
+	+	29	0
+	+	10	47
+	+	11	9
+	+	13	15
+	+	15	25
+	+	25	69
+	+	28	4
+	+	29	0
+	+	15	37
+	+	16	33
+	+	17	24
+	+	19	25
+	+	20	0
+	+	21	22
+	+	22	0
+
+> ~/hateoas/templates/base.html
+	*	1713270124	0
+	"	8	20
+	^	8	21
+	.	8	20
+	+	10	0
+	+	6	0
+	+	4	50
+	+	5	78
+	+	6	0
+	+	6	8
+	+	4	0
+	+	6	0
+	+	9	0
+	+	10	0
+	+	8	20
+
+> ~/hateoas/static/css/hateoas.css
+	*	1713268010	0
+	"	4	50
+	^	4	51
+	.	4	50
+	+	2	48
+	+	3	45
+	+	4	50
+
+> ~/Twitch/coffee-vps/flask-vue/api.py
+	*	1713267803	0
+	"	186	4
+	.	13	0
+	+	710	23
+	+	710	0
+	+	1	0
+	+	710	0
+	+	1	0
+	+	710	0
+	+	1	0
+	+	710	0
+	+	1	0
+	+	710	0
+	+	1	0
+	+	710	0
+	+	1	0
+	+	710	0
+	+	1	0
+	+	710	0
+	+	1	0
+	+	1	12
+	+	1	0
+	+	714	0
+	+	1	0
+	+	717	0
+	+	1	12
+	+	1	0
+	+	710	0
+	+	712	37
+	+	1	0
+	+	718	0
+	+	1	58
+	+	1	0
+	+	714	0
+	+	712	0
+	+	714	0
+	+	712	4
+	+	1	0
+	+	1	15
+	+	1	0
+	+	1	34
+	+	1	0
+	+	1	20
+	+	1	0
+	+	1	8
+	+	1	0
+	+	1	31
+	+	1	36
+	+	1	11
+	+	1	12
+	+	1	11
+	+	712	0
+	+	239	17
+	+	233	0
+	+	243	0
+	+	228	30
+	+	228	0
+	+	232	0
+	+	231	28
+	+	240	7
+	+	242	8
+	+	243	0
+	+	90	0
+	+	7	11
+	+	90	0
+	+	34	0
+	+	33	0
+	+	90	0
+	+	93	0
+	+	94	0
+	+	90	0
+	+	93	0
+	+	106	0
+	+	99	0
+	+	98	0
+	+	240	0
+	+	241	22
+	+	241	23
+	+	238	14
+	+	238	19
+	+	238	16
+	+	241	0
+	+	240	31
+	+	225	0
+	+	219	4
+	+	214	0
+	+	217	7
+	+	218	11
+	+	240	0
+	+	238	0
+	+	240	0
+	+	448	7
+	+	452	30
+	+	452	0
+	+	425	0
+	+	424	0
+	+	424	13
+	+	424	18
+	+	424	14
+	+	424	0
+	+	234	0
+	+	233	1
+	+	13	0
+	a	231	28
+	b	231	29
+
+> ~/hateoas/requirements.txt
+	*	1713267160	0
+	"	2	4
+	^	2	5
+	.	2	4
+	+	3	5
+	+	9	20
+	+	2	4
+
+> ~/Twitch/coffee-vps/flask-vue/requirements.txt
+	*	1713267134	0
+	"	1	0
+	^	2	7
+	.	2	6
+	+	1	0
+	+	7	0
+	+	1	0
+	+	3	0
+	+	5	22
+	+	6	0
+	+	1	0
+	+	3	0
+	+	4	0
+	+	5	0
+	+	6	0
+	+	1	0
+	+	3	5
+	+	4	0
+	+	14	5
+	+	15	7
+	+	16	18
+	+	18	0
+	+	8	0
+	+	19	16
+	+	16	0
+	+	19	6
+	+	16	0
+	+	19	0
+	+	20	13
+	+	20	18
+	+	20	12
+	+	20	13
+	+	21	0
+	+	20	11
+	+	20	10
+	+	20	12
+	+	20	15
+	+	20	14
+	+	20	10
+	+	20	15
+	+	20	12
+	+	20	14
+	+	20	12
+	+	20	0
+	+	20	8
+	+	20	20
+	+	21	0
+	+	17	14
+	+	20	0
+	+	9	0
+	+	2	12
+	+	1	0
+	+	3	5
+	+	2	11
+	+	3	0
+	+	2	6
+
+> ~/.config/gita/repos.csv
+	*	1713267098	0
+	"	1	0
+
+> ~/.config/direnv/direnv.toml
+	*	1713265267	0
+	"	2	0
+
+> ~/.config/alias.sh
+	*	1713265220	0
+	"	17	0
 	^	22	20
 	.	22	19
 	+	2	0
@@ -7024,6 +7382,10 @@ $
 	+	21	0
 	+	18	0
 	+	22	19
+
+> ~/[Plugins]
+	*	1713265183	0
+	"	1	0
 
 > ~/.config/setup.sh
 	*	1712960274	0
@@ -7202,10 +7564,6 @@ $
 	+	10	30
 	+	9	4
 	+	10	0
-
-> ~/.config/gita/repos.csv
-	*	1712959462	0
-	"	1	0
 
 > ~/hateoas/hateoas_backend/sample.sql
 	*	1712959303	0
@@ -9230,113 +9588,6 @@ $
 	.	1	0
 	+	1	0
 
-> ~/Twitch/coffee-vps/flask-vue/api.py
-	*	1712011698	0
-	"	283	26
-	^	233	2
-	.	233	1
-	+	710	23
-	+	710	0
-	+	1	0
-	+	710	0
-	+	1	0
-	+	710	0
-	+	1	0
-	+	710	0
-	+	1	0
-	+	710	0
-	+	1	0
-	+	710	0
-	+	1	0
-	+	710	0
-	+	1	0
-	+	710	0
-	+	1	0
-	+	1	12
-	+	1	0
-	+	714	0
-	+	1	0
-	+	717	0
-	+	1	12
-	+	1	0
-	+	710	0
-	+	712	37
-	+	1	0
-	+	718	0
-	+	1	58
-	+	1	0
-	+	714	0
-	+	712	0
-	+	714	0
-	+	712	4
-	+	1	0
-	+	1	15
-	+	1	0
-	+	1	34
-	+	1	0
-	+	1	20
-	+	1	0
-	+	1	8
-	+	1	0
-	+	1	31
-	+	1	36
-	+	1	11
-	+	1	12
-	+	1	11
-	+	712	0
-	+	239	17
-	+	233	0
-	+	243	0
-	+	228	30
-	+	228	0
-	+	232	0
-	+	231	28
-	+	240	7
-	+	242	8
-	+	243	0
-	+	90	0
-	+	7	11
-	+	90	0
-	+	34	0
-	+	33	0
-	+	90	0
-	+	93	0
-	+	94	0
-	+	90	0
-	+	93	0
-	+	106	0
-	+	99	0
-	+	98	0
-	+	240	0
-	+	241	22
-	+	241	23
-	+	238	14
-	+	238	19
-	+	238	16
-	+	241	0
-	+	240	31
-	+	225	0
-	+	219	4
-	+	214	0
-	+	217	7
-	+	218	11
-	+	240	0
-	+	238	0
-	+	240	0
-	+	448	7
-	+	452	30
-	+	452	0
-	+	425	0
-	+	424	0
-	+	424	13
-	+	424	18
-	+	424	14
-	+	424	0
-	+	234	0
-	+	233	1
-	a	231	28
-	b	231	29
-
 > ~/hateoas/hateoas_backend/.direnv/python-3.10.12/lib/python3.10/site-packages/flask/helpers.py
 	*	1711972484	0
 	"	287	11
@@ -9490,19 +9741,6 @@ $
 	+	52	20
 	+	23	37
 	+	21	17
-
-> ~/servers/hateoas.config.js
-	*	1711875676	0
-	"	10	4
-	^	8	17
-	.	10	5
-	+	2	0
-	+	4	19
-	+	5	28
-	+	6	48
-	+	8	0
-	+	11	0
-	+	10	5
 
 > ~/servers/elements.config.js
 	*	1711875539	0
@@ -10333,28 +10571,6 @@ $
 	*	1711444676	0
 	"	1	0
 
-> ~/servers/ecosystem.config.js
-	*	1711444652	0
-	"	1	0
-	.	7	0
-	+	20	2
-	+	8	24
-	+	8	0
-	+	8	361
-	+	8	16
-	+	5	0
-	+	4	21
-	+	8	81
-	+	8	0
-	+	8	81
-	+	7	0
-	+	8	0
-	+	7	0
-
-> ~/.pm2/dump.pm2
-	*	1711443981	0
-	"	1	0
-
 > ~/.pm2/module_conf.json
 	*	1711442903	0
 	"	1	0
@@ -11094,64 +11310,6 @@ $
 	+	1	22
 	+	2	13
 	+	3	0
-
-> ~/Twitch/coffee-vps/flask-vue/requirements.txt
-	*	1710802055	0
-	"	1	0
-	^	2	7
-	.	2	6
-	+	1	0
-	+	7	0
-	+	1	0
-	+	3	0
-	+	5	22
-	+	6	0
-	+	1	0
-	+	3	0
-	+	4	0
-	+	5	0
-	+	6	0
-	+	1	0
-	+	3	5
-	+	4	0
-	+	14	5
-	+	15	7
-	+	16	18
-	+	18	0
-	+	8	0
-	+	19	16
-	+	16	0
-	+	19	6
-	+	16	0
-	+	19	0
-	+	20	13
-	+	20	18
-	+	20	12
-	+	20	13
-	+	21	0
-	+	20	11
-	+	20	10
-	+	20	12
-	+	20	15
-	+	20	14
-	+	20	10
-	+	20	15
-	+	20	12
-	+	20	14
-	+	20	12
-	+	20	0
-	+	20	8
-	+	20	20
-	+	21	0
-	+	17	14
-	+	20	0
-	+	9	0
-	+	2	12
-	+	1	0
-	+	3	5
-	+	2	11
-	+	3	0
-	+	2	6
 
 > ~/plateup/plateup_frontend/tailwind.config.js
 	*	1710801899	0
@@ -17186,10 +17344,6 @@ $
 	+	3	0
 	+	5	0
 	+	3	0
-
-> ~/.config/direnv/direnv.toml
-	*	1692459057	0
-	"	1	0
 
 > ~/poetry_test/.envrc
 	*	1692458919	0
