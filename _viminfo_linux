@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/\C\<delete_sequence\>
+~MSle0~/created
 
 # Last Substitute Search Pattern:
 ~MSle0&"
@@ -21,17 +21,29 @@ $
 
 # Command Line History (newest to oldest):
 :qa
-|2,0,1713297249,,"qa"
+|2,0,1713304284,,"qa"
+:MRU css
+|2,0,1713303703,,"MRU css"
+:b css
+|2,0,1713303702,,"b css"
+:b nav
+|2,0,1713303228,,"b nav"
+:set nonumber
+|2,0,1713303141,,"set nonumber"
 :q
-|2,0,1713297193,,"q"
+|2,0,1713300626,,"q"
+:e templates/nav.html
+|2,0,1713300524,,"e templates/nav.html"
+:e na
+|2,0,1713300521,,"e na"
 :!rm data/main.db
-|2,0,1713297145,,"!rm data/main.db"
+|2,0,1713300487,,"!rm data/main.db"
+:q!
+|2,0,1713300173,,"q!"
 :Tab /INTEGER\|TEXT
 |2,0,1713297081,,"Tab /INTEGER\\|TEXT"
 :e main.sql
 |2,0,1713297073,,"e main.sql"
-:q!
-|2,0,1713297010,,"q!"
 :w
 |2,0,1713297009,,"w"
 :term
@@ -42,12 +54,8 @@ $
 |2,0,1713296212,,"term vd data/main.db"
 :e __pycache__/
 |2,0,1713296097,,"e __pycache__/"
-:b css
-|2,0,1713295779,,"b css"
 :MRU a
 |2,0,1713295260,,"MRU a"
-:set nonumber
-|2,0,1713288784,,"set nonumber"
 :b ~/hateoas/templates/elements.html
 |2,0,1713288456,,"b ~/hateoas/templates/elements.html"
 :e ele
@@ -60,14 +68,10 @@ $
 |2,0,1713288124,,"e templates/base.html"
 :e base
 |2,0,1713288119,,"e base"
-:e templates/nav.html
-|2,0,1713288066,,"e templates/nav.html"
 :MRU ele
 |2,0,1713287887,,"MRU ele"
 :b ele
 |2,0,1713287886,,"b ele"
-:MRU css
-|2,0,1713287742,,"MRU css"
 :MRU py
 |2,0,1713287253,,"MRU py"
 :CocInfo
@@ -4764,6 +4768,8 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/created
+|2,1,1713304071,47,"created"
 ?/title
 |2,1,1713289733,47,"title"
 ?/box
@@ -6780,59 +6786,41 @@ $
 |2,4,1693311567,,"cont"
 
 # Registers:
-"0	CHAR	0
-	db_table_count(connection)
-|3,0,0,0,1,0,1713296988,"db_table_count(connection)"
-""1	LINE	0
-	        prin
-|3,1,1,1,1,0,1713297201,"        prin"
+"0	LINE	0
+	    return value
+|3,0,0,1,1,0,1713304050,"    return value"
+"1	LINE	0
+	    return value
+|3,0,1,1,1,0,1713304041,"    return value"
 "2	LINE	0
-	
-|3,0,2,1,1,0,1713296853,""
+	@app.add_template_filter
+|3,0,2,1,1,0,1713304022,"@app.add_template_filter"
 "3	LINE	0
-	    db_exists = os.path.exists(db_path)
-	    if db_exists:
-	        print(f"Database {db_path} already exists, skipping...")
-	        continue
-|3,0,3,1,4,0,1713296837,"    db_exists = os.path.exists(db_path)","    if db_exists:","        print(f\"Database {db_path} already exists, skipping...\")","        continue"
+	            <div
+|3,0,3,1,1,0,1713303809,"            <div"
 "4	LINE	0
-	    db_exists = os.path.exists(db_path)
-	    if db_exists:
-	        print(f"Database {db_path} already exists, skipping...")
-	        continue
-|3,0,4,1,4,0,1713296834,"    db_exists = os.path.exists(db_path)","    if db_exists:","        print(f\"Database {db_path} already exists, skipping...\")","        continue"
+	
+|3,0,4,1,1,0,1713303655,""
 "5	LINE	0
-	
-	
-|3,0,5,1,2,0,1713296818,"",""
+	            <div>
+	                
+	            </div>
+|3,0,5,1,3,0,1713303627,"            <div>","                ","            </div>"
 "6	LINE	0
-	    with open(sql_path, 'r') as f:
-	        sql = f.read()
-|3,0,6,1,2,0,1713296807,"    with open(sql_path, 'r') as f:","        sql = f.read()"
+	                <a href="{{ url_for('videos', page=pagination['next']) }}">Next</a>
+|3,0,6,1,1,0,1713303595,"                <a href=\"{{ url_for('videos', page=pagination['next']) }}\">Next</a>"
 "7	LINE	0
-	        try:
-	        except Exception as e:
-	            if str(e).endswith("syntax error"):
-	                # rm the database file
-	                os.remove(db_path)
-	                print(f"Removed {db_path} due to syntax error.")
-	                print(e)
-	            else:
-	                print(f"Error creating database {db_path}: {e}")
-|3,0,7,1,9,0,1713296789,"        try:","        except Exception as e:","            if str(e).endswith(\"syntax error\"):","                # rm the database file","                os.remove(db_path)","                print(f\"Removed {db_path} due to syntax error.\")","                print(e)","            else:","                print(f\"Error creating database {db_path}: {e}\")"
+	                <a href="{{ url_for('videos', page=pagination['prev']) }}">Prev</a>
+|3,0,7,1,1,0,1713303580,"                <a href=\"{{ url_for('videos', page=pagination['prev']) }}\">Prev</a>"
 "8	LINE	0
-	            connection.executescript(sql)
-|3,0,8,1,1,0,1713296789,"            connection.executescript(sql)"
+	                <a href="{{ url_for('videos', page=pagination['pageCount']) }}">Last</a>
+|3,0,8,1,1,0,1713303564,"                <a href=\"{{ url_for('videos', page=pagination['pageCount']) }}\">Last</a>"
 "9	LINE	0
-	    # print(f"Creating database {db_path} from {sql_path}...")
-	    # # os.system(f"sqlite3 {db_path} < {sql_path}")
-	    # print(f"Database {db_path} created successfully!")
-	
-	
-|3,0,9,1,5,0,1713296750,"    # print(f\"Creating database {db_path} from {sql_path}...\")","    # # os.system(f\"sqlite3 {db_path} < {sql_path}\")","    # print(f\"Database {db_path} created successfully!\")","",""
+	                <span>Prev</span>
+|3,0,9,1,1,0,1713303555,"                <span>Prev</span>"
 "a	CHAR	0
 	f"ct,INTE€kb€kbDENT_FOURjk
-|3,0,10,0,1,0,1713296677,"f\"ct,INTE€kb€kbDENT_FOURjk"
+|3,0,10,0,1,0,1713300278,"f\"ct,INTE€kb€kbDENT_FOURjk"
 "j	CHAR	0
 	k:q!kkkkkkkkkkkgg/titlec/€ýa
 |3,0,19,0,1,0,1713289736,"k:q!kkkkkkkkkkkgg/titlec/€ýa"
@@ -6867,330 +6855,515 @@ $
 |3,0,28,1,24,0,1712521850,"    return render_template_string(\"\"\"","    <ul>","        {% for id, name, downloaded_path, progress, status in downloads %}","            <li>","                <a href=\"/download/{{ id }}\">{{ name }}</a>","                <span>{{ status }}</span>","                <progress value=\"{{ progress }}\" max=\"100\"></progress>","                <span>{{ progress }}%</span>","                {% if status == 'paused' %}",>68
 |<"                <form method=\"POST\" action=\"/resume_download\">","                    <input type=\"hidden\" name=\"id\" value=\"{{ id }}\">","                    <input type=\"submit\" value=\"Resume\">","                </form>","                {% endif %}","                {% if status == 'downloading' %}","                <form method=\"POST\" action=\"/pause_download\">","                    <input type=\"hidden\" name=\"id\" value=\"{{ id }}\">",>61
 |<"                    <input type=\"submit\" value=\"Pause\">","                </form>","                {% endif %}","","            </li>","        {% endfor %}","    </ul>\"\"\", downloads=downloads)"
-"-	CHAR	0
-	db_table_count(connection)
-|3,0,36,0,1,0,1713296986,"db_table_count(connection)"
+""-	CHAR	0
+	)
+|3,1,36,0,1,0,1713304162,")"
 
 # File marks:
-'0  46  0  ~/hateoas/create-databases.py
-|4,48,46,0,1713297249,"~/hateoas/create-databases.py"
-'1  1  0  ~/hateoas/create-databases.py
-|4,49,1,0,1713296188,"~/hateoas/create-databases.py"
-'2  1  0  ~/hateoas/create-databases.py
-|4,50,1,0,1713296188,"~/hateoas/create-databases.py"
-'3  47  26  ~/hateoas/create-databases.py
-|4,51,47,26,1713296186,"~/hateoas/create-databases.py"
-'4  47  26  ~/hateoas/create-databases.py
-|4,52,47,26,1713296186,"~/hateoas/create-databases.py"
-'5  27  26  ~/hateoas/create-databases.py
-|4,53,27,26,1713296186,"~/hateoas/create-databases.py"
-'6  27  26  ~/hateoas/create-databases.py
-|4,54,27,26,1713296186,"~/hateoas/create-databases.py"
-'7  47  8  ~/hateoas/create-databases.py
-|4,55,47,8,1713296172,"~/hateoas/create-databases.py"
-'8  47  8  ~/hateoas/create-databases.py
-|4,56,47,8,1713296172,"~/hateoas/create-databases.py"
-'9  27  8  ~/hateoas/create-databases.py
-|4,57,27,8,1713296172,"~/hateoas/create-databases.py"
+'0  257  152  ~/hateoas/hateoas-api.py
+|4,48,257,152,1713304284,"~/hateoas/hateoas-api.py"
+'1  46  4  ~/hateoas/create-databases.py
+|4,49,46,4,1713300626,"~/hateoas/create-databases.py"
+'2  46  4  ~/hateoas/create-databases.py
+|4,50,46,4,1713300626,"~/hateoas/create-databases.py"
+'3  1  4  ~/hateoas/templates/nav.html
+|4,51,1,4,1713300592,"~/hateoas/templates/nav.html"
+'4  1  4  ~/hateoas/templates/nav.html
+|4,52,1,4,1713300592,"~/hateoas/templates/nav.html"
+'5  1  4  ~/hateoas/templates/nav.html
+|4,53,1,4,1713300592,"~/hateoas/templates/nav.html"
+'6  1  4  ~/hateoas/templates/nav.html
+|4,54,1,4,1713300592,"~/hateoas/templates/nav.html"
+'7  46  0  ~/hateoas/create-databases.py
+|4,55,46,0,1713300502,"~/hateoas/create-databases.py"
+'8  46  0  ~/hateoas/create-databases.py
+|4,56,46,0,1713300502,"~/hateoas/create-databases.py"
+'9  46  0  ~/hateoas/create-databases.py
+|4,57,46,0,1713300502,"~/hateoas/create-databases.py"
 
 # Jumplist (newest first):
+-'  257  152  ~/hateoas/hateoas-api.py
+|4,39,257,152,1713304284,"~/hateoas/hateoas-api.py"
+-'  28  28  ~/hateoas/hateoas-api.py
+|4,39,28,28,1713304164,"~/hateoas/hateoas-api.py"
+-'  159  24  ~/hateoas/hateoas-api.py
+|4,39,159,24,1713304073,"~/hateoas/hateoas-api.py"
+-'  156  25  ~/hateoas/hateoas-api.py
+|4,39,156,25,1713304073,"~/hateoas/hateoas-api.py"
+-'  154  25  ~/hateoas/hateoas-api.py
+|4,39,154,25,1713304073,"~/hateoas/hateoas-api.py"
+-'  118  20  ~/hateoas/hateoas-api.py
+|4,39,118,20,1713304071,"~/hateoas/hateoas-api.py"
+-'  22  48  ~/hateoas/hateoas-api.py
+|4,39,22,48,1713304050,"~/hateoas/hateoas-api.py"
+-'  21  10  ~/hateoas/hateoas-api.py
+|4,39,21,10,1713304040,"~/hateoas/hateoas-api.py"
+-'  20  10  ~/hateoas/hateoas-api.py
+|4,39,20,10,1713304040,"~/hateoas/hateoas-api.py"
+-'  19  30  ~/hateoas/hateoas-api.py
+|4,39,19,30,1713304033,"~/hateoas/hateoas-api.py"
+-'  29  0  ~/hateoas/hateoas-api.py
+|4,39,29,0,1713304029,"~/hateoas/hateoas-api.py"
+-'  127  19  ~/hateoas/hateoas-api.py
+|4,39,127,19,1713303993,"~/hateoas/hateoas-api.py"
+-'  256  29  ~/hateoas/hateoas-api.py
+|4,39,256,29,1713303954,"~/hateoas/hateoas-api.py"
+-'  258  31  ~/hateoas/hateoas-api.py
+|4,39,258,31,1713303877,"~/hateoas/hateoas-api.py"
+-'  259  17  ~/hateoas/hateoas-api.py
+|4,39,259,17,1713303808,"~/hateoas/hateoas-api.py"
+-'  235  29  ~/hateoas/hateoas-api.py
+|4,39,235,29,1713303733,"~/hateoas/hateoas-api.py"
+-'  242  34  ~/hateoas/hateoas-api.py
+|4,39,242,34,1713303731,"~/hateoas/hateoas-api.py"
+-'  243  34  ~/hateoas/hateoas-api.py
+|4,39,243,34,1713303727,"~/hateoas/hateoas-api.py"
+-'  240  34  ~/hateoas/hateoas-api.py
+|4,39,240,34,1713303727,"~/hateoas/hateoas-api.py"
+-'  232  34  ~/hateoas/hateoas-api.py
+|4,39,232,34,1713303726,"~/hateoas/hateoas-api.py"
+-'  225  34  ~/hateoas/hateoas-api.py
+|4,39,225,34,1713303725,"~/hateoas/hateoas-api.py"
+-'  16  21  ~/hateoas/static/css/hateoas.css
+|4,39,16,21,1713303711,"~/hateoas/static/css/hateoas.css"
+-'  241  12  ~/hateoas/hateoas-api.py
+|4,39,241,12,1713303703,"~/hateoas/hateoas-api.py"
+-'  237  26  ~/hateoas/hateoas-api.py
+|4,39,237,26,1713303590,"~/hateoas/hateoas-api.py"
+-'  233  26  ~/hateoas/hateoas-api.py
+|4,39,233,26,1713303589,"~/hateoas/hateoas-api.py"
+-'  245  26  ~/hateoas/hateoas-api.py
+|4,39,245,26,1713303577,"~/hateoas/hateoas-api.py"
+-'  246  26  ~/hateoas/hateoas-api.py
+|4,39,246,26,1713303569,"~/hateoas/hateoas-api.py"
+-'  229  26  ~/hateoas/hateoas-api.py
+|4,39,229,26,1713303563,"~/hateoas/hateoas-api.py"
+-'  228  26  ~/hateoas/hateoas-api.py
+|4,39,228,26,1713303562,"~/hateoas/hateoas-api.py"
+-'  226  32  ~/hateoas/hateoas-api.py
+|4,39,226,32,1713303553,"~/hateoas/hateoas-api.py"
+-'  213  24  ~/hateoas/hateoas-api.py
+|4,39,213,24,1713303472,"~/hateoas/hateoas-api.py"
+-'  214  25  ~/hateoas/hateoas-api.py
+|4,39,214,25,1713303470,"~/hateoas/hateoas-api.py"
+-'  3  110  ~/hateoas/templates/nav.html
+|4,39,3,110,1713303261,"~/hateoas/templates/nav.html"
+-'  260  0  ~/hateoas/hateoas-api.py
+|4,39,260,0,1713303183,"~/hateoas/hateoas-api.py"
+-'  147  36  ~/hateoas/hateoas-api.py
+|4,39,147,36,1713303008,"~/hateoas/hateoas-api.py"
+-'  158  36  ~/hateoas/hateoas-api.py
+|4,39,158,36,1713303007,"~/hateoas/hateoas-api.py"
+-'  148  4  ~/hateoas/hateoas-api.py
+|4,39,148,4,1713302973,"~/hateoas/hateoas-api.py"
+-'  271  0  ~/hateoas/hateoas-api.py
+|4,39,271,0,1713302973,"~/hateoas/hateoas-api.py"
+-'  143  12  ~/hateoas/hateoas-api.py
+|4,39,143,12,1713302936,"~/hateoas/hateoas-api.py"
+-'  142  20  ~/hateoas/hateoas-api.py
+|4,39,142,20,1713302935,"~/hateoas/hateoas-api.py"
+-'  16  47  ~/hateoas/hateoas-api.py
+|4,39,16,47,1713302843,"~/hateoas/hateoas-api.py"
+-'  145  40  ~/hateoas/hateoas-api.py
+|4,39,145,40,1713302787,"~/hateoas/hateoas-api.py"
+-'  146  40  ~/hateoas/hateoas-api.py
+|4,39,146,40,1713302787,"~/hateoas/hateoas-api.py"
+-'  34  33  ~/hateoas/hateoas-api.py
+|4,39,34,33,1713300656,"~/hateoas/hateoas-api.py"
+-'  1  0  ~/hateoas/hateoas-api.py
+|4,39,1,0,1713300652,"~/hateoas/hateoas-api.py"
+-'  46  4  ~/hateoas/create-databases.py
+|4,39,46,4,1713300626,"~/hateoas/create-databases.py"
+-'  46  4  ~/hateoas/create-databases.py
+|4,39,46,4,1713300626,"~/hateoas/create-databases.py"
+-'  1  0  ~/hateoas/create-databases.py
+|4,39,1,0,1713300603,"~/hateoas/create-databases.py"
+-'  1  0  ~/hateoas/create-databases.py
+|4,39,1,0,1713300603,"~/hateoas/create-databases.py"
+-'  1  4  ~/hateoas/templates/nav.html
+|4,39,1,4,1713300592,"~/hateoas/templates/nav.html"
+-'  1  4  ~/hateoas/templates/nav.html
+|4,39,1,4,1713300592,"~/hateoas/templates/nav.html"
+-'  1  4  ~/hateoas/templates/nav.html
+|4,39,1,4,1713300592,"~/hateoas/templates/nav.html"
+-'  3  90  ~/hateoas/templates/nav.html
+|4,39,3,90,1713300568,"~/hateoas/templates/nav.html"
+-'  3  90  ~/hateoas/templates/nav.html
+|4,39,3,90,1713300568,"~/hateoas/templates/nav.html"
+-'  126  4  ~/hateoas/hateoas-api.py
+|4,39,126,4,1713300524,"~/hateoas/hateoas-api.py"
+-'  126  4  ~/hateoas/hateoas-api.py
+|4,39,126,4,1713300524,"~/hateoas/hateoas-api.py"
+-'  1  0  ~/hateoas/hateoas-api.py
+|4,39,1,0,1713300511,"~/hateoas/hateoas-api.py"
+-'  1  0  ~/hateoas/hateoas-api.py
+|4,39,1,0,1713300511,"~/hateoas/hateoas-api.py"
+-'  46  0  ~/hateoas/create-databases.py
+|4,39,46,0,1713300502,"~/hateoas/create-databases.py"
+-'  46  0  ~/hateoas/create-databases.py
+|4,39,46,0,1713300502,"~/hateoas/create-databases.py"
+-'  38  98  ~/hateoas/create-databases.py
+|4,39,38,98,1713300481,"~/hateoas/create-databases.py"
+-'  38  98  ~/hateoas/create-databases.py
+|4,39,38,98,1713300481,"~/hateoas/create-databases.py"
+-'  38  98  ~/hateoas/create-databases.py
+|4,39,38,98,1713300481,"~/hateoas/create-databases.py"
+-'  38  98  ~/hateoas/create-databases.py
+|4,39,38,98,1713300481,"~/hateoas/create-databases.py"
+-'  31  12  ~/hateoas/create-databases.py
+|4,39,31,12,1713300467,"~/hateoas/create-databases.py"
+-'  31  12  ~/hateoas/create-databases.py
+|4,39,31,12,1713300467,"~/hateoas/create-databases.py"
+-'  31  12  ~/hateoas/create-databases.py
+|4,39,31,12,1713300467,"~/hateoas/create-databases.py"
+-'  31  12  ~/hateoas/create-databases.py
+|4,39,31,12,1713300467,"~/hateoas/create-databases.py"
+-'  33  12  ~/hateoas/create-databases.py
+|4,39,33,12,1713300452,"~/hateoas/create-databases.py"
+-'  33  12  ~/hateoas/create-databases.py
+|4,39,33,12,1713300452,"~/hateoas/create-databases.py"
+-'  33  12  ~/hateoas/create-databases.py
+|4,39,33,12,1713300452,"~/hateoas/create-databases.py"
+-'  33  12  ~/hateoas/create-databases.py
+|4,39,33,12,1713300452,"~/hateoas/create-databases.py"
+-'  34  20  ~/hateoas/create-databases.py
+|4,39,34,20,1713300413,"~/hateoas/create-databases.py"
+-'  34  20  ~/hateoas/create-databases.py
+|4,39,34,20,1713300413,"~/hateoas/create-databases.py"
+-'  34  20  ~/hateoas/create-databases.py
+|4,39,34,20,1713300413,"~/hateoas/create-databases.py"
+-'  34  20  ~/hateoas/create-databases.py
+|4,39,34,20,1713300413,"~/hateoas/create-databases.py"
+-'  28  24  ~/hateoas/create-databases.py
+|4,39,28,24,1713300297,"~/hateoas/create-databases.py"
+-'  28  24  ~/hateoas/create-databases.py
+|4,39,28,24,1713300297,"~/hateoas/create-databases.py"
+-'  28  24  ~/hateoas/create-databases.py
+|4,39,28,24,1713300297,"~/hateoas/create-databases.py"
+-'  28  24  ~/hateoas/create-databases.py
+|4,39,28,24,1713300297,"~/hateoas/create-databases.py"
+-'  29  0  ~/hateoas/create-databases.py
+|4,39,29,0,1713300268,"~/hateoas/create-databases.py"
+-'  29  0  ~/hateoas/create-databases.py
+|4,39,29,0,1713300268,"~/hateoas/create-databases.py"
+-'  29  0  ~/hateoas/create-databases.py
+|4,39,29,0,1713300268,"~/hateoas/create-databases.py"
+-'  29  0  ~/hateoas/create-databases.py
+|4,39,29,0,1713300268,"~/hateoas/create-databases.py"
+-'  39  8  ~/hateoas/create-databases.py
+|4,39,39,8,1713300197,"~/hateoas/create-databases.py"
+-'  39  8  ~/hateoas/create-databases.py
+|4,39,39,8,1713300197,"~/hateoas/create-databases.py"
+-'  39  8  ~/hateoas/create-databases.py
+|4,39,39,8,1713300197,"~/hateoas/create-databases.py"
+-'  39  8  ~/hateoas/create-databases.py
+|4,39,39,8,1713300197,"~/hateoas/create-databases.py"
+-'  48  0  ~/hateoas/create-databases.py
+|4,39,48,0,1713297249,"~/hateoas/create-databases.py"
+-'  48  0  ~/hateoas/create-databases.py
+|4,39,48,0,1713297249,"~/hateoas/create-databases.py"
+-'  48  0  ~/hateoas/create-databases.py
+|4,39,48,0,1713297249,"~/hateoas/create-databases.py"
+-'  48  0  ~/hateoas/create-databases.py
+|4,39,48,0,1713297249,"~/hateoas/create-databases.py"
 -'  46  0  ~/hateoas/create-databases.py
 |4,39,46,0,1713297249,"~/hateoas/create-databases.py"
 -'  44  106  ~/hateoas/create-databases.py
 |4,39,44,106,1713297178,"~/hateoas/create-databases.py"
+-'  44  106  ~/hateoas/create-databases.py
+|4,39,44,106,1713297178,"~/hateoas/create-databases.py"
+-'  44  106  ~/hateoas/create-databases.py
+|4,39,44,106,1713297178,"~/hateoas/create-databases.py"
+-'  44  106  ~/hateoas/create-databases.py
+|4,39,44,106,1713297178,"~/hateoas/create-databases.py"
 -'  6  22  ~/hateoas/create-databases.py
 |4,39,6,22,1713297152,"~/hateoas/create-databases.py"
--'  33  33  ~/hateoas/create-databases.py
-|4,39,33,33,1713297147,"~/hateoas/create-databases.py"
--'  36  4  ~/hateoas/create-databases.py
-|4,39,36,4,1713297094,"~/hateoas/create-databases.py"
--'  27  0  ~/hateoas/create-databases.py
-|4,39,27,0,1713297083,"~/hateoas/create-databases.py"
--'  14  0  ~/hateoas/main.sql
-|4,39,14,0,1713297082,"~/hateoas/main.sql"
--'  29  15  ~/hateoas/main.sql
-|4,39,29,15,1713297023,"~/hateoas/main.sql"
--'  28  0  ~/hateoas/main.sql
-|4,39,28,0,1713297019,"~/hateoas/main.sql"
--'  1  17  ~/hateoas/main.sql
-|4,39,1,17,1713297018,"~/hateoas/main.sql"
--'  22  0  ~/hateoas/create-databases.py
-|4,39,22,0,1713297013,"~/hateoas/create-databases.py"
--'  34  22  ~/hateoas/create-databases.py
-|4,39,34,22,1713296988,"~/hateoas/create-databases.py"
--'  13  20  ~/hateoas/create-databases.py
-|4,39,13,20,1713296897,"~/hateoas/create-databases.py"
--'  35  60  ~/hateoas/create-databases.py
-|4,39,35,60,1713296869,"~/hateoas/create-databases.py"
--'  43  8  ~/hateoas/create-databases.py
-|4,39,43,8,1713296856,"~/hateoas/create-databases.py"
--'  29  0  ~/hateoas/create-databases.py
-|4,39,29,0,1713296835,"~/hateoas/create-databases.py"
--'  47  8  ~/hateoas/create-databases.py
-|4,39,47,8,1713296789,"~/hateoas/create-databases.py"
--'  14  30  ~/hateoas/create-databases.py
-|4,39,14,30,1713296783,"~/hateoas/create-databases.py"
--'  31  21  ~/hateoas/create-databases.py
-|4,39,31,21,1713296414,"~/hateoas/create-databases.py"
--'  1  0  ~/hateoas/create-databases.py
-|4,39,1,0,1713296194,"~/hateoas/create-databases.py"
--'  1  0  ~/hateoas/create-databases.py
-|4,39,1,0,1713296188,"~/hateoas/create-databases.py"
--'  27  26  ~/hateoas/create-databases.py
-|4,39,27,26,1713296186,"~/hateoas/create-databases.py"
--'  27  26  ~/hateoas/create-databases.py
-|4,39,27,26,1713296186,"~/hateoas/create-databases.py"
--'  27  8  ~/hateoas/create-databases.py
-|4,39,27,8,1713296172,"~/hateoas/create-databases.py"
--'  28  21  ~/hateoas/create-databases.py
-|4,39,28,21,1713296164,"~/hateoas/create-databases.py"
--'  28  21  ~/hateoas/create-databases.py
-|4,39,28,21,1713296164,"~/hateoas/create-databases.py"
--'  28  21  ~/hateoas/create-databases.py
-|4,39,28,21,1713296164,"~/hateoas/create-databases.py"
--'  25  13  ~/hateoas/create-databases.py
-|4,39,25,13,1713296156,"~/hateoas/create-databases.py"
--'  25  13  ~/hateoas/create-databases.py
-|4,39,25,13,1713296156,"~/hateoas/create-databases.py"
--'  25  13  ~/hateoas/create-databases.py
-|4,39,25,13,1713296156,"~/hateoas/create-databases.py"
--'  24  4  ~/hateoas/create-databases.py
-|4,39,24,4,1713296146,"~/hateoas/create-databases.py"
--'  24  4  ~/hateoas/create-databases.py
-|4,39,24,4,1713296146,"~/hateoas/create-databases.py"
--'  24  4  ~/hateoas/create-databases.py
-|4,39,24,4,1713296146,"~/hateoas/create-databases.py"
--'  7  0  ~/hateoas/create-databases.py
-|4,39,7,0,1713296138,"~/hateoas/create-databases.py"
--'  5  0  ~/hateoas/create-databases.py
-|4,39,5,0,1713296138,"~/hateoas/create-databases.py"
--'  5  0  ~/hateoas/create-databases.py
-|4,39,5,0,1713296138,"~/hateoas/create-databases.py"
--'  5  0  ~/hateoas/create-databases.py
-|4,39,5,0,1713296138,"~/hateoas/create-databases.py"
--'  4  29  ~/hateoas/create-databases.py
-|4,39,4,29,1713296137,"~/hateoas/create-databases.py"
--'  4  29  ~/hateoas/create-databases.py
-|4,39,4,29,1713296137,"~/hateoas/create-databases.py"
--'  4  29  ~/hateoas/create-databases.py
-|4,39,4,29,1713296137,"~/hateoas/create-databases.py"
--'  4  29  ~/hateoas/create-databases.py
-|4,39,4,29,1713296137,"~/hateoas/create-databases.py"
--'  9  0  ~/hateoas/main.sql
-|4,39,9,0,1713296108,"~/hateoas/main.sql"
--'  8  0  ~/hateoas/main.sql
-|4,39,8,0,1713296108,"~/hateoas/main.sql"
--'  8  0  ~/hateoas/main.sql
-|4,39,8,0,1713296108,"~/hateoas/main.sql"
--'  8  0  ~/hateoas/main.sql
-|4,39,8,0,1713296108,"~/hateoas/main.sql"
--'  1  0  ~/hateoas/create-databases.py
-|4,39,1,0,1713296099,"~/hateoas/create-databases.py"
--'  1  0  ~/hateoas/create-databases.py
-|4,39,1,0,1713296099,"~/hateoas/create-databases.py"
--'  126  4  ~/hateoas/hateoas-api.py
-|4,39,126,4,1713296065,"~/hateoas/hateoas-api.py"
--'  126  4  ~/hateoas/hateoas-api.py
-|4,39,126,4,1713296065,"~/hateoas/hateoas-api.py"
--'  126  4  ~/hateoas/hateoas-api.py
-|4,39,126,4,1713296065,"~/hateoas/hateoas-api.py"
--'  126  4  ~/hateoas/hateoas-api.py
-|4,39,126,4,1713296065,"~/hateoas/hateoas-api.py"
--'  126  4  ~/hateoas/hateoas-api.py
-|4,39,126,4,1713296065,"~/hateoas/hateoas-api.py"
--'  16  3  ~/hateoas/hateoas-api.py
-|4,39,16,3,1713296048,"~/hateoas/hateoas-api.py"
--'  16  3  ~/hateoas/hateoas-api.py
-|4,39,16,3,1713296048,"~/hateoas/hateoas-api.py"
--'  16  3  ~/hateoas/hateoas-api.py
-|4,39,16,3,1713296048,"~/hateoas/hateoas-api.py"
--'  16  3  ~/hateoas/hateoas-api.py
-|4,39,16,3,1713296048,"~/hateoas/hateoas-api.py"
--'  16  3  ~/hateoas/hateoas-api.py
-|4,39,16,3,1713296048,"~/hateoas/hateoas-api.py"
--'  1  0  ~/hateoas/main.sql
-|4,39,1,0,1713296025,"~/hateoas/main.sql"
--'  1  0  ~/hateoas/main.sql
-|4,39,1,0,1713296025,"~/hateoas/main.sql"
--'  1  0  ~/hateoas/main.sql
-|4,39,1,0,1713296025,"~/hateoas/main.sql"
--'  1  0  ~/hateoas/main.sql
-|4,39,1,0,1713296025,"~/hateoas/main.sql"
--'  17  0  ~/hateoas/hateoas-api.py
-|4,39,17,0,1713295979,"~/hateoas/hateoas-api.py"
--'  17  0  ~/hateoas/hateoas-api.py
-|4,39,17,0,1713295979,"~/hateoas/hateoas-api.py"
--'  17  0  ~/hateoas/hateoas-api.py
-|4,39,17,0,1713295979,"~/hateoas/hateoas-api.py"
--'  17  0  ~/hateoas/hateoas-api.py
-|4,39,17,0,1713295979,"~/hateoas/hateoas-api.py"
--'  14  27  ~/hateoas/static/css/hateoas.css
-|4,39,14,27,1713295880,"~/hateoas/static/css/hateoas.css"
--'  14  27  ~/hateoas/static/css/hateoas.css
-|4,39,14,27,1713295880,"~/hateoas/static/css/hateoas.css"
--'  14  27  ~/hateoas/static/css/hateoas.css
-|4,39,14,27,1713295880,"~/hateoas/static/css/hateoas.css"
--'  14  27  ~/hateoas/static/css/hateoas.css
-|4,39,14,27,1713295880,"~/hateoas/static/css/hateoas.css"
--'  94  87  ~/hateoas/hateoas-api.py
-|4,39,94,87,1713295779,"~/hateoas/hateoas-api.py"
--'  94  87  ~/hateoas/hateoas-api.py
-|4,39,94,87,1713295779,"~/hateoas/hateoas-api.py"
--'  94  87  ~/hateoas/hateoas-api.py
-|4,39,94,87,1713295779,"~/hateoas/hateoas-api.py"
--'  94  87  ~/hateoas/hateoas-api.py
-|4,39,94,87,1713295779,"~/hateoas/hateoas-api.py"
--'  75  40  ~/hateoas/hateoas-api.py
-|4,39,75,40,1713295696,"~/hateoas/hateoas-api.py"
--'  75  40  ~/hateoas/hateoas-api.py
-|4,39,75,40,1713295696,"~/hateoas/hateoas-api.py"
--'  75  40  ~/hateoas/hateoas-api.py
-|4,39,75,40,1713295696,"~/hateoas/hateoas-api.py"
--'  75  40  ~/hateoas/hateoas-api.py
-|4,39,75,40,1713295696,"~/hateoas/hateoas-api.py"
--'  93  29  ~/hateoas/hateoas-api.py
-|4,39,93,29,1713295673,"~/hateoas/hateoas-api.py"
--'  93  29  ~/hateoas/hateoas-api.py
-|4,39,93,29,1713295673,"~/hateoas/hateoas-api.py"
--'  93  29  ~/hateoas/hateoas-api.py
-|4,39,93,29,1713295673,"~/hateoas/hateoas-api.py"
--'  93  29  ~/hateoas/hateoas-api.py
-|4,39,93,29,1713295673,"~/hateoas/hateoas-api.py"
--'  106  29  ~/hateoas/hateoas-api.py
-|4,39,106,29,1713295573,"~/hateoas/hateoas-api.py"
--'  106  29  ~/hateoas/hateoas-api.py
-|4,39,106,29,1713295573,"~/hateoas/hateoas-api.py"
--'  106  29  ~/hateoas/hateoas-api.py
-|4,39,106,29,1713295573,"~/hateoas/hateoas-api.py"
--'  106  29  ~/hateoas/hateoas-api.py
-|4,39,106,29,1713295573,"~/hateoas/hateoas-api.py"
--'  35  23  ~/hateoas/hateoas-api.py
-|4,39,35,23,1713295524,"~/hateoas/hateoas-api.py"
--'  35  23  ~/hateoas/hateoas-api.py
-|4,39,35,23,1713295524,"~/hateoas/hateoas-api.py"
--'  35  23  ~/hateoas/hateoas-api.py
-|4,39,35,23,1713295524,"~/hateoas/hateoas-api.py"
--'  35  23  ~/hateoas/hateoas-api.py
-|4,39,35,23,1713295524,"~/hateoas/hateoas-api.py"
--'  34  53  ~/hateoas/hateoas-api.py
-|4,39,34,53,1713295523,"~/hateoas/hateoas-api.py"
--'  34  53  ~/hateoas/hateoas-api.py
-|4,39,34,53,1713295523,"~/hateoas/hateoas-api.py"
--'  34  53  ~/hateoas/hateoas-api.py
-|4,39,34,53,1713295523,"~/hateoas/hateoas-api.py"
--'  34  53  ~/hateoas/hateoas-api.py
-|4,39,34,53,1713295523,"~/hateoas/hateoas-api.py"
--'  98  16  ~/hateoas/hateoas-api.py
-|4,39,98,16,1713295378,"~/hateoas/hateoas-api.py"
--'  98  16  ~/hateoas/hateoas-api.py
-|4,39,98,16,1713295378,"~/hateoas/hateoas-api.py"
--'  98  16  ~/hateoas/hateoas-api.py
-|4,39,98,16,1713295378,"~/hateoas/hateoas-api.py"
--'  98  16  ~/hateoas/hateoas-api.py
-|4,39,98,16,1713295378,"~/hateoas/hateoas-api.py"
--'  100  0  ~/hateoas/hateoas-api.py
-|4,39,100,0,1713295331,"~/hateoas/hateoas-api.py"
--'  100  0  ~/hateoas/hateoas-api.py
-|4,39,100,0,1713295331,"~/hateoas/hateoas-api.py"
+-'  6  22  ~/hateoas/create-databases.py
+|4,39,6,22,1713297152,"~/hateoas/create-databases.py"
+-'  6  22  ~/hateoas/create-databases.py
+|4,39,6,22,1713297152,"~/hateoas/create-databases.py"
 
 # Buffer list:
-%~/hateoas/create-databases.py	46	0
-%~/hateoas/main.sql	14	0
+%~/hateoas/hateoas-api.py	257	152
+%~/hateoas/static/css/hateoas.css	16	21
 
 # History of marks within files (newest to oldest):
 
-> ~/hateoas/create-databases.py
-	*	1713297248	0
-	"	46	0
-	^	45	11
-	.	45	10
-	+	28	0
-	+	3	13
-	+	9	83
-	+	23	8
-	+	25	17
-	+	24	12
-	+	26	30
-	+	28	16
-	+	26	37
-	+	28	0
-	+	23	0
-	+	47	0
-	+	28	13
-	+	29	39
-	+	29	4
-	+	47	4
-	+	31	60
-	+	31	48
-	+	31	54
-	+	47	0
-	+	21	13
-	+	28	0
-	+	31	0
+> ~/hateoas/hateoas-api.py
+	*	1713304175	0
+	"	257	152
+	^	257	153
+	.	257	152
+	+	209	4
+	+	267	11
+	+	268	37
+	+	269	0
+	+	260	0
+	+	259	33
+	+	203	0
+	+	202	49
+	+	202	0
+	+	182	98
+	+	182	51
+	+	182	62
+	+	182	75
+	+	182	87
+	+	182	93
+	+	202	0
+	+	183	22
+	+	182	20
+	+	201	0
+	+	185	49
+	+	186	32
+	+	187	31
+	+	188	4
+	+	191	18
+	+	192	8
+	+	254	0
+	+	212	35
+	+	199	14
+	+	268	49
+	+	213	25
+	+	215	12
+	+	216	68
+	+	217	82
+	+	218	78
+	+	219	76
+	+	220	57
+	+	221	23
+	+	222	18
+	+	223	17
+	+	229	83
+	+	237	83
+	+	247	18
+	+	251	17
+	+	251	16
+	+	251	18
+	+	251	14
+	+	252	8
+	+	214	25
+	+	213	27
+	+	224	18
+	+	242	17
+	+	224	50
+	+	225	34
+	+	226	26
+	+	227	67
+	+	228	16
+	+	242	49
+	+	243	16
+	+	245	16
+	+	229	43
+	+	230	83
+	+	231	26
+	+	232	33
+	+	233	16
+	+	237	43
+	+	238	83
+	+	239	26
+	+	240	33
+	+	241	16
+	+	251	16
+	+	236	0
+	+	235	15
+	+	251	0
+	+	247	0
+	+	249	61
+	+	250	0
+	+	225	34
+	+	232	34
+	+	235	34
+	+	240	34
+	+	243	34
+	+	235	21
+	+	259	15
+	+	259	0
+	+	257	60
+	+	258	31
+	+	257	103
+	+	161	0
+	+	159	5
+	+	18	24
+	+	19	30
+	+	20	26
+	+	21	4
+	+	20	10
+	+	22	31
+	+	257	59
+	+	24	30
+	+	25	18
+	+	28	29
+	+	257	152
+	a	111	34
+	b	111	34
+
+> ~/hateoas/static/css/hateoas.css
+	*	1713303711	0
+	"	16	21
+	^	16	22
+	.	16	5
+	+	2	48
+	+	3	45
+	+	4	50
+	+	11	39
+	+	8	0
+	+	9	36
+	+	10	0
+	+	12	40
+	+	5	45
+	+	6	8
 	+	4	29
-	+	31	0
-	+	31	32
-	+	47	0
-	+	31	13
-	+	47	39
-	+	47	0
-	+	42	19
-	+	47	26
-	+	47	17
+	+	2	49
+	+	3	44
+	+	9	34
+	+	13	59
+	+	15	12
+	+	4	43
+	+	19	83
+	+	19	0
+	+	19	94
+	+	18	10
+	+	17	0
+	+	18	60
+	+	19	57
+	+	18	47
+	+	18	86
+	+	19	83
+	+	2	54
+	+	3	51
+	+	20	127
+	+	20	89
+	+	4	0
+	+	9	37
+	+	13	17
+	+	14	27
+	+	16	5
+
+> ~/hateoas/templates/nav.html
+	*	1713303243	0
+	"	3	110
+	^	3	110
+	.	4	0
+	+	2	0
+	+	3	16
+	+	10	0
+	+	3	0
+	+	7	8
+	+	9	0
 	+	7	0
-	+	42	0
+	+	9	0
+	+	2	16
+	+	6	8
+	+	8	0
+	+	3	0
+	+	1	0
+	+	3	125
+	+	4	0
+	+	1	0
+	+	3	110
+	+	4	0
+
+> ~/hateoas/create-databases.py
+	*	1713300625	0
+	"	46	4
+	.	46	0
+	+	34	48
+	+	34	54
+	+	49	0
+	+	21	13
+	+	34	0
+	+	4	29
+	+	34	0
+	+	34	32
+	+	49	0
+	+	34	13
+	+	49	39
+	+	49	0
+	+	44	19
+	+	49	26
+	+	49	17
+	+	7	0
+	+	44	0
 	+	7	27
-	+	31	0
-	+	31	9
+	+	34	0
+	+	34	9
 	+	7	0
-	+	42	0
-	+	47	35
-	+	47	11
-	+	47	0
-	+	47	8
-	+	47	23
-	+	47	16
-	+	47	20
-	+	47	0
-	+	47	19
-	+	47	38
-	+	47	16
-	+	47	60
-	+	47	0
-	+	47	16
-	+	47	17
-	+	47	16
-	+	47	0
-	+	47	22
-	+	47	0
-	+	31	0
+	+	44	0
+	+	49	35
+	+	49	11
+	+	49	0
+	+	49	8
+	+	49	23
+	+	49	16
+	+	49	20
+	+	49	0
+	+	49	19
+	+	49	38
+	+	49	16
+	+	49	60
+	+	49	0
+	+	49	16
+	+	49	17
+	+	49	16
+	+	49	0
+	+	49	22
+	+	49	0
+	+	34	0
 	+	11	31
 	+	12	4
-	+	43	0
-	+	33	9
-	+	34	6
-	+	31	0
-	+	40	0
-	+	34	9
-	+	39	0
-	+	31	0
-	+	29	0
-	+	43	0
-	+	35	60
+	+	45	0
+	+	36	9
+	+	37	6
+	+	34	0
+	+	42	0
+	+	37	9
+	+	41	0
+	+	34	0
+	+	45	0
+	+	38	60
 	+	16	17
-	+	32	10
-	+	33	18
-	+	36	14
-	+	46	0
-	+	35	19
-	+	36	19
-	+	30	16
-	+	44	4
+	+	35	10
+	+	36	18
+	+	39	14
+	+	48	0
+	+	38	19
+	+	39	19
+	+	34	16
+	+	46	4
 	+	6	22
-	+	44	30
-	+	35	0
-	+	37	14
-	+	45	10
+	+	46	30
+	+	38	0
+	+	39	14
+	+	47	10
+	+	38	32
+	+	39	0
+	+	28	85
+	+	28	56
+	+	34	0
+	+	29	0
+	+	34	0
+	+	31	11
+	+	29	0
+	+	28	11
+	+	28	28
+	+	28	12
+	+	28	103
+	+	28	101
+	+	31	40
+	+	34	12
+	+	38	35
+	+	46	32
+	+	34	23
+	+	31	32
+	+	34	20
+	+	31	94
+	+	34	0
+	+	31	96
+	+	33	12
+	+	32	37
+	+	31	12
+	+	38	98
+	+	46	0
 
 > ~/hateoas/main.sql
 	*	1713297081	0
@@ -7246,153 +7419,6 @@ $
 	+	15	10
 	+	15	0
 
-> ~/hateoas/hateoas-api.py
-	*	1713296056	0
-	"	126	4
-	.	126	0
-	+	79	21
-	+	80	13
-	+	81	25
-	+	79	0
-	+	121	11
-	+	122	0
-	+	122	18
-	+	123	0
-	+	122	18
-	+	125	7
-	+	23	21
-	+	81	55
-	+	91	37
-	+	91	48
-	+	75	0
-	+	91	29
-	+	137	11
-	+	91	0
-	+	137	0
-	+	137	58
-	+	137	0
-	+	90	32
-	+	91	0
-	+	136	11
-	+	137	0
-	+	137	46
-	+	137	0
-	+	91	0
-	+	90	0
-	+	23	19
-	+	91	34
-	+	92	8
-	+	102	14
-	+	103	20
-	+	121	0
-	+	32	0
-	+	92	27
-	+	98	91
-	+	102	0
-	+	99	57
-	+	100	0
-	+	35	10
-	+	34	43
-	+	39	19
-	+	101	0
-	+	42	10
-	+	41	23
-	+	42	20
-	+	43	37
-	+	44	43
-	+	49	0
-	+	44	49
-	+	45	32
-	+	46	4
-	+	47	4
-	+	48	4
-	+	121	70
-	+	121	12
-	+	121	8
-	+	121	0
-	+	109	0
-	+	110	13
-	+	109	27
-	+	110	34
-	+	112	0
-	+	116	0
-	+	111	85
-	+	43	32
-	+	46	82
-	+	86	0
-	+	113	67
-	+	98	0
-	+	98	19
-	+	101	18
-	+	101	0
-	+	98	0
-	+	34	53
-	+	104	30
-	+	105	8
-	+	107	8
-	+	106	12
-	+	105	23
-	+	108	9
-	+	95	17
-	+	93	28
-	+	95	0
-	+	94	49
-	+	75	0
-	+	50	47
-	+	51	8
-	+	94	76
-	+	16	16
-	+	16	100
-	+	16	4
-	+	17	0
-	+	16	0
-	+	16	79
-	+	16	0
-	+	126	0
-	a	110	34
-	b	110	34
-
-> ~/hateoas/static/css/hateoas.css
-	*	1713295793	0
-	"	14	27
-	^	14	28
-	.	14	27
-	+	2	48
-	+	3	45
-	+	4	50
-	+	11	39
-	+	8	0
-	+	9	36
-	+	10	0
-	+	12	40
-	+	5	45
-	+	6	8
-	+	4	29
-	+	2	49
-	+	3	44
-	+	9	34
-	+	13	59
-	+	15	12
-	+	4	43
-	+	18	83
-	+	18	0
-	+	18	94
-	+	17	10
-	+	16	0
-	+	17	60
-	+	18	57
-	+	17	47
-	+	17	86
-	+	18	83
-	+	2	54
-	+	3	51
-	+	19	127
-	+	19	89
-	+	4	0
-	+	9	37
-	+	13	17
-	+	14	27
-
 > ~/hateoas/.gitignore
 	*	1713289991	0
 	"	3	11
@@ -7401,25 +7427,6 @@ $
 	+	1	7
 	+	2	8
 	+	3	3
-
-> ~/hateoas/templates/nav.html
-	*	1713288705	0
-	"	1	0
-	^	1	0
-	.	1	0
-	+	2	0
-	+	3	16
-	+	10	0
-	+	3	0
-	+	7	8
-	+	9	0
-	+	7	0
-	+	9	0
-	+	2	16
-	+	6	8
-	+	8	0
-	+	3	0
-	+	1	0
 
 > ~/hateoas/templates/elements.html
 	*	1713288494	0
