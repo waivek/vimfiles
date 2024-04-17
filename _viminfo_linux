@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/\C\<sqlite3\>
+~MSle0~/\C\<portion_video\>
 
 # Last Substitute Search Pattern:
 ~MSle0&"
@@ -20,6 +20,16 @@
 $
 
 # Command Line History (newest to oldest):
+:qa
+|2,0,1713357400,,"qa"
+:e main.sql
+|2,0,1713355898,,"e main.sql"
+:Copilot status
+|2,0,1713355662,,"Copilot status"
+:Jprevious
+|2,0,1713355629,,"Jprevious"
+:MRU 
+|2,0,1713355625,,"MRU "
 :q
 |2,0,1713347403,,"q"
 :e
@@ -42,16 +52,12 @@ $
 |2,0,1713346047,,"e Flask_Cors-4.0.0.dist-info/"
 :e _sqlite3.cpython-310-x86_64-linux-gnu.so
 |2,0,1713346035,,"e _sqlite3.cpython-310-x86_64-linux-gnu.so"
-:Jprevious
-|2,0,1713342938,,"Jprevious"
 :PlugInstall
 |2,0,1713342925,,"PlugInstall"
 :so %
 |2,0,1713342923,,"so %"
 :edit $MYVIMRC
 |2,0,1713342907,,"edit $MYVIMRC"
-:e main.sql
-|2,0,1713342350,,"e main.sql"
 :b css
 |2,0,1713310193,,"b css"
 :MRU ha
@@ -62,8 +68,6 @@ $
 |2,0,1713307653,,";wkkkkk"
 :set nonumber
 |2,0,1713304469,,"set nonumber"
-:qa
-|2,0,1713304284,,"qa"
 :MRU css
 |2,0,1713303703,,"MRU css"
 :b nav
@@ -178,8 +182,6 @@ $
 |2,0,1712951906,,"CocInf"
 :MRU sql
 |2,0,1712951902,,"MRU sql"
-:MRU 
-|2,0,1712951872,,"MRU "
 :CocStatus
 |2,0,1712951772,,"CocStatus"
 :CocStart
@@ -400,8 +402,6 @@ $
 |2,0,1712365064,,"e create_databases.py"
 :'<,'>e 
 |2,0,1712364942,,"'<,'>e "
-:Copilot status
-|2,0,1712364825,,"Copilot status"
 :e endpoints.sql
 |2,0,1712356154,,"e endpoints.sql"
 :MRU 19:sql_checklist.txt
@@ -4782,6 +4782,10 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/View Portion
+|2,1,1713356141,47,"View Portion"
+?/\(def\|class\)\s\+\w*url
+|2,1,1713355644,47,"\\(def\\|class\\)\\s\\+\\w*url"
 ?/pysqlite3
 |2,1,1713345988,47,"pysqlite3"
 ?/INSERT INTO
@@ -6814,39 +6818,40 @@ $
 |2,4,1693311567,,"cont"
 
 # Registers:
-"0	LINE	0
-	        cursor.f
-|3,0,0,1,1,0,1713346979,"        cursor.f"
-""1	LINE	0
-	# from pysqlite3 import dbapi2 as sqlite3
-|3,1,1,1,1,0,1713346998,"# from pysqlite3 import dbapi2 as sqlite3"
+""0	CHAR	0
+	extra['user_id']
+|3,1,0,0,1,0,1713356839,"extra['user_id']"
+"1	LINE	0
+	    from waivek import Timestamp
+|3,0,1,1,1,0,1713356609,"    from waivek import Timestamp"
 "2	LINE	0
-	        cursor.f
-|3,0,2,1,1,0,1713346969,"        cursor.f"
+	        rows = video_cursor.fetchall()
+|3,0,2,1,1,0,1713356327,"        rows = video_cursor.fetchall()"
 "3	LINE	0
-	connection.cu
-|3,0,3,1,1,0,1713346946,"connection.cu"
+	        length = video_cursor.
+|3,0,3,1,1,0,1713356320,"        length = video_cursor."
 "4	LINE	0
-	    conn = sqlite3.connect(path, check_same_thread=False) # type: ignore
-	    conn.row_factory = sqlite3.Row  # type: ignore
-|3,0,4,1,2,0,1713346881,"    conn = sqlite3.connect(path, check_same_thread=False) # type: ignore","    conn.row_factory = sqlite3.Row  # type: ignore"
-"5	LINE	0
-	    connection.cursor
-|3,0,5,1,1,0,1713346880,"    connection.cursor"
-"6	LINE	0
-	    connection = 
 	
-|3,0,6,1,2,0,1713346879,"    connection = ",""
+|3,0,4,1,1,0,1713356021,""
+"5	LINE	0
+	
+	
+|3,0,5,1,2,0,1713356020,"",""
+"6	LINE	0
+	
+	
+|3,0,6,1,2,0,1713356020,"",""
 "7	LINE	0
-	    # connection = sqlite3.connect(path, check_same_thread=False) # type: ignore
-	    # connection.row_factory = sqlite3.Row # type: ignore
-|3,0,7,1,2,0,1713346842,"    # connection = sqlite3.connect(path, check_same_thread=False) # type: ignore","    # connection.row_factory = sqlite3.Row # type: ignore"
+	
+	
+|3,0,7,1,2,0,1713356019,"",""
 "8	LINE	0
-	    connection = typing.cast(sq3.Connection, conn)
-|3,0,8,1,1,0,1713346838,"    connection = typing.cast(sq3.Connection, conn)"
+	        
+	
+|3,0,8,1,2,0,1713356019,"        ",""
 "9	LINE	0
-	    connection.row_factory = sqlite3.Row  # type: ignore
-|3,0,9,1,1,0,1713346836,"    connection.row_factory = sqlite3.Row  # type: ignore"
+	
+|3,0,9,1,1,0,1713356018,""
 "a	CHAR	0
 	Tabularize /#/l1c1l1
 |3,0,10,0,1,0,1713346979,"Tabularize /#/l1c1l1"
@@ -6885,48 +6890,108 @@ $
 |<"                <form method=\"POST\" action=\"/resume_download\">","                    <input type=\"hidden\" name=\"id\" value=\"{{ id }}\">","                    <input type=\"submit\" value=\"Resume\">","                </form>","                {% endif %}","                {% if status == 'downloading' %}","                <form method=\"POST\" action=\"/pause_download\">","                    <input type=\"hidden\" name=\"id\" value=\"{{ id }}\">",>61
 |<"                    <input type=\"submit\" value=\"Pause\">","                </form>","                {% endif %}","","            </li>","        {% endfor %}","    </ul>\"\"\", downloads=downloads)"
 "-	CHAR	0
-	connection)
-|3,0,36,0,1,0,1713346889,"connection)"
+	extra['user_id']
+|3,0,36,0,1,0,1713356830,"extra['user_id']"
 
 # File marks:
-'0  8  4  ~/hateoas/dbutils.py
-|4,48,8,4,1713347403,"~/hateoas/dbutils.py"
-'1  8  5  ~/hateoas/hateoas-api.py
-|4,49,8,5,1713346919,"~/hateoas/hateoas-api.py"
-'2  8  5  ~/hateoas/hateoas-api.py
-|4,50,8,5,1713346919,"~/hateoas/hateoas-api.py"
-'3  84  19  ~/hateoas/hateoas-api.py
-|4,51,84,19,1713343018,"~/hateoas/hateoas-api.py"
-'4  67  19  ~/hateoas/hateoas-api.py
-|4,52,67,19,1713343018,"~/hateoas/hateoas-api.py"
-'5  84  19  ~/hateoas/hateoas-api.py
-|4,53,84,19,1713343018,"~/hateoas/hateoas-api.py"
-'6  67  19  ~/hateoas/hateoas-api.py
-|4,54,67,19,1713343018,"~/hateoas/hateoas-api.py"
-'7  84  19  ~/hateoas/hateoas-api.py
-|4,55,84,19,1713343018,"~/hateoas/hateoas-api.py"
-'8  67  19  ~/hateoas/hateoas-api.py
-|4,56,67,19,1713343018,"~/hateoas/hateoas-api.py"
-'9  84  19  ~/hateoas/hateoas-api.py
-|4,57,84,19,1713343018,"~/hateoas/hateoas-api.py"
+'0  136  98  ~/hateoas/hateoas-api.py
+|4,48,136,98,1713357401,"~/hateoas/hateoas-api.py"
+'1  8  4  ~/hateoas/dbutils.py
+|4,49,8,4,1713347403,"~/hateoas/dbutils.py"
+'2  8  4  ~/hateoas/dbutils.py
+|4,50,8,4,1713347403,"~/hateoas/dbutils.py"
+'3  8  5  ~/hateoas/hateoas-api.py
+|4,51,8,5,1713346919,"~/hateoas/hateoas-api.py"
+'4  8  5  ~/hateoas/hateoas-api.py
+|4,52,8,5,1713346919,"~/hateoas/hateoas-api.py"
+'5  8  5  ~/hateoas/hateoas-api.py
+|4,53,8,5,1713346919,"~/hateoas/hateoas-api.py"
+'6  8  5  ~/hateoas/hateoas-api.py
+|4,54,8,5,1713346919,"~/hateoas/hateoas-api.py"
+'7  106  19  ~/hateoas/hateoas-api.py
+|4,55,106,19,1713343018,"~/hateoas/hateoas-api.py"
+'8  88  19  ~/hateoas/hateoas-api.py
+|4,56,88,19,1713343018,"~/hateoas/hateoas-api.py"
+'9  106  19  ~/hateoas/hateoas-api.py
+|4,57,106,19,1713343018,"~/hateoas/hateoas-api.py"
 
 # Jumplist (newest first):
+-'  136  98  ~/hateoas/hateoas-api.py
+|4,39,136,98,1713357401,"~/hateoas/hateoas-api.py"
+-'  129  227  ~/hateoas/hateoas-api.py
+|4,39,129,227,1713356691,"~/hateoas/hateoas-api.py"
+-'  159  116  ~/hateoas/hateoas-api.py
+|4,39,159,116,1713356688,"~/hateoas/hateoas-api.py"
+-'  116  23  ~/hateoas/hateoas-api.py
+|4,39,116,23,1713356619,"~/hateoas/hateoas-api.py"
+-'  115  33  ~/hateoas/hateoas-api.py
+|4,39,115,33,1713356612,"~/hateoas/hateoas-api.py"
+-'  96  4  ~/hateoas/hateoas-api.py
+|4,39,96,4,1713356469,"~/hateoas/hateoas-api.py"
+-'  73  34  ~/hateoas/hateoas-api.py
+|4,39,73,34,1713356461,"~/hateoas/hateoas-api.py"
+-'  58  41  ~/hateoas/hateoas-api.py
+|4,39,58,41,1713356460,"~/hateoas/hateoas-api.py"
+-'  57  4  ~/hateoas/hateoas-api.py
+|4,39,57,4,1713356460,"~/hateoas/hateoas-api.py"
+-'  71  80  ~/hateoas/hateoas-api.py
+|4,39,71,80,1713356402,"~/hateoas/hateoas-api.py"
+-'  74  27  ~/hateoas/hateoas-api.py
+|4,39,74,27,1713356394,"~/hateoas/hateoas-api.py"
+-'  128  29  ~/hateoas/hateoas-api.py
+|4,39,128,29,1713356210,"~/hateoas/hateoas-api.py"
+-'  158  10  ~/hateoas/hateoas-api.py
+|4,39,158,10,1713356189,"~/hateoas/hateoas-api.py"
+-'  112  4  ~/hateoas/hateoas-api.py
+|4,39,112,4,1713356141,"~/hateoas/hateoas-api.py"
+-'  77  0  ~/hateoas/hateoas-api.py
+|4,39,77,0,1713355967,"~/hateoas/hateoas-api.py"
+-'  1  0  ~/hateoas/main.sql
+|4,39,1,0,1713355906,"~/hateoas/main.sql"
+-'  59  4  ~/hateoas/hateoas-api.py
+|4,39,59,4,1713355903,"~/hateoas/hateoas-api.py"
+-'  67  47  ~/hateoas/hateoas-api.py
+|4,39,67,47,1713355891,"~/hateoas/hateoas-api.py"
+-'  68  47  ~/hateoas/hateoas-api.py
+|4,39,68,47,1713355888,"~/hateoas/hateoas-api.py"
+-'  64  14  ~/hateoas/hateoas-api.py
+|4,39,64,14,1713355850,"~/hateoas/hateoas-api.py"
+-'  104  0  ~/hateoas/hateoas-api.py
+|4,39,104,0,1713355644,"~/hateoas/hateoas-api.py"
+-'  91  8  ~/hateoas/hateoas-api.py
+|4,39,91,8,1713355632,"~/hateoas/hateoas-api.py"
+-'  7  19  ~/hateoas/dbutils.py
+|4,39,7,19,1713355629,"~/hateoas/dbutils.py"
+-'  8  0  ~/hateoas/dbutils.py
+|4,39,8,0,1713355628,"~/hateoas/dbutils.py"
 -'  8  4  ~/hateoas/dbutils.py
 |4,39,8,4,1713347403,"~/hateoas/dbutils.py"
 -'  70  8  ~/hateoas/hateoas-api.py
 |4,39,70,8,1713347283,"~/hateoas/hateoas-api.py"
 -'  10  0  ~/hateoas/dbutils.py
 |4,39,10,0,1713346994,"~/hateoas/dbutils.py"
+-'  10  0  ~/hateoas/dbutils.py
+|4,39,10,0,1713346994,"~/hateoas/dbutils.py"
 -'  7  4  ~/hateoas/dbutils.py
 |4,39,7,4,1713346937,"~/hateoas/dbutils.py"
 -'  9  29  ~/hateoas/hateoas-api.py
 |4,39,9,29,1713346935,"~/hateoas/hateoas-api.py"
+-'  9  29  ~/hateoas/hateoas-api.py
+|4,39,9,29,1713346935,"~/hateoas/hateoas-api.py"
+-'  1  0  ~/hateoas/hateoas-api.py
+|4,39,1,0,1713346927,"~/hateoas/hateoas-api.py"
 -'  1  0  ~/hateoas/hateoas-api.py
 |4,39,1,0,1713346927,"~/hateoas/hateoas-api.py"
 -'  8  5  ~/hateoas/hateoas-api.py
 |4,39,8,5,1713346919,"~/hateoas/hateoas-api.py"
 -'  8  5  ~/hateoas/hateoas-api.py
 |4,39,8,5,1713346919,"~/hateoas/hateoas-api.py"
+-'  8  5  ~/hateoas/hateoas-api.py
+|4,39,8,5,1713346919,"~/hateoas/hateoas-api.py"
+-'  11  4  ~/hateoas/dbutils.py
+|4,39,11,4,1713346911,"~/hateoas/dbutils.py"
+-'  12  4  ~/hateoas/dbutils.py
+|4,39,12,4,1713346911,"~/hateoas/dbutils.py"
 -'  11  4  ~/hateoas/dbutils.py
 |4,39,11,4,1713346911,"~/hateoas/dbutils.py"
 -'  12  4  ~/hateoas/dbutils.py
@@ -7049,80 +7114,183 @@ $
 |4,39,67,0,1713345062,"~/hateoas/hateoas-api.py"
 -'  67  0  ~/hateoas/hateoas-api.py
 |4,39,67,0,1713345062,"~/hateoas/hateoas-api.py"
--'  67  0  ~/hateoas/hateoas-api.py
-|4,39,67,0,1713345062,"~/hateoas/hateoas-api.py"
--'  72  71  ~/hateoas/hateoas-api.py
-|4,39,72,71,1713344976,"~/hateoas/hateoas-api.py"
--'  72  71  ~/hateoas/hateoas-api.py
-|4,39,72,71,1713344976,"~/hateoas/hateoas-api.py"
--'  72  71  ~/hateoas/hateoas-api.py
-|4,39,72,71,1713344976,"~/hateoas/hateoas-api.py"
--'  70  20  ~/hateoas/hateoas-api.py
-|4,39,70,20,1713344950,"~/hateoas/hateoas-api.py"
--'  70  20  ~/hateoas/hateoas-api.py
-|4,39,70,20,1713344950,"~/hateoas/hateoas-api.py"
--'  85  24  ~/hateoas/hateoas-api.py
-|4,39,85,24,1713343085,"~/hateoas/hateoas-api.py"
--'  85  24  ~/hateoas/hateoas-api.py
-|4,39,85,24,1713343085,"~/hateoas/hateoas-api.py"
--'  85  24  ~/hateoas/hateoas-api.py
-|4,39,85,24,1713343085,"~/hateoas/hateoas-api.py"
--'  84  47  ~/hateoas/hateoas-api.py
-|4,39,84,47,1713343068,"~/hateoas/hateoas-api.py"
--'  84  47  ~/hateoas/hateoas-api.py
-|4,39,84,47,1713343068,"~/hateoas/hateoas-api.py"
--'  84  47  ~/hateoas/hateoas-api.py
-|4,39,84,47,1713343068,"~/hateoas/hateoas-api.py"
--'  67  19  ~/hateoas/hateoas-api.py
-|4,39,67,19,1713343018,"~/hateoas/hateoas-api.py"
--'  68  28  ~/hateoas/hateoas-api.py
-|4,39,68,28,1713342995,"~/hateoas/hateoas-api.py"
--'  68  28  ~/hateoas/hateoas-api.py
-|4,39,68,28,1713342995,"~/hateoas/hateoas-api.py"
--'  68  28  ~/hateoas/hateoas-api.py
-|4,39,68,28,1713342995,"~/hateoas/hateoas-api.py"
--'  72  11  ~/hateoas/hateoas-api.py
-|4,39,72,11,1713342945,"~/hateoas/hateoas-api.py"
--'  92  17  ~/hateoas/hateoas-api.py
-|4,39,92,17,1713342944,"~/hateoas/hateoas-api.py"
--'  73  17  ~/hateoas/hateoas-api.py
-|4,39,73,17,1713342944,"~/hateoas/hateoas-api.py"
--'  92  17  ~/hateoas/hateoas-api.py
-|4,39,92,17,1713342944,"~/hateoas/hateoas-api.py"
--'  73  17  ~/hateoas/hateoas-api.py
-|4,39,73,17,1713342944,"~/hateoas/hateoas-api.py"
--'  92  17  ~/hateoas/hateoas-api.py
-|4,39,92,17,1713342944,"~/hateoas/hateoas-api.py"
--'  73  17  ~/hateoas/hateoas-api.py
-|4,39,73,17,1713342944,"~/hateoas/hateoas-api.py"
--'  69  22  ~/.vim/vimrc
-|4,39,69,22,1713342938,"~/.vim/vimrc"
--'  69  22  ~/.vim/vimrc
-|4,39,69,22,1713342938,"~/.vim/vimrc"
--'  69  22  ~/.vim/vimrc
-|4,39,69,22,1713342938,"~/.vim/vimrc"
--'  69  22  ~/.vim/vimrc
-|4,39,69,22,1713342938,"~/.vim/vimrc"
--'  58  12  ~/hateoas/hateoas-api.py
-|4,39,58,12,1713342907,"~/hateoas/hateoas-api.py"
--'  56  12  ~/hateoas/hateoas-api.py
-|4,39,56,12,1713342907,"~/hateoas/hateoas-api.py"
--'  58  12  ~/hateoas/hateoas-api.py
-|4,39,58,12,1713342907,"~/hateoas/hateoas-api.py"
--'  56  12  ~/hateoas/hateoas-api.py
-|4,39,56,12,1713342907,"~/hateoas/hateoas-api.py"
 
 # Buffer list:
-%~/hateoas/hateoas-api.py	70	8
-%~/hateoas/dbutils.py	8	4
+%~/hateoas/hateoas-api.py	136	98
+%~/hateoas/dbutils.py	7	19
+%~/hateoas/main.sql	1	0
 
 # History of marks within files (newest to oldest):
 
+> ~/hateoas/hateoas-api.py
+	*	1713356843	0
+	"	136	98
+	^	136	99
+	.	136	98
+	+	99	0
+	+	92	91
+	+	92	18
+	+	93	93
+	+	94	39
+	+	95	8
+	+	82	0
+	+	91	42
+	+	93	71
+	+	83	14
+	+	89	0
+	+	87	9
+	+	89	0
+	+	85	13
+	+	88	0
+	+	87	8
+	+	95	8
+	+	98	8
+	+	127	62
+	+	109	22
+	+	127	82
+	+	111	92
+	+	87	21
+	+	111	112
+	+	100	0
+	+	112	25
+	+	112	220
+	+	97	27
+	+	112	234
+	+	16	0
+	+	91	0
+	+	77	4
+	+	77	0
+	+	63	17
+	+	77	34
+	+	77	60
+	+	77	0
+	+	77	42
+	+	77	45
+	+	77	0
+	+	77	22
+	+	77	0
+	+	63	10
+	+	64	82
+	+	65	38
+	+	67	8
+	+	68	56
+	+	77	0
+	+	68	47
+	+	59	4
+	+	66	0
+	+	77	0
+	+	69	17
+	+	77	0
+	+	69	0
+	+	71	8
+	+	77	0
+	+	71	62
+	+	77	0
+	+	61	14
+	+	77	0
+	+	77	8
+	+	74	46
+	+	76	4
+	+	77	0
+	+	75	0
+	+	62	0
+	+	58	91
+	+	96	41
+	+	95	5
+	+	159	102
+	+	129	57
+	+	60	16
+	+	71	13
+	+	73	42
+	+	74	0
+	+	73	0
+	+	73	23
+	+	74	33
+	+	73	88
+	+	71	0
+	+	129	159
+	+	130	0
+	+	129	261
+	+	129	0
+	+	129	267
+	+	114	7
+	+	129	260
+	+	115	11
+	+	115	22
+	+	116	23
+	+	129	267
+	+	116	0
+	+	129	260
+	+	129	0
+	+	129	268
+	+	129	0
+	+	129	260
+	+	136	98
+	a	107	28
+	b	107	28
+
+> ~/hateoas/main.sql
+	*	1713355903	0
+	"	1	0
+	^	16	33
+	.	16	17
+	+	5	4
+	+	8	0
+	+	7	22
+	+	9	0
+	+	11	4
+	+	18	0
+	+	13	9
+	+	15	0
+	+	15	32
+	+	18	0
+	+	14	11
+	+	22	4
+	+	26	0
+	+	29	0
+	+	29	34
+	+	29	24
+	+	29	0
+	+	29	31
+	+	29	0
+	+	29	17
+	+	29	24
+	+	29	0
+	+	29	39
+	+	29	0
+	+	29	23
+	+	29	1
+	+	21	24
+	+	27	6
+	+	24	0
+	+	29	0
+	+	15	0
+	+	7	0
+	+	17	10
+	+	25	34
+	+	25	8
+	+	29	0
+	+	18	60
+	+	26	58
+	+	27	23
+	+	26	48
+	+	22	0
+	+	11	0
+	+	5	0
+	+	7	31
+	+	2	2
+	+	30	1
+	+	17	10
+	+	17	0
+	+	25	0
+	+	1	0
+	+	16	17
+
 > ~/hateoas/dbutils.py
-	*	1713347287	0
-	"	8	4
+	*	1713355628	0
+	"	7	19
 	^	11	50
-	.	6	0
+	.	8	0
 	+	17	4
 	+	6	39
 	+	6	8
@@ -7154,112 +7322,7 @@ $
 	+	11	46
 	+	10	0
 	+	6	0
-
-> ~/hateoas/hateoas-api.py
-	*	1713347282	0
-	"	70	8
-	.	70	0
-	+	251	20
-	+	251	114
-	+	251	0
-	+	227	75
-	+	229	41
-	+	231	86
-	+	251	0
-	+	231	81
-	+	234	82
-	+	246	78
-	+	246	0
-	+	248	81
-	+	249	81
-	+	250	77
-	+	251	0
-	+	284	120
-	+	230	22
-	+	233	28
-	+	245	0
-	+	247	0
-	+	248	0
-	+	251	0
-	+	248	74
-	+	249	0
-	+	210	32
-	+	211	24
-	+	212	49
-	+	213	4
-	+	236	51
-	+	237	20
-	+	245	0
-	+	239	38
-	+	240	20
-	+	242	43
-	+	243	20
-	+	204	73
-	+	51	35
-	+	103	26
-	+	114	0
-	+	111	4
-	+	127	102
-	+	128	0
-	+	127	177
-	+	128	0
-	+	127	177
-	+	78	75
-	+	78	0
-	+	63	8
-	+	89	26
-	+	92	12
-	+	129	12
-	+	89	12
-	+	89	0
-	+	83	7
-	+	85	12
-	+	84	22
-	+	101	59
-	+	55	65
-	+	56	4
-	+	84	21
-	+	60	0
-	+	91	17
-	+	59	0
-	+	78	82
-	+	78	0
-	+	69	109
-	+	70	40
-	+	78	0
-	+	77	0
-	+	71	91
-	+	71	18
-	+	72	93
-	+	73	39
-	+	74	8
-	+	61	0
-	+	70	42
-	+	72	71
-	+	62	14
-	+	68	0
-	+	66	9
-	+	68	0
-	+	64	13
-	+	67	0
-	+	66	8
-	+	74	8
-	+	76	8
-	+	101	62
-	+	87	22
-	+	101	82
-	+	89	92
-	+	66	21
-	+	89	112
-	+	78	0
-	+	90	25
-	+	90	220
-	+	75	27
-	+	90	234
-	+	16	0
-	+	70	0
-	a	85	28
-	b	85	28
+	+	8	0
 
 > ~/hateoas/.direnv/python-3.10.12/lib/python3.10/site-packages/pysqlite3/__init__.py
 	*	1713346211	0
@@ -7373,63 +7436,6 @@ $
 	+	46	0
 	+	47	0
 	+	69	6
-
-> ~/hateoas/main.sql
-	*	1713342358	0
-	"	29	0
-	^	16	33
-	.	16	17
-	+	5	4
-	+	8	0
-	+	7	22
-	+	9	0
-	+	11	4
-	+	18	0
-	+	13	9
-	+	15	0
-	+	15	32
-	+	18	0
-	+	14	11
-	+	22	4
-	+	26	0
-	+	29	0
-	+	29	34
-	+	29	24
-	+	29	0
-	+	29	31
-	+	29	0
-	+	29	17
-	+	29	24
-	+	29	0
-	+	29	39
-	+	29	0
-	+	29	23
-	+	29	1
-	+	21	24
-	+	27	6
-	+	24	0
-	+	29	0
-	+	15	0
-	+	7	0
-	+	17	10
-	+	25	34
-	+	25	8
-	+	29	0
-	+	18	60
-	+	26	58
-	+	27	23
-	+	26	48
-	+	22	0
-	+	11	0
-	+	5	0
-	+	7	31
-	+	2	2
-	+	30	1
-	+	17	10
-	+	17	0
-	+	25	0
-	+	1	0
-	+	16	17
 
 > ~/hateoas/static/css/hateoas.css
 	*	1713317191	0
