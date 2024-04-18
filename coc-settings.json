@@ -16,7 +16,7 @@
     "vimlsp.diagnostic.enable": true,
 
     "volar.enable": true,
-    "volar.takeOverMode.enabled": true,
+    // "volar.takeOverMode.enabled": true,
     "tsserver.enable": false,
     "css.lint.unknownAtRules": "ignore",
 
@@ -54,12 +54,12 @@
         //        }
         //    }
         //}
-        "sql": {
-            "command": "/home/vivek/go/bin/sqls",
-            "args": ["-config", "/home/vivek/.config/sqls/config.yml"],
-           "filetypes": ["sql"], 
-            "shell": true
-        }
+        // "sql": {
+        //     "command": "/home/vivek/go/bin/sqls",
+        //     "args": ["-config", "/home/vivek/.config/sqls/config.yml"],
+        //    "filetypes": ["sql"], 
+        //     "shell": true
+        // }
 
     }
 }
