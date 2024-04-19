@@ -11,31 +11,127 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/command
+~MSle0/row
 
 # Last Substitute Search Pattern:
-~MSle0&"
+~MSle0~&row
 
 # Last Substitute String:
-$
+$rows
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1713447154,,"q"
+|2,0,1713515051,,"q"
+:%s/row/rows/g
+|2,0,1713512222,,"%s/row/rows/g"
+:center
+|2,0,1713511464,,"center"
+:echo expand("%:p")
+|2,0,1713510971,,"echo expand(\"%:p\")"
+:echo pwd
+|2,0,1713510966,,"echo pwd"
+:Jprevious
+|2,0,1713507886,,"Jprevious"
+:h digraph
+|2,0,1713507440,,"h digraph"
+:s/-/—/g
+|2,0,1713507411,,"s/-/—/g"
+:s/\./-/g
+|2,0,1713507394,,"s/\\./-/g"
+:s/-/./g
+|2,0,1713507385,,"s/-/./g"
+:s/-/\.//g
+|2,0,1713507381,,"s/-/\\.//g"
+:'<,'>center
+|2,0,1713507344,,"'<,'>center"
+:set tw=120
+|2,0,1713507342,,"set tw=120"
+:se
+|2,0,1713507323,,"se"
+:MRU mai
+|2,0,1713507020,,"MRU mai"
 :e
-|2,0,1713447130,,"e"
+|2,0,1713507019,,"e"
+:e ~/tooling/typescript-goals.txt
+|2,0,1713506960,,"e ~/tooling/typescript-goals.txt"
+:e hateoas-api.py
+|2,0,1713506750,,"e hateoas-api.py"
+:q!
+|2,0,1713506746,,"q!"
+:OpenDB
+|2,0,1713506657,,"OpenDB"
+:vert term sqlite3 /home/vivek/hateoas/data/main.db -cmd .schema
+|2,0,1713506547,,"vert term sqlite3 /home/vivek/hateoas/data/main.db -cmd .schema"
+:vert term sqlite3 /home/vivek/hateoas/data/main.db -cmd .tables
+|2,0,1713506534,,"vert term sqlite3 /home/vivek/hateoas/data/main.db -cmd .tables"
+:term
+|2,0,1713506400,,"term"
+:vert term sqlite3 /home/vivek/hateoas/data/main.db 
+|2,0,1713506397,,"vert term sqlite3 /home/vivek/hateoas/data/main.db "
+:vert term sqlite3 /home/vivek/hateoas/data/main.db .tables
+|2,0,1713506386,,"vert term sqlite3 /home/vivek/hateoas/data/main.db .tables"
+:vert term sqlite3 /home/vivek/hateoas/data/main.db
+|2,0,1713506379,,"vert term sqlite3 /home/vivek/hateoas/data/main.db"
+:vert term sqlite3 ~/hateoas/data/main.db
+|2,0,1713506365,,"vert term sqlite3 ~/hateoas/data/main.db"
+:vert term sqlite3 ~/hateoas/data/main.db .tables
+|2,0,1713506358,,"vert term sqlite3 ~/hateoas/data/main.db .tables"
+:b ~/.vim/plugin/sqlite.vim
+|2,0,1713506191,,"b ~/.vim/plugin/sqlite.vim"
+:b .vim
+|2,0,1713506187,,"b .vim"
+:MRU .vim
+|2,0,1713506186,,"MRU .vim"
+:b main.sql
+|2,0,1713506182,,"b main.sql"
+:OpenDB data/main.db
+|2,0,1713506174,,"OpenDB data/main.db"
+:e pyrightconfig.json
+|2,0,1713506168,,"e pyrightconfig.json"
+:MRU m
+|2,0,1713506154,,"MRU m"
+:OpenDB fasdf
+|2,0,1713506149,,"OpenDB fasdf"
+:OpenDB backup.vim
+|2,0,1713506046,,"OpenDB backup.vim"
+:OpenDB 
+|2,0,1713506030,,"OpenDB "
+:OpenDB asdf
+|2,0,1713506025,,"OpenDB asdf"
+:HotReload
+|2,0,1713505987,,"HotReload"
+:set nonumber
+|2,0,1713505762,,"set nonumber"
+:set 
+|2,0,1713505760,,"set "
+:e vd.vim
+|2,0,1713505449,,"e vd.vim"
+:grep -g '*.vim' -g 'vimrc' getseparator
+|2,0,1713505053,,"grep -g '*.vim' -g 'vimrc' getseparator"
+:h join
+|2,0,1713504967,,"h join"
+:!git s
+|2,0,1713504820,,"!git s"
+:!git add %
+|2,0,1713504816,,"!git add %"
+:!
+|2,0,1713504799,,"!"
+:e ~/.vim/plugin/sqlite.vim
+|2,0,1713504792,,"e ~/.vim/plugin/sqlite.vim"
+:e ~/pl
+|2,0,1713504780,,"e ~/pl"
+:e 
+|2,0,1713504776,,"e "
+:term sqlite3 data/main.db
+|2,0,1713504761,,"term sqlite3 data/main.db"
 :CocConfig
 |2,0,1713447094,,"CocConfig"
 :MRU 
 |2,0,1713447007,,"MRU "
-:MRU mai
-|2,0,1713437821,,"MRU mai"
 :VD backup.vim
 |2,0,1713437172,,"VD backup.vim"
 :VD
 |2,0,1713437098,,"VD"
-:q!
-|2,0,1713436985,,"q!"
 :VD ~/hateoas/data/main.db
 |2,0,1713436981,,"VD ~/hateoas/data/main.db"
 :VD vd.vim
@@ -48,12 +144,8 @@ $
 |2,0,1713436807,,"VD data/asdf"
 :VD 
 |2,0,1713436725,,"VD "
-:term
-|2,0,1713436660,,"term"
 :let 
 |2,0,1713436627,,"let "
-:HotReload
-|2,0,1713436623,,"HotReload"
 :ter
 |2,0,1713436561,,"ter"
 :copen
@@ -84,8 +176,6 @@ $
 |2,0,1713435858,,"VD ~/h"
 :so %
 |2,0,1713435659,,"so %"
-:e vd.vim
-|2,0,1713435511,,"e vd.vim"
 :MRU run
 |2,0,1713435423,,"MRU run"
 :map <space>;
@@ -172,8 +262,6 @@ $
 |2,0,1713373300,,"e na"
 :Copilot status
 |2,0,1713355662,,"Copilot status"
-:Jprevious
-|2,0,1713355629,,"Jprevious"
 :b ~/hateoas/hateoas-api.py
 |2,0,1713346911,,"b ~/hateoas/hateoas-api.py"
 :CocRestart
@@ -192,12 +280,8 @@ $
 |2,0,1713342925,,"PlugInstall"
 :b css
 |2,0,1713310193,,"b css"
-:term sqlite3 data/main.db
-|2,0,1713308509,,"term sqlite3 data/main.db"
 :;wkkkkk
 |2,0,1713307653,,";wkkkkk"
-:set nonumber
-|2,0,1713304469,,"set nonumber"
 :MRU css
 |2,0,1713303703,,"MRU css"
 :b nav
@@ -216,8 +300,6 @@ $
 |2,0,1713295260,,"MRU a"
 :b ~/hateoas/templates/elements.html
 |2,0,1713288456,,"b ~/hateoas/templates/elements.html"
-:e hateoas-api.py
-|2,0,1713288220,,"e hateoas-api.py"
 :MRU 3:package.json
 |2,0,1713288216,,"MRU 3:package.json"
 :e templates/base.html
@@ -238,8 +320,6 @@ $
 |2,0,1713281526,,"'<,'>s/\"//g"
 :e dbutils.py
 |2,0,1713280775,,"e dbutils.py"
-:e 
-|2,0,1713280211,,"e "
 :b templates/elements.html
 |2,0,1713279059,,"b templates/elements.html"
 :bd
@@ -568,8 +648,6 @@ $
 |2,0,1712094568,,"e hateoas-websocket.py"
 :MRU 2:hateoas-downloader-server.py
 |2,0,1712094257,,"MRU 2:hateoas-downloader-server.py"
-:echo expand("%:p")
-|2,0,1712090268,,"echo expand(\"%:p\")"
 :u
 |2,0,1712088996,,"u"
 :echo keys(copilot#Agent().workspaceFolders)
@@ -688,8 +766,6 @@ $
 |2,0,1711875212,,"CocUpdate coc-pyright"
 :CocUpdate coc-pyright 
 |2,0,1711875210,,"CocUpdate coc-pyright "
-:e pyrightconfig.json
-|2,0,1711875191,,"e pyrightconfig.json"
 :Coc
 |2,0,1711875178,,"Coc"
 :CocList services
@@ -2132,8 +2208,6 @@ $
 |2,0,1694034602,,"e 5WtJH"
 :e curler.py
 |2,0,1694034220,,"e curler.py"
-:!
-|2,0,1694033124,,"!"
 :alias 
 |2,0,1694032855,,"alias "
 :MRU pyright
@@ -2152,8 +2226,6 @@ $
 |2,0,1694032443,,"e ../projectpython"
 :e .env
 |2,0,1694032403,,"e .env"
-:center
-|2,0,1694032376,,"center"
 :MRU 10:main.txt
 |2,0,1694032372,,"MRU 10:main.txt"
 :MRU 266:tsnuxt/README.md
@@ -2512,8 +2584,6 @@ $
 |2,0,1693225702,,"e actions.html"
 :e src/Actions.vue
 |2,0,1693225694,,"e src/Actions.vue"
-:set 
-|2,0,1693225692,,"set "
 :e Ac
 |2,0,1693225688,,"e Ac"
 :find Acti
@@ -4668,8 +4738,6 @@ $
 |2,0,1688308984,,"call sideways#textobj#Argument('i')"
 :MRU
 |2,0,1688308744,,"MRU"
-:MRU m
-|2,0,1688308550,,"MRU m"
 :MRU 26:mini.vimrc
 |2,0,1688308540,,"MRU 26:mini.vimrc"
 :MRU 17:gita
@@ -4840,8 +4908,6 @@ $
 |2,0,1685391609,,"Cmdl"
 :h join(
 |2,0,1685391579,,"h join("
-:h join
-|2,0,1685391577,,"h join"
 :e common.egg-info/
 |2,0,1685390712,,"e common.egg-info/"
 :Rg import
@@ -4870,6 +4936,26 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+? row
+|2,1,1713512222,,"row"
+?/row
+|2,1,1713512219,47,"row"
+?/\d
+|2,1,1713507579,47,"\\d"
+?/\
+|2,1,1713507578,47,"\\"
+?/-m
+|2,1,1713507445,47,"-m"
+? -
+|2,1,1713507414,,"-"
+? \.
+|2,1,1713507394,,"\\."
+?/INSERT INTO portionurls
+|2,1,1713506787,47,"INSERT INTO portionurls"
+?/portionurls
+|2,1,1713506752,47,"portionurls"
+?/s:ols
+|2,1,1713505990,47,"s:ols"
 ?/command
 |2,1,1713436480,47,"command"
 ?/de
@@ -5606,8 +5692,6 @@ $
 |2,1,1695196751,,"cate"
 ?/tr
 |2,1,1695191407,47,"tr"
-?/row
-|2,1,1695191026,47,"row"
 ? in \zs[^:]\+
 |2,1,1695189965,,"in \\zs[^:]\\+"
 ?/<a href
@@ -6916,40 +7000,38 @@ $
 |2,4,1693311567,,"cont"
 
 # Registers:
-"0	CHAR	0
-	. ' | grep -q "SQLite"')
-|3,0,0,0,1,0,1713436844,". ' | grep -q \"SQLite\"')"
+"0	LINE	0
+	Error: extra value `extra`
+|3,0,0,1,1,0,1713512202,"Error: extra value `extra`"
 ""1	LINE	0
-	    "volar.takeOverMode.enabled": true,
-|3,1,1,1,1,0,1713447136,"    \"volar.takeOverMode.enabled\": true,"
+	
+|3,1,1,1,1,0,1713512237,""
 "2	LINE	0
-	CREATE TABLE "jun
-|3,0,2,1,1,0,1713447084,"CREATE TABLE \"jun"
+	Error: extra value `extra`
+|3,0,2,1,1,0,1713512199,"Error: extra value `extra`"
 "3	LINE	0
-	    let table_name = fnamemodify(a:path, ':t:r')
-|3,0,3,1,1,0,1713437004,"    let table_name = fnamemodify(a:path, ':t:r')"
+	Then I should get an error because I provided an extra value
+|3,0,3,1,1,0,1713512185,"Then I should get an error because I provided an extra value"
 "4	LINE	0
-	    " Open path in sqlite and check if table exists
-|3,0,4,1,1,0,1713436994,"    \" Open path in sqlite and check if table exists"
+	
+|3,0,4,1,1,0,1713512184,""
 "5	LINE	0
-	    " Use os.system to run sqlite3 command
-|3,0,5,1,1,0,1713436993,"    \" Use os.system to run sqlite3 command"
+	And I try to do
+|3,0,5,1,1,0,1713512183,"And I try to do"
 "6	LINE	0
-	    echo "is_sqlite: " . is_sqlite
-	    return
-|3,0,6,1,2,0,1713436977,"    echo \"is_sqlite: \" . is_sqlite","    return"
+	If I have
+	
+|3,0,6,1,2,0,1713512182,"If I have",""
 "7	LINE	0
-	        let is_sqlite = 1
-	    else
-	        let is_sqlite = 0
-|3,0,7,1,3,0,1713436605,"        let is_sqlite = 1","    else","        let is_sqlite = 0"
+	Name: Extra Value
+	
+|3,0,7,1,2,0,1713512182,"Name: Extra Value",""
 "8	LINE	0
-	
-|3,0,8,1,1,0,1713436543,""
+	Then I should get an error because `age` is supposed to be an integer
+|3,0,8,1,1,0,1713512176,"Then I should get an error because `age` is supposed to be an integer"
 "9	LINE	0
-	
-	
-|3,0,9,1,2,0,1713436518,"",""
+	And I try to do
+|3,0,9,1,1,0,1713512175,"And I try to do"
 "a	CHAR	0
 	Tabularize /#/l1c1l1
 |3,0,10,0,1,0,1713436971,"Tabularize /#/l1c1l1"
@@ -6988,32 +7070,64 @@ $
 |<"                <form method=\"POST\" action=\"/resume_download\">","                    <input type=\"hidden\" name=\"id\" value=\"{{ id }}\">","                    <input type=\"submit\" value=\"Resume\">","                </form>","                {% endif %}","                {% if status == 'downloading' %}","                <form method=\"POST\" action=\"/pause_download\">","                    <input type=\"hidden\" name=\"id\" value=\"{{ id }}\">",>61
 |<"                    <input type=\"submit\" value=\"Pause\">","                </form>","                {% endif %}","","            </li>","        {% endfor %}","    </ul>\"\"\", downloads=downloads)"
 "-	CHAR	0
-	,
-|3,0,36,0,1,0,1713437823,","
+	extra
+|3,0,36,0,1,0,1713512197,"extra"
 
 # File marks:
-'0  29  0  ~/hateoas/main.sql
-|4,48,29,0,1713447154,"~/hateoas/main.sql"
-'1  19  6  ~/.vim/coc-settings.json
-|4,49,19,6,1713447146,"~/.vim/coc-settings.json"
-'2  19  6  ~/.vim/coc-settings.json
-|4,50,19,6,1713447146,"~/.vim/coc-settings.json"
-'3  30  0  ~/hateoas/main.sql
-|4,51,30,0,1713447086,"~/hateoas/main.sql"
-'4  30  0  ~/hateoas/main.sql
-|4,52,30,0,1713447086,"~/hateoas/main.sql"
-'5  30  0  ~/hateoas/main.sql
-|4,53,30,0,1713447086,"~/hateoas/main.sql"
-'6  30  0  ~/hateoas/main.sql
-|4,54,30,0,1713447086,"~/hateoas/main.sql"
-'7  333  4  ~/hateoas/hateoas-api.py
-|4,55,333,4,1713447014,"~/hateoas/hateoas-api.py"
-'8  333  4  ~/hateoas/hateoas-api.py
-|4,56,333,4,1713447014,"~/hateoas/hateoas-api.py"
-'9  333  4  ~/hateoas/hateoas-api.py
-|4,57,333,4,1713447014,"~/hateoas/hateoas-api.py"
+'0  44  0  ~/tooling/typescript-goals.txt
+|4,48,44,0,1713515051,"~/tooling/typescript-goals.txt"
+'1  31  0  ~/hateoas/main.sql
+|4,49,31,0,1713447154,"~/hateoas/main.sql"
+'2  29  0  ~/hateoas/main.sql
+|4,50,29,0,1713447154,"~/hateoas/main.sql"
+'3  19  6  ~/.vim/coc-settings.json
+|4,51,19,6,1713447146,"~/.vim/coc-settings.json"
+'4  19  6  ~/.vim/coc-settings.json
+|4,52,19,6,1713447146,"~/.vim/coc-settings.json"
+'5  19  6  ~/.vim/coc-settings.json
+|4,53,19,6,1713447146,"~/.vim/coc-settings.json"
+'6  19  6  ~/.vim/coc-settings.json
+|4,54,19,6,1713447146,"~/.vim/coc-settings.json"
+'7  32  0  ~/hateoas/main.sql
+|4,55,32,0,1713447086,"~/hateoas/main.sql"
+'8  32  0  ~/hateoas/main.sql
+|4,56,32,0,1713447086,"~/hateoas/main.sql"
+'9  32  0  ~/hateoas/main.sql
+|4,57,32,0,1713447086,"~/hateoas/main.sql"
 
 # Jumplist (newest first):
+-'  44  0  ~/tooling/typescript-goals.txt
+|4,39,44,0,1713515051,"~/tooling/typescript-goals.txt"
+-'  12  17  ~/tooling/typescript-goals.txt
+|4,39,12,17,1713512222,"~/tooling/typescript-goals.txt"
+-'  1  0  ~/tooling/typescript-goals.txt
+|4,39,1,0,1713512219,"~/tooling/typescript-goals.txt"
+-'  43  0  ~/tooling/typescript-goals.txt
+|4,39,43,0,1713512202,"~/tooling/typescript-goals.txt"
+-'  42  0  ~/tooling/typescript-goals.txt
+|4,39,42,0,1713512198,"~/tooling/typescript-goals.txt"
+-'  41  59  ~/tooling/typescript-goals.txt
+|4,39,41,59,1713512198,"~/tooling/typescript-goals.txt"
+-'  36  0  ~/tooling/typescript-goals.txt
+|4,39,36,0,1713512180,"~/tooling/typescript-goals.txt"
+-'  35  36  ~/tooling/typescript-goals.txt
+|4,39,35,36,1713512180,"~/tooling/typescript-goals.txt"
+-'  18  0  ~/tooling/typescript-goals.txt
+|4,39,18,0,1713512165,"~/tooling/typescript-goals.txt"
+-'  17  39  ~/tooling/typescript-goals.txt
+|4,39,17,39,1713512163,"~/tooling/typescript-goals.txt"
+-'  25  0  ~/tooling/typescript-goals.txt
+|4,39,25,0,1713512151,"~/tooling/typescript-goals.txt"
+-'  26  34  ~/tooling/typescript-goals.txt
+|4,39,26,34,1713512150,"~/tooling/typescript-goals.txt"
+-'  21  4  ~/tooling/typescript-goals.txt
+|4,39,21,4,1713512115,"~/tooling/typescript-goals.txt"
+-'  16  0  ~/tooling/typescript-goals.txt
+|4,39,16,0,1713512107,"~/tooling/typescript-goals.txt"
+-'  10  0  ~/tooling/typescript-goals.txt
+|4,39,10,0,1713511509,"~/tooling/typescript-goals.txt"
+-'  19  0  ~/tooling/typescript-goals.txt
+|4,39,19,0,1713511501,"~/tooling/typescript-goals.txt"
 -'  29  0  ~/hateoas/main.sql
 |4,39,29,0,1713447154,"~/hateoas/main.sql"
 -'  1  0  ~/hateoas/main.sql
@@ -7182,48 +7296,222 @@ $
 |4,39,20,8,1713436660,"~/.vim/plugin/vd.vim"
 -'  20  8  ~/.vim/plugin/vd.vim
 |4,39,20,8,1713436660,"~/.vim/plugin/vd.vim"
--'  20  8  ~/.vim/plugin/vd.vim
-|4,39,20,8,1713436660,"~/.vim/plugin/vd.vim"
--'  20  8  ~/.vim/plugin/vd.vim
-|4,39,20,8,1713436660,"~/.vim/plugin/vd.vim"
--'  20  8  ~/.vim/plugin/vd.vim
-|4,39,20,8,1713436660,"~/.vim/plugin/vd.vim"
--'  20  8  ~/.vim/plugin/vd.vim
-|4,39,20,8,1713436660,"~/.vim/plugin/vd.vim"
--'  20  8  ~/.vim/plugin/vd.vim
-|4,39,20,8,1713436660,"~/.vim/plugin/vd.vim"
--'  20  8  ~/.vim/plugin/vd.vim
-|4,39,20,8,1713436660,"~/.vim/plugin/vd.vim"
--'  37  8  ~/.vim/plugin/vd.vim
-|4,39,37,8,1713436486,"~/.vim/plugin/vd.vim"
--'  37  8  ~/.vim/plugin/vd.vim
-|4,39,37,8,1713436486,"~/.vim/plugin/vd.vim"
--'  37  8  ~/.vim/plugin/vd.vim
-|4,39,37,8,1713436486,"~/.vim/plugin/vd.vim"
--'  37  8  ~/.vim/plugin/vd.vim
-|4,39,37,8,1713436486,"~/.vim/plugin/vd.vim"
--'  37  8  ~/.vim/plugin/vd.vim
-|4,39,37,8,1713436486,"~/.vim/plugin/vd.vim"
--'  37  8  ~/.vim/plugin/vd.vim
-|4,39,37,8,1713436486,"~/.vim/plugin/vd.vim"
--'  37  8  ~/.vim/plugin/vd.vim
-|4,39,37,8,1713436486,"~/.vim/plugin/vd.vim"
--'  37  8  ~/.vim/plugin/vd.vim
-|4,39,37,8,1713436486,"~/.vim/plugin/vd.vim"
--'  37  8  ~/.vim/plugin/vd.vim
-|4,39,37,8,1713436486,"~/.vim/plugin/vd.vim"
--'  36  0  ~/.vim/plugin/vd.vim
-|4,39,36,0,1713436456,"~/.vim/plugin/vd.vim"
 
 # Buffer list:
-%~/hateoas/main.sql	29	0
+%~/tooling/typescript-goals.txt	44	0
 
 # History of marks within files (newest to oldest):
 
+> ~/tooling/typescript-goals.txt
+	*	1713512658	0
+	"	44	0
+	^	43	4
+	.	43	3
+	+	21	0
+	+	12	9
+	+	14	9
+	+	17	45
+	+	12	15
+	+	12	0
+	+	12	69
+	+	12	0
+	+	21	0
+	+	12	0
+	+	21	0
+	+	12	0
+	+	18	0
+	+	12	0
+	+	12	5
+	+	10	0
+	+	12	0
+	+	9	0
+	+	10	175
+	+	12	0
+	+	1	0
+	+	9	0
+	+	2	0
+	+	19	0
+	+	19	174
+	+	21	0
+	+	21	39
+	+	21	9
+	+	22	102
+	+	24	43
+	+	26	45
+	+	28	0
+	+	26	89
+	+	28	0
+	+	30	0
+	+	32	15
+	+	33	4
+	+	37	0
+	+	39	0
+	+	41	15
+	+	41	4
+	+	45	0
+	+	45	15
+	+	45	0
+	+	39	0
+	+	21	14
+	+	30	6
+	+	39	6
+	+	12	3
+	+	5	24
+	+	6	25
+	+	7	23
+	+	8	0
+	+	5	5
+	+	5	0
+	+	9	29
+	+	9	28
+	+	9	30
+	+	9	29
+	+	9	27
+	+	9	0
+	+	10	0
+	+	10	192
+	+	19	0
+	+	10	0
+	+	3	52
+	+	17	8
+	+	14	0
+	+	12	0
+	+	24	0
+	+	17	47
+	+	26	6
+	+	21	0
+	+	26	8
+	+	17	10
+	+	30	0
+	+	32	0
+	+	35	4
+	+	39	0
+	+	41	0
+	+	43	2
+	+	41	59
+	+	43	0
+	+	12	0
+	+	17	3
+	+	17	0
+	+	26	3
+	+	35	3
+	+	43	3
+	a	19	174
+	b	19	174
+
+> ~/hateoas/hateoas-api.py
+	*	1713507894	0
+	"	358	4
+	^	358	74
+	.	357	68
+	+	69	47
+	+	60	4
+	+	67	0
+	+	79	0
+	+	70	17
+	+	79	0
+	+	70	0
+	+	72	8
+	+	79	0
+	+	72	62
+	+	79	0
+	+	62	14
+	+	79	0
+	+	79	8
+	+	75	46
+	+	79	4
+	+	79	0
+	+	63	0
+	+	59	91
+	+	97	41
+	+	96	5
+	+	160	102
+	+	130	57
+	+	61	16
+	+	72	13
+	+	74	42
+	+	75	0
+	+	74	0
+	+	74	23
+	+	75	33
+	+	74	88
+	+	72	0
+	+	130	159
+	+	131	0
+	+	130	261
+	+	130	0
+	+	130	267
+	+	115	7
+	+	130	260
+	+	116	11
+	+	116	22
+	+	117	23
+	+	130	267
+	+	117	0
+	+	130	260
+	+	130	0
+	+	130	268
+	+	130	0
+	+	130	260
+	+	137	98
+	+	550	0
+	+	530	22
+	+	534	4
+	+	532	58
+	+	533	4
+	+	549	25
+	+	541	8
+	+	548	8
+	+	541	26
+	+	541	43
+	+	543	17
+	+	545	62
+	+	546	0
+	+	544	16
+	+	543	19
+	+	545	93
+	+	544	25
+	+	541	0
+	+	542	0
+	+	548	0
+	+	546	0
+	+	547	0
+	+	541	0
+	+	544	16
+	+	545	16
+	+	543	0
+	+	546	0
+	+	543	0
+	+	18	8
+	+	18	0
+	+	18	13
+	+	18	4
+	+	18	0
+	+	18	23
+	+	18	17
+	+	18	4
+	+	18	0
+	+	18	26
+	+	18	23
+	+	18	19
+	+	18	43
+	+	18	68
+	+	18	0
+	+	75	22
+	+	75	0
+	+	349	83
+	+	351	0
+	+	350	4
+	+	354	140
+	+	357	68
+	a	108	28
+	b	108	28
+
 > ~/hateoas/main.sql
-	*	1713447152	0
+	*	1713507884	0
 	"	29	0
-	.	30	0
+	^	29	0
+	.	28	27
 	+	5	4
 	+	8	0
 	+	7	22
@@ -7236,47 +7524,270 @@ $
 	+	18	0
 	+	14	11
 	+	22	4
-	+	26	0
-	+	30	0
-	+	30	34
-	+	30	24
-	+	30	0
-	+	30	31
-	+	30	0
-	+	30	17
-	+	30	24
-	+	30	0
-	+	30	39
-	+	30	0
-	+	30	23
-	+	30	1
+	+	27	0
+	+	32	0
+	+	32	34
+	+	32	24
+	+	32	0
+	+	32	31
+	+	32	0
+	+	32	17
+	+	32	24
+	+	32	0
+	+	32	39
+	+	32	0
+	+	32	23
+	+	32	1
 	+	21	24
-	+	27	6
+	+	28	6
 	+	24	0
-	+	30	0
+	+	32	0
 	+	15	0
 	+	7	0
 	+	17	10
 	+	25	34
 	+	25	8
-	+	30	0
+	+	32	0
 	+	18	60
-	+	26	58
-	+	27	23
-	+	26	48
+	+	27	58
+	+	28	23
+	+	27	48
 	+	22	0
 	+	11	0
 	+	5	0
 	+	7	31
 	+	2	2
-	+	31	1
+	+	33	1
 	+	17	10
 	+	17	0
 	+	25	0
 	+	1	0
 	+	16	17
 	+	17	0
+	+	32	0
+	+	26	11
 	+	30	0
+	+	28	28
+	+	29	32
+	+	29	0
+	+	28	27
+
+> /usr/share/vim/vim90/doc/digraph.txt
+	*	1713507516	0
+	"	1488	0
+
+> ~/.vim/plugin/sqlite.vim
+	*	1713506648	0
+	"	37	0
+	^	39	6
+	.	39	6
+	+	61	0
+	+	1	42
+	+	1	18
+	+	61	0
+	+	1	8
+	+	1	11
+	+	1	47
+	+	74	0
+	+	61	16
+	+	61	66
+	+	61	70
+	+	61	8
+	+	61	25
+	+	61	53
+	+	61	19
+	+	61	14
+	+	61	9
+	+	61	65
+	+	61	38
+	+	61	34
+	+	61	11
+	+	74	30
+	+	74	0
+	+	3	0
+	+	2	0
+	+	61	4
+	+	61	18
+	+	61	0
+	+	61	5
+	+	74	37
+	+	75	47
+	+	77	0
+	+	62	4
+	+	72	0
+	+	77	46
+	+	2	0
+	+	61	63
+	+	61	0
+	+	61	7
+	+	61	4
+	+	61	0
+	+	61	27
+	+	61	0
+	+	61	28
+	+	61	0
+	+	61	33
+	+	61	24
+	+	61	15
+	+	61	0
+	+	2	0
+	+	3	44
+	+	3	50
+	+	3	0
+	+	61	0
+	+	3	14
+	+	61	0
+	+	60	10
+	+	3	0
+	+	1	12
+	+	34	7
+	+	77	0
+	+	77	32
+	+	78	0
+	+	77	0
+	+	16	0
+	+	47	0
+	+	47	15
+	+	47	0
+	+	16	0
+	+	76	0
+	+	39	8
+	+	39	0
+	+	40	0
+	+	41	0
+	+	39	0
+	+	37	37
+	+	39	6
+
+> ~/hateoas/pyrightconfig.json
+	*	1713506176	0
+	"	1	0
+
+> ~/.vim/plugin/vd.vim
+	*	1713505457	0
+	"	14	0
+	^	12	0
+	.	23	0
+	+	5	42
+	+	37	8
+	+	37	9
+	+	37	0
+	+	37	25
+	+	37	48
+	+	37	8
+	+	37	0
+	+	3	17
+	+	3	0
+	+	5	11
+	+	6	0
+	+	3	0
+	+	21	44
+	+	34	32
+	+	34	5
+	+	36	11
+	+	21	61
+	+	34	42
+	+	21	17
+	+	34	0
+	+	24	51
+	+	24	4
+	+	34	59
+	+	34	0
+	+	24	42
+	+	24	48
+	+	25	28
+	+	27	64
+	+	34	0
+	+	27	14
+	+	36	13
+	+	37	0
+	+	27	21
+	+	34	0
+	+	27	38
+	+	27	18
+	+	27	0
+	+	26	0
+	+	25	33
+	+	27	38
+	+	28	36
+	+	30	55
+	+	32	0
+	+	31	0
+	+	33	4
+	+	31	0
+	+	33	22
+	+	2	11
+	+	37	0
+	+	36	0
+	+	37	41
+	+	37	31
+	+	37	0
+	+	36	0
+	+	37	0
+	+	34	0
+	+	24	0
+	+	13	42
+	+	14	4
+	+	15	6
+	+	16	25
+	+	17	58
+	+	18	19
+	+	19	14
+	+	20	4
+	+	15	34
+	+	15	9
+	+	15	30
+	+	14	0
+	+	15	0
+	+	24	0
+	+	22	0
+	+	21	0
+	+	12	0
+	+	21	0
+	+	23	0
+
+> ~/.vim/plugin/statusline.vim
+	*	1713505063	0
+	"	117	0
+	^	347	21
+	.	347	20
+	+	277	0
+	+	360	70
+	+	303	0
+	+	302	0
+	+	295	18
+	+	296	0
+	+	298	50
+	+	299	0
+	+	295	11
+	+	295	0
+	+	293	9
+	+	293	0
+	+	315	7
+	+	315	0
+	+	337	31
+	+	339	0
+	+	338	16
+	+	337	84
+	+	337	11
+	+	337	0
+	+	340	18
+	+	360	59
+	+	342	21
+	+	343	33
+	+	344	4
+	+	346	9
+	+	349	0
+	+	348	10
+	+	344	26
+	+	360	60
+	+	358	33
+	+	360	69
+	+	347	20
+
+> /usr/share/vim/vim90/doc/change.txt
+	*	1713504967	0
+	"	129	12
 
 > ~/.vim/coc-settings.json
 	*	1713447142	0
@@ -7383,195 +7894,9 @@ $
 	+	58	0
 	+	19	6
 
-> ~/hateoas/hateoas-api.py
-	*	1713447013	0
-	"	333	4
-	^	68	5
-	.	75	0
-	+	69	47
-	+	60	4
-	+	67	0
-	+	79	0
-	+	70	17
-	+	79	0
-	+	70	0
-	+	72	8
-	+	79	0
-	+	72	62
-	+	79	0
-	+	62	14
-	+	79	0
-	+	79	8
-	+	75	46
-	+	79	4
-	+	79	0
-	+	63	0
-	+	59	91
-	+	97	41
-	+	96	5
-	+	160	102
-	+	130	57
-	+	61	16
-	+	72	13
-	+	74	42
-	+	75	0
-	+	74	0
-	+	74	23
-	+	75	33
-	+	74	88
-	+	72	0
-	+	130	159
-	+	131	0
-	+	130	261
-	+	130	0
-	+	130	267
-	+	115	7
-	+	130	260
-	+	116	11
-	+	116	22
-	+	117	23
-	+	130	267
-	+	117	0
-	+	130	260
-	+	130	0
-	+	130	268
-	+	130	0
-	+	130	260
-	+	137	98
-	+	547	0
-	+	527	22
-	+	531	4
-	+	529	58
-	+	530	4
-	+	546	25
-	+	538	8
-	+	545	8
-	+	538	26
-	+	538	43
-	+	540	17
-	+	542	62
-	+	543	0
-	+	541	16
-	+	540	19
-	+	542	93
-	+	541	25
-	+	538	0
-	+	539	0
-	+	545	0
-	+	543	0
-	+	544	0
-	+	538	0
-	+	541	16
-	+	542	16
-	+	540	0
-	+	543	0
-	+	540	0
-	+	18	8
-	+	18	0
-	+	18	13
-	+	18	4
-	+	18	0
-	+	18	23
-	+	18	17
-	+	18	4
-	+	18	0
-	+	18	26
-	+	18	23
-	+	18	19
-	+	18	43
-	+	18	68
-	+	18	0
-	+	75	22
-	+	75	0
-	a	108	28
-	b	108	28
-
 > ~/.config/bindings.inputrc
 	*	1713437817	0
 	"	1	0
-
-> ~/.vim/plugin/vd.vim
-	*	1713437172	0
-	"	3	0
-	^	12	0
-	.	23	0
-	+	5	42
-	+	37	8
-	+	37	9
-	+	37	0
-	+	37	25
-	+	37	48
-	+	37	8
-	+	37	0
-	+	3	17
-	+	3	0
-	+	5	11
-	+	6	0
-	+	3	0
-	+	21	44
-	+	34	32
-	+	34	5
-	+	36	11
-	+	21	61
-	+	34	42
-	+	21	17
-	+	34	0
-	+	24	51
-	+	24	4
-	+	34	59
-	+	34	0
-	+	24	42
-	+	24	48
-	+	25	28
-	+	27	64
-	+	34	0
-	+	27	14
-	+	36	13
-	+	37	0
-	+	27	21
-	+	34	0
-	+	27	38
-	+	27	18
-	+	27	0
-	+	26	0
-	+	25	33
-	+	27	38
-	+	28	36
-	+	30	55
-	+	32	0
-	+	31	0
-	+	33	4
-	+	31	0
-	+	33	22
-	+	2	11
-	+	37	0
-	+	36	0
-	+	37	41
-	+	37	31
-	+	37	0
-	+	36	0
-	+	37	0
-	+	34	0
-	+	24	0
-	+	13	42
-	+	14	4
-	+	15	6
-	+	16	25
-	+	17	58
-	+	18	19
-	+	19	14
-	+	20	4
-	+	15	34
-	+	15	9
-	+	15	30
-	+	14	0
-	+	15	0
-	+	24	0
-	+	22	0
-	+	21	0
-	+	12	0
-	+	21	0
-	+	23	0
 
 > /usr/share/vim/vim90/doc/builtin.txt
 	*	1713436908	0
@@ -15180,10 +15505,6 @@ $
 	*	1694047005	0
 	"	978	11
 
-> /usr/share/vim/vim90/doc/change.txt
-	*	1694046947	0
-	"	659	32
-
 > ~/.vim/plugged/coc.nvim/doc/coc.txt
 	*	1694043610	0
 	"	776	22
@@ -20902,45 +21223,6 @@ $
 	+	12	0
 	+	11	21
 	+	12	20
-
-> ~/.vim/plugin/statusline.vim
-	*	1690675751	0
-	"	348	10
-	^	347	21
-	.	347	20
-	+	277	0
-	+	360	70
-	+	303	0
-	+	302	0
-	+	295	18
-	+	296	0
-	+	298	50
-	+	299	0
-	+	295	11
-	+	295	0
-	+	293	9
-	+	293	0
-	+	315	7
-	+	315	0
-	+	337	31
-	+	339	0
-	+	338	16
-	+	337	84
-	+	337	11
-	+	337	0
-	+	340	18
-	+	360	59
-	+	342	21
-	+	343	33
-	+	344	4
-	+	346	9
-	+	349	0
-	+	348	10
-	+	344	26
-	+	360	60
-	+	358	33
-	+	360	69
-	+	347	20
 
 > ~/.vim/plugged/ale/doc/ale-vue.txt
 	*	1690675598	0
