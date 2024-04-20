@@ -11,17 +11,179 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0/row
+~MSle0~/\C\<sequence\>
 
 # Last Substitute Search Pattern:
-~MSle0~&row
+~MSle0&\.
 
 # Last Substitute String:
-$rows
+$ 
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1713515051,,"q"
+|2,0,1713593846,,"q"
+:e
+|2,0,1713543269,,"e"
+:later 30m
+|2,0,1713543196,,"later 30m"
+:latest
+|2,0,1713543193,,"latest"
+:later 2h
+|2,0,1713543192,,"later 2h"
+:earlier 30m
+|2,0,1713543124,,"earlier 30m"
+:e main.sql
+|2,0,1713542689,,"e main.sql"
+:e po
+|2,0,1713542687,,"e po"
+:e 
+|2,0,1713540323,,"e "
+:e hateoas-model.py
+|2,0,1713540316,,"e hateoas-model.py"
+:e mo
+|2,0,1713540313,,"e mo"
+:bd!
+|2,0,1713524762,,"bd!"
+:g/\./d
+|2,0,1713524737,,"g/\\./d"
+:set ft=htmldjango
+|2,0,1713524684,,"set ft=htmldjango"
+:v/{[{%]/d
+|2,0,1713524678,,"v/{[{%]/d"
+:v/{{/d
+|2,0,1713524668,,"v/{{/d"
+:enew
+|2,0,1713524665,,"enew"
+:MRU hate
+|2,0,1713524657,,"MRU hate"
+:ALEInfo
+|2,0,1713524423,,"ALEInfo"
+:e ~/tooling/typescript-goals.txt
+|2,0,1713524260,,"e ~/tooling/typescript-goals.txt"
+:e too
+|2,0,1713524252,,"e too"
+:messages
+|2,0,1713524194,,"messages"
+:set ft=
+|2,0,1713524189,,"set ft="
+:echo &ft
+|2,0,1713524134,,"echo &ft"
+:CocInfo
+|2,0,1713524089,,"CocInfo"
+:Coc<F1>
+|2,0,1713524081,,"Coc<F1>"
+:Rename autocomp.html
+|2,0,1713524076,,"Rename autocomp.html"
+:Rename autocomp.html.jinja2
+|2,0,1713524054,,"Rename autocomp.html.jinja2"
+:Rename autocomp.j2
+|2,0,1713524008,,"Rename autocomp.j2"
+:CocInstall coc-htmldjango coc-html
+|2,0,1713523937,,"CocInstall coc-htmldjango coc-html"
+:set ft
+|2,0,1713523804,,"set ft"
+:Rename autocomp.jinja
+|2,0,1713523802,,"Rename autocomp.jinja"
+:e autocomp.jinja2
+|2,0,1713523789,,"e autocomp.jinja2"
+:e templates/nav.html
+|2,0,1713523244,,"e templates/nav.html"
+:MRU p
+|2,0,1713519326,,"MRU p"
+:cn
+|2,0,1713519293,,"cn"
+:grep -g '*.vim' -g 'vimrc' c-p
+|2,0,1713519266,,"grep -g '*.vim' -g 'vimrc' c-p"
+:edit $MYVIMRC
+|2,0,1713519257,,"edit $MYVIMRC"
+:MRU vim
+|2,0,1713519256,,"MRU vim"
+:inoremap <silent><expr> <C-p>  coc#pum#prev(0)
+|2,0,1713519151,,"inoremap <silent><expr> <C-p>  coc#pum#prev(0)"
+:inoremap <silent><expr> <C-p>  coc#pum#prev(1)
+|2,0,1713519139,,"inoremap <silent><expr> <C-p>  coc#pum#prev(1)"
+:inoremap <silent><expr> <C-p> coc#pum#visible() ? "\<C-p>" : "\<C-p>"
+|2,0,1713519095,,"inoremap <silent><expr> <C-p> coc#pum#visible() ? \"\\<C-p>\" : \"\\<C-p>\""
+:inoremap <silent> <C-p>  coc#pum#prev(1) 
+|2,0,1713519067,,"inoremap <silent> <C-p>  coc#pum#prev(1) "
+:inoremap <silent><expr> <C-p> coc#pum#visible() ? coc#pum#prev(1) : "\<C-p>"
+|2,0,1713519035,,"inoremap <silent><expr> <C-p> coc#pum#visible() ? coc#pum#prev(1) : \"\\<C-p>\""
+:h coc-nvim
+|2,0,1713519003,,"h coc-nvim"
+:h coc-nvim#
+|2,0,1713519001,,"h coc-nvim#"
+:imap <c-p> coc#		
+|2,0,1713518998,,"imap <c-p> coc#		"
+:iunmap <c-p>
+|2,0,1713518978,,"iunmap <c-p>"
+:imap <c-p>
+|2,0,1713518966,,"imap <c-p>"
+:iunmap <c
+|2,0,1713518963,,"iunmap <c"
+:q!
+|2,0,1713518358,,"q!"
+:term
+|2,0,1713518318,,"term"
+:e hateoas-api.py
+|2,0,1713518275,,"e hateoas-api.py"
+:b
+|2,0,1713517961,,"b"
+:v/insert/d
+|2,0,1713517950,,"v/insert/d"
+:b ~/hateoas/main.sql
+|2,0,1713517942,,"b ~/hateoas/main.sql"
+:MRU ma
+|2,0,1713517816,,"MRU ma"
+:file d
+|2,0,1713517763,,"file d"
+:OpenDB data/temp.db
+|2,0,1713517754,,"OpenDB data/temp.db"
+:MRU t
+|2,0,1713516993,,"MRU t"
+:h v_P
+|2,0,1713516552,,"h v_P"
+:h vP
+|2,0,1713516547,,"h vP"
+:h P
+|2,0,1713516543,,"h P"
+:h "_
+|2,0,1713516493,,"h \"_"
+:h blackho
+|2,0,1713516491,,"h blackho"
+:b main.sql
+|2,0,1713516143,,"b main.sql"
+:'<,'>s/^\s\s\s\s\zs.*\s\{2,}/ /g
+|2,0,1713516096,,"'<,'>s/^\\s\\s\\s\\s\\zs.*\\s\\{2,}/ /g"
+:'<,'>s/^    \s\{2,}/ /g
+|2,0,1713516067,,"'<,'>s/^    \\s\\{2,}/ /g"
+:'<,'>s/\s\{2,}/ /g
+|2,0,1713516043,,"'<,'>s/\\s\\{2,}/ /g"
+:'<,'>s/\s*\zs\s\{2,}//g
+|2,0,1713516027,,"'<,'>s/\\s*\\zs\\s\\{2,}//g"
+:'<,'>s/\s*\zs\s\s{2,}//g
+|2,0,1713516008,,"'<,'>s/\\s*\\zs\\s\\s{2,}//g"
+:b .vim
+|2,0,1713515996,,"b .vim"
+:b ~/.vim/plugin/sqljoin.vim
+|2,0,1713515993,,"b ~/.vim/plugin/sqljoin.vim"
+:'<,'>s/\s*\zs\s{2,}
+|2,0,1713515991,,"'<,'>s/\\s*\\zs\\s{2,}"
+:SQLJoin
+|2,0,1713515819,,"SQLJoin"
+:set wrap
+|2,0,1713515665,,"set wrap"
+:SQLJoinCreateTableStatement
+|2,0,1713515564,,"SQLJoinCreateTableStatement"
+:g/
+|2,0,1713515404,,"g/"
+:HotReload
+|2,0,1713515282,,"HotReload"
+:e ~/.vim/plugin/sqljoin.vim
+|2,0,1713515274,,"e ~/.vim/plugin/sqljoin.vim"
+:e ~/vim
+|2,0,1713515251,,"e ~/vim"
+:%s/
+|2,0,1713515248,,"%s/"
 :%s/row/rows/g
 |2,0,1713512222,,"%s/row/rows/g"
 :center
@@ -50,22 +212,12 @@ $rows
 |2,0,1713507323,,"se"
 :MRU mai
 |2,0,1713507020,,"MRU mai"
-:e
-|2,0,1713507019,,"e"
-:e ~/tooling/typescript-goals.txt
-|2,0,1713506960,,"e ~/tooling/typescript-goals.txt"
-:e hateoas-api.py
-|2,0,1713506750,,"e hateoas-api.py"
-:q!
-|2,0,1713506746,,"q!"
 :OpenDB
 |2,0,1713506657,,"OpenDB"
 :vert term sqlite3 /home/vivek/hateoas/data/main.db -cmd .schema
 |2,0,1713506547,,"vert term sqlite3 /home/vivek/hateoas/data/main.db -cmd .schema"
 :vert term sqlite3 /home/vivek/hateoas/data/main.db -cmd .tables
 |2,0,1713506534,,"vert term sqlite3 /home/vivek/hateoas/data/main.db -cmd .tables"
-:term
-|2,0,1713506400,,"term"
 :vert term sqlite3 /home/vivek/hateoas/data/main.db 
 |2,0,1713506397,,"vert term sqlite3 /home/vivek/hateoas/data/main.db "
 :vert term sqlite3 /home/vivek/hateoas/data/main.db .tables
@@ -78,12 +230,8 @@ $rows
 |2,0,1713506358,,"vert term sqlite3 ~/hateoas/data/main.db .tables"
 :b ~/.vim/plugin/sqlite.vim
 |2,0,1713506191,,"b ~/.vim/plugin/sqlite.vim"
-:b .vim
-|2,0,1713506187,,"b .vim"
 :MRU .vim
 |2,0,1713506186,,"MRU .vim"
-:b main.sql
-|2,0,1713506182,,"b main.sql"
 :OpenDB data/main.db
 |2,0,1713506174,,"OpenDB data/main.db"
 :e pyrightconfig.json
@@ -98,8 +246,6 @@ $rows
 |2,0,1713506030,,"OpenDB "
 :OpenDB asdf
 |2,0,1713506025,,"OpenDB asdf"
-:HotReload
-|2,0,1713505987,,"HotReload"
 :set nonumber
 |2,0,1713505762,,"set nonumber"
 :set 
@@ -120,8 +266,6 @@ $rows
 |2,0,1713504792,,"e ~/.vim/plugin/sqlite.vim"
 :e ~/pl
 |2,0,1713504780,,"e ~/pl"
-:e 
-|2,0,1713504776,,"e "
 :term sqlite3 data/main.db
 |2,0,1713504761,,"term sqlite3 data/main.db"
 :CocConfig
@@ -184,8 +328,6 @@ $rows
 |2,0,1713435372,,"CMD plugin"
 :664
 |2,0,1713435359,,"664"
-:edit $MYVIMRC
-|2,0,1713435358,,"edit $MYVIMRC"
 :verbose command CMD
 |2,0,1713435356,,"verbose command CMD"
 :MRU ha
@@ -250,12 +392,8 @@ $rows
 |2,0,1713406475,,"colo apprentice_extended"
 :colo code
 |2,0,1713406347,,"colo code"
-:e main.sql
-|2,0,1713373780,,"e main.sql"
 :w
 |2,0,1713373777,,"w"
-:e templates/nav.html
-|2,0,1713373307,,"e templates/nav.html"
 :e ele
 |2,0,1713373302,,"e ele"
 :e na
@@ -312,8 +450,6 @@ $rows
 |2,0,1713287886,,"b ele"
 :MRU py
 |2,0,1713287253,,"MRU py"
-:CocInfo
-|2,0,1713287241,,"CocInfo"
 :e pack
 |2,0,1713282359,,"e pack"
 :'<,'>s/"//g
@@ -364,8 +500,6 @@ $rows
 |2,0,1713267089,,"MRU req1"
 :e requirements.txt
 |2,0,1713267079,,"e requirements.txt"
-:bd!
-|2,0,1713265220,,"bd!"
 :MRU 85:api.py
 |2,0,1713265204,,"MRU 85:api.py"
 :MRU 1:alias.sh
@@ -508,8 +642,6 @@ $rows
 |2,0,1712518468,,"e downloads"
 :Copilot panel
 |2,0,1712504121,,"Copilot panel"
-:cn
-|2,0,1712503802,,"cn"
 :cpre
 |2,0,1712503732,,"cpre"
 :cp
@@ -682,10 +814,6 @@ $rows
 |2,0,1712057465,,"e ~/genproject/sql_checklist.txt"
 :set linebreak
 |2,0,1712030419,,"set linebreak"
-:set wrap
-|2,0,1712030415,,"set wrap"
-:enew
-|2,0,1712030332,,"enew"
 :e pov_videos.sql
 |2,0,1712025409,,"e pov_videos.sql"
 :MRU 3:hateoas-api.py
@@ -702,8 +830,6 @@ $rows
 |2,0,1712025163,,"%s/,   /g"
 :s/\(,\)
 |2,0,1712025145,,"s/\\(,\\)"
-:%s/
-|2,0,1712025122,,"%s/"
 :MRU h
 |2,0,1712022121,,"MRU h"
 :s/,/,/g
@@ -772,8 +898,6 @@ $rows
 |2,0,1711875170,,"CocList services"
 :C
 |2,0,1711874955,,"C"
-:ALEInfo
-|2,0,1711874936,,"ALEInfo"
 :MRU api.py
 |2,0,1711874593,,"MRU api.py"
 :MRU 39:elements_backend/requirements.txt
@@ -822,8 +946,6 @@ $rows
 |2,0,1711444629,,"RENAME elements.js"
 :MRU du
 |2,0,1711443981,,"MRU du"
-:MRU p
-|2,0,1711443808,,"MRU p"
 :MRU eco
 |2,0,1711443573,,"MRU eco"
 :MRU dum
@@ -1818,8 +1940,6 @@ $rows
 |2,0,1694096913,,"Close"
 :OpenPopup
 |2,0,1694096910,,"OpenPopup"
-:messages
-|2,0,1694096893,,"messages"
 :FI 
 |2,0,1694096828,,"FI "
 :h vim9script
@@ -1906,8 +2026,6 @@ $rows
 |2,0,1694085844,,"echo count(\""
 :h count(
 |2,0,1694085821,,"h count("
-:MRU vim
-|2,0,1694085677,,"MRU vim"
 :e src/item.txt
 |2,0,1694085662,,"e src/item.txt"
 :e item.txt
@@ -2138,8 +2256,6 @@ $rows
 |2,0,1694043633,,"call CocActionAsync(\"jumpUsed\")"
 :call CocActionAsync("jumpDeclaration")
 |2,0,1694043618,,"call CocActionAsync(\"jumpDeclaration\")"
-:h coc-nvim
-|2,0,1694043601,,"h coc-nvim"
 :set suffixesadd?
 |2,0,1694043589,,"set suffixesadd?"
 :FindPersonalFunctions
@@ -3150,8 +3266,6 @@ $rows
 |2,0,1692517019,,"MRU def"
 :e README.md
 |2,0,1692516978,,"e README.md"
-:e po
-|2,0,1692509820,,"e po"
 :e components/Label.vue
 |2,0,1692508913,,"e components/Label.vue"
 :e H
@@ -3478,8 +3592,6 @@ $rows
 |2,0,1691923320,," w ecosystem.config.js"
 :e ~/tsnuxt/ecosystem.config.js
 |2,0,1691923313,,"e ~/tsnuxt/ecosystem.config.js"
-:b
-|2,0,1691923312,,"b"
 :MRU 3:tooling.txt
 |2,0,1691923310,,"MRU 3:tooling.txt"
 :grep -g '*.vue' HelloWorld
@@ -4936,6 +5048,68 @@ $rows
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/desc
+|2,1,1713542674,47,"desc"
+?/\.fetc
+|2,1,1713542431,47,"\\.fetc"
+?/portion_count
+|2,1,1713542385,47,"portion_count"
+?/extra
+|2,1,1713542309,47,"extra"
+?/\.fetch
+|2,1,1713542190,47,"\\.fetch"
+?/portionurl
+|2,1,1713541322,47,"portionurl"
+?/portion
+|2,1,1713541301,47,"portion"
+?/\(def\|class\)\s\+\w*view_portion(
+|2,1,1713541288,47,"\\(def\\|class\\)\\s\\+\\w*view_portion("
+?/: Portion
+|2,1,1713540619,47,": Portion"
+?/{{
+|2,1,1713524757,47,"{{"
+? \.
+|2,1,1713524723,,"\\."
+?/\.
+|2,1,1713524710,47,"\\."
+? {[{%]
+|2,1,1713524678,,"{[{%]"
+? {{
+|2,1,1713524668,,"{{"
+?/dj
+|2,1,1713524438,47,"dj"
+?/#prev
+|2,1,1713519019,47,"#prev"
+?/#rev
+|2,1,1713519016,47,"#rev"
+?/coc#prev
+|2,1,1713519014,47,"coc#prev"
+?/imap <
+|2,1,1713519008,47,"imap <"
+?/sequences\/view
+|2,1,1713518298,47,"sequences\\/view"
+? insert
+|2,1,1713517950,,"insert"
+? timer\..*\"classes\"
+|2,1,1713516258,,"timer\\..*\\\"classes\\\""
+? timer\..*\"import Field, SQLModel\"
+|2,1,1713516256,,"timer\\..*\\\"import Field, SQLModel\\\""
+? timer\..*\"import Optional\"
+|2,1,1713516256,,"timer\\..*\\\"import Optional\\\""
+?/\t
+|2,1,1713516068,47,"\\t"
+? \s\{2,}
+|2,1,1713516043,,"\\s\\{2,}"
+? \s*\zs\s\{2,}
+|2,1,1713516027,,"\\s*\\zs\\s\\{2,}"
+? \s*\zs\s\s{2,}
+|2,1,1713516008,,"\\s*\\zs\\s\\s{2,}"
+? \s*,
+|2,1,1713515819,,"\\s*,"
+? CREATE TABLE
+|2,1,1713515819,,"CREATE TABLE"
+? \s\s\+
+|2,1,1713515647,,"\\s\\s\\+"
 ? row
 |2,1,1713512222,,"row"
 ?/row
@@ -4948,8 +5122,6 @@ $rows
 |2,1,1713507445,47,"-m"
 ? -
 |2,1,1713507414,,"-"
-? \.
-|2,1,1713507394,,"\\."
 ?/INSERT INTO portionurls
 |2,1,1713506787,47,"INSERT INTO portionurls"
 ?/portionurls
@@ -5070,8 +5242,6 @@ $rows
 |2,1,1712454065,47,"-->"
 ?/\(def\|class\)\s\+\w*generator
 |2,1,1712445582,47,"\\(def\\|class\\)\\s\\+\\w*generator"
-? \s\s\+
-|2,1,1712445168,,"\\s\\s\\+"
 ? request\.
 |2,1,1712407889,,"request\\."
 ?/\(def\|class\)\s\+\w*video(
@@ -5172,8 +5342,6 @@ $rows
 |2,1,1712025675,47,"\\(def\\|class\\)\\s\\+\\w*portion("
 ?/form_por
 |2,1,1712025464,47,"form_por"
-?/portion
-|2,1,1712025415,47,"portion"
 ?/portoin
 |2,1,1712025413,47,"portoin"
 ? ,\s*
@@ -6826,8 +6994,6 @@ $rows
 |2,1,1688302254,47,"^\\s*function!\\?\\s\\+\\(s:\\)\\?\\(\\w\\+#\\)\\?\\w*Increment"
 ?/oldfil
 |2,1,1688302097,47,"oldfil"
-?/\t
-|2,1,1685568828,47,"\\t"
 ?/ 
 |2,1,1685568812,47," "
 ?/--ignore
@@ -7000,47 +7166,50 @@ $rows
 |2,4,1693311567,,"cont"
 
 # Registers:
-"0	LINE	0
-	Error: extra value `extra`
-|3,0,0,1,1,0,1713512202,"Error: extra value `extra`"
-""1	LINE	0
-	
-|3,1,1,1,1,0,1713512237,""
+""0	LINE	0
+	    def __getitem__(self, key):
+	        return getattr(self, key)
+|3,1,0,1,2,0,1713543335,"    def __getitem__(self, key):","        return getattr(self, key)"
+"1	LINE	0
+	    def __getitem__(self, key):
+	        return getattr(self, key)
+|3,0,1,1,2,0,1713543291,"    def __getitem__(self, key):","        return getattr(self, key)"
 "2	LINE	0
-	Error: extra value `extra`
-|3,0,2,1,1,0,1713512199,"Error: extra value `extra`"
+	    def __str__(self):
+	        return self.__class__.__name__ + "(" + ", ".join([f"{key}={repr(value)}" for key, value in self.__dict__.items()]) + ")"
+|3,0,2,1,2,0,1713543284,"    def __str__(self):","        return self.__class__.__name__ + \"(\" + \", \".join([f\"{key}={repr(value)}\" for key, value in self.__dict__.items()]) + \")\""
 "3	LINE	0
-	Then I should get an error because I provided an extra value
-|3,0,3,1,1,0,1713512185,"Then I should get an error because I provided an extra value"
+	    def __str__(self):
+	        return self.__class__.__name__ + "(" + ", ".join([f"{key}={repr(value)}" for key, value in self.__dict__.items()]) + ")"
+|3,0,3,1,2,0,1713543282,"    def __str__(self):","        return self.__class__.__name__ + \"(\" + \", \".join([f\"{key}={repr(value)}\" for key, value in self.__dict__.items()]) + \")\""
 "4	LINE	0
-	
-|3,0,4,1,1,0,1713512184,""
+	    def __str__(self):
+	        return self.__class__.__name__ + "(" + ", ".join([f"{key}={repr(value)}" for key, value in self.__dict__.items()]) + ")"
+|3,0,4,1,2,0,1713543264,"    def __str__(self):","        return self.__class__.__name__ + \"(\" + \", \".join([f\"{key}={repr(value)}\" for key, value in self.__dict__.items()]) + \")\""
 "5	LINE	0
-	And I try to do
-|3,0,5,1,1,0,1713512183,"And I try to do"
+	    [ (seq.id, seq.name) for seq in sequences ]
+|3,0,5,1,1,0,1713542675,"    [ (seq.id, seq.name) for seq in sequences ]"
 "6	LINE	0
-	If I have
-	
-|3,0,6,1,2,0,1713512182,"If I have",""
+	    keys_to_look_for = [ 'id', 'name', 'asdf' ]
+|3,0,6,1,1,0,1713542621,"    keys_to_look_for = [ 'id', 'name', 'asdf' ]"
 "7	LINE	0
-	Name: Extra Value
-	
-|3,0,7,1,2,0,1713512182,"Name: Extra Value",""
+	    assert all(key in sequences[0] for key in keys_to_look_for), f"expected all keys to be in sequences[0]: {keys_to_look_for}"
+|3,0,7,1,1,0,1713542551,"    assert all(key in sequences[0] for key in keys_to_look_for), f\"expected all keys to be in sequences[0]: {keys_to_look_for}\""
 "8	LINE	0
-	Then I should get an error because `age` is supposed to be an integer
-|3,0,8,1,1,0,1713512176,"Then I should get an error because `age` is supposed to be an integer"
+	    assert 
+|3,0,8,1,1,0,1713542523,"    assert "
 "9	LINE	0
-	And I try to do
-|3,0,9,1,1,0,1713512175,"And I try to do"
+	    extras
+|3,0,9,1,1,0,1713542367,"    extras"
 "a	CHAR	0
-	Tabularize /#/l1c1l1
-|3,0,10,0,1,0,1713436971,"Tabularize /#/l1c1l1"
+	Tabularize /:/l1c1l1
+|3,0,10,0,1,0,1713543335,"Tabularize /:/l1c1l1"
 "j	CHAR	0
 	k:q!kkkkkkkkkkkgg/titlec/€ýa
 |3,0,19,0,1,0,1713289736,"k:q!kkkkkkkkkkkgg/titlec/€ýa"
 "l	CHAR	0
-	ll
-|3,0,21,0,1,0,1713436141,"ll"
+	llllllllllkkkkkuuuuuuuullVGc	jk:wlllllllkkkkkkkkkkkkko€kb	jK:w l l:b mai		 llo	jk:wo€kb	€kb€kb	jkllkdklldd:wdddddd:w
+|3,0,21,0,1,0,1713516172,"llllllllllkkkkkuuuuuuuullVGc	jk:wlllllllkkkkkkkkkkkkko€kb	jK:w l l:b mai		 llo	jk:wo€kb	€kb€kb	jkllkdklldd:wdddddd:w"
 "s	LINE	0
 	    return render_template_string("""
 	    <ul>
@@ -7070,40 +7239,178 @@ $rows
 |<"                <form method=\"POST\" action=\"/resume_download\">","                    <input type=\"hidden\" name=\"id\" value=\"{{ id }}\">","                    <input type=\"submit\" value=\"Resume\">","                </form>","                {% endif %}","                {% if status == 'downloading' %}","                <form method=\"POST\" action=\"/pause_download\">","                    <input type=\"hidden\" name=\"id\" value=\"{{ id }}\">",>61
 |<"                    <input type=\"submit\" value=\"Pause\">","                </form>","                {% endif %}","","            </li>","        {% endfor %}","    </ul>\"\"\", downloads=downloads)"
 "-	CHAR	0
-	extra
-|3,0,36,0,1,0,1713512197,"extra"
+	id, name
+|3,0,36,0,1,0,1713542761,"id, name"
 
 # File marks:
-'0  44  0  ~/tooling/typescript-goals.txt
-|4,48,44,0,1713515051,"~/tooling/typescript-goals.txt"
-'1  31  0  ~/hateoas/main.sql
-|4,49,31,0,1713447154,"~/hateoas/main.sql"
-'2  29  0  ~/hateoas/main.sql
-|4,50,29,0,1713447154,"~/hateoas/main.sql"
-'3  19  6  ~/.vim/coc-settings.json
-|4,51,19,6,1713447146,"~/.vim/coc-settings.json"
-'4  19  6  ~/.vim/coc-settings.json
-|4,52,19,6,1713447146,"~/.vim/coc-settings.json"
-'5  19  6  ~/.vim/coc-settings.json
-|4,53,19,6,1713447146,"~/.vim/coc-settings.json"
-'6  19  6  ~/.vim/coc-settings.json
-|4,54,19,6,1713447146,"~/.vim/coc-settings.json"
-'7  32  0  ~/hateoas/main.sql
-|4,55,32,0,1713447086,"~/hateoas/main.sql"
-'8  32  0  ~/hateoas/main.sql
-|4,56,32,0,1713447086,"~/hateoas/main.sql"
-'9  32  0  ~/hateoas/main.sql
-|4,57,32,0,1713447086,"~/hateoas/main.sql"
+'0  406  16  ~/hateoas/hateoas-api.py
+|4,48,406,16,1713593847,"~/hateoas/hateoas-api.py"
+'1  1  0  ~/hateoas/templates/autocomp.j2
+|4,49,1,0,1713524011,"~/hateoas/templates/autocomp.j2"
+'2  1  0  ~/hateoas/templates/autocomp.j2
+|4,50,1,0,1713524011,"~/hateoas/templates/autocomp.j2"
+'3  1  0  ~/hateoas/model.py
+|4,51,1,0,1713515148,"~/hateoas/model.py"
+'4  1  0  ~/hateoas/model.py
+|4,52,1,0,1713515148,"~/hateoas/model.py"
+'5  44  0  ~/tooling/typescript-goals.txt
+|4,53,44,0,1713515051,"~/tooling/typescript-goals.txt"
+'6  44  0  ~/tooling/typescript-goals.txt
+|4,54,44,0,1713515051,"~/tooling/typescript-goals.txt"
+'7  44  0  ~/tooling/typescript-goals.txt
+|4,55,44,0,1713515051,"~/tooling/typescript-goals.txt"
+'8  44  0  ~/tooling/typescript-goals.txt
+|4,56,44,0,1713515051,"~/tooling/typescript-goals.txt"
+'9  44  0  ~/tooling/typescript-goals.txt
+|4,57,44,0,1713515051,"~/tooling/typescript-goals.txt"
 
 # Jumplist (newest first):
+-'  406  16  ~/hateoas/hateoas-api.py
+|4,39,406,16,1713593847,"~/hateoas/hateoas-api.py"
+-'  45  0  ~/hateoas/hateoas-api.py
+|4,39,45,0,1713543336,"~/hateoas/hateoas-api.py"
+-'  48  0  ~/hateoas/hateoas-api.py
+|4,39,48,0,1713543294,"~/hateoas/hateoas-api.py"
+-'  56  17  ~/hateoas/hateoas-api.py
+|4,39,56,17,1713543269,"~/hateoas/hateoas-api.py"
+-'  38  0  ~/hateoas/hateoas-api.py
+|4,39,38,0,1713543266,"~/hateoas/hateoas-api.py"
+-'  421  40  ~/hateoas/hateoas-api.py
+|4,39,421,40,1713543231,"~/hateoas/hateoas-api.py"
+-'  423  0  ~/hateoas/hateoas-api.py
+|4,39,423,0,1713543192,"~/hateoas/hateoas-api.py"
+-'  422  63  ~/hateoas/hateoas-api.py
+|4,39,422,63,1713543192,"~/hateoas/hateoas-api.py"
+-'  274  122  ~/hateoas/hateoas-api.py
+|4,39,274,122,1713543192,"~/hateoas/hateoas-api.py"
+-'  271  15  ~/hateoas/hateoas-api.py
+|4,39,271,15,1713543192,"~/hateoas/hateoas-api.py"
+-'  302  58  ~/hateoas/hateoas-api.py
+|4,39,302,58,1713543192,"~/hateoas/hateoas-api.py"
+-'  258  8  ~/hateoas/hateoas-api.py
+|4,39,258,8,1713543192,"~/hateoas/hateoas-api.py"
+-'  255  14  ~/hateoas/hateoas-api.py
+|4,39,255,14,1713543192,"~/hateoas/hateoas-api.py"
+-'  254  4  ~/hateoas/hateoas-api.py
+|4,39,254,4,1713543192,"~/hateoas/hateoas-api.py"
+-'  251  26  ~/hateoas/hateoas-api.py
+|4,39,251,26,1713543192,"~/hateoas/hateoas-api.py"
+-'  206  39  ~/hateoas/hateoas-api.py
+|4,39,206,39,1713543192,"~/hateoas/hateoas-api.py"
+-'  200  24  ~/hateoas/hateoas-api.py
+|4,39,200,24,1713543192,"~/hateoas/hateoas-api.py"
+-'  198  24  ~/hateoas/hateoas-api.py
+|4,39,198,24,1713543192,"~/hateoas/hateoas-api.py"
+-'  125  11  ~/hateoas/hateoas-api.py
+|4,39,125,11,1713543192,"~/hateoas/hateoas-api.py"
+-'  130  3  ~/hateoas/hateoas-api.py
+|4,39,130,3,1713543192,"~/hateoas/hateoas-api.py"
+-'  129  15  ~/hateoas/hateoas-api.py
+|4,39,129,15,1713543192,"~/hateoas/hateoas-api.py"
+-'  126  4  ~/hateoas/hateoas-api.py
+|4,39,126,4,1713543192,"~/hateoas/hateoas-api.py"
+-'  37  32  ~/hateoas/hateoas-api.py
+|4,39,37,32,1713543192,"~/hateoas/hateoas-api.py"
+-'  26  0  ~/hateoas/hateoas-api.py
+|4,39,26,0,1713543192,"~/hateoas/hateoas-api.py"
+-'  25  0  ~/hateoas/hateoas-api.py
+|4,39,25,0,1713543192,"~/hateoas/hateoas-api.py"
+-'  1  0  ~/hateoas/templates/autocomp.j2
+|4,39,1,0,1713524011,"~/hateoas/templates/autocomp.j2"
+-'  1  0  ~/hateoas/templates/autocomp.jinja
+|4,39,1,0,1713524008,"~/hateoas/templates/autocomp.jinja"
+-'  9  0  ~/hateoas/templates/autocomp.jinja2
+|4,39,9,0,1713523802,"~/hateoas/templates/autocomp.jinja2"
+-'  1  0  ~/hateoas/templates/autocomp.jinja2
+|4,39,1,0,1713523794,"~/hateoas/templates/autocomp.jinja2"
+-'  1  0  ~/hateoas/templates/nav.html
+|4,39,1,0,1713523792,"~/hateoas/templates/nav.html"
+-'  5  4  ~/hateoas/templates/nav.html
+|4,39,5,4,1713523791,"~/hateoas/templates/nav.html"
+-'  235  8  ~/hateoas/hateoas-api.py
+|4,39,235,8,1713523244,"~/hateoas/hateoas-api.py"
+-'  250  4  ~/hateoas/hateoas-api.py
+|4,39,250,4,1713519357,"~/hateoas/hateoas-api.py"
+-'  230  0  ~/.vim/ide.vim
+|4,39,230,0,1713519326,"~/.vim/ide.vim"
+-'  323  41  ~/.vim/ide.vim
+|4,39,323,41,1713519315,"~/.vim/ide.vim"
+-'  2  47  ~/.vim/ide.vim
+|4,39,2,47,1713519295,"~/.vim/ide.vim"
+-'  854  4  ~/.vim/vimrc
+|4,39,854,4,1713519293,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1713519275,"~/.vim/vimrc"
+-'  249  4  ~/hateoas/hateoas-api.py
+|4,39,249,4,1713519257,"~/hateoas/hateoas-api.py"
+-'  251  4  ~/hateoas/hateoas-api.py
+|4,39,251,4,1713519191,"~/hateoas/hateoas-api.py"
+-'  246  37  ~/hateoas/hateoas-api.py
+|4,39,246,37,1713518359,"~/hateoas/hateoas-api.py"
+-'  58  22  ~/hateoas/hateoas-api.py
+|4,39,58,22,1713518298,"~/hateoas/hateoas-api.py"
+-'  22  0  ~/hateoas/hateoas-model.py
+|4,39,22,0,1713518275,"~/hateoas/hateoas-model.py"
+-'  3  0  ~/hateoas/hateoas-api.py
+|4,39,3,0,1713517964,"~/hateoas/hateoas-api.py"
+-'  5  4  ~/hateoas/hateoas-api.py
+|4,39,5,4,1713517951,"~/hateoas/hateoas-api.py"
+-'  1  0  ~/hateoas/hateoas-api.py
+|4,39,1,0,1713517950,"~/hateoas/hateoas-api.py"
+-'  14  0  ~/hateoas/main.sql
+|4,39,14,0,1713517943,"~/hateoas/main.sql"
+-'  23  0  ~/hateoas/hateoas-model.py
+|4,39,23,0,1713517734,"~/hateoas/hateoas-model.py"
+-'  24  32  ~/hateoas/hateoas-model.py
+|4,39,24,32,1713517733,"~/hateoas/hateoas-model.py"
+-'  21  27  ~/hateoas/hateoas-model.py
+|4,39,21,27,1713517731,"~/hateoas/hateoas-model.py"
+-'  20  33  ~/hateoas/hateoas-model.py
+|4,39,20,33,1713517729,"~/hateoas/hateoas-model.py"
+-'  15  14  ~/hateoas/hateoas-model.py
+|4,39,15,14,1713517642,"~/hateoas/hateoas-model.py"
+-'  16  19  ~/hateoas/hateoas-model.py
+|4,39,16,19,1713517634,"~/hateoas/hateoas-model.py"
+-'  11  0  ~/hateoas/hateoas-model.py
+|4,39,11,0,1713517442,"~/hateoas/hateoas-model.py"
+-'  12  17  ~/hateoas/hateoas-model.py
+|4,39,12,17,1713517437,"~/hateoas/hateoas-model.py"
+-'  13  18  ~/hateoas/hateoas-model.py
+|4,39,13,18,1713517391,"~/hateoas/hateoas-model.py"
+-'  9  0  ~/hateoas/hateoas-model.py
+|4,39,9,0,1713517261,"~/hateoas/hateoas-model.py"
+-'  1  0  ~/hateoas/hateoas-model.py
+|4,39,1,0,1713517114,"~/hateoas/hateoas-model.py"
+-'  7  0  ~/hateoas/hateoas-model.py
+|4,39,7,0,1713517111,"~/hateoas/hateoas-model.py"
+-'  1  0  ~/tooling/typescript-goals.txt
+|4,39,1,0,1713517007,"~/tooling/typescript-goals.txt"
+-'  11  0  ~/hateoas/main.sql
+|4,39,11,0,1713516147,"~/hateoas/main.sql"
+-'  11  0  ~/.vim/plugin/sqljoin.vim
+|4,39,11,0,1713516142,"~/.vim/plugin/sqljoin.vim"
+-'  1  0  ~/hateoas/model.py
+|4,39,1,0,1713515148,"~/hateoas/model.py"
+-'  44  0  ~/tooling/typescript-goals.txt
+|4,39,44,0,1713515051,"~/tooling/typescript-goals.txt"
 -'  44  0  ~/tooling/typescript-goals.txt
 |4,39,44,0,1713515051,"~/tooling/typescript-goals.txt"
 -'  12  17  ~/tooling/typescript-goals.txt
 |4,39,12,17,1713512222,"~/tooling/typescript-goals.txt"
+-'  12  17  ~/tooling/typescript-goals.txt
+|4,39,12,17,1713512222,"~/tooling/typescript-goals.txt"
+-'  1  0  ~/tooling/typescript-goals.txt
+|4,39,1,0,1713512219,"~/tooling/typescript-goals.txt"
 -'  1  0  ~/tooling/typescript-goals.txt
 |4,39,1,0,1713512219,"~/tooling/typescript-goals.txt"
 -'  43  0  ~/tooling/typescript-goals.txt
 |4,39,43,0,1713512202,"~/tooling/typescript-goals.txt"
+-'  43  0  ~/tooling/typescript-goals.txt
+|4,39,43,0,1713512202,"~/tooling/typescript-goals.txt"
+-'  42  0  ~/tooling/typescript-goals.txt
+|4,39,42,0,1713512198,"~/tooling/typescript-goals.txt"
+-'  41  59  ~/tooling/typescript-goals.txt
+|4,39,41,59,1713512198,"~/tooling/typescript-goals.txt"
 -'  42  0  ~/tooling/typescript-goals.txt
 |4,39,42,0,1713512198,"~/tooling/typescript-goals.txt"
 -'  41  59  ~/tooling/typescript-goals.txt
@@ -7112,207 +7419,324 @@ $rows
 |4,39,36,0,1713512180,"~/tooling/typescript-goals.txt"
 -'  35  36  ~/tooling/typescript-goals.txt
 |4,39,35,36,1713512180,"~/tooling/typescript-goals.txt"
+-'  36  0  ~/tooling/typescript-goals.txt
+|4,39,36,0,1713512180,"~/tooling/typescript-goals.txt"
+-'  35  36  ~/tooling/typescript-goals.txt
+|4,39,35,36,1713512180,"~/tooling/typescript-goals.txt"
+-'  18  0  ~/tooling/typescript-goals.txt
+|4,39,18,0,1713512165,"~/tooling/typescript-goals.txt"
 -'  18  0  ~/tooling/typescript-goals.txt
 |4,39,18,0,1713512165,"~/tooling/typescript-goals.txt"
 -'  17  39  ~/tooling/typescript-goals.txt
 |4,39,17,39,1713512163,"~/tooling/typescript-goals.txt"
+-'  17  39  ~/tooling/typescript-goals.txt
+|4,39,17,39,1713512163,"~/tooling/typescript-goals.txt"
+-'  25  0  ~/tooling/typescript-goals.txt
+|4,39,25,0,1713512151,"~/tooling/typescript-goals.txt"
 -'  25  0  ~/tooling/typescript-goals.txt
 |4,39,25,0,1713512151,"~/tooling/typescript-goals.txt"
 -'  26  34  ~/tooling/typescript-goals.txt
 |4,39,26,34,1713512150,"~/tooling/typescript-goals.txt"
+-'  26  34  ~/tooling/typescript-goals.txt
+|4,39,26,34,1713512150,"~/tooling/typescript-goals.txt"
+-'  21  4  ~/tooling/typescript-goals.txt
+|4,39,21,4,1713512115,"~/tooling/typescript-goals.txt"
 -'  21  4  ~/tooling/typescript-goals.txt
 |4,39,21,4,1713512115,"~/tooling/typescript-goals.txt"
 -'  16  0  ~/tooling/typescript-goals.txt
 |4,39,16,0,1713512107,"~/tooling/typescript-goals.txt"
+-'  16  0  ~/tooling/typescript-goals.txt
+|4,39,16,0,1713512107,"~/tooling/typescript-goals.txt"
+-'  10  0  ~/tooling/typescript-goals.txt
+|4,39,10,0,1713511509,"~/tooling/typescript-goals.txt"
 -'  10  0  ~/tooling/typescript-goals.txt
 |4,39,10,0,1713511509,"~/tooling/typescript-goals.txt"
 -'  19  0  ~/tooling/typescript-goals.txt
 |4,39,19,0,1713511501,"~/tooling/typescript-goals.txt"
+-'  19  0  ~/tooling/typescript-goals.txt
+|4,39,19,0,1713511501,"~/tooling/typescript-goals.txt"
+-'  29  0  ~/hateoas/main.sql
+|4,39,29,0,1713447154,"~/hateoas/main.sql"
 -'  29  0  ~/hateoas/main.sql
 |4,39,29,0,1713447154,"~/hateoas/main.sql"
 -'  1  0  ~/hateoas/main.sql
 |4,39,1,0,1713447151,"~/hateoas/main.sql"
+-'  1  0  ~/hateoas/main.sql
+|4,39,1,0,1713447151,"~/hateoas/main.sql"
 -'  19  6  ~/.vim/coc-settings.json
 |4,39,19,6,1713447146,"~/.vim/coc-settings.json"
--'  19  6  ~/.vim/coc-settings.json
-|4,39,19,6,1713447146,"~/.vim/coc-settings.json"
--'  20  4  ~/.vim/coc-settings.json
-|4,39,20,4,1713447137,"~/.vim/coc-settings.json"
--'  20  4  ~/.vim/coc-settings.json
-|4,39,20,4,1713447137,"~/.vim/coc-settings.json"
--'  56  8  ~/.vim/coc-settings.json
-|4,39,56,8,1713447130,"~/.vim/coc-settings.json"
--'  56  8  ~/.vim/coc-settings.json
-|4,39,56,8,1713447130,"~/.vim/coc-settings.json"
--'  1  0  ~/.vim/coc-settings.json
-|4,39,1,0,1713447094,"~/.vim/coc-settings.json"
--'  1  0  ~/.vim/coc-settings.json
-|4,39,1,0,1713447094,"~/.vim/coc-settings.json"
--'  1  0  ~/hateoas/main.sql
-|4,39,1,0,1713447094,"~/hateoas/main.sql"
--'  30  0  ~/hateoas/main.sql
-|4,39,30,0,1713447086,"~/hateoas/main.sql"
--'  30  0  ~/hateoas/main.sql
-|4,39,30,0,1713447086,"~/hateoas/main.sql"
--'  30  0  ~/hateoas/main.sql
-|4,39,30,0,1713447086,"~/hateoas/main.sql"
--'  29  0  ~/hateoas/main.sql
-|4,39,29,0,1713447076,"~/hateoas/main.sql"
--'  29  0  ~/hateoas/main.sql
-|4,39,29,0,1713447076,"~/hateoas/main.sql"
--'  1  0  ~/hateoas/main.sql
-|4,39,1,0,1713447069,"~/hateoas/main.sql"
--'  333  4  ~/hateoas/hateoas-api.py
-|4,39,333,4,1713447014,"~/hateoas/hateoas-api.py"
--'  333  4  ~/hateoas/hateoas-api.py
-|4,39,333,4,1713447014,"~/hateoas/hateoas-api.py"
--'  333  4  ~/hateoas/hateoas-api.py
-|4,39,333,4,1713447014,"~/hateoas/hateoas-api.py"
--'  333  4  ~/hateoas/hateoas-api.py
-|4,39,333,4,1713447014,"~/hateoas/hateoas-api.py"
--'  1  0  ~/hateoas/hateoas-api.py
-|4,39,1,0,1713447003,"~/hateoas/hateoas-api.py"
--'  1  0  ~/hateoas/hateoas-api.py
-|4,39,1,0,1713447003,"~/hateoas/hateoas-api.py"
--'  1  0  ~/hateoas/hateoas-api.py
-|4,39,1,0,1713447003,"~/hateoas/hateoas-api.py"
--'  1  0  ~/hateoas/hateoas-api.py
-|4,39,1,0,1713447003,"~/hateoas/hateoas-api.py"
--'  1  0  ~/hateoas/hateoas-api.py
-|4,39,1,0,1713447003,"~/hateoas/hateoas-api.py"
--'  17  32  ~/hateoas/main.sql
-|4,39,17,32,1713437905,"~/hateoas/main.sql"
--'  17  32  ~/hateoas/main.sql
-|4,39,17,32,1713437905,"~/hateoas/main.sql"
--'  17  32  ~/hateoas/main.sql
-|4,39,17,32,1713437905,"~/hateoas/main.sql"
--'  17  32  ~/hateoas/main.sql
-|4,39,17,32,1713437905,"~/hateoas/main.sql"
--'  17  32  ~/hateoas/main.sql
-|4,39,17,32,1713437905,"~/hateoas/main.sql"
--'  17  32  ~/hateoas/main.sql
-|4,39,17,32,1713437905,"~/hateoas/main.sql"
--'  17  31  ~/hateoas/main.sql
-|4,39,17,31,1713437824,"~/hateoas/main.sql"
--'  1  0  ~/hateoas/main.sql
-|4,39,1,0,1713437821,"~/hateoas/main.sql"
--'  1  0  ~/hateoas/main.sql
-|4,39,1,0,1713437821,"~/hateoas/main.sql"
--'  1  0  ~/hateoas/main.sql
-|4,39,1,0,1713437821,"~/hateoas/main.sql"
--'  1  0  ~/hateoas/main.sql
-|4,39,1,0,1713437821,"~/hateoas/main.sql"
--'  1  0  ~/.config/bindings.inputrc
-|4,39,1,0,1713437818,"~/.config/bindings.inputrc"
--'  1  0  ~/.config/bindings.inputrc
-|4,39,1,0,1713437818,"~/.config/bindings.inputrc"
--'  1  0  ~/.config/bindings.inputrc
-|4,39,1,0,1713437818,"~/.config/bindings.inputrc"
--'  1  0  ~/.config/bindings.inputrc
-|4,39,1,0,1713437818,"~/.config/bindings.inputrc"
--'  1  0  ~/.config/bindings.inputrc
-|4,39,1,0,1713437818,"~/.config/bindings.inputrc"
--'  1  0  ~/.config/bindings.inputrc
-|4,39,1,0,1713437818,"~/.config/bindings.inputrc"
--'  1  0  ~/.config/bindings.inputrc
-|4,39,1,0,1713437818,"~/.config/bindings.inputrc"
--'  1  0  ~/.config/bindings.inputrc
-|4,39,1,0,1713437252,"~/.config/bindings.inputrc"
--'  3  0  ~/.vim/plugin/vd.vim
-|4,39,3,0,1713437174,"~/.vim/plugin/vd.vim"
--'  3  0  ~/.vim/plugin/vd.vim
-|4,39,3,0,1713437174,"~/.vim/plugin/vd.vim"
--'  3  0  ~/.vim/plugin/vd.vim
-|4,39,3,0,1713437174,"~/.vim/plugin/vd.vim"
--'  3  0  ~/.vim/plugin/vd.vim
-|4,39,3,0,1713437174,"~/.vim/plugin/vd.vim"
--'  3  0  ~/.vim/plugin/vd.vim
-|4,39,3,0,1713437174,"~/.vim/plugin/vd.vim"
--'  3  0  ~/.vim/plugin/vd.vim
-|4,39,3,0,1713437174,"~/.vim/plugin/vd.vim"
--'  3  0  ~/.vim/plugin/vd.vim
-|4,39,3,0,1713437174,"~/.vim/plugin/vd.vim"
--'  3  0  ~/.vim/plugin/vd.vim
-|4,39,3,0,1713437174,"~/.vim/plugin/vd.vim"
--'  3  0  ~/.vim/plugin/vd.vim
-|4,39,3,0,1713437174,"~/.vim/plugin/vd.vim"
--'  24  4  ~/.vim/plugin/vd.vim
-|4,39,24,4,1713436996,"~/.vim/plugin/vd.vim"
--'  24  4  ~/.vim/plugin/vd.vim
-|4,39,24,4,1713436996,"~/.vim/plugin/vd.vim"
--'  24  4  ~/.vim/plugin/vd.vim
-|4,39,24,4,1713436996,"~/.vim/plugin/vd.vim"
--'  24  4  ~/.vim/plugin/vd.vim
-|4,39,24,4,1713436996,"~/.vim/plugin/vd.vim"
--'  24  4  ~/.vim/plugin/vd.vim
-|4,39,24,4,1713436996,"~/.vim/plugin/vd.vim"
--'  24  4  ~/.vim/plugin/vd.vim
-|4,39,24,4,1713436996,"~/.vim/plugin/vd.vim"
--'  24  4  ~/.vim/plugin/vd.vim
-|4,39,24,4,1713436996,"~/.vim/plugin/vd.vim"
--'  24  4  ~/.vim/plugin/vd.vim
-|4,39,24,4,1713436996,"~/.vim/plugin/vd.vim"
--'  24  4  ~/.vim/plugin/vd.vim
-|4,39,24,4,1713436996,"~/.vim/plugin/vd.vim"
--'  15  4  ~/.vim/plugin/vd.vim
-|4,39,15,4,1713436981,"~/.vim/plugin/vd.vim"
--'  15  4  ~/.vim/plugin/vd.vim
-|4,39,15,4,1713436981,"~/.vim/plugin/vd.vim"
--'  15  4  ~/.vim/plugin/vd.vim
-|4,39,15,4,1713436981,"~/.vim/plugin/vd.vim"
--'  15  4  ~/.vim/plugin/vd.vim
-|4,39,15,4,1713436981,"~/.vim/plugin/vd.vim"
--'  15  4  ~/.vim/plugin/vd.vim
-|4,39,15,4,1713436981,"~/.vim/plugin/vd.vim"
--'  15  4  ~/.vim/plugin/vd.vim
-|4,39,15,4,1713436981,"~/.vim/plugin/vd.vim"
--'  15  4  ~/.vim/plugin/vd.vim
-|4,39,15,4,1713436981,"~/.vim/plugin/vd.vim"
--'  15  4  ~/.vim/plugin/vd.vim
-|4,39,15,4,1713436981,"~/.vim/plugin/vd.vim"
--'  15  4  ~/.vim/plugin/vd.vim
-|4,39,15,4,1713436981,"~/.vim/plugin/vd.vim"
--'  14  77  ~/.vim/plugin/vd.vim
-|4,39,14,77,1713436969,"~/.vim/plugin/vd.vim"
--'  14  77  ~/.vim/plugin/vd.vim
-|4,39,14,77,1713436969,"~/.vim/plugin/vd.vim"
--'  14  77  ~/.vim/plugin/vd.vim
-|4,39,14,77,1713436969,"~/.vim/plugin/vd.vim"
--'  14  77  ~/.vim/plugin/vd.vim
-|4,39,14,77,1713436969,"~/.vim/plugin/vd.vim"
--'  14  77  ~/.vim/plugin/vd.vim
-|4,39,14,77,1713436969,"~/.vim/plugin/vd.vim"
--'  14  77  ~/.vim/plugin/vd.vim
-|4,39,14,77,1713436969,"~/.vim/plugin/vd.vim"
--'  14  77  ~/.vim/plugin/vd.vim
-|4,39,14,77,1713436969,"~/.vim/plugin/vd.vim"
--'  14  77  ~/.vim/plugin/vd.vim
-|4,39,14,77,1713436969,"~/.vim/plugin/vd.vim"
--'  14  77  ~/.vim/plugin/vd.vim
-|4,39,14,77,1713436969,"~/.vim/plugin/vd.vim"
--'  20  8  ~/.vim/plugin/vd.vim
-|4,39,20,8,1713436660,"~/.vim/plugin/vd.vim"
--'  20  8  ~/.vim/plugin/vd.vim
-|4,39,20,8,1713436660,"~/.vim/plugin/vd.vim"
--'  20  8  ~/.vim/plugin/vd.vim
-|4,39,20,8,1713436660,"~/.vim/plugin/vd.vim"
 
 # Buffer list:
-%~/tooling/typescript-goals.txt	44	0
+%~/hateoas/hateoas-api.py	406	16
 
 # History of marks within files (newest to oldest):
 
-> ~/tooling/typescript-goals.txt
-	*	1713512658	0
-	"	44	0
-	^	43	4
-	.	43	3
-	+	21	0
-	+	12	9
-	+	14	9
-	+	17	45
-	+	12	15
+> ~/hateoas/hateoas-api.py
+	*	1713543358	0
+	"	406	16
+	.	40	0
+	+	195	0
+	+	203	0
+	+	206	0
+	+	208	8
+	+	214	0
+	+	48	0
+	+	11	24
+	+	48	10
+	+	48	15
+	+	48	4
+	+	48	10
+	+	48	14
+	+	48	4
+	+	48	10
+	+	48	17
+	+	48	4
+	+	48	0
+	+	125	0
+	+	48	11
+	+	125	23
+	+	131	0
+	+	138	0
+	+	48	31
+	+	48	8
+	+	48	0
+	+	126	0
+	+	129	32
+	+	48	0
+	+	48	13
+	+	48	23
+	+	48	22
+	+	48	8
+	+	48	15
+	+	48	23
+	+	48	8
+	+	129	37
+	+	141	0
+	+	129	0
+	+	175	0
+	+	48	0
+	+	130	81
+	+	130	0
+	+	126	29
+	+	125	33
+	+	126	0
+	+	129	15
+	+	130	0
+	+	125	11
+	+	48	0
+	+	48	27
+	+	48	48
+	+	48	40
+	+	48	34
+	+	48	8
+	+	48	41
+	+	48	22
+	+	48	0
+	+	48	29
+	+	48	93
+	+	48	0
+	+	48	18
+	+	48	15
+	+	48	46
+	+	48	0
+	+	48	17
+	+	48	0
+	+	198	25
+	+	200	25
+	+	206	40
+	+	251	27
+	+	261	0
+	+	255	0
+	+	255	14
+	+	257	13
+	+	258	8
+	+	261	8
+	+	302	58
+	+	271	15
+	+	274	126
+	+	422	28
+	+	423	39
+	+	423	6
+	+	423	0
+	+	423	9
+	+	423	44
+	+	423	0
+	+	421	0
+	+	38	91
+	+	38	0
+	+	48	0
+	+	46	0
+	+	40	0
+
+> ~/hateoas/main.sql
+	*	1713542692	0
+	"	1	0
+	.	4	0
+	+	4	27
+	+	4	132
+	+	4	122
+	+	9	0
+	+	10	26
+	+	10	252
+	+	10	108
+	+	10	162
+	+	10	191
+	+	10	252
+	+	10	140
+	+	21	33
+	+	21	165
+	+	32	0
+	+	32	34
+	+	32	24
+	+	32	0
+	+	32	31
+	+	32	0
+	+	32	17
+	+	32	24
+	+	32	0
+	+	32	39
+	+	32	0
+	+	32	23
+	+	32	1
+	+	21	24
+	+	21	238
+	+	21	96
+	+	32	0
+	+	10	162
+	+	4	103
+	+	10	229
+	+	21	149
+	+	21	123
+	+	32	0
+	+	10	309
+	+	21	223
+	+	21	255
+	+	21	213
+	+	21	29
+	+	10	25
+	+	4	26
+	+	4	131
+	+	2	2
+	+	33	1
+	+	10	229
+	+	10	222
+	+	21	115
+	+	1	0
+	+	10	206
+	+	10	222
+	+	32	0
+	+	21	153
+	+	21	255
+	+	21	260
+	+	21	287
+	+	21	255
+	+	21	259
+	+	10	0
+	+	4	26
+	+	4	0
+	+	1	0
+	+	4	26
+	+	4	0
+
+> ~/hateoas/hateoas-model.py
+	*	1713540487	0
+	"	1	0
+	^	24	0
+	.	24	0
+	+	7	0
+	+	1	0
+	+	7	22
+	+	7	35
+	+	7	4
+	+	7	0
+	+	7	52
+	+	7	48
+	+	7	0
+	+	7	4
+	+	7	0
+	+	7	79
+	+	7	15
+	+	7	14
+	+	7	17
+	+	7	70
+	+	7	30
+	+	7	34
+	+	7	28
+	+	7	25
+	+	7	38
+	+	7	0
+	+	7	28
+	+	7	34
+	+	7	36
+	+	7	39
+	+	7	45
+	+	7	50
+	+	7	37
+	+	7	0
+	+	7	43
+	+	7	12
+	+	7	0
+	+	7	32
+	+	7	4
+	+	7	16
+	+	7	33
+	+	9	33
+	+	11	10
+	+	11	0
+	+	16	77
+	+	23	0
+	+	16	0
+	+	23	0
+	+	24	39
+	+	24	0
+	+	1	0
+	+	24	45
+	+	24	0
+	+	24	8
+	+	24	0
+	+	7	0
+	+	1	0
+	+	24	33
+	+	24	29
+	+	24	66
+	+	24	0
+	+	11	14
+	+	16	19
+	+	24	24
+	+	24	0
+	+	9	0
+	+	24	0
+	+	24	23
+	+	24	18
+	+	12	11
+	+	8	26
+	+	12	8
+	+	10	0
 	+	12	0
+	+	15	0
+	+	24	0
+	+	11	17
+	+	16	22
+	+	11	0
+	+	17	0
+	+	24	0
+	+	15	0
+	+	12	0
+	+	15	0
+	+	12	0
+	+	14	0
+	+	22	11
+	+	19	0
+	+	20	0
+	+	21	27
+	+	20	33
+	+	24	0
+
+> ~/tooling/typescript-goals.txt
+	*	1713524654	0
+	"	47	0
+	^	47	17
+	.	47	16
 	+	12	69
 	+	12	0
 	+	21	0
@@ -7348,9 +7772,9 @@ $rows
 	+	39	0
 	+	41	15
 	+	41	4
-	+	45	0
-	+	45	15
-	+	45	0
+	+	47	0
+	+	47	15
+	+	47	0
 	+	39	0
 	+	21	14
 	+	30	6
@@ -7396,181 +7820,278 @@ $rows
 	+	26	3
 	+	35	3
 	+	43	3
+	+	52	3
+	+	46	0
+	+	46	168
+	+	46	362
+	+	46	0
+	+	46	168
+	+	46	381
+	+	46	0
+	+	46	381
+	+	46	0
+	+	38	0
+	+	38	378
+	+	38	0
+	+	45	0
+	+	50	133
+	+	47	16
 	a	19	174
 	b	19	174
 
-> ~/hateoas/hateoas-api.py
-	*	1713507894	0
-	"	358	4
-	^	358	74
-	.	357	68
-	+	69	47
-	+	60	4
-	+	67	0
-	+	79	0
-	+	70	17
-	+	79	0
-	+	70	0
-	+	72	8
-	+	79	0
-	+	72	62
-	+	79	0
-	+	62	14
-	+	79	0
-	+	79	8
-	+	75	46
-	+	79	4
-	+	79	0
-	+	63	0
-	+	59	91
-	+	97	41
-	+	96	5
-	+	160	102
-	+	130	57
-	+	61	16
-	+	72	13
-	+	74	42
-	+	75	0
-	+	74	0
-	+	74	23
-	+	75	33
-	+	74	88
-	+	72	0
-	+	130	159
-	+	131	0
-	+	130	261
-	+	130	0
-	+	130	267
-	+	115	7
-	+	130	260
-	+	116	11
-	+	116	22
-	+	117	23
-	+	130	267
-	+	117	0
-	+	130	260
-	+	130	0
-	+	130	268
-	+	130	0
-	+	130	260
-	+	137	98
-	+	550	0
-	+	530	22
-	+	534	4
-	+	532	58
-	+	533	4
-	+	549	25
-	+	541	8
-	+	548	8
-	+	541	26
-	+	541	43
-	+	543	17
-	+	545	62
-	+	546	0
-	+	544	16
-	+	543	19
-	+	545	93
-	+	544	25
-	+	541	0
-	+	542	0
-	+	548	0
-	+	546	0
-	+	547	0
-	+	541	0
-	+	544	16
-	+	545	16
-	+	543	0
-	+	546	0
-	+	543	0
-	+	18	8
-	+	18	0
-	+	18	13
-	+	18	4
-	+	18	0
-	+	18	23
-	+	18	17
-	+	18	4
-	+	18	0
-	+	18	26
-	+	18	23
-	+	18	19
-	+	18	43
-	+	18	68
-	+	18	0
-	+	75	22
-	+	75	0
-	+	349	83
-	+	351	0
-	+	350	4
-	+	354	140
-	+	357	68
-	a	108	28
-	b	108	28
+> ~/hateoas/templates/autocomp.html
+	*	1713524450	0
+	"	1	0
+	.	6	0
+	+	6	0
+	+	11	23
+	+	3	0
+	+	6	0
 
-> ~/hateoas/main.sql
-	*	1713507884	0
-	"	29	0
-	^	29	0
-	.	28	27
-	+	5	4
-	+	8	0
-	+	7	22
-	+	9	0
-	+	11	4
-	+	18	0
-	+	13	9
-	+	15	0
-	+	15	32
-	+	18	0
-	+	14	11
-	+	22	4
-	+	27	0
-	+	32	0
-	+	32	34
-	+	32	24
-	+	32	0
-	+	32	31
-	+	32	0
-	+	32	17
-	+	32	24
-	+	32	0
-	+	32	39
-	+	32	0
-	+	32	23
-	+	32	1
-	+	21	24
-	+	28	6
-	+	24	0
-	+	32	0
-	+	15	0
-	+	7	0
-	+	17	10
-	+	25	34
-	+	25	8
-	+	32	0
-	+	18	60
-	+	27	58
-	+	28	23
-	+	27	48
-	+	22	0
-	+	11	0
-	+	5	0
-	+	7	31
-	+	2	2
-	+	33	1
-	+	17	10
-	+	17	0
-	+	25	0
+> ~/hateoas/templates/autocomp.html.jinja2
+	*	1713524061	0
+	"	1	0
+
+> ~/hateoas/templates/autocomp.j2
+	*	1713524045	0
+	"	1	0
+
+> ~/hateoas/templates/autocomp.jinja
+	*	1713524002	0
+	"	1	0
+
+> ~/hateoas/templates/autocomp.jinja2
+	*	1713523796	0
+	"	9	0
+	.	1	0
 	+	1	0
-	+	16	17
+
+> ~/hateoas/templates/nav.html
+	*	1713523792	0
+	"	1	0
+	^	5	21
+	.	5	0
+	+	2	0
+	+	3	16
+	+	10	0
+	+	3	0
+	+	7	8
+	+	9	0
+	+	7	0
+	+	9	0
+	+	2	16
+	+	6	8
+	+	8	0
+	+	3	0
+	+	1	0
+	+	3	125
+	+	4	0
+	+	1	0
+	+	3	110
+	+	4	0
+	+	3	135
+	+	5	0
+
+> ~/.vim/ide.vim
+	*	1713519324	0
+	"	230	0
+	.	230	0
+	+	179	5
+	+	179	0
+	+	179	35
+	+	179	0
+	+	171	0
+	+	179	0
+	+	171	0
+	+	172	3
+	+	179	0
+	+	176	3
+	+	175	0
+	+	173	59
+	+	178	0
+	+	173	94
+	+	176	81
+	+	178	0
+	+	176	80
+	+	1	150
+	+	143	36
+	+	174	0
+	+	173	0
+	+	174	41
+	+	177	0
+	+	176	0
+	+	177	41
+	+	143	43
+	+	173	4
+	+	174	4
+	+	176	4
+	+	177	4
+	+	292	7
+	+	458	14
+	+	459	0
+	+	460	0
+	+	461	45
+	+	462	0
+	+	69	0
+	+	65	18
+	+	69	0
+	+	230	0
+
+> ~/.vim/vimrc
+	*	1713519292	0
+	"	854	4
+	.	854	0
+	+	62	65
+	+	58	0
+	+	61	7
+	+	62	0
+	+	93	83
+	+	90	1
+	+	91	0
+	+	90	0
+	+	91	0
+	+	65	23
+	+	62	1
+	+	64	0
+	+	62	0
+	+	1317	0
+	+	1322	0
+	+	1317	0
+	+	1316	30
+	+	1317	0
+	+	1321	0
+	+	1319	16
+	+	1320	0
+	+	1327	70
+	+	117	0
+	+	122	22
+	+	119	0
+	+	122	27
+	+	124	0
+	+	123	0
+	+	118	30
+	+	120	13
+	+	119	16
+	+	113	0
+	+	818	19
+	+	818	5
+	+	818	80
+	+	818	22
+	+	818	0
+	+	817	21
+	+	818	28
+	+	817	22
+	+	818	71
+	+	1337	8
+	+	1337	24
+	+	1337	40
+	+	1337	0
+	+	1334	39
+	+	1337	0
+	+	1335	19
+	+	1336	0
+	+	1337	0
+	+	68	0
+	+	52	38
+	+	52	21
+	+	52	0
+	+	43	10
+	+	43	25
+	+	52	0
+	+	43	32
+	+	52	0
+	+	43	10
+	+	52	0
+	+	43	0
+	+	42	25
+	+	42	10
+	+	42	0
+	+	52	60
+	+	43	0
+	+	52	55
+	+	52	0
+	+	43	0
+	+	44	44
+	+	44	0
+	+	51	19
+	+	51	71
+	+	51	0
+	+	59	0
+	+	60	0
+	+	51	0
+	+	50	23
+	+	1145	41
+	+	1149	44
+	+	1151	40
+	+	49	28
+	+	1216	0
+	+	28	11
+	+	48	18
+	+	1286	43
+	+	1287	64
+	+	46	54
+	+	411	0
+	+	1256	0
+	+	46	31
+	+	46	0
+	+	47	0
+	+	69	6
+	+	665	0
+	+	854	0
+
+> ~/.vim/plugged/coc.nvim/doc/coc.txt
+	*	1713519253	0
+	"	537	2
+
+> /usr/share/vim/vim90/doc/change.txt
+	*	1713516556	0
+	"	1174	30
+
+> /usr/share/vim/vim90/doc/options.txt
+	*	1713516547	0
+	"	6025	22
+
+> ~/.vim/plugin/sqljoin.vim
+	*	1713516141	0
+	"	11	0
+	^	16	11
+	.	9	0
+	+	17	10
+	+	19	12
+	+	12	12
+	+	12	16
 	+	17	0
-	+	32	0
-	+	26	11
-	+	30	0
-	+	28	28
-	+	29	32
-	+	29	0
-	+	28	27
+	+	12	0
+	+	9	10
+	+	3	57
+	+	4	29
+	+	5	20
+	+	6	13
+	+	9	0
+	+	4	8
+	+	7	10
+	+	8	30
+	+	20	9
+	+	4	19
+	+	7	17
+	+	12	11
+	+	12	4
+	+	12	0
+	+	17	0
+	+	13	14
+	+	14	15
+	+	15	11
+	+	16	0
+	+	13	10
+	+	14	10
+	+	15	0
+	+	16	10
+	+	17	0
+	+	9	0
+
+> ~/hateoas/model.py
+	*	1713515147	0
+	"	1	0
 
 > /usr/share/vim/vim90/doc/digraph.txt
 	*	1713507516	0
@@ -7785,10 +8306,6 @@ $rows
 	+	360	69
 	+	347	20
 
-> /usr/share/vim/vim90/doc/change.txt
-	*	1713504967	0
-	"	129	12
-
 > ~/.vim/coc-settings.json
 	*	1713447142	0
 	"	19	6
@@ -7983,107 +8500,6 @@ $rows
 	+	22	0
 	+	33	48
 
-> ~/.vim/vimrc
-	*	1713435421	0
-	"	665	0
-	.	665	0
-	+	62	65
-	+	58	0
-	+	61	7
-	+	62	0
-	+	93	83
-	+	90	1
-	+	91	0
-	+	90	0
-	+	91	0
-	+	65	23
-	+	62	1
-	+	64	0
-	+	62	0
-	+	1317	0
-	+	1322	0
-	+	1317	0
-	+	1316	30
-	+	1317	0
-	+	1321	0
-	+	1319	16
-	+	1320	0
-	+	1327	70
-	+	117	0
-	+	122	22
-	+	119	0
-	+	122	27
-	+	124	0
-	+	123	0
-	+	118	30
-	+	120	13
-	+	119	16
-	+	113	0
-	+	818	19
-	+	818	5
-	+	818	80
-	+	818	22
-	+	818	0
-	+	817	21
-	+	818	28
-	+	817	22
-	+	818	71
-	+	1337	8
-	+	1337	24
-	+	1337	40
-	+	1337	0
-	+	1334	39
-	+	1337	0
-	+	1335	19
-	+	1336	0
-	+	1337	0
-	+	68	0
-	+	52	38
-	+	52	21
-	+	52	0
-	+	43	10
-	+	43	25
-	+	52	0
-	+	43	32
-	+	52	0
-	+	43	10
-	+	52	0
-	+	43	0
-	+	42	25
-	+	42	10
-	+	42	0
-	+	52	60
-	+	43	0
-	+	52	55
-	+	52	0
-	+	43	0
-	+	44	44
-	+	44	0
-	+	51	19
-	+	51	71
-	+	51	0
-	+	59	0
-	+	60	0
-	+	51	0
-	+	50	23
-	+	1145	41
-	+	1149	44
-	+	1151	40
-	+	49	28
-	+	1216	0
-	+	28	11
-	+	48	18
-	+	1286	43
-	+	1287	64
-	+	46	54
-	+	411	0
-	+	1256	0
-	+	46	31
-	+	46	0
-	+	47	0
-	+	69	6
-	+	665	0
-
 > ~/downloads/target/t1.txt
 	*	1713435054	0
 	"	1	0
@@ -8256,31 +8672,6 @@ $rows
 > ~/.vim/colors/strawberry-light.vim
 	*	1713407233	0
 	"	22	0
-
-> ~/hateoas/templates/nav.html
-	*	1713373324	0
-	"	3	135
-	^	3	136
-	.	3	135
-	+	2	0
-	+	3	16
-	+	10	0
-	+	3	0
-	+	7	8
-	+	9	0
-	+	7	0
-	+	9	0
-	+	2	16
-	+	6	8
-	+	8	0
-	+	3	0
-	+	1	0
-	+	3	125
-	+	4	0
-	+	1	0
-	+	3	110
-	+	4	0
-	+	3	135
 
 > ~/hateoas/dbutils.py
 	*	1713355628	0
@@ -15505,10 +15896,6 @@ $rows
 	*	1694047005	0
 	"	978	11
 
-> ~/.vim/plugged/coc.nvim/doc/coc.txt
-	*	1694043610	0
-	"	776	22
-
 > ~/.vim/plugin/paths.vim
 	*	1694043490	0
 	"	18	36
@@ -15614,10 +16001,6 @@ $rows
 	+	18	38
 	+	65	11
 	+	18	36
-
-> /usr/share/vim/vim90/doc/options.txt
-	*	1694042230	0
-	"	5959	26
 
 > ~/.vim/plugin/vuepaths.vim
 	*	1694041575	0
@@ -16306,50 +16689,6 @@ $rows
 	.	5	5
 	+	4	7
 	+	5	5
-
-> ~/.vim/ide.vim
-	*	1693516106	0
-	"	69	8
-	.	69	0
-	+	179	5
-	+	179	0
-	+	179	35
-	+	179	0
-	+	171	0
-	+	179	0
-	+	171	0
-	+	172	3
-	+	179	0
-	+	176	3
-	+	175	0
-	+	173	59
-	+	178	0
-	+	173	94
-	+	176	81
-	+	178	0
-	+	176	80
-	+	1	150
-	+	143	36
-	+	174	0
-	+	173	0
-	+	174	41
-	+	177	0
-	+	176	0
-	+	177	41
-	+	143	43
-	+	173	4
-	+	174	4
-	+	176	4
-	+	177	4
-	+	292	7
-	+	458	14
-	+	459	0
-	+	460	0
-	+	461	45
-	+	462	0
-	+	69	0
-	+	65	18
-	+	69	0
 
 > ~/Twitch/coffee-vps/flask-vue/config.json
 	*	1693514809	0
