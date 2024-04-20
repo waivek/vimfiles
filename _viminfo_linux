@@ -11,19 +11,75 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/\C\<sequence\>
+~MSle0~/\t
 
 # Last Substitute Search Pattern:
-~MSle0&\.
+~MSle0&
 
 # Last Substitute String:
-$ 
+$\r    \0
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1713593846,,"q"
+|2,0,1713596645,,"q"
+:e config
+|2,0,1713596640,,"e config"
+:MRU gitco
+|2,0,1713596637,,"MRU gitco"
+:q!
+|2,0,1713596169,,"q!"
+:VD %
+|2,0,1713596164,,"VD %"
+:VD __pycache__/
+|2,0,1713596162,,"VD __pycache__/"
+:VD
+|2,0,1713596160,,"VD"
+:MRU hateo
+|2,0,1713596151,,"MRU hateo"
+:Jprevious
+|2,0,1713596149,,"Jprevious"
+:bd
+|2,0,1713596145,,"bd"
+:MRU hat
+|2,0,1713596144,,"MRU hat"
+:MRU 3:main.sql
+|2,0,1713596143,,"MRU 3:main.sql"
+:SQLSplit
+|2,0,1713596120,,"SQLSplit"
+:SQLJoin
+|2,0,1713596101,,"SQLJoin"
+:SQLSPlit
+|2,0,1713596096,,"SQLSPlit"
+:so %
+|2,0,1713596092,,"so %"
 :e
-|2,0,1713543269,,"e"
+|2,0,1713596072,,"e"
+:So %
+|2,0,1713595958,,"So %"
+:SQP
+|2,0,1713595951,,"SQP"
+:%s//\\n/g
+|2,0,1713595919,,"%s//\\\\n/g"
+:%s//\n/g
+|2,0,1713595912,,"%s//\\n/g"
+:HotReload
+|2,0,1713595813,,"HotReload"
+:%s/[(,]\s*\zs\S\+\s*\(INTEGER\|REAL\|TEXT\)/    \0/g
+|2,0,1713595777,,"%s/[(,]\\s*\\zs\\S\\+\\s*\\(INTEGER\\|REAL\\|TEXT\\)/    \\0/g"
+:%s/CREATE.*\zs)\ze\s*;\s*$/)
+|2,0,1713595771,,"%s/CREATE.*\\zs)\\ze\\s*;\\s*$/)"
+:%s/[(,]\zs\s*\S\+\s*\(INTEGER\|REAL\|TEXT\)/\0/g
+|2,0,1713595217,,"%s/[(,]\\zs\\s*\\S\\+\\s*\\(INTEGER\\|REAL\\|TEXT\\)/\\0/g"
+:s/[(,]\zs\s*\S\+\s*\(INTEGER\|REAL\|TEXT\)/\0/g
+|2,0,1713595210,,"s/[(,]\\zs\\s*\\S\\+\\s*\\(INTEGER\\|REAL\\|TEXT\\)/\\0/g"
+:s/[(,]\zs\S\+\s*\(INTEGER\|REAL\|TEXT\)/\0/g
+|2,0,1713595199,,"s/[(,]\\zs\\S\\+\\s*\\(INTEGER\\|REAL\\|TEXT\\)/\\0/g"
+:s/
+|2,0,1713595148,,"s/"
+:MRU 16:sqljoin.vim
+|2,0,1713595080,,"MRU 16:sqljoin.vim"
+:MRU sqlj
+|2,0,1713595077,,"MRU sqlj"
 :later 30m
 |2,0,1713543196,,"later 30m"
 :latest
@@ -120,8 +176,6 @@ $
 |2,0,1713518966,,"imap <c-p>"
 :iunmap <c
 |2,0,1713518963,,"iunmap <c"
-:q!
-|2,0,1713518358,,"q!"
 :term
 |2,0,1713518318,,"term"
 :e hateoas-api.py
@@ -168,16 +222,12 @@ $
 |2,0,1713515993,,"b ~/.vim/plugin/sqljoin.vim"
 :'<,'>s/\s*\zs\s{2,}
 |2,0,1713515991,,"'<,'>s/\\s*\\zs\\s{2,}"
-:SQLJoin
-|2,0,1713515819,,"SQLJoin"
 :set wrap
 |2,0,1713515665,,"set wrap"
 :SQLJoinCreateTableStatement
 |2,0,1713515564,,"SQLJoinCreateTableStatement"
 :g/
 |2,0,1713515404,,"g/"
-:HotReload
-|2,0,1713515282,,"HotReload"
 :e ~/.vim/plugin/sqljoin.vim
 |2,0,1713515274,,"e ~/.vim/plugin/sqljoin.vim"
 :e ~/vim
@@ -192,8 +242,6 @@ $
 |2,0,1713510971,,"echo expand(\"%:p\")"
 :echo pwd
 |2,0,1713510966,,"echo pwd"
-:Jprevious
-|2,0,1713507886,,"Jprevious"
 :h digraph
 |2,0,1713507440,,"h digraph"
 :s/-/—/g
@@ -274,8 +322,6 @@ $
 |2,0,1713447007,,"MRU "
 :VD backup.vim
 |2,0,1713437172,,"VD backup.vim"
-:VD
-|2,0,1713437098,,"VD"
 :VD ~/hateoas/data/main.db
 |2,0,1713436981,,"VD ~/hateoas/data/main.db"
 :VD vd.vim
@@ -318,8 +364,6 @@ $
 |2,0,1713436023,,"!vd ~/hateoas/data/main.db"
 :VD ~/h
 |2,0,1713435858,,"VD ~/h"
-:so %
-|2,0,1713435659,,"so %"
 :MRU run
 |2,0,1713435423,,"MRU run"
 :map <space>;
@@ -354,8 +398,6 @@ $
 |2,0,1713407256,,"FIND argz.h"
 :MRU 2:strawberry-light.vim
 |2,0,1713407233,,"MRU 2:strawberry-light.vim"
-:MRU 3:main.sql
-|2,0,1713407227,,"MRU 3:main.sql"
 :MRU 1:hateoas-api.py
 |2,0,1713407221,,"MRU 1:hateoas-api.py"
 :nmap g\
@@ -458,8 +500,6 @@ $
 |2,0,1713280775,,"e dbutils.py"
 :b templates/elements.html
 |2,0,1713279059,,"b templates/elements.html"
-:bd
-|2,0,1713279058,,"bd"
 :b py
 |2,0,1713278837,,"b py"
 :e static/
@@ -822,8 +862,6 @@ $
 |2,0,1712025233,,"%s/,\\s*/,    /g"
 :%s/,/,    /g
 |2,0,1712025179,,"%s/,/,    /g"
-:s/
-|2,0,1712025167,,"s/"
 :%
 |2,0,1712025166,,"%"
 :%s/,   /g
@@ -5048,6 +5086,24 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+? [(,]\s*\zs\S\+\s*\(INTEGER\|REAL\|TEXT\)
+|2,1,1713596120,,"[(,]\\s*\\zs\\S\\+\\s*\\(INTEGER\\|REAL\\|TEXT\\)"
+? CREATE.*\zs)\ze\s*;\s*$
+|2,1,1713596120,,"CREATE.*\\zs)\\ze\\s*;\\s*$"
+? \s\{2,}
+|2,1,1713596101,,"\\s\\{2,}"
+? \s*,
+|2,1,1713596101,,"\\s*,"
+? CREATE TABLE
+|2,1,1713596101,,"CREATE TABLE"
+?/\t
+|2,1,1713596012,47,"\\t"
+? 
+|2,1,1713595919,,""
+? [(,]\zs\s*\S\+\s*\(INTEGER\|REAL\|TEXT\)
+|2,1,1713595217,,"[(,]\\zs\\s*\\S\\+\\s*\\(INTEGER\\|REAL\\|TEXT\\)"
+? [(,]\zs\S\+\s*\(INTEGER\|REAL\|TEXT\)
+|2,1,1713595199,,"[(,]\\zs\\S\\+\\s*\\(INTEGER\\|REAL\\|TEXT\\)"
 ?/desc
 |2,1,1713542674,47,"desc"
 ?/\.fetc
@@ -5096,18 +5152,10 @@ $
 |2,1,1713516256,,"timer\\..*\\\"import Field, SQLModel\\\""
 ? timer\..*\"import Optional\"
 |2,1,1713516256,,"timer\\..*\\\"import Optional\\\""
-?/\t
-|2,1,1713516068,47,"\\t"
-? \s\{2,}
-|2,1,1713516043,,"\\s\\{2,}"
 ? \s*\zs\s\{2,}
 |2,1,1713516027,,"\\s*\\zs\\s\\{2,}"
 ? \s*\zs\s\s{2,}
 |2,1,1713516008,,"\\s*\\zs\\s\\s{2,}"
-? \s*,
-|2,1,1713515819,,"\\s*,"
-? CREATE TABLE
-|2,1,1713515819,,"CREATE TABLE"
 ? \s\s\+
 |2,1,1713515647,,"\\s\\s\\+"
 ? row
@@ -7167,40 +7215,39 @@ $
 
 # Registers:
 ""0	LINE	0
-	    def __getitem__(self, key):
-	        return getattr(self, key)
-|3,1,0,1,2,0,1713543335,"    def __getitem__(self, key):","        return getattr(self, key)"
+	
+|3,1,0,1,1,0,1713596149,""
 "1	LINE	0
+	
+|3,0,1,1,1,0,1713596116,""
+"2	LINE	0
+	    silent g/^\s*create/s/[(,]\s*\zs\S\+\s*\(INTEGER\|REAL\|TEXT\)/\r    \0/g
+|3,0,2,1,1,0,1713596042,"    silent g/^\\s*create/s/[(,]\\s*\\zs\\S\\+\\s*\\(INTEGER\\|REAL\\|TEXT\\)/\\r    \\0/g"
+"3	LINE	0
+	    silent g/^\s*create/s/[(,]\s*\zs\S\+\s*\(INTEGER\|REAL\|TEXT\)/\r    \0/g
+|3,0,3,1,1,0,1713596033,"    silent g/^\\s*create/s/[(,]\\s*\\zs\\S\\+\\s*\\(INTEGER\\|REAL\\|TEXT\\)/\\r    \\0/g"
+"4	LINE	0
+	function! s:SQLSplit()
+	endfunction
+|3,0,4,1,2,0,1713595820,"function! s:SQLSplit()","endfunction"
+"5	LINE	0
+	function! 
+|3,0,5,1,1,0,1713595119,"function! "
+"6	LINE	0
+	
+|3,0,6,1,1,0,1713595083,""
+"7	LINE	0
 	    def __getitem__(self, key):
 	        return getattr(self, key)
-|3,0,1,1,2,0,1713543291,"    def __getitem__(self, key):","        return getattr(self, key)"
-"2	LINE	0
-	    def __str__(self):
-	        return self.__class__.__name__ + "(" + ", ".join([f"{key}={repr(value)}" for key, value in self.__dict__.items()]) + ")"
-|3,0,2,1,2,0,1713543284,"    def __str__(self):","        return self.__class__.__name__ + \"(\" + \", \".join([f\"{key}={repr(value)}\" for key, value in self.__dict__.items()]) + \")\""
-"3	LINE	0
-	    def __str__(self):
-	        return self.__class__.__name__ + "(" + ", ".join([f"{key}={repr(value)}" for key, value in self.__dict__.items()]) + ")"
-|3,0,3,1,2,0,1713543282,"    def __str__(self):","        return self.__class__.__name__ + \"(\" + \", \".join([f\"{key}={repr(value)}\" for key, value in self.__dict__.items()]) + \")\""
-"4	LINE	0
-	    def __str__(self):
-	        return self.__class__.__name__ + "(" + ", ".join([f"{key}={repr(value)}" for key, value in self.__dict__.items()]) + ")"
-|3,0,4,1,2,0,1713543264,"    def __str__(self):","        return self.__class__.__name__ + \"(\" + \", \".join([f\"{key}={repr(value)}\" for key, value in self.__dict__.items()]) + \")\""
-"5	LINE	0
-	    [ (seq.id, seq.name) for seq in sequences ]
-|3,0,5,1,1,0,1713542675,"    [ (seq.id, seq.name) for seq in sequences ]"
-"6	LINE	0
-	    keys_to_look_for = [ 'id', 'name', 'asdf' ]
-|3,0,6,1,1,0,1713542621,"    keys_to_look_for = [ 'id', 'name', 'asdf' ]"
-"7	LINE	0
-	    assert all(key in sequences[0] for key in keys_to_look_for), f"expected all keys to be in sequences[0]: {keys_to_look_for}"
-|3,0,7,1,1,0,1713542551,"    assert all(key in sequences[0] for key in keys_to_look_for), f\"expected all keys to be in sequences[0]: {keys_to_look_for}\""
+|3,0,7,1,2,0,1713543291,"    def __getitem__(self, key):","        return getattr(self, key)"
 "8	LINE	0
-	    assert 
-|3,0,8,1,1,0,1713542523,"    assert "
+	    def __str__(self):
+	        return self.__class__.__name__ + "(" + ", ".join([f"{key}={repr(value)}" for key, value in self.__dict__.items()]) + ")"
+|3,0,8,1,2,0,1713543284,"    def __str__(self):","        return self.__class__.__name__ + \"(\" + \", \".join([f\"{key}={repr(value)}\" for key, value in self.__dict__.items()]) + \")\""
 "9	LINE	0
-	    extras
-|3,0,9,1,1,0,1713542367,"    extras"
+	    def __str__(self):
+	        return self.__class__.__name__ + "(" + ", ".join([f"{key}={repr(value)}" for key, value in self.__dict__.items()]) + ")"
+|3,0,9,1,2,0,1713543282,"    def __str__(self):","        return self.__class__.__name__ + \"(\" + \", \".join([f\"{key}={repr(value)}\" for key, value in self.__dict__.items()]) + \")\""
 "a	CHAR	0
 	Tabularize /:/l1c1l1
 |3,0,10,0,1,0,1713543335,"Tabularize /:/l1c1l1"
@@ -7239,42 +7286,198 @@ $
 |<"                <form method=\"POST\" action=\"/resume_download\">","                    <input type=\"hidden\" name=\"id\" value=\"{{ id }}\">","                    <input type=\"submit\" value=\"Resume\">","                </form>","                {% endif %}","                {% if status == 'downloading' %}","                <form method=\"POST\" action=\"/pause_download\">","                    <input type=\"hidden\" name=\"id\" value=\"{{ id }}\">",>61
 |<"                    <input type=\"submit\" value=\"Pause\">","                </form>","                {% endif %}","","            </li>","        {% endfor %}","    </ul>\"\"\", downloads=downloads)"
 "-	CHAR	0
-	id, name
-|3,0,36,0,1,0,1713542761,"id, name"
+	g
+|3,0,36,0,1,0,1713596080,"g"
 
 # File marks:
-'0  406  16  ~/hateoas/hateoas-api.py
-|4,48,406,16,1713593847,"~/hateoas/hateoas-api.py"
-'1  1  0  ~/hateoas/templates/autocomp.j2
-|4,49,1,0,1713524011,"~/hateoas/templates/autocomp.j2"
-'2  1  0  ~/hateoas/templates/autocomp.j2
-|4,50,1,0,1713524011,"~/hateoas/templates/autocomp.j2"
-'3  1  0  ~/hateoas/model.py
-|4,51,1,0,1713515148,"~/hateoas/model.py"
-'4  1  0  ~/hateoas/model.py
-|4,52,1,0,1713515148,"~/hateoas/model.py"
-'5  44  0  ~/tooling/typescript-goals.txt
-|4,53,44,0,1713515051,"~/tooling/typescript-goals.txt"
-'6  44  0  ~/tooling/typescript-goals.txt
-|4,54,44,0,1713515051,"~/tooling/typescript-goals.txt"
-'7  44  0  ~/tooling/typescript-goals.txt
-|4,55,44,0,1713515051,"~/tooling/typescript-goals.txt"
-'8  44  0  ~/tooling/typescript-goals.txt
-|4,56,44,0,1713515051,"~/tooling/typescript-goals.txt"
-'9  44  0  ~/tooling/typescript-goals.txt
-|4,57,44,0,1713515051,"~/tooling/typescript-goals.txt"
+'0  1  0  ~/.config/git/token.gitconfig
+|4,48,1,0,1713596645,"~/.config/git/token.gitconfig"
+'1  1  0  ~/hateoas/data/videos.db
+|4,49,1,0,1713596454,"~/hateoas/data/videos.db"
+'2  1  0  ~/hateoas/data/videos.db
+|4,50,1,0,1713596454,"~/hateoas/data/videos.db"
+'3  1  0  ~/hateoas/data/videos.db
+|4,51,1,0,1713596170,"~/hateoas/data/videos.db"
+'4  1  0  ~/hateoas/data/videos.db
+|4,52,1,0,1713596170,"~/hateoas/data/videos.db"
+'5  591  4  ~/hateoas/hateoas-api.py
+|4,53,591,4,1713595016,"~/hateoas/hateoas-api.py"
+'6  591  4  ~/hateoas/hateoas-api.py
+|4,54,591,4,1713595016,"~/hateoas/hateoas-api.py"
+'7  591  4  ~/hateoas/hateoas-api.py
+|4,55,591,4,1713595016,"~/hateoas/hateoas-api.py"
+'8  591  4  ~/hateoas/hateoas-api.py
+|4,56,591,4,1713595016,"~/hateoas/hateoas-api.py"
+'9  591  4  ~/hateoas/hateoas-api.py
+|4,57,591,4,1713595016,"~/hateoas/hateoas-api.py"
 
 # Jumplist (newest first):
+-'  1  0  ~/.config/git/token.gitconfig
+|4,39,1,0,1713596645,"~/.config/git/token.gitconfig"
+-'  13  0  ~/.config/git/config
+|4,39,13,0,1713596645,"~/.config/git/config"
+-'  1  0  ~/hateoas/data/videos.db
+|4,39,1,0,1713596454,"~/hateoas/data/videos.db"
+-'  1  0  ~/hateoas/data/videos.db
+|4,39,1,0,1713596454,"~/hateoas/data/videos.db"
+-'  1  0  ~/hateoas/data/videos.db
+|4,39,1,0,1713596170,"~/hateoas/data/videos.db"
+-'  17  43  ~/hateoas/hateoas-api.py
+|4,39,17,43,1713596159,"~/hateoas/hateoas-api.py"
+-'  17  43  ~/hateoas/hateoas-api.py
+|4,39,17,43,1713596159,"~/hateoas/hateoas-api.py"
+-'  17  43  ~/hateoas/hateoas-api.py
+|4,39,17,43,1713596159,"~/hateoas/hateoas-api.py"
+-'  22  0  ~/.vim/plugin/sqljoin.vim
+|4,39,22,0,1713596151,"~/.vim/plugin/sqljoin.vim"
+-'  22  0  ~/.vim/plugin/sqljoin.vim
+|4,39,22,0,1713596151,"~/.vim/plugin/sqljoin.vim"
+-'  22  0  ~/.vim/plugin/sqljoin.vim
+|4,39,22,0,1713596151,"~/.vim/plugin/sqljoin.vim"
+-'  25  4  ~/hateoas/main.sql
+|4,39,25,4,1713596145,"~/hateoas/main.sql"
+-'  25  4  ~/hateoas/main.sql
+|4,39,25,4,1713596145,"~/hateoas/main.sql"
+-'  25  4  ~/hateoas/main.sql
+|4,39,25,4,1713596145,"~/hateoas/main.sql"
+-'  26  0  ~/hateoas/main.sql
+|4,39,26,0,1713596120,"~/hateoas/main.sql"
+-'  27  0  ~/hateoas/main.sql
+|4,39,27,0,1713596120,"~/hateoas/main.sql"
+-'  26  0  ~/hateoas/main.sql
+|4,39,26,0,1713596120,"~/hateoas/main.sql"
+-'  27  0  ~/hateoas/main.sql
+|4,39,27,0,1713596120,"~/hateoas/main.sql"
+-'  26  0  ~/hateoas/main.sql
+|4,39,26,0,1713596120,"~/hateoas/main.sql"
+-'  27  0  ~/hateoas/main.sql
+|4,39,27,0,1713596120,"~/hateoas/main.sql"
+-'  20  0  ~/hateoas/main.sql
+|4,39,20,0,1713596101,"~/hateoas/main.sql"
+-'  20  0  ~/hateoas/main.sql
+|4,39,20,0,1713596101,"~/hateoas/main.sql"
+-'  20  0  ~/hateoas/main.sql
+|4,39,20,0,1713596101,"~/hateoas/main.sql"
+-'  4  0  ~/hateoas/main.sql
+|4,39,4,0,1713596099,"~/hateoas/main.sql"
+-'  4  0  ~/hateoas/main.sql
+|4,39,4,0,1713596099,"~/hateoas/main.sql"
+-'  4  0  ~/hateoas/main.sql
+|4,39,4,0,1713596099,"~/hateoas/main.sql"
+-'  10  282  ~/hateoas/main.sql
+|4,39,10,282,1713596027,"~/hateoas/main.sql"
+-'  10  282  ~/hateoas/main.sql
+|4,39,10,282,1713596027,"~/hateoas/main.sql"
+-'  10  282  ~/hateoas/main.sql
+|4,39,10,282,1713596027,"~/hateoas/main.sql"
+-'  1  0  ~/hateoas/main.sql
+|4,39,1,0,1713595849,"~/hateoas/main.sql"
+-'  1  0  ~/hateoas/main.sql
+|4,39,1,0,1713595849,"~/hateoas/main.sql"
+-'  1  0  ~/hateoas/main.sql
+|4,39,1,0,1713595849,"~/hateoas/main.sql"
+-'  28  4  ~/hateoas/main.sql
+|4,39,28,4,1713595736,"~/hateoas/main.sql"
+-'  28  4  ~/hateoas/main.sql
+|4,39,28,4,1713595736,"~/hateoas/main.sql"
+-'  28  4  ~/hateoas/main.sql
+|4,39,28,4,1713595736,"~/hateoas/main.sql"
+-'  591  4  ~/hateoas/hateoas-api.py
+|4,39,591,4,1713595016,"~/hateoas/hateoas-api.py"
+-'  591  4  ~/hateoas/hateoas-api.py
+|4,39,591,4,1713595016,"~/hateoas/hateoas-api.py"
+-'  591  4  ~/hateoas/hateoas-api.py
+|4,39,591,4,1713595016,"~/hateoas/hateoas-api.py"
+-'  591  4  ~/hateoas/hateoas-api.py
+|4,39,591,4,1713595016,"~/hateoas/hateoas-api.py"
+-'  1  0  ~/hateoas/hateoas-api.py
+|4,39,1,0,1713594993,"~/hateoas/hateoas-api.py"
+-'  1  0  ~/hateoas/hateoas-api.py
+|4,39,1,0,1713594993,"~/hateoas/hateoas-api.py"
+-'  1  0  ~/hateoas/hateoas-api.py
+|4,39,1,0,1713594993,"~/hateoas/hateoas-api.py"
+-'  1  0  ~/hateoas/hateoas-api.py
+|4,39,1,0,1713594993,"~/hateoas/hateoas-api.py"
+-'  1  0  ~/hateoas/hateoas-model.py
+|4,39,1,0,1713594932,"~/hateoas/hateoas-model.py"
+-'  1  0  ~/hateoas/hateoas-model.py
+|4,39,1,0,1713594932,"~/hateoas/hateoas-model.py"
+-'  1  0  ~/hateoas/hateoas-model.py
+|4,39,1,0,1713594932,"~/hateoas/hateoas-model.py"
+-'  1  0  ~/hateoas/hateoas-model.py
+|4,39,1,0,1713594932,"~/hateoas/hateoas-model.py"
+-'  1  0  ~/hateoas/hateoas-model.py
+|4,39,1,0,1713594932,"~/hateoas/hateoas-model.py"
+-'  406  16  ~/hateoas/hateoas-api.py
+|4,39,406,16,1713593847,"~/hateoas/hateoas-api.py"
+-'  406  16  ~/hateoas/hateoas-api.py
+|4,39,406,16,1713593847,"~/hateoas/hateoas-api.py"
+-'  406  16  ~/hateoas/hateoas-api.py
+|4,39,406,16,1713593847,"~/hateoas/hateoas-api.py"
+-'  406  16  ~/hateoas/hateoas-api.py
+|4,39,406,16,1713593847,"~/hateoas/hateoas-api.py"
+-'  406  16  ~/hateoas/hateoas-api.py
+|4,39,406,16,1713593847,"~/hateoas/hateoas-api.py"
 -'  406  16  ~/hateoas/hateoas-api.py
 |4,39,406,16,1713593847,"~/hateoas/hateoas-api.py"
 -'  45  0  ~/hateoas/hateoas-api.py
 |4,39,45,0,1713543336,"~/hateoas/hateoas-api.py"
+-'  45  0  ~/hateoas/hateoas-api.py
+|4,39,45,0,1713543336,"~/hateoas/hateoas-api.py"
+-'  45  0  ~/hateoas/hateoas-api.py
+|4,39,45,0,1713543336,"~/hateoas/hateoas-api.py"
+-'  45  0  ~/hateoas/hateoas-api.py
+|4,39,45,0,1713543336,"~/hateoas/hateoas-api.py"
+-'  45  0  ~/hateoas/hateoas-api.py
+|4,39,45,0,1713543336,"~/hateoas/hateoas-api.py"
+-'  45  0  ~/hateoas/hateoas-api.py
+|4,39,45,0,1713543336,"~/hateoas/hateoas-api.py"
+-'  48  0  ~/hateoas/hateoas-api.py
+|4,39,48,0,1713543294,"~/hateoas/hateoas-api.py"
+-'  48  0  ~/hateoas/hateoas-api.py
+|4,39,48,0,1713543294,"~/hateoas/hateoas-api.py"
+-'  48  0  ~/hateoas/hateoas-api.py
+|4,39,48,0,1713543294,"~/hateoas/hateoas-api.py"
+-'  48  0  ~/hateoas/hateoas-api.py
+|4,39,48,0,1713543294,"~/hateoas/hateoas-api.py"
+-'  48  0  ~/hateoas/hateoas-api.py
+|4,39,48,0,1713543294,"~/hateoas/hateoas-api.py"
 -'  48  0  ~/hateoas/hateoas-api.py
 |4,39,48,0,1713543294,"~/hateoas/hateoas-api.py"
 -'  56  17  ~/hateoas/hateoas-api.py
 |4,39,56,17,1713543269,"~/hateoas/hateoas-api.py"
+-'  56  17  ~/hateoas/hateoas-api.py
+|4,39,56,17,1713543269,"~/hateoas/hateoas-api.py"
+-'  56  17  ~/hateoas/hateoas-api.py
+|4,39,56,17,1713543269,"~/hateoas/hateoas-api.py"
+-'  56  17  ~/hateoas/hateoas-api.py
+|4,39,56,17,1713543269,"~/hateoas/hateoas-api.py"
+-'  56  17  ~/hateoas/hateoas-api.py
+|4,39,56,17,1713543269,"~/hateoas/hateoas-api.py"
+-'  56  17  ~/hateoas/hateoas-api.py
+|4,39,56,17,1713543269,"~/hateoas/hateoas-api.py"
 -'  38  0  ~/hateoas/hateoas-api.py
 |4,39,38,0,1713543266,"~/hateoas/hateoas-api.py"
+-'  38  0  ~/hateoas/hateoas-api.py
+|4,39,38,0,1713543266,"~/hateoas/hateoas-api.py"
+-'  38  0  ~/hateoas/hateoas-api.py
+|4,39,38,0,1713543266,"~/hateoas/hateoas-api.py"
+-'  38  0  ~/hateoas/hateoas-api.py
+|4,39,38,0,1713543266,"~/hateoas/hateoas-api.py"
+-'  38  0  ~/hateoas/hateoas-api.py
+|4,39,38,0,1713543266,"~/hateoas/hateoas-api.py"
+-'  38  0  ~/hateoas/hateoas-api.py
+|4,39,38,0,1713543266,"~/hateoas/hateoas-api.py"
+-'  421  40  ~/hateoas/hateoas-api.py
+|4,39,421,40,1713543231,"~/hateoas/hateoas-api.py"
+-'  421  40  ~/hateoas/hateoas-api.py
+|4,39,421,40,1713543231,"~/hateoas/hateoas-api.py"
+-'  421  40  ~/hateoas/hateoas-api.py
+|4,39,421,40,1713543231,"~/hateoas/hateoas-api.py"
+-'  421  40  ~/hateoas/hateoas-api.py
+|4,39,421,40,1713543231,"~/hateoas/hateoas-api.py"
+-'  421  40  ~/hateoas/hateoas-api.py
+|4,39,421,40,1713543231,"~/hateoas/hateoas-api.py"
 -'  421  40  ~/hateoas/hateoas-api.py
 |4,39,421,40,1713543231,"~/hateoas/hateoas-api.py"
 -'  423  0  ~/hateoas/hateoas-api.py
@@ -7309,171 +7512,38 @@ $
 |4,39,129,15,1713543192,"~/hateoas/hateoas-api.py"
 -'  126  4  ~/hateoas/hateoas-api.py
 |4,39,126,4,1713543192,"~/hateoas/hateoas-api.py"
--'  37  32  ~/hateoas/hateoas-api.py
-|4,39,37,32,1713543192,"~/hateoas/hateoas-api.py"
--'  26  0  ~/hateoas/hateoas-api.py
-|4,39,26,0,1713543192,"~/hateoas/hateoas-api.py"
--'  25  0  ~/hateoas/hateoas-api.py
-|4,39,25,0,1713543192,"~/hateoas/hateoas-api.py"
--'  1  0  ~/hateoas/templates/autocomp.j2
-|4,39,1,0,1713524011,"~/hateoas/templates/autocomp.j2"
--'  1  0  ~/hateoas/templates/autocomp.jinja
-|4,39,1,0,1713524008,"~/hateoas/templates/autocomp.jinja"
--'  9  0  ~/hateoas/templates/autocomp.jinja2
-|4,39,9,0,1713523802,"~/hateoas/templates/autocomp.jinja2"
--'  1  0  ~/hateoas/templates/autocomp.jinja2
-|4,39,1,0,1713523794,"~/hateoas/templates/autocomp.jinja2"
--'  1  0  ~/hateoas/templates/nav.html
-|4,39,1,0,1713523792,"~/hateoas/templates/nav.html"
--'  5  4  ~/hateoas/templates/nav.html
-|4,39,5,4,1713523791,"~/hateoas/templates/nav.html"
--'  235  8  ~/hateoas/hateoas-api.py
-|4,39,235,8,1713523244,"~/hateoas/hateoas-api.py"
--'  250  4  ~/hateoas/hateoas-api.py
-|4,39,250,4,1713519357,"~/hateoas/hateoas-api.py"
--'  230  0  ~/.vim/ide.vim
-|4,39,230,0,1713519326,"~/.vim/ide.vim"
--'  323  41  ~/.vim/ide.vim
-|4,39,323,41,1713519315,"~/.vim/ide.vim"
--'  2  47  ~/.vim/ide.vim
-|4,39,2,47,1713519295,"~/.vim/ide.vim"
--'  854  4  ~/.vim/vimrc
-|4,39,854,4,1713519293,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1713519275,"~/.vim/vimrc"
--'  249  4  ~/hateoas/hateoas-api.py
-|4,39,249,4,1713519257,"~/hateoas/hateoas-api.py"
--'  251  4  ~/hateoas/hateoas-api.py
-|4,39,251,4,1713519191,"~/hateoas/hateoas-api.py"
--'  246  37  ~/hateoas/hateoas-api.py
-|4,39,246,37,1713518359,"~/hateoas/hateoas-api.py"
--'  58  22  ~/hateoas/hateoas-api.py
-|4,39,58,22,1713518298,"~/hateoas/hateoas-api.py"
--'  22  0  ~/hateoas/hateoas-model.py
-|4,39,22,0,1713518275,"~/hateoas/hateoas-model.py"
--'  3  0  ~/hateoas/hateoas-api.py
-|4,39,3,0,1713517964,"~/hateoas/hateoas-api.py"
--'  5  4  ~/hateoas/hateoas-api.py
-|4,39,5,4,1713517951,"~/hateoas/hateoas-api.py"
--'  1  0  ~/hateoas/hateoas-api.py
-|4,39,1,0,1713517950,"~/hateoas/hateoas-api.py"
--'  14  0  ~/hateoas/main.sql
-|4,39,14,0,1713517943,"~/hateoas/main.sql"
--'  23  0  ~/hateoas/hateoas-model.py
-|4,39,23,0,1713517734,"~/hateoas/hateoas-model.py"
--'  24  32  ~/hateoas/hateoas-model.py
-|4,39,24,32,1713517733,"~/hateoas/hateoas-model.py"
--'  21  27  ~/hateoas/hateoas-model.py
-|4,39,21,27,1713517731,"~/hateoas/hateoas-model.py"
--'  20  33  ~/hateoas/hateoas-model.py
-|4,39,20,33,1713517729,"~/hateoas/hateoas-model.py"
--'  15  14  ~/hateoas/hateoas-model.py
-|4,39,15,14,1713517642,"~/hateoas/hateoas-model.py"
--'  16  19  ~/hateoas/hateoas-model.py
-|4,39,16,19,1713517634,"~/hateoas/hateoas-model.py"
--'  11  0  ~/hateoas/hateoas-model.py
-|4,39,11,0,1713517442,"~/hateoas/hateoas-model.py"
--'  12  17  ~/hateoas/hateoas-model.py
-|4,39,12,17,1713517437,"~/hateoas/hateoas-model.py"
--'  13  18  ~/hateoas/hateoas-model.py
-|4,39,13,18,1713517391,"~/hateoas/hateoas-model.py"
--'  9  0  ~/hateoas/hateoas-model.py
-|4,39,9,0,1713517261,"~/hateoas/hateoas-model.py"
--'  1  0  ~/hateoas/hateoas-model.py
-|4,39,1,0,1713517114,"~/hateoas/hateoas-model.py"
--'  7  0  ~/hateoas/hateoas-model.py
-|4,39,7,0,1713517111,"~/hateoas/hateoas-model.py"
--'  1  0  ~/tooling/typescript-goals.txt
-|4,39,1,0,1713517007,"~/tooling/typescript-goals.txt"
--'  11  0  ~/hateoas/main.sql
-|4,39,11,0,1713516147,"~/hateoas/main.sql"
--'  11  0  ~/.vim/plugin/sqljoin.vim
-|4,39,11,0,1713516142,"~/.vim/plugin/sqljoin.vim"
--'  1  0  ~/hateoas/model.py
-|4,39,1,0,1713515148,"~/hateoas/model.py"
--'  44  0  ~/tooling/typescript-goals.txt
-|4,39,44,0,1713515051,"~/tooling/typescript-goals.txt"
--'  44  0  ~/tooling/typescript-goals.txt
-|4,39,44,0,1713515051,"~/tooling/typescript-goals.txt"
--'  12  17  ~/tooling/typescript-goals.txt
-|4,39,12,17,1713512222,"~/tooling/typescript-goals.txt"
--'  12  17  ~/tooling/typescript-goals.txt
-|4,39,12,17,1713512222,"~/tooling/typescript-goals.txt"
--'  1  0  ~/tooling/typescript-goals.txt
-|4,39,1,0,1713512219,"~/tooling/typescript-goals.txt"
--'  1  0  ~/tooling/typescript-goals.txt
-|4,39,1,0,1713512219,"~/tooling/typescript-goals.txt"
--'  43  0  ~/tooling/typescript-goals.txt
-|4,39,43,0,1713512202,"~/tooling/typescript-goals.txt"
--'  43  0  ~/tooling/typescript-goals.txt
-|4,39,43,0,1713512202,"~/tooling/typescript-goals.txt"
--'  42  0  ~/tooling/typescript-goals.txt
-|4,39,42,0,1713512198,"~/tooling/typescript-goals.txt"
--'  41  59  ~/tooling/typescript-goals.txt
-|4,39,41,59,1713512198,"~/tooling/typescript-goals.txt"
--'  42  0  ~/tooling/typescript-goals.txt
-|4,39,42,0,1713512198,"~/tooling/typescript-goals.txt"
--'  41  59  ~/tooling/typescript-goals.txt
-|4,39,41,59,1713512198,"~/tooling/typescript-goals.txt"
--'  36  0  ~/tooling/typescript-goals.txt
-|4,39,36,0,1713512180,"~/tooling/typescript-goals.txt"
--'  35  36  ~/tooling/typescript-goals.txt
-|4,39,35,36,1713512180,"~/tooling/typescript-goals.txt"
--'  36  0  ~/tooling/typescript-goals.txt
-|4,39,36,0,1713512180,"~/tooling/typescript-goals.txt"
--'  35  36  ~/tooling/typescript-goals.txt
-|4,39,35,36,1713512180,"~/tooling/typescript-goals.txt"
--'  18  0  ~/tooling/typescript-goals.txt
-|4,39,18,0,1713512165,"~/tooling/typescript-goals.txt"
--'  18  0  ~/tooling/typescript-goals.txt
-|4,39,18,0,1713512165,"~/tooling/typescript-goals.txt"
--'  17  39  ~/tooling/typescript-goals.txt
-|4,39,17,39,1713512163,"~/tooling/typescript-goals.txt"
--'  17  39  ~/tooling/typescript-goals.txt
-|4,39,17,39,1713512163,"~/tooling/typescript-goals.txt"
--'  25  0  ~/tooling/typescript-goals.txt
-|4,39,25,0,1713512151,"~/tooling/typescript-goals.txt"
--'  25  0  ~/tooling/typescript-goals.txt
-|4,39,25,0,1713512151,"~/tooling/typescript-goals.txt"
--'  26  34  ~/tooling/typescript-goals.txt
-|4,39,26,34,1713512150,"~/tooling/typescript-goals.txt"
--'  26  34  ~/tooling/typescript-goals.txt
-|4,39,26,34,1713512150,"~/tooling/typescript-goals.txt"
--'  21  4  ~/tooling/typescript-goals.txt
-|4,39,21,4,1713512115,"~/tooling/typescript-goals.txt"
--'  21  4  ~/tooling/typescript-goals.txt
-|4,39,21,4,1713512115,"~/tooling/typescript-goals.txt"
--'  16  0  ~/tooling/typescript-goals.txt
-|4,39,16,0,1713512107,"~/tooling/typescript-goals.txt"
--'  16  0  ~/tooling/typescript-goals.txt
-|4,39,16,0,1713512107,"~/tooling/typescript-goals.txt"
--'  10  0  ~/tooling/typescript-goals.txt
-|4,39,10,0,1713511509,"~/tooling/typescript-goals.txt"
--'  10  0  ~/tooling/typescript-goals.txt
-|4,39,10,0,1713511509,"~/tooling/typescript-goals.txt"
--'  19  0  ~/tooling/typescript-goals.txt
-|4,39,19,0,1713511501,"~/tooling/typescript-goals.txt"
--'  19  0  ~/tooling/typescript-goals.txt
-|4,39,19,0,1713511501,"~/tooling/typescript-goals.txt"
--'  29  0  ~/hateoas/main.sql
-|4,39,29,0,1713447154,"~/hateoas/main.sql"
--'  29  0  ~/hateoas/main.sql
-|4,39,29,0,1713447154,"~/hateoas/main.sql"
--'  1  0  ~/hateoas/main.sql
-|4,39,1,0,1713447151,"~/hateoas/main.sql"
--'  1  0  ~/hateoas/main.sql
-|4,39,1,0,1713447151,"~/hateoas/main.sql"
--'  19  6  ~/.vim/coc-settings.json
-|4,39,19,6,1713447146,"~/.vim/coc-settings.json"
 
 # Buffer list:
-%~/hateoas/hateoas-api.py	406	16
+%~/.config/git/token.gitconfig	1	0
+%~/.vim/plugin/sqljoin.vim	22	0
+%~/hateoas/hateoas-api.py	17	43
+%~/hateoas/data/videos.db	1	0
 
 # History of marks within files (newest to oldest):
 
+> ~/.config/git/token.gitconfig
+	*	1713596645	0
+	"	1	0
+	^	1	61
+	.	1	60
+	+	1	21
+	+	1	60
+
+> ~/.config/git/config
+	*	1713596642	0
+	"	13	0
+	.	10	0
+	+	8	17
+	+	9	8
+	+	10	0
+
+> ~/hateoas/data/videos.db
+	*	1713596453	0
+	"	1	0
+
 > ~/hateoas/hateoas-api.py
-	*	1713543358	0
-	"	406	16
+	*	1713596158	0
+	"	17	43
 	.	40	0
 	+	195	0
 	+	203	0
@@ -7568,10 +7638,66 @@ $
 	+	46	0
 	+	40	0
 
+> ~/.vim/plugin/sqljoin.vim
+	*	1713596149	0
+	"	22	0
+	^	22	27
+	.	22	0
+	+	18	10
+	+	26	12
+	+	13	12
+	+	13	16
+	+	18	0
+	+	13	0
+	+	10	10
+	+	4	57
+	+	5	29
+	+	6	20
+	+	7	13
+	+	10	0
+	+	5	8
+	+	8	10
+	+	9	30
+	+	27	9
+	+	5	19
+	+	8	17
+	+	13	11
+	+	13	4
+	+	13	0
+	+	18	0
+	+	14	14
+	+	15	15
+	+	16	11
+	+	17	0
+	+	14	10
+	+	15	10
+	+	16	0
+	+	17	10
+	+	18	0
+	+	10	0
+	+	18	0
+	+	24	10
+	+	29	17
+	+	28	0
+	+	2	0
+	+	23	0
+	+	21	0
+	+	23	0
+	+	21	0
+	+	21	32
+	+	23	61
+	+	21	10
+	+	23	0
+	+	21	40
+	+	23	69
+	+	17	10
+	+	23	0
+	+	22	0
+
 > ~/hateoas/main.sql
-	*	1713542692	0
-	"	1	0
-	.	4	0
+	*	1713596144	0
+	"	25	4
+	.	20	0
 	+	4	27
 	+	4	132
 	+	4	122
@@ -7583,63 +7709,72 @@ $
 	+	10	191
 	+	10	252
 	+	10	140
-	+	21	33
-	+	21	165
-	+	32	0
-	+	32	34
-	+	32	24
-	+	32	0
-	+	32	31
-	+	32	0
-	+	32	17
-	+	32	24
-	+	32	0
-	+	32	39
-	+	32	0
-	+	32	23
-	+	32	1
-	+	21	24
-	+	21	238
-	+	21	96
-	+	32	0
+	+	20	33
+	+	20	165
+	+	27	0
+	+	27	34
+	+	27	24
+	+	27	0
+	+	27	31
+	+	27	0
+	+	27	17
+	+	27	24
+	+	27	0
+	+	27	39
+	+	27	0
+	+	27	23
+	+	27	1
+	+	20	24
+	+	20	238
+	+	20	96
+	+	27	0
 	+	10	162
 	+	4	103
 	+	10	229
-	+	21	149
-	+	21	123
-	+	32	0
+	+	20	149
+	+	20	123
+	+	27	0
 	+	10	309
-	+	21	223
-	+	21	255
-	+	21	213
-	+	21	29
+	+	20	223
+	+	20	255
+	+	20	213
+	+	20	29
 	+	10	25
 	+	4	26
 	+	4	131
 	+	2	2
-	+	33	1
+	+	28	1
 	+	10	229
 	+	10	222
-	+	21	115
+	+	20	115
 	+	1	0
 	+	10	206
 	+	10	222
-	+	32	0
-	+	21	153
-	+	21	255
-	+	21	260
-	+	21	287
-	+	21	255
-	+	21	259
+	+	27	0
+	+	20	153
+	+	20	255
+	+	20	260
+	+	20	287
+	+	20	255
+	+	20	259
 	+	10	0
 	+	4	26
 	+	4	0
 	+	1	0
 	+	4	26
 	+	4	0
+	+	20	0
+	+	4	0
+	+	20	0
+	+	4	26
+	+	4	0
+	+	20	0
+	+	4	0
+	+	27	0
+	+	20	0
 
 > ~/hateoas/hateoas-model.py
-	*	1713540487	0
+	*	1713594930	0
 	"	1	0
 	^	24	0
 	.	24	0
@@ -8050,44 +8185,6 @@ $
 > /usr/share/vim/vim90/doc/options.txt
 	*	1713516547	0
 	"	6025	22
-
-> ~/.vim/plugin/sqljoin.vim
-	*	1713516141	0
-	"	11	0
-	^	16	11
-	.	9	0
-	+	17	10
-	+	19	12
-	+	12	12
-	+	12	16
-	+	17	0
-	+	12	0
-	+	9	10
-	+	3	57
-	+	4	29
-	+	5	20
-	+	6	13
-	+	9	0
-	+	4	8
-	+	7	10
-	+	8	30
-	+	20	9
-	+	4	19
-	+	7	17
-	+	12	11
-	+	12	4
-	+	12	0
-	+	17	0
-	+	13	14
-	+	14	15
-	+	15	11
-	+	16	0
-	+	13	10
-	+	14	10
-	+	15	0
-	+	16	10
-	+	17	0
-	+	9	0
 
 > ~/hateoas/model.py
 	*	1713515147	0
@@ -12195,22 +12292,6 @@ $
 	+	24	10
 	+	23	39
 	+	7	11
-
-> ~/.config/git/token.gitconfig
-	*	1711544827	0
-	"	1	60
-	^	1	61
-	.	1	60
-	+	1	21
-	+	1	60
-
-> ~/.config/git/config
-	*	1711544818	0
-	"	13	25
-	.	10	0
-	+	8	17
-	+	9	8
-	+	10	0
 
 > ~/servers/elements.js
 	*	1711444676	0
