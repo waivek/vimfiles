@@ -71,6 +71,11 @@ function! s:RunVim()
 endfunction
 
 
+function! s:RunBash()
+    let command = 'vert term bash -c "source %"'
+    execute command
+endfunction
+
 function! s:Run()
     if &ft == "python"
         call s:RunPython()
@@ -84,6 +89,8 @@ function! s:Run()
         call s:RunAutoHotkey()
     elseif &ft == "vim"
         call s:RunVim()
+    elseif &ft == "sh"
+        call s:RunBash()
     endif
 endfunction
 

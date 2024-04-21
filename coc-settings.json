@@ -25,6 +25,11 @@
     "diagnostic.showUnused": false,
     "diagnostic.level": "information",
 
+    // "$schema" = 'https://starship.rs/config-schema.json'
+    "toml.schema.associations": {
+        "starship.toml": "https://starship.rs/config-schema.json"
+    },
+
 
 
     "tailwindCSS.enable": true,
