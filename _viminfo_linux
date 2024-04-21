@@ -11,21 +11,77 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/):
+~MSle0~/LogTest
 
 # Last Substitute Search Pattern:
 ~MSle0&:
 
 # Last Substitute String:
-$
+$\=strftime("%c", submatch(1))
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1713685700,,"q"
+|2,0,1713687976,,"q"
+:!git add %
+|2,0,1713687974,,"!git add %"
+:e!
+|2,0,1713687963,,"e!"
+:LogPrettifyFile
+|2,0,1713687951,,"LogPrettifyFile"
+:LogTest
+|2,0,1713687882,,"LogTest"
+:s/
+|2,0,1713687808,,"s/"
+:LogPrettyPrintLine
+|2,0,1713687763,,"LogPrettyPrintLine"
+:HotReload
+|2,0,1713687656,,"HotReload"
+:so %
+|2,0,1713687654,,"so %"
+:MRU log
+|2,0,1713687647,,"MRU log"
+:echo strptime()
+|2,0,1713687603,,"echo strptime()"
+:ecoh strp
+|2,0,1713687600,,"ecoh strp"
+:e ~/.vim/plugin/logutils.vim
+|2,0,1713687596,,"e ~/.vim/plugin/logutils.vim"
+:MRU 
+|2,0,1713687590,,"MRU "
+:echo strftime("%c", split(getline("."))[0])
+|2,0,1713687089,,"echo strftime(\"%c\", split(getline(\".\"))[0])"
+:e c
+|2,0,1713686992,,"e c"
+:e
+|2,0,1713686978,,"e"
+:echo split(getline("."))[0]
+|2,0,1713686952,,"echo split(getline(\".\"))[0]"
+:echo split(getline("."))
+|2,0,1713686949,,"echo split(getline(\".\"))"
+:echo getline(".")
+|2,0,1713686946,,"echo getline(\".\")"
+:echo split(line("."), ' ')
+|2,0,1713686943,,"echo split(line(\".\"), ' ')"
+:echo split(line("."))
+|2,0,1713686933,,"echo split(line(\".\"))"
+:echo line(".")
+|2,0,1713686929,,"echo line(\".\")"
+:echo strftime("%c"
+|2,0,1713686926,,"echo strftime(\"%c\""
+:echo strftime("%c", 1713685922)
+|2,0,1713686908,,"echo strftime(\"%c\", 1713685922)"
+:echo strftime("%c")
+|2,0,1713686900,,"echo strftime(\"%c\")"
+:h strptime()
+|2,0,1713686870,,"h strptime()"
+:echo strftime
+|2,0,1713686858,,"echo strftime"
+:e *.bash
+|2,0,1713686764,,"e *.bash"
+:pwd
+|2,0,1713685995,,"pwd"
 :bd
 |2,0,1713685538,,"bd"
-:MRU 
-|2,0,1713685251,,"MRU "
 :e gh-timeago.bash
 |2,0,1713685239,,"e gh-timeago.bash"
 :e gh-timeago-starship.bash
@@ -36,8 +92,6 @@ $
 |2,0,1713683666,,"args"
 :next
 |2,0,1713683662,,"next"
-:e
-|2,0,1713683480,,"e"
 :e gh-timeago-updates.log
 |2,0,1713683001,,"e gh-timeago-updates.log"
 :MRU bash
@@ -90,8 +144,6 @@ $
 |2,0,1713607171,,"vert term ./%"
 :vert term source %
 |2,0,1713607165,,"vert term source %"
-:pwd
-|2,0,1713607162,,"pwd"
 :Copilot panel
 |2,0,1713607107,,"Copilot panel"
 :Copilot status
@@ -124,16 +176,12 @@ $
 |2,0,1713596101,,"SQLJoin"
 :SQLSPlit
 |2,0,1713596096,,"SQLSPlit"
-:so %
-|2,0,1713596092,,"so %"
 :So %
 |2,0,1713595958,,"So %"
 :SQP
 |2,0,1713595951,,"SQP"
 :%s//\\n/g
 |2,0,1713595919,,"%s//\\\\n/g"
-:HotReload
-|2,0,1713595813,,"HotReload"
 :%s/[(,]\s*\zs\S\+\s*\(INTEGER\|REAL\|TEXT\)/    \0/g
 |2,0,1713595777,,"%s/[(,]\\s*\\zs\\S\\+\\s*\\(INTEGER\\|REAL\\|TEXT\\)/    \\0/g"
 :%s/CREATE.*\zs)\ze\s*;\s*$/)
@@ -144,8 +192,6 @@ $
 |2,0,1713595210,,"s/[(,]\\zs\\s*\\S\\+\\s*\\(INTEGER\\|REAL\\|TEXT\\)/\\0/g"
 :s/[(,]\zs\S\+\s*\(INTEGER\|REAL\|TEXT\)/\0/g
 |2,0,1713595199,,"s/[(,]\\zs\\S\\+\\s*\\(INTEGER\\|REAL\\|TEXT\\)/\\0/g"
-:s/
-|2,0,1713595148,,"s/"
 :MRU 16:sqljoin.vim
 |2,0,1713595080,,"MRU 16:sqljoin.vim"
 :MRU sqlj
@@ -366,8 +412,6 @@ $
 |2,0,1713504967,,"h join"
 :!git s
 |2,0,1713504820,,"!git s"
-:!git add %
-|2,0,1713504816,,"!git add %"
 :!
 |2,0,1713504799,,"!"
 :e ~/.vim/plugin/sqlite.vim
@@ -834,8 +878,6 @@ $
 |2,0,1712259127,,"find templates/index.html"
 :MRU 1:hateoas_downloader/Flask-SocketIO/example/app.py
 |2,0,1712259115,,"MRU 1:hateoas_downloader/Flask-SocketIO/example/app.py"
-:e!
-|2,0,1712258852,,"e!"
 :MRU 9:hateoas-websocket.py
 |2,0,1712258774,,"MRU 9:hateoas-websocket.py"
 :MRU 2:requirements.txt
@@ -3684,8 +3726,6 @@ $
 |2,0,1691916637,,"e errors.txt"
 :MRU 2:fetch.vue
 |2,0,1691916195,,"MRU 2:fetch.vue"
-:MRU log
-|2,0,1691915798,,"MRU log"
 :IsInsideNuxtProject
 |2,0,1691914127,,"IsInsideNuxtProject"
 :cd 
@@ -5116,6 +5156,8 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+? ^\(\d\+\)
+|2,1,1713687951,,"^\\(\\d\\+\\)"
 ?/purple
 |2,1,1713685057,47,"purple"
 ?/brew
@@ -7260,117 +7302,42 @@ $
 |2,4,1693311567,,"cont"
 
 # Registers:
-"0	CHAR	0
-	24
-|3,0,0,0,1,0,1713685472,"24"
-""1	LINE	0
+""0	CHAR	0
+	1713682801:
+|3,1,0,0,1,0,1713687959,"1713682801:"
+"1	LINE	0
 	
-|3,1,1,1,1,0,1713685699,""
+|3,0,1,1,1,0,1713687890,""
 "2	LINE	0
 	
-|3,0,2,1,1,0,1713685418,""
+	    "
+|3,0,2,1,2,0,1713687871,"","    \""
 "3	LINE	0
-	 The  gh-timeago-starship.bash  script will check the last time the  gh-timeago-updates.log  file was updated and if it was updated more than 12 hours ago, it will print a star emoji. Otherwise, it will print a star emoji. 
-	 Step 3: Add the script to the Starship prompt 
-	 To add the script to the Starship prompt, you need to update the  starship.toml  configuration file. 
-	 Open the  starship.toml  file in a text editor: 
-	 $ nano ~/.config/starship.toml
-	 
-	 Add the following code to the  starship.toml  file: 
-	 # ~/.config/starship.toml
-	
-|3,0,3,1,9,0,1713685285," The  gh-timeago-starship.bash  script will check the last time the  gh-timeago-updates.log  file was updated and if it was updated more than 12 hours ago, it will print a star emoji. Otherwise, it will print a star emoji. "," Step 3: Add the script to the Starship prompt "," To add the script to the Starship prompt, you need to update the  starship.toml  configuration file. "," Open the  starship.toml  file in a text editor: ",>33
-|<" $ nano ~/.config/starship.toml"," "," Add the following code to the  starship.toml  file: "," # ~/.config/starship.toml",""
+	    s/
+|3,0,3,1,1,0,1713687832,"    s/"
 "4	LINE	0
-	# awk '{field=$NF} END{print field}' /home/vivek/.config/scripts/gh-timeago-updates.log
-|3,0,4,1,1,0,1713684860,"# awk '{field=$NF} END{print field}' /home/vivek/.config/scripts/gh-timeago-updates.log"
-"5	LINE	0
 	
-|3,0,5,1,1,0,1713682779,""
+|3,0,4,1,1,0,1713687825,""
+"5	LINE	0
+	    let l:line_count = line("$")
+	    for l:line_number in range(1, l:line_count)
+	        call cursor(l:line_number, 1)
+	        call s:LogPrettyPrintLine()
+	    endfor
+|3,0,5,1,5,0,1713687795,"    let l:line_count = line(\"$\")","    for l:line_number in range(1, l:line_count)","        call cursor(l:line_number, 1)","        call s:LogPrettyPrintLine()","    endfor"
 "6	LINE	0
-	[run] gh-timego.bash
-	[write] gh-timeago.bash
-	gh could not be found
-	gh could not be found
-	gh could not be found
-	gh could not be found
-	gh could not be found
-	gh could not be found
-	gh could not be found
-	gh could not be found
-	gh could not be found
-	gh could not be found
-	gh could not be found
-	gh could not be found
-	gh could not be found
-	gh could not be found
-	gh could not be found
-	gh could not be found
-	gh could not be found
-	gh could not be found
-	gh could not be found
-	gh could not be found
-	gh could not be found
-	gh could not be found
-	gh could not be found
-	gh could not be found
-	gh could not be found
-	gh could not be found
-	gh could not be found
-	gh could not be found
-	gh could not be found
-	gh could not be found
-	gh could not be found
-	gh could not be found
-	gh could not be found
-	gh could not be found
-	gh could not be found
-	gh could not be found
-	gh could not be found
-	gh could not be found
-	gh could not be found
-	gh could not be found
-	gh could not be found
-	gh could not be found
-	gh could not be found
-	gh could not be found
-	gh could not be found
-	gh could not be found
-	gh could not be found
-	gh could not be found
-|3,0,6,1,50,0,1713644028,"[run] gh-timego.bash","[write] gh-timeago.bash","gh could not be found","gh could not be found","gh could not be found","gh could not be found","gh could not be found","gh could not be found","gh could not be found","gh could not be found","gh could not be found","gh could not be found","gh could not be found","gh could not be found","gh could not be found","gh could not be found","gh could not be found","gh could not be found",>23
-|<"gh could not be found","gh could not be found","gh could not be found","gh could not be found","gh could not be found","gh could not be found","gh could not be found","gh could not be found","gh could not be found","gh could not be found","gh could not be found","gh could not be found","gh could not be found","gh could not be found","gh could not be found","gh could not be found","gh could not be found","gh could not be found","gh could not be found","gh could not be found",>23
-|<"gh could not be found","gh could not be found","gh could not be found","gh could not be found","gh could not be found","gh could not be found","gh could not be found","gh could not be found","gh could not be found","gh could not be found","gh could not be found","gh could not be found"
+	
+|3,0,6,1,1,0,1713687758,""
 "7	LINE	0
 	
-	
-|3,0,7,1,2,0,1713627933,"",""
+|3,0,7,1,1,0,1713687757,""
 "8	LINE	0
 	
-|3,0,8,1,1,0,1713627759,""
+	
+|3,0,8,1,2,0,1713687757,"",""
 "9	LINE	0
-	Sat Apr 20 21:05:49 IST 2024: 8
-	Sat Apr 20 21:05:59 IST 2024: 8
-	Sat Apr 20 21:06:13 IST 2024: 8
-	Sat Apr 20 21:06:19 IST 2024: 8
-	Sat Apr 20 21:08:10 IST 2024: 8
-	Sat Apr 20 21:08:23 IST 2024: 8
-	Sat Apr 20 21:08:24 IST 2024: 8
-	Sat Apr 20 21:08:36 IST 2024: 8
-	Sat Apr 20 21:08:41 IST 2024: 8
-	Sat Apr 20 21:08:46 IST 2024: 8
-	Sat Apr 20 21:08:47 IST 2024: 8
-	Sat Apr 20 21:08:50 IST 2024: 8
-	Sat Apr 20 21:09:04 IST 2024: 8
-	Sat Apr 20 21:09:11 IST 2024: 8
-	Sat Apr 20 21:09:35 IST 2024: 8
-	Sat Apr 20 21:09:44 IST 2024: 8
-	Sat Apr 20 21:11:01 IST 2024: 8
-	Sat Apr 20 21:11:07 IST 2024: 8
-	Sat Apr 20 21:11:34 IST 2024: 8
-	Sat Apr 20 21:11:52 IST 2024: 8
-|3,0,9,1,20,0,1713627721,"Sat Apr 20 21:05:49 IST 2024: 8","Sat Apr 20 21:05:59 IST 2024: 8","Sat Apr 20 21:06:13 IST 2024: 8","Sat Apr 20 21:06:19 IST 2024: 8","Sat Apr 20 21:08:10 IST 2024: 8","Sat Apr 20 21:08:23 IST 2024: 8","Sat Apr 20 21:08:24 IST 2024: 8","Sat Apr 20 21:08:36 IST 2024: 8","Sat Apr 20 21:08:41 IST 2024: 8","Sat Apr 20 21:08:46 IST 2024: 8","Sat Apr 20 21:08:47 IST 2024: 8","Sat Apr 20 21:08:50 IST 2024: 8",>33
-|<"Sat Apr 20 21:09:04 IST 2024: 8","Sat Apr 20 21:09:11 IST 2024: 8","Sat Apr 20 21:09:35 IST 2024: 8","Sat Apr 20 21:09:44 IST 2024: 8","Sat Apr 20 21:11:01 IST 2024: 8","Sat Apr 20 21:11:07 IST 2024: 8","Sat Apr 20 21:11:34 IST 2024: 8","Sat Apr 20 21:11:52 IST 2024: 8"
+	" echo strftime("%c", split(getline("."))[0])
+|3,0,9,1,1,0,1713687755,"\" echo strftime(\"%c\", split(getline(\".\"))[0])"
 "a	CHAR	0
 	Tabularize /:/l1c1l1
 |3,0,10,0,1,0,1713543335,"Tabularize /:/l1c1l1"
@@ -7409,237 +7376,382 @@ $
 |<"                <form method=\"POST\" action=\"/resume_download\">","                    <input type=\"hidden\" name=\"id\" value=\"{{ id }}\">","                    <input type=\"submit\" value=\"Resume\">","                </form>","                {% endif %}","                {% if status == 'downloading' %}","                <form method=\"POST\" action=\"/pause_download\">","                    <input type=\"hidden\" name=\"id\" value=\"{{ id }}\">",>61
 |<"                    <input type=\"submit\" value=\"Pause\">","                </form>","                {% endif %}","","            </li>","        {% endfor %}","    </ul>\"\"\", downloads=downloads)"
 "-	CHAR	0
-	24
-|3,0,36,0,1,0,1713685471,"24"
+	1713682801:
+|3,0,36,0,1,0,1713687958,"1713682801:"
 
 # File marks:
-'0  6  0  ~/.config/.gitignore
-|4,48,6,0,1713685700,"~/.config/.gitignore"
-'1  51  12  ~/.config/scripts/gh-timeago-updates.log
-|4,49,51,12,1713685473,"~/.config/scripts/gh-timeago-updates.log"
-'2  51  12  ~/.config/scripts/gh-timeago-updates.log
-|4,50,51,12,1713685473,"~/.config/scripts/gh-timeago-updates.log"
-'3  51  12  ~/.config/scripts/gh-timeago-updates.log
-|4,51,51,12,1713685473,"~/.config/scripts/gh-timeago-updates.log"
-'4  51  12  ~/.config/scripts/gh-timeago-updates.log
-|4,52,51,12,1713685473,"~/.config/scripts/gh-timeago-updates.log"
-'5  51  12  ~/.config/scripts/gh-timeago-updates.log
-|4,53,51,12,1713685473,"~/.config/scripts/gh-timeago-updates.log"
-'6  51  12  ~/.config/scripts/gh-timeago-updates.log
-|4,54,51,12,1713685473,"~/.config/scripts/gh-timeago-updates.log"
-'7  51  12  ~/.config/scripts/gh-timeago-updates.log
-|4,55,51,12,1713685473,"~/.config/scripts/gh-timeago-updates.log"
-'8  51  12  ~/.config/scripts/gh-timeago-updates.log
-|4,56,51,12,1713685473,"~/.config/scripts/gh-timeago-updates.log"
-'9  22  107  ~/.config/starship/starship.toml
-|4,57,22,107,1713685458,"~/.config/starship/starship.toml"
+'0  17  46  ~/.vim/plugin/logutils.vim
+|4,48,17,46,1713687976,"~/.vim/plugin/logutils.vim"
+'1  4  27  ~/.config/scripts/gh-timeago.bash
+|4,49,4,27,1713687326,"~/.config/scripts/gh-timeago.bash"
+'2  4  27  ~/.config/scripts/gh-timeago.bash
+|4,50,4,27,1713687326,"~/.config/scripts/gh-timeago.bash"
+'3  59  0  ~/.config/scripts/gh-timeago-updates.log
+|4,51,59,0,1713687253,"~/.config/scripts/gh-timeago-updates.log"
+'4  59  0  ~/.config/scripts/gh-timeago-updates.log
+|4,52,59,0,1713687253,"~/.config/scripts/gh-timeago-updates.log"
+'5  59  0  ~/.config/scripts/gh-timeago-updates.log
+|4,53,59,0,1713687253,"~/.config/scripts/gh-timeago-updates.log"
+'6  59  0  ~/.config/scripts/gh-timeago-updates.log
+|4,54,59,0,1713687253,"~/.config/scripts/gh-timeago-updates.log"
+'7  59  0  ~/.config/scripts/gh-timeago-updates.log
+|4,55,59,0,1713687123,"~/.config/scripts/gh-timeago-updates.log"
+'8  59  0  ~/.config/scripts/gh-timeago-updates.log
+|4,56,59,0,1713687123,"~/.config/scripts/gh-timeago-updates.log"
+'9  59  0  ~/.config/scripts/gh-timeago-updates.log
+|4,57,59,0,1713687123,"~/.config/scripts/gh-timeago-updates.log"
 
 # Jumplist (newest first):
--'  6  0  ~/.config/.gitignore
-|4,39,6,0,1713685700,"~/.config/.gitignore"
--'  1  0  ~/.config/.gitignore
-|4,39,1,0,1713685695,"~/.config/.gitignore"
--'  51  12  ~/.config/scripts/gh-timeago-updates.log
-|4,39,51,12,1713685538,"~/.config/scripts/gh-timeago-updates.log"
--'  51  12  ~/.config/scripts/gh-timeago-updates.log
-|4,39,51,12,1713685538,"~/.config/scripts/gh-timeago-updates.log"
--'  51  12  ~/.config/scripts/gh-timeago-updates.log
-|4,39,51,12,1713685538,"~/.config/scripts/gh-timeago-updates.log"
--'  51  12  ~/.config/scripts/gh-timeago-updates.log
-|4,39,51,12,1713685473,"~/.config/scripts/gh-timeago-updates.log"
+-'  17  46  ~/.vim/plugin/logutils.vim
+|4,39,17,46,1713687976,"~/.vim/plugin/logutils.vim"
+-'  10  26  ~/.vim/plugin/logutils.vim
+|4,39,10,26,1713687895,"~/.vim/plugin/logutils.vim"
+-'  13  46  ~/.vim/plugin/logutils.vim
+|4,39,13,46,1713687875,"~/.vim/plugin/logutils.vim"
+-'  14  4  ~/.vim/plugin/logutils.vim
+|4,39,14,4,1713687847,"~/.vim/plugin/logutils.vim"
+-'  11  5  ~/.vim/plugin/logutils.vim
+|4,39,11,5,1713687832,"~/.vim/plugin/logutils.vim"
+-'  1  0  ~/.vim/plugin/logutils.vim
+|4,39,1,0,1713687759,"~/.vim/plugin/logutils.vim"
+-'  16  0  ~/.vim/plugin/logutils.vim
+|4,39,16,0,1713687758,"~/.vim/plugin/logutils.vim"
+-'  7  26  ~/.vim/plugin/logutils.vim
+|4,39,7,26,1713687720,"~/.vim/plugin/logutils.vim"
+-'  6  64  ~/.vim/plugin/logutils.vim
+|4,39,6,64,1713687699,"~/.vim/plugin/logutils.vim"
+-'  5  12  ~/.vim/plugin/logutils.vim
+|4,39,5,12,1713687692,"~/.vim/plugin/logutils.vim"
+-'  4  12  ~/.vim/plugin/logutils.vim
+|4,39,4,12,1713687692,"~/.vim/plugin/logutils.vim"
+-'  60  0  ~/.config/scripts/gh-timeago-updates.log
+|4,39,60,0,1713687653,"~/.config/scripts/gh-timeago-updates.log"
 -'  1  0  ~/.config/scripts/gh-timeago-updates.log
-|4,39,1,0,1713685468,"~/.config/scripts/gh-timeago-updates.log"
+|4,39,1,0,1713687647,"~/.config/scripts/gh-timeago-updates.log"
+-'  3  4  ~/.vim/plugin/logutils.vim
+|4,39,3,4,1713687616,"~/.vim/plugin/logutils.vim"
+-'  4  27  ~/.config/scripts/gh-timeago.bash
+|4,39,4,27,1713687596,"~/.config/scripts/gh-timeago.bash"
+-'  4  27  ~/.config/scripts/gh-timeago.bash
+|4,39,4,27,1713687326,"~/.config/scripts/gh-timeago.bash"
+-'  5  37  ~/.config/scripts/gh-timeago.bash
+|4,39,5,37,1713687320,"~/.config/scripts/gh-timeago.bash"
+-'  5  37  ~/.config/scripts/gh-timeago.bash
+|4,39,5,37,1713687320,"~/.config/scripts/gh-timeago.bash"
+-'  25  24  /tmp/crontab.fEeY3I/crontab
+|4,39,25,24,1713687279,"/tmp/crontab.fEeY3I/crontab"
+-'  25  24  /tmp/crontab.fEeY3I/crontab
+|4,39,25,24,1713687279,"/tmp/crontab.fEeY3I/crontab"
+-'  1  0  /usr/bin/bash
+|4,39,1,0,1713687277,"/usr/bin/bash"
+-'  1  0  /usr/bin/bash
+|4,39,1,0,1713687277,"/usr/bin/bash"
+-'  1  0  /tmp/crontab.fEeY3I/crontab
+|4,39,1,0,1713687259,"/tmp/crontab.fEeY3I/crontab"
+-'  1  0  /tmp/crontab.fEeY3I/crontab
+|4,39,1,0,1713687259,"/tmp/crontab.fEeY3I/crontab"
+-'  59  0  ~/.config/scripts/gh-timeago-updates.log
+|4,39,59,0,1713687253,"~/.config/scripts/gh-timeago-updates.log"
+-'  59  0  ~/.config/scripts/gh-timeago-updates.log
+|4,39,59,0,1713687253,"~/.config/scripts/gh-timeago-updates.log"
+-'  59  0  ~/.config/scripts/gh-timeago-updates.log
+|4,39,59,0,1713687253,"~/.config/scripts/gh-timeago-updates.log"
 -'  1  0  ~/.config/scripts/gh-timeago-updates.log
-|4,39,1,0,1713685468,"~/.config/scripts/gh-timeago-updates.log"
+|4,39,1,0,1713687250,"~/.config/scripts/gh-timeago-updates.log"
 -'  1  0  ~/.config/scripts/gh-timeago-updates.log
-|4,39,1,0,1713685468,"~/.config/scripts/gh-timeago-updates.log"
+|4,39,1,0,1713687250,"~/.config/scripts/gh-timeago-updates.log"
+-'  59  0  ~/.config/scripts/gh-timeago-updates.log
+|4,39,59,0,1713687123,"~/.config/scripts/gh-timeago-updates.log"
+-'  31  0  ~/.config/scripts/gh-timeago-updates.log
+|4,39,31,0,1713687079,"~/.config/scripts/gh-timeago-updates.log"
+-'  31  0  ~/.config/scripts/gh-timeago-updates.log
+|4,39,31,0,1713687079,"~/.config/scripts/gh-timeago-updates.log"
+-'  31  0  ~/.config/scripts/gh-timeago-updates.log
+|4,39,31,0,1713687079,"~/.config/scripts/gh-timeago-updates.log"
+-'  31  0  ~/.config/scripts/gh-timeago-updates.log
+|4,39,31,0,1713687079,"~/.config/scripts/gh-timeago-updates.log"
+-'  31  0  ~/.config/scripts/gh-timeago-updates.log
+|4,39,31,0,1713686993,"~/.config/scripts/gh-timeago-updates.log"
+-'  59  0  ~/.config/scripts/gh-timeago-updates.log
+|4,39,59,0,1713686984,"~/.config/scripts/gh-timeago-updates.log"
 -'  1  0  ~/.config/scripts/gh-timeago-updates.log
-|4,39,1,0,1713685468,"~/.config/scripts/gh-timeago-updates.log"
--'  22  107  ~/.config/starship/starship.toml
-|4,39,22,107,1713685458,"~/.config/starship/starship.toml"
--'  22  107  ~/.config/starship/starship.toml
-|4,39,22,107,1713685458,"~/.config/starship/starship.toml"
--'  22  107  ~/.config/starship/starship.toml
-|4,39,22,107,1713685458,"~/.config/starship/starship.toml"
--'  22  107  ~/.config/starship/starship.toml
-|4,39,22,107,1713685458,"~/.config/starship/starship.toml"
--'  22  107  ~/.config/starship/starship.toml
-|4,39,22,107,1713685458,"~/.config/starship/starship.toml"
--'  22  107  ~/.config/starship/starship.toml
-|4,39,22,107,1713685452,"~/.config/starship/starship.toml"
--'  21  24  ~/.config/starship/starship.toml
-|4,39,21,24,1713685406,"~/.config/starship/starship.toml"
--'  21  24  ~/.config/starship/starship.toml
-|4,39,21,24,1713685406,"~/.config/starship/starship.toml"
--'  21  24  ~/.config/starship/starship.toml
-|4,39,21,24,1713685406,"~/.config/starship/starship.toml"
--'  21  24  ~/.config/starship/starship.toml
-|4,39,21,24,1713685406,"~/.config/starship/starship.toml"
--'  21  24  ~/.config/starship/starship.toml
-|4,39,21,24,1713685406,"~/.config/starship/starship.toml"
--'  21  24  ~/.config/starship/starship.toml
-|4,39,21,24,1713685406,"~/.config/starship/starship.toml"
--'  8  10  ~/.config/scripts/gh-timeago-starship.bash
-|4,39,8,10,1713685293,"~/.config/scripts/gh-timeago-starship.bash"
--'  8  10  ~/.config/scripts/gh-timeago-starship.bash
-|4,39,8,10,1713685293,"~/.config/scripts/gh-timeago-starship.bash"
--'  8  10  ~/.config/scripts/gh-timeago-starship.bash
-|4,39,8,10,1713685293,"~/.config/scripts/gh-timeago-starship.bash"
--'  8  10  ~/.config/scripts/gh-timeago-starship.bash
-|4,39,8,10,1713685293,"~/.config/scripts/gh-timeago-starship.bash"
--'  8  10  ~/.config/scripts/gh-timeago-starship.bash
-|4,39,8,10,1713685293,"~/.config/scripts/gh-timeago-starship.bash"
--'  8  10  ~/.config/scripts/gh-timeago-starship.bash
-|4,39,8,10,1713685293,"~/.config/scripts/gh-timeago-starship.bash"
--'  14  179  ~/.config/scripts/gh-timeago-starship.bash
-|4,39,14,179,1713685285,"~/.config/scripts/gh-timeago-starship.bash"
--'  14  179  ~/.config/scripts/gh-timeago-starship.bash
-|4,39,14,179,1713685285,"~/.config/scripts/gh-timeago-starship.bash"
--'  14  179  ~/.config/scripts/gh-timeago-starship.bash
-|4,39,14,179,1713685285,"~/.config/scripts/gh-timeago-starship.bash"
--'  14  179  ~/.config/scripts/gh-timeago-starship.bash
-|4,39,14,179,1713685285,"~/.config/scripts/gh-timeago-starship.bash"
--'  14  179  ~/.config/scripts/gh-timeago-starship.bash
-|4,39,14,179,1713685285,"~/.config/scripts/gh-timeago-starship.bash"
--'  14  179  ~/.config/scripts/gh-timeago-starship.bash
-|4,39,14,179,1713685285,"~/.config/scripts/gh-timeago-starship.bash"
--'  19  0  ~/.config/starship/starship.toml
-|4,39,19,0,1713685253,"~/.config/starship/starship.toml"
--'  19  0  ~/.config/starship/starship.toml
-|4,39,19,0,1713685253,"~/.config/starship/starship.toml"
--'  19  0  ~/.config/starship/starship.toml
-|4,39,19,0,1713685253,"~/.config/starship/starship.toml"
--'  19  0  ~/.config/starship/starship.toml
-|4,39,19,0,1713685253,"~/.config/starship/starship.toml"
--'  19  0  ~/.config/starship/starship.toml
-|4,39,19,0,1713685253,"~/.config/starship/starship.toml"
--'  19  0  ~/.config/starship/starship.toml
-|4,39,19,0,1713685253,"~/.config/starship/starship.toml"
--'  3  0  ~/.config/scripts/gh-timeago-starship.bash
-|4,39,3,0,1713685251,"~/.config/scripts/gh-timeago-starship.bash"
--'  3  0  ~/.config/scripts/gh-timeago-starship.bash
-|4,39,3,0,1713685251,"~/.config/scripts/gh-timeago-starship.bash"
--'  3  0  ~/.config/scripts/gh-timeago-starship.bash
-|4,39,3,0,1713685251,"~/.config/scripts/gh-timeago-starship.bash"
--'  3  0  ~/.config/scripts/gh-timeago-starship.bash
-|4,39,3,0,1713685251,"~/.config/scripts/gh-timeago-starship.bash"
--'  3  0  ~/.config/scripts/gh-timeago-starship.bash
-|4,39,3,0,1713685251,"~/.config/scripts/gh-timeago-starship.bash"
--'  3  0  ~/.config/scripts/gh-timeago-starship.bash
-|4,39,3,0,1713685251,"~/.config/scripts/gh-timeago-starship.bash"
+|4,39,1,0,1713686840,"~/.config/scripts/gh-timeago-updates.log"
+-'  1  0  ~/.config/scripts/gh-timeago-updates.log
+|4,39,1,0,1713686840,"~/.config/scripts/gh-timeago-updates.log"
+-'  1  0  ~/.config/scripts/cron.log
+|4,39,1,0,1713686784,"~/.config/scripts/cron.log"
+-'  1  0  ~/.config/scripts/cron.log
+|4,39,1,0,1713686784,"~/.config/scripts/cron.log"
+-'  1  0  ~/.config/scripts/cron.log
+|4,39,1,0,1713686784,"~/.config/scripts/cron.log"
+-'  1  0  ~/.config/scripts/cron.log
+|4,39,1,0,1713686784,"~/.config/scripts/cron.log"
+-'  1  0  ~/.config/scripts/cron.log
+|4,39,1,0,1713686784,"~/.config/scripts/cron.log"
+-'  1  0  ~/.config/scripts/cron.log
+|4,39,1,0,1713686784,"~/.config/scripts/cron.log"
+-'  1  0  ~/.config/scripts/cron.log
+|4,39,1,0,1713686784,"~/.config/scripts/cron.log"
+-'  23  44  ~/.config/scripts/gh-timeago.bash
+|4,39,23,44,1713686774,"~/.config/scripts/gh-timeago.bash"
+-'  20  44  ~/.config/scripts/gh-timeago.bash
+|4,39,20,44,1713686774,"~/.config/scripts/gh-timeago.bash"
+-'  23  44  ~/.config/scripts/gh-timeago.bash
+|4,39,23,44,1713686774,"~/.config/scripts/gh-timeago.bash"
+-'  20  44  ~/.config/scripts/gh-timeago.bash
+|4,39,20,44,1713686774,"~/.config/scripts/gh-timeago.bash"
+-'  20  44  ~/.config/scripts/gh-timeago.bash
+|4,39,20,44,1713686774,"~/.config/scripts/gh-timeago.bash"
+-'  20  44  ~/.config/scripts/gh-timeago.bash
+|4,39,20,44,1713686774,"~/.config/scripts/gh-timeago.bash"
+-'  20  44  ~/.config/scripts/gh-timeago.bash
+|4,39,20,44,1713686774,"~/.config/scripts/gh-timeago.bash"
+-'  20  44  ~/.config/scripts/gh-timeago.bash
+|4,39,20,44,1713686774,"~/.config/scripts/gh-timeago.bash"
+-'  20  44  ~/.config/scripts/gh-timeago.bash
+|4,39,20,44,1713686774,"~/.config/scripts/gh-timeago.bash"
 -'  1  0  ~/.config/scripts/gh-timeago.bash
-|4,39,1,0,1713685241,"~/.config/scripts/gh-timeago.bash"
+|4,39,1,0,1713686766,"~/.config/scripts/gh-timeago.bash"
 -'  1  0  ~/.config/scripts/gh-timeago.bash
-|4,39,1,0,1713685241,"~/.config/scripts/gh-timeago.bash"
+|4,39,1,0,1713686766,"~/.config/scripts/gh-timeago.bash"
 -'  1  0  ~/.config/scripts/gh-timeago.bash
-|4,39,1,0,1713685241,"~/.config/scripts/gh-timeago.bash"
+|4,39,1,0,1713686766,"~/.config/scripts/gh-timeago.bash"
 -'  1  0  ~/.config/scripts/gh-timeago.bash
-|4,39,1,0,1713685241,"~/.config/scripts/gh-timeago.bash"
+|4,39,1,0,1713686766,"~/.config/scripts/gh-timeago.bash"
 -'  1  0  ~/.config/scripts/gh-timeago.bash
-|4,39,1,0,1713685241,"~/.config/scripts/gh-timeago.bash"
+|4,39,1,0,1713686766,"~/.config/scripts/gh-timeago.bash"
 -'  1  0  ~/.config/scripts/gh-timeago.bash
-|4,39,1,0,1713685241,"~/.config/scripts/gh-timeago.bash"
--'  46  0  ~/.config/scripts/gh-timeago-updates.log
-|4,39,46,0,1713685237,"~/.config/scripts/gh-timeago-updates.log"
--'  46  0  ~/.config/scripts/gh-timeago-updates.log
-|4,39,46,0,1713685237,"~/.config/scripts/gh-timeago-updates.log"
--'  46  0  ~/.config/scripts/gh-timeago-updates.log
-|4,39,46,0,1713685237,"~/.config/scripts/gh-timeago-updates.log"
--'  46  0  ~/.config/scripts/gh-timeago-updates.log
-|4,39,46,0,1713685237,"~/.config/scripts/gh-timeago-updates.log"
--'  46  0  ~/.config/scripts/gh-timeago-updates.log
-|4,39,46,0,1713685237,"~/.config/scripts/gh-timeago-updates.log"
--'  46  0  ~/.config/scripts/gh-timeago-updates.log
-|4,39,46,0,1713685237,"~/.config/scripts/gh-timeago-updates.log"
--'  34  0  ~/.config/scripts/gh-timeago-updates.log
-|4,39,34,0,1713685229,"~/.config/scripts/gh-timeago-updates.log"
--'  34  0  ~/.config/scripts/gh-timeago-updates.log
-|4,39,34,0,1713685229,"~/.config/scripts/gh-timeago-updates.log"
--'  34  0  ~/.config/scripts/gh-timeago-updates.log
-|4,39,34,0,1713685229,"~/.config/scripts/gh-timeago-updates.log"
--'  34  0  ~/.config/scripts/gh-timeago-updates.log
-|4,39,34,0,1713685229,"~/.config/scripts/gh-timeago-updates.log"
--'  34  0  ~/.config/scripts/gh-timeago-updates.log
-|4,39,34,0,1713685229,"~/.config/scripts/gh-timeago-updates.log"
--'  34  0  ~/.config/scripts/gh-timeago-updates.log
-|4,39,34,0,1713685229,"~/.config/scripts/gh-timeago-updates.log"
--'  23  0  ~/.config/starship/starship.toml
-|4,39,23,0,1713685223,"~/.config/starship/starship.toml"
--'  23  0  ~/.config/starship/starship.toml
-|4,39,23,0,1713685223,"~/.config/starship/starship.toml"
--'  23  0  ~/.config/starship/starship.toml
-|4,39,23,0,1713685223,"~/.config/starship/starship.toml"
--'  23  0  ~/.config/starship/starship.toml
-|4,39,23,0,1713685223,"~/.config/starship/starship.toml"
--'  23  0  ~/.config/starship/starship.toml
-|4,39,23,0,1713685223,"~/.config/starship/starship.toml"
--'  23  0  ~/.config/starship/starship.toml
-|4,39,23,0,1713685223,"~/.config/starship/starship.toml"
--'  21  23  ~/.config/starship/starship.toml
-|4,39,21,23,1713685191,"~/.config/starship/starship.toml"
--'  21  23  ~/.config/starship/starship.toml
-|4,39,21,23,1713685178,"~/.config/starship/starship.toml"
--'  21  24  ~/.config/starship/starship.toml
-|4,39,21,24,1713685174,"~/.config/starship/starship.toml"
--'  21  26  ~/.config/starship/starship.toml
-|4,39,21,26,1713685169,"~/.config/starship/starship.toml"
--'  21  19  ~/.config/starship/starship.toml
-|4,39,21,19,1713685146,"~/.config/starship/starship.toml"
--'  21  22  ~/.config/starship/starship.toml
-|4,39,21,22,1713685140,"~/.config/starship/starship.toml"
--'  21  17  ~/.config/starship/starship.toml
-|4,39,21,17,1713685089,"~/.config/starship/starship.toml"
--'  19  113  ~/.config/starship/starship.toml
-|4,39,19,113,1713685084,"~/.config/starship/starship.toml"
--'  19  113  ~/.config/starship/starship.toml
-|4,39,19,113,1713685084,"~/.config/starship/starship.toml"
--'  19  113  ~/.config/starship/starship.toml
-|4,39,19,113,1713685084,"~/.config/starship/starship.toml"
--'  19  113  ~/.config/starship/starship.toml
-|4,39,19,113,1713685084,"~/.config/starship/starship.toml"
--'  19  113  ~/.config/starship/starship.toml
-|4,39,19,113,1713685084,"~/.config/starship/starship.toml"
--'  19  113  ~/.config/starship/starship.toml
-|4,39,19,113,1713685084,"~/.config/starship/starship.toml"
--'  19  113  ~/.config/starship/starship.toml
-|4,39,19,113,1713685084,"~/.config/starship/starship.toml"
--'  19  113  ~/.config/starship/starship.toml
-|4,39,19,113,1713685084,"~/.config/starship/starship.toml"
--'  20  15  ~/.config/starship/starship.toml
-|4,39,20,15,1713685066,"~/.config/starship/starship.toml"
--'  20  15  ~/.config/starship/starship.toml
-|4,39,20,15,1713685066,"~/.config/starship/starship.toml"
--'  20  15  ~/.config/starship/starship.toml
-|4,39,20,15,1713685066,"~/.config/starship/starship.toml"
--'  20  15  ~/.config/starship/starship.toml
-|4,39,20,15,1713685066,"~/.config/starship/starship.toml"
--'  20  15  ~/.config/starship/starship.toml
-|4,39,20,15,1713685066,"~/.config/starship/starship.toml"
--'  20  15  ~/.config/starship/starship.toml
-|4,39,20,15,1713685066,"~/.config/starship/starship.toml"
--'  20  15  ~/.config/starship/starship.toml
-|4,39,20,15,1713685066,"~/.config/starship/starship.toml"
--'  20  15  ~/.config/starship/starship.toml
-|4,39,20,15,1713685066,"~/.config/starship/starship.toml"
--'  20  15  ~/.config/starship/starship.toml
-|4,39,20,15,1713685066,"~/.config/starship/starship.toml"
--'  20  15  ~/.config/starship/starship.toml
-|4,39,20,15,1713685066,"~/.config/starship/starship.toml"
--'  20  15  ~/.config/starship/starship.toml
-|4,39,20,15,1713685066,"~/.config/starship/starship.toml"
--'  20  15  ~/.config/starship/starship.toml
-|4,39,20,15,1713685066,"~/.config/starship/starship.toml"
--'  20  15  ~/.config/starship/starship.toml
-|4,39,20,15,1713685066,"~/.config/starship/starship.toml"
--'  20  15  ~/.config/starship/starship.toml
-|4,39,20,15,1713685066,"~/.config/starship/starship.toml"
--'  20  15  ~/.config/starship/starship.toml
-|4,39,20,15,1713685066,"~/.config/starship/starship.toml"
+|4,39,1,0,1713686766,"~/.config/scripts/gh-timeago.bash"
+-'  1  0  ~/.config/scripts/gh-timeago.bash
+|4,39,1,0,1713686766,"~/.config/scripts/gh-timeago.bash"
+-'  1  0  ~/.config/scripts/cron.log
+|4,39,1,0,1713686766,"~/.config/scripts/cron.log"
+-'  1  0  ~/.config/scripts/gh-timeago.bash
+|4,39,1,0,1713686766,"~/.config/scripts/gh-timeago.bash"
+-'  8  0  ~/.config/scripts/cron.log
+|4,39,8,0,1713686755,"~/.config/scripts/cron.log"
+-'  8  0  ~/.config/scripts/cron.log
+|4,39,8,0,1713686755,"~/.config/scripts/cron.log"
+-'  8  0  ~/.config/scripts/cron.log
+|4,39,8,0,1713686755,"~/.config/scripts/cron.log"
+-'  8  0  ~/.config/scripts/cron.log
+|4,39,8,0,1713686755,"~/.config/scripts/cron.log"
+-'  8  0  ~/.config/scripts/cron.log
+|4,39,8,0,1713686755,"~/.config/scripts/cron.log"
+-'  8  0  ~/.config/scripts/cron.log
+|4,39,8,0,1713686755,"~/.config/scripts/cron.log"
+-'  8  0  ~/.config/scripts/cron.log
+|4,39,8,0,1713686755,"~/.config/scripts/cron.log"
+-'  8  0  ~/.config/scripts/cron.log
+|4,39,8,0,1713686755,"~/.config/scripts/cron.log"
+-'  8  0  ~/.config/scripts/cron.log
+|4,39,8,0,1713686755,"~/.config/scripts/cron.log"
+-'  1  0  ~/.config/scripts/cron.log
+|4,39,1,0,1713686754,"~/.config/scripts/cron.log"
+-'  25  0  /tmp/crontab.uBVNpP/crontab
+|4,39,25,0,1713686549,"/tmp/crontab.uBVNpP/crontab"
+-'  25  0  /tmp/crontab.uBVNpP/crontab
+|4,39,25,0,1713686549,"/tmp/crontab.uBVNpP/crontab"
+-'  25  0  /tmp/crontab.uBVNpP/crontab
+|4,39,25,0,1713686549,"/tmp/crontab.uBVNpP/crontab"
+-'  25  0  /tmp/crontab.uBVNpP/crontab
+|4,39,25,0,1713686549,"/tmp/crontab.uBVNpP/crontab"
+-'  25  0  /tmp/crontab.uBVNpP/crontab
+|4,39,25,0,1713686549,"/tmp/crontab.uBVNpP/crontab"
+-'  25  0  /tmp/crontab.uBVNpP/crontab
+|4,39,25,0,1713686549,"/tmp/crontab.uBVNpP/crontab"
+-'  25  0  /tmp/crontab.uBVNpP/crontab
+|4,39,25,0,1713686549,"/tmp/crontab.uBVNpP/crontab"
+-'  25  0  /tmp/crontab.uBVNpP/crontab
+|4,39,25,0,1713686549,"/tmp/crontab.uBVNpP/crontab"
+-'  25  0  /tmp/crontab.uBVNpP/crontab
+|4,39,25,0,1713686549,"/tmp/crontab.uBVNpP/crontab"
+-'  25  0  /tmp/crontab.uBVNpP/crontab
+|4,39,25,0,1713686549,"/tmp/crontab.uBVNpP/crontab"
+-'  1  0  /tmp/crontab.uBVNpP/crontab
+|4,39,1,0,1713686543,"/tmp/crontab.uBVNpP/crontab"
+-'  1  0  /tmp/crontab.uBVNpP/crontab
+|4,39,1,0,1713686543,"/tmp/crontab.uBVNpP/crontab"
+-'  1  0  /tmp/crontab.uBVNpP/crontab
+|4,39,1,0,1713686543,"/tmp/crontab.uBVNpP/crontab"
+-'  1  0  /tmp/crontab.uBVNpP/crontab
+|4,39,1,0,1713686543,"/tmp/crontab.uBVNpP/crontab"
+-'  1  0  /tmp/crontab.uBVNpP/crontab
+|4,39,1,0,1713686543,"/tmp/crontab.uBVNpP/crontab"
+-'  1  0  /tmp/crontab.uBVNpP/crontab
+|4,39,1,0,1713686543,"/tmp/crontab.uBVNpP/crontab"
+-'  1  0  /tmp/crontab.uBVNpP/crontab
+|4,39,1,0,1713686543,"/tmp/crontab.uBVNpP/crontab"
+-'  1  0  /tmp/crontab.uBVNpP/crontab
+|4,39,1,0,1713686543,"/tmp/crontab.uBVNpP/crontab"
+-'  1  0  /tmp/crontab.uBVNpP/crontab
+|4,39,1,0,1713686543,"/tmp/crontab.uBVNpP/crontab"
+-'  1  0  /tmp/crontab.uBVNpP/crontab
+|4,39,1,0,1713686543,"/tmp/crontab.uBVNpP/crontab"
+-'  1  0  /tmp/crontab.A7hKPO/crontab
+|4,39,1,0,1713686540,"/tmp/crontab.A7hKPO/crontab"
+-'  1  0  /tmp/crontab.A7hKPO/crontab
+|4,39,1,0,1713686540,"/tmp/crontab.A7hKPO/crontab"
+-'  1  0  /tmp/crontab.A7hKPO/crontab
+|4,39,1,0,1713686540,"/tmp/crontab.A7hKPO/crontab"
+-'  1  0  /tmp/crontab.A7hKPO/crontab
+|4,39,1,0,1713686540,"/tmp/crontab.A7hKPO/crontab"
+-'  1  0  /tmp/crontab.A7hKPO/crontab
+|4,39,1,0,1713686540,"/tmp/crontab.A7hKPO/crontab"
+-'  1  0  /tmp/crontab.A7hKPO/crontab
+|4,39,1,0,1713686540,"/tmp/crontab.A7hKPO/crontab"
 
 # Buffer list:
-%~/.config/.gitignore	6	0
+%/tmp/crontab.fEeY3I/crontab	25	24
+%/usr/bin/bash	1	0
+%~/.config/scripts/gh-timeago.bash	4	27
+%~/.vim/plugin/logutils.vim	17	46
+%~/.config/scripts/gh-timeago-updates.log	6	0
 
 # History of marks within files (newest to oldest):
+
+> ~/.vim/plugin/logutils.vim
+	*	1713687974	0
+	"	17	46
+	^	17	47
+	.	17	46
+	+	3	0
+	+	3	32
+	+	5	4
+	+	7	4
+	+	4	17
+	+	5	14
+	+	4	12
+	+	5	36
+	+	6	4
+	+	7	0
+	+	3	0
+	+	1	0
+	+	17	0
+	+	1	0
+	+	10	31
+	+	14	0
+	+	11	0
+	+	17	15
+	+	10	18
+	+	17	16
+	+	11	62
+	+	14	5
+	+	12	66
+	+	13	0
+	+	10	26
+	+	17	46
+
+> ~/.config/scripts/gh-timeago-updates.log
+	*	1713687963	0
+	"	6	0
+	^	6	0
+	.	6	0
+	+	1	0
+	+	51	12
+	+	37	0
+	+	6	0
+
+> ~/.config/scripts/gh-timeago.bash
+	*	1713687590	0
+	"	4	27
+	^	5	38
+	.	5	0
+	+	2	14
+	+	2	0
+	+	6	0
+	+	9	19
+	+	14	0
+	+	15	5
+	+	14	0
+	+	24	33
+	+	17	27
+	+	14	0
+	+	22	0
+	+	17	0
+	+	23	33
+	+	17	0
+	+	14	0
+	+	15	1
+	+	17	0
+	+	22	0
+	+	24	0
+	+	22	0
+	+	15	26
+	+	24	29
+	+	1	1
+	+	11	17
+	+	15	13
+	+	24	13
+	+	11	19
+	+	15	15
+	+	23	15
+	+	24	15
+	+	7	0
+	+	8	6
+	+	23	17
+	+	15	0
+	+	24	0
+	+	23	44
+	+	17	0
+	+	16	0
+	+	24	0
+	+	15	0
+	+	24	0
+	+	23	44
+	+	4	28
+	+	5	27
+	+	6	25
+	+	6	0
+	+	5	37
+	+	5	0
+
+> /tmp/crontab.fEeY3I/crontab
+	*	1713687278	0
+	"	25	24
+
+> /usr/bin/bash
+	*	1713687276	0
+	"	1	0
+
+> /usr/share/vim/vim90/doc/builtin.txt
+	*	1713686983	0
+	"	8989	33
+
+> ~/.config/scripts/cron.log
+	*	1713686777	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> /tmp/crontab.uBVNpP/crontab
+	*	1713686549	0
+	"	25	0
+	.	25	0
+	+	26	0
+	+	25	0
+
+> /tmp/crontab.A7hKPO/crontab
+	*	1713686538	0
+	"	1	0
+	^	26	111
+	.	26	0
+	+	26	0
+	+	28	0
+	+	27	0
+	+	26	0
+
+> /tmp/crontab.QW353P/crontab
+	*	1713685995	0
+	"	1	0
+
+> /tmp/crontab.lN81LO/crontab
+	*	1713685988	0
+	"	1	0
+
+> /tmp/crontab.EekynV/crontab
+	*	1713685880	0
+	"	26	49
 
 > ~/.config/.gitignore
 	*	1713685700	0
@@ -7647,14 +7759,6 @@ $
 	^	6	5
 	.	6	0
 	+	6	0
-
-> ~/.config/scripts/gh-timeago-updates.log
-	*	1713685536	0
-	"	51	12
-	^	51	13
-	.	51	12
-	+	1	0
-	+	51	12
 
 > ~/.config/starship/starship.toml
 	*	1713685455	0
@@ -7772,51 +7876,6 @@ $
 	+	5	9
 	+	7	3
 	+	14	0
-
-> ~/.config/scripts/gh-timeago.bash
-	*	1713685240	0
-	"	1	0
-	^	5	7
-	.	25	17
-	+	2	14
-	+	2	0
-	+	3	0
-	+	6	19
-	+	11	0
-	+	12	5
-	+	11	0
-	+	31	33
-	+	17	27
-	+	11	0
-	+	24	0
-	+	19	0
-	+	25	33
-	+	19	0
-	+	11	0
-	+	13	1
-	+	19	0
-	+	24	0
-	+	31	0
-	+	24	0
-	+	13	26
-	+	27	29
-	+	1	1
-	+	8	17
-	+	13	13
-	+	27	13
-	+	8	19
-	+	13	15
-	+	25	15
-	+	27	15
-	+	4	0
-	+	5	6
-	+	25	17
-
-> ~/.config/scripts/cron.log
-	*	1713684514	0
-	"	163	0
-	.	1	0
-	+	1	0
 
 > /var/log/dpkg.log
 	*	1713683672	0
@@ -8967,10 +9026,6 @@ $
 	+	358	33
 	+	360	69
 	+	347	20
-
-> /usr/share/vim/vim90/doc/builtin.txt
-	*	1713436908	0
-	"	9494	0
 
 > /usr/share/vim/vim90/doc/usr_51.txt
 	*	1713436443	0
