@@ -11,33 +11,153 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/LogTest
+~MSle0~/requi
 
 # Last Substitute Search Pattern:
 ~MSle0&:
 
 # Last Substitute String:
-$\=strftime("%c", submatch(1))
+$
 
 # Command Line History (newest to oldest):
+:q!
+|2,0,1713760358,,"q!"
 :q
-|2,0,1713687976,,"q"
+|2,0,1713760289,,"q"
+:MRU al
+|2,0,1713760121,,"MRU al"
+:MRU ali
+|2,0,1713759993,,"MRU ali"
+:e sql_checklist.txt
+|2,0,1713758803,,"e sql_checklist.txt"
+:MRU py
+|2,0,1713758698,,"MRU py"
+:MRU pyt
+|2,0,1713758599,,"MRU pyt"
+:MRU 
+|2,0,1713758404,,"MRU "
+:qa
+|2,0,1713758363,,"qa"
+:MRU python
+|2,0,1713758259,,"MRU python"
+:MRU gen
+|2,0,1713758253,,"MRU gen"
+:e 
+|2,0,1713758252,,"e "
+:MRU star
+|2,0,1713758171,,"MRU star"
+:e ~/.config/todo.txt
+|2,0,1713758083,,"e ~/.config/todo.txt"
+:Copilot panel
+|2,0,1713757752,,"Copilot panel"
+:bd!
+|2,0,1713754813,,"bd!"
+:set ft=man
+|2,0,1713754752,,"set ft=man"
+:34
+|2,0,1713754107,,"34"
+:MRU ni
+|2,0,1713751550,,"MRU ni"
+:e ni
+|2,0,1713751548,,"e ni"
+:e cronlogger.sh
+|2,0,1713751508,,"e cronlogger.sh"
+:e cro
+|2,0,1713751505,,"e cro"
+:MRU cronl
+|2,0,1713751495,,"MRU cronl"
+:MRU 10:vivek/jobs-python/cronlogger.sh
+|2,0,1713751452,,"MRU 10:vivek/jobs-python/cronlogger.sh"
+:MRU 5:vivek/genproject/python.sh
+|2,0,1713751439,,"MRU 5:vivek/genproject/python.sh"
+:MRU 22:cron-run.bash
+|2,0,1713751435,,"MRU 22:cron-run.bash"
+:MRU bas
+|2,0,1713751344,,"MRU bas"
+:MRU bash
+|2,0,1713751339,,"MRU bash"
+:MRU bin
+|2,0,1713751111,,"MRU bin"
+:e
+|2,0,1713750215,,"e"
+:MRU 15:target.bash
+|2,0,1713750211,,"MRU 15:target.bash"
+:Rename direnv-runner.bash
+|2,0,1713750208,,"Rename direnv-runner.bash"
+:MRU 3:test-libs.py
+|2,0,1713750193,,"MRU 3:test-libs.py"
+:MRU ba
+|2,0,1713750187,,"MRU ba"
+:set formatoptions-=o
+|2,0,1713750068,,"set formatoptions-=o"
+:h fo-table
+|2,0,1713750059,,"h fo-table"
+:set formatoptions?
+|2,0,1713750053,,"set formatoptions?"
+:set comments?
+|2,0,1713750034,,"set comments?"
+:b!# | bd! #
+|2,0,1713749800,,"b!# | bd! #"
+:e pylogger.py
+|2,0,1713749771,,"e pylogger.py"
+:e test-libs.py
+|2,0,1713712738,,"e test-libs.py"
+:MRU dbutil
+|2,0,1713712731,,"MRU dbutil"
+:e dbutils.py
+|2,0,1713712726,,"e dbutils.py"
+:MRU 104:hateoas/requirements.txt
+|2,0,1713712482,,"MRU 104:hateoas/requirements.txt"
+:e g
+|2,0,1713702557,,"e g"
+:e cron-run.bash
+|2,0,1713702212,,"e cron-run.bash"
+:e!
+|2,0,1713699797,,"e!"
+:LogPrettyPrintLine
+|2,0,1713699748,,"LogPrettyPrintLine"
+:e target.bash
+|2,0,1713697303,,"e target.bash"
+:Jprevious
+|2,0,1713697147,,"Jprevious"
+:Jlast
+|2,0,1713697146,,"Jlast"
+:ne
+|2,0,1713697139,,"ne"
+:Jpre
+|2,0,1713697133,,"Jpre"
+:set nonumber
+|2,0,1713696967,,"set nonumber"
+:Rename cron-run.bash
+|2,0,1713696787,,"Rename cron-run.bash"
+:e run-script.bash
+|2,0,1713696652,,"e run-script.bash"
+:LogPrettifyFile
+|2,0,1713696567,,"LogPrettifyFile"
+:PlugInstall
+|2,0,1713696416,,"PlugInstall"
+:so %
+|2,0,1713696414,,"so %"
+:w
+|2,0,1713696408,,"w"
+:edit $MYVIMRC
+|2,0,1713696402,,"edit $MYVIMRC"
+:e combined.log
+|2,0,1713695613,,"e combined.log"
+:set ft=messages
+|2,0,1713692327,,"set ft=messages"
+:set ft=log
+|2,0,1713692298,,"set ft=log"
+:e gh-timeago.bash
+|2,0,1713688120,,"e gh-timeago.bash"
 :!git add %
 |2,0,1713687974,,"!git add %"
-:e!
-|2,0,1713687963,,"e!"
-:LogPrettifyFile
-|2,0,1713687951,,"LogPrettifyFile"
 :LogTest
 |2,0,1713687882,,"LogTest"
 :s/
 |2,0,1713687808,,"s/"
-:LogPrettyPrintLine
-|2,0,1713687763,,"LogPrettyPrintLine"
 :HotReload
 |2,0,1713687656,,"HotReload"
-:so %
-|2,0,1713687654,,"so %"
 :MRU log
 |2,0,1713687647,,"MRU log"
 :echo strptime()
@@ -46,14 +166,10 @@ $\=strftime("%c", submatch(1))
 |2,0,1713687600,,"ecoh strp"
 :e ~/.vim/plugin/logutils.vim
 |2,0,1713687596,,"e ~/.vim/plugin/logutils.vim"
-:MRU 
-|2,0,1713687590,,"MRU "
 :echo strftime("%c", split(getline("."))[0])
 |2,0,1713687089,,"echo strftime(\"%c\", split(getline(\".\"))[0])"
 :e c
 |2,0,1713686992,,"e c"
-:e
-|2,0,1713686978,,"e"
 :echo split(getline("."))[0]
 |2,0,1713686952,,"echo split(getline(\".\"))[0]"
 :echo split(getline("."))
@@ -82,46 +198,28 @@ $\=strftime("%c", submatch(1))
 |2,0,1713685995,,"pwd"
 :bd
 |2,0,1713685538,,"bd"
-:e gh-timeago.bash
-|2,0,1713685239,,"e gh-timeago.bash"
 :e gh-timeago-starship.bash
 |2,0,1713685237,,"e gh-timeago-starship.bash"
-:MRU star
-|2,0,1713684826,,"MRU star"
 :args
 |2,0,1713683666,,"args"
 :next
 |2,0,1713683662,,"next"
 :e gh-timeago-updates.log
 |2,0,1713683001,,"e gh-timeago-updates.log"
-:MRU bash
-|2,0,1713682769,,"MRU bash"
-:bd!
-|2,0,1713682377,,"bd!"
 :s/://g
 |2,0,1713682370,,"s/://g"
 :%s//\n/g
 |2,0,1713682366,,"%s//\\n/g"
-:q!
-|2,0,1713682198,,"q!"
 :%sort u
 |2,0,1713682185,,"%sort u"
 :term
 |2,0,1713682168,,"term"
-:Jprevious
-|2,0,1713628881,,"Jprevious"
-:e 
-|2,0,1713627634,,"e "
-:set nonumber
-|2,0,1713625700,,"set nonumber"
 :vim
 |2,0,1713613176,,"vim"
 :'<,'>
 |2,0,1713612748,,"'<,'>"
 :'<,'>w
 |2,0,1713612609,,"'<,'>w"
-:qa
-|2,0,1713612250,,"qa"
 :e starship.toml
 |2,0,1713612244,,"e starship.toml"
 :MRU 44:opt/z/z.sh
@@ -138,14 +236,10 @@ $\=strftime("%c", submatch(1))
 |2,0,1713611618,,"h 'cocu'"
 :CocInstall coc-toml
 |2,0,1713611323,,"CocInstall coc-toml"
-:MRU bas
-|2,0,1713611194,,"MRU bas"
 :vert term ./%
 |2,0,1713607171,,"vert term ./%"
 :vert term source %
 |2,0,1713607165,,"vert term source %"
-:Copilot panel
-|2,0,1713607107,,"Copilot panel"
 :Copilot status
 |2,0,1713607079,,"Copilot status"
 :!start %
@@ -260,8 +354,6 @@ $\=strftime("%c", submatch(1))
 |2,0,1713519293,,"cn"
 :grep -g '*.vim' -g 'vimrc' c-p
 |2,0,1713519266,,"grep -g '*.vim' -g 'vimrc' c-p"
-:edit $MYVIMRC
-|2,0,1713519257,,"edit $MYVIMRC"
 :MRU vim
 |2,0,1713519256,,"MRU vim"
 :inoremap <silent><expr> <C-p>  coc#pum#prev(0)
@@ -532,8 +624,6 @@ $\=strftime("%c", submatch(1))
 |2,0,1713406475,,"colo apprentice_extended"
 :colo code
 |2,0,1713406347,,"colo code"
-:w
-|2,0,1713373777,,"w"
 :e ele
 |2,0,1713373302,,"e ele"
 :e na
@@ -548,8 +638,6 @@ $\=strftime("%c", submatch(1))
 |2,0,1713346047,,"e Flask_Cors-4.0.0.dist-info/"
 :e _sqlite3.cpython-310-x86_64-linux-gnu.so
 |2,0,1713346035,,"e _sqlite3.cpython-310-x86_64-linux-gnu.so"
-:PlugInstall
-|2,0,1713342925,,"PlugInstall"
 :b css
 |2,0,1713310193,,"b css"
 :;wkkkkk
@@ -582,14 +670,10 @@ $\=strftime("%c", submatch(1))
 |2,0,1713287887,,"MRU ele"
 :b ele
 |2,0,1713287886,,"b ele"
-:MRU py
-|2,0,1713287253,,"MRU py"
 :e pack
 |2,0,1713282359,,"e pack"
 :'<,'>s/"//g
 |2,0,1713281526,,"'<,'>s/\"//g"
-:e dbutils.py
-|2,0,1713280775,,"e dbutils.py"
 :b templates/elements.html
 |2,0,1713279059,,"b templates/elements.html"
 :b py
@@ -786,8 +870,6 @@ $\=strftime("%c", submatch(1))
 |2,0,1712496127,,"b hateo"
 :MRU 3:downloader.py
 |2,0,1712453693,,"MRU 3:downloader.py"
-:b!# | bd! #
-|2,0,1712452830,,"b!# | bd! #"
 :!rm download_endpoints.py
 |2,0,1712452825,,"!rm download_endpoints.py"
 :e download_endpoints.py
@@ -4874,8 +4956,6 @@ $\=strftime("%c", submatch(1))
 |2,0,1688393577,,"'<,'>T"
 :TemplateHTML
 |2,0,1688393575,,"TemplateHTML"
-:Jpre
-|2,0,1688393544,,"Jpre"
 :e db.html
 |2,0,1688393533,,"e db.html"
 :e vuejs/backend.html
@@ -5156,8 +5236,30 @@ $\=strftime("%c", submatch(1))
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+? @$
+|2,1,1713760169,,"@$"
+?/requi
+|2,1,1713758601,47,"requi"
+?/cd
+|2,1,1713758261,47,"cd"
+?/c
+|2,1,1713757314,47,"c"
+?/history 
+|2,1,1713757202,47,"history "
+?/histfie
+|2,1,1713756142,47,"histfie"
+?/hist
+|2,1,1713754955,47,"hist"
+?/file
+|2,1,1713754788,47,"file"
+?/bash_
+|2,1,1713754778,47,"bash_"
+?/location
+|2,1,1713754775,47,"location"
+?/PHP
+|2,1,1713749490,47,"PHP"
 ? ^\(\d\+\)
-|2,1,1713687951,,"^\\(\\d\\+\\)"
+|2,1,1713696567,,"^\\(\\d\\+\\)"
 ?/purple
 |2,1,1713685057,47,"purple"
 ?/brew
@@ -5436,8 +5538,6 @@ $\=strftime("%c", submatch(1))
 |2,1,1712259878,47,"@so"
 ?/<script
 |2,1,1712259118,47,"<script"
-? @$
-|2,1,1712258704,,"@$"
 ?/\@app
 |2,1,1712095833,47,"\\@app"
 ?/cors
@@ -5974,8 +6074,6 @@ $\=strftime("%c", submatch(1))
 |2,1,1705887897,47,"setOptoins"
 ?/setVideo
 |2,1,1705887867,47,"setVideo"
-?/c
-|2,1,1705887341,47,"c"
 ?/embed\.offset
 |2,1,1705887283,47,"embed\\.offset"
 ?/currentDuration
@@ -7302,42 +7400,38 @@ $\=strftime("%c", submatch(1))
 |2,4,1693311567,,"cont"
 
 # Registers:
-""0	CHAR	0
-	1713682801:
-|3,1,0,0,1,0,1713687959,"1713682801:"
+""0	LINE	0
+	
+|3,1,0,1,1,0,1713760169,""
 "1	LINE	0
 	
-|3,0,1,1,1,0,1713687890,""
+|3,0,1,1,1,0,1713760125,""
 "2	LINE	0
 	
-	    "
-|3,0,2,1,2,0,1713687871,"","    \""
+|3,0,2,1,1,0,1713759998,""
 "3	LINE	0
-	    s/
-|3,0,3,1,1,0,1713687832,"    s/"
+	# Run pip install -r requirements.txt to install dependencies
+|3,0,3,1,1,0,1713758786,"# Run pip install -r requirements.txt to install dependencies"
 "4	LINE	0
 	
-|3,0,4,1,1,0,1713687825,""
+|3,0,4,1,1,0,1713758486,""
 "5	LINE	0
-	    let l:line_count = line("$")
-	    for l:line_number in range(1, l:line_count)
-	        call cursor(l:line_number, 1)
-	        call s:LogPrettyPrintLine()
-	    endfor
-|3,0,5,1,5,0,1713687795,"    let l:line_count = line(\"$\")","    for l:line_number in range(1, l:line_count)","        call cursor(l:line_number, 1)","        call s:LogPrettyPrintLine()","    endfor"
+	
+|3,0,5,1,1,0,1713758408,""
 "6	LINE	0
 	
-|3,0,6,1,1,0,1713687758,""
+	# pip install -r requirements.txt
+|3,0,6,1,2,0,1713758407,"","# pip install -r requirements.txt"
 "7	LINE	0
 	
-|3,0,7,1,1,0,1713687757,""
+|3,0,7,1,1,0,1713758124,""
 "8	LINE	0
+	export -f direnv_cd
 	
-	
-|3,0,8,1,2,0,1713687757,"",""
+|3,0,8,1,2,0,1713757796,"export -f direnv_cd",""
 "9	LINE	0
-	" echo strftime("%c", split(getline("."))[0])
-|3,0,9,1,1,0,1713687755,"\" echo strftime(\"%c\", split(getline(\".\"))[0])"
+	export -f prettify_exit_code
+|3,0,9,1,1,0,1713757794,"export -f prettify_exit_code"
 "a	CHAR	0
 	Tabularize /:/l1c1l1
 |3,0,10,0,1,0,1713543335,"Tabularize /:/l1c1l1"
@@ -7376,397 +7470,496 @@ $\=strftime("%c", submatch(1))
 |<"                <form method=\"POST\" action=\"/resume_download\">","                    <input type=\"hidden\" name=\"id\" value=\"{{ id }}\">","                    <input type=\"submit\" value=\"Resume\">","                </form>","                {% endif %}","                {% if status == 'downloading' %}","                <form method=\"POST\" action=\"/pause_download\">","                    <input type=\"hidden\" name=\"id\" value=\"{{ id }}\">",>61
 |<"                    <input type=\"submit\" value=\"Pause\">","                </form>","                {% endif %}","","            </li>","        {% endfor %}","    </ul>\"\"\", downloads=downloads)"
 "-	CHAR	0
-	1713682801:
-|3,0,36,0,1,0,1713687958,"1713682801:"
+	# 
+|3,0,36,0,1,0,1713758798,"# "
 
 # File marks:
-'0  17  46  ~/.vim/plugin/logutils.vim
-|4,48,17,46,1713687976,"~/.vim/plugin/logutils.vim"
-'1  4  27  ~/.config/scripts/gh-timeago.bash
-|4,49,4,27,1713687326,"~/.config/scripts/gh-timeago.bash"
-'2  4  27  ~/.config/scripts/gh-timeago.bash
-|4,50,4,27,1713687326,"~/.config/scripts/gh-timeago.bash"
-'3  59  0  ~/.config/scripts/gh-timeago-updates.log
-|4,51,59,0,1713687253,"~/.config/scripts/gh-timeago-updates.log"
-'4  59  0  ~/.config/scripts/gh-timeago-updates.log
-|4,52,59,0,1713687253,"~/.config/scripts/gh-timeago-updates.log"
-'5  59  0  ~/.config/scripts/gh-timeago-updates.log
-|4,53,59,0,1713687253,"~/.config/scripts/gh-timeago-updates.log"
-'6  59  0  ~/.config/scripts/gh-timeago-updates.log
-|4,54,59,0,1713687253,"~/.config/scripts/gh-timeago-updates.log"
-'7  59  0  ~/.config/scripts/gh-timeago-updates.log
-|4,55,59,0,1713687123,"~/.config/scripts/gh-timeago-updates.log"
-'8  59  0  ~/.config/scripts/gh-timeago-updates.log
-|4,56,59,0,1713687123,"~/.config/scripts/gh-timeago-updates.log"
-'9  59  0  ~/.config/scripts/gh-timeago-updates.log
-|4,57,59,0,1713687123,"~/.config/scripts/gh-timeago-updates.log"
+'0  1  0  ~/.config/.git/COMMIT_EDITMSG
+|4,48,1,0,1713760255,"~/.config/.git/COMMIT_EDITMSG"
+'1  1  0  ~/.config/.git/COMMIT_EDITMSG
+|4,49,1,0,1713760255,"~/.config/.git/COMMIT_EDITMSG"
+'2  1  0  ~/.config/.git/COMMIT_EDITMSG
+|4,50,1,0,1713760255,"~/.config/.git/COMMIT_EDITMSG"
+'3  1  0  ~/.config/.git/COMMIT_EDITMSG
+|4,51,1,0,1713760255,"~/.config/.git/COMMIT_EDITMSG"
+'4  1  0  ~/.config/.git/COMMIT_EDITMSG
+|4,52,1,0,1713760255,"~/.config/.git/COMMIT_EDITMSG"
+'5  1  0  ~/.config/.git/COMMIT_EDITMSG
+|4,53,1,0,1713760255,"~/.config/.git/COMMIT_EDITMSG"
+'6  1  0  ~/.config/.git/COMMIT_EDITMSG
+|4,54,1,0,1713760255,"~/.config/.git/COMMIT_EDITMSG"
+'7  1  0  ~/.config/.git/COMMIT_EDITMSG
+|4,55,1,0,1713760255,"~/.config/.git/COMMIT_EDITMSG"
+'8  8  0  ~/.config/direnv
+|4,56,8,0,1713760171,"~/.config/direnv"
+'9  8  0  ~/.config/direnv
+|4,57,8,0,1713760171,"~/.config/direnv"
 
 # Jumplist (newest first):
--'  17  46  ~/.vim/plugin/logutils.vim
-|4,39,17,46,1713687976,"~/.vim/plugin/logutils.vim"
--'  10  26  ~/.vim/plugin/logutils.vim
-|4,39,10,26,1713687895,"~/.vim/plugin/logutils.vim"
--'  13  46  ~/.vim/plugin/logutils.vim
-|4,39,13,46,1713687875,"~/.vim/plugin/logutils.vim"
--'  14  4  ~/.vim/plugin/logutils.vim
-|4,39,14,4,1713687847,"~/.vim/plugin/logutils.vim"
--'  11  5  ~/.vim/plugin/logutils.vim
-|4,39,11,5,1713687832,"~/.vim/plugin/logutils.vim"
--'  1  0  ~/.vim/plugin/logutils.vim
-|4,39,1,0,1713687759,"~/.vim/plugin/logutils.vim"
--'  16  0  ~/.vim/plugin/logutils.vim
-|4,39,16,0,1713687758,"~/.vim/plugin/logutils.vim"
--'  7  26  ~/.vim/plugin/logutils.vim
-|4,39,7,26,1713687720,"~/.vim/plugin/logutils.vim"
--'  6  64  ~/.vim/plugin/logutils.vim
-|4,39,6,64,1713687699,"~/.vim/plugin/logutils.vim"
--'  5  12  ~/.vim/plugin/logutils.vim
-|4,39,5,12,1713687692,"~/.vim/plugin/logutils.vim"
--'  4  12  ~/.vim/plugin/logutils.vim
-|4,39,4,12,1713687692,"~/.vim/plugin/logutils.vim"
--'  60  0  ~/.config/scripts/gh-timeago-updates.log
-|4,39,60,0,1713687653,"~/.config/scripts/gh-timeago-updates.log"
--'  1  0  ~/.config/scripts/gh-timeago-updates.log
-|4,39,1,0,1713687647,"~/.config/scripts/gh-timeago-updates.log"
--'  3  4  ~/.vim/plugin/logutils.vim
-|4,39,3,4,1713687616,"~/.vim/plugin/logutils.vim"
--'  4  27  ~/.config/scripts/gh-timeago.bash
-|4,39,4,27,1713687596,"~/.config/scripts/gh-timeago.bash"
--'  4  27  ~/.config/scripts/gh-timeago.bash
-|4,39,4,27,1713687326,"~/.config/scripts/gh-timeago.bash"
--'  5  37  ~/.config/scripts/gh-timeago.bash
-|4,39,5,37,1713687320,"~/.config/scripts/gh-timeago.bash"
--'  5  37  ~/.config/scripts/gh-timeago.bash
-|4,39,5,37,1713687320,"~/.config/scripts/gh-timeago.bash"
--'  25  24  /tmp/crontab.fEeY3I/crontab
-|4,39,25,24,1713687279,"/tmp/crontab.fEeY3I/crontab"
--'  25  24  /tmp/crontab.fEeY3I/crontab
-|4,39,25,24,1713687279,"/tmp/crontab.fEeY3I/crontab"
--'  1  0  /usr/bin/bash
-|4,39,1,0,1713687277,"/usr/bin/bash"
--'  1  0  /usr/bin/bash
-|4,39,1,0,1713687277,"/usr/bin/bash"
--'  1  0  /tmp/crontab.fEeY3I/crontab
-|4,39,1,0,1713687259,"/tmp/crontab.fEeY3I/crontab"
--'  1  0  /tmp/crontab.fEeY3I/crontab
-|4,39,1,0,1713687259,"/tmp/crontab.fEeY3I/crontab"
--'  59  0  ~/.config/scripts/gh-timeago-updates.log
-|4,39,59,0,1713687253,"~/.config/scripts/gh-timeago-updates.log"
--'  59  0  ~/.config/scripts/gh-timeago-updates.log
-|4,39,59,0,1713687253,"~/.config/scripts/gh-timeago-updates.log"
--'  59  0  ~/.config/scripts/gh-timeago-updates.log
-|4,39,59,0,1713687253,"~/.config/scripts/gh-timeago-updates.log"
--'  1  0  ~/.config/scripts/gh-timeago-updates.log
-|4,39,1,0,1713687250,"~/.config/scripts/gh-timeago-updates.log"
--'  1  0  ~/.config/scripts/gh-timeago-updates.log
-|4,39,1,0,1713687250,"~/.config/scripts/gh-timeago-updates.log"
--'  59  0  ~/.config/scripts/gh-timeago-updates.log
-|4,39,59,0,1713687123,"~/.config/scripts/gh-timeago-updates.log"
--'  31  0  ~/.config/scripts/gh-timeago-updates.log
-|4,39,31,0,1713687079,"~/.config/scripts/gh-timeago-updates.log"
--'  31  0  ~/.config/scripts/gh-timeago-updates.log
-|4,39,31,0,1713687079,"~/.config/scripts/gh-timeago-updates.log"
--'  31  0  ~/.config/scripts/gh-timeago-updates.log
-|4,39,31,0,1713687079,"~/.config/scripts/gh-timeago-updates.log"
--'  31  0  ~/.config/scripts/gh-timeago-updates.log
-|4,39,31,0,1713687079,"~/.config/scripts/gh-timeago-updates.log"
--'  31  0  ~/.config/scripts/gh-timeago-updates.log
-|4,39,31,0,1713686993,"~/.config/scripts/gh-timeago-updates.log"
--'  59  0  ~/.config/scripts/gh-timeago-updates.log
-|4,39,59,0,1713686984,"~/.config/scripts/gh-timeago-updates.log"
--'  1  0  ~/.config/scripts/gh-timeago-updates.log
-|4,39,1,0,1713686840,"~/.config/scripts/gh-timeago-updates.log"
--'  1  0  ~/.config/scripts/gh-timeago-updates.log
-|4,39,1,0,1713686840,"~/.config/scripts/gh-timeago-updates.log"
--'  1  0  ~/.config/scripts/cron.log
-|4,39,1,0,1713686784,"~/.config/scripts/cron.log"
--'  1  0  ~/.config/scripts/cron.log
-|4,39,1,0,1713686784,"~/.config/scripts/cron.log"
--'  1  0  ~/.config/scripts/cron.log
-|4,39,1,0,1713686784,"~/.config/scripts/cron.log"
--'  1  0  ~/.config/scripts/cron.log
-|4,39,1,0,1713686784,"~/.config/scripts/cron.log"
--'  1  0  ~/.config/scripts/cron.log
-|4,39,1,0,1713686784,"~/.config/scripts/cron.log"
--'  1  0  ~/.config/scripts/cron.log
-|4,39,1,0,1713686784,"~/.config/scripts/cron.log"
--'  1  0  ~/.config/scripts/cron.log
-|4,39,1,0,1713686784,"~/.config/scripts/cron.log"
--'  23  44  ~/.config/scripts/gh-timeago.bash
-|4,39,23,44,1713686774,"~/.config/scripts/gh-timeago.bash"
--'  20  44  ~/.config/scripts/gh-timeago.bash
-|4,39,20,44,1713686774,"~/.config/scripts/gh-timeago.bash"
--'  23  44  ~/.config/scripts/gh-timeago.bash
-|4,39,23,44,1713686774,"~/.config/scripts/gh-timeago.bash"
--'  20  44  ~/.config/scripts/gh-timeago.bash
-|4,39,20,44,1713686774,"~/.config/scripts/gh-timeago.bash"
--'  20  44  ~/.config/scripts/gh-timeago.bash
-|4,39,20,44,1713686774,"~/.config/scripts/gh-timeago.bash"
--'  20  44  ~/.config/scripts/gh-timeago.bash
-|4,39,20,44,1713686774,"~/.config/scripts/gh-timeago.bash"
--'  20  44  ~/.config/scripts/gh-timeago.bash
-|4,39,20,44,1713686774,"~/.config/scripts/gh-timeago.bash"
--'  20  44  ~/.config/scripts/gh-timeago.bash
-|4,39,20,44,1713686774,"~/.config/scripts/gh-timeago.bash"
--'  20  44  ~/.config/scripts/gh-timeago.bash
-|4,39,20,44,1713686774,"~/.config/scripts/gh-timeago.bash"
--'  1  0  ~/.config/scripts/gh-timeago.bash
-|4,39,1,0,1713686766,"~/.config/scripts/gh-timeago.bash"
--'  1  0  ~/.config/scripts/gh-timeago.bash
-|4,39,1,0,1713686766,"~/.config/scripts/gh-timeago.bash"
--'  1  0  ~/.config/scripts/gh-timeago.bash
-|4,39,1,0,1713686766,"~/.config/scripts/gh-timeago.bash"
--'  1  0  ~/.config/scripts/gh-timeago.bash
-|4,39,1,0,1713686766,"~/.config/scripts/gh-timeago.bash"
--'  1  0  ~/.config/scripts/gh-timeago.bash
-|4,39,1,0,1713686766,"~/.config/scripts/gh-timeago.bash"
--'  1  0  ~/.config/scripts/gh-timeago.bash
-|4,39,1,0,1713686766,"~/.config/scripts/gh-timeago.bash"
--'  1  0  ~/.config/scripts/gh-timeago.bash
-|4,39,1,0,1713686766,"~/.config/scripts/gh-timeago.bash"
--'  1  0  ~/.config/scripts/cron.log
-|4,39,1,0,1713686766,"~/.config/scripts/cron.log"
--'  1  0  ~/.config/scripts/gh-timeago.bash
-|4,39,1,0,1713686766,"~/.config/scripts/gh-timeago.bash"
--'  8  0  ~/.config/scripts/cron.log
-|4,39,8,0,1713686755,"~/.config/scripts/cron.log"
--'  8  0  ~/.config/scripts/cron.log
-|4,39,8,0,1713686755,"~/.config/scripts/cron.log"
--'  8  0  ~/.config/scripts/cron.log
-|4,39,8,0,1713686755,"~/.config/scripts/cron.log"
--'  8  0  ~/.config/scripts/cron.log
-|4,39,8,0,1713686755,"~/.config/scripts/cron.log"
--'  8  0  ~/.config/scripts/cron.log
-|4,39,8,0,1713686755,"~/.config/scripts/cron.log"
--'  8  0  ~/.config/scripts/cron.log
-|4,39,8,0,1713686755,"~/.config/scripts/cron.log"
--'  8  0  ~/.config/scripts/cron.log
-|4,39,8,0,1713686755,"~/.config/scripts/cron.log"
--'  8  0  ~/.config/scripts/cron.log
-|4,39,8,0,1713686755,"~/.config/scripts/cron.log"
--'  8  0  ~/.config/scripts/cron.log
-|4,39,8,0,1713686755,"~/.config/scripts/cron.log"
--'  1  0  ~/.config/scripts/cron.log
-|4,39,1,0,1713686754,"~/.config/scripts/cron.log"
--'  25  0  /tmp/crontab.uBVNpP/crontab
-|4,39,25,0,1713686549,"/tmp/crontab.uBVNpP/crontab"
--'  25  0  /tmp/crontab.uBVNpP/crontab
-|4,39,25,0,1713686549,"/tmp/crontab.uBVNpP/crontab"
--'  25  0  /tmp/crontab.uBVNpP/crontab
-|4,39,25,0,1713686549,"/tmp/crontab.uBVNpP/crontab"
--'  25  0  /tmp/crontab.uBVNpP/crontab
-|4,39,25,0,1713686549,"/tmp/crontab.uBVNpP/crontab"
--'  25  0  /tmp/crontab.uBVNpP/crontab
-|4,39,25,0,1713686549,"/tmp/crontab.uBVNpP/crontab"
--'  25  0  /tmp/crontab.uBVNpP/crontab
-|4,39,25,0,1713686549,"/tmp/crontab.uBVNpP/crontab"
--'  25  0  /tmp/crontab.uBVNpP/crontab
-|4,39,25,0,1713686549,"/tmp/crontab.uBVNpP/crontab"
--'  25  0  /tmp/crontab.uBVNpP/crontab
-|4,39,25,0,1713686549,"/tmp/crontab.uBVNpP/crontab"
--'  25  0  /tmp/crontab.uBVNpP/crontab
-|4,39,25,0,1713686549,"/tmp/crontab.uBVNpP/crontab"
--'  25  0  /tmp/crontab.uBVNpP/crontab
-|4,39,25,0,1713686549,"/tmp/crontab.uBVNpP/crontab"
--'  1  0  /tmp/crontab.uBVNpP/crontab
-|4,39,1,0,1713686543,"/tmp/crontab.uBVNpP/crontab"
--'  1  0  /tmp/crontab.uBVNpP/crontab
-|4,39,1,0,1713686543,"/tmp/crontab.uBVNpP/crontab"
--'  1  0  /tmp/crontab.uBVNpP/crontab
-|4,39,1,0,1713686543,"/tmp/crontab.uBVNpP/crontab"
--'  1  0  /tmp/crontab.uBVNpP/crontab
-|4,39,1,0,1713686543,"/tmp/crontab.uBVNpP/crontab"
--'  1  0  /tmp/crontab.uBVNpP/crontab
-|4,39,1,0,1713686543,"/tmp/crontab.uBVNpP/crontab"
--'  1  0  /tmp/crontab.uBVNpP/crontab
-|4,39,1,0,1713686543,"/tmp/crontab.uBVNpP/crontab"
--'  1  0  /tmp/crontab.uBVNpP/crontab
-|4,39,1,0,1713686543,"/tmp/crontab.uBVNpP/crontab"
--'  1  0  /tmp/crontab.uBVNpP/crontab
-|4,39,1,0,1713686543,"/tmp/crontab.uBVNpP/crontab"
--'  1  0  /tmp/crontab.uBVNpP/crontab
-|4,39,1,0,1713686543,"/tmp/crontab.uBVNpP/crontab"
--'  1  0  /tmp/crontab.uBVNpP/crontab
-|4,39,1,0,1713686543,"/tmp/crontab.uBVNpP/crontab"
--'  1  0  /tmp/crontab.A7hKPO/crontab
-|4,39,1,0,1713686540,"/tmp/crontab.A7hKPO/crontab"
--'  1  0  /tmp/crontab.A7hKPO/crontab
-|4,39,1,0,1713686540,"/tmp/crontab.A7hKPO/crontab"
--'  1  0  /tmp/crontab.A7hKPO/crontab
-|4,39,1,0,1713686540,"/tmp/crontab.A7hKPO/crontab"
--'  1  0  /tmp/crontab.A7hKPO/crontab
-|4,39,1,0,1713686540,"/tmp/crontab.A7hKPO/crontab"
--'  1  0  /tmp/crontab.A7hKPO/crontab
-|4,39,1,0,1713686540,"/tmp/crontab.A7hKPO/crontab"
--'  1  0  /tmp/crontab.A7hKPO/crontab
-|4,39,1,0,1713686540,"/tmp/crontab.A7hKPO/crontab"
+-'  1  0  ~/.config/.git/COMMIT_EDITMSG
+|4,39,1,0,1713760255,"~/.config/.git/COMMIT_EDITMSG"
+-'  1  0  ~/.config/.git/COMMIT_EDITMSG
+|4,39,1,0,1713760255,"~/.config/.git/COMMIT_EDITMSG"
+-'  1  0  ~/.config/.git/COMMIT_EDITMSG
+|4,39,1,0,1713760255,"~/.config/.git/COMMIT_EDITMSG"
+-'  1  0  ~/.config/.git/COMMIT_EDITMSG
+|4,39,1,0,1713760255,"~/.config/.git/COMMIT_EDITMSG"
+-'  8  0  ~/.config/direnv
+|4,39,8,0,1713760171,"~/.config/direnv"
+-'  8  0  ~/.config/direnv
+|4,39,8,0,1713760171,"~/.config/direnv"
+-'  8  0  ~/.config/direnv
+|4,39,8,0,1713760171,"~/.config/direnv"
+-'  8  0  ~/.config/direnv
+|4,39,8,0,1713760171,"~/.config/direnv"
+-'  8  0  ~/.config/direnv
+|4,39,8,0,1713760171,"~/.config/direnv"
+-'  1  0  ~/.config/alias.sh
+|4,39,1,0,1713760143,"~/.config/alias.sh"
+-'  1  0  ~/.config/alias.sh
+|4,39,1,0,1713760143,"~/.config/alias.sh"
+-'  1  0  ~/.config/alias.sh
+|4,39,1,0,1713760143,"~/.config/alias.sh"
+-'  1  0  ~/.config/alias.sh
+|4,39,1,0,1713760143,"~/.config/alias.sh"
+-'  1  0  ~/.config/alias.sh
+|4,39,1,0,1713760143,"~/.config/alias.sh"
+-'  1  0  ~/.config/alias.sh
+|4,39,1,0,1713760143,"~/.config/alias.sh"
+-'  1  0  ~/.config/alias.sh
+|4,39,1,0,1713760143,"~/.config/alias.sh"
+-'  1  0  ~/.config/alias.sh
+|4,39,1,0,1713760132,"~/.config/alias.sh"
+-'  17  0  ~/.config/alias.sh
+|4,39,17,0,1713760127,"~/.config/alias.sh"
+-'  17  0  ~/.config/alias.sh
+|4,39,17,0,1713760127,"~/.config/alias.sh"
+-'  17  0  ~/.config/alias.sh
+|4,39,17,0,1713760127,"~/.config/alias.sh"
+-'  17  0  ~/.config/alias.sh
+|4,39,17,0,1713760127,"~/.config/alias.sh"
+-'  17  0  ~/.config/alias.sh
+|4,39,17,0,1713760127,"~/.config/alias.sh"
+-'  17  0  ~/.config/alias.sh
+|4,39,17,0,1713760127,"~/.config/alias.sh"
+-'  17  0  ~/.config/alias.sh
+|4,39,17,0,1713760127,"~/.config/alias.sh"
+-'  17  0  ~/.config/alias.sh
+|4,39,17,0,1713760127,"~/.config/alias.sh"
+-'  17  0  ~/.config/alias.sh
+|4,39,17,0,1713760127,"~/.config/alias.sh"
+-'  1  0  ~/.config/alias.sh
+|4,39,1,0,1713760123,"~/.config/alias.sh"
+-'  15  0  ~/.config/setup.sh
+|4,39,15,0,1713760033,"~/.config/setup.sh"
+-'  15  0  ~/.config/setup.sh
+|4,39,15,0,1713760033,"~/.config/setup.sh"
+-'  15  0  ~/.config/setup.sh
+|4,39,15,0,1713760033,"~/.config/setup.sh"
+-'  15  0  ~/.config/setup.sh
+|4,39,15,0,1713760033,"~/.config/setup.sh"
+-'  15  0  ~/.config/setup.sh
+|4,39,15,0,1713760033,"~/.config/setup.sh"
+-'  15  0  ~/.config/setup.sh
+|4,39,15,0,1713760033,"~/.config/setup.sh"
+-'  15  0  ~/.config/setup.sh
+|4,39,15,0,1713760033,"~/.config/setup.sh"
+-'  15  0  ~/.config/setup.sh
+|4,39,15,0,1713760033,"~/.config/setup.sh"
+-'  15  0  ~/.config/setup.sh
+|4,39,15,0,1713760033,"~/.config/setup.sh"
+-'  15  0  ~/.config/setup.sh
+|4,39,15,0,1713760033,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1713760021,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1713760021,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1713760021,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1713760021,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1713760021,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1713760021,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1713760021,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1713760021,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1713760021,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1713760021,"~/.config/setup.sh"
+-'  15  0  ~/.config/alias.sh
+|4,39,15,0,1713760002,"~/.config/alias.sh"
+-'  15  0  ~/.config/alias.sh
+|4,39,15,0,1713760002,"~/.config/alias.sh"
+-'  15  0  ~/.config/alias.sh
+|4,39,15,0,1713760002,"~/.config/alias.sh"
+-'  15  0  ~/.config/alias.sh
+|4,39,15,0,1713760002,"~/.config/alias.sh"
+-'  15  0  ~/.config/alias.sh
+|4,39,15,0,1713760002,"~/.config/alias.sh"
+-'  15  0  ~/.config/alias.sh
+|4,39,15,0,1713760002,"~/.config/alias.sh"
+-'  15  0  ~/.config/alias.sh
+|4,39,15,0,1713760002,"~/.config/alias.sh"
+-'  15  0  ~/.config/alias.sh
+|4,39,15,0,1713760002,"~/.config/alias.sh"
+-'  15  0  ~/.config/alias.sh
+|4,39,15,0,1713760002,"~/.config/alias.sh"
+-'  15  0  ~/.config/alias.sh
+|4,39,15,0,1713760002,"~/.config/alias.sh"
+-'  15  0  ~/.config/alias.sh
+|4,39,15,0,1713760002,"~/.config/alias.sh"
+-'  15  0  ~/.config/alias.sh
+|4,39,15,0,1713760002,"~/.config/alias.sh"
+-'  1  0  ~/.config/alias.sh
+|4,39,1,0,1713759996,"~/.config/alias.sh"
+-'  1  0  ~/.config/alias.sh
+|4,39,1,0,1713759996,"~/.config/alias.sh"
+-'  1  0  ~/.config/alias.sh
+|4,39,1,0,1713759996,"~/.config/alias.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1713759988,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1713759988,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1713759988,"~/.config/setup.sh"
+-'  1  0  ~/bash/logs/cron-run.log
+|4,39,1,0,1713759798,"~/bash/logs/cron-run.log"
+-'  1  0  ~/bash/logs/cron-run.log
+|4,39,1,0,1713759798,"~/bash/logs/cron-run.log"
+-'  1  0  ~/bash/logs/cron-run.log
+|4,39,1,0,1713759798,"~/bash/logs/cron-run.log"
+-'  1  0  ~/bash/logs/cron-run.log
+|4,39,1,0,1713759798,"~/bash/logs/cron-run.log"
+-'  1  0  ~/bash/logs/cron-run.log
+|4,39,1,0,1713759798,"~/bash/logs/cron-run.log"
+-'  1  0  ~/bash/logs/cron-run.log
+|4,39,1,0,1713759798,"~/bash/logs/cron-run.log"
+-'  1  0  ~/bash/logs/cron-run.log
+|4,39,1,0,1713759798,"~/bash/logs/cron-run.log"
+-'  1  0  ~/bash/logs/cron-run.log
+|4,39,1,0,1713759798,"~/bash/logs/cron-run.log"
+-'  1  0  ~/bash/logs/cron-run.log
+|4,39,1,0,1713759798,"~/bash/logs/cron-run.log"
+-'  1  0  ~/bash/logs/cron-run.log
+|4,39,1,0,1713759798,"~/bash/logs/cron-run.log"
+-'  1  0  ~/bash/logs/cron-run.log
+|4,39,1,0,1713759798,"~/bash/logs/cron-run.log"
+-'  1  0  ~/bash/logs/cron-run.log
+|4,39,1,0,1713759798,"~/bash/logs/cron-run.log"
+-'  1  0  ~/bash/logs/cron-run.log
+|4,39,1,0,1713759798,"~/bash/logs/cron-run.log"
+-'  1  0  ~/bash/logs/cron-run.log
+|4,39,1,0,1713759798,"~/bash/logs/cron-run.log"
+-'  1  0  ~/bash/logs/cron.log
+|4,39,1,0,1713759323,"~/bash/logs/cron.log"
+-'  1  0  ~/bash/logs/cron.log
+|4,39,1,0,1713759323,"~/bash/logs/cron.log"
+-'  1  0  ~/bash/logs/cron.log
+|4,39,1,0,1713759323,"~/bash/logs/cron.log"
+-'  1  0  ~/bash/logs/cron.log
+|4,39,1,0,1713759323,"~/bash/logs/cron.log"
+-'  1  0  ~/bash/logs/cron.log
+|4,39,1,0,1713759323,"~/bash/logs/cron.log"
+-'  1  0  ~/bash/logs/cron.log
+|4,39,1,0,1713759323,"~/bash/logs/cron.log"
+-'  1  0  ~/bash/logs/cron.log
+|4,39,1,0,1713759323,"~/bash/logs/cron.log"
+-'  1  0  ~/bash/logs/cron.log
+|4,39,1,0,1713759323,"~/bash/logs/cron.log"
+-'  1  0  ~/bash/logs/cron.log
+|4,39,1,0,1713759323,"~/bash/logs/cron.log"
+-'  1  0  ~/bash/logs/cron.log
+|4,39,1,0,1713759323,"~/bash/logs/cron.log"
+-'  1  0  ~/bash/logs/cron.log
+|4,39,1,0,1713759323,"~/bash/logs/cron.log"
+-'  1  0  ~/bash/logs/cron.log
+|4,39,1,0,1713759323,"~/bash/logs/cron.log"
+-'  1  0  ~/bash/logs/cron.log
+|4,39,1,0,1713759323,"~/bash/logs/cron.log"
+-'  1  0  ~/bash/logs/cron.log
+|4,39,1,0,1713759323,"~/bash/logs/cron.log"
+-'  1  0  ~/bash/logs/cron.log
+|4,39,1,0,1713759323,"~/bash/logs/cron.log"
+-'  41  0  ~/genproject/python.sh
+|4,39,41,0,1713759317,"~/genproject/python.sh"
+-'  41  0  ~/genproject/python.sh
+|4,39,41,0,1713759317,"~/genproject/python.sh"
+-'  41  0  ~/genproject/python.sh
+|4,39,41,0,1713759317,"~/genproject/python.sh"
+-'  41  0  ~/genproject/python.sh
+|4,39,41,0,1713759317,"~/genproject/python.sh"
+-'  41  0  ~/genproject/python.sh
+|4,39,41,0,1713759317,"~/genproject/python.sh"
 
 # Buffer list:
-%/tmp/crontab.fEeY3I/crontab	25	24
-%/usr/bin/bash	1	0
-%~/.config/scripts/gh-timeago.bash	4	27
-%~/.vim/plugin/logutils.vim	17	46
-%~/.config/scripts/gh-timeago-updates.log	6	0
+%~/.config/.git/COMMIT_EDITMSG	1	0
 
 # History of marks within files (newest to oldest):
 
-> ~/.vim/plugin/logutils.vim
-	*	1713687974	0
-	"	17	46
-	^	17	47
-	.	17	46
-	+	3	0
-	+	3	32
-	+	5	4
-	+	7	4
-	+	4	17
-	+	5	14
-	+	4	12
-	+	5	36
-	+	6	4
-	+	7	0
-	+	3	0
-	+	1	0
-	+	17	0
-	+	1	0
-	+	10	31
-	+	14	0
-	+	11	0
-	+	17	15
-	+	10	18
-	+	17	16
-	+	11	62
-	+	14	5
-	+	12	66
-	+	13	0
-	+	10	26
-	+	17	46
+> ~/.config/.git/COMMIT_EDITMSG
+	*	1713760255	0
+	"	1	0
 
-> ~/.config/scripts/gh-timeago-updates.log
-	*	1713687963	0
-	"	6	0
-	^	6	0
-	.	6	0
-	+	1	0
-	+	51	12
-	+	37	0
-	+	6	0
-
-> ~/.config/scripts/gh-timeago.bash
-	*	1713687590	0
-	"	4	27
-	^	5	38
-	.	5	0
-	+	2	14
+> ~/.config/alias.sh
+	*	1713760142	0
+	"	1	0
+	.	18	0
 	+	2	0
-	+	6	0
-	+	9	19
-	+	14	0
-	+	15	5
-	+	14	0
-	+	24	33
-	+	17	27
-	+	14	0
-	+	22	0
+	+	15	37
+	+	18	77
+	+	18	42
+	+	18	47
+	+	18	32
+	+	19	39
+	+	20	40
+	+	21	79
+	+	21	0
+	+	21	36
+	+	21	20
+	+	21	25
+	+	22	45
+	+	23	0
+	+	21	0
+	+	18	0
+	+	22	19
+	+	16	60
 	+	17	0
-	+	23	33
-	+	17	0
-	+	14	0
-	+	15	1
-	+	17	0
-	+	22	0
-	+	24	0
-	+	22	0
-	+	15	26
-	+	24	29
-	+	1	1
-	+	11	17
-	+	15	13
-	+	24	13
-	+	11	19
-	+	15	15
-	+	23	15
-	+	24	15
-	+	7	0
-	+	8	6
-	+	23	17
-	+	15	0
-	+	24	0
-	+	23	44
-	+	17	0
-	+	16	0
-	+	24	0
-	+	15	0
-	+	24	0
-	+	23	44
-	+	4	28
-	+	5	27
-	+	6	25
-	+	6	0
-	+	5	37
+	+	18	0
+
+> ~/.config/setup.sh
+	*	1713760030	0
+	"	15	0
+	^	9	2
+	.	26	0
+	+	13	68
+	+	13	27
 	+	5	0
+	+	4	1
+	+	13	34
+	+	4	0
+	+	5	0
+	+	13	0
+	+	4	0
+	+	13	0
+	+	3	0
+	+	4	0
+	+	13	0
+	+	5	0
+	+	13	0
+	+	13	1
+	+	13	8
+	+	13	10
+	+	13	155
+	+	13	8
+	+	13	123
+	+	13	0
+	+	24	26
+	+	25	27
+	+	7	41
+	+	9	23
+	+	12	0
+	+	9	75
+	+	12	0
+	+	9	63
+	+	12	0
+	+	9	54
+	+	13	71
+	+	13	89
+	+	13	0
+	+	11	38
+	+	10	0
+	+	10	13
+	+	10	0
+	+	13	9
+	+	13	17
+	+	26	0
+	+	4	0
+	+	15	0
+	+	13	14
+	+	27	34
+	+	9	0
+	+	9	29
+	+	1	11
+	+	13	0
+	+	14	0
+	+	13	0
+	+	23	0
+	+	9	0
+	+	10	0
+	+	13	0
+	+	27	0
+	+	8	0
+	+	13	0
+	+	30	35
+	+	25	1
+	+	28	0
+	+	31	0
+	+	25	0
+	+	26	0
+	+	24	0
+	+	26	0
 
-> /tmp/crontab.fEeY3I/crontab
-	*	1713687278	0
-	"	25	24
-
-> /usr/bin/bash
-	*	1713687276	0
+> ~/bash/logs/cron-run.log
+	*	1713759797	0
 	"	1	0
-
-> /usr/share/vim/vim90/doc/builtin.txt
-	*	1713686983	0
-	"	8989	33
-
-> ~/.config/scripts/cron.log
-	*	1713686777	0
-	"	1	0
+	^	1	0
 	.	1	0
 	+	1	0
 
-> /tmp/crontab.uBVNpP/crontab
-	*	1713686549	0
-	"	25	0
-	.	25	0
-	+	26	0
-	+	25	0
-
-> /tmp/crontab.A7hKPO/crontab
-	*	1713686538	0
-	"	1	0
-	^	26	111
-	.	26	0
-	+	26	0
-	+	28	0
-	+	27	0
-	+	26	0
-
-> /tmp/crontab.QW353P/crontab
-	*	1713685995	0
+> ~/bash/logs/cron.log
+	*	1713759322	0
 	"	1	0
 
-> /tmp/crontab.lN81LO/crontab
-	*	1713685988	0
-	"	1	0
-
-> /tmp/crontab.EekynV/crontab
-	*	1713685880	0
-	"	26	49
-
-> ~/.config/.gitignore
-	*	1713685700	0
-	"	6	0
-	^	6	5
-	.	6	0
+> ~/genproject/python.sh
+	*	1713759315	0
+	"	41	0
+	^	57	51
+	.	41	0
 	+	6	0
+	+	2	0
+	+	4	9
+	+	11	9
+	+	17	9
+	+	42	0
+	+	55	26
+	+	56	0
+	+	57	8
+	+	39	6
+	+	41	0
+	+	40	0
+	+	41	0
+	+	23	15
+	+	45	0
+	+	36	13
+	+	53	4
+	+	57	1
+	+	28	6
+	+	41	1
+	+	57	35
+	+	41	0
+
+> ~/tmp1-python/.envrc
+	*	1713759069	0
+	"	1	0
+
+> ~/genproject/sql_checklist.txt
+	*	1713758803	0
+	"	1	0
+	.	10	0
+	+	12	29
+	+	13	29
+	+	13	0
+	+	12	40
+	+	13	0
+	+	4	19
+	+	13	45
+	+	4	0
+	+	27	35
+	+	27	4
+	+	27	82
+	+	27	81
+	+	27	4
+	+	27	0
+	+	27	90
+	+	27	26
+	+	27	24
+	+	27	26
+	+	27	0
+	+	17	8
+	+	27	0
+	+	16	0
+	+	27	0
+	+	21	54
+	+	21	35
+	+	22	53
+	+	23	39
+	+	27	49
+	+	27	0
+	+	21	0
+	+	27	0
+	+	27	55
+	+	27	56
+	+	27	0
+	+	27	49
+	+	27	55
+	+	27	56
+	+	27	0
+	+	21	0
+	+	26	0
+	+	27	69
+	+	27	4
+	+	27	0
+	+	24	0
+	+	27	44
+	+	27	0
+	+	19	0
+	+	27	0
+	+	27	76
+	+	27	0
+	+	18	0
+	+	27	0
+	+	27	3
+	+	27	26
+	+	27	18
+	+	27	35
+	+	27	0
+	+	11	24
+	+	20	26
+	+	10	0
+	+	6	9
+	+	9	21
+	+	10	0
+	+	12	0
+	+	5	0
+	+	6	15
+	+	11	24
+	+	20	19
+	+	2	33
+	+	27	14
+	+	27	4
+	+	27	77
+	+	27	79
+	+	27	4
+	+	27	0
+	+	25	0
+	+	27	0
+	+	14	52
+	+	15	19
+	+	16	0
+	+	17	0
+	+	10	30
+	+	9	4
+	+	10	0
+
+> ~/tmp2-python/requirements.txt
+	*	1713758588	0
+	"	1	0
+
+> ~/bash/direnv-runner.bash
+	*	1713758300	0
+	"	31	0
+	^	16	0
+	.	16	0
+	+	12	6
+	+	12	0
+	+	17	10
+	+	32	0
+	+	17	0
+	+	16	0
+
+> ~/Twitch/coffee-vps/code/general.py
+	*	1713758253	0
+	"	1	0
 
 > ~/.config/starship/starship.toml
-	*	1713685455	0
-	"	22	107
-	^	22	106
-	.	22	107
-	+	17	9
-	+	17	20
+	*	1713758200	0
+	"	22	101
+	^	22	68
+	.	22	67
 	+	17	12
 	+	17	0
 	+	11	22
@@ -7865,6 +8058,825 @@ $\=strftime("%c", submatch(1))
 	+	22	107
 	+	22	7
 	+	22	107
+	+	19	73
+	+	22	67
+
+> ~/bash/logs/gh-timeago-updates.log
+	*	1713758199	0
+	"	1	0
+
+> ~/.config/todo.txt
+	*	1713758148	0
+	"	4	51
+	^	4	52
+	.	4	51
+	+	2	94
+	+	3	0
+	+	1	0
+	+	4	51
+
+> /tmp/mcfly.7lyE3nZu
+	*	1713757330	0
+	"	106	0
+
+> ~/.config/shell_data/.bash_history
+	*	1713756543	0
+	"	1	0
+
+> ~/.tig_history
+	*	1713756381	0
+	"	1	0
+
+> ~/.selected_editor
+	*	1713756375	0
+	"	1	0
+
+> ~/.bash_history
+	*	1713756182	0
+	"	1	0
+
+> ~/.history
+	*	1713754856	0
+	"	1	0
+
+> ~/bash/backup.crontab
+	*	1713754527	0
+	"	25	2
+	^	26	4
+	.	26	3
+	+	26	3
+
+> /tmp/crontab.eOtdz1/crontab
+	*	1713754285	0
+	"	26	60
+	^	26	61
+	.	26	57
+	+	26	57
+
+> /tmp/crontab.OGdp7p/crontab
+	*	1713754205	0
+	"	1	0
+
+> /tmp/crontab.nA4qEE/crontab
+	*	1713754193	0
+	"	1	0
+
+> /tmp/crontab.hJ9C2V/crontab
+	*	1713754184	0
+	"	25	79
+	^	25	80
+	.	25	79
+	+	25	79
+
+> ~/bash/gh-timeago.bash
+	*	1713754170	0
+	"	1	0
+	^	20	64
+	.	20	63
+	+	20	63
+
+> ~/bash/cron-run.bash
+	*	1713754127	0
+	"	34	81
+	^	34	82
+	.	34	81
+	+	34	81
+
+> ~/bash/cronlogger.sh
+	*	1713754066	0
+	"	1	0
+
+> ~/jobs-python/direnv-runner.bash
+	*	1713751589	0
+	"	52	1
+	^	52	2
+	.	52	1
+	+	34	21
+	+	36	0
+	+	36	19
+	+	39	0
+	+	14	2
+	+	39	12
+	+	42	0
+	+	33	0
+	+	35	0
+	+	38	2
+	+	39	0
+	+	37	0
+	+	40	57
+	+	41	0
+	+	19	4
+	+	31	0
+	+	41	0
+	+	43	13
+	+	49	0
+	+	52	4
+	+	52	90
+	+	53	0
+	+	52	0
+	+	43	6
+	+	52	60
+	+	53	0
+	+	52	0
+	+	52	95
+	+	52	1
+
+> ~/niche-python/niche.py
+	*	1713751553	0
+	"	5	2
+	^	5	3
+	.	5	2
+	+	4	23
+	+	6	0
+	+	4	62
+	+	5	1
+	+	4	0
+	+	5	2
+
+> ~/jobs-python/cronlogger.sh
+	*	1713751548	0
+	"	18	0
+	^	18	97
+	.	19	0
+	+	2	232
+	+	18	0
+	+	2	0
+	+	2	115
+	+	2	209
+	+	18	0
+	+	2	77
+	+	3	2
+	+	5	43
+	+	6	2
+	+	18	0
+	+	6	62
+	+	18	0
+	+	6	43
+	+	8	7
+	+	9	10
+	+	11	17
+	+	12	8
+	+	13	0
+	+	15	22
+	+	17	44
+	+	18	0
+	+	17	76
+	+	18	0
+	+	19	0
+	+	18	63
+	+	19	0
+
+> ~/.config/scripts/cron-run.bash
+	*	1713751373	0
+	"	1	0
+	^	43	48
+	.	43	19
+	+	34	89
+	+	45	0
+	+	34	6
+	+	33	22
+	+	34	0
+	+	33	7
+	+	34	15
+	+	47	0
+	+	42	12
+	+	44	3
+	+	44	13
+	+	44	46
+	+	44	7
+	+	3	26
+	+	27	0
+	+	3	26
+	+	5	23
+	+	5	13
+	+	29	0
+	+	5	0
+	+	44	0
+	+	43	19
+
+> ~/.config/bindings.inputrc
+	*	1713751115	0
+	"	16	0
+	^	16	30
+	.	16	29
+	+	16	29
+
+> ~/niche-python/requirements.txt
+	*	1713750352	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/.config/scripts/target.bash
+	*	1713750211	0
+	"	1	0
+	^	23	24
+	.	23	23
+	+	10	0
+	+	10	18
+	+	5	7
+	+	10	30
+	+	5	9
+	+	10	0
+	+	5	0
+	+	7	3
+	+	8	3
+	+	5	13
+	+	16	13
+	+	22	10
+	+	7	0
+	+	6	15
+	+	7	13
+	+	18	37
+	+	20	29
+	+	20	14
+	+	21	0
+	+	20	0
+	+	21	0
+	+	4	0
+	+	5	0
+	+	9	0
+	+	17	0
+	+	16	3
+	+	22	0
+	+	21	0
+	+	21	13
+	+	21	2
+	+	21	0
+	+	21	12
+	+	18	0
+	+	21	5
+	+	21	12
+	+	21	10
+	+	21	0
+	+	21	7
+	+	17	0
+	+	16	0
+	+	16	9
+	+	10	45
+	+	10	1
+	+	10	16
+	+	10	5
+	+	21	19
+	+	21	14
+	+	21	27
+	+	21	10
+	+	21	15
+	+	21	0
+	+	17	0
+	+	11	7
+	+	12	23
+	+	13	8
+	+	14	4
+	+	13	0
+	+	20	12
+	+	21	0
+	+	19	0
+	+	23	23
+
+> ~/jobs-python/direnv-runner.sh
+	*	1713750204	0
+	"	12	20
+	^	12	20
+	.	13	0
+	+	4	65
+	+	6	67
+	+	7	59
+	+	8	69
+	+	9	58
+	+	10	46
+	+	11	49
+	+	11	0
+	+	17	14
+	+	18	33
+	+	18	64
+	+	18	0
+	+	19	12
+	+	19	0
+	+	19	18
+	+	19	29
+	+	19	0
+	+	19	19
+	+	19	0
+	+	12	0
+	+	16	0
+	+	12	19
+	+	12	18
+	+	12	0
+	+	1	9
+	+	12	20
+	+	13	0
+
+> ~/.config/scripts/gh-timeago.bash
+	*	1713750187	0
+	"	1	0
+	.	3	0
+	+	2	14
+	+	2	0
+	+	3	0
+	+	6	19
+	+	11	0
+	+	12	5
+	+	11	0
+	+	21	33
+	+	14	27
+	+	11	0
+	+	19	0
+	+	14	0
+	+	20	33
+	+	14	0
+	+	11	0
+	+	12	1
+	+	14	0
+	+	19	0
+	+	21	0
+	+	19	0
+	+	12	26
+	+	21	29
+	+	1	1
+	+	8	17
+	+	12	13
+	+	21	13
+	+	8	19
+	+	12	15
+	+	20	15
+	+	21	15
+	+	4	0
+	+	5	6
+	+	20	17
+	+	12	0
+	+	21	0
+	+	20	44
+	+	14	0
+	+	13	0
+	+	21	0
+	+	12	0
+	+	21	0
+	+	20	44
+	+	3	28
+	+	3	27
+	+	3	25
+	+	3	0
+	+	3	37
+	+	3	0
+
+> /usr/share/vim/vim90/doc/change.txt
+	*	1713750059	0
+	"	1679	7
+
+> ~/jobs-python/pylogger.py
+	*	1713749799	0
+	"	1	0
+	^	3	74
+	.	3	73
+	+	2	0
+	+	3	73
+
+> ~/jobs-python/test-libs.py
+	*	1713748316	0
+	"	1	0
+	^	11	26
+	.	11	1
+	+	6	0
+	+	3	30
+	+	6	0
+	+	3	0
+	+	6	0
+	+	5	30
+	+	4	0
+	+	3	0
+	+	2	0
+	+	6	36
+	+	5	23
+	+	7	0
+	+	5	83
+	+	6	50
+	+	8	28
+	+	9	31
+	+	10	23
+	+	11	1
+
+> ~/jobs-python/dbutils.py
+	*	1713712858	0
+	"	8	0
+	.	14	0
+	+	2	0
+	+	14	0
+
+> ~/hateoas/dbutils.py
+	*	1713712734	0
+	"	1	0
+	^	11	50
+	.	8	0
+	+	17	4
+	+	6	39
+	+	6	8
+	+	4	1
+	+	6	0
+	+	6	1
+	+	4	0
+	+	5	10
+	+	3	20
+	+	11	0
+	+	11	4
+	+	11	64
+	+	11	41
+	+	11	5
+	+	11	0
+	+	11	77
+	+	11	0
+	+	11	7
+	+	11	24
+	+	11	0
+	+	11	7
+	+	9	0
+	+	11	20
+	+	11	0
+	+	9	4
+	+	10	4
+	+	11	17
+	+	11	11
+	+	11	46
+	+	10	0
+	+	6	0
+	+	8	0
+
+> ~/jobs-python/.gitignore
+	*	1713712687	0
+	"	1	6
+	^	1	7
+	.	1	6
+	+	1	6
+
+> ~/jobs-python/requirements.txt
+	*	1713712495	0
+	"	3	15
+	^	3	16
+	.	3	15
+	+	2	4
+	+	3	15
+
+> ~/hateoas/requirements.txt
+	*	1713712494	0
+	"	1	0
+	^	2	5
+	.	2	4
+	+	3	5
+	+	9	20
+	+	2	4
+
+> /tmp/crontab.UyujAL/crontab
+	*	1713706385	0
+	"	25	0
+
+> ~/.config/scripts/cron.log
+	*	1713706181	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/.config/scripts/gh-timeago-updates.log
+	*	1713702566	0
+	"	76	0
+	^	6	0
+	.	6	0
+	+	1	0
+	+	51	12
+	+	37	0
+	+	6	0
+
+> ~/.config/scripts/combined.log
+	*	1713702425	0
+	"	48	0
+	^	18	28
+	.	2	0
+	+	20	25
+	+	19	26
+	+	18	26
+	+	16	26
+	+	20	0
+	+	18	27
+	+	2	0
+
+> ~/.config/scripts/simple-source.bash
+	*	1713700924	0
+	"	16	0
+	^	1	11
+	.	16	0
+	+	4	36
+	+	6	1
+	+	11	11
+	+	12	5
+	+	17	3
+	+	12	5
+	+	13	21
+	+	14	12
+	+	16	14
+	+	16	15
+	+	16	14
+	+	16	15
+	+	16	0
+	+	17	0
+	+	1	10
+	+	12	0
+	+	16	0
+
+> /tmp/crontab.EjtbhG/crontab
+	*	1713699801	0
+	"	24	0
+	.	26	0
+	+	26	0
+
+> ~/.config/scripts/cron-run.log
+	*	1713697350	0
+	"	5	0
+
+> ~/.config/scripts/run-script.bash
+	*	1713696784	0
+	"	1	0
+	^	4	34
+	.	4	34
+	+	1	62
+	+	1	80
+	+	1	27
+	+	1	0
+	+	1	27
+	+	1	61
+	+	1	40
+	+	1	53
+	+	1	49
+	+	1	33
+	+	1	0
+	+	1	1
+	+	1	21
+	+	1	28
+	+	1	0
+	+	1	7
+	+	1	27
+	+	1	0
+	+	1	14
+	+	1	0
+	+	1	2
+	+	1	14
+	+	1	18
+	+	1	26
+	+	1	0
+	+	1	2
+	+	1	0
+	+	1	6
+	+	1	3
+	+	1	0
+	+	1	108
+	+	1	24
+	+	1	78
+	+	1	0
+	+	1	28
+	+	1	36
+	+	1	27
+	+	1	0
+	+	1	23
+	+	1	57
+	+	1	0
+	+	1	29
+	+	1	0
+	+	1	70
+	+	1	0
+	+	1	68
+	+	1	0
+	+	1	54
+	+	1	0
+	+	1	19
+	+	1	0
+	+	1	63
+	+	1	0
+	+	1	21
+	+	1	32
+	+	1	0
+	+	1	6
+	+	1	0
+	+	1	13
+	+	1	0
+	+	1	14
+	+	1	0
+	+	10	0
+	+	13	0
+	+	16	0
+	+	3	0
+	+	11	57
+	+	12	0
+	+	11	122
+	+	18	0
+	+	15	0
+	+	15	15
+	+	15	1
+	+	15	0
+	+	8	6
+	+	9	0
+	+	4	34
+
+> ~/.vim/vimrc
+	*	1713696420	0
+	"	47	53
+	^	46	33
+	.	46	32
+	+	63	65
+	+	59	0
+	+	62	7
+	+	63	0
+	+	94	83
+	+	91	1
+	+	92	0
+	+	91	0
+	+	92	0
+	+	66	23
+	+	63	1
+	+	65	0
+	+	63	0
+	+	1318	0
+	+	1323	0
+	+	1318	0
+	+	1317	30
+	+	1318	0
+	+	1322	0
+	+	1320	16
+	+	1321	0
+	+	1328	70
+	+	118	0
+	+	123	22
+	+	120	0
+	+	123	27
+	+	125	0
+	+	124	0
+	+	119	30
+	+	121	13
+	+	120	16
+	+	114	0
+	+	819	19
+	+	819	5
+	+	819	80
+	+	819	22
+	+	819	0
+	+	818	21
+	+	819	28
+	+	818	22
+	+	819	71
+	+	1338	8
+	+	1338	24
+	+	1338	40
+	+	1338	0
+	+	1335	39
+	+	1338	0
+	+	1336	19
+	+	1337	0
+	+	1338	0
+	+	69	0
+	+	53	38
+	+	53	21
+	+	53	0
+	+	43	10
+	+	43	25
+	+	53	0
+	+	43	32
+	+	53	0
+	+	43	10
+	+	53	0
+	+	43	0
+	+	42	25
+	+	42	10
+	+	42	0
+	+	53	60
+	+	43	0
+	+	53	55
+	+	53	0
+	+	43	0
+	+	44	44
+	+	44	0
+	+	52	19
+	+	52	71
+	+	52	0
+	+	60	0
+	+	61	0
+	+	52	0
+	+	51	23
+	+	1146	41
+	+	1150	44
+	+	1152	40
+	+	50	28
+	+	1217	0
+	+	28	11
+	+	49	18
+	+	1287	43
+	+	1288	64
+	+	47	54
+	+	412	0
+	+	1257	0
+	+	47	31
+	+	47	0
+	+	48	0
+	+	70	6
+	+	666	0
+	+	855	0
+	+	46	32
+
+> ~/.config/scripts/target.err
+	*	1713694016	0
+	"	1	0
+
+> ~/.config/scripts/target.out
+	*	1713693305	0
+	"	1	0
+
+> ~/.config/scripts/output.err
+	*	1713691843	0
+	"	1	0
+
+> /tmp/crontab.eQrIti/crontab
+	*	1713688782	0
+	"	25	0
+
+> /tmp/crontab.3hiDhE/crontab
+	*	1713688137	0
+	"	1	0
+
+> ~/.vim/plugin/logutils.vim
+	*	1713687974	0
+	"	17	46
+	^	17	47
+	.	17	46
+	+	3	0
+	+	3	32
+	+	5	4
+	+	7	4
+	+	4	17
+	+	5	14
+	+	4	12
+	+	5	36
+	+	6	4
+	+	7	0
+	+	3	0
+	+	1	0
+	+	17	0
+	+	1	0
+	+	10	31
+	+	14	0
+	+	11	0
+	+	17	15
+	+	10	18
+	+	17	16
+	+	11	62
+	+	14	5
+	+	12	66
+	+	13	0
+	+	10	26
+	+	17	46
+
+> /tmp/crontab.fEeY3I/crontab
+	*	1713687278	0
+	"	25	24
+
+> /usr/bin/bash
+	*	1713687276	0
+	"	1	0
+
+> /usr/share/vim/vim90/doc/builtin.txt
+	*	1713686983	0
+	"	8989	33
+
+> /tmp/crontab.uBVNpP/crontab
+	*	1713686549	0
+	"	25	0
+	.	25	0
+	+	26	0
+	+	25	0
+
+> /tmp/crontab.A7hKPO/crontab
+	*	1713686538	0
+	"	1	0
+	^	26	111
+	.	26	0
+	+	26	0
+	+	28	0
+	+	27	0
+	+	26	0
+
+> /tmp/crontab.QW353P/crontab
+	*	1713685995	0
+	"	1	0
+
+> /tmp/crontab.lN81LO/crontab
+	*	1713685988	0
+	"	1	0
+
+> /tmp/crontab.EekynV/crontab
+	*	1713685880	0
+	"	26	49
+
+> ~/.config/.gitignore
+	*	1713685700	0
+	"	6	0
+	^	6	5
+	.	6	0
+	+	6	0
 
 > ~/.config/scripts/gh-timeago-starship.bash
 	*	1713685293	0
@@ -7888,76 +8900,6 @@ $\=strftime("%c", submatch(1))
 > /var/log/alternatives.log
 	*	1713683657	0
 	"	94	0
-
-> ~/.config/setup.sh
-	*	1713682765	0
-	"	23	0
-	^	9	2
-	.	25	0
-	+	13	68
-	+	13	27
-	+	5	0
-	+	4	1
-	+	13	34
-	+	4	0
-	+	5	0
-	+	13	0
-	+	4	0
-	+	13	0
-	+	3	0
-	+	4	0
-	+	13	0
-	+	5	0
-	+	13	0
-	+	13	1
-	+	13	8
-	+	13	10
-	+	13	155
-	+	13	8
-	+	13	123
-	+	13	0
-	+	24	26
-	+	25	27
-	+	7	41
-	+	9	23
-	+	12	0
-	+	9	75
-	+	12	0
-	+	9	63
-	+	12	0
-	+	9	54
-	+	13	71
-	+	13	89
-	+	13	0
-	+	11	38
-	+	10	0
-	+	10	13
-	+	10	0
-	+	13	9
-	+	13	17
-	+	26	0
-	+	4	0
-	+	15	0
-	+	13	14
-	+	27	34
-	+	9	0
-	+	9	29
-	+	1	11
-	+	13	0
-	+	14	0
-	+	13	0
-	+	23	0
-	+	9	0
-	+	10	0
-	+	13	0
-	+	27	0
-	+	8	0
-	+	13	0
-	+	30	35
-	+	25	1
-	+	28	0
-	+	31	0
-	+	25	0
 
 > /tmp/crontab.FyR9yU/crontab
 	*	1713682378	0
@@ -8137,13 +9079,6 @@ $\=strftime("%c", submatch(1))
 	^	1	1
 	.	1	0
 	+	1	0
-
-> ~/.config/bindings.inputrc
-	*	1713605995	0
-	"	1	0
-	^	16	30
-	.	16	29
-	+	16	29
 
 > ~/.config/git/token.gitconfig
 	*	1713596645	0
@@ -8696,115 +9631,9 @@ $\=strftime("%c", submatch(1))
 	+	69	0
 	+	230	0
 
-> ~/.vim/vimrc
-	*	1713519292	0
-	"	854	4
-	.	854	0
-	+	62	65
-	+	58	0
-	+	61	7
-	+	62	0
-	+	93	83
-	+	90	1
-	+	91	0
-	+	90	0
-	+	91	0
-	+	65	23
-	+	62	1
-	+	64	0
-	+	62	0
-	+	1317	0
-	+	1322	0
-	+	1317	0
-	+	1316	30
-	+	1317	0
-	+	1321	0
-	+	1319	16
-	+	1320	0
-	+	1327	70
-	+	117	0
-	+	122	22
-	+	119	0
-	+	122	27
-	+	124	0
-	+	123	0
-	+	118	30
-	+	120	13
-	+	119	16
-	+	113	0
-	+	818	19
-	+	818	5
-	+	818	80
-	+	818	22
-	+	818	0
-	+	817	21
-	+	818	28
-	+	817	22
-	+	818	71
-	+	1337	8
-	+	1337	24
-	+	1337	40
-	+	1337	0
-	+	1334	39
-	+	1337	0
-	+	1335	19
-	+	1336	0
-	+	1337	0
-	+	68	0
-	+	52	38
-	+	52	21
-	+	52	0
-	+	43	10
-	+	43	25
-	+	52	0
-	+	43	32
-	+	52	0
-	+	43	10
-	+	52	0
-	+	43	0
-	+	42	25
-	+	42	10
-	+	42	0
-	+	52	60
-	+	43	0
-	+	52	55
-	+	52	0
-	+	43	0
-	+	44	44
-	+	44	0
-	+	51	19
-	+	51	71
-	+	51	0
-	+	59	0
-	+	60	0
-	+	51	0
-	+	50	23
-	+	1145	41
-	+	1149	44
-	+	1151	40
-	+	49	28
-	+	1216	0
-	+	28	11
-	+	48	18
-	+	1286	43
-	+	1287	64
-	+	46	54
-	+	411	0
-	+	1256	0
-	+	46	31
-	+	46	0
-	+	47	0
-	+	69	6
-	+	665	0
-	+	854	0
-
 > ~/.vim/plugged/coc.nvim/doc/coc.txt
 	*	1713519253	0
 	"	537	2
-
-> /usr/share/vim/vim90/doc/change.txt
-	*	1713516556	0
-	"	1174	30
 
 > /usr/share/vim/vim90/doc/options.txt
 	*	1713516547	0
@@ -9180,30 +10009,6 @@ $\=strftime("%c", submatch(1))
 	*	1713409948	0
 	"	1	21
 
-> ~/.config/alias.sh
-	*	1713409905	0
-	"	17	0
-	^	22	20
-	.	22	19
-	+	2	0
-	+	15	37
-	+	18	77
-	+	18	42
-	+	18	47
-	+	18	32
-	+	19	39
-	+	20	40
-	+	21	79
-	+	21	0
-	+	21	36
-	+	21	20
-	+	21	25
-	+	22	45
-	+	23	0
-	+	21	0
-	+	18	0
-	+	22	19
-
 > /usr/share/vim/vim90/doc/editing.txt
 	*	1713407264	0
 	"	247	14
@@ -9211,44 +10016,6 @@ $\=strftime("%c", submatch(1))
 > ~/.vim/colors/strawberry-light.vim
 	*	1713407233	0
 	"	22	0
-
-> ~/hateoas/dbutils.py
-	*	1713355628	0
-	"	7	19
-	^	11	50
-	.	8	0
-	+	17	4
-	+	6	39
-	+	6	8
-	+	4	1
-	+	6	0
-	+	6	1
-	+	4	0
-	+	5	10
-	+	3	20
-	+	11	0
-	+	11	4
-	+	11	64
-	+	11	41
-	+	11	5
-	+	11	0
-	+	11	77
-	+	11	0
-	+	11	7
-	+	11	24
-	+	11	0
-	+	11	7
-	+	9	0
-	+	11	20
-	+	11	0
-	+	9	4
-	+	10	4
-	+	11	17
-	+	11	11
-	+	11	46
-	+	10	0
-	+	6	0
-	+	8	0
 
 > ~/hateoas/.direnv/python-3.10.12/lib/python3.10/site-packages/pysqlite3/__init__.py
 	*	1713346211	0
@@ -9793,15 +10560,6 @@ $\=strftime("%c", submatch(1))
 	a	231	28
 	b	231	29
 
-> ~/hateoas/requirements.txt
-	*	1713267160	0
-	"	2	4
-	^	2	5
-	.	2	4
-	+	3	5
-	+	9	20
-	+	2	4
-
 > ~/Twitch/coffee-vps/flask-vue/requirements.txt
 	*	1713267134	0
 	"	1	0
@@ -9887,95 +10645,6 @@ $\=strftime("%c", submatch(1))
 	+	125	0
 	+	129	0
 	+	130	0
-
-> ~/genproject/sql_checklist.txt
-	*	1712960092	0
-	"	1	0
-	.	10	0
-	+	12	29
-	+	13	29
-	+	13	0
-	+	12	40
-	+	13	0
-	+	4	19
-	+	13	45
-	+	4	0
-	+	27	35
-	+	27	4
-	+	27	82
-	+	27	81
-	+	27	4
-	+	27	0
-	+	27	90
-	+	27	26
-	+	27	24
-	+	27	26
-	+	27	0
-	+	17	8
-	+	27	0
-	+	16	0
-	+	27	0
-	+	21	54
-	+	21	35
-	+	22	53
-	+	23	39
-	+	27	49
-	+	27	0
-	+	21	0
-	+	27	0
-	+	27	55
-	+	27	56
-	+	27	0
-	+	27	49
-	+	27	55
-	+	27	56
-	+	27	0
-	+	21	0
-	+	26	0
-	+	27	69
-	+	27	4
-	+	27	0
-	+	24	0
-	+	27	44
-	+	27	0
-	+	19	0
-	+	27	0
-	+	27	76
-	+	27	0
-	+	18	0
-	+	27	0
-	+	27	3
-	+	27	26
-	+	27	18
-	+	27	35
-	+	27	0
-	+	11	24
-	+	20	26
-	+	10	0
-	+	6	9
-	+	9	21
-	+	10	0
-	+	12	0
-	+	5	0
-	+	6	15
-	+	11	24
-	+	20	19
-	+	2	33
-	+	27	14
-	+	27	4
-	+	27	77
-	+	27	79
-	+	27	4
-	+	27	0
-	+	25	0
-	+	27	0
-	+	14	52
-	+	15	19
-	+	16	0
-	+	17	0
-	+	10	30
-	+	9	4
-	+	10	0
 
 > ~/hateoas/hateoas_backend/sample.sql
 	*	1712959303	0
@@ -12046,17 +12715,6 @@ $\=strftime("%c", submatch(1))
 	.	11	0
 	+	2	0
 	+	11	0
-
-> ~/genproject/python.sh
-	*	1711871217	0
-	"	11	0
-	^	17	10
-	.	17	9
-	+	6	0
-	+	2	0
-	+	4	9
-	+	11	9
-	+	17	9
 
 > ~/frontend/package.json
 	*	1711570906	0
@@ -19897,10 +20555,6 @@ $\=strftime("%c", submatch(1))
 	*	1692078620	0
 	"	1	0
 
-> ~/.bash_history
-	*	1692077998	0
-	"	1	0
-
 > ~/twosnuxt/server/api/items.ts
 	*	1691954255	0
 	"	12	0
@@ -22286,10 +22940,6 @@ $\=strftime("%c", submatch(1))
 	+	82	0
 	+	83	0
 	+	81	0
-
-> ~/Twitch/coffee-vps/code/general.py
-	*	1689085893	0
-	"	41	11
 
 > ~/python_common/waivek/destructure.py
 	*	1688973848	0

@@ -43,6 +43,7 @@ filetype indent plugin on | syntax on
 call plug#begin()
 " Make sure pyflakes and eslint are installed
 " Install tabular
+Plug 'MTDL9/vim-log-highlighting'
 Plug 'mogelbrod/vim-jsonpath' " example using vim-plug
 
 Plug 'dag/vim-fish'
