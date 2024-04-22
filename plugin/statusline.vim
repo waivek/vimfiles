@@ -340,6 +340,9 @@ function! DotMap()
     return "[ERROR:" . dotty_status . "]"
 endfunction
 function! CocStatus()
+    if !exists("*coc#status")
+        return ""
+    endif
     let coc_status = coc#status()
     if coc_status == "Volar"
         return ""

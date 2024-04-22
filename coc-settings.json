@@ -16,7 +16,7 @@
     "vimlsp.diagnostic.enable": true,
 
     "volar.enable": true,
-    "volar.takeOverMode.enabled": true,
+    // "volar.takeOverMode.enabled": true,
     "tsserver.enable": false,
     "css.lint.unknownAtRules": "ignore",
 
@@ -25,29 +25,46 @@
     "diagnostic.showUnused": false,
     "diagnostic.level": "information",
 
+    // "$schema" = 'https://starship.rs/config-schema.json'
+    "toml.schema.associations": {
+        "starship.toml": "https://starship.rs/config-schema.json"
+    },
+
 
 
     "tailwindCSS.enable": true,
 
     "languageserver": {
-        "sql": {
-            "module": "/usr/lib/node_modules/sql-language-server/dist/bin/cli.js",
-            "args": ["up", "--method", "node-ipc"],
-            "filetypes": ["sql", "mysql"],
-            "settings": {
-                "sql-language-server": {
-                    "connections": [
-                        {
-                            "name": "sqlite3-project",
-                            "adapter": "sqlite3",
-                            "filename": "/home/vivek/Twitch/coffee-vps/code/data/clips.db",
-                            "projectPaths": ["/home/vivek/Twitch/coffee-vps/code"]
-                        }
-                    ]
-                }
-            }
-        }
+        //"sql": {
+        //    "module": "/usr/lib/node_modules/sql-language-server/dist/bin/cli.js",
+        //    // "args": ["up", "--method", "node-ipc"],
+        //    "args": ["up", "--method", "stdio"],
+        //    "filetypes": ["sql", "mysql"],
+        //    "settings": {
+        //        "sql-language-server": {
+        //            "connections": [
+        //                {
+        //                    "name": "sqlite3-project",
+        //                    "adapter": "sqlite3",
+        //                    "filename": "/home/vivek/Twitch/coffee-vps/code/data/clips.db",
+        //                    "projectPaths": ["/home/vivek/Twitch/coffee-vps/code"]
+        //                },
+        //                {
+        //                    "name": "hateoas-backend-sqlite",
+        //                    "adapter": "sqlite3",
+        //                    "filename": "/home/vivek/hateoas/hateoas_backend/data/downloads.db",
+        //                    "projectPaths": ["/home/vivek/hateoas/hateoas_backend"]
+        //                }
+        //            ]
+        //        }
+        //    }
+        //}
+        // "sql": {
+        //     "command": "/home/vivek/go/bin/sqls",
+        //     "args": ["-config", "/home/vivek/.config/sqls/config.yml"],
+        //    "filetypes": ["sql"], 
+        //     "shell": true
+        // }
+
     }
-
-
 }

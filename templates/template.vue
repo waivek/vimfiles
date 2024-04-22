@@ -7,30 +7,10 @@
 }
 </style>
 
-<script>
-// If being imported by *.html then use this
-// export { createApp } from 'vue'
-export default {
-    props: [],
-    emits: [],
-    components: {
-
-    },
-    data() {
-        return { 
-        }
-    },
-    methods: {
-    },
-    computed: {
-    },
-    mounted() {
-    },
-    updated() {
-    },
-    watch: {
-    },
-}
+<script setup lang="ts">
+import { ref, onMounted, computed } from 'vue'
+const props = defineProps([])
+const emit = defineEmits()
 </script>
 
 <template>
