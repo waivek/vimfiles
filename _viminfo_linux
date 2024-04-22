@@ -20,10 +20,10 @@
 $
 
 # Command Line History (newest to oldest):
+:q
+|2,0,1713765489,,"q"
 :q!
 |2,0,1713760358,,"q!"
-:q
-|2,0,1713760289,,"q"
 :MRU al
 |2,0,1713760121,,"MRU al"
 :MRU ali
@@ -7400,38 +7400,37 @@ $
 |2,4,1693311567,,"cont"
 
 # Registers:
-""0	LINE	0
+"0	LINE	0
 	
-|3,1,0,1,1,0,1713760169,""
-"1	LINE	0
-	
-|3,0,1,1,1,0,1713760125,""
+|3,0,0,1,1,0,1713760169,""
+""1	LINE	0
+	>>>>>>> refs/remotes/origin/master
+|3,1,1,1,1,0,1713765482,">>>>>>> refs/remotes/origin/master"
 "2	LINE	0
-	
-|3,0,2,1,1,0,1713759998,""
+	=======
+|3,0,2,1,1,0,1713765481,"======="
 "3	LINE	0
-	# Run pip install -r requirements.txt to install dependencies
-|3,0,3,1,1,0,1713758786,"# Run pip install -r requirements.txt to install dependencies"
+	<<<<<<< HEAD
+|3,0,3,1,1,0,1713765481,"<<<<<<< HEAD"
 "4	LINE	0
 	
-|3,0,4,1,1,0,1713758486,""
+|3,0,4,1,1,0,1713760125,""
 "5	LINE	0
 	
-|3,0,5,1,1,0,1713758408,""
+|3,0,5,1,1,0,1713759998,""
 "6	LINE	0
-	
-	# pip install -r requirements.txt
-|3,0,6,1,2,0,1713758407,"","# pip install -r requirements.txt"
+	# Run pip install -r requirements.txt to install dependencies
+|3,0,6,1,1,0,1713758786,"# Run pip install -r requirements.txt to install dependencies"
 "7	LINE	0
 	
-|3,0,7,1,1,0,1713758124,""
+|3,0,7,1,1,0,1713758486,""
 "8	LINE	0
-	export -f direnv_cd
 	
-|3,0,8,1,2,0,1713757796,"export -f direnv_cd",""
+|3,0,8,1,1,0,1713758408,""
 "9	LINE	0
-	export -f prettify_exit_code
-|3,0,9,1,1,0,1713757794,"export -f prettify_exit_code"
+	
+	# pip install -r requirements.txt
+|3,0,9,1,2,0,1713758407,"","# pip install -r requirements.txt"
 "a	CHAR	0
 	Tabularize /:/l1c1l1
 |3,0,10,0,1,0,1713543335,"Tabularize /:/l1c1l1"
@@ -7474,8 +7473,8 @@ $
 |3,0,36,0,1,0,1713758798,"# "
 
 # File marks:
-'0  1  0  ~/.config/.git/COMMIT_EDITMSG
-|4,48,1,0,1713760255,"~/.config/.git/COMMIT_EDITMSG"
+'0  47  0  ~/.vim/vimrc
+|4,48,47,0,1713765489,"~/.vim/vimrc"
 '1  1  0  ~/.config/.git/COMMIT_EDITMSG
 |4,49,1,0,1713760255,"~/.config/.git/COMMIT_EDITMSG"
 '2  1  0  ~/.config/.git/COMMIT_EDITMSG
@@ -7490,12 +7489,16 @@ $
 |4,54,1,0,1713760255,"~/.config/.git/COMMIT_EDITMSG"
 '7  1  0  ~/.config/.git/COMMIT_EDITMSG
 |4,55,1,0,1713760255,"~/.config/.git/COMMIT_EDITMSG"
-'8  8  0  ~/.config/direnv
-|4,56,8,0,1713760171,"~/.config/direnv"
-'9  8  0  ~/.config/direnv
-|4,57,8,0,1713760171,"~/.config/direnv"
+'8  1  0  ~/.config/.git/COMMIT_EDITMSG
+|4,56,1,0,1713760255,"~/.config/.git/COMMIT_EDITMSG"
+'9  1  0  ~/.config/.git/COMMIT_EDITMSG
+|4,57,1,0,1713760255,"~/.config/.git/COMMIT_EDITMSG"
 
 # Jumplist (newest first):
+-'  47  0  ~/.vim/vimrc
+|4,39,47,0,1713765489,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1713765474,"~/.vim/vimrc"
 -'  1  0  ~/.config/.git/COMMIT_EDITMSG
 |4,39,1,0,1713760255,"~/.config/.git/COMMIT_EDITMSG"
 -'  1  0  ~/.config/.git/COMMIT_EDITMSG
@@ -7504,6 +7507,8 @@ $
 |4,39,1,0,1713760255,"~/.config/.git/COMMIT_EDITMSG"
 -'  1  0  ~/.config/.git/COMMIT_EDITMSG
 |4,39,1,0,1713760255,"~/.config/.git/COMMIT_EDITMSG"
+-'  1  0  ~/.config/.git/COMMIT_EDITMSG
+|4,39,1,0,1713760255,"~/.config/.git/COMMIT_EDITMSG"
 -'  8  0  ~/.config/direnv
 |4,39,8,0,1713760171,"~/.config/direnv"
 -'  8  0  ~/.config/direnv
@@ -7514,6 +7519,10 @@ $
 |4,39,8,0,1713760171,"~/.config/direnv"
 -'  8  0  ~/.config/direnv
 |4,39,8,0,1713760171,"~/.config/direnv"
+-'  8  0  ~/.config/direnv
+|4,39,8,0,1713760171,"~/.config/direnv"
+-'  1  0  ~/.config/alias.sh
+|4,39,1,0,1713760143,"~/.config/alias.sh"
 -'  1  0  ~/.config/alias.sh
 |4,39,1,0,1713760143,"~/.config/alias.sh"
 -'  1  0  ~/.config/alias.sh
@@ -7530,6 +7539,8 @@ $
 |4,39,1,0,1713760143,"~/.config/alias.sh"
 -'  1  0  ~/.config/alias.sh
 |4,39,1,0,1713760132,"~/.config/alias.sh"
+-'  17  0  ~/.config/alias.sh
+|4,39,17,0,1713760127,"~/.config/alias.sh"
 -'  17  0  ~/.config/alias.sh
 |4,39,17,0,1713760127,"~/.config/alias.sh"
 -'  17  0  ~/.config/alias.sh
@@ -7570,6 +7581,8 @@ $
 |4,39,15,0,1713760033,"~/.config/setup.sh"
 -'  15  0  ~/.config/setup.sh
 |4,39,15,0,1713760033,"~/.config/setup.sh"
+-'  15  0  ~/.config/setup.sh
+|4,39,15,0,1713760033,"~/.config/setup.sh"
 -'  1  0  ~/.config/setup.sh
 |4,39,1,0,1713760021,"~/.config/setup.sh"
 -'  1  0  ~/.config/setup.sh
@@ -7590,6 +7603,10 @@ $
 |4,39,1,0,1713760021,"~/.config/setup.sh"
 -'  1  0  ~/.config/setup.sh
 |4,39,1,0,1713760021,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1713760021,"~/.config/setup.sh"
+-'  15  0  ~/.config/alias.sh
+|4,39,15,0,1713760002,"~/.config/alias.sh"
 -'  15  0  ~/.config/alias.sh
 |4,39,15,0,1713760002,"~/.config/alias.sh"
 -'  15  0  ~/.config/alias.sh
@@ -7654,6 +7671,8 @@ $
 |4,39,1,0,1713759798,"~/bash/logs/cron-run.log"
 -'  1  0  ~/bash/logs/cron-run.log
 |4,39,1,0,1713759798,"~/bash/logs/cron-run.log"
+-'  1  0  ~/bash/logs/cron-run.log
+|4,39,1,0,1713759798,"~/bash/logs/cron-run.log"
 -'  1  0  ~/bash/logs/cron.log
 |4,39,1,0,1713759323,"~/bash/logs/cron.log"
 -'  1  0  ~/bash/logs/cron.log
@@ -7676,29 +7695,117 @@ $
 |4,39,1,0,1713759323,"~/bash/logs/cron.log"
 -'  1  0  ~/bash/logs/cron.log
 |4,39,1,0,1713759323,"~/bash/logs/cron.log"
--'  1  0  ~/bash/logs/cron.log
-|4,39,1,0,1713759323,"~/bash/logs/cron.log"
--'  1  0  ~/bash/logs/cron.log
-|4,39,1,0,1713759323,"~/bash/logs/cron.log"
--'  1  0  ~/bash/logs/cron.log
-|4,39,1,0,1713759323,"~/bash/logs/cron.log"
--'  1  0  ~/bash/logs/cron.log
-|4,39,1,0,1713759323,"~/bash/logs/cron.log"
--'  41  0  ~/genproject/python.sh
-|4,39,41,0,1713759317,"~/genproject/python.sh"
--'  41  0  ~/genproject/python.sh
-|4,39,41,0,1713759317,"~/genproject/python.sh"
--'  41  0  ~/genproject/python.sh
-|4,39,41,0,1713759317,"~/genproject/python.sh"
--'  41  0  ~/genproject/python.sh
-|4,39,41,0,1713759317,"~/genproject/python.sh"
--'  41  0  ~/genproject/python.sh
-|4,39,41,0,1713759317,"~/genproject/python.sh"
 
 # Buffer list:
-%~/.config/.git/COMMIT_EDITMSG	1	0
+%~/.vim/vimrc	47	0
 
 # History of marks within files (newest to oldest):
+
+> ~/.vim/vimrc
+	*	1713765487	0
+	"	47	0
+	^	47	0
+	.	48	0
+	+	60	65
+	+	56	0
+	+	59	7
+	+	60	0
+	+	91	83
+	+	88	1
+	+	89	0
+	+	88	0
+	+	89	0
+	+	63	23
+	+	60	1
+	+	62	0
+	+	60	0
+	+	1315	0
+	+	1320	0
+	+	1315	0
+	+	1314	30
+	+	1315	0
+	+	1319	0
+	+	1317	16
+	+	1318	0
+	+	1325	70
+	+	115	0
+	+	120	22
+	+	117	0
+	+	120	27
+	+	122	0
+	+	121	0
+	+	116	30
+	+	118	13
+	+	117	16
+	+	111	0
+	+	816	19
+	+	816	5
+	+	816	80
+	+	816	22
+	+	816	0
+	+	815	21
+	+	816	28
+	+	815	22
+	+	816	71
+	+	1335	8
+	+	1335	24
+	+	1335	40
+	+	1335	0
+	+	1332	39
+	+	1335	0
+	+	1333	19
+	+	1334	0
+	+	1335	0
+	+	66	0
+	+	50	38
+	+	50	21
+	+	50	0
+	+	43	10
+	+	43	25
+	+	50	0
+	+	43	32
+	+	50	0
+	+	43	10
+	+	50	0
+	+	43	0
+	+	42	25
+	+	42	10
+	+	42	0
+	+	50	60
+	+	43	0
+	+	50	55
+	+	50	0
+	+	43	0
+	+	44	44
+	+	44	0
+	+	49	19
+	+	49	71
+	+	49	0
+	+	57	0
+	+	58	0
+	+	49	0
+	+	48	23
+	+	1143	41
+	+	1147	44
+	+	1149	40
+	+	48	28
+	+	1214	0
+	+	28	11
+	+	47	18
+	+	1284	43
+	+	1285	64
+	+	46	54
+	+	409	0
+	+	1254	0
+	+	46	31
+	+	46	0
+	+	47	0
+	+	67	6
+	+	663	0
+	+	852	0
+	+	46	0
+	+	47	0
+	+	48	0
 
 > ~/.config/.git/COMMIT_EDITMSG
 	*	1713760255	0
@@ -8673,110 +8780,6 @@ $
 	+	8	6
 	+	9	0
 	+	4	34
-
-> ~/.vim/vimrc
-	*	1713696420	0
-	"	47	53
-	^	46	33
-	.	46	32
-	+	63	65
-	+	59	0
-	+	62	7
-	+	63	0
-	+	94	83
-	+	91	1
-	+	92	0
-	+	91	0
-	+	92	0
-	+	66	23
-	+	63	1
-	+	65	0
-	+	63	0
-	+	1318	0
-	+	1323	0
-	+	1318	0
-	+	1317	30
-	+	1318	0
-	+	1322	0
-	+	1320	16
-	+	1321	0
-	+	1328	70
-	+	118	0
-	+	123	22
-	+	120	0
-	+	123	27
-	+	125	0
-	+	124	0
-	+	119	30
-	+	121	13
-	+	120	16
-	+	114	0
-	+	819	19
-	+	819	5
-	+	819	80
-	+	819	22
-	+	819	0
-	+	818	21
-	+	819	28
-	+	818	22
-	+	819	71
-	+	1338	8
-	+	1338	24
-	+	1338	40
-	+	1338	0
-	+	1335	39
-	+	1338	0
-	+	1336	19
-	+	1337	0
-	+	1338	0
-	+	69	0
-	+	53	38
-	+	53	21
-	+	53	0
-	+	43	10
-	+	43	25
-	+	53	0
-	+	43	32
-	+	53	0
-	+	43	10
-	+	53	0
-	+	43	0
-	+	42	25
-	+	42	10
-	+	42	0
-	+	53	60
-	+	43	0
-	+	53	55
-	+	53	0
-	+	43	0
-	+	44	44
-	+	44	0
-	+	52	19
-	+	52	71
-	+	52	0
-	+	60	0
-	+	61	0
-	+	52	0
-	+	51	23
-	+	1146	41
-	+	1150	44
-	+	1152	40
-	+	50	28
-	+	1217	0
-	+	28	11
-	+	49	18
-	+	1287	43
-	+	1288	64
-	+	47	54
-	+	412	0
-	+	1257	0
-	+	47	31
-	+	47	0
-	+	48	0
-	+	70	6
-	+	666	0
-	+	855	0
-	+	46	32
 
 > ~/.config/scripts/target.err
 	*	1713694016	0

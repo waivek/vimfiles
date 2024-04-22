@@ -44,6 +44,7 @@ call plug#begin()
 " Make sure pyflakes and eslint are installed
 " Install tabular
 Plug 'MTDL9/vim-log-highlighting'
+Plug 'mg979/vim-visual-multi'
 Plug 'mogelbrod/vim-jsonpath' " example using vim-plug
 
 Plug 'dag/vim-fish'
@@ -1345,3 +1346,6 @@ set t_ut=
 set ttimeoutlen=25 " Otherwise i get delay when i press ESC in ':' mode
 let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
+
+let g:VM_custom_motions  = {'h': 'j', 'j': 'k', 'k': 'l', 'l': ';' }
+
