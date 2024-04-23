@@ -1097,14 +1097,14 @@ function! s:Isolate(pattern) range
     let range_passed = a:firstline != a:lastline
     let range_passed = v:false " Override because range is buggy
     if range_passed
-        execute printf('%d,%ds/' . pattern . '/\0/g', a:firstline, a:lastline)
+        execute printf('%d,%ds/' . pattern . '/\r\0\r/g', a:firstline, a:lastline) 
         execute printf('%d,%dv/' . pattern . '/d', a:firstline, a:lastline)
         execute printf('silent! normal! %dGgu%dG', a:firstline, a:lastline)
         execute printf('silent! %d,%dsort', a:firstline, a:lastline)
         " execute printf('silent! %d,%d!uniq -c', a:firstline, a:lastline)
         " execute printf('silent! %d,%dsort! n', a:firstline, a:lastline)
     else
-        execute '%s/' . pattern . '/\0/g'
+        execute '%s/' . pattern . '/\r\0\r/g'
         execute 'v/' . pattern . '/d'
         silent! normal! ggguG
         silent! %sort
