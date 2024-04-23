@@ -11,25 +11,51 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/schema
+~MSle0~/plugged
 
 # Last Substitute Search Pattern:
 ~MSle0&cat
 
 # Last Substitute String:
-$\r\0\r
+$
 
 # Command Line History (newest to oldest):
+:qa
+|2,0,1713876828,,"qa"
+:Jprevious
+|2,0,1713876824,,"Jprevious"
+:edit $MYVIMRC
+|2,0,1713876803,,"edit $MYVIMRC"
+:e 
+|2,0,1713876800,,"e "
+:e ~/.vim/autoload/plug.vim
+|2,0,1713876771,,"e ~/.vim/autoload/plug.vim"
+:verbose command Plug
+|2,0,1713876757,,"verbose command Plug"
+:commnd PlugInstall
+|2,0,1713876752,,"commnd PlugInstall"
+:e ~/.vim
+|2,0,1713876748,,"e ~/.vim"
+:h PlugInstall
+|2,0,1713876739,,"h PlugInstall"
+:h vim-plug
+|2,0,1713876731,,"h vim-plug"
+:h plugged
+|2,0,1713876729,,"h plugged"
 :q
-|2,0,1713852934,,"q"
+|2,0,1713876724,,"q"
+:MRU h
+|2,0,1713876717,,"MRU h"
+:MRU hateo
+|2,0,1713853128,,"MRU hateo"
+:q!
+|2,0,1713853060,,"q!"
+:term
+|2,0,1713853023,,"term"
 :MRU star
 |2,0,1713852850,,"MRU star"
-:q!
-|2,0,1713852432,,"q!"
 :VD data/main.db
 |2,0,1713852414,,"VD data/main.db"
-:edit $MYVIMRC
-|2,0,1713852412,,"edit $MYVIMRC"
 :VD data//main.db
 |2,0,1713848466,,"VD data//main.db"
 :VD
@@ -58,8 +84,6 @@ $\r\0\r
 |2,0,1713802891,,"e migrations/"
 :VD data/po
 |2,0,1713802829,,"VD data/po"
-:term
-|2,0,1713802664,,"term"
 :CocList diagnostics
 |2,0,1713796117,,"CocList diagnostics"
 :MRU 316:chat.py
@@ -198,8 +222,6 @@ $\r\0\r
 |2,0,1713772350,,"e *."
 :REname
 |2,0,1713769444,,"REname"
-:qa
-|2,0,1713769027,,"qa"
 :Rename python-direnv.bash
 |2,0,1713769013,,"Rename python-direnv.bash"
 :e *.sh
@@ -240,8 +262,6 @@ $\r\0\r
 |2,0,1713758259,,"MRU python"
 :MRU gen
 |2,0,1713758253,,"MRU gen"
-:e 
-|2,0,1713758252,,"e "
 :e ~/.config/todo.txt
 |2,0,1713758083,,"e ~/.config/todo.txt"
 :Copilot panel
@@ -300,8 +320,6 @@ $\r\0\r
 |2,0,1713699748,,"LogPrettyPrintLine"
 :e target.bash
 |2,0,1713697303,,"e target.bash"
-:Jprevious
-|2,0,1713697147,,"Jprevious"
 :Jlast
 |2,0,1713697146,,"Jlast"
 :ne
@@ -424,8 +442,6 @@ $\r\0\r
 |2,0,1713596164,,"VD %"
 :VD __pycache__/
 |2,0,1713596162,,"VD __pycache__/"
-:MRU hateo
-|2,0,1713596151,,"MRU hateo"
 :MRU hat
 |2,0,1713596144,,"MRU hat"
 :MRU 3:main.sql
@@ -1172,8 +1188,6 @@ $\r\0\r
 |2,0,1712025163,,"%s/,   /g"
 :s/\(,\)
 |2,0,1712025145,,"s/\\(,\\)"
-:MRU h
-|2,0,1712022121,,"MRU h"
 :s/,/,/g
 |2,0,1712022020,,"s/,/,/g"
 :s/[(
@@ -4630,10 +4644,6 @@ $\r\0\r
 |2,0,1690488413,,"e plugin/better.vim"
 :MRU better
 |2,0,1690488406,,"MRU better"
-:h PlugInstall
-|2,0,1690488085,,"h PlugInstall"
-:h vim-plug
-|2,0,1690488080,,"h vim-plug"
 :h plug
 |2,0,1690488077,,"h plug"
 :MRU py$
@@ -5360,6 +5370,14 @@ $\r\0\r
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+? @$
+|2,1,1713876825,,"@$"
+?/plugged
+|2,1,1713876780,47,"plugged"
+?/hhmm
+|2,1,1713853355,47,"hhmm"
+?/pretty
+|2,1,1713853129,47,"pretty"
 ?/schema
 |2,1,1713848204,47,"schema"
 ?/replace
@@ -5394,8 +5412,6 @@ $\r\0\r
 |2,1,1713774327,47,"alt"
 ?/shopt
 |2,1,1713773510,47,"shopt"
-? @$
-|2,1,1713772351,,"@$"
 ?/requi
 |2,1,1713758601,47,"requi"
 ?/cd
@@ -7546,38 +7562,56 @@ $\r\0\r
 |2,4,1693311567,,"cont"
 
 # Registers:
-"0	CHAR	0
-	?", (table,))
-|3,0,0,0,1,0,1713848525,"?\", (table,))"
+""0	CHAR	0
+	Duration 
+|3,1,0,0,1,0,1713876825,"Duration "
 "1	LINE	0
+	        portionurl = f"None: {[pu.user_id for pu in self.portionurls ]}"
+	        for pu in self.portionurls:
+	            if pu.user_id == self.user_id:
+	                portionurl = pu
+	                break
+	
+|3,0,1,1,6,0,1713853210,"        portionurl = f\"None: {[pu.user_id for pu in self.portionurls ]}\"","        for pu in self.portionurls:","            if pu.user_id == self.user_id:","                portionurl = pu","                break",""
+"2	LINE	0
+	        assert portionurl != "None", f"portionurl is None: {portionurl}"
+|3,0,2,1,1,0,1713853202,"        assert portionurl != \"None\", f\"portionurl is None: {portionurl}\""
+"3	LINE	0
+	        # portionurl = next(pu for pu in self.portionurls if pu.user_id == self.user_id)
+|3,0,3,1,1,0,1713853184,"        # portionurl = next(pu for pu in self.portionurls if pu.user_id == self.user_id)"
+"4	LINE	0
+	        return str(portionurl)
+|3,0,4,1,1,0,1713853183,"        return str(portionurl)"
+"5	LINE	0
+	        portionurl = f"None: {[pu.user_id for pu in self.portionurls ]}"
+	        for pu in self.portionurls:
+	            if pu.user_id == self.user_id:
+	                portionurl = pu
+	                break
+	
+	        # portionurl = next(pu for pu in self.portionurls if pu.user_id == self.user_id)
+	        return str(portionurl)
+|3,0,5,1,8,0,1713853152,"        portionurl = f\"None: {[pu.user_id for pu in self.portionurls ]}\"","        for pu in self.portionurls:","            if pu.user_id == self.user_id:","                portionurl = pu","                break","","        # portionurl = next(pu for pu in self.portionurls if pu.user_id == self.user_id)","        return str(portionurl)"
+"6	LINE	0
+	        portionurl = f"None: {[pu.user_id for pu in self.portionurls ]}"
+	        for pu in self.portionurls:
+	            if pu.user_id == self.user_id:
+	                portionurl = pu
+	                break
+	
+	        # portionurl = next(pu for pu in self.portionurls if pu.user_id == self.user_id)
+	        return str(portionurl)
+|3,0,6,1,8,0,1713853141,"        portionurl = f\"None: {[pu.user_id for pu in self.portionurls ]}\"","        for pu in self.portionurls:","            if pu.user_id == self.user_id:","                portionurl = pu","                break","","        # portionurl = next(pu for pu in self.portionurls if pu.user_id == self.user_id)","        return str(portionurl)"
+"7	LINE	0
 	table_name = parse_schema_to_get_table_name(schema)
 	print(table_name)
-|3,0,1,1,2,0,1713848343,"table_name = parse_schema_to_get_table_name(schema)","print(table_name)"
-"2	LINE	0
-	    print(f"{table_name = }")
-|3,0,2,1,1,0,1713848181,"    print(f\"{table_name = }\")"
-"3	LINE	0
-	    print(f"{schema = }")
-|3,0,3,1,1,0,1713848178,"    print(f\"{schema = }\")"
-"4	LINE	0
-	print(f"{table_name = }")
-|3,0,4,1,1,0,1713848159,"print(f\"{table_name = }\")"
-"5	LINE	0
-	    # use re to do a case insensitive replacement of `create table`
-|3,0,5,1,1,0,1713848137,"    # use re to do a case insensitive replacement of `create table`"
-"6	LINE	0
-	    print(f"{table_name = }")
-|3,0,6,1,1,0,1713848093,"    print(f\"{table_name = }\")"
-"7	LINE	0
-	print(f"{table_name = }")
-|3,0,7,1,1,0,1713848028,"print(f\"{table_name = }\")"
+|3,0,7,1,2,0,1713848343,"table_name = parse_schema_to_get_table_name(schema)","print(table_name)"
 "8	LINE	0
-	print(("=" + "\x1b[96m").join(f"{ = }".split("=", 1)) + "\x1b[39m")
-|3,0,8,1,1,0,1713848027,"print((\"=\" + \"\\x1b[96m\").join(f\"{ = }\".split(\"=\", 1)) + \"\\x1b[39m\")"
+	    print(f"{table_name = }")
+|3,0,8,1,1,0,1713848181,"    print(f\"{table_name = }\")"
 "9	LINE	0
-	
-	
-|3,0,9,1,2,0,1713848009,"",""
+	    print(f"{schema = }")
+|3,0,9,1,1,0,1713848178,"    print(f\"{schema = }\")"
 "a	CHAR	0
 	Tabularize /,/l1c1l1c1l1c1l1
 |3,0,10,0,1,0,1713848082,"Tabularize /,/l1c1l1c1l1c1l1"
@@ -7618,236 +7652,472 @@ $\r\0\r
 |3,0,28,1,24,0,1712521850,"    return render_template_string(\"\"\"","    <ul>","        {% for id, name, downloaded_path, progress, status in downloads %}","            <li>","                <a href=\"/download/{{ id }}\">{{ name }}</a>","                <span>{{ status }}</span>","                <progress value=\"{{ progress }}\" max=\"100\"></progress>","                <span>{{ progress }}%</span>","                {% if status == 'paused' %}",>68
 |<"                <form method=\"POST\" action=\"/resume_download\">","                    <input type=\"hidden\" name=\"id\" value=\"{{ id }}\">","                    <input type=\"submit\" value=\"Resume\">","                </form>","                {% endif %}","                {% if status == 'downloading' %}","                <form method=\"POST\" action=\"/pause_download\">","                    <input type=\"hidden\" name=\"id\" value=\"{{ id }}\">",>61
 |<"                    <input type=\"submit\" value=\"Pause\">","                </form>","                {% endif %}","","            </li>","        {% endfor %}","    </ul>\"\"\", downloads=downloads)"
-""-	CHAR	0
-	󰚰
-|3,1,36,0,1,0,1713852921,"󰚰"
+"-	CHAR	0
+	Duration 
+|3,0,36,0,1,0,1713853333,"Duration "
 
 # File marks:
-'0  18  17  ~/.config/starship/starship.toml
-|4,48,18,17,1713852934,"~/.config/starship/starship.toml"
-'1  18  11  ~/.config/starship/starship.toml
-|4,49,18,11,1713852923,"~/.config/starship/starship.toml"
-'2  19  52  ~/.config/starship/starship.toml
-|4,50,19,52,1713852911,"~/.config/starship/starship.toml"
-'3  19  52  ~/.config/starship/starship.toml
-|4,51,19,52,1713852911,"~/.config/starship/starship.toml"
-'4  19  52  ~/.config/starship/starship.toml
-|4,52,19,52,1713852911,"~/.config/starship/starship.toml"
-'5  19  52  ~/.config/starship/starship.toml
-|4,53,19,52,1713852911,"~/.config/starship/starship.toml"
-'6  19  24  ~/.config/starship/starship.toml
-|4,54,19,24,1713852875,"~/.config/starship/starship.toml"
-'7  19  24  ~/.config/starship/starship.toml
-|4,55,19,24,1713852875,"~/.config/starship/starship.toml"
-'8  19  24  ~/.config/starship/starship.toml
-|4,56,19,24,1713852875,"~/.config/starship/starship.toml"
-'9  19  24  ~/.config/starship/starship.toml
-|4,57,19,24,1713852875,"~/.config/starship/starship.toml"
+'0  135  8  ~/hateoas/hateoas-api.py
+|4,48,135,8,1713876829,"~/hateoas/hateoas-api.py"
+'1  135  8  ~/hateoas/hateoas-api.py
+|4,49,135,8,1713876725,"~/hateoas/hateoas-api.py"
+'2  17  13  ~/.config/alias.sh
+|4,50,17,13,1713876718,"~/.config/alias.sh"
+'3  17  13  ~/.config/alias.sh
+|4,51,17,13,1713876718,"~/.config/alias.sh"
+'4  17  13  ~/.config/alias.sh
+|4,52,17,13,1713876718,"~/.config/alias.sh"
+'5  17  13  ~/.config/alias.sh
+|4,53,17,13,1713876718,"~/.config/alias.sh"
+'6  17  13  ~/.config/alias.sh
+|4,54,17,13,1713876392,"~/.config/alias.sh"
+'7  17  13  ~/.config/alias.sh
+|4,55,17,13,1713876392,"~/.config/alias.sh"
+'8  17  13  ~/.config/alias.sh
+|4,56,17,13,1713876392,"~/.config/alias.sh"
+'9  17  13  ~/.config/alias.sh
+|4,57,17,13,1713876392,"~/.config/alias.sh"
 
 # Jumplist (newest first):
--'  18  17  ~/.config/starship/starship.toml
-|4,39,18,17,1713852934,"~/.config/starship/starship.toml"
--'  18  11  ~/.config/starship/starship.toml
-|4,39,18,11,1713852923,"~/.config/starship/starship.toml"
--'  19  52  ~/.config/starship/starship.toml
-|4,39,19,52,1713852911,"~/.config/starship/starship.toml"
--'  19  52  ~/.config/starship/starship.toml
-|4,39,19,52,1713852911,"~/.config/starship/starship.toml"
--'  19  52  ~/.config/starship/starship.toml
-|4,39,19,52,1713852911,"~/.config/starship/starship.toml"
--'  19  24  ~/.config/starship/starship.toml
-|4,39,19,24,1713852875,"~/.config/starship/starship.toml"
--'  1  0  ~/.config/starship/starship.toml
-|4,39,1,0,1713852868,"~/.config/starship/starship.toml"
--'  1  0  ~/.config/starship/starship.toml
-|4,39,1,0,1713852868,"~/.config/starship/starship.toml"
--'  1  0  ~/.config/starship/starship.toml
-|4,39,1,0,1713852868,"~/.config/starship/starship.toml"
--'  1  0  ~/.config/starship/starship.toml
-|4,39,1,0,1713852868,"~/.config/starship/starship.toml"
--'  19  22  ~/.config/starship/starship.toml
-|4,39,19,22,1713852861,"~/.config/starship/starship.toml"
--'  4  0  ~/.config/starship/starship.toml
-|4,39,4,0,1713852855,"~/.config/starship/starship.toml"
--'  4  0  ~/.config/starship/starship.toml
-|4,39,4,0,1713852855,"~/.config/starship/starship.toml"
--'  4  0  ~/.config/starship/starship.toml
-|4,39,4,0,1713852855,"~/.config/starship/starship.toml"
--'  4  0  ~/.config/starship/starship.toml
-|4,39,4,0,1713852855,"~/.config/starship/starship.toml"
--'  4  0  ~/.config/starship/starship.toml
-|4,39,4,0,1713852855,"~/.config/starship/starship.toml"
--'  1  0  ~/.config/starship/starship.toml
-|4,39,1,0,1713852851,"~/.config/starship/starship.toml"
--'  53  0  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,53,0,1713852432,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  53  0  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,53,0,1713852432,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  53  0  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,53,0,1713852432,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  53  0  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,53,0,1713852432,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  53  0  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,53,0,1713852432,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  53  0  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,53,0,1713852432,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  37  4  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,37,4,1713848576,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  37  4  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,37,4,1713848576,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  37  4  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,37,4,1713848576,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  37  4  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,37,4,1713848576,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  37  4  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,37,4,1713848576,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  37  4  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,37,4,1713848576,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  34  4  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,34,4,1713848558,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  34  4  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,34,4,1713848558,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  34  4  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,34,4,1713848558,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  34  4  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,34,4,1713848558,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  34  4  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,34,4,1713848558,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  34  4  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,34,4,1713848558,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  52  0  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,52,0,1713848552,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  52  0  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,52,0,1713848552,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  52  0  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,52,0,1713848552,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  52  0  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,52,0,1713848552,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  52  0  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,52,0,1713848552,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  52  0  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,52,0,1713848552,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  33  46  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,33,46,1713848545,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  33  46  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,33,46,1713848545,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  33  46  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,33,46,1713848545,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  33  46  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,33,46,1713848545,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  33  46  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,33,46,1713848545,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  33  46  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,33,46,1713848545,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  19  4  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,19,4,1713848432,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  19  4  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,19,4,1713848432,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  19  4  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,19,4,1713848432,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  19  4  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,19,4,1713848432,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  19  4  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,19,4,1713848432,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  19  4  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,19,4,1713848432,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  18  0  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,18,0,1713848407,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  18  0  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,18,0,1713848407,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  18  0  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,18,0,1713848407,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  18  0  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,18,0,1713848407,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  18  0  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,18,0,1713848407,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  18  0  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,18,0,1713848407,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  35  4  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,35,4,1713848391,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  35  4  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,35,4,1713848391,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  35  4  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,35,4,1713848391,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  35  4  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,35,4,1713848391,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  35  4  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,35,4,1713848391,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  35  4  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,35,4,1713848391,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  36  64  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,36,64,1713848387,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  36  64  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,36,64,1713848387,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  36  64  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,36,64,1713848387,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  36  64  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,36,64,1713848387,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  36  64  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,36,64,1713848387,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  36  64  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,36,64,1713848387,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  11  26  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,11,26,1713848352,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  11  26  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,11,26,1713848352,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  11  26  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,11,26,1713848352,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  11  26  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,11,26,1713848352,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  11  26  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,11,26,1713848352,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  11  26  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,11,26,1713848352,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  31  49  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,31,49,1713848338,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  31  49  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,31,49,1713848338,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  31  49  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,31,49,1713848338,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  31  49  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,31,49,1713848338,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  31  49  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,31,49,1713848338,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  31  49  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,31,49,1713848338,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  30  42  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,30,42,1713848332,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  30  42  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,30,42,1713848332,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  30  42  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,30,42,1713848332,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  30  42  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,30,42,1713848332,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  30  42  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,30,42,1713848332,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  30  42  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,30,42,1713848332,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  51  16  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,51,16,1713848255,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  51  16  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,51,16,1713848255,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  51  16  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,51,16,1713848255,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  51  16  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,51,16,1713848255,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  51  16  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,51,16,1713848255,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  51  16  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,51,16,1713848255,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  20  72  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,20,72,1713848249,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  20  72  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,20,72,1713848249,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  20  72  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,20,72,1713848249,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
--'  20  72  ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
-|4,39,20,72,1713848249,"~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py"
+-'  135  8  ~/hateoas/hateoas-api.py
+|4,39,135,8,1713876829,"~/hateoas/hateoas-api.py"
+-'  43  5  ~/.vim/vimrc
+|4,39,43,5,1713876824,"~/.vim/vimrc"
+-'  246  35  ~/.vim/autoload/plug.vim
+|4,39,246,35,1713876803,"~/.vim/autoload/plug.vim"
+-'  235  26  ~/.vim/autoload/plug.vim
+|4,39,235,26,1713876798,"~/.vim/autoload/plug.vim"
+-'  248  47  ~/.vim/autoload/plug.vim
+|4,39,248,47,1713876794,"~/.vim/autoload/plug.vim"
+-'  37  28  ~/.vim/autoload/plug.vim
+|4,39,37,28,1713876786,"~/.vim/autoload/plug.vim"
+-'  11  28  ~/.vim/autoload/plug.vim
+|4,39,11,28,1713876781,"~/.vim/autoload/plug.vim"
+-'  1  0  ~/.vim/autoload/plug.vim
+|4,39,1,0,1713876780,"~/.vim/autoload/plug.vim"
+-'  69  0  ~/.vim/autoload/plug.vim
+|4,39,69,0,1713876778,"~/.vim/autoload/plug.vim"
+-'  8  0  ~/.vim
+|4,39,8,0,1713876771,"~/.vim"
+-'  1  0  ~/.vim
+|4,39,1,0,1713876748,"~/.vim"
+-'  135  8  ~/hateoas/hateoas-api.py
+|4,39,135,8,1713876725,"~/hateoas/hateoas-api.py"
+-'  1  0  ~/hateoas/hateoas-api.py
+|4,39,1,0,1713876722,"~/hateoas/hateoas-api.py"
+-'  1  0  ~/hateoas/hateoas-api.py
+|4,39,1,0,1713876722,"~/hateoas/hateoas-api.py"
+-'  17  13  ~/.config/alias.sh
+|4,39,17,13,1713876718,"~/.config/alias.sh"
+-'  17  13  ~/.config/alias.sh
+|4,39,17,13,1713876718,"~/.config/alias.sh"
+-'  17  13  ~/.config/alias.sh
+|4,39,17,13,1713876718,"~/.config/alias.sh"
+-'  17  13  ~/.config/alias.sh
+|4,39,17,13,1713876392,"~/.config/alias.sh"
+-'  1  0  ~/.config/alias.sh
+|4,39,1,0,1713876387,"~/.config/alias.sh"
+-'  1  0  ~/.config/alias.sh
+|4,39,1,0,1713876387,"~/.config/alias.sh"
+-'  1  0  ~/.config/alias.sh
+|4,39,1,0,1713876387,"~/.config/alias.sh"
+-'  1  0  ~/.config/alias.sh
+|4,39,1,0,1713876387,"~/.config/alias.sh"
+-'  1  0  ~/.config/alias.sh
+|4,39,1,0,1713876378,"~/.config/alias.sh"
+-'  17  17  ~/.config/alias.sh
+|4,39,17,17,1713876365,"~/.config/alias.sh"
+-'  17  17  ~/.config/alias.sh
+|4,39,17,17,1713876365,"~/.config/alias.sh"
+-'  1  0  ~/.config/alias.sh
+|4,39,1,0,1713876349,"~/.config/alias.sh"
+-'  24  5  ~/hateoas/hateoas-api.py
+|4,39,24,5,1713853365,"~/hateoas/hateoas-api.py"
+-'  24  5  ~/hateoas/hateoas-api.py
+|4,39,24,5,1713853365,"~/hateoas/hateoas-api.py"
+-'  24  5  ~/hateoas/hateoas-api.py
+|4,39,24,5,1713853365,"~/hateoas/hateoas-api.py"
+-'  24  5  ~/hateoas/hateoas-api.py
+|4,39,24,5,1713853365,"~/hateoas/hateoas-api.py"
+-'  24  5  ~/hateoas/hateoas-api.py
+|4,39,24,5,1713853365,"~/hateoas/hateoas-api.py"
+-'  24  5  ~/hateoas/hateoas-api.py
+|4,39,24,5,1713853365,"~/hateoas/hateoas-api.py"
+-'  24  5  ~/hateoas/hateoas-api.py
+|4,39,24,5,1713853365,"~/hateoas/hateoas-api.py"
+-'  75  4  ~/hateoas/hateoas-api.py
+|4,39,75,4,1713853359,"~/hateoas/hateoas-api.py"
+-'  75  4  ~/hateoas/hateoas-api.py
+|4,39,75,4,1713853359,"~/hateoas/hateoas-api.py"
+-'  75  4  ~/hateoas/hateoas-api.py
+|4,39,75,4,1713853359,"~/hateoas/hateoas-api.py"
+-'  75  4  ~/hateoas/hateoas-api.py
+|4,39,75,4,1713853359,"~/hateoas/hateoas-api.py"
+-'  75  4  ~/hateoas/hateoas-api.py
+|4,39,75,4,1713853359,"~/hateoas/hateoas-api.py"
+-'  75  4  ~/hateoas/hateoas-api.py
+|4,39,75,4,1713853359,"~/hateoas/hateoas-api.py"
+-'  75  4  ~/hateoas/hateoas-api.py
+|4,39,75,4,1713853359,"~/hateoas/hateoas-api.py"
+-'  85  22  ~/hateoas/hateoas-api.py
+|4,39,85,22,1713853357,"~/hateoas/hateoas-api.py"
+-'  85  22  ~/hateoas/hateoas-api.py
+|4,39,85,22,1713853357,"~/hateoas/hateoas-api.py"
+-'  85  22  ~/hateoas/hateoas-api.py
+|4,39,85,22,1713853357,"~/hateoas/hateoas-api.py"
+-'  85  22  ~/hateoas/hateoas-api.py
+|4,39,85,22,1713853357,"~/hateoas/hateoas-api.py"
+-'  85  22  ~/hateoas/hateoas-api.py
+|4,39,85,22,1713853357,"~/hateoas/hateoas-api.py"
+-'  85  22  ~/hateoas/hateoas-api.py
+|4,39,85,22,1713853357,"~/hateoas/hateoas-api.py"
+-'  85  22  ~/hateoas/hateoas-api.py
+|4,39,85,22,1713853357,"~/hateoas/hateoas-api.py"
+-'  1  0  ~/hateoas/hateoas-api.py
+|4,39,1,0,1713853355,"~/hateoas/hateoas-api.py"
+-'  1  0  ~/hateoas/hateoas-api.py
+|4,39,1,0,1713853355,"~/hateoas/hateoas-api.py"
+-'  1  0  ~/hateoas/hateoas-api.py
+|4,39,1,0,1713853355,"~/hateoas/hateoas-api.py"
+-'  1  0  ~/hateoas/hateoas-api.py
+|4,39,1,0,1713853355,"~/hateoas/hateoas-api.py"
+-'  1  0  ~/hateoas/hateoas-api.py
+|4,39,1,0,1713853355,"~/hateoas/hateoas-api.py"
+-'  54  0  ~/hateoas/hateoas-api.py
+|4,39,54,0,1713853353,"~/hateoas/hateoas-api.py"
+-'  54  0  ~/hateoas/hateoas-api.py
+|4,39,54,0,1713853353,"~/hateoas/hateoas-api.py"
+-'  54  0  ~/hateoas/hateoas-api.py
+|4,39,54,0,1713853353,"~/hateoas/hateoas-api.py"
+-'  54  0  ~/hateoas/hateoas-api.py
+|4,39,54,0,1713853353,"~/hateoas/hateoas-api.py"
+-'  54  0  ~/hateoas/hateoas-api.py
+|4,39,54,0,1713853353,"~/hateoas/hateoas-api.py"
+-'  54  0  ~/hateoas/hateoas-api.py
+|4,39,54,0,1713853353,"~/hateoas/hateoas-api.py"
+-'  54  0  ~/hateoas/hateoas-api.py
+|4,39,54,0,1713853353,"~/hateoas/hateoas-api.py"
+-'  52  8  ~/hateoas/hateoas-api.py
+|4,39,52,8,1713853312,"~/hateoas/hateoas-api.py"
+-'  52  8  ~/hateoas/hateoas-api.py
+|4,39,52,8,1713853312,"~/hateoas/hateoas-api.py"
+-'  52  8  ~/hateoas/hateoas-api.py
+|4,39,52,8,1713853312,"~/hateoas/hateoas-api.py"
+-'  52  8  ~/hateoas/hateoas-api.py
+|4,39,52,8,1713853312,"~/hateoas/hateoas-api.py"
+-'  52  8  ~/hateoas/hateoas-api.py
+|4,39,52,8,1713853312,"~/hateoas/hateoas-api.py"
+-'  52  8  ~/hateoas/hateoas-api.py
+|4,39,52,8,1713853312,"~/hateoas/hateoas-api.py"
+-'  52  8  ~/hateoas/hateoas-api.py
+|4,39,52,8,1713853312,"~/hateoas/hateoas-api.py"
+-'  51  8  ~/hateoas/hateoas-api.py
+|4,39,51,8,1713853271,"~/hateoas/hateoas-api.py"
+-'  51  8  ~/hateoas/hateoas-api.py
+|4,39,51,8,1713853271,"~/hateoas/hateoas-api.py"
+-'  51  8  ~/hateoas/hateoas-api.py
+|4,39,51,8,1713853271,"~/hateoas/hateoas-api.py"
+-'  51  8  ~/hateoas/hateoas-api.py
+|4,39,51,8,1713853271,"~/hateoas/hateoas-api.py"
+-'  51  8  ~/hateoas/hateoas-api.py
+|4,39,51,8,1713853271,"~/hateoas/hateoas-api.py"
+-'  51  8  ~/hateoas/hateoas-api.py
+|4,39,51,8,1713853271,"~/hateoas/hateoas-api.py"
+-'  51  8  ~/hateoas/hateoas-api.py
+|4,39,51,8,1713853271,"~/hateoas/hateoas-api.py"
+-'  45  19  ~/hateoas/hateoas-api.py
+|4,39,45,19,1713853180,"~/hateoas/hateoas-api.py"
+-'  45  19  ~/hateoas/hateoas-api.py
+|4,39,45,19,1713853180,"~/hateoas/hateoas-api.py"
+-'  45  19  ~/hateoas/hateoas-api.py
+|4,39,45,19,1713853180,"~/hateoas/hateoas-api.py"
+-'  45  19  ~/hateoas/hateoas-api.py
+|4,39,45,19,1713853180,"~/hateoas/hateoas-api.py"
+-'  45  19  ~/hateoas/hateoas-api.py
+|4,39,45,19,1713853180,"~/hateoas/hateoas-api.py"
+-'  45  19  ~/hateoas/hateoas-api.py
+|4,39,45,19,1713853180,"~/hateoas/hateoas-api.py"
+-'  45  19  ~/hateoas/hateoas-api.py
+|4,39,45,19,1713853180,"~/hateoas/hateoas-api.py"
+-'  47  61  ~/hateoas/hateoas-api.py
+|4,39,47,61,1713853157,"~/hateoas/hateoas-api.py"
+-'  47  61  ~/hateoas/hateoas-api.py
+|4,39,47,61,1713853157,"~/hateoas/hateoas-api.py"
+-'  47  61  ~/hateoas/hateoas-api.py
+|4,39,47,61,1713853157,"~/hateoas/hateoas-api.py"
+-'  47  61  ~/hateoas/hateoas-api.py
+|4,39,47,61,1713853157,"~/hateoas/hateoas-api.py"
+-'  47  61  ~/hateoas/hateoas-api.py
+|4,39,47,61,1713853157,"~/hateoas/hateoas-api.py"
+-'  47  61  ~/hateoas/hateoas-api.py
+|4,39,47,61,1713853157,"~/hateoas/hateoas-api.py"
+-'  47  61  ~/hateoas/hateoas-api.py
+|4,39,47,61,1713853157,"~/hateoas/hateoas-api.py"
+-'  614  31  ~/hateoas/hateoas-api.py
+|4,39,614,31,1713853135,"~/hateoas/hateoas-api.py"
+-'  614  31  ~/hateoas/hateoas-api.py
+|4,39,614,31,1713853135,"~/hateoas/hateoas-api.py"
+-'  614  31  ~/hateoas/hateoas-api.py
+|4,39,614,31,1713853135,"~/hateoas/hateoas-api.py"
+-'  614  31  ~/hateoas/hateoas-api.py
+|4,39,614,31,1713853135,"~/hateoas/hateoas-api.py"
+-'  614  31  ~/hateoas/hateoas-api.py
+|4,39,614,31,1713853135,"~/hateoas/hateoas-api.py"
+-'  614  31  ~/hateoas/hateoas-api.py
+|4,39,614,31,1713853135,"~/hateoas/hateoas-api.py"
+-'  614  31  ~/hateoas/hateoas-api.py
+|4,39,614,31,1713853135,"~/hateoas/hateoas-api.py"
+-'  43  8  ~/hateoas/hateoas-api.py
+|4,39,43,8,1713853130,"~/hateoas/hateoas-api.py"
+-'  43  8  ~/hateoas/hateoas-api.py
+|4,39,43,8,1713853130,"~/hateoas/hateoas-api.py"
+-'  43  8  ~/hateoas/hateoas-api.py
+|4,39,43,8,1713853130,"~/hateoas/hateoas-api.py"
+-'  43  8  ~/hateoas/hateoas-api.py
+|4,39,43,8,1713853130,"~/hateoas/hateoas-api.py"
+-'  43  8  ~/hateoas/hateoas-api.py
+|4,39,43,8,1713853130,"~/hateoas/hateoas-api.py"
+-'  43  8  ~/hateoas/hateoas-api.py
+|4,39,43,8,1713853130,"~/hateoas/hateoas-api.py"
 
 # Buffer list:
-%~/.config/starship/starship.toml	18	17
+%~/hateoas/hateoas-api.py	135	8
+%~/.vim/autoload/plug.vim	246	35
+%~/.vim/vimrc	43	5
 
 # History of marks within files (newest to oldest):
+
+> ~/hateoas/hateoas-api.py
+	*	1713876825	0
+	"	135	8
+	^	52	54
+	.	52	53
+	+	26	0
+	+	21	0
+	+	76	9
+	+	76	0
+	+	77	77
+	+	60	0
+	+	77	0
+	+	77	144
+	+	77	0
+	+	77	32
+	+	77	121
+	+	77	51
+	+	77	94
+	+	77	28
+	+	77	122
+	+	77	16
+	+	77	0
+	+	77	21
+	+	77	24
+	+	77	8
+	+	77	55
+	+	77	26
+	+	77	62
+	+	77	93
+	+	77	69
+	+	77	105
+	+	77	33
+	+	77	78
+	+	77	0
+	+	77	42
+	+	77	86
+	+	76	19
+	+	76	33
+	+	59	18
+	+	30	0
+	+	29	0
+	+	61	0
+	+	599	28
+	+	600	0
+	+	617	0
+	+	618	0
+	+	613	21
+	+	601	24
+	+	613	56
+	+	615	17
+	+	613	18
+	+	615	21
+	+	616	0
+	+	614	32
+	+	612	27
+	+	611	48
+	+	612	0
+	+	611	0
+	+	611	132
+	+	611	127
+	+	612	14
+	+	616	15
+	+	612	15
+	+	614	36
+	+	43	21
+	+	54	0
+	+	45	16
+	+	45	110
+	+	45	16
+	+	46	43
+	+	47	72
+	+	48	39
+	+	53	0
+	+	49	38
+	+	50	52
+	+	50	46
+	+	51	8
+	+	50	27
+	+	50	0
+	+	51	42
+	+	614	38
+	+	45	0
+	+	48	0
+	+	47	0
+	+	46	0
+	+	45	0
+	+	45	24
+	+	45	0
+	+	45	29
+	+	45	60
+	+	45	42
+	+	45	0
+	+	45	26
+	+	45	16
+	+	45	9
+	+	45	0
+	+	44	0
+	+	45	0
+	+	44	0
+	+	52	0
+	+	51	0
+	+	52	53
+
+> ~/.vim/autoload/plug.vim
+	*	1713876825	0
+	"	246	35
+
+> ~/.vim/vimrc
+	*	1713876810	0
+	"	43	5
+	.	158	0
+	+	1352	23
+	+	1352	1
+	+	1352	0
+	+	1352	30
+	+	1352	0
+	+	1352	16
+	+	1352	0
+	+	1352	70
+	+	1352	0
+	+	1352	22
+	+	1352	0
+	+	1352	27
+	+	1352	0
+	+	1352	30
+	+	1352	13
+	+	1352	16
+	+	1352	0
+	+	1352	19
+	+	1352	5
+	+	1352	80
+	+	1352	22
+	+	1352	0
+	+	1352	21
+	+	1352	28
+	+	1352	22
+	+	1352	71
+	+	1352	8
+	+	1352	24
+	+	1352	40
+	+	1352	0
+	+	1352	39
+	+	1352	0
+	+	1352	19
+	+	1352	0
+	+	1352	38
+	+	1352	21
+	+	1352	0
+	+	1352	10
+	+	1352	25
+	+	1352	0
+	+	1352	32
+	+	1352	0
+	+	1352	10
+	+	1352	0
+	+	1352	25
+	+	1352	10
+	+	1352	0
+	+	1352	60
+	+	1352	0
+	+	1352	55
+	+	1352	0
+	+	1352	44
+	+	1352	0
+	+	1352	19
+	+	1352	71
+	+	1352	0
+	+	1352	23
+	+	1352	41
+	+	1352	44
+	+	1352	40
+	+	1352	28
+	+	1352	0
+	+	1352	11
+	+	1352	18
+	+	1352	43
+	+	1352	64
+	+	1352	54
+	+	1352	0
+	+	1352	31
+	+	1352	0
+	+	1352	6
+	+	1352	0
+	+	1352	1
+	+	1352	0
+	+	1352	80
+	+	1352	75
+	+	1352	0
+	+	1352	52
+	+	1352	41
+	+	158	0
+
+> /usr/share/vim/vim90/doc/filetype.txt
+	*	1713876739	0
+	"	780	24
+
+> ~/.config/alias.sh
+	*	1713876717	0
+	"	17	13
+	^	17	14
+	.	17	13
+	+	2	0
+	+	15	37
+	+	19	77
+	+	19	42
+	+	19	47
+	+	19	32
+	+	20	39
+	+	21	40
+	+	22	79
+	+	22	0
+	+	22	36
+	+	22	20
+	+	22	25
+	+	23	45
+	+	24	0
+	+	22	0
+	+	19	0
+	+	23	19
+	+	16	60
+	+	18	0
+	+	19	0
+	+	17	13
+
+> ~/bash/logs/gh-timeago-updates.log
+	*	1713853086	0
+	"	63	0
+
+> /tmp/crontab.BPvd3h/crontab
+	*	1713853059	0
+	"	26	0
 
 > ~/.config/starship/starship.toml
 	*	1713852933	0
@@ -8247,111 +8517,6 @@ $\r\0\r
 	+	10	0
 	+	21	0
 
-> ~/hateoas/hateoas-api.py
-	*	1713803376	0
-	"	52	0
-	^	44	41
-	.	44	40
-	+	26	0
-	+	28	23
-	+	28	9
-	+	26	70
-	+	26	36
-	+	26	76
-	+	26	51
-	+	26	0
-	+	21	0
-	+	82	9
-	+	82	0
-	+	83	77
-	+	66	0
-	+	83	0
-	+	83	144
-	+	83	0
-	+	83	32
-	+	83	121
-	+	83	51
-	+	83	94
-	+	83	28
-	+	83	122
-	+	83	16
-	+	83	0
-	+	83	21
-	+	83	24
-	+	83	8
-	+	83	55
-	+	83	26
-	+	83	62
-	+	83	93
-	+	83	69
-	+	83	105
-	+	83	33
-	+	83	78
-	+	83	0
-	+	83	42
-	+	83	86
-	+	82	19
-	+	82	33
-	+	65	18
-	+	30	0
-	+	29	0
-	+	67	0
-	+	605	28
-	+	606	0
-	+	623	0
-	+	624	0
-	+	619	21
-	+	607	24
-	+	619	56
-	+	621	17
-	+	619	18
-	+	621	21
-	+	622	0
-	+	620	32
-	+	618	27
-	+	617	48
-	+	618	0
-	+	617	0
-	+	617	132
-	+	617	127
-	+	618	14
-	+	622	15
-	+	618	15
-	+	620	36
-	+	43	21
-	+	60	0
-	+	50	16
-	+	50	110
-	+	52	16
-	+	53	43
-	+	54	72
-	+	55	39
-	+	59	0
-	+	56	38
-	+	57	52
-	+	57	46
-	+	58	8
-	+	57	27
-	+	57	0
-	+	58	42
-	+	620	38
-	+	50	0
-	+	55	0
-	+	54	0
-	+	53	0
-	+	52	0
-	+	50	0
-	+	51	24
-	+	50	0
-	+	51	29
-	+	50	60
-	+	46	42
-	+	49	0
-	+	44	26
-	+	47	16
-	+	50	9
-	+	44	40
-
 > ~/hateoas/create-databases.py
 	*	1713795369	0
 	"	33	4
@@ -8478,91 +8643,6 @@ $\r\0\r
 	+	12	13
 	+	11	17
 	+	12	10
-
-> ~/.vim/vimrc
-	*	1713790826	0
-	"	1068	0
-	.	158	0
-	+	1352	23
-	+	1352	1
-	+	1352	0
-	+	1352	30
-	+	1352	0
-	+	1352	16
-	+	1352	0
-	+	1352	70
-	+	1352	0
-	+	1352	22
-	+	1352	0
-	+	1352	27
-	+	1352	0
-	+	1352	30
-	+	1352	13
-	+	1352	16
-	+	1352	0
-	+	1352	19
-	+	1352	5
-	+	1352	80
-	+	1352	22
-	+	1352	0
-	+	1352	21
-	+	1352	28
-	+	1352	22
-	+	1352	71
-	+	1352	8
-	+	1352	24
-	+	1352	40
-	+	1352	0
-	+	1352	39
-	+	1352	0
-	+	1352	19
-	+	1352	0
-	+	1352	38
-	+	1352	21
-	+	1352	0
-	+	1352	10
-	+	1352	25
-	+	1352	0
-	+	1352	32
-	+	1352	0
-	+	1352	10
-	+	1352	0
-	+	1352	25
-	+	1352	10
-	+	1352	0
-	+	1352	60
-	+	1352	0
-	+	1352	55
-	+	1352	0
-	+	1352	44
-	+	1352	0
-	+	1352	19
-	+	1352	71
-	+	1352	0
-	+	1352	23
-	+	1352	41
-	+	1352	44
-	+	1352	40
-	+	1352	28
-	+	1352	0
-	+	1352	11
-	+	1352	18
-	+	1352	43
-	+	1352	64
-	+	1352	54
-	+	1352	0
-	+	1352	31
-	+	1352	0
-	+	1352	6
-	+	1352	0
-	+	1352	1
-	+	1352	0
-	+	1352	80
-	+	1352	75
-	+	1352	0
-	+	1352	52
-	+	1352	41
-	+	158	0
 
 > /usr/share/vim/vim90/doc/change.txt
 	*	1713790716	0
@@ -8953,32 +9033,6 @@ $\r\0\r
 	*	1713760255	0
 	"	1	0
 
-> ~/.config/alias.sh
-	*	1713760142	0
-	"	1	0
-	.	18	0
-	+	2	0
-	+	15	37
-	+	18	77
-	+	18	42
-	+	18	47
-	+	18	32
-	+	19	39
-	+	20	40
-	+	21	79
-	+	21	0
-	+	21	36
-	+	21	20
-	+	21	25
-	+	22	45
-	+	23	0
-	+	21	0
-	+	18	0
-	+	22	19
-	+	16	60
-	+	17	0
-	+	18	0
-
 > ~/bash/logs/cron-run.log
 	*	1713759797	0
 	"	1	0
@@ -9117,10 +9171,6 @@ $\r\0\r
 
 > ~/Twitch/coffee-vps/code/general.py
 	*	1713758253	0
-	"	1	0
-
-> ~/bash/logs/gh-timeago-updates.log
-	*	1713758199	0
 	"	1	0
 
 > /tmp/mcfly.7lyE3nZu
@@ -23274,10 +23324,6 @@ $\r\0\r
 > ~/.vim/plugin/better.vim
 	*	1690488424	0
 	"	26	15
-
-> /usr/share/vim/vim90/doc/filetype.txt
-	*	1690488409	0
-	"	780	10
 
 > /usr/share/vim/vim90/doc/usr_05.txt
 	*	1690488077	0
