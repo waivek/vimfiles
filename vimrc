@@ -1350,3 +1350,4 @@ let &t_EI = "\e[2 q"
 
 let g:VM_custom_motions  = {'h': 'j', 'j': 'k', 'k': 'l', 'l': ';' }
 
+let g:copilot_workspace_folders=["/home/vivek/hateoas"]

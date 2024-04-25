@@ -149,7 +149,8 @@ let g:ale_linters = {
 
 let g:ale_fixers = {
             \ 'go' : [ 'gofmt', 'goimports' ],
-            \ 'python' : [ 'autoimport' ]
+            \ 'python' : [ 'autoimport' ],
+            \ 'sql' : [ 'sqlfluff' ],
             \}
 
 " let g:ale_lint_on_enter = 0
@@ -162,6 +163,9 @@ let g:ale_lint_on_text_changed = 0 " Default: 'normal'
 let g:ale_lint_delay = 0 " Default: 200
 
 let g:ale_html_tidy_options = '-q -e -language en --escape-scripts 0'
+
+let g:ale_sql_sqlfluff_options = ''
+
 
 " Put this in ~/.eslintrc.json
 " {
