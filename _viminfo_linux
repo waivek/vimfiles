@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/sqlfluff
+~MSle0~/\C\<set_download_status\>
 
 # Last Substitute Search Pattern:
 ~MSle0&\s*$
@@ -20,16 +20,82 @@
 $
 
 # Command Line History (newest to oldest):
-:qa
-|2,0,1714037540,,"qa"
+:q!
+|2,0,1714061700,,"q!"
+:enew
+|2,0,1714061069,,"enew"
+:e db2dl.py
+|2,0,1714060904,,"e db2dl.py"
+:e download.py
+|2,0,1714060897,,"e download.py"
+:e pyrightconfig.json
+|2,0,1714060893,,"e pyrightconfig.json"
+:e Types.py
+|2,0,1714060747,,"e Types.py"
+:b db2dl.py
+|2,0,1714054869,,"b db2dl.py"
+:e
+|2,0,1714054839,,"e"
+:e hateoas-api.py
+|2,0,1714054780,,"e hateoas-api.py"
+:e main.sql
+|2,0,1714054715,,"e main.sql"
+:MRU 
+|2,0,1714054706,,"MRU "
 :q
-|2,0,1714037508,,"q"
+|2,0,1714054310,,"q"
+:e download_portionurl.py
+|2,0,1714054046,,"e download_portionurl.py"
+:term
+|2,0,1714053980,,"term"
+:!rm /tmp/db2dl.py.lock
+|2,0,1714053869,,"!rm /tmp/db2dl.py.lock"
+:!r
+|2,0,1714053805,,"!r"
+:MRU 6:db2dl.py
+|2,0,1714053782,,"MRU 6:db2dl.py"
+:414
+|2,0,1714047519,,"414"
+:408
+|2,0,1714047464,,"408"
+:MRU ha
+|2,0,1714047463,,"MRU ha"
+:e create-databases.py
+|2,0,1714047359,,"e create-databases.py"
+:qa
+|2,0,1714047325,,"qa"
+:ter
+|2,0,1714047290,,"ter"
+:e dbutils.py
+|2,0,1714047263,,"e dbutils.py"
+:e con
+|2,0,1714047261,,"e con"
+:e data/main.db
+|2,0,1714046849,,"e data/main.db"
+:VD data/main.db
+|2,0,1714046812,,"VD data/main.db"
+:data
+|2,0,1714046809,,"data"
+:!
+|2,0,1714046733,,"!"
+:e *.
+|2,0,1714046148,,"e *."
+:set wrap
+|2,0,1714046096,,"set wrap"
+:e run-download.bash
+|2,0,1714045943,,"e run-download.bash"
+:Rename
+|2,0,1714043116,,"Rename"
+:e 
+|2,0,1714042992,,"e "
+:!start everything -path . run
+|2,0,1714041379,,"!start everything -path . run"
+:MRU hat
+|2,0,1714040858,,"MRU hat"
 :ALEFix
 |2,0,1714037194,,"ALEFix"
 :ALEInfo
 |2,0,1714037180,,"ALEInfo"
-:e
-|2,0,1714037179,,"e"
 :so %
 |2,0,1714037177,,"so %"
 :MRU ide
@@ -56,26 +122,18 @@ $
 |2,0,1714036686,,"MRU sql"
 :b ale_linters/sql/sqlfluff.vim
 |2,0,1714035755,,"b ale_linters/sql/sqlfluff.vim"
-:MRU 
-|2,0,1714035753,,"MRU "
 :b!# | bd! #
 |2,0,1714035610,,"b!# | bd! #"
 :e ~/.vim/plugged/ale/ale_linters/sql/sqlfluff.vim
 |2,0,1714035332,,"e ~/.vim/plugged/ale/ale_linters/sql/sqlfluff.vim"
-:term
-|2,0,1714035233,,"term"
 :e ~/.vim/plugged/ale/
 |2,0,1714035225,,"e ~/.vim/plugged/ale/"
 :bd!
 |2,0,1714033945,,"bd!"
-:q!
-|2,0,1714031050,,"q!"
 :set nonumber
 |2,0,1714029788,,"set nonumber"
 :G
 |2,0,1714029781,,"G"
-:e main.sql
-|2,0,1714029744,,"e main.sql"
 :ALEEnable
 |2,0,1714029718,,"ALEEnable"
 :ALEDisable
@@ -98,16 +156,12 @@ $
 |2,0,1714027809,,"earlier 10m"
 :ALEI
 |2,0,1714027523,,"ALEI"
-:e 
-|2,0,1714027474,,"e "
 :h g:ale_sql_sqlfmt_options
 |2,0,1714027411,,"h g:ale_sql_sqlfmt_options"
 :e!
 |2,0,1714026812,,"e!"
 : w fixed.sql
 |2,0,1714026663,," w fixed.sql"
-:enew
-|2,0,1714026569,,"enew"
 :set ff?
 |2,0,1714026560,,"set ff?"
 :SQLJoin
@@ -126,8 +180,6 @@ $
 |2,0,1714024706,,"pwd"
 :echo pwd
 |2,0,1714024704,,"echo pwd"
-:e hateoas-api.py
-|2,0,1714024701,,"e hateoas-api.py"
 :e hateoas/
 |2,0,1714024698,,"e hateoas/"
 :jpre
@@ -144,8 +196,6 @@ $
 |2,0,1713970243,,"Rename download_portionurl.py"
 :e download-portionurl.py
 |2,0,1713970231,,"e download-portionurl.py"
-:e data/main.db
-|2,0,1713970184,,"e data/main.db"
 :echo g:copilot_workspace_folders
 |2,0,1713970050,,"echo g:copilot_workspace_folders"
 :Copilot enable
@@ -154,10 +204,6 @@ $
 |2,0,1713970038,,"Copilot disable"
 :edit $MYVIMRC
 |2,0,1713970014,,"edit $MYVIMRC"
-:e Types.py
-|2,0,1713969891,,"e Types.py"
-:e download.py
-|2,0,1713969873,,"e download.py"
 :OpenDB data/videos.db
 |2,0,1713969088,,"OpenDB data/videos.db"
 :VD data/videos.db
@@ -176,16 +222,12 @@ $
 |2,0,1713951771,,"Copilot restart"
 :h Copilot
 |2,0,1713951716,,"h Copilot"
-:MRU ha
-|2,0,1713951583,,"MRU ha"
 :Rename Types.py
 |2,0,1713951578,,"Rename Types.py"
 :e types.py
 |2,0,1713951564,,"e types.py"
 :b hateoas-api.py
 |2,0,1713951455,,"b hateoas-api.py"
-:e pyrightconfig.json
-|2,0,1713951414,,"e pyrightconfig.json"
 :MRU css
 |2,0,1713942810,,"MRU css"
 :GFiles
@@ -200,8 +242,6 @@ $
 |2,0,1713932974,,"MRU hate"
 :sqlite3 
 |2,0,1713932902,,"sqlite3 "
-:VD data/main.db
-|2,0,1713932883,,"VD data/main.db"
 :Vd
 |2,0,1713932879,,"Vd"
 :Jprevious
@@ -390,8 +430,6 @@ $
 |2,0,1713846969,,"Join"
 : 
 |2,0,1713846691,," "
-:e dbutils.py
-|2,0,1713846513,,"e dbutils.py"
 :V
 |2,0,1713802925,,"V"
 :e migrations/240424_2151_portionurls-user_id.py
@@ -402,8 +440,6 @@ $
 |2,0,1713802829,,"VD data/po"
 :MRU 316:chat.py
 |2,0,1713795401,,"MRU 316:chat.py"
-:e create-databases.py
-|2,0,1713795367,,"e create-databases.py"
 :e test-memory.py
 |2,0,1713790858,,"e test-memory.py"
 :Isolate silent
@@ -512,8 +548,6 @@ $
 |2,0,1713772544,,"MRU 1:.bashrc"
 :e ~/.bashrc
 |2,0,1713772512,,"e ~/.bashrc"
-:e *.
-|2,0,1713772350,,"e *."
 :REname
 |2,0,1713769444,,"REname"
 :Rename python-direnv.bash
@@ -534,8 +568,6 @@ $
 |2,0,1713768728,,"e cronlogger.sh"
 :e cron-run.bash
 |2,0,1713768720,,"e cron-run.bash"
-:!
-|2,0,1713768715,,"!"
 :e simple-source.bash
 |2,0,1713768711,,"e simple-source.bash"
 :e backup.crontab
@@ -726,8 +758,6 @@ $
 |2,0,1713596164,,"VD %"
 :VD __pycache__/
 |2,0,1713596162,,"VD __pycache__/"
-:MRU hat
-|2,0,1713596144,,"MRU hat"
 :MRU 3:main.sql
 |2,0,1713596143,,"MRU 3:main.sql"
 :SQLSPlit
@@ -866,8 +896,6 @@ $
 |2,0,1713515993,,"b ~/.vim/plugin/sqljoin.vim"
 :'<,'>s/\s*\zs\s{2,}
 |2,0,1713515991,,"'<,'>s/\\s*\\zs\\s{2,}"
-:set wrap
-|2,0,1713515665,,"set wrap"
 :SQLJoinCreateTableStatement
 |2,0,1713515564,,"SQLJoinCreateTableStatement"
 :g/
@@ -966,8 +994,6 @@ $
 |2,0,1713436725,,"VD "
 :let 
 |2,0,1713436627,,"let "
-:ter
-|2,0,1713436561,,"ter"
 :grep -g '*.vim' -g 'vimrc' Plug
 |2,0,1713436455,,"grep -g '*.vim' -g 'vimrc' Plug"
 :VD data
@@ -1784,8 +1810,6 @@ $
 |2,0,1710796008,,"e schemas/pflix.db"
 :Rename scrape_pflix.py
 |2,0,1710795994,,"Rename scrape_pflix.py"
-:Rename
-|2,0,1710795989,,"Rename"
 :RENAME
 |2,0,1710795987,,"RENAME"
 :RENAME scrape_pflix.py
@@ -3532,8 +3556,6 @@ $
 |2,0,1692806556,,"find uti"
 :e ~/Twitch/coffee-vps/code/waivek.js
 |2,0,1692797637,,"e ~/Twitch/coffee-vps/code/waivek.js"
-:414
-|2,0,1692796437,,"414"
 :verbose set path
 |2,0,1692796433,,"verbose set path"
 :find aliases.h
@@ -4602,8 +4624,6 @@ $
 |2,0,1691113681,,"e json/test.json"
 :v/actual
 |2,0,1691110042,,"v/actual"
-:e con
-|2,0,1691110024,,"e con"
 :b ytjs.js
 |2,0,1691107808,,"b ytjs.js"
 :b json/ytjs_all_video_ids.json
@@ -5574,6 +5594,30 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/url_for
+|2,1,1714060826,47,"url_for"
+?/\.download
+|2,1,1714060649,47,"\\.download"
+?/status
+|2,1,1714060551,47,"status"
+?/exis
+|2,1,1714055100,47,"exis"
+?/\(def\|class\)\s\+\w*download
+|2,1,1714054783,47,"\\(def\\|class\\)\\s\\+\\w*download"
+?/\(def\|class\)\s\+\w*downl
+|2,1,1714054772,47,"\\(def\\|class\\)\\s\\+\\w*downl"
+?/== 1
+|2,1,1714054048,47,"== 1"
+?/ic(
+|2,1,1714053799,47,"ic("
+?/main\.sql
+|2,1,1714047354,47,"main\\.sql"
+?/portionurl
+|2,1,1714046857,47,"portionurl"
+?/duration = 
+|2,1,1714042140,47,"duration = "
+?/update
+|2,1,1714042050,47,"update"
 ? @$
 |2,1,1714036880,,"@$"
 ?/sqlfluff
@@ -5632,8 +5676,6 @@ $
 |2,1,1714026472,,"CREATE TABLE"
 ?/ale_
 |2,1,1714026372,47,"ale_"
-?/portionurl
-|2,1,1714025716,47,"portionurl"
 ?/poirtio
 |2,1,1714025714,47,"poirtio"
 ?/\(def\|class\)\s\+\w*portionurl
@@ -5666,8 +5708,6 @@ $
 |2,1,1713957535,47,"filename"
 ?/makedir
 |2,1,1713956285,47,"makedir"
-?/\(def\|class\)\s\+\w*download
-|2,1,1713956045,47,"\\(def\\|class\\)\\s\\+\\w*download"
 ?/Portion
 |2,1,1713951834,47,"Portion"
 ?/\<b:
@@ -6118,8 +6158,6 @@ $
 |2,1,1712009323,47,"pov"
 ?/\(def\|class\)\s\+\w*portion
 |2,1,1712008121,47,"\\(def\\|class\\)\\s\\+\\w*portion"
-?/url_for
-|2,1,1712007884,47,"url_for"
 ?/request\.args
 |2,1,1712004297,47,"request\\.args"
 ?/pageCount
@@ -6676,8 +6714,6 @@ $
 |2,1,1694032266,47,"<input"
 ?/Connaught Place
 |2,1,1693667651,47,"Connaught Place"
-?/status
-|2,1,1693666970,47,"status"
 ?/MUNCH50
 |2,1,1693666898,47,"MUNCH50"
 ?/selected
@@ -6940,8 +6976,6 @@ $
 |2,1,1692382669,47,"kwargs"
 ?/matches
 |2,1,1692380039,47,"matches"
-?/ic(
-|2,1,1692375849,47,"ic("
 ?/arg_string
 |2,1,1692362776,47,"arg_string"
 ?/argspec
@@ -7861,81 +7895,52 @@ $
 
 # Registers:
 "0	CHAR	0
-	,
-|3,0,0,0,1,0,1714036881,","
+	yt-dlp https://www.twitch.tv/videos/2120649324 -o /home/vivek/hateoas/static/downloads/2.mp4
+	 --download-sections "*08:54:17-08:54:47" --force-keyframes-at-cuts
+|3,0,0,0,2,0,1714061066,"yt-dlp https://www.twitch.tv/videos/2120649324 -o /home/vivek/hateoas/static/downloads/2.mp4"," --download-sections \"*08:54:17-08:54:47\" --force-keyframes-at-cuts"
 "1	LINE	0
-	            \ 'sql' : [ 'sqlfluff' ],
-|3,0,1,1,1,0,1714036830,"            \\ 'sql' : [ 'sqlfluff' ],"
+	                        {% if portionurl.download_status() == 'downloading' %}
+|3,0,1,1,1,0,1714060706,"                        {% if portionurl.download_status() == 'downloading' %}"
 "2	LINE	0
-	        call ale#linter#Define('sql', {
-	        \   'name': 'sqlfluff_refined',
-	        \   'executable': function('ale_linters#sql#sqlfluff#Executable'),
-	        \   'command': {buffer -> ale#semver#RunWithVersionCheck(
-	        \       buffer,
-	        \       ale_linters#sql#sqlfluff#Executable(buffer),
-	        \       '%e --version',
-	        \       function('ale_linters#sql#sqlfluff#Command'),
-	        \   )},
-	        \   'callback': {buffer, lines -> ale#semver#RunWithVersionCheck(
-	        \       buffer,
-	        \       ale_linters#sql#sqlfluff#Executable(buffer),
-	        \       '%e --version',
-	        \       {buffer, version -> ale_linters#sql#sqlfluff#Handle(
-	        \           buffer,
-	        \           l:version,
-	        \           lines)},
-	        \   )},
-	        \})
-|3,0,2,1,19,0,1714036823,"        call ale#linter#Define('sql', {","        \\   'name': 'sqlfluff_refined',","        \\   'executable': function('ale_linters#sql#sqlfluff#Executable'),","        \\   'command': {buffer -> ale#semver#RunWithVersionCheck(","        \\       buffer,","        \\       ale_linters#sql#sqlfluff#Executable(buffer),","        \\       '%e --version',","        \\       function('ale_linters#sql#sqlfluff#Command'),",>18
-|<"        \\   )},","        \\   'callback': {buffer, lines -> ale#semver#RunWithVersionCheck(","        \\       buffer,","        \\       ale_linters#sql#sqlfluff#Executable(buffer),","        \\       '%e --version',","        \\       {buffer, version -> ale_linters#sql#sqlfluff#Handle(","        \\           buffer,","        \\           l:version,","        \\           lines)},","        \\   )},","        \\})"
+	                        <form action="{{ url_for('set_download_status', portionurl_id=portionurl.id) }}" method="POST">
+	                            <button type="submit" name="status" value="paused">Pause</button>
+|3,0,2,1,2,0,1714060705,"                        <form action=\"{{ url_for('set_download_status', portionurl_id=portionurl.id) }}\" method=\"POST\">","                            <button type=\"submit\" name=\"status\" value=\"paused\">Pause</button>"
 "3	LINE	0
-	        \   'executable': function('ale_linters#sql#sqlfluff#Executable'),
-	        \   'command': function('SQLFluffCommand'),
-	        \   'callback': {buffer, lines -> ale#semver#RunWithVersionCheck(
-	        \       buffer,
-	        \       ale_linters#sql#sqlfluff#Executable(buffer),
-	        \       '%e --version',
-	        \       {buffer, version -> ale_linters#sql#sqlfluff#Handle(
-	        \           buffer,
-	        \           l:version,
-	        \           lines)},
-	        \   )},
-|3,0,3,1,11,0,1714036755,"        \\   'executable': function('ale_linters#sql#sqlfluff#Executable'),","        \\   'command': function('SQLFluffCommand'),","        \\   'callback': {buffer, lines -> ale#semver#RunWithVersionCheck(","        \\       buffer,","        \\       ale_linters#sql#sqlfluff#Executable(buffer),","        \\       '%e --version',","        \\       {buffer, version -> ale_linters#sql#sqlfluff#Handle(","        \\           buffer,",>33
-|<"        \\           l:version,","        \\           lines)},","        \\   )},"
+	                        <div>
+	                            <form action="{{ url_for('set_download_status', portionurl_id=portionurl.id) }}" method="POST">
+	                                <select name="status">
+|3,0,3,1,3,0,1714060672,"                        <div>","                            <form action=\"{{ url_for('set_download_status', portionurl_id=portionurl.id) }}\" method=\"POST\">","                                <select name=\"status\">"
 "4	LINE	0
-	        \   '
-|3,0,4,1,1,0,1714036604,"        \\   '"
+	def set_downlo
+|3,0,4,1,1,0,1714060535,"def set_downlo"
 "5	LINE	0
-	
-|3,0,5,1,1,0,1714035929,""
+	        ic(path)
+	        ic(os.path.exists(path))
+|3,0,5,1,2,0,1714055127,"        ic(path)","        ic(os.path.exists(path))"
 "6	LINE	0
-	    let l:cmd = 
-	
-|3,0,6,1,2,0,1714035856,"    let l:cmd = ",""
+	        status = cursor.fetchone()
+|3,0,6,1,1,0,1714054752,"        status = cursor.fetchone()"
 "7	LINE	0
-	    let l:cmd .=
-	    \   ' --format json '
-	    \   . ' %t'
-	
-|3,0,7,1,4,0,1714035850,"    let l:cmd .=","    \\   ' --format json '","    \\   . ' %t'",""
+	    assert len(pending_portionurl_ids) > 0, "No pending downloads"
+|3,0,7,1,1,0,1714053966,"    assert len(pending_portionurl_ids) > 0, \"No pending downloads\""
 "8	LINE	0
+	lock_file = "/tmp/db2dl.py.lock"
+	if os.path.exists(lock_file):
+	    print("Lock file exists, exiting")
+	    sys.exit(1)
 	
-|3,0,8,1,1,0,1714035818,""
+	with open(lock_file, "w") as f:
+	    f.write(str(os.getpid()))
+|3,0,8,1,7,0,1714053841,"lock_file = \"/tmp/db2dl.py.lock\"","if os.path.exists(lock_file):","    print(\"Lock file exists, exiting\")","    sys.exit(1)","","with open(lock_file, \"w\") as f:","    f.write(str(os.getpid()))"
 "9	LINE	0
-	    let l:config_file = ale#path#FindNearestFile(a:buffer, '.sqlfluff')
-	
-	    if !empty(l:config_file)
-	        let l:cmd .= ' --config ' . ale#Escape(l:config_file)
-	    else
-	        let l:cmd .= ' --dialect ansi'
-	    endif
-|3,0,9,1,7,0,1714035817,"    let l:config_file = ale#path#FindNearestFile(a:buffer, '.sqlfluff')","","    if !empty(l:config_file)","        let l:cmd .= ' --config ' . ale#Escape(l:config_file)","    else","        let l:cmd .= ' --dialect ansi'","    endif"
+	    connection = Connection("data/main.db")
+|3,0,9,1,1,0,1714053832,"    connection = Connection(\"data/main.db\")"
 "a	CHAR	0
 	Tabularize /,/l1c1l1c1l1c1l1
 |3,0,10,0,1,0,1713848082,"Tabularize /,/l1c1l1c1l1c1l1"
 "j	CHAR	0
-	jjjj
-|3,0,19,0,1,0,1713969045,"jjjj"
+	k:q€ýa
+|3,0,19,0,1,0,1714046792,"k:q€ýa"
 "k	CHAR	0
 	jk
 |3,0,20,0,1,0,1713932896,"jk"
@@ -7974,282 +7979,557 @@ $
 |<"                <form method=\"POST\" action=\"/resume_download\">","                    <input type=\"hidden\" name=\"id\" value=\"{{ id }}\">","                    <input type=\"submit\" value=\"Resume\">","                </form>","                {% endif %}","                {% if status == 'downloading' %}","                <form method=\"POST\" action=\"/pause_download\">","                    <input type=\"hidden\" name=\"id\" value=\"{{ id }}\">",>61
 |<"                    <input type=\"submit\" value=\"Pause\">","                </form>","                {% endif %}","","            </li>","        {% endfor %}","    </ul>\"\"\", downloads=downloads)"
 ""-	CHAR	0
-	,
-|3,1,36,0,1,0,1714037188,","
+	 
+|3,1,36,0,1,0,1714061075," "
 
 # File marks:
-'0  1  0  ~/hateoas/download_portionurl.py
-|4,48,1,0,1714037541,"~/hateoas/download_portionurl.py"
-'1  1  0  ~/hateoas/test-lastrowid.py
-|4,49,1,0,1714037508,"~/hateoas/test-lastrowid.py"
-'2  1  0  ~/hateoas/test-lastrowid.py
-|4,50,1,0,1714037508,"~/hateoas/test-lastrowid.py"
-'3  4  16  ~/hateoas/.gitignore
-|4,51,4,16,1714037496,"~/hateoas/.gitignore"
-'4  4  16  ~/hateoas/.gitignore
-|4,52,4,16,1714037496,"~/hateoas/.gitignore"
-'5  4  16  ~/hateoas/.gitignore
-|4,53,4,16,1714037496,"~/hateoas/.gitignore"
-'6  4  16  ~/hateoas/.gitignore
-|4,54,4,16,1714037496,"~/hateoas/.gitignore"
-'7  25  25  ~/hateoas/main.sql
-|4,55,25,25,1714037225,"~/hateoas/main.sql"
-'8  25  25  ~/hateoas/main.sql
-|4,56,25,25,1714037225,"~/hateoas/main.sql"
-'9  25  25  ~/hateoas/main.sql
-|4,57,25,25,1714037225,"~/hateoas/main.sql"
+'0  30  0  ~/hateoas/db2dl.py
+|4,48,30,0,1714054310,"~/hateoas/db2dl.py"
+'1  30  0  ~/hateoas/db2dl.py
+|4,49,30,0,1714054310,"~/hateoas/db2dl.py"
+'2  421  82  ~/hateoas/hateoas-api.py
+|4,50,421,82,1714053773,"~/hateoas/hateoas-api.py"
+'3  421  82  ~/hateoas/hateoas-api.py
+|4,51,421,82,1714053773,"~/hateoas/hateoas-api.py"
+'4  414  82  ~/hateoas/hateoas-api.py
+|4,52,414,82,1714053773,"~/hateoas/hateoas-api.py"
+'5  414  82  ~/hateoas/hateoas-api.py
+|4,53,414,82,1714053773,"~/hateoas/hateoas-api.py"
+'6  35  0  ~/hateoas/create-databases.py
+|4,54,35,0,1714047365,"~/hateoas/create-databases.py"
+'7  35  0  ~/hateoas/create-databases.py
+|4,55,35,0,1714047365,"~/hateoas/create-databases.py"
+'8  35  0  ~/hateoas/create-databases.py
+|4,56,35,0,1714047365,"~/hateoas/create-databases.py"
+'9  35  0  ~/hateoas/create-databases.py
+|4,57,35,0,1714047365,"~/hateoas/create-databases.py"
 
 # Jumplist (newest first):
+-'  1  0  ~/hateoas/db2dl.py
+|4,39,1,0,1714061069,"~/hateoas/db2dl.py"
+-'  1  0  ~/hateoas/download.py
+|4,39,1,0,1714060928,"~/hateoas/download.py"
+-'  38  8  ~/hateoas/Types.py
+|4,39,38,8,1714060897,"~/hateoas/Types.py"
+-'  679  28  ~/hateoas/hateoas-api.py
+|4,39,679,28,1714060890,"~/hateoas/hateoas-api.py"
+-'  144  4  ~/hateoas/hateoas-api.py
+|4,39,144,4,1714060873,"~/hateoas/hateoas-api.py"
+-'  147  66  ~/hateoas/hateoas-api.py
+|4,39,147,66,1714060853,"~/hateoas/hateoas-api.py"
+-'  678  50  ~/hateoas/hateoas-api.py
+|4,39,678,50,1714060832,"~/hateoas/hateoas-api.py"
+-'  647  29  ~/hateoas/hateoas-api.py
+|4,39,647,29,1714060828,"~/hateoas/hateoas-api.py"
+-'  676  29  ~/hateoas/hateoas-api.py
+|4,39,676,29,1714060826,"~/hateoas/hateoas-api.py"
+-'  41  25  ~/hateoas/Types.py
+|4,39,41,25,1714060762,"~/hateoas/Types.py"
+-'  677  41  ~/hateoas/hateoas-api.py
+|4,39,677,41,1714060744,"~/hateoas/hateoas-api.py"
+-'  682  92  ~/hateoas/hateoas-api.py
+|4,39,682,92,1714060702,"~/hateoas/hateoas-api.py"
+-'  146  19  ~/hateoas/hateoas-api.py
+|4,39,146,19,1714060649,"~/hateoas/hateoas-api.py"
+-'  143  55  ~/hateoas/hateoas-api.py
+|4,39,143,55,1714060628,"~/hateoas/hateoas-api.py"
+-'  142  0  ~/hateoas/hateoas-api.py
+|4,39,142,0,1714060577,"~/hateoas/hateoas-api.py"
+-'  642  24  ~/hateoas/hateoas-api.py
+|4,39,642,24,1714060514,"~/hateoas/hateoas-api.py"
+-'  40  0  ~/hateoas/db2dl.py
+|4,39,40,0,1714060511,"~/hateoas/db2dl.py"
+-'  13  0  ~/hateoas/db2dl.py
+|4,39,13,0,1714055137,"~/hateoas/db2dl.py"
+-'  27  4  ~/hateoas/db2dl.py
+|4,39,27,4,1714055113,"~/hateoas/db2dl.py"
+-'  12  4  ~/hateoas/db2dl.py
+|4,39,12,4,1714055111,"~/hateoas/db2dl.py"
+-'  17  31  ~/hateoas/db2dl.py
+|4,39,17,31,1714055086,"~/hateoas/db2dl.py"
+-'  14  0  ~/hateoas/db2dl.py
+|4,39,14,0,1714055068,"~/hateoas/db2dl.py"
+-'  50  8  ~/hateoas/Types.py
+|4,39,50,8,1714054865,"~/hateoas/Types.py"
+-'  1  0  ~/hateoas/hateoas-api.py
+|4,39,1,0,1714054831,"~/hateoas/hateoas-api.py"
+-'  673  66  ~/hateoas/hateoas-api.py
+|4,39,673,66,1714054830,"~/hateoas/hateoas-api.py"
+-'  675  94  ~/hateoas/hateoas-api.py
+|4,39,675,94,1714054829,"~/hateoas/hateoas-api.py"
+-'  626  0  ~/hateoas/hateoas-api.py
+|4,39,626,0,1714054787,"~/hateoas/hateoas-api.py"
+-'  50  0  ~/hateoas/hateoas-api.py
+|4,39,50,0,1714054785,"~/hateoas/hateoas-api.py"
+-'  41  0  ~/hateoas/hateoas-api.py
+|4,39,41,0,1714054785,"~/hateoas/hateoas-api.py"
+-'  34  0  ~/hateoas/hateoas-api.py
+|4,39,34,0,1714054784,"~/hateoas/hateoas-api.py"
+-'  21  0  ~/hateoas/hateoas-api.py
+|4,39,21,0,1714054784,"~/hateoas/hateoas-api.py"
+-'  1  17  ~/hateoas/main.sql
+|4,39,1,17,1714054780,"~/hateoas/main.sql"
+-'  96  8  ~/hateoas/Types.py
+|4,39,96,8,1714054773,"~/hateoas/Types.py"
+-'  35  20  ~/hateoas/Types.py
+|4,39,35,20,1714054770,"~/hateoas/Types.py"
+-'  32  71  ~/hateoas/Types.py
+|4,39,32,71,1714054740,"~/hateoas/Types.py"
+-'  31  7  ~/hateoas/Types.py
+|4,39,31,7,1714054715,"~/hateoas/Types.py"
+-'  30  0  ~/hateoas/db2dl.py
+|4,39,30,0,1714054310,"~/hateoas/db2dl.py"
+-'  30  0  ~/hateoas/db2dl.py
+|4,39,30,0,1714054310,"~/hateoas/db2dl.py"
+-'  28  0  ~/hateoas/db2dl.py
+|4,39,28,0,1714054079,"~/hateoas/db2dl.py"
+-'  28  0  ~/hateoas/db2dl.py
+|4,39,28,0,1714054079,"~/hateoas/db2dl.py"
+-'  28  27  ~/hateoas/download_portionurl.py
+|4,39,28,27,1714054078,"~/hateoas/download_portionurl.py"
+-'  28  27  ~/hateoas/download_portionurl.py
+|4,39,28,27,1714054078,"~/hateoas/download_portionurl.py"
 -'  1  0  ~/hateoas/download_portionurl.py
-|4,39,1,0,1714037541,"~/hateoas/download_portionurl.py"
--'  61  0  ~/hateoas/download_portionurl.py
-|4,39,61,0,1714037540,"~/hateoas/download_portionurl.py"
--'  1  0  ~/hateoas/test-lastrowid.py
-|4,39,1,0,1714037508,"~/hateoas/test-lastrowid.py"
--'  1  0  ~/hateoas/test-lastrowid.py
-|4,39,1,0,1714037508,"~/hateoas/test-lastrowid.py"
--'  4  16  ~/hateoas/.gitignore
-|4,39,4,16,1714037496,"~/hateoas/.gitignore"
--'  4  16  ~/hateoas/.gitignore
-|4,39,4,16,1714037496,"~/hateoas/.gitignore"
--'  4  16  ~/hateoas/.gitignore
-|4,39,4,16,1714037496,"~/hateoas/.gitignore"
--'  1  0  ~/hateoas/.gitignore
-|4,39,1,0,1714037492,"~/hateoas/.gitignore"
--'  1  0  ~/hateoas/.gitignore
-|4,39,1,0,1714037492,"~/hateoas/.gitignore"
--'  1  0  ~/hateoas/.gitignore
-|4,39,1,0,1714037492,"~/hateoas/.gitignore"
--'  25  25  ~/hateoas/main.sql
-|4,39,25,25,1714037225,"~/hateoas/main.sql"
--'  25  25  ~/hateoas/main.sql
-|4,39,25,25,1714037225,"~/hateoas/main.sql"
--'  25  25  ~/hateoas/main.sql
-|4,39,25,25,1714037225,"~/hateoas/main.sql"
--'  25  25  ~/hateoas/main.sql
-|4,39,25,25,1714037225,"~/hateoas/main.sql"
--'  25  25  ~/hateoas/main.sql
-|4,39,25,25,1714037225,"~/hateoas/main.sql"
--'  24  24  ~/hateoas/main.sql
-|4,39,24,24,1714037190,"~/hateoas/main.sql"
--'  24  24  ~/hateoas/main.sql
-|4,39,24,24,1714037190,"~/hateoas/main.sql"
--'  24  24  ~/hateoas/main.sql
-|4,39,24,24,1714037190,"~/hateoas/main.sql"
--'  24  24  ~/hateoas/main.sql
-|4,39,24,24,1714037190,"~/hateoas/main.sql"
--'  24  24  ~/hateoas/main.sql
-|4,39,24,24,1714037190,"~/hateoas/main.sql"
--'  16  4  ~/hateoas/main.sql
-|4,39,16,4,1714037179,"~/hateoas/main.sql"
--'  16  4  ~/hateoas/main.sql
-|4,39,16,4,1714037179,"~/hateoas/main.sql"
--'  16  4  ~/hateoas/main.sql
-|4,39,16,4,1714037179,"~/hateoas/main.sql"
--'  16  4  ~/hateoas/main.sql
-|4,39,16,4,1714037179,"~/hateoas/main.sql"
--'  16  4  ~/hateoas/main.sql
-|4,39,16,4,1714037179,"~/hateoas/main.sql"
--'  167  0  ~/.vim/ide.vim
-|4,39,167,0,1714037178,"~/.vim/ide.vim"
--'  167  0  ~/.vim/ide.vim
-|4,39,167,0,1714037178,"~/.vim/ide.vim"
--'  167  0  ~/.vim/ide.vim
-|4,39,167,0,1714037178,"~/.vim/ide.vim"
--'  167  0  ~/.vim/ide.vim
-|4,39,167,0,1714037178,"~/.vim/ide.vim"
--'  167  0  ~/.vim/ide.vim
-|4,39,167,0,1714037178,"~/.vim/ide.vim"
--'  168  0  ~/.vim/ide.vim
-|4,39,168,0,1714037169,"~/.vim/ide.vim"
--'  168  0  ~/.vim/ide.vim
-|4,39,168,0,1714037169,"~/.vim/ide.vim"
--'  168  0  ~/.vim/ide.vim
-|4,39,168,0,1714037169,"~/.vim/ide.vim"
--'  168  0  ~/.vim/ide.vim
-|4,39,168,0,1714037169,"~/.vim/ide.vim"
--'  168  0  ~/.vim/ide.vim
-|4,39,168,0,1714037169,"~/.vim/ide.vim"
--'  141  0  ~/.vim/ide.vim
-|4,39,141,0,1714037168,"~/.vim/ide.vim"
--'  141  0  ~/.vim/ide.vim
-|4,39,141,0,1714037168,"~/.vim/ide.vim"
--'  141  0  ~/.vim/ide.vim
-|4,39,141,0,1714037168,"~/.vim/ide.vim"
--'  141  0  ~/.vim/ide.vim
-|4,39,141,0,1714037168,"~/.vim/ide.vim"
--'  141  0  ~/.vim/ide.vim
-|4,39,141,0,1714037168,"~/.vim/ide.vim"
--'  133  10  ~/.vim/ide.vim
-|4,39,133,10,1714037159,"~/.vim/ide.vim"
--'  133  10  ~/.vim/ide.vim
-|4,39,133,10,1714037159,"~/.vim/ide.vim"
--'  133  10  ~/.vim/ide.vim
-|4,39,133,10,1714037159,"~/.vim/ide.vim"
--'  133  10  ~/.vim/ide.vim
-|4,39,133,10,1714037159,"~/.vim/ide.vim"
--'  133  10  ~/.vim/ide.vim
-|4,39,133,10,1714037159,"~/.vim/ide.vim"
--'  134  20  ~/.vim/ide.vim
-|4,39,134,20,1714037158,"~/.vim/ide.vim"
--'  134  20  ~/.vim/ide.vim
-|4,39,134,20,1714037158,"~/.vim/ide.vim"
--'  134  20  ~/.vim/ide.vim
-|4,39,134,20,1714037158,"~/.vim/ide.vim"
--'  134  20  ~/.vim/ide.vim
-|4,39,134,20,1714037158,"~/.vim/ide.vim"
--'  134  20  ~/.vim/ide.vim
-|4,39,134,20,1714037158,"~/.vim/ide.vim"
--'  110  0  ~/.vim/ide.vim
-|4,39,110,0,1714037156,"~/.vim/ide.vim"
--'  110  0  ~/.vim/ide.vim
-|4,39,110,0,1714037156,"~/.vim/ide.vim"
--'  110  0  ~/.vim/ide.vim
-|4,39,110,0,1714037156,"~/.vim/ide.vim"
--'  110  0  ~/.vim/ide.vim
-|4,39,110,0,1714037156,"~/.vim/ide.vim"
--'  110  0  ~/.vim/ide.vim
-|4,39,110,0,1714037156,"~/.vim/ide.vim"
--'  111  0  ~/.vim/ide.vim
-|4,39,111,0,1714037154,"~/.vim/ide.vim"
--'  111  0  ~/.vim/ide.vim
-|4,39,111,0,1714037154,"~/.vim/ide.vim"
--'  111  0  ~/.vim/ide.vim
-|4,39,111,0,1714037154,"~/.vim/ide.vim"
--'  111  0  ~/.vim/ide.vim
-|4,39,111,0,1714037154,"~/.vim/ide.vim"
--'  111  0  ~/.vim/ide.vim
-|4,39,111,0,1714037154,"~/.vim/ide.vim"
--'  147  33  ~/.vim/ide.vim
-|4,39,147,33,1714037146,"~/.vim/ide.vim"
--'  147  33  ~/.vim/ide.vim
-|4,39,147,33,1714037146,"~/.vim/ide.vim"
--'  147  33  ~/.vim/ide.vim
-|4,39,147,33,1714037146,"~/.vim/ide.vim"
--'  147  33  ~/.vim/ide.vim
-|4,39,147,33,1714037146,"~/.vim/ide.vim"
--'  147  33  ~/.vim/ide.vim
-|4,39,147,33,1714037146,"~/.vim/ide.vim"
--'  132  8  ~/.vim/ide.vim
-|4,39,132,8,1714037145,"~/.vim/ide.vim"
--'  132  8  ~/.vim/ide.vim
-|4,39,132,8,1714037145,"~/.vim/ide.vim"
--'  132  8  ~/.vim/ide.vim
-|4,39,132,8,1714037145,"~/.vim/ide.vim"
--'  132  8  ~/.vim/ide.vim
-|4,39,132,8,1714037145,"~/.vim/ide.vim"
--'  132  8  ~/.vim/ide.vim
-|4,39,132,8,1714037145,"~/.vim/ide.vim"
--'  153  12  ~/.vim/ide.vim
-|4,39,153,12,1714037138,"~/.vim/ide.vim"
--'  153  12  ~/.vim/ide.vim
-|4,39,153,12,1714037138,"~/.vim/ide.vim"
--'  153  12  ~/.vim/ide.vim
-|4,39,153,12,1714037138,"~/.vim/ide.vim"
--'  153  12  ~/.vim/ide.vim
-|4,39,153,12,1714037138,"~/.vim/ide.vim"
--'  153  12  ~/.vim/ide.vim
-|4,39,153,12,1714037138,"~/.vim/ide.vim"
--'  152  41  ~/.vim/ide.vim
-|4,39,152,41,1714037137,"~/.vim/ide.vim"
--'  152  41  ~/.vim/ide.vim
-|4,39,152,41,1714037137,"~/.vim/ide.vim"
--'  152  41  ~/.vim/ide.vim
-|4,39,152,41,1714037137,"~/.vim/ide.vim"
--'  152  41  ~/.vim/ide.vim
-|4,39,152,41,1714037137,"~/.vim/ide.vim"
--'  152  41  ~/.vim/ide.vim
-|4,39,152,41,1714037137,"~/.vim/ide.vim"
--'  13  26  ~/hateoas/main.sql
-|4,39,13,26,1714037105,"~/hateoas/main.sql"
--'  13  26  ~/hateoas/main.sql
-|4,39,13,26,1714037105,"~/hateoas/main.sql"
--'  13  26  ~/hateoas/main.sql
-|4,39,13,26,1714037105,"~/hateoas/main.sql"
--'  13  26  ~/hateoas/main.sql
-|4,39,13,26,1714037105,"~/hateoas/main.sql"
--'  13  26  ~/hateoas/main.sql
-|4,39,13,26,1714037105,"~/hateoas/main.sql"
+|4,39,1,0,1714054048,"~/hateoas/download_portionurl.py"
+-'  1  0  ~/hateoas/download_portionurl.py
+|4,39,1,0,1714054048,"~/hateoas/download_portionurl.py"
+-'  35  4  ~/hateoas/db2dl.py
+|4,39,35,4,1714053966,"~/hateoas/db2dl.py"
+-'  35  4  ~/hateoas/db2dl.py
+|4,39,35,4,1714053966,"~/hateoas/db2dl.py"
+-'  59  8  ~/hateoas/db2dl.py
+|4,39,59,8,1714053919,"~/hateoas/db2dl.py"
+-'  59  8  ~/hateoas/db2dl.py
+|4,39,59,8,1714053919,"~/hateoas/db2dl.py"
+-'  1  0  ~/hateoas/db2dl.py
+|4,39,1,0,1714053905,"~/hateoas/db2dl.py"
+-'  61  21  ~/hateoas/db2dl.py
+|4,39,61,21,1714053897,"~/hateoas/db2dl.py"
+-'  61  21  ~/hateoas/db2dl.py
+|4,39,61,21,1714053897,"~/hateoas/db2dl.py"
+-'  60  3  ~/hateoas/db2dl.py
+|4,39,60,3,1714053893,"~/hateoas/db2dl.py"
+-'  62  3  ~/hateoas/db2dl.py
+|4,39,62,3,1714053893,"~/hateoas/db2dl.py"
+-'  60  3  ~/hateoas/db2dl.py
+|4,39,60,3,1714053893,"~/hateoas/db2dl.py"
+-'  62  3  ~/hateoas/db2dl.py
+|4,39,62,3,1714053893,"~/hateoas/db2dl.py"
+-'  29  0  ~/hateoas/db2dl.py
+|4,39,29,0,1714053884,"~/hateoas/db2dl.py"
+-'  29  0  ~/hateoas/db2dl.py
+|4,39,29,0,1714053884,"~/hateoas/db2dl.py"
+-'  46  0  ~/hateoas/db2dl.py
+|4,39,46,0,1714053873,"~/hateoas/db2dl.py"
+-'  46  0  ~/hateoas/db2dl.py
+|4,39,46,0,1714053873,"~/hateoas/db2dl.py"
+-'  23  0  ~/hateoas/db2dl.py
+|4,39,23,0,1714053841,"~/hateoas/db2dl.py"
+-'  23  0  ~/hateoas/db2dl.py
+|4,39,23,0,1714053841,"~/hateoas/db2dl.py"
+-'  25  29  ~/hateoas/db2dl.py
+|4,39,25,29,1714053816,"~/hateoas/db2dl.py"
+-'  18  0  ~/hateoas/db2dl.py
+|4,39,18,0,1714053798,"~/hateoas/db2dl.py"
+-'  414  82  ~/hateoas/hateoas-api.py
+|4,39,414,82,1714053773,"~/hateoas/hateoas-api.py"
+-'  414  82  ~/hateoas/hateoas-api.py
+|4,39,414,82,1714053773,"~/hateoas/hateoas-api.py"
+-'  35  0  ~/hateoas/create-databases.py
+|4,39,35,0,1714047365,"~/hateoas/create-databases.py"
+-'  35  0  ~/hateoas/create-databases.py
+|4,39,35,0,1714047365,"~/hateoas/create-databases.py"
+-'  35  0  ~/hateoas/create-databases.py
+|4,39,35,0,1714047365,"~/hateoas/create-databases.py"
+-'  1  0  ~/hateoas/create-databases.py
+|4,39,1,0,1714047362,"~/hateoas/create-databases.py"
+-'  1  0  ~/hateoas/create-databases.py
+|4,39,1,0,1714047362,"~/hateoas/create-databases.py"
+-'  1  0  ~/hateoas/create-databases.py
+|4,39,1,0,1714047362,"~/hateoas/create-databases.py"
+-'  1  0  ~/hateoas/hateoas-api.py
+|4,39,1,0,1714047359,"~/hateoas/hateoas-api.py"
+-'  1  0  ~/hateoas/hateoas-api.py
+|4,39,1,0,1714047359,"~/hateoas/hateoas-api.py"
+-'  1  0  ~/hateoas/hateoas-api.py
+|4,39,1,0,1714047359,"~/hateoas/hateoas-api.py"
+-'  631  8  ~/hateoas/hateoas-api.py
+|4,39,631,8,1714047352,"~/hateoas/hateoas-api.py"
+-'  631  8  ~/hateoas/hateoas-api.py
+|4,39,631,8,1714047352,"~/hateoas/hateoas-api.py"
+-'  631  8  ~/hateoas/hateoas-api.py
+|4,39,631,8,1714047352,"~/hateoas/hateoas-api.py"
+-'  33  4  ~/hateoas/main.sql
+|4,39,33,4,1714047325,"~/hateoas/main.sql"
+-'  33  4  ~/hateoas/main.sql
+|4,39,33,4,1714047325,"~/hateoas/main.sql"
+-'  33  4  ~/hateoas/main.sql
+|4,39,33,4,1714047325,"~/hateoas/main.sql"
+-'  33  4  ~/hateoas/main.sql
+|4,39,33,4,1714047325,"~/hateoas/main.sql"
+-'  14  4  ~/hateoas/dbutils.py
+|4,39,14,4,1714047303,"~/hateoas/dbutils.py"
+-'  14  4  ~/hateoas/dbutils.py
+|4,39,14,4,1714047303,"~/hateoas/dbutils.py"
+-'  14  4  ~/hateoas/dbutils.py
+|4,39,14,4,1714047303,"~/hateoas/dbutils.py"
+-'  14  4  ~/hateoas/dbutils.py
+|4,39,14,4,1714047303,"~/hateoas/dbutils.py"
+-'  29  0  ~/hateoas/data/main.db
+|4,39,29,0,1714047259,"~/hateoas/data/main.db"
+-'  29  0  ~/hateoas/data/main.db
+|4,39,29,0,1714047259,"~/hateoas/data/main.db"
+-'  29  0  ~/hateoas/data/main.db
+|4,39,29,0,1714047259,"~/hateoas/data/main.db"
+-'  29  0  ~/hateoas/data/main.db
+|4,39,29,0,1714047259,"~/hateoas/data/main.db"
 -'  26  0  ~/hateoas/main.sql
-|4,39,26,0,1714037091,"~/hateoas/main.sql"
+|4,39,26,0,1714046892,"~/hateoas/main.sql"
 -'  26  0  ~/hateoas/main.sql
-|4,39,26,0,1714037091,"~/hateoas/main.sql"
+|4,39,26,0,1714046892,"~/hateoas/main.sql"
 -'  26  0  ~/hateoas/main.sql
-|4,39,26,0,1714037091,"~/hateoas/main.sql"
+|4,39,26,0,1714046892,"~/hateoas/main.sql"
 -'  26  0  ~/hateoas/main.sql
-|4,39,26,0,1714037091,"~/hateoas/main.sql"
--'  26  0  ~/hateoas/main.sql
-|4,39,26,0,1714037091,"~/hateoas/main.sql"
--'  1  0  ~/tooling/main.txt
-|4,39,1,0,1714037089,"~/tooling/main.txt"
--'  1  0  ~/tooling/main.txt
-|4,39,1,0,1714037089,"~/tooling/main.txt"
--'  1  0  ~/tooling/main.txt
-|4,39,1,0,1714037089,"~/tooling/main.txt"
--'  1  0  ~/tooling/main.txt
-|4,39,1,0,1714037089,"~/tooling/main.txt"
--'  1  0  ~/tooling/main.txt
-|4,39,1,0,1714037089,"~/tooling/main.txt"
--'  1  0  ~/tooling/typescript-goals.txt
-|4,39,1,0,1714037088,"~/tooling/typescript-goals.txt"
--'  1  0  ~/tooling/typescript-goals.txt
-|4,39,1,0,1714037088,"~/tooling/typescript-goals.txt"
--'  1  0  ~/tooling/typescript-goals.txt
-|4,39,1,0,1714037088,"~/tooling/typescript-goals.txt"
--'  1  0  ~/tooling/typescript-goals.txt
-|4,39,1,0,1714037088,"~/tooling/typescript-goals.txt"
--'  1  0  ~/tooling/typescript-goals.txt
-|4,39,1,0,1714037088,"~/tooling/typescript-goals.txt"
+|4,39,26,0,1714046892,"~/hateoas/main.sql"
+-'  20  44  ~/hateoas/data/main.db
+|4,39,20,44,1714046868,"~/hateoas/data/main.db"
+-'  20  44  ~/hateoas/data/main.db
+|4,39,20,44,1714046868,"~/hateoas/data/main.db"
+-'  20  44  ~/hateoas/data/main.db
+|4,39,20,44,1714046868,"~/hateoas/data/main.db"
+-'  20  44  ~/hateoas/data/main.db
+|4,39,20,44,1714046868,"~/hateoas/data/main.db"
+-'  14  494  ~/hateoas/data/main.db
+|4,39,14,494,1714046865,"~/hateoas/data/main.db"
 
 # Buffer list:
-%~/hateoas/download_portionurl.py	1	0
+%~/hateoas/db2dl.py	1	0
+%~/hateoas/hateoas-api.py	679	28
+%~/hateoas/Types.py	38	8
+%~/hateoas/main.sql	1	17
+%~/hateoas/download.py	1	0
 
 # History of marks within files (newest to oldest):
 
-> ~/hateoas/download_portionurl.py
-	*	1714037540	0
+> ~/hateoas/db2dl.py
+	*	1714061067	0
 	"	1	0
+	^	13	122
+	.	13	98
+	+	4	29
+	+	64	29
+	+	64	0
+	+	4	9
+	+	5	10
+	+	10	11
+	+	64	25
+	+	64	4
+	+	64	27
+	+	64	24
+	+	64	11
+	+	64	4
+	+	64	0
+	+	23	27
+	+	25	3
+	+	23	14
+	+	64	0
+	+	25	31
+	+	25	29
+	+	25	0
+	+	64	0
+	+	10	0
+	+	64	0
+	+	6	29
+	+	26	24
+	+	47	30
+	+	47	99
+	+	47	58
+	+	47	40
+	+	47	36
+	+	7	32
+	+	47	15
+	+	47	36
+	+	47	12
+	+	47	11
+	+	47	12
+	+	47	13
+	+	47	12
+	+	47	0
+	+	64	0
+	+	47	0
+	+	47	23
+	+	47	0
+	+	12	0
+	+	22	0
+	+	47	0
+	+	27	25
+	+	28	0
+	+	30	0
+	+	31	7
+	+	7	59
+	+	8	50
+	+	37	44
+	+	47	5
+	+	37	1
+	+	37	65
+	+	38	44
+	+	47	38
+	+	47	0
+	+	38	18
+	+	39	44
+	+	47	0
+	+	39	21
+	+	39	126
+	+	39	7
+	+	40	31
+	+	47	0
+	+	40	60
+	+	42	24
+	+	44	22
+	+	46	0
+	+	47	0
+	+	35	25
+	+	9	20
+	+	43	6
+	+	24	10
+	+	25	0
+	+	23	0
+	+	26	0
+	+	11	0
+	+	23	0
+	+	48	0
+	+	55	0
+	+	59	10
+	+	62	4
+	+	60	7
+	+	56	25
+	+	58	18
+	+	59	0
+	+	35	40
+	+	32	7
+	+	35	0
+	+	17	0
+	+	13	98
 
-> ~/hateoas/test-lastrowid.py
-	*	1714037505	0
+> ~/hateoas/download.py
+	*	1714060927	0
 	"	1	0
-	^	11	0
-	.	5	0
-	+	2	30
-	+	5	85
-	+	10	0
-	+	5	87
-	+	6	48
-	+	7	26
-	+	8	0
-	+	9	12
-	+	10	0
-	+	11	21
+	^	12	0
+	.	12	0
+	+	2	58
+	+	2	0
+	+	2	10
+	+	2	9
+	+	2	17
+	+	2	11
+	+	2	54
+	+	2	0
+	+	2	54
+	+	2	4
+	+	2	0
+	+	2	26
+	+	2	4
+	+	2	0
+	+	2	17
+	+	2	6
+	+	2	15
+	+	2	4
+	+	2	0
+	+	2	22
+	+	2	38
+	+	2	13
+	+	2	46
+	+	2	0
+	+	10	38
+	+	11	0
+	+	4	46
+	+	11	0
+	+	12	0
+	+	12	57
 	+	13	0
-	+	15	65
-	+	16	0
-	+	16	50
-	+	3	20
-	+	18	8
-	+	16	17
-	+	11	16
+	+	5	7
+	+	8	0
+	+	5	58
+	+	13	0
+	+	13	40
+	+	13	0
+	+	6	20
+	+	13	0
+	+	13	58
+	+	13	7
+	+	13	8
+	+	7	13
+	+	13	4
+	+	13	0
+	+	13	14
+	+	13	6
+	+	13	0
+	+	13	8
+	+	13	0
+	+	13	14
+	+	13	6
+	+	13	0
+	+	13	70
+	+	13	0
+	+	13	48
+	+	13	0
+	+	13	8
+	+	13	0
+	+	13	19
 	+	13	0
 	+	12	0
-	+	5	0
 
-> ~/hateoas/.gitignore
-	*	1714037496	0
-	"	4	16
-	^	4	17
-	.	4	16
-	+	1	7
-	+	2	8
-	+	3	3
-	+	4	16
+> ~/hateoas/Types.py
+	*	1714060893	0
+	"	38	8
+	^	41	26
+	.	38	44
+	+	15	20
+	+	13	0
+	+	15	23
+	+	16	8
+	+	15	0
+	+	21	0
+	+	14	0
+	+	22	21
+	+	42	8
+	+	23	8
+	+	23	35
+	+	24	36
+	+	25	102
+	+	26	41
+	+	27	15
+	+	23	0
+	+	27	38
+	+	27	15
+	+	27	41
+	+	27	35
+	+	27	83
+	+	26	0
+	+	25	66
+	+	26	23
+	+	27	117
+	+	27	19
+	+	28	84
+	+	29	25
+	+	31	30
+	+	32	103
+	+	33	31
+	+	34	23
+	+	35	8
+	+	37	26
+	+	38	44
+
+> ~/hateoas/hateoas-api.py
+	*	1714060889	0
+	"	679	28
+	^	679	78
+	.	679	77
+	+	696	0
+	+	675	91
+	+	45	0
+	+	46	20
+	+	67	0
+	+	657	0
+	+	657	14
+	+	657	39
+	+	657	0
+	+	675	106
+	+	703	0
+	+	265	54
+	+	266	112
+	+	267	79
+	+	268	70
+	+	269	12
+	+	266	111
+	+	20	0
+	+	11	46
+	+	13	0
+	+	11	5
+	+	13	0
+	+	12	0
+	+	20	0
+	+	14	0
+	+	41	0
+	+	40	0
+	+	41	0
+	+	67	0
+	+	683	0
+	+	706	111
+	+	683	116
+	+	685	27
+	+	686	108
+	+	687	0
+	+	694	83
+	+	695	0
+	+	694	77
+	+	695	0
+	+	694	88
+	+	686	0
+	+	16	0
+	+	34	58
+	+	36	37
+	+	35	38
+	+	37	4
+	+	38	13
+	+	39	4
+	+	706	124
+	+	683	26
+	+	691	30
+	+	692	0
+	+	691	30
+	+	692	31
+	+	683	0
+	+	684	0
+	+	692	0
+	+	690	0
+	+	689	47
+	+	418	0
+	+	424	0
+	+	423	0
+	+	422	4
+	+	423	0
+	+	417	49
+	+	417	36
+	+	417	0
+	+	416	86
+	+	140	0
+	+	137	16
+	+	139	0
+	+	137	8
+	+	139	42
+	+	138	0
+	+	31	0
+	+	415	98
+	+	421	82
+	+	676	59
+	+	149	0
+	+	144	21
+	+	143	2
+	+	144	37
+	+	145	4
+	+	143	14
+	+	148	28
+	+	143	37
+	+	682	33
+	+	682	54
+	+	682	0
+	+	677	47
+	+	678	24
+	+	679	101
+	+	680	31
+	+	681	24
+	+	682	24
+	+	682	0
+	+	678	103
+	+	144	31
+	+	147	66
+	+	679	77
+	g	654	4
 
 > ~/hateoas/main.sql
-	*	1714037224	0
-	"	25	25
+	*	1714054778	0
+	"	1	17
 	.	39	0
 	+	20	29
 	+	9	25
@@ -8351,6 +8631,317 @@ $
 	+	16	0
 	+	25	0
 	+	39	0
+
+> ~/hateoas/download_portionurl.py
+	*	1714054077	0
+	"	28	27
+	^	28	80
+	.	28	0
+	+	72	0
+	+	61	0
+	+	65	31
+	+	68	50
+	+	69	22
+	+	62	0
+	+	65	0
+	+	64	14
+	+	65	0
+	+	71	31
+	+	30	0
+	+	68	0
+	+	65	35
+	+	66	24
+	+	68	0
+	+	67	20
+	+	63	24
+	+	64	0
+	+	64	16
+	+	72	24
+	+	63	23
+	+	64	0
+	+	72	12
+	+	30	0
+	+	29	0
+	+	28	11
+	+	72	0
+	+	28	0
+
+> ~/hateoas/create-databases.py
+	*	1714047364	0
+	"	35	0
+	.	46	0
+	+	34	48
+	+	34	54
+	+	49	0
+	+	21	13
+	+	34	0
+	+	4	29
+	+	34	0
+	+	34	32
+	+	49	0
+	+	34	13
+	+	49	39
+	+	49	0
+	+	44	19
+	+	49	26
+	+	49	17
+	+	7	0
+	+	44	0
+	+	7	27
+	+	34	0
+	+	34	9
+	+	7	0
+	+	44	0
+	+	49	35
+	+	49	11
+	+	49	0
+	+	49	8
+	+	49	23
+	+	49	16
+	+	49	20
+	+	49	0
+	+	49	19
+	+	49	38
+	+	49	16
+	+	49	60
+	+	49	0
+	+	49	16
+	+	49	17
+	+	49	16
+	+	49	0
+	+	49	22
+	+	49	0
+	+	34	0
+	+	11	31
+	+	12	4
+	+	45	0
+	+	36	9
+	+	37	6
+	+	34	0
+	+	42	0
+	+	37	9
+	+	41	0
+	+	34	0
+	+	45	0
+	+	38	60
+	+	16	17
+	+	35	10
+	+	36	18
+	+	39	14
+	+	48	0
+	+	38	19
+	+	39	19
+	+	34	16
+	+	46	4
+	+	6	22
+	+	46	30
+	+	38	0
+	+	39	14
+	+	47	10
+	+	38	32
+	+	39	0
+	+	28	85
+	+	28	56
+	+	34	0
+	+	29	0
+	+	34	0
+	+	31	11
+	+	29	0
+	+	28	11
+	+	28	28
+	+	28	12
+	+	28	103
+	+	28	101
+	+	31	40
+	+	34	12
+	+	38	35
+	+	46	32
+	+	34	23
+	+	31	32
+	+	34	20
+	+	31	94
+	+	34	0
+	+	31	96
+	+	33	12
+	+	32	37
+	+	31	12
+	+	38	98
+	+	46	0
+
+> ~/hateoas/dbutils.py
+	*	1714047302	0
+	"	14	4
+	^	14	50
+	.	14	25
+	+	21	4
+	+	6	39
+	+	6	8
+	+	4	1
+	+	6	0
+	+	6	1
+	+	4	0
+	+	5	10
+	+	3	20
+	+	15	0
+	+	15	4
+	+	15	64
+	+	15	41
+	+	15	5
+	+	15	0
+	+	15	77
+	+	15	0
+	+	15	7
+	+	15	24
+	+	15	0
+	+	15	7
+	+	11	0
+	+	15	20
+	+	15	0
+	+	11	4
+	+	12	4
+	+	15	17
+	+	15	11
+	+	15	46
+	+	12	0
+	+	6	0
+	+	10	0
+	+	8	52
+	+	9	12
+	+	10	0
+	+	23	0
+	+	13	58
+	+	14	25
+
+> ~/hateoas/data/main.db
+	*	1714047259	0
+	"	29	0
+
+> /tmp/db2dl.py.lock
+	*	1714046751	0
+	"	1	0
+
+> ~/hateoas/run-download.bash
+	*	1714046100	0
+	"	11	0
+	^	10	0
+	.	10	0
+	+	13	92
+	+	13	16
+	+	13	109
+	+	15	0
+	+	15	8
+	+	3	60
+	+	4	0
+	+	9	0
+	+	8	0
+	+	21	0
+	+	12	0
+	+	13	0
+	+	16	0
+	+	17	59
+	+	18	36
+	+	21	0
+	+	20	33
+	+	21	0
+	+	20	100
+	+	21	0
+	+	21	4
+	+	21	0
+	+	22	0
+	+	24	0
+	+	18	33
+	+	17	65
+	+	18	72
+	+	13	0
+	+	14	8
+	+	21	64
+	+	14	0
+	+	21	0
+	+	20	26
+	+	11	0
+	+	10	0
+
+> ~/hateoas/refresh-downloads-db.bash
+	*	1714046100	0
+	"	1	0
+	^	10	64
+	.	10	63
+	+	3	88
+	+	3	28
+	+	5	0
+	+	6	0
+	+	12	0
+	+	11	0
+	+	13	0
+	+	10	63
+
+> ~/.sqliterc
+	*	1714042619	0
+	"	2	12
+	^	2	13
+	.	2	12
+	+	2	12
+
+> ~/jobs-python/test-libs.py
+	*	1714037624	0
+	"	1	0
+	^	11	26
+	.	11	1
+	+	6	0
+	+	3	30
+	+	6	0
+	+	3	0
+	+	6	0
+	+	5	30
+	+	4	0
+	+	3	0
+	+	2	0
+	+	6	36
+	+	5	23
+	+	7	0
+	+	5	83
+	+	6	50
+	+	8	28
+	+	9	31
+	+	10	23
+	+	11	1
+
+> ~/hateoas/test-lastrowid.py
+	*	1714037505	0
+	"	1	0
+	^	11	0
+	.	5	0
+	+	2	30
+	+	5	85
+	+	10	0
+	+	5	87
+	+	6	48
+	+	7	26
+	+	8	0
+	+	9	12
+	+	10	0
+	+	11	21
+	+	13	0
+	+	15	65
+	+	16	0
+	+	16	50
+	+	3	20
+	+	18	8
+	+	16	17
+	+	11	16
+	+	13	0
+	+	12	0
+	+	5	0
+
+> ~/hateoas/.gitignore
+	*	1714037496	0
+	"	4	16
+	^	4	17
+	.	4	16
+	+	1	7
+	+	2	8
+	+	3	3
+	+	4	16
 
 > ~/.vim/ide.vim
 	*	1714037177	0
@@ -8643,112 +9234,6 @@ $
 	.	2	0
 	+	2	0
 
-> ~/hateoas/hateoas-api.py
-	*	1714029740	0
-	"	139	0
-	.	138	0
-	+	397	0
-	+	668	51
-	+	41	17
-	+	43	51
-	+	42	13
-	+	43	59
-	+	43	79
-	+	44	18
-	+	47	0
-	+	44	48
-	+	47	0
-	+	44	18
-	+	45	78
-	+	47	4
-	+	44	0
-	+	45	4
-	+	47	0
-	+	65	8
-	+	49	105
-	+	668	40
-	+	663	31
-	+	668	0
-	+	667	57
-	+	668	71
-	+	667	24
-	+	668	112
-	+	682	0
-	+	668	91
-	+	45	0
-	+	46	20
-	+	67	0
-	+	650	0
-	+	650	14
-	+	650	39
-	+	650	0
-	+	668	106
-	+	689	0
-	+	258	54
-	+	259	112
-	+	260	79
-	+	261	70
-	+	262	12
-	+	259	111
-	+	20	0
-	+	11	46
-	+	13	0
-	+	11	5
-	+	13	0
-	+	12	0
-	+	20	0
-	+	14	0
-	+	41	0
-	+	40	0
-	+	41	0
-	+	67	0
-	+	669	0
-	+	692	111
-	+	669	116
-	+	671	27
-	+	672	108
-	+	673	0
-	+	680	83
-	+	681	0
-	+	680	77
-	+	681	0
-	+	680	88
-	+	672	0
-	+	16	0
-	+	34	58
-	+	36	37
-	+	35	38
-	+	37	4
-	+	38	13
-	+	39	4
-	+	692	124
-	+	669	26
-	+	677	30
-	+	678	0
-	+	677	30
-	+	678	31
-	+	669	0
-	+	670	0
-	+	678	0
-	+	676	0
-	+	675	47
-	+	411	0
-	+	417	0
-	+	416	0
-	+	415	4
-	+	416	0
-	+	410	49
-	+	410	36
-	+	410	0
-	+	409	86
-	+	140	0
-	+	137	16
-	+	139	0
-	+	137	8
-	+	139	42
-	+	138	0
-	g	647	4
-
 > ~/hateoas/fixed.sql
 	*	1714029590	0
 	"	17	70
@@ -8810,74 +9295,6 @@ $
 	"	86	16
 	.	2	0
 	+	2	0
-
-> ~/hateoas/download.py
-	*	1713978852	0
-	"	12	0
-	^	12	0
-	.	12	0
-	+	2	58
-	+	2	0
-	+	2	10
-	+	2	9
-	+	2	17
-	+	2	11
-	+	2	54
-	+	2	0
-	+	2	54
-	+	2	4
-	+	2	0
-	+	2	26
-	+	2	4
-	+	2	0
-	+	2	17
-	+	2	6
-	+	2	15
-	+	2	4
-	+	2	0
-	+	2	22
-	+	2	38
-	+	2	13
-	+	2	46
-	+	2	0
-	+	10	38
-	+	11	0
-	+	4	46
-	+	11	0
-	+	12	0
-	+	12	57
-	+	13	0
-	+	5	7
-	+	8	0
-	+	5	58
-	+	13	0
-	+	13	40
-	+	13	0
-	+	6	20
-	+	13	0
-	+	13	58
-	+	13	7
-	+	13	8
-	+	7	13
-	+	13	4
-	+	13	0
-	+	13	14
-	+	13	6
-	+	13	0
-	+	13	8
-	+	13	0
-	+	13	14
-	+	13	6
-	+	13	0
-	+	13	70
-	+	13	0
-	+	13	48
-	+	13	0
-	+	13	8
-	+	13	0
-	+	13	19
-	+	13	0
-	+	12	0
 
 > ~/hateoas/download-portionurl.py
 	*	1713970244	0
@@ -8982,10 +9399,6 @@ $
 	+	16	20
 	+	16	0
 
-> ~/hateoas/data/main.db
-	*	1713970184	0
-	"	1	0
-
 > ~/.vim/vimrc
 	*	1713970028	0
 	"	1353	0
@@ -9072,40 +9485,6 @@ $
 	+	159	0
 	+	46	26
 	+	1353	0
-
-> ~/hateoas/Types.py
-	*	1713969852	0
-	"	29	8
-	^	29	25
-	.	29	25
-	+	15	20
-	+	13	0
-	+	15	23
-	+	16	8
-	+	15	0
-	+	21	0
-	+	14	0
-	+	22	21
-	+	30	8
-	+	23	8
-	+	23	35
-	+	24	36
-	+	25	102
-	+	26	41
-	+	27	15
-	+	23	0
-	+	27	38
-	+	27	15
-	+	27	41
-	+	27	35
-	+	27	83
-	+	26	0
-	+	25	66
-	+	26	23
-	+	27	117
-	+	27	19
-	+	28	84
-	+	29	25
 
 > ~/hateoas/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/reltools.py
 	*	1713956285	0
@@ -9761,149 +10140,6 @@ $
 	+	6	5
 	+	6	0
 
-> ~/hateoas/dbutils.py
-	*	1713846671	0
-	"	7	4
-	.	21	0
-	+	19	4
-	+	6	39
-	+	6	8
-	+	4	1
-	+	6	0
-	+	6	1
-	+	4	0
-	+	5	10
-	+	3	20
-	+	13	0
-	+	13	4
-	+	13	64
-	+	13	41
-	+	13	5
-	+	13	0
-	+	13	77
-	+	13	0
-	+	13	7
-	+	13	24
-	+	13	0
-	+	13	7
-	+	11	0
-	+	13	20
-	+	13	0
-	+	11	4
-	+	12	4
-	+	13	17
-	+	13	11
-	+	13	46
-	+	12	0
-	+	6	0
-	+	10	0
-	+	8	52
-	+	9	12
-	+	10	0
-	+	21	0
-
-> ~/hateoas/create-databases.py
-	*	1713795369	0
-	"	33	4
-	.	46	0
-	+	34	48
-	+	34	54
-	+	49	0
-	+	21	13
-	+	34	0
-	+	4	29
-	+	34	0
-	+	34	32
-	+	49	0
-	+	34	13
-	+	49	39
-	+	49	0
-	+	44	19
-	+	49	26
-	+	49	17
-	+	7	0
-	+	44	0
-	+	7	27
-	+	34	0
-	+	34	9
-	+	7	0
-	+	44	0
-	+	49	35
-	+	49	11
-	+	49	0
-	+	49	8
-	+	49	23
-	+	49	16
-	+	49	20
-	+	49	0
-	+	49	19
-	+	49	38
-	+	49	16
-	+	49	60
-	+	49	0
-	+	49	16
-	+	49	17
-	+	49	16
-	+	49	0
-	+	49	22
-	+	49	0
-	+	34	0
-	+	11	31
-	+	12	4
-	+	45	0
-	+	36	9
-	+	37	6
-	+	34	0
-	+	42	0
-	+	37	9
-	+	41	0
-	+	34	0
-	+	45	0
-	+	38	60
-	+	16	17
-	+	35	10
-	+	36	18
-	+	39	14
-	+	48	0
-	+	38	19
-	+	39	19
-	+	34	16
-	+	46	4
-	+	6	22
-	+	46	30
-	+	38	0
-	+	39	14
-	+	47	10
-	+	38	32
-	+	39	0
-	+	28	85
-	+	28	56
-	+	34	0
-	+	29	0
-	+	34	0
-	+	31	11
-	+	29	0
-	+	28	11
-	+	28	28
-	+	28	12
-	+	28	103
-	+	28	101
-	+	31	40
-	+	34	12
-	+	38	35
-	+	46	32
-	+	34	23
-	+	31	32
-	+	34	20
-	+	31	94
-	+	34	0
-	+	31	96
-	+	33	12
-	+	32	37
-	+	31	12
-	+	38	98
-	+	46	0
-
 > ~/hateoas/test-memory.py
 	*	1713791013	0
 	"	12	10
@@ -10188,30 +10424,6 @@ $
 > ~/bash/simple-source.bash
 	*	1713769504	0
 	"	1	0
-
-> ~/jobs-python/test-libs.py
-	*	1713769062	0
-	"	1	0
-	^	11	26
-	.	11	1
-	+	6	0
-	+	3	30
-	+	6	0
-	+	3	0
-	+	6	0
-	+	5	30
-	+	4	0
-	+	3	0
-	+	2	0
-	+	6	36
-	+	5	23
-	+	7	0
-	+	5	83
-	+	6	50
-	+	8	28
-	+	9	31
-	+	10	23
-	+	11	1
 
 > ~/bash/direnv-runner.bash
 	*	1713769003	0
