@@ -18,9 +18,10 @@ function! s:SQLJoin()
 endfunction
 
 function! s:SQLSplit()
-    silent %s/CREATE.*\zs)\ze\s*;\s*$/\r)
+    silent %s/CREATE.*\zs)\ze\s*\(STRICT\)\?\s*;\s*$/\r)
     silent g/^\s*create/s/[(,]\s*\zs\S\+\s*\(INTEGER\|REAL\|TEXT\)/\r    \0/g
-
+    silent %s/,\s*\zs\(FOREIGN\|UNIQUE\)/\r    \0/g
+    silent %s/\s*$//g
 endfunction
 
 command! SQLJoin call s:SQLJoin()
