@@ -11,21 +11,65 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/pyright
+~MSle0~/selected urls
 
 # Last Substitute Search Pattern:
-~MSle0&,\s*\zs\(FOREIGN\|UNIQUE\)
+~MSle0&?
 
 # Last Substitute String:
-$ 
+$
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1714121864,,"q"
+|2,0,1714195156,,"q"
+:e refresh_downloads_table.py
+|2,0,1714194552,,"e refresh_downloads_table.py"
+:set nonumber
+|2,0,1714194160,,"set nonumber"
+:e download_portionurl.py
+|2,0,1714193986,,"e download_portionurl.py"
+:GFiles
+|2,0,1714193271,,"GFiles"
+:e sty
+|2,0,1714193268,,"e sty"
+:b ~/hateoas/hateoas-api.py
+|2,0,1714156811,,"b ~/hateoas/hateoas-api.py"
+:b ~/hateoas/download_portionurl.py
+|2,0,1714156805,,"b ~/hateoas/download_portionurl.py"
+:e db2dl.py
+|2,0,1714156173,,"e db2dl.py"
+:MRU ha
+|2,0,1714155436,,"MRU ha"
+:MRU Typ
+|2,0,1714155388,,"MRU Typ"
+:SQLSplit
+|2,0,1714153978,,"SQLSplit"
+:e main.sql
+|2,0,1714153975,,"e main.sql"
+:bd!
+|2,0,1714141815,,"bd!"
+:'<,'>v/?/d
+|2,0,1714141543,,"'<,'>v/?/d"
+:g/?/d
+|2,0,1714141528,,"g/?/d"
+:v/?/d
+|2,0,1714141522,,"v/?/d"
+:v/\.execute/d
+|2,0,1714141505,,"v/\\.execute/d"
+:v/\.execute\d
+|2,0,1714141499,,"v/\\.execute\\d"
+:e statements.py
+|2,0,1714141495,,"e statements.py"
+:e input.py
+|2,0,1714141487,,"e input.py"
+:q!
+|2,0,1714141447,,"q!"
+:Template
+|2,0,1714137290,,"Template"
+:e hateoas-api.py
+|2,0,1714137280,,"e hateoas-api.py"
 :CocConfig
 |2,0,1714116276,,"CocConfig"
-:set nonumber
-|2,0,1714111489,,"set nonumber"
 :e pyrightconfig.json
 |2,0,1714110710,,"e pyrightconfig.json"
 :CocInfo
@@ -36,14 +80,10 @@ $
 |2,0,1714110629,,"MRU or"
 :CocRestart
 |2,0,1714110627,,"CocRestart"
-:e hateoas-api.py
-|2,0,1714110211,,"e hateoas-api.py"
 :set number
 |2,0,1714109551,,"set number"
 :SQLJoin
 |2,0,1714109135,,"SQLJoin"
-:SQLSplit
-|2,0,1714109086,,"SQLSplit"
 :%s/,\s*\zs\(FOREIGN\|UNIQUE\)/\r    \0/g
 |2,0,1714109035,,"%s/,\\s*\\zs\\(FOREIGN\\|UNIQUE\\)/\\r    \\0/g"
 :%s/,\s*\zs\(FOREIGN\|UNIQUE\)/\r    \0
@@ -66,16 +106,12 @@ $
 |2,0,1714108852,,"MRU sqljoi"
 :Ftplugin
 |2,0,1714108845,,"Ftplugin"
-:e main.sql
-|2,0,1714108676,,"e main.sql"
 :e Types.py
 |2,0,1714108468,,"e Types.py"
 :grep -g '*.py' sqlmodel
 |2,0,1714108382,,"grep -g '*.py' sqlmodel"
 :e!
 |2,0,1714108217,,"e!"
-:v/\.execute/d
-|2,0,1714108126,,"v/\\.execute/d"
 :bd
 |2,0,1714108117,,"bd"
 :e ~/tooling/typescript-goals.txt
@@ -84,14 +120,8 @@ $
 |2,0,1714108015,,"e ~/Too"
 :e download.py
 |2,0,1714062709,,"e download.py"
-:e download_portionurl.py
-|2,0,1714062669,,"e download_portionurl.py"
-:e db2dl.py
-|2,0,1714062664,,"e db2dl.py"
 :e por
 |2,0,1714062660,,"e por"
-:e refresh_downloads_table.py
-|2,0,1714062076,,"e refresh_downloads_table.py"
 :e refresh-downloads-db.bash
 |2,0,1714062071,,"e refresh-downloads-db.bash"
 :e
@@ -100,8 +130,6 @@ $
 |2,0,1714062051,,"e "
 :MRU hate
 |2,0,1714062048,,"MRU hate"
-:q!
-|2,0,1714061700,,"q!"
 :enew
 |2,0,1714061069,,"enew"
 :b db2dl.py
@@ -120,8 +148,6 @@ $
 |2,0,1714047519,,"414"
 :408
 |2,0,1714047464,,"408"
-:MRU ha
-|2,0,1714047463,,"MRU ha"
 :e create-databases.py
 |2,0,1714047359,,"e create-databases.py"
 :qa
@@ -186,8 +212,6 @@ $
 |2,0,1714035332,,"e ~/.vim/plugged/ale/ale_linters/sql/sqlfluff.vim"
 :e ~/.vim/plugged/ale/
 |2,0,1714035225,,"e ~/.vim/plugged/ale/"
-:bd!
-|2,0,1714033945,,"bd!"
 :G
 |2,0,1714029781,,"G"
 :ALEEnable
@@ -278,8 +302,6 @@ $
 |2,0,1713951455,,"b hateoas-api.py"
 :MRU css
 |2,0,1713942810,,"MRU css"
-:GFiles
-|2,0,1713942803,,"GFiles"
 :e stat
 |2,0,1713942801,,"e stat"
 :e __pycache__/
@@ -1114,8 +1136,6 @@ $
 |2,0,1713373302,,"e ele"
 :e na
 |2,0,1713373300,,"e na"
-:b ~/hateoas/hateoas-api.py
-|2,0,1713346911,,"b ~/hateoas/hateoas-api.py"
 :MRU dbu
 |2,0,1713346509,,"MRU dbu"
 :e Flask_Cors-4.0.0.dist-info/
@@ -1160,8 +1180,6 @@ $
 |2,0,1713278837,,"b py"
 :e static/
 |2,0,1713278542,,"e static/"
-:e sty
-|2,0,1713278539,,"e sty"
 :e templates/elements.html
 |2,0,1713278457,,"e templates/elements.html"
 :e in
@@ -1356,8 +1374,6 @@ $
 |2,0,1712451088,,"Py"
 :'<,'>s/\s\s\+/ /g
 |2,0,1712445168,,"'<,'>s/\\s\\s\\+/ /g"
-:Template
-|2,0,1712444985,,"Template"
 :Tab /THEN
 |2,0,1712444660,,"Tab /THEN"
 :Tab /TEHN
@@ -5622,6 +5638,22 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/selected urls
+|2,1,1714193191,47,"selected urls"
+?/\(def\|class\)\s\+\w*view_portion
+|2,1,1714155445,47,"\\(def\\|class\\)\\s\\+\\w*view_portion"
+? \s*$
+|2,1,1714153978,,"\\s*$"
+? ,\s*\zs\(FOREIGN\|UNIQUE\)
+|2,1,1714153978,,",\\s*\\zs\\(FOREIGN\\|UNIQUE\\)"
+? [(,]\s*\zs\S\+\s*\(INTEGER\|REAL\|TEXT\)
+|2,1,1714153978,,"[(,]\\s*\\zs\\S\\+\\s*\\(INTEGER\\|REAL\\|TEXT\\)"
+? ?
+|2,1,1714141543,,"?"
+? \.execute
+|2,1,1714141505,,"\\.execute"
+? \.execute\d
+|2,1,1714141499,,"\\.execute\\d"
 ?/pyright
 |2,1,1714110704,47,"pyright"
 ?/Sequence
@@ -5632,16 +5664,8 @@ $
 |2,1,1714109135,,"\\s*,"
 ? CREATE TABLE
 |2,1,1714109135,,"CREATE TABLE"
-? \s*$
-|2,1,1714109086,,"\\s*$"
-? ,\s*\zs\(FOREIGN\|UNIQUE\)
-|2,1,1714109086,,",\\s*\\zs\\(FOREIGN\\|UNIQUE\\)"
-? [(,]\s*\zs\S\+\s*\(INTEGER\|REAL\|TEXT\)
-|2,1,1714109086,,"[(,]\\s*\\zs\\S\\+\\s*\\(INTEGER\\|REAL\\|TEXT\\)"
 ? CREATE.*\zs)\ze\s*;\s*$
 |2,1,1714108819,,"CREATE.*\\zs)\\ze\\s*;\\s*$"
-? \.execute
-|2,1,1714108126,,"\\.execute"
 ?/downloading
 |2,1,1714062687,47,"downloading"
 ?/url_for
@@ -5762,8 +5786,6 @@ $
 |2,1,1713932975,47,"order"
 ?/\(def\|class\)\s\+\w*delete_port
 |2,1,1713932700,47,"\\(def\\|class\\)\\s\\+\\w*delete_port"
-?/\(def\|class\)\s\+\w*view_portion
-|2,1,1713932456,47,"\\(def\\|class\\)\\s\\+\\w*view_portion"
 ?/portion
 |2,1,1713932287,47,"portion"
 ?/\(def\|class\)\s\+\w*
@@ -7827,7 +7849,9 @@ $
 
 # Input Line History (newest to oldest):
 @div>
-|2,3,1713932497,,"div>"
+|2,3,1714193215,,"div>"
+@div class="wide">
+|2,3,1714156860,,"div class=\"wide\">"
 @div class="tall box">
 |2,3,1713932038,,"div class=\"tall box\">"
 @n
@@ -7931,38 +7955,43 @@ $
 
 # Registers:
 "0	LINE	0
-	    sequ
-|3,0,0,1,1,0,1714110654,"    sequ"
+	                if status ==
+|3,0,0,1,1,0,1714194939,"                if status =="
 ""1	LINE	0
-	    "pyright": {
-|3,1,1,1,1,0,1714116295,"    \"pyright\": {"
+	
+|3,1,1,1,1,0,1714195002,""
 "2	LINE	0
-	    sequence.__fields_set__
-|3,0,2,1,1,0,1714111333,"    sequence.__fields_set__"
+	
+	                # connection.execute("UPDATE downloads SET status = 'pending' WHERE portionurl_id = ?;", (portionurl_id,))
+|3,0,2,1,2,0,1714195001,"","                # connection.execute(\"UPDATE downloads SET status = 'pending' WHERE portionurl_id = ?;\", (portionurl_id,))"
 "3	LINE	0
-	    assert sequence is not None
-|3,0,3,1,1,0,1714111314,"    assert sequence is not None"
+	                if status == "paused":
+	
+|3,0,3,1,2,0,1714194972,"                if status == \"paused\":",""
 "4	LINE	0
-	    sequence.
-|3,0,4,1,1,0,1714110739,"    sequence."
+	                if status ==
+|3,0,4,1,1,0,1714194939,"                if status =="
 "5	LINE	0
-	    "
-|3,0,5,1,1,0,1714110736,"    \""
+	                if status == 'complete':
+	                    connection.execute("UPDATE downloads SET status = 'pending' WHERE portionurl_id = ?;", (portionurl_id,))
+	                elif status == 'downloading':
+|3,0,5,1,3,0,1714194927,"                if status == 'complete':","                    connection.execute(\"UPDATE downloads SET status = 'pending' WHERE portionurl_id = ?;\", (portionurl_id,))","                elif status == 'downloading':"
 "6	LINE	0
-	    "suggest
-|3,0,6,1,1,0,1714110688,"    \"suggest"
+	                raise Exception("Both path and part files exist.")
+|3,0,6,1,1,0,1714194831,"                raise Exception(\"Both path and part files exist.\")"
 "7	LINE	0
-	    sequ
-|3,0,7,1,1,0,1714110650,"    sequ"
+	                connection.execute("UPDATE downloads SET status = 'complete' WHERE portionurl_id = ?;", (portionurl_id,))
+|3,0,7,1,1,0,1714194820,"                connection.execute(\"UPDATE downloads SET status = 'complete' WHERE portionurl_id = ?;\", (portionurl_id,))"
 "8	LINE	0
-	    "suggestprtitle.enable": true,
-|3,0,8,1,1,0,1714110592,"    \"suggestprtitle.enable\": true,"
+	        = portionurl_to_download_path(portionurl_id)
+|3,0,8,1,1,0,1714194792,"        = portionurl_to_download_path(portionurl_id)"
 "9	LINE	0
-	    "suggestprtitle.enable": true,
-|3,0,9,1,1,0,1714110565,"    \"suggestprtitle.enable\": true,"
+	        part_path = path + ".part"
+	        both_exist = os.path.exists(path) and os.path.exists(part_path)
+|3,0,9,1,2,0,1714194788,"        part_path = path + \".part\"","        both_exist = os.path.exists(path) and os.path.exists(part_path)"
 "a	CHAR	0
 	Tabularize /,/l1c1l1c1l1c1l1
-|3,0,10,0,1,0,1714109490,"Tabularize /,/l1c1l1c1l1c1l1"
+|3,0,10,0,1,0,1714141312,"Tabularize /,/l1c1l1c1l1c1l1"
 "j	CHAR	0
 	k:q€ýa
 |3,0,19,0,1,0,1714046792,"k:q€ýa"
@@ -8004,241 +8033,896 @@ $
 |<"                <form method=\"POST\" action=\"/resume_download\">","                    <input type=\"hidden\" name=\"id\" value=\"{{ id }}\">","                    <input type=\"submit\" value=\"Resume\">","                </form>","                {% endif %}","                {% if status == 'downloading' %}","                <form method=\"POST\" action=\"/pause_download\">","                    <input type=\"hidden\" name=\"id\" value=\"{{ id }}\">",>61
 |<"                    <input type=\"submit\" value=\"Pause\">","                </form>","                {% endif %}","","            </li>","        {% endfor %}","    </ul>\"\"\", downloads=downloads)"
 "-	CHAR	0
-	o
-|3,0,36,0,1,0,1714110642,"o"
+	.fetchone()[0]
+|3,0,36,0,1,0,1714194895,".fetchone()[0]"
 
 # File marks:
-'0  35  4  ~/hateoas/orm.py
-|4,48,35,4,1714121864,"~/hateoas/orm.py"
-'1  1  0  ~/hateoas/download.py
-|4,49,1,0,1714062712,"~/hateoas/download.py"
-'2  1  0  ~/hateoas/download.py
-|4,50,1,0,1714062712,"~/hateoas/download.py"
-'3  4  1  ~/hateoas/ids.txt
-|4,51,4,1,1714062227,"~/hateoas/ids.txt"
-'4  4  1  ~/hateoas/ids.txt
-|4,52,4,1,1714062227,"~/hateoas/ids.txt"
-'5  4  1  ~/hateoas/ids.txt
-|4,53,4,1,1714062227,"~/hateoas/ids.txt"
-'6  4  1  ~/hateoas/ids.txt
-|4,54,4,1,1714062227,"~/hateoas/ids.txt"
-'7  4  1  ~/hateoas/ids.txt
-|4,55,4,1,1714062227,"~/hateoas/ids.txt"
-'8  4  1  ~/hateoas/ids.txt
-|4,56,4,1,1714062227,"~/hateoas/ids.txt"
-'9  4  1  ~/hateoas/ids.txt
-|4,57,4,1,1714062227,"~/hateoas/ids.txt"
+'0  1  0  ~/hateoas/refresh-downloads-db.bash
+|4,48,1,0,1714195156,"~/hateoas/refresh-downloads-db.bash"
+'1  1  0  ~/hateoas/refresh-downloads-db.bash
+|4,49,1,0,1714195150,"~/hateoas/refresh-downloads-db.bash"
+'2  1  0  ~/hateoas/statements.py
+|4,50,1,0,1714195115,"~/hateoas/statements.py"
+'3  1  0  ~/hateoas/statements.py
+|4,51,1,0,1714195115,"~/hateoas/statements.py"
+'4  1  0  ~/hateoas/statements.py
+|4,52,1,0,1714195115,"~/hateoas/statements.py"
+'5  1  0  ~/hateoas/statements.py
+|4,53,1,0,1714195115,"~/hateoas/statements.py"
+'6  1  0  ~/hateoas/test-sql.py
+|4,54,1,0,1714195112,"~/hateoas/test-sql.py"
+'7  1  0  ~/hateoas/test-sql.py
+|4,55,1,0,1714195112,"~/hateoas/test-sql.py"
+'8  1  0  ~/hateoas/test-sql.py
+|4,56,1,0,1714195112,"~/hateoas/test-sql.py"
+'9  1  0  ~/hateoas/test-sql.py
+|4,57,1,0,1714195112,"~/hateoas/test-sql.py"
 
 # Jumplist (newest first):
--'  35  4  ~/hateoas/orm.py
-|4,39,35,4,1714121864,"~/hateoas/orm.py"
--'  39  0  ~/.vim/coc-settings.json
-|4,39,39,0,1714116296,"~/.vim/coc-settings.json"
--'  5  0  ~/hateoas/pyrightconfig.json
-|4,39,5,0,1714116274,"~/hateoas/pyrightconfig.json"
--'  2  0  ~/hateoas/orm.py
-|4,39,2,0,1714111515,"~/hateoas/orm.py"
--'  42  4  ~/hateoas/orm.py
-|4,39,42,4,1714111478,"~/hateoas/orm.py"
--'  37  0  ~/.vim/coc-settings.json
-|4,39,37,0,1714110689,"~/.vim/coc-settings.json"
--'  1  0  ~/hateoas/orm.py
-|4,39,1,0,1714110631,"~/hateoas/orm.py"
--'  36  39  ~/.vim/coc-settings.json
-|4,39,36,39,1714110631,"~/.vim/coc-settings.json"
--'  1  0  ~/.vim/coc-settings.json
-|4,39,1,0,1714110454,"~/.vim/coc-settings.json"
--'  235  4  ~/hateoas/hateoas-api.py
-|4,39,235,4,1714110453,"~/hateoas/hateoas-api.py"
--'  14  4  ~/hateoas/orm.py
-|4,39,14,4,1714110225,"~/hateoas/orm.py"
--'  11  18  ~/hateoas/hateoas-api.py
-|4,39,11,18,1714110215,"~/hateoas/hateoas-api.py"
--'  1  0  ~/hateoas/hateoas-api.py
-|4,39,1,0,1714110214,"~/hateoas/hateoas-api.py"
--'  17  4  ~/hateoas/orm.py
-|4,39,17,4,1714110211,"~/hateoas/orm.py"
--'  34  13  ~/.vim/coc-settings.json
-|4,39,34,13,1714109793,"~/.vim/coc-settings.json"
--'  46  9  ~/hateoas/orm.py
-|4,39,46,9,1714109721,"~/hateoas/orm.py"
--'  45  38  ~/hateoas/orm.py
-|4,39,45,38,1714109681,"~/hateoas/orm.py"
--'  44  8  ~/hateoas/orm.py
-|4,39,44,8,1714109646,"~/hateoas/orm.py"
--'  47  0  ~/hateoas/orm.py
-|4,39,47,0,1714109646,"~/hateoas/orm.py"
--'  51  0  ~/hateoas/orm.py
-|4,39,51,0,1714109621,"~/hateoas/orm.py"
--'  3  0  ~/hateoas/main.sql
-|4,39,3,0,1714109617,"~/hateoas/main.sql"
--'  40  4  ~/hateoas/orm.py
-|4,39,40,4,1714109609,"~/hateoas/orm.py"
--'  48  43  ~/hateoas/orm.py
-|4,39,48,43,1714109513,"~/hateoas/orm.py"
--'  49  16  ~/hateoas/orm.py
-|4,39,49,16,1714109508,"~/hateoas/orm.py"
--'  50  11  ~/hateoas/orm.py
-|4,39,50,11,1714109456,"~/hateoas/orm.py"
--'  43  49  ~/hateoas/orm.py
-|4,39,43,49,1714109431,"~/hateoas/orm.py"
--'  8  20  ~/hateoas/orm.py
-|4,39,8,20,1714109405,"~/hateoas/orm.py"
--'  41  15  ~/hateoas/orm.py
-|4,39,41,15,1714109388,"~/hateoas/orm.py"
--'  7  0  ~/hateoas/orm.py
-|4,39,7,0,1714109319,"~/hateoas/orm.py"
--'  38  0  ~/hateoas/orm.py
-|4,39,38,0,1714109318,"~/hateoas/orm.py"
--'  39  0  ~/hateoas/orm.py
-|4,39,39,0,1714109311,"~/hateoas/orm.py"
--'  37  0  ~/hateoas/orm.py
-|4,39,37,0,1714109279,"~/hateoas/orm.py"
--'  1  0  ~/hateoas/download.py
-|4,39,1,0,1714062712,"~/hateoas/download.py"
--'  26  4  ~/hateoas/db2dl.py
-|4,39,26,4,1714062709,"~/hateoas/db2dl.py"
--'  31  4  ~/hateoas/download_portionurl.py
-|4,39,31,4,1714062705,"~/hateoas/download_portionurl.py"
--'  1  0  ~/hateoas/db2dl.py
-|4,39,1,0,1714062669,"~/hateoas/db2dl.py"
--'  4  1  ~/hateoas/ids.txt
-|4,39,4,1,1714062227,"~/hateoas/ids.txt"
--'  4  1  ~/hateoas/ids.txt
-|4,39,4,1,1714062227,"~/hateoas/ids.txt"
--'  4  1  ~/hateoas/ids.txt
-|4,39,4,1,1714062227,"~/hateoas/ids.txt"
--'  1  0  ~/hateoas/ids.txt
-|4,39,1,0,1714062221,"~/hateoas/ids.txt"
--'  1  0  ~/hateoas/ids.txt
-|4,39,1,0,1714062221,"~/hateoas/ids.txt"
--'  1  0  ~/hateoas/ids.txt
-|4,39,1,0,1714062221,"~/hateoas/ids.txt"
--'  23  0  ~/hateoas/refresh_downloads_table.py
-|4,39,23,0,1714062186,"~/hateoas/refresh_downloads_table.py"
--'  23  0  ~/hateoas/refresh_downloads_table.py
-|4,39,23,0,1714062186,"~/hateoas/refresh_downloads_table.py"
--'  23  0  ~/hateoas/refresh_downloads_table.py
-|4,39,23,0,1714062186,"~/hateoas/refresh_downloads_table.py"
--'  23  0  ~/hateoas/refresh_downloads_table.py
-|4,39,23,0,1714062186,"~/hateoas/refresh_downloads_table.py"
--'  28  38  ~/hateoas/refresh_downloads_table.py
-|4,39,28,38,1714062145,"~/hateoas/refresh_downloads_table.py"
--'  19  38  ~/hateoas/refresh_downloads_table.py
-|4,39,19,38,1714062145,"~/hateoas/refresh_downloads_table.py"
--'  28  38  ~/hateoas/refresh_downloads_table.py
-|4,39,28,38,1714062145,"~/hateoas/refresh_downloads_table.py"
--'  19  38  ~/hateoas/refresh_downloads_table.py
-|4,39,19,38,1714062145,"~/hateoas/refresh_downloads_table.py"
--'  28  38  ~/hateoas/refresh_downloads_table.py
-|4,39,28,38,1714062145,"~/hateoas/refresh_downloads_table.py"
--'  19  38  ~/hateoas/refresh_downloads_table.py
-|4,39,19,38,1714062145,"~/hateoas/refresh_downloads_table.py"
--'  28  38  ~/hateoas/refresh_downloads_table.py
-|4,39,28,38,1714062145,"~/hateoas/refresh_downloads_table.py"
--'  19  38  ~/hateoas/refresh_downloads_table.py
-|4,39,19,38,1714062145,"~/hateoas/refresh_downloads_table.py"
--'  1  0  ~/hateoas/refresh_downloads_table.py
-|4,39,1,0,1714062126,"~/hateoas/refresh_downloads_table.py"
--'  1  0  ~/hateoas/refresh_downloads_table.py
-|4,39,1,0,1714062126,"~/hateoas/refresh_downloads_table.py"
--'  1  0  ~/hateoas/refresh_downloads_table.py
-|4,39,1,0,1714062126,"~/hateoas/refresh_downloads_table.py"
--'  1  0  ~/hateoas/refresh_downloads_table.py
-|4,39,1,0,1714062126,"~/hateoas/refresh_downloads_table.py"
--'  1  0  ~/hateoas/refresh_downloads_table.py
-|4,39,1,0,1714062126,"~/hateoas/refresh_downloads_table.py"
--'  10  0  ~/hateoas/db2dl.py
-|4,39,10,0,1714062112,"~/hateoas/db2dl.py"
--'  4  13  ~/hateoas/refresh_downloads_table.py
-|4,39,4,13,1714062112,"~/hateoas/refresh_downloads_table.py"
--'  10  0  ~/hateoas/db2dl.py
-|4,39,10,0,1714062112,"~/hateoas/db2dl.py"
--'  4  13  ~/hateoas/refresh_downloads_table.py
-|4,39,4,13,1714062112,"~/hateoas/refresh_downloads_table.py"
--'  10  0  ~/hateoas/db2dl.py
-|4,39,10,0,1714062112,"~/hateoas/db2dl.py"
--'  4  13  ~/hateoas/refresh_downloads_table.py
-|4,39,4,13,1714062112,"~/hateoas/refresh_downloads_table.py"
--'  10  0  ~/hateoas/db2dl.py
-|4,39,10,0,1714062112,"~/hateoas/db2dl.py"
--'  4  13  ~/hateoas/refresh_downloads_table.py
-|4,39,4,13,1714062112,"~/hateoas/refresh_downloads_table.py"
--'  10  0  ~/hateoas/db2dl.py
-|4,39,10,0,1714062112,"~/hateoas/db2dl.py"
--'  4  13  ~/hateoas/refresh_downloads_table.py
-|4,39,4,13,1714062112,"~/hateoas/refresh_downloads_table.py"
--'  10  0  ~/hateoas/db2dl.py
-|4,39,10,0,1714062112,"~/hateoas/db2dl.py"
--'  4  13  ~/hateoas/refresh_downloads_table.py
-|4,39,4,13,1714062112,"~/hateoas/refresh_downloads_table.py"
--'  12  0  ~/hateoas/db2dl.py
-|4,39,12,0,1714062076,"~/hateoas/db2dl.py"
--'  12  0  ~/hateoas/db2dl.py
-|4,39,12,0,1714062076,"~/hateoas/db2dl.py"
--'  12  0  ~/hateoas/db2dl.py
-|4,39,12,0,1714062076,"~/hateoas/db2dl.py"
--'  12  0  ~/hateoas/db2dl.py
-|4,39,12,0,1714062076,"~/hateoas/db2dl.py"
--'  12  0  ~/hateoas/db2dl.py
-|4,39,12,0,1714062076,"~/hateoas/db2dl.py"
--'  12  0  ~/hateoas/db2dl.py
-|4,39,12,0,1714062076,"~/hateoas/db2dl.py"
--'  69  8  ~/hateoas/download_portionurl.py
-|4,39,69,8,1714062059,"~/hateoas/download_portionurl.py"
--'  69  8  ~/hateoas/download_portionurl.py
-|4,39,69,8,1714062059,"~/hateoas/download_portionurl.py"
--'  69  8  ~/hateoas/download_portionurl.py
-|4,39,69,8,1714062059,"~/hateoas/download_portionurl.py"
--'  69  8  ~/hateoas/download_portionurl.py
-|4,39,69,8,1714062059,"~/hateoas/download_portionurl.py"
--'  69  8  ~/hateoas/download_portionurl.py
-|4,39,69,8,1714062059,"~/hateoas/download_portionurl.py"
--'  69  8  ~/hateoas/download_portionurl.py
-|4,39,69,8,1714062059,"~/hateoas/download_portionurl.py"
--'  679  0  ~/hateoas/hateoas-api.py
-|4,39,679,0,1714062050,"~/hateoas/hateoas-api.py"
--'  679  0  ~/hateoas/hateoas-api.py
-|4,39,679,0,1714062050,"~/hateoas/hateoas-api.py"
--'  679  0  ~/hateoas/hateoas-api.py
-|4,39,679,0,1714062050,"~/hateoas/hateoas-api.py"
--'  679  0  ~/hateoas/hateoas-api.py
-|4,39,679,0,1714062050,"~/hateoas/hateoas-api.py"
--'  679  0  ~/hateoas/hateoas-api.py
-|4,39,679,0,1714062050,"~/hateoas/hateoas-api.py"
--'  679  0  ~/hateoas/hateoas-api.py
-|4,39,679,0,1714062050,"~/hateoas/hateoas-api.py"
--'  14  0  ~/hateoas/db2dl.py
-|4,39,14,0,1714062025,"~/hateoas/db2dl.py"
--'  21  0  ~/hateoas/db2dl.py
-|4,39,21,0,1714062025,"~/hateoas/db2dl.py"
--'  14  0  ~/hateoas/db2dl.py
-|4,39,14,0,1714062025,"~/hateoas/db2dl.py"
--'  21  0  ~/hateoas/db2dl.py
-|4,39,21,0,1714062025,"~/hateoas/db2dl.py"
--'  14  0  ~/hateoas/db2dl.py
-|4,39,14,0,1714062025,"~/hateoas/db2dl.py"
--'  21  0  ~/hateoas/db2dl.py
-|4,39,21,0,1714062025,"~/hateoas/db2dl.py"
--'  14  0  ~/hateoas/db2dl.py
-|4,39,14,0,1714062025,"~/hateoas/db2dl.py"
--'  21  0  ~/hateoas/db2dl.py
-|4,39,21,0,1714062025,"~/hateoas/db2dl.py"
--'  14  0  ~/hateoas/db2dl.py
-|4,39,14,0,1714062025,"~/hateoas/db2dl.py"
--'  21  0  ~/hateoas/db2dl.py
-|4,39,21,0,1714062025,"~/hateoas/db2dl.py"
--'  14  0  ~/hateoas/db2dl.py
-|4,39,14,0,1714062025,"~/hateoas/db2dl.py"
+-'  1  0  ~/hateoas/refresh-downloads-db.bash
+|4,39,1,0,1714195156,"~/hateoas/refresh-downloads-db.bash"
+-'  1  0  ~/hateoas/refresh-downloads-db.bash
+|4,39,1,0,1714195150,"~/hateoas/refresh-downloads-db.bash"
+-'  1  0  ~/hateoas/statements.py
+|4,39,1,0,1714195115,"~/hateoas/statements.py"
+-'  1  0  ~/hateoas/statements.py
+|4,39,1,0,1714195115,"~/hateoas/statements.py"
+-'  1  0  ~/hateoas/statements.py
+|4,39,1,0,1714195115,"~/hateoas/statements.py"
+-'  1  0  ~/hateoas/test-sql.py
+|4,39,1,0,1714195112,"~/hateoas/test-sql.py"
+-'  1  0  ~/hateoas/test-sql.py
+|4,39,1,0,1714195112,"~/hateoas/test-sql.py"
+-'  1  0  ~/hateoas/test-sql.py
+|4,39,1,0,1714195112,"~/hateoas/test-sql.py"
+-'  1  0  ~/hateoas/test-sql.py
+|4,39,1,0,1714195112,"~/hateoas/test-sql.py"
+-'  33  0  ~/hateoas/refresh_downloads_table.py
+|4,39,33,0,1714195083,"~/hateoas/refresh_downloads_table.py"
+-'  33  0  ~/hateoas/refresh_downloads_table.py
+|4,39,33,0,1714195083,"~/hateoas/refresh_downloads_table.py"
+-'  33  0  ~/hateoas/refresh_downloads_table.py
+|4,39,33,0,1714195083,"~/hateoas/refresh_downloads_table.py"
+-'  33  0  ~/hateoas/refresh_downloads_table.py
+|4,39,33,0,1714195083,"~/hateoas/refresh_downloads_table.py"
+-'  33  0  ~/hateoas/refresh_downloads_table.py
+|4,39,33,0,1714195083,"~/hateoas/refresh_downloads_table.py"
+-'  31  0  ~/hateoas/refresh_downloads_table.py
+|4,39,31,0,1714195076,"~/hateoas/refresh_downloads_table.py"
+-'  31  0  ~/hateoas/refresh_downloads_table.py
+|4,39,31,0,1714195076,"~/hateoas/refresh_downloads_table.py"
+-'  31  0  ~/hateoas/refresh_downloads_table.py
+|4,39,31,0,1714195076,"~/hateoas/refresh_downloads_table.py"
+-'  31  0  ~/hateoas/refresh_downloads_table.py
+|4,39,31,0,1714195076,"~/hateoas/refresh_downloads_table.py"
+-'  31  0  ~/hateoas/refresh_downloads_table.py
+|4,39,31,0,1714195076,"~/hateoas/refresh_downloads_table.py"
+-'  55  0  ~/hateoas/refresh_downloads_table.py
+|4,39,55,0,1714195075,"~/hateoas/refresh_downloads_table.py"
+-'  66  0  ~/hateoas/refresh_downloads_table.py
+|4,39,66,0,1714195075,"~/hateoas/refresh_downloads_table.py"
+-'  76  0  ~/hateoas/refresh_downloads_table.py
+|4,39,76,0,1714195075,"~/hateoas/refresh_downloads_table.py"
+-'  84  0  ~/hateoas/refresh_downloads_table.py
+|4,39,84,0,1714195075,"~/hateoas/refresh_downloads_table.py"
+-'  86  23  ~/hateoas/refresh_downloads_table.py
+|4,39,86,23,1714195075,"~/hateoas/refresh_downloads_table.py"
+-'  55  0  ~/hateoas/refresh_downloads_table.py
+|4,39,55,0,1714195075,"~/hateoas/refresh_downloads_table.py"
+-'  66  0  ~/hateoas/refresh_downloads_table.py
+|4,39,66,0,1714195075,"~/hateoas/refresh_downloads_table.py"
+-'  76  0  ~/hateoas/refresh_downloads_table.py
+|4,39,76,0,1714195075,"~/hateoas/refresh_downloads_table.py"
+-'  84  0  ~/hateoas/refresh_downloads_table.py
+|4,39,84,0,1714195075,"~/hateoas/refresh_downloads_table.py"
+-'  86  23  ~/hateoas/refresh_downloads_table.py
+|4,39,86,23,1714195075,"~/hateoas/refresh_downloads_table.py"
+-'  55  0  ~/hateoas/refresh_downloads_table.py
+|4,39,55,0,1714195075,"~/hateoas/refresh_downloads_table.py"
+-'  66  0  ~/hateoas/refresh_downloads_table.py
+|4,39,66,0,1714195075,"~/hateoas/refresh_downloads_table.py"
+-'  76  0  ~/hateoas/refresh_downloads_table.py
+|4,39,76,0,1714195075,"~/hateoas/refresh_downloads_table.py"
+-'  84  0  ~/hateoas/refresh_downloads_table.py
+|4,39,84,0,1714195075,"~/hateoas/refresh_downloads_table.py"
+-'  86  23  ~/hateoas/refresh_downloads_table.py
+|4,39,86,23,1714195075,"~/hateoas/refresh_downloads_table.py"
+-'  55  0  ~/hateoas/refresh_downloads_table.py
+|4,39,55,0,1714195075,"~/hateoas/refresh_downloads_table.py"
+-'  66  0  ~/hateoas/refresh_downloads_table.py
+|4,39,66,0,1714195075,"~/hateoas/refresh_downloads_table.py"
+-'  76  0  ~/hateoas/refresh_downloads_table.py
+|4,39,76,0,1714195075,"~/hateoas/refresh_downloads_table.py"
+-'  84  0  ~/hateoas/refresh_downloads_table.py
+|4,39,84,0,1714195075,"~/hateoas/refresh_downloads_table.py"
+-'  86  23  ~/hateoas/refresh_downloads_table.py
+|4,39,86,23,1714195075,"~/hateoas/refresh_downloads_table.py"
+-'  55  0  ~/hateoas/refresh_downloads_table.py
+|4,39,55,0,1714195075,"~/hateoas/refresh_downloads_table.py"
+-'  66  0  ~/hateoas/refresh_downloads_table.py
+|4,39,66,0,1714195075,"~/hateoas/refresh_downloads_table.py"
+-'  76  0  ~/hateoas/refresh_downloads_table.py
+|4,39,76,0,1714195075,"~/hateoas/refresh_downloads_table.py"
+-'  84  0  ~/hateoas/refresh_downloads_table.py
+|4,39,84,0,1714195075,"~/hateoas/refresh_downloads_table.py"
+-'  86  23  ~/hateoas/refresh_downloads_table.py
+|4,39,86,23,1714195075,"~/hateoas/refresh_downloads_table.py"
+-'  46  0  ~/hateoas/refresh_downloads_table.py
+|4,39,46,0,1714194939,"~/hateoas/refresh_downloads_table.py"
+-'  46  0  ~/hateoas/refresh_downloads_table.py
+|4,39,46,0,1714194939,"~/hateoas/refresh_downloads_table.py"
+-'  46  0  ~/hateoas/refresh_downloads_table.py
+|4,39,46,0,1714194939,"~/hateoas/refresh_downloads_table.py"
+-'  46  0  ~/hateoas/refresh_downloads_table.py
+|4,39,46,0,1714194939,"~/hateoas/refresh_downloads_table.py"
+-'  46  0  ~/hateoas/refresh_downloads_table.py
+|4,39,46,0,1714194939,"~/hateoas/refresh_downloads_table.py"
+-'  42  131  ~/hateoas/refresh_downloads_table.py
+|4,39,42,131,1714194893,"~/hateoas/refresh_downloads_table.py"
+-'  42  131  ~/hateoas/refresh_downloads_table.py
+|4,39,42,131,1714194893,"~/hateoas/refresh_downloads_table.py"
+-'  42  131  ~/hateoas/refresh_downloads_table.py
+|4,39,42,131,1714194893,"~/hateoas/refresh_downloads_table.py"
+-'  42  131  ~/hateoas/refresh_downloads_table.py
+|4,39,42,131,1714194893,"~/hateoas/refresh_downloads_table.py"
+-'  42  131  ~/hateoas/refresh_downloads_table.py
+|4,39,42,131,1714194893,"~/hateoas/refresh_downloads_table.py"
+-'  41  35  ~/hateoas/refresh_downloads_table.py
+|4,39,41,35,1714194839,"~/hateoas/refresh_downloads_table.py"
+-'  41  35  ~/hateoas/refresh_downloads_table.py
+|4,39,41,35,1714194839,"~/hateoas/refresh_downloads_table.py"
+-'  41  35  ~/hateoas/refresh_downloads_table.py
+|4,39,41,35,1714194839,"~/hateoas/refresh_downloads_table.py"
+-'  41  35  ~/hateoas/refresh_downloads_table.py
+|4,39,41,35,1714194839,"~/hateoas/refresh_downloads_table.py"
+-'  41  35  ~/hateoas/refresh_downloads_table.py
+|4,39,41,35,1714194839,"~/hateoas/refresh_downloads_table.py"
+-'  40  99  ~/hateoas/refresh_downloads_table.py
+|4,39,40,99,1714194837,"~/hateoas/refresh_downloads_table.py"
+-'  40  99  ~/hateoas/refresh_downloads_table.py
+|4,39,40,99,1714194837,"~/hateoas/refresh_downloads_table.py"
+-'  40  99  ~/hateoas/refresh_downloads_table.py
+|4,39,40,99,1714194837,"~/hateoas/refresh_downloads_table.py"
+-'  40  99  ~/hateoas/refresh_downloads_table.py
+|4,39,40,99,1714194837,"~/hateoas/refresh_downloads_table.py"
+-'  40  99  ~/hateoas/refresh_downloads_table.py
+|4,39,40,99,1714194837,"~/hateoas/refresh_downloads_table.py"
+-'  36  16  ~/hateoas/refresh_downloads_table.py
+|4,39,36,16,1714194788,"~/hateoas/refresh_downloads_table.py"
+-'  36  16  ~/hateoas/refresh_downloads_table.py
+|4,39,36,16,1714194788,"~/hateoas/refresh_downloads_table.py"
+-'  36  16  ~/hateoas/refresh_downloads_table.py
+|4,39,36,16,1714194788,"~/hateoas/refresh_downloads_table.py"
+-'  36  16  ~/hateoas/refresh_downloads_table.py
+|4,39,36,16,1714194788,"~/hateoas/refresh_downloads_table.py"
+-'  36  16  ~/hateoas/refresh_downloads_table.py
+|4,39,36,16,1714194788,"~/hateoas/refresh_downloads_table.py"
+-'  5  0  ~/hateoas/refresh_downloads_table.py
+|4,39,5,0,1714194719,"~/hateoas/refresh_downloads_table.py"
+-'  5  0  ~/hateoas/refresh_downloads_table.py
+|4,39,5,0,1714194719,"~/hateoas/refresh_downloads_table.py"
+-'  5  0  ~/hateoas/refresh_downloads_table.py
+|4,39,5,0,1714194719,"~/hateoas/refresh_downloads_table.py"
+-'  5  0  ~/hateoas/refresh_downloads_table.py
+|4,39,5,0,1714194719,"~/hateoas/refresh_downloads_table.py"
+-'  5  0  ~/hateoas/refresh_downloads_table.py
+|4,39,5,0,1714194719,"~/hateoas/refresh_downloads_table.py"
+-'  54  12  ~/hateoas/refresh_downloads_table.py
+|4,39,54,12,1714194645,"~/hateoas/refresh_downloads_table.py"
+-'  54  12  ~/hateoas/refresh_downloads_table.py
+|4,39,54,12,1714194645,"~/hateoas/refresh_downloads_table.py"
+-'  54  12  ~/hateoas/refresh_downloads_table.py
+|4,39,54,12,1714194645,"~/hateoas/refresh_downloads_table.py"
+-'  54  12  ~/hateoas/refresh_downloads_table.py
+|4,39,54,12,1714194645,"~/hateoas/refresh_downloads_table.py"
+-'  54  12  ~/hateoas/refresh_downloads_table.py
+|4,39,54,12,1714194645,"~/hateoas/refresh_downloads_table.py"
+-'  39  4  ~/hateoas/download_portionurl.py
+|4,39,39,4,1714194552,"~/hateoas/download_portionurl.py"
+-'  39  4  ~/hateoas/download_portionurl.py
+|4,39,39,4,1714194552,"~/hateoas/download_portionurl.py"
+-'  39  4  ~/hateoas/download_portionurl.py
+|4,39,39,4,1714194552,"~/hateoas/download_portionurl.py"
+-'  39  4  ~/hateoas/download_portionurl.py
+|4,39,39,4,1714194552,"~/hateoas/download_portionurl.py"
+-'  39  4  ~/hateoas/download_portionurl.py
+|4,39,39,4,1714194552,"~/hateoas/download_portionurl.py"
+-'  11  0  ~/hateoas/download_portionurl.py
+|4,39,11,0,1714194309,"~/hateoas/download_portionurl.py"
+-'  11  0  ~/hateoas/download_portionurl.py
+|4,39,11,0,1714194309,"~/hateoas/download_portionurl.py"
+-'  11  0  ~/hateoas/download_portionurl.py
+|4,39,11,0,1714194309,"~/hateoas/download_portionurl.py"
+-'  11  0  ~/hateoas/download_portionurl.py
+|4,39,11,0,1714194309,"~/hateoas/download_portionurl.py"
+-'  11  0  ~/hateoas/download_portionurl.py
+|4,39,11,0,1714194309,"~/hateoas/download_portionurl.py"
+-'  82  8  ~/hateoas/download_portionurl.py
+|4,39,82,8,1714194306,"~/hateoas/download_portionurl.py"
+-'  82  8  ~/hateoas/download_portionurl.py
+|4,39,82,8,1714194306,"~/hateoas/download_portionurl.py"
+-'  82  8  ~/hateoas/download_portionurl.py
+|4,39,82,8,1714194306,"~/hateoas/download_portionurl.py"
+-'  82  8  ~/hateoas/download_portionurl.py
+|4,39,82,8,1714194306,"~/hateoas/download_portionurl.py"
+-'  82  8  ~/hateoas/download_portionurl.py
+|4,39,82,8,1714194306,"~/hateoas/download_portionurl.py"
+-'  63  41  ~/hateoas/download_portionurl.py
+|4,39,63,41,1714194273,"~/hateoas/download_portionurl.py"
+-'  63  41  ~/hateoas/download_portionurl.py
+|4,39,63,41,1714194273,"~/hateoas/download_portionurl.py"
+-'  63  41  ~/hateoas/download_portionurl.py
+|4,39,63,41,1714194273,"~/hateoas/download_portionurl.py"
+-'  63  41  ~/hateoas/download_portionurl.py
+|4,39,63,41,1714194273,"~/hateoas/download_portionurl.py"
+-'  63  41  ~/hateoas/download_portionurl.py
+|4,39,63,41,1714194273,"~/hateoas/download_portionurl.py"
+-'  60  12  ~/hateoas/download_portionurl.py
+|4,39,60,12,1714194252,"~/hateoas/download_portionurl.py"
 
 # Buffer list:
-%~/hateoas/hateoas-api.py	235	4
-%~/hateoas/orm.py	35	4
-%~/hateoas/main.sql	3	0
-%~/.vim/coc-settings.json	39	0
-%~/hateoas/pyrightconfig.json	5	0
+%~/hateoas/refresh-downloads-db.bash	1	0
 
 # History of marks within files (newest to oldest):
+
+> ~/hateoas/refresh-downloads-db.bash
+	*	1714195155	0
+	"	1	0
+	^	10	64
+	.	10	63
+	+	3	88
+	+	3	28
+	+	5	0
+	+	6	0
+	+	12	0
+	+	11	0
+	+	13	0
+	+	10	63
+
+> ~/hateoas/statements.py
+	*	1714195114	0
+	"	1	0
+	^	1	18
+	.	1	17
+	+	25	0
+	+	42	0
+	+	25	0
+	+	9	0
+	+	2	0
+	+	8	0
+	+	41	0
+	+	1	17
+
+> ~/hateoas/test-sql.py
+	*	1714195111	0
+	"	1	0
+	.	1	0
+	+	1	0
+	+	1	4
+	+	1	0
+	+	1	10
+	+	1	0
+	+	1	27
+	+	1	61
+	+	1	12
+	+	1	25
+	+	1	0
+	+	1	29
+	+	1	43
+	+	1	4
+	+	1	0
+	+	1	37
+	+	1	22
+	+	1	37
+	+	1	0
+	+	1	5
+	+	1	12
+	+	1	65
+	+	1	0
+	+	1	65
+	+	1	12
+	+	1	51
+	+	1	4
+	+	1	0
+	+	1	12
+	+	1	0
+	+	1	93
+	+	1	0
+	+	1	40
+	+	1	53
+	+	1	19
+	+	1	14
+	+	1	5
+	+	1	0
+
+> ~/hateoas/refresh_downloads_table.py
+	*	1714195082	0
+	"	33	0
+	^	52	23
+	.	86	0
+	+	5	0
+	+	2	0
+	+	4	13
+	+	89	5
+	+	90	5
+	+	68	48
+	+	69	4
+	+	70	58
+	+	71	4
+	+	75	0
+	+	67	3
+	+	67	4
+	+	67	0
+	+	85	3
+	+	84	9
+	+	84	0
+	+	67	0
+	+	84	0
+	+	85	0
+	+	84	8
+	+	67	0
+	+	72	16
+	+	75	38
+	+	73	16
+	+	73	11
+	+	75	9
+	+	75	0
+	+	75	12
+	+	84	0
+	+	73	40
+	+	75	0
+	+	73	52
+	+	73	17
+	+	73	0
+	+	73	83
+	+	73	80
+	+	73	45
+	+	73	0
+	+	73	11
+	+	73	0
+	+	73	40
+	+	84	0
+	+	78	85
+	+	84	0
+	+	78	9
+	+	79	51
+	+	80	4
+	+	84	0
+	+	32	32
+	+	55	0
+	+	33	76
+	+	34	58
+	+	35	40
+	+	36	8
+	+	36	34
+	+	36	71
+	+	36	90
+	+	53	32
+	+	53	12
+	+	53	39
+	+	53	12
+	+	54	13
+	+	54	0
+	+	53	0
+	+	31	0
+	+	31	91
+	+	31	32
+	+	8	0
+	+	17	41
+	+	18	4
+	+	11	19
+	+	12	22
+	+	13	24
+	+	14	24
+	+	36	0
+	+	36	24
+	+	37	51
+	+	38	19
+	+	39	12
+	+	40	34
+	+	46	0
+	+	46	17
+	+	42	21
+	+	42	118
+	+	43	45
+	+	46	40
+	+	46	20
+	+	46	45
+	+	46	0
+	+	44	59
+	+	45	21
+	+	52	4
+	+	86	0
+
+> ~/hateoas/download_portionurl.py
+	*	1714194338	0
+	"	39	4
+	^	71	0
+	.	11	0
+	+	93	0
+	+	78	0
+	+	83	31
+	+	88	50
+	+	90	22
+	+	79	0
+	+	83	0
+	+	81	14
+	+	83	0
+	+	92	31
+	+	52	0
+	+	88	0
+	+	83	35
+	+	86	24
+	+	88	0
+	+	87	20
+	+	80	24
+	+	81	0
+	+	81	16
+	+	93	24
+	+	80	23
+	+	81	0
+	+	93	12
+	+	52	0
+	+	52	11
+	+	93	0
+	+	52	0
+	+	72	22
+	+	86	0
+	+	82	32
+	+	89	0
+	+	83	0
+	+	84	72
+	+	85	26
+	+	58	19
+	+	24	29
+	+	52	0
+	+	25	0
+	+	51	4
+	+	47	4
+	+	46	0
+	+	50	0
+	+	63	4
+	+	70	0
+	+	64	98
+	+	65	41
+	+	66	8
+	+	67	40
+	+	68	56
+	+	69	42
+	+	70	0
+	+	67	0
+	+	67	15
+	+	67	12
+	+	67	0
+	+	66	24
+	+	67	0
+	+	63	13
+	+	72	0
+	+	70	21
+	+	72	34
+	+	72	0
+	+	70	0
+	+	60	4
+	+	60	12
+	+	63	22
+	+	60	0
+	+	72	0
+	+	71	0
+	+	82	0
+	+	11	0
+
+> ~/hateoas/hateoas-api.py
+	*	1714193952	0
+	"	200	23
+	^	200	24
+	.	200	23
+	+	1	0
+	+	2	0
+	+	41	0
+	+	41	111
+	+	41	116
+	+	41	27
+	+	41	108
+	+	41	0
+	+	41	83
+	+	41	0
+	+	41	77
+	+	41	0
+	+	41	88
+	+	41	0
+	+	1	0
+	+	1	58
+	+	1	37
+	+	1	38
+	+	1	4
+	+	1	13
+	+	1	4
+	+	41	124
+	+	41	26
+	+	41	30
+	+	41	0
+	+	41	30
+	+	41	31
+	+	41	0
+	+	41	47
+	+	33	0
+	+	34	0
+	+	34	4
+	+	34	0
+	+	33	49
+	+	33	36
+	+	33	0
+	+	32	86
+	+	11	0
+	+	9	16
+	+	11	0
+	+	9	8
+	+	11	42
+	+	10	0
+	+	1	0
+	+	31	98
+	+	33	82
+	+	41	59
+	+	12	0
+	+	11	21
+	+	11	2
+	+	11	37
+	+	11	4
+	+	11	14
+	+	12	28
+	+	11	37
+	+	41	33
+	+	41	54
+	+	41	0
+	+	41	47
+	+	41	24
+	+	41	101
+	+	41	31
+	+	41	24
+	+	41	0
+	+	41	103
+	+	11	31
+	+	11	66
+	+	41	77
+	+	41	0
+	+	243	0
+	+	232	0
+	+	200	0
+	+	201	28
+	+	217	0
+	+	218	28
+	+	230	0
+	+	217	0
+	+	217	74
+	+	230	55
+	+	230	24
+	+	217	0
+	+	230	0
+	+	224	0
+	+	205	0
+	+	203	0
+	+	215	0
+	+	216	0
+	+	203	0
+	+	204	0
+	+	202	0
+	+	206	118
+	+	220	33
+	+	229	21
+	+	222	0
+	+	224	0
+	+	223	0
+	+	200	23
+
+> ~/hateoas/static/css/hateoas.css
+	*	1714193350	0
+	"	4	25
+	^	4	26
+	.	4	25
+	+	2	48
+	+	3	45
+	+	5	50
+	+	12	39
+	+	9	0
+	+	10	36
+	+	11	0
+	+	13	40
+	+	6	45
+	+	7	8
+	+	5	29
+	+	2	49
+	+	3	44
+	+	10	34
+	+	14	59
+	+	16	12
+	+	5	43
+	+	20	83
+	+	20	0
+	+	20	94
+	+	19	10
+	+	18	0
+	+	19	60
+	+	20	57
+	+	19	47
+	+	19	86
+	+	20	83
+	+	2	54
+	+	3	51
+	+	21	127
+	+	21	89
+	+	5	0
+	+	10	37
+	+	14	17
+	+	15	27
+	+	17	5
+	+	22	41
+	+	23	5
+	+	23	33
+	+	22	25
+	+	22	36
+	+	19	0
+	+	17	0
+	+	9	0
+	+	2	0
+	+	19	0
+	+	20	103
+	+	20	0
+	+	24	0
+	+	25	0
+	+	4	25
+
+> ~/hateoas/db2dl.py
+	*	1714156802	0
+	"	55	0
+	^	10	59
+	.	10	8
+	+	4	29
+	+	55	29
+	+	55	0
+	+	4	9
+	+	5	10
+	+	11	11
+	+	55	25
+	+	55	4
+	+	55	27
+	+	55	24
+	+	55	11
+	+	55	4
+	+	55	0
+	+	15	27
+	+	16	3
+	+	15	14
+	+	55	0
+	+	16	31
+	+	16	29
+	+	16	0
+	+	55	0
+	+	11	0
+	+	55	0
+	+	6	29
+	+	17	24
+	+	38	30
+	+	38	99
+	+	38	58
+	+	38	40
+	+	38	36
+	+	7	32
+	+	38	15
+	+	38	36
+	+	38	12
+	+	38	11
+	+	38	12
+	+	38	13
+	+	38	12
+	+	38	0
+	+	55	0
+	+	38	0
+	+	38	23
+	+	38	0
+	+	13	0
+	+	14	0
+	+	38	0
+	+	18	25
+	+	19	0
+	+	21	0
+	+	22	7
+	+	7	59
+	+	8	50
+	+	28	44
+	+	38	5
+	+	28	1
+	+	28	65
+	+	29	44
+	+	38	38
+	+	38	0
+	+	29	18
+	+	30	44
+	+	38	0
+	+	30	21
+	+	30	126
+	+	30	7
+	+	31	31
+	+	38	0
+	+	31	60
+	+	33	24
+	+	35	22
+	+	37	0
+	+	38	0
+	+	26	25
+	+	9	20
+	+	34	6
+	+	15	10
+	+	16	0
+	+	15	0
+	+	17	0
+	+	12	0
+	+	15	0
+	+	39	0
+	+	46	0
+	+	50	10
+	+	53	4
+	+	51	7
+	+	47	25
+	+	49	18
+	+	50	0
+	+	26	40
+	+	23	7
+	+	26	0
+	+	14	0
+	+	14	98
+	+	15	0
+	+	13	0
+	+	10	8
+
+> ~/hateoas/Types.py
+	*	1714155419	0
+	"	48	0
+	^	47	168
+	.	46	15
+	+	15	20
+	+	13	0
+	+	15	23
+	+	16	8
+	+	15	0
+	+	21	0
+	+	14	0
+	+	22	21
+	+	42	8
+	+	23	8
+	+	23	35
+	+	24	36
+	+	25	102
+	+	26	41
+	+	27	15
+	+	23	0
+	+	27	38
+	+	27	15
+	+	27	41
+	+	27	35
+	+	27	83
+	+	26	0
+	+	25	66
+	+	26	23
+	+	27	117
+	+	27	19
+	+	28	84
+	+	29	25
+	+	31	30
+	+	32	103
+	+	33	31
+	+	34	23
+	+	35	8
+	+	37	26
+	+	38	44
+	+	46	11
+	+	46	15
+
+> ~/hateoas/main.sql
+	*	1714153993	0
+	"	32	34
+	.	1	0
+	+	20	153
+	+	20	255
+	+	20	260
+	+	20	287
+	+	20	255
+	+	20	259
+	+	9	0
+	+	3	26
+	+	3	0
+	+	1	0
+	+	3	26
+	+	3	0
+	+	20	0
+	+	3	0
+	+	20	0
+	+	3	26
+	+	3	0
+	+	20	0
+	+	3	0
+	+	37	0
+	+	20	0
+	+	9	283
+	+	9	282
+	+	9	339
+	+	9	283
+	+	39	0
+	+	40	0
+	+	38	2
+	+	39	0
+	+	38	5
+	+	39	31
+	+	41	0
+	+	37	0
+	+	37	103
+	+	37	225
+	+	37	153
+	+	37	226
+	+	3	0
+	+	37	0
+	+	9	215
+	+	20	165
+	+	37	0
+	+	9	282
+	+	37	0
+	+	30	0
+	+	30	119
+	+	37	62
+	+	37	0
+	+	37	37
+	+	37	153
+	+	37	6
+	+	37	78
+	+	30	97
+	+	37	0
+	+	30	97
+	+	37	0
+	+	30	144
+	+	37	75
+	+	30	97
+	+	30	211
+	+	30	97
+	+	30	211
+	+	3	115
+	+	9	289
+	+	20	262
+	+	30	290
+	+	3	22
+	+	1	0
+	+	3	23
+	+	3	62
+	+	3	82
+	+	3	22
+	+	9	0
+	+	8	0
+	+	3	108
+	+	3	0
+	+	9	0
+	+	9	193
+	+	40	0
+	+	1	0
+	+	37	0
+	+	9	136
+	+	20	174
+	+	9	211
+	+	9	186
+	+	20	139
+	+	40	0
+	+	3	0
+	+	30	0
+	+	3	0
+	+	30	0
+	+	9	187
+	+	3	0
+	+	1	0
+	+	3	0
+	+	1	0
+
+> ~/hateoas/input.py
+	*	1714141488	0
+	"	1	0
+	.	2	0
+	+	2	0
 
 > ~/hateoas/orm.py
 	*	1714121525	0
@@ -8444,200 +9128,6 @@ $
 	.	5	0
 	+	5	0
 
-> ~/hateoas/hateoas-api.py
-	*	1714110451	0
-	"	235	4
-	.	235	0
-	+	1	0
-	+	1	20
-	+	2	0
-	+	41	0
-	+	41	14
-	+	41	39
-	+	41	0
-	+	41	106
-	+	41	0
-	+	18	54
-	+	18	112
-	+	18	79
-	+	18	70
-	+	18	12
-	+	18	111
-	+	1	0
-	+	1	46
-	+	1	0
-	+	1	5
-	+	1	0
-	+	2	0
-	+	41	0
-	+	41	111
-	+	41	116
-	+	41	27
-	+	41	108
-	+	41	0
-	+	41	83
-	+	41	0
-	+	41	77
-	+	41	0
-	+	41	88
-	+	41	0
-	+	1	0
-	+	1	58
-	+	1	37
-	+	1	38
-	+	1	4
-	+	1	13
-	+	1	4
-	+	41	124
-	+	41	26
-	+	41	30
-	+	41	0
-	+	41	30
-	+	41	31
-	+	41	0
-	+	41	47
-	+	33	0
-	+	34	0
-	+	34	4
-	+	34	0
-	+	33	49
-	+	33	36
-	+	33	0
-	+	32	86
-	+	11	0
-	+	9	16
-	+	11	0
-	+	9	8
-	+	11	42
-	+	10	0
-	+	1	0
-	+	31	98
-	+	33	82
-	+	41	59
-	+	12	0
-	+	11	21
-	+	11	2
-	+	11	37
-	+	11	4
-	+	11	14
-	+	12	28
-	+	11	37
-	+	41	33
-	+	41	54
-	+	41	0
-	+	41	47
-	+	41	24
-	+	41	101
-	+	41	31
-	+	41	24
-	+	41	0
-	+	41	103
-	+	11	31
-	+	11	66
-	+	41	77
-	+	41	0
-	+	235	0
-
-> ~/hateoas/main.sql
-	*	1714109616	0
-	"	3	0
-	.	3	0
-	+	7	153
-	+	7	255
-	+	7	260
-	+	7	287
-	+	7	255
-	+	7	259
-	+	5	0
-	+	3	26
-	+	3	0
-	+	1	0
-	+	3	26
-	+	3	0
-	+	7	0
-	+	3	0
-	+	7	0
-	+	3	26
-	+	3	0
-	+	7	0
-	+	3	0
-	+	11	0
-	+	7	0
-	+	5	283
-	+	5	282
-	+	5	339
-	+	5	283
-	+	13	0
-	+	14	0
-	+	12	2
-	+	13	0
-	+	12	5
-	+	13	31
-	+	15	0
-	+	11	0
-	+	11	103
-	+	11	225
-	+	11	153
-	+	11	226
-	+	3	0
-	+	11	0
-	+	5	215
-	+	7	165
-	+	11	0
-	+	5	282
-	+	11	0
-	+	9	0
-	+	9	119
-	+	11	62
-	+	11	0
-	+	11	37
-	+	11	153
-	+	11	6
-	+	11	78
-	+	9	97
-	+	11	0
-	+	9	97
-	+	11	0
-	+	9	144
-	+	11	75
-	+	9	97
-	+	9	211
-	+	9	97
-	+	9	211
-	+	3	115
-	+	5	289
-	+	7	262
-	+	9	290
-	+	3	22
-	+	1	0
-	+	3	23
-	+	3	62
-	+	3	82
-	+	3	22
-	+	5	0
-	+	4	0
-	+	3	108
-	+	3	0
-	+	5	0
-	+	5	193
-	+	14	0
-	+	1	0
-	+	11	0
-	+	5	136
-	+	7	174
-	+	5	211
-	+	5	186
-	+	7	139
-	+	14	0
-	+	3	0
-	+	9	0
-	+	3	0
-	+	9	0
-	+	5	187
-	+	3	0
-	+	1	0
-	+	3	0
-
 > ~/.vim/plugin/sqljoin.vim
 	*	1714109125	0
 	"	24	4
@@ -8698,150 +9188,6 @@ $
 	+	23	11
 	+	25	0
 	+	24	20
-
-> ~/hateoas/Types.py
-	*	1714108650	0
-	"	67	4
-	^	41	26
-	.	38	44
-	+	15	20
-	+	13	0
-	+	15	23
-	+	16	8
-	+	15	0
-	+	21	0
-	+	14	0
-	+	22	21
-	+	42	8
-	+	23	8
-	+	23	35
-	+	24	36
-	+	25	102
-	+	26	41
-	+	27	15
-	+	23	0
-	+	27	38
-	+	27	15
-	+	27	41
-	+	27	35
-	+	27	83
-	+	26	0
-	+	25	66
-	+	26	23
-	+	27	117
-	+	27	19
-	+	28	84
-	+	29	25
-	+	31	30
-	+	32	103
-	+	33	31
-	+	34	23
-	+	35	8
-	+	37	26
-	+	38	44
-
-> ~/hateoas/db2dl.py
-	*	1714108117	0
-	"	26	0
-	^	10	59
-	.	10	8
-	+	4	29
-	+	55	29
-	+	55	0
-	+	4	9
-	+	5	10
-	+	11	11
-	+	55	25
-	+	55	4
-	+	55	27
-	+	55	24
-	+	55	11
-	+	55	4
-	+	55	0
-	+	15	27
-	+	16	3
-	+	15	14
-	+	55	0
-	+	16	31
-	+	16	29
-	+	16	0
-	+	55	0
-	+	11	0
-	+	55	0
-	+	6	29
-	+	17	24
-	+	38	30
-	+	38	99
-	+	38	58
-	+	38	40
-	+	38	36
-	+	7	32
-	+	38	15
-	+	38	36
-	+	38	12
-	+	38	11
-	+	38	12
-	+	38	13
-	+	38	12
-	+	38	0
-	+	55	0
-	+	38	0
-	+	38	23
-	+	38	0
-	+	13	0
-	+	14	0
-	+	38	0
-	+	18	25
-	+	19	0
-	+	21	0
-	+	22	7
-	+	7	59
-	+	8	50
-	+	28	44
-	+	38	5
-	+	28	1
-	+	28	65
-	+	29	44
-	+	38	38
-	+	38	0
-	+	29	18
-	+	30	44
-	+	38	0
-	+	30	21
-	+	30	126
-	+	30	7
-	+	31	31
-	+	38	0
-	+	31	60
-	+	33	24
-	+	35	22
-	+	37	0
-	+	38	0
-	+	26	25
-	+	9	20
-	+	34	6
-	+	15	10
-	+	16	0
-	+	15	0
-	+	17	0
-	+	12	0
-	+	15	0
-	+	39	0
-	+	46	0
-	+	50	10
-	+	53	4
-	+	51	7
-	+	47	25
-	+	49	18
-	+	50	0
-	+	26	40
-	+	23	7
-	+	26	0
-	+	14	0
-	+	14	98
-	+	15	0
-	+	13	0
-	+	10	8
 
 > ~/tooling/typescript-goals.txt
 	*	1714108114	0
@@ -9018,62 +9364,12 @@ $
 	+	13	0
 	+	12	0
 
-> ~/hateoas/download_portionurl.py
-	*	1714062701	0
-	"	31	4
-	^	28	80
-	.	28	0
-	+	72	0
-	+	61	0
-	+	65	31
-	+	68	50
-	+	69	22
-	+	62	0
-	+	65	0
-	+	64	14
-	+	65	0
-	+	71	31
-	+	30	0
-	+	68	0
-	+	65	35
-	+	66	24
-	+	68	0
-	+	67	20
-	+	63	24
-	+	64	0
-	+	64	16
-	+	72	24
-	+	63	23
-	+	64	0
-	+	72	12
-	+	30	0
-	+	29	0
-	+	28	11
-	+	72	0
-	+	28	0
-
 > ~/hateoas/ids.txt
 	*	1714062226	0
 	"	4	1
 	^	4	2
 	.	4	1
 	+	4	1
-
-> ~/hateoas/refresh_downloads_table.py
-	*	1714062185	0
-	"	23	0
-	^	23	0
-	.	23	0
-	+	5	0
-	+	2	0
-	+	4	13
-	+	27	5
-	+	28	5
-	+	16	48
-	+	17	4
-	+	18	58
-	+	19	4
-	+	23	0
 
 > ~/hateoas/create-databases.py
 	*	1714047364	0
@@ -9269,20 +9565,6 @@ $
 	+	20	26
 	+	11	0
 	+	10	0
-
-> ~/hateoas/refresh-downloads-db.bash
-	*	1714046100	0
-	"	1	0
-	^	10	64
-	.	10	63
-	+	3	88
-	+	3	28
-	+	5	0
-	+	6	0
-	+	12	0
-	+	11	0
-	+	13	0
-	+	10	63
 
 > ~/.sqliterc
 	*	1714042619	0
@@ -9840,60 +10122,6 @@ $
 > /usr/lib/python3.10/types.py
 	*	1713951562	0
 	"	1	0
-
-> ~/hateoas/static/css/hateoas.css
-	*	1713942856	0
-	"	19	102
-	^	19	106
-	.	19	0
-	+	2	48
-	+	3	45
-	+	4	50
-	+	11	39
-	+	8	0
-	+	9	36
-	+	10	0
-	+	12	40
-	+	5	45
-	+	6	8
-	+	4	29
-	+	2	49
-	+	3	44
-	+	9	34
-	+	13	59
-	+	15	12
-	+	4	43
-	+	19	83
-	+	19	0
-	+	19	94
-	+	18	10
-	+	17	0
-	+	18	60
-	+	19	57
-	+	18	47
-	+	18	86
-	+	19	83
-	+	2	54
-	+	3	51
-	+	20	127
-	+	20	89
-	+	4	0
-	+	9	37
-	+	13	17
-	+	14	27
-	+	16	5
-	+	21	41
-	+	22	5
-	+	22	33
-	+	21	25
-	+	21	36
-	+	18	0
-	+	16	0
-	+	8	0
-	+	2	0
-	+	18	0
-	+	19	103
-	+	19	0
 
 > ~/hateoas/requirements.txt
 	*	1713932562	0
