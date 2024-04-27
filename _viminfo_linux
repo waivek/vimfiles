@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/selected urls
+~MSle0~/\$1
 
 # Last Substitute Search Pattern:
 ~MSle0&?
@@ -21,11 +21,49 @@ $
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1714195156,,"q"
+|2,0,1714228921,,"q"
+:LogPrettyPrintLine
+|2,0,1714228267,,"LogPrettyPrintLine"
+:MRU log
+|2,0,1714228261,,"MRU log"
+:MRU 9:refresh_downloads_table.log
+|2,0,1714221683,,"MRU 9:refresh_downloads_table.log"
+:MRU lo
+|2,0,1714221681,,"MRU lo"
+:q!
+|2,0,1714221542,,"q!"
+:echo g:copilot_workspace_folders
+|2,0,1714221134,,"echo g:copilot_workspace_folders"
+:edit $MYVIMRC
+|2,0,1714221123,,"edit $MYVIMRC"
+:e cron-concerns.txt
+|2,0,1714220942,,"e cron-concerns.txt"
+: w ~/tooling/cron.man
+|2,0,1714220933,," w ~/tooling/cron.man"
+:e
+|2,0,1714220929,,"e"
+:set ft=man
+|2,0,1714220583,,"set ft=man"
+:llllllll
+|2,0,1714213811,,"llllllll"
+:MRU 
+|2,0,1714213802,,"MRU "
+:term python
+|2,0,1714213586,,"term python"
+:ec
+|2,0,1714213551,,"ec"
+:MRU 2:refresh_downloads_table.py
+|2,0,1714213396,,"MRU 2:refresh_downloads_table.py"
+:MRU 10:refresh_downloads_table.py
+|2,0,1714212958,,"MRU 10:refresh_downloads_table.py"
+:bd
+|2,0,1714212948,,"bd"
+:MRU bas
+|2,0,1714212199,,"MRU bas"
+:set nonumber
+|2,0,1714211820,,"set nonumber"
 :e refresh_downloads_table.py
 |2,0,1714194552,,"e refresh_downloads_table.py"
-:set nonumber
-|2,0,1714194160,,"set nonumber"
 :e download_portionurl.py
 |2,0,1714193986,,"e download_portionurl.py"
 :GFiles
@@ -62,8 +100,6 @@ $
 |2,0,1714141495,,"e statements.py"
 :e input.py
 |2,0,1714141487,,"e input.py"
-:q!
-|2,0,1714141447,,"q!"
 :Template
 |2,0,1714137290,,"Template"
 :e hateoas-api.py
@@ -112,8 +148,6 @@ $
 |2,0,1714108382,,"grep -g '*.py' sqlmodel"
 :e!
 |2,0,1714108217,,"e!"
-:bd
-|2,0,1714108117,,"bd"
 :e ~/tooling/typescript-goals.txt
 |2,0,1714108020,,"e ~/tooling/typescript-goals.txt"
 :e ~/Too
@@ -124,8 +158,6 @@ $
 |2,0,1714062660,,"e por"
 :e refresh-downloads-db.bash
 |2,0,1714062071,,"e refresh-downloads-db.bash"
-:e
-|2,0,1714062067,,"e"
 :e 
 |2,0,1714062051,,"e "
 :MRU hate
@@ -134,8 +166,6 @@ $
 |2,0,1714061069,,"enew"
 :b db2dl.py
 |2,0,1714054869,,"b db2dl.py"
-:MRU 
-|2,0,1714054706,,"MRU "
 :term
 |2,0,1714053980,,"term"
 :!rm /tmp/db2dl.py.lock
@@ -268,14 +298,10 @@ $
 |2,0,1713970243,,"Rename download_portionurl.py"
 :e download-portionurl.py
 |2,0,1713970231,,"e download-portionurl.py"
-:echo g:copilot_workspace_folders
-|2,0,1713970050,,"echo g:copilot_workspace_folders"
 :Copilot enable
 |2,0,1713970041,,"Copilot enable"
 :Copilot disable
 |2,0,1713970038,,"Copilot disable"
-:edit $MYVIMRC
-|2,0,1713970014,,"edit $MYVIMRC"
 :OpenDB data/videos.db
 |2,0,1713969088,,"OpenDB data/videos.db"
 :VD data/videos.db
@@ -604,8 +630,6 @@ $
 |2,0,1713773469,,"e .bashrc"
 :MRU todo
 |2,0,1713772826,,"MRU todo"
-:MRU bas
-|2,0,1713772815,,"MRU bas"
 :MRU 1:.bashrc
 |2,0,1713772544,,"MRU 1:.bashrc"
 :e ~/.bashrc
@@ -654,8 +678,6 @@ $
 |2,0,1713758083,,"e ~/.config/todo.txt"
 :Copilot panel
 |2,0,1713757752,,"Copilot panel"
-:set ft=man
-|2,0,1713754752,,"set ft=man"
 :34
 |2,0,1713754107,,"34"
 :MRU ni
@@ -702,8 +724,6 @@ $
 |2,0,1713712482,,"MRU 104:hateoas/requirements.txt"
 :e g
 |2,0,1713702557,,"e g"
-:LogPrettyPrintLine
-|2,0,1713699748,,"LogPrettyPrintLine"
 :e target.bash
 |2,0,1713697303,,"e target.bash"
 :Jlast
@@ -732,8 +752,6 @@ $
 |2,0,1713687882,,"LogTest"
 :s/
 |2,0,1713687808,,"s/"
-:MRU log
-|2,0,1713687647,,"MRU log"
 :echo strptime()
 |2,0,1713687603,,"echo strptime()"
 :ecoh strp
@@ -3300,12 +3318,8 @@ $
 |2,0,1693292351,,"echo expand(\"%:ht\")"
 :echo expand("%")
 |2,0,1693292345,,"echo expand(\"%\")"
-:term python
-|2,0,1693292288,,"term python"
 :term echo "HELLO"
 |2,0,1693292279,,"term echo \"HELLO\""
-:MRU lo
-|2,0,1693292039,,"MRU lo"
 :MRU compl
 |2,0,1693291849,,"MRU compl"
 :119
@@ -3966,8 +3980,6 @@ $
 |2,0,1692439673,,"echo getwininfo(win_getid())[0]['terminal']"
 :echo getwininfo(win_getid())
 |2,0,1692439663,,"echo getwininfo(win_getid())"
-:ec
-|2,0,1692439657,,"ec"
 :echo getwininfo(1)
 |2,0,1692439649,,"echo getwininfo(1)"
 :echo winnr()
@@ -5638,6 +5650,16 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/\$1
+|2,1,1714228358,47,"\\$1"
+?/%w
+|2,1,1714221523,47,"%w"
+?/-w
+|2,1,1714221508,47,"-w"
+? @$
+|2,1,1714221134,,"@$"
+?/rel2abs
+|2,1,1714211334,47,"rel2abs"
 ?/selected urls
 |2,1,1714193191,47,"selected urls"
 ?/\(def\|class\)\s\+\w*view_portion
@@ -5692,8 +5714,6 @@ $
 |2,1,1714042140,47,"duration = "
 ?/update
 |2,1,1714042050,47,"update"
-? @$
-|2,1,1714036880,,"@$"
 ?/sqlfluff
 |2,1,1714036826,47,"sqlfluff"
 ?/refined
@@ -6324,8 +6344,6 @@ $
 |2,1,1711875641,63,"\\a"
 ??pyright
 |2,1,1711875194,63,"pyright"
-?/rel2abs
-|2,1,1711874622,47,"rel2abs"
 ?/vue
 |2,1,1711570849,47,"vue"
 ?/k
@@ -7955,43 +7973,51 @@ $
 
 # Registers:
 "0	LINE	0
-	                if status ==
-|3,0,0,1,1,0,1714194939,"                if status =="
-""1	LINE	0
 	
-|3,1,1,1,1,0,1714195002,""
+|3,0,0,1,1,0,1714221516,""
 "2	LINE	0
 	
-	                # connection.execute("UPDATE downloads SET status = 'pending' WHERE portionurl_id = ?;", (portionurl_id,))
-|3,0,2,1,2,0,1714195001,"","                # connection.execute(\"UPDATE downloads SET status = 'pending' WHERE portionurl_id = ?;\", (portionurl_id,))"
+|3,0,2,1,1,0,1714221098,""
 "3	LINE	0
-	                if status == "paused":
 	
-|3,0,3,1,2,0,1714194972,"                if status == \"paused\":",""
+	
+|3,0,3,1,2,0,1714221098,"",""
 "4	LINE	0
-	                if status ==
-|3,0,4,1,1,0,1714194939,"                if status =="
+	
+	
+|3,0,4,1,2,0,1714221097,"",""
 "5	LINE	0
-	                if status == 'complete':
-	                    connection.execute("UPDATE downloads SET status = 'pending' WHERE portionurl_id = ?;", (portionurl_id,))
-	                elif status == 'downloading':
-|3,0,5,1,3,0,1714194927,"                if status == 'complete':","                    connection.execute(\"UPDATE downloads SET status = 'pending' WHERE portionurl_id = ?;\", (portionurl_id,))","                elif status == 'downloading':"
+	    Exit Code
+|3,0,5,1,1,0,1714221091,"    Exit Code"
 "6	LINE	0
-	                raise Exception("Both path and part files exist.")
-|3,0,6,1,1,0,1714194831,"                raise Exception(\"Both path and part files exist.\")"
+	    Outputs (stdout, stderr)
+|3,0,6,1,1,0,1714221087,"    Outputs (stdout, stderr)"
 "7	LINE	0
-	                connection.execute("UPDATE downloads SET status = 'complete' WHERE portionurl_id = ?;", (portionurl_id,))
-|3,0,7,1,1,0,1714194820,"                connection.execute(\"UPDATE downloads SET status = 'complete' WHERE portionurl_id = ?;\", (portionurl_id,))"
+	    Output (STDOUT)
+	    Error (STDERR)
+|3,0,7,1,2,0,1714221074,"    Output (STDOUT)","    Error (STDERR)"
 "8	LINE	0
-	        = portionurl_to_download_path(portionurl_id)
-|3,0,8,1,1,0,1714194792,"        = portionurl_to_download_path(portionurl_id)"
+	For every cronjob:
+	    
+|3,0,8,1,2,0,1714221071,"For every cronjob:","    "
 "9	LINE	0
-	        part_path = path + ".part"
-	        both_exist = os.path.exists(path) and os.path.exists(part_path)
-|3,0,9,1,2,0,1714194788,"        part_path = path + \".part\"","        both_exist = os.path.exists(path) and os.path.exists(part_path)"
+	    Cronjob Command
+	    Cronjob User
+	    Cronjob PID
+	    Cronjob Parent PID
+	    Cronjob Parent Name
+	    Cronjob Parent Command
+	    Cronjob Parent User
+	    Cronjob Parent PID
+	    Cronjob Parent Parent Name
+	    Cronjob Parent Parent Command
+	    Cronjob Parent Parent User
+	    Cronjob Parent Parent PID
+	    Cronjob Parent Parent Parent Name
+|3,0,9,1,13,0,1714221049,"    Cronjob Command","    Cronjob User","    Cronjob PID","    Cronjob Parent PID","    Cronjob Parent Name","    Cronjob Parent Command","    Cronjob Parent User","    Cronjob Parent PID","    Cronjob Parent Parent Name","    Cronjob Parent Parent Command","    Cronjob Parent Parent User","    Cronjob Parent Parent PID","    Cronjob Parent Parent Parent Name"
 "a	CHAR	0
 	Tabularize /,/l1c1l1c1l1c1l1
-|3,0,10,0,1,0,1714141312,"Tabularize /,/l1c1l1c1l1c1l1"
+|3,0,10,0,1,0,1714211797,"Tabularize /,/l1c1l1c1l1c1l1"
 "j	CHAR	0
 	k:q€ýa
 |3,0,19,0,1,0,1714046792,"k:q€ýa"
@@ -8033,487 +8059,423 @@ $
 |<"                <form method=\"POST\" action=\"/resume_download\">","                    <input type=\"hidden\" name=\"id\" value=\"{{ id }}\">","                    <input type=\"submit\" value=\"Resume\">","                </form>","                {% endif %}","                {% if status == 'downloading' %}","                <form method=\"POST\" action=\"/pause_download\">","                    <input type=\"hidden\" name=\"id\" value=\"{{ id }}\">",>61
 |<"                    <input type=\"submit\" value=\"Pause\">","                </form>","                {% endif %}","","            </li>","        {% endfor %}","    </ul>\"\"\", downloads=downloads)"
 "-	CHAR	0
-	.fetchone()[0]
-|3,0,36,0,1,0,1714194895,".fetchone()[0]"
+	 
+|3,0,36,0,1,0,1714228383," "
 
 # File marks:
-'0  1  0  ~/hateoas/refresh-downloads-db.bash
-|4,48,1,0,1714195156,"~/hateoas/refresh-downloads-db.bash"
-'1  1  0  ~/hateoas/refresh-downloads-db.bash
-|4,49,1,0,1714195150,"~/hateoas/refresh-downloads-db.bash"
-'2  1  0  ~/hateoas/statements.py
-|4,50,1,0,1714195115,"~/hateoas/statements.py"
-'3  1  0  ~/hateoas/statements.py
-|4,51,1,0,1714195115,"~/hateoas/statements.py"
-'4  1  0  ~/hateoas/statements.py
-|4,52,1,0,1714195115,"~/hateoas/statements.py"
-'5  1  0  ~/hateoas/statements.py
-|4,53,1,0,1714195115,"~/hateoas/statements.py"
-'6  1  0  ~/hateoas/test-sql.py
-|4,54,1,0,1714195112,"~/hateoas/test-sql.py"
-'7  1  0  ~/hateoas/test-sql.py
-|4,55,1,0,1714195112,"~/hateoas/test-sql.py"
-'8  1  0  ~/hateoas/test-sql.py
-|4,56,1,0,1714195112,"~/hateoas/test-sql.py"
-'9  1  0  ~/hateoas/test-sql.py
-|4,57,1,0,1714195112,"~/hateoas/test-sql.py"
+'0  1  0  ~/hateoas/rfv
+|4,48,1,0,1714228921,"~/hateoas/rfv"
+'1  1  0  ~/bash/logs/refresh_downloads_table.log
+|4,49,1,0,1714228794,"~/bash/logs/refresh_downloads_table.log"
+'2  1  0  ~/bash/logs/refresh_downloads_table.log
+|4,50,1,0,1714228794,"~/bash/logs/refresh_downloads_table.log"
+'3  19  50  ~/.config/alias.sh
+|4,51,19,50,1714228449,"~/.config/alias.sh"
+'4  19  50  ~/.config/alias.sh
+|4,52,19,50,1714228449,"~/.config/alias.sh"
+'5  19  50  ~/.config/alias.sh
+|4,53,19,50,1714228449,"~/.config/alias.sh"
+'6  19  50  ~/.config/alias.sh
+|4,54,19,50,1714228449,"~/.config/alias.sh"
+'7  19  10  ~/.config/alias.sh
+|4,55,19,10,1714228318,"~/.config/alias.sh"
+'8  19  10  ~/.config/alias.sh
+|4,56,19,10,1714228318,"~/.config/alias.sh"
+'9  19  10  ~/.config/alias.sh
+|4,57,19,10,1714228318,"~/.config/alias.sh"
 
 # Jumplist (newest first):
--'  1  0  ~/hateoas/refresh-downloads-db.bash
-|4,39,1,0,1714195156,"~/hateoas/refresh-downloads-db.bash"
--'  1  0  ~/hateoas/refresh-downloads-db.bash
-|4,39,1,0,1714195150,"~/hateoas/refresh-downloads-db.bash"
--'  1  0  ~/hateoas/statements.py
-|4,39,1,0,1714195115,"~/hateoas/statements.py"
--'  1  0  ~/hateoas/statements.py
-|4,39,1,0,1714195115,"~/hateoas/statements.py"
--'  1  0  ~/hateoas/statements.py
-|4,39,1,0,1714195115,"~/hateoas/statements.py"
--'  1  0  ~/hateoas/test-sql.py
-|4,39,1,0,1714195112,"~/hateoas/test-sql.py"
--'  1  0  ~/hateoas/test-sql.py
-|4,39,1,0,1714195112,"~/hateoas/test-sql.py"
--'  1  0  ~/hateoas/test-sql.py
-|4,39,1,0,1714195112,"~/hateoas/test-sql.py"
--'  1  0  ~/hateoas/test-sql.py
-|4,39,1,0,1714195112,"~/hateoas/test-sql.py"
--'  33  0  ~/hateoas/refresh_downloads_table.py
-|4,39,33,0,1714195083,"~/hateoas/refresh_downloads_table.py"
--'  33  0  ~/hateoas/refresh_downloads_table.py
-|4,39,33,0,1714195083,"~/hateoas/refresh_downloads_table.py"
--'  33  0  ~/hateoas/refresh_downloads_table.py
-|4,39,33,0,1714195083,"~/hateoas/refresh_downloads_table.py"
--'  33  0  ~/hateoas/refresh_downloads_table.py
-|4,39,33,0,1714195083,"~/hateoas/refresh_downloads_table.py"
--'  33  0  ~/hateoas/refresh_downloads_table.py
-|4,39,33,0,1714195083,"~/hateoas/refresh_downloads_table.py"
--'  31  0  ~/hateoas/refresh_downloads_table.py
-|4,39,31,0,1714195076,"~/hateoas/refresh_downloads_table.py"
--'  31  0  ~/hateoas/refresh_downloads_table.py
-|4,39,31,0,1714195076,"~/hateoas/refresh_downloads_table.py"
--'  31  0  ~/hateoas/refresh_downloads_table.py
-|4,39,31,0,1714195076,"~/hateoas/refresh_downloads_table.py"
--'  31  0  ~/hateoas/refresh_downloads_table.py
-|4,39,31,0,1714195076,"~/hateoas/refresh_downloads_table.py"
--'  31  0  ~/hateoas/refresh_downloads_table.py
-|4,39,31,0,1714195076,"~/hateoas/refresh_downloads_table.py"
--'  55  0  ~/hateoas/refresh_downloads_table.py
-|4,39,55,0,1714195075,"~/hateoas/refresh_downloads_table.py"
--'  66  0  ~/hateoas/refresh_downloads_table.py
-|4,39,66,0,1714195075,"~/hateoas/refresh_downloads_table.py"
--'  76  0  ~/hateoas/refresh_downloads_table.py
-|4,39,76,0,1714195075,"~/hateoas/refresh_downloads_table.py"
--'  84  0  ~/hateoas/refresh_downloads_table.py
-|4,39,84,0,1714195075,"~/hateoas/refresh_downloads_table.py"
--'  86  23  ~/hateoas/refresh_downloads_table.py
-|4,39,86,23,1714195075,"~/hateoas/refresh_downloads_table.py"
--'  55  0  ~/hateoas/refresh_downloads_table.py
-|4,39,55,0,1714195075,"~/hateoas/refresh_downloads_table.py"
--'  66  0  ~/hateoas/refresh_downloads_table.py
-|4,39,66,0,1714195075,"~/hateoas/refresh_downloads_table.py"
--'  76  0  ~/hateoas/refresh_downloads_table.py
-|4,39,76,0,1714195075,"~/hateoas/refresh_downloads_table.py"
--'  84  0  ~/hateoas/refresh_downloads_table.py
-|4,39,84,0,1714195075,"~/hateoas/refresh_downloads_table.py"
--'  86  23  ~/hateoas/refresh_downloads_table.py
-|4,39,86,23,1714195075,"~/hateoas/refresh_downloads_table.py"
--'  55  0  ~/hateoas/refresh_downloads_table.py
-|4,39,55,0,1714195075,"~/hateoas/refresh_downloads_table.py"
--'  66  0  ~/hateoas/refresh_downloads_table.py
-|4,39,66,0,1714195075,"~/hateoas/refresh_downloads_table.py"
--'  76  0  ~/hateoas/refresh_downloads_table.py
-|4,39,76,0,1714195075,"~/hateoas/refresh_downloads_table.py"
--'  84  0  ~/hateoas/refresh_downloads_table.py
-|4,39,84,0,1714195075,"~/hateoas/refresh_downloads_table.py"
--'  86  23  ~/hateoas/refresh_downloads_table.py
-|4,39,86,23,1714195075,"~/hateoas/refresh_downloads_table.py"
--'  55  0  ~/hateoas/refresh_downloads_table.py
-|4,39,55,0,1714195075,"~/hateoas/refresh_downloads_table.py"
--'  66  0  ~/hateoas/refresh_downloads_table.py
-|4,39,66,0,1714195075,"~/hateoas/refresh_downloads_table.py"
--'  76  0  ~/hateoas/refresh_downloads_table.py
-|4,39,76,0,1714195075,"~/hateoas/refresh_downloads_table.py"
--'  84  0  ~/hateoas/refresh_downloads_table.py
-|4,39,84,0,1714195075,"~/hateoas/refresh_downloads_table.py"
--'  86  23  ~/hateoas/refresh_downloads_table.py
-|4,39,86,23,1714195075,"~/hateoas/refresh_downloads_table.py"
--'  55  0  ~/hateoas/refresh_downloads_table.py
-|4,39,55,0,1714195075,"~/hateoas/refresh_downloads_table.py"
--'  66  0  ~/hateoas/refresh_downloads_table.py
-|4,39,66,0,1714195075,"~/hateoas/refresh_downloads_table.py"
--'  76  0  ~/hateoas/refresh_downloads_table.py
-|4,39,76,0,1714195075,"~/hateoas/refresh_downloads_table.py"
--'  84  0  ~/hateoas/refresh_downloads_table.py
-|4,39,84,0,1714195075,"~/hateoas/refresh_downloads_table.py"
--'  86  23  ~/hateoas/refresh_downloads_table.py
-|4,39,86,23,1714195075,"~/hateoas/refresh_downloads_table.py"
--'  46  0  ~/hateoas/refresh_downloads_table.py
-|4,39,46,0,1714194939,"~/hateoas/refresh_downloads_table.py"
--'  46  0  ~/hateoas/refresh_downloads_table.py
-|4,39,46,0,1714194939,"~/hateoas/refresh_downloads_table.py"
--'  46  0  ~/hateoas/refresh_downloads_table.py
-|4,39,46,0,1714194939,"~/hateoas/refresh_downloads_table.py"
--'  46  0  ~/hateoas/refresh_downloads_table.py
-|4,39,46,0,1714194939,"~/hateoas/refresh_downloads_table.py"
--'  46  0  ~/hateoas/refresh_downloads_table.py
-|4,39,46,0,1714194939,"~/hateoas/refresh_downloads_table.py"
--'  42  131  ~/hateoas/refresh_downloads_table.py
-|4,39,42,131,1714194893,"~/hateoas/refresh_downloads_table.py"
--'  42  131  ~/hateoas/refresh_downloads_table.py
-|4,39,42,131,1714194893,"~/hateoas/refresh_downloads_table.py"
--'  42  131  ~/hateoas/refresh_downloads_table.py
-|4,39,42,131,1714194893,"~/hateoas/refresh_downloads_table.py"
--'  42  131  ~/hateoas/refresh_downloads_table.py
-|4,39,42,131,1714194893,"~/hateoas/refresh_downloads_table.py"
--'  42  131  ~/hateoas/refresh_downloads_table.py
-|4,39,42,131,1714194893,"~/hateoas/refresh_downloads_table.py"
--'  41  35  ~/hateoas/refresh_downloads_table.py
-|4,39,41,35,1714194839,"~/hateoas/refresh_downloads_table.py"
--'  41  35  ~/hateoas/refresh_downloads_table.py
-|4,39,41,35,1714194839,"~/hateoas/refresh_downloads_table.py"
--'  41  35  ~/hateoas/refresh_downloads_table.py
-|4,39,41,35,1714194839,"~/hateoas/refresh_downloads_table.py"
--'  41  35  ~/hateoas/refresh_downloads_table.py
-|4,39,41,35,1714194839,"~/hateoas/refresh_downloads_table.py"
--'  41  35  ~/hateoas/refresh_downloads_table.py
-|4,39,41,35,1714194839,"~/hateoas/refresh_downloads_table.py"
--'  40  99  ~/hateoas/refresh_downloads_table.py
-|4,39,40,99,1714194837,"~/hateoas/refresh_downloads_table.py"
--'  40  99  ~/hateoas/refresh_downloads_table.py
-|4,39,40,99,1714194837,"~/hateoas/refresh_downloads_table.py"
--'  40  99  ~/hateoas/refresh_downloads_table.py
-|4,39,40,99,1714194837,"~/hateoas/refresh_downloads_table.py"
--'  40  99  ~/hateoas/refresh_downloads_table.py
-|4,39,40,99,1714194837,"~/hateoas/refresh_downloads_table.py"
--'  40  99  ~/hateoas/refresh_downloads_table.py
-|4,39,40,99,1714194837,"~/hateoas/refresh_downloads_table.py"
--'  36  16  ~/hateoas/refresh_downloads_table.py
-|4,39,36,16,1714194788,"~/hateoas/refresh_downloads_table.py"
--'  36  16  ~/hateoas/refresh_downloads_table.py
-|4,39,36,16,1714194788,"~/hateoas/refresh_downloads_table.py"
--'  36  16  ~/hateoas/refresh_downloads_table.py
-|4,39,36,16,1714194788,"~/hateoas/refresh_downloads_table.py"
--'  36  16  ~/hateoas/refresh_downloads_table.py
-|4,39,36,16,1714194788,"~/hateoas/refresh_downloads_table.py"
--'  36  16  ~/hateoas/refresh_downloads_table.py
-|4,39,36,16,1714194788,"~/hateoas/refresh_downloads_table.py"
--'  5  0  ~/hateoas/refresh_downloads_table.py
-|4,39,5,0,1714194719,"~/hateoas/refresh_downloads_table.py"
--'  5  0  ~/hateoas/refresh_downloads_table.py
-|4,39,5,0,1714194719,"~/hateoas/refresh_downloads_table.py"
--'  5  0  ~/hateoas/refresh_downloads_table.py
-|4,39,5,0,1714194719,"~/hateoas/refresh_downloads_table.py"
--'  5  0  ~/hateoas/refresh_downloads_table.py
-|4,39,5,0,1714194719,"~/hateoas/refresh_downloads_table.py"
--'  5  0  ~/hateoas/refresh_downloads_table.py
-|4,39,5,0,1714194719,"~/hateoas/refresh_downloads_table.py"
--'  54  12  ~/hateoas/refresh_downloads_table.py
-|4,39,54,12,1714194645,"~/hateoas/refresh_downloads_table.py"
--'  54  12  ~/hateoas/refresh_downloads_table.py
-|4,39,54,12,1714194645,"~/hateoas/refresh_downloads_table.py"
--'  54  12  ~/hateoas/refresh_downloads_table.py
-|4,39,54,12,1714194645,"~/hateoas/refresh_downloads_table.py"
--'  54  12  ~/hateoas/refresh_downloads_table.py
-|4,39,54,12,1714194645,"~/hateoas/refresh_downloads_table.py"
--'  54  12  ~/hateoas/refresh_downloads_table.py
-|4,39,54,12,1714194645,"~/hateoas/refresh_downloads_table.py"
--'  39  4  ~/hateoas/download_portionurl.py
-|4,39,39,4,1714194552,"~/hateoas/download_portionurl.py"
--'  39  4  ~/hateoas/download_portionurl.py
-|4,39,39,4,1714194552,"~/hateoas/download_portionurl.py"
--'  39  4  ~/hateoas/download_portionurl.py
-|4,39,39,4,1714194552,"~/hateoas/download_portionurl.py"
--'  39  4  ~/hateoas/download_portionurl.py
-|4,39,39,4,1714194552,"~/hateoas/download_portionurl.py"
--'  39  4  ~/hateoas/download_portionurl.py
-|4,39,39,4,1714194552,"~/hateoas/download_portionurl.py"
--'  11  0  ~/hateoas/download_portionurl.py
-|4,39,11,0,1714194309,"~/hateoas/download_portionurl.py"
--'  11  0  ~/hateoas/download_portionurl.py
-|4,39,11,0,1714194309,"~/hateoas/download_portionurl.py"
--'  11  0  ~/hateoas/download_portionurl.py
-|4,39,11,0,1714194309,"~/hateoas/download_portionurl.py"
--'  11  0  ~/hateoas/download_portionurl.py
-|4,39,11,0,1714194309,"~/hateoas/download_portionurl.py"
--'  11  0  ~/hateoas/download_portionurl.py
-|4,39,11,0,1714194309,"~/hateoas/download_portionurl.py"
--'  82  8  ~/hateoas/download_portionurl.py
-|4,39,82,8,1714194306,"~/hateoas/download_portionurl.py"
--'  82  8  ~/hateoas/download_portionurl.py
-|4,39,82,8,1714194306,"~/hateoas/download_portionurl.py"
--'  82  8  ~/hateoas/download_portionurl.py
-|4,39,82,8,1714194306,"~/hateoas/download_portionurl.py"
--'  82  8  ~/hateoas/download_portionurl.py
-|4,39,82,8,1714194306,"~/hateoas/download_portionurl.py"
--'  82  8  ~/hateoas/download_portionurl.py
-|4,39,82,8,1714194306,"~/hateoas/download_portionurl.py"
--'  63  41  ~/hateoas/download_portionurl.py
-|4,39,63,41,1714194273,"~/hateoas/download_portionurl.py"
--'  63  41  ~/hateoas/download_portionurl.py
-|4,39,63,41,1714194273,"~/hateoas/download_portionurl.py"
--'  63  41  ~/hateoas/download_portionurl.py
-|4,39,63,41,1714194273,"~/hateoas/download_portionurl.py"
--'  63  41  ~/hateoas/download_portionurl.py
-|4,39,63,41,1714194273,"~/hateoas/download_portionurl.py"
--'  63  41  ~/hateoas/download_portionurl.py
-|4,39,63,41,1714194273,"~/hateoas/download_portionurl.py"
--'  60  12  ~/hateoas/download_portionurl.py
-|4,39,60,12,1714194252,"~/hateoas/download_portionurl.py"
+-'  1  0  ~/hateoas/rfv
+|4,39,1,0,1714228921,"~/hateoas/rfv"
+-'  1  0  ~/bash/logs/refresh_downloads_table.log
+|4,39,1,0,1714228794,"~/bash/logs/refresh_downloads_table.log"
+-'  1  0  ~/bash/logs/refresh_downloads_table.log
+|4,39,1,0,1714228794,"~/bash/logs/refresh_downloads_table.log"
+-'  19  50  ~/.config/alias.sh
+|4,39,19,50,1714228449,"~/.config/alias.sh"
+-'  19  50  ~/.config/alias.sh
+|4,39,19,50,1714228449,"~/.config/alias.sh"
+-'  19  50  ~/.config/alias.sh
+|4,39,19,50,1714228449,"~/.config/alias.sh"
+-'  1  0  ~/.config/alias.sh
+|4,39,1,0,1714228358,"~/.config/alias.sh"
+-'  1  0  ~/.config/alias.sh
+|4,39,1,0,1714228358,"~/.config/alias.sh"
+-'  1  0  ~/.config/alias.sh
+|4,39,1,0,1714228358,"~/.config/alias.sh"
+-'  19  10  ~/.config/alias.sh
+|4,39,19,10,1714228318,"~/.config/alias.sh"
+-'  1  0  ~/.config/alias.sh
+|4,39,1,0,1714228312,"~/.config/alias.sh"
+-'  13384  0  ~/bash/logs/refresh_downloads_table.log
+|4,39,13384,0,1714228271,"~/bash/logs/refresh_downloads_table.log"
+-'  13384  0  ~/bash/logs/refresh_downloads_table.log
+|4,39,13384,0,1714228271,"~/bash/logs/refresh_downloads_table.log"
+-'  13384  0  ~/bash/logs/refresh_downloads_table.log
+|4,39,13384,0,1714228271,"~/bash/logs/refresh_downloads_table.log"
+-'  13384  0  ~/bash/logs/refresh_downloads_table.log
+|4,39,13384,0,1714228271,"~/bash/logs/refresh_downloads_table.log"
+-'  1  0  ~/bash/logs/refresh_downloads_table.log
+|4,39,1,0,1714228261,"~/bash/logs/refresh_downloads_table.log"
+-'  1  0  ~/bash/logs/refresh_downloads_table.log
+|4,39,1,0,1714228261,"~/bash/logs/refresh_downloads_table.log"
+-'  1  0  ~/bash/logs/refresh_downloads_table.log
+|4,39,1,0,1714228261,"~/bash/logs/refresh_downloads_table.log"
+-'  8321  0  ~/bash/logs/refresh_downloads_table.log
+|4,39,8321,0,1714221693,"~/bash/logs/refresh_downloads_table.log"
+-'  8321  0  ~/bash/logs/refresh_downloads_table.log
+|4,39,8321,0,1714221693,"~/bash/logs/refresh_downloads_table.log"
+-'  8321  0  ~/bash/logs/refresh_downloads_table.log
+|4,39,8321,0,1714221693,"~/bash/logs/refresh_downloads_table.log"
+-'  8321  0  ~/bash/logs/refresh_downloads_table.log
+|4,39,8321,0,1714221693,"~/bash/logs/refresh_downloads_table.log"
+-'  8321  0  ~/bash/logs/refresh_downloads_table.log
+|4,39,8321,0,1714221693,"~/bash/logs/refresh_downloads_table.log"
+-'  1  0  /tmp/v8tzV4q/1-copilot.log
+|4,39,1,0,1714221683,"/tmp/v8tzV4q/1-copilot.log"
+-'  1  0  /tmp/v8tzV4q/1-copilot.log
+|4,39,1,0,1714221683,"/tmp/v8tzV4q/1-copilot.log"
+-'  1  0  /tmp/v8tzV4q/1-copilot.log
+|4,39,1,0,1714221683,"/tmp/v8tzV4q/1-copilot.log"
+-'  1  0  /tmp/v8tzV4q/1-copilot.log
+|4,39,1,0,1714221683,"/tmp/v8tzV4q/1-copilot.log"
+-'  1  0  /tmp/v8tzV4q/1-copilot.log
+|4,39,1,0,1714221683,"/tmp/v8tzV4q/1-copilot.log"
+-'  1  0  ~/bash/logs/refresh_downloads_table.log
+|4,39,1,0,1714221683,"~/bash/logs/refresh_downloads_table.log"
+-'  1  0  /tmp/v8tzV4q/1-copilot.log
+|4,39,1,0,1714221683,"/tmp/v8tzV4q/1-copilot.log"
+-'  8  0  ~/hateoas
+|4,39,8,0,1714221361,"~/hateoas"
+-'  8  0  ~/hateoas
+|4,39,8,0,1714221361,"~/hateoas"
+-'  8  0  ~/hateoas
+|4,39,8,0,1714221361,"~/hateoas"
+-'  8  0  ~/hateoas
+|4,39,8,0,1714221361,"~/hateoas"
+-'  8  0  ~/hateoas
+|4,39,8,0,1714221361,"~/hateoas"
+-'  8  0  ~/hateoas
+|4,39,8,0,1714221361,"~/hateoas"
+-'  8  0  ~/hateoas
+|4,39,8,0,1714221361,"~/hateoas"
+-'  8  0  ~/hateoas
+|4,39,8,0,1714221361,"~/hateoas"
+-'  1353  45  ~/.vim/vimrc
+|4,39,1353,45,1714221134,"~/.vim/vimrc"
+-'  1353  45  ~/.vim/vimrc
+|4,39,1353,45,1714221134,"~/.vim/vimrc"
+-'  1353  45  ~/.vim/vimrc
+|4,39,1353,45,1714221134,"~/.vim/vimrc"
+-'  1353  45  ~/.vim/vimrc
+|4,39,1353,45,1714221134,"~/.vim/vimrc"
+-'  1353  45  ~/.vim/vimrc
+|4,39,1353,45,1714221134,"~/.vim/vimrc"
+-'  1353  45  ~/.vim/vimrc
+|4,39,1353,45,1714221134,"~/.vim/vimrc"
+-'  1353  45  ~/.vim/vimrc
+|4,39,1353,45,1714221134,"~/.vim/vimrc"
+-'  1353  45  ~/.vim/vimrc
+|4,39,1353,45,1714221134,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1714221123,"~/.vim/vimrc"
+-'  10  29  ~/tooling/cron-concerns.txt
+|4,39,10,29,1714221123,"~/tooling/cron-concerns.txt"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1714221123,"~/.vim/vimrc"
+-'  10  29  ~/tooling/cron-concerns.txt
+|4,39,10,29,1714221123,"~/tooling/cron-concerns.txt"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1714221123,"~/.vim/vimrc"
+-'  10  29  ~/tooling/cron-concerns.txt
+|4,39,10,29,1714221123,"~/tooling/cron-concerns.txt"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1714221123,"~/.vim/vimrc"
+-'  10  29  ~/tooling/cron-concerns.txt
+|4,39,10,29,1714221123,"~/tooling/cron-concerns.txt"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1714221123,"~/.vim/vimrc"
+-'  10  29  ~/tooling/cron-concerns.txt
+|4,39,10,29,1714221123,"~/tooling/cron-concerns.txt"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1714221123,"~/.vim/vimrc"
+-'  10  29  ~/tooling/cron-concerns.txt
+|4,39,10,29,1714221123,"~/tooling/cron-concerns.txt"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1714221123,"~/.vim/vimrc"
+-'  10  29  ~/tooling/cron-concerns.txt
+|4,39,10,29,1714221123,"~/tooling/cron-concerns.txt"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1714221123,"~/.vim/vimrc"
+-'  10  29  ~/tooling/cron-concerns.txt
+|4,39,10,29,1714221123,"~/tooling/cron-concerns.txt"
+-'  8  12  ~/tooling/cron-concerns.txt
+|4,39,8,12,1714221085,"~/tooling/cron-concerns.txt"
+-'  8  12  ~/tooling/cron-concerns.txt
+|4,39,8,12,1714221085,"~/tooling/cron-concerns.txt"
+-'  8  12  ~/tooling/cron-concerns.txt
+|4,39,8,12,1714221085,"~/tooling/cron-concerns.txt"
+-'  8  12  ~/tooling/cron-concerns.txt
+|4,39,8,12,1714221085,"~/tooling/cron-concerns.txt"
+-'  8  12  ~/tooling/cron-concerns.txt
+|4,39,8,12,1714221085,"~/tooling/cron-concerns.txt"
+-'  8  12  ~/tooling/cron-concerns.txt
+|4,39,8,12,1714221085,"~/tooling/cron-concerns.txt"
+-'  8  12  ~/tooling/cron-concerns.txt
+|4,39,8,12,1714221085,"~/tooling/cron-concerns.txt"
+-'  8  12  ~/tooling/cron-concerns.txt
+|4,39,8,12,1714221085,"~/tooling/cron-concerns.txt"
+-'  12  18  ~/tooling/cron-concerns.txt
+|4,39,12,18,1714221056,"~/tooling/cron-concerns.txt"
+-'  13  18  ~/tooling/cron-concerns.txt
+|4,39,13,18,1714221056,"~/tooling/cron-concerns.txt"
+-'  12  18  ~/tooling/cron-concerns.txt
+|4,39,12,18,1714221056,"~/tooling/cron-concerns.txt"
+-'  13  18  ~/tooling/cron-concerns.txt
+|4,39,13,18,1714221056,"~/tooling/cron-concerns.txt"
+-'  12  18  ~/tooling/cron-concerns.txt
+|4,39,12,18,1714221056,"~/tooling/cron-concerns.txt"
+-'  13  18  ~/tooling/cron-concerns.txt
+|4,39,13,18,1714221056,"~/tooling/cron-concerns.txt"
+-'  12  18  ~/tooling/cron-concerns.txt
+|4,39,12,18,1714221056,"~/tooling/cron-concerns.txt"
+-'  13  18  ~/tooling/cron-concerns.txt
+|4,39,13,18,1714221056,"~/tooling/cron-concerns.txt"
+-'  12  18  ~/tooling/cron-concerns.txt
+|4,39,12,18,1714221056,"~/tooling/cron-concerns.txt"
+-'  13  18  ~/tooling/cron-concerns.txt
+|4,39,13,18,1714221056,"~/tooling/cron-concerns.txt"
+-'  12  18  ~/tooling/cron-concerns.txt
+|4,39,12,18,1714221056,"~/tooling/cron-concerns.txt"
+-'  13  18  ~/tooling/cron-concerns.txt
+|4,39,13,18,1714221056,"~/tooling/cron-concerns.txt"
+-'  12  18  ~/tooling/cron-concerns.txt
+|4,39,12,18,1714221056,"~/tooling/cron-concerns.txt"
+-'  13  18  ~/tooling/cron-concerns.txt
+|4,39,13,18,1714221056,"~/tooling/cron-concerns.txt"
+-'  12  18  ~/tooling/cron-concerns.txt
+|4,39,12,18,1714221056,"~/tooling/cron-concerns.txt"
+-'  13  18  ~/tooling/cron-concerns.txt
+|4,39,13,18,1714221056,"~/tooling/cron-concerns.txt"
+-'  16  4  ~/tooling/cron-concerns.txt
+|4,39,16,4,1714221039,"~/tooling/cron-concerns.txt"
+-'  16  4  ~/tooling/cron-concerns.txt
+|4,39,16,4,1714221039,"~/tooling/cron-concerns.txt"
+-'  16  4  ~/tooling/cron-concerns.txt
+|4,39,16,4,1714221039,"~/tooling/cron-concerns.txt"
+-'  16  4  ~/tooling/cron-concerns.txt
+|4,39,16,4,1714221039,"~/tooling/cron-concerns.txt"
+-'  16  4  ~/tooling/cron-concerns.txt
+|4,39,16,4,1714221039,"~/tooling/cron-concerns.txt"
+-'  16  4  ~/tooling/cron-concerns.txt
+|4,39,16,4,1714221039,"~/tooling/cron-concerns.txt"
+-'  16  4  ~/tooling/cron-concerns.txt
+|4,39,16,4,1714221039,"~/tooling/cron-concerns.txt"
+-'  16  4  ~/tooling/cron-concerns.txt
+|4,39,16,4,1714221039,"~/tooling/cron-concerns.txt"
+-'  55  17  ~/tooling/cron.man
+|4,39,55,17,1714220942,"~/tooling/cron.man"
+-'  55  17  ~/tooling/cron.man
+|4,39,55,17,1714220942,"~/tooling/cron.man"
+-'  55  17  ~/tooling/cron.man
+|4,39,55,17,1714220942,"~/tooling/cron.man"
+-'  55  17  ~/tooling/cron.man
+|4,39,55,17,1714220942,"~/tooling/cron.man"
+-'  55  17  ~/tooling/cron.man
+|4,39,55,17,1714220942,"~/tooling/cron.man"
+-'  55  17  ~/tooling/cron.man
+|4,39,55,17,1714220942,"~/tooling/cron.man"
 
 # Buffer list:
-%~/hateoas/refresh-downloads-db.bash	1	0
+%~/hateoas/rfv	1	0
 
 # History of marks within files (newest to oldest):
 
-> ~/hateoas/refresh-downloads-db.bash
-	*	1714195155	0
+> ~/hateoas/rfv
+	*	1714228920	0
 	"	1	0
-	^	10	64
-	.	10	63
-	+	3	88
-	+	3	28
-	+	5	0
-	+	6	0
-	+	12	0
-	+	11	0
-	+	13	0
-	+	10	63
+	^	12	41
+	.	12	40
+	+	12	40
 
-> ~/hateoas/statements.py
-	*	1714195114	0
-	"	1	0
-	^	1	18
-	.	1	17
-	+	25	0
-	+	42	0
-	+	25	0
-	+	9	0
-	+	2	0
-	+	8	0
-	+	41	0
-	+	1	17
-
-> ~/hateoas/test-sql.py
-	*	1714195111	0
+> ~/bash/logs/refresh_downloads_table.log
+	*	1714228793	0
 	"	1	0
 	.	1	0
 	+	1	0
-	+	1	4
-	+	1	0
-	+	1	10
-	+	1	0
-	+	1	27
-	+	1	61
-	+	1	12
-	+	1	25
-	+	1	0
-	+	1	29
-	+	1	43
-	+	1	4
-	+	1	0
-	+	1	37
-	+	1	22
-	+	1	37
-	+	1	0
-	+	1	5
-	+	1	12
-	+	1	65
-	+	1	0
-	+	1	65
-	+	1	12
-	+	1	51
-	+	1	4
-	+	1	0
-	+	1	12
-	+	1	0
-	+	1	93
-	+	1	0
-	+	1	40
-	+	1	53
-	+	1	19
-	+	1	14
-	+	1	5
-	+	1	0
 
-> ~/hateoas/refresh_downloads_table.py
-	*	1714195082	0
-	"	33	0
-	^	52	23
-	.	86	0
-	+	5	0
+> ~/.config/alias.sh
+	*	1714228402	0
+	"	19	50
+	^	19	11
+	.	9	72
 	+	2	0
-	+	4	13
-	+	89	5
-	+	90	5
-	+	68	48
-	+	69	4
-	+	70	58
-	+	71	4
-	+	75	0
-	+	67	3
-	+	67	4
-	+	67	0
-	+	85	3
-	+	84	9
-	+	84	0
-	+	67	0
-	+	84	0
-	+	85	0
-	+	84	8
-	+	67	0
-	+	72	16
-	+	75	38
-	+	73	16
-	+	73	11
-	+	75	9
-	+	75	0
-	+	75	12
-	+	84	0
-	+	73	40
-	+	75	0
-	+	73	52
-	+	73	17
-	+	73	0
-	+	73	83
-	+	73	80
-	+	73	45
-	+	73	0
-	+	73	11
-	+	73	0
-	+	73	40
-	+	84	0
-	+	78	85
-	+	84	0
-	+	78	9
-	+	79	51
-	+	80	4
-	+	84	0
-	+	32	32
-	+	55	0
-	+	33	76
-	+	34	58
-	+	35	40
-	+	36	8
-	+	36	34
-	+	36	71
-	+	36	90
-	+	53	32
-	+	53	12
-	+	53	39
-	+	53	12
-	+	54	13
-	+	54	0
-	+	53	0
-	+	31	0
-	+	31	91
-	+	31	32
-	+	8	0
-	+	17	41
-	+	18	4
-	+	11	19
-	+	12	22
-	+	13	24
-	+	14	24
-	+	36	0
-	+	36	24
-	+	37	51
-	+	38	19
-	+	39	12
-	+	40	34
-	+	46	0
-	+	46	17
-	+	42	21
-	+	42	118
-	+	43	45
-	+	46	40
-	+	46	20
-	+	46	45
-	+	46	0
-	+	44	59
-	+	45	21
-	+	52	4
-	+	86	0
+	+	15	37
+	+	19	77
+	+	19	42
+	+	19	47
+	+	19	32
+	+	20	39
+	+	21	40
+	+	22	79
+	+	22	0
+	+	22	36
+	+	22	20
+	+	22	25
+	+	23	45
+	+	24	0
+	+	22	0
+	+	19	0
+	+	23	19
+	+	16	60
+	+	18	0
+	+	19	0
+	+	17	13
+	+	19	10
+	+	18	0
+	+	10	0
+	+	9	72
 
-> ~/hateoas/download_portionurl.py
-	*	1714194338	0
-	"	39	4
-	^	71	0
-	.	11	0
-	+	93	0
-	+	78	0
-	+	83	31
-	+	88	50
-	+	90	22
-	+	79	0
-	+	83	0
-	+	81	14
-	+	83	0
-	+	92	31
-	+	52	0
-	+	88	0
-	+	83	35
-	+	86	24
-	+	88	0
-	+	87	20
-	+	80	24
-	+	81	0
-	+	81	16
-	+	93	24
-	+	80	23
-	+	81	0
-	+	93	12
-	+	52	0
-	+	52	11
-	+	93	0
-	+	52	0
-	+	72	22
-	+	86	0
-	+	82	32
-	+	89	0
-	+	83	0
-	+	84	72
-	+	85	26
-	+	58	19
-	+	24	29
-	+	52	0
-	+	25	0
-	+	51	4
-	+	47	4
-	+	46	0
-	+	50	0
-	+	63	4
-	+	70	0
-	+	64	98
-	+	65	41
-	+	66	8
-	+	67	40
-	+	68	56
-	+	69	42
-	+	70	0
-	+	67	0
-	+	67	15
-	+	67	12
-	+	67	0
-	+	66	24
-	+	67	0
-	+	63	13
-	+	72	0
-	+	70	21
-	+	72	34
-	+	72	0
-	+	70	0
-	+	60	4
-	+	60	12
-	+	63	22
-	+	60	0
-	+	72	0
-	+	71	0
-	+	82	0
-	+	11	0
+> /tmp/v8tzV4q/1-copilot.log
+	*	1714221681	0
+	"	1	0
+
+> ~/.vim/vimrc
+	*	1714221134	0
+	"	1353	45
+	.	1353	0
+	+	1353	23
+	+	1353	1
+	+	1353	0
+	+	1353	30
+	+	1353	0
+	+	1353	16
+	+	1353	0
+	+	1353	70
+	+	1353	0
+	+	1353	22
+	+	1353	0
+	+	1353	27
+	+	1353	0
+	+	1353	30
+	+	1353	13
+	+	1353	16
+	+	1353	0
+	+	1353	19
+	+	1353	5
+	+	1353	80
+	+	1353	22
+	+	1353	0
+	+	1353	21
+	+	1353	28
+	+	1353	22
+	+	1353	71
+	+	1353	8
+	+	1353	24
+	+	1353	40
+	+	1353	0
+	+	1353	39
+	+	1353	0
+	+	1353	19
+	+	1353	0
+	+	1353	38
+	+	1353	21
+	+	1353	0
+	+	1353	10
+	+	1353	25
+	+	1353	0
+	+	1353	32
+	+	1353	0
+	+	1353	10
+	+	1353	0
+	+	1353	25
+	+	1353	10
+	+	1353	0
+	+	1353	60
+	+	1353	0
+	+	1353	55
+	+	1353	0
+	+	1353	44
+	+	1353	0
+	+	1353	19
+	+	1353	71
+	+	1353	0
+	+	1353	23
+	+	1353	41
+	+	1353	44
+	+	1353	40
+	+	1353	28
+	+	1353	0
+	+	1353	11
+	+	1353	18
+	+	1353	43
+	+	1353	64
+	+	1353	54
+	+	1353	0
+	+	1353	31
+	+	1353	0
+	+	1353	6
+	+	1353	0
+	+	1353	1
+	+	1353	0
+	+	1353	80
+	+	1353	75
+	+	1353	0
+	+	1353	52
+	+	1353	41
+	+	159	0
+	+	46	26
+	+	1353	0
+
+> ~/tooling/cron-concerns.txt
+	*	1714221122	0
+	"	10	29
+	^	10	30
+	.	10	29
+	+	16	0
+	+	7	37
+	+	8	18
+	+	8	12
+	+	11	12
+	+	12	16
+	+	13	19
+	+	16	16
+	+	16	15
+	+	16	22
+	+	16	0
+	+	16	23
+	+	16	26
+	+	16	23
+	+	16	22
+	+	16	30
+	+	16	33
+	+	16	30
+	+	16	29
+	+	16	37
+	+	16	0
+	+	12	34
+	+	13	18
+	+	12	36
+	+	13	45
+	+	14	50
+	+	15	56
+	+	16	18
+	+	16	0
+	+	8	0
+	+	4	0
+	+	5	6
+	+	8	0
+	+	6	0
+	+	16	0
+	+	10	29
+
+> ~/tooling/cron.man
+	*	1714220935	0
+	"	55	17
 
 > ~/hateoas/hateoas-api.py
-	*	1714193952	0
-	"	200	23
+	*	1714219394	0
+	"	35	4
 	^	200	24
 	.	200	23
 	+	1	0
@@ -8613,6 +8575,396 @@ $
 	+	224	0
 	+	223	0
 	+	200	23
+
+> /tmp/fish.vivek/fish_universal_variables.notifier|
+	*	1714218681	0
+	"	1	0
+
+> /tmp/crontab.bRDTMe/crontab
+	*	1714214861	0
+	"	1	0
+
+> ~/hateoas/refresh_downloads_table.py
+	*	1714213862	0
+	"	54	0
+	^	60	28
+	.	82	0
+	+	102	0
+	+	96	9
+	+	97	51
+	+	98	4
+	+	102	0
+	+	34	32
+	+	65	0
+	+	35	76
+	+	36	58
+	+	37	40
+	+	38	8
+	+	38	34
+	+	38	71
+	+	38	90
+	+	62	32
+	+	62	12
+	+	62	39
+	+	62	12
+	+	63	13
+	+	63	0
+	+	62	0
+	+	33	0
+	+	33	91
+	+	33	32
+	+	10	0
+	+	19	41
+	+	20	4
+	+	13	19
+	+	14	22
+	+	15	24
+	+	16	24
+	+	38	0
+	+	38	24
+	+	39	51
+	+	40	19
+	+	41	12
+	+	42	34
+	+	48	0
+	+	48	17
+	+	44	21
+	+	44	118
+	+	45	45
+	+	48	40
+	+	48	20
+	+	48	45
+	+	48	0
+	+	46	59
+	+	47	21
+	+	54	4
+	+	104	0
+	+	62	21
+	+	63	20
+	+	80	0
+	+	62	0
+	+	5	0
+	+	80	28
+	+	78	0
+	+	74	0
+	+	72	17
+	+	80	6
+	+	80	27
+	+	6	9
+	+	80	27
+	+	80	15
+	+	80	32
+	+	80	23
+	+	80	5
+	+	80	55
+	+	80	4
+	+	74	0
+	+	67	0
+	+	73	0
+	+	80	0
+	+	66	7
+	+	80	0
+	+	77	26
+	+	78	0
+	+	80	4
+	+	83	9
+	+	83	0
+	+	80	0
+	+	79	0
+	+	55	56
+	+	56	4
+	+	59	40
+	+	60	23
+	+	61	0
+	+	69	29
+	+	70	4
+	+	71	0
+	+	81	21
+	+	76	24
+	+	63	0
+	+	64	14
+	+	74	0
+	+	82	0
+	+	75	14
+	+	60	27
+	+	75	0
+	+	82	0
+
+> /tmp/crontab.1donzH/crontab
+	*	1714213851	0
+	"	27	50
+	.	27	0
+	+	27	0
+
+> /tmp/crontab.Mb7HAO/crontab
+	*	1714213791	0
+	"	1	0
+
+> /tmp/crontab.WYsdgr/crontab
+	*	1714213374	0
+	"	27	1
+	^	27	2
+	.	27	1
+	+	27	1
+
+> /tmp/crontab.hTax2F/crontab
+	*	1714212946	0
+	"	1	0
+
+> /tmp/crontab.rhBkHX/crontab
+	*	1714212484	0
+	"	27	121
+	^	27	122
+	.	27	121
+	+	27	21
+	+	27	121
+
+> ~/hateoas/.envrc
+	*	1714212464	0
+	"	1	0
+
+> ~/bash/logs/refres_downloads_table.log
+	*	1714212379	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> /tmp/crontab.T9RKS5/crontab
+	*	1714212364	0
+	"	27	0
+	.	27	0
+	+	27	0
+
+> ~/bash/python-direnv.bash
+	*	1714212353	0
+	"	2	1
+	^	2	2
+	.	2	1
+	+	5	8
+	+	4	0
+	+	2	25
+	+	5	10
+	+	2	1
+
+> /tmp/crontab.aTTIim/crontab
+	*	1714212315	0
+	"	27	80
+	^	27	2
+	.	27	1
+	+	27	1
+
+> /tmp/crontab.Xdp6YV/crontab
+	*	1714212018	0
+	"	27	0
+	^	27	138
+	.	27	0
+	+	27	81
+	+	27	1
+	+	27	109
+	+	27	0
+
+> /tmp/crontab.w2MEag/crontab
+	*	1714211753	0
+	"	1	0
+
+> /tmp/crontab.6mWERc/crontab
+	*	1714211586	0
+	"	27	94
+	^	27	2
+	.	27	1
+	+	27	93
+	+	27	1
+
+> ~/hateoas/dbutils.py
+	*	1714211338	0
+	"	7	4
+	^	14	50
+	.	14	25
+	+	21	4
+	+	6	39
+	+	6	8
+	+	4	1
+	+	6	0
+	+	6	1
+	+	4	0
+	+	5	10
+	+	3	20
+	+	15	0
+	+	15	4
+	+	15	64
+	+	15	41
+	+	15	5
+	+	15	0
+	+	15	77
+	+	15	0
+	+	15	7
+	+	15	24
+	+	15	0
+	+	15	7
+	+	11	0
+	+	15	20
+	+	15	0
+	+	11	4
+	+	12	4
+	+	15	17
+	+	15	11
+	+	15	46
+	+	12	0
+	+	6	0
+	+	10	0
+	+	8	52
+	+	9	12
+	+	10	0
+	+	23	0
+	+	13	58
+	+	14	25
+
+> ~/hateoas/refresh-downloads-db.bash
+	*	1714210648	0
+	"	1	0
+	^	10	64
+	.	10	63
+	+	3	88
+	+	3	28
+	+	5	0
+	+	6	0
+	+	12	0
+	+	11	0
+	+	13	0
+	+	10	63
+
+> ~/hateoas/statements.py
+	*	1714195114	0
+	"	1	0
+	^	1	18
+	.	1	17
+	+	25	0
+	+	42	0
+	+	25	0
+	+	9	0
+	+	2	0
+	+	8	0
+	+	41	0
+	+	1	17
+
+> ~/hateoas/test-sql.py
+	*	1714195111	0
+	"	1	0
+	.	1	0
+	+	1	0
+	+	1	4
+	+	1	0
+	+	1	10
+	+	1	0
+	+	1	27
+	+	1	61
+	+	1	12
+	+	1	25
+	+	1	0
+	+	1	29
+	+	1	43
+	+	1	4
+	+	1	0
+	+	1	37
+	+	1	22
+	+	1	37
+	+	1	0
+	+	1	5
+	+	1	12
+	+	1	65
+	+	1	0
+	+	1	65
+	+	1	12
+	+	1	51
+	+	1	4
+	+	1	0
+	+	1	12
+	+	1	0
+	+	1	93
+	+	1	0
+	+	1	40
+	+	1	53
+	+	1	19
+	+	1	14
+	+	1	5
+	+	1	0
+
+> ~/hateoas/download_portionurl.py
+	*	1714194338	0
+	"	39	4
+	^	71	0
+	.	11	0
+	+	93	0
+	+	78	0
+	+	83	31
+	+	88	50
+	+	90	22
+	+	79	0
+	+	83	0
+	+	81	14
+	+	83	0
+	+	92	31
+	+	52	0
+	+	88	0
+	+	83	35
+	+	86	24
+	+	88	0
+	+	87	20
+	+	80	24
+	+	81	0
+	+	81	16
+	+	93	24
+	+	80	23
+	+	81	0
+	+	93	12
+	+	52	0
+	+	52	11
+	+	93	0
+	+	52	0
+	+	72	22
+	+	86	0
+	+	82	32
+	+	89	0
+	+	83	0
+	+	84	72
+	+	85	26
+	+	58	19
+	+	24	29
+	+	52	0
+	+	25	0
+	+	51	4
+	+	47	4
+	+	46	0
+	+	50	0
+	+	63	4
+	+	70	0
+	+	64	98
+	+	65	41
+	+	66	8
+	+	67	40
+	+	68	56
+	+	69	42
+	+	70	0
+	+	67	0
+	+	67	15
+	+	67	12
+	+	67	0
+	+	66	24
+	+	67	0
+	+	63	13
+	+	72	0
+	+	70	21
+	+	72	34
+	+	72	0
+	+	70	0
+	+	60	4
+	+	60	12
+	+	63	22
+	+	60	0
+	+	72	0
+	+	71	0
+	+	82	0
+	+	11	0
 
 > ~/hateoas/static/css/hateoas.css
 	*	1714193350	0
@@ -9473,50 +9825,6 @@ $
 	+	38	98
 	+	46	0
 
-> ~/hateoas/dbutils.py
-	*	1714047302	0
-	"	14	4
-	^	14	50
-	.	14	25
-	+	21	4
-	+	6	39
-	+	6	8
-	+	4	1
-	+	6	0
-	+	6	1
-	+	4	0
-	+	5	10
-	+	3	20
-	+	15	0
-	+	15	4
-	+	15	64
-	+	15	41
-	+	15	5
-	+	15	0
-	+	15	77
-	+	15	0
-	+	15	7
-	+	15	24
-	+	15	0
-	+	15	7
-	+	11	0
-	+	15	20
-	+	15	0
-	+	11	4
-	+	12	4
-	+	15	17
-	+	15	11
-	+	15	46
-	+	12	0
-	+	6	0
-	+	10	0
-	+	8	52
-	+	9	12
-	+	10	0
-	+	23	0
-	+	13	58
-	+	14	25
-
 > ~/hateoas/data/main.db
 	*	1714047259	0
 	"	29	0
@@ -9983,93 +10291,6 @@ $
 	+	16	20
 	+	16	0
 
-> ~/.vim/vimrc
-	*	1713970028	0
-	"	1353	0
-	.	1353	0
-	+	1353	23
-	+	1353	1
-	+	1353	0
-	+	1353	30
-	+	1353	0
-	+	1353	16
-	+	1353	0
-	+	1353	70
-	+	1353	0
-	+	1353	22
-	+	1353	0
-	+	1353	27
-	+	1353	0
-	+	1353	30
-	+	1353	13
-	+	1353	16
-	+	1353	0
-	+	1353	19
-	+	1353	5
-	+	1353	80
-	+	1353	22
-	+	1353	0
-	+	1353	21
-	+	1353	28
-	+	1353	22
-	+	1353	71
-	+	1353	8
-	+	1353	24
-	+	1353	40
-	+	1353	0
-	+	1353	39
-	+	1353	0
-	+	1353	19
-	+	1353	0
-	+	1353	38
-	+	1353	21
-	+	1353	0
-	+	1353	10
-	+	1353	25
-	+	1353	0
-	+	1353	32
-	+	1353	0
-	+	1353	10
-	+	1353	0
-	+	1353	25
-	+	1353	10
-	+	1353	0
-	+	1353	60
-	+	1353	0
-	+	1353	55
-	+	1353	0
-	+	1353	44
-	+	1353	0
-	+	1353	19
-	+	1353	71
-	+	1353	0
-	+	1353	23
-	+	1353	41
-	+	1353	44
-	+	1353	40
-	+	1353	28
-	+	1353	0
-	+	1353	11
-	+	1353	18
-	+	1353	43
-	+	1353	64
-	+	1353	54
-	+	1353	0
-	+	1353	31
-	+	1353	0
-	+	1353	6
-	+	1353	0
-	+	1353	1
-	+	1353	0
-	+	1353	80
-	+	1353	75
-	+	1353	0
-	+	1353	52
-	+	1353	41
-	+	159	0
-	+	46	26
-	+	1353	0
-
 > ~/hateoas/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/reltools.py
 	*	1713956285	0
 	"	92	4
@@ -10243,34 +10464,6 @@ $
 > /usr/share/vim/vim90/doc/filetype.txt
 	*	1713876739	0
 	"	780	24
-
-> ~/.config/alias.sh
-	*	1713876717	0
-	"	17	13
-	^	17	14
-	.	17	13
-	+	2	0
-	+	15	37
-	+	19	77
-	+	19	42
-	+	19	47
-	+	19	32
-	+	20	39
-	+	21	40
-	+	22	79
-	+	22	0
-	+	22	36
-	+	22	20
-	+	22	25
-	+	23	45
-	+	24	0
-	+	22	0
-	+	19	0
-	+	23	19
-	+	16	60
-	+	18	0
-	+	19	0
-	+	17	13
 
 > ~/bash/logs/gh-timeago-updates.log
 	*	1713853086	0
@@ -10819,15 +11012,6 @@ $
 	^	34	82
 	.	34	81
 	+	34	81
-
-> ~/bash/python-direnv.bash
-	*	1713772344	0
-	"	1	0
-	^	2	25
-	.	2	25
-	+	5	8
-	+	4	0
-	+	2	25
 
 > /tmp/crontab.fq3oek/crontab
 	*	1713772299	0
