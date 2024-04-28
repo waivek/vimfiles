@@ -11,27 +11,43 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/\$1
+~MSle0/\$1
 
 # Last Substitute Search Pattern:
-~MSle0&?
+~MSle0~&:
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
+:q!
+|2,0,1714292191,,"q!"
+:s/://g
+|2,0,1714292185,,"s/://g"
+:'<,'>join!
+|2,0,1714292180,,"'<,'>join!"
+:'<,'>joiN!
+|2,0,1714292177,,"'<,'>joiN!"
+:enew
+|2,0,1714292168,,"enew"
 :q
-|2,0,1714228921,,"q"
+|2,0,1714292135,,"q"
+:MRU 2:cron-concerns.txt
+|2,0,1714246040,,"MRU 2:cron-concerns.txt"
+:set nonumber
+|2,0,1714245909,,"set nonumber"
+:set 
+|2,0,1714245902,,"set "
 :LogPrettyPrintLine
-|2,0,1714228267,,"LogPrettyPrintLine"
+|2,0,1714228990,,"LogPrettyPrintLine"
+:MRU 
+|2,0,1714228977,,"MRU "
 :MRU log
 |2,0,1714228261,,"MRU log"
 :MRU 9:refresh_downloads_table.log
 |2,0,1714221683,,"MRU 9:refresh_downloads_table.log"
 :MRU lo
 |2,0,1714221681,,"MRU lo"
-:q!
-|2,0,1714221542,,"q!"
 :echo g:copilot_workspace_folders
 |2,0,1714221134,,"echo g:copilot_workspace_folders"
 :edit $MYVIMRC
@@ -46,8 +62,6 @@ $
 |2,0,1714220583,,"set ft=man"
 :llllllll
 |2,0,1714213811,,"llllllll"
-:MRU 
-|2,0,1714213802,,"MRU "
 :term python
 |2,0,1714213586,,"term python"
 :ec
@@ -60,8 +74,6 @@ $
 |2,0,1714212948,,"bd"
 :MRU bas
 |2,0,1714212199,,"MRU bas"
-:set nonumber
-|2,0,1714211820,,"set nonumber"
 :e refresh_downloads_table.py
 |2,0,1714194552,,"e refresh_downloads_table.py"
 :e download_portionurl.py
@@ -162,8 +174,6 @@ $
 |2,0,1714062051,,"e "
 :MRU hate
 |2,0,1714062048,,"MRU hate"
-:enew
-|2,0,1714061069,,"enew"
 :b db2dl.py
 |2,0,1714054869,,"b db2dl.py"
 :term
@@ -794,8 +804,6 @@ $
 |2,0,1713683662,,"next"
 :e gh-timeago-updates.log
 |2,0,1713683001,,"e gh-timeago-updates.log"
-:s/://g
-|2,0,1713682370,,"s/://g"
 :%s//\n/g
 |2,0,1713682366,,"%s//\\n/g"
 :%sort u
@@ -1034,8 +1042,6 @@ $
 |2,0,1713506030,,"OpenDB "
 :OpenDB asdf
 |2,0,1713506025,,"OpenDB asdf"
-:set 
-|2,0,1713505760,,"set "
 :e vd.vim
 |2,0,1713505449,,"e vd.vim"
 :grep -g '*.vim' -g 'vimrc' getseparator
@@ -5650,6 +5656,8 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+? :
+|2,1,1714292185,,":"
 ?/\$1
 |2,1,1714228358,47,"\\$1"
 ?/%w
@@ -5900,8 +5908,6 @@ $
 |2,1,1713682690,47,"brew"
 ?/usr/bin
 |2,1,1713682373,47,"usr/bin"
-? :
-|2,1,1713682370,,":"
 ?/cron
 |2,1,1713629240,47,"cron"
 ?/gh
@@ -7973,48 +7979,39 @@ $
 
 # Registers:
 "0	LINE	0
+	PATH:/home/vivek/.local/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/
+	home/vivek/.deno/bin:/home/vivek/.local/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.
+	linuxbrew/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/vivek/.vim
+	/.fzf/bin
+|3,0,0,1,4,0,1714292167,"PATH:/home/vivek/.local/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/","home/vivek/.deno/bin:/home/vivek/.local/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.","linuxbrew/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/vivek/.vim","/.fzf/bin"
+"1	LINE	0
 	
-|3,0,0,1,1,0,1714221516,""
+|3,0,1,1,1,0,1714292125,""
 "2	LINE	0
 	
-|3,0,2,1,1,0,1714221098,""
+|3,0,2,1,1,0,1714291922,""
 "3	LINE	0
-	
-	
-|3,0,3,1,2,0,1714221098,"",""
+	*/1
+|3,0,3,1,1,0,1714291850,"*/1"
 "4	LINE	0
-	
-	
-|3,0,4,1,2,0,1714221097,"",""
+	echo "TERM:$TERM"
+|3,0,4,1,1,0,1714291795,"echo \"TERM:$TERM\""
 "5	LINE	0
-	    Exit Code
-|3,0,5,1,1,0,1714221091,"    Exit Code"
+	echo "LANG:$LANG"
+	echo "TERM:$TERM"
+|3,0,5,1,2,0,1714291793,"echo \"LANG:$LANG\"","echo \"TERM:$TERM\""
 "6	LINE	0
-	    Outputs (stdout, stderr)
-|3,0,6,1,1,0,1714221087,"    Outputs (stdout, stderr)"
+	echo "HOSTNAME:$HOSTNAME"
+|3,0,6,1,1,0,1714291791,"echo \"HOSTNAME:$HOSTNAME\""
 "7	LINE	0
-	    Output (STDOUT)
-	    Error (STDERR)
-|3,0,7,1,2,0,1714221074,"    Output (STDOUT)","    Error (STDERR)"
+	echo "USER:$USER"
+|3,0,7,1,1,0,1714291773,"echo \"USER:$USER\""
 "8	LINE	0
-	For every cronjob:
-	    
-|3,0,8,1,2,0,1714221071,"For every cronjob:","    "
+	
+|3,0,8,1,1,0,1714291702,""
 "9	LINE	0
-	    Cronjob Command
-	    Cronjob User
-	    Cronjob PID
-	    Cronjob Parent PID
-	    Cronjob Parent Name
-	    Cronjob Parent Command
-	    Cronjob Parent User
-	    Cronjob Parent PID
-	    Cronjob Parent Parent Name
-	    Cronjob Parent Parent Command
-	    Cronjob Parent Parent User
-	    Cronjob Parent Parent PID
-	    Cronjob Parent Parent Parent Name
-|3,0,9,1,13,0,1714221049,"    Cronjob Command","    Cronjob User","    Cronjob PID","    Cronjob Parent PID","    Cronjob Parent Name","    Cronjob Parent Command","    Cronjob Parent User","    Cronjob Parent PID","    Cronjob Parent Parent Name","    Cronjob Parent Parent Command","    Cronjob Parent Parent User","    Cronjob Parent Parent PID","    Cronjob Parent Parent Parent Name"
+	
+|3,0,9,1,1,0,1714290252,""
 "a	CHAR	0
 	Tabularize /,/l1c1l1c1l1c1l1
 |3,0,10,0,1,0,1714211797,"Tabularize /,/l1c1l1c1l1c1l1"
@@ -8058,238 +8055,390 @@ $
 |3,0,28,1,24,0,1712521850,"    return render_template_string(\"\"\"","    <ul>","        {% for id, name, downloaded_path, progress, status in downloads %}","            <li>","                <a href=\"/download/{{ id }}\">{{ name }}</a>","                <span>{{ status }}</span>","                <progress value=\"{{ progress }}\" max=\"100\"></progress>","                <span>{{ progress }}%</span>","                {% if status == 'paused' %}",>68
 |<"                <form method=\"POST\" action=\"/resume_download\">","                    <input type=\"hidden\" name=\"id\" value=\"{{ id }}\">","                    <input type=\"submit\" value=\"Resume\">","                </form>","                {% endif %}","                {% if status == 'downloading' %}","                <form method=\"POST\" action=\"/pause_download\">","                    <input type=\"hidden\" name=\"id\" value=\"{{ id }}\">",>61
 |<"                    <input type=\"submit\" value=\"Pause\">","                </form>","                {% endif %}","","            </li>","        {% endfor %}","    </ul>\"\"\", downloads=downloads)"
-"-	CHAR	0
+""-	CHAR	0
 	 
-|3,0,36,0,1,0,1714228383," "
+|3,1,36,0,1,0,1714292172," "
 
 # File marks:
-'0  1  0  ~/hateoas/rfv
-|4,48,1,0,1714228921,"~/hateoas/rfv"
-'1  1  0  ~/bash/logs/refresh_downloads_table.log
-|4,49,1,0,1714228794,"~/bash/logs/refresh_downloads_table.log"
-'2  1  0  ~/bash/logs/refresh_downloads_table.log
-|4,50,1,0,1714228794,"~/bash/logs/refresh_downloads_table.log"
-'3  19  50  ~/.config/alias.sh
-|4,51,19,50,1714228449,"~/.config/alias.sh"
-'4  19  50  ~/.config/alias.sh
-|4,52,19,50,1714228449,"~/.config/alias.sh"
-'5  19  50  ~/.config/alias.sh
-|4,53,19,50,1714228449,"~/.config/alias.sh"
-'6  19  50  ~/.config/alias.sh
-|4,54,19,50,1714228449,"~/.config/alias.sh"
-'7  19  10  ~/.config/alias.sh
-|4,55,19,10,1714228318,"~/.config/alias.sh"
-'8  19  10  ~/.config/alias.sh
-|4,56,19,10,1714228318,"~/.config/alias.sh"
-'9  19  10  ~/.config/alias.sh
-|4,57,19,10,1714228318,"~/.config/alias.sh"
+'0  1  10  ~/bash/info.bash
+|4,48,1,10,1714292135,"~/bash/info.bash"
+'1  1  10  ~/bash/info.bash
+|4,49,1,10,1714292135,"~/bash/info.bash"
+'2  2  0  ~/bash/info.bash
+|4,50,2,0,1714292074,"~/bash/info.bash"
+'3  2  0  ~/bash/info.bash
+|4,51,2,0,1714292074,"~/bash/info.bash"
+'4  2  0  ~/bash/info.bash
+|4,52,2,0,1714292074,"~/bash/info.bash"
+'5  2  0  ~/bash/info.bash
+|4,53,2,0,1714292074,"~/bash/info.bash"
+'6  2  0  ~/bash/info.bash
+|4,54,2,0,1714292069,"~/bash/info.bash"
+'7  2  0  ~/bash/info.bash
+|4,55,2,0,1714292069,"~/bash/info.bash"
+'8  2  0  ~/bash/info.bash
+|4,56,2,0,1714292069,"~/bash/info.bash"
+'9  2  0  ~/bash/info.bash
+|4,57,2,0,1714292069,"~/bash/info.bash"
 
 # Jumplist (newest first):
--'  1  0  ~/hateoas/rfv
-|4,39,1,0,1714228921,"~/hateoas/rfv"
--'  1  0  ~/bash/logs/refresh_downloads_table.log
-|4,39,1,0,1714228794,"~/bash/logs/refresh_downloads_table.log"
--'  1  0  ~/bash/logs/refresh_downloads_table.log
-|4,39,1,0,1714228794,"~/bash/logs/refresh_downloads_table.log"
--'  19  50  ~/.config/alias.sh
-|4,39,19,50,1714228449,"~/.config/alias.sh"
--'  19  50  ~/.config/alias.sh
-|4,39,19,50,1714228449,"~/.config/alias.sh"
--'  19  50  ~/.config/alias.sh
-|4,39,19,50,1714228449,"~/.config/alias.sh"
--'  1  0  ~/.config/alias.sh
-|4,39,1,0,1714228358,"~/.config/alias.sh"
--'  1  0  ~/.config/alias.sh
-|4,39,1,0,1714228358,"~/.config/alias.sh"
--'  1  0  ~/.config/alias.sh
-|4,39,1,0,1714228358,"~/.config/alias.sh"
--'  19  10  ~/.config/alias.sh
-|4,39,19,10,1714228318,"~/.config/alias.sh"
--'  1  0  ~/.config/alias.sh
-|4,39,1,0,1714228312,"~/.config/alias.sh"
--'  13384  0  ~/bash/logs/refresh_downloads_table.log
-|4,39,13384,0,1714228271,"~/bash/logs/refresh_downloads_table.log"
--'  13384  0  ~/bash/logs/refresh_downloads_table.log
-|4,39,13384,0,1714228271,"~/bash/logs/refresh_downloads_table.log"
--'  13384  0  ~/bash/logs/refresh_downloads_table.log
-|4,39,13384,0,1714228271,"~/bash/logs/refresh_downloads_table.log"
--'  13384  0  ~/bash/logs/refresh_downloads_table.log
-|4,39,13384,0,1714228271,"~/bash/logs/refresh_downloads_table.log"
--'  1  0  ~/bash/logs/refresh_downloads_table.log
-|4,39,1,0,1714228261,"~/bash/logs/refresh_downloads_table.log"
--'  1  0  ~/bash/logs/refresh_downloads_table.log
-|4,39,1,0,1714228261,"~/bash/logs/refresh_downloads_table.log"
--'  1  0  ~/bash/logs/refresh_downloads_table.log
-|4,39,1,0,1714228261,"~/bash/logs/refresh_downloads_table.log"
--'  8321  0  ~/bash/logs/refresh_downloads_table.log
-|4,39,8321,0,1714221693,"~/bash/logs/refresh_downloads_table.log"
--'  8321  0  ~/bash/logs/refresh_downloads_table.log
-|4,39,8321,0,1714221693,"~/bash/logs/refresh_downloads_table.log"
--'  8321  0  ~/bash/logs/refresh_downloads_table.log
-|4,39,8321,0,1714221693,"~/bash/logs/refresh_downloads_table.log"
--'  8321  0  ~/bash/logs/refresh_downloads_table.log
-|4,39,8321,0,1714221693,"~/bash/logs/refresh_downloads_table.log"
--'  8321  0  ~/bash/logs/refresh_downloads_table.log
-|4,39,8321,0,1714221693,"~/bash/logs/refresh_downloads_table.log"
--'  1  0  /tmp/v8tzV4q/1-copilot.log
-|4,39,1,0,1714221683,"/tmp/v8tzV4q/1-copilot.log"
--'  1  0  /tmp/v8tzV4q/1-copilot.log
-|4,39,1,0,1714221683,"/tmp/v8tzV4q/1-copilot.log"
--'  1  0  /tmp/v8tzV4q/1-copilot.log
-|4,39,1,0,1714221683,"/tmp/v8tzV4q/1-copilot.log"
--'  1  0  /tmp/v8tzV4q/1-copilot.log
-|4,39,1,0,1714221683,"/tmp/v8tzV4q/1-copilot.log"
--'  1  0  /tmp/v8tzV4q/1-copilot.log
-|4,39,1,0,1714221683,"/tmp/v8tzV4q/1-copilot.log"
--'  1  0  ~/bash/logs/refresh_downloads_table.log
-|4,39,1,0,1714221683,"~/bash/logs/refresh_downloads_table.log"
--'  1  0  /tmp/v8tzV4q/1-copilot.log
-|4,39,1,0,1714221683,"/tmp/v8tzV4q/1-copilot.log"
--'  8  0  ~/hateoas
-|4,39,8,0,1714221361,"~/hateoas"
--'  8  0  ~/hateoas
-|4,39,8,0,1714221361,"~/hateoas"
--'  8  0  ~/hateoas
-|4,39,8,0,1714221361,"~/hateoas"
--'  8  0  ~/hateoas
-|4,39,8,0,1714221361,"~/hateoas"
--'  8  0  ~/hateoas
-|4,39,8,0,1714221361,"~/hateoas"
--'  8  0  ~/hateoas
-|4,39,8,0,1714221361,"~/hateoas"
--'  8  0  ~/hateoas
-|4,39,8,0,1714221361,"~/hateoas"
--'  8  0  ~/hateoas
-|4,39,8,0,1714221361,"~/hateoas"
--'  1353  45  ~/.vim/vimrc
-|4,39,1353,45,1714221134,"~/.vim/vimrc"
--'  1353  45  ~/.vim/vimrc
-|4,39,1353,45,1714221134,"~/.vim/vimrc"
--'  1353  45  ~/.vim/vimrc
-|4,39,1353,45,1714221134,"~/.vim/vimrc"
--'  1353  45  ~/.vim/vimrc
-|4,39,1353,45,1714221134,"~/.vim/vimrc"
--'  1353  45  ~/.vim/vimrc
-|4,39,1353,45,1714221134,"~/.vim/vimrc"
--'  1353  45  ~/.vim/vimrc
-|4,39,1353,45,1714221134,"~/.vim/vimrc"
--'  1353  45  ~/.vim/vimrc
-|4,39,1353,45,1714221134,"~/.vim/vimrc"
--'  1353  45  ~/.vim/vimrc
-|4,39,1353,45,1714221134,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1714221123,"~/.vim/vimrc"
--'  10  29  ~/tooling/cron-concerns.txt
-|4,39,10,29,1714221123,"~/tooling/cron-concerns.txt"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1714221123,"~/.vim/vimrc"
--'  10  29  ~/tooling/cron-concerns.txt
-|4,39,10,29,1714221123,"~/tooling/cron-concerns.txt"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1714221123,"~/.vim/vimrc"
--'  10  29  ~/tooling/cron-concerns.txt
-|4,39,10,29,1714221123,"~/tooling/cron-concerns.txt"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1714221123,"~/.vim/vimrc"
--'  10  29  ~/tooling/cron-concerns.txt
-|4,39,10,29,1714221123,"~/tooling/cron-concerns.txt"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1714221123,"~/.vim/vimrc"
--'  10  29  ~/tooling/cron-concerns.txt
-|4,39,10,29,1714221123,"~/tooling/cron-concerns.txt"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1714221123,"~/.vim/vimrc"
--'  10  29  ~/tooling/cron-concerns.txt
-|4,39,10,29,1714221123,"~/tooling/cron-concerns.txt"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1714221123,"~/.vim/vimrc"
--'  10  29  ~/tooling/cron-concerns.txt
-|4,39,10,29,1714221123,"~/tooling/cron-concerns.txt"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1714221123,"~/.vim/vimrc"
--'  10  29  ~/tooling/cron-concerns.txt
-|4,39,10,29,1714221123,"~/tooling/cron-concerns.txt"
--'  8  12  ~/tooling/cron-concerns.txt
-|4,39,8,12,1714221085,"~/tooling/cron-concerns.txt"
--'  8  12  ~/tooling/cron-concerns.txt
-|4,39,8,12,1714221085,"~/tooling/cron-concerns.txt"
--'  8  12  ~/tooling/cron-concerns.txt
-|4,39,8,12,1714221085,"~/tooling/cron-concerns.txt"
--'  8  12  ~/tooling/cron-concerns.txt
-|4,39,8,12,1714221085,"~/tooling/cron-concerns.txt"
--'  8  12  ~/tooling/cron-concerns.txt
-|4,39,8,12,1714221085,"~/tooling/cron-concerns.txt"
--'  8  12  ~/tooling/cron-concerns.txt
-|4,39,8,12,1714221085,"~/tooling/cron-concerns.txt"
--'  8  12  ~/tooling/cron-concerns.txt
-|4,39,8,12,1714221085,"~/tooling/cron-concerns.txt"
--'  8  12  ~/tooling/cron-concerns.txt
-|4,39,8,12,1714221085,"~/tooling/cron-concerns.txt"
--'  12  18  ~/tooling/cron-concerns.txt
-|4,39,12,18,1714221056,"~/tooling/cron-concerns.txt"
--'  13  18  ~/tooling/cron-concerns.txt
-|4,39,13,18,1714221056,"~/tooling/cron-concerns.txt"
--'  12  18  ~/tooling/cron-concerns.txt
-|4,39,12,18,1714221056,"~/tooling/cron-concerns.txt"
--'  13  18  ~/tooling/cron-concerns.txt
-|4,39,13,18,1714221056,"~/tooling/cron-concerns.txt"
--'  12  18  ~/tooling/cron-concerns.txt
-|4,39,12,18,1714221056,"~/tooling/cron-concerns.txt"
--'  13  18  ~/tooling/cron-concerns.txt
-|4,39,13,18,1714221056,"~/tooling/cron-concerns.txt"
--'  12  18  ~/tooling/cron-concerns.txt
-|4,39,12,18,1714221056,"~/tooling/cron-concerns.txt"
--'  13  18  ~/tooling/cron-concerns.txt
-|4,39,13,18,1714221056,"~/tooling/cron-concerns.txt"
--'  12  18  ~/tooling/cron-concerns.txt
-|4,39,12,18,1714221056,"~/tooling/cron-concerns.txt"
--'  13  18  ~/tooling/cron-concerns.txt
-|4,39,13,18,1714221056,"~/tooling/cron-concerns.txt"
--'  12  18  ~/tooling/cron-concerns.txt
-|4,39,12,18,1714221056,"~/tooling/cron-concerns.txt"
--'  13  18  ~/tooling/cron-concerns.txt
-|4,39,13,18,1714221056,"~/tooling/cron-concerns.txt"
--'  12  18  ~/tooling/cron-concerns.txt
-|4,39,12,18,1714221056,"~/tooling/cron-concerns.txt"
--'  13  18  ~/tooling/cron-concerns.txt
-|4,39,13,18,1714221056,"~/tooling/cron-concerns.txt"
--'  12  18  ~/tooling/cron-concerns.txt
-|4,39,12,18,1714221056,"~/tooling/cron-concerns.txt"
--'  13  18  ~/tooling/cron-concerns.txt
-|4,39,13,18,1714221056,"~/tooling/cron-concerns.txt"
--'  16  4  ~/tooling/cron-concerns.txt
-|4,39,16,4,1714221039,"~/tooling/cron-concerns.txt"
--'  16  4  ~/tooling/cron-concerns.txt
-|4,39,16,4,1714221039,"~/tooling/cron-concerns.txt"
--'  16  4  ~/tooling/cron-concerns.txt
-|4,39,16,4,1714221039,"~/tooling/cron-concerns.txt"
--'  16  4  ~/tooling/cron-concerns.txt
-|4,39,16,4,1714221039,"~/tooling/cron-concerns.txt"
--'  16  4  ~/tooling/cron-concerns.txt
-|4,39,16,4,1714221039,"~/tooling/cron-concerns.txt"
--'  16  4  ~/tooling/cron-concerns.txt
-|4,39,16,4,1714221039,"~/tooling/cron-concerns.txt"
--'  16  4  ~/tooling/cron-concerns.txt
-|4,39,16,4,1714221039,"~/tooling/cron-concerns.txt"
--'  16  4  ~/tooling/cron-concerns.txt
-|4,39,16,4,1714221039,"~/tooling/cron-concerns.txt"
--'  55  17  ~/tooling/cron.man
-|4,39,55,17,1714220942,"~/tooling/cron.man"
--'  55  17  ~/tooling/cron.man
-|4,39,55,17,1714220942,"~/tooling/cron.man"
--'  55  17  ~/tooling/cron.man
-|4,39,55,17,1714220942,"~/tooling/cron.man"
--'  55  17  ~/tooling/cron.man
-|4,39,55,17,1714220942,"~/tooling/cron.man"
--'  55  17  ~/tooling/cron.man
-|4,39,55,17,1714220942,"~/tooling/cron.man"
--'  55  17  ~/tooling/cron.man
-|4,39,55,17,1714220942,"~/tooling/cron.man"
+-'  1  10  ~/bash/info.bash
+|4,39,1,10,1714292168,"~/bash/info.bash"
+-'  1  10  ~/bash/info.bash
+|4,39,1,10,1714292135,"~/bash/info.bash"
+-'  2  0  ~/bash/info.bash
+|4,39,2,0,1714292118,"~/bash/info.bash"
+-'  2  0  ~/bash/info.bash
+|4,39,2,0,1714292118,"~/bash/info.bash"
+-'  2  0  ~/bash/info.bash
+|4,39,2,0,1714292074,"~/bash/info.bash"
+-'  2  0  ~/bash/info.bash
+|4,39,2,0,1714292069,"~/bash/info.bash"
+-'  3  31  ~/bash/info.bash
+|4,39,3,31,1714292064,"~/bash/info.bash"
+-'  3  31  ~/bash/info.bash
+|4,39,3,31,1714292064,"~/bash/info.bash"
+-'  3  31  ~/bash/info.bash
+|4,39,3,31,1714292064,"~/bash/info.bash"
+-'  3  31  ~/bash/info.bash
+|4,39,3,31,1714292064,"~/bash/info.bash"
+-'  2  31  ~/bash/info.bash
+|4,39,2,31,1714292058,"~/bash/info.bash"
+-'  27  0  ~/bash/info.bash
+|4,39,27,0,1714292049,"~/bash/info.bash"
+-'  26  0  ~/bash/info.bash
+|4,39,26,0,1714292049,"~/bash/info.bash"
+-'  27  0  ~/bash/info.bash
+|4,39,27,0,1714292049,"~/bash/info.bash"
+-'  26  0  ~/bash/info.bash
+|4,39,26,0,1714292049,"~/bash/info.bash"
+-'  27  0  ~/bash/info.bash
+|4,39,27,0,1714292049,"~/bash/info.bash"
+-'  26  0  ~/bash/info.bash
+|4,39,26,0,1714292049,"~/bash/info.bash"
+-'  27  0  ~/bash/info.bash
+|4,39,27,0,1714292049,"~/bash/info.bash"
+-'  26  0  ~/bash/info.bash
+|4,39,26,0,1714292049,"~/bash/info.bash"
+-'  5  6  ~/bash/info.bash
+|4,39,5,6,1714292047,"~/bash/info.bash"
+-'  4  6  ~/bash/info.bash
+|4,39,4,6,1714292047,"~/bash/info.bash"
+-'  5  6  ~/bash/info.bash
+|4,39,5,6,1714292047,"~/bash/info.bash"
+-'  4  6  ~/bash/info.bash
+|4,39,4,6,1714292047,"~/bash/info.bash"
+-'  5  6  ~/bash/info.bash
+|4,39,5,6,1714292047,"~/bash/info.bash"
+-'  4  6  ~/bash/info.bash
+|4,39,4,6,1714292047,"~/bash/info.bash"
+-'  5  6  ~/bash/info.bash
+|4,39,5,6,1714292047,"~/bash/info.bash"
+-'  4  6  ~/bash/info.bash
+|4,39,4,6,1714292047,"~/bash/info.bash"
+-'  7  12  ~/bash/info.bash
+|4,39,7,12,1714291945,"~/bash/info.bash"
+-'  6  12  ~/bash/info.bash
+|4,39,6,12,1714291945,"~/bash/info.bash"
+-'  7  12  ~/bash/info.bash
+|4,39,7,12,1714291945,"~/bash/info.bash"
+-'  6  12  ~/bash/info.bash
+|4,39,6,12,1714291945,"~/bash/info.bash"
+-'  7  12  ~/bash/info.bash
+|4,39,7,12,1714291945,"~/bash/info.bash"
+-'  6  12  ~/bash/info.bash
+|4,39,6,12,1714291945,"~/bash/info.bash"
+-'  7  12  ~/bash/info.bash
+|4,39,7,12,1714291945,"~/bash/info.bash"
+-'  6  12  ~/bash/info.bash
+|4,39,6,12,1714291945,"~/bash/info.bash"
+-'  6  12  ~/bash/info.bash
+|4,39,6,12,1714291945,"~/bash/info.bash"
+-'  5  12  ~/bash/info.bash
+|4,39,5,12,1714291945,"~/bash/info.bash"
+-'  9  12  ~/bash/info.bash
+|4,39,9,12,1714291929,"~/bash/info.bash"
+-'  8  12  ~/bash/info.bash
+|4,39,8,12,1714291929,"~/bash/info.bash"
+-'  9  12  ~/bash/info.bash
+|4,39,9,12,1714291929,"~/bash/info.bash"
+-'  8  12  ~/bash/info.bash
+|4,39,8,12,1714291929,"~/bash/info.bash"
+-'  9  12  ~/bash/info.bash
+|4,39,9,12,1714291929,"~/bash/info.bash"
+-'  8  12  ~/bash/info.bash
+|4,39,8,12,1714291929,"~/bash/info.bash"
+-'  9  12  ~/bash/info.bash
+|4,39,9,12,1714291929,"~/bash/info.bash"
+-'  8  12  ~/bash/info.bash
+|4,39,8,12,1714291929,"~/bash/info.bash"
+-'  8  12  ~/bash/info.bash
+|4,39,8,12,1714291929,"~/bash/info.bash"
+-'  7  12  ~/bash/info.bash
+|4,39,7,12,1714291929,"~/bash/info.bash"
+-'  5  12  ~/bash/info.bash
+|4,39,5,12,1714291929,"~/bash/info.bash"
+-'  10  0  ~/bash/info.bash
+|4,39,10,0,1714291918,"~/bash/info.bash"
+-'  10  0  ~/bash/info.bash
+|4,39,10,0,1714291918,"~/bash/info.bash"
+-'  10  0  ~/bash/info.bash
+|4,39,10,0,1714291918,"~/bash/info.bash"
+-'  10  0  ~/bash/info.bash
+|4,39,10,0,1714291918,"~/bash/info.bash"
+-'  9  0  ~/bash/info.bash
+|4,39,9,0,1714291918,"~/bash/info.bash"
+-'  7  0  ~/bash/info.bash
+|4,39,7,0,1714291918,"~/bash/info.bash"
+-'  8  0  ~/bash/info.bash
+|4,39,8,0,1714291918,"~/bash/info.bash"
+-'  6  0  ~/bash/info.bash
+|4,39,6,0,1714291918,"~/bash/info.bash"
+-'  4  5  ~/bash/info.bash
+|4,39,4,5,1714291897,"~/bash/info.bash"
+-'  3  5  ~/bash/info.bash
+|4,39,3,5,1714291897,"~/bash/info.bash"
+-'  3  5  ~/bash/info.bash
+|4,39,3,5,1714291897,"~/bash/info.bash"
+-'  3  5  ~/bash/info.bash
+|4,39,3,5,1714291897,"~/bash/info.bash"
+-'  1  0  ~/bash/info.bash
+|4,39,1,0,1714291883,"~/bash/info.bash"
+-'  1  0  ~/bash/info.bash
+|4,39,1,0,1714291883,"~/bash/info.bash"
+-'  1  0  ~/bash/info.bash
+|4,39,1,0,1714291883,"~/bash/info.bash"
+-'  1  0  ~/bash/info.bash
+|4,39,1,0,1714291883,"~/bash/info.bash"
+-'  1  0  ~/bash/info.bash
+|4,39,1,0,1714291883,"~/bash/info.bash"
+-'  1  0  ~/bash/info.bash
+|4,39,1,0,1714291883,"~/bash/info.bash"
+-'  27  0  /tmp/crontab.D1m99B/crontab
+|4,39,27,0,1714291881,"/tmp/crontab.D1m99B/crontab"
+-'  27  0  /tmp/crontab.D1m99B/crontab
+|4,39,27,0,1714291881,"/tmp/crontab.D1m99B/crontab"
+-'  27  0  /tmp/crontab.D1m99B/crontab
+|4,39,27,0,1714291881,"/tmp/crontab.D1m99B/crontab"
+-'  27  0  /tmp/crontab.D1m99B/crontab
+|4,39,27,0,1714291881,"/tmp/crontab.D1m99B/crontab"
+-'  27  0  /tmp/crontab.D1m99B/crontab
+|4,39,27,0,1714291881,"/tmp/crontab.D1m99B/crontab"
+-'  27  0  /tmp/crontab.D1m99B/crontab
+|4,39,27,0,1714291881,"/tmp/crontab.D1m99B/crontab"
+-'  27  0  /tmp/crontab.D1m99B/crontab
+|4,39,27,0,1714291881,"/tmp/crontab.D1m99B/crontab"
+-'  27  0  /tmp/crontab.D1m99B/crontab
+|4,39,27,0,1714291881,"/tmp/crontab.D1m99B/crontab"
+-'  27  0  /tmp/crontab.D1m99B/crontab
+|4,39,27,0,1714291881,"/tmp/crontab.D1m99B/crontab"
+-'  1  0  /tmp/crontab.D1m99B/crontab
+|4,39,1,0,1714291845,"/tmp/crontab.D1m99B/crontab"
+-'  1  0  /tmp/crontab.D1m99B/crontab
+|4,39,1,0,1714291845,"/tmp/crontab.D1m99B/crontab"
+-'  1  0  /tmp/crontab.D1m99B/crontab
+|4,39,1,0,1714291845,"/tmp/crontab.D1m99B/crontab"
+-'  1  0  /tmp/crontab.D1m99B/crontab
+|4,39,1,0,1714291845,"/tmp/crontab.D1m99B/crontab"
+-'  1  0  /tmp/crontab.D1m99B/crontab
+|4,39,1,0,1714291845,"/tmp/crontab.D1m99B/crontab"
+-'  1  0  /tmp/crontab.D1m99B/crontab
+|4,39,1,0,1714291845,"/tmp/crontab.D1m99B/crontab"
+-'  1  0  /tmp/crontab.D1m99B/crontab
+|4,39,1,0,1714291845,"/tmp/crontab.D1m99B/crontab"
+-'  1  0  /tmp/crontab.D1m99B/crontab
+|4,39,1,0,1714291845,"/tmp/crontab.D1m99B/crontab"
+-'  1  0  /tmp/crontab.D1m99B/crontab
+|4,39,1,0,1714291845,"/tmp/crontab.D1m99B/crontab"
+-'  3  0  ~/bash/info.bash
+|4,39,3,0,1714291821,"~/bash/info.bash"
+-'  5  0  ~/bash/info.bash
+|4,39,5,0,1714291821,"~/bash/info.bash"
+-'  2  0  ~/bash/info.bash
+|4,39,2,0,1714291821,"~/bash/info.bash"
+-'  4  0  ~/bash/info.bash
+|4,39,4,0,1714291821,"~/bash/info.bash"
+-'  2  0  ~/bash/info.bash
+|4,39,2,0,1714291821,"~/bash/info.bash"
+-'  4  0  ~/bash/info.bash
+|4,39,4,0,1714291821,"~/bash/info.bash"
+-'  2  0  ~/bash/info.bash
+|4,39,2,0,1714291821,"~/bash/info.bash"
+-'  2  0  ~/bash/info.bash
+|4,39,2,0,1714291821,"~/bash/info.bash"
+-'  25  0  ~/bash/info.bash
+|4,39,25,0,1714291815,"~/bash/info.bash"
+-'  24  0  ~/bash/info.bash
+|4,39,24,0,1714291815,"~/bash/info.bash"
+-'  23  0  ~/bash/info.bash
+|4,39,23,0,1714291815,"~/bash/info.bash"
+-'  22  0  ~/bash/info.bash
+|4,39,22,0,1714291815,"~/bash/info.bash"
+-'  21  0  ~/bash/info.bash
+|4,39,21,0,1714291815,"~/bash/info.bash"
 
 # Buffer list:
-%~/hateoas/rfv	1	0
+%~/bash/info.bash	1	10
 
 # History of marks within files (newest to oldest):
+
+> ~/bash/info.bash
+	*	1714292167	0
+	"	1	10
+	^	1	11
+	.	1	10
+	+	15	15
+	+	19	17
+	+	23	23
+	+	27	25
+	+	27	17
+	+	27	0
+	+	19	0
+	+	27	0
+	+	17	0
+	+	25	0
+	+	27	0
+	+	21	0
+	+	12	6
+	+	14	0
+	+	16	0
+	+	18	0
+	+	20	0
+	+	22	0
+	+	24	0
+	+	26	0
+	+	10	0
+	+	5	9
+	+	4	0
+	+	5	14
+	+	6	0
+	+	9	0
+	+	10	0
+	+	9	12
+	+	6	0
+	+	7	12
+	+	3	0
+	+	2	0
+	+	1	10
+	a	7	12
+	b	7	12
+
+> /tmp/crontab.D1m99B/crontab
+	*	1714291855	0
+	"	27	0
+	.	28	0
+	+	28	0
+
+> ~/tooling/cron-concerns.txt
+	*	1714290268	0
+	"	11	28
+	^	11	29
+	.	11	28
+	+	49	0
+	+	40	37
+	+	41	18
+	+	41	12
+	+	44	12
+	+	45	16
+	+	46	19
+	+	49	16
+	+	49	15
+	+	49	22
+	+	49	0
+	+	49	23
+	+	49	26
+	+	49	23
+	+	49	22
+	+	49	30
+	+	49	33
+	+	49	30
+	+	49	29
+	+	49	37
+	+	49	0
+	+	45	34
+	+	46	18
+	+	45	36
+	+	46	45
+	+	47	50
+	+	48	56
+	+	49	18
+	+	49	0
+	+	41	0
+	+	37	0
+	+	38	6
+	+	41	0
+	+	39	0
+	+	49	0
+	+	43	29
+	+	58	59
+	+	65	0
+	+	58	38
+	+	60	0
+	+	56	44
+	+	57	38
+	+	59	37
+	+	54	78
+	+	55	53
+	+	56	0
+	+	55	53
+	+	65	54
+	+	62	0
+	+	63	131
+	+	61	4
+	+	67	0
+	+	65	0
+	+	68	0
+	+	70	0
+	+	4	17
+	+	5	14
+	+	6	13
+	+	7	15
+	+	73	2
+	+	69	29
+	+	71	0
+	+	8	32
+	+	9	8
+	+	5	78
+	+	12	18
+	+	13	18
+	+	14	22
+	+	15	16
+	+	16	18
+	+	17	18
+	+	18	18
+	+	19	19
+	+	20	19
+	+	21	17
+	+	22	18
+	+	23	18
+	+	24	21
+	+	25	19
+	+	26	16
+	+	27	20
+	+	28	21
+	+	29	18
+	+	30	21
+	+	31	16
+	+	32	20
+	+	33	21
+	+	33	0
+	+	32	0
+	+	11	28
+
+> ~/tmp.bash
+	*	1714245977	0
+	"	2	12
+	^	2	13
+	.	2	12
+	+	2	6
+	+	1	9
+	+	2	12
+
+> ~/bash/logs/refresh_downloads_table.log
+	*	1714228997	0
+	"	304	0
+	.	1	0
+	+	1	0
 
 > ~/hateoas/rfv
 	*	1714228920	0
@@ -8297,12 +8446,6 @@ $
 	^	12	41
 	.	12	40
 	+	12	40
-
-> ~/bash/logs/refresh_downloads_table.log
-	*	1714228793	0
-	"	1	0
-	.	1	0
-	+	1	0
 
 > ~/.config/alias.sh
 	*	1714228402	0
@@ -8426,48 +8569,6 @@ $
 	+	159	0
 	+	46	26
 	+	1353	0
-
-> ~/tooling/cron-concerns.txt
-	*	1714221122	0
-	"	10	29
-	^	10	30
-	.	10	29
-	+	16	0
-	+	7	37
-	+	8	18
-	+	8	12
-	+	11	12
-	+	12	16
-	+	13	19
-	+	16	16
-	+	16	15
-	+	16	22
-	+	16	0
-	+	16	23
-	+	16	26
-	+	16	23
-	+	16	22
-	+	16	30
-	+	16	33
-	+	16	30
-	+	16	29
-	+	16	37
-	+	16	0
-	+	12	34
-	+	13	18
-	+	12	36
-	+	13	45
-	+	14	50
-	+	15	56
-	+	16	18
-	+	16	0
-	+	8	0
-	+	4	0
-	+	5	6
-	+	8	0
-	+	6	0
-	+	16	0
-	+	10	29
 
 > ~/tooling/cron.man
 	*	1714220935	0
