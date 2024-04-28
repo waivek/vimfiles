@@ -11,17 +11,57 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0/\$1
+~MSle0~/flock
 
 # Last Substitute Search Pattern:
-~MSle0~&:
+~MSle0&:
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
+:q
+|2,0,1714332785,,"q"
+:e ~/bin/bash
+|2,0,1714329632,,"e ~/bin/bash"
+:qa
+|2,0,1714329502,,"qa"
+:e gh-timeago-updates.log
+|2,0,1714329437,,"e gh-timeago-updates.log"
 :q!
-|2,0,1714292191,,"q!"
+|2,0,1714328428,,"q!"
+:norm
+|2,0,1714328161,,"norm"
+:MRU 4:cron-concerns.txt
+|2,0,1714328077,,"MRU 4:cron-concerns.txt"
+:w
+|2,0,1714326071,,"w"
+:LogPrettyPrintLine
+|2,0,1714309097,,"LogPrettyPrintLine"
+:MRU log
+|2,0,1714309092,,"MRU log"
+:MRU py
+|2,0,1714309031,,"MRU py"
+:e /tmp/refresh_downloads_table.lock
+|2,0,1714308277,,"e /tmp/refresh_downloads_table.lock"
+:e c
+|2,0,1714308247,,"e c"
+:e
+|2,0,1714308242,,"e"
+:Copilot panel
+|2,0,1714307899,,"Copilot panel"
+:term
+|2,0,1714307756,,"term"
+:e /bin/sh
+|2,0,1714307241,,"e /bin/sh"
+:normal! 80p
+|2,0,1714306317,,"normal! 80p"
+:set nonumber
+|2,0,1714305397,,"set nonumber"
+:MRU 
+|2,0,1714301320,,"MRU "
+:MRU c
+|2,0,1714301246,,"MRU c"
 :s/://g
 |2,0,1714292185,,"s/://g"
 :'<,'>join!
@@ -30,20 +70,10 @@ $
 |2,0,1714292177,,"'<,'>joiN!"
 :enew
 |2,0,1714292168,,"enew"
-:q
-|2,0,1714292135,,"q"
 :MRU 2:cron-concerns.txt
 |2,0,1714246040,,"MRU 2:cron-concerns.txt"
-:set nonumber
-|2,0,1714245909,,"set nonumber"
 :set 
 |2,0,1714245902,,"set "
-:LogPrettyPrintLine
-|2,0,1714228990,,"LogPrettyPrintLine"
-:MRU 
-|2,0,1714228977,,"MRU "
-:MRU log
-|2,0,1714228261,,"MRU log"
 :MRU 9:refresh_downloads_table.log
 |2,0,1714221683,,"MRU 9:refresh_downloads_table.log"
 :MRU lo
@@ -56,8 +86,6 @@ $
 |2,0,1714220942,,"e cron-concerns.txt"
 : w ~/tooling/cron.man
 |2,0,1714220933,," w ~/tooling/cron.man"
-:e
-|2,0,1714220929,,"e"
 :set ft=man
 |2,0,1714220583,,"set ft=man"
 :llllllll
@@ -176,8 +204,6 @@ $
 |2,0,1714062048,,"MRU hate"
 :b db2dl.py
 |2,0,1714054869,,"b db2dl.py"
-:term
-|2,0,1714053980,,"term"
 :!rm /tmp/db2dl.py.lock
 |2,0,1714053869,,"!rm /tmp/db2dl.py.lock"
 :!r
@@ -190,8 +216,6 @@ $
 |2,0,1714047464,,"408"
 :e create-databases.py
 |2,0,1714047359,,"e create-databases.py"
-:qa
-|2,0,1714047325,,"qa"
 :ter
 |2,0,1714047290,,"ter"
 :e dbutils.py
@@ -524,8 +548,6 @@ $
 |2,0,1713848462,,"VD"
 :e migrations/240425_0000_portionurls-notnull-user_id.py
 |2,0,1713847066,,"e migrations/240425_0000_portionurls-notnull-user_id.py"
-:w
-|2,0,1713847029,,"w"
 :Join
 |2,0,1713846969,,"Join"
 : 
@@ -676,8 +698,6 @@ $
 |2,0,1713759993,,"MRU ali"
 :e sql_checklist.txt
 |2,0,1713758803,,"e sql_checklist.txt"
-:MRU py
-|2,0,1713758698,,"MRU py"
 :MRU pyt
 |2,0,1713758599,,"MRU pyt"
 :MRU python
@@ -686,8 +706,6 @@ $
 |2,0,1713758253,,"MRU gen"
 :e ~/.config/todo.txt
 |2,0,1713758083,,"e ~/.config/todo.txt"
-:Copilot panel
-|2,0,1713757752,,"Copilot panel"
 :34
 |2,0,1713754107,,"34"
 :MRU ni
@@ -770,8 +788,6 @@ $
 |2,0,1713687596,,"e ~/.vim/plugin/logutils.vim"
 :echo strftime("%c", split(getline("."))[0])
 |2,0,1713687089,,"echo strftime(\"%c\", split(getline(\".\"))[0])"
-:e c
-|2,0,1713686992,,"e c"
 :echo split(getline("."))[0]
 |2,0,1713686952,,"echo split(getline(\".\"))[0]"
 :echo split(getline("."))
@@ -802,8 +818,6 @@ $
 |2,0,1713683666,,"args"
 :next
 |2,0,1713683662,,"next"
-:e gh-timeago-updates.log
-|2,0,1713683001,,"e gh-timeago-updates.log"
 :%s//\n/g
 |2,0,1713682366,,"%s//\\n/g"
 :%sort u
@@ -1572,8 +1586,6 @@ $
 |2,0,1711909390,,"Rename create_databases.py"
 :MRU llll
 |2,0,1711901821,,"MRU llll"
-:MRU c
-|2,0,1711901766,,"MRU c"
 :MRU 84:frontend/src/Data.ts
 |2,0,1711893495,,"MRU 84:frontend/src/Data.ts"
 :MRU Data
@@ -5656,6 +5668,24 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/flock
+|2,1,1714328421,47,"flock"
+?/HOME
+|2,1,1714326060,47,"HOME"
+?/expan
+|2,1,1714326045,47,"expan"
+?/\$
+|2,1,1714325731,47,"\\$"
+?/lock
+|2,1,1714309033,47,"lock"
+?/date
+|2,1,1714307928,47,"date"
+?/\<sh\>
+|2,1,1714307274,47,"\\<sh\\>"
+?/sh
+|2,1,1714307266,47,"sh"
+?/bash
+|2,1,1714307264,47,"bash"
 ? :
 |2,1,1714292185,,":"
 ?/\$1
@@ -7176,8 +7206,6 @@ $
 |2,1,1691671323,47,"\\C\\<date\\>"
 ?/dat
 |2,1,1691671322,47,"dat"
-?/date
-|2,1,1691671317,47,"date"
 ?/text-black
 |2,1,1691671188,47,"text-black"
 ?/selec
@@ -7978,55 +8006,100 @@ $
 |2,4,1693311567,,"cont"
 
 # Registers:
-"0	LINE	0
-	PATH:/home/vivek/.local/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/
-	home/vivek/.deno/bin:/home/vivek/.local/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.
-	linuxbrew/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/vivek/.vim
-	/.fzf/bin
-|3,0,0,1,4,0,1714292167,"PATH:/home/vivek/.local/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/","home/vivek/.deno/bin:/home/vivek/.local/bin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.","linuxbrew/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/vivek/.vim","/.fzf/bin"
+"0	CHAR	0
+	timeago.bash >> ~/bash/logs/
+|3,0,0,0,1,0,1714329310,"timeago.bash >> ~/bash/logs/"
 "1	LINE	0
-	
-|3,0,1,1,1,0,1714292125,""
+	* * * * * ~/bash/gh-test.bash >> ~/bash/logs/gh-test.log 2>&1
+|3,0,1,1,1,0,1714329552,"* * * * * ~/bash/gh-test.bash >> ~/bash/logs/gh-test.log 2>&1"
 "2	LINE	0
 	
-|3,0,2,1,1,0,1714291922,""
+|3,0,2,1,1,0,1714328097,""
 "3	LINE	0
-	*/1
-|3,0,3,1,1,0,1714291850,"*/1"
+	# * * * * * env > /home/vivek/bash/cronenv
+	# * * * * *  ~/bash/python-direnv.bash ~/pytest/date.py >> ~/bash/logs/pytest-date.log 2>&1
+|3,0,3,1,2,0,1714326022,"# * * * * * env > /home/vivek/bash/cronenv","# * * * * *  ~/bash/python-direnv.bash ~/pytest/date.py >> ~/bash/logs/pytest-date.log 2>&1"
 "4	LINE	0
-	echo "TERM:$TERM"
-|3,0,4,1,1,0,1714291795,"echo \"TERM:$TERM\""
+	
+|3,0,4,1,1,0,1714325744,""
 "5	LINE	0
-	echo "LANG:$LANG"
-	echo "TERM:$TERM"
-|3,0,5,1,2,0,1714291793,"echo \"LANG:$LANG\"","echo \"TERM:$TERM\""
+	
+|3,0,5,1,1,0,1714325742,""
 "6	LINE	0
-	echo "HOSTNAME:$HOSTNAME"
-|3,0,6,1,1,0,1714291791,"echo \"HOSTNAME:$HOSTNAME\""
+	    - easy to monitor: how often are jobs running, which ones are flaky
+	    - easy to replicate user environment ($PATH, $SHELL, $TZ, env)
+|3,0,6,1,2,0,1714325656,"    - easy to monitor: how often are jobs running, which ones are flaky","    - easy to replicate user environment ($PATH, $SHELL, $TZ, env)"
 "7	LINE	0
-	echo "USER:$USER"
-|3,0,7,1,1,0,1714291773,"echo \"USER:$USER\""
+	direnv: loading ~/pytest/.envrc
+	direnv: export +VIRTUAL_ENV ~PATH
+	Time is: Sun Apr 28 16:05:01 2024
+	direnv: loading ~/pytest/.envrc
+	direnv: export +VIRTUAL_ENV ~PATH
+	Time is: Sun Apr 28 16:06:01 2024
+	direnv: loading ~/pytest/.envrc
+	direnv: export +VIRTUAL_ENV ~PATH
+	Time is: Sun Apr 28 16:07:01 2024
+	direnv: loading ~/pytest/.envrc
+	direnv: export +VIRTUAL_ENV ~PATH
+	Time is: Sun Apr 28 16:08:01 2024
+	direnv: loading ~/pytest/.envrc
+	direnv: export +VIRTUAL_ENV ~PATH
+	Time is: Sun Apr 28 16:09:02 2024
+	direnv: loading ~/pytest/.envrc
+	direnv: export +VIRTUAL_ENV ~PATH
+	Time is: Sun Apr 28 16:10:01 2024
+	direnv: loading ~/pytest/.envrc
+	direnv: export +VIRTUAL_ENV ~PATH
+	Time is: Sun Apr 28 16:11:01 2024
+	direnv: loading ~/pytest/.envrc
+	direnv: export +VIRTUAL_ENV ~PATH
+	Time is: Sun Apr 28 16:12:01 2024
+	direnv: loading ~/pytest/.envrc
+	direnv: export +VIRTUAL_ENV ~PATH
+	Time is: Sun Apr 28 16:13:01 2024
+	direnv: loading ~/pytest/.envrc
+	direnv: export +VIRTUAL_ENV ~PATH
+	Time is: Sun Apr 28 16:14:01 2024
+	direnv: loading ~/pytest/.envrc
+	direnv: export +VIRTUAL_ENV ~PATH
+	Time is: Sun Apr 28 16:15:01 2024
+	direnv: loading ~/pytest/.envrc
+	direnv: export +VIRTUAL_ENV ~PATH
+	Time is: Sun Apr 28 16:16:01 2024
+	direnv: loading ~/pytest/.envrc
+	direnv: export +VIRTUAL_ENV ~PATH
+	Time is: Sun Apr 28 16:17:01 2024
+	direnv: loading ~/pytest/.envrc
+	direnv: export +VIRTUAL_ENV ~PATH
+	Time is: Sun Apr 28 16:18:01 2024
+	direnv: loading ~/pytest/.envrc
+	direnv: export +VIRTUAL_ENV ~PATH
+	Time is: Sun Apr 28 16:19:01 2024
+	direnv: loading ~/pytest/.envrc
+	direnv: export +VIRTUAL_ENV ~PATH
+	Time is: Sun Apr 28 16:20:01 2024
+	direnv: loading ~/pytest/.envrc
+	direnv: export +VIRTUAL_ENV ~PATH
+|3,0,7,1,50,0,1714325226,"direnv: loading ~/pytest/.envrc","direnv: export +VIRTUAL_ENV ~PATH","Time is: Sun Apr 28 16:05:01 2024","direnv: loading ~/pytest/.envrc","direnv: export +VIRTUAL_ENV ~PATH","Time is: Sun Apr 28 16:06:01 2024","direnv: loading ~/pytest/.envrc","direnv: export +VIRTUAL_ENV ~PATH","Time is: Sun Apr 28 16:07:01 2024","direnv: loading ~/pytest/.envrc","direnv: export +VIRTUAL_ENV ~PATH","Time is: Sun Apr 28 16:08:01 2024",>33
+|<"direnv: loading ~/pytest/.envrc","direnv: export +VIRTUAL_ENV ~PATH","Time is: Sun Apr 28 16:09:02 2024","direnv: loading ~/pytest/.envrc","direnv: export +VIRTUAL_ENV ~PATH","Time is: Sun Apr 28 16:10:01 2024","direnv: loading ~/pytest/.envrc","direnv: export +VIRTUAL_ENV ~PATH","Time is: Sun Apr 28 16:11:01 2024","direnv: loading ~/pytest/.envrc","direnv: export +VIRTUAL_ENV ~PATH","Time is: Sun Apr 28 16:12:01 2024","direnv: loading ~/pytest/.envrc",>35
+|<"direnv: export +VIRTUAL_ENV ~PATH","Time is: Sun Apr 28 16:13:01 2024","direnv: loading ~/pytest/.envrc","direnv: export +VIRTUAL_ENV ~PATH","Time is: Sun Apr 28 16:14:01 2024","direnv: loading ~/pytest/.envrc","direnv: export +VIRTUAL_ENV ~PATH","Time is: Sun Apr 28 16:15:01 2024","direnv: loading ~/pytest/.envrc","direnv: export +VIRTUAL_ENV ~PATH","Time is: Sun Apr 28 16:16:01 2024","direnv: loading ~/pytest/.envrc","direnv: export +VIRTUAL_ENV ~PATH",>35
+|<"Time is: Sun Apr 28 16:17:01 2024","direnv: loading ~/pytest/.envrc","direnv: export +VIRTUAL_ENV ~PATH","Time is: Sun Apr 28 16:18:01 2024","direnv: loading ~/pytest/.envrc","direnv: export +VIRTUAL_ENV ~PATH","Time is: Sun Apr 28 16:19:01 2024","direnv: loading ~/pytest/.envrc","direnv: export +VIRTUAL_ENV ~PATH","Time is: Sun Apr 28 16:20:01 2024","direnv: loading ~/pytest/.envrc","direnv: export +VIRTUAL_ENV ~PATH"
 "8	LINE	0
+	PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 	
-|3,0,8,1,1,0,1714291702,""
+|3,0,8,1,2,0,1714307902,"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",""
 "9	LINE	0
-	
-|3,0,9,1,1,0,1714290252,""
+	# set timezone to india
+|3,0,9,1,1,0,1714307871,"# set timezone to india"
 "a	CHAR	0
 	Tabularize /,/l1c1l1c1l1c1l1
 |3,0,10,0,1,0,1714211797,"Tabularize /,/l1c1l1c1l1c1l1"
 "j	CHAR	0
 	k:q€ýa
 |3,0,19,0,1,0,1714046792,"k:q€ýa"
-"k	CHAR	0
-	jk
-|3,0,20,0,1,0,1713932896,"jk"
 "l	CHAR	0
 	:q!llk;;;;;gck:w ;c:VD data/main.db€kd€kdq€kd€kdq€kuqq€ý5jk:q!G
 |3,0,21,0,1,0,1713848546,":q!llk;;;;;gck:w ;c:VD data/main.db€kd€kdq€kd€kdq€kuqq€ý5jk:q!G"
-"q	CHAR	0
-	llll
-|3,0,26,0,1,0,1713980847,"llll"
 "s	LINE	0
 	    return render_template_string("""
 	    <ul>
@@ -8056,374 +8129,794 @@ $
 |<"                <form method=\"POST\" action=\"/resume_download\">","                    <input type=\"hidden\" name=\"id\" value=\"{{ id }}\">","                    <input type=\"submit\" value=\"Resume\">","                </form>","                {% endif %}","                {% if status == 'downloading' %}","                <form method=\"POST\" action=\"/pause_download\">","                    <input type=\"hidden\" name=\"id\" value=\"{{ id }}\">",>61
 |<"                    <input type=\"submit\" value=\"Pause\">","                </form>","                {% endif %}","","            </li>","        {% endfor %}","    </ul>\"\"\", downloads=downloads)"
 ""-	CHAR	0
-	 
-|3,1,36,0,1,0,1714292172," "
+	  
+|3,1,36,0,1,0,1714329603,"  "
 
 # File marks:
-'0  1  10  ~/bash/info.bash
-|4,48,1,10,1714292135,"~/bash/info.bash"
-'1  1  10  ~/bash/info.bash
-|4,49,1,10,1714292135,"~/bash/info.bash"
-'2  2  0  ~/bash/info.bash
-|4,50,2,0,1714292074,"~/bash/info.bash"
-'3  2  0  ~/bash/info.bash
-|4,51,2,0,1714292074,"~/bash/info.bash"
-'4  2  0  ~/bash/info.bash
-|4,52,2,0,1714292074,"~/bash/info.bash"
-'5  2  0  ~/bash/info.bash
-|4,53,2,0,1714292074,"~/bash/info.bash"
-'6  2  0  ~/bash/info.bash
-|4,54,2,0,1714292069,"~/bash/info.bash"
-'7  2  0  ~/bash/info.bash
-|4,55,2,0,1714292069,"~/bash/info.bash"
-'8  2  0  ~/bash/info.bash
-|4,56,2,0,1714292069,"~/bash/info.bash"
-'9  2  0  ~/bash/info.bash
-|4,57,2,0,1714292069,"~/bash/info.bash"
+'0  1  0  ~/bash/gh-test.bash
+|4,48,1,0,1714332785,"~/bash/gh-test.bash"
+'1  26  3  ~/tooling/cron-concerns.txt
+|4,49,26,3,1714332730,"~/tooling/cron-concerns.txt"
+'2  26  3  ~/tooling/cron-concerns.txt
+|4,50,26,3,1714332730,"~/tooling/cron-concerns.txt"
+'3  26  3  ~/tooling/cron-concerns.txt
+|4,51,26,3,1714329633,"~/tooling/cron-concerns.txt"
+'4  26  3  ~/tooling/cron-concerns.txt
+|4,52,26,3,1714329633,"~/tooling/cron-concerns.txt"
+'5  34  0  /tmp/crontab.cDPt2F/crontab
+|4,53,34,0,1714329557,"/tmp/crontab.cDPt2F/crontab"
+'6  34  0  /tmp/crontab.cDPt2F/crontab
+|4,54,34,0,1714329557,"/tmp/crontab.cDPt2F/crontab"
+'7  34  0  /tmp/crontab.cDPt2F/crontab
+|4,55,34,0,1714329557,"/tmp/crontab.cDPt2F/crontab"
+'8  34  0  /tmp/crontab.cDPt2F/crontab
+|4,56,34,0,1714329557,"/tmp/crontab.cDPt2F/crontab"
+'9  34  0  /tmp/crontab.cDPt2F/crontab
+|4,57,34,0,1714329557,"/tmp/crontab.cDPt2F/crontab"
 
 # Jumplist (newest first):
--'  1  10  ~/bash/info.bash
-|4,39,1,10,1714292168,"~/bash/info.bash"
--'  1  10  ~/bash/info.bash
-|4,39,1,10,1714292135,"~/bash/info.bash"
--'  2  0  ~/bash/info.bash
-|4,39,2,0,1714292118,"~/bash/info.bash"
--'  2  0  ~/bash/info.bash
-|4,39,2,0,1714292118,"~/bash/info.bash"
--'  2  0  ~/bash/info.bash
-|4,39,2,0,1714292074,"~/bash/info.bash"
--'  2  0  ~/bash/info.bash
-|4,39,2,0,1714292069,"~/bash/info.bash"
--'  3  31  ~/bash/info.bash
-|4,39,3,31,1714292064,"~/bash/info.bash"
--'  3  31  ~/bash/info.bash
-|4,39,3,31,1714292064,"~/bash/info.bash"
--'  3  31  ~/bash/info.bash
-|4,39,3,31,1714292064,"~/bash/info.bash"
--'  3  31  ~/bash/info.bash
-|4,39,3,31,1714292064,"~/bash/info.bash"
--'  2  31  ~/bash/info.bash
-|4,39,2,31,1714292058,"~/bash/info.bash"
--'  27  0  ~/bash/info.bash
-|4,39,27,0,1714292049,"~/bash/info.bash"
--'  26  0  ~/bash/info.bash
-|4,39,26,0,1714292049,"~/bash/info.bash"
--'  27  0  ~/bash/info.bash
-|4,39,27,0,1714292049,"~/bash/info.bash"
--'  26  0  ~/bash/info.bash
-|4,39,26,0,1714292049,"~/bash/info.bash"
--'  27  0  ~/bash/info.bash
-|4,39,27,0,1714292049,"~/bash/info.bash"
--'  26  0  ~/bash/info.bash
-|4,39,26,0,1714292049,"~/bash/info.bash"
--'  27  0  ~/bash/info.bash
-|4,39,27,0,1714292049,"~/bash/info.bash"
--'  26  0  ~/bash/info.bash
-|4,39,26,0,1714292049,"~/bash/info.bash"
--'  5  6  ~/bash/info.bash
-|4,39,5,6,1714292047,"~/bash/info.bash"
--'  4  6  ~/bash/info.bash
-|4,39,4,6,1714292047,"~/bash/info.bash"
--'  5  6  ~/bash/info.bash
-|4,39,5,6,1714292047,"~/bash/info.bash"
--'  4  6  ~/bash/info.bash
-|4,39,4,6,1714292047,"~/bash/info.bash"
--'  5  6  ~/bash/info.bash
-|4,39,5,6,1714292047,"~/bash/info.bash"
--'  4  6  ~/bash/info.bash
-|4,39,4,6,1714292047,"~/bash/info.bash"
--'  5  6  ~/bash/info.bash
-|4,39,5,6,1714292047,"~/bash/info.bash"
--'  4  6  ~/bash/info.bash
-|4,39,4,6,1714292047,"~/bash/info.bash"
--'  7  12  ~/bash/info.bash
-|4,39,7,12,1714291945,"~/bash/info.bash"
--'  6  12  ~/bash/info.bash
-|4,39,6,12,1714291945,"~/bash/info.bash"
--'  7  12  ~/bash/info.bash
-|4,39,7,12,1714291945,"~/bash/info.bash"
--'  6  12  ~/bash/info.bash
-|4,39,6,12,1714291945,"~/bash/info.bash"
--'  7  12  ~/bash/info.bash
-|4,39,7,12,1714291945,"~/bash/info.bash"
--'  6  12  ~/bash/info.bash
-|4,39,6,12,1714291945,"~/bash/info.bash"
--'  7  12  ~/bash/info.bash
-|4,39,7,12,1714291945,"~/bash/info.bash"
--'  6  12  ~/bash/info.bash
-|4,39,6,12,1714291945,"~/bash/info.bash"
--'  6  12  ~/bash/info.bash
-|4,39,6,12,1714291945,"~/bash/info.bash"
--'  5  12  ~/bash/info.bash
-|4,39,5,12,1714291945,"~/bash/info.bash"
--'  9  12  ~/bash/info.bash
-|4,39,9,12,1714291929,"~/bash/info.bash"
--'  8  12  ~/bash/info.bash
-|4,39,8,12,1714291929,"~/bash/info.bash"
--'  9  12  ~/bash/info.bash
-|4,39,9,12,1714291929,"~/bash/info.bash"
--'  8  12  ~/bash/info.bash
-|4,39,8,12,1714291929,"~/bash/info.bash"
--'  9  12  ~/bash/info.bash
-|4,39,9,12,1714291929,"~/bash/info.bash"
--'  8  12  ~/bash/info.bash
-|4,39,8,12,1714291929,"~/bash/info.bash"
--'  9  12  ~/bash/info.bash
-|4,39,9,12,1714291929,"~/bash/info.bash"
--'  8  12  ~/bash/info.bash
-|4,39,8,12,1714291929,"~/bash/info.bash"
--'  8  12  ~/bash/info.bash
-|4,39,8,12,1714291929,"~/bash/info.bash"
--'  7  12  ~/bash/info.bash
-|4,39,7,12,1714291929,"~/bash/info.bash"
--'  5  12  ~/bash/info.bash
-|4,39,5,12,1714291929,"~/bash/info.bash"
--'  10  0  ~/bash/info.bash
-|4,39,10,0,1714291918,"~/bash/info.bash"
--'  10  0  ~/bash/info.bash
-|4,39,10,0,1714291918,"~/bash/info.bash"
--'  10  0  ~/bash/info.bash
-|4,39,10,0,1714291918,"~/bash/info.bash"
--'  10  0  ~/bash/info.bash
-|4,39,10,0,1714291918,"~/bash/info.bash"
--'  9  0  ~/bash/info.bash
-|4,39,9,0,1714291918,"~/bash/info.bash"
--'  7  0  ~/bash/info.bash
-|4,39,7,0,1714291918,"~/bash/info.bash"
--'  8  0  ~/bash/info.bash
-|4,39,8,0,1714291918,"~/bash/info.bash"
--'  6  0  ~/bash/info.bash
-|4,39,6,0,1714291918,"~/bash/info.bash"
--'  4  5  ~/bash/info.bash
-|4,39,4,5,1714291897,"~/bash/info.bash"
--'  3  5  ~/bash/info.bash
-|4,39,3,5,1714291897,"~/bash/info.bash"
--'  3  5  ~/bash/info.bash
-|4,39,3,5,1714291897,"~/bash/info.bash"
--'  3  5  ~/bash/info.bash
-|4,39,3,5,1714291897,"~/bash/info.bash"
--'  1  0  ~/bash/info.bash
-|4,39,1,0,1714291883,"~/bash/info.bash"
--'  1  0  ~/bash/info.bash
-|4,39,1,0,1714291883,"~/bash/info.bash"
--'  1  0  ~/bash/info.bash
-|4,39,1,0,1714291883,"~/bash/info.bash"
--'  1  0  ~/bash/info.bash
-|4,39,1,0,1714291883,"~/bash/info.bash"
--'  1  0  ~/bash/info.bash
-|4,39,1,0,1714291883,"~/bash/info.bash"
--'  1  0  ~/bash/info.bash
-|4,39,1,0,1714291883,"~/bash/info.bash"
--'  27  0  /tmp/crontab.D1m99B/crontab
-|4,39,27,0,1714291881,"/tmp/crontab.D1m99B/crontab"
--'  27  0  /tmp/crontab.D1m99B/crontab
-|4,39,27,0,1714291881,"/tmp/crontab.D1m99B/crontab"
--'  27  0  /tmp/crontab.D1m99B/crontab
-|4,39,27,0,1714291881,"/tmp/crontab.D1m99B/crontab"
--'  27  0  /tmp/crontab.D1m99B/crontab
-|4,39,27,0,1714291881,"/tmp/crontab.D1m99B/crontab"
--'  27  0  /tmp/crontab.D1m99B/crontab
-|4,39,27,0,1714291881,"/tmp/crontab.D1m99B/crontab"
--'  27  0  /tmp/crontab.D1m99B/crontab
-|4,39,27,0,1714291881,"/tmp/crontab.D1m99B/crontab"
--'  27  0  /tmp/crontab.D1m99B/crontab
-|4,39,27,0,1714291881,"/tmp/crontab.D1m99B/crontab"
--'  27  0  /tmp/crontab.D1m99B/crontab
-|4,39,27,0,1714291881,"/tmp/crontab.D1m99B/crontab"
--'  27  0  /tmp/crontab.D1m99B/crontab
-|4,39,27,0,1714291881,"/tmp/crontab.D1m99B/crontab"
--'  1  0  /tmp/crontab.D1m99B/crontab
-|4,39,1,0,1714291845,"/tmp/crontab.D1m99B/crontab"
--'  1  0  /tmp/crontab.D1m99B/crontab
-|4,39,1,0,1714291845,"/tmp/crontab.D1m99B/crontab"
--'  1  0  /tmp/crontab.D1m99B/crontab
-|4,39,1,0,1714291845,"/tmp/crontab.D1m99B/crontab"
--'  1  0  /tmp/crontab.D1m99B/crontab
-|4,39,1,0,1714291845,"/tmp/crontab.D1m99B/crontab"
--'  1  0  /tmp/crontab.D1m99B/crontab
-|4,39,1,0,1714291845,"/tmp/crontab.D1m99B/crontab"
--'  1  0  /tmp/crontab.D1m99B/crontab
-|4,39,1,0,1714291845,"/tmp/crontab.D1m99B/crontab"
--'  1  0  /tmp/crontab.D1m99B/crontab
-|4,39,1,0,1714291845,"/tmp/crontab.D1m99B/crontab"
--'  1  0  /tmp/crontab.D1m99B/crontab
-|4,39,1,0,1714291845,"/tmp/crontab.D1m99B/crontab"
--'  1  0  /tmp/crontab.D1m99B/crontab
-|4,39,1,0,1714291845,"/tmp/crontab.D1m99B/crontab"
--'  3  0  ~/bash/info.bash
-|4,39,3,0,1714291821,"~/bash/info.bash"
--'  5  0  ~/bash/info.bash
-|4,39,5,0,1714291821,"~/bash/info.bash"
--'  2  0  ~/bash/info.bash
-|4,39,2,0,1714291821,"~/bash/info.bash"
--'  4  0  ~/bash/info.bash
-|4,39,4,0,1714291821,"~/bash/info.bash"
--'  2  0  ~/bash/info.bash
-|4,39,2,0,1714291821,"~/bash/info.bash"
--'  4  0  ~/bash/info.bash
-|4,39,4,0,1714291821,"~/bash/info.bash"
--'  2  0  ~/bash/info.bash
-|4,39,2,0,1714291821,"~/bash/info.bash"
--'  2  0  ~/bash/info.bash
-|4,39,2,0,1714291821,"~/bash/info.bash"
--'  25  0  ~/bash/info.bash
-|4,39,25,0,1714291815,"~/bash/info.bash"
--'  24  0  ~/bash/info.bash
-|4,39,24,0,1714291815,"~/bash/info.bash"
--'  23  0  ~/bash/info.bash
-|4,39,23,0,1714291815,"~/bash/info.bash"
--'  22  0  ~/bash/info.bash
-|4,39,22,0,1714291815,"~/bash/info.bash"
--'  21  0  ~/bash/info.bash
-|4,39,21,0,1714291815,"~/bash/info.bash"
+-'  1  0  ~/bash/gh-test.bash
+|4,39,1,0,1714332785,"~/bash/gh-test.bash"
+-'  26  3  ~/tooling/cron-concerns.txt
+|4,39,26,3,1714332730,"~/tooling/cron-concerns.txt"
+-'  26  3  ~/tooling/cron-concerns.txt
+|4,39,26,3,1714332730,"~/tooling/cron-concerns.txt"
+-'  26  3  ~/tooling/cron-concerns.txt
+|4,39,26,3,1714329633,"~/tooling/cron-concerns.txt"
+-'  1  0  ~/tooling/cron-concerns.txt
+|4,39,1,0,1714329573,"~/tooling/cron-concerns.txt"
+-'  1  0  ~/tooling/cron-concerns.txt
+|4,39,1,0,1714329573,"~/tooling/cron-concerns.txt"
+-'  1  0  ~/tooling/cron-concerns.txt
+|4,39,1,0,1714329573,"~/tooling/cron-concerns.txt"
+-'  34  0  /tmp/crontab.cDPt2F/crontab
+|4,39,34,0,1714329557,"/tmp/crontab.cDPt2F/crontab"
+-'  34  0  /tmp/crontab.cDPt2F/crontab
+|4,39,34,0,1714329557,"/tmp/crontab.cDPt2F/crontab"
+-'  34  0  /tmp/crontab.cDPt2F/crontab
+|4,39,34,0,1714329557,"/tmp/crontab.cDPt2F/crontab"
+-'  34  0  /tmp/crontab.cDPt2F/crontab
+|4,39,34,0,1714329557,"/tmp/crontab.cDPt2F/crontab"
+-'  1  0  /tmp/crontab.cDPt2F/crontab
+|4,39,1,0,1714329550,"/tmp/crontab.cDPt2F/crontab"
+-'  1  0  /tmp/crontab.cDPt2F/crontab
+|4,39,1,0,1714329550,"/tmp/crontab.cDPt2F/crontab"
+-'  1  0  /tmp/crontab.cDPt2F/crontab
+|4,39,1,0,1714329550,"/tmp/crontab.cDPt2F/crontab"
+-'  1  0  /tmp/crontab.cDPt2F/crontab
+|4,39,1,0,1714329550,"/tmp/crontab.cDPt2F/crontab"
+-'  4  0  ~/bash/gh-timeago.bash
+|4,39,4,0,1714329502,"~/bash/gh-timeago.bash"
+-'  4  0  ~/bash/gh-timeago.bash
+|4,39,4,0,1714329502,"~/bash/gh-timeago.bash"
+-'  4  0  ~/bash/gh-timeago.bash
+|4,39,4,0,1714329502,"~/bash/gh-timeago.bash"
+-'  4  0  ~/bash/gh-timeago.bash
+|4,39,4,0,1714329502,"~/bash/gh-timeago.bash"
+-'  4  0  ~/bash/gh-timeago.bash
+|4,39,4,0,1714329502,"~/bash/gh-timeago.bash"
+-'  1  0  ~/bash/gh-timeago.bash
+|4,39,1,0,1714329448,"~/bash/gh-timeago.bash"
+-'  1  0  ~/bash/gh-timeago.bash
+|4,39,1,0,1714329448,"~/bash/gh-timeago.bash"
+-'  1  0  ~/bash/gh-timeago.bash
+|4,39,1,0,1714329448,"~/bash/gh-timeago.bash"
+-'  1  0  ~/bash/gh-timeago.bash
+|4,39,1,0,1714329448,"~/bash/gh-timeago.bash"
+-'  1  0  ~/bash/gh-timeago.bash
+|4,39,1,0,1714329448,"~/bash/gh-timeago.bash"
+-'  1  0  ~/bash/logs/gh-test.log
+|4,39,1,0,1714329439,"~/bash/logs/gh-test.log"
+-'  1  0  ~/bash/logs/gh-timeago-updates.log
+|4,39,1,0,1714329439,"~/bash/logs/gh-timeago-updates.log"
+-'  1  0  ~/bash/logs/gh-test.log
+|4,39,1,0,1714329439,"~/bash/logs/gh-test.log"
+-'  1  0  ~/bash/logs/gh-timeago-updates.log
+|4,39,1,0,1714329439,"~/bash/logs/gh-timeago-updates.log"
+-'  1  0  ~/bash/logs/gh-test.log
+|4,39,1,0,1714329439,"~/bash/logs/gh-test.log"
+-'  1  0  ~/bash/logs/gh-timeago-updates.log
+|4,39,1,0,1714329439,"~/bash/logs/gh-timeago-updates.log"
+-'  1  0  ~/bash/logs/gh-test.log
+|4,39,1,0,1714329439,"~/bash/logs/gh-test.log"
+-'  1  0  ~/bash/logs/gh-timeago-updates.log
+|4,39,1,0,1714329439,"~/bash/logs/gh-timeago-updates.log"
+-'  1  0  ~/bash/logs/gh-test.log
+|4,39,1,0,1714329439,"~/bash/logs/gh-test.log"
+-'  1  0  ~/bash/logs/gh-timeago-updates.log
+|4,39,1,0,1714329439,"~/bash/logs/gh-timeago-updates.log"
+-'  1  0  ~/bash/logs/gh-test.log
+|4,39,1,0,1714329439,"~/bash/logs/gh-test.log"
+-'  1  0  ~/bash/logs/gh-timeago-updates.log
+|4,39,1,0,1714329439,"~/bash/logs/gh-timeago-updates.log"
+-'  1  10  ~/bash/gh-test.bash
+|4,39,1,10,1714329430,"~/bash/gh-test.bash"
+-'  1  10  ~/bash/gh-test.bash
+|4,39,1,10,1714329430,"~/bash/gh-test.bash"
+-'  1  10  ~/bash/gh-test.bash
+|4,39,1,10,1714329430,"~/bash/gh-test.bash"
+-'  1  10  ~/bash/gh-test.bash
+|4,39,1,10,1714329430,"~/bash/gh-test.bash"
+-'  1  10  ~/bash/gh-test.bash
+|4,39,1,10,1714329430,"~/bash/gh-test.bash"
+-'  1  10  ~/bash/gh-test.bash
+|4,39,1,10,1714329430,"~/bash/gh-test.bash"
+-'  1  10  ~/bash/gh-test.bash
+|4,39,1,10,1714329400,"~/bash/gh-test.bash"
+-'  35  10  /tmp/crontab.HKn1ft/crontab
+|4,39,35,10,1714329395,"/tmp/crontab.HKn1ft/crontab"
+-'  35  10  /tmp/crontab.HKn1ft/crontab
+|4,39,35,10,1714329395,"/tmp/crontab.HKn1ft/crontab"
+-'  35  10  /tmp/crontab.HKn1ft/crontab
+|4,39,35,10,1714329395,"/tmp/crontab.HKn1ft/crontab"
+-'  35  10  /tmp/crontab.HKn1ft/crontab
+|4,39,35,10,1714329395,"/tmp/crontab.HKn1ft/crontab"
+-'  35  10  /tmp/crontab.HKn1ft/crontab
+|4,39,35,10,1714329395,"/tmp/crontab.HKn1ft/crontab"
+-'  35  10  /tmp/crontab.HKn1ft/crontab
+|4,39,35,10,1714329395,"/tmp/crontab.HKn1ft/crontab"
+-'  35  10  /tmp/crontab.HKn1ft/crontab
+|4,39,35,10,1714329395,"/tmp/crontab.HKn1ft/crontab"
+-'  35  10  /tmp/crontab.HKn1ft/crontab
+|4,39,35,10,1714329395,"/tmp/crontab.HKn1ft/crontab"
+-'  1  0  /tmp/crontab.HKn1ft/crontab
+|4,39,1,0,1714329389,"/tmp/crontab.HKn1ft/crontab"
+-'  1  0  /tmp/crontab.HKn1ft/crontab
+|4,39,1,0,1714329389,"/tmp/crontab.HKn1ft/crontab"
+-'  1  0  /tmp/crontab.HKn1ft/crontab
+|4,39,1,0,1714329389,"/tmp/crontab.HKn1ft/crontab"
+-'  1  0  /tmp/crontab.HKn1ft/crontab
+|4,39,1,0,1714329389,"/tmp/crontab.HKn1ft/crontab"
+-'  1  0  /tmp/crontab.HKn1ft/crontab
+|4,39,1,0,1714329389,"/tmp/crontab.HKn1ft/crontab"
+-'  1  0  /tmp/crontab.HKn1ft/crontab
+|4,39,1,0,1714329389,"/tmp/crontab.HKn1ft/crontab"
+-'  1  0  /tmp/crontab.HKn1ft/crontab
+|4,39,1,0,1714329389,"/tmp/crontab.HKn1ft/crontab"
+-'  1  0  /tmp/crontab.HKn1ft/crontab
+|4,39,1,0,1714329389,"/tmp/crontab.HKn1ft/crontab"
+-'  35  60  /tmp/crontab.fGEQ4o/crontab
+|4,39,35,60,1714329325,"/tmp/crontab.fGEQ4o/crontab"
+-'  35  60  /tmp/crontab.fGEQ4o/crontab
+|4,39,35,60,1714329325,"/tmp/crontab.fGEQ4o/crontab"
+-'  35  60  /tmp/crontab.fGEQ4o/crontab
+|4,39,35,60,1714329325,"/tmp/crontab.fGEQ4o/crontab"
+-'  35  60  /tmp/crontab.fGEQ4o/crontab
+|4,39,35,60,1714329325,"/tmp/crontab.fGEQ4o/crontab"
+-'  35  60  /tmp/crontab.fGEQ4o/crontab
+|4,39,35,60,1714329325,"/tmp/crontab.fGEQ4o/crontab"
+-'  35  60  /tmp/crontab.fGEQ4o/crontab
+|4,39,35,60,1714329325,"/tmp/crontab.fGEQ4o/crontab"
+-'  35  60  /tmp/crontab.fGEQ4o/crontab
+|4,39,35,60,1714329325,"/tmp/crontab.fGEQ4o/crontab"
+-'  35  60  /tmp/crontab.fGEQ4o/crontab
+|4,39,35,60,1714329325,"/tmp/crontab.fGEQ4o/crontab"
+-'  35  60  /tmp/crontab.fGEQ4o/crontab
+|4,39,35,60,1714329325,"/tmp/crontab.fGEQ4o/crontab"
+-'  1  0  /tmp/crontab.fGEQ4o/crontab
+|4,39,1,0,1714329274,"/tmp/crontab.fGEQ4o/crontab"
+-'  1  0  /tmp/crontab.fGEQ4o/crontab
+|4,39,1,0,1714329274,"/tmp/crontab.fGEQ4o/crontab"
+-'  1  0  /tmp/crontab.fGEQ4o/crontab
+|4,39,1,0,1714329274,"/tmp/crontab.fGEQ4o/crontab"
+-'  1  0  /tmp/crontab.fGEQ4o/crontab
+|4,39,1,0,1714329274,"/tmp/crontab.fGEQ4o/crontab"
+-'  1  0  /tmp/crontab.fGEQ4o/crontab
+|4,39,1,0,1714329274,"/tmp/crontab.fGEQ4o/crontab"
+-'  1  0  /tmp/crontab.fGEQ4o/crontab
+|4,39,1,0,1714329274,"/tmp/crontab.fGEQ4o/crontab"
+-'  1  0  /tmp/crontab.fGEQ4o/crontab
+|4,39,1,0,1714329274,"/tmp/crontab.fGEQ4o/crontab"
+-'  1  0  /tmp/crontab.fGEQ4o/crontab
+|4,39,1,0,1714329274,"/tmp/crontab.fGEQ4o/crontab"
+-'  1  0  /tmp/crontab.fGEQ4o/crontab
+|4,39,1,0,1714329274,"/tmp/crontab.fGEQ4o/crontab"
+-'  2  11  ~/bash/gh-test.bash
+|4,39,2,11,1714329263,"~/bash/gh-test.bash"
+-'  2  11  ~/bash/gh-test.bash
+|4,39,2,11,1714329263,"~/bash/gh-test.bash"
+-'  2  11  ~/bash/gh-test.bash
+|4,39,2,11,1714329263,"~/bash/gh-test.bash"
+-'  2  11  ~/bash/gh-test.bash
+|4,39,2,11,1714329263,"~/bash/gh-test.bash"
+-'  2  11  ~/bash/gh-test.bash
+|4,39,2,11,1714329263,"~/bash/gh-test.bash"
+-'  2  11  ~/bash/gh-test.bash
+|4,39,2,11,1714329263,"~/bash/gh-test.bash"
+-'  2  11  ~/bash/gh-test.bash
+|4,39,2,11,1714329263,"~/bash/gh-test.bash"
+-'  2  11  ~/bash/gh-test.bash
+|4,39,2,11,1714329263,"~/bash/gh-test.bash"
+-'  1  11  ~/bash/gh-test.bash
+|4,39,1,11,1714329263,"~/bash/gh-test.bash"
+-'  1  11  ~/bash/gh-test.bash
+|4,39,1,11,1714329263,"~/bash/gh-test.bash"
+-'  75  0  ~/tooling/cron-concerns.txt
+|4,39,75,0,1714329241,"~/tooling/cron-concerns.txt"
+-'  62  0  ~/tooling/cron-concerns.txt
+|4,39,62,0,1714329241,"~/tooling/cron-concerns.txt"
+-'  75  0  ~/tooling/cron-concerns.txt
+|4,39,75,0,1714329241,"~/tooling/cron-concerns.txt"
+-'  62  0  ~/tooling/cron-concerns.txt
+|4,39,62,0,1714329241,"~/tooling/cron-concerns.txt"
+-'  75  0  ~/tooling/cron-concerns.txt
+|4,39,75,0,1714329241,"~/tooling/cron-concerns.txt"
+-'  62  0  ~/tooling/cron-concerns.txt
+|4,39,62,0,1714329241,"~/tooling/cron-concerns.txt"
+-'  62  0  ~/tooling/cron-concerns.txt
+|4,39,62,0,1714329241,"~/tooling/cron-concerns.txt"
+-'  62  0  ~/tooling/cron-concerns.txt
+|4,39,62,0,1714329241,"~/tooling/cron-concerns.txt"
+-'  62  0  ~/tooling/cron-concerns.txt
+|4,39,62,0,1714329241,"~/tooling/cron-concerns.txt"
+-'  62  0  ~/tooling/cron-concerns.txt
+|4,39,62,0,1714329241,"~/tooling/cron-concerns.txt"
+-'  62  0  ~/tooling/cron-concerns.txt
+|4,39,62,0,1714329241,"~/tooling/cron-concerns.txt"
+-'  62  0  ~/tooling/cron-concerns.txt
+|4,39,62,0,1714329241,"~/tooling/cron-concerns.txt"
 
 # Buffer list:
-%~/bash/info.bash	1	10
+%~/bash/gh-test.bash	1	0
 
 # History of marks within files (newest to oldest):
 
-> ~/bash/info.bash
-	*	1714292167	0
-	"	1	10
+> ~/bash/gh-test.bash
+	*	1714332785	0
+	"	1	0
 	^	1	11
 	.	1	10
-	+	15	15
-	+	19	17
-	+	23	23
-	+	27	25
-	+	27	17
+	+	2	11
+	+	1	10
+
+> ~/tooling/cron-concerns.txt
+	*	1714332729	0
+	"	26	3
+	^	26	4
+	.	26	3
+	+	61	17
+	+	62	14
+	+	63	13
+	+	64	15
+	+	125	2
+	+	121	29
+	+	123	0
+	+	65	32
+	+	66	8
+	+	62	78
+	+	69	18
+	+	70	18
+	+	71	22
+	+	72	16
+	+	73	18
+	+	74	18
+	+	75	18
+	+	76	19
+	+	77	19
+	+	78	17
+	+	79	18
+	+	80	18
+	+	81	21
+	+	82	19
+	+	83	16
+	+	84	20
+	+	85	21
+	+	86	18
+	+	86	21
+	+	86	16
+	+	86	20
+	+	86	21
+	+	86	0
+	+	68	28
+	+	86	0
+	+	46	46
+	+	43	15
+	+	44	0
+	+	47	0
+	+	48	46
+	+	49	0
+	+	50	71
+	+	51	74
+	+	51	0
+	+	51	104
+	+	51	0
+	+	54	74
+	+	56	0
+	+	55	11
+	+	56	0
+	+	42	0
+	+	41	0
+	+	57	0
+	+	58	0
+	+	30	44
+	+	38	5
+	+	37	66
+	+	39	0
+	+	35	0
+	+	39	40
+	+	29	0
+	+	32	0
+	+	31	10
+	+	30	0
+	+	31	0
+	+	33	14
+	+	39	35
+	+	30	0
+	+	31	0
+	+	2	20
+	+	4	45
 	+	27	0
+	+	28	0
+	+	2	0
+	+	1	0
+	+	8	10
+	+	12	27
+	+	8	18
+	+	13	2
+	+	7	0
+	+	6	79
+	+	119	79
+	+	11	34
+	+	12	33
+	+	11	132
+	+	10	9
+	+	11	11
+	+	12	11
+	+	10	11
+	+	11	60
+	+	22	27
+	+	21	2
+	+	22	0
+	+	21	0
+	+	22	22
+	+	24	26
+	+	19	3
+	+	24	0
+	+	21	0
+	+	26	3
+
+> /tmp/crontab.cDPt2F/crontab
+	*	1714329553	0
+	"	34	0
+	.	35	0
+	+	35	0
+
+> ~/bash/gh-timeago.bash
+	*	1714329457	0
+	"	4	0
+	^	4	8
+	.	4	75
+	+	20	63
+	+	4	75
+
+> ~/bash/logs/gh-test.log
+	*	1714329439	0
+	"	1	0
+
+> ~/bash/logs/gh-timeago-updates.log
+	*	1714329437	0
+	"	1	0
+
+> /tmp/crontab.HKn1ft/crontab
+	*	1714329394	0
+	"	35	10
+	^	35	10
+
+> /tmp/crontab.fGEQ4o/crontab
+	*	1714329322	0
+	"	35	60
+	^	35	61
+	.	35	33
+	+	35	33
+
+> /tmp/crontab.EDrRoi/crontab
+	*	1714328075	0
+	"	1	0
+	^	35	0
+	.	35	0
+	+	35	0
+	+	27	0
+	+	26	9
+	+	35	0
+
+> /tmp/crontab.coARSw/crontab
+	*	1714325961	0
+	"	32	57
+	^	32	58
+	.	32	57
+	+	32	57
+
+> ~/bash/cron-run.bash
+	*	1714325932	0
+	"	1	0
+	^	34	82
+	.	34	81
+	+	34	81
+
+> ~/bash/logs/pytest-date.log
+	*	1714325290	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> /tmp/crontab.xBwk6f/crontab
+	*	1714325268	0
+	"	27	14
+	^	27	15
+	.	27	14
+	+	28	0
+	+	27	14
+
+> /tmp/crontab.rv1cAz/crontab
+	*	1714325247	0
+	"	1	0
+
+> /tmp/crontab.NlilD0/crontab
+	*	1714309995	0
+	"	31	98
+	^	31	99
+	.	31	90
+	+	31	90
+
+> /tmp/crontab.xWEKg3/crontab
+	*	1714309934	0
+	"	1	0
+
+> ~/bash/logs/refresh_downloads_table.log
+	*	1714309097	0
+	"	6999	0
+	.	1	0
+	+	1	0
+
+> /tmp/refresh_downloads_table.lock
+	*	1714309085	0
+	"	1	0
+
+> ~/pytest/date.py
+	*	1714309068	0
+	"	6	12
+	^	6	13
+	.	6	12
+	+	2	0
+	+	5	35
+	+	6	12
+
+> ~/hateoas/refresh_downloads_table.py
+	*	1714309057	0
+	"	55	51
+	^	60	28
+	.	82	0
+	+	102	0
+	+	96	9
+	+	97	51
+	+	98	4
+	+	102	0
+	+	34	32
+	+	65	0
+	+	35	76
+	+	36	58
+	+	37	40
+	+	38	8
+	+	38	34
+	+	38	71
+	+	38	90
+	+	62	32
+	+	62	12
+	+	62	39
+	+	62	12
+	+	63	13
+	+	63	0
+	+	62	0
+	+	33	0
+	+	33	91
+	+	33	32
+	+	10	0
+	+	19	41
+	+	20	4
+	+	13	19
+	+	14	22
+	+	15	24
+	+	16	24
+	+	38	0
+	+	38	24
+	+	39	51
+	+	40	19
+	+	41	12
+	+	42	34
+	+	48	0
+	+	48	17
+	+	44	21
+	+	44	118
+	+	45	45
+	+	48	40
+	+	48	20
+	+	48	45
+	+	48	0
+	+	46	59
+	+	47	21
+	+	54	4
+	+	104	0
+	+	62	21
+	+	63	20
+	+	80	0
+	+	62	0
+	+	5	0
+	+	80	28
+	+	78	0
+	+	74	0
+	+	72	17
+	+	80	6
+	+	80	27
+	+	6	9
+	+	80	27
+	+	80	15
+	+	80	32
+	+	80	23
+	+	80	5
+	+	80	55
+	+	80	4
+	+	74	0
+	+	67	0
+	+	73	0
+	+	80	0
+	+	66	7
+	+	80	0
+	+	77	26
+	+	78	0
+	+	80	4
+	+	83	9
+	+	83	0
+	+	80	0
+	+	79	0
+	+	55	56
+	+	56	4
+	+	59	40
+	+	60	23
+	+	61	0
+	+	69	29
+	+	70	4
+	+	71	0
+	+	81	21
+	+	76	24
+	+	63	0
+	+	64	14
+	+	74	0
+	+	82	0
+	+	75	14
+	+	60	27
+	+	75	0
+	+	82	0
+
+> ~/pytest/requirements.txt
+	*	1714309012	0
+	"	3	3
+	^	3	4
+	.	3	3
+	+	3	3
+
+> ~/hateoas/date.py
+	*	1714308935	0
+	"	1	0
+
+> /tmp/crontab.fU7uPz/crontab
+	*	1714308919	0
+	"	24	5
+
+> /tmp/crontab.Jldpts/crontab
+	*	1714308254	0
+	"	29	138
+
+> /tmp/crontab.kLeRVf/crontab
+	*	1714307926	0
+	"	27	28
+	.	26	0
+	+	25	15
+	+	26	0
+
+> /usr/share/zoneinfo/Etc/UTC
+	*	1714307835	0
+	"	1	0
+
+> /tmp/crontab.dgxS89/crontab
+	*	1714307774	0
+	"	25	0
+	.	25	0
+	+	25	15
+	+	25	0
+
+> ~/bash/info.bash
+	*	1714307606	0
+	"	1	8
+	^	1	9
+	.	1	8
+	+	17	15
+	+	21	17
+	+	25	23
+	+	29	25
+	+	29	17
+	+	29	0
+	+	21	0
+	+	29	0
 	+	19	0
 	+	27	0
-	+	17	0
-	+	25	0
-	+	27	0
-	+	21	0
-	+	12	6
-	+	14	0
+	+	29	0
+	+	23	0
+	+	14	6
 	+	16	0
 	+	18	0
 	+	20	0
 	+	22	0
 	+	24	0
 	+	26	0
-	+	10	0
-	+	5	9
-	+	4	0
-	+	5	14
+	+	28	0
+	+	12	0
+	+	7	9
 	+	6	0
-	+	9	0
-	+	10	0
+	+	7	14
+	+	8	0
+	+	11	0
+	+	12	0
+	+	11	12
+	+	8	0
 	+	9	12
-	+	6	0
-	+	7	12
-	+	3	0
+	+	5	0
+	+	4	0
+	+	1	8
+	+	5	1
+	+	1	0
+	+	3	18
 	+	2	0
-	+	1	10
-	a	7	12
-	b	7	12
+	+	1	8
+	a	9	12
+	b	9	12
+
+> /tmp/crontab.gs7asP/crontab
+	*	1714307341	0
+	"	28	1
+	^	28	2
+	.	28	1
+	+	28	1
+
+> ~/bash/cronenv
+	*	1714307243	0
+	"	4	0
+
+> /usr/bin/sh
+	*	1714307241	0
+	"	1	0
+
+> /tmp/crontab.Frb5pL/crontab
+	*	1714307200	0
+	"	1	0
+
+> /tmp/crontab.A159ZB/crontab
+	*	1714307179	0
+	"	28	39
+	^	28	40
+	.	28	39
+	+	28	39
+
+> ~/hateoas/.env
+	*	1714298154	0
+	"	5	0
+	^	5	0
+	.	4	14
+	+	1	18
+	+	2	17
+	+	3	12
+	+	4	14
+
+> ~/.config/starship/starship.toml
+	*	1714297835	0
+	"	20	0
+	^	18	15
+	.	18	0
+	+	9	19
+	+	8	23
+	+	9	23
+	+	8	28
+	+	9	27
+	+	8	23
+	+	9	23
+	+	4	0
+	+	4	23
+	+	4	19
+	+	4	37
+	+	4	0
+	+	4	21
+	+	4	7
+	+	4	15
+	+	4	39
+	+	4	25
+	+	4	0
+	+	2	51
+	+	16	0
+	+	12	0
+	+	7	0
+	+	5	0
+	+	7	0
+	+	4	0
+	+	7	0
+	+	6	0
+	+	5	0
+	+	6	0
+	+	7	8
+	+	7	0
+	+	12	0
+	+	16	19
+	+	16	31
+	+	16	1
+	+	16	0
+	+	4	0
+	+	4	16
+	+	16	10
+	+	4	22
+	+	16	7
+	+	16	1
+	+	16	9
+	+	16	16
+	+	4	24
+	+	16	17
+	+	16	50
+	+	16	0
+	+	4	22
+	+	16	19
+	+	4	0
+	+	16	20
+	+	16	24
+	+	16	0
+	+	20	0
+	+	4	0
+	+	21	0
+	+	4	10
+	+	17	20
+	+	4	17
+	+	20	10
+	+	17	28
+	+	4	0
+	+	16	17
+	+	17	26
+	+	18	31
+	+	19	9
+	+	17	60
+	+	21	0
+	+	4	21
+	+	21	0
+	+	20	10
+	+	21	0
+	+	21	86
+	+	20	0
+	+	21	2
+	+	17	0
+	+	21	0
+	+	17	11
+	+	21	0
+	+	17	0
+	+	19	0
+	+	18	15
+	+	17	17
+	+	17	113
+	+	19	23
+	+	20	11
+	+	20	105
+	+	21	0
+	+	20	8
+	+	20	107
+	+	20	7
+	+	20	107
+	+	17	73
+	+	20	67
+	+	21	0
+	+	22	0
+	+	4	0
+	+	19	44
+	+	18	0
 
 > /tmp/crontab.D1m99B/crontab
 	*	1714291855	0
 	"	27	0
 	.	28	0
 	+	28	0
-
-> ~/tooling/cron-concerns.txt
-	*	1714290268	0
-	"	11	28
-	^	11	29
-	.	11	28
-	+	49	0
-	+	40	37
-	+	41	18
-	+	41	12
-	+	44	12
-	+	45	16
-	+	46	19
-	+	49	16
-	+	49	15
-	+	49	22
-	+	49	0
-	+	49	23
-	+	49	26
-	+	49	23
-	+	49	22
-	+	49	30
-	+	49	33
-	+	49	30
-	+	49	29
-	+	49	37
-	+	49	0
-	+	45	34
-	+	46	18
-	+	45	36
-	+	46	45
-	+	47	50
-	+	48	56
-	+	49	18
-	+	49	0
-	+	41	0
-	+	37	0
-	+	38	6
-	+	41	0
-	+	39	0
-	+	49	0
-	+	43	29
-	+	58	59
-	+	65	0
-	+	58	38
-	+	60	0
-	+	56	44
-	+	57	38
-	+	59	37
-	+	54	78
-	+	55	53
-	+	56	0
-	+	55	53
-	+	65	54
-	+	62	0
-	+	63	131
-	+	61	4
-	+	67	0
-	+	65	0
-	+	68	0
-	+	70	0
-	+	4	17
-	+	5	14
-	+	6	13
-	+	7	15
-	+	73	2
-	+	69	29
-	+	71	0
-	+	8	32
-	+	9	8
-	+	5	78
-	+	12	18
-	+	13	18
-	+	14	22
-	+	15	16
-	+	16	18
-	+	17	18
-	+	18	18
-	+	19	19
-	+	20	19
-	+	21	17
-	+	22	18
-	+	23	18
-	+	24	21
-	+	25	19
-	+	26	16
-	+	27	20
-	+	28	21
-	+	29	18
-	+	30	21
-	+	31	16
-	+	32	20
-	+	33	21
-	+	33	0
-	+	32	0
-	+	11	28
 
 > ~/tmp.bash
 	*	1714245977	0
@@ -8433,12 +8926,6 @@ $
 	+	2	6
 	+	1	9
 	+	2	12
-
-> ~/bash/logs/refresh_downloads_table.log
-	*	1714228997	0
-	"	304	0
-	.	1	0
-	+	1	0
 
 > ~/hateoas/rfv
 	*	1714228920	0
@@ -8684,112 +9171,6 @@ $
 > /tmp/crontab.bRDTMe/crontab
 	*	1714214861	0
 	"	1	0
-
-> ~/hateoas/refresh_downloads_table.py
-	*	1714213862	0
-	"	54	0
-	^	60	28
-	.	82	0
-	+	102	0
-	+	96	9
-	+	97	51
-	+	98	4
-	+	102	0
-	+	34	32
-	+	65	0
-	+	35	76
-	+	36	58
-	+	37	40
-	+	38	8
-	+	38	34
-	+	38	71
-	+	38	90
-	+	62	32
-	+	62	12
-	+	62	39
-	+	62	12
-	+	63	13
-	+	63	0
-	+	62	0
-	+	33	0
-	+	33	91
-	+	33	32
-	+	10	0
-	+	19	41
-	+	20	4
-	+	13	19
-	+	14	22
-	+	15	24
-	+	16	24
-	+	38	0
-	+	38	24
-	+	39	51
-	+	40	19
-	+	41	12
-	+	42	34
-	+	48	0
-	+	48	17
-	+	44	21
-	+	44	118
-	+	45	45
-	+	48	40
-	+	48	20
-	+	48	45
-	+	48	0
-	+	46	59
-	+	47	21
-	+	54	4
-	+	104	0
-	+	62	21
-	+	63	20
-	+	80	0
-	+	62	0
-	+	5	0
-	+	80	28
-	+	78	0
-	+	74	0
-	+	72	17
-	+	80	6
-	+	80	27
-	+	6	9
-	+	80	27
-	+	80	15
-	+	80	32
-	+	80	23
-	+	80	5
-	+	80	55
-	+	80	4
-	+	74	0
-	+	67	0
-	+	73	0
-	+	80	0
-	+	66	7
-	+	80	0
-	+	77	26
-	+	78	0
-	+	80	4
-	+	83	9
-	+	83	0
-	+	80	0
-	+	79	0
-	+	55	56
-	+	56	4
-	+	59	40
-	+	60	23
-	+	61	0
-	+	69	29
-	+	70	4
-	+	71	0
-	+	81	21
-	+	76	24
-	+	63	0
-	+	64	14
-	+	74	0
-	+	82	0
-	+	75	14
-	+	60	27
-	+	75	0
-	+	82	0
 
 > /tmp/crontab.1donzH/crontab
 	*	1714213851	0
@@ -10396,14 +10777,6 @@ $
 	*	1713956285	0
 	"	92	4
 
-> ~/bash/gh-timeago.bash
-	*	1713954605	0
-	"	4	9
-	^	4	8
-	.	4	75
-	+	20	63
-	+	4	75
-
 > ~/hateoas/downloads.py
 	*	1713953054	0
 	"	3	0
@@ -10566,119 +10939,9 @@ $
 	*	1713876739	0
 	"	780	24
 
-> ~/bash/logs/gh-timeago-updates.log
-	*	1713853086	0
-	"	63	0
-
 > /tmp/crontab.BPvd3h/crontab
 	*	1713853059	0
 	"	26	0
-
-> ~/.config/starship/starship.toml
-	*	1713852933	0
-	"	18	17
-	^	18	15
-	.	18	0
-	+	9	19
-	+	8	23
-	+	9	23
-	+	8	28
-	+	9	27
-	+	8	23
-	+	9	23
-	+	4	0
-	+	4	23
-	+	4	19
-	+	4	37
-	+	4	0
-	+	4	21
-	+	4	7
-	+	4	15
-	+	4	39
-	+	4	25
-	+	4	0
-	+	2	51
-	+	16	0
-	+	12	0
-	+	7	0
-	+	5	0
-	+	7	0
-	+	4	0
-	+	7	0
-	+	6	0
-	+	5	0
-	+	6	0
-	+	7	8
-	+	7	0
-	+	12	0
-	+	16	19
-	+	16	31
-	+	16	1
-	+	16	0
-	+	4	0
-	+	4	16
-	+	16	10
-	+	4	22
-	+	16	7
-	+	16	1
-	+	16	9
-	+	16	16
-	+	4	24
-	+	16	17
-	+	16	50
-	+	16	0
-	+	4	22
-	+	16	19
-	+	4	0
-	+	16	20
-	+	16	24
-	+	16	0
-	+	20	0
-	+	4	0
-	+	21	0
-	+	4	10
-	+	17	20
-	+	4	17
-	+	20	10
-	+	17	28
-	+	4	0
-	+	16	17
-	+	17	26
-	+	18	31
-	+	19	9
-	+	17	60
-	+	21	0
-	+	4	21
-	+	21	0
-	+	20	10
-	+	21	0
-	+	21	86
-	+	20	0
-	+	21	2
-	+	17	0
-	+	21	0
-	+	17	11
-	+	21	0
-	+	17	0
-	+	19	0
-	+	18	15
-	+	17	17
-	+	17	113
-	+	19	23
-	+	20	11
-	+	20	105
-	+	21	0
-	+	20	8
-	+	20	107
-	+	20	7
-	+	20	107
-	+	17	73
-	+	20	67
-	+	21	0
-	+	22	0
-	+	4	0
-	+	19	44
-	+	18	0
 
 > ~/hateoas/migrations/240425_0000_portionurls-notnull-user_id.py
 	*	1713852431	0
@@ -11106,13 +11369,6 @@ $
 > ~/bash/*.
 	*	1713772362	0
 	"	1	0
-
-> ~/bash/cron-run.bash
-	*	1713772345	0
-	"	46	0
-	^	34	82
-	.	34	81
-	+	34	81
 
 > /tmp/crontab.fq3oek/crontab
 	*	1713772299	0
