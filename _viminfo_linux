@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/flock
+~MSle0~/â¬¢ \[Docker\] bash â¯
 
 # Last Substitute Search Pattern:
 ~MSle0&:
@@ -20,24 +20,36 @@
 $
 
 # Command Line History (newest to oldest):
+:q!
+|2,0,1714377616,,"q!"
 :q
-|2,0,1714332785,,"q"
+|2,0,1714369518,,"q"
+:term
+|2,0,1714366866,,"term"
+:LogPrettyPrintLine
+|2,0,1714366682,,"LogPrettyPrintLine"
+:log*Line
+|2,0,1714366678,,"log*Line"
+:ALEFixSuggest
+|2,0,1714334368,,"ALEFixSuggest"
+:ALEFixSuggestg
+|2,0,1714334366,,"ALEFixSuggestg"
+:ALEFix
+|2,0,1714334362,,"ALEFix"
+:ALEInfo
+|2,0,1714334323,,"ALEInfo"
 :e ~/bin/bash
 |2,0,1714329632,,"e ~/bin/bash"
 :qa
 |2,0,1714329502,,"qa"
 :e gh-timeago-updates.log
 |2,0,1714329437,,"e gh-timeago-updates.log"
-:q!
-|2,0,1714328428,,"q!"
 :norm
 |2,0,1714328161,,"norm"
 :MRU 4:cron-concerns.txt
 |2,0,1714328077,,"MRU 4:cron-concerns.txt"
 :w
 |2,0,1714326071,,"w"
-:LogPrettyPrintLine
-|2,0,1714309097,,"LogPrettyPrintLine"
 :MRU log
 |2,0,1714309092,,"MRU log"
 :MRU py
@@ -50,8 +62,6 @@ $
 |2,0,1714308242,,"e"
 :Copilot panel
 |2,0,1714307899,,"Copilot panel"
-:term
-|2,0,1714307756,,"term"
 :e /bin/sh
 |2,0,1714307241,,"e /bin/sh"
 :normal! 80p
@@ -242,10 +252,6 @@ $
 |2,0,1714041379,,"!start everything -path . run"
 :MRU hat
 |2,0,1714040858,,"MRU hat"
-:ALEFix
-|2,0,1714037194,,"ALEFix"
-:ALEInfo
-|2,0,1714037180,,"ALEInfo"
 :MRU ide
 |2,0,1714037124,,"MRU ide"
 :S
@@ -5668,6 +5674,10 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/  
+|2,1,1714366734,47,"  "
+?/shellcheck
+|2,1,1714334328,47,"shellcheck"
 ?/flock
 |2,1,1714328421,47,"flock"
 ?/HOME
@@ -8006,94 +8016,146 @@ $
 |2,4,1693311567,,"cont"
 
 # Registers:
-"0	CHAR	0
-	timeago.bash >> ~/bash/logs/
-|3,0,0,0,1,0,1714329310,"timeago.bash >> ~/bash/logs/"
+""0	LINE	0
+	## Bash Redirection Cheatseet
+	
+	## Useful Knowledge 
+	
+	* Command line programs always have three "standard streams" available: Standard Input (stdin), Standard Output (stdout), Standard Error (stderr)
+	
+	* Generally, the "good news" is in standard output and the "bad news" goes to stderr
+	
+	* Each stream is associated with a number called a "File Descriptor" (1 stdout, 2 for stderr, 0 for stdin)
+	
+	* The default for stdout & stderr is to display on the terminal
+	
+	* Using the file-descriptor and some special syntax, the data in the stream can be "redirected" to another destination like a file, another program, or a black hole of sorts called /dev/null
+	
+	
+	## Redirecting Standard Output (stdout)
+	
+	### Save output to a file stdout.txt
+	
+	```sh
+	command 1>stdout.txt
+	command >stdout.txt # 1 is optional for stdout
+	```
+	
+	### Append output to a file stdout.txt (no overwrite)
+	
+	```sh
+	command 1>>stdout.txt
+	command >>stdout.txt # 1 is optional for stdout
+	```
+	
+	### Discard output entirely (won't display on screen or persist to file)
+	
+	```sh
+	command 1>/dev/null
+	command >/dev/null # 1 is optional for stdout
+	```
+	
+	Notes:
+	
+	- For stdout, you can safely drop the File Descriptor (1)
+	
+	## Redirecting Standard Error (stderr)
+	
+	Exact same syntax as above except the File Descriptor is mandatory: 
+	
+	```sh
+	command 2>stderr.txt # Write stderr to file
+	command 2>>stderr.txt # Append errors to file
+	command 2>/dev/null # Discard stderr
+|3,1,0,1,50,0,1714367383,"## Bash Redirection Cheatseet","","## Useful Knowledge ","","* Command line programs always have three \"standard streams\" available: Standard Input (stdin), Standard Output (stdout), Standard Error (stderr)","","* Generally, the \"good news\" is in standard output and the \"bad news\" goes to stderr","","* Each stream is associated with a number called a \"File Descriptor\" (1 stdout, 2 for stderr, 0 for stdin)","",>65
+|<"* The default for stdout & stderr is to display on the terminal","","* Using the file-descriptor and some special syntax, the data in the stream can be \"redirected\" to another destination like a file, another program, or a black hole of sorts called /dev/null","","","## Redirecting Standard Output (stdout)","","### Save output to a file stdout.txt","","```sh","command 1>stdout.txt","command >stdout.txt # 1 is optional for stdout","```","",>55
+|<"### Append output to a file stdout.txt (no overwrite)","","```sh","command 1>>stdout.txt","command >>stdout.txt # 1 is optional for stdout","```","","### Discard output entirely (won't display on screen or persist to file)","","```sh","command 1>/dev/null","command >/dev/null # 1 is optional for stdout","```","","Notes:","","- For stdout, you can safely drop the File Descriptor (1)","","## Redirecting Standard Error (stderr)","",>70
+|<"Exact same syntax as above except the File Descriptor is mandatory: ","","```sh","command 2>stderr.txt # Write stderr to file","command 2>>stderr.txt # Append errors to file","command 2>/dev/null # Discard stderr"
 "1	LINE	0
-	* * * * * ~/bash/gh-test.bash >> ~/bash/logs/gh-test.log 2>&1
-|3,0,1,1,1,0,1714329552,"* * * * * ~/bash/gh-test.bash >> ~/bash/logs/gh-test.log 2>&1"
+	## Bash Redirection Cheatseet
+	
+	## Useful Knowledge 
+	
+	* Command line programs always have three "standard streams" available: Standard Input (stdin), Standard Output (stdout), Standard Error (stderr)
+	
+	* Generally, the "good news" is in standard output and the "bad news" goes to stderr
+	
+	* Each stream is associated with a number called a "File Descriptor" (1 stdout, 2 for stderr, 0 for stdin)
+	
+	* The default for stdout & stderr is to display on the terminal
+	
+	* Using the file-descriptor and some special syntax, the data in the stream can be "redirected" to another destination like a file, another program, or a black hole of sorts called /dev/null
+	
+	
+	## Redirecting Standard Output (stdout)
+	
+	### Save output to a file stdout.txt
+	
+	```sh
+	command 1>stdout.txt
+	command >stdout.txt # 1 is optional for stdout
+	```
+	
+	### Append output to a file stdout.txt (no overwrite)
+	
+	```sh
+	command 1>>stdout.txt
+	command >>stdout.txt # 1 is optional for stdout
+	```
+	
+	### Discard output entirely (won't display on screen or persist to file)
+	
+	```sh
+	command 1>/dev/null
+	command >/dev/null # 1 is optional for stdout
+	```
+	
+	Notes:
+	
+	- For stdout, you can safely drop the File Descriptor (1)
+	
+	## Redirecting Standard Error (stderr)
+	
+	Exact same syntax as above except the File Descriptor is mandatory: 
+	
+	```sh
+	command 2>stderr.txt # Write stderr to file
+	command 2>>stderr.txt # Append errors to file
+	command 2>/dev/null # Discard stderr
+|3,0,1,1,50,0,1714367356,"## Bash Redirection Cheatseet","","## Useful Knowledge ","","* Command line programs always have three \"standard streams\" available: Standard Input (stdin), Standard Output (stdout), Standard Error (stderr)","","* Generally, the \"good news\" is in standard output and the \"bad news\" goes to stderr","","* Each stream is associated with a number called a \"File Descriptor\" (1 stdout, 2 for stderr, 0 for stdin)","",>65
+|<"* The default for stdout & stderr is to display on the terminal","","* Using the file-descriptor and some special syntax, the data in the stream can be \"redirected\" to another destination like a file, another program, or a black hole of sorts called /dev/null","","","## Redirecting Standard Output (stdout)","","### Save output to a file stdout.txt","","```sh","command 1>stdout.txt","command >stdout.txt # 1 is optional for stdout","```","",>55
+|<"### Append output to a file stdout.txt (no overwrite)","","```sh","command 1>>stdout.txt","command >>stdout.txt # 1 is optional for stdout","```","","### Discard output entirely (won't display on screen or persist to file)","","```sh","command 1>/dev/null","command >/dev/null # 1 is optional for stdout","```","","Notes:","","- For stdout, you can safely drop the File Descriptor (1)","","## Redirecting Standard Error (stderr)","",>70
+|<"Exact same syntax as above except the File Descriptor is mandatory: ","","```sh","command 2>stderr.txt # Write stderr to file","command 2>>stderr.txt # Append errors to file","command 2>/dev/null # Discard stderr"
 "2	LINE	0
+	$ date
+	Mon Apr 29 10:21:52 IST 2024
 	
-|3,0,2,1,1,0,1714328097,""
+|3,0,2,1,3,0,1714366919,"$ date","Mon Apr 29 10:21:52 IST 2024",""
 "3	LINE	0
-	# * * * * * env > /home/vivek/bash/cronenv
-	# * * * * *  ~/bash/python-direnv.bash ~/pytest/date.py >> ~/bash/logs/pytest-date.log 2>&1
-|3,0,3,1,2,0,1714326022,"# * * * * * env > /home/vivek/bash/cronenv","# * * * * *  ~/bash/python-direnv.bash ~/pytest/date.py >> ~/bash/logs/pytest-date.log 2>&1"
+	
+|3,0,3,1,1,0,1714366668,""
 "4	LINE	0
-	
-|3,0,4,1,1,0,1714325744,""
+	â¬¢ [Docker] bash â¯  echo "Hello" | ts "%c"
+	Mon Apr 29 10:20:58 2024 Hello
+|3,0,4,1,2,0,1714366374,"â¬¢ [Docker] bash â¯  echo \"Hello\" | ts \"%c\"","Mon Apr 29 10:20:58 2024 Hello"
 "5	LINE	0
-	
-|3,0,5,1,1,0,1714325742,""
+	# use directive to specify location
+|3,0,5,1,1,0,1714334493,"# use directive to specify location"
 "6	LINE	0
-	    - easy to monitor: how often are jobs running, which ones are flaky
-	    - easy to replicate user environment ($PATH, $SHELL, $TZ, env)
-|3,0,6,1,2,0,1714325656,"    - easy to monitor: how often are jobs running, which ones are flaky","    - easy to replicate user environment ($PATH, $SHELL, $TZ, env)"
-"7	LINE	0
-	direnv: loading ~/pytest/.envrc
-	direnv: export +VIRTUAL_ENV ~PATH
-	Time is: Sun Apr 28 16:05:01 2024
-	direnv: loading ~/pytest/.envrc
-	direnv: export +VIRTUAL_ENV ~PATH
-	Time is: Sun Apr 28 16:06:01 2024
-	direnv: loading ~/pytest/.envrc
-	direnv: export +VIRTUAL_ENV ~PATH
-	Time is: Sun Apr 28 16:07:01 2024
-	direnv: loading ~/pytest/.envrc
-	direnv: export +VIRTUAL_ENV ~PATH
-	Time is: Sun Apr 28 16:08:01 2024
-	direnv: loading ~/pytest/.envrc
-	direnv: export +VIRTUAL_ENV ~PATH
-	Time is: Sun Apr 28 16:09:02 2024
-	direnv: loading ~/pytest/.envrc
-	direnv: export +VIRTUAL_ENV ~PATH
-	Time is: Sun Apr 28 16:10:01 2024
-	direnv: loading ~/pytest/.envrc
-	direnv: export +VIRTUAL_ENV ~PATH
-	Time is: Sun Apr 28 16:11:01 2024
-	direnv: loading ~/pytest/.envrc
-	direnv: export +VIRTUAL_ENV ~PATH
-	Time is: Sun Apr 28 16:12:01 2024
-	direnv: loading ~/pytest/.envrc
-	direnv: export +VIRTUAL_ENV ~PATH
-	Time is: Sun Apr 28 16:13:01 2024
-	direnv: loading ~/pytest/.envrc
-	direnv: export +VIRTUAL_ENV ~PATH
-	Time is: Sun Apr 28 16:14:01 2024
-	direnv: loading ~/pytest/.envrc
-	direnv: export +VIRTUAL_ENV ~PATH
-	Time is: Sun Apr 28 16:15:01 2024
-	direnv: loading ~/pytest/.envrc
-	direnv: export +VIRTUAL_ENV ~PATH
-	Time is: Sun Apr 28 16:16:01 2024
-	direnv: loading ~/pytest/.envrc
-	direnv: export +VIRTUAL_ENV ~PATH
-	Time is: Sun Apr 28 16:17:01 2024
-	direnv: loading ~/pytest/.envrc
-	direnv: export +VIRTUAL_ENV ~PATH
-	Time is: Sun Apr 28 16:18:01 2024
-	direnv: loading ~/pytest/.envrc
-	direnv: export +VIRTUAL_ENV ~PATH
-	Time is: Sun Apr 28 16:19:01 2024
-	direnv: loading ~/pytest/.envrc
-	direnv: export +VIRTUAL_ENV ~PATH
-	Time is: Sun Apr 28 16:20:01 2024
-	direnv: loading ~/pytest/.envrc
-	direnv: export +VIRTUAL_ENV ~PATH
-|3,0,7,1,50,0,1714325226,"direnv: loading ~/pytest/.envrc","direnv: export +VIRTUAL_ENV ~PATH","Time is: Sun Apr 28 16:05:01 2024","direnv: loading ~/pytest/.envrc","direnv: export +VIRTUAL_ENV ~PATH","Time is: Sun Apr 28 16:06:01 2024","direnv: loading ~/pytest/.envrc","direnv: export +VIRTUAL_ENV ~PATH","Time is: Sun Apr 28 16:07:01 2024","direnv: loading ~/pytest/.envrc","direnv: export +VIRTUAL_ENV ~PATH","Time is: Sun Apr 28 16:08:01 2024",>33
-|<"direnv: loading ~/pytest/.envrc","direnv: export +VIRTUAL_ENV ~PATH","Time is: Sun Apr 28 16:09:02 2024","direnv: loading ~/pytest/.envrc","direnv: export +VIRTUAL_ENV ~PATH","Time is: Sun Apr 28 16:10:01 2024","direnv: loading ~/pytest/.envrc","direnv: export +VIRTUAL_ENV ~PATH","Time is: Sun Apr 28 16:11:01 2024","direnv: loading ~/pytest/.envrc","direnv: export +VIRTUAL_ENV ~PATH","Time is: Sun Apr 28 16:12:01 2024","direnv: loading ~/pytest/.envrc",>35
-|<"direnv: export +VIRTUAL_ENV ~PATH","Time is: Sun Apr 28 16:13:01 2024","direnv: loading ~/pytest/.envrc","direnv: export +VIRTUAL_ENV ~PATH","Time is: Sun Apr 28 16:14:01 2024","direnv: loading ~/pytest/.envrc","direnv: export +VIRTUAL_ENV ~PATH","Time is: Sun Apr 28 16:15:01 2024","direnv: loading ~/pytest/.envrc","direnv: export +VIRTUAL_ENV ~PATH","Time is: Sun Apr 28 16:16:01 2024","direnv: loading ~/pytest/.envrc","direnv: export +VIRTUAL_ENV ~PATH",>35
-|<"Time is: Sun Apr 28 16:17:01 2024","direnv: loading ~/pytest/.envrc","direnv: export +VIRTUAL_ENV ~PATH","Time is: Sun Apr 28 16:18:01 2024","direnv: loading ~/pytest/.envrc","direnv: export +VIRTUAL_ENV ~PATH","Time is: Sun Apr 28 16:19:01 2024","direnv: loading ~/pytest/.envrc","direnv: export +VIRTUAL_ENV ~PATH","Time is: Sun Apr 28 16:20:01 2024","direnv: loading ~/pytest/.envrc","direnv: export +VIRTUAL_ENV ~PATH"
-"8	LINE	0
-	PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 	
-|3,0,8,1,2,0,1714307902,"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",""
+|3,0,6,1,1,0,1714334492,""
+"7	LINE	0
+	
+|3,0,7,1,1,0,1714334491,""
+"8	LINE	0
+	--------------------------------------------------------------------------------
+|3,0,8,1,1,0,1714333790,"--------------------------------------------------------------------------------"
 "9	LINE	0
-	# set timezone to india
-|3,0,9,1,1,0,1714307871,"# set timezone to india"
+	asdfasdf
+|3,0,9,1,1,0,1714333782,"asdfasdf"
 "a	CHAR	0
-	Tabularize /,/l1c1l1c1l1c1l1
-|3,0,10,0,1,0,1714211797,"Tabularize /,/l1c1l1c1l1c1l1"
+	Tabularize /-/l1c1l1c1l1
+|3,0,10,0,1,0,1714366748,"Tabularize /-/l1c1l1c1l1"
 "j	CHAR	0
 	k:q€ýa
 |3,0,19,0,1,0,1714046792,"k:q€ýa"
@@ -8128,238 +8190,432 @@ $
 |3,0,28,1,24,0,1712521850,"    return render_template_string(\"\"\"","    <ul>","        {% for id, name, downloaded_path, progress, status in downloads %}","            <li>","                <a href=\"/download/{{ id }}\">{{ name }}</a>","                <span>{{ status }}</span>","                <progress value=\"{{ progress }}\" max=\"100\"></progress>","                <span>{{ progress }}%</span>","                {% if status == 'paused' %}",>68
 |<"                <form method=\"POST\" action=\"/resume_download\">","                    <input type=\"hidden\" name=\"id\" value=\"{{ id }}\">","                    <input type=\"submit\" value=\"Resume\">","                </form>","                {% endif %}","                {% if status == 'downloading' %}","                <form method=\"POST\" action=\"/pause_download\">","                    <input type=\"hidden\" name=\"id\" value=\"{{ id }}\">",>61
 |<"                    <input type=\"submit\" value=\"Pause\">","                </form>","                {% endif %}","","            </li>","        {% endfor %}","    </ul>\"\"\", downloads=downloads)"
-""-	CHAR	0
-	  
-|3,1,36,0,1,0,1714329603,"  "
+"-	CHAR	0
+	 
+|3,0,36,0,1,0,1714366776," "
 
 # File marks:
-'0  1  0  ~/bash/gh-test.bash
-|4,48,1,0,1714332785,"~/bash/gh-test.bash"
-'1  26  3  ~/tooling/cron-concerns.txt
-|4,49,26,3,1714332730,"~/tooling/cron-concerns.txt"
-'2  26  3  ~/tooling/cron-concerns.txt
-|4,50,26,3,1714332730,"~/tooling/cron-concerns.txt"
-'3  26  3  ~/tooling/cron-concerns.txt
-|4,51,26,3,1714329633,"~/tooling/cron-concerns.txt"
-'4  26  3  ~/tooling/cron-concerns.txt
-|4,52,26,3,1714329633,"~/tooling/cron-concerns.txt"
-'5  34  0  /tmp/crontab.cDPt2F/crontab
-|4,53,34,0,1714329557,"/tmp/crontab.cDPt2F/crontab"
-'6  34  0  /tmp/crontab.cDPt2F/crontab
-|4,54,34,0,1714329557,"/tmp/crontab.cDPt2F/crontab"
-'7  34  0  /tmp/crontab.cDPt2F/crontab
-|4,55,34,0,1714329557,"/tmp/crontab.cDPt2F/crontab"
-'8  34  0  /tmp/crontab.cDPt2F/crontab
-|4,56,34,0,1714329557,"/tmp/crontab.cDPt2F/crontab"
-'9  34  0  /tmp/crontab.cDPt2F/crontab
-|4,57,34,0,1714329557,"/tmp/crontab.cDPt2F/crontab"
+'0  2  67  ~/tooling/redirection-cheatsheet.md
+|4,48,2,67,1714369518,"~/tooling/redirection-cheatsheet.md"
+'1  2  67  ~/tooling/redirection-cheatsheet.md
+|4,49,2,67,1714369518,"~/tooling/redirection-cheatsheet.md"
+'2  4  0  ~/tooling/redirection-cheatsheet.md
+|4,50,4,0,1714367357,"~/tooling/redirection-cheatsheet.md"
+'3  1  0  ~/tooling/redirection-cheatsheet.md
+|4,51,1,0,1714367357,"~/tooling/redirection-cheatsheet.md"
+'4  4  0  ~/tooling/redirection-cheatsheet.md
+|4,52,4,0,1714367357,"~/tooling/redirection-cheatsheet.md"
+'5  1  0  ~/tooling/redirection-cheatsheet.md
+|4,53,1,0,1714367357,"~/tooling/redirection-cheatsheet.md"
+'6  26  0  ~/tooling/dates.txt
+|4,54,26,0,1714367111,"~/tooling/dates.txt"
+'7  26  0  ~/tooling/dates.txt
+|4,55,26,0,1714367111,"~/tooling/dates.txt"
+'8  26  0  ~/tooling/dates.txt
+|4,56,26,0,1714367111,"~/tooling/dates.txt"
+'9  26  0  ~/tooling/dates.txt
+|4,57,26,0,1714367111,"~/tooling/dates.txt"
 
 # Jumplist (newest first):
--'  1  0  ~/bash/gh-test.bash
-|4,39,1,0,1714332785,"~/bash/gh-test.bash"
--'  26  3  ~/tooling/cron-concerns.txt
-|4,39,26,3,1714332730,"~/tooling/cron-concerns.txt"
--'  26  3  ~/tooling/cron-concerns.txt
-|4,39,26,3,1714332730,"~/tooling/cron-concerns.txt"
--'  26  3  ~/tooling/cron-concerns.txt
-|4,39,26,3,1714329633,"~/tooling/cron-concerns.txt"
--'  1  0  ~/tooling/cron-concerns.txt
-|4,39,1,0,1714329573,"~/tooling/cron-concerns.txt"
--'  1  0  ~/tooling/cron-concerns.txt
-|4,39,1,0,1714329573,"~/tooling/cron-concerns.txt"
--'  1  0  ~/tooling/cron-concerns.txt
-|4,39,1,0,1714329573,"~/tooling/cron-concerns.txt"
--'  34  0  /tmp/crontab.cDPt2F/crontab
-|4,39,34,0,1714329557,"/tmp/crontab.cDPt2F/crontab"
--'  34  0  /tmp/crontab.cDPt2F/crontab
-|4,39,34,0,1714329557,"/tmp/crontab.cDPt2F/crontab"
--'  34  0  /tmp/crontab.cDPt2F/crontab
-|4,39,34,0,1714329557,"/tmp/crontab.cDPt2F/crontab"
--'  34  0  /tmp/crontab.cDPt2F/crontab
-|4,39,34,0,1714329557,"/tmp/crontab.cDPt2F/crontab"
--'  1  0  /tmp/crontab.cDPt2F/crontab
-|4,39,1,0,1714329550,"/tmp/crontab.cDPt2F/crontab"
--'  1  0  /tmp/crontab.cDPt2F/crontab
-|4,39,1,0,1714329550,"/tmp/crontab.cDPt2F/crontab"
--'  1  0  /tmp/crontab.cDPt2F/crontab
-|4,39,1,0,1714329550,"/tmp/crontab.cDPt2F/crontab"
--'  1  0  /tmp/crontab.cDPt2F/crontab
-|4,39,1,0,1714329550,"/tmp/crontab.cDPt2F/crontab"
--'  4  0  ~/bash/gh-timeago.bash
-|4,39,4,0,1714329502,"~/bash/gh-timeago.bash"
--'  4  0  ~/bash/gh-timeago.bash
-|4,39,4,0,1714329502,"~/bash/gh-timeago.bash"
--'  4  0  ~/bash/gh-timeago.bash
-|4,39,4,0,1714329502,"~/bash/gh-timeago.bash"
--'  4  0  ~/bash/gh-timeago.bash
-|4,39,4,0,1714329502,"~/bash/gh-timeago.bash"
--'  4  0  ~/bash/gh-timeago.bash
-|4,39,4,0,1714329502,"~/bash/gh-timeago.bash"
--'  1  0  ~/bash/gh-timeago.bash
-|4,39,1,0,1714329448,"~/bash/gh-timeago.bash"
--'  1  0  ~/bash/gh-timeago.bash
-|4,39,1,0,1714329448,"~/bash/gh-timeago.bash"
--'  1  0  ~/bash/gh-timeago.bash
-|4,39,1,0,1714329448,"~/bash/gh-timeago.bash"
--'  1  0  ~/bash/gh-timeago.bash
-|4,39,1,0,1714329448,"~/bash/gh-timeago.bash"
--'  1  0  ~/bash/gh-timeago.bash
-|4,39,1,0,1714329448,"~/bash/gh-timeago.bash"
--'  1  0  ~/bash/logs/gh-test.log
-|4,39,1,0,1714329439,"~/bash/logs/gh-test.log"
--'  1  0  ~/bash/logs/gh-timeago-updates.log
-|4,39,1,0,1714329439,"~/bash/logs/gh-timeago-updates.log"
--'  1  0  ~/bash/logs/gh-test.log
-|4,39,1,0,1714329439,"~/bash/logs/gh-test.log"
--'  1  0  ~/bash/logs/gh-timeago-updates.log
-|4,39,1,0,1714329439,"~/bash/logs/gh-timeago-updates.log"
--'  1  0  ~/bash/logs/gh-test.log
-|4,39,1,0,1714329439,"~/bash/logs/gh-test.log"
--'  1  0  ~/bash/logs/gh-timeago-updates.log
-|4,39,1,0,1714329439,"~/bash/logs/gh-timeago-updates.log"
--'  1  0  ~/bash/logs/gh-test.log
-|4,39,1,0,1714329439,"~/bash/logs/gh-test.log"
--'  1  0  ~/bash/logs/gh-timeago-updates.log
-|4,39,1,0,1714329439,"~/bash/logs/gh-timeago-updates.log"
--'  1  0  ~/bash/logs/gh-test.log
-|4,39,1,0,1714329439,"~/bash/logs/gh-test.log"
--'  1  0  ~/bash/logs/gh-timeago-updates.log
-|4,39,1,0,1714329439,"~/bash/logs/gh-timeago-updates.log"
--'  1  0  ~/bash/logs/gh-test.log
-|4,39,1,0,1714329439,"~/bash/logs/gh-test.log"
--'  1  0  ~/bash/logs/gh-timeago-updates.log
-|4,39,1,0,1714329439,"~/bash/logs/gh-timeago-updates.log"
--'  1  10  ~/bash/gh-test.bash
-|4,39,1,10,1714329430,"~/bash/gh-test.bash"
--'  1  10  ~/bash/gh-test.bash
-|4,39,1,10,1714329430,"~/bash/gh-test.bash"
--'  1  10  ~/bash/gh-test.bash
-|4,39,1,10,1714329430,"~/bash/gh-test.bash"
--'  1  10  ~/bash/gh-test.bash
-|4,39,1,10,1714329430,"~/bash/gh-test.bash"
--'  1  10  ~/bash/gh-test.bash
-|4,39,1,10,1714329430,"~/bash/gh-test.bash"
--'  1  10  ~/bash/gh-test.bash
-|4,39,1,10,1714329430,"~/bash/gh-test.bash"
--'  1  10  ~/bash/gh-test.bash
-|4,39,1,10,1714329400,"~/bash/gh-test.bash"
--'  35  10  /tmp/crontab.HKn1ft/crontab
-|4,39,35,10,1714329395,"/tmp/crontab.HKn1ft/crontab"
--'  35  10  /tmp/crontab.HKn1ft/crontab
-|4,39,35,10,1714329395,"/tmp/crontab.HKn1ft/crontab"
--'  35  10  /tmp/crontab.HKn1ft/crontab
-|4,39,35,10,1714329395,"/tmp/crontab.HKn1ft/crontab"
--'  35  10  /tmp/crontab.HKn1ft/crontab
-|4,39,35,10,1714329395,"/tmp/crontab.HKn1ft/crontab"
--'  35  10  /tmp/crontab.HKn1ft/crontab
-|4,39,35,10,1714329395,"/tmp/crontab.HKn1ft/crontab"
--'  35  10  /tmp/crontab.HKn1ft/crontab
-|4,39,35,10,1714329395,"/tmp/crontab.HKn1ft/crontab"
--'  35  10  /tmp/crontab.HKn1ft/crontab
-|4,39,35,10,1714329395,"/tmp/crontab.HKn1ft/crontab"
--'  35  10  /tmp/crontab.HKn1ft/crontab
-|4,39,35,10,1714329395,"/tmp/crontab.HKn1ft/crontab"
--'  1  0  /tmp/crontab.HKn1ft/crontab
-|4,39,1,0,1714329389,"/tmp/crontab.HKn1ft/crontab"
--'  1  0  /tmp/crontab.HKn1ft/crontab
-|4,39,1,0,1714329389,"/tmp/crontab.HKn1ft/crontab"
--'  1  0  /tmp/crontab.HKn1ft/crontab
-|4,39,1,0,1714329389,"/tmp/crontab.HKn1ft/crontab"
--'  1  0  /tmp/crontab.HKn1ft/crontab
-|4,39,1,0,1714329389,"/tmp/crontab.HKn1ft/crontab"
--'  1  0  /tmp/crontab.HKn1ft/crontab
-|4,39,1,0,1714329389,"/tmp/crontab.HKn1ft/crontab"
--'  1  0  /tmp/crontab.HKn1ft/crontab
-|4,39,1,0,1714329389,"/tmp/crontab.HKn1ft/crontab"
--'  1  0  /tmp/crontab.HKn1ft/crontab
-|4,39,1,0,1714329389,"/tmp/crontab.HKn1ft/crontab"
--'  1  0  /tmp/crontab.HKn1ft/crontab
-|4,39,1,0,1714329389,"/tmp/crontab.HKn1ft/crontab"
--'  35  60  /tmp/crontab.fGEQ4o/crontab
-|4,39,35,60,1714329325,"/tmp/crontab.fGEQ4o/crontab"
--'  35  60  /tmp/crontab.fGEQ4o/crontab
-|4,39,35,60,1714329325,"/tmp/crontab.fGEQ4o/crontab"
--'  35  60  /tmp/crontab.fGEQ4o/crontab
-|4,39,35,60,1714329325,"/tmp/crontab.fGEQ4o/crontab"
--'  35  60  /tmp/crontab.fGEQ4o/crontab
-|4,39,35,60,1714329325,"/tmp/crontab.fGEQ4o/crontab"
--'  35  60  /tmp/crontab.fGEQ4o/crontab
-|4,39,35,60,1714329325,"/tmp/crontab.fGEQ4o/crontab"
--'  35  60  /tmp/crontab.fGEQ4o/crontab
-|4,39,35,60,1714329325,"/tmp/crontab.fGEQ4o/crontab"
--'  35  60  /tmp/crontab.fGEQ4o/crontab
-|4,39,35,60,1714329325,"/tmp/crontab.fGEQ4o/crontab"
--'  35  60  /tmp/crontab.fGEQ4o/crontab
-|4,39,35,60,1714329325,"/tmp/crontab.fGEQ4o/crontab"
--'  35  60  /tmp/crontab.fGEQ4o/crontab
-|4,39,35,60,1714329325,"/tmp/crontab.fGEQ4o/crontab"
--'  1  0  /tmp/crontab.fGEQ4o/crontab
-|4,39,1,0,1714329274,"/tmp/crontab.fGEQ4o/crontab"
--'  1  0  /tmp/crontab.fGEQ4o/crontab
-|4,39,1,0,1714329274,"/tmp/crontab.fGEQ4o/crontab"
--'  1  0  /tmp/crontab.fGEQ4o/crontab
-|4,39,1,0,1714329274,"/tmp/crontab.fGEQ4o/crontab"
--'  1  0  /tmp/crontab.fGEQ4o/crontab
-|4,39,1,0,1714329274,"/tmp/crontab.fGEQ4o/crontab"
--'  1  0  /tmp/crontab.fGEQ4o/crontab
-|4,39,1,0,1714329274,"/tmp/crontab.fGEQ4o/crontab"
--'  1  0  /tmp/crontab.fGEQ4o/crontab
-|4,39,1,0,1714329274,"/tmp/crontab.fGEQ4o/crontab"
--'  1  0  /tmp/crontab.fGEQ4o/crontab
-|4,39,1,0,1714329274,"/tmp/crontab.fGEQ4o/crontab"
--'  1  0  /tmp/crontab.fGEQ4o/crontab
-|4,39,1,0,1714329274,"/tmp/crontab.fGEQ4o/crontab"
--'  1  0  /tmp/crontab.fGEQ4o/crontab
-|4,39,1,0,1714329274,"/tmp/crontab.fGEQ4o/crontab"
--'  2  11  ~/bash/gh-test.bash
-|4,39,2,11,1714329263,"~/bash/gh-test.bash"
--'  2  11  ~/bash/gh-test.bash
-|4,39,2,11,1714329263,"~/bash/gh-test.bash"
--'  2  11  ~/bash/gh-test.bash
-|4,39,2,11,1714329263,"~/bash/gh-test.bash"
--'  2  11  ~/bash/gh-test.bash
-|4,39,2,11,1714329263,"~/bash/gh-test.bash"
--'  2  11  ~/bash/gh-test.bash
-|4,39,2,11,1714329263,"~/bash/gh-test.bash"
--'  2  11  ~/bash/gh-test.bash
-|4,39,2,11,1714329263,"~/bash/gh-test.bash"
--'  2  11  ~/bash/gh-test.bash
-|4,39,2,11,1714329263,"~/bash/gh-test.bash"
--'  2  11  ~/bash/gh-test.bash
-|4,39,2,11,1714329263,"~/bash/gh-test.bash"
--'  1  11  ~/bash/gh-test.bash
-|4,39,1,11,1714329263,"~/bash/gh-test.bash"
--'  1  11  ~/bash/gh-test.bash
-|4,39,1,11,1714329263,"~/bash/gh-test.bash"
--'  75  0  ~/tooling/cron-concerns.txt
-|4,39,75,0,1714329241,"~/tooling/cron-concerns.txt"
--'  62  0  ~/tooling/cron-concerns.txt
-|4,39,62,0,1714329241,"~/tooling/cron-concerns.txt"
--'  75  0  ~/tooling/cron-concerns.txt
-|4,39,75,0,1714329241,"~/tooling/cron-concerns.txt"
--'  62  0  ~/tooling/cron-concerns.txt
-|4,39,62,0,1714329241,"~/tooling/cron-concerns.txt"
--'  75  0  ~/tooling/cron-concerns.txt
-|4,39,75,0,1714329241,"~/tooling/cron-concerns.txt"
--'  62  0  ~/tooling/cron-concerns.txt
-|4,39,62,0,1714329241,"~/tooling/cron-concerns.txt"
--'  62  0  ~/tooling/cron-concerns.txt
-|4,39,62,0,1714329241,"~/tooling/cron-concerns.txt"
--'  62  0  ~/tooling/cron-concerns.txt
-|4,39,62,0,1714329241,"~/tooling/cron-concerns.txt"
--'  62  0  ~/tooling/cron-concerns.txt
-|4,39,62,0,1714329241,"~/tooling/cron-concerns.txt"
--'  62  0  ~/tooling/cron-concerns.txt
-|4,39,62,0,1714329241,"~/tooling/cron-concerns.txt"
--'  62  0  ~/tooling/cron-concerns.txt
-|4,39,62,0,1714329241,"~/tooling/cron-concerns.txt"
--'  62  0  ~/tooling/cron-concerns.txt
-|4,39,62,0,1714329241,"~/tooling/cron-concerns.txt"
+-'  2  67  ~/tooling/redirection-cheatsheet.md
+|4,39,2,67,1714369518,"~/tooling/redirection-cheatsheet.md"
+-'  2  67  ~/tooling/redirection-cheatsheet.md
+|4,39,2,67,1714369518,"~/tooling/redirection-cheatsheet.md"
+-'  26  0  ~/tooling/redirection-cheatsheet.md
+|4,39,26,0,1714367404,"~/tooling/redirection-cheatsheet.md"
+-'  26  0  ~/tooling/redirection-cheatsheet.md
+|4,39,26,0,1714367404,"~/tooling/redirection-cheatsheet.md"
+-'  3  0  ~/tooling/redirection-cheatsheet.md
+|4,39,3,0,1714367386,"~/tooling/redirection-cheatsheet.md"
+-'  3  0  ~/tooling/redirection-cheatsheet.md
+|4,39,3,0,1714367386,"~/tooling/redirection-cheatsheet.md"
+-'  1  77  ~/tooling/redirection-cheatsheet.md
+|4,39,1,77,1714367383,"~/tooling/redirection-cheatsheet.md"
+-'  1  77  ~/tooling/redirection-cheatsheet.md
+|4,39,1,77,1714367383,"~/tooling/redirection-cheatsheet.md"
+-'  4  0  ~/tooling/redirection-cheatsheet.md
+|4,39,4,0,1714367376,"~/tooling/redirection-cheatsheet.md"
+-'  4  0  ~/tooling/redirection-cheatsheet.md
+|4,39,4,0,1714367376,"~/tooling/redirection-cheatsheet.md"
+-'  1  0  ~/tooling/redirection-cheatsheet.md
+|4,39,1,0,1714367357,"~/tooling/redirection-cheatsheet.md"
+-'  26  0  ~/tooling/dates.txt
+|4,39,26,0,1714367111,"~/tooling/dates.txt"
+-'  26  0  ~/tooling/dates.txt
+|4,39,26,0,1714367111,"~/tooling/dates.txt"
+-'  26  0  ~/tooling/dates.txt
+|4,39,26,0,1714367111,"~/tooling/dates.txt"
+-'  26  0  ~/tooling/dates.txt
+|4,39,26,0,1714367111,"~/tooling/dates.txt"
+-'  18  6  ~/tooling/dates.txt
+|4,39,18,6,1714366919,"~/tooling/dates.txt"
+-'  18  6  ~/tooling/dates.txt
+|4,39,18,6,1714366919,"~/tooling/dates.txt"
+-'  18  6  ~/tooling/dates.txt
+|4,39,18,6,1714366919,"~/tooling/dates.txt"
+-'  18  6  ~/tooling/dates.txt
+|4,39,18,6,1714366919,"~/tooling/dates.txt"
+-'  4  19  ~/tooling/dates.txt
+|4,39,4,19,1714366866,"~/tooling/dates.txt"
+-'  4  19  ~/tooling/dates.txt
+|4,39,4,19,1714366866,"~/tooling/dates.txt"
+-'  4  19  ~/tooling/dates.txt
+|4,39,4,19,1714366866,"~/tooling/dates.txt"
+-'  4  19  ~/tooling/dates.txt
+|4,39,4,19,1714366866,"~/tooling/dates.txt"
+-'  7  22  ~/tooling/dates.txt
+|4,39,7,22,1714366841,"~/tooling/dates.txt"
+-'  7  22  ~/tooling/dates.txt
+|4,39,7,22,1714366841,"~/tooling/dates.txt"
+-'  7  22  ~/tooling/dates.txt
+|4,39,7,22,1714366841,"~/tooling/dates.txt"
+-'  7  22  ~/tooling/dates.txt
+|4,39,7,22,1714366841,"~/tooling/dates.txt"
+-'  23  0  ~/tooling/dates.txt
+|4,39,23,0,1714366768,"~/tooling/dates.txt"
+-'  24  0  ~/tooling/dates.txt
+|4,39,24,0,1714366768,"~/tooling/dates.txt"
+-'  21  0  ~/tooling/dates.txt
+|4,39,21,0,1714366768,"~/tooling/dates.txt"
+-'  23  0  ~/tooling/dates.txt
+|4,39,23,0,1714366768,"~/tooling/dates.txt"
+-'  24  0  ~/tooling/dates.txt
+|4,39,24,0,1714366768,"~/tooling/dates.txt"
+-'  21  0  ~/tooling/dates.txt
+|4,39,21,0,1714366768,"~/tooling/dates.txt"
+-'  23  0  ~/tooling/dates.txt
+|4,39,23,0,1714366768,"~/tooling/dates.txt"
+-'  24  0  ~/tooling/dates.txt
+|4,39,24,0,1714366768,"~/tooling/dates.txt"
+-'  21  0  ~/tooling/dates.txt
+|4,39,21,0,1714366768,"~/tooling/dates.txt"
+-'  23  0  ~/tooling/dates.txt
+|4,39,23,0,1714366768,"~/tooling/dates.txt"
+-'  24  0  ~/tooling/dates.txt
+|4,39,24,0,1714366768,"~/tooling/dates.txt"
+-'  21  0  ~/tooling/dates.txt
+|4,39,21,0,1714366768,"~/tooling/dates.txt"
+-'  15  0  ~/tooling/dates.txt
+|4,39,15,0,1714366767,"~/tooling/dates.txt"
+-'  12  0  ~/tooling/dates.txt
+|4,39,12,0,1714366767,"~/tooling/dates.txt"
+-'  15  0  ~/tooling/dates.txt
+|4,39,15,0,1714366767,"~/tooling/dates.txt"
+-'  12  0  ~/tooling/dates.txt
+|4,39,12,0,1714366767,"~/tooling/dates.txt"
+-'  15  0  ~/tooling/dates.txt
+|4,39,15,0,1714366767,"~/tooling/dates.txt"
+-'  12  0  ~/tooling/dates.txt
+|4,39,12,0,1714366767,"~/tooling/dates.txt"
+-'  15  0  ~/tooling/dates.txt
+|4,39,15,0,1714366767,"~/tooling/dates.txt"
+-'  12  0  ~/tooling/dates.txt
+|4,39,12,0,1714366767,"~/tooling/dates.txt"
+-'  5  0  ~/tooling/dates.txt
+|4,39,5,0,1714366742,"~/tooling/dates.txt"
+-'  5  0  ~/tooling/dates.txt
+|4,39,5,0,1714366742,"~/tooling/dates.txt"
+-'  5  0  ~/tooling/dates.txt
+|4,39,5,0,1714366742,"~/tooling/dates.txt"
+-'  5  0  ~/tooling/dates.txt
+|4,39,5,0,1714366742,"~/tooling/dates.txt"
+-'  16  15  ~/tooling/dates.txt
+|4,39,16,15,1714366382,"~/tooling/dates.txt"
+-'  16  15  ~/tooling/dates.txt
+|4,39,16,15,1714366382,"~/tooling/dates.txt"
+-'  16  15  ~/tooling/dates.txt
+|4,39,16,15,1714366382,"~/tooling/dates.txt"
+-'  16  15  ~/tooling/dates.txt
+|4,39,16,15,1714366382,"~/tooling/dates.txt"
+-'  7  15  ~/tooling/dates.txt
+|4,39,7,15,1714366382,"~/tooling/dates.txt"
+-'  10  27  ~/tooling/dates.txt
+|4,39,10,27,1714366365,"~/tooling/dates.txt"
+-'  10  27  ~/tooling/dates.txt
+|4,39,10,27,1714366365,"~/tooling/dates.txt"
+-'  10  27  ~/tooling/dates.txt
+|4,39,10,27,1714366365,"~/tooling/dates.txt"
+-'  10  27  ~/tooling/dates.txt
+|4,39,10,27,1714366365,"~/tooling/dates.txt"
+-'  10  27  ~/tooling/dates.txt
+|4,39,10,27,1714366365,"~/tooling/dates.txt"
+-'  1  22  ~/tooling/dates.txt
+|4,39,1,22,1714366354,"~/tooling/dates.txt"
+-'  1  22  ~/tooling/dates.txt
+|4,39,1,22,1714366354,"~/tooling/dates.txt"
+-'  1  22  ~/tooling/dates.txt
+|4,39,1,22,1714366354,"~/tooling/dates.txt"
+-'  1  22  ~/tooling/dates.txt
+|4,39,1,22,1714366354,"~/tooling/dates.txt"
+-'  1  22  ~/tooling/dates.txt
+|4,39,1,22,1714366354,"~/tooling/dates.txt"
+-'  1  22  ~/tooling/dates.txt
+|4,39,1,22,1714366347,"~/tooling/dates.txt"
+-'  1  22  ~/tooling/dates.txt
+|4,39,1,22,1714366338,"~/tooling/dates.txt"
+-'  3  33  ~/tooling/dates.txt
+|4,39,3,33,1714366299,"~/tooling/dates.txt"
+-'  3  33  ~/tooling/dates.txt
+|4,39,3,33,1714366299,"~/tooling/dates.txt"
+-'  3  33  ~/tooling/dates.txt
+|4,39,3,33,1714366299,"~/tooling/dates.txt"
+-'  3  33  ~/tooling/dates.txt
+|4,39,3,33,1714366299,"~/tooling/dates.txt"
+-'  3  33  ~/tooling/dates.txt
+|4,39,3,33,1714366299,"~/tooling/dates.txt"
+-'  3  33  ~/tooling/dates.txt
+|4,39,3,33,1714366299,"~/tooling/dates.txt"
+-'  3  33  ~/tooling/dates.txt
+|4,39,3,33,1714366299,"~/tooling/dates.txt"
+-'  1  33  ~/tooling/dates.txt
+|4,39,1,33,1714366299,"~/tooling/dates.txt"
+-'  1  0  ~/tooling/dates.txt
+|4,39,1,0,1714366286,"~/tooling/dates.txt"
+-'  5  47  ~/tooling/bash-guides.txt
+|4,39,5,47,1714365701,"~/tooling/bash-guides.txt"
+-'  5  47  ~/tooling/bash-guides.txt
+|4,39,5,47,1714365701,"~/tooling/bash-guides.txt"
+-'  5  47  ~/tooling/bash-guides.txt
+|4,39,5,47,1714365701,"~/tooling/bash-guides.txt"
+-'  5  47  ~/tooling/bash-guides.txt
+|4,39,5,47,1714365701,"~/tooling/bash-guides.txt"
+-'  5  47  ~/tooling/bash-guides.txt
+|4,39,5,47,1714365701,"~/tooling/bash-guides.txt"
+-'  5  47  ~/tooling/bash-guides.txt
+|4,39,5,47,1714365701,"~/tooling/bash-guides.txt"
+-'  5  47  ~/tooling/bash-guides.txt
+|4,39,5,47,1714365701,"~/tooling/bash-guides.txt"
+-'  5  47  ~/tooling/bash-guides.txt
+|4,39,5,47,1714365701,"~/tooling/bash-guides.txt"
+-'  5  47  ~/tooling/bash-guides.txt
+|4,39,5,47,1714365701,"~/tooling/bash-guides.txt"
+-'  5  47  ~/tooling/bash-guides.txt
+|4,39,5,47,1714365701,"~/tooling/bash-guides.txt"
+-'  5  47  ~/tooling/bash-guides.txt
+|4,39,5,47,1714365701,"~/tooling/bash-guides.txt"
+-'  1  0  ~/tooling/bash-guides.txt
+|4,39,1,0,1714365482,"~/tooling/bash-guides.txt"
+-'  1  0  ~/tooling/bash-guides.txt
+|4,39,1,0,1714365482,"~/tooling/bash-guides.txt"
+-'  1  0  ~/tooling/bash-guides.txt
+|4,39,1,0,1714365482,"~/tooling/bash-guides.txt"
+-'  1  0  ~/tooling/bash-guides.txt
+|4,39,1,0,1714365482,"~/tooling/bash-guides.txt"
+-'  1  0  ~/tooling/bash-guides.txt
+|4,39,1,0,1714365482,"~/tooling/bash-guides.txt"
+-'  1  0  ~/tooling/bash-guides.txt
+|4,39,1,0,1714365482,"~/tooling/bash-guides.txt"
+-'  1  0  ~/tooling/bash-guides.txt
+|4,39,1,0,1714365482,"~/tooling/bash-guides.txt"
+-'  1  0  ~/tooling/bash-guides.txt
+|4,39,1,0,1714365482,"~/tooling/bash-guides.txt"
+-'  1  0  ~/tooling/bash-guides.txt
+|4,39,1,0,1714365482,"~/tooling/bash-guides.txt"
+-'  1  0  ~/tooling/bash-guides.txt
+|4,39,1,0,1714365482,"~/tooling/bash-guides.txt"
 
 # Buffer list:
-%~/bash/gh-test.bash	1	0
+%~/tooling/redirection-cheatsheet.md	2	67
 
 # History of marks within files (newest to oldest):
+
+> ~/tooling/redirection-cheatsheet.md
+	*	1714367410	0
+	"	2	67
+	^	2	68
+	.	2	67
+	+	4	29
+	+	4	89
+	+	4	0
+	+	1	0
+	+	3	0
+	+	2	67
+
+> ~/tooling/dates.txt
+	*	1714367110	0
+	"	26	0
+	^	1	0
+	.	1	0
+	+	13	29
+	+	18	27
+	+	8	0
+	+	5	22
+	+	17	0
+	+	16	15
+	+	22	15
+	+	23	0
+	+	2	38
+	+	6	10
+	+	7	17
+	+	24	0
+	+	26	0
+	+	3	0
+	+	5	0
+	+	7	0
+	+	5	49
+	+	12	0
+	+	15	0
+	+	18	0
+	+	21	0
+	+	24	0
+	+	12	2
+	+	15	2
+	+	18	2
+	+	21	2
+	+	24	2
+	+	4	40
+	+	7	5
+	+	6	19
+	+	5	19
+	+	4	19
+	+	18	0
+	+	20	0
+	+	18	0
+	+	9	0
+	+	1	0
+
+> ~/tooling/bash-guides.txt
+	*	1714365656	0
+	"	5	47
+	^	5	48
+	.	5	47
+	+	9	29
+	+	5	47
+
+> ~/bash/cron-run.bash
+	*	1714334548	0
+	"	30	9
+	^	41	27
+	.	41	13
+	+	34	81
+	+	42	0
+	+	33	0
+	+	5	20
+	+	7	22
+	+	9	22
+	+	11	22
+	+	13	22
+	+	15	22
+	+	17	22
+	+	19	22
+	+	21	22
+	+	33	38
+	+	42	0
+	+	41	13
+
+> /tmp/crontab.r7Bmnj/crontab
+	*	1714333870	0
+	"	34	0
+
+> ~/tooling/cron-concerns.txt
+	*	1714333862	0
+	"	102	4
+	^	3	50
+	.	3	50
+	+	74	18
+	+	75	18
+	+	76	22
+	+	77	16
+	+	78	18
+	+	79	18
+	+	80	18
+	+	81	19
+	+	82	19
+	+	83	17
+	+	84	18
+	+	85	18
+	+	86	21
+	+	87	19
+	+	88	16
+	+	89	20
+	+	90	21
+	+	91	18
+	+	91	21
+	+	91	16
+	+	91	20
+	+	91	21
+	+	91	0
+	+	73	28
+	+	91	0
+	+	51	46
+	+	48	15
+	+	49	0
+	+	52	0
+	+	53	46
+	+	54	0
+	+	55	71
+	+	56	74
+	+	56	0
+	+	56	104
+	+	56	0
+	+	59	74
+	+	61	0
+	+	60	11
+	+	61	0
+	+	47	0
+	+	46	0
+	+	62	0
+	+	63	0
+	+	35	44
+	+	43	5
+	+	42	66
+	+	44	0
+	+	40	0
+	+	44	40
+	+	34	0
+	+	37	0
+	+	36	10
+	+	35	0
+	+	36	0
+	+	38	14
+	+	44	35
+	+	35	0
+	+	36	0
+	+	7	20
+	+	9	45
+	+	32	0
+	+	33	0
+	+	7	0
+	+	6	0
+	+	13	10
+	+	17	27
+	+	13	18
+	+	18	2
+	+	12	0
+	+	11	79
+	+	124	79
+	+	16	34
+	+	17	33
+	+	16	132
+	+	15	9
+	+	16	11
+	+	17	11
+	+	15	11
+	+	16	60
+	+	27	27
+	+	26	2
+	+	27	0
+	+	26	0
+	+	27	22
+	+	29	26
+	+	24	3
+	+	29	0
+	+	26	0
+	+	31	3
+	+	2	39
+	+	5	79
+	+	122	1
+	+	124	0
+	+	123	0
+	+	122	79
+	+	5	79
+	+	1	12
+	+	2	50
+	+	3	50
+
+> /tmp/crontab.0oY5JO/crontab
+	*	1714332807	0
+	"	1	0
 
 > ~/bash/gh-test.bash
 	*	1714332785	0
@@ -8368,112 +8624,6 @@ $
 	.	1	10
 	+	2	11
 	+	1	10
-
-> ~/tooling/cron-concerns.txt
-	*	1714332729	0
-	"	26	3
-	^	26	4
-	.	26	3
-	+	61	17
-	+	62	14
-	+	63	13
-	+	64	15
-	+	125	2
-	+	121	29
-	+	123	0
-	+	65	32
-	+	66	8
-	+	62	78
-	+	69	18
-	+	70	18
-	+	71	22
-	+	72	16
-	+	73	18
-	+	74	18
-	+	75	18
-	+	76	19
-	+	77	19
-	+	78	17
-	+	79	18
-	+	80	18
-	+	81	21
-	+	82	19
-	+	83	16
-	+	84	20
-	+	85	21
-	+	86	18
-	+	86	21
-	+	86	16
-	+	86	20
-	+	86	21
-	+	86	0
-	+	68	28
-	+	86	0
-	+	46	46
-	+	43	15
-	+	44	0
-	+	47	0
-	+	48	46
-	+	49	0
-	+	50	71
-	+	51	74
-	+	51	0
-	+	51	104
-	+	51	0
-	+	54	74
-	+	56	0
-	+	55	11
-	+	56	0
-	+	42	0
-	+	41	0
-	+	57	0
-	+	58	0
-	+	30	44
-	+	38	5
-	+	37	66
-	+	39	0
-	+	35	0
-	+	39	40
-	+	29	0
-	+	32	0
-	+	31	10
-	+	30	0
-	+	31	0
-	+	33	14
-	+	39	35
-	+	30	0
-	+	31	0
-	+	2	20
-	+	4	45
-	+	27	0
-	+	28	0
-	+	2	0
-	+	1	0
-	+	8	10
-	+	12	27
-	+	8	18
-	+	13	2
-	+	7	0
-	+	6	79
-	+	119	79
-	+	11	34
-	+	12	33
-	+	11	132
-	+	10	9
-	+	11	11
-	+	12	11
-	+	10	11
-	+	11	60
-	+	22	27
-	+	21	2
-	+	22	0
-	+	21	0
-	+	22	22
-	+	24	26
-	+	19	3
-	+	24	0
-	+	21	0
-	+	26	3
 
 > /tmp/crontab.cDPt2F/crontab
 	*	1714329553	0
@@ -8525,13 +8675,6 @@ $
 	^	32	58
 	.	32	57
 	+	32	57
-
-> ~/bash/cron-run.bash
-	*	1714325932	0
-	"	1	0
-	^	34	82
-	.	34	81
-	+	34	81
 
 > ~/bash/logs/pytest-date.log
 	*	1714325290	0
