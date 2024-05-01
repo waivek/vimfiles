@@ -11,17 +11,111 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/\(def\|class\)\s\+\w*log
+~MSle0~/\C\<allow_loop\>
 
 # Last Substitute Search Pattern:
 ~MSle0&:
 
 # Last Substitute String:
-$
+$ 
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1714453135,,"q"
+|2,0,1714560976,,"q"
+:MRU 2:pyproject.toml
+|2,0,1714560970,,"MRU 2:pyproject.toml"
+:MRU pyr
+|2,0,1714560968,,"MRU pyr"
+:MRU bas
+|2,0,1714560830,,"MRU bas"
+:q!
+|2,0,1714560567,,"q!"
+:20
+|2,0,1714560537,,"20"
+:MRU test_tas
+|2,0,1714560534,,"MRU test_tas"
+:e test.py
+|2,0,1714560530,,"e test.py"
+:28
+|2,0,1714560504,,"28"
+:18
+|2,0,1714560464,,"18"
+:enew
+|2,0,1714560461,,"enew"
+:MRU download_wo
+|2,0,1714560459,,"MRU download_wo"
+:e pyproject.toml
+|2,0,1714560175,,"e pyproject.toml"
+:26
+|2,0,1714560118,,"26"
+:MRU refre
+|2,0,1714560117,,"MRU refre"
+:MRU hat
+|2,0,1714560114,,"MRU hat"
+:qa!
+|2,0,1714559432,,"qa!"
+:qa
+|2,0,1714559429,,"qa"
+:121
+|2,0,1714559313,,"121"
+:e hateoas-api.py
+|2,0,1714559312,,"e hateoas-api.py"
+:8
+|2,0,1714559275,,"8"
+:e dbutils.py
+|2,0,1714559273,,"e dbutils.py"
+:47
+|2,0,1714559260,,"47"
+:e Types.py
+|2,0,1714559257,,"e Types.py"
+:MRU ha
+|2,0,1714559248,,"MRU ha"
+:747
+|2,0,1714558343,,"747"
+:MRU 
+|2,0,1714558341,,"MRU "
+:CocList diagnostics
+|2,0,1714557746,,"CocList diagnostics"
+:MRU hateo
+|2,0,1714557735,,"MRU hateo"
+:Rename pyproject.toml
+|2,0,1714556970,,"Rename pyproject.toml"
+:MRU ali
+|2,0,1714556383,,"MRU ali"
+:SQL
+|2,0,1714485036,,"SQL"
+:SQLJoin
+|2,0,1714485023,,"SQLJoin"
+:e tasks_test.sql
+|2,0,1714485011,,"e tasks_test.sql"
+:e testfiles/
+|2,0,1714485009,,"e testfiles/"
+:e populate_test_tasks.py
+|2,0,1714485002,,"e populate_test_tasks.py"
+:e templates/
+|2,0,1714484866,,"e templates/"
+:pwd
+|2,0,1714484252,,"pwd"
+:Rename tasks_test.sql
+|2,0,1714484167,,"Rename tasks_test.sql"
+:R
+|2,0,1714484155,,"R"
+:Rename test.sql
+|2,0,1714484087,,"Rename test.sql"
+:term python % loop
+|2,0,1714464523,,"term python % loop"
+:bd!
+|2,0,1714464518,,"bd!"
+:e!
+|2,0,1714464448,,"e!"
+:e
+|2,0,1714464446,,"e"
+:term
+|2,0,1714464312,,"term"
+:!python 
+|2,0,1714464296,,"!python "
+:e ~/.config/bindings.inputrc
+|2,0,1714453335,,"e ~/.config/bindings.inputrc"
 :e requirements.txt
 |2,0,1714453129,,"e requirements.txt"
 :b!# | bd! #
@@ -32,22 +126,16 @@ $
 |2,0,1714452489,,"MRU log"
 :Rename logtest.py
 |2,0,1714452426,,"Rename logtest.py"
-:qa
-|2,0,1714452364,,"qa"
 :e logging.py
 |2,0,1714451996,,"e logging.py"
 :set nonumber
 |2,0,1714451828,,"set nonumber"
 :MRU 2:refresh_downloads_table.py
 |2,0,1714427180,,"MRU 2:refresh_downloads_table.py"
-:q!
-|2,0,1714426582,,"q!"
 :w
 |2,0,1714425216,,"w"
 :MRU 6:refresh_downloads_table.py
 |2,0,1714413859,,"MRU 6:refresh_downloads_table.py"
-:e
-|2,0,1714413488,,"e"
 :e /tmp/refresh_downloads_table.lock
 |2,0,1714413486,,"e /tmp/refresh_downloads_table.lock"
 :e ~/tmp/*.lock
@@ -62,10 +150,6 @@ $
 |2,0,1714389925,,"e download_worker.py"
 :e download_portionurl.py
 |2,0,1714387401,,"e download_portionurl.py"
-:term
-|2,0,1714387257,,"term"
-:CocList diagnostics
-|2,0,1714387069,,"CocList diagnostics"
 :VD data/download_workers.db
 |2,0,1714386317,,"VD data/download_workers.db"
 :set number
@@ -118,8 +202,6 @@ $
 |2,0,1714307241,,"e /bin/sh"
 :normal! 80p
 |2,0,1714306317,,"normal! 80p"
-:MRU 
-|2,0,1714301320,,"MRU "
 :MRU c
 |2,0,1714301246,,"MRU c"
 :s/://g
@@ -128,8 +210,6 @@ $
 |2,0,1714292180,,"'<,'>join!"
 :'<,'>joiN!
 |2,0,1714292177,,"'<,'>joiN!"
-:enew
-|2,0,1714292168,,"enew"
 :MRU 2:cron-concerns.txt
 |2,0,1714246040,,"MRU 2:cron-concerns.txt"
 :set 
@@ -156,8 +236,6 @@ $
 |2,0,1714213551,,"ec"
 :MRU 10:refresh_downloads_table.py
 |2,0,1714212958,,"MRU 10:refresh_downloads_table.py"
-:MRU bas
-|2,0,1714212199,,"MRU bas"
 :e refresh_downloads_table.py
 |2,0,1714194552,,"e refresh_downloads_table.py"
 :GFiles
@@ -168,14 +246,10 @@ $
 |2,0,1714156811,,"b ~/hateoas/hateoas-api.py"
 :b ~/hateoas/download_portionurl.py
 |2,0,1714156805,,"b ~/hateoas/download_portionurl.py"
-:MRU ha
-|2,0,1714155436,,"MRU ha"
 :MRU Typ
 |2,0,1714155388,,"MRU Typ"
 :SQLSplit
 |2,0,1714153978,,"SQLSplit"
-:bd!
-|2,0,1714141815,,"bd!"
 :'<,'>v/?/d
 |2,0,1714141543,,"'<,'>v/?/d"
 :g/?/d
@@ -192,8 +266,6 @@ $
 |2,0,1714141487,,"e input.py"
 :Template
 |2,0,1714137290,,"Template"
-:e hateoas-api.py
-|2,0,1714137280,,"e hateoas-api.py"
 :CocConfig
 |2,0,1714116276,,"CocConfig"
 :e pyrightconfig.json
@@ -206,8 +278,6 @@ $
 |2,0,1714110629,,"MRU or"
 :CocRestart
 |2,0,1714110627,,"CocRestart"
-:SQLJoin
-|2,0,1714109135,,"SQLJoin"
 :%s/,\s*\zs\(FOREIGN\|UNIQUE\)/\r    \0/g
 |2,0,1714109035,,"%s/,\\s*\\zs\\(FOREIGN\\|UNIQUE\\)/\\r    \\0/g"
 :%s/,\s*\zs\(FOREIGN\|UNIQUE\)/\r    \0
@@ -230,12 +300,8 @@ $
 |2,0,1714108852,,"MRU sqljoi"
 :Ftplugin
 |2,0,1714108845,,"Ftplugin"
-:e Types.py
-|2,0,1714108468,,"e Types.py"
 :grep -g '*.py' sqlmodel
 |2,0,1714108382,,"grep -g '*.py' sqlmodel"
-:e!
-|2,0,1714108217,,"e!"
 :e ~/tooling/typescript-goals.txt
 |2,0,1714108020,,"e ~/tooling/typescript-goals.txt"
 :e ~/Too
@@ -264,8 +330,6 @@ $
 |2,0,1714047359,,"e create-databases.py"
 :ter
 |2,0,1714047290,,"ter"
-:e dbutils.py
-|2,0,1714047263,,"e dbutils.py"
 :e con
 |2,0,1714047261,,"e con"
 :e data/main.db
@@ -286,8 +350,6 @@ $
 |2,0,1714043116,,"Rename"
 :!start everything -path . run
 |2,0,1714041379,,"!start everything -path . run"
-:MRU hat
-|2,0,1714040858,,"MRU hat"
 :MRU ide
 |2,0,1714037124,,"MRU ide"
 :S
@@ -356,8 +418,6 @@ $
 |2,0,1714025262,,"e test-lastrowid.py"
 :cd .
 |2,0,1714024714,,"cd ."
-:pwd
-|2,0,1714024706,,"pwd"
 :echo pwd
 |2,0,1714024704,,"echo pwd"
 :e hateoas/
@@ -574,8 +634,6 @@ $
 |2,0,1713876729,,"h plugged"
 :MRU h
 |2,0,1713876717,,"MRU h"
-:MRU hateo
-|2,0,1713853128,,"MRU hateo"
 :MRU star
 |2,0,1713852850,,"MRU star"
 :VD data//main.db
@@ -668,8 +726,6 @@ $
 |2,0,1713790018,,"%sort /^\\S*\\s*\\zs/ n"
 :%
 |2,0,1713789994,,"%"
-:qa!
-|2,0,1713776876,,"qa!"
 :diffthis
 |2,0,1713776866,,"diffthis"
 :e shopt.current
@@ -730,8 +786,6 @@ $
 |2,0,1713767790,,"MRU giti"
 :MRU al
 |2,0,1713760121,,"MRU al"
-:MRU ali
-|2,0,1713759993,,"MRU ali"
 :e sql_checklist.txt
 |2,0,1713758803,,"e sql_checklist.txt"
 :MRU pyt
@@ -2232,8 +2286,6 @@ $
 |2,0,1706005876,,"e Button.vue"
 :FIND Por
 |2,0,1706005768,,"FIND Por"
-:20
-|2,0,1705978544,,"20"
 :FIND Video.vue
 |2,0,1705978209,,"FIND Video.vue"
 :F
@@ -2244,8 +2296,6 @@ $
 |2,0,1705977365,,"MRU 1:api.py"
 :b YT
 |2,0,1705964697,,"b YT"
-:28
-|2,0,1705964227,,"28"
 :b Twi
 |2,0,1705964225,,"b Twi"
 :b Embed
@@ -3348,8 +3398,6 @@ $
 |2,0,1693293526,,"Old"
 :term ++shell python
 |2,0,1693293490,,"term ++shell python"
-:e test.py
-|2,0,1693293368,,"e test.py"
 :MRU 3:timed_utils.py
 |2,0,1693293322,,"MRU 3:timed_utils.py"
 :MRU pyj
@@ -3998,8 +4046,6 @@ $
 |2,0,1692460677,,"l:w"
 :e User.vue
 |2,0,1692460600,,"e User.vue"
-:e pyproject.toml
-|2,0,1692459148,,"e pyproject.toml"
 :MRU fu
 |2,0,1692449910,,"MRU fu"
 :call CocActionAsync(("codeAction")
@@ -4736,8 +4782,6 @@ $
 |2,0,1691107804,,"b json/ytjs_all_video_ids.json"
 :!start everything -path . wai
 |2,0,1691102761,,"!start everything -path . wai"
-:26
-|2,0,1691099884,,"26"
 :e tmp/ut.js
 |2,0,1691096811,,"e tmp/ut.js"
 :e test_upsert.py
@@ -5700,6 +5744,18 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/\(def\|class\)\s\+\w*elements
+|2,1,1714557737,47,"\\(def\\|class\\)\\s\\+\\w*elements"
+? \s\{2,}
+|2,1,1714485023,,"\\s\\{2,}"
+? \s*,
+|2,1,1714485023,,"\\s*,"
+? CREATE TABLE
+|2,1,1714485023,,"CREATE TABLE"
+? @$
+|2,1,1714484154,,"@$"
+?/bind
+|2,1,1714453306,47,"bind"
 ?/\(def\|class\)\s\+\w*log
 |2,1,1714451818,47,"\\(def\\|class\\)\\s\\+\\w*log"
 ?/Cleaning
@@ -5748,8 +5804,6 @@ $
 |2,1,1714221523,47,"%w"
 ?/-w
 |2,1,1714221508,47,"-w"
-? @$
-|2,1,1714221134,,"@$"
 ?/rel2abs
 |2,1,1714211334,47,"rel2abs"
 ?/selected urls
@@ -5772,12 +5826,6 @@ $
 |2,1,1714110704,47,"pyright"
 ?/Sequence
 |2,1,1714110214,47,"Sequence"
-? \s\{2,}
-|2,1,1714109135,,"\\s\\{2,}"
-? \s*,
-|2,1,1714109135,,"\\s*,"
-? CREATE TABLE
-|2,1,1714109135,,"CREATE TABLE"
 ? CREATE.*\zs)\ze\s*;\s*$
 |2,1,1714108819,,"CREATE.*\\zs)\\ze\\s*;\\s*$"
 ?/downloading
@@ -6974,8 +7022,6 @@ $
 |2,1,1693172896,47,"completion"
 ?/comp
 |2,1,1693172890,47,"comp"
-?/bind
-|2,1,1693160507,47,"bind"
 ?/complete
 |2,1,1693132938,47,"complete"
 ?/ignore
@@ -7952,6 +7998,8 @@ $
 |2,2,1688309303,,"v:oldfiles"
 
 # Input Line History (newest to oldest):
+@dict
+|2,3,1714484932,,"dict"
 @div>
 |2,3,1714193215,,"div>"
 @div class="wide">
@@ -8059,59 +8107,38 @@ $
 
 # Registers:
 "0	CHAR	0
-	log
-|3,0,0,0,1,0,1714452679,"log"
+	disable
+|3,0,0,0,1,0,1714560609,"disable"
 ""1	LINE	0
-	
-	loguru
-|3,1,1,1,2,0,1714453130,"","loguru"
+	# --ignore S --ignore RUF --ignore INP --ignore PLW
+|3,1,1,1,1,0,1714560691,"# --ignore S --ignore RUF --ignore INP --ignore PLW"
 "2	LINE	0
-	from loguru import logger
-	import sys
-|3,0,2,1,2,0,1714453126,"from loguru import logger","import sys"
+	ignore = ["S", "RUF", "INP", "PLW"]
+|3,0,2,1,1,0,1714560622,"ignore = [\"S\", \"RUF\", \"INP\", \"PLW\"]"
 "3	LINE	0
-	def log(message, *args):
-	    logger.info(message, *args)
-	
-	def log_error(message, *args):
-	    logger.error(message, *args)
-	
-	def foo():
-	    1/0
-	    logger.info("Hello, World!")
-	
-	foo()
-|3,0,3,1,11,0,1714453126,"def log(message, *args):","    logger.info(message, *args)","","def log_error(message, *args):","    logger.error(message, *args)","","def foo():","    1/0","    logger.info(\"Hello, World!\")","","foo()"
+	# E501,D103,ANN,F401,PTH,D,T201,Q000,ERA001,I001,ARG001,N806
+|3,0,3,1,1,0,1714559947,"# E501,D103,ANN,F401,PTH,D,T201,Q000,ERA001,I001,ARG001,N806"
 "4	LINE	0
-	logger.remove()
-	
-|3,0,4,1,2,0,1714453123,"logger.remove()",""
+	while read -r line
+	do
+	    echo "Line: $line"
+	done
+|3,0,4,1,4,0,1714559768,"while read -r line","do","    echo \"Line: $line\"","done"
 "5	LINE	0
-	logger.add(sys.stdout, format="{time:%c %Z} | {level} | {file} {function} {message}")
-	logger.add(sys.stderr, format="{level} | {message}", level="ERROR")
-|3,0,5,1,2,0,1714453121,"logger.add(sys.stdout, format=\"{time:%c %Z} | {level} | {file} {function} {message}\")","logger.add(sys.stderr, format=\"{level} | {message}\", level=\"ERROR\")"
+	
+|3,0,5,1,1,0,1714559729,""
 "6	LINE	0
-	logger.
-|3,0,6,1,1,0,1714452476,"logger."
+	select = 'all'
+|3,0,6,1,1,0,1714557618,"select = 'all'"
 "7	LINE	0
-	import sys
-	
-	logger.add(sys.stdout, format="{time} {level} {file} {message}")
-	
-	def log(message, *args):
-	    logger.info(message, *args)
-	
-	def log_error(message, *args):
-	    logger.error(message, *args)
-	
-	log("Hello, World!")
-|3,0,7,1,11,0,1714452330,"import sys","","logger.add(sys.stdout, format=\"{time} {level} {file} {message}\")","","def log(message, *args):","    logger.info(message, *args)","","def log_error(message, *args):","    logger.error(message, *args)","","log(\"Hello, World!\")"
+	extend-unfixable = ["ISC"]
+|3,0,7,1,1,0,1714557581,"extend-unfixable = [\"ISC\"]"
 "8	LINE	0
-	logger.remove()
-|3,0,8,1,1,0,1714452309,"logger.remove()"
+	[lint]
+|3,0,8,1,1,0,1714556758,"[lint]"
 "9	LINE	0
-	            cleanup(None, None)
-|3,0,9,1,1,0,1714426075,"            cleanup(None, None)"
+	
+|3,0,9,1,1,0,1714556677,""
 "a	CHAR	0
 	Tabularize /-/l1c1l1c1l1
 |3,0,10,0,1,0,1714384337,"Tabularize /-/l1c1l1c1l1"
@@ -8150,443 +8177,303 @@ $
 |<"                <form method=\"POST\" action=\"/resume_download\">","                    <input type=\"hidden\" name=\"id\" value=\"{{ id }}\">","                    <input type=\"submit\" value=\"Resume\">","                </form>","                {% endif %}","                {% if status == 'downloading' %}","                <form method=\"POST\" action=\"/pause_download\">","                    <input type=\"hidden\" name=\"id\" value=\"{{ id }}\">",>61
 |<"                    <input type=\"submit\" value=\"Pause\">","                </form>","                {% endif %}","","            </li>","        {% endfor %}","    </ul>\"\"\", downloads=downloads)"
 "-	CHAR	0
-	| {file} {function}
-|3,0,36,0,1,0,1714452793,"| {file} {function}"
+	disable
+|3,0,36,0,1,0,1714560607,"disable"
 
 # File marks:
-'0  10  0  ~/hateoas/requirements.txt
-|4,48,10,0,1714453135,"~/hateoas/requirements.txt"
-'1  3  16  ~/hateoas/logging.py
-|4,49,3,16,1714452365,"~/hateoas/logging.py"
-'2  3  16  ~/hateoas/logging.py
-|4,50,3,16,1714452365,"~/hateoas/logging.py"
-'3  1  0  ~/hateoas/requirements.txt
-|4,51,1,0,1714452071,"~/hateoas/requirements.txt"
-'4  1  0  ~/hateoas/requirements.txt
-|4,52,1,0,1714452071,"~/hateoas/requirements.txt"
-'5  1  0  ~/hateoas/requirements.txt
-|4,53,1,0,1714452071,"~/hateoas/requirements.txt"
-'6  1  0  ~/hateoas/requirements.txt
-|4,54,1,0,1714452071,"~/hateoas/requirements.txt"
-'7  11  5  ~/hateoas/requirements.txt
-|4,55,11,5,1714452058,"~/hateoas/requirements.txt"
-'8  11  5  ~/hateoas/requirements.txt
-|4,56,11,5,1714452058,"~/hateoas/requirements.txt"
-'9  11  5  ~/hateoas/requirements.txt
-|4,57,11,5,1714452058,"~/hateoas/requirements.txt"
+'0  5  126  ~/pytest_concate/pyproject.toml
+|4,48,5,126,1714560976,"~/pytest_concate/pyproject.toml"
+'1  4  0  ~/pytest_concate/group_errors.bash
+|4,49,4,0,1714560834,"~/pytest_concate/group_errors.bash"
+'2  4  0  ~/pytest_concate/group_errors.bash
+|4,50,4,0,1714560834,"~/pytest_concate/group_errors.bash"
+'3  7  78  ~/pytest_concate/pyproject.toml
+|4,51,7,78,1714560754,"~/pytest_concate/pyproject.toml"
+'4  7  78  ~/pytest_concate/pyproject.toml
+|4,52,7,78,1714560754,"~/pytest_concate/pyproject.toml"
+'5  7  78  ~/pytest_concate/pyproject.toml
+|4,53,7,78,1714560754,"~/pytest_concate/pyproject.toml"
+'6  7  78  ~/pytest_concate/pyproject.toml
+|4,54,7,78,1714560754,"~/pytest_concate/pyproject.toml"
+'7  9  1  ~/pytest_concate/pyproject.toml
+|4,55,9,1,1714560683,"~/pytest_concate/pyproject.toml"
+'8  7  1  ~/pytest_concate/pyproject.toml
+|4,56,7,1,1714560683,"~/pytest_concate/pyproject.toml"
+'9  9  1  ~/pytest_concate/pyproject.toml
+|4,57,9,1,1714560683,"~/pytest_concate/pyproject.toml"
 
 # Jumplist (newest first):
--'  10  0  ~/hateoas/requirements.txt
-|4,39,10,0,1714453135,"~/hateoas/requirements.txt"
--'  1  0  ~/hateoas/requirements.txt
-|4,39,1,0,1714453129,"~/hateoas/requirements.txt"
--'  2  0  ~/hateoas/logtest.py
-|4,39,2,0,1714453129,"~/hateoas/logtest.py"
--'  3  39  ~/hateoas/logtest.py
-|4,39,3,39,1714452800,"~/hateoas/logtest.py"
--'  1  0  ~/hateoas/logtest.py
-|4,39,1,0,1714452430,"~/hateoas/logtest.py"
--'  3  16  ~/hateoas/logging.py
-|4,39,3,16,1714452426,"~/hateoas/logging.py"
--'  3  16  ~/hateoas/logging.py
-|4,39,3,16,1714452365,"~/hateoas/logging.py"
--'  4  0  ~/hateoas/logging.py
-|4,39,4,0,1714452310,"~/hateoas/logging.py"
--'  4  0  ~/hateoas/logging.py
-|4,39,4,0,1714452310,"~/hateoas/logging.py"
--'  1  0  ~/hateoas/logging.py
-|4,39,1,0,1714452103,"~/hateoas/logging.py"
--'  1  0  ~/hateoas/logging.py
-|4,39,1,0,1714452103,"~/hateoas/logging.py"
--'  1  0  ~/hateoas/requirements.txt
-|4,39,1,0,1714452071,"~/hateoas/requirements.txt"
--'  1  0  ~/hateoas/requirements.txt
-|4,39,1,0,1714452071,"~/hateoas/requirements.txt"
--'  11  5  ~/hateoas/requirements.txt
-|4,39,11,5,1714452058,"~/hateoas/requirements.txt"
--'  12  5  ~/hateoas/requirements.txt
-|4,39,12,5,1714452058,"~/hateoas/requirements.txt"
--'  12  5  ~/hateoas/requirements.txt
-|4,39,12,5,1714452058,"~/hateoas/requirements.txt"
--'  12  5  ~/hateoas/requirements.txt
-|4,39,12,5,1714452058,"~/hateoas/requirements.txt"
--'  1  0  ~/hateoas/requirements.txt
-|4,39,1,0,1714452000,"~/hateoas/requirements.txt"
--'  1  0  ~/hateoas/logging.py
-|4,39,1,0,1714451999,"~/hateoas/logging.py"
--'  1  0  ~/hateoas/logging.py
-|4,39,1,0,1714451999,"~/hateoas/logging.py"
--'  111  0  ~/hateoas/refresh_downloads_table.py
-|4,39,111,0,1714451996,"~/hateoas/refresh_downloads_table.py"
--'  111  0  ~/hateoas/refresh_downloads_table.py
-|4,39,111,0,1714451996,"~/hateoas/refresh_downloads_table.py"
--'  111  0  ~/hateoas/refresh_downloads_table.py
-|4,39,111,0,1714451996,"~/hateoas/refresh_downloads_table.py"
--'  111  0  ~/hateoas/refresh_downloads_table.py
-|4,39,111,0,1714451996,"~/hateoas/refresh_downloads_table.py"
+-'  5  126  ~/pytest_concate/pyproject.toml
+|4,39,5,126,1714560976,"~/pytest_concate/pyproject.toml"
+-'  1  0  ~/hateoas/pyrightconfig.json
+|4,39,1,0,1714560970,"~/hateoas/pyrightconfig.json"
+-'  4  0  ~/pytest_concate/group_errors.bash
+|4,39,4,0,1714560968,"~/pytest_concate/group_errors.bash"
+-'  4  0  ~/pytest_concate/group_errors.bash
+|4,39,4,0,1714560834,"~/pytest_concate/group_errors.bash"
+-'  1  0  ~/pytest_concate/group_errors.bash
+|4,39,1,0,1714560830,"~/pytest_concate/group_errors.bash"
+-'  1  0  ~/pytest_concate/group_errors.bash
+|4,39,1,0,1714560830,"~/pytest_concate/group_errors.bash"
+-'  7  78  ~/pytest_concate/pyproject.toml
+|4,39,7,78,1714560754,"~/pytest_concate/pyproject.toml"
+-'  7  78  ~/pytest_concate/pyproject.toml
+|4,39,7,78,1714560754,"~/pytest_concate/pyproject.toml"
+-'  7  78  ~/pytest_concate/pyproject.toml
+|4,39,7,78,1714560754,"~/pytest_concate/pyproject.toml"
+-'  9  1  ~/pytest_concate/pyproject.toml
+|4,39,9,1,1714560689,"~/pytest_concate/pyproject.toml"
+-'  9  1  ~/pytest_concate/pyproject.toml
+|4,39,9,1,1714560689,"~/pytest_concate/pyproject.toml"
+-'  9  1  ~/pytest_concate/pyproject.toml
+|4,39,9,1,1714560689,"~/pytest_concate/pyproject.toml"
+-'  7  1  ~/pytest_concate/pyproject.toml
+|4,39,7,1,1714560683,"~/pytest_concate/pyproject.toml"
+-'  7  6  ~/pytest_concate/pyproject.toml
+|4,39,7,6,1714560671,"~/pytest_concate/pyproject.toml"
+-'  6  11  ~/pytest_concate/pyproject.toml
+|4,39,6,11,1714560668,"~/pytest_concate/pyproject.toml"
+-'  6  11  ~/pytest_concate/pyproject.toml
+|4,39,6,11,1714560668,"~/pytest_concate/pyproject.toml"
+-'  6  11  ~/pytest_concate/pyproject.toml
+|4,39,6,11,1714560668,"~/pytest_concate/pyproject.toml"
+-'  6  11  ~/pytest_concate/pyproject.toml
+|4,39,6,11,1714560668,"~/pytest_concate/pyproject.toml"
+-'  10  5  ~/pytest_concate/pyproject.toml
+|4,39,10,5,1714560609,"~/pytest_concate/pyproject.toml"
+-'  8  5  ~/pytest_concate/pyproject.toml
+|4,39,8,5,1714560609,"~/pytest_concate/pyproject.toml"
+-'  10  5  ~/pytest_concate/pyproject.toml
+|4,39,10,5,1714560609,"~/pytest_concate/pyproject.toml"
+-'  8  5  ~/pytest_concate/pyproject.toml
+|4,39,8,5,1714560609,"~/pytest_concate/pyproject.toml"
+-'  10  5  ~/pytest_concate/pyproject.toml
+|4,39,10,5,1714560609,"~/pytest_concate/pyproject.toml"
+-'  8  5  ~/pytest_concate/pyproject.toml
+|4,39,8,5,1714560609,"~/pytest_concate/pyproject.toml"
+-'  8  5  ~/pytest_concate/pyproject.toml
+|4,39,8,5,1714560609,"~/pytest_concate/pyproject.toml"
+-'  7  5  ~/pytest_concate/pyproject.toml
+|4,39,7,5,1714560609,"~/pytest_concate/pyproject.toml"
+-'  7  35  ~/pytest_concate/pyproject.toml
+|4,39,7,35,1714560598,"~/pytest_concate/pyproject.toml"
+-'  1  0  ~/pytest_concate/pyproject.toml
+|4,39,1,0,1714560588,"~/pytest_concate/pyproject.toml"
+-'  1  0  ~/pytest_concate/pyproject.toml
+|4,39,1,0,1714560588,"~/pytest_concate/pyproject.toml"
+-'  1  0  ~/pytest_concate/pyproject.toml
+|4,39,1,0,1714560588,"~/pytest_concate/pyproject.toml"
+-'  1  0  ~/pytest_concate/pyproject.toml
+|4,39,1,0,1714560588,"~/pytest_concate/pyproject.toml"
+-'  1  0  ~/pytest_concate/pyproject.toml
+|4,39,1,0,1714560588,"~/pytest_concate/pyproject.toml"
+-'  1  0  ~/pytest_concate/pyproject.toml
+|4,39,1,0,1714560588,"~/pytest_concate/pyproject.toml"
+-'  1  0  ~/pytest_concate/pyproject.toml
+|4,39,1,0,1714560588,"~/pytest_concate/pyproject.toml"
+-'  1  0  ~/hateoas/download_worker.py
+|4,39,1,0,1714560461,"~/hateoas/download_worker.py"
+-'  1  0  ~/hateoas/download_worker.py
+|4,39,1,0,1714560461,"~/hateoas/download_worker.py"
+-'  1  0  ~/hateoas/download_worker.py
+|4,39,1,0,1714560461,"~/hateoas/download_worker.py"
+-'  1  0  ~/hateoas/download_worker.py
+|4,39,1,0,1714560461,"~/hateoas/download_worker.py"
+-'  1  0  ~/hateoas/download_worker.py
+|4,39,1,0,1714560461,"~/hateoas/download_worker.py"
+-'  1  0  ~/hateoas/download_worker.py
+|4,39,1,0,1714560461,"~/hateoas/download_worker.py"
+-'  1  0  ~/hateoas/download_worker.py
+|4,39,1,0,1714560461,"~/hateoas/download_worker.py"
+-'  1  0  ~/hateoas/download_worker.py
+|4,39,1,0,1714560461,"~/hateoas/download_worker.py"
+-'  11  10  ~/pytest_concate/pyproject.toml
+|4,39,11,10,1714560269,"~/pytest_concate/pyproject.toml"
+-'  11  10  ~/pytest_concate/pyproject.toml
+|4,39,11,10,1714560269,"~/pytest_concate/pyproject.toml"
+-'  11  10  ~/pytest_concate/pyproject.toml
+|4,39,11,10,1714560269,"~/pytest_concate/pyproject.toml"
+-'  9  10  ~/pytest_concate/pyproject.toml
+|4,39,9,10,1714560269,"~/pytest_concate/pyproject.toml"
+-'  9  10  ~/pytest_concate/pyproject.toml
+|4,39,9,10,1714560269,"~/pytest_concate/pyproject.toml"
+-'  9  10  ~/pytest_concate/pyproject.toml
+|4,39,9,10,1714560269,"~/pytest_concate/pyproject.toml"
+-'  9  10  ~/pytest_concate/pyproject.toml
+|4,39,9,10,1714560269,"~/pytest_concate/pyproject.toml"
+-'  7  10  ~/pytest_concate/pyproject.toml
+|4,39,7,10,1714560269,"~/pytest_concate/pyproject.toml"
+-'  7  10  ~/pytest_concate/pyproject.toml
+|4,39,7,10,1714560269,"~/pytest_concate/pyproject.toml"
+-'  7  0  ~/pytest_concate/pyproject.toml
+|4,39,7,0,1714560259,"~/pytest_concate/pyproject.toml"
+-'  1  0  ~/pytest_concate/pyproject.toml
+|4,39,1,0,1714560254,"~/pytest_concate/pyproject.toml"
+-'  1  0  ~/pytest_concate/pyproject.toml
+|4,39,1,0,1714560254,"~/pytest_concate/pyproject.toml"
+-'  1  0  ~/pytest_concate/pyproject.toml
+|4,39,1,0,1714560254,"~/pytest_concate/pyproject.toml"
+-'  5  114  ~/pytest_concate/pyproject.toml
+|4,39,5,114,1714560179,"~/pytest_concate/pyproject.toml"
+-'  5  114  ~/pytest_concate/pyproject.toml
+|4,39,5,114,1714560179,"~/pytest_concate/pyproject.toml"
+-'  5  114  ~/pytest_concate/pyproject.toml
+|4,39,5,114,1714560179,"~/pytest_concate/pyproject.toml"
+-'  5  114  ~/pytest_concate/pyproject.toml
+|4,39,5,114,1714560179,"~/pytest_concate/pyproject.toml"
+-'  5  114  ~/pytest_concate/pyproject.toml
+|4,39,5,114,1714560179,"~/pytest_concate/pyproject.toml"
+-'  5  114  ~/pytest_concate/pyproject.toml
+|4,39,5,114,1714560179,"~/pytest_concate/pyproject.toml"
+-'  5  114  ~/pytest_concate/pyproject.toml
+|4,39,5,114,1714560179,"~/pytest_concate/pyproject.toml"
+-'  5  114  ~/pytest_concate/pyproject.toml
+|4,39,5,114,1714560179,"~/pytest_concate/pyproject.toml"
+-'  5  114  ~/pytest_concate/pyproject.toml
+|4,39,5,114,1714560179,"~/pytest_concate/pyproject.toml"
+-'  5  114  ~/pytest_concate/pyproject.toml
+|4,39,5,114,1714560179,"~/pytest_concate/pyproject.toml"
+-'  1  0  ~/pytest_concate/pyproject.toml
+|4,39,1,0,1714560176,"~/pytest_concate/pyproject.toml"
+-'  26  4  ~/hateoas/refresh_downloads_table.py
+|4,39,26,4,1714560175,"~/hateoas/refresh_downloads_table.py"
+-'  26  4  ~/hateoas/refresh_downloads_table.py
+|4,39,26,4,1714560175,"~/hateoas/refresh_downloads_table.py"
+-'  26  4  ~/hateoas/refresh_downloads_table.py
+|4,39,26,4,1714560175,"~/hateoas/refresh_downloads_table.py"
+-'  26  4  ~/hateoas/refresh_downloads_table.py
+|4,39,26,4,1714560175,"~/hateoas/refresh_downloads_table.py"
+-'  26  4  ~/hateoas/refresh_downloads_table.py
+|4,39,26,4,1714560175,"~/hateoas/refresh_downloads_table.py"
+-'  26  4  ~/hateoas/refresh_downloads_table.py
+|4,39,26,4,1714560175,"~/hateoas/refresh_downloads_table.py"
+-'  26  4  ~/hateoas/refresh_downloads_table.py
+|4,39,26,4,1714560175,"~/hateoas/refresh_downloads_table.py"
+-'  26  4  ~/hateoas/refresh_downloads_table.py
+|4,39,26,4,1714560175,"~/hateoas/refresh_downloads_table.py"
+-'  26  4  ~/hateoas/refresh_downloads_table.py
+|4,39,26,4,1714560175,"~/hateoas/refresh_downloads_table.py"
+-'  26  4  ~/hateoas/refresh_downloads_table.py
+|4,39,26,4,1714560175,"~/hateoas/refresh_downloads_table.py"
+-'  26  4  ~/hateoas/refresh_downloads_table.py
+|4,39,26,4,1714560175,"~/hateoas/refresh_downloads_table.py"
+-'  26  4  ~/hateoas/refresh_downloads_table.py
+|4,39,26,4,1714560122,"~/hateoas/refresh_downloads_table.py"
 -'  1  0  ~/hateoas/refresh_downloads_table.py
-|4,39,1,0,1714451818,"~/hateoas/refresh_downloads_table.py"
+|4,39,1,0,1714560117,"~/hateoas/refresh_downloads_table.py"
 -'  1  0  ~/hateoas/refresh_downloads_table.py
-|4,39,1,0,1714451818,"~/hateoas/refresh_downloads_table.py"
+|4,39,1,0,1714560117,"~/hateoas/refresh_downloads_table.py"
 -'  1  0  ~/hateoas/refresh_downloads_table.py
-|4,39,1,0,1714451818,"~/hateoas/refresh_downloads_table.py"
+|4,39,1,0,1714560117,"~/hateoas/refresh_downloads_table.py"
 -'  1  0  ~/hateoas/refresh_downloads_table.py
-|4,39,1,0,1714451818,"~/hateoas/refresh_downloads_table.py"
--'  70  0  ~/hateoas/refresh_downloads_table.py
-|4,39,70,0,1714451817,"~/hateoas/refresh_downloads_table.py"
--'  70  0  ~/hateoas/refresh_downloads_table.py
-|4,39,70,0,1714451817,"~/hateoas/refresh_downloads_table.py"
--'  70  0  ~/hateoas/refresh_downloads_table.py
-|4,39,70,0,1714451817,"~/hateoas/refresh_downloads_table.py"
--'  70  0  ~/hateoas/refresh_downloads_table.py
-|4,39,70,0,1714451817,"~/hateoas/refresh_downloads_table.py"
--'  1  0  /tmp/crontab.irksZU/crontab
-|4,39,1,0,1714427180,"/tmp/crontab.irksZU/crontab"
--'  1  0  /tmp/crontab.irksZU/crontab
-|4,39,1,0,1714427180,"/tmp/crontab.irksZU/crontab"
--'  1  0  /tmp/crontab.irksZU/crontab
-|4,39,1,0,1714427180,"/tmp/crontab.irksZU/crontab"
--'  1  0  /tmp/crontab.irksZU/crontab
-|4,39,1,0,1714427180,"/tmp/crontab.irksZU/crontab"
--'  1  0  /tmp/crontab.irksZU/crontab
-|4,39,1,0,1714426821,"/tmp/crontab.irksZU/crontab"
--'  104  12  ~/hateoas/refresh_downloads_table.py
-|4,39,104,12,1714426077,"~/hateoas/refresh_downloads_table.py"
--'  104  12  ~/hateoas/refresh_downloads_table.py
-|4,39,104,12,1714426077,"~/hateoas/refresh_downloads_table.py"
--'  104  12  ~/hateoas/refresh_downloads_table.py
-|4,39,104,12,1714426077,"~/hateoas/refresh_downloads_table.py"
--'  104  12  ~/hateoas/refresh_downloads_table.py
-|4,39,104,12,1714426077,"~/hateoas/refresh_downloads_table.py"
--'  104  12  ~/hateoas/refresh_downloads_table.py
-|4,39,104,12,1714426077,"~/hateoas/refresh_downloads_table.py"
--'  104  12  ~/hateoas/refresh_downloads_table.py
-|4,39,104,12,1714426077,"~/hateoas/refresh_downloads_table.py"
--'  104  12  ~/hateoas/refresh_downloads_table.py
-|4,39,104,12,1714426077,"~/hateoas/refresh_downloads_table.py"
--'  104  12  ~/hateoas/refresh_downloads_table.py
-|4,39,104,12,1714426077,"~/hateoas/refresh_downloads_table.py"
--'  101  12  ~/hateoas/refresh_downloads_table.py
-|4,39,101,12,1714426054,"~/hateoas/refresh_downloads_table.py"
--'  101  12  ~/hateoas/refresh_downloads_table.py
-|4,39,101,12,1714426054,"~/hateoas/refresh_downloads_table.py"
--'  101  12  ~/hateoas/refresh_downloads_table.py
-|4,39,101,12,1714426054,"~/hateoas/refresh_downloads_table.py"
--'  101  12  ~/hateoas/refresh_downloads_table.py
-|4,39,101,12,1714426054,"~/hateoas/refresh_downloads_table.py"
--'  101  12  ~/hateoas/refresh_downloads_table.py
-|4,39,101,12,1714426054,"~/hateoas/refresh_downloads_table.py"
--'  101  12  ~/hateoas/refresh_downloads_table.py
-|4,39,101,12,1714426054,"~/hateoas/refresh_downloads_table.py"
--'  101  12  ~/hateoas/refresh_downloads_table.py
-|4,39,101,12,1714426054,"~/hateoas/refresh_downloads_table.py"
--'  101  12  ~/hateoas/refresh_downloads_table.py
-|4,39,101,12,1714426054,"~/hateoas/refresh_downloads_table.py"
--'  101  12  ~/hateoas/refresh_downloads_table.py
-|4,39,101,12,1714426054,"~/hateoas/refresh_downloads_table.py"
--'  86  40  ~/hateoas/refresh_downloads_table.py
-|4,39,86,40,1714425988,"~/hateoas/refresh_downloads_table.py"
--'  86  40  ~/hateoas/refresh_downloads_table.py
-|4,39,86,40,1714425988,"~/hateoas/refresh_downloads_table.py"
--'  86  40  ~/hateoas/refresh_downloads_table.py
-|4,39,86,40,1714425988,"~/hateoas/refresh_downloads_table.py"
--'  86  40  ~/hateoas/refresh_downloads_table.py
-|4,39,86,40,1714425988,"~/hateoas/refresh_downloads_table.py"
--'  86  40  ~/hateoas/refresh_downloads_table.py
-|4,39,86,40,1714425988,"~/hateoas/refresh_downloads_table.py"
--'  86  40  ~/hateoas/refresh_downloads_table.py
-|4,39,86,40,1714425988,"~/hateoas/refresh_downloads_table.py"
--'  86  40  ~/hateoas/refresh_downloads_table.py
-|4,39,86,40,1714425988,"~/hateoas/refresh_downloads_table.py"
--'  86  40  ~/hateoas/refresh_downloads_table.py
-|4,39,86,40,1714425988,"~/hateoas/refresh_downloads_table.py"
--'  86  40  ~/hateoas/refresh_downloads_table.py
-|4,39,86,40,1714425988,"~/hateoas/refresh_downloads_table.py"
--'  86  40  ~/hateoas/refresh_downloads_table.py
-|4,39,86,40,1714425988,"~/hateoas/refresh_downloads_table.py"
--'  100  8  ~/hateoas/refresh_downloads_table.py
-|4,39,100,8,1714425950,"~/hateoas/refresh_downloads_table.py"
--'  100  8  ~/hateoas/refresh_downloads_table.py
-|4,39,100,8,1714425950,"~/hateoas/refresh_downloads_table.py"
--'  100  8  ~/hateoas/refresh_downloads_table.py
-|4,39,100,8,1714425950,"~/hateoas/refresh_downloads_table.py"
--'  100  8  ~/hateoas/refresh_downloads_table.py
-|4,39,100,8,1714425950,"~/hateoas/refresh_downloads_table.py"
--'  100  8  ~/hateoas/refresh_downloads_table.py
-|4,39,100,8,1714425950,"~/hateoas/refresh_downloads_table.py"
--'  100  8  ~/hateoas/refresh_downloads_table.py
-|4,39,100,8,1714425950,"~/hateoas/refresh_downloads_table.py"
--'  100  8  ~/hateoas/refresh_downloads_table.py
-|4,39,100,8,1714425950,"~/hateoas/refresh_downloads_table.py"
--'  100  8  ~/hateoas/refresh_downloads_table.py
-|4,39,100,8,1714425950,"~/hateoas/refresh_downloads_table.py"
--'  100  8  ~/hateoas/refresh_downloads_table.py
-|4,39,100,8,1714425950,"~/hateoas/refresh_downloads_table.py"
--'  100  8  ~/hateoas/refresh_downloads_table.py
-|4,39,100,8,1714425950,"~/hateoas/refresh_downloads_table.py"
--'  100  8  ~/hateoas/refresh_downloads_table.py
-|4,39,100,8,1714425950,"~/hateoas/refresh_downloads_table.py"
--'  106  8  ~/hateoas/refresh_downloads_table.py
-|4,39,106,8,1714425905,"~/hateoas/refresh_downloads_table.py"
--'  105  8  ~/hateoas/refresh_downloads_table.py
-|4,39,105,8,1714425905,"~/hateoas/refresh_downloads_table.py"
--'  106  8  ~/hateoas/refresh_downloads_table.py
-|4,39,106,8,1714425905,"~/hateoas/refresh_downloads_table.py"
--'  105  8  ~/hateoas/refresh_downloads_table.py
-|4,39,105,8,1714425905,"~/hateoas/refresh_downloads_table.py"
--'  106  8  ~/hateoas/refresh_downloads_table.py
-|4,39,106,8,1714425905,"~/hateoas/refresh_downloads_table.py"
--'  105  8  ~/hateoas/refresh_downloads_table.py
-|4,39,105,8,1714425905,"~/hateoas/refresh_downloads_table.py"
--'  106  8  ~/hateoas/refresh_downloads_table.py
-|4,39,106,8,1714425905,"~/hateoas/refresh_downloads_table.py"
--'  105  8  ~/hateoas/refresh_downloads_table.py
-|4,39,105,8,1714425905,"~/hateoas/refresh_downloads_table.py"
--'  106  8  ~/hateoas/refresh_downloads_table.py
-|4,39,106,8,1714425905,"~/hateoas/refresh_downloads_table.py"
--'  105  8  ~/hateoas/refresh_downloads_table.py
-|4,39,105,8,1714425905,"~/hateoas/refresh_downloads_table.py"
--'  106  8  ~/hateoas/refresh_downloads_table.py
-|4,39,106,8,1714425905,"~/hateoas/refresh_downloads_table.py"
--'  105  8  ~/hateoas/refresh_downloads_table.py
-|4,39,105,8,1714425905,"~/hateoas/refresh_downloads_table.py"
--'  106  8  ~/hateoas/refresh_downloads_table.py
-|4,39,106,8,1714425905,"~/hateoas/refresh_downloads_table.py"
--'  105  8  ~/hateoas/refresh_downloads_table.py
-|4,39,105,8,1714425905,"~/hateoas/refresh_downloads_table.py"
--'  106  8  ~/hateoas/refresh_downloads_table.py
-|4,39,106,8,1714425905,"~/hateoas/refresh_downloads_table.py"
--'  105  8  ~/hateoas/refresh_downloads_table.py
-|4,39,105,8,1714425905,"~/hateoas/refresh_downloads_table.py"
--'  106  8  ~/hateoas/refresh_downloads_table.py
-|4,39,106,8,1714425905,"~/hateoas/refresh_downloads_table.py"
--'  105  8  ~/hateoas/refresh_downloads_table.py
-|4,39,105,8,1714425905,"~/hateoas/refresh_downloads_table.py"
--'  105  8  ~/hateoas/refresh_downloads_table.py
-|4,39,105,8,1714425905,"~/hateoas/refresh_downloads_table.py"
--'  105  8  ~/hateoas/refresh_downloads_table.py
-|4,39,105,8,1714425905,"~/hateoas/refresh_downloads_table.py"
--'  108  16  ~/hateoas/refresh_downloads_table.py
-|4,39,108,16,1714425890,"~/hateoas/refresh_downloads_table.py"
--'  107  16  ~/hateoas/refresh_downloads_table.py
-|4,39,107,16,1714425890,"~/hateoas/refresh_downloads_table.py"
--'  108  16  ~/hateoas/refresh_downloads_table.py
-|4,39,108,16,1714425890,"~/hateoas/refresh_downloads_table.py"
--'  107  16  ~/hateoas/refresh_downloads_table.py
-|4,39,107,16,1714425890,"~/hateoas/refresh_downloads_table.py"
+|4,39,1,0,1714560117,"~/hateoas/refresh_downloads_table.py"
+-'  1  0  ~/hateoas/refresh_downloads_table.py
+|4,39,1,0,1714560117,"~/hateoas/refresh_downloads_table.py"
+-'  1  0  ~/hateoas/refresh_downloads_table.py
+|4,39,1,0,1714560117,"~/hateoas/refresh_downloads_table.py"
+-'  1  0  ~/hateoas/refresh_downloads_table.py
+|4,39,1,0,1714560117,"~/hateoas/refresh_downloads_table.py"
+-'  1  0  ~/hateoas/refresh_downloads_table.py
+|4,39,1,0,1714560117,"~/hateoas/refresh_downloads_table.py"
+-'  1  0  ~/hateoas/refresh_downloads_table.py
+|4,39,1,0,1714560117,"~/hateoas/refresh_downloads_table.py"
+-'  1  0  ~/hateoas/refresh_downloads_table.py
+|4,39,1,0,1714560117,"~/hateoas/refresh_downloads_table.py"
+-'  1  0  ~/hateoas/refresh_downloads_table.py
+|4,39,1,0,1714560117,"~/hateoas/refresh_downloads_table.py"
+-'  1  0  ~/hateoas/refresh_downloads_table.py
+|4,39,1,0,1714560117,"~/hateoas/refresh_downloads_table.py"
+-'  5  107  ~/pytest_concate/pyproject.toml
+|4,39,5,107,1714560034,"~/pytest_concate/pyproject.toml"
+-'  5  107  ~/pytest_concate/pyproject.toml
+|4,39,5,107,1714560034,"~/pytest_concate/pyproject.toml"
+-'  5  0  ~/pytest_concate/pyproject.toml
+|4,39,5,0,1714560010,"~/pytest_concate/pyproject.toml"
+-'  5  1  ~/pytest_concate/pyproject.toml
+|4,39,5,1,1714559975,"~/pytest_concate/pyproject.toml"
+-'  4  59  ~/pytest_concate/pyproject.toml
+|4,39,4,59,1714559957,"~/pytest_concate/pyproject.toml"
+-'  4  59  ~/pytest_concate/pyproject.toml
+|4,39,4,59,1714559957,"~/pytest_concate/pyproject.toml"
+-'  4  59  ~/pytest_concate/pyproject.toml
+|4,39,4,59,1714559957,"~/pytest_concate/pyproject.toml"
+-'  4  59  ~/pytest_concate/pyproject.toml
+|4,39,4,59,1714559957,"~/pytest_concate/pyproject.toml"
+-'  4  59  ~/pytest_concate/pyproject.toml
+|4,39,4,59,1714559957,"~/pytest_concate/pyproject.toml"
 
 # Buffer list:
-%~/hateoas/logtest.py	2	0
-%~/hateoas/requirements.txt	10	0
+%~/pytest_concate/group_errors.bash	4	0
+%~/pytest_concate/pyproject.toml	5	126
+%~/hateoas/pyrightconfig.json	1	0
 
 # History of marks within files (newest to oldest):
 
-> ~/hateoas/requirements.txt
-	*	1714453130	0
-	"	10	0
-	.	11	0
-	+	3	5
-	+	9	20
-	+	2	4
-	+	10	13
-	+	11	0
-
-> ~/hateoas/logtest.py
-	*	1714453127	0
-	"	2	0
-	.	2	0
-	+	3	0
-	+	3	39
-	+	3	0
-	+	3	73
-	+	3	10
-	+	3	9
-	+	3	0
-	+	3	4
-	+	3	6
-	+	3	0
-	+	2	0
-
-> ~/hateoas/logging.py
-	*	1714452501	0
-	"	1	0
-	^	3	17
-	.	3	16
-	+	4	13
-	+	3	9
-	+	4	61
-	+	4	31
-	+	4	30
-	+	4	32
-	+	4	19
-	+	4	0
+> ~/pytest_concate/pyproject.toml
+	*	1714560975	0
+	"	5	126
+	^	5	127
+	.	5	126
+	+	2	15
 	+	3	16
-
-> ~/hateoas/refresh_downloads_table.py
-	*	1714451989	0
-	"	111	0
-	.	104	0
-	+	97	0
-	+	97	14
-	+	113	0
-	+	121	0
-	+	114	14
-	+	94	27
-	+	114	0
-	+	121	0
-	+	82	0
-	+	57	31
-	+	58	18
-	+	59	4
-	+	81	0
-	+	94	6
-	+	108	30
-	+	108	8
-	+	108	0
-	+	108	24
-	+	108	21
-	+	108	17
-	+	108	72
-	+	108	71
-	+	108	0
-	+	81	0
-	+	108	29
-	+	108	0
-	+	81	0
-	+	82	0
-	+	91	7
-	+	93	0
-	+	91	14
-	+	94	9
-	+	94	0
-	+	93	0
-	+	97	22
-	+	108	0
-	+	91	0
-	+	91	11
-	+	110	0
-	+	87	0
-	+	7	12
-	+	81	0
-	+	8	8
-	+	108	0
-	+	91	65
-	+	92	4
-	+	85	28
-	+	91	40
-	+	92	41
-	+	88	0
-	+	86	13
-	+	82	0
-	+	62	15
-	+	65	8
-	+	68	14
-	+	71	10
-	+	75	8
-	+	78	3
-	+	66	14
-	+	73	0
-	+	66	0
-	+	74	0
-	+	66	0
-	+	73	0
-	+	66	0
-	+	72	8
-	+	74	26
-	+	76	36
-	+	79	8
-	+	85	0
-	+	83	16
-	+	85	4
-	+	85	0
-	+	91	0
-	+	94	0
-	+	63	0
-	+	87	8
-	+	91	0
-	+	85	0
-	+	84	0
-	+	89	0
-	+	97	0
-	+	95	0
-	+	94	0
-	+	96	113
-	+	97	62
-	+	110	4
-	+	100	46
-	+	101	16
-	+	98	0
-	+	97	5
-	+	98	4
-	+	102	40
-	+	103	12
-	+	106	0
-	+	87	0
-	+	86	14
-	+	110	0
-	+	101	0
-	+	104	0
-
-> /tmp/crontab.irksZU/crontab
-	*	1714427177	0
-	"	1	0
-
-> /tmp/crontab.JpFUZk/crontab
-	*	1714414493	0
-	"	1	0
-
-> /tmp/refresh_downloads_table.lock
-	*	1714414488	0
-	"	1	0
-
-> ~/bash/logs/refresh_downloads_table.log
-	*	1714414476	0
-	"	1	0
-	.	1	0
-	+	1	0
-
-> ~/bash/logs/gh-timeago-updates.log
-	*	1714413761	0
-	"	1	0
-
-> /tmp/crontab.vt1w5i/crontab
-	*	1714413609	0
-	"	34	1
-	^	34	2
-	.	34	1
-	+	34	1
-
-> /tmp/crontab.ZFfBvL/crontab
-	*	1714413471	0
-	"	1	0
-
-> /tmp/crontab.93ep5Y/crontab
-	*	1714413303	0
-	"	34	58
-	^	34	2
-	.	34	0
-	+	34	0
-
-> ~/bash/python-direnv.bash
-	*	1714413299	0
-	"	3	0
-	^	1	2
-	.	1	1
-	+	5	8
+	+	10	0
 	+	4	0
-	+	2	25
-	+	5	10
-	+	2	1
-	+	1	1
+	+	5	0
+	+	5	114
+	+	12	28
+	+	11	10
+	+	9	1
+	+	10	0
+	+	9	0
+	+	8	95
+	+	7	78
+	+	5	126
 
-> /tmp/crontab.NoIfd2/crontab
-	*	1714412918	0
-	"	34	29
+> ~/hateoas/pyrightconfig.json
+	*	1714560968	0
+	"	1	0
+	.	5	0
+	+	5	0
+
+> ~/pytest_concate/group_errors.bash
+	*	1714560965	0
+	"	4	0
+	^	3	63
+	.	3	63
+	+	4	15
+	+	5	0
+	+	4	13
+	+	5	0
+	+	4	0
+	+	1	10
+	+	3	63
+
+> ~/hateoas/test_task_worker.py
+	*	1714560563	0
+	"	30	6
+	^	12	14
+	.	12	13
+	+	2	0
+	+	7	27
+	+	7	64
+	+	7	0
+	+	6	0
+	+	7	1
+	+	9	1
+	+	18	17
+	+	3	10
+	+	20	0
+	+	17	0
+	+	11	0
+	+	13	14
+	+	14	13
+	+	16	11
+	+	12	13
 
 > ~/hateoas/download_worker.py
-	*	1714412840	0
-	"	25	0
-	.	25	0
+	*	1714560530	0
+	"	28	11
+	.	108	0
 	+	72	12
 	+	65	46
 	+	72	12
@@ -8681,6 +8568,621 @@ $
 	+	25	0
 	+	25	29
 	+	25	0
+	+	108	0
+
+> ~/hateoas/refresh_downloads_table.py
+	*	1714560173	0
+	"	26	4
+	^	65	84
+	.	65	37
+	+	118	0
+	+	111	14
+	+	93	27
+	+	111	0
+	+	118	0
+	+	81	0
+	+	57	31
+	+	57	18
+	+	58	4
+	+	80	0
+	+	93	6
+	+	105	30
+	+	105	8
+	+	105	0
+	+	105	24
+	+	105	21
+	+	105	17
+	+	105	72
+	+	105	71
+	+	105	0
+	+	80	0
+	+	105	29
+	+	105	0
+	+	80	0
+	+	81	0
+	+	90	7
+	+	92	0
+	+	90	14
+	+	93	9
+	+	93	0
+	+	92	0
+	+	95	22
+	+	105	0
+	+	90	0
+	+	90	11
+	+	107	0
+	+	86	0
+	+	7	12
+	+	80	0
+	+	8	8
+	+	105	0
+	+	90	65
+	+	91	4
+	+	84	28
+	+	90	40
+	+	91	41
+	+	87	0
+	+	85	13
+	+	81	0
+	+	61	15
+	+	64	8
+	+	67	14
+	+	70	10
+	+	74	8
+	+	77	3
+	+	65	14
+	+	72	0
+	+	65	0
+	+	73	0
+	+	65	0
+	+	72	0
+	+	65	0
+	+	71	8
+	+	73	26
+	+	75	36
+	+	78	8
+	+	84	0
+	+	82	16
+	+	84	4
+	+	84	0
+	+	90	0
+	+	93	0
+	+	62	0
+	+	86	8
+	+	90	0
+	+	84	0
+	+	83	0
+	+	88	0
+	+	95	0
+	+	94	0
+	+	93	0
+	+	95	113
+	+	95	62
+	+	107	4
+	+	97	46
+	+	98	16
+	+	95	0
+	+	95	5
+	+	95	4
+	+	99	40
+	+	100	12
+	+	103	0
+	+	86	0
+	+	85	14
+	+	107	0
+	+	98	0
+	+	101	0
+	+	95	0
+	+	57	0
+	+	65	37
+
+> ~/hateoas/hateoas-api.py
+	*	1714559338	0
+	"	121	151
+	^	200	24
+	.	200	23
+	+	1	0
+	+	2	0
+	+	41	0
+	+	41	111
+	+	41	116
+	+	41	27
+	+	41	108
+	+	41	0
+	+	41	83
+	+	41	0
+	+	41	77
+	+	41	0
+	+	41	88
+	+	41	0
+	+	1	0
+	+	1	58
+	+	1	37
+	+	1	38
+	+	1	4
+	+	1	13
+	+	1	4
+	+	41	124
+	+	41	26
+	+	41	30
+	+	41	0
+	+	41	30
+	+	41	31
+	+	41	0
+	+	41	47
+	+	33	0
+	+	34	0
+	+	34	4
+	+	34	0
+	+	33	49
+	+	33	36
+	+	33	0
+	+	32	86
+	+	11	0
+	+	9	16
+	+	11	0
+	+	9	8
+	+	11	42
+	+	10	0
+	+	1	0
+	+	31	98
+	+	33	82
+	+	41	59
+	+	12	0
+	+	11	21
+	+	11	2
+	+	11	37
+	+	11	4
+	+	11	14
+	+	12	28
+	+	11	37
+	+	41	33
+	+	41	54
+	+	41	0
+	+	41	47
+	+	41	24
+	+	41	101
+	+	41	31
+	+	41	24
+	+	41	0
+	+	41	103
+	+	11	31
+	+	11	66
+	+	41	77
+	+	41	0
+	+	243	0
+	+	232	0
+	+	200	0
+	+	201	28
+	+	217	0
+	+	218	28
+	+	230	0
+	+	217	0
+	+	217	74
+	+	230	55
+	+	230	24
+	+	217	0
+	+	230	0
+	+	224	0
+	+	205	0
+	+	203	0
+	+	215	0
+	+	216	0
+	+	203	0
+	+	204	0
+	+	202	0
+	+	206	118
+	+	220	33
+	+	229	21
+	+	222	0
+	+	224	0
+	+	223	0
+	+	200	23
+
+> ~/hateoas/dbutils.py
+	*	1714559310	0
+	"	8	4
+	^	14	50
+	.	14	25
+	+	21	4
+	+	6	39
+	+	6	8
+	+	4	1
+	+	6	0
+	+	6	1
+	+	4	0
+	+	5	10
+	+	3	20
+	+	15	0
+	+	15	4
+	+	15	64
+	+	15	41
+	+	15	5
+	+	15	0
+	+	15	77
+	+	15	0
+	+	15	7
+	+	15	24
+	+	15	0
+	+	15	7
+	+	11	0
+	+	15	20
+	+	15	0
+	+	11	4
+	+	12	4
+	+	15	17
+	+	15	11
+	+	15	46
+	+	12	0
+	+	6	0
+	+	10	0
+	+	8	52
+	+	9	12
+	+	10	0
+	+	23	0
+	+	13	58
+	+	14	25
+
+> ~/hateoas/Types.py
+	*	1714559269	0
+	"	43	30
+	^	47	168
+	.	46	15
+	+	15	20
+	+	13	0
+	+	15	23
+	+	16	8
+	+	15	0
+	+	21	0
+	+	14	0
+	+	22	21
+	+	42	8
+	+	23	8
+	+	23	35
+	+	24	36
+	+	25	102
+	+	26	41
+	+	27	15
+	+	23	0
+	+	27	38
+	+	27	15
+	+	27	41
+	+	27	35
+	+	27	83
+	+	26	0
+	+	25	66
+	+	26	23
+	+	27	117
+	+	27	19
+	+	28	84
+	+	29	25
+	+	31	30
+	+	32	103
+	+	33	31
+	+	34	23
+	+	35	8
+	+	37	26
+	+	38	44
+	+	46	11
+	+	46	15
+
+> ~/pytest_concate/ruff.toml
+	*	1714556985	0
+	"	1	0
+	^	1	6
+	.	1	5
+	+	2	26
+	+	2	0
+	+	1	5
+
+> ~/pytest_concate/pyproject.tom
+	*	1714556967	0
+	"	3	25
+	^	3	26
+	.	3	25
+	+	3	25
+
+> ~/pytest_concate/test.py
+	*	1714556780	0
+	"	1	0
+	^	2	19
+	.	2	18
+	+	3	7
+	+	2	18
+
+> ~/.config/alias.sh
+	*	1714556387	0
+	"	9	6
+	^	9	7
+	.	9	6
+	+	2	0
+	+	16	37
+	+	20	77
+	+	20	42
+	+	20	47
+	+	20	32
+	+	21	39
+	+	22	40
+	+	23	79
+	+	23	0
+	+	23	36
+	+	23	20
+	+	23	25
+	+	24	45
+	+	25	0
+	+	23	0
+	+	20	0
+	+	24	19
+	+	17	60
+	+	19	0
+	+	20	0
+	+	18	13
+	+	20	10
+	+	19	0
+	+	11	0
+	+	10	72
+	+	9	6
+
+> ~/.config/setup.sh
+	*	1714556382	0
+	"	1	0
+	^	9	2
+	.	21	0
+	+	13	68
+	+	13	27
+	+	5	0
+	+	4	1
+	+	13	34
+	+	4	0
+	+	5	0
+	+	13	0
+	+	4	0
+	+	13	0
+	+	3	0
+	+	4	0
+	+	13	0
+	+	5	0
+	+	13	0
+	+	13	1
+	+	13	8
+	+	13	10
+	+	13	155
+	+	13	8
+	+	13	123
+	+	13	0
+	+	24	26
+	+	25	27
+	+	7	41
+	+	9	23
+	+	12	0
+	+	9	75
+	+	12	0
+	+	9	63
+	+	12	0
+	+	9	54
+	+	13	71
+	+	13	89
+	+	13	0
+	+	11	38
+	+	10	0
+	+	10	13
+	+	10	0
+	+	13	9
+	+	13	17
+	+	26	0
+	+	4	0
+	+	15	0
+	+	13	14
+	+	27	34
+	+	9	0
+	+	9	29
+	+	1	11
+	+	13	0
+	+	14	0
+	+	13	0
+	+	23	0
+	+	9	0
+	+	10	0
+	+	13	0
+	+	27	0
+	+	8	0
+	+	13	0
+	+	30	35
+	+	25	1
+	+	28	0
+	+	31	0
+	+	25	0
+	+	26	0
+	+	24	0
+	+	21	0
+
+> ~/pytest_concate/requirements.txt
+	*	1714556332	0
+	"	5	0
+	.	6	0
+	+	3	3
+	+	4	5
+	+	5	26
+	+	6	0
+
+> ~/hateoas/tasks_test.sql
+	*	1714485312	0
+	"	9	20
+	^	8	28
+	.	4	41
+	+	8	43
+	+	3	27
+	+	4	42
+	+	5	66
+	+	9	21
+	+	3	17
+	+	8	27
+	+	5	69
+	+	4	41
+
+> ~/hateoas/populate_test_tasks.py
+	*	1714485004	0
+	"	2	0
+	^	18	23
+	.	21	19
+	+	4	44
+	+	5	0
+	+	6	1
+	+	6	27
+	+	8	0
+	+	6	1
+	+	9	4
+	+	10	0
+	+	7	46
+	+	12	64
+	+	13	28
+	+	14	14
+	+	6	0
+	+	8	14
+	+	14	43
+	+	9	92
+	+	17	65
+	+	18	38
+	+	20	0
+	+	21	1
+	+	18	20
+	+	21	19
+
+> ~/hateoas/test.sql
+	*	1714484163	0
+	"	1	0
+	^	9	2
+	.	8	4
+	+	10	0
+	+	4	40
+	+	7	8
+	+	3	24
+	+	8	4
+
+> ~/hateoas/test.db
+	*	1714484084	0
+	"	2	0
+	^	4	16
+	.	4	15
+	+	4	15
+
+> ~/hateoas/refresh-downloads-db.bash
+	*	1714484053	0
+	"	1	0
+	^	10	64
+	.	10	63
+	+	3	88
+	+	3	28
+	+	5	0
+	+	6	0
+	+	12	0
+	+	11	0
+	+	13	0
+	+	10	63
+
+> /tmp/refresh_downloads_table.lock
+	*	1714464516	0
+	"	1	0
+
+> ~/.config/bindings.inputrc
+	*	1714453356	0
+	"	5	14
+	^	16	30
+	.	16	29
+	+	16	29
+
+> ~/hateoas/requirements.txt
+	*	1714453130	0
+	"	10	0
+	.	11	0
+	+	3	5
+	+	9	20
+	+	2	4
+	+	10	13
+	+	11	0
+
+> ~/hateoas/logtest.py
+	*	1714453127	0
+	"	2	0
+	.	2	0
+	+	3	0
+	+	3	39
+	+	3	0
+	+	3	73
+	+	3	10
+	+	3	9
+	+	3	0
+	+	3	4
+	+	3	6
+	+	3	0
+	+	2	0
+
+> ~/hateoas/logging.py
+	*	1714452501	0
+	"	1	0
+	^	3	17
+	.	3	16
+	+	4	13
+	+	3	9
+	+	4	61
+	+	4	31
+	+	4	30
+	+	4	32
+	+	4	19
+	+	4	0
+	+	3	16
+
+> /tmp/crontab.irksZU/crontab
+	*	1714427177	0
+	"	1	0
+
+> /tmp/crontab.JpFUZk/crontab
+	*	1714414493	0
+	"	1	0
+
+> ~/bash/logs/refresh_downloads_table.log
+	*	1714414476	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/bash/logs/gh-timeago-updates.log
+	*	1714413761	0
+	"	1	0
+
+> /tmp/crontab.vt1w5i/crontab
+	*	1714413609	0
+	"	34	1
+	^	34	2
+	.	34	1
+	+	34	1
+
+> /tmp/crontab.ZFfBvL/crontab
+	*	1714413471	0
+	"	1	0
+
+> /tmp/crontab.93ep5Y/crontab
+	*	1714413303	0
+	"	34	58
+	^	34	2
+	.	34	0
+	+	34	0
+
+> ~/bash/python-direnv.bash
+	*	1714413299	0
+	"	3	0
+	^	1	2
+	.	1	1
+	+	5	8
+	+	4	0
+	+	2	25
+	+	5	10
+	+	2	1
+	+	1	1
+
+> /tmp/crontab.NoIfd2/crontab
+	*	1714412918	0
+	"	34	29
 
 > ~/hateoas/download_workers.sql
 	*	1714389969	0
@@ -8807,50 +9309,6 @@ $
 	+	66	15
 	+	68	0
 	+	67	0
-
-> ~/hateoas/dbutils.py
-	*	1714384620	0
-	"	7	0
-	^	14	50
-	.	14	25
-	+	21	4
-	+	6	39
-	+	6	8
-	+	4	1
-	+	6	0
-	+	6	1
-	+	4	0
-	+	5	10
-	+	3	20
-	+	15	0
-	+	15	4
-	+	15	64
-	+	15	41
-	+	15	5
-	+	15	0
-	+	15	77
-	+	15	0
-	+	15	7
-	+	15	24
-	+	15	0
-	+	15	7
-	+	11	0
-	+	15	20
-	+	15	0
-	+	11	4
-	+	12	4
-	+	15	17
-	+	15	11
-	+	15	46
-	+	12	0
-	+	6	0
-	+	10	0
-	+	8	52
-	+	9	12
-	+	10	0
-	+	23	0
-	+	13	58
-	+	14	25
 
 > ~/hateoas/main.sql
 	*	1714383897	0
@@ -9614,38 +10072,6 @@ $
 	.	12	40
 	+	12	40
 
-> ~/.config/alias.sh
-	*	1714228402	0
-	"	19	50
-	^	19	11
-	.	9	72
-	+	2	0
-	+	15	37
-	+	19	77
-	+	19	42
-	+	19	47
-	+	19	32
-	+	20	39
-	+	21	40
-	+	22	79
-	+	22	0
-	+	22	36
-	+	22	20
-	+	22	25
-	+	23	45
-	+	24	0
-	+	22	0
-	+	19	0
-	+	23	19
-	+	16	60
-	+	18	0
-	+	19	0
-	+	17	13
-	+	19	10
-	+	18	0
-	+	10	0
-	+	9	72
-
 > /tmp/v8tzV4q/1-copilot.log
 	*	1714221681	0
 	"	1	0
@@ -9741,109 +10167,6 @@ $
 	*	1714220935	0
 	"	55	17
 
-> ~/hateoas/hateoas-api.py
-	*	1714219394	0
-	"	35	4
-	^	200	24
-	.	200	23
-	+	1	0
-	+	2	0
-	+	41	0
-	+	41	111
-	+	41	116
-	+	41	27
-	+	41	108
-	+	41	0
-	+	41	83
-	+	41	0
-	+	41	77
-	+	41	0
-	+	41	88
-	+	41	0
-	+	1	0
-	+	1	58
-	+	1	37
-	+	1	38
-	+	1	4
-	+	1	13
-	+	1	4
-	+	41	124
-	+	41	26
-	+	41	30
-	+	41	0
-	+	41	30
-	+	41	31
-	+	41	0
-	+	41	47
-	+	33	0
-	+	34	0
-	+	34	4
-	+	34	0
-	+	33	49
-	+	33	36
-	+	33	0
-	+	32	86
-	+	11	0
-	+	9	16
-	+	11	0
-	+	9	8
-	+	11	42
-	+	10	0
-	+	1	0
-	+	31	98
-	+	33	82
-	+	41	59
-	+	12	0
-	+	11	21
-	+	11	2
-	+	11	37
-	+	11	4
-	+	11	14
-	+	12	28
-	+	11	37
-	+	41	33
-	+	41	54
-	+	41	0
-	+	41	47
-	+	41	24
-	+	41	101
-	+	41	31
-	+	41	24
-	+	41	0
-	+	41	103
-	+	11	31
-	+	11	66
-	+	41	77
-	+	41	0
-	+	243	0
-	+	232	0
-	+	200	0
-	+	201	28
-	+	217	0
-	+	218	28
-	+	230	0
-	+	217	0
-	+	217	74
-	+	230	55
-	+	230	24
-	+	217	0
-	+	230	0
-	+	224	0
-	+	205	0
-	+	203	0
-	+	215	0
-	+	216	0
-	+	203	0
-	+	204	0
-	+	202	0
-	+	206	118
-	+	220	33
-	+	229	21
-	+	222	0
-	+	224	0
-	+	223	0
-	+	200	23
-
 > /tmp/fish.vivek/fish_universal_variables.notifier|
 	*	1714218681	0
 	"	1	0
@@ -9925,20 +10248,6 @@ $
 	.	27	1
 	+	27	93
 	+	27	1
-
-> ~/hateoas/refresh-downloads-db.bash
-	*	1714210648	0
-	"	1	0
-	^	10	64
-	.	10	63
-	+	3	88
-	+	3	28
-	+	5	0
-	+	6	0
-	+	12	0
-	+	11	0
-	+	13	0
-	+	10	63
 
 > ~/hateoas/statements.py
 	*	1714195114	0
@@ -10052,49 +10361,6 @@ $
 	+	24	0
 	+	25	0
 	+	4	25
-
-> ~/hateoas/Types.py
-	*	1714155419	0
-	"	48	0
-	^	47	168
-	.	46	15
-	+	15	20
-	+	13	0
-	+	15	23
-	+	16	8
-	+	15	0
-	+	21	0
-	+	14	0
-	+	22	21
-	+	42	8
-	+	23	8
-	+	23	35
-	+	24	36
-	+	25	102
-	+	26	41
-	+	27	15
-	+	23	0
-	+	27	38
-	+	27	15
-	+	27	41
-	+	27	35
-	+	27	83
-	+	26	0
-	+	25	66
-	+	26	23
-	+	27	117
-	+	27	19
-	+	28	84
-	+	29	25
-	+	31	30
-	+	32	103
-	+	33	31
-	+	34	23
-	+	35	8
-	+	37	26
-	+	38	44
-	+	46	11
-	+	46	15
 
 > ~/hateoas/input.py
 	*	1714141488	0
@@ -10299,12 +10565,6 @@ $
 	+	36	39
 	+	37	0
 	+	39	0
-
-> ~/hateoas/pyrightconfig.json
-	*	1714116271	0
-	"	5	0
-	.	5	0
-	+	5	0
 
 > ~/.vim/plugin/sqljoin.vim
 	*	1714109125	0
@@ -11514,79 +11774,6 @@ $
 	.	1	0
 	+	1	0
 
-> ~/.config/setup.sh
-	*	1713789893	0
-	"	1	0
-	^	9	2
-	.	21	0
-	+	13	68
-	+	13	27
-	+	5	0
-	+	4	1
-	+	13	34
-	+	4	0
-	+	5	0
-	+	13	0
-	+	4	0
-	+	13	0
-	+	3	0
-	+	4	0
-	+	13	0
-	+	5	0
-	+	13	0
-	+	13	1
-	+	13	8
-	+	13	10
-	+	13	155
-	+	13	8
-	+	13	123
-	+	13	0
-	+	24	26
-	+	25	27
-	+	7	41
-	+	9	23
-	+	12	0
-	+	9	75
-	+	12	0
-	+	9	63
-	+	12	0
-	+	9	54
-	+	13	71
-	+	13	89
-	+	13	0
-	+	11	38
-	+	10	0
-	+	10	13
-	+	10	0
-	+	13	9
-	+	13	17
-	+	26	0
-	+	4	0
-	+	15	0
-	+	13	14
-	+	27	34
-	+	9	0
-	+	9	29
-	+	1	11
-	+	13	0
-	+	14	0
-	+	13	0
-	+	23	0
-	+	9	0
-	+	10	0
-	+	13	0
-	+	27	0
-	+	8	0
-	+	13	0
-	+	30	35
-	+	25	1
-	+	28	0
-	+	31	0
-	+	25	0
-	+	26	0
-	+	24	0
-	+	21	0
-
 > ~/bash/test.bash
 	*	1713787833	0
 	"	2	13
@@ -12112,13 +12299,6 @@ $
 	+	5	0
 	+	44	0
 	+	43	19
-
-> ~/.config/bindings.inputrc
-	*	1713751115	0
-	"	16	0
-	^	16	30
-	.	16	29
-	+	16	29
 
 > ~/niche-python/requirements.txt
 	*	1713750352	0
