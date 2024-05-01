@@ -11,25 +11,87 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/\C\<allow_loop\>
+~MSle0~/\C\<_init_completion\>
 
 # Last Substitute Search Pattern:
 ~MSle0&:
 
 # Last Substitute String:
-$ 
+$
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1714560976,,"q"
+|2,0,1714602112,,"q"
+:q!
+|2,0,1714598109,,"q!"
+:e ~/b
+|2,0,1714595218,,"e ~/b"
+:MRU ba
+|2,0,1714595213,,"MRU ba"
+:MRU bind
+|2,0,1714595203,,"MRU bind"
+:e .bashrc
+|2,0,1714594643,,"e .bashrc"
+:MRU to
+|2,0,1714594571,,"MRU to"
+:Jprevious
+|2,0,1714594062,,"Jprevious"
+:e .
+|2,0,1714594001,,"e ."
+:e 
+|2,0,1714594000,,"e "
+:e ../
+|2,0,1714593998,,"e ../"
+:cd ~/.config
+|2,0,1714593996,,"cd ~/.config"
+:center
+|2,0,1714593321,,"center"
+:Rename my-programming-language.txt
+|2,0,1714593195,,"Rename my-programming-language.txt"
+:e ~/tooling/sample.txt
+|2,0,1714592925,,"e ~/tooling/sample.txt"
+:lopen
+|2,0,1714567851,,"lopen"
+:ALEInfo
+|2,0,1714567846,,"ALEInfo"
+:MRU twitch_uti
+|2,0,1714567841,,"MRU twitch_uti"
+:lop
+|2,0,1714567766,,"lop"
+:ALEFix
+|2,0,1714567763,,"ALEFix"
+:e pyproject.toml
+|2,0,1714567744,,"e pyproject.toml"
+:lnext
+|2,0,1714567663,,"lnext"
+:copen
+|2,0,1714567624,,"copen"
+:k
+|2,0,1714567622,,"k"
+:qa
+|2,0,1714567604,,"qa"
+:so %
+|2,0,1714567603,,"so %"
+:MRU ide
+|2,0,1714567592,,"MRU ide"
+:w
+|2,0,1714567554,,"w"
+:e
+|2,0,1714567550,,"e"
+:let 
+|2,0,1714567533,,"let "
+:qa!
+|2,0,1714567383,,"qa!"
+:diffthis
+|2,0,1714567323,,"diffthis"
+:MRU hateo
+|2,0,1714567320,,"MRU hateo"
 :MRU 2:pyproject.toml
 |2,0,1714560970,,"MRU 2:pyproject.toml"
 :MRU pyr
 |2,0,1714560968,,"MRU pyr"
 :MRU bas
 |2,0,1714560830,,"MRU bas"
-:q!
-|2,0,1714560567,,"q!"
 :20
 |2,0,1714560537,,"20"
 :MRU test_tas
@@ -44,18 +106,12 @@ $
 |2,0,1714560461,,"enew"
 :MRU download_wo
 |2,0,1714560459,,"MRU download_wo"
-:e pyproject.toml
-|2,0,1714560175,,"e pyproject.toml"
 :26
 |2,0,1714560118,,"26"
 :MRU refre
 |2,0,1714560117,,"MRU refre"
 :MRU hat
 |2,0,1714560114,,"MRU hat"
-:qa!
-|2,0,1714559432,,"qa!"
-:qa
-|2,0,1714559429,,"qa"
 :121
 |2,0,1714559313,,"121"
 :e hateoas-api.py
@@ -76,8 +132,6 @@ $
 |2,0,1714558341,,"MRU "
 :CocList diagnostics
 |2,0,1714557746,,"CocList diagnostics"
-:MRU hateo
-|2,0,1714557735,,"MRU hateo"
 :Rename pyproject.toml
 |2,0,1714556970,,"Rename pyproject.toml"
 :MRU ali
@@ -108,8 +162,6 @@ $
 |2,0,1714464518,,"bd!"
 :e!
 |2,0,1714464448,,"e!"
-:e
-|2,0,1714464446,,"e"
 :term
 |2,0,1714464312,,"term"
 :!python 
@@ -132,8 +184,6 @@ $
 |2,0,1714451828,,"set nonumber"
 :MRU 2:refresh_downloads_table.py
 |2,0,1714427180,,"MRU 2:refresh_downloads_table.py"
-:w
-|2,0,1714425216,,"w"
 :MRU 6:refresh_downloads_table.py
 |2,0,1714413859,,"MRU 6:refresh_downloads_table.py"
 :e /tmp/refresh_downloads_table.lock
@@ -142,8 +192,6 @@ $
 |2,0,1714413435,,"e ~/tmp/*.lock"
 :e ~/
 |2,0,1714413420,,"e ~/"
-:e 
-|2,0,1714413416,,"e "
 :e download_workers.sql
 |2,0,1714389958,,"e download_workers.sql"
 :e download_worker.py
@@ -158,12 +206,8 @@ $
 |2,0,1714383529,,"e main.sql"
 :e portionurl_to_download_path.py
 |2,0,1714383523,,"e portionurl_to_download_path.py"
-:Jprevious
-|2,0,1714381603,,"Jprevious"
 :e error.py
 |2,0,1714381590,,"e error.py"
-:ALEFix
-|2,0,1714380967,,"ALEFix"
 :ALEFIx
 |2,0,1714380965,,"ALEFIx"
 :e db2dl.py
@@ -182,8 +226,6 @@ $
 |2,0,1714334368,,"ALEFixSuggest"
 :ALEFixSuggestg
 |2,0,1714334366,,"ALEFixSuggestg"
-:ALEInfo
-|2,0,1714334323,,"ALEInfo"
 :e ~/bin/bash
 |2,0,1714329632,,"e ~/bin/bash"
 :e gh-timeago-updates.log
@@ -290,8 +332,6 @@ $
 |2,0,1714109003,,"g/,\\s*\\zs\\(FOREIGN\\|UNIQUE\\)/\\r\\0"
 :g/
 |2,0,1714108945,,"g/"
-:so %
-|2,0,1714108888,,"so %"
 :HotReload
 |2,0,1714108886,,"HotReload"
 :s
@@ -350,16 +390,12 @@ $
 |2,0,1714043116,,"Rename"
 :!start everything -path . run
 |2,0,1714041379,,"!start everything -path . run"
-:MRU ide
-|2,0,1714037124,,"MRU ide"
 :S
 |2,0,1714037094,,"S"
 :MRU 6:main.sql
 |2,0,1714037089,,"MRU 6:main.sql"
 :MRU ma
 |2,0,1714037088,,"MRU ma"
-:e .
-|2,0,1714036880,,"e ."
 :vim .
 |2,0,1714036866,,"vim ."
 :cd ~/tooling
@@ -662,8 +698,6 @@ $
 |2,0,1713790805,,"Isolate silent"
 :Isolate 
 |2,0,1713790801,,"Isolate "
-:copen
-|2,0,1713790678,,"copen"
 :helpgrep \\r
 |2,0,1713790668,,"helpgrep \\\\r"
 :h \r
@@ -726,8 +760,6 @@ $
 |2,0,1713790018,,"%sort /^\\S*\\s*\\zs/ n"
 :%
 |2,0,1713789994,,"%"
-:diffthis
-|2,0,1713776866,,"diffthis"
 :e shopt.current
 |2,0,1713776864,,"e shopt.current"
 :e shopt.fail
@@ -750,8 +782,6 @@ $
 |2,0,1713774303,,"imap <Alt>"
 :MRU tod
 |2,0,1713774250,,"MRU tod"
-:e .bashrc
-|2,0,1713773469,,"e .bashrc"
 :MRU todo
 |2,0,1713772826,,"MRU todo"
 :MRU 1:.bashrc
@@ -822,8 +852,6 @@ $
 |2,0,1713750208,,"Rename direnv-runner.bash"
 :MRU 3:test-libs.py
 |2,0,1713750193,,"MRU 3:test-libs.py"
-:MRU ba
-|2,0,1713750187,,"MRU ba"
 :set formatoptions-=o
 |2,0,1713750068,,"set formatoptions-=o"
 :h fo-table
@@ -1092,8 +1120,6 @@ $
 |2,0,1713515248,,"%s/"
 :%s/row/rows/g
 |2,0,1713512222,,"%s/row/rows/g"
-:center
-|2,0,1713511464,,"center"
 :echo expand("%:p")
 |2,0,1713510971,,"echo expand(\"%:p\")"
 :h digraph
@@ -1174,8 +1200,6 @@ $
 |2,0,1713436807,,"VD data/asdf"
 :VD 
 |2,0,1713436725,,"VD "
-:let 
-|2,0,1713436627,,"let "
 :grep -g '*.vim' -g 'vimrc' Plug
 |2,0,1713436455,,"grep -g '*.vim' -g 'vimrc' Plug"
 :VD data
@@ -2200,8 +2224,6 @@ $
 |2,0,1709765519,,"FIND Twit"
 :MRU embed
 |2,0,1709765494,,"MRU embed"
-:k
-|2,0,1709765273,,"k"
 :PlugUpdate
 |2,0,1709765257,,"PlugUpdate"
 :Copilot update
@@ -2318,8 +2340,6 @@ $
 |2,0,1705925576,,"128"
 :llllll
 |2,0,1705924488,,"llllll"
-:lopen
-|2,0,1705924401,,"lopen"
 :grep -g '*.vue' lang=
 |2,0,1705923803,,"grep -g '*.vue' lang="
 :grep -g '*.vue' async.*mounted
@@ -5744,6 +5764,26 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/_init_completion
+|2,1,1714597745,47,"_init_completion"
+?/_cd
+|2,1,1714597528,47,"_cd"
+?/_cd (
+|2,1,1714597526,47,"_cd ("
+?/_fzf_dir_completion
+|2,1,1714596407,47,"_fzf_dir_completion"
+?/mcfly
+|2,1,1714594509,47,"mcfly"
+? @$
+|2,1,1714594001,,"@$"
+?/td
+|2,1,1714567649,47,"td"
+?/fix
+|2,1,1714567594,47,"fix"
+?/ruff
+|2,1,1714567587,47,"ruff"
+?/pyflakes
+|2,1,1714567539,47,"pyflakes"
 ?/\(def\|class\)\s\+\w*elements
 |2,1,1714557737,47,"\\(def\\|class\\)\\s\\+\\w*elements"
 ? \s\{2,}
@@ -5752,8 +5792,6 @@ $
 |2,1,1714485023,,"\\s*,"
 ? CREATE TABLE
 |2,1,1714485023,,"CREATE TABLE"
-? @$
-|2,1,1714484154,,"@$"
 ?/bind
 |2,1,1714453306,47,"bind"
 ?/\(def\|class\)\s\+\w*log
@@ -5880,8 +5918,6 @@ $
 |2,1,1714027548,47,"dialect sqlite"
 ?/sqlf
 |2,1,1714027467,47,"sqlf"
-?/fix
-|2,1,1714027431,47,"fix"
 ?/,
 |2,1,1714027223,47,","
 ?/;\nCR
@@ -7036,8 +7072,6 @@ $
 |2,1,1693085331,47,"fish_history"
 ?/z
 |2,1,1693084163,47,"z"
-?/mcfly
-|2,1,1693083251,47,"mcfly"
 ?/SHELL
 |2,1,1693082187,47,"SHELL"
 ?/Actions
@@ -8106,39 +8140,71 @@ $
 |2,4,1693311567,,"cont"
 
 # Registers:
-"0	CHAR	0
-	disable
-|3,0,0,0,1,0,1714560609,"disable"
-""1	LINE	0
-	# --ignore S --ignore RUF --ignore INP --ignore PLW
-|3,1,1,1,1,0,1714560691,"# --ignore S --ignore RUF --ignore INP --ignore PLW"
+"0	LINE	0
+	_my_cd_completion() {
+	  compopt -o filenames
+	  local cur=${COMP_WORDS[COMP_CWORD]}
+	  COMPREPLY=($(compgen -d -- "$cur"))
+	}
+|3,0,0,1,5,0,1714598753,"_my_cd_completion() {","  compopt -o filenames","  local cur=${COMP_WORDS[COMP_CWORD]}","  COMPREPLY=($(compgen -d -- \"$cur\"))","}"
+"1	LINE	0
+	
+|3,0,1,1,1,0,1714598755,""
 "2	LINE	0
-	ignore = ["S", "RUF", "INP", "PLW"]
-|3,0,2,1,1,0,1714560622,"ignore = [\"S\", \"RUF\", \"INP\", \"PLW\"]"
+	_my_cd_completion() {
+	  compopt -o filenames
+	  local cur=${COMP_WORDS[COMP_CWORD]}
+	  COMPREPLY=($(compgen -d -- "$cur"))
+	}
+|3,0,2,1,5,0,1714598751,"_my_cd_completion() {","  compopt -o filenames","  local cur=${COMP_WORDS[COMP_CWORD]}","  COMPREPLY=($(compgen -d -- \"$cur\"))","}"
 "3	LINE	0
-	# E501,D103,ANN,F401,PTH,D,T201,Q000,ERA001,I001,ARG001,N806
-|3,0,3,1,1,0,1714559947,"# E501,D103,ANN,F401,PTH,D,T201,Q000,ERA001,I001,ARG001,N806"
+	fi
+|3,0,3,1,1,0,1714598099,"fi"
 "4	LINE	0
-	while read -r line
-	do
-	    echo "Line: $line"
-	done
-|3,0,4,1,4,0,1714559768,"while read -r line","do","    echo \"Line: $line\"","done"
+	    - [6] in-built form validation without js
+	    - [7] in-built form validation without js
+|3,0,4,1,2,0,1714593456,"    - [6] in-built form validation without js","    - [7] in-built form validation without js"
 "5	LINE	0
 	
-|3,0,5,1,1,0,1714559729,""
+	components
+	textbox
+	button
+	radio
+	dropdown
+	checkbox
+	toggle
+	form
+	table
+	modal
+	tooltip
+|3,0,5,1,12,0,1714593450,"","components","textbox","button","radio","dropdown","checkbox","toggle","form","table","modal","tooltip"
 "6	LINE	0
-	select = 'all'
-|3,0,6,1,1,0,1714557618,"select = 'all'"
-"7	LINE	0
-	extend-unfixable = ["ISC"]
-|3,0,7,1,1,0,1714557581,"extend-unfixable = [\"ISC\"]"
-"8	LINE	0
-	[lint]
-|3,0,8,1,1,0,1714556758,"[lint]"
-"9	LINE	0
+	toast
+	spinner
+	progress
+	slider
+	calendar
+	chart
+	map
+	video
+	audio
+	image
+	file
+	markdown
+	html
 	
-|3,0,9,1,1,0,1714556677,""
+	
+	
+|3,0,6,1,16,0,1714593442,"toast","spinner","progress","slider","calendar","chart","map","video","audio","image","file","markdown","html","","",""
+"7	LINE	0
+	==========
+|3,0,7,1,1,0,1714593319,"=========="
+"8	LINE	0
+	# features
+|3,0,8,1,1,0,1714593297,"# features"
+"9	LINE	0
+	feature set
+|3,0,9,1,1,0,1714593295,"feature set"
 "a	CHAR	0
 	Tabularize /-/l1c1l1c1l1
 |3,0,10,0,1,0,1714384337,"Tabularize /-/l1c1l1c1l1"
@@ -8176,244 +8242,554 @@ $
 |3,0,28,1,24,0,1712521850,"    return render_template_string(\"\"\"","    <ul>","        {% for id, name, downloaded_path, progress, status in downloads %}","            <li>","                <a href=\"/download/{{ id }}\">{{ name }}</a>","                <span>{{ status }}</span>","                <progress value=\"{{ progress }}\" max=\"100\"></progress>","                <span>{{ progress }}%</span>","                {% if status == 'paused' %}",>68
 |<"                <form method=\"POST\" action=\"/resume_download\">","                    <input type=\"hidden\" name=\"id\" value=\"{{ id }}\">","                    <input type=\"submit\" value=\"Resume\">","                </form>","                {% endif %}","                {% if status == 'downloading' %}","                <form method=\"POST\" action=\"/pause_download\">","                    <input type=\"hidden\" name=\"id\" value=\"{{ id }}\">",>61
 |<"                    <input type=\"submit\" value=\"Pause\">","                </form>","                {% endif %}","","            </li>","        {% endfor %}","    </ul>\"\"\", downloads=downloads)"
-"-	CHAR	0
-	disable
-|3,0,36,0,1,0,1714560607,"disable"
+""-	CHAR	0
+	| grep -E '/$'
+|3,1,36,0,1,0,1714598820,"| grep -E '/$'"
 
 # File marks:
-'0  5  126  ~/pytest_concate/pyproject.toml
-|4,48,5,126,1714560976,"~/pytest_concate/pyproject.toml"
-'1  4  0  ~/pytest_concate/group_errors.bash
-|4,49,4,0,1714560834,"~/pytest_concate/group_errors.bash"
-'2  4  0  ~/pytest_concate/group_errors.bash
-|4,50,4,0,1714560834,"~/pytest_concate/group_errors.bash"
-'3  7  78  ~/pytest_concate/pyproject.toml
-|4,51,7,78,1714560754,"~/pytest_concate/pyproject.toml"
-'4  7  78  ~/pytest_concate/pyproject.toml
-|4,52,7,78,1714560754,"~/pytest_concate/pyproject.toml"
-'5  7  78  ~/pytest_concate/pyproject.toml
-|4,53,7,78,1714560754,"~/pytest_concate/pyproject.toml"
-'6  7  78  ~/pytest_concate/pyproject.toml
-|4,54,7,78,1714560754,"~/pytest_concate/pyproject.toml"
-'7  9  1  ~/pytest_concate/pyproject.toml
-|4,55,9,1,1714560683,"~/pytest_concate/pyproject.toml"
-'8  7  1  ~/pytest_concate/pyproject.toml
-|4,56,7,1,1714560683,"~/pytest_concate/pyproject.toml"
-'9  9  1  ~/pytest_concate/pyproject.toml
-|4,57,9,1,1714560683,"~/pytest_concate/pyproject.toml"
+'0  12  52  ~/.config/todo.txt
+|4,48,12,52,1714602112,"~/.config/todo.txt"
+'1  33  0  /etc/bash_completion.d/fzf_completion
+|4,49,33,0,1714598980,"/etc/bash_completion.d/fzf_completion"
+'2  33  0  /etc/bash_completion.d/fzf_completion
+|4,50,33,0,1714598980,"/etc/bash_completion.d/fzf_completion"
+'3  36  39  ~/.config/setup.sh
+|4,51,36,39,1714598827,"~/.config/setup.sh"
+'4  36  39  ~/.config/setup.sh
+|4,52,36,39,1714598827,"~/.config/setup.sh"
+'5  36  39  ~/.config/setup.sh
+|4,53,36,39,1714598827,"~/.config/setup.sh"
+'6  36  39  ~/.config/setup.sh
+|4,54,36,39,1714598827,"~/.config/setup.sh"
+'7  45  0  ~/.config/setup.sh
+|4,55,45,0,1714598760,"~/.config/setup.sh"
+'8  45  0  ~/.config/setup.sh
+|4,56,45,0,1714598760,"~/.config/setup.sh"
+'9  45  0  ~/.config/setup.sh
+|4,57,45,0,1714598760,"~/.config/setup.sh"
 
 # Jumplist (newest first):
--'  5  126  ~/pytest_concate/pyproject.toml
-|4,39,5,126,1714560976,"~/pytest_concate/pyproject.toml"
--'  1  0  ~/hateoas/pyrightconfig.json
-|4,39,1,0,1714560970,"~/hateoas/pyrightconfig.json"
--'  4  0  ~/pytest_concate/group_errors.bash
-|4,39,4,0,1714560968,"~/pytest_concate/group_errors.bash"
--'  4  0  ~/pytest_concate/group_errors.bash
-|4,39,4,0,1714560834,"~/pytest_concate/group_errors.bash"
--'  1  0  ~/pytest_concate/group_errors.bash
-|4,39,1,0,1714560830,"~/pytest_concate/group_errors.bash"
--'  1  0  ~/pytest_concate/group_errors.bash
-|4,39,1,0,1714560830,"~/pytest_concate/group_errors.bash"
--'  7  78  ~/pytest_concate/pyproject.toml
-|4,39,7,78,1714560754,"~/pytest_concate/pyproject.toml"
--'  7  78  ~/pytest_concate/pyproject.toml
-|4,39,7,78,1714560754,"~/pytest_concate/pyproject.toml"
--'  7  78  ~/pytest_concate/pyproject.toml
-|4,39,7,78,1714560754,"~/pytest_concate/pyproject.toml"
--'  9  1  ~/pytest_concate/pyproject.toml
-|4,39,9,1,1714560689,"~/pytest_concate/pyproject.toml"
--'  9  1  ~/pytest_concate/pyproject.toml
-|4,39,9,1,1714560689,"~/pytest_concate/pyproject.toml"
--'  9  1  ~/pytest_concate/pyproject.toml
-|4,39,9,1,1714560689,"~/pytest_concate/pyproject.toml"
--'  7  1  ~/pytest_concate/pyproject.toml
-|4,39,7,1,1714560683,"~/pytest_concate/pyproject.toml"
--'  7  6  ~/pytest_concate/pyproject.toml
-|4,39,7,6,1714560671,"~/pytest_concate/pyproject.toml"
--'  6  11  ~/pytest_concate/pyproject.toml
-|4,39,6,11,1714560668,"~/pytest_concate/pyproject.toml"
--'  6  11  ~/pytest_concate/pyproject.toml
-|4,39,6,11,1714560668,"~/pytest_concate/pyproject.toml"
--'  6  11  ~/pytest_concate/pyproject.toml
-|4,39,6,11,1714560668,"~/pytest_concate/pyproject.toml"
--'  6  11  ~/pytest_concate/pyproject.toml
-|4,39,6,11,1714560668,"~/pytest_concate/pyproject.toml"
--'  10  5  ~/pytest_concate/pyproject.toml
-|4,39,10,5,1714560609,"~/pytest_concate/pyproject.toml"
--'  8  5  ~/pytest_concate/pyproject.toml
-|4,39,8,5,1714560609,"~/pytest_concate/pyproject.toml"
--'  10  5  ~/pytest_concate/pyproject.toml
-|4,39,10,5,1714560609,"~/pytest_concate/pyproject.toml"
--'  8  5  ~/pytest_concate/pyproject.toml
-|4,39,8,5,1714560609,"~/pytest_concate/pyproject.toml"
--'  10  5  ~/pytest_concate/pyproject.toml
-|4,39,10,5,1714560609,"~/pytest_concate/pyproject.toml"
--'  8  5  ~/pytest_concate/pyproject.toml
-|4,39,8,5,1714560609,"~/pytest_concate/pyproject.toml"
--'  8  5  ~/pytest_concate/pyproject.toml
-|4,39,8,5,1714560609,"~/pytest_concate/pyproject.toml"
--'  7  5  ~/pytest_concate/pyproject.toml
-|4,39,7,5,1714560609,"~/pytest_concate/pyproject.toml"
--'  7  35  ~/pytest_concate/pyproject.toml
-|4,39,7,35,1714560598,"~/pytest_concate/pyproject.toml"
--'  1  0  ~/pytest_concate/pyproject.toml
-|4,39,1,0,1714560588,"~/pytest_concate/pyproject.toml"
--'  1  0  ~/pytest_concate/pyproject.toml
-|4,39,1,0,1714560588,"~/pytest_concate/pyproject.toml"
--'  1  0  ~/pytest_concate/pyproject.toml
-|4,39,1,0,1714560588,"~/pytest_concate/pyproject.toml"
--'  1  0  ~/pytest_concate/pyproject.toml
-|4,39,1,0,1714560588,"~/pytest_concate/pyproject.toml"
--'  1  0  ~/pytest_concate/pyproject.toml
-|4,39,1,0,1714560588,"~/pytest_concate/pyproject.toml"
--'  1  0  ~/pytest_concate/pyproject.toml
-|4,39,1,0,1714560588,"~/pytest_concate/pyproject.toml"
--'  1  0  ~/pytest_concate/pyproject.toml
-|4,39,1,0,1714560588,"~/pytest_concate/pyproject.toml"
--'  1  0  ~/hateoas/download_worker.py
-|4,39,1,0,1714560461,"~/hateoas/download_worker.py"
--'  1  0  ~/hateoas/download_worker.py
-|4,39,1,0,1714560461,"~/hateoas/download_worker.py"
--'  1  0  ~/hateoas/download_worker.py
-|4,39,1,0,1714560461,"~/hateoas/download_worker.py"
--'  1  0  ~/hateoas/download_worker.py
-|4,39,1,0,1714560461,"~/hateoas/download_worker.py"
--'  1  0  ~/hateoas/download_worker.py
-|4,39,1,0,1714560461,"~/hateoas/download_worker.py"
--'  1  0  ~/hateoas/download_worker.py
-|4,39,1,0,1714560461,"~/hateoas/download_worker.py"
--'  1  0  ~/hateoas/download_worker.py
-|4,39,1,0,1714560461,"~/hateoas/download_worker.py"
--'  1  0  ~/hateoas/download_worker.py
-|4,39,1,0,1714560461,"~/hateoas/download_worker.py"
--'  11  10  ~/pytest_concate/pyproject.toml
-|4,39,11,10,1714560269,"~/pytest_concate/pyproject.toml"
--'  11  10  ~/pytest_concate/pyproject.toml
-|4,39,11,10,1714560269,"~/pytest_concate/pyproject.toml"
--'  11  10  ~/pytest_concate/pyproject.toml
-|4,39,11,10,1714560269,"~/pytest_concate/pyproject.toml"
--'  9  10  ~/pytest_concate/pyproject.toml
-|4,39,9,10,1714560269,"~/pytest_concate/pyproject.toml"
--'  9  10  ~/pytest_concate/pyproject.toml
-|4,39,9,10,1714560269,"~/pytest_concate/pyproject.toml"
--'  9  10  ~/pytest_concate/pyproject.toml
-|4,39,9,10,1714560269,"~/pytest_concate/pyproject.toml"
--'  9  10  ~/pytest_concate/pyproject.toml
-|4,39,9,10,1714560269,"~/pytest_concate/pyproject.toml"
--'  7  10  ~/pytest_concate/pyproject.toml
-|4,39,7,10,1714560269,"~/pytest_concate/pyproject.toml"
--'  7  10  ~/pytest_concate/pyproject.toml
-|4,39,7,10,1714560269,"~/pytest_concate/pyproject.toml"
--'  7  0  ~/pytest_concate/pyproject.toml
-|4,39,7,0,1714560259,"~/pytest_concate/pyproject.toml"
--'  1  0  ~/pytest_concate/pyproject.toml
-|4,39,1,0,1714560254,"~/pytest_concate/pyproject.toml"
--'  1  0  ~/pytest_concate/pyproject.toml
-|4,39,1,0,1714560254,"~/pytest_concate/pyproject.toml"
--'  1  0  ~/pytest_concate/pyproject.toml
-|4,39,1,0,1714560254,"~/pytest_concate/pyproject.toml"
--'  5  114  ~/pytest_concate/pyproject.toml
-|4,39,5,114,1714560179,"~/pytest_concate/pyproject.toml"
--'  5  114  ~/pytest_concate/pyproject.toml
-|4,39,5,114,1714560179,"~/pytest_concate/pyproject.toml"
--'  5  114  ~/pytest_concate/pyproject.toml
-|4,39,5,114,1714560179,"~/pytest_concate/pyproject.toml"
--'  5  114  ~/pytest_concate/pyproject.toml
-|4,39,5,114,1714560179,"~/pytest_concate/pyproject.toml"
--'  5  114  ~/pytest_concate/pyproject.toml
-|4,39,5,114,1714560179,"~/pytest_concate/pyproject.toml"
--'  5  114  ~/pytest_concate/pyproject.toml
-|4,39,5,114,1714560179,"~/pytest_concate/pyproject.toml"
--'  5  114  ~/pytest_concate/pyproject.toml
-|4,39,5,114,1714560179,"~/pytest_concate/pyproject.toml"
--'  5  114  ~/pytest_concate/pyproject.toml
-|4,39,5,114,1714560179,"~/pytest_concate/pyproject.toml"
--'  5  114  ~/pytest_concate/pyproject.toml
-|4,39,5,114,1714560179,"~/pytest_concate/pyproject.toml"
--'  5  114  ~/pytest_concate/pyproject.toml
-|4,39,5,114,1714560179,"~/pytest_concate/pyproject.toml"
--'  1  0  ~/pytest_concate/pyproject.toml
-|4,39,1,0,1714560176,"~/pytest_concate/pyproject.toml"
--'  26  4  ~/hateoas/refresh_downloads_table.py
-|4,39,26,4,1714560175,"~/hateoas/refresh_downloads_table.py"
--'  26  4  ~/hateoas/refresh_downloads_table.py
-|4,39,26,4,1714560175,"~/hateoas/refresh_downloads_table.py"
--'  26  4  ~/hateoas/refresh_downloads_table.py
-|4,39,26,4,1714560175,"~/hateoas/refresh_downloads_table.py"
--'  26  4  ~/hateoas/refresh_downloads_table.py
-|4,39,26,4,1714560175,"~/hateoas/refresh_downloads_table.py"
--'  26  4  ~/hateoas/refresh_downloads_table.py
-|4,39,26,4,1714560175,"~/hateoas/refresh_downloads_table.py"
--'  26  4  ~/hateoas/refresh_downloads_table.py
-|4,39,26,4,1714560175,"~/hateoas/refresh_downloads_table.py"
--'  26  4  ~/hateoas/refresh_downloads_table.py
-|4,39,26,4,1714560175,"~/hateoas/refresh_downloads_table.py"
--'  26  4  ~/hateoas/refresh_downloads_table.py
-|4,39,26,4,1714560175,"~/hateoas/refresh_downloads_table.py"
--'  26  4  ~/hateoas/refresh_downloads_table.py
-|4,39,26,4,1714560175,"~/hateoas/refresh_downloads_table.py"
--'  26  4  ~/hateoas/refresh_downloads_table.py
-|4,39,26,4,1714560175,"~/hateoas/refresh_downloads_table.py"
--'  26  4  ~/hateoas/refresh_downloads_table.py
-|4,39,26,4,1714560175,"~/hateoas/refresh_downloads_table.py"
--'  26  4  ~/hateoas/refresh_downloads_table.py
-|4,39,26,4,1714560122,"~/hateoas/refresh_downloads_table.py"
--'  1  0  ~/hateoas/refresh_downloads_table.py
-|4,39,1,0,1714560117,"~/hateoas/refresh_downloads_table.py"
--'  1  0  ~/hateoas/refresh_downloads_table.py
-|4,39,1,0,1714560117,"~/hateoas/refresh_downloads_table.py"
--'  1  0  ~/hateoas/refresh_downloads_table.py
-|4,39,1,0,1714560117,"~/hateoas/refresh_downloads_table.py"
--'  1  0  ~/hateoas/refresh_downloads_table.py
-|4,39,1,0,1714560117,"~/hateoas/refresh_downloads_table.py"
--'  1  0  ~/hateoas/refresh_downloads_table.py
-|4,39,1,0,1714560117,"~/hateoas/refresh_downloads_table.py"
--'  1  0  ~/hateoas/refresh_downloads_table.py
-|4,39,1,0,1714560117,"~/hateoas/refresh_downloads_table.py"
--'  1  0  ~/hateoas/refresh_downloads_table.py
-|4,39,1,0,1714560117,"~/hateoas/refresh_downloads_table.py"
--'  1  0  ~/hateoas/refresh_downloads_table.py
-|4,39,1,0,1714560117,"~/hateoas/refresh_downloads_table.py"
--'  1  0  ~/hateoas/refresh_downloads_table.py
-|4,39,1,0,1714560117,"~/hateoas/refresh_downloads_table.py"
--'  1  0  ~/hateoas/refresh_downloads_table.py
-|4,39,1,0,1714560117,"~/hateoas/refresh_downloads_table.py"
--'  1  0  ~/hateoas/refresh_downloads_table.py
-|4,39,1,0,1714560117,"~/hateoas/refresh_downloads_table.py"
--'  1  0  ~/hateoas/refresh_downloads_table.py
-|4,39,1,0,1714560117,"~/hateoas/refresh_downloads_table.py"
--'  5  107  ~/pytest_concate/pyproject.toml
-|4,39,5,107,1714560034,"~/pytest_concate/pyproject.toml"
--'  5  107  ~/pytest_concate/pyproject.toml
-|4,39,5,107,1714560034,"~/pytest_concate/pyproject.toml"
--'  5  0  ~/pytest_concate/pyproject.toml
-|4,39,5,0,1714560010,"~/pytest_concate/pyproject.toml"
--'  5  1  ~/pytest_concate/pyproject.toml
-|4,39,5,1,1714559975,"~/pytest_concate/pyproject.toml"
--'  4  59  ~/pytest_concate/pyproject.toml
-|4,39,4,59,1714559957,"~/pytest_concate/pyproject.toml"
--'  4  59  ~/pytest_concate/pyproject.toml
-|4,39,4,59,1714559957,"~/pytest_concate/pyproject.toml"
--'  4  59  ~/pytest_concate/pyproject.toml
-|4,39,4,59,1714559957,"~/pytest_concate/pyproject.toml"
--'  4  59  ~/pytest_concate/pyproject.toml
-|4,39,4,59,1714559957,"~/pytest_concate/pyproject.toml"
--'  4  59  ~/pytest_concate/pyproject.toml
-|4,39,4,59,1714559957,"~/pytest_concate/pyproject.toml"
+-'  12  52  ~/.config/todo.txt
+|4,39,12,52,1714602112,"~/.config/todo.txt"
+-'  1  4  ~/.config/todo.txt
+|4,39,1,4,1714601945,"~/.config/todo.txt"
+-'  11  0  ~/.config/todo.txt
+|4,39,11,0,1714601925,"~/.config/todo.txt"
+-'  33  0  /etc/bash_completion.d/fzf_completion
+|4,39,33,0,1714598980,"/etc/bash_completion.d/fzf_completion"
+-'  33  0  /etc/bash_completion.d/fzf_completion
+|4,39,33,0,1714598980,"/etc/bash_completion.d/fzf_completion"
+-'  1  0  /etc/bash_completion.d/fzf_completion
+|4,39,1,0,1714598968,"/etc/bash_completion.d/fzf_completion"
+-'  1  0  /etc/bash_completion.d/fzf_completion
+|4,39,1,0,1714598968,"/etc/bash_completion.d/fzf_completion"
+-'  36  39  ~/.config/setup.sh
+|4,39,36,39,1714598827,"~/.config/setup.sh"
+-'  36  39  ~/.config/setup.sh
+|4,39,36,39,1714598827,"~/.config/setup.sh"
+-'  36  39  ~/.config/setup.sh
+|4,39,36,39,1714598827,"~/.config/setup.sh"
+-'  45  0  ~/.config/setup.sh
+|4,39,45,0,1714598760,"~/.config/setup.sh"
+-'  45  0  ~/.config/setup.sh
+|4,39,45,0,1714598760,"~/.config/setup.sh"
+-'  45  0  ~/.config/setup.sh
+|4,39,45,0,1714598760,"~/.config/setup.sh"
+-'  45  0  ~/.config/setup.sh
+|4,39,45,0,1714598760,"~/.config/setup.sh"
+-'  42  0  ~/.config/setup.sh
+|4,39,42,0,1714598753,"~/.config/setup.sh"
+-'  42  0  ~/.config/setup.sh
+|4,39,42,0,1714598753,"~/.config/setup.sh"
+-'  42  0  ~/.config/setup.sh
+|4,39,42,0,1714598753,"~/.config/setup.sh"
+-'  42  0  ~/.config/setup.sh
+|4,39,42,0,1714598753,"~/.config/setup.sh"
+-'  31  26  ~/.config/setup.sh
+|4,39,31,26,1714598599,"~/.config/setup.sh"
+-'  31  26  ~/.config/setup.sh
+|4,39,31,26,1714598599,"~/.config/setup.sh"
+-'  31  26  ~/.config/setup.sh
+|4,39,31,26,1714598599,"~/.config/setup.sh"
+-'  31  26  ~/.config/setup.sh
+|4,39,31,26,1714598599,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1714598573,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1714598573,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1714598573,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1714598573,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1714598573,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1714598559,"~/.config/setup.sh"
+-'  3  0  /etc/profile.d/bash_completion.sh
+|4,39,3,0,1714598110,"/etc/profile.d/bash_completion.sh"
+-'  3  0  /etc/profile.d/bash_completion.sh
+|4,39,3,0,1714598110,"/etc/profile.d/bash_completion.sh"
+-'  3  0  /etc/profile.d/bash_completion.sh
+|4,39,3,0,1714598110,"/etc/profile.d/bash_completion.sh"
+-'  3  0  /etc/profile.d/bash_completion.sh
+|4,39,3,0,1714598110,"/etc/profile.d/bash_completion.sh"
+-'  3  0  /etc/profile.d/bash_completion.sh
+|4,39,3,0,1714598110,"/etc/profile.d/bash_completion.sh"
+-'  3  0  /etc/profile.d/bash_completion.sh
+|4,39,3,0,1714598110,"/etc/profile.d/bash_completion.sh"
+-'  3  0  /etc/profile.d/bash_completion.sh
+|4,39,3,0,1714598110,"/etc/profile.d/bash_completion.sh"
+-'  1  0  /etc/profile.d/bash_completion.sh
+|4,39,1,0,1714598087,"/etc/profile.d/bash_completion.sh"
+-'  1  0  /etc/profile.d/bash_completion.sh
+|4,39,1,0,1714598087,"/etc/profile.d/bash_completion.sh"
+-'  1  0  /etc/profile.d/bash_completion.sh
+|4,39,1,0,1714598087,"/etc/profile.d/bash_completion.sh"
+-'  1  0  /etc/profile.d/bash_completion.sh
+|4,39,1,0,1714598087,"/etc/profile.d/bash_completion.sh"
+-'  1  0  /etc/profile.d/bash_completion.sh
+|4,39,1,0,1714598087,"/etc/profile.d/bash_completion.sh"
+-'  1  0  /etc/profile.d/bash_completion.sh
+|4,39,1,0,1714598087,"/etc/profile.d/bash_completion.sh"
+-'  1  0  /etc/profile.d/bash_completion.sh
+|4,39,1,0,1714598087,"/etc/profile.d/bash_completion.sh"
+-'  4  0  /etc/profile
+|4,39,4,0,1714598010,"/etc/profile"
+-'  4  0  /etc/profile
+|4,39,4,0,1714598010,"/etc/profile"
+-'  4  0  /etc/profile
+|4,39,4,0,1714598010,"/etc/profile"
+-'  4  0  /etc/profile
+|4,39,4,0,1714598010,"/etc/profile"
+-'  4  0  /etc/profile
+|4,39,4,0,1714598010,"/etc/profile"
+-'  4  0  /etc/profile
+|4,39,4,0,1714598010,"/etc/profile"
+-'  4  0  /etc/profile
+|4,39,4,0,1714598010,"/etc/profile"
+-'  4  0  /etc/profile
+|4,39,4,0,1714598010,"/etc/profile"
+-'  1  0  /etc/profile
+|4,39,1,0,1714597998,"/etc/profile"
+-'  1  0  /etc/profile
+|4,39,1,0,1714597998,"/etc/profile"
+-'  1  0  /etc/profile
+|4,39,1,0,1714597998,"/etc/profile"
+-'  1  0  /etc/profile
+|4,39,1,0,1714597998,"/etc/profile"
+-'  1  0  /etc/profile
+|4,39,1,0,1714597998,"/etc/profile"
+-'  1  0  /etc/profile
+|4,39,1,0,1714597998,"/etc/profile"
+-'  1  0  /etc/profile
+|4,39,1,0,1714597998,"/etc/profile"
+-'  1  0  /etc/profile
+|4,39,1,0,1714597998,"/etc/profile"
+-'  2197  4  /usr/share/bash-completion/bash_completion
+|4,39,2197,4,1714597783,"/usr/share/bash-completion/bash_completion"
+-'  2197  4  /usr/share/bash-completion/bash_completion
+|4,39,2197,4,1714597783,"/usr/share/bash-completion/bash_completion"
+-'  2197  4  /usr/share/bash-completion/bash_completion
+|4,39,2197,4,1714597783,"/usr/share/bash-completion/bash_completion"
+-'  2197  4  /usr/share/bash-completion/bash_completion
+|4,39,2197,4,1714597783,"/usr/share/bash-completion/bash_completion"
+-'  2197  4  /usr/share/bash-completion/bash_completion
+|4,39,2197,4,1714597783,"/usr/share/bash-completion/bash_completion"
+-'  2197  4  /usr/share/bash-completion/bash_completion
+|4,39,2197,4,1714597783,"/usr/share/bash-completion/bash_completion"
+-'  2197  4  /usr/share/bash-completion/bash_completion
+|4,39,2197,4,1714597783,"/usr/share/bash-completion/bash_completion"
+-'  2197  4  /usr/share/bash-completion/bash_completion
+|4,39,2197,4,1714597783,"/usr/share/bash-completion/bash_completion"
+-'  2197  4  /usr/share/bash-completion/bash_completion
+|4,39,2197,4,1714597783,"/usr/share/bash-completion/bash_completion"
+-'  2075  4  /usr/share/bash-completion/bash_completion
+|4,39,2075,4,1714597779,"/usr/share/bash-completion/bash_completion"
+-'  2075  4  /usr/share/bash-completion/bash_completion
+|4,39,2075,4,1714597779,"/usr/share/bash-completion/bash_completion"
+-'  2075  4  /usr/share/bash-completion/bash_completion
+|4,39,2075,4,1714597779,"/usr/share/bash-completion/bash_completion"
+-'  2075  4  /usr/share/bash-completion/bash_completion
+|4,39,2075,4,1714597779,"/usr/share/bash-completion/bash_completion"
+-'  2075  4  /usr/share/bash-completion/bash_completion
+|4,39,2075,4,1714597779,"/usr/share/bash-completion/bash_completion"
+-'  2075  4  /usr/share/bash-completion/bash_completion
+|4,39,2075,4,1714597779,"/usr/share/bash-completion/bash_completion"
+-'  2075  4  /usr/share/bash-completion/bash_completion
+|4,39,2075,4,1714597779,"/usr/share/bash-completion/bash_completion"
+-'  2075  4  /usr/share/bash-completion/bash_completion
+|4,39,2075,4,1714597779,"/usr/share/bash-completion/bash_completion"
+-'  2075  4  /usr/share/bash-completion/bash_completion
+|4,39,2075,4,1714597779,"/usr/share/bash-completion/bash_completion"
+-'  2016  4  /usr/share/bash-completion/bash_completion
+|4,39,2016,4,1714597778,"/usr/share/bash-completion/bash_completion"
+-'  2016  4  /usr/share/bash-completion/bash_completion
+|4,39,2016,4,1714597778,"/usr/share/bash-completion/bash_completion"
+-'  2016  4  /usr/share/bash-completion/bash_completion
+|4,39,2016,4,1714597778,"/usr/share/bash-completion/bash_completion"
+-'  2016  4  /usr/share/bash-completion/bash_completion
+|4,39,2016,4,1714597778,"/usr/share/bash-completion/bash_completion"
+-'  2016  4  /usr/share/bash-completion/bash_completion
+|4,39,2016,4,1714597778,"/usr/share/bash-completion/bash_completion"
+-'  2016  4  /usr/share/bash-completion/bash_completion
+|4,39,2016,4,1714597778,"/usr/share/bash-completion/bash_completion"
+-'  2016  4  /usr/share/bash-completion/bash_completion
+|4,39,2016,4,1714597778,"/usr/share/bash-completion/bash_completion"
+-'  2016  4  /usr/share/bash-completion/bash_completion
+|4,39,2016,4,1714597778,"/usr/share/bash-completion/bash_completion"
+-'  2016  4  /usr/share/bash-completion/bash_completion
+|4,39,2016,4,1714597778,"/usr/share/bash-completion/bash_completion"
+-'  1842  4  /usr/share/bash-completion/bash_completion
+|4,39,1842,4,1714597777,"/usr/share/bash-completion/bash_completion"
+-'  1842  4  /usr/share/bash-completion/bash_completion
+|4,39,1842,4,1714597777,"/usr/share/bash-completion/bash_completion"
+-'  1842  4  /usr/share/bash-completion/bash_completion
+|4,39,1842,4,1714597777,"/usr/share/bash-completion/bash_completion"
+-'  1842  4  /usr/share/bash-completion/bash_completion
+|4,39,1842,4,1714597777,"/usr/share/bash-completion/bash_completion"
+-'  1842  4  /usr/share/bash-completion/bash_completion
+|4,39,1842,4,1714597777,"/usr/share/bash-completion/bash_completion"
+-'  1842  4  /usr/share/bash-completion/bash_completion
+|4,39,1842,4,1714597777,"/usr/share/bash-completion/bash_completion"
+-'  1842  4  /usr/share/bash-completion/bash_completion
+|4,39,1842,4,1714597777,"/usr/share/bash-completion/bash_completion"
+-'  1842  4  /usr/share/bash-completion/bash_completion
+|4,39,1842,4,1714597777,"/usr/share/bash-completion/bash_completion"
+-'  1842  4  /usr/share/bash-completion/bash_completion
+|4,39,1842,4,1714597777,"/usr/share/bash-completion/bash_completion"
+-'  1565  4  /usr/share/bash-completion/bash_completion
+|4,39,1565,4,1714597776,"/usr/share/bash-completion/bash_completion"
+-'  1565  4  /usr/share/bash-completion/bash_completion
+|4,39,1565,4,1714597776,"/usr/share/bash-completion/bash_completion"
+-'  1565  4  /usr/share/bash-completion/bash_completion
+|4,39,1565,4,1714597776,"/usr/share/bash-completion/bash_completion"
+-'  1565  4  /usr/share/bash-completion/bash_completion
+|4,39,1565,4,1714597776,"/usr/share/bash-completion/bash_completion"
+-'  1565  4  /usr/share/bash-completion/bash_completion
+|4,39,1565,4,1714597776,"/usr/share/bash-completion/bash_completion"
+-'  1565  4  /usr/share/bash-completion/bash_completion
+|4,39,1565,4,1714597776,"/usr/share/bash-completion/bash_completion"
 
 # Buffer list:
-%~/pytest_concate/group_errors.bash	4	0
-%~/pytest_concate/pyproject.toml	5	126
-%~/hateoas/pyrightconfig.json	1	0
+%~/.config/todo.txt	12	52
 
 # History of marks within files (newest to oldest):
 
+> ~/.config/todo.txt
+	*	1714602112	0
+	"	12	52
+	^	14	20
+	.	14	19
+	+	15	94
+	+	16	0
+	+	9	0
+	+	18	51
+	+	10	107
+	+	9	0
+	+	19	0
+	+	9	9
+	+	14	0
+	+	17	0
+	+	19	0
+	+	9	0
+	+	4	0
+	+	7	15
+	+	6	64
+	+	7	61
+	+	5	9
+	+	10	5
+	+	15	5
+	+	18	0
+	+	3	84
+	+	11	114
+	+	12	52
+	+	11	4
+	+	12	0
+	+	9	19
+	+	14	19
+
+> /etc/bash_completion.d/fzf_completion
+	*	1714598978	0
+	"	33	0
+
+> ~/.config/setup.sh
+	*	1714598826	0
+	"	36	39
+	.	36	42
+	+	13	68
+	+	13	27
+	+	5	0
+	+	4	1
+	+	13	34
+	+	4	0
+	+	5	0
+	+	13	0
+	+	4	0
+	+	13	0
+	+	3	0
+	+	4	0
+	+	13	0
+	+	5	0
+	+	13	0
+	+	13	1
+	+	13	8
+	+	13	10
+	+	13	155
+	+	13	8
+	+	13	123
+	+	13	0
+	+	24	26
+	+	25	27
+	+	7	41
+	+	9	23
+	+	12	0
+	+	9	75
+	+	12	0
+	+	9	63
+	+	12	0
+	+	9	54
+	+	13	71
+	+	13	89
+	+	13	0
+	+	11	38
+	+	10	0
+	+	10	13
+	+	10	0
+	+	13	9
+	+	13	17
+	+	26	0
+	+	4	0
+	+	15	0
+	+	13	14
+	+	27	34
+	+	9	0
+	+	9	29
+	+	1	11
+	+	13	0
+	+	14	0
+	+	13	0
+	+	23	0
+	+	9	0
+	+	10	0
+	+	13	0
+	+	27	0
+	+	8	0
+	+	13	0
+	+	42	35
+	+	25	1
+	+	28	0
+	+	42	0
+	+	25	0
+	+	26	0
+	+	24	0
+	+	21	0
+	+	16	0
+	+	44	45
+	+	41	1
+	+	42	0
+	+	36	42
+
+> /etc/profile.d/bash_completion.sh
+	*	1714598108	0
+	"	3	0
+	.	3	0
+	+	3	0
+
+> /etc/profile
+	*	1714598008	0
+	"	4	0
+	.	27	0
+	+	27	0
+
+> /usr/share/bash-completion/bash_completion
+	*	1714597779	0
+	"	2197	4
+
+> ~/.inputrc
+	*	1714595357	0
+	"	1	0
+	^	2	2
+	.	2	1
+	+	2	1
+
+> ~/.config/setup.bash
+	*	1714595240	0
+	"	1	0
+
+> ~/.config/config.bash
+	*	1714595231	0
+	"	1	0
+
+> ~/.config/bindings.inputrc
+	*	1714595218	0
+	"	16	0
+	^	16	30
+	.	16	29
+	+	16	29
+
+> ~/.profile
+	*	1714594789	0
+	"	1	0
+	.	12	0
+	+	12	0
+
+> ~/.bashrc
+	*	1714594719	0
+	"	1	0
+	.	121	0
+	+	121	0
+	+	121	55
+	+	121	0
+	+	121	47
+	+	126	0
+	+	121	0
+	+	126	0
+	+	125	0
+	+	129	0
+	+	130	0
+	+	120	0
+	+	123	0
+	+	118	0
+	+	120	0
+	+	123	0
+	+	6	5
+	+	5	0
+	+	6	0
+	+	124	0
+	+	109	0
+	+	120	0
+	+	114	5
+	+	115	4
+	+	116	0
+	+	117	4
+	+	115	0
+	+	115	4
+	+	117	0
+	+	116	4
+	+	114	4
+	+	118	0
+	+	112	0
+	+	115	0
+	+	123	0
+	+	121	0
+
+> ~/vimfiles/todo/240502.txt
+	*	1714594063	0
+	"	1	0
+
+> ~/vimfiles/todo/main-2024-05-May.txt
+	*	1714594061	0
+	"	1	0
+
+> ~/tooling/my-programming-language.txt
+	*	1714594000	0
+	"	5	0
+	^	35	8
+	.	35	8
+	+	26	65
+	+	28	18
+	+	2	0
+	+	23	0
+	+	4	0
+	+	3	0
+	+	25	0
+	+	3	78
+	+	24	0
+	+	2	0
+	+	23	0
+	+	35	0
+	+	35	4
+	+	35	5
+	+	35	7
+	+	35	5
+	+	35	7
+	+	35	8
+	+	35	6
+	+	35	8
+	+	35	5
+	+	35	3
+	+	35	5
+	+	35	4
+	+	35	8
+	+	35	0
+	+	34	126
+	+	35	45
+	+	35	0
+	+	35	96
+	+	36	0
+	+	35	8
+
+> ~/tooling/sample.txt
+	*	1714593189	0
+	"	21	0
+	^	22	0
+	.	21	0
+	+	4	23
+	+	2	10
+	+	19	0
+	+	8	14
+	+	11	5
+	+	12	19
+	+	17	10
+	+	18	0
+	+	10	17
+	+	18	2
+	+	2	14
+	+	4	23
+	+	5	2
+	+	19	0
+	+	27	31
+	+	26	14
+	+	27	14
+	+	23	0
+	+	24	65
+	+	23	9
+	+	24	9
+	+	26	9
+	+	27	9
+	+	20	11
+	+	21	0
+
+> ~/Twitch/coffee-vps/code/twitch_utilities.py
+	*	1714567870	0
+	"	1208	4
+	.	1209	0
+	+	32	25
+	+	5191	0
+	+	5192	47
+	+	5189	4
+	+	5347	0
+	+	1209	0
+	a	5346	16
+
+> ~/pytest_concate/test-server.py
+	*	1714567818	0
+	"	207	32
+	^	207	33
+	.	55	0
+	+	927	0
+	+	62	7
+	+	71	81
+	+	61	0
+	+	11	0
+	+	152	0
+	+	42	0
+	+	43	40
+	+	45	15
+	+	44	17
+	+	45	29
+	+	44	18
+	+	45	35
+	+	35	0
+	+	36	4
+	+	927	0
+	+	55	0
+
 > ~/pytest_concate/pyproject.toml
-	*	1714560975	0
-	"	5	126
-	^	5	127
-	.	5	126
+	*	1714567750	0
+	"	9	1
+	^	9	2
+	.	9	1
 	+	2	15
 	+	3	16
 	+	10	0
@@ -8428,6 +8804,194 @@ $
 	+	8	95
 	+	7	78
 	+	5	126
+	+	5	1
+	+	9	1
+
+> ~/.vim/ide.vim
+	*	1714567603	0
+	"	152	46
+	^	152	47
+	.	152	46
+	+	183	5
+	+	183	0
+	+	183	35
+	+	183	0
+	+	175	0
+	+	183	0
+	+	175	0
+	+	176	3
+	+	183	0
+	+	180	3
+	+	179	0
+	+	177	59
+	+	182	0
+	+	177	94
+	+	180	81
+	+	182	0
+	+	180	80
+	+	1	150
+	+	143	36
+	+	178	0
+	+	177	0
+	+	178	41
+	+	181	0
+	+	180	0
+	+	181	41
+	+	143	43
+	+	177	4
+	+	178	4
+	+	180	4
+	+	181	4
+	+	296	7
+	+	462	14
+	+	463	0
+	+	464	0
+	+	465	45
+	+	466	0
+	+	69	0
+	+	65	18
+	+	69	0
+	+	234	0
+	+	167	46
+	+	168	0
+	+	154	19
+	+	168	0
+	+	167	34
+	+	134	7
+	+	134	51
+	+	134	0
+	+	134	50
+	+	134	8
+	+	134	38
+	+	134	73
+	+	134	0
+	+	111	0
+	+	111	32
+	+	111	0
+	+	111	16
+	+	111	30
+	+	111	0
+	+	111	45
+	+	111	0
+	+	111	43
+	+	111	0
+	+	111	16
+	+	111	0
+	+	111	24
+	+	134	50
+	+	134	73
+	+	111	0
+	+	134	0
+	+	147	32
+	+	134	0
+	+	154	0
+	+	168	0
+	+	167	34
+	+	143	52
+	+	152	46
+
+> ~/hateoas/hateoas-api.py
+	*	1714567323	0
+	"	357	8
+	^	200	24
+	.	200	23
+	+	1	0
+	+	2	0
+	+	41	0
+	+	41	111
+	+	41	116
+	+	41	27
+	+	41	108
+	+	41	0
+	+	41	83
+	+	41	0
+	+	41	77
+	+	41	0
+	+	41	88
+	+	41	0
+	+	1	0
+	+	1	58
+	+	1	37
+	+	1	38
+	+	1	4
+	+	1	13
+	+	1	4
+	+	41	124
+	+	41	26
+	+	41	30
+	+	41	0
+	+	41	30
+	+	41	31
+	+	41	0
+	+	41	47
+	+	33	0
+	+	34	0
+	+	34	4
+	+	34	0
+	+	33	49
+	+	33	36
+	+	33	0
+	+	32	86
+	+	11	0
+	+	9	16
+	+	11	0
+	+	9	8
+	+	11	42
+	+	10	0
+	+	1	0
+	+	31	98
+	+	33	82
+	+	41	59
+	+	12	0
+	+	11	21
+	+	11	2
+	+	11	37
+	+	11	4
+	+	11	14
+	+	12	28
+	+	11	37
+	+	41	33
+	+	41	54
+	+	41	0
+	+	41	47
+	+	41	24
+	+	41	101
+	+	41	31
+	+	41	24
+	+	41	0
+	+	41	103
+	+	11	31
+	+	11	66
+	+	41	77
+	+	41	0
+	+	243	0
+	+	232	0
+	+	200	0
+	+	201	28
+	+	217	0
+	+	218	28
+	+	230	0
+	+	217	0
+	+	217	74
+	+	230	55
+	+	230	24
+	+	217	0
+	+	230	0
+	+	224	0
+	+	205	0
+	+	203	0
+	+	215	0
+	+	216	0
+	+	203	0
+	+	204	0
+	+	202	0
+	+	206	118
+	+	220	33
+	+	229	21
+	+	222	0
+	+	224	0
+	+	223	0
+	+	200	23
 
 > ~/hateoas/pyrightconfig.json
 	*	1714560968	0
@@ -8676,109 +9240,6 @@ $
 	+	57	0
 	+	65	37
 
-> ~/hateoas/hateoas-api.py
-	*	1714559338	0
-	"	121	151
-	^	200	24
-	.	200	23
-	+	1	0
-	+	2	0
-	+	41	0
-	+	41	111
-	+	41	116
-	+	41	27
-	+	41	108
-	+	41	0
-	+	41	83
-	+	41	0
-	+	41	77
-	+	41	0
-	+	41	88
-	+	41	0
-	+	1	0
-	+	1	58
-	+	1	37
-	+	1	38
-	+	1	4
-	+	1	13
-	+	1	4
-	+	41	124
-	+	41	26
-	+	41	30
-	+	41	0
-	+	41	30
-	+	41	31
-	+	41	0
-	+	41	47
-	+	33	0
-	+	34	0
-	+	34	4
-	+	34	0
-	+	33	49
-	+	33	36
-	+	33	0
-	+	32	86
-	+	11	0
-	+	9	16
-	+	11	0
-	+	9	8
-	+	11	42
-	+	10	0
-	+	1	0
-	+	31	98
-	+	33	82
-	+	41	59
-	+	12	0
-	+	11	21
-	+	11	2
-	+	11	37
-	+	11	4
-	+	11	14
-	+	12	28
-	+	11	37
-	+	41	33
-	+	41	54
-	+	41	0
-	+	41	47
-	+	41	24
-	+	41	101
-	+	41	31
-	+	41	24
-	+	41	0
-	+	41	103
-	+	11	31
-	+	11	66
-	+	41	77
-	+	41	0
-	+	243	0
-	+	232	0
-	+	200	0
-	+	201	28
-	+	217	0
-	+	218	28
-	+	230	0
-	+	217	0
-	+	217	74
-	+	230	55
-	+	230	24
-	+	217	0
-	+	230	0
-	+	224	0
-	+	205	0
-	+	203	0
-	+	215	0
-	+	216	0
-	+	203	0
-	+	204	0
-	+	202	0
-	+	206	118
-	+	220	33
-	+	229	21
-	+	222	0
-	+	224	0
-	+	223	0
-	+	200	23
-
 > ~/hateoas/dbutils.py
 	*	1714559310	0
 	"	8	4
@@ -8923,79 +9384,6 @@ $
 	+	10	72
 	+	9	6
 
-> ~/.config/setup.sh
-	*	1714556382	0
-	"	1	0
-	^	9	2
-	.	21	0
-	+	13	68
-	+	13	27
-	+	5	0
-	+	4	1
-	+	13	34
-	+	4	0
-	+	5	0
-	+	13	0
-	+	4	0
-	+	13	0
-	+	3	0
-	+	4	0
-	+	13	0
-	+	5	0
-	+	13	0
-	+	13	1
-	+	13	8
-	+	13	10
-	+	13	155
-	+	13	8
-	+	13	123
-	+	13	0
-	+	24	26
-	+	25	27
-	+	7	41
-	+	9	23
-	+	12	0
-	+	9	75
-	+	12	0
-	+	9	63
-	+	12	0
-	+	9	54
-	+	13	71
-	+	13	89
-	+	13	0
-	+	11	38
-	+	10	0
-	+	10	13
-	+	10	0
-	+	13	9
-	+	13	17
-	+	26	0
-	+	4	0
-	+	15	0
-	+	13	14
-	+	27	34
-	+	9	0
-	+	9	29
-	+	1	11
-	+	13	0
-	+	14	0
-	+	13	0
-	+	23	0
-	+	9	0
-	+	10	0
-	+	13	0
-	+	27	0
-	+	8	0
-	+	13	0
-	+	30	35
-	+	25	1
-	+	28	0
-	+	31	0
-	+	25	0
-	+	26	0
-	+	24	0
-	+	21	0
-
 > ~/pytest_concate/requirements.txt
 	*	1714556332	0
 	"	5	0
@@ -9083,13 +9471,6 @@ $
 > /tmp/refresh_downloads_table.lock
 	*	1714464516	0
 	"	1	0
-
-> ~/.config/bindings.inputrc
-	*	1714453356	0
-	"	5	14
-	^	16	30
-	.	16	29
-	+	16	29
 
 > ~/hateoas/requirements.txt
 	*	1714453130	0
@@ -11028,86 +11409,6 @@ $
 	+	3	3
 	+	4	16
 
-> ~/.vim/ide.vim
-	*	1714037177	0
-	"	167	0
-	.	167	34
-	+	183	5
-	+	183	0
-	+	183	35
-	+	183	0
-	+	175	0
-	+	183	0
-	+	175	0
-	+	176	3
-	+	183	0
-	+	180	3
-	+	179	0
-	+	177	59
-	+	182	0
-	+	177	94
-	+	180	81
-	+	182	0
-	+	180	80
-	+	1	150
-	+	143	36
-	+	178	0
-	+	177	0
-	+	178	41
-	+	181	0
-	+	180	0
-	+	181	41
-	+	143	43
-	+	177	4
-	+	178	4
-	+	180	4
-	+	181	4
-	+	296	7
-	+	462	14
-	+	463	0
-	+	464	0
-	+	465	45
-	+	466	0
-	+	69	0
-	+	65	18
-	+	69	0
-	+	234	0
-	+	167	46
-	+	168	0
-	+	154	19
-	+	168	0
-	+	167	34
-	+	134	7
-	+	134	51
-	+	134	0
-	+	134	50
-	+	134	8
-	+	134	38
-	+	134	73
-	+	134	0
-	+	111	0
-	+	111	32
-	+	111	0
-	+	111	16
-	+	111	30
-	+	111	0
-	+	111	45
-	+	111	0
-	+	111	43
-	+	111	0
-	+	111	16
-	+	111	0
-	+	111	24
-	+	134	50
-	+	134	73
-	+	111	0
-	+	134	0
-	+	147	32
-	+	134	0
-	+	154	0
-	+	168	0
-	+	167	34
-
 > ~/tooling/main.txt
 	*	1714037088	0
 	"	1	0
@@ -11798,75 +12099,9 @@ $
 	*	1713776860	0
 	"	1	0
 
-> ~/.config/todo.txt
-	*	1713774456	0
-	"	1	0
-	^	1	10
-	.	1	0
-	+	5	94
-	+	6	0
-	+	1	0
-	+	8	51
-	+	2	107
-	+	1	0
-	+	9	0
-	+	1	9
-	+	4	0
-	+	7	0
-	+	9	0
-	+	1	0
-
 > /usr/share/vim/vim90/doc/intro.txt
 	*	1713774365	0
 	"	512	4
-
-> /usr/share/bash-completion/bash_completion
-	*	1713773520	0
-	"	2111	22
-
-> ~/.bashrc
-	*	1713773507	0
-	"	114	6
-	.	115	0
-	+	121	0
-	+	121	55
-	+	121	0
-	+	121	47
-	+	126	0
-	+	121	0
-	+	126	0
-	+	125	0
-	+	129	0
-	+	130	0
-	+	120	0
-	+	123	0
-	+	118	0
-	+	120	0
-	+	123	0
-	+	6	5
-	+	5	0
-	+	6	0
-	+	124	0
-	+	109	0
-	+	120	0
-	+	114	5
-	+	115	4
-	+	116	0
-	+	117	4
-	+	115	0
-	+	115	4
-	+	117	0
-	+	116	4
-	+	114	4
-	+	118	0
-	+	112	0
-	+	115	0
-
-> ~/.profile
-	*	1713773466	0
-	"	12	0
-	.	12	0
-	+	12	0
 
 > /etc/bash_completion
 	*	1713773311	0
@@ -25589,18 +25824,6 @@ $
 	*	1690935138	0
 	"	468	4
 
-> ~/Twitch/coffee-vps/code/twitch_utilities.py
-	*	1690924566	0
-	"	32	0
-	^	5192	47
-	.	5347	0
-	+	32	25
-	+	5191	0
-	+	5192	47
-	+	5189	4
-	+	5347	0
-	a	5346	16
-
 > ~/Twitch/coffee-vps/flask-vue/vuejs/Types.js
 	*	1690904737	0
 	"	1	0
@@ -26624,13 +26847,6 @@ $
 > /tmp/mru/v01/item.txt
 	*	1688309447	0
 	"	1	0
-
-> ~/.inputrc
-	*	1685570573	0
-	"	2	1
-	^	2	2
-	.	2	1
-	+	2	1
 
 > ~/awk_function.sh
 	*	1685569328	0
