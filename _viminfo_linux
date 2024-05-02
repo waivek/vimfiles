@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/\C\<_init_completion\>
+~MSle0~/ready
 
 # Last Substitute Search Pattern:
 ~MSle0&:
@@ -21,21 +21,137 @@ $
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1714602112,,"q"
+|2,0,1714652888,,"q"
+:qa
+|2,0,1714640168,,"qa"
+:e .bashrc
+|2,0,1714640159,,"e .bashrc"
+:e ali
+|2,0,1714640142,,"e ali"
+:e setup.zsh
+|2,0,1714640038,,"e setup.zsh"
+:14
+|2,0,1714637594,,"14"
+:75
+|2,0,1714637571,,"75"
 :q!
-|2,0,1714598109,,"q!"
+|2,0,1714636769,,"q!"
+:echo "Hello, World!"
+|2,0,1714636738,,"echo \"Hello, World!\""
+:ll
+|2,0,1714636732,,"ll"
+:lopen
+|2,0,1714636696,,"lopen"
+:CocRestart
+|2,0,1714633424,,"CocRestart"
+:b /home/vivek/.vim/vimrc
+|2,0,1714633418,,"b /home/vivek/.vim/vimrc"
+:echo g:WorkspaceFolders
+|2,0,1714633402,,"echo g:WorkspaceFolders"
+:echo g:coc_service_initialized
+|2,0,1714633391,,"echo g:coc_service_initialized"
+:h g:coc_status
+|2,0,1714633369,,"h g:coc_status"
+:echo g:coc_status
+|2,0,1714633350,,"echo g:coc_status"
+:echo CocAction('services')
+|2,0,1714633323,,"echo CocAction('services')"
+:MRU py
+|2,0,1714633312,,"MRU py"
+:echo CocActionAsync('services')
+|2,0,1714633292,,"echo CocActionAsync('services')"
+:call CocActionAsync('services')
+|2,0,1714633289,,"call CocActionAsync('services')"
+:h coc-nvim
+|2,0,1714633250,,"h coc-nvim"
+:echo coc#float#get_height(
+|2,0,1714633249,,"echo coc#float#get_height("
+:echo coc#status()
+|2,0,1714633206,,"echo coc#status()"
+:echo coc#stats()
+|2,0,1714633204,,"echo coc#stats()"
+:echo coc#statusasdf()
+|2,0,1714633198,,"echo coc#statusasdf()"
+:echo coc#statusasdf
+|2,0,1714633197,,"echo coc#statusasdf"
+:echo
+|2,0,1714633190,,"echo"
+:MRU hate
+|2,0,1714631611,,"MRU hate"
+:e
+|2,0,1714631587,,"e"
+:CocCommand workspace.showOutput
+|2,0,1714631543,,"CocCommand workspace.showOutput"
+:CocList
+|2,0,1714631450,,"CocList"
+:Jprevious
+|2,0,1714631329,,"Jprevious"
+:MRU ide
+|2,0,1714631321,,"MRU ide"
+:echo g:coc_workspace_initialized
+|2,0,1714631318,,"echo g:coc_workspace_initialized"
+:h coc
+|2,0,1714631307,,"h coc"
+:CocConfig
+|2,0,1714631249,,"CocConfig"
+:!which python
+|2,0,1714631238,,"!which python"
+:h direnv
+|2,0,1714631214,,"h direnv"
+:PlugInstall
+|2,0,1714631190,,"PlugInstall"
+:so %
+|2,0,1714631188,,"so %"
+:edit $MYVIMRC
+|2,0,1714631178,,"edit $MYVIMRC"
+:!where python
+|2,0,1714630640,,"!where python"
+:!eval "$(direnv export bash)"
+|2,0,1714630623,,"!eval \"$(direnv export bash)\""
+:MRU 
+|2,0,1714630612,,"MRU "
+:MRU direnv
+|2,0,1714630604,,"MRU direnv"
+:!python
+|2,0,1714630487,,"!python"
+:echo &cdpath
+|2,0,1714630438,,"echo &cdpath"
+:verbose pwd
+|2,0,1714630420,,"verbose pwd"
+:tcd .
+|2,0,1714630417,,"tcd ."
+:pwd
+|2,0,1714630408,,"pwd"
+:lcd .
+|2,0,1714630402,,"lcd ."
+:cd
+|2,0,1714630394,,"cd"
+:verb
+|2,0,1714630393,,"verb"
+:lcd
+|2,0,1714630385,,"lcd"
+:ver
+|2,0,1714630384,,"ver"
+:h :pwd
+|2,0,1714630376,,"h :pwd"
+:echo cd
+|2,0,1714630371,,"echo cd"
+:MRU hateo
+|2,0,1714630354,,"MRU hateo"
+:h pwd
+|2,0,1714630011,,"h pwd"
+:MRU 15:my-programming-language.txt
+|2,0,1714627936,,"MRU 15:my-programming-language.txt"
+:e ~/.config/todo.txt
+|2,0,1714626228,,"e ~/.config/todo.txt"
 :e ~/b
 |2,0,1714595218,,"e ~/b"
 :MRU ba
 |2,0,1714595213,,"MRU ba"
 :MRU bind
 |2,0,1714595203,,"MRU bind"
-:e .bashrc
-|2,0,1714594643,,"e .bashrc"
 :MRU to
 |2,0,1714594571,,"MRU to"
-:Jprevious
-|2,0,1714594062,,"Jprevious"
 :e .
 |2,0,1714594001,,"e ."
 :e 
@@ -50,8 +166,6 @@ $
 |2,0,1714593195,,"Rename my-programming-language.txt"
 :e ~/tooling/sample.txt
 |2,0,1714592925,,"e ~/tooling/sample.txt"
-:lopen
-|2,0,1714567851,,"lopen"
 :ALEInfo
 |2,0,1714567846,,"ALEInfo"
 :MRU twitch_uti
@@ -68,24 +182,14 @@ $
 |2,0,1714567624,,"copen"
 :k
 |2,0,1714567622,,"k"
-:qa
-|2,0,1714567604,,"qa"
-:so %
-|2,0,1714567603,,"so %"
-:MRU ide
-|2,0,1714567592,,"MRU ide"
 :w
 |2,0,1714567554,,"w"
-:e
-|2,0,1714567550,,"e"
 :let 
 |2,0,1714567533,,"let "
 :qa!
 |2,0,1714567383,,"qa!"
 :diffthis
 |2,0,1714567323,,"diffthis"
-:MRU hateo
-|2,0,1714567320,,"MRU hateo"
 :MRU 2:pyproject.toml
 |2,0,1714560970,,"MRU 2:pyproject.toml"
 :MRU pyr
@@ -128,8 +232,6 @@ $
 |2,0,1714559248,,"MRU ha"
 :747
 |2,0,1714558343,,"747"
-:MRU 
-|2,0,1714558341,,"MRU "
 :CocList diagnostics
 |2,0,1714557746,,"CocList diagnostics"
 :Rename pyproject.toml
@@ -148,8 +250,6 @@ $
 |2,0,1714485002,,"e populate_test_tasks.py"
 :e templates/
 |2,0,1714484866,,"e templates/"
-:pwd
-|2,0,1714484252,,"pwd"
 :Rename tasks_test.sql
 |2,0,1714484167,,"Rename tasks_test.sql"
 :R
@@ -234,8 +334,6 @@ $
 |2,0,1714328161,,"norm"
 :MRU 4:cron-concerns.txt
 |2,0,1714328077,,"MRU 4:cron-concerns.txt"
-:MRU py
-|2,0,1714309031,,"MRU py"
 :e c
 |2,0,1714308247,,"e c"
 :Copilot panel
@@ -262,8 +360,6 @@ $
 |2,0,1714221681,,"MRU lo"
 :echo g:copilot_workspace_folders
 |2,0,1714221134,,"echo g:copilot_workspace_folders"
-:edit $MYVIMRC
-|2,0,1714221123,,"edit $MYVIMRC"
 :e cron-concerns.txt
 |2,0,1714220942,,"e cron-concerns.txt"
 : w ~/tooling/cron.man
@@ -308,8 +404,6 @@ $
 |2,0,1714141487,,"e input.py"
 :Template
 |2,0,1714137290,,"Template"
-:CocConfig
-|2,0,1714116276,,"CocConfig"
 :e pyrightconfig.json
 |2,0,1714110710,,"e pyrightconfig.json"
 :CocInfo
@@ -318,8 +412,6 @@ $
 |2,0,1714110631,,"e orm.py"
 :MRU or
 |2,0,1714110629,,"MRU or"
-:CocRestart
-|2,0,1714110627,,"CocRestart"
 :%s/,\s*\zs\(FOREIGN\|UNIQUE\)/\r    \0/g
 |2,0,1714109035,,"%s/,\\s*\\zs\\(FOREIGN\\|UNIQUE\\)/\\r    \\0/g"
 :%s/,\s*\zs\(FOREIGN\|UNIQUE\)/\r    \0
@@ -352,8 +444,6 @@ $
 |2,0,1714062660,,"e por"
 :e refresh-downloads-db.bash
 |2,0,1714062071,,"e refresh-downloads-db.bash"
-:MRU hate
-|2,0,1714062048,,"MRU hate"
 :b db2dl.py
 |2,0,1714054869,,"b db2dl.py"
 :!rm /tmp/db2dl.py.lock
@@ -588,8 +678,6 @@ $
 |2,0,1713929125,,"h FZF"
 :FZF 
 |2,0,1713929119,,"FZF "
-:h coc-nvim
-|2,0,1713928768,,"h coc-nvim"
 :h coc-config
 |2,0,1713928754,,"h coc-config"
 :Coc
@@ -634,8 +722,6 @@ $
 |2,0,1713887131,,"Vista"
 :VimFoldh
 |2,0,1713887129,,"VimFoldh"
-:PlugInstall
-|2,0,1713887112,,"PlugInstall"
 :e ~/.vim/indent/py
 |2,0,1713885773,,"e ~/.vim/indent/py"
 :verbose set &indentexpr
@@ -726,12 +812,8 @@ $
 |2,0,1713790522,,"s/let/\\0"
 :MRU vim
 |2,0,1713790452,,"MRU vim"
-:b /home/vivek/.vim/vimrc
-|2,0,1713790344,,"b /home/vivek/.vim/vimrc"
 :ALEDi
 |2,0,1713790338,,"ALEDi"
-:CocList
-|2,0,1713790301,,"CocList"
 :CocList errors
 |2,0,1713790299,,"CocList errors"
 :e v6.txt
@@ -824,8 +906,6 @@ $
 |2,0,1713758259,,"MRU python"
 :MRU gen
 |2,0,1713758253,,"MRU gen"
-:e ~/.config/todo.txt
-|2,0,1713758083,,"e ~/.config/todo.txt"
 :34
 |2,0,1713754107,,"34"
 :MRU ni
@@ -1500,8 +1580,6 @@ $
 |2,0,1712503720,,"cp"
 :grep -g '*.py' db_init
 |2,0,1712503589,,"grep -g '*.py' db_init"
-:ll
-|2,0,1712497920,,"ll"
 :b sse.py
 |2,0,1712496150,,"b sse.py"
 :b hateo
@@ -2988,8 +3066,6 @@ $
 |2,0,1694046102,,"1255"
 :verbose map <space>f
 |2,0,1694046099,,"verbose map <space>f"
-:ver
-|2,0,1694046091,,"ver"
 :e find.vim
 |2,0,1694046077,,"e find.vim"
 :find Embed.vue
@@ -4074,8 +4150,6 @@ $
 |2,0,1692449472,,"call CocAction(\"codeAction\")"
 :MRU fun
 |2,0,1692442616,,"MRU fun"
-:!python
-|2,0,1692442278,,"!python"
 :python
 |2,0,1692442276,,"python"
 :MRU intro
@@ -4450,8 +4524,6 @@ $
 |2,0,1691874307,,"CocInstall @yaegassy/coc-typescript-vue-plugin"
 :CocInstall @yaegassy/coc-volar
 |2,0,1691874258,,"CocInstall @yaegassy/coc-volar"
-:echo "Hello, World!"
-|2,0,1691873060,,"echo \"Hello, World!\""
 :Fz
 |2,0,1691872966,,"Fz"
 :set grepprg
@@ -4706,8 +4778,6 @@ $
 |2,0,1691399322,,"15"
 :echo g:
 |2,0,1691399220,,"echo g:"
-:echo coc#status()
-|2,0,1691399132,,"echo coc#status()"
 :call ale#events#Init()
 |2,0,1691399088,,"call ale#events#Init()"
 :h quick-lint-js
@@ -4782,8 +4852,6 @@ $
 |2,0,1691290338,,"e ~/.vim/plugin/goto_method.vim"
 :verbose map gm
 |2,0,1691290331,,"verbose map gm"
-:verb
-|2,0,1691290320,,"verb"
 :MRU ytjs.
 |2,0,1691142679,,"MRU ytjs."
 :MRU 3:yt_chat.py
@@ -5764,6 +5832,12 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/ready
+|2,1,1714633252,47,"ready"
+?/workspace
+|2,1,1714631535,47,"workspace"
+?/directory
+|2,1,1714631507,47,"directory"
 ?/_init_completion
 |2,1,1714597745,47,"_init_completion"
 ?/_cd
@@ -6884,8 +6958,6 @@ $
 |2,1,1694695750,47,"\\/clips\\/"
 ?/\C\<clips\>
 |2,1,1694695724,47,"\\C\\<clips\\>"
-?/directory
-|2,1,1694419523,47,"directory"
 ?/dir
 |2,1,1694419439,47,"dir"
 ?/working_dir
@@ -8018,6 +8090,8 @@ $
 |2,1,1685152394,47,"handle_error"
 
 # Expression History (newest to oldest):
+=g:coc_status
+|2,2,1714633372,,"g:coc_status"
 =expand("%:p")
 |2,2,1710800840,,"expand(\"%:p\")"
 =echo wildmenumode()
@@ -8032,6 +8106,8 @@ $
 |2,2,1688309303,,"v:oldfiles"
 
 # Input Line History (newest to oldest):
+@/home/vivek/hateoas
+|2,3,1714631440,,"/home/vivek/hateoas"
 @dict
 |2,3,1714484932,,"dict"
 @div>
@@ -8140,71 +8216,42 @@ $
 |2,4,1693311567,,"cont"
 
 # Registers:
-"0	LINE	0
-	_my_cd_completion() {
-	  compopt -o filenames
-	  local cur=${COMP_WORDS[COMP_CWORD]}
-	  COMPREPLY=($(compgen -d -- "$cur"))
-	}
-|3,0,0,1,5,0,1714598753,"_my_cd_completion() {","  compopt -o filenames","  local cur=${COMP_WORDS[COMP_CWORD]}","  COMPREPLY=($(compgen -d -- \"$cur\"))","}"
+""0	LINE	0
+	export SHELL=/bin/bash
+	export STARSHIP_CONFIG=~/.config/starship/starship.toml
+|3,1,0,1,2,0,1714640101,"export SHELL=/bin/bash","export STARSHIP_CONFIG=~/.config/starship/starship.toml"
 "1	LINE	0
-	
-|3,0,1,1,1,0,1714598755,""
+	export SHELL=/bin/bash
+	export STARSHIP_CONFIG=~/.config/starship/starship.toml
+|3,0,1,1,2,0,1714640097,"export SHELL=/bin/bash","export STARSHIP_CONFIG=~/.config/starship/starship.toml"
 "2	LINE	0
-	_my_cd_completion() {
-	  compopt -o filenames
-	  local cur=${COMP_WORDS[COMP_CWORD]}
-	  COMPREPLY=($(compgen -d -- "$cur"))
-	}
-|3,0,2,1,5,0,1714598751,"_my_cd_completion() {","  compopt -o filenames","  local cur=${COMP_WORDS[COMP_CWORD]}","  COMPREPLY=($(compgen -d -- \"$cur\"))","}"
+	export STARSHIP_CONFIG=~/.config/starship/starship.toml
+|3,0,2,1,1,0,1714640080,"export STARSHIP_CONFIG=~/.config/starship/starship.toml"
 "3	LINE	0
-	fi
-|3,0,3,1,1,0,1714598099,"fi"
+	# ZSH_THEME="spaceship"
+|3,0,3,1,1,0,1714637639,"# ZSH_THEME=\"spaceship\""
 "4	LINE	0
-	    - [6] in-built form validation without js
-	    - [7] in-built form validation without js
-|3,0,4,1,2,0,1714593456,"    - [6] in-built form validation without js","    - [7] in-built form validation without js"
+	# ZSH_THEME="spaceship"
+	# source "$ZSH_CUSTOM/themes/$ZSH_THEME.zsh-theme"
+|3,0,4,1,2,0,1714637637,"# ZSH_THEME=\"spaceship\"","# source \"$ZSH_CUSTOM/themes/$ZSH_THEME.zsh-theme\""
 "5	LINE	0
-	
-	components
-	textbox
-	button
-	radio
-	dropdown
-	checkbox
-	toggle
-	form
-	table
-	modal
-	tooltip
-|3,0,5,1,12,0,1714593450,"","components","textbox","button","radio","dropdown","checkbox","toggle","form","table","modal","tooltip"
+	# SPACESHIP_PROMPT_ORDER=(user host dir git node python exec_time line_sep jobs exit_code char)
+	# SPACESHIP_DIR_TRUNC=0
+	# SPACESHIP_NODE_ASYNC=false
+	# SPACESHIP_PYTHON_ASYNC=false
+|3,0,5,1,4,0,1714637634,"# SPACESHIP_PROMPT_ORDER=(user host dir git node python exec_time line_sep jobs exit_code char)","# SPACESHIP_DIR_TRUNC=0","# SPACESHIP_NODE_ASYNC=false","# SPACESHIP_PYTHON_ASYNC=false"
 "6	LINE	0
-	toast
-	spinner
-	progress
-	slider
-	calendar
-	chart
-	map
-	video
-	audio
-	image
-	file
-	markdown
-	html
 	
-	
-	
-|3,0,6,1,16,0,1714593442,"toast","spinner","progress","slider","calendar","chart","map","video","audio","image","file","markdown","html","","",""
+|3,0,6,1,1,0,1714636757,""
 "7	LINE	0
-	==========
-|3,0,7,1,1,0,1714593319,"=========="
+	from typing import TypedDict
+|3,0,7,1,1,0,1714636699,"from typing import TypedDict"
 "8	LINE	0
-	# features
-|3,0,8,1,1,0,1714593297,"# features"
+	from dataclasses import field
+|3,0,8,1,1,0,1714636692,"from dataclasses import field"
 "9	LINE	0
-	feature set
-|3,0,9,1,1,0,1714593295,"feature set"
+	
+|3,0,9,1,1,0,1714633374,""
 "a	CHAR	0
 	Tabularize /-/l1c1l1c1l1
 |3,0,10,0,1,0,1714384337,"Tabularize /-/l1c1l1c1l1"
@@ -8242,280 +8289,323 @@ $
 |3,0,28,1,24,0,1712521850,"    return render_template_string(\"\"\"","    <ul>","        {% for id, name, downloaded_path, progress, status in downloads %}","            <li>","                <a href=\"/download/{{ id }}\">{{ name }}</a>","                <span>{{ status }}</span>","                <progress value=\"{{ progress }}\" max=\"100\"></progress>","                <span>{{ progress }}%</span>","                {% if status == 'paused' %}",>68
 |<"                <form method=\"POST\" action=\"/resume_download\">","                    <input type=\"hidden\" name=\"id\" value=\"{{ id }}\">","                    <input type=\"submit\" value=\"Resume\">","                </form>","                {% endif %}","                {% if status == 'downloading' %}","                <form method=\"POST\" action=\"/pause_download\">","                    <input type=\"hidden\" name=\"id\" value=\"{{ id }}\">",>61
 |<"                    <input type=\"submit\" value=\"Pause\">","                </form>","                {% endif %}","","            </li>","        {% endfor %}","    </ul>\"\"\", downloads=downloads)"
-""-	CHAR	0
-	| grep -E '/$'
-|3,1,36,0,1,0,1714598820,"| grep -E '/$'"
+"-	CHAR	0
+	bash
+|3,0,36,0,1,0,1714640053,"bash"
 
 # File marks:
-'0  12  52  ~/.config/todo.txt
-|4,48,12,52,1714602112,"~/.config/todo.txt"
-'1  33  0  /etc/bash_completion.d/fzf_completion
-|4,49,33,0,1714598980,"/etc/bash_completion.d/fzf_completion"
-'2  33  0  /etc/bash_completion.d/fzf_completion
-|4,50,33,0,1714598980,"/etc/bash_completion.d/fzf_completion"
-'3  36  39  ~/.config/setup.sh
-|4,51,36,39,1714598827,"~/.config/setup.sh"
-'4  36  39  ~/.config/setup.sh
-|4,52,36,39,1714598827,"~/.config/setup.sh"
-'5  36  39  ~/.config/setup.sh
-|4,53,36,39,1714598827,"~/.config/setup.sh"
-'6  36  39  ~/.config/setup.sh
-|4,54,36,39,1714598827,"~/.config/setup.sh"
-'7  45  0  ~/.config/setup.sh
-|4,55,45,0,1714598760,"~/.config/setup.sh"
-'8  45  0  ~/.config/setup.sh
-|4,56,45,0,1714598760,"~/.config/setup.sh"
-'9  45  0  ~/.config/setup.sh
-|4,57,45,0,1714598760,"~/.config/setup.sh"
+'0  15  79  ~/.config/setup.zsh
+|4,48,15,79,1714652889,"~/.config/setup.zsh"
+'1  4  0  ~/.config/bindings.inputrc
+|4,49,4,0,1714640350,"~/.config/bindings.inputrc"
+'2  4  0  ~/.config/bindings.inputrc
+|4,50,4,0,1714640350,"~/.config/bindings.inputrc"
+'3  4  0  ~/.config/bindings.inputrc
+|4,51,4,0,1714640350,"~/.config/bindings.inputrc"
+'4  4  0  ~/.config/bindings.inputrc
+|4,52,4,0,1714640350,"~/.config/bindings.inputrc"
+'5  123  18  ~/.bashrc
+|4,53,123,18,1714640169,"~/.bashrc"
+'6  123  18  ~/.bashrc
+|4,54,123,18,1714640169,"~/.bashrc"
+'7  123  18  ~/.bashrc
+|4,55,123,18,1714640169,"~/.bashrc"
+'8  123  18  ~/.bashrc
+|4,56,123,18,1714640169,"~/.bashrc"
+'9  123  18  ~/.bashrc
+|4,57,123,18,1714640169,"~/.bashrc"
 
 # Jumplist (newest first):
--'  12  52  ~/.config/todo.txt
-|4,39,12,52,1714602112,"~/.config/todo.txt"
--'  1  4  ~/.config/todo.txt
-|4,39,1,4,1714601945,"~/.config/todo.txt"
--'  11  0  ~/.config/todo.txt
-|4,39,11,0,1714601925,"~/.config/todo.txt"
--'  33  0  /etc/bash_completion.d/fzf_completion
-|4,39,33,0,1714598980,"/etc/bash_completion.d/fzf_completion"
--'  33  0  /etc/bash_completion.d/fzf_completion
-|4,39,33,0,1714598980,"/etc/bash_completion.d/fzf_completion"
--'  1  0  /etc/bash_completion.d/fzf_completion
-|4,39,1,0,1714598968,"/etc/bash_completion.d/fzf_completion"
--'  1  0  /etc/bash_completion.d/fzf_completion
-|4,39,1,0,1714598968,"/etc/bash_completion.d/fzf_completion"
--'  36  39  ~/.config/setup.sh
-|4,39,36,39,1714598827,"~/.config/setup.sh"
--'  36  39  ~/.config/setup.sh
-|4,39,36,39,1714598827,"~/.config/setup.sh"
--'  36  39  ~/.config/setup.sh
-|4,39,36,39,1714598827,"~/.config/setup.sh"
--'  45  0  ~/.config/setup.sh
-|4,39,45,0,1714598760,"~/.config/setup.sh"
--'  45  0  ~/.config/setup.sh
-|4,39,45,0,1714598760,"~/.config/setup.sh"
--'  45  0  ~/.config/setup.sh
-|4,39,45,0,1714598760,"~/.config/setup.sh"
--'  45  0  ~/.config/setup.sh
-|4,39,45,0,1714598760,"~/.config/setup.sh"
--'  42  0  ~/.config/setup.sh
-|4,39,42,0,1714598753,"~/.config/setup.sh"
--'  42  0  ~/.config/setup.sh
-|4,39,42,0,1714598753,"~/.config/setup.sh"
--'  42  0  ~/.config/setup.sh
-|4,39,42,0,1714598753,"~/.config/setup.sh"
--'  42  0  ~/.config/setup.sh
-|4,39,42,0,1714598753,"~/.config/setup.sh"
--'  31  26  ~/.config/setup.sh
-|4,39,31,26,1714598599,"~/.config/setup.sh"
--'  31  26  ~/.config/setup.sh
-|4,39,31,26,1714598599,"~/.config/setup.sh"
--'  31  26  ~/.config/setup.sh
-|4,39,31,26,1714598599,"~/.config/setup.sh"
--'  31  26  ~/.config/setup.sh
-|4,39,31,26,1714598599,"~/.config/setup.sh"
+-'  15  79  ~/.config/setup.zsh
+|4,39,15,79,1714652889,"~/.config/setup.zsh"
+-'  1  0  ~/.config/setup.zsh
+|4,39,1,0,1714652861,"~/.config/setup.zsh"
+-'  4  0  ~/.config/bindings.inputrc
+|4,39,4,0,1714640350,"~/.config/bindings.inputrc"
+-'  4  0  ~/.config/bindings.inputrc
+|4,39,4,0,1714640350,"~/.config/bindings.inputrc"
+-'  4  0  ~/.config/bindings.inputrc
+|4,39,4,0,1714640350,"~/.config/bindings.inputrc"
+-'  1  0  ~/.config/bindings.inputrc
+|4,39,1,0,1714640346,"~/.config/bindings.inputrc"
+-'  1  0  ~/.config/bindings.inputrc
+|4,39,1,0,1714640346,"~/.config/bindings.inputrc"
+-'  1  0  ~/.config/bindings.inputrc
+|4,39,1,0,1714640346,"~/.config/bindings.inputrc"
+-'  123  18  ~/.bashrc
+|4,39,123,18,1714640169,"~/.bashrc"
+-'  123  18  ~/.bashrc
+|4,39,123,18,1714640169,"~/.bashrc"
+-'  123  18  ~/.bashrc
+|4,39,123,18,1714640169,"~/.bashrc"
+-'  123  18  ~/.bashrc
+|4,39,123,18,1714640169,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1714640160,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1714640160,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1714640160,"~/.bashrc"
+-'  1  0  ~/.bashrc
+|4,39,1,0,1714640160,"~/.bashrc"
+-'  103  24  ~/.zshrc
+|4,39,103,24,1714640159,"~/.zshrc"
+-'  103  24  ~/.zshrc
+|4,39,103,24,1714640159,"~/.zshrc"
+-'  103  24  ~/.zshrc
+|4,39,103,24,1714640159,"~/.zshrc"
+-'  103  24  ~/.zshrc
+|4,39,103,24,1714640159,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1714640149,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1714640149,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1714640149,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1714640149,"~/.zshrc"
 -'  1  0  ~/.config/setup.sh
-|4,39,1,0,1714598573,"~/.config/setup.sh"
+|4,39,1,0,1714640145,"~/.config/setup.sh"
 -'  1  0  ~/.config/setup.sh
-|4,39,1,0,1714598573,"~/.config/setup.sh"
+|4,39,1,0,1714640145,"~/.config/setup.sh"
 -'  1  0  ~/.config/setup.sh
-|4,39,1,0,1714598573,"~/.config/setup.sh"
+|4,39,1,0,1714640145,"~/.config/setup.sh"
 -'  1  0  ~/.config/setup.sh
-|4,39,1,0,1714598573,"~/.config/setup.sh"
+|4,39,1,0,1714640145,"~/.config/setup.sh"
 -'  1  0  ~/.config/setup.sh
-|4,39,1,0,1714598573,"~/.config/setup.sh"
+|4,39,1,0,1714640145,"~/.config/setup.sh"
 -'  1  0  ~/.config/setup.sh
-|4,39,1,0,1714598559,"~/.config/setup.sh"
--'  3  0  /etc/profile.d/bash_completion.sh
-|4,39,3,0,1714598110,"/etc/profile.d/bash_completion.sh"
--'  3  0  /etc/profile.d/bash_completion.sh
-|4,39,3,0,1714598110,"/etc/profile.d/bash_completion.sh"
--'  3  0  /etc/profile.d/bash_completion.sh
-|4,39,3,0,1714598110,"/etc/profile.d/bash_completion.sh"
--'  3  0  /etc/profile.d/bash_completion.sh
-|4,39,3,0,1714598110,"/etc/profile.d/bash_completion.sh"
--'  3  0  /etc/profile.d/bash_completion.sh
-|4,39,3,0,1714598110,"/etc/profile.d/bash_completion.sh"
--'  3  0  /etc/profile.d/bash_completion.sh
-|4,39,3,0,1714598110,"/etc/profile.d/bash_completion.sh"
--'  3  0  /etc/profile.d/bash_completion.sh
-|4,39,3,0,1714598110,"/etc/profile.d/bash_completion.sh"
--'  1  0  /etc/profile.d/bash_completion.sh
-|4,39,1,0,1714598087,"/etc/profile.d/bash_completion.sh"
--'  1  0  /etc/profile.d/bash_completion.sh
-|4,39,1,0,1714598087,"/etc/profile.d/bash_completion.sh"
--'  1  0  /etc/profile.d/bash_completion.sh
-|4,39,1,0,1714598087,"/etc/profile.d/bash_completion.sh"
--'  1  0  /etc/profile.d/bash_completion.sh
-|4,39,1,0,1714598087,"/etc/profile.d/bash_completion.sh"
--'  1  0  /etc/profile.d/bash_completion.sh
-|4,39,1,0,1714598087,"/etc/profile.d/bash_completion.sh"
--'  1  0  /etc/profile.d/bash_completion.sh
-|4,39,1,0,1714598087,"/etc/profile.d/bash_completion.sh"
--'  1  0  /etc/profile.d/bash_completion.sh
-|4,39,1,0,1714598087,"/etc/profile.d/bash_completion.sh"
--'  4  0  /etc/profile
-|4,39,4,0,1714598010,"/etc/profile"
--'  4  0  /etc/profile
-|4,39,4,0,1714598010,"/etc/profile"
--'  4  0  /etc/profile
-|4,39,4,0,1714598010,"/etc/profile"
--'  4  0  /etc/profile
-|4,39,4,0,1714598010,"/etc/profile"
--'  4  0  /etc/profile
-|4,39,4,0,1714598010,"/etc/profile"
--'  4  0  /etc/profile
-|4,39,4,0,1714598010,"/etc/profile"
--'  4  0  /etc/profile
-|4,39,4,0,1714598010,"/etc/profile"
--'  4  0  /etc/profile
-|4,39,4,0,1714598010,"/etc/profile"
--'  1  0  /etc/profile
-|4,39,1,0,1714597998,"/etc/profile"
--'  1  0  /etc/profile
-|4,39,1,0,1714597998,"/etc/profile"
--'  1  0  /etc/profile
-|4,39,1,0,1714597998,"/etc/profile"
--'  1  0  /etc/profile
-|4,39,1,0,1714597998,"/etc/profile"
--'  1  0  /etc/profile
-|4,39,1,0,1714597998,"/etc/profile"
--'  1  0  /etc/profile
-|4,39,1,0,1714597998,"/etc/profile"
--'  1  0  /etc/profile
-|4,39,1,0,1714597998,"/etc/profile"
--'  1  0  /etc/profile
-|4,39,1,0,1714597998,"/etc/profile"
--'  2197  4  /usr/share/bash-completion/bash_completion
-|4,39,2197,4,1714597783,"/usr/share/bash-completion/bash_completion"
--'  2197  4  /usr/share/bash-completion/bash_completion
-|4,39,2197,4,1714597783,"/usr/share/bash-completion/bash_completion"
--'  2197  4  /usr/share/bash-completion/bash_completion
-|4,39,2197,4,1714597783,"/usr/share/bash-completion/bash_completion"
--'  2197  4  /usr/share/bash-completion/bash_completion
-|4,39,2197,4,1714597783,"/usr/share/bash-completion/bash_completion"
--'  2197  4  /usr/share/bash-completion/bash_completion
-|4,39,2197,4,1714597783,"/usr/share/bash-completion/bash_completion"
--'  2197  4  /usr/share/bash-completion/bash_completion
-|4,39,2197,4,1714597783,"/usr/share/bash-completion/bash_completion"
--'  2197  4  /usr/share/bash-completion/bash_completion
-|4,39,2197,4,1714597783,"/usr/share/bash-completion/bash_completion"
--'  2197  4  /usr/share/bash-completion/bash_completion
-|4,39,2197,4,1714597783,"/usr/share/bash-completion/bash_completion"
--'  2197  4  /usr/share/bash-completion/bash_completion
-|4,39,2197,4,1714597783,"/usr/share/bash-completion/bash_completion"
--'  2075  4  /usr/share/bash-completion/bash_completion
-|4,39,2075,4,1714597779,"/usr/share/bash-completion/bash_completion"
--'  2075  4  /usr/share/bash-completion/bash_completion
-|4,39,2075,4,1714597779,"/usr/share/bash-completion/bash_completion"
--'  2075  4  /usr/share/bash-completion/bash_completion
-|4,39,2075,4,1714597779,"/usr/share/bash-completion/bash_completion"
--'  2075  4  /usr/share/bash-completion/bash_completion
-|4,39,2075,4,1714597779,"/usr/share/bash-completion/bash_completion"
--'  2075  4  /usr/share/bash-completion/bash_completion
-|4,39,2075,4,1714597779,"/usr/share/bash-completion/bash_completion"
--'  2075  4  /usr/share/bash-completion/bash_completion
-|4,39,2075,4,1714597779,"/usr/share/bash-completion/bash_completion"
--'  2075  4  /usr/share/bash-completion/bash_completion
-|4,39,2075,4,1714597779,"/usr/share/bash-completion/bash_completion"
--'  2075  4  /usr/share/bash-completion/bash_completion
-|4,39,2075,4,1714597779,"/usr/share/bash-completion/bash_completion"
--'  2075  4  /usr/share/bash-completion/bash_completion
-|4,39,2075,4,1714597779,"/usr/share/bash-completion/bash_completion"
--'  2016  4  /usr/share/bash-completion/bash_completion
-|4,39,2016,4,1714597778,"/usr/share/bash-completion/bash_completion"
--'  2016  4  /usr/share/bash-completion/bash_completion
-|4,39,2016,4,1714597778,"/usr/share/bash-completion/bash_completion"
--'  2016  4  /usr/share/bash-completion/bash_completion
-|4,39,2016,4,1714597778,"/usr/share/bash-completion/bash_completion"
--'  2016  4  /usr/share/bash-completion/bash_completion
-|4,39,2016,4,1714597778,"/usr/share/bash-completion/bash_completion"
--'  2016  4  /usr/share/bash-completion/bash_completion
-|4,39,2016,4,1714597778,"/usr/share/bash-completion/bash_completion"
--'  2016  4  /usr/share/bash-completion/bash_completion
-|4,39,2016,4,1714597778,"/usr/share/bash-completion/bash_completion"
--'  2016  4  /usr/share/bash-completion/bash_completion
-|4,39,2016,4,1714597778,"/usr/share/bash-completion/bash_completion"
--'  2016  4  /usr/share/bash-completion/bash_completion
-|4,39,2016,4,1714597778,"/usr/share/bash-completion/bash_completion"
--'  2016  4  /usr/share/bash-completion/bash_completion
-|4,39,2016,4,1714597778,"/usr/share/bash-completion/bash_completion"
--'  1842  4  /usr/share/bash-completion/bash_completion
-|4,39,1842,4,1714597777,"/usr/share/bash-completion/bash_completion"
--'  1842  4  /usr/share/bash-completion/bash_completion
-|4,39,1842,4,1714597777,"/usr/share/bash-completion/bash_completion"
--'  1842  4  /usr/share/bash-completion/bash_completion
-|4,39,1842,4,1714597777,"/usr/share/bash-completion/bash_completion"
--'  1842  4  /usr/share/bash-completion/bash_completion
-|4,39,1842,4,1714597777,"/usr/share/bash-completion/bash_completion"
--'  1842  4  /usr/share/bash-completion/bash_completion
-|4,39,1842,4,1714597777,"/usr/share/bash-completion/bash_completion"
--'  1842  4  /usr/share/bash-completion/bash_completion
-|4,39,1842,4,1714597777,"/usr/share/bash-completion/bash_completion"
--'  1842  4  /usr/share/bash-completion/bash_completion
-|4,39,1842,4,1714597777,"/usr/share/bash-completion/bash_completion"
--'  1842  4  /usr/share/bash-completion/bash_completion
-|4,39,1842,4,1714597777,"/usr/share/bash-completion/bash_completion"
--'  1842  4  /usr/share/bash-completion/bash_completion
-|4,39,1842,4,1714597777,"/usr/share/bash-completion/bash_completion"
--'  1565  4  /usr/share/bash-completion/bash_completion
-|4,39,1565,4,1714597776,"/usr/share/bash-completion/bash_completion"
--'  1565  4  /usr/share/bash-completion/bash_completion
-|4,39,1565,4,1714597776,"/usr/share/bash-completion/bash_completion"
--'  1565  4  /usr/share/bash-completion/bash_completion
-|4,39,1565,4,1714597776,"/usr/share/bash-completion/bash_completion"
--'  1565  4  /usr/share/bash-completion/bash_completion
-|4,39,1565,4,1714597776,"/usr/share/bash-completion/bash_completion"
--'  1565  4  /usr/share/bash-completion/bash_completion
-|4,39,1565,4,1714597776,"/usr/share/bash-completion/bash_completion"
--'  1565  4  /usr/share/bash-completion/bash_completion
-|4,39,1565,4,1714597776,"/usr/share/bash-completion/bash_completion"
+|4,39,1,0,1714640123,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.zsh
+|4,39,1,0,1714640109,"~/.config/setup.zsh"
+-'  1  0  ~/.config/setup.zsh
+|4,39,1,0,1714640109,"~/.config/setup.zsh"
+-'  1  0  ~/.config/setup.zsh
+|4,39,1,0,1714640109,"~/.config/setup.zsh"
+-'  1  0  ~/.config/setup.zsh
+|4,39,1,0,1714640109,"~/.config/setup.zsh"
+-'  1  0  ~/.config/setup.zsh
+|4,39,1,0,1714640109,"~/.config/setup.zsh"
+-'  1  0  ~/.config/setup.zsh
+|4,39,1,0,1714640109,"~/.config/setup.zsh"
+-'  1  0  ~/.config/setup.zsh
+|4,39,1,0,1714640109,"~/.config/setup.zsh"
+-'  1  0  ~/.config/setup.zsh
+|4,39,1,0,1714640102,"~/.config/setup.zsh"
+-'  19  0  ~/.config/setup.zsh
+|4,39,19,0,1714640100,"~/.config/setup.zsh"
+-'  18  0  ~/.config/setup.zsh
+|4,39,18,0,1714640100,"~/.config/setup.zsh"
+-'  18  0  ~/.config/setup.zsh
+|4,39,18,0,1714640100,"~/.config/setup.zsh"
+-'  18  0  ~/.config/setup.zsh
+|4,39,18,0,1714640100,"~/.config/setup.zsh"
+-'  18  0  ~/.config/setup.zsh
+|4,39,18,0,1714640100,"~/.config/setup.zsh"
+-'  18  0  ~/.config/setup.zsh
+|4,39,18,0,1714640100,"~/.config/setup.zsh"
+-'  18  0  ~/.config/setup.zsh
+|4,39,18,0,1714640100,"~/.config/setup.zsh"
+-'  18  0  ~/.config/setup.zsh
+|4,39,18,0,1714640100,"~/.config/setup.zsh"
+-'  18  0  ~/.config/setup.zsh
+|4,39,18,0,1714640100,"~/.config/setup.zsh"
+-'  3  0  ~/.config/setup.zsh
+|4,39,3,0,1714640092,"~/.config/setup.zsh"
+-'  3  0  ~/.config/setup.zsh
+|4,39,3,0,1714640092,"~/.config/setup.zsh"
+-'  3  0  ~/.config/setup.zsh
+|4,39,3,0,1714640092,"~/.config/setup.zsh"
+-'  3  0  ~/.config/setup.zsh
+|4,39,3,0,1714640092,"~/.config/setup.zsh"
+-'  3  0  ~/.config/setup.zsh
+|4,39,3,0,1714640092,"~/.config/setup.zsh"
+-'  3  0  ~/.config/setup.zsh
+|4,39,3,0,1714640092,"~/.config/setup.zsh"
+-'  3  0  ~/.config/setup.zsh
+|4,39,3,0,1714640092,"~/.config/setup.zsh"
+-'  3  0  ~/.config/setup.zsh
+|4,39,3,0,1714640092,"~/.config/setup.zsh"
+-'  3  0  ~/.config/setup.zsh
+|4,39,3,0,1714640092,"~/.config/setup.zsh"
+-'  1  0  ~/.config/setup.zsh
+|4,39,1,0,1714640092,"~/.config/setup.zsh"
+-'  18  22  ~/.config/setup.zsh
+|4,39,18,22,1714640054,"~/.config/setup.zsh"
+-'  18  24  ~/.config/setup.zsh
+|4,39,18,24,1714640051,"~/.config/setup.zsh"
+-'  17  24  ~/.config/setup.zsh
+|4,39,17,24,1714640051,"~/.config/setup.zsh"
+-'  17  24  ~/.config/setup.zsh
+|4,39,17,24,1714640051,"~/.config/setup.zsh"
+-'  17  24  ~/.config/setup.zsh
+|4,39,17,24,1714640051,"~/.config/setup.zsh"
+-'  17  24  ~/.config/setup.zsh
+|4,39,17,24,1714640051,"~/.config/setup.zsh"
+-'  17  24  ~/.config/setup.zsh
+|4,39,17,24,1714640051,"~/.config/setup.zsh"
+-'  17  24  ~/.config/setup.zsh
+|4,39,17,24,1714640051,"~/.config/setup.zsh"
+-'  17  24  ~/.config/setup.zsh
+|4,39,17,24,1714640051,"~/.config/setup.zsh"
+-'  17  24  ~/.config/setup.zsh
+|4,39,17,24,1714640051,"~/.config/setup.zsh"
+-'  17  24  ~/.config/setup.zsh
+|4,39,17,24,1714640051,"~/.config/setup.zsh"
+-'  14  0  ~/.config/setup.zsh
+|4,39,14,0,1714640048,"~/.config/setup.zsh"
+-'  14  0  ~/.config/setup.zsh
+|4,39,14,0,1714640048,"~/.config/setup.zsh"
+-'  14  0  ~/.config/setup.zsh
+|4,39,14,0,1714640048,"~/.config/setup.zsh"
+-'  14  0  ~/.config/setup.zsh
+|4,39,14,0,1714640048,"~/.config/setup.zsh"
+-'  14  0  ~/.config/setup.zsh
+|4,39,14,0,1714640048,"~/.config/setup.zsh"
+-'  14  0  ~/.config/setup.zsh
+|4,39,14,0,1714640048,"~/.config/setup.zsh"
+-'  14  0  ~/.config/setup.zsh
+|4,39,14,0,1714640048,"~/.config/setup.zsh"
+-'  14  0  ~/.config/setup.zsh
+|4,39,14,0,1714640048,"~/.config/setup.zsh"
+-'  14  0  ~/.config/setup.zsh
+|4,39,14,0,1714640048,"~/.config/setup.zsh"
+-'  14  0  ~/.config/setup.zsh
+|4,39,14,0,1714640048,"~/.config/setup.zsh"
+-'  3  0  ~/.config/setup.zsh
+|4,39,3,0,1714640042,"~/.config/setup.zsh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1714640038,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1714640038,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1714640038,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1714640038,"~/.config/setup.sh"
+-'  25  0  ~/.config/setup.sh
+|4,39,25,0,1714640019,"~/.config/setup.sh"
+-'  25  0  ~/.config/setup.sh
+|4,39,25,0,1714640019,"~/.config/setup.sh"
+-'  25  0  ~/.config/setup.sh
+|4,39,25,0,1714640019,"~/.config/setup.sh"
+-'  25  0  ~/.config/setup.sh
+|4,39,25,0,1714640019,"~/.config/setup.sh"
+-'  25  0  ~/.config/setup.sh
+|4,39,25,0,1714640019,"~/.config/setup.sh"
+-'  25  0  ~/.config/setup.sh
+|4,39,25,0,1714640019,"~/.config/setup.sh"
+-'  25  0  ~/.config/setup.sh
+|4,39,25,0,1714640019,"~/.config/setup.sh"
+-'  25  0  ~/.config/setup.sh
+|4,39,25,0,1714640019,"~/.config/setup.sh"
+-'  25  0  ~/.config/setup.sh
+|4,39,25,0,1714640019,"~/.config/setup.sh"
+-'  25  0  ~/.config/setup.sh
+|4,39,25,0,1714640019,"~/.config/setup.sh"
+-'  25  0  ~/.config/setup.sh
+|4,39,25,0,1714640019,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1714640007,"~/.config/setup.sh"
+-'  1  23  ~/.config/setup.zsh
+|4,39,1,23,1714638422,"~/.config/setup.zsh"
+-'  1  23  ~/.config/setup.zsh
+|4,39,1,23,1714638422,"~/.config/setup.zsh"
+-'  1  23  ~/.config/setup.zsh
+|4,39,1,23,1714638422,"~/.config/setup.zsh"
+-'  6  9  ~/.config/setup.zsh
+|4,39,6,9,1714638364,"~/.config/setup.zsh"
+-'  5  9  ~/.config/setup.zsh
+|4,39,5,9,1714638364,"~/.config/setup.zsh"
 
 # Buffer list:
-%~/.config/todo.txt	12	52
+%~/.config/setup.zsh	15	79
 
 # History of marks within files (newest to oldest):
 
-> ~/.config/todo.txt
-	*	1714602112	0
-	"	12	52
-	^	14	20
-	.	14	19
-	+	15	94
-	+	16	0
-	+	9	0
-	+	18	51
-	+	10	107
-	+	9	0
-	+	19	0
-	+	9	9
-	+	14	0
-	+	17	0
-	+	19	0
-	+	9	0
-	+	4	0
-	+	7	15
-	+	6	64
-	+	7	61
-	+	5	9
-	+	10	5
-	+	15	5
-	+	18	0
-	+	3	84
-	+	11	114
-	+	12	52
-	+	11	4
+> ~/.config/setup.zsh
+	*	1714652885	0
+	"	15	79
+	^	15	80
+	.	15	79
+	+	7	33
+	+	13	1
+	+	7	0
+	+	13	1
+	+	7	0
 	+	12	0
-	+	9	19
-	+	14	19
+	+	4	0
+	+	18	0
+	+	14	0
+	+	19	0
+	+	18	24
+	+	19	22
+	+	17	0
+	+	16	0
+	+	17	0
+	+	3	0
+	+	1	0
+	+	2	0
+	+	15	79
 
-> /etc/bash_completion.d/fzf_completion
-	*	1714598978	0
-	"	33	0
+> ~/.config/bindings.inputrc
+	*	1714640349	0
+	"	4	0
+	^	16	30
+	.	16	29
+	+	16	29
+
+> ~/.bashrc
+	*	1714640167	0
+	"	123	18
+	.	121	0
+	+	121	0
+	+	121	55
+	+	121	0
+	+	121	47
+	+	126	0
+	+	121	0
+	+	126	0
+	+	125	0
+	+	129	0
+	+	130	0
+	+	120	0
+	+	123	0
+	+	118	0
+	+	120	0
+	+	123	0
+	+	6	5
+	+	5	0
+	+	6	0
+	+	124	0
+	+	109	0
+	+	120	0
+	+	114	5
+	+	115	4
+	+	116	0
+	+	117	4
+	+	115	0
+	+	115	4
+	+	117	0
+	+	116	4
+	+	114	4
+	+	118	0
+	+	112	0
+	+	115	0
+	+	123	0
+	+	121	0
+
+> ~/.zshrc
+	*	1714640157	0
+	"	103	24
+	^	103	25
+	.	103	24
+	+	75	1
+	+	103	24
 
 > ~/.config/setup.sh
-	*	1714598826	0
-	"	36	39
-	.	36	42
+	*	1714640144	0
+	"	1	0
+	.	1	1
 	+	13	68
 	+	13	27
 	+	5	0
@@ -8588,6 +8678,512 @@ $
 	+	41	1
 	+	42	0
 	+	36	42
+	+	1	1
+
+> /home/.zshrc
+	*	1714637566	0
+	"	1	0
+
+> ~/hateoas/hateoas-api.py
+	*	1714636766	0
+	"	432	4
+	.	109	0
+	+	41	27
+	+	41	108
+	+	41	0
+	+	41	83
+	+	41	0
+	+	41	77
+	+	41	0
+	+	41	88
+	+	41	0
+	+	1	0
+	+	1	58
+	+	1	37
+	+	1	38
+	+	1	4
+	+	1	13
+	+	1	4
+	+	41	124
+	+	41	26
+	+	41	30
+	+	41	0
+	+	41	30
+	+	41	31
+	+	41	0
+	+	41	47
+	+	33	0
+	+	34	0
+	+	34	4
+	+	34	0
+	+	33	49
+	+	33	36
+	+	33	0
+	+	32	86
+	+	10	0
+	+	9	16
+	+	10	0
+	+	9	8
+	+	10	42
+	+	10	0
+	+	1	0
+	+	31	98
+	+	33	82
+	+	41	59
+	+	12	0
+	+	10	21
+	+	10	2
+	+	10	37
+	+	10	4
+	+	10	14
+	+	12	28
+	+	10	37
+	+	41	33
+	+	41	54
+	+	41	0
+	+	41	47
+	+	41	24
+	+	41	101
+	+	41	31
+	+	41	24
+	+	41	0
+	+	41	103
+	+	10	31
+	+	10	66
+	+	41	77
+	+	41	0
+	+	243	0
+	+	232	0
+	+	200	0
+	+	201	28
+	+	217	0
+	+	218	28
+	+	230	0
+	+	217	0
+	+	217	74
+	+	230	55
+	+	230	24
+	+	217	0
+	+	230	0
+	+	224	0
+	+	205	0
+	+	203	0
+	+	215	0
+	+	216	0
+	+	203	0
+	+	204	0
+	+	202	0
+	+	206	118
+	+	220	33
+	+	229	21
+	+	222	0
+	+	224	0
+	+	223	0
+	+	200	23
+	+	18	0
+	+	10	0
+	+	48	0
+	+	11	0
+	+	108	0
+	+	107	5
+	+	108	39
+	+	109	0
+
+> ~/.vim/plugged/coc.nvim/doc/coc.txt
+	*	1714633430	0
+	"	1756	1
+
+> ~/.vim/vimrc
+	*	1714633420	0
+	"	46	0
+	^	46	0
+	.	46	0
+	+	1354	23
+	+	1354	1
+	+	1354	0
+	+	1354	30
+	+	1354	0
+	+	1354	16
+	+	1354	0
+	+	1354	70
+	+	1354	0
+	+	1354	22
+	+	1354	0
+	+	1354	27
+	+	1354	0
+	+	1354	30
+	+	1354	13
+	+	1354	16
+	+	1354	0
+	+	1354	19
+	+	1354	5
+	+	1354	80
+	+	1354	22
+	+	1354	0
+	+	1354	21
+	+	1354	28
+	+	1354	22
+	+	1354	71
+	+	1354	8
+	+	1354	24
+	+	1354	40
+	+	1354	0
+	+	1354	39
+	+	1354	0
+	+	1354	19
+	+	1354	0
+	+	1354	38
+	+	1354	21
+	+	1354	0
+	+	1354	10
+	+	1354	25
+	+	1354	0
+	+	1354	32
+	+	1354	0
+	+	1354	10
+	+	1354	0
+	+	1354	25
+	+	1354	10
+	+	1354	0
+	+	1354	60
+	+	1354	0
+	+	1354	55
+	+	1354	0
+	+	1354	44
+	+	1354	0
+	+	1354	19
+	+	1354	71
+	+	1354	0
+	+	1354	23
+	+	1354	41
+	+	1354	44
+	+	1354	40
+	+	1354	28
+	+	1354	0
+	+	1354	11
+	+	1354	18
+	+	1354	43
+	+	1354	64
+	+	1354	54
+	+	1354	0
+	+	1354	31
+	+	1354	0
+	+	1354	6
+	+	1354	0
+	+	1354	1
+	+	1354	0
+	+	1354	80
+	+	1354	75
+	+	1354	0
+	+	1354	52
+	+	1354	41
+	+	160	0
+	+	47	26
+	+	1354	0
+	+	46	0
+
+> ~/.vim/plugged/coc.nvim/doc/coc-config.txt
+	*	1714631550	0
+	"	1722	24
+
+> ~/.vim/ide.vim
+	*	1714631330	0
+	"	467	0
+	^	152	47
+	.	152	46
+	+	183	5
+	+	183	0
+	+	183	35
+	+	183	0
+	+	175	0
+	+	183	0
+	+	175	0
+	+	176	3
+	+	183	0
+	+	180	3
+	+	179	0
+	+	177	59
+	+	182	0
+	+	177	94
+	+	180	81
+	+	182	0
+	+	180	80
+	+	1	150
+	+	143	36
+	+	178	0
+	+	177	0
+	+	178	41
+	+	181	0
+	+	180	0
+	+	181	41
+	+	143	43
+	+	177	4
+	+	178	4
+	+	180	4
+	+	181	4
+	+	296	7
+	+	462	14
+	+	463	0
+	+	464	0
+	+	465	45
+	+	466	0
+	+	69	0
+	+	65	18
+	+	69	0
+	+	234	0
+	+	167	46
+	+	168	0
+	+	154	19
+	+	168	0
+	+	167	34
+	+	134	7
+	+	134	51
+	+	134	0
+	+	134	50
+	+	134	8
+	+	134	38
+	+	134	73
+	+	134	0
+	+	111	0
+	+	111	32
+	+	111	0
+	+	111	16
+	+	111	30
+	+	111	0
+	+	111	45
+	+	111	0
+	+	111	43
+	+	111	0
+	+	111	16
+	+	111	0
+	+	111	24
+	+	134	50
+	+	134	73
+	+	111	0
+	+	134	0
+	+	147	32
+	+	134	0
+	+	154	0
+	+	168	0
+	+	167	34
+	+	143	52
+	+	152	46
+
+> ~/.vim/coc-settings.json
+	*	1714631287	0
+	"	40	0
+	.	40	0
+	+	66	9
+	+	74	0
+	+	38	0
+	+	24	0
+	+	24	111
+	+	16	0
+	+	13	0
+	+	15	0
+	+	38	0
+	+	38	33
+	+	38	35
+	+	38	0
+	+	38	9
+	+	38	0
+	+	38	37
+	+	38	32
+	+	38	34
+	+	38	0
+	+	21	0
+	+	20	39
+	+	21	0
+	+	20	28
+	+	20	37
+	+	2	0
+	+	38	0
+	+	38	11
+	+	38	0
+	+	2	0
+	+	14	0
+	+	15	0
+	+	16	0
+	+	15	0
+	+	2	33
+	+	3	38
+	+	16	0
+	+	4	0
+	+	9	0
+	+	11	0
+	+	20	0
+	+	16	0
+	+	20	0
+	+	21	0
+	+	37	42
+	+	22	0
+	+	37	0
+	+	25	34
+	+	37	0
+	+	35	0
+	+	25	0
+	+	4	0
+	+	23	0
+	+	4	0
+	+	35	0
+	+	26	37
+	+	3	38
+	+	9	0
+	+	6	33
+	+	9	0
+	+	7	49
+	+	9	0
+	+	5	0
+	+	8	131
+	+	7	78
+	+	5	0
+	+	20	0
+	+	57	0
+	+	56	25
+	+	57	0
+	+	75	0
+	+	45	14
+	+	46	44
+	+	44	0
+	+	73	0
+	+	72	0
+	+	69	71
+	+	70	33
+	+	72	0
+	+	71	16
+	+	72	0
+	+	71	25
+	+	70	11
+	+	68	48
+	+	70	30
+	+	68	0
+	+	19	6
+	+	28	29
+	+	35	33
+	+	35	0
+	+	32	0
+	+	28	6
+	+	29	5
+	+	28	0
+	+	32	0
+	+	33	28
+	+	34	32
+	+	37	0
+	+	36	39
+	+	37	0
+	+	40	0
+
+> ~/.vim/plugged/direnv.vim/doc/direnv.txt
+	*	1714631246	0
+	"	102	0
+
+> ~/bash/python-direnv.bash
+	*	1714631174	0
+	"	1	0
+	^	1	2
+	.	1	1
+	+	5	8
+	+	4	0
+	+	2	25
+	+	5	10
+	+	2	1
+	+	1	1
+
+> /usr/share/vim/vim90/doc/editing.txt
+	*	1714630431	0
+	"	1301	62
+
+> ~/tooling/my-programming-language.txt
+	*	1714630257	0
+	"	36	29
+	^	36	30
+	.	36	29
+	+	25	65
+	+	27	18
+	+	2	0
+	+	22	0
+	+	4	0
+	+	3	0
+	+	24	0
+	+	3	78
+	+	23	0
+	+	2	0
+	+	22	0
+	+	34	0
+	+	34	4
+	+	34	5
+	+	34	7
+	+	34	5
+	+	34	7
+	+	34	8
+	+	34	6
+	+	34	8
+	+	34	5
+	+	34	3
+	+	34	5
+	+	34	4
+	+	34	8
+	+	34	0
+	+	33	126
+	+	34	45
+	+	34	0
+	+	34	96
+	+	37	0
+	+	34	8
+	+	4	0
+	+	6	11
+	+	8	18
+	+	8	0
+	+	5	42
+	+	6	11
+	+	35	84
+	+	4	0
+	+	7	0
+	+	8	29
+	+	8	18
+	+	8	28
+	+	8	52
+	+	8	56
+	+	9	0
+	+	8	50
+	+	36	29
+
+> ~/.config/todo.txt
+	*	1714626938	0
+	"	3	4
+	^	14	20
+	.	14	19
+	+	15	94
+	+	16	0
+	+	9	0
+	+	18	51
+	+	10	107
+	+	9	0
+	+	19	0
+	+	9	9
+	+	14	0
+	+	17	0
+	+	19	0
+	+	9	0
+	+	4	0
+	+	7	15
+	+	6	64
+	+	7	61
+	+	5	9
+	+	10	5
+	+	15	5
+	+	18	0
+	+	3	84
+	+	11	114
+	+	12	52
+	+	11	4
+	+	12	0
+	+	9	19
+	+	14	19
+
+> /etc/bash_completion.d/fzf_completion
+	*	1714598978	0
+	"	33	0
 
 > /etc/profile.d/bash_completion.sh
 	*	1714598108	0
@@ -8620,58 +9216,11 @@ $
 	*	1714595231	0
 	"	1	0
 
-> ~/.config/bindings.inputrc
-	*	1714595218	0
-	"	16	0
-	^	16	30
-	.	16	29
-	+	16	29
-
 > ~/.profile
 	*	1714594789	0
 	"	1	0
 	.	12	0
 	+	12	0
-
-> ~/.bashrc
-	*	1714594719	0
-	"	1	0
-	.	121	0
-	+	121	0
-	+	121	55
-	+	121	0
-	+	121	47
-	+	126	0
-	+	121	0
-	+	126	0
-	+	125	0
-	+	129	0
-	+	130	0
-	+	120	0
-	+	123	0
-	+	118	0
-	+	120	0
-	+	123	0
-	+	6	5
-	+	5	0
-	+	6	0
-	+	124	0
-	+	109	0
-	+	120	0
-	+	114	5
-	+	115	4
-	+	116	0
-	+	117	4
-	+	115	0
-	+	115	4
-	+	117	0
-	+	116	4
-	+	114	4
-	+	118	0
-	+	112	0
-	+	115	0
-	+	123	0
-	+	121	0
 
 > ~/vimfiles/todo/240502.txt
 	*	1714594063	0
@@ -8680,44 +9229,6 @@ $
 > ~/vimfiles/todo/main-2024-05-May.txt
 	*	1714594061	0
 	"	1	0
-
-> ~/tooling/my-programming-language.txt
-	*	1714594000	0
-	"	5	0
-	^	35	8
-	.	35	8
-	+	26	65
-	+	28	18
-	+	2	0
-	+	23	0
-	+	4	0
-	+	3	0
-	+	25	0
-	+	3	78
-	+	24	0
-	+	2	0
-	+	23	0
-	+	35	0
-	+	35	4
-	+	35	5
-	+	35	7
-	+	35	5
-	+	35	7
-	+	35	8
-	+	35	6
-	+	35	8
-	+	35	5
-	+	35	3
-	+	35	5
-	+	35	4
-	+	35	8
-	+	35	0
-	+	34	126
-	+	35	45
-	+	35	0
-	+	35	96
-	+	36	0
-	+	35	8
 
 > ~/tooling/sample.txt
 	*	1714593189	0
@@ -8806,192 +9317,6 @@ $
 	+	5	126
 	+	5	1
 	+	9	1
-
-> ~/.vim/ide.vim
-	*	1714567603	0
-	"	152	46
-	^	152	47
-	.	152	46
-	+	183	5
-	+	183	0
-	+	183	35
-	+	183	0
-	+	175	0
-	+	183	0
-	+	175	0
-	+	176	3
-	+	183	0
-	+	180	3
-	+	179	0
-	+	177	59
-	+	182	0
-	+	177	94
-	+	180	81
-	+	182	0
-	+	180	80
-	+	1	150
-	+	143	36
-	+	178	0
-	+	177	0
-	+	178	41
-	+	181	0
-	+	180	0
-	+	181	41
-	+	143	43
-	+	177	4
-	+	178	4
-	+	180	4
-	+	181	4
-	+	296	7
-	+	462	14
-	+	463	0
-	+	464	0
-	+	465	45
-	+	466	0
-	+	69	0
-	+	65	18
-	+	69	0
-	+	234	0
-	+	167	46
-	+	168	0
-	+	154	19
-	+	168	0
-	+	167	34
-	+	134	7
-	+	134	51
-	+	134	0
-	+	134	50
-	+	134	8
-	+	134	38
-	+	134	73
-	+	134	0
-	+	111	0
-	+	111	32
-	+	111	0
-	+	111	16
-	+	111	30
-	+	111	0
-	+	111	45
-	+	111	0
-	+	111	43
-	+	111	0
-	+	111	16
-	+	111	0
-	+	111	24
-	+	134	50
-	+	134	73
-	+	111	0
-	+	134	0
-	+	147	32
-	+	134	0
-	+	154	0
-	+	168	0
-	+	167	34
-	+	143	52
-	+	152	46
-
-> ~/hateoas/hateoas-api.py
-	*	1714567323	0
-	"	357	8
-	^	200	24
-	.	200	23
-	+	1	0
-	+	2	0
-	+	41	0
-	+	41	111
-	+	41	116
-	+	41	27
-	+	41	108
-	+	41	0
-	+	41	83
-	+	41	0
-	+	41	77
-	+	41	0
-	+	41	88
-	+	41	0
-	+	1	0
-	+	1	58
-	+	1	37
-	+	1	38
-	+	1	4
-	+	1	13
-	+	1	4
-	+	41	124
-	+	41	26
-	+	41	30
-	+	41	0
-	+	41	30
-	+	41	31
-	+	41	0
-	+	41	47
-	+	33	0
-	+	34	0
-	+	34	4
-	+	34	0
-	+	33	49
-	+	33	36
-	+	33	0
-	+	32	86
-	+	11	0
-	+	9	16
-	+	11	0
-	+	9	8
-	+	11	42
-	+	10	0
-	+	1	0
-	+	31	98
-	+	33	82
-	+	41	59
-	+	12	0
-	+	11	21
-	+	11	2
-	+	11	37
-	+	11	4
-	+	11	14
-	+	12	28
-	+	11	37
-	+	41	33
-	+	41	54
-	+	41	0
-	+	41	47
-	+	41	24
-	+	41	101
-	+	41	31
-	+	41	24
-	+	41	0
-	+	41	103
-	+	11	31
-	+	11	66
-	+	41	77
-	+	41	0
-	+	243	0
-	+	232	0
-	+	200	0
-	+	201	28
-	+	217	0
-	+	218	28
-	+	230	0
-	+	217	0
-	+	217	74
-	+	230	55
-	+	230	24
-	+	217	0
-	+	230	0
-	+	224	0
-	+	205	0
-	+	203	0
-	+	215	0
-	+	216	0
-	+	203	0
-	+	204	0
-	+	202	0
-	+	206	118
-	+	220	33
-	+	229	21
-	+	222	0
-	+	224	0
-	+	223	0
-	+	200	23
 
 > ~/hateoas/pyrightconfig.json
 	*	1714560968	0
@@ -9548,18 +9873,6 @@ $
 	^	34	2
 	.	34	0
 	+	34	0
-
-> ~/bash/python-direnv.bash
-	*	1714413299	0
-	"	3	0
-	^	1	2
-	.	1	1
-	+	5	8
-	+	4	0
-	+	2	25
-	+	5	10
-	+	2	1
-	+	1	1
 
 > /tmp/crontab.NoIfd2/crontab
 	*	1714412918	0
@@ -10457,93 +10770,6 @@ $
 	*	1714221681	0
 	"	1	0
 
-> ~/.vim/vimrc
-	*	1714221134	0
-	"	1353	45
-	.	1353	0
-	+	1353	23
-	+	1353	1
-	+	1353	0
-	+	1353	30
-	+	1353	0
-	+	1353	16
-	+	1353	0
-	+	1353	70
-	+	1353	0
-	+	1353	22
-	+	1353	0
-	+	1353	27
-	+	1353	0
-	+	1353	30
-	+	1353	13
-	+	1353	16
-	+	1353	0
-	+	1353	19
-	+	1353	5
-	+	1353	80
-	+	1353	22
-	+	1353	0
-	+	1353	21
-	+	1353	28
-	+	1353	22
-	+	1353	71
-	+	1353	8
-	+	1353	24
-	+	1353	40
-	+	1353	0
-	+	1353	39
-	+	1353	0
-	+	1353	19
-	+	1353	0
-	+	1353	38
-	+	1353	21
-	+	1353	0
-	+	1353	10
-	+	1353	25
-	+	1353	0
-	+	1353	32
-	+	1353	0
-	+	1353	10
-	+	1353	0
-	+	1353	25
-	+	1353	10
-	+	1353	0
-	+	1353	60
-	+	1353	0
-	+	1353	55
-	+	1353	0
-	+	1353	44
-	+	1353	0
-	+	1353	19
-	+	1353	71
-	+	1353	0
-	+	1353	23
-	+	1353	41
-	+	1353	44
-	+	1353	40
-	+	1353	28
-	+	1353	0
-	+	1353	11
-	+	1353	18
-	+	1353	43
-	+	1353	64
-	+	1353	54
-	+	1353	0
-	+	1353	31
-	+	1353	0
-	+	1353	6
-	+	1353	0
-	+	1353	1
-	+	1353	0
-	+	1353	80
-	+	1353	75
-	+	1353	0
-	+	1353	52
-	+	1353	41
-	+	159	0
-	+	46	26
-	+	1353	0
-
 > ~/tooling/cron.man
 	*	1714220935	0
 	"	55	17
@@ -10841,111 +11067,6 @@ $
 	+	48	36
 	+	42	10
 	+	42	0
-
-> ~/.vim/coc-settings.json
-	*	1714116296	0
-	"	39	0
-	^	39	0
-	.	39	0
-	+	65	9
-	+	73	0
-	+	38	0
-	+	24	0
-	+	24	111
-	+	16	0
-	+	13	0
-	+	15	0
-	+	38	0
-	+	38	33
-	+	38	35
-	+	38	0
-	+	38	9
-	+	38	0
-	+	38	37
-	+	38	32
-	+	38	34
-	+	38	0
-	+	21	0
-	+	20	39
-	+	21	0
-	+	20	28
-	+	20	37
-	+	2	0
-	+	38	0
-	+	38	11
-	+	38	0
-	+	2	0
-	+	14	0
-	+	15	0
-	+	16	0
-	+	15	0
-	+	2	33
-	+	3	38
-	+	16	0
-	+	4	0
-	+	9	0
-	+	11	0
-	+	20	0
-	+	16	0
-	+	20	0
-	+	21	0
-	+	37	42
-	+	22	0
-	+	37	0
-	+	25	34
-	+	37	0
-	+	35	0
-	+	25	0
-	+	4	0
-	+	23	0
-	+	4	0
-	+	35	0
-	+	26	37
-	+	3	38
-	+	9	0
-	+	6	33
-	+	9	0
-	+	7	49
-	+	9	0
-	+	5	0
-	+	8	131
-	+	7	78
-	+	5	0
-	+	20	0
-	+	56	0
-	+	55	25
-	+	56	0
-	+	74	0
-	+	44	14
-	+	45	44
-	+	43	0
-	+	72	0
-	+	71	0
-	+	68	71
-	+	69	33
-	+	71	0
-	+	70	16
-	+	71	0
-	+	70	25
-	+	69	11
-	+	67	48
-	+	69	30
-	+	67	0
-	+	19	6
-	+	28	29
-	+	35	33
-	+	35	0
-	+	32	0
-	+	28	6
-	+	29	5
-	+	28	0
-	+	32	0
-	+	33	28
-	+	34	32
-	+	37	0
-	+	36	39
-	+	37	0
-	+	39	0
 
 > ~/.vim/plugin/sqljoin.vim
 	*	1714109125	0
@@ -11799,14 +11920,6 @@ $
 	+	4	0
 	+	3	135
 	+	5	0
-
-> ~/.vim/plugged/coc.nvim/doc/coc.txt
-	*	1713928786	0
-	"	120	0
-
-> ~/.vim/plugged/coc.nvim/doc/coc-config.txt
-	*	1713928767	0
-	"	1	28
 
 > ~/.vim/plugged/coc.nvim/doc/coc-api.txt
 	*	1713928501	0
@@ -13562,10 +13675,6 @@ $
 > /opt/z/z.sh
 	*	1713409948	0
 	"	1	21
-
-> /usr/share/vim/vim90/doc/editing.txt
-	*	1713407264	0
-	"	247	14
 
 > ~/.vim/colors/strawberry-light.vim
 	*	1713407233	0
@@ -26984,13 +27093,6 @@ $
 	"	505	0
 	.	505	0
 	+	505	0
-
-> ~/.config/setup.zsh
-	*	1685232004	0
-	"	4	0
-	^	4	34
-	.	4	33
-	+	4	33
 
 > ~/tmp/test.py
 	*	1685153108	0
