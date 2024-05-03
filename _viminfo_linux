@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/ready
+~MSle0~/mcfly
 
 # Last Substitute Search Pattern:
 ~MSle0&:
@@ -21,9 +21,23 @@ $
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1714652888,,"q"
+|2,0,1714759092,,"q"
+:set number
+|2,0,1714656035,,"set number"
+:set nonumber
+|2,0,1714656031,,"set nonumber"
+:q!
+|2,0,1714655996,,"q!"
+:VD data/main.db
+|2,0,1714655854,,"VD data/main.db"
+:VD
+|2,0,1714655849,,"VD"
+:e test.py
+|2,0,1714655828,,"e test.py"
 :qa
-|2,0,1714640168,,"qa"
+|2,0,1714655608,,"qa"
+:472
+|2,0,1714655515,,"472"
 :e .bashrc
 |2,0,1714640159,,"e .bashrc"
 :e ali
@@ -34,8 +48,6 @@ $
 |2,0,1714637594,,"14"
 :75
 |2,0,1714637571,,"75"
-:q!
-|2,0,1714636769,,"q!"
 :echo "Hello, World!"
 |2,0,1714636738,,"echo \"Hello, World!\""
 :ll
@@ -200,8 +212,6 @@ $
 |2,0,1714560537,,"20"
 :MRU test_tas
 |2,0,1714560534,,"MRU test_tas"
-:e test.py
-|2,0,1714560530,,"e test.py"
 :28
 |2,0,1714560504,,"28"
 :18
@@ -280,8 +290,6 @@ $
 |2,0,1714452426,,"Rename logtest.py"
 :e logging.py
 |2,0,1714451996,,"e logging.py"
-:set nonumber
-|2,0,1714451828,,"set nonumber"
 :MRU 2:refresh_downloads_table.py
 |2,0,1714427180,,"MRU 2:refresh_downloads_table.py"
 :MRU 6:refresh_downloads_table.py
@@ -300,8 +308,6 @@ $
 |2,0,1714387401,,"e download_portionurl.py"
 :VD data/download_workers.db
 |2,0,1714386317,,"VD data/download_workers.db"
-:set number
-|2,0,1714386117,,"set number"
 :e main.sql
 |2,0,1714383529,,"e main.sql"
 :e portionurl_to_download_path.py
@@ -464,8 +470,6 @@ $
 |2,0,1714047261,,"e con"
 :e data/main.db
 |2,0,1714046849,,"e data/main.db"
-:VD data/main.db
-|2,0,1714046812,,"VD data/main.db"
 :data
 |2,0,1714046809,,"data"
 :!
@@ -760,8 +764,6 @@ $
 |2,0,1713852850,,"MRU star"
 :VD data//main.db
 |2,0,1713848466,,"VD data//main.db"
-:VD
-|2,0,1713848462,,"VD"
 :e migrations/240425_0000_portionurls-notnull-user_id.py
 |2,0,1713847066,,"e migrations/240425_0000_portionurls-notnull-user_id.py"
 :Join
@@ -5832,6 +5834,8 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/mcfly
+|2,1,1714685478,47,"mcfly"
 ?/ready
 |2,1,1714633252,47,"ready"
 ?/workspace
@@ -5846,8 +5850,6 @@ $
 |2,1,1714597526,47,"_cd ("
 ?/_fzf_dir_completion
 |2,1,1714596407,47,"_fzf_dir_completion"
-?/mcfly
-|2,1,1714594509,47,"mcfly"
 ? @$
 |2,1,1714594001,,"@$"
 ?/td
@@ -8216,42 +8218,41 @@ $
 |2,4,1693311567,,"cont"
 
 # Registers:
-""0	LINE	0
-	export SHELL=/bin/bash
-	export STARSHIP_CONFIG=~/.config/starship/starship.toml
-|3,1,0,1,2,0,1714640101,"export SHELL=/bin/bash","export STARSHIP_CONFIG=~/.config/starship/starship.toml"
+""0	CHAR	0
+	{}".format(table_name))
+|3,1,0,0,1,0,1714656346,"{}\".format(table_name))"
 "1	LINE	0
+	print_cursor(cursor)
+|3,0,1,1,1,0,1714655990,"print_cursor(cursor)"
+"2	LINE	0
+	rows = [ dict(row) for row in cursor ]
+|3,0,2,1,1,0,1714655931,"rows = [ dict(row) for row in cursor ]"
+"3	LINE	0
+	connec
+|3,0,3,1,1,0,1714655832,"connec"
+"4	LINE	0
 	export SHELL=/bin/bash
 	export STARSHIP_CONFIG=~/.config/starship/starship.toml
-|3,0,1,1,2,0,1714640097,"export SHELL=/bin/bash","export STARSHIP_CONFIG=~/.config/starship/starship.toml"
-"2	LINE	0
+|3,0,4,1,2,0,1714640097,"export SHELL=/bin/bash","export STARSHIP_CONFIG=~/.config/starship/starship.toml"
+"5	LINE	0
 	export STARSHIP_CONFIG=~/.config/starship/starship.toml
-|3,0,2,1,1,0,1714640080,"export STARSHIP_CONFIG=~/.config/starship/starship.toml"
-"3	LINE	0
+|3,0,5,1,1,0,1714640080,"export STARSHIP_CONFIG=~/.config/starship/starship.toml"
+"6	LINE	0
 	# ZSH_THEME="spaceship"
-|3,0,3,1,1,0,1714637639,"# ZSH_THEME=\"spaceship\""
-"4	LINE	0
+|3,0,6,1,1,0,1714637639,"# ZSH_THEME=\"spaceship\""
+"7	LINE	0
 	# ZSH_THEME="spaceship"
 	# source "$ZSH_CUSTOM/themes/$ZSH_THEME.zsh-theme"
-|3,0,4,1,2,0,1714637637,"# ZSH_THEME=\"spaceship\"","# source \"$ZSH_CUSTOM/themes/$ZSH_THEME.zsh-theme\""
-"5	LINE	0
+|3,0,7,1,2,0,1714637637,"# ZSH_THEME=\"spaceship\"","# source \"$ZSH_CUSTOM/themes/$ZSH_THEME.zsh-theme\""
+"8	LINE	0
 	# SPACESHIP_PROMPT_ORDER=(user host dir git node python exec_time line_sep jobs exit_code char)
 	# SPACESHIP_DIR_TRUNC=0
 	# SPACESHIP_NODE_ASYNC=false
 	# SPACESHIP_PYTHON_ASYNC=false
-|3,0,5,1,4,0,1714637634,"# SPACESHIP_PROMPT_ORDER=(user host dir git node python exec_time line_sep jobs exit_code char)","# SPACESHIP_DIR_TRUNC=0","# SPACESHIP_NODE_ASYNC=false","# SPACESHIP_PYTHON_ASYNC=false"
-"6	LINE	0
-	
-|3,0,6,1,1,0,1714636757,""
-"7	LINE	0
-	from typing import TypedDict
-|3,0,7,1,1,0,1714636699,"from typing import TypedDict"
-"8	LINE	0
-	from dataclasses import field
-|3,0,8,1,1,0,1714636692,"from dataclasses import field"
+|3,0,8,1,4,0,1714637634,"# SPACESHIP_PROMPT_ORDER=(user host dir git node python exec_time line_sep jobs exit_code char)","# SPACESHIP_DIR_TRUNC=0","# SPACESHIP_NODE_ASYNC=false","# SPACESHIP_PYTHON_ASYNC=false"
 "9	LINE	0
 	
-|3,0,9,1,1,0,1714633374,""
+|3,0,9,1,1,0,1714636757,""
 "a	CHAR	0
 	Tabularize /-/l1c1l1c1l1
 |3,0,10,0,1,0,1714384337,"Tabularize /-/l1c1l1c1l1"
@@ -8290,241 +8291,266 @@ $
 |<"                <form method=\"POST\" action=\"/resume_download\">","                    <input type=\"hidden\" name=\"id\" value=\"{{ id }}\">","                    <input type=\"submit\" value=\"Resume\">","                </form>","                {% endif %}","                {% if status == 'downloading' %}","                <form method=\"POST\" action=\"/pause_download\">","                    <input type=\"hidden\" name=\"id\" value=\"{{ id }}\">",>61
 |<"                    <input type=\"submit\" value=\"Pause\">","                </form>","                {% endif %}","","            </li>","        {% endfor %}","    </ul>\"\"\", downloads=downloads)"
 "-	CHAR	0
-	bash
-|3,0,36,0,1,0,1714640053,"bash"
+	{}".format(table_name))
+|3,0,36,0,1,0,1714656342,"{}\".format(table_name))"
 
 # File marks:
-'0  15  79  ~/.config/setup.zsh
-|4,48,15,79,1714652889,"~/.config/setup.zsh"
-'1  4  0  ~/.config/bindings.inputrc
-|4,49,4,0,1714640350,"~/.config/bindings.inputrc"
-'2  4  0  ~/.config/bindings.inputrc
-|4,50,4,0,1714640350,"~/.config/bindings.inputrc"
-'3  4  0  ~/.config/bindings.inputrc
-|4,51,4,0,1714640350,"~/.config/bindings.inputrc"
-'4  4  0  ~/.config/bindings.inputrc
-|4,52,4,0,1714640350,"~/.config/bindings.inputrc"
-'5  123  18  ~/.bashrc
-|4,53,123,18,1714640169,"~/.bashrc"
-'6  123  18  ~/.bashrc
-|4,54,123,18,1714640169,"~/.bashrc"
-'7  123  18  ~/.bashrc
-|4,55,123,18,1714640169,"~/.bashrc"
-'8  123  18  ~/.bashrc
-|4,56,123,18,1714640169,"~/.bashrc"
-'9  123  18  ~/.bashrc
-|4,57,123,18,1714640169,"~/.bashrc"
+'0  1  0  ~/hateoas/test.py
+|4,48,1,0,1714759093,"~/hateoas/test.py"
+'1  11  22  ~/.config/setup.zsh
+|4,49,11,22,1714685490,"~/.config/setup.zsh"
+'2  11  22  ~/.config/setup.zsh
+|4,50,11,22,1714685490,"~/.config/setup.zsh"
+'3  11  22  ~/.config/setup.zsh
+|4,51,11,22,1714685482,"~/.config/setup.zsh"
+'4  11  22  ~/.config/setup.zsh
+|4,52,11,22,1714685482,"~/.config/setup.zsh"
+'5  16  0  ~/hateoas/test.py
+|4,53,16,0,1714673114,"~/hateoas/test.py"
+'6  16  0  ~/hateoas/test.py
+|4,54,16,0,1714673114,"~/hateoas/test.py"
+'7  16  0  ~/hateoas/test.py
+|4,55,16,0,1714673114,"~/hateoas/test.py"
+'8  16  0  ~/hateoas/test.py
+|4,56,16,0,1714673114,"~/hateoas/test.py"
+'9  16  0  ~/hateoas/test.py
+|4,57,16,0,1714673114,"~/hateoas/test.py"
 
 # Jumplist (newest first):
+-'  1  0  ~/hateoas/test.py
+|4,39,1,0,1714759093,"~/hateoas/test.py"
+-'  11  22  ~/.config/setup.zsh
+|4,39,11,22,1714685490,"~/.config/setup.zsh"
+-'  11  22  ~/.config/setup.zsh
+|4,39,11,22,1714685490,"~/.config/setup.zsh"
+-'  11  22  ~/.config/setup.zsh
+|4,39,11,22,1714685482,"~/.config/setup.zsh"
+-'  7  0  ~/.config/setup.zsh
+|4,39,7,0,1714685478,"~/.config/setup.zsh"
+-'  7  0  ~/.config/setup.zsh
+|4,39,7,0,1714685478,"~/.config/setup.zsh"
+-'  7  0  ~/.config/setup.zsh
+|4,39,7,0,1714685478,"~/.config/setup.zsh"
+-'  1  0  ~/.config/setup.zsh
+|4,39,1,0,1714685472,"~/.config/setup.zsh"
+-'  1  0  ~/.config/setup.zsh
+|4,39,1,0,1714685472,"~/.config/setup.zsh"
+-'  1  0  ~/.config/setup.zsh
+|4,39,1,0,1714685472,"~/.config/setup.zsh"
+-'  16  0  ~/hateoas/test.py
+|4,39,16,0,1714673114,"~/hateoas/test.py"
+-'  16  0  ~/hateoas/test.py
+|4,39,16,0,1714673114,"~/hateoas/test.py"
+-'  16  0  ~/hateoas/test.py
+|4,39,16,0,1714673114,"~/hateoas/test.py"
+-'  16  0  ~/hateoas/test.py
+|4,39,16,0,1714673114,"~/hateoas/test.py"
+-'  16  0  ~/hateoas/test.py
+|4,39,16,0,1714673114,"~/hateoas/test.py"
+-'  16  0  ~/hateoas/test.py
+|4,39,16,0,1714673114,"~/hateoas/test.py"
+-'  15  45  ~/hateoas/test.py
+|4,39,15,45,1714656344,"~/hateoas/test.py"
+-'  15  45  ~/hateoas/test.py
+|4,39,15,45,1714656344,"~/hateoas/test.py"
+-'  15  45  ~/hateoas/test.py
+|4,39,15,45,1714656344,"~/hateoas/test.py"
+-'  15  45  ~/hateoas/test.py
+|4,39,15,45,1714656344,"~/hateoas/test.py"
+-'  15  45  ~/hateoas/test.py
+|4,39,15,45,1714656344,"~/hateoas/test.py"
+-'  15  45  ~/hateoas/test.py
+|4,39,15,45,1714656344,"~/hateoas/test.py"
+-'  14  51  ~/hateoas/test.py
+|4,39,14,51,1714656336,"~/hateoas/test.py"
+-'  14  51  ~/hateoas/test.py
+|4,39,14,51,1714656336,"~/hateoas/test.py"
+-'  14  51  ~/hateoas/test.py
+|4,39,14,51,1714656336,"~/hateoas/test.py"
+-'  14  51  ~/hateoas/test.py
+|4,39,14,51,1714656336,"~/hateoas/test.py"
+-'  14  51  ~/hateoas/test.py
+|4,39,14,51,1714656336,"~/hateoas/test.py"
+-'  14  51  ~/hateoas/test.py
+|4,39,14,51,1714656336,"~/hateoas/test.py"
+-'  17  19  ~/hateoas/test.py
+|4,39,17,19,1714656044,"~/hateoas/test.py"
+-'  17  19  ~/hateoas/test.py
+|4,39,17,19,1714656044,"~/hateoas/test.py"
+-'  17  19  ~/hateoas/test.py
+|4,39,17,19,1714656044,"~/hateoas/test.py"
+-'  17  19  ~/hateoas/test.py
+|4,39,17,19,1714656044,"~/hateoas/test.py"
+-'  17  19  ~/hateoas/test.py
+|4,39,17,19,1714656044,"~/hateoas/test.py"
+-'  17  19  ~/hateoas/test.py
+|4,39,17,19,1714656044,"~/hateoas/test.py"
+-'  18  0  ~/hateoas/test.py
+|4,39,18,0,1714655982,"~/hateoas/test.py"
+-'  18  0  ~/hateoas/test.py
+|4,39,18,0,1714655982,"~/hateoas/test.py"
+-'  18  0  ~/hateoas/test.py
+|4,39,18,0,1714655982,"~/hateoas/test.py"
+-'  18  0  ~/hateoas/test.py
+|4,39,18,0,1714655982,"~/hateoas/test.py"
+-'  18  0  ~/hateoas/test.py
+|4,39,18,0,1714655982,"~/hateoas/test.py"
+-'  18  0  ~/hateoas/test.py
+|4,39,18,0,1714655982,"~/hateoas/test.py"
+-'  10  0  ~/hateoas/test.py
+|4,39,10,0,1714655854,"~/hateoas/test.py"
+-'  10  0  ~/hateoas/test.py
+|4,39,10,0,1714655854,"~/hateoas/test.py"
+-'  10  0  ~/hateoas/test.py
+|4,39,10,0,1714655854,"~/hateoas/test.py"
+-'  10  0  ~/hateoas/test.py
+|4,39,10,0,1714655854,"~/hateoas/test.py"
+-'  10  0  ~/hateoas/test.py
+|4,39,10,0,1714655854,"~/hateoas/test.py"
+-'  10  0  ~/hateoas/test.py
+|4,39,10,0,1714655854,"~/hateoas/test.py"
+-'  1  0  ~/hateoas/data/main.db
+|4,39,1,0,1714655851,"~/hateoas/data/main.db"
+-'  1  0  ~/hateoas/data/main.db
+|4,39,1,0,1714655851,"~/hateoas/data/main.db"
+-'  1  0  ~/hateoas/data/main.db
+|4,39,1,0,1714655851,"~/hateoas/data/main.db"
+-'  1  0  ~/hateoas/data/main.db
+|4,39,1,0,1714655851,"~/hateoas/data/main.db"
+-'  1  0  ~/hateoas/data/main.db
+|4,39,1,0,1714655851,"~/hateoas/data/main.db"
+-'  1  0  ~/hateoas/data/main.db
+|4,39,1,0,1714655851,"~/hateoas/data/main.db"
+-'  1  0  ~/hateoas/test_task_worker.py
+|4,39,1,0,1714655828,"~/hateoas/test_task_worker.py"
+-'  1  0  ~/hateoas/test_task_worker.py
+|4,39,1,0,1714655828,"~/hateoas/test_task_worker.py"
+-'  1  0  ~/hateoas/test_task_worker.py
+|4,39,1,0,1714655828,"~/hateoas/test_task_worker.py"
+-'  1  0  ~/hateoas/test_task_worker.py
+|4,39,1,0,1714655828,"~/hateoas/test_task_worker.py"
+-'  1  0  ~/hateoas/test_task_worker.py
+|4,39,1,0,1714655828,"~/hateoas/test_task_worker.py"
+-'  1  0  ~/hateoas/test_task_worker.py
+|4,39,1,0,1714655828,"~/hateoas/test_task_worker.py"
+-'  472  12  ~/pytest_concate/test-server.py
+|4,39,472,12,1714655608,"~/pytest_concate/test-server.py"
+-'  472  12  ~/pytest_concate/test-server.py
+|4,39,472,12,1714655608,"~/pytest_concate/test-server.py"
+-'  472  12  ~/pytest_concate/test-server.py
+|4,39,472,12,1714655608,"~/pytest_concate/test-server.py"
+-'  472  12  ~/pytest_concate/test-server.py
+|4,39,472,12,1714655608,"~/pytest_concate/test-server.py"
+-'  472  12  ~/pytest_concate/test-server.py
+|4,39,472,12,1714655608,"~/pytest_concate/test-server.py"
+-'  472  12  ~/pytest_concate/test-server.py
+|4,39,472,12,1714655608,"~/pytest_concate/test-server.py"
+-'  472  12  ~/pytest_concate/test-server.py
+|4,39,472,12,1714655608,"~/pytest_concate/test-server.py"
+-'  473  22  ~/pytest_concate/test-server.py
+|4,39,473,22,1714655598,"~/pytest_concate/test-server.py"
+-'  473  22  ~/pytest_concate/test-server.py
+|4,39,473,22,1714655598,"~/pytest_concate/test-server.py"
+-'  473  22  ~/pytest_concate/test-server.py
+|4,39,473,22,1714655598,"~/pytest_concate/test-server.py"
+-'  473  22  ~/pytest_concate/test-server.py
+|4,39,473,22,1714655598,"~/pytest_concate/test-server.py"
+-'  473  22  ~/pytest_concate/test-server.py
+|4,39,473,22,1714655598,"~/pytest_concate/test-server.py"
+-'  473  22  ~/pytest_concate/test-server.py
+|4,39,473,22,1714655598,"~/pytest_concate/test-server.py"
+-'  473  22  ~/pytest_concate/test-server.py
+|4,39,473,22,1714655598,"~/pytest_concate/test-server.py"
+-'  1  0  ~/pytest_concate/test-server.py
+|4,39,1,0,1714655503,"~/pytest_concate/test-server.py"
+-'  1  0  ~/pytest_concate/test-server.py
+|4,39,1,0,1714655503,"~/pytest_concate/test-server.py"
+-'  1  0  ~/pytest_concate/test-server.py
+|4,39,1,0,1714655503,"~/pytest_concate/test-server.py"
+-'  1  0  ~/pytest_concate/test-server.py
+|4,39,1,0,1714655503,"~/pytest_concate/test-server.py"
+-'  1  0  ~/pytest_concate/test-server.py
+|4,39,1,0,1714655503,"~/pytest_concate/test-server.py"
+-'  1  0  ~/pytest_concate/test-server.py
+|4,39,1,0,1714655503,"~/pytest_concate/test-server.py"
+-'  1  0  ~/pytest_concate/test-server.py
+|4,39,1,0,1714655503,"~/pytest_concate/test-server.py"
+-'  9  1  ~/pytest_concate/pyproject.toml
+|4,39,9,1,1714655491,"~/pytest_concate/pyproject.toml"
+-'  9  1  ~/pytest_concate/pyproject.toml
+|4,39,9,1,1714655491,"~/pytest_concate/pyproject.toml"
+-'  9  1  ~/pytest_concate/pyproject.toml
+|4,39,9,1,1714655491,"~/pytest_concate/pyproject.toml"
+-'  9  1  ~/pytest_concate/pyproject.toml
+|4,39,9,1,1714655491,"~/pytest_concate/pyproject.toml"
+-'  9  1  ~/pytest_concate/pyproject.toml
+|4,39,9,1,1714655491,"~/pytest_concate/pyproject.toml"
+-'  9  1  ~/pytest_concate/pyproject.toml
+|4,39,9,1,1714655491,"~/pytest_concate/pyproject.toml"
+-'  9  1  ~/pytest_concate/pyproject.toml
+|4,39,9,1,1714655491,"~/pytest_concate/pyproject.toml"
+-'  9  1  ~/pytest_concate/pyproject.toml
+|4,39,9,1,1714655491,"~/pytest_concate/pyproject.toml"
+-'  9  0  ~/pytest_concate/pyproject.toml
+|4,39,9,0,1714655480,"~/pytest_concate/pyproject.toml"
+-'  1  0  ~/pytest_concate/pyproject.toml
+|4,39,1,0,1714655469,"~/pytest_concate/pyproject.toml"
+-'  1  0  ~/pytest_concate/pyproject.toml
+|4,39,1,0,1714655469,"~/pytest_concate/pyproject.toml"
+-'  1  0  ~/pytest_concate/pyproject.toml
+|4,39,1,0,1714655469,"~/pytest_concate/pyproject.toml"
+-'  1  0  ~/pytest_concate/pyproject.toml
+|4,39,1,0,1714655469,"~/pytest_concate/pyproject.toml"
+-'  1  0  ~/pytest_concate/pyproject.toml
+|4,39,1,0,1714655469,"~/pytest_concate/pyproject.toml"
+-'  1  0  ~/pytest_concate/pyproject.toml
+|4,39,1,0,1714655469,"~/pytest_concate/pyproject.toml"
+-'  1  0  ~/pytest_concate/pyproject.toml
+|4,39,1,0,1714655469,"~/pytest_concate/pyproject.toml"
+-'  1  0  ~/pytest_concate/pyproject.toml
+|4,39,1,0,1714655469,"~/pytest_concate/pyproject.toml"
+-'  1  0  ~/pytest_concate/pyproject.toml
+|4,39,1,0,1714655469,"~/pytest_concate/pyproject.toml"
 -'  15  79  ~/.config/setup.zsh
 |4,39,15,79,1714652889,"~/.config/setup.zsh"
--'  1  0  ~/.config/setup.zsh
-|4,39,1,0,1714652861,"~/.config/setup.zsh"
--'  4  0  ~/.config/bindings.inputrc
-|4,39,4,0,1714640350,"~/.config/bindings.inputrc"
--'  4  0  ~/.config/bindings.inputrc
-|4,39,4,0,1714640350,"~/.config/bindings.inputrc"
--'  4  0  ~/.config/bindings.inputrc
-|4,39,4,0,1714640350,"~/.config/bindings.inputrc"
--'  1  0  ~/.config/bindings.inputrc
-|4,39,1,0,1714640346,"~/.config/bindings.inputrc"
--'  1  0  ~/.config/bindings.inputrc
-|4,39,1,0,1714640346,"~/.config/bindings.inputrc"
--'  1  0  ~/.config/bindings.inputrc
-|4,39,1,0,1714640346,"~/.config/bindings.inputrc"
--'  123  18  ~/.bashrc
-|4,39,123,18,1714640169,"~/.bashrc"
--'  123  18  ~/.bashrc
-|4,39,123,18,1714640169,"~/.bashrc"
--'  123  18  ~/.bashrc
-|4,39,123,18,1714640169,"~/.bashrc"
--'  123  18  ~/.bashrc
-|4,39,123,18,1714640169,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1714640160,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1714640160,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1714640160,"~/.bashrc"
--'  1  0  ~/.bashrc
-|4,39,1,0,1714640160,"~/.bashrc"
--'  103  24  ~/.zshrc
-|4,39,103,24,1714640159,"~/.zshrc"
--'  103  24  ~/.zshrc
-|4,39,103,24,1714640159,"~/.zshrc"
--'  103  24  ~/.zshrc
-|4,39,103,24,1714640159,"~/.zshrc"
--'  103  24  ~/.zshrc
-|4,39,103,24,1714640159,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1714640149,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1714640149,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1714640149,"~/.zshrc"
--'  1  0  ~/.zshrc
-|4,39,1,0,1714640149,"~/.zshrc"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1714640145,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1714640145,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1714640145,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1714640145,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1714640145,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1714640123,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.zsh
-|4,39,1,0,1714640109,"~/.config/setup.zsh"
--'  1  0  ~/.config/setup.zsh
-|4,39,1,0,1714640109,"~/.config/setup.zsh"
--'  1  0  ~/.config/setup.zsh
-|4,39,1,0,1714640109,"~/.config/setup.zsh"
--'  1  0  ~/.config/setup.zsh
-|4,39,1,0,1714640109,"~/.config/setup.zsh"
--'  1  0  ~/.config/setup.zsh
-|4,39,1,0,1714640109,"~/.config/setup.zsh"
--'  1  0  ~/.config/setup.zsh
-|4,39,1,0,1714640109,"~/.config/setup.zsh"
--'  1  0  ~/.config/setup.zsh
-|4,39,1,0,1714640109,"~/.config/setup.zsh"
--'  1  0  ~/.config/setup.zsh
-|4,39,1,0,1714640102,"~/.config/setup.zsh"
--'  19  0  ~/.config/setup.zsh
-|4,39,19,0,1714640100,"~/.config/setup.zsh"
--'  18  0  ~/.config/setup.zsh
-|4,39,18,0,1714640100,"~/.config/setup.zsh"
--'  18  0  ~/.config/setup.zsh
-|4,39,18,0,1714640100,"~/.config/setup.zsh"
--'  18  0  ~/.config/setup.zsh
-|4,39,18,0,1714640100,"~/.config/setup.zsh"
--'  18  0  ~/.config/setup.zsh
-|4,39,18,0,1714640100,"~/.config/setup.zsh"
--'  18  0  ~/.config/setup.zsh
-|4,39,18,0,1714640100,"~/.config/setup.zsh"
--'  18  0  ~/.config/setup.zsh
-|4,39,18,0,1714640100,"~/.config/setup.zsh"
--'  18  0  ~/.config/setup.zsh
-|4,39,18,0,1714640100,"~/.config/setup.zsh"
--'  18  0  ~/.config/setup.zsh
-|4,39,18,0,1714640100,"~/.config/setup.zsh"
--'  3  0  ~/.config/setup.zsh
-|4,39,3,0,1714640092,"~/.config/setup.zsh"
--'  3  0  ~/.config/setup.zsh
-|4,39,3,0,1714640092,"~/.config/setup.zsh"
--'  3  0  ~/.config/setup.zsh
-|4,39,3,0,1714640092,"~/.config/setup.zsh"
--'  3  0  ~/.config/setup.zsh
-|4,39,3,0,1714640092,"~/.config/setup.zsh"
--'  3  0  ~/.config/setup.zsh
-|4,39,3,0,1714640092,"~/.config/setup.zsh"
--'  3  0  ~/.config/setup.zsh
-|4,39,3,0,1714640092,"~/.config/setup.zsh"
--'  3  0  ~/.config/setup.zsh
-|4,39,3,0,1714640092,"~/.config/setup.zsh"
--'  3  0  ~/.config/setup.zsh
-|4,39,3,0,1714640092,"~/.config/setup.zsh"
--'  3  0  ~/.config/setup.zsh
-|4,39,3,0,1714640092,"~/.config/setup.zsh"
--'  1  0  ~/.config/setup.zsh
-|4,39,1,0,1714640092,"~/.config/setup.zsh"
--'  18  22  ~/.config/setup.zsh
-|4,39,18,22,1714640054,"~/.config/setup.zsh"
--'  18  24  ~/.config/setup.zsh
-|4,39,18,24,1714640051,"~/.config/setup.zsh"
--'  17  24  ~/.config/setup.zsh
-|4,39,17,24,1714640051,"~/.config/setup.zsh"
--'  17  24  ~/.config/setup.zsh
-|4,39,17,24,1714640051,"~/.config/setup.zsh"
--'  17  24  ~/.config/setup.zsh
-|4,39,17,24,1714640051,"~/.config/setup.zsh"
--'  17  24  ~/.config/setup.zsh
-|4,39,17,24,1714640051,"~/.config/setup.zsh"
--'  17  24  ~/.config/setup.zsh
-|4,39,17,24,1714640051,"~/.config/setup.zsh"
--'  17  24  ~/.config/setup.zsh
-|4,39,17,24,1714640051,"~/.config/setup.zsh"
--'  17  24  ~/.config/setup.zsh
-|4,39,17,24,1714640051,"~/.config/setup.zsh"
--'  17  24  ~/.config/setup.zsh
-|4,39,17,24,1714640051,"~/.config/setup.zsh"
--'  17  24  ~/.config/setup.zsh
-|4,39,17,24,1714640051,"~/.config/setup.zsh"
--'  14  0  ~/.config/setup.zsh
-|4,39,14,0,1714640048,"~/.config/setup.zsh"
--'  14  0  ~/.config/setup.zsh
-|4,39,14,0,1714640048,"~/.config/setup.zsh"
--'  14  0  ~/.config/setup.zsh
-|4,39,14,0,1714640048,"~/.config/setup.zsh"
--'  14  0  ~/.config/setup.zsh
-|4,39,14,0,1714640048,"~/.config/setup.zsh"
--'  14  0  ~/.config/setup.zsh
-|4,39,14,0,1714640048,"~/.config/setup.zsh"
--'  14  0  ~/.config/setup.zsh
-|4,39,14,0,1714640048,"~/.config/setup.zsh"
--'  14  0  ~/.config/setup.zsh
-|4,39,14,0,1714640048,"~/.config/setup.zsh"
--'  14  0  ~/.config/setup.zsh
-|4,39,14,0,1714640048,"~/.config/setup.zsh"
--'  14  0  ~/.config/setup.zsh
-|4,39,14,0,1714640048,"~/.config/setup.zsh"
--'  14  0  ~/.config/setup.zsh
-|4,39,14,0,1714640048,"~/.config/setup.zsh"
--'  3  0  ~/.config/setup.zsh
-|4,39,3,0,1714640042,"~/.config/setup.zsh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1714640038,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1714640038,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1714640038,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1714640038,"~/.config/setup.sh"
--'  25  0  ~/.config/setup.sh
-|4,39,25,0,1714640019,"~/.config/setup.sh"
--'  25  0  ~/.config/setup.sh
-|4,39,25,0,1714640019,"~/.config/setup.sh"
--'  25  0  ~/.config/setup.sh
-|4,39,25,0,1714640019,"~/.config/setup.sh"
--'  25  0  ~/.config/setup.sh
-|4,39,25,0,1714640019,"~/.config/setup.sh"
--'  25  0  ~/.config/setup.sh
-|4,39,25,0,1714640019,"~/.config/setup.sh"
--'  25  0  ~/.config/setup.sh
-|4,39,25,0,1714640019,"~/.config/setup.sh"
--'  25  0  ~/.config/setup.sh
-|4,39,25,0,1714640019,"~/.config/setup.sh"
--'  25  0  ~/.config/setup.sh
-|4,39,25,0,1714640019,"~/.config/setup.sh"
--'  25  0  ~/.config/setup.sh
-|4,39,25,0,1714640019,"~/.config/setup.sh"
--'  25  0  ~/.config/setup.sh
-|4,39,25,0,1714640019,"~/.config/setup.sh"
--'  25  0  ~/.config/setup.sh
-|4,39,25,0,1714640019,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1714640007,"~/.config/setup.sh"
--'  1  23  ~/.config/setup.zsh
-|4,39,1,23,1714638422,"~/.config/setup.zsh"
--'  1  23  ~/.config/setup.zsh
-|4,39,1,23,1714638422,"~/.config/setup.zsh"
--'  1  23  ~/.config/setup.zsh
-|4,39,1,23,1714638422,"~/.config/setup.zsh"
--'  6  9  ~/.config/setup.zsh
-|4,39,6,9,1714638364,"~/.config/setup.zsh"
--'  5  9  ~/.config/setup.zsh
-|4,39,5,9,1714638364,"~/.config/setup.zsh"
+-'  15  79  ~/.config/setup.zsh
+|4,39,15,79,1714652889,"~/.config/setup.zsh"
+-'  15  79  ~/.config/setup.zsh
+|4,39,15,79,1714652889,"~/.config/setup.zsh"
 
 # Buffer list:
-%~/.config/setup.zsh	15	79
+%~/hateoas/test.py	1	0
 
 # History of marks within files (newest to oldest):
 
+> ~/hateoas/test.py
+	*	1714759089	0
+	"	1	0
+	^	16	0
+	.	15	46
+	+	2	30
+	+	18	0
+	+	14	63
+	+	17	17
+	+	3	0
+	+	6	43
+	+	8	0
+	+	5	24
+	+	7	12
+	+	17	19
+	+	12	27
+	+	14	41
+	+	18	0
+	+	14	40
+	+	13	10
+	+	14	31
+	+	15	0
+	+	14	1
+	+	15	46
+
 > ~/.config/setup.zsh
-	*	1714652885	0
-	"	15	79
+	*	1714685488	0
+	"	11	22
 	^	15	80
 	.	15	79
 	+	7	33
@@ -8546,6 +8572,80 @@ $
 	+	1	0
 	+	2	0
 	+	15	79
+
+> ~/hateoas/data/main.db
+	*	1714655851	0
+	"	1	0
+
+> ~/hateoas/test_task_worker.py
+	*	1714655824	0
+	"	1	0
+	^	12	14
+	.	12	13
+	+	2	0
+	+	7	27
+	+	7	64
+	+	7	0
+	+	6	0
+	+	7	1
+	+	9	1
+	+	18	17
+	+	3	10
+	+	20	0
+	+	17	0
+	+	11	0
+	+	13	14
+	+	14	13
+	+	16	11
+	+	12	13
+
+> ~/pytest_concate/test-server.py
+	*	1714655603	0
+	"	472	12
+	.	472	0
+	+	927	0
+	+	62	7
+	+	71	81
+	+	61	0
+	+	11	0
+	+	152	0
+	+	42	0
+	+	43	40
+	+	45	15
+	+	44	17
+	+	45	29
+	+	44	18
+	+	45	35
+	+	35	0
+	+	36	4
+	+	927	0
+	+	55	0
+	+	472	13
+	+	472	0
+
+> ~/pytest_concate/pyproject.toml
+	*	1714655489	0
+	"	9	1
+	^	9	2
+	.	9	1
+	+	2	15
+	+	3	16
+	+	10	0
+	+	4	0
+	+	5	0
+	+	5	114
+	+	12	28
+	+	11	10
+	+	9	1
+	+	10	0
+	+	9	0
+	+	8	95
+	+	7	78
+	+	5	126
+	+	5	1
+	+	9	1
+	+	5	0
+	+	9	1
 
 > ~/.config/bindings.inputrc
 	*	1714640349	0
@@ -9273,51 +9373,6 @@ $
 	+	1209	0
 	a	5346	16
 
-> ~/pytest_concate/test-server.py
-	*	1714567818	0
-	"	207	32
-	^	207	33
-	.	55	0
-	+	927	0
-	+	62	7
-	+	71	81
-	+	61	0
-	+	11	0
-	+	152	0
-	+	42	0
-	+	43	40
-	+	45	15
-	+	44	17
-	+	45	29
-	+	44	18
-	+	45	35
-	+	35	0
-	+	36	4
-	+	927	0
-	+	55	0
-
-> ~/pytest_concate/pyproject.toml
-	*	1714567750	0
-	"	9	1
-	^	9	2
-	.	9	1
-	+	2	15
-	+	3	16
-	+	10	0
-	+	4	0
-	+	5	0
-	+	5	114
-	+	12	28
-	+	11	10
-	+	9	1
-	+	10	0
-	+	9	0
-	+	8	95
-	+	7	78
-	+	5	126
-	+	5	1
-	+	9	1
-
 > ~/hateoas/pyrightconfig.json
 	*	1714560968	0
 	"	1	0
@@ -9336,28 +9391,6 @@ $
 	+	4	0
 	+	1	10
 	+	3	63
-
-> ~/hateoas/test_task_worker.py
-	*	1714560563	0
-	"	30	6
-	^	12	14
-	.	12	13
-	+	2	0
-	+	7	27
-	+	7	64
-	+	7	0
-	+	6	0
-	+	7	1
-	+	9	1
-	+	18	17
-	+	3	10
-	+	20	0
-	+	17	0
-	+	11	0
-	+	13	14
-	+	14	13
-	+	16	11
-	+	12	13
 
 > ~/hateoas/download_worker.py
 	*	1714560530	0
@@ -11412,10 +11445,6 @@ $
 	+	31	12
 	+	38	98
 	+	46	0
-
-> ~/hateoas/data/main.db
-	*	1714047259	0
-	"	29	0
 
 > /tmp/db2dl.py.lock
 	*	1714046751	0
