@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/mcfly
+~MSle0~/\t
 
 # Last Substitute Search Pattern:
 ~MSle0&:
@@ -21,21 +21,25 @@ $
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1714759092,,"q"
+|2,0,1714800730,,"q"
+:q!
+|2,0,1714800051,,"q!"
+:e!
+|2,0,1714799869,,"e!"
+:qa
+|2,0,1714775971,,"qa"
+:Copilot panel
+|2,0,1714759492,,"Copilot panel"
 :set number
 |2,0,1714656035,,"set number"
 :set nonumber
 |2,0,1714656031,,"set nonumber"
-:q!
-|2,0,1714655996,,"q!"
 :VD data/main.db
 |2,0,1714655854,,"VD data/main.db"
 :VD
 |2,0,1714655849,,"VD"
 :e test.py
 |2,0,1714655828,,"e test.py"
-:qa
-|2,0,1714655608,,"qa"
 :472
 |2,0,1714655515,,"472"
 :e .bashrc
@@ -270,8 +274,6 @@ $
 |2,0,1714464523,,"term python % loop"
 :bd!
 |2,0,1714464518,,"bd!"
-:e!
-|2,0,1714464448,,"e!"
 :term
 |2,0,1714464312,,"term"
 :!python 
@@ -342,8 +344,6 @@ $
 |2,0,1714328077,,"MRU 4:cron-concerns.txt"
 :e c
 |2,0,1714308247,,"e c"
-:Copilot panel
-|2,0,1714307899,,"Copilot panel"
 :e /bin/sh
 |2,0,1714307241,,"e /bin/sh"
 :normal! 80p
@@ -5834,6 +5834,10 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/\t
+|2,1,1714800049,47,"\\t"
+? @$
+|2,1,1714759372,,"@$"
 ?/mcfly
 |2,1,1714685478,47,"mcfly"
 ?/ready
@@ -5850,8 +5854,6 @@ $
 |2,1,1714597526,47,"_cd ("
 ?/_fzf_dir_completion
 |2,1,1714596407,47,"_fzf_dir_completion"
-? @$
-|2,1,1714594001,,"@$"
 ?/td
 |2,1,1714567649,47,"td"
 ?/fix
@@ -6006,8 +6008,6 @@ $
 |2,1,1714027004,47,""
 ?/\\n
 |2,1,1714026988,47,"\\\\n"
-?/\t
-|2,1,1714026959,47,"\\t"
 ?/\s
 |2,1,1714026957,47,"\\s"
 ?/\s\s\s\s
@@ -8218,41 +8218,41 @@ $
 |2,4,1693311567,,"cont"
 
 # Registers:
-""0	CHAR	0
-	{}".format(table_name))
-|3,1,0,0,1,0,1714656346,"{}\".format(table_name))"
+"0	CHAR	0
+	4
+|3,0,0,0,1,0,1714800701,"4"
 "1	LINE	0
-	print_cursor(cursor)
-|3,0,1,1,1,0,1714655990,"print_cursor(cursor)"
+	        if not commandline -P
+	            commandline -f (complete -C | head -n 1)
+	        else
+	            commandline -f complete
+|3,0,1,1,4,0,1714800579,"        if not commandline -P","            commandline -f (complete -C | head -n 1)","        else","            commandline -f complete"
 "2	LINE	0
-	rows = [ dict(row) for row in cursor ]
-|3,0,2,1,1,0,1714655931,"rows = [ dict(row) for row in cursor ]"
+	    end
+|3,0,2,1,1,0,1714800569,"    end"
 "3	LINE	0
-	connec
-|3,0,3,1,1,0,1714655832,"connec"
+	        commandline -f complete complete
+|3,0,3,1,1,0,1714800568,"        commandline -f complete complete"
 "4	LINE	0
-	export SHELL=/bin/bash
-	export STARSHIP_CONFIG=~/.config/starship/starship.toml
-|3,0,4,1,2,0,1714640097,"export SHELL=/bin/bash","export STARSHIP_CONFIG=~/.config/starship/starship.toml"
-"5	LINE	0
-	export STARSHIP_CONFIG=~/.config/starship/starship.toml
-|3,0,5,1,1,0,1714640080,"export STARSHIP_CONFIG=~/.config/starship/starship.toml"
-"6	LINE	0
-	# ZSH_THEME="spaceship"
-|3,0,6,1,1,0,1714637639,"# ZSH_THEME=\"spaceship\""
-"7	LINE	0
-	# ZSH_THEME="spaceship"
-	# source "$ZSH_CUSTOM/themes/$ZSH_THEME.zsh-theme"
-|3,0,7,1,2,0,1714637637,"# ZSH_THEME=\"spaceship\"","# source \"$ZSH_CUSTOM/themes/$ZSH_THEME.zsh-theme\""
-"8	LINE	0
-	# SPACESHIP_PROMPT_ORDER=(user host dir git node python exec_time line_sep jobs exit_code char)
-	# SPACESHIP_DIR_TRUNC=0
-	# SPACESHIP_NODE_ASYNC=false
-	# SPACESHIP_PYTHON_ASYNC=false
-|3,0,8,1,4,0,1714637634,"# SPACESHIP_PROMPT_ORDER=(user host dir git node python exec_time line_sep jobs exit_code char)","# SPACESHIP_DIR_TRUNC=0","# SPACESHIP_NODE_ASYNC=false","# SPACESHIP_PYTHON_ASYNC=false"
-"9	LINE	0
 	
-|3,0,9,1,1,0,1714636757,""
+	
+|3,0,4,1,2,0,1714800305,"",""
+"5	LINE	0
+	    # Get the completion options
+|3,0,5,1,1,0,1714800305,"    # Get the completion options"
+"6	LINE	0
+	    # Count the number of lines in the completion options
+	    set -l num_options (echo "$completions")
+|3,0,6,1,2,0,1714800300,"    # Count the number of lines in the completion options","    set -l num_options (echo \"$completions\")"
+"7	LINE	0
+	    echo 
+|3,0,7,1,1,0,1714799802,"    echo "
+"8	LINE	0
+	    end
+|3,0,8,1,1,0,1714799736,"    end"
+"9	LINE	0
+	    echo "tab_complete_accept_first_2"
+|3,0,9,1,1,0,1714799726,"    echo \"tab_complete_accept_first_2\""
 "a	CHAR	0
 	Tabularize /-/l1c1l1c1l1
 |3,0,10,0,1,0,1714384337,"Tabularize /-/l1c1l1c1l1"
@@ -8290,238 +8290,501 @@ $
 |3,0,28,1,24,0,1712521850,"    return render_template_string(\"\"\"","    <ul>","        {% for id, name, downloaded_path, progress, status in downloads %}","            <li>","                <a href=\"/download/{{ id }}\">{{ name }}</a>","                <span>{{ status }}</span>","                <progress value=\"{{ progress }}\" max=\"100\"></progress>","                <span>{{ progress }}%</span>","                {% if status == 'paused' %}",>68
 |<"                <form method=\"POST\" action=\"/resume_download\">","                    <input type=\"hidden\" name=\"id\" value=\"{{ id }}\">","                    <input type=\"submit\" value=\"Resume\">","                </form>","                {% endif %}","                {% if status == 'downloading' %}","                <form method=\"POST\" action=\"/pause_download\">","                    <input type=\"hidden\" name=\"id\" value=\"{{ id }}\">",>61
 |<"                    <input type=\"submit\" value=\"Pause\">","                </form>","                {% endif %}","","            </li>","        {% endfor %}","    </ul>\"\"\", downloads=downloads)"
-"-	CHAR	0
-	{}".format(table_name))
-|3,0,36,0,1,0,1714656342,"{}\".format(table_name))"
+""-	CHAR	0
+	3
+|3,1,36,0,1,0,1714800701,"3"
 
 # File marks:
-'0  1  0  ~/hateoas/test.py
-|4,48,1,0,1714759093,"~/hateoas/test.py"
-'1  11  22  ~/.config/setup.zsh
-|4,49,11,22,1714685490,"~/.config/setup.zsh"
-'2  11  22  ~/.config/setup.zsh
-|4,50,11,22,1714685490,"~/.config/setup.zsh"
-'3  11  22  ~/.config/setup.zsh
-|4,51,11,22,1714685482,"~/.config/setup.zsh"
-'4  11  22  ~/.config/setup.zsh
-|4,52,11,22,1714685482,"~/.config/setup.zsh"
-'5  16  0  ~/hateoas/test.py
-|4,53,16,0,1714673114,"~/hateoas/test.py"
-'6  16  0  ~/hateoas/test.py
-|4,54,16,0,1714673114,"~/hateoas/test.py"
-'7  16  0  ~/hateoas/test.py
-|4,55,16,0,1714673114,"~/hateoas/test.py"
-'8  16  0  ~/hateoas/test.py
-|4,56,16,0,1714673114,"~/hateoas/test.py"
-'9  16  0  ~/hateoas/test.py
-|4,57,16,0,1714673114,"~/hateoas/test.py"
+'0  63  23  ~/.config/setup.fish
+|4,48,63,23,1714800730,"~/.config/setup.fish"
+'1  55  11  ~/.config/setup.fish
+|4,49,55,11,1714800593,"~/.config/setup.fish"
+'2  52  11  ~/.config/setup.fish
+|4,50,52,11,1714800593,"~/.config/setup.fish"
+'3  42  9  ~/.config/setup.fish
+|4,51,42,9,1714800539,"~/.config/setup.fish"
+'4  42  9  ~/.config/setup.fish
+|4,52,42,9,1714800539,"~/.config/setup.fish"
+'5  41  9  ~/.config/setup.fish
+|4,53,41,9,1714800539,"~/.config/setup.fish"
+'6  41  9  ~/.config/setup.fish
+|4,54,41,9,1714800539,"~/.config/setup.fish"
+'7  59  39  ~/.config/setup.fish
+|4,55,59,39,1714800523,"~/.config/setup.fish"
+'8  59  39  ~/.config/setup.fish
+|4,56,59,39,1714800523,"~/.config/setup.fish"
+'9  52  39  ~/.config/setup.fish
+|4,57,52,39,1714800523,"~/.config/setup.fish"
 
 # Jumplist (newest first):
--'  1  0  ~/hateoas/test.py
-|4,39,1,0,1714759093,"~/hateoas/test.py"
--'  11  22  ~/.config/setup.zsh
-|4,39,11,22,1714685490,"~/.config/setup.zsh"
--'  11  22  ~/.config/setup.zsh
-|4,39,11,22,1714685490,"~/.config/setup.zsh"
--'  11  22  ~/.config/setup.zsh
-|4,39,11,22,1714685482,"~/.config/setup.zsh"
--'  7  0  ~/.config/setup.zsh
-|4,39,7,0,1714685478,"~/.config/setup.zsh"
--'  7  0  ~/.config/setup.zsh
-|4,39,7,0,1714685478,"~/.config/setup.zsh"
--'  7  0  ~/.config/setup.zsh
-|4,39,7,0,1714685478,"~/.config/setup.zsh"
--'  1  0  ~/.config/setup.zsh
-|4,39,1,0,1714685472,"~/.config/setup.zsh"
--'  1  0  ~/.config/setup.zsh
-|4,39,1,0,1714685472,"~/.config/setup.zsh"
--'  1  0  ~/.config/setup.zsh
-|4,39,1,0,1714685472,"~/.config/setup.zsh"
--'  16  0  ~/hateoas/test.py
-|4,39,16,0,1714673114,"~/hateoas/test.py"
--'  16  0  ~/hateoas/test.py
-|4,39,16,0,1714673114,"~/hateoas/test.py"
--'  16  0  ~/hateoas/test.py
-|4,39,16,0,1714673114,"~/hateoas/test.py"
--'  16  0  ~/hateoas/test.py
-|4,39,16,0,1714673114,"~/hateoas/test.py"
--'  16  0  ~/hateoas/test.py
-|4,39,16,0,1714673114,"~/hateoas/test.py"
--'  16  0  ~/hateoas/test.py
-|4,39,16,0,1714673114,"~/hateoas/test.py"
--'  15  45  ~/hateoas/test.py
-|4,39,15,45,1714656344,"~/hateoas/test.py"
--'  15  45  ~/hateoas/test.py
-|4,39,15,45,1714656344,"~/hateoas/test.py"
--'  15  45  ~/hateoas/test.py
-|4,39,15,45,1714656344,"~/hateoas/test.py"
--'  15  45  ~/hateoas/test.py
-|4,39,15,45,1714656344,"~/hateoas/test.py"
--'  15  45  ~/hateoas/test.py
-|4,39,15,45,1714656344,"~/hateoas/test.py"
--'  15  45  ~/hateoas/test.py
-|4,39,15,45,1714656344,"~/hateoas/test.py"
--'  14  51  ~/hateoas/test.py
-|4,39,14,51,1714656336,"~/hateoas/test.py"
--'  14  51  ~/hateoas/test.py
-|4,39,14,51,1714656336,"~/hateoas/test.py"
--'  14  51  ~/hateoas/test.py
-|4,39,14,51,1714656336,"~/hateoas/test.py"
--'  14  51  ~/hateoas/test.py
-|4,39,14,51,1714656336,"~/hateoas/test.py"
--'  14  51  ~/hateoas/test.py
-|4,39,14,51,1714656336,"~/hateoas/test.py"
--'  14  51  ~/hateoas/test.py
-|4,39,14,51,1714656336,"~/hateoas/test.py"
--'  17  19  ~/hateoas/test.py
-|4,39,17,19,1714656044,"~/hateoas/test.py"
--'  17  19  ~/hateoas/test.py
-|4,39,17,19,1714656044,"~/hateoas/test.py"
--'  17  19  ~/hateoas/test.py
-|4,39,17,19,1714656044,"~/hateoas/test.py"
--'  17  19  ~/hateoas/test.py
-|4,39,17,19,1714656044,"~/hateoas/test.py"
--'  17  19  ~/hateoas/test.py
-|4,39,17,19,1714656044,"~/hateoas/test.py"
--'  17  19  ~/hateoas/test.py
-|4,39,17,19,1714656044,"~/hateoas/test.py"
--'  18  0  ~/hateoas/test.py
-|4,39,18,0,1714655982,"~/hateoas/test.py"
--'  18  0  ~/hateoas/test.py
-|4,39,18,0,1714655982,"~/hateoas/test.py"
--'  18  0  ~/hateoas/test.py
-|4,39,18,0,1714655982,"~/hateoas/test.py"
--'  18  0  ~/hateoas/test.py
-|4,39,18,0,1714655982,"~/hateoas/test.py"
--'  18  0  ~/hateoas/test.py
-|4,39,18,0,1714655982,"~/hateoas/test.py"
--'  18  0  ~/hateoas/test.py
-|4,39,18,0,1714655982,"~/hateoas/test.py"
--'  10  0  ~/hateoas/test.py
-|4,39,10,0,1714655854,"~/hateoas/test.py"
--'  10  0  ~/hateoas/test.py
-|4,39,10,0,1714655854,"~/hateoas/test.py"
--'  10  0  ~/hateoas/test.py
-|4,39,10,0,1714655854,"~/hateoas/test.py"
--'  10  0  ~/hateoas/test.py
-|4,39,10,0,1714655854,"~/hateoas/test.py"
--'  10  0  ~/hateoas/test.py
-|4,39,10,0,1714655854,"~/hateoas/test.py"
--'  10  0  ~/hateoas/test.py
-|4,39,10,0,1714655854,"~/hateoas/test.py"
--'  1  0  ~/hateoas/data/main.db
-|4,39,1,0,1714655851,"~/hateoas/data/main.db"
--'  1  0  ~/hateoas/data/main.db
-|4,39,1,0,1714655851,"~/hateoas/data/main.db"
--'  1  0  ~/hateoas/data/main.db
-|4,39,1,0,1714655851,"~/hateoas/data/main.db"
--'  1  0  ~/hateoas/data/main.db
-|4,39,1,0,1714655851,"~/hateoas/data/main.db"
--'  1  0  ~/hateoas/data/main.db
-|4,39,1,0,1714655851,"~/hateoas/data/main.db"
--'  1  0  ~/hateoas/data/main.db
-|4,39,1,0,1714655851,"~/hateoas/data/main.db"
--'  1  0  ~/hateoas/test_task_worker.py
-|4,39,1,0,1714655828,"~/hateoas/test_task_worker.py"
--'  1  0  ~/hateoas/test_task_worker.py
-|4,39,1,0,1714655828,"~/hateoas/test_task_worker.py"
--'  1  0  ~/hateoas/test_task_worker.py
-|4,39,1,0,1714655828,"~/hateoas/test_task_worker.py"
--'  1  0  ~/hateoas/test_task_worker.py
-|4,39,1,0,1714655828,"~/hateoas/test_task_worker.py"
--'  1  0  ~/hateoas/test_task_worker.py
-|4,39,1,0,1714655828,"~/hateoas/test_task_worker.py"
--'  1  0  ~/hateoas/test_task_worker.py
-|4,39,1,0,1714655828,"~/hateoas/test_task_worker.py"
--'  472  12  ~/pytest_concate/test-server.py
-|4,39,472,12,1714655608,"~/pytest_concate/test-server.py"
--'  472  12  ~/pytest_concate/test-server.py
-|4,39,472,12,1714655608,"~/pytest_concate/test-server.py"
--'  472  12  ~/pytest_concate/test-server.py
-|4,39,472,12,1714655608,"~/pytest_concate/test-server.py"
--'  472  12  ~/pytest_concate/test-server.py
-|4,39,472,12,1714655608,"~/pytest_concate/test-server.py"
--'  472  12  ~/pytest_concate/test-server.py
-|4,39,472,12,1714655608,"~/pytest_concate/test-server.py"
--'  472  12  ~/pytest_concate/test-server.py
-|4,39,472,12,1714655608,"~/pytest_concate/test-server.py"
--'  472  12  ~/pytest_concate/test-server.py
-|4,39,472,12,1714655608,"~/pytest_concate/test-server.py"
--'  473  22  ~/pytest_concate/test-server.py
-|4,39,473,22,1714655598,"~/pytest_concate/test-server.py"
--'  473  22  ~/pytest_concate/test-server.py
-|4,39,473,22,1714655598,"~/pytest_concate/test-server.py"
--'  473  22  ~/pytest_concate/test-server.py
-|4,39,473,22,1714655598,"~/pytest_concate/test-server.py"
--'  473  22  ~/pytest_concate/test-server.py
-|4,39,473,22,1714655598,"~/pytest_concate/test-server.py"
--'  473  22  ~/pytest_concate/test-server.py
-|4,39,473,22,1714655598,"~/pytest_concate/test-server.py"
--'  473  22  ~/pytest_concate/test-server.py
-|4,39,473,22,1714655598,"~/pytest_concate/test-server.py"
--'  473  22  ~/pytest_concate/test-server.py
-|4,39,473,22,1714655598,"~/pytest_concate/test-server.py"
--'  1  0  ~/pytest_concate/test-server.py
-|4,39,1,0,1714655503,"~/pytest_concate/test-server.py"
--'  1  0  ~/pytest_concate/test-server.py
-|4,39,1,0,1714655503,"~/pytest_concate/test-server.py"
--'  1  0  ~/pytest_concate/test-server.py
-|4,39,1,0,1714655503,"~/pytest_concate/test-server.py"
--'  1  0  ~/pytest_concate/test-server.py
-|4,39,1,0,1714655503,"~/pytest_concate/test-server.py"
--'  1  0  ~/pytest_concate/test-server.py
-|4,39,1,0,1714655503,"~/pytest_concate/test-server.py"
--'  1  0  ~/pytest_concate/test-server.py
-|4,39,1,0,1714655503,"~/pytest_concate/test-server.py"
--'  1  0  ~/pytest_concate/test-server.py
-|4,39,1,0,1714655503,"~/pytest_concate/test-server.py"
--'  9  1  ~/pytest_concate/pyproject.toml
-|4,39,9,1,1714655491,"~/pytest_concate/pyproject.toml"
--'  9  1  ~/pytest_concate/pyproject.toml
-|4,39,9,1,1714655491,"~/pytest_concate/pyproject.toml"
--'  9  1  ~/pytest_concate/pyproject.toml
-|4,39,9,1,1714655491,"~/pytest_concate/pyproject.toml"
--'  9  1  ~/pytest_concate/pyproject.toml
-|4,39,9,1,1714655491,"~/pytest_concate/pyproject.toml"
--'  9  1  ~/pytest_concate/pyproject.toml
-|4,39,9,1,1714655491,"~/pytest_concate/pyproject.toml"
--'  9  1  ~/pytest_concate/pyproject.toml
-|4,39,9,1,1714655491,"~/pytest_concate/pyproject.toml"
--'  9  1  ~/pytest_concate/pyproject.toml
-|4,39,9,1,1714655491,"~/pytest_concate/pyproject.toml"
--'  9  1  ~/pytest_concate/pyproject.toml
-|4,39,9,1,1714655491,"~/pytest_concate/pyproject.toml"
--'  9  0  ~/pytest_concate/pyproject.toml
-|4,39,9,0,1714655480,"~/pytest_concate/pyproject.toml"
--'  1  0  ~/pytest_concate/pyproject.toml
-|4,39,1,0,1714655469,"~/pytest_concate/pyproject.toml"
--'  1  0  ~/pytest_concate/pyproject.toml
-|4,39,1,0,1714655469,"~/pytest_concate/pyproject.toml"
--'  1  0  ~/pytest_concate/pyproject.toml
-|4,39,1,0,1714655469,"~/pytest_concate/pyproject.toml"
--'  1  0  ~/pytest_concate/pyproject.toml
-|4,39,1,0,1714655469,"~/pytest_concate/pyproject.toml"
--'  1  0  ~/pytest_concate/pyproject.toml
-|4,39,1,0,1714655469,"~/pytest_concate/pyproject.toml"
--'  1  0  ~/pytest_concate/pyproject.toml
-|4,39,1,0,1714655469,"~/pytest_concate/pyproject.toml"
--'  1  0  ~/pytest_concate/pyproject.toml
-|4,39,1,0,1714655469,"~/pytest_concate/pyproject.toml"
--'  1  0  ~/pytest_concate/pyproject.toml
-|4,39,1,0,1714655469,"~/pytest_concate/pyproject.toml"
--'  1  0  ~/pytest_concate/pyproject.toml
-|4,39,1,0,1714655469,"~/pytest_concate/pyproject.toml"
--'  15  79  ~/.config/setup.zsh
-|4,39,15,79,1714652889,"~/.config/setup.zsh"
--'  15  79  ~/.config/setup.zsh
-|4,39,15,79,1714652889,"~/.config/setup.zsh"
--'  15  79  ~/.config/setup.zsh
-|4,39,15,79,1714652889,"~/.config/setup.zsh"
+-'  63  23  ~/.config/setup.fish
+|4,39,63,23,1714800730,"~/.config/setup.fish"
+-'  56  23  ~/.config/setup.fish
+|4,39,56,23,1714800701,"~/.config/setup.fish"
+-'  53  23  ~/.config/setup.fish
+|4,39,53,23,1714800689,"~/.config/setup.fish"
+-'  46  19  ~/.config/setup.fish
+|4,39,46,19,1714800684,"~/.config/setup.fish"
+-'  55  11  ~/.config/setup.fish
+|4,39,55,11,1714800593,"~/.config/setup.fish"
+-'  52  11  ~/.config/setup.fish
+|4,39,52,11,1714800593,"~/.config/setup.fish"
+-'  52  0  ~/.config/setup.fish
+|4,39,52,0,1714800583,"~/.config/setup.fish"
+-'  50  0  ~/.config/setup.fish
+|4,39,50,0,1714800583,"~/.config/setup.fish"
+-'  42  9  ~/.config/setup.fish
+|4,39,42,9,1714800539,"~/.config/setup.fish"
+-'  41  9  ~/.config/setup.fish
+|4,39,41,9,1714800539,"~/.config/setup.fish"
+-'  41  9  ~/.config/setup.fish
+|4,39,41,9,1714800539,"~/.config/setup.fish"
+-'  59  39  ~/.config/setup.fish
+|4,39,59,39,1714800523,"~/.config/setup.fish"
+-'  55  39  ~/.config/setup.fish
+|4,39,55,39,1714800523,"~/.config/setup.fish"
+-'  50  39  ~/.config/setup.fish
+|4,39,50,39,1714800523,"~/.config/setup.fish"
+-'  50  39  ~/.config/setup.fish
+|4,39,50,39,1714800523,"~/.config/setup.fish"
+-'  50  30  ~/.config/setup.fish
+|4,39,50,30,1714800514,"~/.config/setup.fish"
+-'  41  8  ~/.config/setup.fish
+|4,39,41,8,1714800467,"~/.config/setup.fish"
+-'  41  8  ~/.config/setup.fish
+|4,39,41,8,1714800467,"~/.config/setup.fish"
+-'  41  8  ~/.config/setup.fish
+|4,39,41,8,1714800467,"~/.config/setup.fish"
+-'  51  6  ~/.config/setup.fish
+|4,39,51,6,1714800381,"~/.config/setup.fish"
+-'  49  6  ~/.config/setup.fish
+|4,39,49,6,1714800381,"~/.config/setup.fish"
+-'  49  6  ~/.config/setup.fish
+|4,39,49,6,1714800381,"~/.config/setup.fish"
+-'  49  6  ~/.config/setup.fish
+|4,39,49,6,1714800381,"~/.config/setup.fish"
+-'  49  6  ~/.config/setup.fish
+|4,39,49,6,1714800381,"~/.config/setup.fish"
+-'  49  6  ~/.config/setup.fish
+|4,39,49,6,1714800381,"~/.config/setup.fish"
+-'  49  6  ~/.config/setup.fish
+|4,39,49,6,1714800381,"~/.config/setup.fish"
+-'  37  4  ~/.config/setup.fish
+|4,39,37,4,1714800314,"~/.config/setup.fish"
+-'  37  4  ~/.config/setup.fish
+|4,39,37,4,1714800314,"~/.config/setup.fish"
+-'  37  4  ~/.config/setup.fish
+|4,39,37,4,1714800314,"~/.config/setup.fish"
+-'  37  4  ~/.config/setup.fish
+|4,39,37,4,1714800314,"~/.config/setup.fish"
+-'  37  4  ~/.config/setup.fish
+|4,39,37,4,1714800314,"~/.config/setup.fish"
+-'  37  4  ~/.config/setup.fish
+|4,39,37,4,1714800314,"~/.config/setup.fish"
+-'  37  4  ~/.config/setup.fish
+|4,39,37,4,1714800314,"~/.config/setup.fish"
+-'  37  4  ~/.config/setup.fish
+|4,39,37,4,1714800314,"~/.config/setup.fish"
+-'  36  21  ~/.config/setup.fish
+|4,39,36,21,1714800304,"~/.config/setup.fish"
+-'  36  21  ~/.config/setup.fish
+|4,39,36,21,1714800304,"~/.config/setup.fish"
+-'  36  21  ~/.config/setup.fish
+|4,39,36,21,1714800304,"~/.config/setup.fish"
+-'  36  21  ~/.config/setup.fish
+|4,39,36,21,1714800304,"~/.config/setup.fish"
+-'  36  21  ~/.config/setup.fish
+|4,39,36,21,1714800304,"~/.config/setup.fish"
+-'  36  21  ~/.config/setup.fish
+|4,39,36,21,1714800304,"~/.config/setup.fish"
+-'  36  21  ~/.config/setup.fish
+|4,39,36,21,1714800304,"~/.config/setup.fish"
+-'  36  21  ~/.config/setup.fish
+|4,39,36,21,1714800304,"~/.config/setup.fish"
+-'  62  0  ~/.config/setup.fish
+|4,39,62,0,1714800219,"~/.config/setup.fish"
+-'  41  0  ~/.config/setup.fish
+|4,39,41,0,1714800219,"~/.config/setup.fish"
+-'  61  0  ~/.config/setup.fish
+|4,39,61,0,1714800219,"~/.config/setup.fish"
+-'  58  0  ~/.config/setup.fish
+|4,39,58,0,1714800219,"~/.config/setup.fish"
+-'  57  0  ~/.config/setup.fish
+|4,39,57,0,1714800219,"~/.config/setup.fish"
+-'  58  0  ~/.config/setup.fish
+|4,39,58,0,1714800219,"~/.config/setup.fish"
+-'  40  0  ~/.config/setup.fish
+|4,39,40,0,1714800219,"~/.config/setup.fish"
+-'  57  0  ~/.config/setup.fish
+|4,39,57,0,1714800219,"~/.config/setup.fish"
+-'  54  0  ~/.config/setup.fish
+|4,39,54,0,1714800219,"~/.config/setup.fish"
+-'  40  0  ~/.config/setup.fish
+|4,39,40,0,1714800219,"~/.config/setup.fish"
+-'  53  0  ~/.config/setup.fish
+|4,39,53,0,1714800219,"~/.config/setup.fish"
+-'  54  0  ~/.config/setup.fish
+|4,39,54,0,1714800219,"~/.config/setup.fish"
+-'  40  0  ~/.config/setup.fish
+|4,39,40,0,1714800219,"~/.config/setup.fish"
+-'  53  0  ~/.config/setup.fish
+|4,39,53,0,1714800219,"~/.config/setup.fish"
+-'  54  0  ~/.config/setup.fish
+|4,39,54,0,1714800219,"~/.config/setup.fish"
+-'  40  0  ~/.config/setup.fish
+|4,39,40,0,1714800219,"~/.config/setup.fish"
+-'  53  0  ~/.config/setup.fish
+|4,39,53,0,1714800219,"~/.config/setup.fish"
+-'  40  0  ~/.config/setup.fish
+|4,39,40,0,1714800219,"~/.config/setup.fish"
+-'  53  0  ~/.config/setup.fish
+|4,39,53,0,1714800219,"~/.config/setup.fish"
+-'  40  0  ~/.config/setup.fish
+|4,39,40,0,1714800219,"~/.config/setup.fish"
+-'  40  43  ~/.config/setup.fish
+|4,39,40,43,1714800039,"~/.config/setup.fish"
+-'  40  43  ~/.config/setup.fish
+|4,39,40,43,1714800039,"~/.config/setup.fish"
+-'  40  43  ~/.config/setup.fish
+|4,39,40,43,1714800022,"~/.config/setup.fish"
+-'  65  0  ~/.config/setup.fish
+|4,39,65,0,1714800001,"~/.config/setup.fish"
+-'  70  0  ~/.config/setup.fish
+|4,39,70,0,1714800001,"~/.config/setup.fish"
+-'  44  0  ~/.config/setup.fish
+|4,39,44,0,1714800001,"~/.config/setup.fish"
+-'  50  0  ~/.config/setup.fish
+|4,39,50,0,1714800001,"~/.config/setup.fish"
+-'  64  0  ~/.config/setup.fish
+|4,39,64,0,1714800001,"~/.config/setup.fish"
+-'  69  0  ~/.config/setup.fish
+|4,39,69,0,1714800001,"~/.config/setup.fish"
+-'  66  0  ~/.config/setup.fish
+|4,39,66,0,1714800001,"~/.config/setup.fish"
+-'  60  0  ~/.config/setup.fish
+|4,39,60,0,1714800001,"~/.config/setup.fish"
+-'  61  0  ~/.config/setup.fish
+|4,39,61,0,1714800001,"~/.config/setup.fish"
+-'  66  0  ~/.config/setup.fish
+|4,39,66,0,1714800001,"~/.config/setup.fish"
+-'  43  0  ~/.config/setup.fish
+|4,39,43,0,1714800001,"~/.config/setup.fish"
+-'  48  0  ~/.config/setup.fish
+|4,39,48,0,1714800001,"~/.config/setup.fish"
+-'  60  0  ~/.config/setup.fish
+|4,39,60,0,1714800001,"~/.config/setup.fish"
+-'  65  0  ~/.config/setup.fish
+|4,39,65,0,1714800001,"~/.config/setup.fish"
+-'  57  0  ~/.config/setup.fish
+|4,39,57,0,1714800001,"~/.config/setup.fish"
+-'  62  0  ~/.config/setup.fish
+|4,39,62,0,1714800001,"~/.config/setup.fish"
+-'  43  0  ~/.config/setup.fish
+|4,39,43,0,1714800001,"~/.config/setup.fish"
+-'  48  0  ~/.config/setup.fish
+|4,39,48,0,1714800001,"~/.config/setup.fish"
+-'  56  0  ~/.config/setup.fish
+|4,39,56,0,1714800001,"~/.config/setup.fish"
+-'  61  0  ~/.config/setup.fish
+|4,39,61,0,1714800001,"~/.config/setup.fish"
+-'  57  0  ~/.config/setup.fish
+|4,39,57,0,1714800001,"~/.config/setup.fish"
+-'  62  0  ~/.config/setup.fish
+|4,39,62,0,1714800001,"~/.config/setup.fish"
+-'  43  0  ~/.config/setup.fish
+|4,39,43,0,1714800001,"~/.config/setup.fish"
+-'  48  0  ~/.config/setup.fish
+|4,39,48,0,1714800001,"~/.config/setup.fish"
+-'  56  0  ~/.config/setup.fish
+|4,39,56,0,1714800001,"~/.config/setup.fish"
+-'  61  0  ~/.config/setup.fish
+|4,39,61,0,1714800001,"~/.config/setup.fish"
+-'  57  0  ~/.config/setup.fish
+|4,39,57,0,1714800001,"~/.config/setup.fish"
+-'  62  0  ~/.config/setup.fish
+|4,39,62,0,1714800001,"~/.config/setup.fish"
+-'  43  0  ~/.config/setup.fish
+|4,39,43,0,1714800001,"~/.config/setup.fish"
+-'  48  0  ~/.config/setup.fish
+|4,39,48,0,1714800001,"~/.config/setup.fish"
+-'  56  0  ~/.config/setup.fish
+|4,39,56,0,1714800001,"~/.config/setup.fish"
+-'  61  0  ~/.config/setup.fish
+|4,39,61,0,1714800001,"~/.config/setup.fish"
+-'  43  0  ~/.config/setup.fish
+|4,39,43,0,1714800001,"~/.config/setup.fish"
+-'  48  0  ~/.config/setup.fish
+|4,39,48,0,1714800001,"~/.config/setup.fish"
 
 # Buffer list:
-%~/hateoas/test.py	1	0
+%~/.config/setup.fish	63	23
 
 # History of marks within files (newest to oldest):
+
+> ~/.config/setup.fish
+	*	1714800729	0
+	"	63	23
+	^	51	8
+	.	56	23
+	+	23	0
+	+	24	22
+	+	25	25
+	+	26	23
+	+	27	33
+	+	2	12
+	+	21	0
+	+	20	6
+	+	20	0
+	+	24	26
+	+	25	29
+	+	26	27
+	+	24	0
+	+	25	0
+	+	27	0
+	+	26	0
+	+	24	22
+	+	25	0
+	+	26	0
+	+	27	0
+	+	21	24
+	+	23	0
+	+	1	17
+	+	20	0
+	+	4	16
+	+	6	0
+	+	19	0
+	+	6	0
+	+	6	34
+	+	17	33
+	+	6	0
+	+	17	0
+	+	6	0
+	+	6	27
+	+	18	0
+	+	6	0
+	+	6	47
+	+	6	0
+	+	10	5
+	+	9	0
+	+	9	38
+	+	9	0
+	+	9	47
+	+	9	0
+	+	9	31
+	+	9	0
+	+	9	10
+	+	9	0
+	+	5	3
+	+	9	0
+	+	5	0
+	+	17	34
+	+	5	0
+	+	5	6
+	+	5	0
+	+	5	31
+	+	5	0
+	+	5	4
+	+	5	7
+	+	5	0
+	+	5	21
+	+	5	24
+	+	5	11
+	+	5	0
+	+	5	22
+	+	5	24
+	+	5	22
+	+	5	0
+	+	9	0
+	+	8	0
+	+	7	5
+	+	8	40
+	+	63	34
+	+	33	0
+	+	37	43
+	+	36	42
+	+	37	0
+	+	36	0
+	+	37	0
+	+	38	45
+	+	39	5
+	+	59	0
+	+	50	9
+	+	45	9
+	+	37	5
+	+	59	0
+	+	51	9
+	+	59	39
+	+	42	9
+	+	59	0
+	+	52	0
+	+	58	0
+	+	52	0
+	+	40	20
+	+	46	19
+	+	53	23
+	+	51	8
+	+	56	23
+	a	56	23
+	b	56	23
+
+> ~/.config/setup.sh
+	*	1714776222	0
+	"	1	0
+	.	1	1
+	+	13	68
+	+	13	27
+	+	5	0
+	+	4	1
+	+	13	34
+	+	4	0
+	+	5	0
+	+	13	0
+	+	4	0
+	+	13	0
+	+	3	0
+	+	4	0
+	+	13	0
+	+	5	0
+	+	13	0
+	+	13	1
+	+	13	8
+	+	13	10
+	+	13	155
+	+	13	8
+	+	13	123
+	+	13	0
+	+	24	26
+	+	25	27
+	+	7	41
+	+	9	23
+	+	12	0
+	+	9	75
+	+	12	0
+	+	9	63
+	+	12	0
+	+	9	54
+	+	13	71
+	+	13	89
+	+	13	0
+	+	11	38
+	+	10	0
+	+	10	13
+	+	10	0
+	+	13	9
+	+	13	17
+	+	26	0
+	+	4	0
+	+	15	0
+	+	13	14
+	+	27	34
+	+	9	0
+	+	9	29
+	+	1	11
+	+	13	0
+	+	14	0
+	+	13	0
+	+	23	0
+	+	9	0
+	+	10	0
+	+	13	0
+	+	27	0
+	+	8	0
+	+	13	0
+	+	42	35
+	+	25	1
+	+	28	0
+	+	42	0
+	+	25	0
+	+	26	0
+	+	24	0
+	+	21	0
+	+	16	0
+	+	44	45
+	+	41	1
+	+	42	0
+	+	36	42
+	+	1	1
+
+> ~/.config/alias.sh
+	*	1714776216	0
+	"	20	1
+	^	20	2
+	.	20	1
+	+	2	0
+	+	16	37
+	+	20	77
+	+	20	42
+	+	20	47
+	+	20	32
+	+	21	39
+	+	22	40
+	+	23	79
+	+	23	0
+	+	23	36
+	+	23	20
+	+	23	25
+	+	24	45
+	+	25	0
+	+	23	0
+	+	20	0
+	+	24	19
+	+	17	60
+	+	19	0
+	+	20	0
+	+	18	13
+	+	20	10
+	+	19	0
+	+	11	0
+	+	10	72
+	+	9	6
+	+	20	1
+	+	21	0
+	+	20	1
+
+> ~/.config/fish/config.fish
+	*	1714776178	0
+	"	3	30
+	^	3	31
+	.	3	30
+	+	3	30
+
+> ~/.config/fish/completions/fisher.fish
+	*	1714775966	0
+	"	1	0
+
+> ~/.config/setup.zsh
+	*	1714762665	0
+	"	16	0
+	.	16	0
+	+	7	33
+	+	13	1
+	+	7	0
+	+	13	1
+	+	7	0
+	+	12	0
+	+	4	0
+	+	23	0
+	+	14	0
+	+	24	0
+	+	23	24
+	+	24	22
+	+	22	0
+	+	21	0
+	+	22	0
+	+	3	0
+	+	1	0
+	+	2	0
+	+	15	79
+	+	17	71
+	+	21	32
+	+	20	11
+	+	21	37
+	+	15	1
+	+	19	88
+	+	21	0
+	+	18	0
+	+	19	0
+	+	16	0
 
 > ~/hateoas/test.py
 	*	1714759089	0
@@ -8547,31 +8810,6 @@ $
 	+	15	0
 	+	14	1
 	+	15	46
-
-> ~/.config/setup.zsh
-	*	1714685488	0
-	"	11	22
-	^	15	80
-	.	15	79
-	+	7	33
-	+	13	1
-	+	7	0
-	+	13	1
-	+	7	0
-	+	12	0
-	+	4	0
-	+	18	0
-	+	14	0
-	+	19	0
-	+	18	24
-	+	19	22
-	+	17	0
-	+	16	0
-	+	17	0
-	+	3	0
-	+	1	0
-	+	2	0
-	+	15	79
 
 > ~/hateoas/data/main.db
 	*	1714655851	0
@@ -8701,84 +8939,6 @@ $
 	.	103	24
 	+	75	1
 	+	103	24
-
-> ~/.config/setup.sh
-	*	1714640144	0
-	"	1	0
-	.	1	1
-	+	13	68
-	+	13	27
-	+	5	0
-	+	4	1
-	+	13	34
-	+	4	0
-	+	5	0
-	+	13	0
-	+	4	0
-	+	13	0
-	+	3	0
-	+	4	0
-	+	13	0
-	+	5	0
-	+	13	0
-	+	13	1
-	+	13	8
-	+	13	10
-	+	13	155
-	+	13	8
-	+	13	123
-	+	13	0
-	+	24	26
-	+	25	27
-	+	7	41
-	+	9	23
-	+	12	0
-	+	9	75
-	+	12	0
-	+	9	63
-	+	12	0
-	+	9	54
-	+	13	71
-	+	13	89
-	+	13	0
-	+	11	38
-	+	10	0
-	+	10	13
-	+	10	0
-	+	13	9
-	+	13	17
-	+	26	0
-	+	4	0
-	+	15	0
-	+	13	14
-	+	27	34
-	+	9	0
-	+	9	29
-	+	1	11
-	+	13	0
-	+	14	0
-	+	13	0
-	+	23	0
-	+	9	0
-	+	10	0
-	+	13	0
-	+	27	0
-	+	8	0
-	+	13	0
-	+	42	35
-	+	25	1
-	+	28	0
-	+	42	0
-	+	25	0
-	+	26	0
-	+	24	0
-	+	21	0
-	+	16	0
-	+	44	45
-	+	41	1
-	+	42	0
-	+	36	42
-	+	1	1
 
 > /home/.zshrc
 	*	1714637566	0
@@ -9708,39 +9868,6 @@ $
 	.	2	18
 	+	3	7
 	+	2	18
-
-> ~/.config/alias.sh
-	*	1714556387	0
-	"	9	6
-	^	9	7
-	.	9	6
-	+	2	0
-	+	16	37
-	+	20	77
-	+	20	42
-	+	20	47
-	+	20	32
-	+	21	39
-	+	22	40
-	+	23	79
-	+	23	0
-	+	23	36
-	+	23	20
-	+	23	25
-	+	24	45
-	+	25	0
-	+	23	0
-	+	20	0
-	+	24	19
-	+	17	60
-	+	19	0
-	+	20	0
-	+	18	13
-	+	20	10
-	+	19	0
-	+	11	0
-	+	10	72
-	+	9	6
 
 > ~/pytest_concate/requirements.txt
 	*	1714556332	0
@@ -21527,43 +21654,6 @@ $
 	.	1	4
 	+	1	4
 
-> ~/.config/setup.fish
-	*	1693172200	0
-	"	1	0
-	^	15	0
-	.	6	0
-	+	20	0
-	+	21	22
-	+	22	25
-	+	23	23
-	+	24	33
-	+	2	12
-	+	18	0
-	+	17	6
-	+	17	0
-	+	21	26
-	+	22	29
-	+	23	27
-	+	21	0
-	+	22	0
-	+	24	0
-	+	23	0
-	+	21	22
-	+	22	0
-	+	23	0
-	+	24	0
-	+	18	24
-	+	20	0
-	+	1	17
-	+	17	0
-	+	4	16
-	+	6	0
-	+	16	0
-	+	5	0
-	+	6	34
-	+	14	33
-	+	6	0
-
 > ~/.config/fish/functions/n.fish
 	*	1693155905	0
 	"	36	2
@@ -21610,13 +21700,6 @@ $
 > ~/.local/share/z/data
 	*	1693084362	0
 	"	1	0
-
-> ~/.config/fish/config.fish
-	*	1693083469	0
-	"	3	30
-	^	3	31
-	.	3	30
-	+	3	30
 
 > ~/.local/share/fish/fish_history
 	*	1693083001	0
