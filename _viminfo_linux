@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/\t
+~MSle0~/\\r
 
 # Last Substitute Search Pattern:
 ~MSle0&:
@@ -21,9 +21,21 @@ $
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1714800730,,"q"
+|2,0,1714948294,,"q"
 :q!
-|2,0,1714800051,,"q!"
+|2,0,1714946204,,"q!"
+:MRU fish
+|2,0,1714944478,,"MRU fish"
+:set ft=bash
+|2,0,1714944406,,"set ft=bash"
+:e bindings.inputrc
+|2,0,1714944397,,"e bindings.inputrc"
+:e 
+|2,0,1714944393,,"e "
+:e ~/.config/setup.sh
+|2,0,1714944037,,"e ~/.config/setup.sh"
+:w
+|2,0,1714943742,,"w"
 :e!
 |2,0,1714799869,,"e!"
 :qa
@@ -170,8 +182,6 @@ $
 |2,0,1714594571,,"MRU to"
 :e .
 |2,0,1714594001,,"e ."
-:e 
-|2,0,1714594000,,"e "
 :e ../
 |2,0,1714593998,,"e ../"
 :cd ~/.config
@@ -198,8 +208,6 @@ $
 |2,0,1714567624,,"copen"
 :k
 |2,0,1714567622,,"k"
-:w
-|2,0,1714567554,,"w"
 :let 
 |2,0,1714567533,,"let "
 :qa!
@@ -3612,12 +3620,8 @@ $
 |2,0,1693173422,,"set ft=json"
 :set ft=text
 |2,0,1693173418,,"set ft=text"
-:set ft=bash
-|2,0,1693173171,,"set ft=bash"
 :cd chrome-extensions/ coffee-vps/ copyright/ inspo/ templates/ thoughts/
 |2,0,1693162139,,"cd chrome-extensions/ coffee-vps/ copyright/ inspo/ templates/ thoughts/"
-:MRU fish
-|2,0,1693160567,,"MRU fish"
 :MRU set*fis
 |2,0,1693160542,,"MRU set*fis"
 :MRU bashr
@@ -5834,12 +5838,16 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/\\r
+|2,1,1714947364,47,"\\\\r"
+?/mcfly
+|2,1,1714944040,47,"mcfly"
+?/space
+|2,1,1714943651,47,"space"
 ?/\t
 |2,1,1714800049,47,"\\t"
 ? @$
 |2,1,1714759372,,"@$"
-?/mcfly
-|2,1,1714685478,47,"mcfly"
 ?/ready
 |2,1,1714633252,47,"ready"
 ?/workspace
@@ -8219,40 +8227,37 @@ $
 
 # Registers:
 "0	CHAR	0
-	4
-|3,0,0,0,1,0,1714800701,"4"
-"1	LINE	0
-	        if not commandline -P
-	            commandline -f (complete -C | head -n 1)
-	        else
-	            commandline -f complete
-|3,0,1,1,4,0,1714800579,"        if not commandline -P","            commandline -f (complete -C | head -n 1)","        else","            commandline -f complete"
+	-p
+|3,0,0,0,1,0,1714948213,"-p"
+""1	LINE	0
+	    # set -l completion_is_open (commandline -C)
+|3,1,1,1,1,0,1714948239,"    # set -l completion_is_open (commandline -C)"
 "2	LINE	0
-	    end
-|3,0,2,1,1,0,1714800569,"    end"
+	    set -l in_paging_mode (commandline -p)
+|3,0,2,1,1,0,1714948156,"    set -l in_paging_mode (commandline -p)"
 "3	LINE	0
-	        commandline -f complete complete
-|3,0,3,1,1,0,1714800568,"        commandline -f complete complete"
+	        echo "in_paging_mode: $in_paging_mode"
+|3,0,3,1,1,0,1714948155,"        echo \"in_paging_mode: $in_paging_mode\""
 "4	LINE	0
 	
-	
-|3,0,4,1,2,0,1714800305,"",""
+|3,0,4,1,1,0,1714947453,""
 "5	LINE	0
-	    # Get the completion options
-|3,0,5,1,1,0,1714800305,"    # Get the completion options"
+	        commandline -f complete
+|3,0,5,1,1,0,1714947400,"        commandline -f complete"
 "6	LINE	0
-	    # Count the number of lines in the completion options
-	    set -l num_options (echo "$completions")
-|3,0,6,1,2,0,1714800300,"    # Count the number of lines in the completion options","    set -l num_options (echo \"$completions\")"
+	        commandline -f complete
+|3,0,6,1,1,0,1714947353,"        commandline -f complete"
 "7	LINE	0
-	    echo 
-|3,0,7,1,1,0,1714799802,"    echo "
+	    # commandline -f execute
+|3,0,7,1,1,0,1714947347,"    # commandline -f execute"
 "8	LINE	0
-	    end
-|3,0,8,1,1,0,1714799736,"    end"
+	
+	    # commandline -f complete
+|3,0,8,1,2,0,1714947346,"","    # commandline -f complete"
 "9	LINE	0
-	    echo "tab_complete_accept_first_2"
-|3,0,9,1,1,0,1714799726,"    echo \"tab_complete_accept_first_2\""
+	
+	# bind \e\[A history-prefix-search-backward
+|3,0,9,1,2,0,1714944825,"","# bind \\e\\[A history-prefix-search-backward"
 "a	CHAR	0
 	Tabularize /-/l1c1l1c1l1
 |3,0,10,0,1,0,1714384337,"Tabularize /-/l1c1l1c1l1"
@@ -8290,347 +8295,360 @@ $
 |3,0,28,1,24,0,1712521850,"    return render_template_string(\"\"\"","    <ul>","        {% for id, name, downloaded_path, progress, status in downloads %}","            <li>","                <a href=\"/download/{{ id }}\">{{ name }}</a>","                <span>{{ status }}</span>","                <progress value=\"{{ progress }}\" max=\"100\"></progress>","                <span>{{ progress }}%</span>","                {% if status == 'paused' %}",>68
 |<"                <form method=\"POST\" action=\"/resume_download\">","                    <input type=\"hidden\" name=\"id\" value=\"{{ id }}\">","                    <input type=\"submit\" value=\"Resume\">","                </form>","                {% endif %}","                {% if status == 'downloading' %}","                <form method=\"POST\" action=\"/pause_download\">","                    <input type=\"hidden\" name=\"id\" value=\"{{ id }}\">",>61
 |<"                    <input type=\"submit\" value=\"Pause\">","                </form>","                {% endif %}","","            </li>","        {% endfor %}","    </ul>\"\"\", downloads=downloads)"
-""-	CHAR	0
-	3
-|3,1,36,0,1,0,1714800701,"3"
+"-	CHAR	0
+	-p
+|3,0,36,0,1,0,1714948203,"-p"
 
 # File marks:
-'0  63  23  ~/.config/setup.fish
-|4,48,63,23,1714800730,"~/.config/setup.fish"
-'1  55  11  ~/.config/setup.fish
-|4,49,55,11,1714800593,"~/.config/setup.fish"
-'2  52  11  ~/.config/setup.fish
-|4,50,52,11,1714800593,"~/.config/setup.fish"
-'3  42  9  ~/.config/setup.fish
-|4,51,42,9,1714800539,"~/.config/setup.fish"
-'4  42  9  ~/.config/setup.fish
-|4,52,42,9,1714800539,"~/.config/setup.fish"
-'5  41  9  ~/.config/setup.fish
-|4,53,41,9,1714800539,"~/.config/setup.fish"
-'6  41  9  ~/.config/setup.fish
-|4,54,41,9,1714800539,"~/.config/setup.fish"
-'7  59  39  ~/.config/setup.fish
-|4,55,59,39,1714800523,"~/.config/setup.fish"
-'8  59  39  ~/.config/setup.fish
-|4,56,59,39,1714800523,"~/.config/setup.fish"
-'9  52  39  ~/.config/setup.fish
-|4,57,52,39,1714800523,"~/.config/setup.fish"
+'0  7  4  ~/.config/setup.fish
+|4,48,7,4,1714948294,"~/.config/setup.fish"
+'1  8  31  ~/.config/setup.fish
+|4,49,8,31,1714948214,"~/.config/setup.fish"
+'2  7  20  ~/.config/setup.fish
+|4,50,7,20,1714948174,"~/.config/setup.fish"
+'3  8  20  ~/.config/setup.fish
+|4,51,8,20,1714948174,"~/.config/setup.fish"
+'4  7  4  ~/.config/setup.fish
+|4,52,7,4,1714948158,"~/.config/setup.fish"
+'5  7  4  ~/.config/setup.fish
+|4,53,7,4,1714948158,"~/.config/setup.fish"
+'6  8  4  ~/.config/setup.fish
+|4,54,8,4,1714948158,"~/.config/setup.fish"
+'7  8  4  ~/.config/setup.fish
+|4,55,8,4,1714948158,"~/.config/setup.fish"
+'8  8  0  ~/.config/setup.fish
+|4,56,8,0,1714948130,"~/.config/setup.fish"
+'9  9  0  ~/.config/setup.fish
+|4,57,9,0,1714948130,"~/.config/setup.fish"
 
 # Jumplist (newest first):
--'  63  23  ~/.config/setup.fish
-|4,39,63,23,1714800730,"~/.config/setup.fish"
--'  56  23  ~/.config/setup.fish
-|4,39,56,23,1714800701,"~/.config/setup.fish"
--'  53  23  ~/.config/setup.fish
-|4,39,53,23,1714800689,"~/.config/setup.fish"
--'  46  19  ~/.config/setup.fish
-|4,39,46,19,1714800684,"~/.config/setup.fish"
--'  55  11  ~/.config/setup.fish
-|4,39,55,11,1714800593,"~/.config/setup.fish"
--'  52  11  ~/.config/setup.fish
-|4,39,52,11,1714800593,"~/.config/setup.fish"
--'  52  0  ~/.config/setup.fish
-|4,39,52,0,1714800583,"~/.config/setup.fish"
--'  50  0  ~/.config/setup.fish
-|4,39,50,0,1714800583,"~/.config/setup.fish"
--'  42  9  ~/.config/setup.fish
-|4,39,42,9,1714800539,"~/.config/setup.fish"
--'  41  9  ~/.config/setup.fish
-|4,39,41,9,1714800539,"~/.config/setup.fish"
--'  41  9  ~/.config/setup.fish
-|4,39,41,9,1714800539,"~/.config/setup.fish"
--'  59  39  ~/.config/setup.fish
-|4,39,59,39,1714800523,"~/.config/setup.fish"
--'  55  39  ~/.config/setup.fish
-|4,39,55,39,1714800523,"~/.config/setup.fish"
--'  50  39  ~/.config/setup.fish
-|4,39,50,39,1714800523,"~/.config/setup.fish"
--'  50  39  ~/.config/setup.fish
-|4,39,50,39,1714800523,"~/.config/setup.fish"
--'  50  30  ~/.config/setup.fish
-|4,39,50,30,1714800514,"~/.config/setup.fish"
--'  41  8  ~/.config/setup.fish
-|4,39,41,8,1714800467,"~/.config/setup.fish"
--'  41  8  ~/.config/setup.fish
-|4,39,41,8,1714800467,"~/.config/setup.fish"
--'  41  8  ~/.config/setup.fish
-|4,39,41,8,1714800467,"~/.config/setup.fish"
--'  51  6  ~/.config/setup.fish
-|4,39,51,6,1714800381,"~/.config/setup.fish"
--'  49  6  ~/.config/setup.fish
-|4,39,49,6,1714800381,"~/.config/setup.fish"
--'  49  6  ~/.config/setup.fish
-|4,39,49,6,1714800381,"~/.config/setup.fish"
--'  49  6  ~/.config/setup.fish
-|4,39,49,6,1714800381,"~/.config/setup.fish"
--'  49  6  ~/.config/setup.fish
-|4,39,49,6,1714800381,"~/.config/setup.fish"
--'  49  6  ~/.config/setup.fish
-|4,39,49,6,1714800381,"~/.config/setup.fish"
--'  49  6  ~/.config/setup.fish
-|4,39,49,6,1714800381,"~/.config/setup.fish"
--'  37  4  ~/.config/setup.fish
-|4,39,37,4,1714800314,"~/.config/setup.fish"
--'  37  4  ~/.config/setup.fish
-|4,39,37,4,1714800314,"~/.config/setup.fish"
--'  37  4  ~/.config/setup.fish
-|4,39,37,4,1714800314,"~/.config/setup.fish"
--'  37  4  ~/.config/setup.fish
-|4,39,37,4,1714800314,"~/.config/setup.fish"
--'  37  4  ~/.config/setup.fish
-|4,39,37,4,1714800314,"~/.config/setup.fish"
--'  37  4  ~/.config/setup.fish
-|4,39,37,4,1714800314,"~/.config/setup.fish"
--'  37  4  ~/.config/setup.fish
-|4,39,37,4,1714800314,"~/.config/setup.fish"
--'  37  4  ~/.config/setup.fish
-|4,39,37,4,1714800314,"~/.config/setup.fish"
--'  36  21  ~/.config/setup.fish
-|4,39,36,21,1714800304,"~/.config/setup.fish"
--'  36  21  ~/.config/setup.fish
-|4,39,36,21,1714800304,"~/.config/setup.fish"
--'  36  21  ~/.config/setup.fish
-|4,39,36,21,1714800304,"~/.config/setup.fish"
--'  36  21  ~/.config/setup.fish
-|4,39,36,21,1714800304,"~/.config/setup.fish"
--'  36  21  ~/.config/setup.fish
-|4,39,36,21,1714800304,"~/.config/setup.fish"
--'  36  21  ~/.config/setup.fish
-|4,39,36,21,1714800304,"~/.config/setup.fish"
--'  36  21  ~/.config/setup.fish
-|4,39,36,21,1714800304,"~/.config/setup.fish"
--'  36  21  ~/.config/setup.fish
-|4,39,36,21,1714800304,"~/.config/setup.fish"
--'  62  0  ~/.config/setup.fish
-|4,39,62,0,1714800219,"~/.config/setup.fish"
--'  41  0  ~/.config/setup.fish
-|4,39,41,0,1714800219,"~/.config/setup.fish"
--'  61  0  ~/.config/setup.fish
-|4,39,61,0,1714800219,"~/.config/setup.fish"
--'  58  0  ~/.config/setup.fish
-|4,39,58,0,1714800219,"~/.config/setup.fish"
--'  57  0  ~/.config/setup.fish
-|4,39,57,0,1714800219,"~/.config/setup.fish"
--'  58  0  ~/.config/setup.fish
-|4,39,58,0,1714800219,"~/.config/setup.fish"
--'  40  0  ~/.config/setup.fish
-|4,39,40,0,1714800219,"~/.config/setup.fish"
--'  57  0  ~/.config/setup.fish
-|4,39,57,0,1714800219,"~/.config/setup.fish"
--'  54  0  ~/.config/setup.fish
-|4,39,54,0,1714800219,"~/.config/setup.fish"
--'  40  0  ~/.config/setup.fish
-|4,39,40,0,1714800219,"~/.config/setup.fish"
--'  53  0  ~/.config/setup.fish
-|4,39,53,0,1714800219,"~/.config/setup.fish"
--'  54  0  ~/.config/setup.fish
-|4,39,54,0,1714800219,"~/.config/setup.fish"
--'  40  0  ~/.config/setup.fish
-|4,39,40,0,1714800219,"~/.config/setup.fish"
--'  53  0  ~/.config/setup.fish
-|4,39,53,0,1714800219,"~/.config/setup.fish"
--'  54  0  ~/.config/setup.fish
-|4,39,54,0,1714800219,"~/.config/setup.fish"
--'  40  0  ~/.config/setup.fish
-|4,39,40,0,1714800219,"~/.config/setup.fish"
--'  53  0  ~/.config/setup.fish
-|4,39,53,0,1714800219,"~/.config/setup.fish"
--'  40  0  ~/.config/setup.fish
-|4,39,40,0,1714800219,"~/.config/setup.fish"
--'  53  0  ~/.config/setup.fish
-|4,39,53,0,1714800219,"~/.config/setup.fish"
--'  40  0  ~/.config/setup.fish
-|4,39,40,0,1714800219,"~/.config/setup.fish"
--'  40  43  ~/.config/setup.fish
-|4,39,40,43,1714800039,"~/.config/setup.fish"
--'  40  43  ~/.config/setup.fish
-|4,39,40,43,1714800039,"~/.config/setup.fish"
--'  40  43  ~/.config/setup.fish
-|4,39,40,43,1714800022,"~/.config/setup.fish"
--'  65  0  ~/.config/setup.fish
-|4,39,65,0,1714800001,"~/.config/setup.fish"
--'  70  0  ~/.config/setup.fish
-|4,39,70,0,1714800001,"~/.config/setup.fish"
--'  44  0  ~/.config/setup.fish
-|4,39,44,0,1714800001,"~/.config/setup.fish"
--'  50  0  ~/.config/setup.fish
-|4,39,50,0,1714800001,"~/.config/setup.fish"
--'  64  0  ~/.config/setup.fish
-|4,39,64,0,1714800001,"~/.config/setup.fish"
--'  69  0  ~/.config/setup.fish
-|4,39,69,0,1714800001,"~/.config/setup.fish"
--'  66  0  ~/.config/setup.fish
-|4,39,66,0,1714800001,"~/.config/setup.fish"
--'  60  0  ~/.config/setup.fish
-|4,39,60,0,1714800001,"~/.config/setup.fish"
--'  61  0  ~/.config/setup.fish
-|4,39,61,0,1714800001,"~/.config/setup.fish"
--'  66  0  ~/.config/setup.fish
-|4,39,66,0,1714800001,"~/.config/setup.fish"
--'  43  0  ~/.config/setup.fish
-|4,39,43,0,1714800001,"~/.config/setup.fish"
--'  48  0  ~/.config/setup.fish
-|4,39,48,0,1714800001,"~/.config/setup.fish"
--'  60  0  ~/.config/setup.fish
-|4,39,60,0,1714800001,"~/.config/setup.fish"
--'  65  0  ~/.config/setup.fish
-|4,39,65,0,1714800001,"~/.config/setup.fish"
--'  57  0  ~/.config/setup.fish
-|4,39,57,0,1714800001,"~/.config/setup.fish"
--'  62  0  ~/.config/setup.fish
-|4,39,62,0,1714800001,"~/.config/setup.fish"
--'  43  0  ~/.config/setup.fish
-|4,39,43,0,1714800001,"~/.config/setup.fish"
--'  48  0  ~/.config/setup.fish
-|4,39,48,0,1714800001,"~/.config/setup.fish"
--'  56  0  ~/.config/setup.fish
-|4,39,56,0,1714800001,"~/.config/setup.fish"
--'  61  0  ~/.config/setup.fish
-|4,39,61,0,1714800001,"~/.config/setup.fish"
--'  57  0  ~/.config/setup.fish
-|4,39,57,0,1714800001,"~/.config/setup.fish"
--'  62  0  ~/.config/setup.fish
-|4,39,62,0,1714800001,"~/.config/setup.fish"
--'  43  0  ~/.config/setup.fish
-|4,39,43,0,1714800001,"~/.config/setup.fish"
--'  48  0  ~/.config/setup.fish
-|4,39,48,0,1714800001,"~/.config/setup.fish"
--'  56  0  ~/.config/setup.fish
-|4,39,56,0,1714800001,"~/.config/setup.fish"
--'  61  0  ~/.config/setup.fish
-|4,39,61,0,1714800001,"~/.config/setup.fish"
--'  57  0  ~/.config/setup.fish
-|4,39,57,0,1714800001,"~/.config/setup.fish"
--'  62  0  ~/.config/setup.fish
-|4,39,62,0,1714800001,"~/.config/setup.fish"
--'  43  0  ~/.config/setup.fish
-|4,39,43,0,1714800001,"~/.config/setup.fish"
--'  48  0  ~/.config/setup.fish
-|4,39,48,0,1714800001,"~/.config/setup.fish"
--'  56  0  ~/.config/setup.fish
-|4,39,56,0,1714800001,"~/.config/setup.fish"
--'  61  0  ~/.config/setup.fish
-|4,39,61,0,1714800001,"~/.config/setup.fish"
--'  43  0  ~/.config/setup.fish
-|4,39,43,0,1714800001,"~/.config/setup.fish"
--'  48  0  ~/.config/setup.fish
-|4,39,48,0,1714800001,"~/.config/setup.fish"
+-'  7  4  ~/.config/setup.fish
+|4,39,7,4,1714948294,"~/.config/setup.fish"
+-'  1  0  ~/.config/setup.fish
+|4,39,1,0,1714948236,"~/.config/setup.fish"
+-'  8  31  ~/.config/setup.fish
+|4,39,8,31,1714948214,"~/.config/setup.fish"
+-'  8  20  ~/.config/setup.fish
+|4,39,8,20,1714948174,"~/.config/setup.fish"
+-'  8  4  ~/.config/setup.fish
+|4,39,8,4,1714948158,"~/.config/setup.fish"
+-'  8  0  ~/.config/setup.fish
+|4,39,8,0,1714948130,"~/.config/setup.fish"
+-'  9  0  ~/.config/setup.fish
+|4,39,9,0,1714948130,"~/.config/setup.fish"
+-'  9  0  ~/.config/setup.fish
+|4,39,9,0,1714948130,"~/.config/setup.fish"
+-'  10  0  ~/.config/setup.fish
+|4,39,10,0,1714948130,"~/.config/setup.fish"
+-'  9  0  ~/.config/setup.fish
+|4,39,9,0,1714948130,"~/.config/setup.fish"
+-'  10  0  ~/.config/setup.fish
+|4,39,10,0,1714948130,"~/.config/setup.fish"
+-'  9  0  ~/.config/setup.fish
+|4,39,9,0,1714948130,"~/.config/setup.fish"
+-'  10  0  ~/.config/setup.fish
+|4,39,10,0,1714948130,"~/.config/setup.fish"
+-'  9  26  ~/.config/setup.fish
+|4,39,9,26,1714948103,"~/.config/setup.fish"
+-'  9  26  ~/.config/setup.fish
+|4,39,9,26,1714948103,"~/.config/setup.fish"
+-'  6  8  ~/.config/setup.fish
+|4,39,6,8,1714948053,"~/.config/setup.fish"
+-'  6  8  ~/.config/setup.fish
+|4,39,6,8,1714948053,"~/.config/setup.fish"
+-'  6  8  ~/.config/setup.fish
+|4,39,6,8,1714948053,"~/.config/setup.fish"
+-'  6  8  ~/.config/setup.fish
+|4,39,6,8,1714948053,"~/.config/setup.fish"
+-'  6  8  ~/.config/setup.fish
+|4,39,6,8,1714948053,"~/.config/setup.fish"
+-'  6  8  ~/.config/setup.fish
+|4,39,6,8,1714948053,"~/.config/setup.fish"
+-'  6  8  ~/.config/setup.fish
+|4,39,6,8,1714948053,"~/.config/setup.fish"
+-'  1  0  ~/.config/setup.fish
+|4,39,1,0,1714947989,"~/.config/setup.fish"
+-'  1  0  ~/.config/setup.fish
+|4,39,1,0,1714947989,"~/.config/setup.fish"
+-'  1  0  ~/.config/setup.fish
+|4,39,1,0,1714947989,"~/.config/setup.fish"
+-'  1  0  ~/.config/setup.fish
+|4,39,1,0,1714947989,"~/.config/setup.fish"
+-'  1  0  ~/.config/setup.fish
+|4,39,1,0,1714947989,"~/.config/setup.fish"
+-'  1  0  ~/.config/setup.fish
+|4,39,1,0,1714947989,"~/.config/setup.fish"
+-'  12  0  ~/.config/setup.fish
+|4,39,12,0,1714947968,"~/.config/setup.fish"
+-'  11  0  ~/.config/setup.fish
+|4,39,11,0,1714947968,"~/.config/setup.fish"
+-'  10  0  ~/.config/setup.fish
+|4,39,10,0,1714947968,"~/.config/setup.fish"
+-'  14  0  ~/.config/setup.fish
+|4,39,14,0,1714947968,"~/.config/setup.fish"
+-'  13  0  ~/.config/setup.fish
+|4,39,13,0,1714947968,"~/.config/setup.fish"
+-'  13  0  ~/.config/setup.fish
+|4,39,13,0,1714947968,"~/.config/setup.fish"
+-'  12  0  ~/.config/setup.fish
+|4,39,12,0,1714947968,"~/.config/setup.fish"
+-'  11  0  ~/.config/setup.fish
+|4,39,11,0,1714947968,"~/.config/setup.fish"
+-'  15  0  ~/.config/setup.fish
+|4,39,15,0,1714947968,"~/.config/setup.fish"
+-'  14  0  ~/.config/setup.fish
+|4,39,14,0,1714947968,"~/.config/setup.fish"
+-'  13  0  ~/.config/setup.fish
+|4,39,13,0,1714947968,"~/.config/setup.fish"
+-'  12  0  ~/.config/setup.fish
+|4,39,12,0,1714947968,"~/.config/setup.fish"
+-'  11  0  ~/.config/setup.fish
+|4,39,11,0,1714947968,"~/.config/setup.fish"
+-'  15  0  ~/.config/setup.fish
+|4,39,15,0,1714947968,"~/.config/setup.fish"
+-'  14  0  ~/.config/setup.fish
+|4,39,14,0,1714947968,"~/.config/setup.fish"
+-'  13  0  ~/.config/setup.fish
+|4,39,13,0,1714947968,"~/.config/setup.fish"
+-'  12  0  ~/.config/setup.fish
+|4,39,12,0,1714947968,"~/.config/setup.fish"
+-'  11  0  ~/.config/setup.fish
+|4,39,11,0,1714947968,"~/.config/setup.fish"
+-'  15  0  ~/.config/setup.fish
+|4,39,15,0,1714947968,"~/.config/setup.fish"
+-'  14  0  ~/.config/setup.fish
+|4,39,14,0,1714947968,"~/.config/setup.fish"
+-'  14  0  ~/.config/setup.fish
+|4,39,14,0,1714947968,"~/.config/setup.fish"
+-'  13  0  ~/.config/setup.fish
+|4,39,13,0,1714947968,"~/.config/setup.fish"
+-'  13  0  ~/.config/setup.fish
+|4,39,13,0,1714947968,"~/.config/setup.fish"
+-'  13  0  ~/.config/setup.fish
+|4,39,13,0,1714947968,"~/.config/setup.fish"
+-'  1  0  ~/.config/setup.fish
+|4,39,1,0,1714947965,"~/.config/setup.fish"
+-'  1  0  ~/.config/setup.fish
+|4,39,1,0,1714947965,"~/.config/setup.fish"
+-'  8  30  ~/.config/setup.fish
+|4,39,8,30,1714947470,"~/.config/setup.fish"
+-'  8  30  ~/.config/setup.fish
+|4,39,8,30,1714947470,"~/.config/setup.fish"
+-'  8  30  ~/.config/setup.fish
+|4,39,8,30,1714947470,"~/.config/setup.fish"
+-'  8  30  ~/.config/setup.fish
+|4,39,8,30,1714947470,"~/.config/setup.fish"
+-'  8  30  ~/.config/setup.fish
+|4,39,8,30,1714947470,"~/.config/setup.fish"
+-'  7  45  ~/.config/setup.fish
+|4,39,7,45,1714947465,"~/.config/setup.fish"
+-'  7  45  ~/.config/setup.fish
+|4,39,7,45,1714947465,"~/.config/setup.fish"
+-'  7  45  ~/.config/setup.fish
+|4,39,7,45,1714947465,"~/.config/setup.fish"
+-'  7  45  ~/.config/setup.fish
+|4,39,7,45,1714947465,"~/.config/setup.fish"
+-'  7  45  ~/.config/setup.fish
+|4,39,7,45,1714947465,"~/.config/setup.fish"
+-'  7  45  ~/.config/setup.fish
+|4,39,7,45,1714947465,"~/.config/setup.fish"
+-'  7  45  ~/.config/setup.fish
+|4,39,7,45,1714947465,"~/.config/setup.fish"
+-'  7  45  ~/.config/setup.fish
+|4,39,7,45,1714947465,"~/.config/setup.fish"
+-'  7  45  ~/.config/setup.fish
+|4,39,7,45,1714947465,"~/.config/setup.fish"
+-'  7  0  ~/.config/setup.fish
+|4,39,7,0,1714947443,"~/.config/setup.fish"
+-'  16  37  ~/.config/setup.fish
+|4,39,16,37,1714947425,"~/.config/setup.fish"
+-'  15  37  ~/.config/setup.fish
+|4,39,15,37,1714947425,"~/.config/setup.fish"
+-'  17  37  ~/.config/setup.fish
+|4,39,17,37,1714947425,"~/.config/setup.fish"
+-'  16  37  ~/.config/setup.fish
+|4,39,16,37,1714947425,"~/.config/setup.fish"
+-'  17  37  ~/.config/setup.fish
+|4,39,17,37,1714947425,"~/.config/setup.fish"
+-'  16  37  ~/.config/setup.fish
+|4,39,16,37,1714947425,"~/.config/setup.fish"
+-'  15  37  ~/.config/setup.fish
+|4,39,15,37,1714947425,"~/.config/setup.fish"
+-'  14  37  ~/.config/setup.fish
+|4,39,14,37,1714947425,"~/.config/setup.fish"
+-'  17  37  ~/.config/setup.fish
+|4,39,17,37,1714947425,"~/.config/setup.fish"
+-'  16  37  ~/.config/setup.fish
+|4,39,16,37,1714947425,"~/.config/setup.fish"
+-'  16  37  ~/.config/setup.fish
+|4,39,16,37,1714947425,"~/.config/setup.fish"
+-'  15  37  ~/.config/setup.fish
+|4,39,15,37,1714947425,"~/.config/setup.fish"
+-'  15  37  ~/.config/setup.fish
+|4,39,15,37,1714947425,"~/.config/setup.fish"
+-'  14  37  ~/.config/setup.fish
+|4,39,14,37,1714947425,"~/.config/setup.fish"
+-'  15  37  ~/.config/setup.fish
+|4,39,15,37,1714947425,"~/.config/setup.fish"
+-'  14  37  ~/.config/setup.fish
+|4,39,14,37,1714947425,"~/.config/setup.fish"
+-'  15  37  ~/.config/setup.fish
+|4,39,15,37,1714947425,"~/.config/setup.fish"
+-'  14  37  ~/.config/setup.fish
+|4,39,14,37,1714947425,"~/.config/setup.fish"
+-'  15  37  ~/.config/setup.fish
+|4,39,15,37,1714947425,"~/.config/setup.fish"
+-'  14  37  ~/.config/setup.fish
+|4,39,14,37,1714947425,"~/.config/setup.fish"
+-'  15  37  ~/.config/setup.fish
+|4,39,15,37,1714947425,"~/.config/setup.fish"
+-'  14  37  ~/.config/setup.fish
+|4,39,14,37,1714947425,"~/.config/setup.fish"
+-'  11  37  ~/.config/setup.fish
+|4,39,11,37,1714947403,"~/.config/setup.fish"
+-'  10  37  ~/.config/setup.fish
+|4,39,10,37,1714947403,"~/.config/setup.fish"
+-'  9  37  ~/.config/setup.fish
+|4,39,9,37,1714947403,"~/.config/setup.fish"
+-'  9  37  ~/.config/setup.fish
+|4,39,9,37,1714947403,"~/.config/setup.fish"
+-'  9  37  ~/.config/setup.fish
+|4,39,9,37,1714947403,"~/.config/setup.fish"
+-'  9  37  ~/.config/setup.fish
+|4,39,9,37,1714947403,"~/.config/setup.fish"
+-'  9  37  ~/.config/setup.fish
+|4,39,9,37,1714947403,"~/.config/setup.fish"
+-'  8  37  ~/.config/setup.fish
+|4,39,8,37,1714947403,"~/.config/setup.fish"
+-'  8  37  ~/.config/setup.fish
+|4,39,8,37,1714947403,"~/.config/setup.fish"
 
 # Buffer list:
-%~/.config/setup.fish	63	23
+%~/.config/setup.fish	7	4
 
 # History of marks within files (newest to oldest):
 
 > ~/.config/setup.fish
-	*	1714800729	0
-	"	63	23
-	^	51	8
-	.	56	23
-	+	23	0
-	+	24	22
-	+	25	25
-	+	26	23
-	+	27	33
-	+	2	12
-	+	21	0
-	+	20	6
-	+	20	0
-	+	24	26
-	+	25	29
-	+	26	27
-	+	24	0
-	+	25	0
-	+	27	0
-	+	26	0
-	+	24	22
-	+	25	0
-	+	26	0
-	+	27	0
-	+	21	24
-	+	23	0
-	+	1	17
-	+	20	0
-	+	4	16
-	+	6	0
-	+	19	0
-	+	6	0
-	+	6	34
-	+	17	33
-	+	6	0
-	+	17	0
-	+	6	0
-	+	6	27
+	*	1714948293	0
+	"	7	4
+	^	7	32
+	.	7	0
+	+	16	0
+	+	16	27
+	+	16	0
+	+	16	47
+	+	16	0
+	+	16	5
+	+	16	0
+	+	16	38
+	+	16	0
+	+	16	47
+	+	16	0
+	+	16	31
+	+	16	0
+	+	16	10
+	+	16	0
+	+	15	3
+	+	16	0
+	+	15	0
+	+	16	34
+	+	15	0
+	+	15	6
+	+	15	0
+	+	15	31
+	+	15	0
+	+	15	4
+	+	15	7
+	+	15	0
+	+	15	21
+	+	15	24
+	+	15	11
+	+	15	0
+	+	15	22
+	+	15	24
+	+	15	22
+	+	15	0
+	+	16	0
+	+	16	5
+	+	16	40
+	+	44	34
+	+	16	0
+	+	18	43
+	+	17	42
 	+	18	0
-	+	6	0
-	+	6	47
-	+	6	0
-	+	10	5
-	+	9	0
-	+	9	38
-	+	9	0
-	+	9	47
-	+	9	0
-	+	9	31
-	+	9	0
-	+	9	10
-	+	9	0
-	+	5	3
-	+	9	0
-	+	5	0
-	+	17	34
-	+	5	0
-	+	5	6
-	+	5	0
-	+	5	31
-	+	5	0
-	+	5	4
-	+	5	7
-	+	5	0
-	+	5	21
-	+	5	24
-	+	5	11
-	+	5	0
-	+	5	22
-	+	5	24
-	+	5	22
-	+	5	0
-	+	9	0
-	+	8	0
-	+	7	5
-	+	8	40
-	+	63	34
+	+	17	0
+	+	18	0
+	+	19	45
+	+	20	5
+	+	40	0
+	+	31	9
+	+	26	9
+	+	18	5
+	+	40	0
+	+	32	9
+	+	40	39
+	+	23	9
+	+	40	0
 	+	33	0
-	+	37	43
-	+	36	42
+	+	39	0
+	+	33	0
+	+	21	20
+	+	27	19
+	+	34	23
+	+	32	8
+	+	37	23
+	+	21	9
+	+	27	0
+	+	34	0
 	+	37	0
-	+	36	0
-	+	37	0
-	+	38	45
-	+	39	5
-	+	59	0
-	+	50	9
-	+	45	9
-	+	37	5
-	+	59	0
-	+	51	9
-	+	59	39
-	+	42	9
-	+	59	0
-	+	52	0
-	+	58	0
-	+	52	0
-	+	40	20
-	+	46	19
-	+	53	23
-	+	51	8
-	+	56	23
-	a	56	23
-	b	56	23
+	+	51	1
+	+	16	0
+	+	55	0
+	+	46	0
+	+	45	0
+	+	47	0
+	+	46	13
+	+	46	0
+	+	57	21
+	+	57	18
+	+	57	0
+	+	57	42
+	+	57	0
+	+	56	0
+	+	57	0
+	+	12	0
+	+	6	44
+	+	12	0
+	+	7	4
+	+	8	0
+	+	13	0
+	+	14	7
+	+	8	37
+	+	7	24
+	+	7	7
+	+	7	5
+	+	7	25
+	+	7	13
+	+	8	30
+	+	7	7
+	+	8	0
+	+	7	0
+	a	37	23
+	b	37	23
+
+> ~/.config/temp-fish/fish_history
+	*	1714946237	0
+	"	439	4
+
+> ~/.local/share/fish/fish_history
+	*	1714946202	0
+	"	1	0
 
 > ~/.config/setup.sh
-	*	1714776222	0
-	"	1	0
-	.	1	1
+	*	1714944476	0
+	"	6	0
+	^	24	2
+	.	24	1
 	+	13	68
 	+	13	27
 	+	5	0
@@ -8704,6 +8722,14 @@ $
 	+	42	0
 	+	36	42
 	+	1	1
+	+	24	1
+
+> ~/.config/bindings.inputrc
+	*	1714944409	0
+	"	2	0
+	^	16	30
+	.	16	29
+	+	16	29
 
 > ~/.config/alias.sh
 	*	1714776216	0
@@ -8884,13 +8910,6 @@ $
 	+	9	1
 	+	5	0
 	+	9	1
-
-> ~/.config/bindings.inputrc
-	*	1714640349	0
-	"	4	0
-	^	16	30
-	.	16	29
-	+	16	29
 
 > ~/.bashrc
 	*	1714640167	0
@@ -21700,10 +21719,6 @@ $
 > ~/.local/share/z/data
 	*	1693084362	0
 	"	1	0
-
-> ~/.local/share/fish/fish_history
-	*	1693083001	0
-	"	21	0
 
 > /usr/bin/fish
 	*	1693082741	0
