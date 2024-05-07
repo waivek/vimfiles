@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/commandline
+~MSle0~/faile
 
 # Last Substitute Search Pattern:
 ~MSle0&:
@@ -21,7 +21,27 @@ $
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1715038492,,"q"
+|2,0,1715086494,,"q"
+:qa
+|2,0,1715082690,,"qa"
+:CocConfig
+|2,0,1715082659,,"CocConfig"
+:CocInfo
+|2,0,1715082610,,"CocInfo"
+:MRU fis
+|2,0,1715082600,,"MRU fis"
+:e functions.fish
+|2,0,1715041224,,"e functions.fish"
+:e 
+|2,0,1715041222,,"e "
+:.%!functions down-or-search
+|2,0,1715040993,,".%!functions down-or-search"
+:MRU 
+|2,0,1715040946,,"MRU "
+:MRU fu
+|2,0,1715040916,,"MRU fu"
+:MRU set
+|2,0,1715040708,,"MRU set"
 :set nonumber
 |2,0,1715038231,,"set nonumber"
 :h commandline
@@ -46,8 +66,6 @@ $
 |2,0,1715037731,,"vs"
 :5
 |2,0,1715037339,,"5"
-:qa
-|2,0,1715027156,,"qa"
 :e setup.fish
 |2,0,1715027114,,"e setup.fish"
 :echo "Hello, World!"
@@ -96,12 +114,8 @@ $
 |2,0,1714989560,,"term"
 :ALEInfo
 |2,0,1714989428,,"ALEInfo"
-:MRU 
-|2,0,1714989229,,"MRU "
 :q 
 |2,0,1714989157,,"q "
-:e functions.fish
-|2,0,1714988621,,"e functions.fish"
 :e
 |2,0,1714988618,,"e"
 :e alias.sh
@@ -114,8 +128,6 @@ $
 |2,0,1714944406,,"set ft=bash"
 :e bindings.inputrc
 |2,0,1714944397,,"e bindings.inputrc"
-:e 
-|2,0,1714944393,,"e "
 :e ~/.config/setup.sh
 |2,0,1714944037,,"e ~/.config/setup.sh"
 :e!
@@ -192,8 +204,6 @@ $
 |2,0,1714631318,,"echo g:coc_workspace_initialized"
 :h coc
 |2,0,1714631307,,"h coc"
-:CocConfig
-|2,0,1714631249,,"CocConfig"
 :!which python
 |2,0,1714631238,,"!which python"
 :h direnv
@@ -470,8 +480,6 @@ $
 |2,0,1714137290,,"Template"
 :e pyrightconfig.json
 |2,0,1714110710,,"e pyrightconfig.json"
-:CocInfo
-|2,0,1714110691,,"CocInfo"
 :e orm.py
 |2,0,1714110631,,"e orm.py"
 :MRU or
@@ -1372,8 +1380,6 @@ $
 |2,0,1713433525,,"Rename nnn-help.txt"
 :MRU sy
 |2,0,1713433517,,"MRU sy"
-:MRU set
-|2,0,1713409909,,"MRU set"
 :MRU alias
 |2,0,1713409903,,"MRU alias"
 :h :FIND
@@ -4188,8 +4194,6 @@ $
 |2,0,1692460677,,"l:w"
 :e User.vue
 |2,0,1692460600,,"e User.vue"
-:MRU fu
-|2,0,1692449910,,"MRU fu"
 :call CocActionAsync(("codeAction")
 |2,0,1692449607,,"call CocActionAsync((\"codeAction\")"
 :call CocAction("codeAction")
@@ -5876,6 +5880,8 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/faile
+|2,1,1715082613,47,"faile"
 ?/commandline
 |2,1,1715037756,47,"commandline"
 ?/\C\<-p\>
@@ -8282,43 +8288,59 @@ $
 |2,4,1693311567,,"cont"
 
 # Registers:
-"0	CHAR	0
-	cursor)
-|3,0,0,0,1,0,1715037926,"cursor)"
-"1	LINE	0
+"0	LINE	0
+	                "logLevel": "info"
+|3,0,0,1,1,0,1715082539,"                \"logLevel\": \"info\""
+""1	LINE	0
+	        "fish-lsp": {
+	            "command": "/home/vivek/downloads/fish-lsp/bin/fish-lsp",
+	            "filetypes": ["fish"],
+	            "args": ["start"],
+	            "revealOutputChannelOn": "info",
+	            "initializationOptions": {
+	                "workspaces": {
+	                    "paths": {
+	                        "defaults": [
+	                            "$HOME/.config/fish",
+	                            "/usr/share/fish"
+	                        ]
+	                    }
+	                }
+	            }
+	        }
+|3,1,1,1,16,0,1715082689,"        \"fish-lsp\": {","            \"command\": \"/home/vivek/downloads/fish-lsp/bin/fish-lsp\",","            \"filetypes\": [\"fish\"],","            \"args\": [\"start\"],","            \"revealOutputChannelOn\": \"info\",","            \"initializationOptions\": {","                \"workspaces\": {","                    \"paths\": {","                        \"defaults\": [",>53
+|<"                            \"$HOME/.config/fish\",","                            \"/usr/share/fish\"","                        ]","                    }","                }","            }","        }"
+"2	LINE	0
+	                "logLevel": "info"
+|3,0,2,1,1,0,1715082525,"                \"logLevel\": \"info\""
+"3	LINE	0
+	
+|3,0,3,1,1,0,1715078528,""
+"4	LINE	0
 	    if test (commandline) = 'a'
 	        echo true
 	    else
 	        echo false
 	    end
-|3,0,1,1,5,0,1715037410,"    if test (commandline) = 'a'","        echo true","    else","        echo false","    end"
-"2	LINE	0
-	
-	
-|3,0,2,1,2,0,1715037298,"",""
-"3	LINE	0
-	
-	
-|3,0,3,1,2,0,1715037298,"",""
-"4	LINE	0
-	
-	
-|3,0,4,1,2,0,1715037297,"",""
+|3,0,4,1,5,0,1715037410,"    if test (commandline) = 'a'","        echo true","    else","        echo false","    end"
 "5	LINE	0
-	    commandline -i a
-|3,0,5,1,1,0,1715037293,"    commandline -i a"
+	
+	
+|3,0,5,1,2,0,1715037298,"",""
 "6	LINE	0
-	    commandline "
-|3,0,6,1,1,0,1715037277,"    commandline \""
+	
+	
+|3,0,6,1,2,0,1715037298,"",""
 "7	LINE	0
-	    commandline -C "echo" -f do_complete
-|3,0,7,1,1,0,1715027147,"    commandline -C \"echo\" -f do_complete"
+	
+	
+|3,0,7,1,2,0,1715037297,"",""
 "8	LINE	0
-	
-|3,0,8,1,1,0,1715026852,""
+	    commandline -i a
+|3,0,8,1,1,0,1715037293,"    commandline -i a"
 "9	LINE	0
-	
-|3,0,9,1,1,0,1715007435,""
+	    commandline "
+|3,0,9,1,1,0,1715037277,"    commandline \""
 "a	CHAR	0
 	Tabularize /-/l1c1l1c1l1
 |3,0,10,0,1,0,1714384337,"Tabularize /-/l1c1l1c1l1"
@@ -8356,329 +8378,248 @@ $
 |3,0,28,1,24,0,1712521850,"    return render_template_string(\"\"\"","    <ul>","        {% for id, name, downloaded_path, progress, status in downloads %}","            <li>","                <a href=\"/download/{{ id }}\">{{ name }}</a>","                <span>{{ status }}</span>","                <progress value=\"{{ progress }}\" max=\"100\"></progress>","                <span>{{ progress }}%</span>","                {% if status == 'paused' %}",>68
 |<"                <form method=\"POST\" action=\"/resume_download\">","                    <input type=\"hidden\" name=\"id\" value=\"{{ id }}\">","                    <input type=\"submit\" value=\"Resume\">","                </form>","                {% endif %}","                {% if status == 'downloading' %}","                <form method=\"POST\" action=\"/pause_download\">","                    <input type=\"hidden\" name=\"id\" value=\"{{ id }}\">",>61
 |<"                    <input type=\"submit\" value=\"Pause\">","                </form>","                {% endif %}","","            </li>","        {% endfor %}","    </ul>\"\"\", downloads=downloads)"
-""-	CHAR	0
-	 
-|3,1,36,0,1,0,1715037942," "
+"-	CHAR	0
+	history-search-forward
+|3,0,36,0,1,0,1715041288,"history-search-forward"
 
 # File marks:
-'0  48  0  ~/.config/functions.fish
-|4,48,48,0,1715038492,"~/.config/functions.fish"
-'1  42  10  ~/.config/functions.fish
-|4,49,42,10,1715038011,"~/.config/functions.fish"
-'2  42  10  ~/.config/functions.fish
-|4,50,42,10,1715038011,"~/.config/functions.fish"
-'3  44  35  ~/.config/functions.fish
-|4,51,44,35,1715037944,"~/.config/functions.fish"
-'4  44  35  ~/.config/functions.fish
-|4,52,44,35,1715037944,"~/.config/functions.fish"
-'5  44  35  ~/.config/functions.fish
-|4,53,44,35,1715037944,"~/.config/functions.fish"
-'6  44  35  ~/.config/functions.fish
-|4,54,44,35,1715037944,"~/.config/functions.fish"
-'7  1  0  /tmp/test_do_complete/a.txt
-|4,55,1,0,1715037918,"/tmp/test_do_complete/a.txt"
-'8  1  0  /tmp/test_do_complete/a.txt
-|4,56,1,0,1715037918,"/tmp/test_do_complete/a.txt"
-'9  1  0  /tmp/test_do_complete/a.txt
-|4,57,1,0,1715037918,"/tmp/test_do_complete/a.txt"
+'0  42  0  ~/downloads/autin-completions.fish
+|4,48,42,0,1715086494,"~/downloads/autin-completions.fish"
+'1  26  34  ~/.config/setup.fish
+|4,49,26,34,1715086277,"~/.config/setup.fish"
+'2  26  34  ~/.config/setup.fish
+|4,50,26,34,1715086277,"~/.config/setup.fish"
+'3  26  34  ~/.config/setup.fish
+|4,51,26,34,1715086277,"~/.config/setup.fish"
+'4  26  34  ~/.config/setup.fish
+|4,52,26,34,1715086277,"~/.config/setup.fish"
+'5  26  23  ~/.config/setup.fish
+|4,53,26,23,1715085545,"~/.config/setup.fish"
+'6  26  23  ~/.config/setup.fish
+|4,54,26,23,1715085545,"~/.config/setup.fish"
+'7  26  23  ~/.config/setup.fish
+|4,55,26,23,1715085545,"~/.config/setup.fish"
+'8  26  23  ~/.config/setup.fish
+|4,56,26,23,1715085545,"~/.config/setup.fish"
+'9  43  8  ~/.vim/coc-settings.json
+|4,57,43,8,1715082690,"~/.vim/coc-settings.json"
 
 # Jumplist (newest first):
--'  48  0  ~/.config/functions.fish
-|4,39,48,0,1715038492,"~/.config/functions.fish"
--'  42  10  ~/.config/functions.fish
-|4,39,42,10,1715038011,"~/.config/functions.fish"
--'  42  10  ~/.config/functions.fish
-|4,39,42,10,1715038011,"~/.config/functions.fish"
--'  44  35  ~/.config/functions.fish
-|4,39,44,35,1715037944,"~/.config/functions.fish"
--'  44  35  ~/.config/functions.fish
-|4,39,44,35,1715037944,"~/.config/functions.fish"
--'  44  35  ~/.config/functions.fish
-|4,39,44,35,1715037944,"~/.config/functions.fish"
--'  1  0  /tmp/test_do_complete/a.txt
-|4,39,1,0,1715037923,"/tmp/test_do_complete/a.txt"
--'  1  0  /tmp/test_do_complete/a.txt
-|4,39,1,0,1715037923,"/tmp/test_do_complete/a.txt"
--'  1  0  /tmp/test_do_complete/a.txt
-|4,39,1,0,1715037923,"/tmp/test_do_complete/a.txt"
--'  1  0  /tmp/test_do_complete/a.txt
-|4,39,1,0,1715037918,"/tmp/test_do_complete/a.txt"
--'  42  10  ~/.config/functions.fish
-|4,39,42,10,1715037908,"~/.config/functions.fish"
--'  42  10  ~/.config/functions.fish
-|4,39,42,10,1715037908,"~/.config/functions.fish"
--'  42  10  ~/.config/functions.fish
-|4,39,42,10,1715037908,"~/.config/functions.fish"
--'  41  49  ~/.config/functions.fish
-|4,39,41,49,1715037883,"~/.config/functions.fish"
--'  41  49  ~/.config/functions.fish
-|4,39,41,49,1715037883,"~/.config/functions.fish"
--'  41  49  ~/.config/functions.fish
-|4,39,41,49,1715037883,"~/.config/functions.fish"
--'  44  49  ~/.config/functions.fish
-|4,39,44,49,1715037883,"~/.config/functions.fish"
--'  41  49  ~/.config/functions.fish
-|4,39,41,49,1715037883,"~/.config/functions.fish"
--'  44  49  ~/.config/functions.fish
-|4,39,44,49,1715037883,"~/.config/functions.fish"
--'  41  49  ~/.config/functions.fish
-|4,39,41,49,1715037883,"~/.config/functions.fish"
--'  41  44  ~/.config/functions.fish
-|4,39,41,44,1715037774,"~/.config/functions.fish"
--'  38  4  ~/.config/functions.fish
-|4,39,38,4,1715037760,"~/.config/functions.fish"
--'  27  8  ~/.config/functions.fish
-|4,39,27,8,1715037760,"~/.config/functions.fish"
--'  38  4  ~/.config/functions.fish
-|4,39,38,4,1715037760,"~/.config/functions.fish"
--'  27  8  ~/.config/functions.fish
-|4,39,27,8,1715037760,"~/.config/functions.fish"
--'  38  4  ~/.config/functions.fish
-|4,39,38,4,1715037760,"~/.config/functions.fish"
--'  27  8  ~/.config/functions.fish
-|4,39,27,8,1715037760,"~/.config/functions.fish"
--'  38  4  ~/.config/functions.fish
-|4,39,38,4,1715037760,"~/.config/functions.fish"
--'  27  8  ~/.config/functions.fish
-|4,39,27,8,1715037760,"~/.config/functions.fish"
--'  38  4  ~/.config/functions.fish
-|4,39,38,4,1715037760,"~/.config/functions.fish"
--'  27  8  ~/.config/functions.fish
-|4,39,27,8,1715037760,"~/.config/functions.fish"
--'  38  4  ~/.config/functions.fish
-|4,39,38,4,1715037760,"~/.config/functions.fish"
--'  27  8  ~/.config/functions.fish
-|4,39,27,8,1715037760,"~/.config/functions.fish"
--'  38  4  ~/.config/functions.fish
-|4,39,38,4,1715037760,"~/.config/functions.fish"
--'  27  8  ~/.config/functions.fish
-|4,39,27,8,1715037760,"~/.config/functions.fish"
--'  24  8  ~/.config/functions.fish
-|4,39,24,8,1715037759,"~/.config/functions.fish"
--'  17  32  ~/.config/functions.fish
-|4,39,17,32,1715037759,"~/.config/functions.fish"
--'  12  8  ~/.config/functions.fish
-|4,39,12,8,1715037759,"~/.config/functions.fish"
--'  24  8  ~/.config/functions.fish
-|4,39,24,8,1715037759,"~/.config/functions.fish"
--'  17  32  ~/.config/functions.fish
-|4,39,17,32,1715037759,"~/.config/functions.fish"
--'  12  8  ~/.config/functions.fish
-|4,39,12,8,1715037759,"~/.config/functions.fish"
--'  24  8  ~/.config/functions.fish
-|4,39,24,8,1715037759,"~/.config/functions.fish"
--'  17  32  ~/.config/functions.fish
-|4,39,17,32,1715037759,"~/.config/functions.fish"
--'  12  8  ~/.config/functions.fish
-|4,39,12,8,1715037759,"~/.config/functions.fish"
--'  24  8  ~/.config/functions.fish
-|4,39,24,8,1715037759,"~/.config/functions.fish"
--'  17  32  ~/.config/functions.fish
-|4,39,17,32,1715037759,"~/.config/functions.fish"
--'  12  8  ~/.config/functions.fish
-|4,39,12,8,1715037759,"~/.config/functions.fish"
--'  24  8  ~/.config/functions.fish
-|4,39,24,8,1715037759,"~/.config/functions.fish"
--'  17  32  ~/.config/functions.fish
-|4,39,17,32,1715037759,"~/.config/functions.fish"
--'  12  8  ~/.config/functions.fish
-|4,39,12,8,1715037759,"~/.config/functions.fish"
--'  24  8  ~/.config/functions.fish
-|4,39,24,8,1715037759,"~/.config/functions.fish"
--'  17  32  ~/.config/functions.fish
-|4,39,17,32,1715037759,"~/.config/functions.fish"
--'  12  8  ~/.config/functions.fish
-|4,39,12,8,1715037759,"~/.config/functions.fish"
--'  24  8  ~/.config/functions.fish
-|4,39,24,8,1715037759,"~/.config/functions.fish"
--'  17  32  ~/.config/functions.fish
-|4,39,17,32,1715037759,"~/.config/functions.fish"
--'  12  8  ~/.config/functions.fish
-|4,39,12,8,1715037759,"~/.config/functions.fish"
--'  11  7  ~/.config/functions.fish
-|4,39,11,7,1715037758,"~/.config/functions.fish"
--'  6  8  ~/.config/functions.fish
-|4,39,6,8,1715037758,"~/.config/functions.fish"
--'  11  7  ~/.config/functions.fish
-|4,39,11,7,1715037758,"~/.config/functions.fish"
--'  6  8  ~/.config/functions.fish
-|4,39,6,8,1715037758,"~/.config/functions.fish"
--'  11  7  ~/.config/functions.fish
-|4,39,11,7,1715037758,"~/.config/functions.fish"
--'  6  8  ~/.config/functions.fish
-|4,39,6,8,1715037758,"~/.config/functions.fish"
--'  11  7  ~/.config/functions.fish
-|4,39,11,7,1715037758,"~/.config/functions.fish"
--'  6  8  ~/.config/functions.fish
-|4,39,6,8,1715037758,"~/.config/functions.fish"
--'  11  7  ~/.config/functions.fish
-|4,39,11,7,1715037758,"~/.config/functions.fish"
--'  6  8  ~/.config/functions.fish
-|4,39,6,8,1715037758,"~/.config/functions.fish"
--'  11  7  ~/.config/functions.fish
-|4,39,11,7,1715037758,"~/.config/functions.fish"
--'  6  8  ~/.config/functions.fish
-|4,39,6,8,1715037758,"~/.config/functions.fish"
--'  11  7  ~/.config/functions.fish
-|4,39,11,7,1715037758,"~/.config/functions.fish"
--'  6  8  ~/.config/functions.fish
-|4,39,6,8,1715037758,"~/.config/functions.fish"
--'  4  8  ~/.config/functions.fish
-|4,39,4,8,1715037757,"~/.config/functions.fish"
--'  3  7  ~/.config/functions.fish
-|4,39,3,7,1715037757,"~/.config/functions.fish"
--'  4  8  ~/.config/functions.fish
-|4,39,4,8,1715037757,"~/.config/functions.fish"
--'  3  7  ~/.config/functions.fish
-|4,39,3,7,1715037757,"~/.config/functions.fish"
--'  4  8  ~/.config/functions.fish
-|4,39,4,8,1715037757,"~/.config/functions.fish"
--'  3  7  ~/.config/functions.fish
-|4,39,3,7,1715037757,"~/.config/functions.fish"
--'  4  8  ~/.config/functions.fish
-|4,39,4,8,1715037757,"~/.config/functions.fish"
--'  3  7  ~/.config/functions.fish
-|4,39,3,7,1715037757,"~/.config/functions.fish"
--'  4  8  ~/.config/functions.fish
-|4,39,4,8,1715037757,"~/.config/functions.fish"
--'  3  7  ~/.config/functions.fish
-|4,39,3,7,1715037757,"~/.config/functions.fish"
--'  4  8  ~/.config/functions.fish
-|4,39,4,8,1715037757,"~/.config/functions.fish"
--'  3  7  ~/.config/functions.fish
-|4,39,3,7,1715037757,"~/.config/functions.fish"
--'  4  8  ~/.config/functions.fish
-|4,39,4,8,1715037757,"~/.config/functions.fish"
--'  3  7  ~/.config/functions.fish
-|4,39,3,7,1715037757,"~/.config/functions.fish"
--'  1  0  ~/.config/functions.fish
-|4,39,1,0,1715037756,"~/.config/functions.fish"
--'  1  0  ~/.config/functions.fish
-|4,39,1,0,1715037756,"~/.config/functions.fish"
--'  1  0  ~/.config/functions.fish
-|4,39,1,0,1715037756,"~/.config/functions.fish"
--'  1  0  ~/.config/functions.fish
-|4,39,1,0,1715037756,"~/.config/functions.fish"
--'  1  0  ~/.config/functions.fish
-|4,39,1,0,1715037756,"~/.config/functions.fish"
--'  1  0  ~/.config/functions.fish
-|4,39,1,0,1715037756,"~/.config/functions.fish"
--'  1  0  ~/.config/functions.fish
-|4,39,1,0,1715037756,"~/.config/functions.fish"
--'  41  53  ~/.config/functions.fish
-|4,39,41,53,1715037711,"~/.config/functions.fish"
--'  45  4  ~/.config/functions.fish
-|4,39,45,4,1715037694,"~/.config/functions.fish"
--'  45  4  ~/.config/functions.fish
-|4,39,45,4,1715037694,"~/.config/functions.fish"
--'  45  4  ~/.config/functions.fish
-|4,39,45,4,1715037694,"~/.config/functions.fish"
--'  45  4  ~/.config/functions.fish
-|4,39,45,4,1715037694,"~/.config/functions.fish"
--'  45  4  ~/.config/functions.fish
-|4,39,45,4,1715037694,"~/.config/functions.fish"
--'  42  4  ~/.config/functions.fish
-|4,39,42,4,1715037694,"~/.config/functions.fish"
--'  42  4  ~/.config/functions.fish
-|4,39,42,4,1715037694,"~/.config/functions.fish"
+-'  42  0  ~/downloads/autin-completions.fish
+|4,39,42,0,1715086494,"~/downloads/autin-completions.fish"
+-'  1  0  ~/downloads/autin-completions.fish
+|4,39,1,0,1715086489,"~/downloads/autin-completions.fish"
+-'  26  34  ~/.config/setup.fish
+|4,39,26,34,1715086277,"~/.config/setup.fish"
+-'  26  34  ~/.config/setup.fish
+|4,39,26,34,1715086277,"~/.config/setup.fish"
+-'  26  34  ~/.config/setup.fish
+|4,39,26,34,1715086277,"~/.config/setup.fish"
+-'  1  0  ~/.config/setup.fish
+|4,39,1,0,1715086246,"~/.config/setup.fish"
+-'  1  0  ~/.config/setup.fish
+|4,39,1,0,1715086246,"~/.config/setup.fish"
+-'  1  0  ~/.config/setup.fish
+|4,39,1,0,1715086246,"~/.config/setup.fish"
+-'  26  23  ~/.config/setup.fish
+|4,39,26,23,1715085545,"~/.config/setup.fish"
+-'  1  0  ~/.config/setup.fish
+|4,39,1,0,1715085530,"~/.config/setup.fish"
+-'  3  30  ~/.config/fish/config.fish
+|4,39,3,30,1715085529,"~/.config/fish/config.fish"
+-'  3  30  ~/.config/fish/config.fish
+|4,39,3,30,1715085529,"~/.config/fish/config.fish"
+-'  3  30  ~/.config/fish/config.fish
+|4,39,3,30,1715085529,"~/.config/fish/config.fish"
+-'  3  30  ~/.config/fish/config.fish
+|4,39,3,30,1715085529,"~/.config/fish/config.fish"
+-'  1  0  ~/.config/fish/config.fish
+|4,39,1,0,1715085526,"~/.config/fish/config.fish"
+-'  1  0  ~/.config/fish/config.fish
+|4,39,1,0,1715085526,"~/.config/fish/config.fish"
+-'  1  0  ~/.config/fish/config.fish
+|4,39,1,0,1715085526,"~/.config/fish/config.fish"
+-'  1  0  ~/.config/fish/config.fish
+|4,39,1,0,1715085526,"~/.config/fish/config.fish"
+-'  43  8  ~/.vim/coc-settings.json
+|4,39,43,8,1715082690,"~/.vim/coc-settings.json"
+-'  43  8  ~/.vim/coc-settings.json
+|4,39,43,8,1715082690,"~/.vim/coc-settings.json"
+-'  43  8  ~/.vim/coc-settings.json
+|4,39,43,8,1715082690,"~/.vim/coc-settings.json"
+-'  43  8  ~/.vim/coc-settings.json
+|4,39,43,8,1715082690,"~/.vim/coc-settings.json"
+-'  43  8  ~/.vim/coc-settings.json
+|4,39,43,8,1715082690,"~/.vim/coc-settings.json"
+-'  1  0  ~/downloads/fish-lsp/bin/fish-lsp
+|4,39,1,0,1715082676,"~/downloads/fish-lsp/bin/fish-lsp"
+-'  1  0  ~/downloads/fish-lsp/bin/fish-lsp
+|4,39,1,0,1715082676,"~/downloads/fish-lsp/bin/fish-lsp"
+-'  1  0  ~/downloads/fish-lsp/bin/fish-lsp
+|4,39,1,0,1715082676,"~/downloads/fish-lsp/bin/fish-lsp"
+-'  1  0  ~/downloads/fish-lsp/bin/fish-lsp
+|4,39,1,0,1715082676,"~/downloads/fish-lsp/bin/fish-lsp"
+-'  1  0  ~/downloads/fish-lsp/bin/fish-lsp
+|4,39,1,0,1715082676,"~/downloads/fish-lsp/bin/fish-lsp"
+-'  26  0  ~/.config/functions.fish
+|4,39,26,0,1715082610,"~/.config/functions.fish"
+-'  26  0  ~/.config/functions.fish
+|4,39,26,0,1715082610,"~/.config/functions.fish"
+-'  26  0  ~/.config/functions.fish
+|4,39,26,0,1715082610,"~/.config/functions.fish"
+-'  26  0  ~/.config/functions.fish
+|4,39,26,0,1715082610,"~/.config/functions.fish"
+-'  26  0  ~/.config/functions.fish
+|4,39,26,0,1715082610,"~/.config/functions.fish"
+-'  26  0  ~/.config/functions.fish
+|4,39,26,0,1715082610,"~/.config/functions.fish"
+-'  33  28  ~/.vim/coc-settings.json
+|4,39,33,28,1715082597,"~/.vim/coc-settings.json"
+-'  33  28  ~/.vim/coc-settings.json
+|4,39,33,28,1715082597,"~/.vim/coc-settings.json"
+-'  33  28  ~/.vim/coc-settings.json
+|4,39,33,28,1715082597,"~/.vim/coc-settings.json"
+-'  33  28  ~/.vim/coc-settings.json
+|4,39,33,28,1715082597,"~/.vim/coc-settings.json"
+-'  33  28  ~/.vim/coc-settings.json
+|4,39,33,28,1715082597,"~/.vim/coc-settings.json"
+-'  33  28  ~/.vim/coc-settings.json
+|4,39,33,28,1715082597,"~/.vim/coc-settings.json"
+-'  33  28  ~/.vim/coc-settings.json
+|4,39,33,28,1715082597,"~/.vim/coc-settings.json"
+-'  49  16  ~/.vim/coc-settings.json
+|4,39,49,16,1715082539,"~/.vim/coc-settings.json"
+-'  56  16  ~/.vim/coc-settings.json
+|4,39,56,16,1715082539,"~/.vim/coc-settings.json"
+-'  49  16  ~/.vim/coc-settings.json
+|4,39,49,16,1715082539,"~/.vim/coc-settings.json"
+-'  56  16  ~/.vim/coc-settings.json
+|4,39,56,16,1715082539,"~/.vim/coc-settings.json"
+-'  49  16  ~/.vim/coc-settings.json
+|4,39,49,16,1715082539,"~/.vim/coc-settings.json"
+-'  56  16  ~/.vim/coc-settings.json
+|4,39,56,16,1715082539,"~/.vim/coc-settings.json"
+-'  49  16  ~/.vim/coc-settings.json
+|4,39,49,16,1715082539,"~/.vim/coc-settings.json"
+-'  56  16  ~/.vim/coc-settings.json
+|4,39,56,16,1715082539,"~/.vim/coc-settings.json"
+-'  49  16  ~/.vim/coc-settings.json
+|4,39,49,16,1715082539,"~/.vim/coc-settings.json"
+-'  56  16  ~/.vim/coc-settings.json
+|4,39,56,16,1715082539,"~/.vim/coc-settings.json"
+-'  49  16  ~/.vim/coc-settings.json
+|4,39,49,16,1715082539,"~/.vim/coc-settings.json"
+-'  56  16  ~/.vim/coc-settings.json
+|4,39,56,16,1715082539,"~/.vim/coc-settings.json"
+-'  1  0  ~/.vim/coc-settings.json
+|4,39,1,0,1715082444,"~/.vim/coc-settings.json"
+-'  1  0  ~/.vim/coc-settings.json
+|4,39,1,0,1715082444,"~/.vim/coc-settings.json"
+-'  1  0  ~/.vim/coc-settings.json
+|4,39,1,0,1715082444,"~/.vim/coc-settings.json"
+-'  1  0  ~/.vim/coc-settings.json
+|4,39,1,0,1715082444,"~/.vim/coc-settings.json"
+-'  1  0  ~/.vim/coc-settings.json
+|4,39,1,0,1715082444,"~/.vim/coc-settings.json"
+-'  1  0  ~/.vim/coc-settings.json
+|4,39,1,0,1715082444,"~/.vim/coc-settings.json"
+-'  1  0  ~/.vim/coc-settings.json
+|4,39,1,0,1715082444,"~/.vim/coc-settings.json"
+-'  26  2  ~/.config/functions.fish
+|4,39,26,2,1715082063,"~/.config/functions.fish"
+-'  26  2  ~/.config/functions.fish
+|4,39,26,2,1715082063,"~/.config/functions.fish"
+-'  51  55  ~/.config/functions.fish
+|4,39,51,55,1715041290,"~/.config/functions.fish"
+-'  51  55  ~/.config/functions.fish
+|4,39,51,55,1715041290,"~/.config/functions.fish"
+-'  51  55  ~/.config/functions.fish
+|4,39,51,55,1715041290,"~/.config/functions.fish"
+-'  51  55  ~/.config/functions.fish
+|4,39,51,55,1715041290,"~/.config/functions.fish"
+-'  51  55  ~/.config/functions.fish
+|4,39,51,55,1715041290,"~/.config/functions.fish"
+-'  51  55  ~/.config/functions.fish
+|4,39,51,55,1715041290,"~/.config/functions.fish"
+-'  51  55  ~/.config/functions.fish
+|4,39,51,55,1715041290,"~/.config/functions.fish"
+-'  51  55  ~/.config/functions.fish
+|4,39,51,55,1715041290,"~/.config/functions.fish"
+-'  51  55  ~/.config/functions.fish
+|4,39,51,55,1715041290,"~/.config/functions.fish"
+-'  32  23  ~/.config/functions.fish
+|4,39,32,23,1715041285,"~/.config/functions.fish"
+-'  32  23  ~/.config/functions.fish
+|4,39,32,23,1715041285,"~/.config/functions.fish"
+-'  32  23  ~/.config/functions.fish
+|4,39,32,23,1715041285,"~/.config/functions.fish"
+-'  32  23  ~/.config/functions.fish
+|4,39,32,23,1715041285,"~/.config/functions.fish"
+-'  32  23  ~/.config/functions.fish
+|4,39,32,23,1715041285,"~/.config/functions.fish"
+-'  32  23  ~/.config/functions.fish
+|4,39,32,23,1715041285,"~/.config/functions.fish"
+-'  32  23  ~/.config/functions.fish
+|4,39,32,23,1715041285,"~/.config/functions.fish"
+-'  32  23  ~/.config/functions.fish
+|4,39,32,23,1715041285,"~/.config/functions.fish"
+-'  32  23  ~/.config/functions.fish
+|4,39,32,23,1715041285,"~/.config/functions.fish"
+-'  21  27  ~/.config/functions.fish
+|4,39,21,27,1715041264,"~/.config/functions.fish"
+-'  21  27  ~/.config/functions.fish
+|4,39,21,27,1715041264,"~/.config/functions.fish"
+-'  21  27  ~/.config/functions.fish
+|4,39,21,27,1715041264,"~/.config/functions.fish"
+-'  21  27  ~/.config/functions.fish
+|4,39,21,27,1715041264,"~/.config/functions.fish"
+-'  21  27  ~/.config/functions.fish
+|4,39,21,27,1715041264,"~/.config/functions.fish"
+-'  21  27  ~/.config/functions.fish
+|4,39,21,27,1715041264,"~/.config/functions.fish"
+-'  21  27  ~/.config/functions.fish
+|4,39,21,27,1715041264,"~/.config/functions.fish"
+-'  21  27  ~/.config/functions.fish
+|4,39,21,27,1715041264,"~/.config/functions.fish"
+-'  21  27  ~/.config/functions.fish
+|4,39,21,27,1715041264,"~/.config/functions.fish"
+-'  5  13  ~/.config/functions.fish
+|4,39,5,13,1715041248,"~/.config/functions.fish"
+-'  4  45  ~/.config/functions.fish
+|4,39,4,45,1715041248,"~/.config/functions.fish"
+-'  5  13  ~/.config/functions.fish
+|4,39,5,13,1715041248,"~/.config/functions.fish"
+-'  4  45  ~/.config/functions.fish
+|4,39,4,45,1715041248,"~/.config/functions.fish"
+-'  5  13  ~/.config/functions.fish
+|4,39,5,13,1715041248,"~/.config/functions.fish"
+-'  4  45  ~/.config/functions.fish
+|4,39,4,45,1715041248,"~/.config/functions.fish"
+-'  5  13  ~/.config/functions.fish
+|4,39,5,13,1715041248,"~/.config/functions.fish"
+-'  4  45  ~/.config/functions.fish
+|4,39,4,45,1715041248,"~/.config/functions.fish"
+-'  5  13  ~/.config/functions.fish
+|4,39,5,13,1715041248,"~/.config/functions.fish"
+-'  4  45  ~/.config/functions.fish
+|4,39,4,45,1715041248,"~/.config/functions.fish"
+-'  5  13  ~/.config/functions.fish
+|4,39,5,13,1715041248,"~/.config/functions.fish"
 
 # Buffer list:
-%/tmp/test_do_complete/a.txt	1	0
-%~/.config/functions.fish	48	0
+%~/downloads/autin-completions.fish	42	0
 
 # History of marks within files (newest to oldest):
 
-> ~/.config/functions.fish
-	*	1715038235	0
-	"	48	0
-	^	42	11
-	.	44	35
-	+	1	0
-	+	1	46
-	+	1	17
-	+	1	14
-	+	1	0
-	+	1	9
-	+	1	0
-	+	1	39
-	+	1	17
-	+	1	0
-	+	1	63
-	+	1	29
-	+	1	0
-	+	1	29
-	+	1	0
-	+	1	8
-	+	1	28
-	+	1	45
-	+	1	14
-	+	1	0
-	+	23	0
-	+	12	0
-	+	23	0
-	+	11	0
-	+	12	0
-	+	23	0
-	+	24	23
-	+	29	0
-	+	23	0
-	+	11	0
-	+	12	0
-	+	23	0
-	+	29	0
-	+	23	8
-	+	23	0
-	+	23	10
-	+	17	0
-	+	11	0
-	+	3	0
-	+	11	0
-	+	1	0
-	+	2	0
-	+	10	19
-	+	32	4
-	+	33	3
-	+	38	20
-	+	47	0
-	+	35	26
-	+	38	4
-	+	47	0
-	+	39	15
-	+	44	46
-	+	46	0
-	+	44	8
-	+	44	16
-	+	45	25
-	+	45	0
-	+	38	18
-	+	39	4
-	+	38	20
-	+	43	0
-	+	44	4
-	+	45	4
-	+	44	49
-	+	42	4
-	+	44	35
-
-> /tmp/test_do_complete/a.txt
-	*	1715037925	0
-	"	1	0
-
-> /tmp/test_do_complete/new.man
-	*	1715037872	0
-	"	43	0
-	.	1	0
-	+	1	0
-
-> /tmp/test_do_complete/new
-	*	1715037739	0
-	"	1	0
+> ~/downloads/autin-completions.fish
+	*	1715086493	0
+	"	42	0
 
 > ~/.config/setup.fish
-	*	1715027132	0
-	"	9	18
-	^	9	19
-	.	9	18
+	*	1715086276	0
+	"	26	34
+	^	26	34
+	.	27	0
 	+	6	0
 	+	6	4
 	+	6	7
@@ -8768,6 +8709,227 @@ $
 	+	6	0
 	+	7	30
 	+	9	18
+	+	22	0
+	+	23	0
+	+	24	0
+	+	23	29
+	+	24	11
+	+	26	34
+	+	27	0
+
+> ~/.config/fish/config.fish
+	*	1715085528	0
+	"	3	30
+	^	3	31
+	.	3	30
+	+	3	30
+
+> ~/.vim/coc-settings.json
+	*	1715082689	0
+	"	43	8
+	.	43	0
+	+	38	33
+	+	38	35
+	+	38	0
+	+	38	9
+	+	38	0
+	+	38	37
+	+	38	32
+	+	38	34
+	+	38	0
+	+	21	0
+	+	20	39
+	+	21	0
+	+	20	28
+	+	20	37
+	+	2	0
+	+	38	0
+	+	38	11
+	+	38	0
+	+	2	0
+	+	14	0
+	+	15	0
+	+	16	0
+	+	15	0
+	+	2	33
+	+	3	38
+	+	16	0
+	+	4	0
+	+	9	0
+	+	11	0
+	+	20	0
+	+	16	0
+	+	20	0
+	+	21	0
+	+	37	42
+	+	22	0
+	+	37	0
+	+	25	34
+	+	37	0
+	+	35	0
+	+	25	0
+	+	4	0
+	+	23	0
+	+	4	0
+	+	35	0
+	+	26	37
+	+	3	38
+	+	9	0
+	+	6	33
+	+	9	0
+	+	7	49
+	+	9	0
+	+	5	0
+	+	8	131
+	+	7	78
+	+	5	0
+	+	20	0
+	+	57	0
+	+	56	25
+	+	57	0
+	+	75	0
+	+	45	14
+	+	46	44
+	+	44	0
+	+	73	0
+	+	72	0
+	+	69	71
+	+	70	33
+	+	72	0
+	+	71	16
+	+	72	0
+	+	71	25
+	+	70	11
+	+	68	48
+	+	70	30
+	+	68	0
+	+	19	6
+	+	28	29
+	+	35	33
+	+	35	0
+	+	32	0
+	+	28	6
+	+	29	5
+	+	28	0
+	+	32	0
+	+	33	28
+	+	34	32
+	+	37	0
+	+	36	39
+	+	37	0
+	+	40	0
+	+	43	0
+	+	43	69
+	+	43	34
+	+	43	30
+	+	43	44
+	+	43	18
+	+	43	0
+
+> ~/downloads/fish-lsp/bin/fish-lsp
+	*	1715082675	0
+	"	1	0
+
+> ~/.config/functions.fish
+	*	1715082610	0
+	"	26	0
+	^	32	52
+	.	52	0
+	+	56	0
+	+	56	46
+	+	56	17
+	+	56	14
+	+	56	0
+	+	56	9
+	+	56	0
+	+	56	39
+	+	56	17
+	+	56	0
+	+	56	63
+	+	56	29
+	+	56	0
+	+	56	29
+	+	56	0
+	+	56	8
+	+	56	28
+	+	56	45
+	+	56	14
+	+	56	0
+	+	78	0
+	+	67	0
+	+	78	0
+	+	66	0
+	+	67	0
+	+	78	0
+	+	79	23
+	+	84	0
+	+	78	0
+	+	66	0
+	+	67	0
+	+	78	0
+	+	84	0
+	+	78	8
+	+	78	0
+	+	78	10
+	+	72	0
+	+	66	0
+	+	58	0
+	+	66	0
+	+	56	0
+	+	57	0
+	+	65	19
+	+	87	4
+	+	88	3
+	+	93	20
+	+	102	0
+	+	90	26
+	+	93	4
+	+	102	0
+	+	94	15
+	+	99	46
+	+	101	0
+	+	99	8
+	+	99	16
+	+	100	25
+	+	100	0
+	+	93	18
+	+	94	4
+	+	93	20
+	+	98	0
+	+	99	4
+	+	100	4
+	+	99	49
+	+	97	4
+	+	99	35
+	+	56	74
+	+	1	29
+	+	4	23
+	+	1	0
+	+	28	0
+	+	27	0
+	+	29	29
+	+	32	0
+	+	4	45
+	+	4	0
+	+	21	27
+	+	51	27
+	+	32	51
+	+	51	27
+	+	52	0
+
+> /tmp/test_do_complete/a.txt
+	*	1715037925	0
+	"	1	0
+
+> /tmp/test_do_complete/new.man
+	*	1715037872	0
+	"	43	0
+	.	1	0
+	+	1	0
+
+> /tmp/test_do_complete/new
+	*	1715037739	0
+	"	1	0
 
 > ~/.config/man manpage
 	*	1714990125	0
@@ -8864,13 +9026,6 @@ $
 	+	1355	0
 	+	47	0
 	+	46	22
-
-> ~/.config/fish/config.fish
-	*	1714988585	0
-	"	3	30
-	^	3	31
-	.	3	30
-	+	3	30
 
 > /usr/share/fish/functions/__fish_complete_suffix.fish
 	*	1714949681	0
@@ -9391,110 +9546,6 @@ $
 	+	167	34
 	+	143	52
 	+	152	46
-
-> ~/.vim/coc-settings.json
-	*	1714631287	0
-	"	40	0
-	.	40	0
-	+	66	9
-	+	74	0
-	+	38	0
-	+	24	0
-	+	24	111
-	+	16	0
-	+	13	0
-	+	15	0
-	+	38	0
-	+	38	33
-	+	38	35
-	+	38	0
-	+	38	9
-	+	38	0
-	+	38	37
-	+	38	32
-	+	38	34
-	+	38	0
-	+	21	0
-	+	20	39
-	+	21	0
-	+	20	28
-	+	20	37
-	+	2	0
-	+	38	0
-	+	38	11
-	+	38	0
-	+	2	0
-	+	14	0
-	+	15	0
-	+	16	0
-	+	15	0
-	+	2	33
-	+	3	38
-	+	16	0
-	+	4	0
-	+	9	0
-	+	11	0
-	+	20	0
-	+	16	0
-	+	20	0
-	+	21	0
-	+	37	42
-	+	22	0
-	+	37	0
-	+	25	34
-	+	37	0
-	+	35	0
-	+	25	0
-	+	4	0
-	+	23	0
-	+	4	0
-	+	35	0
-	+	26	37
-	+	3	38
-	+	9	0
-	+	6	33
-	+	9	0
-	+	7	49
-	+	9	0
-	+	5	0
-	+	8	131
-	+	7	78
-	+	5	0
-	+	20	0
-	+	57	0
-	+	56	25
-	+	57	0
-	+	75	0
-	+	45	14
-	+	46	44
-	+	44	0
-	+	73	0
-	+	72	0
-	+	69	71
-	+	70	33
-	+	72	0
-	+	71	16
-	+	72	0
-	+	71	25
-	+	70	11
-	+	68	48
-	+	70	30
-	+	68	0
-	+	19	6
-	+	28	29
-	+	35	33
-	+	35	0
-	+	32	0
-	+	28	6
-	+	29	5
-	+	28	0
-	+	32	0
-	+	33	28
-	+	34	32
-	+	37	0
-	+	36	39
-	+	37	0
-	+	40	0
 
 > ~/.vim/plugged/direnv.vim/doc/direnv.txt
 	*	1714631246	0
