@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/faile
+~MSle0~/print(items)\nprint(items)\nprint(items)\nprint(items)\nprint(items)\nprint(items)\n
 
 # Last Substitute Search Pattern:
 ~MSle0&:
@@ -21,7 +21,19 @@ $
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1715086494,,"q"
+|2,0,1715178782,,"q"
+:MRU hate
+|2,0,1715178770,,"MRU hate"
+:MRU Elem
+|2,0,1715178765,,"MRU Elem"
+:MRU 
+|2,0,1715178762,,"MRU "
+:e
+|2,0,1715178213,,"e"
+:set ft=text
+|2,0,1715178174,,"set ft=text"
+:bd
+|2,0,1715118675,,"bd"
 :qa
 |2,0,1715082690,,"qa"
 :CocConfig
@@ -36,8 +48,6 @@ $
 |2,0,1715041222,,"e "
 :.%!functions down-or-search
 |2,0,1715040993,,".%!functions down-or-search"
-:MRU 
-|2,0,1715040946,,"MRU "
 :MRU fu
 |2,0,1715040916,,"MRU fu"
 :MRU set
@@ -98,8 +108,6 @@ $
 |2,0,1714990121,,"man Command"
 :Man commandline
 |2,0,1714990116,,"Man commandline"
-:bd
-|2,0,1714990095,,"bd"
 :PlugInstall
 |2,0,1714990090,,"PlugInstall"
 :so %
@@ -116,8 +124,6 @@ $
 |2,0,1714989428,,"ALEInfo"
 :q 
 |2,0,1714989157,,"q "
-:e
-|2,0,1714988618,,"e"
 :e alias.sh
 |2,0,1714988606,,"e alias.sh"
 :pwd
@@ -192,8 +198,6 @@ $
 |2,0,1714633197,,"echo coc#statusasdf"
 :echo
 |2,0,1714633190,,"echo"
-:MRU hate
-|2,0,1714631611,,"MRU hate"
 :CocCommand workspace.showOutput
 |2,0,1714631543,,"CocCommand workspace.showOutput"
 :CocList
@@ -3666,8 +3670,6 @@ $
 |2,0,1693173453,,".!jsonfmt"
 :set ft=json
 |2,0,1693173422,,"set ft=json"
-:set ft=text
-|2,0,1693173418,,"set ft=text"
 :cd chrome-extensions/ coffee-vps/ copyright/ inspo/ templates/ thoughts/
 |2,0,1693162139,,"cd chrome-extensions/ coffee-vps/ copyright/ inspo/ templates/ thoughts/"
 :MRU set*fis
@@ -5880,6 +5882,8 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/new
+|2,1,1715178189,47,"new"
 ?/faile
 |2,1,1715082613,47,"faile"
 ?/commandline
@@ -8289,9 +8293,31 @@ $
 
 # Registers:
 "0	LINE	0
-	                "logLevel": "info"
-|3,0,0,1,1,0,1715082539,"                \"logLevel\": \"info\""
+	print(items)
+	print(items)
+	print(items)
+	print(items)
+	print(items)
+	print(items)
+|3,0,0,1,6,0,1715178272,"print(items)","print(items)","print(items)","print(items)","print(items)","print(items)"
 ""1	LINE	0
+	item =
+|3,1,1,1,1,0,1715178293,"item ="
+"2	LINE	0
+	print(items)
+	print(items)
+	print(items)
+	print(items)
+	print(items)
+	print(items)
+|3,0,2,1,6,0,1715178263,"print(items)","print(items)","print(items)","print(items)","print(items)","print(items)"
+"3	LINE	0
+	print(
+|3,0,3,1,1,0,1715178260,"print("
+"4	LINE	0
+	math.
+|3,0,4,1,1,0,1715178260,"math."
+"5	LINE	0
 	        "fish-lsp": {
 	            "command": "/home/vivek/downloads/fish-lsp/bin/fish-lsp",
 	            "filetypes": ["fish"],
@@ -8308,39 +8334,25 @@ $
 	                }
 	            }
 	        }
-|3,1,1,1,16,0,1715082689,"        \"fish-lsp\": {","            \"command\": \"/home/vivek/downloads/fish-lsp/bin/fish-lsp\",","            \"filetypes\": [\"fish\"],","            \"args\": [\"start\"],","            \"revealOutputChannelOn\": \"info\",","            \"initializationOptions\": {","                \"workspaces\": {","                    \"paths\": {","                        \"defaults\": [",>53
+|3,0,5,1,16,0,1715178260,"        \"fish-lsp\": {","            \"command\": \"/home/vivek/downloads/fish-lsp/bin/fish-lsp\",","            \"filetypes\": [\"fish\"],","            \"args\": [\"start\"],","            \"revealOutputChannelOn\": \"info\",","            \"initializationOptions\": {","                \"workspaces\": {","                    \"paths\": {","                        \"defaults\": [",>53
 |<"                            \"$HOME/.config/fish\",","                            \"/usr/share/fish\"","                        ]","                    }","                }","            }","        }"
-"2	LINE	0
+"6	LINE	0
 	                "logLevel": "info"
-|3,0,2,1,1,0,1715082525,"                \"logLevel\": \"info\""
-"3	LINE	0
+|3,0,6,1,1,0,1715178260,"                \"logLevel\": \"info\""
+"7	LINE	0
 	
-|3,0,3,1,1,0,1715078528,""
-"4	LINE	0
+|3,0,7,1,1,0,1715178260,""
+"8	LINE	0
 	    if test (commandline) = 'a'
 	        echo true
 	    else
 	        echo false
 	    end
-|3,0,4,1,5,0,1715037410,"    if test (commandline) = 'a'","        echo true","    else","        echo false","    end"
-"5	LINE	0
-	
-	
-|3,0,5,1,2,0,1715037298,"",""
-"6	LINE	0
-	
-	
-|3,0,6,1,2,0,1715037298,"",""
-"7	LINE	0
-	
-	
-|3,0,7,1,2,0,1715037297,"",""
-"8	LINE	0
-	    commandline -i a
-|3,0,8,1,1,0,1715037293,"    commandline -i a"
+|3,0,8,1,5,0,1715178260,"    if test (commandline) = 'a'","        echo true","    else","        echo false","    end"
 "9	LINE	0
-	    commandline "
-|3,0,9,1,1,0,1715037277,"    commandline \""
+	
+	
+|3,0,9,1,2,0,1715178260,"",""
 "a	CHAR	0
 	Tabularize /-/l1c1l1c1l1
 |3,0,10,0,1,0,1714384337,"Tabularize /-/l1c1l1c1l1"
@@ -8379,237 +8391,386 @@ $
 |<"                <form method=\"POST\" action=\"/resume_download\">","                    <input type=\"hidden\" name=\"id\" value=\"{{ id }}\">","                    <input type=\"submit\" value=\"Resume\">","                </form>","                {% endif %}","                {% if status == 'downloading' %}","                <form method=\"POST\" action=\"/pause_download\">","                    <input type=\"hidden\" name=\"id\" value=\"{{ id }}\">",>61
 |<"                    <input type=\"submit\" value=\"Pause\">","                </form>","                {% endif %}","","            </li>","        {% endfor %}","    </ul>\"\"\", downloads=downloads)"
 "-	CHAR	0
-	history-search-forward
-|3,0,36,0,1,0,1715041288,"history-search-forward"
+	new
+|3,0,36,0,1,0,1715178209,"new"
 
 # File marks:
-'0  42  0  ~/downloads/autin-completions.fish
-|4,48,42,0,1715086494,"~/downloads/autin-completions.fish"
-'1  26  34  ~/.config/setup.fish
-|4,49,26,34,1715086277,"~/.config/setup.fish"
-'2  26  34  ~/.config/setup.fish
-|4,50,26,34,1715086277,"~/.config/setup.fish"
-'3  26  34  ~/.config/setup.fish
-|4,51,26,34,1715086277,"~/.config/setup.fish"
-'4  26  34  ~/.config/setup.fish
-|4,52,26,34,1715086277,"~/.config/setup.fish"
-'5  26  23  ~/.config/setup.fish
-|4,53,26,23,1715085545,"~/.config/setup.fish"
-'6  26  23  ~/.config/setup.fish
-|4,54,26,23,1715085545,"~/.config/setup.fish"
-'7  26  23  ~/.config/setup.fish
-|4,55,26,23,1715085545,"~/.config/setup.fish"
-'8  26  23  ~/.config/setup.fish
-|4,56,26,23,1715085545,"~/.config/setup.fish"
-'9  43  8  ~/.vim/coc-settings.json
-|4,57,43,8,1715082690,"~/.vim/coc-settings.json"
+'0  1  0  ~/hateoas/hateoas-api.py
+|4,48,1,0,1715178783,"~/hateoas/hateoas-api.py"
+'1  1  0  ~/hateoas/hateoas-api.py
+|4,49,1,0,1715178777,"~/hateoas/hateoas-api.py"
+'2  69  0  ~/hateoas/hateoas-api.py
+|4,50,69,0,1715178772,"~/hateoas/hateoas-api.py"
+'3  69  0  ~/hateoas/hateoas-api.py
+|4,51,69,0,1715178772,"~/hateoas/hateoas-api.py"
+'4  69  0  ~/hateoas/hateoas-api.py
+|4,52,69,0,1715178772,"~/hateoas/hateoas-api.py"
+'5  69  0  ~/hateoas/hateoas-api.py
+|4,53,69,0,1715178772,"~/hateoas/hateoas-api.py"
+'6  69  0  ~/hateoas/hateoas-api.py
+|4,54,69,0,1715178772,"~/hateoas/hateoas-api.py"
+'7  69  0  ~/hateoas/hateoas-api.py
+|4,55,69,0,1715178772,"~/hateoas/hateoas-api.py"
+'8  69  0  ~/hateoas/hateoas-api.py
+|4,56,69,0,1715178772,"~/hateoas/hateoas-api.py"
+'9  69  0  ~/hateoas/hateoas-api.py
+|4,57,69,0,1715178772,"~/hateoas/hateoas-api.py"
 
 # Jumplist (newest first):
+-'  1  0  ~/hateoas/hateoas-api.py
+|4,39,1,0,1715178783,"~/hateoas/hateoas-api.py"
+-'  1  0  ~/hateoas/hateoas-api.py
+|4,39,1,0,1715178777,"~/hateoas/hateoas-api.py"
+-'  69  0  ~/hateoas/hateoas-api.py
+|4,39,69,0,1715178772,"~/hateoas/hateoas-api.py"
+-'  69  0  ~/hateoas/hateoas-api.py
+|4,39,69,0,1715178772,"~/hateoas/hateoas-api.py"
+-'  69  0  ~/hateoas/hateoas-api.py
+|4,39,69,0,1715178772,"~/hateoas/hateoas-api.py"
+-'  69  0  ~/hateoas/hateoas-api.py
+|4,39,69,0,1715178772,"~/hateoas/hateoas-api.py"
+-'  1  0  ~/hateoas/hateoas-api.py
+|4,39,1,0,1715178770,"~/hateoas/hateoas-api.py"
+-'  1  0  ~/hateoas/hateoas-api.py
+|4,39,1,0,1715178770,"~/hateoas/hateoas-api.py"
+-'  10  0  ~/helix-test/helix.py
+|4,39,10,0,1715178766,"~/helix-test/helix.py"
+-'  10  0  ~/helix-test/helix.py
+|4,39,10,0,1715178766,"~/helix-test/helix.py"
+-'  10  0  ~/helix-test/helix.py
+|4,39,10,0,1715178766,"~/helix-test/helix.py"
+-'  10  0  ~/helix-test/helix.py
+|4,39,10,0,1715178766,"~/helix-test/helix.py"
+-'  10  0  ~/helix-test/helix.py
+|4,39,10,0,1715178766,"~/helix-test/helix.py"
+-'  10  0  ~/helix-test/helix.py
+|4,39,10,0,1715178760,"~/helix-test/helix.py"
+-'  7  0  ~/helix-test/helix.py
+|4,39,7,0,1715178272,"~/helix-test/helix.py"
+-'  7  0  ~/helix-test/helix.py
+|4,39,7,0,1715178272,"~/helix-test/helix.py"
+-'  7  0  ~/helix-test/helix.py
+|4,39,7,0,1715178272,"~/helix-test/helix.py"
+-'  7  0  ~/helix-test/helix.py
+|4,39,7,0,1715178272,"~/helix-test/helix.py"
+-'  7  0  ~/helix-test/helix.py
+|4,39,7,0,1715178272,"~/helix-test/helix.py"
+-'  7  0  ~/helix-test/helix.py
+|4,39,7,0,1715178272,"~/helix-test/helix.py"
+-'  4  1  ~/helix-test/helix.py
+|4,39,4,1,1715178238,"~/helix-test/helix.py"
+-'  4  1  ~/helix-test/helix.py
+|4,39,4,1,1715178238,"~/helix-test/helix.py"
+-'  4  1  ~/helix-test/helix.py
+|4,39,4,1,1715178238,"~/helix-test/helix.py"
+-'  4  1  ~/helix-test/helix.py
+|4,39,4,1,1715178238,"~/helix-test/helix.py"
+-'  4  1  ~/helix-test/helix.py
+|4,39,4,1,1715178238,"~/helix-test/helix.py"
+-'  4  1  ~/helix-test/helix.py
+|4,39,4,1,1715178238,"~/helix-test/helix.py"
+-'  6  6  ~/helix-test/helix.py
+|4,39,6,6,1715178221,"~/helix-test/helix.py"
+-'  6  6  ~/helix-test/helix.py
+|4,39,6,6,1715178221,"~/helix-test/helix.py"
+-'  6  6  ~/helix-test/helix.py
+|4,39,6,6,1715178221,"~/helix-test/helix.py"
+-'  6  6  ~/helix-test/helix.py
+|4,39,6,6,1715178221,"~/helix-test/helix.py"
+-'  6  6  ~/helix-test/helix.py
+|4,39,6,6,1715178221,"~/helix-test/helix.py"
+-'  6  6  ~/helix-test/helix.py
+|4,39,6,6,1715178221,"~/helix-test/helix.py"
+-'  5  0  ~/helix-test/helix.py
+|4,39,5,0,1715178213,"~/helix-test/helix.py"
+-'  5  0  ~/helix-test/helix.py
+|4,39,5,0,1715178213,"~/helix-test/helix.py"
+-'  5  0  ~/helix-test/helix.py
+|4,39,5,0,1715178213,"~/helix-test/helix.py"
+-'  5  0  ~/helix-test/helix.py
+|4,39,5,0,1715178213,"~/helix-test/helix.py"
+-'  5  0  ~/helix-test/helix.py
+|4,39,5,0,1715178213,"~/helix-test/helix.py"
+-'  5  0  ~/helix-test/helix.py
+|4,39,5,0,1715178213,"~/helix-test/helix.py"
+-'  1  0  ~/helix-test/helix.py
+|4,39,1,0,1715178204,"~/helix-test/helix.py"
+-'  1  0  ~/helix-test/helix.py
+|4,39,1,0,1715178204,"~/helix-test/helix.py"
+-'  1  0  ~/helix-test/helix.py
+|4,39,1,0,1715178204,"~/helix-test/helix.py"
+-'  1  0  ~/helix-test/helix.py
+|4,39,1,0,1715178204,"~/helix-test/helix.py"
+-'  1  0  ~/helix-test/helix.py
+|4,39,1,0,1715178204,"~/helix-test/helix.py"
+-'  1  0  ~/helix-test/helix.py
+|4,39,1,0,1715178204,"~/helix-test/helix.py"
+-'  3  0  ~/helix-test/helix.py
+|4,39,3,0,1715178189,"~/helix-test/helix.py"
+-'  3  0  ~/helix-test/helix.py
+|4,39,3,0,1715178189,"~/helix-test/helix.py"
+-'  3  0  ~/helix-test/helix.py
+|4,39,3,0,1715178189,"~/helix-test/helix.py"
+-'  3  0  ~/helix-test/helix.py
+|4,39,3,0,1715178189,"~/helix-test/helix.py"
+-'  3  0  ~/helix-test/helix.py
+|4,39,3,0,1715178189,"~/helix-test/helix.py"
+-'  3  0  ~/helix-test/helix.py
+|4,39,3,0,1715178189,"~/helix-test/helix.py"
+-'  6  13  ~/helix-test/helix.py
+|4,39,6,13,1715177613,"~/helix-test/helix.py"
+-'  3  0  ~/helix-test/helix.py
+|4,39,3,0,1715177602,"~/helix-test/helix.py"
+-'  2  12  ~/helix-test/helix.py
+|4,39,2,12,1715177601,"~/helix-test/helix.py"
+-'  2  12  ~/helix-test/helix.py
+|4,39,2,12,1715177601,"~/helix-test/helix.py"
+-'  2  12  ~/helix-test/helix.py
+|4,39,2,12,1715177601,"~/helix-test/helix.py"
+-'  2  12  ~/helix-test/helix.py
+|4,39,2,12,1715177601,"~/helix-test/helix.py"
+-'  2  12  ~/helix-test/helix.py
+|4,39,2,12,1715177601,"~/helix-test/helix.py"
+-'  2  12  ~/helix-test/helix.py
+|4,39,2,12,1715177601,"~/helix-test/helix.py"
+-'  4  5  ~/helix-test/helix.py
+|4,39,4,5,1715177599,"~/helix-test/helix.py"
+-'  1  0  ~/helix-test/helix.py
+|4,39,1,0,1715177581,"~/helix-test/helix.py"
+-'  108  11  ~/hateoas/hateoas-api.py
+|4,39,108,11,1715177511,"~/hateoas/hateoas-api.py"
+-'  108  11  ~/hateoas/hateoas-api.py
+|4,39,108,11,1715177511,"~/hateoas/hateoas-api.py"
+-'  108  11  ~/hateoas/hateoas-api.py
+|4,39,108,11,1715177511,"~/hateoas/hateoas-api.py"
+-'  108  11  ~/hateoas/hateoas-api.py
+|4,39,108,11,1715177511,"~/hateoas/hateoas-api.py"
+-'  108  11  ~/hateoas/hateoas-api.py
+|4,39,108,11,1715177511,"~/hateoas/hateoas-api.py"
+-'  108  11  ~/hateoas/hateoas-api.py
+|4,39,108,11,1715177511,"~/hateoas/hateoas-api.py"
+-'  108  11  ~/hateoas/hateoas-api.py
+|4,39,108,11,1715177511,"~/hateoas/hateoas-api.py"
+-'  1  0  ~/hateoas/hateoas-api.py
+|4,39,1,0,1715177509,"~/hateoas/hateoas-api.py"
+-'  1  0  ~/hateoas/hateoas-api.py
+|4,39,1,0,1715177509,"~/hateoas/hateoas-api.py"
+-'  1  0  ~/hateoas/hateoas-api.py
+|4,39,1,0,1715177509,"~/hateoas/hateoas-api.py"
+-'  39  0  ~/.config/atuin/config.toml
+|4,39,39,0,1715118675,"~/.config/atuin/config.toml"
+-'  39  0  ~/.config/atuin/config.toml
+|4,39,39,0,1715118675,"~/.config/atuin/config.toml"
+-'  39  0  ~/.config/atuin/config.toml
+|4,39,39,0,1715118675,"~/.config/atuin/config.toml"
+-'  39  0  ~/.config/atuin/config.toml
+|4,39,39,0,1715118675,"~/.config/atuin/config.toml"
+-'  39  0  ~/.config/atuin/config.toml
+|4,39,39,0,1715118675,"~/.config/atuin/config.toml"
+-'  39  0  ~/.config/atuin/config.toml
+|4,39,39,0,1715118675,"~/.config/atuin/config.toml"
+-'  39  0  ~/.config/atuin/config.toml
+|4,39,39,0,1715118675,"~/.config/atuin/config.toml"
+-'  39  0  ~/.config/atuin/config.toml
+|4,39,39,0,1715118675,"~/.config/atuin/config.toml"
+-'  39  0  ~/.config/atuin/config.toml
+|4,39,39,0,1715089922,"~/.config/atuin/config.toml"
+-'  1  0  ~/.config/atuin/config.toml
+|4,39,1,0,1715089915,"~/.config/atuin/config.toml"
+-'  1  0  ~/.config/atuin/config.toml
+|4,39,1,0,1715089915,"~/.config/atuin/config.toml"
+-'  1  0  ~/.config/atuin/config.toml
+|4,39,1,0,1715089915,"~/.config/atuin/config.toml"
+-'  1  0  ~/.config/atuin/config.toml
+|4,39,1,0,1715089915,"~/.config/atuin/config.toml"
+-'  1  0  ~/.config/atuin/config.toml
+|4,39,1,0,1715089915,"~/.config/atuin/config.toml"
+-'  1  0  ~/.config/atuin/config.toml
+|4,39,1,0,1715089915,"~/.config/atuin/config.toml"
+-'  1  0  ~/.config/atuin/config.toml
+|4,39,1,0,1715089915,"~/.config/atuin/config.toml"
+-'  1  0  ~/.config/atuin/config.toml
+|4,39,1,0,1715089915,"~/.config/atuin/config.toml"
+-'  1  0  ~/.config/atuin/config.toml
+|4,39,1,0,1715089915,"~/.config/atuin/config.toml"
+-'  42  0  ~/downloads/autin-completions.fish
+|4,39,42,0,1715086494,"~/downloads/autin-completions.fish"
+-'  42  0  ~/downloads/autin-completions.fish
+|4,39,42,0,1715086494,"~/downloads/autin-completions.fish"
+-'  42  0  ~/downloads/autin-completions.fish
+|4,39,42,0,1715086494,"~/downloads/autin-completions.fish"
+-'  42  0  ~/downloads/autin-completions.fish
+|4,39,42,0,1715086494,"~/downloads/autin-completions.fish"
+-'  42  0  ~/downloads/autin-completions.fish
+|4,39,42,0,1715086494,"~/downloads/autin-completions.fish"
+-'  42  0  ~/downloads/autin-completions.fish
+|4,39,42,0,1715086494,"~/downloads/autin-completions.fish"
+-'  42  0  ~/downloads/autin-completions.fish
+|4,39,42,0,1715086494,"~/downloads/autin-completions.fish"
+-'  42  0  ~/downloads/autin-completions.fish
+|4,39,42,0,1715086494,"~/downloads/autin-completions.fish"
+-'  42  0  ~/downloads/autin-completions.fish
+|4,39,42,0,1715086494,"~/downloads/autin-completions.fish"
 -'  42  0  ~/downloads/autin-completions.fish
 |4,39,42,0,1715086494,"~/downloads/autin-completions.fish"
 -'  1  0  ~/downloads/autin-completions.fish
 |4,39,1,0,1715086489,"~/downloads/autin-completions.fish"
--'  26  34  ~/.config/setup.fish
-|4,39,26,34,1715086277,"~/.config/setup.fish"
--'  26  34  ~/.config/setup.fish
-|4,39,26,34,1715086277,"~/.config/setup.fish"
--'  26  34  ~/.config/setup.fish
-|4,39,26,34,1715086277,"~/.config/setup.fish"
--'  1  0  ~/.config/setup.fish
-|4,39,1,0,1715086246,"~/.config/setup.fish"
--'  1  0  ~/.config/setup.fish
-|4,39,1,0,1715086246,"~/.config/setup.fish"
--'  1  0  ~/.config/setup.fish
-|4,39,1,0,1715086246,"~/.config/setup.fish"
--'  26  23  ~/.config/setup.fish
-|4,39,26,23,1715085545,"~/.config/setup.fish"
--'  1  0  ~/.config/setup.fish
-|4,39,1,0,1715085530,"~/.config/setup.fish"
--'  3  30  ~/.config/fish/config.fish
-|4,39,3,30,1715085529,"~/.config/fish/config.fish"
--'  3  30  ~/.config/fish/config.fish
-|4,39,3,30,1715085529,"~/.config/fish/config.fish"
--'  3  30  ~/.config/fish/config.fish
-|4,39,3,30,1715085529,"~/.config/fish/config.fish"
--'  3  30  ~/.config/fish/config.fish
-|4,39,3,30,1715085529,"~/.config/fish/config.fish"
--'  1  0  ~/.config/fish/config.fish
-|4,39,1,0,1715085526,"~/.config/fish/config.fish"
--'  1  0  ~/.config/fish/config.fish
-|4,39,1,0,1715085526,"~/.config/fish/config.fish"
--'  1  0  ~/.config/fish/config.fish
-|4,39,1,0,1715085526,"~/.config/fish/config.fish"
--'  1  0  ~/.config/fish/config.fish
-|4,39,1,0,1715085526,"~/.config/fish/config.fish"
--'  43  8  ~/.vim/coc-settings.json
-|4,39,43,8,1715082690,"~/.vim/coc-settings.json"
--'  43  8  ~/.vim/coc-settings.json
-|4,39,43,8,1715082690,"~/.vim/coc-settings.json"
--'  43  8  ~/.vim/coc-settings.json
-|4,39,43,8,1715082690,"~/.vim/coc-settings.json"
--'  43  8  ~/.vim/coc-settings.json
-|4,39,43,8,1715082690,"~/.vim/coc-settings.json"
--'  43  8  ~/.vim/coc-settings.json
-|4,39,43,8,1715082690,"~/.vim/coc-settings.json"
--'  1  0  ~/downloads/fish-lsp/bin/fish-lsp
-|4,39,1,0,1715082676,"~/downloads/fish-lsp/bin/fish-lsp"
--'  1  0  ~/downloads/fish-lsp/bin/fish-lsp
-|4,39,1,0,1715082676,"~/downloads/fish-lsp/bin/fish-lsp"
--'  1  0  ~/downloads/fish-lsp/bin/fish-lsp
-|4,39,1,0,1715082676,"~/downloads/fish-lsp/bin/fish-lsp"
--'  1  0  ~/downloads/fish-lsp/bin/fish-lsp
-|4,39,1,0,1715082676,"~/downloads/fish-lsp/bin/fish-lsp"
--'  1  0  ~/downloads/fish-lsp/bin/fish-lsp
-|4,39,1,0,1715082676,"~/downloads/fish-lsp/bin/fish-lsp"
--'  26  0  ~/.config/functions.fish
-|4,39,26,0,1715082610,"~/.config/functions.fish"
--'  26  0  ~/.config/functions.fish
-|4,39,26,0,1715082610,"~/.config/functions.fish"
--'  26  0  ~/.config/functions.fish
-|4,39,26,0,1715082610,"~/.config/functions.fish"
--'  26  0  ~/.config/functions.fish
-|4,39,26,0,1715082610,"~/.config/functions.fish"
--'  26  0  ~/.config/functions.fish
-|4,39,26,0,1715082610,"~/.config/functions.fish"
--'  26  0  ~/.config/functions.fish
-|4,39,26,0,1715082610,"~/.config/functions.fish"
--'  33  28  ~/.vim/coc-settings.json
-|4,39,33,28,1715082597,"~/.vim/coc-settings.json"
--'  33  28  ~/.vim/coc-settings.json
-|4,39,33,28,1715082597,"~/.vim/coc-settings.json"
--'  33  28  ~/.vim/coc-settings.json
-|4,39,33,28,1715082597,"~/.vim/coc-settings.json"
--'  33  28  ~/.vim/coc-settings.json
-|4,39,33,28,1715082597,"~/.vim/coc-settings.json"
--'  33  28  ~/.vim/coc-settings.json
-|4,39,33,28,1715082597,"~/.vim/coc-settings.json"
--'  33  28  ~/.vim/coc-settings.json
-|4,39,33,28,1715082597,"~/.vim/coc-settings.json"
--'  33  28  ~/.vim/coc-settings.json
-|4,39,33,28,1715082597,"~/.vim/coc-settings.json"
--'  49  16  ~/.vim/coc-settings.json
-|4,39,49,16,1715082539,"~/.vim/coc-settings.json"
--'  56  16  ~/.vim/coc-settings.json
-|4,39,56,16,1715082539,"~/.vim/coc-settings.json"
--'  49  16  ~/.vim/coc-settings.json
-|4,39,49,16,1715082539,"~/.vim/coc-settings.json"
--'  56  16  ~/.vim/coc-settings.json
-|4,39,56,16,1715082539,"~/.vim/coc-settings.json"
--'  49  16  ~/.vim/coc-settings.json
-|4,39,49,16,1715082539,"~/.vim/coc-settings.json"
--'  56  16  ~/.vim/coc-settings.json
-|4,39,56,16,1715082539,"~/.vim/coc-settings.json"
--'  49  16  ~/.vim/coc-settings.json
-|4,39,49,16,1715082539,"~/.vim/coc-settings.json"
--'  56  16  ~/.vim/coc-settings.json
-|4,39,56,16,1715082539,"~/.vim/coc-settings.json"
--'  49  16  ~/.vim/coc-settings.json
-|4,39,49,16,1715082539,"~/.vim/coc-settings.json"
--'  56  16  ~/.vim/coc-settings.json
-|4,39,56,16,1715082539,"~/.vim/coc-settings.json"
--'  49  16  ~/.vim/coc-settings.json
-|4,39,49,16,1715082539,"~/.vim/coc-settings.json"
--'  56  16  ~/.vim/coc-settings.json
-|4,39,56,16,1715082539,"~/.vim/coc-settings.json"
--'  1  0  ~/.vim/coc-settings.json
-|4,39,1,0,1715082444,"~/.vim/coc-settings.json"
--'  1  0  ~/.vim/coc-settings.json
-|4,39,1,0,1715082444,"~/.vim/coc-settings.json"
--'  1  0  ~/.vim/coc-settings.json
-|4,39,1,0,1715082444,"~/.vim/coc-settings.json"
--'  1  0  ~/.vim/coc-settings.json
-|4,39,1,0,1715082444,"~/.vim/coc-settings.json"
--'  1  0  ~/.vim/coc-settings.json
-|4,39,1,0,1715082444,"~/.vim/coc-settings.json"
--'  1  0  ~/.vim/coc-settings.json
-|4,39,1,0,1715082444,"~/.vim/coc-settings.json"
--'  1  0  ~/.vim/coc-settings.json
-|4,39,1,0,1715082444,"~/.vim/coc-settings.json"
--'  26  2  ~/.config/functions.fish
-|4,39,26,2,1715082063,"~/.config/functions.fish"
--'  26  2  ~/.config/functions.fish
-|4,39,26,2,1715082063,"~/.config/functions.fish"
--'  51  55  ~/.config/functions.fish
-|4,39,51,55,1715041290,"~/.config/functions.fish"
--'  51  55  ~/.config/functions.fish
-|4,39,51,55,1715041290,"~/.config/functions.fish"
--'  51  55  ~/.config/functions.fish
-|4,39,51,55,1715041290,"~/.config/functions.fish"
--'  51  55  ~/.config/functions.fish
-|4,39,51,55,1715041290,"~/.config/functions.fish"
--'  51  55  ~/.config/functions.fish
-|4,39,51,55,1715041290,"~/.config/functions.fish"
--'  51  55  ~/.config/functions.fish
-|4,39,51,55,1715041290,"~/.config/functions.fish"
--'  51  55  ~/.config/functions.fish
-|4,39,51,55,1715041290,"~/.config/functions.fish"
--'  51  55  ~/.config/functions.fish
-|4,39,51,55,1715041290,"~/.config/functions.fish"
--'  51  55  ~/.config/functions.fish
-|4,39,51,55,1715041290,"~/.config/functions.fish"
--'  32  23  ~/.config/functions.fish
-|4,39,32,23,1715041285,"~/.config/functions.fish"
--'  32  23  ~/.config/functions.fish
-|4,39,32,23,1715041285,"~/.config/functions.fish"
--'  32  23  ~/.config/functions.fish
-|4,39,32,23,1715041285,"~/.config/functions.fish"
--'  32  23  ~/.config/functions.fish
-|4,39,32,23,1715041285,"~/.config/functions.fish"
--'  32  23  ~/.config/functions.fish
-|4,39,32,23,1715041285,"~/.config/functions.fish"
--'  32  23  ~/.config/functions.fish
-|4,39,32,23,1715041285,"~/.config/functions.fish"
--'  32  23  ~/.config/functions.fish
-|4,39,32,23,1715041285,"~/.config/functions.fish"
--'  32  23  ~/.config/functions.fish
-|4,39,32,23,1715041285,"~/.config/functions.fish"
--'  32  23  ~/.config/functions.fish
-|4,39,32,23,1715041285,"~/.config/functions.fish"
--'  21  27  ~/.config/functions.fish
-|4,39,21,27,1715041264,"~/.config/functions.fish"
--'  21  27  ~/.config/functions.fish
-|4,39,21,27,1715041264,"~/.config/functions.fish"
--'  21  27  ~/.config/functions.fish
-|4,39,21,27,1715041264,"~/.config/functions.fish"
--'  21  27  ~/.config/functions.fish
-|4,39,21,27,1715041264,"~/.config/functions.fish"
--'  21  27  ~/.config/functions.fish
-|4,39,21,27,1715041264,"~/.config/functions.fish"
--'  21  27  ~/.config/functions.fish
-|4,39,21,27,1715041264,"~/.config/functions.fish"
--'  21  27  ~/.config/functions.fish
-|4,39,21,27,1715041264,"~/.config/functions.fish"
--'  21  27  ~/.config/functions.fish
-|4,39,21,27,1715041264,"~/.config/functions.fish"
--'  21  27  ~/.config/functions.fish
-|4,39,21,27,1715041264,"~/.config/functions.fish"
--'  5  13  ~/.config/functions.fish
-|4,39,5,13,1715041248,"~/.config/functions.fish"
--'  4  45  ~/.config/functions.fish
-|4,39,4,45,1715041248,"~/.config/functions.fish"
--'  5  13  ~/.config/functions.fish
-|4,39,5,13,1715041248,"~/.config/functions.fish"
--'  4  45  ~/.config/functions.fish
-|4,39,4,45,1715041248,"~/.config/functions.fish"
--'  5  13  ~/.config/functions.fish
-|4,39,5,13,1715041248,"~/.config/functions.fish"
--'  4  45  ~/.config/functions.fish
-|4,39,4,45,1715041248,"~/.config/functions.fish"
--'  5  13  ~/.config/functions.fish
-|4,39,5,13,1715041248,"~/.config/functions.fish"
--'  4  45  ~/.config/functions.fish
-|4,39,4,45,1715041248,"~/.config/functions.fish"
--'  5  13  ~/.config/functions.fish
-|4,39,5,13,1715041248,"~/.config/functions.fish"
--'  4  45  ~/.config/functions.fish
-|4,39,4,45,1715041248,"~/.config/functions.fish"
--'  5  13  ~/.config/functions.fish
-|4,39,5,13,1715041248,"~/.config/functions.fish"
+-'  1  0  ~/downloads/autin-completions.fish
+|4,39,1,0,1715086489,"~/downloads/autin-completions.fish"
 
 # Buffer list:
-%~/downloads/autin-completions.fish	42	0
+%~/hateoas/hateoas-api.py	1	0
 
 # History of marks within files (newest to oldest):
+
+> ~/hateoas/hateoas-api.py
+	*	1715178782	0
+	"	1	0
+	.	108	0
+	+	41	27
+	+	41	108
+	+	41	0
+	+	41	83
+	+	41	0
+	+	41	77
+	+	41	0
+	+	41	88
+	+	41	0
+	+	1	0
+	+	1	58
+	+	1	37
+	+	1	38
+	+	1	4
+	+	1	13
+	+	1	4
+	+	41	124
+	+	41	26
+	+	41	30
+	+	41	0
+	+	41	30
+	+	41	31
+	+	41	0
+	+	41	47
+	+	33	0
+	+	34	0
+	+	34	4
+	+	34	0
+	+	33	49
+	+	33	36
+	+	33	0
+	+	32	86
+	+	10	0
+	+	9	16
+	+	10	0
+	+	9	8
+	+	10	42
+	+	10	0
+	+	1	0
+	+	31	98
+	+	33	82
+	+	41	59
+	+	12	0
+	+	10	21
+	+	10	2
+	+	10	37
+	+	10	4
+	+	10	14
+	+	12	28
+	+	10	37
+	+	41	33
+	+	41	54
+	+	41	0
+	+	41	47
+	+	41	24
+	+	41	101
+	+	41	31
+	+	41	24
+	+	41	0
+	+	41	103
+	+	10	31
+	+	10	66
+	+	41	77
+	+	41	0
+	+	243	0
+	+	232	0
+	+	200	0
+	+	201	28
+	+	217	0
+	+	218	28
+	+	230	0
+	+	217	0
+	+	217	74
+	+	230	55
+	+	230	24
+	+	217	0
+	+	230	0
+	+	224	0
+	+	205	0
+	+	203	0
+	+	215	0
+	+	216	0
+	+	203	0
+	+	204	0
+	+	202	0
+	+	206	118
+	+	220	33
+	+	229	21
+	+	222	0
+	+	224	0
+	+	223	0
+	+	200	23
+	+	18	0
+	+	10	0
+	+	48	0
+	+	11	0
+	+	108	0
+	+	107	5
+	+	108	39
+	+	108	0
+
+> ~/helix-test/helix.py
+	*	1715178765	0
+	"	10	0
+	.	10	0
+	+	4	5
+	+	2	12
+	+	4	32
+	+	6	5
+	+	4	4
+	+	4	0
+	+	7	0
+	+	4	4
+	+	6	10
+	+	7	10
+	+	4	3
+	+	6	9
+	+	7	9
+	+	4	4
+	+	6	10
+	+	7	10
+	+	4	1
+	+	6	7
+	+	7	7
+	+	4	2
+	+	6	8
+	+	7	8
+	+	4	3
+	+	6	9
+	+	7	9
+	+	7	0
+	+	8	0
+	+	9	0
+	+	10	0
+	+	11	0
+	+	14	0
+	+	11	5
+	+	12	0
+	+	13	6
+	+	10	0
+
+> ~/.config/atuin/config.toml
+	*	1715118673	0
+	"	39	0
 
 > ~/downloads/autin-completions.fish
 	*	1715086493	0
@@ -9350,111 +9511,6 @@ $
 > /home/.zshrc
 	*	1714637566	0
 	"	1	0
-
-> ~/hateoas/hateoas-api.py
-	*	1714636766	0
-	"	432	4
-	.	109	0
-	+	41	27
-	+	41	108
-	+	41	0
-	+	41	83
-	+	41	0
-	+	41	77
-	+	41	0
-	+	41	88
-	+	41	0
-	+	1	0
-	+	1	58
-	+	1	37
-	+	1	38
-	+	1	4
-	+	1	13
-	+	1	4
-	+	41	124
-	+	41	26
-	+	41	30
-	+	41	0
-	+	41	30
-	+	41	31
-	+	41	0
-	+	41	47
-	+	33	0
-	+	34	0
-	+	34	4
-	+	34	0
-	+	33	49
-	+	33	36
-	+	33	0
-	+	32	86
-	+	10	0
-	+	9	16
-	+	10	0
-	+	9	8
-	+	10	42
-	+	10	0
-	+	1	0
-	+	31	98
-	+	33	82
-	+	41	59
-	+	12	0
-	+	10	21
-	+	10	2
-	+	10	37
-	+	10	4
-	+	10	14
-	+	12	28
-	+	10	37
-	+	41	33
-	+	41	54
-	+	41	0
-	+	41	47
-	+	41	24
-	+	41	101
-	+	41	31
-	+	41	24
-	+	41	0
-	+	41	103
-	+	10	31
-	+	10	66
-	+	41	77
-	+	41	0
-	+	243	0
-	+	232	0
-	+	200	0
-	+	201	28
-	+	217	0
-	+	218	28
-	+	230	0
-	+	217	0
-	+	217	74
-	+	230	55
-	+	230	24
-	+	217	0
-	+	230	0
-	+	224	0
-	+	205	0
-	+	203	0
-	+	215	0
-	+	216	0
-	+	203	0
-	+	204	0
-	+	202	0
-	+	206	118
-	+	220	33
-	+	229	21
-	+	222	0
-	+	224	0
-	+	223	0
-	+	200	23
-	+	18	0
-	+	10	0
-	+	48	0
-	+	11	0
-	+	108	0
-	+	107	5
-	+	108	39
-	+	109	0
 
 > ~/.vim/plugged/coc.nvim/doc/coc.txt
 	*	1714633430	0
