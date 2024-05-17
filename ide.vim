@@ -140,7 +140,7 @@ augroup VimrcAle
     au VimEnter * call s:DefineCustomAleLinters()
 augroup END
 let g:ale_linters = { 
-            \ 'python' : [ 'pyflakes_refined', 'ruff' ],
+            \ 'python' : [ 'pyflakes_refined' ],
             \ 'javascript' : ['quick-lint-js'],
             \ 'php' : ["php"],
             \ 'vim': ['vint_refined' ],
@@ -149,7 +149,7 @@ let g:ale_linters = {
 
 let g:ale_fixers = {
             \ 'go' : [ 'gofmt', 'goimports' ],
-            \ 'python' : [ 'autoimport', 'ruff' ],
+            \ 'python' : [ 'autoimport' ],
             \ 'sql' : [ 'sqlfluff' ],
             \}
 
