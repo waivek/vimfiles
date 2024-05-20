@@ -34,10 +34,12 @@ function! s:Extend(c_name)
         if has("win32")
             so ~/vimfiles/colors/apprentice_extended.vim
         else
-            so ~/.vim/colors/apprentice_extended.vim
+            " so ~/.vim/colors/apprentice_extended.vim
         endif
     elseif a:c_name ==# "codedark"
-        hi IncSearch guibg=#682900
+        hi IncSearch guibg=#682900 ctermbg=52
+        " hi Search ctermfg=235 ctermbg=229 guibg=#444444
+        " hi Visual term=reverse cterm=reverse ctermfg=110 ctermbg=235 gui=reverse guifg=#8fafd7 guibg=#262626
     elseif a:c_name ==# 'strawberry-light'
         hi Visual guifg=white guibg=DarkRed
         hi StatusLine guifg=#fff0f7 guibg=#d46a84

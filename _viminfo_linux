@@ -11,25 +11,329 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/while
+~MSle0~/timer
 
 # Last Substitute Search Pattern:
-~MSle0&:
+~MSle0&vim\/colors\/tokyonight
 
 # Last Substitute String:
-$ 
+$
 
 # Command Line History (newest to oldest):
+:q
+|2,0,1716172755,,"q"
+:Copilot status
+|2,0,1716172139,,"Copilot status"
+:MRU viewlog
+|2,0,1716171896,,"MRU viewlog"
+:MRU py
+|2,0,1716171565,,"MRU py"
 :qa
-|2,0,1715953874,,"qa"
+|2,0,1716168085,,"qa"
+:e ~/.bashrc
+|2,0,1716168028,,"e ~/.bashrc"
+:e .bash
+|2,0,1716168025,,"e .bash"
+:MRU setup.sh
+|2,0,1716167996,,"MRU setup.sh"
+:MRU set
+|2,0,1716167987,,"MRU set"
+:cn
+|2,0,1716167968,,"cn"
+:grep -g '*' atuin
+|2,0,1716167963,,"grep -g '*' atuin"
+:e alias.sh
+|2,0,1716167958,,"e alias.sh"
+:grep -g '*.sh' atuin
+|2,0,1716167954,,"grep -g '*.sh' atuin"
+:MRU fish
+|2,0,1716167931,,"MRU fish"
+:w
+|2,0,1716161114,,"w"
+:set nonumber
+|2,0,1716159697,,"set nonumber"
+:MRU 
+|2,0,1716159039,,"MRU "
+:CocR
+|2,0,1716157763,,"CocR"
+:colo apprentice
+|2,0,1716157027,,"colo apprentice"
+:colo codedark
+|2,0,1716155158,,"colo codedark"
+:colo apprentice_extended
+|2,0,1716155088,,"colo apprentice_extended"
+:colo sorcerer
+|2,0,1716155072,,"colo sorcerer"
+:b /home/vivek/.vim/vimrc
+|2,0,1716154982,,"b /home/vivek/.vim/vimrc"
+:e
+|2,0,1716154949,,"e"
+:so %
+|2,0,1716154947,,"so %"
+:HotReload
+|2,0,1716154924,,"HotReload"
+:colo onedark
+|2,0,1716154921,,"colo onedark"
+:hi Visual
+|2,0,1716154903,,"hi Visual"
+:hi
+|2,0,1716154712,,"hi"
+:hi IncSearch
+|2,0,1716154689,,"hi IncSearch"
+:colo
+|2,0,1716154587,,"colo"
+:MRU color
+|2,0,1716154540,,"MRU color"
+:PlugInstall
+|2,0,1716154506,,"PlugInstall"
+:edit $MYVIMRC
+|2,0,1716154498,,"edit $MYVIMRC"
+:set guicursor
+|2,0,1716154232,,"set guicursor"
+:set printmbfont
+|2,0,1716154231,,"set printmbfont"
+:hi 
+|2,0,1716154228,,"hi "
+:bd!
+|2,0,1716154157,,"bd!"
+:438
+|2,0,1716154143,,"438"
+:g/vim\/colors\/tokyonight/d
+|2,0,1716154116,,"g/vim\\/colors\\/tokyonight/d"
+:g/\/share\/vim\/vim90\//d
+|2,0,1716154091,,"g/\\/share\\/vim\\/vim90\\//d"
+:g/\C\<plugged\>/d
+|2,0,1716154086,,"g/\\C\\<plugged\\>/d"
+:%s
+|2,0,1716154074,,"%s"
+:v/\.vim/d
+|2,0,1716154071,,"v/\\.vim/d"
+:redir END
+|2,0,1716154064,,"redir END"
+:verbose hi
+|2,0,1716154059,,"verbose hi"
+:redir @a
+|2,0,1716154051,,"redir @a"
+:redir @
+|2,0,1716154047,,"redir @"
+:redi
+|2,0,1716154044,,"redi"
+:enew
+|2,0,1716154043,,"enew"
+:e ~/.vim/plugin/colorscheme.vim
+|2,0,1716154000,,"e ~/.vim/plugin/colorscheme.vim"
+:filter color scriptnames
+|2,0,1716153984,,"filter color scriptnames"
+:filter vim scriptnames
+|2,0,1716153973,,"filter vim scriptnames"
+:sc
+|2,0,1716153961,,"sc"
+:colo tokyonight
+|2,0,1716153883,,"colo tokyonight"
+:colo torte
+|2,0,1716153525,,"colo torte"
+:e requirements.txt
+|2,0,1716112102,,"e requirements.txt"
+:MRU python.sh
+|2,0,1716111477,,"MRU python.sh"
+:e!
+|2,0,1716111221,,"e!"
+:MRU 89:python-direnv.bash
+|2,0,1716111213,,"MRU 89:python-direnv.bash"
+:MRU red
+|2,0,1716111013,,"MRU red"
+:MRU 4:download_worker.py
+|2,0,1716104326,,"MRU 4:download_worker.py"
+:MRU 3:hateoas/todo.txt
+|2,0,1716104228,,"MRU 3:hateoas/todo.txt"
+:MRU 1:syntax/todo.vim
+|2,0,1716104206,,"MRU 1:syntax/todo.vim"
+:e ../syntax/todo.vim
+|2,0,1716104201,,"e ../syntax/todo.vim"
+:MRU 3:todo.vim
+|2,0,1716104197,,"MRU 3:todo.vim"
+:Ftplugin
+|2,0,1716104189,,"Ftplugin"
+:Hot
+|2,0,1716103854,,"Hot"
+:echo getline(".")[0:12]
+|2,0,1716103797,,"echo getline(\".\")[0:12]"
+:echo getline(".")[0:1]
+|2,0,1716103794,,"echo getline(\".\")[0:1]"
+:echo getline(".")[0]
+|2,0,1716103792,,"echo getline(\".\")[0]"
+:e download_worker.py
+|2,0,1716103387,,"e download_worker.py"
+:e download_portionurl.py
+|2,0,1716103376,,"e download_portionurl.py"
+:pwd
+|2,0,1716103265,,"pwd"
+:e sample.md
+|2,0,1716103264,,"e sample.md"
+:e todo.md
+|2,0,1716103257,,"e todo.md"
+:MRU to
+|2,0,1716103226,,"MRU to"
+:e syntax/todo.vim
+|2,0,1716103211,,"e syntax/todo.vim"
+:e ~/.vim/filetype.vim
+|2,0,1716103187,,"e ~/.vim/filetype.vim"
+:filter filetype scriptnames
+|2,0,1716103176,,"filter filetype scriptnames"
+:filter scriptnames
+|2,0,1716103172,,"filter scriptnames"
+:scriptnames
+|2,0,1716103165,,"scriptnames"
+:scriptnames filter filetype
+|2,0,1716103161,,"scriptnames filter filetype"
+:h filetype
+|2,0,1716103144,,"h filetype"
+:h autoload/tcomment/filetype.vim
+|2,0,1716103143,,"h autoload/tcomment/filetype.vim"
+:h filetype.vim
+|2,0,1716103137,,"h filetype.vim"
+:e to
+|2,0,1716103131,,"e to"
+:e ~/.vim/ftplugin/todo.vim
+|2,0,1716103060,,"e ~/.vim/ftplugin/todo.vim"
+:set comments
+|2,0,1716102868,,"set comments"
+:set cms=#\ %s
+|2,0,1716102863,,"set cms=#\\ %s"
+:set cms=# %s
+|2,0,1716102858,,"set cms=# %s"
+:set cms?
+|2,0,1716102851,,"set cms?"
+:source
+|2,0,1716102624,,"source"
+:sourcefiles
+|2,0,1716102622,,"sourcefiles"
+:e todo.txt
+|2,0,1716102577,,"e todo.txt"
+:e 
+|2,0,1716101352,,"e "
+:imap <Tab>
+|2,0,1716101116,,"imap <Tab>"
+:map <Tab>
+|2,0,1716101104,,"map <Tab>"
+:Usage
+|2,0,1716100756,,"Usage"
+:Usages
+|2,0,1716100740,,"Usages"
+:MRU ide
+|2,0,1716100682,,"MRU ide"
+:call CocActionAsync('jumpUsed')
+|2,0,1716100678,,"call CocActionAsync('jumpUsed')"
+:q!
+|2,0,1716100460,,"q!"
+:e static/downloads/15.webm.part
+|2,0,1716100449,,"e static/downloads/15.webm.part"
+:e ~/sta
+|2,0,1716100442,,"e ~/sta"
+:h coc-nvim
+|2,0,1716100286,,"h coc-nvim"
+:call CocActionAsync('jumpReferences')
+|2,0,1716100282,,"call CocActionAsync('jumpReferences')"
+:copen
+|2,0,1716100263,,"copen"
+:e static/downloads/
+|2,0,1716099118,,"e static/downloads/"
+:cpre
+|2,0,1716098638,,"cpre"
+:CocRestart
+|2,0,1716098609,,"CocRestart"
+:C
+|2,0,1716098606,,"C"
+:CocConfig
+|2,0,1716098592,,"CocConfig"
+:lopen
+|2,0,1716098531,,"lopen"
+:open
+|2,0,1716098530,,"open"
+:CocList
+|2,0,1716098514,,"CocList"
+:CocList -I quickfix references
+|2,0,1716098504,,"CocList -I quickfix references"
+:CocList symbols
+|2,0,1716098442,,"CocList symbols"
+:CocList lists
+|2,0,1716098426,,"CocList lists"
+:CocList references
+|2,0,1716098410,,"CocList references"
+:CocL
+|2,0,1716098402,,"CocL"
+:call CocActionAsync('references')
+|2,0,1716098323,,"call CocActionAsync('references')"
+:echo CocAction('references')
+|2,0,1716098314,,"echo CocAction('references')"
+:call CocAction('references')
+|2,0,1716098274,,"call CocAction('references')"
+:call 
+|2,0,1716098237,,"call "
+:h digraph
+|2,0,1716098083,,"h digraph"
+:e main.sql
+|2,0,1716098046,,"e main.sql"
+:e download_workers.sql
+|2,0,1716097965,,"e download_workers.sql"
+:e download_table.py
+|2,0,1716097954,,"e download_table.py"
+:MRU 2:download_worker.py
+|2,0,1716093680,,"MRU 2:download_worker.py"
+:MRU 3:download_worker.py
+|2,0,1716093167,,"MRU 3:download_worker.py"
+:MRU h
+|2,0,1716093159,,"MRU h"
+:syntax off
+|2,0,1716091149,,"syntax off"
+:echo getline("$")
+|2,0,1716090658,,"echo getline(\"$\")"
+:echo line("$")
+|2,0,1716090641,,"echo line(\"$\")"
+:MRU run.vim
+|2,0,1716090610,,"MRU run.vim"
+:MRU 13:download_worker.py
+|2,0,1716089314,,"MRU 13:download_worker.py"
+: w ~/tmp/out-of-memory-error.txt
+|2,0,1716085251,," w ~/tmp/out-of-memory-error.txt"
+: w ~/tmp/cron-crash-pid.txt
+|2,0,1716085176,," w ~/tmp/cron-crash-pid.txt"
+:qa!
+|2,0,1716085117,,"qa!"
+:e download_worker-3.log
+|2,0,1716084804,,"e download_worker-3.log"
+:e download_worker-2.log
+|2,0,1716084801,,"e download_worker-2.log"
+:e download_worker-4.log
+|2,0,1716084795,,"e download_worker-4.log"
+:cd testfiles/
+|2,0,1716083239,,"cd testfiles/"
+:e l
+|2,0,1716083233,,"e l"
+:e static/downloads/6.mp4.part
+|2,0,1716083114,,"e static/downloads/6.mp4.part"
+:grep -g '*.py' part
+|2,0,1716039130,,"grep -g '*.py' part"
+:e portionurl_to_download_path.py
+|2,0,1716039014,,"e portionurl_to_download_path.py"
+:b download_table.py
+|2,0,1716035960,,"b download_table.py"
+:bd
+|2,0,1716035957,,"bd"
+:Rename outline-1.txt
+|2,0,1716035946,,"Rename outline-1.txt"
+:e outlin-1.txt
+|2,0,1716035936,,"e outlin-1.txt"
+:e download_queue.py
+|2,0,1716034965,,"e download_queue.py"
+:MRU hateo
+|2,0,1715992743,,"MRU hateo"
+:Jprevious
+|2,0,1715992083,,"Jprevious"
+:e pids
+|2,0,1715991672,,"e pids"
 :cfirst
 |2,0,1715953720,,"cfirst"
-:cn
-|2,0,1715953715,,"cn"
-:cpre
-|2,0,1715953705,,"cpre"
-:e download_worker.py
-|2,0,1715953405,,"e download_worker.py"
 :c
 |2,0,1715953375,,"c"
 :grep -g '*.py' SIGINT
@@ -40,26 +344,16 @@ $
 |2,0,1715953341,,"grep -g '*.py' while"
 :e test_task_worker.py
 |2,0,1715953314,,"e test_task_worker.py"
-:e main.sql
-|2,0,1715952912,,"e main.sql"
 :SQLJoin
 |2,0,1715952884,,"SQLJoin"
 :'<,'>SQLJoin
 |2,0,1715952882,,"'<,'>SQLJoin"
 :e safe_download_assigner.py
 |2,0,1715951007,,"e safe_download_assigner.py"
-:e download_workers.sql
-|2,0,1715949121,,"e download_workers.sql"
 :e refresh_downloads_table.py
 |2,0,1715948337,,"e refresh_downloads_table.py"
-:q
-|2,0,1715948306,,"q"
-:q!
-|2,0,1715948225,,"q!"
 :e hateoas-api.py
 |2,0,1715947236,,"e hateoas-api.py"
-:e requirements.txt
-|2,0,1715947234,,"e requirements.txt"
 ::echo keys(copilot#Agent().workspaceFolders)
 |2,0,1715898278,,":echo keys(copilot#Agent().workspaceFolders)"
 :echo b:workspace_folder
@@ -72,28 +366,14 @@ $
 |2,0,1715898174,,"h copilot"
 :echo g:WorkspaceFolders
 |2,0,1715898166,,"echo g:WorkspaceFolders"
-:e
-|2,0,1715898125,,"e"
-:w
-|2,0,1715896536,,"w"
 :grep -g '*.py' Lock
 |2,0,1715896294,,"grep -g '*.py' Lock"
 :grep -g '*.py' Lo
 |2,0,1715896291,,"grep -g '*.py' Lo"
-:colo codedark
-|2,0,1715895901,,"colo codedark"
 :colo nord
 |2,0,1715895893,,"colo nord"
 :colo mono
 |2,0,1715895890,,"colo mono"
-:colo
-|2,0,1715895886,,"colo"
-:colo apprentice_extended
-|2,0,1715895883,,"colo apprentice_extended"
-:colo apprentice
-|2,0,1715895877,,"colo apprentice"
-:MRU ide
-|2,0,1715895838,,"MRU ide"
 :ALEInfo
 |2,0,1715895831,,"ALEInfo"
 :ALEEnable
@@ -108,44 +388,26 @@ $
 |2,0,1715178770,,"MRU hate"
 :MRU Elem
 |2,0,1715178765,,"MRU Elem"
-:MRU 
-|2,0,1715178762,,"MRU "
 :set ft=text
 |2,0,1715178174,,"set ft=text"
-:bd
-|2,0,1715118675,,"bd"
-:CocConfig
-|2,0,1715082659,,"CocConfig"
 :CocInfo
 |2,0,1715082610,,"CocInfo"
 :MRU fis
 |2,0,1715082600,,"MRU fis"
 :e functions.fish
 |2,0,1715041224,,"e functions.fish"
-:e 
-|2,0,1715041222,,"e "
 :.%!functions down-or-search
 |2,0,1715040993,,".%!functions down-or-search"
 :MRU fu
 |2,0,1715040916,,"MRU fu"
-:MRU set
-|2,0,1715040708,,"MRU set"
-:set nonumber
-|2,0,1715038231,,"set nonumber"
 :h commandline
 |2,0,1715037938,,"h commandline"
-:Jprevious
-|2,0,1715037925,,"Jprevious"
-:bd!
-|2,0,1715037923,,"bd!"
 :%!man commandline
 |2,0,1715037836,,"%!man commandline"
 :vs new.man
 |2,0,1715037831,,"vs new.man"
 :vs new
 |2,0,1715037739,,"vs new"
-:enew
-|2,0,1715037734,,"enew"
 :%!
 |2,0,1715037733,,"%!"
 :vs
@@ -156,8 +418,6 @@ $
 |2,0,1715027114,,"e setup.fish"
 :echo "Hello, World!"
 |2,0,1715026856,,"echo \"Hello, World!\""
-:Ftplugin
-|2,0,1715018413,,"Ftplugin"
 :%!man complete
 |2,0,1714990525,,"%!man complete"
 :later 20m
@@ -182,12 +442,6 @@ $
 |2,0,1714990121,,"man Command"
 :Man commandline
 |2,0,1714990116,,"Man commandline"
-:PlugInstall
-|2,0,1714990090,,"PlugInstall"
-:so %
-|2,0,1714990088,,"so %"
-:edit $MYVIMRC
-|2,0,1714990080,,"edit $MYVIMRC"
 :man
 |2,0,1714990017,,"man"
 :echo 
@@ -196,20 +450,12 @@ $
 |2,0,1714989560,,"term"
 :q 
 |2,0,1714989157,,"q "
-:e alias.sh
-|2,0,1714988606,,"e alias.sh"
-:pwd
-|2,0,1714988604,,"pwd"
-:MRU fish
-|2,0,1714944478,,"MRU fish"
 :set ft=bash
 |2,0,1714944406,,"set ft=bash"
 :e bindings.inputrc
 |2,0,1714944397,,"e bindings.inputrc"
 :e ~/.config/setup.sh
 |2,0,1714944037,,"e ~/.config/setup.sh"
-:e!
-|2,0,1714799869,,"e!"
 :Copilot panel
 |2,0,1714759492,,"Copilot panel"
 :set number
@@ -234,12 +480,6 @@ $
 |2,0,1714637571,,"75"
 :ll
 |2,0,1714636732,,"ll"
-:lopen
-|2,0,1714636696,,"lopen"
-:CocRestart
-|2,0,1714633424,,"CocRestart"
-:b /home/vivek/.vim/vimrc
-|2,0,1714633418,,"b /home/vivek/.vim/vimrc"
 :echo g:coc_service_initialized
 |2,0,1714633391,,"echo g:coc_service_initialized"
 :h g:coc_status
@@ -248,14 +488,10 @@ $
 |2,0,1714633350,,"echo g:coc_status"
 :echo CocAction('services')
 |2,0,1714633323,,"echo CocAction('services')"
-:MRU py
-|2,0,1714633312,,"MRU py"
 :echo CocActionAsync('services')
 |2,0,1714633292,,"echo CocActionAsync('services')"
 :call CocActionAsync('services')
 |2,0,1714633289,,"call CocActionAsync('services')"
-:h coc-nvim
-|2,0,1714633250,,"h coc-nvim"
 :echo coc#float#get_height(
 |2,0,1714633249,,"echo coc#float#get_height("
 :echo coc#status()
@@ -270,8 +506,6 @@ $
 |2,0,1714633190,,"echo"
 :CocCommand workspace.showOutput
 |2,0,1714631543,,"CocCommand workspace.showOutput"
-:CocList
-|2,0,1714631450,,"CocList"
 :echo g:coc_workspace_initialized
 |2,0,1714631318,,"echo g:coc_workspace_initialized"
 :h coc
@@ -308,8 +542,6 @@ $
 |2,0,1714630376,,"h :pwd"
 :echo cd
 |2,0,1714630371,,"echo cd"
-:MRU hateo
-|2,0,1714630354,,"MRU hateo"
 :h pwd
 |2,0,1714630011,,"h pwd"
 :MRU 15:my-programming-language.txt
@@ -322,8 +554,6 @@ $
 |2,0,1714595213,,"MRU ba"
 :MRU bind
 |2,0,1714595203,,"MRU bind"
-:MRU to
-|2,0,1714594571,,"MRU to"
 :e .
 |2,0,1714594001,,"e ."
 :e ../
@@ -346,14 +576,10 @@ $
 |2,0,1714567744,,"e pyproject.toml"
 :lnext
 |2,0,1714567663,,"lnext"
-:copen
-|2,0,1714567624,,"copen"
 :k
 |2,0,1714567622,,"k"
 :let 
 |2,0,1714567533,,"let "
-:qa!
-|2,0,1714567383,,"qa!"
 :diffthis
 |2,0,1714567323,,"diffthis"
 :MRU 2:pyproject.toml
@@ -436,12 +662,8 @@ $
 |2,0,1714413435,,"e ~/tmp/*.lock"
 :e ~/
 |2,0,1714413420,,"e ~/"
-:e download_portionurl.py
-|2,0,1714387401,,"e download_portionurl.py"
 :VD data/download_workers.db
 |2,0,1714386317,,"VD data/download_workers.db"
-:e portionurl_to_download_path.py
-|2,0,1714383523,,"e portionurl_to_download_path.py"
 :e error.py
 |2,0,1714381590,,"e error.py"
 :ALEFIx
@@ -548,8 +770,6 @@ $
 |2,0,1714109003,,"g/,\\s*\\zs\\(FOREIGN\\|UNIQUE\\)/\\r\\0"
 :g/
 |2,0,1714108945,,"g/"
-:HotReload
-|2,0,1714108886,,"HotReload"
 :s
 |2,0,1714108884,,"s"
 :MRU sqljoi
@@ -712,8 +932,6 @@ $
 |2,0,1713932902,,"sqlite3 "
 :Vd
 |2,0,1713932879,,"Vd"
-:imap <Tab>
-|2,0,1713931350,,"imap <Tab>"
 :Man
 |2,0,1713929725,,"Man"
 :Tags
@@ -774,8 +992,6 @@ $
 |2,0,1713929338,,"verbomse command Commands"
 :Commands
 |2,0,1713929250,,"Commands"
-:C
-|2,0,1713929244,,"C"
 :MRU vue
 |2,0,1713929220,,"MRU vue"
 :MRU html
@@ -804,8 +1020,6 @@ $
 |2,0,1713928483,,"e coc-api.txt"
 :CocList outline
 |2,0,1713928462,,"CocList outline"
-:CocList symbols
-|2,0,1713928453,,"CocList symbols"
 :call CocActionAsync('list-symbols')
 |2,0,1713928436,,"call CocActionAsync('list-symbols')"
 :call CocActionAsync('list-symbols'0
@@ -866,8 +1080,6 @@ $
 |2,0,1713876731,,"h vim-plug"
 :h plugged
 |2,0,1713876729,,"h plugged"
-:MRU h
-|2,0,1713876717,,"MRU h"
 :MRU star
 |2,0,1713852850,,"MRU star"
 :VD data//main.db
@@ -978,8 +1190,6 @@ $
 |2,0,1713772826,,"MRU todo"
 :MRU 1:.bashrc
 |2,0,1713772544,,"MRU 1:.bashrc"
-:e ~/.bashrc
-|2,0,1713772512,,"e ~/.bashrc"
 :REname
 |2,0,1713769444,,"REname"
 :Rename python-direnv.bash
@@ -1146,8 +1356,6 @@ $
 |2,0,1713607171,,"vert term ./%"
 :vert term source %
 |2,0,1713607165,,"vert term source %"
-:Copilot status
-|2,0,1713607079,,"Copilot status"
 :!start %
 |2,0,1713607055,,"!start %"
 :map <space`
@@ -1308,8 +1516,6 @@ $
 |2,0,1713512222,,"%s/row/rows/g"
 :echo expand("%:p")
 |2,0,1713510971,,"echo expand(\"%:p\")"
-:h digraph
-|2,0,1713507440,,"h digraph"
 :s/-/—/g
 |2,0,1713507411,,"s/-/—/g"
 :s/\./-/g
@@ -2358,8 +2564,6 @@ $
 |2,0,1709848563,,"e Clip.vue"
 :call CocActionAsync("quickfixes")
 |2,0,1709848358,,"call CocActionAsync(\"quickfixes\")"
-:call 
-|2,0,1709848325,,"call "
 :call CocActionAsync("codeAction")
 |2,0,1709848312,,"call CocActionAsync(\"codeAction\")"
 :grep -g '*.vue' initial_start
@@ -2866,8 +3070,6 @@ $
 |2,0,1694107588,,"runtime! syntax/vue.vim syntax/vue/*.vim"
 :syntax on
 |2,0,1694107534,,"syntax on"
-:syntax off
-|2,0,1694107525,,"syntax off"
 :syntax o
 |2,0,1694107522,,"syntax o"
 :MRU vu
@@ -3702,10 +3904,6 @@ $
 |2,0,1693160542,,"MRU set*fis"
 :MRU bashr
 |2,0,1693160510,,"MRU bashr"
-:MRU setup.sh
-|2,0,1693160503,,"MRU setup.sh"
-:set cms?
-|2,0,1693160497,,"set cms?"
 :h ale-fish-options
 |2,0,1693131896,,"h ale-fish-options"
 :h fish
@@ -4316,8 +4514,6 @@ $
 |2,0,1692375774,,"map <Space>;"
 :Run
 |2,0,1692375765,,"Run"
-:MRU run.vim
-|2,0,1692375756,,"MRU run.vim"
 :e ~/.vim/plugin/run.vim
 |2,0,1692375695,,"e ~/.vim/plugin/run.vim"
 ::w
@@ -4566,8 +4762,6 @@ $
 |2,0,1691903891,,"e server/tsconfig.json"
 :b ~/tsnuxt/pages/index.vue
 |2,0,1691903887,,"b ~/tsnuxt/pages/index.vue"
-:e to
-|2,0,1691903652,,"e to"
 :e d
 |2,0,1691903582,,"e d"
 :e .nuxt/tsconfig.json
@@ -4838,8 +5032,6 @@ $
 |2,0,1691400238,,"hi | filter /ALE/"
 :hi | filter ALE
 |2,0,1691400231,,"hi | filter ALE"
-:hi 
-|2,0,1691400212,,"hi "
 :so /usr/share/vim/vim90/syntax/hitest.vim
 |2,0,1691400194,,"so /usr/share/vim/vim90/syntax/hitest.vim"
 :hi! link Error Normal
@@ -5126,8 +5318,6 @@ $
 |2,0,1690674913,,"e ~/.vim/plugin/dotty.vim"
 :MRU dott
 |2,0,1690674908,,"MRU dott"
-:CocList lists
-|2,0,1690671238,,"CocList lists"
 :CocList links
 |2,0,1690671233,,"CocList links"
 :CocList commands
@@ -5692,8 +5882,6 @@ $
 |2,0,1688309363,,"%sort /.*\\//"
 :%sort /.*\/
 |2,0,1688309358,,"%sort /.*\\/"
-:%s
-|2,0,1688309331,,"%s"
 :MRU 2:.gitignore
 |2,0,1688309220,,"MRU 2:.gitignore"
 :MRU 18:.gitconfig
@@ -5908,6 +6096,140 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+? timer\..*\"basename\"
+|2,1,1716172350,,"timer\\..*\\\"basename\\\""
+?/timer
+|2,1,1716172349,47,"timer"
+?/alias
+|2,1,1716168078,47,"alias"
+?/atuin
+|2,1,1716168031,47,"atuin"
+?/\(def\|class\)\s\+\w*fish
+|2,1,1716167104,47,"\\(def\\|class\\)\\s\\+\\w*fish"
+?/comple
+|2,1,1716161029,47,"comple"
+?/string
+|2,1,1716157911,47,"string"
+?/files
+|2,1,1716154896,47,"files"
+?/if
+|2,1,1716154893,47,"if"
+?/im
+|2,1,1716154859,47,"im"
+?/pat
+|2,1,1716154757,47,"pat"
+?/impo
+|2,1,1716154678,47,"impo"
+?/file
+|2,1,1716154657,47,"file"
+?/dire
+|2,1,1716154624,47,"dire"
+?/v
+|2,1,1716154567,47,"v"
+?/codedar
+|2,1,1716154418,47,"codedar"
+? vim\/colors\/tokyonight
+|2,1,1716154116,,"vim\\/colors\\/tokyonight"
+?/last
+|2,1,1716154108,47,"last"
+? \/share\/vim\/vim90\/
+|2,1,1716154091,,"\\/share\\/vim\\/vim90\\/"
+? \C\<plugged\>
+|2,1,1716154086,,"\\C\\<plugged\\>"
+? \.vim
+|2,1,1716154071,,"\\.vim"
+??scriptnames
+|2,1,1716153964,63,"scriptnames"
+?/pi
+|2,1,1716112139,47,"pi"
+?/gitignore
+|2,1,1716111479,47,"gitignore"
+?/2\.mp4
+|2,1,1716111178,47,"2\\.mp4"
+??Downloading
+|2,1,1716111165,63,"Downloading"
+?/sleep
+|2,1,1716111069,47,"sleep"
+?/another instance
+|2,1,1716103392,47,"another instance"
+?/filetype\.vim
+|2,1,1716103149,47,"filetype\\.vim"
+?  Silence "another instance running"
+|2,1,1716102624,," Silence \"another instance running\""
+?/print(
+|2,1,1716102545,47,"print("
+?/jumpRefer
+|2,1,1716100290,47,"jumpRefer"
+? @$
+|2,1,1716099124,,"@$"
+?/location
+|2,1,1716098559,47,"location"
+?/quickfix
+|2,1,1716098540,47,"quickfix"
+?/loc
+|2,1,1716098538,47,"loc"
+?/\<referen
+|2,1,1716098258,47,"\\<referen"
+?/referenc
+|2,1,1716098250,47,"referenc"
+?/refrenc
+|2,1,1716098246,47,"refrenc"
+?/usage
+|2,1,1716098241,47,"usage"
+?/check
+|2,1,1716098088,47,"check"
+?/filter
+|2,1,1716097941,47,"filter"
+?/SELE
+|2,1,1716097937,47,"SELE"
+?/Cleaning up
+|2,1,1716092566,47,"Cleaning up"
+?/red
+|2,1,1716092296,47,"red"
+?/\(def\|class\)\s\+\w*stale
+|2,1,1716091489,47,"\\(def\\|class\\)\\s\\+\\w*stale"
+?/sys\.argv
+|2,1,1716091459,47,"sys\\.argv"
+?/PID=
+|2,1,1716091383,47,"PID="
+?/Acquired
+|2,1,1716091152,47,"Acquired"
+?/PID
+|2,1,1716091133,47,"PID"
+?/\(def\|class\)\s\+\w*global
+|2,1,1716090885,47,"\\(def\\|class\\)\\s\\+\\w*global"
+?/BEGIN
+|2,1,1716089317,47,"BEGIN"
+?/oom
+|2,1,1716085259,47,"oom"
+?/4553
+|2,1,1716085154,47,"4553"
+?/3376
+|2,1,1716085148,47,"3376"
+?/error
+|2,1,1716085016,47,"error"
+?/mod
+|2,1,1716082763,47,"mod"
+?/log
+|2,1,1716082180,47,"log"
+?/message
+|2,1,1716081843,47,"message"
+?/loop_forever
+|2,1,1716065997,47,"loop_forever"
+?/import
+|2,1,1716065211,47,"import"
+?/portionurl
+|2,1,1716039921,47,"portionurl"
+?/mp4
+|2,1,1715994470,47,"mp4"
+?/\(def\|class\)\s\+\w*portionurl
+|2,1,1715992766,47,"\\(def\\|class\\)\\s\\+\\w*portionurl"
+?/\(def\|class\)\s\+\w*create
+|2,1,1715992751,47,"\\(def\\|class\\)\\s\\+\\w*create"
+?/\(def\|class\)\s\+\w*add
+|2,1,1715992745,47,"\\(def\\|class\\)\\s\\+\\w*add"
+?/name=
+|2,1,1715991704,47,"name="
 ?/while
 |2,1,1715953713,47,"while"
 ?/worker_id
@@ -5966,8 +6288,6 @@ $
 |2,1,1714943651,47,"space"
 ?/\t
 |2,1,1714800049,47,"\\t"
-? @$
-|2,1,1714759372,,"@$"
 ?/ready
 |2,1,1714633252,47,"ready"
 ?/directory
@@ -6082,8 +6402,6 @@ $
 |2,1,1714053799,47,"ic("
 ?/main\.sql
 |2,1,1714047354,47,"main\\.sql"
-?/portionurl
-|2,1,1714046857,47,"portionurl"
 ?/duration = 
 |2,1,1714042140,47,"duration = "
 ?/update
@@ -6134,8 +6452,6 @@ $
 |2,1,1714026372,47,"ale_"
 ?/poirtio
 |2,1,1714025714,47,"poirtio"
-?/\(def\|class\)\s\+\w*portionurl
-|2,1,1714025681,47,"\\(def\\|class\\)\\s\\+\\w*portionurl"
 ?/op
 |2,1,1714025674,47,"op"
 ?/\(def\|class\)\s\+\w*portoinurl
@@ -6252,12 +6568,8 @@ $
 |2,1,1713756142,47,"histfie"
 ?/hist
 |2,1,1713754955,47,"hist"
-?/file
-|2,1,1713754788,47,"file"
 ?/bash_
 |2,1,1713754778,47,"bash_"
-?/location
-|2,1,1713754775,47,"location"
 ?/PHP
 |2,1,1713749490,47,"PHP"
 ?/purple
@@ -6398,8 +6710,6 @@ $
 |2,1,1713276616,47,"cwd"
 ?/python
 |2,1,1713276596,47,"python"
-?/alias
-|2,1,1712960117,47,"alias"
 ?/undetec
 |2,1,1712793130,47,"undetec"
 ?/coc.*action
@@ -6520,8 +6830,6 @@ $
 |2,1,1712090138,47,"\\(def\\|class\\)\\s\\+\\w*update"
 ?/fake_task_
 |2,1,1712089304,47,"fake_task_"
-?/message
-|2,1,1712089233,47,"message"
 ?/ta
 |2,1,1712089003,47,"ta"
 ?/SELECT pro
@@ -6630,8 +6938,6 @@ $
 |2,1,1711983454,47,"delete"
 ?/Form En
 |2,1,1711983320,47,"Form En"
-?/red
-|2,1,1711979954,47,"red"
 ?/Session Error
 |2,1,1711971309,47,"Session Error"
 ?/\(def\|class\)\s\+\w*flash(
@@ -6652,8 +6958,6 @@ $
 |2,1,1711927998,47,"@app\\.route('\\/[^')]*\\<portions\""
 ?/\/edit
 |2,1,1711927796,47,"\\/edit"
-?/check
-|2,1,1711926191,47,"check"
 ?/@app\.route('\/[^')]*\<videos
 |2,1,1711917015,47,"@app\\.route('\\/[^')]*\\<videos"
 ?/pass
@@ -6862,8 +7166,6 @@ $
 |2,1,1709957418,47,"getCurrentTime"
 ?/type
 |2,1,1709956922,47,"type"
-?/log
-|2,1,1709956823,47,"log"
 ?/second`
 |2,1,1709956800,47,"second`"
 ? second_embed
@@ -7016,8 +7318,6 @@ $
 |2,1,1705924597,47,"player\\."
 ?/player.
 |2,1,1705924555,47,"player."
-?/import
-|2,1,1705924208,47,"import"
 ?/this\.
 |2,1,1705922865,47,"this\\."
 ?/lime
@@ -7104,8 +7404,6 @@ $
 |2,1,1694097012,47,"^\\s*function!\\?\\s\\+\\(s:\\)\\?\\(\\w\\+#\\)\\?\\w*mru"
 ?/^\s*function!\?\s\+\(s:\)\?\(\w\+#\)\?\w*UI2
 |2,1,1694096288,47,"^\\s*function!\\?\\s\\+\\(s:\\)\\?\\(\\w\\+#\\)\\?\\w*UI2"
-?/if
-|2,1,1694096250,47,"if"
 ?/^[a-z_]*wild
 |2,1,1694096081,47,"^[a-z_]*wild"
 ?/^\s*function!\?\s\+\(s:\)\?\(\w\+#\)\?\w*GuiIf
@@ -7174,8 +7472,6 @@ $
 |2,1,1693566603,47,"progress"
 ?/chat_downlo
 |2,1,1693566552,47,"chat_downlo"
-?/\(def\|class\)\s\+\w*create
-|2,1,1693554220,47,"\\(def\\|class\\)\\s\\+\\w*create"
 ?/\.start
 |2,1,1693520735,47,"\\.start"
 ?/import chat
@@ -7920,8 +8216,6 @@ $
 |2,1,1690671119,47,"list"
 ?/diagnostic
 |2,1,1690671116,47,"diagnostic"
-?/quickfix
-|2,1,1690671033,47,"quickfix"
 ?/actions
 |2,1,1690596898,47,"actions"
 ?/sid
@@ -7954,8 +8248,6 @@ $
 |2,1,1689178507,47,"imoprt"
 ?/do_long
 |2,1,1689175082,47,"do_long"
-?/sleep
-|2,1,1689171930,47,"sleep"
 ?/\(def\|class\)\s\+\w*time
 |2,1,1689171460,47,"\\(def\\|class\\)\\s\\+\\w*time"
 ?/\(def\|class\)\s\+\w*hh
@@ -7996,8 +8288,6 @@ $
 |2,1,1688967792,47,"current_"
 ?/sys
 |2,1,1688967735,47,"sys"
-?/print(
-|2,1,1688938023,47,"print("
 ? timer\..*\"parse\"
 |2,1,1688934616,,"timer\\..*\\\"parse\\\""
 ? timer\..*\"import Frame\"
@@ -8130,8 +8420,6 @@ $
 |2,1,1688309676,47,"v:null"
 ?/.*\/
 |2,1,1688309350,47,".*\\/"
-?/gitignore
-|2,1,1688309306,47,"gitignore"
 ?/gitignor
 |2,1,1688309289,47,"gitignor"
 ?/^\s*function!\?\s\+\(s:\)\?\(\w\+#\)\?\w*Until
@@ -8152,12 +8440,8 @@ $
 |2,1,1685560969,47,"--ignore"
 ?/time
 |2,1,1685555128,47,"time"
-?/mod
-|2,1,1685537842,47,"mod"
 ?/hello
 |2,1,1685531031,47,"hello"
-?/comple
-|2,1,1685449182,47,"comple"
 ?/z\.1
 |2,1,1685447380,47,"z\\.1"
 ?/_z --add
@@ -8326,44 +8610,43 @@ $
 |2,4,1693311567,,"cont"
 
 # Registers:
-"0	CHAR	0
-	PID
-|3,0,0,0,1,0,1715953656,"PID"
+"0	LINE	0
+	from waivek import Timer
+	timer = Timer()
+|3,0,0,1,2,0,1716172350,"from waivek import Timer","timer = Timer()"
 ""1	LINE	0
-	
-|3,1,1,1,1,0,1715953785,""
+	    timer.print("basename")
+|3,1,1,1,1,0,1716172350,"    timer.print(\"basename\")"
 "2	LINE	0
-	    original_file_hash = get_self_hash()
-|3,0,2,1,1,0,1715953781,"    original_file_hash = get_self_hash()"
+	    timer.start("basename")
+|3,0,2,1,1,0,1716172350,"    timer.start(\"basename\")"
 "3	LINE	0
-	    allow_loop = True
-|3,0,3,1,1,0,1715953772,"    allow_loop = True"
+	from waivek import Timer
+	timer = Timer()
+|3,0,3,1,2,0,1716172347,"from waivek import Timer","timer = Timer()"
 "4	LINE	0
-	
-|3,0,4,1,1,0,1715953668,""
+	    elif args.h:
+	        print()
+	        parser.print_help()
+|3,0,4,1,3,0,1716171975,"    elif args.h:","        print()","        parser.print_help()"
 "5	LINE	0
 	
-|3,0,5,1,1,0,1715953665,""
+|3,0,5,1,1,0,1716171570,""
 "6	LINE	0
-	ic(PID)
-|3,0,6,1,1,0,1715953664,"ic(PID)"
+	eval "$(atuin init bash)"
+|3,0,6,1,1,0,1716168037,"eval \"$(atuin init bash)\""
 "7	LINE	0
-	PID = os.getpid()
-|3,0,7,1,1,0,1715953662,"PID = os.getpid()"
-"8	LINE	0
-	def cleanup(signum: int, frame: FrameType | None):
-	    global connection
-	    connection.close()
-	    sys.exit(0)
 	
-|3,0,8,1,5,0,1715953458,"def cleanup(signum: int, frame: FrameType | None):","    global connection","    connection.close()","    sys.exit(0)",""
+|3,0,7,1,1,0,1716167991,""
+"8	LINE	0
+	
+|3,0,8,1,1,0,1716167990,""
 "9	LINE	0
-	    signal.signal(signal.SIGINT, cleanup)
-	    signal.signal(signal.SIGTERM, cleanup)
-|3,0,9,1,2,0,1715953453,"    signal.signal(signal.SIGINT, cleanup)","    signal.signal(signal.SIGTERM, cleanup)"
+	    # --completion [bash|fish]
+|3,0,9,1,1,0,1716167546,"    # --completion [bash|fish]"
 "a	CHAR	0
-	Tabularize /-/l1c1l1c1l1
-|3,0,10,0,1,0,1714384337,"Tabularize /-/l1c1l1c1l1"
+	0f ,,dw
+|3,0,10,0,1,0,1716159480,"0f ,,dw"
 "j	CHAR	0
 	k
 |3,0,19,0,1,0,1714426578,"k"
@@ -8399,600 +8682,1780 @@ $
 |<"                <form method=\"POST\" action=\"/resume_download\">","                    <input type=\"hidden\" name=\"id\" value=\"{{ id }}\">","                    <input type=\"submit\" value=\"Resume\">","                </form>","                {% endif %}","                {% if status == 'downloading' %}","                <form method=\"POST\" action=\"/pause_download\">","                    <input type=\"hidden\" name=\"id\" value=\"{{ id }}\">",>61
 |<"                    <input type=\"submit\" value=\"Pause\">","                </form>","                {% endif %}","","            </li>","        {% endfor %}","    </ul>\"\"\", downloads=downloads)"
 "-	CHAR	0
-	 
-|3,0,36,0,1,0,1715953660," "
+	basenames
+|3,0,36,0,1,0,1716172295,"basenames"
 
 # File marks:
-'0  50  0  ~/hateoas/download_worker.py
-|4,48,50,0,1715953874,"~/hateoas/download_worker.py"
-'1  10  0  ~/hateoas/dbutils.py
-|4,49,10,0,1715899356,"~/hateoas/dbutils.py"
-'2  10  0  ~/hateoas/dbutils.py
-|4,50,10,0,1715899356,"~/hateoas/dbutils.py"
-'3  1  0  ~/hateoas/safe_download_assigner.py
-|4,51,1,0,1715896367,"~/hateoas/safe_download_assigner.py"
-'4  1  0  ~/hateoas/safe_download_assigner.py
-|4,52,1,0,1715896367,"~/hateoas/safe_download_assigner.py"
-'5  1  0  ~/hateoas/safe_download_assigner.py
-|4,53,1,0,1715896367,"~/hateoas/safe_download_assigner.py"
-'6  1  0  ~/hateoas/safe_download_assigner.py
-|4,54,1,0,1715896367,"~/hateoas/safe_download_assigner.py"
-'7  152  41  ~/.vim/ide.vim
-|4,55,152,41,1715895850,"~/.vim/ide.vim"
-'8  152  41  ~/.vim/ide.vim
-|4,56,152,41,1715895850,"~/.vim/ide.vim"
-'9  152  41  ~/.vim/ide.vim
-|4,57,152,41,1715895850,"~/.vim/ide.vim"
+'0  1  0  ~/trace_output.log
+|4,48,1,0,1716172756,"~/trace_output.log"
+'1  73  29  ~/.config/functions.fish
+|4,49,73,29,1716172490,"~/.config/functions.fish"
+'2  73  29  ~/.config/functions.fish
+|4,50,73,29,1716172490,"~/.config/functions.fish"
+'3  106  4  ~/pyscripts/viewlog.py
+|4,51,106,4,1716172351,"~/pyscripts/viewlog.py"
+'4  106  4  ~/pyscripts/viewlog.py
+|4,52,106,4,1716172351,"~/pyscripts/viewlog.py"
+'5  106  4  ~/pyscripts/viewlog.py
+|4,53,106,4,1716172351,"~/pyscripts/viewlog.py"
+'6  106  4  ~/pyscripts/viewlog.py
+|4,54,106,4,1716172351,"~/pyscripts/viewlog.py"
+'7  5  0  ~/pyscripts/viewlog.py
+|4,55,5,0,1716172329,"~/pyscripts/viewlog.py"
+'8  6  0  ~/pyscripts/viewlog.py
+|4,56,6,0,1716172329,"~/pyscripts/viewlog.py"
+'9  5  0  ~/pyscripts/viewlog.py
+|4,57,5,0,1716172329,"~/pyscripts/viewlog.py"
 
 # Jumplist (newest first):
--'  50  0  ~/hateoas/download_worker.py
-|4,39,50,0,1715953874,"~/hateoas/download_worker.py"
--'  37  8  ~/hateoas/test_task_worker.py
-|4,39,37,8,1715953732,"~/hateoas/test_task_worker.py"
--'  48  4  ~/hateoas/download_worker.py
-|4,39,48,4,1715953731,"~/hateoas/download_worker.py"
--'  61  4  ~/hateoas/download_worker.py
-|4,39,61,4,1715953720,"~/hateoas/download_worker.py"
--'  81  9  ~/hateoas/download_worker.py
-|4,39,81,9,1715953716,"~/hateoas/download_worker.py"
--'  81  4  ~/hateoas/download_portionurl.py
-|4,39,81,4,1715953715,"~/hateoas/download_portionurl.py"
--'  152  0  ~/hateoas/refresh_downloads_table.py
-|4,39,152,0,1715953708,"~/hateoas/refresh_downloads_table.py"
--'  75  25  ~/hateoas/download_portionurl.py
-|4,39,75,25,1715953705,"~/hateoas/download_portionurl.py"
--'  25  8  ~/hateoas/refresh_downloads_table.py
-|4,39,25,8,1715953703,"~/hateoas/refresh_downloads_table.py"
--'  74  9  ~/hateoas/download_worker.py
-|4,39,74,9,1715953685,"~/hateoas/download_worker.py"
--'  17  92  ~/hateoas/download_worker.py
-|4,39,17,92,1715953661,"~/hateoas/download_worker.py"
--'  85  0  ~/hateoas/download_worker.py
-|4,39,85,0,1715953649,"~/hateoas/download_worker.py"
--'  54  0  ~/hateoas/download_worker.py
-|4,39,54,0,1715953586,"~/hateoas/download_worker.py"
--'  53  23  ~/hateoas/download_worker.py
-|4,39,53,23,1715953583,"~/hateoas/download_worker.py"
--'  65  0  ~/hateoas/download_worker.py
-|4,39,65,0,1715953548,"~/hateoas/download_worker.py"
--'  70  0  ~/hateoas/download_worker.py
-|4,39,70,0,1715953548,"~/hateoas/download_worker.py"
--'  72  4  ~/hateoas/download_worker.py
-|4,39,72,4,1715953466,"~/hateoas/download_worker.py"
--'  58  33  ~/hateoas/download_worker.py
-|4,39,58,33,1715953456,"~/hateoas/download_worker.py"
--'  45  9  ~/hateoas/download_worker.py
-|4,39,45,9,1715953440,"~/hateoas/download_worker.py"
--'  76  0  ~/hateoas/download_worker.py
-|4,39,76,0,1715953411,"~/hateoas/download_worker.py"
--'  140  10  ~/hateoas/refresh_downloads_table.py
-|4,39,140,10,1715953405,"~/hateoas/refresh_downloads_table.py"
--'  46  21  ~/hateoas/test_task_worker.py
-|4,39,46,21,1715953376,"~/hateoas/test_task_worker.py"
--'  83  0  ~/hateoas/download_worker.py
-|4,39,83,0,1715953372,"~/hateoas/download_worker.py"
--'  1  0  ~/hateoas/populate_test_tasks.py
-|4,39,1,0,1715953366,"~/hateoas/populate_test_tasks.py"
--'  44  0  ~/hateoas/download_worker.py
-|4,39,44,0,1715953362,"~/hateoas/download_worker.py"
--'  50  0  ~/hateoas/test_task_worker.py
-|4,39,50,0,1715953332,"~/hateoas/test_task_worker.py"
--'  41  0  ~/hateoas/download_worker.py
-|4,39,41,0,1715953314,"~/hateoas/download_worker.py"
--'  20  11  ~/hateoas/download_worker.py
-|4,39,20,11,1715953287,"~/hateoas/download_worker.py"
--'  71  0  ~/hateoas/download_worker.py
-|4,39,71,0,1715953240,"~/hateoas/download_worker.py"
--'  16  0  ~/hateoas/download_worker.py
-|4,39,16,0,1715953181,"~/hateoas/download_worker.py"
--'  18  10  ~/hateoas/download_worker.py
-|4,39,18,10,1715953179,"~/hateoas/download_worker.py"
--'  73  12  ~/hateoas/download_worker.py
-|4,39,73,12,1715953122,"~/hateoas/download_worker.py"
--'  84  0  ~/hateoas/download_worker.py
-|4,39,84,0,1715953065,"~/hateoas/download_worker.py"
--'  1  0  ~/hateoas/download_worker.py
-|4,39,1,0,1715953051,"~/hateoas/download_worker.py"
--'  33  0  ~/hateoas/download_worker.py
-|4,39,33,0,1715953050,"~/hateoas/download_worker.py"
--'  31  0  ~/hateoas/download_worker.py
-|4,39,31,0,1715953045,"~/hateoas/download_worker.py"
--'  75  12  ~/hateoas/download_worker.py
-|4,39,75,12,1715952991,"~/hateoas/download_worker.py"
--'  42  40  ~/hateoas/main.sql
-|4,39,42,40,1715952919,"~/hateoas/main.sql"
--'  1  0  ~/hateoas/main.sql
-|4,39,1,0,1715952912,"~/hateoas/main.sql"
--'  26  8  ~/hateoas/download_worker.py
-|4,39,26,8,1715952912,"~/hateoas/download_worker.py"
--'  41  4  ~/hateoas/test_task_worker.py
-|4,39,41,4,1715952853,"~/hateoas/test_task_worker.py"
--'  34  4  ~/hateoas/test_task_worker.py
-|4,39,34,4,1715952831,"~/hateoas/test_task_worker.py"
--'  7  0  ~/hateoas/test_task_worker.py
-|4,39,7,0,1715952830,"~/hateoas/test_task_worker.py"
--'  36  0  ~/hateoas/test_task_worker.py
-|4,39,36,0,1715952829,"~/hateoas/test_task_worker.py"
--'  10  0  ~/hateoas/dbutils.py
-|4,39,10,0,1715899356,"~/hateoas/dbutils.py"
--'  17  0  ~/hateoas/main.sql
-|4,39,17,0,1715899355,"~/hateoas/main.sql"
--'  19  0  ~/hateoas/safe_download_assigner.py
-|4,39,19,0,1715898126,"~/hateoas/safe_download_assigner.py"
--'  23  0  ~/hateoas/safe_download_assigner.py
-|4,39,23,0,1715898044,"~/hateoas/safe_download_assigner.py"
--'  16  4  ~/hateoas/safe_download_assigner.py
-|4,39,16,4,1715897994,"~/hateoas/safe_download_assigner.py"
--'  40  26  ~/hateoas/safe_download_assigner.py
-|4,39,40,26,1715897983,"~/hateoas/safe_download_assigner.py"
--'  28  4  ~/hateoas/safe_download_assigner.py
-|4,39,28,4,1715897910,"~/hateoas/safe_download_assigner.py"
--'  38  0  ~/hateoas/safe_download_assigner.py
-|4,39,38,0,1715897910,"~/hateoas/safe_download_assigner.py"
--'  26  4  ~/hateoas/safe_download_assigner.py
-|4,39,26,4,1715897896,"~/hateoas/safe_download_assigner.py"
--'  39  0  ~/hateoas/safe_download_assigner.py
-|4,39,39,0,1715897896,"~/hateoas/safe_download_assigner.py"
--'  25  4  ~/hateoas/safe_download_assigner.py
-|4,39,25,4,1715897103,"~/hateoas/safe_download_assigner.py"
--'  17  9  ~/hateoas/safe_download_assigner.py
-|4,39,17,9,1715897085,"~/hateoas/safe_download_assigner.py"
--'  3  5  ~/hateoas/safe_download_assigner.py
-|4,39,3,5,1715897024,"~/hateoas/safe_download_assigner.py"
--'  5  0  ~/hateoas/safe_download_assigner.py
-|4,39,5,0,1715896702,"~/hateoas/safe_download_assigner.py"
--'  1  0  ~/hateoas/safe_download_assigner.py
-|4,39,1,0,1715896701,"~/hateoas/safe_download_assigner.py"
--'  1  0  ~/hateoas/safe_download_assigner.py
-|4,39,1,0,1715896367,"~/hateoas/safe_download_assigner.py"
--'  61  0  ~/hateoas/refresh_downloads_table.py
-|4,39,61,0,1715896326,"~/hateoas/refresh_downloads_table.py"
--'  61  0  ~/hateoas/refresh_downloads_table.py
-|4,39,61,0,1715896326,"~/hateoas/refresh_downloads_table.py"
--'  2  0  ~/hateoas/safe_download_assigner.py
-|4,39,2,0,1715896325,"~/hateoas/safe_download_assigner.py"
--'  44  0  ~/hateoas/download_worker.py
-|4,39,44,0,1715896294,"~/hateoas/download_worker.py"
--'  44  0  ~/hateoas/download_worker.py
-|4,39,44,0,1715896294,"~/hateoas/download_worker.py"
--'  53  4  ~/hateoas/download_portionurl.py
-|4,39,53,4,1715896286,"~/hateoas/download_portionurl.py"
--'  53  4  ~/hateoas/download_portionurl.py
-|4,39,53,4,1715896286,"~/hateoas/download_portionurl.py"
--'  92  12  ~/hateoas/download_portionurl.py
-|4,39,92,12,1715896278,"~/hateoas/download_portionurl.py"
--'  92  12  ~/hateoas/download_portionurl.py
-|4,39,92,12,1715896278,"~/hateoas/download_portionurl.py"
--'  3  11  ~/hateoas/safe_download_assigner.py
-|4,39,3,11,1715896277,"~/hateoas/safe_download_assigner.py"
--'  93  8  ~/hateoas/download_portionurl.py
-|4,39,93,8,1715896211,"~/hateoas/download_portionurl.py"
--'  93  8  ~/hateoas/download_portionurl.py
-|4,39,93,8,1715896211,"~/hateoas/download_portionurl.py"
--'  90  12  ~/hateoas/download_worker.py
-|4,39,90,12,1715896124,"~/hateoas/download_worker.py"
--'  90  12  ~/hateoas/download_worker.py
-|4,39,90,12,1715896124,"~/hateoas/download_worker.py"
--'  54  4  ~/hateoas/refresh_downloads_table.py
-|4,39,54,4,1715896028,"~/hateoas/refresh_downloads_table.py"
--'  54  4  ~/hateoas/refresh_downloads_table.py
-|4,39,54,4,1715896028,"~/hateoas/refresh_downloads_table.py"
--'  64  36  ~/hateoas/refresh_downloads_table.py
-|4,39,64,36,1715896013,"~/hateoas/refresh_downloads_table.py"
--'  125  8  ~/hateoas/refresh_downloads_table.py
-|4,39,125,8,1715896013,"~/hateoas/refresh_downloads_table.py"
--'  130  31  ~/hateoas/refresh_downloads_table.py
-|4,39,130,31,1715896013,"~/hateoas/refresh_downloads_table.py"
--'  64  36  ~/hateoas/refresh_downloads_table.py
-|4,39,64,36,1715896013,"~/hateoas/refresh_downloads_table.py"
--'  125  8  ~/hateoas/refresh_downloads_table.py
-|4,39,125,8,1715896013,"~/hateoas/refresh_downloads_table.py"
--'  130  31  ~/hateoas/refresh_downloads_table.py
-|4,39,130,31,1715896013,"~/hateoas/refresh_downloads_table.py"
--'  135  8  ~/hateoas/refresh_downloads_table.py
-|4,39,135,8,1715896012,"~/hateoas/refresh_downloads_table.py"
--'  135  8  ~/hateoas/refresh_downloads_table.py
-|4,39,135,8,1715896012,"~/hateoas/refresh_downloads_table.py"
--'  35  4  ~/hateoas/refresh_downloads_table.py
-|4,39,35,4,1715895997,"~/hateoas/refresh_downloads_table.py"
--'  35  4  ~/hateoas/refresh_downloads_table.py
-|4,39,35,4,1715895997,"~/hateoas/refresh_downloads_table.py"
--'  31  0  ~/hateoas/main.sql
-|4,39,31,0,1715895994,"~/hateoas/main.sql"
--'  31  0  ~/hateoas/main.sql
-|4,39,31,0,1715895994,"~/hateoas/main.sql"
--'  1  0  ~/hateoas/refresh_downloads_table.py
-|4,39,1,0,1715895983,"~/hateoas/refresh_downloads_table.py"
--'  1  0  ~/hateoas/refresh_downloads_table.py
-|4,39,1,0,1715895983,"~/hateoas/refresh_downloads_table.py"
--'  9  0  ~/hateoas/main.sql
-|4,39,9,0,1715895974,"~/hateoas/main.sql"
--'  9  0  ~/hateoas/main.sql
-|4,39,9,0,1715895974,"~/hateoas/main.sql"
--'  30  4  ~/hateoas/refresh_downloads_table.py
-|4,39,30,4,1715895968,"~/hateoas/refresh_downloads_table.py"
--'  30  4  ~/hateoas/refresh_downloads_table.py
-|4,39,30,4,1715895968,"~/hateoas/refresh_downloads_table.py"
--'  152  41  ~/.vim/ide.vim
-|4,39,152,41,1715895850,"~/.vim/ide.vim"
--'  152  41  ~/.vim/ide.vim
-|4,39,152,41,1715895850,"~/.vim/ide.vim"
--'  152  41  ~/.vim/ide.vim
-|4,39,152,41,1715895850,"~/.vim/ide.vim"
--'  143  47  ~/.vim/ide.vim
-|4,39,143,47,1715895842,"~/.vim/ide.vim"
--'  143  47  ~/.vim/ide.vim
-|4,39,143,47,1715895842,"~/.vim/ide.vim"
--'  143  47  ~/.vim/ide.vim
-|4,39,143,47,1715895842,"~/.vim/ide.vim"
+-'  1  0  ~/trace_output.log
+|4,39,1,0,1716172756,"~/trace_output.log"
+-'  73  29  ~/.config/functions.fish
+|4,39,73,29,1716172490,"~/.config/functions.fish"
+-'  73  29  ~/.config/functions.fish
+|4,39,73,29,1716172490,"~/.config/functions.fish"
+-'  1  0  ~/.config/functions.fish
+|4,39,1,0,1716172472,"~/.config/functions.fish"
+-'  1  0  ~/.config/functions.fish
+|4,39,1,0,1716172472,"~/.config/functions.fish"
+-'  106  4  ~/pyscripts/viewlog.py
+|4,39,106,4,1716172351,"~/pyscripts/viewlog.py"
+-'  106  4  ~/pyscripts/viewlog.py
+|4,39,106,4,1716172351,"~/pyscripts/viewlog.py"
+-'  106  4  ~/pyscripts/viewlog.py
+|4,39,106,4,1716172351,"~/pyscripts/viewlog.py"
+-'  107  0  ~/pyscripts/viewlog.py
+|4,39,107,0,1716172350,"~/pyscripts/viewlog.py"
+-'  107  0  ~/pyscripts/viewlog.py
+|4,39,107,0,1716172350,"~/pyscripts/viewlog.py"
+-'  107  0  ~/pyscripts/viewlog.py
+|4,39,107,0,1716172350,"~/pyscripts/viewlog.py"
+-'  5  0  ~/pyscripts/viewlog.py
+|4,39,5,0,1716172349,"~/pyscripts/viewlog.py"
+-'  5  0  ~/pyscripts/viewlog.py
+|4,39,5,0,1716172349,"~/pyscripts/viewlog.py"
+-'  5  0  ~/pyscripts/viewlog.py
+|4,39,5,0,1716172349,"~/pyscripts/viewlog.py"
+-'  6  0  ~/pyscripts/viewlog.py
+|4,39,6,0,1716172329,"~/pyscripts/viewlog.py"
+-'  6  0  ~/pyscripts/viewlog.py
+|4,39,6,0,1716172329,"~/pyscripts/viewlog.py"
+-'  6  0  ~/pyscripts/viewlog.py
+|4,39,6,0,1716172329,"~/pyscripts/viewlog.py"
+-'  108  4  ~/pyscripts/viewlog.py
+|4,39,108,4,1716172321,"~/pyscripts/viewlog.py"
+-'  108  4  ~/pyscripts/viewlog.py
+|4,39,108,4,1716172321,"~/pyscripts/viewlog.py"
+-'  108  4  ~/pyscripts/viewlog.py
+|4,39,108,4,1716172321,"~/pyscripts/viewlog.py"
+-'  109  84  ~/pyscripts/viewlog.py
+|4,39,109,84,1716172312,"~/pyscripts/viewlog.py"
+-'  113  84  ~/pyscripts/viewlog.py
+|4,39,113,84,1716172312,"~/pyscripts/viewlog.py"
+-'  109  84  ~/pyscripts/viewlog.py
+|4,39,109,84,1716172312,"~/pyscripts/viewlog.py"
+-'  113  84  ~/pyscripts/viewlog.py
+|4,39,113,84,1716172312,"~/pyscripts/viewlog.py"
+-'  109  84  ~/pyscripts/viewlog.py
+|4,39,109,84,1716172312,"~/pyscripts/viewlog.py"
+-'  113  84  ~/pyscripts/viewlog.py
+|4,39,113,84,1716172312,"~/pyscripts/viewlog.py"
+-'  109  84  ~/pyscripts/viewlog.py
+|4,39,109,84,1716172299,"~/pyscripts/viewlog.py"
+-'  48  4  ~/pyscripts/viewlog.py
+|4,39,48,4,1716172287,"~/pyscripts/viewlog.py"
+-'  46  4  ~/pyscripts/viewlog.py
+|4,39,46,4,1716172287,"~/pyscripts/viewlog.py"
+-'  50  4  ~/pyscripts/viewlog.py
+|4,39,50,4,1716172287,"~/pyscripts/viewlog.py"
+-'  48  4  ~/pyscripts/viewlog.py
+|4,39,48,4,1716172287,"~/pyscripts/viewlog.py"
+-'  46  4  ~/pyscripts/viewlog.py
+|4,39,46,4,1716172287,"~/pyscripts/viewlog.py"
+-'  50  4  ~/pyscripts/viewlog.py
+|4,39,50,4,1716172287,"~/pyscripts/viewlog.py"
+-'  48  4  ~/pyscripts/viewlog.py
+|4,39,48,4,1716172287,"~/pyscripts/viewlog.py"
+-'  46  4  ~/pyscripts/viewlog.py
+|4,39,46,4,1716172287,"~/pyscripts/viewlog.py"
+-'  50  4  ~/pyscripts/viewlog.py
+|4,39,50,4,1716172287,"~/pyscripts/viewlog.py"
+-'  48  4  ~/pyscripts/viewlog.py
+|4,39,48,4,1716172287,"~/pyscripts/viewlog.py"
+-'  48  4  ~/pyscripts/viewlog.py
+|4,39,48,4,1716172161,"~/pyscripts/viewlog.py"
+-'  41  50  ~/pyscripts/viewlog.py
+|4,39,41,50,1716172151,"~/pyscripts/viewlog.py"
+-'  39  50  ~/pyscripts/viewlog.py
+|4,39,39,50,1716172151,"~/pyscripts/viewlog.py"
+-'  43  50  ~/pyscripts/viewlog.py
+|4,39,43,50,1716172151,"~/pyscripts/viewlog.py"
+-'  41  50  ~/pyscripts/viewlog.py
+|4,39,41,50,1716172151,"~/pyscripts/viewlog.py"
+-'  39  50  ~/pyscripts/viewlog.py
+|4,39,39,50,1716172151,"~/pyscripts/viewlog.py"
+-'  43  50  ~/pyscripts/viewlog.py
+|4,39,43,50,1716172151,"~/pyscripts/viewlog.py"
+-'  41  50  ~/pyscripts/viewlog.py
+|4,39,41,50,1716172151,"~/pyscripts/viewlog.py"
+-'  39  50  ~/pyscripts/viewlog.py
+|4,39,39,50,1716172151,"~/pyscripts/viewlog.py"
+-'  43  50  ~/pyscripts/viewlog.py
+|4,39,43,50,1716172151,"~/pyscripts/viewlog.py"
+-'  41  50  ~/pyscripts/viewlog.py
+|4,39,41,50,1716172151,"~/pyscripts/viewlog.py"
+-'  41  50  ~/pyscripts/viewlog.py
+|4,39,41,50,1716172151,"~/pyscripts/viewlog.py"
+-'  42  50  ~/pyscripts/viewlog.py
+|4,39,42,50,1716172137,"~/pyscripts/viewlog.py"
+-'  40  50  ~/pyscripts/viewlog.py
+|4,39,40,50,1716172137,"~/pyscripts/viewlog.py"
+-'  44  50  ~/pyscripts/viewlog.py
+|4,39,44,50,1716172137,"~/pyscripts/viewlog.py"
+-'  42  50  ~/pyscripts/viewlog.py
+|4,39,42,50,1716172137,"~/pyscripts/viewlog.py"
+-'  40  50  ~/pyscripts/viewlog.py
+|4,39,40,50,1716172137,"~/pyscripts/viewlog.py"
+-'  44  50  ~/pyscripts/viewlog.py
+|4,39,44,50,1716172137,"~/pyscripts/viewlog.py"
+-'  42  50  ~/pyscripts/viewlog.py
+|4,39,42,50,1716172137,"~/pyscripts/viewlog.py"
+-'  40  50  ~/pyscripts/viewlog.py
+|4,39,40,50,1716172137,"~/pyscripts/viewlog.py"
+-'  44  50  ~/pyscripts/viewlog.py
+|4,39,44,50,1716172137,"~/pyscripts/viewlog.py"
+-'  42  50  ~/pyscripts/viewlog.py
+|4,39,42,50,1716172137,"~/pyscripts/viewlog.py"
+-'  42  50  ~/pyscripts/viewlog.py
+|4,39,42,50,1716172137,"~/pyscripts/viewlog.py"
+-'  128  4  ~/pyscripts/viewlog.py
+|4,39,128,4,1716171976,"~/pyscripts/viewlog.py"
+-'  127  4  ~/pyscripts/viewlog.py
+|4,39,127,4,1716171976,"~/pyscripts/viewlog.py"
+-'  124  4  ~/pyscripts/viewlog.py
+|4,39,124,4,1716171976,"~/pyscripts/viewlog.py"
+-'  123  4  ~/pyscripts/viewlog.py
+|4,39,123,4,1716171976,"~/pyscripts/viewlog.py"
+-'  132  4  ~/pyscripts/viewlog.py
+|4,39,132,4,1716171976,"~/pyscripts/viewlog.py"
+-'  131  4  ~/pyscripts/viewlog.py
+|4,39,131,4,1716171976,"~/pyscripts/viewlog.py"
+-'  128  4  ~/pyscripts/viewlog.py
+|4,39,128,4,1716171976,"~/pyscripts/viewlog.py"
+-'  127  4  ~/pyscripts/viewlog.py
+|4,39,127,4,1716171976,"~/pyscripts/viewlog.py"
+-'  124  4  ~/pyscripts/viewlog.py
+|4,39,124,4,1716171976,"~/pyscripts/viewlog.py"
+-'  123  4  ~/pyscripts/viewlog.py
+|4,39,123,4,1716171976,"~/pyscripts/viewlog.py"
+-'  132  4  ~/pyscripts/viewlog.py
+|4,39,132,4,1716171976,"~/pyscripts/viewlog.py"
+-'  131  4  ~/pyscripts/viewlog.py
+|4,39,131,4,1716171976,"~/pyscripts/viewlog.py"
+-'  128  4  ~/pyscripts/viewlog.py
+|4,39,128,4,1716171976,"~/pyscripts/viewlog.py"
+-'  127  4  ~/pyscripts/viewlog.py
+|4,39,127,4,1716171976,"~/pyscripts/viewlog.py"
+-'  124  4  ~/pyscripts/viewlog.py
+|4,39,124,4,1716171976,"~/pyscripts/viewlog.py"
+-'  123  4  ~/pyscripts/viewlog.py
+|4,39,123,4,1716171976,"~/pyscripts/viewlog.py"
+-'  132  4  ~/pyscripts/viewlog.py
+|4,39,132,4,1716171976,"~/pyscripts/viewlog.py"
+-'  131  4  ~/pyscripts/viewlog.py
+|4,39,131,4,1716171976,"~/pyscripts/viewlog.py"
+-'  128  4  ~/pyscripts/viewlog.py
+|4,39,128,4,1716171976,"~/pyscripts/viewlog.py"
+-'  127  4  ~/pyscripts/viewlog.py
+|4,39,127,4,1716171976,"~/pyscripts/viewlog.py"
+-'  127  4  ~/pyscripts/viewlog.py
+|4,39,127,4,1716171976,"~/pyscripts/viewlog.py"
+-'  130  8  ~/pyscripts/viewlog.py
+|4,39,130,8,1716171969,"~/pyscripts/viewlog.py"
+-'  129  8  ~/pyscripts/viewlog.py
+|4,39,129,8,1716171969,"~/pyscripts/viewlog.py"
+-'  126  8  ~/pyscripts/viewlog.py
+|4,39,126,8,1716171969,"~/pyscripts/viewlog.py"
+-'  125  8  ~/pyscripts/viewlog.py
+|4,39,125,8,1716171969,"~/pyscripts/viewlog.py"
+-'  134  8  ~/pyscripts/viewlog.py
+|4,39,134,8,1716171969,"~/pyscripts/viewlog.py"
+-'  133  8  ~/pyscripts/viewlog.py
+|4,39,133,8,1716171969,"~/pyscripts/viewlog.py"
+-'  130  8  ~/pyscripts/viewlog.py
+|4,39,130,8,1716171969,"~/pyscripts/viewlog.py"
+-'  129  8  ~/pyscripts/viewlog.py
+|4,39,129,8,1716171969,"~/pyscripts/viewlog.py"
+-'  126  8  ~/pyscripts/viewlog.py
+|4,39,126,8,1716171969,"~/pyscripts/viewlog.py"
+-'  125  8  ~/pyscripts/viewlog.py
+|4,39,125,8,1716171969,"~/pyscripts/viewlog.py"
+-'  134  8  ~/pyscripts/viewlog.py
+|4,39,134,8,1716171969,"~/pyscripts/viewlog.py"
+-'  133  8  ~/pyscripts/viewlog.py
+|4,39,133,8,1716171969,"~/pyscripts/viewlog.py"
+-'  130  8  ~/pyscripts/viewlog.py
+|4,39,130,8,1716171969,"~/pyscripts/viewlog.py"
+-'  129  8  ~/pyscripts/viewlog.py
+|4,39,129,8,1716171969,"~/pyscripts/viewlog.py"
+-'  126  8  ~/pyscripts/viewlog.py
+|4,39,126,8,1716171969,"~/pyscripts/viewlog.py"
+-'  125  8  ~/pyscripts/viewlog.py
+|4,39,125,8,1716171969,"~/pyscripts/viewlog.py"
+-'  134  8  ~/pyscripts/viewlog.py
+|4,39,134,8,1716171969,"~/pyscripts/viewlog.py"
+-'  133  8  ~/pyscripts/viewlog.py
+|4,39,133,8,1716171969,"~/pyscripts/viewlog.py"
+-'  130  8  ~/pyscripts/viewlog.py
+|4,39,130,8,1716171969,"~/pyscripts/viewlog.py"
 
 # Buffer list:
-%~/hateoas/main.sql	42	40
-%~/hateoas/test_task_worker.py	37	8
-%~/hateoas/refresh_downloads_table.py	152	0
-%~/hateoas/download_worker.py	50	0
-%~/hateoas/populate_test_tasks.py	1	0
-%~/hateoas/download_portionurl.py	81	4
+%~/trace_output.log	1	0
 
 # History of marks within files (newest to oldest):
 
-> ~/hateoas/download_worker.py
-	*	1715953873	0
-	"	50	0
-	^	57	0
-	.	60	0
-	+	20	0
-	+	26	12
-	+	84	0
-	+	82	0
-	+	85	17
-	+	85	5
-	+	84	1
-	+	19	82
-	+	19	33
-	+	19	4
-	+	19	0
-	+	19	29
-	+	19	0
-	+	84	0
-	+	19	0
-	+	26	0
-	+	26	177
-	+	26	0
-	+	26	43
-	+	26	0
-	+	26	4
-	+	26	27
-	+	26	19
-	+	26	0
-	+	26	19
-	+	26	26
-	+	26	4
-	+	26	42
-	+	26	4
-	+	26	5
-	+	26	177
-	+	26	0
-	+	26	40
-	+	71	42
-	+	26	0
-	+	27	0
-	+	26	0
-	+	73	0
-	+	75	0
-	+	83	0
-	+	26	0
-	+	20	0
-	+	19	0
-	+	84	0
-	+	61	0
-	+	20	0
-	+	16	78
-	+	26	0
-	+	19	0
-	+	17	16
-	+	16	11
-	+	17	17
-	+	16	0
-	+	18	0
-	+	15	0
-	+	84	0
-	+	20	8
-	+	20	12
-	+	82	0
-	+	45	7
-	+	46	0
-	+	45	9
-	+	81	9
-	+	81	0
-	+	58	0
-	+	20	0
-	+	48	0
-	+	60	0
-	+	60	4
-	+	63	11
-	+	70	0
-	+	65	20
-	+	53	0
-	+	17	0
-	+	17	92
-	+	18	0
-	+	17	92
-	+	85	0
-	+	81	0
-	+	85	26
-	+	86	4
-	+	47	20
-	+	49	8
-	+	51	9
-	+	67	26
-	+	68	12
-	+	47	0
-	+	55	0
-	+	57	0
-	+	60	0
-	+	56	0
-	+	60	0
+> ~/trace_output.log
+	*	1716172754	0
+	"	1	0
 
-> ~/hateoas/test_task_worker.py
-	*	1715953731	0
-	"	37	8
-	.	41	0
+> ~/.config/functions.fish
+	*	1716172488	0
+	"	73	29
+	^	32	52
+	.	52	0
+	+	56	0
+	+	56	46
+	+	56	17
+	+	56	14
+	+	56	0
+	+	56	9
+	+	56	0
+	+	56	39
+	+	56	17
+	+	56	0
+	+	56	63
+	+	56	29
+	+	56	0
+	+	56	29
+	+	56	0
+	+	56	8
+	+	56	28
+	+	56	45
+	+	56	14
+	+	56	0
+	+	78	0
+	+	67	0
+	+	78	0
+	+	66	0
+	+	67	0
+	+	78	0
+	+	79	23
+	+	84	0
+	+	78	0
+	+	66	0
+	+	67	0
+	+	78	0
+	+	84	0
+	+	78	8
+	+	78	0
+	+	78	10
+	+	72	0
+	+	66	0
+	+	58	0
+	+	66	0
+	+	56	0
+	+	57	0
+	+	65	19
+	+	87	4
+	+	88	3
+	+	93	20
+	+	102	0
+	+	90	26
+	+	93	4
+	+	102	0
+	+	94	15
+	+	99	46
+	+	101	0
+	+	99	8
+	+	99	16
+	+	100	25
+	+	100	0
+	+	93	18
+	+	94	4
+	+	93	20
+	+	98	0
+	+	99	4
+	+	100	4
+	+	99	49
+	+	97	4
+	+	99	35
+	+	56	74
+	+	1	29
+	+	4	23
+	+	1	0
+	+	28	0
+	+	27	0
+	+	29	29
+	+	32	0
+	+	4	45
+	+	4	0
+	+	21	27
+	+	51	27
+	+	32	51
+	+	51	27
+	+	52	0
+
+> ~/pyscripts/viewlog.py
+	*	1716172351	0
+	"	106	4
+	.	107	0
+	+	111	66
+	+	108	85
+	+	108	0
+	+	138	13
+	+	119	8
+	+	119	0
+	+	119	7
+	+	119	0
+	+	119	11
+	+	119	0
+	+	119	7
+	+	119	0
+	+	119	10
+	+	117	9
+	+	119	11
+	+	119	12
+	+	119	13
+	+	138	11
+	+	118	0
+	+	57	8
+	+	59	0
+	+	59	14
+	+	59	33
+	+	138	11
+	+	60	0
+	+	59	19
+	+	60	49
+	+	59	15
+	+	61	21
+	+	59	16
+	+	61	106
+	+	59	19
+	+	61	66
+	+	62	61
+	+	63	55
+	+	64	38
+	+	59	21
+	+	64	27
+	+	59	0
+	+	65	0
+	+	58	14
+	+	63	35
+	+	46	5
+	+	47	13
+	+	50	14
+	+	50	22
+	+	50	19
+	+	50	38
+	+	50	23
+	+	50	0
+	+	47	73
+	+	49	43
+	+	49	56
+	+	50	0
+	+	113	18
+	+	114	0
+	+	113	26
+	+	114	0
+	+	113	5
+	+	9	5
+	+	9	13
+	+	9	4
+	+	9	7
+	+	9	4
+	+	133	0
+	+	122	11
+	+	9	0
+	+	104	0
+	+	39	26
+	+	41	75
+	+	42	43
+	+	43	56
+	+	44	0
+	+	123	39
+	+	123	12
+	+	122	47
+	+	123	0
+	+	124	55
+	+	125	8
+	+	108	127
+	+	110	0
+	+	110	74
+	+	111	66
+	+	110	0
+	+	110	88
 	+	2	0
-	+	8	27
-	+	8	64
-	+	8	0
-	+	6	0
-	+	8	1
-	+	10	1
-	+	19	17
-	+	3	10
-	+	21	0
-	+	18	0
+	+	1	69
+	+	132	0
+	+	131	11
+	+	130	14
+	+	128	14
+	+	128	0
+	+	42	51
+	+	48	0
+	+	109	0
+	+	108	5
+	+	109	0
+	+	107	0
+	+	5	0
+	+	107	0
+	a	106	16
+
+> ~/.config/setup.sh
+	*	1716171750	0
+	"	8	13
+	^	8	29
+	.	8	0
+	+	15	68
+	+	15	27
+	+	5	0
+	+	4	1
+	+	15	34
+	+	4	0
+	+	5	0
+	+	15	0
+	+	4	0
+	+	15	0
+	+	3	0
+	+	4	0
+	+	15	0
+	+	5	0
+	+	15	0
+	+	15	1
+	+	15	8
+	+	15	10
+	+	15	155
+	+	15	8
+	+	15	123
+	+	15	0
+	+	26	26
+	+	27	27
+	+	7	41
+	+	11	23
+	+	14	0
+	+	11	75
+	+	14	0
+	+	11	63
+	+	14	0
+	+	11	54
+	+	15	71
+	+	15	89
+	+	15	0
+	+	13	38
 	+	12	0
-	+	14	14
-	+	15	13
-	+	17	11
-	+	13	13
-	+	7	15
-	+	8	22
-	+	7	44
-	+	7	23
-	+	7	26
-	+	7	0
+	+	12	13
+	+	12	0
+	+	15	9
+	+	15	17
+	+	28	0
+	+	4	0
+	+	17	0
+	+	15	14
+	+	30	34
+	+	11	0
+	+	11	29
+	+	1	11
+	+	15	0
+	+	16	0
+	+	15	0
+	+	25	0
+	+	11	0
+	+	12	0
+	+	15	0
+	+	30	0
 	+	8	0
-	+	38	0
+	+	15	0
+	+	45	35
+	+	27	1
+	+	31	0
+	+	45	0
+	+	27	0
+	+	28	0
+	+	26	0
+	+	23	0
+	+	18	0
+	+	47	45
+	+	44	1
+	+	45	0
+	+	39	42
+	+	1	1
+	+	26	1
+	+	29	41
+	+	10	0
+	+	9	0
+	+	8	0
+
+> ~/.bashrc
+	*	1716168080	0
+	"	125	0
+	.	126	0
+	+	121	0
+	+	121	55
+	+	121	0
+	+	121	47
+	+	126	0
+	+	121	0
+	+	126	0
+	+	125	0
+	+	128	0
+	+	129	0
+	+	120	0
+	+	123	0
+	+	118	0
+	+	120	0
+	+	123	0
+	+	6	5
+	+	5	0
+	+	6	0
+	+	124	0
+	+	109	0
+	+	120	0
+	+	114	5
+	+	115	4
+	+	116	0
+	+	117	4
+	+	115	0
+	+	115	4
+	+	117	0
+	+	116	4
+	+	114	4
+	+	118	0
+	+	112	0
+	+	115	0
+	+	123	0
+	+	121	0
+	+	126	0
+
+> ~/.config/setup.fish
+	*	1716168062	0
+	"	23	0
+	^	24	34
+	.	10	0
+	+	6	0
+	+	6	4
+	+	6	7
+	+	6	0
+	+	6	21
+	+	6	24
+	+	6	11
+	+	6	0
+	+	6	22
+	+	6	24
+	+	6	22
+	+	6	0
+	+	6	5
+	+	6	40
+	+	9	34
+	+	6	0
+	+	6	43
+	+	6	42
+	+	6	0
+	+	6	45
+	+	6	5
+	+	6	0
+	+	6	9
+	+	6	5
+	+	6	0
+	+	6	9
+	+	6	39
+	+	6	9
+	+	6	0
+	+	6	20
+	+	6	19
+	+	6	23
+	+	6	8
+	+	6	23
+	+	6	9
+	+	6	0
+	+	14	1
+	+	6	0
+	+	18	0
+	+	10	0
+	+	10	13
+	+	10	0
+	+	20	21
+	+	20	18
+	+	20	0
+	+	20	42
+	+	20	0
+	+	19	0
+	+	20	0
+	+	6	0
+	+	6	44
+	+	6	0
+	+	6	4
+	+	6	0
+	+	6	7
+	+	6	37
+	+	6	24
+	+	6	7
+	+	6	5
+	+	6	25
+	+	6	13
+	+	6	30
+	+	6	7
+	+	6	0
+	+	6	21
+	+	6	0
+	+	8	0
+	+	9	1
+	+	6	0
+	+	9	0
+	+	8	0
+	+	9	32
+	+	6	23
+	+	6	0
+	+	6	19
+	+	6	0
+	+	6	26
+	+	6	10
+	+	6	5
+	+	6	0
+	+	6	37
+	+	6	0
+	+	6	22
+	+	6	58
+	+	6	0
+	+	7	30
+	+	9	18
+	+	20	0
+	+	21	0
+	+	22	0
+	+	21	29
+	+	22	11
+	+	24	34
+	+	25	0
+	+	10	0
+
+> ~/.config/atuin/config.toml
+	*	1716167986	0
+	"	131	24
+
+> ~/.config/shell_data/.bash_history
+	*	1716167973	0
+	"	1944	0
+
+> ~/.config/shell_data/fish_history
+	*	1716167972	0
+	"	627	6
+
+> ~/.config/alias.sh
+	*	1716167958	0
+	"	1	0
+	^	20	2
+	.	20	1
+	+	2	0
+	+	16	37
+	+	20	77
+	+	20	42
+	+	20	47
+	+	20	32
+	+	21	39
+	+	22	40
+	+	23	79
+	+	23	0
+	+	23	36
+	+	23	20
+	+	23	25
+	+	24	45
+	+	25	0
+	+	23	0
+	+	20	0
+	+	24	19
+	+	17	60
+	+	19	0
+	+	20	0
+	+	18	13
+	+	20	10
+	+	19	0
+	+	11	0
+	+	10	72
+	+	9	6
+	+	20	1
+	+	21	0
+	+	20	1
+
+> ~/Twitch/coffee-vps/flask-vue/api.py
+	*	1716159185	0
+	"	189	11
+	.	13	0
+	+	710	23
+	+	710	0
+	+	1	0
+	+	710	0
+	+	1	0
+	+	710	0
+	+	1	0
+	+	710	0
+	+	1	0
+	+	710	0
+	+	1	0
+	+	710	0
+	+	1	0
+	+	710	0
+	+	1	0
+	+	710	0
+	+	1	0
+	+	1	12
+	+	1	0
+	+	714	0
+	+	1	0
+	+	717	0
+	+	1	12
+	+	1	0
+	+	710	0
+	+	712	37
+	+	1	0
+	+	718	0
+	+	1	58
+	+	1	0
+	+	714	0
+	+	712	0
+	+	714	0
+	+	712	4
+	+	1	0
+	+	1	15
+	+	1	0
+	+	1	34
+	+	1	0
+	+	1	20
+	+	1	0
+	+	1	8
+	+	1	0
+	+	1	31
+	+	1	36
+	+	1	11
+	+	1	12
+	+	1	11
+	+	712	0
+	+	239	17
+	+	233	0
+	+	243	0
+	+	228	30
+	+	228	0
+	+	232	0
+	+	231	28
+	+	240	7
+	+	242	8
+	+	243	0
+	+	90	0
+	+	7	11
+	+	90	0
 	+	34	0
-	+	41	0
-	+	7	0
-	+	34	4
+	+	33	0
+	+	90	0
+	+	93	0
+	+	94	0
+	+	90	0
+	+	93	0
+	+	106	0
+	+	99	0
+	+	98	0
+	+	240	0
+	+	241	22
+	+	241	23
+	+	238	14
+	+	238	19
+	+	238	16
+	+	241	0
+	+	240	31
+	+	225	0
+	+	219	4
+	+	214	0
+	+	217	7
+	+	218	11
+	+	240	0
+	+	238	0
+	+	240	0
+	+	448	7
+	+	452	30
+	+	452	0
+	+	425	0
+	+	424	0
+	+	424	13
+	+	424	18
+	+	424	14
+	+	424	0
+	+	234	0
+	+	233	1
+	+	13	0
+	a	231	28
+	b	231	29
+
+> ~/hateoas/todo.txt
+	*	1716157517	0
+	"	5	0
+	^	5	62
+	.	5	61
+	+	5	1
+	+	2	57
+	+	3	71
+	+	1	73
+	+	3	83
+	+	2	3
+	+	3	3
+	+	1	3
+	+	3	0
+	+	4	36
+	+	5	0
+	+	4	0
+	+	5	11
+	+	4	0
+	+	5	0
+	+	4	0
+	+	1	0
+	+	4	0
+	+	3	0
+	+	1	78
+	+	3	0
+	+	5	0
+	+	3	0
+	+	4	0
+	+	5	61
+
+> ~/hateoas/download_worker.py
+	*	1716157491	0
+	"	161	4
+	.	159	0
+	+	105	26
+	+	106	4
+	+	111	26
+	+	112	4
+	+	117	0
+	+	165	7
+	+	169	4
+	+	171	4
+	+	109	30
+	+	114	29
+	+	80	0
+	+	175	0
+	+	88	0
+	+	87	0
+	+	178	9
+	+	176	0
+	+	87	0
+	+	81	0
+	+	82	8
+	+	81	80
+	+	82	27
+	+	83	15
+	+	176	4
+	+	38	75
+	+	43	0
 	+	38	0
-	+	41	0
+	+	109	62
+	+	114	64
+	+	174	1
+	+	87	0
+	+	169	4
+	+	167	0
+	+	169	31
+	+	91	33
+	+	92	4
+	+	104	0
+	+	92	8
+	+	91	39
+	+	92	4
+	+	104	42
+	+	104	10
+	+	104	0
+	+	104	12
+	+	104	0
+	+	104	81
+	+	104	0
+	+	93	14
+	+	94	10
+	+	96	23
+	+	104	0
+	+	96	38
+	+	97	7
+	+	99	35
+	+	100	27
+	+	100	39
+	+	100	10
+	+	104	0
+	+	100	17
+	+	100	0
+	+	99	10
+	+	102	24
+	+	103	41
+	+	169	38
+	+	104	0
+	+	21	28
+	+	169	0
+	+	164	0
+	+	164	13
+	+	92	24
+	+	164	0
+	+	123	35
+	+	126	0
+	+	123	0
+	+	126	50
+	+	126	0
+	+	124	0
+	+	164	10
+	+	156	0
+	+	152	18
+	+	154	17
+	+	155	58
+	+	153	0
+	+	61	78
+	+	13	67
+	+	30	0
+	+	31	4
+	+	31	0
+	+	13	0
+	+	9	0
+	+	146	0
+	+	13	0
+	+	16	0
+	+	166	38
+	+	164	0
+	+	168	0
+	+	159	12
+	+	159	0
+	+	159	13
+	+	159	0
 
 > ~/hateoas/download_portionurl.py
-	*	1715953714	0
-	"	81	4
-	^	67	27
-	.	67	0
-	+	105	24
-	+	106	0
-	+	106	16
-	+	118	24
-	+	105	23
-	+	106	0
-	+	118	12
-	+	53	0
-	+	53	11
-	+	118	0
-	+	53	0
-	+	97	22
-	+	111	0
-	+	107	32
-	+	114	0
-	+	108	0
-	+	109	72
-	+	110	26
-	+	84	19
-	+	25	29
-	+	53	0
-	+	26	0
-	+	52	4
-	+	48	4
-	+	47	0
-	+	51	0
-	+	88	4
-	+	95	0
-	+	89	98
-	+	90	41
-	+	91	8
-	+	92	40
-	+	93	56
-	+	94	42
-	+	95	0
-	+	92	0
-	+	92	15
-	+	92	12
-	+	92	0
-	+	91	24
-	+	92	0
-	+	88	13
-	+	97	0
-	+	95	21
-	+	97	34
-	+	97	0
-	+	95	0
-	+	86	4
-	+	86	12
-	+	88	22
-	+	86	0
-	+	97	0
-	+	96	0
-	+	107	0
-	+	11	0
-	+	60	53
-	+	62	21
-	+	64	15
-	+	73	53
-	+	84	18
-	+	84	51
-	+	84	4
-	+	84	0
-	+	64	31
-	+	65	8
+	*	1716156101	0
+	"	1	0
+	^	60	101
+	.	60	100
+	+	10	0
+	+	65	53
+	+	65	21
+	+	65	15
+	+	67	53
+	+	72	18
+	+	72	51
+	+	72	4
 	+	72	0
+	+	65	31
+	+	65	8
+	+	66	0
 	+	65	11
-	+	74	18
-	+	75	51
-	+	84	0
-	+	75	41
-	+	76	42
-	+	77	51
-	+	84	4
-	+	84	34
-	+	84	0
+	+	68	18
+	+	69	51
+	+	72	0
+	+	69	41
+	+	70	42
+	+	72	51
+	+	72	4
+	+	72	34
+	+	72	0
 	+	65	28
-	+	67	22
-	+	68	34
-	+	69	40
-	+	70	27
-	+	71	0
-	+	78	30
-	+	79	4
-	+	81	22
-	+	82	8
-	+	83	4
-	+	84	0
-	+	62	0
-	+	86	0
-	+	64	0
-	+	13	0
+	+	65	22
+	+	65	34
+	+	65	40
+	+	65	27
+	+	65	0
+	+	72	30
+	+	72	4
+	+	72	22
+	+	72	8
+	+	72	4
+	+	72	0
+	+	65	0
+	+	72	0
+	+	65	0
+	+	10	0
 	+	65	75
-	+	63	17
-	+	66	15
-	+	68	0
-	+	67	0
+	+	65	17
+	+	65	15
+	+	65	0
+	+	72	0
+	+	63	0
+	+	9	0
+	+	71	31
+	+	77	20
+	+	97	0
+	+	82	0
+	+	55	20
+	+	63	71
+	+	55	0
+	+	63	0
+	+	58	0
+	+	56	26
+	+	55	0
+	+	56	14
+	+	41	0
+	+	9	55
+	+	29	0
+	+	40	0
+	+	29	0
+	+	40	71
+	+	41	56
+	+	66	21
+	+	44	39
+	+	45	64
+	+	46	63
+	+	45	14
+	+	46	15
+	+	47	4
+	+	53	0
+	+	52	11
+	+	59	9
+	+	60	71
+	+	9	0
+	+	72	0
+	+	65	0
+	+	3	28
+	+	4	0
+	+	35	0
+	+	36	44
+	+	37	5
+	+	38	0
+	+	35	24
+	+	36	4
+	+	37	5
+	+	37	0
+	+	35	53
+	+	35	60
+	+	36	56
+	+	37	71
+	+	56	5
+	+	56	0
+	+	9	0
+	+	10	0
+	+	60	99
+	+	62	0
+	+	62	102
+	+	60	100
+
+> ~/.vim/vimrc
+	*	1716156079	0
+	"	64	0
+	.	66	0
+	+	1356	23
+	+	1356	1
+	+	1356	0
+	+	1356	30
+	+	1356	0
+	+	1356	16
+	+	1356	0
+	+	1356	70
+	+	1356	0
+	+	1356	22
+	+	1356	0
+	+	1356	27
+	+	1356	0
+	+	1356	30
+	+	1356	13
+	+	1356	16
+	+	1356	0
+	+	1356	19
+	+	1356	5
+	+	1356	80
+	+	1356	22
+	+	1356	0
+	+	1356	21
+	+	1356	28
+	+	1356	22
+	+	1356	71
+	+	1356	8
+	+	1356	24
+	+	1356	40
+	+	1356	0
+	+	1356	39
+	+	1356	0
+	+	1356	19
+	+	1356	0
+	+	1356	38
+	+	1356	21
+	+	1356	0
+	+	1356	10
+	+	1356	25
+	+	1356	0
+	+	1356	32
+	+	1356	0
+	+	1356	10
+	+	1356	0
+	+	1356	25
+	+	1356	10
+	+	1356	0
+	+	1356	60
+	+	1356	0
+	+	1356	55
+	+	1356	0
+	+	1356	44
+	+	1356	0
+	+	1356	19
+	+	1356	71
+	+	1356	0
+	+	1356	23
+	+	1356	41
+	+	1356	44
+	+	1356	40
+	+	1356	28
+	+	1356	0
+	+	1356	11
+	+	1356	18
+	+	1356	43
+	+	1356	64
+	+	1356	54
+	+	1356	0
+	+	1356	31
+	+	1356	0
+	+	1356	6
+	+	1356	0
+	+	1356	1
+	+	1356	0
+	+	1356	80
+	+	1356	75
+	+	1356	0
+	+	1356	52
+	+	1356	41
+	+	162	0
+	+	49	26
+	+	1356	0
+	+	48	0
+	+	47	22
+	+	46	25
+	+	66	0
+
+> ~/.vim/plugin/colorscheme.vim
+	*	1716154947	0
+	"	41	17
+	^	42	18
+	.	42	0
+	+	40	42
+	+	43	0
+	+	35	13
+	+	37	13
+	+	35	12
+	+	38	0
+	+	41	18
+	+	42	97
+	+	42	17
+	+	42	0
+
+> ~/.vim/colors/apprentice_extended.vim
+	*	1716154774	0
+	"	3	0
+
+> ~/.vim/colors/tokyonight.vim
+	*	1716153872	0
+	"	1	98
+	^	1	99
+	.	1	98
+	+	1	98
+
+> ~/pyscripts/requirements.txt
+	*	1716112106	0
+	"	4	10
+	^	4	11
+	.	4	10
+	+	2	4
+	+	1	5
+	+	4	10
+
+> ~/genproject/python.sh
+	*	1716111487	0
+	"	36	20
+	^	57	51
+	.	41	0
+	+	6	0
+	+	2	0
+	+	4	9
+	+	11	9
+	+	17	9
+	+	42	0
+	+	55	26
+	+	56	0
+	+	57	8
+	+	39	6
+	+	41	0
+	+	40	0
+	+	41	0
+	+	23	15
+	+	45	0
+	+	36	13
+	+	53	4
+	+	57	1
+	+	28	6
+	+	41	1
+	+	57	35
+	+	41	0
+
+> ~/pyscripts/.gitignore
+	*	1716111485	0
+	"	1	7
+	^	1	8
+	.	1	7
+	+	1	7
+
+> ~/pyscripts/.envrc
+	*	1716111367	0
+	"	1	13
+	^	1	14
+	.	1	13
+	+	1	13
+
+> ~/bash/logs/download_worker-red.log
+	*	1716111222	0
+	"	7931	0
+
+> ~/bash/python-direnv.bash
+	*	1716111215	0
+	"	2	0
+	^	1	2
+	.	1	1
+	+	5	8
+	+	4	0
+	+	2	25
+	+	5	10
+	+	2	1
+	+	1	1
+
+> /tmp/crontab.aqd1iA/crontab
+	*	1716104421	0
+	"	34	0
+	.	34	0
+	+	34	0
+
+> ~/.vim/syntax/todo.vim
+	*	1716104313	0
+	"	10	0
+	^	10	32
+	.	10	14
+	+	9	75
+	+	10	0
+	+	9	1
+	+	10	14
+
+> ~/.vim/ftplugin/todo.vim
+	*	1716104198	0
+	"	1	0
+	^	28	39
+	.	31	0
+	+	7	28
+	+	9	49
+	+	10	11
+	+	33	11
+	+	35	72
+	+	36	2
+	+	37	0
+	+	13	55
+	+	15	5
+	+	17	7
+	+	19	8
+	+	21	4
+	+	11	0
+	+	11	17
+	+	11	0
+	+	14	23
+	+	23	37
+	+	24	29
+	+	25	50
+	+	32	0
+	+	11	0
+	+	29	4
+	+	29	0
+	+	12	22
+	+	26	7
+	+	29	0
+	+	31	4
+	+	26	7
+	+	31	0
+	+	29	0
+	+	30	0
+	+	27	28
+	+	28	8
+	+	31	0
+
+> ~/hateoas/sample.md
+	*	1716103327	0
+	"	1	0
+	.	1	0
+	+	1	9
+	+	1	0
+	+	1	22
+	+	1	0
+	+	1	8
+	+	1	0
+
+> ~/hateoas/todo.md
+	*	1716103257	0
+	"	1	0
+
+> ~/.vim/filetype.vim
+	*	1716103202	0
+	"	1	0
+	^	2	30
+	.	2	29
+	+	2	29
+
+> ~/hateoas/static/downloads/filter filetype
+	*	1716103161	0
+	"	1	0
+
+> /usr/share/vim/vim90/doc/filetype.txt
+	*	1716103152	0
+	"	180	66
+
+> ~/.vim/plugged/tcomment_vim/doc/tcomment.txt
+	*	1716103143	0
+	"	541	52
+
+> ~/vimfiles/todo/main-2024-05-May.txt
+	*	1716102521	0
+	"	1	0
+
+> ~/hateoas/portionurl_to_download_path.py
+	*	1716100906	0
+	"	5	4
+	.	8	0
+	+	5	39
+	+	5	15
+	+	6	63
+	+	7	65
+	+	8	64
+	+	10	20
+	+	12	0
+	+	3	13
+	+	4	0
+	+	13	6
+	+	13	0
+	+	5	0
+	+	5	40
+	+	5	55
+	+	5	15
+	+	5	0
+	+	5	76
+	+	5	78
+	+	5	4
+	+	5	0
+	+	13	0
+	+	5	0
+	+	8	0
+
+> ~/.vim/ide.vim
+	*	1716100825	0
+	"	471	0
+	^	471	0
+	.	471	0
+	+	183	5
+	+	183	0
+	+	183	35
+	+	183	0
+	+	175	0
+	+	183	0
+	+	175	0
+	+	176	3
+	+	183	0
+	+	180	3
+	+	179	0
+	+	177	59
+	+	182	0
+	+	177	94
+	+	180	81
+	+	182	0
+	+	180	80
+	+	1	150
+	+	143	36
+	+	178	0
+	+	177	0
+	+	178	41
+	+	181	0
+	+	180	0
+	+	181	41
+	+	143	43
+	+	177	4
+	+	178	4
+	+	180	4
+	+	181	4
+	+	296	7
+	+	462	14
+	+	463	0
+	+	464	0
+	+	465	45
+	+	466	0
+	+	69	0
+	+	65	18
+	+	69	0
+	+	234	0
+	+	167	46
+	+	168	0
+	+	154	19
+	+	168	0
+	+	167	34
+	+	134	7
+	+	134	51
+	+	134	0
+	+	134	50
+	+	134	8
+	+	134	38
+	+	134	73
+	+	134	0
+	+	111	0
+	+	111	32
+	+	111	0
+	+	111	16
+	+	111	30
+	+	111	0
+	+	111	45
+	+	111	0
+	+	111	43
+	+	111	0
+	+	111	16
+	+	111	0
+	+	111	24
+	+	134	50
+	+	134	73
+	+	111	0
+	+	134	0
+	+	147	32
+	+	134	0
+	+	154	0
+	+	168	0
+	+	167	34
+	+	143	52
+	+	152	46
+	+	143	45
+	+	152	39
+	+	469	16
+	+	470	23
+	+	471	0
 
 > ~/hateoas/refresh_downloads_table.py
-	*	1715953707	0
-	"	152	0
-	.	36	0
-	+	71	20
-	+	71	0
-	+	71	18
-	+	71	16
-	+	71	18
-	+	71	30
-	+	71	8
-	+	71	0
-	+	71	41
-	+	71	4
-	+	71	16
-	+	71	0
-	+	72	105
-	+	72	24
-	+	72	61
-	+	72	0
-	+	72	59
-	+	72	48
-	+	72	20
-	+	72	8
-	+	72	0
-	+	71	103
-	+	72	0
-	+	72	27
-	+	72	19
-	+	72	24
-	+	72	0
-	+	71	91
-	+	71	28
-	+	71	3
-	+	71	0
-	+	71	30
-	+	71	23
-	+	71	0
-	+	71	16
-	+	71	19
-	+	71	0
-	+	71	19
-	+	71	8
-	+	71	25
-	+	71	0
-	+	71	50
-	+	71	0
-	+	71	14
-	+	71	31
-	+	71	8
-	+	71	22
-	+	71	0
-	+	72	27
-	+	72	24
-	+	72	50
-	+	72	0
-	+	71	34
-	+	71	31
-	+	71	50
-	+	71	41
-	+	71	47
-	+	71	52
-	+	71	8
-	+	71	28
-	+	71	75
-	+	71	33
-	+	71	65
-	+	71	27
-	+	71	24
-	+	71	25
-	+	71	0
-	+	71	24
-	+	71	11
-	+	71	43
-	+	71	0
-	+	72	3
-	+	71	24
-	+	71	47
-	+	71	15
-	+	71	8
-	+	71	14
-	+	71	0
-	+	71	78
-	+	71	31
-	+	71	8
-	+	71	0
-	+	72	0
-	+	71	0
-	+	36	0
-
-> ~/hateoas/populate_test_tasks.py
-	*	1715953366	0
-	"	1	0
-	^	18	23
-	.	21	19
-	+	4	44
-	+	5	0
-	+	6	1
-	+	6	27
-	+	8	0
-	+	6	1
-	+	9	4
-	+	10	0
-	+	7	46
-	+	12	64
-	+	13	28
-	+	14	14
-	+	6	0
-	+	8	14
-	+	14	43
-	+	9	92
+	*	1716100751	0
+	"	3	67
+	^	14	80
+	.	3	68
+	+	17	103
+	+	17	0
+	+	17	27
+	+	17	19
+	+	17	24
+	+	17	0
+	+	17	91
+	+	17	28
+	+	17	3
+	+	17	0
+	+	17	30
+	+	17	23
+	+	17	0
+	+	17	16
+	+	17	19
+	+	17	0
+	+	17	19
+	+	17	8
+	+	17	25
+	+	17	0
+	+	17	50
+	+	17	0
+	+	17	14
+	+	17	31
+	+	17	8
+	+	17	22
+	+	17	0
+	+	17	27
+	+	17	24
+	+	17	50
+	+	17	0
+	+	17	34
+	+	17	31
+	+	17	50
+	+	17	41
+	+	17	47
+	+	17	52
+	+	17	8
+	+	17	28
+	+	17	75
+	+	17	33
 	+	17	65
-	+	18	38
+	+	17	27
+	+	17	24
+	+	17	25
+	+	17	0
+	+	17	24
+	+	17	11
+	+	17	43
+	+	17	0
+	+	17	3
+	+	17	24
+	+	17	47
+	+	17	15
+	+	17	8
+	+	17	14
+	+	17	0
+	+	17	78
+	+	17	31
+	+	17	8
+	+	17	0
+	+	3	67
+	+	17	38
+	+	16	41
+	+	16	37
+	+	16	33
+	+	16	37
+	+	16	33
+	+	16	41
+	+	16	27
+	+	16	23
+	+	16	19
+	+	16	41
+	+	16	37
+	+	16	33
+	+	16	37
+	+	3	89
+	+	16	51
+	+	16	81
+	+	16	77
+	+	16	17
+	+	16	0
+	+	17	0
+	+	21	0
+	+	21	13
+	+	23	87
+	+	24	12
+	+	28	83
+	+	29	12
+	+	30	83
+	+	31	12
+	+	32	13
+	+	33	12
+	+	21	0
+	+	16	0
+	+	3	0
+	+	11	40
+	+	12	4
+	+	3	68
+
+> ~/.vim/plugged/coc.nvim/doc/coc.txt
+	*	1716100293	0
+	"	2564	1
+
+> ~/hateoas/db2dl.py
+	*	1716098950	0
+	"	7	0
+	^	9	59
+	.	7	0
+	+	4	29
+	+	54	29
+	+	54	0
+	+	4	9
+	+	5	10
+	+	10	11
+	+	54	25
+	+	54	4
+	+	54	27
+	+	54	24
+	+	54	11
+	+	54	4
+	+	54	0
+	+	14	27
+	+	15	3
+	+	14	14
+	+	54	0
+	+	15	31
+	+	15	29
+	+	15	0
+	+	54	0
+	+	10	0
+	+	54	0
+	+	6	29
+	+	16	24
+	+	37	30
+	+	37	99
+	+	37	58
+	+	37	40
+	+	37	36
+	+	7	32
+	+	37	15
+	+	37	36
+	+	37	12
+	+	37	11
+	+	37	12
+	+	37	13
+	+	37	12
+	+	37	0
+	+	54	0
+	+	37	0
+	+	37	23
+	+	37	0
+	+	12	0
+	+	13	0
+	+	37	0
+	+	17	25
+	+	18	0
 	+	20	0
-	+	21	1
-	+	18	20
-	+	21	19
+	+	21	7
+	+	7	59
+	+	7	50
+	+	27	44
+	+	37	5
+	+	27	1
+	+	27	65
+	+	28	44
+	+	37	38
+	+	37	0
+	+	28	18
+	+	29	44
+	+	37	0
+	+	29	21
+	+	29	126
+	+	29	7
+	+	30	31
+	+	37	0
+	+	30	60
+	+	32	24
+	+	34	22
+	+	36	0
+	+	37	0
+	+	25	25
+	+	8	20
+	+	33	6
+	+	14	10
+	+	15	0
+	+	14	0
+	+	16	0
+	+	11	0
+	+	14	0
+	+	38	0
+	+	45	0
+	+	49	10
+	+	52	4
+	+	50	7
+	+	46	25
+	+	48	18
+	+	49	0
+	+	25	40
+	+	22	7
+	+	25	0
+	+	13	0
+	+	13	98
+	+	14	0
+	+	12	0
+	+	9	8
+	+	7	0
+
+> ~/.vim/plugged/coc.nvim/doc/coc-config.txt
+	*	1716098745	0
+	"	1643	41
+
+> ~/.vim/coc-settings.json
+	*	1716098606	0
+	"	40	51
+	^	40	52
+	.	40	51
+	+	38	33
+	+	38	35
+	+	38	0
+	+	38	9
+	+	38	0
+	+	38	37
+	+	38	32
+	+	38	34
+	+	38	0
+	+	21	0
+	+	20	39
+	+	21	0
+	+	20	28
+	+	20	37
+	+	2	0
+	+	38	0
+	+	38	11
+	+	38	0
+	+	2	0
+	+	14	0
+	+	15	0
+	+	16	0
+	+	15	0
+	+	2	33
+	+	3	38
+	+	16	0
+	+	4	0
+	+	9	0
+	+	11	0
+	+	20	0
+	+	16	0
+	+	20	0
+	+	21	0
+	+	37	42
+	+	22	0
+	+	37	0
+	+	25	34
+	+	37	0
+	+	35	0
+	+	25	0
+	+	4	0
+	+	23	0
+	+	4	0
+	+	35	0
+	+	26	37
+	+	3	38
+	+	9	0
+	+	6	33
+	+	9	0
+	+	7	49
+	+	9	0
+	+	5	0
+	+	8	131
+	+	7	78
+	+	5	0
+	+	20	0
+	+	59	0
+	+	58	25
+	+	59	0
+	+	77	0
+	+	47	14
+	+	48	44
+	+	46	0
+	+	75	0
+	+	74	0
+	+	71	71
+	+	72	33
+	+	74	0
+	+	73	16
+	+	74	0
+	+	73	25
+	+	72	11
+	+	70	48
+	+	72	30
+	+	70	0
+	+	19	6
+	+	28	29
+	+	35	33
+	+	35	0
+	+	32	0
+	+	28	6
+	+	29	5
+	+	28	0
+	+	32	0
+	+	33	28
+	+	34	32
+	+	37	0
+	+	36	39
+	+	37	0
+	+	42	0
+	+	45	0
+	+	45	69
+	+	45	34
+	+	45	30
+	+	45	44
+	+	45	18
+	+	45	0
+	+	40	51
+
+> /usr/share/vim/vim90/doc/digraph.txt
+	*	1716098093	0
+	"	1229	18
 
 > ~/hateoas/main.sql
-	*	1715952916	0
-	"	42	40
+	*	1716098048	0
+	"	20	0
 	^	42	41
 	.	42	40
 	+	20	260
@@ -9095,6 +10558,518 @@ $
 	+	34	21
 	+	41	4
 	+	42	40
+
+> ~/hateoas/download_queue.py
+	*	1716097984	0
+	"	49	8
+	^	29	22
+	.	29	21
+	+	5	0
+	+	2	30
+	+	3	38
+	+	46	16
+	+	51	16
+	+	4	0
+	+	23	46
+	+	28	0
+	+	23	48
+	+	24	0
+	+	25	5
+	+	52	0
+	+	5	26
+	+	29	21
+
+> ~/hateoas/download_workers.sql
+	*	1716097967	0
+	"	1	0
+	.	1	0
+	+	1	18
+	+	1	15
+	+	1	4
+	+	1	0
+	+	1	40
+	+	1	13
+	+	1	56
+	+	1	0
+	+	1	59
+	+	1	0
+	+	1	58
+	+	1	36
+	+	1	40
+	+	1	76
+	+	1	0
+
+> ~/hateoas/download_table.py
+	*	1716097960	0
+	"	1	0
+	.	1	0
+	+	1	67
+	+	1	1
+	+	1	7
+	+	1	1
+	+	1	0
+	+	1	30
+	+	1	38
+	+	1	0
+	+	1	12
+	+	1	10
+	+	1	4
+	+	1	11
+	+	1	7
+	+	1	6
+	+	1	0
+	+	1	20
+	+	1	6
+	+	1	0
+	+	1	29
+	+	1	77
+	+	1	0
+	+	1	15
+	+	1	0
+	+	1	65
+	+	1	33
+	+	1	0
+	+	1	48
+	+	1	0
+	+	1	4
+	+	1	0
+	+	1	4
+	+	1	25
+	+	1	76
+	+	1	4
+	+	1	0
+	+	1	45
+	+	1	35
+	+	1	2
+	+	1	0
+	+	1	28
+	+	1	0
+	+	1	4
+	+	1	0
+	+	1	19
+	+	1	16
+	+	1	19
+	+	1	0
+
+> /tmp/crontab.AvcEFw/crontab
+	*	1716094491	0
+	"	33	26
+	^	34	2
+	.	34	0
+	+	34	1
+	+	35	0
+	+	34	0
+
+> ~/bash/backup.crontab
+	*	1716094483	0
+	"	1	0
+	^	26	4
+	.	26	3
+	+	26	3
+
+> ~/hateoas/hateoas-api.py
+	*	1716093159	0
+	"	1	0
+	.	108	0
+	+	41	27
+	+	41	108
+	+	41	0
+	+	41	83
+	+	41	0
+	+	41	77
+	+	41	0
+	+	41	88
+	+	41	0
+	+	1	0
+	+	1	58
+	+	1	37
+	+	1	38
+	+	1	4
+	+	1	13
+	+	1	4
+	+	41	124
+	+	41	26
+	+	41	30
+	+	41	0
+	+	41	30
+	+	41	31
+	+	41	0
+	+	41	47
+	+	33	0
+	+	34	0
+	+	34	4
+	+	34	0
+	+	33	49
+	+	33	36
+	+	33	0
+	+	32	86
+	+	10	0
+	+	9	16
+	+	10	0
+	+	9	8
+	+	10	42
+	+	10	0
+	+	1	0
+	+	31	98
+	+	33	82
+	+	41	59
+	+	12	0
+	+	10	21
+	+	10	2
+	+	10	37
+	+	10	4
+	+	10	14
+	+	12	28
+	+	10	37
+	+	41	33
+	+	41	54
+	+	41	0
+	+	41	47
+	+	41	24
+	+	41	101
+	+	41	31
+	+	41	24
+	+	41	0
+	+	41	103
+	+	10	31
+	+	10	66
+	+	41	77
+	+	41	0
+	+	243	0
+	+	232	0
+	+	200	0
+	+	201	28
+	+	217	0
+	+	218	28
+	+	230	0
+	+	217	0
+	+	217	74
+	+	230	55
+	+	230	24
+	+	217	0
+	+	230	0
+	+	224	0
+	+	205	0
+	+	203	0
+	+	215	0
+	+	216	0
+	+	203	0
+	+	204	0
+	+	202	0
+	+	206	118
+	+	220	33
+	+	229	21
+	+	222	0
+	+	224	0
+	+	223	0
+	+	200	23
+	+	18	0
+	+	10	0
+	+	48	0
+	+	11	0
+	+	108	0
+	+	107	5
+	+	108	39
+	+	108	0
+
+> /tmp/crontab.ijHoiK/crontab
+	*	1716092954	0
+	"	1	0
+	.	35	0
+	+	35	0
+
+> /tmp/crontab.PKkqXf/crontab
+	*	1716092554	0
+	"	1	0
+	^	35	2
+	.	35	1
+	+	35	1
+
+> /tmp/crontab.4G5fhU/crontab
+	*	1716092201	0
+	"	35	0
+
+> /tmp/crontab.xHL2AY/crontab
+	*	1716092015	0
+	"	35	0
+	.	35	0
+	+	35	0
+
+> /tmp/crontab.VyfVuP/crontab
+	*	1716091401	0
+	"	35	57
+	^	35	125
+	.	35	124
+	+	35	124
+
+> ~/bash/logs/download_worker-1.log
+	*	1716091391	0
+	"	909	22
+
+> /tmp/crontab.UTeUVl/crontab
+	*	1716091251	0
+	"	35	58
+	^	35	2
+	.	35	1
+	+	35	1
+
+> /tmp/download_worker_red.lock
+	*	1716091089	0
+	"	1	0
+
+> /tmp/crontab.7PKboo/crontab
+	*	1716090945	0
+	"	35	78
+	^	35	79
+	.	35	78
+	+	35	78
+
+> ~/.vim/plugin/run.vim
+	*	1716090754	0
+	"	39	16
+	^	43	17
+	.	43	0
+	+	15	18
+	+	16	0
+	+	46	0
+	+	29	24
+	+	16	17
+	+	29	0
+	+	16	0
+	+	46	0
+	+	46	17
+	+	46	0
+	+	29	28
+	+	29	0
+	+	46	0
+	+	29	0
+	+	46	0
+	+	45	10
+	+	46	8
+	+	46	15
+	+	46	0
+	+	46	17
+	+	46	20
+	+	46	0
+	+	46	38
+	+	46	15
+	+	46	0
+	+	46	19
+	+	46	0
+	+	46	19
+	+	46	18
+	+	46	8
+	+	46	39
+	+	46	16
+	+	46	0
+	+	29	27
+	+	12	10
+	+	12	0
+	+	3	0
+	+	12	0
+	+	45	12
+	+	50	18
+	+	51	0
+	+	54	8
+	+	56	0
+	+	3	0
+	+	2	0
+	+	3	13
+	+	42	0
+	+	29	0
+	+	42	45
+	+	11	0
+	+	18	0
+	+	19	26
+	+	16	0
+	+	19	33
+	+	20	32
+	+	21	0
+	+	20	0
+	+	35	0
+	+	44	0
+	+	35	0
+	+	34	0
+	+	32	0
+	+	30	0
+	+	31	11
+	+	33	0
+	+	22	0
+	+	33	48
+	+	42	0
+	+	37	12
+	+	42	0
+	+	38	71
+	+	39	37
+	+	40	82
+	+	41	12
+	+	42	0
+	+	43	0
+
+> /tmp/crontab.3pYCmC/crontab
+	*	1716090490	0
+	"	1	0
+
+> /tmp/crontab.aN4hCF/crontab
+	*	1716089279	0
+	"	35	1
+	^	35	2
+	.	35	1
+	+	35	1
+
+> /tmp/crontab.47GiU2/crontab
+	*	1716088954	0
+	"	35	0
+	.	35	0
+	+	35	0
+
+> ~/tmp/out-of-memory-error.txt
+	*	1716085484	0
+	"	895	0
+
+> ~/tmp/cron-crash-pid.txt
+	*	1716085177	0
+	"	1	70
+	^	11	71
+	.	11	70
+	+	1	71
+	+	11	70
+
+> /tmp/crontab.of7TIU/crontab
+	*	1716084867	0
+	"	37	0
+
+> ~/bash/logs/download_worker-3.log
+	*	1716084829	0
+	"	1	0
+
+> ~/bash/logs/download_worker-2.log
+	*	1716084802	0
+	"	1	0
+
+> ~/bash/logs/download_worker-4.log
+	*	1716084799	0
+	"	16	0
+
+> /tmp/crontab.5GG2sJ/crontab
+	*	1716084759	0
+	"	35	0
+	.	38	0
+	+	38	0
+
+> /tmp/crontab.cFVSub/crontab
+	*	1716084121	0
+	"	36	83
+
+> /tmp/crontab.hYcAR3/crontab
+	*	1716084000	0
+	"	38	116
+	^	38	117
+	.	38	116
+	+	35	78
+	+	36	0
+	+	37	0
+	+	38	0
+	+	35	116
+	+	36	116
+	+	37	116
+	+	38	116
+
+> ~/hateoas/outline-1.txt
+	*	1716036233	0
+	"	27	0
+	.	28	0
+	+	12	0
+	+	25	82
+	+	26	0
+	+	27	9
+	+	2	0
+	+	12	0
+	+	16	10
+	+	21	10
+	+	12	0
+	+	3	0
+	+	11	0
+	+	17	0
+	+	27	37
+	+	15	39
+	+	27	96
+	+	28	89
+	+	28	0
+
+> ~/hateoas/outlin-1.txt
+	*	1716035953	0
+	"	1	0
+	^	2	0
+	.	2	0
+	+	2	0
+
+> ~/hateoas/.direnv/python-3.10.12/lib/python3.10/site-packages/psutil/__init__.py
+	*	1716035295	0
+	"	1468	4
+
+> ~/hateoas/test_task_worker.py
+	*	1715953731	0
+	"	37	8
+	.	41	0
+	+	2	0
+	+	8	27
+	+	8	64
+	+	8	0
+	+	6	0
+	+	8	1
+	+	10	1
+	+	19	17
+	+	3	10
+	+	21	0
+	+	18	0
+	+	12	0
+	+	14	14
+	+	15	13
+	+	17	11
+	+	13	13
+	+	7	15
+	+	8	22
+	+	7	44
+	+	7	23
+	+	7	26
+	+	7	0
+	+	8	0
+	+	38	0
+	+	34	0
+	+	41	0
+	+	7	0
+	+	34	4
+	+	38	0
+	+	41	0
+
+> ~/hateoas/populate_test_tasks.py
+	*	1715953366	0
+	"	1	0
+	^	18	23
+	.	21	19
+	+	4	44
+	+	5	0
+	+	6	1
+	+	6	27
+	+	8	0
+	+	6	1
+	+	9	4
+	+	10	0
+	+	7	46
+	+	12	64
+	+	13	28
+	+	14	14
+	+	6	0
+	+	8	14
+	+	14	43
+	+	9	92
+	+	17	65
+	+	18	38
+	+	20	0
+	+	21	1
+	+	18	20
+	+	21	19
 
 > ~/hateoas/safe_download_assigner.py
 	*	1715951007	0
@@ -9237,199 +11212,9 @@ $
 	+	7	0
 	+	11	0
 
-> ~/hateoas/hateoas-api.py
-	*	1715947253	0
-	"	424	32
-	.	108	0
-	+	41	27
-	+	41	108
-	+	41	0
-	+	41	83
-	+	41	0
-	+	41	77
-	+	41	0
-	+	41	88
-	+	41	0
-	+	1	0
-	+	1	58
-	+	1	37
-	+	1	38
-	+	1	4
-	+	1	13
-	+	1	4
-	+	41	124
-	+	41	26
-	+	41	30
-	+	41	0
-	+	41	30
-	+	41	31
-	+	41	0
-	+	41	47
-	+	33	0
-	+	34	0
-	+	34	4
-	+	34	0
-	+	33	49
-	+	33	36
-	+	33	0
-	+	32	86
-	+	10	0
-	+	9	16
-	+	10	0
-	+	9	8
-	+	10	42
-	+	10	0
-	+	1	0
-	+	31	98
-	+	33	82
-	+	41	59
-	+	12	0
-	+	10	21
-	+	10	2
-	+	10	37
-	+	10	4
-	+	10	14
-	+	12	28
-	+	10	37
-	+	41	33
-	+	41	54
-	+	41	0
-	+	41	47
-	+	41	24
-	+	41	101
-	+	41	31
-	+	41	24
-	+	41	0
-	+	41	103
-	+	10	31
-	+	10	66
-	+	41	77
-	+	41	0
-	+	243	0
-	+	232	0
-	+	200	0
-	+	201	28
-	+	217	0
-	+	218	28
-	+	230	0
-	+	217	0
-	+	217	74
-	+	230	55
-	+	230	24
-	+	217	0
-	+	230	0
-	+	224	0
-	+	205	0
-	+	203	0
-	+	215	0
-	+	216	0
-	+	203	0
-	+	204	0
-	+	202	0
-	+	206	118
-	+	220	33
-	+	229	21
-	+	222	0
-	+	224	0
-	+	223	0
-	+	200	23
-	+	18	0
-	+	10	0
-	+	48	0
-	+	11	0
-	+	108	0
-	+	107	5
-	+	108	39
-	+	108	0
-
 > ~/.vim/plugged/copilot.vim/doc/copilot.txt
 	*	1715898239	0
 	"	107	41
-
-> ~/.vim/ide.vim
-	*	1715895845	0
-	"	152	41
-	^	152	43
-	.	152	39
-	+	183	5
-	+	183	0
-	+	183	35
-	+	183	0
-	+	175	0
-	+	183	0
-	+	175	0
-	+	176	3
-	+	183	0
-	+	180	3
-	+	179	0
-	+	177	59
-	+	182	0
-	+	177	94
-	+	180	81
-	+	182	0
-	+	180	80
-	+	1	150
-	+	143	36
-	+	178	0
-	+	177	0
-	+	178	41
-	+	181	0
-	+	180	0
-	+	181	41
-	+	143	43
-	+	177	4
-	+	178	4
-	+	180	4
-	+	181	4
-	+	296	7
-	+	462	14
-	+	463	0
-	+	464	0
-	+	465	45
-	+	466	0
-	+	69	0
-	+	65	18
-	+	69	0
-	+	234	0
-	+	167	46
-	+	168	0
-	+	154	19
-	+	168	0
-	+	167	34
-	+	134	7
-	+	134	51
-	+	134	0
-	+	134	50
-	+	134	8
-	+	134	38
-	+	134	73
-	+	134	0
-	+	111	0
-	+	111	32
-	+	111	0
-	+	111	16
-	+	111	30
-	+	111	0
-	+	111	45
-	+	111	0
-	+	111	43
-	+	111	0
-	+	111	16
-	+	111	0
-	+	111	24
-	+	134	50
-	+	134	73
-	+	111	0
-	+	134	0
-	+	147	32
-	+	134	0
-	+	154	0
-	+	168	0
-	+	167	34
-	+	143	52
-	+	152	46
-	+	143	45
-	+	152	39
 
 > ~/bash/logs/gh-timeago-updates.log
 	*	1715895724	0
@@ -9477,115 +11262,9 @@ $
 	+	13	6
 	+	10	0
 
-> ~/.config/atuin/config.toml
-	*	1715118673	0
-	"	39	0
-
 > ~/downloads/autin-completions.fish
 	*	1715086493	0
 	"	42	0
-
-> ~/.config/setup.fish
-	*	1715086276	0
-	"	26	34
-	^	26	34
-	.	27	0
-	+	6	0
-	+	6	4
-	+	6	7
-	+	6	0
-	+	6	21
-	+	6	24
-	+	6	11
-	+	6	0
-	+	6	22
-	+	6	24
-	+	6	22
-	+	6	0
-	+	6	5
-	+	6	40
-	+	9	34
-	+	6	0
-	+	6	43
-	+	6	42
-	+	6	0
-	+	6	45
-	+	6	5
-	+	6	0
-	+	6	9
-	+	6	5
-	+	6	0
-	+	6	9
-	+	6	39
-	+	6	9
-	+	6	0
-	+	6	20
-	+	6	19
-	+	6	23
-	+	6	8
-	+	6	23
-	+	6	9
-	+	6	0
-	+	16	1
-	+	6	0
-	+	20	0
-	+	11	0
-	+	10	0
-	+	12	0
-	+	11	13
-	+	11	0
-	+	22	21
-	+	22	18
-	+	22	0
-	+	22	42
-	+	22	0
-	+	21	0
-	+	22	0
-	+	6	0
-	+	6	44
-	+	6	0
-	+	6	4
-	+	6	0
-	+	6	7
-	+	6	37
-	+	6	24
-	+	6	7
-	+	6	5
-	+	6	25
-	+	6	13
-	+	6	30
-	+	6	7
-	+	6	0
-	+	6	21
-	+	6	0
-	+	8	0
-	+	9	1
-	+	6	0
-	+	9	0
-	+	8	0
-	+	9	32
-	+	6	23
-	+	6	0
-	+	6	19
-	+	6	0
-	+	6	26
-	+	6	10
-	+	6	5
-	+	6	0
-	+	6	37
-	+	6	0
-	+	6	22
-	+	6	58
-	+	6	0
-	+	7	30
-	+	9	18
-	+	22	0
-	+	23	0
-	+	24	0
-	+	23	29
-	+	24	11
-	+	26	34
-	+	27	0
 
 > ~/.config/fish/config.fish
 	*	1715085528	0
@@ -9594,198 +11273,9 @@ $
 	.	3	30
 	+	3	30
 
-> ~/.vim/coc-settings.json
-	*	1715082689	0
-	"	43	8
-	.	43	0
-	+	38	33
-	+	38	35
-	+	38	0
-	+	38	9
-	+	38	0
-	+	38	37
-	+	38	32
-	+	38	34
-	+	38	0
-	+	21	0
-	+	20	39
-	+	21	0
-	+	20	28
-	+	20	37
-	+	2	0
-	+	38	0
-	+	38	11
-	+	38	0
-	+	2	0
-	+	14	0
-	+	15	0
-	+	16	0
-	+	15	0
-	+	2	33
-	+	3	38
-	+	16	0
-	+	4	0
-	+	9	0
-	+	11	0
-	+	20	0
-	+	16	0
-	+	20	0
-	+	21	0
-	+	37	42
-	+	22	0
-	+	37	0
-	+	25	34
-	+	37	0
-	+	35	0
-	+	25	0
-	+	4	0
-	+	23	0
-	+	4	0
-	+	35	0
-	+	26	37
-	+	3	38
-	+	9	0
-	+	6	33
-	+	9	0
-	+	7	49
-	+	9	0
-	+	5	0
-	+	8	131
-	+	7	78
-	+	5	0
-	+	20	0
-	+	57	0
-	+	56	25
-	+	57	0
-	+	75	0
-	+	45	14
-	+	46	44
-	+	44	0
-	+	73	0
-	+	72	0
-	+	69	71
-	+	70	33
-	+	72	0
-	+	71	16
-	+	72	0
-	+	71	25
-	+	70	11
-	+	68	48
-	+	70	30
-	+	68	0
-	+	19	6
-	+	28	29
-	+	35	33
-	+	35	0
-	+	32	0
-	+	28	6
-	+	29	5
-	+	28	0
-	+	32	0
-	+	33	28
-	+	34	32
-	+	37	0
-	+	36	39
-	+	37	0
-	+	40	0
-	+	43	0
-	+	43	69
-	+	43	34
-	+	43	30
-	+	43	44
-	+	43	18
-	+	43	0
-
 > ~/downloads/fish-lsp/bin/fish-lsp
 	*	1715082675	0
 	"	1	0
-
-> ~/.config/functions.fish
-	*	1715082610	0
-	"	26	0
-	^	32	52
-	.	52	0
-	+	56	0
-	+	56	46
-	+	56	17
-	+	56	14
-	+	56	0
-	+	56	9
-	+	56	0
-	+	56	39
-	+	56	17
-	+	56	0
-	+	56	63
-	+	56	29
-	+	56	0
-	+	56	29
-	+	56	0
-	+	56	8
-	+	56	28
-	+	56	45
-	+	56	14
-	+	56	0
-	+	78	0
-	+	67	0
-	+	78	0
-	+	66	0
-	+	67	0
-	+	78	0
-	+	79	23
-	+	84	0
-	+	78	0
-	+	66	0
-	+	67	0
-	+	78	0
-	+	84	0
-	+	78	8
-	+	78	0
-	+	78	10
-	+	72	0
-	+	66	0
-	+	58	0
-	+	66	0
-	+	56	0
-	+	57	0
-	+	65	19
-	+	87	4
-	+	88	3
-	+	93	20
-	+	102	0
-	+	90	26
-	+	93	4
-	+	102	0
-	+	94	15
-	+	99	46
-	+	101	0
-	+	99	8
-	+	99	16
-	+	100	25
-	+	100	0
-	+	93	18
-	+	94	4
-	+	93	20
-	+	98	0
-	+	99	4
-	+	100	4
-	+	99	49
-	+	97	4
-	+	99	35
-	+	56	74
-	+	1	29
-	+	4	23
-	+	1	0
-	+	28	0
-	+	27	0
-	+	29	29
-	+	32	0
-	+	4	45
-	+	4	0
-	+	21	27
-	+	51	27
-	+	32	51
-	+	51	27
-	+	52	0
 
 > /tmp/test_do_complete/a.txt
 	*	1715037925	0
@@ -9807,96 +11297,6 @@ $
 	.	1	0
 	+	1	0
 
-> ~/.vim/vimrc
-	*	1714990094	0
-	"	46	22
-	^	46	23
-	.	46	22
-	+	1355	23
-	+	1355	1
-	+	1355	0
-	+	1355	30
-	+	1355	0
-	+	1355	16
-	+	1355	0
-	+	1355	70
-	+	1355	0
-	+	1355	22
-	+	1355	0
-	+	1355	27
-	+	1355	0
-	+	1355	30
-	+	1355	13
-	+	1355	16
-	+	1355	0
-	+	1355	19
-	+	1355	5
-	+	1355	80
-	+	1355	22
-	+	1355	0
-	+	1355	21
-	+	1355	28
-	+	1355	22
-	+	1355	71
-	+	1355	8
-	+	1355	24
-	+	1355	40
-	+	1355	0
-	+	1355	39
-	+	1355	0
-	+	1355	19
-	+	1355	0
-	+	1355	38
-	+	1355	21
-	+	1355	0
-	+	1355	10
-	+	1355	25
-	+	1355	0
-	+	1355	32
-	+	1355	0
-	+	1355	10
-	+	1355	0
-	+	1355	25
-	+	1355	10
-	+	1355	0
-	+	1355	60
-	+	1355	0
-	+	1355	55
-	+	1355	0
-	+	1355	44
-	+	1355	0
-	+	1355	19
-	+	1355	71
-	+	1355	0
-	+	1355	23
-	+	1355	41
-	+	1355	44
-	+	1355	40
-	+	1355	28
-	+	1355	0
-	+	1355	11
-	+	1355	18
-	+	1355	43
-	+	1355	64
-	+	1355	54
-	+	1355	0
-	+	1355	31
-	+	1355	0
-	+	1355	6
-	+	1355	0
-	+	1355	1
-	+	1355	0
-	+	1355	80
-	+	1355	75
-	+	1355	0
-	+	1355	52
-	+	1355	41
-	+	161	0
-	+	48	26
-	+	1355	0
-	+	47	0
-	+	46	22
-
 > /usr/share/fish/functions/__fish_complete_suffix.fish
 	*	1714949681	0
 	"	10	9
@@ -9909,128 +11309,12 @@ $
 	*	1714946202	0
 	"	1	0
 
-> ~/.config/setup.sh
-	*	1714944476	0
-	"	6	0
-	^	24	2
-	.	24	1
-	+	13	68
-	+	13	27
-	+	5	0
-	+	4	1
-	+	13	34
-	+	4	0
-	+	5	0
-	+	13	0
-	+	4	0
-	+	13	0
-	+	3	0
-	+	4	0
-	+	13	0
-	+	5	0
-	+	13	0
-	+	13	1
-	+	13	8
-	+	13	10
-	+	13	155
-	+	13	8
-	+	13	123
-	+	13	0
-	+	24	26
-	+	25	27
-	+	7	41
-	+	9	23
-	+	12	0
-	+	9	75
-	+	12	0
-	+	9	63
-	+	12	0
-	+	9	54
-	+	13	71
-	+	13	89
-	+	13	0
-	+	11	38
-	+	10	0
-	+	10	13
-	+	10	0
-	+	13	9
-	+	13	17
-	+	26	0
-	+	4	0
-	+	15	0
-	+	13	14
-	+	27	34
-	+	9	0
-	+	9	29
-	+	1	11
-	+	13	0
-	+	14	0
-	+	13	0
-	+	23	0
-	+	9	0
-	+	10	0
-	+	13	0
-	+	27	0
-	+	8	0
-	+	13	0
-	+	42	35
-	+	25	1
-	+	28	0
-	+	42	0
-	+	25	0
-	+	26	0
-	+	24	0
-	+	21	0
-	+	16	0
-	+	44	45
-	+	41	1
-	+	42	0
-	+	36	42
-	+	1	1
-	+	24	1
-
 > ~/.config/bindings.inputrc
 	*	1714944409	0
 	"	2	0
 	^	16	30
 	.	16	29
 	+	16	29
-
-> ~/.config/alias.sh
-	*	1714776216	0
-	"	20	1
-	^	20	2
-	.	20	1
-	+	2	0
-	+	16	37
-	+	20	77
-	+	20	42
-	+	20	47
-	+	20	32
-	+	21	39
-	+	22	40
-	+	23	79
-	+	23	0
-	+	23	36
-	+	23	20
-	+	23	25
-	+	24	45
-	+	25	0
-	+	23	0
-	+	20	0
-	+	24	19
-	+	17	60
-	+	19	0
-	+	20	0
-	+	18	13
-	+	20	10
-	+	19	0
-	+	11	0
-	+	10	72
-	+	9	6
-	+	20	1
-	+	21	0
-	+	20	1
 
 > ~/.config/fish/completions/fisher.fish
 	*	1714775966	0
@@ -10147,46 +11431,6 @@ $
 	+	5	0
 	+	9	1
 
-> ~/.bashrc
-	*	1714640167	0
-	"	123	18
-	.	121	0
-	+	121	0
-	+	121	55
-	+	121	0
-	+	121	47
-	+	126	0
-	+	121	0
-	+	126	0
-	+	125	0
-	+	129	0
-	+	130	0
-	+	120	0
-	+	123	0
-	+	118	0
-	+	120	0
-	+	123	0
-	+	6	5
-	+	5	0
-	+	6	0
-	+	124	0
-	+	109	0
-	+	120	0
-	+	114	5
-	+	115	4
-	+	116	0
-	+	117	4
-	+	115	0
-	+	115	4
-	+	117	0
-	+	116	4
-	+	114	4
-	+	118	0
-	+	112	0
-	+	115	0
-	+	123	0
-	+	121	0
-
 > ~/.zshrc
 	*	1714640157	0
 	"	103	24
@@ -10199,29 +11443,9 @@ $
 	*	1714637566	0
 	"	1	0
 
-> ~/.vim/plugged/coc.nvim/doc/coc.txt
-	*	1714633430	0
-	"	1756	1
-
-> ~/.vim/plugged/coc.nvim/doc/coc-config.txt
-	*	1714631550	0
-	"	1722	24
-
 > ~/.vim/plugged/direnv.vim/doc/direnv.txt
 	*	1714631246	0
 	"	102	0
-
-> ~/bash/python-direnv.bash
-	*	1714631174	0
-	"	1	0
-	^	1	2
-	.	1	1
-	+	5	8
-	+	4	0
-	+	2	25
-	+	5	10
-	+	2	1
-	+	1	1
 
 > /usr/share/vim/vim90/doc/editing.txt
 	*	1714630431	0
@@ -10358,10 +11582,6 @@ $
 
 > ~/vimfiles/todo/240502.txt
 	*	1714594063	0
-	"	1	0
-
-> ~/vimfiles/todo/main-2024-05-May.txt
-	*	1714594061	0
 	"	1	0
 
 > ~/tooling/sample.txt
@@ -10630,33 +11850,6 @@ $
 	*	1714412918	0
 	"	34	29
 
-> ~/hateoas/download_workers.sql
-	*	1714389969	0
-	"	5	30
-	^	5	31
-	.	5	31
-	+	1	18
-	+	14	15
-	+	4	4
-	+	6	0
-	+	13	0
-	+	4	40
-	+	9	13
-	+	11	56
-	+	1	0
-	+	11	59
-	+	12	0
-	+	11	58
-	+	9	36
-	+	10	40
-	+	11	76
-	+	3	0
-	+	5	31
-
-> ~/hateoas/portionurl_to_download_path.py
-	*	1714383523	0
-	"	1	0
-
 > ~/hateoas/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/error.py
 	*	1714383226	0
 	"	29	0
@@ -10668,109 +11861,6 @@ $
 > /usr/lib/python3.10/signal.py
 	*	1714381527	0
 	"	55	4
-
-> ~/hateoas/db2dl.py
-	*	1714379247	0
-	"	11	0
-	^	10	59
-	.	10	8
-	+	4	29
-	+	55	29
-	+	55	0
-	+	4	9
-	+	5	10
-	+	11	11
-	+	55	25
-	+	55	4
-	+	55	27
-	+	55	24
-	+	55	11
-	+	55	4
-	+	55	0
-	+	15	27
-	+	16	3
-	+	15	14
-	+	55	0
-	+	16	31
-	+	16	29
-	+	16	0
-	+	55	0
-	+	11	0
-	+	55	0
-	+	6	29
-	+	17	24
-	+	38	30
-	+	38	99
-	+	38	58
-	+	38	40
-	+	38	36
-	+	7	32
-	+	38	15
-	+	38	36
-	+	38	12
-	+	38	11
-	+	38	12
-	+	38	13
-	+	38	12
-	+	38	0
-	+	55	0
-	+	38	0
-	+	38	23
-	+	38	0
-	+	13	0
-	+	14	0
-	+	38	0
-	+	18	25
-	+	19	0
-	+	21	0
-	+	22	7
-	+	7	59
-	+	8	50
-	+	28	44
-	+	38	5
-	+	28	1
-	+	28	65
-	+	29	44
-	+	38	38
-	+	38	0
-	+	29	18
-	+	30	44
-	+	38	0
-	+	30	21
-	+	30	126
-	+	30	7
-	+	31	31
-	+	38	0
-	+	31	60
-	+	33	24
-	+	35	22
-	+	37	0
-	+	38	0
-	+	26	25
-	+	9	20
-	+	34	6
-	+	15	10
-	+	16	0
-	+	15	0
-	+	17	0
-	+	12	0
-	+	15	0
-	+	39	0
-	+	46	0
-	+	50	10
-	+	53	4
-	+	51	7
-	+	47	25
-	+	49	18
-	+	50	0
-	+	26	40
-	+	23	7
-	+	26	0
-	+	14	0
-	+	14	98
-	+	15	0
-	+	13	0
-	+	10	8
 
 > ~/tooling/cron-concerns.txt
 	*	1714378867	0
@@ -12483,10 +13573,6 @@ $
 	*	1713876825	0
 	"	246	35
 
-> /usr/share/vim/vim90/doc/filetype.txt
-	*	1713876739	0
-	"	780	24
-
 > /tmp/crontab.BPvd3h/crontab
 	*	1713853059	0
 	"	26	0
@@ -12839,13 +13925,6 @@ $
 	.	26	3
 	+	26	3
 
-> ~/bash/backup.crontab
-	*	1713767849	0
-	"	26	3
-	^	26	4
-	.	26	3
-	+	26	3
-
 > ~/.config/.gitignore
 	*	1713767792	0
 	"	4	0
@@ -12904,34 +13983,6 @@ $
 > ~/bash/logs/cron.log
 	*	1713759322	0
 	"	1	0
-
-> ~/genproject/python.sh
-	*	1713759315	0
-	"	41	0
-	^	57	51
-	.	41	0
-	+	6	0
-	+	2	0
-	+	4	9
-	+	11	9
-	+	17	9
-	+	42	0
-	+	55	26
-	+	56	0
-	+	57	8
-	+	39	6
-	+	41	0
-	+	40	0
-	+	41	0
-	+	23	15
-	+	45	0
-	+	36	13
-	+	53	4
-	+	57	1
-	+	28	6
-	+	41	1
-	+	57	35
-	+	41	0
 
 > ~/tmp1-python/.envrc
 	*	1713759069	0
@@ -13037,10 +14088,6 @@ $
 > /tmp/mcfly.7lyE3nZu
 	*	1713757330	0
 	"	106	0
-
-> ~/.config/shell_data/.bash_history
-	*	1713756543	0
-	"	1	0
 
 > ~/.tig_history
 	*	1713756381	0
@@ -13854,10 +14901,6 @@ $
 	*	1713515147	0
 	"	1	0
 
-> /usr/share/vim/vim90/doc/digraph.txt
-	*	1713507516	0
-	"	1488	0
-
 > ~/.vim/plugin/sqlite.vim
 	*	1713506648	0
 	"	37	0
@@ -14070,79 +15113,6 @@ $
 > /usr/share/vim/vim90/doc/map.txt
 	*	1713436409	0
 	"	723	0
-
-> ~/.vim/plugin/run.vim
-	*	1713435510	0
-	"	27	8
-	^	33	47
-	.	33	48
-	+	15	18
-	+	16	0
-	+	39	0
-	+	29	24
-	+	16	17
-	+	29	0
-	+	16	0
-	+	39	0
-	+	39	17
-	+	39	0
-	+	29	28
-	+	29	0
-	+	39	0
-	+	29	0
-	+	39	0
-	+	38	10
-	+	39	8
-	+	39	15
-	+	39	0
-	+	39	17
-	+	39	20
-	+	39	0
-	+	39	38
-	+	39	15
-	+	39	0
-	+	39	19
-	+	39	0
-	+	39	19
-	+	39	18
-	+	39	8
-	+	39	39
-	+	39	16
-	+	39	0
-	+	29	27
-	+	12	10
-	+	12	0
-	+	3	0
-	+	12	0
-	+	38	12
-	+	43	18
-	+	44	0
-	+	47	8
-	+	49	0
-	+	3	0
-	+	2	0
-	+	3	13
-	+	36	0
-	+	29	0
-	+	36	45
-	+	11	0
-	+	18	0
-	+	19	26
-	+	16	0
-	+	19	33
-	+	20	32
-	+	21	0
-	+	20	0
-	+	35	0
-	+	37	0
-	+	35	0
-	+	34	0
-	+	32	0
-	+	30	0
-	+	31	11
-	+	33	0
-	+	22	0
-	+	33	48
 
 > ~/downloads/target/t1.txt
 	*	1713435054	0
@@ -14493,113 +15463,6 @@ $
 	+	7	0
 	+	8	0
 	+	7	0
-
-> ~/Twitch/coffee-vps/flask-vue/api.py
-	*	1713267803	0
-	"	186	4
-	.	13	0
-	+	710	23
-	+	710	0
-	+	1	0
-	+	710	0
-	+	1	0
-	+	710	0
-	+	1	0
-	+	710	0
-	+	1	0
-	+	710	0
-	+	1	0
-	+	710	0
-	+	1	0
-	+	710	0
-	+	1	0
-	+	710	0
-	+	1	0
-	+	1	12
-	+	1	0
-	+	714	0
-	+	1	0
-	+	717	0
-	+	1	12
-	+	1	0
-	+	710	0
-	+	712	37
-	+	1	0
-	+	718	0
-	+	1	58
-	+	1	0
-	+	714	0
-	+	712	0
-	+	714	0
-	+	712	4
-	+	1	0
-	+	1	15
-	+	1	0
-	+	1	34
-	+	1	0
-	+	1	20
-	+	1	0
-	+	1	8
-	+	1	0
-	+	1	31
-	+	1	36
-	+	1	11
-	+	1	12
-	+	1	11
-	+	712	0
-	+	239	17
-	+	233	0
-	+	243	0
-	+	228	30
-	+	228	0
-	+	232	0
-	+	231	28
-	+	240	7
-	+	242	8
-	+	243	0
-	+	90	0
-	+	7	11
-	+	90	0
-	+	34	0
-	+	33	0
-	+	90	0
-	+	93	0
-	+	94	0
-	+	90	0
-	+	93	0
-	+	106	0
-	+	99	0
-	+	98	0
-	+	240	0
-	+	241	22
-	+	241	23
-	+	238	14
-	+	238	19
-	+	238	16
-	+	241	0
-	+	240	31
-	+	225	0
-	+	219	4
-	+	214	0
-	+	217	7
-	+	218	11
-	+	240	0
-	+	238	0
-	+	240	0
-	+	448	7
-	+	452	30
-	+	452	0
-	+	425	0
-	+	424	0
-	+	424	13
-	+	424	18
-	+	424	14
-	+	424	0
-	+	234	0
-	+	233	1
-	+	13	0
-	a	231	28
-	b	231	29
 
 > ~/Twitch/coffee-vps/flask-vue/requirements.txt
 	*	1713267134	0
@@ -20974,10 +21837,6 @@ $
 > ~/.vim/plugin/profile.vim
 	*	1694107247	0
 	"	109	0
-
-> ~/.vim/colors/apprentice_extended.vim
-	*	1694087322	0
-	"	1	0
 
 > ~/.vim/colors/apprentice.vim
 	*	1694087319	0

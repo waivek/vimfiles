@@ -33,7 +33,14 @@ function! s:RunPython()
             let command = 'vert terminal python -m waivek.' . filename_without_extension
 
         else
-            let command = 'vert terminal python %'
+            let last_line = getline("$")
+            if last_line =~ '^# run.vim:'
+                let args = substitute(last_line, '^# run.vim:', '', '')
+                let args = trim(args)
+                let command = 'vert terminal python ' . expand("%:p") . ' ' . args
+            else
+                let command = 'vert terminal python %'
+            endif
         endif
         call s:RunTerminalCommand(command)
     endif

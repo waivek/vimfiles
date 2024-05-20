@@ -465,3 +465,7 @@ if has('win32')
 else
     let g:vimspector_base_dir = expand('~/.vim/vimspector')
 endif
+
+command! Usages call CocActionAsync('jumpUsed')
+map <space>u :Usages<CR>
+
