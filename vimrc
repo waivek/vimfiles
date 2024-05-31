@@ -1148,13 +1148,13 @@ endfunction
 
 function! s:GrepAbbrev()
     if &filetype ==# "vim"
-        return "grep -g '*.vim' -g 'vimrc'"
+        return "grep -g '*.vim' -g 'vimrc' --fixed-strings"
     endif
     let extension = expand("%:e")
     if extension == ""
-        return "grep -g '*.". &filetype . "'"
+        return "grep -g '*.". &filetype . "' --fixed-strings"
     endif
-    return "grep -g '*.". extension . "'"
+    return "grep -g '*.". extension . "' --fixed-strings"
 endfunction
 
 
