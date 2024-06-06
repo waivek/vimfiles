@@ -34,6 +34,14 @@ function! s:GithubInfo(path)
 endfunction
 
 function! s:PrintGitHubURLs()
+    if s:FindRoot() == ''
+        echo  "Not a git repository"
+        return
+    endif
+    if expand("%:p") == ''
+        echo "No file name"
+        return
+    endif
     let l:git_info_dict = s:GithubInfo(expand("%:p"))
     echo l:git_info_dict
     let l:user = l:git_info_dict['user']
