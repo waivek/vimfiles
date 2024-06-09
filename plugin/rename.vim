@@ -1,3 +1,8 @@
+function! s:CustomComplete(ArgLead, CmdLine, CursorPos)
+    let l:basename = expand("%:t")
+    let l:candidates = [l:basename]
+    return l:candidates
+endfunction
 
 function! s:Rename(new_name)
     if match(a:new_name, '^\(\f\| \)\+$') == -1
@@ -22,4 +27,5 @@ function! s:Rename(new_name)
     bd #
     " This is required to update the value of expand("%")
 endfunction
-command -complete=file -nargs=1 Rename call  s:Rename(<q-args>)
+" command -complete=file -nargs=1 Rename call  s:Rename(<q-args>)
+command -complete=customlist,s:CustomComplete -nargs=1 Rename call  s:Rename(<q-args>)

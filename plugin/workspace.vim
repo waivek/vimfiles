@@ -26,7 +26,8 @@ endfunction
 function! s:DirChangedOrFileLoaded()
     let l:directories_to_paths = {
         \ '~/sqlite-editor': [ '~/sqlite-editor/static/css' ],
-        \ '~/hateoas': [ '~/hateoas/static/css' ]
+        \ '~/hateoas': [ '~/hateoas/static/css' ],
+        \ '~/ui-components-css': [ '~/ui-components-css/static/**', '~/ui-components-css/templates' ]
         \ }
     " run s:ExpandUser on l:directories_to_paths
     for l:key in keys(l:directories_to_paths)
@@ -45,6 +46,8 @@ function! s:DirChangedOrFileLoaded()
         return
     endif
     let l:paths = l:directories_to_paths[l:candidate]
+    " reset path
+    setlocal path=.,
     for l:path in l:paths
         let l:full_path = s:ExpandUser(l:path)
         " set local path

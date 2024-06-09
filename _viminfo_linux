@@ -11,21 +11,297 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/(5)
+~MSle0~/\C\<table\>
 
 # Last Substitute Search Pattern:
-~MSle0&Time taken
+~MSle0&\/sumbit
 
 # Last Substitute String:
-$ 
+${{ url_for('noop') }}
 
 # Command Line History (newest to oldest):
-:q
-|2,0,1717616861,,"q"
-:q!
-|2,0,1717615401,,"q!"
 :qa
-|2,0,1717615397,,"qa"
+|2,0,1717917520,,"qa"
+:saveas static/css-resets/reset.css
+|2,0,1717917452,,"saveas static/css-resets/reset.css"
+:FIND reset
+|2,0,1717917441,,"FIND reset"
+:FIND reset.css
+|2,0,1717917438,,"FIND reset.css"
+:saveas static/css-resets/button-reset.css
+|2,0,1717917416,,"saveas static/css-resets/button-reset.css"
+:saveas css
+|2,0,1717917396,,"saveas css"
+:FIND rese
+|2,0,1717917392,,"FIND rese"
+:e re
+|2,0,1717917380,,"e re"
+:e reset
+|2,0,1717917377,,"e reset"
+:e css-resets/button-reset.css
+|2,0,1717917366,,"e css-resets/button-reset.css"
+:%s/\/sumbit/{{ url_for('noop') }}
+|2,0,1717915843,,"%s/\\/sumbit/{{ url_for('noop') }}"
+:%s/\/submit/{{ url_for('noop') }}
+|2,0,1717915829,,"%s/\\/submit/{{ url_for('noop') }}"
+:FIND api
+|2,0,1717915764,,"FIND api"
+:FIND ele
+|2,0,1717915763,,"FIND ele"
+:set path?
+|2,0,1717915755,,"set path?"
+:FormTag
+|2,0,1717915690,,"FormTag"
+:put='hello'
+|2,0,1717915594,,"put='hello'"
+:put=hello
+|2,0,1717915590,,"put=hello"
+:put=<input type="submit" value="Submit">
+|2,0,1717915581,,"put=<input type=\"submit\" value=\"Submit\">"
+:.-1put='<input type="submit" value="Submit">'
+|2,0,1717915577,,".-1put='<input type=\"submit\" value=\"Submit\">'"
+:.-1put=<input type="submit" value="Submit">
+|2,0,1717915569,,".-1put=<input type=\"submit\" value=\"Submit\">"
+:HotReload
+|2,0,1717915504,,"HotReload"
+:normal ysiT<form>
+|2,0,1717915489,,"normal ysiT<form>"
+:e ~/.vim/temp/form-tag-macro.vim
+|2,0,1717915459,,"e ~/.vim/temp/form-tag-macro.vim"
+:FIND html-elements.html
+|2,0,1717915286,,"FIND html-elements.html"
+:e templates/base.html
+|2,0,1717915275,,"e templates/base.html"
+:FIND elem
+|2,0,1717915263,,"FIND elem"
+:e
+|2,0,1717914359,,"e"
+:so %
+|2,0,1717914357,,"so %"
+:MRU workspa
+|2,0,1717914317,,"MRU workspa"
+:FIND 
+|2,0,1717914061,,"FIND "
+:b ui-components-css-api.py
+|2,0,1717914059,,"b ui-components-css-api.py"
+:FIND windows-desktop-css-paths.txt
+|2,0,1717914021,,"FIND windows-desktop-css-paths.txt"
+:h path?
+|2,0,1717913997,,"h path?"
+:FIND h
+|2,0,1717913981,,"FIND h"
+:FIND html
+|2,0,1717913979,,"FIND html"
+:FIND aliases.h
+|2,0,1717913977,,"FIND aliases.h"
+:MRU worksp
+|2,0,1717913927,,"MRU worksp"
+:e ui-components-css-api.py
+|2,0,1717913922,,"e ui-components-css-api.py"
+:e static/css-utilities/reset.css
+|2,0,1717913679,,"e static/css-utilities/reset.css"
+:e templates/html-elements.html
+|2,0,1717913342,,"e templates/html-elements.html"
+:q
+|2,0,1717913069,,"q"
+:e ~/servers/ui-components-css.config.js
+|2,0,1717913008,,"e ~/servers/ui-components-css.config.js"
+:e ~/servers/hateoas.config.js
+|2,0,1717912985,,"e ~/servers/hateoas.config.js"
+:q!
+|2,0,1717912979,,"q!"
+:Template flask
+|2,0,1717912855,,"Template flask"
+:e ~/.vim/templates/flask.py
+|2,0,1717912726,,"e ~/.vim/templates/flask.py"
+:e ~/.vim/templates/template.py
+|2,0,1717912717,,"e ~/.vim/templates/template.py"
+:MRU hate*ap
+|2,0,1717912684,,"MRU hate*ap"
+:MRU hate
+|2,0,1717912679,,"MRU hate"
+:e ~/hateoas/requirements.txt
+|2,0,1717912128,,"e ~/hateoas/requirements.txt"
+:e 
+|2,0,1717912112,,"e "
+:cd ~/hateoas
+|2,0,1717911988,,"cd ~/hateoas"
+:MRU hateo
+|2,0,1717911983,,"MRU hateo"
+:pwd
+|2,0,1717911978,,"pwd"
+:FIND base
+|2,0,1717911973,,"FIND base"
+:CocRestart
+|2,0,1717911923,,"CocRestart"
+:CocConfig
+|2,0,1717911847,,"CocConfig"
+:CocList
+|2,0,1717911817,,"CocList"
+:PlugStatus
+|2,0,1717911807,,"PlugStatus"
+:Pluglist
+|2,0,1717911803,,"Pluglist"
+:Coc
+|2,0,1717911784,,"Coc"
+:ALEInfo
+|2,0,1717911778,,"ALEInfo"
+:CocInfo
+|2,0,1717911732,,"CocInfo"
+:e ~/hateoas/templates/base.html
+|2,0,1717911531,,"e ~/hateoas/templates/base.html"
+:Copilot panel
+|2,0,1717911451,,"Copilot panel"
+:e usage.md
+|2,0,1717911366,,"e usage.md"
+:e *.md
+|2,0,1717911363,,"e *.md"
+:MRU edi*css
+|2,0,1717911323,,"MRU edi*css"
+:MRU editor.css
+|2,0,1717911319,,"MRU editor.css"
+:e reset.css
+|2,0,1717910996,,"e reset.css"
+:MRU edi
+|2,0,1717910931,,"MRU edi"
+:e hateoas.css
+|2,0,1717910929,,"e hateoas.css"
+:set nonumber
+|2,0,1717910556,,"set nonumber"
+:e static/css-utilities/wide-tall.css
+|2,0,1717910495,,"e static/css-utilities/wide-tall.css"
+:e css-defaults/
+|2,0,1717910441,,"e css-defaults/"
+:colo morning
+|2,0,1717883218,,"colo morning"
+:colo codedark
+|2,0,1717883216,,"colo codedark"
+:colo onedark
+|2,0,1717883207,,"colo onedark"
+:hi ClapDisplay
+|2,0,1717883203,,"hi ClapDisplay"
+:colo nord
+|2,0,1717883197,,"colo nord"
+:col
+|2,0,1717883186,,"col"
+:colo apprentice
+|2,0,1717883183,,"colo apprentice"
+:hi todoLabel
+|2,0,1717883132,,"hi todoLabel"
+:e!
+|2,0,1717883120,,"e!"
+:b syntax/todo.vim
+|2,0,1717883102,,"b syntax/todo.vim"
+:so /usr/share/vim/vim90/syntax/hitest.vim
+|2,0,1717883083,,"so /usr/share/vim/vim90/syntax/hitest.vim"
+:helpgrep hitest
+|2,0,1717883074,,"helpgrep hitest"
+:hi Identifier
+|2,0,1717882695,,"hi Identifier"
+:MRU py
+|2,0,1717882684,,"MRU py"
+:e syntax/todo.vim
+|2,0,1717882628,,"e syntax/todo.vim"
+:Ftplugin
+|2,0,1717882621,,"Ftplugin"
+:Renam
+|2,0,1717882526,,"Renam"
+:b!# | bd! #
+|2,0,1717882413,,"b!# | bd! #"
+:MRU us
+|2,0,1717882401,,"MRU us"
+:%sort! n
+|2,0,1717856611,,"%sort! n"
+:%!uniq -c
+|2,0,1717856608,,"%!uniq -c"
+:%sort
+|2,0,1717856605,,"%sort"
+:%sort 
+|2,0,1717856577,,"%sort "
+:e windows-desktop-css-paths.txt
+|2,0,1717856546,,"e windows-desktop-css-paths.txt"
+:e previous-attempts.txt
+|2,0,1717853860,,"e previous-attempts.txt"
+:Rename usage.md
+|2,0,1717853773,,"Rename usage.md"
+:Tab /,/
+|2,0,1717852869,,"Tab /,/"
+:echo undofile("%")
+|2,0,1717852042,,"echo undofile(\"%\")"
+:echo undofile()
+|2,0,1717852040,,"echo undofile()"
+:Rename usage.
+|2,0,1717851986,,"Rename usage."
+:Rename usage.css
+|2,0,1717851974,,"Rename usage.css"
+:Rename rename.vim
+|2,0,1717851955,,"Rename rename.vim"
+:Rename b
+|2,0,1717851934,,"Rename b"
+:Rename 
+|2,0,1717851927,,"Rename "
+:FIND ren
+|2,0,1717851872,,"FIND ren"
+:fi
+|2,0,1717851869,,"fi"
+:edit $MYVIMRC
+|2,0,1717851867,,"edit $MYVIMRC"
+:CD plugin
+|2,0,1717851863,,"CD plugin"
+:verbose command R
+|2,0,1717851860,,"verbose command R"
+:Rename css-defaults/
+|2,0,1717851857,,"Rename css-defaults/"
+:e usage.css
+|2,0,1717851812,,"e usage.css"
+:b hateo
+|2,0,1717688609,,"b hateo"
+:echo g:WorkspaceFolders
+|2,0,1717672172,,"echo g:WorkspaceFolders"
+:Rename sync_video_on_video.html
+|2,0,1717672150,,"Rename sync_video_on_video.html"
+:e templates/sync_video_to_video.html
+|2,0,1717672136,,"e templates/sync_video_to_video.html"
+:e templates/nav.html
+|2,0,1717672127,,"e templates/nav.html"
+:MRU Chart
+|2,0,1717670039,,"MRU Chart"
+:Jprevious
+|2,0,1717669383,,"Jprevious"
+:e Types.py
+|2,0,1717669222,,"e Types.py"
+:e data/offsets/2120649324.json
+|2,0,1717669212,,"e data/offsets/2120649324.json"
+:e data/offsets/
+|2,0,1717668098,,"e data/offsets/"
+:e hateoas-api.py
+|2,0,1717665621,,"e hateoas-api.py"
+:CocList diagnostics
+|2,0,1717658321,,"CocList diagnostics"
+:OpenDB data/videos.db
+|2,0,1717658288,,"OpenDB data/videos.db"
+:MRU get.py
+|2,0,1717658094,,"MRU get.py"
+:MRU age
+|2,0,1717658091,,"MRU age"
+:CocList -I quickfix references
+|2,0,1717657994,,"CocList -I quickfix references"
+:copen
+|2,0,1717657987,,"copen"
+:CocList errors
+|2,0,1717657983,,"CocList errors"
+:C
+|2,0,1717657967,,"C"
+:cn
+|2,0,1717657963,,"cn"
+:register
+|2,0,1717650874,,"register"
+:reg
+|2,0,1717650656,,"reg"
+:e ~/.vim/_viminfo_linux
+|2,0,1717650653,,"e ~/.vim/_viminfo_linux"
+:MRU _vim
+|2,0,1717650648,,"MRU _vim"
 :683
 |2,0,1717612762,,"683"
 :666
@@ -38,8 +314,6 @@ $
 |2,0,1717610080,,"e chat.py"
 :e requirements.txt
 |2,0,1717610053,,"e requirements.txt"
-:CocList diagnostics
-|2,0,1717610028,,"CocList diagnostics"
 :MRU chat
 |2,0,1717609788,,"MRU chat"
 :e download_worker.py
@@ -48,40 +322,26 @@ $
 |2,0,1717510147,,"CocOutline"
 :766
 |2,0,1717509336,,"766"
-:e Types.py
-|2,0,1717508707,,"e Types.py"
 :b
 |2,0,1717435037,,"b"
-:e templates/base.html
-|2,0,1717434857,,"e templates/base.html"
 :e base
 |2,0,1717434854,,"e base"
 :CocList dia
 |2,0,1717434613,,"CocList dia"
-:e templates/nav.html
-|2,0,1717237959,,"e templates/nav.html"
 :GFiles
 |2,0,1717237950,,"GFiles"
 :FIND css
 |2,0,1717236384,,"FIND css"
-:FIND api
-|2,0,1717236374,,"FIND api"
 :b ~/hateoas/download_worker.py
 |2,0,1717236372,,"b ~/hateoas/download_worker.py"
 :MRU downl
 |2,0,1717236309,,"MRU downl"
 :enew
 |2,0,1717236274,,"enew"
-:so %
-|2,0,1717235773,,"so %"
 :MRU work
 |2,0,1717235750,,"MRU work"
 :e static/da
 |2,0,1717235746,,"e static/da"
-:set path?
-|2,0,1717235740,,"set path?"
-:pwd
-|2,0,1717235738,,"pwd"
 :FIND edi
 |2,0,1717235704,,"FIND edi"
 :FIND editor-api.py
@@ -108,8 +368,6 @@ $
 |2,0,1717231915,,"FIND bas"
 :FIND
 |2,0,1717231909,,"FIND"
-:FIND aliases.h
-|2,0,1717231898,,"FIND aliases.h"
 :FIND apprentice_extended.vim
 |2,0,1717231886,,"FIND apprentice_extended.vim"
 :find editor.css
@@ -118,8 +376,6 @@ $
 |2,0,1717231855,,"find css"
 :find X11/
 |2,0,1717231853,,"find X11/"
-:MRU edi
-|2,0,1717231850,,"MRU edi"
 :b ~/.vim/vimrc
 |2,0,1717231683,,"b ~/.vim/vimrc"
 :MRU 3:empty.txt
@@ -134,18 +390,12 @@ $
 |2,0,1717231630,,"au DirChanged"
 :e ~/.vim/plugin/workspace.vim
 |2,0,1717230983,,"e ~/.vim/plugin/workspace.vim"
-:edit $MYVIMRC
-|2,0,1717230930,,"edit $MYVIMRC"
 :GFiles css
 |2,0,1717230912,,"GFiles css"
 :e static/css/editor.css
 |2,0,1717230902,,"e static/css/editor.css"
 :e state.pyc
 |2,0,1717230897,,"e state.pyc"
-:e
-|2,0,1717230814,,"e"
-:MRU py
-|2,0,1717230788,,"MRU py"
 :Rename base-dark.css
 |2,0,1717230782,,"Rename base-dark.css"
 :e sqlite-editor.css
@@ -162,8 +412,6 @@ $
 |2,0,1717230277,,"echo expand(\"%:p\") == ''"
 :echo expand("%:p")
 |2,0,1717230275,,"echo expand(\"%:p\")"
-:HotReload
-|2,0,1717230255,,"HotReload"
 :MRU githu
 |2,0,1717230252,,"MRU githu"
 :OpenDB
@@ -192,12 +440,6 @@ $
 |2,0,1717164795,,"w"
 :e state.py
 |2,0,1717163921,,"e state.py"
-:CocRestart
-|2,0,1717162350,,"CocRestart"
-:b!# | bd! #
-|2,0,1717162287,,"b!# | bd! #"
-:e!
-|2,0,1717162285,,"e!"
 :e1
 |2,0,1717162283,,"e1"
 :e data/state_1.json
@@ -214,8 +456,6 @@ $
 |2,0,1717156576,,"e ha"
 :238
 |2,0,1717156372,,"238"
-:e 
-|2,0,1717156360,,"e "
 :SQLJoin
 |2,0,1717155545,,"SQLJoin"
 :e instagram.sql
@@ -232,8 +472,6 @@ $
 |2,0,1717155388,,"e data/"
 :OpenDB data/
 |2,0,1717155382,,"OpenDB data/"
-:e re
-|2,0,1717153928,,"e re"
 :ToList
 |2,0,1717151406,,"ToList"
 :%sort u
@@ -246,8 +484,6 @@ $
 |2,0,1717148480,,"b __init__.py"
 :e __init__.py
 |2,0,1717148373,,"e __init__.py"
-:Jprevious
-|2,0,1717148347,,"Jprevious"
 :grep -g '*.py' --fixed-strings Frozen
 |2,0,1717148223,,"grep -g '*.py' --fixed-strings Frozen"
 :Grep 
@@ -262,16 +498,12 @@ $
 |2,0,1717145004,,"b reels.py"
 :bd~
 |2,0,1717144322,,"bd~"
-:copen
-|2,0,1717144276,,"copen"
 :grep -g '*.py' --fixed-strings reel
 |2,0,1717144270,,"grep -g '*.py' --fixed-strings reel"
 :%s/', '//g
 |2,0,1717143953,,"%s/', '//g"
 :grep -g '*.py' --fixed-strings 
 |2,0,1717143570,,"grep -g '*.py' --fixed-strings "
-:e hateoas-api.py
-|2,0,1717140536,,"e hateoas-api.py"
 :verbose command grep
 |2,0,1717140488,,"verbose command grep"
 :grep -g '*.py' --fixed-strings --word-regexp
@@ -280,8 +512,6 @@ $
 |2,0,1717140449,,"%!rg -h"
 :cop
 |2,0,1717140380,,"cop"
-:cn
-|2,0,1717140370,,"cn"
 :grep -g '*.py' --fixed-strings -w url
 |2,0,1717140364,,"grep -g '*.py' --fixed-strings -w url"
 :grep -g '*.py' --fixed-strings url
@@ -328,8 +558,6 @@ $
 |2,0,1717139933,,"MRU grep.vim"
 :vim
 |2,0,1717139922,,"vim"
-:MRU hateo
-|2,0,1717138326,,"MRU hateo"
 :v/grep/d
 |2,0,1717138267,,"v/grep/d"
 :e static/downloads/
@@ -368,8 +596,6 @@ $
 |2,0,1717078372,,"term"
 :set ft=
 |2,0,1717072081,,"set ft="
-:set nonumber
-|2,0,1717072049,,"set nonumber"
 :e static/css/sqlite-editor.css
 |2,0,1717069391,,"e static/css/sqlite-editor.css"
 :CocLIst dia
@@ -514,8 +740,6 @@ $
 |2,0,1716986027,,"MRU 14:scrapecrk.yml"
 :CocStatus
 |2,0,1716982681,,"CocStatus"
-:CocInfo
-|2,0,1716982678,,"CocInfo"
 :MRU 4:editor.css
 |2,0,1716973875,,"MRU 4:editor.css"
 :find editor-api.py
@@ -600,8 +824,6 @@ $
 |2,0,1716802980,,"e dbutils.py.backup"
 :!start everything -path . 
 |2,0,1716802954,,"!start everything -path . "
-:MRU hate
-|2,0,1716801415,,"MRU hate"
 :MRU req
 |2,0,1716801005,,"MRU req"
 :set number
@@ -728,8 +950,6 @@ $
 |2,0,1716545101,,"e update-bin.bash"
 :e update-
 |2,0,1716545095,,"e update-"
-:ALEInfo
-|2,0,1716505257,,"ALEInfo"
 :e .
 |2,0,1716505093,,"e ."
 :e .github/workflows/scrapecrk.yml
@@ -804,8 +1024,6 @@ $
 |2,0,1716325528,,"h clipboard-unnamedplus"
 :set unn
 |2,0,1716325524,,"set unn"
-:reg
-|2,0,1716325508,,"reg"
 :e setup.fish
 |2,0,1716325285,,"e setup.fish"
 :e complete.man
@@ -864,18 +1082,12 @@ $
 |2,0,1716167954,,"grep -g '*.sh' atuin"
 :CocR
 |2,0,1716157763,,"CocR"
-:colo apprentice
-|2,0,1716157027,,"colo apprentice"
-:colo codedark
-|2,0,1716155158,,"colo codedark"
 :colo apprentice_extended
 |2,0,1716155088,,"colo apprentice_extended"
 :colo sorcerer
 |2,0,1716155072,,"colo sorcerer"
 :b /home/vivek/.vim/vimrc
 |2,0,1716154982,,"b /home/vivek/.vim/vimrc"
-:colo onedark
-|2,0,1716154921,,"colo onedark"
 :hi Visual
 |2,0,1716154903,,"hi Visual"
 :hi
@@ -942,8 +1154,6 @@ $
 |2,0,1716104201,,"e ../syntax/todo.vim"
 :MRU 3:todo.vim
 |2,0,1716104197,,"MRU 3:todo.vim"
-:Ftplugin
-|2,0,1716104189,,"Ftplugin"
 :Hot
 |2,0,1716103854,,"Hot"
 :echo getline(".")[0:12]
@@ -960,8 +1170,6 @@ $
 |2,0,1716103257,,"e todo.md"
 :MRU to
 |2,0,1716103226,,"MRU to"
-:e syntax/todo.vim
-|2,0,1716103211,,"e syntax/todo.vim"
 :e ~/.vim/filetype.vim
 |2,0,1716103187,,"e ~/.vim/filetype.vim"
 :filter filetype scriptnames
@@ -1018,18 +1226,10 @@ $
 |2,0,1716100282,,"call CocActionAsync('jumpReferences')"
 :cpre
 |2,0,1716098638,,"cpre"
-:C
-|2,0,1716098606,,"C"
-:CocConfig
-|2,0,1716098592,,"CocConfig"
 :lopen
 |2,0,1716098531,,"lopen"
 :open
 |2,0,1716098530,,"open"
-:CocList
-|2,0,1716098514,,"CocList"
-:CocList -I quickfix references
-|2,0,1716098504,,"CocList -I quickfix references"
 :CocList symbols
 |2,0,1716098442,,"CocList symbols"
 :CocList lists
@@ -1122,14 +1322,10 @@ $
 |2,0,1715898185,,"echo g:copilot_workspace_folders"
 :h copilot
 |2,0,1715898174,,"h copilot"
-:echo g:WorkspaceFolders
-|2,0,1715898166,,"echo g:WorkspaceFolders"
 :grep -g '*.py' Lock
 |2,0,1715896294,,"grep -g '*.py' Lock"
 :grep -g '*.py' Lo
 |2,0,1715896291,,"grep -g '*.py' Lo"
-:colo nord
-|2,0,1715895893,,"colo nord"
 :colo mono
 |2,0,1715895890,,"colo mono"
 :ALEEnable
@@ -1202,8 +1398,6 @@ $
 |2,0,1714944397,,"e bindings.inputrc"
 :e ~/.config/setup.sh
 |2,0,1714944037,,"e ~/.config/setup.sh"
-:Copilot panel
-|2,0,1714759492,,"Copilot panel"
 :VD data/main.db
 |2,0,1714655854,,"VD data/main.db"
 :VD
@@ -1600,8 +1794,6 @@ $
 |2,0,1713970041,,"Copilot enable"
 :Copilot disable
 |2,0,1713970038,,"Copilot disable"
-:OpenDB data/videos.db
-|2,0,1713969088,,"OpenDB data/videos.db"
 :VD data/videos.db
 |2,0,1713969075,,"VD data/videos.db"
 :Co
@@ -1704,8 +1896,6 @@ $
 |2,0,1713929119,,"FZF "
 :h coc-config
 |2,0,1713928754,,"h coc-config"
-:Coc
-|2,0,1713928705,,"Coc"
 :e coc-config.txt
 |2,0,1713928660,,"e coc-config.txt"
 :h coc-nvim-config
@@ -1830,8 +2020,6 @@ $
 |2,0,1713790522,,"s/let/\\0"
 :ALEDi
 |2,0,1713790338,,"ALEDi"
-:CocList errors
-|2,0,1713790299,,"CocList errors"
 :e v6.txt
 |2,0,1713790262,,"e v6.txt"
 :e v5.txt
@@ -1894,8 +2082,6 @@ $
 |2,0,1713768780,,"Rename cronlogger.bash"
 :e ~/.vim/plugin/rename.vim
 |2,0,1713768760,,"e ~/.vim/plugin/rename.vim"
-:CD plugin
-|2,0,1713768750,,"CD plugin"
 :e ~/.vim/plugin/re
 |2,0,1713768749,,"e ~/.vim/plugin/re"
 :MRU rename
@@ -2298,8 +2484,6 @@ $
 |2,0,1713433517,,"MRU sy"
 :h :FIND
 |2,0,1713407264,,"h :FIND"
-:FIND 
-|2,0,1713407259,,"FIND "
 :FIND argz.h
 |2,0,1713407256,,"FIND argz.h"
 :MRU 2:strawberry-light.vim
@@ -2524,8 +2708,6 @@ $
 |2,0,1712503589,,"grep -g '*.py' db_init"
 :b sse.py
 |2,0,1712496150,,"b sse.py"
-:b hateo
-|2,0,1712496127,,"b hateo"
 :MRU 3:downloader.py
 |2,0,1712453693,,"MRU 3:downloader.py"
 :!rm download_endpoints.py
@@ -2808,8 +2990,6 @@ $
 |2,0,1711025933,,"Tr"
 :VueGrep
 |2,0,1711025925,,"VueGrep"
-:FIND ele
-|2,0,1711020282,,"FIND ele"
 :FIND elements.html
 |2,0,1711020228,,"FIND elements.html"
 :FIND E
@@ -3038,8 +3218,6 @@ $
 |2,0,1710041667,,"MRU Da"
 :MRU Portions
 |2,0,1710040866,,"MRU Portions"
-:%sort
-|2,0,1710040765,,"%sort"
 :%s/\s//g
 |2,0,1710040760,,"%s/\\s//g"
 :%s/:.*//
@@ -4222,8 +4400,6 @@ $
 |2,0,1693515940,,"ALEDisableBuffer"
 :e pyexamples/
 |2,0,1693515733,,"e pyexamples/"
-:e ~/.vim/templates/template.py
-|2,0,1693432136,,"e ~/.vim/templates/template.py"
 :h coc-json
 |2,0,1693380288,,"h coc-json"
 :CocList extensions
@@ -4714,8 +4890,6 @@ $
 |2,0,1692792636,,"e vite.config.t"
 :Rename nuxtpaths.vim
 |2,0,1692792507,,"Rename nuxtpaths.vim"
-:Rename 
-|2,0,1692792497,,"Rename "
 :MRU paths
 |2,0,1692792481,,"MRU paths"
 :cd ~/frontend/src
@@ -5514,8 +5688,6 @@ $
 |2,0,1691572102,,"e sc"
 :e schema.sql
 |2,0,1691571894,,"e schema.sql"
-:Tab /,/
-|2,0,1691571854,,"Tab /,/"
 :Tab /TEXT
 |2,0,1691571835,,"Tab /TEXT"
 :Tab TEXT
@@ -5618,8 +5790,6 @@ $
 |2,0,1691400238,,"hi | filter /ALE/"
 :hi | filter ALE
 |2,0,1691400231,,"hi | filter ALE"
-:so /usr/share/vim/vim90/syntax/hitest.vim
-|2,0,1691400194,,"so /usr/share/vim/vim90/syntax/hitest.vim"
 :hi! link Error Normal
 |2,0,1691400192,,"hi! link Error Normal"
 :hi ALEInfo
@@ -5876,8 +6046,6 @@ $
 |2,0,1690675307,,"b vue"
 :hi CocBold
 |2,0,1690675285,,"hi CocBold"
-:helpgrep hitest
-|2,0,1690675263,,"helpgrep hitest"
 :echo len(coc#status())
 |2,0,1690675244,,"echo len(coc#status())"
 :MRU actions.vue
@@ -6454,8 +6622,6 @@ $
 |2,0,1688309205,,"MRU 18:.gitconfig"
 :%!uniq 
 |2,0,1688309188,,"%!uniq "
-:%!uniq -c
-|2,0,1688309182,,"%!uniq -c"
 :MRU 33:change.txt
 |2,0,1688309168,,"MRU 33:change.txt"
 :MRU 22:fzf.txt
@@ -6662,6 +6828,72 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+??Click
+|2,1,1717915978,63,"Click"
+? \/sumbit
+|2,1,1717915843,,"\\/sumbit"
+? \/submit
+|2,1,1717915829,,"\\/submit"
+? @$
+|2,1,1717914054,,"@$"
+?/recursive
+|2,1,1717914011,47,"recursive"
+??\a
+|2,1,1717913051,63,"\\a"
+?/josh
+|2,1,1717911039,47,"josh"
+?/box-si
+|2,1,1717910935,47,"box-si"
+?/TODO
+|2,1,1717883234,47,"TODO"
+??hitest
+|2,1,1717883081,63,"hitest"
+??helpgrep
+|2,1,1717883073,63,"helpgrep"
+??source .*vim
+|2,1,1717883064,63,"source .*vim"
+?/\u\+:
+|2,1,1717882841,47,"\\u\\+:"
+?/website
+|2,1,1717882512,47,"website"
+? /
+|2,1,1717853338,,"/"
+? \\
+|2,1,1717853336,,"\\\\"
+??w
+|2,1,1717853331,63,"w"
+?/R
+|2,1,1717842738,47,"R"
+??script
+|2,1,1717670499,63,"script"
+??flask_data
+|2,1,1717670370,63,"flask_data"
+?/data:
+|2,1,1717670354,47,"data:"
+?/offsets
+|2,1,1717670350,47,"offsets"
+?/offest
+|2,1,1717669074,47,"offest"
+?/\(def\|class\)\s\+\w*view_
+|2,1,1717665624,47,"\\(def\\|class\\)\\s\\+\\w*view_"
+?/dura
+|2,1,1717658408,47,"dura"
+?/\(def\|class\)\s\+\w*onel
+|2,1,1717658370,47,"\\(def\\|class\\)\\s\\+\\w*onel"
+?/\(def\|class\)\s\+\w*query
+|2,1,1717658230,47,"\\(def\\|class\\)\\s\\+\\w*query"
+?/Windows
+|2,1,1717658098,47,"Windows"
+??quickfix
+|2,1,1717657994,63,"quickfix"
+?/\.post
+|2,1,1717651166,47,"\\.post"
+?/AWS
+|2,1,1717650670,47,"AWS"
+?/giti
+|2,1,1717650560,47,"giti"
+?/envrc
+|2,1,1717650557,47,"envrc"
 ?/export
 |2,1,1717616732,47,"export"
 ?/(5)
@@ -6720,8 +6952,6 @@ $
 |2,1,1717436078,47,"\\(def\\|class\\)\\s\\+\\w*"
 ?/\(def\|class\)\s\+\w*pov
 |2,1,1717436042,47,"\\(def\\|class\\)\\s\\+\\w*pov"
-?/\(def\|class\)\s\+\w*view_
-|2,1,1717435353,47,"\\(def\\|class\\)\\s\\+\\w*view_"
 ?/\(def\|class\)\s\+\w*form_
 |2,1,1717435335,47,"\\(def\\|class\\)\\s\\+\\w*form_"
 ?/twitch-embed
@@ -6760,8 +6990,6 @@ $
 |2,1,1717231945,47,"user"
 ?/\C\<path\>
 |2,1,1717230957,47,"\\C\\<path\\>"
-?/website
-|2,1,1717230941,47,"website"
 ?/set.*path
 |2,1,1717230935,47,"set.*path"
 ?/sqlite-editor.css
@@ -6908,8 +7136,6 @@ $
 |2,1,1717138324,47,"pending"
 ? grep
 |2,1,1717138267,,"grep"
-? @$
-|2,1,1717137761,,"@$"
 ?/portionurl_id
 |2,1,1717137706,47,"portionurl_id"
 ?/pid
@@ -7354,8 +7580,6 @@ $
 |2,1,1716603843,47,"select"
 ?/wide
 |2,1,1716603220,47,"wide"
-??\a
-|2,1,1716599376,63,"\\a"
 ?/offset
 |2,1,1716579790,47,"offset"
 ?/READONLY
@@ -7776,8 +8000,6 @@ $
 |2,1,1714024727,47,"insert "
 ??g:cop
 |2,1,1713970021,63,"g:cop"
-?/dura
-|2,1,1713969686,47,"dura"
 ?/seconds
 |2,1,1713969603,47,"seconds"
 ?/created_at
@@ -8290,8 +8512,6 @@ $
 |2,1,1711554941,47,"Add"
 ?/GH_TOKEN
 |2,1,1711544801,47,"GH_TOKEN"
-??script
-|2,1,1711443853,63,"script"
 ?/api\.py
 |2,1,1711443845,47,"api\\.py"
 ?/VIRTUAL_ENV
@@ -9184,8 +9404,6 @@ $
 |2,1,1691440366,47,"tslint"
 ?/ALE
 |2,1,1691400172,47,"ALE"
-??hitest
-|2,1,1691400161,63,"hitest"
 ?/confi
 |2,1,1691399243,47,"confi"
 ?/sqlite3
@@ -9716,14 +9934,18 @@ $
 |2,2,1688309303,,"v:oldfiles"
 
 # Input Line History (newest to oldest):
+@form
+|2,3,1717915305,,"form"
+@div class="tall">
+|2,3,1717913841,,"div class=\"tall\">"
+@di
+|2,3,1717913804,,"di"
 @div class="wide">
 |2,3,1717523773,,"div class=\"wide\">"
 @int
 |2,3,1717238017,,"int"
 @div>
 |2,3,1717163057,,"div>"
-@div class="tall">
-|2,3,1717163049,,"div class=\"tall\">"
 @div 
 |2,3,1717163030,,"div "
 @loop
@@ -9840,45 +10062,43 @@ $
 |2,4,1693311567,,"cont"
 
 # Registers:
-"0	CHAR	0
-	MaxRetryError:
-|3,0,0,0,1,0,1717612722,"MaxRetryError:"
-""1	LINE	0
-	<<<<<<< HEAD
-	=======
+""0	CHAR	0
+	reset.css') }}">
+|3,1,0,0,1,0,1717917503,"reset.css') }}\">"
+"1	LINE	0
 	
-	>>>>>>> 5dd3bc4 ((auto-commit))
-|3,1,1,1,4,0,1717616539,"<<<<<<< HEAD","=======","",">>>>>>> 5dd3bc4 ((auto-commit))"
+|3,0,1,1,1,0,1717917369,""
 "2	LINE	0
-	
-|3,0,2,1,1,0,1717616493,""
+	button, input[type="submit"], input[type="reset"] {
+	    all: unset;
+	    outline: revert;
+	}
+|3,0,2,1,4,0,1717917355,"button, input[type=\"submit\"], input[type=\"reset\"] {","    all: unset;","    outline: revert;","}"
 "3	LINE	0
-	export AWS_SECRET_ACCESS_KEY=
-|3,0,3,1,1,0,1717616492,"export AWS_SECRET_ACCESS_KEY="
+	<link rel="stylesheet"
+|3,0,3,1,1,0,1717917347,"<link rel=\"stylesheet\""
 "4	LINE	0
-	export AWS_ACCESS_KEY_ID=
-|3,0,4,1,1,0,1717616492,"export AWS_ACCESS_KEY_ID="
+	            <input type="reset" value="Reset">
+|3,0,4,1,1,0,1717916588,"            <input type=\"reset\" value=\"Reset\">"
 "5	LINE	0
-	<<<<<<< HEAD
-	
-	=======
-	>>>>>>> 507296d ((auto-commit))
-|3,0,5,1,4,0,1717616249,"<<<<<<< HEAD","","=======",">>>>>>> 507296d ((auto-commit))"
+	    padding: 10px 20px;
+|3,0,5,1,1,0,1717916508,"    padding: 10px 20px;"
 "6	LINE	0
-	export AWS_SECRET_ACCESS_KEY=
-|3,0,6,1,1,0,1717616089,"export AWS_SECRET_ACCESS_KEY="
+	
+|3,0,6,1,1,0,1717916498,""
 "7	LINE	0
-	export AWS_ACCESS_KEY_ID=
-|3,0,7,1,1,0,1717616088,"export AWS_ACCESS_KEY_ID="
+	<link rel="stylesheet" href="https://unpkg.com/nice-forms.css@0.1.7/dist/nice-forms-reset.css">
+|3,0,7,1,1,0,1717916358,"<link rel=\"stylesheet\" href=\"https://unpkg.com/nice-forms.css@0.1.7/dist/nice-forms-reset.css\">"
 "8	LINE	0
-	https://youtu.be/Yvu1Oa9DQII
-|3,0,8,1,1,0,1717615490,"https://youtu.be/Yvu1Oa9DQII"
+	<link rel
+|3,0,8,1,1,0,1717916321,"<link rel"
 "9	LINE	0
-	                print("MaxRetryError
-|3,0,9,1,1,0,1717612524,"                print(\"MaxRetryError"
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+|3,0,9,1,2,0,1717916145,"<link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH\" crossorigin=\"anonymous\">","<script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz\" crossorigin=\"anonymous\"></script>"
 "a	CHAR	0
-	0d:..f:dw
-|3,0,10,0,1,0,1717509470,"0d:..f:dw"
+	ysiT€ýa
+|3,0,10,0,1,0,1717915439,"ysiT€ýa"
 "j	CHAR	0
 	k
 |3,0,19,0,1,0,1714426578,"k"
@@ -9917,237 +10137,1757 @@ $
 |<"                <form method=\"POST\" action=\"/resume_download\">","                    <input type=\"hidden\" name=\"id\" value=\"{{ id }}\">","                    <input type=\"submit\" value=\"Resume\">","                </form>","                {% endif %}","                {% if status == 'downloading' %}","                <form method=\"POST\" action=\"/pause_download\">","                    <input type=\"hidden\" name=\"id\" value=\"{{ id }}\">",>61
 |<"                    <input type=\"submit\" value=\"Pause\">","                </form>","                {% endif %}","","            </li>","        {% endfor %}","    </ul>\"\"\", downloads=downloads)"
 "-	CHAR	0
-	MaxRetryError:
-|3,0,36,0,1,0,1717612717,"MaxRetryError:"
+	reset.css') }}">
+|3,0,36,0,1,0,1717917474,"reset.css') }}\">"
 
 # File marks:
-'0  1  0  ~/instagram-reels/post.py
-|4,48,1,0,1717616862,"~/instagram-reels/post.py"
-'1  1  0  ~/.vim/_viminfo_linux
-|4,49,1,0,1717616733,"~/.vim/_viminfo_linux"
-'2  1  0  ~/.vim/_viminfo_linux
-|4,50,1,0,1717616733,"~/.vim/_viminfo_linux"
-'3  807  12  ~/hateoas/hateoas-api.py
-|4,51,807,12,1717616625,"~/hateoas/hateoas-api.py"
-'4  807  12  ~/hateoas/hateoas-api.py
-|4,52,807,12,1717616625,"~/hateoas/hateoas-api.py"
-'5  807  12  ~/hateoas/hateoas-api.py
-|4,53,807,12,1717616625,"~/hateoas/hateoas-api.py"
-'6  807  12  ~/hateoas/hateoas-api.py
-|4,54,807,12,1717616625,"~/hateoas/hateoas-api.py"
-'7  81  4  ~/hateoas/chat.py
-|4,55,81,4,1717616613,"~/hateoas/chat.py"
-'8  81  4  ~/hateoas/chat.py
-|4,56,81,4,1717616613,"~/hateoas/chat.py"
-'9  81  4  ~/hateoas/chat.py
-|4,57,81,4,1717616613,"~/hateoas/chat.py"
+'0  24  11  ~/ui-components-css/static/css-resets/reset.css
+|4,48,24,11,1717917520,"~/ui-components-css/static/css-resets/reset.css"
+'1  23  0  ~/ui-components-css/ui-components-css-api.py
+|4,49,23,0,1717913069,"~/ui-components-css/ui-components-css-api.py"
+'2  14  0  ~/ui-components-css/ui-components-css-api.py
+|4,50,14,0,1717913069,"~/ui-components-css/ui-components-css-api.py"
+'3  1  0  ~/ui-components-css/app.py
+|4,51,1,0,1717912654,"~/ui-components-css/app.py"
+'4  1  0  ~/ui-components-css/app.py
+|4,52,1,0,1717912654,"~/ui-components-css/app.py"
+'5  1  0  ~/ui-components-css/.envrc
+|4,53,1,0,1717912219,"~/ui-components-css/.envrc"
+'6  1  0  ~/ui-components-css/.envrc
+|4,54,1,0,1717912219,"~/ui-components-css/.envrc"
+'7  1  0  ~/ui-components-css/.envrc
+|4,55,1,0,1717912219,"~/ui-components-css/.envrc"
+'8  1  0  ~/ui-components-css/.envrc
+|4,56,1,0,1717912219,"~/ui-components-css/.envrc"
+'9  5  12  ~/ui-components-css/requirements.txt
+|4,57,5,12,1717912144,"~/ui-components-css/requirements.txt"
 
 # Jumplist (newest first):
--'  1  0  ~/instagram-reels/post.py
-|4,39,1,0,1717616862,"~/instagram-reels/post.py"
--'  1  0  ~/.vim/_viminfo_linux
-|4,39,1,0,1717616733,"~/.vim/_viminfo_linux"
--'  1  0  ~/.vim/_viminfo_linux
-|4,39,1,0,1717616733,"~/.vim/_viminfo_linux"
--'  32461  1  ~/.vim/_viminfo_linux
-|4,39,32461,1,1717616730,"~/.vim/_viminfo_linux"
--'  32461  1  ~/.vim/_viminfo_linux
-|4,39,32461,1,1717616730,"~/.vim/_viminfo_linux"
--'  807  12  ~/hateoas/hateoas-api.py
-|4,39,807,12,1717616625,"~/hateoas/hateoas-api.py"
--'  807  12  ~/hateoas/hateoas-api.py
-|4,39,807,12,1717616625,"~/hateoas/hateoas-api.py"
--'  807  12  ~/hateoas/hateoas-api.py
-|4,39,807,12,1717616625,"~/hateoas/hateoas-api.py"
--'  120  8  ~/hateoas/hateoas-api.py
-|4,39,120,8,1717616617,"~/hateoas/hateoas-api.py"
--'  120  8  ~/hateoas/hateoas-api.py
-|4,39,120,8,1717616617,"~/hateoas/hateoas-api.py"
--'  120  8  ~/hateoas/hateoas-api.py
-|4,39,120,8,1717616617,"~/hateoas/hateoas-api.py"
--'  1  0  ~/hateoas/hateoas-api.py
-|4,39,1,0,1717616616,"~/hateoas/hateoas-api.py"
--'  1  0  ~/hateoas/hateoas-api.py
-|4,39,1,0,1717616616,"~/hateoas/hateoas-api.py"
--'  1  0  ~/hateoas/hateoas-api.py
-|4,39,1,0,1717616616,"~/hateoas/hateoas-api.py"
--'  81  4  ~/hateoas/chat.py
-|4,39,81,4,1717616613,"~/hateoas/chat.py"
--'  81  4  ~/hateoas/chat.py
-|4,39,81,4,1717616613,"~/hateoas/chat.py"
--'  81  4  ~/hateoas/chat.py
-|4,39,81,4,1717616613,"~/hateoas/chat.py"
--'  81  4  ~/hateoas/chat.py
-|4,39,81,4,1717616613,"~/hateoas/chat.py"
--'  1  0  ~/hateoas/chat.py
-|4,39,1,0,1717616611,"~/hateoas/chat.py"
--'  1  0  ~/hateoas/chat.py
-|4,39,1,0,1717616611,"~/hateoas/chat.py"
--'  1  0  ~/hateoas/chat.py
-|4,39,1,0,1717616611,"~/hateoas/chat.py"
--'  1  0  ~/hateoas/chat.py
-|4,39,1,0,1717616611,"~/hateoas/chat.py"
--'  1  0  ~/hateoas/.envrc
-|4,39,1,0,1717616540,"~/hateoas/.envrc"
--'  1  0  ~/hateoas/.envrc
-|4,39,1,0,1717616540,"~/hateoas/.envrc"
--'  1  0  ~/hateoas/.envrc
-|4,39,1,0,1717616540,"~/hateoas/.envrc"
--'  1  0  ~/hateoas/.envrc
-|4,39,1,0,1717616540,"~/hateoas/.envrc"
--'  1  0  ~/hateoas/.envrc
-|4,39,1,0,1717616540,"~/hateoas/.envrc"
--'  2  0  ~/hateoas/.envrc
-|4,39,2,0,1717616539,"~/hateoas/.envrc"
--'  2  0  ~/hateoas/.envrc
-|4,39,2,0,1717616539,"~/hateoas/.envrc"
--'  2  0  ~/hateoas/.envrc
-|4,39,2,0,1717616539,"~/hateoas/.envrc"
--'  2  0  ~/hateoas/.envrc
-|4,39,2,0,1717616539,"~/hateoas/.envrc"
--'  2  0  ~/hateoas/.envrc
-|4,39,2,0,1717616539,"~/hateoas/.envrc"
--'  1  0  ~/hateoas/.envrc
-|4,39,1,0,1717616495,"~/hateoas/.envrc"
--'  1  0  ~/hateoas/.envrc
-|4,39,1,0,1717616251,"~/hateoas/.envrc"
--'  2  0  ~/hateoas/.envrc
-|4,39,2,0,1717616249,"~/hateoas/.envrc"
--'  2  0  ~/hateoas/.envrc
-|4,39,2,0,1717616249,"~/hateoas/.envrc"
--'  2  0  ~/hateoas/.envrc
-|4,39,2,0,1717616090,"~/hateoas/.envrc"
--'  1  0  ~/hateoas/.envrc
-|4,39,1,0,1717616087,"~/hateoas/.envrc"
--'  1  0  ~/hateoas/.envrc
-|4,39,1,0,1717615837,"~/hateoas/.envrc"
--'  1  0  ~/hateoas/chat.py
-|4,39,1,0,1717615771,"~/hateoas/chat.py"
--'  1  0  ~/hateoas/chat.py
-|4,39,1,0,1717615771,"~/hateoas/chat.py"
--'  1  0  ~/hateoas/chat.py
-|4,39,1,0,1717615771,"~/hateoas/chat.py"
--'  1  0  ~/hateoas/chat.py
-|4,39,1,0,1717615771,"~/hateoas/chat.py"
--'  1  0  ~/hateoas/chat.py
-|4,39,1,0,1717615771,"~/hateoas/chat.py"
--'  1  0  ~/hateoas/chat.py
-|4,39,1,0,1717615771,"~/hateoas/chat.py"
--'  1  0  ~/hateoas/.envrc
-|4,39,1,0,1717615676,"~/hateoas/.envrc"
--'  1  0  ~/hateoas/.envrc
-|4,39,1,0,1717615676,"~/hateoas/.envrc"
--'  1  0  ~/hateoas/.envrc
-|4,39,1,0,1717615529,"~/hateoas/.envrc"
--'  1  5  ~/hateoas/.gitignore
-|4,39,1,5,1717615498,"~/hateoas/.gitignore"
--'  1  5  ~/hateoas/.gitignore
-|4,39,1,5,1717615498,"~/hateoas/.gitignore"
--'  1  5  ~/hateoas/.gitignore
-|4,39,1,5,1717615498,"~/hateoas/.gitignore"
--'  1  5  ~/hateoas/.gitignore
-|4,39,1,5,1717615498,"~/hateoas/.gitignore"
--'  1  5  ~/hateoas/.gitignore
-|4,39,1,5,1717615498,"~/hateoas/.gitignore"
--'  1  5  ~/hateoas/.gitignore
-|4,39,1,5,1717615498,"~/hateoas/.gitignore"
--'  1  5  ~/hateoas/.gitignore
-|4,39,1,5,1717615498,"~/hateoas/.gitignore"
--'  1  5  ~/hateoas/.gitignore
-|4,39,1,5,1717615498,"~/hateoas/.gitignore"
--'  1  5  ~/hateoas/.gitignore
-|4,39,1,5,1717615498,"~/hateoas/.gitignore"
--'  1  5  ~/hateoas/.gitignore
-|4,39,1,5,1717615498,"~/hateoas/.gitignore"
--'  1  5  ~/hateoas/.gitignore
-|4,39,1,5,1717615498,"~/hateoas/.gitignore"
--'  1  5  ~/hateoas/.gitignore
-|4,39,1,5,1717615498,"~/hateoas/.gitignore"
--'  1  5  ~/hateoas/.gitignore
-|4,39,1,5,1717615498,"~/hateoas/.gitignore"
--'  2  0  ~/hateoas/.gitignore
-|4,39,2,0,1717615494,"~/hateoas/.gitignore"
--'  2  0  ~/hateoas/.gitignore
-|4,39,2,0,1717615494,"~/hateoas/.gitignore"
--'  2  0  ~/hateoas/.gitignore
-|4,39,2,0,1717615494,"~/hateoas/.gitignore"
--'  2  0  ~/hateoas/.gitignore
-|4,39,2,0,1717615494,"~/hateoas/.gitignore"
--'  2  0  ~/hateoas/.gitignore
-|4,39,2,0,1717615494,"~/hateoas/.gitignore"
--'  2  0  ~/hateoas/.gitignore
-|4,39,2,0,1717615494,"~/hateoas/.gitignore"
--'  2  0  ~/hateoas/.gitignore
-|4,39,2,0,1717615494,"~/hateoas/.gitignore"
--'  2  0  ~/hateoas/.gitignore
-|4,39,2,0,1717615494,"~/hateoas/.gitignore"
--'  2  0  ~/hateoas/.gitignore
-|4,39,2,0,1717615494,"~/hateoas/.gitignore"
--'  2  0  ~/hateoas/.gitignore
-|4,39,2,0,1717615494,"~/hateoas/.gitignore"
--'  2  0  ~/hateoas/.gitignore
-|4,39,2,0,1717615494,"~/hateoas/.gitignore"
--'  2  0  ~/hateoas/.gitignore
-|4,39,2,0,1717615494,"~/hateoas/.gitignore"
--'  2  0  ~/hateoas/.gitignore
-|4,39,2,0,1717615494,"~/hateoas/.gitignore"
--'  1  0  ~/hateoas/.envrc
-|4,39,1,0,1717615492,"~/hateoas/.envrc"
--'  1  0  ~/hateoas/.envrc
-|4,39,1,0,1717615492,"~/hateoas/.envrc"
--'  4  4  ~/hateoas/.gitignore
-|4,39,4,4,1717615415,"~/hateoas/.gitignore"
--'  3  4  ~/hateoas/.gitignore
-|4,39,3,4,1717615415,"~/hateoas/.gitignore"
--'  4  4  ~/hateoas/.gitignore
-|4,39,4,4,1717615415,"~/hateoas/.gitignore"
--'  3  4  ~/hateoas/.gitignore
-|4,39,3,4,1717615415,"~/hateoas/.gitignore"
--'  4  4  ~/hateoas/.gitignore
-|4,39,4,4,1717615415,"~/hateoas/.gitignore"
--'  3  4  ~/hateoas/.gitignore
-|4,39,3,4,1717615415,"~/hateoas/.gitignore"
--'  4  4  ~/hateoas/.gitignore
-|4,39,4,4,1717615415,"~/hateoas/.gitignore"
--'  3  4  ~/hateoas/.gitignore
-|4,39,3,4,1717615415,"~/hateoas/.gitignore"
--'  4  4  ~/hateoas/.gitignore
-|4,39,4,4,1717615415,"~/hateoas/.gitignore"
--'  3  4  ~/hateoas/.gitignore
-|4,39,3,4,1717615415,"~/hateoas/.gitignore"
--'  4  4  ~/hateoas/.gitignore
-|4,39,4,4,1717615415,"~/hateoas/.gitignore"
--'  3  4  ~/hateoas/.gitignore
-|4,39,3,4,1717615415,"~/hateoas/.gitignore"
--'  4  4  ~/hateoas/.gitignore
-|4,39,4,4,1717615415,"~/hateoas/.gitignore"
--'  3  4  ~/hateoas/.gitignore
-|4,39,3,4,1717615415,"~/hateoas/.gitignore"
--'  4  4  ~/hateoas/.gitignore
-|4,39,4,4,1717615415,"~/hateoas/.gitignore"
--'  3  4  ~/hateoas/.gitignore
-|4,39,3,4,1717615415,"~/hateoas/.gitignore"
--'  4  4  ~/hateoas/.gitignore
-|4,39,4,4,1717615415,"~/hateoas/.gitignore"
--'  3  4  ~/hateoas/.gitignore
-|4,39,3,4,1717615415,"~/hateoas/.gitignore"
--'  4  4  ~/hateoas/.gitignore
-|4,39,4,4,1717615415,"~/hateoas/.gitignore"
--'  3  4  ~/hateoas/.gitignore
-|4,39,3,4,1717615415,"~/hateoas/.gitignore"
--'  4  4  ~/hateoas/.gitignore
-|4,39,4,4,1717615415,"~/hateoas/.gitignore"
--'  3  4  ~/hateoas/.gitignore
-|4,39,3,4,1717615415,"~/hateoas/.gitignore"
--'  4  4  ~/hateoas/.gitignore
-|4,39,4,4,1717615415,"~/hateoas/.gitignore"
--'  3  4  ~/hateoas/.gitignore
-|4,39,3,4,1717615415,"~/hateoas/.gitignore"
+-'  24  11  ~/ui-components-css/static/css-resets/reset.css
+|4,39,24,11,1717917520,"~/ui-components-css/static/css-resets/reset.css"
+-'  1  11  ~/ui-components-css/static/css-resets/reset.css
+|4,39,1,11,1717917460,"~/ui-components-css/static/css-resets/reset.css"
+-'  1  0  ~/ui-components-css/static/css-resets/button-reset.css
+|4,39,1,0,1717917441,"~/ui-components-css/static/css-resets/button-reset.css"
+-'  12  0  ~/ui-components-css/templates/html-elements.html
+|4,39,12,0,1717917366,"~/ui-components-css/templates/html-elements.html"
+-'  7  60  ~/ui-components-css/templates/html-elements.html
+|4,39,7,60,1717917086,"~/ui-components-css/templates/html-elements.html"
+-'  18  16  ~/ui-components-css/templates/html-elements.html
+|4,39,18,16,1717916795,"~/ui-components-css/templates/html-elements.html"
+-'  185  0  ~/ui-components-css/templates/html-elements.html
+|4,39,185,0,1717916793,"~/ui-components-css/templates/html-elements.html"
+-'  186  5  ~/ui-components-css/templates/html-elements.html
+|4,39,186,5,1717916792,"~/ui-components-css/templates/html-elements.html"
+-'  19  5  ~/ui-components-css/templates/html-elements.html
+|4,39,19,5,1717916790,"~/ui-components-css/templates/html-elements.html"
+-'  182  18  ~/ui-components-css/templates/html-elements.html
+|4,39,182,18,1717916595,"~/ui-components-css/templates/html-elements.html"
+-'  183  18  ~/ui-components-css/templates/html-elements.html
+|4,39,183,18,1717916592,"~/ui-components-css/templates/html-elements.html"
+-'  31  50  ~/ui-components-css/templates/html-elements.html
+|4,39,31,50,1717916580,"~/ui-components-css/templates/html-elements.html"
+-'  13  0  ~/ui-components-css/templates/html-elements.html
+|4,39,13,0,1717916358,"~/ui-components-css/templates/html-elements.html"
+-'  9  24  ~/ui-components-css/templates/html-elements.html
+|4,39,9,24,1717916130,"~/ui-components-css/templates/html-elements.html"
+-'  35  28  ~/ui-components-css/templates/html-elements.html
+|4,39,35,28,1717915984,"~/ui-components-css/templates/html-elements.html"
+-'  171  12  ~/ui-components-css/templates/html-elements.html
+|4,39,171,12,1717915978,"~/ui-components-css/templates/html-elements.html"
+-'  12  22  ~/ui-components-css/ui-components-css-api.py
+|4,39,12,22,1717915975,"~/ui-components-css/ui-components-css-api.py"
+-'  11  4  ~/ui-components-css/ui-components-css-api.py
+|4,39,11,4,1717915855,"~/ui-components-css/ui-components-css-api.py"
+-'  54  16  ~/ui-components-css/templates/html-elements.html
+|4,39,54,16,1717915843,"~/ui-components-css/templates/html-elements.html"
+-'  48  26  ~/ui-components-css/templates/html-elements.html
+|4,39,48,26,1717915829,"~/ui-components-css/templates/html-elements.html"
+-'  36  26  ~/ui-components-css/templates/html-elements.html
+|4,39,36,26,1717915824,"~/ui-components-css/templates/html-elements.html"
+-'  27  41  ~/ui-components-css/templates/html-elements.html
+|4,39,27,41,1717915815,"~/ui-components-css/templates/html-elements.html"
+-'  28  15  ~/ui-components-css/templates/html-elements.html
+|4,39,28,15,1717915803,"~/ui-components-css/templates/html-elements.html"
+-'  1  0  ~/ui-components-css/templates/html-elements.html
+|4,39,1,0,1717915764,"~/ui-components-css/templates/html-elements.html"
+-'  1  0  ~/ui-components-css/ui-components-css-api.py
+|4,39,1,0,1717915763,"~/ui-components-css/ui-components-css-api.py"
+-'  128  0  ~/ui-components-css/templates/html-elements.html
+|4,39,128,0,1717915760,"~/ui-components-css/templates/html-elements.html"
+-'  146  16  ~/ui-components-css/templates/html-elements.html
+|4,39,146,16,1717915734,"~/ui-components-css/templates/html-elements.html"
+-'  153  16  ~/ui-components-css/templates/html-elements.html
+|4,39,153,16,1717915733,"~/ui-components-css/templates/html-elements.html"
+-'  160  16  ~/ui-components-css/templates/html-elements.html
+|4,39,160,16,1717915732,"~/ui-components-css/templates/html-elements.html"
+-'  167  16  ~/ui-components-css/templates/html-elements.html
+|4,39,167,16,1717915731,"~/ui-components-css/templates/html-elements.html"
+-'  174  16  ~/ui-components-css/templates/html-elements.html
+|4,39,174,16,1717915730,"~/ui-components-css/templates/html-elements.html"
+-'  139  16  ~/ui-components-css/templates/html-elements.html
+|4,39,139,16,1717915728,"~/ui-components-css/templates/html-elements.html"
+-'  133  0  ~/ui-components-css/templates/html-elements.html
+|4,39,133,0,1717915727,"~/ui-components-css/templates/html-elements.html"
+-'  132  16  ~/ui-components-css/templates/html-elements.html
+|4,39,132,16,1717915727,"~/ui-components-css/templates/html-elements.html"
+-'  126  0  ~/ui-components-css/templates/html-elements.html
+|4,39,126,0,1717915727,"~/ui-components-css/templates/html-elements.html"
+-'  125  16  ~/ui-components-css/templates/html-elements.html
+|4,39,125,16,1717915726,"~/ui-components-css/templates/html-elements.html"
+-'  119  0  ~/ui-components-css/templates/html-elements.html
+|4,39,119,0,1717915725,"~/ui-components-css/templates/html-elements.html"
+-'  118  16  ~/ui-components-css/templates/html-elements.html
+|4,39,118,16,1717915725,"~/ui-components-css/templates/html-elements.html"
+-'  112  0  ~/ui-components-css/templates/html-elements.html
+|4,39,112,0,1717915724,"~/ui-components-css/templates/html-elements.html"
+-'  177  12  ~/ui-components-css/templates/html-elements.html
+|4,39,177,12,1717915701,"~/ui-components-css/templates/html-elements.html"
+-'  176  0  ~/ui-components-css/templates/html-elements.html
+|4,39,176,0,1717915698,"~/ui-components-css/templates/html-elements.html"
+-'  170  8  ~/ui-components-css/templates/html-elements.html
+|4,39,170,8,1717915698,"~/ui-components-css/templates/html-elements.html"
+-'  164  12  ~/ui-components-css/templates/html-elements.html
+|4,39,164,12,1717915698,"~/ui-components-css/templates/html-elements.html"
+-'  14  0  ~/ui-components-css/ui-components-css-api.py
+|4,39,14,0,1717913069,"~/ui-components-css/ui-components-css-api.py"
+-'  1  0  ~/servers/hateoas.config.js
+|4,39,1,0,1717913069,"~/servers/hateoas.config.js"
+-'  14  36  ~/.vim/templates/flask.py
+|4,39,14,36,1717912968,"~/.vim/templates/flask.py"
+-'  8  0  ~/ui-components-css/ui-components-css-api.py
+|4,39,8,0,1717912916,"~/ui-components-css/ui-components-css-api.py"
+-'  12  0  ~/.vim/templates/flask.py
+|4,39,12,0,1717912908,"~/.vim/templates/flask.py"
+-'  17  4  ~/.vim/templates/flask.py
+|4,39,17,4,1717912851,"~/.vim/templates/flask.py"
+-'  2  0  ~/.vim/templates/flask.py
+|4,39,2,0,1717912850,"~/.vim/templates/flask.py"
+-'  18  0  ~/ui-components-css/ui-components-css-api.py
+|4,39,18,0,1717912849,"~/ui-components-css/ui-components-css-api.py"
+-'  1  0  ~/.vim/templates/flask.py
+|4,39,1,0,1717912818,"~/.vim/templates/flask.py"
+-'  1  0  ~/.vim/templates/template.py
+|4,39,1,0,1717912814,"~/.vim/templates/template.py"
+-'  19  0  ~/ui-components-css/ui-components-css-api.py
+|4,39,19,0,1717912706,"~/ui-components-css/ui-components-css-api.py"
+-'  1  0  ~/ui-components-css/app.py
+|4,39,1,0,1717912654,"~/ui-components-css/app.py"
+-'  1  0  ~/ui-components-css/app.py
+|4,39,1,0,1717912654,"~/ui-components-css/app.py"
+-'  1  0  ~/ui-components-css/.envrc
+|4,39,1,0,1717912219,"~/ui-components-css/.envrc"
+-'  1  0  ~/ui-components-css/.envrc
+|4,39,1,0,1717912219,"~/ui-components-css/.envrc"
+-'  1  0  ~/ui-components-css/.envrc
+|4,39,1,0,1717912219,"~/ui-components-css/.envrc"
+-'  5  12  ~/ui-components-css/requirements.txt
+|4,39,5,12,1717912144,"~/ui-components-css/requirements.txt"
+-'  5  12  ~/ui-components-css/requirements.txt
+|4,39,5,12,1717912144,"~/ui-components-css/requirements.txt"
+-'  5  12  ~/ui-components-css/requirements.txt
+|4,39,5,12,1717912144,"~/ui-components-css/requirements.txt"
+-'  5  12  ~/ui-components-css/requirements.txt
+|4,39,5,12,1717912144,"~/ui-components-css/requirements.txt"
+-'  1  0  ~/ui-components-css/requirements.txt
+|4,39,1,0,1717912122,"~/ui-components-css/requirements.txt"
+-'  1  0  ~/ui-components-css/requirements.txt
+|4,39,1,0,1717912122,"~/ui-components-css/requirements.txt"
+-'  1  0  ~/ui-components-css/requirements.txt
+|4,39,1,0,1717912122,"~/ui-components-css/requirements.txt"
+-'  1  0  ~/ui-components-css/requirements.txt
+|4,39,1,0,1717912122,"~/ui-components-css/requirements.txt"
+-'  18  0  ~/ui-components-css/templates/base.html
+|4,39,18,0,1717912114,"~/ui-components-css/templates/base.html"
+-'  18  0  ~/ui-components-css/templates/base.html
+|4,39,18,0,1717912114,"~/ui-components-css/templates/base.html"
+-'  18  0  ~/ui-components-css/templates/base.html
+|4,39,18,0,1717912114,"~/ui-components-css/templates/base.html"
+-'  18  0  ~/ui-components-css/templates/base.html
+|4,39,18,0,1717912114,"~/ui-components-css/templates/base.html"
+-'  18  0  ~/ui-components-css/templates/base.html
+|4,39,18,0,1717912114,"~/ui-components-css/templates/base.html"
+-'  17  0  ~/ui-components-css/templates/base.html
+|4,39,17,0,1717912004,"~/ui-components-css/templates/base.html"
+-'  17  0  ~/ui-components-css/templates/base.html
+|4,39,17,0,1717912004,"~/ui-components-css/templates/base.html"
+-'  17  0  ~/ui-components-css/templates/base.html
+|4,39,17,0,1717912004,"~/ui-components-css/templates/base.html"
+-'  17  0  ~/ui-components-css/templates/base.html
+|4,39,17,0,1717912004,"~/ui-components-css/templates/base.html"
+-'  17  0  ~/ui-components-css/templates/base.html
+|4,39,17,0,1717912004,"~/ui-components-css/templates/base.html"
+-'  17  0  ~/ui-components-css/templates/base.html
+|4,39,17,0,1717912004,"~/ui-components-css/templates/base.html"
+-'  1  0  ~/hateoas/static/css/hateoas.css
+|4,39,1,0,1717911986,"~/hateoas/static/css/hateoas.css"
+-'  1  0  ~/hateoas/static/css/hateoas.css
+|4,39,1,0,1717911986,"~/hateoas/static/css/hateoas.css"
+-'  1  0  ~/hateoas/static/css/hateoas.css
+|4,39,1,0,1717911986,"~/hateoas/static/css/hateoas.css"
+-'  1  0  ~/hateoas/static/css/hateoas.css
+|4,39,1,0,1717911986,"~/hateoas/static/css/hateoas.css"
+-'  1  0  ~/hateoas/static/css/hateoas.css
+|4,39,1,0,1717911986,"~/hateoas/static/css/hateoas.css"
+-'  1  0  ~/hateoas/static/css/hateoas.css
+|4,39,1,0,1717911986,"~/hateoas/static/css/hateoas.css"
+-'  18  0  ~/ui-components-css/templates/base.html
+|4,39,18,0,1717911983,"~/ui-components-css/templates/base.html"
+-'  42  4  ~/.vim/coc-settings.json
+|4,39,42,4,1717911949,"~/.vim/coc-settings.json"
+-'  42  4  ~/.vim/coc-settings.json
+|4,39,42,4,1717911949,"~/.vim/coc-settings.json"
+-'  42  4  ~/.vim/coc-settings.json
+|4,39,42,4,1717911949,"~/.vim/coc-settings.json"
+-'  42  4  ~/.vim/coc-settings.json
+|4,39,42,4,1717911949,"~/.vim/coc-settings.json"
+-'  42  4  ~/.vim/coc-settings.json
+|4,39,42,4,1717911949,"~/.vim/coc-settings.json"
+-'  42  4  ~/.vim/coc-settings.json
+|4,39,42,4,1717911949,"~/.vim/coc-settings.json"
+-'  8  20  ~/ui-components-css/templates/base.html
+|4,39,8,20,1717911933,"~/ui-components-css/templates/base.html"
+-'  8  20  ~/ui-components-css/templates/base.html
+|4,39,8,20,1717911933,"~/ui-components-css/templates/base.html"
+-'  8  20  ~/ui-components-css/templates/base.html
+|4,39,8,20,1717911933,"~/ui-components-css/templates/base.html"
+-'  8  20  ~/ui-components-css/templates/base.html
+|4,39,8,20,1717911933,"~/ui-components-css/templates/base.html"
+-'  8  20  ~/ui-components-css/templates/base.html
+|4,39,8,20,1717911933,"~/ui-components-css/templates/base.html"
+-'  8  20  ~/ui-components-css/templates/base.html
+|4,39,8,20,1717911933,"~/ui-components-css/templates/base.html"
+-'  3  0  ~/ui-components-css/templates/base.html
+|4,39,3,0,1717911929,"~/ui-components-css/templates/base.html"
+-'  3  0  ~/ui-components-css/templates/base.html
+|4,39,3,0,1717911929,"~/ui-components-css/templates/base.html"
+-'  3  0  ~/ui-components-css/templates/base.html
+|4,39,3,0,1717911929,"~/ui-components-css/templates/base.html"
 
 # Buffer list:
-%~/instagram-reels/post.py	1	0
+%~/ui-components-css/ui-components-css-api.py	12	22
+%~/ui-components-css/templates/html-elements.html	8	83
+%~/ui-components-css/static/css-resets/reset.css	24	11
+%~/ui-components-css/static/css-resets/button-reset.css	1	0
 
 # History of marks within files (newest to oldest):
+
+> ~/ui-components-css/static/css-resets/reset.css
+	*	1717917518	0
+	"	24	11
+	^	1	63
+	.	1	0
+	+	47	1
+	+	1	0
+
+> ~/ui-components-css/templates/html-elements.html
+	*	1717917511	0
+	"	8	83
+	^	8	84
+	.	8	0
+	+	33	0
+	+	46	0
+	+	36	29
+	+	44	16
+	+	48	15
+	+	49	0
+	+	55	52
+	+	56	12
+	+	59	48
+	+	66	48
+	+	67	12
+	+	60	0
+	+	77	0
+	+	84	0
+	+	77	0
+	+	71	0
+	+	76	0
+	+	75	0
+	+	80	0
+	+	82	0
+	+	88	0
+	+	86	0
+	+	92	0
+	+	90	0
+	+	95	0
+	+	97	0
+	+	102	0
+	+	104	0
+	+	107	0
+	+	109	0
+	+	111	0
+	+	116	0
+	+	123	0
+	+	130	0
+	+	137	0
+	+	144	0
+	+	151	0
+	+	158	0
+	+	165	0
+	+	172	0
+	+	177	0
+	+	118	0
+	+	125	0
+	+	132	0
+	+	139	0
+	+	174	0
+	+	167	0
+	+	160	0
+	+	153	0
+	+	146	0
+	+	27	26
+	+	28	0
+	+	27	27
+	+	28	0
+	+	27	41
+	+	36	0
+	+	70	0
+	+	35	0
+	+	20	0
+	+	22	84
+	+	25	12
+	+	23	0
+	+	24	0
+	+	25	0
+	+	20	24
+	+	13	0
+	+	13	207
+	+	13	0
+	+	10	69
+	+	13	0
+	+	12	7
+	+	12	15
+	+	12	0
+	+	12	18
+	+	12	14
+	+	178	12
+	+	182	50
+	+	183	12
+	+	180	58
+	+	19	10
+	+	186	5
+	+	19	9
+	+	19	15
+	+	19	19
+	+	186	0
+	+	186	16
+	+	186	20
+	+	19	18
+	+	19	0
+	+	7	0
+	+	9	0
+	+	12	0
+	+	7	69
+	+	8	83
+	+	8	0
+
+> ~/ui-components-css/static/css-resets/button-reset.css
+	*	1717917438	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/ui-components-css/ui-components-css-api.py
+	*	1717915883	0
+	"	12	22
+	^	12	23
+	.	12	4
+	+	28	0
+	+	27	0
+	+	28	0
+	+	27	0
+	+	1	0
+	+	20	14
+	+	18	0
+	+	20	11
+	+	23	36
+	+	16	32
+	+	9	19
+	+	10	0
+	+	9	34
+	+	11	41
+	+	12	4
+
+> ~/.vim/temp/form-tag-macro.vim
+	*	1717915755	0
+	"	4	0
+	^	3	53
+	.	3	52
+	+	4	10
+	+	3	21
+	+	5	7
+	+	3	52
+
+> ~/.vim/plugin/workspace.vim
+	*	1717915264	0
+	"	50	4
+	^	50	20
+	.	50	19
+	+	28	0
+	+	26	1
+	+	28	69
+	+	31	4
+	+	28	61
+	+	31	9
+	+	28	61
+	+	57	27
+	+	68	8
+	+	68	0
+	+	57	7
+	+	57	0
+	+	26	31
+	+	56	10
+	+	7	9
+	+	26	11
+	+	25	0
+	+	9	4
+	+	11	10
+	+	14	43
+	+	25	0
+	+	14	0
+	+	13	10
+	+	69	0
+	+	12	11
+	+	58	37
+	+	42	63
+	+	43	20
+	+	58	0
+	+	59	30
+	+	43	58
+	+	44	4
+	+	56	4
+	+	16	38
+	+	25	0
+	+	17	7
+	+	18	91
+	+	19	8
+	+	21	13
+	+	24	10
+	+	44	53
+	+	46	14
+	+	47	9
+	+	48	53
+	+	51	4
+	+	4	22
+	+	6	0
+	+	52	26
+	+	55	0
+	+	10	55
+	+	59	1
+	+	58	64
+	+	54	8
+	+	58	1
+	+	63	49
+	+	64	53
+	+	65	52
+	+	66	51
+	+	67	0
+	+	65	5
+	+	64	5
+	+	28	0
+	+	32	46
+	+	42	5
+	+	32	21
+	+	42	0
+	+	42	4
+	+	42	0
+	+	33	13
+	+	41	0
+	+	40	4
+	+	34	19
+	+	35	50
+	+	36	28
+	+	37	50
+	+	38	25
+	+	39	8
+	+	29	48
+	+	28	61
+	+	30	95
+	+	29	49
+	+	30	64
+	+	50	19
+
+> /usr/share/vim/vim90/doc/options.txt
+	*	1717914011	0
+	"	6299	29
+
+> ~/servers/hateoas.config.js
+	*	1717913067	0
+	"	1	0
+	^	5	33
+	.	7	0
+	+	32	0
+	+	33	19
+	+	34	28
+	+	35	48
+	+	37	0
+	+	40	0
+	+	39	5
+	+	32	0
+	+	32	23
+	+	32	11
+	+	32	9
+	+	32	0
+	+	11	0
+	+	10	5
+	+	10	0
+	+	10	8
+	+	3	0
+	+	6	35
+	+	10	0
+	+	10	13
+	+	10	25
+	+	10	65
+	+	10	0
+	+	7	8
+	+	6	0
+	+	4	22
+	+	5	32
+	+	7	0
+	+	8	0
+	+	7	0
+
+> ~/servers/ui-components-css.config.js
+	*	1717913061	0
+	"	5	26
+	^	8	48
+	.	8	47
+	+	1	0
+	+	3	31
+	+	5	33
+	+	6	42
+	+	8	47
+
+> ~/.vim/templates/flask.py
+	*	1717912967	0
+	"	14	36
+	^	14	37
+	.	14	36
+	+	5	21
+	+	7	9
+	+	18	0
+	+	14	36
+	+	15	0
+	+	17	4
+	+	2	23
+	+	18	0
+	+	9	0
+	+	12	0
+	+	14	36
+
+> ~/hateoas/hateoas-api.py
+	*	1717912874	0
+	"	1	0
+	^	789	60
+	.	789	26
+	+	789	59
+	+	789	35
+	+	789	54
+	+	789	35
+	+	789	68
+	+	789	60
+	+	789	88
+	+	789	35
+	+	789	88
+	+	789	35
+	+	789	47
+	+	789	54
+	+	377	0
+	+	376	5
+	+	377	133
+	+	377	0
+	+	376	4
+	+	777	0
+	+	776	85
+	+	780	31
+	+	781	22
+	+	789	91
+	+	789	51
+	+	789	47
+	+	155	0
+	+	154	0
+	+	771	38
+	+	771	16
+	+	771	35
+	+	771	23
+	+	14	13
+	+	771	0
+	+	785	0
+	+	789	84
+	+	789	35
+	+	789	63
+	+	789	52
+	+	789	64
+	+	789	53
+	+	789	57
+	+	789	74
+	+	789	47
+	+	786	0
+	+	13	31
+	+	786	58
+	+	789	0
+	+	789	35
+	+	789	94
+	+	789	60
+	+	787	13
+	+	789	126
+	+	789	63
+	+	789	66
+	+	789	86
+	+	789	35
+	+	787	0
+	+	789	35
+	+	789	92
+	+	789	51
+	+	789	84
+	+	789	82
+	+	789	51
+	+	789	107
+	+	789	39
+	+	789	59
+	+	789	108
+	+	789	44
+	+	789	35
+	+	789	42
+	+	789	35
+	+	789	63
+	+	789	52
+	+	789	35
+	+	789	70
+	+	789	55
+	+	789	51
+	+	789	55
+	+	789	51
+	+	789	55
+	+	789	51
+	+	789	35
+	+	789	44
+	+	789	35
+	+	789	78
+	+	789	76
+	+	789	98
+	+	789	35
+	+	789	43
+	+	789	56
+	+	790	0
+	+	789	34
+	+	790	0
+	+	789	26
+
+> ~/.vim/templates/template.py
+	*	1717912813	0
+	"	1	0
+	^	7	21
+	.	7	20
+	+	1	0
+	+	7	12
+	+	1	0
+	+	15	0
+	+	6	25
+	+	7	20
+
+> ~/hateoas/static/css/hateoas.css
+	*	1717912679	0
+	"	1	0
+	.	21	8
+	+	2	48
+	+	3	45
+	+	5	50
+	+	12	39
+	+	9	0
+	+	10	36
+	+	11	0
+	+	13	40
+	+	6	45
+	+	7	8
+	+	5	29
+	+	2	49
+	+	3	44
+	+	10	34
+	+	14	59
+	+	16	12
+	+	5	43
+	+	24	83
+	+	24	0
+	+	24	94
+	+	23	10
+	+	22	0
+	+	23	60
+	+	24	57
+	+	23	47
+	+	23	86
+	+	24	83
+	+	2	54
+	+	3	51
+	+	26	127
+	+	26	89
+	+	5	0
+	+	10	37
+	+	14	17
+	+	15	27
+	+	17	5
+	+	27	41
+	+	28	5
+	+	28	33
+	+	27	25
+	+	27	36
+	+	23	0
+	+	17	0
+	+	9	0
+	+	2	0
+	+	23	0
+	+	24	103
+	+	24	0
+	+	29	0
+	+	30	0
+	+	4	25
+	+	23	34
+	+	24	31
+	+	23	40
+	+	24	36
+	+	23	40
+	+	24	50
+	+	25	40
+	+	25	39
+	+	26	0
+	+	25	0
+	+	19	0
+	+	18	8
+	+	19	22
+	+	20	25
+	+	22	0
+	+	21	183
+	+	21	8
+	+	21	40
+	+	21	23
+	+	21	21
+	+	21	34
+	+	21	25
+	+	21	8
+
+> ~/ui-components-css/app.py
+	*	1717912653	0
+	"	1	0
+
+> ~/ui-components-css/.envrc
+	*	1717912218	0
+	"	1	0
+	.	2	0
+	+	1	0
+	+	2	0
+
+> ~/ui-components-css/requirements.txt
+	*	1717912143	0
+	"	5	12
+	^	5	13
+	.	5	12
+	+	5	12
+
+> ~/hateoas/requirements.txt
+	*	1717912142	0
+	"	1	0
+	^	14	0
+	.	14	0
+	+	3	5
+	+	9	20
+	+	2	4
+	+	10	13
+	+	11	0
+	+	13	7
+	+	14	18
+	+	14	0
+
+> ~/ui-components-css/templates/base.html
+	*	1717912112	0
+	"	18	0
+	^	2	22
+	.	6	0
+	+	2	6
+	+	3	0
+	+	18	0
+	+	4	26
+	+	6	0
+	+	5	0
+	+	18	0
+	+	7	27
+	+	8	18
+	+	9	5
+	+	11	5
+	+	18	3
+	+	3	0
+	+	15	9
+	+	17	11
+	+	18	0
+	+	8	21
+	+	10	20
+	+	12	20
+	+	16	20
+	+	18	5
+	+	2	22
+	+	6	64
+	+	2	5
+	+	6	0
+	+	6	14
+	+	6	0
+	+	2	7
+	+	6	0
+	+	2	22
+	+	8	0
+	+	2	16
+	+	6	0
+
+> ~/.vim/coc-settings.json
+	*	1717911948	0
+	"	42	4
+	^	42	45
+	.	42	41
+	+	38	33
+	+	38	35
+	+	38	0
+	+	38	9
+	+	38	0
+	+	38	37
+	+	38	32
+	+	38	34
+	+	38	0
+	+	21	0
+	+	20	39
+	+	21	0
+	+	20	28
+	+	20	37
+	+	2	0
+	+	38	0
+	+	38	11
+	+	38	0
+	+	2	0
+	+	14	0
+	+	15	0
+	+	16	0
+	+	15	0
+	+	2	33
+	+	3	38
+	+	16	0
+	+	4	0
+	+	9	0
+	+	11	0
+	+	20	0
+	+	16	0
+	+	20	0
+	+	21	0
+	+	37	42
+	+	22	0
+	+	37	0
+	+	25	34
+	+	37	0
+	+	35	0
+	+	25	0
+	+	4	0
+	+	23	0
+	+	4	0
+	+	35	0
+	+	26	37
+	+	3	38
+	+	9	0
+	+	6	33
+	+	9	0
+	+	7	49
+	+	9	0
+	+	5	0
+	+	8	131
+	+	7	78
+	+	5	0
+	+	20	0
+	+	60	0
+	+	59	25
+	+	60	0
+	+	78	0
+	+	48	14
+	+	49	44
+	+	47	0
+	+	76	0
+	+	75	0
+	+	72	71
+	+	73	33
+	+	75	0
+	+	74	16
+	+	75	0
+	+	74	25
+	+	73	11
+	+	71	48
+	+	73	30
+	+	71	0
+	+	19	6
+	+	28	29
+	+	35	33
+	+	35	0
+	+	32	0
+	+	28	6
+	+	29	5
+	+	28	0
+	+	32	0
+	+	33	28
+	+	34	32
+	+	37	0
+	+	36	39
+	+	37	0
+	+	43	0
+	+	46	0
+	+	46	69
+	+	46	34
+	+	46	30
+	+	46	44
+	+	46	18
+	+	46	0
+	+	40	51
+	+	42	41
+
+> ~/hateoas/templates/base.html
+	*	1717911538	0
+	"	1	0
+	^	6	38
+	.	6	9
+	+	11	0
+	+	7	0
+	+	4	50
+	+	5	78
+	+	7	0
+	+	7	8
+	+	4	0
+	+	7	0
+	+	10	0
+	+	11	0
+	+	9	20
+	+	10	0
+	+	9	12
+	+	9	0
+	+	9	55
+	+	9	67
+	+	9	0
+	+	6	9
+
+> ~/ui-components-css/static/css-utilities/reset.css
+	*	1717911378	0
+	"	36	0
+	^	1	63
+	.	1	62
+	+	47	1
+	+	1	62
+
+> ~/ui-components-css/usage.md
+	*	1717911377	0
+	"	12	0
+	^	60	49
+	.	60	8
+	+	16	82
+	+	17	52
+	+	6	17
+	+	14	0
+	+	13	7
+	+	10	7
+	+	8	0
+	+	6	17
+	+	18	89
+	+	18	153
+	+	20	0
+	+	19	20
+	+	63	0
+	+	64	37
+	+	63	33
+	+	66	0
+	+	38	100
+	+	38	0
+	+	63	0
+	+	67	53
+	+	63	45
+	+	64	14
+	+	2	0
+	+	68	4
+	+	68	0
+	+	36	57
+	+	38	0
+	+	36	45
+	+	38	0
+	+	24	89
+	+	25	0
+	+	25	81
+	+	38	1
+	+	36	0
+	+	38	0
+	+	36	10
+	+	36	28
+	+	37	46
+	+	38	0
+	+	1	27
+	+	21	0
+	+	68	0
+	+	15	11
+	+	29	80
+	+	31	77
+	+	1	0
+	+	2	0
+	+	32	90
+	+	33	79
+	+	34	81
+	+	21	0
+	+	21	108
+	+	21	0
+	+	22	0
+	+	22	89
+	+	22	0
+	+	22	70
+	+	22	83
+	+	22	0
+	+	26	0
+	+	30	0
+	+	35	0
+	+	22	0
+	+	46	0
+	+	62	0
+	+	46	0
+	+	40	5
+	+	61	6
+	+	44	17
+	+	42	30
+	+	43	11
+	+	46	0
+	+	39	14
+	+	46	12
+	+	61	10
+	+	46	0
+	+	61	0
+	+	46	0
+	+	47	0
+	+	49	0
+	+	45	29
+	+	51	16
+	+	53	11
+	+	54	4
+	+	55	9
+	+	52	7
+	+	55	48
+	+	56	47
+	+	57	47
+	+	58	55
+	+	59	47
+	+	60	8
+
+> ~/sqlite-editor/static/css/editor.css
+	*	1717911326	0
+	"	1	0
+	^	42	22
+	.	42	0
+	+	1	0
+	+	218	18
+	+	218	17
+	+	157	15
+	+	155	0
+	+	157	21
+	+	158	16
+	+	215	0
+	+	157	19
+	+	158	0
+	+	157	17
+	+	156	0
+	+	159	0
+	+	158	0
+	+	155	0
+	+	194	0
+	+	136	6
+	+	136	29
+	+	137	0
+	+	136	28
+	+	56	0
+	+	57	42
+	+	73	80
+	+	57	39
+	+	73	80
+	+	55	27
+	+	58	51
+	+	55	19
+	+	58	0
+	+	55	0
+	+	58	21
+	+	57	24
+	+	55	0
+	+	58	0
+	+	57	27
+	+	58	27
+	+	57	76
+	+	58	60
+	+	57	57
+	+	58	61
+	+	57	45
+	+	58	47
+	+	218	0
+	+	217	0
+	+	214	22
+	+	217	0
+	+	220	39
+	+	221	9
+	+	123	9
+	+	128	0
+	+	122	0
+	+	57	0
+	+	64	58
+	+	73	0
+	+	64	0
+	+	70	0
+	+	64	58
+	+	70	0
+	+	65	0
+	+	67	0
+	+	68	0
+	+	62	0
+	+	68	0
+	+	69	0
+	+	73	0
+	+	72	0
+	+	138	0
+	+	29	0
+	+	25	0
+	+	42	0
+
+> ~/ui-components-css/static/css-utilities/wide-tall.css
+	*	1717910994	0
+	"	2	0
+	^	9	18
+	.	9	17
+	+	2	61
+	+	3	0
+	+	6	36
+	+	7	0
+	+	8	17
+	+	9	17
+
+> ~/sqlite-editor/editor-api.py
+	*	1717910931	0
+	"	1	0
+	^	434	85
+	.	434	84
+	+	360	0
+	+	358	0
+	+	520	109
+	+	305	41
+	+	306	37
+	+	309	50
+	+	309	24
+	+	309	49
+	+	319	34
+	+	319	0
+	+	307	49
+	+	308	10
+	+	309	10
+	+	309	0
+	+	319	0
+	+	304	1
+	+	310	4
+	+	556	0
+	+	545	57
+	+	546	126
+	+	547	110
+	+	548	106
+	+	549	63
+	+	550	52
+	+	556	58
+	+	557	57
+	+	558	126
+	+	559	111
+	+	560	107
+	+	561	63
+	+	561	0
+	+	567	0
+	+	561	0
+	+	562	52
+	+	567	58
+	+	575	55
+	+	567	69
+	+	414	0
+	+	427	69
+	+	427	0
+	+	424	11
+	+	427	0
+	+	423	11
+	+	428	79
+	+	552	68
+	+	553	52
+	+	543	61
+	+	552	74
+	+	543	82
+	+	555	53
+	+	563	62
+	+	564	88
+	+	565	52
+	+	313	11
+	+	316	65
+	+	316	4
+	+	312	1
+	+	567	58
+	+	568	57
+	+	569	60
+	+	571	56
+	+	316	0
+	+	570	0
+	+	570	92
+	+	568	0
+	+	567	58
+	+	575	0
+	+	566	0
+	+	573	52
+	+	116	57
+	+	117	8
+	+	164	4
+	+	165	56
+	+	349	0
+	+	349	65
+	+	349	0
+	+	353	0
+	+	349	48
+	+	349	77
+	+	349	45
+	+	352	44
+	+	349	0
+	+	349	45
+	+	349	46
+	+	349	0
+	+	353	0
+	+	349	0
+	+	353	0
+	+	341	40
+	+	341	0
+	+	336	0
+	+	337	40
+	+	338	13
+	+	162	0
+	+	19	10
+	+	161	29
+	+	319	17
+	+	646	0
+	+	334	84
+	+	434	84
+
+> ~/ui-components-css/previous-attempts.txt
+	*	1717910472	0
+	"	1	14
+	^	11	12
+	.	11	0
+	+	14	35
+	+	21	47
+	+	21	44
+	+	9	41
+	+	10	0
+	+	9	0
+	+	10	0
+	+	21	0
+	+	10	0
+	+	15	0
+	+	21	0
+	+	10	0
+	+	21	0
+	+	17	24
+	+	10	0
+	+	8	0
+	+	6	0
+	+	7	21
+	+	4	49
+	+	3	15
+	+	24	31
+	+	25	32
+	+	2	0
+	+	1	12
+	+	10	0
+	+	22	32
+	+	23	29
+	+	21	0
+	+	14	0
+	+	12	0
+	+	11	8
+	+	21	0
+	+	19	0
+	+	21	0
+	+	20	13
+	+	10	0
+	+	19	0
+	+	26	22
+	+	27	42
+	+	32	0
+	+	31	0
+	+	32	0
+	+	32	8
+	+	28	0
+	+	32	0
+	+	29	5
+	+	30	5
+	+	29	0
+	+	36	0
+	+	35	0
+	+	36	0
+	+	33	11
+	+	34	6
+	+	35	6
+	+	34	0
+	+	33	15
+	+	11	14
+	+	18	4
+	+	36	12
+	+	4	0
+	+	5	0
+	+	12	0
+	+	21	0
+	+	34	0
+	+	36	0
+	+	16	0
+	+	12	0
+	+	13	0
+	+	14	0
+	+	15	0
+	+	16	0
+	+	12	0
+	+	13	0
+	+	15	0
+	+	14	0
+	+	18	1
+	+	12	0
+	+	7	0
+	+	15	0
+	+	25	0
+	+	18	0
+	+	12	0
+	+	18	0
+	+	11	0
+
+> ~/.vim/syntax/todo.vim
+	*	1717883212	0
+	"	19	31
+	^	19	32
+	.	19	31
+	+	16	75
+	+	16	0
+	+	16	1
+	+	16	14
+	+	20	0
+	+	8	20
+	+	8	21
+	+	14	0
+	+	13	0
+	+	17	32
+	+	10	64
+	+	12	22
+	+	19	0
+	+	12	30
+	+	11	17
+	+	12	30
+	+	18	42
+	+	19	25
+	+	7	2
+	+	16	0
+	+	19	31
+
+> ~/.vim/Highlight test
+	*	1717883172	0
+	"	17	0
+	^	364	20
+	.	50	0
+	+	50	0
+
+> /usr/share/vim/vim90/doc/syntax.txt
+	*	1717883077	0
+	"	4950	57
+
+> ~/.vim/ftplugin/todo.vim
+	*	1717882623	0
+	"	1	0
+	^	28	39
+	.	31	0
+	+	7	28
+	+	9	49
+	+	10	11
+	+	33	11
+	+	35	72
+	+	36	2
+	+	37	0
+	+	13	55
+	+	15	5
+	+	17	7
+	+	19	8
+	+	21	4
+	+	11	0
+	+	11	17
+	+	11	0
+	+	14	23
+	+	23	37
+	+	24	29
+	+	25	50
+	+	32	0
+	+	11	0
+	+	29	4
+	+	29	0
+	+	12	22
+	+	26	7
+	+	29	0
+	+	31	4
+	+	26	7
+	+	31	0
+	+	29	0
+	+	30	0
+	+	27	28
+	+	28	8
+	+	31	0
+
+> ~/ui-components-css/windows-desktop-css-paths.txt
+	*	1717882412	0
+	"	1	0
+	.	1	0
+	+	1	51
+	+	1	26
+	+	1	37
+	+	1	0
+	+	1	19
+	+	1	0
+
+> ~/.vim/plugin/rename.vim
+	*	1717852075	0
+	"	7	4
+	^	3	27
+	.	4	0
+	+	1	25
+	+	5	0
+	+	30	1
+	+	31	7
+	+	4	0
+	+	4	22
+	+	3	31
+	+	2	21
+	+	3	24
+	+	4	0
+
+> ~/ui-components-css/usage.css
+	*	1717852022	0
+	"	2	53
+	^	2	54
+	.	2	54
+	+	1	76
+	+	2	54
+
+> ~/.vim/vimrc
+	*	1717851869	0
+	"	1	0
+	^	1157	56
+	.	1157	55
+	+	1356	23
+	+	1356	1
+	+	1356	0
+	+	1356	30
+	+	1356	0
+	+	1356	16
+	+	1356	0
+	+	1356	70
+	+	1356	0
+	+	1356	22
+	+	1356	0
+	+	1356	27
+	+	1356	0
+	+	1356	30
+	+	1356	13
+	+	1356	16
+	+	1356	0
+	+	1356	19
+	+	1356	5
+	+	1356	80
+	+	1356	22
+	+	1356	0
+	+	1356	21
+	+	1356	28
+	+	1356	22
+	+	1356	71
+	+	1356	8
+	+	1356	24
+	+	1356	40
+	+	1356	0
+	+	1356	39
+	+	1356	0
+	+	1356	19
+	+	1356	0
+	+	1356	38
+	+	1356	21
+	+	1356	0
+	+	1356	10
+	+	1356	25
+	+	1356	0
+	+	1356	32
+	+	1356	0
+	+	1356	10
+	+	1356	0
+	+	1356	25
+	+	1356	10
+	+	1356	0
+	+	1356	60
+	+	1356	0
+	+	1356	55
+	+	1356	0
+	+	1356	44
+	+	1356	0
+	+	1356	19
+	+	1356	71
+	+	1356	0
+	+	1356	23
+	+	1356	41
+	+	1356	44
+	+	1356	40
+	+	1356	28
+	+	1356	0
+	+	1356	11
+	+	1356	18
+	+	1356	43
+	+	1356	64
+	+	1356	54
+	+	1356	0
+	+	1356	31
+	+	1356	0
+	+	1356	6
+	+	1356	0
+	+	1356	1
+	+	1356	0
+	+	1356	80
+	+	1356	75
+	+	1356	0
+	+	1356	52
+	+	1356	41
+	+	162	0
+	+	49	26
+	+	1356	0
+	+	48	0
+	+	47	22
+	+	46	25
+	+	66	0
+	+	1151	57
+	+	1155	59
+	+	1157	55
+
+> ~/hateoas/templates/sync_video_to_video.html
+	*	1717688701	0
+	"	1	0
+	^	1	4
+	.	1	0
+	+	2	0
+	+	1	0
+
+> ~/hateoas/templates/sync_video_on_video.html
+	*	1717688607	0
+	"	1	0
+
+> ~/frontend/src/components/Chart.vue
+	*	1717670563	0
+	"	176	20
+
+> ~/hateoas/data/offsets/2120649324.json
+	*	1717669384	0
+	"	1	0
+
+> ~/hateoas/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/reltools.py
+	*	1717669289	0
+	"	56	4
+
+> ~/hateoas/chat.py
+	*	1717665619	0
+	"	633	20
+	^	734	18
+	.	734	4
+	+	2	0
+	+	40	0
+	+	48	0
+	+	41	0
+	+	39	13
+	+	96	21
+	+	175	0
+	+	175	43
+	+	175	0
+	+	179	37
+	+	188	0
+	+	231	0
+	+	840	26
+	+	230	29
+	+	664	45
+	+	667	40
+	+	668	27
+	+	669	16
+	+	675	0
+	+	669	14
+	+	670	51
+	+	672	34
+	+	672	24
+	+	673	5
+	+	674	7
+	+	671	23
+	+	675	0
+	+	677	4
+	+	702	11
+	+	702	0
+	+	702	8
+	+	665	25
+	+	666	28
+	+	702	29
+	+	702	24
+	+	5	10
+	+	116	27
+	+	121	25
+	+	244	28
+	+	282	21
+	+	624	17
+	+	784	17
+	+	5	0
+	+	702	0
+	+	702	14
+	+	702	16
+	+	702	0
+	+	702	12
+	+	702	0
+	+	691	0
+	+	702	0
+	+	692	0
+	+	693	0
+	+	702	0
+	+	694	0
+	+	689	16
+	+	691	15
+	+	696	49
+	+	698	28
+	+	702	0
+	+	698	27
+	+	699	0
+	+	697	38
+	+	666	64
+	+	694	33
+	+	695	24
+	+	729	18
+	+	731	12
+	+	705	0
+	+	690	22
+	+	704	22
+	+	816	25
+	+	389	19
+	+	266	15
+	+	290	0
+	+	291	21
+	+	310	0
+	+	304	16
+	+	310	16
+	+	231	0
+	+	18	29
+	+	233	0
+	+	230	0
+	+	236	48
+	+	239	0
+	+	235	0
+	+	237	39
+	+	238	49
+	+	239	0
+	+	290	0
+	+	288	39
+	+	288	0
+	+	653	22
+	+	734	4
+
+> ~/python_common/waivek/get.py
+	*	1717658100	0
+	"	88	46
+	^	21	10
+	.	21	0
+	+	235	51
+	+	41	0
+	+	262	0
+	+	26	0
+	+	226	16
+	+	21	0
+
+> ~/hateoas/chat
+	*	1717657786	0
+	"	1	0
+
+> ~/.config/direnv/direnv.toml
+	*	1717650908	0
+	"	2	54
+	^	2	55
+	.	2	54
+	+	2	54
+
+> ~/hateoas/.envrc
+	*	1717650883	0
+	"	3	0
+	.	4	0
+	+	2	47
+	+	2	71
+	+	2	0
+	+	1	13
+	+	3	71
+	+	2	0
+	+	3	0
+	+	4	0
+
+> ~/hateoas/.gitignore
+	*	1717650819	0
+	"	4	5
+	^	4	6
+	.	4	5
+	+	2	7
+	+	3	8
+	+	6	3
+	+	7	16
+	+	5	4
+	+	1	5
+	+	4	5
+
+> ~/.vim/_viminfo_linux
+	*	1717650688	0
+	"	9907	21
+
+> ~/genproject/python.sh
+	*	1717650631	0
+	"	37	26
+	^	37	27
+	.	37	26
+	+	6	0
+	+	2	0
+	+	4	9
+	+	11	9
+	+	17	9
+	+	43	0
+	+	56	26
+	+	57	0
+	+	58	8
+	+	40	6
+	+	42	0
+	+	41	0
+	+	42	0
+	+	23	15
+	+	46	0
+	+	36	13
+	+	54	4
+	+	58	1
+	+	28	6
+	+	42	1
+	+	58	35
+	+	42	0
+	+	37	26
+
+> ~/tooling/git-knowledge.txt
+	*	1717649737	0
+	"	21	34
+	^	21	35
+	.	21	34
+	+	4	49
+	+	2	70
+	+	11	32
+	+	13	69
+	+	15	7
+	+	17	19
+	+	19	7
+	+	27	0
+	+	19	51
+	+	21	7
+	+	23	13
+	+	25	0
+	+	23	3
+	+	21	34
 
 > ~/instagram-reels/post.py
 	*	1717616858	0
@@ -10167,212 +11907,6 @@ $
 	+	16	30
 	+	18	0
 	+	17	15
-
-> ~/.vim/_viminfo_linux
-	*	1717616732	0
-	"	1	0
-
-> ~/hateoas/hateoas-api.py
-	*	1717616624	0
-	"	807	12
-	^	785	57
-	.	799	12
-	+	783	69
-	+	783	58
-	+	783	48
-	+	783	80
-	+	783	107
-	+	783	54
-	+	783	114
-	+	783	104
-	+	783	46
-	+	783	92
-	+	783	65
-	+	783	34
-	+	783	97
-	+	783	34
-	+	885	45
-	+	886	16
-	+	883	78
-	+	883	45
-	+	883	0
-	+	886	0
-	+	874	19
-	+	884	18
-	+	873	0
-	+	886	0
-	+	885	0
-	+	885	69
-	+	885	33
-	+	885	17
-	+	885	16
-	+	878	33
-	+	880	33
-	+	885	0
-	+	873	0
-	+	883	0
-	+	880	0
-	+	883	18
-	+	885	0
-	+	880	0
-	+	885	0
-	+	883	0
-	+	873	0
-	+	885	52
-	+	885	18
-	+	882	0
-	+	884	0
-	+	874	0
-	+	879	181
-	+	875	0
-	+	837	0
-	+	837	23
-	+	875	20
-	+	800	30
-	+	790	51
-	+	837	0
-	+	837	23
-	+	875	31
-	+	790	90
-	+	790	77
-	+	796	40
-	+	796	5
-	+	796	56
-	+	796	55
-	+	796	4
-	+	837	0
-	+	796	79
-	+	796	78
-	+	836	24
-	+	837	0
-	+	836	19
-	+	875	0
-	+	876	33
-	+	790	25
-	+	790	53
-	+	796	0
-	+	835	0
-	+	790	53
-	+	796	0
-	+	790	12
-	+	791	19
-	+	375	0
-	+	374	5
-	+	375	133
-	+	375	0
-	+	374	4
-	+	775	0
-	+	774	85
-	+	778	31
-	+	779	22
-	+	785	56
-	+	805	16
-	+	799	12
-
-> ~/hateoas/chat.py
-	*	1717616612	0
-	"	81	4
-	^	683	35
-	.	683	20
-	+	2	0
-	+	39	0
-	+	47	0
-	+	40	0
-	+	38	13
-	+	95	21
-	+	174	0
-	+	174	43
-	+	174	0
-	+	178	37
-	+	187	0
-	+	230	0
-	+	823	26
-	+	229	29
-	+	654	45
-	+	657	40
-	+	658	27
-	+	659	16
-	+	665	0
-	+	659	14
-	+	660	51
-	+	662	34
-	+	662	24
-	+	663	5
-	+	664	7
-	+	661	23
-	+	665	0
-	+	667	4
-	+	690	11
-	+	690	0
-	+	690	8
-	+	655	25
-	+	656	28
-	+	690	29
-	+	690	24
-	+	5	10
-	+	115	27
-	+	120	25
-	+	240	28
-	+	277	21
-	+	615	17
-	+	768	17
-	+	5	0
-	+	690	0
-	+	690	14
-	+	690	16
-	+	690	0
-	+	690	12
-	+	690	0
-	+	680	0
-	+	690	0
-	+	681	0
-	+	682	0
-	+	690	0
-	+	683	0
-	+	679	16
-	+	680	15
-	+	684	49
-	+	686	28
-	+	690	0
-	+	686	27
-	+	687	0
-	+	685	38
-	+	656	64
-	+	683	20
-
-> ~/hateoas/.envrc
-	*	1717616539	0
-	"	1	0
-	.	2	0
-	+	2	47
-	+	2	71
-	+	2	0
-
-> ~/hateoas/.gitignore
-	*	1717615497	0
-	"	1	5
-	^	1	6
-	.	1	5
-	+	2	7
-	+	3	8
-	+	5	3
-	+	6	16
-	+	4	4
-	+	1	5
-
-> ~/hateoas/requirements.txt
-	*	1717610077	0
-	"	14	0
-	^	14	0
-	.	14	0
-	+	3	5
-	+	9	20
-	+	2	4
-	+	10	13
-	+	11	0
-	+	13	7
-	+	14	18
-	+	14	0
 
 > ~/Twitch/coffee-vps/code/chat.py
 	*	1717609820	0
@@ -10627,30 +12161,6 @@ $
 	+	46	11
 	+	46	15
 
-> ~/hateoas/templates/base.html
-	*	1717434879	0
-	"	6	37
-	^	6	38
-	.	6	9
-	+	11	0
-	+	7	0
-	+	4	50
-	+	5	78
-	+	7	0
-	+	7	8
-	+	4	0
-	+	7	0
-	+	10	0
-	+	11	0
-	+	9	20
-	+	10	0
-	+	9	12
-	+	9	0
-	+	9	55
-	+	9	67
-	+	9	0
-	+	6	9
-
 > ~/hateoas/templates/nav.html
 	*	1717237975	0
 	"	3	151
@@ -10678,355 +12188,9 @@ $
 	+	5	0
 	+	3	151
 
-> ~/hateoas/static/css/hateoas.css
-	*	1717236673	0
-	"	21	8
-	.	21	8
-	+	2	48
-	+	3	45
-	+	5	50
-	+	12	39
-	+	9	0
-	+	10	36
-	+	11	0
-	+	13	40
-	+	6	45
-	+	7	8
-	+	5	29
-	+	2	49
-	+	3	44
-	+	10	34
-	+	14	59
-	+	16	12
-	+	5	43
-	+	24	83
-	+	24	0
-	+	24	94
-	+	23	10
-	+	22	0
-	+	23	60
-	+	24	57
-	+	23	47
-	+	23	86
-	+	24	83
-	+	2	54
-	+	3	51
-	+	26	127
-	+	26	89
-	+	5	0
-	+	10	37
-	+	14	17
-	+	15	27
-	+	17	5
-	+	27	41
-	+	28	5
-	+	28	33
-	+	27	25
-	+	27	36
-	+	23	0
-	+	17	0
-	+	9	0
-	+	2	0
-	+	23	0
-	+	24	103
-	+	24	0
-	+	29	0
-	+	30	0
-	+	4	25
-	+	23	34
-	+	24	31
-	+	23	40
-	+	24	36
-	+	23	40
-	+	24	50
-	+	25	40
-	+	25	39
-	+	26	0
-	+	25	0
-	+	19	0
-	+	18	8
-	+	19	22
-	+	20	25
-	+	22	0
-	+	21	183
-	+	21	8
-	+	21	40
-	+	21	23
-	+	21	21
-	+	21	34
-	+	21	25
-	+	21	8
-
 > ~/bash/logs/download_worker-red.log
 	*	1717236372	0
 	"	26349	0
-
-> ~/.vim/plugin/workspace.vim
-	*	1717235773	0
-	"	28	61
-	^	28	62
-	.	28	61
-	+	28	0
-	+	26	1
-	+	28	69
-	+	30	4
-	+	28	61
-	+	30	9
-	+	28	61
-	+	54	27
-	+	65	8
-	+	65	0
-	+	54	7
-	+	54	0
-	+	26	31
-	+	53	10
-	+	7	9
-	+	26	11
-	+	25	0
-	+	9	4
-	+	11	10
-	+	14	43
-	+	25	0
-	+	14	0
-	+	13	10
-	+	66	0
-	+	12	11
-	+	55	37
-	+	41	63
-	+	42	20
-	+	55	0
-	+	56	30
-	+	42	58
-	+	43	4
-	+	53	4
-	+	16	38
-	+	25	0
-	+	17	7
-	+	18	91
-	+	19	8
-	+	21	13
-	+	24	10
-	+	43	53
-	+	45	14
-	+	46	9
-	+	47	53
-	+	48	4
-	+	4	22
-	+	6	0
-	+	49	26
-	+	52	0
-	+	10	55
-	+	56	1
-	+	55	64
-	+	51	8
-	+	55	1
-	+	60	49
-	+	61	53
-	+	62	52
-	+	63	51
-	+	64	0
-	+	62	5
-	+	61	5
-	+	28	0
-	+	31	46
-	+	41	5
-	+	31	21
-	+	41	0
-	+	41	4
-	+	41	0
-	+	32	13
-	+	40	0
-	+	39	4
-	+	33	19
-	+	34	50
-	+	35	28
-	+	36	50
-	+	37	25
-	+	38	8
-	+	29	48
-	+	28	61
-
-> ~/sqlite-editor/editor-api.py
-	*	1717235714	0
-	"	1	0
-	^	434	85
-	.	434	84
-	+	360	0
-	+	358	0
-	+	520	109
-	+	305	41
-	+	306	37
-	+	309	50
-	+	309	24
-	+	309	49
-	+	319	34
-	+	319	0
-	+	307	49
-	+	308	10
-	+	309	10
-	+	309	0
-	+	319	0
-	+	304	1
-	+	310	4
-	+	556	0
-	+	545	57
-	+	546	126
-	+	547	110
-	+	548	106
-	+	549	63
-	+	550	52
-	+	556	58
-	+	557	57
-	+	558	126
-	+	559	111
-	+	560	107
-	+	561	63
-	+	561	0
-	+	567	0
-	+	561	0
-	+	562	52
-	+	567	58
-	+	575	55
-	+	567	69
-	+	414	0
-	+	427	69
-	+	427	0
-	+	424	11
-	+	427	0
-	+	423	11
-	+	428	79
-	+	552	68
-	+	553	52
-	+	543	61
-	+	552	74
-	+	543	82
-	+	555	53
-	+	563	62
-	+	564	88
-	+	565	52
-	+	313	11
-	+	316	65
-	+	316	4
-	+	312	1
-	+	567	58
-	+	568	57
-	+	569	60
-	+	571	56
-	+	316	0
-	+	570	0
-	+	570	92
-	+	568	0
-	+	567	58
-	+	575	0
-	+	566	0
-	+	573	52
-	+	116	57
-	+	117	8
-	+	164	4
-	+	165	56
-	+	349	0
-	+	349	65
-	+	349	0
-	+	353	0
-	+	349	48
-	+	349	77
-	+	349	45
-	+	352	44
-	+	349	0
-	+	349	45
-	+	349	46
-	+	349	0
-	+	353	0
-	+	349	0
-	+	353	0
-	+	341	40
-	+	341	0
-	+	336	0
-	+	337	40
-	+	338	13
-	+	162	0
-	+	19	10
-	+	161	29
-	+	319	17
-	+	646	0
-	+	334	84
-	+	434	84
-
-> ~/sqlite-editor/static/css/editor.css
-	*	1717235703	0
-	"	45	0
-	^	42	22
-	.	42	0
-	+	1	0
-	+	218	18
-	+	218	17
-	+	157	15
-	+	155	0
-	+	157	21
-	+	158	16
-	+	215	0
-	+	157	19
-	+	158	0
-	+	157	17
-	+	156	0
-	+	159	0
-	+	158	0
-	+	155	0
-	+	194	0
-	+	136	6
-	+	136	29
-	+	137	0
-	+	136	28
-	+	56	0
-	+	57	42
-	+	73	80
-	+	57	39
-	+	73	80
-	+	55	27
-	+	58	51
-	+	55	19
-	+	58	0
-	+	55	0
-	+	58	21
-	+	57	24
-	+	55	0
-	+	58	0
-	+	57	27
-	+	58	27
-	+	57	76
-	+	58	60
-	+	57	57
-	+	58	61
-	+	57	45
-	+	58	47
-	+	218	0
-	+	217	0
-	+	214	22
-	+	217	0
-	+	220	39
-	+	221	9
-	+	123	9
-	+	128	0
-	+	122	0
-	+	57	0
-	+	64	58
-	+	73	0
-	+	64	0
-	+	70	0
-	+	64	58
-	+	70	0
-	+	65	0
-	+	67	0
-	+	68	0
-	+	62	0
-	+	68	0
-	+	69	0
-	+	73	0
-	+	72	0
-	+	138	0
-	+	29	0
-	+	25	0
-	+	42	0
 
 > ~/sqlite-editor/static/css/base-dark.css
 	*	1717235702	0
@@ -11158,101 +12322,6 @@ $
 	+	7	10
 	+	7	19
 	+	9	66
-
-> ~/.vim/vimrc
-	*	1717230970	0
-	"	1312	28
-	^	1157	56
-	.	1157	55
-	+	1356	23
-	+	1356	1
-	+	1356	0
-	+	1356	30
-	+	1356	0
-	+	1356	16
-	+	1356	0
-	+	1356	70
-	+	1356	0
-	+	1356	22
-	+	1356	0
-	+	1356	27
-	+	1356	0
-	+	1356	30
-	+	1356	13
-	+	1356	16
-	+	1356	0
-	+	1356	19
-	+	1356	5
-	+	1356	80
-	+	1356	22
-	+	1356	0
-	+	1356	21
-	+	1356	28
-	+	1356	22
-	+	1356	71
-	+	1356	8
-	+	1356	24
-	+	1356	40
-	+	1356	0
-	+	1356	39
-	+	1356	0
-	+	1356	19
-	+	1356	0
-	+	1356	38
-	+	1356	21
-	+	1356	0
-	+	1356	10
-	+	1356	25
-	+	1356	0
-	+	1356	32
-	+	1356	0
-	+	1356	10
-	+	1356	0
-	+	1356	25
-	+	1356	10
-	+	1356	0
-	+	1356	60
-	+	1356	0
-	+	1356	55
-	+	1356	0
-	+	1356	44
-	+	1356	0
-	+	1356	19
-	+	1356	71
-	+	1356	0
-	+	1356	23
-	+	1356	41
-	+	1356	44
-	+	1356	40
-	+	1356	28
-	+	1356	0
-	+	1356	11
-	+	1356	18
-	+	1356	43
-	+	1356	64
-	+	1356	54
-	+	1356	0
-	+	1356	31
-	+	1356	0
-	+	1356	6
-	+	1356	0
-	+	1356	1
-	+	1356	0
-	+	1356	80
-	+	1356	75
-	+	1356	0
-	+	1356	52
-	+	1356	41
-	+	162	0
-	+	49	26
-	+	1356	0
-	+	48	0
-	+	47	22
-	+	46	25
-	+	66	0
-	+	1151	57
-	+	1155	59
-	+	1157	55
 
 > ~/sqlite-editor/static/css/sqlite-editor.css
 	*	1717230773	0
@@ -12898,18 +13967,6 @@ $
 	+	66	31
 	+	666	0
 
-> ~/python_common/waivek/get.py
-	*	1717039804	0
-	"	104	15
-	^	21	10
-	.	21	0
-	+	235	51
-	+	41	0
-	+	262	0
-	+	26	0
-	+	226	16
-	+	21	0
-
 > ~/python_common/waivek/dbutils.py
 	*	1717038890	0
 	"	28	4
@@ -13675,42 +14732,6 @@ $
 	+	2	11
 	+	3	4
 
-> ~/servers/hateoas.config.js
-	*	1716599427	0
-	"	7	0
-	^	5	33
-	.	7	0
-	+	32	0
-	+	33	19
-	+	34	28
-	+	35	48
-	+	37	0
-	+	40	0
-	+	39	5
-	+	32	0
-	+	32	23
-	+	32	11
-	+	32	9
-	+	32	0
-	+	11	0
-	+	10	5
-	+	10	0
-	+	10	8
-	+	3	0
-	+	6	35
-	+	10	0
-	+	10	13
-	+	10	25
-	+	10	65
-	+	10	0
-	+	7	8
-	+	6	0
-	+	4	22
-	+	5	32
-	+	7	0
-	+	8	0
-	+	7	0
-
 > ~/crk-coupon/requirements.txt
 	*	1716599016	0
 	"	1	0
@@ -14384,34 +15405,6 @@ $
 	+	1	6
 	+	1	0
 
-> ~/genproject/python.sh
-	*	1716545606	0
-	"	47	0
-	^	57	51
-	.	41	0
-	+	6	0
-	+	2	0
-	+	4	9
-	+	11	9
-	+	17	9
-	+	42	0
-	+	55	26
-	+	56	0
-	+	57	8
-	+	39	6
-	+	41	0
-	+	40	0
-	+	41	0
-	+	23	15
-	+	45	0
-	+	36	13
-	+	53	4
-	+	57	1
-	+	28	6
-	+	41	1
-	+	57	35
-	+	41	0
-
 > ~/crk-coupon/gethtmlselenium.py
 	*	1716545332	0
 	"	1	0
@@ -14757,10 +15750,6 @@ $
 	^	29	15
 	.	29	14
 	+	29	14
-
-> /usr/share/vim/vim90/doc/options.txt
-	*	1716325577	0
-	"	1724	27
 
 > ~/pyscripts/complete.man
 	*	1716324587	0
@@ -15458,56 +16447,6 @@ $
 	.	34	0
 	+	34	0
 
-> ~/.vim/syntax/todo.vim
-	*	1716104313	0
-	"	10	0
-	^	10	32
-	.	10	14
-	+	9	75
-	+	10	0
-	+	9	1
-	+	10	14
-
-> ~/.vim/ftplugin/todo.vim
-	*	1716104198	0
-	"	1	0
-	^	28	39
-	.	31	0
-	+	7	28
-	+	9	49
-	+	10	11
-	+	33	11
-	+	35	72
-	+	36	2
-	+	37	0
-	+	13	55
-	+	15	5
-	+	17	7
-	+	19	8
-	+	21	4
-	+	11	0
-	+	11	17
-	+	11	0
-	+	14	23
-	+	23	37
-	+	24	29
-	+	25	50
-	+	32	0
-	+	11	0
-	+	29	4
-	+	29	0
-	+	12	22
-	+	26	7
-	+	29	0
-	+	31	4
-	+	26	7
-	+	31	0
-	+	29	0
-	+	30	0
-	+	27	28
-	+	28	8
-	+	31	0
-
 > ~/hateoas/sample.md
 	*	1716103327	0
 	"	1	0
@@ -15745,110 +16684,6 @@ $
 > ~/.vim/plugged/coc.nvim/doc/coc-config.txt
 	*	1716098745	0
 	"	1643	41
-
-> ~/.vim/coc-settings.json
-	*	1716098606	0
-	"	40	51
-	^	40	52
-	.	40	51
-	+	38	33
-	+	38	35
-	+	38	0
-	+	38	9
-	+	38	0
-	+	38	37
-	+	38	32
-	+	38	34
-	+	38	0
-	+	21	0
-	+	20	39
-	+	21	0
-	+	20	28
-	+	20	37
-	+	2	0
-	+	38	0
-	+	38	11
-	+	38	0
-	+	2	0
-	+	14	0
-	+	15	0
-	+	16	0
-	+	15	0
-	+	2	33
-	+	3	38
-	+	16	0
-	+	4	0
-	+	9	0
-	+	11	0
-	+	20	0
-	+	16	0
-	+	20	0
-	+	21	0
-	+	37	42
-	+	22	0
-	+	37	0
-	+	25	34
-	+	37	0
-	+	35	0
-	+	25	0
-	+	4	0
-	+	23	0
-	+	4	0
-	+	35	0
-	+	26	37
-	+	3	38
-	+	9	0
-	+	6	33
-	+	9	0
-	+	7	49
-	+	9	0
-	+	5	0
-	+	8	131
-	+	7	78
-	+	5	0
-	+	20	0
-	+	59	0
-	+	58	25
-	+	59	0
-	+	77	0
-	+	47	14
-	+	48	44
-	+	46	0
-	+	75	0
-	+	74	0
-	+	71	71
-	+	72	33
-	+	74	0
-	+	73	16
-	+	74	0
-	+	73	25
-	+	72	11
-	+	70	48
-	+	72	30
-	+	70	0
-	+	19	6
-	+	28	29
-	+	35	33
-	+	35	0
-	+	32	0
-	+	28	6
-	+	29	5
-	+	28	0
-	+	32	0
-	+	33	28
-	+	34	32
-	+	37	0
-	+	36	39
-	+	37	0
-	+	42	0
-	+	45	0
-	+	45	69
-	+	45	34
-	+	45	30
-	+	45	44
-	+	45	18
-	+	45	0
-	+	40	51
 
 > /usr/share/vim/vim90/doc/digraph.txt
 	*	1716098093	0
@@ -18209,10 +19044,6 @@ $
 	+	16	20
 	+	16	0
 
-> ~/hateoas/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/reltools.py
-	*	1713956285	0
-	"	92	4
-
 > ~/hateoas/downloads.py
 	*	1713953054	0
 	"	3	0
@@ -18626,10 +19457,6 @@ $
 	^	17	0
 	.	17	0
 	+	17	0
-
-> ~/.vim/plugin/rename.vim
-	*	1713768776	0
-	"	2	0
 
 > /tmp/crontab.0bgLXW/crontab
 	*	1713767858	0
@@ -19968,10 +20795,6 @@ $
 	+	2	11
 	+	3	0
 	+	2	6
-
-> ~/.config/direnv/direnv.toml
-	*	1713265267	0
-	"	2	0
 
 > ~/[Plugins]
 	*	1713265183	0
@@ -23831,10 +24654,6 @@ $
 	+	27	0
 	+	22	0
 
-> ~/frontend/src/components/Chart.vue
-	*	1709950285	0
-	"	231	25
-
 > ~/frontend/src/Types.js
 	*	1709949498	0
 	"	59	34
@@ -26758,18 +27577,6 @@ $
 	+	4	50
 	+	4	0
 	+	6	60
-
-> ~/.vim/templates/template.py
-	*	1693432144	0
-	"	7	20
-	^	7	21
-	.	7	20
-	+	1	0
-	+	7	12
-	+	1	0
-	+	15	0
-	+	6	25
-	+	7	20
 
 > ~/yt_chat.py
 	*	1693431300	0
@@ -31341,10 +32148,6 @@ $
 	^	364	22
 	.	50	0
 	+	50	0
-
-> /usr/share/vim/vim90/doc/syntax.txt
-	*	1690675305	0
-	"	4949	8
 
 > ~/.vim/plugin/introspect.vim
 	*	1690675049	0
