@@ -1,3 +1,4 @@
+
 " Filetype plugin for TODO files
 
 " Set the syntax highlighting to use the custom TODO syntax

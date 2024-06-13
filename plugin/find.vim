@@ -74,6 +74,9 @@ function! s:FindFilesSource(glob)
     " f*x -> f.*x
     let regex = substitute(regex, "*", ".*", "g")
     let pattern_string = '\<' . regex
+    let isk_save=&iskeyword
+    set isk-=_
+    set isk-=-
     let basenames = filter(basenames, 'v:val =~# pattern_string')
     let sorted_basenames = sort(copy(basenames))
     let basename_counts = {}
@@ -91,14 +94,20 @@ function! s:FindFilesSource(glob)
 
     let results = basenames_without_duplicates + filtered_paths
 
+    let &iskeyword=isk_save
     return results
 endfunction
 
 
 function! FindCompletion(ArgLead, CmdLine, CursorPos)
     let results = s:FindFilesSource(a:ArgLead)
-    call feedkeys("\<Tab>")
-    return results
+    if len(results) == 1
+        call s:ClosePopup(v:true)
+        return results
+    else
+        call feedkeys("\<Tab>")
+        return results
+    endif
 endfunction
 
 function! s:ContainsSep(path)
