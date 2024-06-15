@@ -17,3 +17,9 @@ highlight link todoDone Comment
 highlight link todoTag Identifier
 " todo should have a background and be bold
 highlight! link todoLabel Visual
+highlight clear Function
+
+
+
+highlight clear ExistingFile
+highlight link ExistingFile String

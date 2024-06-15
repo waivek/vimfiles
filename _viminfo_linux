@@ -11,17 +11,273 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/filled
+~MSle0~/\.txt
 
 # Last Substitute Search Pattern:
-~MSle0&0\.000
+~MSle0&^\S
 
 # Last Substitute String:
-$;
+$
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1718270070,,"q"
+|2,0,1718451861,,"q"
+:Copilot panel
+|2,0,1718451590,,"Copilot panel"
+:bd
+|2,0,1718451544,,"bd"
+:let @"=expand("%:p")
+|2,0,1718451541,,"let @\"=expand(\"%:p\")"
+:e .
+|2,0,1718451525,,"e ."
+:bd!
+|2,0,1718451009,,"bd!"
+:e data/material-symbols-rounded-subset\[update,home].css
+|2,0,1718450967,,"e data/material-symbols-rounded-subset\\[update,home].css"
+:e!
+|2,0,1718450962,,"e!"
+:e data/material-symbols-rounded\[update,home].css
+|2,0,1718450941,,"e data/material-symbols-rounded\\[update,home].css"
+:e requirements.txt
+|2,0,1718450804,,"e requirements.txt"
+:q!
+|2,0,1718449978,,"q!"
+:q"
+|2,0,1718449839,,"q\""
+:e subset-material-symbols.py
+|2,0,1718449648,,"e subset-material-symbols.py"
+:Jprevious
+|2,0,1718449333,,"Jprevious"
+:e
+|2,0,1718449312,,"e"
+:h 'winwidth'
+|2,0,1718449102,,"h 'winwidth'"
+:h :vertical
+|2,0,1718449090,,"h :vertical"
+:vert 200 term %
+|2,0,1718449083,,"vert 200 term %"
+:vert 120 term %
+|2,0,1718449073,,"vert 120 term %"
+:vert term %
+|2,0,1718449063,,"vert term %"
+:h vert
+|2,0,1718449021,,"h vert"
+:MRU run.vim
+|2,0,1718449010,,"MRU run.vim"
+:h run
+|2,0,1718449006,,"h run"
+:CocList 
+|2,0,1718448181,,"CocList "
+:CocList diagnostics
+|2,0,1718448177,,"CocList diagnostics"
+:MRU icon
+|2,0,1718447626,,"MRU icon"
+:e ~/ui-components-css/static/fonts/
+|2,0,1718447471,,"e ~/ui-components-css/static/fonts/"
+:term python % --style=rounded update home
+|2,0,1718447230,,"term python % --style=rounded update home"
+:term 
+|2,0,1718447223,,"term "
+:enew
+|2,0,1718446473,,"enew"
+:term python %
+|2,0,1718446442,,"term python %"
+:qa
+|2,0,1718446043,,"qa"
+:term
+|2,0,1718446020,,"term"
+:term pi 
+|2,0,1718446017,,"term pi "
+:set nonumber
+|2,0,1718445632,,"set nonumber"
+:'<,'>q
+|2,0,1718445261,,"'<,'>q"
+:MRU py
+|2,0,1718445029,,"MRU py"
+:MRU afl
+|2,0,1718445011,,"MRU afl"
+:CocRestart
+|2,0,1718443429,,"CocRestart"
+:Copilot status
+|2,0,1718443170,,"Copilot status"
+:kk
+|2,0,1718443049,,"kk"
+:e 
+|2,0,1718442848,,"e "
+:Template flask
+|2,0,1718442303,,"Template flask"
+:Template
+|2,0,1718442300,,"Template"
+:e static/fonts/
+|2,0,1718439511,,"e static/fonts/"
+:b api
+|2,0,1718439361,,"b api"
+:w
+|2,0,1718439003,,"w"
+:term pm2 log ui-components-css-tailwind-watch
+|2,0,1718438998,,"term pm2 log ui-components-css-tailwind-watch"
+:FIND outp
+|2,0,1718438984,,"FIND outp"
+:FIND ou
+|2,0,1718438980,,"FIND ou"
+:e ui-components-css-api.py
+|2,0,1718438749,,"e ui-components-css-api.py"
+:FIND fon
+|2,0,1718438539,,"FIND fon"
+:cd static
+|2,0,1718437834,,"cd static"
+:FIND ma
+|2,0,1718437090,,"FIND ma"
+:FIND Proxima_Nova.300italic.ttf
+|2,0,1718437085,,"FIND Proxima_Nova.300italic.ttf"
+:term pm2 log ui-components-css
+|2,0,1718436923,,"term pm2 log ui-components-css"
+:e templates/components/icon-row.html
+|2,0,1718435704,,"e templates/components/icon-row.html"
+:FIND ic
+|2,0,1718435695,,"FIND ic"
+:FIND Proxima_Nova.100italic.ttf
+|2,0,1718435596,,"FIND Proxima_Nova.100italic.ttf"
+:h hl
+|2,0,1718435249,,"h hl"
+:hi! ExistingFile cterm=underline
+|2,0,1718435245,,"hi! ExistingFile cterm=underline"
+:hi! link ExistingFile String
+|2,0,1718435238,,"hi! link ExistingFile String"
+:hi link ExistingFile String
+|2,0,1718435232,,"hi link ExistingFile String"
+:hi ExistingFile cterm=underline
+|2,0,1718435228,,"hi ExistingFile cterm=underline"
+:hi clear ExistingFile
+|2,0,1718435211,,"hi clear ExistingFile"
+:hi
+|2,0,1718435110,,"hi"
+:hi ExistingFile
+|2,0,1718435105,,"hi ExistingFile"
+:syntax clear ExistingFile
+|2,0,1718434934,,"syntax clear ExistingFile"
+:so /usr/share/vim/vim90/syntax/hitest.vim
+|2,0,1718434871,,"so /usr/share/vim/vim90/syntax/hitest.vim"
+:filer hi underline
+|2,0,1718434822,,"filer hi underline"
+:filter /
+|2,0,1718434806,,"filter /"
+:hi filter
+|2,0,1718434804,,"hi filter"
+:filter hi
+|2,0,1718434802,,"filter hi"
+:syntax list
+|2,0,1718434691,,"syntax list"
+:hi CustomKeywordInYellow
+|2,0,1718434584,,"hi CustomKeywordInYellow"
+:History:
+|2,0,1718434583,,"History:"
+:syntax keyword 
+|2,0,1718434549,,"syntax keyword "
+:h syn-keyword
+|2,0,1718434538,,"h syn-keyword"
+:syntax keywo
+|2,0,1718434535,,"syntax keywo"
+:h syn-match
+|2,0,1718434485,,"h syn-match"
+:h syn-mtach
+|2,0,1718434481,,"h syn-mtach"
+:h syntax
+|2,0,1718434459,,"h syntax"
+:h s
+|2,0,1718434457,,"h s"
+:HotReload
+|2,0,1718434410,,"HotReload"
+:e ~/.vim/ftplugin/todo.vim
+|2,0,1718434386,,"e ~/.vim/ftplugin/todo.vim"
+:e ~/.vim/syntax/todo.vim
+|2,0,1718434379,,"e ~/.vim/syntax/todo.vim"
+:scriptnames
+|2,0,1718434345,,"scriptnames"
+:h syn-clear
+|2,0,1718410494,,"h syn-clear"
+:so %
+|2,0,1718410463,,"so %"
+:syntax
+|2,0,1718410411,,"syntax"
+:syntx
+|2,0,1718410409,,"syntx"
+:syntax match ExistingFile /usage\.md/
+|2,0,1718410357,,"syntax match ExistingFile /usage\\.md/"
+:syntax match ExistingFile /usage/
+|2,0,1718410332,,"syntax match ExistingFile /usage/"
+:syntax match ExistingFile usage
+|2,0,1718410328,,"syntax match ExistingFile usage"
+:syntax match
+|2,0,1718410175,,"syntax match"
+:syntax match ExistingFile
+|2,0,1718410013,,"syntax match ExistingFile"
+:e syntax/todo.vim
+|2,0,1718409896,,"e syntax/todo.vim"
+:FIND todo
+|2,0,1718409894,,"FIND todo"
+:find todo.vim
+|2,0,1718409890,,"find todo.vim"
+:find README.md
+|2,0,1718409888,,"find README.md"
+:FIND sy
+|2,0,1718409884,,"FIND sy"
+:HotRE
+|2,0,1718409847,,"HotRE"
+:so 
+|2,0,1718409790,,"so "
+:MRU 
+|2,0,1718409769,,"MRU "
+:MRU 71:syntax/todo.vim
+|2,0,1718409678,,"MRU 71:syntax/todo.vim"
+:MRU 52:ftplugin/todo.vim
+|2,0,1718409656,,"MRU 52:ftplugin/todo.vim"
+:FIND todo.vim
+|2,0,1718409654,,"FIND todo.vim"
+:call clearmatches()
+|2,0,1718409615,,"call clearmatches()"
+:call clearmatches(
+|2,0,1718409613,,"call clearmatches("
+:h E402
+|2,0,1718409539,,"h E402"
+:e ../.vim/syntax/todo.vim
+|2,0,1718409049,,"e ../.vim/syntax/todo.vim"
+:MRU to
+|2,0,1718409043,,"MRU to"
+:MRU todo
+|2,0,1718409039,,"MRU todo"
+:hi clear Function
+|2,0,1718408899,,"hi clear Function"
+:%sort
+|2,0,1718408808,,"%sort"
+:v/class/d
+|2,0,1718408795,,"v/class/d"
+:v/class
+|2,0,1718408790,,"v/class"
+:MRU hateoa
+|2,0,1718408774,,"MRU hateoa"
+:MRU h
+|2,0,1718408768,,"MRU h"
+:MRU vue
+|2,0,1718408766,,"MRU vue"
+:FIND icon
+|2,0,1718408439,,"FIND icon"
+:e usage.md
+|2,0,1718408353,,"e usage.md"
+:e ui-components-css.todo
+|2,0,1718408305,,"e ui-components-css.todo"
+:call <SNR>127_AroundRule()
+|2,0,1718407632,,"call <SNR>127_AroundRule()"
+:MRU ap
+|2,0,1718407464,,"MRU ap"
+:FIND 
+|2,0,1718406864,,"FIND "
+:FIND out
+|2,0,1718406763,,"FIND out"
+:nex
+|2,0,1718406741,,"nex"
+:argnex
+|2,0,1718406739,,"argnex"
 :GFiles
 |2,0,1718269919,,"GFiles"
 :FIND ui-components-css-tailwind-output.css
@@ -30,42 +286,26 @@ $;
 |2,0,1718269879,,"FIND tai*ou"
 :FI
 |2,0,1718269861,,"FI"
-:FIND icon
-|2,0,1718269836,,"FIND icon"
 :e flask-history.py
 |2,0,1718269816,,"e flask-history.py"
 :e *.html
 |2,0,1718269812,,"e *.html"
 :e ~/Twitch/
 |2,0,1718269806,,"e ~/Twitch/"
-:FIND ou
-|2,0,1718269802,,"FIND ou"
-:e
-|2,0,1718269797,,"e"
 :FIND tailwind.config.js
 |2,0,1718269797,,"FIND tailwind.config.js"
-:MRU icon
-|2,0,1718269785,,"MRU icon"
-:qa
-|2,0,1718269663,,"qa"
 :MRU ui
 |2,0,1718269642,,"MRU ui"
 :Rename ui-components-css-tailwind-output.css
 |2,0,1718269629,,"Rename ui-components-css-tailwind-output.css"
 :Ren
 |2,0,1718269589,,"Ren"
-:FIND out
-|2,0,1718269582,,"FIND out"
 :e static/css-utilities/tailwind-colors.css
 |2,0,1718216929,,"e static/css-utilities/tailwind-colors.css"
 :'<,'>w
 |2,0,1718216837,,"'<,'>w"
 :e tailwind.config.js
 |2,0,1718216162,,"e tailwind.config.js"
-:set nonumber
-|2,0,1718215964,,"set nonumber"
-:e!
-|2,0,1718214600,,"e!"
 :%sort! /^.*<0\.\zs/ n
 |2,0,1718198995,,"%sort! /^.*<0\\.\\zs/ n"
 :%sort /^.*<0\.\zs/ n
@@ -74,8 +314,6 @@ $;
 |2,0,1718198909,,"g/0\\.000/d"
 :g/0\.0000/d
 |2,0,1718198898,,"g/0\\.0000/d"
-:q!
-|2,0,1718198888,,"q!"
 :%sort! n
 |2,0,1718198874,,"%sort! n"
 :%sort n
@@ -92,16 +330,12 @@ $;
 |2,0,1718197048,,"e .prettierrc"
 :ALEInfo
 |2,0,1718196956,,"ALEInfo"
-:FIND 
-|2,0,1718193202,,"FIND "
 :MRU sangee
 |2,0,1718192697,,"MRU sangee"
 :FIND wide-
 |2,0,1718191740,,"FIND wide-"
 :FIND output-1.css
 |2,0,1718185600,,"FIND output-1.css"
-:term pm2 log ui-components-css-tailwind-watch
-|2,0,1718185551,,"term pm2 log ui-components-css-tailwind-watch"
 :term pm2 log
 |2,0,1718185527,,"term pm2 log"
 :pm2 log
@@ -118,8 +352,6 @@ $;
 |2,0,1718143345,,"Tab /\\.material-symbols-outlined/"
 :Tab //
 |2,0,1718143162,,"Tab //"
-:FIND outp
-|2,0,1718142898,,"FIND outp"
 :FIND spa
 |2,0,1718140981,,"FIND spa"
 :FIND outpu
@@ -140,8 +372,6 @@ $;
 |2,0,1718136701,,"FIND wide"
 :FIND tall
 |2,0,1718136639,,"FIND tall"
-:Jprevious
-|2,0,1718136144,,"Jprevious"
 :jper
 |2,0,1718136143,,"jper"
 :find reset.css
@@ -172,8 +402,6 @@ $;
 |2,0,1718134770,,"FIND Proxima_Nova.900.ttf"
 :FIND ele
 |2,0,1718134734,,"FIND ele"
-:so %
-|2,0,1718134722,,"so %"
 :MRU find
 |2,0,1718134695,,"MRU find"
 :FIND html-elements.html
@@ -194,18 +422,12 @@ $;
 |2,0,1718134509,,"edit $MYVIMRC"
 :h g:ale_linters_ignore
 |2,0,1718134504,,"h g:ale_linters_ignore"
-:FIND Proxima_Nova.100italic.ttf
-|2,0,1718134490,,"FIND Proxima_Nova.100italic.ttf"
 :FIND row
 |2,0,1718134486,,"FIND row"
 :MRU works
 |2,0,1718134469,,"MRU works"
-:e templates/components/icon-row.html
-|2,0,1718134464,,"e templates/components/icon-row.html"
 :FIND
 |2,0,1718134454,,"FIND"
-:bd
-|2,0,1718099563,,"bd"
 :FIND tail
 |2,0,1718099543,,"FIND tail"
 :LogPrettifyFile
@@ -226,8 +448,6 @@ $;
 |2,0,1718098097,,"FIND flask-history.py"
 :FIND hist
 |2,0,1718098094,,"FIND hist"
-:e 
-|2,0,1718098093,,"e "
 :LogPrettyPrintLine
 |2,0,1718097051,,"LogPrettyPrintLine"
 :MRU 344:date.py
@@ -250,8 +470,6 @@ $;
 |2,0,1718096051,,"MRU 213:api.py"
 :MRU hateoas-a
 |2,0,1718096034,,"MRU hateoas-a"
-:Template
-|2,0,1718096000,,"Template"
 :grep -g '*.html' --fixed-strings visited
 |2,0,1718095929,,"grep -g '*.html' --fixed-strings visited"
 :FIND html-
@@ -262,8 +480,6 @@ $;
 |2,0,1718095746,,"FIND base"
 :e templates/base.html
 |2,0,1718095743,,"e templates/base.html"
-:e ui-components-css-api.py
-|2,0,1718095710,,"e ui-components-css-api.py"
 :FIND wid
 |2,0,1717960554,,"FIND wid"
 :MRU 12:elements.html
@@ -320,20 +536,14 @@ $;
 |2,0,1717933000,,"center-h"
 :b static/css-utilities/wide-tall.css
 |2,0,1717932832,,"b static/css-utilities/wide-tall.css"
-:bd!
-|2,0,1717932626,,"bd!"
 :FIND wi
 |2,0,1717932513,,"FIND wi"
-:enew
-|2,0,1717932502,,"enew"
 :set isk-=-
 |2,0,1717929101,,"set isk-=-"
 :set isk?
 |2,0,1717929090,,"set isk?"
 :FIND *ele
 |2,0,1717929076,,"FIND *ele"
-:b api
-|2,0,1717929066,,"b api"
 :MRU ele
 |2,0,1717928978,,"MRU ele"
 :FIND butt
@@ -420,16 +630,10 @@ $;
 |2,0,1717923593,,"g/class/d"
 :v/clas
 |2,0,1717923591,,"v/clas"
-:v/class/d
-|2,0,1717923586,,"v/class/d"
-:MRU vue
-|2,0,1717923265,,"MRU vue"
 :MRU el
 |2,0,1717922534,,"MRU el"
 :'<,'>ToggleDoneVisualRange
 |2,0,1717919668,,"'<,'>ToggleDoneVisualRange"
-:HotReload
-|2,0,1717919615,,"HotReload"
 :set nonu
 |2,0,1717919586,,"set nonu"
 :Ftplugin
@@ -508,8 +712,6 @@ $;
 |2,0,1717913008,,"e ~/servers/ui-components-css.config.js"
 :e ~/servers/hateoas.config.js
 |2,0,1717912985,,"e ~/servers/hateoas.config.js"
-:Template flask
-|2,0,1717912855,,"Template flask"
 :e ~/.vim/templates/flask.py
 |2,0,1717912726,,"e ~/.vim/templates/flask.py"
 :e ~/.vim/templates/template.py
@@ -524,8 +726,6 @@ $;
 |2,0,1717911988,,"cd ~/hateoas"
 :MRU hateo
 |2,0,1717911983,,"MRU hateo"
-:CocRestart
-|2,0,1717911923,,"CocRestart"
 :CocList
 |2,0,1717911817,,"CocList"
 :PlugStatus
@@ -538,10 +738,6 @@ $;
 |2,0,1717911732,,"CocInfo"
 :e ~/hateoas/templates/base.html
 |2,0,1717911531,,"e ~/hateoas/templates/base.html"
-:Copilot panel
-|2,0,1717911451,,"Copilot panel"
-:e usage.md
-|2,0,1717911366,,"e usage.md"
 :e *.md
 |2,0,1717911363,,"e *.md"
 :MRU edi*css
@@ -574,16 +770,10 @@ $;
 |2,0,1717883132,,"hi todoLabel"
 :b syntax/todo.vim
 |2,0,1717883102,,"b syntax/todo.vim"
-:so /usr/share/vim/vim90/syntax/hitest.vim
-|2,0,1717883083,,"so /usr/share/vim/vim90/syntax/hitest.vim"
 :helpgrep hitest
 |2,0,1717883074,,"helpgrep hitest"
 :hi Identifier
 |2,0,1717882695,,"hi Identifier"
-:MRU py
-|2,0,1717882684,,"MRU py"
-:e syntax/todo.vim
-|2,0,1717882628,,"e syntax/todo.vim"
 :Renam
 |2,0,1717882526,,"Renam"
 :b!# | bd! #
@@ -592,8 +782,6 @@ $;
 |2,0,1717882401,,"MRU us"
 :%!uniq -c
 |2,0,1717856608,,"%!uniq -c"
-:%sort
-|2,0,1717856605,,"%sort"
 :%sort 
 |2,0,1717856577,,"%sort "
 :e windows-desktop-css-paths.txt
@@ -650,8 +838,6 @@ $;
 |2,0,1717668098,,"e data/offsets/"
 :e hateoas-api.py
 |2,0,1717665621,,"e hateoas-api.py"
-:CocList diagnostics
-|2,0,1717658321,,"CocList diagnostics"
 :OpenDB data/videos.db
 |2,0,1717658288,,"OpenDB data/videos.db"
 :MRU get.py
@@ -686,8 +872,6 @@ $;
 |2,0,1717610097,,"441"
 :e chat.py
 |2,0,1717610080,,"e chat.py"
-:e requirements.txt
-|2,0,1717610053,,"e requirements.txt"
 :MRU chat
 |2,0,1717609788,,"MRU chat"
 :e download_worker.py
@@ -720,8 +904,6 @@ $;
 |2,0,1717232385,,"FIND editor.css"
 :b ~/sqlite-editor/editor-api.py
 |2,0,1717231992,,"b ~/sqlite-editor/editor-api.py"
-:MRU 
-|2,0,1717231990,,"MRU "
 :FIND pa
 |2,0,1717231986,,"FIND pa"
 :e paths.vim
@@ -780,8 +962,6 @@ $;
 |2,0,1717230252,,"MRU githu"
 :OpenDB
 |2,0,1717230020,,"OpenDB"
-:Copilot status
-|2,0,1717229967,,"Copilot status"
 :OpenDB data/instagram.db
 |2,0,1717222592,,"OpenDB data/instagram.db"
 :e reels.py
@@ -796,8 +976,6 @@ $;
 |2,0,1717166914,,"e res"
 :e *.js
 |2,0,1717166774,,"e *.js"
-:w
-|2,0,1717164795,,"w"
 :e state.py
 |2,0,1717163921,,"e state.py"
 :e1
@@ -942,8 +1120,6 @@ $;
 |2,0,1717078496,,"OpenDB data/main.db"
 :Open
 |2,0,1717078490,,"Open"
-:term
-|2,0,1717078372,,"term"
 :set ft=
 |2,0,1717072081,,"set ft="
 :e static/css/sqlite-editor.css
@@ -1290,8 +1466,6 @@ $;
 |2,0,1716545101,,"e update-bin.bash"
 :e update-
 |2,0,1716545095,,"e update-"
-:e .
-|2,0,1716505093,,"e ."
 :e .github/workflows/scrapecrk.yml
 |2,0,1716505054,,"e .github/workflows/scrapecrk.yml"
 :e ~/.
@@ -1430,8 +1604,6 @@ $;
 |2,0,1716154982,,"b /home/vivek/.vim/vimrc"
 :hi Visual
 |2,0,1716154903,,"hi Visual"
-:hi
-|2,0,1716154712,,"hi"
 :hi IncSearch
 |2,0,1716154689,,"hi IncSearch"
 :colo
@@ -1508,16 +1680,12 @@ $;
 |2,0,1716103264,,"e sample.md"
 :e todo.md
 |2,0,1716103257,,"e todo.md"
-:MRU to
-|2,0,1716103226,,"MRU to"
 :e ~/.vim/filetype.vim
 |2,0,1716103187,,"e ~/.vim/filetype.vim"
 :filter filetype scriptnames
 |2,0,1716103176,,"filter filetype scriptnames"
 :filter scriptnames
 |2,0,1716103172,,"filter scriptnames"
-:scriptnames
-|2,0,1716103165,,"scriptnames"
 :scriptnames filter filetype
 |2,0,1716103161,,"scriptnames filter filetype"
 :h filetype
@@ -1528,8 +1696,6 @@ $;
 |2,0,1716103137,,"h filetype.vim"
 :e to
 |2,0,1716103131,,"e to"
-:e ~/.vim/ftplugin/todo.vim
-|2,0,1716103060,,"e ~/.vim/ftplugin/todo.vim"
 :set comments
 |2,0,1716102868,,"set comments"
 :set cms=#\ %s
@@ -1596,14 +1762,10 @@ $;
 |2,0,1716093680,,"MRU 2:download_worker.py"
 :MRU 3:download_worker.py
 |2,0,1716093167,,"MRU 3:download_worker.py"
-:MRU h
-|2,0,1716093159,,"MRU h"
 :echo getline("$")
 |2,0,1716090658,,"echo getline(\"$\")"
 :echo line("$")
 |2,0,1716090641,,"echo line(\"$\")"
-:MRU run.vim
-|2,0,1716090610,,"MRU run.vim"
 :MRU 13:download_worker.py
 |2,0,1716089314,,"MRU 13:download_worker.py"
 : w ~/tmp/out-of-memory-error.txt
@@ -2232,8 +2394,6 @@ $;
 |2,0,1713928660,,"e coc-config.txt"
 :h coc-nvim-config
 |2,0,1713928654,,"h coc-nvim-config"
-:so 
-|2,0,1713928598,,"so "
 :e coc-api.txt
 |2,0,1713928483,,"e coc-api.txt"
 :CocList outline
@@ -2398,8 +2558,6 @@ $;
 |2,0,1713774303,,"imap <Alt>"
 :MRU tod
 |2,0,1713774250,,"MRU tod"
-:MRU todo
-|2,0,1713772826,,"MRU todo"
 :MRU 1:.bashrc
 |2,0,1713772544,,"MRU 1:.bashrc"
 :REname
@@ -2968,8 +3126,6 @@ $;
 |2,0,1712727252,,"call CocAction('codeActions')"
 :call CocAction('doCodeAction')
 |2,0,1712727240,,"call CocAction('doCodeAction')"
-:CocList 
-|2,0,1712727206,,"CocList "
 :MRU 4:downloads.sql
 |2,0,1712726928,,"MRU 4:downloads.sql"
 :C`
@@ -3218,8 +3374,6 @@ $;
 |2,0,1711893495,,"MRU 84:frontend/src/Data.ts"
 :MRU Data
 |2,0,1711893489,,"MRU Data"
-:let @"=expand("%:p")
-|2,0,1711875654,,"let @\"=expand(\"%:p\")"
 :e .direnv/python-3.10.12/bin/
 |2,0,1711875641,,"e .direnv/python-3.10.12/bin/"
 :e ./
@@ -3324,8 +3478,6 @@ $;
 |2,0,1711018970,,"MRU 16:general_schema.txt"
 :ls
 |2,0,1711018951,,"ls"
-:MRU ap
-|2,0,1711017214,,"MRU ap"
 :b ~/elements/elements_frontend/elements.html
 |2,0,1711011723,,"b ~/elements/elements_frontend/elements.html"
 :e ../elements.html
@@ -4338,8 +4490,6 @@ $;
 |2,0,1694049339,,"find car.html"
 :h uniq
 |2,0,1694049269,,"h uniq"
-:find README.md
-|2,0,1694049216,,"find README.md"
 :FI package-lock.json
 |2,0,1694049113,,"FI package-lock.json"
 :FIND /home/vivek/frontend/package-lock.json
@@ -4856,8 +5006,6 @@ $;
 |2,0,1693293799,,"verbose map <CR>"
 :MRU 5:terminal.txt
 |2,0,1693293749,,"MRU 5:terminal.txt"
-:term python %
-|2,0,1693293733,,"term python %"
 :execute "vert term python %"
 |2,0,1693293707,,"execute \"vert term python %\""
 :vert term python %
@@ -4956,8 +5104,6 @@ $;
 |2,0,1693223762,,"let g:fzf_preview_window"
 :Rg
 |2,0,1693223724,,"Rg"
-:History:
-|2,0,1693223671,,"History:"
 :Locate fun
 |2,0,1693223665,,"Locate fun"
 :FZF --
@@ -7130,6 +7276,70 @@ $;
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/\.txt
+|2,1,1718451849,47,"\\.txt"
+? @$
+|2,1,1718451531,,"@$"
+?/subset
+|2,1,1718450914,47,"subset"
+?/getsi
+|2,1,1718449780,47,"getsi"
+?/bla
+|2,1,1718447813,47,"bla"
+?/flavor
+|2,1,1718446843,47,"flavor"
+?/write
+|2,1,1718446836,47,"write"
+?/output
+|2,1,1718446824,47,"output"
+?/woff
+|2,1,1718446644,47,"woff"
+?/woff2
+|2,1,1718446636,47,"woff2"
+?/out=
+|2,1,1718444568,47,"out="
+?/MaterialSymbolsSharp%5BFILL,ll
+|2,1,1718443020,47,"MaterialSymbolsSharp%5BFILL,ll"
+?/wrap
+|2,1,1718438988,47,"wrap"
+?/bg-red
+|2,1,1718438986,47,"bg-red"
+?/\(def\|class\)\s\+\w*icon
+|2,1,1718438753,47,"\\(def\\|class\\)\\s\\+\\w*icon"
+?/material-s
+|2,1,1718437930,47,"material-s"
+?/outlined
+|2,1,1718435721,47,"outlined"
+??hitest
+|2,1,1718434871,63,"hitest"
+??filter
+|2,1,1718434809,63,"filter"
+?/ExistingFile
+|2,1,1718410372,47,"ExistingFile"
+?/green
+|2,1,1718409660,47,"green"
+?/l:file
+|2,1,1718409188,47,"l:file"
+?/Existing
+|2,1,1718409120,47,"Existing"
+? class
+|2,1,1718408795,,"class"
+?/tall
+|2,1,1718408783,47,"tall"
+?/wide
+|2,1,1718408782,47,"wide"
+?/w-max
+|2,1,1718408776,47,"w-max"
+?/\C\<\>
+|2,1,1718408566,47,"\\C\\<\\>"
+?/Text
+|2,1,1718408520,47,"Text"
+?/ou
+|2,1,1718406867,47,"ou"
+?/red-400
+|2,1,1718406780,47,"red-400"
+?/green-400
+|2,1,1718406766,47,"green-400"
 ?/filled
 |2,1,1718269584,47,"filled"
 ?/radius-con
@@ -7178,10 +7388,6 @@ $;
 |2,1,1718193204,47,"material"
 ?/FILL
 |2,1,1718192551,47,"FILL"
-?/wide
-|2,1,1718191709,47,"wide"
-?/tall
-|2,1,1718191703,47,"tall"
 ?/tall-
 |2,1,1718191699,47,"tall-"
 ?/x-1
@@ -7206,8 +7412,6 @@ $;
 |2,1,1718182737,47,"group-"
 ?/group
 |2,1,1718182728,47,"group"
-?/\C\<\>
-|2,1,1718182658,47,"\\C\\<\\>"
 ?/:
 |2,1,1718182553,47,":"
 ?/:hover
@@ -7352,12 +7556,8 @@ $;
 |2,1,1717923752,,"p[xy]\\?-\\d\\+"
 ? p[xy]\?-
 |2,1,1717923746,,"p[xy]\\?-"
-? class
-|2,1,1717923609,,"class"
 ?/ui
 |2,1,1717922038,47,"ui"
-? @$
-|2,1,1717919264,,"@$"
 ?/-d
 |2,1,1717918657,47,"-d"
 ?/3
@@ -7378,8 +7578,6 @@ $;
 |2,1,1717910935,47,"box-si"
 ?/TODO
 |2,1,1717883234,47,"TODO"
-??hitest
-|2,1,1717883081,63,"hitest"
 ??helpgrep
 |2,1,1717883073,63,"helpgrep"
 ??source .*vim
@@ -7858,8 +8056,6 @@ $;
 |2,1,1716857409,,"timer\\..*\\\"_refresh_table_configs\\\""
 ?/create
 |2,1,1716856989,47,"create"
-?/write
-|2,1,1716808628,47,"write"
 ?/waivek
 |2,1,1716805321,47,"waivek"
 ?/crete
@@ -10060,8 +10256,6 @@ $;
 |2,1,1690861557,47,"insert"
 ? rose
 |2,1,1690861530,,"rose"
-?/bla
-|2,1,1690851509,47,"bla"
 ?/blauset
 |2,1,1690851508,47,"blauset"
 ?/Add Portion
@@ -10422,6 +10616,8 @@ $;
 |2,2,1688309303,,"v:oldfiles"
 
 # Input Line History (newest to oldest):
+@textwrap.dedent
+|2,3,1718448555,,"textwrap.dedent"
 @var
 |2,3,1718220629,,"var"
 @div>
@@ -10560,47 +10756,77 @@ $;
 |2,4,1693311567,,"cont"
 
 # Registers:
-""0	CHAR	0
-	output-1.css
-|3,1,0,0,1,0,1718269870,"output-1.css"
+"0	CHAR	0
+	fonts/base64-css/material-symbols-rounded[home,favorite,star,send,drafts,mail,delete,library_books,update].css
+|3,0,0,0,1,0,1718451616,"fonts/base64-css/material-symbols-rounded[home,favorite,star,send,drafts,mail,delete,library_books,update].css"
 "1	LINE	0
-	 *
-|3,0,1,1,1,0,1718269633," *"
+	    path = rel2abs('static/fonts/fontbase64.txt')
+	    with open(path) as f:
+	        fontbase64 = f.read()
+|3,0,1,1,3,0,1718451851,"    path = rel2abs('static/fonts/fontbase64.txt')","    with open(path) as f:","        fontbase64 = f.read()"
 "2	LINE	0
 	
-|3,0,2,1,1,0,1718269523,""
+|3,0,2,1,1,0,1718451663,""
 "3	LINE	0
-	    --bg-container: hsl(var(--lime-100));
-|3,0,3,1,1,0,1718269462,"    --bg-container: hsl(var(--lime-100));"
+	{# read ./static/fonts/fontbase64.txt into a string #}
+	
+|3,0,3,1,2,0,1718451662,"{# read ./static/fonts/fontbase64.txt into a string #}",""
 "4	LINE	0
-	        padding: var(--py-primary) var(--px-primary);
-|3,0,4,1,1,0,1718267246,"        padding: var(--py-primary) var(--px-primary);"
+	{# <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> #}
+	{# <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> #}
+	{# material-symbols-outlined-variable-subset[delete,drafts,favorite,home,mail,send,star].ttf #}
+	{# material-symbols-outlined-variable-subset[delete,drafts,favorite,home,mail,send,star,library_books,update].ttf #}
+	
+|3,0,4,1,5,0,1718451661,"{# <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200\" /> #}","{# <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200\" /> #}","{# material-symbols-outlined-variable-subset[delete,drafts,favorite,home,mail,send,star].ttf #}",>118
+|<"{# material-symbols-outlined-variable-subset[delete,drafts,favorite,home,mail,send,star,library_books,update].ttf #}",""
 "5	LINE	0
-	    box-shadow: 2px 2px 2px 0px #abacbe7a;
-|3,0,5,1,1,0,1718267245,"    box-shadow: 2px 2px 2px 0px #abacbe7a;"
+	
+|3,0,5,1,1,0,1718451642,""
 "6	LINE	0
-	    box-shadow: 2px 2px 2px 0px #abacbe7a;
-|3,0,6,1,1,0,1718267233,"    box-shadow: 2px 2px 2px 0px #abacbe7a;"
+	
+	{# /home/vivek/ui-components-css/static/fonts/base64-css/material-symbols-rounded[home,favorite,star,send,drafts,mail,delete,library_books,update].css #}
+|3,0,6,1,2,0,1718451641,"","{# /home/vivek/ui-components-css/static/fonts/base64-css/material-symbols-rounded[home,favorite,star,send,drafts,mail,delete,library_books,update].css #}"
 "7	LINE	0
-	    --py-primary: calc(var(--px-primary) / 1);
-|3,0,7,1,1,0,1718267072,"    --py-primary: calc(var(--px-primary) / 1);"
+	    <style>
+	        @font-face {
+	            font-family: 'Material Symbols Rounded Subset[delete,drafts,favorite,home,mail,send,star,library_books,update]';
+	            font-style: normal;
+	            font-weight: 100 700;
+	            /* src: url({{ url_for('static', filename='fonts/material-symbols-outlined-variable-subset[delete,drafts,favorite,home,mail,send,star,library_books,update].ttf') }}) format('truetype'); */
+	            src: url(data:font/truetype;charset=utf-8;base64,{{ fontbase64 }}) format('truetype');
+	        }
+	
+	        .material-symbols-rounded {
+	            font-family: 'Material Symbols Rounded Subset[delete,drafts,favorite,home,mail,send,star,library_books,update]';
+	            font-weight: normal;
+	            font-style: normal;
+	            font-size: 24px;
+	            line-height: 1;
+	            letter-spacing: normal;
+	            text-transform: none;
+	            display: inline-block;
+	            white-space: nowrap;
+	            word-wrap: normal;
+	            direction: ltr;
+	            -webkit-font-feature-settings: 'liga';
+	            -webkit-font-smoothing: antialiased;
+	        } 
+	    </style>
+|3,0,7,1,25,0,1718451507,"    <style>","        @font-face {","            font-family: 'Material Symbols Rounded Subset[delete,drafts,favorite,home,mail,send,star,library_books,update]';","            font-style: normal;","            font-weight: 100 700;","            /* src: url({{ url_for('static', filename='fonts/material-symbols-outlined-variable-subset[delete,drafts,favorite,home,mail,send,star,library_books,update].ttf') }}) format('truetype'); */",>100
+|<"            src: url(data:font/truetype;charset=utf-8;base64,{{ fontbase64 }}) format('truetype');","        }","","        .material-symbols-rounded {","            font-family: 'Material Symbols Rounded Subset[delete,drafts,favorite,home,mail,send,star,library_books,update]';","            font-weight: normal;","            font-style: normal;","            font-size: 24px;","            line-height: 1;","            letter-spacing: normal;","            text-transform: none;",>36
+|<"            display: inline-block;","            white-space: nowrap;","            word-wrap: normal;","            direction: ltr;","            -webkit-font-feature-settings: 'liga';","            -webkit-font-smoothing: antialiased;","        } ","    </style>"
 "8	LINE	0
-	    --px-primary: 2px;
-|3,0,8,1,1,0,1718267071,"    --px-primary: 2px;"
+	    import base64
+|3,0,8,1,1,0,1718449988,"    import base64"
 "9	LINE	0
-	.bg-primary { background: var(--bg-primary); }
-	.text-primary { color: var(--text-primary); }
-	.border-primary { border: var(--border-primary); }
-	.radius-primary { border-radius: var(--radius-primary); }
-	.px-primary { padding-left: var(--px-primary); padding-right: var(--px-primary); }
-	.py-primary { padding-top: var(--py-primary); padding-bottom: var(--py-primary); }
-|3,0,9,1,6,0,1718264265,".bg-primary { background: var(--bg-primary); }",".text-primary { color: var(--text-primary); }",".border-primary { border: var(--border-primary); }",".radius-primary { border-radius: var(--radius-primary); }",".px-primary { padding-left: var(--px-primary); padding-right: var(--px-primary); }",".py-primary { padding-top: var(--py-primary); padding-bottom: var(--py-primary); }"
-"a@	CHAR	0
-	0nc;{{ classarg }}€ýa>>
-|3,2,10,0,1,0,1718229409,"0nc;{{ classarg }}€ýa>>"
+	
+|3,0,9,1,1,0,1718449986,""
+"a	CHAR	0
+	Tabularize /{/l1c1l1
+|3,0,10,0,1,0,1718448696,"Tabularize /{/l1c1l1"
 "j	CHAR	0
-	k
-|3,0,19,0,1,0,1714426578,"k"
+	kc
+|3,0,19,0,1,0,1718434816,"kc"
 "k	CHAR	0
 	kk
 |3,0,20,0,1,0,1716313503,"kk"
@@ -10621,248 +10847,596 @@ $;
 	      2 p-1
 	      1 p-0.5
 |3,0,28,1,12,0,1717923860,"     73 p-2","     14 py-0.5","     13 px-1","      9 px-2","      5 py-1","      5 p-4","      4 py-2","      3 px-4","      3 p-0","      2 px-3","      2 p-1","      1 p-0.5"
-"-	CHAR	0
-	output-1.css
-|3,0,36,0,1,0,1718269858,"output-1.css"
+""-	CHAR	0
+	, fontbase64=fontbase64
+|3,1,36,0,1,0,1718451853,", fontbase64=fontbase64"
 
 # File marks:
-'0  1  12  ~/.config/repos.txt
-|4,48,1,12,1718270070,"~/.config/repos.txt"
-'1  1  0  ~/frontend/ripgrep-padding-html-vue-results.txt
-|4,49,1,0,1718270040,"~/frontend/ripgrep-padding-html-vue-results.txt"
-'2  1  0  ~/frontend/ripgrep-padding-html-vue-results.txt
-|4,50,1,0,1718270040,"~/frontend/ripgrep-padding-html-vue-results.txt"
-'3  22  0  ~/ui-components-css/static/css-tailwind-outputs/ui-components-css-tailwind-output.css
-|4,51,22,0,1718269921,"~/ui-components-css/static/css-tailwind-outputs/ui-components-css-tailwind-output.css"
-'4  22  0  ~/ui-components-css/static/css-tailwind-outputs/ui-components-css-tailwind-output.css
-|4,52,22,0,1718269921,"~/ui-components-css/static/css-tailwind-outputs/ui-components-css-tailwind-output.css"
-'5  22  0  ~/ui-components-css/static/css-tailwind-outputs/ui-components-css-tailwind-output.css
-|4,53,22,0,1718269921,"~/ui-components-css/static/css-tailwind-outputs/ui-components-css-tailwind-output.css"
-'6  22  0  ~/ui-components-css/static/css-tailwind-outputs/ui-components-css-tailwind-output.css
-|4,54,22,0,1718269921,"~/ui-components-css/static/css-tailwind-outputs/ui-components-css-tailwind-output.css"
-'7  1  0  ~/ui-components-css/templates/components/icon-row.html
-|4,55,1,0,1718269788,"~/ui-components-css/templates/components/icon-row.html"
-'8  1  0  ~/ui-components-css/templates/components/icon-row.html
-|4,56,1,0,1718269788,"~/ui-components-css/templates/components/icon-row.html"
-'9  1  0  ~/ui-components-css/templates/components/icon-row.html
-|4,57,1,0,1718269788,"~/ui-components-css/templates/components/icon-row.html"
+'0  30  53  ~/ui-components-css/ui-components-css-api.py
+|4,48,30,53,1718451861,"~/ui-components-css/ui-components-css-api.py"
+'1  2  0  ~/ui-components-css/templates/components/icon-row.html
+|4,49,2,0,1718451770,"~/ui-components-css/templates/components/icon-row.html"
+'2  2  0  ~/ui-components-css/templates/components/icon-row.html
+|4,50,2,0,1718451770,"~/ui-components-css/templates/components/icon-row.html"
+'3  9  5  ~/subset-material-symbols/icon-usage.txt
+|4,51,9,5,1718451265,"~/subset-material-symbols/icon-usage.txt"
+'4  9  5  ~/subset-material-symbols/icon-usage.txt
+|4,52,9,5,1718451265,"~/subset-material-symbols/icon-usage.txt"
+'5  9  5  ~/subset-material-symbols/icon-usage.txt
+|4,53,9,5,1718451265,"~/subset-material-symbols/icon-usage.txt"
+'6  9  5  ~/subset-material-symbols/icon-usage.txt
+|4,54,9,5,1718451265,"~/subset-material-symbols/icon-usage.txt"
+'7  1  0  ~/subset-material-symbols/data/material-symbols-rounded[update,home].css
+|4,55,1,0,1718451180,"~/subset-material-symbols/data/material-symbols-rounded[update,home].css"
+'8  1  0  ~/subset-material-symbols/data/material-symbols-rounded[update,home].css
+|4,56,1,0,1718451180,"~/subset-material-symbols/data/material-symbols-rounded[update,home].css"
+'9  1  0  ~/subset-material-symbols/data/material-symbols-rounded[update,home].css
+|4,57,1,0,1718451180,"~/subset-material-symbols/data/material-symbols-rounded[update,home].css"
 
 # Jumplist (newest first):
--'  1  12  ~/.config/repos.txt
-|4,39,1,12,1718270070,"~/.config/repos.txt"
--'  1  0  ~/frontend/ripgrep-padding-html-vue-results.txt
-|4,39,1,0,1718270040,"~/frontend/ripgrep-padding-html-vue-results.txt"
--'  1  0  ~/frontend/ripgrep-padding-html-vue-results.txt
-|4,39,1,0,1718270040,"~/frontend/ripgrep-padding-html-vue-results.txt"
--'  22  0  ~/ui-components-css/static/css-tailwind-outputs/ui-components-css-tailwind-output.css
-|4,39,22,0,1718269921,"~/ui-components-css/static/css-tailwind-outputs/ui-components-css-tailwind-output.css"
--'  22  0  ~/ui-components-css/static/css-tailwind-outputs/ui-components-css-tailwind-output.css
-|4,39,22,0,1718269921,"~/ui-components-css/static/css-tailwind-outputs/ui-components-css-tailwind-output.css"
--'  22  0  ~/ui-components-css/static/css-tailwind-outputs/ui-components-css-tailwind-output.css
-|4,39,22,0,1718269921,"~/ui-components-css/static/css-tailwind-outputs/ui-components-css-tailwind-output.css"
--'  55  4  ~/ui-components-css/templates/components/icon-row.html
-|4,39,55,4,1718269897,"~/ui-components-css/templates/components/icon-row.html"
--'  55  4  ~/ui-components-css/templates/components/icon-row.html
-|4,39,55,4,1718269897,"~/ui-components-css/templates/components/icon-row.html"
--'  55  4  ~/ui-components-css/templates/components/icon-row.html
-|4,39,55,4,1718269897,"~/ui-components-css/templates/components/icon-row.html"
--'  1  0  ~/ui-components-css/static/css-tailwind-outputs/ui-components-css-tailwind-output.css
-|4,39,1,0,1718269895,"~/ui-components-css/static/css-tailwind-outputs/ui-components-css-tailwind-output.css"
--'  1  0  ~/ui-components-css/static/css-tailwind-outputs/ui-components-css-tailwind-output.css
-|4,39,1,0,1718269895,"~/ui-components-css/static/css-tailwind-outputs/ui-components-css-tailwind-output.css"
--'  1  0  ~/ui-components-css/static/css-tailwind-outputs/ui-components-css-tailwind-output.css
-|4,39,1,0,1718269895,"~/ui-components-css/static/css-tailwind-outputs/ui-components-css-tailwind-output.css"
--'  6  0  ~/ui-components-css/templates/components/icon-row.html
-|4,39,6,0,1718269870,"~/ui-components-css/templates/components/icon-row.html"
--'  6  0  ~/ui-components-css/templates/components/icon-row.html
-|4,39,6,0,1718269870,"~/ui-components-css/templates/components/icon-row.html"
--'  6  0  ~/ui-components-css/templates/components/icon-row.html
-|4,39,6,0,1718269870,"~/ui-components-css/templates/components/icon-row.html"
--'  5  117  ~/ui-components-css/templates/components/icon-row.html
-|4,39,5,117,1718269859,"~/ui-components-css/templates/components/icon-row.html"
--'  5  117  ~/ui-components-css/templates/components/icon-row.html
-|4,39,5,117,1718269859,"~/ui-components-css/templates/components/icon-row.html"
--'  5  117  ~/ui-components-css/templates/components/icon-row.html
-|4,39,5,117,1718269859,"~/ui-components-css/templates/components/icon-row.html"
--'  6  0  ~/ui-components-css/static/css-tailwind-outputs/ui-components-css-tailwind-output.css
-|4,39,6,0,1718269851,"~/ui-components-css/static/css-tailwind-outputs/ui-components-css-tailwind-output.css"
--'  6  0  ~/ui-components-css/static/css-tailwind-outputs/ui-components-css-tailwind-output.css
-|4,39,6,0,1718269851,"~/ui-components-css/static/css-tailwind-outputs/ui-components-css-tailwind-output.css"
--'  6  0  ~/ui-components-css/static/css-tailwind-outputs/ui-components-css-tailwind-output.css
-|4,39,6,0,1718269851,"~/ui-components-css/static/css-tailwind-outputs/ui-components-css-tailwind-output.css"
--'  1  0  ~/ui-components-css/flask-history.py
-|4,39,1,0,1718269822,"~/ui-components-css/flask-history.py"
--'  1  0  ~/ui-components-css/flask-history.py
-|4,39,1,0,1718269822,"~/ui-components-css/flask-history.py"
--'  1  0  ~/ui-components-css/flask-history.py
-|4,39,1,0,1718269822,"~/ui-components-css/flask-history.py"
+-'  30  53  ~/ui-components-css/ui-components-css-api.py
+|4,39,30,53,1718451861,"~/ui-components-css/ui-components-css-api.py"
+-'  1  0  ~/ui-components-css/ui-components-css-api.py
+|4,39,1,0,1718451849,"~/ui-components-css/ui-components-css-api.py"
+-'  2  0  ~/ui-components-css/templates/components/icon-row.html
+|4,39,2,0,1718451770,"~/ui-components-css/templates/components/icon-row.html"
+-'  2  0  ~/ui-components-css/templates/components/icon-row.html
+|4,39,2,0,1718451770,"~/ui-components-css/templates/components/icon-row.html"
+-'  7  155  ~/ui-components-css/templates/components/icon-row.html
+|4,39,7,155,1718451659,"~/ui-components-css/templates/components/icon-row.html"
+-'  7  155  ~/ui-components-css/templates/components/icon-row.html
+|4,39,7,155,1718451659,"~/ui-components-css/templates/components/icon-row.html"
+-'  5  0  ~/ui-components-css/templates/components/icon-row.html
+|4,39,5,0,1718451552,"~/ui-components-css/templates/components/icon-row.html"
+-'  5  0  ~/ui-components-css/templates/components/icon-row.html
+|4,39,5,0,1718451552,"~/ui-components-css/templates/components/icon-row.html"
+-'  1  0  ~/ui-components-css/static/fonts/base64-css/material-symbols-rounded[home,favorite,star,send,drafts,mail,delete,library_books,update].css
+|4,39,1,0,1718451544,"~/ui-components-css/static/fonts/base64-css/material-symbols-rounded[home,favorite,star,send,drafts,mail,delete,library_books,update].css"
+-'  1  0  ~/ui-components-css/static/fonts/base64-css/material-symbols-rounded[home,favorite,star,send,drafts,mail,delete,library_books,update].css
+|4,39,1,0,1718451544,"~/ui-components-css/static/fonts/base64-css/material-symbols-rounded[home,favorite,star,send,drafts,mail,delete,library_books,update].css"
+-'  11  0  ~/ui-components-css/static/fonts
+|4,39,11,0,1718451531,"~/ui-components-css/static/fonts"
+-'  11  0  ~/ui-components-css/static/fonts
+|4,39,11,0,1718451531,"~/ui-components-css/static/fonts"
+-'  13  0  ~/ui-components-css/static
+|4,39,13,0,1718451529,"~/ui-components-css/static"
+-'  13  0  ~/ui-components-css/static
+|4,39,13,0,1718451529,"~/ui-components-css/static"
+-'  14  0  ~/ui-components-css
+|4,39,14,0,1718451528,"~/ui-components-css"
+-'  14  0  ~/ui-components-css
+|4,39,14,0,1718451528,"~/ui-components-css"
 -'  1  0  ~/ui-components-css/templates/components/icon-row.html
-|4,39,1,0,1718269788,"~/ui-components-css/templates/components/icon-row.html"
+|4,39,1,0,1718451500,"~/ui-components-css/templates/components/icon-row.html"
 -'  1  0  ~/ui-components-css/templates/components/icon-row.html
-|4,39,1,0,1718269788,"~/ui-components-css/templates/components/icon-row.html"
--'  1  0  ~/ui-components-css/templates/components/icon-row.html
-|4,39,1,0,1718269788,"~/ui-components-css/templates/components/icon-row.html"
--'  1  0  ~/ui-components-css/templates/components/icon-row.html
-|4,39,1,0,1718269788,"~/ui-components-css/templates/components/icon-row.html"
--'  15  42  ~/servers/ui-components-css.config.js
-|4,39,15,42,1718269728,"~/servers/ui-components-css.config.js"
--'  15  42  ~/servers/ui-components-css.config.js
-|4,39,15,42,1718269728,"~/servers/ui-components-css.config.js"
--'  15  42  ~/servers/ui-components-css.config.js
-|4,39,15,42,1718269728,"~/servers/ui-components-css.config.js"
--'  15  42  ~/servers/ui-components-css.config.js
-|4,39,15,42,1718269728,"~/servers/ui-components-css.config.js"
--'  15  42  ~/servers/ui-components-css.config.js
-|4,39,15,42,1718269728,"~/servers/ui-components-css.config.js"
--'  1  0  ~/servers/ui-components-css.config.js
-|4,39,1,0,1718269712,"~/servers/ui-components-css.config.js"
--'  1  0  ~/servers/ui-components-css.config.js
-|4,39,1,0,1718269712,"~/servers/ui-components-css.config.js"
--'  1  0  ~/servers/ui-components-css.config.js
-|4,39,1,0,1718269712,"~/servers/ui-components-css.config.js"
--'  1  0  ~/servers/ui-components-css.config.js
-|4,39,1,0,1718269712,"~/servers/ui-components-css.config.js"
--'  1  0  ~/servers/ui-components-css.config.js
-|4,39,1,0,1718269712,"~/servers/ui-components-css.config.js"
--'  13  0  ~/servers/ui-components-css.config.js
-|4,39,13,0,1718269664,"~/servers/ui-components-css.config.js"
--'  12  0  ~/servers/ui-components-css.config.js
-|4,39,12,0,1718269664,"~/servers/ui-components-css.config.js"
--'  13  0  ~/servers/ui-components-css.config.js
-|4,39,13,0,1718269664,"~/servers/ui-components-css.config.js"
--'  12  0  ~/servers/ui-components-css.config.js
-|4,39,12,0,1718269664,"~/servers/ui-components-css.config.js"
--'  13  0  ~/servers/ui-components-css.config.js
-|4,39,13,0,1718269664,"~/servers/ui-components-css.config.js"
--'  12  0  ~/servers/ui-components-css.config.js
-|4,39,12,0,1718269664,"~/servers/ui-components-css.config.js"
--'  13  0  ~/servers/ui-components-css.config.js
-|4,39,13,0,1718269664,"~/servers/ui-components-css.config.js"
--'  12  0  ~/servers/ui-components-css.config.js
-|4,39,12,0,1718269664,"~/servers/ui-components-css.config.js"
--'  13  0  ~/servers/ui-components-css.config.js
-|4,39,13,0,1718269664,"~/servers/ui-components-css.config.js"
--'  12  0  ~/servers/ui-components-css.config.js
-|4,39,12,0,1718269664,"~/servers/ui-components-css.config.js"
--'  221  19  ~/ui-components-css/templates/components/icon-row.html
-|4,39,221,19,1718269642,"~/ui-components-css/templates/components/icon-row.html"
--'  221  19  ~/ui-components-css/templates/components/icon-row.html
-|4,39,221,19,1718269642,"~/ui-components-css/templates/components/icon-row.html"
--'  221  19  ~/ui-components-css/templates/components/icon-row.html
-|4,39,221,19,1718269642,"~/ui-components-css/templates/components/icon-row.html"
--'  221  19  ~/ui-components-css/templates/components/icon-row.html
-|4,39,221,19,1718269642,"~/ui-components-css/templates/components/icon-row.html"
--'  221  19  ~/ui-components-css/templates/components/icon-row.html
-|4,39,221,19,1718269642,"~/ui-components-css/templates/components/icon-row.html"
--'  221  19  ~/ui-components-css/templates/components/icon-row.html
-|4,39,221,19,1718269642,"~/ui-components-css/templates/components/icon-row.html"
--'  204  21  ~/ui-components-css/templates/components/icon-row.html
-|4,39,204,21,1718266995,"~/ui-components-css/templates/components/icon-row.html"
--'  204  21  ~/ui-components-css/templates/components/icon-row.html
-|4,39,204,21,1718266995,"~/ui-components-css/templates/components/icon-row.html"
--'  204  21  ~/ui-components-css/templates/components/icon-row.html
-|4,39,204,21,1718266995,"~/ui-components-css/templates/components/icon-row.html"
--'  204  21  ~/ui-components-css/templates/components/icon-row.html
-|4,39,204,21,1718266995,"~/ui-components-css/templates/components/icon-row.html"
--'  204  21  ~/ui-components-css/templates/components/icon-row.html
-|4,39,204,21,1718266995,"~/ui-components-css/templates/components/icon-row.html"
--'  204  21  ~/ui-components-css/templates/components/icon-row.html
-|4,39,204,21,1718266995,"~/ui-components-css/templates/components/icon-row.html"
--'  203  21  ~/ui-components-css/templates/components/icon-row.html
-|4,39,203,21,1718266994,"~/ui-components-css/templates/components/icon-row.html"
--'  197  21  ~/ui-components-css/templates/components/icon-row.html
-|4,39,197,21,1718266994,"~/ui-components-css/templates/components/icon-row.html"
--'  203  21  ~/ui-components-css/templates/components/icon-row.html
-|4,39,203,21,1718266994,"~/ui-components-css/templates/components/icon-row.html"
--'  197  21  ~/ui-components-css/templates/components/icon-row.html
-|4,39,197,21,1718266994,"~/ui-components-css/templates/components/icon-row.html"
--'  203  21  ~/ui-components-css/templates/components/icon-row.html
-|4,39,203,21,1718266994,"~/ui-components-css/templates/components/icon-row.html"
--'  197  21  ~/ui-components-css/templates/components/icon-row.html
-|4,39,197,21,1718266994,"~/ui-components-css/templates/components/icon-row.html"
--'  203  21  ~/ui-components-css/templates/components/icon-row.html
-|4,39,203,21,1718266994,"~/ui-components-css/templates/components/icon-row.html"
--'  197  21  ~/ui-components-css/templates/components/icon-row.html
-|4,39,197,21,1718266994,"~/ui-components-css/templates/components/icon-row.html"
--'  203  21  ~/ui-components-css/templates/components/icon-row.html
-|4,39,203,21,1718266994,"~/ui-components-css/templates/components/icon-row.html"
--'  197  21  ~/ui-components-css/templates/components/icon-row.html
-|4,39,197,21,1718266994,"~/ui-components-css/templates/components/icon-row.html"
--'  203  21  ~/ui-components-css/templates/components/icon-row.html
-|4,39,203,21,1718266994,"~/ui-components-css/templates/components/icon-row.html"
--'  197  21  ~/ui-components-css/templates/components/icon-row.html
-|4,39,197,21,1718266994,"~/ui-components-css/templates/components/icon-row.html"
--'  191  21  ~/ui-components-css/templates/components/icon-row.html
-|4,39,191,21,1718266993,"~/ui-components-css/templates/components/icon-row.html"
--'  191  21  ~/ui-components-css/templates/components/icon-row.html
-|4,39,191,21,1718266993,"~/ui-components-css/templates/components/icon-row.html"
--'  191  21  ~/ui-components-css/templates/components/icon-row.html
-|4,39,191,21,1718266993,"~/ui-components-css/templates/components/icon-row.html"
--'  191  21  ~/ui-components-css/templates/components/icon-row.html
-|4,39,191,21,1718266993,"~/ui-components-css/templates/components/icon-row.html"
--'  191  21  ~/ui-components-css/templates/components/icon-row.html
-|4,39,191,21,1718266993,"~/ui-components-css/templates/components/icon-row.html"
--'  191  21  ~/ui-components-css/templates/components/icon-row.html
-|4,39,191,21,1718266993,"~/ui-components-css/templates/components/icon-row.html"
--'  149  0  ~/ui-components-css/templates/components/icon-row.html
-|4,39,149,0,1718266922,"~/ui-components-css/templates/components/icon-row.html"
--'  149  0  ~/ui-components-css/templates/components/icon-row.html
-|4,39,149,0,1718266922,"~/ui-components-css/templates/components/icon-row.html"
--'  149  0  ~/ui-components-css/templates/components/icon-row.html
-|4,39,149,0,1718266922,"~/ui-components-css/templates/components/icon-row.html"
--'  149  0  ~/ui-components-css/templates/components/icon-row.html
-|4,39,149,0,1718266922,"~/ui-components-css/templates/components/icon-row.html"
--'  149  0  ~/ui-components-css/templates/components/icon-row.html
-|4,39,149,0,1718266922,"~/ui-components-css/templates/components/icon-row.html"
--'  149  0  ~/ui-components-css/templates/components/icon-row.html
-|4,39,149,0,1718266922,"~/ui-components-css/templates/components/icon-row.html"
--'  207  5  ~/ui-components-css/templates/components/icon-row.html
-|4,39,207,5,1718266915,"~/ui-components-css/templates/components/icon-row.html"
--'  207  5  ~/ui-components-css/templates/components/icon-row.html
-|4,39,207,5,1718266915,"~/ui-components-css/templates/components/icon-row.html"
--'  207  5  ~/ui-components-css/templates/components/icon-row.html
-|4,39,207,5,1718266915,"~/ui-components-css/templates/components/icon-row.html"
--'  207  5  ~/ui-components-css/templates/components/icon-row.html
-|4,39,207,5,1718266915,"~/ui-components-css/templates/components/icon-row.html"
--'  207  5  ~/ui-components-css/templates/components/icon-row.html
-|4,39,207,5,1718266915,"~/ui-components-css/templates/components/icon-row.html"
--'  207  5  ~/ui-components-css/templates/components/icon-row.html
-|4,39,207,5,1718266915,"~/ui-components-css/templates/components/icon-row.html"
--'  132  43  ~/ui-components-css/templates/components/icon-row.html
-|4,39,132,43,1718266904,"~/ui-components-css/templates/components/icon-row.html"
--'  132  43  ~/ui-components-css/templates/components/icon-row.html
-|4,39,132,43,1718266904,"~/ui-components-css/templates/components/icon-row.html"
--'  132  43  ~/ui-components-css/templates/components/icon-row.html
-|4,39,132,43,1718266904,"~/ui-components-css/templates/components/icon-row.html"
--'  132  43  ~/ui-components-css/templates/components/icon-row.html
-|4,39,132,43,1718266904,"~/ui-components-css/templates/components/icon-row.html"
--'  132  43  ~/ui-components-css/templates/components/icon-row.html
-|4,39,132,43,1718266904,"~/ui-components-css/templates/components/icon-row.html"
--'  132  43  ~/ui-components-css/templates/components/icon-row.html
-|4,39,132,43,1718266904,"~/ui-components-css/templates/components/icon-row.html"
--'  138  0  ~/ui-components-css/templates/components/icon-row.html
-|4,39,138,0,1718266885,"~/ui-components-css/templates/components/icon-row.html"
--'  138  0  ~/ui-components-css/templates/components/icon-row.html
-|4,39,138,0,1718266885,"~/ui-components-css/templates/components/icon-row.html"
--'  138  0  ~/ui-components-css/templates/components/icon-row.html
-|4,39,138,0,1718266885,"~/ui-components-css/templates/components/icon-row.html"
--'  138  0  ~/ui-components-css/templates/components/icon-row.html
-|4,39,138,0,1718266885,"~/ui-components-css/templates/components/icon-row.html"
+|4,39,1,0,1718451500,"~/ui-components-css/templates/components/icon-row.html"
+-'  9  5  ~/subset-material-symbols/icon-usage.txt
+|4,39,9,5,1718451265,"~/subset-material-symbols/icon-usage.txt"
+-'  9  5  ~/subset-material-symbols/icon-usage.txt
+|4,39,9,5,1718451265,"~/subset-material-symbols/icon-usage.txt"
+-'  9  5  ~/subset-material-symbols/icon-usage.txt
+|4,39,9,5,1718451265,"~/subset-material-symbols/icon-usage.txt"
+-'  1  0  ~/subset-material-symbols/icon-usage.txt
+|4,39,1,0,1718451192,"~/subset-material-symbols/icon-usage.txt"
+-'  1  0  ~/subset-material-symbols/icon-usage.txt
+|4,39,1,0,1718451192,"~/subset-material-symbols/icon-usage.txt"
+-'  1  0  ~/subset-material-symbols/icon-usage.txt
+|4,39,1,0,1718451192,"~/subset-material-symbols/icon-usage.txt"
+-'  1  0  ~/subset-material-symbols/data/material-symbols-rounded[update,home].css
+|4,39,1,0,1718451180,"~/subset-material-symbols/data/material-symbols-rounded[update,home].css"
+-'  1  0  ~/subset-material-symbols/data/material-symbols-rounded[update,home].css
+|4,39,1,0,1718451180,"~/subset-material-symbols/data/material-symbols-rounded[update,home].css"
+-'  1  0  ~/subset-material-symbols/data/material-symbols-rounded[update,home].css
+|4,39,1,0,1718451180,"~/subset-material-symbols/data/material-symbols-rounded[update,home].css"
+-'  1  0  ~/subset-material-symbols/data/material-symbols-rounded[update,home].css
+|4,39,1,0,1718451180,"~/subset-material-symbols/data/material-symbols-rounded[update,home].css"
+-'  1  0  ~/subset-material-symbols/data/material-symbols-rounded[update,home].css
+|4,39,1,0,1718451108,"~/subset-material-symbols/data/material-symbols-rounded[update,home].css"
+-'  111  63  ~/subset-material-symbols/subset-material-symbols.py
+|4,39,111,63,1718451023,"~/subset-material-symbols/subset-material-symbols.py"
+-'  111  63  ~/subset-material-symbols/subset-material-symbols.py
+|4,39,111,63,1718451023,"~/subset-material-symbols/subset-material-symbols.py"
+-'  111  63  ~/subset-material-symbols/subset-material-symbols.py
+|4,39,111,63,1718451023,"~/subset-material-symbols/subset-material-symbols.py"
+-'  111  63  ~/subset-material-symbols/subset-material-symbols.py
+|4,39,111,63,1718451023,"~/subset-material-symbols/subset-material-symbols.py"
+-'  111  63  ~/subset-material-symbols/subset-material-symbols.py
+|4,39,111,63,1718451023,"~/subset-material-symbols/subset-material-symbols.py"
+-'  111  63  ~/subset-material-symbols/subset-material-symbols.py
+|4,39,111,63,1718451023,"~/subset-material-symbols/subset-material-symbols.py"
+-'  1  0  ~/subset-material-symbols/data/material-symbols-rounded-subset[update,home].css
+|4,39,1,0,1718451010,"~/subset-material-symbols/data/material-symbols-rounded-subset[update,home].css"
+-'  1  0  ~/subset-material-symbols/data/material-symbols-rounded-subset[update,home].css
+|4,39,1,0,1718451010,"~/subset-material-symbols/data/material-symbols-rounded-subset[update,home].css"
+-'  1  0  ~/subset-material-symbols/data/material-symbols-rounded-subset[update,home].css
+|4,39,1,0,1718451010,"~/subset-material-symbols/data/material-symbols-rounded-subset[update,home].css"
+-'  1  0  ~/subset-material-symbols/data/material-symbols-rounded-subset[update,home].css
+|4,39,1,0,1718451010,"~/subset-material-symbols/data/material-symbols-rounded-subset[update,home].css"
+-'  1  0  ~/subset-material-symbols/data/material-symbols-rounded-subset[update,home].css
+|4,39,1,0,1718451010,"~/subset-material-symbols/data/material-symbols-rounded-subset[update,home].css"
+-'  1  0  ~/subset-material-symbols/data/material-symbols-rounded-subset[update,home].css
+|4,39,1,0,1718451010,"~/subset-material-symbols/data/material-symbols-rounded-subset[update,home].css"
+-'  16  24  ~/subset-material-symbols/data/material-symbols-rounded[update,home].css
+|4,39,16,24,1718451009,"~/subset-material-symbols/data/material-symbols-rounded[update,home].css"
+-'  16  24  ~/subset-material-symbols/data/material-symbols-rounded[update,home].css
+|4,39,16,24,1718451009,"~/subset-material-symbols/data/material-symbols-rounded[update,home].css"
+-'  16  24  ~/subset-material-symbols/data/material-symbols-rounded[update,home].css
+|4,39,16,24,1718451009,"~/subset-material-symbols/data/material-symbols-rounded[update,home].css"
+-'  16  24  ~/subset-material-symbols/data/material-symbols-rounded[update,home].css
+|4,39,16,24,1718451009,"~/subset-material-symbols/data/material-symbols-rounded[update,home].css"
+-'  16  24  ~/subset-material-symbols/data/material-symbols-rounded[update,home].css
+|4,39,16,24,1718451009,"~/subset-material-symbols/data/material-symbols-rounded[update,home].css"
+-'  16  24  ~/subset-material-symbols/data/material-symbols-rounded[update,home].css
+|4,39,16,24,1718451009,"~/subset-material-symbols/data/material-symbols-rounded[update,home].css"
+-'  1  0  ~/subset-material-symbols/data/material-symbols-rounded[update,home].css
+|4,39,1,0,1718450967,"~/subset-material-symbols/data/material-symbols-rounded[update,home].css"
+-'  159  47  ~/subset-material-symbols/subset-material-symbols.py
+|4,39,159,47,1718450941,"~/subset-material-symbols/subset-material-symbols.py"
+-'  159  47  ~/subset-material-symbols/subset-material-symbols.py
+|4,39,159,47,1718450941,"~/subset-material-symbols/subset-material-symbols.py"
+-'  159  47  ~/subset-material-symbols/subset-material-symbols.py
+|4,39,159,47,1718450941,"~/subset-material-symbols/subset-material-symbols.py"
+-'  159  47  ~/subset-material-symbols/subset-material-symbols.py
+|4,39,159,47,1718450941,"~/subset-material-symbols/subset-material-symbols.py"
+-'  159  47  ~/subset-material-symbols/subset-material-symbols.py
+|4,39,159,47,1718450941,"~/subset-material-symbols/subset-material-symbols.py"
+-'  159  47  ~/subset-material-symbols/subset-material-symbols.py
+|4,39,159,47,1718450941,"~/subset-material-symbols/subset-material-symbols.py"
+-'  156  18  ~/subset-material-symbols/subset-material-symbols.py
+|4,39,156,18,1718450927,"~/subset-material-symbols/subset-material-symbols.py"
+-'  156  18  ~/subset-material-symbols/subset-material-symbols.py
+|4,39,156,18,1718450927,"~/subset-material-symbols/subset-material-symbols.py"
+-'  156  18  ~/subset-material-symbols/subset-material-symbols.py
+|4,39,156,18,1718450927,"~/subset-material-symbols/subset-material-symbols.py"
+-'  156  18  ~/subset-material-symbols/subset-material-symbols.py
+|4,39,156,18,1718450927,"~/subset-material-symbols/subset-material-symbols.py"
+-'  156  18  ~/subset-material-symbols/subset-material-symbols.py
+|4,39,156,18,1718450927,"~/subset-material-symbols/subset-material-symbols.py"
+-'  156  18  ~/subset-material-symbols/subset-material-symbols.py
+|4,39,156,18,1718450927,"~/subset-material-symbols/subset-material-symbols.py"
+-'  148  33  ~/subset-material-symbols/subset-material-symbols.py
+|4,39,148,33,1718450925,"~/subset-material-symbols/subset-material-symbols.py"
+-'  148  33  ~/subset-material-symbols/subset-material-symbols.py
+|4,39,148,33,1718450925,"~/subset-material-symbols/subset-material-symbols.py"
+-'  148  33  ~/subset-material-symbols/subset-material-symbols.py
+|4,39,148,33,1718450925,"~/subset-material-symbols/subset-material-symbols.py"
+-'  148  33  ~/subset-material-symbols/subset-material-symbols.py
+|4,39,148,33,1718450925,"~/subset-material-symbols/subset-material-symbols.py"
+-'  148  33  ~/subset-material-symbols/subset-material-symbols.py
+|4,39,148,33,1718450925,"~/subset-material-symbols/subset-material-symbols.py"
+-'  148  33  ~/subset-material-symbols/subset-material-symbols.py
+|4,39,148,33,1718450925,"~/subset-material-symbols/subset-material-symbols.py"
+-'  144  16  ~/subset-material-symbols/subset-material-symbols.py
+|4,39,144,16,1718450924,"~/subset-material-symbols/subset-material-symbols.py"
+-'  144  16  ~/subset-material-symbols/subset-material-symbols.py
+|4,39,144,16,1718450924,"~/subset-material-symbols/subset-material-symbols.py"
+-'  144  16  ~/subset-material-symbols/subset-material-symbols.py
+|4,39,144,16,1718450924,"~/subset-material-symbols/subset-material-symbols.py"
+-'  144  16  ~/subset-material-symbols/subset-material-symbols.py
+|4,39,144,16,1718450924,"~/subset-material-symbols/subset-material-symbols.py"
+-'  144  16  ~/subset-material-symbols/subset-material-symbols.py
+|4,39,144,16,1718450924,"~/subset-material-symbols/subset-material-symbols.py"
+-'  144  16  ~/subset-material-symbols/subset-material-symbols.py
+|4,39,144,16,1718450924,"~/subset-material-symbols/subset-material-symbols.py"
+-'  143  7  ~/subset-material-symbols/subset-material-symbols.py
+|4,39,143,7,1718450923,"~/subset-material-symbols/subset-material-symbols.py"
+-'  143  7  ~/subset-material-symbols/subset-material-symbols.py
+|4,39,143,7,1718450923,"~/subset-material-symbols/subset-material-symbols.py"
+-'  143  7  ~/subset-material-symbols/subset-material-symbols.py
+|4,39,143,7,1718450923,"~/subset-material-symbols/subset-material-symbols.py"
+-'  143  7  ~/subset-material-symbols/subset-material-symbols.py
+|4,39,143,7,1718450923,"~/subset-material-symbols/subset-material-symbols.py"
+-'  143  7  ~/subset-material-symbols/subset-material-symbols.py
+|4,39,143,7,1718450923,"~/subset-material-symbols/subset-material-symbols.py"
+-'  143  7  ~/subset-material-symbols/subset-material-symbols.py
+|4,39,143,7,1718450923,"~/subset-material-symbols/subset-material-symbols.py"
+-'  136  77  ~/subset-material-symbols/subset-material-symbols.py
+|4,39,136,77,1718450922,"~/subset-material-symbols/subset-material-symbols.py"
+-'  136  77  ~/subset-material-symbols/subset-material-symbols.py
+|4,39,136,77,1718450922,"~/subset-material-symbols/subset-material-symbols.py"
+-'  136  77  ~/subset-material-symbols/subset-material-symbols.py
+|4,39,136,77,1718450922,"~/subset-material-symbols/subset-material-symbols.py"
+-'  136  77  ~/subset-material-symbols/subset-material-symbols.py
+|4,39,136,77,1718450922,"~/subset-material-symbols/subset-material-symbols.py"
+-'  136  77  ~/subset-material-symbols/subset-material-symbols.py
+|4,39,136,77,1718450922,"~/subset-material-symbols/subset-material-symbols.py"
+-'  136  77  ~/subset-material-symbols/subset-material-symbols.py
+|4,39,136,77,1718450922,"~/subset-material-symbols/subset-material-symbols.py"
+-'  134  50  ~/subset-material-symbols/subset-material-symbols.py
+|4,39,134,50,1718450920,"~/subset-material-symbols/subset-material-symbols.py"
+-'  134  50  ~/subset-material-symbols/subset-material-symbols.py
+|4,39,134,50,1718450920,"~/subset-material-symbols/subset-material-symbols.py"
+-'  134  50  ~/subset-material-symbols/subset-material-symbols.py
+|4,39,134,50,1718450920,"~/subset-material-symbols/subset-material-symbols.py"
+-'  134  50  ~/subset-material-symbols/subset-material-symbols.py
+|4,39,134,50,1718450920,"~/subset-material-symbols/subset-material-symbols.py"
+-'  134  50  ~/subset-material-symbols/subset-material-symbols.py
+|4,39,134,50,1718450920,"~/subset-material-symbols/subset-material-symbols.py"
+-'  134  50  ~/subset-material-symbols/subset-material-symbols.py
+|4,39,134,50,1718450920,"~/subset-material-symbols/subset-material-symbols.py"
+-'  103  63  ~/subset-material-symbols/subset-material-symbols.py
+|4,39,103,63,1718450917,"~/subset-material-symbols/subset-material-symbols.py"
+-'  103  63  ~/subset-material-symbols/subset-material-symbols.py
+|4,39,103,63,1718450917,"~/subset-material-symbols/subset-material-symbols.py"
+-'  103  63  ~/subset-material-symbols/subset-material-symbols.py
+|4,39,103,63,1718450917,"~/subset-material-symbols/subset-material-symbols.py"
+-'  103  63  ~/subset-material-symbols/subset-material-symbols.py
+|4,39,103,63,1718450917,"~/subset-material-symbols/subset-material-symbols.py"
+-'  103  63  ~/subset-material-symbols/subset-material-symbols.py
+|4,39,103,63,1718450917,"~/subset-material-symbols/subset-material-symbols.py"
+-'  103  63  ~/subset-material-symbols/subset-material-symbols.py
+|4,39,103,63,1718450917,"~/subset-material-symbols/subset-material-symbols.py"
+-'  1  0  ~/subset-material-symbols/subset-material-symbols.py
+|4,39,1,0,1718450914,"~/subset-material-symbols/subset-material-symbols.py"
+-'  1  0  ~/subset-material-symbols/subset-material-symbols.py
+|4,39,1,0,1718450914,"~/subset-material-symbols/subset-material-symbols.py"
+-'  1  0  ~/subset-material-symbols/subset-material-symbols.py
+|4,39,1,0,1718450914,"~/subset-material-symbols/subset-material-symbols.py"
+-'  1  0  ~/subset-material-symbols/subset-material-symbols.py
+|4,39,1,0,1718450914,"~/subset-material-symbols/subset-material-symbols.py"
 
 # Buffer list:
-%~/.config/repos.txt	1	12
+%~/ui-components-css/ui-components-css-api.py	30	53
 
 # History of marks within files (newest to oldest):
 
+> ~/ui-components-css/ui-components-css-api.py
+	*	1718451857	0
+	"	30	53
+	^	30	67
+	.	30	53
+	+	8	0
+	+	16	17
+	+	175	37
+	+	175	0
+	+	175	37
+	+	147	65
+	+	175	23
+	+	175	0
+	+	175	7
+	+	175	8
+	+	126	69
+	+	126	98
+	+	124	0
+	+	122	28
+	+	123	14
+	+	122	44
+	+	124	0
+	+	175	7
+	+	175	8
+	+	175	9
+	+	175	104
+	+	175	7
+	+	175	8
+	+	175	80
+	+	175	0
+	+	175	84
+	+	175	8
+	+	175	0
+	+	152	24
+	+	144	97
+	+	152	25
+	+	162	30
+	+	152	24
+	+	174	30
+	+	174	0
+	+	174	31
+	+	162	31
+	+	148	36
+	+	162	0
+	+	154	0
+	+	154	28
+	+	154	29
+	+	154	0
+	+	116	4
+	+	116	33
+	+	116	0
+	+	116	37
+	+	116	43
+	+	116	0
+	+	66	0
+	+	72	0
+	+	67	12
+	+	100	0
+	+	75	0
+	+	114	0
+	+	76	11
+	+	98	11
+	+	78	0
+	+	99	4
+	+	77	0
+	+	78	0
+	+	77	0
+	+	78	0
+	+	85	0
+	+	77	0
+	+	69	42
+	+	115	15
+	+	84	15
+	+	115	23
+	+	102	22
+	+	103	31
+	+	104	13
+	+	105	80
+	+	106	32
+	+	107	39
+	+	108	85
+	+	110	24
+	+	111	18
+	+	112	14
+	+	113	4
+	+	108	32
+	+	81	126
+	+	81	0
+	+	81	14
+	+	81	148
+	+	81	21
+	+	78	58
+	+	85	58
+	+	84	41
+	+	109	0
+	+	108	92
+	+	109	0
+	+	108	92
+	+	98	0
+	+	84	34
+	+	81	0
+	+	30	49
+	+	30	25
+	+	30	29
+	+	30	53
+
+> ~/ui-components-css/templates/components/icon-row.html
+	*	1718451668	0
+	"	2	0
+	^	6	0
+	.	7	0
+	+	97	0
+	+	98	54
+	+	45	12
+	+	223	0
+	+	217	0
+	+	194	30
+	+	7	117
+	+	256	0
+	+	255	0
+	+	194	0
+	+	193	22
+	+	202	21
+	+	210	0
+	+	210	10
+	+	220	0
+	+	220	9
+	+	222	10
+	+	213	0
+	+	212	19
+	+	202	19
+	+	222	0
+	+	220	0
+	+	223	0
+	+	213	0
+	+	203	0
+	+	212	0
+	+	212	4
+	+	202	0
+	+	202	4
+	+	222	0
+	+	222	4
+	+	221	9
+	+	211	9
+	+	7	0
+	+	7	57
+	+	7	99
+	+	7	114
+	+	7	0
+	+	7	58
+	+	7	22
+	+	7	28
+	+	7	58
+	+	7	31
+	+	7	77
+	+	7	100
+	+	7	0
+	+	7	18
+	+	7	24
+	+	7	0
+	+	7	100
+	+	7	0
+	+	7	121
+	+	7	21
+	+	7	0
+	+	7	26
+	+	7	100
+	+	7	14
+	+	7	199
+	+	7	61
+	+	7	22
+	+	7	6
+	+	7	53
+	+	7	7
+	+	278	5
+	+	276	15
+	+	7	0
+	+	275	4
+	+	278	5
+	+	276	0
+	+	275	4
+	+	276	0
+	+	276	8
+	+	275	4
+	+	276	0
+	+	278	0
+	+	277	0
+	+	275	30
+	+	275	0
+	+	275	71
+	+	275	0
+	+	267	0
+	+	277	0
+	+	7	0
+	+	5	0
+	+	5	23
+	+	7	0
+	+	5	0
+	+	7	0
+	+	6	0
+	+	5	32
+	+	7	0
+
+> ~/ui-components-css/static/fonts/base64-css/material-symbols-rounded[home,favorite,star,send,drafts,mail,delete,library_books,update].css
+	*	1718451541	0
+	"	1	0
+
+> ~/subset-material-symbols/icon-usage.txt
+	*	1718451260	0
+	"	9	5
+	^	9	6
+	.	9	5
+	+	9	5
+
+> ~/subset-material-symbols/data/material-symbols-rounded[update,home].css
+	*	1718451177	0
+	"	1	0
+	^	2	43
+	.	2	42
+	+	2	42
+	+	10	42
+	+	2	42
+
+> ~/subset-material-symbols/subset-material-symbols.py
+	*	1718451022	0
+	"	111	63
+	^	111	64
+	.	111	63
+	+	156	0
+	+	101	7
+	+	101	17
+	+	125	14
+	+	103	56
+	+	107	105
+	+	111	60
+	+	107	0
+	+	107	14
+	+	107	0
+	+	111	45
+	+	110	0
+	+	107	59
+	+	110	28
+	+	92	50
+	+	100	43
+	+	100	0
+	+	93	16
+	+	93	4
+	+	95	62
+	+	100	0
+	+	100	12
+	+	100	0
+	+	167	0
+	+	125	45
+	+	127	17
+	+	158	28
+	+	102	20
+	+	110	31
+	+	108	9
+	+	124	9
+	+	108	8
+	+	102	19
+	+	110	30
+	+	108	8
+	+	124	8
+	+	125	15
+	+	127	17
+	+	100	0
+	+	125	22
+	+	13	0
+	+	14	14
+	+	126	4
+	+	127	12
+	+	128	10
+	+	101	18
+	+	128	10
+	+	125	15
+	+	128	12
+	+	130	0
+	+	92	31
+	+	158	16
+	+	159	119
+	+	166	5
+	+	102	0
+	+	125	4
+	+	162	20
+	+	129	4
+	+	166	0
+	+	162	6
+	+	165	4
+	+	164	13
+	+	165	83
+	+	154	19
+	+	155	96
+	+	154	0
+	+	161	0
+	+	160	32
+	+	162	24
+	+	164	42
+	+	165	76
+	+	103	61
+	+	111	62
+	+	110	39
+	+	127	70
+	+	107	69
+	+	103	86
+	+	127	86
+	+	96	36
+	+	100	0
+	+	96	35
+	+	106	36
+	+	127	100
+	+	103	49
+	+	103	0
+	+	100	0
+	+	97	37
+	+	98	15
+	+	101	15
+	+	127	21
+	+	100	0
+	+	99	0
+	+	93	0
+	+	15	0
+	+	111	71
+	+	103	63
+	+	111	63
+	+	159	47
+	+	103	63
+	+	111	63
+
+> ~/subset-material-symbols/data/material-symbols-rounded-subset[update,home].css
+	*	1718451010	0
+	"	1	0
+
+> ~/subset-material-symbols/requirements.txt
+	*	1718450804	0
+	"	1	0
+	^	5	11
+	.	5	10
+	+	3	7
+	+	8	47
+	+	8	70
+	+	9	0
+	+	8	0
+	+	7	47
+	+	6	0
+	+	10	0
+	+	4	0
+	+	5	10
+
 > ~/.config/repos.txt
-	*	1718270069	0
-	"	1	12
-	^	14	13
-	.	1	8
-	+	14	0
+	*	1718449333	0
+	"	1	0
+	.	2	0
+	+	17	0
 	+	9	29
 	+	13	33
-	+	14	0
+	+	17	0
 	+	13	0
 	+	9	0
 	+	2	0
@@ -10873,13 +11447,717 @@ $;
 	+	1	15
 	+	4	31
 	+	1	31
-	+	14	0
+	+	17	0
 	+	5	0
 	+	6	0
 	+	11	0
 	+	10	0
 	+	7	0
 	+	1	8
+	+	16	95
+	+	9	0
+	+	1	0
+	+	2	0
+
+> ~/subset-material-symbols/.gitignore
+	*	1718449333	0
+	"	4	4
+	^	4	5
+	.	4	4
+	+	4	4
+
+> /usr/share/vim/vim90/doc/options.txt
+	*	1718449106	0
+	"	9323	6
+
+> /usr/share/vim/vim90/doc/windows.txt
+	*	1718449093	0
+	"	260	35
+
+> ~/.vim/plugin/run.vim
+	*	1718449034	0
+	"	38	16
+	^	43	17
+	.	43	0
+	+	15	18
+	+	16	0
+	+	46	0
+	+	29	24
+	+	16	17
+	+	29	0
+	+	16	0
+	+	46	0
+	+	46	17
+	+	46	0
+	+	29	28
+	+	29	0
+	+	46	0
+	+	29	0
+	+	46	0
+	+	45	10
+	+	46	8
+	+	46	15
+	+	46	0
+	+	46	17
+	+	46	20
+	+	46	0
+	+	46	38
+	+	46	15
+	+	46	0
+	+	46	19
+	+	46	0
+	+	46	19
+	+	46	18
+	+	46	8
+	+	46	39
+	+	46	16
+	+	46	0
+	+	29	27
+	+	12	10
+	+	12	0
+	+	3	0
+	+	12	0
+	+	45	12
+	+	50	18
+	+	51	0
+	+	54	8
+	+	56	0
+	+	3	0
+	+	2	0
+	+	3	13
+	+	42	0
+	+	29	0
+	+	42	45
+	+	11	0
+	+	18	0
+	+	19	26
+	+	16	0
+	+	19	33
+	+	20	32
+	+	21	0
+	+	20	0
+	+	35	0
+	+	44	0
+	+	35	0
+	+	34	0
+	+	32	0
+	+	30	0
+	+	31	11
+	+	33	0
+	+	22	0
+	+	33	48
+	+	42	0
+	+	37	12
+	+	42	0
+	+	38	71
+	+	39	37
+	+	40	82
+	+	41	12
+	+	42	0
+	+	43	0
+
+> /usr/share/vim/vim90/doc/undo.txt
+	*	1718449006	0
+	"	271	16
+
+> ~/subset-material-symbols/material-symbols-rounded-subset[update,home].css
+	*	1718448928	0
+	"	22	0
+
+> ~/subset-material-symbols/data/MaterialSymbolsRounded[FILL,GRAD,opsz,wght]-subset.woff2
+	*	1718447242	0
+	"	1	0
+
+> ~/subset-material-symbols/download-material-symbols.afl
+	*	1718445172	0
+	"	1	0
+	.	4	0
+	+	4	0
+
+> ~/ui-components-css/static/css-tailwind-outputs/ui-components-css-tailwind-output.css
+	*	1718439359	0
+	"	681	0
+	.	2	0
+	+	2	0
+
+> ~/ui-components-css/static/fonts/material-symbols-outlined-variable-subset[delete,drafts,favorite,home,mail,send,star,library_books,update].ttf
+	*	1718438980	0
+	"	1	0
+
+> ~/ui-components-css/static/fonts/fontbase64.txt
+	*	1718438540	0
+	"	1	0
+
+> ~/ui-components-css/static/fonts/material-symbols-outlined-variable-subset[delete,drafts,favorite,home,mail,send,star].ttf
+	*	1718437841	0
+	"	2	0
+	^	1	2
+	.	1	1
+	+	1	1
+
+> ~/subset-gf-icons/.envrc
+	*	1718436288	0
+	"	1	13
+	^	1	14
+	.	1	13
+	+	1	13
+
+> ~/ui-components-css/ui-components-css.todo
+	*	1718435601	0
+	"	1	0
+	^	6	25
+	.	6	25
+	+	3	0
+	+	4	4
+	+	8	0
+	+	7	12
+	+	4	0
+	+	7	0
+	+	5	6
+	+	7	0
+	+	6	24
+	+	7	0
+	+	1	0
+	+	2	14
+	+	5	11
+	+	4	16
+	+	8	0
+	+	6	25
+
+> ~/.vim/syntax/todo.vim
+	*	1718435599	0
+	"	1	0
+	^	23	0
+	.	26	0
+	+	16	75
+	+	16	0
+	+	16	1
+	+	16	14
+	+	20	0
+	+	8	20
+	+	8	21
+	+	14	0
+	+	13	0
+	+	17	32
+	+	10	64
+	+	12	22
+	+	19	0
+	+	12	30
+	+	11	17
+	+	12	30
+	+	18	42
+	+	19	25
+	+	7	2
+	+	16	0
+	+	19	31
+	+	20	23
+	+	25	55
+	+	25	0
+	+	25	45
+	+	25	0
+	+	25	10
+	+	25	30
+	+	25	0
+	+	25	37
+	+	25	45
+	+	26	57
+	+	26	44
+	+	25	0
+	+	26	45
+	+	26	42
+	+	26	0
+	+	25	10
+	+	26	0
+	+	25	0
+	+	25	9
+	+	24	27
+	+	25	34
+	+	26	37
+	+	25	9
+	+	26	40
+	+	22	0
+	+	26	0
+
+> ~/.vim/ftplugin/todo.vim
+	*	1718435598	0
+	"	57	0
+	.	63	0
+	+	15	11
+	+	38	11
+	+	40	72
+	+	41	2
+	+	42	0
+	+	18	55
+	+	20	5
+	+	22	7
+	+	24	8
+	+	26	4
+	+	16	0
+	+	16	17
+	+	16	0
+	+	19	23
+	+	28	37
+	+	29	29
+	+	30	50
+	+	37	0
+	+	16	0
+	+	34	4
+	+	34	0
+	+	17	22
+	+	31	7
+	+	34	0
+	+	36	4
+	+	31	7
+	+	36	0
+	+	34	0
+	+	35	0
+	+	32	28
+	+	33	8
+	+	36	0
+	+	13	33
+	+	13	0
+	+	42	1
+	+	13	0
+	+	13	33
+	+	13	0
+	+	3	0
+	+	1	0
+	+	42	0
+	+	63	0
+	+	43	0
+	+	61	42
+	+	53	52
+	+	54	0
+	+	45	28
+	+	48	48
+	+	53	0
+	+	48	0
+	+	51	38
+	+	51	0
+	+	50	51
+	+	51	56
+	+	53	75
+	+	51	0
+	+	1	0
+	+	7	3
+	+	8	0
+	+	7	17
+	+	8	0
+	+	12	0
+	+	51	16
+	+	51	0
+	+	53	0
+	+	43	0
+	+	43	11
+	+	61	49
+	+	48	24
+	+	50	0
+	+	51	0
+	+	45	0
+	+	48	0
+	+	53	30
+	+	53	33
+	+	54	0
+	+	53	0
+	+	45	0
+	+	48	0
+	+	49	0
+	+	51	0
+	+	53	0
+	+	53	32
+	+	53	0
+	+	51	0
+	+	53	0
+	+	44	6
+	+	43	0
+	+	63	0
+	+	44	0
+	+	63	0
+	+	44	0
+	+	61	13
+	+	61	0
+	+	43	0
+	+	61	0
+	+	44	4
+	+	44	0
+	+	63	0
+
+> ~/ui-components-css/Highlight test
+	*	1718434890	0
+	"	13	0
+	^	356	44
+	.	50	0
+	+	50	0
+
+> /usr/share/vim/vim90/doc/syntax.txt
+	*	1718434728	0
+	"	3817	0
+
+> ~/ui-components-css/previous-attempts.txt
+	*	1718434338	0
+	"	1	0
+	^	1	29
+	.	2	0
+	+	15	35
+	+	22	47
+	+	22	44
+	+	10	41
+	+	11	0
+	+	10	0
+	+	11	0
+	+	22	0
+	+	11	0
+	+	16	0
+	+	22	0
+	+	11	0
+	+	22	0
+	+	18	24
+	+	11	0
+	+	9	0
+	+	7	0
+	+	8	21
+	+	5	49
+	+	4	15
+	+	25	31
+	+	26	32
+	+	3	0
+	+	1	12
+	+	11	0
+	+	23	32
+	+	24	29
+	+	22	0
+	+	15	0
+	+	13	0
+	+	12	8
+	+	22	0
+	+	20	0
+	+	22	0
+	+	21	13
+	+	11	0
+	+	20	0
+	+	27	22
+	+	28	42
+	+	33	0
+	+	32	0
+	+	33	0
+	+	33	8
+	+	29	0
+	+	33	0
+	+	30	5
+	+	31	5
+	+	30	0
+	+	37	0
+	+	36	0
+	+	37	0
+	+	34	11
+	+	35	6
+	+	36	6
+	+	35	0
+	+	34	15
+	+	12	14
+	+	19	4
+	+	37	12
+	+	5	0
+	+	6	0
+	+	13	0
+	+	22	0
+	+	35	0
+	+	37	0
+	+	17	0
+	+	13	0
+	+	14	0
+	+	15	0
+	+	16	0
+	+	17	0
+	+	13	0
+	+	14	0
+	+	16	0
+	+	15	0
+	+	19	1
+	+	13	0
+	+	8	0
+	+	16	0
+	+	26	0
+	+	19	0
+	+	13	0
+	+	19	0
+	+	12	0
+	+	1	0
+	+	2	0
+
+> ~/ui-components-css/usage.md
+	*	1718409762	0
+	"	1	0
+	^	2	29
+	.	2	28
+	+	17	82
+	+	18	52
+	+	7	17
+	+	15	0
+	+	14	7
+	+	11	7
+	+	9	0
+	+	7	17
+	+	19	89
+	+	19	153
+	+	21	0
+	+	20	20
+	+	64	0
+	+	65	37
+	+	64	33
+	+	67	0
+	+	39	100
+	+	39	0
+	+	64	0
+	+	68	53
+	+	64	45
+	+	65	14
+	+	3	0
+	+	69	4
+	+	69	0
+	+	37	57
+	+	39	0
+	+	37	45
+	+	39	0
+	+	25	89
+	+	26	0
+	+	26	81
+	+	39	1
+	+	37	0
+	+	39	0
+	+	37	10
+	+	37	28
+	+	38	46
+	+	39	0
+	+	1	27
+	+	22	0
+	+	69	0
+	+	16	11
+	+	30	80
+	+	32	77
+	+	1	0
+	+	3	0
+	+	33	90
+	+	34	79
+	+	35	81
+	+	22	0
+	+	22	108
+	+	22	0
+	+	23	0
+	+	23	89
+	+	23	0
+	+	23	70
+	+	23	83
+	+	23	0
+	+	27	0
+	+	31	0
+	+	36	0
+	+	23	0
+	+	47	0
+	+	63	0
+	+	47	0
+	+	41	5
+	+	62	6
+	+	45	17
+	+	43	30
+	+	44	11
+	+	47	0
+	+	40	14
+	+	47	12
+	+	62	10
+	+	47	0
+	+	62	0
+	+	47	0
+	+	48	0
+	+	50	0
+	+	46	29
+	+	52	16
+	+	54	11
+	+	55	4
+	+	56	9
+	+	53	7
+	+	56	48
+	+	57	47
+	+	58	47
+	+	59	55
+	+	60	47
+	+	61	8
+	+	2	28
+
+> ~/hateoas/hateoas-api.py
+	*	1718408824	0
+	"	42	4
+	.	1	0
+	+	55	59
+	+	55	35
+	+	55	54
+	+	55	35
+	+	55	68
+	+	55	60
+	+	55	88
+	+	55	35
+	+	55	88
+	+	55	35
+	+	55	47
+	+	55	54
+	+	24	0
+	+	24	5
+	+	24	133
+	+	24	0
+	+	24	4
+	+	55	0
+	+	55	85
+	+	55	31
+	+	55	22
+	+	55	91
+	+	55	51
+	+	55	47
+	+	1	0
+	+	55	38
+	+	55	16
+	+	55	35
+	+	55	23
+	+	1	13
+	+	55	0
+	+	55	84
+	+	55	35
+	+	55	63
+	+	55	52
+	+	55	64
+	+	55	53
+	+	55	57
+	+	55	74
+	+	55	47
+	+	55	0
+	+	1	31
+	+	55	58
+	+	55	0
+	+	55	35
+	+	55	94
+	+	55	60
+	+	55	13
+	+	55	126
+	+	55	63
+	+	55	66
+	+	55	86
+	+	55	35
+	+	55	0
+	+	55	35
+	+	55	92
+	+	55	51
+	+	55	84
+	+	55	82
+	+	55	51
+	+	55	107
+	+	55	39
+	+	55	59
+	+	55	108
+	+	55	44
+	+	55	35
+	+	55	42
+	+	55	35
+	+	55	63
+	+	55	52
+	+	55	35
+	+	55	70
+	+	55	55
+	+	55	51
+	+	55	55
+	+	55	51
+	+	55	55
+	+	55	51
+	+	55	35
+	+	55	44
+	+	55	35
+	+	55	78
+	+	55	76
+	+	55	98
+	+	55	35
+	+	55	43
+	+	55	56
+	+	55	0
+	+	55	34
+	+	55	0
+	+	55	26
+	+	60	0
+	+	1	0
+
+> ~/ui-components-css/static/css-utilities/wide-tall.css
+	*	1718407649	0
+	"	1	0
+	.	9	0
+	+	3	61
+	+	7	0
+	+	9	36
+	+	9	0
+	+	14	17
+	+	15	17
+	+	9	10
+	+	9	0
+	+	7	78
+	+	9	74
+	+	9	7
+	+	3	0
+	+	9	0
+	+	4	67
+	+	9	0
+	+	14	0
+	+	9	0
+	+	10	13
+	+	13	0
+	+	10	16
+	+	10	14
+	+	10	15
+	+	10	30
+	+	10	54
+	+	10	67
+	+	13	0
+	+	11	66
+	+	12	72
+	+	13	4
+	+	13	69
+	+	13	66
+	+	13	72
+	+	13	0
+	+	9	0
+	+	5	0
+	+	4	0
+	+	1	0
+	+	9	0
+	+	1	0
+	+	1	44
+	+	1	23
+	+	1	66
+	+	1	65
+	+	1	0
+	+	1	49
+	+	1	48
+	+	1	53
+	+	1	28
+	+	1	34
+	+	1	33
+	+	1	0
+	+	9	0
+	+	10	0
+	+	12	0
+	+	10	0
+	+	13	0
+	+	12	49
+	+	12	0
+	+	7	24
+	+	3	24
+	+	9	20
+	+	9	0
+	+	1	51
+	+	2	51
+	+	3	51
+	+	5	51
+	+	6	51
+	+	7	51
+	+	10	54
+	+	11	54
+	+	1	0
+	+	9	0
 
 > ~/frontend/ripgrep-padding-html-vue-results.txt
 	*	1718270036	0
@@ -10905,113 +12183,6 @@ $;
 	+	114	7
 	+	114	8
 	+	2	0
-
-> ~/ui-components-css/static/css-tailwind-outputs/ui-components-css-tailwind-output.css
-	*	1718269919	0
-	"	22	0
-	.	2	0
-	+	2	0
-
-> ~/ui-components-css/templates/components/icon-row.html
-	*	1718269895	0
-	"	55	4
-	^	5	118
-	.	5	117
-	+	184	101
-	+	184	0
-	+	184	80
-	+	186	51
-	+	184	104
-	+	139	0
-	+	117	24
-	+	118	26
-	+	129	0
-	+	120	24
-	+	117	32
-	+	120	38
-	+	117	32
-	+	121	8
-	+	122	4
-	+	184	119
-	+	129	0
-	+	122	25
-	+	123	43
-	+	122	21
-	+	129	0
-	+	120	47
-	+	117	32
-	+	120	0
-	+	119	22
-	+	122	0
-	+	125	35
-	+	128	34
-	+	126	0
-	+	125	36
-	+	126	21
-	+	184	78
-	+	42	0
-	+	39	10
-	+	40	24
-	+	39	11
-	+	41	20
-	+	41	23
-	+	32	0
-	+	31	0
-	+	41	33
-	+	42	0
-	+	49	0
-	+	14	0
-	+	178	0
-	+	23	0
-	+	44	0
-	+	15	0
-	+	81	37
-	+	178	26
-	+	21	7
-	+	178	67
-	+	22	9
-	+	178	58
-	+	171	73
-	+	21	74
-	+	22	0
-	+	178	21
-	+	171	21
-	+	108	24
-	+	109	6
-	+	226	0
-	+	225	0
-	+	215	17
-	+	222	11
-	+	223	26
-	+	138	0
-	+	132	43
-	+	221	21
-	+	47	58
-	+	191	21
-	+	197	21
-	+	203	21
-	+	209	25
-	+	215	19
-	+	221	19
-	+	134	25
-	+	134	26
-	+	134	43
-	+	134	0
-	+	132	0
-	+	138	0
-	+	135	10
-	+	138	0
-	+	136	0
-	+	86	35
-	+	82	35
-	+	86	0
-	+	98	0
-	+	99	54
-	+	46	12
-	+	224	0
-	+	221	0
-	+	203	30
-	+	5	117
 
 > ~/ui-components-css/flask-history.py
 	*	1718269816	0
@@ -11114,27 +12285,6 @@ $;
 	+	9	0
 	+	3	32
 	+	7	12
-
-> ~/ui-components-css/static/css-utilities/wide-tall.css
-	*	1718191751	0
-	"	12	0
-	^	5	0
-	.	4	67
-	+	2	61
-	+	6	0
-	+	12	36
-	+	13	0
-	+	14	17
-	+	15	17
-	+	7	10
-	+	9	0
-	+	6	78
-	+	7	74
-	+	8	7
-	+	2	0
-	+	8	0
-	+	3	67
-	+	4	67
 
 > ~/ui-components-css/static/css-utilities/spacing.css
 	*	1718140981	0
@@ -11317,10 +12467,6 @@ $;
 > /usr/share/vim/vim90/doc/editing.txt
 	*	1718134859	0
 	"	304	12
-
-> /usr/share/vim/vim90/doc/options.txt
-	*	1718134847	0
-	"	3705	1
 
 > /usr/share/vim/vim90/doc/pattern.txt
 	*	1718134829	0
@@ -11690,108 +12836,6 @@ $;
 	+	1155	59
 	+	1157	55
 
-> ~/ui-components-css/ui-components-css-api.py
-	*	1718134486	0
-	"	87	0
-	^	98	37
-	.	104	0
-	+	62	133
-	+	55	0
-	+	49	42
-	+	78	64
-	+	82	94
-	+	81	16
-	+	82	32
-	+	128	0
-	+	81	81
-	+	82	16
-	+	81	57
-	+	79	37
-	+	81	58
-	+	82	48
-	+	83	58
-	+	85	54
-	+	86	22
-	+	87	0
-	+	85	9
-	+	83	46
-	+	84	16
-	+	126	24
-	+	125	28
-	+	125	38
-	+	125	8
-	+	125	36
-	+	125	8
-	+	125	9
-	+	125	0
-	+	79	45
-	+	81	81
-	+	80	15
-	+	81	53
-	+	82	49
-	+	77	0
-	+	76	0
-	+	76	23
-	+	76	24
-	+	76	22
-	+	76	33
-	+	76	44
-	+	76	36
-	+	76	8
-	+	76	22
-	+	72	15
-	+	76	30
-	+	76	70
-	+	76	0
-	+	125	13
-	+	76	0
-	+	125	12
-	+	8	13
-	+	14	0
-	+	15	0
-	+	18	0
-	+	17	0
-	+	8	0
-	+	16	17
-	+	125	37
-	+	125	0
-	+	125	37
-	+	97	65
-	+	125	23
-	+	125	0
-	+	125	7
-	+	125	8
-	+	76	69
-	+	76	98
-	+	74	0
-	+	72	28
-	+	73	14
-	+	72	44
-	+	74	0
-	+	125	7
-	+	125	8
-	+	125	9
-	+	125	104
-	+	125	7
-	+	125	8
-	+	125	80
-	+	125	0
-	+	125	84
-	+	125	8
-	+	125	0
-	+	102	24
-	+	94	97
-	+	102	25
-	+	112	30
-	+	102	24
-	+	124	30
-	+	124	0
-	+	124	31
-	+	112	31
-	+	98	36
-	+	112	0
-	+	104	0
-
 > ~/.vim/plugin/workspace.vim
 	*	1718134483	0
 	"	30	8
@@ -11896,105 +12940,6 @@ $;
 	"	7	0
 	.	7	0
 	+	7	0
-
-> ~/hateoas/hateoas-api.py
-	*	1718098754	0
-	"	71	0
-	^	789	60
-	.	789	26
-	+	789	59
-	+	789	35
-	+	789	54
-	+	789	35
-	+	789	68
-	+	789	60
-	+	789	88
-	+	789	35
-	+	789	88
-	+	789	35
-	+	789	47
-	+	789	54
-	+	377	0
-	+	376	5
-	+	377	133
-	+	377	0
-	+	376	4
-	+	777	0
-	+	776	85
-	+	780	31
-	+	781	22
-	+	789	91
-	+	789	51
-	+	789	47
-	+	155	0
-	+	154	0
-	+	771	38
-	+	771	16
-	+	771	35
-	+	771	23
-	+	14	13
-	+	771	0
-	+	785	0
-	+	789	84
-	+	789	35
-	+	789	63
-	+	789	52
-	+	789	64
-	+	789	53
-	+	789	57
-	+	789	74
-	+	789	47
-	+	786	0
-	+	13	31
-	+	786	58
-	+	789	0
-	+	789	35
-	+	789	94
-	+	789	60
-	+	787	13
-	+	789	126
-	+	789	63
-	+	789	66
-	+	789	86
-	+	789	35
-	+	787	0
-	+	789	35
-	+	789	92
-	+	789	51
-	+	789	84
-	+	789	82
-	+	789	51
-	+	789	107
-	+	789	39
-	+	789	59
-	+	789	108
-	+	789	44
-	+	789	35
-	+	789	42
-	+	789	35
-	+	789	63
-	+	789	52
-	+	789	35
-	+	789	70
-	+	789	55
-	+	789	51
-	+	789	55
-	+	789	51
-	+	789	55
-	+	789	51
-	+	789	35
-	+	789	44
-	+	789	35
-	+	789	78
-	+	789	76
-	+	789	98
-	+	789	35
-	+	789	43
-	+	789	56
-	+	790	0
-	+	789	34
-	+	790	0
-	+	789	26
 
 > ~/pytest/date.py
 	*	1718096578	0
@@ -12278,55 +13223,6 @@ $;
 	"	34	0
 	.	34	0
 	+	34	0
-
-> ~/.vim/ftplugin/todo.vim
-	*	1717919848	0
-	"	37	0
-	^	1	0
-	.	38	0
-	+	8	28
-	+	10	49
-	+	11	11
-	+	34	11
-	+	36	72
-	+	37	2
-	+	38	0
-	+	14	55
-	+	16	5
-	+	18	7
-	+	20	8
-	+	22	4
-	+	12	0
-	+	12	17
-	+	12	0
-	+	15	23
-	+	24	37
-	+	25	29
-	+	26	50
-	+	33	0
-	+	12	0
-	+	30	4
-	+	30	0
-	+	13	22
-	+	27	7
-	+	30	0
-	+	32	4
-	+	27	7
-	+	32	0
-	+	30	0
-	+	31	0
-	+	28	28
-	+	29	8
-	+	32	0
-	+	9	33
-	+	9	0
-	+	38	1
-	+	9	0
-	+	9	33
-	+	9	0
-	+	3	0
-	+	1	0
-	+	38	0
 
 > ~/.config/direnv/direnv.toml
 	*	1717918452	0
@@ -12712,104 +13608,6 @@ $;
 	+	47	1
 	+	1	62
 
-> ~/ui-components-css/usage.md
-	*	1717911377	0
-	"	12	0
-	^	60	49
-	.	60	8
-	+	16	82
-	+	17	52
-	+	6	17
-	+	14	0
-	+	13	7
-	+	10	7
-	+	8	0
-	+	6	17
-	+	18	89
-	+	18	153
-	+	20	0
-	+	19	20
-	+	63	0
-	+	64	37
-	+	63	33
-	+	66	0
-	+	38	100
-	+	38	0
-	+	63	0
-	+	67	53
-	+	63	45
-	+	64	14
-	+	2	0
-	+	68	4
-	+	68	0
-	+	36	57
-	+	38	0
-	+	36	45
-	+	38	0
-	+	24	89
-	+	25	0
-	+	25	81
-	+	38	1
-	+	36	0
-	+	38	0
-	+	36	10
-	+	36	28
-	+	37	46
-	+	38	0
-	+	1	27
-	+	21	0
-	+	68	0
-	+	15	11
-	+	29	80
-	+	31	77
-	+	1	0
-	+	2	0
-	+	32	90
-	+	33	79
-	+	34	81
-	+	21	0
-	+	21	108
-	+	21	0
-	+	22	0
-	+	22	89
-	+	22	0
-	+	22	70
-	+	22	83
-	+	22	0
-	+	26	0
-	+	30	0
-	+	35	0
-	+	22	0
-	+	46	0
-	+	62	0
-	+	46	0
-	+	40	5
-	+	61	6
-	+	44	17
-	+	42	30
-	+	43	11
-	+	46	0
-	+	39	14
-	+	46	12
-	+	61	10
-	+	46	0
-	+	61	0
-	+	46	0
-	+	47	0
-	+	49	0
-	+	45	29
-	+	51	16
-	+	53	11
-	+	54	4
-	+	55	9
-	+	52	7
-	+	55	48
-	+	56	47
-	+	57	47
-	+	58	55
-	+	59	47
-	+	60	8
-
 > ~/sqlite-editor/editor-api.py
 	*	1717910931	0
 	"	1	0
@@ -12916,133 +13714,12 @@ $;
 	+	334	84
 	+	434	84
 
-> ~/ui-components-css/previous-attempts.txt
-	*	1717910472	0
-	"	1	14
-	^	11	12
-	.	11	0
-	+	14	35
-	+	21	47
-	+	21	44
-	+	9	41
-	+	10	0
-	+	9	0
-	+	10	0
-	+	21	0
-	+	10	0
-	+	15	0
-	+	21	0
-	+	10	0
-	+	21	0
-	+	17	24
-	+	10	0
-	+	8	0
-	+	6	0
-	+	7	21
-	+	4	49
-	+	3	15
-	+	24	31
-	+	25	32
-	+	2	0
-	+	1	12
-	+	10	0
-	+	22	32
-	+	23	29
-	+	21	0
-	+	14	0
-	+	12	0
-	+	11	8
-	+	21	0
-	+	19	0
-	+	21	0
-	+	20	13
-	+	10	0
-	+	19	0
-	+	26	22
-	+	27	42
-	+	32	0
-	+	31	0
-	+	32	0
-	+	32	8
-	+	28	0
-	+	32	0
-	+	29	5
-	+	30	5
-	+	29	0
-	+	36	0
-	+	35	0
-	+	36	0
-	+	33	11
-	+	34	6
-	+	35	6
-	+	34	0
-	+	33	15
-	+	11	14
-	+	18	4
-	+	36	12
-	+	4	0
-	+	5	0
-	+	12	0
-	+	21	0
-	+	34	0
-	+	36	0
-	+	16	0
-	+	12	0
-	+	13	0
-	+	14	0
-	+	15	0
-	+	16	0
-	+	12	0
-	+	13	0
-	+	15	0
-	+	14	0
-	+	18	1
-	+	12	0
-	+	7	0
-	+	15	0
-	+	25	0
-	+	18	0
-	+	12	0
-	+	18	0
-	+	11	0
-
-> ~/.vim/syntax/todo.vim
-	*	1717883212	0
-	"	19	31
-	^	19	32
-	.	19	31
-	+	16	75
-	+	16	0
-	+	16	1
-	+	16	14
-	+	20	0
-	+	8	20
-	+	8	21
-	+	14	0
-	+	13	0
-	+	17	32
-	+	10	64
-	+	12	22
-	+	19	0
-	+	12	30
-	+	11	17
-	+	12	30
-	+	18	42
-	+	19	25
-	+	7	2
-	+	16	0
-	+	19	31
-
 > ~/.vim/Highlight test
 	*	1717883172	0
 	"	17	0
 	^	364	20
 	.	50	0
 	+	50	0
-
-> /usr/share/vim/vim90/doc/syntax.txt
-	*	1717883077	0
-	"	4950	57
 
 > ~/ui-components-css/windows-desktop-css-paths.txt
 	*	1717882412	0
@@ -18206,88 +18883,6 @@ $;
 	^	35	79
 	.	35	78
 	+	35	78
-
-> ~/.vim/plugin/run.vim
-	*	1716090754	0
-	"	39	16
-	^	43	17
-	.	43	0
-	+	15	18
-	+	16	0
-	+	46	0
-	+	29	24
-	+	16	17
-	+	29	0
-	+	16	0
-	+	46	0
-	+	46	17
-	+	46	0
-	+	29	28
-	+	29	0
-	+	46	0
-	+	29	0
-	+	46	0
-	+	45	10
-	+	46	8
-	+	46	15
-	+	46	0
-	+	46	17
-	+	46	20
-	+	46	0
-	+	46	38
-	+	46	15
-	+	46	0
-	+	46	19
-	+	46	0
-	+	46	19
-	+	46	18
-	+	46	8
-	+	46	39
-	+	46	16
-	+	46	0
-	+	29	27
-	+	12	10
-	+	12	0
-	+	3	0
-	+	12	0
-	+	45	12
-	+	50	18
-	+	51	0
-	+	54	8
-	+	56	0
-	+	3	0
-	+	2	0
-	+	3	13
-	+	42	0
-	+	29	0
-	+	42	45
-	+	11	0
-	+	18	0
-	+	19	26
-	+	16	0
-	+	19	33
-	+	20	32
-	+	21	0
-	+	20	0
-	+	35	0
-	+	44	0
-	+	35	0
-	+	34	0
-	+	32	0
-	+	30	0
-	+	31	11
-	+	33	0
-	+	22	0
-	+	33	48
-	+	42	0
-	+	37	12
-	+	42	0
-	+	38	71
-	+	39	37
-	+	40	82
-	+	41	12
-	+	42	0
-	+	43	0
 
 > /tmp/crontab.3pYCmC/crontab
 	*	1716090490	0
@@ -30500,10 +31095,6 @@ $;
 > /usr/share/vim/vim90/doc/various.txt
 	*	1692439990	0
 	"	760	46
-
-> /usr/share/vim/vim90/doc/windows.txt
-	*	1692439602	0
-	"	75	5
 
 > ~/pytypes/validate.py
 	*	1692438708	0
