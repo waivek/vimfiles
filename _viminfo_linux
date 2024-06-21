@@ -21,7 +21,7 @@ $
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1719009758,,"q"
+|2,0,1719009814,,"q"
 :edit $MYVIMRC
 |2,0,1719009741,,"edit $MYVIMRC"
 :set verbose=20 | quit
@@ -11219,20 +11219,20 @@ $
 |3,0,36,0,1,0,1719009462,":"
 
 # File marks:
-'0  43  0  ~/.vim/vimrc
-|4,48,43,0,1719009758,"~/.vim/vimrc"
-'1  19  0  ~/.vim/performance/verbose-file.txt
-|4,49,19,0,1719009739,"~/.vim/performance/verbose-file.txt"
+'0  13  4  ~/.vim/.gitignore
+|4,48,13,4,1719009814,"~/.vim/.gitignore"
+'1  43  0  ~/.vim/vimrc
+|4,49,43,0,1719009758,"~/.vim/vimrc"
 '2  19  0  ~/.vim/performance/verbose-file.txt
 |4,50,19,0,1719009739,"~/.vim/performance/verbose-file.txt"
 '3  19  0  ~/.vim/performance/verbose-file.txt
-|4,51,19,0,1719009726,"~/.vim/performance/verbose-file.txt"
+|4,51,19,0,1719009739,"~/.vim/performance/verbose-file.txt"
 '4  19  0  ~/.vim/performance/verbose-file.txt
 |4,52,19,0,1719009726,"~/.vim/performance/verbose-file.txt"
-'5  303  0  ~/.vim/performance/240622.vim_exit.v04.txt
-|4,53,303,0,1719009689,"~/.vim/performance/240622.vim_exit.v04.txt"
-'6  305  0  ~/.vim/performance/240622.vim_exit.v04.txt
-|4,54,305,0,1719009538,"~/.vim/performance/240622.vim_exit.v04.txt"
+'5  19  0  ~/.vim/performance/verbose-file.txt
+|4,53,19,0,1719009726,"~/.vim/performance/verbose-file.txt"
+'6  303  0  ~/.vim/performance/240622.vim_exit.v04.txt
+|4,54,303,0,1719009689,"~/.vim/performance/240622.vim_exit.v04.txt"
 '7  305  0  ~/.vim/performance/240622.vim_exit.v04.txt
 |4,55,305,0,1719009538,"~/.vim/performance/240622.vim_exit.v04.txt"
 '8  305  0  ~/.vim/performance/240622.vim_exit.v04.txt
@@ -11241,20 +11241,40 @@ $
 |4,57,305,0,1719009538,"~/.vim/performance/240622.vim_exit.v04.txt"
 
 # Jumplist (newest first):
+-'  13  4  ~/.vim/.gitignore
+|4,39,13,4,1719009814,"~/.vim/.gitignore"
+-'  1  0  ~/.vim/.gitignore
+|4,39,1,0,1719009812,"~/.vim/.gitignore"
+-'  43  0  ~/.vim/vimrc
+|4,39,43,0,1719009758,"~/.vim/vimrc"
 -'  43  0  ~/.vim/vimrc
 |4,39,43,0,1719009758,"~/.vim/vimrc"
 -'  62  0  ~/.vim/vimrc
 |4,39,62,0,1719009754,"~/.vim/vimrc"
+-'  62  0  ~/.vim/vimrc
+|4,39,62,0,1719009754,"~/.vim/vimrc"
+-'  88  0  ~/.vim/vimrc
+|4,39,88,0,1719009751,"~/.vim/vimrc"
 -'  88  0  ~/.vim/vimrc
 |4,39,88,0,1719009751,"~/.vim/vimrc"
 -'  61  5  ~/.vim/vimrc
 |4,39,61,5,1719009746,"~/.vim/vimrc"
+-'  61  5  ~/.vim/vimrc
+|4,39,61,5,1719009746,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1719009745,"~/.vim/vimrc"
 -'  1  0  ~/.vim/vimrc
 |4,39,1,0,1719009745,"~/.vim/vimrc"
 -'  19  0  ~/.vim/performance/verbose-file.txt
 |4,39,19,0,1719009739,"~/.vim/performance/verbose-file.txt"
 -'  19  0  ~/.vim/performance/verbose-file.txt
 |4,39,19,0,1719009739,"~/.vim/performance/verbose-file.txt"
+-'  19  0  ~/.vim/performance/verbose-file.txt
+|4,39,19,0,1719009739,"~/.vim/performance/verbose-file.txt"
+-'  19  0  ~/.vim/performance/verbose-file.txt
+|4,39,19,0,1719009739,"~/.vim/performance/verbose-file.txt"
+-'  19  0  ~/.vim/performance/verbose-file.txt
+|4,39,19,0,1719009726,"~/.vim/performance/verbose-file.txt"
 -'  19  0  ~/.vim/performance/verbose-file.txt
 |4,39,19,0,1719009726,"~/.vim/performance/verbose-file.txt"
 -'  1  0  ~/.vim/performance/verbose-file.txt
@@ -11263,6 +11283,12 @@ $
 |4,39,1,0,1719009693,"~/.vim/performance/verbose-file.txt"
 -'  1  0  ~/.vim/performance/verbose-file.txt
 |4,39,1,0,1719009693,"~/.vim/performance/verbose-file.txt"
+-'  1  0  ~/.vim/performance/verbose-file.txt
+|4,39,1,0,1719009693,"~/.vim/performance/verbose-file.txt"
+-'  1  0  ~/.vim/performance/verbose-file.txt
+|4,39,1,0,1719009693,"~/.vim/performance/verbose-file.txt"
+-'  1  0  ~/.vim/performance/verbose-file.txt
+|4,39,1,0,1719009693,"~/.vim/performance/verbose-file.txt"
 -'  303  0  ~/.vim/performance/240622.vim_exit.v04.txt
 |4,39,303,0,1719009689,"~/.vim/performance/240622.vim_exit.v04.txt"
 -'  303  0  ~/.vim/performance/240622.vim_exit.v04.txt
@@ -11279,6 +11305,38 @@ $
 |4,39,303,0,1719009689,"~/.vim/performance/240622.vim_exit.v04.txt"
 -'  303  0  ~/.vim/performance/240622.vim_exit.v04.txt
 |4,39,303,0,1719009689,"~/.vim/performance/240622.vim_exit.v04.txt"
+-'  303  0  ~/.vim/performance/240622.vim_exit.v04.txt
+|4,39,303,0,1719009689,"~/.vim/performance/240622.vim_exit.v04.txt"
+-'  303  0  ~/.vim/performance/240622.vim_exit.v04.txt
+|4,39,303,0,1719009689,"~/.vim/performance/240622.vim_exit.v04.txt"
+-'  303  0  ~/.vim/performance/240622.vim_exit.v04.txt
+|4,39,303,0,1719009689,"~/.vim/performance/240622.vim_exit.v04.txt"
+-'  303  0  ~/.vim/performance/240622.vim_exit.v04.txt
+|4,39,303,0,1719009689,"~/.vim/performance/240622.vim_exit.v04.txt"
+-'  303  0  ~/.vim/performance/240622.vim_exit.v04.txt
+|4,39,303,0,1719009689,"~/.vim/performance/240622.vim_exit.v04.txt"
+-'  303  0  ~/.vim/performance/240622.vim_exit.v04.txt
+|4,39,303,0,1719009689,"~/.vim/performance/240622.vim_exit.v04.txt"
+-'  303  0  ~/.vim/performance/240622.vim_exit.v04.txt
+|4,39,303,0,1719009689,"~/.vim/performance/240622.vim_exit.v04.txt"
+-'  303  0  ~/.vim/performance/240622.vim_exit.v04.txt
+|4,39,303,0,1719009689,"~/.vim/performance/240622.vim_exit.v04.txt"
+-'  305  0  ~/.vim/performance/240622.vim_exit.v04.txt
+|4,39,305,0,1719009650,"~/.vim/performance/240622.vim_exit.v04.txt"
+-'  305  0  ~/.vim/performance/240622.vim_exit.v04.txt
+|4,39,305,0,1719009650,"~/.vim/performance/240622.vim_exit.v04.txt"
+-'  305  0  ~/.vim/performance/240622.vim_exit.v04.txt
+|4,39,305,0,1719009650,"~/.vim/performance/240622.vim_exit.v04.txt"
+-'  305  0  ~/.vim/performance/240622.vim_exit.v04.txt
+|4,39,305,0,1719009650,"~/.vim/performance/240622.vim_exit.v04.txt"
+-'  305  0  ~/.vim/performance/240622.vim_exit.v04.txt
+|4,39,305,0,1719009650,"~/.vim/performance/240622.vim_exit.v04.txt"
+-'  305  0  ~/.vim/performance/240622.vim_exit.v04.txt
+|4,39,305,0,1719009650,"~/.vim/performance/240622.vim_exit.v04.txt"
+-'  305  0  ~/.vim/performance/240622.vim_exit.v04.txt
+|4,39,305,0,1719009650,"~/.vim/performance/240622.vim_exit.v04.txt"
+-'  305  0  ~/.vim/performance/240622.vim_exit.v04.txt
+|4,39,305,0,1719009650,"~/.vim/performance/240622.vim_exit.v04.txt"
 -'  305  0  ~/.vim/performance/240622.vim_exit.v04.txt
 |4,39,305,0,1719009650,"~/.vim/performance/240622.vim_exit.v04.txt"
 -'  305  0  ~/.vim/performance/240622.vim_exit.v04.txt
@@ -11343,110 +11401,62 @@ $
 |4,39,305,0,1719009538,"~/.vim/performance/240622.vim_exit.v04.txt"
 -'  305  0  ~/.vim/performance/240622.vim_exit.v04.txt
 |4,39,305,0,1719009538,"~/.vim/performance/240622.vim_exit.v04.txt"
--'  1  0  ~/.vim/performance/240622.vim_exit.v04.txt
-|4,39,1,0,1719009508,"~/.vim/performance/240622.vim_exit.v04.txt"
--'  1  0  ~/.vim/performance/240622.vim_exit.v04.txt
-|4,39,1,0,1719009508,"~/.vim/performance/240622.vim_exit.v04.txt"
--'  1  0  ~/.vim/performance/240622.vim_exit.v04.txt
-|4,39,1,0,1719009508,"~/.vim/performance/240622.vim_exit.v04.txt"
--'  1  0  ~/.vim/performance/240622.vim_exit.v04.txt
-|4,39,1,0,1719009508,"~/.vim/performance/240622.vim_exit.v04.txt"
--'  1  0  ~/.vim/performance/240622.vim_exit.v04.txt
-|4,39,1,0,1719009508,"~/.vim/performance/240622.vim_exit.v04.txt"
--'  1  0  ~/.vim/performance/240622.vim_exit.v04.txt
-|4,39,1,0,1719009508,"~/.vim/performance/240622.vim_exit.v04.txt"
--'  1  0  ~/.vim/performance/240622.vim_exit.v04.txt
-|4,39,1,0,1719009508,"~/.vim/performance/240622.vim_exit.v04.txt"
--'  1  0  ~/.vim/performance/240622.vim_exit.v04.txt
-|4,39,1,0,1719009508,"~/.vim/performance/240622.vim_exit.v04.txt"
--'  1  0  ~/.vim/performance/240622.vim_exit.v04.txt
-|4,39,1,0,1719009508,"~/.vim/performance/240622.vim_exit.v04.txt"
--'  1  0  ~/.vim/performance/240622.vim_exit.v04.txt
-|4,39,1,0,1719009508,"~/.vim/performance/240622.vim_exit.v04.txt"
--'  1  0  ~/.vim/performance/240622.vim_exit.v04.txt
-|4,39,1,0,1719009508,"~/.vim/performance/240622.vim_exit.v04.txt"
--'  1  0  ~/.vim/performance/240622.vim_exit.v04.txt
-|4,39,1,0,1719009508,"~/.vim/performance/240622.vim_exit.v04.txt"
--'  1  0  ~/.vim/performance/240622.vim_exit.v04.txt
-|4,39,1,0,1719009508,"~/.vim/performance/240622.vim_exit.v04.txt"
--'  1  0  ~/.vim/performance/240622.vim_exit.v04.txt
-|4,39,1,0,1719009508,"~/.vim/performance/240622.vim_exit.v04.txt"
--'  1  0  ~/.vim/performance/240622.vim_exit.v04.txt
-|4,39,1,0,1719009508,"~/.vim/performance/240622.vim_exit.v04.txt"
--'  1  0  ~/.vim/performance/240622.vim_exit.v04.txt
-|4,39,1,0,1719009508,"~/.vim/performance/240622.vim_exit.v04.txt"
--'  1  0  ~/.vim/performance/240622.vim_exit.v04.txt
-|4,39,1,0,1719009508,"~/.vim/performance/240622.vim_exit.v04.txt"
--'  1  0  ~/.vim/performance/240622.vim_exit.v04.txt
-|4,39,1,0,1719009508,"~/.vim/performance/240622.vim_exit.v04.txt"
--'  1  0  ~/.vim/performance/240622.vim_exit.v04.txt
-|4,39,1,0,1719009508,"~/.vim/performance/240622.vim_exit.v04.txt"
--'  1  0  ~/.vim/performance/240622.vim_exit.v04.txt
-|4,39,1,0,1719009508,"~/.vim/performance/240622.vim_exit.v04.txt"
--'  1  0  ~/.vim/performance/240622.vim_exit.v04.txt
-|4,39,1,0,1719009508,"~/.vim/performance/240622.vim_exit.v04.txt"
--'  1  0  ~/.vim/performance/240622.vim_exit.v04.txt
-|4,39,1,0,1719009508,"~/.vim/performance/240622.vim_exit.v04.txt"
--'  1  0  ~/.vim/performance/240622.vim_exit.v04.txt
-|4,39,1,0,1719009508,"~/.vim/performance/240622.vim_exit.v04.txt"
--'  1  0  ~/.vim/performance/240622.vim_exit.v04.txt
-|4,39,1,0,1719009508,"~/.vim/performance/240622.vim_exit.v04.txt"
--'  1  0  ~/.vim/performance/240622.vim_exit.v04.txt
-|4,39,1,0,1719009508,"~/.vim/performance/240622.vim_exit.v04.txt"
--'  1  0  ~/.vim/performance/240622.vim_exit.v04.txt
-|4,39,1,0,1719009508,"~/.vim/performance/240622.vim_exit.v04.txt"
--'  1  0  ~/.vim/performance/240622.vim_exit.v04.txt
-|4,39,1,0,1719009508,"~/.vim/performance/240622.vim_exit.v04.txt"
--'  1  0  ~/.vim/performance/240622.vim_exit.v04.txt
-|4,39,1,0,1719009508,"~/.vim/performance/240622.vim_exit.v04.txt"
--'  1  0  ~/.vim/performance/240622.vim_exit.v04.txt
-|4,39,1,0,1719009508,"~/.vim/performance/240622.vim_exit.v04.txt"
--'  1  0  ~/.vim/performance/240622.vim_exit.v04.txt
-|4,39,1,0,1719009508,"~/.vim/performance/240622.vim_exit.v04.txt"
--'  1  0  ~/.vim/performance/240622.vim_exit.v04.txt
-|4,39,1,0,1719009508,"~/.vim/performance/240622.vim_exit.v04.txt"
--'  1  0  ~/.vim/performance/240622.vim_exit.v04.txt
-|4,39,1,0,1719009508,"~/.vim/performance/240622.vim_exit.v04.txt"
--'  42  0  ~/.vim/vimrc
-|4,39,42,0,1719009494,"~/.vim/vimrc"
--'  42  0  ~/.vim/vimrc
-|4,39,42,0,1719009494,"~/.vim/vimrc"
--'  42  0  ~/.vim/vimrc
-|4,39,42,0,1719009494,"~/.vim/vimrc"
--'  42  0  ~/.vim/vimrc
-|4,39,42,0,1719009494,"~/.vim/vimrc"
--'  42  0  ~/.vim/vimrc
-|4,39,42,0,1719009494,"~/.vim/vimrc"
--'  42  0  ~/.vim/vimrc
-|4,39,42,0,1719009494,"~/.vim/vimrc"
--'  42  0  ~/.vim/vimrc
-|4,39,42,0,1719009494,"~/.vim/vimrc"
--'  42  0  ~/.vim/vimrc
-|4,39,42,0,1719009494,"~/.vim/vimrc"
--'  42  0  ~/.vim/vimrc
-|4,39,42,0,1719009494,"~/.vim/vimrc"
--'  42  0  ~/.vim/vimrc
-|4,39,42,0,1719009494,"~/.vim/vimrc"
--'  42  0  ~/.vim/vimrc
-|4,39,42,0,1719009494,"~/.vim/vimrc"
--'  42  0  ~/.vim/vimrc
-|4,39,42,0,1719009494,"~/.vim/vimrc"
--'  42  0  ~/.vim/vimrc
-|4,39,42,0,1719009494,"~/.vim/vimrc"
--'  42  0  ~/.vim/vimrc
-|4,39,42,0,1719009494,"~/.vim/vimrc"
--'  42  0  ~/.vim/vimrc
-|4,39,42,0,1719009494,"~/.vim/vimrc"
--'  42  0  ~/.vim/vimrc
-|4,39,42,0,1719009494,"~/.vim/vimrc"
--'  42  0  ~/.vim/vimrc
-|4,39,42,0,1719009494,"~/.vim/vimrc"
+-'  305  0  ~/.vim/performance/240622.vim_exit.v04.txt
+|4,39,305,0,1719009538,"~/.vim/performance/240622.vim_exit.v04.txt"
+-'  305  0  ~/.vim/performance/240622.vim_exit.v04.txt
+|4,39,305,0,1719009538,"~/.vim/performance/240622.vim_exit.v04.txt"
+-'  305  0  ~/.vim/performance/240622.vim_exit.v04.txt
+|4,39,305,0,1719009538,"~/.vim/performance/240622.vim_exit.v04.txt"
+-'  305  0  ~/.vim/performance/240622.vim_exit.v04.txt
+|4,39,305,0,1719009538,"~/.vim/performance/240622.vim_exit.v04.txt"
+-'  305  0  ~/.vim/performance/240622.vim_exit.v04.txt
+|4,39,305,0,1719009538,"~/.vim/performance/240622.vim_exit.v04.txt"
+-'  305  0  ~/.vim/performance/240622.vim_exit.v04.txt
+|4,39,305,0,1719009538,"~/.vim/performance/240622.vim_exit.v04.txt"
+-'  305  0  ~/.vim/performance/240622.vim_exit.v04.txt
+|4,39,305,0,1719009538,"~/.vim/performance/240622.vim_exit.v04.txt"
+-'  305  0  ~/.vim/performance/240622.vim_exit.v04.txt
+|4,39,305,0,1719009538,"~/.vim/performance/240622.vim_exit.v04.txt"
+-'  305  0  ~/.vim/performance/240622.vim_exit.v04.txt
+|4,39,305,0,1719009538,"~/.vim/performance/240622.vim_exit.v04.txt"
+-'  305  0  ~/.vim/performance/240622.vim_exit.v04.txt
+|4,39,305,0,1719009538,"~/.vim/performance/240622.vim_exit.v04.txt"
+-'  305  0  ~/.vim/performance/240622.vim_exit.v04.txt
+|4,39,305,0,1719009538,"~/.vim/performance/240622.vim_exit.v04.txt"
+-'  305  0  ~/.vim/performance/240622.vim_exit.v04.txt
+|4,39,305,0,1719009538,"~/.vim/performance/240622.vim_exit.v04.txt"
+-'  305  0  ~/.vim/performance/240622.vim_exit.v04.txt
+|4,39,305,0,1719009538,"~/.vim/performance/240622.vim_exit.v04.txt"
+-'  305  0  ~/.vim/performance/240622.vim_exit.v04.txt
+|4,39,305,0,1719009538,"~/.vim/performance/240622.vim_exit.v04.txt"
+-'  305  0  ~/.vim/performance/240622.vim_exit.v04.txt
+|4,39,305,0,1719009538,"~/.vim/performance/240622.vim_exit.v04.txt"
+-'  305  0  ~/.vim/performance/240622.vim_exit.v04.txt
+|4,39,305,0,1719009538,"~/.vim/performance/240622.vim_exit.v04.txt"
+-'  305  0  ~/.vim/performance/240622.vim_exit.v04.txt
+|4,39,305,0,1719009538,"~/.vim/performance/240622.vim_exit.v04.txt"
+-'  305  0  ~/.vim/performance/240622.vim_exit.v04.txt
+|4,39,305,0,1719009538,"~/.vim/performance/240622.vim_exit.v04.txt"
+-'  305  0  ~/.vim/performance/240622.vim_exit.v04.txt
+|4,39,305,0,1719009538,"~/.vim/performance/240622.vim_exit.v04.txt"
+-'  305  0  ~/.vim/performance/240622.vim_exit.v04.txt
+|4,39,305,0,1719009538,"~/.vim/performance/240622.vim_exit.v04.txt"
 
 # Buffer list:
-%~/.vim/vimrc	43	0
-%~/.vim/performance/verbose-file.txt	19	0
+%~/.vim/.gitignore	13	4
 
 # History of marks within files (newest to oldest):
+
+> ~/.vim/.gitignore
+	*	1719009813	0
+	"	13	4
+	^	13	5
+	.	13	4
+	+	7	4
+	+	11	3
+	+	12	0
+	+	11	12
+	+	13	4
 
 > ~/.vim/vimrc
 	*	1719009757	0
@@ -34916,16 +34926,6 @@ $
 > ~/.vim/plugin/dotty.vim
 	*	1690674959	0
 	"	1017	0
-
-> ~/.vim/.gitignore
-	*	1690595448	0
-	"	11	12
-	^	11	13
-	.	11	12
-	+	7	4
-	+	11	3
-	+	12	0
-	+	11	12
 
 > ~/[Plugins] (2)
 	*	1690488862	0
