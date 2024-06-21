@@ -369,6 +369,13 @@ function! s:ProfileVueFileRead()
 endfunction
 command! PVFR call s:ProfileVueFileRead()
 
+function! s:ProfileVimExit()
+    let filepath = s:GetProfileFilepath('vim_exit')
+    let command = printf('profile start %s | profile func * | profile file *', filepath)
+    execute command
+endfunction
+command! PVE call s:ProfileVimExit()
+
 " nnoremap <Plug>PlugProfilePause :call <SID>ProfilePause()<CR>
 nnoremap ga :profile pause<CR>
 
