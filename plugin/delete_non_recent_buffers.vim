@@ -40,5 +40,5 @@ function! s:DeleteNonRecentBuffers()
 endfunction
 augroup VimrcDeleteNonRecentBuffers
     au!
-    " au VimLeavePre * call <SID>DeleteNonRecentBuffers()
+    au VimLeavePre * call <SID>DeleteNonRecentBuffers()
 augroup END
