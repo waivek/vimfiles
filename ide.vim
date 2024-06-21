@@ -324,7 +324,12 @@ augroup IDEShowDoc
     au!
     au BufRead *.vim nnoremap <buffer> K :call <SID>ShowDocumentationVim()<CR>
 augroup END
-inoremap <silent> <expr> <TAB>      <SID>TabCompletion()
+" check if tab mapping exists, so that we don’t override copilot as copilot
+" already respects our tab mapping if no suggestion is available
+if mapcheck("<TAB>", "i") == ""
+    inoremap <silent> <expr> <TAB> <SID>TabCompletion()
+endif
+" inoremap <silent> <expr> <TAB>      <SID>TabCompletion()
 " inoremap <silent> <expr> <S-Tab> pumvisible() ? '<C-p>' : '<Tab>'
 function! s:ShiftTab()
     if coc#pum#visible()

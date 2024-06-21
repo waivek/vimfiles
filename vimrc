@@ -239,7 +239,8 @@ set foldmethod=marker
 " set grepprg=fart\ --line-number
 " let &grepformat="[ %\\+%l]%m"
 
-set grepprg=rg\ --vimgrep\ --smart-case
+" set grepprg=rg\ --vimgrep\ --smart-case
+set grepprg=rg\ --vimgrep
 let &grepformat = "%f:%l:%c:%m"
 
 " set shellxescape-=\>
@@ -1351,6 +1352,17 @@ set ttimeoutlen=25 " Otherwise i get delay when i press ESC in ':' mode
 let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
 
-let g:VM_custom_motions  = {'h': 'j', 'j': 'k', 'k': 'l', 'l': ';' }
+" let g:VM_custom_motions  = {'h': 'j', 'j': 'k', 'k': 'l', 'l': ';' }
+" let g:VM_custom_motions = { 'j': 'b', ';': 'w', 'k': 'j', 'l': 'k' }
+
+" let g:VM_maps['j'] = 'b'
+" let g:VM_maps[';'] = 'w'
+" let g:VM_maps['k'] = 'j'
+" let g:VM_maps['l'] = 'k'
 
 let g:copilot_workspace_folders=["/home/vivek/hateoas"]
+
+
+" vmap <leader>y :!xclip -selection clipboard<CR><CR>
+" nmap <leader>y :!xclip -selection clipboard<CR><CR>
+

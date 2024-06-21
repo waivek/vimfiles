@@ -58,6 +58,20 @@ function! s:GlobBasenames(abspaths)
 
 endfunction
 
+function! s:SortFunction(path1, path2)
+    if getftime(a:path1) < getftime(a:path2)
+        " echoerr "-1"
+        return -1
+    elseif getftime(a:path1) > getftime(a:path2)
+        " echoerr "1"
+        return 1
+    else
+        " echoerr "0"
+        return 0
+    endif
+endfunction
+
+
 function! s:FindFilesSource(glob)
     let nosuf = v:true
     let aslist = v:true
@@ -124,7 +138,9 @@ function! Find(filename)
     endif
     let results = s:FindFilesSource(a:filename)
     let result = results[0]
-    execute "find " . result
+
+    let command = "find " . result
+    execute command
 endfunction
 
 let s:popup_id = -1
