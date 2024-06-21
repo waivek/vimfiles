@@ -23,7 +23,7 @@
 set history=10000
 
 " set viminfo='10000,<50,s10,h,rA:,rB:,%,f1,n~/vimfiles/_viminfo
-set viminfo='10000,<50,s10,h,rA:,rB:,%,f1,n
+set viminfo='50,<50,s10,h,rA:,rB:,%,f1,n
 
 set modeline
 
