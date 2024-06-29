@@ -20,8 +20,22 @@
 $
 
 # Command Line History (newest to oldest):
+:q!
+|2,0,1719655227,,"q!"
+:MRU 
+|2,0,1719655223,,"MRU "
 :q
-|2,0,1719653532,,"q"
+|2,0,1719654832,,"q"
+:MRU al
+|2,0,1719654750,,"MRU al"
+:term 
+|2,0,1719654718,,"term "
+:e ~/tooling/git-knowledge.txt
+|2,0,1719654646,,"e ~/tooling/git-knowledge.txt"
+:qa
+|2,0,1719654630,,"qa"
+:e .git/config
+|2,0,1719654602,,"e .git/config"
 :reg
 |2,0,1719653521,,"reg"
 :set ft=gitconfig
@@ -42,16 +56,12 @@ $
 |2,0,1719435429,,"e .config/setup.sh"
 :e viewlog.py
 |2,0,1719400449,,"e viewlog.py"
-:qa
-|2,0,1719400255,,"qa"
 :Template
 |2,0,1719399846,,"Template"
 :find python.sh
 |2,0,1719399711,,"find python.sh"
 :FIND 
 |2,0,1719399706,,"FIND "
-:q!
-|2,0,1719399260,,"q!"
 :term bash
 |2,0,1719399146,,"term bash"
 :e tailwind.config.js
@@ -178,8 +188,6 @@ $
 |2,0,1718974416,,"set clipboard?"
 :Hot
 |2,0,1718974369,,"Hot"
-:MRU 
-|2,0,1718974319,,"MRU "
 :echo has('clipboard')
 |2,0,1718974315,,"echo has('clipboard')"
 :h clipboard
@@ -500,8 +508,6 @@ $
 |2,0,1718447471,,"e ~/ui-components-css/static/fonts/"
 :term python % --style=rounded update home
 |2,0,1718447230,,"term python % --style=rounded update home"
-:term 
-|2,0,1718447223,,"term "
 :term python %
 |2,0,1718446442,,"term python %"
 :term
@@ -2892,8 +2898,6 @@ $
 |2,0,1713768705,,"e backup.crontab"
 :MRU giti
 |2,0,1713767790,,"MRU giti"
-:MRU al
-|2,0,1713760121,,"MRU al"
 :e sql_checklist.txt
 |2,0,1713758803,,"e sql_checklist.txt"
 :MRU pyt
@@ -11211,43 +11215,45 @@ $
 
 # Registers:
 "0	CHAR	0
-	GH_TOKEN
-|3,0,0,0,1,0,1719653268,"GH_TOKEN"
-"1	LINE	0
-	echo "PID:$$"
-|3,0,1,1,1,0,1719652709,"echo \"PID:$$\""
+	find-all-files
+|3,0,0,0,1,0,1719654762,"find-all-files"
+""1	LINE	0
+	[credential]
+		helper = list
+|3,1,1,1,2,0,1719654829,"[credential]","	helper = list"
 "2	LINE	0
-	
-|3,0,2,1,1,0,1719501817,""
+	    [3] 
+|3,0,2,1,1,0,1719654745,"    [3] "
 "3	LINE	0
-	
-	
-	
-	
-|3,0,3,1,4,0,1719501815,"","","",""
+	[credential]
+		helper = --get-all
+|3,0,3,1,2,0,1719654588,"[credential]","	helper = --get-all"
 "4	LINE	0
+	echo "PID:$$"
+|3,0,4,1,1,0,1719652709,"echo \"PID:$$\""
+"5	LINE	0
+	
+|3,0,5,1,1,0,1719501817,""
+"6	LINE	0
+	
+	
+	
+	
+|3,0,6,1,4,0,1719501815,"","","",""
+"7	LINE	0
 	# hjkl = jkl;
 	# h = j
 	# j = k
 	# k = l
 	# l = ;
-|3,0,4,1,5,0,1719501810,"# hjkl = jkl;","# h = j","# j = k","# k = l","# l = ;"
-"5	LINE	0
+|3,0,7,1,5,0,1719501810,"# hjkl = jkl;","# h = j","# j = k","# k = l","# l = ;"
+"8	LINE	0
 	    # { on = [ "k" ], run = "arrow -1", desc = "Move cursor up" },
 	    # { on = [ "j" ], run = "arrow 1",  desc = "Move cursor down" },
-|3,0,5,1,2,0,1719501751,"    # { on = [ \"k\" ], run = \"arrow -1\", desc = \"Move cursor up\" },","    # { on = [ \"j\" ], run = \"arrow 1\",  desc = \"Move cursor down\" },"
-"6	LINE	0
-	    { 
-|3,0,6,1,1,0,1719501670,"    { "
-"7	LINE	0
-	
-|3,0,7,1,1,0,1719501492,""
-"8	LINE	0
-	keymap = [
-|3,0,8,1,1,0,1719501315,"keymap = ["
+|3,0,8,1,2,0,1719501751,"    # { on = [ \"k\" ], run = \"arrow -1\", desc = \"Move cursor up\" },","    # { on = [ \"j\" ], run = \"arrow 1\",  desc = \"Move cursor down\" },"
 "9	LINE	0
-	[
-|3,0,9,1,1,0,1719501239,"["
+	    { 
+|3,0,9,1,1,0,1719501670,"    { "
 "a	CHAR	0
 	Tabularize /(/l1c1l1
 |3,0,10,0,1,0,1719327229,"Tabularize /(/l1c1l1"
@@ -11263,236 +11269,339 @@ $
 "s	CHAR	0
 	https://rsms.me/inter/
 |3,0,28,0,1,0,1718483440,"https://rsms.me/inter/"
-""-	CHAR	0
-	$
-|3,1,36,0,1,0,1719653269,"$"
+"-	CHAR	0
+	waivek:ghp_
+|3,0,36,0,1,0,1719654621,"waivek:ghp_"
 
 # File marks:
-'0  1  0  ~/servers/hackernews-search.config.js
-|4,48,1,0,1719653418,"~/servers/hackernews-search.config.js"
-'1  1  0  ~/servers/hackernews-search.config.js
-|4,49,1,0,1719653418,"~/servers/hackernews-search.config.js"
-'2  2  21  ~/.config/git/token.gitconfig
-|4,50,2,21,1719653289,"~/.config/git/token.gitconfig"
-'3  2  21  ~/.config/git/token.gitconfig
-|4,51,2,21,1719653289,"~/.config/git/token.gitconfig"
-'4  2  21  ~/.config/git/token.gitconfig
-|4,52,2,21,1719653289,"~/.config/git/token.gitconfig"
-'5  2  21  ~/.config/git/token.gitconfig
-|4,53,2,21,1719653289,"~/.config/git/token.gitconfig"
-'6  4  0  ~/pyscripts/bandwidth.py
-|4,54,4,0,1719653058,"~/pyscripts/bandwidth.py"
-'7  4  0  ~/pyscripts/bandwidth.py
-|4,55,4,0,1719653058,"~/pyscripts/bandwidth.py"
-'8  4  0  ~/pyscripts/bandwidth.py
-|4,56,4,0,1719653058,"~/pyscripts/bandwidth.py"
-'9  4  0  ~/pyscripts/bandwidth.py
-|4,57,4,0,1719653058,"~/pyscripts/bandwidth.py"
+'0  13  4  ~/.config/git/config
+|4,48,13,4,1719654832,"~/.config/git/config"
+'1  13  4  ~/.config/git/config
+|4,49,13,4,1719654832,"~/.config/git/config"
+'2  1  0  ~/.config/git/config
+|4,50,1,0,1719654801,"~/.config/git/config"
+'3  1  0  ~/.config/git/config
+|4,51,1,0,1719654801,"~/.config/git/config"
+'4  1  0  ~/.config/git/config
+|4,52,1,0,1719654801,"~/.config/git/config"
+'5  1  0  ~/.config/git/config
+|4,53,1,0,1719654801,"~/.config/git/config"
+'6  7  49  ~/tooling/git-knowledge.txt
+|4,54,7,49,1719654778,"~/tooling/git-knowledge.txt"
+'7  7  49  ~/tooling/git-knowledge.txt
+|4,55,7,49,1719654778,"~/tooling/git-knowledge.txt"
+'8  7  49  ~/tooling/git-knowledge.txt
+|4,56,7,49,1719654778,"~/tooling/git-knowledge.txt"
+'9  7  49  ~/tooling/git-knowledge.txt
+|4,57,7,49,1719654778,"~/tooling/git-knowledge.txt"
 
 # Jumplist (newest first):
+-'  13  4  ~/.config/git/config
+|4,39,13,4,1719654832,"~/.config/git/config"
+-'  13  4  ~/.config/git/config
+|4,39,13,4,1719654832,"~/.config/git/config"
+-'  1  0  ~/.config/git/config
+|4,39,1,0,1719654828,"~/.config/git/config"
+-'  1  0  ~/.config/git/config
+|4,39,1,0,1719654828,"~/.config/git/config"
+-'  1  0  ~/.config/git/config
+|4,39,1,0,1719654801,"~/.config/git/config"
+-'  7  49  ~/tooling/git-knowledge.txt
+|4,39,7,49,1719654778,"~/tooling/git-knowledge.txt"
+-'  7  49  ~/tooling/git-knowledge.txt
+|4,39,7,49,1719654778,"~/tooling/git-knowledge.txt"
+-'  7  49  ~/tooling/git-knowledge.txt
+|4,39,7,49,1719654778,"~/tooling/git-knowledge.txt"
+-'  7  49  ~/tooling/git-knowledge.txt
+|4,39,7,49,1719654778,"~/tooling/git-knowledge.txt"
+-'  6  37  ~/tooling/git-knowledge.txt
+|4,39,6,37,1719654735,"~/tooling/git-knowledge.txt"
+-'  6  37  ~/tooling/git-knowledge.txt
+|4,39,6,37,1719654735,"~/tooling/git-knowledge.txt"
+-'  6  37  ~/tooling/git-knowledge.txt
+|4,39,6,37,1719654735,"~/tooling/git-knowledge.txt"
+-'  6  37  ~/tooling/git-knowledge.txt
+|4,39,6,37,1719654735,"~/tooling/git-knowledge.txt"
+-'  8  0  ~/tooling/git-knowledge.txt
+|4,39,8,0,1719654718,"~/tooling/git-knowledge.txt"
+-'  8  0  ~/tooling/git-knowledge.txt
+|4,39,8,0,1719654718,"~/tooling/git-knowledge.txt"
+-'  8  0  ~/tooling/git-knowledge.txt
+|4,39,8,0,1719654718,"~/tooling/git-knowledge.txt"
+-'  8  0  ~/tooling/git-knowledge.txt
+|4,39,8,0,1719654718,"~/tooling/git-knowledge.txt"
+-'  1  0  ~/.config/git/config
+|4,39,1,0,1719654646,"~/.config/git/config"
+-'  7  15  ~/.config/.git/config
+|4,39,7,15,1719654631,"~/.config/.git/config"
+-'  7  15  ~/.config/.git/config
+|4,39,7,15,1719654631,"~/.config/.git/config"
+-'  7  15  ~/.config/.git/config
+|4,39,7,15,1719654631,"~/.config/.git/config"
+-'  7  15  ~/.config/.git/config
+|4,39,7,15,1719654631,"~/.config/.git/config"
+-'  7  15  ~/.config/.git/config
+|4,39,7,15,1719654631,"~/.config/.git/config"
+-'  1  0  ~/pyscripts/.git/config
+|4,39,1,0,1719654602,"~/pyscripts/.git/config"
+-'  1  0  ~/pyscripts/.git/config
+|4,39,1,0,1719654602,"~/pyscripts/.git/config"
+-'  1  0  ~/pyscripts/.git/config
+|4,39,1,0,1719654602,"~/pyscripts/.git/config"
+-'  1  0  ~/pyscripts/.git/config
+|4,39,1,0,1719654602,"~/pyscripts/.git/config"
+-'  1  0  ~/pyscripts/.git/config
+|4,39,1,0,1719654602,"~/pyscripts/.git/config"
+-'  11  1  ~/.config/.git/config
+|4,39,11,1,1719654591,"~/.config/.git/config"
+-'  11  1  ~/.config/.git/config
+|4,39,11,1,1719654591,"~/.config/.git/config"
+-'  11  1  ~/.config/.git/config
+|4,39,11,1,1719654591,"~/.config/.git/config"
+-'  11  1  ~/.config/.git/config
+|4,39,11,1,1719654591,"~/.config/.git/config"
+-'  11  1  ~/.config/.git/config
+|4,39,11,1,1719654591,"~/.config/.git/config"
+-'  11  1  ~/.config/.git/config
+|4,39,11,1,1719654591,"~/.config/.git/config"
+-'  1  0  ~/.config/.git/config
+|4,39,1,0,1719654588,"~/.config/.git/config"
+-'  1  0  ~/.config/.git/config
+|4,39,1,0,1719654588,"~/.config/.git/config"
+-'  1  0  ~/.config/.git/config
+|4,39,1,0,1719654588,"~/.config/.git/config"
+-'  1  0  ~/.config/.git/config
+|4,39,1,0,1719654588,"~/.config/.git/config"
+-'  1  0  ~/.config/.git/config
+|4,39,1,0,1719654588,"~/.config/.git/config"
+-'  1  0  ~/.config/.git/config
+|4,39,1,0,1719654588,"~/.config/.git/config"
+-'  1  0  ~/.config/.git/config
+|4,39,1,0,1719654582,"~/.config/.git/config"
+-'  10  0  ~/.config/git/config
+|4,39,10,0,1719654565,"~/.config/git/config"
+-'  10  0  ~/.config/git/config
+|4,39,10,0,1719654565,"~/.config/git/config"
+-'  10  0  ~/.config/git/config
+|4,39,10,0,1719654565,"~/.config/git/config"
+-'  10  0  ~/.config/git/config
+|4,39,10,0,1719654565,"~/.config/git/config"
+-'  10  0  ~/.config/git/config
+|4,39,10,0,1719654565,"~/.config/git/config"
+-'  10  0  ~/.config/git/config
+|4,39,10,0,1719654565,"~/.config/git/config"
+-'  10  0  ~/.config/git/config
+|4,39,10,0,1719654565,"~/.config/git/config"
+-'  10  0  ~/.config/git/config
+|4,39,10,0,1719654565,"~/.config/git/config"
+-'  1  0  ~/.config/git/config
+|4,39,1,0,1719654560,"~/.config/git/config"
+-'  1  0  ~/.config/git/config
+|4,39,1,0,1719654560,"~/.config/git/config"
+-'  1  0  ~/.config/git/config
+|4,39,1,0,1719654560,"~/.config/git/config"
+-'  1  0  ~/.config/git/config
+|4,39,1,0,1719654560,"~/.config/git/config"
+-'  9  0  ~/.config/.git/config
+|4,39,9,0,1719654541,"~/.config/.git/config"
+-'  9  0  ~/.config/.git/config
+|4,39,9,0,1719654541,"~/.config/.git/config"
+-'  9  0  ~/.config/.git/config
+|4,39,9,0,1719654541,"~/.config/.git/config"
+-'  9  0  ~/.config/.git/config
+|4,39,9,0,1719654541,"~/.config/.git/config"
+-'  9  0  ~/.config/.git/config
+|4,39,9,0,1719654541,"~/.config/.git/config"
+-'  9  0  ~/.config/.git/config
+|4,39,9,0,1719654541,"~/.config/.git/config"
+-'  9  0  ~/.config/.git/config
+|4,39,9,0,1719654541,"~/.config/.git/config"
+-'  9  0  ~/.config/.git/config
+|4,39,9,0,1719654541,"~/.config/.git/config"
+-'  9  0  ~/.config/.git/config
+|4,39,9,0,1719654541,"~/.config/.git/config"
+-'  1  0  ~/.config/.git/config
+|4,39,1,0,1719654532,"~/.config/.git/config"
+-'  1  0  ~/.config/.git/config
+|4,39,1,0,1719654532,"~/.config/.git/config"
+-'  14  0  ~/.config/git/config
+|4,39,14,0,1719654295,"~/.config/git/config"
+-'  15  0  ~/.config/git/config
+|4,39,15,0,1719654295,"~/.config/git/config"
+-'  14  0  ~/.config/git/config
+|4,39,14,0,1719654295,"~/.config/git/config"
+-'  15  0  ~/.config/git/config
+|4,39,15,0,1719654295,"~/.config/git/config"
+-'  15  0  ~/.config/git/config
+|4,39,15,0,1719654295,"~/.config/git/config"
+-'  15  0  ~/.config/git/config
+|4,39,15,0,1719654295,"~/.config/git/config"
+-'  15  0  ~/.config/git/config
+|4,39,15,0,1719654295,"~/.config/git/config"
+-'  15  0  ~/.config/git/config
+|4,39,15,0,1719654295,"~/.config/git/config"
+-'  15  0  ~/.config/git/config
+|4,39,15,0,1719654295,"~/.config/git/config"
+-'  15  0  ~/.config/git/config
+|4,39,15,0,1719654295,"~/.config/git/config"
+-'  15  0  ~/.config/git/config
+|4,39,15,0,1719654295,"~/.config/git/config"
+-'  1  0  ~/.config/git/config
+|4,39,1,0,1719654285,"~/.config/git/config"
+-'  1  0  ~/.config/git/config
+|4,39,1,0,1719654285,"~/.config/git/config"
+-'  1  0  ~/.config/git/token.gitconfig
+|4,39,1,0,1719653643,"~/.config/git/token.gitconfig"
+-'  1  0  ~/.config/git/token.gitconfig
+|4,39,1,0,1719653643,"~/.config/git/token.gitconfig"
+-'  1  0  ~/.config/git/token.gitconfig
+|4,39,1,0,1719653643,"~/.config/git/token.gitconfig"
+-'  1  0  ~/.config/git/token.gitconfig
+|4,39,1,0,1719653643,"~/.config/git/token.gitconfig"
+-'  1  0  ~/.config/git/token.gitconfig
+|4,39,1,0,1719653643,"~/.config/git/token.gitconfig"
+-'  1  0  ~/.config/git/token.gitconfig
+|4,39,1,0,1719653643,"~/.config/git/token.gitconfig"
+-'  1  0  ~/.config/git/token.gitconfig
+|4,39,1,0,1719653643,"~/.config/git/token.gitconfig"
+-'  1  0  ~/.config/git/token.gitconfig
+|4,39,1,0,1719653643,"~/.config/git/token.gitconfig"
+-'  1  0  ~/.config/git/token.gitconfig
+|4,39,1,0,1719653643,"~/.config/git/token.gitconfig"
+-'  1  0  ~/.config/git/token.gitconfig
+|4,39,1,0,1719653643,"~/.config/git/token.gitconfig"
+-'  1  0  ~/.config/git/token.gitconfig
+|4,39,1,0,1719653643,"~/.config/git/token.gitconfig"
 -'  1  0  ~/servers/hackernews-search.config.js
 |4,39,1,0,1719653418,"~/servers/hackernews-search.config.js"
 -'  1  0  ~/servers/hackernews-search.config.js
 |4,39,1,0,1719653418,"~/servers/hackernews-search.config.js"
--'  2  21  ~/.config/git/token.gitconfig
-|4,39,2,21,1719653289,"~/.config/git/token.gitconfig"
--'  2  21  ~/.config/git/token.gitconfig
-|4,39,2,21,1719653289,"~/.config/git/token.gitconfig"
--'  2  21  ~/.config/git/token.gitconfig
-|4,39,2,21,1719653289,"~/.config/git/token.gitconfig"
--'  1  39  ~/.config/git/token.gitconfig
-|4,39,1,39,1719653261,"~/.config/git/token.gitconfig"
--'  1  39  ~/.config/git/token.gitconfig
-|4,39,1,39,1719653261,"~/.config/git/token.gitconfig"
--'  1  39  ~/.config/git/token.gitconfig
-|4,39,1,39,1719653261,"~/.config/git/token.gitconfig"
--'  4  0  ~/pyscripts/bandwidth.py
-|4,39,4,0,1719653133,"~/pyscripts/bandwidth.py"
--'  4  0  ~/pyscripts/bandwidth.py
-|4,39,4,0,1719653133,"~/pyscripts/bandwidth.py"
--'  4  0  ~/pyscripts/bandwidth.py
-|4,39,4,0,1719653133,"~/pyscripts/bandwidth.py"
--'  4  0  ~/pyscripts/bandwidth.py
-|4,39,4,0,1719653058,"~/pyscripts/bandwidth.py"
--'  1  0  ~/pyscripts/bandwidth.py
-|4,39,1,0,1719653054,"~/pyscripts/bandwidth.py"
--'  1  0  ~/pyscripts/bandwidth.py
-|4,39,1,0,1719653054,"~/pyscripts/bandwidth.py"
--'  1  0  ~/pyscripts/bandwidth.py
-|4,39,1,0,1719653054,"~/pyscripts/bandwidth.py"
--'  1  0  ~/pyscripts/bandwidth.py
-|4,39,1,0,1719653054,"~/pyscripts/bandwidth.py"
--'  1  29  ~/.config/git/token.gitconfig
-|4,39,1,29,1719653042,"~/.config/git/token.gitconfig"
--'  1  29  ~/.config/git/token.gitconfig
-|4,39,1,29,1719653042,"~/.config/git/token.gitconfig"
--'  1  1  ~/tmp.bash
-|4,39,1,1,1719652716,"~/tmp.bash"
--'  1  1  ~/tmp.bash
-|4,39,1,1,1719652716,"~/tmp.bash"
--'  1  1  ~/tmp.bash
-|4,39,1,1,1719652716,"~/tmp.bash"
--'  1  1  ~/tmp.bash
-|4,39,1,1,1719652716,"~/tmp.bash"
--'  1  1  ~/tmp.bash
-|4,39,1,1,1719652716,"~/tmp.bash"
--'  1  1  ~/tmp.bash
-|4,39,1,1,1719652716,"~/tmp.bash"
--'  2  56  ~/tmp.bash
-|4,39,2,56,1719652708,"~/tmp.bash"
--'  2  56  ~/tmp.bash
-|4,39,2,56,1719652708,"~/tmp.bash"
--'  2  56  ~/tmp.bash
-|4,39,2,56,1719652708,"~/tmp.bash"
--'  2  56  ~/tmp.bash
-|4,39,2,56,1719652708,"~/tmp.bash"
--'  2  56  ~/tmp.bash
-|4,39,2,56,1719652708,"~/tmp.bash"
--'  2  56  ~/tmp.bash
-|4,39,2,56,1719652708,"~/tmp.bash"
--'  1  21  ~/.config/git/token.gitconfig
-|4,39,1,21,1719652664,"~/.config/git/token.gitconfig"
--'  1  21  ~/.config/git/token.gitconfig
-|4,39,1,21,1719652664,"~/.config/git/token.gitconfig"
--'  1  60  ~/.config/git/token.gitconfig
-|4,39,1,60,1719652446,"~/.config/git/token.gitconfig"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1719652218,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1719652218,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1719652218,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1719652218,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1719652218,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1719652218,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1719652218,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1719652218,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1719652218,"~/.config/setup.sh"
--'  1  0  ~/.config/git/config
-|4,39,1,0,1719502874,"~/.config/git/config"
--'  1  0  ~/.config/git/config
-|4,39,1,0,1719502874,"~/.config/git/config"
--'  1  0  ~/.config/git/config
-|4,39,1,0,1719502874,"~/.config/git/config"
--'  1  0  ~/.config/git/config
-|4,39,1,0,1719502874,"~/.config/git/config"
--'  1  0  ~/.config/git/config
-|4,39,1,0,1719502874,"~/.config/git/config"
--'  1  0  ~/.config/git/config
-|4,39,1,0,1719502874,"~/.config/git/config"
--'  1  0  ~/.config/git/config
-|4,39,1,0,1719502874,"~/.config/git/config"
--'  1  0  ~/.config/git/config
-|4,39,1,0,1719502874,"~/.config/git/config"
--'  1  0  ~/.config/git/config
-|4,39,1,0,1719502874,"~/.config/git/config"
--'  1  0  ~/.config/git/config
-|4,39,1,0,1719502874,"~/.config/git/config"
--'  8  0  ~/frontend
-|4,39,8,0,1719502824,"~/frontend"
--'  8  0  ~/frontend
-|4,39,8,0,1719502824,"~/frontend"
--'  8  0  ~/frontend
-|4,39,8,0,1719502824,"~/frontend"
--'  8  0  ~/frontend
-|4,39,8,0,1719502824,"~/frontend"
--'  8  0  ~/frontend
-|4,39,8,0,1719502824,"~/frontend"
--'  8  0  ~/frontend
-|4,39,8,0,1719502824,"~/frontend"
--'  8  0  ~/frontend
-|4,39,8,0,1719502824,"~/frontend"
--'  8  0  ~/frontend
-|4,39,8,0,1719502824,"~/frontend"
--'  8  0  ~/frontend
-|4,39,8,0,1719502824,"~/frontend"
--'  8  0  ~/frontend
-|4,39,8,0,1719502824,"~/frontend"
--'  8  0  ~/frontend
-|4,39,8,0,1719502824,"~/frontend"
--'  30  6  ~/.config/yazi/keymap.toml
-|4,39,30,6,1719501889,"~/.config/yazi/keymap.toml"
--'  30  6  ~/.config/yazi/keymap.toml
-|4,39,30,6,1719501889,"~/.config/yazi/keymap.toml"
--'  30  6  ~/.config/yazi/keymap.toml
-|4,39,30,6,1719501889,"~/.config/yazi/keymap.toml"
--'  30  6  ~/.config/yazi/keymap.toml
-|4,39,30,6,1719501889,"~/.config/yazi/keymap.toml"
--'  30  6  ~/.config/yazi/keymap.toml
-|4,39,30,6,1719501889,"~/.config/yazi/keymap.toml"
--'  30  6  ~/.config/yazi/keymap.toml
-|4,39,30,6,1719501889,"~/.config/yazi/keymap.toml"
--'  30  6  ~/.config/yazi/keymap.toml
-|4,39,30,6,1719501889,"~/.config/yazi/keymap.toml"
--'  30  6  ~/.config/yazi/keymap.toml
-|4,39,30,6,1719501889,"~/.config/yazi/keymap.toml"
--'  30  6  ~/.config/yazi/keymap.toml
-|4,39,30,6,1719501889,"~/.config/yazi/keymap.toml"
--'  30  6  ~/.config/yazi/keymap.toml
-|4,39,30,6,1719501889,"~/.config/yazi/keymap.toml"
--'  30  6  ~/.config/yazi/keymap.toml
-|4,39,30,6,1719501889,"~/.config/yazi/keymap.toml"
--'  30  6  ~/.config/yazi/keymap.toml
-|4,39,30,6,1719501889,"~/.config/yazi/keymap.toml"
--'  22  6  ~/.config/yazi/keymap.toml
-|4,39,22,6,1719501886,"~/.config/yazi/keymap.toml"
--'  15  6  ~/.config/yazi/keymap.toml
-|4,39,15,6,1719501886,"~/.config/yazi/keymap.toml"
--'  22  6  ~/.config/yazi/keymap.toml
-|4,39,22,6,1719501886,"~/.config/yazi/keymap.toml"
--'  15  6  ~/.config/yazi/keymap.toml
-|4,39,15,6,1719501886,"~/.config/yazi/keymap.toml"
--'  22  6  ~/.config/yazi/keymap.toml
-|4,39,22,6,1719501886,"~/.config/yazi/keymap.toml"
--'  15  6  ~/.config/yazi/keymap.toml
-|4,39,15,6,1719501886,"~/.config/yazi/keymap.toml"
--'  22  6  ~/.config/yazi/keymap.toml
-|4,39,22,6,1719501886,"~/.config/yazi/keymap.toml"
--'  15  6  ~/.config/yazi/keymap.toml
-|4,39,15,6,1719501886,"~/.config/yazi/keymap.toml"
--'  22  6  ~/.config/yazi/keymap.toml
-|4,39,22,6,1719501886,"~/.config/yazi/keymap.toml"
--'  15  6  ~/.config/yazi/keymap.toml
-|4,39,15,6,1719501886,"~/.config/yazi/keymap.toml"
--'  22  6  ~/.config/yazi/keymap.toml
-|4,39,22,6,1719501886,"~/.config/yazi/keymap.toml"
--'  15  6  ~/.config/yazi/keymap.toml
-|4,39,15,6,1719501886,"~/.config/yazi/keymap.toml"
--'  22  6  ~/.config/yazi/keymap.toml
-|4,39,22,6,1719501886,"~/.config/yazi/keymap.toml"
--'  15  6  ~/.config/yazi/keymap.toml
-|4,39,15,6,1719501886,"~/.config/yazi/keymap.toml"
--'  22  6  ~/.config/yazi/keymap.toml
-|4,39,22,6,1719501886,"~/.config/yazi/keymap.toml"
--'  15  6  ~/.config/yazi/keymap.toml
-|4,39,15,6,1719501886,"~/.config/yazi/keymap.toml"
--'  22  6  ~/.config/yazi/keymap.toml
-|4,39,22,6,1719501886,"~/.config/yazi/keymap.toml"
--'  15  6  ~/.config/yazi/keymap.toml
-|4,39,15,6,1719501886,"~/.config/yazi/keymap.toml"
--'  22  6  ~/.config/yazi/keymap.toml
-|4,39,22,6,1719501886,"~/.config/yazi/keymap.toml"
--'  15  6  ~/.config/yazi/keymap.toml
-|4,39,15,6,1719501886,"~/.config/yazi/keymap.toml"
--'  22  6  ~/.config/yazi/keymap.toml
-|4,39,22,6,1719501886,"~/.config/yazi/keymap.toml"
--'  15  6  ~/.config/yazi/keymap.toml
-|4,39,15,6,1719501886,"~/.config/yazi/keymap.toml"
--'  22  6  ~/.config/yazi/keymap.toml
-|4,39,22,6,1719501886,"~/.config/yazi/keymap.toml"
--'  15  6  ~/.config/yazi/keymap.toml
-|4,39,15,6,1719501886,"~/.config/yazi/keymap.toml"
+-'  1  0  ~/servers/hackernews-search.config.js
+|4,39,1,0,1719653418,"~/servers/hackernews-search.config.js"
+-'  1  0  ~/servers/hackernews-search.config.js
+|4,39,1,0,1719653418,"~/servers/hackernews-search.config.js"
+-'  1  0  ~/servers/hackernews-search.config.js
+|4,39,1,0,1719653418,"~/servers/hackernews-search.config.js"
+-'  1  0  ~/servers/hackernews-search.config.js
+|4,39,1,0,1719653418,"~/servers/hackernews-search.config.js"
+-'  1  0  ~/servers/hackernews-search.config.js
+|4,39,1,0,1719653418,"~/servers/hackernews-search.config.js"
+-'  1  0  ~/servers/hackernews-search.config.js
+|4,39,1,0,1719653418,"~/servers/hackernews-search.config.js"
+-'  1  0  ~/servers/hackernews-search.config.js
+|4,39,1,0,1719653418,"~/servers/hackernews-search.config.js"
+-'  1  0  ~/servers/hackernews-search.config.js
+|4,39,1,0,1719653418,"~/servers/hackernews-search.config.js"
+-'  1  0  ~/servers/hackernews-search.config.js
+|4,39,1,0,1719653418,"~/servers/hackernews-search.config.js"
 
 # Buffer list:
-%~/servers/hackernews-search.config.js	1	0
+%~/.config/git/config	13	4
 
 # History of marks within files (newest to oldest):
+
+> ~/.config/git/config
+	*	1719654830	0
+	"	13	4
+	.	14	0
+	+	8	17
+	+	9	8
+	+	10	0
+	+	14	0
+
+> ~/tooling/git-knowledge.txt
+	*	1719654775	0
+	"	7	49
+	^	7	50
+	.	7	49
+	+	13	49
+	+	11	70
+	+	20	32
+	+	22	69
+	+	24	7
+	+	26	19
+	+	28	7
+	+	36	0
+	+	28	51
+	+	30	7
+	+	32	13
+	+	34	0
+	+	32	3
+	+	30	34
+	+	10	0
+	+	9	16
+	+	6	7
+	+	8	0
+	+	7	49
+
+> ~/.config/alias.sh
+	*	1719654762	0
+	"	18	6
+	^	20	9
+	.	20	8
+	+	2	0
+	+	15	37
+	+	26	77
+	+	26	42
+	+	26	47
+	+	26	32
+	+	27	39
+	+	28	40
+	+	29	79
+	+	29	0
+	+	29	36
+	+	29	20
+	+	29	25
+	+	30	45
+	+	31	0
+	+	29	0
+	+	26	0
+	+	30	19
+	+	16	60
+	+	18	0
+	+	26	0
+	+	17	13
+	+	26	10
+	+	18	0
+	+	11	0
+	+	10	72
+	+	9	6
+	+	26	1
+	+	27	0
+	+	26	1
+	+	18	14
+	+	12	1
+	+	2	0
+	+	19	45
+	+	12	0
+	+	25	0
+	+	23	0
+	+	19	53
+	+	21	0
+	+	20	8
+
+> ~/.config/.git/config
+	*	1719654626	0
+	"	7	15
+	.	7	15
+	+	12	0
+	+	7	15
+
+> ~/pyscripts/.git/config
+	*	1719654606	0
+	"	7	0
+
+> ~/.config/git/token.gitconfig
+	*	1719653640	0
+	"	1	0
+	^	2	62
+	.	2	21
+	+	2	21
+	+	2	0
+	+	1	0
+	+	2	0
+	+	1	0
+	+	2	21
 
 > ~/servers/hackernews-search.config.js
 	*	1719653317	0
@@ -11509,18 +11618,6 @@ $
 	+	9	12
 	+	12	12
 	+	13	72
-
-> ~/.config/git/token.gitconfig
-	*	1719653273	0
-	"	2	21
-	^	2	62
-	.	2	21
-	+	2	21
-	+	2	0
-	+	1	0
-	+	2	0
-	+	1	0
-	+	2	21
 
 > ~/pyscripts/bandwidth.py
 	*	1719653134	0
@@ -11623,14 +11720,6 @@ $
 	+	10	0
 	+	9	0
 	+	8	0
-
-> ~/.config/git/config
-	*	1719502872	0
-	"	1	0
-	.	10	0
-	+	8	17
-	+	9	8
-	+	10	0
 
 > ~/.config/yazi/keymap.toml
 	*	1719501887	0
@@ -13014,52 +13103,6 @@ $
 	+	4	0
 	+	3	0
 	+	6	32
-
-> ~/.config/alias.sh
-	*	1718994469	0
-	"	20	8
-	^	20	9
-	.	20	8
-	+	2	0
-	+	15	37
-	+	26	77
-	+	26	42
-	+	26	47
-	+	26	32
-	+	27	39
-	+	28	40
-	+	29	79
-	+	29	0
-	+	29	36
-	+	29	20
-	+	29	25
-	+	30	45
-	+	31	0
-	+	29	0
-	+	26	0
-	+	30	19
-	+	16	60
-	+	18	0
-	+	26	0
-	+	17	13
-	+	26	10
-	+	18	0
-	+	11	0
-	+	10	72
-	+	9	6
-	+	26	1
-	+	27	0
-	+	26	1
-	+	18	14
-	+	12	1
-	+	2	0
-	+	19	45
-	+	12	0
-	+	25	0
-	+	23	0
-	+	19	53
-	+	21	0
-	+	20	8
 
 > ~/.config/alias
 	*	1718994444	0
@@ -16227,26 +16270,6 @@ $
 > ~/.vim/_viminfo_linux
 	*	1717650688	0
 	"	9907	21
-
-> ~/tooling/git-knowledge.txt
-	*	1717649737	0
-	"	21	34
-	^	21	35
-	.	21	34
-	+	4	49
-	+	2	70
-	+	11	32
-	+	13	69
-	+	15	7
-	+	17	19
-	+	19	7
-	+	27	0
-	+	19	51
-	+	21	7
-	+	23	13
-	+	25	0
-	+	23	3
-	+	21	34
 
 > ~/instagram-reels/post.py
 	*	1717616858	0
