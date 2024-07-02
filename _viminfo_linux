@@ -11,21 +11,47 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/GH_TOKEN
+~MSle0~/[0-9A-Za-z]\{20,\}
 
 # Last Substitute Search Pattern:
-~MSle0&{
+~MSle0&[A-Za-z0-9-]\{14,\}
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
+:q
+|2,0,1719880832,,"q"
+:registers
+|2,0,1719880745,,"registers"
+:set reg
+|2,0,1719880736,,"set reg"
+:set nonumber
+|2,0,1719880457,,"set nonumber"
+:e .env
+|2,0,1719738641,,"e .env"
+:MRU 
+|2,0,1719738639,,"MRU "
+:e ~/hateoas/.envrc
+|2,0,1719734983,,"e ~/hateoas/.envrc"
+:changes
+|2,0,1719695004,,"changes"
+:h :changes
+|2,0,1719694997,,"h :changes"
+:changes 3
+|2,0,1719694993,,"changes 3"
+:bd!
+|2,0,1719684843,,"bd!"
+:v/[A-Za-z0-9-]\{14,\}/d
+|2,0,1719684816,,"v/[A-Za-z0-9-]\\{14,\\}/d"
+:grep -g '*.vim' -g 'vimrc' --fixed-strings 
+|2,0,1719684811,,"grep -g '*.vim' -g 'vimrc' --fixed-strings "
+:v/[A-Za-z0-9-]\{10,\}/d
+|2,0,1719684777,,"v/[A-Za-z0-9-]\\{10,\\}/d"
+:enew
+|2,0,1719684748,,"enew"
 :q!
 |2,0,1719655227,,"q!"
-:MRU 
-|2,0,1719655223,,"MRU "
-:q
-|2,0,1719654832,,"q"
 :MRU al
 |2,0,1719654750,,"MRU al"
 :term 
@@ -114,8 +140,6 @@ $
 |2,0,1719317482,,"HotReload"
 :so %
 |2,0,1719317304,,"so %"
-:grep -g '*.vim' -g 'vimrc' --fixed-strings 
-|2,0,1719317294,,"grep -g '*.vim' -g 'vimrc' --fixed-strings "
 :k
 |2,0,1719317274,,"k"
 :Coiplot s
@@ -136,8 +160,6 @@ $
 |2,0,1719313801,,"e ~/pyscripts/uuid7-experiment.py"
 :b!# | bd! #
 |2,0,1719313757,,"b!# | bd! #"
-:enew
-|2,0,1719313714,,"enew"
 :e .
 |2,0,1719313712,,"e ."
 :qa!
@@ -354,8 +376,6 @@ $
 |2,0,1718755304,,"Fla"
 :Flask
 |2,0,1718755301,,"Flask"
-:set nonumber
-|2,0,1718724803,,"set nonumber"
 :OpenDB wal-example.db
 |2,0,1718724316,,"OpenDB wal-example.db"
 :e wal-example.db
@@ -436,8 +456,6 @@ $
 |2,0,1718566002,,"MRU my-p"
 :MRU inter
 |2,0,1718485482,,"MRU inter"
-:bd!
-|2,0,1718485435,,"bd!"
 :%s/ 'Inter'/ 'Inter web'
 |2,0,1718484339,,"%s/ 'Inter'/ 'Inter web'"
 :FIND icon
@@ -5056,8 +5074,6 @@ $
 |2,0,1694032447,,"e ../projectpython/.envrc"
 :e ../projectpython
 |2,0,1694032443,,"e ../projectpython"
-:e .env
-|2,0,1694032403,,"e .env"
 :MRU 10:main.txt
 |2,0,1694032372,,"MRU 10:main.txt"
 :MRU 266:tsnuxt/README.md
@@ -7568,6 +7584,16 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/[0-9A-Za-z]\{20,\}
+|2,1,1719880765,47,"[0-9A-Za-z]\\{20,\\}"
+?/pypi-
+|2,1,1719880762,47,"pypi-"
+? [A-Za-z0-9-]\{14,\}
+|2,1,1719684816,,"[A-Za-z0-9-]\\{14,\\}"
+? [A-Za-z0-9-]\{10,\}
+|2,1,1719684777,,"[A-Za-z0-9-]\\{10,\\}"
+?/[A-Za-z0-9-]\{10,\}
+|2,1,1719684775,47,"[A-Za-z0-9-]\\{10,\\}"
 ?/GH_TOKEN
 |2,1,1719652216,47,"GH_TOKEN"
 ? @$
@@ -11214,46 +11240,36 @@ $
 |2,4,1693311567,,"cont"
 
 # Registers:
-"0	CHAR	0
-	find-all-files
-|3,0,0,0,1,0,1719654762,"find-all-files"
-""1	LINE	0
-	[credential]
-		helper = list
-|3,1,1,1,2,0,1719654829,"[credential]","	helper = list"
-"2	LINE	0
-	    [3] 
-|3,0,2,1,1,0,1719654745,"    [3] "
+"0	LINE	0
+	|2,3,1688669343,,"div class=\"flex gap-2 items-center flex-wrap\">"
+|3,0,0,1,1,0,1719880733,"|2,3,1688669343,,\"div class=\\\"flex gap-2 items-center flex-wrap\\\">\""
+"1	LINE	0
+	
+|3,0,1,1,1,0,1719738643,""
+""2	LINE	0
+	|2,3,1688669343,,"div class=\"flex gap-2 items-center flex-wrap\">"
+|3,1,2,1,1,0,1719880743,"|2,3,1688669343,,\"div class=\\\"flex gap-2 items-center flex-wrap\\\">\""
 "3	LINE	0
-	[credential]
-		helper = --get-all
-|3,0,3,1,2,0,1719654588,"[credential]","	helper = --get-all"
+	
+|3,0,3,1,1,0,1719695116,""
 "4	LINE	0
-	echo "PID:$$"
-|3,0,4,1,1,0,1719652709,"echo \"PID:$$\""
+	
+|3,0,4,1,1,0,1719695114,""
 "5	LINE	0
 	
-|3,0,5,1,1,0,1719501817,""
+|3,0,5,1,1,0,1719695094,""
 "6	LINE	0
 	
-	
-	
-	
-|3,0,6,1,4,0,1719501815,"","","",""
+|3,0,6,1,1,0,1719695092,""
 "7	LINE	0
-	# hjkl = jkl;
-	# h = j
-	# j = k
-	# k = l
-	# l = ;
-|3,0,7,1,5,0,1719501810,"# hjkl = jkl;","# h = j","# j = k","# k = l","# l = ;"
+	
+|3,0,7,1,1,0,1719695089,""
 "8	LINE	0
-	    # { on = [ "k" ], run = "arrow -1", desc = "Move cursor up" },
-	    # { on = [ "j" ], run = "arrow 1",  desc = "Move cursor down" },
-|3,0,8,1,2,0,1719501751,"    # { on = [ \"k\" ], run = \"arrow -1\", desc = \"Move cursor up\" },","    # { on = [ \"j\" ], run = \"arrow 1\",  desc = \"Move cursor down\" },"
+	
+|3,0,8,1,1,0,1719695084,""
 "9	LINE	0
-	    { 
-|3,0,9,1,1,0,1719501670,"    { "
+	
+|3,0,9,1,1,0,1719695080,""
 "a	CHAR	0
 	Tabularize /(/l1c1l1
 |3,0,10,0,1,0,1719327229,"Tabularize /(/l1c1l1"
@@ -11270,235 +11286,336 @@ $
 	https://rsms.me/inter/
 |3,0,28,0,1,0,1718483440,"https://rsms.me/inter/"
 "-	CHAR	0
-	waivek:ghp_
-|3,0,36,0,1,0,1719654621,"waivek:ghp_"
+	/
+|3,0,36,0,1,0,1719738668,"/"
 
 # File marks:
-'0  13  4  ~/.config/git/config
-|4,48,13,4,1719654832,"~/.config/git/config"
-'1  13  4  ~/.config/git/config
-|4,49,13,4,1719654832,"~/.config/git/config"
-'2  1  0  ~/.config/git/config
-|4,50,1,0,1719654801,"~/.config/git/config"
-'3  1  0  ~/.config/git/config
-|4,51,1,0,1719654801,"~/.config/git/config"
-'4  1  0  ~/.config/git/config
-|4,52,1,0,1719654801,"~/.config/git/config"
-'5  1  0  ~/.config/git/config
-|4,53,1,0,1719654801,"~/.config/git/config"
-'6  7  49  ~/tooling/git-knowledge.txt
-|4,54,7,49,1719654778,"~/tooling/git-knowledge.txt"
-'7  7  49  ~/tooling/git-knowledge.txt
-|4,55,7,49,1719654778,"~/tooling/git-knowledge.txt"
-'8  7  49  ~/tooling/git-knowledge.txt
-|4,56,7,49,1719654778,"~/tooling/git-knowledge.txt"
-'9  7  49  ~/tooling/git-knowledge.txt
-|4,57,7,49,1719654778,"~/tooling/git-knowledge.txt"
+'0  1  0  ~/.git-credentials
+|4,48,1,0,1719880833,"~/.git-credentials"
+'1  1  0  ~/.sqliterc
+|4,49,1,0,1719880818,"~/.sqliterc"
+'2  1  0  ~/.sqliterc
+|4,50,1,0,1719880818,"~/.sqliterc"
+'3  14991  33  ~/.vim/_viminfo_linux
+|4,51,14991,33,1719880786,"~/.vim/_viminfo_linux"
+'4  14991  33  ~/.vim/_viminfo_linux
+|4,52,14991,33,1719880786,"~/.vim/_viminfo_linux"
+'5  14991  33  ~/.vim/_viminfo_linux
+|4,53,14991,33,1719880786,"~/.vim/_viminfo_linux"
+'6  14991  33  ~/.vim/_viminfo_linux
+|4,54,14991,33,1719880786,"~/.vim/_viminfo_linux"
+'7  11222  0  ~/.vim/_viminfo_linux
+|4,55,11222,0,1719880753,"~/.vim/_viminfo_linux"
+'8  11222  0  ~/.vim/_viminfo_linux
+|4,56,11222,0,1719880753,"~/.vim/_viminfo_linux"
+'9  11222  0  ~/.vim/_viminfo_linux
+|4,57,11222,0,1719880753,"~/.vim/_viminfo_linux"
 
 # Jumplist (newest first):
--'  13  4  ~/.config/git/config
-|4,39,13,4,1719654832,"~/.config/git/config"
--'  13  4  ~/.config/git/config
-|4,39,13,4,1719654832,"~/.config/git/config"
--'  1  0  ~/.config/git/config
-|4,39,1,0,1719654828,"~/.config/git/config"
--'  1  0  ~/.config/git/config
-|4,39,1,0,1719654828,"~/.config/git/config"
--'  1  0  ~/.config/git/config
-|4,39,1,0,1719654801,"~/.config/git/config"
--'  7  49  ~/tooling/git-knowledge.txt
-|4,39,7,49,1719654778,"~/tooling/git-knowledge.txt"
--'  7  49  ~/tooling/git-knowledge.txt
-|4,39,7,49,1719654778,"~/tooling/git-knowledge.txt"
--'  7  49  ~/tooling/git-knowledge.txt
-|4,39,7,49,1719654778,"~/tooling/git-knowledge.txt"
--'  7  49  ~/tooling/git-knowledge.txt
-|4,39,7,49,1719654778,"~/tooling/git-knowledge.txt"
--'  6  37  ~/tooling/git-knowledge.txt
-|4,39,6,37,1719654735,"~/tooling/git-knowledge.txt"
--'  6  37  ~/tooling/git-knowledge.txt
-|4,39,6,37,1719654735,"~/tooling/git-knowledge.txt"
--'  6  37  ~/tooling/git-knowledge.txt
-|4,39,6,37,1719654735,"~/tooling/git-knowledge.txt"
--'  6  37  ~/tooling/git-knowledge.txt
-|4,39,6,37,1719654735,"~/tooling/git-knowledge.txt"
--'  8  0  ~/tooling/git-knowledge.txt
-|4,39,8,0,1719654718,"~/tooling/git-knowledge.txt"
--'  8  0  ~/tooling/git-knowledge.txt
-|4,39,8,0,1719654718,"~/tooling/git-knowledge.txt"
--'  8  0  ~/tooling/git-knowledge.txt
-|4,39,8,0,1719654718,"~/tooling/git-knowledge.txt"
--'  8  0  ~/tooling/git-knowledge.txt
-|4,39,8,0,1719654718,"~/tooling/git-knowledge.txt"
--'  1  0  ~/.config/git/config
-|4,39,1,0,1719654646,"~/.config/git/config"
--'  7  15  ~/.config/.git/config
-|4,39,7,15,1719654631,"~/.config/.git/config"
--'  7  15  ~/.config/.git/config
-|4,39,7,15,1719654631,"~/.config/.git/config"
--'  7  15  ~/.config/.git/config
-|4,39,7,15,1719654631,"~/.config/.git/config"
--'  7  15  ~/.config/.git/config
-|4,39,7,15,1719654631,"~/.config/.git/config"
--'  7  15  ~/.config/.git/config
-|4,39,7,15,1719654631,"~/.config/.git/config"
--'  1  0  ~/pyscripts/.git/config
-|4,39,1,0,1719654602,"~/pyscripts/.git/config"
--'  1  0  ~/pyscripts/.git/config
-|4,39,1,0,1719654602,"~/pyscripts/.git/config"
--'  1  0  ~/pyscripts/.git/config
-|4,39,1,0,1719654602,"~/pyscripts/.git/config"
--'  1  0  ~/pyscripts/.git/config
-|4,39,1,0,1719654602,"~/pyscripts/.git/config"
--'  1  0  ~/pyscripts/.git/config
-|4,39,1,0,1719654602,"~/pyscripts/.git/config"
--'  11  1  ~/.config/.git/config
-|4,39,11,1,1719654591,"~/.config/.git/config"
--'  11  1  ~/.config/.git/config
-|4,39,11,1,1719654591,"~/.config/.git/config"
--'  11  1  ~/.config/.git/config
-|4,39,11,1,1719654591,"~/.config/.git/config"
--'  11  1  ~/.config/.git/config
-|4,39,11,1,1719654591,"~/.config/.git/config"
--'  11  1  ~/.config/.git/config
-|4,39,11,1,1719654591,"~/.config/.git/config"
--'  11  1  ~/.config/.git/config
-|4,39,11,1,1719654591,"~/.config/.git/config"
--'  1  0  ~/.config/.git/config
-|4,39,1,0,1719654588,"~/.config/.git/config"
--'  1  0  ~/.config/.git/config
-|4,39,1,0,1719654588,"~/.config/.git/config"
--'  1  0  ~/.config/.git/config
-|4,39,1,0,1719654588,"~/.config/.git/config"
--'  1  0  ~/.config/.git/config
-|4,39,1,0,1719654588,"~/.config/.git/config"
--'  1  0  ~/.config/.git/config
-|4,39,1,0,1719654588,"~/.config/.git/config"
--'  1  0  ~/.config/.git/config
-|4,39,1,0,1719654588,"~/.config/.git/config"
--'  1  0  ~/.config/.git/config
-|4,39,1,0,1719654582,"~/.config/.git/config"
--'  10  0  ~/.config/git/config
-|4,39,10,0,1719654565,"~/.config/git/config"
--'  10  0  ~/.config/git/config
-|4,39,10,0,1719654565,"~/.config/git/config"
--'  10  0  ~/.config/git/config
-|4,39,10,0,1719654565,"~/.config/git/config"
--'  10  0  ~/.config/git/config
-|4,39,10,0,1719654565,"~/.config/git/config"
--'  10  0  ~/.config/git/config
-|4,39,10,0,1719654565,"~/.config/git/config"
--'  10  0  ~/.config/git/config
-|4,39,10,0,1719654565,"~/.config/git/config"
--'  10  0  ~/.config/git/config
-|4,39,10,0,1719654565,"~/.config/git/config"
--'  10  0  ~/.config/git/config
-|4,39,10,0,1719654565,"~/.config/git/config"
--'  1  0  ~/.config/git/config
-|4,39,1,0,1719654560,"~/.config/git/config"
--'  1  0  ~/.config/git/config
-|4,39,1,0,1719654560,"~/.config/git/config"
--'  1  0  ~/.config/git/config
-|4,39,1,0,1719654560,"~/.config/git/config"
--'  1  0  ~/.config/git/config
-|4,39,1,0,1719654560,"~/.config/git/config"
--'  9  0  ~/.config/.git/config
-|4,39,9,0,1719654541,"~/.config/.git/config"
--'  9  0  ~/.config/.git/config
-|4,39,9,0,1719654541,"~/.config/.git/config"
--'  9  0  ~/.config/.git/config
-|4,39,9,0,1719654541,"~/.config/.git/config"
--'  9  0  ~/.config/.git/config
-|4,39,9,0,1719654541,"~/.config/.git/config"
--'  9  0  ~/.config/.git/config
-|4,39,9,0,1719654541,"~/.config/.git/config"
--'  9  0  ~/.config/.git/config
-|4,39,9,0,1719654541,"~/.config/.git/config"
--'  9  0  ~/.config/.git/config
-|4,39,9,0,1719654541,"~/.config/.git/config"
--'  9  0  ~/.config/.git/config
-|4,39,9,0,1719654541,"~/.config/.git/config"
--'  9  0  ~/.config/.git/config
-|4,39,9,0,1719654541,"~/.config/.git/config"
--'  1  0  ~/.config/.git/config
-|4,39,1,0,1719654532,"~/.config/.git/config"
--'  1  0  ~/.config/.git/config
-|4,39,1,0,1719654532,"~/.config/.git/config"
--'  14  0  ~/.config/git/config
-|4,39,14,0,1719654295,"~/.config/git/config"
--'  15  0  ~/.config/git/config
-|4,39,15,0,1719654295,"~/.config/git/config"
--'  14  0  ~/.config/git/config
-|4,39,14,0,1719654295,"~/.config/git/config"
--'  15  0  ~/.config/git/config
-|4,39,15,0,1719654295,"~/.config/git/config"
--'  15  0  ~/.config/git/config
-|4,39,15,0,1719654295,"~/.config/git/config"
--'  15  0  ~/.config/git/config
-|4,39,15,0,1719654295,"~/.config/git/config"
--'  15  0  ~/.config/git/config
-|4,39,15,0,1719654295,"~/.config/git/config"
--'  15  0  ~/.config/git/config
-|4,39,15,0,1719654295,"~/.config/git/config"
--'  15  0  ~/.config/git/config
-|4,39,15,0,1719654295,"~/.config/git/config"
--'  15  0  ~/.config/git/config
-|4,39,15,0,1719654295,"~/.config/git/config"
--'  15  0  ~/.config/git/config
-|4,39,15,0,1719654295,"~/.config/git/config"
--'  1  0  ~/.config/git/config
-|4,39,1,0,1719654285,"~/.config/git/config"
--'  1  0  ~/.config/git/config
-|4,39,1,0,1719654285,"~/.config/git/config"
--'  1  0  ~/.config/git/token.gitconfig
-|4,39,1,0,1719653643,"~/.config/git/token.gitconfig"
--'  1  0  ~/.config/git/token.gitconfig
-|4,39,1,0,1719653643,"~/.config/git/token.gitconfig"
--'  1  0  ~/.config/git/token.gitconfig
-|4,39,1,0,1719653643,"~/.config/git/token.gitconfig"
--'  1  0  ~/.config/git/token.gitconfig
-|4,39,1,0,1719653643,"~/.config/git/token.gitconfig"
--'  1  0  ~/.config/git/token.gitconfig
-|4,39,1,0,1719653643,"~/.config/git/token.gitconfig"
--'  1  0  ~/.config/git/token.gitconfig
-|4,39,1,0,1719653643,"~/.config/git/token.gitconfig"
--'  1  0  ~/.config/git/token.gitconfig
-|4,39,1,0,1719653643,"~/.config/git/token.gitconfig"
--'  1  0  ~/.config/git/token.gitconfig
-|4,39,1,0,1719653643,"~/.config/git/token.gitconfig"
--'  1  0  ~/.config/git/token.gitconfig
-|4,39,1,0,1719653643,"~/.config/git/token.gitconfig"
--'  1  0  ~/.config/git/token.gitconfig
-|4,39,1,0,1719653643,"~/.config/git/token.gitconfig"
--'  1  0  ~/.config/git/token.gitconfig
-|4,39,1,0,1719653643,"~/.config/git/token.gitconfig"
--'  1  0  ~/servers/hackernews-search.config.js
-|4,39,1,0,1719653418,"~/servers/hackernews-search.config.js"
--'  1  0  ~/servers/hackernews-search.config.js
-|4,39,1,0,1719653418,"~/servers/hackernews-search.config.js"
--'  1  0  ~/servers/hackernews-search.config.js
-|4,39,1,0,1719653418,"~/servers/hackernews-search.config.js"
--'  1  0  ~/servers/hackernews-search.config.js
-|4,39,1,0,1719653418,"~/servers/hackernews-search.config.js"
--'  1  0  ~/servers/hackernews-search.config.js
-|4,39,1,0,1719653418,"~/servers/hackernews-search.config.js"
--'  1  0  ~/servers/hackernews-search.config.js
-|4,39,1,0,1719653418,"~/servers/hackernews-search.config.js"
--'  1  0  ~/servers/hackernews-search.config.js
-|4,39,1,0,1719653418,"~/servers/hackernews-search.config.js"
--'  1  0  ~/servers/hackernews-search.config.js
-|4,39,1,0,1719653418,"~/servers/hackernews-search.config.js"
--'  1  0  ~/servers/hackernews-search.config.js
-|4,39,1,0,1719653418,"~/servers/hackernews-search.config.js"
--'  1  0  ~/servers/hackernews-search.config.js
-|4,39,1,0,1719653418,"~/servers/hackernews-search.config.js"
--'  1  0  ~/servers/hackernews-search.config.js
-|4,39,1,0,1719653418,"~/servers/hackernews-search.config.js"
+-'  1  0  ~/.git-credentials
+|4,39,1,0,1719880833,"~/.git-credentials"
+-'  1  0  ~/.sqliterc
+|4,39,1,0,1719880818,"~/.sqliterc"
+-'  1  0  ~/.sqliterc
+|4,39,1,0,1719880818,"~/.sqliterc"
+-'  14991  33  ~/.vim/_viminfo_linux
+|4,39,14991,33,1719880786,"~/.vim/_viminfo_linux"
+-'  14991  33  ~/.vim/_viminfo_linux
+|4,39,14991,33,1719880786,"~/.vim/_viminfo_linux"
+-'  14991  33  ~/.vim/_viminfo_linux
+|4,39,14991,33,1719880786,"~/.vim/_viminfo_linux"
+-'  14970  6  ~/.vim/_viminfo_linux
+|4,39,14970,6,1719880782,"~/.vim/_viminfo_linux"
+-'  14970  6  ~/.vim/_viminfo_linux
+|4,39,14970,6,1719880782,"~/.vim/_viminfo_linux"
+-'  14970  6  ~/.vim/_viminfo_linux
+|4,39,14970,6,1719880782,"~/.vim/_viminfo_linux"
+-'  11006  38  ~/.vim/_viminfo_linux
+|4,39,11006,38,1719880778,"~/.vim/_viminfo_linux"
+-'  11005  17  ~/.vim/_viminfo_linux
+|4,39,11005,17,1719880778,"~/.vim/_viminfo_linux"
+-'  10914  20  ~/.vim/_viminfo_linux
+|4,39,10914,20,1719880778,"~/.vim/_viminfo_linux"
+-'  10913  2  ~/.vim/_viminfo_linux
+|4,39,10913,2,1719880778,"~/.vim/_viminfo_linux"
+-'  10626  20  ~/.vim/_viminfo_linux
+|4,39,10626,20,1719880778,"~/.vim/_viminfo_linux"
+-'  10625  2  ~/.vim/_viminfo_linux
+|4,39,10625,2,1719880778,"~/.vim/_viminfo_linux"
+-'  7828  20  ~/.vim/_viminfo_linux
+|4,39,7828,20,1719880778,"~/.vim/_viminfo_linux"
+-'  7827  2  ~/.vim/_viminfo_linux
+|4,39,7827,2,1719880778,"~/.vim/_viminfo_linux"
+-'  6796  27  ~/.vim/_viminfo_linux
+|4,39,6796,27,1719880778,"~/.vim/_viminfo_linux"
+-'  6795  10  ~/.vim/_viminfo_linux
+|4,39,6795,10,1719880778,"~/.vim/_viminfo_linux"
+-'  6326  35  ~/.vim/_viminfo_linux
+|4,39,6326,35,1719880778,"~/.vim/_viminfo_linux"
+-'  6325  18  ~/.vim/_viminfo_linux
+|4,39,6325,18,1719880778,"~/.vim/_viminfo_linux"
+-'  11006  38  ~/.vim/_viminfo_linux
+|4,39,11006,38,1719880778,"~/.vim/_viminfo_linux"
+-'  11005  17  ~/.vim/_viminfo_linux
+|4,39,11005,17,1719880778,"~/.vim/_viminfo_linux"
+-'  10914  20  ~/.vim/_viminfo_linux
+|4,39,10914,20,1719880778,"~/.vim/_viminfo_linux"
+-'  10913  2  ~/.vim/_viminfo_linux
+|4,39,10913,2,1719880778,"~/.vim/_viminfo_linux"
+-'  10626  20  ~/.vim/_viminfo_linux
+|4,39,10626,20,1719880778,"~/.vim/_viminfo_linux"
+-'  10625  2  ~/.vim/_viminfo_linux
+|4,39,10625,2,1719880778,"~/.vim/_viminfo_linux"
+-'  7828  20  ~/.vim/_viminfo_linux
+|4,39,7828,20,1719880778,"~/.vim/_viminfo_linux"
+-'  7827  2  ~/.vim/_viminfo_linux
+|4,39,7827,2,1719880778,"~/.vim/_viminfo_linux"
+-'  6796  27  ~/.vim/_viminfo_linux
+|4,39,6796,27,1719880778,"~/.vim/_viminfo_linux"
+-'  6795  10  ~/.vim/_viminfo_linux
+|4,39,6795,10,1719880778,"~/.vim/_viminfo_linux"
+-'  6326  35  ~/.vim/_viminfo_linux
+|4,39,6326,35,1719880778,"~/.vim/_viminfo_linux"
+-'  6325  18  ~/.vim/_viminfo_linux
+|4,39,6325,18,1719880778,"~/.vim/_viminfo_linux"
+-'  11006  38  ~/.vim/_viminfo_linux
+|4,39,11006,38,1719880778,"~/.vim/_viminfo_linux"
+-'  11005  17  ~/.vim/_viminfo_linux
+|4,39,11005,17,1719880778,"~/.vim/_viminfo_linux"
+-'  10914  20  ~/.vim/_viminfo_linux
+|4,39,10914,20,1719880778,"~/.vim/_viminfo_linux"
+-'  10913  2  ~/.vim/_viminfo_linux
+|4,39,10913,2,1719880778,"~/.vim/_viminfo_linux"
+-'  10626  20  ~/.vim/_viminfo_linux
+|4,39,10626,20,1719880778,"~/.vim/_viminfo_linux"
+-'  10625  2  ~/.vim/_viminfo_linux
+|4,39,10625,2,1719880778,"~/.vim/_viminfo_linux"
+-'  7828  20  ~/.vim/_viminfo_linux
+|4,39,7828,20,1719880778,"~/.vim/_viminfo_linux"
+-'  7827  2  ~/.vim/_viminfo_linux
+|4,39,7827,2,1719880778,"~/.vim/_viminfo_linux"
+-'  6796  27  ~/.vim/_viminfo_linux
+|4,39,6796,27,1719880778,"~/.vim/_viminfo_linux"
+-'  6795  10  ~/.vim/_viminfo_linux
+|4,39,6795,10,1719880778,"~/.vim/_viminfo_linux"
+-'  6326  35  ~/.vim/_viminfo_linux
+|4,39,6326,35,1719880778,"~/.vim/_viminfo_linux"
+-'  6325  18  ~/.vim/_viminfo_linux
+|4,39,6325,18,1719880778,"~/.vim/_viminfo_linux"
+-'  5488  18  ~/.vim/_viminfo_linux
+|4,39,5488,18,1719880777,"~/.vim/_viminfo_linux"
+-'  5487  1  ~/.vim/_viminfo_linux
+|4,39,5487,1,1719880777,"~/.vim/_viminfo_linux"
+-'  3796  18  ~/.vim/_viminfo_linux
+|4,39,3796,18,1719880777,"~/.vim/_viminfo_linux"
+-'  3795  1  ~/.vim/_viminfo_linux
+|4,39,3795,1,1719880777,"~/.vim/_viminfo_linux"
+-'  3188  18  ~/.vim/_viminfo_linux
+|4,39,3188,18,1719880777,"~/.vim/_viminfo_linux"
+-'  3187  1  ~/.vim/_viminfo_linux
+|4,39,3187,1,1719880777,"~/.vim/_viminfo_linux"
+-'  1644  18  ~/.vim/_viminfo_linux
+|4,39,1644,18,1719880777,"~/.vim/_viminfo_linux"
+-'  1643  1  ~/.vim/_viminfo_linux
+|4,39,1643,1,1719880777,"~/.vim/_viminfo_linux"
+-'  1036  23  ~/.vim/_viminfo_linux
+|4,39,1036,23,1719880777,"~/.vim/_viminfo_linux"
+-'  1035  6  ~/.vim/_viminfo_linux
+|4,39,1035,6,1719880777,"~/.vim/_viminfo_linux"
+-'  602  21  ~/.vim/_viminfo_linux
+|4,39,602,21,1719880777,"~/.vim/_viminfo_linux"
+-'  601  4  ~/.vim/_viminfo_linux
+|4,39,601,4,1719880777,"~/.vim/_viminfo_linux"
+-'  5488  18  ~/.vim/_viminfo_linux
+|4,39,5488,18,1719880777,"~/.vim/_viminfo_linux"
+-'  5487  1  ~/.vim/_viminfo_linux
+|4,39,5487,1,1719880777,"~/.vim/_viminfo_linux"
+-'  3796  18  ~/.vim/_viminfo_linux
+|4,39,3796,18,1719880777,"~/.vim/_viminfo_linux"
+-'  3795  1  ~/.vim/_viminfo_linux
+|4,39,3795,1,1719880777,"~/.vim/_viminfo_linux"
+-'  3188  18  ~/.vim/_viminfo_linux
+|4,39,3188,18,1719880777,"~/.vim/_viminfo_linux"
+-'  3187  1  ~/.vim/_viminfo_linux
+|4,39,3187,1,1719880777,"~/.vim/_viminfo_linux"
+-'  1644  18  ~/.vim/_viminfo_linux
+|4,39,1644,18,1719880777,"~/.vim/_viminfo_linux"
+-'  1643  1  ~/.vim/_viminfo_linux
+|4,39,1643,1,1719880777,"~/.vim/_viminfo_linux"
+-'  1036  23  ~/.vim/_viminfo_linux
+|4,39,1036,23,1719880777,"~/.vim/_viminfo_linux"
+-'  1035  6  ~/.vim/_viminfo_linux
+|4,39,1035,6,1719880777,"~/.vim/_viminfo_linux"
+-'  602  21  ~/.vim/_viminfo_linux
+|4,39,602,21,1719880777,"~/.vim/_viminfo_linux"
+-'  601  4  ~/.vim/_viminfo_linux
+|4,39,601,4,1719880777,"~/.vim/_viminfo_linux"
+-'  5488  18  ~/.vim/_viminfo_linux
+|4,39,5488,18,1719880777,"~/.vim/_viminfo_linux"
+-'  5487  1  ~/.vim/_viminfo_linux
+|4,39,5487,1,1719880777,"~/.vim/_viminfo_linux"
+-'  3796  18  ~/.vim/_viminfo_linux
+|4,39,3796,18,1719880777,"~/.vim/_viminfo_linux"
+-'  3795  1  ~/.vim/_viminfo_linux
+|4,39,3795,1,1719880777,"~/.vim/_viminfo_linux"
+-'  3188  18  ~/.vim/_viminfo_linux
+|4,39,3188,18,1719880777,"~/.vim/_viminfo_linux"
+-'  3187  1  ~/.vim/_viminfo_linux
+|4,39,3187,1,1719880777,"~/.vim/_viminfo_linux"
+-'  1644  18  ~/.vim/_viminfo_linux
+|4,39,1644,18,1719880777,"~/.vim/_viminfo_linux"
+-'  1643  1  ~/.vim/_viminfo_linux
+|4,39,1643,1,1719880777,"~/.vim/_viminfo_linux"
+-'  1036  23  ~/.vim/_viminfo_linux
+|4,39,1036,23,1719880777,"~/.vim/_viminfo_linux"
+-'  1035  6  ~/.vim/_viminfo_linux
+|4,39,1035,6,1719880777,"~/.vim/_viminfo_linux"
+-'  602  21  ~/.vim/_viminfo_linux
+|4,39,602,21,1719880777,"~/.vim/_viminfo_linux"
+-'  601  4  ~/.vim/_viminfo_linux
+|4,39,601,4,1719880777,"~/.vim/_viminfo_linux"
+-'  1  0  ~/.vim/_viminfo_linux
+|4,39,1,0,1719880765,"~/.vim/_viminfo_linux"
+-'  1  0  ~/.vim/_viminfo_linux
+|4,39,1,0,1719880765,"~/.vim/_viminfo_linux"
+-'  1  0  ~/.vim/_viminfo_linux
+|4,39,1,0,1719880765,"~/.vim/_viminfo_linux"
+-'  11222  0  ~/.vim/_viminfo_linux
+|4,39,11222,0,1719880753,"~/.vim/_viminfo_linux"
+-'  11222  0  ~/.vim/_viminfo_linux
+|4,39,11222,0,1719880753,"~/.vim/_viminfo_linux"
+-'  11222  0  ~/.vim/_viminfo_linux
+|4,39,11222,0,1719880753,"~/.vim/_viminfo_linux"
+-'  11222  0  ~/.vim/_viminfo_linux
+|4,39,11222,0,1719880753,"~/.vim/_viminfo_linux"
+-'  11246  73  ~/.vim/_viminfo_linux
+|4,39,11246,73,1719880712,"~/.vim/_viminfo_linux"
+-'  11246  73  ~/.vim/_viminfo_linux
+|4,39,11246,73,1719880712,"~/.vim/_viminfo_linux"
+-'  11246  73  ~/.vim/_viminfo_linux
+|4,39,11246,73,1719880712,"~/.vim/_viminfo_linux"
+-'  11246  73  ~/.vim/_viminfo_linux
+|4,39,11246,73,1719880712,"~/.vim/_viminfo_linux"
+-'  14988  33  ~/.vim/_viminfo_linux
+|4,39,14988,33,1719880711,"~/.vim/_viminfo_linux"
+-'  14988  33  ~/.vim/_viminfo_linux
+|4,39,14988,33,1719880711,"~/.vim/_viminfo_linux"
+-'  14988  33  ~/.vim/_viminfo_linux
+|4,39,14988,33,1719880711,"~/.vim/_viminfo_linux"
+-'  14988  33  ~/.vim/_viminfo_linux
+|4,39,14988,33,1719880711,"~/.vim/_viminfo_linux"
+-'  11244  17  ~/.vim/_viminfo_linux
+|4,39,11244,17,1719880709,"~/.vim/_viminfo_linux"
+-'  11244  17  ~/.vim/_viminfo_linux
+|4,39,11244,17,1719880709,"~/.vim/_viminfo_linux"
+-'  11244  17  ~/.vim/_viminfo_linux
+|4,39,11244,17,1719880709,"~/.vim/_viminfo_linux"
+-'  11244  17  ~/.vim/_viminfo_linux
+|4,39,11244,17,1719880709,"~/.vim/_viminfo_linux"
 
 # Buffer list:
-%~/.config/git/config	13	4
+%~/.git-credentials	1	0
 
 # History of marks within files (newest to oldest):
+
+> ~/.git-credentials
+	*	1719880829	0
+	"	1	0
+
+> ~/.sqliterc
+	*	1719880816	0
+	"	1	0
+	^	2	13
+	.	2	12
+	+	2	12
+
+> ~/.vim/_viminfo_linux
+	*	1719880783	0
+	"	14991	33
+
+> ~/.vim/_viminfo
+	*	1719880601	0
+	"	1	0
+
+> ~/hateoas/.envrc
+	*	1719880569	0
+	"	2	7
+	.	4	0
+	+	2	47
+	+	2	71
+	+	2	0
+	+	1	13
+	+	3	71
+	+	2	0
+	+	3	0
+	+	4	0
+
+> ~/python_common/.envrc
+	*	1719738669	0
+	"	4	7
+	^	4	20
+	.	4	7
+	+	1	14
+	+	2	31
+	+	3	225
+	+	4	7
+
+> ~/python_common/.env
+	*	1719738646	0
+	"	1	0
+	^	1	21
+	.	1	20
+	+	1	20
+
+> ~/python_common/secrets.env
+	*	1719738645	0
+	"	1	11
+	^	1	12
+	.	1	11
+	+	1	11
+
+> ~/.pypirc
+	*	1719734934	0
+	"	1	0
+	.	1	0
+	+	5	0
+	+	4	23
+	+	5	0
+	+	1	214
+	+	1	0
+
+> ~/tooling/git-knowledge.txt
+	*	1719695120	0
+	"	1	0
+	.	1	0
+	+	13	49
+	+	11	70
+	+	25	32
+	+	25	69
+	+	27	7
+	+	29	19
+	+	31	7
+	+	45	0
+	+	31	51
+	+	33	7
+	+	41	13
+	+	43	0
+	+	41	3
+	+	33	34
+	+	10	0
+	+	9	16
+	+	6	7
+	+	8	0
+	+	7	49
+	+	20	33
+	+	23	36
+	+	24	0
+	+	39	28
+	+	1	0
+
+> /usr/share/vim/vim90/doc/motion.txt
+	*	1719695001	0
+	"	1165	0
 
 > ~/.config/git/config
 	*	1719654830	0
@@ -11508,31 +11625,6 @@ $
 	+	9	8
 	+	10	0
 	+	14	0
-
-> ~/tooling/git-knowledge.txt
-	*	1719654775	0
-	"	7	49
-	^	7	50
-	.	7	49
-	+	13	49
-	+	11	70
-	+	20	32
-	+	22	69
-	+	24	7
-	+	26	19
-	+	28	7
-	+	36	0
-	+	28	51
-	+	30	7
-	+	32	13
-	+	34	0
-	+	32	3
-	+	30	34
-	+	10	0
-	+	9	16
-	+	6	7
-	+	8	0
-	+	7	49
 
 > ~/.config/alias.sh
 	*	1719654762	0
@@ -16241,19 +16333,6 @@ $
 	*	1717657786	0
 	"	1	0
 
-> ~/hateoas/.envrc
-	*	1717650883	0
-	"	3	0
-	.	4	0
-	+	2	47
-	+	2	71
-	+	2	0
-	+	1	13
-	+	3	71
-	+	2	0
-	+	3	0
-	+	4	0
-
 > ~/hateoas/.gitignore
 	*	1717650819	0
 	"	4	5
@@ -16266,10 +16345,6 @@ $
 	+	5	4
 	+	1	5
 	+	4	5
-
-> ~/.vim/_viminfo_linux
-	*	1717650688	0
-	"	9907	21
 
 > ~/instagram-reels/post.py
 	*	1717616858	0
@@ -17776,13 +17851,6 @@ $
 	*	1717059236	0
 	"	15	0
 
-> ~/python_common/.envrc
-	*	1717059075	0
-	"	1	13
-	^	1	17
-	.	1	14
-	+	1	14
-
 > ~/tooling/typescript-goals.txt
 	*	1717056901	0
 	"	28	0
@@ -18343,16 +18411,6 @@ $
 	*	1716994912	0
 	"	3	0
 
-> ~/.pypirc
-	*	1716994655	0
-	"	3	0
-	^	3	215
-	.	3	214
-	+	9	0
-	+	8	23
-	+	9	0
-	+	3	214
-
 > ~/python_common/test.py
 	*	1716993490	0
 	"	3	0
@@ -18469,10 +18527,6 @@ $
 > ~/bash/fd.man
 	*	1716953617	0
 	"	245	63
-
-> ~/.git-credentials
-	*	1716948015	0
-	"	1	0
 
 > ~/sqlite-editor/data/main.db
 	*	1716864893	0
@@ -22298,13 +22352,6 @@ $
 	+	20	26
 	+	11	0
 	+	10	0
-
-> ~/.sqliterc
-	*	1714042619	0
-	"	2	12
-	^	2	13
-	.	2	12
-	+	2	12
 
 > ~/jobs-python/test-libs.py
 	*	1714037624	0
