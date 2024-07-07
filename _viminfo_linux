@@ -11,7 +11,8 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/[0-9A-Za-z]\{20,\}
+~MSle0~/5083
+<from flask import request\nfrom flask import render_template_string\nfrom flask import render_template\nfrom flask import Flask\nfrom flask import redirect\nfrom flask import url_for\nfrom flask_cors import CORS\nfrom dbutils import Connection\nfrom Types import Sequence, Portion, PortionUrl\nfrom portionurl_to_download_path import downloaded, partially_downloaded\nfrom typing import TypedDict\nfrom waivek import read, rel2abs\nimport os\.path\n\n\napp = Flask(__name__)\napp\.config\['Access-Control-Allow-Origin'\] = '\*'\nCORS(app)\n\nconnection = Connection('data\/main\.db')\nvideos_connection = Connection('data\/videos\.db')\n\ndef get_download_filename(portionurl: PortionUrl, portion: Portion, video: dict) -> str:\n    from slugify import slugify\n    order = portion\.order\n    order_padded = str(order)\.zfill(2)\n    user_name = video\[\"user_name\"\]\n    title = portion\.title\n    title_slug = slugify(title, separator=\"_\")\n    video_id = video\[\"id\"\]\n    offset = portion\.epoch - video\[\"created_at_epoch\"\]\n    offset_hhmmss = hhmmss(offset)\n    return \"\.\"\.join(\[order_padded, title_slug, user_name, video_id, offset_hhmmss, \"mp4\"\])\n\n\ndef portionurl_downloaded(portionurl: PortionUrl) -> bool:\n    assert app and app\.static_folder, \"\[portionurl_downloaded\] app\.static_folder is not set\"\n    static_folder = app\.static_folder\n    filename = f\"{static_folder}\/downloads\/{portionurl\.id}\.mp4\"\n    import os\n    return os\.path\.exists(filename)\n\ndef download_hash(portionurl: PortionUrl, portion: Portion, video: dict) -> str:\n    offset = portion\.epoch - video\[\"created_at_epoch\"\]\n    hash_inputs = \[ video\['user_name'\], video\['id'\], offset, portion\.duration \]\n    # import hashlib\n    # return hashlib\.md5(\"\"\.join(map(str, hash_inputs))\.encode())\.hexdigest()\n    return \",\"\.join(map(str, hash_inputs))\n\ntd = TypedDict(\"td\", {\"user_name\": str, \"url\": str, \"offset\": int, \"duration\": int, \"filename\": str, \"hash\": str})\ndef format_portionurl_for_download(portionurl: PortionUrl, portion: Portion) -> td:\n    # format to return { user_name, url, offset, duration }\n    video_id = portionurl\.url\.replace(\"https:\/\/www\.youtube\.com\/watch?v=\", \"\")\.replace(\"https:\/\/www\.twitch\.tv\/videos\/\", \"\")\n    cursor = videos_connection\.cursor()\n    cursor\.execute(\"SELECT \* FROM videos WHERE id = ?\", (video_id,))\n    video = dict(cursor\.fetchone())\n    user_name = video\[\"user_name\"\]\n    offset = portion\.epoch - video\[\"created_at_epoch\"\]\n\n    return {\n        \"user_name\": user_name,\n        \"url\": portionurl\.url,\n        \"offset\": offset,\n        \"duration\": portion\.duration,\n        \"filename\": get_download_filename(portionurl, portion, video),\n        \"hash\": download_hash(portionurl, portion, video)\n    }\n\n# register global filter\n@app\.template_filter('timeago')\ndef timeago(value):\n    import timeago\n    return timeago\.format(value)\n\n@app\.template_filter('hhmmss')\ndef hhmmss(value):\n    from waivek import Timestamp\n    timestamp = Timestamp(value)\n    return timestamp\.hh_mm_ss\n\n\n@app\.route(\"\/elements\")\ndef elements():\n    return render_template(\"elements\.html\")\n\n@app\.route(\"\/sequences\/<int:id>\/delete\", methods=\[\"GET\"\])\ndef delete_sequence(id):\n    cursor = connection\.cursor()\n    cursor\.execute(\"DELETE FROM sequences WHERE id = ?\", (id,))\n    connection\.commit()\n    return redirect(url_for(\"view_sequences\"))\n\n@app\.route(\"\/sequences\", methods=\[\"POST\"\])\ndef create_sequence():\n    name = request\.form\.get(\"name\")\n    description = request\.form\.get(\"description\")\n    cursor = connection\.cursor()\n    cursor\.execute(\"INSERT INTO sequences (name, description) VALUES (?, ?)\", (name, description))\n    connection\.commit()\n    return redirect(url_for(\"view_sequences\"))\n\ndef urls_to_videos(urls):\n    video_ids = \[ url\.replace(\"https:\/\/www\.youtube\.com\/watch?v=\", \"\")\.replace(\"https:\/\/www\.twitch\.tv\/videos\/\", \"\") for url in urls \]\n    cursor = videos_connection\.cursor()\n    cursor\.execute(\"SELECT \* FROM videos WHERE id IN ({})\"\.format(\",\"\.join(\[\"?\" for _ in video_ids\])), video_ids)\n    return \[dict(video) for video in cursor\.fetchall()\]\n\ndef portion_ids_to_videos(portion_ids):\n    # assert type(portion_ids) == list, f\"\[portion_ids_to_videos\] portion_ids must be a list, got {type(portion_ids)}\"\n    assert isinstance(portion_ids, list), f\"\[portion_ids_to_videos\] portion_ids must be a list, got {type(portion_ids)}\"\n    cursor = connection\.cursor()\n    video_cursor = videos_connection\.cursor()\n    videos = \[\]\n\n    for portion_id in portion_ids:\n        cursor\.execute(\"SELECT user_id FROM portions WHERE id = ?\", (portion_id,))\n        user_id = cursor\.fetchone()\[0\]\n\n        cursor\.execute(\"SELECT url FROM portionurls WHERE portion_id = ?\", (portion_id,))\n        urls = \[portionurl\[\"url\"\] for portionurl in cursor\.fetchall()\]\n
 
 # Last Substitute Search Pattern:
 ~MSle0&[A-Za-z0-9-]\{14,\}
@@ -20,8 +21,32 @@
 $
 
 # Command Line History (newest to oldest):
+:qa!
+|2,0,1720346302,,"qa!"
+:b!# | bd! #
+|2,0,1720346301,,"b!# | bd! #"
+:redraw
+|2,0,1720346295,,"redraw"
+:enew
+|2,0,1720346286,,"enew"
+:diffthis
+|2,0,1720346232,,"diffthis"
+:MRU hate
+|2,0,1720346187,,"MRU hate"
+:MRU xcl
+|2,0,1720346185,,"MRU xcl"
+:qa
+|2,0,1720346181,,"qa"
+:MRU hateo
+|2,0,1720346171,,"MRU hateo"
+:e ~/.vim/plugin/xclip.vim
+|2,0,1720346168,,"e ~/.vim/plugin/xclip.vim"
+:MRU xclip
+|2,0,1720346161,,"MRU xclip"
 :q
-|2,0,1719880832,,"q"
+|2,0,1719883098,,"q"
+:Copilot auth
+|2,0,1719883022,,"Copilot auth"
 :registers
 |2,0,1719880745,,"registers"
 :set reg
@@ -48,8 +73,6 @@ $
 |2,0,1719684811,,"grep -g '*.vim' -g 'vimrc' --fixed-strings "
 :v/[A-Za-z0-9-]\{10,\}/d
 |2,0,1719684777,,"v/[A-Za-z0-9-]\\{10,\\}/d"
-:enew
-|2,0,1719684748,,"enew"
 :q!
 |2,0,1719655227,,"q!"
 :MRU al
@@ -58,8 +81,6 @@ $
 |2,0,1719654718,,"term "
 :e ~/tooling/git-knowledge.txt
 |2,0,1719654646,,"e ~/tooling/git-knowledge.txt"
-:qa
-|2,0,1719654630,,"qa"
 :e .git/config
 |2,0,1719654602,,"e .git/config"
 :reg
@@ -158,12 +179,8 @@ $
 |2,0,1719315755,,"e requirements.txt"
 :e ~/pyscripts/uuid7-experiment.py
 |2,0,1719313801,,"e ~/pyscripts/uuid7-experiment.py"
-:b!# | bd! #
-|2,0,1719313757,,"b!# | bd! #"
 :e .
 |2,0,1719313712,,"e ."
-:qa!
-|2,0,1719263146,,"qa!"
 :%sort u
 |2,0,1719263105,,"%sort u"
 :edit $MYVIMRC
@@ -318,8 +335,6 @@ $
 |2,0,1718889957,,"MRU base"
 :MRU edi
 |2,0,1718889951,,"MRU edi"
-:MRU hate
-|2,0,1718889946,,"MRU hate"
 :FIND tailwind-out
 |2,0,1718875201,,"FIND tailwind-out"
 :b ~/ui-components-css/static/css-themes/dark-gray-mono.css
@@ -394,8 +409,6 @@ $
 |2,0,1718618453,,"FIND base."
 :MRU hateoas-
 |2,0,1718618450,,"MRU hateoas-"
-:MRU hateo
-|2,0,1718618447,,"MRU hateo"
 :e base-dark.css
 |2,0,1718617459,,"e base-dark.css"
 :e editor.css
@@ -1596,8 +1609,6 @@ $
 |2,0,1717037170,,"find db.py"
 :MRU dbu
 |2,0,1717036765,,"MRU dbu"
-:diffthis
-|2,0,1716995041,,"diffthis"
 :MRU 43:hateoas/dbutils.py
 |2,0,1716995039,,"MRU 43:hateoas/dbutils.py"
 :MRU dbutils
@@ -11240,39 +11251,36 @@ $
 |2,4,1693311567,,"cont"
 
 # Registers:
-"0	LINE	0
-	|2,3,1688669343,,"div class=\"flex gap-2 items-center flex-wrap\">"
-|3,0,0,1,1,0,1719880733,"|2,3,1688669343,,\"div class=\\\"flex gap-2 items-center flex-wrap\\\">\""
+"0	CHAR	0
+	Tabularize /(/l1c1l1
+|3,0,0,0,1,0,1720346220,"Tabularize /(/l1c1l1"
 "1	LINE	0
 	
-|3,0,1,1,1,0,1719738643,""
-""2	LINE	0
+|3,0,1,1,1,0,1720346239,""
+"2	LINE	0
 	|2,3,1688669343,,"div class=\"flex gap-2 items-center flex-wrap\">"
-|3,1,2,1,1,0,1719880743,"|2,3,1688669343,,\"div class=\\\"flex gap-2 items-center flex-wrap\\\">\""
+|3,0,2,1,1,0,1719880743,"|2,3,1688669343,,\"div class=\\\"flex gap-2 items-center flex-wrap\\\">\""
 "3	LINE	0
-	
-|3,0,3,1,1,0,1719695116,""
+	|2,3,1688669343,,"div class=\"flex gap-2 items-center flex-wrap\">"
+|3,0,3,1,1,0,1719880743,"|2,3,1688669343,,\"div class=\\\"flex gap-2 items-center flex-wrap\\\">\""
 "4	LINE	0
 	
-|3,0,4,1,1,0,1719695114,""
+|3,0,4,1,1,0,1719695116,""
 "5	LINE	0
 	
-|3,0,5,1,1,0,1719695094,""
+|3,0,5,1,1,0,1719695114,""
 "6	LINE	0
 	
-|3,0,6,1,1,0,1719695092,""
+|3,0,6,1,1,0,1719695094,""
 "7	LINE	0
 	
-|3,0,7,1,1,0,1719695089,""
+|3,0,7,1,1,0,1719695092,""
 "8	LINE	0
 	
-|3,0,8,1,1,0,1719695084,""
+|3,0,8,1,1,0,1719695089,""
 "9	LINE	0
 	
-|3,0,9,1,1,0,1719695080,""
-"a	CHAR	0
-	Tabularize /(/l1c1l1
-|3,0,10,0,1,0,1719327229,"Tabularize /(/l1c1l1"
+|3,0,9,1,1,0,1719695084,""
 "j	CHAR	0
 	kc
 |3,0,19,0,1,0,1718434816,"kc"
@@ -11290,40 +11298,112 @@ $
 |3,0,36,0,1,0,1719738668,"/"
 
 # File marks:
-'0  1  0  ~/.git-credentials
-|4,48,1,0,1719880833,"~/.git-credentials"
-'1  1  0  ~/.sqliterc
-|4,49,1,0,1719880818,"~/.sqliterc"
-'2  1  0  ~/.sqliterc
-|4,50,1,0,1719880818,"~/.sqliterc"
-'3  14991  33  ~/.vim/_viminfo_linux
-|4,51,14991,33,1719880786,"~/.vim/_viminfo_linux"
-'4  14991  33  ~/.vim/_viminfo_linux
-|4,52,14991,33,1719880786,"~/.vim/_viminfo_linux"
-'5  14991  33  ~/.vim/_viminfo_linux
-|4,53,14991,33,1719880786,"~/.vim/_viminfo_linux"
-'6  14991  33  ~/.vim/_viminfo_linux
-|4,54,14991,33,1719880786,"~/.vim/_viminfo_linux"
-'7  11222  0  ~/.vim/_viminfo_linux
-|4,55,11222,0,1719880753,"~/.vim/_viminfo_linux"
-'8  11222  0  ~/.vim/_viminfo_linux
-|4,56,11222,0,1719880753,"~/.vim/_viminfo_linux"
-'9  11222  0  ~/.vim/_viminfo_linux
-|4,57,11222,0,1719880753,"~/.vim/_viminfo_linux"
+'0  18  0  ~/.vim/plugin/xclip.vim
+|4,48,18,0,1720346303,"~/.vim/plugin/xclip.vim"
+'1  27  0  ~/.vim/plugin/xclip.vim
+|4,49,27,0,1720346182,"~/.vim/plugin/xclip.vim"
+'2  27  0  ~/.vim/plugin/xclip.vim
+|4,50,27,0,1720346182,"~/.vim/plugin/xclip.vim"
+'3  1  0  ~/[Plugins]
+|4,51,1,0,1719882902,"~/[Plugins]"
+'4  1  0  ~/[Plugins]
+|4,52,1,0,1719882902,"~/[Plugins]"
+'5  1  0  ~/[Plugins]
+|4,53,1,0,1719882902,"~/[Plugins]"
+'6  1  0  ~/[Plugins]
+|4,54,1,0,1719882902,"~/[Plugins]"
+'7  1  0  ~/[Plugins]
+|4,55,1,0,1719882902,"~/[Plugins]"
+'8  1  0  ~/[Plugins]
+|4,56,1,0,1719882902,"~/[Plugins]"
+'9  1  0  ~/[Plugins]
+|4,57,1,0,1719882902,"~/[Plugins]"
 
 # Jumplist (newest first):
+-'  18  0  ~/.vim/plugin/xclip.vim
+|4,39,18,0,1720346303,"~/.vim/plugin/xclip.vim"
+-'  15  0  ~/.vim/plugin/xclip.vim
+|4,39,15,0,1720346209,"~/.vim/plugin/xclip.vim"
+-'  27  0  ~/.vim/plugin/xclip.vim
+|4,39,27,0,1720346182,"~/.vim/plugin/xclip.vim"
+-'  27  0  ~/.vim/plugin/xclip.vim
+|4,39,27,0,1720346182,"~/.vim/plugin/xclip.vim"
+-'  5  0  ~/.vim/plugin/xclip.vim
+|4,39,5,0,1720346178,"~/.vim/plugin/xclip.vim"
+-'  5  0  ~/.vim/plugin/xclip.vim
+|4,39,5,0,1720346178,"~/.vim/plugin/xclip.vim"
+-'  1  0  ~/.vim/plugin/xclip.vim
+|4,39,1,0,1720346168,"~/.vim/plugin/xclip.vim"
+-'  1  0  ~/.vim/plugin/xclip.vim
+|4,39,1,0,1720346168,"~/.vim/plugin/xclip.vim"
+-'  1  0  ~/[Plugins]
+|4,39,1,0,1719882902,"~/[Plugins]"
+-'  1  0  ~/[Plugins]
+|4,39,1,0,1719882902,"~/[Plugins]"
+-'  1  0  ~/[Plugins]
+|4,39,1,0,1719882902,"~/[Plugins]"
+-'  1  0  ~/[Plugins]
+|4,39,1,0,1719882902,"~/[Plugins]"
+-'  6  0  ~/[Plugins]
+|4,39,6,0,1719882901,"~/[Plugins]"
+-'  6  0  ~/[Plugins]
+|4,39,6,0,1719882901,"~/[Plugins]"
+-'  6  0  ~/[Plugins]
+|4,39,6,0,1719882901,"~/[Plugins]"
+-'  6  0  ~/[Plugins]
+|4,39,6,0,1719882901,"~/[Plugins]"
+-'  7  0  ~/[Plugins]
+|4,39,7,0,1719882898,"~/[Plugins]"
+-'  7  0  ~/[Plugins]
+|4,39,7,0,1719882898,"~/[Plugins]"
+-'  7  0  ~/[Plugins]
+|4,39,7,0,1719882898,"~/[Plugins]"
+-'  7  0  ~/[Plugins]
+|4,39,7,0,1719882898,"~/[Plugins]"
+-'  2  0  ~/[Plugins]
+|4,39,2,0,1719882892,"~/[Plugins]"
+-'  2  0  ~/[Plugins]
+|4,39,2,0,1719882892,"~/[Plugins]"
+-'  2  0  ~/[Plugins]
+|4,39,2,0,1719882892,"~/[Plugins]"
+-'  2  0  ~/[Plugins]
+|4,39,2,0,1719882892,"~/[Plugins]"
+-'  1  0  ~/.git-credentials
+|4,39,1,0,1719880833,"~/.git-credentials"
+-'  1  0  ~/.git-credentials
+|4,39,1,0,1719880833,"~/.git-credentials"
+-'  1  0  ~/.git-credentials
+|4,39,1,0,1719880833,"~/.git-credentials"
 -'  1  0  ~/.git-credentials
 |4,39,1,0,1719880833,"~/.git-credentials"
 -'  1  0  ~/.sqliterc
 |4,39,1,0,1719880818,"~/.sqliterc"
 -'  1  0  ~/.sqliterc
 |4,39,1,0,1719880818,"~/.sqliterc"
+-'  1  0  ~/.sqliterc
+|4,39,1,0,1719880818,"~/.sqliterc"
+-'  1  0  ~/.sqliterc
+|4,39,1,0,1719880818,"~/.sqliterc"
+-'  1  0  ~/.sqliterc
+|4,39,1,0,1719880818,"~/.sqliterc"
 -'  14991  33  ~/.vim/_viminfo_linux
 |4,39,14991,33,1719880786,"~/.vim/_viminfo_linux"
 -'  14991  33  ~/.vim/_viminfo_linux
 |4,39,14991,33,1719880786,"~/.vim/_viminfo_linux"
 -'  14991  33  ~/.vim/_viminfo_linux
 |4,39,14991,33,1719880786,"~/.vim/_viminfo_linux"
+-'  14991  33  ~/.vim/_viminfo_linux
+|4,39,14991,33,1719880786,"~/.vim/_viminfo_linux"
+-'  14991  33  ~/.vim/_viminfo_linux
+|4,39,14991,33,1719880786,"~/.vim/_viminfo_linux"
+-'  14991  33  ~/.vim/_viminfo_linux
+|4,39,14991,33,1719880786,"~/.vim/_viminfo_linux"
+-'  14970  6  ~/.vim/_viminfo_linux
+|4,39,14970,6,1719880782,"~/.vim/_viminfo_linux"
+-'  14970  6  ~/.vim/_viminfo_linux
+|4,39,14970,6,1719880782,"~/.vim/_viminfo_linux"
+-'  14970  6  ~/.vim/_viminfo_linux
+|4,39,14970,6,1719880782,"~/.vim/_viminfo_linux"
 -'  14970  6  ~/.vim/_viminfo_linux
 |4,39,14970,6,1719880782,"~/.vim/_viminfo_linux"
 -'  14970  6  ~/.vim/_viminfo_linux
@@ -11402,121 +11482,142 @@ $
 |4,39,6326,35,1719880778,"~/.vim/_viminfo_linux"
 -'  6325  18  ~/.vim/_viminfo_linux
 |4,39,6325,18,1719880778,"~/.vim/_viminfo_linux"
--'  5488  18  ~/.vim/_viminfo_linux
-|4,39,5488,18,1719880777,"~/.vim/_viminfo_linux"
--'  5487  1  ~/.vim/_viminfo_linux
-|4,39,5487,1,1719880777,"~/.vim/_viminfo_linux"
--'  3796  18  ~/.vim/_viminfo_linux
-|4,39,3796,18,1719880777,"~/.vim/_viminfo_linux"
--'  3795  1  ~/.vim/_viminfo_linux
-|4,39,3795,1,1719880777,"~/.vim/_viminfo_linux"
--'  3188  18  ~/.vim/_viminfo_linux
-|4,39,3188,18,1719880777,"~/.vim/_viminfo_linux"
--'  3187  1  ~/.vim/_viminfo_linux
-|4,39,3187,1,1719880777,"~/.vim/_viminfo_linux"
--'  1644  18  ~/.vim/_viminfo_linux
-|4,39,1644,18,1719880777,"~/.vim/_viminfo_linux"
--'  1643  1  ~/.vim/_viminfo_linux
-|4,39,1643,1,1719880777,"~/.vim/_viminfo_linux"
--'  1036  23  ~/.vim/_viminfo_linux
-|4,39,1036,23,1719880777,"~/.vim/_viminfo_linux"
--'  1035  6  ~/.vim/_viminfo_linux
-|4,39,1035,6,1719880777,"~/.vim/_viminfo_linux"
--'  602  21  ~/.vim/_viminfo_linux
-|4,39,602,21,1719880777,"~/.vim/_viminfo_linux"
--'  601  4  ~/.vim/_viminfo_linux
-|4,39,601,4,1719880777,"~/.vim/_viminfo_linux"
--'  5488  18  ~/.vim/_viminfo_linux
-|4,39,5488,18,1719880777,"~/.vim/_viminfo_linux"
--'  5487  1  ~/.vim/_viminfo_linux
-|4,39,5487,1,1719880777,"~/.vim/_viminfo_linux"
--'  3796  18  ~/.vim/_viminfo_linux
-|4,39,3796,18,1719880777,"~/.vim/_viminfo_linux"
--'  3795  1  ~/.vim/_viminfo_linux
-|4,39,3795,1,1719880777,"~/.vim/_viminfo_linux"
--'  3188  18  ~/.vim/_viminfo_linux
-|4,39,3188,18,1719880777,"~/.vim/_viminfo_linux"
--'  3187  1  ~/.vim/_viminfo_linux
-|4,39,3187,1,1719880777,"~/.vim/_viminfo_linux"
--'  1644  18  ~/.vim/_viminfo_linux
-|4,39,1644,18,1719880777,"~/.vim/_viminfo_linux"
--'  1643  1  ~/.vim/_viminfo_linux
-|4,39,1643,1,1719880777,"~/.vim/_viminfo_linux"
--'  1036  23  ~/.vim/_viminfo_linux
-|4,39,1036,23,1719880777,"~/.vim/_viminfo_linux"
--'  1035  6  ~/.vim/_viminfo_linux
-|4,39,1035,6,1719880777,"~/.vim/_viminfo_linux"
--'  602  21  ~/.vim/_viminfo_linux
-|4,39,602,21,1719880777,"~/.vim/_viminfo_linux"
--'  601  4  ~/.vim/_viminfo_linux
-|4,39,601,4,1719880777,"~/.vim/_viminfo_linux"
--'  5488  18  ~/.vim/_viminfo_linux
-|4,39,5488,18,1719880777,"~/.vim/_viminfo_linux"
--'  5487  1  ~/.vim/_viminfo_linux
-|4,39,5487,1,1719880777,"~/.vim/_viminfo_linux"
--'  3796  18  ~/.vim/_viminfo_linux
-|4,39,3796,18,1719880777,"~/.vim/_viminfo_linux"
--'  3795  1  ~/.vim/_viminfo_linux
-|4,39,3795,1,1719880777,"~/.vim/_viminfo_linux"
--'  3188  18  ~/.vim/_viminfo_linux
-|4,39,3188,18,1719880777,"~/.vim/_viminfo_linux"
--'  3187  1  ~/.vim/_viminfo_linux
-|4,39,3187,1,1719880777,"~/.vim/_viminfo_linux"
--'  1644  18  ~/.vim/_viminfo_linux
-|4,39,1644,18,1719880777,"~/.vim/_viminfo_linux"
--'  1643  1  ~/.vim/_viminfo_linux
-|4,39,1643,1,1719880777,"~/.vim/_viminfo_linux"
--'  1036  23  ~/.vim/_viminfo_linux
-|4,39,1036,23,1719880777,"~/.vim/_viminfo_linux"
--'  1035  6  ~/.vim/_viminfo_linux
-|4,39,1035,6,1719880777,"~/.vim/_viminfo_linux"
--'  602  21  ~/.vim/_viminfo_linux
-|4,39,602,21,1719880777,"~/.vim/_viminfo_linux"
--'  601  4  ~/.vim/_viminfo_linux
-|4,39,601,4,1719880777,"~/.vim/_viminfo_linux"
--'  1  0  ~/.vim/_viminfo_linux
-|4,39,1,0,1719880765,"~/.vim/_viminfo_linux"
--'  1  0  ~/.vim/_viminfo_linux
-|4,39,1,0,1719880765,"~/.vim/_viminfo_linux"
--'  1  0  ~/.vim/_viminfo_linux
-|4,39,1,0,1719880765,"~/.vim/_viminfo_linux"
--'  11222  0  ~/.vim/_viminfo_linux
-|4,39,11222,0,1719880753,"~/.vim/_viminfo_linux"
--'  11222  0  ~/.vim/_viminfo_linux
-|4,39,11222,0,1719880753,"~/.vim/_viminfo_linux"
--'  11222  0  ~/.vim/_viminfo_linux
-|4,39,11222,0,1719880753,"~/.vim/_viminfo_linux"
--'  11222  0  ~/.vim/_viminfo_linux
-|4,39,11222,0,1719880753,"~/.vim/_viminfo_linux"
--'  11246  73  ~/.vim/_viminfo_linux
-|4,39,11246,73,1719880712,"~/.vim/_viminfo_linux"
--'  11246  73  ~/.vim/_viminfo_linux
-|4,39,11246,73,1719880712,"~/.vim/_viminfo_linux"
--'  11246  73  ~/.vim/_viminfo_linux
-|4,39,11246,73,1719880712,"~/.vim/_viminfo_linux"
--'  11246  73  ~/.vim/_viminfo_linux
-|4,39,11246,73,1719880712,"~/.vim/_viminfo_linux"
--'  14988  33  ~/.vim/_viminfo_linux
-|4,39,14988,33,1719880711,"~/.vim/_viminfo_linux"
--'  14988  33  ~/.vim/_viminfo_linux
-|4,39,14988,33,1719880711,"~/.vim/_viminfo_linux"
--'  14988  33  ~/.vim/_viminfo_linux
-|4,39,14988,33,1719880711,"~/.vim/_viminfo_linux"
--'  14988  33  ~/.vim/_viminfo_linux
-|4,39,14988,33,1719880711,"~/.vim/_viminfo_linux"
--'  11244  17  ~/.vim/_viminfo_linux
-|4,39,11244,17,1719880709,"~/.vim/_viminfo_linux"
--'  11244  17  ~/.vim/_viminfo_linux
-|4,39,11244,17,1719880709,"~/.vim/_viminfo_linux"
--'  11244  17  ~/.vim/_viminfo_linux
-|4,39,11244,17,1719880709,"~/.vim/_viminfo_linux"
--'  11244  17  ~/.vim/_viminfo_linux
-|4,39,11244,17,1719880709,"~/.vim/_viminfo_linux"
+-'  11006  38  ~/.vim/_viminfo_linux
+|4,39,11006,38,1719880778,"~/.vim/_viminfo_linux"
+-'  11005  17  ~/.vim/_viminfo_linux
+|4,39,11005,17,1719880778,"~/.vim/_viminfo_linux"
+-'  10914  20  ~/.vim/_viminfo_linux
+|4,39,10914,20,1719880778,"~/.vim/_viminfo_linux"
+-'  10913  2  ~/.vim/_viminfo_linux
+|4,39,10913,2,1719880778,"~/.vim/_viminfo_linux"
+-'  10626  20  ~/.vim/_viminfo_linux
+|4,39,10626,20,1719880778,"~/.vim/_viminfo_linux"
+-'  10625  2  ~/.vim/_viminfo_linux
+|4,39,10625,2,1719880778,"~/.vim/_viminfo_linux"
+-'  7828  20  ~/.vim/_viminfo_linux
+|4,39,7828,20,1719880778,"~/.vim/_viminfo_linux"
+-'  7827  2  ~/.vim/_viminfo_linux
+|4,39,7827,2,1719880778,"~/.vim/_viminfo_linux"
+-'  6796  27  ~/.vim/_viminfo_linux
+|4,39,6796,27,1719880778,"~/.vim/_viminfo_linux"
+-'  6795  10  ~/.vim/_viminfo_linux
+|4,39,6795,10,1719880778,"~/.vim/_viminfo_linux"
+-'  6326  35  ~/.vim/_viminfo_linux
+|4,39,6326,35,1719880778,"~/.vim/_viminfo_linux"
+-'  6325  18  ~/.vim/_viminfo_linux
+|4,39,6325,18,1719880778,"~/.vim/_viminfo_linux"
+-'  11006  38  ~/.vim/_viminfo_linux
+|4,39,11006,38,1719880778,"~/.vim/_viminfo_linux"
 
 # Buffer list:
+%~/.vim/plugin/xclip.vim	18	0
 %~/.git-credentials	1	0
 
 # History of marks within files (newest to oldest):
+
+> ~/.vim/plugin/xclip.vim
+	*	1720346301	0
+	"	18	0
+	.	27	0
+	+	27	0
+
+> ~/hateoas/hateoas-api.py
+	*	1720346297	0
+	"	845	0
+	.	1	0
+	+	55	59
+	+	55	35
+	+	55	54
+	+	55	35
+	+	55	68
+	+	55	60
+	+	55	88
+	+	55	35
+	+	55	88
+	+	55	35
+	+	55	47
+	+	55	54
+	+	24	0
+	+	24	5
+	+	24	133
+	+	24	0
+	+	24	4
+	+	55	0
+	+	55	85
+	+	55	31
+	+	55	22
+	+	55	91
+	+	55	51
+	+	55	47
+	+	1	0
+	+	55	38
+	+	55	16
+	+	55	35
+	+	55	23
+	+	1	13
+	+	55	0
+	+	55	84
+	+	55	35
+	+	55	63
+	+	55	52
+	+	55	64
+	+	55	53
+	+	55	57
+	+	55	74
+	+	55	47
+	+	55	0
+	+	1	31
+	+	55	58
+	+	55	0
+	+	55	35
+	+	55	94
+	+	55	60
+	+	55	13
+	+	55	126
+	+	55	63
+	+	55	66
+	+	55	86
+	+	55	35
+	+	55	0
+	+	55	35
+	+	55	92
+	+	55	51
+	+	55	84
+	+	55	82
+	+	55	51
+	+	55	107
+	+	55	39
+	+	55	59
+	+	55	108
+	+	55	44
+	+	55	35
+	+	55	42
+	+	55	35
+	+	55	63
+	+	55	52
+	+	55	35
+	+	55	70
+	+	55	55
+	+	55	51
+	+	55	55
+	+	55	51
+	+	55	55
+	+	55	51
+	+	55	35
+	+	55	44
+	+	55	35
+	+	55	78
+	+	55	76
+	+	55	98
+	+	55	35
+	+	55	43
+	+	55	56
+	+	55	0
+	+	55	34
+	+	55	0
+	+	55	26
+	+	60	0
+	+	1	0
 
 > ~/.git-credentials
 	*	1719880829	0
@@ -13323,104 +13424,6 @@ $
 > ~/ui-components-css/gfiles.py
 	*	1718912654	0
 	"	1	0
-
-> ~/hateoas/hateoas-api.py
-	*	1718904669	0
-	"	16	0
-	.	1	0
-	+	55	59
-	+	55	35
-	+	55	54
-	+	55	35
-	+	55	68
-	+	55	60
-	+	55	88
-	+	55	35
-	+	55	88
-	+	55	35
-	+	55	47
-	+	55	54
-	+	24	0
-	+	24	5
-	+	24	133
-	+	24	0
-	+	24	4
-	+	55	0
-	+	55	85
-	+	55	31
-	+	55	22
-	+	55	91
-	+	55	51
-	+	55	47
-	+	1	0
-	+	55	38
-	+	55	16
-	+	55	35
-	+	55	23
-	+	1	13
-	+	55	0
-	+	55	84
-	+	55	35
-	+	55	63
-	+	55	52
-	+	55	64
-	+	55	53
-	+	55	57
-	+	55	74
-	+	55	47
-	+	55	0
-	+	1	31
-	+	55	58
-	+	55	0
-	+	55	35
-	+	55	94
-	+	55	60
-	+	55	13
-	+	55	126
-	+	55	63
-	+	55	66
-	+	55	86
-	+	55	35
-	+	55	0
-	+	55	35
-	+	55	92
-	+	55	51
-	+	55	84
-	+	55	82
-	+	55	51
-	+	55	107
-	+	55	39
-	+	55	59
-	+	55	108
-	+	55	44
-	+	55	35
-	+	55	42
-	+	55	35
-	+	55	63
-	+	55	52
-	+	55	35
-	+	55	70
-	+	55	55
-	+	55	51
-	+	55	55
-	+	55	51
-	+	55	55
-	+	55	51
-	+	55	35
-	+	55	44
-	+	55	35
-	+	55	78
-	+	55	76
-	+	55	98
-	+	55	35
-	+	55	43
-	+	55	56
-	+	55	0
-	+	55	34
-	+	55	0
-	+	55	26
-	+	60	0
-	+	1	0
 
 > ~/pyscripts/oldfiles.py
 	*	1718904560	0
