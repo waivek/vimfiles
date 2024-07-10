@@ -15,7 +15,8 @@ function! s:LinuxCopy()
     let path = tempname()
     let lines = split(selection, '\n')
     call writefile(lines, path)
-    call system('xclip -selection clipboard '.shellescape(path))
+    let command ='xclip -selection clipboard '.shellescape(path) 
+    call system(command)
     call delete(path)
 
 endfunction

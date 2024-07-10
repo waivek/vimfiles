@@ -11,24 +11,105 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/597
-<let is_linux = has(\"linux\")\nlet xclip_installed = executable(\"xclip\")\n\nif !is_linux || !xclip_installed\n  finish\nendif\n\nfunction! s:LinuxCopy()\n    let reg_save = getreg('a')\n    silent normal! gv\"ay\n    let selection = getreg('a')\n    call setreg('a', reg_save)\n\n    let path = tempname()\n    let lines = split(selection, '\\n')\n    call writefile(lines, path)\n    call system('xclip -selection clipboard '\.shellescape(path))\n    call delete(path)\n\nendfunction\n\n\" vnoremap <silent> gy :call LinuxCopy()<cr>\nvnoremap <silent> <C-c> :<c-u>call <SID>LinuxCopy()<cr>\n
+~MSle0~/Featur
 
 # Last Substitute Search Pattern:
-~MSle0&[A-Za-z0-9-]\{14,\}
+~MSle0&200
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1720449938,,"q"
+|2,0,1720620826,,"q"
+:e setup.sh
+|2,0,1720620600,,"e setup.sh"
+:e setup.fish
+|2,0,1720620598,,"e setup.fish"
+:e alias.sh
+|2,0,1720620111,,"e alias.sh"
+:e .config/ala
+|2,0,1720620109,,"e .config/ala"
+:qa
+|2,0,1720620026,,"qa"
+:MRU bash
+|2,0,1720619928,,"MRU bash"
+:Jprevious
+|2,0,1720619924,,"Jprevious"
+:e ~/bash/chtsh_help.bash
+|2,0,1720619740,,"e ~/bash/chtsh_help.bash"
+:ecoh "
+|2,0,1720619441,,"ecoh \""
+:q!
+|2,0,1720577138,,"q!"
+:kk
+|2,0,1720576787,,"kk"
+:e .gitignore
+|2,0,1720527721,,"e .gitignore"
+:g/200/d
+|2,0,1720527517,,"g/200/d"
+:v/200/d
+|2,0,1720527514,,"v/200/d"
+:enew
+|2,0,1720527512,,"enew"
+:so %
+|2,0,1720526184,,"so %"
+:MRU xcli
+|2,0,1720526176,,"MRU xcli"
+:echo has('clipboard')
+|2,0,1720526078,,"echo has('clipboard')"
+:call system('echo 1 | xclip')
+|2,0,1720526061,,"call system('echo 1 | xclip')"
+:HotReload
+|2,0,1720525988,,"HotReload"
+:mes
+|2,0,1720525962,,"mes"
+:MRU xclip
+|2,0,1720525918,,"MRU xclip"
+:term
+|2,0,1720525610,,"term"
+:vmap <C-c>
+|2,0,1720525596,,"vmap <C-c>"
+:vmap
+|2,0,1720525586,,"vmap"
+:e ~/.vim/plugin/xclip.vim
+|2,0,1720525578,,"e ~/.vim/plugin/xclip.vim"
+:Template
+|2,0,1720525180,,"Template"
+:e individual_get_all_cookies.py
+|2,0,1720525177,,"e individual_get_all_cookies.py"
+:Rename batch_get_all_cookies.py
+|2,0,1720525157,,"Rename batch_get_all_cookies.py"
+:e get_all_cookies_ind
+|2,0,1720525136,,"e get_all_cookies_ind"
+:Rename get_all_cookies_batch.py
+|2,0,1720525125,,"Rename get_all_cookies_batch.py"
+:Rename get_all_cookies_batch
+|2,0,1720525122,,"Rename get_all_cookies_batch"
+:e get-all-
+|2,0,1720525114,,"e get-all-"
+:Rename get-all-cookies-batch.py
+|2,0,1720525088,,"Rename get-all-cookies-batch.py"
+:l
+|2,0,1720522387,,"l"
+:e *.sq
+|2,0,1720522019,,"e *.sq"
+:g/cookie=/d
+|2,0,1720520657,,"g/cookie=/d"
+:v/cookie=/d
+|2,0,1720520655,,"v/cookie=/d"
+: w /tmp/crk.txt
+|2,0,1720520646,," w /tmp/crk.txt"
+:e requirements.txt
+|2,0,1720520499,,"e requirements.txt"
+:MRU xcl
+|2,0,1720520097,,"MRU xcl"
+:MRU 
+|2,0,1720520095,,"MRU "
 :MRU 17:config
 |2,0,1720449937,,"MRU 17:config"
 :h escape(
 |2,0,1720367029,,"h escape("
-:so %
-|2,0,1720366958,,"so %"
 :so 
 |2,0,1720366890,,"so "
 :set shellslash?
@@ -43,8 +124,6 @@ $
 |2,0,1720366600,,"grep -g '*.vim' -g 'vimrc' --fixed-strings reg_save"
 :g
 |2,0,1720366593,,"g"
-:HotReload
-|2,0,1720366495,,"HotReload"
 :MRU hateo
 |2,0,1720366479,,"MRU hateo"
 :map <C-c>
@@ -57,20 +136,10 @@ $
 |2,0,1720346301,,"b!# | bd! #"
 :redraw
 |2,0,1720346295,,"redraw"
-:enew
-|2,0,1720346286,,"enew"
 :diffthis
 |2,0,1720346232,,"diffthis"
 :MRU hate
 |2,0,1720346187,,"MRU hate"
-:MRU xcl
-|2,0,1720346185,,"MRU xcl"
-:qa
-|2,0,1720346181,,"qa"
-:e ~/.vim/plugin/xclip.vim
-|2,0,1720346168,,"e ~/.vim/plugin/xclip.vim"
-:MRU xclip
-|2,0,1720346161,,"MRU xclip"
 :Copilot auth
 |2,0,1719883022,,"Copilot auth"
 :registers
@@ -81,8 +150,6 @@ $
 |2,0,1719880457,,"set nonumber"
 :e .env
 |2,0,1719738641,,"e .env"
-:MRU 
-|2,0,1719738639,,"MRU "
 :e ~/hateoas/.envrc
 |2,0,1719734983,,"e ~/hateoas/.envrc"
 :changes
@@ -99,8 +166,6 @@ $
 |2,0,1719684811,,"grep -g '*.vim' -g 'vimrc' --fixed-strings "
 :v/[A-Za-z0-9-]\{10,\}/d
 |2,0,1719684777,,"v/[A-Za-z0-9-]\\{10,\\}/d"
-:q!
-|2,0,1719655227,,"q!"
 :MRU al
 |2,0,1719654750,,"MRU al"
 :term 
@@ -115,8 +180,6 @@ $
 |2,0,1719653222,,"set ft=gitconfig"
 :set ft?
 |2,0,1719653218,,"set ft?"
-:Jprevious
-|2,0,1719653133,,"Jprevious"
 :g/{/>
 |2,0,1719501633,,"g/{/>"
 :retab
@@ -129,8 +192,6 @@ $
 |2,0,1719435429,,"e .config/setup.sh"
 :e viewlog.py
 |2,0,1719400449,,"e viewlog.py"
-:Template
-|2,0,1719399846,,"Template"
 :find python.sh
 |2,0,1719399711,,"find python.sh"
 :FIND 
@@ -197,8 +258,6 @@ $
 |2,0,1719317026,,"FIND reset"
 :73
 |2,0,1719317009,,"73"
-:e requirements.txt
-|2,0,1719315755,,"e requirements.txt"
 :e ~/pyscripts/uuid7-experiment.py
 |2,0,1719313801,,"e ~/pyscripts/uuid7-experiment.py"
 :e .
@@ -249,8 +308,6 @@ $
 |2,0,1718974416,,"set clipboard?"
 :Hot
 |2,0,1718974369,,"Hot"
-:echo has('clipboard')
-|2,0,1718974315,,"echo has('clipboard')"
 :h clipboard
 |2,0,1718974248,,"h clipboard"
 :'<,'>!xclip -selection clipboard
@@ -559,8 +616,6 @@ $
 |2,0,1718447230,,"term python % --style=rounded update home"
 :term python %
 |2,0,1718446442,,"term python %"
-:term
-|2,0,1718446020,,"term"
 :term pi 
 |2,0,1718446017,,"term pi "
 :'<,'>q
@@ -573,8 +628,6 @@ $
 |2,0,1718443429,,"CocRestart"
 :Copilot status
 |2,0,1718443170,,"Copilot status"
-:kk
-|2,0,1718443049,,"kk"
 :e static/fonts/
 |2,0,1718439511,,"e static/fonts/"
 :b api
@@ -1829,8 +1882,6 @@ $
 |2,0,1716563137,,"MRU 4:updatebin.py"
 :<F1>
 |2,0,1716561919,,"<F1>"
-:l
-|2,0,1716561585,,"l"
 :e tztypes.py
 |2,0,1716550006,,"e tztypes.py"
 :MRU 1:__init__.py
@@ -1859,8 +1910,6 @@ $
 |2,0,1716505049,,"e ~/."
 :MRU workflow
 |2,0,1716505046,,"MRU workflow"
-:e .gitignore
-|2,0,1716505002,,"e .gitignore"
 :Rename get_chrome_and_chromedriver.bash
 |2,0,1716504148,,"Rename get_chrome_and_chromedriver.bash"
 :e small-loc.bash
@@ -1921,8 +1970,6 @@ $
 |2,0,1716325528,,"h clipboard-unnamedplus"
 :set unn
 |2,0,1716325524,,"set unn"
-:e setup.fish
-|2,0,1716325285,,"e setup.fish"
 :e complete.man
 |2,0,1716314672,,"e complete.man"
 :e comp1.fish
@@ -1971,8 +2018,6 @@ $
 |2,0,1716167996,,"MRU setup.sh"
 :grep -g '*' atuin
 |2,0,1716167963,,"grep -g '*' atuin"
-:e alias.sh
-|2,0,1716167958,,"e alias.sh"
 :grep -g '*.sh' atuin
 |2,0,1716167954,,"grep -g '*.sh' atuin"
 :CocR
@@ -2965,8 +3010,6 @@ $
 |2,0,1713751439,,"MRU 5:vivek/genproject/python.sh"
 :MRU 22:cron-run.bash
 |2,0,1713751435,,"MRU 22:cron-run.bash"
-:MRU bash
-|2,0,1713751339,,"MRU bash"
 :MRU bin
 |2,0,1713751111,,"MRU bin"
 :MRU 15:target.bash
@@ -5463,8 +5506,6 @@ $
 |2,0,1693207696,,"MRU com"
 :e completions/load_completions.sh
 |2,0,1693207680,,"e completions/load_completions.sh"
-:e setup.sh
-|2,0,1693206531,,"e setup.sh"
 :MRU starshi
 |2,0,1693202989,,"MRU starshi"
 :e starship.sh
@@ -7609,6 +7650,58 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/Featur
+|2,1,1720619445,47,"Featur"
+?/pyscript
+|2,1,1720578790,47,"pyscript"
+?/complete
+|2,1,1720577093,47,"complete"
+? 200
+|2,1,1720527517,,"200"
+?/cr
+|2,1,1720527506,47,"cr"
+? timer\..*\"cached_function_call\"
+|2,1,1720526958,,"timer\\..*\\\"cached_function_call\\\""
+?/crem
+|2,1,1720524948,47,"crem"
+?/tails
+|2,1,1720524334,47,"tails"
+?/crimson
+|2,1,1720524303,47,"crimson"
+??crimsoncorla
+|2,1,1720524298,63,"crimsoncorla"
+?/poisonmushr
+|2,1,1720524273,47,"poisonmushr"
+?/poison
+|2,1,1720524267,47,"poison"
+?/villain
+|2,1,1720524264,47,"villain"
+?/pomegran
+|2,1,1720524140,47,"pomegran"
+?/poisonmus
+|2,1,1720524083,47,"poisonmus"
+?/poisonmushroom
+|2,1,1720524023,47,"poisonmushroom"
+?/alt=
+|2,1,1720523575,47,"alt="
+?/strawberry
+|2,1,1720523444,47,"strawberry"
+?/gingerbrave
+|2,1,1720523424,47,"gingerbrave"
+?/caca
+|2,1,1720521357,47,"caca"
+?/cookie
+|2,1,1720520684,47,"cookie"
+?/mysti
+|2,1,1720520683,47,"mysti"
+?/beast
+|2,1,1720520678,47,"beast"
+? cookie=
+|2,1,1720520657,,"cookie="
+?/ginger
+|2,1,1720520614,47,"ginger"
+?/gingerbra
+|2,1,1720520573,47,"gingerbra"
 ?/shell_qu
 |2,1,1720366859,47,"shell_qu"
 ?/[0-9A-Za-z]\{20,\}
@@ -7663,8 +7756,6 @@ $
 |2,1,1719326781,47,"selected"
 ?/marker
 |2,1,1719326577,47,"marker"
-?/Featur
-|2,1,1719326117,47,"Featur"
 ?/css
 |2,1,1719326073,47,"css"
 ?/feat
@@ -10107,8 +10198,6 @@ $
 |2,1,1694043553,63,"imple"
 ?/';'
 |2,1,1694041692,47,"';'"
-?/cookie
-|2,1,1694034854,47,"cookie"
 ?/human
 |2,1,1694033672,47,"human"
 ?/Connaught Place
@@ -10197,8 +10286,6 @@ $
 |2,1,1693172896,47,"completion"
 ?/comp
 |2,1,1693172890,47,"comp"
-?/complete
-|2,1,1693132938,47,"complete"
 ?/iglob
 |2,1,1693132750,47,"iglob"
 ?/_Z
@@ -11119,6 +11206,8 @@ $
 |2,2,1688309303,,"v:oldfiles"
 
 # Input Line History (newest to oldest):
+@str
+|2,3,1720527467,,"str"
 @os.expanduser
 |2,3,1718900065,,"os.expanduser"
 @hsl
@@ -11267,60 +11356,82 @@ $
 |2,4,1693311567,,"cont"
 
 # Registers:
-"0	CHAR	0
-	envrc
-|3,0,0,0,1,0,1720369072,"envrc"
-"1	LINE	0
+"0	LINE	0
+	#!/bin/bash
 	
-|3,0,1,1,1,0,1720367310,""
+	# check if shell is fish or bash
+	if [ -n "$BASH_VERSION" ]; then
+	    shell_name="bash"
+	elif [ -n "$FISH_VERSION" ]; then
+	    shell_name="fish"
+	else
+	    shell_name="unknown"
+	fi
+	
+	
+	# alias h='func() { curl cht.sh/"$1"; }; func'
+	# recreate above but it should work for both fish or bash
+	if [ "$shell_name" = "bash" ]; then
+	    h() {
+	        curl cht.sh/"$1"
+	    }
+	elif [ "$shell_name" = "fish" ]; then
+	    function h
+	        curl cht.sh/"$argv"
+	    end
+	fi
+|3,0,0,1,23,0,1720620661,"#!/bin/bash","","# check if shell is fish or bash","if [ -n \"$BASH_VERSION\" ]; then","    shell_name=\"bash\"","elif [ -n \"$FISH_VERSION\" ]; then","    shell_name=\"fish\"","else","    shell_name=\"unknown\"","fi","","","# alias h='func() { curl cht.sh/\"$1\"; }; func'","# recreate above but it should work for both fish or bash","if [ \"$shell_name\" = \"bash\" ]; then","    h() {","        curl cht.sh/\"$1\"","    }",>43
+|<"elif [ \"$shell_name\" = \"fish\" ]; then","    function h","        curl cht.sh/\"$argv\"","    end","fi"
+""1	LINE	0
+	# eval "$(mcfly init bash)"
+|3,1,1,1,1,0,1720620679,"# eval \"$(mcfly init bash)\""
 "2	LINE	0
+	#!/bin/bash
 	
-|3,0,2,1,1,0,1720367308,""
+	# check if shell is fish or bash
+	if [ -n "$BASH_VERSION" ]; then
+	    shell_name="bash"
+	elif [ -n "$FISH_VERSION" ]; then
+	    shell_name="fish"
+	else
+	    shell_name="unknown"
+	fi
+	
+	
+	# alias h='func() { curl cht.sh/"$1"; }; func'
+	# recreate above but it should work for both fish or bash
+	if [ "$shell_name" = "bash" ]; then
+	    h() {
+	        curl cht.sh/"$1"
+	    }
+	elif [ "$shell_name" = "fish" ]; then
+	    function h
+	        curl cht.sh/"$argv"
+	    end
+	fi
+|3,0,2,1,23,0,1720620025,"#!/bin/bash","","# check if shell is fish or bash","if [ -n \"$BASH_VERSION\" ]; then","    shell_name=\"bash\"","elif [ -n \"$FISH_VERSION\" ]; then","    shell_name=\"fish\"","else","    shell_name=\"unknown\"","fi","","","# alias h='func() { curl cht.sh/\"$1\"; }; func'","# recreate above but it should work for both fish or bash","if [ \"$shell_name\" = \"bash\" ]; then","    h() {","        curl cht.sh/\"$1\"","    }",>43
+|<"elif [ \"$shell_name\" = \"fish\" ]; then","    function h","        curl cht.sh/\"$argv\"","    end","fi"
 "3	LINE	0
-	let is_linux = has("linux")
-	let xclip_installed = executable("xclip")
-	
-	if !is_linux || !xclip_installed
-	  finish
-	endif
-	
-	function! s:LinuxCopy()
-	    let reg_save = getreg('a')
-	    silent normal! gv"ay
-	    let selection = getreg('a')
-	    call setreg('a', reg_save)
-	
-	    let path = tempname()
-	    let lines = split(selection, '\n')
-	    call writefile(lines, path)
-	    call system('xclip -selection clipboard '.shellescape(path))
-	    call delete(path)
-	
-	endfunction
-	
-	" vnoremap <silent> gy :call LinuxCopy()<cr>
-	vnoremap <silent> <C-c> :<c-u>call <SID>LinuxCopy()<cr>
-	
-|3,0,3,1,24,0,1720367299,"let is_linux = has(\"linux\")","let xclip_installed = executable(\"xclip\")","","if !is_linux || !xclip_installed","  finish","endif","","function! s:LinuxCopy()","    let reg_save = getreg('a')","    silent normal! gv\"ay","    let selection = getreg('a')","    call setreg('a', reg_save)","","    let path = tempname()","    let lines = split(selection, '\\n')","    call writefile(lines, path)",>66
-|<"    call system('xclip -selection clipboard '.shellescape(path))","    call delete(path)","","endfunction","","\" vnoremap <silent> gy :call LinuxCopy()<cr>","vnoremap <silent> <C-c> :<c-u>call <SID>LinuxCopy()<cr>",""
+	# usage:
+|3,0,3,1,1,0,1720619881,"# usage:"
 "4	LINE	0
-	let
-|3,0,4,1,1,0,1720367233,"let"
+	    echo "You are using fish"
+|3,0,4,1,1,0,1720619795,"    echo \"You are using fish\""
 "5	LINE	0
-	    call system('xclip -selection clipboard '.shellescape(path))
-|3,0,5,1,1,0,1720367228,"    call system('xclip -selection clipboard '.shellescape(path))"
+	    echo "You are using something else"
+|3,0,5,1,1,0,1720619781,"    echo \"You are using something else\""
 "6	LINE	0
-	    echoerr "Lines: ".string(lines)
-|3,0,6,1,1,0,1720367097,"    echoerr \"Lines: \".string(lines)"
+	#
+|3,0,6,1,1,0,1720578860,"#"
 "7	LINE	0
-	    let path = tempname()
-|3,0,7,1,1,0,1720367097,"    let path = tempname()"
+	    ic(suggestions())
+|3,0,7,1,1,0,1720576813,"    ic(suggestions())"
 "8	LINE	0
-	    endif
-|3,0,8,1,1,0,1720367004,"    endif"
+	URL: https://cookierunkingdom.fandom.com/wiki/Mystic_Flour_Cookie, Status: 200
+|3,0,8,1,1,0,1720527517,"URL: https://cookierunkingdom.fandom.com/wiki/Mystic_Flour_Cookie, Status: 200"
 "9	LINE	0
-	        echoerr "Mode: long"
-|3,0,9,1,1,0,1720367001,"        echoerr \"Mode: long\""
+	URL: https://cookierunkingdom.fandom.com/wiki/Dark_Cacao_Cookie_(Dragon_Lord), Status: 200
+|3,0,9,1,1,0,1720527517,"URL: https://cookierunkingdom.fandom.com/wiki/Dark_Cacao_Cookie_(Dragon_Lord), Status: 200"
 "j	CHAR	0
 	kc
 |3,0,19,0,1,0,1718434816,"kc"
@@ -11333,262 +11444,826 @@ $
 "s	CHAR	0
 	https://rsms.me/inter/
 |3,0,28,0,1,0,1718483440,"https://rsms.me/inter/"
-""-	CHAR	0
-	\
-|3,1,36,0,1,0,1720369089,"\\"
+"-	CHAR	0
+	server <TAB>
+|3,0,36,0,1,0,1720620661,"server <TAB>"
 
 # File marks:
-'0  3  0  ~/bash/hack.bash
-|4,48,3,0,1720369119,"~/bash/hack.bash"
-'1  3  0  ~/bash/hack.bash
-|4,49,3,0,1720369119,"~/bash/hack.bash"
-'2  17  30  ~/.vim/plugin/xclip.vim
-|4,50,17,30,1720368942,"~/.vim/plugin/xclip.vim"
-'3  17  30  ~/.vim/plugin/xclip.vim
-|4,51,17,30,1720368942,"~/.vim/plugin/xclip.vim"
-'4  17  30  ~/.vim/plugin/xclip.vim
-|4,52,17,30,1720368942,"~/.vim/plugin/xclip.vim"
-'5  17  30  ~/.vim/plugin/xclip.vim
-|4,53,17,30,1720368942,"~/.vim/plugin/xclip.vim"
-'6  16  0  ~/.vim/plugin/xclip.vim
-|4,54,16,0,1720346303,"~/.vim/plugin/xclip.vim"
-'7  18  0  ~/.vim/plugin/xclip.vim
-|4,55,18,0,1720346303,"~/.vim/plugin/xclip.vim"
-'8  16  0  ~/.vim/plugin/xclip.vim
-|4,56,16,0,1720346303,"~/.vim/plugin/xclip.vim"
-'9  18  0  ~/.vim/plugin/xclip.vim
-|4,57,18,0,1720346303,"~/.vim/plugin/xclip.vim"
+'0  18  0  ~/.config/setup.sh
+|4,48,18,0,1720620826,"~/.config/setup.sh"
+'1  24  0  ~/.config/alias.sh
+|4,49,24,0,1720620511,"~/.config/alias.sh"
+'2  24  0  ~/.config/alias.sh
+|4,50,24,0,1720620511,"~/.config/alias.sh"
+'3  14  0  ~/.config/alias.sh
+|4,51,14,0,1720620455,"~/.config/alias.sh"
+'4  14  0  ~/.config/alias.sh
+|4,52,14,0,1720620455,"~/.config/alias.sh"
+'5  14  0  ~/.config/alias.sh
+|4,53,14,0,1720620455,"~/.config/alias.sh"
+'6  14  0  ~/.config/alias.sh
+|4,54,14,0,1720620455,"~/.config/alias.sh"
+'7  17  0  ~/.config/alias.sh
+|4,55,17,0,1720620376,"~/.config/alias.sh"
+'8  17  0  ~/.config/alias.sh
+|4,56,17,0,1720620376,"~/.config/alias.sh"
+'9  17  0  ~/.config/alias.sh
+|4,57,17,0,1720620376,"~/.config/alias.sh"
 
 # Jumplist (newest first):
--'  3  0  ~/bash/hack.bash
-|4,39,3,0,1720369119,"~/bash/hack.bash"
--'  3  0  ~/bash/hack.bash
-|4,39,3,0,1720369119,"~/bash/hack.bash"
--'  2  51  ~/bash/hack.bash
-|4,39,2,51,1720369098,"~/bash/hack.bash"
--'  2  51  ~/bash/hack.bash
-|4,39,2,51,1720369098,"~/bash/hack.bash"
--'  1  0  ~/bash/hack.bash
-|4,39,1,0,1720369000,"~/bash/hack.bash"
--'  1  0  ~/bash/hack.bash
-|4,39,1,0,1720369000,"~/bash/hack.bash"
--'  17  30  ~/.vim/plugin/xclip.vim
-|4,39,17,30,1720368942,"~/.vim/plugin/xclip.vim"
--'  17  30  ~/.vim/plugin/xclip.vim
-|4,39,17,30,1720368942,"~/.vim/plugin/xclip.vim"
--'  17  30  ~/.vim/plugin/xclip.vim
-|4,39,17,30,1720368942,"~/.vim/plugin/xclip.vim"
--'  5  0  ~/.vim/plugin/xclip.vim
-|4,39,5,0,1720367336,"~/.vim/plugin/xclip.vim"
--'  5  0  ~/.vim/plugin/xclip.vim
-|4,39,5,0,1720367336,"~/.vim/plugin/xclip.vim"
--'  5  0  ~/.vim/plugin/xclip.vim
-|4,39,5,0,1720367336,"~/.vim/plugin/xclip.vim"
--'  1  0  ~/.vim/plugin/xclip.vim
-|4,39,1,0,1720367299,"~/.vim/plugin/xclip.vim"
--'  1  0  ~/.vim/plugin/xclip.vim
-|4,39,1,0,1720367299,"~/.vim/plugin/xclip.vim"
--'  1  0  ~/.vim/plugin/xclip.vim
-|4,39,1,0,1720367299,"~/.vim/plugin/xclip.vim"
--'  13  0  ~/.vim/plugin/xclip.vim
-|4,39,13,0,1720367291,"~/.vim/plugin/xclip.vim"
--'  13  0  ~/.vim/plugin/xclip.vim
-|4,39,13,0,1720367291,"~/.vim/plugin/xclip.vim"
--'  13  0  ~/.vim/plugin/xclip.vim
-|4,39,13,0,1720367291,"~/.vim/plugin/xclip.vim"
--'  14  0  ~/.vim/plugin/xclip.vim
-|4,39,14,0,1720367290,"~/.vim/plugin/xclip.vim"
--'  14  0  ~/.vim/plugin/xclip.vim
-|4,39,14,0,1720367290,"~/.vim/plugin/xclip.vim"
--'  14  0  ~/.vim/plugin/xclip.vim
-|4,39,14,0,1720367290,"~/.vim/plugin/xclip.vim"
--'  18  0  ~/.vim/plugin/xclip.vim
-|4,39,18,0,1720367287,"~/.vim/plugin/xclip.vim"
--'  18  0  ~/.vim/plugin/xclip.vim
-|4,39,18,0,1720367287,"~/.vim/plugin/xclip.vim"
--'  18  0  ~/.vim/plugin/xclip.vim
-|4,39,18,0,1720367287,"~/.vim/plugin/xclip.vim"
--'  16  23  ~/.vim/plugin/xclip.vim
-|4,39,16,23,1720367121,"~/.vim/plugin/xclip.vim"
--'  16  23  ~/.vim/plugin/xclip.vim
-|4,39,16,23,1720367121,"~/.vim/plugin/xclip.vim"
--'  16  23  ~/.vim/plugin/xclip.vim
-|4,39,16,23,1720367121,"~/.vim/plugin/xclip.vim"
--'  15  4  ~/.vim/plugin/xclip.vim
-|4,39,15,4,1720367115,"~/.vim/plugin/xclip.vim"
--'  15  4  ~/.vim/plugin/xclip.vim
-|4,39,15,4,1720367115,"~/.vim/plugin/xclip.vim"
--'  15  4  ~/.vim/plugin/xclip.vim
-|4,39,15,4,1720367115,"~/.vim/plugin/xclip.vim"
--'  7  0  ~/.vim/plugin/xclip.vim
-|4,39,7,0,1720367105,"~/.vim/plugin/xclip.vim"
--'  7  0  ~/.vim/plugin/xclip.vim
-|4,39,7,0,1720367105,"~/.vim/plugin/xclip.vim"
--'  7  0  ~/.vim/plugin/xclip.vim
-|4,39,7,0,1720367105,"~/.vim/plugin/xclip.vim"
--'  6  4  ~/.vim/plugin/xclip.vim
-|4,39,6,4,1720366687,"~/.vim/plugin/xclip.vim"
--'  6  4  ~/.vim/plugin/xclip.vim
-|4,39,6,4,1720366687,"~/.vim/plugin/xclip.vim"
--'  6  4  ~/.vim/plugin/xclip.vim
-|4,39,6,4,1720366687,"~/.vim/plugin/xclip.vim"
--'  373  6  ~/.vim/vimrc
-|4,39,373,6,1720366642,"~/.vim/vimrc"
--'  373  6  ~/.vim/vimrc
-|4,39,373,6,1720366642,"~/.vim/vimrc"
--'  373  6  ~/.vim/vimrc
-|4,39,373,6,1720366642,"~/.vim/vimrc"
--'  24  51  ~/.vim/plugin/xclip.vim
-|4,39,24,51,1720366545,"~/.vim/plugin/xclip.vim"
--'  24  51  ~/.vim/plugin/xclip.vim
-|4,39,24,51,1720366545,"~/.vim/plugin/xclip.vim"
--'  24  51  ~/.vim/plugin/xclip.vim
-|4,39,24,51,1720366545,"~/.vim/plugin/xclip.vim"
--'  23  0  ~/.vim/plugin/xclip.vim
-|4,39,23,0,1720366412,"~/.vim/plugin/xclip.vim"
--'  23  0  ~/.vim/plugin/xclip.vim
-|4,39,23,0,1720366412,"~/.vim/plugin/xclip.vim"
--'  23  0  ~/.vim/plugin/xclip.vim
-|4,39,23,0,1720366412,"~/.vim/plugin/xclip.vim"
--'  18  0  ~/.vim/plugin/xclip.vim
-|4,39,18,0,1720346303,"~/.vim/plugin/xclip.vim"
--'  15  0  ~/.vim/plugin/xclip.vim
-|4,39,15,0,1720346209,"~/.vim/plugin/xclip.vim"
--'  27  0  ~/.vim/plugin/xclip.vim
-|4,39,27,0,1720346182,"~/.vim/plugin/xclip.vim"
--'  27  0  ~/.vim/plugin/xclip.vim
-|4,39,27,0,1720346182,"~/.vim/plugin/xclip.vim"
--'  27  0  ~/.vim/plugin/xclip.vim
-|4,39,27,0,1720346182,"~/.vim/plugin/xclip.vim"
--'  27  0  ~/.vim/plugin/xclip.vim
-|4,39,27,0,1720346182,"~/.vim/plugin/xclip.vim"
--'  4  0  ~/.vim/plugin/xclip.vim
-|4,39,4,0,1720346178,"~/.vim/plugin/xclip.vim"
--'  4  0  ~/.vim/plugin/xclip.vim
-|4,39,4,0,1720346178,"~/.vim/plugin/xclip.vim"
--'  4  0  ~/.vim/plugin/xclip.vim
-|4,39,4,0,1720346178,"~/.vim/plugin/xclip.vim"
--'  5  0  ~/.vim/plugin/xclip.vim
-|4,39,5,0,1720346178,"~/.vim/plugin/xclip.vim"
--'  5  0  ~/.vim/plugin/xclip.vim
-|4,39,5,0,1720346178,"~/.vim/plugin/xclip.vim"
--'  1  0  ~/.vim/plugin/xclip.vim
-|4,39,1,0,1720346168,"~/.vim/plugin/xclip.vim"
--'  1  0  ~/.vim/plugin/xclip.vim
-|4,39,1,0,1720346168,"~/.vim/plugin/xclip.vim"
--'  1  0  ~/[Plugins]
-|4,39,1,0,1719882902,"~/[Plugins]"
--'  1  0  ~/[Plugins]
-|4,39,1,0,1719882902,"~/[Plugins]"
--'  1  0  ~/[Plugins]
-|4,39,1,0,1719882902,"~/[Plugins]"
--'  1  0  ~/[Plugins]
-|4,39,1,0,1719882902,"~/[Plugins]"
--'  1  0  ~/[Plugins]
-|4,39,1,0,1719882902,"~/[Plugins]"
--'  1  0  ~/[Plugins]
-|4,39,1,0,1719882902,"~/[Plugins]"
--'  1  0  ~/[Plugins]
-|4,39,1,0,1719882902,"~/[Plugins]"
--'  6  0  ~/[Plugins]
-|4,39,6,0,1719882901,"~/[Plugins]"
--'  6  0  ~/[Plugins]
-|4,39,6,0,1719882901,"~/[Plugins]"
--'  6  0  ~/[Plugins]
-|4,39,6,0,1719882901,"~/[Plugins]"
--'  6  0  ~/[Plugins]
-|4,39,6,0,1719882901,"~/[Plugins]"
--'  6  0  ~/[Plugins]
-|4,39,6,0,1719882901,"~/[Plugins]"
--'  6  0  ~/[Plugins]
-|4,39,6,0,1719882901,"~/[Plugins]"
--'  6  0  ~/[Plugins]
-|4,39,6,0,1719882901,"~/[Plugins]"
--'  7  0  ~/[Plugins]
-|4,39,7,0,1719882898,"~/[Plugins]"
--'  7  0  ~/[Plugins]
-|4,39,7,0,1719882898,"~/[Plugins]"
--'  7  0  ~/[Plugins]
-|4,39,7,0,1719882898,"~/[Plugins]"
--'  7  0  ~/[Plugins]
-|4,39,7,0,1719882898,"~/[Plugins]"
--'  7  0  ~/[Plugins]
-|4,39,7,0,1719882898,"~/[Plugins]"
--'  7  0  ~/[Plugins]
-|4,39,7,0,1719882898,"~/[Plugins]"
--'  7  0  ~/[Plugins]
-|4,39,7,0,1719882898,"~/[Plugins]"
--'  2  0  ~/[Plugins]
-|4,39,2,0,1719882892,"~/[Plugins]"
--'  2  0  ~/[Plugins]
-|4,39,2,0,1719882892,"~/[Plugins]"
--'  2  0  ~/[Plugins]
-|4,39,2,0,1719882892,"~/[Plugins]"
--'  2  0  ~/[Plugins]
-|4,39,2,0,1719882892,"~/[Plugins]"
--'  2  0  ~/[Plugins]
-|4,39,2,0,1719882892,"~/[Plugins]"
--'  2  0  ~/[Plugins]
-|4,39,2,0,1719882892,"~/[Plugins]"
--'  2  0  ~/[Plugins]
-|4,39,2,0,1719882892,"~/[Plugins]"
--'  1  0  ~/.git-credentials
-|4,39,1,0,1719880833,"~/.git-credentials"
--'  1  0  ~/.git-credentials
-|4,39,1,0,1719880833,"~/.git-credentials"
--'  1  0  ~/.git-credentials
-|4,39,1,0,1719880833,"~/.git-credentials"
--'  1  0  ~/.git-credentials
-|4,39,1,0,1719880833,"~/.git-credentials"
--'  1  0  ~/.git-credentials
-|4,39,1,0,1719880833,"~/.git-credentials"
--'  1  0  ~/.git-credentials
-|4,39,1,0,1719880833,"~/.git-credentials"
--'  1  0  ~/.git-credentials
-|4,39,1,0,1719880833,"~/.git-credentials"
--'  1  0  ~/.sqliterc
-|4,39,1,0,1719880818,"~/.sqliterc"
--'  1  0  ~/.sqliterc
-|4,39,1,0,1719880818,"~/.sqliterc"
--'  1  0  ~/.sqliterc
-|4,39,1,0,1719880818,"~/.sqliterc"
--'  1  0  ~/.sqliterc
-|4,39,1,0,1719880818,"~/.sqliterc"
--'  1  0  ~/.sqliterc
-|4,39,1,0,1719880818,"~/.sqliterc"
--'  1  0  ~/.sqliterc
-|4,39,1,0,1719880818,"~/.sqliterc"
+-'  18  0  ~/.config/setup.sh
+|4,39,18,0,1720620826,"~/.config/setup.sh"
+-'  26  82  ~/.config/setup.sh
+|4,39,26,82,1720620705,"~/.config/setup.sh"
+-'  29  175  ~/.config/setup.sh
+|4,39,29,175,1720620661,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.fish
+|4,39,1,0,1720620600,"~/.config/setup.fish"
+-'  10  17  ~/.config/alias.sh
+|4,39,10,17,1720620598,"~/.config/alias.sh"
+-'  1  0  ~/.config/alias.sh
+|4,39,1,0,1720620525,"~/.config/alias.sh"
+-'  24  0  ~/.config/alias.sh
+|4,39,24,0,1720620511,"~/.config/alias.sh"
+-'  24  0  ~/.config/alias.sh
+|4,39,24,0,1720620511,"~/.config/alias.sh"
+-'  1  0  ~/.config/alias.sh
+|4,39,1,0,1720620483,"~/.config/alias.sh"
+-'  14  0  ~/.config/alias.sh
+|4,39,14,0,1720620455,"~/.config/alias.sh"
+-'  14  0  ~/.config/alias.sh
+|4,39,14,0,1720620455,"~/.config/alias.sh"
+-'  14  0  ~/.config/alias.sh
+|4,39,14,0,1720620455,"~/.config/alias.sh"
+-'  1  0  ~/.config/alias.sh
+|4,39,1,0,1720620442,"~/.config/alias.sh"
+-'  17  0  ~/.config/alias.sh
+|4,39,17,0,1720620376,"~/.config/alias.sh"
+-'  17  0  ~/.config/alias.sh
+|4,39,17,0,1720620376,"~/.config/alias.sh"
+-'  17  0  ~/.config/alias.sh
+|4,39,17,0,1720620376,"~/.config/alias.sh"
+-'  17  0  ~/.config/alias.sh
+|4,39,17,0,1720620376,"~/.config/alias.sh"
+-'  1  0  ~/.config/alias.sh
+|4,39,1,0,1720620369,"~/.config/alias.sh"
+-'  19  1  ~/.config/setup.fish
+|4,39,19,1,1720620348,"~/.config/setup.fish"
+-'  19  1  ~/.config/setup.fish
+|4,39,19,1,1720620348,"~/.config/setup.fish"
+-'  19  1  ~/.config/setup.fish
+|4,39,19,1,1720620348,"~/.config/setup.fish"
+-'  19  1  ~/.config/setup.fish
+|4,39,19,1,1720620348,"~/.config/setup.fish"
+-'  19  1  ~/.config/setup.fish
+|4,39,19,1,1720620348,"~/.config/setup.fish"
+-'  1  7  ~/.config/setup.fish
+|4,39,1,7,1720620345,"~/.config/setup.fish"
+-'  1  7  ~/.config/setup.fish
+|4,39,1,7,1720620345,"~/.config/setup.fish"
+-'  1  7  ~/.config/setup.fish
+|4,39,1,7,1720620345,"~/.config/setup.fish"
+-'  1  7  ~/.config/setup.fish
+|4,39,1,7,1720620345,"~/.config/setup.fish"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1720620140,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1720620140,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1720620140,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1720620140,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1720620140,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1720620140,"~/.config/setup.sh"
+-'  26  0  ~/.config/alias.sh
+|4,39,26,0,1720620135,"~/.config/alias.sh"
+-'  26  0  ~/.config/alias.sh
+|4,39,26,0,1720620135,"~/.config/alias.sh"
+-'  26  0  ~/.config/alias.sh
+|4,39,26,0,1720620135,"~/.config/alias.sh"
+-'  26  0  ~/.config/alias.sh
+|4,39,26,0,1720620135,"~/.config/alias.sh"
+-'  26  0  ~/.config/alias.sh
+|4,39,26,0,1720620135,"~/.config/alias.sh"
+-'  26  0  ~/.config/alias.sh
+|4,39,26,0,1720620135,"~/.config/alias.sh"
+-'  26  0  ~/.config/alias.sh
+|4,39,26,0,1720620135,"~/.config/alias.sh"
+-'  1  0  ~/.config/alias.sh
+|4,39,1,0,1720620112,"~/.config/alias.sh"
+-'  1  0  ~/.config/alias.sh
+|4,39,1,0,1720620112,"~/.config/alias.sh"
+-'  1  0  ~/.config/alias.sh
+|4,39,1,0,1720620112,"~/.config/alias.sh"
+-'  17  0  ~/.config/setup.sh
+|4,39,17,0,1720620111,"~/.config/setup.sh"
+-'  17  0  ~/.config/setup.sh
+|4,39,17,0,1720620111,"~/.config/setup.sh"
+-'  17  0  ~/.config/setup.sh
+|4,39,17,0,1720620111,"~/.config/setup.sh"
+-'  17  0  ~/.config/setup.sh
+|4,39,17,0,1720620111,"~/.config/setup.sh"
+-'  17  0  ~/.config/setup.sh
+|4,39,17,0,1720620111,"~/.config/setup.sh"
+-'  17  0  ~/.config/setup.sh
+|4,39,17,0,1720620111,"~/.config/setup.sh"
+-'  17  0  ~/.config/setup.sh
+|4,39,17,0,1720620111,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1720620103,"~/.config/setup.sh"
+-'  30  1  ~/.config/alias.sh
+|4,39,30,1,1720620027,"~/.config/alias.sh"
+-'  30  1  ~/.config/alias.sh
+|4,39,30,1,1720620027,"~/.config/alias.sh"
+-'  30  1  ~/.config/alias.sh
+|4,39,30,1,1720620027,"~/.config/alias.sh"
+-'  30  1  ~/.config/alias.sh
+|4,39,30,1,1720620027,"~/.config/alias.sh"
+-'  30  1  ~/.config/alias.sh
+|4,39,30,1,1720620027,"~/.config/alias.sh"
+-'  30  1  ~/.config/alias.sh
+|4,39,30,1,1720620027,"~/.config/alias.sh"
+-'  30  1  ~/.config/alias.sh
+|4,39,30,1,1720620027,"~/.config/alias.sh"
+-'  30  1  ~/.config/alias.sh
+|4,39,30,1,1720620027,"~/.config/alias.sh"
+-'  27  0  ~/.config/alias.sh
+|4,39,27,0,1720619900,"~/.config/alias.sh"
+-'  25  0  ~/.config/alias.sh
+|4,39,25,0,1720619900,"~/.config/alias.sh"
+-'  27  0  ~/.config/alias.sh
+|4,39,27,0,1720619900,"~/.config/alias.sh"
+-'  25  0  ~/.config/alias.sh
+|4,39,25,0,1720619900,"~/.config/alias.sh"
+-'  27  0  ~/.config/alias.sh
+|4,39,27,0,1720619900,"~/.config/alias.sh"
+-'  25  0  ~/.config/alias.sh
+|4,39,25,0,1720619900,"~/.config/alias.sh"
+-'  27  0  ~/.config/alias.sh
+|4,39,27,0,1720619900,"~/.config/alias.sh"
+-'  25  0  ~/.config/alias.sh
+|4,39,25,0,1720619900,"~/.config/alias.sh"
+-'  27  0  ~/.config/alias.sh
+|4,39,27,0,1720619900,"~/.config/alias.sh"
+-'  25  0  ~/.config/alias.sh
+|4,39,25,0,1720619900,"~/.config/alias.sh"
+-'  27  0  ~/.config/alias.sh
+|4,39,27,0,1720619900,"~/.config/alias.sh"
+-'  25  0  ~/.config/alias.sh
+|4,39,25,0,1720619900,"~/.config/alias.sh"
+-'  27  0  ~/.config/alias.sh
+|4,39,27,0,1720619900,"~/.config/alias.sh"
+-'  25  0  ~/.config/alias.sh
+|4,39,25,0,1720619900,"~/.config/alias.sh"
+-'  27  0  ~/.config/alias.sh
+|4,39,27,0,1720619900,"~/.config/alias.sh"
+-'  25  0  ~/.config/alias.sh
+|4,39,25,0,1720619900,"~/.config/alias.sh"
+-'  1  0  ~/.config/alias.sh
+|4,39,1,0,1720619674,"~/.config/alias.sh"
+-'  1  0  ~/.config/alias.sh
+|4,39,1,0,1720619674,"~/.config/alias.sh"
+-'  28  80  ~/.config/setup.sh
+|4,39,28,80,1720619661,"~/.config/setup.sh"
+-'  28  80  ~/.config/setup.sh
+|4,39,28,80,1720619661,"~/.config/setup.sh"
+-'  28  80  ~/.config/setup.sh
+|4,39,28,80,1720619661,"~/.config/setup.sh"
+-'  28  80  ~/.config/setup.sh
+|4,39,28,80,1720619661,"~/.config/setup.sh"
+-'  28  80  ~/.config/setup.sh
+|4,39,28,80,1720619661,"~/.config/setup.sh"
+-'  28  80  ~/.config/setup.sh
+|4,39,28,80,1720619661,"~/.config/setup.sh"
+-'  28  80  ~/.config/setup.sh
+|4,39,28,80,1720619661,"~/.config/setup.sh"
+-'  28  80  ~/.config/setup.sh
+|4,39,28,80,1720619661,"~/.config/setup.sh"
+-'  28  80  ~/.config/setup.sh
+|4,39,28,80,1720619661,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1720619633,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1720619633,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1720619633,"~/.config/setup.sh"
+-'  192  154  ~/ui-components-css/templates/components/search.html
+|4,39,192,154,1720619521,"~/ui-components-css/templates/components/search.html"
+-'  192  154  ~/ui-components-css/templates/components/search.html
+|4,39,192,154,1720619521,"~/ui-components-css/templates/components/search.html"
+-'  192  154  ~/ui-components-css/templates/components/search.html
+|4,39,192,154,1720619521,"~/ui-components-css/templates/components/search.html"
+-'  192  154  ~/ui-components-css/templates/components/search.html
+|4,39,192,154,1720619521,"~/ui-components-css/templates/components/search.html"
+-'  192  154  ~/ui-components-css/templates/components/search.html
+|4,39,192,154,1720619521,"~/ui-components-css/templates/components/search.html"
+-'  192  154  ~/ui-components-css/templates/components/search.html
+|4,39,192,154,1720619521,"~/ui-components-css/templates/components/search.html"
+-'  192  154  ~/ui-components-css/templates/components/search.html
+|4,39,192,154,1720619521,"~/ui-components-css/templates/components/search.html"
+-'  192  154  ~/ui-components-css/templates/components/search.html
+|4,39,192,154,1720619521,"~/ui-components-css/templates/components/search.html"
+-'  192  154  ~/ui-components-css/templates/components/search.html
+|4,39,192,154,1720619521,"~/ui-components-css/templates/components/search.html"
+-'  192  154  ~/ui-components-css/templates/components/search.html
+|4,39,192,154,1720619521,"~/ui-components-css/templates/components/search.html"
+-'  192  154  ~/ui-components-css/templates/components/search.html
+|4,39,192,154,1720619521,"~/ui-components-css/templates/components/search.html"
 
 # Buffer list:
-%~/bash/hack.bash	3	0
+%~/.config/alias.sh	10	17
+%~/.config/setup.fish	1	0
+%~/.config/setup.sh	18	0
 
 # History of marks within files (newest to oldest):
 
-> ~/bash/hack.bash
-	*	1720369117	0
-	"	3	0
-	^	2	52
-	.	2	0
-	+	2	34
-	+	3	14
-	+	2	0
+> ~/.config/setup.sh
+	*	1720620824	0
+	"	18	0
+	^	30	0
+	.	30	0
+	+	17	68
+	+	17	27
+	+	7	0
+	+	6	1
+	+	17	34
+	+	6	0
+	+	7	0
+	+	17	0
+	+	6	0
+	+	17	0
+	+	5	0
+	+	6	0
+	+	17	0
+	+	7	0
+	+	17	0
+	+	17	1
+	+	17	8
+	+	17	10
+	+	17	155
+	+	17	8
+	+	17	123
+	+	17	0
+	+	31	26
+	+	32	27
+	+	9	41
+	+	13	23
+	+	16	0
+	+	13	75
+	+	16	0
+	+	13	63
+	+	16	0
+	+	13	54
+	+	17	71
+	+	17	89
+	+	17	0
+	+	15	38
+	+	14	0
+	+	14	13
+	+	14	0
+	+	17	9
+	+	17	17
+	+	32	0
+	+	6	0
+	+	19	0
+	+	17	14
+	+	34	34
+	+	13	0
+	+	13	29
+	+	1	11
+	+	17	0
+	+	18	0
+	+	17	0
+	+	28	0
+	+	13	0
+	+	14	0
+	+	17	0
+	+	34	0
+	+	10	0
+	+	17	0
+	+	49	35
+	+	32	1
+	+	35	0
+	+	49	0
+	+	32	0
+	+	31	0
+	+	25	0
+	+	20	0
+	+	51	45
+	+	48	1
+	+	49	0
+	+	43	42
+	+	1	1
+	+	31	1
+	+	33	41
+	+	12	0
+	+	11	0
+	+	10	0
+	+	4	14
+	+	3	0
+	+	29	193
+	+	29	162
+	+	32	0
+	+	31	82
+	+	27	0
+	+	30	0
 
-> ~/.vim/plugin/xclip.vim
-	*	1720368332	0
-	"	17	30
-	.	5	0
+> ~/.config/setup.fish
+	*	1720620598	0
+	"	1	0
+	^	1	8
+	.	1	0
+	+	6	0
+	+	6	4
+	+	6	7
+	+	6	0
+	+	6	21
+	+	6	24
+	+	6	11
+	+	6	0
+	+	6	22
+	+	6	24
+	+	6	22
+	+	6	0
+	+	6	5
+	+	6	40
+	+	9	34
+	+	6	0
+	+	6	43
+	+	6	42
+	+	6	0
+	+	6	45
+	+	6	5
+	+	6	0
+	+	6	9
+	+	6	5
+	+	6	0
+	+	6	9
+	+	6	39
+	+	6	9
+	+	6	0
+	+	6	20
+	+	6	19
+	+	6	23
+	+	6	8
+	+	6	23
+	+	6	9
+	+	6	0
+	+	16	1
+	+	6	0
+	+	22	0
+	+	10	0
+	+	10	13
+	+	10	0
+	+	24	21
+	+	24	18
+	+	24	0
+	+	24	42
 	+	24	0
 	+	23	0
 	+	24	0
+	+	6	0
+	+	6	44
+	+	6	0
+	+	6	4
+	+	6	0
+	+	6	7
+	+	6	37
+	+	6	24
+	+	6	7
+	+	6	5
+	+	6	25
+	+	6	13
+	+	6	30
+	+	6	7
+	+	6	0
+	+	6	21
+	+	6	0
+	+	8	0
+	+	9	1
+	+	6	0
+	+	9	0
+	+	8	0
+	+	9	32
+	+	6	23
+	+	6	0
+	+	6	19
+	+	6	0
+	+	6	26
+	+	6	10
+	+	6	5
+	+	6	0
+	+	6	37
+	+	6	0
+	+	6	22
+	+	6	58
+	+	6	0
+	+	7	30
+	+	9	18
+	+	24	0
+	+	25	0
+	+	26	0
+	+	25	29
+	+	26	11
+	+	28	34
+	+	29	0
+	+	10	0
+	+	21	55
+	+	21	0
+	+	13	82
+	+	14	80
+	+	1	0
+
+> ~/.config/alias.sh
+	*	1720620594	0
+	"	10	17
+	^	30	2
+	.	30	0
+	+	2	0
+	+	15	37
+	+	29	77
+	+	29	42
+	+	29	47
+	+	29	32
+	+	30	39
+	+	31	40
+	+	32	79
+	+	32	0
+	+	32	36
+	+	32	20
+	+	32	25
+	+	33	45
+	+	34	0
+	+	32	0
+	+	29	0
+	+	33	19
+	+	16	60
+	+	19	0
+	+	29	0
+	+	18	13
+	+	29	10
+	+	19	0
+	+	11	0
+	+	10	72
+	+	9	6
+	+	29	1
+	+	30	0
+	+	29	1
+	+	19	14
+	+	12	1
+	+	2	0
+	+	20	45
+	+	12	0
+	+	28	0
+	+	24	0
+	+	20	53
+	+	22	0
+	+	21	8
+	+	17	39
+	+	27	0
+	+	25	0
+	+	26	30
+	+	27	0
+	+	28	33
+	+	29	44
+	+	30	1
+	+	30	0
+
+> ~/bash/chtsh_help.bash
+	*	1720620025	0
+	"	1	0
+	.	1	0
+	+	1	1
+	+	1	0
+	+	1	13
+	+	1	4
+	+	1	20
+	+	1	23
+	+	1	20
+	+	1	0
+
+> ~/ui-components-css/templates/components/search.html
+	*	1720619519	0
+	"	192	154
+	^	192	155
+	.	192	154
+	+	72	13
+	+	60	13
+	+	64	0
+	+	68	7
+	+	60	20
+	+	68	37
+	+	58	33
+	+	53	40
+	+	13	0
+	+	53	21
+	+	84	43
+	+	54	23
+	+	85	16
+	+	55	32
+	+	86	16
+	+	2	22
+	+	53	6
+	+	226	25
+	+	298	41
+	+	59	0
+	+	58	0
+	+	59	24
+	+	59	0
+	+	20	0
+	+	20	8
+	+	20	0
+	+	58	0
+	+	59	0
+	+	52	0
+	+	53	0
+	+	51	0
+	+	41	4
+	+	39	0
+	+	160	16
+	+	20	0
+	+	20	17
+	+	20	0
+	+	20	19
+	+	20	12
+	+	20	0
+	+	20	4
+	+	160	25
+	+	20	0
+	+	43	29
+	+	50	0
+	+	44	8
+	+	45	8
+	+	50	0
+	+	49	0
+	+	47	11
+	+	49	0
+	+	63	0
+	+	48	25
+	+	39	0
+	+	20	0
+	+	81	31
+	+	48	31
+	+	46	41
+	+	91	0
+	+	73	4
+	+	90	4
+	+	134	4
+	+	139	4
+	+	122	8
+	+	135	8
+	+	86	8
+	+	82	12
+	+	82	0
+	+	78	0
+	+	204	0
+	+	203	124
+	+	197	210
+	+	59	1
+	+	160	12
+	+	197	146
+	+	197	20
+	+	28	0
+	+	194	143
+	+	225	31
+	+	194	0
+	+	210	0
+	+	41	0
+	+	40	29
+	+	41	55
+	+	40	13
+	+	40	0
+	+	42	13
+	+	41	24
+	+	40	13
+	+	42	0
+	+	41	24
+	+	40	0
+	+	292	0
+	+	69	32
+	+	221	122
+	+	221	49
+	+	222	49
+	+	223	79
+	+	224	19
+	+	192	154
+
+> ~/.bash_completion
+	*	1720578875	0
+	"	3	0
+	.	5	0
+	+	5	0
+
+> ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/argcomplete/bash_completion.d/_python-argcomplete
+	*	1720578872	0
+	"	58	0
+
+> ~/pyscripts/completion.bash
+	*	1720578801	0
+	"	80	48
+	^	69	15
+	.	69	14
+	+	69	14
+
+> ~/pyscripts/server.py
+	*	1720576913	0
+	"	3	0
+	.	45	0
+	+	4	0
+	+	13	17
+	+	29	27
+	+	11	8
+	+	30	8
+	+	31	72
+	+	32	26
+	+	14	10
+	+	33	67
+	+	60	0
+	+	34	48
+	+	60	0
+	+	34	74
+	+	35	4
+	+	28	14
+	+	45	16
+	+	35	0
+	+	45	11
+	+	60	12
+	+	44	23
+	+	44	0
+	+	35	15
+	+	45	9
+	+	60	12
+	+	35	33
+	+	28	10
+	+	45	19
+	+	37	18
+	+	38	17
+	+	45	15
+	+	43	0
+	+	41	4
+	+	43	0
+	+	45	38
+	+	60	0
+	+	46	54
+	+	48	36
+	+	49	30
+	+	54	27
+	+	60	0
+	+	54	6
+	+	56	6
+	+	59	4
+	+	16	0
+	+	21	0
+	+	47	0
+	+	50	5
+	+	52	5
+	+	22	0
+	+	27	0
+	+	46	42
+	+	1	0
+	+	2	0
+	+	3	0
+	+	45	0
+
+> ~/ui-components-css/.envrc
+	*	1720527722	0
+	"	1	0
+	.	2	0
+	+	1	0
+	+	2	0
+
+> ~/ui-components-css/.gitignore
+	*	1720527721	0
+	"	1	0
+	^	4	13
+	.	4	12
+	+	3	4
+	+	4	12
+
+> ~/crk-main/.gitignore
+	*	1720527579	0
+	"	6	12
+	^	6	13
+	.	6	12
+	+	5	5
+	+	6	12
+
+> ~/crk-main/individual_get_all_cookies.py
+	*	1720527527	0
+	"	97	4
+	^	98	0
+	.	95	0
+	+	40	11
+	+	42	8
+	+	42	0
+	+	40	73
+	+	42	17
+	+	42	26
+	+	42	18
+	+	42	33
+	+	42	0
+	+	42	30
+	+	43	0
+	+	42	36
+	+	42	26
+	+	42	4
+	+	42	14
+	+	34	0
+	+	42	0
+	+	34	0
+	+	35	23
+	+	34	0
+	+	29	33
+	+	30	7
+	+	31	54
+	+	32	29
+	+	34	0
+	+	36	0
+	+	30	0
+	+	14	0
+	+	41	35
+	+	42	35
+	+	29	0
+	+	42	38
+	+	42	34
+	+	42	0
+	+	36	0
+	+	15	0
+	+	13	0
+	+	35	59
+	+	29	0
+	+	42	8
+	+	42	0
+	+	42	20
+	+	42	0
+	+	23	52
+	+	24	4
+	+	40	54
+	+	42	0
+	+	43	0
+	+	92	56
+	+	35	43
+	+	92	54
+	+	35	37
+	+	36	0
+	+	35	37
+	+	35	0
+	+	35	29
+	+	35	0
+	+	20	26
+	+	35	36
+	+	92	0
+	+	35	57
+	+	29	45
+	+	23	61
+	+	35	78
+	+	93	0
+	+	10	0
+	+	93	0
+	+	90	10
+	+	43	0
+	+	17	0
+	+	19	0
+	+	88	0
+	+	90	0
+	+	79	0
+	+	79	17
+	+	79	15
+	+	93	0
+	+	94	51
+	+	95	43
+	+	96	31
+	+	97	45
+	+	95	19
+	+	79	0
+	+	77	43
+	+	21	29
+	+	61	29
+	+	44	111
+	+	59	28
+	+	63	94
+	+	98	0
+	+	95	0
+	a	92	16
+
+> ~/.vim/plugin/xclip.vim
+	*	1720526187	0
+	"	18	5
+	.	18	0
+	+	25	0
+	+	24	0
+	+	25	0
 	+	14	0
 	+	16	28
 	+	16	27
-	+	24	29
+	+	25	29
 	+	7	25
 	+	7	0
-	+	25	0
+	+	26	0
 	+	8	11
-	+	24	39
+	+	25	39
 	+	16	0
 	+	7	41
 	+	7	25
@@ -11610,29 +12285,292 @@ $
 	+	16	28
 	+	16	27
 	+	16	0
-	+	21	0
+	+	22	0
 	+	14	25
 	+	14	0
-	+	21	0
+	+	22	0
 	+	16	37
 	+	17	23
 	+	17	34
 	+	16	0
 	+	17	0
 	+	14	3
-	+	19	87
-	+	19	0
+	+	20	87
+	+	20	0
 	+	14	0
 	+	1	0
-	+	21	0
+	+	22	0
 	+	11	0
 	+	9	0
-	+	20	0
+	+	21	0
 	+	5	0
+	+	18	17
+	+	19	16
+	+	18	17
+	+	19	22
+	+	19	30
+	+	19	54
+	+	14	0
+	+	19	34
+	+	21	0
+	+	19	0
+	+	18	0
 
 > /usr/share/vim/vim90/doc/builtin.txt
-	*	1720367029	0
-	"	2160	29
+	*	1720526011	0
+	"	9440	42
+
+> ~/crk-main/batch_get_all_cookies.py
+	*	1720525215	0
+	"	110	28
+	^	110	29
+	.	110	28
+	+	65	24
+	+	110	28
+
+> ~/crk-main/get_all_cookies_batch.py
+	*	1720525143	0
+	"	1	0
+
+> ~/crk-main/get_all_cookies_batch
+	*	1720525122	0
+	"	1	0
+
+> ~/crk-main/get-all-cookies-batch.py
+	*	1720525114	0
+	"	103	34
+	^	110	29
+	.	110	28
+	+	65	25
+	+	105	12
+	+	110	28
+
+> ~/crk-main/get-all-cookies.py
+	*	1720525083	0
+	"	84	4
+	^	92	49
+	.	92	48
+	+	49	0
+	+	48	19
+	+	47	40
+	+	23	7
+	+	66	7
+	+	64	0
+	+	66	68
+	+	107	0
+	+	67	32
+	+	68	31
+	+	69	54
+	+	70	50
+	+	71	16
+	+	72	31
+	+	107	16
+	+	107	4
+	+	70	7
+	+	71	14
+	+	72	16
+	+	73	4
+	+	70	21
+	+	73	40
+	+	74	4
+	+	82	17
+	+	73	56
+	+	74	4
+	+	82	0
+	+	75	35
+	+	82	0
+	+	107	0
+	+	82	4
+	+	107	0
+	+	82	36
+	+	82	0
+	+	82	13
+	+	82	0
+	+	82	26
+	+	94	0
+	+	78	0
+	+	80	0
+	+	79	0
+	+	105	0
+	+	78	15
+	+	105	0
+	+	78	0
+	+	85	8
+	+	87	29
+	+	88	31
+	+	86	15
+	+	94	80
+	+	63	10
+	+	107	0
+	+	100	14
+	+	102	8
+	+	81	9
+	+	96	62
+	+	103	13
+	+	103	24
+	+	104	27
+	+	103	14
+	+	103	21
+	+	103	16
+	+	104	23
+	+	103	0
+	+	105	8
+	+	102	25
+	+	100	9
+	+	105	0
+	+	100	5
+	+	100	0
+	+	98	12
+	+	105	0
+	+	102	0
+	+	103	0
+	+	100	0
+	+	99	0
+	+	100	0
+	+	97	0
+	+	98	0
+	+	100	4
+	+	99	0
+	+	103	29
+	+	103	20
+	+	95	0
+	+	93	94
+	+	103	0
+	+	93	55
+	+	89	64
+	+	103	0
+	+	89	63
+	+	101	10
+	+	102	13
+	+	102	0
+	+	102	19
+	+	103	11
+	+	101	0
+	+	91	45
+	+	92	48
+
+> /tmp/crk.txt
+	*	1720520702	0
+	"	30	0
+	.	30	0
+	+	32	0
+	+	1	0
+	+	30	0
+
+> ~/crk-main/requirements.txt
+	*	1720520501	0
+	"	6	2
+	^	6	3
+	.	6	2
+	+	5	7
+	+	6	2
+
+> ~/crk-main/crk-main-api.py
+	*	1720520211	0
+	"	1	0
+
+> ~/genproject/python-flask-tailwind.sh
+	*	1720520197	0
+	"	1	0
+	^	2	38
+	.	19	0
+	+	17	3
+	+	18	3
+	+	17	1
+	+	20	1
+	+	24	0
+	+	21	94
+	+	6	1
+	+	8	5
+	+	12	5
+	+	17	5
+	+	17	3
+	+	18	3
+	+	21	5
+	+	12	55
+	+	8	19
+	+	9	5
+	+	12	35
+	+	13	3
+	+	14	3
+	+	12	6
+	+	17	6
+	+	17	0
+	+	12	0
+	+	10	1
+	+	8	2
+	+	9	3
+	+	8	1
+	+	9	1
+	+	12	1
+	+	13	1
+	+	14	1
+	+	17	1
+	+	18	1
+	+	24	1
+	+	24	9
+	+	21	31
+	+	24	65
+	+	20	0
+	+	21	1
+	+	16	21
+	+	18	0
+	+	24	0
+	+	21	0
+	+	20	0
+	+	24	0
+	+	16	0
+	+	14	0
+	+	13	0
+	+	12	0
+	+	11	6
+	+	10	0
+	+	9	0
+	+	8	0
+	+	7	17
+	+	6	0
+	+	22	0
+	+	24	1
+	+	24	0
+	+	24	23
+	+	24	5
+	+	22	0
+	+	21	22
+	+	22	19
+	+	23	11
+	+	24	0
+	+	21	0
+	+	21	24
+	+	19	0
+	+	22	0
+	+	15	0
+	+	21	0
+	+	5	0
+	+	2	37
+	+	5	14
+	+	5	0
+	+	24	0
+	+	5	0
+	+	24	0
+	+	5	0
+	+	3	16
+	+	5	0
+	+	4	0
+	+	5	28
+	+	2	3
+	+	2	0
+	+	1	0
+	+	10	0
+	+	19	0
+
+> ~/bash/hack.bash
+	*	1720369117	0
+	"	3	0
+	^	2	52
+	.	2	0
+	+	2	34
+	+	3	14
+	+	2	0
 
 > ~/.vim/vimrc
 	*	1720366640	0
@@ -11945,52 +12883,6 @@ $
 	+	10	0
 	+	14	0
 
-> ~/.config/alias.sh
-	*	1719654762	0
-	"	18	6
-	^	20	9
-	.	20	8
-	+	2	0
-	+	15	37
-	+	26	77
-	+	26	42
-	+	26	47
-	+	26	32
-	+	27	39
-	+	28	40
-	+	29	79
-	+	29	0
-	+	29	36
-	+	29	20
-	+	29	25
-	+	30	45
-	+	31	0
-	+	29	0
-	+	26	0
-	+	30	19
-	+	16	60
-	+	18	0
-	+	26	0
-	+	17	13
-	+	26	10
-	+	18	0
-	+	11	0
-	+	10	72
-	+	9	6
-	+	26	1
-	+	27	0
-	+	26	1
-	+	18	14
-	+	12	1
-	+	2	0
-	+	19	45
-	+	12	0
-	+	25	0
-	+	23	0
-	+	19	53
-	+	21	0
-	+	20	8
-
 > ~/.config/.git/config
 	*	1719654626	0
 	"	7	15
@@ -12048,90 +12940,6 @@ $
 	+	2	0
 	+	1	1
 
-> ~/.config/setup.sh
-	*	1719652216	0
-	"	1	0
-	^	8	29
-	.	8	0
-	+	15	68
-	+	15	27
-	+	5	0
-	+	4	1
-	+	15	34
-	+	4	0
-	+	5	0
-	+	15	0
-	+	4	0
-	+	15	0
-	+	3	0
-	+	4	0
-	+	15	0
-	+	5	0
-	+	15	0
-	+	15	1
-	+	15	8
-	+	15	10
-	+	15	155
-	+	15	8
-	+	15	123
-	+	15	0
-	+	26	26
-	+	27	27
-	+	7	41
-	+	11	23
-	+	14	0
-	+	11	75
-	+	14	0
-	+	11	63
-	+	14	0
-	+	11	54
-	+	15	71
-	+	15	89
-	+	15	0
-	+	13	38
-	+	12	0
-	+	12	13
-	+	12	0
-	+	15	9
-	+	15	17
-	+	28	0
-	+	4	0
-	+	17	0
-	+	15	14
-	+	30	34
-	+	11	0
-	+	11	29
-	+	1	11
-	+	15	0
-	+	16	0
-	+	15	0
-	+	25	0
-	+	11	0
-	+	12	0
-	+	15	0
-	+	30	0
-	+	8	0
-	+	15	0
-	+	45	35
-	+	27	1
-	+	31	0
-	+	45	0
-	+	27	0
-	+	28	0
-	+	26	0
-	+	23	0
-	+	18	0
-	+	47	45
-	+	44	1
-	+	45	0
-	+	39	42
-	+	1	1
-	+	26	1
-	+	29	41
-	+	10	0
-	+	9	0
-	+	8	0
-
 > ~/.config/yazi/keymap.toml
 	*	1719501887	0
 	"	30	6
@@ -12184,171 +12992,6 @@ $
 > ~/test-1/requirements.txt
 	*	1719501054	0
 	"	1	0
-
-> ~/.config/setup.fish
-	*	1719435439	0
-	"	14	80
-	^	14	81
-	.	14	80
-	+	6	0
-	+	6	4
-	+	6	7
-	+	6	0
-	+	6	21
-	+	6	24
-	+	6	11
-	+	6	0
-	+	6	22
-	+	6	24
-	+	6	22
-	+	6	0
-	+	6	5
-	+	6	40
-	+	9	34
-	+	6	0
-	+	6	43
-	+	6	42
-	+	6	0
-	+	6	45
-	+	6	5
-	+	6	0
-	+	6	9
-	+	6	5
-	+	6	0
-	+	6	9
-	+	6	39
-	+	6	9
-	+	6	0
-	+	6	20
-	+	6	19
-	+	6	23
-	+	6	8
-	+	6	23
-	+	6	9
-	+	6	0
-	+	16	1
-	+	6	0
-	+	22	0
-	+	10	0
-	+	10	13
-	+	10	0
-	+	24	21
-	+	24	18
-	+	24	0
-	+	24	42
-	+	24	0
-	+	23	0
-	+	24	0
-	+	6	0
-	+	6	44
-	+	6	0
-	+	6	4
-	+	6	0
-	+	6	7
-	+	6	37
-	+	6	24
-	+	6	7
-	+	6	5
-	+	6	25
-	+	6	13
-	+	6	30
-	+	6	7
-	+	6	0
-	+	6	21
-	+	6	0
-	+	8	0
-	+	9	1
-	+	6	0
-	+	9	0
-	+	8	0
-	+	9	32
-	+	6	23
-	+	6	0
-	+	6	19
-	+	6	0
-	+	6	26
-	+	6	10
-	+	6	5
-	+	6	0
-	+	6	37
-	+	6	0
-	+	6	22
-	+	6	58
-	+	6	0
-	+	7	30
-	+	9	18
-	+	24	0
-	+	25	0
-	+	26	0
-	+	25	29
-	+	26	11
-	+	28	34
-	+	29	0
-	+	10	0
-	+	21	55
-	+	21	0
-	+	13	82
-	+	14	80
-
-> ~/pyscripts/server.py
-	*	1719400458	0
-	"	3	0
-	^	3	0
-	.	3	0
-	+	4	0
-	+	13	17
-	+	29	27
-	+	11	8
-	+	30	8
-	+	31	72
-	+	32	26
-	+	14	10
-	+	33	67
-	+	60	0
-	+	34	48
-	+	60	0
-	+	34	74
-	+	35	4
-	+	28	14
-	+	45	16
-	+	35	0
-	+	45	11
-	+	60	12
-	+	44	23
-	+	44	0
-	+	35	15
-	+	45	9
-	+	60	12
-	+	35	33
-	+	28	10
-	+	45	19
-	+	37	18
-	+	38	17
-	+	45	15
-	+	43	0
-	+	41	4
-	+	43	0
-	+	45	38
-	+	60	0
-	+	46	54
-	+	48	36
-	+	49	30
-	+	54	27
-	+	60	0
-	+	54	6
-	+	56	6
-	+	59	4
-	+	16	0
-	+	21	0
-	+	47	0
-	+	50	5
-	+	52	5
-	+	22	0
-	+	27	0
-	+	46	42
-	+	1	0
-	+	2	0
-	+	3	0
 
 > ~/pyscripts/viewlog.py
 	*	1719400457	0
@@ -12456,100 +13099,6 @@ $
 	+	93	0
 	a	143	16
 
-> ~/genproject/python-flask-tailwind.sh
-	*	1719399800	0
-	"	19	0
-	^	2	38
-	.	19	0
-	+	17	3
-	+	18	3
-	+	17	1
-	+	20	1
-	+	24	0
-	+	21	94
-	+	6	1
-	+	8	5
-	+	12	5
-	+	17	5
-	+	17	3
-	+	18	3
-	+	21	5
-	+	12	55
-	+	8	19
-	+	9	5
-	+	12	35
-	+	13	3
-	+	14	3
-	+	12	6
-	+	17	6
-	+	17	0
-	+	12	0
-	+	10	1
-	+	8	2
-	+	9	3
-	+	8	1
-	+	9	1
-	+	12	1
-	+	13	1
-	+	14	1
-	+	17	1
-	+	18	1
-	+	24	1
-	+	24	9
-	+	21	31
-	+	24	65
-	+	20	0
-	+	21	1
-	+	16	21
-	+	18	0
-	+	24	0
-	+	21	0
-	+	20	0
-	+	24	0
-	+	16	0
-	+	14	0
-	+	13	0
-	+	12	0
-	+	11	6
-	+	10	0
-	+	9	0
-	+	8	0
-	+	7	17
-	+	6	0
-	+	22	0
-	+	24	1
-	+	24	0
-	+	24	23
-	+	24	5
-	+	22	0
-	+	21	22
-	+	22	19
-	+	23	11
-	+	24	0
-	+	21	0
-	+	21	24
-	+	19	0
-	+	22	0
-	+	15	0
-	+	21	0
-	+	5	0
-	+	2	37
-	+	5	14
-	+	5	0
-	+	24	0
-	+	5	0
-	+	24	0
-	+	5	0
-	+	3	16
-	+	5	0
-	+	4	0
-	+	5	28
-	+	2	3
-	+	2	0
-	+	1	0
-	+	10	0
-	+	19	0
-
 > ~/genproject/python.sh
 	*	1719399796	0
 	"	1	0
@@ -12656,112 +13205,6 @@ $
 	.	14	36
 	+	1	0
 	+	14	36
-
-> ~/ui-components-css/templates/components/search.html
-	*	1719397291	0
-	"	221	49
-	^	223	20
-	.	223	19
-	+	76	0
-	+	72	13
-	+	60	13
-	+	64	0
-	+	68	7
-	+	60	20
-	+	68	37
-	+	58	33
-	+	53	40
-	+	13	0
-	+	53	21
-	+	84	43
-	+	54	23
-	+	85	16
-	+	55	32
-	+	86	16
-	+	2	22
-	+	53	6
-	+	225	25
-	+	297	41
-	+	59	0
-	+	58	0
-	+	59	24
-	+	59	0
-	+	20	0
-	+	20	8
-	+	20	0
-	+	58	0
-	+	59	0
-	+	52	0
-	+	53	0
-	+	51	0
-	+	41	4
-	+	39	0
-	+	160	16
-	+	20	0
-	+	20	17
-	+	20	0
-	+	20	19
-	+	20	12
-	+	20	0
-	+	20	4
-	+	160	25
-	+	20	0
-	+	43	29
-	+	50	0
-	+	44	8
-	+	45	8
-	+	50	0
-	+	49	0
-	+	47	11
-	+	49	0
-	+	63	0
-	+	48	25
-	+	39	0
-	+	20	0
-	+	81	31
-	+	48	31
-	+	46	41
-	+	91	0
-	+	73	4
-	+	90	4
-	+	134	4
-	+	139	4
-	+	122	8
-	+	135	8
-	+	86	8
-	+	82	12
-	+	82	0
-	+	78	0
-	+	203	0
-	+	202	124
-	+	196	210
-	+	59	1
-	+	160	12
-	+	196	146
-	+	196	20
-	+	28	0
-	+	193	143
-	+	224	31
-	+	193	0
-	+	209	0
-	+	41	0
-	+	40	29
-	+	41	55
-	+	40	13
-	+	40	0
-	+	42	13
-	+	41	24
-	+	40	13
-	+	42	0
-	+	41	24
-	+	40	0
-	+	291	0
-	+	69	32
-	+	220	122
-	+	220	49
-	+	221	49
-	+	222	79
-	+	223	19
 
 > ~/pyscripts/last-mod.py
 	*	1719362540	0
@@ -14938,14 +15381,6 @@ $
 	+	42	0
 	+	41	13
 
-> ~/ui-components-css/.gitignore
-	*	1718453593	0
-	"	1	0
-	^	4	13
-	.	4	12
-	+	3	4
-	+	4	12
-
 > ~/.config/repos.txt
 	*	1718453564	0
 	"	1	0
@@ -16230,13 +16665,6 @@ $
 > ~/ui-components-css/app.py
 	*	1717912653	0
 	"	1	0
-
-> ~/ui-components-css/.envrc
-	*	1717912218	0
-	"	1	0
-	.	2	0
-	+	1	0
-	+	2	0
 
 > ~/ui-components-css/requirements.txt
 	*	1717912143	0
