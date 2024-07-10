@@ -21,9 +21,11 @@ $
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1720622835,,"q"
+|2,0,1720633906,,"q"
 :qa
-|2,0,1720622173,,"qa"
+|2,0,1720633693,,"qa"
+:e simpler-vcs-git.txt
+|2,0,1720633661,,"e simpler-vcs-git.txt"
 :113
 |2,0,1720622115,,"113"
 :e setup.sh
@@ -11366,15 +11368,21 @@ $
 	
 |3,0,0,1,1,0,1720622125,""
 ""1	LINE	0
-	    "/home/vivek/
-|3,1,1,1,1,0,1720622833,"    \"/home/vivek/"
-"2	LINE	0
 	
-|3,0,2,1,1,0,1720622123,""
+|3,1,1,1,1,0,1720633878,""
+"2	LINE	0
+	export DISPLAY=192.168.29.52:0.0
+|3,0,2,1,1,0,1720633579,"export DISPLAY=192.168.29.52:0.0"
 "3	LINE	0
-	# eval "$(mcfly init bash)"
-|3,0,3,1,1,0,1720620679,"# eval \"$(mcfly init bash)\""
+	    "/home/vivek/
+|3,0,3,1,1,0,1720622833,"    \"/home/vivek/"
 "4	LINE	0
+	
+|3,0,4,1,1,0,1720622123,""
+"5	LINE	0
+	# eval "$(mcfly init bash)"
+|3,0,5,1,1,0,1720620679,"# eval \"$(mcfly init bash)\""
+"6	LINE	0
 	#!/bin/bash
 	
 	# check if shell is fish or bash
@@ -11398,23 +11406,17 @@ $
 	        curl cht.sh/"$argv"
 	    end
 	fi
-|3,0,4,1,23,0,1720620025,"#!/bin/bash","","# check if shell is fish or bash","if [ -n \"$BASH_VERSION\" ]; then","    shell_name=\"bash\"","elif [ -n \"$FISH_VERSION\" ]; then","    shell_name=\"fish\"","else","    shell_name=\"unknown\"","fi","","","# alias h='func() { curl cht.sh/\"$1\"; }; func'","# recreate above but it should work for both fish or bash","if [ \"$shell_name\" = \"bash\" ]; then","    h() {","        curl cht.sh/\"$1\"","    }",>43
+|3,0,6,1,23,0,1720620025,"#!/bin/bash","","# check if shell is fish or bash","if [ -n \"$BASH_VERSION\" ]; then","    shell_name=\"bash\"","elif [ -n \"$FISH_VERSION\" ]; then","    shell_name=\"fish\"","else","    shell_name=\"unknown\"","fi","","","# alias h='func() { curl cht.sh/\"$1\"; }; func'","# recreate above but it should work for both fish or bash","if [ \"$shell_name\" = \"bash\" ]; then","    h() {","        curl cht.sh/\"$1\"","    }",>43
 |<"elif [ \"$shell_name\" = \"fish\" ]; then","    function h","        curl cht.sh/\"$argv\"","    end","fi"
-"5	LINE	0
-	# usage:
-|3,0,5,1,1,0,1720619881,"# usage:"
-"6	LINE	0
-	    echo "You are using fish"
-|3,0,6,1,1,0,1720619795,"    echo \"You are using fish\""
 "7	LINE	0
-	    echo "You are using something else"
-|3,0,7,1,1,0,1720619781,"    echo \"You are using something else\""
+	# usage:
+|3,0,7,1,1,0,1720619881,"# usage:"
 "8	LINE	0
-	#
-|3,0,8,1,1,0,1720578860,"#"
+	    echo "You are using fish"
+|3,0,8,1,1,0,1720619795,"    echo \"You are using fish\""
 "9	LINE	0
-	    ic(suggestions())
-|3,0,9,1,1,0,1720576813,"    ic(suggestions())"
+	    echo "You are using something else"
+|3,0,9,1,1,0,1720619781,"    echo \"You are using something else\""
 "j	CHAR	0
 	kc
 |3,0,19,0,1,0,1718434816,"kc"
@@ -11432,32 +11434,184 @@ $
 |3,0,36,0,1,0,1720620661,"server <TAB>"
 
 # File marks:
-'0  9  0  ~/.config/direnv/direnv.toml
-|4,48,9,0,1720622835,"~/.config/direnv/direnv.toml"
-'1  29  163  ~/.config/setup.sh
-|4,49,29,163,1720622288,"~/.config/setup.sh"
-'2  29  163  ~/.config/setup.sh
-|4,50,29,163,1720622288,"~/.config/setup.sh"
-'3  142  13  ~/pyscripts/viewlog.py
-|4,51,142,13,1720622174,"~/pyscripts/viewlog.py"
-'4  142  13  ~/pyscripts/viewlog.py
-|4,52,142,13,1720622174,"~/pyscripts/viewlog.py"
-'5  142  13  ~/pyscripts/viewlog.py
-|4,53,142,13,1720622174,"~/pyscripts/viewlog.py"
-'6  142  13  ~/pyscripts/viewlog.py
-|4,54,142,13,1720622174,"~/pyscripts/viewlog.py"
-'7  17  7  ~/.config/setup.sh
-|4,55,17,7,1720621837,"~/.config/setup.sh"
-'8  17  7  ~/.config/setup.sh
-|4,56,17,7,1720621837,"~/.config/setup.sh"
-'9  17  7  ~/.config/setup.sh
-|4,57,17,7,1720621837,"~/.config/setup.sh"
+'0  1  0  /tmp/crontab.4ej9rj/crontab
+|4,48,1,0,1720633907,"/tmp/crontab.4ej9rj/crontab"
+'1  6  63  ~/.config/setup.sh
+|4,49,6,63,1720633892,"~/.config/setup.sh"
+'2  6  63  ~/.config/setup.sh
+|4,50,6,63,1720633892,"~/.config/setup.sh"
+'3  1  0  /tmp/crontab.6qX0ox/crontab
+|4,51,1,0,1720633845,"/tmp/crontab.6qX0ox/crontab"
+'4  1  0  /tmp/crontab.6qX0ox/crontab
+|4,52,1,0,1720633845,"/tmp/crontab.6qX0ox/crontab"
+'5  1  0  /tmp/crontab.6qX0ox/crontab
+|4,53,1,0,1720633845,"/tmp/crontab.6qX0ox/crontab"
+'6  1  0  /tmp/crontab.6qX0ox/crontab
+|4,54,1,0,1720633845,"/tmp/crontab.6qX0ox/crontab"
+'7  1  0  /tmp/crontab.o2LCZX/crontab
+|4,55,1,0,1720633820,"/tmp/crontab.o2LCZX/crontab"
+'8  1  0  /tmp/crontab.o2LCZX/crontab
+|4,56,1,0,1720633820,"/tmp/crontab.o2LCZX/crontab"
+'9  1  0  /tmp/crontab.o2LCZX/crontab
+|4,57,1,0,1720633820,"/tmp/crontab.o2LCZX/crontab"
 
 # Jumplist (newest first):
+-'  1  0  /tmp/crontab.4ej9rj/crontab
+|4,39,1,0,1720633907,"/tmp/crontab.4ej9rj/crontab"
+-'  6  63  ~/.config/setup.sh
+|4,39,6,63,1720633892,"~/.config/setup.sh"
+-'  6  63  ~/.config/setup.sh
+|4,39,6,63,1720633892,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1720633859,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1720633859,"~/.config/setup.sh"
+-'  1  0  /tmp/crontab.6qX0ox/crontab
+|4,39,1,0,1720633845,"/tmp/crontab.6qX0ox/crontab"
+-'  1  0  /tmp/crontab.6qX0ox/crontab
+|4,39,1,0,1720633845,"/tmp/crontab.6qX0ox/crontab"
+-'  1  0  /tmp/crontab.6qX0ox/crontab
+|4,39,1,0,1720633845,"/tmp/crontab.6qX0ox/crontab"
+-'  1  0  /tmp/crontab.o2LCZX/crontab
+|4,39,1,0,1720633820,"/tmp/crontab.o2LCZX/crontab"
+-'  1  0  /tmp/crontab.o2LCZX/crontab
+|4,39,1,0,1720633820,"/tmp/crontab.o2LCZX/crontab"
+-'  1  0  /tmp/crontab.o2LCZX/crontab
+|4,39,1,0,1720633820,"/tmp/crontab.o2LCZX/crontab"
+-'  1  0  /tmp/crontab.o2LCZX/crontab
+|4,39,1,0,1720633820,"/tmp/crontab.o2LCZX/crontab"
+-'  30  0  ~/tooling/simpler-vcs-git.txt
+|4,39,30,0,1720633694,"~/tooling/simpler-vcs-git.txt"
+-'  30  0  ~/tooling/simpler-vcs-git.txt
+|4,39,30,0,1720633694,"~/tooling/simpler-vcs-git.txt"
+-'  30  0  ~/tooling/simpler-vcs-git.txt
+|4,39,30,0,1720633694,"~/tooling/simpler-vcs-git.txt"
+-'  30  0  ~/tooling/simpler-vcs-git.txt
+|4,39,30,0,1720633694,"~/tooling/simpler-vcs-git.txt"
+-'  30  0  ~/tooling/simpler-vcs-git.txt
+|4,39,30,0,1720633694,"~/tooling/simpler-vcs-git.txt"
+-'  30  0  ~/tooling/simpler-vcs-git.txt
+|4,39,30,0,1720633694,"~/tooling/simpler-vcs-git.txt"
+-'  1  0  ~/tooling/simpler-vcs-git.txt
+|4,39,1,0,1720633661,"~/tooling/simpler-vcs-git.txt"
+-'  1  0  ~/tooling/simpler-vcs-git.txt
+|4,39,1,0,1720633661,"~/tooling/simpler-vcs-git.txt"
+-'  1  0  ~/tooling/simpler-vcs-git.txt
+|4,39,1,0,1720633661,"~/tooling/simpler-vcs-git.txt"
+-'  1  0  ~/tooling/simpler-vcs-git.txt
+|4,39,1,0,1720633661,"~/tooling/simpler-vcs-git.txt"
+-'  1  0  ~/tooling/simpler-vcs-git.txt
+|4,39,1,0,1720633661,"~/tooling/simpler-vcs-git.txt"
+-'  1  0  ~/tooling/simpler-vcs-git.txt
+|4,39,1,0,1720633661,"~/tooling/simpler-vcs-git.txt"
+-'  4  0  ~/.config/setup.sh
+|4,39,4,0,1720633609,"~/.config/setup.sh"
+-'  4  0  ~/.config/setup.sh
+|4,39,4,0,1720633609,"~/.config/setup.sh"
+-'  4  0  ~/.config/setup.sh
+|4,39,4,0,1720633609,"~/.config/setup.sh"
+-'  4  0  ~/.config/setup.sh
+|4,39,4,0,1720633609,"~/.config/setup.sh"
+-'  4  0  ~/.config/setup.sh
+|4,39,4,0,1720633609,"~/.config/setup.sh"
+-'  4  0  ~/.config/setup.sh
+|4,39,4,0,1720633609,"~/.config/setup.sh"
+-'  4  0  ~/.config/setup.sh
+|4,39,4,0,1720633609,"~/.config/setup.sh"
+-'  4  0  ~/.config/setup.sh
+|4,39,4,0,1720633609,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1720633602,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1720633602,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1720633602,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1720633602,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1720633602,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1720633602,"~/.config/setup.sh"
+-'  4  0  ~/.config/setup.sh
+|4,39,4,0,1720633581,"~/.config/setup.sh"
+-'  1  0  ~/.config/setup.sh
+|4,39,1,0,1720633577,"~/.config/setup.sh"
+-'  9  0  ~/.config/direnv/direnv.toml
+|4,39,9,0,1720622835,"~/.config/direnv/direnv.toml"
+-'  9  0  ~/.config/direnv/direnv.toml
+|4,39,9,0,1720622835,"~/.config/direnv/direnv.toml"
+-'  9  0  ~/.config/direnv/direnv.toml
+|4,39,9,0,1720622835,"~/.config/direnv/direnv.toml"
+-'  9  0  ~/.config/direnv/direnv.toml
+|4,39,9,0,1720622835,"~/.config/direnv/direnv.toml"
+-'  9  0  ~/.config/direnv/direnv.toml
+|4,39,9,0,1720622835,"~/.config/direnv/direnv.toml"
+-'  9  0  ~/.config/direnv/direnv.toml
+|4,39,9,0,1720622835,"~/.config/direnv/direnv.toml"
+-'  9  0  ~/.config/direnv/direnv.toml
+|4,39,9,0,1720622835,"~/.config/direnv/direnv.toml"
+-'  9  0  ~/.config/direnv/direnv.toml
+|4,39,9,0,1720622835,"~/.config/direnv/direnv.toml"
+-'  9  0  ~/.config/direnv/direnv.toml
+|4,39,9,0,1720622835,"~/.config/direnv/direnv.toml"
 -'  9  0  ~/.config/direnv/direnv.toml
 |4,39,9,0,1720622835,"~/.config/direnv/direnv.toml"
 -'  1  0  ~/.config/direnv/direnv.toml
 |4,39,1,0,1720622761,"~/.config/direnv/direnv.toml"
+-'  1  0  ~/.config/direnv/direnv.toml
+|4,39,1,0,1720622761,"~/.config/direnv/direnv.toml"
+-'  1  0  ~/.config/direnv/direnv.toml
+|4,39,1,0,1720622761,"~/.config/direnv/direnv.toml"
+-'  1  0  ~/.config/direnv/direnv.toml
+|4,39,1,0,1720622761,"~/.config/direnv/direnv.toml"
+-'  1  0  ~/.config/direnv/direnv.toml
+|4,39,1,0,1720622761,"~/.config/direnv/direnv.toml"
+-'  1  0  ~/.config/direnv/direnv.toml
+|4,39,1,0,1720622761,"~/.config/direnv/direnv.toml"
+-'  1  0  ~/.config/direnv/direnv.toml
+|4,39,1,0,1720622761,"~/.config/direnv/direnv.toml"
+-'  1  0  ~/.config/direnv/direnv.toml
+|4,39,1,0,1720622761,"~/.config/direnv/direnv.toml"
+-'  1  0  ~/.config/direnv/direnv.toml
+|4,39,1,0,1720622761,"~/.config/direnv/direnv.toml"
+-'  1  0  ~/.config/direnv/direnv.toml
+|4,39,1,0,1720622761,"~/.config/direnv/direnv.toml"
+-'  29  163  ~/.config/setup.sh
+|4,39,29,163,1720622288,"~/.config/setup.sh"
+-'  30  163  ~/.config/setup.sh
+|4,39,30,163,1720622288,"~/.config/setup.sh"
+-'  28  163  ~/.config/setup.sh
+|4,39,28,163,1720622288,"~/.config/setup.sh"
+-'  29  163  ~/.config/setup.sh
+|4,39,29,163,1720622288,"~/.config/setup.sh"
+-'  30  163  ~/.config/setup.sh
+|4,39,30,163,1720622288,"~/.config/setup.sh"
+-'  28  163  ~/.config/setup.sh
+|4,39,28,163,1720622288,"~/.config/setup.sh"
+-'  29  163  ~/.config/setup.sh
+|4,39,29,163,1720622288,"~/.config/setup.sh"
+-'  28  163  ~/.config/setup.sh
+|4,39,28,163,1720622288,"~/.config/setup.sh"
+-'  29  163  ~/.config/setup.sh
+|4,39,29,163,1720622288,"~/.config/setup.sh"
+-'  28  163  ~/.config/setup.sh
+|4,39,28,163,1720622288,"~/.config/setup.sh"
+-'  29  163  ~/.config/setup.sh
+|4,39,29,163,1720622288,"~/.config/setup.sh"
+-'  28  163  ~/.config/setup.sh
+|4,39,28,163,1720622288,"~/.config/setup.sh"
+-'  29  163  ~/.config/setup.sh
+|4,39,29,163,1720622288,"~/.config/setup.sh"
+-'  28  163  ~/.config/setup.sh
+|4,39,28,163,1720622288,"~/.config/setup.sh"
+-'  29  163  ~/.config/setup.sh
+|4,39,29,163,1720622288,"~/.config/setup.sh"
+-'  28  163  ~/.config/setup.sh
+|4,39,28,163,1720622288,"~/.config/setup.sh"
+-'  29  163  ~/.config/setup.sh
+|4,39,29,163,1720622288,"~/.config/setup.sh"
+-'  28  163  ~/.config/setup.sh
+|4,39,28,163,1720622288,"~/.config/setup.sh"
 -'  29  163  ~/.config/setup.sh
 |4,39,29,163,1720622288,"~/.config/setup.sh"
 -'  29  163  ~/.config/setup.sh
@@ -11472,236 +11626,63 @@ $
 |4,39,142,13,1720622174,"~/pyscripts/viewlog.py"
 -'  142  13  ~/pyscripts/viewlog.py
 |4,39,142,13,1720622174,"~/pyscripts/viewlog.py"
+-'  142  13  ~/pyscripts/viewlog.py
+|4,39,142,13,1720622174,"~/pyscripts/viewlog.py"
+-'  142  13  ~/pyscripts/viewlog.py
+|4,39,142,13,1720622174,"~/pyscripts/viewlog.py"
+-'  142  13  ~/pyscripts/viewlog.py
+|4,39,142,13,1720622174,"~/pyscripts/viewlog.py"
+-'  142  13  ~/pyscripts/viewlog.py
+|4,39,142,13,1720622174,"~/pyscripts/viewlog.py"
+-'  142  13  ~/pyscripts/viewlog.py
+|4,39,142,13,1720622174,"~/pyscripts/viewlog.py"
+-'  142  13  ~/pyscripts/viewlog.py
+|4,39,142,13,1720622174,"~/pyscripts/viewlog.py"
+-'  142  13  ~/pyscripts/viewlog.py
+|4,39,142,13,1720622174,"~/pyscripts/viewlog.py"
+-'  142  13  ~/pyscripts/viewlog.py
+|4,39,142,13,1720622174,"~/pyscripts/viewlog.py"
+-'  142  13  ~/pyscripts/viewlog.py
+|4,39,142,13,1720622174,"~/pyscripts/viewlog.py"
 -'  156  16  ~/pyscripts/viewlog.py
 |4,39,156,16,1720622130,"~/pyscripts/viewlog.py"
 -'  156  16  ~/pyscripts/viewlog.py
 |4,39,156,16,1720622130,"~/pyscripts/viewlog.py"
 -'  156  16  ~/pyscripts/viewlog.py
 |4,39,156,16,1720622130,"~/pyscripts/viewlog.py"
--'  145  12  ~/pyscripts/viewlog.py
-|4,39,145,12,1720622129,"~/pyscripts/viewlog.py"
--'  145  12  ~/pyscripts/viewlog.py
-|4,39,145,12,1720622129,"~/pyscripts/viewlog.py"
--'  145  12  ~/pyscripts/viewlog.py
-|4,39,145,12,1720622129,"~/pyscripts/viewlog.py"
--'  112  4  ~/pyscripts/viewlog.py
-|4,39,112,4,1720622125,"~/pyscripts/viewlog.py"
--'  112  4  ~/pyscripts/viewlog.py
-|4,39,112,4,1720622125,"~/pyscripts/viewlog.py"
--'  112  4  ~/pyscripts/viewlog.py
-|4,39,112,4,1720622125,"~/pyscripts/viewlog.py"
--'  36  4  ~/pyscripts/viewlog.py
-|4,39,36,4,1720622120,"~/pyscripts/viewlog.py"
--'  36  4  ~/pyscripts/viewlog.py
-|4,39,36,4,1720622120,"~/pyscripts/viewlog.py"
--'  36  4  ~/pyscripts/viewlog.py
-|4,39,36,4,1720622120,"~/pyscripts/viewlog.py"
--'  113  16  ~/pyscripts/viewlog.py
-|4,39,113,16,1720622118,"~/pyscripts/viewlog.py"
--'  113  16  ~/pyscripts/viewlog.py
-|4,39,113,16,1720622118,"~/pyscripts/viewlog.py"
--'  113  16  ~/pyscripts/viewlog.py
-|4,39,113,16,1720622118,"~/pyscripts/viewlog.py"
--'  1  0  ~/pyscripts/viewlog.py
-|4,39,1,0,1720622107,"~/pyscripts/viewlog.py"
--'  1  0  ~/pyscripts/viewlog.py
-|4,39,1,0,1720622107,"~/pyscripts/viewlog.py"
--'  1  0  ~/pyscripts/viewlog.py
-|4,39,1,0,1720622107,"~/pyscripts/viewlog.py"
--'  17  7  ~/.config/setup.sh
-|4,39,17,7,1720621837,"~/.config/setup.sh"
--'  17  7  ~/.config/setup.sh
-|4,39,17,7,1720621837,"~/.config/setup.sh"
--'  17  7  ~/.config/setup.sh
-|4,39,17,7,1720621837,"~/.config/setup.sh"
--'  17  7  ~/.config/setup.sh
-|4,39,17,7,1720621837,"~/.config/setup.sh"
--'  6  0  ~/.config/setup.sh
-|4,39,6,0,1720621833,"~/.config/setup.sh"
--'  6  0  ~/.config/setup.sh
-|4,39,6,0,1720621833,"~/.config/setup.sh"
--'  6  0  ~/.config/setup.sh
-|4,39,6,0,1720621833,"~/.config/setup.sh"
--'  6  0  ~/.config/setup.sh
-|4,39,6,0,1720621833,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1720621830,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1720621830,"~/.config/setup.sh"
--'  34  0  /tmp/crontab.OW9BDt/crontab
-|4,39,34,0,1720621448,"/tmp/crontab.OW9BDt/crontab"
--'  34  0  /tmp/crontab.OW9BDt/crontab
-|4,39,34,0,1720621448,"/tmp/crontab.OW9BDt/crontab"
--'  34  0  /tmp/crontab.OW9BDt/crontab
-|4,39,34,0,1720621448,"/tmp/crontab.OW9BDt/crontab"
--'  34  0  /tmp/crontab.OW9BDt/crontab
-|4,39,34,0,1720621448,"/tmp/crontab.OW9BDt/crontab"
--'  34  0  /tmp/crontab.OW9BDt/crontab
-|4,39,34,0,1720621448,"/tmp/crontab.OW9BDt/crontab"
--'  1  0  /tmp/crontab.OW9BDt/crontab
-|4,39,1,0,1720621443,"/tmp/crontab.OW9BDt/crontab"
--'  1  0  /tmp/crontab.OW9BDt/crontab
-|4,39,1,0,1720621443,"/tmp/crontab.OW9BDt/crontab"
--'  1  0  /tmp/crontab.OW9BDt/crontab
-|4,39,1,0,1720621443,"/tmp/crontab.OW9BDt/crontab"
--'  1  0  /tmp/crontab.OW9BDt/crontab
-|4,39,1,0,1720621443,"/tmp/crontab.OW9BDt/crontab"
--'  1  0  /tmp/crontab.OW9BDt/crontab
-|4,39,1,0,1720621443,"/tmp/crontab.OW9BDt/crontab"
--'  18  0  ~/.config/setup.sh
-|4,39,18,0,1720620826,"~/.config/setup.sh"
--'  18  0  ~/.config/setup.sh
-|4,39,18,0,1720620826,"~/.config/setup.sh"
--'  18  0  ~/.config/setup.sh
-|4,39,18,0,1720620826,"~/.config/setup.sh"
--'  18  0  ~/.config/setup.sh
-|4,39,18,0,1720620826,"~/.config/setup.sh"
--'  18  0  ~/.config/setup.sh
-|4,39,18,0,1720620826,"~/.config/setup.sh"
--'  18  0  ~/.config/setup.sh
-|4,39,18,0,1720620826,"~/.config/setup.sh"
--'  26  82  ~/.config/setup.sh
-|4,39,26,82,1720620705,"~/.config/setup.sh"
--'  26  82  ~/.config/setup.sh
-|4,39,26,82,1720620705,"~/.config/setup.sh"
--'  26  82  ~/.config/setup.sh
-|4,39,26,82,1720620705,"~/.config/setup.sh"
--'  26  82  ~/.config/setup.sh
-|4,39,26,82,1720620705,"~/.config/setup.sh"
--'  26  82  ~/.config/setup.sh
-|4,39,26,82,1720620705,"~/.config/setup.sh"
--'  26  82  ~/.config/setup.sh
-|4,39,26,82,1720620705,"~/.config/setup.sh"
--'  29  175  ~/.config/setup.sh
-|4,39,29,175,1720620661,"~/.config/setup.sh"
--'  29  175  ~/.config/setup.sh
-|4,39,29,175,1720620661,"~/.config/setup.sh"
--'  29  175  ~/.config/setup.sh
-|4,39,29,175,1720620661,"~/.config/setup.sh"
--'  29  175  ~/.config/setup.sh
-|4,39,29,175,1720620661,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.fish
-|4,39,1,0,1720620600,"~/.config/setup.fish"
--'  1  0  ~/.config/setup.fish
-|4,39,1,0,1720620600,"~/.config/setup.fish"
--'  1  0  ~/.config/setup.fish
-|4,39,1,0,1720620600,"~/.config/setup.fish"
--'  1  0  ~/.config/setup.fish
-|4,39,1,0,1720620600,"~/.config/setup.fish"
--'  1  0  ~/.config/setup.fish
-|4,39,1,0,1720620600,"~/.config/setup.fish"
--'  1  0  ~/.config/setup.fish
-|4,39,1,0,1720620600,"~/.config/setup.fish"
--'  10  17  ~/.config/alias.sh
-|4,39,10,17,1720620598,"~/.config/alias.sh"
--'  10  17  ~/.config/alias.sh
-|4,39,10,17,1720620598,"~/.config/alias.sh"
--'  10  17  ~/.config/alias.sh
-|4,39,10,17,1720620598,"~/.config/alias.sh"
--'  10  17  ~/.config/alias.sh
-|4,39,10,17,1720620598,"~/.config/alias.sh"
--'  10  17  ~/.config/alias.sh
-|4,39,10,17,1720620598,"~/.config/alias.sh"
--'  10  17  ~/.config/alias.sh
-|4,39,10,17,1720620598,"~/.config/alias.sh"
--'  1  0  ~/.config/alias.sh
-|4,39,1,0,1720620525,"~/.config/alias.sh"
--'  1  0  ~/.config/alias.sh
-|4,39,1,0,1720620525,"~/.config/alias.sh"
--'  1  0  ~/.config/alias.sh
-|4,39,1,0,1720620525,"~/.config/alias.sh"
--'  1  0  ~/.config/alias.sh
-|4,39,1,0,1720620525,"~/.config/alias.sh"
--'  1  0  ~/.config/alias.sh
-|4,39,1,0,1720620525,"~/.config/alias.sh"
--'  1  0  ~/.config/alias.sh
-|4,39,1,0,1720620525,"~/.config/alias.sh"
--'  24  0  ~/.config/alias.sh
-|4,39,24,0,1720620511,"~/.config/alias.sh"
--'  24  0  ~/.config/alias.sh
-|4,39,24,0,1720620511,"~/.config/alias.sh"
--'  24  0  ~/.config/alias.sh
-|4,39,24,0,1720620511,"~/.config/alias.sh"
--'  24  0  ~/.config/alias.sh
-|4,39,24,0,1720620511,"~/.config/alias.sh"
--'  24  0  ~/.config/alias.sh
-|4,39,24,0,1720620511,"~/.config/alias.sh"
--'  24  0  ~/.config/alias.sh
-|4,39,24,0,1720620511,"~/.config/alias.sh"
--'  24  0  ~/.config/alias.sh
-|4,39,24,0,1720620511,"~/.config/alias.sh"
--'  1  0  ~/.config/alias.sh
-|4,39,1,0,1720620483,"~/.config/alias.sh"
--'  14  0  ~/.config/alias.sh
-|4,39,14,0,1720620455,"~/.config/alias.sh"
--'  14  0  ~/.config/alias.sh
-|4,39,14,0,1720620455,"~/.config/alias.sh"
--'  14  0  ~/.config/alias.sh
-|4,39,14,0,1720620455,"~/.config/alias.sh"
--'  14  0  ~/.config/alias.sh
-|4,39,14,0,1720620455,"~/.config/alias.sh"
--'  14  0  ~/.config/alias.sh
-|4,39,14,0,1720620455,"~/.config/alias.sh"
--'  14  0  ~/.config/alias.sh
-|4,39,14,0,1720620455,"~/.config/alias.sh"
--'  14  0  ~/.config/alias.sh
-|4,39,14,0,1720620455,"~/.config/alias.sh"
--'  14  0  ~/.config/alias.sh
-|4,39,14,0,1720620455,"~/.config/alias.sh"
--'  1  0  ~/.config/alias.sh
-|4,39,1,0,1720620442,"~/.config/alias.sh"
--'  17  0  ~/.config/alias.sh
-|4,39,17,0,1720620376,"~/.config/alias.sh"
--'  17  0  ~/.config/alias.sh
-|4,39,17,0,1720620376,"~/.config/alias.sh"
+-'  156  16  ~/pyscripts/viewlog.py
+|4,39,156,16,1720622130,"~/pyscripts/viewlog.py"
+-'  156  16  ~/pyscripts/viewlog.py
+|4,39,156,16,1720622130,"~/pyscripts/viewlog.py"
+-'  156  16  ~/pyscripts/viewlog.py
+|4,39,156,16,1720622130,"~/pyscripts/viewlog.py"
 
 # Buffer list:
-%~/.config/direnv/direnv.toml	9	0
+%/tmp/crontab.4ej9rj/crontab	1	0
 
 # History of marks within files (newest to oldest):
 
-> ~/.config/direnv/direnv.toml
-	*	1720622834	0
-	"	9	0
-	.	9	0
-	+	3	85
-	+	3	11
-	+	4	27
-	+	5	31
-	+	6	11
-	+	5	0
-	+	9	0
-	+	6	51
-	+	5	40
-	+	4	45
-	+	9	0
-	+	6	27
-	+	6	0
-	+	1	55
-	+	6	27
-	+	5	28
-	+	4	28
-	+	8	34
-	+	7	32
-	+	9	0
+> /tmp/crontab.4ej9rj/crontab
+	*	1720633905	0
+	"	1	0
 
 > ~/.config/setup.sh
-	*	1720622286	0
-	"	29	163
-	^	30	0
-	.	30	0
+	*	1720633891	0
+	"	6	63
+	^	6	64
+	.	6	63
 	+	17	68
 	+	17	27
 	+	7	0
-	+	6	1
+	+	5	1
 	+	17	34
-	+	6	0
+	+	5	0
 	+	7	0
 	+	17	0
-	+	6	0
-	+	17	0
 	+	5	0
-	+	6	0
+	+	17	0
+	+	4	0
+	+	5	0
 	+	17	0
 	+	7	0
 	+	17	0
@@ -11732,7 +11713,7 @@ $
 	+	17	9
 	+	17	17
 	+	32	0
-	+	6	0
+	+	5	0
 	+	19	0
 	+	17	14
 	+	34	34
@@ -11775,6 +11756,46 @@ $
 	+	31	82
 	+	27	0
 	+	30	0
+	+	4	0
+	+	6	17
+	+	6	63
+
+> /tmp/crontab.6qX0ox/crontab
+	*	1720633844	0
+	"	1	0
+
+> /tmp/crontab.o2LCZX/crontab
+	*	1720633818	0
+	"	1	0
+
+> ~/tooling/simpler-vcs-git.txt
+	*	1720633692	0
+	"	30	0
+
+> ~/.config/direnv/direnv.toml
+	*	1720622834	0
+	"	9	0
+	.	9	0
+	+	3	85
+	+	3	11
+	+	4	27
+	+	5	31
+	+	6	11
+	+	5	0
+	+	9	0
+	+	6	51
+	+	5	40
+	+	4	45
+	+	9	0
+	+	6	27
+	+	6	0
+	+	1	55
+	+	6	27
+	+	5	28
+	+	4	28
+	+	8	34
+	+	7	32
+	+	9	0
 
 > ~/pyscripts/viewlog.py
 	*	1720622172	0
