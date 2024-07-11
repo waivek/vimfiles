@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/server
+~MSle0~/shellch
 
 # Last Substitute Search Pattern:
 ~MSle0&200
@@ -21,9 +21,31 @@ $
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1720633906,,"q"
+|2,0,1720704913,,"q"
+:e
+|2,0,1720703396,,"e"
 :qa
-|2,0,1720633693,,"qa"
+|2,0,1720698763,,"qa"
+:term
+|2,0,1720698721,,"term"
+:ALEInfo
+|2,0,1720698329,,"ALEInfo"
+:e cronjob.bash
+|2,0,1720698292,,"e cronjob.bash"
+:e cron-run.bash
+|2,0,1720698220,,"e cron-run.bash"
+:MRU avatar
+|2,0,1720696341,,"MRU avatar"
+:e cronlogger.bash
+|2,0,1720696110,,"e cronlogger.bash"
+:map gd
+|2,0,1720688354,,"map gd"
+:F
+|2,0,1720688301,,"F"
+:edit $MYVIMRC
+|2,0,1720688292,,"edit $MYVIMRC"
+:MRU 
+|2,0,1720680908,,"MRU "
 :e simpler-vcs-git.txt
 |2,0,1720633661,,"e simpler-vcs-git.txt"
 :113
@@ -70,8 +92,6 @@ $
 |2,0,1720525962,,"mes"
 :MRU xclip
 |2,0,1720525918,,"MRU xclip"
-:term
-|2,0,1720525610,,"term"
 :vmap <C-c>
 |2,0,1720525596,,"vmap <C-c>"
 :vmap
@@ -108,8 +128,6 @@ $
 |2,0,1720520499,,"e requirements.txt"
 :MRU xcl
 |2,0,1720520097,,"MRU xcl"
-:MRU 
-|2,0,1720520095,,"MRU "
 :MRU 17:config
 |2,0,1720449937,,"MRU 17:config"
 :h escape(
@@ -190,8 +208,6 @@ $
 |2,0,1719501609,,"retab"
 :%s/\t/    /g
 |2,0,1719501489,,"%s/\\t/    /g"
-:e
-|2,0,1719501176,,"e"
 :e .config/setup.sh
 |2,0,1719435429,,"e .config/setup.sh"
 :e viewlog.py
@@ -268,8 +284,6 @@ $
 |2,0,1719313712,,"e ."
 :%sort u
 |2,0,1719263105,,"%sort u"
-:edit $MYVIMRC
-|2,0,1719009741,,"edit $MYVIMRC"
 :set verbose=20 | quit
 |2,0,1719009688,,"set verbose=20 | quit"
 :set verbosefile=verbose-file.txt
@@ -584,8 +598,6 @@ $
 |2,0,1718457124,,"e ~/bash/timeago.bash"
 :Copilot panel
 |2,0,1718457017,,"Copilot panel"
-:e cron-run.bash
-|2,0,1718453879,,"e cron-run.bash"
 :e data/material-symbols-rounded-subset\[update,home].css
 |2,0,1718450967,,"e data/material-symbols-rounded-subset\\[update,home].css"
 :e data/material-symbols-rounded\[update,home].css
@@ -830,8 +842,6 @@ $
 |2,0,1718198804,,"e output.txt"
 :e .prettierrc
 |2,0,1718197048,,"e .prettierrc"
-:ALEInfo
-|2,0,1718196956,,"ALEInfo"
 :MRU sangee
 |2,0,1718192697,,"MRU sangee"
 :FIND wide-
@@ -4358,8 +4368,6 @@ $
 |2,0,1706005768,,"FIND Por"
 :FIND Video.vue
 |2,0,1705978209,,"FIND Video.vue"
-:F
-|2,0,1705978180,,"F"
 :MRU Vid
 |2,0,1705978011,,"MRU Vid"
 :MRU 1:api.py
@@ -7654,6 +7662,10 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/shellch
+|2,1,1720698332,47,"shellch"
+? @$
+|2,1,1720693165,,"@$"
 ?/server
 |2,1,1720622285,47,"server"
 ?/histfile
@@ -7724,8 +7736,6 @@ $
 |2,1,1719684775,47,"[A-Za-z0-9-]\\{10,\\}"
 ?/GH_TOKEN
 |2,1,1719652216,47,"GH_TOKEN"
-? @$
-|2,1,1719502822,,"@$"
 ?/app
 |2,1,1719501883,47,"app"
 ? {
@@ -11364,59 +11374,53 @@ $
 |2,4,1693311567,,"cont"
 
 # Registers:
-"0	LINE	0
-	
-|3,0,0,1,1,0,1720622125,""
-""1	LINE	0
-	
-|3,1,1,1,1,0,1720633878,""
+""0	LINE	0
+	command_output=$(eval "$command_to_run" 2>&1 | $tee_command)
+|3,1,0,1,1,0,1720698721,"command_output=$(eval \"$command_to_run\" 2>&1 | $tee_command)"
+"1	LINE	0
+	command_output=$(eval "$command_to_run" 2>&1 | $tee_command)
+|3,0,1,1,1,0,1720698433,"command_output=$(eval \"$command_to_run\" 2>&1 | $tee_command)"
 "2	LINE	0
-	export DISPLAY=192.168.29.52:0.0
-|3,0,2,1,1,0,1720633579,"export DISPLAY=192.168.29.52:0.0"
+	start=$(date +%s)
+	$command_to_run
+	
+	exit_code=$?
+	end=$(date +%s)
+	runtime=$((end-start))
+	
+|3,0,2,1,7,0,1720698384,"start=$(date +%s)","$command_to_run","","exit_code=$?","end=$(date +%s)","runtime=$((end-start))",""
 "3	LINE	0
-	    "/home/vivek/
-|3,0,3,1,1,0,1720622833,"    \"/home/vivek/"
+	payload=$(cat <<EOF
+	{
+	  "name": "$command_to_run",
+	  "exit_code": $exit_code,
+	  "runtime": $runtime
+	}
+	
+	
+	EOF
+	)
+	
+	
+|3,0,3,1,12,0,1720698370,"payload=$(cat <<EOF","{","  \"name\": \"$command_to_run\",","  \"exit_code\": $exit_code,","  \"runtime\": $runtime","}","","","EOF",")","",""
 "4	LINE	0
-	
-|3,0,4,1,1,0,1720622123,""
+	curl -X POST -H "Content-Type: application/json" -d "$payload" https://myserver.com/cronlogger.py
+|3,0,4,1,1,0,1720698364,"curl -X POST -H \"Content-Type: application/json\" -d \"$payload\" https://myserver.com/cronlogger.py"
 "5	LINE	0
-	# eval "$(mcfly init bash)"
-|3,0,5,1,1,0,1720620679,"# eval \"$(mcfly init bash)\""
+	
+|3,0,5,1,1,0,1720633878,""
 "6	LINE	0
-	#!/bin/bash
-	
-	# check if shell is fish or bash
-	if [ -n "$BASH_VERSION" ]; then
-	    shell_name="bash"
-	elif [ -n "$FISH_VERSION" ]; then
-	    shell_name="fish"
-	else
-	    shell_name="unknown"
-	fi
-	
-	
-	# alias h='func() { curl cht.sh/"$1"; }; func'
-	# recreate above but it should work for both fish or bash
-	if [ "$shell_name" = "bash" ]; then
-	    h() {
-	        curl cht.sh/"$1"
-	    }
-	elif [ "$shell_name" = "fish" ]; then
-	    function h
-	        curl cht.sh/"$argv"
-	    end
-	fi
-|3,0,6,1,23,0,1720620025,"#!/bin/bash","","# check if shell is fish or bash","if [ -n \"$BASH_VERSION\" ]; then","    shell_name=\"bash\"","elif [ -n \"$FISH_VERSION\" ]; then","    shell_name=\"fish\"","else","    shell_name=\"unknown\"","fi","","","# alias h='func() { curl cht.sh/\"$1\"; }; func'","# recreate above but it should work for both fish or bash","if [ \"$shell_name\" = \"bash\" ]; then","    h() {","        curl cht.sh/\"$1\"","    }",>43
-|<"elif [ \"$shell_name\" = \"fish\" ]; then","    function h","        curl cht.sh/\"$argv\"","    end","fi"
+	export DISPLAY=192.168.29.52:0.0
+|3,0,6,1,1,0,1720633579,"export DISPLAY=192.168.29.52:0.0"
 "7	LINE	0
-	# usage:
-|3,0,7,1,1,0,1720619881,"# usage:"
+	    "/home/vivek/
+|3,0,7,1,1,0,1720622833,"    \"/home/vivek/"
 "8	LINE	0
-	    echo "You are using fish"
-|3,0,8,1,1,0,1720619795,"    echo \"You are using fish\""
+	
+|3,0,8,1,1,0,1720622123,""
 "9	LINE	0
-	    echo "You are using something else"
-|3,0,9,1,1,0,1720619781,"    echo \"You are using something else\""
+	# eval "$(mcfly init bash)"
+|3,0,9,1,1,0,1720620679,"# eval \"$(mcfly init bash)\""
 "j	CHAR	0
 	kc
 |3,0,19,0,1,0,1718434816,"kc"
@@ -11434,241 +11438,545 @@ $
 |3,0,36,0,1,0,1720620661,"server <TAB>"
 
 # File marks:
-'0  1  0  /tmp/crontab.4ej9rj/crontab
-|4,48,1,0,1720633907,"/tmp/crontab.4ej9rj/crontab"
-'1  6  63  ~/.config/setup.sh
-|4,49,6,63,1720633892,"~/.config/setup.sh"
-'2  6  63  ~/.config/setup.sh
-|4,50,6,63,1720633892,"~/.config/setup.sh"
-'3  1  0  /tmp/crontab.6qX0ox/crontab
-|4,51,1,0,1720633845,"/tmp/crontab.6qX0ox/crontab"
-'4  1  0  /tmp/crontab.6qX0ox/crontab
-|4,52,1,0,1720633845,"/tmp/crontab.6qX0ox/crontab"
-'5  1  0  /tmp/crontab.6qX0ox/crontab
-|4,53,1,0,1720633845,"/tmp/crontab.6qX0ox/crontab"
-'6  1  0  /tmp/crontab.6qX0ox/crontab
-|4,54,1,0,1720633845,"/tmp/crontab.6qX0ox/crontab"
-'7  1  0  /tmp/crontab.o2LCZX/crontab
-|4,55,1,0,1720633820,"/tmp/crontab.o2LCZX/crontab"
-'8  1  0  /tmp/crontab.o2LCZX/crontab
-|4,56,1,0,1720633820,"/tmp/crontab.o2LCZX/crontab"
-'9  1  0  /tmp/crontab.o2LCZX/crontab
-|4,57,1,0,1720633820,"/tmp/crontab.o2LCZX/crontab"
+'0  87  0  /var/log/syslog
+|4,48,87,0,1720704914,"/var/log/syslog"
+'1  1  0  /var/log/syslog
+|4,49,1,0,1720699897,"/var/log/syslog"
+'2  1  0  /var/log/syslog
+|4,50,1,0,1720699897,"/var/log/syslog"
+'3  1  0  /var/log/syslog
+|4,51,1,0,1720699755,"/var/log/syslog"
+'4  1  0  /var/log/syslog
+|4,52,1,0,1720699755,"/var/log/syslog"
+'5  1  0  /var/log/syslog
+|4,53,1,0,1720699365,"/var/log/syslog"
+'6  1  0  /var/log/syslog
+|4,54,1,0,1720699365,"/var/log/syslog"
+'7  1  0  /var/log/syslog
+|4,55,1,0,1720699365,"/var/log/syslog"
+'8  1  0  /var/log/syslog
+|4,56,1,0,1720699365,"/var/log/syslog"
+'9  41  26  ~/bash/cron-run.bash
+|4,57,41,26,1720698763,"~/bash/cron-run.bash"
 
 # Jumplist (newest first):
--'  1  0  /tmp/crontab.4ej9rj/crontab
-|4,39,1,0,1720633907,"/tmp/crontab.4ej9rj/crontab"
--'  6  63  ~/.config/setup.sh
-|4,39,6,63,1720633892,"~/.config/setup.sh"
--'  6  63  ~/.config/setup.sh
-|4,39,6,63,1720633892,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1720633859,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1720633859,"~/.config/setup.sh"
--'  1  0  /tmp/crontab.6qX0ox/crontab
-|4,39,1,0,1720633845,"/tmp/crontab.6qX0ox/crontab"
--'  1  0  /tmp/crontab.6qX0ox/crontab
-|4,39,1,0,1720633845,"/tmp/crontab.6qX0ox/crontab"
--'  1  0  /tmp/crontab.6qX0ox/crontab
-|4,39,1,0,1720633845,"/tmp/crontab.6qX0ox/crontab"
--'  1  0  /tmp/crontab.o2LCZX/crontab
-|4,39,1,0,1720633820,"/tmp/crontab.o2LCZX/crontab"
--'  1  0  /tmp/crontab.o2LCZX/crontab
-|4,39,1,0,1720633820,"/tmp/crontab.o2LCZX/crontab"
--'  1  0  /tmp/crontab.o2LCZX/crontab
-|4,39,1,0,1720633820,"/tmp/crontab.o2LCZX/crontab"
--'  1  0  /tmp/crontab.o2LCZX/crontab
-|4,39,1,0,1720633820,"/tmp/crontab.o2LCZX/crontab"
--'  30  0  ~/tooling/simpler-vcs-git.txt
-|4,39,30,0,1720633694,"~/tooling/simpler-vcs-git.txt"
--'  30  0  ~/tooling/simpler-vcs-git.txt
-|4,39,30,0,1720633694,"~/tooling/simpler-vcs-git.txt"
--'  30  0  ~/tooling/simpler-vcs-git.txt
-|4,39,30,0,1720633694,"~/tooling/simpler-vcs-git.txt"
--'  30  0  ~/tooling/simpler-vcs-git.txt
-|4,39,30,0,1720633694,"~/tooling/simpler-vcs-git.txt"
--'  30  0  ~/tooling/simpler-vcs-git.txt
-|4,39,30,0,1720633694,"~/tooling/simpler-vcs-git.txt"
--'  30  0  ~/tooling/simpler-vcs-git.txt
-|4,39,30,0,1720633694,"~/tooling/simpler-vcs-git.txt"
--'  1  0  ~/tooling/simpler-vcs-git.txt
-|4,39,1,0,1720633661,"~/tooling/simpler-vcs-git.txt"
--'  1  0  ~/tooling/simpler-vcs-git.txt
-|4,39,1,0,1720633661,"~/tooling/simpler-vcs-git.txt"
--'  1  0  ~/tooling/simpler-vcs-git.txt
-|4,39,1,0,1720633661,"~/tooling/simpler-vcs-git.txt"
--'  1  0  ~/tooling/simpler-vcs-git.txt
-|4,39,1,0,1720633661,"~/tooling/simpler-vcs-git.txt"
--'  1  0  ~/tooling/simpler-vcs-git.txt
-|4,39,1,0,1720633661,"~/tooling/simpler-vcs-git.txt"
--'  1  0  ~/tooling/simpler-vcs-git.txt
-|4,39,1,0,1720633661,"~/tooling/simpler-vcs-git.txt"
--'  4  0  ~/.config/setup.sh
-|4,39,4,0,1720633609,"~/.config/setup.sh"
--'  4  0  ~/.config/setup.sh
-|4,39,4,0,1720633609,"~/.config/setup.sh"
--'  4  0  ~/.config/setup.sh
-|4,39,4,0,1720633609,"~/.config/setup.sh"
--'  4  0  ~/.config/setup.sh
-|4,39,4,0,1720633609,"~/.config/setup.sh"
--'  4  0  ~/.config/setup.sh
-|4,39,4,0,1720633609,"~/.config/setup.sh"
--'  4  0  ~/.config/setup.sh
-|4,39,4,0,1720633609,"~/.config/setup.sh"
--'  4  0  ~/.config/setup.sh
-|4,39,4,0,1720633609,"~/.config/setup.sh"
--'  4  0  ~/.config/setup.sh
-|4,39,4,0,1720633609,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1720633602,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1720633602,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1720633602,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1720633602,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1720633602,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1720633602,"~/.config/setup.sh"
--'  4  0  ~/.config/setup.sh
-|4,39,4,0,1720633581,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1720633577,"~/.config/setup.sh"
--'  9  0  ~/.config/direnv/direnv.toml
-|4,39,9,0,1720622835,"~/.config/direnv/direnv.toml"
--'  9  0  ~/.config/direnv/direnv.toml
-|4,39,9,0,1720622835,"~/.config/direnv/direnv.toml"
--'  9  0  ~/.config/direnv/direnv.toml
-|4,39,9,0,1720622835,"~/.config/direnv/direnv.toml"
--'  9  0  ~/.config/direnv/direnv.toml
-|4,39,9,0,1720622835,"~/.config/direnv/direnv.toml"
--'  9  0  ~/.config/direnv/direnv.toml
-|4,39,9,0,1720622835,"~/.config/direnv/direnv.toml"
--'  9  0  ~/.config/direnv/direnv.toml
-|4,39,9,0,1720622835,"~/.config/direnv/direnv.toml"
--'  9  0  ~/.config/direnv/direnv.toml
-|4,39,9,0,1720622835,"~/.config/direnv/direnv.toml"
--'  9  0  ~/.config/direnv/direnv.toml
-|4,39,9,0,1720622835,"~/.config/direnv/direnv.toml"
--'  9  0  ~/.config/direnv/direnv.toml
-|4,39,9,0,1720622835,"~/.config/direnv/direnv.toml"
--'  9  0  ~/.config/direnv/direnv.toml
-|4,39,9,0,1720622835,"~/.config/direnv/direnv.toml"
--'  1  0  ~/.config/direnv/direnv.toml
-|4,39,1,0,1720622761,"~/.config/direnv/direnv.toml"
--'  1  0  ~/.config/direnv/direnv.toml
-|4,39,1,0,1720622761,"~/.config/direnv/direnv.toml"
--'  1  0  ~/.config/direnv/direnv.toml
-|4,39,1,0,1720622761,"~/.config/direnv/direnv.toml"
--'  1  0  ~/.config/direnv/direnv.toml
-|4,39,1,0,1720622761,"~/.config/direnv/direnv.toml"
--'  1  0  ~/.config/direnv/direnv.toml
-|4,39,1,0,1720622761,"~/.config/direnv/direnv.toml"
--'  1  0  ~/.config/direnv/direnv.toml
-|4,39,1,0,1720622761,"~/.config/direnv/direnv.toml"
--'  1  0  ~/.config/direnv/direnv.toml
-|4,39,1,0,1720622761,"~/.config/direnv/direnv.toml"
--'  1  0  ~/.config/direnv/direnv.toml
-|4,39,1,0,1720622761,"~/.config/direnv/direnv.toml"
--'  1  0  ~/.config/direnv/direnv.toml
-|4,39,1,0,1720622761,"~/.config/direnv/direnv.toml"
--'  1  0  ~/.config/direnv/direnv.toml
-|4,39,1,0,1720622761,"~/.config/direnv/direnv.toml"
--'  29  163  ~/.config/setup.sh
-|4,39,29,163,1720622288,"~/.config/setup.sh"
--'  30  163  ~/.config/setup.sh
-|4,39,30,163,1720622288,"~/.config/setup.sh"
--'  28  163  ~/.config/setup.sh
-|4,39,28,163,1720622288,"~/.config/setup.sh"
--'  29  163  ~/.config/setup.sh
-|4,39,29,163,1720622288,"~/.config/setup.sh"
--'  30  163  ~/.config/setup.sh
-|4,39,30,163,1720622288,"~/.config/setup.sh"
--'  28  163  ~/.config/setup.sh
-|4,39,28,163,1720622288,"~/.config/setup.sh"
--'  29  163  ~/.config/setup.sh
-|4,39,29,163,1720622288,"~/.config/setup.sh"
--'  28  163  ~/.config/setup.sh
-|4,39,28,163,1720622288,"~/.config/setup.sh"
--'  29  163  ~/.config/setup.sh
-|4,39,29,163,1720622288,"~/.config/setup.sh"
--'  28  163  ~/.config/setup.sh
-|4,39,28,163,1720622288,"~/.config/setup.sh"
--'  29  163  ~/.config/setup.sh
-|4,39,29,163,1720622288,"~/.config/setup.sh"
--'  28  163  ~/.config/setup.sh
-|4,39,28,163,1720622288,"~/.config/setup.sh"
--'  29  163  ~/.config/setup.sh
-|4,39,29,163,1720622288,"~/.config/setup.sh"
--'  28  163  ~/.config/setup.sh
-|4,39,28,163,1720622288,"~/.config/setup.sh"
--'  29  163  ~/.config/setup.sh
-|4,39,29,163,1720622288,"~/.config/setup.sh"
--'  28  163  ~/.config/setup.sh
-|4,39,28,163,1720622288,"~/.config/setup.sh"
--'  29  163  ~/.config/setup.sh
-|4,39,29,163,1720622288,"~/.config/setup.sh"
--'  28  163  ~/.config/setup.sh
-|4,39,28,163,1720622288,"~/.config/setup.sh"
--'  29  163  ~/.config/setup.sh
-|4,39,29,163,1720622288,"~/.config/setup.sh"
--'  29  163  ~/.config/setup.sh
-|4,39,29,163,1720622288,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1720622285,"~/.config/setup.sh"
--'  1  0  ~/.config/setup.sh
-|4,39,1,0,1720622285,"~/.config/setup.sh"
--'  142  13  ~/pyscripts/viewlog.py
-|4,39,142,13,1720622174,"~/pyscripts/viewlog.py"
--'  142  13  ~/pyscripts/viewlog.py
-|4,39,142,13,1720622174,"~/pyscripts/viewlog.py"
--'  142  13  ~/pyscripts/viewlog.py
-|4,39,142,13,1720622174,"~/pyscripts/viewlog.py"
--'  142  13  ~/pyscripts/viewlog.py
-|4,39,142,13,1720622174,"~/pyscripts/viewlog.py"
--'  142  13  ~/pyscripts/viewlog.py
-|4,39,142,13,1720622174,"~/pyscripts/viewlog.py"
--'  142  13  ~/pyscripts/viewlog.py
-|4,39,142,13,1720622174,"~/pyscripts/viewlog.py"
--'  142  13  ~/pyscripts/viewlog.py
-|4,39,142,13,1720622174,"~/pyscripts/viewlog.py"
--'  142  13  ~/pyscripts/viewlog.py
-|4,39,142,13,1720622174,"~/pyscripts/viewlog.py"
--'  142  13  ~/pyscripts/viewlog.py
-|4,39,142,13,1720622174,"~/pyscripts/viewlog.py"
--'  142  13  ~/pyscripts/viewlog.py
-|4,39,142,13,1720622174,"~/pyscripts/viewlog.py"
--'  142  13  ~/pyscripts/viewlog.py
-|4,39,142,13,1720622174,"~/pyscripts/viewlog.py"
--'  142  13  ~/pyscripts/viewlog.py
-|4,39,142,13,1720622174,"~/pyscripts/viewlog.py"
--'  156  16  ~/pyscripts/viewlog.py
-|4,39,156,16,1720622130,"~/pyscripts/viewlog.py"
--'  156  16  ~/pyscripts/viewlog.py
-|4,39,156,16,1720622130,"~/pyscripts/viewlog.py"
--'  156  16  ~/pyscripts/viewlog.py
-|4,39,156,16,1720622130,"~/pyscripts/viewlog.py"
--'  156  16  ~/pyscripts/viewlog.py
-|4,39,156,16,1720622130,"~/pyscripts/viewlog.py"
--'  156  16  ~/pyscripts/viewlog.py
-|4,39,156,16,1720622130,"~/pyscripts/viewlog.py"
--'  156  16  ~/pyscripts/viewlog.py
-|4,39,156,16,1720622130,"~/pyscripts/viewlog.py"
+-'  87  0  /var/log/syslog
+|4,39,87,0,1720704914,"/var/log/syslog"
+-'  102  0  /var/log/syslog
+|4,39,102,0,1720704910,"/var/log/syslog"
+-'  49  0  /var/log/syslog
+|4,39,49,0,1720703396,"/var/log/syslog"
+-'  40  72  /var/log/syslog
+|4,39,40,72,1720703395,"/var/log/syslog"
+-'  1  0  /var/log/syslog
+|4,39,1,0,1720700590,"/var/log/syslog"
+-'  1  0  /var/log/syslog
+|4,39,1,0,1720699897,"/var/log/syslog"
+-'  1  0  /var/log/syslog
+|4,39,1,0,1720699755,"/var/log/syslog"
+-'  1  0  /var/log/syslog
+|4,39,1,0,1720699365,"/var/log/syslog"
+-'  41  26  ~/bash/cron-run.bash
+|4,39,41,26,1720698763,"~/bash/cron-run.bash"
+-'  41  26  ~/bash/cron-run.bash
+|4,39,41,26,1720698763,"~/bash/cron-run.bash"
+-'  41  26  ~/bash/cron-run.bash
+|4,39,41,26,1720698763,"~/bash/cron-run.bash"
+-'  41  26  ~/bash/cron-run.bash
+|4,39,41,26,1720698763,"~/bash/cron-run.bash"
+-'  41  26  ~/bash/cron-run.bash
+|4,39,41,26,1720698763,"~/bash/cron-run.bash"
+-'  8  0  ~/bash/cronlogger.bash
+|4,39,8,0,1720698220,"~/bash/cronlogger.bash"
+-'  8  0  ~/bash/cronlogger.bash
+|4,39,8,0,1720698220,"~/bash/cronlogger.bash"
+-'  8  0  ~/bash/cronlogger.bash
+|4,39,8,0,1720698220,"~/bash/cronlogger.bash"
+-'  8  0  ~/bash/cronlogger.bash
+|4,39,8,0,1720698220,"~/bash/cronlogger.bash"
+-'  8  0  ~/bash/cronlogger.bash
+|4,39,8,0,1720698220,"~/bash/cronlogger.bash"
+-'  47  0  ~/bash/cron-run.bash
+|4,39,47,0,1720696110,"~/bash/cron-run.bash"
+-'  47  0  ~/bash/cron-run.bash
+|4,39,47,0,1720696110,"~/bash/cron-run.bash"
+-'  47  0  ~/bash/cron-run.bash
+|4,39,47,0,1720696110,"~/bash/cron-run.bash"
+-'  47  0  ~/bash/cron-run.bash
+|4,39,47,0,1720696110,"~/bash/cron-run.bash"
+-'  47  0  ~/bash/cron-run.bash
+|4,39,47,0,1720696110,"~/bash/cron-run.bash"
+-'  1  0  ~/bash/cron-run.bash
+|4,39,1,0,1720696100,"~/bash/cron-run.bash"
+-'  1  0  ~/bash/cron-run.bash
+|4,39,1,0,1720696100,"~/bash/cron-run.bash"
+-'  1  0  ~/bash/cron-run.bash
+|4,39,1,0,1720696100,"~/bash/cron-run.bash"
+-'  1  0  ~/bash/cron-run.bash
+|4,39,1,0,1720696100,"~/bash/cron-run.bash"
+-'  1  0  ~/bash/cron-run.bash
+|4,39,1,0,1720696100,"~/bash/cron-run.bash"
+-'  34  93  /tmp/crontab.r714vo/crontab
+|4,39,34,93,1720693671,"/tmp/crontab.r714vo/crontab"
+-'  34  93  /tmp/crontab.r714vo/crontab
+|4,39,34,93,1720693671,"/tmp/crontab.r714vo/crontab"
+-'  34  93  /tmp/crontab.r714vo/crontab
+|4,39,34,93,1720693671,"/tmp/crontab.r714vo/crontab"
+-'  34  93  /tmp/crontab.r714vo/crontab
+|4,39,34,93,1720693671,"/tmp/crontab.r714vo/crontab"
+-'  34  93  /tmp/crontab.r714vo/crontab
+|4,39,34,93,1720693671,"/tmp/crontab.r714vo/crontab"
+-'  34  93  /tmp/crontab.r714vo/crontab
+|4,39,34,93,1720693671,"/tmp/crontab.r714vo/crontab"
+-'  1  0  /tmp/crontab.r714vo/crontab
+|4,39,1,0,1720693484,"/tmp/crontab.r714vo/crontab"
+-'  1  0  /tmp/crontab.r714vo/crontab
+|4,39,1,0,1720693484,"/tmp/crontab.r714vo/crontab"
+-'  1  0  /tmp/crontab.r714vo/crontab
+|4,39,1,0,1720693484,"/tmp/crontab.r714vo/crontab"
+-'  1  0  /tmp/crontab.r714vo/crontab
+|4,39,1,0,1720693484,"/tmp/crontab.r714vo/crontab"
+-'  1  0  /tmp/crontab.r714vo/crontab
+|4,39,1,0,1720693484,"/tmp/crontab.r714vo/crontab"
+-'  1  0  /tmp/crontab.r714vo/crontab
+|4,39,1,0,1720693484,"/tmp/crontab.r714vo/crontab"
+-'  8  0  ~/bash/logs
+|4,39,8,0,1720693167,"~/bash/logs"
+-'  8  0  ~/bash/logs
+|4,39,8,0,1720693167,"~/bash/logs"
+-'  8  0  ~/bash/logs
+|4,39,8,0,1720693167,"~/bash/logs"
+-'  8  0  ~/bash/logs
+|4,39,8,0,1720693167,"~/bash/logs"
+-'  8  0  ~/bash/logs
+|4,39,8,0,1720693167,"~/bash/logs"
+-'  8  0  ~/bash/logs
+|4,39,8,0,1720693167,"~/bash/logs"
+-'  8  0  ~/bash/logs
+|4,39,8,0,1720693167,"~/bash/logs"
+-'  34  85  ~/bash/backup.crontab
+|4,39,34,85,1720693140,"~/bash/backup.crontab"
+-'  34  85  ~/bash/backup.crontab
+|4,39,34,85,1720693140,"~/bash/backup.crontab"
+-'  34  85  ~/bash/backup.crontab
+|4,39,34,85,1720693140,"~/bash/backup.crontab"
+-'  34  85  ~/bash/backup.crontab
+|4,39,34,85,1720693140,"~/bash/backup.crontab"
+-'  34  85  ~/bash/backup.crontab
+|4,39,34,85,1720693140,"~/bash/backup.crontab"
+-'  34  85  ~/bash/backup.crontab
+|4,39,34,85,1720693140,"~/bash/backup.crontab"
+-'  34  85  ~/bash/backup.crontab
+|4,39,34,85,1720693140,"~/bash/backup.crontab"
+-'  34  85  ~/bash/backup.crontab
+|4,39,34,85,1720693140,"~/bash/backup.crontab"
+-'  1  0  ~/bash/backup.crontab
+|4,39,1,0,1720693030,"~/bash/backup.crontab"
+-'  1  0  ~/bash/backup.crontab
+|4,39,1,0,1720693030,"~/bash/backup.crontab"
+-'  1  0  ~/bash/backup.crontab
+|4,39,1,0,1720693030,"~/bash/backup.crontab"
+-'  1  0  ~/bash/backup.crontab
+|4,39,1,0,1720693030,"~/bash/backup.crontab"
+-'  1  0  ~/bash/backup.crontab
+|4,39,1,0,1720693030,"~/bash/backup.crontab"
+-'  1  0  ~/bash/backup.crontab
+|4,39,1,0,1720693030,"~/bash/backup.crontab"
+-'  1  0  ~/bash/backup.crontab
+|4,39,1,0,1720693030,"~/bash/backup.crontab"
+-'  1  0  ~/bash/backup.crontab
+|4,39,1,0,1720693030,"~/bash/backup.crontab"
+-'  14  0  ~/hateoas/requirements.txt
+|4,39,14,0,1720693019,"~/hateoas/requirements.txt"
+-'  14  0  ~/hateoas/requirements.txt
+|4,39,14,0,1720693019,"~/hateoas/requirements.txt"
+-'  14  0  ~/hateoas/requirements.txt
+|4,39,14,0,1720693019,"~/hateoas/requirements.txt"
+-'  14  0  ~/hateoas/requirements.txt
+|4,39,14,0,1720693019,"~/hateoas/requirements.txt"
+-'  14  0  ~/hateoas/requirements.txt
+|4,39,14,0,1720693019,"~/hateoas/requirements.txt"
+-'  14  0  ~/hateoas/requirements.txt
+|4,39,14,0,1720693019,"~/hateoas/requirements.txt"
+-'  14  0  ~/hateoas/requirements.txt
+|4,39,14,0,1720693019,"~/hateoas/requirements.txt"
+-'  14  0  ~/hateoas/requirements.txt
+|4,39,14,0,1720693019,"~/hateoas/requirements.txt"
+-'  14  0  ~/hateoas/requirements.txt
+|4,39,14,0,1720693019,"~/hateoas/requirements.txt"
+-'  1  0  ~/hateoas/requirements.txt
+|4,39,1,0,1720693014,"~/hateoas/requirements.txt"
+-'  1  0  ~/hateoas/requirements.txt
+|4,39,1,0,1720693014,"~/hateoas/requirements.txt"
+-'  1  0  ~/hateoas/requirements.txt
+|4,39,1,0,1720693014,"~/hateoas/requirements.txt"
+-'  1  0  ~/hateoas/requirements.txt
+|4,39,1,0,1720693014,"~/hateoas/requirements.txt"
+-'  1  0  ~/hateoas/requirements.txt
+|4,39,1,0,1720693014,"~/hateoas/requirements.txt"
+-'  1  0  ~/hateoas/requirements.txt
+|4,39,1,0,1720693014,"~/hateoas/requirements.txt"
+-'  1  0  ~/hateoas/requirements.txt
+|4,39,1,0,1720693014,"~/hateoas/requirements.txt"
+-'  1  0  ~/hateoas/requirements.txt
+|4,39,1,0,1720693014,"~/hateoas/requirements.txt"
+-'  1  0  ~/hateoas/requirements.txt
+|4,39,1,0,1720693014,"~/hateoas/requirements.txt"
+-'  34  10  ~/bash/backup.crontab
+|4,39,34,10,1720693002,"~/bash/backup.crontab"
+-'  34  10  ~/bash/backup.crontab
+|4,39,34,10,1720693002,"~/bash/backup.crontab"
+-'  1  0  ~/bash/backup.crontab
+|4,39,1,0,1720692983,"~/bash/backup.crontab"
+-'  1  0  ~/bash/backup.crontab
+|4,39,1,0,1720692983,"~/bash/backup.crontab"
+-'  34  0  ~/bash/backup.crontab
+|4,39,34,0,1720692977,"~/bash/backup.crontab"
+-'  1  0  ~/bash/backup.crontab
+|4,39,1,0,1720692973,"~/bash/backup.crontab"
+-'  80  4  ~/hateoas/download_worker.py
+|4,39,80,4,1720692813,"~/hateoas/download_worker.py"
+-'  80  4  ~/hateoas/download_worker.py
+|4,39,80,4,1720692813,"~/hateoas/download_worker.py"
+-'  80  4  ~/hateoas/download_worker.py
+|4,39,80,4,1720692813,"~/hateoas/download_worker.py"
+-'  80  4  ~/hateoas/download_worker.py
+|4,39,80,4,1720692813,"~/hateoas/download_worker.py"
+-'  80  4  ~/hateoas/download_worker.py
+|4,39,80,4,1720692813,"~/hateoas/download_worker.py"
+-'  80  4  ~/hateoas/download_worker.py
+|4,39,80,4,1720692813,"~/hateoas/download_worker.py"
+-'  80  4  ~/hateoas/download_worker.py
+|4,39,80,4,1720692813,"~/hateoas/download_worker.py"
+-'  80  4  ~/hateoas/download_worker.py
+|4,39,80,4,1720692813,"~/hateoas/download_worker.py"
+-'  80  4  ~/hateoas/download_worker.py
+|4,39,80,4,1720692813,"~/hateoas/download_worker.py"
+-'  80  4  ~/hateoas/download_worker.py
+|4,39,80,4,1720692813,"~/hateoas/download_worker.py"
+-'  80  4  ~/hateoas/download_worker.py
+|4,39,80,4,1720692813,"~/hateoas/download_worker.py"
+-'  80  4  ~/hateoas/download_worker.py
+|4,39,80,4,1720692813,"~/hateoas/download_worker.py"
+-'  106  16  ~/hateoas/download_worker.py
+|4,39,106,16,1720692811,"~/hateoas/download_worker.py"
 
 # Buffer list:
-%/tmp/crontab.4ej9rj/crontab	1	0
+%/var/log/syslog	87	0
 
 # History of marks within files (newest to oldest):
 
-> /tmp/crontab.4ej9rj/crontab
-	*	1720633905	0
+> /var/log/syslog
+	*	1720704912	0
+	"	87	0
+
+> ~/bash/cronjob.bash
+	*	1720698734	0
+	"	8	0
+	^	8	0
+	.	8	0
+	+	3	16
+	+	4	0
+	+	5	17
+	+	6	15
+	+	6	0
+	+	6	22
+	+	6	0
+	+	6	97
+	+	6	0
+	+	5	32
+	+	6	30
+	+	8	0
+
+> ~/bash/cronlogger.bash
+	*	1720698274	0
+	"	8	0
+	^	26	2
+	.	26	1
+	+	17	0
+	+	1	10
+	+	2	0
+	+	18	0
+	+	18	1
+	+	19	0
+	+	25	0
+	+	18	0
+	+	26	1
+
+> ~/bash/cron-run.bash
+	*	1720698241	0
+	"	41	26
+	^	41	27
+	.	41	13
+	+	34	81
+	+	42	0
+	+	33	0
+	+	5	20
+	+	7	22
+	+	9	22
+	+	11	22
+	+	13	22
+	+	15	22
+	+	17	22
+	+	19	22
+	+	21	22
+	+	33	38
+	+	42	0
+	+	41	13
+
+> /tmp/crontab.r714vo/crontab
+	*	1720693492	0
+	"	34	93
+
+> ~/bash/backup.crontab
+	*	1720693138	0
+	"	34	85
+	^	26	4
+	.	26	3
+	+	26	3
+
+> ~/hateoas/requirements.txt
+	*	1720693017	0
+	"	14	0
+	^	14	0
+	.	14	0
+	+	3	5
+	+	9	20
+	+	2	4
+	+	10	13
+	+	11	0
+	+	13	7
+	+	14	18
+	+	14	0
+
+> ~/hateoas/download_worker.py
+	*	1720692811	0
+	"	80	4
+	^	182	20
+	.	182	19
+	+	92	8
+	+	91	39
+	+	92	4
+	+	104	42
+	+	104	10
+	+	104	0
+	+	104	12
+	+	104	0
+	+	104	81
+	+	104	0
+	+	93	14
+	+	94	10
+	+	96	23
+	+	104	0
+	+	96	38
+	+	97	7
+	+	99	35
+	+	100	27
+	+	100	39
+	+	100	10
+	+	104	0
+	+	100	17
+	+	100	0
+	+	99	10
+	+	102	24
+	+	103	41
+	+	192	38
+	+	104	0
+	+	21	28
+	+	192	0
+	+	187	0
+	+	187	13
+	+	92	24
+	+	187	0
+	+	123	35
+	+	126	0
+	+	123	0
+	+	126	50
+	+	126	0
+	+	124	0
+	+	187	10
+	+	156	0
+	+	152	18
+	+	154	17
+	+	155	58
+	+	153	0
+	+	61	78
+	+	13	67
+	+	30	0
+	+	31	4
+	+	31	0
+	+	13	0
+	+	9	0
+	+	146	0
+	+	13	0
+	+	16	0
+	+	189	38
+	+	187	0
+	+	191	0
+	+	159	12
+	+	159	0
+	+	159	13
+	+	159	0
+	+	201	13
+	+	177	0
+	+	163	30
+	+	165	4
+	+	166	57
+	+	177	0
+	+	166	6
+	+	167	4
+	+	167	67
+	+	177	0
+	+	167	11
+	+	163	1
+	+	164	0
+	+	163	25
+	+	163	34
+	+	167	24
+	+	167	0
+	+	177	0
+	+	163	0
+	+	179	13
+	+	169	77
+	+	170	4
+	+	177	0
+	+	180	50
+	+	186	0
+	+	180	84
+	+	183	11
+	+	186	0
+	+	184	22
+	+	175	38
+	+	176	68
+	+	177	0
+	+	181	15
+	+	185	0
+	+	182	19
+
+> ~/bash/.gitignore
+	*	1720692756	0
 	"	1	0
+	^	2	5
+	.	2	4
+	+	1	4
+	+	2	4
+
+> /tmp/crontab.pNTZ4B/crontab
+	*	1720692726	0
+	"	34	61
+
+> /tmp/crontab.NX5XKr/crontab
+	*	1720692686	0
+	"	33	0
+
+> ~/.vim/vimrc
+	*	1720692593	0
+	"	553	12
+	.	43	0
+	+	1324	0
+	+	1324	38
+	+	1324	21
+	+	1324	0
+	+	1324	10
+	+	1324	25
+	+	1324	0
+	+	1324	32
+	+	1324	0
+	+	1324	10
+	+	1324	0
+	+	1324	25
+	+	1324	10
+	+	1324	0
+	+	1324	60
+	+	1324	0
+	+	1324	55
+	+	1324	0
+	+	1324	44
+	+	1324	0
+	+	1324	19
+	+	1324	71
+	+	1324	0
+	+	1324	23
+	+	1324	41
+	+	1324	44
+	+	1324	40
+	+	1324	28
+	+	1324	0
+	+	1324	11
+	+	1324	18
+	+	1324	43
+	+	1324	64
+	+	1324	54
+	+	1324	0
+	+	1324	31
+	+	1324	0
+	+	1324	6
+	+	1324	0
+	+	1324	1
+	+	1324	0
+	+	1324	80
+	+	1324	75
+	+	1324	0
+	+	1324	52
+	+	1324	41
+	+	163	0
+	+	49	26
+	+	1324	0
+	+	48	0
+	+	47	22
+	+	46	25
+	+	67	0
+	+	1110	57
+	+	1114	59
+	+	1116	55
+	+	244	0
+	+	243	0
+	+	244	25
+	+	1317	1
+	+	1318	0
+	+	1320	24
+	+	1321	24
+	+	1322	24
+	+	1323	0
+	+	1302	12
+	+	1303	0
+	+	1304	0
+	+	1305	0
+	+	1325	49
+	+	1322	0
+	+	1324	13
+	+	1325	13
+	+	1322	0
+	+	1324	16
+	+	1325	16
+	+	1324	0
+	+	1326	0
+	+	1324	0
+	+	1326	0
+	+	81	0
+	+	767	0
+	+	60	0
+	+	43	0
+	+	43	25
+	+	61	3
+	+	43	5
+	+	61	16
+	+	61	0
+	+	62	0
+	+	87	16
+	+	87	0
+	+	88	0
+	+	43	5
+	+	61	3
+	+	87	0
+	+	88	0
+	+	61	0
+	+	62	0
+	+	43	0
 
 > ~/.config/setup.sh
-	*	1720633891	0
-	"	6	63
+	*	1720680936	0
+	"	14	22
 	^	6	64
 	.	6	63
 	+	17	68
@@ -11759,6 +12067,10 @@ $
 	+	4	0
 	+	6	17
 	+	6	63
+
+> /tmp/crontab.4ej9rj/crontab
+	*	1720680906	0
+	"	1	0
 
 > /tmp/crontab.6qX0ox/crontab
 	*	1720633844	0
@@ -12709,111 +13021,6 @@ $
 	+	2	34
 	+	3	14
 	+	2	0
-
-> ~/.vim/vimrc
-	*	1720366640	0
-	"	373	6
-	.	43	0
-	+	1324	0
-	+	1324	38
-	+	1324	21
-	+	1324	0
-	+	1324	10
-	+	1324	25
-	+	1324	0
-	+	1324	32
-	+	1324	0
-	+	1324	10
-	+	1324	0
-	+	1324	25
-	+	1324	10
-	+	1324	0
-	+	1324	60
-	+	1324	0
-	+	1324	55
-	+	1324	0
-	+	1324	44
-	+	1324	0
-	+	1324	19
-	+	1324	71
-	+	1324	0
-	+	1324	23
-	+	1324	41
-	+	1324	44
-	+	1324	40
-	+	1324	28
-	+	1324	0
-	+	1324	11
-	+	1324	18
-	+	1324	43
-	+	1324	64
-	+	1324	54
-	+	1324	0
-	+	1324	31
-	+	1324	0
-	+	1324	6
-	+	1324	0
-	+	1324	1
-	+	1324	0
-	+	1324	80
-	+	1324	75
-	+	1324	0
-	+	1324	52
-	+	1324	41
-	+	163	0
-	+	49	26
-	+	1324	0
-	+	48	0
-	+	47	22
-	+	46	25
-	+	67	0
-	+	1110	57
-	+	1114	59
-	+	1116	55
-	+	244	0
-	+	243	0
-	+	244	25
-	+	1317	1
-	+	1318	0
-	+	1320	24
-	+	1321	24
-	+	1322	24
-	+	1323	0
-	+	1302	12
-	+	1303	0
-	+	1304	0
-	+	1305	0
-	+	1325	49
-	+	1322	0
-	+	1324	13
-	+	1325	13
-	+	1322	0
-	+	1324	16
-	+	1325	16
-	+	1324	0
-	+	1326	0
-	+	1324	0
-	+	1326	0
-	+	81	0
-	+	767	0
-	+	60	0
-	+	43	0
-	+	43	25
-	+	61	3
-	+	43	5
-	+	61	16
-	+	61	0
-	+	62	0
-	+	87	16
-	+	87	0
-	+	88	0
-	+	43	5
-	+	61	3
-	+	87	0
-	+	88	0
-	+	61	0
-	+	62	0
-	+	43	0
 
 > ~/hateoas/hateoas-api.py
 	*	1720366581	0
@@ -14180,14 +14387,6 @@ $
 	+	1	0
 	+	2	0
 
-> ~/bash/.gitignore
-	*	1718903611	0
-	"	2	4
-	^	2	5
-	.	2	4
-	+	1	4
-	+	2	4
-
 > ~/pyscripts/.gitignore
 	*	1718903488	0
 	"	2	4
@@ -15392,27 +15591,6 @@ $
 	+	1	10
 	+	3	5
 
-> ~/bash/cron-run.bash
-	*	1718453883	0
-	"	1	0
-	^	41	27
-	.	41	13
-	+	34	81
-	+	42	0
-	+	33	0
-	+	5	20
-	+	7	22
-	+	9	22
-	+	11	22
-	+	13	22
-	+	15	22
-	+	17	22
-	+	19	22
-	+	21	22
-	+	33	38
-	+	42	0
-	+	41	13
-
 > ~/.config/repos.txt
 	*	1718453564	0
 	"	1	0
@@ -16502,13 +16680,6 @@ $
 	.	34	0
 	+	34	0
 
-> ~/bash/backup.crontab
-	*	1717918211	0
-	"	1	0
-	^	26	4
-	.	26	3
-	+	26	3
-
 > ~/.vim/coc-settings.json
 	*	1717918178	0
 	"	37	33
@@ -16683,20 +16854,6 @@ $
 	^	5	13
 	.	5	12
 	+	5	12
-
-> ~/hateoas/requirements.txt
-	*	1717912142	0
-	"	1	0
-	^	14	0
-	.	14	0
-	+	3	5
-	+	9	20
-	+	2	4
-	+	10	13
-	+	11	0
-	+	13	7
-	+	14	18
-	+	14	0
 
 > ~/ui-components-css/static/css-utilities/reset.css
 	*	1717911378	0
@@ -17021,110 +17178,6 @@ $
 	+	618	0
 	+	791	26
 	+	792	26
-
-> ~/hateoas/download_worker.py
-	*	1717609773	0
-	"	146	8
-	^	182	20
-	.	182	19
-	+	92	8
-	+	91	39
-	+	92	4
-	+	104	42
-	+	104	10
-	+	104	0
-	+	104	12
-	+	104	0
-	+	104	81
-	+	104	0
-	+	93	14
-	+	94	10
-	+	96	23
-	+	104	0
-	+	96	38
-	+	97	7
-	+	99	35
-	+	100	27
-	+	100	39
-	+	100	10
-	+	104	0
-	+	100	17
-	+	100	0
-	+	99	10
-	+	102	24
-	+	103	41
-	+	192	38
-	+	104	0
-	+	21	28
-	+	192	0
-	+	187	0
-	+	187	13
-	+	92	24
-	+	187	0
-	+	123	35
-	+	126	0
-	+	123	0
-	+	126	50
-	+	126	0
-	+	124	0
-	+	187	10
-	+	156	0
-	+	152	18
-	+	154	17
-	+	155	58
-	+	153	0
-	+	61	78
-	+	13	67
-	+	30	0
-	+	31	4
-	+	31	0
-	+	13	0
-	+	9	0
-	+	146	0
-	+	13	0
-	+	16	0
-	+	189	38
-	+	187	0
-	+	191	0
-	+	159	12
-	+	159	0
-	+	159	13
-	+	159	0
-	+	201	13
-	+	177	0
-	+	163	30
-	+	165	4
-	+	166	57
-	+	177	0
-	+	166	6
-	+	167	4
-	+	167	67
-	+	177	0
-	+	167	11
-	+	163	1
-	+	164	0
-	+	163	25
-	+	163	34
-	+	167	24
-	+	167	0
-	+	177	0
-	+	163	0
-	+	179	13
-	+	169	77
-	+	170	4
-	+	177	0
-	+	180	50
-	+	186	0
-	+	180	84
-	+	183	11
-	+	186	0
-	+	184	22
-	+	175	38
-	+	176	68
-	+	177	0
-	+	181	15
-	+	185	0
-	+	182	19
 
 > ~/hateoas/Types.py
 	*	1717609754	0
@@ -19917,21 +19970,6 @@ $
 	+	1	8
 	a	9	12
 	b	9	12
-
-> ~/bash/cronlogger.bash
-	*	1716562902	0
-	"	1	0
-	^	26	2
-	.	26	1
-	+	17	0
-	+	1	10
-	+	2	0
-	+	18	0
-	+	18	1
-	+	19	0
-	+	25	0
-	+	18	0
-	+	26	1
 
 > ~/crk-coupon/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/common.py
 	*	1716550227	0
