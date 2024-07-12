@@ -20,6 +20,12 @@
 $
 
 # Command Line History (newest to oldest):
+:q
+|2,0,1720792683,,"q"
+:set tw=80
+|2,0,1720792399,,"set tw=80"
+:e /var/log/cron.log
+|2,0,1720792373,,"e /var/log/cron.log"
 :qa
 |2,0,1720766943,,"qa"
 :Template
@@ -70,8 +76,6 @@ $
 |2,0,1720758140,,"nex"
 :MRU giti
 |2,0,1720758123,,"MRU giti"
-:q
-|2,0,1720757977,,"q"
 :e backup.crontab
 |2,0,1720757739,,"e backup.crontab"
 :e
@@ -6020,8 +6024,6 @@ $
 |2,0,1692524506,,"saveas main.md"
 :set tw=72
 |2,0,1692518039,,"set tw=72"
-:set tw=80
-|2,0,1692517964,,"set tw=80"
 :saveas tp.ts
 |2,0,1692517028,,"saveas tp.ts"
 :MRU def
@@ -11396,38 +11398,42 @@ $
 |2,4,1693311567,,"cont"
 
 # Registers:
-""0	LINE	0
-	    echo pattern
-|3,1,0,1,1,0,1720766934,"    echo pattern"
-"1	LINE	0
-	    echo pattern
-|3,0,1,1,1,0,1720766931,"    echo pattern"
-"2	LINE	0
-	    echoerr "Extension: " . extension
-|3,0,2,1,1,0,1720766905,"    echoerr \"Extension: \" . extension"
-"3	LINE	0
+"0	CHAR	0
+	We then create a symbolic link from /var/log/syslog to
+	/var/log/cron.log. This is because /var/log/syslog is the default location for
+	cron jobs to be logged to. We then create a cron job that runs every minute and
+|3,0,0,0,3,0,1720792545,"We then create a symbolic link from /var/log/syslog to","/var/log/cron.log. This is because /var/log/syslog is the default location for","cron jobs to be logged to. We then create a cron job that runs every minute and"
+""1	LINE	0
 	
-|3,0,3,1,1,0,1720766851,""
+	
+|3,1,1,1,2,0,1720792598,"",""
+"2	CHAR	0
+	We then create a symbolic link from /var/log/syslog to
+	/var/log/cron.log. This is because /var/log/syslog is the default location for
+	cron jobs to be logged to. We then create a cron job that runs every minute and
+|3,0,2,0,3,0,1720792512,"We then create a symbolic link from /var/log/syslog to","/var/log/cron.log. This is because /var/log/syslog is the default location for","cron jobs to be logged to. We then create a cron job that runs every minute and"
+"3	CHAR	0
+	We also have to modify the
+	rsyslog configuration file to include the /var/log/syslog file. This is done in
+|3,0,3,0,2,0,1720792310,"We also have to modify the","rsyslog configuration file to include the /var/log/syslog file. This is done in"
 "4	LINE	0
-	        call assert_true
-|3,0,4,1,1,0,1720766797,"        call assert_true"
+	On 
+|3,0,4,1,1,0,1720792139,"On "
 "5	LINE	0
-	
-|3,0,5,1,1,0,1720766753,""
+	    echo pattern
+|3,0,5,1,1,0,1720766931,"    echo pattern"
 "6	LINE	0
-	*.env
-|3,0,6,1,1,0,1720758188,"*.env"
+	    echoerr "Extension: " . extension
+|3,0,6,1,1,0,1720766905,"    echoerr \"Extension: \" . extension"
 "7	LINE	0
-	data/*
-	data/
-|3,0,7,1,2,0,1720757936,"data/*","data/"
+	
+|3,0,7,1,1,0,1720766851,""
 "8	LINE	0
-	data/*
-	data/
-|3,0,8,1,2,0,1720757935,"data/*","data/"
+	        call assert_true
+|3,0,8,1,1,0,1720766797,"        call assert_true"
 "9	LINE	0
-	!/
-|3,0,9,1,1,0,1720757927,"!/"
+	
+|3,0,9,1,1,0,1720766753,""
 "j	CHAR	0
 	kc
 |3,0,19,0,1,0,1718434816,"kc"
@@ -11441,60 +11447,224 @@ $
 	https://rsms.me/inter/
 |3,0,28,0,1,0,1718483440,"https://rsms.me/inter/"
 "-	CHAR	0
-	expand("%:e")
-|3,0,36,0,1,0,1720766900,"expand(\"%:e\")"
+	to redirect cron logs
+|3,0,36,0,1,0,1720792431,"to redirect cron logs"
 
 # File marks:
-'0  36  8  ~/.vim/plugin/template.vim
-|4,48,36,8,1720766944,"~/.vim/plugin/template.vim"
-'1  5  0  ~/.vim/templates/template.gitignore
-|4,49,5,0,1720757978,"~/.vim/templates/template.gitignore"
-'2  1  0  ~/.vim/templates/template.gitignore
-|4,50,1,0,1720757978,"~/.vim/templates/template.gitignore"
-'3  7  0  ~/hateoas/.gitignore
-|4,51,7,0,1720757942,"~/hateoas/.gitignore"
-'4  7  0  ~/hateoas/.gitignore
-|4,52,7,0,1720757942,"~/hateoas/.gitignore"
-'5  7  0  ~/hateoas/.gitignore
-|4,53,7,0,1720757942,"~/hateoas/.gitignore"
-'6  7  0  ~/hateoas/.gitignore
-|4,54,7,0,1720757942,"~/hateoas/.gitignore"
-'7  8  8  ~/hateoas/.gitignore
-|4,55,8,8,1720757909,"~/hateoas/.gitignore"
-'8  7  8  ~/hateoas/.gitignore
-|4,56,7,8,1720757909,"~/hateoas/.gitignore"
-'9  8  8  ~/hateoas/.gitignore
-|4,57,8,8,1720757909,"~/hateoas/.gitignore"
+'0  2  0  ~/tooling/logging.txt
+|4,48,2,0,1720792684,"~/tooling/logging.txt"
+'1  22  0  ~/tooling/logging.txt
+|4,49,22,0,1720792383,"~/tooling/logging.txt"
+'2  22  0  ~/tooling/logging.txt
+|4,50,22,0,1720792383,"~/tooling/logging.txt"
+'3  15  0  ~/tooling/logging.txt
+|4,51,15,0,1720792141,"~/tooling/logging.txt"
+'4  15  0  ~/tooling/logging.txt
+|4,52,15,0,1720792141,"~/tooling/logging.txt"
+'5  15  0  ~/tooling/logging.txt
+|4,53,15,0,1720792141,"~/tooling/logging.txt"
+'6  15  0  ~/tooling/logging.txt
+|4,54,15,0,1720792141,"~/tooling/logging.txt"
+'7  36  8  ~/.vim/plugin/template.vim
+|4,55,36,8,1720766944,"~/.vim/plugin/template.vim"
+'8  36  8  ~/.vim/plugin/template.vim
+|4,56,36,8,1720766944,"~/.vim/plugin/template.vim"
+'9  36  8  ~/.vim/plugin/template.vim
+|4,57,36,8,1720766944,"~/.vim/plugin/template.vim"
 
 # Jumplist (newest first):
+-'  2  0  ~/tooling/logging.txt
+|4,39,2,0,1720792684,"~/tooling/logging.txt"
+-'  29  5  ~/tooling/logging.txt
+|4,39,29,5,1720792545,"~/tooling/logging.txt"
+-'  28  21  ~/tooling/logging.txt
+|4,39,28,21,1720792514,"~/tooling/logging.txt"
+-'  25  50  ~/tooling/logging.txt
+|4,39,25,50,1720792456,"~/tooling/logging.txt"
+-'  1  0  ~/tooling/logging.txt
+|4,39,1,0,1720792388,"~/tooling/logging.txt"
+-'  22  0  ~/tooling/logging.txt
+|4,39,22,0,1720792383,"~/tooling/logging.txt"
+-'  7  0  /var/log/cron.log
+|4,39,7,0,1720792383,"/var/log/cron.log"
+-'  22  0  ~/tooling/logging.txt
+|4,39,22,0,1720792383,"~/tooling/logging.txt"
+-'  7  0  /var/log/cron.log
+|4,39,7,0,1720792383,"/var/log/cron.log"
+-'  19  45  ~/tooling/logging.txt
+|4,39,19,45,1720792312,"~/tooling/logging.txt"
+-'  19  45  ~/tooling/logging.txt
+|4,39,19,45,1720792312,"~/tooling/logging.txt"
+-'  18  45  ~/tooling/logging.txt
+|4,39,18,45,1720792296,"~/tooling/logging.txt"
+-'  18  45  ~/tooling/logging.txt
+|4,39,18,45,1720792296,"~/tooling/logging.txt"
+-'  1  0  ~/tooling/logging.txt
+|4,39,1,0,1720792176,"~/tooling/logging.txt"
+-'  15  0  ~/tooling/logging.txt
+|4,39,15,0,1720792141,"~/tooling/logging.txt"
+-'  15  0  ~/tooling/logging.txt
+|4,39,15,0,1720792141,"~/tooling/logging.txt"
+-'  15  0  ~/tooling/logging.txt
+|4,39,15,0,1720792141,"~/tooling/logging.txt"
+-'  1  0  ~/tooling/logging.txt
+|4,39,1,0,1720792126,"~/tooling/logging.txt"
+-'  36  8  ~/.vim/plugin/template.vim
+|4,39,36,8,1720766944,"~/.vim/plugin/template.vim"
+-'  36  8  ~/.vim/plugin/template.vim
+|4,39,36,8,1720766944,"~/.vim/plugin/template.vim"
+-'  36  8  ~/.vim/plugin/template.vim
+|4,39,36,8,1720766944,"~/.vim/plugin/template.vim"
+-'  36  8  ~/.vim/plugin/template.vim
+|4,39,36,8,1720766944,"~/.vim/plugin/template.vim"
 -'  36  8  ~/.vim/plugin/template.vim
 |4,39,36,8,1720766944,"~/.vim/plugin/template.vim"
 -'  21  8  ~/.vim/plugin/template.vim
 |4,39,21,8,1720766934,"~/.vim/plugin/template.vim"
+-'  21  8  ~/.vim/plugin/template.vim
+|4,39,21,8,1720766934,"~/.vim/plugin/template.vim"
+-'  21  8  ~/.vim/plugin/template.vim
+|4,39,21,8,1720766934,"~/.vim/plugin/template.vim"
+-'  21  8  ~/.vim/plugin/template.vim
+|4,39,21,8,1720766934,"~/.vim/plugin/template.vim"
+-'  21  8  ~/.vim/plugin/template.vim
+|4,39,21,8,1720766934,"~/.vim/plugin/template.vim"
+-'  17  4  ~/.vim/plugin/template.vim
+|4,39,17,4,1720766933,"~/.vim/plugin/template.vim"
+-'  17  4  ~/.vim/plugin/template.vim
+|4,39,17,4,1720766933,"~/.vim/plugin/template.vim"
+-'  17  4  ~/.vim/plugin/template.vim
+|4,39,17,4,1720766933,"~/.vim/plugin/template.vim"
+-'  17  4  ~/.vim/plugin/template.vim
+|4,39,17,4,1720766933,"~/.vim/plugin/template.vim"
 -'  17  4  ~/.vim/plugin/template.vim
 |4,39,17,4,1720766933,"~/.vim/plugin/template.vim"
 -'  20  4  ~/.vim/plugin/template.vim
 |4,39,20,4,1720766932,"~/.vim/plugin/template.vim"
+-'  20  4  ~/.vim/plugin/template.vim
+|4,39,20,4,1720766932,"~/.vim/plugin/template.vim"
+-'  20  4  ~/.vim/plugin/template.vim
+|4,39,20,4,1720766932,"~/.vim/plugin/template.vim"
+-'  20  4  ~/.vim/plugin/template.vim
+|4,39,20,4,1720766932,"~/.vim/plugin/template.vim"
+-'  20  4  ~/.vim/plugin/template.vim
+|4,39,20,4,1720766932,"~/.vim/plugin/template.vim"
+-'  34  28  ~/.vim/plugin/template.vim
+|4,39,34,28,1720766903,"~/.vim/plugin/template.vim"
+-'  34  28  ~/.vim/plugin/template.vim
+|4,39,34,28,1720766903,"~/.vim/plugin/template.vim"
+-'  34  28  ~/.vim/plugin/template.vim
+|4,39,34,28,1720766903,"~/.vim/plugin/template.vim"
+-'  34  28  ~/.vim/plugin/template.vim
+|4,39,34,28,1720766903,"~/.vim/plugin/template.vim"
 -'  34  28  ~/.vim/plugin/template.vim
 |4,39,34,28,1720766903,"~/.vim/plugin/template.vim"
 -'  35  35  ~/.vim/plugin/template.vim
 |4,39,35,35,1720766902,"~/.vim/plugin/template.vim"
+-'  35  35  ~/.vim/plugin/template.vim
+|4,39,35,35,1720766902,"~/.vim/plugin/template.vim"
+-'  35  35  ~/.vim/plugin/template.vim
+|4,39,35,35,1720766902,"~/.vim/plugin/template.vim"
+-'  35  35  ~/.vim/plugin/template.vim
+|4,39,35,35,1720766902,"~/.vim/plugin/template.vim"
+-'  35  35  ~/.vim/plugin/template.vim
+|4,39,35,35,1720766902,"~/.vim/plugin/template.vim"
+-'  46  31  ~/.vim/plugin/template.vim
+|4,39,46,31,1720766890,"~/.vim/plugin/template.vim"
+-'  46  31  ~/.vim/plugin/template.vim
+|4,39,46,31,1720766890,"~/.vim/plugin/template.vim"
+-'  46  31  ~/.vim/plugin/template.vim
+|4,39,46,31,1720766890,"~/.vim/plugin/template.vim"
+-'  46  31  ~/.vim/plugin/template.vim
+|4,39,46,31,1720766890,"~/.vim/plugin/template.vim"
 -'  46  31  ~/.vim/plugin/template.vim
 |4,39,46,31,1720766890,"~/.vim/plugin/template.vim"
 -'  14  12  ~/.vim/plugin/template.vim
 |4,39,14,12,1720766884,"~/.vim/plugin/template.vim"
+-'  14  12  ~/.vim/plugin/template.vim
+|4,39,14,12,1720766884,"~/.vim/plugin/template.vim"
+-'  14  12  ~/.vim/plugin/template.vim
+|4,39,14,12,1720766884,"~/.vim/plugin/template.vim"
+-'  14  12  ~/.vim/plugin/template.vim
+|4,39,14,12,1720766884,"~/.vim/plugin/template.vim"
+-'  14  12  ~/.vim/plugin/template.vim
+|4,39,14,12,1720766884,"~/.vim/plugin/template.vim"
+-'  15  35  ~/.vim/plugin/template.vim
+|4,39,15,35,1720766859,"~/.vim/plugin/template.vim"
+-'  15  35  ~/.vim/plugin/template.vim
+|4,39,15,35,1720766859,"~/.vim/plugin/template.vim"
+-'  15  35  ~/.vim/plugin/template.vim
+|4,39,15,35,1720766859,"~/.vim/plugin/template.vim"
+-'  15  35  ~/.vim/plugin/template.vim
+|4,39,15,35,1720766859,"~/.vim/plugin/template.vim"
 -'  15  35  ~/.vim/plugin/template.vim
 |4,39,15,35,1720766859,"~/.vim/plugin/template.vim"
 -'  10  8  ~/.vim/plugin/template.vim
 |4,39,10,8,1720766848,"~/.vim/plugin/template.vim"
 -'  9  36  ~/.vim/plugin/template.vim
 |4,39,9,36,1720766848,"~/.vim/plugin/template.vim"
+-'  10  8  ~/.vim/plugin/template.vim
+|4,39,10,8,1720766848,"~/.vim/plugin/template.vim"
+-'  9  36  ~/.vim/plugin/template.vim
+|4,39,9,36,1720766848,"~/.vim/plugin/template.vim"
+-'  10  8  ~/.vim/plugin/template.vim
+|4,39,10,8,1720766848,"~/.vim/plugin/template.vim"
+-'  9  36  ~/.vim/plugin/template.vim
+|4,39,9,36,1720766848,"~/.vim/plugin/template.vim"
+-'  10  8  ~/.vim/plugin/template.vim
+|4,39,10,8,1720766848,"~/.vim/plugin/template.vim"
+-'  9  36  ~/.vim/plugin/template.vim
+|4,39,9,36,1720766848,"~/.vim/plugin/template.vim"
+-'  10  8  ~/.vim/plugin/template.vim
+|4,39,10,8,1720766848,"~/.vim/plugin/template.vim"
+-'  9  36  ~/.vim/plugin/template.vim
+|4,39,9,36,1720766848,"~/.vim/plugin/template.vim"
+-'  8  8  ~/.vim/plugin/template.vim
+|4,39,8,8,1720766819,"~/.vim/plugin/template.vim"
+-'  8  8  ~/.vim/plugin/template.vim
+|4,39,8,8,1720766819,"~/.vim/plugin/template.vim"
+-'  8  8  ~/.vim/plugin/template.vim
+|4,39,8,8,1720766819,"~/.vim/plugin/template.vim"
+-'  8  8  ~/.vim/plugin/template.vim
+|4,39,8,8,1720766819,"~/.vim/plugin/template.vim"
 -'  8  8  ~/.vim/plugin/template.vim
 |4,39,8,8,1720766819,"~/.vim/plugin/template.vim"
 -'  14  38  ~/.vim/templates/template.gitignore
 |4,39,14,38,1720766637,"~/.vim/templates/template.gitignore"
+-'  14  38  ~/.vim/templates/template.gitignore
+|4,39,14,38,1720766637,"~/.vim/templates/template.gitignore"
+-'  14  38  ~/.vim/templates/template.gitignore
+|4,39,14,38,1720766637,"~/.vim/templates/template.gitignore"
+-'  14  38  ~/.vim/templates/template.gitignore
+|4,39,14,38,1720766637,"~/.vim/templates/template.gitignore"
+-'  14  38  ~/.vim/templates/template.gitignore
+|4,39,14,38,1720766637,"~/.vim/templates/template.gitignore"
 -'  1  0  ~/.config/.gitignore
 |4,39,1,0,1720758123,"~/.config/.gitignore"
+-'  1  0  ~/.config/.gitignore
+|4,39,1,0,1720758123,"~/.config/.gitignore"
+-'  1  0  ~/.config/.gitignore
+|4,39,1,0,1720758123,"~/.config/.gitignore"
+-'  1  0  ~/.config/.gitignore
+|4,39,1,0,1720758123,"~/.config/.gitignore"
+-'  1  0  ~/.config/.gitignore
+|4,39,1,0,1720758123,"~/.config/.gitignore"
+-'  5  0  ~/.vim/templates/template.gitignore
+|4,39,5,0,1720757978,"~/.vim/templates/template.gitignore"
+-'  1  0  ~/.vim/templates/template.gitignore
+|4,39,1,0,1720757978,"~/.vim/templates/template.gitignore"
+-'  5  0  ~/.vim/templates/template.gitignore
+|4,39,5,0,1720757978,"~/.vim/templates/template.gitignore"
+-'  1  0  ~/.vim/templates/template.gitignore
+|4,39,1,0,1720757978,"~/.vim/templates/template.gitignore"
+-'  5  0  ~/.vim/templates/template.gitignore
+|4,39,5,0,1720757978,"~/.vim/templates/template.gitignore"
+-'  1  0  ~/.vim/templates/template.gitignore
+|4,39,1,0,1720757978,"~/.vim/templates/template.gitignore"
+-'  5  0  ~/.vim/templates/template.gitignore
+|4,39,5,0,1720757978,"~/.vim/templates/template.gitignore"
+-'  1  0  ~/.vim/templates/template.gitignore
+|4,39,1,0,1720757978,"~/.vim/templates/template.gitignore"
 -'  5  0  ~/.vim/templates/template.gitignore
 |4,39,5,0,1720757978,"~/.vim/templates/template.gitignore"
 -'  1  0  ~/.vim/templates/template.gitignore
@@ -11503,179 +11673,36 @@ $
 |4,39,7,0,1720757942,"~/hateoas/.gitignore"
 -'  7  0  ~/hateoas/.gitignore
 |4,39,7,0,1720757942,"~/hateoas/.gitignore"
--'  7  0  ~/hateoas/.gitignore
-|4,39,7,0,1720757942,"~/hateoas/.gitignore"
--'  1  0  ~/hateoas/.gitignore
-|4,39,1,0,1720757922,"~/hateoas/.gitignore"
--'  1  0  ~/hateoas/.gitignore
-|4,39,1,0,1720757922,"~/hateoas/.gitignore"
--'  1  0  ~/hateoas/.gitignore
-|4,39,1,0,1720757922,"~/hateoas/.gitignore"
--'  8  8  ~/hateoas/.gitignore
-|4,39,8,8,1720757909,"~/hateoas/.gitignore"
--'  8  8  ~/hateoas/.gitignore
-|4,39,8,8,1720757909,"~/hateoas/.gitignore"
--'  8  8  ~/hateoas/.gitignore
-|4,39,8,8,1720757909,"~/hateoas/.gitignore"
--'  7  8  ~/hateoas/.gitignore
-|4,39,7,8,1720757909,"~/hateoas/.gitignore"
--'  1  0  ~/hateoas/.gitignore
-|4,39,1,0,1720757894,"~/hateoas/.gitignore"
--'  3  1  ~/bash/.gitignore
-|4,39,3,1,1720757844,"~/bash/.gitignore"
--'  3  1  ~/bash/.gitignore
-|4,39,3,1,1720757844,"~/bash/.gitignore"
--'  3  1  ~/bash/.gitignore
-|4,39,3,1,1720757844,"~/bash/.gitignore"
--'  3  1  ~/bash/.gitignore
-|4,39,3,1,1720757844,"~/bash/.gitignore"
--'  3  1  ~/bash/.gitignore
-|4,39,3,1,1720757844,"~/bash/.gitignore"
--'  3  7  ~/bash/.gitignore
-|4,39,3,7,1720757837,"~/bash/.gitignore"
--'  1  0  ~/bash/.gitignore
-|4,39,1,0,1720757832,"~/bash/.gitignore"
--'  1  0  ~/bash/.gitignore
-|4,39,1,0,1720757832,"~/bash/.gitignore"
--'  1  0  ~/bash/.gitignore
-|4,39,1,0,1720757832,"~/bash/.gitignore"
--'  1  0  ~/bash/.gitignore
-|4,39,1,0,1720757832,"~/bash/.gitignore"
--'  1  0  ~/bash/.gitignore
-|4,39,1,0,1720757832,"~/bash/.gitignore"
--'  1  0  ~/bash/.gitignore
-|4,39,1,0,1720757832,"~/bash/.gitignore"
--'  1  0  ~/bash/backup.crontab
-|4,39,1,0,1720757766,"~/bash/backup.crontab"
--'  1  0  ~/bash/backup.crontab
-|4,39,1,0,1720757766,"~/bash/backup.crontab"
--'  1  0  ~/bash/backup.crontab
-|4,39,1,0,1720757766,"~/bash/backup.crontab"
--'  1  0  ~/bash/backup.crontab
-|4,39,1,0,1720757766,"~/bash/backup.crontab"
--'  1  0  ~/bash/backup.crontab
-|4,39,1,0,1720757766,"~/bash/backup.crontab"
--'  1  0  ~/bash/backup.crontab
-|4,39,1,0,1720757766,"~/bash/backup.crontab"
--'  1  0  ~/bash/backup.crontab
-|4,39,1,0,1720757766,"~/bash/backup.crontab"
--'  2  5  ~/bash/.gitignore
-|4,39,2,5,1720757641,"~/bash/.gitignore"
--'  2  5  ~/bash/.gitignore
-|4,39,2,5,1720757641,"~/bash/.gitignore"
--'  2  5  ~/bash/.gitignore
-|4,39,2,5,1720757641,"~/bash/.gitignore"
--'  2  5  ~/bash/.gitignore
-|4,39,2,5,1720757641,"~/bash/.gitignore"
--'  2  5  ~/bash/.gitignore
-|4,39,2,5,1720757641,"~/bash/.gitignore"
--'  2  5  ~/bash/.gitignore
-|4,39,2,5,1720757641,"~/bash/.gitignore"
--'  2  5  ~/bash/.gitignore
-|4,39,2,5,1720757641,"~/bash/.gitignore"
--'  2  5  ~/bash/.gitignore
-|4,39,2,5,1720757641,"~/bash/.gitignore"
--'  1  5  ~/bash/.gitignore
-|4,39,1,5,1720757583,"~/bash/.gitignore"
--'  1  5  ~/bash/.gitignore
-|4,39,1,5,1720757583,"~/bash/.gitignore"
--'  1  5  ~/bash/.gitignore
-|4,39,1,5,1720757583,"~/bash/.gitignore"
--'  87  0  /var/log/syslog
-|4,39,87,0,1720704914,"/var/log/syslog"
--'  87  0  /var/log/syslog
-|4,39,87,0,1720704914,"/var/log/syslog"
--'  87  0  /var/log/syslog
-|4,39,87,0,1720704914,"/var/log/syslog"
--'  87  0  /var/log/syslog
-|4,39,87,0,1720704914,"/var/log/syslog"
--'  87  0  /var/log/syslog
-|4,39,87,0,1720704914,"/var/log/syslog"
--'  87  0  /var/log/syslog
-|4,39,87,0,1720704914,"/var/log/syslog"
--'  87  0  /var/log/syslog
-|4,39,87,0,1720704914,"/var/log/syslog"
--'  87  0  /var/log/syslog
-|4,39,87,0,1720704914,"/var/log/syslog"
--'  87  0  /var/log/syslog
-|4,39,87,0,1720704914,"/var/log/syslog"
--'  87  0  /var/log/syslog
-|4,39,87,0,1720704914,"/var/log/syslog"
--'  102  0  /var/log/syslog
-|4,39,102,0,1720704910,"/var/log/syslog"
--'  102  0  /var/log/syslog
-|4,39,102,0,1720704910,"/var/log/syslog"
--'  102  0  /var/log/syslog
-|4,39,102,0,1720704910,"/var/log/syslog"
--'  102  0  /var/log/syslog
-|4,39,102,0,1720704910,"/var/log/syslog"
--'  102  0  /var/log/syslog
-|4,39,102,0,1720704910,"/var/log/syslog"
--'  102  0  /var/log/syslog
-|4,39,102,0,1720704910,"/var/log/syslog"
--'  102  0  /var/log/syslog
-|4,39,102,0,1720704910,"/var/log/syslog"
--'  102  0  /var/log/syslog
-|4,39,102,0,1720704910,"/var/log/syslog"
--'  102  0  /var/log/syslog
-|4,39,102,0,1720704910,"/var/log/syslog"
--'  102  0  /var/log/syslog
-|4,39,102,0,1720704910,"/var/log/syslog"
--'  49  0  /var/log/syslog
-|4,39,49,0,1720703396,"/var/log/syslog"
--'  49  0  /var/log/syslog
-|4,39,49,0,1720703396,"/var/log/syslog"
--'  49  0  /var/log/syslog
-|4,39,49,0,1720703396,"/var/log/syslog"
--'  49  0  /var/log/syslog
-|4,39,49,0,1720703396,"/var/log/syslog"
--'  49  0  /var/log/syslog
-|4,39,49,0,1720703396,"/var/log/syslog"
--'  49  0  /var/log/syslog
-|4,39,49,0,1720703396,"/var/log/syslog"
--'  49  0  /var/log/syslog
-|4,39,49,0,1720703396,"/var/log/syslog"
--'  49  0  /var/log/syslog
-|4,39,49,0,1720703396,"/var/log/syslog"
--'  49  0  /var/log/syslog
-|4,39,49,0,1720703396,"/var/log/syslog"
--'  49  0  /var/log/syslog
-|4,39,49,0,1720703396,"/var/log/syslog"
--'  40  72  /var/log/syslog
-|4,39,40,72,1720703395,"/var/log/syslog"
--'  40  72  /var/log/syslog
-|4,39,40,72,1720703395,"/var/log/syslog"
--'  40  72  /var/log/syslog
-|4,39,40,72,1720703395,"/var/log/syslog"
--'  40  72  /var/log/syslog
-|4,39,40,72,1720703395,"/var/log/syslog"
--'  40  72  /var/log/syslog
-|4,39,40,72,1720703395,"/var/log/syslog"
--'  40  72  /var/log/syslog
-|4,39,40,72,1720703395,"/var/log/syslog"
--'  40  72  /var/log/syslog
-|4,39,40,72,1720703395,"/var/log/syslog"
--'  40  72  /var/log/syslog
-|4,39,40,72,1720703395,"/var/log/syslog"
--'  40  72  /var/log/syslog
-|4,39,40,72,1720703395,"/var/log/syslog"
--'  40  72  /var/log/syslog
-|4,39,40,72,1720703395,"/var/log/syslog"
--'  1  0  /var/log/syslog
-|4,39,1,0,1720700590,"/var/log/syslog"
--'  1  0  /var/log/syslog
-|4,39,1,0,1720700590,"/var/log/syslog"
--'  1  0  /var/log/syslog
-|4,39,1,0,1720700590,"/var/log/syslog"
 
 # Buffer list:
-%~/.config/.gitignore	1	0
-%~/bash/.gitignore	4	0
-%~/hateoas/.gitignore	1	0
-%~/.vim/templates/template.gitignore	1	0
-%~/.vim/plugin/template.vim	36	8
+%~/tooling/logging.txt	2	0
 
 # History of marks within files (newest to oldest):
+
+> ~/tooling/logging.txt
+	*	1720792682	0
+	"	2	0
+	^	29	6
+	.	30	0
+	+	16	77
+	+	17	77
+	+	18	78
+	+	19	73
+	+	19	125
+	+	19	46
+	+	22	80
+	+	23	70
+	+	25	50
+	+	28	77
+	+	29	21
+	+	29	22
+	+	28	79
+	+	29	5
+	+	30	0
+
+> /var/log/cron.log
+	*	1720792379	0
+	"	7	0
 
 > ~/.gitignore
 	*	1720766942	0
