@@ -1,12 +1,24 @@
 
-function! s:GetTemplateNames(...)
+function! s:GetExtension()
+    " should handle `.gitignore` edgecase
     let extension = expand("%:e")
+    if extension == ""
+        let extension = expand("%:t")
+        " assert that extension starts with a dot
+        call assert_match('^\.', extension)
+        let extension = extension[1:]
+    endif
+    return extension
+endfunction
+
+function! s:GetTemplateNames(...)
+    let extension = s:GetExtension()
     let pattern =  '*.'.extension
-    echo pattern
+    " echo pattern
     let files_in_directory = split(globpath(s:GetTemplateDir(), pattern), '\n')
     let template_names = []
     for file in files_in_directory
-        echo file
+        " echo file
         let template_names = template_names + [fnamemodify(file, ':t:r')]
     endfor
     return template_names
@@ -20,7 +32,7 @@ function! s:GetTemplateDir()
 endfunction
 
 function! s:GetFilename(args)
-    let extension = expand("%:e")
+    let extension = s:GetExtension()
     if len(a:args) == 0
         let filename = "template" . "." . extension
     else

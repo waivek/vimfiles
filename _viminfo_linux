@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/shellch
+~MSle0~/\C\<GetTemplateNames\>
 
 # Last Substitute Search Pattern:
 ~MSle0&200
@@ -20,12 +20,62 @@
 $
 
 # Command Line History (newest to oldest):
+:qa
+|2,0,1720766943,,"qa"
+:Template
+|2,0,1720766938,,"Template"
+:so %
+|2,0,1720766935,,"so %"
+:Template template
+|2,0,1720766912,,"Template template"
+:echo expand("%:e")
+|2,0,1720766759,,"echo expand(\"%:e\")"
+:echo expand("%:t:e")
+|2,0,1720766715,,"echo expand(\"%:t:e\")"
+:echo expand("%:t")
+|2,0,1720766710,,"echo expand(\"%:t\")"
+:echo expand("%")
+|2,0,1720766701,,"echo expand(\"%\")"
+:echo expand("%:p:b")
+|2,0,1720766698,,"echo expand(\"%:p:b\")"
+:echo expand("%:p:h")
+|2,0,1720766694,,"echo expand(\"%:p:h\")"
+:echo expand("%:p")
+|2,0,1720766687,,"echo expand(\"%:p\")"
+:e ~/.gitignore
+|2,0,1720766678,,"e ~/.gitignore"
+:MRU .gi
+|2,0,1720766673,,"MRU .gi"
+:ec
+|2,0,1720766643,,"ec"
+:MRU 1182:template.vim
+|2,0,1720766637,,"MRU 1182:template.vim"
+:MRU template.vim
+|2,0,1720758450,,"MRU template.vim"
+:qa`
+|2,0,1720758440,,"qa`"
+:set ft=gitignore
+|2,0,1720758350,,"set ft=gitignore"
+:e file.gitignore
+|2,0,1720758339,,"e file.gitignore"
+:template`
+|2,0,1720758328,,"template`"
+:ne
+|2,0,1720758231,,"ne"
+:cn
+|2,0,1720758215,,"cn"
+:next
+|2,0,1720758179,,"next"
+:nex
+|2,0,1720758140,,"nex"
+:MRU giti
+|2,0,1720758123,,"MRU giti"
 :q
-|2,0,1720704913,,"q"
+|2,0,1720757977,,"q"
+:e backup.crontab
+|2,0,1720757739,,"e backup.crontab"
 :e
 |2,0,1720703396,,"e"
-:qa
-|2,0,1720698763,,"qa"
 :term
 |2,0,1720698721,,"term"
 :ALEInfo
@@ -78,8 +128,6 @@ $
 |2,0,1720527514,,"v/200/d"
 :enew
 |2,0,1720527512,,"enew"
-:so %
-|2,0,1720526184,,"so %"
 :MRU xcli
 |2,0,1720526176,,"MRU xcli"
 :echo has('clipboard')
@@ -98,8 +146,6 @@ $
 |2,0,1720525586,,"vmap"
 :e ~/.vim/plugin/xclip.vim
 |2,0,1720525578,,"e ~/.vim/plugin/xclip.vim"
-:Template
-|2,0,1720525180,,"Template"
 :e individual_get_all_cookies.py
 |2,0,1720525177,,"e individual_get_all_cookies.py"
 :Rename batch_get_all_cookies.py
@@ -140,8 +186,6 @@ $
 |2,0,1720366788,,"set shell?"
 :bd
 |2,0,1720366642,,"bd"
-:cn
-|2,0,1720366626,,"cn"
 :grep -g '*.vim' -g 'vimrc' --fixed-strings reg_save
 |2,0,1720366600,,"grep -g '*.vim' -g 'vimrc' --fixed-strings reg_save"
 :g
@@ -534,8 +578,6 @@ $
 |2,0,1718571446,,"MRU base-dark"
 :MRU editor.css
 |2,0,1718571440,,"MRU editor.css"
-:echo expand("%:p")
-|2,0,1718571391,,"echo expand(\"%:p\")"
 :MRU wide-
 |2,0,1718571387,,"MRU wide-"
 :MRU wide
@@ -790,8 +832,6 @@ $
 |2,0,1718407464,,"MRU ap"
 :FIND out
 |2,0,1718406763,,"FIND out"
-:nex
-|2,0,1718406741,,"nex"
 :argnex
 |2,0,1718406739,,"argnex"
 :GFiles
@@ -1846,8 +1886,6 @@ $
 |2,0,1716599359,,"MRU 2:hateoas-api.py"
 :e sqlite-editor.config.js
 |2,0,1716599340,,"e sqlite-editor.config.js"
-:Template template
-|2,0,1716599257,,"Template template"
 :Templaet templaet
 |2,0,1716599253,,"Templaet templaet"
 :MRU 23:requirements.txt
@@ -1962,8 +2000,6 @@ $
 |2,0,1716417807,,"e pa"
 :e drivers/LICENSE.chromedriver
 |2,0,1716417678,,"e drivers/LICENSE.chromedriver"
-:next
-|2,0,1716417533,,"next"
 :q~
 |2,0,1716416869,,"q~"
 :Rename gethtmlselenium.py
@@ -2556,8 +2592,6 @@ $
 |2,0,1714213811,,"llllllll"
 :term python
 |2,0,1714213586,,"term python"
-:ec
-|2,0,1714213551,,"ec"
 :MRU 10:refresh_downloads_table.py
 |2,0,1714212958,,"MRU 10:refresh_downloads_table.py"
 :e sty
@@ -2996,10 +3030,6 @@ $
 |2,0,1713768728,,"e cronlogger.sh"
 :e simple-source.bash
 |2,0,1713768711,,"e simple-source.bash"
-:e backup.crontab
-|2,0,1713768705,,"e backup.crontab"
-:MRU giti
-|2,0,1713767790,,"MRU giti"
 :e sql_checklist.txt
 |2,0,1713758803,,"e sql_checklist.txt"
 :MRU pyt
@@ -3054,8 +3084,6 @@ $
 |2,0,1713697303,,"e target.bash"
 :Jlast
 |2,0,1713697146,,"Jlast"
-:ne
-|2,0,1713697139,,"ne"
 :Jpre
 |2,0,1713697133,,"Jpre"
 :Rename cron-run.bash
@@ -4546,8 +4574,6 @@ $
 |2,0,1694419057,,"echo expand(\"%:h:t\""
 :echo expand("%:h")
 |2,0,1694419054,,"echo expand(\"%:h\")"
-:echo expand("%:t")
-|2,0,1694419042,,"echo expand(\"%:t\")"
 :e waivek/hello.py
 |2,0,1694418980,,"e waivek/hello.py"
 : w
@@ -5436,8 +5462,6 @@ $
 |2,0,1693292353,,"echo \"%\""
 :echo expand("%:ht")
 |2,0,1693292351,,"echo expand(\"%:ht\")"
-:echo expand("%")
-|2,0,1693292345,,"echo expand(\"%\")"
 :term echo "HELLO"
 |2,0,1693292279,,"term echo \"HELLO\""
 :MRU compl
@@ -7288,8 +7312,6 @@ $
 |2,0,1688467793,,"Template html"
 :MRU te
 |2,0,1688467775,,"MRU te"
-:MRU template.vim
-|2,0,1688467731,,"MRU template.vim"
 :e vuehtml.html
 |2,0,1688467691,,"e vuehtml.html"
 :h 'pastetoggle'
@@ -11375,52 +11397,37 @@ $
 
 # Registers:
 ""0	LINE	0
-	command_output=$(eval "$command_to_run" 2>&1 | $tee_command)
-|3,1,0,1,1,0,1720698721,"command_output=$(eval \"$command_to_run\" 2>&1 | $tee_command)"
+	    echo pattern
+|3,1,0,1,1,0,1720766934,"    echo pattern"
 "1	LINE	0
-	command_output=$(eval "$command_to_run" 2>&1 | $tee_command)
-|3,0,1,1,1,0,1720698433,"command_output=$(eval \"$command_to_run\" 2>&1 | $tee_command)"
+	    echo pattern
+|3,0,1,1,1,0,1720766931,"    echo pattern"
 "2	LINE	0
-	start=$(date +%s)
-	$command_to_run
-	
-	exit_code=$?
-	end=$(date +%s)
-	runtime=$((end-start))
-	
-|3,0,2,1,7,0,1720698384,"start=$(date +%s)","$command_to_run","","exit_code=$?","end=$(date +%s)","runtime=$((end-start))",""
+	    echoerr "Extension: " . extension
+|3,0,2,1,1,0,1720766905,"    echoerr \"Extension: \" . extension"
 "3	LINE	0
-	payload=$(cat <<EOF
-	{
-	  "name": "$command_to_run",
-	  "exit_code": $exit_code,
-	  "runtime": $runtime
-	}
 	
-	
-	EOF
-	)
-	
-	
-|3,0,3,1,12,0,1720698370,"payload=$(cat <<EOF","{","  \"name\": \"$command_to_run\",","  \"exit_code\": $exit_code,","  \"runtime\": $runtime","}","","","EOF",")","",""
+|3,0,3,1,1,0,1720766851,""
 "4	LINE	0
-	curl -X POST -H "Content-Type: application/json" -d "$payload" https://myserver.com/cronlogger.py
-|3,0,4,1,1,0,1720698364,"curl -X POST -H \"Content-Type: application/json\" -d \"$payload\" https://myserver.com/cronlogger.py"
+	        call assert_true
+|3,0,4,1,1,0,1720766797,"        call assert_true"
 "5	LINE	0
 	
-|3,0,5,1,1,0,1720633878,""
+|3,0,5,1,1,0,1720766753,""
 "6	LINE	0
-	export DISPLAY=192.168.29.52:0.0
-|3,0,6,1,1,0,1720633579,"export DISPLAY=192.168.29.52:0.0"
+	*.env
+|3,0,6,1,1,0,1720758188,"*.env"
 "7	LINE	0
-	    "/home/vivek/
-|3,0,7,1,1,0,1720622833,"    \"/home/vivek/"
+	data/*
+	data/
+|3,0,7,1,2,0,1720757936,"data/*","data/"
 "8	LINE	0
-	
-|3,0,8,1,1,0,1720622123,""
+	data/*
+	data/
+|3,0,8,1,2,0,1720757935,"data/*","data/"
 "9	LINE	0
-	# eval "$(mcfly init bash)"
-|3,0,9,1,1,0,1720620679,"# eval \"$(mcfly init bash)\""
+	!/
+|3,0,9,1,1,0,1720757927,"!/"
 "j	CHAR	0
 	kc
 |3,0,19,0,1,0,1718434816,"kc"
@@ -11434,237 +11441,480 @@ $
 	https://rsms.me/inter/
 |3,0,28,0,1,0,1718483440,"https://rsms.me/inter/"
 "-	CHAR	0
-	server <TAB>
-|3,0,36,0,1,0,1720620661,"server <TAB>"
+	expand("%:e")
+|3,0,36,0,1,0,1720766900,"expand(\"%:e\")"
 
 # File marks:
-'0  87  0  /var/log/syslog
-|4,48,87,0,1720704914,"/var/log/syslog"
-'1  1  0  /var/log/syslog
-|4,49,1,0,1720699897,"/var/log/syslog"
-'2  1  0  /var/log/syslog
-|4,50,1,0,1720699897,"/var/log/syslog"
-'3  1  0  /var/log/syslog
-|4,51,1,0,1720699755,"/var/log/syslog"
-'4  1  0  /var/log/syslog
-|4,52,1,0,1720699755,"/var/log/syslog"
-'5  1  0  /var/log/syslog
-|4,53,1,0,1720699365,"/var/log/syslog"
-'6  1  0  /var/log/syslog
-|4,54,1,0,1720699365,"/var/log/syslog"
-'7  1  0  /var/log/syslog
-|4,55,1,0,1720699365,"/var/log/syslog"
-'8  1  0  /var/log/syslog
-|4,56,1,0,1720699365,"/var/log/syslog"
-'9  41  26  ~/bash/cron-run.bash
-|4,57,41,26,1720698763,"~/bash/cron-run.bash"
+'0  36  8  ~/.vim/plugin/template.vim
+|4,48,36,8,1720766944,"~/.vim/plugin/template.vim"
+'1  5  0  ~/.vim/templates/template.gitignore
+|4,49,5,0,1720757978,"~/.vim/templates/template.gitignore"
+'2  1  0  ~/.vim/templates/template.gitignore
+|4,50,1,0,1720757978,"~/.vim/templates/template.gitignore"
+'3  7  0  ~/hateoas/.gitignore
+|4,51,7,0,1720757942,"~/hateoas/.gitignore"
+'4  7  0  ~/hateoas/.gitignore
+|4,52,7,0,1720757942,"~/hateoas/.gitignore"
+'5  7  0  ~/hateoas/.gitignore
+|4,53,7,0,1720757942,"~/hateoas/.gitignore"
+'6  7  0  ~/hateoas/.gitignore
+|4,54,7,0,1720757942,"~/hateoas/.gitignore"
+'7  8  8  ~/hateoas/.gitignore
+|4,55,8,8,1720757909,"~/hateoas/.gitignore"
+'8  7  8  ~/hateoas/.gitignore
+|4,56,7,8,1720757909,"~/hateoas/.gitignore"
+'9  8  8  ~/hateoas/.gitignore
+|4,57,8,8,1720757909,"~/hateoas/.gitignore"
 
 # Jumplist (newest first):
+-'  36  8  ~/.vim/plugin/template.vim
+|4,39,36,8,1720766944,"~/.vim/plugin/template.vim"
+-'  21  8  ~/.vim/plugin/template.vim
+|4,39,21,8,1720766934,"~/.vim/plugin/template.vim"
+-'  17  4  ~/.vim/plugin/template.vim
+|4,39,17,4,1720766933,"~/.vim/plugin/template.vim"
+-'  20  4  ~/.vim/plugin/template.vim
+|4,39,20,4,1720766932,"~/.vim/plugin/template.vim"
+-'  34  28  ~/.vim/plugin/template.vim
+|4,39,34,28,1720766903,"~/.vim/plugin/template.vim"
+-'  35  35  ~/.vim/plugin/template.vim
+|4,39,35,35,1720766902,"~/.vim/plugin/template.vim"
+-'  46  31  ~/.vim/plugin/template.vim
+|4,39,46,31,1720766890,"~/.vim/plugin/template.vim"
+-'  14  12  ~/.vim/plugin/template.vim
+|4,39,14,12,1720766884,"~/.vim/plugin/template.vim"
+-'  15  35  ~/.vim/plugin/template.vim
+|4,39,15,35,1720766859,"~/.vim/plugin/template.vim"
+-'  10  8  ~/.vim/plugin/template.vim
+|4,39,10,8,1720766848,"~/.vim/plugin/template.vim"
+-'  9  36  ~/.vim/plugin/template.vim
+|4,39,9,36,1720766848,"~/.vim/plugin/template.vim"
+-'  8  8  ~/.vim/plugin/template.vim
+|4,39,8,8,1720766819,"~/.vim/plugin/template.vim"
+-'  14  38  ~/.vim/templates/template.gitignore
+|4,39,14,38,1720766637,"~/.vim/templates/template.gitignore"
+-'  1  0  ~/.config/.gitignore
+|4,39,1,0,1720758123,"~/.config/.gitignore"
+-'  5  0  ~/.vim/templates/template.gitignore
+|4,39,5,0,1720757978,"~/.vim/templates/template.gitignore"
+-'  1  0  ~/.vim/templates/template.gitignore
+|4,39,1,0,1720757978,"~/.vim/templates/template.gitignore"
+-'  7  0  ~/hateoas/.gitignore
+|4,39,7,0,1720757942,"~/hateoas/.gitignore"
+-'  7  0  ~/hateoas/.gitignore
+|4,39,7,0,1720757942,"~/hateoas/.gitignore"
+-'  7  0  ~/hateoas/.gitignore
+|4,39,7,0,1720757942,"~/hateoas/.gitignore"
+-'  1  0  ~/hateoas/.gitignore
+|4,39,1,0,1720757922,"~/hateoas/.gitignore"
+-'  1  0  ~/hateoas/.gitignore
+|4,39,1,0,1720757922,"~/hateoas/.gitignore"
+-'  1  0  ~/hateoas/.gitignore
+|4,39,1,0,1720757922,"~/hateoas/.gitignore"
+-'  8  8  ~/hateoas/.gitignore
+|4,39,8,8,1720757909,"~/hateoas/.gitignore"
+-'  8  8  ~/hateoas/.gitignore
+|4,39,8,8,1720757909,"~/hateoas/.gitignore"
+-'  8  8  ~/hateoas/.gitignore
+|4,39,8,8,1720757909,"~/hateoas/.gitignore"
+-'  7  8  ~/hateoas/.gitignore
+|4,39,7,8,1720757909,"~/hateoas/.gitignore"
+-'  1  0  ~/hateoas/.gitignore
+|4,39,1,0,1720757894,"~/hateoas/.gitignore"
+-'  3  1  ~/bash/.gitignore
+|4,39,3,1,1720757844,"~/bash/.gitignore"
+-'  3  1  ~/bash/.gitignore
+|4,39,3,1,1720757844,"~/bash/.gitignore"
+-'  3  1  ~/bash/.gitignore
+|4,39,3,1,1720757844,"~/bash/.gitignore"
+-'  3  1  ~/bash/.gitignore
+|4,39,3,1,1720757844,"~/bash/.gitignore"
+-'  3  1  ~/bash/.gitignore
+|4,39,3,1,1720757844,"~/bash/.gitignore"
+-'  3  7  ~/bash/.gitignore
+|4,39,3,7,1720757837,"~/bash/.gitignore"
+-'  1  0  ~/bash/.gitignore
+|4,39,1,0,1720757832,"~/bash/.gitignore"
+-'  1  0  ~/bash/.gitignore
+|4,39,1,0,1720757832,"~/bash/.gitignore"
+-'  1  0  ~/bash/.gitignore
+|4,39,1,0,1720757832,"~/bash/.gitignore"
+-'  1  0  ~/bash/.gitignore
+|4,39,1,0,1720757832,"~/bash/.gitignore"
+-'  1  0  ~/bash/.gitignore
+|4,39,1,0,1720757832,"~/bash/.gitignore"
+-'  1  0  ~/bash/.gitignore
+|4,39,1,0,1720757832,"~/bash/.gitignore"
+-'  1  0  ~/bash/backup.crontab
+|4,39,1,0,1720757766,"~/bash/backup.crontab"
+-'  1  0  ~/bash/backup.crontab
+|4,39,1,0,1720757766,"~/bash/backup.crontab"
+-'  1  0  ~/bash/backup.crontab
+|4,39,1,0,1720757766,"~/bash/backup.crontab"
+-'  1  0  ~/bash/backup.crontab
+|4,39,1,0,1720757766,"~/bash/backup.crontab"
+-'  1  0  ~/bash/backup.crontab
+|4,39,1,0,1720757766,"~/bash/backup.crontab"
+-'  1  0  ~/bash/backup.crontab
+|4,39,1,0,1720757766,"~/bash/backup.crontab"
+-'  1  0  ~/bash/backup.crontab
+|4,39,1,0,1720757766,"~/bash/backup.crontab"
+-'  2  5  ~/bash/.gitignore
+|4,39,2,5,1720757641,"~/bash/.gitignore"
+-'  2  5  ~/bash/.gitignore
+|4,39,2,5,1720757641,"~/bash/.gitignore"
+-'  2  5  ~/bash/.gitignore
+|4,39,2,5,1720757641,"~/bash/.gitignore"
+-'  2  5  ~/bash/.gitignore
+|4,39,2,5,1720757641,"~/bash/.gitignore"
+-'  2  5  ~/bash/.gitignore
+|4,39,2,5,1720757641,"~/bash/.gitignore"
+-'  2  5  ~/bash/.gitignore
+|4,39,2,5,1720757641,"~/bash/.gitignore"
+-'  2  5  ~/bash/.gitignore
+|4,39,2,5,1720757641,"~/bash/.gitignore"
+-'  2  5  ~/bash/.gitignore
+|4,39,2,5,1720757641,"~/bash/.gitignore"
+-'  1  5  ~/bash/.gitignore
+|4,39,1,5,1720757583,"~/bash/.gitignore"
+-'  1  5  ~/bash/.gitignore
+|4,39,1,5,1720757583,"~/bash/.gitignore"
+-'  1  5  ~/bash/.gitignore
+|4,39,1,5,1720757583,"~/bash/.gitignore"
+-'  87  0  /var/log/syslog
+|4,39,87,0,1720704914,"/var/log/syslog"
+-'  87  0  /var/log/syslog
+|4,39,87,0,1720704914,"/var/log/syslog"
+-'  87  0  /var/log/syslog
+|4,39,87,0,1720704914,"/var/log/syslog"
+-'  87  0  /var/log/syslog
+|4,39,87,0,1720704914,"/var/log/syslog"
+-'  87  0  /var/log/syslog
+|4,39,87,0,1720704914,"/var/log/syslog"
+-'  87  0  /var/log/syslog
+|4,39,87,0,1720704914,"/var/log/syslog"
+-'  87  0  /var/log/syslog
+|4,39,87,0,1720704914,"/var/log/syslog"
+-'  87  0  /var/log/syslog
+|4,39,87,0,1720704914,"/var/log/syslog"
+-'  87  0  /var/log/syslog
+|4,39,87,0,1720704914,"/var/log/syslog"
 -'  87  0  /var/log/syslog
 |4,39,87,0,1720704914,"/var/log/syslog"
 -'  102  0  /var/log/syslog
 |4,39,102,0,1720704910,"/var/log/syslog"
+-'  102  0  /var/log/syslog
+|4,39,102,0,1720704910,"/var/log/syslog"
+-'  102  0  /var/log/syslog
+|4,39,102,0,1720704910,"/var/log/syslog"
+-'  102  0  /var/log/syslog
+|4,39,102,0,1720704910,"/var/log/syslog"
+-'  102  0  /var/log/syslog
+|4,39,102,0,1720704910,"/var/log/syslog"
+-'  102  0  /var/log/syslog
+|4,39,102,0,1720704910,"/var/log/syslog"
+-'  102  0  /var/log/syslog
+|4,39,102,0,1720704910,"/var/log/syslog"
+-'  102  0  /var/log/syslog
+|4,39,102,0,1720704910,"/var/log/syslog"
+-'  102  0  /var/log/syslog
+|4,39,102,0,1720704910,"/var/log/syslog"
+-'  102  0  /var/log/syslog
+|4,39,102,0,1720704910,"/var/log/syslog"
 -'  49  0  /var/log/syslog
 |4,39,49,0,1720703396,"/var/log/syslog"
+-'  49  0  /var/log/syslog
+|4,39,49,0,1720703396,"/var/log/syslog"
+-'  49  0  /var/log/syslog
+|4,39,49,0,1720703396,"/var/log/syslog"
+-'  49  0  /var/log/syslog
+|4,39,49,0,1720703396,"/var/log/syslog"
+-'  49  0  /var/log/syslog
+|4,39,49,0,1720703396,"/var/log/syslog"
+-'  49  0  /var/log/syslog
+|4,39,49,0,1720703396,"/var/log/syslog"
+-'  49  0  /var/log/syslog
+|4,39,49,0,1720703396,"/var/log/syslog"
+-'  49  0  /var/log/syslog
+|4,39,49,0,1720703396,"/var/log/syslog"
+-'  49  0  /var/log/syslog
+|4,39,49,0,1720703396,"/var/log/syslog"
+-'  49  0  /var/log/syslog
+|4,39,49,0,1720703396,"/var/log/syslog"
+-'  40  72  /var/log/syslog
+|4,39,40,72,1720703395,"/var/log/syslog"
+-'  40  72  /var/log/syslog
+|4,39,40,72,1720703395,"/var/log/syslog"
+-'  40  72  /var/log/syslog
+|4,39,40,72,1720703395,"/var/log/syslog"
+-'  40  72  /var/log/syslog
+|4,39,40,72,1720703395,"/var/log/syslog"
+-'  40  72  /var/log/syslog
+|4,39,40,72,1720703395,"/var/log/syslog"
+-'  40  72  /var/log/syslog
+|4,39,40,72,1720703395,"/var/log/syslog"
+-'  40  72  /var/log/syslog
+|4,39,40,72,1720703395,"/var/log/syslog"
+-'  40  72  /var/log/syslog
+|4,39,40,72,1720703395,"/var/log/syslog"
+-'  40  72  /var/log/syslog
+|4,39,40,72,1720703395,"/var/log/syslog"
 -'  40  72  /var/log/syslog
 |4,39,40,72,1720703395,"/var/log/syslog"
 -'  1  0  /var/log/syslog
 |4,39,1,0,1720700590,"/var/log/syslog"
 -'  1  0  /var/log/syslog
-|4,39,1,0,1720699897,"/var/log/syslog"
+|4,39,1,0,1720700590,"/var/log/syslog"
 -'  1  0  /var/log/syslog
-|4,39,1,0,1720699755,"/var/log/syslog"
--'  1  0  /var/log/syslog
-|4,39,1,0,1720699365,"/var/log/syslog"
--'  41  26  ~/bash/cron-run.bash
-|4,39,41,26,1720698763,"~/bash/cron-run.bash"
--'  41  26  ~/bash/cron-run.bash
-|4,39,41,26,1720698763,"~/bash/cron-run.bash"
--'  41  26  ~/bash/cron-run.bash
-|4,39,41,26,1720698763,"~/bash/cron-run.bash"
--'  41  26  ~/bash/cron-run.bash
-|4,39,41,26,1720698763,"~/bash/cron-run.bash"
--'  41  26  ~/bash/cron-run.bash
-|4,39,41,26,1720698763,"~/bash/cron-run.bash"
--'  8  0  ~/bash/cronlogger.bash
-|4,39,8,0,1720698220,"~/bash/cronlogger.bash"
--'  8  0  ~/bash/cronlogger.bash
-|4,39,8,0,1720698220,"~/bash/cronlogger.bash"
--'  8  0  ~/bash/cronlogger.bash
-|4,39,8,0,1720698220,"~/bash/cronlogger.bash"
--'  8  0  ~/bash/cronlogger.bash
-|4,39,8,0,1720698220,"~/bash/cronlogger.bash"
--'  8  0  ~/bash/cronlogger.bash
-|4,39,8,0,1720698220,"~/bash/cronlogger.bash"
--'  47  0  ~/bash/cron-run.bash
-|4,39,47,0,1720696110,"~/bash/cron-run.bash"
--'  47  0  ~/bash/cron-run.bash
-|4,39,47,0,1720696110,"~/bash/cron-run.bash"
--'  47  0  ~/bash/cron-run.bash
-|4,39,47,0,1720696110,"~/bash/cron-run.bash"
--'  47  0  ~/bash/cron-run.bash
-|4,39,47,0,1720696110,"~/bash/cron-run.bash"
--'  47  0  ~/bash/cron-run.bash
-|4,39,47,0,1720696110,"~/bash/cron-run.bash"
--'  1  0  ~/bash/cron-run.bash
-|4,39,1,0,1720696100,"~/bash/cron-run.bash"
--'  1  0  ~/bash/cron-run.bash
-|4,39,1,0,1720696100,"~/bash/cron-run.bash"
--'  1  0  ~/bash/cron-run.bash
-|4,39,1,0,1720696100,"~/bash/cron-run.bash"
--'  1  0  ~/bash/cron-run.bash
-|4,39,1,0,1720696100,"~/bash/cron-run.bash"
--'  1  0  ~/bash/cron-run.bash
-|4,39,1,0,1720696100,"~/bash/cron-run.bash"
--'  34  93  /tmp/crontab.r714vo/crontab
-|4,39,34,93,1720693671,"/tmp/crontab.r714vo/crontab"
--'  34  93  /tmp/crontab.r714vo/crontab
-|4,39,34,93,1720693671,"/tmp/crontab.r714vo/crontab"
--'  34  93  /tmp/crontab.r714vo/crontab
-|4,39,34,93,1720693671,"/tmp/crontab.r714vo/crontab"
--'  34  93  /tmp/crontab.r714vo/crontab
-|4,39,34,93,1720693671,"/tmp/crontab.r714vo/crontab"
--'  34  93  /tmp/crontab.r714vo/crontab
-|4,39,34,93,1720693671,"/tmp/crontab.r714vo/crontab"
--'  34  93  /tmp/crontab.r714vo/crontab
-|4,39,34,93,1720693671,"/tmp/crontab.r714vo/crontab"
--'  1  0  /tmp/crontab.r714vo/crontab
-|4,39,1,0,1720693484,"/tmp/crontab.r714vo/crontab"
--'  1  0  /tmp/crontab.r714vo/crontab
-|4,39,1,0,1720693484,"/tmp/crontab.r714vo/crontab"
--'  1  0  /tmp/crontab.r714vo/crontab
-|4,39,1,0,1720693484,"/tmp/crontab.r714vo/crontab"
--'  1  0  /tmp/crontab.r714vo/crontab
-|4,39,1,0,1720693484,"/tmp/crontab.r714vo/crontab"
--'  1  0  /tmp/crontab.r714vo/crontab
-|4,39,1,0,1720693484,"/tmp/crontab.r714vo/crontab"
--'  1  0  /tmp/crontab.r714vo/crontab
-|4,39,1,0,1720693484,"/tmp/crontab.r714vo/crontab"
--'  8  0  ~/bash/logs
-|4,39,8,0,1720693167,"~/bash/logs"
--'  8  0  ~/bash/logs
-|4,39,8,0,1720693167,"~/bash/logs"
--'  8  0  ~/bash/logs
-|4,39,8,0,1720693167,"~/bash/logs"
--'  8  0  ~/bash/logs
-|4,39,8,0,1720693167,"~/bash/logs"
--'  8  0  ~/bash/logs
-|4,39,8,0,1720693167,"~/bash/logs"
--'  8  0  ~/bash/logs
-|4,39,8,0,1720693167,"~/bash/logs"
--'  8  0  ~/bash/logs
-|4,39,8,0,1720693167,"~/bash/logs"
--'  34  85  ~/bash/backup.crontab
-|4,39,34,85,1720693140,"~/bash/backup.crontab"
--'  34  85  ~/bash/backup.crontab
-|4,39,34,85,1720693140,"~/bash/backup.crontab"
--'  34  85  ~/bash/backup.crontab
-|4,39,34,85,1720693140,"~/bash/backup.crontab"
--'  34  85  ~/bash/backup.crontab
-|4,39,34,85,1720693140,"~/bash/backup.crontab"
--'  34  85  ~/bash/backup.crontab
-|4,39,34,85,1720693140,"~/bash/backup.crontab"
--'  34  85  ~/bash/backup.crontab
-|4,39,34,85,1720693140,"~/bash/backup.crontab"
--'  34  85  ~/bash/backup.crontab
-|4,39,34,85,1720693140,"~/bash/backup.crontab"
--'  34  85  ~/bash/backup.crontab
-|4,39,34,85,1720693140,"~/bash/backup.crontab"
--'  1  0  ~/bash/backup.crontab
-|4,39,1,0,1720693030,"~/bash/backup.crontab"
--'  1  0  ~/bash/backup.crontab
-|4,39,1,0,1720693030,"~/bash/backup.crontab"
--'  1  0  ~/bash/backup.crontab
-|4,39,1,0,1720693030,"~/bash/backup.crontab"
--'  1  0  ~/bash/backup.crontab
-|4,39,1,0,1720693030,"~/bash/backup.crontab"
--'  1  0  ~/bash/backup.crontab
-|4,39,1,0,1720693030,"~/bash/backup.crontab"
--'  1  0  ~/bash/backup.crontab
-|4,39,1,0,1720693030,"~/bash/backup.crontab"
--'  1  0  ~/bash/backup.crontab
-|4,39,1,0,1720693030,"~/bash/backup.crontab"
--'  1  0  ~/bash/backup.crontab
-|4,39,1,0,1720693030,"~/bash/backup.crontab"
--'  14  0  ~/hateoas/requirements.txt
-|4,39,14,0,1720693019,"~/hateoas/requirements.txt"
--'  14  0  ~/hateoas/requirements.txt
-|4,39,14,0,1720693019,"~/hateoas/requirements.txt"
--'  14  0  ~/hateoas/requirements.txt
-|4,39,14,0,1720693019,"~/hateoas/requirements.txt"
--'  14  0  ~/hateoas/requirements.txt
-|4,39,14,0,1720693019,"~/hateoas/requirements.txt"
--'  14  0  ~/hateoas/requirements.txt
-|4,39,14,0,1720693019,"~/hateoas/requirements.txt"
--'  14  0  ~/hateoas/requirements.txt
-|4,39,14,0,1720693019,"~/hateoas/requirements.txt"
--'  14  0  ~/hateoas/requirements.txt
-|4,39,14,0,1720693019,"~/hateoas/requirements.txt"
--'  14  0  ~/hateoas/requirements.txt
-|4,39,14,0,1720693019,"~/hateoas/requirements.txt"
--'  14  0  ~/hateoas/requirements.txt
-|4,39,14,0,1720693019,"~/hateoas/requirements.txt"
--'  1  0  ~/hateoas/requirements.txt
-|4,39,1,0,1720693014,"~/hateoas/requirements.txt"
--'  1  0  ~/hateoas/requirements.txt
-|4,39,1,0,1720693014,"~/hateoas/requirements.txt"
--'  1  0  ~/hateoas/requirements.txt
-|4,39,1,0,1720693014,"~/hateoas/requirements.txt"
--'  1  0  ~/hateoas/requirements.txt
-|4,39,1,0,1720693014,"~/hateoas/requirements.txt"
--'  1  0  ~/hateoas/requirements.txt
-|4,39,1,0,1720693014,"~/hateoas/requirements.txt"
--'  1  0  ~/hateoas/requirements.txt
-|4,39,1,0,1720693014,"~/hateoas/requirements.txt"
--'  1  0  ~/hateoas/requirements.txt
-|4,39,1,0,1720693014,"~/hateoas/requirements.txt"
--'  1  0  ~/hateoas/requirements.txt
-|4,39,1,0,1720693014,"~/hateoas/requirements.txt"
--'  1  0  ~/hateoas/requirements.txt
-|4,39,1,0,1720693014,"~/hateoas/requirements.txt"
--'  34  10  ~/bash/backup.crontab
-|4,39,34,10,1720693002,"~/bash/backup.crontab"
--'  34  10  ~/bash/backup.crontab
-|4,39,34,10,1720693002,"~/bash/backup.crontab"
--'  1  0  ~/bash/backup.crontab
-|4,39,1,0,1720692983,"~/bash/backup.crontab"
--'  1  0  ~/bash/backup.crontab
-|4,39,1,0,1720692983,"~/bash/backup.crontab"
--'  34  0  ~/bash/backup.crontab
-|4,39,34,0,1720692977,"~/bash/backup.crontab"
--'  1  0  ~/bash/backup.crontab
-|4,39,1,0,1720692973,"~/bash/backup.crontab"
--'  80  4  ~/hateoas/download_worker.py
-|4,39,80,4,1720692813,"~/hateoas/download_worker.py"
--'  80  4  ~/hateoas/download_worker.py
-|4,39,80,4,1720692813,"~/hateoas/download_worker.py"
--'  80  4  ~/hateoas/download_worker.py
-|4,39,80,4,1720692813,"~/hateoas/download_worker.py"
--'  80  4  ~/hateoas/download_worker.py
-|4,39,80,4,1720692813,"~/hateoas/download_worker.py"
--'  80  4  ~/hateoas/download_worker.py
-|4,39,80,4,1720692813,"~/hateoas/download_worker.py"
--'  80  4  ~/hateoas/download_worker.py
-|4,39,80,4,1720692813,"~/hateoas/download_worker.py"
--'  80  4  ~/hateoas/download_worker.py
-|4,39,80,4,1720692813,"~/hateoas/download_worker.py"
--'  80  4  ~/hateoas/download_worker.py
-|4,39,80,4,1720692813,"~/hateoas/download_worker.py"
--'  80  4  ~/hateoas/download_worker.py
-|4,39,80,4,1720692813,"~/hateoas/download_worker.py"
--'  80  4  ~/hateoas/download_worker.py
-|4,39,80,4,1720692813,"~/hateoas/download_worker.py"
--'  80  4  ~/hateoas/download_worker.py
-|4,39,80,4,1720692813,"~/hateoas/download_worker.py"
--'  80  4  ~/hateoas/download_worker.py
-|4,39,80,4,1720692813,"~/hateoas/download_worker.py"
--'  106  16  ~/hateoas/download_worker.py
-|4,39,106,16,1720692811,"~/hateoas/download_worker.py"
+|4,39,1,0,1720700590,"/var/log/syslog"
 
 # Buffer list:
-%/var/log/syslog	87	0
+%~/.config/.gitignore	1	0
+%~/bash/.gitignore	4	0
+%~/hateoas/.gitignore	1	0
+%~/.vim/templates/template.gitignore	1	0
+%~/.vim/plugin/template.vim	36	8
 
 # History of marks within files (newest to oldest):
+
+> ~/.gitignore
+	*	1720766942	0
+	"	1	0
+	^	1	14
+	.	1	0
+	+	1	13
+	+	1	0
+
+> ~/.vim/plugin/template.vim
+	*	1720766937	0
+	"	36	8
+	^	35	36
+	.	21	0
+	+	42	3
+	+	36	0
+	+	37	37
+	+	37	51
+	+	38	8
+	+	39	8
+	+	37	0
+	+	35	0
+	+	39	47
+	+	40	9
+	+	41	18
+	+	46	9
+	+	45	24
+	+	46	0
+	+	45	0
+	+	32	0
+	+	27	26
+	+	28	0
+	+	32	0
+	+	30	53
+	+	43	0
+	+	45	41
+	+	46	22
+	+	46	9
+	+	45	39
+	+	30	43
+	+	31	11
+	+	46	0
+	+	52	0
+	+	46	0
+	+	52	0
+	+	47	34
+	+	46	0
+	+	54	71
+	+	54	9
+	+	54	15
+	+	54	0
+	+	54	16
+	+	54	27
+	+	54	9
+	+	54	34
+	+	54	0
+	+	54	24
+	+	54	8
+	+	54	20
+	+	54	26
+	+	54	4
+	+	54	75
+	+	54	0
+	+	54	22
+	+	54	0
+	+	54	63
+	+	54	16
+	+	54	73
+	+	54	0
+	+	54	22
+	+	54	53
+	+	54	0
+	+	54	5
+	+	54	0
+	+	54	41
+	+	54	12
+	+	54	0
+	+	54	13
+	+	54	46
+	+	54	14
+	+	54	59
+	+	54	15
+	+	54	11
+	+	54	29
+	+	54	0
+	+	54	10
+	+	54	0
+	+	26	0
+	+	13	0
+	+	53	0
+	+	53	47
+	+	53	0
+	+	14	11
+	+	53	0
+	+	14	31
+	+	51	0
+	+	12	10
+	+	4	33
+	+	5	4
+	+	10	9
+	+	12	0
+	+	6	37
+	+	10	0
+	+	7	49
+	+	8	43
+	+	9	37
+	+	11	19
+	+	12	0
+	+	15	35
+	+	16	36
+	+	35	35
+	+	16	0
+	+	17	0
+	+	21	0
+
+> ~/.vim/templates/template.gitignore
+	*	1720766673	0
+	"	1	0
+	^	14	39
+	.	1	0
+	+	5	12
+	+	7	7
+	+	15	8
+	+	16	0
+	+	11	0
+	+	12	0
+	+	4	8
+	+	10	6
+	+	13	1
+	+	10	16
+	+	13	14
+	+	8	4
+	+	2	11
+	+	3	0
+	+	15	10
+	+	14	38
+	+	1	0
+
+> ~/file.gitignore
+	*	1720758447	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/ui-components-css/.gitignore
+	*	1720758321	0
+	"	1	0
+	^	4	13
+	.	4	12
+	+	3	4
+	+	4	12
+
+> ~/sqlite-editor/.gitignore
+	*	1720758220	0
+	"	1	0
+	^	3	5
+	.	3	4
+	+	2	11
+	+	3	4
+
+> ~/pyscripts/.gitignore
+	*	1720758218	0
+	"	1	0
+	^	2	5
+	.	2	4
+	+	1	7
+	+	2	4
+
+> ~/hateoas/.gitignore
+	*	1720758215	0
+	"	1	0
+	^	7	1
+	.	7	0
+	+	2	7
+	+	2	8
+	+	4	3
+	+	8	16
+	+	3	4
+	+	1	5
+	+	2	5
+	+	8	8
+	+	8	0
+	+	2	0
+	+	9	0
+	+	6	0
+	+	5	0
+	+	7	0
+
+> ~/frontend/.gitignore
+	*	1720758175	0
+	"	1	0
+
+> ~/bash/.gitignore
+	*	1720758159	0
+	"	4	0
+	^	3	2
+	.	3	1
+	+	1	4
+	+	4	4
+	+	1	5
+	+	2	5
+	+	3	1
+
+> ~/Twitch/.gitignore
+	*	1720758150	0
+	"	1	0
+	^	12	21
+	.	12	20
+	+	10	6
+	+	11	15
+	+	12	0
+	+	11	21
+	+	12	20
+
+> ~/.vim/.gitignore
+	*	1720758138	0
+	"	1	0
+	^	13	5
+	.	13	4
+	+	7	4
+	+	11	3
+	+	12	0
+	+	11	12
+	+	13	4
+
+> ~/.config/.gitignore
+	*	1720758127	0
+	"	1	0
+	.	5	0
+	+	5	0
+	+	3	0
+	+	5	0
+
+> ~/bash/backup.crontab
+	*	1720757765	0
+	"	1	0
+	^	26	4
+	.	26	3
+	+	26	3
 
 > /var/log/syslog
 	*	1720704912	0
@@ -11727,13 +11977,6 @@ $
 > /tmp/crontab.r714vo/crontab
 	*	1720693492	0
 	"	34	93
-
-> ~/bash/backup.crontab
-	*	1720693138	0
-	"	34	85
-	^	26	4
-	.	26	3
-	+	26	3
 
 > ~/hateoas/requirements.txt
 	*	1720693017	0
@@ -11852,14 +12095,6 @@ $
 	+	181	15
 	+	185	0
 	+	182	19
-
-> ~/bash/.gitignore
-	*	1720692756	0
-	"	1	0
-	^	2	5
-	.	2	4
-	+	1	4
-	+	2	4
 
 > /tmp/crontab.pNTZ4B/crontab
 	*	1720692726	0
@@ -12583,14 +12818,6 @@ $
 	.	2	0
 	+	1	0
 	+	2	0
-
-> ~/ui-components-css/.gitignore
-	*	1720527721	0
-	"	1	0
-	^	4	13
-	.	4	12
-	+	3	4
-	+	4	12
 
 > ~/crk-main/.gitignore
 	*	1720527579	0
@@ -13953,17 +14180,6 @@ $
 	*	1719217906	0
 	"	1	0
 
-> ~/.vim/.gitignore
-	*	1719009813	0
-	"	13	4
-	^	13	5
-	.	13	4
-	+	7	4
-	+	11	3
-	+	12	0
-	+	11	12
-	+	13	4
-
 > ~/.vim/performance/verbose-file.txt
 	*	1719009732	0
 	"	19	0
@@ -14386,14 +14602,6 @@ $
 	+	2	20
 	+	1	0
 	+	2	0
-
-> ~/pyscripts/.gitignore
-	*	1718903488	0
-	"	2	4
-	^	2	5
-	.	2	4
-	+	1	7
-	+	2	4
 
 > ~/pyscripts/parse_viminfo.py
 	*	1718903421	0
@@ -17041,19 +17249,6 @@ $
 	*	1717657786	0
 	"	1	0
 
-> ~/hateoas/.gitignore
-	*	1717650819	0
-	"	4	5
-	^	4	6
-	.	4	5
-	+	2	7
-	+	3	8
-	+	6	3
-	+	7	16
-	+	5	4
-	+	1	5
-	+	4	5
-
 > ~/instagram-reels/post.py
 	*	1717616858	0
 	"	1	0
@@ -19361,14 +19556,6 @@ $
 	+	5	22
 	+	3	27
 	+	8	44
-
-> ~/sqlite-editor/.gitignore
-	*	1716599574	0
-	"	3	4
-	^	3	5
-	.	3	4
-	+	2	11
-	+	3	4
 
 > ~/crk-coupon/requirements.txt
 	*	1716599016	0
@@ -23678,14 +23865,6 @@ $
 	^	26	4
 	.	26	3
 	+	26	3
-
-> ~/.config/.gitignore
-	*	1713767792	0
-	"	4	0
-	.	5	0
-	+	5	0
-	+	3	0
-	+	5	0
 
 > ~/.config/gita/repos.csv
 	*	1713767788	0
@@ -31842,10 +32021,6 @@ $
 	*	1693033987	0
 	"	1	0
 
-> ~/frontend/.gitignore
-	*	1693028358	0
-	"	1	0
-
 > ~/frontend/.eslintrc.json
 	*	1693028311	0
 	"	1	0
@@ -36013,17 +36188,6 @@ $
 	.	438	36
 	+	438	36
 
-> ~/Twitch/.gitignore
-	*	1690731932	0
-	"	12	20
-	^	12	21
-	.	12	20
-	+	10	6
-	+	11	15
-	+	12	0
-	+	11	21
-	+	12	20
-
 > ~/.vim/plugged/ale/doc/ale-vue.txt
 	*	1690675598	0
 	"	43	2
@@ -36440,108 +36604,6 @@ $
 	+	13	0
 	+	39	0
 	+	65	0
-
-> ~/.vim/plugin/template.vim
-	*	1688914813	0
-	"	30	0
-	.	39	0
-	+	34	24
-	+	34	51
-	+	34	0
-	+	34	48
-	+	34	109
-	+	34	11
-	+	37	0
-	+	34	0
-	+	40	0
-	+	20	10
-	+	34	0
-	+	16	0
-	+	34	54
-	+	20	0
-	+	34	0
-	+	30	3
-	+	24	0
-	+	25	37
-	+	25	51
-	+	26	8
-	+	27	8
-	+	25	0
-	+	23	0
-	+	27	47
-	+	28	9
-	+	29	18
-	+	34	9
-	+	33	24
-	+	34	0
-	+	33	0
-	+	20	0
-	+	15	26
-	+	16	0
-	+	20	0
-	+	18	53
-	+	31	0
-	+	33	41
-	+	34	22
-	+	34	9
-	+	33	39
-	+	18	43
-	+	19	11
-	+	34	0
-	+	40	0
-	+	34	0
-	+	40	0
-	+	35	34
-	+	34	0
-	+	42	71
-	+	42	9
-	+	42	15
-	+	42	0
-	+	42	16
-	+	42	27
-	+	42	9
-	+	42	34
-	+	42	0
-	+	42	24
-	+	42	8
-	+	42	20
-	+	42	26
-	+	42	4
-	+	42	75
-	+	42	0
-	+	42	22
-	+	42	0
-	+	42	63
-	+	42	16
-	+	42	73
-	+	42	0
-	+	42	22
-	+	42	53
-	+	42	0
-	+	42	5
-	+	42	0
-	+	42	41
-	+	42	12
-	+	42	0
-	+	42	13
-	+	42	46
-	+	42	14
-	+	42	59
-	+	42	15
-	+	42	11
-	+	42	29
-	+	42	0
-	+	42	10
-	+	42	0
-	+	14	0
-	+	1	0
-	+	41	0
-	+	41	47
-	+	41	0
-	+	2	11
-	+	41	0
-	+	2	31
-	+	39	0
 
 > /usr/share/vim/vim90/indent/vb.vim
 	*	1688856617	0
@@ -36973,13 +37035,6 @@ $
 > ~/output.tmp
 	*	1685568828	0
 	"	1	0
-
-> ~/.gitignore
-	*	1685560879	0
-	"	1	13
-	^	1	14
-	.	1	13
-	+	1	13
 
 > ~/fzf_cd.sh
 	*	1685537089	0
