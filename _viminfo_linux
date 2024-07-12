@@ -11,17 +11,35 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/\C\<GetTemplateNames\>
+~MSle0~/bat-v0\.24\.0-x86_64-unknown-linux-gnu
 
 # Last Substitute Search Pattern:
-~MSle0&200
+~MSle0&linux
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1720792683,,"q"
+|2,0,1720796736,,"q"
+:b!# | bd! #
+|2,0,1720796030,,"b!# | bd! #"
+:MRU json
+|2,0,1720795980,,"MRU json"
+:q!
+|2,0,1720795896,,"q!"
+:e _download_bat_completion.bash
+|2,0,1720795862,,"e _download_bat_completion.bash"
+:term
+|2,0,1720794134,,"term"
+:qa!
+|2,0,1720793898,,"qa!"
+:g/linux/
+|2,0,1720793797,,"g/linux/"
+:g
+|2,0,1720793790,,"g"
+:set ft=json
+|2,0,1720793767,,"set ft=json"
 :set tw=80
 |2,0,1720792399,,"set tw=80"
 :e /var/log/cron.log
@@ -80,8 +98,6 @@ $
 |2,0,1720757739,,"e backup.crontab"
 :e
 |2,0,1720703396,,"e"
-:term
-|2,0,1720698721,,"term"
 :ALEInfo
 |2,0,1720698329,,"ALEInfo"
 :e cronjob.bash
@@ -120,8 +136,6 @@ $
 |2,0,1720619740,,"e ~/bash/chtsh_help.bash"
 :ecoh "
 |2,0,1720619441,,"ecoh \""
-:q!
-|2,0,1720577138,,"q!"
 :kk
 |2,0,1720576787,,"kk"
 :e .gitignore
@@ -192,18 +206,12 @@ $
 |2,0,1720366642,,"bd"
 :grep -g '*.vim' -g 'vimrc' --fixed-strings reg_save
 |2,0,1720366600,,"grep -g '*.vim' -g 'vimrc' --fixed-strings reg_save"
-:g
-|2,0,1720366593,,"g"
 :MRU hateo
 |2,0,1720366479,,"MRU hateo"
 :map <C-c>
 |2,0,1720366427,,"map <C-c>"
 :imap 
 |2,0,1720366425,,"imap "
-:qa!
-|2,0,1720346302,,"qa!"
-:b!# | bd! #
-|2,0,1720346301,,"b!# | bd! #"
 :redraw
 |2,0,1720346295,,"redraw"
 :diffthis
@@ -1836,8 +1844,6 @@ $
 |2,0,1716805135,,"comm"
 :set foldexpr?
 |2,0,1716805103,,"set foldexpr?"
-:set ft=json
-|2,0,1716805094,,"set ft=json"
 :ccl
 |2,0,1716804039,,"ccl"
 :e dbutils.py.backup
@@ -5200,8 +5206,6 @@ $
 |2,0,1693666981,,"JsonPath"
 :h jsonpath
 |2,0,1693666968,,"h jsonpath"
-:MRU json
-|2,0,1693666964,,"MRU json"
 :%!python3 -m json.tool
 |2,0,1693666879,,"%!python3 -m json.tool"
 :helpgrep VIM_TERMINAL
@@ -7686,6 +7690,16 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/x86_64-unknown-linux-gnu.tar.gz
+|2,1,1720795851,47,"x86_64-unknown-linux-gnu.tar.gz"
+?/linux-gnu.tar.gz
+|2,1,1720793824,47,"linux-gnu.tar.gz"
+? linux
+|2,1,1720793797,,"linux"
+?/linux
+|2,1,1720793770,47,"linux"
+?/as
+|2,1,1720793672,47,"as"
 ?/shellch
 |2,1,1720698332,47,"shellch"
 ? @$
@@ -11398,42 +11412,36 @@ $
 |2,4,1693311567,,"cont"
 
 # Registers:
-"0	CHAR	0
-	We then create a symbolic link from /var/log/syslog to
-	/var/log/cron.log. This is because /var/log/syslog is the default location for
-	cron jobs to be logged to. We then create a cron job that runs every minute and
-|3,0,0,0,3,0,1720792545,"We then create a symbolic link from /var/log/syslog to","/var/log/cron.log. This is because /var/log/syslog is the default location for","cron jobs to be logged to. We then create a cron job that runs every minute and"
-""1	LINE	0
+""0	CHAR	0
+	fish
+|3,1,0,0,1,0,1720796732,"fish"
+"1	LINE	0
+	source ~
+|3,0,1,1,1,0,1720796356,"source ~"
+"2	LINE	0
 	
+|3,0,2,1,1,0,1720796281,""
+"3	LINE	0
 	
-|3,1,1,1,2,0,1720792598,"",""
-"2	CHAR	0
-	We then create a symbolic link from /var/log/syslog to
-	/var/log/cron.log. This is because /var/log/syslog is the default location for
-	cron jobs to be logged to. We then create a cron job that runs every minute and
-|3,0,2,0,3,0,1720792512,"We then create a symbolic link from /var/log/syslog to","/var/log/cron.log. This is because /var/log/syslog is the default location for","cron jobs to be logged to. We then create a cron job that runs every minute and"
-"3	CHAR	0
-	We also have to modify the
-	rsyslog configuration file to include the /var/log/syslog file. This is done in
-|3,0,3,0,2,0,1720792310,"We also have to modify the","rsyslog configuration file to include the /var/log/syslog file. This is done in"
+|3,0,3,1,1,0,1720796278,""
 "4	LINE	0
-	On 
-|3,0,4,1,1,0,1720792139,"On "
+	
+|3,0,4,1,1,0,1720796236,""
 "5	LINE	0
-	    echo pattern
-|3,0,5,1,1,0,1720766931,"    echo pattern"
+	
+|3,0,5,1,1,0,1720796235,""
 "6	LINE	0
-	    echoerr "Extension: " . extension
-|3,0,6,1,1,0,1720766905,"    echoerr \"Extension: \" . extension"
+	echo "$NAME"
+|3,0,6,1,1,0,1720796232,"echo \"$NAME\""
 "7	LINE	0
-	
-|3,0,7,1,1,0,1720766851,""
+	# jq -r '.assets[] | select(.name| endswith("x86_64-unknown-linux-gnu.tar.gz") ) | .browser_download_url'
+|3,0,7,1,1,0,1720796229,"# jq -r '.assets[] | select(.name| endswith(\"x86_64-unknown-linux-gnu.tar.gz\") ) | .browser_download_url'"
 "8	LINE	0
-	        call assert_true
-|3,0,8,1,1,0,1720766797,"        call assert_true"
+	# curl -s https://api.github.com/repos/sharkdp/bat/releases/latest
+|3,0,8,1,1,0,1720796228,"# curl -s https://api.github.com/repos/sharkdp/bat/releases/latest"
 "9	LINE	0
-	
-|3,0,9,1,1,0,1720766753,""
+	echo $NAME
+|3,0,9,1,1,0,1720795928,"echo $NAME"
 "j	CHAR	0
 	kc
 |3,0,19,0,1,0,1718434816,"kc"
@@ -11447,237 +11455,324 @@ $
 	https://rsms.me/inter/
 |3,0,28,0,1,0,1718483440,"https://rsms.me/inter/"
 "-	CHAR	0
-	to redirect cron logs
-|3,0,36,0,1,0,1720792431,"to redirect cron logs"
+	fish
+|3,0,36,0,1,0,1720796731,"fish"
 
 # File marks:
-'0  2  0  ~/tooling/logging.txt
-|4,48,2,0,1720792684,"~/tooling/logging.txt"
-'1  22  0  ~/tooling/logging.txt
-|4,49,22,0,1720792383,"~/tooling/logging.txt"
-'2  22  0  ~/tooling/logging.txt
-|4,50,22,0,1720792383,"~/tooling/logging.txt"
-'3  15  0  ~/tooling/logging.txt
-|4,51,15,0,1720792141,"~/tooling/logging.txt"
-'4  15  0  ~/tooling/logging.txt
-|4,52,15,0,1720792141,"~/tooling/logging.txt"
-'5  15  0  ~/tooling/logging.txt
-|4,53,15,0,1720792141,"~/tooling/logging.txt"
-'6  15  0  ~/tooling/logging.txt
-|4,54,15,0,1720792141,"~/tooling/logging.txt"
-'7  36  8  ~/.vim/plugin/template.vim
-|4,55,36,8,1720766944,"~/.vim/plugin/template.vim"
-'8  36  8  ~/.vim/plugin/template.vim
-|4,56,36,8,1720766944,"~/.vim/plugin/template.vim"
-'9  36  8  ~/.vim/plugin/template.vim
-|4,57,36,8,1720766944,"~/.vim/plugin/template.vim"
+'0  16  97  ~/.config/bash_completions/_download_bat_completion.bash
+|4,48,16,97,1720796737,"~/.config/bash_completions/_download_bat_completion.bash"
+'1  16  96  ~/.config/bash_completions/_download_bat_completion.bash
+|4,49,16,96,1720796664,"~/.config/bash_completions/_download_bat_completion.bash"
+'2  16  41  ~/.config/load_completions.bash
+|4,50,16,41,1720796365,"~/.config/load_completions.bash"
+'3  16  41  ~/.config/load_completions.bash
+|4,51,16,41,1720796365,"~/.config/load_completions.bash"
+'4  16  41  ~/.config/load_completions.bash
+|4,52,16,41,1720796365,"~/.config/load_completions.bash"
+'5  16  41  ~/.config/load_completions.bash
+|4,53,16,41,1720796365,"~/.config/load_completions.bash"
+'6  10  39  ~/.config/bash_completions/_download_bat_completion.bash
+|4,54,10,39,1720796312,"~/.config/bash_completions/_download_bat_completion.bash"
+'7  10  39  ~/.config/bash_completions/_download_bat_completion.bash
+|4,55,10,39,1720796312,"~/.config/bash_completions/_download_bat_completion.bash"
+'8  10  39  ~/.config/bash_completions/_download_bat_completion.bash
+|4,56,10,39,1720796312,"~/.config/bash_completions/_download_bat_completion.bash"
+'9  10  39  ~/.config/bash_completions/_download_bat_completion.bash
+|4,57,10,39,1720796312,"~/.config/bash_completions/_download_bat_completion.bash"
 
 # Jumplist (newest first):
--'  2  0  ~/tooling/logging.txt
-|4,39,2,0,1720792684,"~/tooling/logging.txt"
--'  29  5  ~/tooling/logging.txt
-|4,39,29,5,1720792545,"~/tooling/logging.txt"
--'  28  21  ~/tooling/logging.txt
-|4,39,28,21,1720792514,"~/tooling/logging.txt"
--'  25  50  ~/tooling/logging.txt
-|4,39,25,50,1720792456,"~/tooling/logging.txt"
--'  1  0  ~/tooling/logging.txt
-|4,39,1,0,1720792388,"~/tooling/logging.txt"
--'  22  0  ~/tooling/logging.txt
-|4,39,22,0,1720792383,"~/tooling/logging.txt"
--'  7  0  /var/log/cron.log
-|4,39,7,0,1720792383,"/var/log/cron.log"
--'  22  0  ~/tooling/logging.txt
-|4,39,22,0,1720792383,"~/tooling/logging.txt"
--'  7  0  /var/log/cron.log
-|4,39,7,0,1720792383,"/var/log/cron.log"
--'  19  45  ~/tooling/logging.txt
-|4,39,19,45,1720792312,"~/tooling/logging.txt"
--'  19  45  ~/tooling/logging.txt
-|4,39,19,45,1720792312,"~/tooling/logging.txt"
--'  18  45  ~/tooling/logging.txt
-|4,39,18,45,1720792296,"~/tooling/logging.txt"
--'  18  45  ~/tooling/logging.txt
-|4,39,18,45,1720792296,"~/tooling/logging.txt"
--'  1  0  ~/tooling/logging.txt
-|4,39,1,0,1720792176,"~/tooling/logging.txt"
--'  15  0  ~/tooling/logging.txt
-|4,39,15,0,1720792141,"~/tooling/logging.txt"
--'  15  0  ~/tooling/logging.txt
-|4,39,15,0,1720792141,"~/tooling/logging.txt"
--'  15  0  ~/tooling/logging.txt
-|4,39,15,0,1720792141,"~/tooling/logging.txt"
--'  1  0  ~/tooling/logging.txt
-|4,39,1,0,1720792126,"~/tooling/logging.txt"
--'  36  8  ~/.vim/plugin/template.vim
-|4,39,36,8,1720766944,"~/.vim/plugin/template.vim"
--'  36  8  ~/.vim/plugin/template.vim
-|4,39,36,8,1720766944,"~/.vim/plugin/template.vim"
--'  36  8  ~/.vim/plugin/template.vim
-|4,39,36,8,1720766944,"~/.vim/plugin/template.vim"
--'  36  8  ~/.vim/plugin/template.vim
-|4,39,36,8,1720766944,"~/.vim/plugin/template.vim"
--'  36  8  ~/.vim/plugin/template.vim
-|4,39,36,8,1720766944,"~/.vim/plugin/template.vim"
--'  21  8  ~/.vim/plugin/template.vim
-|4,39,21,8,1720766934,"~/.vim/plugin/template.vim"
--'  21  8  ~/.vim/plugin/template.vim
-|4,39,21,8,1720766934,"~/.vim/plugin/template.vim"
--'  21  8  ~/.vim/plugin/template.vim
-|4,39,21,8,1720766934,"~/.vim/plugin/template.vim"
--'  21  8  ~/.vim/plugin/template.vim
-|4,39,21,8,1720766934,"~/.vim/plugin/template.vim"
--'  21  8  ~/.vim/plugin/template.vim
-|4,39,21,8,1720766934,"~/.vim/plugin/template.vim"
--'  17  4  ~/.vim/plugin/template.vim
-|4,39,17,4,1720766933,"~/.vim/plugin/template.vim"
--'  17  4  ~/.vim/plugin/template.vim
-|4,39,17,4,1720766933,"~/.vim/plugin/template.vim"
--'  17  4  ~/.vim/plugin/template.vim
-|4,39,17,4,1720766933,"~/.vim/plugin/template.vim"
--'  17  4  ~/.vim/plugin/template.vim
-|4,39,17,4,1720766933,"~/.vim/plugin/template.vim"
--'  17  4  ~/.vim/plugin/template.vim
-|4,39,17,4,1720766933,"~/.vim/plugin/template.vim"
--'  20  4  ~/.vim/plugin/template.vim
-|4,39,20,4,1720766932,"~/.vim/plugin/template.vim"
--'  20  4  ~/.vim/plugin/template.vim
-|4,39,20,4,1720766932,"~/.vim/plugin/template.vim"
--'  20  4  ~/.vim/plugin/template.vim
-|4,39,20,4,1720766932,"~/.vim/plugin/template.vim"
--'  20  4  ~/.vim/plugin/template.vim
-|4,39,20,4,1720766932,"~/.vim/plugin/template.vim"
--'  20  4  ~/.vim/plugin/template.vim
-|4,39,20,4,1720766932,"~/.vim/plugin/template.vim"
--'  34  28  ~/.vim/plugin/template.vim
-|4,39,34,28,1720766903,"~/.vim/plugin/template.vim"
--'  34  28  ~/.vim/plugin/template.vim
-|4,39,34,28,1720766903,"~/.vim/plugin/template.vim"
--'  34  28  ~/.vim/plugin/template.vim
-|4,39,34,28,1720766903,"~/.vim/plugin/template.vim"
--'  34  28  ~/.vim/plugin/template.vim
-|4,39,34,28,1720766903,"~/.vim/plugin/template.vim"
--'  34  28  ~/.vim/plugin/template.vim
-|4,39,34,28,1720766903,"~/.vim/plugin/template.vim"
--'  35  35  ~/.vim/plugin/template.vim
-|4,39,35,35,1720766902,"~/.vim/plugin/template.vim"
--'  35  35  ~/.vim/plugin/template.vim
-|4,39,35,35,1720766902,"~/.vim/plugin/template.vim"
--'  35  35  ~/.vim/plugin/template.vim
-|4,39,35,35,1720766902,"~/.vim/plugin/template.vim"
--'  35  35  ~/.vim/plugin/template.vim
-|4,39,35,35,1720766902,"~/.vim/plugin/template.vim"
--'  35  35  ~/.vim/plugin/template.vim
-|4,39,35,35,1720766902,"~/.vim/plugin/template.vim"
--'  46  31  ~/.vim/plugin/template.vim
-|4,39,46,31,1720766890,"~/.vim/plugin/template.vim"
--'  46  31  ~/.vim/plugin/template.vim
-|4,39,46,31,1720766890,"~/.vim/plugin/template.vim"
--'  46  31  ~/.vim/plugin/template.vim
-|4,39,46,31,1720766890,"~/.vim/plugin/template.vim"
--'  46  31  ~/.vim/plugin/template.vim
-|4,39,46,31,1720766890,"~/.vim/plugin/template.vim"
--'  46  31  ~/.vim/plugin/template.vim
-|4,39,46,31,1720766890,"~/.vim/plugin/template.vim"
--'  14  12  ~/.vim/plugin/template.vim
-|4,39,14,12,1720766884,"~/.vim/plugin/template.vim"
--'  14  12  ~/.vim/plugin/template.vim
-|4,39,14,12,1720766884,"~/.vim/plugin/template.vim"
--'  14  12  ~/.vim/plugin/template.vim
-|4,39,14,12,1720766884,"~/.vim/plugin/template.vim"
--'  14  12  ~/.vim/plugin/template.vim
-|4,39,14,12,1720766884,"~/.vim/plugin/template.vim"
--'  14  12  ~/.vim/plugin/template.vim
-|4,39,14,12,1720766884,"~/.vim/plugin/template.vim"
--'  15  35  ~/.vim/plugin/template.vim
-|4,39,15,35,1720766859,"~/.vim/plugin/template.vim"
--'  15  35  ~/.vim/plugin/template.vim
-|4,39,15,35,1720766859,"~/.vim/plugin/template.vim"
--'  15  35  ~/.vim/plugin/template.vim
-|4,39,15,35,1720766859,"~/.vim/plugin/template.vim"
--'  15  35  ~/.vim/plugin/template.vim
-|4,39,15,35,1720766859,"~/.vim/plugin/template.vim"
--'  15  35  ~/.vim/plugin/template.vim
-|4,39,15,35,1720766859,"~/.vim/plugin/template.vim"
--'  10  8  ~/.vim/plugin/template.vim
-|4,39,10,8,1720766848,"~/.vim/plugin/template.vim"
--'  9  36  ~/.vim/plugin/template.vim
-|4,39,9,36,1720766848,"~/.vim/plugin/template.vim"
--'  10  8  ~/.vim/plugin/template.vim
-|4,39,10,8,1720766848,"~/.vim/plugin/template.vim"
--'  9  36  ~/.vim/plugin/template.vim
-|4,39,9,36,1720766848,"~/.vim/plugin/template.vim"
--'  10  8  ~/.vim/plugin/template.vim
-|4,39,10,8,1720766848,"~/.vim/plugin/template.vim"
--'  9  36  ~/.vim/plugin/template.vim
-|4,39,9,36,1720766848,"~/.vim/plugin/template.vim"
--'  10  8  ~/.vim/plugin/template.vim
-|4,39,10,8,1720766848,"~/.vim/plugin/template.vim"
--'  9  36  ~/.vim/plugin/template.vim
-|4,39,9,36,1720766848,"~/.vim/plugin/template.vim"
--'  10  8  ~/.vim/plugin/template.vim
-|4,39,10,8,1720766848,"~/.vim/plugin/template.vim"
--'  9  36  ~/.vim/plugin/template.vim
-|4,39,9,36,1720766848,"~/.vim/plugin/template.vim"
--'  8  8  ~/.vim/plugin/template.vim
-|4,39,8,8,1720766819,"~/.vim/plugin/template.vim"
--'  8  8  ~/.vim/plugin/template.vim
-|4,39,8,8,1720766819,"~/.vim/plugin/template.vim"
--'  8  8  ~/.vim/plugin/template.vim
-|4,39,8,8,1720766819,"~/.vim/plugin/template.vim"
--'  8  8  ~/.vim/plugin/template.vim
-|4,39,8,8,1720766819,"~/.vim/plugin/template.vim"
--'  8  8  ~/.vim/plugin/template.vim
-|4,39,8,8,1720766819,"~/.vim/plugin/template.vim"
--'  14  38  ~/.vim/templates/template.gitignore
-|4,39,14,38,1720766637,"~/.vim/templates/template.gitignore"
--'  14  38  ~/.vim/templates/template.gitignore
-|4,39,14,38,1720766637,"~/.vim/templates/template.gitignore"
--'  14  38  ~/.vim/templates/template.gitignore
-|4,39,14,38,1720766637,"~/.vim/templates/template.gitignore"
--'  14  38  ~/.vim/templates/template.gitignore
-|4,39,14,38,1720766637,"~/.vim/templates/template.gitignore"
--'  14  38  ~/.vim/templates/template.gitignore
-|4,39,14,38,1720766637,"~/.vim/templates/template.gitignore"
--'  1  0  ~/.config/.gitignore
-|4,39,1,0,1720758123,"~/.config/.gitignore"
--'  1  0  ~/.config/.gitignore
-|4,39,1,0,1720758123,"~/.config/.gitignore"
--'  1  0  ~/.config/.gitignore
-|4,39,1,0,1720758123,"~/.config/.gitignore"
--'  1  0  ~/.config/.gitignore
-|4,39,1,0,1720758123,"~/.config/.gitignore"
--'  1  0  ~/.config/.gitignore
-|4,39,1,0,1720758123,"~/.config/.gitignore"
--'  5  0  ~/.vim/templates/template.gitignore
-|4,39,5,0,1720757978,"~/.vim/templates/template.gitignore"
--'  1  0  ~/.vim/templates/template.gitignore
-|4,39,1,0,1720757978,"~/.vim/templates/template.gitignore"
--'  5  0  ~/.vim/templates/template.gitignore
-|4,39,5,0,1720757978,"~/.vim/templates/template.gitignore"
--'  1  0  ~/.vim/templates/template.gitignore
-|4,39,1,0,1720757978,"~/.vim/templates/template.gitignore"
--'  5  0  ~/.vim/templates/template.gitignore
-|4,39,5,0,1720757978,"~/.vim/templates/template.gitignore"
--'  1  0  ~/.vim/templates/template.gitignore
-|4,39,1,0,1720757978,"~/.vim/templates/template.gitignore"
--'  5  0  ~/.vim/templates/template.gitignore
-|4,39,5,0,1720757978,"~/.vim/templates/template.gitignore"
--'  1  0  ~/.vim/templates/template.gitignore
-|4,39,1,0,1720757978,"~/.vim/templates/template.gitignore"
--'  5  0  ~/.vim/templates/template.gitignore
-|4,39,5,0,1720757978,"~/.vim/templates/template.gitignore"
--'  1  0  ~/.vim/templates/template.gitignore
-|4,39,1,0,1720757978,"~/.vim/templates/template.gitignore"
--'  7  0  ~/hateoas/.gitignore
-|4,39,7,0,1720757942,"~/hateoas/.gitignore"
--'  7  0  ~/hateoas/.gitignore
-|4,39,7,0,1720757942,"~/hateoas/.gitignore"
+-'  16  97  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,16,97,1720796737,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  1  0  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,1,0,1720796720,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  16  96  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,16,96,1720796664,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  1  0  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,1,0,1720796616,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  16  41  ~/.config/load_completions.bash
+|4,39,16,41,1720796365,"~/.config/load_completions.bash"
+-'  16  41  ~/.config/load_completions.bash
+|4,39,16,41,1720796365,"~/.config/load_completions.bash"
+-'  16  41  ~/.config/load_completions.bash
+|4,39,16,41,1720796365,"~/.config/load_completions.bash"
+-'  12  0  ~/.config/load_completions.bash
+|4,39,12,0,1720796351,"~/.config/load_completions.bash"
+-'  12  0  ~/.config/load_completions.bash
+|4,39,12,0,1720796351,"~/.config/load_completions.bash"
+-'  12  0  ~/.config/load_completions.bash
+|4,39,12,0,1720796351,"~/.config/load_completions.bash"
+-'  1  0  ~/.config/load_completions.bash
+|4,39,1,0,1720796349,"~/.config/load_completions.bash"
+-'  1  0  ~/.config/load_completions.bash
+|4,39,1,0,1720796349,"~/.config/load_completions.bash"
+-'  1  0  ~/.config/load_completions.bash
+|4,39,1,0,1720796349,"~/.config/load_completions.bash"
+-'  10  39  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,10,39,1720796312,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  10  39  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,10,39,1720796312,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  10  39  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,10,39,1720796312,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  10  39  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,10,39,1720796312,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  8  57  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,8,57,1720796204,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  8  57  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,8,57,1720796204,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  8  57  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,8,57,1720796204,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  8  57  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,8,57,1720796204,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  1  0  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,1,0,1720796059,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  1  0  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,1,0,1720796059,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  16  74  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,16,74,1720796043,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  16  74  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,16,74,1720796043,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  10  74  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,10,74,1720796043,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  15  0  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,15,0,1720796018,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  9  0  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,9,0,1720796018,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  15  0  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,15,0,1720796018,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  9  0  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,9,0,1720796018,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  15  0  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,15,0,1720796018,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  9  0  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,9,0,1720796018,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  15  0  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,15,0,1720796018,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  9  0  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,9,0,1720796018,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  14  5  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,14,5,1720796016,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  7  5  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,7,5,1720796016,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  14  5  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,14,5,1720796016,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  7  5  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,7,5,1720796016,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  14  5  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,14,5,1720796016,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  7  5  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,7,5,1720796016,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  14  5  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,14,5,1720796016,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  8  5  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,8,5,1720796016,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  7  5  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,7,5,1720796016,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  13  108  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,13,108,1720795923,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  6  108  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,6,108,1720795923,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  13  108  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,13,108,1720795923,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  6  108  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,6,108,1720795923,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  13  108  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,13,108,1720795923,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  6  108  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,6,108,1720795923,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  13  108  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,13,108,1720795923,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  6  108  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,6,108,1720795923,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  11  17  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,11,17,1720795839,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  3  17  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,3,17,1720795839,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  11  17  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,11,17,1720795839,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  3  17  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,3,17,1720795839,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  11  17  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,11,17,1720795839,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  3  17  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,3,17,1720795839,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  11  17  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,11,17,1720795839,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  3  17  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,3,17,1720795839,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  3  17  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,3,17,1720795839,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  1  0  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,1,0,1720795831,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  1  0  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,1,0,1720795831,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  6  27  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,6,27,1720795800,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  6  27  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,6,27,1720795800,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  1  0  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,1,0,1720795778,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  10  36  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
+|4,39,10,36,1720794900,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
+-'  10  36  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
+|4,39,10,36,1720794900,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
+-'  10  36  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
+|4,39,10,36,1720794900,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
+-'  10  36  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
+|4,39,10,36,1720794900,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
+-'  10  36  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
+|4,39,10,36,1720794900,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
+-'  10  36  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
+|4,39,10,36,1720794900,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
+-'  10  36  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
+|4,39,10,36,1720794900,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
+-'  10  36  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
+|4,39,10,36,1720794900,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
+-'  15  0  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
+|4,39,15,0,1720794885,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
+-'  15  0  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
+|4,39,15,0,1720794885,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
+-'  15  0  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
+|4,39,15,0,1720794885,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
+-'  15  0  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
+|4,39,15,0,1720794885,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
+-'  15  0  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
+|4,39,15,0,1720794885,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
+-'  15  0  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
+|4,39,15,0,1720794885,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
+-'  15  0  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
+|4,39,15,0,1720794885,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
+-'  15  0  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
+|4,39,15,0,1720794885,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
+-'  9  36  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
+|4,39,9,36,1720794832,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
+-'  9  36  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
+|4,39,9,36,1720794832,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
+-'  9  36  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
+|4,39,9,36,1720794832,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
+-'  9  36  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
+|4,39,9,36,1720794832,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
+-'  9  36  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
+|4,39,9,36,1720794832,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
+-'  9  36  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
+|4,39,9,36,1720794832,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
+-'  9  36  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
+|4,39,9,36,1720794832,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
+-'  9  36  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
+|4,39,9,36,1720794832,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
+-'  10  36  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
+|4,39,10,36,1720794832,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
+-'  14  0  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
+|4,39,14,0,1720794821,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
+-'  14  0  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
+|4,39,14,0,1720794821,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
+-'  14  0  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
+|4,39,14,0,1720794821,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
+-'  14  0  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
+|4,39,14,0,1720794821,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
+-'  14  0  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
+|4,39,14,0,1720794821,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
+-'  14  0  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
+|4,39,14,0,1720794821,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
+-'  14  0  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
+|4,39,14,0,1720794821,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
+-'  14  0  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
+|4,39,14,0,1720794821,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
+-'  15  0  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
+|4,39,15,0,1720794821,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
+-'  7  22  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,7,22,1720794753,"~/.config/bash_completions/_download_bat_completion.bash"
 
 # Buffer list:
-%~/tooling/logging.txt	2	0
+%~/.config/bash_completions/_download_bat_completion.bash	16	97
 
 # History of marks within files (newest to oldest):
+
+> ~/.config/bash_completions/_download_bat_completion.bash
+	*	1720796734	0
+	"	16	97
+	^	16	97
+	.	16	96
+	+	11	0
+	+	11	74
+	+	12	0
+	+	12	124
+	+	16	49
+	+	16	0
+	+	16	8
+	+	1	10
+	+	16	46
+	+	17	0
+	+	16	0
+	+	12	0
+	+	15	27
+	+	16	47
+	+	17	0
+	+	16	46
+	+	13	53
+	+	16	0
+	+	15	9
+	+	13	108
+	+	15	0
+	+	16	126
+	+	16	0
+	+	15	11
+	+	14	6
+	+	16	74
+	+	9	0
+	+	6	77
+	+	9	0
+	+	8	73
+	+	7	76
+	+	11	0
+	+	12	0
+	+	15	0
+	+	17	0
+	+	11	0
+	+	4	1
+	+	9	0
+	+	17	0
+	+	10	39
+	+	8	87
+	+	16	96
+
+> ~/.config/load_completions.bash
+	*	1720796362	0
+	"	16	41
+	^	16	42
+	.	16	41
+	+	8	23
+	+	2	0
+	+	10	0
+	+	5	0
+	+	9	0
+	+	6	13
+	+	7	43
+	+	7	36
+	+	7	0
+	+	6	0
+	+	7	0
+	+	8	0
+	+	16	41
+
+> ~/downloads/bat-releases-latest.json
+	*	1720795994	0
+	"	414	15
+
+> ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
+	*	1720794898	0
+	"	10	36
+	.	5	0
+	+	5	0
+
+> ~/.config/bash_completions/tarfile::bat-v0.24.0-x86_64-unknown-linux-gnu/autocomplete/bat.bash
+	*	1720794890	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/downloads/_download_bat_completion.bash
+	*	1720794426	0
+	"	1	0
 
 > ~/tooling/logging.txt
 	*	1720792682	0
@@ -23896,23 +23991,6 @@ $
 > ~/.config/gita/repos.csv
 	*	1713767788	0
 	"	1	0
-
-> ~/.config/load_completions.bash
-	*	1713767378	0
-	"	1	0
-	.	8	0
-	+	8	23
-	+	2	0
-	+	10	0
-	+	5	0
-	+	9	0
-	+	6	13
-	+	7	43
-	+	7	36
-	+	7	0
-	+	6	0
-	+	7	0
-	+	8	0
 
 > ~/.config/.git/COMMIT_EDITMSG
 	*	1713760255	0
