@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/bat-v0\.24\.0-x86_64-unknown-linux-gnu
+~MSle0~/bat
 
 # Last Substitute Search Pattern:
 ~MSle0&linux
@@ -21,17 +21,73 @@ $
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1720796736,,"q"
+|2,0,1720866956,,"q"
+:e _tar_url_to_file.bash
+|2,0,1720866906,,"e _tar_url_to_file.bash"
+:e bash_completions/_download_bat_completion.bash
+|2,0,1720866579,,"e bash_completions/_download_bat_completion.bash"
+:e _python-argcomplete
+|2,0,1720866573,,"e _python-argcomplete"
+:qa
+|2,0,1720866521,,"qa"
+:q!
+|2,0,1720866443,,"q!"
+:term
+|2,0,1720866429,,"term"
+:MRU se
+|2,0,1720866419,,"MRU se"
+:echo $DI
+|2,0,1720866046,,"echo $DI"
+:e .
+|2,0,1720865993,,"e ."
+:Rename bat-completion.bash
+|2,0,1720865974,,"Rename bat-completion.bash"
+:e bat.bash
+|2,0,1720865958,,"e bat.bash"
+:e bash-preexec.sh
+|2,0,1720865955,,"e bash-preexec.sh"
+:Rename find-all-files-completion.bash
+|2,0,1720865952,,"Rename find-all-files-completion.bash"
+:MRU find
+|2,0,1720865947,,"MRU find"
+:Rename find-all-files.bash
+|2,0,1720865789,,"Rename find-all-files.bash"
+:e alias.sh
+|2,0,1720865769,,"e alias.sh"
+:MRU 
+|2,0,1720845207,,"MRU "
+:let @"=expand("%:p")
+|2,0,1720844976,,"let @\"=expand(\"%:p\")"
+:MRU cu
+|2,0,1720844967,,"MRU cu"
+:MRU fd
+|2,0,1720844853,,"MRU fd"
+:MRU cust
+|2,0,1720844849,,"MRU cust"
+:e ~/.config/bash_completions/custom.bash
+|2,0,1720844796,,"e ~/.config/bash_completions/custom.bash"
+:e ~/.bashrc
+|2,0,1720842799,,"e ~/.bashrc"
+:copen
+|2,0,1720842713,,"copen"
+:grep -g '*' --fixed-strings find-all-files
+|2,0,1720842708,,"grep -g '*' --fixed-strings find-all-files"
+:e setup.sh
+|2,0,1720842680,,"e setup.sh"
+:e setup.fish
+|2,0,1720842676,,"e setup.fish"
+:e 
+|2,0,1720842672,,"e "
+:e shell_data/.bash_history
+|2,0,1720841619,,"e shell_data/.bash_history"
+:MRU .bash
+|2,0,1720841615,,"MRU .bash"
 :b!# | bd! #
 |2,0,1720796030,,"b!# | bd! #"
 :MRU json
 |2,0,1720795980,,"MRU json"
-:q!
-|2,0,1720795896,,"q!"
 :e _download_bat_completion.bash
 |2,0,1720795862,,"e _download_bat_completion.bash"
-:term
-|2,0,1720794134,,"term"
 :qa!
 |2,0,1720793898,,"qa!"
 :g/linux/
@@ -44,8 +100,6 @@ $
 |2,0,1720792399,,"set tw=80"
 :e /var/log/cron.log
 |2,0,1720792373,,"e /var/log/cron.log"
-:qa
-|2,0,1720766943,,"qa"
 :Template
 |2,0,1720766938,,"Template"
 :so %
@@ -114,18 +168,10 @@ $
 |2,0,1720688301,,"F"
 :edit $MYVIMRC
 |2,0,1720688292,,"edit $MYVIMRC"
-:MRU 
-|2,0,1720680908,,"MRU "
 :e simpler-vcs-git.txt
 |2,0,1720633661,,"e simpler-vcs-git.txt"
 :113
 |2,0,1720622115,,"113"
-:e setup.sh
-|2,0,1720620600,,"e setup.sh"
-:e setup.fish
-|2,0,1720620598,,"e setup.fish"
-:e alias.sh
-|2,0,1720620111,,"e alias.sh"
 :e .config/ala
 |2,0,1720620109,,"e .config/ala"
 :MRU bash
@@ -316,8 +362,6 @@ $
 |2,0,1719326107,,"MRU 40:search.html"
 :RgHome button\.css
 |2,0,1719317516,,"RgHome button\\.css"
-:copen
-|2,0,1719317513,,"copen"
 :RgHome button
 |2,0,1719317484,,"RgHome button"
 :k
@@ -326,8 +370,6 @@ $
 |2,0,1719317236,,"Coiplot s"
 :MRU reset
 |2,0,1719317035,,"MRU reset"
-:e 
-|2,0,1719317033,,"e "
 :FIND reset.css
 |2,0,1719317030,,"FIND reset.css"
 :FIND reset
@@ -336,8 +378,6 @@ $
 |2,0,1719317009,,"73"
 :e ~/pyscripts/uuid7-experiment.py
 |2,0,1719313801,,"e ~/pyscripts/uuid7-experiment.py"
-:e .
-|2,0,1719313712,,"e ."
 :%sort u
 |2,0,1719263105,,"%sort u"
 :set verbose=20 | quit
@@ -516,8 +556,6 @@ $
 |2,0,1718874446,,"find reset.css"
 :find reset
 |2,0,1718874332,,"find reset"
-:MRU find
-|2,0,1718874316,,"MRU find"
 :MRU FIND
 |2,0,1718874314,,"MRU FIND"
 :FIND dark
@@ -622,8 +660,6 @@ $
 |2,0,1718484339,,"%s/ 'Inter'/ 'Inter web'"
 :FIND icon
 |2,0,1718484288,,"FIND icon"
-:let @"=expand("%:p")
-|2,0,1718484281,,"let @\"=expand(\"%:p\")"
 :let @"=AddTabularPattern(
 |2,0,1718484275,,"let @\"=AddTabularPattern("
 :%s/3\.0/3\.19/g
@@ -2070,8 +2106,6 @@ $
 |2,0,1716177860,,"lllll"
 :MRU viewlog
 |2,0,1716171896,,"MRU viewlog"
-:e ~/.bashrc
-|2,0,1716168028,,"e ~/.bashrc"
 :e .bash
 |2,0,1716168025,,"e .bash"
 :MRU setup.sh
@@ -5590,8 +5624,6 @@ $
 |2,0,1693083396,,"e ~/.config/fish/config.fish"
 :MRU setup.fish
 |2,0,1693083246,,"MRU setup.fish"
-:MRU se
-|2,0,1693083239,,"MRU se"
 :saveas s2.sh
 |2,0,1693082162,,"saveas s2.sh"
 :kkkkkkkkklllllllllll
@@ -7690,6 +7722,20 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/bat
+|2,1,1720865997,47,"bat"
+? @$
+|2,1,1720865993,,"@$"
+?/\C\<fd\>
+|2,1,1720845219,47,"\\C\\<fd\\>"
+?/fd
+|2,1,1720845160,47,"fd"
+?/find-all
+|2,1,1720842688,47,"find-all"
+?/mcfly
+|2,1,1720842282,47,"mcfly"
+?/argcomplete
+|2,1,1720841624,47,"argcomplete"
 ?/x86_64-unknown-linux-gnu.tar.gz
 |2,1,1720795851,47,"x86_64-unknown-linux-gnu.tar.gz"
 ?/linux-gnu.tar.gz
@@ -7702,8 +7748,6 @@ $
 |2,1,1720793672,47,"as"
 ?/shellch
 |2,1,1720698332,47,"shellch"
-? @$
-|2,1,1720693165,,"@$"
 ?/server
 |2,1,1720622285,47,"server"
 ?/histfile
@@ -9196,8 +9240,6 @@ $
 |2,1,1714948752,47,"\\\\t"
 ?/\\r
 |2,1,1714947364,47,"\\\\r"
-?/mcfly
-|2,1,1714944040,47,"mcfly"
 ?/space
 |2,1,1714943651,47,"space"
 ?/ready
@@ -10320,8 +10362,6 @@ $
 |2,1,1693233120,47,"default_command"
 ?/default_
 |2,1,1693233102,47,"default_"
-?/bat
-|2,1,1693223788,47,"bat"
 ?/Files
 |2,1,1693223630,47,"Files"
 ? [^"]$
@@ -11412,36 +11452,44 @@ $
 |2,4,1693311567,,"cont"
 
 # Registers:
-""0	CHAR	0
-	fish
-|3,1,0,0,1,0,1720796732,"fish"
-"1	LINE	0
-	source ~
-|3,0,1,1,1,0,1720796356,"source ~"
+"0	LINE	0
+	#   [5] Rename `bat.bash` to `bat-completion.bash` so that it follows the naming convention of other completion files in this directory
+|3,0,0,1,1,0,1720866750,"#   [5] Rename `bat.bash` to `bat-completion.bash` so that it follows the naming convention of other completion files in this directory"
+""1	LINE	0
+	#!/bin/bash
+	
+	# Arguments:
+	#   1: URL to TAR File
+	#   2: 
+|3,1,1,1,5,0,1720866953,"#!/bin/bash","","# Arguments:","#   1: URL to TAR File","#   2: "
 "2	LINE	0
 	
-|3,0,2,1,1,0,1720796281,""
+|3,0,2,1,1,0,1720865985,""
 "3	LINE	0
 	
-|3,0,3,1,1,0,1720796278,""
+|3,0,3,1,1,0,1720865898,""
 "4	LINE	0
-	
-|3,0,4,1,1,0,1720796236,""
+	complete -o default -F _find_all_files find-all-files
+|3,0,4,1,1,0,1720865897,"complete -o default -F _find_all_files find-all-files"
 "5	LINE	0
 	
-|3,0,5,1,1,0,1720796235,""
+|3,0,5,1,1,0,1720865505,""
 "6	LINE	0
-	echo "$NAME"
-|3,0,6,1,1,0,1720796232,"echo \"$NAME\""
+	
+|3,0,6,1,1,0,1720865505,""
 "7	LINE	0
-	# jq -r '.assets[] | select(.name| endswith("x86_64-unknown-linux-gnu.tar.gz") ) | .browser_download_url'
-|3,0,7,1,1,0,1720796229,"# jq -r '.assets[] | select(.name| endswith(\"x86_64-unknown-linux-gnu.tar.gz\") ) | .browser_download_url'"
+	
+|3,0,7,1,1,0,1720865494,""
 "8	LINE	0
-	# curl -s https://api.github.com/repos/sharkdp/bat/releases/latest
-|3,0,8,1,1,0,1720796228,"# curl -s https://api.github.com/repos/sharkdp/bat/releases/latest"
+	
+|3,0,8,1,1,0,1720865494,""
 "9	LINE	0
-	echo $NAME
-|3,0,9,1,1,0,1720795928,"echo $NAME"
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec odio
+	nibh. Donec nec odio nec odio. Nulla facilisi. Nulla facilisi. Nulla
+	facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi.
+	Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla
+	facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi.
+|3,0,9,1,5,0,1720865449,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec odio","nibh. Donec nec odio nec odio. Nulla facilisi. Nulla facilisi. Nulla","facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi.","Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla","facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi."
 "j	CHAR	0
 	kc
 |3,0,19,0,1,0,1718434816,"kc"
@@ -11455,291 +11503,305 @@ $
 	https://rsms.me/inter/
 |3,0,28,0,1,0,1718483440,"https://rsms.me/inter/"
 "-	CHAR	0
-	fish
-|3,0,36,0,1,0,1720796731,"fish"
+	curl -L "$URL" | tar -xz --strip-components=1 --strip-components=2 "$FOLDER/autocomplete/bat.bash"
+|3,0,36,0,1,0,1720866626,"curl -L \"$URL\" | tar -xz --strip-components=1 --strip-components=2 \"$FOLDER/autocomplete/bat.bash\""
 
 # File marks:
-'0  16  97  ~/.config/bash_completions/_download_bat_completion.bash
-|4,48,16,97,1720796737,"~/.config/bash_completions/_download_bat_completion.bash"
-'1  16  96  ~/.config/bash_completions/_download_bat_completion.bash
-|4,49,16,96,1720796664,"~/.config/bash_completions/_download_bat_completion.bash"
-'2  16  41  ~/.config/load_completions.bash
-|4,50,16,41,1720796365,"~/.config/load_completions.bash"
-'3  16  41  ~/.config/load_completions.bash
-|4,51,16,41,1720796365,"~/.config/load_completions.bash"
-'4  16  41  ~/.config/load_completions.bash
-|4,52,16,41,1720796365,"~/.config/load_completions.bash"
-'5  16  41  ~/.config/load_completions.bash
-|4,53,16,41,1720796365,"~/.config/load_completions.bash"
-'6  10  39  ~/.config/bash_completions/_download_bat_completion.bash
-|4,54,10,39,1720796312,"~/.config/bash_completions/_download_bat_completion.bash"
-'7  10  39  ~/.config/bash_completions/_download_bat_completion.bash
-|4,55,10,39,1720796312,"~/.config/bash_completions/_download_bat_completion.bash"
-'8  10  39  ~/.config/bash_completions/_download_bat_completion.bash
-|4,56,10,39,1720796312,"~/.config/bash_completions/_download_bat_completion.bash"
-'9  10  39  ~/.config/bash_completions/_download_bat_completion.bash
-|4,57,10,39,1720796312,"~/.config/bash_completions/_download_bat_completion.bash"
+'0  1  0  ~/.config/bash_completions/_download_bat_completion.bash
+|4,48,1,0,1720866957,"~/.config/bash_completions/_download_bat_completion.bash"
+'1  18  0  ~/.config/bash_completions/_download_bat_completion.bash
+|4,49,18,0,1720866851,"~/.config/bash_completions/_download_bat_completion.bash"
+'2  18  0  ~/.config/bash_completions/_download_bat_completion.bash
+|4,50,18,0,1720866851,"~/.config/bash_completions/_download_bat_completion.bash"
+'3  18  30  ~/.config/bash_completions/_download_bat_completion.bash
+|4,51,18,30,1720866761,"~/.config/bash_completions/_download_bat_completion.bash"
+'4  18  30  ~/.config/bash_completions/_download_bat_completion.bash
+|4,52,18,30,1720866761,"~/.config/bash_completions/_download_bat_completion.bash"
+'5  17  68  ~/.config/bash_completions/_download_bat_completion.bash
+|4,53,17,68,1720866703,"~/.config/bash_completions/_download_bat_completion.bash"
+'6  17  68  ~/.config/bash_completions/_download_bat_completion.bash
+|4,54,17,68,1720866703,"~/.config/bash_completions/_download_bat_completion.bash"
+'7  17  68  ~/.config/bash_completions/_download_bat_completion.bash
+|4,55,17,68,1720866703,"~/.config/bash_completions/_download_bat_completion.bash"
+'8  17  68  ~/.config/bash_completions/_download_bat_completion.bash
+|4,56,17,68,1720866703,"~/.config/bash_completions/_download_bat_completion.bash"
+'9  17  68  ~/.config/bash_completions/_download_bat_completion.bash
+|4,57,17,68,1720866703,"~/.config/bash_completions/_download_bat_completion.bash"
 
 # Jumplist (newest first):
--'  16  97  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,16,97,1720796737,"~/.config/bash_completions/_download_bat_completion.bash"
 -'  1  0  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,1,0,1720796720,"~/.config/bash_completions/_download_bat_completion.bash"
--'  16  96  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,16,96,1720796664,"~/.config/bash_completions/_download_bat_completion.bash"
+|4,39,1,0,1720866957,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  18  0  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,18,0,1720866851,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  18  0  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,18,0,1720866851,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  18  30  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,18,30,1720866761,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  8  0  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,8,0,1720866751,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  8  0  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,8,0,1720866751,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  8  0  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,8,0,1720866751,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  10  0  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,10,0,1720866750,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  10  0  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,10,0,1720866750,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  10  0  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,10,0,1720866750,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  17  0  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,17,0,1720866747,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  17  0  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,17,0,1720866747,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  17  0  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,17,0,1720866747,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  17  68  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,17,68,1720866703,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  18  0  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,18,0,1720866656,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  18  0  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,18,0,1720866656,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  17  0  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,17,0,1720866628,"~/.config/bash_completions/_download_bat_completion.bash"
 -'  1  0  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,1,0,1720796616,"~/.config/bash_completions/_download_bat_completion.bash"
--'  16  41  ~/.config/load_completions.bash
-|4,39,16,41,1720796365,"~/.config/load_completions.bash"
--'  16  41  ~/.config/load_completions.bash
-|4,39,16,41,1720796365,"~/.config/load_completions.bash"
--'  16  41  ~/.config/load_completions.bash
-|4,39,16,41,1720796365,"~/.config/load_completions.bash"
--'  12  0  ~/.config/load_completions.bash
-|4,39,12,0,1720796351,"~/.config/load_completions.bash"
--'  12  0  ~/.config/load_completions.bash
-|4,39,12,0,1720796351,"~/.config/load_completions.bash"
--'  12  0  ~/.config/load_completions.bash
-|4,39,12,0,1720796351,"~/.config/load_completions.bash"
+|4,39,1,0,1720866580,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  1  0  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,1,0,1720866580,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  1  0  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,1,0,1720866580,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  1  0  ~/.config/bash_completions/_download_bat_completion.bash
+|4,39,1,0,1720866580,"~/.config/bash_completions/_download_bat_completion.bash"
+-'  16  0  ~/.config/load_completions.bash
+|4,39,16,0,1720866579,"~/.config/load_completions.bash"
+-'  16  0  ~/.config/load_completions.bash
+|4,39,16,0,1720866579,"~/.config/load_completions.bash"
+-'  16  0  ~/.config/load_completions.bash
+|4,39,16,0,1720866579,"~/.config/load_completions.bash"
+-'  16  0  ~/.config/load_completions.bash
+|4,39,16,0,1720866579,"~/.config/load_completions.bash"
+-'  16  0  ~/.config/load_completions.bash
+|4,39,16,0,1720866579,"~/.config/load_completions.bash"
 -'  1  0  ~/.config/load_completions.bash
-|4,39,1,0,1720796349,"~/.config/load_completions.bash"
+|4,39,1,0,1720866544,"~/.config/load_completions.bash"
 -'  1  0  ~/.config/load_completions.bash
-|4,39,1,0,1720796349,"~/.config/load_completions.bash"
+|4,39,1,0,1720866544,"~/.config/load_completions.bash"
 -'  1  0  ~/.config/load_completions.bash
-|4,39,1,0,1720796349,"~/.config/load_completions.bash"
--'  10  39  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,10,39,1720796312,"~/.config/bash_completions/_download_bat_completion.bash"
--'  10  39  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,10,39,1720796312,"~/.config/bash_completions/_download_bat_completion.bash"
--'  10  39  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,10,39,1720796312,"~/.config/bash_completions/_download_bat_completion.bash"
--'  10  39  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,10,39,1720796312,"~/.config/bash_completions/_download_bat_completion.bash"
--'  8  57  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,8,57,1720796204,"~/.config/bash_completions/_download_bat_completion.bash"
--'  8  57  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,8,57,1720796204,"~/.config/bash_completions/_download_bat_completion.bash"
--'  8  57  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,8,57,1720796204,"~/.config/bash_completions/_download_bat_completion.bash"
--'  8  57  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,8,57,1720796204,"~/.config/bash_completions/_download_bat_completion.bash"
--'  1  0  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,1,0,1720796059,"~/.config/bash_completions/_download_bat_completion.bash"
--'  1  0  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,1,0,1720796059,"~/.config/bash_completions/_download_bat_completion.bash"
--'  16  74  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,16,74,1720796043,"~/.config/bash_completions/_download_bat_completion.bash"
--'  16  74  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,16,74,1720796043,"~/.config/bash_completions/_download_bat_completion.bash"
--'  10  74  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,10,74,1720796043,"~/.config/bash_completions/_download_bat_completion.bash"
--'  15  0  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,15,0,1720796018,"~/.config/bash_completions/_download_bat_completion.bash"
--'  9  0  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,9,0,1720796018,"~/.config/bash_completions/_download_bat_completion.bash"
--'  15  0  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,15,0,1720796018,"~/.config/bash_completions/_download_bat_completion.bash"
--'  9  0  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,9,0,1720796018,"~/.config/bash_completions/_download_bat_completion.bash"
--'  15  0  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,15,0,1720796018,"~/.config/bash_completions/_download_bat_completion.bash"
--'  9  0  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,9,0,1720796018,"~/.config/bash_completions/_download_bat_completion.bash"
--'  15  0  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,15,0,1720796018,"~/.config/bash_completions/_download_bat_completion.bash"
--'  9  0  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,9,0,1720796018,"~/.config/bash_completions/_download_bat_completion.bash"
--'  14  5  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,14,5,1720796016,"~/.config/bash_completions/_download_bat_completion.bash"
--'  7  5  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,7,5,1720796016,"~/.config/bash_completions/_download_bat_completion.bash"
--'  14  5  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,14,5,1720796016,"~/.config/bash_completions/_download_bat_completion.bash"
--'  7  5  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,7,5,1720796016,"~/.config/bash_completions/_download_bat_completion.bash"
--'  14  5  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,14,5,1720796016,"~/.config/bash_completions/_download_bat_completion.bash"
--'  7  5  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,7,5,1720796016,"~/.config/bash_completions/_download_bat_completion.bash"
--'  14  5  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,14,5,1720796016,"~/.config/bash_completions/_download_bat_completion.bash"
--'  8  5  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,8,5,1720796016,"~/.config/bash_completions/_download_bat_completion.bash"
--'  7  5  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,7,5,1720796016,"~/.config/bash_completions/_download_bat_completion.bash"
--'  13  108  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,13,108,1720795923,"~/.config/bash_completions/_download_bat_completion.bash"
--'  6  108  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,6,108,1720795923,"~/.config/bash_completions/_download_bat_completion.bash"
--'  13  108  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,13,108,1720795923,"~/.config/bash_completions/_download_bat_completion.bash"
--'  6  108  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,6,108,1720795923,"~/.config/bash_completions/_download_bat_completion.bash"
--'  13  108  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,13,108,1720795923,"~/.config/bash_completions/_download_bat_completion.bash"
--'  6  108  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,6,108,1720795923,"~/.config/bash_completions/_download_bat_completion.bash"
--'  13  108  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,13,108,1720795923,"~/.config/bash_completions/_download_bat_completion.bash"
--'  6  108  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,6,108,1720795923,"~/.config/bash_completions/_download_bat_completion.bash"
--'  11  17  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,11,17,1720795839,"~/.config/bash_completions/_download_bat_completion.bash"
--'  3  17  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,3,17,1720795839,"~/.config/bash_completions/_download_bat_completion.bash"
--'  11  17  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,11,17,1720795839,"~/.config/bash_completions/_download_bat_completion.bash"
--'  3  17  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,3,17,1720795839,"~/.config/bash_completions/_download_bat_completion.bash"
--'  11  17  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,11,17,1720795839,"~/.config/bash_completions/_download_bat_completion.bash"
--'  3  17  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,3,17,1720795839,"~/.config/bash_completions/_download_bat_completion.bash"
--'  11  17  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,11,17,1720795839,"~/.config/bash_completions/_download_bat_completion.bash"
--'  3  17  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,3,17,1720795839,"~/.config/bash_completions/_download_bat_completion.bash"
--'  3  17  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,3,17,1720795839,"~/.config/bash_completions/_download_bat_completion.bash"
--'  1  0  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,1,0,1720795831,"~/.config/bash_completions/_download_bat_completion.bash"
--'  1  0  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,1,0,1720795831,"~/.config/bash_completions/_download_bat_completion.bash"
--'  6  27  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,6,27,1720795800,"~/.config/bash_completions/_download_bat_completion.bash"
--'  6  27  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,6,27,1720795800,"~/.config/bash_completions/_download_bat_completion.bash"
--'  1  0  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,1,0,1720795778,"~/.config/bash_completions/_download_bat_completion.bash"
--'  10  36  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
-|4,39,10,36,1720794900,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
--'  10  36  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
-|4,39,10,36,1720794900,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
--'  10  36  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
-|4,39,10,36,1720794900,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
--'  10  36  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
-|4,39,10,36,1720794900,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
--'  10  36  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
-|4,39,10,36,1720794900,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
--'  10  36  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
-|4,39,10,36,1720794900,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
--'  10  36  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
-|4,39,10,36,1720794900,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
--'  10  36  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
-|4,39,10,36,1720794900,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
--'  15  0  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
-|4,39,15,0,1720794885,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
--'  15  0  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
-|4,39,15,0,1720794885,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
--'  15  0  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
-|4,39,15,0,1720794885,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
--'  15  0  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
-|4,39,15,0,1720794885,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
--'  15  0  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
-|4,39,15,0,1720794885,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
--'  15  0  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
-|4,39,15,0,1720794885,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
--'  15  0  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
-|4,39,15,0,1720794885,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
--'  15  0  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
-|4,39,15,0,1720794885,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
--'  9  36  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
-|4,39,9,36,1720794832,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
--'  9  36  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
-|4,39,9,36,1720794832,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
--'  9  36  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
-|4,39,9,36,1720794832,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
--'  9  36  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
-|4,39,9,36,1720794832,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
--'  9  36  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
-|4,39,9,36,1720794832,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
--'  9  36  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
-|4,39,9,36,1720794832,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
--'  9  36  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
-|4,39,9,36,1720794832,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
--'  9  36  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
-|4,39,9,36,1720794832,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
--'  10  36  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
-|4,39,10,36,1720794832,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
--'  14  0  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
-|4,39,14,0,1720794821,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
--'  14  0  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
-|4,39,14,0,1720794821,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
--'  14  0  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
-|4,39,14,0,1720794821,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
--'  14  0  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
-|4,39,14,0,1720794821,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
--'  14  0  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
-|4,39,14,0,1720794821,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
--'  14  0  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
-|4,39,14,0,1720794821,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
--'  14  0  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
-|4,39,14,0,1720794821,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
--'  14  0  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
-|4,39,14,0,1720794821,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
--'  15  0  ~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz
-|4,39,15,0,1720794821,"~/.config/bash_completions/bat-v0.24.0-x86_64-unknown-linux-gnu.tar.gz"
--'  7  22  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,7,22,1720794753,"~/.config/bash_completions/_download_bat_completion.bash"
+|4,39,1,0,1720866544,"~/.config/load_completions.bash"
+-'  1  0  ~/.config/load_completions.bash
+|4,39,1,0,1720866544,"~/.config/load_completions.bash"
+-'  1  0  ~/.config/load_completions.bash
+|4,39,1,0,1720866544,"~/.config/load_completions.bash"
+-'  11  0  ~/.config/setup.sh
+|4,39,11,0,1720866522,"~/.config/setup.sh"
+-'  11  0  ~/.config/setup.sh
+|4,39,11,0,1720866522,"~/.config/setup.sh"
+-'  11  0  ~/.config/setup.sh
+|4,39,11,0,1720866522,"~/.config/setup.sh"
+-'  11  0  ~/.config/setup.sh
+|4,39,11,0,1720866522,"~/.config/setup.sh"
+-'  11  0  ~/.config/setup.sh
+|4,39,11,0,1720866522,"~/.config/setup.sh"
+-'  11  0  ~/.config/setup.sh
+|4,39,11,0,1720866522,"~/.config/setup.sh"
+-'  10  14  ~/.config/setup.sh
+|4,39,10,14,1720866429,"~/.config/setup.sh"
+-'  10  14  ~/.config/setup.sh
+|4,39,10,14,1720866429,"~/.config/setup.sh"
+-'  10  14  ~/.config/setup.sh
+|4,39,10,14,1720866429,"~/.config/setup.sh"
+-'  10  14  ~/.config/setup.sh
+|4,39,10,14,1720866429,"~/.config/setup.sh"
+-'  10  14  ~/.config/setup.sh
+|4,39,10,14,1720866429,"~/.config/setup.sh"
+-'  10  14  ~/.config/setup.sh
+|4,39,10,14,1720866429,"~/.config/setup.sh"
+-'  17  0  ~/.config/load_completions.bash
+|4,39,17,0,1720866419,"~/.config/load_completions.bash"
+-'  17  0  ~/.config/load_completions.bash
+|4,39,17,0,1720866419,"~/.config/load_completions.bash"
+-'  17  0  ~/.config/load_completions.bash
+|4,39,17,0,1720866419,"~/.config/load_completions.bash"
+-'  17  0  ~/.config/load_completions.bash
+|4,39,17,0,1720866419,"~/.config/load_completions.bash"
+-'  17  0  ~/.config/load_completions.bash
+|4,39,17,0,1720866419,"~/.config/load_completions.bash"
+-'  17  0  ~/.config/load_completions.bash
+|4,39,17,0,1720866419,"~/.config/load_completions.bash"
+-'  17  0  ~/.config/load_completions.bash
+|4,39,17,0,1720866047,"~/.config/load_completions.bash"
+-'  1  0  ~/.config/bash_completions/find-all-files-completion.bash
+|4,39,1,0,1720865984,"~/.config/bash_completions/find-all-files-completion.bash"
+-'  12  47  ~/.config/load_completions.bash
+|4,39,12,47,1720865984,"~/.config/load_completions.bash"
+-'  1  0  ~/.config/bash_completions/find-all-files-completion.bash
+|4,39,1,0,1720865984,"~/.config/bash_completions/find-all-files-completion.bash"
+-'  12  47  ~/.config/load_completions.bash
+|4,39,12,47,1720865984,"~/.config/load_completions.bash"
+-'  1  0  ~/.config/bash_completions/find-all-files-completion.bash
+|4,39,1,0,1720865984,"~/.config/bash_completions/find-all-files-completion.bash"
+-'  12  47  ~/.config/load_completions.bash
+|4,39,12,47,1720865984,"~/.config/load_completions.bash"
+-'  1  0  ~/.config/bash_completions/find-all-files-completion.bash
+|4,39,1,0,1720865984,"~/.config/bash_completions/find-all-files-completion.bash"
+-'  12  47  ~/.config/load_completions.bash
+|4,39,12,47,1720865984,"~/.config/load_completions.bash"
+-'  1  0  ~/.config/bash_completions/find-all-files-completion.bash
+|4,39,1,0,1720865984,"~/.config/bash_completions/find-all-files-completion.bash"
+-'  12  47  ~/.config/load_completions.bash
+|4,39,12,47,1720865984,"~/.config/load_completions.bash"
+-'  1  0  ~/.config/bash_completions/find-all-files-completion.bash
+|4,39,1,0,1720865984,"~/.config/bash_completions/find-all-files-completion.bash"
+-'  12  47  ~/.config/load_completions.bash
+|4,39,12,47,1720865984,"~/.config/load_completions.bash"
+-'  1  0  ~/.config/bash_completions/find-all-files-completion.bash
+|4,39,1,0,1720865984,"~/.config/bash_completions/find-all-files-completion.bash"
+-'  12  47  ~/.config/load_completions.bash
+|4,39,12,47,1720865984,"~/.config/load_completions.bash"
+-'  1  0  ~/.config/bash_completions/bat-completion.bash
+|4,39,1,0,1720865982,"~/.config/bash_completions/bat-completion.bash"
+-'  1  0  ~/.config/bash_completions/bat-completion.bash
+|4,39,1,0,1720865982,"~/.config/bash_completions/bat-completion.bash"
+-'  1  0  ~/.config/bash_completions/bat-completion.bash
+|4,39,1,0,1720865982,"~/.config/bash_completions/bat-completion.bash"
+-'  1  0  ~/.config/bash_completions/bat-completion.bash
+|4,39,1,0,1720865982,"~/.config/bash_completions/bat-completion.bash"
+-'  1  0  ~/.config/bash_completions/bat-completion.bash
+|4,39,1,0,1720865982,"~/.config/bash_completions/bat-completion.bash"
+-'  1  0  ~/.config/bash_completions/bat-completion.bash
+|4,39,1,0,1720865982,"~/.config/bash_completions/bat-completion.bash"
+-'  1  0  ~/.config/bash_completions/bat-completion.bash
+|4,39,1,0,1720865982,"~/.config/bash_completions/bat-completion.bash"
+-'  1  0  ~/.config/load_completions.bash
+|4,39,1,0,1720865924,"~/.config/load_completions.bash"
+-'  1  0  ~/.config/load_completions.bash
+|4,39,1,0,1720865924,"~/.config/load_completions.bash"
+-'  138  0  ~/.config/bash_completions/find-all-files.bash
+|4,39,138,0,1720865916,"~/.config/bash_completions/find-all-files.bash"
+-'  138  0  ~/.config/bash_completions/find-all-files.bash
+|4,39,138,0,1720865916,"~/.config/bash_completions/find-all-files.bash"
+-'  138  0  ~/.config/bash_completions/find-all-files.bash
+|4,39,138,0,1720865916,"~/.config/bash_completions/find-all-files.bash"
+-'  138  0  ~/.config/bash_completions/find-all-files.bash
+|4,39,138,0,1720865916,"~/.config/bash_completions/find-all-files.bash"
+-'  138  0  ~/.config/bash_completions/find-all-files.bash
+|4,39,138,0,1720865916,"~/.config/bash_completions/find-all-files.bash"
+-'  138  0  ~/.config/bash_completions/find-all-files.bash
+|4,39,138,0,1720865916,"~/.config/bash_completions/find-all-files.bash"
+-'  138  0  ~/.config/bash_completions/find-all-files.bash
+|4,39,138,0,1720865916,"~/.config/bash_completions/find-all-files.bash"
+-'  138  0  ~/.config/bash_completions/find-all-files.bash
+|4,39,138,0,1720865916,"~/.config/bash_completions/find-all-files.bash"
+-'  1  53  ~/.config/bash_completions/find-all-files.bash
+|4,39,1,53,1720865887,"~/.config/bash_completions/find-all-files.bash"
+-'  1  53  ~/.config/bash_completions/find-all-files.bash
+|4,39,1,53,1720865887,"~/.config/bash_completions/find-all-files.bash"
+-'  1  53  ~/.config/bash_completions/find-all-files.bash
+|4,39,1,53,1720865887,"~/.config/bash_completions/find-all-files.bash"
+-'  1  53  ~/.config/bash_completions/find-all-files.bash
+|4,39,1,53,1720865887,"~/.config/bash_completions/find-all-files.bash"
+-'  1  53  ~/.config/bash_completions/find-all-files.bash
+|4,39,1,53,1720865887,"~/.config/bash_completions/find-all-files.bash"
+-'  1  53  ~/.config/bash_completions/find-all-files.bash
+|4,39,1,53,1720865887,"~/.config/bash_completions/find-all-files.bash"
+-'  1  53  ~/.config/bash_completions/find-all-files.bash
+|4,39,1,53,1720865887,"~/.config/bash_completions/find-all-files.bash"
+-'  1  53  ~/.config/bash_completions/find-all-files.bash
+|4,39,1,53,1720865887,"~/.config/bash_completions/find-all-files.bash"
+-'  52  8  ~/.config/bash_completions/find-all-files.bash
+|4,39,52,8,1720865809,"~/.config/bash_completions/find-all-files.bash"
+-'  52  8  ~/.config/bash_completions/find-all-files.bash
+|4,39,52,8,1720865809,"~/.config/bash_completions/find-all-files.bash"
+-'  52  8  ~/.config/bash_completions/find-all-files.bash
+|4,39,52,8,1720865809,"~/.config/bash_completions/find-all-files.bash"
+-'  52  8  ~/.config/bash_completions/find-all-files.bash
+|4,39,52,8,1720865809,"~/.config/bash_completions/find-all-files.bash"
+-'  52  8  ~/.config/bash_completions/find-all-files.bash
+|4,39,52,8,1720865809,"~/.config/bash_completions/find-all-files.bash"
+-'  52  8  ~/.config/bash_completions/find-all-files.bash
+|4,39,52,8,1720865809,"~/.config/bash_completions/find-all-files.bash"
+-'  52  8  ~/.config/bash_completions/find-all-files.bash
+|4,39,52,8,1720865809,"~/.config/bash_completions/find-all-files.bash"
+-'  52  8  ~/.config/bash_completions/find-all-files.bash
+|4,39,52,8,1720865809,"~/.config/bash_completions/find-all-files.bash"
+-'  2  0  ~/.config/bash_completions/find-all-files.bash
+|4,39,2,0,1720865802,"~/.config/bash_completions/find-all-files.bash"
+-'  171  37  ~/.config/bash_completions/find-all-files.bash
+|4,39,171,37,1720865802,"~/.config/bash_completions/find-all-files.bash"
+-'  2  0  ~/.config/bash_completions/find-all-files.bash
+|4,39,2,0,1720865802,"~/.config/bash_completions/find-all-files.bash"
 
 # Buffer list:
-%~/.config/bash_completions/_download_bat_completion.bash	16	97
+%~/.config/bash_completions/_download_bat_completion.bash	1	0
 
 # History of marks within files (newest to oldest):
 
 > ~/.config/bash_completions/_download_bat_completion.bash
-	*	1720796734	0
-	"	16	97
-	^	16	97
-	.	16	96
-	+	11	0
-	+	11	74
+	*	1720866955	0
+	"	1	0
+	^	18	31
+	.	18	30
 	+	12	0
-	+	12	124
-	+	16	49
-	+	16	0
-	+	16	8
+	+	12	74
+	+	13	0
+	+	13	124
+	+	17	49
+	+	17	0
+	+	17	8
 	+	1	10
-	+	16	46
+	+	17	46
 	+	17	0
-	+	16	0
-	+	12	0
-	+	15	27
-	+	16	47
+	+	13	0
+	+	16	27
+	+	17	47
 	+	17	0
-	+	16	46
-	+	13	53
+	+	17	46
+	+	14	53
+	+	17	0
+	+	16	9
+	+	14	108
 	+	16	0
-	+	15	9
-	+	13	108
-	+	15	0
-	+	16	126
-	+	16	0
-	+	15	11
-	+	14	6
-	+	16	74
-	+	9	0
+	+	17	126
+	+	17	0
+	+	16	11
+	+	15	6
+	+	17	74
+	+	10	0
 	+	6	77
-	+	9	0
+	+	10	0
 	+	8	73
 	+	7	76
-	+	11	0
 	+	12	0
-	+	15	0
+	+	13	0
+	+	16	0
 	+	17	0
-	+	11	0
+	+	12	0
 	+	4	1
-	+	9	0
+	+	10	0
 	+	17	0
-	+	10	39
+	+	11	39
 	+	8	87
-	+	16	96
+	+	17	96
+	+	17	146
+	+	17	0
+	+	9	0
+	+	18	30
+
+> ~/.config/bash_completions/_tar_url_to_file.bash
+	*	1720866953	0
+	"	1	0
+	.	1	0
+	+	1	12
+	+	1	6
+	+	1	10
+	+	1	0
+	+	1	21
+	+	1	0
 
 > ~/.config/load_completions.bash
-	*	1720796362	0
-	"	16	41
-	^	16	42
-	.	16	41
+	*	1720866573	0
+	"	16	0
+	^	17	48
+	.	13	0
 	+	8	23
 	+	2	0
 	+	10	0
@@ -11752,7 +11814,446 @@ $
 	+	6	0
 	+	7	0
 	+	8	0
-	+	16	41
+	+	17	41
+	+	12	63
+	+	17	47
+	+	13	0
+
+> ~/.config/setup.sh
+	*	1720866520	0
+	"	11	0
+	^	10	7
+	.	10	6
+	+	14	68
+	+	14	27
+	+	8	0
+	+	6	1
+	+	14	34
+	+	6	0
+	+	8	0
+	+	14	0
+	+	6	0
+	+	14	0
+	+	5	0
+	+	6	0
+	+	14	0
+	+	8	0
+	+	14	0
+	+	14	1
+	+	14	8
+	+	14	10
+	+	14	155
+	+	14	8
+	+	14	123
+	+	14	0
+	+	28	26
+	+	29	27
+	+	9	41
+	+	12	23
+	+	13	0
+	+	12	75
+	+	13	0
+	+	12	63
+	+	13	0
+	+	12	54
+	+	14	71
+	+	14	89
+	+	14	0
+	+	13	38
+	+	13	0
+	+	13	13
+	+	13	0
+	+	14	9
+	+	14	17
+	+	29	0
+	+	6	0
+	+	16	0
+	+	14	14
+	+	31	34
+	+	12	0
+	+	12	29
+	+	1	11
+	+	14	0
+	+	15	0
+	+	14	0
+	+	25	0
+	+	12	0
+	+	13	0
+	+	14	0
+	+	31	0
+	+	9	0
+	+	14	0
+	+	46	35
+	+	29	1
+	+	32	0
+	+	46	0
+	+	29	0
+	+	28	0
+	+	22	0
+	+	17	0
+	+	48	45
+	+	45	1
+	+	46	0
+	+	40	42
+	+	1	1
+	+	28	1
+	+	30	41
+	+	11	0
+	+	9	0
+	+	5	14
+	+	3	0
+	+	26	193
+	+	26	162
+	+	29	0
+	+	28	82
+	+	24	0
+	+	27	0
+	+	5	0
+	+	7	17
+	+	7	63
+	+	4	33
+	+	4	67
+	+	26	282
+	+	9	0
+	+	11	0
+	+	13	0
+	+	9	0
+	+	10	6
+
+> ~/.config/bash_completions/find-all-files-completion.bash
+	*	1720866441	0
+	"	69	0
+	.	169	0
+	+	169	0
+
+> ~/.config/bash_completions/find-all-files.bash
+	*	1720866020	0
+	"	1	0
+	^	1	13
+	.	171	0
+	+	2	14
+	+	170	67
+	+	171	37
+	+	1	13
+	+	171	0
+
+> ~/.config/bash_completions/bat-completion.bash
+	*	1720865992	0
+	"	192	0
+
+> ~/.config/bash_completions/bat.bash
+	*	1720865972	0
+	"	192	2
+	^	192	3
+	.	192	0
+	+	192	0
+
+> ~/.config/alias.sh
+	*	1720865818	0
+	"	9	0
+	.	14	0
+	+	2	0
+	+	14	37
+	+	28	77
+	+	28	42
+	+	28	47
+	+	28	32
+	+	29	39
+	+	30	40
+	+	31	79
+	+	31	0
+	+	31	36
+	+	31	20
+	+	31	25
+	+	32	45
+	+	33	0
+	+	31	0
+	+	28	0
+	+	32	19
+	+	15	60
+	+	18	0
+	+	28	0
+	+	17	13
+	+	28	10
+	+	18	0
+	+	11	0
+	+	10	72
+	+	9	6
+	+	28	1
+	+	29	0
+	+	28	1
+	+	18	14
+	+	12	1
+	+	2	0
+	+	19	45
+	+	12	0
+	+	27	0
+	+	23	0
+	+	19	53
+	+	21	0
+	+	20	8
+	+	16	39
+	+	26	0
+	+	24	0
+	+	25	30
+	+	26	0
+	+	27	33
+	+	28	44
+	+	29	1
+	+	29	0
+	+	14	0
+
+> ~/.config/bash_completions/custom.bash
+	*	1720865779	0
+	"	169	24
+	^	1	0
+	.	172	0
+	+	171	0
+	+	168	0
+	+	169	0
+	+	170	0
+	+	169	50
+	+	172	0
+	+	168	0
+	+	1	9
+	+	169	21
+	+	171	32
+	+	12	20
+	+	13	29
+	+	22	16
+	+	1	0
+	+	12	25
+	+	13	34
+	+	22	21
+	+	1	0
+	+	172	0
+
+> ~/.bashrc
+	*	1720865743	0
+	"	122	0
+	.	120	0
+	+	121	0
+	+	121	55
+	+	121	0
+	+	121	47
+	+	124	0
+	+	121	0
+	+	124	0
+	+	123	0
+	+	126	0
+	+	127	0
+	+	120	0
+	+	123	0
+	+	118	0
+	+	120	0
+	+	123	0
+	+	6	5
+	+	5	0
+	+	6	0
+	+	123	0
+	+	109	0
+	+	120	0
+	+	114	5
+	+	115	4
+	+	116	0
+	+	117	4
+	+	115	0
+	+	115	4
+	+	117	0
+	+	116	4
+	+	114	4
+	+	118	0
+	+	112	0
+	+	115	0
+	+	123	0
+	+	121	0
+	+	124	0
+	+	123	0
+	+	120	0
+
+> ~/.config/direnv/direnv.toml
+	*	1720865724	0
+	"	8	0
+	.	9	0
+	+	3	85
+	+	3	11
+	+	4	27
+	+	5	31
+	+	6	11
+	+	5	0
+	+	9	0
+	+	6	51
+	+	5	40
+	+	4	45
+	+	9	0
+	+	6	27
+	+	6	0
+	+	1	55
+	+	6	27
+	+	5	28
+	+	4	28
+	+	8	34
+	+	7	32
+	+	9	0
+
+> ~/bugs/240713.bash_alias_completion_not_working.txt
+	*	1720865564	0
+	"	2	0
+	^	2	0
+	.	2	0
+	+	1	0
+	+	2	0
+
+> ~/bugs/format.txt
+	*	1720865455	0
+	"	11	0
+	^	10	0
+	.	11	0
+	+	10	71
+	+	15	68
+	+	15	73
+	+	15	69
+	+	15	73
+	+	18	71
+	+	19	68
+	+	20	73
+	+	22	0
+	+	21	68
+	+	4	45
+	+	6	0
+	+	7	0
+	+	2	0
+	+	3	0
+	+	5	0
+	+	6	9
+	+	7	0
+	+	2	10
+	+	3	0
+	+	7	0
+	+	7	15
+	+	7	29
+	+	7	0
+	+	22	0
+	+	1	0
+	+	11	0
+
+> /usr/share/bash-completion/completions/fd
+	*	1720845204	0
+	"	1	0
+
+> ~/.config/setup.fish
+	*	1720842676	0
+	"	1	0
+	^	1	8
+	.	1	0
+	+	6	0
+	+	6	4
+	+	6	7
+	+	6	0
+	+	6	21
+	+	6	24
+	+	6	11
+	+	6	0
+	+	6	22
+	+	6	24
+	+	6	22
+	+	6	0
+	+	6	5
+	+	6	40
+	+	9	34
+	+	6	0
+	+	6	43
+	+	6	42
+	+	6	0
+	+	6	45
+	+	6	5
+	+	6	0
+	+	6	9
+	+	6	5
+	+	6	0
+	+	6	9
+	+	6	39
+	+	6	9
+	+	6	0
+	+	6	20
+	+	6	19
+	+	6	23
+	+	6	8
+	+	6	23
+	+	6	9
+	+	6	0
+	+	16	1
+	+	6	0
+	+	22	0
+	+	10	0
+	+	10	13
+	+	10	0
+	+	24	21
+	+	24	18
+	+	24	0
+	+	24	42
+	+	24	0
+	+	23	0
+	+	24	0
+	+	6	0
+	+	6	44
+	+	6	0
+	+	6	4
+	+	6	0
+	+	6	7
+	+	6	37
+	+	6	24
+	+	6	7
+	+	6	5
+	+	6	25
+	+	6	13
+	+	6	30
+	+	6	7
+	+	6	0
+	+	6	21
+	+	6	0
+	+	8	0
+	+	9	1
+	+	6	0
+	+	9	0
+	+	8	0
+	+	9	32
+	+	6	23
+	+	6	0
+	+	6	19
+	+	6	0
+	+	6	26
+	+	6	10
+	+	6	5
+	+	6	0
+	+	6	37
+	+	6	0
+	+	6	22
+	+	6	58
+	+	6	0
+	+	7	30
+	+	9	18
+	+	24	0
+	+	25	0
+	+	26	0
+	+	25	29
+	+	26	11
+	+	28	34
+	+	29	0
+	+	10	0
+	+	21	55
+	+	21	0
+	+	13	82
+	+	14	80
+	+	1	0
+
+> ~/.config/shell_data/.bash_history
+	*	1720841643	0
+	"	1508	0
+
+> ~/.config/_python-argcomplete
+	*	1720841573	0
+	"	12	0
 
 > ~/downloads/bat-releases-latest.json
 	*	1720795994	0
@@ -12331,100 +12832,6 @@ $
 	+	62	0
 	+	43	0
 
-> ~/.config/setup.sh
-	*	1720680936	0
-	"	14	22
-	^	6	64
-	.	6	63
-	+	17	68
-	+	17	27
-	+	7	0
-	+	5	1
-	+	17	34
-	+	5	0
-	+	7	0
-	+	17	0
-	+	5	0
-	+	17	0
-	+	4	0
-	+	5	0
-	+	17	0
-	+	7	0
-	+	17	0
-	+	17	1
-	+	17	8
-	+	17	10
-	+	17	155
-	+	17	8
-	+	17	123
-	+	17	0
-	+	31	26
-	+	32	27
-	+	9	41
-	+	13	23
-	+	16	0
-	+	13	75
-	+	16	0
-	+	13	63
-	+	16	0
-	+	13	54
-	+	17	71
-	+	17	89
-	+	17	0
-	+	15	38
-	+	14	0
-	+	14	13
-	+	14	0
-	+	17	9
-	+	17	17
-	+	32	0
-	+	5	0
-	+	19	0
-	+	17	14
-	+	34	34
-	+	13	0
-	+	13	29
-	+	1	11
-	+	17	0
-	+	18	0
-	+	17	0
-	+	28	0
-	+	13	0
-	+	14	0
-	+	17	0
-	+	34	0
-	+	10	0
-	+	17	0
-	+	49	35
-	+	32	1
-	+	35	0
-	+	49	0
-	+	32	0
-	+	31	0
-	+	25	0
-	+	20	0
-	+	51	45
-	+	48	1
-	+	49	0
-	+	43	42
-	+	1	1
-	+	31	1
-	+	33	41
-	+	12	0
-	+	11	0
-	+	10	0
-	+	4	14
-	+	3	0
-	+	29	193
-	+	29	162
-	+	32	0
-	+	31	82
-	+	27	0
-	+	30	0
-	+	4	0
-	+	6	17
-	+	6	63
-
 > /tmp/crontab.4ej9rj/crontab
 	*	1720680906	0
 	"	1	0
@@ -12440,31 +12847,6 @@ $
 > ~/tooling/simpler-vcs-git.txt
 	*	1720633692	0
 	"	30	0
-
-> ~/.config/direnv/direnv.toml
-	*	1720622834	0
-	"	9	0
-	.	9	0
-	+	3	85
-	+	3	11
-	+	4	27
-	+	5	31
-	+	6	11
-	+	5	0
-	+	9	0
-	+	6	51
-	+	5	40
-	+	4	45
-	+	9	0
-	+	6	27
-	+	6	0
-	+	1	55
-	+	6	27
-	+	5	28
-	+	4	28
-	+	8	34
-	+	7	32
-	+	9	0
 
 > ~/pyscripts/viewlog.py
 	*	1720622172	0
@@ -12576,167 +12958,6 @@ $
 > /tmp/crontab.OW9BDt/crontab
 	*	1720621447	0
 	"	34	0
-
-> ~/.config/setup.fish
-	*	1720620598	0
-	"	1	0
-	^	1	8
-	.	1	0
-	+	6	0
-	+	6	4
-	+	6	7
-	+	6	0
-	+	6	21
-	+	6	24
-	+	6	11
-	+	6	0
-	+	6	22
-	+	6	24
-	+	6	22
-	+	6	0
-	+	6	5
-	+	6	40
-	+	9	34
-	+	6	0
-	+	6	43
-	+	6	42
-	+	6	0
-	+	6	45
-	+	6	5
-	+	6	0
-	+	6	9
-	+	6	5
-	+	6	0
-	+	6	9
-	+	6	39
-	+	6	9
-	+	6	0
-	+	6	20
-	+	6	19
-	+	6	23
-	+	6	8
-	+	6	23
-	+	6	9
-	+	6	0
-	+	16	1
-	+	6	0
-	+	22	0
-	+	10	0
-	+	10	13
-	+	10	0
-	+	24	21
-	+	24	18
-	+	24	0
-	+	24	42
-	+	24	0
-	+	23	0
-	+	24	0
-	+	6	0
-	+	6	44
-	+	6	0
-	+	6	4
-	+	6	0
-	+	6	7
-	+	6	37
-	+	6	24
-	+	6	7
-	+	6	5
-	+	6	25
-	+	6	13
-	+	6	30
-	+	6	7
-	+	6	0
-	+	6	21
-	+	6	0
-	+	8	0
-	+	9	1
-	+	6	0
-	+	9	0
-	+	8	0
-	+	9	32
-	+	6	23
-	+	6	0
-	+	6	19
-	+	6	0
-	+	6	26
-	+	6	10
-	+	6	5
-	+	6	0
-	+	6	37
-	+	6	0
-	+	6	22
-	+	6	58
-	+	6	0
-	+	7	30
-	+	9	18
-	+	24	0
-	+	25	0
-	+	26	0
-	+	25	29
-	+	26	11
-	+	28	34
-	+	29	0
-	+	10	0
-	+	21	55
-	+	21	0
-	+	13	82
-	+	14	80
-	+	1	0
-
-> ~/.config/alias.sh
-	*	1720620594	0
-	"	10	17
-	^	30	2
-	.	30	0
-	+	2	0
-	+	15	37
-	+	29	77
-	+	29	42
-	+	29	47
-	+	29	32
-	+	30	39
-	+	31	40
-	+	32	79
-	+	32	0
-	+	32	36
-	+	32	20
-	+	32	25
-	+	33	45
-	+	34	0
-	+	32	0
-	+	29	0
-	+	33	19
-	+	16	60
-	+	19	0
-	+	29	0
-	+	18	13
-	+	29	10
-	+	19	0
-	+	11	0
-	+	10	72
-	+	9	6
-	+	29	1
-	+	30	0
-	+	29	1
-	+	19	14
-	+	12	1
-	+	2	0
-	+	20	45
-	+	12	0
-	+	28	0
-	+	24	0
-	+	20	53
-	+	22	0
-	+	21	8
-	+	17	39
-	+	27	0
-	+	25	0
-	+	26	30
-	+	27	0
-	+	28	33
-	+	29	44
-	+	30	1
-	+	30	0
 
 > ~/bash/chtsh_help.bash
 	*	1720620025	0
@@ -21077,54 +21298,9 @@ $
 	+	51	27
 	+	52	0
 
-> ~/.bashrc
-	*	1716168080	0
-	"	125	0
-	.	126	0
-	+	121	0
-	+	121	55
-	+	121	0
-	+	121	47
-	+	126	0
-	+	121	0
-	+	126	0
-	+	125	0
-	+	128	0
-	+	129	0
-	+	120	0
-	+	123	0
-	+	118	0
-	+	120	0
-	+	123	0
-	+	6	5
-	+	5	0
-	+	6	0
-	+	124	0
-	+	109	0
-	+	120	0
-	+	114	5
-	+	115	4
-	+	116	0
-	+	117	4
-	+	115	0
-	+	115	4
-	+	117	0
-	+	116	4
-	+	114	4
-	+	118	0
-	+	112	0
-	+	115	0
-	+	123	0
-	+	121	0
-	+	126	0
-
 > ~/.config/atuin/config.toml
 	*	1716167986	0
 	"	131	24
-
-> ~/.config/shell_data/.bash_history
-	*	1716167973	0
-	"	1944	0
 
 > ~/.config/shell_data/fish_history
 	*	1716167972	0
