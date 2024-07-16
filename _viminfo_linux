@@ -11,35 +11,193 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/bat
+~MSle0~/visual
 
 # Last Substitute Search Pattern:
-~MSle0&linux
+~MSle0&complete -c \zsfd
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
+:qa
+|2,0,1721150410,,"qa"
+:cn
+|2,0,1721150400,,"cn"
+:e stdlib.vim
+|2,0,1721150102,,"e stdlib.vim"
+:grep -g '*.vim' -g 'vimrc' --fixed-strings reg_save
+|2,0,1721150030,,"grep -g '*.vim' -g 'vimrc' --fixed-strings reg_save"
 :q
-|2,0,1720866956,,"q"
+|2,0,1721149992,,"q"
+:so %
+|2,0,1721149849,,"so %"
+:e
+|2,0,1721149823,,"e"
+:Copilot panel
+|2,0,1721149671,,"Copilot panel"
+:Ftplugin
+|2,0,1721149296,,"Ftplugin"
+:au BufRead *.txt
+|2,0,1721149052,,"au BufRead *.txt"
+:au BufRead
+|2,0,1721149043,,"au BufRead"
+:au
+|2,0,1721149039,,"au"
+:q!
+|2,0,1721147659,,"q!"
+:Template
+|2,0,1721147539,,"Template"
+:e printutils.py
+|2,0,1721146105,,"e printutils.py"
+:b read2.py
+|2,0,1721146098,,"b read2.py"
+:b error.json
+|2,0,1721146096,,"b error.json"
+:e read2.py
+|2,0,1721144966,,"e read2.py"
+:grep -g '*.py' --fixed-strings payload_sample
+|2,0,1721144938,,"grep -g '*.py' --fixed-strings payload_sample"
+:e .
+|2,0,1721144930,,"e ."
+:grep -g '*.py' --fixed-strings sample_payload
+|2,0,1721144927,,"grep -g '*.py' --fixed-strings sample_payload"
+:e curl_payload.py
+|2,0,1721144920,,"e curl_payload.py"
+:e __pycache__/
+|2,0,1721144918,,"e __pycache__/"
+:term
+|2,0,1721143115,,"term"
+:term python 
+|2,0,1721143113,,"term python "
+:b parsejson.py
+|2,0,1721143078,,"b parsejson.py"
+:cd ~/scrape-food-delivery/
+|2,0,1721143064,,"cd ~/scrape-food-delivery/"
+:grep -g '*.py' --fixed-strings 
+|2,0,1721143051,,"grep -g '*.py' --fixed-strings "
+:grep -g '*.py' --fixed-strings truncat
+|2,0,1721143048,,"grep -g '*.py' --fixed-strings truncat"
+:find 
+|2,0,1721143044,,"find "
+:find stab.h
+|2,0,1721143042,,"find stab.h"
+:JsonPath
+|2,0,1721142215,,"JsonPath"
+:T<F1>
+|2,0,1721126074,,"T<F1>"
+:e payload_sample.json
+|2,0,1721124255,,"e payload_sample.json"
+:e error.json
+|2,0,1721124246,,"e error.json"
+:e scrape_food_delivery.py
+|2,0,1721123919,,"e scrape_food_delivery.py"
+:e view_swiggy_payload.py
+|2,0,1721123441,,"e view_swiggy_payload.py"
+: 
+|2,0,1721123416,," "
+:edit $MYVIMRC
+|2,0,1721121255,,"edit $MYVIMRC"
+:qa!
+|2,0,1721121083,,"qa!"
+:set wrap
+|2,0,1721121028,,"set wrap"
+:diffthis
+|2,0,1721121001,,"diffthis"
+:enew
+|2,0,1721120983,,"enew"
+:CocRestart
+|2,0,1721119578,,"CocRestart"
+:Term
+|2,0,1721119570,,"Term"
+:e requirements.txt
+|2,0,1721119566,,"e requirements.txt"
+:e ui-components-css/css-tailwind-outputs/
+|2,0,1720876737,,"e ui-components-css/css-tailwind-outputs/"
+:e ui-components-css/
+|2,0,1720876727,,"e ui-components-css/"
+:cd ~/hateoas/static/
+|2,0,1720876719,,"cd ~/hateoas/static/"
+:cd 
+|2,0,1720876714,,"cd "
+:e ui-components-css/flask-history.py
+|2,0,1720875935,,"e ui-components-css/flask-history.py"
+:grep -g '*' --fixed-strings 5173
+|2,0,1720875846,,"grep -g '*' --fixed-strings 5173"
+:abbrev grep
+|2,0,1720875759,,"abbrev grep"
+:MRU gre
+|2,0,1720875747,,"MRU gre"
+:grep -g '*.' --fixed-strings 
+|2,0,1720875742,,"grep -g '*.' --fixed-strings "
+:map <CR>
+|2,0,1720873849,,"map <CR>"
+:nu
+|2,0,1720873847,,"nu"
+:bd!
+|2,0,1720873577,,"bd!"
+:e test.py
+|2,0,1720873551,,"e test.py"
+:Copilotpa
+|2,0,1720873546,,"Copilotpa"
+:Copilot status
+|2,0,1720873496,,"Copilot status"
+:e hateoas-api.py
+|2,0,1720873420,,"e hateoas-api.py"
+:bd
+|2,0,1720873412,,"bd"
+:copen
+|2,0,1720873402,,"copen"
+:grep -g '*.py' --fixed-strings main
+|2,0,1720873398,,"grep -g '*.py' --fixed-strings main"
+:grep -g '*' --fixed-strings main
+|2,0,1720873389,,"grep -g '*' --fixed-strings main"
+:grep -g '*' --fixed-strings main.sql
+|2,0,1720873381,,"grep -g '*' --fixed-strings main.sql"
+:RG 
+|2,0,1720873371,,"RG "
+:RgHome
+|2,0,1720873368,,"RgHome"
+:verbose command Rg
+|2,0,1720873349,,"verbose command Rg"
+:verbose command RG
+|2,0,1720873344,,"verbose command RG"
+:RG
+|2,0,1720873341,,"RG"
+:grep -g '*'
+|2,0,1720873338,,"grep -g '*'"
+:%s/complete -c \zsfd/find-all-files/
+|2,0,1720867555,,"%s/complete -c \\zsfd/find-all-files/"
+:%s/complete -c fd
+|2,0,1720867534,,"%s/complete -c fd"
+:iabbrev s/complete -c fd 
+|2,0,1720867529,,"iabbrev s/complete -c fd "
+:iabbrev s/complete -c fd
+|2,0,1720867516,,"iabbrev s/complete -c fd"
+:ss/
+|2,0,1720867514,,"ss/"
+:%ss/
+|2,0,1720867507,,"%ss/"
+:%
+|2,0,1720867505,,"%"
+:MRU 
+|2,0,1720867493,,"MRU "
+:e ~/.config/fish/completions/find-all-files.fish
+|2,0,1720867481,,"e ~/.config/fish/completions/find-all-files.fish"
+:dif
+|2,0,1720867369,,"dif"
+:e ~/.config/load_completions.bash
+|2,0,1720867240,,"e ~/.config/load_completions.bash"
 :e _tar_url_to_file.bash
 |2,0,1720866906,,"e _tar_url_to_file.bash"
 :e bash_completions/_download_bat_completion.bash
 |2,0,1720866579,,"e bash_completions/_download_bat_completion.bash"
 :e _python-argcomplete
 |2,0,1720866573,,"e _python-argcomplete"
-:qa
-|2,0,1720866521,,"qa"
-:q!
-|2,0,1720866443,,"q!"
-:term
-|2,0,1720866429,,"term"
 :MRU se
 |2,0,1720866419,,"MRU se"
 :echo $DI
 |2,0,1720866046,,"echo $DI"
-:e .
-|2,0,1720865993,,"e ."
 :Rename bat-completion.bash
 |2,0,1720865974,,"Rename bat-completion.bash"
 :e bat.bash
@@ -54,8 +212,6 @@ $
 |2,0,1720865789,,"Rename find-all-files.bash"
 :e alias.sh
 |2,0,1720865769,,"e alias.sh"
-:MRU 
-|2,0,1720845207,,"MRU "
 :let @"=expand("%:p")
 |2,0,1720844976,,"let @\"=expand(\"%:p\")"
 :MRU cu
@@ -68,8 +224,6 @@ $
 |2,0,1720844796,,"e ~/.config/bash_completions/custom.bash"
 :e ~/.bashrc
 |2,0,1720842799,,"e ~/.bashrc"
-:copen
-|2,0,1720842713,,"copen"
 :grep -g '*' --fixed-strings find-all-files
 |2,0,1720842708,,"grep -g '*' --fixed-strings find-all-files"
 :e setup.sh
@@ -88,8 +242,6 @@ $
 |2,0,1720795980,,"MRU json"
 :e _download_bat_completion.bash
 |2,0,1720795862,,"e _download_bat_completion.bash"
-:qa!
-|2,0,1720793898,,"qa!"
 :g/linux/
 |2,0,1720793797,,"g/linux/"
 :g
@@ -100,10 +252,6 @@ $
 |2,0,1720792399,,"set tw=80"
 :e /var/log/cron.log
 |2,0,1720792373,,"e /var/log/cron.log"
-:Template
-|2,0,1720766938,,"Template"
-:so %
-|2,0,1720766935,,"so %"
 :Template template
 |2,0,1720766912,,"Template template"
 :echo expand("%:e")
@@ -140,8 +288,6 @@ $
 |2,0,1720758328,,"template`"
 :ne
 |2,0,1720758231,,"ne"
-:cn
-|2,0,1720758215,,"cn"
 :next
 |2,0,1720758179,,"next"
 :nex
@@ -150,8 +296,6 @@ $
 |2,0,1720758123,,"MRU giti"
 :e backup.crontab
 |2,0,1720757739,,"e backup.crontab"
-:e
-|2,0,1720703396,,"e"
 :ALEInfo
 |2,0,1720698329,,"ALEInfo"
 :e cronjob.bash
@@ -166,8 +310,6 @@ $
 |2,0,1720688354,,"map gd"
 :F
 |2,0,1720688301,,"F"
-:edit $MYVIMRC
-|2,0,1720688292,,"edit $MYVIMRC"
 :e simpler-vcs-git.txt
 |2,0,1720633661,,"e simpler-vcs-git.txt"
 :113
@@ -190,8 +332,6 @@ $
 |2,0,1720527517,,"g/200/d"
 :v/200/d
 |2,0,1720527514,,"v/200/d"
-:enew
-|2,0,1720527512,,"enew"
 :MRU xcli
 |2,0,1720526176,,"MRU xcli"
 :echo has('clipboard')
@@ -234,8 +374,6 @@ $
 |2,0,1720520655,,"v/cookie=/d"
 : w /tmp/crk.txt
 |2,0,1720520646,," w /tmp/crk.txt"
-:e requirements.txt
-|2,0,1720520499,,"e requirements.txt"
 :MRU xcl
 |2,0,1720520097,,"MRU xcl"
 :MRU 17:config
@@ -248,10 +386,6 @@ $
 |2,0,1720366796,,"set shellslash?"
 :set shell?
 |2,0,1720366788,,"set shell?"
-:bd
-|2,0,1720366642,,"bd"
-:grep -g '*.vim' -g 'vimrc' --fixed-strings reg_save
-|2,0,1720366600,,"grep -g '*.vim' -g 'vimrc' --fixed-strings reg_save"
 :MRU hateo
 |2,0,1720366479,,"MRU hateo"
 :map <C-c>
@@ -260,8 +394,6 @@ $
 |2,0,1720366425,,"imap "
 :redraw
 |2,0,1720346295,,"redraw"
-:diffthis
-|2,0,1720346232,,"diffthis"
 :MRU hate
 |2,0,1720346187,,"MRU hate"
 :Copilot auth
@@ -282,8 +414,6 @@ $
 |2,0,1719694997,,"h :changes"
 :changes 3
 |2,0,1719694993,,"changes 3"
-:bd!
-|2,0,1719684843,,"bd!"
 :v/[A-Za-z0-9-]\{14,\}/d
 |2,0,1719684816,,"v/[A-Za-z0-9-]\\{14,\\}/d"
 :grep -g '*.vim' -g 'vimrc' --fixed-strings 
@@ -518,8 +648,6 @@ $
 |2,0,1718897931,,"grep 'sheet' -g '*.py' "
 :grep -g '*.py' sheet
 |2,0,1718897920,,"grep -g '*.py' sheet"
-:set wrap
-|2,0,1718892106,,"set wrap"
 :%s/
 |2,0,1718891867,,"%s/"
 :MRU base
@@ -570,8 +698,6 @@ $
 |2,0,1718755390,,"MRU 130:paths.vim"
 :e ~/.vim/plugin/
 |2,0,1718755346,,"e ~/.vim/plugin/"
-:Ftplugin
-|2,0,1718755329,,"Ftplugin"
 :e ~/.vim/plugin/mkdir.vim
 |2,0,1718755324,,"e ~/.vim/plugin/mkdir.vim"
 :MRU 55:todo.vim
@@ -648,8 +774,6 @@ $
 |2,0,1718570320,,"MRU elem"
 :FIND elem
 |2,0,1718570318,,"FIND elem"
-:e hateoas-api.py
-|2,0,1718570295,,"e hateoas-api.py"
 :MRU elemen
 |2,0,1718570263,,"MRU elemen"
 :MRU my-p
@@ -686,8 +810,6 @@ $
 |2,0,1718457611,,"ALEDisable"
 :e ~/bash/timeago.bash
 |2,0,1718457124,,"e ~/bash/timeago.bash"
-:Copilot panel
-|2,0,1718457017,,"Copilot panel"
 :e data/material-symbols-rounded-subset\[update,home].css
 |2,0,1718450967,,"e data/material-symbols-rounded-subset\\[update,home].css"
 :e data/material-symbols-rounded\[update,home].css
@@ -730,10 +852,6 @@ $
 |2,0,1718445029,,"MRU py"
 :MRU afl
 |2,0,1718445011,,"MRU afl"
-:CocRestart
-|2,0,1718443429,,"CocRestart"
-:Copilot status
-|2,0,1718443170,,"Copilot status"
 :e static/fonts/
 |2,0,1718439511,,"e static/fonts/"
 :b api
@@ -924,8 +1042,6 @@ $
 |2,0,1718198865,,"%!sort f"
 :%sort! d
 |2,0,1718198863,,"%sort! d"
-:%
-|2,0,1718198860,,"%"
 :e output.txt
 |2,0,1718198804,,"e output.txt"
 :e .prettierrc
@@ -990,8 +1106,6 @@ $
 |2,0,1718134848,,"h gf"
 :h find
 |2,0,1718134776,,"h find"
-:find 
-|2,0,1718134775,,"find "
 :find Proxima_Nova.500.ttf
 |2,0,1718134774,,"find Proxima_Nova.500.ttf"
 :FIND Proxima_Nova.900.ttf
@@ -1580,8 +1694,6 @@ $
 |2,0,1717144270,,"grep -g '*.py' --fixed-strings reel"
 :%s/', '//g
 |2,0,1717143953,,"%s/', '//g"
-:grep -g '*.py' --fixed-strings 
-|2,0,1717143570,,"grep -g '*.py' --fixed-strings "
 :verbose command grep
 |2,0,1717140488,,"verbose command grep"
 :grep -g '*.py' --fixed-strings --word-regexp
@@ -1764,8 +1876,6 @@ $
 |2,0,1717041849,,"Rename githuburl.vim"
 :e ~/.vim/plugin/githuburl.py
 |2,0,1717041819,,"e ~/.vim/plugin/githuburl.py"
-:e test.py
-|2,0,1717039659,,"e test.py"
 :422
 |2,0,1717039215,,"422"
 :MRU rel
@@ -1872,8 +1982,6 @@ $
 |2,0,1716857420,,"e data/state.json"
 :MRU e
 |2,0,1716808582,,"MRU e"
-:e __pycache__/
-|2,0,1716806993,,"e __pycache__/"
 :CocL
 |2,0,1716805143,,"CocL"
 :comm
@@ -2962,8 +3070,6 @@ $
 |2,0,1713847066,,"e migrations/240425_0000_portionurls-notnull-user_id.py"
 :Join
 |2,0,1713846969,,"Join"
-: 
-|2,0,1713846691,," "
 :V
 |2,0,1713802925,,"V"
 :e migrations/240424_2151_portionurls-user_id.py
@@ -4832,8 +4938,6 @@ $
 |2,0,1694107182,,"verbose command Profile"
 :Profile
 |2,0,1694107179,,"Profile"
-:au
-|2,0,1694107118,,"au"
 :au BufEnter
 |2,0,1694107113,,"au BufEnter"
 :find actions.html
@@ -5236,8 +5340,6 @@ $
 |2,0,1694032305,,"MRU tool"
 :set ft=html
 |2,0,1694032263,,"set ft=html"
-:JsonPath
-|2,0,1693666981,,"JsonPath"
 :h jsonpath
 |2,0,1693666968,,"h jsonpath"
 :%!python3 -m json.tool
@@ -5354,8 +5456,6 @@ $
 |2,0,1693337361,,"MRU 4:vimrc"
 :asdf
 |2,0,1693330088,,"asdf"
-:map <CR>
-|2,0,1693330079,,"map <CR>"
 :1308 
 |2,0,1693330055,,"1308 "
 :verbose nmap <CR>
@@ -6398,8 +6498,6 @@ $
 |2,0,1691916195,,"MRU 2:fetch.vue"
 :IsInsideNuxtProject
 |2,0,1691914127,,"IsInsideNuxtProject"
-:cd 
-|2,0,1691914065,,"cd "
 :e ~/.nuxt/
 |2,0,1691914027,,"e ~/.nuxt/"
 :e ~/ho
@@ -6642,8 +6740,6 @@ $
 |2,0,1691527202,,"b 1"
 :terminal node %
 |2,0,1691527166,,"terminal node %"
-:Term
-|2,0,1691527150,,"Term"
 :158
 |2,0,1691525304,,"158"
 :!node ytjs.js
@@ -7722,10 +7818,82 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/visual
+|2,1,1721150138,47,"visual"
+?/copy
+|2,1,1721150135,47,"copy"
+?/yank
+|2,1,1721150131,47,"yank"
+??reg_save
+|2,1,1721150030,63,"reg_save"
+?/\(def\|class\)\s\+\w*write
+|2,1,1721145934,47,"\\(def\\|class\\)\\s\\+\\w*write"
+?/\(def\|class\)\s\+\w*pathjoin
+|2,1,1721144984,47,"\\(def\\|class\\)\\s\\+\\w*pathjoin"
+? @$
+|2,1,1721144931,,"@$"
+?/truncated string
+|2,1,1721143031,47,"truncated string"
+?/"restaurants"
+|2,1,1721142447,47,"\"restaurants\""
+?/wok
+|2,1,1721142138,47,"wok"
+?/chin
+|2,1,1721142136,47,"chin"
+?/"restaurant
+|2,1,1721142126,47,"\"restaurant"
+?/restaurants
+|2,1,1721142118,47,"restaurants"
+?/149
+|2,1,1721125992,47,"149"
+?/select items
+|2,1,1721125978,47,"select items"
+?/aggreg
+|2,1,1721124473,47,"aggreg"
+?/chinese wok
+|2,1,1721124471,47,"chinese wok"
+?/"aggregatedDiscountInfo
+|2,1,1721124385,47,"\"aggregatedDiscountInfo"
+?/aggregat
+|2,1,1721124372,47,"aggregat"
+?/kfc
+|2,1,1721124334,47,"kfc"
+?/burger club
+|2,1,1721124329,47,"burger club"
+?/aggre
+|2,1,1721124319,47,"aggre"
+?/pizza hut
+|2,1,1721124316,47,"pizza hut"
+?/OFF
+|2,1,1721124260,47,"OFF"
+?/15
+|2,1,1721123853,47,"15"
+?/"rest
+|2,1,1721123138,47,"\"rest"
+?/'restaurants'
+|2,1,1721122946,47,"'restaurants'"
+?/"resta
+|2,1,1721121903,47,"\"resta"
+?/user-
+|2,1,1721121402,47,"user-"
+?/header
+|2,1,1721121399,47,"header"
+?/jsonpath
+|2,1,1721121258,47,"jsonpath"
+?/sleep
+|2,1,1721120669,47,"sleep"
+?/51
+|2,1,1720875879,47,"51"
+?/^\s*function!\?\s\+\(s:\)\?\(\w\+#\)\?\w*abbrev
+|2,1,1720875766,47,"^\\s*function!\\?\\s\\+\\(s:\\)\\?\\(\\w\\+#\\)\\?\\w*abbrev"
+?/sql
+|2,1,1720873407,47,"sql"
+? complete -c \zsfd
+|2,1,1720867555,,"complete -c \\zsfd"
+?/load_c
+|2,1,1720867141,47,"load_c"
 ?/bat
 |2,1,1720865997,47,"bat"
-? @$
-|2,1,1720865993,,"@$"
 ?/\C\<fd\>
 |2,1,1720845219,47,"\\C\\<fd\\>"
 ?/fd
@@ -9126,8 +9294,6 @@ $
 |2,1,1716111178,47,"2\\.mp4"
 ??Downloading
 |2,1,1716111165,63,"Downloading"
-?/sleep
-|2,1,1716111069,47,"sleep"
 ?/another instance
 |2,1,1716103392,47,"another instance"
 ?/filetype\.vim
@@ -9370,8 +9536,6 @@ $
 |2,1,1714028142,47,"dial"
 ?/sqlite
 |2,1,1714028128,47,"sqlite"
-?/sql
-|2,1,1714028071,47,"sql"
 ?/sqlint
 |2,1,1714028058,47,"sqlint"
 ?/ai
@@ -10304,8 +10468,6 @@ $
 |2,1,1693666898,47,"MUNCH50"
 ?/code-action-selected
 |2,1,1693664795,47,"code-action-selected"
-?/visual
-|2,1,1693664582,47,"visual"
 ?/extract
 |2,1,1693664567,47,"extract"
 ?/Suspense
@@ -11302,6 +11464,8 @@ $
 |2,2,1688309303,,"v:oldfiles"
 
 # Input Line History (newest to oldest):
+@parser
+|2,3,1721142632,,"parser"
 @str
 |2,3,1720527467,,"str"
 @os.expanduser
@@ -11452,44 +11616,46 @@ $
 |2,4,1693311567,,"cont"
 
 # Registers:
-"0	LINE	0
-	#   [5] Rename `bat.bash` to `bat-completion.bash` so that it follows the naming convention of other completion files in this directory
-|3,0,0,1,1,0,1720866750,"#   [5] Rename `bat.bash` to `bat-completion.bash` so that it follows the naming convention of other completion files in this directory"
-""1	LINE	0
-	#!/bin/bash
+""0	CHAR	0
+	e
+|3,1,0,0,1,0,1721150366,"e"
+"1	LINE	0
 	
-	# Arguments:
-	#   1: URL to TAR File
-	#   2: 
-|3,1,1,1,5,0,1720866953,"#!/bin/bash","","# Arguments:","#   1: URL to TAR File","#   2: "
+|3,0,1,1,1,0,1721150330,""
 "2	LINE	0
-	
-|3,0,2,1,1,0,1720865985,""
+	    let reg_save = @"
+|3,0,2,1,1,0,1721150303,"    let reg_save = @\""
 "3	LINE	0
 	
-|3,0,3,1,1,0,1720865898,""
+|3,0,3,1,1,0,1721150295,""
 "4	LINE	0
-	complete -o default -F _find_all_files find-all-files
-|3,0,4,1,1,0,1720865897,"complete -o default -F _find_all_files find-all-files"
+	
+|3,0,4,1,1,0,1721150276,""
 "5	LINE	0
-	
-|3,0,5,1,1,0,1720865505,""
+	    normal! gv"xy
+	    return getreg('x')
+|3,0,5,1,2,0,1721150201,"    normal! gv\"xy","    return getreg('x')"
 "6	LINE	0
-	
-|3,0,6,1,1,0,1720865505,""
+	    let reg_save = getreg('a')
+	    let paste
+|3,0,6,1,2,0,1721150189,"    let reg_save = getreg('a')","    let paste"
 "7	LINE	0
-	
-|3,0,7,1,1,0,1720865494,""
+	    let regtype_save = getregtype()
+|3,0,7,1,1,0,1721150177,"    let regtype_save = getregtype()"
 "8	LINE	0
-	
-|3,0,8,1,1,0,1720865494,""
-"9	LINE	0
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec odio
-	nibh. Donec nec odio nec odio. Nulla facilisi. Nulla facilisi. Nulla
-	facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi.
-	Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla
-	facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi.
-|3,0,9,1,5,0,1720865449,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec odio","nibh. Donec nec odio nec odio. Nulla facilisi. Nulla facilisi. Nulla","facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi.","Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla","facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi. Nulla facilisi."
+	   "   Yanking also changes the `"` register, so we save it and restore it
+|3,0,8,1,1,0,1721150108,"   \"   Yanking also changes the `\"` register, so we save it and restore it"
+"9	CHAR	0
+	    " Yank the visual selection, and return the yanked text
+	    "
+	    " Precautions / Side Effects:
+	    "
+	    "   Yanking changes the `[ and `] marks, so we save them and restore them
+	 
+|3,0,9,0,6,0,1721150107,"    \" Yank the visual selection, and return the yanked text","    \"","    \" Precautions / Side Effects:","    \"","    \"   Yanking changes the `[ and `] marks, so we save them and restore them"," "
+"a	CHAR	0
+	Tabularize /=/l1c1l1
+|3,0,10,0,1,0,1721150297,"Tabularize /=/l1c1l1"
 "j	CHAR	0
 	kc
 |3,0,19,0,1,0,1718434816,"kc"
@@ -11497,309 +11663,1829 @@ $
 	kk
 |3,0,20,0,1,0,1716313503,"kk"
 "l	CHAR	0
-	:q!llk;;;;;gck:w ;c:VD data/main.db€kd€kdq€kd€kdq€kuqq€ý5jk:q!G
-|3,0,21,0,1,0,1713848546,":q!llk;;;;;gck:w ;c:VD data/main.db€kd€kdq€kd€kdq€kuqq€ý5jk:q!G"
+	lll;;;;;;lllllllllllllllllkGlllllkkkkwjjlllllllllllllllllkkkkkkkkkkkkkkkkkkkkkkkkllllllllllllllllllllllkkkkkkkkkkkkkkkkkkkkkklllllllllllllllllllkkkkVd:w l€ýa:wlllll;;;;dq:w
+|3,0,21,0,1,0,1721149251,"lll;;;;;;lllllllllllllllllkGlllllkkkkwjjlllllllllllllllllkkkkkkkkkkkkkkkkkkkkkkkkllllllllllllllllllllllkkkkkkkkkkkkkkkkkkkkkklllllllllllllllllllkkkkVd:w l€ýa:wlllll;;;;dq:w"
 "s	CHAR	0
 	https://rsms.me/inter/
 |3,0,28,0,1,0,1718483440,"https://rsms.me/inter/"
 "-	CHAR	0
-	curl -L "$URL" | tar -xz --strip-components=1 --strip-components=2 "$FOLDER/autocomplete/bat.bash"
-|3,0,36,0,1,0,1720866626,"curl -L \"$URL\" | tar -xz --strip-components=1 --strip-components=2 \"$FOLDER/autocomplete/bat.bash\""
+	e
+|3,0,36,0,1,0,1721150365,"e"
 
 # File marks:
-'0  1  0  ~/.config/bash_completions/_download_bat_completion.bash
-|4,48,1,0,1720866957,"~/.config/bash_completions/_download_bat_completion.bash"
-'1  18  0  ~/.config/bash_completions/_download_bat_completion.bash
-|4,49,18,0,1720866851,"~/.config/bash_completions/_download_bat_completion.bash"
-'2  18  0  ~/.config/bash_completions/_download_bat_completion.bash
-|4,50,18,0,1720866851,"~/.config/bash_completions/_download_bat_completion.bash"
-'3  18  30  ~/.config/bash_completions/_download_bat_completion.bash
-|4,51,18,30,1720866761,"~/.config/bash_completions/_download_bat_completion.bash"
-'4  18  30  ~/.config/bash_completions/_download_bat_completion.bash
-|4,52,18,30,1720866761,"~/.config/bash_completions/_download_bat_completion.bash"
-'5  17  68  ~/.config/bash_completions/_download_bat_completion.bash
-|4,53,17,68,1720866703,"~/.config/bash_completions/_download_bat_completion.bash"
-'6  17  68  ~/.config/bash_completions/_download_bat_completion.bash
-|4,54,17,68,1720866703,"~/.config/bash_completions/_download_bat_completion.bash"
-'7  17  68  ~/.config/bash_completions/_download_bat_completion.bash
-|4,55,17,68,1720866703,"~/.config/bash_completions/_download_bat_completion.bash"
-'8  17  68  ~/.config/bash_completions/_download_bat_completion.bash
-|4,56,17,68,1720866703,"~/.config/bash_completions/_download_bat_completion.bash"
-'9  17  68  ~/.config/bash_completions/_download_bat_completion.bash
-|4,57,17,68,1720866703,"~/.config/bash_completions/_download_bat_completion.bash"
+'0  52  21  ~/.vim/plugin/cool.vim
+|4,48,52,21,1721150411,"~/.vim/plugin/cool.vim"
+'1  50  4  ~/.vim/stdlib.vim
+|4,49,50,4,1721149993,"~/.vim/stdlib.vim"
+'2  34  4  ~/.vim/stdlib.vim
+|4,50,34,4,1721149993,"~/.vim/stdlib.vim"
+'3  1  24  ~/python_common/waivek/todo.txt
+|4,51,1,24,1721149253,"~/python_common/waivek/todo.txt"
+'4  1  24  ~/python_common/waivek/todo.txt
+|4,52,1,24,1721149253,"~/python_common/waivek/todo.txt"
+'5  1  24  ~/python_common/waivek/todo.txt
+|4,53,1,24,1721149253,"~/python_common/waivek/todo.txt"
+'6  1  24  ~/python_common/waivek/todo.txt
+|4,54,1,24,1721149253,"~/python_common/waivek/todo.txt"
+'7  1  0  ~/python_common/waivek/todo.txt
+|4,55,1,0,1721149075,"~/python_common/waivek/todo.txt"
+'8  1  0  ~/python_common/waivek/todo.txt
+|4,56,1,0,1721149075,"~/python_common/waivek/todo.txt"
+'9  1  0  ~/python_common/waivek/todo.txt
+|4,57,1,0,1721149075,"~/python_common/waivek/todo.txt"
 
 # Jumplist (newest first):
--'  1  0  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,1,0,1720866957,"~/.config/bash_completions/_download_bat_completion.bash"
--'  18  0  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,18,0,1720866851,"~/.config/bash_completions/_download_bat_completion.bash"
--'  18  0  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,18,0,1720866851,"~/.config/bash_completions/_download_bat_completion.bash"
--'  18  30  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,18,30,1720866761,"~/.config/bash_completions/_download_bat_completion.bash"
--'  8  0  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,8,0,1720866751,"~/.config/bash_completions/_download_bat_completion.bash"
--'  8  0  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,8,0,1720866751,"~/.config/bash_completions/_download_bat_completion.bash"
--'  8  0  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,8,0,1720866751,"~/.config/bash_completions/_download_bat_completion.bash"
--'  10  0  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,10,0,1720866750,"~/.config/bash_completions/_download_bat_completion.bash"
--'  10  0  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,10,0,1720866750,"~/.config/bash_completions/_download_bat_completion.bash"
--'  10  0  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,10,0,1720866750,"~/.config/bash_completions/_download_bat_completion.bash"
--'  17  0  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,17,0,1720866747,"~/.config/bash_completions/_download_bat_completion.bash"
--'  17  0  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,17,0,1720866747,"~/.config/bash_completions/_download_bat_completion.bash"
--'  17  0  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,17,0,1720866747,"~/.config/bash_completions/_download_bat_completion.bash"
--'  17  68  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,17,68,1720866703,"~/.config/bash_completions/_download_bat_completion.bash"
--'  18  0  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,18,0,1720866656,"~/.config/bash_completions/_download_bat_completion.bash"
--'  18  0  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,18,0,1720866656,"~/.config/bash_completions/_download_bat_completion.bash"
--'  17  0  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,17,0,1720866628,"~/.config/bash_completions/_download_bat_completion.bash"
--'  1  0  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,1,0,1720866580,"~/.config/bash_completions/_download_bat_completion.bash"
--'  1  0  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,1,0,1720866580,"~/.config/bash_completions/_download_bat_completion.bash"
--'  1  0  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,1,0,1720866580,"~/.config/bash_completions/_download_bat_completion.bash"
--'  1  0  ~/.config/bash_completions/_download_bat_completion.bash
-|4,39,1,0,1720866580,"~/.config/bash_completions/_download_bat_completion.bash"
--'  16  0  ~/.config/load_completions.bash
-|4,39,16,0,1720866579,"~/.config/load_completions.bash"
--'  16  0  ~/.config/load_completions.bash
-|4,39,16,0,1720866579,"~/.config/load_completions.bash"
--'  16  0  ~/.config/load_completions.bash
-|4,39,16,0,1720866579,"~/.config/load_completions.bash"
--'  16  0  ~/.config/load_completions.bash
-|4,39,16,0,1720866579,"~/.config/load_completions.bash"
--'  16  0  ~/.config/load_completions.bash
-|4,39,16,0,1720866579,"~/.config/load_completions.bash"
--'  1  0  ~/.config/load_completions.bash
-|4,39,1,0,1720866544,"~/.config/load_completions.bash"
--'  1  0  ~/.config/load_completions.bash
-|4,39,1,0,1720866544,"~/.config/load_completions.bash"
--'  1  0  ~/.config/load_completions.bash
-|4,39,1,0,1720866544,"~/.config/load_completions.bash"
--'  1  0  ~/.config/load_completions.bash
-|4,39,1,0,1720866544,"~/.config/load_completions.bash"
--'  1  0  ~/.config/load_completions.bash
-|4,39,1,0,1720866544,"~/.config/load_completions.bash"
--'  11  0  ~/.config/setup.sh
-|4,39,11,0,1720866522,"~/.config/setup.sh"
--'  11  0  ~/.config/setup.sh
-|4,39,11,0,1720866522,"~/.config/setup.sh"
--'  11  0  ~/.config/setup.sh
-|4,39,11,0,1720866522,"~/.config/setup.sh"
--'  11  0  ~/.config/setup.sh
-|4,39,11,0,1720866522,"~/.config/setup.sh"
--'  11  0  ~/.config/setup.sh
-|4,39,11,0,1720866522,"~/.config/setup.sh"
--'  11  0  ~/.config/setup.sh
-|4,39,11,0,1720866522,"~/.config/setup.sh"
--'  10  14  ~/.config/setup.sh
-|4,39,10,14,1720866429,"~/.config/setup.sh"
--'  10  14  ~/.config/setup.sh
-|4,39,10,14,1720866429,"~/.config/setup.sh"
--'  10  14  ~/.config/setup.sh
-|4,39,10,14,1720866429,"~/.config/setup.sh"
--'  10  14  ~/.config/setup.sh
-|4,39,10,14,1720866429,"~/.config/setup.sh"
--'  10  14  ~/.config/setup.sh
-|4,39,10,14,1720866429,"~/.config/setup.sh"
--'  10  14  ~/.config/setup.sh
-|4,39,10,14,1720866429,"~/.config/setup.sh"
--'  17  0  ~/.config/load_completions.bash
-|4,39,17,0,1720866419,"~/.config/load_completions.bash"
--'  17  0  ~/.config/load_completions.bash
-|4,39,17,0,1720866419,"~/.config/load_completions.bash"
--'  17  0  ~/.config/load_completions.bash
-|4,39,17,0,1720866419,"~/.config/load_completions.bash"
--'  17  0  ~/.config/load_completions.bash
-|4,39,17,0,1720866419,"~/.config/load_completions.bash"
--'  17  0  ~/.config/load_completions.bash
-|4,39,17,0,1720866419,"~/.config/load_completions.bash"
--'  17  0  ~/.config/load_completions.bash
-|4,39,17,0,1720866419,"~/.config/load_completions.bash"
--'  17  0  ~/.config/load_completions.bash
-|4,39,17,0,1720866047,"~/.config/load_completions.bash"
--'  1  0  ~/.config/bash_completions/find-all-files-completion.bash
-|4,39,1,0,1720865984,"~/.config/bash_completions/find-all-files-completion.bash"
--'  12  47  ~/.config/load_completions.bash
-|4,39,12,47,1720865984,"~/.config/load_completions.bash"
--'  1  0  ~/.config/bash_completions/find-all-files-completion.bash
-|4,39,1,0,1720865984,"~/.config/bash_completions/find-all-files-completion.bash"
--'  12  47  ~/.config/load_completions.bash
-|4,39,12,47,1720865984,"~/.config/load_completions.bash"
--'  1  0  ~/.config/bash_completions/find-all-files-completion.bash
-|4,39,1,0,1720865984,"~/.config/bash_completions/find-all-files-completion.bash"
--'  12  47  ~/.config/load_completions.bash
-|4,39,12,47,1720865984,"~/.config/load_completions.bash"
--'  1  0  ~/.config/bash_completions/find-all-files-completion.bash
-|4,39,1,0,1720865984,"~/.config/bash_completions/find-all-files-completion.bash"
--'  12  47  ~/.config/load_completions.bash
-|4,39,12,47,1720865984,"~/.config/load_completions.bash"
--'  1  0  ~/.config/bash_completions/find-all-files-completion.bash
-|4,39,1,0,1720865984,"~/.config/bash_completions/find-all-files-completion.bash"
--'  12  47  ~/.config/load_completions.bash
-|4,39,12,47,1720865984,"~/.config/load_completions.bash"
--'  1  0  ~/.config/bash_completions/find-all-files-completion.bash
-|4,39,1,0,1720865984,"~/.config/bash_completions/find-all-files-completion.bash"
--'  12  47  ~/.config/load_completions.bash
-|4,39,12,47,1720865984,"~/.config/load_completions.bash"
--'  1  0  ~/.config/bash_completions/find-all-files-completion.bash
-|4,39,1,0,1720865984,"~/.config/bash_completions/find-all-files-completion.bash"
--'  12  47  ~/.config/load_completions.bash
-|4,39,12,47,1720865984,"~/.config/load_completions.bash"
--'  1  0  ~/.config/bash_completions/bat-completion.bash
-|4,39,1,0,1720865982,"~/.config/bash_completions/bat-completion.bash"
--'  1  0  ~/.config/bash_completions/bat-completion.bash
-|4,39,1,0,1720865982,"~/.config/bash_completions/bat-completion.bash"
--'  1  0  ~/.config/bash_completions/bat-completion.bash
-|4,39,1,0,1720865982,"~/.config/bash_completions/bat-completion.bash"
--'  1  0  ~/.config/bash_completions/bat-completion.bash
-|4,39,1,0,1720865982,"~/.config/bash_completions/bat-completion.bash"
--'  1  0  ~/.config/bash_completions/bat-completion.bash
-|4,39,1,0,1720865982,"~/.config/bash_completions/bat-completion.bash"
--'  1  0  ~/.config/bash_completions/bat-completion.bash
-|4,39,1,0,1720865982,"~/.config/bash_completions/bat-completion.bash"
--'  1  0  ~/.config/bash_completions/bat-completion.bash
-|4,39,1,0,1720865982,"~/.config/bash_completions/bat-completion.bash"
--'  1  0  ~/.config/load_completions.bash
-|4,39,1,0,1720865924,"~/.config/load_completions.bash"
--'  1  0  ~/.config/load_completions.bash
-|4,39,1,0,1720865924,"~/.config/load_completions.bash"
--'  138  0  ~/.config/bash_completions/find-all-files.bash
-|4,39,138,0,1720865916,"~/.config/bash_completions/find-all-files.bash"
--'  138  0  ~/.config/bash_completions/find-all-files.bash
-|4,39,138,0,1720865916,"~/.config/bash_completions/find-all-files.bash"
--'  138  0  ~/.config/bash_completions/find-all-files.bash
-|4,39,138,0,1720865916,"~/.config/bash_completions/find-all-files.bash"
--'  138  0  ~/.config/bash_completions/find-all-files.bash
-|4,39,138,0,1720865916,"~/.config/bash_completions/find-all-files.bash"
--'  138  0  ~/.config/bash_completions/find-all-files.bash
-|4,39,138,0,1720865916,"~/.config/bash_completions/find-all-files.bash"
--'  138  0  ~/.config/bash_completions/find-all-files.bash
-|4,39,138,0,1720865916,"~/.config/bash_completions/find-all-files.bash"
--'  138  0  ~/.config/bash_completions/find-all-files.bash
-|4,39,138,0,1720865916,"~/.config/bash_completions/find-all-files.bash"
--'  138  0  ~/.config/bash_completions/find-all-files.bash
-|4,39,138,0,1720865916,"~/.config/bash_completions/find-all-files.bash"
--'  1  53  ~/.config/bash_completions/find-all-files.bash
-|4,39,1,53,1720865887,"~/.config/bash_completions/find-all-files.bash"
--'  1  53  ~/.config/bash_completions/find-all-files.bash
-|4,39,1,53,1720865887,"~/.config/bash_completions/find-all-files.bash"
--'  1  53  ~/.config/bash_completions/find-all-files.bash
-|4,39,1,53,1720865887,"~/.config/bash_completions/find-all-files.bash"
--'  1  53  ~/.config/bash_completions/find-all-files.bash
-|4,39,1,53,1720865887,"~/.config/bash_completions/find-all-files.bash"
--'  1  53  ~/.config/bash_completions/find-all-files.bash
-|4,39,1,53,1720865887,"~/.config/bash_completions/find-all-files.bash"
--'  1  53  ~/.config/bash_completions/find-all-files.bash
-|4,39,1,53,1720865887,"~/.config/bash_completions/find-all-files.bash"
--'  1  53  ~/.config/bash_completions/find-all-files.bash
-|4,39,1,53,1720865887,"~/.config/bash_completions/find-all-files.bash"
--'  1  53  ~/.config/bash_completions/find-all-files.bash
-|4,39,1,53,1720865887,"~/.config/bash_completions/find-all-files.bash"
--'  52  8  ~/.config/bash_completions/find-all-files.bash
-|4,39,52,8,1720865809,"~/.config/bash_completions/find-all-files.bash"
--'  52  8  ~/.config/bash_completions/find-all-files.bash
-|4,39,52,8,1720865809,"~/.config/bash_completions/find-all-files.bash"
--'  52  8  ~/.config/bash_completions/find-all-files.bash
-|4,39,52,8,1720865809,"~/.config/bash_completions/find-all-files.bash"
--'  52  8  ~/.config/bash_completions/find-all-files.bash
-|4,39,52,8,1720865809,"~/.config/bash_completions/find-all-files.bash"
--'  52  8  ~/.config/bash_completions/find-all-files.bash
-|4,39,52,8,1720865809,"~/.config/bash_completions/find-all-files.bash"
--'  52  8  ~/.config/bash_completions/find-all-files.bash
-|4,39,52,8,1720865809,"~/.config/bash_completions/find-all-files.bash"
--'  52  8  ~/.config/bash_completions/find-all-files.bash
-|4,39,52,8,1720865809,"~/.config/bash_completions/find-all-files.bash"
--'  52  8  ~/.config/bash_completions/find-all-files.bash
-|4,39,52,8,1720865809,"~/.config/bash_completions/find-all-files.bash"
--'  2  0  ~/.config/bash_completions/find-all-files.bash
-|4,39,2,0,1720865802,"~/.config/bash_completions/find-all-files.bash"
--'  171  37  ~/.config/bash_completions/find-all-files.bash
-|4,39,171,37,1720865802,"~/.config/bash_completions/find-all-files.bash"
--'  2  0  ~/.config/bash_completions/find-all-files.bash
-|4,39,2,0,1720865802,"~/.config/bash_completions/find-all-files.bash"
+-'  52  21  ~/.vim/plugin/cool.vim
+|4,39,52,21,1721150411,"~/.vim/plugin/cool.vim"
+-'  47  104  ~/.vim/plugin/cool.vim
+|4,39,47,104,1721150408,"~/.vim/plugin/cool.vim"
+-'  39  21  ~/.vim/plugin/cool.vim
+|4,39,39,21,1721150408,"~/.vim/plugin/cool.vim"
+-'  38  25  ~/.vim/plugin/cool.vim
+|4,39,38,25,1721150407,"~/.vim/plugin/cool.vim"
+-'  1070  13  ~/.vim/plugin/dotty.vim
+|4,39,1070,13,1721150405,"~/.vim/plugin/dotty.vim"
+-'  1067  8  ~/.vim/plugin/dotty.vim
+|4,39,1067,8,1721150405,"~/.vim/plugin/dotty.vim"
+-'  701  19  ~/.vim/plugin/dotty.vim
+|4,39,701,19,1721150401,"~/.vim/plugin/dotty.vim"
+-'  687  0  ~/.vim/plugin/dotty.vim
+|4,39,687,0,1721150400,"~/.vim/plugin/dotty.vim"
+-'  139  13  ~/.vim/plugin/dotty.vim
+|4,39,139,13,1721150242,"~/.vim/plugin/dotty.vim"
+-'  136  8  ~/.vim/plugin/dotty.vim
+|4,39,136,8,1721150242,"~/.vim/plugin/dotty.vim"
+-'  335  13  ~/.vim/plugin/method-textobj.vim
+|4,39,335,13,1721150241,"~/.vim/plugin/method-textobj.vim"
+-'  328  8  ~/.vim/plugin/method-textobj.vim
+|4,39,328,8,1721150240,"~/.vim/plugin/method-textobj.vim"
+-'  308  13  ~/.vim/plugin/method-textobj.vim
+|4,39,308,13,1721150238,"~/.vim/plugin/method-textobj.vim"
+-'  302  8  ~/.vim/plugin/method-textobj.vim
+|4,39,302,8,1721150237,"~/.vim/plugin/method-textobj.vim"
+-'  87  13  ~/.vim/plugin/goto_method.vim
+|4,39,87,13,1721150234,"~/.vim/plugin/goto_method.vim"
+-'  57  0  ~/.vim/plugin/goto_method.vim
+|4,39,57,0,1721150233,"~/.vim/plugin/goto_method.vim"
+-'  13  21  ~/.vim/plugin/xclip.vim
+|4,39,13,21,1721150227,"~/.vim/plugin/xclip.vim"
+-'  10  8  ~/.vim/plugin/xclip.vim
+|4,39,10,8,1721150227,"~/.vim/plugin/xclip.vim"
+-'  444  13  ~/.vim/plugin/better.vim
+|4,39,444,13,1721150212,"~/.vim/plugin/better.vim"
+-'  440  8  ~/.vim/plugin/better.vim
+|4,39,440,8,1721150211,"~/.vim/plugin/better.vim"
+-'  375  0  ~/.vim/plugin/better.vim
+|4,39,375,0,1721150209,"~/.vim/plugin/better.vim"
+-'  399  13  ~/.vim/plugin/better.vim
+|4,39,399,13,1721150185,"~/.vim/plugin/better.vim"
+-'  389  8  ~/.vim/plugin/better.vim
+|4,39,389,8,1721150093,"~/.vim/plugin/better.vim"
+-'  376  13  ~/.vim/plugin/better.vim
+|4,39,376,13,1721150092,"~/.vim/plugin/better.vim"
+-'  371  8  ~/.vim/plugin/better.vim
+|4,39,371,8,1721150092,"~/.vim/plugin/better.vim"
+-'  191  13  ~/.vim/plugin/better.vim
+|4,39,191,13,1721150090,"~/.vim/plugin/better.vim"
+-'  180  8  ~/.vim/plugin/better.vim
+|4,39,180,8,1721150089,"~/.vim/plugin/better.vim"
+-'  51  13  ~/.vim/plugin/better.vim
+|4,39,51,13,1721150086,"~/.vim/plugin/better.vim"
+-'  46  8  ~/.vim/plugin/better.vim
+|4,39,46,8,1721150084,"~/.vim/plugin/better.vim"
+-'  57  13  ~/.vim/ftplugin/vim.vim
+|4,39,57,13,1721150083,"~/.vim/ftplugin/vim.vim"
+-'  47  8  ~/.vim/ftplugin/vim.vim
+|4,39,47,8,1721150082,"~/.vim/ftplugin/vim.vim"
+-'  20  13  ~/.vim/ftplugin/vim.vim
+|4,39,20,13,1721150082,"~/.vim/ftplugin/vim.vim"
+-'  2  8  ~/.vim/ftplugin/vim.vim
+|4,39,2,8,1721150081,"~/.vim/ftplugin/vim.vim"
+-'  184  13  ~/.vim/ftplugin/python.vim
+|4,39,184,13,1721150079,"~/.vim/ftplugin/python.vim"
+-'  181  8  ~/.vim/ftplugin/python.vim
+|4,39,181,8,1721150079,"~/.vim/ftplugin/python.vim"
+-'  165  8  ~/.vim/ftplugin/python.vim
+|4,39,165,8,1721150078,"~/.vim/ftplugin/python.vim"
+-'  113  13  ~/.vim/ftplugin/python.vim
+|4,39,113,13,1721150078,"~/.vim/ftplugin/python.vim"
+-'  99  8  ~/.vim/ftplugin/python.vim
+|4,39,99,8,1721150077,"~/.vim/ftplugin/python.vim"
+-'  11  15  ~/.vim/ftplugin/python.vim
+|4,39,11,15,1721150076,"~/.vim/ftplugin/python.vim"
+-'  6  10  ~/.vim/ftplugin/python.vim
+|4,39,6,10,1721150075,"~/.vim/ftplugin/python.vim"
+-'  29  13  ~/.vim/ftplugin/javascript.vim
+|4,39,29,13,1721150073,"~/.vim/ftplugin/javascript.vim"
+-'  13  8  ~/.vim/ftplugin/javascript.vim
+|4,39,13,8,1721150072,"~/.vim/ftplugin/javascript.vim"
+-'  10  13  ~/.vim/ftplugin/javascript.vim
+|4,39,10,13,1721150072,"~/.vim/ftplugin/javascript.vim"
+-'  2  8  ~/.vim/ftplugin/javascript.vim
+|4,39,2,8,1721150071,"~/.vim/ftplugin/javascript.vim"
+-'  246  13  ~/.vim/ftplugin/html.vim
+|4,39,246,13,1721150070,"~/.vim/ftplugin/html.vim"
+-'  233  8  ~/.vim/ftplugin/html.vim
+|4,39,233,8,1721150069,"~/.vim/ftplugin/html.vim"
+-'  32  13  ~/.vim/ftplugin/html.vim
+|4,39,32,13,1721150069,"~/.vim/ftplugin/html.vim"
+-'  27  8  ~/.vim/ftplugin/html.vim
+|4,39,27,8,1721150069,"~/.vim/ftplugin/html.vim"
+-'  1142  13  ~/.vim/vimrc
+|4,39,1142,13,1721150065,"~/.vim/vimrc"
+-'  1138  8  ~/.vim/vimrc
+|4,39,1138,8,1721150064,"~/.vim/vimrc"
+-'  846  13  ~/.vim/vimrc
+|4,39,846,13,1721150063,"~/.vim/vimrc"
+-'  843  8  ~/.vim/vimrc
+|4,39,843,8,1721150063,"~/.vim/vimrc"
+-'  605  19  ~/.vim/vimrc
+|4,39,605,19,1721150061,"~/.vim/vimrc"
+-'  594  14  ~/.vim/vimrc
+|4,39,594,14,1721150052,"~/.vim/vimrc"
+-'  480  13  ~/.vim/vimrc
+|4,39,480,13,1721150051,"~/.vim/vimrc"
+-'  483  8  ~/.vim/vimrc
+|4,39,483,8,1721150051,"~/.vim/vimrc"
+-'  378  32  ~/.vim/vimrc
+|4,39,378,32,1721150034,"~/.vim/vimrc"
+-'  375  19  ~/.vim/vimrc
+|4,39,375,19,1721150034,"~/.vim/vimrc"
+-'  373  6  ~/.vim/vimrc
+|4,39,373,6,1721150033,"~/.vim/vimrc"
+-'  50  4  ~/.vim/stdlib.vim
+|4,39,50,4,1721149993,"~/.vim/stdlib.vim"
+-'  34  4  ~/.vim/stdlib.vim
+|4,39,34,4,1721149993,"~/.vim/stdlib.vim"
+-'  6  0  ~/.vim/stdlib.vim
+|4,39,6,0,1721149904,"~/.vim/stdlib.vim"
+-'  6  0  ~/.vim/stdlib.vim
+|4,39,6,0,1721149904,"~/.vim/stdlib.vim"
+-'  43  0  ~/.vim/ftplugin/todo.vim
+|4,39,43,0,1721149902,"~/.vim/ftplugin/todo.vim"
+-'  43  0  ~/.vim/ftplugin/todo.vim
+|4,39,43,0,1721149902,"~/.vim/ftplugin/todo.vim"
+-'  44  4  ~/.vim/ftplugin/todo.vim
+|4,39,44,4,1721149901,"~/.vim/ftplugin/todo.vim"
+-'  44  4  ~/.vim/ftplugin/todo.vim
+|4,39,44,4,1721149901,"~/.vim/ftplugin/todo.vim"
+-'  1  0  ~/.vim/stdlib.vim
+|4,39,1,0,1721149897,"~/.vim/stdlib.vim"
+-'  1  0  ~/.vim/stdlib.vim
+|4,39,1,0,1721149897,"~/.vim/stdlib.vim"
+-'  48  4  ~/.vim/ftplugin/todo.vim
+|4,39,48,4,1721149896,"~/.vim/ftplugin/todo.vim"
+-'  48  4  ~/.vim/ftplugin/todo.vim
+|4,39,48,4,1721149896,"~/.vim/ftplugin/todo.vim"
+-'  2  34  ~/python_common/waivek/todo.txt
+|4,39,2,34,1721149879,"~/python_common/waivek/todo.txt"
+-'  2  34  ~/python_common/waivek/todo.txt
+|4,39,2,34,1721149879,"~/python_common/waivek/todo.txt"
+-'  76  16  ~/.vim/ftplugin/todo.vim
+|4,39,76,16,1721149869,"~/.vim/ftplugin/todo.vim"
+-'  1  0  ~/python_common/waivek/todo.txt
+|4,39,1,0,1721149869,"~/python_common/waivek/todo.txt"
+-'  76  16  ~/.vim/ftplugin/todo.vim
+|4,39,76,16,1721149869,"~/.vim/ftplugin/todo.vim"
+-'  1  0  ~/python_common/waivek/todo.txt
+|4,39,1,0,1721149869,"~/python_common/waivek/todo.txt"
+-'  77  16  ~/.vim/ftplugin/todo.vim
+|4,39,77,16,1721149849,"~/.vim/ftplugin/todo.vim"
+-'  77  16  ~/.vim/ftplugin/todo.vim
+|4,39,77,16,1721149849,"~/.vim/ftplugin/todo.vim"
+-'  78  20  ~/.vim/ftplugin/todo.vim
+|4,39,78,20,1721149836,"~/.vim/ftplugin/todo.vim"
+-'  78  20  ~/.vim/ftplugin/todo.vim
+|4,39,78,20,1721149836,"~/.vim/ftplugin/todo.vim"
+-'  73  8  ~/.vim/ftplugin/todo.vim
+|4,39,73,8,1721149798,"~/.vim/ftplugin/todo.vim"
+-'  73  8  ~/.vim/ftplugin/todo.vim
+|4,39,73,8,1721149798,"~/.vim/ftplugin/todo.vim"
+-'  66  0  ~/.vim/ftplugin/todo.vim
+|4,39,66,0,1721149754,"~/.vim/ftplugin/todo.vim"
+-'  66  0  ~/.vim/ftplugin/todo.vim
+|4,39,66,0,1721149754,"~/.vim/ftplugin/todo.vim"
+-'  67  4  ~/.vim/ftplugin/todo.vim
+|4,39,67,4,1721149664,"~/.vim/ftplugin/todo.vim"
+-'  67  4  ~/.vim/ftplugin/todo.vim
+|4,39,67,4,1721149664,"~/.vim/ftplugin/todo.vim"
+-'  70  0  ~/.vim/ftplugin/todo.vim
+|4,39,70,0,1721149598,"~/.vim/ftplugin/todo.vim"
+-'  70  0  ~/.vim/ftplugin/todo.vim
+|4,39,70,0,1721149598,"~/.vim/ftplugin/todo.vim"
+-'  71  8  ~/.vim/ftplugin/todo.vim
+|4,39,71,8,1721149596,"~/.vim/ftplugin/todo.vim"
+-'  71  8  ~/.vim/ftplugin/todo.vim
+|4,39,71,8,1721149596,"~/.vim/ftplugin/todo.vim"
+-'  74  0  ~/.vim/ftplugin/todo.vim
+|4,39,74,0,1721149583,"~/.vim/ftplugin/todo.vim"
+-'  74  0  ~/.vim/ftplugin/todo.vim
+|4,39,74,0,1721149583,"~/.vim/ftplugin/todo.vim"
+-'  83  8  ~/.vim/ftplugin/todo.vim
+|4,39,83,8,1721149476,"~/.vim/ftplugin/todo.vim"
+-'  83  8  ~/.vim/ftplugin/todo.vim
+|4,39,83,8,1721149476,"~/.vim/ftplugin/todo.vim"
+-'  72  63  ~/.vim/ftplugin/todo.vim
+|4,39,72,63,1721149459,"~/.vim/ftplugin/todo.vim"
+-'  72  63  ~/.vim/ftplugin/todo.vim
+|4,39,72,63,1721149459,"~/.vim/ftplugin/todo.vim"
+-'  69  4  ~/.vim/ftplugin/todo.vim
+|4,39,69,4,1721149414,"~/.vim/ftplugin/todo.vim"
+-'  69  4  ~/.vim/ftplugin/todo.vim
+|4,39,69,4,1721149414,"~/.vim/ftplugin/todo.vim"
 
 # Buffer list:
-%~/.config/bash_completions/_download_bat_completion.bash	1	0
+%~/.vim/plugin/better.vim	444	13
+%~/.vim/plugin/xclip.vim	13	21
+%~/.vim/plugin/goto_method.vim	87	13
+%~/.vim/plugin/method-textobj.vim	335	13
+%~/.vim/plugin/dotty.vim	1070	13
+%~/.vim/plugin/cool.vim	52	21
 
 # History of marks within files (newest to oldest):
 
-> ~/.config/bash_completions/_download_bat_completion.bash
-	*	1720866955	0
-	"	1	0
-	^	18	31
-	.	18	30
-	+	12	0
-	+	12	74
-	+	13	0
-	+	13	124
-	+	17	49
-	+	17	0
-	+	17	8
-	+	1	10
-	+	17	46
-	+	17	0
-	+	13	0
-	+	16	27
-	+	17	47
-	+	17	0
-	+	17	46
-	+	14	53
-	+	17	0
-	+	16	9
-	+	14	108
-	+	16	0
-	+	17	126
-	+	17	0
-	+	16	11
-	+	15	6
-	+	17	74
-	+	10	0
-	+	6	77
-	+	10	0
-	+	8	73
-	+	7	76
-	+	12	0
-	+	13	0
-	+	16	0
-	+	17	0
-	+	12	0
-	+	4	1
-	+	10	0
-	+	17	0
-	+	11	39
-	+	8	87
-	+	17	96
-	+	17	146
-	+	17	0
-	+	9	0
-	+	18	30
+> ~/.vim/plugin/cool.vim
+	*	1721150408	0
+	"	52	21
 
-> ~/.config/bash_completions/_tar_url_to_file.bash
-	*	1720866953	0
+> ~/.vim/plugin/dotty.vim
+	*	1721150405	0
+	"	1070	13
+
+> ~/.vim/stdlib.vim
+	*	1721150392	0
+	"	50	10
+	^	46	19
+	.	46	18
+	+	2	0
+	+	25	0
+	+	50	4
+	+	50	10
+	+	50	77
+	+	50	75
+	+	50	20
+	+	50	71
+	+	50	20
+	+	50	0
+	+	38	30
+	+	49	0
+	+	47	0
+	+	38	27
+	+	38	35
+	+	38	0
+	+	28	0
+	+	37	0
+	+	36	0
+	+	38	0
+	+	50	0
+	+	48	21
+	+	37	10
+	+	31	0
+	+	33	0
+	+	28	8
+	+	39	0
+	+	44	0
+	+	42	40
+	+	43	37
+	+	33	0
+	+	34	0
+	+	28	0
+	+	30	0
+	+	28	5
+	+	31	41
+	+	32	40
+	+	38	0
+	+	29	10
+	+	35	9
+	+	40	12
+	+	46	12
+	+	35	9
+	+	29	17
+	+	40	20
+	+	35	15
+	+	46	18
+
+> ~/.vim/plugin/method-textobj.vim
+	*	1721150241	0
+	"	335	13
+
+> ~/.vim/plugin/goto_method.vim
+	*	1721150234	0
+	"	87	13
+	^	40	47
+	.	40	46
+	+	38	59
+	+	39	0
+	+	38	0
+	+	39	64
+	+	40	0
+	+	39	0
+	+	40	0
+	+	41	0
+	+	40	0
+	+	41	0
+	+	40	46
+
+> ~/.vim/plugin/xclip.vim
+	*	1721150227	0
+	"	13	21
+	.	18	0
+	+	25	0
+	+	24	0
+	+	25	0
+	+	14	0
+	+	16	28
+	+	16	27
+	+	25	29
+	+	7	25
+	+	7	0
+	+	26	0
+	+	8	11
+	+	25	39
+	+	16	0
+	+	7	41
+	+	7	25
+	+	7	0
+	+	16	24
+	+	7	0
+	+	16	27
+	+	7	33
+	+	7	0
+	+	16	46
+	+	16	0
+	+	14	0
+	+	16	39
+	+	14	0
+	+	16	0
+	+	14	39
+	+	14	0
+	+	16	0
+	+	16	28
+	+	16	27
+	+	16	0
+	+	22	0
+	+	14	25
+	+	14	0
+	+	22	0
+	+	16	37
+	+	17	23
+	+	17	34
+	+	16	0
+	+	17	0
+	+	14	3
+	+	20	87
+	+	20	0
+	+	14	0
+	+	1	0
+	+	22	0
+	+	11	0
+	+	9	0
+	+	21	0
+	+	5	0
+	+	18	17
+	+	19	16
+	+	18	17
+	+	19	22
+	+	19	30
+	+	19	54
+	+	14	0
+	+	19	34
+	+	21	0
+	+	19	0
+	+	18	0
+
+> ~/.vim/plugin/better.vim
+	*	1721150212	0
+	"	444	13
+
+> /usr/share/vim/vim90/doc/builtin.txt
+	*	1721150166	0
+	"	4041	42
+
+> ~/.vim/ftplugin/vim.vim
+	*	1721150083	0
+	"	57	13
+
+> ~/.vim/ftplugin/python.vim
+	*	1721150079	0
+	"	184	13
+	^	438	38
+	.	438	36
+	+	438	36
+
+> ~/.vim/ftplugin/javascript.vim
+	*	1721150073	0
+	"	29	13
+
+> ~/.vim/ftplugin/html.vim
+	*	1721150070	0
+	"	246	13
+	^	22	5
+	.	22	0
+	+	19	0
+	+	18	6
+	+	19	0
+	+	18	19
+	+	19	0
+	+	20	4
+	+	21	16
+	+	22	0
+
+> ~/.vim/vimrc
+	*	1721150065	0
+	"	1142	13
+	^	1119	10
+	.	1119	9
+	+	1329	32
+	+	1329	0
+	+	1329	10
+	+	1329	0
+	+	1329	25
+	+	1329	10
+	+	1329	0
+	+	1329	60
+	+	1329	0
+	+	1329	55
+	+	1329	0
+	+	1329	44
+	+	1329	0
+	+	1329	19
+	+	1329	71
+	+	1329	0
+	+	1329	23
+	+	1329	41
+	+	1329	44
+	+	1329	40
+	+	1329	28
+	+	1329	0
+	+	1329	11
+	+	1329	18
+	+	1329	43
+	+	1329	64
+	+	1329	54
+	+	1329	0
+	+	1329	31
+	+	1329	0
+	+	1329	6
+	+	1329	0
+	+	1329	1
+	+	1329	0
+	+	1329	80
+	+	1329	75
+	+	1329	0
+	+	1329	52
+	+	1329	41
+	+	163	0
+	+	49	26
+	+	1329	0
+	+	48	0
+	+	47	22
+	+	46	25
+	+	67	0
+	+	1110	57
+	+	1115	59
+	+	1121	55
+	+	244	0
+	+	243	0
+	+	244	25
+	+	1322	1
+	+	1323	0
+	+	1325	24
+	+	1326	24
+	+	1327	24
+	+	1328	0
+	+	1307	12
+	+	1308	0
+	+	1309	0
+	+	1310	0
+	+	1330	49
+	+	1327	0
+	+	1329	13
+	+	1330	13
+	+	1327	0
+	+	1329	16
+	+	1330	16
+	+	1329	0
+	+	1331	0
+	+	1329	0
+	+	1331	0
+	+	81	0
+	+	767	0
+	+	60	0
+	+	43	0
+	+	43	25
+	+	61	3
+	+	43	5
+	+	61	16
+	+	61	0
+	+	62	0
+	+	87	16
+	+	87	0
+	+	88	0
+	+	43	5
+	+	61	3
+	+	87	0
+	+	88	0
+	+	61	0
+	+	62	0
+	+	43	0
+	+	1113	4
+	+	1115	0
+	+	1114	40
+	+	1117	36
+	+	1120	0
+	+	1118	26
+	+	1119	9
+
+> ~/.vim/ftplugin/todo.vim
+	*	1721149902	0
+	"	43	0
+	.	78	0
+	+	13	33
+	+	13	0
+	+	67	1
+	+	13	0
+	+	13	33
+	+	13	0
+	+	3	0
+	+	1	0
+	+	67	0
+	+	91	0
+	+	68	0
+	+	89	42
+	+	83	52
+	+	83	0
+	+	70	28
+	+	74	48
+	+	83	0
+	+	74	0
+	+	83	38
+	+	83	0
+	+	83	51
+	+	83	56
+	+	83	75
+	+	83	0
+	+	1	0
+	+	7	3
+	+	8	0
+	+	7	17
+	+	8	0
+	+	12	0
+	+	83	16
+	+	83	0
+	+	68	0
+	+	68	11
+	+	89	49
+	+	74	24
+	+	83	0
+	+	70	0
+	+	74	0
+	+	83	30
+	+	83	33
+	+	83	0
+	+	70	0
+	+	74	0
+	+	83	0
+	+	83	32
+	+	83	0
+	+	69	6
+	+	68	0
+	+	91	0
+	+	69	0
+	+	91	0
+	+	69	0
+	+	89	13
+	+	89	0
+	+	68	0
+	+	89	0
+	+	69	4
+	+	69	0
+	+	91	0
+	+	74	0
+	+	40	0
+	+	39	0
+	+	91	0
+	+	89	22
+	+	69	0
+	+	67	4
+	+	67	10
+	+	72	63
+	+	75	14
+	+	82	17
+	+	83	0
+	+	78	51
+	+	73	46
+	+	67	0
+	+	67	22
+	+	67	44
+	+	67	4
+	+	67	12
+	+	67	19
+	+	83	0
+	+	67	5
+	+	67	20
+	+	67	5
+	+	67	57
+	+	67	0
+	+	65	11
+	+	83	0
+	+	76	41
+	+	73	0
+	+	77	0
+	+	78	0
+
+> ~/python_common/waivek/todo.txt
+	*	1721149878	0
+	"	2	34
+	^	2	60
+	.	2	0
+	+	1	121
+	+	1	0
+	+	3	0
+	+	2	17
+	+	2	0
+	+	1	0
+	+	3	0
+	+	2	0
+
+> ~/python_common/waivek/colored-output-example.txt
+	*	1721149055	0
+	"	13	0
+
+> ~/.config/direnv/direnv.toml
+	*	1721148854	0
+	"	10	50
+	^	10	51
+	.	10	50
+	+	3	85
+	+	3	11
+	+	4	27
+	+	5	31
+	+	6	11
+	+	5	0
+	+	11	0
+	+	6	51
+	+	5	40
+	+	4	45
+	+	11	0
+	+	6	27
+	+	6	0
+	+	1	55
+	+	6	27
+	+	5	28
+	+	4	28
+	+	8	34
+	+	7	32
+	+	11	0
+	+	10	50
+
+> ~/python_common/.envrc
+	*	1721148823	0
 	"	1	0
+	^	4	20
+	.	4	7
+	+	1	14
+	+	2	31
+	+	3	225
+	+	4	7
+
+> ~/tooling/python-error-traceback-prettify-libs.txt
+	*	1721147912	0
+	"	12	0
+	^	12	45
+	.	12	0
+	+	2	41
+	+	12	45
+	+	2	0
+	+	1	44
+	+	12	0
+
+> ~/scrape-food-delivery/error.py
+	*	1721147663	0
+	"	11	4
+	^	11	14
+	.	11	13
+	+	1	0
+	+	8	10
+	+	11	13
+
+> /usr/lib/python3.10/json/__init__.py
+	*	1721147617	0
+	"	299	4
+
+> ~/scrape-food-delivery/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/reltools.py
+	*	1721147612	0
+	"	92	4
+
+> ~/subset-material-symbols/colored-output-exmaple.txt
+	*	1721147124	0
+	"	1	0
+
+> ~/subset-material-symbols/.gitignore
+	*	1721146788	0
+	"	17	4
+	^	17	5
+	.	17	4
+	+	16	0
+	+	1	0
+	+	17	4
+
+> ~/subset-material-symbols/.envrc
+	*	1721146670	0
+	"	1	13
+	^	1	14
+	.	1	13
+	+	1	13
+
+> ~/scrape-food-delivery/printutils.py
+	*	1721146559	0
+	"	56	17
+	^	84	19
+	.	84	18
+	+	1	0
+	+	74	0
+	+	9	19
+	+	10	31
+	+	74	4
+	+	10	23
+	+	11	20
+	+	12	18
+	+	13	20
+	+	14	21
+	+	15	19
+	+	16	22
+	+	17	19
+	+	18	20
+	+	27	9
+	+	72	0
+	+	28	30
+	+	29	36
+	+	30	32
+	+	31	48
+	+	32	9
+	+	33	47
+	+	72	0
+	+	35	19
+	+	36	4
+	+	87	55
+	+	45	27
+	+	46	25
+	+	47	27
+	+	48	28
+	+	49	26
+	+	50	29
+	+	51	26
+	+	52	27
+	+	53	0
+	+	52	26
+	+	19	26
+	+	20	24
+	+	21	26
+	+	22	27
+	+	23	25
+	+	24	28
+	+	25	25
+	+	26	25
+	+	27	0
+	+	82	20
+	+	74	14
+	+	62	34
+	+	64	55
+	+	87	39
+	+	82	21
+	+	87	67
+	+	68	52
+	+	82	19
+	+	69	43
+	+	71	2
+	+	71	1
+	+	70	0
+	+	71	0
+	+	70	37
+	+	82	0
+	+	74	16
+	+	83	23
+	+	87	0
+	+	85	17
+	+	82	0
+	+	75	0
+	+	82	0
+	+	81	22
+	+	88	0
+	+	85	10
+	+	86	29
+	+	87	33
+	+	88	33
+	+	62	43
+	+	63	15
+	+	64	0
+	+	65	9
+	+	66	66
+	+	87	53
+	+	88	53
+	+	84	18
+
+> ~/scrape-food-delivery/read2.py
+	*	1721146098	0
+	"	79	0
+	^	78	15
+	.	74	4
+	+	58	0
+	+	3	10
+	+	27	34
+	+	28	50
+	+	58	0
+	+	58	34
+	+	58	0
+	+	4	10
+	+	58	0
+	+	26	38
+	+	28	8
+	+	33	8
+	+	33	37
+	+	33	65
+	+	33	14
+	+	42	0
+	+	43	13
+	+	58	0
+	+	49	32
+	+	49	63
+	+	49	34
+	+	49	50
+	+	49	30
+	+	49	51
+	+	49	16
+	+	51	15
+	+	11	35
+	+	12	4
+	+	15	31
+	+	16	4
+	+	24	46
+	+	24	4
+	+	24	18
+	+	24	4
+	+	24	0
+	+	26	33
+	+	27	29
+	+	28	44
+	+	27	0
+	+	24	0
+	+	49	33
+	+	49	29
+	+	53	33
+	+	54	29
+	+	26	0
+	+	24	0
+	+	6	0
+	+	10	0
+	+	6	0
+	+	58	0
+	+	29	0
+	+	49	31
+	+	49	58
+	+	55	31
+	+	56	41
+	+	57	0
+	+	35	46
+	+	35	4
+	+	35	13
+	+	35	19
+	+	42	0
+	+	35	20
+	+	37	4
+	+	42	0
+	+	47	26
+	+	47	34
+	+	47	30
+	+	47	14
+	+	48	0
+	+	47	0
+	+	45	0
+	+	36	0
+	+	35	20
+	+	48	38
+	+	58	0
+	+	36	84
+	+	7	0
+	+	25	0
+	+	44	0
+	+	52	0
+	+	5	9
+	+	24	100
+	+	24	0
+	+	59	9
+	+	79	0
+	+	19	108
+	+	20	40
+	+	21	4
+	+	23	0
+	+	61	38
+	+	62	4
+	+	65	0
+	+	64	14
+	+	66	31
+	+	67	4
+	+	73	33
+	+	74	4
+
+> ~/scrape-food-delivery/view_swiggy_payload.py
+	*	1721146096	0
+	"	67	4
+	^	67	22
+	.	67	21
+	+	94	0
+	+	96	31
+	+	94	0
+	+	93	124
+	+	74	0
+	+	72	0
+	+	98	56
+	+	88	30
+	+	107	10
+	+	89	0
+	+	84	0
+	+	78	0
+	+	74	0
+	+	84	0
+	+	78	0
+	+	74	0
+	+	73	0
+	+	74	0
+	+	73	0
+	+	83	0
+	+	77	0
+	+	78	0
+	+	77	0
+	+	81	0
+	+	84	0
+	+	87	0
+	+	85	102
+	+	87	30
+	+	86	5
+	+	12	15
+	+	26	122
+	+	12	0
+	+	107	10
+	+	27	30
+	+	89	0
+	+	102	0
+	+	108	7
+	+	15	0
+	+	18	0
+	+	70	0
+	+	28	26
+	+	29	38
+	+	32	0
+	+	31	22
+	+	30	0
+	+	44	5
+	+	65	0
+	+	43	23
+	+	48	99
+	+	65	0
+	+	48	21
+	+	48	20
+	+	49	8
+	+	48	24
+	+	50	109
+	+	51	23
+	+	53	49
+	+	65	21
+	+	65	0
+	+	69	0
+	+	7	29
+	+	67	4
+	+	107	16
+	+	58	9
+	+	59	40
+	+	54	0
+	+	58	0
+	+	65	0
+	+	59	41
+	+	65	0
+	+	55	13
+	+	60	37
+	+	62	59
+	+	64	25
+	+	60	34
+	+	61	58
+	+	62	75
+	+	61	72
+	+	65	0
+	+	106	0
+	+	107	0
+	+	45	66
+	+	48	0
+	+	48	27
+	+	48	55
+	+	48	12
+	+	47	23
+	+	56	6
+	+	57	60
+	+	63	0
+	+	62	104
+	+	34	33
+	+	41	0
+	+	35	0
+	+	40	21
+	+	47	49
+	+	50	30
+	+	29	21
+	+	67	21
+
+> ~/scrape-food-delivery/parsejson.py
+	*	1721144943	0
+	"	14	21
+	^	14	22
+	.	14	21
+	+	7	29
+	+	14	32
+	+	16	9
+	+	14	10
+	+	16	14
+	+	14	17
+	+	9	38
+	+	16	42
+	+	17	38
+	+	41	4
+	+	16	40
+	+	41	0
+	+	41	17
+	+	16	88
+	+	41	0
+	+	16	42
+	+	17	4
+	+	41	25
+	+	41	22
+	+	16	43
+	+	41	0
+	+	17	19
+	+	16	41
+	+	17	25
+	+	41	0
+	+	17	0
+	+	41	8
+	+	41	0
+	+	41	8
+	+	41	0
+	+	41	21
+	+	41	13
+	+	10	10
+	+	41	44
+	+	41	0
+	+	15	0
+	+	41	0
+	+	44	0
+	+	41	0
+	+	19	13
+	+	25	26
+	+	24	12
+	+	24	0
+	+	26	18
+	+	24	0
+	+	41	0
+	+	26	22
+	+	26	19
+	+	26	26
+	+	26	19
+	+	26	0
+	+	33	28
+	+	41	16
+	+	40	0
+	+	34	29
+	+	40	0
+	+	40	22
+	+	41	0
+	+	40	27
+	+	41	8
+	+	21	0
+	+	35	39
+	+	11	30
+	+	40	0
+	+	20	18
+	+	39	27
+	+	41	13
+	+	40	0
+	+	33	46
+	+	33	44
+	+	27	14
+	+	30	49
+	+	31	76
+	+	28	62
+	+	31	62
+	+	28	65
+	+	31	65
+	+	30	15
+	+	33	0
+	+	29	15
+	+	33	0
+	+	32	15
+	+	30	41
+	+	27	39
+	+	40	0
+	+	39	0
+	+	41	19
+	+	41	21
+	+	41	0
+	+	40	0
+	+	39	0
+	+	33	0
+	+	37	19
+	+	38	27
+	+	38	0
+	+	36	23
+	+	14	21
+	a	27	39
+	b	27	39
+
+> ~/scrape-food-delivery/curl_payload.py
+	*	1721144932	0
+	"	1	0
+	^	48	394
+	.	48	393
+	+	1	0
+	+	30	4
+	+	8	8
+	+	14	0
+	+	30	3
+	+	50	25
+	+	8	16
+	+	51	17
+	+	52	4
+	+	56	16
+	+	9	43
+	+	56	4
+	+	59	31
+	+	58	16
+	+	60	24
+	+	49	6
+	+	48	630
+	+	32	0
+	+	33	0
+	+	12	0
+	+	48	0
+	+	48	393
+
+> ~/scrape-food-delivery/error.json
+	*	1721144786	0
+	"	1	0
+	.	29	0
+	+	29	0
+
+> ~/scrape-food-delivery/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/common.py
+	*	1721143079	0
+	"	301	8
+	^	301	20
+	.	301	19
+	+	301	19
+
+> ~/scrape-food-delivery/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/error.py
+	*	1721143073	0
+	"	88	8
+
+> ~/scrape-food-delivery/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/ic.py
+	*	1721143044	0
+	"	342	0
+
+> ~/scrape-food-delivery/payload_sample.json
+	*	1721142447	0
+	"	871	32
+
+> ~/scrape-food-delivery/requirements.txt
+	*	1721142032	0
+	"	6	10
+	^	6	11
+	.	6	10
+	+	5	7
+	+	6	10
+
+> ~/scrape-food-delivery/.envrc
+	*	1721126141	0
+	"	1	0
+
+> ~/scrape-food-delivery/.gitignore
+	*	1721126099	0
+	"	16	0
 	.	1	0
-	+	1	12
-	+	1	6
-	+	1	10
+	+	16	0
 	+	1	0
-	+	1	21
+
+> ~/scrape-food-delivery/chinese-wok-patel-nagar-kirti-nagar-metro-rest655882.html
+	*	1721126002	0
+	"	1	0
+	.	361	0
+	+	361	0
+
+> ~/scrape-food-delivery/scrape_food_delivery.py
+	*	1721124208	0
+	"	77	13
+	^	65	46
+	.	65	45
+	+	56	13
+	+	72	0
+	+	72	8
+	+	9	43
+	+	58	0
+	+	70	0
+	+	56	0
+	+	72	4
+	+	56	0
+	+	56	59
+	+	56	0
+	+	56	144
+	+	56	0
+	+	56	16
+	+	56	24
+	+	56	37
+	+	56	25
+	+	10	14
+	+	8	29
+	+	56	0
+	+	56	22
+	+	61	10
+	+	56	0
+	+	56	14
+	+	70	0
+	+	73	16
+	+	61	16
+	+	63	15
+	+	56	26
+	+	56	38
+	+	56	0
+	+	70	0
+	+	31	41
+	+	32	0
+	+	61	36
+	+	63	0
+	+	56	124
+	+	56	0
+	+	34	0
+	+	63	4
+	+	63	0
+	+	62	7
+	+	63	0
+	+	66	25
+	+	67	31
+	+	68	18
+	+	52	31
+	+	53	26
+	+	54	14
+	+	68	0
+	+	69	25
+	+	34	59
+	+	34	15
+	+	35	28
+	+	35	41
+	+	35	88
+	+	34	59
+	+	34	0
+	+	34	144
+	+	35	0
+	+	34	0
+	+	35	88
+	+	35	29
+	+	35	42
+	+	35	88
+	+	49	0
+	+	33	0
+	+	49	0
+	+	39	0
+	+	38	0
+	+	48	5
+	+	41	0
+	+	45	79
+	+	31	60
+	+	35	0
+	+	45	97
+	+	31	60
+	+	56	0
+	+	31	23
+	+	61	30
+	+	9	64
+	+	32	0
+	+	66	47
+	+	66	0
+	+	63	0
+	+	66	0
+	+	60	21
+	+	61	0
+	+	62	0
+	+	66	0
+	+	61	43
+	+	59	13
+	+	61	50
+	+	62	0
+	+	64	51
+	+	65	45
+
+> ~/foo/swiggy_scraper-restaurant_data/Swiggy_Scraper.py
+	*	1721120938	0
+	"	76	12
+	^	58	33
+	.	77	0
+	+	91	16
+	+	69	0
+	+	71	44
+	+	72	23
+	+	77	42
+	+	91	15
+	+	74	41
+	+	76	19
+	+	77	23
+	+	76	24
+	+	57	28
+	+	56	0
+	+	37	18
+	+	38	54
+	+	39	17
+	+	57	56
+	+	58	32
+	+	77	0
+
+> ~/foo/swiggy_scraper-restaurant_data/requirements.txt
+	*	1721120622	0
+	"	2	7
+	^	2	8
+	.	2	7
+	+	2	7
+
+> ~/foo/swiggy_scraper-restaurant_data/.envrc
+	*	1721120592	0
+	"	1	13
+	^	1	14
+	.	1	13
+	+	1	13
+
+> ~/hateoas/tasks_test.sql
+	*	1720878439	0
+	"	12	0
+	.	13	0
+	+	8	43
+	+	3	27
+	+	4	42
+	+	5	66
+	+	9	21
+	+	3	17
+	+	8	27
+	+	5	69
+	+	4	41
+	+	13	0
+
+> ~/hateoas/templates/base.html
+	*	1720876743	0
+	"	9	86
+	^	10	8
+	.	9	86
+	+	28	0
+	+	24	0
+	+	4	50
+	+	12	78
+	+	24	0
+	+	24	8
+	+	4	0
+	+	24	0
+	+	27	0
+	+	28	0
+	+	26	20
+	+	27	0
+	+	26	12
+	+	26	0
+	+	26	55
+	+	26	67
+	+	26	0
+	+	14	9
+	+	12	11
+	+	12	0
+	+	14	0
+	+	12	0
+	+	12	96
+	+	12	0
+	+	4	0
+	+	12	8
+	+	12	97
+	+	12	0
+	+	6	0
+	+	12	0
+	+	5	0
+	+	25	0
+	+	12	0
+	+	25	7
+	+	25	0
+	+	25	26
+	+	25	16
+	+	25	0
+	+	12	0
+	+	14	0
+	+	25	0
+	+	15	0
+	+	16	0
+	+	5	37
+	+	5	53
+	+	6	37
+	+	11	0
+	+	7	0
+	+	11	0
+	+	8	68
+	+	11	0
+	+	9	68
+	+	10	8
+	+	6	0
+	+	8	86
+	+	9	86
+
+> ~/hateoas/ui-components-css/static/css-utilities/wide-tall.css
+	*	1720875948	0
+	"	1	0
+
+> ~/hateoas/ui-components-css/.direnv/python-3.10.12/lib/python3.10/site-packages/pip/_vendor/chardet/big5freq.py
+	*	1720875859	0
+	"	144	55
+
+> ~/hateoas/ui-components-css/.direnv/python-3.10.12/lib/python3.10/site-packages/pip/_vendor/chardet/jisfreq.py
+	*	1720875859	0
+	"	62	40
+
+> ~/hateoas/ui-components-css/templates/html-elements.html
+	*	1720875857	0
+	"	5	46
+
+> ~/hateoas/.direnv/python-3.10.12/lib/python3.10/site-packages/botocore/data/rekognition/2016-06-27/examples-1.json
+	*	1720875856	0
+	"	514	39
+
+> ~/hateoas/.direnv/python-3.10.12/lib/python3.10/site-packages/pip/_vendor/chardet/jisfreq.py
+	*	1720875855	0
+	"	62	40
+
+> ~/hateoas/.direnv/python-3.10.12/lib/python3.10/site-packages/pip/_vendor/chardet/big5freq.py
+	*	1720875854	0
+	"	144	55
+
+> ~/hateoas/ui-components-css/ui-components-css-api.py
+	*	1720875851	0
+	"	223	33
+
+> ~/.vim/plugin/grep.vim
+	*	1720875830	0
+	"	53	4
+
+> ~/hateoas/hateoas-api.py
+	*	1720873887	0
+	"	858	39
+	^	858	40
+	.	858	39
+	+	55	22
+	+	55	91
+	+	55	51
+	+	55	47
 	+	1	0
+	+	55	38
+	+	55	16
+	+	55	35
+	+	55	23
+	+	1	13
+	+	55	0
+	+	55	84
+	+	55	35
+	+	55	63
+	+	55	52
+	+	55	64
+	+	55	53
+	+	55	57
+	+	55	74
+	+	55	47
+	+	55	0
+	+	1	31
+	+	55	58
+	+	55	0
+	+	55	35
+	+	55	94
+	+	55	60
+	+	55	13
+	+	55	126
+	+	55	63
+	+	55	66
+	+	55	86
+	+	55	35
+	+	55	0
+	+	55	35
+	+	55	92
+	+	55	51
+	+	55	84
+	+	55	82
+	+	55	51
+	+	55	107
+	+	55	39
+	+	55	59
+	+	55	108
+	+	55	44
+	+	55	35
+	+	55	42
+	+	55	35
+	+	55	63
+	+	55	52
+	+	55	35
+	+	55	70
+	+	55	55
+	+	55	51
+	+	55	55
+	+	55	51
+	+	55	55
+	+	55	51
+	+	55	35
+	+	55	44
+	+	55	35
+	+	55	78
+	+	55	76
+	+	55	98
+	+	55	35
+	+	55	43
+	+	55	56
+	+	55	0
+	+	55	34
+	+	55	0
+	+	55	26
+	+	60	0
+	+	1	0
+	+	859	0
+	+	855	0
+	+	856	27
+	+	859	0
+	+	858	29
+	+	858	0
+	+	854	0
+	+	850	61
+	+	854	0
+	+	848	35
+	+	846	18
+	+	847	30
+	+	848	26
+	+	849	29
+	+	850	54
+	+	854	0
+	+	854	31
+	+	854	0
+	+	851	0
+	+	853	18
+	+	852	13
+	+	853	16
+	+	857	40
+	+	858	39
+
+> ~/hateoas/test.py
+	*	1720873576	0
+	"	2	0
+	.	2	0
+	+	2	30
+	+	17	0
+	+	13	63
+	+	16	17
+	+	2	0
+	+	5	43
+	+	7	0
+	+	4	24
+	+	6	12
+	+	16	19
+	+	11	27
+	+	13	41
+	+	17	0
+	+	13	40
+	+	12	10
+	+	13	31
+	+	14	0
+	+	13	1
+	+	14	46
+	+	2	0
+
+> ~/hateoas/main.sql
+	*	1720873417	0
+	"	23	0
+	^	40	27
+	.	41	0
+	+	3	0
+	+	1	0
+	+	3	26
+	+	3	0
+	+	20	0
+	+	3	0
+	+	20	0
+	+	3	26
+	+	3	0
+	+	20	0
+	+	3	0
+	+	46	0
+	+	20	0
+	+	9	283
+	+	9	282
+	+	9	339
+	+	9	283
+	+	48	0
+	+	49	0
+	+	47	2
+	+	48	0
+	+	47	5
+	+	48	31
+	+	50	0
+	+	46	0
+	+	46	103
+	+	46	225
+	+	46	153
+	+	46	226
+	+	3	0
+	+	46	0
+	+	9	215
+	+	20	165
+	+	46	0
+	+	9	282
+	+	46	0
+	+	30	0
+	+	30	119
+	+	46	62
+	+	46	0
+	+	46	37
+	+	46	153
+	+	46	6
+	+	46	78
+	+	30	97
+	+	46	0
+	+	30	97
+	+	46	0
+	+	30	144
+	+	46	75
+	+	30	97
+	+	30	211
+	+	30	97
+	+	30	211
+	+	3	115
+	+	9	289
+	+	20	262
+	+	30	290
+	+	3	22
+	+	1	0
+	+	3	23
+	+	3	62
+	+	3	82
+	+	3	22
+	+	9	0
+	+	8	0
+	+	3	108
+	+	3	0
+	+	9	0
+	+	9	193
+	+	49	0
+	+	1	0
+	+	46	0
+	+	9	136
+	+	20	174
+	+	9	211
+	+	9	186
+	+	20	139
+	+	49	0
+	+	3	0
+	+	30	0
+	+	3	0
+	+	30	0
+	+	9	187
+	+	3	0
+	+	1	0
+	+	3	0
+	+	1	0
+	+	34	7
+	+	35	59
+	+	36	9
+	+	34	21
+	+	41	4
+	+	42	40
+	+	3	26
+	+	4	0
+	+	9	26
+	+	40	13
+	+	40	0
+	+	41	0
+
+> ~/hateoas/get_worker_info.py
+	*	1720873413	0
+	"	39	0
+	^	5	21
+	.	1	0
+	+	2	12
+	+	23	21
+	+	24	45
+	+	25	34
+	+	26	4
+	+	28	9
+	+	37	16
+	+	3	8
+	+	37	16
+	+	29	57
+	+	30	8
+	+	37	28
+	+	37	16
+	+	27	12
+	+	32	24
+	+	27	23
+	+	32	0
+	+	37	16
+	+	32	31
+	+	37	31
+	+	37	36
+	+	37	16
+	+	33	19
+	+	37	16
+	+	37	97
+	+	37	16
+	+	34	8
+	+	35	73
+	+	37	16
+	+	34	70
+	+	36	96
+	+	37	4
+	+	37	16
+	+	4	55
+	+	8	34
+	+	9	23
+	+	10	76
+	+	21	4
+	+	39	26
+	+	40	4
+	+	21	0
+	+	12	8
+	+	21	0
+	+	13	54
+	+	14	39
+	+	15	12
+	+	14	52
+	+	11	13
+	+	15	31
+	+	21	73
+	+	21	0
+	+	14	0
+	+	16	0
+	+	17	44
+	+	18	23
+	+	20	4
+	+	21	0
+	+	7	39
+	+	17	0
+	+	7	31
+	+	37	17
+	+	11	9
+	+	18	0
+	+	19	10
+	+	20	11
+	+	7	35
+	+	37	39
+	+	7	0
+	+	37	15
+	+	41	5
+	+	5	20
+	+	1	0
+
+> ~/hateoas/.direnv/python-3.10.12/lib/python3.10/site-packages/frozenlist-1.4.1.dist-info/METADATA
+	*	1720873409	0
+	"	260	2
+
+> ~/hateoas/requirements.txt
+	*	1720873171	0
+	"	17	5
+	^	17	6
+	.	17	5
+	+	3	5
+	+	9	20
+	+	2	4
+	+	10	13
+	+	11	0
+	+	13	7
+	+	14	18
+	+	14	0
+	+	17	5
+
+> ~/.config/fish/completions/find-all-files.fish
+	*	1720867625	0
+	"	1	0
+	.	52	0
+	+	1	0
+	+	52	0
+
+> ~/.local/share/fish/generated_completions/fdfind.fish
+	*	1720867474	0
+	"	9	0
+
+> /usr/share/fish/completions/fd.fish
+	*	1720867474	0
+	"	1	0
+
+> ~/.config/bash_completions/find-all-files-completion.bash
+	*	1720867256	0
+	"	170	67
+	^	170	68
+	.	170	67
+	+	169	0
+	+	170	67
 
 > ~/.config/load_completions.bash
-	*	1720866573	0
-	"	16	0
+	*	1720867246	0
+	"	12	63
 	^	17	48
 	.	13	0
 	+	8	23
@@ -11819,9 +13505,64 @@ $
 	+	17	47
 	+	13	0
 
+> ~/.config/alias.sh
+	*	1720867225	0
+	"	19	0
+	.	14	0
+	+	2	0
+	+	14	37
+	+	28	77
+	+	28	42
+	+	28	47
+	+	28	32
+	+	29	39
+	+	30	40
+	+	31	79
+	+	31	0
+	+	31	36
+	+	31	20
+	+	31	25
+	+	32	45
+	+	33	0
+	+	31	0
+	+	28	0
+	+	32	19
+	+	15	60
+	+	18	0
+	+	28	0
+	+	17	13
+	+	28	10
+	+	18	0
+	+	11	0
+	+	10	72
+	+	9	6
+	+	28	1
+	+	29	0
+	+	28	1
+	+	18	14
+	+	12	1
+	+	2	0
+	+	19	45
+	+	12	0
+	+	27	0
+	+	23	0
+	+	19	53
+	+	21	0
+	+	20	8
+	+	16	39
+	+	26	0
+	+	24	0
+	+	25	30
+	+	26	0
+	+	27	33
+	+	28	44
+	+	29	1
+	+	29	0
+	+	14	0
+
 > ~/.config/setup.sh
-	*	1720866520	0
-	"	11	0
+	*	1720867141	0
+	"	51	17
 	^	10	7
 	.	10	6
 	+	14	68
@@ -11920,11 +13661,67 @@ $
 	+	9	0
 	+	10	6
 
-> ~/.config/bash_completions/find-all-files-completion.bash
-	*	1720866441	0
-	"	69	0
-	.	169	0
-	+	169	0
+> ~/.config/bash_completions/_download_bat_completion.bash
+	*	1720866955	0
+	"	1	0
+	^	18	31
+	.	18	30
+	+	12	0
+	+	12	74
+	+	13	0
+	+	13	124
+	+	17	49
+	+	17	0
+	+	17	8
+	+	1	10
+	+	17	46
+	+	17	0
+	+	13	0
+	+	16	27
+	+	17	47
+	+	17	0
+	+	17	46
+	+	14	53
+	+	17	0
+	+	16	9
+	+	14	108
+	+	16	0
+	+	17	126
+	+	17	0
+	+	16	11
+	+	15	6
+	+	17	74
+	+	10	0
+	+	6	77
+	+	10	0
+	+	8	73
+	+	7	76
+	+	12	0
+	+	13	0
+	+	16	0
+	+	17	0
+	+	12	0
+	+	4	1
+	+	10	0
+	+	17	0
+	+	11	39
+	+	8	87
+	+	17	96
+	+	17	146
+	+	17	0
+	+	9	0
+	+	18	30
+
+> ~/.config/bash_completions/_tar_url_to_file.bash
+	*	1720866953	0
+	"	1	0
+	.	1	0
+	+	1	12
+	+	1	6
+	+	1	10
+	+	1	0
+	+	1	21
+	+	1	0
 
 > ~/.config/bash_completions/find-all-files.bash
 	*	1720866020	0
@@ -11947,61 +13744,6 @@ $
 	^	192	3
 	.	192	0
 	+	192	0
-
-> ~/.config/alias.sh
-	*	1720865818	0
-	"	9	0
-	.	14	0
-	+	2	0
-	+	14	37
-	+	28	77
-	+	28	42
-	+	28	47
-	+	28	32
-	+	29	39
-	+	30	40
-	+	31	79
-	+	31	0
-	+	31	36
-	+	31	20
-	+	31	25
-	+	32	45
-	+	33	0
-	+	31	0
-	+	28	0
-	+	32	19
-	+	15	60
-	+	18	0
-	+	28	0
-	+	17	13
-	+	28	10
-	+	18	0
-	+	11	0
-	+	10	72
-	+	9	6
-	+	28	1
-	+	29	0
-	+	28	1
-	+	18	14
-	+	12	1
-	+	2	0
-	+	19	45
-	+	12	0
-	+	27	0
-	+	23	0
-	+	19	53
-	+	21	0
-	+	20	8
-	+	16	39
-	+	26	0
-	+	24	0
-	+	25	30
-	+	26	0
-	+	27	33
-	+	28	44
-	+	29	1
-	+	29	0
-	+	14	0
 
 > ~/.config/bash_completions/custom.bash
 	*	1720865779	0
@@ -12070,31 +13812,6 @@ $
 	+	124	0
 	+	123	0
 	+	120	0
-
-> ~/.config/direnv/direnv.toml
-	*	1720865724	0
-	"	8	0
-	.	9	0
-	+	3	85
-	+	3	11
-	+	4	27
-	+	5	31
-	+	6	11
-	+	5	0
-	+	9	0
-	+	6	51
-	+	5	40
-	+	4	45
-	+	9	0
-	+	6	27
-	+	6	0
-	+	1	55
-	+	6	27
-	+	5	28
-	+	4	28
-	+	8	34
-	+	7	32
-	+	9	0
 
 > ~/bugs/240713.bash_alias_completion_not_working.txt
 	*	1720865564	0
@@ -12601,20 +14318,6 @@ $
 	*	1720693492	0
 	"	34	93
 
-> ~/hateoas/requirements.txt
-	*	1720693017	0
-	"	14	0
-	^	14	0
-	.	14	0
-	+	3	5
-	+	9	20
-	+	2	4
-	+	10	13
-	+	11	0
-	+	13	7
-	+	14	18
-	+	14	0
-
 > ~/hateoas/download_worker.py
 	*	1720692811	0
 	"	80	4
@@ -12726,111 +14429,6 @@ $
 > /tmp/crontab.NX5XKr/crontab
 	*	1720692686	0
 	"	33	0
-
-> ~/.vim/vimrc
-	*	1720692593	0
-	"	553	12
-	.	43	0
-	+	1324	0
-	+	1324	38
-	+	1324	21
-	+	1324	0
-	+	1324	10
-	+	1324	25
-	+	1324	0
-	+	1324	32
-	+	1324	0
-	+	1324	10
-	+	1324	0
-	+	1324	25
-	+	1324	10
-	+	1324	0
-	+	1324	60
-	+	1324	0
-	+	1324	55
-	+	1324	0
-	+	1324	44
-	+	1324	0
-	+	1324	19
-	+	1324	71
-	+	1324	0
-	+	1324	23
-	+	1324	41
-	+	1324	44
-	+	1324	40
-	+	1324	28
-	+	1324	0
-	+	1324	11
-	+	1324	18
-	+	1324	43
-	+	1324	64
-	+	1324	54
-	+	1324	0
-	+	1324	31
-	+	1324	0
-	+	1324	6
-	+	1324	0
-	+	1324	1
-	+	1324	0
-	+	1324	80
-	+	1324	75
-	+	1324	0
-	+	1324	52
-	+	1324	41
-	+	163	0
-	+	49	26
-	+	1324	0
-	+	48	0
-	+	47	22
-	+	46	25
-	+	67	0
-	+	1110	57
-	+	1114	59
-	+	1116	55
-	+	244	0
-	+	243	0
-	+	244	25
-	+	1317	1
-	+	1318	0
-	+	1320	24
-	+	1321	24
-	+	1322	24
-	+	1323	0
-	+	1302	12
-	+	1303	0
-	+	1304	0
-	+	1305	0
-	+	1325	49
-	+	1322	0
-	+	1324	13
-	+	1325	13
-	+	1322	0
-	+	1324	16
-	+	1325	16
-	+	1324	0
-	+	1326	0
-	+	1324	0
-	+	1326	0
-	+	81	0
-	+	767	0
-	+	60	0
-	+	43	0
-	+	43	25
-	+	61	3
-	+	43	5
-	+	61	16
-	+	61	0
-	+	62	0
-	+	87	16
-	+	87	0
-	+	88	0
-	+	43	5
-	+	61	3
-	+	87	0
-	+	88	0
-	+	61	0
-	+	62	0
-	+	43	0
 
 > /tmp/crontab.4ej9rj/crontab
 	*	1720680906	0
@@ -13268,78 +14866,6 @@ $
 	+	95	0
 	a	92	16
 
-> ~/.vim/plugin/xclip.vim
-	*	1720526187	0
-	"	18	5
-	.	18	0
-	+	25	0
-	+	24	0
-	+	25	0
-	+	14	0
-	+	16	28
-	+	16	27
-	+	25	29
-	+	7	25
-	+	7	0
-	+	26	0
-	+	8	11
-	+	25	39
-	+	16	0
-	+	7	41
-	+	7	25
-	+	7	0
-	+	16	24
-	+	7	0
-	+	16	27
-	+	7	33
-	+	7	0
-	+	16	46
-	+	16	0
-	+	14	0
-	+	16	39
-	+	14	0
-	+	16	0
-	+	14	39
-	+	14	0
-	+	16	0
-	+	16	28
-	+	16	27
-	+	16	0
-	+	22	0
-	+	14	25
-	+	14	0
-	+	22	0
-	+	16	37
-	+	17	23
-	+	17	34
-	+	16	0
-	+	17	0
-	+	14	3
-	+	20	87
-	+	20	0
-	+	14	0
-	+	1	0
-	+	22	0
-	+	11	0
-	+	9	0
-	+	21	0
-	+	5	0
-	+	18	17
-	+	19	16
-	+	18	17
-	+	19	22
-	+	19	30
-	+	19	54
-	+	14	0
-	+	19	34
-	+	21	0
-	+	19	0
-	+	18	0
-
-> /usr/share/vim/vim90/doc/builtin.txt
-	*	1720526011	0
-	"	9440	42
-
 > ~/crk-main/batch_get_all_cookies.py
 	*	1720525215	0
 	"	110	28
@@ -13592,104 +15118,6 @@ $
 	+	3	14
 	+	2	0
 
-> ~/hateoas/hateoas-api.py
-	*	1720366581	0
-	"	2	0
-	.	1	0
-	+	55	59
-	+	55	35
-	+	55	54
-	+	55	35
-	+	55	68
-	+	55	60
-	+	55	88
-	+	55	35
-	+	55	88
-	+	55	35
-	+	55	47
-	+	55	54
-	+	24	0
-	+	24	5
-	+	24	133
-	+	24	0
-	+	24	4
-	+	55	0
-	+	55	85
-	+	55	31
-	+	55	22
-	+	55	91
-	+	55	51
-	+	55	47
-	+	1	0
-	+	55	38
-	+	55	16
-	+	55	35
-	+	55	23
-	+	1	13
-	+	55	0
-	+	55	84
-	+	55	35
-	+	55	63
-	+	55	52
-	+	55	64
-	+	55	53
-	+	55	57
-	+	55	74
-	+	55	47
-	+	55	0
-	+	1	31
-	+	55	58
-	+	55	0
-	+	55	35
-	+	55	94
-	+	55	60
-	+	55	13
-	+	55	126
-	+	55	63
-	+	55	66
-	+	55	86
-	+	55	35
-	+	55	0
-	+	55	35
-	+	55	92
-	+	55	51
-	+	55	84
-	+	55	82
-	+	55	51
-	+	55	107
-	+	55	39
-	+	55	59
-	+	55	108
-	+	55	44
-	+	55	35
-	+	55	42
-	+	55	35
-	+	55	63
-	+	55	52
-	+	55	35
-	+	55	70
-	+	55	55
-	+	55	51
-	+	55	55
-	+	55	51
-	+	55	55
-	+	55	51
-	+	55	35
-	+	55	44
-	+	55	35
-	+	55	78
-	+	55	76
-	+	55	98
-	+	55	35
-	+	55	43
-	+	55	56
-	+	55	0
-	+	55	34
-	+	55	0
-	+	55	26
-	+	60	0
-	+	1	0
-
 > ~/.git-credentials
 	*	1719880829	0
 	"	1	0
@@ -13721,16 +15149,6 @@ $
 	+	2	0
 	+	3	0
 	+	4	0
-
-> ~/python_common/.envrc
-	*	1719738669	0
-	"	4	7
-	^	4	20
-	.	4	7
-	+	1	14
-	+	2	31
-	+	3	225
-	+	4	7
 
 > ~/python_common/.env
 	*	1719738646	0
@@ -15034,54 +16452,6 @@ $
 	+	1	28
 	+	590	63
 
-> ~/hateoas/templates/base.html
-	*	1718889964	0
-	"	6	44
-	.	12	0
-	+	24	0
-	+	20	0
-	+	4	50
-	+	8	78
-	+	20	0
-	+	20	8
-	+	4	0
-	+	20	0
-	+	23	0
-	+	24	0
-	+	22	20
-	+	23	0
-	+	22	12
-	+	22	0
-	+	22	55
-	+	22	67
-	+	22	0
-	+	10	9
-	+	8	11
-	+	8	0
-	+	10	0
-	+	8	0
-	+	8	96
-	+	8	0
-	+	4	0
-	+	8	8
-	+	8	97
-	+	8	0
-	+	6	0
-	+	8	0
-	+	5	0
-	+	21	0
-	+	8	0
-	+	21	7
-	+	21	0
-	+	21	26
-	+	21	16
-	+	21	0
-	+	8	0
-	+	10	0
-	+	21	0
-	+	11	0
-	+	12	0
-
 > ~/ui-components-css/static/css-tailwind-outputs/ui-components-css-tailwind-output.css
 	*	1718889933	0
 	"	456	2
@@ -16208,13 +17578,6 @@ $
 	+	4	0
 	+	5	10
 
-> ~/subset-material-symbols/.gitignore
-	*	1718449333	0
-	"	4	4
-	^	4	5
-	.	4	4
-	+	4	4
-
 > /usr/share/vim/vim90/doc/windows.txt
 	*	1718449093	0
 	"	260	35
@@ -16394,110 +17757,6 @@ $
 	+	26	40
 	+	22	0
 	+	26	0
-
-> ~/.vim/ftplugin/todo.vim
-	*	1718435598	0
-	"	57	0
-	.	63	0
-	+	15	11
-	+	38	11
-	+	40	72
-	+	41	2
-	+	42	0
-	+	18	55
-	+	20	5
-	+	22	7
-	+	24	8
-	+	26	4
-	+	16	0
-	+	16	17
-	+	16	0
-	+	19	23
-	+	28	37
-	+	29	29
-	+	30	50
-	+	37	0
-	+	16	0
-	+	34	4
-	+	34	0
-	+	17	22
-	+	31	7
-	+	34	0
-	+	36	4
-	+	31	7
-	+	36	0
-	+	34	0
-	+	35	0
-	+	32	28
-	+	33	8
-	+	36	0
-	+	13	33
-	+	13	0
-	+	42	1
-	+	13	0
-	+	13	33
-	+	13	0
-	+	3	0
-	+	1	0
-	+	42	0
-	+	63	0
-	+	43	0
-	+	61	42
-	+	53	52
-	+	54	0
-	+	45	28
-	+	48	48
-	+	53	0
-	+	48	0
-	+	51	38
-	+	51	0
-	+	50	51
-	+	51	56
-	+	53	75
-	+	51	0
-	+	1	0
-	+	7	3
-	+	8	0
-	+	7	17
-	+	8	0
-	+	12	0
-	+	51	16
-	+	51	0
-	+	53	0
-	+	43	0
-	+	43	11
-	+	61	49
-	+	48	24
-	+	50	0
-	+	51	0
-	+	45	0
-	+	48	0
-	+	53	30
-	+	53	33
-	+	54	0
-	+	53	0
-	+	45	0
-	+	48	0
-	+	49	0
-	+	51	0
-	+	53	0
-	+	53	32
-	+	53	0
-	+	51	0
-	+	53	0
-	+	44	6
-	+	43	0
-	+	63	0
-	+	44	0
-	+	63	0
-	+	44	0
-	+	61	13
-	+	61	0
-	+	43	0
-	+	61	0
-	+	44	4
-	+	44	0
-	+	63	0
 
 > ~/ui-components-css/Highlight test
 	*	1718434890	0
@@ -18339,84 +19598,6 @@ $
 	*	1717144275	0
 	"	13	3
 
-> ~/hateoas/get_worker_info.py
-	*	1717140492	0
-	"	4	0
-	^	5	21
-	.	1	0
-	+	2	12
-	+	23	21
-	+	24	45
-	+	25	34
-	+	26	4
-	+	28	9
-	+	37	16
-	+	3	8
-	+	37	16
-	+	29	57
-	+	30	8
-	+	37	28
-	+	37	16
-	+	27	12
-	+	32	24
-	+	27	23
-	+	32	0
-	+	37	16
-	+	32	31
-	+	37	31
-	+	37	36
-	+	37	16
-	+	33	19
-	+	37	16
-	+	37	97
-	+	37	16
-	+	34	8
-	+	35	73
-	+	37	16
-	+	34	70
-	+	36	96
-	+	37	4
-	+	37	16
-	+	4	55
-	+	8	34
-	+	9	23
-	+	10	76
-	+	21	4
-	+	39	26
-	+	40	4
-	+	21	0
-	+	12	8
-	+	21	0
-	+	13	54
-	+	14	39
-	+	15	12
-	+	14	52
-	+	11	13
-	+	15	31
-	+	21	73
-	+	21	0
-	+	14	0
-	+	16	0
-	+	17	44
-	+	18	23
-	+	20	4
-	+	21	0
-	+	7	39
-	+	17	0
-	+	7	31
-	+	37	17
-	+	11	9
-	+	18	0
-	+	19	10
-	+	20	11
-	+	7	35
-	+	37	39
-	+	7	0
-	+	37	15
-	+	41	5
-	+	5	20
-	+	1	0
-
 > ~/hateoas/download_portionurl.py
 	*	1717140280	0
 	"	27	4
@@ -18553,10 +19734,6 @@ $
 	+	13	0
 	+	5	0
 	+	9	0
-
-> ~/.vim/plugin/grep.vim
-	*	1717140141	0
-	"	47	0
 
 > /tmp/crontab.hlppSi/crontab
 	*	1717138469	0
@@ -21543,112 +22720,6 @@ $
 	*	1716098093	0
 	"	1229	18
 
-> ~/hateoas/main.sql
-	*	1716098048	0
-	"	20	0
-	^	42	41
-	.	42	40
-	+	20	260
-	+	20	287
-	+	20	255
-	+	20	259
-	+	9	0
-	+	3	26
-	+	3	0
-	+	1	0
-	+	3	26
-	+	3	0
-	+	20	0
-	+	3	0
-	+	20	0
-	+	3	26
-	+	3	0
-	+	20	0
-	+	3	0
-	+	46	0
-	+	20	0
-	+	9	283
-	+	9	282
-	+	9	339
-	+	9	283
-	+	48	0
-	+	49	0
-	+	47	2
-	+	48	0
-	+	47	5
-	+	48	31
-	+	50	0
-	+	46	0
-	+	46	103
-	+	46	225
-	+	46	153
-	+	46	226
-	+	3	0
-	+	46	0
-	+	9	215
-	+	20	165
-	+	46	0
-	+	9	282
-	+	46	0
-	+	30	0
-	+	30	119
-	+	46	62
-	+	46	0
-	+	46	37
-	+	46	153
-	+	46	6
-	+	46	78
-	+	30	97
-	+	46	0
-	+	30	97
-	+	46	0
-	+	30	144
-	+	46	75
-	+	30	97
-	+	30	211
-	+	30	97
-	+	30	211
-	+	3	115
-	+	9	289
-	+	20	262
-	+	30	290
-	+	3	22
-	+	1	0
-	+	3	23
-	+	3	62
-	+	3	82
-	+	3	22
-	+	9	0
-	+	8	0
-	+	3	108
-	+	3	0
-	+	9	0
-	+	9	193
-	+	49	0
-	+	1	0
-	+	46	0
-	+	9	136
-	+	20	174
-	+	9	211
-	+	9	186
-	+	20	139
-	+	49	0
-	+	3	0
-	+	30	0
-	+	3	0
-	+	30	0
-	+	9	187
-	+	3	0
-	+	1	0
-	+	3	0
-	+	1	0
-	+	34	7
-	+	35	59
-	+	36	9
-	+	34	21
-	+	41	4
-	+	42	40
-
 > ~/hateoas/download_queue.py
 	*	1716097984	0
 	"	49	8
@@ -22199,31 +23270,6 @@ $
 	+	19	0
 	+	16	0
 
-> ~/hateoas/test.py
-	*	1714759089	0
-	"	1	0
-	^	16	0
-	.	15	46
-	+	2	30
-	+	18	0
-	+	14	63
-	+	17	17
-	+	3	0
-	+	6	43
-	+	8	0
-	+	5	24
-	+	7	12
-	+	17	19
-	+	12	27
-	+	14	41
-	+	18	0
-	+	14	40
-	+	13	10
-	+	14	31
-	+	15	0
-	+	14	1
-	+	15	46
-
 > ~/pytest_concate/test-server.py
 	*	1714655603	0
 	"	472	12
@@ -22421,21 +23467,6 @@ $
 	+	4	5
 	+	5	26
 	+	6	0
-
-> ~/hateoas/tasks_test.sql
-	*	1714485312	0
-	"	9	20
-	^	8	28
-	.	4	41
-	+	8	43
-	+	3	27
-	+	4	42
-	+	5	66
-	+	9	21
-	+	3	17
-	+	8	27
-	+	5	69
-	+	4	41
 
 > ~/hateoas/test.sql
 	*	1714484163	0
@@ -23806,20 +24837,6 @@ $
 > ~/.vim/.fzf/doc/fzf.txt
 	*	1713929380	0
 	"	1	0
-
-> ~/.vim/ftplugin/html.vim
-	*	1713929246	0
-	"	5	0
-	^	22	5
-	.	22	0
-	+	19	0
-	+	18	6
-	+	19	0
-	+	18	19
-	+	19	0
-	+	20	4
-	+	21	16
-	+	22	0
 
 > ~/.vim/plugged/coc.nvim/doc/coc-api.txt
 	*	1713928501	0
@@ -31182,23 +32199,6 @@ $
 	*	1694108285	0
 	"	5958	4
 
-> ~/.vim/plugin/goto_method.vim
-	*	1694107352	0
-	"	97	0
-	^	40	47
-	.	40	46
-	+	38	59
-	+	39	0
-	+	38	0
-	+	39	64
-	+	40	0
-	+	39	0
-	+	40	0
-	+	41	0
-	+	40	0
-	+	41	0
-	+	40	46
-
 > ~/.vim/plugin/profile.vim
 	*	1694107247	0
 	"	109	0
@@ -36213,10 +37213,6 @@ $
 	*	1691392482	0
 	"	1	0
 
-> ~/.vim/ftplugin/javascript.vim
-	*	1691391779	0
-	"	1	0
-
 > ~/.vim/plugged/ale/doc/ale-javascript.txt
 	*	1691391701	0
 	"	24	17
@@ -36462,13 +37458,6 @@ $
 	*	1690771639	0
 	"	1	0
 
-> ~/.vim/ftplugin/python.vim
-	*	1690765286	0
-	"	135	4
-	^	438	38
-	.	438	36
-	+	438	36
-
 > ~/.vim/plugged/ale/doc/ale-vue.txt
 	*	1690675598	0
 	"	43	2
@@ -36484,10 +37473,6 @@ $
 	*	1690675049	0
 	"	161	10
 
-> ~/.vim/plugin/dotty.vim
-	*	1690674959	0
-	"	1017	0
-
 > ~/[Plugins] (2)
 	*	1690488862	0
 	"	1	0
@@ -36495,10 +37480,6 @@ $
 > /usr/share/vim/vim90/doc/userfunc.txt
 	*	1690488530	0
 	"	206	32
-
-> ~/.vim/plugin/better.vim
-	*	1690488424	0
-	"	26	15
 
 > /usr/share/vim/vim90/doc/usr_05.txt
 	*	1690488077	0
