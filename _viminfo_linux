@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/visual
+~MSle0~/availabl
 
 # Last Substitute Search Pattern:
 ~MSle0&complete -c \zsfd
@@ -20,20 +20,44 @@
 $
 
 # Command Line History (newest to oldest):
+:q
+|2,0,1721235629,,"q"
+:e
+|2,0,1721235325,,"e"
+:e python-flask-tailwind.sh
+|2,0,1721235247,,"e python-flask-tailwind.sh"
+:!start everything -path .
+|2,0,1721235244,,"!start everything -path ."
+:imap <C-o> :echo "Hello, World!"
+|2,0,1721219435,,"imap <C-o> :echo \"Hello, World!\""
+:bd!
+|2,0,1721219429,,"bd!"
+:imap <C-;> :echo "Hello, World!"
+|2,0,1721219422,,"imap <C-;> :echo \"Hello, World!\""
+:nmap <A-a> :echo "Hello, World!"
+|2,0,1721219384,,"nmap <A-a> :echo \"Hello, World!\""
+:imap <A-a> :echo "Hello, World!"
+|2,0,1721219376,,"imap <A-a> :echo \"Hello, World!\""
+:qa!
+|2,0,1721219295,,"qa!"
 :qa
-|2,0,1721150410,,"qa"
+|2,0,1721219293,,"qa"
+:bd
+|2,0,1721219288,,"bd"
+:Date 
+|2,0,1721219229,,"Date "
+:MRU 2:devops-bash-resources.txt
+|2,0,1721200333,,"MRU 2:devops-bash-resources.txt"
+:q!
+|2,0,1721200265,,"q!"
 :cn
 |2,0,1721150400,,"cn"
 :e stdlib.vim
 |2,0,1721150102,,"e stdlib.vim"
 :grep -g '*.vim' -g 'vimrc' --fixed-strings reg_save
 |2,0,1721150030,,"grep -g '*.vim' -g 'vimrc' --fixed-strings reg_save"
-:q
-|2,0,1721149992,,"q"
 :so %
 |2,0,1721149849,,"so %"
-:e
-|2,0,1721149823,,"e"
 :Copilot panel
 |2,0,1721149671,,"Copilot panel"
 :Ftplugin
@@ -44,8 +68,6 @@ $
 |2,0,1721149043,,"au BufRead"
 :au
 |2,0,1721149039,,"au"
-:q!
-|2,0,1721147659,,"q!"
 :Template
 |2,0,1721147539,,"Template"
 :e printutils.py
@@ -98,8 +120,6 @@ $
 |2,0,1721123416,," "
 :edit $MYVIMRC
 |2,0,1721121255,,"edit $MYVIMRC"
-:qa!
-|2,0,1721121083,,"qa!"
 :set wrap
 |2,0,1721121028,,"set wrap"
 :diffthis
@@ -134,8 +154,6 @@ $
 |2,0,1720873849,,"map <CR>"
 :nu
 |2,0,1720873847,,"nu"
-:bd!
-|2,0,1720873577,,"bd!"
 :e test.py
 |2,0,1720873551,,"e test.py"
 :Copilotpa
@@ -144,8 +162,6 @@ $
 |2,0,1720873496,,"Copilot status"
 :e hateoas-api.py
 |2,0,1720873420,,"e hateoas-api.py"
-:bd
-|2,0,1720873412,,"bd"
 :copen
 |2,0,1720873402,,"copen"
 :grep -g '*.py' --fixed-strings main
@@ -1894,8 +1910,6 @@ $
 |2,0,1716994994,,"MRU dbutils"
 :e waivek/db.py
 |2,0,1716994963,,"e waivek/db.py"
-:!start everything -path .
-|2,0,1716994960,,"!start everything -path ."
 :MRU yml
 |2,0,1716992027,,"MRU yml"
 :e setup.py
@@ -7818,6 +7832,10 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/availabl
+|2,1,1721235602,47,"availabl"
+?/giti
+|2,1,1721235250,47,"giti"
 ?/visual
 |2,1,1721150138,47,"visual"
 ?/copy
@@ -8528,8 +8546,6 @@ $
 |2,1,1717651166,47,"\\.post"
 ?/AWS
 |2,1,1717650670,47,"AWS"
-?/giti
-|2,1,1717650560,47,"giti"
 ?/envrc
 |2,1,1717650557,47,"envrc"
 ?/export
@@ -11616,46 +11632,43 @@ $
 |2,4,1693311567,,"cont"
 
 # Registers:
-""0	CHAR	0
-	e
-|3,1,0,0,1,0,1721150366,"e"
+""0	LINE	0
+	
+|3,1,0,1,1,0,1721235622,""
 "1	LINE	0
 	
-|3,0,1,1,1,0,1721150330,""
+|3,0,1,1,1,0,1721235616,""
 "2	LINE	0
-	    let reg_save = @"
-|3,0,2,1,1,0,1721150303,"    let reg_save = @\""
-"3	LINE	0
 	
-|3,0,3,1,1,0,1721150295,""
+|3,0,2,1,1,0,1721235612,""
+"3	LINE	0
+	echo ".direnv/" >> .gitignore
+	echo ".envrc" >> .gitignore
+	echo "data/" >> .gitignore
+|3,0,3,1,3,0,1721235329,"echo \".direnv/\" >> .gitignore","echo \".envrc\" >> .gitignore","echo \"data/\" >> .gitignore"
 "4	LINE	0
 	
-|3,0,4,1,1,0,1721150276,""
+	
+|3,0,4,1,2,0,1721219476,"",""
 "5	LINE	0
-	    normal! gv"xy
-	    return getreg('x')
-|3,0,5,1,2,0,1721150201,"    normal! gv\"xy","    return getreg('x')"
+	:echo "Hello, World!"
+|3,0,5,1,1,0,1721219437,":echo \"Hello, World!\""
 "6	LINE	0
-	    let reg_save = getreg('a')
-	    let paste
-|3,0,6,1,2,0,1721150189,"    let reg_save = getreg('a')","    let paste"
+	
+	
+|3,0,6,1,2,0,1721219221,"",""
 "7	LINE	0
-	    let regtype_save = getregtype()
-|3,0,7,1,1,0,1721150177,"    let regtype_save = getregtype()"
+	2024 . 07 . 17
+|3,0,7,1,1,0,1721200329,"2024 . 07 . 17"
 "8	LINE	0
-	   "   Yanking also changes the `"` register, so we save it and restore it
-|3,0,8,1,1,0,1721150108,"   \"   Yanking also changes the `\"` register, so we save it and restore it"
-"9	CHAR	0
-	    " Yank the visual selection, and return the yanked text
-	    "
-	    " Precautions / Side Effects:
-	    "
-	    "   Yanking changes the `[ and `] marks, so we save them and restore them
-	 
-|3,0,9,0,6,0,1721150107,"    \" Yank the visual selection, and return the yanked text","    \"","    \" Precautions / Side Effects:","    \"","    \"   Yanking changes the `[ and `] marks, so we save them and restore them"," "
+	
+|3,0,8,1,1,0,1721200202,""
+"9	LINE	0
+	
+|3,0,9,1,1,0,1721200070,""
 "a	CHAR	0
 	Tabularize /=/l1c1l1
-|3,0,10,0,1,0,1721150297,"Tabularize /=/l1c1l1"
+|3,0,10,0,1,0,1721200343,"Tabularize /=/l1c1l1"
 "j	CHAR	0
 	kc
 |3,0,19,0,1,0,1718434816,"kc"
@@ -11669,240 +11682,628 @@ $
 	https://rsms.me/inter/
 |3,0,28,0,1,0,1718483440,"https://rsms.me/inter/"
 "-	CHAR	0
-	e
-|3,0,36,0,1,0,1721150365,"e"
+	]
+|3,0,36,0,1,0,1721235567,"]"
 
 # File marks:
-'0  52  21  ~/.vim/plugin/cool.vim
-|4,48,52,21,1721150411,"~/.vim/plugin/cool.vim"
-'1  50  4  ~/.vim/stdlib.vim
-|4,49,50,4,1721149993,"~/.vim/stdlib.vim"
-'2  34  4  ~/.vim/stdlib.vim
-|4,50,34,4,1721149993,"~/.vim/stdlib.vim"
-'3  1  24  ~/python_common/waivek/todo.txt
-|4,51,1,24,1721149253,"~/python_common/waivek/todo.txt"
-'4  1  24  ~/python_common/waivek/todo.txt
-|4,52,1,24,1721149253,"~/python_common/waivek/todo.txt"
-'5  1  24  ~/python_common/waivek/todo.txt
-|4,53,1,24,1721149253,"~/python_common/waivek/todo.txt"
-'6  1  24  ~/python_common/waivek/todo.txt
-|4,54,1,24,1721149253,"~/python_common/waivek/todo.txt"
-'7  1  0  ~/python_common/waivek/todo.txt
-|4,55,1,0,1721149075,"~/python_common/waivek/todo.txt"
-'8  1  0  ~/python_common/waivek/todo.txt
-|4,56,1,0,1721149075,"~/python_common/waivek/todo.txt"
-'9  1  0  ~/python_common/waivek/todo.txt
-|4,57,1,0,1721149075,"~/python_common/waivek/todo.txt"
+'0  60  19  ~/pyscripts/viewlog.py
+|4,48,60,19,1721235630,"~/pyscripts/viewlog.py"
+'1  160  82  ~/pyscripts/viewlog.py
+|4,49,160,82,1721235574,"~/pyscripts/viewlog.py"
+'2  158  82  ~/pyscripts/viewlog.py
+|4,50,158,82,1721235574,"~/pyscripts/viewlog.py"
+'3  1  0  ~/pyscripts/viewlog.py
+|4,51,1,0,1721235504,"~/pyscripts/viewlog.py"
+'4  1  0  ~/pyscripts/viewlog.py
+|4,52,1,0,1721235504,"~/pyscripts/viewlog.py"
+'5  1  0  ~/pyscripts/viewlog.py
+|4,53,1,0,1721235504,"~/pyscripts/viewlog.py"
+'6  1  0  ~/pyscripts/viewlog.py
+|4,54,1,0,1721235504,"~/pyscripts/viewlog.py"
+'7  20  97  ~/.config/starship/starship.toml
+|4,55,20,97,1721235444,"~/.config/starship/starship.toml"
+'8  20  97  ~/.config/starship/starship.toml
+|4,56,20,97,1721235444,"~/.config/starship/starship.toml"
+'9  20  97  ~/.config/starship/starship.toml
+|4,57,20,97,1721235444,"~/.config/starship/starship.toml"
 
 # Jumplist (newest first):
--'  52  21  ~/.vim/plugin/cool.vim
-|4,39,52,21,1721150411,"~/.vim/plugin/cool.vim"
--'  47  104  ~/.vim/plugin/cool.vim
-|4,39,47,104,1721150408,"~/.vim/plugin/cool.vim"
--'  39  21  ~/.vim/plugin/cool.vim
-|4,39,39,21,1721150408,"~/.vim/plugin/cool.vim"
--'  38  25  ~/.vim/plugin/cool.vim
-|4,39,38,25,1721150407,"~/.vim/plugin/cool.vim"
--'  1070  13  ~/.vim/plugin/dotty.vim
-|4,39,1070,13,1721150405,"~/.vim/plugin/dotty.vim"
--'  1067  8  ~/.vim/plugin/dotty.vim
-|4,39,1067,8,1721150405,"~/.vim/plugin/dotty.vim"
--'  701  19  ~/.vim/plugin/dotty.vim
-|4,39,701,19,1721150401,"~/.vim/plugin/dotty.vim"
--'  687  0  ~/.vim/plugin/dotty.vim
-|4,39,687,0,1721150400,"~/.vim/plugin/dotty.vim"
--'  139  13  ~/.vim/plugin/dotty.vim
-|4,39,139,13,1721150242,"~/.vim/plugin/dotty.vim"
--'  136  8  ~/.vim/plugin/dotty.vim
-|4,39,136,8,1721150242,"~/.vim/plugin/dotty.vim"
--'  335  13  ~/.vim/plugin/method-textobj.vim
-|4,39,335,13,1721150241,"~/.vim/plugin/method-textobj.vim"
--'  328  8  ~/.vim/plugin/method-textobj.vim
-|4,39,328,8,1721150240,"~/.vim/plugin/method-textobj.vim"
--'  308  13  ~/.vim/plugin/method-textobj.vim
-|4,39,308,13,1721150238,"~/.vim/plugin/method-textobj.vim"
--'  302  8  ~/.vim/plugin/method-textobj.vim
-|4,39,302,8,1721150237,"~/.vim/plugin/method-textobj.vim"
--'  87  13  ~/.vim/plugin/goto_method.vim
-|4,39,87,13,1721150234,"~/.vim/plugin/goto_method.vim"
--'  57  0  ~/.vim/plugin/goto_method.vim
-|4,39,57,0,1721150233,"~/.vim/plugin/goto_method.vim"
--'  13  21  ~/.vim/plugin/xclip.vim
-|4,39,13,21,1721150227,"~/.vim/plugin/xclip.vim"
--'  10  8  ~/.vim/plugin/xclip.vim
-|4,39,10,8,1721150227,"~/.vim/plugin/xclip.vim"
--'  444  13  ~/.vim/plugin/better.vim
-|4,39,444,13,1721150212,"~/.vim/plugin/better.vim"
--'  440  8  ~/.vim/plugin/better.vim
-|4,39,440,8,1721150211,"~/.vim/plugin/better.vim"
--'  375  0  ~/.vim/plugin/better.vim
-|4,39,375,0,1721150209,"~/.vim/plugin/better.vim"
--'  399  13  ~/.vim/plugin/better.vim
-|4,39,399,13,1721150185,"~/.vim/plugin/better.vim"
--'  389  8  ~/.vim/plugin/better.vim
-|4,39,389,8,1721150093,"~/.vim/plugin/better.vim"
--'  376  13  ~/.vim/plugin/better.vim
-|4,39,376,13,1721150092,"~/.vim/plugin/better.vim"
--'  371  8  ~/.vim/plugin/better.vim
-|4,39,371,8,1721150092,"~/.vim/plugin/better.vim"
--'  191  13  ~/.vim/plugin/better.vim
-|4,39,191,13,1721150090,"~/.vim/plugin/better.vim"
--'  180  8  ~/.vim/plugin/better.vim
-|4,39,180,8,1721150089,"~/.vim/plugin/better.vim"
--'  51  13  ~/.vim/plugin/better.vim
-|4,39,51,13,1721150086,"~/.vim/plugin/better.vim"
--'  46  8  ~/.vim/plugin/better.vim
-|4,39,46,8,1721150084,"~/.vim/plugin/better.vim"
--'  57  13  ~/.vim/ftplugin/vim.vim
-|4,39,57,13,1721150083,"~/.vim/ftplugin/vim.vim"
--'  47  8  ~/.vim/ftplugin/vim.vim
-|4,39,47,8,1721150082,"~/.vim/ftplugin/vim.vim"
--'  20  13  ~/.vim/ftplugin/vim.vim
-|4,39,20,13,1721150082,"~/.vim/ftplugin/vim.vim"
--'  2  8  ~/.vim/ftplugin/vim.vim
-|4,39,2,8,1721150081,"~/.vim/ftplugin/vim.vim"
--'  184  13  ~/.vim/ftplugin/python.vim
-|4,39,184,13,1721150079,"~/.vim/ftplugin/python.vim"
--'  181  8  ~/.vim/ftplugin/python.vim
-|4,39,181,8,1721150079,"~/.vim/ftplugin/python.vim"
--'  165  8  ~/.vim/ftplugin/python.vim
-|4,39,165,8,1721150078,"~/.vim/ftplugin/python.vim"
--'  113  13  ~/.vim/ftplugin/python.vim
-|4,39,113,13,1721150078,"~/.vim/ftplugin/python.vim"
--'  99  8  ~/.vim/ftplugin/python.vim
-|4,39,99,8,1721150077,"~/.vim/ftplugin/python.vim"
--'  11  15  ~/.vim/ftplugin/python.vim
-|4,39,11,15,1721150076,"~/.vim/ftplugin/python.vim"
--'  6  10  ~/.vim/ftplugin/python.vim
-|4,39,6,10,1721150075,"~/.vim/ftplugin/python.vim"
--'  29  13  ~/.vim/ftplugin/javascript.vim
-|4,39,29,13,1721150073,"~/.vim/ftplugin/javascript.vim"
--'  13  8  ~/.vim/ftplugin/javascript.vim
-|4,39,13,8,1721150072,"~/.vim/ftplugin/javascript.vim"
--'  10  13  ~/.vim/ftplugin/javascript.vim
-|4,39,10,13,1721150072,"~/.vim/ftplugin/javascript.vim"
--'  2  8  ~/.vim/ftplugin/javascript.vim
-|4,39,2,8,1721150071,"~/.vim/ftplugin/javascript.vim"
--'  246  13  ~/.vim/ftplugin/html.vim
-|4,39,246,13,1721150070,"~/.vim/ftplugin/html.vim"
--'  233  8  ~/.vim/ftplugin/html.vim
-|4,39,233,8,1721150069,"~/.vim/ftplugin/html.vim"
--'  32  13  ~/.vim/ftplugin/html.vim
-|4,39,32,13,1721150069,"~/.vim/ftplugin/html.vim"
--'  27  8  ~/.vim/ftplugin/html.vim
-|4,39,27,8,1721150069,"~/.vim/ftplugin/html.vim"
--'  1142  13  ~/.vim/vimrc
-|4,39,1142,13,1721150065,"~/.vim/vimrc"
--'  1138  8  ~/.vim/vimrc
-|4,39,1138,8,1721150064,"~/.vim/vimrc"
--'  846  13  ~/.vim/vimrc
-|4,39,846,13,1721150063,"~/.vim/vimrc"
--'  843  8  ~/.vim/vimrc
-|4,39,843,8,1721150063,"~/.vim/vimrc"
--'  605  19  ~/.vim/vimrc
-|4,39,605,19,1721150061,"~/.vim/vimrc"
--'  594  14  ~/.vim/vimrc
-|4,39,594,14,1721150052,"~/.vim/vimrc"
--'  480  13  ~/.vim/vimrc
-|4,39,480,13,1721150051,"~/.vim/vimrc"
--'  483  8  ~/.vim/vimrc
-|4,39,483,8,1721150051,"~/.vim/vimrc"
--'  378  32  ~/.vim/vimrc
-|4,39,378,32,1721150034,"~/.vim/vimrc"
--'  375  19  ~/.vim/vimrc
-|4,39,375,19,1721150034,"~/.vim/vimrc"
--'  373  6  ~/.vim/vimrc
-|4,39,373,6,1721150033,"~/.vim/vimrc"
--'  50  4  ~/.vim/stdlib.vim
-|4,39,50,4,1721149993,"~/.vim/stdlib.vim"
--'  34  4  ~/.vim/stdlib.vim
-|4,39,34,4,1721149993,"~/.vim/stdlib.vim"
--'  6  0  ~/.vim/stdlib.vim
-|4,39,6,0,1721149904,"~/.vim/stdlib.vim"
--'  6  0  ~/.vim/stdlib.vim
-|4,39,6,0,1721149904,"~/.vim/stdlib.vim"
--'  43  0  ~/.vim/ftplugin/todo.vim
-|4,39,43,0,1721149902,"~/.vim/ftplugin/todo.vim"
--'  43  0  ~/.vim/ftplugin/todo.vim
-|4,39,43,0,1721149902,"~/.vim/ftplugin/todo.vim"
--'  44  4  ~/.vim/ftplugin/todo.vim
-|4,39,44,4,1721149901,"~/.vim/ftplugin/todo.vim"
--'  44  4  ~/.vim/ftplugin/todo.vim
-|4,39,44,4,1721149901,"~/.vim/ftplugin/todo.vim"
--'  1  0  ~/.vim/stdlib.vim
-|4,39,1,0,1721149897,"~/.vim/stdlib.vim"
--'  1  0  ~/.vim/stdlib.vim
-|4,39,1,0,1721149897,"~/.vim/stdlib.vim"
--'  48  4  ~/.vim/ftplugin/todo.vim
-|4,39,48,4,1721149896,"~/.vim/ftplugin/todo.vim"
--'  48  4  ~/.vim/ftplugin/todo.vim
-|4,39,48,4,1721149896,"~/.vim/ftplugin/todo.vim"
--'  2  34  ~/python_common/waivek/todo.txt
-|4,39,2,34,1721149879,"~/python_common/waivek/todo.txt"
--'  2  34  ~/python_common/waivek/todo.txt
-|4,39,2,34,1721149879,"~/python_common/waivek/todo.txt"
--'  76  16  ~/.vim/ftplugin/todo.vim
-|4,39,76,16,1721149869,"~/.vim/ftplugin/todo.vim"
--'  1  0  ~/python_common/waivek/todo.txt
-|4,39,1,0,1721149869,"~/python_common/waivek/todo.txt"
--'  76  16  ~/.vim/ftplugin/todo.vim
-|4,39,76,16,1721149869,"~/.vim/ftplugin/todo.vim"
--'  1  0  ~/python_common/waivek/todo.txt
-|4,39,1,0,1721149869,"~/python_common/waivek/todo.txt"
--'  77  16  ~/.vim/ftplugin/todo.vim
-|4,39,77,16,1721149849,"~/.vim/ftplugin/todo.vim"
--'  77  16  ~/.vim/ftplugin/todo.vim
-|4,39,77,16,1721149849,"~/.vim/ftplugin/todo.vim"
--'  78  20  ~/.vim/ftplugin/todo.vim
-|4,39,78,20,1721149836,"~/.vim/ftplugin/todo.vim"
--'  78  20  ~/.vim/ftplugin/todo.vim
-|4,39,78,20,1721149836,"~/.vim/ftplugin/todo.vim"
--'  73  8  ~/.vim/ftplugin/todo.vim
-|4,39,73,8,1721149798,"~/.vim/ftplugin/todo.vim"
--'  73  8  ~/.vim/ftplugin/todo.vim
-|4,39,73,8,1721149798,"~/.vim/ftplugin/todo.vim"
--'  66  0  ~/.vim/ftplugin/todo.vim
-|4,39,66,0,1721149754,"~/.vim/ftplugin/todo.vim"
--'  66  0  ~/.vim/ftplugin/todo.vim
-|4,39,66,0,1721149754,"~/.vim/ftplugin/todo.vim"
--'  67  4  ~/.vim/ftplugin/todo.vim
-|4,39,67,4,1721149664,"~/.vim/ftplugin/todo.vim"
--'  67  4  ~/.vim/ftplugin/todo.vim
-|4,39,67,4,1721149664,"~/.vim/ftplugin/todo.vim"
--'  70  0  ~/.vim/ftplugin/todo.vim
-|4,39,70,0,1721149598,"~/.vim/ftplugin/todo.vim"
--'  70  0  ~/.vim/ftplugin/todo.vim
-|4,39,70,0,1721149598,"~/.vim/ftplugin/todo.vim"
--'  71  8  ~/.vim/ftplugin/todo.vim
-|4,39,71,8,1721149596,"~/.vim/ftplugin/todo.vim"
--'  71  8  ~/.vim/ftplugin/todo.vim
-|4,39,71,8,1721149596,"~/.vim/ftplugin/todo.vim"
--'  74  0  ~/.vim/ftplugin/todo.vim
-|4,39,74,0,1721149583,"~/.vim/ftplugin/todo.vim"
--'  74  0  ~/.vim/ftplugin/todo.vim
-|4,39,74,0,1721149583,"~/.vim/ftplugin/todo.vim"
--'  83  8  ~/.vim/ftplugin/todo.vim
-|4,39,83,8,1721149476,"~/.vim/ftplugin/todo.vim"
--'  83  8  ~/.vim/ftplugin/todo.vim
-|4,39,83,8,1721149476,"~/.vim/ftplugin/todo.vim"
--'  72  63  ~/.vim/ftplugin/todo.vim
-|4,39,72,63,1721149459,"~/.vim/ftplugin/todo.vim"
--'  72  63  ~/.vim/ftplugin/todo.vim
-|4,39,72,63,1721149459,"~/.vim/ftplugin/todo.vim"
--'  69  4  ~/.vim/ftplugin/todo.vim
-|4,39,69,4,1721149414,"~/.vim/ftplugin/todo.vim"
--'  69  4  ~/.vim/ftplugin/todo.vim
-|4,39,69,4,1721149414,"~/.vim/ftplugin/todo.vim"
+-'  60  19  ~/pyscripts/viewlog.py
+|4,39,60,19,1721235630,"~/pyscripts/viewlog.py"
+-'  1  0  ~/pyscripts/viewlog.py
+|4,39,1,0,1721235602,"~/pyscripts/viewlog.py"
+-'  160  82  ~/pyscripts/viewlog.py
+|4,39,160,82,1721235574,"~/pyscripts/viewlog.py"
+-'  158  82  ~/pyscripts/viewlog.py
+|4,39,158,82,1721235574,"~/pyscripts/viewlog.py"
+-'  147  22  ~/pyscripts/viewlog.py
+|4,39,147,22,1721235560,"~/pyscripts/viewlog.py"
+-'  145  22  ~/pyscripts/viewlog.py
+|4,39,145,22,1721235560,"~/pyscripts/viewlog.py"
+-'  148  95  ~/pyscripts/viewlog.py
+|4,39,148,95,1721235559,"~/pyscripts/viewlog.py"
+-'  146  95  ~/pyscripts/viewlog.py
+|4,39,146,95,1721235559,"~/pyscripts/viewlog.py"
+-'  159  16  ~/pyscripts/viewlog.py
+|4,39,159,16,1721235536,"~/pyscripts/viewlog.py"
+-'  157  16  ~/pyscripts/viewlog.py
+|4,39,157,16,1721235536,"~/pyscripts/viewlog.py"
+-'  114  4  ~/pyscripts/viewlog.py
+|4,39,114,4,1721235533,"~/pyscripts/viewlog.py"
+-'  112  4  ~/pyscripts/viewlog.py
+|4,39,112,4,1721235533,"~/pyscripts/viewlog.py"
+-'  1  0  ~/pyscripts/viewlog.py
+|4,39,1,0,1721235524,"~/pyscripts/viewlog.py"
+-'  1  0  ~/pyscripts/viewlog.py
+|4,39,1,0,1721235504,"~/pyscripts/viewlog.py"
+-'  20  97  ~/.config/starship/starship.toml
+|4,39,20,97,1721235444,"~/.config/starship/starship.toml"
+-'  20  97  ~/.config/starship/starship.toml
+|4,39,20,97,1721235444,"~/.config/starship/starship.toml"
+-'  20  97  ~/.config/starship/starship.toml
+|4,39,20,97,1721235444,"~/.config/starship/starship.toml"
+-'  20  97  ~/.config/starship/starship.toml
+|4,39,20,97,1721235444,"~/.config/starship/starship.toml"
+-'  20  97  ~/.config/starship/starship.toml
+|4,39,20,97,1721235440,"~/.config/starship/starship.toml"
+-'  1  0  ~/.config/starship/starship.toml
+|4,39,1,0,1721235437,"~/.config/starship/starship.toml"
+-'  1  0  ~/.config/starship/starship.toml
+|4,39,1,0,1721235437,"~/.config/starship/starship.toml"
+-'  1  0  ~/.config/starship/starship.toml
+|4,39,1,0,1721235437,"~/.config/starship/starship.toml"
+-'  1  0  ~/.config/starship/starship.toml
+|4,39,1,0,1721235437,"~/.config/starship/starship.toml"
+-'  1  0  ~/.config/starship/starship.toml
+|4,39,1,0,1721235437,"~/.config/starship/starship.toml"
+-'  69  0  ~/genproject/python.sh
+|4,39,69,0,1721235381,"~/genproject/python.sh"
+-'  69  0  ~/genproject/python.sh
+|4,39,69,0,1721235381,"~/genproject/python.sh"
+-'  69  0  ~/genproject/python.sh
+|4,39,69,0,1721235381,"~/genproject/python.sh"
+-'  69  0  ~/genproject/python.sh
+|4,39,69,0,1721235381,"~/genproject/python.sh"
+-'  69  0  ~/genproject/python.sh
+|4,39,69,0,1721235381,"~/genproject/python.sh"
+-'  69  0  ~/genproject/python.sh
+|4,39,69,0,1721235381,"~/genproject/python.sh"
+-'  45  0  ~/genproject/python.sh
+|4,39,45,0,1721235334,"~/genproject/python.sh"
+-'  45  0  ~/genproject/python.sh
+|4,39,45,0,1721235334,"~/genproject/python.sh"
+-'  45  0  ~/genproject/python.sh
+|4,39,45,0,1721235334,"~/genproject/python.sh"
+-'  45  0  ~/genproject/python.sh
+|4,39,45,0,1721235334,"~/genproject/python.sh"
+-'  45  0  ~/genproject/python.sh
+|4,39,45,0,1721235334,"~/genproject/python.sh"
+-'  45  0  ~/genproject/python.sh
+|4,39,45,0,1721235334,"~/genproject/python.sh"
+-'  46  48  ~/genproject/python.sh
+|4,39,46,48,1721235333,"~/genproject/python.sh"
+-'  46  48  ~/genproject/python.sh
+|4,39,46,48,1721235333,"~/genproject/python.sh"
+-'  46  48  ~/genproject/python.sh
+|4,39,46,48,1721235333,"~/genproject/python.sh"
+-'  46  48  ~/genproject/python.sh
+|4,39,46,48,1721235333,"~/genproject/python.sh"
+-'  46  48  ~/genproject/python.sh
+|4,39,46,48,1721235333,"~/genproject/python.sh"
+-'  46  48  ~/genproject/python.sh
+|4,39,46,48,1721235333,"~/genproject/python.sh"
+-'  44  23  ~/genproject/python.sh
+|4,39,44,23,1721235325,"~/genproject/python.sh"
+-'  44  23  ~/genproject/python.sh
+|4,39,44,23,1721235325,"~/genproject/python.sh"
+-'  44  23  ~/genproject/python.sh
+|4,39,44,23,1721235325,"~/genproject/python.sh"
+-'  44  23  ~/genproject/python.sh
+|4,39,44,23,1721235325,"~/genproject/python.sh"
+-'  44  23  ~/genproject/python.sh
+|4,39,44,23,1721235325,"~/genproject/python.sh"
+-'  44  23  ~/genproject/python.sh
+|4,39,44,23,1721235325,"~/genproject/python.sh"
+-'  26  9  ~/genproject/python.sh
+|4,39,26,9,1721235314,"~/genproject/python.sh"
+-'  26  9  ~/genproject/python.sh
+|4,39,26,9,1721235314,"~/genproject/python.sh"
+-'  26  9  ~/genproject/python.sh
+|4,39,26,9,1721235314,"~/genproject/python.sh"
+-'  26  9  ~/genproject/python.sh
+|4,39,26,9,1721235314,"~/genproject/python.sh"
+-'  26  9  ~/genproject/python.sh
+|4,39,26,9,1721235314,"~/genproject/python.sh"
+-'  26  9  ~/genproject/python.sh
+|4,39,26,9,1721235314,"~/genproject/python.sh"
+-'  25  60  ~/genproject/python.sh
+|4,39,25,60,1721235311,"~/genproject/python.sh"
+-'  25  60  ~/genproject/python.sh
+|4,39,25,60,1721235311,"~/genproject/python.sh"
+-'  25  60  ~/genproject/python.sh
+|4,39,25,60,1721235311,"~/genproject/python.sh"
+-'  25  60  ~/genproject/python.sh
+|4,39,25,60,1721235311,"~/genproject/python.sh"
+-'  25  60  ~/genproject/python.sh
+|4,39,25,60,1721235311,"~/genproject/python.sh"
+-'  25  60  ~/genproject/python.sh
+|4,39,25,60,1721235311,"~/genproject/python.sh"
+-'  41  20  ~/genproject/python.sh
+|4,39,41,20,1721235271,"~/genproject/python.sh"
+-'  41  20  ~/genproject/python.sh
+|4,39,41,20,1721235271,"~/genproject/python.sh"
+-'  41  20  ~/genproject/python.sh
+|4,39,41,20,1721235271,"~/genproject/python.sh"
+-'  41  20  ~/genproject/python.sh
+|4,39,41,20,1721235271,"~/genproject/python.sh"
+-'  41  20  ~/genproject/python.sh
+|4,39,41,20,1721235271,"~/genproject/python.sh"
+-'  41  20  ~/genproject/python.sh
+|4,39,41,20,1721235271,"~/genproject/python.sh"
+-'  33  7  ~/genproject/python.sh
+|4,39,33,7,1721235251,"~/genproject/python.sh"
+-'  33  7  ~/genproject/python.sh
+|4,39,33,7,1721235251,"~/genproject/python.sh"
+-'  33  7  ~/genproject/python.sh
+|4,39,33,7,1721235251,"~/genproject/python.sh"
+-'  33  7  ~/genproject/python.sh
+|4,39,33,7,1721235251,"~/genproject/python.sh"
+-'  33  7  ~/genproject/python.sh
+|4,39,33,7,1721235251,"~/genproject/python.sh"
+-'  33  7  ~/genproject/python.sh
+|4,39,33,7,1721235251,"~/genproject/python.sh"
+-'  1  0  ~/genproject/python.sh
+|4,39,1,0,1721235250,"~/genproject/python.sh"
+-'  1  0  ~/genproject/python.sh
+|4,39,1,0,1721235250,"~/genproject/python.sh"
+-'  1  0  ~/genproject/python.sh
+|4,39,1,0,1721235250,"~/genproject/python.sh"
+-'  1  0  ~/genproject/python.sh
+|4,39,1,0,1721235250,"~/genproject/python.sh"
+-'  1  0  ~/genproject/python.sh
+|4,39,1,0,1721235250,"~/genproject/python.sh"
+-'  1  0  ~/genproject/python.sh
+|4,39,1,0,1721235250,"~/genproject/python.sh"
+-'  10  4  ~/tooling/devops-bash-resources.txt
+|4,39,10,4,1721219479,"~/tooling/devops-bash-resources.txt"
+-'  10  4  ~/tooling/devops-bash-resources.txt
+|4,39,10,4,1721219479,"~/tooling/devops-bash-resources.txt"
+-'  10  4  ~/tooling/devops-bash-resources.txt
+|4,39,10,4,1721219479,"~/tooling/devops-bash-resources.txt"
+-'  10  4  ~/tooling/devops-bash-resources.txt
+|4,39,10,4,1721219479,"~/tooling/devops-bash-resources.txt"
+-'  10  4  ~/tooling/devops-bash-resources.txt
+|4,39,10,4,1721219479,"~/tooling/devops-bash-resources.txt"
+-'  10  4  ~/tooling/devops-bash-resources.txt
+|4,39,10,4,1721219479,"~/tooling/devops-bash-resources.txt"
+-'  10  4  ~/tooling/devops-bash-resources.txt
+|4,39,10,4,1721219479,"~/tooling/devops-bash-resources.txt"
+-'  2  5  ~/tooling/devops-bash-resources.txt
+|4,39,2,5,1721219476,"~/tooling/devops-bash-resources.txt"
+-'  2  5  ~/tooling/devops-bash-resources.txt
+|4,39,2,5,1721219476,"~/tooling/devops-bash-resources.txt"
+-'  2  5  ~/tooling/devops-bash-resources.txt
+|4,39,2,5,1721219476,"~/tooling/devops-bash-resources.txt"
+-'  2  5  ~/tooling/devops-bash-resources.txt
+|4,39,2,5,1721219476,"~/tooling/devops-bash-resources.txt"
+-'  2  5  ~/tooling/devops-bash-resources.txt
+|4,39,2,5,1721219476,"~/tooling/devops-bash-resources.txt"
+-'  2  5  ~/tooling/devops-bash-resources.txt
+|4,39,2,5,1721219476,"~/tooling/devops-bash-resources.txt"
+-'  2  5  ~/tooling/devops-bash-resources.txt
+|4,39,2,5,1721219476,"~/tooling/devops-bash-resources.txt"
+-'  3  0  ~/tooling/devops-bash-resources.txt
+|4,39,3,0,1721219296,"~/tooling/devops-bash-resources.txt"
+-'  1  0  ~/tooling/devops-bash-resources.txt
+|4,39,1,0,1721219296,"~/tooling/devops-bash-resources.txt"
+-'  3  0  ~/tooling/devops-bash-resources.txt
+|4,39,3,0,1721219296,"~/tooling/devops-bash-resources.txt"
+-'  1  0  ~/tooling/devops-bash-resources.txt
+|4,39,1,0,1721219296,"~/tooling/devops-bash-resources.txt"
+-'  3  0  ~/tooling/devops-bash-resources.txt
+|4,39,3,0,1721219296,"~/tooling/devops-bash-resources.txt"
+-'  1  0  ~/tooling/devops-bash-resources.txt
+|4,39,1,0,1721219296,"~/tooling/devops-bash-resources.txt"
+-'  3  0  ~/tooling/devops-bash-resources.txt
+|4,39,3,0,1721219296,"~/tooling/devops-bash-resources.txt"
+-'  1  0  ~/tooling/devops-bash-resources.txt
+|4,39,1,0,1721219296,"~/tooling/devops-bash-resources.txt"
 
 # Buffer list:
-%~/.vim/plugin/better.vim	444	13
-%~/.vim/plugin/xclip.vim	13	21
-%~/.vim/plugin/goto_method.vim	87	13
-%~/.vim/plugin/method-textobj.vim	335	13
-%~/.vim/plugin/dotty.vim	1070	13
-%~/.vim/plugin/cool.vim	52	21
+%~/pyscripts/viewlog.py	60	19
 
 # History of marks within files (newest to oldest):
+
+> ~/pyscripts/viewlog.py
+	*	1721235626	0
+	"	60	19
+	^	60	20
+	.	59	10
+	+	124	0
+	+	129	0
+	+	121	10
+	+	5	29
+	+	124	11
+	+	126	0
+	+	125	11
+	+	129	11
+	+	130	0
+	+	140	0
+	+	133	34
+	+	134	11
+	+	136	32
+	+	136	21
+	+	137	4
+	+	139	4
+	+	136	0
+	+	196	8
+	+	189	52
+	+	193	78
+	+	194	8
+	+	153	23
+	+	168	134
+	+	153	37
+	+	168	139
+	+	189	45
+	+	168	174
+	+	193	46
+	+	152	24
+	+	153	36
+	+	168	166
+	+	189	70
+	+	193	70
+	+	152	34
+	+	168	0
+	+	168	226
+	+	158	29
+	+	166	27
+	+	166	62
+	+	166	8
+	+	168	227
+	+	166	26
+	+	168	65
+	+	166	0
+	+	158	27
+	+	165	27
+	+	165	62
+	+	165	8
+	+	166	0
+	+	165	20
+	+	165	22
+	+	165	0
+	+	161	101
+	+	164	0
+	+	164	31
+	+	165	0
+	+	159	0
+	+	164	40
+	+	165	43
+	+	155	27
+	+	157	11
+	+	157	0
+	+	177	47
+	+	155	34
+	+	155	0
+	+	156	0
+	+	155	49
+	+	155	12
+	+	155	34
+	+	162	25
+	+	177	50
+	+	164	0
+	+	177	0
+	+	178	35
+	+	169	0
+	+	169	156
+	+	162	13
+	+	163	41
+	+	155	0
+	+	170	57
+	+	168	0
+	+	167	4
+	+	170	101
+	+	177	4
+	+	177	0
+	+	178	0
+	+	177	0
+	+	155	8
+	+	156	8
+	+	93	0
+	+	95	0
+	+	116	0
+	+	143	43
+	+	144	65
+	+	145	13
+	+	149	0
+	+	148	95
+	+	160	101
+	+	62	0
+	+	59	10
+	a	148	16
+
+> ~/.config/starship/starship.toml
+	*	1721235443	0
+	"	20	97
+	^	20	99
+	.	20	0
+	+	8	23
+	+	9	23
+	+	8	28
+	+	9	27
+	+	8	23
+	+	9	23
+	+	4	0
+	+	4	23
+	+	4	19
+	+	4	37
+	+	4	0
+	+	4	21
+	+	4	7
+	+	4	15
+	+	4	39
+	+	4	25
+	+	4	0
+	+	2	51
+	+	16	0
+	+	12	0
+	+	7	0
+	+	5	0
+	+	7	0
+	+	4	0
+	+	7	0
+	+	6	0
+	+	5	0
+	+	6	0
+	+	7	8
+	+	7	0
+	+	12	0
+	+	16	19
+	+	16	31
+	+	16	1
+	+	16	0
+	+	4	0
+	+	4	16
+	+	16	10
+	+	4	22
+	+	16	7
+	+	16	1
+	+	16	9
+	+	16	16
+	+	4	24
+	+	16	17
+	+	16	50
+	+	16	0
+	+	4	22
+	+	16	19
+	+	4	0
+	+	16	20
+	+	16	24
+	+	16	0
+	+	20	0
+	+	4	0
+	+	21	0
+	+	4	10
+	+	17	20
+	+	4	17
+	+	20	10
+	+	17	28
+	+	4	0
+	+	16	17
+	+	17	26
+	+	18	31
+	+	19	9
+	+	17	60
+	+	21	0
+	+	4	21
+	+	21	0
+	+	20	10
+	+	21	0
+	+	21	86
+	+	20	0
+	+	21	2
+	+	17	0
+	+	21	0
+	+	17	11
+	+	21	0
+	+	17	0
+	+	19	0
+	+	18	15
+	+	17	17
+	+	17	113
+	+	19	23
+	+	20	11
+	+	20	105
+	+	21	0
+	+	20	8
+	+	20	107
+	+	20	7
+	+	20	107
+	+	17	73
+	+	20	67
+	+	21	0
+	+	22	0
+	+	4	0
+	+	19	44
+	+	18	0
+	+	20	0
+
+> ~/genproject/python.sh
+	*	1721235380	0
+	"	69	0
+	^	46	49
+	.	46	48
+	+	7	0
+	+	2	0
+	+	4	9
+	+	12	9
+	+	19	9
+	+	52	0
+	+	65	26
+	+	66	0
+	+	67	8
+	+	49	6
+	+	51	0
+	+	50	0
+	+	51	0
+	+	33	15
+	+	55	0
+	+	46	13
+	+	63	4
+	+	67	1
+	+	38	6
+	+	51	1
+	+	67	35
+	+	51	0
+	+	47	26
+	+	5	8
+	+	13	0
+	+	20	0
+	+	47	15
+	+	24	0
+	+	25	60
+	+	46	48
+
+> ~/genproject/python-flask-tailwind.sh
+	*	1721235250	0
+	"	1	0
+	^	2	38
+	.	19	0
+	+	17	3
+	+	18	3
+	+	17	1
+	+	20	1
+	+	24	0
+	+	21	94
+	+	6	1
+	+	8	5
+	+	12	5
+	+	17	5
+	+	17	3
+	+	18	3
+	+	21	5
+	+	12	55
+	+	8	19
+	+	9	5
+	+	12	35
+	+	13	3
+	+	14	3
+	+	12	6
+	+	17	6
+	+	17	0
+	+	12	0
+	+	10	1
+	+	8	2
+	+	9	3
+	+	8	1
+	+	9	1
+	+	12	1
+	+	13	1
+	+	14	1
+	+	17	1
+	+	18	1
+	+	24	1
+	+	24	9
+	+	21	31
+	+	24	65
+	+	20	0
+	+	21	1
+	+	16	21
+	+	18	0
+	+	24	0
+	+	21	0
+	+	20	0
+	+	24	0
+	+	16	0
+	+	14	0
+	+	13	0
+	+	12	0
+	+	11	6
+	+	10	0
+	+	9	0
+	+	8	0
+	+	7	17
+	+	6	0
+	+	22	0
+	+	24	1
+	+	24	0
+	+	24	23
+	+	24	5
+	+	22	0
+	+	21	22
+	+	22	19
+	+	23	11
+	+	24	0
+	+	21	0
+	+	21	24
+	+	19	0
+	+	22	0
+	+	15	0
+	+	21	0
+	+	5	0
+	+	2	37
+	+	5	14
+	+	5	0
+	+	24	0
+	+	5	0
+	+	24	0
+	+	5	0
+	+	3	16
+	+	5	0
+	+	4	0
+	+	5	28
+	+	2	3
+	+	2	0
+	+	1	0
+	+	10	0
+	+	19	0
+
+> ~/tooling/devops-bash-resources.txt
+	*	1721219476	0
+	"	10	4
+	^	2	6
+	.	11	0
+	+	11	0
+	+	10	197
+	+	11	0
+	+	7	119
+	+	7	36
+	+	8	0
+	+	10	54
+	+	9	0
+	+	6	0
+	+	11	0
+	+	3	0
+	+	11	0
+	+	3	0
+	+	4	0
+	+	3	0
+	+	2	5
+	+	11	0
+
+> ~/bash/cronjob.bash
+	*	1721216501	0
+	"	33	0
+	^	8	0
+	.	8	0
+	+	3	16
+	+	4	0
+	+	5	17
+	+	6	15
+	+	6	0
+	+	6	22
+	+	6	0
+	+	6	97
+	+	6	0
+	+	5	32
+	+	6	30
+	+	8	0
+
+> ~/.Xmodmap
+	*	1721200330	0
+	"	2	0
+	.	3	0
+	+	2	26
+	+	3	0
 
 > ~/.vim/plugin/cool.vim
 	*	1721150408	0
@@ -14260,24 +14661,6 @@ $
 	*	1720704912	0
 	"	87	0
 
-> ~/bash/cronjob.bash
-	*	1720698734	0
-	"	8	0
-	^	8	0
-	.	8	0
-	+	3	16
-	+	4	0
-	+	5	17
-	+	6	15
-	+	6	0
-	+	6	22
-	+	6	0
-	+	6	97
-	+	6	0
-	+	5	32
-	+	6	30
-	+	8	0
-
 > ~/bash/cronlogger.bash
 	*	1720698274	0
 	"	8	0
@@ -14445,113 +14828,6 @@ $
 > ~/tooling/simpler-vcs-git.txt
 	*	1720633692	0
 	"	30	0
-
-> ~/pyscripts/viewlog.py
-	*	1720622172	0
-	"	142	13
-	^	143	14
-	.	143	13
-	+	124	37
-	+	126	28
-	+	127	4
-	+	128	14
-	+	138	0
-	+	122	0
-	+	127	0
-	+	119	10
-	+	5	29
-	+	122	11
-	+	124	0
-	+	123	11
-	+	127	11
-	+	128	0
-	+	138	0
-	+	131	34
-	+	132	11
-	+	134	32
-	+	134	21
-	+	135	4
-	+	137	4
-	+	134	0
-	+	193	8
-	+	186	52
-	+	190	78
-	+	191	8
-	+	150	23
-	+	165	134
-	+	150	37
-	+	165	139
-	+	186	45
-	+	165	174
-	+	190	46
-	+	149	24
-	+	150	36
-	+	165	166
-	+	186	70
-	+	190	70
-	+	149	34
-	+	165	0
-	+	165	226
-	+	155	29
-	+	163	27
-	+	163	62
-	+	163	8
-	+	165	227
-	+	163	26
-	+	165	65
-	+	163	0
-	+	155	27
-	+	162	27
-	+	162	62
-	+	162	8
-	+	163	0
-	+	162	20
-	+	162	22
-	+	162	0
-	+	158	101
-	+	161	0
-	+	161	31
-	+	162	0
-	+	156	0
-	+	161	40
-	+	162	43
-	+	152	27
-	+	154	11
-	+	154	0
-	+	174	47
-	+	152	34
-	+	152	0
-	+	153	0
-	+	152	49
-	+	152	12
-	+	152	34
-	+	159	25
-	+	174	50
-	+	161	0
-	+	174	0
-	+	175	35
-	+	166	0
-	+	166	156
-	+	159	13
-	+	160	41
-	+	152	0
-	+	167	57
-	+	165	0
-	+	164	4
-	+	167	101
-	+	174	4
-	+	174	0
-	+	175	0
-	+	174	0
-	+	152	8
-	+	153	8
-	+	91	0
-	+	93	0
-	+	114	0
-	+	141	43
-	+	142	65
-	+	143	13
-	a	146	16
 
 > /tmp/crontab.OW9BDt/crontab
 	*	1720621447	0
@@ -15015,100 +15291,6 @@ $
 	*	1720520211	0
 	"	1	0
 
-> ~/genproject/python-flask-tailwind.sh
-	*	1720520197	0
-	"	1	0
-	^	2	38
-	.	19	0
-	+	17	3
-	+	18	3
-	+	17	1
-	+	20	1
-	+	24	0
-	+	21	94
-	+	6	1
-	+	8	5
-	+	12	5
-	+	17	5
-	+	17	3
-	+	18	3
-	+	21	5
-	+	12	55
-	+	8	19
-	+	9	5
-	+	12	35
-	+	13	3
-	+	14	3
-	+	12	6
-	+	17	6
-	+	17	0
-	+	12	0
-	+	10	1
-	+	8	2
-	+	9	3
-	+	8	1
-	+	9	1
-	+	12	1
-	+	13	1
-	+	14	1
-	+	17	1
-	+	18	1
-	+	24	1
-	+	24	9
-	+	21	31
-	+	24	65
-	+	20	0
-	+	21	1
-	+	16	21
-	+	18	0
-	+	24	0
-	+	21	0
-	+	20	0
-	+	24	0
-	+	16	0
-	+	14	0
-	+	13	0
-	+	12	0
-	+	11	6
-	+	10	0
-	+	9	0
-	+	8	0
-	+	7	17
-	+	6	0
-	+	22	0
-	+	24	1
-	+	24	0
-	+	24	23
-	+	24	5
-	+	22	0
-	+	21	22
-	+	22	19
-	+	23	11
-	+	24	0
-	+	21	0
-	+	21	24
-	+	19	0
-	+	22	0
-	+	15	0
-	+	21	0
-	+	5	0
-	+	2	37
-	+	5	14
-	+	5	0
-	+	24	0
-	+	5	0
-	+	24	0
-	+	5	0
-	+	3	16
-	+	5	0
-	+	4	0
-	+	5	28
-	+	2	3
-	+	2	0
-	+	1	0
-	+	10	0
-	+	19	0
-
 > ~/bash/hack.bash
 	*	1720369117	0
 	"	3	0
@@ -15325,39 +15507,6 @@ $
 > ~/test-1/requirements.txt
 	*	1719501054	0
 	"	1	0
-
-> ~/genproject/python.sh
-	*	1719399796	0
-	"	1	0
-	^	41	26
-	.	41	15
-	+	7	0
-	+	2	0
-	+	4	9
-	+	12	9
-	+	19	9
-	+	47	0
-	+	60	26
-	+	61	0
-	+	62	8
-	+	44	6
-	+	46	0
-	+	45	0
-	+	46	0
-	+	26	15
-	+	50	0
-	+	39	13
-	+	58	4
-	+	62	1
-	+	31	6
-	+	46	1
-	+	62	35
-	+	46	0
-	+	40	26
-	+	5	8
-	+	13	0
-	+	20	0
-	+	41	15
 
 > ~/hackernews-search/tailwind.config.js
 	*	1719397992	0
@@ -22253,112 +22402,6 @@ $
 > ~/pyscripts/.pyright.config.json
 	*	1716290057	0
 	"	1	0
-
-> ~/.config/starship/starship.toml
-	*	1716287660	0
-	"	20	98
-	^	20	99
-	.	20	98
-	+	8	23
-	+	9	23
-	+	8	28
-	+	9	27
-	+	8	23
-	+	9	23
-	+	4	0
-	+	4	23
-	+	4	19
-	+	4	37
-	+	4	0
-	+	4	21
-	+	4	7
-	+	4	15
-	+	4	39
-	+	4	25
-	+	4	0
-	+	2	51
-	+	16	0
-	+	12	0
-	+	7	0
-	+	5	0
-	+	7	0
-	+	4	0
-	+	7	0
-	+	6	0
-	+	5	0
-	+	6	0
-	+	7	8
-	+	7	0
-	+	12	0
-	+	16	19
-	+	16	31
-	+	16	1
-	+	16	0
-	+	4	0
-	+	4	16
-	+	16	10
-	+	4	22
-	+	16	7
-	+	16	1
-	+	16	9
-	+	16	16
-	+	4	24
-	+	16	17
-	+	16	50
-	+	16	0
-	+	4	22
-	+	16	19
-	+	4	0
-	+	16	20
-	+	16	24
-	+	16	0
-	+	20	0
-	+	4	0
-	+	21	0
-	+	4	10
-	+	17	20
-	+	4	17
-	+	20	10
-	+	17	28
-	+	4	0
-	+	16	17
-	+	17	26
-	+	18	31
-	+	19	9
-	+	17	60
-	+	21	0
-	+	4	21
-	+	21	0
-	+	20	10
-	+	21	0
-	+	21	86
-	+	20	0
-	+	21	2
-	+	17	0
-	+	21	0
-	+	17	11
-	+	21	0
-	+	17	0
-	+	19	0
-	+	18	15
-	+	17	17
-	+	17	113
-	+	19	23
-	+	20	11
-	+	20	105
-	+	21	0
-	+	20	8
-	+	20	107
-	+	20	7
-	+	20	107
-	+	17	73
-	+	20	67
-	+	21	0
-	+	22	0
-	+	4	0
-	+	19	44
-	+	18	0
-	+	20	98
 
 > ~/pyscripts/tmp-argcomplete.json
 	*	1716285727	0
