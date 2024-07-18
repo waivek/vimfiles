@@ -25,9 +25,9 @@ endfunction
 
 function! s:DirChangedOrFileLoaded()
     let l:directories_to_paths = {
-        \ '~/sqlite-editor': [ '~/sqlite-editor/static/css' ],
-        \ '~/hateoas': [ '~/hateoas/static/css' ],
-        \ '~/ui-components-css': [ '~/ui-components-css/static/**', '~/ui-components-css/templates/**' ]
+        \ '~/sqlite-editor'     : [ '~/sqlite-editor/static/css' ],
+        \ '~/hateoas'           : [ '~/hateoas/static/css' , '~/hateoas/templates/**'],
+        \ '~/ui-components-css' : [ '~/ui-components-css/static/**', '~/ui-components-css/templates/**' ]
         \ }
     " run s:ExpandUser on l:directories_to_paths
     for l:key in keys(l:directories_to_paths)
