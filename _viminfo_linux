@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/read
+~MSle0~/^\s*function!\?\s\+\(s:\)\?\(\w\+#\)\?\w*date
 
 # Last Substitute Search Pattern:
 ~MSle0&^\(\s*\)\(\w\+\), \(.*\)
@@ -21,7 +21,45 @@ $\1\3\1\2 = connection.cursor()
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1721320328,,"q"
+|2,0,1721323411,,"q"
+:Date 
+|2,0,1721320918,,"Date "
+:Date
+|2,0,1721320913,,"Date"
+:D
+|2,0,1721320912,,"D"
+:!start . at
+|2,0,1721320872,,"!start . at"
+:inoremap <C-;> :echo "Test"
+|2,0,1721320829,,"inoremap <C-;> :echo \"Test\""
+:inoremap <A-i> :echo "Test"
+|2,0,1721320807,,"inoremap <A-i> :echo \"Test\""
+:Date 2024-07-18
+|2,0,1721320785,,"Date 2024-07-18"
+:so %
+|2,0,1721320760,,"so %"
+:DateNormal 	
+|2,0,1721320749,,"DateNormal 	"
+:DateNormal 
+|2,0,1721320741,,"DateNormal "
+:DateNormal
+|2,0,1721320738,,"DateNormal"
+:Date 1
+|2,0,1721320595,,"Date 1"
+:DateNormal 1
+|2,0,1721320568,,"DateNormal 1"
+:HotReload
+|2,0,1721320516,,"HotReload"
+:DateInsert
+|2,0,1721320420,,"DateInsert"
+:q!
+|2,0,1721320386,,"q!"
+:term 
+|2,0,1721320371,,"term "
+:e ~/.vim/plugin/date.vim
+|2,0,1721320351,,"e ~/.vim/plugin/date.vim"
+:edit $MYVIMRC
+|2,0,1721320337,,"edit $MYVIMRC"
 :FIN
 |2,0,1721314475,,"FIN"
 :FIND base-dark.css
@@ -48,8 +86,6 @@ $\1\3\1\2 = connection.cursor()
 |2,0,1721314223,," grep main.sql"
 :e main.sql
 |2,0,1721314117,,"e main.sql"
-:q!
-|2,0,1721312257,,"q!"
 :e download_worker.py
 |2,0,1721312250,,"e download_worker.py"
 :193
@@ -82,8 +118,6 @@ $\1\3\1\2 = connection.cursor()
 |2,0,1721310640,,"set path?"
 :e
 |2,0,1721310638,,"e"
-:so %
-|2,0,1721310630,,"so %"
 :'<,'>Tab /:
 |2,0,1721310613,,"'<,'>Tab /:"
 :Tab /:
@@ -168,8 +202,6 @@ $\1\3\1\2 = connection.cursor()
 |2,0,1721237294,,"PlugInstall"
 :PlugInsatl
 |2,0,1721237249,,"PlugInsatl"
-:edit $MYVIMRC
-|2,0,1721237246,,"edit $MYVIMRC"
 :Coc
 |2,0,1721237221,,"Coc"
 :ConfigHelper1
@@ -202,8 +234,6 @@ $\1\3\1\2 = connection.cursor()
 |2,0,1721219295,,"qa!"
 :bd
 |2,0,1721219288,,"bd"
-:Date 
-|2,0,1721219229,,"Date "
 :MRU 2:devops-bash-resources.txt
 |2,0,1721200333,,"MRU 2:devops-bash-resources.txt"
 :e stdlib.vim
@@ -494,8 +524,6 @@ $\1\3\1\2 = connection.cursor()
 |2,0,1720526078,,"echo has('clipboard')"
 :call system('echo 1 | xclip')
 |2,0,1720526061,,"call system('echo 1 | xclip')"
-:HotReload
-|2,0,1720525988,,"HotReload"
 :mes
 |2,0,1720525962,,"mes"
 :MRU xclip
@@ -576,8 +604,6 @@ $\1\3\1\2 = connection.cursor()
 |2,0,1719684777,,"v/[A-Za-z0-9-]\\{10,\\}/d"
 :MRU al
 |2,0,1719654750,,"MRU al"
-:term 
-|2,0,1719654718,,"term "
 :e ~/tooling/git-knowledge.txt
 |2,0,1719654646,,"e ~/tooling/git-knowledge.txt"
 :e .git/config
@@ -7908,6 +7934,10 @@ $\1\3\1\2 = connection.cursor()
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/^\s*function!\?\s\+\(s:\)\?\(\w\+#\)\?\w*date
+|2,1,1721320340,47,"^\\s*function!\\?\\s\\+\\(s:\\)\\?\\(\\w\\+#\\)\\?\\w*date"
+?/date
+|2,1,1721320339,47,"date"
 ?/read
 |2,1,1721314435,47,"read"
 ?/downloads
@@ -9578,8 +9608,6 @@ $\1\3\1\2 = connection.cursor()
 |2,1,1714325731,47,"\\$"
 ?/lock
 |2,1,1714309033,47,"lock"
-?/date
-|2,1,1714307928,47,"date"
 ?/\<sh\>
 |2,1,1714307274,47,"\\<sh\\>"
 ?/sh
@@ -11729,45 +11757,40 @@ $\1\3\1\2 = connection.cursor()
 
 # Registers:
 "0	CHAR	0
-	INTEGER
-|3,0,0,0,1,0,1721314211,"INTEGER"
+	selected_date_string
+|3,0,0,0,1,0,1721320882,"selected_date_string"
 ""1	LINE	0
+	" 
 	
-|3,1,1,1,1,0,1721314242,""
+|3,1,1,1,2,0,1721320921,"\" ",""
 "2	LINE	0
 	
-|3,0,2,1,1,0,1721314122,""
+|3,0,2,1,1,0,1721320811,""
 "3	LINE	0
 	
-|3,0,3,1,1,0,1721314121,""
+|3,0,3,1,1,0,1721320733,""
 "4	LINE	0
-	        log("Downloads folder does not exist.")
-	        log("Exiting.")
-|3,0,4,1,2,0,1721312306,"        log(\"Downloads folder does not exist.\")","        log(\"Exiting.\")"
+	    else
+|3,0,4,1,1,0,1721320716,"    else"
 "5	LINE	0
-	    /* background: #555; */
-	    /* color: #888; */
-	    /* border: solid 1px #666; */
-|3,0,5,1,3,0,1721311854,"    /* background: #555; */","    /* color: #888; */","    /* border: solid 1px #666; */"
+	let s:DateCompletionNormalFunc = {-> DateCompleteFunc(0, '')}
+|3,0,5,1,1,0,1721320674,"let s:DateCompletionNormalFunc = {-> DateCompleteFunc(0, '')}"
 "6	LINE	0
-	input:read-only, input:disabled {
-	    /* background: #555; */
-	    /* color: #888; */
-	    /* border: solid 1px #666; */
-	}
-|3,0,6,1,5,0,1721311743,"input:read-only, input:disabled {","    /* background: #555; */","    /* color: #888; */","    /* border: solid 1px #666; */","}"
+	let l:
+|3,0,6,1,1,0,1721320607,"let l:"
 "7	LINE	0
-	    background: var(--border-color);
-	    border-color: 
-|3,0,7,1,2,0,1721311740,"    background: var(--border-color);","    border-color: "
-"8	LINE	0
 	
-|3,0,8,1,1,0,1721311682,""
+|3,0,7,1,1,0,1721320587,""
+"8	LINE	0
+	    let l:line = getline('.')
+	    let l:col = col('.')
+	    let l:line = strpart(l:line, 0, l:col - 1) . a:selected_date_string . strpart(l:line, l:col - 1)
+	    call setline('.', l:line)
+	    call cursor(line('.'), l:col + strlen(a:selected_date_string))
+|3,0,8,1,5,0,1721320571,"    let l:line = getline('.')","    let l:col = col('.')","    let l:line = strpart(l:line, 0, l:col - 1) . a:selected_date_string . strpart(l:line, l:col - 1)","    call setline('.', l:line)","    call cursor(line('.'), l:col + strlen(a:selected_date_string))"
 "9	LINE	0
-	    background: #555;
-	    color: #888;
-	    border: solid 1px #666;
-|3,0,9,1,3,0,1721311637,"    background: #555;","    color: #888;","    border: solid 1px #666;"
+	-nargs=1 DateNormal call <SID>DateNormal(<f-args>)
+|3,0,9,1,1,0,1721320513,"-nargs=1 DateNormal call <SID>DateNormal(<f-args>)"
 "a	CHAR	0
 	Tabularize /'/l1c1l1c1l1c1l1c1l1
 |3,0,10,0,1,0,1721312889,"Tabularize /'/l1c1l1c1l1c1l1c1l1"
@@ -11784,36 +11807,146 @@ $\1\3\1\2 = connection.cursor()
 	https://rsms.me/inter/
 |3,0,28,0,1,0,1718483440,"https://rsms.me/inter/"
 "-	CHAR	0
-	INTEGER
-|3,0,36,0,1,0,1721314205,"INTEGER"
+	:
+|3,0,36,0,1,0,1721320905,":"
 
 # File marks:
-'0  36  0  ~/sqlite-editor/ui-components-css/static/css-themes/dark-gray-mono.css
-|4,48,36,0,1721314491,"~/sqlite-editor/ui-components-css/static/css-themes/dark-gray-mono.css"
-'1  36  0  ~/sqlite-editor/ui-components-css/static/css-themes/dark-gray-mono.css
-|4,49,36,0,1721314491,"~/sqlite-editor/ui-components-css/static/css-themes/dark-gray-mono.css"
-'2  1  0  ~/sqlite-editor/dbutils.py
-|4,50,1,0,1721314476,"~/sqlite-editor/dbutils.py"
-'3  1  0  ~/sqlite-editor/dbutils.py
-|4,51,1,0,1721314476,"~/sqlite-editor/dbutils.py"
-'4  1  0  ~/sqlite-editor/dbutils.py
-|4,52,1,0,1721314476,"~/sqlite-editor/dbutils.py"
-'5  1  0  ~/sqlite-editor/dbutils.py
-|4,53,1,0,1721314476,"~/sqlite-editor/dbutils.py"
-'6  56  11  ~/hateoas/ui-components-css/static/css-themes/dark-gray-mono.css
-|4,54,56,11,1721314438,"~/hateoas/ui-components-css/static/css-themes/dark-gray-mono.css"
-'7  56  11  ~/hateoas/ui-components-css/static/css-themes/dark-gray-mono.css
-|4,55,56,11,1721314438,"~/hateoas/ui-components-css/static/css-themes/dark-gray-mono.css"
-'8  56  11  ~/hateoas/ui-components-css/static/css-themes/dark-gray-mono.css
-|4,56,56,11,1721314438,"~/hateoas/ui-components-css/static/css-themes/dark-gray-mono.css"
-'9  56  11  ~/hateoas/ui-components-css/static/css-themes/dark-gray-mono.css
-|4,57,56,11,1721314438,"~/hateoas/ui-components-css/static/css-themes/dark-gray-mono.css"
+'0  1  0  ~/.vim/README.md
+|4,48,1,0,1721323412,"~/.vim/README.md"
+'1  1  0  ~/.vim/plugin/date.vim
+|4,49,1,0,1721320929,"~/.vim/plugin/date.vim"
+'2  1  0  ~/.vim/plugin/date.vim
+|4,50,1,0,1721320929,"~/.vim/plugin/date.vim"
+'3  36  0  ~/sqlite-editor/ui-components-css/static/css-themes/dark-gray-mono.css
+|4,51,36,0,1721314491,"~/sqlite-editor/ui-components-css/static/css-themes/dark-gray-mono.css"
+'4  36  0  ~/sqlite-editor/ui-components-css/static/css-themes/dark-gray-mono.css
+|4,52,36,0,1721314491,"~/sqlite-editor/ui-components-css/static/css-themes/dark-gray-mono.css"
+'5  36  0  ~/sqlite-editor/ui-components-css/static/css-themes/dark-gray-mono.css
+|4,53,36,0,1721314491,"~/sqlite-editor/ui-components-css/static/css-themes/dark-gray-mono.css"
+'6  36  0  ~/sqlite-editor/ui-components-css/static/css-themes/dark-gray-mono.css
+|4,54,36,0,1721314491,"~/sqlite-editor/ui-components-css/static/css-themes/dark-gray-mono.css"
+'7  36  0  ~/sqlite-editor/ui-components-css/static/css-themes/dark-gray-mono.css
+|4,55,36,0,1721314491,"~/sqlite-editor/ui-components-css/static/css-themes/dark-gray-mono.css"
+'8  36  0  ~/sqlite-editor/ui-components-css/static/css-themes/dark-gray-mono.css
+|4,56,36,0,1721314491,"~/sqlite-editor/ui-components-css/static/css-themes/dark-gray-mono.css"
+'9  36  0  ~/sqlite-editor/ui-components-css/static/css-themes/dark-gray-mono.css
+|4,57,36,0,1721314491,"~/sqlite-editor/ui-components-css/static/css-themes/dark-gray-mono.css"
 
 # Jumplist (newest first):
+-'  1  0  ~/.vim/README.md
+|4,39,1,0,1721323412,"~/.vim/README.md"
+-'  1  0  ~/.vim/plugin/date.vim
+|4,39,1,0,1721320929,"~/.vim/plugin/date.vim"
+-'  1  0  ~/.vim/plugin/date.vim
+|4,39,1,0,1721320929,"~/.vim/plugin/date.vim"
+-'  63  0  ~/.vim/plugin/date.vim
+|4,39,63,0,1721320927,"~/.vim/plugin/date.vim"
+-'  63  0  ~/.vim/plugin/date.vim
+|4,39,63,0,1721320927,"~/.vim/plugin/date.vim"
+-'  62  0  ~/.vim/plugin/date.vim
+|4,39,62,0,1721320919,"~/.vim/plugin/date.vim"
+-'  62  0  ~/.vim/plugin/date.vim
+|4,39,62,0,1721320919,"~/.vim/plugin/date.vim"
+-'  56  25  ~/.vim/plugin/date.vim
+|4,39,56,25,1721320882,"~/.vim/plugin/date.vim"
+-'  50  25  ~/.vim/plugin/date.vim
+|4,39,50,25,1721320882,"~/.vim/plugin/date.vim"
+-'  56  25  ~/.vim/plugin/date.vim
+|4,39,56,25,1721320882,"~/.vim/plugin/date.vim"
+-'  50  25  ~/.vim/plugin/date.vim
+|4,39,50,25,1721320882,"~/.vim/plugin/date.vim"
+-'  38  0  ~/.vim/plugin/date.vim
+|4,39,38,0,1721320867,"~/.vim/plugin/date.vim"
+-'  38  0  ~/.vim/plugin/date.vim
+|4,39,38,0,1721320867,"~/.vim/plugin/date.vim"
+-'  58  14  ~/.vim/plugin/date.vim
+|4,39,58,14,1721320850,"~/.vim/plugin/date.vim"
+-'  58  14  ~/.vim/plugin/date.vim
+|4,39,58,14,1721320850,"~/.vim/plugin/date.vim"
+-'  59  4  ~/.vim/plugin/date.vim
+|4,39,59,4,1721320841,"~/.vim/plugin/date.vim"
+-'  59  4  ~/.vim/plugin/date.vim
+|4,39,59,4,1721320841,"~/.vim/plugin/date.vim"
+-'  3  37  ~/.vim/plugin/date.vim
+|4,39,3,37,1721320760,"~/.vim/plugin/date.vim"
+-'  3  37  ~/.vim/plugin/date.vim
+|4,39,3,37,1721320760,"~/.vim/plugin/date.vim"
+-'  65  0  ~/.vim/plugin/date.vim
+|4,39,65,0,1721320756,"~/.vim/plugin/date.vim"
+-'  65  0  ~/.vim/plugin/date.vim
+|4,39,65,0,1721320756,"~/.vim/plugin/date.vim"
+-'  2  0  ~/.vim/plugin/date.vim
+|4,39,2,0,1721320727,"~/.vim/plugin/date.vim"
+-'  2  0  ~/.vim/plugin/date.vim
+|4,39,2,0,1721320727,"~/.vim/plugin/date.vim"
+-'  12  44  ~/.vim/plugin/date.vim
+|4,39,12,44,1721320688,"~/.vim/plugin/date.vim"
+-'  12  44  ~/.vim/plugin/date.vim
+|4,39,12,44,1721320688,"~/.vim/plugin/date.vim"
+-'  61  0  ~/.vim/plugin/date.vim
+|4,39,61,0,1721320587,"~/.vim/plugin/date.vim"
+-'  61  0  ~/.vim/plugin/date.vim
+|4,39,61,0,1721320587,"~/.vim/plugin/date.vim"
+-'  21  31  ~/.vim/plugin/date.vim
+|4,39,21,31,1721320561,"~/.vim/plugin/date.vim"
+-'  21  31  ~/.vim/plugin/date.vim
+|4,39,21,31,1721320561,"~/.vim/plugin/date.vim"
+-'  64  0  ~/.vim/plugin/date.vim
+|4,39,64,0,1721320511,"~/.vim/plugin/date.vim"
+-'  64  0  ~/.vim/plugin/date.vim
+|4,39,64,0,1721320511,"~/.vim/plugin/date.vim"
+-'  66  27  ~/.vim/plugin/date.vim
+|4,39,66,27,1721320495,"~/.vim/plugin/date.vim"
+-'  66  27  ~/.vim/plugin/date.vim
+|4,39,66,27,1721320495,"~/.vim/plugin/date.vim"
+-'  27  0  ~/.vim/plugin/date.vim
+|4,39,27,0,1721320399,"~/.vim/plugin/date.vim"
+-'  27  0  ~/.vim/plugin/date.vim
+|4,39,27,0,1721320399,"~/.vim/plugin/date.vim"
+-'  29  0  ~/.vim/plugin/date.vim
+|4,39,29,0,1721320377,"~/.vim/plugin/date.vim"
+-'  30  0  ~/.vim/plugin/date.vim
+|4,39,30,0,1721320377,"~/.vim/plugin/date.vim"
+-'  32  0  ~/.vim/plugin/date.vim
+|4,39,32,0,1721320377,"~/.vim/plugin/date.vim"
+-'  48  0  ~/.vim/plugin/date.vim
+|4,39,48,0,1721320377,"~/.vim/plugin/date.vim"
+-'  29  0  ~/.vim/plugin/date.vim
+|4,39,29,0,1721320377,"~/.vim/plugin/date.vim"
+-'  30  0  ~/.vim/plugin/date.vim
+|4,39,30,0,1721320377,"~/.vim/plugin/date.vim"
+-'  32  0  ~/.vim/plugin/date.vim
+|4,39,32,0,1721320377,"~/.vim/plugin/date.vim"
+-'  48  0  ~/.vim/plugin/date.vim
+|4,39,48,0,1721320377,"~/.vim/plugin/date.vim"
+-'  794  44  ~/.vim/vimrc
+|4,39,794,44,1721320351,"~/.vim/vimrc"
+-'  794  44  ~/.vim/vimrc
+|4,39,794,44,1721320351,"~/.vim/vimrc"
+-'  735  0  ~/.vim/vimrc
+|4,39,735,0,1721320340,"~/.vim/vimrc"
+-'  734  10  ~/.vim/vimrc
+|4,39,734,10,1721320340,"~/.vim/vimrc"
+-'  735  0  ~/.vim/vimrc
+|4,39,735,0,1721320340,"~/.vim/vimrc"
+-'  734  10  ~/.vim/vimrc
+|4,39,734,10,1721320340,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1721320339,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1721320339,"~/.vim/vimrc"
 -'  36  0  ~/sqlite-editor/ui-components-css/static/css-themes/dark-gray-mono.css
 |4,39,36,0,1721314491,"~/sqlite-editor/ui-components-css/static/css-themes/dark-gray-mono.css"
 -'  36  0  ~/sqlite-editor/ui-components-css/static/css-themes/dark-gray-mono.css
 |4,39,36,0,1721314491,"~/sqlite-editor/ui-components-css/static/css-themes/dark-gray-mono.css"
+-'  36  0  ~/sqlite-editor/ui-components-css/static/css-themes/dark-gray-mono.css
+|4,39,36,0,1721314491,"~/sqlite-editor/ui-components-css/static/css-themes/dark-gray-mono.css"
+-'  36  0  ~/sqlite-editor/ui-components-css/static/css-themes/dark-gray-mono.css
+|4,39,36,0,1721314491,"~/sqlite-editor/ui-components-css/static/css-themes/dark-gray-mono.css"
+-'  1  0  ~/sqlite-editor/ui-components-css/static/css-themes/dark-gray-mono.css
+|4,39,1,0,1721314487,"~/sqlite-editor/ui-components-css/static/css-themes/dark-gray-mono.css"
+-'  1  0  ~/sqlite-editor/ui-components-css/static/css-themes/dark-gray-mono.css
+|4,39,1,0,1721314487,"~/sqlite-editor/ui-components-css/static/css-themes/dark-gray-mono.css"
 -'  1  0  ~/sqlite-editor/ui-components-css/static/css-themes/dark-gray-mono.css
 |4,39,1,0,1721314487,"~/sqlite-editor/ui-components-css/static/css-themes/dark-gray-mono.css"
 -'  1  0  ~/sqlite-editor/ui-components-css/static/css-themes/dark-gray-mono.css
@@ -11824,6 +11957,14 @@ $\1\3\1\2 = connection.cursor()
 |4,39,1,0,1721314476,"~/sqlite-editor/dbutils.py"
 -'  1  0  ~/sqlite-editor/dbutils.py
 |4,39,1,0,1721314476,"~/sqlite-editor/dbutils.py"
+-'  1  0  ~/sqlite-editor/dbutils.py
+|4,39,1,0,1721314476,"~/sqlite-editor/dbutils.py"
+-'  1  0  ~/sqlite-editor/dbutils.py
+|4,39,1,0,1721314476,"~/sqlite-editor/dbutils.py"
+-'  56  0  ~/hateoas/ui-components-css/static/css-themes/dark-gray-mono.css
+|4,39,56,0,1721314467,"~/hateoas/ui-components-css/static/css-themes/dark-gray-mono.css"
+-'  56  0  ~/hateoas/ui-components-css/static/css-themes/dark-gray-mono.css
+|4,39,56,0,1721314467,"~/hateoas/ui-components-css/static/css-themes/dark-gray-mono.css"
 -'  56  0  ~/hateoas/ui-components-css/static/css-themes/dark-gray-mono.css
 |4,39,56,0,1721314467,"~/hateoas/ui-components-css/static/css-themes/dark-gray-mono.css"
 -'  56  0  ~/hateoas/ui-components-css/static/css-themes/dark-gray-mono.css
@@ -11840,6 +11981,10 @@ $\1\3\1\2 = connection.cursor()
 |4,39,20,11,1721314436,"~/hateoas/ui-components-css/static/css-themes/dark-gray-mono.css"
 -'  20  11  ~/hateoas/ui-components-css/static/css-themes/dark-gray-mono.css
 |4,39,20,11,1721314436,"~/hateoas/ui-components-css/static/css-themes/dark-gray-mono.css"
+-'  20  11  ~/hateoas/ui-components-css/static/css-themes/dark-gray-mono.css
+|4,39,20,11,1721314436,"~/hateoas/ui-components-css/static/css-themes/dark-gray-mono.css"
+-'  20  11  ~/hateoas/ui-components-css/static/css-themes/dark-gray-mono.css
+|4,39,20,11,1721314436,"~/hateoas/ui-components-css/static/css-themes/dark-gray-mono.css"
 -'  1  0  ~/hateoas/ui-components-css/static/css-themes/dark-gray-mono.css
 |4,39,1,0,1721314435,"~/hateoas/ui-components-css/static/css-themes/dark-gray-mono.css"
 -'  1  0  ~/hateoas/ui-components-css/static/css-themes/dark-gray-mono.css
@@ -11848,6 +11993,18 @@ $\1\3\1\2 = connection.cursor()
 |4,39,1,0,1721314435,"~/hateoas/ui-components-css/static/css-themes/dark-gray-mono.css"
 -'  1  0  ~/hateoas/ui-components-css/static/css-themes/dark-gray-mono.css
 |4,39,1,0,1721314435,"~/hateoas/ui-components-css/static/css-themes/dark-gray-mono.css"
+-'  1  0  ~/hateoas/ui-components-css/static/css-themes/dark-gray-mono.css
+|4,39,1,0,1721314435,"~/hateoas/ui-components-css/static/css-themes/dark-gray-mono.css"
+-'  1  0  ~/hateoas/ui-components-css/static/css-themes/dark-gray-mono.css
+|4,39,1,0,1721314435,"~/hateoas/ui-components-css/static/css-themes/dark-gray-mono.css"
+-'  826  0  ~/hateoas/hateoas-api.py
+|4,39,826,0,1721314280,"~/hateoas/hateoas-api.py"
+-'  1  0  ~/hateoas/templates/sync_video_on_video.html
+|4,39,1,0,1721314280,"~/hateoas/templates/sync_video_on_video.html"
+-'  826  0  ~/hateoas/hateoas-api.py
+|4,39,826,0,1721314280,"~/hateoas/hateoas-api.py"
+-'  1  0  ~/hateoas/templates/sync_video_on_video.html
+|4,39,1,0,1721314280,"~/hateoas/templates/sync_video_on_video.html"
 -'  826  0  ~/hateoas/hateoas-api.py
 |4,39,826,0,1721314280,"~/hateoas/hateoas-api.py"
 -'  1  0  ~/hateoas/templates/sync_video_on_video.html
@@ -11876,143 +12033,171 @@ $\1\3\1\2 = connection.cursor()
 |4,39,875,4,1721314246,"~/hateoas/hateoas-api.py"
 -'  875  4  ~/hateoas/hateoas-api.py
 |4,39,875,4,1721314246,"~/hateoas/hateoas-api.py"
--'  875  4  ~/hateoas/hateoas-api.py
-|4,39,875,4,1721314246,"~/hateoas/hateoas-api.py"
--'  46  4  ~/hateoas/main.sql
-|4,39,46,4,1721314239,"~/hateoas/main.sql"
--'  46  4  ~/hateoas/main.sql
-|4,39,46,4,1721314239,"~/hateoas/main.sql"
--'  46  4  ~/hateoas/main.sql
-|4,39,46,4,1721314239,"~/hateoas/main.sql"
--'  46  4  ~/hateoas/main.sql
-|4,39,46,4,1721314239,"~/hateoas/main.sql"
--'  46  4  ~/hateoas/main.sql
-|4,39,46,4,1721314239,"~/hateoas/main.sql"
--'  32  16  ~/hateoas/main.sql
-|4,39,32,16,1721314227,"~/hateoas/main.sql"
--'  32  16  ~/hateoas/main.sql
-|4,39,32,16,1721314227,"~/hateoas/main.sql"
--'  32  16  ~/hateoas/main.sql
-|4,39,32,16,1721314227,"~/hateoas/main.sql"
--'  32  16  ~/hateoas/main.sql
-|4,39,32,16,1721314227,"~/hateoas/main.sql"
--'  32  16  ~/hateoas/main.sql
-|4,39,32,16,1721314227,"~/hateoas/main.sql"
--'  30  0  ~/hateoas/main.sql
-|4,39,30,0,1721314123,"~/hateoas/main.sql"
--'  29  0  ~/hateoas/main.sql
-|4,39,29,0,1721314123,"~/hateoas/main.sql"
--'  30  0  ~/hateoas/main.sql
-|4,39,30,0,1721314123,"~/hateoas/main.sql"
--'  29  0  ~/hateoas/main.sql
-|4,39,29,0,1721314123,"~/hateoas/main.sql"
--'  30  0  ~/hateoas/main.sql
-|4,39,30,0,1721314123,"~/hateoas/main.sql"
--'  29  0  ~/hateoas/main.sql
-|4,39,29,0,1721314123,"~/hateoas/main.sql"
--'  30  0  ~/hateoas/main.sql
-|4,39,30,0,1721314123,"~/hateoas/main.sql"
--'  29  0  ~/hateoas/main.sql
-|4,39,29,0,1721314123,"~/hateoas/main.sql"
--'  30  0  ~/hateoas/main.sql
-|4,39,30,0,1721314123,"~/hateoas/main.sql"
--'  29  0  ~/hateoas/main.sql
-|4,39,29,0,1721314123,"~/hateoas/main.sql"
--'  51  0  ~/hateoas/main.sql
-|4,39,51,0,1721314120,"~/hateoas/main.sql"
--'  50  0  ~/hateoas/main.sql
-|4,39,50,0,1721314120,"~/hateoas/main.sql"
--'  51  0  ~/hateoas/main.sql
-|4,39,51,0,1721314120,"~/hateoas/main.sql"
--'  50  0  ~/hateoas/main.sql
-|4,39,50,0,1721314120,"~/hateoas/main.sql"
--'  51  0  ~/hateoas/main.sql
-|4,39,51,0,1721314120,"~/hateoas/main.sql"
--'  50  0  ~/hateoas/main.sql
-|4,39,50,0,1721314120,"~/hateoas/main.sql"
--'  51  0  ~/hateoas/main.sql
-|4,39,51,0,1721314120,"~/hateoas/main.sql"
--'  50  0  ~/hateoas/main.sql
-|4,39,50,0,1721314120,"~/hateoas/main.sql"
--'  51  0  ~/hateoas/main.sql
-|4,39,51,0,1721314120,"~/hateoas/main.sql"
--'  50  0  ~/hateoas/main.sql
-|4,39,50,0,1721314120,"~/hateoas/main.sql"
--'  1  0  ~/hateoas/main.sql
-|4,39,1,0,1721314117,"~/hateoas/main.sql"
--'  21  0  ~/hateoas/download_worker.py
-|4,39,21,0,1721314117,"~/hateoas/download_worker.py"
--'  1  0  ~/hateoas/main.sql
-|4,39,1,0,1721314117,"~/hateoas/main.sql"
--'  21  0  ~/hateoas/download_worker.py
-|4,39,21,0,1721314117,"~/hateoas/download_worker.py"
--'  1  0  ~/hateoas/main.sql
-|4,39,1,0,1721314117,"~/hateoas/main.sql"
--'  21  0  ~/hateoas/download_worker.py
-|4,39,21,0,1721314117,"~/hateoas/download_worker.py"
--'  1  0  ~/hateoas/main.sql
-|4,39,1,0,1721314117,"~/hateoas/main.sql"
--'  21  0  ~/hateoas/download_worker.py
-|4,39,21,0,1721314117,"~/hateoas/download_worker.py"
--'  1  0  ~/hateoas/main.sql
-|4,39,1,0,1721314117,"~/hateoas/main.sql"
--'  21  0  ~/hateoas/download_worker.py
-|4,39,21,0,1721314117,"~/hateoas/download_worker.py"
--'  15  32  ~/hateoas/download_worker.py
-|4,39,15,32,1721313653,"~/hateoas/download_worker.py"
--'  15  32  ~/hateoas/download_worker.py
-|4,39,15,32,1721313653,"~/hateoas/download_worker.py"
--'  15  32  ~/hateoas/download_worker.py
-|4,39,15,32,1721313653,"~/hateoas/download_worker.py"
--'  15  32  ~/hateoas/download_worker.py
-|4,39,15,32,1721313653,"~/hateoas/download_worker.py"
--'  15  32  ~/hateoas/download_worker.py
-|4,39,15,32,1721313653,"~/hateoas/download_worker.py"
--'  1  0  ~/hateoas/download_worker.py
-|4,39,1,0,1721313649,"~/hateoas/download_worker.py"
--'  1  0  ~/hateoas/download_worker.py
-|4,39,1,0,1721313649,"~/hateoas/download_worker.py"
--'  1  0  ~/hateoas/download_worker.py
-|4,39,1,0,1721313649,"~/hateoas/download_worker.py"
--'  1  0  ~/hateoas/download_worker.py
-|4,39,1,0,1721313649,"~/hateoas/download_worker.py"
--'  1  0  ~/hateoas/download_worker.py
-|4,39,1,0,1721313649,"~/hateoas/download_worker.py"
--'  1  0  ~/bash/logs/download_worker-red.log
-|4,39,1,0,1721313645,"~/bash/logs/download_worker-red.log"
--'  1  0  ~/bash/logs/download_worker-red.log
-|4,39,1,0,1721313645,"~/bash/logs/download_worker-red.log"
--'  1  0  ~/bash/logs/download_worker-red.log
-|4,39,1,0,1721313645,"~/bash/logs/download_worker-red.log"
--'  1  0  ~/bash/logs/download_worker-red.log
-|4,39,1,0,1721313645,"~/bash/logs/download_worker-red.log"
--'  1  0  ~/bash/logs/download_worker-red.log
-|4,39,1,0,1721313645,"~/bash/logs/download_worker-red.log"
--'  1  0  ~/bash/logs/download_worker-red.log
-|4,39,1,0,1721313645,"~/bash/logs/download_worker-red.log"
--'  15421  0  ~/bash/logs/download_worker-red.log
-|4,39,15421,0,1721312941,"~/bash/logs/download_worker-red.log"
--'  15421  0  ~/bash/logs/download_worker-red.log
-|4,39,15421,0,1721312941,"~/bash/logs/download_worker-red.log"
--'  15421  0  ~/bash/logs/download_worker-red.log
-|4,39,15421,0,1721312941,"~/bash/logs/download_worker-red.log"
--'  15421  0  ~/bash/logs/download_worker-red.log
-|4,39,15421,0,1721312941,"~/bash/logs/download_worker-red.log"
--'  15421  0  ~/bash/logs/download_worker-red.log
-|4,39,15421,0,1721312941,"~/bash/logs/download_worker-red.log"
--'  15421  0  ~/bash/logs/download_worker-red.log
-|4,39,15421,0,1721312941,"~/bash/logs/download_worker-red.log"
--'  15421  0  ~/bash/logs/download_worker-red.log
-|4,39,15421,0,1721312941,"~/bash/logs/download_worker-red.log"
--'  15  0  ~/bash/logs/download_worker-red.log
-|4,39,15,0,1721312923,"~/bash/logs/download_worker-red.log"
--'  15  0  ~/bash/logs/download_worker-red.log
-|4,39,15,0,1721312923,"~/bash/logs/download_worker-red.log"
 
 # Buffer list:
-%~/sqlite-editor/ui-components-css/static/css-themes/dark-gray-mono.css	36	0
+%~/.vim/README.md	1	0
 
 # History of marks within files (newest to oldest):
+
+> ~/.vim/README.md
+	*	1721323410	0
+	"	1	0
+
+> ~/.vim/plugin/date.vim
+	*	1721320927	0
+	"	1	0
+	^	55	9
+	.	63	0
+	+	12	0
+	+	66	50
+	+	63	0
+	+	66	48
+	+	63	0
+	+	66	58
+	+	50	22
+	+	61	10
+	+	61	0
+	+	50	42
+	+	56	4
+	+	66	92
+	+	66	0
+	+	65	0
+	+	66	0
+	+	1	0
+	+	63	0
+	+	56	63
+	+	57	29
+	+	58	24
+	+	59	100
+	+	60	29
+	+	61	0
+	+	63	0
+	+	65	5
+	+	65	62
+	+	3	36
+	+	10	10
+	+	4	0
+	+	57	0
+	+	63	1
+	+	3	37
+	+	63	0
+	+	62	0
+	+	59	0
+	+	58	0
+	+	50	25
+	+	51	8
+	+	55	8
+	+	63	0
+	+	59	49
+	+	63	0
+	+	62	0
+	+	63	0
+
+> ~/.vim/vimrc
+	*	1721320362	0
+	"	58	0
+	^	1080	10
+	.	794	0
+	+	1290	0
+	+	1290	10
+	+	1290	0
+	+	1290	25
+	+	1290	10
+	+	1290	0
+	+	1290	60
+	+	1290	0
+	+	1290	55
+	+	1290	0
+	+	1290	44
+	+	1290	0
+	+	1290	19
+	+	1290	71
+	+	1290	0
+	+	1290	23
+	+	1290	41
+	+	1290	44
+	+	1290	40
+	+	1290	28
+	+	1290	0
+	+	1290	11
+	+	1290	18
+	+	1290	43
+	+	1290	64
+	+	1290	54
+	+	1290	0
+	+	1290	31
+	+	1290	0
+	+	1290	6
+	+	1290	0
+	+	1290	1
+	+	1290	0
+	+	1290	80
+	+	1290	75
+	+	1290	0
+	+	1290	52
+	+	1290	41
+	+	163	0
+	+	49	26
+	+	1290	0
+	+	48	0
+	+	47	22
+	+	46	25
+	+	67	0
+	+	1071	57
+	+	1076	59
+	+	1082	55
+	+	244	0
+	+	243	0
+	+	244	25
+	+	1283	1
+	+	1284	0
+	+	1286	24
+	+	1287	24
+	+	1288	24
+	+	1289	0
+	+	1268	12
+	+	1269	0
+	+	1270	0
+	+	1271	0
+	+	1291	49
+	+	1288	0
+	+	1290	13
+	+	1291	13
+	+	1288	0
+	+	1290	16
+	+	1291	16
+	+	1290	0
+	+	1292	0
+	+	1290	0
+	+	1292	0
+	+	81	0
+	+	767	0
+	+	60	0
+	+	43	0
+	+	43	25
+	+	61	3
+	+	43	5
+	+	61	16
+	+	61	0
+	+	62	0
+	+	87	16
+	+	87	0
+	+	88	0
+	+	43	5
+	+	61	3
+	+	87	0
+	+	88	0
+	+	61	0
+	+	62	0
+	+	43	0
+	+	1074	4
+	+	1076	0
+	+	1075	40
+	+	1078	36
+	+	1081	0
+	+	1079	26
+	+	1080	9
+	+	794	0
 
 > ~/sqlite-editor/ui-components-css/static/css-themes/dark-gray-mono.css
 	*	1721314489	0
@@ -13657,112 +13842,6 @@ $\1\3\1\2 = connection.cursor()
 	+	434	4
 	+	436	0
 	+	434	0
-
-> ~/.vim/vimrc
-	*	1721237306	0
-	"	1	0
-	^	1119	10
-	.	1119	9
-	+	1329	32
-	+	1329	0
-	+	1329	10
-	+	1329	0
-	+	1329	25
-	+	1329	10
-	+	1329	0
-	+	1329	60
-	+	1329	0
-	+	1329	55
-	+	1329	0
-	+	1329	44
-	+	1329	0
-	+	1329	19
-	+	1329	71
-	+	1329	0
-	+	1329	23
-	+	1329	41
-	+	1329	44
-	+	1329	40
-	+	1329	28
-	+	1329	0
-	+	1329	11
-	+	1329	18
-	+	1329	43
-	+	1329	64
-	+	1329	54
-	+	1329	0
-	+	1329	31
-	+	1329	0
-	+	1329	6
-	+	1329	0
-	+	1329	1
-	+	1329	0
-	+	1329	80
-	+	1329	75
-	+	1329	0
-	+	1329	52
-	+	1329	41
-	+	163	0
-	+	49	26
-	+	1329	0
-	+	48	0
-	+	47	22
-	+	46	25
-	+	67	0
-	+	1110	57
-	+	1115	59
-	+	1121	55
-	+	244	0
-	+	243	0
-	+	244	25
-	+	1322	1
-	+	1323	0
-	+	1325	24
-	+	1326	24
-	+	1327	24
-	+	1328	0
-	+	1307	12
-	+	1308	0
-	+	1309	0
-	+	1310	0
-	+	1330	49
-	+	1327	0
-	+	1329	13
-	+	1330	13
-	+	1327	0
-	+	1329	16
-	+	1330	16
-	+	1329	0
-	+	1331	0
-	+	1329	0
-	+	1331	0
-	+	81	0
-	+	767	0
-	+	60	0
-	+	43	0
-	+	43	25
-	+	61	3
-	+	43	5
-	+	61	16
-	+	61	0
-	+	62	0
-	+	87	16
-	+	87	0
-	+	88	0
-	+	43	5
-	+	61	3
-	+	87	0
-	+	88	0
-	+	61	0
-	+	62	0
-	+	43	0
-	+	1113	4
-	+	1115	0
-	+	1114	40
-	+	1117	36
-	+	1120	0
-	+	1118	26
-	+	1119	9
 
 > ~/Twitch/coffee-vps/code/requirements.txt
 	*	1721236927	0
@@ -32675,10 +32754,6 @@ $\1\3\1\2 = connection.cursor()
 
 > ~/frontend/src/item.txt
 	*	1694087059	0
-	"	1	0
-
-> ~/.vim/README.md
-	*	1694085626	0
 	"	1	0
 
 > ~/frontend/README.md
