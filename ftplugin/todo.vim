@@ -86,5 +86,6 @@ endfunction
 
 augroup FileHighlighting
     autocmd!
+    autocmd BufEnter *.todo setlocal filetype=todo
     autocmd Syntax todo call s:HighlightExistingFiles()
 augroup END

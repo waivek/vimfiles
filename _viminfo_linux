@@ -21,7 +21,15 @@ $
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1722188498,,"q"
+|2,0,1722188799,,"q"
+:Date
+|2,0,1722188770,,"Date"
+:set ft?
+|2,0,1722188714,,"set ft?"
+:MRU todo.vim
+|2,0,1722188654,,"MRU todo.vim"
+:e
+|2,0,1722188648,,"e"
 :Template
 |2,0,1722188420,,"Template"
 :q!
@@ -74,8 +82,6 @@ $
 |2,0,1722168002,,"grep -g '*.vim' -g 'vimrc' --fixed-strings xclip"
 :e plugin/cacx.vim
 |2,0,1722167997,,"e plugin/cacx.vim"
-:e
-|2,0,1722167988,,"e"
 :e plugin/docker-copy-to-host.vim
 |2,0,1722167986,,"e plugin/docker-copy-to-host.vim"
 :bd
@@ -552,8 +558,6 @@ $
 |2,0,1721941152,,"MRU twitc"
 :MRU ch
 |2,0,1721941068,,"MRU ch"
-:Date
-|2,0,1721674202,,"Date"
 :se
 |2,0,1721674178,,"se"
 :e ~/tooling/swe_knowledge.txt
@@ -1144,8 +1148,6 @@ $
 |2,0,1719653521,,"reg"
 :set ft=gitconfig
 |2,0,1719653222,,"set ft=gitconfig"
-:set ft?
-|2,0,1719653218,,"set ft?"
 :g/{/>
 |2,0,1719501633,,"g/{/>"
 :retab
@@ -12318,39 +12320,36 @@ $
 |2,4,1693311567,,"cont"
 
 # Registers:
-"0	LINE	0
-	data/
-|3,0,0,1,1,0,1722188417,"data/"
+"0	CHAR	0
+	240728 
+|3,0,0,0,1,0,1722188779,"240728 "
 ""1	LINE	0
-	lib/
-|3,1,1,1,1,0,1722188493,"lib/"
+	# TODO:
+|3,1,1,1,1,0,1722188793,"# TODO:"
 "2	LINE	0
-	data/
-|3,0,2,1,1,0,1722188417,"data/"
+	    autocmd *.todo call s:HighlightExistingFiles()
+|3,0,2,1,1,0,1722188675,"    autocmd *.todo call s:HighlightExistingFiles()"
 "3	LINE	0
-	        let pass_lines = 
-|3,0,3,1,1,0,1722188147,"        let pass_lines = "
+	    autocmd *.todo call s:HighlightExistingFiles()
+|3,0,3,1,1,0,1722188672,"    autocmd *.todo call s:HighlightExistingFiles()"
 "4	LINE	0
-	    let garbage = "garbage"
-|3,0,4,1,1,0,1722188081,"    let garbage = \"garbage\""
+	
+|3,0,4,1,1,0,1722188567,""
 "5	LINE	0
-	    let expected = garbage + expected
-|3,0,5,1,1,0,1722188074,"    let expected = garbage + expected"
+	# vim:ft=todo
+|3,0,5,1,1,0,1722188565,"# vim:ft=todo"
 "6	LINE	0
-	        call s:WriteToSTDOUT(printf("Test failed: Expected %s but got %s", expected, result))
-|3,0,6,1,1,0,1722188022,"        call s:WriteToSTDOUT(printf(\"Test failed: Expected %s but got %s\", expected, result))"
+	lib/
+|3,0,6,1,1,0,1722188493,"lib/"
 "7	LINE	0
-	        let l:passpath = 'pass.txt'
-|3,0,7,1,1,0,1722187979,"        let l:passpath = 'pass.txt'"
+	data/
+|3,0,7,1,1,0,1722188417,"data/"
 "8	LINE	0
-	        let l:pass_path = 'pass.txt'
-	        call writefile([result], l:pass_path)
-	        let l:fail_path = 'fail.txt'
-	        call writefile([expected], l:fail_path)
-|3,0,8,1,4,0,1722187940,"        let l:pass_path = 'pass.txt'","        call writefile([result], l:pass_path)","        let l:fail_path = 'fail.txt'","        call writefile([expected], l:fail_path)"
+	        let pass_lines = 
+|3,0,8,1,1,0,1722188147,"        let pass_lines = "
 "9	LINE	0
-	        call writefile([result], l:pass_path)
-|3,0,9,1,1,0,1722187936,"        call writefile([result], l:pass_path)"
+	    let garbage = "garbage"
+|3,0,9,1,1,0,1722188081,"    let garbage = \"garbage\""
 "a	CHAR	0
 	    typename: str = attrs.field(metadata={'alias': '__typename'})
 |3,0,10,0,1,0,1722187896,"    typename: str = attrs.field(metadata={'alias': '__typename'})"
@@ -12367,44 +12366,150 @@ $
 	https://rsms.me/inter/
 |3,0,28,0,1,0,1718483440,"https://rsms.me/inter/"
 "-	CHAR	0
-	test.db
-|3,0,36,0,1,0,1722188416,"test.db"
+	` `
+|3,0,36,0,1,0,1722188753,"` `"
 
 # File marks:
-'0  1  0  ~/.vim/edit-plugin/.gitignore
-|4,48,1,0,1722188498,"~/.vim/edit-plugin/.gitignore"
-'1  17  3  ~/.vim/edit-plugin/.gitignore
-|4,49,17,3,1722188431,"~/.vim/edit-plugin/.gitignore"
-'2  17  3  ~/.vim/edit-plugin/.gitignore
-|4,50,17,3,1722188431,"~/.vim/edit-plugin/.gitignore"
-'3  1  0  ~/.vim/edit-plugin/test.db
-|4,51,1,0,1722188375,"~/.vim/edit-plugin/test.db"
-'4  1  0  ~/.vim/edit-plugin/test.db
-|4,52,1,0,1722188375,"~/.vim/edit-plugin/test.db"
-'5  1  0  ~/.vim/edit-plugin/test.db
-|4,53,1,0,1722188375,"~/.vim/edit-plugin/test.db"
-'6  1  0  ~/.vim/edit-plugin/test.db
-|4,54,1,0,1722188375,"~/.vim/edit-plugin/test.db"
-'7  16  6  ~/.vim/edit-plugin/.gitignore
-|4,55,16,6,1722188361,"~/.vim/edit-plugin/.gitignore"
-'8  16  6  ~/.vim/edit-plugin/.gitignore
-|4,56,16,6,1722188361,"~/.vim/edit-plugin/.gitignore"
-'9  1  6  ~/.vim/edit-plugin/.gitignore
-|4,57,1,6,1722188361,"~/.vim/edit-plugin/.gitignore"
+'0  1  0  ~/.vim/edit-plugin/edit-plugin.todo
+|4,48,1,0,1722188800,"~/.vim/edit-plugin/edit-plugin.todo"
+'1  4  6  ~/.vim/edit-plugin/edit-plugin.todo
+|4,49,4,6,1722188731,"~/.vim/edit-plugin/edit-plugin.todo"
+'2  4  6  ~/.vim/edit-plugin/edit-plugin.todo
+|4,50,4,6,1722188731,"~/.vim/edit-plugin/edit-plugin.todo"
+'3  1  0  ~/.vim/edit-plugin/edit-plugin.todo
+|4,51,1,0,1722188719,"~/.vim/edit-plugin/edit-plugin.todo"
+'4  1  0  ~/.vim/edit-plugin/edit-plugin.todo
+|4,52,1,0,1722188719,"~/.vim/edit-plugin/edit-plugin.todo"
+'5  1  0  ~/.vim/edit-plugin/edit-plugin.todo
+|4,53,1,0,1722188719,"~/.vim/edit-plugin/edit-plugin.todo"
+'6  89  49  ~/.vim/ftplugin/todo.vim
+|4,54,89,49,1722188705,"~/.vim/ftplugin/todo.vim"
+'7  89  49  ~/.vim/ftplugin/todo.vim
+|4,55,89,49,1722188705,"~/.vim/ftplugin/todo.vim"
+'8  89  49  ~/.vim/ftplugin/todo.vim
+|4,56,89,49,1722188705,"~/.vim/ftplugin/todo.vim"
+'9  89  49  ~/.vim/ftplugin/todo.vim
+|4,57,89,49,1722188705,"~/.vim/ftplugin/todo.vim"
 
 # Jumplist (newest first):
+-'  1  0  ~/.vim/edit-plugin/edit-plugin.todo
+|4,39,1,0,1722188800,"~/.vim/edit-plugin/edit-plugin.todo"
+-'  3  41  ~/.vim/edit-plugin/edit-plugin.todo
+|4,39,3,41,1722188753,"~/.vim/edit-plugin/edit-plugin.todo"
+-'  4  6  ~/.vim/edit-plugin/edit-plugin.todo
+|4,39,4,6,1722188731,"~/.vim/edit-plugin/edit-plugin.todo"
+-'  4  6  ~/.vim/edit-plugin/edit-plugin.todo
+|4,39,4,6,1722188731,"~/.vim/edit-plugin/edit-plugin.todo"
+-'  1  0  ~/.vim/edit-plugin/edit-plugin.todo
+|4,39,1,0,1722188723,"~/.vim/edit-plugin/edit-plugin.todo"
+-'  1  0  ~/.vim/edit-plugin/edit-plugin.todo
+|4,39,1,0,1722188719,"~/.vim/edit-plugin/edit-plugin.todo"
+-'  89  49  ~/.vim/ftplugin/todo.vim
+|4,39,89,49,1722188705,"~/.vim/ftplugin/todo.vim"
+-'  89  49  ~/.vim/ftplugin/todo.vim
+|4,39,89,49,1722188705,"~/.vim/ftplugin/todo.vim"
+-'  89  49  ~/.vim/ftplugin/todo.vim
+|4,39,89,49,1722188705,"~/.vim/ftplugin/todo.vim"
+-'  89  49  ~/.vim/ftplugin/todo.vim
+|4,39,89,49,1722188705,"~/.vim/ftplugin/todo.vim"
+-'  1  0  ~/.vim/ftplugin/todo.vim
+|4,39,1,0,1722188655,"~/.vim/ftplugin/todo.vim"
+-'  1  0  ~/.vim/ftplugin/todo.vim
+|4,39,1,0,1722188655,"~/.vim/ftplugin/todo.vim"
+-'  1  0  ~/.vim/ftplugin/todo.vim
+|4,39,1,0,1722188655,"~/.vim/ftplugin/todo.vim"
+-'  1  0  ~/.vim/ftplugin/todo.vim
+|4,39,1,0,1722188655,"~/.vim/ftplugin/todo.vim"
+-'  3  0  ~/.vim/edit-plugin/edit-plugin.todo
+|4,39,3,0,1722188654,"~/.vim/edit-plugin/edit-plugin.todo"
+-'  3  0  ~/.vim/edit-plugin/edit-plugin.todo
+|4,39,3,0,1722188654,"~/.vim/edit-plugin/edit-plugin.todo"
+-'  3  0  ~/.vim/edit-plugin/edit-plugin.todo
+|4,39,3,0,1722188654,"~/.vim/edit-plugin/edit-plugin.todo"
+-'  1  0  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,1,0,1722188646,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  1  0  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,1,0,1722188646,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  1  0  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,1,0,1722188646,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  1  0  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,1,0,1722188646,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  1  0  ~/.vim/edit-plugin/edit-plugin.todo
+|4,39,1,0,1722188602,"~/.vim/edit-plugin/edit-plugin.todo"
+-'  1  0  ~/.vim/edit-plugin/edit-plugin.todo
+|4,39,1,0,1722188578,"~/.vim/edit-plugin/edit-plugin.todo"
+-'  2  12  ~/.vim/edit-plugin/edit-plugin.todo
+|4,39,2,12,1722188563,"~/.vim/edit-plugin/edit-plugin.todo"
+-'  2  12  ~/.vim/edit-plugin/edit-plugin.todo
+|4,39,2,12,1722188563,"~/.vim/edit-plugin/edit-plugin.todo"
+-'  2  12  ~/.vim/edit-plugin/edit-plugin.todo
+|4,39,2,12,1722188563,"~/.vim/edit-plugin/edit-plugin.todo"
+-'  2  12  ~/.vim/edit-plugin/edit-plugin.todo
+|4,39,2,12,1722188563,"~/.vim/edit-plugin/edit-plugin.todo"
+-'  2  12  ~/.vim/edit-plugin/edit-plugin.todo
+|4,39,2,12,1722188563,"~/.vim/edit-plugin/edit-plugin.todo"
 -'  1  0  ~/.vim/edit-plugin/.gitignore
 |4,39,1,0,1722188498,"~/.vim/edit-plugin/.gitignore"
+-'  1  0  ~/.vim/edit-plugin/.gitignore
+|4,39,1,0,1722188498,"~/.vim/edit-plugin/.gitignore"
+-'  1  0  ~/.vim/edit-plugin/.gitignore
+|4,39,1,0,1722188498,"~/.vim/edit-plugin/.gitignore"
+-'  1  0  ~/.vim/edit-plugin/.gitignore
+|4,39,1,0,1722188498,"~/.vim/edit-plugin/.gitignore"
+-'  1  0  ~/.vim/edit-plugin/.gitignore
+|4,39,1,0,1722188498,"~/.vim/edit-plugin/.gitignore"
+-'  1  0  ~/.vim/edit-plugin/.gitignore
+|4,39,1,0,1722188498,"~/.vim/edit-plugin/.gitignore"
+-'  4  0  ~/.vim/edit-plugin/.gitignore
+|4,39,4,0,1722188496,"~/.vim/edit-plugin/.gitignore"
+-'  4  0  ~/.vim/edit-plugin/.gitignore
+|4,39,4,0,1722188496,"~/.vim/edit-plugin/.gitignore"
+-'  4  0  ~/.vim/edit-plugin/.gitignore
+|4,39,4,0,1722188496,"~/.vim/edit-plugin/.gitignore"
+-'  4  0  ~/.vim/edit-plugin/.gitignore
+|4,39,4,0,1722188496,"~/.vim/edit-plugin/.gitignore"
+-'  4  0  ~/.vim/edit-plugin/.gitignore
+|4,39,4,0,1722188496,"~/.vim/edit-plugin/.gitignore"
 -'  4  0  ~/.vim/edit-plugin/.gitignore
 |4,39,4,0,1722188496,"~/.vim/edit-plugin/.gitignore"
 -'  17  3  ~/.vim/edit-plugin/.gitignore
 |4,39,17,3,1722188431,"~/.vim/edit-plugin/.gitignore"
 -'  17  3  ~/.vim/edit-plugin/.gitignore
 |4,39,17,3,1722188431,"~/.vim/edit-plugin/.gitignore"
+-'  17  3  ~/.vim/edit-plugin/.gitignore
+|4,39,17,3,1722188431,"~/.vim/edit-plugin/.gitignore"
+-'  17  3  ~/.vim/edit-plugin/.gitignore
+|4,39,17,3,1722188431,"~/.vim/edit-plugin/.gitignore"
+-'  17  3  ~/.vim/edit-plugin/.gitignore
+|4,39,17,3,1722188431,"~/.vim/edit-plugin/.gitignore"
+-'  17  3  ~/.vim/edit-plugin/.gitignore
+|4,39,17,3,1722188431,"~/.vim/edit-plugin/.gitignore"
+-'  17  3  ~/.vim/edit-plugin/.gitignore
+|4,39,17,3,1722188431,"~/.vim/edit-plugin/.gitignore"
 -'  16  0  ~/.vim/edit-plugin/.gitignore
 |4,39,16,0,1722188417,"~/.vim/edit-plugin/.gitignore"
 -'  16  0  ~/.vim/edit-plugin/.gitignore
 |4,39,16,0,1722188417,"~/.vim/edit-plugin/.gitignore"
+-'  16  0  ~/.vim/edit-plugin/.gitignore
+|4,39,16,0,1722188417,"~/.vim/edit-plugin/.gitignore"
+-'  16  0  ~/.vim/edit-plugin/.gitignore
+|4,39,16,0,1722188417,"~/.vim/edit-plugin/.gitignore"
+-'  16  0  ~/.vim/edit-plugin/.gitignore
+|4,39,16,0,1722188417,"~/.vim/edit-plugin/.gitignore"
+-'  16  0  ~/.vim/edit-plugin/.gitignore
+|4,39,16,0,1722188417,"~/.vim/edit-plugin/.gitignore"
+-'  16  0  ~/.vim/edit-plugin/.gitignore
+|4,39,16,0,1722188417,"~/.vim/edit-plugin/.gitignore"
+-'  1  0  ~/.vim/edit-plugin/test.db
+|4,39,1,0,1722188375,"~/.vim/edit-plugin/test.db"
+-'  1  0  ~/.vim/edit-plugin/test.db
+|4,39,1,0,1722188375,"~/.vim/edit-plugin/test.db"
+-'  1  0  ~/.vim/edit-plugin/test.db
+|4,39,1,0,1722188375,"~/.vim/edit-plugin/test.db"
+-'  1  0  ~/.vim/edit-plugin/test.db
+|4,39,1,0,1722188375,"~/.vim/edit-plugin/test.db"
+-'  1  0  ~/.vim/edit-plugin/test.db
+|4,39,1,0,1722188375,"~/.vim/edit-plugin/test.db"
 -'  1  0  ~/.vim/edit-plugin/test.db
 |4,39,1,0,1722188375,"~/.vim/edit-plugin/test.db"
 -'  1  0  ~/.vim/edit-plugin/test.db
@@ -12425,6 +12530,16 @@ $
 |4,39,57,0,1722188328,"~/.vim/plugin/command-to-buffer.vim"
 -'  57  0  ~/.vim/plugin/command-to-buffer.vim
 |4,39,57,0,1722188328,"~/.vim/plugin/command-to-buffer.vim"
+-'  57  0  ~/.vim/plugin/command-to-buffer.vim
+|4,39,57,0,1722188328,"~/.vim/plugin/command-to-buffer.vim"
+-'  57  0  ~/.vim/plugin/command-to-buffer.vim
+|4,39,57,0,1722188328,"~/.vim/plugin/command-to-buffer.vim"
+-'  57  0  ~/.vim/plugin/command-to-buffer.vim
+|4,39,57,0,1722188328,"~/.vim/plugin/command-to-buffer.vim"
+-'  57  0  ~/.vim/plugin/command-to-buffer.vim
+|4,39,57,0,1722188328,"~/.vim/plugin/command-to-buffer.vim"
+-'  57  0  ~/.vim/plugin/command-to-buffer.vim
+|4,39,57,0,1722188328,"~/.vim/plugin/command-to-buffer.vim"
 -'  1  0  ~/.vim/plugin/command-to-buffer.vim
 |4,39,1,0,1722188325,"~/.vim/plugin/command-to-buffer.vim"
 -'  1  0  ~/.vim/plugin/command-to-buffer.vim
@@ -12435,6 +12550,26 @@ $
 |4,39,1,0,1722188325,"~/.vim/plugin/command-to-buffer.vim"
 -'  1  0  ~/.vim/plugin/command-to-buffer.vim
 |4,39,1,0,1722188325,"~/.vim/plugin/command-to-buffer.vim"
+-'  1  0  ~/.vim/plugin/command-to-buffer.vim
+|4,39,1,0,1722188325,"~/.vim/plugin/command-to-buffer.vim"
+-'  1  0  ~/.vim/plugin/command-to-buffer.vim
+|4,39,1,0,1722188325,"~/.vim/plugin/command-to-buffer.vim"
+-'  1  0  ~/.vim/plugin/command-to-buffer.vim
+|4,39,1,0,1722188325,"~/.vim/plugin/command-to-buffer.vim"
+-'  1  0  ~/.vim/plugin/command-to-buffer.vim
+|4,39,1,0,1722188325,"~/.vim/plugin/command-to-buffer.vim"
+-'  1  0  ~/.vim/plugin/command-to-buffer.vim
+|4,39,1,0,1722188325,"~/.vim/plugin/command-to-buffer.vim"
+-'  5  0  ~/.vim/edit-plugin/pass.txt
+|4,39,5,0,1722188230,"~/.vim/edit-plugin/pass.txt"
+-'  5  0  ~/.vim/edit-plugin/pass.txt
+|4,39,5,0,1722188230,"~/.vim/edit-plugin/pass.txt"
+-'  5  0  ~/.vim/edit-plugin/pass.txt
+|4,39,5,0,1722188230,"~/.vim/edit-plugin/pass.txt"
+-'  5  0  ~/.vim/edit-plugin/pass.txt
+|4,39,5,0,1722188230,"~/.vim/edit-plugin/pass.txt"
+-'  5  0  ~/.vim/edit-plugin/pass.txt
+|4,39,5,0,1722188230,"~/.vim/edit-plugin/pass.txt"
 -'  5  0  ~/.vim/edit-plugin/pass.txt
 |4,39,5,0,1722188230,"~/.vim/edit-plugin/pass.txt"
 -'  5  0  ~/.vim/edit-plugin/pass.txt
@@ -12457,182 +12592,131 @@ $
 |4,39,1,0,1722188215,"~/.vim/edit-plugin/pass.txt"
 -'  1  0  ~/.vim/edit-plugin/pass.txt
 |4,39,1,0,1722188215,"~/.vim/edit-plugin/pass.txt"
--'  1  0  ~/.vim/edit-plugin/pass.txt
-|4,39,1,0,1722188215,"~/.vim/edit-plugin/pass.txt"
--'  1  0  ~/.vim/edit-plugin/pass.txt
-|4,39,1,0,1722188215,"~/.vim/edit-plugin/pass.txt"
--'  1  0  ~/.vim/edit-plugin/pass.txt
-|4,39,1,0,1722188215,"~/.vim/edit-plugin/pass.txt"
--'  1  0  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,1,0,1722188202,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  1  0  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,1,0,1722188202,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  1  0  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,1,0,1722188202,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  1  0  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,1,0,1722188202,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  1  0  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,1,0,1722188202,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  1  0  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,1,0,1722188202,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  1  0  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,1,0,1722188202,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  1  0  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,1,0,1722188202,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  73  32  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,73,32,1722188199,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  73  32  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,73,32,1722188199,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  73  32  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,73,32,1722188199,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  73  32  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,73,32,1722188199,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  73  32  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,73,32,1722188199,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  73  32  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,73,32,1722188199,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  73  32  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,73,32,1722188199,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  73  32  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,73,32,1722188199,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  73  32  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,73,32,1722188199,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  70  32  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,70,32,1722188194,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  70  32  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,70,32,1722188194,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  70  32  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,70,32,1722188194,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  70  32  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,70,32,1722188194,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  70  32  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,70,32,1722188194,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  70  32  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,70,32,1722188194,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  70  32  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,70,32,1722188194,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  70  32  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,70,32,1722188194,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  70  32  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,70,32,1722188194,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  71  24  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,71,24,1722188193,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  71  24  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,71,24,1722188193,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  71  24  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,71,24,1722188193,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  71  24  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,71,24,1722188193,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  71  24  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,71,24,1722188193,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  71  24  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,71,24,1722188193,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  71  24  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,71,24,1722188193,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  71  24  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,71,24,1722188193,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  71  24  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,71,24,1722188193,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  1  0  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,1,0,1722188134,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  1  0  ~/.vim/edit-plugin/pass.txt
-|4,39,1,0,1722188120,"~/.vim/edit-plugin/pass.txt"
--'  1  0  ~/.vim/edit-plugin/pass.txt
-|4,39,1,0,1722188120,"~/.vim/edit-plugin/pass.txt"
--'  1  0  ~/.vim/edit-plugin/pass.txt
-|4,39,1,0,1722188120,"~/.vim/edit-plugin/pass.txt"
--'  1  0  ~/.vim/edit-plugin/fail.txt
-|4,39,1,0,1722188119,"~/.vim/edit-plugin/fail.txt"
--'  1  0  ~/.vim/edit-plugin/fail.txt
-|4,39,1,0,1722188119,"~/.vim/edit-plugin/fail.txt"
--'  1  0  ~/.vim/edit-plugin/fail.txt
-|4,39,1,0,1722188119,"~/.vim/edit-plugin/fail.txt"
--'  1  0  ~/.vim/edit-plugin/fail.txt
-|4,39,1,0,1722188119,"~/.vim/edit-plugin/fail.txt"
--'  1  0  ~/.vim/edit-plugin/fail.txt
-|4,39,1,0,1722188119,"~/.vim/edit-plugin/fail.txt"
--'  1  0  ~/.vim/edit-plugin/fail.txt
-|4,39,1,0,1722188119,"~/.vim/edit-plugin/fail.txt"
--'  1  0  ~/.vim/edit-plugin/fail.txt
-|4,39,1,0,1722188119,"~/.vim/edit-plugin/fail.txt"
--'  1  0  ~/.vim/edit-plugin/fail.txt
-|4,39,1,0,1722188119,"~/.vim/edit-plugin/fail.txt"
--'  1  0  ~/.vim/edit-plugin/fail.txt
-|4,39,1,0,1722188119,"~/.vim/edit-plugin/fail.txt"
--'  1  0  ~/.vim/edit-plugin/fail.txt
-|4,39,1,0,1722188119,"~/.vim/edit-plugin/fail.txt"
--'  1  0  ~/.vim/edit-plugin/pass.txt
-|4,39,1,0,1722188113,"~/.vim/edit-plugin/pass.txt"
--'  45  23  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,45,23,1722188100,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  45  23  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,45,23,1722188100,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  45  23  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,45,23,1722188100,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  45  23  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,45,23,1722188100,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  45  23  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,45,23,1722188100,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  45  23  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,45,23,1722188100,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  45  23  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,45,23,1722188100,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  45  23  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,45,23,1722188100,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  45  23  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,45,23,1722188100,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  45  23  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,45,23,1722188100,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  45  23  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,45,23,1722188100,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  45  23  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,45,23,1722188100,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  74  75  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,74,75,1722188098,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  72  75  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,72,75,1722188098,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  74  75  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,74,75,1722188098,"~/.vim/edit-plugin/sqlite-functions.vim"
 
 # Buffer list:
-%~/.vim/edit-plugin/.gitignore	1	0
+%~/.vim/edit-plugin/edit-plugin.todo	1	0
 
 # History of marks within files (newest to oldest):
 
-> ~/.vim/edit-plugin/.gitignore
-	*	1722188497	0
+> ~/.vim/edit-plugin/edit-plugin.todo
+	*	1722188797	0
 	"	1	0
-	.	17	0
-	+	16	0
+	.	1	0
+	+	1	77
+	+	2	12
 	+	1	0
-	+	17	0
+	+	2	122
+	+	3	64
+	+	4	6
+	+	3	22
+	+	1	6
+	+	2	0
+	+	3	0
+	+	1	0
 
-> ~/.vim/edit-plugin/test.db
-	*	1722188370	0
-	"	1	0
-
-> ~/.vim/plugin/command-to-buffer.vim
-	*	1722188325	0
-	"	57	0
-	^	4	0
-	.	4	0
-	+	2	29
-	+	6	10
-	+	5	0
-	+	2	34
-	+	3	41
-	+	4	0
-
-> ~/.vim/edit-plugin/pass.txt
-	*	1722188229	0
-	"	5	0
-
-> ~/.vim/edit-plugin/fail.txt
-	*	1722188220	0
-	"	5	0
+> ~/.vim/ftplugin/todo.vim
+	*	1722188705	0
+	"	89	49
+	^	89	50
+	.	89	49
+	+	13	33
+	+	13	0
+	+	67	1
+	+	13	0
+	+	13	33
+	+	13	0
+	+	3	0
+	+	1	0
+	+	67	0
+	+	92	0
+	+	68	0
+	+	90	42
+	+	83	52
+	+	83	0
+	+	70	28
+	+	74	48
+	+	83	0
+	+	74	0
+	+	83	38
+	+	83	0
+	+	83	51
+	+	83	56
+	+	83	75
+	+	83	0
+	+	1	0
+	+	7	3
+	+	8	0
+	+	7	17
+	+	8	0
+	+	12	0
+	+	83	16
+	+	83	0
+	+	68	0
+	+	68	11
+	+	90	49
+	+	74	24
+	+	83	0
+	+	70	0
+	+	74	0
+	+	83	30
+	+	83	33
+	+	83	0
+	+	70	0
+	+	74	0
+	+	83	0
+	+	83	32
+	+	83	0
+	+	69	6
+	+	68	0
+	+	92	0
+	+	69	0
+	+	92	0
+	+	69	0
+	+	90	13
+	+	90	0
+	+	68	0
+	+	90	0
+	+	69	4
+	+	69	0
+	+	92	0
+	+	74	0
+	+	40	0
+	+	39	0
+	+	92	0
+	+	90	22
+	+	69	0
+	+	67	4
+	+	67	10
+	+	72	63
+	+	75	14
+	+	82	17
+	+	83	0
+	+	78	51
+	+	73	46
+	+	67	0
+	+	67	22
+	+	67	44
+	+	67	4
+	+	67	12
+	+	67	19
+	+	83	0
+	+	67	5
+	+	67	20
+	+	67	5
+	+	67	57
+	+	67	0
+	+	65	11
+	+	83	0
+	+	76	41
+	+	73	0
+	+	77	0
+	+	78	0
+	+	91	0
+	+	90	0
+	+	89	49
 
 > ~/.vim/edit-plugin/sqlite-functions.vim
-	*	1722188201	0
+	*	1722188646	0
 	"	1	0
 	^	73	33
 	.	73	32
@@ -12711,6 +12795,38 @@ $
 	+	72	45
 	+	70	23
 	+	73	32
+
+> ~/.vim/edit-plugin/.gitignore
+	*	1722188497	0
+	"	1	0
+	.	17	0
+	+	16	0
+	+	1	0
+	+	17	0
+
+> ~/.vim/edit-plugin/test.db
+	*	1722188370	0
+	"	1	0
+
+> ~/.vim/plugin/command-to-buffer.vim
+	*	1722188325	0
+	"	57	0
+	^	4	0
+	.	4	0
+	+	2	29
+	+	6	10
+	+	5	0
+	+	2	34
+	+	3	41
+	+	4	0
+
+> ~/.vim/edit-plugin/pass.txt
+	*	1722188229	0
+	"	5	0
+
+> ~/.vim/edit-plugin/fail.txt
+	*	1722188220	0
+	"	5	0
 
 > /usr/share/vim/vim90/doc/builtin.txt
 	*	1722188167	0
@@ -17776,103 +17892,6 @@ $
 	+	20	4
 	+	21	16
 	+	22	0
-
-> ~/.vim/ftplugin/todo.vim
-	*	1721149902	0
-	"	43	0
-	.	78	0
-	+	13	33
-	+	13	0
-	+	67	1
-	+	13	0
-	+	13	33
-	+	13	0
-	+	3	0
-	+	1	0
-	+	67	0
-	+	91	0
-	+	68	0
-	+	89	42
-	+	83	52
-	+	83	0
-	+	70	28
-	+	74	48
-	+	83	0
-	+	74	0
-	+	83	38
-	+	83	0
-	+	83	51
-	+	83	56
-	+	83	75
-	+	83	0
-	+	1	0
-	+	7	3
-	+	8	0
-	+	7	17
-	+	8	0
-	+	12	0
-	+	83	16
-	+	83	0
-	+	68	0
-	+	68	11
-	+	89	49
-	+	74	24
-	+	83	0
-	+	70	0
-	+	74	0
-	+	83	30
-	+	83	33
-	+	83	0
-	+	70	0
-	+	74	0
-	+	83	0
-	+	83	32
-	+	83	0
-	+	69	6
-	+	68	0
-	+	91	0
-	+	69	0
-	+	91	0
-	+	69	0
-	+	89	13
-	+	89	0
-	+	68	0
-	+	89	0
-	+	69	4
-	+	69	0
-	+	91	0
-	+	74	0
-	+	40	0
-	+	39	0
-	+	91	0
-	+	89	22
-	+	69	0
-	+	67	4
-	+	67	10
-	+	72	63
-	+	75	14
-	+	82	17
-	+	83	0
-	+	78	51
-	+	73	46
-	+	67	0
-	+	67	22
-	+	67	44
-	+	67	4
-	+	67	12
-	+	67	19
-	+	83	0
-	+	67	5
-	+	67	20
-	+	67	5
-	+	67	57
-	+	67	0
-	+	65	11
-	+	83	0
-	+	76	41
-	+	73	0
-	+	77	0
-	+	78	0
 
 > ~/python_common/waivek/todo.txt
 	*	1721149878	0
