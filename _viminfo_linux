@@ -21,7 +21,13 @@ $
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1722188327,,"q"
+|2,0,1722188498,,"q"
+:Template
+|2,0,1722188420,,"Template"
+:q!
+|2,0,1722188375,,"q!"
+:e test.db
+|2,0,1722188370,,"e test.db"
 :qa
 |2,0,1722188224,,"qa"
 :diffthis
@@ -32,8 +38,6 @@ $
 |2,0,1722188155,,"h writefile("
 :h write(
 |2,0,1722188150,,"h write("
-:q!
-|2,0,1722188119,,"q!"
 :e hello.vim
 |2,0,1722187500,,"e hello.vim"
 :so %
@@ -112,8 +116,6 @@ $
 |2,0,1722166806,,"OpenDatabase test1.d"
 :OpenDatabase test.db
 |2,0,1722166803,,"OpenDatabase test.db"
-:e test.db
-|2,0,1722166799,,"e test.db"
 :CreateTable
 |2,0,1722166785,,"CreateTable"
 :e fish_history
@@ -348,8 +350,6 @@ $
 |2,0,1722014954,,"Jprevious"
 :e ~/.vim/templates/template.py
 |2,0,1722014775,,"e ~/.vim/templates/template.py"
-:Template
-|2,0,1722014752,,"Template"
 :e parse_attrs.py
 |2,0,1722014437,,"e parse_attrs.py"
 :e validation.py
@@ -12318,40 +12318,39 @@ $
 |2,4,1693311567,,"cont"
 
 # Registers:
-""0	CHAR	0
-	expected
-|3,1,0,0,1,0,1722188198,"expected"
-"1	LINE	0
-	        let pass_lines = 
-|3,0,1,1,1,0,1722188147,"        let pass_lines = "
+"0	LINE	0
+	data/
+|3,0,0,1,1,0,1722188417,"data/"
+""1	LINE	0
+	lib/
+|3,1,1,1,1,0,1722188493,"lib/"
 "2	LINE	0
-	    let garbage = "garbage"
-|3,0,2,1,1,0,1722188081,"    let garbage = \"garbage\""
+	data/
+|3,0,2,1,1,0,1722188417,"data/"
 "3	LINE	0
-	    let expected = garbage + expected
-|3,0,3,1,1,0,1722188074,"    let expected = garbage + expected"
+	        let pass_lines = 
+|3,0,3,1,1,0,1722188147,"        let pass_lines = "
 "4	LINE	0
-	        call s:WriteToSTDOUT(printf("Test failed: Expected %s but got %s", expected, result))
-|3,0,4,1,1,0,1722188022,"        call s:WriteToSTDOUT(printf(\"Test failed: Expected %s but got %s\", expected, result))"
+	    let garbage = "garbage"
+|3,0,4,1,1,0,1722188081,"    let garbage = \"garbage\""
 "5	LINE	0
-	        let l:passpath = 'pass.txt'
-|3,0,5,1,1,0,1722187979,"        let l:passpath = 'pass.txt'"
+	    let expected = garbage + expected
+|3,0,5,1,1,0,1722188074,"    let expected = garbage + expected"
 "6	LINE	0
+	        call s:WriteToSTDOUT(printf("Test failed: Expected %s but got %s", expected, result))
+|3,0,6,1,1,0,1722188022,"        call s:WriteToSTDOUT(printf(\"Test failed: Expected %s but got %s\", expected, result))"
+"7	LINE	0
+	        let l:passpath = 'pass.txt'
+|3,0,7,1,1,0,1722187979,"        let l:passpath = 'pass.txt'"
+"8	LINE	0
 	        let l:pass_path = 'pass.txt'
 	        call writefile([result], l:pass_path)
 	        let l:fail_path = 'fail.txt'
 	        call writefile([expected], l:fail_path)
-|3,0,6,1,4,0,1722187940,"        let l:pass_path = 'pass.txt'","        call writefile([result], l:pass_path)","        let l:fail_path = 'fail.txt'","        call writefile([expected], l:fail_path)"
-"7	LINE	0
-	        call writefile([result], l:pass_path)
-|3,0,7,1,1,0,1722187936,"        call writefile([result], l:pass_path)"
-"8	LINE	0
-	        call s:WriteToSTDOUT(printf("Test failed: Expected %s but got %s", expected, result))
-	        call writefile([result], l:pass_path)
-|3,0,8,1,2,0,1722187935,"        call s:WriteToSTDOUT(printf(\"Test failed: Expected %s but got %s\", expected, result))","        call writefile([result], l:pass_path)"
+|3,0,8,1,4,0,1722187940,"        let l:pass_path = 'pass.txt'","        call writefile([result], l:pass_path)","        let l:fail_path = 'fail.txt'","        call writefile([expected], l:fail_path)"
 "9	LINE	0
-	        let l:pass_path = 'pass.txt'
-|3,0,9,1,1,0,1722187934,"        let l:pass_path = 'pass.txt'"
+	        call writefile([result], l:pass_path)
+|3,0,9,1,1,0,1722187936,"        call writefile([result], l:pass_path)"
 "a	CHAR	0
 	    typename: str = attrs.field(metadata={'alias': '__typename'})
 |3,0,10,0,1,0,1722187896,"    typename: str = attrs.field(metadata={'alias': '__typename'})"
@@ -12368,36 +12367,82 @@ $
 	https://rsms.me/inter/
 |3,0,28,0,1,0,1718483440,"https://rsms.me/inter/"
 "-	CHAR	0
-	expected
-|3,0,36,0,1,0,1722188196,"expected"
+	test.db
+|3,0,36,0,1,0,1722188416,"test.db"
 
 # File marks:
-'0  57  0  ~/.vim/plugin/command-to-buffer.vim
-|4,48,57,0,1722188328,"~/.vim/plugin/command-to-buffer.vim"
-'1  5  0  ~/.vim/edit-plugin/pass.txt
-|4,49,5,0,1722188230,"~/.vim/edit-plugin/pass.txt"
-'2  5  0  ~/.vim/edit-plugin/pass.txt
-|4,50,5,0,1722188230,"~/.vim/edit-plugin/pass.txt"
-'3  5  0  ~/.vim/edit-plugin/pass.txt
-|4,51,5,0,1722188224,"~/.vim/edit-plugin/pass.txt"
-'4  5  0  ~/.vim/edit-plugin/pass.txt
-|4,52,5,0,1722188224,"~/.vim/edit-plugin/pass.txt"
-'5  1  0  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,53,1,0,1722188202,"~/.vim/edit-plugin/sqlite-functions.vim"
-'6  1  0  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,54,1,0,1722188202,"~/.vim/edit-plugin/sqlite-functions.vim"
-'7  1  0  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,55,1,0,1722188202,"~/.vim/edit-plugin/sqlite-functions.vim"
-'8  1  0  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,56,1,0,1722188202,"~/.vim/edit-plugin/sqlite-functions.vim"
-'9  1  0  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,57,1,0,1722188202,"~/.vim/edit-plugin/sqlite-functions.vim"
+'0  1  0  ~/.vim/edit-plugin/.gitignore
+|4,48,1,0,1722188498,"~/.vim/edit-plugin/.gitignore"
+'1  17  3  ~/.vim/edit-plugin/.gitignore
+|4,49,17,3,1722188431,"~/.vim/edit-plugin/.gitignore"
+'2  17  3  ~/.vim/edit-plugin/.gitignore
+|4,50,17,3,1722188431,"~/.vim/edit-plugin/.gitignore"
+'3  1  0  ~/.vim/edit-plugin/test.db
+|4,51,1,0,1722188375,"~/.vim/edit-plugin/test.db"
+'4  1  0  ~/.vim/edit-plugin/test.db
+|4,52,1,0,1722188375,"~/.vim/edit-plugin/test.db"
+'5  1  0  ~/.vim/edit-plugin/test.db
+|4,53,1,0,1722188375,"~/.vim/edit-plugin/test.db"
+'6  1  0  ~/.vim/edit-plugin/test.db
+|4,54,1,0,1722188375,"~/.vim/edit-plugin/test.db"
+'7  16  6  ~/.vim/edit-plugin/.gitignore
+|4,55,16,6,1722188361,"~/.vim/edit-plugin/.gitignore"
+'8  16  6  ~/.vim/edit-plugin/.gitignore
+|4,56,16,6,1722188361,"~/.vim/edit-plugin/.gitignore"
+'9  1  6  ~/.vim/edit-plugin/.gitignore
+|4,57,1,6,1722188361,"~/.vim/edit-plugin/.gitignore"
 
 # Jumplist (newest first):
+-'  1  0  ~/.vim/edit-plugin/.gitignore
+|4,39,1,0,1722188498,"~/.vim/edit-plugin/.gitignore"
+-'  4  0  ~/.vim/edit-plugin/.gitignore
+|4,39,4,0,1722188496,"~/.vim/edit-plugin/.gitignore"
+-'  17  3  ~/.vim/edit-plugin/.gitignore
+|4,39,17,3,1722188431,"~/.vim/edit-plugin/.gitignore"
+-'  17  3  ~/.vim/edit-plugin/.gitignore
+|4,39,17,3,1722188431,"~/.vim/edit-plugin/.gitignore"
+-'  16  0  ~/.vim/edit-plugin/.gitignore
+|4,39,16,0,1722188417,"~/.vim/edit-plugin/.gitignore"
+-'  16  0  ~/.vim/edit-plugin/.gitignore
+|4,39,16,0,1722188417,"~/.vim/edit-plugin/.gitignore"
+-'  1  0  ~/.vim/edit-plugin/test.db
+|4,39,1,0,1722188375,"~/.vim/edit-plugin/test.db"
+-'  1  0  ~/.vim/edit-plugin/test.db
+|4,39,1,0,1722188375,"~/.vim/edit-plugin/test.db"
+-'  1  0  ~/.vim/edit-plugin/test.db
+|4,39,1,0,1722188375,"~/.vim/edit-plugin/test.db"
+-'  1  6  ~/.vim/edit-plugin/.gitignore
+|4,39,1,6,1722188361,"~/.vim/edit-plugin/.gitignore"
+-'  1  6  ~/.vim/edit-plugin/.gitignore
+|4,39,1,6,1722188361,"~/.vim/edit-plugin/.gitignore"
+-'  57  0  ~/.vim/plugin/command-to-buffer.vim
+|4,39,57,0,1722188328,"~/.vim/plugin/command-to-buffer.vim"
+-'  57  0  ~/.vim/plugin/command-to-buffer.vim
+|4,39,57,0,1722188328,"~/.vim/plugin/command-to-buffer.vim"
+-'  57  0  ~/.vim/plugin/command-to-buffer.vim
+|4,39,57,0,1722188328,"~/.vim/plugin/command-to-buffer.vim"
+-'  57  0  ~/.vim/plugin/command-to-buffer.vim
+|4,39,57,0,1722188328,"~/.vim/plugin/command-to-buffer.vim"
 -'  57  0  ~/.vim/plugin/command-to-buffer.vim
 |4,39,57,0,1722188328,"~/.vim/plugin/command-to-buffer.vim"
 -'  1  0  ~/.vim/plugin/command-to-buffer.vim
 |4,39,1,0,1722188325,"~/.vim/plugin/command-to-buffer.vim"
+-'  1  0  ~/.vim/plugin/command-to-buffer.vim
+|4,39,1,0,1722188325,"~/.vim/plugin/command-to-buffer.vim"
+-'  1  0  ~/.vim/plugin/command-to-buffer.vim
+|4,39,1,0,1722188325,"~/.vim/plugin/command-to-buffer.vim"
+-'  1  0  ~/.vim/plugin/command-to-buffer.vim
+|4,39,1,0,1722188325,"~/.vim/plugin/command-to-buffer.vim"
+-'  1  0  ~/.vim/plugin/command-to-buffer.vim
+|4,39,1,0,1722188325,"~/.vim/plugin/command-to-buffer.vim"
+-'  5  0  ~/.vim/edit-plugin/pass.txt
+|4,39,5,0,1722188230,"~/.vim/edit-plugin/pass.txt"
+-'  5  0  ~/.vim/edit-plugin/pass.txt
+|4,39,5,0,1722188230,"~/.vim/edit-plugin/pass.txt"
+-'  5  0  ~/.vim/edit-plugin/pass.txt
+|4,39,5,0,1722188230,"~/.vim/edit-plugin/pass.txt"
+-'  5  0  ~/.vim/edit-plugin/pass.txt
+|4,39,5,0,1722188230,"~/.vim/edit-plugin/pass.txt"
 -'  5  0  ~/.vim/edit-plugin/pass.txt
 |4,39,5,0,1722188230,"~/.vim/edit-plugin/pass.txt"
 -'  5  0  ~/.vim/edit-plugin/pass.txt
@@ -12410,6 +12455,22 @@ $
 |4,39,1,0,1722188215,"~/.vim/edit-plugin/pass.txt"
 -'  1  0  ~/.vim/edit-plugin/pass.txt
 |4,39,1,0,1722188215,"~/.vim/edit-plugin/pass.txt"
+-'  1  0  ~/.vim/edit-plugin/pass.txt
+|4,39,1,0,1722188215,"~/.vim/edit-plugin/pass.txt"
+-'  1  0  ~/.vim/edit-plugin/pass.txt
+|4,39,1,0,1722188215,"~/.vim/edit-plugin/pass.txt"
+-'  1  0  ~/.vim/edit-plugin/pass.txt
+|4,39,1,0,1722188215,"~/.vim/edit-plugin/pass.txt"
+-'  1  0  ~/.vim/edit-plugin/pass.txt
+|4,39,1,0,1722188215,"~/.vim/edit-plugin/pass.txt"
+-'  1  0  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,1,0,1722188202,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  1  0  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,1,0,1722188202,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  1  0  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,1,0,1722188202,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  1  0  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,1,0,1722188202,"~/.vim/edit-plugin/sqlite-functions.vim"
 -'  1  0  ~/.vim/edit-plugin/sqlite-functions.vim
 |4,39,1,0,1722188202,"~/.vim/edit-plugin/sqlite-functions.vim"
 -'  1  0  ~/.vim/edit-plugin/sqlite-functions.vim
@@ -12428,6 +12489,14 @@ $
 |4,39,73,32,1722188199,"~/.vim/edit-plugin/sqlite-functions.vim"
 -'  73  32  ~/.vim/edit-plugin/sqlite-functions.vim
 |4,39,73,32,1722188199,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  73  32  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,73,32,1722188199,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  73  32  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,73,32,1722188199,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  73  32  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,73,32,1722188199,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  73  32  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,73,32,1722188199,"~/.vim/edit-plugin/sqlite-functions.vim"
 -'  70  32  ~/.vim/edit-plugin/sqlite-functions.vim
 |4,39,70,32,1722188194,"~/.vim/edit-plugin/sqlite-functions.vim"
 -'  70  32  ~/.vim/edit-plugin/sqlite-functions.vim
@@ -12438,6 +12507,22 @@ $
 |4,39,70,32,1722188194,"~/.vim/edit-plugin/sqlite-functions.vim"
 -'  70  32  ~/.vim/edit-plugin/sqlite-functions.vim
 |4,39,70,32,1722188194,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  70  32  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,70,32,1722188194,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  70  32  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,70,32,1722188194,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  70  32  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,70,32,1722188194,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  70  32  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,70,32,1722188194,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  71  24  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,71,24,1722188193,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  71  24  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,71,24,1722188193,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  71  24  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,71,24,1722188193,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  71  24  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,71,24,1722188193,"~/.vim/edit-plugin/sqlite-functions.vim"
 -'  71  24  ~/.vim/edit-plugin/sqlite-functions.vim
 |4,39,71,24,1722188193,"~/.vim/edit-plugin/sqlite-functions.vim"
 -'  71  24  ~/.vim/edit-plugin/sqlite-functions.vim
@@ -12468,6 +12553,14 @@ $
 |4,39,1,0,1722188119,"~/.vim/edit-plugin/fail.txt"
 -'  1  0  ~/.vim/edit-plugin/fail.txt
 |4,39,1,0,1722188119,"~/.vim/edit-plugin/fail.txt"
+-'  1  0  ~/.vim/edit-plugin/fail.txt
+|4,39,1,0,1722188119,"~/.vim/edit-plugin/fail.txt"
+-'  1  0  ~/.vim/edit-plugin/fail.txt
+|4,39,1,0,1722188119,"~/.vim/edit-plugin/fail.txt"
+-'  1  0  ~/.vim/edit-plugin/fail.txt
+|4,39,1,0,1722188119,"~/.vim/edit-plugin/fail.txt"
+-'  1  0  ~/.vim/edit-plugin/fail.txt
+|4,39,1,0,1722188119,"~/.vim/edit-plugin/fail.txt"
 -'  1  0  ~/.vim/edit-plugin/pass.txt
 |4,39,1,0,1722188113,"~/.vim/edit-plugin/pass.txt"
 -'  45  23  ~/.vim/edit-plugin/sqlite-functions.vim
@@ -12486,119 +12579,37 @@ $
 |4,39,45,23,1722188100,"~/.vim/edit-plugin/sqlite-functions.vim"
 -'  45  23  ~/.vim/edit-plugin/sqlite-functions.vim
 |4,39,45,23,1722188100,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  45  23  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,45,23,1722188100,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  45  23  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,45,23,1722188100,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  45  23  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,45,23,1722188100,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  45  23  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,45,23,1722188100,"~/.vim/edit-plugin/sqlite-functions.vim"
 -'  74  75  ~/.vim/edit-plugin/sqlite-functions.vim
 |4,39,74,75,1722188098,"~/.vim/edit-plugin/sqlite-functions.vim"
 -'  72  75  ~/.vim/edit-plugin/sqlite-functions.vim
 |4,39,72,75,1722188098,"~/.vim/edit-plugin/sqlite-functions.vim"
 -'  74  75  ~/.vim/edit-plugin/sqlite-functions.vim
 |4,39,74,75,1722188098,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  72  75  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,72,75,1722188098,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  74  75  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,74,75,1722188098,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  72  75  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,72,75,1722188098,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  74  75  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,74,75,1722188098,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  72  75  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,72,75,1722188098,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  74  75  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,74,75,1722188098,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  72  75  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,72,75,1722188098,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  72  75  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,72,75,1722188098,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  72  75  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,72,75,1722188098,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  62  4  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,62,4,1722188092,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  62  4  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,62,4,1722188092,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  62  4  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,62,4,1722188092,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  62  4  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,62,4,1722188092,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  62  4  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,62,4,1722188092,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  62  4  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,62,4,1722188092,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  62  4  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,62,4,1722188092,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  62  4  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,62,4,1722188092,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  63  4  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,63,4,1722188082,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  63  4  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,63,4,1722188082,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  63  4  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,63,4,1722188082,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  63  4  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,63,4,1722188082,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  63  4  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,63,4,1722188082,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  63  4  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,63,4,1722188082,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  63  4  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,63,4,1722188082,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  63  4  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,63,4,1722188082,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  63  4  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,63,4,1722188082,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  64  36  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,64,36,1722188065,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  65  36  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,65,36,1722188065,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  64  36  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,64,36,1722188065,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  65  36  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,65,36,1722188065,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  64  36  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,64,36,1722188065,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  65  36  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,65,36,1722188065,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  64  36  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,64,36,1722188065,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  65  36  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,65,36,1722188065,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  64  36  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,64,36,1722188065,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  65  36  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,65,36,1722188065,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  64  36  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,64,36,1722188065,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  65  36  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,65,36,1722188065,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  64  36  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,64,36,1722188065,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  65  36  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,65,36,1722188065,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  64  36  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,64,36,1722188065,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  65  36  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,65,36,1722188065,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  64  36  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,64,36,1722188065,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  65  36  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,65,36,1722188065,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  64  19  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,64,19,1722188040,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  63  19  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,63,19,1722188040,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  67  8  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,67,8,1722188024,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  69  8  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,69,8,1722188024,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  67  8  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,67,8,1722188024,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  69  8  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,69,8,1722188024,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  67  8  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,67,8,1722188024,"~/.vim/edit-plugin/sqlite-functions.vim"
 
 # Buffer list:
-%~/.vim/plugin/command-to-buffer.vim	57	0
+%~/.vim/edit-plugin/.gitignore	1	0
 
 # History of marks within files (newest to oldest):
+
+> ~/.vim/edit-plugin/.gitignore
+	*	1722188497	0
+	"	1	0
+	.	17	0
+	+	16	0
+	+	1	0
+	+	17	0
+
+> ~/.vim/edit-plugin/test.db
+	*	1722188370	0
+	"	1	0
 
 > ~/.vim/plugin/command-to-buffer.vim
 	*	1722188325	0
@@ -12949,10 +12960,6 @@ $
 
 > ~/.vim/edit-plugin/test1.db
 	*	1722166867	0
-	"	1	0
-
-> ~/.vim/edit-plugin/test.db
-	*	1722166799	0
 	"	1	0
 
 > /usr/share/vim/vim90/doc/options.txt
