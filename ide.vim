@@ -317,8 +317,6 @@ set complete=.,w
 inoremap <silent> <expr> <c-space>  coc#refresh()
 
 " h coc-locations-api
-nnoremap <silent>        <leader>d  :call CocAction('jumpDefinition')<CR>
-nnoremap <silent>        <leader>u  :call CocAction('jumpUsed')<CR>
 nnoremap <silent> <expr> K          <SID>ShowDocumentation()
 augroup IDEShowDoc
     au!
@@ -472,5 +470,4 @@ else
 endif
 
 command! Usages call CocActionAsync('jumpUsed')
-map <space>u :Usages<CR>
 

@@ -1290,3 +1290,8 @@ let g:copilot_workspace_folders=["/home/vivek/hateoas"]
 " vmap <leader>y :!xclip -selection clipboard<CR><CR>
 " nmap <leader>y :!xclip -selection clipboard<CR><CR>
 
+if has('win32') || has('win64')
+    source ~/vimfiles/mappings.vim
+else
+    source ~/.vim/mappings.vim
+endif

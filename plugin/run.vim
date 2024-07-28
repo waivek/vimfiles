@@ -73,8 +73,14 @@ endfunction
 
 function! s:RunVim()
     let command = 'so %'
-    execute command
-    redraw | echo "source " . expand("%:t")
+    " We add try catch for when we have multi page output and exit without
+    " reaching the end of the file via `q`, we can get an `Interrupted` error
+    try
+        execute command
+    catch /Interrupted/
+    endtry
+    echo "source " . expand("%:t")
+    " redraw | echo "source " . expand("%:t")
 endfunction
 
 

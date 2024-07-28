@@ -3,6 +3,8 @@
     "pyright.disableDiagnostics": false,
     "python.analysis.autoImportCompletions": true,
 
+    "python.analysis.diagnosticMode": "workspace",
+
     "diagnostic.virtualText": true,
     "diagnostic.virtualTextCurrentLineOnly": false, // we want inline errors on all lines, not just the current line
     "inlayHint.refreshOnInsertMode": false, // we don’t want to lint when we finish INSERT MODE, we only want to line when we save
@@ -11,6 +13,8 @@
     "suggest.autoTrigger": "always",
     "suggest.noselect": true,
     "suggest.localityBonus": true,
+    "suggest.defaultSortMethod": "none",
+
     "inlayHint.enable": false,
 
     "vimlsp.diagnostic.enable": true,
