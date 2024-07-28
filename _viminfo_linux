@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/\"\.\/database\.so\"
+~MSle0~/l:
 
 # Last Substitute Search Pattern:
 ~MSle0&^report
@@ -21,27 +21,119 @@ $
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1722145642,,"q"
+|2,0,1722188230,,"q"
+:qa
+|2,0,1722188224,,"qa"
+:diffthis
+|2,0,1722188220,,"diffthis"
+:e fail.txt
+|2,0,1722188218,,"e fail.txt"
+:h writefile(
+|2,0,1722188155,,"h writefile("
+:h write(
+|2,0,1722188150,,"h write("
+:q!
+|2,0,1722188119,,"q!"
+:e hello.vim
+|2,0,1722187500,,"e hello.vim"
+:so %
+|2,0,1722169429,,"so %"
+:e pa
+|2,0,1722169353,,"e pa"
+:e database.c
+|2,0,1722168794,,"e database.c"
+:term
+|2,0,1722168557,,"term"
+:e t
+|2,0,1722168539,,"e t"
+:!start everything -path . dat
+|2,0,1722168516,,"!start everything -path . dat"
+:h libcall(
+|2,0,1722168445,,"h libcall("
+:e sqlite-functions.vim
+|2,0,1722168363,,"e sqlite-functions.vim"
+:CopyToHost
+|2,0,1722168313,,"CopyToHost"
+:MRU 5:edit-plugin/edit.vim
+|2,0,1722168240,,"MRU 5:edit-plugin/edit.vim"
+:e 
+|2,0,1722168238,,"e "
+:pwd
+|2,0,1722168234,,"pwd"
+:e backup.vim
+|2,0,1722168231,,"e backup.vim"
+:CocCommand
+|2,0,1722168214,,"CocCommand"
+:Copy
+|2,0,1722168064,,"Copy"
+:grep -g '*.vim' -g 'vimrc' --fixed-strings xclip
+|2,0,1722168002,,"grep -g '*.vim' -g 'vimrc' --fixed-strings xclip"
+:e plugin/cacx.vim
+|2,0,1722167997,,"e plugin/cacx.vim"
+:e
+|2,0,1722167988,,"e"
+:e plugin/docker-copy-to-host.vim
+|2,0,1722167986,,"e plugin/docker-copy-to-host.vim"
+:bd
+|2,0,1722167983,,"bd"
+:e plugin/comment.vim
+|2,0,1722167980,,"e plugin/comment.vim"
+:e pri
+|2,0,1722167965,,"e pri"
+:Print
+|2,0,1722167958,,"Print"
+:Ma
+|2,0,1722167956,,"Ma"
+:MRU clipb
+|2,0,1722167948,,"MRU clipb"
+:e cl
+|2,0,1722167945,,"e cl"
+: w ~/.vim/plugin/docker-copy-to-host.vim
+|2,0,1722167924,," w ~/.vim/plugin/docker-copy-to-host.vim"
+:HotReload
+|2,0,1722167852,,"HotReload"
+:e ~/plugin/docker-copy-to-host.vim
+|2,0,1722167593,,"e ~/plugin/docker-copy-to-host.vim"
+:Commands
+|2,0,1722167561,,"Commands"
+:e te
+|2,0,1722167421,,"e te"
+:l
+|2,0,1722167415,,"l"
+:e test.db\nCREATE\ TABLE\ IF\ NOT\ EXISTS\ users\ (id\ INTEGER\ PRIMARY\ KEY,\ name\ TEXT,\ email\ TEXT);
+|2,0,1722167326,,"e test.db\\\nCREATE\\ TABLE\\ IF\\ NOT\\ EXISTS\\ users\\ (id\\ INTEGER\\ PRIMARY\\ KEY,\\ name\\ TEXT,\\ email\\ TEXT);"
+:e .
+|2,0,1722167196,,"e ."
+:call CreateTable()
+|2,0,1722166873,,"call CreateTable()"
+:e test1.db
+|2,0,1722166866,,"e test1.db"
+:OpenDatabase test1.d
+|2,0,1722166806,,"OpenDatabase test1.d"
+:OpenDatabase test.db
+|2,0,1722166803,,"OpenDatabase test.db"
+:e test.db
+|2,0,1722166799,,"e test.db"
+:CreateTable
+|2,0,1722166785,,"CreateTable"
+:e fish_history
+|2,0,1722156941,,"e fish_history"
+:MRU bash_histo
+|2,0,1722156915,,"MRU bash_histo"
+:SelectData
+|2,0,1722147568,,"SelectData"
+:InsertData 3 5
+|2,0,1722147563,,"InsertData 3 5"
 :e Makefile
 |2,0,1722143849,,"e Makefile"
-:e database.c
-|2,0,1722143542,,"e database.c"
-:SelectData
-|2,0,1722143531,,"SelectData"
 :InsertData vivek vivek@gmail.com
 |2,0,1722143529,,"InsertData vivek vivek@gmail.com"
 :VD claude-test.db
 |2,0,1722143468,,"VD claude-test.db"
 :InsertData 1 2
 |2,0,1722143462,,"InsertData 1 2"
-:q!
-|2,0,1722143452,,"q!"
 :OpenDB claude-test.db
 |2,0,1722142709,,"OpenDB claude-test.db"
-:CreateTable
-|2,0,1722142701,,"CreateTable"
-:so %
-|2,0,1722142695,,"so %"
 :so %%
 |2,0,1722142664,,"so %%"
 :e edit.vim
@@ -66,8 +158,6 @@ $
 |2,0,1722140673,,"e libsqlite_vim.so"
 :MRU edi
 |2,0,1722140323,,"MRU edi"
-:qa
-|2,0,1722124640,,"qa"
 :echo libcall(
 |2,0,1722124525,,"echo libcall("
 :cn
@@ -96,8 +186,6 @@ $
 |2,0,1722115345,,"Coc"
 :e hateoas-api.py
 |2,0,1722114068,,"e hateoas-api.py"
-:e 
-|2,0,1722114045,,"e "
 :MRU p
 |2,0,1722112661,,"MRU p"
 :h v:exiting
@@ -170,8 +258,6 @@ $
 |2,0,1722102367,,"enew"
 :Copilot panel
 |2,0,1722095632,,"Copilot panel"
-:e
-|2,0,1722095629,,"e"
 :e plugin/command-to-buffer.vim
 |2,0,1722095564,,"e plugin/command-to-buffer.vim"
 :call CocActionAsync('codeAction', 'cursor')
@@ -220,8 +306,6 @@ $
 |2,0,1722060504,,"CocConfig"
 :MRU pytho
 |2,0,1722060462,,"MRU pytho"
-:bd
-|2,0,1722060012,,"bd"
 :e ../python_common/waivek/__read_2.py
 |2,0,1722059470,,"e ../python_common/waivek/__read_2.py"
 :e reltools.py
@@ -236,8 +320,6 @@ $
 |2,0,1722031183,,"e tests/test_comments_page.py"
 :MRU 17:.envrc
 |2,0,1722031142,,"MRU 17:.envrc"
-:pwd
-|2,0,1722030346,,"pwd"
 :Rename test_comments_page.py
 |2,0,1722029896,,"Rename test_comments_page.py"
 :e page_lsp.py
@@ -268,8 +350,6 @@ $
 |2,0,1722014775,,"e ~/.vim/templates/template.py"
 :Template
 |2,0,1722014752,,"Template"
-:term
-|2,0,1722014572,,"term"
 :e parse_attrs.py
 |2,0,1722014437,,"e parse_attrs.py"
 :e validation.py
@@ -286,8 +366,6 @@ $
 |2,0,1722014185,,"g/__typename/exe 's/.*/' . @\" . '/'"
 :e .envr
 |2,0,1722013970,,"e .envr"
-:e .
-|2,0,1722013966,,"e ."
 :e ~/tmp/echo.sh
 |2,0,1722013949,,"e ~/tmp/echo.sh"
 :MRU env
@@ -410,8 +488,6 @@ $
 |2,0,1721954595,,"echo inden()"
 :let @"=expand("%:p")
 |2,0,1721954482,,"let @\"=expand(\"%:p\")"
-:l
-|2,0,1721954481,,"l"
 :MRU json
 |2,0,1721954441,,"MRU json"
 :e type_chat.py
@@ -582,8 +658,6 @@ $
 |2,0,1721320595,,"Date 1"
 :DateNormal 1
 |2,0,1721320568,,"DateNormal 1"
-:HotReload
-|2,0,1721320516,,"HotReload"
 :DateInsert
 |2,0,1721320420,,"DateInsert"
 :term 
@@ -698,8 +772,6 @@ $
 |2,0,1721237505,,"s/^\\(\\s*\\)\\(\\w\\+\\), \\(.*\\)/\\1\\3\\1\\2"
 :s/^\(\s*\)\(\w\+\), \(.*\)/\3\1\2
 |2,0,1721237497,,"s/^\\(\\s*\\)\\(\\w\\+\\), \\(.*\\)/\\3\\1\\2"
-:CocCommand
-|2,0,1721237336,,"CocCommand"
 :CocInstall
 |2,0,1721237298,,"CocInstall"
 :PlugInstall
@@ -782,8 +854,6 @@ $
 |2,0,1721123919,,"e scrape_food_delivery.py"
 :e view_swiggy_payload.py
 |2,0,1721123441,,"e view_swiggy_payload.py"
-:diffthis
-|2,0,1721121001,,"diffthis"
 :Term
 |2,0,1721119570,,"Term"
 :e ui-components-css/css-tailwind-outputs/
@@ -2400,8 +2470,6 @@ $
 |2,0,1717044662,,"MRU vim"
 :Print h
 |2,0,1717044653,,"Print h"
-:Print
-|2,0,1717044651,,"Print"
 :OpenGithubRaw
 |2,0,1717044456,,"OpenGithubRaw"
 :b timer
@@ -2694,8 +2762,6 @@ $
 |2,0,1716419794,,"e sk2gacha.html"
 :e py
 |2,0,1716418863,,"e py"
-:e pa
-|2,0,1716417807,,"e pa"
 :e drivers/LICENSE.chromedriver
 |2,0,1716417678,,"e drivers/LICENSE.chromedriver"
 :q~
@@ -3494,8 +3560,6 @@ $
 |2,0,1713929369,,"e tags"
 :verbomse command Commands
 |2,0,1713929338,,"verbomse command Commands"
-:Commands
-|2,0,1713929250,,"Commands"
 :Buffers
 |2,0,1713929185,,"Buffers"
 :FZF
@@ -4432,8 +4496,6 @@ $
 |2,0,1711997020,,"MRU 38:flask-vue/api.py"
 :e form_update_question.tmp
 |2,0,1711969791,,"e form_update_question.tmp"
-:e t
-|2,0,1711969788,,"e t"
 :MRU 2:hateoas_backend/hateoas-api.py
 |2,0,1711966768,,"MRU 2:hateoas_backend/hateoas-api.py"
 : w form_update_question.tmp
@@ -6816,8 +6878,6 @@ $
 |2,0,1692278157,,"%s/ .*/\""
 :e tmp.txt
 |2,0,1692277994,,"e tmp.txt"
-:e te
-|2,0,1692277992,,"e te"
 :e dat
 |2,0,1692276173,,"e dat"
 :e dte.py
@@ -8276,6 +8336,16 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/l:
+|2,1,1722188092,47,"l:"
+?/pass_path
+|2,1,1722187926,47,"pass_path"
+?/string
+|2,1,1722187835,47,"string"
+? @$
+|2,1,1722167196,,"@$"
+?/^sudo.*sqlite
+|2,1,1722156924,47,"^sudo.*sqlite"
 ?/^[a-z_]*json
 |2,1,1722141665,47,"^[a-z_]*json"
 ?/main
@@ -8330,8 +8400,6 @@ $
 |2,1,1722061085,47,"codeAction"
 ?/write
 |2,1,1722060862,47,"write"
-? @$
-|2,1,1722030255,,"@$"
 ? @attrs\.define
 |2,1,1722029820,,"@attrs\\.define"
 ?/To
@@ -9934,8 +10002,6 @@ $
 |2,1,1716167104,47,"\\(def\\|class\\)\\s\\+\\w*fish"
 ?/comple
 |2,1,1716161029,47,"comple"
-?/string
-|2,1,1716157911,47,"string"
 ?/files
 |2,1,1716154896,47,"files"
 ?/if
@@ -12252,198 +12318,43 @@ $
 |2,4,1693311567,,"cont"
 
 # Registers:
-"0	CHAR	0
-	"./database.so"
-|3,0,0,0,1,0,1722142709,"\"./database.so\""
+""0	CHAR	0
+	expected
+|3,1,0,0,1,0,1722188198,"expected"
 "1	LINE	0
-	autocmd VimLeave * call libcall("./database.so", "close_db", "")
-|3,0,1,1,1,0,1722142644,"autocmd VimLeave * call libcall(\"./database.so\", \"close_db\", \"\")"
+	        let pass_lines = 
+|3,0,1,1,1,0,1722188147,"        let pass_lines = "
 "2	LINE	0
-	" Define functions to call the C library
-	function! OpenDB(db_name)
-	    return libcall(s:library_path, "open_db", a:db_name)
-	endfunction
-	
-	function! ExecSQL(sql)
-	    return libcall(s:library_path, "exec_sql", a:sql)
-	endfunction
-	
-	function! QuerySQL(sql)
-	    return libcall(s:library_path, "query_sql", a:sql)
-	endfunction
-	
-	function! CloseDB()
-	    return libcall(s:library_path, "close_db", "")
-	endfunction
-	
-	
-	
-	
-	function! s:Main()
-	    call OpenDBSqlite("test.db")
-	
-	    " Create a table
-	    call ExecSQL("CREATE TABLE IF NOT EXISTS test (id INTEGER PRIMARY KEY, value TEXT);")
-	
-	    " Insert a row
-	    call ExecSQL("INSERT INTO test (value) VALUES ('Hello, Vim!');")
-	
-	    " Query the table
-	    echo QuerySQL("SELECT value FROM test;")
-	
-	    " Close the database
-	    call CloseDB()
-	
-	endfunction
-	
-	command! Main :call s:Main()
-	" call s:LogWriteToDatabase()
-|3,0,2,1,39,0,1722142640,"\" Define functions to call the C library","function! OpenDB(db_name)","    return libcall(s:library_path, \"open_db\", a:db_name)","endfunction","","function! ExecSQL(sql)","    return libcall(s:library_path, \"exec_sql\", a:sql)","endfunction","","function! QuerySQL(sql)","    return libcall(s:library_path, \"query_sql\", a:sql)","endfunction","","function! CloseDB()","    return libcall(s:library_path, \"close_db\", \"\")",>13
-|<"endfunction","","","","","function! s:Main()","    call OpenDBSqlite(\"test.db\")","","    \" Create a table","    call ExecSQL(\"CREATE TABLE IF NOT EXISTS test (id INTEGER PRIMARY KEY, value TEXT);\")","","    \" Insert a row","    call ExecSQL(\"INSERT INTO test (value) VALUES ('Hello, Vim!');\")","","    \" Query the table","    echo QuerySQL(\"SELECT value FROM test;\")","","    \" Close the database","    call CloseDB()","","endfunction","","command! Main :call s:Main()",>32
-|<"\" call s:LogWriteToDatabase()"
+	    let garbage = "garbage"
+|3,0,2,1,1,0,1722188081,"    let garbage = \"garbage\""
 "3	LINE	0
-	#include <sqlite3.h>
-	#include <string.h>
-	#include <stdio.h>
-	
-	static sqlite3 *db;
-	static char *err_msg = 0;
-	
-	int open_db(const char *db_name) {
-	    int rc = sqlite3_open(db_name, &db);
-	    if (rc) {
-	        fprintf(stderr, "Can't open database: %s\n", sqlite3_errmsg(db));
-	        return rc;
-	    }
-	    return SQLITE_OK;
-	}
-	
-	int exec_sql(const char *sql) {
-	    int rc = sqlite3_exec(db, sql, 0, 0, &err_msg);
-	    if (rc != SQLITE_OK) {
-	        fprintf(stderr, "SQL error: %s\n", err_msg);
-	        sqlite3_free(err_msg);
-	        return rc;
-	    }
-	    return SQLITE_OK;
-	}
-	
-	const char* query_sql(const char *sql) {
-	    static char result[4096];
-	    sqlite3_stmt *stmt;
-	    memset(result, 0, sizeof(result));
-	
-	    int rc = sqlite3_prepare_v2(db, sql, -1, &stmt, 0);
-	    if (rc != SQLITE_OK) {
-	        return sqlite3_errmsg(db);
-	    }
-	
-	    int idx = 0;
-	    while ((rc = sqlite3_step(stmt)) == SQLITE_ROW) {
-	        const unsigned char *text = sqlite3_column_text(stmt, 0);
-	        snprintf(result + idx, sizeof(result) - idx, "%s\n", text);
-	        idx += strlen((const char*)text) + 1;
-	    }
-	    sqlite3_finalize(stmt);
-	
-	    if (rc != SQLITE_DONE) {
-	        return sqlite3_errmsg(db);
-	    }
-	
-	    return result;
-	}
-|3,0,3,1,50,0,1722142605,"#include <sqlite3.h>","#include <string.h>","#include <stdio.h>","","static sqlite3 *db;","static char *err_msg = 0;","","int open_db(const char *db_name) {","    int rc = sqlite3_open(db_name, &db);","    if (rc) {","        fprintf(stderr, \"Can't open database: %s\\n\", sqlite3_errmsg(db));","        return rc;","    }","    return SQLITE_OK;","}","","int exec_sql(const char *sql) {",>53
-|<"    int rc = sqlite3_exec(db, sql, 0, 0, &err_msg);","    if (rc != SQLITE_OK) {","        fprintf(stderr, \"SQL error: %s\\n\", err_msg);","        sqlite3_free(err_msg);","        return rc;","    }","    return SQLITE_OK;","}","","const char* query_sql(const char *sql) {","    static char result[4096];","    sqlite3_stmt *stmt;","    memset(result, 0, sizeof(result));","","    int rc = sqlite3_prepare_v2(db, sql, -1, &stmt, 0);","    if (rc != SQLITE_OK) {",>36
-|<"        return sqlite3_errmsg(db);","    }","","    int idx = 0;","    while ((rc = sqlite3_step(stmt)) == SQLITE_ROW) {","        const unsigned char *text = sqlite3_column_text(stmt, 0);","        snprintf(result + idx, sizeof(result) - idx, \"%s\\n\", text);","        idx += strlen((const char*)text) + 1;","    }","    sqlite3_finalize(stmt);","","    if (rc != SQLITE_DONE) {","        return sqlite3_errmsg(db);","    }","","    return result;","}"
+	    let expected = garbage + expected
+|3,0,3,1,1,0,1722188074,"    let expected = garbage + expected"
 "4	LINE	0
-	#include <stdio.h>
-	#include <string.h>
-	#include <sqlite3.h>
-	
-	#define MAX_RESULT_SIZE 1024
-	
-	sqlite3 *db;
-	
-	static int callback(void *data, int argc, char **argv, char **azColName) {
-	    char *result = (char*)data;
-	    int i;
-	    for(i = 0; i < argc; i++) {
-	        strcat(result, azColName[i]);
-	        strcat(result, " = ");
-	        strcat(result, (argv[i] ? argv[i] : "NULL"));
-	        strcat(result, "\n");
-	    }
-	    strcat(result, "\n");
-	    return 0;
-	}
-	
-	char* execute_query(char* query) {
-	    static char result[MAX_RESULT_SIZE];
-	    char *err_msg = 0;
-	    int rc;
-	
-	    result[0] = '\0';  // Initialize result string
-	
-	    if (db == NULL) {
-	        rc = sqlite3_open("claude-test.db", &db);
-	        if (rc != SQLITE_OK) {
-	            sprintf(result, "Cannot open database: %s\n", sqlite3_errmsg(db));
-	            return result;
-	        }
-	    }
-	
-	    rc = sqlite3_exec(db, query, callback, result, &err_msg);
-	
-	    if (rc != SQLITE_OK ) {
-	        sprintf(result, "SQL error: %s\n", err_msg);
-	        sqlite3_free(err_msg);
-	    }
-	
-	    return result;
-	}
-	
-	void close_db() {
-	    if (db != NULL) {
-	        sqlite3_close(db);
-	        db = NULL;
-|3,0,4,1,50,0,1722142430,"#include <stdio.h>","#include <string.h>","#include <sqlite3.h>","","#define MAX_RESULT_SIZE 1024","","sqlite3 *db;","","static int callback(void *data, int argc, char **argv, char **azColName) {","    char *result = (char*)data;","    int i;","    for(i = 0; i < argc; i++) {","        strcat(result, azColName[i]);","        strcat(result, \" = \");","        strcat(result, (argv[i] ? argv[i] : \"NULL\"));",>34
-|<"        strcat(result, \"\\n\");","    }","    strcat(result, \"\\n\");","    return 0;","}","","char* execute_query(char* query) {","    static char result[MAX_RESULT_SIZE];","    char *err_msg = 0;","    int rc;","","    result[0] = '\\0';  // Initialize result string","","    if (db == NULL) {","        rc = sqlite3_open(\"claude-test.db\", &db);","        if (rc != SQLITE_OK) {","            sprintf(result, \"Cannot open database: %s\\n\", sqlite3_errmsg(db));",>28
-|<"            return result;","        }","    }","","    rc = sqlite3_exec(db, query, callback, result, &err_msg);","","    if (rc != SQLITE_OK ) {","        sprintf(result, \"SQL error: %s\\n\", err_msg);","        sqlite3_free(err_msg);","    }","","    return result;","}","","void close_db() {","    if (db != NULL) {","        sqlite3_close(db);","        db = NULL;"
+	        call s:WriteToSTDOUT(printf("Test failed: Expected %s but got %s", expected, result))
+|3,0,4,1,1,0,1722188022,"        call s:WriteToSTDOUT(printf(\"Test failed: Expected %s but got %s\", expected, result))"
 "5	LINE	0
-	function! OpenDBSqlite(db_name)
-	    return libcall(s:library_path, "open_db", a:db_name)
-	endfunction
-	
-	function! ExecSQL(sql)
-	    return libcall(s:library_path, "exec_sql", a:sql)
-	endfunction
-	
-	function! QuerySQL(sql)
-	    return libcall(s:library_path, "query_sql", a:sql)
-	endfunction
-	
-	function! CloseDB()
-	    return libcall(s:library_path, "close_db", "")
-	endfunction
-|3,0,5,1,15,0,1722142412,"function! OpenDBSqlite(db_name)","    return libcall(s:library_path, \"open_db\", a:db_name)","endfunction","","function! ExecSQL(sql)","    return libcall(s:library_path, \"exec_sql\", a:sql)","endfunction","","function! QuerySQL(sql)","    return libcall(s:library_path, \"query_sql\", a:sql)","endfunction","","function! CloseDB()","    return libcall(s:library_path, \"close_db\", \"\")","endfunction"
+	        let l:passpath = 'pass.txt'
+|3,0,5,1,1,0,1722187979,"        let l:passpath = 'pass.txt'"
 "6	LINE	0
-	echo printf("%s", s:library_path)
-|3,0,6,1,1,0,1722142346,"echo printf(\"%s\", s:library_path)"
+	        let l:pass_path = 'pass.txt'
+	        call writefile([result], l:pass_path)
+	        let l:fail_path = 'fail.txt'
+	        call writefile([expected], l:fail_path)
+|3,0,6,1,4,0,1722187940,"        let l:pass_path = 'pass.txt'","        call writefile([result], l:pass_path)","        let l:fail_path = 'fail.txt'","        call writefile([expected], l:fail_path)"
 "7	LINE	0
-	echo printf("`%s`", s:output_captured)
-|3,0,7,1,1,0,1722142289,"echo printf(\"`%s`\", s:output_captured)"
+	        call writefile([result], l:pass_path)
+|3,0,7,1,1,0,1722187936,"        call writefile([result], l:pass_path)"
 "8	LINE	0
-	if !filereadable(s:library_path)
-	    echoerr "File not found: " . s:library_path
-	    finish
-	endif
-|3,0,8,1,4,0,1722142268,"if !filereadable(s:library_path)","    echoerr \"File not found: \" . s:library_path","    finish","endif"
+	        call s:WriteToSTDOUT(printf("Test failed: Expected %s but got %s", expected, result))
+	        call writefile([result], l:pass_path)
+|3,0,8,1,2,0,1722187935,"        call s:WriteToSTDOUT(printf(\"Test failed: Expected %s but got %s\", expected, result))","        call writefile([result], l:pass_path)"
 "9	LINE	0
-	    redraw | echo "source " . expand("%:t")
-|3,0,9,1,1,0,1722142259,"    redraw | echo \"source \" . expand(\"%:t\")"
-""a	CHAR	0
+	        let l:pass_path = 'pass.txt'
+|3,0,9,1,1,0,1722187934,"        let l:pass_path = 'pass.txt'"
+"a	CHAR	0
 	    typename: str = attrs.field(metadata={'alias': '__typename'})
-|3,1,10,0,1,0,1722143855,"    typename: str = attrs.field(metadata={'alias': '__typename'})"
+|3,0,10,0,1,0,1722187896,"    typename: str = attrs.field(metadata={'alias': '__typename'})"
 "j	CHAR	0
 	kl
 |3,0,19,0,1,0,1721238341,"kl"
@@ -12451,313 +12362,597 @@ $
 	kkkkkkkkkkl;;;Klofrom models import jkddll;;;;jjj;:€ýa
 |3,0,20,0,1,0,1722102362,"kkkkkkkkkkl;;;Klofrom models import jkddll;;;;jjj;:€ýa"
 "l	CHAR	0
-	lll;;;;;;lllllllllllllllllkGlllllkkkkwjjlllllllllllllllllkkkkkkkkkkkkkkkkkkkkkkkkllllllllllllllllllllllkkkkkkkkkkkkkkkkkkkkkklllllllllllllllllllkkkkVd:w l€ýa:wlllll;;;;dq:w
-|3,0,21,0,1,0,1721149251,"lll;;;;;;lllllllllllllllllkGlllllkkkkwjjlllllllllllllllllkkkkkkkkkkkkkkkkkkkkkkkkllllllllllllllllllllllkkkkkkkkkkkkkkkkkkkkkklllllllllllllllllllkkkkVd:w l€ýa:wlllll;;;;dq:w"
+	lllllkkkklllllllkkkkkllllllk333kkbc;returnjK:w:so %G
+|3,0,21,0,1,0,1722168762,"lllllkkkklllllllkkkkkllllllk333kkbc;returnjK:w:so %G"
 "s	CHAR	0
 	https://rsms.me/inter/
 |3,0,28,0,1,0,1718483440,"https://rsms.me/inter/"
 "-	CHAR	0
-	"./database.so"
-|3,0,36,0,1,0,1722142683,"\"./database.so\""
+	expected
+|3,0,36,0,1,0,1722188196,"expected"
 
 # File marks:
-'0  17  0  ~/.vim/edit-plugin/Makefile
-|4,48,17,0,1722145643,"~/.vim/edit-plugin/Makefile"
-'1  23  0  ~/.vim/edit-plugin/edit.vim
-|4,49,23,0,1722143584,"~/.vim/edit-plugin/edit.vim"
-'2  23  0  ~/.vim/edit-plugin/edit.vim
-|4,50,23,0,1722143584,"~/.vim/edit-plugin/edit.vim"
-'3  55  0  ~/.vim/edit-plugin/edit.vim
-|4,51,55,0,1722142650,"~/.vim/edit-plugin/edit.vim"
-'4  55  0  ~/.vim/edit-plugin/edit.vim
-|4,52,55,0,1722142650,"~/.vim/edit-plugin/edit.vim"
-'5  55  0  ~/.vim/edit-plugin/edit.vim
-|4,53,55,0,1722142650,"~/.vim/edit-plugin/edit.vim"
-'6  55  0  ~/.vim/edit-plugin/edit.vim
-|4,54,55,0,1722142650,"~/.vim/edit-plugin/edit.vim"
-'7  16  6  ~/.vim/edit-plugin/Makefile
-|4,55,16,6,1722142458,"~/.vim/edit-plugin/Makefile"
-'8  16  6  ~/.vim/edit-plugin/Makefile
-|4,56,16,6,1722142458,"~/.vim/edit-plugin/Makefile"
-'9  16  6  ~/.vim/edit-plugin/Makefile
-|4,57,16,6,1722142458,"~/.vim/edit-plugin/Makefile"
+'0  5  0  ~/.vim/edit-plugin/pass.txt
+|4,48,5,0,1722188230,"~/.vim/edit-plugin/pass.txt"
+'1  5  0  ~/.vim/edit-plugin/pass.txt
+|4,49,5,0,1722188224,"~/.vim/edit-plugin/pass.txt"
+'2  1  0  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,50,1,0,1722188202,"~/.vim/edit-plugin/sqlite-functions.vim"
+'3  1  0  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,51,1,0,1722188202,"~/.vim/edit-plugin/sqlite-functions.vim"
+'4  1  0  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,52,1,0,1722188202,"~/.vim/edit-plugin/sqlite-functions.vim"
+'5  1  0  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,53,1,0,1722188202,"~/.vim/edit-plugin/sqlite-functions.vim"
+'6  73  32  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,54,73,32,1722188199,"~/.vim/edit-plugin/sqlite-functions.vim"
+'7  73  32  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,55,73,32,1722188199,"~/.vim/edit-plugin/sqlite-functions.vim"
+'8  73  32  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,56,73,32,1722188199,"~/.vim/edit-plugin/sqlite-functions.vim"
+'9  73  32  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,57,73,32,1722188199,"~/.vim/edit-plugin/sqlite-functions.vim"
 
 # Jumplist (newest first):
--'  17  0  ~/.vim/edit-plugin/Makefile
-|4,39,17,0,1722145643,"~/.vim/edit-plugin/Makefile"
--'  3  11  ~/.vim/edit-plugin/Makefile
-|4,39,3,11,1722143855,"~/.vim/edit-plugin/Makefile"
--'  20  0  ~/.vim/edit-plugin/edit.vim
-|4,39,20,0,1722143849,"~/.vim/edit-plugin/edit.vim"
--'  1  0  ~/.vim/edit-plugin/edit.vim
-|4,39,1,0,1722143643,"~/.vim/edit-plugin/edit.vim"
--'  23  0  ~/.vim/edit-plugin/edit.vim
-|4,39,23,0,1722143584,"~/.vim/edit-plugin/edit.vim"
--'  23  0  ~/.vim/edit-plugin/edit.vim
-|4,39,23,0,1722143584,"~/.vim/edit-plugin/edit.vim"
--'  1  4  ~/.vim/edit-plugin/database.c
-|4,39,1,4,1722143563,"~/.vim/edit-plugin/database.c"
--'  1  4  ~/.vim/edit-plugin/database.c
-|4,39,1,4,1722143563,"~/.vim/edit-plugin/database.c"
--'  53  36  ~/.vim/edit-plugin/edit.vim
-|4,39,53,36,1722143542,"~/.vim/edit-plugin/edit.vim"
--'  53  36  ~/.vim/edit-plugin/edit.vim
-|4,39,53,36,1722143542,"~/.vim/edit-plugin/edit.vim"
--'  32  38  ~/.vim/edit-plugin/edit.vim
-|4,39,32,38,1722143468,"~/.vim/edit-plugin/edit.vim"
--'  32  38  ~/.vim/edit-plugin/edit.vim
-|4,39,32,38,1722143468,"~/.vim/edit-plugin/edit.vim"
--'  1  0  ~/.vim/edit-plugin/edit.vim
-|4,39,1,0,1722142667,"~/.vim/edit-plugin/edit.vim"
--'  55  0  ~/.vim/edit-plugin/edit.vim
-|4,39,55,0,1722142650,"~/.vim/edit-plugin/edit.vim"
--'  55  0  ~/.vim/edit-plugin/edit.vim
-|4,39,55,0,1722142650,"~/.vim/edit-plugin/edit.vim"
--'  55  0  ~/.vim/edit-plugin/edit.vim
-|4,39,55,0,1722142650,"~/.vim/edit-plugin/edit.vim"
--'  31  40  ~/.vim/edit-plugin/edit.vim
-|4,39,31,40,1722142638,"~/.vim/edit-plugin/edit.vim"
--'  31  40  ~/.vim/edit-plugin/edit.vim
-|4,39,31,40,1722142638,"~/.vim/edit-plugin/edit.vim"
--'  31  40  ~/.vim/edit-plugin/edit.vim
-|4,39,31,40,1722142638,"~/.vim/edit-plugin/edit.vim"
--'  52  0  ~/.vim/edit-plugin/database.c
-|4,39,52,0,1722142632,"~/.vim/edit-plugin/database.c"
--'  52  0  ~/.vim/edit-plugin/database.c
-|4,39,52,0,1722142632,"~/.vim/edit-plugin/database.c"
--'  1  0  ~/.vim/edit-plugin/edit.vim
-|4,39,1,0,1722142632,"~/.vim/edit-plugin/edit.vim"
--'  52  0  ~/.vim/edit-plugin/database.c
-|4,39,52,0,1722142632,"~/.vim/edit-plugin/database.c"
--'  1  20  ~/.vim/edit-plugin/database.c
-|4,39,1,20,1722142605,"~/.vim/edit-plugin/database.c"
--'  16  6  ~/.vim/edit-plugin/Makefile
-|4,39,16,6,1722142458,"~/.vim/edit-plugin/Makefile"
--'  16  6  ~/.vim/edit-plugin/Makefile
-|4,39,16,6,1722142458,"~/.vim/edit-plugin/Makefile"
--'  16  6  ~/.vim/edit-plugin/Makefile
-|4,39,16,6,1722142458,"~/.vim/edit-plugin/Makefile"
--'  16  6  ~/.vim/edit-plugin/Makefile
-|4,39,16,6,1722142458,"~/.vim/edit-plugin/Makefile"
--'  1  0  ~/.vim/edit-plugin/Makefile
-|4,39,1,0,1722142453,"~/.vim/edit-plugin/Makefile"
--'  1  0  ~/.vim/edit-plugin/Makefile
-|4,39,1,0,1722142453,"~/.vim/edit-plugin/Makefile"
--'  1  0  ~/.vim/edit-plugin/Makefile
-|4,39,1,0,1722142453,"~/.vim/edit-plugin/Makefile"
--'  1  0  ~/.vim/edit-plugin/Makefile
-|4,39,1,0,1722142453,"~/.vim/edit-plugin/Makefile"
--'  1  0  ~/.vim/edit-plugin/database.c
-|4,39,1,0,1722142434,"~/.vim/edit-plugin/database.c"
--'  1  0  ~/.vim/edit-plugin/database.c
-|4,39,1,0,1722142434,"~/.vim/edit-plugin/database.c"
--'  2  0  ~/.vim/edit-plugin/database.c
-|4,39,2,0,1722142432,"~/.vim/edit-plugin/database.c"
--'  49  0  ~/.vim/edit-plugin/database.c
-|4,39,49,0,1722142432,"~/.vim/edit-plugin/database.c"
--'  2  0  ~/.vim/edit-plugin/database.c
-|4,39,2,0,1722142432,"~/.vim/edit-plugin/database.c"
--'  49  0  ~/.vim/edit-plugin/database.c
-|4,39,49,0,1722142432,"~/.vim/edit-plugin/database.c"
--'  2  0  ~/.vim/edit-plugin/database.c
-|4,39,2,0,1722142432,"~/.vim/edit-plugin/database.c"
--'  49  0  ~/.vim/edit-plugin/database.c
-|4,39,49,0,1722142432,"~/.vim/edit-plugin/database.c"
--'  49  0  ~/.vim/edit-plugin/database.c
-|4,39,49,0,1722142432,"~/.vim/edit-plugin/database.c"
--'  54  0  ~/.vim/edit-plugin/database.c
-|4,39,54,0,1722142431,"~/.vim/edit-plugin/database.c"
--'  55  0  ~/.vim/edit-plugin/database.c
-|4,39,55,0,1722142431,"~/.vim/edit-plugin/database.c"
--'  54  0  ~/.vim/edit-plugin/database.c
-|4,39,54,0,1722142431,"~/.vim/edit-plugin/database.c"
--'  55  0  ~/.vim/edit-plugin/database.c
-|4,39,55,0,1722142431,"~/.vim/edit-plugin/database.c"
--'  54  0  ~/.vim/edit-plugin/database.c
-|4,39,54,0,1722142431,"~/.vim/edit-plugin/database.c"
--'  55  0  ~/.vim/edit-plugin/database.c
-|4,39,55,0,1722142431,"~/.vim/edit-plugin/database.c"
--'  54  0  ~/.vim/edit-plugin/database.c
-|4,39,54,0,1722142431,"~/.vim/edit-plugin/database.c"
--'  55  0  ~/.vim/edit-plugin/database.c
-|4,39,55,0,1722142431,"~/.vim/edit-plugin/database.c"
--'  33  16  ~/.vim/edit-plugin/edit.vim
-|4,39,33,16,1722142429,"~/.vim/edit-plugin/edit.vim"
--'  33  16  ~/.vim/edit-plugin/edit.vim
-|4,39,33,16,1722142429,"~/.vim/edit-plugin/edit.vim"
--'  32  16  ~/.vim/edit-plugin/edit.vim
-|4,39,32,16,1722142429,"~/.vim/edit-plugin/edit.vim"
--'  33  16  ~/.vim/edit-plugin/edit.vim
-|4,39,33,16,1722142429,"~/.vim/edit-plugin/edit.vim"
--'  33  16  ~/.vim/edit-plugin/edit.vim
-|4,39,33,16,1722142429,"~/.vim/edit-plugin/edit.vim"
--'  45  0  ~/.vim/edit-plugin/edit.vim
-|4,39,45,0,1722142413,"~/.vim/edit-plugin/edit.vim"
--'  46  0  ~/.vim/edit-plugin/edit.vim
-|4,39,46,0,1722142413,"~/.vim/edit-plugin/edit.vim"
--'  45  0  ~/.vim/edit-plugin/edit.vim
-|4,39,45,0,1722142413,"~/.vim/edit-plugin/edit.vim"
--'  46  0  ~/.vim/edit-plugin/edit.vim
-|4,39,46,0,1722142413,"~/.vim/edit-plugin/edit.vim"
--'  45  0  ~/.vim/edit-plugin/edit.vim
-|4,39,45,0,1722142413,"~/.vim/edit-plugin/edit.vim"
--'  46  0  ~/.vim/edit-plugin/edit.vim
-|4,39,46,0,1722142413,"~/.vim/edit-plugin/edit.vim"
--'  45  0  ~/.vim/edit-plugin/edit.vim
-|4,39,45,0,1722142413,"~/.vim/edit-plugin/edit.vim"
--'  46  0  ~/.vim/edit-plugin/edit.vim
-|4,39,46,0,1722142413,"~/.vim/edit-plugin/edit.vim"
--'  7  0  ~/.vim/edit-plugin/Makefile
-|4,39,7,0,1722142405,"~/.vim/edit-plugin/Makefile"
--'  7  0  ~/.vim/edit-plugin/Makefile
-|4,39,7,0,1722142405,"~/.vim/edit-plugin/Makefile"
--'  7  0  ~/.vim/edit-plugin/Makefile
-|4,39,7,0,1722142405,"~/.vim/edit-plugin/Makefile"
--'  7  0  ~/.vim/edit-plugin/Makefile
-|4,39,7,0,1722142405,"~/.vim/edit-plugin/Makefile"
--'  7  0  ~/.vim/edit-plugin/Makefile
-|4,39,7,0,1722142405,"~/.vim/edit-plugin/Makefile"
--'  28  9  ~/.vim/edit-plugin/edit.vim
-|4,39,28,9,1722142389,"~/.vim/edit-plugin/edit.vim"
--'  28  9  ~/.vim/edit-plugin/edit.vim
-|4,39,28,9,1722142389,"~/.vim/edit-plugin/edit.vim"
--'  28  9  ~/.vim/edit-plugin/edit.vim
-|4,39,28,9,1722142389,"~/.vim/edit-plugin/edit.vim"
--'  28  9  ~/.vim/edit-plugin/edit.vim
-|4,39,28,9,1722142389,"~/.vim/edit-plugin/edit.vim"
--'  28  9  ~/.vim/edit-plugin/edit.vim
-|4,39,28,9,1722142389,"~/.vim/edit-plugin/edit.vim"
--'  27  9  ~/.vim/edit-plugin/edit.vim
-|4,39,27,9,1722142365,"~/.vim/edit-plugin/edit.vim"
--'  27  9  ~/.vim/edit-plugin/edit.vim
-|4,39,27,9,1722142365,"~/.vim/edit-plugin/edit.vim"
--'  27  9  ~/.vim/edit-plugin/edit.vim
-|4,39,27,9,1722142365,"~/.vim/edit-plugin/edit.vim"
--'  27  9  ~/.vim/edit-plugin/edit.vim
-|4,39,27,9,1722142365,"~/.vim/edit-plugin/edit.vim"
--'  27  9  ~/.vim/edit-plugin/edit.vim
-|4,39,27,9,1722142365,"~/.vim/edit-plugin/edit.vim"
--'  29  4  ~/.vim/edit-plugin/edit.vim
-|4,39,29,4,1722142350,"~/.vim/edit-plugin/edit.vim"
--'  29  4  ~/.vim/edit-plugin/edit.vim
-|4,39,29,4,1722142350,"~/.vim/edit-plugin/edit.vim"
--'  29  4  ~/.vim/edit-plugin/edit.vim
-|4,39,29,4,1722142350,"~/.vim/edit-plugin/edit.vim"
--'  29  4  ~/.vim/edit-plugin/edit.vim
-|4,39,29,4,1722142350,"~/.vim/edit-plugin/edit.vim"
--'  29  4  ~/.vim/edit-plugin/edit.vim
-|4,39,29,4,1722142350,"~/.vim/edit-plugin/edit.vim"
--'  25  41  ~/.vim/edit-plugin/edit.vim
-|4,39,25,41,1722142308,"~/.vim/edit-plugin/edit.vim"
--'  25  41  ~/.vim/edit-plugin/edit.vim
-|4,39,25,41,1722142308,"~/.vim/edit-plugin/edit.vim"
--'  25  41  ~/.vim/edit-plugin/edit.vim
-|4,39,25,41,1722142308,"~/.vim/edit-plugin/edit.vim"
--'  25  41  ~/.vim/edit-plugin/edit.vim
-|4,39,25,41,1722142308,"~/.vim/edit-plugin/edit.vim"
--'  25  41  ~/.vim/edit-plugin/edit.vim
-|4,39,25,41,1722142308,"~/.vim/edit-plugin/edit.vim"
--'  24  0  ~/.vim/edit-plugin/edit.vim
-|4,39,24,0,1722142301,"~/.vim/edit-plugin/edit.vim"
--'  24  0  ~/.vim/edit-plugin/edit.vim
-|4,39,24,0,1722142301,"~/.vim/edit-plugin/edit.vim"
--'  24  0  ~/.vim/edit-plugin/edit.vim
-|4,39,24,0,1722142301,"~/.vim/edit-plugin/edit.vim"
--'  23  17  ~/.vim/edit-plugin/edit.vim
-|4,39,23,17,1722142301,"~/.vim/edit-plugin/edit.vim"
--'  24  0  ~/.vim/edit-plugin/edit.vim
-|4,39,24,0,1722142301,"~/.vim/edit-plugin/edit.vim"
--'  23  17  ~/.vim/edit-plugin/edit.vim
-|4,39,23,17,1722142301,"~/.vim/edit-plugin/edit.vim"
--'  24  0  ~/.vim/edit-plugin/edit.vim
-|4,39,24,0,1722142301,"~/.vim/edit-plugin/edit.vim"
--'  23  17  ~/.vim/edit-plugin/edit.vim
-|4,39,23,17,1722142301,"~/.vim/edit-plugin/edit.vim"
--'  1  0  ~/.vim/edit-plugin/edit.vim
-|4,39,1,0,1722142176,"~/.vim/edit-plugin/edit.vim"
--'  1  0  ~/.vim/edit-plugin/edit.vim
-|4,39,1,0,1722142176,"~/.vim/edit-plugin/edit.vim"
--'  6  11  ~/.vim/edit-plugin/Makefile
-|4,39,6,11,1722142169,"~/.vim/edit-plugin/Makefile"
--'  6  11  ~/.vim/edit-plugin/Makefile
-|4,39,6,11,1722142169,"~/.vim/edit-plugin/Makefile"
--'  6  11  ~/.vim/edit-plugin/Makefile
-|4,39,6,11,1722142169,"~/.vim/edit-plugin/Makefile"
+-'  5  0  ~/.vim/edit-plugin/pass.txt
+|4,39,5,0,1722188230,"~/.vim/edit-plugin/pass.txt"
+-'  5  0  ~/.vim/edit-plugin/pass.txt
+|4,39,5,0,1722188224,"~/.vim/edit-plugin/pass.txt"
+-'  1  0  ~/.vim/edit-plugin/pass.txt
+|4,39,1,0,1722188215,"~/.vim/edit-plugin/pass.txt"
+-'  1  0  ~/.vim/edit-plugin/pass.txt
+|4,39,1,0,1722188215,"~/.vim/edit-plugin/pass.txt"
+-'  1  0  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,1,0,1722188202,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  1  0  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,1,0,1722188202,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  1  0  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,1,0,1722188202,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  73  32  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,73,32,1722188199,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  73  32  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,73,32,1722188199,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  73  32  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,73,32,1722188199,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  73  32  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,73,32,1722188199,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  70  32  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,70,32,1722188194,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  70  32  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,70,32,1722188194,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  70  32  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,70,32,1722188194,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  70  32  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,70,32,1722188194,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  71  24  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,71,24,1722188193,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  71  24  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,71,24,1722188193,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  71  24  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,71,24,1722188193,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  71  24  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,71,24,1722188193,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  1  0  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,1,0,1722188134,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  1  0  ~/.vim/edit-plugin/pass.txt
+|4,39,1,0,1722188120,"~/.vim/edit-plugin/pass.txt"
+-'  1  0  ~/.vim/edit-plugin/pass.txt
+|4,39,1,0,1722188120,"~/.vim/edit-plugin/pass.txt"
+-'  1  0  ~/.vim/edit-plugin/pass.txt
+|4,39,1,0,1722188120,"~/.vim/edit-plugin/pass.txt"
+-'  1  0  ~/.vim/edit-plugin/fail.txt
+|4,39,1,0,1722188119,"~/.vim/edit-plugin/fail.txt"
+-'  1  0  ~/.vim/edit-plugin/fail.txt
+|4,39,1,0,1722188119,"~/.vim/edit-plugin/fail.txt"
+-'  1  0  ~/.vim/edit-plugin/fail.txt
+|4,39,1,0,1722188119,"~/.vim/edit-plugin/fail.txt"
+-'  1  0  ~/.vim/edit-plugin/fail.txt
+|4,39,1,0,1722188119,"~/.vim/edit-plugin/fail.txt"
+-'  1  0  ~/.vim/edit-plugin/fail.txt
+|4,39,1,0,1722188119,"~/.vim/edit-plugin/fail.txt"
+-'  1  0  ~/.vim/edit-plugin/pass.txt
+|4,39,1,0,1722188113,"~/.vim/edit-plugin/pass.txt"
+-'  45  23  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,45,23,1722188100,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  45  23  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,45,23,1722188100,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  45  23  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,45,23,1722188100,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  45  23  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,45,23,1722188100,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  45  23  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,45,23,1722188100,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  45  23  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,45,23,1722188100,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  45  23  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,45,23,1722188100,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  74  75  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,74,75,1722188098,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  72  75  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,72,75,1722188098,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  74  75  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,74,75,1722188098,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  72  75  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,72,75,1722188098,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  74  75  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,74,75,1722188098,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  72  75  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,72,75,1722188098,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  74  75  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,74,75,1722188098,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  72  75  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,72,75,1722188098,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  72  75  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,72,75,1722188098,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  72  75  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,72,75,1722188098,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  62  4  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,62,4,1722188092,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  62  4  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,62,4,1722188092,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  62  4  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,62,4,1722188092,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  62  4  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,62,4,1722188092,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  62  4  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,62,4,1722188092,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  62  4  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,62,4,1722188092,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  62  4  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,62,4,1722188092,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  63  4  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,63,4,1722188082,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  63  4  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,63,4,1722188082,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  63  4  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,63,4,1722188082,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  63  4  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,63,4,1722188082,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  63  4  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,63,4,1722188082,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  63  4  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,63,4,1722188082,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  63  4  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,63,4,1722188082,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  63  4  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,63,4,1722188082,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  64  36  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,64,36,1722188065,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  65  36  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,65,36,1722188065,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  64  36  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,64,36,1722188065,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  65  36  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,65,36,1722188065,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  64  36  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,64,36,1722188065,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  65  36  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,65,36,1722188065,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  64  36  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,64,36,1722188065,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  65  36  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,65,36,1722188065,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  64  36  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,64,36,1722188065,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  65  36  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,65,36,1722188065,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  64  36  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,64,36,1722188065,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  65  36  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,65,36,1722188065,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  64  36  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,64,36,1722188065,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  65  36  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,65,36,1722188065,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  64  36  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,64,36,1722188065,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  65  36  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,65,36,1722188065,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  64  19  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,64,19,1722188040,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  63  19  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,63,19,1722188040,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  67  8  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,67,8,1722188024,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  69  8  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,69,8,1722188024,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  67  8  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,67,8,1722188024,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  69  8  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,69,8,1722188024,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  67  8  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,67,8,1722188024,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  69  8  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,69,8,1722188024,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  67  8  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,67,8,1722188024,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  67  8  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,67,8,1722188024,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  69  8  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,69,8,1722188024,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  67  8  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,67,8,1722188024,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  69  8  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,69,8,1722188024,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  67  8  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,67,8,1722188024,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  69  8  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,69,8,1722188024,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  67  8  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,67,8,1722188024,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  65  8  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,65,8,1722188024,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  69  8  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,69,8,1722188024,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  67  8  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,67,8,1722188024,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  67  8  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,67,8,1722188024,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  68  20  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,68,20,1722188011,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  68  20  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,68,20,1722188011,"~/.vim/edit-plugin/sqlite-functions.vim"
 
 # Buffer list:
-%~/.vim/edit-plugin/edit.vim	20	0
-%~/.vim/edit-plugin/Makefile	17	0
+%~/.vim/edit-plugin/pass.txt	5	0
+%~/.vim/edit-plugin/fail.txt	5	0
 
 # History of marks within files (newest to oldest):
 
+> ~/.vim/edit-plugin/pass.txt
+	*	1722188229	0
+	"	5	0
+
+> ~/.vim/edit-plugin/fail.txt
+	*	1722188220	0
+	"	5	0
+
+> ~/.vim/edit-plugin/sqlite-functions.vim
+	*	1722188201	0
+	"	1	0
+	^	73	33
+	.	73	32
+	+	14	0
+	+	2	0
+	+	1	0
+	+	14	0
+	+	15	37
+	+	15	21
+	+	15	10
+	+	15	28
+	+	15	0
+	+	14	0
+	+	15	4
+	+	15	0
+	+	48	7
+	+	15	0
+	+	48	7
+	+	48	19
+	+	36	9
+	+	81	5
+	+	60	17
+	+	74	45
+	+	74	36
+	+	74	47
+	+	74	71
+	+	74	14
+	+	19	14
+	+	22	10
+	+	52	26
+	+	47	34
+	+	74	12
+	+	76	12
+	+	80	8
+	+	63	25
+	+	80	10
+	+	80	0
+	+	47	0
+	+	45	30
+	+	46	10
+	+	80	60
+	+	74	87
+	+	74	88
+	+	76	42
+	+	74	102
+	+	74	0
+	+	45	21
+	+	45	0
+	+	74	92
+	+	74	0
+	+	44	70
+	+	45	44
+	+	74	0
+	+	70	0
+	+	74	0
+	+	70	21
+	+	71	21
+	+	68	12
+	+	71	12
+	+	70	33
+	+	73	35
+	+	68	20
+	+	71	20
+	+	74	8
+	+	74	0
+	+	67	0
+	+	63	25
+	+	63	26
+	+	63	139
+	+	64	0
+	+	63	0
+	+	74	75
+	+	70	0
+	+	69	43
+	+	70	33
+	+	72	45
+	+	70	23
+	+	73	32
+
+> /usr/share/vim/vim90/doc/builtin.txt
+	*	1722188167	0
+	"	10502	34
+
+> /usr/share/vim/vim90/doc/terminal.txt
+	*	1722188150	0
+	"	543	7
+
+> ~/.vim/edit-plugin/hello.vim
+	*	1722187502	0
+	"	1	0
+	^	1	1
+	.	1	0
+	+	1	8
+	+	2	0
+	+	1	0
+	+	2	0
+	+	1	2
+	+	1	22
+	+	1	0
+	+	2	0
+	+	1	0
+	+	2	0
+	+	1	0
+
+> ~/.vim/edit-plugin/source hello.vim
+	*	1722187496	0
+	"	1	0
+
+> ~/.vim/edit-plugin/file.txt
+	*	1722187293	0
+	"	1	0
+
+> /usr/share/vim/vim90/doc/change.txt
+	*	1722187216	0
+	"	1071	0
+
+> ~/.vim/edit-plugin/database.c
+	*	1722186325	0
+	"	1	0
+	^	59	1
+	.	59	0
+	+	2	0
+	+	2	3
+	+	2	0
+	+	2	1
+	+	2	0
+	+	1	0
+	+	2	0
+	+	60	0
+	+	59	0
+
 > ~/.vim/edit-plugin/Makefile
-	*	1722145641	0
-	"	17	0
-	^	16	7
-	.	16	6
+	*	1722168574	0
+	"	16	31
+	^	16	32
+	.	16	31
 	+	1	39
 	+	2	0
 	+	18	17
-	+	16	6
+	+	16	31
+
+> ~/.vim/plugin/xclip.vim
+	*	1722168364	0
+	"	15	0
+	.	18	0
+	+	25	0
+	+	24	0
+	+	25	0
+	+	14	0
+	+	16	28
+	+	16	27
+	+	25	29
+	+	7	25
+	+	7	0
+	+	26	0
+	+	8	11
+	+	25	39
+	+	16	0
+	+	7	41
+	+	7	25
+	+	7	0
+	+	16	24
+	+	7	0
+	+	16	27
+	+	7	33
+	+	7	0
+	+	16	46
+	+	16	0
+	+	14	0
+	+	16	39
+	+	14	0
+	+	16	0
+	+	14	39
+	+	14	0
+	+	16	0
+	+	16	28
+	+	16	27
+	+	16	0
+	+	22	0
+	+	14	25
+	+	14	0
+	+	22	0
+	+	16	37
+	+	17	23
+	+	17	34
+	+	16	0
+	+	17	0
+	+	14	3
+	+	20	87
+	+	20	0
+	+	14	0
+	+	1	0
+	+	22	0
+	+	11	0
+	+	9	0
+	+	21	0
+	+	5	0
+	+	18	17
+	+	19	16
+	+	18	17
+	+	19	22
+	+	19	30
+	+	19	54
+	+	14	0
+	+	19	34
+	+	21	0
+	+	19	0
+	+	18	0
 
 > ~/.vim/edit-plugin/edit.vim
-	*	1722143847	0
-	"	20	0
-	^	32	39
-	.	32	38
-	+	32	15
-	+	32	25
-	+	31	0
-	+	32	32
-	+	15	37
-	+	25	67
-	+	30	0
-	+	26	18
-	+	16	28
-	+	25	0
-	+	16	0
-	+	17	33
-	+	20	63
-	+	25	31
-	+	24	0
-	+	20	4
-	+	20	0
-	+	20	9
-	+	26	0
-	+	19	39
-	+	20	32
-	+	25	74
-	+	31	10
-	+	31	4
-	+	31	10
-	+	21	1
-	+	20	0
-	+	25	1
-	+	26	1
+	*	1722168247	0
+	"	22	9
+	^	22	29
+	.	22	28
+	+	22	15
+	+	22	25
+	+	22	0
+	+	22	32
+	+	18	37
+	+	22	67
+	+	22	0
+	+	22	18
+	+	19	28
+	+	22	0
+	+	19	0
+	+	20	33
+	+	22	63
+	+	22	31
+	+	22	0
+	+	22	4
+	+	22	0
+	+	22	9
+	+	22	0
+	+	22	39
+	+	22	32
+	+	22	74
+	+	22	10
+	+	22	4
+	+	22	10
+	+	22	1
+	+	22	0
+	+	22	1
 	+	22	71
-	+	23	46
-	+	24	35
-	+	31	0
-	+	24	16
-	+	23	52
-	+	24	0
-	+	23	17
-	+	25	54
-	+	26	4
-	+	29	4
-	+	28	9
-	+	32	14
-	+	32	0
-	+	55	0
-	+	32	38
+	+	22	46
+	+	22	35
+	+	22	0
+	+	22	16
+	+	22	52
+	+	22	0
+	+	22	17
+	+	22	54
+	+	22	4
+	+	22	9
+	+	22	14
+	+	22	0
+	+	22	38
+	+	12	25
+	+	11	69
+	+	13	15
+	+	14	22
+	+	22	28
 
-> ~/.vim/edit-plugin/database.c
-	*	1722143563	0
-	"	1	4
+> ~/.vim/plugin/database.c
+	*	1722168238	0
+	"	1	0
 	^	52	1
 	.	52	0
+	+	2	2
+	+	1	26
+	+	2	18
+	+	2	20
+	+	2	0
+	+	2	19
+	+	2	1
+	+	2	24
 	+	2	0
 	+	52	0
+
+> ~/.vim/plugin/docker-copy-to-host.vim
+	*	1722168204	0
+	"	19	0
+	.	15	0
+	+	8	0
+	+	12	74
+	+	8	0
+	+	13	28
+	+	16	16
+	+	17	27
+	+	19	0
+	+	13	0
+	+	9	2
+	+	10	0
+	+	12	70
+	+	9	7
+	+	10	28
+	+	11	32
+	+	13	0
+	+	14	20
+	+	15	93
+	+	15	0
+
+> ~/plugin/docker-copy-to-host.vim
+	*	1722167982	0
+	"	8	15
+	^	11	39
+	.	7	67
+	+	9	0
+	+	10	0
+	+	10	26
+	+	10	80
+	+	10	13
+	+	9	44
+	+	4	12
+	+	9	10
+	+	5	0
+	+	2	0
+	+	3	0
+	+	1	0
+	+	5	7
+	+	6	7
+	+	7	68
+	+	8	8
+	+	11	38
+	+	7	67
+
+> ~/.vim/edit-plugin/test1.db
+	*	1722166867	0
+	"	1	0
+
+> ~/.vim/edit-plugin/test.db
+	*	1722166799	0
+	"	1	0
+
+> /usr/share/vim/vim90/doc/options.txt
+	*	1722166015	0
+	"	544	40
+
+> ~/.config/shell_data/fish_history
+	*	1722156963	0
+	"	6373	27
+
+> ~/.config/shell_data/.bash_history
+	*	1722156936	0
+	"	1979	0
 
 > ~/.vim/plugin/run.vim
 	*	1722142338	0
@@ -12852,10 +13047,6 @@ $
 	.	1	10
 	+	1	10
 
-> /usr/share/vim/vim90/doc/builtin.txt
-	*	1722141670	0
-	"	327	0
-
 > ~/.vim/plugin/edit.vim
 	*	1722141401	0
 	"	27	44
@@ -12889,22 +13080,6 @@ $
 	+	23	51
 	+	27	0
 
-> ~/.vim/plugin/database.c
-	*	1722141327	0
-	"	1	0
-	^	52	1
-	.	52	0
-	+	2	2
-	+	1	26
-	+	2	18
-	+	2	20
-	+	2	0
-	+	2	19
-	+	2	1
-	+	2	24
-	+	2	0
-	+	52	0
-
 > ~/.vim/plugin/edi
 	*	1722140905	0
 	"	1	0
@@ -12916,10 +13091,6 @@ $
 > /usr/share/vim/vim90/doc/ft_sql.txt
 	*	1722124383	0
 	"	312	22
-
-> /usr/share/vim/vim90/doc/options.txt
-	*	1722124368	0
-	"	5196	6
 
 > ~/.vim/plugin/print-personal-mappings.vim
 	*	1722124146	0
@@ -17569,74 +17740,6 @@ $
 	+	41	0
 	+	40	46
 
-> ~/.vim/plugin/xclip.vim
-	*	1721150227	0
-	"	13	21
-	.	18	0
-	+	25	0
-	+	24	0
-	+	25	0
-	+	14	0
-	+	16	28
-	+	16	27
-	+	25	29
-	+	7	25
-	+	7	0
-	+	26	0
-	+	8	11
-	+	25	39
-	+	16	0
-	+	7	41
-	+	7	25
-	+	7	0
-	+	16	24
-	+	7	0
-	+	16	27
-	+	7	33
-	+	7	0
-	+	16	46
-	+	16	0
-	+	14	0
-	+	16	39
-	+	14	0
-	+	16	0
-	+	14	39
-	+	14	0
-	+	16	0
-	+	16	28
-	+	16	27
-	+	16	0
-	+	22	0
-	+	14	25
-	+	14	0
-	+	22	0
-	+	16	37
-	+	17	23
-	+	17	34
-	+	16	0
-	+	17	0
-	+	14	3
-	+	20	87
-	+	20	0
-	+	14	0
-	+	1	0
-	+	22	0
-	+	11	0
-	+	9	0
-	+	21	0
-	+	5	0
-	+	18	17
-	+	19	16
-	+	18	17
-	+	19	22
-	+	19	30
-	+	19	54
-	+	14	0
-	+	19	34
-	+	21	0
-	+	19	0
-	+	18	0
-
 > ~/.vim/ftplugin/vim.vim
 	*	1721150083	0
 	"	57	13
@@ -18675,10 +18778,6 @@ $
 > /usr/share/bash-completion/completions/fd
 	*	1720845204	0
 	"	1	0
-
-> ~/.config/shell_data/.bash_history
-	*	1720841643	0
-	"	1508	0
 
 > ~/.config/_python-argcomplete
 	*	1720841573	0
@@ -23586,10 +23685,6 @@ $
 	+	30	0
 	+	29	0
 
-> /usr/share/vim/vim90/doc/change.txt
-	*	1717042215	0
-	"	924	6
-
 > ~/.vim/plugin/githuburl.py
 	*	1717042073	0
 	"	1	0
@@ -25503,10 +25598,6 @@ $
 > ~/.config/atuin/config.toml
 	*	1716167986	0
 	"	131	24
-
-> ~/.config/shell_data/fish_history
-	*	1716167972	0
-	"	627	6
 
 > ~/hateoas/todo.txt
 	*	1716157517	0
@@ -34621,10 +34712,6 @@ $
 	+	19	21
 	+	20	4
 	+	25	24
-
-> /usr/share/vim/vim90/doc/terminal.txt
-	*	1694671802	0
-	"	1251	23
 
 > ~/python_common/waivek/hello.py
 	*	1694419433	0
