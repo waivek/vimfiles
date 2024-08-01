@@ -20,6 +20,8 @@
 $
 
 # Command Line History (newest to oldest):
+:q
+|2,0,1722513050,,"q"
 :qa
 |2,0,1722512982,,"qa"
 :MRU ide.vim
@@ -48,8 +50,6 @@ $
 |2,0,1722512642,,"PrintPersonalMapp"
 :imap <C-p>
 |2,0,1722512618,,"imap <C-p>"
-:q
-|2,0,1722487406,,"q"
 :MRU prin
 |2,0,1722487400,,"MRU prin"
 :MRU 3:print-personal-commands.vim
@@ -12819,38 +12819,88 @@ $
 |3,0,36,0,1,0,1722512550,")"
 
 # File marks:
-'0  61  18  ~/python_common/waivek/date.py
-|4,48,61,18,1722512983,"~/python_common/waivek/date.py"
-'1  100  4  ~/.vim/plugin/print-personal-commands.vim
-|4,49,100,4,1722487406,"~/.vim/plugin/print-personal-commands.vim"
-'2  100  4  ~/.vim/plugin/print-personal-commands.vim
-|4,50,100,4,1722487406,"~/.vim/plugin/print-personal-commands.vim"
-'3  77  10  ~/.vim/plugin/print-personal-commands.vim
-|4,51,77,10,1722487396,"~/.vim/plugin/print-personal-commands.vim"
-'4  77  10  ~/.vim/plugin/print-personal-commands.vim
-|4,52,77,10,1722487396,"~/.vim/plugin/print-personal-commands.vim"
-'5  77  10  ~/.vim/plugin/print-personal-commands.vim
-|4,53,77,10,1722487396,"~/.vim/plugin/print-personal-commands.vim"
-'6  77  10  ~/.vim/plugin/print-personal-commands.vim
-|4,54,77,10,1722487396,"~/.vim/plugin/print-personal-commands.vim"
-'7  41  24  ~/.vim/vimrc
-|4,55,41,24,1722486923,"~/.vim/vimrc"
-'8  42  24  ~/.vim/vimrc
-|4,56,42,24,1722486923,"~/.vim/vimrc"
-'9  41  24  ~/.vim/vimrc
-|4,57,41,24,1722486923,"~/.vim/vimrc"
+'0  21  0  ~/.vim/plugin/test-command-fzf-print.vim
+|4,48,21,0,1722513050,"~/.vim/plugin/test-command-fzf-print.vim"
+'1  17  3  ~/.vim/.gitignore
+|4,49,17,3,1722513020,"~/.vim/.gitignore"
+'2  17  3  ~/.vim/.gitignore
+|4,50,17,3,1722513020,"~/.vim/.gitignore"
+'3  15  0  ~/.vim/.gitignore
+|4,51,15,0,1722513007,"~/.vim/.gitignore"
+'4  15  0  ~/.vim/.gitignore
+|4,52,15,0,1722513007,"~/.vim/.gitignore"
+'5  15  0  ~/.vim/.gitignore
+|4,53,15,0,1722513007,"~/.vim/.gitignore"
+'6  15  0  ~/.vim/.gitignore
+|4,54,15,0,1722513007,"~/.vim/.gitignore"
+'7  61  18  ~/python_common/waivek/date.py
+|4,55,61,18,1722512983,"~/python_common/waivek/date.py"
+'8  61  18  ~/python_common/waivek/date.py
+|4,56,61,18,1722512983,"~/python_common/waivek/date.py"
+'9  61  18  ~/python_common/waivek/date.py
+|4,57,61,18,1722512983,"~/python_common/waivek/date.py"
 
 # Jumplist (newest first):
+-'  21  0  ~/.vim/plugin/test-command-fzf-print.vim
+|4,39,21,0,1722513050,"~/.vim/plugin/test-command-fzf-print.vim"
+-'  1  0  ~/.vim/plugin/test-command-fzf-print.vim
+|4,39,1,0,1722513046,"~/.vim/plugin/test-command-fzf-print.vim"
+-'  17  3  ~/.vim/.gitignore
+|4,39,17,3,1722513020,"~/.vim/.gitignore"
+-'  17  3  ~/.vim/.gitignore
+|4,39,17,3,1722513020,"~/.vim/.gitignore"
+-'  1  0  ~/.vim/.gitignore
+|4,39,1,0,1722513014,"~/.vim/.gitignore"
+-'  1  0  ~/.vim/.gitignore
+|4,39,1,0,1722513014,"~/.vim/.gitignore"
+-'  15  0  ~/.vim/.gitignore
+|4,39,15,0,1722513007,"~/.vim/.gitignore"
+-'  15  0  ~/.vim/.gitignore
+|4,39,15,0,1722513007,"~/.vim/.gitignore"
+-'  15  0  ~/.vim/.gitignore
+|4,39,15,0,1722513007,"~/.vim/.gitignore"
+-'  1  0  ~/.vim/.gitignore
+|4,39,1,0,1722512999,"~/.vim/.gitignore"
+-'  61  18  ~/python_common/waivek/date.py
+|4,39,61,18,1722512983,"~/python_common/waivek/date.py"
+-'  61  18  ~/python_common/waivek/date.py
+|4,39,61,18,1722512983,"~/python_common/waivek/date.py"
+-'  61  18  ~/python_common/waivek/date.py
+|4,39,61,18,1722512983,"~/python_common/waivek/date.py"
 -'  61  18  ~/python_common/waivek/date.py
 |4,39,61,18,1722512983,"~/python_common/waivek/date.py"
 -'  71  10  ~/python_common/waivek/date.py
 |4,39,71,10,1722512546,"~/python_common/waivek/date.py"
+-'  71  10  ~/python_common/waivek/date.py
+|4,39,71,10,1722512546,"~/python_common/waivek/date.py"
+-'  71  10  ~/python_common/waivek/date.py
+|4,39,71,10,1722512546,"~/python_common/waivek/date.py"
+-'  71  10  ~/python_common/waivek/date.py
+|4,39,71,10,1722512546,"~/python_common/waivek/date.py"
+-'  1  0  ~/python_common/waivek/date.py
+|4,39,1,0,1722512531,"~/python_common/waivek/date.py"
+-'  1  0  ~/python_common/waivek/date.py
+|4,39,1,0,1722512531,"~/python_common/waivek/date.py"
+-'  1  0  ~/python_common/waivek/date.py
+|4,39,1,0,1722512531,"~/python_common/waivek/date.py"
 -'  1  0  ~/python_common/waivek/date.py
 |4,39,1,0,1722512531,"~/python_common/waivek/date.py"
 -'  100  4  ~/.vim/plugin/print-personal-commands.vim
 |4,39,100,4,1722487406,"~/.vim/plugin/print-personal-commands.vim"
 -'  100  4  ~/.vim/plugin/print-personal-commands.vim
 |4,39,100,4,1722487406,"~/.vim/plugin/print-personal-commands.vim"
+-'  100  4  ~/.vim/plugin/print-personal-commands.vim
+|4,39,100,4,1722487406,"~/.vim/plugin/print-personal-commands.vim"
+-'  100  4  ~/.vim/plugin/print-personal-commands.vim
+|4,39,100,4,1722487406,"~/.vim/plugin/print-personal-commands.vim"
+-'  100  4  ~/.vim/plugin/print-personal-commands.vim
+|4,39,100,4,1722487406,"~/.vim/plugin/print-personal-commands.vim"
+-'  77  0  ~/.vim/plugin/print-personal-commands.vim
+|4,39,77,0,1722487401,"~/.vim/plugin/print-personal-commands.vim"
+-'  77  0  ~/.vim/plugin/print-personal-commands.vim
+|4,39,77,0,1722487401,"~/.vim/plugin/print-personal-commands.vim"
+-'  77  0  ~/.vim/plugin/print-personal-commands.vim
+|4,39,77,0,1722487401,"~/.vim/plugin/print-personal-commands.vim"
 -'  77  0  ~/.vim/plugin/print-personal-commands.vim
 |4,39,77,0,1722487401,"~/.vim/plugin/print-personal-commands.vim"
 -'  77  0  ~/.vim/plugin/print-personal-commands.vim
@@ -12863,6 +12913,12 @@ $
 |4,39,35,0,1722487373,"~/.vim/vimrc"
 -'  35  0  ~/.vim/vimrc
 |4,39,35,0,1722487373,"~/.vim/vimrc"
+-'  35  0  ~/.vim/vimrc
+|4,39,35,0,1722487373,"~/.vim/vimrc"
+-'  35  0  ~/.vim/vimrc
+|4,39,35,0,1722487373,"~/.vim/vimrc"
+-'  35  0  ~/.vim/vimrc
+|4,39,35,0,1722487373,"~/.vim/vimrc"
 -'  41  24  ~/.vim/vimrc
 |4,39,41,24,1722486923,"~/.vim/vimrc"
 -'  42  24  ~/.vim/vimrc
@@ -12875,6 +12931,24 @@ $
 |4,39,41,24,1722486923,"~/.vim/vimrc"
 -'  42  24  ~/.vim/vimrc
 |4,39,42,24,1722486923,"~/.vim/vimrc"
+-'  41  24  ~/.vim/vimrc
+|4,39,41,24,1722486923,"~/.vim/vimrc"
+-'  42  24  ~/.vim/vimrc
+|4,39,42,24,1722486923,"~/.vim/vimrc"
+-'  41  24  ~/.vim/vimrc
+|4,39,41,24,1722486923,"~/.vim/vimrc"
+-'  42  24  ~/.vim/vimrc
+|4,39,42,24,1722486923,"~/.vim/vimrc"
+-'  41  24  ~/.vim/vimrc
+|4,39,41,24,1722486923,"~/.vim/vimrc"
+-'  42  24  ~/.vim/vimrc
+|4,39,42,24,1722486923,"~/.vim/vimrc"
+-'  44  5  ~/.vim/vimrc
+|4,39,44,5,1722486880,"~/.vim/vimrc"
+-'  44  5  ~/.vim/vimrc
+|4,39,44,5,1722486880,"~/.vim/vimrc"
+-'  44  5  ~/.vim/vimrc
+|4,39,44,5,1722486880,"~/.vim/vimrc"
 -'  44  5  ~/.vim/vimrc
 |4,39,44,5,1722486880,"~/.vim/vimrc"
 -'  44  5  ~/.vim/vimrc
@@ -12891,6 +12965,18 @@ $
 |4,39,40,16,1722486879,"~/.vim/vimrc"
 -'  40  16  ~/.vim/vimrc
 |4,39,40,16,1722486879,"~/.vim/vimrc"
+-'  40  16  ~/.vim/vimrc
+|4,39,40,16,1722486879,"~/.vim/vimrc"
+-'  40  16  ~/.vim/vimrc
+|4,39,40,16,1722486879,"~/.vim/vimrc"
+-'  40  16  ~/.vim/vimrc
+|4,39,40,16,1722486879,"~/.vim/vimrc"
+-'  13  61  ~/.vim/vimrc
+|4,39,13,61,1722486878,"~/.vim/vimrc"
+-'  13  61  ~/.vim/vimrc
+|4,39,13,61,1722486878,"~/.vim/vimrc"
+-'  13  61  ~/.vim/vimrc
+|4,39,13,61,1722486878,"~/.vim/vimrc"
 -'  13  61  ~/.vim/vimrc
 |4,39,13,61,1722486878,"~/.vim/vimrc"
 -'  13  61  ~/.vim/vimrc
@@ -12907,6 +12993,12 @@ $
 |4,39,1,0,1722486877,"~/.vim/vimrc"
 -'  1  0  ~/.vim/vimrc
 |4,39,1,0,1722486877,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1722486877,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1722486877,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1722486877,"~/.vim/vimrc"
 -'  1  1  ~/.vim/autoload/utils.vim
 |4,39,1,1,1722486874,"~/.vim/autoload/utils.vim"
 -'  1  1  ~/.vim/autoload/utils.vim
@@ -12915,6 +13007,18 @@ $
 |4,39,1,1,1722486874,"~/.vim/autoload/utils.vim"
 -'  1  1  ~/.vim/autoload/utils.vim
 |4,39,1,1,1722486874,"~/.vim/autoload/utils.vim"
+-'  1  1  ~/.vim/autoload/utils.vim
+|4,39,1,1,1722486874,"~/.vim/autoload/utils.vim"
+-'  1  1  ~/.vim/autoload/utils.vim
+|4,39,1,1,1722486874,"~/.vim/autoload/utils.vim"
+-'  1  1  ~/.vim/autoload/utils.vim
+|4,39,1,1,1722486874,"~/.vim/autoload/utils.vim"
+-'  13  23  ~/.vim/autoload/utils.vim
+|4,39,13,23,1722486687,"~/.vim/autoload/utils.vim"
+-'  13  23  ~/.vim/autoload/utils.vim
+|4,39,13,23,1722486687,"~/.vim/autoload/utils.vim"
+-'  13  23  ~/.vim/autoload/utils.vim
+|4,39,13,23,1722486687,"~/.vim/autoload/utils.vim"
 -'  13  23  ~/.vim/autoload/utils.vim
 |4,39,13,23,1722486687,"~/.vim/autoload/utils.vim"
 -'  13  23  ~/.vim/autoload/utils.vim
@@ -12935,117 +13039,59 @@ $
 |4,39,6,0,1722486512,"~/.vim/plugin/print-personal-commands.vim"
 -'  5  0  ~/.vim/plugin/print-personal-commands.vim
 |4,39,5,0,1722486512,"~/.vim/plugin/print-personal-commands.vim"
--'  5  0  ~/.vim/plugin/print-personal-commands.vim
-|4,39,5,0,1722486512,"~/.vim/plugin/print-personal-commands.vim"
--'  5  0  ~/.vim/plugin/print-personal-commands.vim
-|4,39,5,0,1722486512,"~/.vim/plugin/print-personal-commands.vim"
--'  45  0  ~/.vim/vimrc
-|4,39,45,0,1722486433,"~/.vim/vimrc"
--'  47  0  ~/.vim/vimrc
-|4,39,47,0,1722486433,"~/.vim/vimrc"
--'  46  0  ~/.vim/vimrc
-|4,39,46,0,1722486433,"~/.vim/vimrc"
--'  45  0  ~/.vim/vimrc
-|4,39,45,0,1722486433,"~/.vim/vimrc"
--'  47  0  ~/.vim/vimrc
-|4,39,47,0,1722486433,"~/.vim/vimrc"
--'  46  0  ~/.vim/vimrc
-|4,39,46,0,1722486433,"~/.vim/vimrc"
--'  45  0  ~/.vim/vimrc
-|4,39,45,0,1722486433,"~/.vim/vimrc"
--'  44  0  ~/.vim/vimrc
-|4,39,44,0,1722486433,"~/.vim/vimrc"
--'  47  0  ~/.vim/vimrc
-|4,39,47,0,1722486433,"~/.vim/vimrc"
--'  46  0  ~/.vim/vimrc
-|4,39,46,0,1722486433,"~/.vim/vimrc"
--'  46  0  ~/.vim/vimrc
-|4,39,46,0,1722486433,"~/.vim/vimrc"
--'  1  0  ~/.vim/plugin/print-personal-commands.vim
-|4,39,1,0,1722486382,"~/.vim/plugin/print-personal-commands.vim"
--'  1  0  ~/.vim/plugin/print-personal-commands.vim
-|4,39,1,0,1722486382,"~/.vim/plugin/print-personal-commands.vim"
--'  1  0  ~/.vim/plugin/print-personal-commands.vim
-|4,39,1,0,1722486382,"~/.vim/plugin/print-personal-commands.vim"
--'  1  0  ~/.vim/plugin/print-personal-commands.vim
-|4,39,1,0,1722486382,"~/.vim/plugin/print-personal-commands.vim"
--'  1  0  ~/.vim/plugin/print-personal-commands.vim
-|4,39,1,0,1722486382,"~/.vim/plugin/print-personal-commands.vim"
--'  1  0  ~/.vim/plugin/print-personal-commands.vim
-|4,39,1,0,1722486382,"~/.vim/plugin/print-personal-commands.vim"
--'  93  0  ~/.vim/plugin/print-personal-commands.vim
-|4,39,93,0,1722486315,"~/.vim/plugin/print-personal-commands.vim"
--'  92  0  ~/.vim/plugin/print-personal-commands.vim
-|4,39,92,0,1722486315,"~/.vim/plugin/print-personal-commands.vim"
--'  93  0  ~/.vim/plugin/print-personal-commands.vim
-|4,39,93,0,1722486315,"~/.vim/plugin/print-personal-commands.vim"
--'  92  0  ~/.vim/plugin/print-personal-commands.vim
-|4,39,92,0,1722486315,"~/.vim/plugin/print-personal-commands.vim"
--'  93  0  ~/.vim/plugin/print-personal-commands.vim
-|4,39,93,0,1722486315,"~/.vim/plugin/print-personal-commands.vim"
--'  92  0  ~/.vim/plugin/print-personal-commands.vim
-|4,39,92,0,1722486315,"~/.vim/plugin/print-personal-commands.vim"
--'  92  0  ~/.vim/plugin/print-personal-commands.vim
-|4,39,92,0,1722486315,"~/.vim/plugin/print-personal-commands.vim"
--'  92  0  ~/.vim/plugin/print-personal-commands.vim
-|4,39,92,0,1722486315,"~/.vim/plugin/print-personal-commands.vim"
--'  1  0  ~/python_common/waivek/date.py
-|4,39,1,0,1722486251,"~/python_common/waivek/date.py"
--'  1  0  ~/python_common/waivek/date.py
-|4,39,1,0,1722486251,"~/python_common/waivek/date.py"
--'  1  0  ~/python_common/waivek/date.py
-|4,39,1,0,1722486251,"~/python_common/waivek/date.py"
--'  1  0  ~/python_common/waivek/date.py
-|4,39,1,0,1722486251,"~/python_common/waivek/date.py"
--'  1  0  ~/python_common/waivek/date.py
-|4,39,1,0,1722486251,"~/python_common/waivek/date.py"
--'  1  0  ~/python_common/waivek/date.py
-|4,39,1,0,1722486251,"~/python_common/waivek/date.py"
--'  13  98  ~/.vim/plugin/print-personal-commands.vim
-|4,39,13,98,1722486228,"~/.vim/plugin/print-personal-commands.vim"
--'  12  98  ~/.vim/plugin/print-personal-commands.vim
-|4,39,12,98,1722486228,"~/.vim/plugin/print-personal-commands.vim"
--'  11  98  ~/.vim/plugin/print-personal-commands.vim
-|4,39,11,98,1722486228,"~/.vim/plugin/print-personal-commands.vim"
--'  13  98  ~/.vim/plugin/print-personal-commands.vim
-|4,39,13,98,1722486228,"~/.vim/plugin/print-personal-commands.vim"
--'  12  98  ~/.vim/plugin/print-personal-commands.vim
-|4,39,12,98,1722486228,"~/.vim/plugin/print-personal-commands.vim"
--'  11  98  ~/.vim/plugin/print-personal-commands.vim
-|4,39,11,98,1722486228,"~/.vim/plugin/print-personal-commands.vim"
--'  13  98  ~/.vim/plugin/print-personal-commands.vim
-|4,39,13,98,1722486228,"~/.vim/plugin/print-personal-commands.vim"
--'  12  98  ~/.vim/plugin/print-personal-commands.vim
-|4,39,12,98,1722486228,"~/.vim/plugin/print-personal-commands.vim"
--'  12  98  ~/.vim/plugin/print-personal-commands.vim
-|4,39,12,98,1722486228,"~/.vim/plugin/print-personal-commands.vim"
--'  11  98  ~/.vim/plugin/print-personal-commands.vim
-|4,39,11,98,1722486228,"~/.vim/plugin/print-personal-commands.vim"
--'  12  98  ~/.vim/plugin/print-personal-commands.vim
-|4,39,12,98,1722486228,"~/.vim/plugin/print-personal-commands.vim"
--'  11  98  ~/.vim/plugin/print-personal-commands.vim
-|4,39,11,98,1722486228,"~/.vim/plugin/print-personal-commands.vim"
--'  12  98  ~/.vim/plugin/print-personal-commands.vim
-|4,39,12,98,1722486228,"~/.vim/plugin/print-personal-commands.vim"
--'  11  98  ~/.vim/plugin/print-personal-commands.vim
-|4,39,11,98,1722486228,"~/.vim/plugin/print-personal-commands.vim"
--'  11  98  ~/.vim/plugin/print-personal-commands.vim
-|4,39,11,98,1722486228,"~/.vim/plugin/print-personal-commands.vim"
--'  8  24  ~/.vim/plugin/print-personal-commands.vim
-|4,39,8,24,1722486184,"~/.vim/plugin/print-personal-commands.vim"
--'  7  24  ~/.vim/plugin/print-personal-commands.vim
-|4,39,7,24,1722486184,"~/.vim/plugin/print-personal-commands.vim"
--'  8  24  ~/.vim/plugin/print-personal-commands.vim
-|4,39,8,24,1722486184,"~/.vim/plugin/print-personal-commands.vim"
--'  7  24  ~/.vim/plugin/print-personal-commands.vim
-|4,39,7,24,1722486184,"~/.vim/plugin/print-personal-commands.vim"
--'  8  24  ~/.vim/plugin/print-personal-commands.vim
-|4,39,8,24,1722486184,"~/.vim/plugin/print-personal-commands.vim"
+-'  6  0  ~/.vim/plugin/print-personal-commands.vim
+|4,39,6,0,1722486512,"~/.vim/plugin/print-personal-commands.vim"
 
 # Buffer list:
-%~/python_common/waivek/date.py	61	18
+%~/.vim/plugin/test-command-fzf-print.vim	21	0
 
 # History of marks within files (newest to oldest):
+
+> ~/.vim/plugin/test-command-fzf-print.vim
+	*	1722513048	0
+	"	21	0
+	^	21	2
+	.	21	1
+	+	10	12
+	+	21	11
+	+	10	11
+	+	5	0
+	+	9	0
+	+	4	0
+	+	1	0
+	+	4	0
+	+	21	0
+	+	4	0
+	+	21	11
+	+	4	0
+	+	19	15
+	+	15	65
+	+	19	0
+	+	19	6
+	+	19	0
+	+	7	30
+	+	2	0
+	+	4	0
+	+	19	0
+	+	15	10
+	+	16	16
+	+	18	0
+	+	17	0
+	+	21	1
+
+> ~/.vim/.gitignore
+	*	1722513019	0
+	"	17	3
+	^	17	4
+	.	17	3
+	+	7	4
+	+	11	3
+	+	12	0
+	+	11	12
+	+	13	4
+	+	16	17
+	+	14	0
+	+	17	3
 
 > ~/python_common/waivek/date.py
 	*	1722512980	0
@@ -13555,38 +13601,6 @@ $
 > /usr/share/vim/vim90/doc/userfunc.txt
 	*	1722486403	0
 	"	440	0
-
-> ~/.vim/plugin/test-command-fzf-print.vim
-	*	1722486106	0
-	"	21	1
-	^	21	2
-	.	21	1
-	+	10	12
-	+	21	11
-	+	10	11
-	+	5	0
-	+	9	0
-	+	4	0
-	+	1	0
-	+	4	0
-	+	21	0
-	+	4	0
-	+	21	11
-	+	4	0
-	+	19	15
-	+	15	65
-	+	19	0
-	+	19	6
-	+	19	0
-	+	7	30
-	+	2	0
-	+	4	0
-	+	19	0
-	+	15	10
-	+	16	16
-	+	18	0
-	+	17	0
-	+	21	1
 
 > ~/.vim/plugin/sort.vim
 	*	1722485841	0
@@ -21166,17 +21180,6 @@ $
 	+	12	0
 	+	11	21
 	+	12	20
-
-> ~/.vim/.gitignore
-	*	1720758138	0
-	"	1	0
-	^	13	5
-	.	13	4
-	+	7	4
-	+	11	3
-	+	12	0
-	+	11	12
-	+	13	4
 
 > ~/.config/.gitignore
 	*	1720758127	0
