@@ -1,3 +1,4 @@
+
 function! common#AendswithB(a, b)
     let b_length = len(a:b)
     let a_length = len(a:a)

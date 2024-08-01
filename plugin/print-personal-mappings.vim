@@ -170,6 +170,7 @@ endfunction
 " GUI Filter: [ ] Insert [ ] Normal [ ] Visual [ ] Select [ ] Operator-pending [ ] Command-line [ ] Terminal
 
 
+command! PrintPersonalMappings call s:PrintPersonalMappingsSorted()
 
 if v:vim_did_enter
     " script names are not available until after vim has entered

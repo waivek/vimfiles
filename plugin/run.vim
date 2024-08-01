@@ -43,6 +43,7 @@ function! s:RunPython()
             endif
         endif
         call s:RunTerminalCommand(command)
+        set nonumber
     endif
 endfunction
 
