@@ -49,3 +49,31 @@ function! utils#path_to_sid(path)
 endfunction
 " }}}
 
+
+function! utils#print_tuple_table(tuples)
+    let max_lengths = {}
+    for tuple in a:tuples
+        for i in range(len(tuple))
+            let value = tuple[i]
+            let length = strlen(string(value))
+            if !has_key(max_lengths, i) || max_lengths[i] < length
+                let max_lengths[i] = length
+            endif
+        endfor
+    endfor
+
+    for tuple in a:tuples
+        let line = ''
+        for i in range(len(tuple))
+            let value = tuple[i]
+            let length = max_lengths[i]
+            let padding = repeat(' ', length - strlen(string(value)))
+            if type(value) == v:t_string
+                let line .= value . padding . '  '
+            else
+                let line .= string(value) . padding . '  '
+            endif
+        endfor
+        echo line
+    endfor
+endfunction

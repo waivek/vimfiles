@@ -67,7 +67,8 @@ endfunction
 
 function! s:HighlightExistingFiles()
     syntax clear ExistingFile
-    let l:file_pattern = '\v\S+\.\w+'
+    " let l:file_pattern = '\v\S+\.\w+'
+    let l:file_pattern = '\v\f+\.\w+'
     for l:line in getline(1, '$')
         let l:matches = s:FindAllMatches(l:line, l:file_pattern)
         " echoerr "Matches: " . string(l:matches)

@@ -1,0 +1,9 @@
+240806 - todo.vim - Prevent `Syntax function` overrides from breaking global syntax fn. E.g., switching b/w a `*.py` file and a `todo.txt`
+240806 - ide.vim - Use python rope package to extract visual selection to a function
+240806 - todo.vim - Make a command `Todo` where autocomplete it dir’s like `.vim`, `hateoas` and you can select the todo file
+240805 - inline.vim   - Make inlining work on the case where we do `<leader>i` on the reference/usage of the variable instead of the definition. Unlike the defintion case, the cursor position would matter over here.
+240805 - inline.vim   - Make inlining work on the case where lines aren’t consecutive, but we know that there is only one usage of the variable somewhere after the definition
+240804 - template.vim - Streamline data/ and .gitkeep patterns, to make it work for nested `data/` directories as well
+240804 - inline.vim   - Make undo a single `u` command after we do `<leader>i`
+240804 - inline.vim   - Preserve jumps on `undo` after `<leader>i`
+

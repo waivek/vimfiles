@@ -27,20 +27,25 @@ function! s:DirChangedOrFileLoaded()
     let l:directories_to_paths = {
         \ '~/sqlite-editor'     : [ '~/sqlite-editor/static/css' ],
         \ '~/hateoas'           : [ '~/hateoas/static/css' , '~/hateoas/templates/**'],
-        \ '~/ui-components-css' : [ '~/ui-components-css/static/**', '~/ui-components-css/templates/**' ]
+        \ '~/ui-components-css' : [ '~/ui-components-css/static/**', '~/ui-components-css/templates/**' ],
+        \ '~/python_common'     : [ '~/python_common/waivek/**', '~/python_common/examples/**' ]
         \ }
     " run s:ExpandUser on l:directories_to_paths
-    for l:key in keys(l:directories_to_paths)
-        let l:value = l:directories_to_paths[l:key]
-        let l:expanded_value = s:SetPaths(l:value)
-        " delete the old key
-        call remove(l:directories_to_paths, l:key)
-        " add the new key
-        let l:directories_to_paths[s:ExpandUser(l:key)] = l:expanded_value
+    for l:directory in keys(l:directories_to_paths)
+        let l:paths = l:directories_to_paths[l:directory]
+        call remove(l:directories_to_paths, l:directory) " delete the old key
+        let l:directories_to_paths[fnamemodify(l:directory, ':p')] = mapnew(l:paths, {_, v -> fnamemodify(v, ':p') }) " add the new key
     endfor
 
+
+
+    " call utils#print_tuple_table(items(l:directories_to_paths))
+    " for l:directory in keys(l:directories_to_paths)
+    "     echo printf("%s: %s", l:directory, l:directories_to_paths[l:directory])
+    " endfor
+
+
     let l:candidates = s:SetPaths(keys(l:directories_to_paths))
-    let l:current_dir = fnamemodify(expand('%:p:h'), ':p')
     let l:candidate = s:ChooseCandidate(l:candidates)
     if l:candidate == ''
         return
@@ -61,9 +66,11 @@ endfunction
 augroup Workspace
     au!
     au BufEnter * call s:DirChangedOrFileLoaded()
-    " au BufWritePost * call s:DirChangedOrFileLoaded()
-    " au BufReadPost * call s:DirChangedOrFileLoaded()
     au DirChanged * call s:DirChangedOrFileLoaded()
 augroup END
 
 
+if v:vim_did_enter
+    " call s:DirChangedOrFileLoaded()
+    Capture call s:DirChangedOrFileLoaded()
+endif

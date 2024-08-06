@@ -1,5 +1,5 @@
 
-let g:coc_global_extensions = [ 'coc-json', 'coc-pyright', 'coc-vimlsp', '@yaegassy/coc-tailwindcss3', '@yaegassy/coc-volar', 'coc-css', 'coc-tsserver' ]
+let g:coc_global_extensions = [ 'coc-json', 'coc-pyright', 'coc-vimlsp', '@yaegassy/coc-tailwindcss3', '@yaegassy/coc-volar', 'coc-css', 'coc-tsserver', 'coc-go' ]
 
 " For yaegassy/coc-tailwindcss3
 au FileType html let b:coc_root_patterns = ['.git', '.env', 'tailwind.config.js', 'tailwind.config.cjs']

@@ -58,8 +58,13 @@ function! s:RunNode()
 endfunction
 
 function! s:RunGo()
-    let command = '!start cmd /k go run ' . expand("%:p")
-    execute command
+    if has('win32') || has('win64')
+        let command = '!start cmd /k go run ' . expand("%:p")
+        execute command
+    else
+        let command = 'vert terminal go run ' . expand("%:p")
+        call s:RunTerminalCommand(command)
+    endif
 endfunction
 
 function! s:RunTodo()
@@ -89,6 +94,7 @@ function! s:RunBash()
     let command = 'vert term bash -c "source %"'
     execute command
 endfunction
+
 
 function! s:Run()
     if &ft == "python"

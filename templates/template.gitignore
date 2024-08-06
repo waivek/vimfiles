@@ -5,11 +5,14 @@
 node_modules/
 __pycache__/
 .direnv/
-data/
+# we add star after `data/` to allow `.gitkeep` to work
+**/data/*
+data/*
+!data/
+!.gitkeep
 
 # Files to ignore
 *.env
 
 # Files to keep
 # we use .gitkeep to keep empty folders
-!.gitkeep 
