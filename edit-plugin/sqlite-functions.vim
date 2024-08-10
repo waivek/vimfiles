@@ -60,7 +60,7 @@ try
     let result = SelectData(db_path)
 
     " Expected data for comparison
-    let expected = "[garbage]id = 1\nname = John Doe\nemail = john.doe@example.com\n\nid = 2\nname = Jane Smith\nemail = jane.smith@example.com\n\n"
+    let expected = "id = 1\nname = John Doe\nemail = john.doe@example.com\n\nid = 2\nname = Jane Smith\nemail = jane.smith@example.com\n\n"
 
     " Compare the results
     if result != expected

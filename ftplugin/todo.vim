@@ -19,10 +19,20 @@ function s:ToggleDone()
     let old_line_length = len(l:line)
     if line_starts_with_tick
         " remove tick and spaces after tick
-        let l:line = substitute(l:line, '✓\s*', '', '')
+        " [old]
+        " let l:line = substitute(l:line, '✓\s*', '', '')
+
+        " replace the first tick of the line with a space
+        " [new]
+        let l:line = substitute(l:line, '✓', ' ', '')
     else
         " add tick and space after tick
-        let l:line = '✓ ' . l:line
+        " [old]
+        " let l:line = '✓ ' . l:line
+
+        " replace the first space of the line with a tick
+        " [new]
+        let l:line = substitute(l:line, ' ', '✓', '')
     endif
     call setline('.', l:line)
     let new_line_length = len(l:line)
@@ -37,6 +47,23 @@ function s:ToggleDone()
 
 endfunction
 
+function! s:ToggleDoneRange()
+    " Get the start and end line numbers of the visual selection
+    let l:start_line = line("'<")
+    let l:end_line = line("'>")
+
+    " Loop through each line in the range
+    for l:line_number in range(l:start_line, l:end_line)
+        " Move the cursor to the current line
+        call cursor(l:line_number, 1)
+
+        " Call the ToggleDone function
+        call s:ToggleDone()
+    endfor
+endfunction
+
+" Map the visual mode key to call the function
+vnoremap <buffer> <tab> :<C-u>call <SID>ToggleDoneRange()<CR>
 " Map <tab> to toggle the done status of the current line on normal mode
 nnoremap <buffer> <tab> :call <SID>ToggleDone()<CR>
 

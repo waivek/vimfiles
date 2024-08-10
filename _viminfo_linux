@@ -11,23 +11,151 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/0.9
+~MSle0~/\C\<new_line_length\>
 
 # Last Substitute Search Pattern:
 ~MSle0&: Time
 
 # Last Substitute String:
-$\=strftime("%c", submatch(1))
+$
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1722987502,,"q"
+|2,0,1723279443,,"q"
+:so %
+|2,0,1723278862,,"so %"
+:Ftplugin
+|2,0,1723278427,,"Ftplugin"
+:e
+|2,0,1723278425,,"e"
+:MRU 132:python_common/waivek/todo.txt
+|2,0,1723278167,,"MRU 132:python_common/waivek/todo.txt"
 :bd!
-|2,0,1722987127,,"bd!"
+|2,0,1723277981,,"bd!"
+:MRU 342:ui-components-css/ui-components-css.todo
+|2,0,1723277964,,"MRU 342:ui-components-css/ui-components-css.todo"
+:e!
+|2,0,1723277960,,"e!"
+:MRU *.todo
+|2,0,1723277950,,"MRU *.todo"
+:find todo.txt
+|2,0,1723277888,,"find todo.txt"
+:set path?
+|2,0,1723277879,,"set path?"
+:pwd
+|2,0,1723277876,,"pwd"
+:Lines
+|2,0,1723277014,,"Lines"
+:Tod
+|2,0,1723276753,,"Tod"
+:MRU todo.t
+|2,0,1723276562,,"MRU todo.t"
+:MRU todo.txt
+|2,0,1723276559,,"MRU todo.txt"
+:MRU 700:hateoas/todo.txt
+|2,0,1723276552,,"MRU 700:hateoas/todo.txt"
+:qa
+|2,0,1723276469,,"qa"
+:e pass.txt
+|2,0,1723276461,,"e pass.txt"
+:q!
+|2,0,1723276449,,"q!"
+:imap <expr> <C-e>
+|2,0,1723242379,,"imap <expr> <C-e>"
+:imap <expr>
+|2,0,1723242372,,"imap <expr>"
+:messages
+|2,0,1723241426,,"messages"
+:HotReload
+|2,0,1723241174,,"HotReload"
+:Capture PrintPersonalMappings
+|2,0,1723240758,,"Capture PrintPersonalMappings"
+:PrintPersonalMappings
+|2,0,1723240752,,"PrintPersonalMappings"
+:Maps
+|2,0,1723240750,,"Maps"
+:h <Plug>
+|2,0,1723240746,,"h <Plug>"
+:h i_CTRL-e
+|2,0,1723240551,,"h i_CTRL-e"
+:e .vim/mappings.vim
+|2,0,1723240522,,"e .vim/mappings.vim"
+:e ~/.vim/plugin/insert_word.vim
+|2,0,1723240345,,"e ~/.vim/plugin/insert_word.vim"
+:Date
+|2,0,1723240164,,"Date"
+:imap <C-Y>
+|2,0,1723240137,,"imap <C-Y>"
+:inoremap <C-Y> <Esc>klyiWjPa
+|2,0,1723240116,,"inoremap <C-Y> <Esc>klyiWjPa"
+:inoremap <expr> <c-y> matchstr(getline(line('.')-1), '\%' . virtcol('.') . 'v\%(\k\+\\|.\)')
+|2,0,1723240065,,"inoremap <expr> <c-y> matchstr(getline(line('.')-1), '\\%' . virtcol('.') . 'v\\%(\\k\\+\\\\|.\\)')"
+:h virtualedit
+|2,0,1723239974,,"h virtualedit"
+:h i_CTRL-Y
+|2,0,1723239817,,"h i_CTRL-Y"
+:h crl-y
+|2,0,1723239812,,"h crl-y"
+:h ctrl-y
+|2,0,1723239806,,"h ctrl-y"
+:Capture verbose command Jprevious
+|2,0,1723239708,,"Capture verbose command Jprevious"
+:Capture verbose Jprevious
+|2,0,1723239697,,"Capture verbose Jprevious"
+:e gh-timeago.bash
+|2,0,1723131317,,"e gh-timeago.bash"
+:e1
+|2,0,1723131219,,"e1"
+:LogPrettifyFile
+|2,0,1723101174,,"LogPrettifyFile"
+:e ui-components-css/static/css-themes/dark-gray-mono.css
+|2,0,1723100747,,"e ui-components-css/static/css-themes/dark-gray-mono.css"
+:e hateoas-api.py
+|2,0,1723065835,,"e hateoas-api.py"
+:b migrations/2400808_portionurls-resync.py
+|2,0,1723065727,,"b migrations/2400808_portionurls-resync.py"
+:MRU 
+|2,0,1723065724,,"MRU "
+:term
+|2,0,1723065311,,"term"
+:e main.sql
+|2,0,1723065179,,"e main.sql"
+:e 
+|2,0,1723065175,,"e "
+:e migrations/2400808_portionurls-resync.py
+|2,0,1723065164,,"e migrations/2400808_portionurls-resync.py"
+:e migrations/240424_2151_portionurls-user_id.py
+|2,0,1723065147,,"e migrations/240424_2151_portionurls-user_id.py"
+:CocRestart
+|2,0,1723065059,,"CocRestart"
+:e Types.py
+|2,0,1723065024,,"e Types.py"
+:b templates/sync_video_to_video.html
+|2,0,1723062816,,"b templates/sync_video_to_video.html"
+:b hateo
+|2,0,1723062006,,"b hateo"
+:b templates/base.html
+|2,0,1723061849,,"b templates/base.html"
+:e for
+|2,0,1723060497,,"e for"
+:FIND hateoas.css
+|2,0,1723060152,,"FIND hateoas.css"
+:FIND css
+|2,0,1723060139,,"FIND css"
+:FIND hateo
+|2,0,1723060137,,"FIND hateo"
+:Rg
+|2,0,1723059071,,"Rg"
+:FIND
+|2,0,1723059063,,"FIND"
+:445
+|2,0,1723058599,,"445"
+:MRU sync_
+|2,0,1723056335,,"MRU sync_"
+:MRU python.sh
+|2,0,1723015106,,"MRU python.sh"
 :b
 |2,0,1722987123,,"b"
-:LogPrettifyFile
-|2,0,1722987074,,"LogPrettifyFile"
 :LogPrettyPrintLine
 |2,0,1722987070,,"LogPrettyPrintLine"
 :LogWriteToDatabase
@@ -64,10 +192,6 @@ $\=strftime("%c", submatch(1))
 |2,0,1722971047,,"e claude_sync.py"
 :e claude-sync.py
 |2,0,1722971042,,"e claude-sync.py"
-:q!
-|2,0,1722968362,,"q!"
-:term
-|2,0,1722968310,,"term"
 :Copilot status
 |2,0,1722967323,,"Copilot status"
 :e do_transcription_sync.py
@@ -88,14 +212,8 @@ $\=strftime("%c", submatch(1))
 |2,0,1722962278,,"Renae"
 :MRU 6:audio_sync.py
 |2,0,1722961851,,"MRU 6:audio_sync.py"
-:so %
-|2,0,1722961815,,"so %"
-:Rg
-|2,0,1722961740,,"Rg"
 :Buff
 |2,0,1722961634,,"Buff"
-:MRU 
-|2,0,1722961632,,"MRU "
 :cpre
 |2,0,1722961627,,"cpre"
 :cn
@@ -110,8 +228,6 @@ $\=strftime("%c", submatch(1))
 |2,0,1722961506,,"h undo"
 :e dotty.vim
 |2,0,1722961434,,"e dotty.vim"
-:HotReload
-|2,0,1722961385,,"HotReload"
 :e ~/.vim/plugin/inline.vim
 |2,0,1722961308,,"e ~/.vim/plugin/inline.vim"
 :MRU inline.vim
@@ -126,14 +242,8 @@ $\=strftime("%c", submatch(1))
 |2,0,1722889205,,"lopen"
 :CocL
 |2,0,1722889204,,"CocL"
-:CocRestart
-|2,0,1722889074,,"CocRestart"
 :e requirements-audio-sync.txt
 |2,0,1722888972,,"e requirements-audio-sync.txt"
-:e
-|2,0,1722888542,,"e"
-:Date
-|2,0,1722888454,,"Date"
 :w
 |2,0,1722888453,,"w"
 :ToList
@@ -142,8 +252,6 @@ $\=strftime("%c", submatch(1))
 |2,0,1722888410,,"W"
 :e ~/.vim/todo.txt
 |2,0,1722888407,,"e ~/.vim/todo.txt"
-:e hateoas-api.py
-|2,0,1722887554,,"e hateoas-api.py"
 :ls
 |2,0,1722887121,,"ls"
 :Jprevious
@@ -170,8 +278,6 @@ $\=strftime("%c", submatch(1))
 |2,0,1722804759,,"e gql_video_recorded_at_sync.py"
 :e refresh-downloads-db.bash
 |2,0,1722804735,,"e refresh-downloads-db.bash"
-:e 
-|2,0,1722804730,,"e "
 :e static/downloads/graph_payloads/2199468577.json
 |2,0,1722792720,,"e static/downloads/graph_payloads/2199468577.json"
 :e static/downloads/offsets/2199468577.json
@@ -184,8 +290,6 @@ $\=strftime("%c", submatch(1))
 |2,0,1722791663,,"g/{{{/d"
 :find sync_video_to_video.html
 |2,0,1722791346,,"find sync_video_to_video.html"
-:set path?
-|2,0,1722791343,,"set path?"
 :MRU work
 |2,0,1722791301,,"MRU work"
 :e ~/.v
@@ -204,8 +308,6 @@ $\=strftime("%c", submatch(1))
 |2,0,1722783103,,"MRU py*.sh"
 :MRU 4:.gitkeep
 |2,0,1722783095,,"MRU 4:.gitkeep"
-:qa
-|2,0,1722782880,,"qa"
 :MRU 1:example-log-1.py
 |2,0,1722781036,,"MRU 1:example-log-1.py"
 :find __init__.py
@@ -250,8 +352,6 @@ $\=strftime("%c", submatch(1))
 |2,0,1722770711,,"Rename test-datetime.py"
 :MRU plan
 |2,0,1722766705,,"MRU plan"
-:pwd
-|2,0,1722766294,,"pwd"
 :MRU 1:python-error-library-stats.py
 |2,0,1722761201,,"MRU 1:python-error-library-stats.py"
 :e requirements.txt
@@ -344,8 +444,6 @@ $\=strftime("%c", submatch(1))
 |2,0,1722634921,,"MRU ide.vim"
 :e error.py
 |2,0,1722630950,,"e error.py"
-:Ftplugin
-|2,0,1722630861,,"Ftplugin"
 :MRU todo
 |2,0,1722630859,,"MRU todo"
 :Tab / \zs-\ze /
@@ -512,8 +610,6 @@ $\=strftime("%c", submatch(1))
 |2,0,1722536461,,"echo CocLocationsAsync('pyright', 'textDocument/references')"
 :echo CocLocations('pyright', 'textDocument/references')
 |2,0,1722536455,,"echo CocLocations('pyright', 'textDocument/references')"
-:messages
-|2,0,1722536433,,"messages"
 :echo CocLocations('pyright', 'textDocument/references', {'role': 16})
 |2,0,1722536430,,"echo CocLocations('pyright', 'textDocument/references', {'role': 16})"
 :call CocLocations()
@@ -592,8 +688,6 @@ $\=strftime("%c", submatch(1))
 |2,0,1722521205,,"Capter verbose map"
 :Capture @:
 |2,0,1722521185,,"Capture @:"
-:PrintPersonalMappings
-|2,0,1722521181,,"PrintPersonalMappings"
 :Capture g//
 |2,0,1722521053,,"Capture g//"
 :h co
@@ -1090,8 +1184,6 @@ $\=strftime("%c", submatch(1))
 |2,0,1722124360,,"h "
 :e lsp2.py
 |2,0,1722115365,,"e lsp2.py"
-:e Types.py
-|2,0,1722115354,,"e Types.py"
 :Coc
 |2,0,1722115345,,"Coc"
 :h v:exiting
@@ -1516,24 +1608,18 @@ $\=strftime("%c", submatch(1))
 |2,0,1721314245,,"OpenDB "
 : grep main.sql
 |2,0,1721314223,," grep main.sql"
-:e main.sql
-|2,0,1721314117,,"e main.sql"
 :193
 |2,0,1721312241,,"193"
 :b dark-gr
 |2,0,1721311662,,"b dark-gr"
 :FIND api
 |2,0,1721311305,,"FIND api"
-:FIND
-|2,0,1721311303,,"FIND"
 :MRU api
 |2,0,1721311301,,"MRU api"
 :e static/ui-components-css/css-themes/dark-gray-mono.css
 |2,0,1721311235,,"e static/ui-components-css/css-themes/dark-gray-mono.css"
 :FIND base
 |2,0,1721310981,,"FIND base"
-:FIND hateoas.css
-|2,0,1721310925,,"FIND hateoas.css"
 :MRU 319:hateoas/templates/sync_video_to_video.html
 |2,0,1721310652,,"MRU 319:hateoas/templates/sync_video_to_video.html"
 :MRU html
@@ -1550,8 +1636,6 @@ $\=strftime("%c", submatch(1))
 |2,0,1721310530,,"find sy"
 :e sync_vid
 |2,0,1721310528,,"e sync_vid"
-:e!
-|2,0,1721309579,,"e!"
 :e templates/sync_video_on_video.html
 |2,0,1721309539,,"e templates/sync_video_on_video.html"
 :FIND sync
@@ -2226,8 +2310,6 @@ $\=strftime("%c", submatch(1))
 |2,0,1718573995,,"FIND html-e"
 :MRU ui-
 |2,0,1718573987,,"MRU ui-"
-:b templates/base.html
-|2,0,1718573905,,"b templates/base.html"
 :MRU base-dark
 |2,0,1718571446,,"MRU base-dark"
 :MRU editor.css
@@ -2930,8 +3012,6 @@ $\=strftime("%c", submatch(1))
 |2,0,1717851857,,"Rename css-defaults/"
 :e usage.css
 |2,0,1717851812,,"e usage.css"
-:b hateo
-|2,0,1717688609,,"b hateo"
 :Rename sync_video_on_video.html
 |2,0,1717672150,,"Rename sync_video_on_video.html"
 :e templates/nav.html
@@ -2970,8 +3050,6 @@ $\=strftime("%c", submatch(1))
 |2,0,1717434854,,"e base"
 :CocList dia
 |2,0,1717434613,,"CocList dia"
-:FIND css
-|2,0,1717236384,,"FIND css"
 :b ~/hateoas/download_worker.py
 |2,0,1717236372,,"b ~/hateoas/download_worker.py"
 :FIND edi
@@ -3050,8 +3128,6 @@ $\=strftime("%c", submatch(1))
 |2,0,1717166774,,"e *.js"
 :e state.py
 |2,0,1717163921,,"e state.py"
-:e1
-|2,0,1717162283,,"e1"
 :e data/state_1.json
 |2,0,1717162266,,"e data/state_1.json"
 :MRU sta
@@ -3470,8 +3546,6 @@ $\=strftime("%c", submatch(1))
 |2,0,1716546442,,"MRU log"
 :e .direnv/
 |2,0,1716546119,,"e .direnv/"
-:MRU python.sh
-|2,0,1716545593,,"MRU python.sh"
 :e gethtmlselenium.py
 |2,0,1716545330,,"e gethtmlselenium.py"
 :e update-bin.bash
@@ -3820,8 +3894,6 @@ $\=strftime("%c", submatch(1))
 |2,0,1714990484,,"earlier 10m"
 :%!man set
 |2,0,1714990311,,"%!man set"
-:Maps
-|2,0,1714990211,,"Maps"
 :map /
 |2,0,1714990203,,"map /"
 :map <space>
@@ -4354,8 +4426,6 @@ $\=strftime("%c", submatch(1))
 |2,0,1713846969,,"Join"
 :V
 |2,0,1713802925,,"V"
-:e migrations/240424_2151_portionurls-user_id.py
-|2,0,1713802916,,"e migrations/240424_2151_portionurls-user_id.py"
 :e migrations/
 |2,0,1713802891,,"e migrations/"
 :VD data/po
@@ -4522,8 +4592,6 @@ $\=strftime("%c", submatch(1))
 |2,0,1713692327,,"set ft=messages"
 :set ft=log
 |2,0,1713692298,,"set ft=log"
-:e gh-timeago.bash
-|2,0,1713688120,,"e gh-timeago.bash"
 :!git add %
 |2,0,1713687974,,"!git add %"
 :LogTest
@@ -8990,12 +9058,68 @@ $\=strftime("%c", submatch(1))
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/TAB
+|2,1,1723277899,47,"TAB"
+?/<TAB
+|2,1,1723277898,47,"<TAB"
+?/visual
+|2,1,1723276686,47,"visual"
+?/k
+|2,1,1723276480,47,"k"
+?/echo
+|2,1,1723241422,47,"echo"
+?/<Plug>
+|2,1,1723240762,47,"<Plug>"
+?/below the cursor
+|2,1,1723239827,47,"below the cursor"
+? @$
+|2,1,1723198165,,"@$"
 ? ^\(\d\+\)
-|2,1,1722987074,,"^\\(\\d\\+\\)"
+|2,1,1723101174,,"^\\(\\d\\+\\)"
+?/Resync
+|2,1,1723100828,47,"Resync"
+?/\(def\|class\)\s\+\w*view_po
+|2,1,1723065906,47,"\\(def\\|class\\)\\s\\+\\w*view_po"
+?/portionurls
+|2,1,1723065848,47,"portionurls"
+?/\(def\|class\)\s\+\w*create_portion
+|2,1,1723065839,47,"\\(def\\|class\\)\\s\\+\\w*create_portion"
+?/INSERT INTO portionurls
+|2,1,1723065621,47,"INSERT INTO portionurls"
+?/\app.*portionurl
+|2,1,1723065088,47,"\\app.*portionurl"
+?/PortionUrl(
+|2,1,1723065069,47,"PortionUrl("
+?/args
+|2,1,1723062800,47,"args"
+?/\(def\|class\)\s\+\w*
+|2,1,1723062777,47,"\\(def\\|class\\)\\s\\+\\w*"
+?/\(def\|class\)\s\+\w*videos
+|2,1,1723062382,47,"\\(def\\|class\\)\\s\\+\\w*videos"
+??form_create_portion
+|2,1,1723062278,63,"form_create_portion"
+?/\(def\|class\)\s\+\w*form_
+|2,1,1723062260,47,"\\(def\\|class\\)\\s\\+\\w*form_"
+?/\(def\|class\)\s\+\w*form_crea
+|2,1,1723062010,47,"\\(def\\|class\\)\\s\\+\\w*form_crea"
+?/\(def\|class\)\s\+\w*sync_
+|2,1,1723061816,47,"\\(def\\|class\\)\\s\\+\\w*sync_"
+?/form_crea
+|2,1,1723060504,47,"form_crea"
+?/box
+|2,1,1723060197,47,"box"
+?/title
+|2,1,1723058696,47,"title"
+??hhmm
+|2,1,1723056805,63,"hhmm"
+?/h
+|2,1,1723056802,47,"h"
+?/seek
+|2,1,1723056756,47,"seek"
+?/Set Start
+|2,1,1723056338,47,"Set Start"
 ?/0.9
 |2,1,1722981658,47,"0.9"
-?/\(def\|class\)\s\+\w*
-|2,1,1722980218,47,"\\(def\\|class\\)\\s\\+\\w*"
 ?/base
 |2,1,1722973281,47,"base"
 ?/I don't know
@@ -9014,8 +9138,6 @@ $\=strftime("%c", submatch(1))
 |2,1,1722963676,47,"120"
 ?/\t
 |2,1,1722963357,47,"\\t"
-? @$
-|2,1,1722963302,,"@$"
 ?/wav
 |2,1,1722963099,47,"wav"
 ? \<offset\>
@@ -9074,8 +9196,6 @@ $\=strftime("%c", submatch(1))
 |2,1,1722791665,,"}}}"
 ? {{{
 |2,1,1722791663,,"{{{"
-?/echo
-|2,1,1722791326,47,"echo"
 ?/View
 |2,1,1722790938,47,"View"
 ?/url_for
@@ -9086,8 +9206,6 @@ $\=strftime("%c", submatch(1))
 |2,1,1722790898,47,"\\(def\\|class\\)\\s\\+\\w*videos("
 ?/\(def\|class\)\s\+\w*video(
 |2,1,1722790877,47,"\\(def\\|class\\)\\s\\+\\w*video("
-?/\(def\|class\)\s\+\w*videos
-|2,1,1722790853,47,"\\(def\\|class\\)\\s\\+\\w*videos"
 ?/\.log
 |2,1,1722783848,47,"\\.log"
 ?/data\/
@@ -9202,8 +9320,6 @@ $\=strftime("%c", submatch(1))
 |2,1,1722521131,47,"coc-range-select"
 ?/coc-range-sele
 |2,1,1722521125,47,"coc-range-sele"
-?/<Plug>
-|2,1,1722521043,47,"<Plug>"
 ?/Plug
 |2,1,1722521023,47,"Plug"
 ?/python
@@ -9628,8 +9744,6 @@ $\=strftime("%c", submatch(1))
 |2,1,1721235602,47,"availabl"
 ?/giti
 |2,1,1721235250,47,"giti"
-?/visual
-|2,1,1721150138,47,"visual"
 ?/copy
 |2,1,1721150135,47,"copy"
 ?/yank
@@ -9918,8 +10032,6 @@ $\=strftime("%c", submatch(1))
 |2,1,1718754650,47,"Undo"
 ?/finished
 |2,1,1718724989,47,"finished"
-?/box
-|2,1,1718618693,47,"box"
 ?/wide-
 |2,1,1718618484,47,"wide-"
 ?/font-size
@@ -10366,8 +10478,6 @@ $\=strftime("%c", submatch(1))
 |2,1,1717436432,47,"\\(def\\|class\\)\\s\\+\\w*get_syn"
 ?/\(def\|class\)\s\+\w*pov
 |2,1,1717436042,47,"\\(def\\|class\\)\\s\\+\\w*pov"
-?/\(def\|class\)\s\+\w*form_
-|2,1,1717435335,47,"\\(def\\|class\\)\\s\\+\\w*form_"
 ?/twitch-embed
 |2,1,1717435186,47,"twitch-embed"
 ?/\(def\|class\)\s\+\w*view_kkkkkkkkk
@@ -11284,8 +11394,6 @@ $\=strftime("%c", submatch(1))
 |2,1,1714025665,47,"\\(def\\|class\\)\\s\\+\\w*portoinurl"
 ?/portion_id
 |2,1,1714025007,47,"portion_id"
-?/INSERT INTO portionurls
-|2,1,1714024731,47,"INSERT INTO portionurls"
 ?/insert 
 |2,1,1714024727,47,"insert "
 ??g:cop
@@ -11310,8 +11418,6 @@ $\=strftime("%c", submatch(1))
 |2,1,1713932700,47,"\\(def\\|class\\)\\s\\+\\w*delete_port"
 ?/portion
 |2,1,1713932287,47,"portion"
-?/title
-|2,1,1713932239,47,"title"
 ?/Back
 |2,1,1713932114,47,"Back"
 ?/commnd
@@ -11452,8 +11558,6 @@ $\=strftime("%c", submatch(1))
 |2,1,1713507445,47,"-m"
 ? -
 |2,1,1713507414,,"-"
-?/portionurls
-|2,1,1713506752,47,"portionurls"
 ?/s:ols
 |2,1,1713505990,47,"s:ols"
 ?/de
@@ -11748,8 +11852,6 @@ $\=strftime("%c", submatch(1))
 |2,1,1711875194,63,"pyright"
 ?/vue
 |2,1,1711570849,47,"vue"
-?/k
-|2,1,1711569772,47,"k"
 ?/\C\<embed\>
 |2,1,1711567624,47,"\\C\\<embed\\>"
 ?/embed
@@ -11868,8 +11970,6 @@ $\=strftime("%c", submatch(1))
 |2,1,1709991019,47,"defineProps"
 ?/player\.value =
 |2,1,1709959841,47,"player\\.value ="
-?/seek
-|2,1,1709959670,47,"seek"
 ?/\C\<player\>
 |2,1,1709958695,47,"\\C\\<player\\>"
 ?/player\.value
@@ -12804,8 +12904,6 @@ $\=strftime("%c", submatch(1))
 |2,1,1690765852,47,"create portion"
 ?/rounded
 |2,1,1690765767,47,"rounded"
-?/Set Start
-|2,1,1690765327,47,"Set Start"
 ?/\C\<set\>
 |2,1,1690765250,47,"\\C\\<set\\>"
 ?/\C\<Embed\>
@@ -12948,8 +13046,6 @@ $\=strftime("%c", submatch(1))
 |2,1,1688796217,47,"\\(def\\|class\\)\\s\\+\\w*post"
 ?/portoins
 |2,1,1688712281,47,"portoins"
-?/args
-|2,1,1688711865,47,"args"
 ?/<Portion
 |2,1,1688711413,47,"<Portion"
 ?/event.*
@@ -13100,6 +13196,14 @@ $\=strftime("%c", submatch(1))
 |2,2,1688309303,,"v:oldfiles"
 
 # Input Line History (newest to oldest):
+@div class="tall">
+|2,3,1723065981,,"div class=\"tall\">"
+@div>
+|2,3,1723065967,,"div>"
+@div class="wide>
+|2,3,1723058848,,"div class=\"wide>"
+@div class="tall>
+|2,3,1723058808,,"div class=\"tall>"
 @int
 |2,3,1722970404,,"int"
 @import
@@ -13108,8 +13212,6 @@ $\=strftime("%c", submatch(1))
 |2,3,1722284732,,"hhmmss"
 @li>
 |2,3,1722197988,,"li>"
-@div>
-|2,3,1722197944,,"div>"
 @trim
 |2,3,1722108837,,"trim"
 @str2nr
@@ -13146,8 +13248,6 @@ $\=strftime("%c", submatch(1))
 |2,3,1717928404,,"main>"
 @form
 |2,3,1717915305,,"form"
-@div class="tall">
-|2,3,1717913841,,"div class=\"tall\">"
 @di
 |2,3,1717913804,,"di"
 @div class="wide">
@@ -13265,40 +13365,38 @@ $\=strftime("%c", submatch(1))
 
 # Registers:
 "0	CHAR	0
-	white
-|3,0,0,0,1,0,1722987387,"white"
-"1	LINE	0
-	error_symbol = 
-|3,0,1,1,1,0,1722987409,"error_symbol = "
+	 
+|3,0,0,0,1,0,1723278860," "
+""1	LINE	0
+	âœ“ 240810 - ide.vim         - Wordwise completion for copilot suggestions
+|3,1,1,1,1,0,1723279407,"âœ“ 240810 - ide.vim         - Wordwise completion for copilot suggestions"
 "2	LINE	0
-	padding = 1
-|3,0,2,1,1,0,1722987340,"padding = 1"
+	    let l:position_save = getpos(".")
+|3,0,2,1,1,0,1723278756,"    let l:position_save = getpos(\".\")"
 "3	LINE	0
-	
-|3,0,3,1,1,0,1722987339,""
+	    call setpos(".", l:position_save)
+|3,0,3,1,1,0,1723278754,"    call setpos(\".\", l:position_save)"
 "4	LINE	0
-	/home/vivek/hateoas/.direnv/python-3.10.12/lib/python3.10/site-packages/whisper/transcribe.p
-	y:115: UserWarning: FP16 is not supported on CPU; using FP32 instead
-	  warnings.warn("FP16 is not supported on CPU; using FP32 instead")
-|3,0,4,1,3,0,1722981595,"/home/vivek/hateoas/.direnv/python-3.10.12/lib/python3.10/site-packages/whisper/transcribe.p","y:115: UserWarning: FP16 is not supported on CPU; using FP32 instead","  warnings.warn(\"FP16 is not supported on CPU; using FP32 instead\")"
+	    call setpos(".", l:position_save)
+|3,0,4,1,1,0,1723278702,"    call setpos(\".\", l:position_save)"
 "5	LINE	0
-	
-|3,0,5,1,1,0,1722981462,""
+	    let l:position_save = getpos(".")
+|3,0,5,1,1,0,1723278701,"    let l:position_save = getpos(\".\")"
 "6	LINE	0
-	    ic(
-|3,0,6,1,1,0,1722980862,"    ic("
-"7	LINE	0
-	    # print("similarity\tdifference_seconds\ttext")
-|3,0,7,1,1,0,1722980712,"    # print(\"similarity\\tdifference_seconds\\ttext\")"
-"8	LINE	0
-	    # create a dict type using namedtuples with the values { 'weight': float, 'value': float }
-|3,0,8,1,1,0,1722980709,"    # create a dict type using namedtuples with the values { 'weight': float, 'value': float }"
-"9	LINE	0
 	
-|3,0,9,1,1,0,1722980682,""
+|3,0,6,1,1,0,1723278680,""
+"7	LINE	0
+	
+|3,0,7,1,1,0,1723278679,""
+"8	LINE	0
+	    let l:view_save = winsaveview()
+|3,0,8,1,1,0,1723278645,"    let l:view_save = winsaveview()"
+"9	LINE	0
+	    call winrestview(l:view_save)
+|3,0,9,1,1,0,1723278643,"    call winrestview(l:view_save)"
 "a	CHAR	0
 	Tabularize /-/r1c1l1c1l1
-|3,0,10,0,1,0,1722987045,"Tabularize /-/r1c1l1c1l1"
+|3,0,10,0,1,0,1723278860,"Tabularize /-/r1c1l1c1l1"
 "j	CHAR	0
 	kl
 |3,0,19,0,1,0,1721238341,"kl"
@@ -13306,8 +13404,8 @@ $\=strftime("%c", submatch(1))
 	kkk€ýa
 |3,0,20,0,1,0,1722783047,"kkk€ýa"
 "l	CHAR	0
-	lllllllllllkkkkkkkkkklllllllllllllllllllllllkkkkkkkkkk;kQ
-|3,0,21,0,1,0,1722539962,"lllllllllllkkkkkkkkkklllllllllllllllllllllllkkkkkkkkkk;kQ"
+	llll
+|3,0,21,0,1,0,1723276447,"llll"
 "s	LINE	0
 	# venv/
 	# build/
@@ -13321,238 +13419,1477 @@ $\=strftime("%c", submatch(1))
 	# data/
 	# !.gitkeep
 |3,0,28,1,11,0,1722782825,"# venv/","# build/","# dist/","# *.egg-info/","# aget_cache/","# errors/","# __pycache__/","# texts/","# .direnv/","# data/","# !.gitkeep"
-""-	CHAR	0
-	âš 
-|3,1,36,0,1,0,1722987431,"âš "
+"-	CHAR	0
+	 
+|3,0,36,0,1,0,1723278847," "
 
 # File marks:
-'0  1  0  ~/pyscripts/python-error-library-stats.py
-|4,48,1,0,1722987503,"~/pyscripts/python-error-library-stats.py"
-'1  18  12  ~/.config/starship/starship.toml
-|4,49,18,12,1722987435,"~/.config/starship/starship.toml"
-'2  18  12  ~/.config/starship/starship.toml
-|4,50,18,12,1722987435,"~/.config/starship/starship.toml"
-'3  18  12  ~/.config/starship/starship.toml
-|4,51,18,12,1722987428,"~/.config/starship/starship.toml"
-'4  18  12  ~/.config/starship/starship.toml
-|4,52,18,12,1722987428,"~/.config/starship/starship.toml"
-'5  19  28  ~/.config/starship/starship.toml
-|4,53,19,28,1722987391,"~/.config/starship/starship.toml"
-'6  19  28  ~/.config/starship/starship.toml
-|4,54,19,28,1722987391,"~/.config/starship/starship.toml"
-'7  19  28  ~/.config/starship/starship.toml
-|4,55,19,28,1722987391,"~/.config/starship/starship.toml"
-'8  19  28  ~/.config/starship/starship.toml
-|4,56,19,28,1722987391,"~/.config/starship/starship.toml"
-'9  19  28  ~/.config/starship/starship.toml
-|4,57,19,28,1722987391,"~/.config/starship/starship.toml"
+'0  13  38  ~/.vim/todo.txt
+|4,48,13,38,1723279444,"~/.vim/todo.txt"
+'1  63  20  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,49,63,20,1723276488,"~/.vim/edit-plugin/sqlite-functions.vim"
+'2  63  20  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,50,63,20,1723276488,"~/.vim/edit-plugin/sqlite-functions.vim"
+'3  1  0  ~/.vim/edit-plugin/fail.txt
+|4,51,1,0,1723276470,"~/.vim/edit-plugin/fail.txt"
+'4  1  0  ~/.vim/edit-plugin/fail.txt
+|4,52,1,0,1723276470,"~/.vim/edit-plugin/fail.txt"
+'5  1  0  ~/.vim/edit-plugin/fail.txt
+|4,53,1,0,1723276470,"~/.vim/edit-plugin/fail.txt"
+'6  1  0  ~/.vim/edit-plugin/fail.txt
+|4,54,1,0,1723276470,"~/.vim/edit-plugin/fail.txt"
+'7  66  0  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,55,66,0,1723276452,"~/.vim/edit-plugin/sqlite-functions.vim"
+'8  66  0  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,56,66,0,1723276452,"~/.vim/edit-plugin/sqlite-functions.vim"
+'9  66  0  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,57,66,0,1723276452,"~/.vim/edit-plugin/sqlite-functions.vim"
 
 # Jumplist (newest first):
--'  1  0  ~/pyscripts/python-error-library-stats.py
-|4,39,1,0,1722987503,"~/pyscripts/python-error-library-stats.py"
--'  88  0  ~/pyscripts/python-error-library-stats.py
-|4,39,88,0,1722987501,"~/pyscripts/python-error-library-stats.py"
--'  18  12  ~/.config/starship/starship.toml
-|4,39,18,12,1722987435,"~/.config/starship/starship.toml"
--'  18  12  ~/.config/starship/starship.toml
-|4,39,18,12,1722987435,"~/.config/starship/starship.toml"
--'  18  12  ~/.config/starship/starship.toml
-|4,39,18,12,1722987428,"~/.config/starship/starship.toml"
--'  19  28  ~/.config/starship/starship.toml
-|4,39,19,28,1722987398,"~/.config/starship/starship.toml"
--'  19  28  ~/.config/starship/starship.toml
-|4,39,19,28,1722987398,"~/.config/starship/starship.toml"
--'  19  28  ~/.config/starship/starship.toml
-|4,39,19,28,1722987398,"~/.config/starship/starship.toml"
--'  19  28  ~/.config/starship/starship.toml
-|4,39,19,28,1722987391,"~/.config/starship/starship.toml"
--'  19  14  ~/.config/starship/starship.toml
-|4,39,19,14,1722987369,"~/.config/starship/starship.toml"
--'  18  11  ~/.config/starship/starship.toml
-|4,39,18,11,1722987359,"~/.config/starship/starship.toml"
--'  18  11  ~/.config/starship/starship.toml
-|4,39,18,11,1722987359,"~/.config/starship/starship.toml"
--'  18  11  ~/.config/starship/starship.toml
-|4,39,18,11,1722987359,"~/.config/starship/starship.toml"
--'  18  24  ~/.config/starship/starship.toml
-|4,39,18,24,1722987350,"~/.config/starship/starship.toml"
--'  21  10  ~/.config/starship/starship.toml
-|4,39,21,10,1722987339,"~/.config/starship/starship.toml"
--'  21  10  ~/.config/starship/starship.toml
-|4,39,21,10,1722987339,"~/.config/starship/starship.toml"
--'  21  10  ~/.config/starship/starship.toml
-|4,39,21,10,1722987339,"~/.config/starship/starship.toml"
--'  21  10  ~/.config/starship/starship.toml
-|4,39,21,10,1722987339,"~/.config/starship/starship.toml"
--'  21  10  ~/.config/starship/starship.toml
-|4,39,21,10,1722987339,"~/.config/starship/starship.toml"
--'  21  10  ~/.config/starship/starship.toml
-|4,39,21,10,1722987339,"~/.config/starship/starship.toml"
--'  21  10  ~/.config/starship/starship.toml
-|4,39,21,10,1722987339,"~/.config/starship/starship.toml"
--'  21  10  ~/.config/starship/starship.toml
-|4,39,21,10,1722987336,"~/.config/starship/starship.toml"
--'  17  108  ~/.config/starship/starship.toml
-|4,39,17,108,1722987320,"~/.config/starship/starship.toml"
--'  17  108  ~/.config/starship/starship.toml
-|4,39,17,108,1722987320,"~/.config/starship/starship.toml"
--'  17  108  ~/.config/starship/starship.toml
-|4,39,17,108,1722987320,"~/.config/starship/starship.toml"
--'  17  108  ~/.config/starship/starship.toml
-|4,39,17,108,1722987320,"~/.config/starship/starship.toml"
--'  17  108  ~/.config/starship/starship.toml
-|4,39,17,108,1722987320,"~/.config/starship/starship.toml"
--'  17  108  ~/.config/starship/starship.toml
-|4,39,17,108,1722987320,"~/.config/starship/starship.toml"
--'  17  108  ~/.config/starship/starship.toml
-|4,39,17,108,1722987320,"~/.config/starship/starship.toml"
--'  17  108  ~/.config/starship/starship.toml
-|4,39,17,108,1722987320,"~/.config/starship/starship.toml"
--'  17  108  ~/.config/starship/starship.toml
-|4,39,17,108,1722987320,"~/.config/starship/starship.toml"
--'  17  109  ~/.config/starship/starship.toml
-|4,39,17,109,1722987299,"~/.config/starship/starship.toml"
--'  20  102  ~/.config/starship/starship.toml
-|4,39,20,102,1722987280,"~/.config/starship/starship.toml"
--'  20  102  ~/.config/starship/starship.toml
-|4,39,20,102,1722987280,"~/.config/starship/starship.toml"
--'  20  102  ~/.config/starship/starship.toml
-|4,39,20,102,1722987280,"~/.config/starship/starship.toml"
--'  20  102  ~/.config/starship/starship.toml
-|4,39,20,102,1722987280,"~/.config/starship/starship.toml"
--'  20  102  ~/.config/starship/starship.toml
-|4,39,20,102,1722987280,"~/.config/starship/starship.toml"
--'  20  102  ~/.config/starship/starship.toml
-|4,39,20,102,1722987280,"~/.config/starship/starship.toml"
--'  20  102  ~/.config/starship/starship.toml
-|4,39,20,102,1722987280,"~/.config/starship/starship.toml"
--'  20  102  ~/.config/starship/starship.toml
-|4,39,20,102,1722987280,"~/.config/starship/starship.toml"
--'  20  102  ~/.config/starship/starship.toml
-|4,39,20,102,1722987280,"~/.config/starship/starship.toml"
--'  20  102  ~/.config/starship/starship.toml
-|4,39,20,102,1722987280,"~/.config/starship/starship.toml"
--'  1  0  ~/.config/starship/starship.toml
-|4,39,1,0,1722987274,"~/.config/starship/starship.toml"
--'  1  0  ~/.config/starship/starship.toml
-|4,39,1,0,1722987274,"~/.config/starship/starship.toml"
--'  1  0  ~/.config/starship/starship.toml
-|4,39,1,0,1722987274,"~/.config/starship/starship.toml"
--'  1  0  ~/.config/starship/starship.toml
-|4,39,1,0,1722987274,"~/.config/starship/starship.toml"
--'  1  0  ~/.config/starship/starship.toml
-|4,39,1,0,1722987274,"~/.config/starship/starship.toml"
--'  1  0  ~/.config/starship/starship.toml
-|4,39,1,0,1722987274,"~/.config/starship/starship.toml"
--'  1  0  ~/.config/starship/starship.toml
-|4,39,1,0,1722987274,"~/.config/starship/starship.toml"
--'  1  0  ~/.config/starship/starship.toml
-|4,39,1,0,1722987274,"~/.config/starship/starship.toml"
--'  1  0  ~/.config/starship/starship.toml
-|4,39,1,0,1722987274,"~/.config/starship/starship.toml"
--'  1  0  ~/.config/starship/starship.toml
-|4,39,1,0,1722987274,"~/.config/starship/starship.toml"
--'  19  40  ~/.config/starship/starship.toml
-|4,39,19,40,1722987268,"~/.config/starship/starship.toml"
--'  19  40  ~/.config/starship/starship.toml
-|4,39,19,40,1722987268,"~/.config/starship/starship.toml"
--'  19  40  ~/.config/starship/starship.toml
-|4,39,19,40,1722987268,"~/.config/starship/starship.toml"
--'  19  40  ~/.config/starship/starship.toml
-|4,39,19,40,1722987268,"~/.config/starship/starship.toml"
--'  19  40  ~/.config/starship/starship.toml
-|4,39,19,40,1722987268,"~/.config/starship/starship.toml"
--'  19  40  ~/.config/starship/starship.toml
-|4,39,19,40,1722987268,"~/.config/starship/starship.toml"
--'  19  39  ~/.config/starship/starship.toml
-|4,39,19,39,1722987254,"~/.config/starship/starship.toml"
--'  1  0  ~/.config/starship/starship.toml
-|4,39,1,0,1722987236,"~/.config/starship/starship.toml"
--'  1  0  ~/.config/starship/starship.toml
-|4,39,1,0,1722987236,"~/.config/starship/starship.toml"
--'  35  0  /tmp/crontab.AjbEdP/crontab
-|4,39,35,0,1722987216,"/tmp/crontab.AjbEdP/crontab"
--'  35  0  /tmp/crontab.AjbEdP/crontab
-|4,39,35,0,1722987216,"/tmp/crontab.AjbEdP/crontab"
--'  35  0  /tmp/crontab.AjbEdP/crontab
-|4,39,35,0,1722987216,"/tmp/crontab.AjbEdP/crontab"
--'  35  0  /tmp/crontab.AjbEdP/crontab
-|4,39,35,0,1722987216,"/tmp/crontab.AjbEdP/crontab"
--'  35  0  /tmp/crontab.AjbEdP/crontab
-|4,39,35,0,1722987216,"/tmp/crontab.AjbEdP/crontab"
--'  35  0  /tmp/crontab.AjbEdP/crontab
-|4,39,35,0,1722987216,"/tmp/crontab.AjbEdP/crontab"
--'  35  0  /tmp/crontab.AjbEdP/crontab
-|4,39,35,0,1722987216,"/tmp/crontab.AjbEdP/crontab"
--'  35  0  /tmp/crontab.AjbEdP/crontab
-|4,39,35,0,1722987216,"/tmp/crontab.AjbEdP/crontab"
--'  35  0  /tmp/crontab.AjbEdP/crontab
-|4,39,35,0,1722987216,"/tmp/crontab.AjbEdP/crontab"
--'  35  0  /tmp/crontab.AjbEdP/crontab
-|4,39,35,0,1722987216,"/tmp/crontab.AjbEdP/crontab"
--'  35  0  /tmp/crontab.AjbEdP/crontab
-|4,39,35,0,1722987216,"/tmp/crontab.AjbEdP/crontab"
--'  35  0  /tmp/crontab.AjbEdP/crontab
-|4,39,35,0,1722987216,"/tmp/crontab.AjbEdP/crontab"
--'  35  0  /tmp/crontab.AjbEdP/crontab
-|4,39,35,0,1722987216,"/tmp/crontab.AjbEdP/crontab"
--'  35  0  /tmp/crontab.AjbEdP/crontab
-|4,39,35,0,1722987216,"/tmp/crontab.AjbEdP/crontab"
--'  33  31  /tmp/crontab.AjbEdP/crontab
-|4,39,33,31,1722987213,"/tmp/crontab.AjbEdP/crontab"
--'  33  31  /tmp/crontab.AjbEdP/crontab
-|4,39,33,31,1722987213,"/tmp/crontab.AjbEdP/crontab"
--'  33  31  /tmp/crontab.AjbEdP/crontab
-|4,39,33,31,1722987213,"/tmp/crontab.AjbEdP/crontab"
--'  33  31  /tmp/crontab.AjbEdP/crontab
-|4,39,33,31,1722987213,"/tmp/crontab.AjbEdP/crontab"
--'  33  31  /tmp/crontab.AjbEdP/crontab
-|4,39,33,31,1722987213,"/tmp/crontab.AjbEdP/crontab"
--'  33  31  /tmp/crontab.AjbEdP/crontab
-|4,39,33,31,1722987213,"/tmp/crontab.AjbEdP/crontab"
--'  33  31  /tmp/crontab.AjbEdP/crontab
-|4,39,33,31,1722987213,"/tmp/crontab.AjbEdP/crontab"
--'  33  31  /tmp/crontab.AjbEdP/crontab
-|4,39,33,31,1722987213,"/tmp/crontab.AjbEdP/crontab"
--'  33  31  /tmp/crontab.AjbEdP/crontab
-|4,39,33,31,1722987213,"/tmp/crontab.AjbEdP/crontab"
--'  33  31  /tmp/crontab.AjbEdP/crontab
-|4,39,33,31,1722987213,"/tmp/crontab.AjbEdP/crontab"
--'  33  31  /tmp/crontab.AjbEdP/crontab
-|4,39,33,31,1722987213,"/tmp/crontab.AjbEdP/crontab"
--'  33  31  /tmp/crontab.AjbEdP/crontab
-|4,39,33,31,1722987213,"/tmp/crontab.AjbEdP/crontab"
--'  33  31  /tmp/crontab.AjbEdP/crontab
-|4,39,33,31,1722987213,"/tmp/crontab.AjbEdP/crontab"
--'  33  31  /tmp/crontab.AjbEdP/crontab
-|4,39,33,31,1722987213,"/tmp/crontab.AjbEdP/crontab"
--'  2  0  ~/bash/backup.crontab
-|4,39,2,0,1722987212,"~/bash/backup.crontab"
--'  2  0  ~/bash/backup.crontab
-|4,39,2,0,1722987212,"~/bash/backup.crontab"
--'  2  0  ~/bash/backup.crontab
-|4,39,2,0,1722987212,"~/bash/backup.crontab"
--'  2  0  ~/bash/backup.crontab
-|4,39,2,0,1722987212,"~/bash/backup.crontab"
--'  2  0  ~/bash/backup.crontab
-|4,39,2,0,1722987212,"~/bash/backup.crontab"
--'  2  0  ~/bash/backup.crontab
-|4,39,2,0,1722987212,"~/bash/backup.crontab"
--'  2  0  ~/bash/backup.crontab
-|4,39,2,0,1722987212,"~/bash/backup.crontab"
--'  2  0  ~/bash/backup.crontab
-|4,39,2,0,1722987212,"~/bash/backup.crontab"
--'  2  0  ~/bash/backup.crontab
-|4,39,2,0,1722987212,"~/bash/backup.crontab"
--'  2  0  ~/bash/backup.crontab
-|4,39,2,0,1722987212,"~/bash/backup.crontab"
--'  2  0  ~/bash/backup.crontab
-|4,39,2,0,1722987212,"~/bash/backup.crontab"
+-'  13  38  ~/.vim/todo.txt
+|4,39,13,38,1723279444,"~/.vim/todo.txt"
+-'  3  0  ~/.vim/todo.txt
+|4,39,3,0,1723278861,"~/.vim/todo.txt"
+-'  6  84  ~/.vim/todo.txt
+|4,39,6,84,1723278826,"~/.vim/todo.txt"
+-'  4  0  ~/.vim/todo.txt
+|4,39,4,0,1723278817,"~/.vim/todo.txt"
+-'  2  0  ~/.vim/todo.txt
+|4,39,2,0,1723278809,"~/.vim/todo.txt"
+-'  54  0  ~/.vim/ftplugin/todo.vim
+|4,39,54,0,1723278756,"~/.vim/ftplugin/todo.vim"
+-'  67  0  ~/.vim/ftplugin/todo.vim
+|4,39,67,0,1723278753,"~/.vim/ftplugin/todo.vim"
+-'  63  9  ~/.vim/ftplugin/todo.vim
+|4,39,63,9,1723278749,"~/.vim/ftplugin/todo.vim"
+-'  46  4  ~/.vim/ftplugin/todo.vim
+|4,39,46,4,1723278749,"~/.vim/ftplugin/todo.vim"
+-'  57  0  ~/.vim/ftplugin/todo.vim
+|4,39,57,0,1723278710,"~/.vim/ftplugin/todo.vim"
+-'  41  17  ~/.vim/ftplugin/todo.vim
+|4,39,41,17,1723278628,"~/.vim/ftplugin/todo.vim"
+-'  1  0  ~/.vim/todo.txt
+|4,39,1,0,1723278542,"~/.vim/todo.txt"
+-'  16  0  ~/.vim/todo.txt
+|4,39,16,0,1723278540,"~/.vim/todo.txt"
+-'  8  0  ~/.vim/todo.txt
+|4,39,8,0,1723278532,"~/.vim/todo.txt"
+-'  66  22  ~/.vim/ftplugin/todo.vim
+|4,39,66,22,1723278522,"~/.vim/ftplugin/todo.vim"
+-'  2  0  ~/python_common/waivek/todo.txt
+|4,39,2,0,1723278423,"~/python_common/waivek/todo.txt"
+-'  14  20  ~/.vim/todo.txt
+|4,39,14,20,1723278384,"~/.vim/todo.txt"
+-'  1  0  ~/python_common/waivek/todo.txt
+|4,39,1,0,1723278195,"~/python_common/waivek/todo.txt"
+-'  27  54  ~/.vim/ftplugin/todo.vim
+|4,39,27,54,1723278147,"~/.vim/ftplugin/todo.vim"
+-'  31  46  ~/.vim/ftplugin/todo.vim
+|4,39,31,46,1723278100,"~/.vim/ftplugin/todo.vim"
+-'  40  17  ~/.vim/ftplugin/todo.vim
+|4,39,40,17,1723278044,"~/.vim/ftplugin/todo.vim"
+-'  43  23  ~/.vim/ftplugin/todo.vim
+|4,39,43,23,1723278044,"~/.vim/ftplugin/todo.vim"
+-'  38  8  ~/.vim/ftplugin/todo.vim
+|4,39,38,8,1723278043,"~/.vim/ftplugin/todo.vim"
+-'  17  8  ~/.vim/ftplugin/todo.vim
+|4,39,17,8,1723277993,"~/.vim/ftplugin/todo.vim"
+-'  1  0  ~/.vim/edit-plugin/edit-plugin.todo
+|4,39,1,0,1723277982,"~/.vim/edit-plugin/edit-plugin.todo"
+-'  4  15  ~/ui-components-css/ui-components-css.todo
+|4,39,4,15,1723277981,"~/ui-components-css/ui-components-css.todo"
+-'  15  10  ~/.vim/ftplugin/todo.vim
+|4,39,15,10,1723277942,"~/.vim/ftplugin/todo.vim"
+-'  83  0  ~/.vim/ftplugin/todo.vim
+|4,39,83,0,1723277896,"~/.vim/ftplugin/todo.vim"
+-'  1  0  ~/.vim/ftplugin/todo.vim
+|4,39,1,0,1723277894,"~/.vim/ftplugin/todo.vim"
+-'  63  20  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,63,20,1723276488,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  63  20  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,63,20,1723276488,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  2  0  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,2,0,1723276476,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  2  0  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,2,0,1723276476,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  1  0  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,1,0,1723276475,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  1  0  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,1,0,1723276475,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  1  0  ~/.vim/edit-plugin/fail.txt
+|4,39,1,0,1723276470,"~/.vim/edit-plugin/fail.txt"
+-'  1  0  ~/.vim/edit-plugin/fail.txt
+|4,39,1,0,1723276470,"~/.vim/edit-plugin/fail.txt"
+-'  1  0  ~/.vim/edit-plugin/fail.txt
+|4,39,1,0,1723276470,"~/.vim/edit-plugin/fail.txt"
+-'  66  0  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,66,0,1723276452,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  66  0  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,66,0,1723276452,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  66  0  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,66,0,1723276452,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  66  0  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,66,0,1723276452,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  1  0  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,1,0,1723276434,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  1  0  ~/.vim/edit-plugin/sqlite-functions.vim
+|4,39,1,0,1723276434,"~/.vim/edit-plugin/sqlite-functions.vim"
+-'  80  11  ~/.vim/plugin/insert_word.vim
+|4,39,80,11,1723242426,"~/.vim/plugin/insert_word.vim"
+-'  80  11  ~/.vim/plugin/insert_word.vim
+|4,39,80,11,1723242426,"~/.vim/plugin/insert_word.vim"
+-'  80  11  ~/.vim/plugin/insert_word.vim
+|4,39,80,11,1723242426,"~/.vim/plugin/insert_word.vim"
+-'  80  11  ~/.vim/plugin/insert_word.vim
+|4,39,80,11,1723242426,"~/.vim/plugin/insert_word.vim"
+-'  79  47  ~/.vim/plugin/insert_word.vim
+|4,39,79,47,1723242340,"~/.vim/plugin/insert_word.vim"
+-'  79  47  ~/.vim/plugin/insert_word.vim
+|4,39,79,47,1723242340,"~/.vim/plugin/insert_word.vim"
+-'  79  47  ~/.vim/plugin/insert_word.vim
+|4,39,79,47,1723242340,"~/.vim/plugin/insert_word.vim"
+-'  79  47  ~/.vim/plugin/insert_word.vim
+|4,39,79,47,1723242340,"~/.vim/plugin/insert_word.vim"
+-'  76  0  ~/.vim/plugin/insert_word.vim
+|4,39,76,0,1723242333,"~/.vim/plugin/insert_word.vim"
+-'  76  0  ~/.vim/plugin/insert_word.vim
+|4,39,76,0,1723242333,"~/.vim/plugin/insert_word.vim"
+-'  76  0  ~/.vim/plugin/insert_word.vim
+|4,39,76,0,1723242333,"~/.vim/plugin/insert_word.vim"
+-'  76  0  ~/.vim/plugin/insert_word.vim
+|4,39,76,0,1723242333,"~/.vim/plugin/insert_word.vim"
+-'  71  5  ~/.vim/plugin/insert_word.vim
+|4,39,71,5,1723242298,"~/.vim/plugin/insert_word.vim"
+-'  71  5  ~/.vim/plugin/insert_word.vim
+|4,39,71,5,1723242298,"~/.vim/plugin/insert_word.vim"
+-'  71  5  ~/.vim/plugin/insert_word.vim
+|4,39,71,5,1723242298,"~/.vim/plugin/insert_word.vim"
+-'  71  5  ~/.vim/plugin/insert_word.vim
+|4,39,71,5,1723242298,"~/.vim/plugin/insert_word.vim"
+-'  64  4  ~/.vim/plugin/insert_word.vim
+|4,39,64,4,1723242291,"~/.vim/plugin/insert_word.vim"
+-'  64  4  ~/.vim/plugin/insert_word.vim
+|4,39,64,4,1723242291,"~/.vim/plugin/insert_word.vim"
+-'  64  4  ~/.vim/plugin/insert_word.vim
+|4,39,64,4,1723242291,"~/.vim/plugin/insert_word.vim"
+-'  64  4  ~/.vim/plugin/insert_word.vim
+|4,39,64,4,1723242291,"~/.vim/plugin/insert_word.vim"
+-'  32  0  ~/.vim/plugin/insert_word.vim
+|4,39,32,0,1723242289,"~/.vim/plugin/insert_word.vim"
+-'  32  0  ~/.vim/plugin/insert_word.vim
+|4,39,32,0,1723242289,"~/.vim/plugin/insert_word.vim"
+-'  32  0  ~/.vim/plugin/insert_word.vim
+|4,39,32,0,1723242289,"~/.vim/plugin/insert_word.vim"
+-'  32  0  ~/.vim/plugin/insert_word.vim
+|4,39,32,0,1723242289,"~/.vim/plugin/insert_word.vim"
+-'  70  0  ~/.vim/plugin/insert_word.vim
+|4,39,70,0,1723242283,"~/.vim/plugin/insert_word.vim"
+-'  70  0  ~/.vim/plugin/insert_word.vim
+|4,39,70,0,1723242283,"~/.vim/plugin/insert_word.vim"
+-'  70  0  ~/.vim/plugin/insert_word.vim
+|4,39,70,0,1723242283,"~/.vim/plugin/insert_word.vim"
+-'  70  0  ~/.vim/plugin/insert_word.vim
+|4,39,70,0,1723242283,"~/.vim/plugin/insert_word.vim"
+-'  77  0  ~/.vim/plugin/insert_word.vim
+|4,39,77,0,1723242282,"~/.vim/plugin/insert_word.vim"
+-'  77  0  ~/.vim/plugin/insert_word.vim
+|4,39,77,0,1723242282,"~/.vim/plugin/insert_word.vim"
+-'  77  0  ~/.vim/plugin/insert_word.vim
+|4,39,77,0,1723242282,"~/.vim/plugin/insert_word.vim"
+-'  77  0  ~/.vim/plugin/insert_word.vim
+|4,39,77,0,1723242282,"~/.vim/plugin/insert_word.vim"
+-'  73  0  ~/.vim/plugin/insert_word.vim
+|4,39,73,0,1723242277,"~/.vim/plugin/insert_word.vim"
+-'  78  0  ~/.vim/plugin/insert_word.vim
+|4,39,78,0,1723242277,"~/.vim/plugin/insert_word.vim"
+-'  73  0  ~/.vim/plugin/insert_word.vim
+|4,39,73,0,1723242277,"~/.vim/plugin/insert_word.vim"
+-'  78  0  ~/.vim/plugin/insert_word.vim
+|4,39,78,0,1723242277,"~/.vim/plugin/insert_word.vim"
+-'  73  0  ~/.vim/plugin/insert_word.vim
+|4,39,73,0,1723242277,"~/.vim/plugin/insert_word.vim"
+-'  78  0  ~/.vim/plugin/insert_word.vim
+|4,39,78,0,1723242277,"~/.vim/plugin/insert_word.vim"
+-'  73  0  ~/.vim/plugin/insert_word.vim
+|4,39,73,0,1723242277,"~/.vim/plugin/insert_word.vim"
+-'  78  0  ~/.vim/plugin/insert_word.vim
+|4,39,78,0,1723242277,"~/.vim/plugin/insert_word.vim"
+-'  66  10  ~/.vim/plugin/insert_word.vim
+|4,39,66,10,1723242194,"~/.vim/plugin/insert_word.vim"
+-'  66  10  ~/.vim/plugin/insert_word.vim
+|4,39,66,10,1723242194,"~/.vim/plugin/insert_word.vim"
+-'  66  10  ~/.vim/plugin/insert_word.vim
+|4,39,66,10,1723242194,"~/.vim/plugin/insert_word.vim"
+-'  66  10  ~/.vim/plugin/insert_word.vim
+|4,39,66,10,1723242194,"~/.vim/plugin/insert_word.vim"
+-'  62  4  ~/.vim/plugin/insert_word.vim
+|4,39,62,4,1723241970,"~/.vim/plugin/insert_word.vim"
+-'  62  4  ~/.vim/plugin/insert_word.vim
+|4,39,62,4,1723241970,"~/.vim/plugin/insert_word.vim"
+-'  62  4  ~/.vim/plugin/insert_word.vim
+|4,39,62,4,1723241970,"~/.vim/plugin/insert_word.vim"
+-'  62  4  ~/.vim/plugin/insert_word.vim
+|4,39,62,4,1723241970,"~/.vim/plugin/insert_word.vim"
+-'  44  65  ~/.vim/plugin/insert_word.vim
+|4,39,44,65,1723241824,"~/.vim/plugin/insert_word.vim"
+-'  44  65  ~/.vim/plugin/insert_word.vim
+|4,39,44,65,1723241824,"~/.vim/plugin/insert_word.vim"
+-'  44  65  ~/.vim/plugin/insert_word.vim
+|4,39,44,65,1723241824,"~/.vim/plugin/insert_word.vim"
+-'  44  65  ~/.vim/plugin/insert_word.vim
+|4,39,44,65,1723241824,"~/.vim/plugin/insert_word.vim"
+-'  36  12  ~/.vim/plugin/insert_word.vim
+|4,39,36,12,1723241813,"~/.vim/plugin/insert_word.vim"
+-'  36  12  ~/.vim/plugin/insert_word.vim
+|4,39,36,12,1723241813,"~/.vim/plugin/insert_word.vim"
+-'  36  12  ~/.vim/plugin/insert_word.vim
+|4,39,36,12,1723241813,"~/.vim/plugin/insert_word.vim"
+-'  36  12  ~/.vim/plugin/insert_word.vim
+|4,39,36,12,1723241813,"~/.vim/plugin/insert_word.vim"
 
 # Buffer list:
-%~/pyscripts/python-error-library-stats.py	1	0
+%~/.vim/todo.txt	13	38
+%~/.vim/ftplugin/todo.vim	54	0
+%~/python_common/waivek/todo.txt	2	0
 
 # History of marks within files (newest to oldest):
+
+> ~/.vim/todo.txt
+	*	1723279441	0
+	"	13	38
+	.	4	0
+	+	12	117
+	+	11	173
+	+	10	212
+	+	14	0
+	+	10	0
+	+	9	126
+	+	8	83
+	+	7	214
+	+	7	137
+	+	6	96
+	+	14	0
+	+	6	99
+	+	6	0
+	+	5	53
+	+	4	96
+	+	4	0
+	+	3	167
+	+	16	0
+	+	15	0
+	+	2	0
+	+	16	0
+	+	2	79
+	+	2	0
+	+	1	165
+	+	3	0
+	+	5	0
+	+	1	0
+	+	2	0
+	+	16	0
+	+	1	0
+	+	3	0
+	+	7	0
+	+	1	0
+	+	2	0
+	+	3	0
+	+	2	0
+	+	3	0
+	+	2	0
+	+	3	0
+	+	4	68
+	+	1	0
+	+	4	68
+	+	1	0
+	+	6	0
+	+	6	87
+	+	1	0
+	+	5	0
+	+	4	0
+
+> ~/.vim/ftplugin/todo.vim
+	*	1723278756	0
+	"	54	0
+	.	54	0
+	+	7	3
+	+	8	0
+	+	7	17
+	+	8	0
+	+	12	0
+	+	111	16
+	+	111	0
+	+	95	0
+	+	95	11
+	+	118	49
+	+	102	24
+	+	111	0
+	+	97	0
+	+	102	0
+	+	111	30
+	+	111	33
+	+	111	0
+	+	97	0
+	+	102	0
+	+	111	0
+	+	111	32
+	+	111	0
+	+	96	6
+	+	95	0
+	+	120	0
+	+	96	0
+	+	120	0
+	+	96	0
+	+	118	13
+	+	118	0
+	+	95	0
+	+	118	0
+	+	96	4
+	+	96	0
+	+	120	0
+	+	102	0
+	+	67	0
+	+	120	0
+	+	118	22
+	+	96	0
+	+	94	4
+	+	94	10
+	+	100	63
+	+	103	14
+	+	110	17
+	+	111	0
+	+	106	51
+	+	101	46
+	+	94	0
+	+	94	22
+	+	94	44
+	+	94	4
+	+	94	12
+	+	94	19
+	+	111	0
+	+	94	5
+	+	94	20
+	+	94	5
+	+	94	57
+	+	94	0
+	+	92	11
+	+	111	0
+	+	104	41
+	+	101	0
+	+	105	0
+	+	106	0
+	+	119	0
+	+	118	0
+	+	117	49
+	+	98	0
+	+	97	5
+	+	98	29
+	+	20	0
+	+	33	57
+	+	35	54
+	+	31	0
+	+	30	14
+	+	31	9
+	+	32	0
+	+	34	14
+	+	22	14
+	+	23	9
+	+	25	57
+	+	26	15
+	+	27	54
+	+	66	22
+	+	55	0
+	+	54	34
+	+	63	32
+	+	54	36
+	+	63	36
+	+	63	0
+	+	54	0
+	+	67	0
+	+	54	0
+	+	67	0
+	+	63	0
+	+	54	0
+
+> /usr/share/vim/vim90/doc/builtin.txt
+	*	1723278721	0
+	"	8099	7
+
+> ~/python_common/waivek/todo.txt
+	*	1723278422	0
+	"	2	0
+	^	2	2
+	.	2	0
+	+	7	121
+	+	7	0
+	+	9	0
+	+	8	17
+	+	8	0
+	+	7	0
+	+	9	0
+	+	8	0
+	+	6	166
+	+	5	64
+	+	4	153
+	+	3	134
+	+	2	14
+	+	4	16
+	+	5	14
+	+	6	16
+	+	7	16
+	+	8	19
+	+	3	16
+	+	2	0
+	+	8	0
+	+	1	31
+	+	2	21
+	+	2	146
+	+	2	96
+	+	2	167
+	+	3	0
+	+	2	0
+	+	4	112
+	+	5	35
+	+	7	50
+	+	7	0
+	+	5	42
+	+	6	319
+	+	6	0
+	+	7	25
+	+	8	63
+	+	4	70
+	+	2	1
+	+	8	0
+	+	2	1
+	+	2	0
+
+> ~/.vim/edit-plugin/edit-plugin.todo
+	*	1723277982	0
+	"	1	0
+	.	1	0
+	+	1	77
+	+	2	12
+	+	1	0
+	+	2	122
+	+	3	64
+	+	4	6
+	+	3	22
+	+	1	6
+	+	2	0
+	+	3	0
+	+	1	0
+
+> ~/ui-components-css/ui-components-css.todo
+	*	1723277978	0
+	"	4	15
+	^	4	43
+	.	4	0
+	+	3	0
+	+	5	4
+	+	9	0
+	+	8	12
+	+	5	0
+	+	8	0
+	+	6	6
+	+	8	0
+	+	7	24
+	+	8	0
+	+	1	0
+	+	2	14
+	+	6	11
+	+	5	16
+	+	9	0
+	+	7	25
+	+	4	0
+
+> ~/.vim/edit-plugin/sqlite-functions.vim
+	*	1723276484	0
+	"	63	20
+	^	73	33
+	.	63	20
+	+	14	0
+	+	2	0
+	+	1	0
+	+	14	0
+	+	15	37
+	+	15	21
+	+	15	10
+	+	15	28
+	+	15	0
+	+	14	0
+	+	15	4
+	+	15	0
+	+	48	7
+	+	15	0
+	+	48	7
+	+	48	19
+	+	36	9
+	+	81	5
+	+	60	17
+	+	74	45
+	+	74	36
+	+	74	47
+	+	74	71
+	+	74	14
+	+	19	14
+	+	22	10
+	+	52	26
+	+	47	34
+	+	74	12
+	+	76	12
+	+	80	8
+	+	63	25
+	+	80	10
+	+	80	0
+	+	47	0
+	+	45	30
+	+	46	10
+	+	80	60
+	+	74	87
+	+	74	88
+	+	76	42
+	+	74	102
+	+	74	0
+	+	45	21
+	+	45	0
+	+	74	92
+	+	74	0
+	+	44	70
+	+	45	44
+	+	74	0
+	+	70	0
+	+	74	0
+	+	70	21
+	+	71	21
+	+	68	12
+	+	71	12
+	+	70	33
+	+	73	35
+	+	68	20
+	+	71	20
+	+	74	8
+	+	74	0
+	+	67	0
+	+	63	25
+	+	63	26
+	+	63	139
+	+	64	0
+	+	63	0
+	+	74	75
+	+	70	0
+	+	69	43
+	+	70	33
+	+	72	45
+	+	70	23
+	+	73	32
+	+	63	20
+
+> ~/.vim/edit-plugin/pass.txt
+	*	1723276465	0
+	"	1	0
+
+> ~/.vim/edit-plugin/fail.txt
+	*	1723276459	0
+	"	1	0
+
+> ~/.vim/plugin/insert_word.vim
+	*	1723242424	0
+	"	80	11
+	^	80	12
+	.	80	11
+	+	76	91
+	+	78	90
+	+	68	0
+	+	57	108
+	+	57	0
+	+	58	0
+	+	4	4
+	+	3	2
+	+	76	3
+	+	78	3
+	+	3	2
+	+	76	0
+	+	78	0
+	+	58	0
+	+	44	0
+	+	57	0
+	+	44	39
+	+	57	49
+	+	57	60
+	+	57	0
+	+	57	61
+	+	57	23
+	+	57	4
+	+	57	12
+	+	57	60
+	+	57	21
+	+	57	4
+	+	57	12
+	+	57	45
+	+	57	0
+	+	6	38
+	+	41	4
+	+	41	10
+	+	42	29
+	+	41	0
+	+	6	38
+	+	7	77
+	+	9	36
+	+	10	19
+	+	11	17
+	+	12	21
+	+	13	4
+	+	28	9
+	+	30	5
+	+	39	9
+	+	42	0
+	+	44	4
+	+	66	5
+	+	73	5
+	+	66	23
+	+	73	23
+	+	66	4
+	+	73	0
+	+	55	33
+	+	47	13
+	+	48	13
+	+	49	41
+	+	54	35
+	+	66	5
+	+	73	5
+	+	78	29
+	+	66	0
+	+	73	0
+	+	61	4
+	+	61	28
+	+	66	0
+	+	6	40
+	+	8	31
+	+	44	65
+	+	66	0
+	+	61	51
+	+	62	37
+	+	69	4
+	+	62	0
+	+	70	0
+	+	66	0
+	+	64	4
+	+	73	0
+	+	76	0
+	+	64	16
+	+	73	0
+	+	78	1
+	+	76	52
+	+	76	0
+	+	71	0
+	+	78	1
+	+	64	0
+	+	65	16
+	+	72	0
+	+	71	5
+	+	78	0
+	+	79	0
+	+	77	0
+	+	79	47
+	+	80	47
+	+	79	11
+	+	80	11
+
+> ~/.vim/mappings.vim
+	*	1723242423	0
+	"	14	2
+	^	14	3
+	.	14	1
+	+	2	13
+	+	2	0
+	+	7	0
+	+	3	0
+	+	4	13
+	+	5	0
+	+	7	0
+	+	7	24
+	+	7	25
+	+	7	0
+	+	1	0
+	+	8	55
+	+	18	25
+	+	19	17
+	+	18	25
+	+	19	25
+	+	18	25
+	+	19	25
+	+	18	5
+	+	19	5
+	+	18	0
+	+	19	0
+	+	18	7
+	+	19	16
+	+	12	1
+	+	11	2
+	+	13	1
+	+	19	20
+	+	13	2
+	+	18	0
+	+	17	0
+	+	16	0
+	+	15	4
+	+	15	0
+	+	15	1
+	+	15	0
+	+	13	6
+	+	15	0
+	+	13	6
+	+	15	0
+	+	13	7
+	+	15	0
+	+	13	6
+	+	15	0
+	+	13	5
+	+	14	0
+	+	15	0
+	+	19	70
+	+	19	34
+	+	19	0
+	+	20	64
+	+	14	1
+
+> /usr/share/vim/vim90/doc/map.txt
+	*	1723240746	0
+	"	720	7
+
+> /usr/share/vim/vim90/doc/insert.txt
+	*	1723240612	0
+	"	226	6
+
+> /usr/share/vim/vim90/doc/tips.txt
+	*	1723240546	0
+	"	36	23
+
+> /usr/share/vim/vim90/doc/options.txt
+	*	1723240284	0
+	"	8931	23
+
+> /usr/share/vim/vim90/doc/scroll.txt
+	*	1723239812	0
+	"	69	7
+
+> ~/untitled/description.txt
+	*	1723198184	0
+	"	48	0
+	^	48	23
+	.	48	0
+	+	32	0
+	+	48	0
+
+> ~/bash/.gh-timeago.json
+	*	1723135545	0
+	"	421	4
+
+> ~/bash/gh-timeago.bash
+	*	1723131483	0
+	"	24	49
+	^	24	50
+	.	24	49
+	+	33	63
+	+	4	75
+	+	33	38
+	+	21	47
+	+	31	0
+	+	25	4
+	+	30	1
+	+	33	82
+	+	14	49
+	+	24	49
+
+> ~/bash/logs/gh-timeago-updates.log
+	*	1723131234	0
+	"	897	38
+	.	1	0
+	+	1	0
+
+> ~/bash/1
+	*	1723131219	0
+	"	1	0
+
+> ~/hateoas/hateoas-api.py
+	*	1723100841	0
+	"	233	48
+	^	233	49
+	.	233	49
+	+	910	0
+	+	918	7
+	+	927	0
+	+	933	0
+	+	933	113
+	+	656	0
+	+	657	65
+	+	655	29
+	+	666	17
+	+	656	0
+	+	925	46
+	+	920	80
+	+	921	25
+	+	925	16
+	+	888	13
+	+	891	116
+	+	891	81
+	+	891	0
+	+	889	0
+	+	920	0
+	+	967	24
+	+	972	78
+	+	993	123
+	+	984	86
+	+	986	0
+	+	984	35
+	+	986	33
+	+	974	159
+	+	986	0
+	+	988	0
+	+	908	0
+	+	908	58
+	+	908	63
+	+	933	237
+	+	908	0
+	+	541	0
+	+	600	58
+	+	601	59
+	+	683	80
+	+	657	21
+	+	664	97
+	+	665	16
+	+	660	51
+	+	664	161
+	+	664	31
+	+	664	102
+	+	601	63
+	+	664	22
+	+	664	0
+	+	659	103
+	+	664	0
+	+	659	0
+	+	660	0
+	+	660	27
+	+	660	47
+	+	663	92
+	+	663	29
+	+	663	0
+	+	659	103
+	+	660	0
+	+	663	23
+	+	664	0
+	+	663	23
+	+	659	0
+	+	664	0
+	+	659	0
+	+	658	0
+	+	660	51
+	+	660	0
+	+	661	0
+	+	662	31
+	+	655	27
+	+	657	32
+	+	659	20
+	+	659	161
+	+	659	38
+	+	661	156
+	+	661	153
+	+	882	54
+	+	892	0
+	+	882	0
+	+	908	0
+	+	904	0
+	+	933	241
+	+	434	157
+	+	439	59
+	+	440	83
+	+	434	108
+	+	440	111
+	+	239	57
+	+	239	65
+	+	239	0
+	+	239	77
+	+	239	0
+	+	231	0
+	+	233	49
+	g	933	0
+
+> ~/hateoas/ui-components-css/static/css-themes/dark-gray-mono.css
+	*	1723100818	0
+	"	57	58
+	^	57	59
+	.	57	58
+	+	21	0
+	+	21	2
+	+	21	19
+	+	21	0
+	+	20	18
+	+	21	0
+	+	32	0
+	+	64	32
+	+	60	65
+	+	64	4
+	+	64	0
+	+	64	24
+	+	64	0
+	+	64	22
+	+	64	0
+	+	61	0
+	+	62	25
+	+	59	0
+	+	58	0
+	+	57	58
+
+> ~/hateoas/migrations/2400808_portionurls-resync.py
+	*	1723065829	0
+	"	10	0
+	^	23	19
+	.	10	0
+	+	4	51
+	+	15	0
+	+	2	28
+	+	15	0
+	+	3	11
+	+	4	34
+	+	5	0
+	+	7	28
+	+	11	67
+	+	15	1
+	+	12	30
+	+	13	48
+	+	14	24
+	+	6	27
+	+	2	32
+	+	14	1
+	+	5	0
+	+	9	0
+	+	8	0
+	+	10	0
+	+	15	0
+	+	10	20
+	+	15	0
+	+	14	0
+	+	16	25
+	+	17	50
+	+	18	34
+	+	20	43
+	+	25	0
+	+	20	61
+	+	21	45
+	+	23	18
+	+	10	0
+
+> ~/hateoas/migrations/240424_2151_portionurls-user_id.py
+	*	1723065447	0
+	"	1	0
+	.	6	0
+	+	4	30
+	+	7	38
+	+	8	48
+	+	12	8
+	+	14	29
+	+	22	0
+	+	14	9
+	+	22	0
+	+	14	9
+	+	15	65
+	+	15	82
+	+	22	0
+	+	15	18
+	+	22	0
+	+	13	13
+	+	16	29
+	+	22	0
+	+	17	56
+	+	22	0
+	+	17	106
+	+	22	0
+	+	22	10
+	+	17	54
+	+	22	77
+	+	17	112
+	+	17	6
+	+	17	0
+	+	22	0
+	+	22	5
+	+	22	17
+	+	4	7
+	+	22	0
+	+	4	6
+	+	6	0
+	+	6	31
+	+	4	33
+	+	6	34
+	+	4	0
+	+	4	10
+	+	4	0
+	+	6	0
+	+	4	0
+	+	3	0
+	+	4	5
+	+	17	74
+	+	22	10
+	+	17	6
+	+	18	11
+	+	19	4
+	+	21	0
+	+	22	0
+	+	18	20
+	+	19	4
+	+	21	68
+	+	21	69
+	+	21	0
+	+	11	0
+	+	21	0
+	+	10	0
+	+	11	65
+	+	11	0
+	+	6	21
+	+	6	0
+	+	6	4
+	+	6	5
+	+	6	0
+
+> ~/hateoas/main.sql
+	*	1723065248	0
+	"	1	0
+	^	25	28
+	.	25	27
+	+	20	0
+	+	9	283
+	+	9	282
+	+	9	339
+	+	9	283
+	+	52	0
+	+	53	0
+	+	51	2
+	+	52	0
+	+	51	5
+	+	52	31
+	+	54	0
+	+	50	0
+	+	50	103
+	+	50	225
+	+	50	153
+	+	50	226
+	+	3	0
+	+	50	0
+	+	9	215
+	+	20	165
+	+	50	0
+	+	9	282
+	+	50	0
+	+	36	0
+	+	36	119
+	+	50	62
+	+	50	0
+	+	50	37
+	+	50	153
+	+	50	6
+	+	50	78
+	+	36	97
+	+	50	0
+	+	36	97
+	+	50	0
+	+	36	144
+	+	50	75
+	+	36	97
+	+	36	211
+	+	36	97
+	+	36	211
+	+	3	115
+	+	9	289
+	+	20	262
+	+	36	290
+	+	3	22
+	+	1	0
+	+	3	23
+	+	3	62
+	+	3	82
+	+	3	22
+	+	9	0
+	+	8	0
+	+	3	108
+	+	3	0
+	+	9	0
+	+	9	193
+	+	53	0
+	+	1	0
+	+	50	0
+	+	9	136
+	+	20	174
+	+	9	211
+	+	9	186
+	+	20	139
+	+	53	0
+	+	3	0
+	+	36	0
+	+	3	0
+	+	36	0
+	+	9	187
+	+	3	0
+	+	1	0
+	+	3	0
+	+	1	0
+	+	36	228
+	+	36	300
+	+	36	306
+	+	36	242
+	+	44	44
+	+	44	118
+	+	3	26
+	+	3	38
+	+	9	26
+	+	44	13
+	+	44	0
+	+	44	43
+	+	49	0
+	+	50	0
+	+	31	104
+	+	31	100
+	+	31	103
+	+	31	101
+	+	31	90
+	+	3	0
+	+	1	0
+	+	33	32
+	+	26	0
+	+	25	27
+
+> ~/hateoas/Types.py
+	*	1723065054	0
+	"	22	0
+	^	15	62
+	.	15	61
+	+	15	20
+	+	13	0
+	+	15	23
+	+	16	8
+	+	15	0
+	+	22	0
+	+	14	0
+	+	23	21
+	+	43	8
+	+	24	8
+	+	24	35
+	+	25	36
+	+	26	102
+	+	27	41
+	+	28	15
+	+	24	0
+	+	28	38
+	+	28	15
+	+	28	41
+	+	28	35
+	+	28	83
+	+	27	0
+	+	26	66
+	+	27	23
+	+	28	117
+	+	28	19
+	+	29	84
+	+	30	25
+	+	32	30
+	+	33	103
+	+	34	31
+	+	35	23
+	+	36	8
+	+	38	26
+	+	39	44
+	+	47	11
+	+	47	15
+	+	20	27
+	+	15	61
+
+> ~/hateoas/templates/sync_video_to_video.html
+	*	1723062979	0
+	"	46	38
+	^	46	39
+	.	46	0
+	+	272	0
+	+	224	0
+	+	268	17
+	+	322	0
+	+	354	0
+	+	299	0
+	+	269	0
+	+	224	0
+	+	272	0
+	+	295	12
+	+	294	14
+	+	274	14
+	+	271	42
+	+	273	0
+	+	271	42
+	+	295	12
+	+	224	0
+	+	222	26
+	+	270	20
+	+	300	55
+	+	301	23
+	+	301	43
+	+	301	26
+	+	301	34
+	+	301	41
+	+	302	0
+	+	301	46
+	+	300	50
+	+	110	0
+	+	108	46
+	+	107	60
+	+	106	13
+	+	109	13
+	+	103	0
+	+	111	0
+	+	103	0
+	+	191	0
+	+	74	0
+	+	74	68
+	+	74	63
+	+	196	4
+	+	203	4
+	+	198	12
+	+	201	0
+	+	198	15
+	+	205	8
+	+	208	0
+	+	201	47
+	+	199	49
+	+	208	29
+	+	208	0
+	+	201	38
+	+	209	0
+	+	199	0
+	+	201	0
+	+	74	0
+	+	71	0
+	+	71	74
+	+	71	0
+	+	71	15
+	+	71	16
+	+	71	28
+	+	71	0
+	+	71	12
+	+	31	0
+	+	32	28
+	+	70	0
+	+	50	32
+	+	72	0
+	+	73	25
+	+	71	0
+	+	68	15
+	+	66	20
+	+	69	21
+	+	68	59
+	+	31	0
+	+	18	28
+	+	26	30
+	+	18	0
+	+	17	0
+	+	26	16
+	+	20	16
+	+	67	71
+	+	68	20
+	+	68	28
+	+	68	0
+	+	31	90
+	+	31	8
+	+	34	0
+	+	33	33
+	+	48	0
+	+	46	26
+	+	46	0
+
+> ~/hateoas/static/css/hateoas.css
+	*	1723060144	0
+	"	3	0
+	.	15	0
+	+	2	48
+	+	3	45
+	+	5	50
+	+	12	39
+	+	9	0
+	+	10	36
+	+	11	0
+	+	13	40
+	+	6	45
+	+	7	8
+	+	5	29
+	+	2	49
+	+	3	44
+	+	10	34
+	+	14	59
+	+	16	12
+	+	5	43
+	+	24	83
+	+	24	0
+	+	24	94
+	+	23	10
+	+	22	0
+	+	23	60
+	+	24	57
+	+	23	47
+	+	23	86
+	+	24	83
+	+	2	54
+	+	3	51
+	+	26	127
+	+	26	89
+	+	5	0
+	+	10	37
+	+	14	17
+	+	15	27
+	+	17	5
+	+	27	41
+	+	28	5
+	+	28	33
+	+	27	25
+	+	27	36
+	+	23	0
+	+	17	0
+	+	9	0
+	+	2	0
+	+	23	0
+	+	24	103
+	+	24	0
+	+	29	0
+	+	30	0
+	+	4	25
+	+	23	34
+	+	24	31
+	+	23	40
+	+	24	36
+	+	23	40
+	+	24	50
+	+	25	40
+	+	25	39
+	+	26	0
+	+	25	0
+	+	19	0
+	+	18	8
+	+	19	22
+	+	20	25
+	+	22	0
+	+	21	183
+	+	21	8
+	+	21	40
+	+	21	23
+	+	21	21
+	+	21	34
+	+	21	25
+	+	21	8
+	+	15	0
+
+> ~/hateoas/templates/base.html
+	*	1723059159	0
+	"	24	17
+	^	24	18
+	.	24	17
+	+	30	0
+	+	26	0
+	+	4	50
+	+	12	78
+	+	26	0
+	+	26	8
+	+	4	0
+	+	26	0
+	+	29	0
+	+	30	0
+	+	28	20
+	+	29	0
+	+	28	12
+	+	28	0
+	+	28	55
+	+	28	67
+	+	28	0
+	+	14	9
+	+	12	11
+	+	12	0
+	+	14	0
+	+	12	0
+	+	12	96
+	+	12	0
+	+	4	0
+	+	12	8
+	+	12	97
+	+	12	0
+	+	6	0
+	+	12	0
+	+	5	0
+	+	27	0
+	+	12	0
+	+	27	7
+	+	27	0
+	+	27	26
+	+	27	16
+	+	27	0
+	+	12	0
+	+	14	0
+	+	27	0
+	+	15	0
+	+	16	0
+	+	5	37
+	+	5	53
+	+	6	37
+	+	11	0
+	+	7	0
+	+	11	0
+	+	8	68
+	+	11	0
+	+	9	68
+	+	10	8
+	+	6	0
+	+	8	86
+	+	9	86
+	+	23	50
+	+	24	17
+
+> ~/genproject/python.sh
+	*	1723015119	0
+	"	36	0
+	^	37	32
+	.	45	37
+	+	7	0
+	+	2	0
+	+	4	9
+	+	12	9
+	+	19	9
+	+	54	0
+	+	67	26
+	+	68	0
+	+	69	8
+	+	51	6
+	+	53	0
+	+	52	0
+	+	53	0
+	+	33	15
+	+	57	0
+	+	48	13
+	+	65	4
+	+	69	1
+	+	40	6
+	+	53	1
+	+	69	35
+	+	53	0
+	+	49	26
+	+	5	8
+	+	13	0
+	+	20	0
+	+	49	15
+	+	24	0
+	+	25	60
+	+	48	48
+	+	41	5
+	+	35	20
+	+	40	0
+	+	36	0
+	+	38	0
+	+	37	31
+	+	46	0
+	+	45	37
+
+> /tmp/crontab.1GQWZL/crontab
+	*	1723014834	0
+	"	32	24
 
 > ~/pyscripts/python-error-library-stats.py
 	*	1722987501	0
@@ -13777,24 +15114,9 @@ $\=strftime("%c", submatch(1))
 	.	26	3
 	+	26	3
 
-> ~/bash/gh-timeago.bash
-	*	1722987193	0
-	"	1	0
-	^	4	8
-	.	20	38
-	+	20	63
-	+	4	75
-	+	20	38
-
 > /tmp/crontab.xo5Jhc/crontab
 	*	1722987166	0
 	"	32	43
-
-> ~/bash/logs/gh-timeago-updates.log
-	*	1722987123	0
-	"	836	0
-	.	1	0
-	+	1	0
 
 > /tmp/crontab.U31T7D/crontab
 	*	1722987045	0
@@ -14411,127 +15733,6 @@ $\=strftime("%c", submatch(1))
 	+	3	8
 	+	5	14
 
-> ~/.vim/todo.txt
-	*	1722888542	0
-	"	1	0
-	^	1	138
-	.	1	137
-	+	6	117
-	+	5	173
-	+	4	212
-	+	8	0
-	+	4	0
-	+	3	126
-	+	2	83
-	+	1	214
-	+	1	137
-
-> ~/hateoas/hateoas-api.py
-	*	1722887817	0
-	"	33	4
-	^	955	160
-	.	969	0
-	+	722	54
-	+	669	51
-	+	673	40
-	+	725	71
-	+	684	37
-	+	684	0
-	+	688	0
-	+	723	0
-	+	12	0
-	+	31	0
-	+	14	62
-	+	964	96
-	+	725	71
-	+	722	60
-	+	722	54
-	+	722	51
-	+	722	57
-	+	722	55
-	+	722	26
-	+	722	48
-	+	722	26
-	+	722	41
-	+	722	22
-	+	722	54
-	+	722	0
-	+	703	28
-	+	721	0
-	+	703	14
-	+	721	0
-	+	704	0
-	+	706	24
-	+	710	61
-	+	712	63
-	+	675	0
-	+	671	0
-	+	670	0
-	+	714	39
-	+	715	24
-	+	714	80
-	+	725	182
-	+	714	62
-	+	715	0
-	+	714	62
-	+	715	0
-	+	687	17
-	+	686	34
-	+	674	41
-	+	18	0
-	+	674	0
-	+	3	0
-	+	725	217
-	+	686	55
-	+	674	57
-	+	2	28
-	+	891	60
-	+	892	76
-	+	891	5
-	+	14	0
-	+	912	59
-	+	914	187
-	+	897	4
-	+	14	0
-	+	908	0
-	+	895	0
-	+	896	21
-	+	898	90
-	+	908	0
-	+	897	0
-	+	893	0
-	+	889	0
-	+	891	0
-	+	899	7
-	+	908	0
-	+	914	0
-	+	914	113
-	+	646	0
-	+	647	65
-	+	645	29
-	+	648	17
-	+	646	0
-	+	906	46
-	+	901	80
-	+	902	25
-	+	906	16
-	+	870	13
-	+	873	116
-	+	873	81
-	+	873	0
-	+	871	0
-	+	901	0
-	+	948	24
-	+	953	78
-	+	974	123
-	+	965	86
-	+	967	0
-	+	965	35
-	+	967	33
-	+	955	159
-	+	967	0
-	+	969	0
-
 > ~/hateoas/static/downloads/audios/2199424572_06h52m18s_10s.mp3
 	*	1722887423	0
 	"	1	0
@@ -14844,112 +16045,6 @@ $\=strftime("%c", submatch(1))
 	^	2	61
 	.	2	0
 	+	2	0
-
-> ~/hateoas/templates/sync_video_to_video.html
-	*	1722793534	0
-	"	67	33
-	^	76	14
-	.	70	0
-	+	56	0
-	+	57	116
-	+	57	12
-	+	54	90
-	+	66	41
-	+	67	46
-	+	65	53
-	+	149	0
-	+	124	50
-	+	113	0
-	+	112	36
-	+	112	0
-	+	111	9
-	+	112	45
-	+	147	45
-	+	149	34
-	+	149	0
-	+	147	0
-	+	149	0
-	+	147	83
-	+	147	35
-	+	147	0
-	+	152	31
-	+	149	34
-	+	149	46
-	+	149	0
-	+	148	0
-	+	149	34
-	+	111	58
-	+	112	0
-	+	112	8
-	+	112	30
-	+	112	0
-	+	112	16
-	+	112	12
-	+	112	0
-	+	147	10
-	+	152	10
-	+	112	18
-	+	112	0
-	+	168	21
-	+	253	38
-	+	206	59
-	+	205	62
-	+	253	62
-	+	169	52
-	+	253	49
-	+	169	54
-	+	206	0
-	+	253	0
-	+	177	17
-	+	222	17
-	+	225	39
-	+	249	17
-	+	171	0
-	+	275	12
-	+	251	12
-	+	252	29
-	+	275	27
-	+	275	29
-	+	307	27
-	+	253	18
-	+	254	22
-	+	253	16
-	+	225	0
-	+	177	0
-	+	221	17
-	+	275	0
-	+	307	0
-	+	252	0
-	+	222	0
-	+	177	0
-	+	225	0
-	+	248	12
-	+	247	14
-	+	227	14
-	+	224	42
-	+	226	0
-	+	224	42
-	+	248	12
-	+	177	0
-	+	175	26
-	+	223	20
-	+	253	55
-	+	254	23
-	+	254	43
-	+	254	26
-	+	254	34
-	+	254	41
-	+	255	0
-	+	254	46
-	+	253	50
-	+	77	0
-	+	75	46
-	+	74	60
-	+	73	13
-	+	76	13
-	+	70	0
-	+	78	0
-	+	70	0
 
 > ~/hateoas/static/downloads/graph_payloads/2199468577.json
 	*	1722792728	0
@@ -15386,50 +16481,6 @@ $\=strftime("%c", submatch(1))
 	+	16	19
 	+	8	14
 	+	12	28
-
-> ~/genproject/python.sh
-	*	1722783144	0
-	"	56	0
-	^	37	32
-	.	45	37
-	+	7	0
-	+	2	0
-	+	4	9
-	+	12	9
-	+	19	9
-	+	54	0
-	+	67	26
-	+	68	0
-	+	69	8
-	+	51	6
-	+	53	0
-	+	52	0
-	+	53	0
-	+	33	15
-	+	57	0
-	+	48	13
-	+	65	4
-	+	69	1
-	+	40	6
-	+	53	1
-	+	69	35
-	+	53	0
-	+	49	26
-	+	5	8
-	+	13	0
-	+	20	0
-	+	49	15
-	+	24	0
-	+	25	60
-	+	48	48
-	+	41	5
-	+	35	20
-	+	40	0
-	+	36	0
-	+	38	0
-	+	37	31
-	+	46	0
-	+	45	37
 
 > ~/python_common/.envrc
 	*	1722783087	0
@@ -16154,10 +17205,6 @@ $\=strftime("%c", submatch(1))
 	+	30	22
 	+	25	39
 
-> /usr/share/vim/vim90/doc/builtin.txt
-	*	1722717628	0
-	"	774	26
-
 > ~/python_common/sink.log
 	*	1722716795	0
 	"	1	0
@@ -16503,50 +17550,6 @@ $\=strftime("%c", submatch(1))
 	+	10	35
 	+	11	0
 
-> ~/python_common/waivek/todo.txt
-	*	1722631164	0
-	"	5	40
-	^	6	320
-	.	4	70
-	+	7	121
-	+	7	0
-	+	9	0
-	+	8	17
-	+	8	0
-	+	7	0
-	+	9	0
-	+	8	0
-	+	6	166
-	+	5	64
-	+	4	153
-	+	3	134
-	+	2	14
-	+	4	16
-	+	5	14
-	+	6	16
-	+	7	16
-	+	8	19
-	+	3	16
-	+	2	0
-	+	8	0
-	+	1	31
-	+	2	21
-	+	2	146
-	+	2	96
-	+	2	167
-	+	3	0
-	+	2	0
-	+	4	112
-	+	5	35
-	+	7	50
-	+	7	0
-	+	5	42
-	+	6	319
-	+	6	0
-	+	7	25
-	+	8	63
-	+	4	70
-
 > ~/python_common/waivek/color.py
 	*	1722631147	0
 	"	50	4
@@ -16559,110 +17562,6 @@ $\=strftime("%c", submatch(1))
 	"	192	0
 	.	183	0
 	+	183	0
-
-> ~/.vim/ftplugin/todo.vim
-	*	1722631115	0
-	"	71	4
-	^	70	6
-	.	71	29
-	+	13	33
-	+	13	0
-	+	67	1
-	+	13	0
-	+	13	33
-	+	13	0
-	+	3	0
-	+	1	0
-	+	67	0
-	+	93	0
-	+	68	0
-	+	91	42
-	+	84	52
-	+	84	0
-	+	70	28
-	+	75	48
-	+	84	0
-	+	75	0
-	+	84	38
-	+	84	0
-	+	84	51
-	+	84	56
-	+	84	75
-	+	84	0
-	+	1	0
-	+	7	3
-	+	8	0
-	+	7	17
-	+	8	0
-	+	12	0
-	+	84	16
-	+	84	0
-	+	68	0
-	+	68	11
-	+	91	49
-	+	75	24
-	+	84	0
-	+	70	0
-	+	75	0
-	+	84	30
-	+	84	33
-	+	84	0
-	+	70	0
-	+	75	0
-	+	84	0
-	+	84	32
-	+	84	0
-	+	69	6
-	+	68	0
-	+	93	0
-	+	69	0
-	+	93	0
-	+	69	0
-	+	91	13
-	+	91	0
-	+	68	0
-	+	91	0
-	+	69	4
-	+	69	0
-	+	93	0
-	+	75	0
-	+	40	0
-	+	39	0
-	+	93	0
-	+	91	22
-	+	69	0
-	+	67	4
-	+	67	10
-	+	73	63
-	+	76	14
-	+	83	17
-	+	84	0
-	+	79	51
-	+	74	46
-	+	67	0
-	+	67	22
-	+	67	44
-	+	67	4
-	+	67	12
-	+	67	19
-	+	84	0
-	+	67	5
-	+	67	20
-	+	67	5
-	+	67	57
-	+	67	0
-	+	65	11
-	+	84	0
-	+	77	41
-	+	74	0
-	+	78	0
-	+	79	0
-	+	92	0
-	+	91	0
-	+	90	49
-	+	71	0
-	+	70	5
-	+	71	29
 
 > ~/.vim/plugin/print-personal-mappings.vim
 	*	1722626848	0
@@ -17598,10 +18497,6 @@ $\=strftime("%c", submatch(1))
 	+	7	0
 	+	9	0
 	+	67	0
-
-> /usr/share/vim/vim90/doc/map.txt
-	*	1722454894	0
-	"	1834	7
 
 > ~/python_common/.direnv/python-3.10.12/lib/python3.10/site-packages/rich/table.py
 	*	1722428379	0
@@ -18946,24 +19841,6 @@ $\=strftime("%c", submatch(1))
 	.	1	0
 	+	1	0
 
-> ~/.vim/mappings.vim
-	*	1722193774	0
-	"	8	55
-	^	8	56
-	.	8	55
-	+	2	13
-	+	2	0
-	+	7	0
-	+	3	0
-	+	4	13
-	+	5	0
-	+	7	0
-	+	7	24
-	+	7	25
-	+	7	0
-	+	1	0
-	+	8	55
-
 > ~/hateoas/pyrightconfig.json
 	*	1722193067	0
 	"	4	33
@@ -18974,103 +19851,6 @@ $\=strftime("%c", submatch(1))
 	+	4	31
 	+	3	35
 	+	4	33
-
-> ~/.vim/edit-plugin/edit-plugin.todo
-	*	1722188797	0
-	"	1	0
-	.	1	0
-	+	1	77
-	+	2	12
-	+	1	0
-	+	2	122
-	+	3	64
-	+	4	6
-	+	3	22
-	+	1	6
-	+	2	0
-	+	3	0
-	+	1	0
-
-> ~/.vim/edit-plugin/sqlite-functions.vim
-	*	1722188646	0
-	"	1	0
-	^	73	33
-	.	73	32
-	+	14	0
-	+	2	0
-	+	1	0
-	+	14	0
-	+	15	37
-	+	15	21
-	+	15	10
-	+	15	28
-	+	15	0
-	+	14	0
-	+	15	4
-	+	15	0
-	+	48	7
-	+	15	0
-	+	48	7
-	+	48	19
-	+	36	9
-	+	81	5
-	+	60	17
-	+	74	45
-	+	74	36
-	+	74	47
-	+	74	71
-	+	74	14
-	+	19	14
-	+	22	10
-	+	52	26
-	+	47	34
-	+	74	12
-	+	76	12
-	+	80	8
-	+	63	25
-	+	80	10
-	+	80	0
-	+	47	0
-	+	45	30
-	+	46	10
-	+	80	60
-	+	74	87
-	+	74	88
-	+	76	42
-	+	74	102
-	+	74	0
-	+	45	21
-	+	45	0
-	+	74	92
-	+	74	0
-	+	44	70
-	+	45	44
-	+	74	0
-	+	70	0
-	+	74	0
-	+	70	21
-	+	71	21
-	+	68	12
-	+	71	12
-	+	70	33
-	+	73	35
-	+	68	20
-	+	71	20
-	+	74	8
-	+	74	0
-	+	67	0
-	+	63	25
-	+	63	26
-	+	63	139
-	+	64	0
-	+	63	0
-	+	74	75
-	+	70	0
-	+	69	43
-	+	70	33
-	+	72	45
-	+	70	23
-	+	73	32
 
 > ~/.vim/edit-plugin/.gitignore
 	*	1722188497	0
@@ -19095,14 +19875,6 @@ $\=strftime("%c", submatch(1))
 	+	2	34
 	+	3	41
 	+	4	0
-
-> ~/.vim/edit-plugin/pass.txt
-	*	1722188229	0
-	"	5	0
-
-> ~/.vim/edit-plugin/fail.txt
-	*	1722188220	0
-	"	5	0
 
 > /usr/share/vim/vim90/doc/terminal.txt
 	*	1722188150	0
@@ -19349,10 +20121,6 @@ $\=strftime("%c", submatch(1))
 > ~/.vim/edit-plugin/test1.db
 	*	1722166867	0
 	"	1	0
-
-> /usr/share/vim/vim90/doc/options.txt
-	*	1722166015	0
-	"	544	40
 
 > ~/.config/shell_data/fish_history
 	*	1722156963	0
@@ -20935,112 +21703,6 @@ $\=strftime("%c", submatch(1))
 	+	5	0
 	+	3	131
 
-> ~/hateoas/main.sql
-	*	1721324680	0
-	"	32	32
-	^	32	33
-	.	32	32
-	+	3	0
-	+	49	0
-	+	20	0
-	+	9	283
-	+	9	282
-	+	9	339
-	+	9	283
-	+	51	0
-	+	52	0
-	+	50	2
-	+	51	0
-	+	50	5
-	+	51	31
-	+	53	0
-	+	49	0
-	+	49	103
-	+	49	225
-	+	49	153
-	+	49	226
-	+	3	0
-	+	49	0
-	+	9	215
-	+	20	165
-	+	49	0
-	+	9	282
-	+	49	0
-	+	35	0
-	+	35	119
-	+	49	62
-	+	49	0
-	+	49	37
-	+	49	153
-	+	49	6
-	+	49	78
-	+	35	97
-	+	49	0
-	+	35	97
-	+	49	0
-	+	35	144
-	+	49	75
-	+	35	97
-	+	35	211
-	+	35	97
-	+	35	211
-	+	3	115
-	+	9	289
-	+	20	262
-	+	35	290
-	+	3	22
-	+	1	0
-	+	3	23
-	+	3	62
-	+	3	82
-	+	3	22
-	+	9	0
-	+	8	0
-	+	3	108
-	+	3	0
-	+	9	0
-	+	9	193
-	+	52	0
-	+	1	0
-	+	49	0
-	+	9	136
-	+	20	174
-	+	9	211
-	+	9	186
-	+	20	139
-	+	52	0
-	+	3	0
-	+	35	0
-	+	3	0
-	+	35	0
-	+	9	187
-	+	3	0
-	+	1	0
-	+	3	0
-	+	1	0
-	+	35	228
-	+	35	300
-	+	35	306
-	+	35	242
-	+	43	44
-	+	43	118
-	+	3	26
-	+	3	38
-	+	9	26
-	+	43	13
-	+	43	0
-	+	43	43
-	+	48	0
-	+	49	0
-	+	30	104
-	+	30	100
-	+	30	103
-	+	30	101
-	+	30	90
-	+	3	0
-	+	1	0
-	+	32	32
-
 > ~/hateoas/hate
 	*	1721323497	0
 	"	1	0
@@ -21125,29 +21787,6 @@ $\=strftime("%c", submatch(1))
 	+	1	0
 	+	3	0
 	+	2	0
-
-> ~/hateoas/ui-components-css/static/css-themes/dark-gray-mono.css
-	*	1721314466	0
-	"	56	0
-	^	58	26
-	.	58	25
-	+	21	0
-	+	21	2
-	+	21	19
-	+	21	0
-	+	20	18
-	+	21	0
-	+	32	0
-	+	60	32
-	+	56	65
-	+	60	4
-	+	60	0
-	+	60	24
-	+	60	0
-	+	60	22
-	+	60	0
-	+	57	0
-	+	58	25
 
 > ~/hateoas/templates/sync_video_on_video.html
 	*	1721314276	0
@@ -21290,149 +21929,6 @@ $\=strftime("%c", submatch(1))
 	+	13	0
 	a	231	28
 	b	231	29
-
-> ~/hateoas/static/css/hateoas.css
-	*	1721311075	0
-	"	16	0
-	.	15	0
-	+	2	48
-	+	3	45
-	+	5	50
-	+	12	39
-	+	9	0
-	+	10	36
-	+	11	0
-	+	13	40
-	+	6	45
-	+	7	8
-	+	5	29
-	+	2	49
-	+	3	44
-	+	10	34
-	+	14	59
-	+	16	12
-	+	5	43
-	+	24	83
-	+	24	0
-	+	24	94
-	+	23	10
-	+	22	0
-	+	23	60
-	+	24	57
-	+	23	47
-	+	23	86
-	+	24	83
-	+	2	54
-	+	3	51
-	+	26	127
-	+	26	89
-	+	5	0
-	+	10	37
-	+	14	17
-	+	15	27
-	+	17	5
-	+	27	41
-	+	28	5
-	+	28	33
-	+	27	25
-	+	27	36
-	+	23	0
-	+	17	0
-	+	9	0
-	+	2	0
-	+	23	0
-	+	24	103
-	+	24	0
-	+	29	0
-	+	30	0
-	+	4	25
-	+	23	34
-	+	24	31
-	+	23	40
-	+	24	36
-	+	23	40
-	+	24	50
-	+	25	40
-	+	25	39
-	+	26	0
-	+	25	0
-	+	19	0
-	+	18	8
-	+	19	22
-	+	20	25
-	+	22	0
-	+	21	183
-	+	21	8
-	+	21	40
-	+	21	23
-	+	21	21
-	+	21	34
-	+	21	25
-	+	21	8
-	+	15	0
-
-> ~/hateoas/templates/base.html
-	*	1721311045	0
-	"	23	50
-	^	23	51
-	.	23	50
-	+	29	0
-	+	25	0
-	+	4	50
-	+	12	78
-	+	25	0
-	+	25	8
-	+	4	0
-	+	25	0
-	+	28	0
-	+	29	0
-	+	27	20
-	+	28	0
-	+	27	12
-	+	27	0
-	+	27	55
-	+	27	67
-	+	27	0
-	+	14	9
-	+	12	11
-	+	12	0
-	+	14	0
-	+	12	0
-	+	12	96
-	+	12	0
-	+	4	0
-	+	12	8
-	+	12	97
-	+	12	0
-	+	6	0
-	+	12	0
-	+	5	0
-	+	26	0
-	+	12	0
-	+	26	7
-	+	26	0
-	+	26	26
-	+	26	16
-	+	26	0
-	+	12	0
-	+	14	0
-	+	26	0
-	+	15	0
-	+	16	0
-	+	5	37
-	+	5	53
-	+	6	37
-	+	11	0
-	+	7	0
-	+	11	0
-	+	8	68
-	+	11	0
-	+	9	68
-	+	10	8
-	+	6	0
-	+	8	86
-	+	9	86
-	+	23	50
 
 > ~/.Xmodmap
 	*	1721309443	0
@@ -22087,29 +22583,6 @@ $\=strftime("%c", submatch(1))
 	+	10	7
 	+	16	18
 	+	18	14
-
-> ~/ui-components-css/ui-components-css.todo
-	*	1721236481	0
-	"	8	0
-	^	4	43
-	.	4	42
-	+	3	0
-	+	5	4
-	+	9	0
-	+	8	12
-	+	5	0
-	+	8	0
-	+	6	6
-	+	8	0
-	+	7	24
-	+	8	0
-	+	1	0
-	+	2	14
-	+	6	11
-	+	5	16
-	+	9	0
-	+	7	25
-	+	4	42
 
 > ~/pyscripts/viewlog.py
 	*	1721236415	0
@@ -26682,49 +27155,6 @@ $\=strftime("%c", submatch(1))
 	+	16	30
 	+	18	0
 	+	17	15
-
-> ~/hateoas/Types.py
-	*	1717609754	0
-	"	25	8
-	^	47	168
-	.	46	15
-	+	15	20
-	+	13	0
-	+	15	23
-	+	16	8
-	+	15	0
-	+	21	0
-	+	14	0
-	+	22	21
-	+	42	8
-	+	23	8
-	+	23	35
-	+	24	36
-	+	25	102
-	+	26	41
-	+	27	15
-	+	23	0
-	+	27	38
-	+	27	15
-	+	27	41
-	+	27	35
-	+	27	83
-	+	26	0
-	+	25	66
-	+	26	23
-	+	27	117
-	+	27	19
-	+	28	84
-	+	29	25
-	+	31	30
-	+	32	103
-	+	33	31
-	+	34	23
-	+	35	8
-	+	37	26
-	+	38	44
-	+	46	11
-	+	46	15
 
 > ~/.vim/plugin/paths.vim
 	*	1717232319	0
@@ -31772,77 +32202,6 @@ $\=strftime("%c", submatch(1))
 	+	52	0
 	+	34	4
 	+	53	0
-
-> ~/hateoas/migrations/240424_2151_portionurls-user_id.py
-	*	1713847075	0
-	"	1	0
-	.	6	0
-	+	4	30
-	+	7	38
-	+	8	48
-	+	12	8
-	+	14	29
-	+	22	0
-	+	14	9
-	+	22	0
-	+	14	9
-	+	15	65
-	+	15	82
-	+	22	0
-	+	15	18
-	+	22	0
-	+	13	13
-	+	16	29
-	+	22	0
-	+	17	56
-	+	22	0
-	+	17	106
-	+	22	0
-	+	22	10
-	+	17	54
-	+	22	77
-	+	17	112
-	+	17	6
-	+	17	0
-	+	22	0
-	+	22	5
-	+	22	17
-	+	4	7
-	+	22	0
-	+	4	6
-	+	6	0
-	+	6	31
-	+	4	33
-	+	6	34
-	+	4	0
-	+	4	10
-	+	4	0
-	+	6	0
-	+	4	0
-	+	3	0
-	+	4	5
-	+	17	74
-	+	22	10
-	+	17	6
-	+	18	11
-	+	19	4
-	+	21	0
-	+	22	0
-	+	18	20
-	+	19	4
-	+	21	68
-	+	21	69
-	+	21	0
-	+	11	0
-	+	21	0
-	+	10	0
-	+	11	65
-	+	11	0
-	+	6	21
-	+	6	0
-	+	6	4
-	+	6	5
-	+	6	0
 
 > ~/hateoas/test-memory.py
 	*	1713791013	0
