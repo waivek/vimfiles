@@ -1,0 +1,19 @@
+language: viml
+problem: I am trying to write a function for <CTRL-E> and <CTRL-Y>. when i press CTRL-E, it takes the position of the cursor, goes one line down and takes the character at the same position of the cursor and yanks from the cursor till word end and then all the trailing whitespaces after it as well. it then goes back to the first line and pastes this partial / complete word. should handle multibyte characters gracefully
+
+IMPORTANT: HANDLE MULTI-BYTE CHARACTERS
+
+example:
+
+line 1:   .
+line 2: abc def ghi
+
+in the above case the cursor is at the dot. when i press <CTRL-E>, it should insert `c `. when i press <CTRL-E> again it should insert `def `. on pressing it again it should insert `ghi`. pressing <CTRL-E> again shouldn’t insert any text
+
+function definition: 
+function s:GetWordToInsert(current_line, adjacent_line, cursor_index)
+
+function call example:
+imap <expr> <C-y> <SID>GetWordToInsert(getline('.'), getline(line('.') - 1), col('.') - 1)
+
+

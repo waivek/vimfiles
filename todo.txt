@@ -1,9 +1,13 @@
+  240813 - better.vim      - Fix `k and `l better changelist overflows
+  240810 - [feature]       - tmux/vimterminal integration via a two hotkeys for switching and cycling
+✓ 240810 - insert_word.vim - Doesn’t work when line below has multi-byte character.
 ✓ 240810 - todo.vim        - If the line starts with two spaces and a date instead of just a date, don’t insert a tick on <TAB>, replace the first space with a tick
 ✓ 240810 - todo.vim        - Add visual mode for marking tasks as done via <TAB>
   240810 - mru.vim         - If we have multiple matches with same basename, the popup should show `{dir}/basename` instead of just `basename`. Test case: `:MRU todo.txt`
 ✓ 240810 - insert_word.vim - Wordwise completion for CTRL-E and CTRL-Y with leading whitespace completion
 ✓ 240810 - ide.vim         - Wordwise completion for copilot suggestions
-  240810 - <None>          - Create harpoon type shortcut for switching between main 3-4 files via `h`
+✓ 240810 - insert_word.vim - Wordwise completion for CTRL-E and CTRL-Y with leading whitespace completion
+  240810 - [feature]       - Create harpoon type shortcut for switching between main 3-4 files via `h`
   240810 - better.vim      - Create mapping for `JPrevious`
   240810 - better.vim      - `JPrevious` should possible ignore empty buffers and have a better shortcut
   240806 - todo.vim        - Prevent `Syntax function` overrides from breaking global syntax fn. E.g., switching b/w a `*.py` file and a `todo.txt`

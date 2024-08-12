@@ -89,7 +89,7 @@ function! s:ExtractArguments()
         return
     endif
     call map(signatures, { _, signature -> substitute(trim(signature), '=.*', '', '')})
-    let assignments = map(copy(signatures), { _, variable_name -> printf('let %s = a:%s', trim(variable_name), trim(variable_name)) })
+    let assignments = map(copy(signatures), { _, variable_name -> printf('let l:%s = a:%s', trim(variable_name), trim(variable_name)) })
     let @" = join(assignments, "\n")
     put=@"
     normal! `[v`]=

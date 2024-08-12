@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/\C\<new_line_length\>
+~MSle0~/jprevious
 
 # Last Substitute Search Pattern:
 ~MSle0&: Time
@@ -21,29 +21,237 @@ $
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1723279443,,"q"
+|2,0,1723487966,,"q"
+:e errors.vim
+|2,0,1723487961,,"e errors.vim"
+:MRU 733:hateoas/todo.txt
+|2,0,1723487775,,"MRU 733:hateoas/todo.txt"
+:MRU 29:waivek/todo.txt
+|2,0,1723487770,,"MRU 29:waivek/todo.txt"
+:Date
+|2,0,1723487712,,"Date"
+:e ../todo.txt
+|2,0,1723487701,,"e ../todo.txt"
+:bd
+|2,0,1723487693,,"bd"
+:e ../todo/
+|2,0,1723481527,,"e ../todo/"
+:e to
+|2,0,1723481523,,"e to"
+:verbose let v:errmsg
+|2,0,1723474777,,"verbose let v:errmsg"
+:verbose set v:errmsg
+|2,0,1723474772,,"verbose set v:errmsg"
+:b!# | bd! #
+|2,0,1723474758,,"b!# | bd! #"
 :so %
-|2,0,1723278862,,"so %"
+|2,0,1723474747,,"so %"
+:Isolate /v:\w*/
+|2,0,1723474697,,"Isolate /v:\\w*/"
+:enew
+|2,0,1723474689,,"enew"
+:cn
+|2,0,1723474672,,"cn"
+:helpgrep v:throwpoint
+|2,0,1723474669,,"helpgrep v:throwpoint"
+:h error-
+|2,0,1723474663,,"h error-"
+:h i_CTRL-L
+|2,0,1723474465,,"h i_CTRL-L"
+:e ~/.vim/tmp/insert_word_test_cases.txt
+|2,0,1723474278,,"e ~/.vim/tmp/insert_word_test_cases.txt"
+:b isnert_word_test_cases.txt
+|2,0,1723474181,,"b isnert_word_test_cases.txt"
+:filter /[gG]reen/ hi
+|2,0,1723474018,,"filter /[gG]reen/ hi"
+:hi
+|2,0,1723473997,,"hi"
+:hi ErrorMsg
+|2,0,1723473907,,"hi ErrorMsg"
+:so 
+|2,0,1723473827,,"so "
+:Tab/len(
+|2,0,1723473671,,"Tab/len("
+:e isnert_word_test_cases.txt
+|2,0,1723473666,,"e isnert_word_test_cases.txt"
+:e isnert_word_test_cases.Tab/len(
+|2,0,1723473658,,"e isnert_word_test_cases.Tab/len("
+:e *.txt
+|2,0,1723473654,,"e *.txt"
+:e file.txt
+|2,0,1723473644,,"e file.txt"
+:e insert_word_prompt.txt
+|2,0,1723473634,,"e insert_word_prompt.txt"
+:e ide-python-variable-debug-helper.vim
+|2,0,1723473628,,"e ide-python-variable-debug-helper.vim"
+:MRU insert_w
+|2,0,1723472588,,"MRU insert_w"
+:h digraph
+|2,0,1723472175,,"h digraph"
+:reg
+|2,0,1723472069,,"reg"
+:MRU prog
+|2,0,1723472058,,"MRU prog"
+:MRU 3:errors.vim
+|2,0,1723472056,,"MRU 3:errors.vim"
+:bd!
+|2,0,1723472054,,"bd!"
+:MRU 
+|2,0,1723472053,,"MRU "
+:q!
+|2,0,1723463367,,"q!"
+:e waivek/error.py
+|2,0,1723463349,,"e waivek/error.py"
+:e erro
+|2,0,1723463346,,"e erro"
+:filter /Warning/ hi
+|2,0,1723463247,,"filter /Warning/ hi"
+:filter /bold/ hi
+|2,0,1723463243,,"filter /bold/ hi"
+:filter /Error/ hi
+|2,0,1723463096,,"filter /Error/ hi"
+:filter // hi
+|2,0,1723463081,,"filter // hi"
+:Capture hi
+|2,0,1723463072,,"Capture hi"
+:hl
+|2,0,1723463063,,"hl"
+:so T
+|2,0,1723462932,,"so T"
+:h echohl
+|2,0,1723462489,,"h echohl"
+:helpgrep echohl
+|2,0,1723462289,,"helpgrep echohl"
+:h ansi
+|2,0,1723461896,,"h ansi"
+:!start % 
+|2,0,1723461710,,"!start % "
+:pwd
+|2,0,1723461583,,"pwd"
+:MRU error.py
+|2,0,1723461563,,"MRU error.py"
+:s
+|2,0,1723460468,,"s"
+:h index(
+|2,0,1723460325,,"h index("
+:ExtractArguments
+|2,0,1723460107,,"ExtractArguments"
+:10
+|2,0,1723459861,,"10"
+:MRU uti
+|2,0,1723457912,,"MRU uti"
+:MRU run
+|2,0,1723457831,,"MRU run"
+:h run.vim
+|2,0,1723457829,,"h run.vim"
+:h List
+|2,0,1723457741,,"h List"
+:h strpart(
+|2,0,1723457734,,"h strpart("
+:e insert_word_2.vim
+|2,0,1723457721,,"e insert_word_2.vim"
+:h =
+|2,0,1723457692,,"h ="
+:h assi
+|2,0,1723457691,,"h assi"
+:h map-self-destroy
+|2,0,1723457688,,"h map-self-destroy"
+:h g:ale_python_pycodestyle_options
+|2,0,1723457685,,"h g:ale_python_pycodestyle_options"
+:e foo.py
+|2,0,1723457333,,"e foo.py"
+:h builtin
+|2,0,1723456168,,"h builtin"
+:h >frame
+|2,0,1723456164,,"h >frame"
+:h frame
+|2,0,1723456159,,"h frame"
+:MRU 137:autoload/utils.vim
+|2,0,1723456084,,"MRU 137:autoload/utils.vim"
+:e 
+|2,0,1723456081,,"e "
+:verbose function <SNR>44_LineNumber
+|2,0,1723456022,,"verbose function <SNR>44_LineNumber"
+:verbose function <SNR>44_UseListAsString
+|2,0,1723455998,,"verbose function <SNR>44_UseListAsString"
+:function <SNR>44_UseListAsString
+|2,0,1723455992,,"function <SNR>44_UseListAsString"
+:helpgrep throwpoint
+|2,0,1723455850,,"helpgrep throwpoint"
+:h :highlight
+|2,0,1723455251,,"h :highlight"
+:qa
+|2,0,1723455234,,"qa"
+:filter /todo/ scriptnames
+|2,0,1723455229,,"filter /todo/ scriptnames"
+:Capture verbose hi Function
+|2,0,1723455201,,"Capture verbose hi Function"
+:verbose hi Function
+|2,0,1723455186,,"verbose hi Function"
+:hi Function
+|2,0,1723455182,,"hi Function"
+:h errors
+|2,0,1723455133,,"h errors"
+:h v:errors
+|2,0,1723455121,,"h v:errors"
+:e insert_word.vim
+|2,0,1723419992,,"e insert_word.vim"
+:e!
+|2,0,1723419978,,"e!"
+:MRU date
+|2,0,1723419956,,"MRU date"
+:set nowrap
+|2,0,1723419906,,"set nowrap"
+:MRU py
+|2,0,1723419464,,"MRU py"
+:set wrap
+|2,0,1723418688,,"set wrap"
+:so%
+|2,0,1723418327,,"so%"
+:Jprevious
+|2,0,1723417832,,"Jprevious"
+:e dotty.vim
+|2,0,1723417822,,"e dotty.vim"
+:e dotty_debug.txt
+|2,0,1723417816,,"e dotty_debug.txt"
+:MRU debug
+|2,0,1723417814,,"MRU debug"
+:HotReload
+|2,0,1723384131,,"HotReload"
+:LogPrettyPrintLine
+|2,0,1723329501,,"LogPrettyPrintLine"
+:MRU bas
+|2,0,1723329377,,"MRU bas"
+:e _python-argcomplete
+|2,0,1723329376,,"e _python-argcomplete"
+:LogPrettifyFile
+|2,0,1723329328,,"LogPrettifyFile"
+:!
+|2,0,1723282032,,"!"
+:term
+|2,0,1723282030,,"term"
+:Jlast
+|2,0,1723281942,,"Jlast"
+:e gh-timeago.bash
+|2,0,1723281777,,"e gh-timeago.bash"
+:set tw?
+|2,0,1723281097,,"set tw?"
+:h todo
+|2,0,1723280942,,"h todo"
 :Ftplugin
 |2,0,1723278427,,"Ftplugin"
 :e
 |2,0,1723278425,,"e"
 :MRU 132:python_common/waivek/todo.txt
 |2,0,1723278167,,"MRU 132:python_common/waivek/todo.txt"
-:bd!
-|2,0,1723277981,,"bd!"
 :MRU 342:ui-components-css/ui-components-css.todo
 |2,0,1723277964,,"MRU 342:ui-components-css/ui-components-css.todo"
-:e!
-|2,0,1723277960,,"e!"
 :MRU *.todo
 |2,0,1723277950,,"MRU *.todo"
 :find todo.txt
 |2,0,1723277888,,"find todo.txt"
 :set path?
 |2,0,1723277879,,"set path?"
-:pwd
-|2,0,1723277876,,"pwd"
 :Lines
 |2,0,1723277014,,"Lines"
 :Tod
@@ -54,20 +262,14 @@ $
 |2,0,1723276559,,"MRU todo.txt"
 :MRU 700:hateoas/todo.txt
 |2,0,1723276552,,"MRU 700:hateoas/todo.txt"
-:qa
-|2,0,1723276469,,"qa"
 :e pass.txt
 |2,0,1723276461,,"e pass.txt"
-:q!
-|2,0,1723276449,,"q!"
 :imap <expr> <C-e>
 |2,0,1723242379,,"imap <expr> <C-e>"
 :imap <expr>
 |2,0,1723242372,,"imap <expr>"
 :messages
 |2,0,1723241426,,"messages"
-:HotReload
-|2,0,1723241174,,"HotReload"
 :Capture PrintPersonalMappings
 |2,0,1723240758,,"Capture PrintPersonalMappings"
 :PrintPersonalMappings
@@ -82,8 +284,6 @@ $
 |2,0,1723240522,,"e .vim/mappings.vim"
 :e ~/.vim/plugin/insert_word.vim
 |2,0,1723240345,,"e ~/.vim/plugin/insert_word.vim"
-:Date
-|2,0,1723240164,,"Date"
 :imap <C-Y>
 |2,0,1723240137,,"imap <C-Y>"
 :inoremap <C-Y> <Esc>klyiWjPa
@@ -102,26 +302,16 @@ $
 |2,0,1723239708,,"Capture verbose command Jprevious"
 :Capture verbose Jprevious
 |2,0,1723239697,,"Capture verbose Jprevious"
-:e gh-timeago.bash
-|2,0,1723131317,,"e gh-timeago.bash"
 :e1
 |2,0,1723131219,,"e1"
-:LogPrettifyFile
-|2,0,1723101174,,"LogPrettifyFile"
 :e ui-components-css/static/css-themes/dark-gray-mono.css
 |2,0,1723100747,,"e ui-components-css/static/css-themes/dark-gray-mono.css"
 :e hateoas-api.py
 |2,0,1723065835,,"e hateoas-api.py"
 :b migrations/2400808_portionurls-resync.py
 |2,0,1723065727,,"b migrations/2400808_portionurls-resync.py"
-:MRU 
-|2,0,1723065724,,"MRU "
-:term
-|2,0,1723065311,,"term"
 :e main.sql
 |2,0,1723065179,,"e main.sql"
-:e 
-|2,0,1723065175,,"e "
 :e migrations/2400808_portionurls-resync.py
 |2,0,1723065164,,"e migrations/2400808_portionurls-resync.py"
 :e migrations/240424_2151_portionurls-user_id.py
@@ -156,14 +346,8 @@ $
 |2,0,1723015106,,"MRU python.sh"
 :b
 |2,0,1722987123,,"b"
-:LogPrettyPrintLine
-|2,0,1722987070,,"LogPrettyPrintLine"
 :LogWriteToDatabase
 |2,0,1722987022,,"LogWriteToDatabase"
-:bd
-|2,0,1722986945,,"bd"
-:b!# | bd! #
-|2,0,1722981601,,"b!# | bd! #"
 :e transcription_to_offset.py
 |2,0,1722981588,,"e transcription_to_offset.py"
 :CopyToHost
@@ -216,8 +400,6 @@ $
 |2,0,1722961634,,"Buff"
 :cpre
 |2,0,1722961627,,"cpre"
-:cn
-|2,0,1722961618,,"cn"
 :grep -g '*.vim' -g 'vimrc' --fixed-strings undo
 |2,0,1722961542,,"grep -g '*.vim' -g 'vimrc' --fixed-strings undo"
 :R
@@ -226,8 +408,6 @@ $
 |2,0,1722961518,,"grep -g '*.txt' --fixed-strings "
 :h undo
 |2,0,1722961506,,"h undo"
-:e dotty.vim
-|2,0,1722961434,,"e dotty.vim"
 :e ~/.vim/plugin/inline.vim
 |2,0,1722961308,,"e ~/.vim/plugin/inline.vim"
 :MRU inline.vim
@@ -254,8 +434,6 @@ $
 |2,0,1722888407,,"e ~/.vim/todo.txt"
 :ls
 |2,0,1722887121,,"ls"
-:Jprevious
-|2,0,1722887117,,"Jprevious"
 :e worker_utils.py
 |2,0,1722885907,,"e worker_utils.py"
 :e audio_sync.py
@@ -268,8 +446,6 @@ $
 |2,0,1722805352,,"s/"
 :v/:/d
 |2,0,1722805344,,"v/:/d"
-:enew
-|2,0,1722805336,,"enew"
 :e sync-helix-gql-notes.txt
 |2,0,1722805119,,"e sync-helix-gql-notes.txt"
 :MRU txt
@@ -332,8 +508,6 @@ $
 |2,0,1722772744,,"call CocActionAsync(\"refactor.inline\")"
 :call CocActionAsync('refactor.inline')
 |2,0,1722772728,,"call CocActionAsync('refactor.inline')"
-:MRU py
-|2,0,1722772646,,"MRU py"
 :call CocActionAsync('refactor')
 |2,0,1722772620,,"call CocActionAsync('refactor')"
 :C
@@ -544,8 +718,6 @@ $
 |2,0,1722540864,,"LocalSymbols"
 :e autoload/utils.vim
 |2,0,1722540436,,"e autoload/utils.vim"
-:h builtin
-|2,0,1722540160,,"h builtin"
 :h r
 |2,0,1722540157,,"h r"
 :e ~/.vim/plugin/ide-python-variable-debug-helper.vim
@@ -738,8 +910,6 @@ $
 |2,0,1722486863,,"filter /autoload/ scriptnames"
 :call utils#path_to_sid(
 |2,0,1722486686,,"call utils#path_to_sid("
-:so 
-|2,0,1722486668,,"so "
 :s/,//g
 |2,0,1722486603,,"s/,//g"
 :s/,/
@@ -896,8 +1066,6 @@ $
 |2,0,1722447889,,"MRU 2:table.py"
 :set nonumber
 |2,0,1722398839,,"set nonumber"
-:MRU run
-|2,0,1722398818,,"MRU run"
 :grep -g '*.py' rich.*Table
 |2,0,1722398164,,"grep -g '*.py' rich.*Table"
 :grep -g '*.py' --fixed-strings rich.*Table
@@ -1164,8 +1332,6 @@ $
 |2,0,1722142632,,"e edit.vim"
 :e mak
 |2,0,1722142332,,"e mak"
-:s
-|2,0,1722142279,,"s"
 :e library_name.txt
 |2,0,1722142096,,"e library_name.txt"
 :h v:fcs_reason
@@ -1332,16 +1498,10 @@ $
 |2,0,1722013949,,"e ~/tmp/echo.sh"
 :MRU env
 |2,0,1722013907,,"MRU env"
-:!
-|2,0,1722011913,,"!"
 :e 2199695545.json.gz
 |2,0,1722011282,,"e 2199695545.json.gz"
 :e a
 |2,0,1722011280,,"e a"
-:e to
-|2,0,1722010300,,"e to"
-:set wrap
-|2,0,1722009870,,"set wrap"
 :e prompt
 |2,0,1722009665,,"e prompt"
 :42
@@ -1824,8 +1984,6 @@ $
 |2,0,1720866906,,"e _tar_url_to_file.bash"
 :e bash_completions/_download_bat_completion.bash
 |2,0,1720866579,,"e bash_completions/_download_bat_completion.bash"
-:e _python-argcomplete
-|2,0,1720866573,,"e _python-argcomplete"
 :MRU se
 |2,0,1720866419,,"MRU se"
 :echo $DI
@@ -2022,8 +2180,6 @@ $
 |2,0,1719654646,,"e ~/tooling/git-knowledge.txt"
 :e .git/config
 |2,0,1719654602,,"e .git/config"
-:reg
-|2,0,1719653521,,"reg"
 :set ft=gitconfig
 |2,0,1719653222,,"set ft=gitconfig"
 :g/{/>
@@ -2438,8 +2594,6 @@ $
 |2,0,1718435228,,"hi ExistingFile cterm=underline"
 :hi clear ExistingFile
 |2,0,1718435211,,"hi clear ExistingFile"
-:hi
-|2,0,1718435110,,"hi"
 :hi ExistingFile
 |2,0,1718435105,,"hi ExistingFile"
 :syntax clear ExistingFile
@@ -3784,8 +3938,6 @@ $
 |2,0,1716098274,,"call CocAction('references')"
 :call 
 |2,0,1716098237,,"call "
-:h digraph
-|2,0,1716098083,,"h digraph"
 :e download_workers.sql
 |2,0,1716097965,,"e download_workers.sql"
 :e download_table.py
@@ -4022,8 +4174,6 @@ $
 |2,0,1714567533,,"let "
 :MRU 2:pyproject.toml
 |2,0,1714560970,,"MRU 2:pyproject.toml"
-:MRU bas
-|2,0,1714560830,,"MRU bas"
 :20
 |2,0,1714560537,,"20"
 :MRU test_tas
@@ -4580,8 +4730,6 @@ $
 |2,0,1713702557,,"e g"
 :e target.bash
 |2,0,1713697303,,"e target.bash"
-:Jlast
-|2,0,1713697146,,"Jlast"
 :Rename cron-run.bash
 |2,0,1713696787,,"Rename cron-run.bash"
 :e run-script.bash
@@ -6698,8 +6846,6 @@ $
 |2,0,1693554204,,"235"
 :MRU secre
 |2,0,1693521252,,"MRU secre"
-:set nowrap
-|2,0,1693520862,,"set nowrap"
 :e requirements_chat.txt
 |2,0,1693520783,,"e requirements_chat.txt"
 :e schema/videos.sql
@@ -6820,8 +6966,6 @@ $
 |2,0,1693323848,,"MRU 12:terminal.txt"
 :MRU 139:node_modules\pyright\dist\typeshed-fallback\stubs\Flask-SQLAlchemy\flask_sqlalchemy\__init__.pyi
 |2,0,1693323831,,"MRU 139:node_modules\\pyright\\dist\\typeshed-fallback\\stubs\\Flask-SQLAlchemy\\flask_sqlalchemy\\__init__.pyi"
-:so%
-|2,0,1693323378,,"so%"
 :m
 |2,0,1693323244,,"m"
 :MRU mr
@@ -7016,8 +7160,6 @@ $
 |2,0,1693070902,,"MRU movie"
 :MRU too
 |2,0,1693060354,,"MRU too"
-:set tw?
-|2,0,1693060217,,"set tw?"
 :cener
 |2,0,1693060204,,"cener"
 :e src/shims-vue.d.ts
@@ -7118,8 +7260,6 @@ $
 |2,0,1692813994,,"e ../Actions.vue"
 :e Actions
 |2,0,1692813991,,"e Actions"
-:MRU uti
-|2,0,1692813895,,"MRU uti"
 :b files
 |2,0,1692811628,,"b files"
 :MRU files
@@ -7598,8 +7738,6 @@ $
 |2,0,1692339482,,"grep -g '*.py' "
 :65
 |2,0,1692337601,,"65"
-:10
-|2,0,1692300190,,"10"
 :e er
 |2,0,1692300164,,"e er"
 :e duration.py
@@ -9058,6 +9196,48 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/jprevious
+|2,1,1723487706,47,"jprevious"
+? @$
+|2,1,1723487691,,"@$"
+? v:\w*
+|2,1,1723474697,,"v:\\w*"
+?/v:
+|2,1,1723474679,47,"v:"
+?/current_line
+|2,1,1723473715,47,"current_line"
+?/len(
+|2,1,1723473576,47,"len("
+?/rounded
+|2,1,1723472192,47,"rounded"
+?/n
+|2,1,1723472186,47,"n"
+?/box drawing
+|2,1,1723472120,47,"box drawing"
+?/signature
+|2,1,1723461241,47,"signature"
+?/call
+|2,1,1723460237,47,"call"
+?/filepath
+|2,1,1723459877,47,"filepath"
+?/lnum
+|2,1,1723459821,47,"lnum"
+?/frame
+|2,1,1723456169,47,"frame"
+?/local
+|2,1,1723455253,47,"local"
+?/\>
+|2,1,1723419512,47,"\\>"
+?/^\s*function!\?\s\+\(s:\)\?\(\w\+#\)\?\w*Tokenize
+|2,1,1723418167,47,"^\\s*function!\\?\\s\\+\\(s:\\)\\?\\(\\w\\+#\\)\\?\\w*Tokenize"
+?/shift
+|2,1,1723417106,47,"shift"
+?/bitwise
+|2,1,1723417096,47,"bitwise"
+? ^\(\d\+\)
+|2,1,1723329328,,"^\\(\\d\\+\\)"
+?/GH
+|2,1,1723327204,47,"GH"
 ?/TAB
 |2,1,1723277899,47,"TAB"
 ?/<TAB
@@ -9072,10 +9252,6 @@ $
 |2,1,1723240762,47,"<Plug>"
 ?/below the cursor
 |2,1,1723239827,47,"below the cursor"
-? @$
-|2,1,1723198165,,"@$"
-? ^\(\d\+\)
-|2,1,1723101174,,"^\\(\\d\\+\\)"
 ?/Resync
 |2,1,1723100828,47,"Resync"
 ?/\(def\|class\)\s\+\w*view_po
@@ -9342,8 +9518,6 @@ $
 |2,1,1722486419,47,"^\\s*function!\\?\\s\\+\\(s:\\)\\?\\(\\w\\+#\\)\\?\\w*begin"
 ?/c
 |2,1,1722486412,47,"c"
-?/lnum
-|2,1,1722481027,47,"lnum"
 ?/sort(
 |2,1,1722480779,47,"sort("
 ?/order
@@ -11000,8 +11174,6 @@ $
 |2,1,1716622633,47,"https"
 ?/Raw
 |2,1,1716621397,47,"Raw"
-?/n
-|2,1,1716621133,47,"n"
 ?/back
 |2,1,1716620291,47,"back"
 ?/backgr
@@ -12266,8 +12438,6 @@ $
 |2,1,1693516388,47,"import chat"
 ?/never used
 |2,1,1693516086,47,"never used"
-?/local
-|2,1,1693516061,47,"local"
 ?/wavek
 |2,1,1693515510,47,"wavek"
 ?/CONFIG
@@ -12786,8 +12956,6 @@ $
 |2,1,1691101975,47,"mkdir"
 ?/makedi
 |2,1,1691101962,47,"makedi"
-?/filepath
-|2,1,1691099987,47,"filepath"
 ?/path\.
 |2,1,1691099966,47,"path\\."
 ?/googleapis
@@ -12902,8 +13070,6 @@ $
 |2,1,1690766163,47,"slate"
 ?/create portion
 |2,1,1690765852,47,"create portion"
-?/rounded
-|2,1,1690765767,47,"rounded"
 ?/\C\<set\>
 |2,1,1690765250,47,"\\C\\<set\\>"
 ?/\C\<Embed\>
@@ -13072,8 +13238,6 @@ $
 |2,1,1688532381,47,"sl"
 ?/videos\.db
 |2,1,1688491803,47,"videos\\.db"
-?/\>
-|2,1,1688491063,47,"\\>"
 ?/helix.*video
 |2,1,1688489239,47,"helix.*video"
 ?/mrucom
@@ -13196,6 +13360,10 @@ $
 |2,2,1688309303,,"v:oldfiles"
 
 # Input Line History (newest to oldest):
+@trim
+|2,3,1723461284,,"trim"
+@string
+|2,3,1723417301,,"string"
 @div class="tall">
 |2,3,1723065981,,"div class=\"tall\">"
 @div>
@@ -13212,8 +13380,6 @@ $
 |2,3,1722284732,,"hhmmss"
 @li>
 |2,3,1722197988,,"li>"
-@trim
-|2,3,1722108837,,"trim"
 @str2nr
 |2,3,1722106985,,"str2nr"
 @gzip.open
@@ -13314,8 +13480,6 @@ $
 |2,3,1692813646,,"template>"
 @div class="">
 |2,3,1692730434,,"div class=\"\">"
-@string
-|2,3,1692695156,,"string"
 @unpack
 |2,3,1692363314,,"unpack"
 @len
@@ -13365,38 +13529,38 @@ $
 
 # Registers:
 "0	CHAR	0
-	 
-|3,0,0,0,1,0,1723278860," "
-""1	LINE	0
+	g;
+|3,0,0,0,1,0,1723487755,"g;"
+"1	LINE	0
 	✓ 240810 - ide.vim         - Wordwise completion for copilot suggestions
-|3,1,1,1,1,0,1723279407,"✓ 240810 - ide.vim         - Wordwise completion for copilot suggestions"
+|3,0,1,1,1,0,1723482471,"✓ 240810 - ide.vim         - Wordwise completion for copilot suggestions"
 "2	LINE	0
-	    let l:position_save = getpos(".")
-|3,0,2,1,1,0,1723278756,"    let l:position_save = getpos(\".\")"
+	  240810 - [feature]       - 
+|3,0,2,1,1,0,1723481540,"  240810 - [feature]       - "
 "3	LINE	0
-	    call setpos(".", l:position_save)
-|3,0,3,1,1,0,1723278754,"    call setpos(\".\", l:position_save)"
+	        echo
+|3,0,3,1,1,0,1723481520,"        echo"
 "4	LINE	0
-	    call setpos(".", l:position_save)
-|3,0,4,1,1,0,1723278702,"    call setpos(\".\", l:position_save)"
+	        echo printf("v:errors: `%s`\n", v:errors)
+|3,0,4,1,1,0,1723481516,"        echo printf(\"v:errors: `%s`\\n\", v:errors)"
 "5	LINE	0
-	    let l:position_save = getpos(".")
-|3,0,5,1,1,0,1723278701,"    let l:position_save = getpos(\".\")"
+	    :vim_did_enter
+|3,0,5,1,1,0,1723481512,"    :vim_did_enter"
 "6	LINE	0
-	
-|3,0,6,1,1,0,1723278680,""
+	    echo printf("v:errors: `%s`\n", v:errors)
+|3,0,6,1,1,0,1723474807,"    echo printf(\"v:errors: `%s`\\n\", v:errors)"
 "7	LINE	0
-	
-|3,0,7,1,1,0,1723278679,""
+	        echo printf("v:errmsg: `%s`\n", v:errmsg)
+|3,0,7,1,1,0,1723474804,"        echo printf(\"v:errmsg: `%s`\\n\", v:errmsg)"
 "8	LINE	0
-	    let l:view_save = winsaveview()
-|3,0,8,1,1,0,1723278645,"    let l:view_save = winsaveview()"
+	        echo
+|3,0,8,1,1,0,1723474722,"        echo"
 "9	LINE	0
-	    call winrestview(l:view_save)
-|3,0,9,1,1,0,1723278643,"    call winrestview(l:view_save)"
+	 vim:tw=78:ts=8:noet:ft=help:norl:
+|3,0,9,1,1,0,1723474697," vim:tw=78:ts=8:noet:ft=help:norl:"
 "a	CHAR	0
 	Tabularize /-/r1c1l1c1l1
-|3,0,10,0,1,0,1723278860,"Tabularize /-/r1c1l1c1l1"
+|3,0,10,0,1,0,1723460197,"Tabularize /-/r1c1l1c1l1"
 "j	CHAR	0
 	kl
 |3,0,19,0,1,0,1721238341,"kl"
@@ -13407,305 +13571,1609 @@ $
 	llll
 |3,0,21,0,1,0,1723276447,"llll"
 "s	LINE	0
-	# venv/
-	# build/
-	# dist/
-	# *.egg-info/
-	# aget_cache/
-	# errors/
-	# __pycache__/
-	# texts/
-	# .direnv/
-	# data/
-	# !.gitkeep
-|3,0,28,1,11,0,1722782825,"# venv/","# build/","# dist/","# *.egg-info/","# aget_cache/","# errors/","# __pycache__/","# texts/","# .direnv/","# data/","# !.gitkeep"
-"-	CHAR	0
-	 
-|3,0,36,0,1,0,1723278847," "
+	     ╭────────── https://x.com/ChShersh/status/1821107578769993980 ──────────╮
+	     │                                                                       │
+	     ├── linter                                                              │
+	     ├── formatter                                                           │
+	     ├── build tool                                                          │
+	     ├── library: cli parser, server, http client                            │
+	     │                                                                       │
+	     ╰───────────────────────────────────────────────────────────────────────╯
+	
+|3,0,28,1,9,0,1723472476,"     ╭────────── https://x.com/ChShersh/status/1821107578769993980 ──────────╮","     │                                                                       │","     ├── linter                                                              │","     ├── formatter                                                           │",>88
+|<"     ├── build tool                                                          │","     ├── library: cli parser, server, http client                            │","     │                                                                       │","     ╰───────────────────────────────────────────────────────────────────────╯",>2
+|<""
+""-	CHAR	0
+	✓ 
+|3,1,36,0,1,0,1723487762,"✓ "
 
 # File marks:
-'0  13  38  ~/.vim/todo.txt
-|4,48,13,38,1723279444,"~/.vim/todo.txt"
-'1  63  20  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,49,63,20,1723276488,"~/.vim/edit-plugin/sqlite-functions.vim"
-'2  63  20  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,50,63,20,1723276488,"~/.vim/edit-plugin/sqlite-functions.vim"
-'3  1  0  ~/.vim/edit-plugin/fail.txt
-|4,51,1,0,1723276470,"~/.vim/edit-plugin/fail.txt"
-'4  1  0  ~/.vim/edit-plugin/fail.txt
-|4,52,1,0,1723276470,"~/.vim/edit-plugin/fail.txt"
-'5  1  0  ~/.vim/edit-plugin/fail.txt
-|4,53,1,0,1723276470,"~/.vim/edit-plugin/fail.txt"
-'6  1  0  ~/.vim/edit-plugin/fail.txt
-|4,54,1,0,1723276470,"~/.vim/edit-plugin/fail.txt"
-'7  66  0  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,55,66,0,1723276452,"~/.vim/edit-plugin/sqlite-functions.vim"
-'8  66  0  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,56,66,0,1723276452,"~/.vim/edit-plugin/sqlite-functions.vim"
-'9  66  0  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,57,66,0,1723276452,"~/.vim/edit-plugin/sqlite-functions.vim"
+'0  1  0  ~/.vim/plugin/errors.vim
+|4,48,1,0,1723487966,"~/.vim/plugin/errors.vim"
+'1  145  4  ~/.vim/plugin/errors.vim
+|4,49,145,4,1723463336,"~/.vim/plugin/errors.vim"
+'2  145  4  ~/.vim/plugin/errors.vim
+|4,50,145,4,1723463336,"~/.vim/plugin/errors.vim"
+'3  145  4  ~/.vim/plugin/errors.vim
+|4,51,145,4,1723463336,"~/.vim/plugin/errors.vim"
+'4  145  4  ~/.vim/plugin/errors.vim
+|4,52,145,4,1723463336,"~/.vim/plugin/errors.vim"
+'5  455  9  ~/python_common/waivek/error.py
+|4,53,455,9,1723461586,"~/python_common/waivek/error.py"
+'6  455  9  ~/python_common/waivek/error.py
+|4,54,455,9,1723461586,"~/python_common/waivek/error.py"
+'7  455  9  ~/python_common/waivek/error.py
+|4,55,455,9,1723461586,"~/python_common/waivek/error.py"
+'8  455  9  ~/python_common/waivek/error.py
+|4,56,455,9,1723461586,"~/python_common/waivek/error.py"
+'9  455  9  ~/python_common/waivek/error.py
+|4,57,455,9,1723461586,"~/python_common/waivek/error.py"
 
 # Jumplist (newest first):
--'  13  38  ~/.vim/todo.txt
-|4,39,13,38,1723279444,"~/.vim/todo.txt"
--'  3  0  ~/.vim/todo.txt
-|4,39,3,0,1723278861,"~/.vim/todo.txt"
--'  6  84  ~/.vim/todo.txt
-|4,39,6,84,1723278826,"~/.vim/todo.txt"
--'  4  0  ~/.vim/todo.txt
-|4,39,4,0,1723278817,"~/.vim/todo.txt"
--'  2  0  ~/.vim/todo.txt
-|4,39,2,0,1723278809,"~/.vim/todo.txt"
--'  54  0  ~/.vim/ftplugin/todo.vim
-|4,39,54,0,1723278756,"~/.vim/ftplugin/todo.vim"
--'  67  0  ~/.vim/ftplugin/todo.vim
-|4,39,67,0,1723278753,"~/.vim/ftplugin/todo.vim"
--'  63  9  ~/.vim/ftplugin/todo.vim
-|4,39,63,9,1723278749,"~/.vim/ftplugin/todo.vim"
--'  46  4  ~/.vim/ftplugin/todo.vim
-|4,39,46,4,1723278749,"~/.vim/ftplugin/todo.vim"
--'  57  0  ~/.vim/ftplugin/todo.vim
-|4,39,57,0,1723278710,"~/.vim/ftplugin/todo.vim"
--'  41  17  ~/.vim/ftplugin/todo.vim
-|4,39,41,17,1723278628,"~/.vim/ftplugin/todo.vim"
--'  1  0  ~/.vim/todo.txt
-|4,39,1,0,1723278542,"~/.vim/todo.txt"
--'  16  0  ~/.vim/todo.txt
-|4,39,16,0,1723278540,"~/.vim/todo.txt"
--'  8  0  ~/.vim/todo.txt
-|4,39,8,0,1723278532,"~/.vim/todo.txt"
--'  66  22  ~/.vim/ftplugin/todo.vim
-|4,39,66,22,1723278522,"~/.vim/ftplugin/todo.vim"
--'  2  0  ~/python_common/waivek/todo.txt
-|4,39,2,0,1723278423,"~/python_common/waivek/todo.txt"
--'  14  20  ~/.vim/todo.txt
-|4,39,14,20,1723278384,"~/.vim/todo.txt"
--'  1  0  ~/python_common/waivek/todo.txt
-|4,39,1,0,1723278195,"~/python_common/waivek/todo.txt"
--'  27  54  ~/.vim/ftplugin/todo.vim
-|4,39,27,54,1723278147,"~/.vim/ftplugin/todo.vim"
--'  31  46  ~/.vim/ftplugin/todo.vim
-|4,39,31,46,1723278100,"~/.vim/ftplugin/todo.vim"
--'  40  17  ~/.vim/ftplugin/todo.vim
-|4,39,40,17,1723278044,"~/.vim/ftplugin/todo.vim"
--'  43  23  ~/.vim/ftplugin/todo.vim
-|4,39,43,23,1723278044,"~/.vim/ftplugin/todo.vim"
--'  38  8  ~/.vim/ftplugin/todo.vim
-|4,39,38,8,1723278043,"~/.vim/ftplugin/todo.vim"
--'  17  8  ~/.vim/ftplugin/todo.vim
-|4,39,17,8,1723277993,"~/.vim/ftplugin/todo.vim"
--'  1  0  ~/.vim/edit-plugin/edit-plugin.todo
-|4,39,1,0,1723277982,"~/.vim/edit-plugin/edit-plugin.todo"
--'  4  15  ~/ui-components-css/ui-components-css.todo
-|4,39,4,15,1723277981,"~/ui-components-css/ui-components-css.todo"
--'  15  10  ~/.vim/ftplugin/todo.vim
-|4,39,15,10,1723277942,"~/.vim/ftplugin/todo.vim"
--'  83  0  ~/.vim/ftplugin/todo.vim
-|4,39,83,0,1723277896,"~/.vim/ftplugin/todo.vim"
--'  1  0  ~/.vim/ftplugin/todo.vim
-|4,39,1,0,1723277894,"~/.vim/ftplugin/todo.vim"
--'  63  20  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,63,20,1723276488,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  63  20  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,63,20,1723276488,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  2  0  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,2,0,1723276476,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  2  0  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,2,0,1723276476,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  1  0  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,1,0,1723276475,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  1  0  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,1,0,1723276475,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  1  0  ~/.vim/edit-plugin/fail.txt
-|4,39,1,0,1723276470,"~/.vim/edit-plugin/fail.txt"
--'  1  0  ~/.vim/edit-plugin/fail.txt
-|4,39,1,0,1723276470,"~/.vim/edit-plugin/fail.txt"
--'  1  0  ~/.vim/edit-plugin/fail.txt
-|4,39,1,0,1723276470,"~/.vim/edit-plugin/fail.txt"
--'  66  0  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,66,0,1723276452,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  66  0  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,66,0,1723276452,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  66  0  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,66,0,1723276452,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  66  0  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,66,0,1723276452,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  1  0  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,1,0,1723276434,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  1  0  ~/.vim/edit-plugin/sqlite-functions.vim
-|4,39,1,0,1723276434,"~/.vim/edit-plugin/sqlite-functions.vim"
--'  80  11  ~/.vim/plugin/insert_word.vim
-|4,39,80,11,1723242426,"~/.vim/plugin/insert_word.vim"
--'  80  11  ~/.vim/plugin/insert_word.vim
-|4,39,80,11,1723242426,"~/.vim/plugin/insert_word.vim"
--'  80  11  ~/.vim/plugin/insert_word.vim
-|4,39,80,11,1723242426,"~/.vim/plugin/insert_word.vim"
--'  80  11  ~/.vim/plugin/insert_word.vim
-|4,39,80,11,1723242426,"~/.vim/plugin/insert_word.vim"
--'  79  47  ~/.vim/plugin/insert_word.vim
-|4,39,79,47,1723242340,"~/.vim/plugin/insert_word.vim"
--'  79  47  ~/.vim/plugin/insert_word.vim
-|4,39,79,47,1723242340,"~/.vim/plugin/insert_word.vim"
--'  79  47  ~/.vim/plugin/insert_word.vim
-|4,39,79,47,1723242340,"~/.vim/plugin/insert_word.vim"
--'  79  47  ~/.vim/plugin/insert_word.vim
-|4,39,79,47,1723242340,"~/.vim/plugin/insert_word.vim"
--'  76  0  ~/.vim/plugin/insert_word.vim
-|4,39,76,0,1723242333,"~/.vim/plugin/insert_word.vim"
--'  76  0  ~/.vim/plugin/insert_word.vim
-|4,39,76,0,1723242333,"~/.vim/plugin/insert_word.vim"
--'  76  0  ~/.vim/plugin/insert_word.vim
-|4,39,76,0,1723242333,"~/.vim/plugin/insert_word.vim"
--'  76  0  ~/.vim/plugin/insert_word.vim
-|4,39,76,0,1723242333,"~/.vim/plugin/insert_word.vim"
--'  71  5  ~/.vim/plugin/insert_word.vim
-|4,39,71,5,1723242298,"~/.vim/plugin/insert_word.vim"
--'  71  5  ~/.vim/plugin/insert_word.vim
-|4,39,71,5,1723242298,"~/.vim/plugin/insert_word.vim"
--'  71  5  ~/.vim/plugin/insert_word.vim
-|4,39,71,5,1723242298,"~/.vim/plugin/insert_word.vim"
--'  71  5  ~/.vim/plugin/insert_word.vim
-|4,39,71,5,1723242298,"~/.vim/plugin/insert_word.vim"
--'  64  4  ~/.vim/plugin/insert_word.vim
-|4,39,64,4,1723242291,"~/.vim/plugin/insert_word.vim"
--'  64  4  ~/.vim/plugin/insert_word.vim
-|4,39,64,4,1723242291,"~/.vim/plugin/insert_word.vim"
--'  64  4  ~/.vim/plugin/insert_word.vim
-|4,39,64,4,1723242291,"~/.vim/plugin/insert_word.vim"
--'  64  4  ~/.vim/plugin/insert_word.vim
-|4,39,64,4,1723242291,"~/.vim/plugin/insert_word.vim"
--'  32  0  ~/.vim/plugin/insert_word.vim
-|4,39,32,0,1723242289,"~/.vim/plugin/insert_word.vim"
--'  32  0  ~/.vim/plugin/insert_word.vim
-|4,39,32,0,1723242289,"~/.vim/plugin/insert_word.vim"
--'  32  0  ~/.vim/plugin/insert_word.vim
-|4,39,32,0,1723242289,"~/.vim/plugin/insert_word.vim"
--'  32  0  ~/.vim/plugin/insert_word.vim
-|4,39,32,0,1723242289,"~/.vim/plugin/insert_word.vim"
--'  70  0  ~/.vim/plugin/insert_word.vim
-|4,39,70,0,1723242283,"~/.vim/plugin/insert_word.vim"
--'  70  0  ~/.vim/plugin/insert_word.vim
-|4,39,70,0,1723242283,"~/.vim/plugin/insert_word.vim"
--'  70  0  ~/.vim/plugin/insert_word.vim
-|4,39,70,0,1723242283,"~/.vim/plugin/insert_word.vim"
--'  70  0  ~/.vim/plugin/insert_word.vim
-|4,39,70,0,1723242283,"~/.vim/plugin/insert_word.vim"
--'  77  0  ~/.vim/plugin/insert_word.vim
-|4,39,77,0,1723242282,"~/.vim/plugin/insert_word.vim"
--'  77  0  ~/.vim/plugin/insert_word.vim
-|4,39,77,0,1723242282,"~/.vim/plugin/insert_word.vim"
--'  77  0  ~/.vim/plugin/insert_word.vim
-|4,39,77,0,1723242282,"~/.vim/plugin/insert_word.vim"
--'  77  0  ~/.vim/plugin/insert_word.vim
-|4,39,77,0,1723242282,"~/.vim/plugin/insert_word.vim"
--'  73  0  ~/.vim/plugin/insert_word.vim
-|4,39,73,0,1723242277,"~/.vim/plugin/insert_word.vim"
--'  78  0  ~/.vim/plugin/insert_word.vim
-|4,39,78,0,1723242277,"~/.vim/plugin/insert_word.vim"
--'  73  0  ~/.vim/plugin/insert_word.vim
-|4,39,73,0,1723242277,"~/.vim/plugin/insert_word.vim"
--'  78  0  ~/.vim/plugin/insert_word.vim
-|4,39,78,0,1723242277,"~/.vim/plugin/insert_word.vim"
--'  73  0  ~/.vim/plugin/insert_word.vim
-|4,39,73,0,1723242277,"~/.vim/plugin/insert_word.vim"
--'  78  0  ~/.vim/plugin/insert_word.vim
-|4,39,78,0,1723242277,"~/.vim/plugin/insert_word.vim"
--'  73  0  ~/.vim/plugin/insert_word.vim
-|4,39,73,0,1723242277,"~/.vim/plugin/insert_word.vim"
--'  78  0  ~/.vim/plugin/insert_word.vim
-|4,39,78,0,1723242277,"~/.vim/plugin/insert_word.vim"
--'  66  10  ~/.vim/plugin/insert_word.vim
-|4,39,66,10,1723242194,"~/.vim/plugin/insert_word.vim"
--'  66  10  ~/.vim/plugin/insert_word.vim
-|4,39,66,10,1723242194,"~/.vim/plugin/insert_word.vim"
--'  66  10  ~/.vim/plugin/insert_word.vim
-|4,39,66,10,1723242194,"~/.vim/plugin/insert_word.vim"
--'  66  10  ~/.vim/plugin/insert_word.vim
-|4,39,66,10,1723242194,"~/.vim/plugin/insert_word.vim"
--'  62  4  ~/.vim/plugin/insert_word.vim
-|4,39,62,4,1723241970,"~/.vim/plugin/insert_word.vim"
--'  62  4  ~/.vim/plugin/insert_word.vim
-|4,39,62,4,1723241970,"~/.vim/plugin/insert_word.vim"
--'  62  4  ~/.vim/plugin/insert_word.vim
-|4,39,62,4,1723241970,"~/.vim/plugin/insert_word.vim"
--'  62  4  ~/.vim/plugin/insert_word.vim
-|4,39,62,4,1723241970,"~/.vim/plugin/insert_word.vim"
--'  44  65  ~/.vim/plugin/insert_word.vim
-|4,39,44,65,1723241824,"~/.vim/plugin/insert_word.vim"
--'  44  65  ~/.vim/plugin/insert_word.vim
-|4,39,44,65,1723241824,"~/.vim/plugin/insert_word.vim"
--'  44  65  ~/.vim/plugin/insert_word.vim
-|4,39,44,65,1723241824,"~/.vim/plugin/insert_word.vim"
--'  44  65  ~/.vim/plugin/insert_word.vim
-|4,39,44,65,1723241824,"~/.vim/plugin/insert_word.vim"
--'  36  12  ~/.vim/plugin/insert_word.vim
-|4,39,36,12,1723241813,"~/.vim/plugin/insert_word.vim"
--'  36  12  ~/.vim/plugin/insert_word.vim
-|4,39,36,12,1723241813,"~/.vim/plugin/insert_word.vim"
--'  36  12  ~/.vim/plugin/insert_word.vim
-|4,39,36,12,1723241813,"~/.vim/plugin/insert_word.vim"
--'  36  12  ~/.vim/plugin/insert_word.vim
-|4,39,36,12,1723241813,"~/.vim/plugin/insert_word.vim"
+-'  1  0  ~/.vim/plugin/errors.vim
+|4,39,1,0,1723487966,"~/.vim/plugin/errors.vim"
+-'  112  0  ~/.vim/plugin/insert_word_2.vim
+|4,39,112,0,1723487961,"~/.vim/plugin/insert_word_2.vim"
+-'  15  2  ~/.vim/todo.txt
+|4,39,15,2,1723487955,"~/.vim/todo.txt"
+-'  120  0  ~/.vim/plugin/insert_word_2.vim
+|4,39,120,0,1723487955,"~/.vim/plugin/insert_word_2.vim"
+-'  9  71  ~/.vim/todo.txt
+|4,39,9,71,1723487758,"~/.vim/todo.txt"
+-'  2  69  ~/.vim/todo.txt
+|4,39,2,69,1723487755,"~/.vim/todo.txt"
+-'  1  69  ~/.vim/todo.txt
+|4,39,1,69,1723487752,"~/.vim/todo.txt"
+-'  12  49  ~/.vim/todo.txt
+|4,39,12,49,1723487708,"~/.vim/todo.txt"
+-'  148  0  ~/.vim/plugin/errors.vim
+|4,39,148,0,1723487693,"~/.vim/plugin/errors.vim"
+-'  20  0  ~/.vim/todo.txt
+|4,39,20,0,1723487693,"~/.vim/todo.txt"
+-'  8  0  ~/.vim/todo
+|4,39,8,0,1723487693,"~/.vim/todo"
+-'  144  0  ~/.vim/plugin/errors.vim
+|4,39,144,0,1723481502,"~/.vim/plugin/errors.vim"
+-'  149  9  ~/.vim/plugin/errors.vim
+|4,39,149,9,1723474803,"~/.vim/plugin/errors.vim"
+-'  150  43  ~/.vim/plugin/errors.vim
+|4,39,150,43,1723474798,"~/.vim/plugin/errors.vim"
+-'  95  8  ~/.vim/plugin/insert_word_2.vim
+|4,39,95,8,1723474647,"~/.vim/plugin/insert_word_2.vim"
+-'  154  0  ~/.vim/plugin/errors.vim
+|4,39,154,0,1723474519,"~/.vim/plugin/errors.vim"
+-'  106  0  ~/.vim/plugin/insert_word_2.vim
+|4,39,106,0,1723474514,"~/.vim/plugin/insert_word_2.vim"
+-'  70  36  ~/.vim/plugin/insert_word_2.vim
+|4,39,70,36,1723474508,"~/.vim/plugin/insert_word_2.vim"
+-'  4  0  ~/.vim/tmp/insert_word_test_cases.txt
+|4,39,4,0,1723474325,"~/.vim/tmp/insert_word_test_cases.txt"
+-'  117  0  ~/.vim/plugin/insert_word_2.vim
+|4,39,117,0,1723474324,"~/.vim/plugin/insert_word_2.vim"
+-'  1  0  ~/.vim/tmp/insert_word_test_cases.txt
+|4,39,1,0,1723474293,"~/.vim/tmp/insert_word_test_cases.txt"
+-'  12  14  ~/.vim/tmp/insert_word_test_cases.txt
+|4,39,12,14,1723474291,"~/.vim/tmp/insert_word_test_cases.txt"
+-'  115  1  ~/.vim/plugin/insert_word_2.vim
+|4,39,115,1,1723474278,"~/.vim/plugin/insert_word_2.vim"
+-'  54  8  ~/.vim/plugin/insert_word_2.vim
+|4,39,54,8,1723474161,"~/.vim/plugin/insert_word_2.vim"
+-'  108  17  ~/.vim/plugin/insert_word_2.vim
+|4,39,108,17,1723474137,"~/.vim/plugin/insert_word_2.vim"
+-'  107  20  ~/.vim/plugin/insert_word_2.vim
+|4,39,107,20,1723474134,"~/.vim/plugin/insert_word_2.vim"
+-'  104  94  ~/.vim/plugin/insert_word_2.vim
+|4,39,104,94,1723474106,"~/.vim/plugin/insert_word_2.vim"
+-'  49  0  ~/.vim/plugin/insert_word_2.vim
+|4,39,49,0,1723474076,"~/.vim/plugin/insert_word_2.vim"
+-'  122  35  ~/.vim/plugin/insert_word_2.vim
+|4,39,122,35,1723473995,"~/.vim/plugin/insert_word_2.vim"
+-'  129  7  ~/.vim/plugin/insert_word_2.vim
+|4,39,129,7,1723473899,"~/.vim/plugin/insert_word_2.vim"
+-'  132  46  ~/.vim/plugin/insert_word_2.vim
+|4,39,132,46,1723473899,"~/.vim/plugin/insert_word_2.vim"
+-'  128  61  ~/.vim/plugin/insert_word_2.vim
+|4,39,128,61,1723473886,"~/.vim/plugin/insert_word_2.vim"
+-'  126  2  ~/.vim/plugin/insert_word_2.vim
+|4,39,126,2,1723473860,"~/.vim/plugin/insert_word_2.vim"
+-'  135  2  ~/.vim/plugin/insert_word_2.vim
+|4,39,135,2,1723473860,"~/.vim/plugin/insert_word_2.vim"
+-'  124  0  ~/.vim/plugin/insert_word_2.vim
+|4,39,124,0,1723473855,"~/.vim/plugin/insert_word_2.vim"
+-'  53  126  ~/.vim/plugin/insert_word_2.vim
+|4,39,53,126,1723473764,"~/.vim/plugin/insert_word_2.vim"
+-'  85  12  ~/.vim/plugin/insert_word_2.vim
+|4,39,85,12,1723473745,"~/.vim/plugin/insert_word_2.vim"
+-'  55  10  ~/.vim/plugin/insert_word_2.vim
+|4,39,55,10,1723473735,"~/.vim/plugin/insert_word_2.vim"
+-'  48  27  ~/.vim/plugin/insert_word_2.vim
+|4,39,48,27,1723473716,"~/.vim/plugin/insert_word_2.vim"
+-'  47  28  ~/.vim/plugin/insert_word_2.vim
+|4,39,47,28,1723473716,"~/.vim/plugin/insert_word_2.vim"
+-'  46  0  ~/.vim/plugin/insert_word_2.vim
+|4,39,46,0,1723473715,"~/.vim/plugin/insert_word_2.vim"
+-'  94  69  ~/.vim/plugin/insert_word_2.vim
+|4,39,94,69,1723473617,"~/.vim/plugin/insert_word_2.vim"
+-'  74  31  ~/.vim/plugin/insert_word_2.vim
+|4,39,74,31,1723473616,"~/.vim/plugin/insert_word_2.vim"
+-'  21  21  ~/.vim/plugin/insert_word_2.vim
+|4,39,21,21,1723473616,"~/.vim/plugin/insert_word_2.vim"
+-'  84  68  ~/.vim/plugin/insert_word_2.vim
+|4,39,84,68,1723473613,"~/.vim/plugin/insert_word_2.vim"
+-'  57  4  ~/.vim/plugin/insert_word_2.vim
+|4,39,57,4,1723473576,"~/.vim/plugin/insert_word_2.vim"
+-'  118  76  ~/.vim/plugin/insert_word_2.vim
+|4,39,118,76,1723472834,"~/.vim/plugin/insert_word_2.vim"
+-'  1  0  ~/.vim/plugin/insert_word_2.vim
+|4,39,1,0,1723472788,"~/.vim/plugin/insert_word_2.vim"
+-'  6  0  ~/.vim/plugin/insert_word_2.vim
+|4,39,6,0,1723472785,"~/.vim/plugin/insert_word_2.vim"
+-'  101  0  ~/.vim/plugin/insert_word_2.vim
+|4,39,101,0,1723472784,"~/.vim/plugin/insert_word_2.vim"
+-'  56  0  ~/tooling/my-programming-language.txt
+|4,39,56,0,1723472588,"~/tooling/my-programming-language.txt"
+-'  1  0  ~/python_common/error.py
+|4,39,1,0,1723463369,"~/python_common/error.py"
+-'  1  0  ~/python_common/waivek/error.py
+|4,39,1,0,1723463368,"~/python_common/waivek/error.py"
+-'  145  4  ~/.vim/plugin/errors.vim
+|4,39,145,4,1723463336,"~/.vim/plugin/errors.vim"
+-'  145  4  ~/.vim/plugin/errors.vim
+|4,39,145,4,1723463336,"~/.vim/plugin/errors.vim"
+-'  102  4  ~/.vim/plugin/errors.vim
+|4,39,102,4,1723463095,"~/.vim/plugin/errors.vim"
+-'  102  4  ~/.vim/plugin/errors.vim
+|4,39,102,4,1723463095,"~/.vim/plugin/errors.vim"
+-'  112  69  ~/.vim/plugin/errors.vim
+|4,39,112,69,1723462931,"~/.vim/plugin/errors.vim"
+-'  112  69  ~/.vim/plugin/errors.vim
+|4,39,112,69,1723462931,"~/.vim/plugin/errors.vim"
+-'  113  39  ~/.vim/plugin/errors.vim
+|4,39,113,39,1723462878,"~/.vim/plugin/errors.vim"
+-'  113  39  ~/.vim/plugin/errors.vim
+|4,39,113,39,1723462878,"~/.vim/plugin/errors.vim"
+-'  111  80  ~/.vim/plugin/errors.vim
+|4,39,111,80,1723462839,"~/.vim/plugin/errors.vim"
+-'  111  80  ~/.vim/plugin/errors.vim
+|4,39,111,80,1723462839,"~/.vim/plugin/errors.vim"
+-'  124  0  ~/.vim/plugin/errors.vim
+|4,39,124,0,1723462808,"~/.vim/plugin/errors.vim"
+-'  124  0  ~/.vim/plugin/errors.vim
+|4,39,124,0,1723462808,"~/.vim/plugin/errors.vim"
+-'  123  32  ~/.vim/plugin/errors.vim
+|4,39,123,32,1723462804,"~/.vim/plugin/errors.vim"
+-'  123  32  ~/.vim/plugin/errors.vim
+|4,39,123,32,1723462804,"~/.vim/plugin/errors.vim"
+-'  2  0  ~/python_common/waivek/error.py
+|4,39,2,0,1723462434,"~/python_common/waivek/error.py"
+-'  2  0  ~/python_common/waivek/error.py
+|4,39,2,0,1723462434,"~/python_common/waivek/error.py"
+-'  115  18  ~/.vim/plugin/errors.vim
+|4,39,115,18,1723462407,"~/.vim/plugin/errors.vim"
+-'  115  18  ~/.vim/plugin/errors.vim
+|4,39,115,18,1723462407,"~/.vim/plugin/errors.vim"
+-'  116  18  ~/.vim/plugin/errors.vim
+|4,39,116,18,1723462398,"~/.vim/plugin/errors.vim"
+-'  116  18  ~/.vim/plugin/errors.vim
+|4,39,116,18,1723462398,"~/.vim/plugin/errors.vim"
+-'  110  8  ~/.vim/plugin/errors.vim
+|4,39,110,8,1723462348,"~/.vim/plugin/errors.vim"
+-'  110  8  ~/.vim/plugin/errors.vim
+|4,39,110,8,1723462348,"~/.vim/plugin/errors.vim"
+-'  109  8  ~/.vim/plugin/errors.vim
+|4,39,109,8,1723462328,"~/.vim/plugin/errors.vim"
+-'  109  8  ~/.vim/plugin/errors.vim
+|4,39,109,8,1723462328,"~/.vim/plugin/errors.vim"
+-'  95  109  ~/.vim/plugin/errors.vim
+|4,39,95,109,1723462244,"~/.vim/plugin/errors.vim"
+-'  95  109  ~/.vim/plugin/errors.vim
+|4,39,95,109,1723462244,"~/.vim/plugin/errors.vim"
+-'  91  52  ~/.vim/plugin/errors.vim
+|4,39,91,52,1723462231,"~/.vim/plugin/errors.vim"
+-'  91  52  ~/.vim/plugin/errors.vim
+|4,39,91,52,1723462231,"~/.vim/plugin/errors.vim"
+-'  90  18  ~/.vim/plugin/errors.vim
+|4,39,90,18,1723462225,"~/.vim/plugin/errors.vim"
+-'  90  18  ~/.vim/plugin/errors.vim
+|4,39,90,18,1723462225,"~/.vim/plugin/errors.vim"
+-'  138  58  ~/.vim/plugin/errors.vim
+|4,39,138,58,1723462193,"~/.vim/plugin/errors.vim"
+-'  138  58  ~/.vim/plugin/errors.vim
+|4,39,138,58,1723462193,"~/.vim/plugin/errors.vim"
+-'  139  58  ~/.vim/plugin/errors.vim
+|4,39,139,58,1723462162,"~/.vim/plugin/errors.vim"
+-'  139  58  ~/.vim/plugin/errors.vim
+|4,39,139,58,1723462162,"~/.vim/plugin/errors.vim"
+-'  140  42  ~/.vim/plugin/errors.vim
+|4,39,140,42,1723462029,"~/.vim/plugin/errors.vim"
+-'  140  42  ~/.vim/plugin/errors.vim
+|4,39,140,42,1723462029,"~/.vim/plugin/errors.vim"
+-'  136  28  ~/.vim/plugin/errors.vim
+|4,39,136,28,1723461989,"~/.vim/plugin/errors.vim"
+-'  136  28  ~/.vim/plugin/errors.vim
+|4,39,136,28,1723461989,"~/.vim/plugin/errors.vim"
+-'  73  0  ~/.vim/plugin/errors.vim
+|4,39,73,0,1723461694,"~/.vim/plugin/errors.vim"
+-'  73  0  ~/.vim/plugin/errors.vim
+|4,39,73,0,1723461694,"~/.vim/plugin/errors.vim"
+-'  358  8  ~/python_common/waivek/error.py
+|4,39,358,8,1723461681,"~/python_common/waivek/error.py"
+-'  358  8  ~/python_common/waivek/error.py
+|4,39,358,8,1723461681,"~/python_common/waivek/error.py"
+-'  410  4  ~/python_common/waivek/error.py
+|4,39,410,4,1723461631,"~/python_common/waivek/error.py"
+-'  410  4  ~/python_common/waivek/error.py
+|4,39,410,4,1723461631,"~/python_common/waivek/error.py"
+-'  433  23  ~/python_common/waivek/error.py
+|4,39,433,23,1723461627,"~/python_common/waivek/error.py"
+-'  411  17  ~/python_common/waivek/error.py
+|4,39,411,17,1723461627,"~/python_common/waivek/error.py"
+-'  435  3  ~/python_common/waivek/error.py
+|4,39,435,3,1723461627,"~/python_common/waivek/error.py"
 
 # Buffer list:
-%~/.vim/todo.txt	13	38
-%~/.vim/ftplugin/todo.vim	54	0
-%~/python_common/waivek/todo.txt	2	0
+%~/tooling/my-programming-language.txt	47	5
+%~/.vim/plugin/errors.vim	1	0
+%~/.vim/plugin/insert_word_2.vim	112	0
+%~/.vim/tmp/insert_word_test_cases.txt	4	0
+%~/.vim/todo.txt	15	2
 
 # History of marks within files (newest to oldest):
 
+> ~/.vim/plugin/errors.vim
+	*	1723487965	0
+	"	1	0
+	.	148	0
+	+	55	22
+	+	68	28
+	+	125	0
+	+	46	34
+	+	85	23
+	+	87	0
+	+	84	0
+	+	73	76
+	+	96	15
+	+	83	25
+	+	86	44
+	+	96	4
+	+	97	86
+	+	98	86
+	+	99	96
+	+	102	4
+	+	124	9
+	+	109	80
+	+	140	8
+	+	109	30
+	+	140	0
+	+	109	34
+	+	124	0
+	+	109	0
+	+	140	0
+	+	140	52
+	+	136	12
+	+	140	28
+	+	136	52
+	+	138	65
+	+	139	52
+	+	140	0
+	+	138	28
+	+	139	44
+	+	137	68
+	+	139	27
+	+	137	74
+	+	138	76
+	+	139	58
+	+	89	24
+	+	90	103
+	+	90	13
+	+	91	29
+	+	92	8
+	+	93	29
+	+	94	9
+	+	95	109
+	+	110	0
+	+	109	0
+	+	124	0
+	+	110	12
+	+	113	50
+	+	114	19
+	+	115	21
+	+	116	20
+	+	117	51
+	+	118	19
+	+	119	17
+	+	120	19
+	+	121	25
+	+	122	19
+	+	124	0
+	+	117	12
+	+	116	18
+	+	110	0
+	+	113	24
+	+	114	0
+	+	101	18
+	+	111	59
+	+	113	39
+	+	113	0
+	+	123	32
+	+	124	0
+	+	111	80
+	+	112	90
+	+	113	39
+	+	112	69
+	+	113	44
+	+	112	0
+	+	102	45
+	+	102	14
+	+	102	9
+	+	102	0
+	+	102	10
+	+	102	30
+	+	102	23
+	+	102	27
+	+	112	40
+	+	102	0
+	+	145	4
+	+	148	46
+	+	148	0
+	+	148	36
+	+	150	43
+	+	148	0
+	+	150	0
+	+	147	7
+	+	153	0
+	+	148	0
+	a	112	69
+	b	112	69
+
+> ~/.vim/plugin/insert_word_2.vim
+	*	1723487959	0
+	"	112	0
+	^	105	0
+	.	105	0
+	+	103	0
+	+	103	98
+	+	104	97
+	+	103	1
+	+	103	34
+	+	104	34
+	+	103	0
+	+	103	20
+	+	89	13
+	+	90	0
+	+	93	0
+	+	95	0
+	+	96	7
+	+	97	0
+	+	98	0
+	+	75	17
+	+	77	0
+	+	108	0
+	+	115	0
+	+	27	0
+	+	26	0
+	+	136	0
+	+	107	46
+	+	107	36
+	+	107	1
+	+	107	11
+	+	107	3
+	+	107	2
+	+	107	3
+	+	107	0
+	+	107	30
+	+	107	29
+	+	107	28
+	+	108	0
+	+	103	0
+	+	107	19
+	+	135	0
+	+	118	5
+	+	135	95
+	+	107	0
+	+	107	19
+	+	53	126
+	+	120	0
+	+	107	0
+	+	121	0
+	+	122	0
+	+	124	50
+	+	135	0
+	+	126	10
+	+	135	0
+	+	126	119
+	+	135	0
+	+	127	7
+	+	133	0
+	+	128	61
+	+	132	0
+	+	133	0
+	+	132	46
+	+	128	33
+	+	130	135
+	+	130	98
+	+	131	89
+	+	122	0
+	+	49	0
+	+	103	95
+	+	103	0
+	+	103	95
+	+	104	95
+	+	106	0
+	+	107	20
+	+	106	0
+	+	52	13
+	+	53	0
+	+	54	0
+	+	106	0
+	+	106	96
+	+	106	0
+	+	121	0
+	+	124	0
+	+	116	0
+	+	125	0
+	+	133	0
+	+	116	0
+	+	118	0
+	+	116	0
+	+	117	0
+	+	136	0
+	+	135	0
+	+	134	5
+	+	119	0
+	+	103	0
+	+	107	0
+	+	106	38
+	+	106	0
+	+	106	96
+	+	106	0
+	+	105	0
+
 > ~/.vim/todo.txt
-	*	1723279441	0
-	"	13	38
-	.	4	0
-	+	12	117
-	+	11	173
-	+	10	212
-	+	14	0
-	+	10	0
-	+	9	126
-	+	8	83
-	+	7	214
-	+	7	137
-	+	6	96
-	+	14	0
-	+	6	99
-	+	6	0
-	+	5	53
-	+	4	96
-	+	4	0
-	+	3	167
-	+	16	0
+	*	1723487955	0
+	"	15	2
+	^	1	70
+	.	9	0
+	+	17	117
+	+	16	173
+	+	15	212
+	+	19	0
 	+	15	0
-	+	2	0
-	+	16	0
-	+	2	79
-	+	2	0
-	+	1	165
-	+	3	0
-	+	5	0
-	+	1	0
-	+	2	0
-	+	16	0
-	+	1	0
-	+	3	0
-	+	7	0
-	+	1	0
-	+	2	0
-	+	3	0
-	+	2	0
-	+	3	0
-	+	2	0
-	+	3	0
-	+	4	68
-	+	1	0
-	+	4	68
-	+	1	0
+	+	14	126
+	+	13	83
+	+	12	214
+	+	12	137
+	+	11	96
+	+	19	0
+	+	11	99
+	+	11	0
+	+	10	53
+	+	8	96
+	+	8	0
+	+	7	167
+	+	21	0
+	+	20	0
 	+	6	0
-	+	6	87
-	+	1	0
+	+	21	0
+	+	6	79
+	+	6	0
+	+	5	165
+	+	7	0
+	+	10	0
 	+	5	0
+	+	6	0
+	+	21	0
+	+	5	0
+	+	7	0
+	+	12	0
+	+	5	0
+	+	6	0
+	+	7	0
+	+	6	0
+	+	7	0
+	+	6	0
+	+	7	0
+	+	8	68
+	+	5	0
+	+	8	68
+	+	5	0
+	+	11	0
+	+	11	87
+	+	5	0
+	+	10	0
+	+	8	0
+	+	5	0
+	+	8	0
+	+	13	0
+	+	12	0
+	+	11	0
+	+	3	84
+	+	3	0
+	+	2	19
+	+	11	27
+	+	2	100
+	+	2	0
+	+	4	165
+	+	2	0
+	+	3	0
+	+	8	0
+	+	7	0
+	+	9	108
+	+	16	0
+	+	1	69
+	+	9	0
+
+> /usr/share/vim/vim90/doc/eval.txt
+	*	1723474791	0
+	"	2062	5
+
+> /usr/share/vim/vim90/doc/insert.txt
+	*	1723474471	0
+	"	384	34
+
+> ~/.vim/tmp/insert_word_test_cases.txt
+	*	1723474325	0
+	"	4	0
+	^	12	15
+	.	12	0
+	+	12	0
+
+> ~/.vim/plugin/isnert_word_test_cases.txt
+	*	1723474226	0
+	"	2	0
+	^	1	9
+	.	3	0
+	+	2	0
+	+	1	0
+	+	3	0
+	+	1	0
+	+	3	0
+
+> /usr/share/vim/vim90/doc/map.txt
+	*	1723474167	0
+	"	56	40
+
+> ~/.vim/plugin/file.txt
+	*	1723473662	0
+	"	1	0
+
+> ~/.vim/plugin/isnert_word_test_cases.Tab/len(
+	*	1723473658	0
+	"	1	0
+
+> ~/.vim/plugin/insert_word_prompt.txt
+	*	1723473634	0
+	"	1	0
+
+> ~/tooling/my-programming-language.txt
+	*	1723472627	0
+	"	47	5
+	.	47	0
+	+	34	4
+	+	34	5
+	+	34	7
+	+	34	5
+	+	34	7
+	+	34	8
+	+	34	6
+	+	34	8
+	+	34	5
+	+	34	3
+	+	34	5
+	+	34	4
+	+	34	8
+	+	34	0
+	+	33	126
+	+	34	45
+	+	34	0
+	+	34	96
+	+	37	0
+	+	34	8
 	+	4	0
+	+	6	11
+	+	8	18
+	+	8	0
+	+	5	42
+	+	6	11
+	+	35	84
+	+	4	0
+	+	7	0
+	+	8	29
+	+	8	18
+	+	8	28
+	+	8	52
+	+	8	56
+	+	9	0
+	+	8	50
+	+	36	29
+	+	46	0
+	+	43	12
+	+	45	47
+	+	42	46
+	+	40	35
+	+	41	24
+	+	39	72
+	+	43	13
+	+	44	49
+	+	46	40
+	+	46	46
+	+	46	50
+	+	46	41
+	+	46	0
+	+	39	0
+	+	56	138
+	+	56	0
+	+	56	5
+	+	56	0
+	+	56	23
+	+	56	24
+	+	56	54
+	+	56	15
+	+	56	35
+	+	56	16
+	+	56	122
+	+	56	0
+	+	56	79
+	+	56	83
+	+	56	82
+	+	56	83
+	+	56	82
+	+	56	0
+	+	56	14
+	+	56	95
+	+	56	0
+	+	56	55
+	+	56	0
+	+	56	80
+	+	56	119
+	+	56	79
+	+	56	0
+	+	56	11
+	+	56	25
+	+	56	0
+	+	47	0
+
+> /usr/share/vim/vim90/doc/digraph.txt
+	*	1723472359	0
+	"	1179	35
+
+> ~/python_common/error.py
+	*	1723463368	0
+	"	1	0
+	^	334	35
+	.	334	34
+	+	307	18
+	+	319	0
+	+	320	0
+	+	308	17
+	+	313	12
+	+	316	14
+	+	318	18
+	+	317	30
+	+	313	26
+	+	317	39
+	+	334	34
+
+> ~/python_common/waivek/error.py
+	*	1723463367	0
+	"	1	0
+	.	359	0
+	+	7	0
+	+	254	0
+	+	295	0
+	+	11	7
+	+	11	0
+	+	307	58
+	+	5	0
+	+	24	0
+	+	21	0
+	+	410	36
+	+	436	0
+	+	436	30
+	+	436	0
+	+	411	12
+	+	414	21
+	+	436	0
+	+	414	34
+	+	423	6
+	+	411	17
+	+	423	8
+	+	436	29
+	+	436	0
+	+	429	43
+	+	429	80
+	+	436	0
+	+	429	37
+	+	429	19
+	+	429	0
+	+	436	0
+	+	423	0
+	+	433	34
+	+	436	30
+	+	436	0
+	+	436	49
+	+	436	0
+	+	429	29
+	+	413	4
+	+	413	0
+	+	410	44
+	+	433	29
+	+	363	0
+	+	364	0
+	+	358	8
+	+	359	13
+	+	6	0
+	+	433	0
+	+	416	40
+	+	420	25
+	+	433	0
+	+	425	66
+	+	429	0
+	+	429	71
+	+	430	27
+	+	431	18
+	+	3	0
+	+	417	28
+	+	426	89
+	+	429	47
+	+	422	30
+	+	2	0
+	+	422	7
+	+	427	22
+	+	422	5
+	+	427	35
+	+	422	46
+	+	4	0
+	+	427	51
+	+	429	39
+	+	422	69
+	+	426	35
+	+	422	0
+	+	413	58
+	+	429	41
+	+	418	31
+	+	426	30
+	+	429	0
+	+	423	0
+	+	424	49
+	+	425	25
+	+	424	67
+	+	425	0
+	+	424	8
+	+	426	135
+	+	419	28
+	+	415	24
+	+	423	0
+	+	433	0
+	+	432	0
+	+	428	54
+	+	429	99
+	+	426	40
+	+	433	8
+	+	436	4
+	+	433	29
+	+	436	0
+	+	433	104
+	+	413	19
+	+	433	98
+	+	434	0
+	+	359	0
+
+> /usr/share/vim/vim90/doc/version5.txt
+	*	1723462322	0
+	"	1934	2
+
+> /usr/share/vim/vim90/doc/version6.txt
+	*	1723462322	0
+	"	5329	60
+
+> /usr/share/vim/vim90/doc/usr_50.txt
+	*	1723462320	0
+	"	109	28
+
+> /usr/share/vim/vim90/doc/usr_41.txt
+	*	1723462318	0
+	"	1541	7
+
+> /usr/share/vim/vim90/doc/userfunc.txt
+	*	1723462317	0
+	"	284	5
+
+> /usr/share/vim/vim90/doc/index.txt
+	*	1723462315	0
+	"	1308	2
+
+> /usr/share/vim/vim90/doc/builtin.txt
+	*	1723462293	0
+	"	4846	30
+
+> /usr/share/vim/vim90/doc/syntax.txt
+	*	1723461905	0
+	"	976	0
+
+> ~/.vim/autoload/utils.vim
+	*	1723457924	0
+	"	52	0
+	^	71	29
+	.	52	0
+	+	2	0
+	+	4	21
+	+	38	27
+	+	42	0
+	+	40	0
+	+	42	0
+	+	40	13
+	+	40	17
+	+	40	0
+	+	41	0
+	+	40	40
+	+	41	30
+	+	42	0
+	+	51	0
+	+	37	0
+	+	4	0
+	+	3	7
+	+	40	23
+	+	37	0
+	+	5	21
+	+	40	0
+	+	40	46
+	+	35	10
+	+	40	0
+	+	7	0
+	+	40	0
+	+	32	0
+	+	40	0
+	+	33	0
+	+	34	36
+	+	11	25
+	+	39	37
+	+	43	0
+	+	44	33
+	+	50	0
+	+	49	10
+	+	50	0
+	+	36	0
+	+	2	0
+	+	1	1
+	+	52	35
+	+	78	10
+	+	52	10
+	+	73	44
+	+	57	45
+	+	69	66
+	+	73	36
+	+	70	20
+	+	71	15
+	+	72	16
+	+	74	16
+	+	73	0
+	+	71	28
+	+	52	0
+
+> ~/.vim/plugin/run.vim
+	*	1723457841	0
+	"	84	4
+	^	67	9
+	.	67	0
+	+	15	18
+	+	16	0
+	+	47	0
+	+	29	24
+	+	16	17
+	+	29	0
+	+	16	0
+	+	47	0
+	+	47	17
+	+	47	0
+	+	29	28
+	+	29	0
+	+	47	0
+	+	29	0
+	+	47	0
+	+	45	10
+	+	47	8
+	+	47	15
+	+	47	0
+	+	47	17
+	+	47	20
+	+	47	0
+	+	47	38
+	+	47	15
+	+	47	0
+	+	47	19
+	+	47	0
+	+	47	19
+	+	47	18
+	+	47	8
+	+	47	39
+	+	47	16
+	+	47	0
+	+	29	27
+	+	12	10
+	+	12	0
+	+	3	0
+	+	12	0
+	+	45	12
+	+	51	18
+	+	52	0
+	+	55	8
+	+	57	0
+	+	3	0
+	+	2	0
+	+	3	13
+	+	42	0
+	+	29	0
+	+	42	45
+	+	11	0
+	+	18	0
+	+	19	26
+	+	16	0
+	+	19	33
+	+	20	32
+	+	21	0
+	+	20	0
+	+	35	0
+	+	44	0
+	+	35	0
+	+	34	0
+	+	32	0
+	+	30	0
+	+	31	11
+	+	33	0
+	+	22	0
+	+	33	48
+	+	42	0
+	+	37	12
+	+	42	0
+	+	38	71
+	+	39	37
+	+	40	82
+	+	41	12
+	+	42	0
+	+	43	0
+	+	88	0
+	+	90	0
+	+	88	4
+	+	89	5
+	+	47	0
+	+	46	19
+	+	98	0
+	+	61	22
+	+	68	0
+	+	67	0
+
+> /usr/share/vim/vim90/doc/change.txt
+	*	1723457693	0
+	"	592	7
+
+> ~/hateoas/foo.py
+	*	1723457435	0
+	"	10	22
+	.	13	0
+	+	15	0
+	+	1	0
+	+	7	21
+	+	9	0
+	+	2	0
+	+	13	11
+	+	13	10
+	+	13	0
+
+> ~/.vim/plugin/foo.py
+	*	1723457365	0
+	"	3	6
+	^	4	8
+	.	4	7
+	+	4	7
+
+> /usr/share/vim/vim90/doc/repeat.txt
+	*	1723456166	0
+	"	874	23
+
+> ~/.vim/plugin/.netrwhist
+	*	1723455235	0
+	"	1	0
+	+	1	0
+
+> ~/.vim/syntax/todo.vim
+	*	1723455220	0
+	"	1	0
+	^	23	0
+	.	26	0
+	+	16	75
+	+	16	0
+	+	16	1
+	+	16	14
+	+	20	0
+	+	8	20
+	+	8	21
+	+	14	0
+	+	13	0
+	+	17	32
+	+	10	64
+	+	12	22
+	+	19	0
+	+	12	30
+	+	11	17
+	+	12	30
+	+	18	42
+	+	19	25
+	+	7	2
+	+	16	0
+	+	19	31
+	+	20	23
+	+	25	55
+	+	25	0
+	+	25	45
+	+	25	0
+	+	25	10
+	+	25	30
+	+	25	0
+	+	25	37
+	+	25	45
+	+	26	57
+	+	26	44
+	+	25	0
+	+	26	45
+	+	26	42
+	+	26	0
+	+	25	10
+	+	26	0
+	+	25	0
+	+	25	9
+	+	24	27
+	+	25	34
+	+	26	37
+	+	25	9
+	+	26	40
+	+	22	0
+	+	26	0
+
+> /usr/share/vim/vim90/doc/message.txt
+	*	1723455147	0
+	"	146	2
+
+> ~/.vim/plugin/insert_word.vim
+	*	1723419994	0
+	"	147	0
+	.	150	0
+	+	140	21
+	+	147	44
+	+	153	0
+	+	152	18
+	+	134	0
+	+	133	31
+	+	158	31
+	+	159	19
+	+	158	19
+	+	159	34
+	+	158	20
+	+	165	10
+	+	160	20
+	+	160	69
+	+	161	16
+	+	166	11
+	+	161	48
+	+	153	0
+	+	140	29
+	+	161	39
+	+	162	39
+	+	164	76
+	+	155	0
+	+	166	0
+	+	167	101
+	+	185	0
+	+	160	19
+	+	166	31
+	+	163	80
+	+	160	19
+	+	166	0
+	+	160	0
+	+	157	0
+	+	156	52
+	+	185	1
+	+	185	110
+	+	185	0
+	+	185	55
+	+	185	0
+	+	167	91
+	+	167	46
+	+	167	98
+	+	185	2
+	+	149	84
+	+	185	2
+	+	151	0
+	+	149	80
+	+	150	110
+	+	185	2
+	+	144	0
+	+	141	4
+	+	142	38
+	+	143	0
+	+	185	0
+	+	142	11
+	+	167	5
+	+	163	0
+	+	150	0
+	+	185	2
+	+	185	0
+	+	167	37
+	+	167	0
+	+	168	87
+	+	168	0
+	+	168	87
+	+	168	0
+	+	168	87
+	+	168	0
+	+	185	60
+	+	186	0
+	+	185	110
+	+	185	0
+	+	167	0
+	+	168	37
+	+	185	48
+	+	185	23
+	+	181	0
+	+	185	0
+	+	186	0
+	+	185	0
+	+	100	0
+	+	169	0
+	+	176	0
+	+	174	0
+	+	179	0
+	+	176	0
+	+	145	0
+	+	120	0
+	+	147	0
+	+	129	79
+	+	147	0
+	+	130	0
+	+	129	0
+	+	130	44
+	+	147	80
+	+	147	0
+	+	146	0
+	+	145	0
+	+	150	0
+
+> ~/hateoas/hateoas-api.py
+	*	1723419493	0
+	"	39	0
+	.	27	0
+	+	911	0
+	+	919	7
+	+	928	0
+	+	934	0
+	+	934	113
+	+	657	0
+	+	658	65
+	+	656	29
+	+	667	17
+	+	657	0
+	+	926	46
+	+	921	80
+	+	922	25
+	+	926	16
+	+	889	13
+	+	892	116
+	+	892	81
+	+	892	0
+	+	890	0
+	+	921	0
+	+	968	24
+	+	973	78
+	+	994	123
+	+	985	86
+	+	987	0
+	+	985	35
+	+	987	33
+	+	975	159
+	+	987	0
+	+	989	0
+	+	909	0
+	+	909	58
+	+	909	63
+	+	934	237
+	+	909	0
+	+	542	0
+	+	601	58
+	+	602	59
+	+	684	80
+	+	658	21
+	+	665	97
+	+	666	16
+	+	661	51
+	+	665	161
+	+	665	31
+	+	665	102
+	+	602	63
+	+	665	22
+	+	665	0
+	+	660	103
+	+	665	0
+	+	660	0
+	+	661	0
+	+	661	27
+	+	661	47
+	+	664	92
+	+	664	29
+	+	664	0
+	+	660	103
+	+	661	0
+	+	664	23
+	+	665	0
+	+	664	23
+	+	660	0
+	+	665	0
+	+	660	0
+	+	659	0
+	+	661	51
+	+	661	0
+	+	662	0
+	+	663	31
+	+	656	27
+	+	658	32
+	+	660	20
+	+	660	161
+	+	660	38
+	+	662	156
+	+	662	153
+	+	883	54
+	+	893	0
+	+	883	0
+	+	909	0
+	+	905	0
+	+	934	241
+	+	435	157
+	+	440	59
+	+	441	83
+	+	435	108
+	+	441	111
+	+	240	57
+	+	240	65
+	+	240	0
+	+	240	77
+	+	240	0
+	+	232	0
+	+	234	49
+	+	27	0
+	g	934	0
+
+> ~/.vim/plugin/dotty_debug.txt
+	*	1723417832	0
+	"	237	0
+
+> ~/.vim/plugin/dotty.vim
+	*	1723417829	0
+	"	98	2
+
+> ~/bash/gh-timeago.bash
+	*	1723382936	0
+	"	11	0
+	^	17	86
+	.	17	0
+	+	38	63
+	+	4	75
+	+	38	38
+	+	26	47
+	+	36	0
+	+	30	4
+	+	35	1
+	+	38	82
+	+	19	49
+	+	29	49
+	+	38	0
+	+	18	0
+	+	15	25
+	+	13	0
+	+	12	75
+	+	13	6
+	+	12	1
+	+	13	1
+	+	12	13
+	+	13	0
+	+	35	0
+	+	32	0
+	+	35	37
+	+	13	0
+	+	17	85
+	+	17	0
+
+> ~/python_common/waivek/todo.txt
+	*	1723329956	0
+	"	1	0
+	^	2	2
+	.	2	0
+	+	7	121
+	+	7	0
+	+	9	0
+	+	8	17
+	+	8	0
+	+	7	0
+	+	9	0
+	+	8	0
+	+	6	166
+	+	5	64
+	+	4	153
+	+	3	134
+	+	2	14
+	+	4	16
+	+	5	14
+	+	6	16
+	+	7	16
+	+	8	19
+	+	3	16
+	+	2	0
+	+	8	0
+	+	1	31
+	+	2	21
+	+	2	146
+	+	2	96
+	+	2	167
+	+	3	0
+	+	2	0
+	+	4	112
+	+	5	35
+	+	7	50
+	+	7	0
+	+	5	42
+	+	6	319
+	+	6	0
+	+	7	25
+	+	8	63
+	+	4	70
+	+	2	1
+	+	8	0
+	+	2	1
+	+	2	0
+
+> ~/bash/logs/gh-timeago-updates.log
+	*	1723329933	0
+	"	976	0
+	.	1	0
+	+	1	0
+
+> /tmp/crontab.gclVIL/crontab
+	*	1723329509	0
+	"	32	0
+	.	32	0
+	+	33	0
+	+	32	0
+
+> /tmp/crontab.ibzfmw/crontab
+	*	1723329432	0
+	"	33	31
+	^	32	2
+	.	33	1
+	+	32	0
+	+	34	0
+	+	32	0
+	+	33	0
+	+	32	1
+	+	33	1
+
+> ~/bash/.gh-timeago.json
+	*	1723329376	0
+	"	1023	29
+
+> /tmp/crontab.pjrzYa/crontab
+	*	1723329285	0
+	"	34	1
+	^	34	2
+	.	34	1
+	+	34	1
+
+> ~/bash/logs/.gh-timeago-debug
+	*	1723329273	0
+	"	150	0
+	^	137	0
+	.	137	0
+	+	1	0
+	+	137	0
+
+> /tmp/crontab.ajMgi9/crontab
+	*	1723329222	0
+	"	33	27
+
+> /tmp/crontab.6Wncca/crontab
+	*	1723329031	0
+	"	33	0
+	.	33	0
+	+	34	0
+	+	33	0
+
+> /tmp/crontab.SajcIo/crontab
+	*	1723328350	0
+	"	35	90
+
+> /tmp/crontab.16xnWn/crontab
+	*	1723328339	0
+	"	35	58
+	^	35	54
+	.	35	54
+	+	35	54
+
+> ~/.config/scripts/gh-timeago.bash
+	*	1723327553	0
+	"	20	0
+	.	3	0
+	+	2	14
+	+	2	0
+	+	3	0
+	+	6	19
+	+	11	0
+	+	12	5
+	+	11	0
+	+	21	33
+	+	14	27
+	+	11	0
+	+	19	0
+	+	14	0
+	+	20	33
+	+	14	0
+	+	11	0
+	+	12	1
+	+	14	0
+	+	19	0
+	+	21	0
+	+	19	0
+	+	12	26
+	+	21	29
+	+	1	1
+	+	8	17
+	+	12	13
+	+	21	13
+	+	8	19
+	+	12	15
+	+	20	15
+	+	21	15
+	+	4	0
+	+	5	6
+	+	20	17
+	+	12	0
+	+	21	0
+	+	20	44
+	+	14	0
+	+	13	0
+	+	21	0
+	+	12	0
+	+	21	0
+	+	20	44
+	+	3	28
+	+	3	27
+	+	3	25
+	+	3	0
+	+	3	37
+	+	3	0
+
+> ~/.profile
+	*	1723327255	0
+	"	15	2
+	^	15	4
+	.	15	0
+	+	12	0
+	+	15	0
+
+> ~/.bashrc
+	*	1723327204	0
+	"	1	0
+	.	120	0
+	+	121	0
+	+	121	55
+	+	121	0
+	+	121	47
+	+	124	0
+	+	121	0
+	+	124	0
+	+	123	0
+	+	126	0
+	+	127	0
+	+	120	0
+	+	123	0
+	+	118	0
+	+	120	0
+	+	123	0
+	+	6	5
+	+	5	0
+	+	6	0
+	+	123	0
+	+	109	0
+	+	120	0
+	+	114	5
+	+	115	4
+	+	116	0
+	+	117	4
+	+	115	0
+	+	115	4
+	+	117	0
+	+	116	4
+	+	114	4
+	+	118	0
+	+	112	0
+	+	115	0
+	+	123	0
+	+	121	0
+	+	124	0
+	+	123	0
+	+	120	0
+
+> /tmp/crontab.W5Wfrm/crontab
+	*	1723326827	0
+	"	29	0
+	.	29	0
+	+	29	0
+
+> /tmp/crontab.5RMCQe/crontab
+	*	1723326517	0
+	"	32	41
+
+> /tmp/crontab.tTuHPA/crontab
+	*	1723326248	0
+	"	34	1
+	^	34	2
+	.	34	1
+	+	35	15
+	+	34	1
+
+> /tmp/crontab.ORCiUA/crontab
+	*	1723326219	0
+	"	1	0
+	.	32	107
+	+	34	87
+	+	33	99
+	+	32	107
+
+> /tmp/crontab.Na4Ody/crontab
+	*	1723326089	0
+	"	34	79
+	.	34	10
+	+	34	10
+
+> /tmp/crontab.kvlU16/crontab
+	*	1723325962	0
+	"	33	1
+	^	33	2
+	.	33	1
+	+	33	1
+
+> /tmp/crontab.xqakA8/crontab
+	*	1723325922	0
+	"	34	32
+	^	34	33
+	.	34	32
+	+	34	32
+
+> /tmp/crontab.p3pu0k/crontab
+	*	1723325792	0
+	"	29	0
+	.	29	0
+	+	32	0
+	+	30	0
+	+	29	0
+
+> /tmp/crontab.PIqQNt/crontab
+	*	1723325626	0
+	"	33	21
+
+> /usr/bin/bash
+	*	1723325624	0
+	"	7	0
+
+> /tmp/crontab.D2azdQ/crontab
+	*	1723325617	0
+	"	33	48
+	^	33	95
+	.	33	94
+	+	32	0
+	+	33	0
+	+	32	1
+	+	33	94
+
+> /usr/share/vim/vim90/doc/todo.txt
+	*	1723281109	0
+	"	861	0
 
 > ~/.vim/ftplugin/todo.vim
 	*	1723278756	0
@@ -13809,58 +15277,6 @@ $
 	+	67	0
 	+	63	0
 	+	54	0
-
-> /usr/share/vim/vim90/doc/builtin.txt
-	*	1723278721	0
-	"	8099	7
-
-> ~/python_common/waivek/todo.txt
-	*	1723278422	0
-	"	2	0
-	^	2	2
-	.	2	0
-	+	7	121
-	+	7	0
-	+	9	0
-	+	8	17
-	+	8	0
-	+	7	0
-	+	9	0
-	+	8	0
-	+	6	166
-	+	5	64
-	+	4	153
-	+	3	134
-	+	2	14
-	+	4	16
-	+	5	14
-	+	6	16
-	+	7	16
-	+	8	19
-	+	3	16
-	+	2	0
-	+	8	0
-	+	1	31
-	+	2	21
-	+	2	146
-	+	2	96
-	+	2	167
-	+	3	0
-	+	2	0
-	+	4	112
-	+	5	35
-	+	7	50
-	+	7	0
-	+	5	42
-	+	6	319
-	+	6	0
-	+	7	25
-	+	8	63
-	+	4	70
-	+	2	1
-	+	8	0
-	+	2	1
-	+	2	0
 
 > ~/.vim/edit-plugin/edit-plugin.todo
 	*	1723277982	0
@@ -13991,109 +15407,6 @@ $
 	*	1723276459	0
 	"	1	0
 
-> ~/.vim/plugin/insert_word.vim
-	*	1723242424	0
-	"	80	11
-	^	80	12
-	.	80	11
-	+	76	91
-	+	78	90
-	+	68	0
-	+	57	108
-	+	57	0
-	+	58	0
-	+	4	4
-	+	3	2
-	+	76	3
-	+	78	3
-	+	3	2
-	+	76	0
-	+	78	0
-	+	58	0
-	+	44	0
-	+	57	0
-	+	44	39
-	+	57	49
-	+	57	60
-	+	57	0
-	+	57	61
-	+	57	23
-	+	57	4
-	+	57	12
-	+	57	60
-	+	57	21
-	+	57	4
-	+	57	12
-	+	57	45
-	+	57	0
-	+	6	38
-	+	41	4
-	+	41	10
-	+	42	29
-	+	41	0
-	+	6	38
-	+	7	77
-	+	9	36
-	+	10	19
-	+	11	17
-	+	12	21
-	+	13	4
-	+	28	9
-	+	30	5
-	+	39	9
-	+	42	0
-	+	44	4
-	+	66	5
-	+	73	5
-	+	66	23
-	+	73	23
-	+	66	4
-	+	73	0
-	+	55	33
-	+	47	13
-	+	48	13
-	+	49	41
-	+	54	35
-	+	66	5
-	+	73	5
-	+	78	29
-	+	66	0
-	+	73	0
-	+	61	4
-	+	61	28
-	+	66	0
-	+	6	40
-	+	8	31
-	+	44	65
-	+	66	0
-	+	61	51
-	+	62	37
-	+	69	4
-	+	62	0
-	+	70	0
-	+	66	0
-	+	64	4
-	+	73	0
-	+	76	0
-	+	64	16
-	+	73	0
-	+	78	1
-	+	76	52
-	+	76	0
-	+	71	0
-	+	78	1
-	+	64	0
-	+	65	16
-	+	72	0
-	+	71	5
-	+	78	0
-	+	79	0
-	+	77	0
-	+	79	47
-	+	80	47
-	+	79	11
-	+	80	11
-
 > ~/.vim/mappings.vim
 	*	1723242423	0
 	"	14	2
@@ -14152,14 +15465,6 @@ $
 	+	20	64
 	+	14	1
 
-> /usr/share/vim/vim90/doc/map.txt
-	*	1723240746	0
-	"	720	7
-
-> /usr/share/vim/vim90/doc/insert.txt
-	*	1723240612	0
-	"	226	6
-
 > /usr/share/vim/vim90/doc/tips.txt
 	*	1723240546	0
 	"	36	23
@@ -14180,138 +15485,9 @@ $
 	+	32	0
 	+	48	0
 
-> ~/bash/.gh-timeago.json
-	*	1723135545	0
-	"	421	4
-
-> ~/bash/gh-timeago.bash
-	*	1723131483	0
-	"	24	49
-	^	24	50
-	.	24	49
-	+	33	63
-	+	4	75
-	+	33	38
-	+	21	47
-	+	31	0
-	+	25	4
-	+	30	1
-	+	33	82
-	+	14	49
-	+	24	49
-
-> ~/bash/logs/gh-timeago-updates.log
-	*	1723131234	0
-	"	897	38
-	.	1	0
-	+	1	0
-
 > ~/bash/1
 	*	1723131219	0
 	"	1	0
-
-> ~/hateoas/hateoas-api.py
-	*	1723100841	0
-	"	233	48
-	^	233	49
-	.	233	49
-	+	910	0
-	+	918	7
-	+	927	0
-	+	933	0
-	+	933	113
-	+	656	0
-	+	657	65
-	+	655	29
-	+	666	17
-	+	656	0
-	+	925	46
-	+	920	80
-	+	921	25
-	+	925	16
-	+	888	13
-	+	891	116
-	+	891	81
-	+	891	0
-	+	889	0
-	+	920	0
-	+	967	24
-	+	972	78
-	+	993	123
-	+	984	86
-	+	986	0
-	+	984	35
-	+	986	33
-	+	974	159
-	+	986	0
-	+	988	0
-	+	908	0
-	+	908	58
-	+	908	63
-	+	933	237
-	+	908	0
-	+	541	0
-	+	600	58
-	+	601	59
-	+	683	80
-	+	657	21
-	+	664	97
-	+	665	16
-	+	660	51
-	+	664	161
-	+	664	31
-	+	664	102
-	+	601	63
-	+	664	22
-	+	664	0
-	+	659	103
-	+	664	0
-	+	659	0
-	+	660	0
-	+	660	27
-	+	660	47
-	+	663	92
-	+	663	29
-	+	663	0
-	+	659	103
-	+	660	0
-	+	663	23
-	+	664	0
-	+	663	23
-	+	659	0
-	+	664	0
-	+	659	0
-	+	658	0
-	+	660	51
-	+	660	0
-	+	661	0
-	+	662	31
-	+	655	27
-	+	657	32
-	+	659	20
-	+	659	161
-	+	659	38
-	+	661	156
-	+	661	153
-	+	882	54
-	+	892	0
-	+	882	0
-	+	908	0
-	+	904	0
-	+	933	241
-	+	434	157
-	+	439	59
-	+	440	83
-	+	434	108
-	+	440	111
-	+	239	57
-	+	239	65
-	+	239	0
-	+	239	77
-	+	239	0
-	+	231	0
-	+	233	49
-	g	933	0
 
 > ~/hateoas/ui-components-css/static/css-themes/dark-gray-mono.css
 	*	1723100818	0
@@ -15713,10 +16889,6 @@ $
 	*	1722961518	0
 	"	85	0
 
-> ~/.vim/plugin/dotty.vim
-	*	1722961507	0
-	"	549	0
-
 > ~/hateoas/2199687421_01h28m08s_120s.srt
 	*	1722892606	0
 	"	11	0
@@ -16262,15 +17434,6 @@ $
 	+	103	23
 	+	103	0
 
-> ~/hateoas/foo.py
-	*	1722785682	0
-	"	1	0
-	.	9	0
-	+	13	0
-	+	1	0
-	+	7	21
-	+	9	0
-
 > ~/hateoas/requirements.txt
 	*	1722785563	0
 	"	16	0
@@ -16787,69 +17950,6 @@ $
 	*	1722772760	0
 	"	2819	5
 
-> ~/.vim/autoload/utils.vim
-	*	1722772169	0
-	"	72	28
-	^	72	29
-	.	72	28
-	+	2	0
-	+	4	21
-	+	38	27
-	+	42	0
-	+	40	0
-	+	42	0
-	+	40	13
-	+	40	17
-	+	40	0
-	+	41	0
-	+	40	40
-	+	41	30
-	+	42	0
-	+	51	0
-	+	37	0
-	+	4	0
-	+	3	7
-	+	40	23
-	+	37	0
-	+	5	21
-	+	40	0
-	+	40	46
-	+	35	10
-	+	40	0
-	+	7	0
-	+	40	0
-	+	32	0
-	+	40	0
-	+	33	0
-	+	34	36
-	+	11	25
-	+	39	37
-	+	43	0
-	+	44	33
-	+	50	0
-	+	49	10
-	+	50	0
-	+	36	0
-	+	2	0
-	+	1	1
-	+	53	35
-	+	79	10
-	+	53	10
-	+	74	44
-	+	58	45
-	+	70	66
-	+	74	36
-	+	71	20
-	+	72	15
-	+	73	16
-	+	75	16
-	+	74	0
-	+	72	28
-
-> /usr/share/vim/vim90/doc/eval.txt
-	*	1722772022	0
-	"	584	1
-
 > ~/python_common/waivek/date.py
 	*	1722771200	0
 	"	65	0
@@ -17255,98 +18355,6 @@ $
 	+	7	14
 	+	8	0
 
-> ~/.vim/plugin/run.vim
-	*	1722635057	0
-	"	67	8
-	^	67	9
-	.	67	0
-	+	15	18
-	+	16	0
-	+	47	0
-	+	29	24
-	+	16	17
-	+	29	0
-	+	16	0
-	+	47	0
-	+	47	17
-	+	47	0
-	+	29	28
-	+	29	0
-	+	47	0
-	+	29	0
-	+	47	0
-	+	45	10
-	+	47	8
-	+	47	15
-	+	47	0
-	+	47	17
-	+	47	20
-	+	47	0
-	+	47	38
-	+	47	15
-	+	47	0
-	+	47	19
-	+	47	0
-	+	47	19
-	+	47	18
-	+	47	8
-	+	47	39
-	+	47	16
-	+	47	0
-	+	29	27
-	+	12	10
-	+	12	0
-	+	3	0
-	+	12	0
-	+	45	12
-	+	51	18
-	+	52	0
-	+	55	8
-	+	57	0
-	+	3	0
-	+	2	0
-	+	3	13
-	+	42	0
-	+	29	0
-	+	42	45
-	+	11	0
-	+	18	0
-	+	19	26
-	+	16	0
-	+	19	33
-	+	20	32
-	+	21	0
-	+	20	0
-	+	35	0
-	+	44	0
-	+	35	0
-	+	34	0
-	+	32	0
-	+	30	0
-	+	31	11
-	+	33	0
-	+	22	0
-	+	33	48
-	+	42	0
-	+	37	12
-	+	42	0
-	+	38	71
-	+	39	37
-	+	40	82
-	+	41	12
-	+	42	0
-	+	43	0
-	+	88	0
-	+	90	0
-	+	88	4
-	+	89	5
-	+	47	0
-	+	46	19
-	+	98	0
-	+	61	22
-	+	68	0
-	+	67	0
-
 > ~/.vim/ide.vim
 	*	1722634940	0
 	"	2	0
@@ -17643,112 +18651,6 @@ $
 > /etc/localtime
 	*	1722598062	0
 	"	1	0
-
-> ~/python_common/waivek/error.py
-	*	1722550267	0
-	"	414	0
-	^	434	27
-	.	434	26
-	+	454	0
-	+	7	0
-	+	254	0
-	+	295	0
-	+	11	7
-	+	11	0
-	+	307	58
-	+	5	0
-	+	24	0
-	+	21	0
-	+	410	36
-	+	436	0
-	+	436	30
-	+	436	0
-	+	411	12
-	+	414	21
-	+	436	0
-	+	414	34
-	+	423	6
-	+	411	17
-	+	423	8
-	+	436	29
-	+	436	0
-	+	429	43
-	+	429	80
-	+	436	0
-	+	429	37
-	+	429	19
-	+	429	0
-	+	436	0
-	+	423	0
-	+	433	34
-	+	436	30
-	+	436	0
-	+	436	49
-	+	436	0
-	+	429	29
-	+	413	4
-	+	413	0
-	+	410	44
-	+	433	29
-	+	363	0
-	+	364	0
-	+	358	8
-	+	359	13
-	+	6	0
-	+	433	0
-	+	416	40
-	+	420	25
-	+	433	0
-	+	425	66
-	+	429	0
-	+	429	71
-	+	430	27
-	+	431	18
-	+	3	0
-	+	417	28
-	+	426	89
-	+	429	47
-	+	422	30
-	+	2	0
-	+	422	7
-	+	427	22
-	+	422	5
-	+	427	35
-	+	422	46
-	+	4	0
-	+	427	51
-	+	429	39
-	+	422	69
-	+	426	35
-	+	422	0
-	+	413	58
-	+	429	41
-	+	418	31
-	+	426	30
-	+	429	0
-	+	423	0
-	+	424	49
-	+	425	25
-	+	424	67
-	+	425	0
-	+	424	8
-	+	426	135
-	+	419	28
-	+	415	24
-	+	423	0
-	+	433	0
-	+	432	0
-	+	428	54
-	+	429	99
-	+	426	40
-	+	433	8
-	+	435	4
-	+	433	29
-	+	435	0
-	+	433	104
-	+	412	19
-	+	433	98
-	+	434	26
 
 > /usr/share/vim/vim90/doc/windows.txt
 	*	1722549159	0
@@ -18361,10 +19263,6 @@ $
 	*	1722486423	0
 	"	239	0
 
-> /usr/share/vim/vim90/doc/userfunc.txt
-	*	1722486403	0
-	"	440	0
-
 > ~/.vim/plugin/sort.vim
 	*	1722485841	0
 	"	1	0
@@ -18465,10 +19363,6 @@ $
 > /usr/share/vim/vim90/doc/pattern.txt
 	*	1722455684	0
 	"	1270	11
-
-> /usr/share/vim/vim90/doc/index.txt
-	*	1722455612	0
-	"	495	0
 
 > /usr/share/vim/vim90/doc/indent.txt
 	*	1722455602	0
@@ -19904,10 +20798,6 @@ $
 > ~/.vim/edit-plugin/file.txt
 	*	1722187293	0
 	"	1	0
-
-> /usr/share/vim/vim90/doc/change.txt
-	*	1722187216	0
-	"	1071	0
 
 > ~/.vim/edit-plugin/database.c
 	*	1722186325	0
@@ -21614,49 +22504,6 @@ $
 	+	13	82
 	+	14	80
 	+	1	0
-
-> ~/.bashrc
-	*	1721416488	0
-	"	1	0
-	.	120	0
-	+	121	0
-	+	121	55
-	+	121	0
-	+	121	47
-	+	124	0
-	+	121	0
-	+	124	0
-	+	123	0
-	+	126	0
-	+	127	0
-	+	120	0
-	+	123	0
-	+	118	0
-	+	120	0
-	+	123	0
-	+	6	5
-	+	5	0
-	+	6	0
-	+	123	0
-	+	109	0
-	+	120	0
-	+	114	5
-	+	115	4
-	+	116	0
-	+	117	4
-	+	115	0
-	+	115	4
-	+	117	0
-	+	116	4
-	+	114	4
-	+	118	0
-	+	112	0
-	+	115	0
-	+	123	0
-	+	121	0
-	+	124	0
-	+	123	0
-	+	120	0
 
 > ~/bash/filter_history_by_file_creation.sh
 	*	1721408400	0
@@ -24977,77 +25824,6 @@ $
 	+	6	9
 	+	7	0
 
-> ~/tooling/my-programming-language.txt
-	*	1719317484	0
-	"	33	71
-	^	48	139
-	.	48	138
-	+	25	65
-	+	27	18
-	+	2	0
-	+	22	0
-	+	4	0
-	+	3	0
-	+	24	0
-	+	3	78
-	+	23	0
-	+	2	0
-	+	22	0
-	+	34	0
-	+	34	4
-	+	34	5
-	+	34	7
-	+	34	5
-	+	34	7
-	+	34	8
-	+	34	6
-	+	34	8
-	+	34	5
-	+	34	3
-	+	34	5
-	+	34	4
-	+	34	8
-	+	34	0
-	+	33	126
-	+	34	45
-	+	34	0
-	+	34	96
-	+	37	0
-	+	34	8
-	+	4	0
-	+	6	11
-	+	8	18
-	+	8	0
-	+	5	42
-	+	6	11
-	+	35	84
-	+	4	0
-	+	7	0
-	+	8	29
-	+	8	18
-	+	8	28
-	+	8	52
-	+	8	56
-	+	9	0
-	+	8	50
-	+	36	29
-	+	46	0
-	+	43	12
-	+	45	47
-	+	42	46
-	+	40	35
-	+	41	24
-	+	39	72
-	+	43	13
-	+	44	49
-	+	46	40
-	+	46	46
-	+	46	50
-	+	46	41
-	+	46	0
-	+	39	0
-	+	48	138
-
 > ~/Twitch/chrome-extensions/extension_controls/content_script.js
 	*	1719317437	0
 	"	50	13
@@ -25565,10 +26341,6 @@ $
 	^	1	14
 	.	1	13
 	+	1	13
-
-> /usr/share/vim/vim90/doc/usr_41.txt
-	*	1718899056	0
-	"	1157	1
 
 > /usr/share/vim/vim90/doc/popup.txt
 	*	1718899040	0
@@ -26559,70 +27331,12 @@ $
 	.	1	13
 	+	1	13
 
-> ~/.vim/syntax/todo.vim
-	*	1718435599	0
-	"	1	0
-	^	23	0
-	.	26	0
-	+	16	75
-	+	16	0
-	+	16	1
-	+	16	14
-	+	20	0
-	+	8	20
-	+	8	21
-	+	14	0
-	+	13	0
-	+	17	32
-	+	10	64
-	+	12	22
-	+	19	0
-	+	12	30
-	+	11	17
-	+	12	30
-	+	18	42
-	+	19	25
-	+	7	2
-	+	16	0
-	+	19	31
-	+	20	23
-	+	25	55
-	+	25	0
-	+	25	45
-	+	25	0
-	+	25	10
-	+	25	30
-	+	25	0
-	+	25	37
-	+	25	45
-	+	26	57
-	+	26	44
-	+	25	0
-	+	26	45
-	+	26	42
-	+	26	0
-	+	25	10
-	+	26	0
-	+	25	0
-	+	25	9
-	+	24	27
-	+	25	34
-	+	26	37
-	+	25	9
-	+	26	40
-	+	22	0
-	+	26	0
-
 > ~/ui-components-css/Highlight test
 	*	1718434890	0
 	"	13	0
 	^	356	44
 	.	50	0
 	+	50	0
-
-> /usr/share/vim/vim90/doc/syntax.txt
-	*	1718434728	0
-	"	3817	0
 
 > ~/ui-components-css/previous-attempts.txt
 	*	1718434338	0
@@ -30036,10 +30750,6 @@ $
 	+	9	8
 	+	7	0
 
-> /usr/share/vim/vim90/doc/digraph.txt
-	*	1716098093	0
-	"	1229	18
-
 > ~/hateoas/download_queue.py
 	*	1716097984	0
 	"	49	8
@@ -30653,12 +31363,6 @@ $
 > ~/.config/config.bash
 	*	1714595231	0
 	"	1	0
-
-> ~/.profile
-	*	1714594789	0
-	"	1	0
-	.	12	0
-	+	12	0
 
 > ~/vimfiles/todo/240502.txt
 	*	1714594063	0
@@ -32635,59 +33339,6 @@ $
 	+	12	20
 	+	13	0
 
-> ~/.config/scripts/gh-timeago.bash
-	*	1713750187	0
-	"	1	0
-	.	3	0
-	+	2	14
-	+	2	0
-	+	3	0
-	+	6	19
-	+	11	0
-	+	12	5
-	+	11	0
-	+	21	33
-	+	14	27
-	+	11	0
-	+	19	0
-	+	14	0
-	+	20	33
-	+	14	0
-	+	11	0
-	+	12	1
-	+	14	0
-	+	19	0
-	+	21	0
-	+	19	0
-	+	12	26
-	+	21	29
-	+	1	1
-	+	8	17
-	+	12	13
-	+	21	13
-	+	8	19
-	+	12	15
-	+	20	15
-	+	21	15
-	+	4	0
-	+	5	6
-	+	20	17
-	+	12	0
-	+	21	0
-	+	20	44
-	+	14	0
-	+	13	0
-	+	21	0
-	+	12	0
-	+	21	0
-	+	20	44
-	+	3	28
-	+	3	27
-	+	3	25
-	+	3	0
-	+	3	37
-	+	3	0
-
 > ~/jobs-python/pylogger.py
 	*	1713749799	0
 	"	1	0
@@ -32922,10 +33573,6 @@ $
 > /tmp/crontab.fEeY3I/crontab
 	*	1713687278	0
 	"	25	24
-
-> /usr/bin/bash
-	*	1713687276	0
-	"	1	0
 
 > /tmp/crontab.uBVNpP/crontab
 	*	1713686549	0
@@ -45092,23 +45739,6 @@ $
 	+	10	17
 	+	19	0
 	+	17	0
-
-> ~/python_common/error.py
-	*	1685152641	0
-	"	334	15
-	^	334	35
-	.	334	34
-	+	307	18
-	+	319	0
-	+	320	0
-	+	308	17
-	+	313	12
-	+	316	14
-	+	318	18
-	+	317	30
-	+	313	26
-	+	317	39
-	+	334	34
 
 > ~/python_common/db.py
 	*	1685152396	0

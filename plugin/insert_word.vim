@@ -72,50 +72,6 @@ function! s:GetWordOrPartialWord(line, index)
     return word
 endfunction
 
-
-function! s:InsertWordFromLineBelowCursor()
-    " case 1, we are above / below a space. in this case, we insert spaces until we reach a word start. we simulate this by getting the line, doing a substitute to only preserve the leading spaces and then appending the spaces to the word
-    " Don’t Merge the two cases, so that if we ever want to change the behaviour, we simply have to revert to the lines marked [refact]ro
-    let l:cursor_index = col('.')-1
-    let l:line_below_cursor = getline(line('.') + 1)
-    let l:prefix = ''
-    let l:charachter = l:line_below_cursor[l:cursor_index]
-    if l:charachter =~ '\s'
-        let l:line_from_charachter = l:line_below_cursor[l:cursor_index:]
-        " only preserve the leading whitespace
-        let l:line_from_charachter = substitute(l:line_from_charachter, '\w.*', '', '')
-        " [refactor] return l:line_from_charachter
-        let l:prefix = l:line_from_charachter
-    endif
-
-    " case 2: we are above a word. in this case, we get the word
-    " [refactor] let l:index = col('.')-1
-    let l:index = len(l:prefix) + col('.')-1
-    let l:word = s:GetWordOrPartialWord(line('.') + 1, l:index)
-    " [refactor] return l:word
-    return l:prefix . l:word
-endfunction
-
-function! s:InsertWordFromLineAboveCursor()
-    let l:cursor_index = col('.')-1
-    let l:line_above_cursor = getline(line('.') - 1)
-    let l:charachter = l:line_above_cursor[l:cursor_index]
-    let l:prefix = ''
-    if l:charachter =~ '\s'
-        let l:line_from_charachter = l:line_above_cursor[l:cursor_index:]
-        " only preserve the leading whitespace
-        let l:line_from_charachter = substitute(l:line_from_charachter, '\w.*', '', '')
-        " [refactor] return l:line_from_charachter
-        let l:prefix = l:line_from_charachter
-    endif
-    " case 2: we are above a word. in this case, we get the word
-    " [refactor] let l:index = col('.')-1
-    let l:index = len(l:prefix) + col('.')-1
-    let l:word = s:GetWordOrPartialWord(line('.') - 1, l:index)
-    " [refactor] return l:word
-    return l:prefix . l:word
-endfunction
-
 function! s:Tokenize(line)
     let l:line = a:line
     " get the starting indices of every character, adjust for multi-byte
@@ -161,23 +117,34 @@ function! s:DemonstrateIndexMapping()
     echo printf("l:subline1: `%s`\nl:subline2: `%s`", l:subline1, l:subline2)
 endfunction
 
+function! s:ReplaceMultibyteCharacterWithSpace(line)
+    return substitute(a:line, '[^x00-x7F]', ' ', 'g')
+endfunction
 
 function! s:InsertWordFromAdjacentLine(current_line, adjacent_line, cursor_index)
+    " problem: multibyte characters mess up cursor_index positions of line and adjacent line
     " case 1, we are above / below a space. in this case, we insert spaces until we reach a word start. we simulate this by getting the line, doing a substitute to only preserve the leading spaces and then appending the spaces to the word
     " Don’t Merge the two cases, so that if we ever want to change the behaviour, we simply have to revert to the lines marked [refact]ro
     let l:prefix = ''
-    let l:character = a:adjacent_line[a:cursor_index]
+    " let l:adjacent_line_without_multibyte = s:ReplaceMultibyteCharacterWithSpace(a:adjacent_line)
+    let l:adjacent_line_without_multibyte = a:adjacent_line
+    let l:character = l:adjacent_line_without_multibyte[a:cursor_index]
     if l:character =~ '\s'
         " only preserve the leading whitespace
-        let l:line_from_character = a:adjacent_line[a:cursor_index:]
+        let l:line_from_character = l:adjacent_line_without_multibyte[a:cursor_index:]
         let l:prefix = substitute(l:line_from_character, '\w.*', '', '')
     endif
 
     " case 2: we are above a word. in this case, we get the word
     let l:index = len(l:prefix) + a:cursor_index
-    let l:word = s:GetWordOrPartialWord(a:adjacent_line, l:index)
+    " let l:word = s:GetWordOrPartialWord(a:adjacent_line, l:index)
+    let l:word = s:GetWordOrPartialWord(l:adjacent_line_without_multibyte, l:index)
     return l:prefix . l:word
 endfunction
 
-imap <expr> <C-y> <SID>InsertWordFromAdjacentLine(getline('.'), getline(line('.') - 1), col('.') - 1)
-imap <expr> <C-e> <SID>InsertWordFromAdjacentLine(getline('.'), getline(line('.') + 1), col('.') - 1)
+
+
+" imap <expr> <C-y> <SID>InsertWordFromAdjacentLine(getline('.'), getline(line('.') - 1), col('.') - 1)
+"
+" " → imap <expr> <C-e> <SID>InsertWordFromAdjacentLine(getline('.'), getline(line('.') + 1), col('.') - 1)
+" imap <expr> <C-e> <SID>InsertWordFromAdjacentLine(getline('.'), getline(line('.') + 1), col('.') - 1)

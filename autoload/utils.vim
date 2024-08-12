@@ -49,7 +49,6 @@ function! utils#path_to_sid(path)
 endfunction
 " }}}
 
-
 function! utils#print_tuple_table(tuples)
     let max_lengths = {}
     for tuple in a:tuples
