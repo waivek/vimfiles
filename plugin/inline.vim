@@ -1,3 +1,7 @@
+" test case 1:
+" x = '/home/vivek/pyscripts'
+" print(x)
+
 let s:test = v:false
 
 function! s:Inline()
@@ -12,8 +16,10 @@ function! s:Inline()
     endif
     let l:rhs = trim(matchstr(l:line, '=\s*\zs.*'))
     let l:lhs = trim(matchstr(l:line, '\S\+\ze\s*=\s*'))
+    let l:rhs_escaped = escape(l:rhs, '/')
     let l:lhs = '\<'.l:lhs.'\>'
-    let l:substitute_command = '.+1s/'.l:lhs.'/'.l:rhs.'/'
+    let l:substitute_command = '.+1s/'.l:lhs.'/'.l:rhs_escaped.'/'
+    echo printf("l:substitute_command = %s", l:substitute_command)
     try
         " ensure 'undo' is a single command and cursor is at the right position
         execute "normal! i "

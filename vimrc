@@ -42,6 +42,7 @@ filetype indent plugin on | syntax on
 call plug#begin()
 " Make sure pyflakes and eslint are installed
 " Install tabular
+Plug 'chrisbra/Colorizer'
 Plug 'joshdick/onedark.vim'
 Plug 'vim-utils/vim-man'
 Plug 'direnv/direnv.vim'
@@ -607,6 +608,7 @@ function! s:TabularizeCharacterUnderCursor()
     let columns = map(untrimmed_columns, {key, val -> trim(val)})
     let alignments = map(columns, function("s:GetAlignment"))
     let tabular_alignment_command = join(alignments, "1c1")
+    echom tabular_alignment_command
     let tabular_command = printf("Tabularize /%s/%s1", character_under_cursor, tabular_alignment_command)
     execute tabular_command
     let @a = tabular_command
