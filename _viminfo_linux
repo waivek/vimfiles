@@ -11,39 +11,431 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/indent
+~MSle0~/\C\<rcLines\>
 
 # Last Substitute Search Pattern:
 ~MSle0&   \s*
 
 # Last Substitute String:
-$f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
+$frames.index(needle_frame)
 
 # Command Line History (newest to oldest):
+:qa
+|2,0,1724278797,,"qa"
 :q
-|2,0,1723677616,,"q"
-:w
-|2,0,1723677616,,"w"
-:Jprevious
-|2,0,1723677543,,"Jprevious"
+|2,0,1724278656,,"q"
+:bd!
+|2,0,1724278655,,"bd!"
 :q!
-|2,0,1723677233,,"q!"
+|2,0,1724278646,,"q!"
+:Rename ipython-debug.py
+|2,0,1724276080,,"Rename ipython-debug.py"
+:Rename
+|2,0,1724276075,,"Rename"
+:MRU 
+|2,0,1724276073,,"MRU "
+:e ~/.pdbrc
+|2,0,1724274278,,"e ~/.pdbrc"
+:echo expand("%:p")
+|2,0,1724274169,,"echo expand(\"%:p\")"
+:pwd
+|2,0,1724274162,,"pwd"
+:e ~/.custompy
+|2,0,1724274147,,"e ~/.custompy"
+:e ~/.
+|2,0,1724274141,,"e ~/."
+:bd
+|2,0,1724273499,,"bd"
+:e
+|2,0,1724270905,,"e"
+:Q!
+|2,0,1724270888,,"Q!"
+:!
+|2,0,1724244698,,"!"
+:UndotreeShow
+|2,0,1724243926,,"UndotreeShow"
+:PlugInstall
+|2,0,1724243918,,"PlugInstall"
+:so %
+|2,0,1724243916,,"so %"
+:b /home/vivek/.vim/vimrc
+|2,0,1724243907,,"b /home/vivek/.vim/vimrc"
+:undo
+|2,0,1724243886,,"undo"
+:edit $MYVIMRC
+|2,0,1724243883,,"edit $MYVIMRC"
+:MRU err
+|2,0,1724221214,,"MRU err"
+:MRU 72:errors.txt
+|2,0,1724220940,,"MRU 72:errors.txt"
+:e ~/Twitch/
+|2,0,1724220937,,"e ~/Twitch/"
+:e waivek/error2.py
+|2,0,1724220881,,"e waivek/error2.py"
+:e waivek/
+|2,0,1724220862,,"e waivek/"
+:MRU error
+|2,0,1724220857,,"MRU error"
+:e foo.py
+|2,0,1724203728,,"e foo.py"
+:CocRestart
+|2,0,1724201189,,"CocRestart"
+:e mycmd.py
+|2,0,1724201175,,"e mycmd.py"
+:MRU 2:pdb2.py
+|2,0,1724201130,,"MRU 2:pdb2.py"
+:e mypdb.py
+|2,0,1724200901,,"e mypdb.py"
+:w
+|2,0,1724200371,,"w"
+:e `
+|2,0,1724200195,,"e `"
+: w!
+|2,0,1724200100,," w!"
+:set clipboard=
+|2,0,1724199808,,"set clipboard="
+:set clipboard?
+|2,0,1724199801,,"set clipboard?"
+:e waivek/testbetterpdb.py
+|2,0,1724199583,,"e waivek/testbetterpdb.py"
+:196
+|2,0,1724198485,,"196"
+:473
+|2,0,1724198423,,"473"
+:398
+|2,0,1724198306,,"398"
+:Rename betterpdb.py
+|2,0,1724198032,,"Rename betterpdb.py"
+:e dist/
+|2,0,1724198021,,"e dist/"
+:e waivek/BetterPdb.py
+|2,0,1724198009,,"e waivek/BetterPdb.py"
+:call <SNR>81_NextUpper()
+|2,0,1724197964,,"call <SNR>81_NextUpper()"
+:Lines
+|2,0,1724197024,,"Lines"
+:lines
+|2,0,1724197022,,"lines"
+:echo
+|2,0,1724196773,,"echo"
+::
+|2,0,1724196764,,":"
 :term
-|2,0,1723676922,,"term"
+|2,0,1724196758,,"term"
+:.!q!
+|2,0,1724196670,,".!q!"
+:call RHEF()
+|2,0,1724196623,,"call RHEF()"
+:call RHEF(
+|2,0,1724196621,,"call RHEF("
+:Capture PrintPersonalMappings
+|2,0,1724196554,,"Capture PrintPersonalMappings"
+:CapturePrintPersonalMappings
+|2,0,1724196550,,"CapturePrintPersonalMappings"
+:PrintPersonalMappings
+|2,0,1724196546,,"PrintPersonalMappings"
+:abbrev jk
+|2,0,1724196538,,"abbrev jk"
+:map jk
+|2,0,1724196531,,"map jk"
+:map 
+|2,0,1724196526,,"map "
+:alias jk
+|2,0,1724196524,,"alias jk"
+:messages
+|2,0,1724196217,,"messages"
+:echo v:servername 
+|2,0,1724196184,,"echo v:servername "
+:echo v:servername == ""
+|2,0,1724196182,,"echo v:servername == \"\""
+:h :term
+|2,0,1724195964,,"h :term"
+:h 
+|2,0,1724195962,,"h "
+:h term
+|2,0,1724195958,,"h term"
+:set shell?
+|2,0,1724195957,,"set shell?"
+:MRU run
+|2,0,1724195814,,"MRU run"
+:echom "HI"
+|2,0,1724195477,,"echom \"HI\""
+::call RHEF('/home/vivek/.vim/tmp/handler_error.txt', 4)
+|2,0,1724195391,,":call RHEF('/home/vivek/.vim/tmp/handler_error.txt', 4)"
+:.q!
+|2,0,1724195350,,".q!"
+:qa!
+|2,0,1724195260,,"qa!"
+:echo v:servername
+|2,0,1724195165,,"echo v:servername"
+:echo has('clientserver')
+|2,0,1724195127,,"echo has('clientserver')"
+:h clientserver
+|2,0,1724195051,,"h clientserver"
+:h --servername
+|2,0,1724194940,,"h --servername"
+:Jprevious
+|2,0,1724194643,,"Jprevious"
+:MRU 62:/home/vivek/python_common/waivek/error.py
+|2,0,1724194575,,"MRU 62:/home/vivek/python_common/waivek/error.py"
+:MRU 1:error.py
+|2,0,1724194570,,"MRU 1:error.py"
+:~/.pd
+|2,0,1724193910,,"~/.pd"
+:e ~/.python_history
+|2,0,1724193907,,"e ~/.python_history"
+:e dateutils.py
+|2,0,1724186448,,"e dateutils.py"
+:MRU 6:errors_as_values.py
+|2,0,1724186441,,"MRU 6:errors_as_values.py"
+:MRU 4:log.py
+|2,0,1724186436,,"MRU 4:log.py"
+:e 
+|2,0,1724186433,,"e "
+:Template
+|2,0,1724186331,,"Template"
+:e .envrc
+|2,0,1724186188,,"e .envrc"
+:e $(pwd)
+|2,0,1724186186,,"e $(pwd)"
+:e waivek/log.py
+|2,0,1724186177,,"e waivek/log.py"
+:e ~/python
+|2,0,1724186135,,"e ~/python"
+:lnex
+|2,0,1724186029,,"lnex"
+:ll
+|2,0,1724186027,,"ll"
+:CopyToHost
+|2,0,1724114644,,"CopyToHost"
+:next
+|2,0,1724114590,,"next"
+:e oldfiles.go
+|2,0,1724114227,,"e oldfiles.go"
+:e ~/.vim/_viminfo_linux
+|2,0,1724113957,,"e ~/.vim/_viminfo_linux"
+:MRU _vimin
+|2,0,1724113952,,"MRU _vimin"
+:e oldfiles2.go
+|2,0,1724113642,,"e oldfiles2.go"
+:e pwd-oldfiles.go
+|2,0,1724113480,,"e pwd-oldfiles.go"
+:DoMatchParen
+|2,0,1724113467,,"DoMatchParen"
+:Doc
+|2,0,1724113464,,"Doc"
+:Copilot
+|2,0,1724113208,,"Copilot"
+:e ca
+|2,0,1724113012,,"e ca"
+:e c
+|2,0,1724113010,,"e c"
+:e ../bash/oldfiles.bash
+|2,0,1724112259,,"e ../bash/oldfiles.bash"
+:e golang-output.txt
+|2,0,1724112206,,"e golang-output.txt"
+:diffthis
+|2,0,1724112074,,"diffthis"
+:set 
+|2,0,1724111875,,"set "
+:set nonumber
+|2,0,1724111869,,"set nonumber"
+:e pwd-oldfiles.py
+|2,0,1724111842,,"e pwd-oldfiles.py"
+:MRU pwd-oldfiles.
+|2,0,1724111839,,"MRU pwd-oldfiles."
+:cd pyscripts/
+|2,0,1724111823,,"cd pyscripts/"
+:e hello-go/pwd-oldfiles.go
+|2,0,1724111799,,"e hello-go/pwd-oldfiles.go"
+:e hello-go/pwd-oldfiles
+|2,0,1724111796,,"e hello-go/pwd-oldfiles"
+:MRU 2:oldfiles.go
+|2,0,1724111730,,"MRU 2:oldfiles.go"
+:!python3 %
+|2,0,1724111702,,"!python3 %"
 :!python %
-|2,0,1723674050,,"!python %"
+|2,0,1724111697,,"!python %"
+:e ~/pyscripts/oldfiles.py
+|2,0,1724111690,,"e ~/pyscripts/oldfiles.py"
+:e hello-go/oldfiles.go
+|2,0,1724111651,,"e hello-go/oldfiles.go"
+:q1
+|2,0,1724111441,,"q1"
+:e port.py
+|2,0,1724109074,,"e port.py"
+:MRU run.vim
+|2,0,1724109015,,"MRU run.vim"
+:vert term
+|2,0,1724108732,,"vert term"
+:b ~/python_common/waivek/log.py
+|2,0,1724107924,,"b ~/python_common/waivek/log.py"
+:b!# | bd! #
+|2,0,1724107919,,"b!# | bd! #"
+:Rg
+|2,0,1724107892,,"Rg"
+:grep
+|2,0,1724107878,,"grep"
+:e output1.txt
+|2,0,1724107078,,"e output1.txt"
+:e first.log
+|2,0,1724076629,,"e first.log"
+:e file.log
+|2,0,1724076623,,"e file.log"
+:AnsiEsc
+|2,0,1724024609,,"AnsiEsc"
+:ANsi
+|2,0,1724024606,,"ANsi"
+:A
+|2,0,1724024320,,"A"
+:MRU mak
+|2,0,1724024205,,"MRU mak"
+:!bat %
+|2,0,1724024006,,"!bat %"
+:e requirements.txt
+|2,0,1724023715,,"e requirements.txt"
+:e make_first_log_file.py
+|2,0,1724023702,,"e make_first_log_file.py"
+:MRU py
+|2,0,1724023595,,"MRU py"
+:b
+|2,0,1724023592,,"b"
+:e do_log.py
+|2,0,1724023461,,"e do_log.py"
+:Rename make_first_log_file.py
+|2,0,1724023118,,"Rename make_first_log_file.py"
+:e .
+|2,0,1724023077,,"e ."
+:e ~/python_staging/second.log
+|2,0,1724023068,,"e ~/python_staging/second.log"
+:MRU 4:syntax/ansilog.vim
+|2,0,1724023052,,"MRU 4:syntax/ansilog.vim"
+:MRU ansi
+|2,0,1724023044,,"MRU ansi"
+:MRU 6:file.log
+|2,0,1724023041,,"MRU 6:file.log"
+:MRU .log
+|2,0,1724023037,,"MRU .log"
+:Ans
+|2,0,1724022971,,"Ans"
+:e ~/tmp/second.log
+|2,0,1724022947,,"e ~/tmp/second.log"
+:hi ansiColorGreen
+|2,0,1724022790,,"hi ansiColorGreen"
+:hi ansiColorBlue
+|2,0,1724022750,,"hi ansiColorBlue"
+:MRU 7:syntax/ansilog.vim
+|2,0,1724022722,,"MRU 7:syntax/ansilog.vim"
+:MRU 53:tmp/file.ansilog
+|2,0,1724022716,,"MRU 53:tmp/file.ansilog"
+:V
+|2,0,1724022381,,"V"
+:hi
+|2,0,1724022303,,"hi"
+:e!
+|2,0,1724022286,,"e!"
+:verbose hi ansiColorBlack
+|2,0,1724022239,,"verbose hi ansiColorBlack"
+:colo nord
+|2,0,1724022233,,"colo nord"
+:hi ansiColorBlack
+|2,0,1724022210,,"hi ansiColorBlack"
+:hi ansiColor0
+|2,0,1724022205,,"hi ansiColor0"
+:hi ansiColor1
+|2,0,1724022190,,"hi ansiColor1"
+:syntax on
+|2,0,1724022174,,"syntax on"
+:syntax off
+|2,0,1724022170,,"syntax off"
+:e ../ftplugin/ansilog.vim
+|2,0,1724021944,,"e ../ftplugin/ansilog.vim"
+:e ansilog.vim
+|2,0,1724021939,,"e ansilog.vim"
+:set ft=ansilog
+|2,0,1724021895,,"set ft=ansilog"
+:setlocal conceallevel
+|2,0,1724021785,,"setlocal conceallevel"
+:enew
+|2,0,1724021739,,"enew"
+:MRU ansilo
+|2,0,1724021729,,"MRU ansilo"
+:set conceallevel=
+|2,0,1724021704,,"set conceallevel="
+:Ftplugin
+|2,0,1724021683,,"Ftplugin"
+:e file.ansilog
+|2,0,1724021679,,"e file.ansilog"
+:ColorHighlight
+|2,0,1724021650,,"ColorHighlight"
+:Colors
+|2,0,1724021645,,"Colors"
+:ColorClear
+|2,0,1724021641,,"ColorClear"
+:MRU 2:worker_oldfiles_to_sqlite.py
+|2,0,1724015654,,"MRU 2:worker_oldfiles_to_sqlite.py"
+:!rm data/oldfiles.db
+|2,0,1724015544,,"!rm data/oldfiles.db"
+:e data/python-error-library-repo-stats.json
+|2,0,1724014167,,"e data/python-error-library-repo-stats.json"
+:e oldfiles.py
+|2,0,1724014102,,"e oldfiles.py"
+:e worker_oldfiles_to_sqlite.py
+|2,0,1724014097,,"e worker_oldfiles_to_sqlite.py"
+:MRU l
+|2,0,1724012081,,"MRU l"
+:e ~/python_common/waivek/log.py
+|2,0,1724011902,,"e ~/python_common/waivek/log.py"
+:MRU do_log
+|2,0,1724011877,,"MRU do_log"
+:29
+|2,0,1723999491,,"29"
+:MRU id
+|2,0,1723998926,,"MRU id"
+:b vim
+|2,0,1723998925,,"b vim"
+:find ide.vim
+|2,0,1723997173,,"find ide.vim"
+:CocConfig
+|2,0,1723997135,,"CocConfig"
+:e pyrightconfig.json
+|2,0,1723997051,,"e pyrightconfig.json"
+:MRU errors.
+|2,0,1723938424,,"MRU errors."
+:el
+|2,0,1723938307,,"el"
+:e errors_as_values.py
+|2,0,1723938200,,"e errors_as_values.py"
+:MRU 225:python-error-traceback-prettify-libs.txt
+|2,0,1723937132,,"MRU 225:python-error-traceback-prettify-libs.txt"
+:CocOutline
+|2,0,1723934384,,"CocOutline"
+:e ~/tooling/errors.txt
+|2,0,1723748776,,"e ~/tooling/errors.txt"
+:e error_example.py
+|2,0,1723747839,,"e error_example.py"
+:set foldmethod=manual
+|2,0,1723746669,,"set foldmethod=manual"
+:MRU pyri
+|2,0,1723746647,,"MRU pyri"
+:h vim-markdown
+|2,0,1723741994,,"h vim-markdown"
+:filter /markdown/ scriptnames
+|2,0,1723741986,,"filter /markdown/ scriptnames"
+:scriptnames
+|2,0,1723741980,,"scriptnames"
+:set foldmethod=
+|2,0,1723741958,,"set foldmethod="
+:set foldmethod =
+|2,0,1723741956,,"set foldmethod ="
+:set foldmethod?
+|2,0,1723741950,,"set foldmethod?"
+:Rename functional-programming-concepts.md
+|2,0,1723741924,,"Rename functional-programming-concepts.md"
 :x
 |2,0,1723673829,,"x"
-:e
-|2,0,1723673716,,"e"
-:syntax on
-|2,0,1723673714,,"syntax on"
-:syntax off
-|2,0,1723673712,,"syntax off"
 :MRU todo.tx
 |2,0,1723673005,,"MRU todo.tx"
-:bd
-|2,0,1723672635,,"bd"
 :e getdbpaths.py
 |2,0,1723672619,,"e getdbpaths.py"
 :MRU editor-api
@@ -60,12 +452,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,0,1723672597,,"Old"
 :MRU hateo
 |2,0,1723672592,,"MRU hateo"
-:CocRestart
-|2,0,1723671970,,"CocRestart"
-:Template
-|2,0,1723671765,,"Template"
-:hi ansiColorGreen
-|2,0,1723669612,,"hi ansiColorGreen"
 :MRU 15:file.ansilog
 |2,0,1723669600,,"MRU 15:file.ansilog"
 :Tab / - /l0
@@ -102,12 +488,8 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,0,1723658789,,"Tabularize /-/r0"
 :Capture filter /gt/ PrintPersonalMappings
 |2,0,1723658781,,"Capture filter /gt/ PrintPersonalMappings"
-:so %
-|2,0,1723658755,,"so %"
 :filter /gt/ PrintPersonalMappings
 |2,0,1723658675,,"filter /gt/ PrintPersonalMappings"
-:PrintPersonalMappings
-|2,0,1723658665,,"PrintPersonalMappings"
 ::Tab /-/l1r1
 |2,0,1723658491,,":Tab /-/l1r1"
 ::Tab /-/l0r0
@@ -130,8 +512,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,0,1723658161,,"verbose set isk"
 :Files data/
 |2,0,1723658136,,"Files data/"
-:qa
-|2,0,1723642469,,"qa"
 :MRU alias
 |2,0,1723642441,,"MRU alias"
 :e pwd-oldfiles.bash
@@ -144,20 +524,12 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,0,1723624766,,"hi ansiColorRed"
 :e ~/python_common/waivek/color.py
 |2,0,1723624730,,"e ~/python_common/waivek/color.py"
-:MRU 
-|2,0,1723624717,,"MRU "
 ::term
 |2,0,1723624689,,":term"
 :filter /ansi/ hi
 |2,0,1723624646,,"filter /ansi/ hi"
-:hi
-|2,0,1723624640,,"hi"
 :hi ansiColo
 |2,0,1723624639,,"hi ansiColo"
-:hi ansiColorBlue
-|2,0,1723624634,,"hi ansiColorBlue"
-:set ft=ansilog
-|2,0,1723624503,,"set ft=ansilog"
 :MRU do
 |2,0,1723624498,,"MRU do"
 :set concealcursor=nvc
@@ -174,20 +546,10 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,0,1723624102,,"MRU dow"
 :e tmp/file.ansilog
 |2,0,1723624099,,"e tmp/file.ansilog"
-:e 
-|2,0,1723624088,,"e "
 :e ~/.vim/syntax/ansilog.vim
 |2,0,1723624033,,"e ~/.vim/syntax/ansilog.vim"
-:!
-|2,0,1723589161,,"!"
-:e!
-|2,0,1723589159,,"e!"
 :%!bat %
 |2,0,1723589152,,"%!bat %"
-:!bat %
-|2,0,1723589139,,"!bat %"
-:ColorHighlight
-|2,0,1723589127,,"ColorHighlight"
 :e ~/tmp/colors.txt
 |2,0,1723589110,,"e ~/tmp/colors.txt"
 :let g:colorizer_conceal_cursor_mode='nvc'
@@ -202,16 +564,10 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,0,1723588890,,"set termguicolors?"
 :set termguicolors
 |2,0,1723588885,,"set termguicolors"
-:ColorClear
-|2,0,1723588868,,"ColorClear"
 :MRU 2:chat_download_worker-blue.log
 |2,0,1723588862,,"MRU 2:chat_download_worker-blue.log"
-:PlugInstall
-|2,0,1723588852,,"PlugInstall"
 :Pl
 |2,0,1723588848,,"Pl"
-:edit $MYVIMRC
-|2,0,1723588838,,"edit $MYVIMRC"
 :e chat_download_worker-blue.log
 |2,0,1723588484,,"e chat_download_worker-blue.log"
 :e download_worker-red.log
@@ -222,14 +578,8 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,0,1723586892,,"118"
 :set
 |2,0,1723586696,,"set"
-:CocConfig
-|2,0,1723586205,,"CocConfig"
-:e .envrc
-|2,0,1723586170,,"e .envrc"
 :e .e
 |2,0,1723586165,,"e .e"
-:e requirements.txt
-|2,0,1723585949,,"e requirements.txt"
 :MRU down
 |2,0,1723583952,,"MRU down"
 :MRU exa
@@ -244,8 +594,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,0,1723582751,,"find download_worker-red.log"
 :find README.md
 |2,0,1723582743,,"find README.md"
-:next
-|2,0,1723582730,,"next"
 :first
 |2,0,1723582729,,"first"
 :prev
@@ -274,8 +622,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,0,1723556487,,"MRU python"
 :MRU envrc
 |2,0,1723556481,,"MRU envrc"
-:messages
-|2,0,1723555892,,"messages"
 :HotReload
 |2,0,1723555888,,"HotReload"
 :MRU 1:inline.vim
@@ -286,8 +632,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,0,1723555763,,"MRU inline"
 :MRU indlin
 |2,0,1723555730,,"MRU indlin"
-:Rg
-|2,0,1723497682,,"Rg"
 :gre
 |2,0,1723497681,,"gre"
 :e date
@@ -316,12 +660,8 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,0,1723481523,,"e to"
 :verbose set v:errmsg
 |2,0,1723474772,,"verbose set v:errmsg"
-:b!# | bd! #
-|2,0,1723474758,,"b!# | bd! #"
 :Isolate /v:\w*/
 |2,0,1723474697,,"Isolate /v:\\w*/"
-:enew
-|2,0,1723474689,,"enew"
 :cn
 |2,0,1723474672,,"cn"
 :helpgrep v:throwpoint
@@ -362,8 +702,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,0,1723472058,,"MRU prog"
 :MRU 3:errors.vim
 |2,0,1723472056,,"MRU 3:errors.vim"
-:bd!
-|2,0,1723472054,,"bd!"
 :e waivek/error.py
 |2,0,1723463349,,"e waivek/error.py"
 :e erro
@@ -390,8 +728,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,0,1723461896,,"h ansi"
 :!start % 
 |2,0,1723461710,,"!start % "
-:pwd
-|2,0,1723461583,,"pwd"
 :MRU error.py
 |2,0,1723461563,,"MRU error.py"
 :s
@@ -404,8 +740,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,0,1723459861,,"10"
 :MRU uti
 |2,0,1723457912,,"MRU uti"
-:MRU run
-|2,0,1723457831,,"MRU run"
 :h run.vim
 |2,0,1723457829,,"h run.vim"
 :h List
@@ -422,8 +756,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,0,1723457688,,"h map-self-destroy"
 :h g:ale_python_pycodestyle_options
 |2,0,1723457685,,"h g:ale_python_pycodestyle_options"
-:e foo.py
-|2,0,1723457333,,"e foo.py"
 :h builtin
 |2,0,1723456168,,"h builtin"
 :h >frame
@@ -458,8 +790,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,0,1723419992,,"e insert_word.vim"
 :set nowrap
 |2,0,1723419906,,"set nowrap"
-:MRU py
-|2,0,1723419464,,"MRU py"
 :set wrap
 |2,0,1723418688,,"set wrap"
 :so%
@@ -486,8 +816,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,0,1723281097,,"set tw?"
 :h todo
 |2,0,1723280942,,"h todo"
-:Ftplugin
-|2,0,1723278427,,"Ftplugin"
 :MRU 132:python_common/waivek/todo.txt
 |2,0,1723278167,,"MRU 132:python_common/waivek/todo.txt"
 :MRU 342:ui-components-css/ui-components-css.todo
@@ -498,8 +826,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,0,1723277888,,"find todo.txt"
 :set path?
 |2,0,1723277879,,"set path?"
-:Lines
-|2,0,1723277014,,"Lines"
 :Tod
 |2,0,1723276753,,"Tod"
 :MRU todo.t
@@ -512,8 +838,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,0,1723242379,,"imap <expr> <C-e>"
 :imap <expr>
 |2,0,1723242372,,"imap <expr>"
-:Capture PrintPersonalMappings
-|2,0,1723240758,,"Capture PrintPersonalMappings"
 :Maps
 |2,0,1723240750,,"Maps"
 :h <Plug>
@@ -580,14 +904,10 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,0,1723056335,,"MRU sync_"
 :MRU python.sh
 |2,0,1723015106,,"MRU python.sh"
-:b
-|2,0,1722987123,,"b"
 :LogWriteToDatabase
 |2,0,1722987022,,"LogWriteToDatabase"
 :e transcription_to_offset.py
 |2,0,1722981588,,"e transcription_to_offset.py"
-:CopyToHost
-|2,0,1722980338,,"CopyToHost"
 :e 2199687421_01h28m08s_120s.tsv
 |2,0,1722980334,,"e 2199687421_01h28m08s_120s.tsv"
 :e 2199424572_06h52m18s_120s.tsv
@@ -616,8 +936,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,0,1722964491,,"call <SNR>56_VisualSelect(<SNR>56_CurrentFnameBigA())"
 :e download_portionurl.py
 |2,0,1722964186,,"e download_portionurl.py"
-:e .
-|2,0,1722963302,,"e ."
 :e transcribe_audio
 |2,0,1722962926,,"e transcribe_audio"
 :Rename download_audio_portion.py
@@ -646,8 +964,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,0,1722961303,,"MRU inline.vim"
 :kkkkkk
 |2,0,1722961179,,"kkkkkk"
-:diffthis
-|2,0,1722892592,,"diffthis"
 :CocList diagnostics
 |2,0,1722889208,,"CocList diagnostics"
 :lopen
@@ -756,8 +1072,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,0,1722726999,,"j"
 :e d
 |2,0,1722725576,,"e d"
-:e pyrightconfig.json
-|2,0,1722725575,,"e pyrightconfig.json"
 :e ~/
 |2,0,1722725147,,"e ~/"
 :e ~/tooling/python-error-traceback-prettify-libs.txt
@@ -786,8 +1100,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,0,1722716799,,"MRU .vim"
 :e waivek/loglib.py
 |2,0,1722705098,,"e waivek/loglib.py"
-:e waivek/log.py
-|2,0,1722705094,,"e waivek/log.py"
 :MRU log.py
 |2,0,1722705089,,"MRU log.py"
 :Rename python-oldfiles-length.vim
@@ -820,12 +1132,8 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,0,1722704235,,"echo filter"
 :OpenDB
 |2,0,1722704205,,"OpenDB"
-:e file.log
-|2,0,1722642145,,"e file.log"
 :e loglib.py
 |2,0,1722641018,,"e loglib.py"
-:MRU run.vim
-|2,0,1722635025,,"MRU run.vim"
 :CocInstall
 |2,0,1722634935,,"CocInstall"
 :CocInsatll
@@ -890,8 +1198,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,0,1722589724,,"map \\f"
 :H coc-nvim
 |2,0,1722589607,,"H coc-nvim"
-:qa!
-|2,0,1722550313,,"qa!"
 :g
 |2,0,1722549593,,"g"
 :h g:coc_max_treeview_width
@@ -1174,8 +1480,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,0,1722479796,,"filter /\\~/ scriptnames"
 :filter /~/ scriptnames
 |2,0,1722479792,,"filter /~/ scriptnames"
-:scriptnames
-|2,0,1722479775,,"scriptnames"
 :e ../autoload/plug.vim
 |2,0,1722479771,,"e ../autoload/plug.vim"
 :e au
@@ -1272,16 +1576,12 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,0,1722454447,," w ~/.vim/tmp/"
 :MRU 2:table.py
 |2,0,1722447889,,"MRU 2:table.py"
-:set nonumber
-|2,0,1722398839,,"set nonumber"
 :grep -g '*.py' rich.*Table
 |2,0,1722398164,,"grep -g '*.py' rich.*Table"
 :grep -g '*.py' --fixed-strings rich.*Table
 |2,0,1722398156,,"grep -g '*.py' --fixed-strings rich.*Table"
 :grep -g '*.py' --fixed-strings rich
 |2,0,1722398138,,"grep -g '*.py' --fixed-strings rich"
-:grep
-|2,0,1722398128,,"grep"
 :e dbutils.py
 |2,0,1722395102,,"e dbutils.py"
 :e Con
@@ -1294,8 +1594,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,0,1722369337,,"e date.py"
 :MRU 30:date.py
 |2,0,1722369286,,"MRU 30:date.py"
-:ll
-|2,0,1722369128,,"ll"
 : w print-colors-lister.py
 |2,0,1722365988,," w print-colors-lister.py"
 :%s
@@ -1382,8 +1680,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,0,1722239237,,"echo expand(\"%:e\")"
 :echo expand("%:t")
 |2,0,1722239234,,"echo expand(\"%:t\")"
-:!python3 %
-|2,0,1722238497,,"!python3 %"
 :cclose
 |2,0,1722237702,,"cclose"
 :grep -g '*.py' --fixed-strings get_lock_path
@@ -1546,8 +1842,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,0,1722124372,,"helpgrep sqlite"
 :h dll
 |2,0,1722124366,,"h dll"
-:h 
-|2,0,1722124360,,"h "
 :e lsp2.py
 |2,0,1722115365,,"e lsp2.py"
 :Coc
@@ -1562,8 +1856,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,0,1722111882,,"h map-<script>"
 :b ~/.vim/plugin/print-personal-mappings.vim
 |2,0,1722111846,,"b ~/.vim/plugin/print-personal-mappings.vim"
-:b /home/vivek/.vim/vimrc
-|2,0,1722111797,,"b /home/vivek/.vim/vimrc"
 :e ~/.vim/mappings.vim
 |2,0,1722111780,,"e ~/.vim/mappings.vim"
 :map gf
@@ -1576,8 +1868,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,0,1722111716,,"h gf"
 :h isf
 |2,0,1722111705,,"h isf"
-:set 
-|2,0,1722111704,,"set "
 :e plugin/gf.vim
 |2,0,1722111640,,"e plugin/gf.vim"
 :207
@@ -1878,8 +2168,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,0,1721480289,,"'<,'>"
 :call CocActionAsync('coc-list-symbols')
 |2,0,1721480273,,"call CocActionAsync('coc-list-symbols')"
-:CocOutline
-|2,0,1721480259,,"CocOutline"
 :CocOutline funciton
 |2,0,1721480256,,"CocOutline funciton"
 :CocOutline f
@@ -2234,8 +2522,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,0,1720766698,,"echo expand(\"%:p:b\")"
 :echo expand("%:p:h")
 |2,0,1720766694,,"echo expand(\"%:p:h\")"
-:echo expand("%:p")
-|2,0,1720766687,,"echo expand(\"%:p\")"
 :e ~/.gitignore
 |2,0,1720766678,,"e ~/.gitignore"
 :MRU .gi
@@ -2338,8 +2624,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,0,1720367029,,"h escape("
 :set shellslash?
 |2,0,1720366796,,"set shellslash?"
-:set shell?
-|2,0,1720366788,,"set shell?"
 :map <C-c>
 |2,0,1720366427,,"map <C-c>"
 :imap 
@@ -2476,8 +2760,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,0,1718974427,,"set clipboard=unnamedplus"
 :verbose set clipboard
 |2,0,1718974422,,"verbose set clipboard"
-:set clipboard?
-|2,0,1718974416,,"set clipboard?"
 :Hot
 |2,0,1718974369,,"Hot"
 :h clipboard
@@ -2898,8 +3180,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,0,1718269816,,"e flask-history.py"
 :e *.html
 |2,0,1718269812,,"e *.html"
-:e ~/Twitch/
-|2,0,1718269806,,"e ~/Twitch/"
 :FIND tailwind.config.js
 |2,0,1718269797,,"FIND tailwind.config.js"
 :MRU ui
@@ -3300,8 +3580,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,0,1717883207,,"colo onedark"
 :hi ClapDisplay
 |2,0,1717883203,,"hi ClapDisplay"
-:colo nord
-|2,0,1717883197,,"colo nord"
 :col
 |2,0,1717883186,,"col"
 :colo apprentice
@@ -3374,8 +3652,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,0,1717657983,,"CocList errors"
 :register
 |2,0,1717650874,,"register"
-:e ~/.vim/_viminfo_linux
-|2,0,1717650653,,"e ~/.vim/_viminfo_linux"
 :MRU _vim
 |2,0,1717650648,,"MRU _vim"
 :683
@@ -3758,8 +4034,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,0,1716884645,,"81"
 :MRU state
 |2,0,1716884580,,"MRU state"
-:Q!
-|2,0,1716884188,,"Q!"
 :144
 |2,0,1716864328,,"144"
 :145
@@ -3874,8 +4148,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,0,1716550006,,"e tztypes.py"
 :MRU 1:__init__.py
 |2,0,1716549250,,"MRU 1:__init__.py"
-:e dateutils.py
-|2,0,1716547996,,"e dateutils.py"
 :MRU 120:gh-timeago-updates.log
 |2,0,1716546466,,"MRU 120:gh-timeago-updates.log"
 :MRU 65:download_worker-red.log
@@ -3892,8 +4164,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,0,1716545095,,"e update-"
 :e .github/workflows/scrapecrk.yml
 |2,0,1716505054,,"e .github/workflows/scrapecrk.yml"
-:e ~/.
-|2,0,1716505049,,"e ~/."
 :MRU workflow
 |2,0,1716505046,,"MRU workflow"
 :Rename get_chrome_and_chromedriver.bash
@@ -4284,8 +4554,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,0,1714633198,,"echo coc#statusasdf()"
 :echo coc#statusasdf
 |2,0,1714633197,,"echo coc#statusasdf"
-:echo
-|2,0,1714633190,,"echo"
 :CocCommand workspace.showOutput
 |2,0,1714631543,,"CocCommand workspace.showOutput"
 :h coc
@@ -4436,8 +4704,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,0,1714328161,,"norm"
 :MRU 4:cron-concerns.txt
 |2,0,1714328077,,"MRU 4:cron-concerns.txt"
-:e c
-|2,0,1714308247,,"e c"
 :e /bin/sh
 |2,0,1714307241,,"e /bin/sh"
 :normal! 80p
@@ -4534,8 +4800,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,0,1714046148,,"e *."
 :e run-download.bash
 |2,0,1714045943,,"e run-download.bash"
-:Rename
-|2,0,1714043116,,"Rename"
 :!start everything -path . run
 |2,0,1714041379,,"!start everything -path . run"
 :S
@@ -4618,8 +4882,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,0,1713951564,,"e types.py"
 :e stat
 |2,0,1713942801,,"e stat"
-:Copilot
-|2,0,1713939862,,"Copilot"
 :sqlite3 
 |2,0,1713932902,,"sqlite3 "
 :Vd
@@ -4756,8 +5018,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,0,1713847066,,"e migrations/240425_0000_portionurls-notnull-user_id.py"
 :Join
 |2,0,1713846969,,"Join"
-:V
-|2,0,1713802925,,"V"
 :e migrations/
 |2,0,1713802891,,"e migrations/"
 :VD data/po
@@ -6086,8 +6346,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,0,1709847753,,"e ../composables/usePlayer.ts"
 :MRU Twit
 |2,0,1709773186,,"MRU Twit"
-:lnex
-|2,0,1709772754,,"lnex"
 :MRU Tw
 |2,0,1709772439,,"MRU Tw"
 :MRU V
@@ -6328,8 +6586,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,0,1694701312,,"esche"
 :e videos.py
 |2,0,1694701205,,"e videos.py"
-:h :term
-|2,0,1694419457,,"h :term"
 :terminal (cd .. && python)
 |2,0,1694419391,,"terminal (cd .. && python)"
 :terminal cd .. && python
@@ -7282,8 +7538,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,0,1693223627,,"FZF --"
 :FileGrep import
 |2,0,1693223599,,"FileGrep import"
-::
-|2,0,1693223557,,":"
 :e completions/load_completions.sh
 |2,0,1693207680,,"e completions/load_completions.sh"
 :MRU starshi
@@ -7440,8 +7694,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,0,1692811036,,"b waivek"
 :MRU wa
 |2,0,1692811034,,"MRU wa"
-:A
-|2,0,1692810883,,"A"
 :find vite-env.d.ts
 |2,0,1692810858,,"find vite-env.d.ts"
 :find Vid
@@ -7624,8 +7876,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,0,1692637738,,"b components/Videos.vue"
 :MRU 182:users.sql
 |2,0,1692637505,,"MRU 182:users.sql"
-:vert term
-|2,0,1692636913,,"vert term"
 :vt
 |2,0,1692636904,,"vt"
 :terminal rst2html5.py
@@ -7978,8 +8228,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,0,1691941041,,"e pages/page2.vue"
 :e pages/
 |2,0,1691941039,,"e pages/"
-:e dist/
-|2,0,1691939873,,"e dist/"
 :e yt_videos.js
 |2,0,1691938674,,"e yt_videos.js"
 :MRU waive
@@ -8662,8 +8910,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,0,1690596028,,"CocUninstall "
 :e /usr/local/
 |2,0,1690595301,,"e /usr/local/"
-:MRU id
-|2,0,1690594985,,"MRU id"
 :echo g:ale_javascript_eslint_options
 |2,0,1690594888,,"echo g:ale_javascript_eslint_options"
 :e ~/.vim/lint/eslint_config.json
@@ -8822,8 +9068,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,0,1688808433,,"e curl_integrity.sh"
 :e curl_gql_comments.sh
 |2,0,1688808117,,"e curl_gql_comments.sh"
-:e ~/.pdbrc
-|2,0,1688800631,,"e ~/.pdbrc"
 :MRU pdbrc
 |2,0,1688800625,,"MRU pdbrc"
 :e twitch_utilities.py
@@ -9364,6 +9608,114 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/pdbrc
+|2,1,1724273999,47,"pdbrc"
+?/pypirc
+|2,1,1724273995,47,"pypirc"
+? \<needle_index\>
+|2,1,1724270745,,"\\<needle_index\\>"
+?/undo
+|2,1,1724243888,47,"undo"
+?/\(def\|class\)\s\+\w*setup
+|2,1,1724243839,47,"\\(def\\|class\\)\\s\\+\\w*setup"
+?/setup(
+|2,1,1724243777,47,"setup("
+?/reset
+|2,1,1724243766,47,"reset"
+?/Pdb(
+|2,1,1724243145,47,"Pdb("
+?/Frame
+|2,1,1724221317,47,"Frame"
+?/line
+|2,1,1724221312,47,"line"
+?/handler
+|2,1,1724220891,47,"handler"
+?/prompt
+|2,1,1724201537,47,"prompt"
+?/write
+|2,1,1724201473,47,"write"
+?/wit
+|2,1,1724201471,47,"wit"
+?/print(
+|2,1,1724201470,47,"print("
+?/Pdb
+|2,1,1724201238,47,"Pdb"
+?/cmdloop
+|2,1,1724201205,47,"cmdloop"
+?/post_mortem
+|2,1,1724200998,47,"post_mortem"
+?/\(def\|class\)\s\+\w*do_up
+|2,1,1724200324,47,"\\(def\\|class\\)\\s\\+\\w*do_up"
+?/do_up(
+|2,1,1724200263,47,"do_up("
+?/down(
+|2,1,1724199217,47,"down("
+??RHEF
+|2,1,1724197000,63,"RHEF"
+?/<C-w>
+|2,1,1724196975,47,"<C-w>"
+?/RHEF
+|2,1,1724196859,47,"RHEF"
+??H
+|2,1,1724196857,63,"H"
+?/jk
+|2,1,1724196558,47,"jk"
+?/clientserver
+|2,1,1724195074,47,"clientserver"
+?/remote
+|2,1,1724195012,47,"remote"
+??win32
+|2,1,1724194907,63,"win32"
+?/post_mo
+|2,1,1724194832,47,"post_mo"
+?/start
+|2,1,1724194588,47,"start"
+? \<dicts\>
+|2,1,1724187224,,"\\<dicts\\>"
+? timer\..*\"import dateutil\.parser\"
+|2,1,1724186559,,"timer\\..*\\\"import dateutil\\.parser\\\""
+?/time
+|2,1,1724114136,47,"time"
+?/needle
+|2,1,1724114042,47,"needle"
+?/should
+|2,1,1724112946,47,"should"
+? timer\..*\"main\"
+|2,1,1724112037,,"timer\\..*\\\"main\\\""
+?/cwd
+|2,1,1724111493,47,"cwd"
+?/waivek
+|2,1,1724108943,47,"waivek"
+?/NOTE:\d\/\zs
+|2,1,1724108627,47,"NOTE:\\d\\/\\zs"
+? @$
+|2,1,1724023090,,"@$"
+?/log
+|2,1,1724023079,47,"log"
+?/flush
+|2,1,1724015733,47,"flush"
+? timer\..*\"expanduser\"
+|2,1,1724013847,,"timer\\..*\\\"expanduser\\\""
+? timer\..*\"exists\"
+|2,1,1724013846,,"timer\\..*\\\"exists\\\""
+? timer\..*\"time\"
+|2,1,1724013845,,"timer\\..*\\\"time\\\""
+? timer\..*\"startswith\"
+|2,1,1724013842,,"timer\\..*\\\"startswith\\\""
+?/path
+|2,1,1724012898,47,"path"
+? \<random_six_letter_alphanumericcap\>
+|2,1,1723998727,,"\\<random_six_letter_alphanumericcap\\>"
+?/pyflakes
+|2,1,1723997178,47,"pyflakes"
+?/unused
+|2,1,1723997138,47,"unused"
+?/!
+|2,1,1723936993,47,"!"
+?/choices
+|2,1,1723934372,47,"choices"
+?/fold
+|2,1,1723741995,47,"fold"
 ?/indent
 |2,1,1723677012,47,"indent"
 ?/wrap
@@ -9396,8 +9748,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,1,1723658021,47,"alt.*c"
 ?/conceal
 |2,1,1723589059,47,"conceal"
-? timer\..*\"main\"
-|2,1,1723587764,,"timer\\..*\\\"main\\\""
 ? timer\..*\"ArgumentParser\"
 |2,1,1723587761,,"timer\\..*\\\"ArgumentParser\\\""
 ? timer\..*\"get_max_len_timeago\"
@@ -9432,8 +9782,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,1,1723556056,,"\\<path_to_remove_from_path_environment_variable\\>"
 ? \<x\>
 |2,1,1723555737,,"\\<x\\>"
-? @$
-|2,1,1723555521,,"@$"
 ?/from date import convert
 |2,1,1723497608,47,"from date import convert"
 ?/jprevious
@@ -9560,8 +9908,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,1,1722961601,47,"\\.vim"
 ?/^\s*function!\?\s\+\(s:\)\?\(\w\+#\)\?\w*Repeat
 |2,1,1722961484,47,"^\\s*function!\\?\\s\\+\\(s:\\)\\?\\(\\w\\+#\\)\\?\\w*Repeat"
-?/undo
-|2,1,1722961438,47,"undo"
 ? \<audio_filepath\>
 |2,1,1722961399,,"\\<audio_filepath\\>"
 ? audio_filepath
@@ -9648,8 +9994,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,1,1722630855,47,"\\f"
 ?/\.py
 |2,1,1722630806,47,"\\.py"
-?/waivek
-|2,1,1722630778,47,"waivek"
 ?/ - 
 |2,1,1722630665,47," - "
 ?/bold
@@ -9660,8 +10004,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,1,1722617161,,"^#\\s"
 ?/\C\<\>
 |2,1,1722616708,47,"\\C\\<\\>"
-?/time
-|2,1,1722616706,47,"time"
 ?/winreg
 |2,1,1722616615,47,"winreg"
 ?/sys\.pla
@@ -9938,8 +10280,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,1,1722111974,47,"\\\\"
 ?/<script
 |2,1,1722111905,47,"<script"
-?/line
-|2,1,1722111725,47,"line"
 ??^verbose
 |2,1,1722108988,63,"^verbose"
 ?/abbrev
@@ -9962,8 +10302,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,1,1722061275,47,"f"
 ?/codeAction
 |2,1,1722061085,47,"codeAction"
-?/write
-|2,1,1722060862,47,"write"
 ? @attrs\.define
 |2,1,1722029820,,"@attrs\\.define"
 ?/To
@@ -10078,8 +10416,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,1,1721480262,63,"CocOutline"
 ?/temp_path
 |2,1,1721479444,47,"temp_path"
-?/path
-|2,1,1721479433,47,"path"
 ?/starship
 |2,1,1721416509,47,"starship"
 ? ^\(\s*\)\(\w\+\), \(.*\)
@@ -11148,8 +11484,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,1,1716956198,47,"active-"
 ? gomi
 |2,1,1716955501,,"gomi"
-?/start
-|2,1,1716955347,47,"start"
 ?/ergrep
 |2,1,1716955130,47,"ergrep"
 ?/-I
@@ -11494,8 +11828,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,1,1716285361,47,"prefix"
 ?/startswith
 |2,1,1716177922,47,"startswith"
-?/!
-|2,1,1716174279,47,"!"
 ? timer\..*\"basename\"
 |2,1,1716172350,,"timer\\..*\\\"basename\\\""
 ?/timer
@@ -11546,8 +11878,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,1,1716103149,47,"filetype\\.vim"
 ?  Silence "another instance running"
 |2,1,1716102624,," Silence \"another instance running\""
-?/print(
-|2,1,1716102545,47,"print("
 ?/jumpRefer
 |2,1,1716100290,47,"jumpRefer"
 ?/location
@@ -11590,8 +11920,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,1,1716085148,47,"3376"
 ?/mod
 |2,1,1716082763,47,"mod"
-?/log
-|2,1,1716082180,47,"log"
 ?/message
 |2,1,1716081843,47,"message"
 ?/loop_forever
@@ -11662,8 +11990,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,1,1714567649,47,"td"
 ?/fix
 |2,1,1714567594,47,"fix"
-?/pyflakes
-|2,1,1714567539,47,"pyflakes"
 ?/\(def\|class\)\s\+\w*elements
 |2,1,1714557737,47,"\\(def\\|class\\)\\s\\+\\w*elements"
 ?/bind
@@ -11680,8 +12006,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,1,1714386583,47,"signal"
 ?/not in
 |2,1,1714385467,47,"not in"
-?/Frame
-|2,1,1714381592,47,"Frame"
 ?/loop
 |2,1,1714378909,47,"loop"
 ?/refres
@@ -11992,8 +12316,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,1,1713276753,47,"interpreter"
 ? python
 |2,1,1713276657,,"python"
-?/cwd
-|2,1,1713276616,47,"cwd"
 ?/undetec
 |2,1,1712793130,47,"undetec"
 ?/coc.*action
@@ -12574,8 +12896,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,1,1694419206,47,"module_path"
 ?/astor
 |2,1,1694333749,47,"astor"
-?/handler
-|2,1,1694315748,47,"handler"
 ?/ast
 |2,1,1694315278,47,"ast"
 ?/modified
@@ -13084,8 +13404,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,1,1691452174,,"    db\\.close();\\n"
 ?/await google
 |2,1,1691443231,47,"await google"
-?/unused
-|2,1,1691440507,47,"unused"
 ?/disable
 |2,1,1691440369,47,"disable"
 ?/tslint
@@ -13580,6 +13898,12 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,2,1688309303,,"v:oldfiles"
 
 # Input Line History (newest to oldest):
+@standardize
+|2,3,1724186004,,"standardize"
+@block
+|2,3,1724013895,,"block"
+@my-block-of-code
+|2,3,1723938712,,"my-block-of-code"
 @liens
 |2,3,1723587409,,"liens"
 @viewlog
@@ -13758,38 +14082,59 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |2,4,1693311567,,"cont"
 
 # Registers:
-"1	LINE	0
+"0	CHAR	0
+	set_trace()
+|3,0,0,0,1,0,1724276111,"set_trace()"
+""1	LINE	0
 	
-|3,0,1,1,1,0,1723675905,""
+	def foo():
+	    import json
+	    json.loads("{'a': 1}")
+	
+	def bar():
+	    x =1 
+	    foo()
+	
+	try:
+	    bar()
+	except Exception as e:
+	    import pdb as pdb
+	    pdb.post_mortem(e.__traceback__)
+|3,1,1,1,14,0,1724278647,"","def foo():","    import json","    json.loads(\"{'a': 1}\")","","def bar():","    x =1 ","    foo()","","try:","    bar()","except Exception as e:","    import pdb as pdb","    pdb.post_mortem(e.__traceback__)"
 "2	LINE	0
-	    ic(is_writing_to_stdout())
-	    return
-|3,0,2,1,2,0,1723675769,"    ic(is_writing_to_stdout())","    return"
+	from .ic import ic
+|3,0,2,1,1,0,1724274779,"from .ic import ic"
 "3	LINE	0
-	    terminal_width = os.get_terminal_size().columns
-|3,0,3,1,1,0,1723675768,"    terminal_width = os.get_terminal_size().columns"
+	            traceback_globals = { 
+|3,0,3,1,1,0,1724274742,"            traceback_globals = { "
 "4	LINE	0
-	
-|3,0,4,1,1,0,1723675743,""
+	from .ic import ic
+|3,0,4,1,1,0,1724274729,"from .ic import ic"
 "5	LINE	0
-	    for todo_item in todo_items:
-	        print
-|3,0,5,1,2,0,1723675602,"    for todo_item in todo_items:","        print"
+	            from .ic import ic
+|3,0,5,1,1,0,1724274703,"            from .ic import ic"
 "6	LINE	0
-	
-|3,0,6,1,1,0,1723675593,""
+	                frame.f_globals
+|3,0,6,1,1,0,1724274695,"                frame.f_globals"
 "7	LINE	0
-	    for todo_item in todo_items:
-|3,0,7,1,1,0,1723675580,"    for todo_item in todo_items:"
+	            needle_frame.f_locals['ic'] = ic
+|3,0,7,1,1,0,1724274531,"            needle_frame.f_locals['ic'] = ic"
 "8	LINE	0
-	def 
-|3,0,8,1,1,0,1723675575,"def "
+	
+	            Pdb.rcLines.extend([
+	                'import datetime'
+	            ])
+	            Pdb.execRcLines()
+|3,0,8,1,5,0,1724274483,"","            Pdb.rcLines.extend([","                'import datetime'","            ])","            Pdb.execRcLines()"
 "9	LINE	0
-	        terminal_width = os.get_terminal_size().columns
-|3,0,9,1,1,0,1723675509,"        terminal_width = os.get_terminal_size().columns"
+	                'json.loads(string)',
+|3,0,9,1,1,0,1724274443,"                'json.loads(string)',"
 "a	CHAR	0
-	Tabularize /-/r1c1l1c1l1
-|3,0,10,0,1,0,1723675581,"Tabularize /-/r1c1l1c1l1"
+	0;c;icjk;ffxdf{f}xx
+|3,0,10,0,1,0,1724271033,"0;c;icjk;ffxdf{f}xx"
+"i	CHAR	0
+	ado_up()jk:q!
+|3,0,18,0,1,0,1724200553,"ado_up()jk:q!"
 "j	CHAR	0
 	kl
 |3,0,19,0,1,0,1721238341,"kl"
@@ -13813,236 +14158,2998 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 |<"     ├── build tool                                                          │","     ├── library: cli parser, server, http client                            │","     │                                                                       │","     ╰───────────────────────────────────────────────────────────────────────╯",>2
 |<""
 "-	CHAR	0
-	MAGENTA_EX + folder_name_padded + RESET
-|3,0,36,0,1,0,1723677612,"MAGENTA_EX + folder_name_padded + RESET"
+	i
+|3,0,36,0,1,0,1724278644,"i"
 
 # File marks:
-'0  84  121  ~/pyscripts/print_todo.py
-|4,48,84,121,1723677617,"~/pyscripts/print_todo.py"
-'1  1  0  ~/tooling/docs/fzf.man
-|4,49,1,0,1723677234,"~/tooling/docs/fzf.man"
-'2  1  0  ~/tooling/docs/fzf.man
-|4,50,1,0,1723677234,"~/tooling/docs/fzf.man"
-'3  123  9  ~/tooling/docs/fzf.man
-|4,51,123,9,1723676978,"~/tooling/docs/fzf.man"
-'4  123  9  ~/tooling/docs/fzf.man
-|4,52,123,9,1723676978,"~/tooling/docs/fzf.man"
-'5  123  9  ~/tooling/docs/fzf.man
-|4,53,123,9,1723676978,"~/tooling/docs/fzf.man"
-'6  123  9  ~/tooling/docs/fzf.man
-|4,54,123,9,1723676978,"~/tooling/docs/fzf.man"
-'7  201  0  ~/tooling/docs/fzf.man
-|4,55,201,0,1723676886,"~/tooling/docs/fzf.man"
-'8  201  0  ~/tooling/docs/fzf.man
-|4,56,201,0,1723676886,"~/tooling/docs/fzf.man"
-'9  201  0  ~/tooling/docs/fzf.man
-|4,57,201,0,1723676886,"~/tooling/docs/fzf.man"
+'0  1  0  ~/python_staging/ipdb.py
+|4,48,1,0,1724278798,"~/python_staging/ipdb.py"
+'1  9  14  ~/python_staging/ipdb.py
+|4,49,9,14,1724276060,"~/python_staging/ipdb.py"
+'2  9  14  ~/python_staging/ipdb.py
+|4,50,9,14,1724276060,"~/python_staging/ipdb.py"
+'3  9  14  ~/python_staging/ipdb.py
+|4,51,9,14,1724276060,"~/python_staging/ipdb.py"
+'4  9  14  ~/python_staging/ipdb.py
+|4,52,9,14,1724276060,"~/python_staging/ipdb.py"
+'5  20  12  ~/python_common/waivek/error2.py
+|4,53,20,12,1724275989,"~/python_common/waivek/error2.py"
+'6  20  12  ~/python_common/waivek/error2.py
+|4,54,20,12,1724275989,"~/python_common/waivek/error2.py"
+'7  20  12  ~/python_common/waivek/error2.py
+|4,55,20,12,1724275989,"~/python_common/waivek/error2.py"
+'8  20  12  ~/python_common/waivek/error2.py
+|4,56,20,12,1724275989,"~/python_common/waivek/error2.py"
+'9  20  12  ~/python_common/waivek/error2.py
+|4,57,20,12,1724275989,"~/python_common/waivek/error2.py"
 
 # Jumplist (newest first):
--'  84  121  ~/pyscripts/print_todo.py
-|4,39,84,121,1723677617,"~/pyscripts/print_todo.py"
--'  1  0  ~/tooling/docs/fzf.man
-|4,39,1,0,1723677543,"~/tooling/docs/fzf.man"
--'  1  0  ~/tooling/docs/fzf.man
-|4,39,1,0,1723677234,"~/tooling/docs/fzf.man"
--'  1074  18  ~/tooling/docs/fzf.man
-|4,39,1074,18,1723677010,"~/tooling/docs/fzf.man"
--'  1074  18  ~/tooling/docs/fzf.man
-|4,39,1074,18,1723677010,"~/tooling/docs/fzf.man"
--'  1069  26  ~/tooling/docs/fzf.man
-|4,39,1069,26,1723677009,"~/tooling/docs/fzf.man"
--'  1069  26  ~/tooling/docs/fzf.man
-|4,39,1069,26,1723677009,"~/tooling/docs/fzf.man"
--'  547  83  ~/tooling/docs/fzf.man
-|4,39,547,83,1723677008,"~/tooling/docs/fzf.man"
--'  547  83  ~/tooling/docs/fzf.man
-|4,39,547,83,1723677008,"~/tooling/docs/fzf.man"
--'  532  70  ~/tooling/docs/fzf.man
-|4,39,532,70,1723677007,"~/tooling/docs/fzf.man"
--'  532  70  ~/tooling/docs/fzf.man
-|4,39,532,70,1723677007,"~/tooling/docs/fzf.man"
--'  126  28  ~/tooling/docs/fzf.man
-|4,39,126,28,1723677006,"~/tooling/docs/fzf.man"
--'  126  28  ~/tooling/docs/fzf.man
-|4,39,126,28,1723677006,"~/tooling/docs/fzf.man"
--'  125  9  ~/tooling/docs/fzf.man
-|4,39,125,9,1723677005,"~/tooling/docs/fzf.man"
--'  123  26  ~/tooling/docs/fzf.man
-|4,39,123,26,1723677005,"~/tooling/docs/fzf.man"
--'  125  9  ~/tooling/docs/fzf.man
-|4,39,125,9,1723677005,"~/tooling/docs/fzf.man"
--'  123  26  ~/tooling/docs/fzf.man
-|4,39,123,26,1723677005,"~/tooling/docs/fzf.man"
--'  123  9  ~/tooling/docs/fzf.man
-|4,39,123,9,1723676978,"~/tooling/docs/fzf.man"
--'  58  0  ~/tooling/docs/fzf.man
-|4,39,58,0,1723676974,"~/tooling/docs/fzf.man"
--'  58  0  ~/tooling/docs/fzf.man
-|4,39,58,0,1723676974,"~/tooling/docs/fzf.man"
--'  58  0  ~/tooling/docs/fzf.man
-|4,39,58,0,1723676974,"~/tooling/docs/fzf.man"
--'  55  164  ~/tooling/docs/fzf.man
-|4,39,55,164,1723676933,"~/tooling/docs/fzf.man"
--'  55  164  ~/tooling/docs/fzf.man
-|4,39,55,164,1723676933,"~/tooling/docs/fzf.man"
--'  55  164  ~/tooling/docs/fzf.man
-|4,39,55,164,1723676933,"~/tooling/docs/fzf.man"
--'  1  0  ~/tooling/docs/fzf.man
-|4,39,1,0,1723676929,"~/tooling/docs/fzf.man"
--'  201  0  ~/tooling/docs/fzf.man
-|4,39,201,0,1723676886,"~/tooling/docs/fzf.man"
--'  201  0  ~/tooling/docs/fzf.man
-|4,39,201,0,1723676886,"~/tooling/docs/fzf.man"
--'  201  0  ~/tooling/docs/fzf.man
-|4,39,201,0,1723676886,"~/tooling/docs/fzf.man"
--'  201  0  ~/tooling/docs/fzf.man
-|4,39,201,0,1723676886,"~/tooling/docs/fzf.man"
--'  1  0  ~/tooling/docs/fzf.man
-|4,39,1,0,1723676819,"~/tooling/docs/fzf.man"
--'  84  37  ~/pyscripts/print_todo.py
-|4,39,84,37,1723675993,"~/pyscripts/print_todo.py"
--'  84  37  ~/pyscripts/print_todo.py
-|4,39,84,37,1723675993,"~/pyscripts/print_todo.py"
--'  84  37  ~/pyscripts/print_todo.py
-|4,39,84,37,1723675993,"~/pyscripts/print_todo.py"
--'  84  37  ~/pyscripts/print_todo.py
-|4,39,84,37,1723675993,"~/pyscripts/print_todo.py"
--'  1  0  ~/pyscripts/print_todo.py
-|4,39,1,0,1723675971,"~/pyscripts/print_todo.py"
--'  1  0  ~/pyscripts/print_todo.py
-|4,39,1,0,1723675971,"~/pyscripts/print_todo.py"
--'  1  0  ~/pyscripts/print_todo.py
-|4,39,1,0,1723675971,"~/pyscripts/print_todo.py"
--'  1  0  ~/pyscripts/print_todo.py
-|4,39,1,0,1723675971,"~/pyscripts/print_todo.py"
--'  1  0  ~/pyscripts/print_todo.py
-|4,39,1,0,1723675971,"~/pyscripts/print_todo.py"
--'  83  0  ~/pyscripts/print_todo.py
-|4,39,83,0,1723675936,"~/pyscripts/print_todo.py"
--'  83  0  ~/pyscripts/print_todo.py
-|4,39,83,0,1723675936,"~/pyscripts/print_todo.py"
--'  83  0  ~/pyscripts/print_todo.py
-|4,39,83,0,1723675936,"~/pyscripts/print_todo.py"
--'  83  0  ~/pyscripts/print_todo.py
-|4,39,83,0,1723675936,"~/pyscripts/print_todo.py"
--'  83  0  ~/pyscripts/print_todo.py
-|4,39,83,0,1723675936,"~/pyscripts/print_todo.py"
--'  82  8  ~/pyscripts/print_todo.py
-|4,39,82,8,1723675912,"~/pyscripts/print_todo.py"
--'  82  8  ~/pyscripts/print_todo.py
-|4,39,82,8,1723675912,"~/pyscripts/print_todo.py"
--'  82  8  ~/pyscripts/print_todo.py
-|4,39,82,8,1723675912,"~/pyscripts/print_todo.py"
--'  82  8  ~/pyscripts/print_todo.py
-|4,39,82,8,1723675912,"~/pyscripts/print_todo.py"
--'  83  8  ~/pyscripts/print_todo.py
-|4,39,83,8,1723675912,"~/pyscripts/print_todo.py"
--'  82  8  ~/pyscripts/print_todo.py
-|4,39,82,8,1723675912,"~/pyscripts/print_todo.py"
--'  73  24  ~/pyscripts/print_todo.py
-|4,39,73,24,1723675910,"~/pyscripts/print_todo.py"
--'  72  24  ~/pyscripts/print_todo.py
-|4,39,72,24,1723675910,"~/pyscripts/print_todo.py"
--'  73  24  ~/pyscripts/print_todo.py
-|4,39,73,24,1723675910,"~/pyscripts/print_todo.py"
--'  72  24  ~/pyscripts/print_todo.py
-|4,39,72,24,1723675910,"~/pyscripts/print_todo.py"
--'  73  24  ~/pyscripts/print_todo.py
-|4,39,73,24,1723675910,"~/pyscripts/print_todo.py"
--'  72  24  ~/pyscripts/print_todo.py
-|4,39,72,24,1723675910,"~/pyscripts/print_todo.py"
--'  73  24  ~/pyscripts/print_todo.py
-|4,39,73,24,1723675910,"~/pyscripts/print_todo.py"
--'  72  24  ~/pyscripts/print_todo.py
-|4,39,72,24,1723675910,"~/pyscripts/print_todo.py"
--'  73  24  ~/pyscripts/print_todo.py
-|4,39,73,24,1723675910,"~/pyscripts/print_todo.py"
--'  72  24  ~/pyscripts/print_todo.py
-|4,39,72,24,1723675910,"~/pyscripts/print_todo.py"
--'  71  24  ~/pyscripts/print_todo.py
-|4,39,71,24,1723675909,"~/pyscripts/print_todo.py"
--'  71  24  ~/pyscripts/print_todo.py
-|4,39,71,24,1723675909,"~/pyscripts/print_todo.py"
--'  71  24  ~/pyscripts/print_todo.py
-|4,39,71,24,1723675909,"~/pyscripts/print_todo.py"
--'  71  24  ~/pyscripts/print_todo.py
-|4,39,71,24,1723675909,"~/pyscripts/print_todo.py"
--'  72  24  ~/pyscripts/print_todo.py
-|4,39,72,24,1723675909,"~/pyscripts/print_todo.py"
--'  71  24  ~/pyscripts/print_todo.py
-|4,39,71,24,1723675909,"~/pyscripts/print_todo.py"
--'  27  0  ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/color.py
-|4,39,27,0,1723675880,"~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/color.py"
--'  27  0  ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/color.py
-|4,39,27,0,1723675880,"~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/color.py"
--'  27  0  ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/color.py
-|4,39,27,0,1723675880,"~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/color.py"
--'  27  0  ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/color.py
-|4,39,27,0,1723675880,"~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/color.py"
--'  27  0  ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/color.py
-|4,39,27,0,1723675880,"~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/color.py"
--'  27  0  ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/color.py
-|4,39,27,0,1723675880,"~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/color.py"
--'  34  15  ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/color.py
-|4,39,34,15,1723675866,"~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/color.py"
--'  35  15  ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/color.py
-|4,39,35,15,1723675866,"~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/color.py"
--'  34  15  ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/color.py
-|4,39,34,15,1723675866,"~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/color.py"
--'  35  15  ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/color.py
-|4,39,35,15,1723675866,"~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/color.py"
--'  34  15  ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/color.py
-|4,39,34,15,1723675866,"~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/color.py"
--'  35  15  ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/color.py
-|4,39,35,15,1723675866,"~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/color.py"
--'  34  15  ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/color.py
-|4,39,34,15,1723675866,"~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/color.py"
--'  35  15  ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/color.py
-|4,39,35,15,1723675866,"~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/color.py"
--'  34  15  ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/color.py
-|4,39,34,15,1723675866,"~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/color.py"
--'  35  15  ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/color.py
-|4,39,35,15,1723675866,"~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/color.py"
--'  34  15  ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/color.py
-|4,39,34,15,1723675866,"~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/color.py"
--'  35  15  ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/color.py
-|4,39,35,15,1723675866,"~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/color.py"
--'  1  0  ~/pyscripts/print_todo.py
-|4,39,1,0,1723675847,"~/pyscripts/print_todo.py"
--'  348  0  ~/tooling/docs/fzf.man
-|4,39,348,0,1723675840,"~/tooling/docs/fzf.man"
--'  348  0  ~/tooling/docs/fzf.man
-|4,39,348,0,1723675840,"~/tooling/docs/fzf.man"
--'  348  0  ~/tooling/docs/fzf.man
-|4,39,348,0,1723675840,"~/tooling/docs/fzf.man"
--'  348  0  ~/tooling/docs/fzf.man
-|4,39,348,0,1723675840,"~/tooling/docs/fzf.man"
--'  348  0  ~/tooling/docs/fzf.man
-|4,39,348,0,1723675840,"~/tooling/docs/fzf.man"
--'  348  0  ~/tooling/docs/fzf.man
-|4,39,348,0,1723675840,"~/tooling/docs/fzf.man"
--'  348  0  ~/tooling/docs/fzf.man
-|4,39,348,0,1723675840,"~/tooling/docs/fzf.man"
--'  348  0  ~/tooling/docs/fzf.man
-|4,39,348,0,1723675820,"~/tooling/docs/fzf.man"
--'  335  79  ~/tooling/docs/fzf.man
-|4,39,335,79,1723675813,"~/tooling/docs/fzf.man"
--'  335  79  ~/tooling/docs/fzf.man
-|4,39,335,79,1723675813,"~/tooling/docs/fzf.man"
--'  335  79  ~/tooling/docs/fzf.man
-|4,39,335,79,1723675813,"~/tooling/docs/fzf.man"
--'  335  79  ~/tooling/docs/fzf.man
-|4,39,335,79,1723675813,"~/tooling/docs/fzf.man"
--'  335  79  ~/tooling/docs/fzf.man
-|4,39,335,79,1723675813,"~/tooling/docs/fzf.man"
--'  335  79  ~/tooling/docs/fzf.man
-|4,39,335,79,1723675813,"~/tooling/docs/fzf.man"
+-'  1  0  ~/python_staging/ipdb.py
+|4,39,1,0,1724278798,"~/python_staging/ipdb.py"
+-'  1  0  ~/python_staging/ipython-debug.py
+|4,39,1,0,1724278655,"~/python_staging/ipython-debug.py"
+-'  1  0  ~/python_staging/ipython-debug.py
+|4,39,1,0,1724278655,"~/python_staging/ipython-debug.py"
+-'  10  0  ~/python_staging/ipdb.py
+|4,39,10,0,1724276080,"~/python_staging/ipdb.py"
+-'  10  0  ~/python_staging/ipdb.py
+|4,39,10,0,1724276080,"~/python_staging/ipdb.py"
+-'  2  0  ~/python_staging/ipdb.py
+|4,39,2,0,1724276068,"~/python_staging/ipdb.py"
+-'  2  0  ~/python_staging/ipdb.py
+|4,39,2,0,1724276068,"~/python_staging/ipdb.py"
+-'  1  0  ~/python_staging/ipdb.py
+|4,39,1,0,1724276067,"~/python_staging/ipdb.py"
+-'  9  14  ~/python_staging/ipdb.py
+|4,39,9,14,1724276060,"~/python_staging/ipdb.py"
+-'  9  14  ~/python_staging/ipdb.py
+|4,39,9,14,1724276060,"~/python_staging/ipdb.py"
+-'  9  14  ~/python_staging/ipdb.py
+|4,39,9,14,1724276060,"~/python_staging/ipdb.py"
+-'  10  19  ~/python_staging/ipdb.py
+|4,39,10,19,1724276054,"~/python_staging/ipdb.py"
+-'  4  25  ~/python_staging/ipdb.py
+|4,39,4,25,1724276046,"~/python_staging/ipdb.py"
+-'  4  25  ~/python_staging/ipdb.py
+|4,39,4,25,1724276046,"~/python_staging/ipdb.py"
+-'  4  25  ~/python_staging/ipdb.py
+|4,39,4,25,1724276046,"~/python_staging/ipdb.py"
+-'  1  0  ~/python_staging/ipdb.py
+|4,39,1,0,1724276032,"~/python_staging/ipdb.py"
+-'  20  12  ~/python_common/waivek/error2.py
+|4,39,20,12,1724275989,"~/python_common/waivek/error2.py"
+-'  20  12  ~/python_common/waivek/error2.py
+|4,39,20,12,1724275989,"~/python_common/waivek/error2.py"
+-'  20  12  ~/python_common/waivek/error2.py
+|4,39,20,12,1724275989,"~/python_common/waivek/error2.py"
+-'  20  12  ~/python_common/waivek/error2.py
+|4,39,20,12,1724275989,"~/python_common/waivek/error2.py"
+-'  25  29  ~/python_common/waivek/error2.py
+|4,39,25,29,1724275925,"~/python_common/waivek/error2.py"
+-'  25  29  ~/python_common/waivek/error2.py
+|4,39,25,29,1724275925,"~/python_common/waivek/error2.py"
+-'  25  29  ~/python_common/waivek/error2.py
+|4,39,25,29,1724275925,"~/python_common/waivek/error2.py"
+-'  25  29  ~/python_common/waivek/error2.py
+|4,39,25,29,1724275925,"~/python_common/waivek/error2.py"
+-'  26  0  ~/python_common/waivek/error2.py
+|4,39,26,0,1724274789,"~/python_common/waivek/error2.py"
+-'  26  0  ~/python_common/waivek/error2.py
+|4,39,26,0,1724274789,"~/python_common/waivek/error2.py"
+-'  26  0  ~/python_common/waivek/error2.py
+|4,39,26,0,1724274789,"~/python_common/waivek/error2.py"
+-'  26  0  ~/python_common/waivek/error2.py
+|4,39,26,0,1724274789,"~/python_common/waivek/error2.py"
+-'  13  17  ~/python_common/waivek/error2.py
+|4,39,13,17,1724274767,"~/python_common/waivek/error2.py"
+-'  13  17  ~/python_common/waivek/error2.py
+|4,39,13,17,1724274767,"~/python_common/waivek/error2.py"
+-'  13  17  ~/python_common/waivek/error2.py
+|4,39,13,17,1724274767,"~/python_common/waivek/error2.py"
+-'  13  17  ~/python_common/waivek/error2.py
+|4,39,13,17,1724274767,"~/python_common/waivek/error2.py"
+-'  28  0  ~/python_common/waivek/error2.py
+|4,39,28,0,1724274534,"~/python_common/waivek/error2.py"
+-'  28  0  ~/python_common/waivek/error2.py
+|4,39,28,0,1724274534,"~/python_common/waivek/error2.py"
+-'  28  0  ~/python_common/waivek/error2.py
+|4,39,28,0,1724274534,"~/python_common/waivek/error2.py"
+-'  28  0  ~/python_common/waivek/error2.py
+|4,39,28,0,1724274534,"~/python_common/waivek/error2.py"
+-'  36  28  ~/python_common/waivek/error2.py
+|4,39,36,28,1724274466,"~/python_common/waivek/error2.py"
+-'  36  28  ~/python_common/waivek/error2.py
+|4,39,36,28,1724274466,"~/python_common/waivek/error2.py"
+-'  36  28  ~/python_common/waivek/error2.py
+|4,39,36,28,1724274466,"~/python_common/waivek/error2.py"
+-'  36  28  ~/python_common/waivek/error2.py
+|4,39,36,28,1724274466,"~/python_common/waivek/error2.py"
+-'  21  12  ~/python_common/waivek/error2.py
+|4,39,21,12,1724274358,"~/python_common/waivek/error2.py"
+-'  21  12  ~/python_common/waivek/error2.py
+|4,39,21,12,1724274358,"~/python_common/waivek/error2.py"
+-'  21  12  ~/python_common/waivek/error2.py
+|4,39,21,12,1724274358,"~/python_common/waivek/error2.py"
+-'  21  12  ~/python_common/waivek/error2.py
+|4,39,21,12,1724274358,"~/python_common/waivek/error2.py"
+-'  1  8  ~/.custompy
+|4,39,1,8,1724274218,"~/.custompy"
+-'  1  8  ~/.custompy
+|4,39,1,8,1724274218,"~/.custompy"
+-'  1  8  ~/.custompy
+|4,39,1,8,1724274218,"~/.custompy"
+-'  1  8  ~/.custompy
+|4,39,1,8,1724274218,"~/.custompy"
+-'  1717  8  /usr/lib/python3.10/pdb.py
+|4,39,1717,8,1724274055,"/usr/lib/python3.10/pdb.py"
+-'  1717  8  /usr/lib/python3.10/pdb.py
+|4,39,1717,8,1724274055,"/usr/lib/python3.10/pdb.py"
+-'  1717  8  /usr/lib/python3.10/pdb.py
+|4,39,1717,8,1724274055,"/usr/lib/python3.10/pdb.py"
+-'  1717  8  /usr/lib/python3.10/pdb.py
+|4,39,1717,8,1724274055,"/usr/lib/python3.10/pdb.py"
+-'  1713  8  /usr/lib/python3.10/pdb.py
+|4,39,1713,8,1724274044,"/usr/lib/python3.10/pdb.py"
+-'  1713  8  /usr/lib/python3.10/pdb.py
+|4,39,1713,8,1724274044,"/usr/lib/python3.10/pdb.py"
+-'  1713  8  /usr/lib/python3.10/pdb.py
+|4,39,1713,8,1724274044,"/usr/lib/python3.10/pdb.py"
+-'  1713  8  /usr/lib/python3.10/pdb.py
+|4,39,1713,8,1724274044,"/usr/lib/python3.10/pdb.py"
+-'  231  45  /usr/lib/python3.10/pdb.py
+|4,39,231,45,1724274035,"/usr/lib/python3.10/pdb.py"
+-'  231  45  /usr/lib/python3.10/pdb.py
+|4,39,231,45,1724274035,"/usr/lib/python3.10/pdb.py"
+-'  231  45  /usr/lib/python3.10/pdb.py
+|4,39,231,45,1724274035,"/usr/lib/python3.10/pdb.py"
+-'  231  45  /usr/lib/python3.10/pdb.py
+|4,39,231,45,1724274035,"/usr/lib/python3.10/pdb.py"
+-'  225  19  /usr/lib/python3.10/pdb.py
+|4,39,225,19,1724274027,"/usr/lib/python3.10/pdb.py"
+-'  224  14  /usr/lib/python3.10/pdb.py
+|4,39,224,14,1724274027,"/usr/lib/python3.10/pdb.py"
+-'  225  19  /usr/lib/python3.10/pdb.py
+|4,39,225,19,1724274027,"/usr/lib/python3.10/pdb.py"
+-'  224  14  /usr/lib/python3.10/pdb.py
+|4,39,224,14,1724274027,"/usr/lib/python3.10/pdb.py"
+-'  225  19  /usr/lib/python3.10/pdb.py
+|4,39,225,19,1724274027,"/usr/lib/python3.10/pdb.py"
+-'  224  14  /usr/lib/python3.10/pdb.py
+|4,39,224,14,1724274027,"/usr/lib/python3.10/pdb.py"
+-'  225  19  /usr/lib/python3.10/pdb.py
+|4,39,225,19,1724274027,"/usr/lib/python3.10/pdb.py"
+-'  224  14  /usr/lib/python3.10/pdb.py
+|4,39,224,14,1724274027,"/usr/lib/python3.10/pdb.py"
+-'  223  13  /usr/lib/python3.10/pdb.py
+|4,39,223,13,1724274026,"/usr/lib/python3.10/pdb.py"
+-'  221  8  /usr/lib/python3.10/pdb.py
+|4,39,221,8,1724274026,"/usr/lib/python3.10/pdb.py"
+-'  220  23  /usr/lib/python3.10/pdb.py
+|4,39,220,23,1724274026,"/usr/lib/python3.10/pdb.py"
+-'  223  13  /usr/lib/python3.10/pdb.py
+|4,39,223,13,1724274026,"/usr/lib/python3.10/pdb.py"
+-'  221  8  /usr/lib/python3.10/pdb.py
+|4,39,221,8,1724274026,"/usr/lib/python3.10/pdb.py"
+-'  220  23  /usr/lib/python3.10/pdb.py
+|4,39,220,23,1724274026,"/usr/lib/python3.10/pdb.py"
+-'  223  13  /usr/lib/python3.10/pdb.py
+|4,39,223,13,1724274026,"/usr/lib/python3.10/pdb.py"
+-'  221  8  /usr/lib/python3.10/pdb.py
+|4,39,221,8,1724274026,"/usr/lib/python3.10/pdb.py"
+-'  220  23  /usr/lib/python3.10/pdb.py
+|4,39,220,23,1724274026,"/usr/lib/python3.10/pdb.py"
+-'  223  13  /usr/lib/python3.10/pdb.py
+|4,39,223,13,1724274026,"/usr/lib/python3.10/pdb.py"
+-'  221  8  /usr/lib/python3.10/pdb.py
+|4,39,221,8,1724274026,"/usr/lib/python3.10/pdb.py"
+-'  220  23  /usr/lib/python3.10/pdb.py
+|4,39,220,23,1724274026,"/usr/lib/python3.10/pdb.py"
+-'  217  20  /usr/lib/python3.10/pdb.py
+|4,39,217,20,1724274025,"/usr/lib/python3.10/pdb.py"
+-'  217  20  /usr/lib/python3.10/pdb.py
+|4,39,217,20,1724274025,"/usr/lib/python3.10/pdb.py"
+-'  217  20  /usr/lib/python3.10/pdb.py
+|4,39,217,20,1724274025,"/usr/lib/python3.10/pdb.py"
+-'  217  20  /usr/lib/python3.10/pdb.py
+|4,39,217,20,1724274025,"/usr/lib/python3.10/pdb.py"
+-'  166  25  /usr/lib/python3.10/pdb.py
+|4,39,166,25,1724274023,"/usr/lib/python3.10/pdb.py"
+-'  166  25  /usr/lib/python3.10/pdb.py
+|4,39,166,25,1724274023,"/usr/lib/python3.10/pdb.py"
+-'  166  25  /usr/lib/python3.10/pdb.py
+|4,39,166,25,1724274023,"/usr/lib/python3.10/pdb.py"
+-'  166  25  /usr/lib/python3.10/pdb.py
+|4,39,166,25,1724274023,"/usr/lib/python3.10/pdb.py"
+-'  161  25  /usr/lib/python3.10/pdb.py
+|4,39,161,25,1724274022,"/usr/lib/python3.10/pdb.py"
+-'  157  13  /usr/lib/python3.10/pdb.py
+|4,39,157,13,1724274022,"/usr/lib/python3.10/pdb.py"
+-'  161  25  /usr/lib/python3.10/pdb.py
+|4,39,161,25,1724274022,"/usr/lib/python3.10/pdb.py"
+-'  157  13  /usr/lib/python3.10/pdb.py
+|4,39,157,13,1724274022,"/usr/lib/python3.10/pdb.py"
+-'  161  25  /usr/lib/python3.10/pdb.py
+|4,39,161,25,1724274022,"/usr/lib/python3.10/pdb.py"
+-'  157  13  /usr/lib/python3.10/pdb.py
+|4,39,157,13,1724274022,"/usr/lib/python3.10/pdb.py"
+-'  161  25  /usr/lib/python3.10/pdb.py
+|4,39,161,25,1724274022,"/usr/lib/python3.10/pdb.py"
+-'  157  13  /usr/lib/python3.10/pdb.py
+|4,39,157,13,1724274022,"/usr/lib/python3.10/pdb.py"
+-'  156  31  /usr/lib/python3.10/pdb.py
+|4,39,156,31,1724274018,"/usr/lib/python3.10/pdb.py"
+-'  156  31  /usr/lib/python3.10/pdb.py
+|4,39,156,31,1724274018,"/usr/lib/python3.10/pdb.py"
+-'  156  31  /usr/lib/python3.10/pdb.py
+|4,39,156,31,1724274018,"/usr/lib/python3.10/pdb.py"
 
 # Buffer list:
-%~/tooling/docs/fzf.man	1074	18
-%~/pyscripts/print_todo.py	84	121
+%~/python_staging/ipdb.py	1	0
 
 # History of marks within files (newest to oldest):
+
+> ~/python_staging/ipdb.py
+	*	1724278796	0
+	"	1	0
+	^	10	20
+	.	9	4
+	+	4	25
+	+	7	9
+	+	8	22
+	+	9	4
+
+> ~/python_staging/ipython-debug.py
+	*	1724278652	0
+	"	1	0
+	.	1	0
+	+	1	8
+	+	1	6
+	+	1	36
+	+	1	21
+	+	1	4
+	+	1	0
+
+> ~/python_common/waivek/error2.py
+	*	1724275987	0
+	"	20	12
+	^	20	13
+	.	25	29
+	+	35	39
+	+	28	0
+	+	34	0
+	+	35	47
+	+	28	30
+	+	35	13
+	+	35	39
+	+	23	0
+	+	23	18
+	+	24	93
+	+	24	16
+	+	23	0
+	+	24	74
+	+	24	0
+	+	23	0
+	+	24	0
+	+	24	46
+	+	24	47
+	+	24	44
+	+	24	18
+	+	24	0
+	+	23	17
+	+	24	0
+	+	24	97
+	+	23	0
+	+	24	113
+	+	24	32
+	+	24	103
+	+	24	32
+	+	24	107
+	+	24	113
+	+	24	107
+	+	24	32
+	+	24	107
+	+	28	52
+	+	28	18
+	+	29	0
+	+	23	0
+	+	28	0
+	+	35	0
+	+	34	0
+	+	36	0
+	+	34	0
+	+	29	0
+	+	28	0
+	+	35	12
+	+	35	0
+	+	18	0
+	+	34	0
+	+	49	0
+	+	31	0
+	+	32	39
+	+	33	0
+	+	36	0
+	+	29	0
+	+	36	0
+	+	22	0
+	+	21	47
+	+	21	48
+	+	22	0
+	+	21	48
+	+	21	0
+	+	36	0
+	+	36	20
+	+	36	0
+	+	36	32
+	+	36	41
+	+	36	17
+	+	36	0
+	+	21	0
+	+	36	0
+	+	36	32
+	+	36	0
+	+	36	33
+	+	36	0
+	+	28	43
+	+	26	29
+	+	26	16
+	+	28	0
+	+	13	17
+	+	26	0
+	+	27	0
+	+	13	0
+	+	23	0
+	+	13	0
+	+	27	0
+	+	25	29
+
+> ~/.pdbrc
+	*	1724274290	0
+	"	1	22
+	^	1	23
+	.	1	22
+	+	1	10
+	+	16	0
+	+	1	22
+
+> ~/.custompy
+	*	1724274218	0
+	"	1	8
+	^	1	9
+	.	1	8
+	+	1	8
+
+> /usr/lib/python3.10/pdb.py
+	*	1724274048	0
+	"	1717	8
+	.	343	0
+	+	928	21
+	+	343	0
+
+> /usr/lib/python3.10/cmd.py
+	*	1724273500	0
+	"	98	0
+	.	121	0
+	+	121	20
+	+	121	0
+
+> ~/python_common/undotree_2
+	*	1724244296	0
+	"	3	1
+	.	3	0
+	+	237	0
+	+	3	0
+
+> ~/python_common/diffpanel_3
+	*	1724244000	0
+	"	1	11
+	.	4	0
+	+	4	0
+
+> ~/.vim/vimrc
+	*	1724243921	0
+	"	43	21
+	^	43	22
+	.	43	21
+	+	1294	19
+	+	1294	71
+	+	1294	0
+	+	1294	23
+	+	1294	41
+	+	1294	44
+	+	1294	40
+	+	1294	28
+	+	1294	0
+	+	1294	11
+	+	1294	18
+	+	1294	43
+	+	1294	64
+	+	1294	54
+	+	1294	0
+	+	1294	31
+	+	1294	0
+	+	1294	6
+	+	1294	0
+	+	1294	1
+	+	1294	0
+	+	1294	80
+	+	1294	75
+	+	1294	0
+	+	1294	52
+	+	1294	41
+	+	166	0
+	+	52	26
+	+	1294	0
+	+	51	0
+	+	50	22
+	+	49	25
+	+	70	0
+	+	1075	57
+	+	1080	59
+	+	1086	55
+	+	247	0
+	+	246	0
+	+	247	25
+	+	1287	1
+	+	1288	0
+	+	1290	24
+	+	1291	24
+	+	1292	24
+	+	1293	0
+	+	1272	12
+	+	1273	0
+	+	1274	0
+	+	1275	0
+	+	1295	49
+	+	1292	0
+	+	1294	13
+	+	1295	13
+	+	1292	0
+	+	1294	16
+	+	1295	16
+	+	1294	0
+	+	1296	0
+	+	1294	0
+	+	1296	0
+	+	84	0
+	+	771	0
+	+	63	0
+	+	42	0
+	+	42	25
+	+	64	3
+	+	42	5
+	+	64	16
+	+	64	0
+	+	65	0
+	+	90	16
+	+	90	0
+	+	91	0
+	+	42	5
+	+	64	3
+	+	90	0
+	+	91	0
+	+	64	0
+	+	65	0
+	+	42	0
+	+	1078	4
+	+	1080	0
+	+	1079	40
+	+	1082	36
+	+	1085	0
+	+	1083	26
+	+	1084	9
+	+	798	0
+	+	1297	31
+	+	1299	4
+	+	1300	30
+	+	1301	4
+	+	42	0
+	+	41	0
+	+	48	5
+	+	614	8
+	+	47	29
+	+	46	33
+	+	47	1
+	+	43	21
+
+> ~/python_common/waivek/error.py
+	*	1724221320	0
+	"	61	24
+	^	405	18
+	.	405	17
+	+	358	61
+	+	1	0
+	+	361	19
+	+	361	7
+	+	361	0
+	+	361	30
+	+	361	18
+	+	358	0
+	+	361	0
+	+	355	0
+	+	355	14
+	+	356	51
+	+	355	18
+	+	356	59
+	+	355	0
+	+	361	0
+	+	376	0
+	+	358	9
+	+	359	24
+	+	360	67
+	+	356	44
+	+	355	0
+	+	396	0
+	+	396	68
+	+	396	34
+	+	374	20
+	+	375	0
+	+	396	46
+	+	396	65
+	+	396	27
+	+	396	32
+	+	396	28
+	+	396	40
+	+	396	31
+	+	396	47
+	+	396	34
+	+	396	44
+	+	396	0
+	+	396	55
+	+	396	45
+	+	396	47
+	+	396	55
+	+	396	0
+	+	396	29
+	+	396	21
+	+	396	0
+	+	407	0
+	+	396	0
+	+	398	39
+	+	5	0
+	+	6	34
+	+	398	34
+	+	406	54
+	+	6	0
+	+	12	0
+	+	11	31
+	+	401	23
+	+	401	123
+	+	401	31
+	+	401	16
+	+	401	126
+	+	401	25
+	+	401	137
+	+	401	21
+	+	401	144
+	+	401	0
+	+	401	54
+	+	401	41
+	+	403	92
+	+	406	51
+	+	401	53
+	+	399	37
+	+	397	31
+	+	401	30
+	+	401	72
+	+	403	66
+	+	401	27
+	+	403	72
+	+	400	30
+	+	406	17
+	+	400	24
+	+	402	59
+	+	403	0
+	+	400	34
+	+	403	43
+	+	400	0
+	+	403	0
+	+	405	65
+	+	404	34
+	+	406	68
+	+	405	17
+
+> ~/tooling/errors.txt
+	*	1724220998	0
+	"	25	162
+	^	25	163
+	.	25	162
+	+	2	0
+	+	24	0
+	+	25	162
+
+> ~/python_staging/foo.py
+	*	1724220850	0
+	"	12	4
+	^	6	22
+	.	9	0
+	+	1	21
+	+	1	2
+	+	1	25
+	+	1	0
+	+	1	10
+	+	1	0
+	+	1	12
+	+	1	0
+	+	1	10
+	+	1	0
+	+	1	20
+	+	1	14
+	+	1	9
+	+	1	0
+	+	1	15
+	+	1	18
+	+	1	0
+	+	3	5
+	+	3	0
+	+	3	10
+	+	8	6
+	+	11	0
+	+	3	18
+	+	11	6
+	+	12	4
+	+	11	0
+	+	6	0
+	+	10	0
+	+	11	0
+	+	6	23
+	+	6	14
+	+	6	22
+	+	9	0
+
+> ~/python_staging/mycmd.py
+	*	1724203726	0
+	"	129	11
+	.	116	0
+	+	2	0
+	+	100	0
+	+	122	0
+	+	106	0
+	+	119	0
+	+	131	0
+	+	116	0
+
+> ~/python_staging/mypdb.py
+	*	1724201481	0
+	"	314	21
+	^	75	19
+	.	75	18
+	+	2	0
+	+	929	0
+	+	933	0
+	+	309	0
+	+	313	0
+	+	315	0
+	+	314	0
+	+	75	18
+
+> ~/python_staging/pdb2.py
+	*	1724200896	0
+	"	1	0
+	^	21	0
+	.	1	0
+	+	1	0
+	+	1	10
+	+	1	0
+	+	20	0
+	+	1	0
+
+> ~/python_common/waivek/betterpdb.py
+	*	1724199704	0
+	"	17	0
+	^	18	46
+	.	1	0
+	+	1	0
+	+	1	50
+	+	1	0
+	+	1	13
+	+	1	12
+	+	1	29
+	+	1	33
+	+	1	30
+	+	1	97
+	+	1	32
+	+	1	0
+	+	1	27
+	+	1	13
+	+	1	100
+	+	1	21
+	+	1	111
+	+	1	17
+	+	1	118
+	+	1	36
+	+	1	23
+	+	1	0
+	+	1	43
+	+	1	0
+	+	1	33
+	+	1	30
+	+	1	37
+	+	1	0
+	+	1	39
+	+	1	0
+	+	1	50
+	+	1	0
+	+	18	45
+	+	1	0
+
+> ~/python_common/waivek/testbetterpdb.py
+	*	1724199697	0
+	"	7	0
+	^	2	15
+	.	2	14
+	+	10	16
+	+	2	14
+
+> /usr/lib/python3.10/runpy.py
+	*	1724198491	0
+	"	196	4
+
+> ~/python_common/waivek/BetterPdb.py
+	*	1724198036	0
+	"	1	0
+	^	4	12
+	.	4	11
+	+	3	82
+	+	3	10
+	+	3	25
+	+	3	4
+	+	3	0
+	+	3	16
+	+	3	4
+	+	3	8
+	+	3	4
+	+	3	0
+	+	19	25
+	+	1	9
+	+	2	9
+	+	4	11
+
+> /usr/share/vim/vim90/doc/terminal.txt
+	*	1724196168	0
+	"	912	23
+
+> /usr/share/vim/vim90/doc/options.txt
+	*	1724195962	0
+	"	8071	6
+
+> ~/.vim/plugin/run.vim
+	*	1724195823	0
+	"	32	0
+	^	41	0
+	.	55	0
+	+	15	18
+	+	16	0
+	+	48	0
+	+	29	24
+	+	16	17
+	+	29	0
+	+	16	0
+	+	48	0
+	+	48	17
+	+	48	0
+	+	29	28
+	+	29	0
+	+	48	0
+	+	29	0
+	+	48	0
+	+	46	10
+	+	48	8
+	+	48	15
+	+	48	0
+	+	48	17
+	+	48	20
+	+	48	0
+	+	48	38
+	+	48	15
+	+	48	0
+	+	48	19
+	+	48	0
+	+	48	19
+	+	48	18
+	+	48	8
+	+	48	39
+	+	48	16
+	+	48	0
+	+	29	27
+	+	12	10
+	+	12	0
+	+	3	0
+	+	12	0
+	+	46	12
+	+	52	18
+	+	53	0
+	+	66	8
+	+	68	0
+	+	3	0
+	+	2	0
+	+	3	13
+	+	43	0
+	+	29	0
+	+	43	45
+	+	11	0
+	+	18	0
+	+	19	26
+	+	16	0
+	+	19	33
+	+	20	32
+	+	21	0
+	+	20	0
+	+	35	0
+	+	45	0
+	+	35	0
+	+	34	0
+	+	32	0
+	+	30	0
+	+	31	11
+	+	33	0
+	+	22	0
+	+	33	48
+	+	43	0
+	+	37	12
+	+	43	0
+	+	38	71
+	+	39	37
+	+	40	82
+	+	42	12
+	+	43	0
+	+	44	0
+	+	99	0
+	+	101	0
+	+	99	4
+	+	100	5
+	+	48	0
+	+	47	19
+	+	109	0
+	+	72	22
+	+	79	0
+	+	78	0
+	+	32	0
+	+	31	0
+	+	45	0
+	+	43	0
+	+	55	0
+	+	57	0
+	+	64	0
+	+	57	0
+	+	56	0
+	+	65	0
+	+	64	0
+	+	41	0
+	+	55	0
+
+> /usr/share/vim/vim90/doc/remote.txt
+	*	1724195077	0
+	"	16	25
+
+> /usr/share/vim/vim90/doc/various.txt
+	*	1724195077	0
+	"	353	3
+
+> ~/python_common/waivek/timer.py
+	*	1724194737	0
+	"	69	8
+	.	29	0
+	+	35	11
+	+	35	15
+	+	30	0
+	+	29	0
+
+> ~/python_staging/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/error.py
+	*	1724194572	0
+	"	1	0
+	.	386	0
+	+	347	30
+	+	348	0
+	+	349	0
+	+	350	0
+	+	386	0
+	+	387	0
+	+	386	0
+
+> ~/python_staging/dateutils.py
+	*	1724193919	0
+	"	25	22
+	^	25	14
+	.	25	22
+	+	27	34
+	+	32	0
+	+	27	35
+	+	11	13
+	+	27	70
+	+	32	0
+	+	42	39
+	+	15	0
+	+	12	28
+	+	15	0
+	+	15	26
+	+	27	7
+	+	27	6
+	+	27	0
+	+	31	0
+	+	15	0
+	+	27	0
+	+	15	16
+	+	27	123
+	+	44	27
+	+	11	0
+	+	44	0
+	+	43	0
+	+	43	28
+	+	13	10
+	+	43	28
+	+	15	49
+	+	16	10
+	+	27	108
+	+	27	101
+	+	16	12
+	+	17	8
+	+	15	18
+	+	15	0
+	+	19	16
+	+	19	27
+	+	17	17
+	+	13	0
+	+	20	0
+	+	21	22
+	+	43	31
+	+	15	86
+	+	27	0
+	+	27	47
+	+	28	4
+	+	30	42
+	+	15	0
+	+	43	0
+	+	42	22
+	+	42	21
+	+	43	21
+	+	42	25
+	+	43	25
+	+	43	0
+	+	43	39
+	+	43	0
+	+	43	27
+	+	43	29
+	+	43	31
+	+	43	0
+	+	42	26
+	+	42	4
+	+	43	4
+	+	42	26
+	+	43	16
+	+	33	7
+	+	42	20
+	+	43	0
+	+	42	48
+	+	43	0
+	+	42	65
+	+	42	12
+	+	42	65
+	+	44	0
+	+	15	89
+	+	3	0
+	+	27	25
+	+	42	0
+	+	27	0
+	+	16	0
+	+	23	15
+	+	26	55
+	+	40	22
+	+	26	78
+	+	24	70
+	+	26	44
+	+	24	44
+	+	25	19
+	+	26	29
+	+	24	20
+	+	26	47
+	+	24	22
+	+	25	22
+
+> ~/python_staging/errors_as_values.py
+	*	1724186445	0
+	"	12	0
+	^	20	29
+	.	21	0
+	+	32	30
+	+	32	0
+	+	25	44
+	+	32	0
+	+	26	0
+	+	32	0
+	+	25	30
+	+	28	44
+	+	2	9
+	+	28	12
+	+	25	39
+	+	9	43
+	+	32	0
+	+	9	74
+	+	53	0
+	+	52	0
+	+	47	33
+	+	52	76
+	+	54	62
+	+	46	0
+	+	33	22
+	+	36	37
+	+	46	0
+	+	29	53
+	+	30	40
+	+	3	28
+	+	5	13
+	+	31	54
+	+	36	94
+	+	27	21
+	+	24	0
+	+	4	0
+	+	43	27
+	+	63	50
+	+	63	0
+	+	56	0
+	+	56	9
+	+	25	34
+	+	61	49
+	+	6	8
+	+	34	60
+	+	36	45
+	+	56	0
+	+	61	58
+	+	61	23
+	+	36	97
+	+	36	0
+	+	42	30
+	+	43	18
+	+	7	22
+	+	38	0
+	+	37	0
+	+	40	35
+	+	38	0
+	+	37	37
+	+	39	34
+	+	38	30
+	+	39	47
+	+	35	58
+	+	37	51
+	+	35	79
+	+	46	0
+	+	10	21
+	+	42	0
+	+	43	0
+	+	45	24
+	+	61	22
+	+	34	0
+	+	43	0
+	+	44	15
+	+	45	0
+	+	7	23
+	+	10	41
+	+	45	0
+	+	22	0
+	+	45	38
+	+	61	0
+	+	61	38
+	+	61	0
+	+	56	0
+	+	56	28
+	+	56	0
+	+	60	18
+	+	12	37
+	+	35	22
+	+	12	17
+	+	11	0
+	+	35	35
+	+	15	20
+	+	21	0
+	+	18	34
+	+	19	32
+	+	17	25
+	+	21	0
+	+	19	68
+	+	20	28
+	+	21	0
+
+> ~/python_common/waivek/log.py
+	*	1724186438	0
+	"	36	4
+	^	23	66
+	.	84	0
+	+	43	57
+	+	112	0
+	+	43	48
+	+	43	0
+	+	109	12
+	+	14	28
+	+	43	88
+	+	43	0
+	+	118	0
+	+	122	5
+	+	123	11
+	+	116	23
+	+	116	32
+	+	116	4
+	+	116	0
+	+	25	0
+	+	117	39
+	+	14	0
+	+	56	0
+	+	56	3
+	+	56	0
+	+	56	51
+	+	56	0
+	+	25	21
+	+	25	0
+	+	56	0
+	+	14	0
+	+	24	27
+	+	24	0
+	+	28	0
+	+	24	19
+	+	27	0
+	+	26	1
+	+	27	89
+	+	21	9
+	+	19	40
+	+	21	9
+	+	24	32
+	+	24	45
+	+	10	33
+	+	10	0
+	+	10	7
+	+	10	1
+	+	10	0
+	+	10	7
+	+	10	10
+	+	10	27
+	+	10	24
+	+	10	4
+	+	10	0
+	+	5	0
+	+	10	0
+	+	19	44
+	+	21	20
+	+	40	0
+	+	35	39
+	+	21	38
+	+	23	47
+	+	10	0
+	+	19	51
+	+	35	0
+	+	10	0
+	+	3	33
+	+	2	141
+	+	16	10
+	+	36	14
+	+	39	14
+	+	2	2
+	+	10	0
+	+	25	0
+	+	20	16
+	+	14	28
+	+	20	130
+	+	20	14
+	+	13	7
+	+	20	12
+	+	13	95
+	+	14	30
+	+	22	0
+	+	27	0
+	+	26	0
+	+	14	0
+	+	13	122
+	+	2	10
+	+	16	10
+	+	36	14
+	+	39	14
+	+	22	54
+	+	23	65
+	+	84	0
+	a	39	14
+	b	39	14
+
+> ~/python_common/waivek/date.py
+	*	1724186323	0
+	"	90	4
+	^	76	8
+	.	76	7
+	+	77	16
+	+	78	19
+	+	73	27
+	+	85	0
+	+	77	16
+	+	79	10
+	+	78	21
+	+	79	16
+	+	78	16
+	+	79	34
+	+	85	14
+	+	79	14
+	+	85	0
+	+	80	26
+	+	85	0
+	+	80	20
+	+	84	0
+	+	83	16
+	+	80	0
+	+	83	24
+	+	83	0
+	+	80	0
+	+	77	10
+	+	79	64
+	+	80	0
+	+	72	0
+	+	72	18
+	+	37	0
+	+	37	11
+	+	37	0
+	+	36	2
+	+	77	35
+	+	77	20
+	+	36	20
+	+	36	4
+	+	36	5
+	+	36	131
+	+	36	34
+	+	36	19
+	+	36	18
+	+	36	14
+	+	36	35
+	+	36	12
+	+	36	0
+	+	36	8
+	+	36	29
+	+	36	42
+	+	36	8
+	+	36	24
+	+	36	15
+	+	36	0
+	+	36	35
+	+	36	55
+	+	36	17
+	+	36	0
+	+	36	31
+	+	36	20
+	+	36	69
+	+	36	29
+	+	36	43
+	+	36	31
+	+	36	80
+	+	36	38
+	+	36	77
+	+	36	54
+	+	36	43
+	+	36	119
+	+	36	47
+	+	36	48
+	+	36	65
+	+	36	0
+	+	36	87
+	+	36	85
+	+	36	69
+	+	36	48
+	+	36	0
+	+	36	28
+	+	36	4
+	+	36	105
+	+	36	0
+	+	77	7
+	+	77	0
+	+	77	30
+	+	77	15
+	+	36	0
+	+	36	82
+	+	72	0
+	+	77	0
+	+	77	11
+	+	57	85
+	+	57	6
+	+	36	0
+	+	39	0
+	+	52	0
+	+	76	7
+	a	8	12
+
+> ~/python_common/$(pwd)
+	*	1724186191	0
+	"	1	0
+
+> ~/python_common/.envrc
+	*	1724186188	0
+	"	1	0
+	^	3	2
+	.	3	0
+	+	1	14
+	+	2	31
+	+	3	225
+	+	3	7
+	+	3	0
+	+	4	40
+	+	3	0
+
+> ~/hello-go/oldfiles2.go
+	*	1724162629	0
+	"	157	0
+	.	156	0
+	+	2	1
+	+	2	0
+	+	2	1
+	+	2	0
+	+	2	34
+	+	2	0
+	+	2	9
+	+	2	0
+	+	2	42
+	+	2	58
+	+	2	44
+	+	2	4
+	+	2	33
+	+	2	0
+	+	2	9
+	+	2	58
+	+	2	27
+	+	2	24
+	+	2	12
+	+	2	0
+	+	2	32
+	+	2	23
+	+	2	12
+	+	2	0
+	+	2	36
+	+	2	4
+	+	2	0
+	+	2	39
+	+	2	4
+	+	2	32
+	+	2	23
+	+	2	12
+	+	2	24
+	+	2	21
+	+	2	0
+	+	2	27
+	+	2	12
+	+	2	28
+	+	2	4
+	+	2	10
+	+	2	0
+	+	157	0
+	+	112	0
+	+	154	0
+	+	153	0
+	+	156	0
+	+	152	0
+	+	152	23
+	+	127	0
+	+	111	27
+	+	119	9
+	+	120	28
+	+	121	0
+	+	152	0
+	+	156	0
+
+> ~/.config/setup.sh
+	*	1724115555	0
+	"	1	0
+	.	11	0
+	+	17	68
+	+	17	27
+	+	8	0
+	+	6	1
+	+	17	34
+	+	6	0
+	+	8	0
+	+	17	0
+	+	6	0
+	+	17	0
+	+	5	0
+	+	6	0
+	+	17	0
+	+	8	0
+	+	17	0
+	+	17	1
+	+	17	8
+	+	17	10
+	+	17	155
+	+	17	8
+	+	17	123
+	+	17	0
+	+	31	26
+	+	32	27
+	+	9	41
+	+	15	23
+	+	16	0
+	+	15	75
+	+	16	0
+	+	15	63
+	+	16	0
+	+	15	54
+	+	17	71
+	+	17	89
+	+	17	0
+	+	16	38
+	+	16	0
+	+	16	13
+	+	16	0
+	+	17	9
+	+	17	17
+	+	32	0
+	+	6	0
+	+	19	0
+	+	17	14
+	+	34	34
+	+	15	0
+	+	15	29
+	+	2	11
+	+	17	0
+	+	18	0
+	+	17	0
+	+	28	0
+	+	15	0
+	+	16	0
+	+	17	0
+	+	34	0
+	+	9	0
+	+	17	0
+	+	49	35
+	+	32	1
+	+	35	0
+	+	49	0
+	+	32	0
+	+	31	0
+	+	25	0
+	+	20	0
+	+	51	45
+	+	48	1
+	+	49	0
+	+	43	42
+	+	2	1
+	+	31	1
+	+	33	41
+	+	14	0
+	+	9	0
+	+	5	14
+	+	3	0
+	+	29	193
+	+	29	162
+	+	32	0
+	+	31	82
+	+	27	0
+	+	30	0
+	+	5	0
+	+	7	17
+	+	7	63
+	+	4	33
+	+	4	67
+	+	29	282
+	+	9	0
+	+	14	0
+	+	16	0
+	+	9	0
+	+	11	6
+	+	2	0
+	+	1	10
+	+	12	26
+	+	10	35
+	+	11	0
+
+> /etc/gitconfig
+	*	1724115291	0
+	"	2	127
+
+> ~/bash/pwd-oldfiles.bash
+	*	1724114613	0
+	"	1	0
+	^	3	42
+	.	3	41
+	+	2	0
+	+	4	0
+	+	2	0
+	+	1	10
+	+	3	0
+	+	2	1
+	+	3	41
+
+> ~/bash/oldfiles.bash
+	*	1724114589	0
+	"	6	35
+	^	6	36
+	.	6	35
+	+	3	1
+	+	5	12
+	+	5	49
+	+	5	12
+	+	5	0
+	+	7	1
+	+	1	10
+	+	5	62
+	+	6	34
+	+	5	1
+	+	6	35
+
+> ~/hello-go/cache.txt
+	*	1724114392	0
+	"	1	0
+
+> ~/hello-go/oldfiles.go
+	*	1724114227	0
+	"	1	0
+	^	14	20
+	.	12	0
+	+	148	0
+	+	78	82
+	+	32	70
+	+	32	27
+	+	32	19
+	+	32	8
+	+	32	0
+	+	32	28
+	+	32	39
+	+	32	0
+	+	11	0
+	+	12	33
+	+	17	0
+	+	12	23
+	+	16	8
+	+	16	0
+	+	12	37
+	+	12	52
+	+	12	20
+	+	15	0
+	+	18	25
+	+	32	0
+	+	18	32
+	+	20	4
+	+	31	0
+	+	31	24
+	+	31	77
+	+	31	40
+	+	31	51
+	+	31	0
+	+	32	0
+	+	137	29
+	+	137	0
+	+	138	12
+	+	138	41
+	+	138	4
+	+	94	44
+	+	95	4
+	+	136	0
+	+	138	0
+	+	138	28
+	+	137	0
+	+	138	0
+	+	137	0
+	+	133	0
+	+	133	16
+	+	133	0
+	+	113	0
+	+	137	30
+	+	147	0
+	+	138	19
+	+	138	50
+	+	138	0
+	+	141	0
+	+	143	0
+	+	142	41
+	+	127	40
+	+	130	33
+	+	77	0
+	+	31	0
+	+	19	0
+	+	20	31
+	+	21	40
+	+	22	19
+	+	23	8
+	+	25	77
+	+	26	44
+	+	27	19
+	+	28	8
+	+	30	60
+	+	31	0
+	+	12	41
+	+	12	0
+	+	12	47
+	+	13	78
+	+	14	19
+	+	127	0
+	+	130	0
+	+	142	0
+	+	147	0
+	+	12	0
+
+> ~/.vim/_viminfo_linux
+	*	1724114224	0
+	"	861	0
+
+> ~/hello-go/pwd-oldfiles.go
+	*	1724113504	0
+	"	1	0
+	.	93	0
+	+	93	0
+	+	92	16
+	+	93	26
+	+	93	19
+	+	66	40
+	+	93	0
+	+	65	0
+	+	61	25
+	+	61	0
+	+	66	0
+	+	63	53
+	+	64	0
+	+	64	53
+	+	64	24
+	+	64	0
+	+	71	37
+	+	71	32
+	+	71	0
+	+	93	0
+
+> ~/hello-go/oldfiles
+	*	1724113110	0
+	"	1	0
+
+> ~/hello-go/pwd-oldfiles
+	*	1724112295	0
+	"	1	0
+
+> ~/pyscripts/golang-output.txt
+	*	1724112206	0
+	"	1	0
+
+> ~/pyscripts/python-output.txt
+	*	1724112204	0
+	"	1	0
+	.	30	0
+	+	30	0
+
+> ~/pyscripts/pwd-oldfiles.py
+	*	1724112038	0
+	"	41	8
+	.	42	0
+	+	1	0
+	+	22	20
+	+	35	8
+	+	42	0
+	+	33	0
+	+	34	0
+	+	35	0
+	+	34	0
+	+	35	0
+	+	34	0
+	+	33	0
+	+	35	0
+	+	35	118
+	+	35	60
+	+	35	96
+	+	35	60
+	+	35	0
+	+	42	0
+	+	22	0
+	+	35	0
+	+	33	0
+	+	33	17
+	+	34	0
+	+	35	0
+	+	31	0
+	+	35	0
+	+	32	0
+	+	33	0
+	+	32	0
+	+	42	0
+	+	32	0
+	+	33	0
+	+	34	0
+	+	35	0
+	+	32	0
+	+	20	0
+	+	42	0
+	a	41	13
+
+> ~/pyscripts/oldfiles.py
+	*	1724111769	0
+	"	1	0
+	^	33	16
+	.	33	15
+	+	38	24
+	+	38	23
+	+	40	0
+	+	38	29
+	+	39	16
+	+	1	0
+	+	37	0
+	+	37	83
+	+	34	0
+	+	37	42
+	+	37	9
+	+	34	0
+	+	37	28
+	+	37	11
+	+	37	0
+	+	18	0
+	+	21	10
+	+	34	14
+	+	34	4
+	+	34	10
+	+	34	22
+	+	21	0
+	+	37	0
+	+	34	0
+	+	34	9
+	+	34	20
+	+	34	0
+	+	34	48
+	+	34	0
+	+	19	9
+	+	34	66
+	+	34	0
+	+	34	48
+	+	34	80
+	+	37	47
+	+	34	78
+	+	34	11
+	+	34	0
+	+	34	52
+	+	34	57
+	+	34	0
+	+	34	54
+	+	34	0
+	+	4	11
+	+	37	0
+	+	3	56
+	+	7	0
+	+	3	67
+	+	4	10
+	+	5	42
+	+	6	0
+	+	21	27
+	+	37	0
+	+	22	0
+	+	36	21
+	+	33	15
+
+> ~/pyscripts/port.py
+	*	1724109143	0
+	"	17	0
+	^	22	0
+	.	21	17
+	+	18	28
+	+	18	16
+	+	1	8
+	+	18	0
+	+	2	0
+	+	17	11
+	+	21	17
+
+> ~/python_common/.direnv/python-3.10.12/lib/python3.10/site-packages/loguru/__init__.pyi
+	*	1724108258	0
+	"	186	6
+
+> ~/python_common/.direnv/python-3.10.12/lib/python3.10/site-packages/loguru/_recattrs.py
+	*	1724107921	0
+	"	3	0
+
+> ~/python_common/.direnv/python-3.10.12/lib/python3.10/site-packages/loguru/_logger.py
+	*	1724107921	0
+	"	1982	0
+
+> ~/python_common/output1.txt
+	*	1724107078	0
+	"	1	0
+
+> ~/python_staging/first.log
+	*	1724076637	0
+	"	2	0
+	^	6	0
+	.	2	0
+	+	1	13
+	+	4	0
+	+	2	0
+
+> ~/python_staging/file.log
+	*	1724076623	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/python_staging/make_first_log_file.py
+	*	1724076622	0
+	"	17	50
+	^	17	51
+	.	17	50
+	+	32	0
+	+	1	0
+	+	7	21
+	+	13	70
+	+	27	0
+	+	26	45
+	+	14	52
+	+	13	0
+	+	15	49
+	+	16	26
+	+	17	77
+	+	14	0
+	+	15	43
+	+	17	10
+	+	16	0
+	+	26	0
+	+	17	47
+	+	18	40
+	+	17	48
+	+	8	10
+	+	18	0
+	+	19	0
+	+	25	3
+	+	22	50
+	+	22	0
+	+	21	67
+	+	20	0
+	+	21	0
+	+	8	31
+	+	22	10
+	+	9	15
+	+	24	94
+	+	24	9
+	+	24	102
+	+	23	1
+	+	18	41
+	+	22	53
+	+	24	47
+	+	17	50
+
+> ~/python_staging/second.log
+	*	1724024408	0
+	"	4	0
+	.	2	0
+	+	2	0
+
+> ~/python_staging/requirements.txt
+	*	1724023738	0
+	"	6	3
+	^	6	4
+	.	6	3
+	+	6	3
+
+> ~/python_staging/make_first_log_file.log
+	*	1724023115	0
+	"	2	11
+	^	2	12
+	.	2	11
+	+	2	11
+
+> ~/python_staging/logs/do_log.log
+	*	1724023091	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/tmp/second.log
+	*	1724023063	0
+	"	2	0
+	.	6	0
+	+	2	0
+	+	6	0
+
+> ~/.vim/tmp/file.ansilog
+	*	1724023054	0
+	"	5	0
+	^	1	0
+	.	1	0
+	+	1	0
+	+	5	15
+	+	1	0
+
+> ~/.vim/syntax/ansilog.vim
+	*	1724022948	0
+	"	11	0
+	.	83	0
+	+	1	31
+	+	1	0
+	+	1	31
+	+	1	0
+	+	1	31
+	+	1	0
+	+	2	0
+	+	83	0
+
+> ~/python_staging/loguru_sample.py
+	*	1724022589	0
+	"	5	10
+	^	5	11
+	.	5	10
+	+	4	21
+	+	5	10
+
+> ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/log.py
+	*	1724022539	0
+	"	64	24
+	^	10	28
+
+> ~/pyscripts/worker_oldfiles_to_sqlite.py
+	*	1724022490	0
+	"	84	12
+	.	97	0
+	+	31	86
+	+	32	0
+	+	90	57
+	+	90	0
+	+	35	33
+	+	39	10
+	+	76	0
+	+	46	18
+	+	76	0
+	+	90	0
+	+	48	0
+	+	49	74
+	+	76	0
+	+	54	41
+	+	49	109
+	+	30	56
+	+	76	0
+	+	75	0
+	+	77	7
+	+	90	0
+	+	89	0
+	+	12	10
+	+	89	8
+	+	89	20
+	+	13	21
+	+	67	47
+	+	73	27
+	+	73	62
+	+	74	0
+	+	73	16
+	+	73	0
+	+	60	24
+	+	62	13
+	+	67	0
+	+	62	15
+	+	64	13
+	+	65	47
+	+	67	0
+	+	66	0
+	+	59	4
+	+	57	21
+	+	59	32
+	+	58	0
+	+	67	81
+	+	68	4
+	+	77	11
+	+	89	0
+	+	77	71
+	+	92	0
+	+	95	9
+	+	73	0
+	+	69	0
+	+	18	0
+	+	69	40
+	+	71	8
+	+	70	14
+	+	72	24
+	+	69	37
+	+	69	32
+	+	77	0
+	+	39	0
+	+	49	0
+	+	82	8
+	+	88	19
+	+	35	0
+	+	81	61
+	+	82	25
+	+	40	0
+	+	40	7
+	+	40	0
+	+	36	0
+	+	38	0
+	+	44	6
+	+	54	0
+	+	53	0
+	+	14	13
+	+	53	0
+	+	51	112
+	+	52	112
+	+	53	0
+	+	54	50
+	+	83	23
+	+	84	46
+	+	86	25
+	+	16	18
+	+	17	37
+	+	22	41
+	+	36	40
+	+	39	40
+	+	86	50
+	+	78	22
+	+	79	31
+	+	86	18
+	+	18	0
+	+	95	0
+	+	93	10
+	+	94	0
+	+	93	0
+	+	87	12
+	+	97	0
+
+> ~/pyscripts/file.ansilog
+	*	1724022476	0
+	"	1	0
+	^	3	30
+	.	3	87
+	+	1	0
+	+	2	0
+	+	3	0
+	+	1	23
+	+	2	28
+	+	1	23
+	+	2	28
+	+	3	87
+
+> ~/.vim/ftplugin/ansilog.vim
+	*	1724021984	0
+	"	4	10
+	^	4	11
+	.	4	10
+	+	2	3
+	+	4	10
+
+> ~/pyscripts/file.log
+	*	1724021652	0
+	"	3	0
+	.	1	0
+	+	1	0
+
+> ~/hateoas/chat_download_worker.py
+	*	1724015756	0
+	"	107	0
+	^	15	28
+	.	15	0
+	+	52	0
+	+	12	1
+	+	15	0
+	+	12	1
+	+	12	38
+	+	143	51
+	+	13	0
+	+	25	38
+	+	179	35
+	+	180	29
+	+	53	84
+	+	53	58
+	+	53	63
+	+	53	32
+	+	53	22
+	+	53	27
+	+	53	34
+	+	53	26
+	+	56	26
+	+	57	22
+	+	138	0
+	+	140	0
+	+	148	0
+	+	140	0
+	+	142	33
+	+	145	36
+	+	147	44
+	+	143	0
+	+	28	24
+	+	29	37
+	+	32	49
+	+	34	24
+	+	35	37
+	+	37	49
+	+	39	23
+	+	40	37
+	+	43	25
+	+	44	37
+	+	12	0
+	+	171	48
+	+	172	78
+	+	53	38
+	+	76	0
+	+	75	15
+	+	80	0
+	+	83	15
+	+	108	0
+	+	59	0
+	+	108	0
+	+	65	0
+	+	71	0
+	+	53	0
+	+	90	0
+	+	95	53
+	+	93	62
+	+	95	0
+	+	94	0
+	+	137	0
+	+	181	0
+	+	15	0
+
+> ~/hateoas/download_worker.py
+	*	1724015736	0
+	"	168	4
+	^	16	28
+	.	17	0
+	+	99	42
+	+	99	10
+	+	99	0
+	+	99	12
+	+	99	0
+	+	99	81
+	+	99	0
+	+	88	14
+	+	89	10
+	+	91	23
+	+	99	0
+	+	91	38
+	+	92	7
+	+	94	35
+	+	95	27
+	+	95	39
+	+	95	10
+	+	99	0
+	+	95	17
+	+	95	0
+	+	94	10
+	+	97	24
+	+	98	41
+	+	189	38
+	+	99	0
+	+	17	28
+	+	189	0
+	+	184	0
+	+	184	13
+	+	87	24
+	+	184	0
+	+	118	35
+	+	121	0
+	+	118	0
+	+	121	50
+	+	121	0
+	+	119	0
+	+	184	10
+	+	151	0
+	+	147	18
+	+	149	17
+	+	150	58
+	+	148	0
+	+	56	78
+	+	13	67
+	+	25	0
+	+	26	4
+	+	26	0
+	+	13	0
+	+	9	0
+	+	141	0
+	+	13	0
+	+	17	0
+	+	186	38
+	+	184	0
+	+	188	0
+	+	154	12
+	+	154	0
+	+	154	13
+	+	154	0
+	+	198	13
+	+	172	0
+	+	158	30
+	+	160	4
+	+	161	57
+	+	172	0
+	+	161	6
+	+	162	4
+	+	162	67
+	+	172	0
+	+	162	11
+	+	158	1
+	+	159	0
+	+	158	25
+	+	158	34
+	+	162	24
+	+	162	0
+	+	172	0
+	+	158	0
+	+	174	13
+	+	164	77
+	+	165	4
+	+	172	0
+	+	175	50
+	+	181	0
+	+	175	84
+	+	178	11
+	+	181	0
+	+	179	22
+	+	170	38
+	+	171	68
+	+	172	0
+	+	176	15
+	+	180	0
+	+	177	19
+	+	183	8
+	+	183	38
+	+	17	0
+	+	16	27
+	+	17	0
+
+> ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/dbutils.py
+	*	1724014249	0
+	"	32	0
+
+> ~/python_staging/white.py
+	*	1724013172	0
+	"	1	0
+	^	12	26
+	.	12	25
+	+	18	0
+	+	1	0
+	+	9	27
+	+	10	26
+	+	11	52
+	+	12	25
+
+> ~/tooling/docs/fd.man
+	*	1724012908	0
+	"	69	18
+
+> ~/python_staging/do_log.py
+	*	1724011888	0
+	"	18	4
+	.	18	4
+	+	25	0
+	+	25	39
+	+	25	0
+	+	2	0
+	+	25	0
+	+	5	0
+	+	5	54
+	+	5	0
+	+	4	71
+	+	19	61
+	+	20	10
+	+	17	38
+	+	15	14
+	+	17	28
+	+	18	0
+	+	4	91
+	+	18	23
+	+	12	0
+	+	8	19
+	+	11	0
+	+	9	51
+	+	8	32
+	+	9	44
+	+	10	13
+	+	14	9
+	+	10	24
+	+	14	0
+	+	18	5
+	+	15	48
+	+	20	0
+	+	17	0
+	+	15	68
+	+	1	0
+	+	17	4
+	+	15	15
+	+	16	15
+	+	18	5
+	+	19	4
+	+	20	4
+	+	10	0
+	+	18	4
+
+> ~/.vim/ide.vim
+	*	1723998928	0
+	"	62	0
+	^	2	162
+	.	62	0
+	+	183	5
+	+	183	0
+	+	183	35
+	+	183	0
+	+	175	0
+	+	183	0
+	+	175	0
+	+	176	3
+	+	183	0
+	+	180	3
+	+	179	0
+	+	177	59
+	+	182	0
+	+	177	94
+	+	180	81
+	+	182	0
+	+	180	80
+	+	1	150
+	+	143	36
+	+	178	0
+	+	177	0
+	+	178	41
+	+	181	0
+	+	180	0
+	+	181	41
+	+	143	43
+	+	177	4
+	+	178	4
+	+	180	4
+	+	181	4
+	+	296	7
+	+	465	14
+	+	466	0
+	+	467	0
+	+	468	45
+	+	469	0
+	+	69	0
+	+	65	18
+	+	69	0
+	+	234	0
+	+	167	46
+	+	168	0
+	+	154	19
+	+	168	0
+	+	167	34
+	+	134	7
+	+	134	51
+	+	134	0
+	+	134	50
+	+	134	8
+	+	134	38
+	+	134	73
+	+	134	0
+	+	111	0
+	+	111	32
+	+	111	0
+	+	111	16
+	+	111	30
+	+	111	0
+	+	111	45
+	+	111	0
+	+	111	43
+	+	111	0
+	+	111	16
+	+	111	0
+	+	111	24
+	+	134	50
+	+	134	73
+	+	111	0
+	+	134	0
+	+	147	32
+	+	134	0
+	+	154	0
+	+	168	0
+	+	167	34
+	+	143	52
+	+	152	46
+	+	143	45
+	+	152	39
+	+	472	16
+	+	473	23
+	+	473	0
+	+	327	0
+	+	330	0
+	+	327	10
+	+	329	0
+	+	327	30
+	+	325	77
+	+	326	63
+	+	473	0
+	+	320	0
+	+	2	161
+	+	62	0
+
+> ~/.vim/coc-settings.json
+	*	1723997165	0
+	"	30	33
+	^	30	34
+	.	30	33
+	+	24	37
+	+	2	0
+	+	44	0
+	+	44	11
+	+	44	0
+	+	2	0
+	+	18	0
+	+	19	0
+	+	20	0
+	+	19	0
+	+	2	33
+	+	3	38
+	+	20	0
+	+	4	0
+	+	11	0
+	+	13	0
+	+	24	0
+	+	20	0
+	+	24	0
+	+	25	0
+	+	43	42
+	+	26	0
+	+	43	0
+	+	29	34
+	+	43	0
+	+	40	0
+	+	29	0
+	+	4	0
+	+	27	0
+	+	4	0
+	+	40	0
+	+	31	37
+	+	3	38
+	+	11	0
+	+	8	33
+	+	11	0
+	+	9	49
+	+	11	0
+	+	8	0
+	+	10	131
+	+	9	78
+	+	8	0
+	+	24	0
+	+	68	0
+	+	67	25
+	+	68	0
+	+	86	0
+	+	56	14
+	+	57	44
+	+	55	0
+	+	84	0
+	+	83	0
+	+	80	71
+	+	81	33
+	+	83	0
+	+	82	16
+	+	83	0
+	+	82	25
+	+	81	11
+	+	79	48
+	+	81	30
+	+	79	0
+	+	23	6
+	+	33	29
+	+	40	33
+	+	40	0
+	+	37	0
+	+	33	6
+	+	34	5
+	+	33	0
+	+	37	0
+	+	38	28
+	+	39	32
+	+	43	0
+	+	41	39
+	+	43	0
+	+	49	0
+	+	54	0
+	+	54	69
+	+	54	34
+	+	54	30
+	+	54	44
+	+	54	18
+	+	54	0
+	+	46	51
+	+	48	41
+	+	42	33
+	+	8	0
+	+	17	0
+	+	15	4
+	+	16	39
+	+	8	0
+	+	6	50
+	+	7	0
+	+	50	27
+	+	51	31
+	+	50	6
+	+	51	6
+	+	29	6
+	+	30	33
+
+> ~/python_staging/pyrightconfig.json
+	*	1723997057	0
+	"	3	6
+	^	3	7
+	.	3	6
+	+	4	0
+	+	2	6
+	+	3	6
+
+> ~/python_common/waivek/test.py
+	*	1723938750	0
+	"	626	4
+	^	764	20
+	.	741	0
+	+	752	11
+	+	753	26
+	+	775	13
+	+	767	15
+	+	775	18
+	+	767	35
+	+	767	0
+	+	749	23
+	+	753	16
+	+	773	29
+	+	775	20
+	+	752	18
+	+	767	20
+	+	752	18
+	+	767	0
+	+	65	4
+	+	66	31
+	+	666	0
+	+	775	5
+	+	774	15
+	+	757	15
+	+	759	0
+	+	765	19
+	+	766	19
+	+	771	19
+	+	772	9
+	+	758	0
+	+	766	0
+	+	765	0
+	+	750	0
+	+	764	19
+	+	745	0
+	+	742	0
+	+	741	0
+
+> ~/python_staging/track_function_states.py
+	*	1723938191	0
+	"	85	4
+	.	177	0
+	+	1	0
+	+	200	0
+	+	177	0
+
+> ~/python_staging/function_states.json
+	*	1723938140	0
+	"	31	20
+	.	31	25
+	+	31	25
+	a	31	25
+	b	31	25
+
+> ~/python_staging/error_example.py
+	*	1723937920	0
+	"	9	0
+	.	10	0
+	+	5	19
+	+	6	12
+	+	7	12
+	+	9	13
+	+	10	0
+
+> ~/pyscripts/python-error-library-stats.py
+	*	1723937168	0
+	"	88	0
+	^	62	62
+	.	62	61
+	+	7	38
+	+	50	32
+	+	56	37
+	+	79	0
+	+	81	22
+	+	51	42
+	+	53	25
+	+	54	61
+	+	56	23
+	+	50	0
+	+	51	48
+	+	54	45
+	+	51	0
+	+	52	28
+	+	55	62
+	+	56	32
+	+	52	28
+	+	55	29
+	+	52	28
+	+	79	0
+	+	56	35
+	+	50	0
+	+	58	19
+	+	81	5
+	+	82	21
+	+	64	4
+	+	70	4
+	+	63	0
+	+	79	67
+	+	1	0
+	+	79	0
+	+	79	67
+	+	79	16
+	+	79	0
+	+	59	32
+	+	63	123
+	+	1	0
+	+	63	102
+	+	59	17
+	+	63	0
+	+	60	24
+	+	60	0
+	+	59	0
+	+	79	0
+	+	70	51
+	+	79	15
+	+	70	9
+	+	79	0
+	+	79	13
+	+	70	47
+	+	70	0
+	+	79	24
+	+	59	0
+	+	70	64
+	+	71	70
+	+	79	0
+	+	72	62
+	+	73	63
+	+	78	0
+	+	72	60
+	+	73	62
+	+	77	0
+	+	76	21
+	+	74	0
+	+	69	0
+	+	72	23
+	+	72	0
+	+	62	0
+	+	82	0
+	+	81	4
+	+	20	19
+	+	22	48
+	+	22	25
+	+	20	0
+	+	21	16
+	+	22	20
+	+	21	20
+	+	22	22
+	+	21	16
+	+	22	30
+	+	26	15
+	+	23	0
+	+	26	0
+	+	25	15
+	+	24	23
+	+	15	0
+	+	10	8
+	+	13	0
+	+	14	3
+	+	17	76
+	+	82	4
+	+	81	4
+	+	62	54
+	+	68	0
+	+	11	13
+	+	66	8
+	+	67	27
+	+	62	56
+	+	61	18
+	+	62	61
+
+> ~/tooling/python-error-traceback-prettify-libs.txt
+	*	1723937148	0
+	"	13	39
+	^	5	0
+	.	5	0
+	+	7	41
+	+	14	45
+	+	7	0
+	+	6	44
+	+	14	0
+	+	1	46
+	+	14	0
+	+	2	0
+	+	7	0
+	+	3	0
+	+	7	0
+	+	4	0
+	+	5	0
+
+> ~/tooling/docs/fzf.man
+	*	1723937012	0
+	"	823	12
+
+> ~/hateoas/transcription_to_offset.py
+	*	1723936079	0
+	"	56	4
+	^	98	99
+	.	53	0
+	+	1	0
+	+	13	0
+	+	94	0
+	+	7	21
+	+	13	0
+	+	35	26
+	+	91	0
+	+	94	98
+	+	94	0
+	+	99	0
+	+	99	98
+	+	9	0
+	+	92	0
+	+	93	0
+	+	95	0
+	+	93	0
+	+	50	0
+	+	90	0
+	+	56	0
+	+	36	0
+	+	39	0
+	+	93	0
+	+	95	0
+	+	92	69
+	+	59	0
+	+	51	47
+	+	52	76
+	+	53	65
+	+	54	18
+	+	95	0
+	+	65	15
+	+	100	26
+	+	65	28
+	+	64	28
+	+	96	0
+	+	98	0
+	+	96	0
+	+	98	0
+	+	97	16
+	+	97	98
+	+	98	16
+	+	98	98
+	+	101	45
+	+	53	0
+	a	101	45
+	b	101	45
+
+> ~/hateoas/worker_utils.py
+	*	1723936003	0
+	"	25	0
+	^	59	19
+	.	13	0
+	+	56	61
+	+	32	45
+	+	9	29
+	+	20	73
+	+	3	8
+	+	3	31
+	+	20	0
+	+	17	7
+	+	3	0
+	+	1	0
+	+	17	8
+	+	18	38
+	+	19	64
+	+	20	49
+	+	3	0
+	+	17	0
+	+	2	0
+	+	10	26
+	+	17	0
+	+	8	0
+	+	3	0
+	+	11	3
+	+	2	26
+	+	20	51
+	+	13	32
+	+	8	7
+	+	8	14
+	+	8	0
+	+	8	47
+	+	8	9
+	+	8	18
+	+	8	0
+	+	8	14
+	+	8	41
+	+	8	24
+	+	8	0
+	+	8	79
+	+	8	16
+	+	8	21
+	+	8	0
+	+	16	0
+	+	24	19
+	+	13	27
+	+	23	0
+	+	13	10
+	+	15	65
+	+	16	0
+	+	15	46
+	+	16	18
+	+	15	0
+	+	13	27
+	+	13	38
+	+	15	14
+	+	16	20
+	+	14	8
+	+	16	0
+	+	12	0
+	+	23	0
+	+	19	44
+	+	24	0
+	+	8	0
+	+	35	52
+	+	47	0
+	+	59	0
+	+	13	0
+	+	5	20
+	+	6	4
+	+	59	18
+	+	13	0
+
+> ~/pyscripts/viewlog.py
+	*	1723934417	0
+	"	62	12
+	^	259	27
+	.	259	21
+	+	126	0
+	+	113	0
+	+	122	100
+	+	123	96
+	+	124	71
+	+	125	0
+	+	114	30
+	+	124	56
+	+	126	0
+	+	118	0
+	+	125	81
+	+	125	0
+	+	126	0
+	+	156	68
+	+	96	115
+	+	96	0
+	+	96	115
+	+	121	37
+	+	120	0
+	+	90	33
+	+	258	0
+	+	258	48
+	+	154	73
+	+	258	0
+	+	259	0
+	+	257	0
+	+	5	0
+	+	254	3
+	+	254	18
+	+	254	0
+	+	4	0
+	+	139	0
+	+	141	0
+	+	150	0
+	+	246	0
+	+	226	0
+	+	230	0
+	+	190	0
+	+	231	0
+	+	215	0
+	+	194	0
+	+	202	0
+	+	190	0
+	+	194	0
+	+	202	0
+	+	197	0
+	+	195	0
+	+	196	0
+	+	194	0
+	+	195	0
+	+	128	0
+	+	158	0
+	+	157	0
+	+	158	0
+	+	128	0
+	+	140	0
+	+	139	0
+	+	144	0
+	+	150	0
+	+	155	0
+	+	158	0
+	+	118	0
+	+	115	40
+	+	119	0
+	+	116	49
+	+	119	0
+	+	121	0
+	+	118	26
+	+	125	30
+	+	125	0
+	+	119	0
+	+	118	0
+	+	125	0
+	+	120	0
+	+	119	26
+	+	120	0
+	+	121	0
+	+	125	0
+	+	123	0
+	+	119	0
+	+	121	0
+	+	122	0
+	+	117	43
+	+	123	56
+	+	122	0
+	+	123	0
+	+	122	0
+	+	123	0
+	+	155	0
+	+	195	0
+	+	257	0
+	+	259	21
+	a	256	13
+	b	90	33
+
+> ~/bash/CocTree1
+	*	1723934417	0
+	"	8	0
+	.	2	0
+	+	2	0
+
+> ~/bash/logs/chat_download_worker-blue.log
+	*	1723934245	0
+	"	83506	68
+	^	10	1
+	.	1	0
+	+	90	33
+	+	1	0
+
+> ~/direnv-sample/project1/.envrc
+	*	1723933509	0
+	"	2	10
+	^	2	11
+	.	2	10
+	+	1	13
+	+	2	10
+
+> ~/direnv-sample/project1/.env
+	*	1723933497	0
+	"	1	10
+	^	1	11
+	.	1	10
+	+	1	10
+
+> ~/tooling/functional-programming-concepts.md
+	*	1723746682	0
+	"	60	0
+	^	73	0
+	.	74	0
+	+	2	1
+	+	3	7
+	+	20	2
+	+	21	0
+	+	2	14
+	+	3	0
+	+	21	22
+	+	22	8
+	+	39	2
+	+	42	8
+	+	58	3
+	+	41	0
+	+	42	0
+	+	41	0
+	+	72	2
+	+	60	0
+	+	59	24
+	+	40	11
+	+	41	0
+	+	73	0
+	+	59	0
+	+	74	1
+	+	74	0
+
+> ~/hateoas/pyrightconfig.json
+	*	1723746672	0
+	"	3	0
+	^	4	34
+	.	4	33
+	+	5	0
+	+	3	35
+	+	4	31
+	+	3	35
+	+	4	33
+
+> ~/.vim/plugged/vim-markdown/doc/vim-markdown.txt
+	*	1723742083	0
+	"	89	57
+
+> ~/tooling/functional-programming-concepts.txt
+	*	1723741921	0
+	"	16	0
+	^	21	0
+	.	21	0
+	+	19	1
+	+	21	0
 
 > ~/pyscripts/print_todo.py
 	*	1723677616	0
@@ -14149,10 +17256,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 	+	84	34
 	+	84	176
 	+	84	79
-
-> ~/tooling/docs/fzf.man
-	*	1723677544	0
-	"	1074	18
 
 > ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/color.py
 	*	1723675880	0
@@ -14593,131 +17696,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 	+	26	6
 	+	16	22
 
-> ~/.config/setup.sh
-	*	1723671665	0
-	"	25	0
-	.	11	0
-	+	17	68
-	+	17	27
-	+	8	0
-	+	6	1
-	+	17	34
-	+	6	0
-	+	8	0
-	+	17	0
-	+	6	0
-	+	17	0
-	+	5	0
-	+	6	0
-	+	17	0
-	+	8	0
-	+	17	0
-	+	17	1
-	+	17	8
-	+	17	10
-	+	17	155
-	+	17	8
-	+	17	123
-	+	17	0
-	+	31	26
-	+	32	27
-	+	9	41
-	+	15	23
-	+	16	0
-	+	15	75
-	+	16	0
-	+	15	63
-	+	16	0
-	+	15	54
-	+	17	71
-	+	17	89
-	+	17	0
-	+	16	38
-	+	16	0
-	+	16	13
-	+	16	0
-	+	17	9
-	+	17	17
-	+	32	0
-	+	6	0
-	+	19	0
-	+	17	14
-	+	34	34
-	+	15	0
-	+	15	29
-	+	2	11
-	+	17	0
-	+	18	0
-	+	17	0
-	+	28	0
-	+	15	0
-	+	16	0
-	+	17	0
-	+	34	0
-	+	9	0
-	+	17	0
-	+	49	35
-	+	32	1
-	+	35	0
-	+	49	0
-	+	32	0
-	+	31	0
-	+	25	0
-	+	20	0
-	+	51	45
-	+	48	1
-	+	49	0
-	+	43	42
-	+	2	1
-	+	31	1
-	+	33	41
-	+	14	0
-	+	9	0
-	+	5	14
-	+	3	0
-	+	29	193
-	+	29	162
-	+	32	0
-	+	31	82
-	+	27	0
-	+	30	0
-	+	5	0
-	+	7	17
-	+	7	63
-	+	4	33
-	+	4	67
-	+	29	282
-	+	9	0
-	+	14	0
-	+	16	0
-	+	9	0
-	+	11	6
-	+	2	0
-	+	1	10
-	+	12	26
-	+	10	35
-	+	11	0
-
-> ~/.vim/syntax/ansilog.vim
-	*	1723671610	0
-	"	1	0
-	^	83	32
-	.	83	31
-	+	2	31
-	+	2	0
-	+	2	31
-	+	2	0
-	+	83	31
-
-> ~/.vim/tmp/file.ansilog
-	*	1723671609	0
-	"	1	6
-	^	1	0
-	.	1	0
-	+	1	0
-	+	5	15
-	+	1	0
-
 > ~/ui-components-css/todo.txt
 	*	1723659391	0
 	"	1	0
@@ -14740,112 +17718,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 > ~/.vim/plugged/tabular/doc/Tabular.txt
 	*	1723658905	0
 	"	254	0
-
-> ~/.vim/vimrc
-	*	1723658777	0
-	"	611	8
-	^	611	9
-	.	611	8
-	+	1291	55
-	+	1291	0
-	+	1291	44
-	+	1291	0
-	+	1291	19
-	+	1291	71
-	+	1291	0
-	+	1291	23
-	+	1291	41
-	+	1291	44
-	+	1291	40
-	+	1291	28
-	+	1291	0
-	+	1291	11
-	+	1291	18
-	+	1291	43
-	+	1291	64
-	+	1291	54
-	+	1291	0
-	+	1291	31
-	+	1291	0
-	+	1291	6
-	+	1291	0
-	+	1291	1
-	+	1291	0
-	+	1291	80
-	+	1291	75
-	+	1291	0
-	+	1291	52
-	+	1291	41
-	+	163	0
-	+	49	26
-	+	1291	0
-	+	48	0
-	+	47	22
-	+	46	25
-	+	67	0
-	+	1072	57
-	+	1077	59
-	+	1083	55
-	+	244	0
-	+	243	0
-	+	244	25
-	+	1284	1
-	+	1285	0
-	+	1287	24
-	+	1288	24
-	+	1289	24
-	+	1290	0
-	+	1269	12
-	+	1270	0
-	+	1271	0
-	+	1272	0
-	+	1292	49
-	+	1289	0
-	+	1291	13
-	+	1292	13
-	+	1289	0
-	+	1291	16
-	+	1292	16
-	+	1291	0
-	+	1293	0
-	+	1291	0
-	+	1293	0
-	+	81	0
-	+	768	0
-	+	60	0
-	+	42	0
-	+	42	25
-	+	61	3
-	+	42	5
-	+	61	16
-	+	61	0
-	+	62	0
-	+	87	16
-	+	87	0
-	+	88	0
-	+	42	5
-	+	61	3
-	+	87	0
-	+	88	0
-	+	61	0
-	+	62	0
-	+	42	0
-	+	1075	4
-	+	1077	0
-	+	1076	40
-	+	1079	36
-	+	1082	0
-	+	1080	26
-	+	1081	9
-	+	795	0
-	+	1294	31
-	+	1296	4
-	+	1297	30
-	+	1298	4
-	+	42	0
-	+	41	0
-	+	45	5
-	+	611	8
 
 > ~/sqlite-editor/static/css/editor-2.css
 	*	1723658278	0
@@ -15006,75 +17878,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 	+	39	39
 	+	61	39
 
-> ~/bash/pwd-oldfiles.bash
-	*	1723642467	0
-	"	1	10
-	^	1	11
-	.	1	10
-	+	2	0
-	+	3	0
-	+	2	0
-	+	1	10
-
-> ~/bash/oldfiles.bash
-	*	1723642421	0
-	"	5	0
-	^	5	63
-	.	5	62
-	+	3	1
-	+	5	12
-	+	5	49
-	+	5	12
-	+	5	0
-	+	6	1
-	+	1	10
-	+	5	62
-
-> ~/python_staging/do_log.py
-	*	1723639558	0
-	"	21	0
-	.	10	0
-	+	25	0
-	+	25	39
-	+	25	0
-	+	2	0
-	+	25	0
-	+	5	0
-	+	5	54
-	+	5	0
-	+	4	71
-	+	19	61
-	+	20	10
-	+	17	38
-	+	15	14
-	+	17	28
-	+	18	0
-	+	4	91
-	+	18	23
-	+	12	0
-	+	8	19
-	+	11	0
-	+	9	51
-	+	8	32
-	+	9	44
-	+	10	13
-	+	14	9
-	+	10	24
-	+	14	0
-	+	18	5
-	+	15	48
-	+	20	0
-	+	17	0
-	+	15	68
-	+	1	0
-	+	17	4
-	+	15	15
-	+	16	15
-	+	18	5
-	+	19	4
-	+	20	4
-	+	10	0
-
 > ~/bash/listening_ports.bash
 	*	1723625740	0
 	"	1	0
@@ -15089,14 +17892,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 	.	70	0
 	+	71	0
 	+	70	0
-
-> ~/bash/logs/chat_download_worker-blue.log
-	*	1723624511	0
-	"	33	0
-	^	10	1
-	.	1	0
-	+	90	33
-	+	1	0
 
 > ~/.vim/plugged/Colorizer/doc/Colorizer.txt
 	*	1723589162	0
@@ -15116,106 +17911,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 	*	1723588479	0
 	"	1	0
 
-> ~/pyscripts/viewlog.py
-	*	1723588469	0
-	"	211	0
-	^	259	27
-	.	259	21
-	+	126	0
-	+	113	0
-	+	122	100
-	+	123	96
-	+	124	71
-	+	125	0
-	+	114	30
-	+	124	56
-	+	126	0
-	+	118	0
-	+	125	81
-	+	125	0
-	+	126	0
-	+	156	68
-	+	96	115
-	+	96	0
-	+	96	115
-	+	121	37
-	+	120	0
-	+	90	33
-	+	258	0
-	+	258	48
-	+	154	73
-	+	258	0
-	+	259	0
-	+	257	0
-	+	5	0
-	+	254	3
-	+	254	18
-	+	254	0
-	+	4	0
-	+	139	0
-	+	141	0
-	+	150	0
-	+	246	0
-	+	226	0
-	+	230	0
-	+	190	0
-	+	231	0
-	+	215	0
-	+	194	0
-	+	202	0
-	+	190	0
-	+	194	0
-	+	202	0
-	+	197	0
-	+	195	0
-	+	196	0
-	+	194	0
-	+	195	0
-	+	128	0
-	+	158	0
-	+	157	0
-	+	158	0
-	+	128	0
-	+	140	0
-	+	139	0
-	+	144	0
-	+	150	0
-	+	155	0
-	+	158	0
-	+	118	0
-	+	115	40
-	+	119	0
-	+	116	49
-	+	119	0
-	+	121	0
-	+	118	26
-	+	125	30
-	+	125	0
-	+	119	0
-	+	118	0
-	+	125	0
-	+	120	0
-	+	119	26
-	+	120	0
-	+	121	0
-	+	125	0
-	+	123	0
-	+	119	0
-	+	121	0
-	+	122	0
-	+	117	43
-	+	123	56
-	+	122	0
-	+	123	0
-	+	122	0
-	+	123	0
-	+	155	0
-	+	195	0
-	+	257	0
-	+	259	21
-	a	256	13
-	b	90	33
-
 > /usr/lib/python3.10/datetime.py
 	*	1723587743	0
 	"	1950	0
@@ -15227,112 +17922,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 > ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/timer.py
 	*	1723587604	0
 	"	41	8
-
-> ~/.vim/coc-settings.json
-	*	1723586226	0
-	"	6	0
-	^	50	7
-	.	50	6
-	+	25	0
-	+	24	28
-	+	24	37
-	+	2	0
-	+	43	0
-	+	43	11
-	+	43	0
-	+	2	0
-	+	18	0
-	+	19	0
-	+	20	0
-	+	19	0
-	+	2	33
-	+	3	38
-	+	20	0
-	+	4	0
-	+	11	0
-	+	13	0
-	+	24	0
-	+	20	0
-	+	24	0
-	+	25	0
-	+	42	42
-	+	26	0
-	+	42	0
-	+	29	34
-	+	42	0
-	+	39	0
-	+	29	0
-	+	4	0
-	+	27	0
-	+	4	0
-	+	39	0
-	+	30	37
-	+	3	38
-	+	11	0
-	+	8	33
-	+	11	0
-	+	9	49
-	+	11	0
-	+	8	0
-	+	10	131
-	+	9	78
-	+	8	0
-	+	24	0
-	+	67	0
-	+	66	25
-	+	67	0
-	+	85	0
-	+	55	14
-	+	56	44
-	+	54	0
-	+	83	0
-	+	82	0
-	+	79	71
-	+	80	33
-	+	82	0
-	+	81	16
-	+	82	0
-	+	81	25
-	+	80	11
-	+	78	48
-	+	80	30
-	+	78	0
-	+	23	6
-	+	32	29
-	+	39	33
-	+	39	0
-	+	36	0
-	+	32	6
-	+	33	5
-	+	32	0
-	+	36	0
-	+	37	28
-	+	38	32
-	+	42	0
-	+	40	39
-	+	42	0
-	+	48	0
-	+	53	0
-	+	53	69
-	+	53	34
-	+	53	30
-	+	53	44
-	+	53	18
-	+	53	0
-	+	45	51
-	+	47	41
-	+	41	33
-	+	8	0
-	+	17	0
-	+	15	4
-	+	16	39
-	+	8	0
-	+	6	50
-	+	7	0
-	+	49	27
-	+	50	31
-	+	49	6
-	+	50	6
 
 > ~/pyscripts/.envrc
 	*	1723586172	0
@@ -15362,123 +17951,12 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 	*	1723583587	0
 	"	18	90
 
-> ~/python_common/waivek/log.py
-	*	1723582418	0
-	"	49	4
-	.	34	0
-	+	14	91
-	+	17	0
-	+	18	0
-	+	22	0
-	+	19	47
-	+	22	0
-	+	22	89
-	+	22	0
-	+	20	4
-	+	21	4
-	+	20	21
-	+	21	21
-	+	20	10
-	+	21	10
-	+	20	24
-	+	21	24
-	+	20	116
-	+	21	0
-	+	21	116
-	+	20	0
-	+	15	43
-	+	20	118
-	+	20	0
-	+	20	118
-	+	21	118
-	+	20	84
-	+	21	84
-	+	6	17
-	+	7	0
-	+	23	0
-	+	2	32
-	+	23	33
-	+	24	29
-	+	52	0
-	+	3	28
-	+	25	54
-	+	26	25
-	+	51	9
-	+	46	24
-	+	45	27
-	+	46	11
-	+	48	15
-	+	23	0
-	+	28	11
-	+	46	0
-	+	28	26
-	+	43	0
-	+	4	9
-	+	30	27
-	+	35	38
-	+	43	0
-	+	5	13
-	+	37	36
-	+	43	0
-	+	49	0
-	+	47	0
-	+	49	15
-	+	30	26
-	+	36	31
-	+	37	55
-	+	30	96
-	+	30	28
-	+	29	7
-	+	30	0
-	+	31	22
-	+	34	31
-	+	30	31
-	+	34	44
-	+	30	32
-	+	49	8
-	+	37	5
-	+	40	0
-	+	38	67
-	+	38	70
-	+	38	44
-	+	38	70
-	+	38	0
-	+	39	0
-	+	34	7
-	+	34	9
-	+	39	41
-	+	34	80
-	+	30	31
-	+	32	0
-	+	34	0
-	+	48	34
-	+	41	25
-	+	42	57
-	+	1	53
-	+	60	18
-	+	59	3
-	+	60	31
-	+	85	28
-	+	95	0
-	+	96	0
-	+	97	11
-	+	34	57
-	+	103	0
-	+	34	48
-	+	34	0
-
 > ~/bash/logs/cron.log
 	*	1723582216	0
 	"	1578	0
 
 > ~/bash/logs/gh-timeago-updates.log
 	*	1723582198	0
-	"	1	0
-	.	1	0
-	+	1	0
-
-> ~/python_staging/logs/do_log.log
-	*	1723582014	0
 	"	1	0
 	.	1	0
 	+	1	0
@@ -15493,10 +17971,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 	^	33	59
 	.	33	58
 	+	33	58
-
-> ~/python_staging/requirements.txt
-	*	1723581163	0
-	"	1	0
 
 > ~/python_sandbox_no_remote/sandobx.py
 	*	1723581033	0
@@ -15571,63 +18045,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 	+	4	0
 	+	3	0
 	+	6	32
-
-> ~/pyscripts/oldfiles.py
-	*	1723557591	0
-	"	5	13
-	^	5	43
-	.	6	0
-	+	36	24
-	+	36	23
-	+	38	0
-	+	36	29
-	+	37	16
-	+	1	0
-	+	34	0
-	+	34	83
-	+	22	0
-	+	25	42
-	+	27	9
-	+	22	0
-	+	25	28
-	+	26	11
-	+	27	0
-	+	18	0
-	+	21	10
-	+	22	14
-	+	22	4
-	+	22	10
-	+	22	22
-	+	21	0
-	+	24	0
-	+	22	0
-	+	22	9
-	+	22	20
-	+	22	0
-	+	22	48
-	+	22	0
-	+	19	9
-	+	22	66
-	+	22	0
-	+	22	48
-	+	22	80
-	+	24	47
-	+	22	78
-	+	22	11
-	+	22	0
-	+	22	52
-	+	22	57
-	+	22	0
-	+	22	54
-	+	22	0
-	+	4	11
-	+	24	0
-	+	3	56
-	+	7	0
-	+	3	67
-	+	4	10
-	+	5	42
-	+	6	0
 
 > ~/genproject/python.sh
 	*	1723556517	0
@@ -15707,19 +18124,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 	.	2	0
 	+	1	0
 	+	2	0
-
-> ~/python_common/.envrc
-	*	1723555404	0
-	"	1	0
-	^	3	2
-	.	3	0
-	+	1	14
-	+	2	31
-	+	3	225
-	+	3	7
-	+	3	0
-	+	4	40
-	+	3	0
 
 > ~/hateoas/worker_chat_to_offset.py
 	*	1723497754	0
@@ -15826,133 +18230,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 	+	5	0
 	+	67	57
 	+	6	0
-
-> ~/hateoas/worker_utils.py
-	*	1723497737	0
-	"	13	5
-	^	59	19
-	.	13	0
-	+	56	61
-	+	32	45
-	+	9	29
-	+	20	73
-	+	3	8
-	+	3	31
-	+	20	0
-	+	17	7
-	+	3	0
-	+	1	0
-	+	17	8
-	+	18	38
-	+	19	64
-	+	20	49
-	+	3	0
-	+	17	0
-	+	2	0
-	+	10	26
-	+	17	0
-	+	8	0
-	+	3	0
-	+	11	3
-	+	2	26
-	+	20	51
-	+	13	32
-	+	8	7
-	+	8	14
-	+	8	0
-	+	8	47
-	+	8	9
-	+	8	18
-	+	8	0
-	+	8	14
-	+	8	41
-	+	8	24
-	+	8	0
-	+	8	79
-	+	8	16
-	+	8	21
-	+	8	0
-	+	16	0
-	+	24	19
-	+	13	27
-	+	23	0
-	+	13	10
-	+	15	65
-	+	16	0
-	+	15	46
-	+	16	18
-	+	15	0
-	+	13	27
-	+	13	38
-	+	15	14
-	+	16	20
-	+	14	8
-	+	16	0
-	+	12	0
-	+	23	0
-	+	19	44
-	+	24	0
-	+	8	0
-	+	35	52
-	+	47	0
-	+	59	0
-	+	13	0
-	+	5	20
-	+	6	4
-	+	59	18
-	+	13	0
-
-> ~/hateoas/transcription_to_offset.py
-	*	1723497560	0
-	"	1	0
-	^	98	99
-	.	53	0
-	+	1	0
-	+	13	0
-	+	94	0
-	+	7	21
-	+	13	0
-	+	35	26
-	+	91	0
-	+	94	98
-	+	94	0
-	+	99	0
-	+	99	98
-	+	9	0
-	+	92	0
-	+	93	0
-	+	95	0
-	+	93	0
-	+	50	0
-	+	90	0
-	+	56	0
-	+	36	0
-	+	39	0
-	+	93	0
-	+	95	0
-	+	92	69
-	+	59	0
-	+	51	47
-	+	52	76
-	+	53	65
-	+	54	18
-	+	95	0
-	+	65	15
-	+	100	26
-	+	65	28
-	+	64	28
-	+	96	0
-	+	98	0
-	+	96	0
-	+	98	0
-	+	97	16
-	+	97	98
-	+	98	16
-	+	98	98
-	+	101	45
-	+	53	0
-	a	101	45
-	b	101	45
 
 > ~/hateoas/test_lock_manager.py
 	*	1723497554	0
@@ -16938,111 +19215,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 	+	317	39
 	+	334	34
 
-> ~/python_common/waivek/error.py
-	*	1723463367	0
-	"	1	0
-	.	359	0
-	+	7	0
-	+	254	0
-	+	295	0
-	+	11	7
-	+	11	0
-	+	307	58
-	+	5	0
-	+	24	0
-	+	21	0
-	+	410	36
-	+	436	0
-	+	436	30
-	+	436	0
-	+	411	12
-	+	414	21
-	+	436	0
-	+	414	34
-	+	423	6
-	+	411	17
-	+	423	8
-	+	436	29
-	+	436	0
-	+	429	43
-	+	429	80
-	+	436	0
-	+	429	37
-	+	429	19
-	+	429	0
-	+	436	0
-	+	423	0
-	+	433	34
-	+	436	30
-	+	436	0
-	+	436	49
-	+	436	0
-	+	429	29
-	+	413	4
-	+	413	0
-	+	410	44
-	+	433	29
-	+	363	0
-	+	364	0
-	+	358	8
-	+	359	13
-	+	6	0
-	+	433	0
-	+	416	40
-	+	420	25
-	+	433	0
-	+	425	66
-	+	429	0
-	+	429	71
-	+	430	27
-	+	431	18
-	+	3	0
-	+	417	28
-	+	426	89
-	+	429	47
-	+	422	30
-	+	2	0
-	+	422	7
-	+	427	22
-	+	422	5
-	+	427	35
-	+	422	46
-	+	4	0
-	+	427	51
-	+	429	39
-	+	422	69
-	+	426	35
-	+	422	0
-	+	413	58
-	+	429	41
-	+	418	31
-	+	426	30
-	+	429	0
-	+	423	0
-	+	424	49
-	+	425	25
-	+	424	67
-	+	425	0
-	+	424	8
-	+	426	135
-	+	419	28
-	+	415	24
-	+	423	0
-	+	433	0
-	+	432	0
-	+	428	54
-	+	429	99
-	+	426	40
-	+	433	8
-	+	436	4
-	+	433	29
-	+	436	0
-	+	433	104
-	+	413	19
-	+	433	98
-	+	434	0
-	+	359	0
-
 > /usr/share/vim/vim90/doc/version5.txt
 	*	1723462322	0
 	"	1934	2
@@ -17134,98 +19306,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 	+	73	0
 	+	71	28
 	+	52	0
-
-> ~/.vim/plugin/run.vim
-	*	1723457841	0
-	"	84	4
-	^	67	9
-	.	67	0
-	+	15	18
-	+	16	0
-	+	47	0
-	+	29	24
-	+	16	17
-	+	29	0
-	+	16	0
-	+	47	0
-	+	47	17
-	+	47	0
-	+	29	28
-	+	29	0
-	+	47	0
-	+	29	0
-	+	47	0
-	+	45	10
-	+	47	8
-	+	47	15
-	+	47	0
-	+	47	17
-	+	47	20
-	+	47	0
-	+	47	38
-	+	47	15
-	+	47	0
-	+	47	19
-	+	47	0
-	+	47	19
-	+	47	18
-	+	47	8
-	+	47	39
-	+	47	16
-	+	47	0
-	+	29	27
-	+	12	10
-	+	12	0
-	+	3	0
-	+	12	0
-	+	45	12
-	+	51	18
-	+	52	0
-	+	55	8
-	+	57	0
-	+	3	0
-	+	2	0
-	+	3	13
-	+	42	0
-	+	29	0
-	+	42	45
-	+	11	0
-	+	18	0
-	+	19	26
-	+	16	0
-	+	19	33
-	+	20	32
-	+	21	0
-	+	20	0
-	+	35	0
-	+	44	0
-	+	35	0
-	+	34	0
-	+	32	0
-	+	30	0
-	+	31	11
-	+	33	0
-	+	22	0
-	+	33	48
-	+	42	0
-	+	37	12
-	+	42	0
-	+	38	71
-	+	39	37
-	+	40	82
-	+	41	12
-	+	42	0
-	+	43	0
-	+	88	0
-	+	90	0
-	+	88	4
-	+	89	5
-	+	47	0
-	+	46	19
-	+	98	0
-	+	61	22
-	+	68	0
-	+	67	0
 
 > /usr/share/vim/vim90/doc/change.txt
 	*	1723457693	0
@@ -17983,10 +20063,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 	*	1723240546	0
 	"	36	23
 
-> /usr/share/vim/vim90/doc/options.txt
-	*	1723240284	0
-	"	8931	23
-
 > /usr/share/vim/vim90/doc/scroll.txt
 	*	1723239812	0
 	"	69	7
@@ -18536,112 +20612,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 > /tmp/crontab.1GQWZL/crontab
 	*	1723014834	0
 	"	32	24
-
-> ~/pyscripts/python-error-library-stats.py
-	*	1722987501	0
-	"	1	0
-	^	62	62
-	.	62	61
-	+	7	38
-	+	50	32
-	+	56	37
-	+	79	0
-	+	81	22
-	+	51	42
-	+	53	25
-	+	54	61
-	+	56	23
-	+	50	0
-	+	51	48
-	+	54	45
-	+	51	0
-	+	52	28
-	+	55	62
-	+	56	32
-	+	52	28
-	+	55	29
-	+	52	28
-	+	79	0
-	+	56	35
-	+	50	0
-	+	58	19
-	+	81	5
-	+	82	21
-	+	64	4
-	+	70	4
-	+	63	0
-	+	79	67
-	+	1	0
-	+	79	0
-	+	79	67
-	+	79	16
-	+	79	0
-	+	59	32
-	+	63	123
-	+	1	0
-	+	63	102
-	+	59	17
-	+	63	0
-	+	60	24
-	+	60	0
-	+	59	0
-	+	79	0
-	+	70	51
-	+	79	15
-	+	70	9
-	+	79	0
-	+	79	13
-	+	70	47
-	+	70	0
-	+	79	24
-	+	59	0
-	+	70	64
-	+	71	70
-	+	79	0
-	+	72	62
-	+	73	63
-	+	78	0
-	+	72	60
-	+	73	62
-	+	77	0
-	+	76	21
-	+	74	0
-	+	69	0
-	+	72	23
-	+	72	0
-	+	62	0
-	+	82	0
-	+	81	4
-	+	20	19
-	+	22	48
-	+	22	25
-	+	20	0
-	+	21	16
-	+	22	20
-	+	21	20
-	+	22	22
-	+	21	16
-	+	22	30
-	+	26	15
-	+	23	0
-	+	26	0
-	+	25	15
-	+	24	23
-	+	15	0
-	+	10	8
-	+	13	0
-	+	14	3
-	+	17	76
-	+	82	4
-	+	81	4
-	+	62	54
-	+	68	0
-	+	11	13
-	+	66	8
-	+	67	27
-	+	62	56
-	+	61	18
-	+	62	61
 
 > ~/.config/starship/starship.toml
 	*	1722987431	0
@@ -19800,107 +21770,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 	*	1722772760	0
 	"	2819	5
 
-> ~/python_common/waivek/date.py
-	*	1722771200	0
-	"	65	0
-	^	36	11
-	.	36	21
-	+	62	16
-	+	63	19
-	+	59	27
-	+	70	0
-	+	62	16
-	+	64	10
-	+	63	21
-	+	64	16
-	+	63	16
-	+	64	34
-	+	70	14
-	+	64	14
-	+	70	0
-	+	65	26
-	+	70	0
-	+	65	20
-	+	69	0
-	+	68	16
-	+	65	0
-	+	68	24
-	+	68	0
-	+	65	0
-	+	62	10
-	+	64	64
-	+	65	0
-	+	58	0
-	+	58	18
-	+	37	0
-	+	37	11
-	+	37	0
-	+	36	2
-	+	62	35
-	+	62	20
-	+	36	20
-	+	36	4
-	+	36	5
-	+	35	131
-	+	36	34
-	+	36	19
-	+	36	18
-	+	36	14
-	+	35	35
-	+	35	12
-	+	36	0
-	+	35	8
-	+	35	29
-	+	35	42
-	+	35	8
-	+	35	24
-	+	35	15
-	+	35	0
-	+	35	35
-	+	35	55
-	+	35	17
-	+	35	0
-	+	35	31
-	+	35	20
-	+	35	69
-	+	35	29
-	+	35	43
-	+	35	31
-	+	35	80
-	+	35	38
-	+	35	77
-	+	35	54
-	+	35	43
-	+	35	119
-	+	35	47
-	+	35	48
-	+	35	65
-	+	35	0
-	+	35	87
-	+	35	85
-	+	35	69
-	+	35	48
-	+	35	0
-	+	36	28
-	+	36	4
-	+	36	105
-	+	36	0
-	+	62	7
-	+	62	0
-	+	62	30
-	+	62	15
-	+	36	0
-	+	35	0
-	+	36	0
-	+	34	82
-	+	58	0
-	+	62	0
-	+	61	11
-	+	41	85
-	+	42	6
-	+	36	21
-	a	8	12
-
 > ~/python_common/waivek/sum.py
 	*	1722770946	0
 	"	1	0
@@ -20017,25 +21886,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 	+	36	0
 	+	4	0
 
-> ~/tooling/python-error-traceback-prettify-libs.txt
-	*	1722761006	0
-	"	1	0
-	^	5	0
-	.	5	0
-	+	7	41
-	+	14	45
-	+	7	0
-	+	6	44
-	+	14	0
-	+	1	46
-	+	14	0
-	+	2	0
-	+	7	0
-	+	3	0
-	+	7	0
-	+	4	0
-	+	5	0
-
 > ~/pyscripts/data/python-error-library-repo-stats.json
 	*	1722760873	0
 	"	1	0
@@ -20071,10 +21921,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 > ~/python_common/waivek/experiments.log
 	*	1722719484	0
 	"	1	35
-
-> ~/python_common/.direnv/python-3.10.12/lib/python3.10/site-packages/loguru/_recattrs.py
-	*	1722718638	0
-	"	49	0
 
 > ~/python_common/.direnv/python-3.10.12/lib/python3.10/site-packages/loguru/_defaults.py
 	*	1722718636	0
@@ -20170,10 +22016,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 	*	1722642155	0
 	"	1	0
 
-> ~/python_common/.direnv/python-3.10.12/lib/python3.10/site-packages/loguru/_logger.py
-	*	1722641720	0
-	"	244	27
-
 > ~/python_common/.direnv/python-3.10.12/lib/python3.10/site-packages/loguru/__init__.py
 	*	1722641561	0
 	"	31	11
@@ -20196,104 +22038,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 	+	6	37
 	+	7	14
 	+	8	0
-
-> ~/.vim/ide.vim
-	*	1722634940	0
-	"	2	0
-	^	2	162
-	.	2	161
-	+	183	5
-	+	183	0
-	+	183	35
-	+	183	0
-	+	175	0
-	+	183	0
-	+	175	0
-	+	176	3
-	+	183	0
-	+	180	3
-	+	179	0
-	+	177	59
-	+	182	0
-	+	177	94
-	+	180	81
-	+	182	0
-	+	180	80
-	+	1	150
-	+	143	36
-	+	178	0
-	+	177	0
-	+	178	41
-	+	181	0
-	+	180	0
-	+	181	41
-	+	143	43
-	+	177	4
-	+	178	4
-	+	180	4
-	+	181	4
-	+	296	7
-	+	465	14
-	+	466	0
-	+	467	0
-	+	468	45
-	+	469	0
-	+	69	0
-	+	65	18
-	+	69	0
-	+	234	0
-	+	167	46
-	+	168	0
-	+	154	19
-	+	168	0
-	+	167	34
-	+	134	7
-	+	134	51
-	+	134	0
-	+	134	50
-	+	134	8
-	+	134	38
-	+	134	73
-	+	134	0
-	+	111	0
-	+	111	32
-	+	111	0
-	+	111	16
-	+	111	30
-	+	111	0
-	+	111	45
-	+	111	0
-	+	111	43
-	+	111	0
-	+	111	16
-	+	111	0
-	+	111	24
-	+	134	50
-	+	134	73
-	+	111	0
-	+	134	0
-	+	147	32
-	+	134	0
-	+	154	0
-	+	168	0
-	+	167	34
-	+	143	52
-	+	152	46
-	+	143	45
-	+	152	39
-	+	472	16
-	+	473	23
-	+	473	0
-	+	327	0
-	+	330	0
-	+	327	10
-	+	329	0
-	+	327	30
-	+	325	77
-	+	326	63
-	+	473	0
-	+	320	0
-	+	2	161
 
 > ~/python_common/waivek/print_utils.py
 	*	1722631135	0
@@ -20386,72 +22130,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 	*	1722549159	0
 	"	230	35
 
-> ~/hateoas/chat_download_worker.py
-	*	1722548469	0
-	"	1	0
-	^	15	28
-	.	15	0
-	+	52	0
-	+	12	1
-	+	15	0
-	+	12	1
-	+	12	38
-	+	143	51
-	+	13	0
-	+	25	38
-	+	179	35
-	+	180	29
-	+	53	84
-	+	53	58
-	+	53	63
-	+	53	32
-	+	53	22
-	+	53	27
-	+	53	34
-	+	53	26
-	+	56	26
-	+	57	22
-	+	138	0
-	+	140	0
-	+	148	0
-	+	140	0
-	+	142	33
-	+	145	36
-	+	147	44
-	+	143	0
-	+	28	24
-	+	29	37
-	+	32	49
-	+	34	24
-	+	35	37
-	+	37	49
-	+	39	23
-	+	40	37
-	+	43	25
-	+	44	37
-	+	12	0
-	+	171	48
-	+	172	78
-	+	53	38
-	+	76	0
-	+	75	15
-	+	80	0
-	+	83	15
-	+	108	0
-	+	59	0
-	+	108	0
-	+	65	0
-	+	71	0
-	+	53	0
-	+	90	0
-	+	95	53
-	+	93	62
-	+	95	0
-	+	94	0
-	+	137	0
-	+	181	0
-	+	15	0
-
 > ~/python_common/waivek/__read_2.py
 	*	1722548423	0
 	"	39	4
@@ -20524,32 +22202,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 	+	5132	0
 	+	2	4
 	+	2	0
-
-> ~/python_common/waivek/test.py
-	*	1722539574	0
-	"	24	0
-	^	758	16
-	.	758	15
-	+	751	11
-	+	752	26
-	+	759	13
-	+	753	15
-	+	759	18
-	+	753	35
-	+	753	0
-	+	749	23
-	+	752	16
-	+	757	29
-	+	759	20
-	+	751	18
-	+	753	20
-	+	751	18
-	+	753	0
-	+	65	4
-	+	66	31
-	+	666	0
-	+	759	5
-	+	758	15
 
 > ~/.vim/plugged/coc.nvim/build/index.js
 	*	1722536653	0
@@ -21438,112 +23090,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 	a	296	26
 	b	296	26
 
-> ~/hateoas/download_worker.py
-	*	1722271740	0
-	"	16	0
-	^	16	28
-	.	17	0
-	+	99	42
-	+	99	10
-	+	99	0
-	+	99	12
-	+	99	0
-	+	99	81
-	+	99	0
-	+	88	14
-	+	89	10
-	+	91	23
-	+	99	0
-	+	91	38
-	+	92	7
-	+	94	35
-	+	95	27
-	+	95	39
-	+	95	10
-	+	99	0
-	+	95	17
-	+	95	0
-	+	94	10
-	+	97	24
-	+	98	41
-	+	189	38
-	+	99	0
-	+	17	28
-	+	189	0
-	+	184	0
-	+	184	13
-	+	87	24
-	+	184	0
-	+	118	35
-	+	121	0
-	+	118	0
-	+	121	50
-	+	121	0
-	+	119	0
-	+	184	10
-	+	151	0
-	+	147	18
-	+	149	17
-	+	150	58
-	+	148	0
-	+	56	78
-	+	13	67
-	+	25	0
-	+	26	4
-	+	26	0
-	+	13	0
-	+	9	0
-	+	141	0
-	+	13	0
-	+	17	0
-	+	186	38
-	+	184	0
-	+	188	0
-	+	154	12
-	+	154	0
-	+	154	13
-	+	154	0
-	+	198	13
-	+	172	0
-	+	158	30
-	+	160	4
-	+	161	57
-	+	172	0
-	+	161	6
-	+	162	4
-	+	162	67
-	+	172	0
-	+	162	11
-	+	158	1
-	+	159	0
-	+	158	25
-	+	158	34
-	+	162	24
-	+	162	0
-	+	172	0
-	+	158	0
-	+	174	13
-	+	164	77
-	+	165	4
-	+	172	0
-	+	175	50
-	+	181	0
-	+	175	84
-	+	178	11
-	+	181	0
-	+	179	22
-	+	170	38
-	+	171	68
-	+	172	0
-	+	176	15
-	+	180	0
-	+	177	19
-	+	183	8
-	+	183	38
-	+	17	0
-	+	16	27
-	+	17	0
-
 > ~/hateoas/refresh_downloads_table.py
 	*	1722270131	0
 	"	105	0
@@ -21902,17 +23448,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 	.	1	0
 	+	1	0
 
-> ~/hateoas/pyrightconfig.json
-	*	1722193067	0
-	"	4	33
-	^	4	34
-	.	4	33
-	+	5	0
-	+	3	35
-	+	4	31
-	+	3	35
-	+	4	33
-
 > ~/.vim/edit-plugin/.gitignore
 	*	1722188497	0
 	"	1	0
@@ -21936,10 +23471,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 	+	2	34
 	+	3	41
 	+	4	0
-
-> /usr/share/vim/vim90/doc/terminal.txt
-	*	1722188150	0
-	"	543	7
 
 > ~/.vim/edit-plugin/hello.vim
 	*	1722187502	0
@@ -26339,10 +27870,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 	.	2	12
 	+	2	12
 
-> ~/.vim/_viminfo_linux
-	*	1719880783	0
-	"	14991	33
-
 > ~/.vim/_viminfo
 	*	1719880601	0
 	"	1	0
@@ -26900,10 +28427,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 > ~/.vim/performance/240622.vim_exit.v04.txt
 	*	1719009681	0
 	"	303	0
-
-> /usr/share/vim/vim90/doc/various.txt
-	*	1719009670	0
-	"	537	32
 
 > ~/.vim/performance/240622.vim_exit.v03.txt
 	*	1719009376	0
@@ -29402,15 +30925,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 > ~/sqlite-editor/static/css/sqlite-editor.css.backup
 	*	1717047805	0
 	"	1	0
-
-> ~/python_common/waivek/timer.py
-	*	1717044495	0
-	"	110	0
-	.	29	0
-	+	35	11
-	+	35	15
-	+	30	0
-	+	29	0
 
 > ~/.vim/plugin/githuburl.py
 	*	1717042073	0
@@ -45834,13 +47348,6 @@ $f"{folder_name.ljust(max_folder_name_length + 1)} {date} - {category} - {task}"
 	+	3	0
 	+	4	0
 	+	3	48
-
-> ~/.pdbrc
-	*	1688801183	0
-	"	4	61
-	.	16	0
-	+	1	10
-	+	16	0
 
 > ~/Twitch/coffee-vps/code/curl_sample.sh
 	*	1688796325	0

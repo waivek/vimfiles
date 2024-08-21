@@ -40,8 +40,11 @@ endif
 filetype indent plugin on | syntax on 
 
 call plug#begin()
+Plug 'mbbill/undotree'
 " Make sure pyflakes and eslint are installed
 " Install tabular
+Plug 'powerman/vim-plugin-AnsiEsc'
+" Plug 'vim-scripts/AnsiEsc.vim'
 Plug 'chrisbra/Colorizer'
 Plug 'joshdick/onedark.vim'
 Plug 'vim-utils/vim-man'

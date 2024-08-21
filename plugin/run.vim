@@ -11,6 +11,16 @@ function! s:RunTerminalCommand(command)
     " normal! gg
 endfunction
 
+function! s:ShouldRunTerminalInHorizontal(last_line, cms)
+    let l:last_line = a:last_line
+    let l:cms = a:cms
+    let l:last_line_contains_run_vim_config = l:last_line =~ printf('%s run.vim:', l:cms)
+    if !l:last_line_contains_run_vim_config
+        return v:false
+    endif
+
+endfunction
+
 function! s:RunPython()
     if has('win32')
         " let path = expand("%:p:h")
@@ -28,6 +38,7 @@ function! s:RunPython()
     else
         " let command = 'vert terminal python ' . expand("%:p")
         let parent_folder_name = expand("%:p:h:t")
+
         if parent_folder_name == 'waivek'
             let filename_without_extension = expand("%:t:r")
             let command = 'vert terminal python -m waivek.' . filename_without_extension
@@ -42,6 +53,16 @@ function! s:RunPython()
                 let command = 'vert terminal python %'
             endif
         endif
+
+        " let last_line = getline("$")
+        " if last_line =~ '^# run.vim:'
+        "     let args = substitute(last_line, '^# run.vim:', '', '')
+        "     let args = trim(args)
+        "     let command = 'vert terminal python ' . expand("%:p") . ' ' . args
+        " else
+        "     let command = 'vert terminal python %'
+        " endif
+
         call s:RunTerminalCommand(command)
         set nonumber
     endif

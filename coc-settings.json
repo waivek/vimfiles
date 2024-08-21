@@ -26,7 +26,8 @@
 
 
     "javascript.validate.enable": false, // re-enable once await googleapi.videos.list({}); stops showing errors
-    "diagnostic.showUnused": false,
+    // "diagnostic.showUnused": false,
+    "diagnostic.showUnused": true,
     "diagnostic.level": "information",
 
     // "$schema" = 'https://starship.rs/config-schema.json'
