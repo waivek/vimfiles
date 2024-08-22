@@ -20,14 +20,20 @@
 $frames.index(needle_frame)
 
 # Command Line History (newest to oldest):
+:q
+|2,0,1724279215,,"q"
+:VD data/oldfiles.db
+|2,0,1724279152,,"VD data/oldfiles.db"
+:q!
+|2,0,1724279149,,"q!"
+:OpenDB data/oldfiles.db
+|2,0,1724279145,,"OpenDB data/oldfiles.db"
+:Template
+|2,0,1724279086,,"Template"
 :qa
 |2,0,1724278797,,"qa"
-:q
-|2,0,1724278656,,"q"
 :bd!
 |2,0,1724278655,,"bd!"
-:q!
-|2,0,1724278646,,"q!"
 :Rename ipython-debug.py
 |2,0,1724276080,,"Rename ipython-debug.py"
 :Rename
@@ -192,8 +198,6 @@ $frames.index(needle_frame)
 |2,0,1724186436,,"MRU 4:log.py"
 :e 
 |2,0,1724186433,,"e "
-:Template
-|2,0,1724186331,,"Template"
 :e .envrc
 |2,0,1724186188,,"e .envrc"
 :e $(pwd)
@@ -14086,6 +14090,10 @@ $frames.index(needle_frame)
 	set_trace()
 |3,0,0,0,1,0,1724276111,"set_trace()"
 ""1	LINE	0
+	.direnv/
+	data/
+|3,1,1,1,2,0,1724279084,".direnv/","data/"
+"2	LINE	0
 	
 	def foo():
 	    import json
@@ -14100,35 +14108,32 @@ $frames.index(needle_frame)
 	except Exception as e:
 	    import pdb as pdb
 	    pdb.post_mortem(e.__traceback__)
-|3,1,1,1,14,0,1724278647,"","def foo():","    import json","    json.loads(\"{'a': 1}\")","","def bar():","    x =1 ","    foo()","","try:","    bar()","except Exception as e:","    import pdb as pdb","    pdb.post_mortem(e.__traceback__)"
-"2	LINE	0
-	from .ic import ic
-|3,0,2,1,1,0,1724274779,"from .ic import ic"
+|3,0,2,1,14,0,1724278647,"","def foo():","    import json","    json.loads(\"{'a': 1}\")","","def bar():","    x =1 ","    foo()","","try:","    bar()","except Exception as e:","    import pdb as pdb","    pdb.post_mortem(e.__traceback__)"
 "3	LINE	0
-	            traceback_globals = { 
-|3,0,3,1,1,0,1724274742,"            traceback_globals = { "
-"4	LINE	0
 	from .ic import ic
-|3,0,4,1,1,0,1724274729,"from .ic import ic"
+|3,0,3,1,1,0,1724274779,"from .ic import ic"
+"4	LINE	0
+	            traceback_globals = { 
+|3,0,4,1,1,0,1724274742,"            traceback_globals = { "
 "5	LINE	0
-	            from .ic import ic
-|3,0,5,1,1,0,1724274703,"            from .ic import ic"
+	from .ic import ic
+|3,0,5,1,1,0,1724274729,"from .ic import ic"
 "6	LINE	0
-	                frame.f_globals
-|3,0,6,1,1,0,1724274695,"                frame.f_globals"
+	            from .ic import ic
+|3,0,6,1,1,0,1724274703,"            from .ic import ic"
 "7	LINE	0
-	            needle_frame.f_locals['ic'] = ic
-|3,0,7,1,1,0,1724274531,"            needle_frame.f_locals['ic'] = ic"
+	                frame.f_globals
+|3,0,7,1,1,0,1724274695,"                frame.f_globals"
 "8	LINE	0
+	            needle_frame.f_locals['ic'] = ic
+|3,0,8,1,1,0,1724274531,"            needle_frame.f_locals['ic'] = ic"
+"9	LINE	0
 	
 	            Pdb.rcLines.extend([
 	                'import datetime'
 	            ])
 	            Pdb.execRcLines()
-|3,0,8,1,5,0,1724274483,"","            Pdb.rcLines.extend([","                'import datetime'","            ])","            Pdb.execRcLines()"
-"9	LINE	0
-	                'json.loads(string)',
-|3,0,9,1,1,0,1724274443,"                'json.loads(string)',"
+|3,0,9,1,5,0,1724274483,"","            Pdb.rcLines.extend([","                'import datetime'","            ])","            Pdb.execRcLines()"
 "a	CHAR	0
 	0;c;icjk;ffxdf{f}xx
 |3,0,10,0,1,0,1724271033,"0;c;icjk;ffxdf{f}xx"
@@ -14162,38 +14167,82 @@ $frames.index(needle_frame)
 |3,0,36,0,1,0,1724278644,"i"
 
 # File marks:
-'0  1  0  ~/python_staging/ipdb.py
-|4,48,1,0,1724278798,"~/python_staging/ipdb.py"
-'1  9  14  ~/python_staging/ipdb.py
-|4,49,9,14,1724276060,"~/python_staging/ipdb.py"
-'2  9  14  ~/python_staging/ipdb.py
-|4,50,9,14,1724276060,"~/python_staging/ipdb.py"
-'3  9  14  ~/python_staging/ipdb.py
-|4,51,9,14,1724276060,"~/python_staging/ipdb.py"
-'4  9  14  ~/python_staging/ipdb.py
-|4,52,9,14,1724276060,"~/python_staging/ipdb.py"
-'5  20  12  ~/python_common/waivek/error2.py
-|4,53,20,12,1724275989,"~/python_common/waivek/error2.py"
-'6  20  12  ~/python_common/waivek/error2.py
-|4,54,20,12,1724275989,"~/python_common/waivek/error2.py"
-'7  20  12  ~/python_common/waivek/error2.py
-|4,55,20,12,1724275989,"~/python_common/waivek/error2.py"
-'8  20  12  ~/python_common/waivek/error2.py
-|4,56,20,12,1724275989,"~/python_common/waivek/error2.py"
-'9  20  12  ~/python_common/waivek/error2.py
-|4,57,20,12,1724275989,"~/python_common/waivek/error2.py"
+'0  1  0  ~/pyscripts/print_todo.py
+|4,48,1,0,1724279216,"~/pyscripts/print_todo.py"
+'1  87  8  ~/pyscripts/worker_oldfiles_to_sqlite.py
+|4,49,87,8,1724279181,"~/pyscripts/worker_oldfiles_to_sqlite.py"
+'2  87  8  ~/pyscripts/worker_oldfiles_to_sqlite.py
+|4,50,87,8,1724279181,"~/pyscripts/worker_oldfiles_to_sqlite.py"
+'3  19  0  ~/pyscripts/.gitignore
+|4,51,19,0,1724279088,"~/pyscripts/.gitignore"
+'4  19  0  ~/pyscripts/.gitignore
+|4,52,19,0,1724279088,"~/pyscripts/.gitignore"
+'5  19  0  ~/pyscripts/.gitignore
+|4,53,19,0,1724279088,"~/pyscripts/.gitignore"
+'6  19  0  ~/pyscripts/.gitignore
+|4,54,19,0,1724279088,"~/pyscripts/.gitignore"
+'7  1  0  ~/python_staging/ipdb.py
+|4,55,1,0,1724278798,"~/python_staging/ipdb.py"
+'8  1  0  ~/python_staging/ipdb.py
+|4,56,1,0,1724278798,"~/python_staging/ipdb.py"
+'9  1  0  ~/python_staging/ipdb.py
+|4,57,1,0,1724278798,"~/python_staging/ipdb.py"
 
 # Jumplist (newest first):
+-'  1  0  ~/pyscripts/print_todo.py
+|4,39,1,0,1724279216,"~/pyscripts/print_todo.py"
+-'  87  8  ~/pyscripts/worker_oldfiles_to_sqlite.py
+|4,39,87,8,1724279181,"~/pyscripts/worker_oldfiles_to_sqlite.py"
+-'  87  8  ~/pyscripts/worker_oldfiles_to_sqlite.py
+|4,39,87,8,1724279181,"~/pyscripts/worker_oldfiles_to_sqlite.py"
+-'  69  8  ~/pyscripts/worker_oldfiles_to_sqlite.py
+|4,39,69,8,1724279152,"~/pyscripts/worker_oldfiles_to_sqlite.py"
+-'  69  8  ~/pyscripts/worker_oldfiles_to_sqlite.py
+|4,39,69,8,1724279152,"~/pyscripts/worker_oldfiles_to_sqlite.py"
+-'  1  0  ~/pyscripts/worker_oldfiles_to_sqlite.py
+|4,39,1,0,1724279132,"~/pyscripts/worker_oldfiles_to_sqlite.py"
+-'  1  0  ~/pyscripts/worker_oldfiles_to_sqlite.py
+|4,39,1,0,1724279132,"~/pyscripts/worker_oldfiles_to_sqlite.py"
+-'  19  0  ~/pyscripts/.gitignore
+|4,39,19,0,1724279088,"~/pyscripts/.gitignore"
+-'  19  0  ~/pyscripts/.gitignore
+|4,39,19,0,1724279088,"~/pyscripts/.gitignore"
+-'  19  0  ~/pyscripts/.gitignore
+|4,39,19,0,1724279088,"~/pyscripts/.gitignore"
+-'  1  0  ~/python_staging/ipdb.py
+|4,39,1,0,1724278798,"~/python_staging/ipdb.py"
+-'  1  0  ~/python_staging/ipdb.py
+|4,39,1,0,1724278798,"~/python_staging/ipdb.py"
+-'  1  0  ~/python_staging/ipdb.py
+|4,39,1,0,1724278798,"~/python_staging/ipdb.py"
 -'  1  0  ~/python_staging/ipdb.py
 |4,39,1,0,1724278798,"~/python_staging/ipdb.py"
 -'  1  0  ~/python_staging/ipython-debug.py
 |4,39,1,0,1724278655,"~/python_staging/ipython-debug.py"
 -'  1  0  ~/python_staging/ipython-debug.py
 |4,39,1,0,1724278655,"~/python_staging/ipython-debug.py"
+-'  1  0  ~/python_staging/ipython-debug.py
+|4,39,1,0,1724278655,"~/python_staging/ipython-debug.py"
+-'  1  0  ~/python_staging/ipython-debug.py
+|4,39,1,0,1724278655,"~/python_staging/ipython-debug.py"
+-'  1  0  ~/python_staging/ipython-debug.py
+|4,39,1,0,1724278655,"~/python_staging/ipython-debug.py"
 -'  10  0  ~/python_staging/ipdb.py
 |4,39,10,0,1724276080,"~/python_staging/ipdb.py"
 -'  10  0  ~/python_staging/ipdb.py
 |4,39,10,0,1724276080,"~/python_staging/ipdb.py"
+-'  10  0  ~/python_staging/ipdb.py
+|4,39,10,0,1724276080,"~/python_staging/ipdb.py"
+-'  10  0  ~/python_staging/ipdb.py
+|4,39,10,0,1724276080,"~/python_staging/ipdb.py"
+-'  10  0  ~/python_staging/ipdb.py
+|4,39,10,0,1724276080,"~/python_staging/ipdb.py"
+-'  2  0  ~/python_staging/ipdb.py
+|4,39,2,0,1724276068,"~/python_staging/ipdb.py"
+-'  2  0  ~/python_staging/ipdb.py
+|4,39,2,0,1724276068,"~/python_staging/ipdb.py"
+-'  2  0  ~/python_staging/ipdb.py
+|4,39,2,0,1724276068,"~/python_staging/ipdb.py"
 -'  2  0  ~/python_staging/ipdb.py
 |4,39,2,0,1724276068,"~/python_staging/ipdb.py"
 -'  2  0  ~/python_staging/ipdb.py
@@ -14206,8 +14255,20 @@ $frames.index(needle_frame)
 |4,39,9,14,1724276060,"~/python_staging/ipdb.py"
 -'  9  14  ~/python_staging/ipdb.py
 |4,39,9,14,1724276060,"~/python_staging/ipdb.py"
+-'  9  14  ~/python_staging/ipdb.py
+|4,39,9,14,1724276060,"~/python_staging/ipdb.py"
+-'  9  14  ~/python_staging/ipdb.py
+|4,39,9,14,1724276060,"~/python_staging/ipdb.py"
+-'  9  14  ~/python_staging/ipdb.py
+|4,39,9,14,1724276060,"~/python_staging/ipdb.py"
 -'  10  19  ~/python_staging/ipdb.py
 |4,39,10,19,1724276054,"~/python_staging/ipdb.py"
+-'  4  25  ~/python_staging/ipdb.py
+|4,39,4,25,1724276046,"~/python_staging/ipdb.py"
+-'  4  25  ~/python_staging/ipdb.py
+|4,39,4,25,1724276046,"~/python_staging/ipdb.py"
+-'  4  25  ~/python_staging/ipdb.py
+|4,39,4,25,1724276046,"~/python_staging/ipdb.py"
 -'  4  25  ~/python_staging/ipdb.py
 |4,39,4,25,1724276046,"~/python_staging/ipdb.py"
 -'  4  25  ~/python_staging/ipdb.py
@@ -14224,6 +14285,18 @@ $frames.index(needle_frame)
 |4,39,20,12,1724275989,"~/python_common/waivek/error2.py"
 -'  20  12  ~/python_common/waivek/error2.py
 |4,39,20,12,1724275989,"~/python_common/waivek/error2.py"
+-'  20  12  ~/python_common/waivek/error2.py
+|4,39,20,12,1724275989,"~/python_common/waivek/error2.py"
+-'  20  12  ~/python_common/waivek/error2.py
+|4,39,20,12,1724275989,"~/python_common/waivek/error2.py"
+-'  20  12  ~/python_common/waivek/error2.py
+|4,39,20,12,1724275989,"~/python_common/waivek/error2.py"
+-'  25  29  ~/python_common/waivek/error2.py
+|4,39,25,29,1724275925,"~/python_common/waivek/error2.py"
+-'  25  29  ~/python_common/waivek/error2.py
+|4,39,25,29,1724275925,"~/python_common/waivek/error2.py"
+-'  25  29  ~/python_common/waivek/error2.py
+|4,39,25,29,1724275925,"~/python_common/waivek/error2.py"
 -'  25  29  ~/python_common/waivek/error2.py
 |4,39,25,29,1724275925,"~/python_common/waivek/error2.py"
 -'  25  29  ~/python_common/waivek/error2.py
@@ -14240,6 +14313,18 @@ $frames.index(needle_frame)
 |4,39,26,0,1724274789,"~/python_common/waivek/error2.py"
 -'  26  0  ~/python_common/waivek/error2.py
 |4,39,26,0,1724274789,"~/python_common/waivek/error2.py"
+-'  26  0  ~/python_common/waivek/error2.py
+|4,39,26,0,1724274789,"~/python_common/waivek/error2.py"
+-'  26  0  ~/python_common/waivek/error2.py
+|4,39,26,0,1724274789,"~/python_common/waivek/error2.py"
+-'  26  0  ~/python_common/waivek/error2.py
+|4,39,26,0,1724274789,"~/python_common/waivek/error2.py"
+-'  13  17  ~/python_common/waivek/error2.py
+|4,39,13,17,1724274767,"~/python_common/waivek/error2.py"
+-'  13  17  ~/python_common/waivek/error2.py
+|4,39,13,17,1724274767,"~/python_common/waivek/error2.py"
+-'  13  17  ~/python_common/waivek/error2.py
+|4,39,13,17,1724274767,"~/python_common/waivek/error2.py"
 -'  13  17  ~/python_common/waivek/error2.py
 |4,39,13,17,1724274767,"~/python_common/waivek/error2.py"
 -'  13  17  ~/python_common/waivek/error2.py
@@ -14256,6 +14341,18 @@ $frames.index(needle_frame)
 |4,39,28,0,1724274534,"~/python_common/waivek/error2.py"
 -'  28  0  ~/python_common/waivek/error2.py
 |4,39,28,0,1724274534,"~/python_common/waivek/error2.py"
+-'  28  0  ~/python_common/waivek/error2.py
+|4,39,28,0,1724274534,"~/python_common/waivek/error2.py"
+-'  28  0  ~/python_common/waivek/error2.py
+|4,39,28,0,1724274534,"~/python_common/waivek/error2.py"
+-'  28  0  ~/python_common/waivek/error2.py
+|4,39,28,0,1724274534,"~/python_common/waivek/error2.py"
+-'  36  28  ~/python_common/waivek/error2.py
+|4,39,36,28,1724274466,"~/python_common/waivek/error2.py"
+-'  36  28  ~/python_common/waivek/error2.py
+|4,39,36,28,1724274466,"~/python_common/waivek/error2.py"
+-'  36  28  ~/python_common/waivek/error2.py
+|4,39,36,28,1724274466,"~/python_common/waivek/error2.py"
 -'  36  28  ~/python_common/waivek/error2.py
 |4,39,36,28,1724274466,"~/python_common/waivek/error2.py"
 -'  36  28  ~/python_common/waivek/error2.py
@@ -14272,6 +14369,12 @@ $frames.index(needle_frame)
 |4,39,21,12,1724274358,"~/python_common/waivek/error2.py"
 -'  21  12  ~/python_common/waivek/error2.py
 |4,39,21,12,1724274358,"~/python_common/waivek/error2.py"
+-'  21  12  ~/python_common/waivek/error2.py
+|4,39,21,12,1724274358,"~/python_common/waivek/error2.py"
+-'  21  12  ~/python_common/waivek/error2.py
+|4,39,21,12,1724274358,"~/python_common/waivek/error2.py"
+-'  21  12  ~/python_common/waivek/error2.py
+|4,39,21,12,1724274358,"~/python_common/waivek/error2.py"
 -'  1  8  ~/.custompy
 |4,39,1,8,1724274218,"~/.custompy"
 -'  1  8  ~/.custompy
@@ -14280,113 +14383,240 @@ $frames.index(needle_frame)
 |4,39,1,8,1724274218,"~/.custompy"
 -'  1  8  ~/.custompy
 |4,39,1,8,1724274218,"~/.custompy"
--'  1717  8  /usr/lib/python3.10/pdb.py
-|4,39,1717,8,1724274055,"/usr/lib/python3.10/pdb.py"
--'  1717  8  /usr/lib/python3.10/pdb.py
-|4,39,1717,8,1724274055,"/usr/lib/python3.10/pdb.py"
--'  1717  8  /usr/lib/python3.10/pdb.py
-|4,39,1717,8,1724274055,"/usr/lib/python3.10/pdb.py"
--'  1717  8  /usr/lib/python3.10/pdb.py
-|4,39,1717,8,1724274055,"/usr/lib/python3.10/pdb.py"
--'  1713  8  /usr/lib/python3.10/pdb.py
-|4,39,1713,8,1724274044,"/usr/lib/python3.10/pdb.py"
--'  1713  8  /usr/lib/python3.10/pdb.py
-|4,39,1713,8,1724274044,"/usr/lib/python3.10/pdb.py"
--'  1713  8  /usr/lib/python3.10/pdb.py
-|4,39,1713,8,1724274044,"/usr/lib/python3.10/pdb.py"
--'  1713  8  /usr/lib/python3.10/pdb.py
-|4,39,1713,8,1724274044,"/usr/lib/python3.10/pdb.py"
--'  231  45  /usr/lib/python3.10/pdb.py
-|4,39,231,45,1724274035,"/usr/lib/python3.10/pdb.py"
--'  231  45  /usr/lib/python3.10/pdb.py
-|4,39,231,45,1724274035,"/usr/lib/python3.10/pdb.py"
--'  231  45  /usr/lib/python3.10/pdb.py
-|4,39,231,45,1724274035,"/usr/lib/python3.10/pdb.py"
--'  231  45  /usr/lib/python3.10/pdb.py
-|4,39,231,45,1724274035,"/usr/lib/python3.10/pdb.py"
--'  225  19  /usr/lib/python3.10/pdb.py
-|4,39,225,19,1724274027,"/usr/lib/python3.10/pdb.py"
--'  224  14  /usr/lib/python3.10/pdb.py
-|4,39,224,14,1724274027,"/usr/lib/python3.10/pdb.py"
--'  225  19  /usr/lib/python3.10/pdb.py
-|4,39,225,19,1724274027,"/usr/lib/python3.10/pdb.py"
--'  224  14  /usr/lib/python3.10/pdb.py
-|4,39,224,14,1724274027,"/usr/lib/python3.10/pdb.py"
--'  225  19  /usr/lib/python3.10/pdb.py
-|4,39,225,19,1724274027,"/usr/lib/python3.10/pdb.py"
--'  224  14  /usr/lib/python3.10/pdb.py
-|4,39,224,14,1724274027,"/usr/lib/python3.10/pdb.py"
--'  225  19  /usr/lib/python3.10/pdb.py
-|4,39,225,19,1724274027,"/usr/lib/python3.10/pdb.py"
--'  224  14  /usr/lib/python3.10/pdb.py
-|4,39,224,14,1724274027,"/usr/lib/python3.10/pdb.py"
--'  223  13  /usr/lib/python3.10/pdb.py
-|4,39,223,13,1724274026,"/usr/lib/python3.10/pdb.py"
--'  221  8  /usr/lib/python3.10/pdb.py
-|4,39,221,8,1724274026,"/usr/lib/python3.10/pdb.py"
--'  220  23  /usr/lib/python3.10/pdb.py
-|4,39,220,23,1724274026,"/usr/lib/python3.10/pdb.py"
--'  223  13  /usr/lib/python3.10/pdb.py
-|4,39,223,13,1724274026,"/usr/lib/python3.10/pdb.py"
--'  221  8  /usr/lib/python3.10/pdb.py
-|4,39,221,8,1724274026,"/usr/lib/python3.10/pdb.py"
--'  220  23  /usr/lib/python3.10/pdb.py
-|4,39,220,23,1724274026,"/usr/lib/python3.10/pdb.py"
--'  223  13  /usr/lib/python3.10/pdb.py
-|4,39,223,13,1724274026,"/usr/lib/python3.10/pdb.py"
--'  221  8  /usr/lib/python3.10/pdb.py
-|4,39,221,8,1724274026,"/usr/lib/python3.10/pdb.py"
--'  220  23  /usr/lib/python3.10/pdb.py
-|4,39,220,23,1724274026,"/usr/lib/python3.10/pdb.py"
--'  223  13  /usr/lib/python3.10/pdb.py
-|4,39,223,13,1724274026,"/usr/lib/python3.10/pdb.py"
--'  221  8  /usr/lib/python3.10/pdb.py
-|4,39,221,8,1724274026,"/usr/lib/python3.10/pdb.py"
--'  220  23  /usr/lib/python3.10/pdb.py
-|4,39,220,23,1724274026,"/usr/lib/python3.10/pdb.py"
--'  217  20  /usr/lib/python3.10/pdb.py
-|4,39,217,20,1724274025,"/usr/lib/python3.10/pdb.py"
--'  217  20  /usr/lib/python3.10/pdb.py
-|4,39,217,20,1724274025,"/usr/lib/python3.10/pdb.py"
--'  217  20  /usr/lib/python3.10/pdb.py
-|4,39,217,20,1724274025,"/usr/lib/python3.10/pdb.py"
--'  217  20  /usr/lib/python3.10/pdb.py
-|4,39,217,20,1724274025,"/usr/lib/python3.10/pdb.py"
--'  166  25  /usr/lib/python3.10/pdb.py
-|4,39,166,25,1724274023,"/usr/lib/python3.10/pdb.py"
--'  166  25  /usr/lib/python3.10/pdb.py
-|4,39,166,25,1724274023,"/usr/lib/python3.10/pdb.py"
--'  166  25  /usr/lib/python3.10/pdb.py
-|4,39,166,25,1724274023,"/usr/lib/python3.10/pdb.py"
--'  166  25  /usr/lib/python3.10/pdb.py
-|4,39,166,25,1724274023,"/usr/lib/python3.10/pdb.py"
--'  161  25  /usr/lib/python3.10/pdb.py
-|4,39,161,25,1724274022,"/usr/lib/python3.10/pdb.py"
--'  157  13  /usr/lib/python3.10/pdb.py
-|4,39,157,13,1724274022,"/usr/lib/python3.10/pdb.py"
--'  161  25  /usr/lib/python3.10/pdb.py
-|4,39,161,25,1724274022,"/usr/lib/python3.10/pdb.py"
--'  157  13  /usr/lib/python3.10/pdb.py
-|4,39,157,13,1724274022,"/usr/lib/python3.10/pdb.py"
--'  161  25  /usr/lib/python3.10/pdb.py
-|4,39,161,25,1724274022,"/usr/lib/python3.10/pdb.py"
--'  157  13  /usr/lib/python3.10/pdb.py
-|4,39,157,13,1724274022,"/usr/lib/python3.10/pdb.py"
--'  161  25  /usr/lib/python3.10/pdb.py
-|4,39,161,25,1724274022,"/usr/lib/python3.10/pdb.py"
--'  157  13  /usr/lib/python3.10/pdb.py
-|4,39,157,13,1724274022,"/usr/lib/python3.10/pdb.py"
--'  156  31  /usr/lib/python3.10/pdb.py
-|4,39,156,31,1724274018,"/usr/lib/python3.10/pdb.py"
--'  156  31  /usr/lib/python3.10/pdb.py
-|4,39,156,31,1724274018,"/usr/lib/python3.10/pdb.py"
--'  156  31  /usr/lib/python3.10/pdb.py
-|4,39,156,31,1724274018,"/usr/lib/python3.10/pdb.py"
+-'  1  8  ~/.custompy
+|4,39,1,8,1724274218,"~/.custompy"
+-'  1  8  ~/.custompy
+|4,39,1,8,1724274218,"~/.custompy"
+-'  1  8  ~/.custompy
+|4,39,1,8,1724274218,"~/.custompy"
 
 # Buffer list:
-%~/python_staging/ipdb.py	1	0
+%~/pyscripts/print_todo.py	1	0
 
 # History of marks within files (newest to oldest):
+
+> ~/pyscripts/print_todo.py
+	*	1724279215	0
+	"	1	0
+	^	84	80
+	.	84	79
+	+	63	0
+	+	73	33
+	+	88	37
+	+	73	49
+	+	74	41
+	+	88	0
+	+	73	29
+	+	74	70
+	+	76	0
+	+	73	54
+	+	76	78
+	+	87	0
+	+	76	68
+	+	86	0
+	+	76	39
+	+	80	67
+	+	83	20
+	+	76	40
+	+	122	36
+	+	122	19
+	+	122	0
+	+	117	120
+	+	117	0
+	+	116	79
+	+	122	0
+	+	116	79
+	+	117	0
+	+	116	85
+	+	76	80
+	+	76	23
+	+	80	23
+	+	83	89
+	+	80	83
+	+	85	28
+	+	83	123
+	+	76	82
+	+	83	141
+	+	14	13
+	+	13	29
+	+	83	0
+	+	75	93
+	+	80	0
+	+	76	69
+	+	83	108
+	+	75	50
+	+	75	46
+	+	75	86
+	+	73	46
+	+	74	0
+	+	45	13
+	+	75	63
+	+	73	79
+	+	74	100
+	+	119	117
+	+	122	119
+	+	57	109
+	+	75	101
+	+	74	96
+	+	73	75
+	+	74	65
+	+	120	0
+	+	120	70
+	+	57	122
+	+	73	0
+	+	79	0
+	+	78	19
+	+	79	0
+	+	82	37
+	+	80	36
+	+	96	0
+	+	122	13
+	+	123	32
+	+	123	126
+	+	123	0
+	+	121	0
+	+	93	27
+	+	94	22
+	+	57	108
+	+	77	43
+	+	98	29
+	+	98	9
+	+	100	0
+	+	98	0
+	+	69	34
+	+	70	33
+	+	71	35
+	+	72	24
+	+	83	0
+	+	84	148
+	+	84	177
+	+	68	30
+	+	84	115
+	+	84	25
+	+	84	154
+	+	84	150
+	+	84	33
+	+	84	175
+	+	84	34
+	+	84	176
+	+	84	79
+
+> ~/pyscripts/worker_oldfiles_to_sqlite.py
+	*	1724279179	0
+	"	87	8
+	.	97	0
+	+	31	86
+	+	32	0
+	+	90	57
+	+	90	0
+	+	35	33
+	+	39	10
+	+	76	0
+	+	46	18
+	+	76	0
+	+	90	0
+	+	48	0
+	+	49	74
+	+	76	0
+	+	54	41
+	+	49	109
+	+	30	56
+	+	76	0
+	+	75	0
+	+	77	7
+	+	90	0
+	+	89	0
+	+	12	10
+	+	89	8
+	+	89	20
+	+	13	21
+	+	67	47
+	+	73	27
+	+	73	62
+	+	74	0
+	+	73	16
+	+	73	0
+	+	60	24
+	+	62	13
+	+	67	0
+	+	62	15
+	+	64	13
+	+	65	47
+	+	67	0
+	+	66	0
+	+	59	4
+	+	57	21
+	+	59	32
+	+	58	0
+	+	67	81
+	+	68	4
+	+	77	11
+	+	89	0
+	+	77	71
+	+	92	0
+	+	95	9
+	+	73	0
+	+	69	0
+	+	18	0
+	+	69	40
+	+	71	8
+	+	70	14
+	+	72	24
+	+	69	37
+	+	69	32
+	+	77	0
+	+	39	0
+	+	49	0
+	+	82	8
+	+	88	19
+	+	35	0
+	+	81	61
+	+	82	25
+	+	40	0
+	+	40	7
+	+	40	0
+	+	36	0
+	+	38	0
+	+	44	6
+	+	54	0
+	+	53	0
+	+	14	13
+	+	53	0
+	+	51	112
+	+	52	112
+	+	53	0
+	+	54	50
+	+	83	23
+	+	84	46
+	+	86	25
+	+	16	18
+	+	17	37
+	+	22	41
+	+	36	40
+	+	39	40
+	+	86	50
+	+	78	22
+	+	79	31
+	+	86	18
+	+	18	0
+	+	95	0
+	+	93	10
+	+	94	0
+	+	93	0
+	+	87	12
+	+	97	0
+
+> ~/pyscripts/data/oldfiles.db
+	*	1724279139	0
+	"	1	0
+
+> ~/pyscripts/.gitignore
+	*	1724279086	0
+	"	19	0
+	.	1	0
+	+	19	7
+	+	19	0
+	+	1	0
 
 > ~/python_staging/ipdb.py
 	*	1724278796	0
@@ -16063,111 +16293,6 @@ $frames.index(needle_frame)
 	"	64	24
 	^	10	28
 
-> ~/pyscripts/worker_oldfiles_to_sqlite.py
-	*	1724022490	0
-	"	84	12
-	.	97	0
-	+	31	86
-	+	32	0
-	+	90	57
-	+	90	0
-	+	35	33
-	+	39	10
-	+	76	0
-	+	46	18
-	+	76	0
-	+	90	0
-	+	48	0
-	+	49	74
-	+	76	0
-	+	54	41
-	+	49	109
-	+	30	56
-	+	76	0
-	+	75	0
-	+	77	7
-	+	90	0
-	+	89	0
-	+	12	10
-	+	89	8
-	+	89	20
-	+	13	21
-	+	67	47
-	+	73	27
-	+	73	62
-	+	74	0
-	+	73	16
-	+	73	0
-	+	60	24
-	+	62	13
-	+	67	0
-	+	62	15
-	+	64	13
-	+	65	47
-	+	67	0
-	+	66	0
-	+	59	4
-	+	57	21
-	+	59	32
-	+	58	0
-	+	67	81
-	+	68	4
-	+	77	11
-	+	89	0
-	+	77	71
-	+	92	0
-	+	95	9
-	+	73	0
-	+	69	0
-	+	18	0
-	+	69	40
-	+	71	8
-	+	70	14
-	+	72	24
-	+	69	37
-	+	69	32
-	+	77	0
-	+	39	0
-	+	49	0
-	+	82	8
-	+	88	19
-	+	35	0
-	+	81	61
-	+	82	25
-	+	40	0
-	+	40	7
-	+	40	0
-	+	36	0
-	+	38	0
-	+	44	6
-	+	54	0
-	+	53	0
-	+	14	13
-	+	53	0
-	+	51	112
-	+	52	112
-	+	53	0
-	+	54	50
-	+	83	23
-	+	84	46
-	+	86	25
-	+	16	18
-	+	17	37
-	+	22	41
-	+	36	40
-	+	39	40
-	+	86	50
-	+	78	22
-	+	79	31
-	+	86	18
-	+	18	0
-	+	95	0
-	+	93	10
-	+	94	0
-	+	93	0
-	+	87	12
-	+	97	0
-
 > ~/pyscripts/file.ansilog
 	*	1724022476	0
 	"	1	0
@@ -17150,112 +17275,6 @@ $frames.index(needle_frame)
 	.	21	0
 	+	19	1
 	+	21	0
-
-> ~/pyscripts/print_todo.py
-	*	1723677616	0
-	"	84	121
-	^	84	80
-	.	84	79
-	+	63	0
-	+	73	33
-	+	88	37
-	+	73	49
-	+	74	41
-	+	88	0
-	+	73	29
-	+	74	70
-	+	76	0
-	+	73	54
-	+	76	78
-	+	87	0
-	+	76	68
-	+	86	0
-	+	76	39
-	+	80	67
-	+	83	20
-	+	76	40
-	+	122	36
-	+	122	19
-	+	122	0
-	+	117	120
-	+	117	0
-	+	116	79
-	+	122	0
-	+	116	79
-	+	117	0
-	+	116	85
-	+	76	80
-	+	76	23
-	+	80	23
-	+	83	89
-	+	80	83
-	+	85	28
-	+	83	123
-	+	76	82
-	+	83	141
-	+	14	13
-	+	13	29
-	+	83	0
-	+	75	93
-	+	80	0
-	+	76	69
-	+	83	108
-	+	75	50
-	+	75	46
-	+	75	86
-	+	73	46
-	+	74	0
-	+	45	13
-	+	75	63
-	+	73	79
-	+	74	100
-	+	119	117
-	+	122	119
-	+	57	109
-	+	75	101
-	+	74	96
-	+	73	75
-	+	74	65
-	+	120	0
-	+	120	70
-	+	57	122
-	+	73	0
-	+	79	0
-	+	78	19
-	+	79	0
-	+	82	37
-	+	80	36
-	+	96	0
-	+	122	13
-	+	123	32
-	+	123	126
-	+	123	0
-	+	121	0
-	+	93	27
-	+	94	22
-	+	57	108
-	+	77	43
-	+	98	29
-	+	98	9
-	+	100	0
-	+	98	0
-	+	69	34
-	+	70	33
-	+	71	35
-	+	72	24
-	+	83	0
-	+	84	148
-	+	84	177
-	+	68	30
-	+	84	115
-	+	84	25
-	+	84	154
-	+	84	150
-	+	84	33
-	+	84	175
-	+	84	34
-	+	84	176
-	+	84	79
 
 > ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/color.py
 	*	1723675880	0
@@ -27277,14 +27296,6 @@ $frames.index(needle_frame)
 	.	3	4
 	+	2	11
 	+	3	4
-
-> ~/pyscripts/.gitignore
-	*	1720758218	0
-	"	1	0
-	^	2	5
-	.	2	4
-	+	1	7
-	+	2	4
 
 > ~/frontend/.gitignore
 	*	1720758175	0
