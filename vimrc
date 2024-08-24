@@ -223,7 +223,7 @@ set shiftwidth=4  " Allows you to use < and > keys in -- VISUAL --
 set softtabstop=4 " Makes vim see four spaces as a <TAB>
 set expandtab     " Inserts 4 spaces when <TAB> is pressed
 set formatoptions+=j " Remove comment leader when joining lines, where it makes sense
-set formatoptions+=ro
+set formatoptions+=r
 
 " set nowritebackup " Only creates Dropbox Errors
 set noswapfile " Only creates Dropbox Errors
