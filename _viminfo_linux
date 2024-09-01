@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/cat \~\/\.config\/alias\.bash | grep -v -e '\^\\s\*\$' -e '\^\\s\*#' | bat --color=always --style=plain --language=bash | fzf --no-sort --exact --ansi --reverse
+~MSle0~/fzf
 
 # Last Substitute Search Pattern:
 ~MSle0&viminfo_utils\zs
@@ -20,12 +20,16 @@
 $\/bin
 
 # Command Line History (newest to oldest):
+:q
+|2,0,1725199929,,"q"
 :qa
-|2,0,1725197888,,"qa"
+|2,0,1725199696,,"qa"
+:q!
+|2,0,1725199688,,"q!"
+:term
+|2,0,1725199680,,"term"
 :qa!
 |2,0,1725197506,,"qa!"
-:q
-|2,0,1725197219,,"q"
 :copen
 |2,0,1725195066,,"copen"
 :pwd
@@ -136,10 +140,6 @@ $\/bin
 |2,0,1725106210,,"lopen"
 :CocList diagnostics
 |2,0,1725106204,,"CocList diagnostics"
-:q!
-|2,0,1725076664,,"q!"
-:term
-|2,0,1725076643,,"term"
 :MRU al
 |2,0,1725074801,,"MRU al"
 :MRU bashrc
@@ -9948,6 +9948,10 @@ $\/bin
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/fzf
+|2,1,1725199262,47,"fzf"
+?/No
+|2,1,1725198694,47,"No"
 ?/aliases
 |2,1,1725197210,47,"aliases"
 ? viminfo_utils\zs
@@ -13496,8 +13500,6 @@ $\/bin
 |2,1,1693208593,47,"load_co"
 ?/C-k
 |2,1,1693206554,47,"C-k"
-?/fzf
-|2,1,1693206533,47,"fzf"
 ?/right_format
 |2,1,1693202956,47,"right_format"
 ?/.
@@ -14554,44 +14556,107 @@ $\/bin
 |2,4,1693311567,,"cont"
 
 # Registers:
-"0	CHAR	0
-	show_aliases
-|3,0,0,0,1,0,1725197676,"show_aliases"
-""1	LINE	0
-	alias aliases="cat ~/.config/alias.bash | grep -v -e '^\s*$' -e '^\s*#' | bat --color=always --style=plain --language=bash | fzf --no-sort --exact --ansi --reverse"
-|3,1,1,1,1,0,1725197678,"alias aliases=\"cat ~/.config/alias.bash | grep -v -e '^\\s*$' -e '^\\s*#' | bat --color=always --style=plain --language=bash | fzf --no-sort --exact --ansi --reverse\""
+""0	CHAR	0
+	)+abort' \
+|3,1,0,0,1,0,1725199924,")+abort' \\"
+"1	LINE	0
+	  noop
+|3,0,1,1,1,0,1725198707,"  noop"
 "2	LINE	0
-	            continue
-|3,0,2,1,1,0,1725193640,"            continue"
+	  --prompt "Select files (Ctrl-A to add, Ctrl-D to move to trash): " \
+|3,0,2,1,1,0,1725198660,"  --prompt \"Select files (Ctrl-A to add, Ctrl-D to move to trash): \" \\"
 "3	LINE	0
-	    cwd := os.
-|3,0,3,1,1,0,1725193604,"    cwd := os."
-"4	LINE	0
-		"time"
-|3,0,4,1,1,0,1725193334,"	\"time\""
-"5	LINE	0
-			if zdata_entry.epoch < oneWeekAgo {
-				continue
-			}
-|3,0,5,1,3,0,1725193324,"		if zdata_entry.epoch < oneWeekAgo {","			continue","		}"
-"6	LINE	0
-	    sort.Slic
-|3,0,6,1,1,0,1725193290,"    sort.Slic"
-"7	LINE	0
-	# selected_directory=./zdirs_one_wk | fzf --ansi --no-sort --exact | awk '{print $1}'
-	# if [ -n "$selected_directory" ]; then
-	#     cd "$selected_directory"
-	# fi
-|3,0,7,1,4,0,1725192929,"# selected_directory=./zdirs_one_wk | fzf --ansi --no-sort --exact | awk '{print $1}'","# if [ -n \"$selected_directory\" ]; then","#     cd \"$selected_directory\"","# fi"
-"8	LINE	0
-	selected_directory=./zdirs_one_wk | fzf --ansi | awk '{print $1}'
-	if [ -n "$selected_directory" ]; then
-	    cd "$selected_directory"
-	fi
-|3,0,8,1,4,0,1725192919,"selected_directory=./zdirs_one_wk | fzf --ansi | awk '{print $1}'","if [ -n \"$selected_directory\" ]; then","    cd \"$selected_directory\"","fi"
-"9	LINE	0
+	#!/bin/bash
 	
-|3,0,9,1,1,0,1725192819,""
+	# Define the preview command with bat or batcat
+	preview_cmd="bat --color=always --style=plain --language=bash {}"
+	
+	# List untracked files, pipe them to fzf with preview and instructions
+	selected_files=$(git ls-files --others --exclude-standard | fzf --multi \
+	  --preview "$preview_cmd" \
+	  --prompt "Select files (Ctrl-A to add, Ctrl-D to move to trash): " \
+	  --header "Use Ctrl-A to git add, Ctrl-D to gomi -i (move to trash)" \
+	  --bind 'ctrl-d:execute(gomi -i {})+abort' \
+	  --bind 'ctrl-a:execute(git add {})+abort')
+	
+	# Check if files were selected
+	if [[ -n "$selected_files" ]]; then
+	  echo "Selected files:"
+	  echo "$selected_files"
+	
+	  # Ask user if they want to add or remove selected files
+	  read -p "Do you want to (a)dd or (r)emove the selected files? " action
+	  case "$action" in
+	    a|A)
+	      echo "$selected_files" | xargs git add
+	      echo "Files added to Git."
+	      ;;
+	    r|R)
+	      echo "$selected_files" | xargs gomi -i
+	      echo "Files moved to trash."
+	      ;;
+	    *)
+	      echo "No action taken."
+	      ;;
+	  esac
+	else
+	  echo "No files selected."
+	fi
+	
+|3,0,3,1,37,0,1725198656,"#!/bin/bash","","# Define the preview command with bat or batcat","preview_cmd=\"bat --color=always --style=plain --language=bash {}\"","","# List untracked files, pipe them to fzf with preview and instructions","selected_files=$(git ls-files --others --exclude-standard | fzf --multi \\","  --preview \"$preview_cmd\" \\","  --prompt \"Select files (Ctrl-A to add, Ctrl-D to move to trash): \" \\",>76
+|<"  --header \"Use Ctrl-A to git add, Ctrl-D to gomi -i (move to trash)\" \\","  --bind 'ctrl-d:execute(gomi -i {})+abort' \\","  --bind 'ctrl-a:execute(git add {})+abort')","","# Check if files were selected","if [[ -n \"$selected_files\" ]]; then","  echo \"Selected files:\"","  echo \"$selected_files\"","","  # Ask user if they want to add or remove selected files","  read -p \"Do you want to (a)dd or (r)emove the selected files? \" action","  case \"$action\" in","    a|A)",>48
+|<"      echo \"$selected_files\" | xargs git add","      echo \"Files added to Git.\"","      ;;","    r|R)","      echo \"$selected_files\" | xargs gomi -i","      echo \"Files moved to trash.\"","      ;;","    *)","      echo \"No action taken.\"","      ;;","  esac","else","  echo \"No files selected.\"","fi",""
+"4	LINE	0
+	  --prompt "Select files (Ctrl-A to add, Ctrl-D to move to trash): " \
+|3,0,4,1,1,0,1725198626,"  --prompt \"Select files (Ctrl-A to add, Ctrl-D to move to trash): \" \\"
+"5	LINE	0
+	#!/bin/bash
+	
+	# Define the preview command with bat or batcat
+	preview_cmd="bat --color=always --style=plain --language=bash {}"
+	
+	# List untracked files, pipe them to fzf with preview
+	selected_files=$(git ls-files --others --exclude-standard | fzf --multi --preview "$preview_cmd" --bind 'ctrl-d:execute(rm -i {})+abort' --bind 'ctrl-a:execute(git add {})+abort')
+	
+	# Check if files were selected
+	if [[ -n "$selected_files" ]]; then
+	  echo "Selected files:"
+	  echo "$selected_files"
+	
+	  # Ask user if they want to add or remove selected files
+	  read -p "Do you want to (a)dd or (r)emove the selected files? " action
+	  case "$action" in
+	    a|A)
+	      echo "$selected_files" | xargs git add
+	      echo "Files added to Git."
+	      ;;
+	    r|R)
+	      echo "$selected_files" | xargs gomi -i
+	      echo "Files removed."
+	      ;;
+	    *)
+	      echo "No action taken."
+	      ;;
+	  esac
+	else
+	  echo "No files selected."
+	fi
+	
+|3,0,5,1,32,0,1725198534,"#!/bin/bash","","# Define the preview command with bat or batcat","preview_cmd=\"bat --color=always --style=plain --language=bash {}\"","","# List untracked files, pipe them to fzf with preview","selected_files=$(git ls-files --others --exclude-standard | fzf --multi --preview \"$preview_cmd\" --bind 'ctrl-d:execute(rm -i {})+abort' --bind 'ctrl-a:execute(git add {})+abort')","","# Check if files were selected",>39
+|<"if [[ -n \"$selected_files\" ]]; then","  echo \"Selected files:\"","  echo \"$selected_files\"","","  # Ask user if they want to add or remove selected files","  read -p \"Do you want to (a)dd or (r)emove the selected files? \" action","  case \"$action\" in","    a|A)","      echo \"$selected_files\" | xargs git add","      echo \"Files added to Git.\"","      ;;","    r|R)","      echo \"$selected_files\" | xargs gomi -i","      echo \"Files removed.\"","      ;;","    *)",>33
+|<"      echo \"No action taken.\"","      ;;","  esac","else","  echo \"No files selected.\"","fi",""
+"6	LINE	0
+	alias aliases="cat ~/.config/alias.bash | grep -v -e '^\s*$' -e '^\s*#' | bat --color=always --style=plain --language=bash | fzf --no-sort --exact --ansi --reverse"
+|3,0,6,1,1,0,1725197678,"alias aliases=\"cat ~/.config/alias.bash | grep -v -e '^\\s*$' -e '^\\s*#' | bat --color=always --style=plain --language=bash | fzf --no-sort --exact --ansi --reverse\""
+"7	LINE	0
+	            continue
+|3,0,7,1,1,0,1725193640,"            continue"
+"8	LINE	0
+	    cwd := os.
+|3,0,8,1,1,0,1725193604,"    cwd := os."
+"9	LINE	0
+		"time"
+|3,0,9,1,1,0,1725193334,"	\"time\""
 "a	CHAR	0
 	0f",i\n��a
 |3,0,10,0,1,0,1725197634,"0f\",i\\n��a"
@@ -14621,243 +14686,263 @@ $\/bin
 |<"     ├── build tool                                                          │","     ├── library: cli parser, server, http client                            │","     │                                                                       │","     ╰───────────────────────────────────────────────────────────────────────╯",>2
 |<""
 "-	CHAR	0
-	show_aliases
-|3,0,36,0,1,0,1725197674,"show_aliases"
+	)+abort' \
+|3,0,36,0,1,0,1725199913,")+abort' \\"
 
 # File marks:
-'0  1  0  ~/.config/alias.bash
-|4,48,1,0,1725197889,"~/.config/alias.bash"
-'1  5  2  ~/.config/.gitignore
-|4,49,5,2,1725197880,"~/.config/.gitignore"
-'2  5  2  ~/.config/.gitignore
-|4,50,5,2,1725197880,"~/.config/.gitignore"
-'3  16  58  ~/.config/alias.bash
-|4,51,16,58,1725197723,"~/.config/alias.bash"
-'4  16  58  ~/.config/alias.bash
-|4,52,16,58,1725197723,"~/.config/alias.bash"
-'5  16  58  ~/.config/alias.bash
-|4,53,16,58,1725197723,"~/.config/alias.bash"
-'6  16  58  ~/.config/alias.bash
-|4,54,16,58,1725197723,"~/.config/alias.bash"
-'7  17  0  ~/.config/alias.bash
-|4,55,17,0,1725197680,"~/.config/alias.bash"
-'8  17  0  ~/.config/alias.bash
-|4,56,17,0,1725197680,"~/.config/alias.bash"
-'9  17  0  ~/.config/alias.bash
-|4,57,17,0,1725197680,"~/.config/alias.bash"
+'0  10  63  ~/bash/git_fzf_select.bash
+|4,48,10,63,1725199929,"~/bash/git_fzf_select.bash"
+'1  1  0  ~/.config/alias.bash
+|4,49,1,0,1725199896,"~/.config/alias.bash"
+'2  1  0  ~/.config/alias.bash
+|4,50,1,0,1725199896,"~/.config/alias.bash"
+'3  28  47  ~/.config/alias.bash
+|4,51,28,47,1725199696,"~/.config/alias.bash"
+'4  28  47  ~/.config/alias.bash
+|4,52,28,47,1725199696,"~/.config/alias.bash"
+'5  28  47  ~/.config/alias.bash
+|4,53,28,47,1725199696,"~/.config/alias.bash"
+'6  28  47  ~/.config/alias.bash
+|4,54,28,47,1725199696,"~/.config/alias.bash"
+'7  7  73  ~/bash/git_fzf_select.bash
+|4,55,7,73,1725199273,"~/bash/git_fzf_select.bash"
+'8  7  73  ~/bash/git_fzf_select.bash
+|4,56,7,73,1725199273,"~/bash/git_fzf_select.bash"
+'9  7  73  ~/bash/git_fzf_select.bash
+|4,57,7,73,1725199273,"~/bash/git_fzf_select.bash"
 
 # Jumplist (newest first):
+-'  10  63  ~/bash/git_fzf_select.bash
+|4,39,10,63,1725199929,"~/bash/git_fzf_select.bash"
+-'  1  0  ~/bash/git_fzf_select.bash
+|4,39,1,0,1725199898,"~/bash/git_fzf_select.bash"
 -'  1  0  ~/.config/alias.bash
-|4,39,1,0,1725197889,"~/.config/alias.bash"
--'  5  2  ~/.config/.gitignore
-|4,39,5,2,1725197880,"~/.config/.gitignore"
--'  5  2  ~/.config/.gitignore
-|4,39,5,2,1725197880,"~/.config/.gitignore"
--'  1  0  ~/.config/.gitignore
-|4,39,1,0,1725197876,"~/.config/.gitignore"
--'  1  0  ~/.config/.gitignore
-|4,39,1,0,1725197876,"~/.config/.gitignore"
--'  16  58  ~/.config/alias.bash
-|4,39,16,58,1725197723,"~/.config/alias.bash"
--'  16  58  ~/.config/alias.bash
-|4,39,16,58,1725197723,"~/.config/alias.bash"
--'  16  58  ~/.config/alias.bash
-|4,39,16,58,1725197723,"~/.config/alias.bash"
+|4,39,1,0,1725199896,"~/.config/alias.bash"
 -'  1  0  ~/.config/alias.bash
-|4,39,1,0,1725197707,"~/.config/alias.bash"
+|4,39,1,0,1725199896,"~/.config/alias.bash"
+-'  28  47  ~/.config/alias.bash
+|4,39,28,47,1725199696,"~/.config/alias.bash"
+-'  28  47  ~/.config/alias.bash
+|4,39,28,47,1725199696,"~/.config/alias.bash"
+-'  28  47  ~/.config/alias.bash
+|4,39,28,47,1725199696,"~/.config/alias.bash"
 -'  1  0  ~/.config/alias.bash
-|4,39,1,0,1725197707,"~/.config/alias.bash"
--'  17  0  ~/.config/alias.bash
-|4,39,17,0,1725197680,"~/.config/alias.bash"
--'  17  0  ~/.config/alias.bash
-|4,39,17,0,1725197680,"~/.config/alias.bash"
--'  17  0  ~/.config/alias.bash
-|4,39,17,0,1725197680,"~/.config/alias.bash"
--'  17  0  ~/.config/alias.bash
-|4,39,17,0,1725197680,"~/.config/alias.bash"
--'  16  15  ~/.config/alias.bash
-|4,39,16,15,1725197676,"~/.config/alias.bash"
--'  1  0  ~/.config/alias.bash
-|4,39,1,0,1725197669,"~/.config/alias.bash"
--'  16  163  ~/.config/alias.bash
-|4,39,16,163,1725197657,"~/.config/alias.bash"
--'  1  0  ~/.config/alias.bash
-|4,39,1,0,1725197594,"~/.config/alias.bash"
--'  16  42  ~/.config/alias.bash
-|4,39,16,42,1725197219,"~/.config/alias.bash"
--'  16  42  ~/.config/alias.bash
-|4,39,16,42,1725197219,"~/.config/alias.bash"
--'  16  42  ~/.config/alias.bash
-|4,39,16,42,1725197219,"~/.config/alias.bash"
--'  10  0  ~/.config/alias.bash
-|4,39,10,0,1725197210,"~/.config/alias.bash"
--'  10  0  ~/.config/alias.bash
-|4,39,10,0,1725197210,"~/.config/alias.bash"
--'  10  0  ~/.config/alias.bash
-|4,39,10,0,1725197210,"~/.config/alias.bash"
--'  10  0  ~/.config/alias.bash
-|4,39,10,0,1725197210,"~/.config/alias.bash"
--'  10  0  ~/.config/alias.bash
-|4,39,10,0,1725197210,"~/.config/alias.bash"
--'  10  0  ~/.config/alias.bash
-|4,39,10,0,1725197210,"~/.config/alias.bash"
--'  10  0  ~/.config/alias.bash
-|4,39,10,0,1725197210,"~/.config/alias.bash"
--'  10  0  ~/.config/alias.bash
-|4,39,10,0,1725197210,"~/.config/alias.bash"
--'  1  0  ~/.config/alias.bash
-|4,39,1,0,1725197208,"~/.config/alias.bash"
--'  1  0  ~/.config/alias.bash
-|4,39,1,0,1725197208,"~/.config/alias.bash"
--'  1  0  ~/.config/alias.bash
-|4,39,1,0,1725197208,"~/.config/alias.bash"
--'  1  0  ~/.config/alias.bash
-|4,39,1,0,1725197206,"~/.config/alias.bash"
--'  16  63  ~/.config/alias.bash
-|4,39,16,63,1725197162,"~/.config/alias.bash"
--'  16  63  ~/.config/alias.bash
-|4,39,16,63,1725197162,"~/.config/alias.bash"
--'  1  0  ~/.config/alias.bash
-|4,39,1,0,1725197137,"~/.config/alias.bash"
--'  1  0  ~/bash/olddirs.bash
-|4,39,1,0,1725195073,"~/bash/olddirs.bash"
--'  1  0  ~/bash/olddirs.bash
-|4,39,1,0,1725195073,"~/bash/olddirs.bash"
--'  1  0  ~/bash/olddirs.bash
-|4,39,1,0,1725195073,"~/bash/olddirs.bash"
--'  1  0  ~/bash/olddirs.bash
-|4,39,1,0,1725195073,"~/bash/olddirs.bash"
--'  1  0  ~/bash/olddirs.bash
-|4,39,1,0,1725195073,"~/bash/olddirs.bash"
--'  1  0  ~/bash/olddirs.bash
-|4,39,1,0,1725195073,"~/bash/olddirs.bash"
--'  1  0  ~/bash/olddirs.bash
-|4,39,1,0,1725195073,"~/bash/olddirs.bash"
--'  1  0  ~/bash/olddirs.bash
-|4,39,1,0,1725195073,"~/bash/olddirs.bash"
--'  1  0  ~/bash/olddirs.bash
-|4,39,1,0,1725195073,"~/bash/olddirs.bash"
--'  1  0  ~/bash/olddirs.bash
-|4,39,1,0,1725195073,"~/bash/olddirs.bash"
--'  1  0  ~/bash/olddirs.bash
-|4,39,1,0,1725195073,"~/bash/olddirs.bash"
--'  2  25  ~/bash/oldfiles.bash
-|4,39,2,25,1725195060,"~/bash/oldfiles.bash"
--'  2  25  ~/bash/oldfiles.bash
-|4,39,2,25,1725195060,"~/bash/oldfiles.bash"
--'  2  25  ~/bash/oldfiles.bash
-|4,39,2,25,1725195060,"~/bash/oldfiles.bash"
--'  2  25  ~/bash/oldfiles.bash
-|4,39,2,25,1725195060,"~/bash/oldfiles.bash"
--'  2  25  ~/bash/oldfiles.bash
-|4,39,2,25,1725195060,"~/bash/oldfiles.bash"
--'  2  25  ~/bash/oldfiles.bash
-|4,39,2,25,1725195060,"~/bash/oldfiles.bash"
--'  2  25  ~/bash/oldfiles.bash
-|4,39,2,25,1725195060,"~/bash/oldfiles.bash"
--'  2  25  ~/bash/oldfiles.bash
-|4,39,2,25,1725195060,"~/bash/oldfiles.bash"
--'  2  25  ~/bash/oldfiles.bash
-|4,39,2,25,1725195060,"~/bash/oldfiles.bash"
--'  2  25  ~/bash/oldfiles.bash
-|4,39,2,25,1725195060,"~/bash/oldfiles.bash"
--'  2  25  ~/bash/oldfiles.bash
-|4,39,2,25,1725195060,"~/bash/oldfiles.bash"
--'  1  0  ~/bash/olddirs.fish
-|4,39,1,0,1725195058,"~/bash/olddirs.fish"
--'  1  0  ~/bash/olddirs.fish
-|4,39,1,0,1725195058,"~/bash/olddirs.fish"
--'  1  0  ~/bash/olddirs.fish
-|4,39,1,0,1725195058,"~/bash/olddirs.fish"
--'  1  0  ~/bash/olddirs.fish
-|4,39,1,0,1725195058,"~/bash/olddirs.fish"
--'  1  0  ~/bash/olddirs.fish
-|4,39,1,0,1725195058,"~/bash/olddirs.fish"
--'  1  0  ~/bash/olddirs.fish
-|4,39,1,0,1725195058,"~/bash/olddirs.fish"
--'  1  0  ~/bash/olddirs.fish
-|4,39,1,0,1725195058,"~/bash/olddirs.fish"
--'  1  0  ~/bash/olddirs.fish
-|4,39,1,0,1725195058,"~/bash/olddirs.fish"
--'  1  0  ~/bash/olddirs.fish
-|4,39,1,0,1725195058,"~/bash/olddirs.fish"
--'  1  0  ~/bash/olddirs.fish
-|4,39,1,0,1725195058,"~/bash/olddirs.fish"
--'  1  0  ~/bash/olddirs.fish
-|4,39,1,0,1725195058,"~/bash/olddirs.fish"
--'  1  30  ~/bash/zdirs.bash
-|4,39,1,30,1725195054,"~/bash/zdirs.bash"
--'  1  30  ~/bash/zdirs.bash
-|4,39,1,30,1725195054,"~/bash/zdirs.bash"
--'  1  30  ~/bash/zdirs.bash
-|4,39,1,30,1725195054,"~/bash/zdirs.bash"
--'  1  30  ~/bash/zdirs.bash
-|4,39,1,30,1725195054,"~/bash/zdirs.bash"
--'  1  30  ~/bash/zdirs.bash
-|4,39,1,30,1725195054,"~/bash/zdirs.bash"
--'  1  30  ~/bash/zdirs.bash
-|4,39,1,30,1725195054,"~/bash/zdirs.bash"
--'  1  30  ~/bash/zdirs.bash
-|4,39,1,30,1725195054,"~/bash/zdirs.bash"
--'  1  30  ~/bash/zdirs.bash
-|4,39,1,30,1725195054,"~/bash/zdirs.bash"
--'  1  30  ~/bash/zdirs.bash
-|4,39,1,30,1725195054,"~/bash/zdirs.bash"
--'  1  30  ~/bash/zdirs.bash
-|4,39,1,30,1725195054,"~/bash/zdirs.bash"
--'  1  30  ~/bash/zdirs.bash
-|4,39,1,30,1725195054,"~/bash/zdirs.bash"
--'  3  25  ~/bash/pwd-oldfiles.bash
-|4,39,3,25,1725195039,"~/bash/pwd-oldfiles.bash"
--'  3  25  ~/bash/pwd-oldfiles.bash
-|4,39,3,25,1725195039,"~/bash/pwd-oldfiles.bash"
--'  3  25  ~/bash/pwd-oldfiles.bash
-|4,39,3,25,1725195039,"~/bash/pwd-oldfiles.bash"
--'  3  25  ~/bash/pwd-oldfiles.bash
-|4,39,3,25,1725195039,"~/bash/pwd-oldfiles.bash"
--'  3  25  ~/bash/pwd-oldfiles.bash
-|4,39,3,25,1725195039,"~/bash/pwd-oldfiles.bash"
--'  3  25  ~/bash/pwd-oldfiles.bash
-|4,39,3,25,1725195039,"~/bash/pwd-oldfiles.bash"
--'  3  25  ~/bash/pwd-oldfiles.bash
-|4,39,3,25,1725195039,"~/bash/pwd-oldfiles.bash"
--'  3  25  ~/bash/pwd-oldfiles.bash
-|4,39,3,25,1725195039,"~/bash/pwd-oldfiles.bash"
--'  3  25  ~/bash/pwd-oldfiles.bash
-|4,39,3,25,1725195039,"~/bash/pwd-oldfiles.bash"
--'  3  25  ~/bash/pwd-oldfiles.bash
-|4,39,3,25,1725195039,"~/bash/pwd-oldfiles.bash"
--'  3  25  ~/bash/pwd-oldfiles.bash
-|4,39,3,25,1725195039,"~/bash/pwd-oldfiles.bash"
--'  1  0  ~/bash/zdirs.fish
-|4,39,1,0,1725195037,"~/bash/zdirs.fish"
--'  1  0  ~/bash/zdirs.fish
-|4,39,1,0,1725195037,"~/bash/zdirs.fish"
--'  1  0  ~/bash/zdirs.fish
-|4,39,1,0,1725195037,"~/bash/zdirs.fish"
--'  1  0  ~/bash/zdirs.fish
-|4,39,1,0,1725195037,"~/bash/zdirs.fish"
--'  1  0  ~/bash/zdirs.fish
-|4,39,1,0,1725195037,"~/bash/zdirs.fish"
--'  1  0  ~/bash/zdirs.fish
-|4,39,1,0,1725195037,"~/bash/zdirs.fish"
--'  1  0  ~/bash/zdirs.fish
-|4,39,1,0,1725195037,"~/bash/zdirs.fish"
--'  1  0  ~/bash/zdirs.fish
-|4,39,1,0,1725195037,"~/bash/zdirs.fish"
--'  1  0  ~/bash/zdirs.fish
-|4,39,1,0,1725195037,"~/bash/zdirs.fish"
+|4,39,1,0,1725199672,"~/.config/alias.bash"
+-'  7  73  ~/bash/git_fzf_select.bash
+|4,39,7,73,1725199273,"~/bash/git_fzf_select.bash"
+-'  7  73  ~/bash/git_fzf_select.bash
+|4,39,7,73,1725199273,"~/bash/git_fzf_select.bash"
+-'  7  73  ~/bash/git_fzf_select.bash
+|4,39,7,73,1725199273,"~/bash/git_fzf_select.bash"
+-'  7  73  ~/bash/git_fzf_select.bash
+|4,39,7,73,1725199273,"~/bash/git_fzf_select.bash"
+-'  6  37  ~/bash/git_fzf_select.bash
+|4,39,6,37,1725199262,"~/bash/git_fzf_select.bash"
+-'  6  37  ~/bash/git_fzf_select.bash
+|4,39,6,37,1725199262,"~/bash/git_fzf_select.bash"
+-'  1  0  ~/bash/git_fzf_select.bash
+|4,39,1,0,1725199262,"~/bash/git_fzf_select.bash"
+-'  6  37  ~/bash/git_fzf_select.bash
+|4,39,6,37,1725199262,"~/bash/git_fzf_select.bash"
+-'  1  0  ~/bash/git_fzf_select.bash
+|4,39,1,0,1725199262,"~/bash/git_fzf_select.bash"
+-'  6  37  ~/bash/git_fzf_select.bash
+|4,39,6,37,1725199262,"~/bash/git_fzf_select.bash"
+-'  1  0  ~/bash/git_fzf_select.bash
+|4,39,1,0,1725199262,"~/bash/git_fzf_select.bash"
+-'  5  8  ~/golang/.gitignore
+|4,39,5,8,1725199156,"~/golang/.gitignore"
+-'  5  8  ~/golang/.gitignore
+|4,39,5,8,1725199156,"~/golang/.gitignore"
+-'  5  8  ~/golang/.gitignore
+|4,39,5,8,1725199156,"~/golang/.gitignore"
+-'  5  8  ~/golang/.gitignore
+|4,39,5,8,1725199156,"~/golang/.gitignore"
+-'  5  8  ~/golang/.gitignore
+|4,39,5,8,1725199156,"~/golang/.gitignore"
+-'  1  0  ~/golang/.gitignore
+|4,39,1,0,1725199152,"~/golang/.gitignore"
+-'  1  0  ~/golang/.gitignore
+|4,39,1,0,1725199152,"~/golang/.gitignore"
+-'  1  0  ~/golang/.gitignore
+|4,39,1,0,1725199152,"~/golang/.gitignore"
+-'  1  0  ~/golang/.gitignore
+|4,39,1,0,1725199152,"~/golang/.gitignore"
+-'  1  0  ~/golang/.gitignore
+|4,39,1,0,1725199152,"~/golang/.gitignore"
+-'  4  3  ~/golang/.gitignore
+|4,39,4,3,1725199139,"~/golang/.gitignore"
+-'  4  3  ~/golang/.gitignore
+|4,39,4,3,1725199139,"~/golang/.gitignore"
+-'  4  3  ~/golang/.gitignore
+|4,39,4,3,1725199139,"~/golang/.gitignore"
+-'  4  3  ~/golang/.gitignore
+|4,39,4,3,1725199139,"~/golang/.gitignore"
+-'  4  3  ~/golang/.gitignore
+|4,39,4,3,1725199139,"~/golang/.gitignore"
+-'  4  3  ~/golang/.gitignore
+|4,39,4,3,1725199139,"~/golang/.gitignore"
+-'  1  0  ~/golang/.gitignore
+|4,39,1,0,1725199135,"~/golang/.gitignore"
+-'  1  0  ~/golang/viminfo_utils/.gitignore
+|4,39,1,0,1725199127,"~/golang/viminfo_utils/.gitignore"
+-'  1  0  ~/golang/viminfo_utils/.gitignore
+|4,39,1,0,1725199127,"~/golang/viminfo_utils/.gitignore"
+-'  1  0  ~/golang/viminfo_utils/.gitignore
+|4,39,1,0,1725199127,"~/golang/viminfo_utils/.gitignore"
+-'  1  0  ~/golang/viminfo_utils/.gitignore
+|4,39,1,0,1725199127,"~/golang/viminfo_utils/.gitignore"
+-'  1  0  ~/golang/viminfo_utils/.gitignore
+|4,39,1,0,1725199127,"~/golang/viminfo_utils/.gitignore"
+-'  1  0  ~/golang/viminfo_utils/.gitignore
+|4,39,1,0,1725199127,"~/golang/viminfo_utils/.gitignore"
+-'  1  0  ~/golang/viminfo_utils/.gitignore
+|4,39,1,0,1725199127,"~/golang/viminfo_utils/.gitignore"
+-'  81  3  ~/golang/viminfo_utils/oldutils/oldutils.go
+|4,39,81,3,1725198772,"~/golang/viminfo_utils/oldutils/oldutils.go"
+-'  81  3  ~/golang/viminfo_utils/oldutils/oldutils.go
+|4,39,81,3,1725198772,"~/golang/viminfo_utils/oldutils/oldutils.go"
+-'  81  3  ~/golang/viminfo_utils/oldutils/oldutils.go
+|4,39,81,3,1725198772,"~/golang/viminfo_utils/oldutils/oldutils.go"
+-'  81  3  ~/golang/viminfo_utils/oldutils/oldutils.go
+|4,39,81,3,1725198772,"~/golang/viminfo_utils/oldutils/oldutils.go"
+-'  81  3  ~/golang/viminfo_utils/oldutils/oldutils.go
+|4,39,81,3,1725198772,"~/golang/viminfo_utils/oldutils/oldutils.go"
+-'  81  3  ~/golang/viminfo_utils/oldutils/oldutils.go
+|4,39,81,3,1725198772,"~/golang/viminfo_utils/oldutils/oldutils.go"
+-'  81  3  ~/golang/viminfo_utils/oldutils/oldutils.go
+|4,39,81,3,1725198772,"~/golang/viminfo_utils/oldutils/oldutils.go"
+-'  81  3  ~/golang/viminfo_utils/oldutils/oldutils.go
+|4,39,81,3,1725198772,"~/golang/viminfo_utils/oldutils/oldutils.go"
+-'  1  0  ~/golang/viminfo_utils/oldutils/oldutils.go
+|4,39,1,0,1725198769,"~/golang/viminfo_utils/oldutils/oldutils.go"
+-'  1  0  ~/golang/viminfo_utils/oldutils/oldutils.go
+|4,39,1,0,1725198769,"~/golang/viminfo_utils/oldutils/oldutils.go"
+-'  1  0  ~/golang/viminfo_utils/oldutils/oldutils.go
+|4,39,1,0,1725198769,"~/golang/viminfo_utils/oldutils/oldutils.go"
+-'  1  0  ~/golang/viminfo_utils/oldutils/oldutils.go
+|4,39,1,0,1725198769,"~/golang/viminfo_utils/oldutils/oldutils.go"
+-'  1  0  ~/golang/viminfo_utils/oldutils/oldutils.go
+|4,39,1,0,1725198769,"~/golang/viminfo_utils/oldutils/oldutils.go"
+-'  1  0  ~/golang/viminfo_utils/oldutils/oldutils.go
+|4,39,1,0,1725198769,"~/golang/viminfo_utils/oldutils/oldutils.go"
+-'  1  0  ~/golang/viminfo_utils/oldutils/oldutils.go
+|4,39,1,0,1725198769,"~/golang/viminfo_utils/oldutils/oldutils.go"
+-'  1  0  ~/golang/viminfo_utils/oldutils/oldutils.go
+|4,39,1,0,1725198769,"~/golang/viminfo_utils/oldutils/oldutils.go"
+-'  34  2  ~/bash/git_fzf_select.bash
+|4,39,34,2,1725198734,"~/bash/git_fzf_select.bash"
+-'  34  2  ~/bash/git_fzf_select.bash
+|4,39,34,2,1725198734,"~/bash/git_fzf_select.bash"
+-'  34  2  ~/bash/git_fzf_select.bash
+|4,39,34,2,1725198734,"~/bash/git_fzf_select.bash"
+-'  34  2  ~/bash/git_fzf_select.bash
+|4,39,34,2,1725198734,"~/bash/git_fzf_select.bash"
+-'  34  2  ~/bash/git_fzf_select.bash
+|4,39,34,2,1725198734,"~/bash/git_fzf_select.bash"
+-'  34  2  ~/bash/git_fzf_select.bash
+|4,39,34,2,1725198734,"~/bash/git_fzf_select.bash"
+-'  34  2  ~/bash/git_fzf_select.bash
+|4,39,34,2,1725198734,"~/bash/git_fzf_select.bash"
+-'  34  2  ~/bash/git_fzf_select.bash
+|4,39,34,2,1725198734,"~/bash/git_fzf_select.bash"
+-'  34  2  ~/bash/git_fzf_select.bash
+|4,39,34,2,1725198734,"~/bash/git_fzf_select.bash"
+-'  1  0  ~/bash/git_fzf_select.bash
+|4,39,1,0,1725198729,"~/bash/git_fzf_select.bash"
+-'  1  0  ~/bash/git_fzf_select.bash
+|4,39,1,0,1725198729,"~/bash/git_fzf_select.bash"
+-'  1  0  ~/bash/git_fzf_select.bash
+|4,39,1,0,1725198729,"~/bash/git_fzf_select.bash"
+-'  1  0  ~/bash/git_fzf_select.bash
+|4,39,1,0,1725198729,"~/bash/git_fzf_select.bash"
+-'  1  0  ~/bash/git_fzf_select.bash
+|4,39,1,0,1725198729,"~/bash/git_fzf_select.bash"
+-'  34  8  ~/bash/git_fzf_select.bash
+|4,39,34,8,1725198710,"~/bash/git_fzf_select.bash"
+-'  1  0  ~/bash/git_fzf_select.bash
+|4,39,1,0,1725198693,"~/bash/git_fzf_select.bash"
+-'  4  46  ~/bash/git_fzf_select.bash
+|4,39,4,46,1725198681,"~/bash/git_fzf_select.bash"
+-'  4  46  ~/bash/git_fzf_select.bash
+|4,39,4,46,1725198681,"~/bash/git_fzf_select.bash"
+-'  4  46  ~/bash/git_fzf_select.bash
+|4,39,4,46,1725198681,"~/bash/git_fzf_select.bash"
+-'  4  46  ~/bash/git_fzf_select.bash
+|4,39,4,46,1725198681,"~/bash/git_fzf_select.bash"
+-'  4  46  ~/bash/git_fzf_select.bash
+|4,39,4,46,1725198681,"~/bash/git_fzf_select.bash"
+-'  4  46  ~/bash/git_fzf_select.bash
+|4,39,4,46,1725198681,"~/bash/git_fzf_select.bash"
+-'  4  46  ~/bash/git_fzf_select.bash
+|4,39,4,46,1725198681,"~/bash/git_fzf_select.bash"
+-'  4  46  ~/bash/git_fzf_select.bash
+|4,39,4,46,1725198681,"~/bash/git_fzf_select.bash"
+-'  4  46  ~/bash/git_fzf_select.bash
+|4,39,4,46,1725198681,"~/bash/git_fzf_select.bash"
+-'  4  46  ~/bash/git_fzf_select.bash
+|4,39,4,46,1725198681,"~/bash/git_fzf_select.bash"
+-'  4  46  ~/bash/git_fzf_select.bash
+|4,39,4,46,1725198681,"~/bash/git_fzf_select.bash"
+-'  1  0  ~/bash/git_fzf_select.bash
+|4,39,1,0,1725198675,"~/bash/git_fzf_select.bash"
+-'  9  2  ~/bash/git_fzf_select.bash
+|4,39,9,2,1725198665,"~/bash/git_fzf_select.bash"
+-'  9  2  ~/bash/git_fzf_select.bash
+|4,39,9,2,1725198665,"~/bash/git_fzf_select.bash"
+-'  9  2  ~/bash/git_fzf_select.bash
+|4,39,9,2,1725198665,"~/bash/git_fzf_select.bash"
+-'  9  2  ~/bash/git_fzf_select.bash
+|4,39,9,2,1725198665,"~/bash/git_fzf_select.bash"
+-'  9  2  ~/bash/git_fzf_select.bash
+|4,39,9,2,1725198665,"~/bash/git_fzf_select.bash"
+-'  9  2  ~/bash/git_fzf_select.bash
+|4,39,9,2,1725198665,"~/bash/git_fzf_select.bash"
+-'  9  2  ~/bash/git_fzf_select.bash
+|4,39,9,2,1725198665,"~/bash/git_fzf_select.bash"
+-'  9  2  ~/bash/git_fzf_select.bash
+|4,39,9,2,1725198665,"~/bash/git_fzf_select.bash"
+-'  9  2  ~/bash/git_fzf_select.bash
+|4,39,9,2,1725198665,"~/bash/git_fzf_select.bash"
+-'  9  2  ~/bash/git_fzf_select.bash
+|4,39,9,2,1725198665,"~/bash/git_fzf_select.bash"
+-'  9  2  ~/bash/git_fzf_select.bash
+|4,39,9,2,1725198665,"~/bash/git_fzf_select.bash"
+-'  9  2  ~/bash/git_fzf_select.bash
+|4,39,9,2,1725198665,"~/bash/git_fzf_select.bash"
+-'  27  0  ~/bash/git_fzf_select.bash
+|4,39,27,0,1725198657,"~/bash/git_fzf_select.bash"
 
 # Buffer list:
-%~/.config/alias.bash	1	0
+%~/bash/git_fzf_select.bash	10	63
 
 # History of marks within files (newest to oldest):
 
+> ~/bash/git_fzf_select.bash
+	*	1725199928	0
+	"	10	63
+	^	10	64
+	.	10	63
+	+	37	2
+	+	37	0
+	+	37	2
+	+	1	2
+	+	1	0
+	+	37	0
+	+	9	0
+	+	4	46
+	+	34	0
+	+	36	0
+	+	34	3
+	+	35	2
+	+	7	73
+	+	10	63
+
 > ~/.config/alias.bash
-	*	1725197886	0
+	*	1725199894	0
 	"	1	0
-	^	16	59
-	.	16	58
+	^	28	48
+	.	28	47
 	+	21	32
 	+	15	72
 	+	16	38
@@ -14880,6 +14965,53 @@ $\/bin
 	+	17	169
 	+	17	0
 	+	16	58
+	+	28	47
+
+> ~/golang/.gitignore
+	*	1725199155	0
+	"	5	8
+	^	5	9
+	.	5	8
+	+	4	3
+	+	5	8
+
+> ~/golang/viminfo_utils/.gitignore
+	*	1725199126	0
+	"	1	0
+
+> ~/golang/viminfo_utils/oldutils/oldutils.go
+	*	1725198771	0
+	"	81	3
+	^	137	35
+	.	137	30
+	+	155	0
+	+	118	5
+	+	133	8
+	+	136	4
+	+	12	0
+	+	15	47
+	+	16	56
+	+	20	42
+	+	20	5
+	+	20	0
+	+	16	56
+	+	17	47
+	+	20	0
+	+	17	60
+	+	20	0
+	+	17	73
+	+	18	18
+	+	19	4
+	+	20	0
+	+	17	61
+	+	20	0
+	+	16	0
+	+	14	0
+	+	15	37
+	+	12	47
+	+	133	0
+	+	136	0
+	+	137	30
 
 > ~/.config/.gitignore
 	*	1725197877	0
@@ -18107,40 +18239,6 @@ $\/bin
 > ~/hello-go/oldfiles2.go.txt
 	*	1724362552	0
 	"	134	0
-
-> ~/golang/viminfo_utils/oldutils/oldutils.go
-	*	1724362400	0
-	"	115	4
-	^	137	35
-	.	137	30
-	+	155	0
-	+	118	5
-	+	133	8
-	+	136	4
-	+	12	0
-	+	15	47
-	+	16	56
-	+	20	42
-	+	20	5
-	+	20	0
-	+	16	56
-	+	17	47
-	+	20	0
-	+	17	60
-	+	20	0
-	+	17	73
-	+	18	18
-	+	19	4
-	+	20	0
-	+	17	61
-	+	20	0
-	+	16	0
-	+	14	0
-	+	15	37
-	+	12	47
-	+	133	0
-	+	136	0
-	+	137	30
 
 > ~/hello-go/olddirs.go.txt
 	*	1724362389	0
