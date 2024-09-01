@@ -3,7 +3,7 @@
     "pyright.disableDiagnostics": false,
     "python.analysis.autoImportCompletions": true,
 
-    "python.analysis.diagnosticMode": "workspace",
+    "python.analysis.diagnosticMode": "openFilesOnly", // if we set it to workspace, pyright is constantly analyzing files. more on https://old.reddit.com/r/neovim/comments/135fqp9/why_is_pyright_constantly_analyzing_files_it/
 
     "diagnostic.virtualText": true,
     "diagnostic.virtualTextCurrentLineOnly": false, // we want inline errors on all lines, not just the current line

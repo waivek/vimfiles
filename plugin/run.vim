@@ -1,3 +1,9 @@
+function! s:Samples()
+    let l:samples = [
+                \ '// run.vim: 1 2 3',
+                \ '// run.vim: 4 5 6'
+                \]
+endfunction
 
 function! s:RunTerminalCommand(command)
     execute a:command
@@ -39,29 +45,28 @@ function! s:RunPython()
         " let command = 'vert terminal python ' . expand("%:p")
         let parent_folder_name = expand("%:p:h:t")
 
-        if parent_folder_name == 'waivek'
-            let filename_without_extension = expand("%:t:r")
-            let command = 'vert terminal python -m waivek.' . filename_without_extension
-
-        else
-            let last_line = getline("$")
-            if last_line =~ '^# run.vim:'
-                let args = substitute(last_line, '^# run.vim:', '', '')
-                let args = trim(args)
-                let command = 'vert terminal python ' . expand("%:p") . ' ' . args
-            else
-                let command = 'vert terminal python %'
-            endif
-        endif
-
-        " let last_line = getline("$")
-        " if last_line =~ '^# run.vim:'
-        "     let args = substitute(last_line, '^# run.vim:', '', '')
-        "     let args = trim(args)
-        "     let command = 'vert terminal python ' . expand("%:p") . ' ' . args
+        " if parent_folder_name == 'waivek'
+        "     let filename_without_extension = expand("%:t:r")
+        "     let command = 'vert terminal python -m waivek.' . filename_without_extension
         " else
-        "     let command = 'vert terminal python %'
+        "     let last_line = getline("$")
+        "     if last_line =~ '^# run.vim:'
+        "         let args = substitute(last_line, '^# run.vim:', '', '')
+        "         let args = trim(args)
+        "         let command = 'vert terminal python ' . expand("%:p") . ' ' . args
+        "     else
+        "         let command = 'vert terminal python %'
+        "     endif
         " endif
+
+        let last_line = getline("$")
+        if last_line =~ '^# run.vim:'
+            let args = substitute(last_line, '^# run.vim:', '', '')
+            let args = trim(args)
+            let command = 'vert terminal python ' . expand("%:p") . ' ' . args
+        else
+            let command = 'vert terminal python %'
+        endif
 
         call s:RunTerminalCommand(command)
         set nonumber

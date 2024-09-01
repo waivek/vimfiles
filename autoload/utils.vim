@@ -76,3 +76,11 @@ function! utils#print_tuple_table(tuples)
         echo line
     endfor
 endfunction
+
+function! utils#FindRoot()
+    let l:root = finddir('.git/..', expand('%:p:h') . ';')
+    if l:root == ''
+        return ''
+    endif
+    return fnamemodify(l:root, ':p')
+endfunction

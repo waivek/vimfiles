@@ -10,6 +10,13 @@ nmap                     <leader>i  <Plug>Inline
 nmap                     <leader>q  :MergeEmptyLines<CR>
 " (above)merge multiple adjacent empty lines into one
 
+nmap                     <space>o   <Plug>(OpenTodoIfExists)
+nmap                     h          :Buffers<CR>
+
+
 " copilot mappings
 imap                     <C-L>     <Plug>(copilot-accept-word)
+
+" conditional command line expansions
+cabbrev <expr> Rename len(getcmdline()) == 6 && getcmdtype() == ":" ? "Rename ".expand("%:t")."\<C-f>" : "Rename"
 

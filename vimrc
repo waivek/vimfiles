@@ -255,6 +255,8 @@ let &grepformat = "%f:%l:%c:%m"
 set ignorecase smartcase  
 set hlsearch incsearch
 set nowrapscan
+
+set clipboard-=autoselect
 " ALlows you to do <TAB> while typing letters in '/'
 cnoremap <expr>  <tab>    getcmdtype() =~ '[/?]' ? (getcmdtype() == '/' ? '<c-g>' : '<c-t>') : feedkeys('<tab>', 'int')[1]
 cnoremap <expr>  <s-tab>  getcmdtype() =~ '[/?]' ? (getcmdtype() == '/' ? '<c-t>' : '<c-g>') : feedkeys('<s-tab>', 'int')[1]
@@ -1174,9 +1176,9 @@ cabbrev <expr> P    len(getcmdline()) == 1 && getcmdtype() == ":" ? '!start ever
 cabbrev <expr> D    len(getcmdline()) == 1 && getcmdtype() == ":" ? '!start .' : 'D'
 cabbrev <expr> coc  getcmdline() == "h coc" && getcmdtype() == ":" ? 'coc-nvim' : 'coc'
 
-nnoremap <silent> <space>o :call <SID>OpenTodoFile()<CR>
-nnoremap <silent> <space>i :call <SID>OpenMainFile()<CR>
-nnoremap <silent> <space>p :call <SID>OpenProbabilitiesFile()<CR>
+" nnoremap <silent> <space>o :call <SID>OpenTodoFile()<CR>
+" nnoremap <silent> <space>i :call <SID>OpenMainFile()<CR>
+" nnoremap <silent> <space>p :call <SID>OpenProbabilitiesFile()<CR>
 
 nnoremap <silent> <space>/ :s#\\#/#g<CR>
 nnoremap <silent> <space>\ :s#/#\\#g<CR>

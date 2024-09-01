@@ -1,3 +1,9 @@
+  240824 - run.vim         - Allow session-specific run commands which would override default if present. Useful for modifying one file launching `run` from a different file. Ideal is running and testing *.go files.
+  240824 - run.vim         - If we have a two split horizontal layout, new split should be a full vertical on right hand side
+  240824 - todo.vim        - Make `ctrl--` insert the `-` character aligned with the next line (downwards) via `inoremap <local>` (or don’t and just continue using <CTRL-E>)
+  240824 - run.vim         - Allow arbitrary commands instead of simple argument passing
+  240824 - run.vim         - Allow horizontal splits for `Run` command
+  240824 - grep.vim        - Make `OldfilesGrep` with an optional extension argument
   240813 - better.vim      - Fix `k and `l better changelist overflows
   240810 - [feature]       - tmux/vimterminal integration via a two hotkeys for switching and cycling
 ✓ 240810 - insert_word.vim - Doesn’t work when line below has multi-byte character.
