@@ -1,6 +1,12 @@
+  240824 - personal.vim    - Like you have for `command` and `mapping`, create for: `abbrev`, `function`, `hi`, `let`, `set`
+  240824 - personal.vim    - Link `PrintPersonal(...)` to an fzf source. Upon selection, we should go to the file:line of the mapping / command.
+  240824 - personal.vim    - Extract PrintPersonalMappings and PrintPersonalCommands into `personal.vim`
+✓ 240824 - better.vim      - `jprev` shouldn’t repeat buffer in the pattern of 1-2-1-..., it should go 1-2-3-4-... by creating a unique list
+✓ 240824 - better.vim      - Extract `jprev` to a separate file
+✓ 240824 - better.vim      - Make `jprev` abbrev only work in 'command' mode
   240824 - run.vim         - Allow session-specific run commands which would override default if present. Useful for modifying one file launching `run` from a different file. Ideal is running and testing *.go files.
   240824 - run.vim         - If we have a two split horizontal layout, new split should be a full vertical on right hand side
-  240824 - todo.vim        - Make `ctrl--` insert the `-` character aligned with the next line (downwards) via `inoremap <local>` (or don’t and just continue using <CTRL-E>)
+✓ 240824 - todo.vim        - Make `ctrl--` insert the `-` character aligned with the next line (downwards) via `inoremap <local>` (or don’t and just continue using <CTRL-E>)
   240824 - run.vim         - Allow arbitrary commands instead of simple argument passing
   240824 - run.vim         - Allow horizontal splits for `Run` command
   240824 - grep.vim        - Make `OldfilesGrep` with an optional extension argument
@@ -15,8 +21,8 @@
 ✓ 240810 - insert_word.vim - Wordwise completion for CTRL-E and CTRL-Y with leading whitespace completion
   240810 - [feature]       - Create harpoon type shortcut for switching between main 3-4 files via `h`
   240810 - better.vim      - Create mapping for `JPrevious`
-  240810 - better.vim      - `JPrevious` should possible ignore empty buffers and have a better shortcut
-  240806 - todo.vim        - Prevent `Syntax function` overrides from breaking global syntax fn. E.g., switching b/w a `*.py` file and a `todo.txt`
+✓ 240810 - better.vim      - `JPrevious` should possible ignore empty buffers
+✓ 240806 - todo.vim        - Prevent `Syntax function` overrides from breaking global syntax fn. E.g., switching b/w a `*.py` file and a `todo.txt`
 ✓ 240806 - ide.vim         - Use python rope package to extract visual selection to a function
   240806 - todo.vim        - Make a command `Todo` where autocomplete it dir’s like `.vim`, `hateoas` and you can select the todo file
   240805 - inline.vim      - Make inlining work on the case where we do `<leader>i` on the reference/usage of the variable instead of the definition. Unlike the defintion case, the cursor position would matter over here.

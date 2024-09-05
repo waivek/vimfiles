@@ -84,3 +84,23 @@ function! utils#FindRoot()
     endif
     return fnamemodify(l:root, ':p')
 endfunction
+
+function! utils#print_list(list)
+    echo printf("List length: %d\n", len(a:list))
+    for item in a:list
+        if type(item) == v:t_string
+            echo printf("  %s", item)
+        else
+            echo printf("  %s", string(item))
+        endif
+    endfor
+endfunction
+
+function! utils#LogError(message, line, col, function_name, filename)
+    let l:message = a:message
+    let l:line = a:line
+    let l:col = a:col
+    let l:function_name = a:function_name
+    let l:filename = a:filename
+    echo printf("[%s:%d:%d] (%s) %s", l:filename, l:line, l:col, l:function_name, l:message)
+endfunction

@@ -17,3 +17,4 @@ function! s:OpenTodoIfExists()
 endfunction
 
 nmap <Plug>(OpenTodoIfExists) :call <SID>OpenTodoIfExists()<CR>
+command! Todo call <SID>OpenTodoIfExists()

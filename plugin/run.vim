@@ -5,6 +5,7 @@ function! s:Samples()
                 \]
 endfunction
 
+
 function! s:RunTerminalCommand(command)
     execute a:command
     " while &buftype != 'terminal'

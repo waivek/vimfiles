@@ -93,7 +93,10 @@ endfunction
 
 
 function! s:HighlightExistingFiles()
-    syntax clear ExistingFile
+    if hlexists('ExistingFile')
+        " clear the syntax group
+        syntax clear ExistingFile
+    endif
     " let l:file_pattern = '\v\S+\.\w+'
     let l:file_pattern = '\v\f+\.\w+'
     for l:line in getline(1, '$')

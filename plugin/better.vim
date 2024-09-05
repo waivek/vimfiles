@@ -157,16 +157,21 @@ function! s:LastJump()
 
 endfunction
 
-cabbrev   jp      Jprevious
-cabbrev   jpr     Jprevious
-cabbrev   jpre    Jprevious
-cabbrev   jprev   Jprevious
-command! Jprevious call s:BetterPreviousJumplist()
+cabbrev <expr> jp len(getcmdline()) == 2 && getcmdtype() == ":" ? "Jprevious" : "jp"
+cabbrev <expr> jpr len(getcmdline()) == 3 && getcmdtype() == ":" ? "Jprevious" : "jpr"
+cabbrev <expr> jpre len(getcmdline()) == 4 && getcmdtype() == ":" ? "Jprevious" : "jpre"
+cabbrev <expr> jprev len(getcmdline()) == 5 && getcmdtype() == ":" ? "Jprevious" : "jprev"
+" command! Jprevious call s:BetterPreviousJumplist()
 
-cabbrev   jl      Jlast
-cabbrev   jla     Jlast
-cabbrev   jlas    Jlast
-cabbrev   jlast   Jlast
+" cabbrev   jl      Jlast
+" cabbrev   jla     Jlast
+" cabbrev   jlas    Jlast
+" cabbrev   jlast   Jlast
+cabbrev <expr> jl len(getcmdline()) == 2 && getcmdtype() == ":" ? "Jlast" : "jl"
+cabbrev <expr> jla len(getcmdline()) == 3 && getcmdtype() == ":" ? "Jlast" : "jla"
+cabbrev <expr> jlas len(getcmdline()) == 4 && getcmdtype() == ":" ? "Jlast" : "jlas"
+cabbrev <expr> jlast len(getcmdline()) == 5 && getcmdtype() == ":" ? "Jlast" : "jlast"
+
 command! Jlast call s:LastJump()
 " }}}
 
