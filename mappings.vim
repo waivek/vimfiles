@@ -14,11 +14,11 @@ nmap                     <leader>q  :MergeEmptyLines<CR>
 nmap                     h          :Buffers<CR>
 nmap                     <space>o   <Plug>Oldfiles
 nmap                     <space>e   <Plug>PwdOldfilesk
-nmap            <silent> <space>;   <Plug>Run2
+nmap     <silent>        <space>;   <Plug>Run3
 
 " copilot mappings
 imap                     <C-L>     <Plug>(copilot-accept-word)
 
-
 " conditional command line expansions
 cabbrev <expr> Rename len(getcmdline()) == 6 && getcmdtype() == ":" ? "Rename ".expand("%:t")."\<C-f>" : "Rename"
+

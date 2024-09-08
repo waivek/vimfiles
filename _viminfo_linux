@@ -11,29 +11,257 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/type
+~MSle0~/marker
 
 # Last Substitute Search Pattern:
 ~MSle0&Function\|Operator
 
 # Last Substitute String:
-$
+$''.join(ansi_code for ansi_code in right_tokens[0].active_ansi_codes)
 
 # Command Line History (newest to oldest):
 :qa
-|2,0,1725548945,,"qa"
+|2,0,1725759930,,"qa"
 :bd
-|2,0,1725548944,,"bd"
+|2,0,1725759928,,"bd"
+:helpgrep ++rows
+|2,0,1725759196,,"helpgrep ++rows"
+:h :ter
+|2,0,1725759194,,"h :ter"
+:h ++rows
+|2,0,1725759191,,"h ++rows"
+:q!
+|2,0,1725759060,,"q!"
+:Rg
+|2,0,1725758759,,"Rg"
+:term
+|2,0,1725757230,,"term"
+:e test_truncate.py
+|2,0,1725754400,,"e test_truncate.py"
+:q
+|2,0,1725753841,,"q"
+:diffput
+|2,0,1725751775,,"diffput"
+:diffthis
+|2,0,1725751758,,"diffthis"
+:0read truncate.py
+|2,0,1725751736,,"0read truncate.py"
+:0read truncate
+|2,0,1725751733,,"0read truncate"
+:e truncatediff.py
+|2,0,1725751727,,"e truncatediff.py"
+:Enumerate
+|2,0,1725749928,,"Enumerate"
+:MRU truncate
+|2,0,1725749487,,"MRU truncate"
+:e 
+|2,0,1725749479,,"e "
+:MRU rich
+|2,0,1725749174,,"MRU rich"
+:e waivek/ri
+|2,0,1725749173,,"e waivek/ri"
+:e
+|2,0,1725691908,,"e"
+:let g
+|2,0,1725691849,,"let g"
+:verbose function Foldexpr_markdown
+|2,0,1725691828,,"verbose function Foldexpr_markdown"
+:function Foldexpr_markdown
+|2,0,1725691816,,"function Foldexpr_markdown"
+:set foldexpr?
+|2,0,1725691804,,"set foldexpr?"
+:h 'foldexpr'
+|2,0,1725691798,,"h 'foldexpr'"
+:echo fo
+|2,0,1725691796,,"echo fo"
+:set foldmethod?
+|2,0,1725691790,,"set foldmethod?"
+:set cms=#%s
+|2,0,1725691782,,"set cms=#%s"
+:set cms?
+|2,0,1725691777,,"set cms?"
+:set ft=
+|2,0,1725691767,,"set ft="
+:set ft=markdown
+|2,0,1725691699,,"set ft=markdown"
+:MRU truncate.py
+|2,0,1725691574,,"MRU truncate.py"
+:e trun
+|2,0,1725691569,,"e trun"
+:let g:custom_runner = "vert term python render_prompt.py"
+|2,0,1725691435,,"let g:custom_runner = \"vert term python render_prompt.py\""
+:Rename footer-edge-case.txt
+|2,0,1725691410,,"Rename footer-edge-case.txt"
+:e preset-swe.txt
+|2,0,1725691189,,"e preset-swe.txt"
+:Template
+|2,0,1725690860,,"Template"
+:Rename render_prompt.py
+|2,0,1725690855,,"Rename render_prompt.py"
+:e ~/prompts/
+|2,0,1725690559,,"e ~/prompts/"
+:e waivek/test_truncate.py
+|2,0,1725688568,,"e waivek/test_truncate.py"
+:e waiv
+|2,0,1725688559,,"e waiv"
+:MRU trunc
+|2,0,1725688216,,"MRU trunc"
+:MRU 10:.vim/todo.txt
+|2,0,1725638496,,"MRU 10:.vim/todo.txt"
+:MRU 10:todo.txt
+|2,0,1725638483,,"MRU 10:todo.txt"
+:set 
+|2,0,1725638472,,"set "
+:Date
+|2,0,1725636690,,"Date"
+:so %
+|2,0,1725633393,,"so %"
+:MRU ru
+|2,0,1725633309,,"MRU ru"
+:MRU run.vim
+|2,0,1725633296,,"MRU run.vim"
+:set nonumber
+|2,0,1725633284,,"set nonumber"
+:MRU run
+|2,0,1725633155,,"MRU run"
+:later 2d
+|2,0,1725631175,,"later 2d"
+:earlier 1d
+|2,0,1725631124,,"earlier 1d"
+:set number
+|2,0,1725630354,,"set number"
+:echo g:custom_runner
+|2,0,1725630304,,"echo g:custom_runner"
+:echo g:cusom_runner
+|2,0,1725630297,,"echo g:cusom_runner"
+:jumps
+|2,0,1725592628,,"jumps"
+:jups
+|2,0,1725592601,,"jups"
+:keepjumps JPrevious
+|2,0,1725592582,,"keepjumps JPrevious"
+:keepjumps jprev
+|2,0,1725592574,,"keepjumps jprev"
+:jpre
+|2,0,1725592570,,"jpre"
+:h :keepjumps
+|2,0,1725592551,,"h :keepjumps"
+:Jprevious
+|2,0,1725592497,,"Jprevious"
+:jprev
+|2,0,1725592491,,"jprev"
+:jpr
+|2,0,1725592472,,"jpr"
+:h :jumps
+|2,0,1725591998,,"h :jumps"
+:pwd
+|2,0,1725591476,,"pwd"
+:Todo
+|2,0,1725591113,,"Todo"
+:next
+|2,0,1725591099,,"next"
+:e pwd-oldfiles.bash
+|2,0,1725591034,,"e pwd-oldfiles.bash"
+:messages
+|2,0,1725565962,,"messages"
+:source %
+|2,0,1725565905,,"source %"
+:!start 
+|2,0,1725565891,,"!start "
+:MRU jp
+|2,0,1725565878,,"MRU jp"
+:JPrevious
+|2,0,1725565774,,"JPrevious"
+:MRU better
+|2,0,1725565728,,"MRU better"
+:cabbrev jprev
+|2,0,1725565725,,"cabbrev jprev"
+:let g:custom_runner = "vert term python dateutils.py"
+|2,0,1725565665,,"let g:custom_runner = \"vert term python dateutils.py\""
+:e dateutils.py
+|2,0,1725565661,,"e dateutils.py"
+:let g:custom_runner = "vert term python dateutils.vim"
+|2,0,1725565652,,"let g:custom_runner = \"vert term python dateutils.vim\""
+:let g:custom_runner = "python dateutils.vim"
+|2,0,1725565638,,"let g:custom_runner = \"python dateutils.vim\""
+:le 
+|2,0,1725565627,,"le "
+:e errors_as_values.py
+|2,0,1725565623,,"e errors_as_values.py"
+:let g:custom_runner = "source hello-world.vim"
+|2,0,1725565567,,"let g:custom_runner = \"source hello-world.vim\""
+:echo g:cusom
+|2,0,1725565552,,"echo g:cusom"
+:call execute("term")
+|2,0,1725564293,,"call execute(\"term\")"
+:call execute(":term")
+|2,0,1725564288,,"call execute(\":term\")"
+:execute term 
+|2,0,1725564281,,"execute term "
+:execute term
+|2,0,1725564276,,"execute term"
+:ExtractArguments
+|2,0,1725564251,,"ExtractArguments"
+:source hello-world.vim
+|2,0,1725564069,,"source hello-world.vim"
+:e hello-world.vim
+|2,0,1725564055,,"e hello-world.vim"
+:let g:cu
+|2,0,1725563904,,"let g:cu"
+:term ++rows=80
+|2,0,1725563677,,"term ++rows=80"
+:h :term
+|2,0,1725563637,,"h :term"
+:resize 80
+|2,0,1725563604,,"resize 80"
+:80term 
+|2,0,1725563579,,"80term "
+:MRU 4:dateutils.py
+|2,0,1725563263,,"MRU 4:dateutils.py"
+:call execute(
+|2,0,1725563228,,"call execute("
+:MRU go$
+|2,0,1725563163,,"MRU go$"
+:HotReload
+|2,0,1725563131,,"HotReload"
+:h term
+|2,0,1725562976,,"h term"
+:h terminal
+|2,0,1725562933,,"h terminal"
+:h termo
+|2,0,1725562930,,"h termo"
+:h termopen
+|2,0,1725562926,,"h termopen"
+:so 
+|2,0,1725562519,,"so "
+:h :_%
+|2,0,1725562406,,"h :_%"
+:h %
+|2,0,1725562395,,"h %"
+:h [:fname:]
+|2,0,1725562393,,"h [:fname:]"
+:LogPrettyPrintLine
+|2,0,1725551951,,"LogPrettyPrintLine"
+:Pre
+|2,0,1725551949,,"Pre"
+:bd!
+|2,0,1725551896,,"bd!"
+:q1
+|2,0,1725551889,,"q1"
+:vert term python % gh-timeago-updates.log
+|2,0,1725551775,,"vert term python % gh-timeago-updates.log"
+:126
+|2,0,1725551767,,"126"
+:12
+|2,0,1725551765,,"12"
+:vert term python % gh-timeago-updates.log
+|2,0,1725551721,,"vert term python % gh-timeago-updates.log"
+:vert term python % gh-ti
+|2,0,1725551710,,"vert term python % gh-ti"
+:vert term python %
+|2,0,1725551700,,"vert term python %"
 :b
 |2,0,1725548941,,"b"
-:Jprevious
-|2,0,1725548935,,"Jprevious"
-:vert term python %
-|2,0,1725546796,,"vert term python %"
-:q!
-|2,0,1725546552,,"q!"
-:term
-|2,0,1725545657,,"term"
 :vert
 |2,0,1725545656,,"vert"
 :CocRestart
@@ -64,10 +292,6 @@ $
 |2,0,1725542690,,"u"
 :ve
 |2,0,1725542615,,"ve"
-:Date
-|2,0,1725542569,,"Date"
-:Template
-|2,0,1725542135,,"Template"
 :e simple-pydantic-error.py
 |2,0,1725542127,,"e simple-pydantic-error.py"
 :e requirements.txt
@@ -80,38 +304,26 @@ $
 |2,0,1725539843,,"CocR"
 :e model_
 |2,0,1725539320,,"e model_"
-:e 
-|2,0,1725539276,,"e "
 :e .envrc
 |2,0,1725538389,,"e .envrc"
 :e secrets.env
 |2,0,1725538362,,"e secrets.env"
 :term python %
 |2,0,1725538227,,"term python %"
-:so %
-|2,0,1725538194,,"so %"
 :e data/youtube-urls.txt
 |2,0,1725538044,,"e data/youtube-urls.txt"
 :nmap g; <Plug>Run
 |2,0,1725532488,,"nmap g; <Plug>Run"
-:pwd
-|2,0,1725532472,,"pwd"
 :MRU 39:zdirs_one_wk.go
 |2,0,1725532442,,"MRU 39:zdirs_one_wk.go"
-:Rg
-|2,0,1725532336,,"Rg"
 :cd ~/.vim
 |2,0,1725532333,,"cd ~/.vim"
 :TmpMain
 |2,0,1725532258,,"TmpMain"
 :kkkk
 |2,0,1725532207,,"kkkk"
-:HotReload
-|2,0,1725532161,,"HotReload"
 :T
 |2,0,1725532138,,"T"
-:q
-|2,0,1725531336,,"q"
 :MRU h
 |2,0,1725531326,,"MRU h"
 :e plugin/hello-world.vim
@@ -186,8 +398,6 @@ $
 |2,0,1725507200,,"h hi"
 :hi link Function Normal
 |2,0,1725507118,,"hi link Function Normal"
-:Todo
-|2,0,1725507022,,"Todo"
 :Capture verbose hi Function
 |2,0,1725506962,,"Capture verbose hi Function"
 :verbose hi Function
@@ -200,10 +410,6 @@ $
 |2,0,1725506809,,"map <space>t"
 :E
 |2,0,1725506701,,"E"
-:e
-|2,0,1725506698,,"e"
-:jumps
-|2,0,1725482433,,"jumps"
 :MRU 3:better.vim
 |2,0,1725482356,,"MRU 3:better.vim"
 :Jprevious 
@@ -236,8 +442,6 @@ $
 |2,0,1725468342,,"echo getjumplist()"
 :h :jump
 |2,0,1725468007,,"h :jump"
-:ExtractArguments
-|2,0,1725467425,,"ExtractArguments"
 :b better.vim
 |2,0,1725458987,,"b better.vim"
 :GMF
@@ -254,8 +458,6 @@ $
 |2,0,1725458630,,"syntax off"
 :h getjumplist(
 |2,0,1725458544,,"h getjumplist("
-:MRU better
-|2,0,1725458521,,"MRU better"
 :Rename jprev.vim
 |2,0,1725458178,,"Rename jprev.vim"
 :e jprev.txt
@@ -368,8 +570,6 @@ $
 |2,0,1725365813,,"MRU oldfiles.go"
 :qa!
 |2,0,1725365616,,"qa!"
-:next
-|2,0,1725365572,,"next"
 :e zdirs_one_wk.go
 |2,0,1725365405,,"e zdirs_one_wk.go"
 :MRU fzf.man
@@ -378,14 +578,8 @@ $
 |2,0,1725345667,,"MRU utils.vim"
 :MRU 15:python-types/chat_utils.py
 |2,0,1725345665,,"MRU 15:python-types/chat_utils.py"
-:so 
-|2,0,1725344793,,"so "
 :ls -a
 |2,0,1725344645,,"ls -a"
-:MRU run
-|2,0,1725344629,,"MRU run"
-:bd!
-|2,0,1725283446,,"bd!"
 :MRU bash
 |2,0,1725281976,,"MRU bash"
 :cfirst
@@ -544,8 +738,6 @@ $
 |2,0,1724974818,,"e waivek/nest/nest.py"
 :MRU __in
 |2,0,1724974766,,"MRU __in"
-:MRU run.vim
-|2,0,1724974736,,"MRU run.vim"
 :b waivek/__init__.py
 |2,0,1724974696,,"b waivek/__init__.py"
 :b test_package.py
@@ -916,16 +1108,10 @@ $
 |2,0,1724196526,,"map "
 :alias jk
 |2,0,1724196524,,"alias jk"
-:messages
-|2,0,1724196217,,"messages"
 :echo v:servername 
 |2,0,1724196184,,"echo v:servername "
 :echo v:servername == ""
 |2,0,1724196182,,"echo v:servername == \"\""
-:h :term
-|2,0,1724195964,,"h :term"
-:h term
-|2,0,1724195958,,"h term"
 :set shell?
 |2,0,1724195957,,"set shell?"
 :echom "HI"
@@ -950,8 +1136,6 @@ $
 |2,0,1724193910,,"~/.pd"
 :e ~/.python_history
 |2,0,1724193907,,"e ~/.python_history"
-:e dateutils.py
-|2,0,1724186448,,"e dateutils.py"
 :MRU 6:errors_as_values.py
 |2,0,1724186441,,"MRU 6:errors_as_values.py"
 :MRU 4:log.py
@@ -988,12 +1172,6 @@ $
 |2,0,1724112259,,"e ../bash/oldfiles.bash"
 :e golang-output.txt
 |2,0,1724112206,,"e golang-output.txt"
-:diffthis
-|2,0,1724112074,,"diffthis"
-:set 
-|2,0,1724111875,,"set "
-:set nonumber
-|2,0,1724111869,,"set nonumber"
 :e pwd-oldfiles.py
 |2,0,1724111842,,"e pwd-oldfiles.py"
 :MRU pwd-oldfiles.
@@ -1014,8 +1192,6 @@ $
 |2,0,1724111690,,"e ~/pyscripts/oldfiles.py"
 :e hello-go/oldfiles.go
 |2,0,1724111651,,"e hello-go/oldfiles.go"
-:q1
-|2,0,1724111441,,"q1"
 :e port.py
 |2,0,1724109074,,"e port.py"
 :vert term
@@ -1134,8 +1310,6 @@ $
 |2,0,1723938424,,"MRU errors."
 :el
 |2,0,1723938307,,"el"
-:e errors_as_values.py
-|2,0,1723938200,,"e errors_as_values.py"
 :MRU 225:python-error-traceback-prettify-libs.txt
 |2,0,1723937132,,"MRU 225:python-error-traceback-prettify-libs.txt"
 :CocOutline
@@ -1158,8 +1332,6 @@ $
 |2,0,1723741958,,"set foldmethod="
 :set foldmethod =
 |2,0,1723741956,,"set foldmethod ="
-:set foldmethod?
-|2,0,1723741950,,"set foldmethod?"
 :Rename functional-programming-concepts.md
 |2,0,1723741924,,"Rename functional-programming-concepts.md"
 :x
@@ -1240,8 +1412,6 @@ $
 |2,0,1723658161,,"verbose set isk"
 :Files data/
 |2,0,1723658136,,"Files data/"
-:e pwd-oldfiles.bash
-|2,0,1723639768,,"e pwd-oldfiles.bash"
 :verbose hi ansiColorRed
 |2,0,1723624779,,"verbose hi ansiColorRed"
 :verbose let v:errmsg
@@ -1506,8 +1676,6 @@ $
 |2,0,1723417816,,"e dotty_debug.txt"
 :MRU debug
 |2,0,1723417814,,"MRU debug"
-:LogPrettyPrintLine
-|2,0,1723329501,,"LogPrettyPrintLine"
 :MRU bas
 |2,0,1723329377,,"MRU bas"
 :e _python-argcomplete
@@ -1624,8 +1792,6 @@ $
 |2,0,1722973040,,"b 2199424572_06h52m18s_120s.tsv"
 :MRU tsv
 |2,0,1722973038,,"MRU tsv"
-:set number
-|2,0,1722971054,,"set number"
 :e claude_sync.py
 |2,0,1722971047,,"e claude_sync.py"
 :e claude-sync.py
@@ -2728,8 +2894,6 @@ $
 |2,0,1721988260,,"e pydantic-sample.py"
 :set ft=jsonc
 |2,0,1721981410,,"set ft=jsonc"
-:Enumerate
-|2,0,1721955295,,"Enumerate"
 :echo indent(".")
 |2,0,1721954598,,"echo indent(\".\")"
 :echo inden()
@@ -2766,8 +2930,6 @@ $
 |2,0,1721944723,,"b json"
 :e chat.
 |2,0,1721944452,,"e chat."
-:set ft=
-|2,0,1721943589,,"set ft="
 :set ft=[
 |2,0,1721943587,,"set ft=["
 :find 2199695545.json
@@ -4648,8 +4810,6 @@ $
 |2,0,1716808582,,"MRU e"
 :comm
 |2,0,1716805135,,"comm"
-:set foldexpr?
-|2,0,1716805103,,"set foldexpr?"
 :ccl
 |2,0,1716804039,,"ccl"
 :e dbutils.py.backup
@@ -4950,8 +5110,6 @@ $
 |2,0,1716102863,,"set cms=#\\ %s"
 :set cms=# %s
 |2,0,1716102858,,"set cms=# %s"
-:set cms?
-|2,0,1716102851,,"set cms?"
 :source
 |2,0,1716102624,,"source"
 :sourcefiles
@@ -5436,8 +5594,6 @@ $
 |2,0,1714024704,,"echo pwd"
 :e hateoas/
 |2,0,1714024698,,"e hateoas/"
-:jpre
-|2,0,1713980833,,"jpre"
 :b download.py
 |2,0,1713970248,,"b download.py"
 :Rename download_portionurl.py
@@ -7998,8 +8154,6 @@ $
 |2,0,1693310229,,"GFiles ."
 :MRU *.py
 |2,0,1693310212,,"MRU *.py"
-:MRU ru
-|2,0,1693302664,,"MRU ru"
 :echo len(v:oldfiles)
 |2,0,1693294049,,"echo len(v:oldfiles)"
 :1308
@@ -8608,8 +8762,6 @@ $
 |2,0,1692439874,,"echo *get*AddTabularPattern("
 :h :terminal
 |2,0,1692439832,,"h :terminal"
-:h terminal
-|2,0,1692439819,,"h terminal"
 :echo &buftype
 |2,0,1692439760,,"echo &buftype"
 :echo getwininfo(win_getid())[0]['terminal']
@@ -10156,6 +10308,74 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/marker
+|2,1,1725759323,47,"marker"
+?/++rows
+|2,1,1725759219,47,"++rows"
+?/\C\<rows\>
+|2,1,1725759204,47,"\\C\\<rows\\>"
+?/error
+|2,1,1725758708,47,"error"
+?/Error:
+|2,1,1725758428,47,"Error:"
+?/sort_ans
+|2,1,1725758385,47,"sort_ans"
+?/contains
+|2,1,1725754443,47,"contains"
+? \<right_first_ansi_code\>
+|2,1,1725754245,,"\\<right_first_ansi_code\\>"
+?/character
+|2,1,1725753601,47,"character"
+?/emoji
+|2,1,1725753577,47,"emoji"
+?/right_tokens
+|2,1,1725752559,47,"right_tokens"
+?/right_toke
+|2,1,1725752369,47,"right_toke"
+?/ansi
+|2,1,1725751395,47,"ansi"
+? in \zs[^:]\+
+|2,1,1725749928,,"in \\zs[^:]\\+"
+?/truncate
+|2,1,1725691601,47,"truncate"
+?/iter
+|2,1,1725688395,47,"iter"
+?/number
+|2,1,1725633298,47,"number"
+?/getline
+|2,1,1725633158,47,"getline"
+?/5
+|2,1,1725632099,47,"5"
+?/tput
+|2,1,1725631611,47,"tput"
+?/160
+|2,1,1725631495,47,"160"
+?/200
+|2,1,1725631489,47,"200"
+?/NUL
+|2,1,1725631214,47,"NUL"
+?/initial
+|2,1,1725630829,47,"initial"
+?/event
+|2,1,1725622983,47,"event"
+?/jprev
+|2,1,1725565731,47,"jprev"
+?/echoerr
+|2,1,1725564047,47,"echoerr"
+?/rows=
+|2,1,1725563660,47,"rows="
+?/rows
+|2,1,1725563657,47,"rows"
+?/height
+|2,1,1725563647,47,"height"
+?/term_open
+|2,1,1725562942,47,"term_open"
+?/termopen
+|2,1,1725562936,47,"termopen"
+?/ru
+|2,1,1725562448,47,"ru"
+?/HELLO
+|2,1,1725551755,47,"HELLO"
 ?/type
 |2,1,1725543739,47,"type"
 ?/dateutils
@@ -10572,8 +10792,6 @@ $
 |2,1,1723676823,47,"data"
 ?/--ansi
 |2,1,1723675813,47,"--ansi"
-?/ansi
-|2,1,1723675800,47,"ansi"
 ? \<string\>
 |2,1,1723674335,,"\\<string\\>"
 ?    \s*
@@ -10982,10 +11200,6 @@ $
 |2,1,1722454654,47,"^[|! ]\\{4\\}[A-Z][a-z0-9A-Z]*\\s*[01*+?]\\s*:\\?custom\\(list\\)\\?,\\(s:\\)\\?\\"
 ? ^[|! ]\{4\}[A-Z][a-z0-9A-Z]*\s*[01*+?]\s*:\?call 
 |2,1,1722454536,,"^[|! ]\\{4\\}[A-Z][a-z0-9A-Z]*\\s*[01*+?]\\s*:\\?call "
-?/rows
-|2,1,1722428352,47,"rows"
-?/number
-|2,1,1722398825,47,"number"
 ?/theme
 |2,1,1722397733,47,"theme"
 ? timer\..*\"get_console\"
@@ -11188,8 +11402,6 @@ $
 |2,1,1721995544,47,"tests"
 ?/run\.vim
 |2,1,1721995420,47,"run\\.vim"
-?/error
-|2,1,1721989213,47,"error"
 ?/field
 |2,1,1721981077,47,"field"
 ?/\(def\|class\)\s\+\w*Video.*Edge
@@ -11198,8 +11410,6 @@ $
 |2,1,1721955560,47,"contentOffsetSeconds"
 ?/user
 |2,1,1721955387,47,"user"
-? in \zs[^:]\+
-|2,1,1721955295,,"in \\zs[^:]\\+"
 ?/Config
 |2,1,1721955120,47,"Config"
 ?/fi
@@ -11510,8 +11720,6 @@ $
 |2,1,1719327046,47,"blue"
 ?/selected
 |2,1,1719326781,47,"selected"
-?/marker
-|2,1,1719326577,47,"marker"
 ?/css
 |2,1,1719326073,47,"css"
 ?/feat
@@ -12462,8 +12670,6 @@ $
 |2,1,1716706262,47,"scrol"
 ?/margin-bottom
 |2,1,1716706080,47,"margin-bottom"
-?/height
-|2,1,1716706026,47,"height"
 ?/\.content
 |2,1,1716705925,47,"\\.content"
 ?/.content
@@ -14688,6 +14894,8 @@ $
 |2,2,1688309303,,"v:oldfiles"
 
 # Input Line History (newest to oldest):
+@string
+|2,3,1725565865,,"string"
 @eval
 |2,3,1724286069,,"eval"
 @standardize
@@ -14708,8 +14916,6 @@ $
 |2,3,1723587217,,"readfile"
 @trim
 |2,3,1723461284,,"trim"
-@string
-|2,3,1723417301,,"string"
 @div class="tall">
 |2,3,1723065981,,"div class=\"tall\">"
 @div>
@@ -14874,40 +15080,39 @@ $
 |2,4,1693311567,,"cont"
 
 # Registers:
-""0	CHAR	0
-	Tue Aug 21 05:30AM +0530 (6 years ago)"))
-|3,1,0,0,1,0,1725548937,"Tue Aug 21 05:30AM +0530 (6 years ago)\"))"
+"0	CHAR	0
+	2
+|3,0,0,0,1,0,1725759923,"2"
 "1	LINE	0
-	
-|3,0,1,1,1,0,1725546437,""
+	        ANSI_LIGHTWHITE_FG_BLUE_BG = "\033[1;37;44m"
+|3,0,1,1,1,0,1725759550,"        ANSI_LIGHTWHITE_FG_BLUE_BG = \"\\033[1;37;44m\""
 "2	LINE	0
-	        # format: isoformat
-	        {  "strftime": "%Y-%m-%dT%H:%M:%SZ", "template": "{strftime} ({timeago})" },
-|3,0,2,1,2,0,1725546436,"        # format: isoformat","        {  \"strftime\": \"%Y-%m-%dT%H:%M:%SZ\", \"template\": \"{strftime} ({timeago})\" },"
+	        ANSI_WHITE_FG_BLUE_BG = "\033[1;37;44m"
+|3,0,2,1,1,0,1725759529,"        ANSI_WHITE_FG_BLUE_BG = \"\\033[1;37;44m\""
 "3	LINE	0
-	        print(dtstdio(dt, "Mon Jan 1 5:30PM +0530"))
-|3,0,3,1,1,0,1725546364,"        print(dtstdio(dt, \"Mon Jan 1 5:30PM +0530\"))"
+	        white_fg_ansi
+|3,0,3,1,1,0,1725759510,"        white_fg_ansi"
 "4	LINE	0
-	
-|3,0,4,1,1,0,1725546349,""
+	        ANSI_BLUE_BG_BLACK_FG_BOLD = "\033[1;30;44m"
+|3,0,4,1,1,0,1725759473,"        ANSI_BLUE_BG_BLACK_FG_BOLD = \"\\033[1;30;44m\""
 "5	LINE	0
-	
-|3,0,5,1,1,0,1725546285,""
+	        # ANSI_BLUE_BG_BLACK_FG_BOLD = "\033[1;30;44m"
+|3,0,5,1,1,0,1725759447,"        # ANSI_BLUE_BG_BLACK_FG_BOLD = \"\\033[1;30;44m\""
 "6	LINE	0
-	fmt_type = Literal["Mon Jan 1 5:30PM +0530", ""]
-|3,0,6,1,1,0,1725546239,"fmt_type = Literal[\"Mon Jan 1 5:30PM +0530\", \"\"]"
+	        print(f"Test case {count_string}")
+|3,0,6,1,1,0,1725759420,"        print(f\"Test case {count_string}\")"
 "7	LINE	0
-	import sys; sys.exit(0)
-|3,0,7,1,1,0,1725545921,"import sys; sys.exit(0)"
+	        print(f"input_string (len:{get_display_length(input_string)}) = `" + input_string + "`")
+|3,0,7,1,1,0,1725759103,"        print(f\"input_string (len:{get_display_length(input_string)}) = `\" + input_string + \"`\")"
 "8	LINE	0
-	ic(list(get_args(fmt_type)))
-|3,0,8,1,1,0,1725545837,"ic(list(get_args(fmt_type)))"
+	        print("truncated       = `" + result + "`")
+|3,0,8,1,1,0,1725758999,"        print(\"truncated       = `\" + result + \"`\")"
 "9	LINE	0
-	breakpint
-|3,0,9,1,1,0,1725545808,"breakpint"
-"a	CHAR	0
-	0
-|3,0,10,0,1,0,1725546501,"0"
+	        GREEN_BG_BLACK_FG_BOLD_ANSI = "\033[1;30;42m"
+|3,0,9,1,1,0,1725758849,"        GREEN_BG_BLACK_FG_BOLD_ANSI = \"\\033[1;30;42m\""
+"a@	CHAR	0
+	0f)i, F€kb"FOO"jkkj.kj.
+|3,2,10,0,1,0,1725758660,"0f)i, F€kb\"FOO\"jkkj.kj."
 "i	CHAR	0
 	ado_up()jk:q!
 |3,0,18,0,1,0,1724200553,"ado_up()jk:q!"
@@ -14927,244 +15132,1525 @@ $
 	set verbosefile=verbose-file.txt
 	set verbose=20 | quit
 |3,0,28,1,2,0,1725457945,"set verbosefile=verbose-file.txt","set verbose=20 | quit"
-"-	CHAR	0
-	Tue Aug 21 05:30AM +0530 (6 years ago)"))
-|3,0,36,0,1,0,1725546620,"Tue Aug 21 05:30AM +0530 (6 years ago)\"))"
+""-	CHAR	0
+	3
+|3,1,36,0,1,0,1725759923,"3"
 
 # File marks:
-'0  27  0  ~/python_staging/dateutils.py
-|4,48,27,0,1725548945,"~/python_staging/dateutils.py"
-'1  15  0  ~/pyscripts/youtube-text-to-dates.py
-|4,49,15,0,1725543019,"~/pyscripts/youtube-text-to-dates.py"
-'2  14  0  ~/pyscripts/youtube-text-to-dates.py
-|4,50,14,0,1725543019,"~/pyscripts/youtube-text-to-dates.py"
-'3  70  15  ~/pyscripts/youtube-text-to-dates.py
-|4,51,70,15,1725540551,"~/pyscripts/youtube-text-to-dates.py"
-'4  48  15  ~/pyscripts/youtube-text-to-dates.py
-|4,52,48,15,1725540551,"~/pyscripts/youtube-text-to-dates.py"
-'5  43  15  ~/pyscripts/youtube-text-to-dates.py
-|4,53,43,15,1725540551,"~/pyscripts/youtube-text-to-dates.py"
-'6  26  15  ~/pyscripts/youtube-text-to-dates.py
-|4,54,26,15,1725540551,"~/pyscripts/youtube-text-to-dates.py"
-'7  14  23  ~/pyscripts/requirements.txt
-|4,55,14,23,1725539492,"~/pyscripts/requirements.txt"
-'8  14  23  ~/pyscripts/requirements.txt
-|4,56,14,23,1725539492,"~/pyscripts/requirements.txt"
-'9  14  23  ~/pyscripts/requirements.txt
-|4,57,14,23,1725539492,"~/pyscripts/requirements.txt"
+'0  87  8  ~/python_common/waivek/test_truncate.py
+|4,48,87,8,1725759687,"~/python_common/waivek/test_truncate.py"
+'1  87  8  ~/python_common/waivek/test_truncate.py
+|4,49,87,8,1725759687,"~/python_common/waivek/test_truncate.py"
+'2  87  8  ~/python_common/waivek/test_truncate.py
+|4,50,87,8,1725759687,"~/python_common/waivek/test_truncate.py"
+'3  87  8  ~/python_common/waivek/test_truncate.py
+|4,51,87,8,1725759687,"~/python_common/waivek/test_truncate.py"
+'4  857  0  ~/python_common/.direnv/python-3.10.12/lib/python3.10/site-packages/rich/text.py
+|4,52,857,0,1725749489,"~/python_common/.direnv/python-3.10.12/lib/python3.10/site-packages/rich/text.py"
+'5  857  0  ~/python_common/.direnv/python-3.10.12/lib/python3.10/site-packages/rich/text.py
+|4,53,857,0,1725749489,"~/python_common/.direnv/python-3.10.12/lib/python3.10/site-packages/rich/text.py"
+'6  857  0  ~/python_common/.direnv/python-3.10.12/lib/python3.10/site-packages/rich/text.py
+|4,54,857,0,1725749489,"~/python_common/.direnv/python-3.10.12/lib/python3.10/site-packages/rich/text.py"
+'7  857  0  ~/python_common/.direnv/python-3.10.12/lib/python3.10/site-packages/rich/text.py
+|4,55,857,0,1725749489,"~/python_common/.direnv/python-3.10.12/lib/python3.10/site-packages/rich/text.py"
+'8  1  0  ~/python_common/waivek/print_utils.py
+|4,56,1,0,1725748703,"~/python_common/waivek/print_utils.py"
+'9  1  0  ~/python_common/waivek/print_utils.py
+|4,57,1,0,1725748703,"~/python_common/waivek/print_utils.py"
 
 # Jumplist (newest first):
--'  27  0  ~/python_staging/dateutils.py
-|4,39,27,0,1725548945,"~/python_staging/dateutils.py"
--'  102  8  ~/python_common/waivek/date.py
-|4,39,102,8,1725548944,"~/python_common/waivek/date.py"
--'  28  33  ~/python_staging/dateutils.py
-|4,39,28,33,1725546796,"~/python_staging/dateutils.py"
--'  31  33  ~/python_staging/dateutils.py
-|4,39,31,33,1725546653,"~/python_staging/dateutils.py"
--'  69  14  ~/python_staging/dateutils.py
-|4,39,69,14,1725546630,"~/python_staging/dateutils.py"
--'  68  77  ~/python_staging/dateutils.py
-|4,39,68,77,1725546625,"~/python_staging/dateutils.py"
--'  67  67  ~/python_staging/dateutils.py
-|4,39,67,67,1725546602,"~/python_staging/dateutils.py"
--'  1  0  ~/python_staging/dateutils.py
-|4,39,1,0,1725546581,"~/python_staging/dateutils.py"
--'  66  21  ~/python_staging/dateutils.py
-|4,39,66,21,1725546580,"~/python_staging/dateutils.py"
--'  19  29  ~/python_staging/dateutils.py
-|4,39,19,29,1725546552,"~/python_staging/dateutils.py"
--'  17  0  ~/python_staging/dateutils.py
-|4,39,17,0,1725546522,"~/python_staging/dateutils.py"
--'  74  0  ~/python_staging/dateutils.py
-|4,39,74,0,1725546489,"~/python_staging/dateutils.py"
--'  25  0  ~/python_staging/dateutils.py
-|4,39,25,0,1725546481,"~/python_staging/dateutils.py"
--'  44  23  ~/python_staging/dateutils.py
-|4,39,44,23,1725546478,"~/python_staging/dateutils.py"
--'  30  0  ~/python_staging/dateutils.py
-|4,39,30,0,1725546395,"~/python_staging/dateutils.py"
--'  21  0  ~/python_staging/dateutils.py
-|4,39,21,0,1725546356,"~/python_staging/dateutils.py"
--'  22  45  ~/python_staging/dateutils.py
-|4,39,22,45,1725545902,"~/python_staging/dateutils.py"
--'  33  4  ~/python_staging/dateutils.py
-|4,39,33,4,1725545876,"~/python_staging/dateutils.py"
--'  34  35  ~/python_staging/dateutils.py
-|4,39,34,35,1725545871,"~/python_staging/dateutils.py"
--'  23  27  ~/python_staging/dateutils.py
-|4,39,23,27,1725545850,"~/python_staging/dateutils.py"
--'  15  36  ~/python_staging/dateutils.py
-|4,39,15,36,1725545569,"~/python_staging/dateutils.py"
--'  16  0  ~/python_staging/dateutils.py
-|4,39,16,0,1725545487,"~/python_staging/dateutils.py"
--'  70  0  ~/python_staging/dateutils.py
-|4,39,70,0,1725545487,"~/python_staging/dateutils.py"
--'  26  4  ~/python_staging/dateutils.py
-|4,39,26,4,1725545487,"~/python_staging/dateutils.py"
--'  14  0  ~/pyscripts/youtube-text-to-dates.py
-|4,39,14,0,1725543019,"~/pyscripts/youtube-text-to-dates.py"
--'  37  4  ~/pyscripts/youtube-text-to-dates.py
-|4,39,37,4,1725543003,"~/pyscripts/youtube-text-to-dates.py"
--'  43  0  ~/pyscripts/youtube-text-to-dates.py
-|4,39,43,0,1725542979,"~/pyscripts/youtube-text-to-dates.py"
--'  40  40  ~/pyscripts/youtube-text-to-dates.py
-|4,39,40,40,1725542964,"~/pyscripts/youtube-text-to-dates.py"
--'  41  40  ~/pyscripts/youtube-text-to-dates.py
-|4,39,41,40,1725542964,"~/pyscripts/youtube-text-to-dates.py"
--'  42  0  ~/pyscripts/youtube-text-to-dates.py
-|4,39,42,0,1725542917,"~/pyscripts/youtube-text-to-dates.py"
--'  20  25  ~/pyscripts/youtube-text-to-dates.py
-|4,39,20,25,1725542915,"~/pyscripts/youtube-text-to-dates.py"
--'  19  96  ~/pyscripts/youtube-text-to-dates.py
-|4,39,19,96,1725542914,"~/pyscripts/youtube-text-to-dates.py"
--'  36  13  ~/pyscripts/youtube-text-to-dates.py
-|4,39,36,13,1725542796,"~/pyscripts/youtube-text-to-dates.py"
--'  29  67  ~/pyscripts/youtube-text-to-dates.py
-|4,39,29,67,1725542765,"~/pyscripts/youtube-text-to-dates.py"
--'  27  12  ~/pyscripts/youtube-text-to-dates.py
-|4,39,27,12,1725542743,"~/pyscripts/youtube-text-to-dates.py"
--'  28  14  ~/pyscripts/youtube-text-to-dates.py
-|4,39,28,14,1725542739,"~/pyscripts/youtube-text-to-dates.py"
--'  23  4  ~/pyscripts/youtube-text-to-dates.py
-|4,39,23,4,1725542691,"~/pyscripts/youtube-text-to-dates.py"
--'  5  16  ~/pyscripts/youtube-text-to-dates.py
-|4,39,5,16,1725542626,"~/pyscripts/youtube-text-to-dates.py"
--'  1  0  ~/python_common/waivek/todo.txt
-|4,39,1,0,1725542611,"~/python_common/waivek/todo.txt"
--'  46  0  ~/pyscripts/simple-pydantic-error.py
-|4,39,46,0,1725542604,"~/pyscripts/simple-pydantic-error.py"
--'  14  8  ~/pyscripts/simple-pydantic-error.py
-|4,39,14,8,1725542602,"~/pyscripts/simple-pydantic-error.py"
--'  23  16  ~/pyscripts/simple-pydantic-error.py
-|4,39,23,16,1725542561,"~/pyscripts/simple-pydantic-error.py"
--'  43  16  ~/pyscripts/simple-pydantic-error.py
-|4,39,43,16,1725542529,"~/pyscripts/simple-pydantic-error.py"
--'  44  19  ~/pyscripts/simple-pydantic-error.py
-|4,39,44,19,1725542483,"~/pyscripts/simple-pydantic-error.py"
--'  27  29  ~/pyscripts/simple-pydantic-error.py
-|4,39,27,29,1725542369,"~/pyscripts/simple-pydantic-error.py"
--'  31  4  ~/pyscripts/simple-pydantic-error.py
-|4,39,31,4,1725542356,"~/pyscripts/simple-pydantic-error.py"
--'  41  8  ~/pyscripts/simple-pydantic-error.py
-|4,39,41,8,1725542295,"~/pyscripts/simple-pydantic-error.py"
--'  1  0  ~/pyscripts/simple-pydantic-error.py
-|4,39,1,0,1725542250,"~/pyscripts/simple-pydantic-error.py"
--'  40  19  ~/pyscripts/simple-pydantic-error.py
-|4,39,40,19,1725542243,"~/pyscripts/simple-pydantic-error.py"
--'  45  19  ~/pyscripts/simple-pydantic-error.py
-|4,39,45,19,1725542243,"~/pyscripts/simple-pydantic-error.py"
--'  39  4  ~/pyscripts/simple-pydantic-error.py
-|4,39,39,4,1725542228,"~/pyscripts/simple-pydantic-error.py"
--'  32  4  ~/pyscripts/simple-pydantic-error.py
-|4,39,32,4,1725542216,"~/pyscripts/simple-pydantic-error.py"
--'  34  3  ~/pyscripts/simple-pydantic-error.py
-|4,39,34,3,1725542188,"~/pyscripts/simple-pydantic-error.py"
--'  15  0  ~/pyscripts/youtube-text-to-dates.py
-|4,39,15,0,1725542127,"~/pyscripts/youtube-text-to-dates.py"
--'  44  4  ~/pyscripts/youtube-text-to-dates.py
-|4,39,44,4,1725542112,"~/pyscripts/youtube-text-to-dates.py"
--'  78  4  ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/error2.py
-|4,39,78,4,1725542109,"~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/error2.py"
--'  81  10  ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/error2.py
-|4,39,81,10,1725541210,"~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/error2.py"
--'  150  32  ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/error2.py
-|4,39,150,32,1725541205,"~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/error2.py"
--'  82  36  ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/error2.py
-|4,39,82,36,1725541204,"~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/error2.py"
--'  70  28  ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/error2.py
-|4,39,70,28,1725541203,"~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/error2.py"
--'  184  4  ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/error2.py
-|4,39,184,4,1725541192,"~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/error2.py"
--'  211  8  ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/error2.py
-|4,39,211,8,1725541191,"~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/error2.py"
--'  241  4  ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/error2.py
-|4,39,241,4,1725541189,"~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/error2.py"
--'  276  12  ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/error2.py
-|4,39,276,12,1725541186,"~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/error2.py"
--'  258  166  ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/error2.py
-|4,39,258,166,1725541174,"~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/error2.py"
--'  253  30  ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/error2.py
-|4,39,253,30,1725541174,"~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/error2.py"
--'  250  16  ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/error2.py
-|4,39,250,16,1725541173,"~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/error2.py"
--'  249  37  ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/error2.py
-|4,39,249,37,1725541173,"~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/error2.py"
--'  248  22  ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/error2.py
-|4,39,248,22,1725541173,"~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/error2.py"
--'  247  24  ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/error2.py
-|4,39,247,24,1725541172,"~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/error2.py"
--'  45  8  ~/pyscripts/youtube-text-to-dates.py
-|4,39,45,8,1725541145,"~/pyscripts/youtube-text-to-dates.py"
--'  13  32  ~/pyscripts/youtube-text-to-dates.py
-|4,39,13,32,1725540994,"~/pyscripts/youtube-text-to-dates.py"
--'  172  4  ~/pyscripts/model_yt_api.py
-|4,39,172,4,1725540987,"~/pyscripts/model_yt_api.py"
--'  4  0  ~/pyscripts/model_yt_api.py
-|4,39,4,0,1725540986,"~/pyscripts/model_yt_api.py"
--'  162  0  ~/pyscripts/model_yt_api.py
-|4,39,162,0,1725540982,"~/pyscripts/model_yt_api.py"
--'  5  0  ~/pyscripts/model_yt_api.py
-|4,39,5,0,1725540980,"~/pyscripts/model_yt_api.py"
--'  161  0  ~/pyscripts/model_yt_api.py
-|4,39,161,0,1725540977,"~/pyscripts/model_yt_api.py"
--'  145  11  ~/pyscripts/model_yt_api.py
-|4,39,145,11,1725540976,"~/pyscripts/model_yt_api.py"
--'  8  4  ~/pyscripts/model_yt_api.py
-|4,39,8,4,1725540962,"~/pyscripts/model_yt_api.py"
--'  14  0  ~/pyscripts/requirements.txt
-|4,39,14,0,1725540912,"~/pyscripts/requirements.txt"
--'  1  0  ~/pyscripts/model_yt_api.py
-|4,39,1,0,1725540911,"~/pyscripts/model_yt_api.py"
--'  1  0  ~/pyscripts/requirements.txt
-|4,39,1,0,1725540891,"~/pyscripts/requirements.txt"
--'  18  55  ~/pyscripts/youtube-text-to-dates.py
-|4,39,18,55,1725540879,"~/pyscripts/youtube-text-to-dates.py"
--'  24  0  ~/pyscripts/youtube-text-to-dates.py
-|4,39,24,0,1725540563,"~/pyscripts/youtube-text-to-dates.py"
--'  2  0  ~/pyscripts/youtube-text-to-dates.py
-|4,39,2,0,1725540560,"~/pyscripts/youtube-text-to-dates.py"
--'  26  15  ~/pyscripts/youtube-text-to-dates.py
-|4,39,26,15,1725540551,"~/pyscripts/youtube-text-to-dates.py"
--'  21  30  ~/pyscripts/youtube-text-to-dates.py
-|4,39,21,30,1725540456,"~/pyscripts/youtube-text-to-dates.py"
--'  12  0  ~/pyscripts/youtube-text-to-dates.py
-|4,39,12,0,1725540456,"~/pyscripts/youtube-text-to-dates.py"
--'  20  30  ~/pyscripts/youtube-text-to-dates.py
-|4,39,20,30,1725540456,"~/pyscripts/youtube-text-to-dates.py"
--'  11  0  ~/pyscripts/youtube-text-to-dates.py
-|4,39,11,0,1725540456,"~/pyscripts/youtube-text-to-dates.py"
--'  26  4  ~/pyscripts/youtube-text-to-dates.py
-|4,39,26,4,1725540455,"~/pyscripts/youtube-text-to-dates.py"
--'  16  0  ~/pyscripts/youtube-text-to-dates.py
-|4,39,16,0,1725540455,"~/pyscripts/youtube-text-to-dates.py"
--'  25  4  ~/pyscripts/youtube-text-to-dates.py
-|4,39,25,4,1725540455,"~/pyscripts/youtube-text-to-dates.py"
--'  14  0  ~/pyscripts/youtube-text-to-dates.py
-|4,39,14,0,1725540455,"~/pyscripts/youtube-text-to-dates.py"
--'  27  8  ~/pyscripts/youtube-text-to-dates.py
-|4,39,27,8,1725540453,"~/pyscripts/youtube-text-to-dates.py"
--'  12  18  ~/pyscripts/youtube-text-to-dates.py
-|4,39,12,18,1725540453,"~/pyscripts/youtube-text-to-dates.py"
--'  11  0  ~/pyscripts/youtube-text-to-dates.py
-|4,39,11,0,1725540292,"~/pyscripts/youtube-text-to-dates.py"
--'  10  0  ~/pyscripts/youtube-text-to-dates.py
-|4,39,10,0,1725540292,"~/pyscripts/youtube-text-to-dates.py"
--'  14  0  ~/pyscripts/requirements.txt
-|4,39,14,0,1725540289,"~/pyscripts/requirements.txt"
--'  15  0  ~/pyscripts/requirements.txt
-|4,39,15,0,1725539844,"~/pyscripts/requirements.txt"
+-'  47  7  ~/python_staging/rich_experiments.py
+|4,39,47,7,1725759928,"~/python_staging/rich_experiments.py"
+-'  1  0  ~/python_staging/rich_experiments.py
+|4,39,1,0,1725759918,"~/python_staging/rich_experiments.py"
+-'  118  4  ~/python_common/waivek/print_utils.py
+|4,39,118,4,1725759800,"~/python_common/waivek/print_utils.py"
+-'  118  4  ~/python_common/waivek/print_utils.py
+|4,39,118,4,1725759800,"~/python_common/waivek/print_utils.py"
+-'  1  0  ~/python_common/waivek/print_utils.py
+|4,39,1,0,1725759791,"~/python_common/waivek/print_utils.py"
+-'  1  0  ~/python_common/waivek/print_utils.py
+|4,39,1,0,1725759791,"~/python_common/waivek/print_utils.py"
+-'  87  8  ~/python_common/waivek/test_truncate.py
+|4,39,87,8,1725759687,"~/python_common/waivek/test_truncate.py"
+-'  87  8  ~/python_common/waivek/test_truncate.py
+|4,39,87,8,1725759687,"~/python_common/waivek/test_truncate.py"
+-'  87  8  ~/python_common/waivek/test_truncate.py
+|4,39,87,8,1725759687,"~/python_common/waivek/test_truncate.py"
+-'  88  47  ~/python_common/waivek/test_truncate.py
+|4,39,88,47,1725759431,"~/python_common/waivek/test_truncate.py"
+-'  88  47  ~/python_common/waivek/test_truncate.py
+|4,39,88,47,1725759431,"~/python_common/waivek/test_truncate.py"
+-'  88  47  ~/python_common/waivek/test_truncate.py
+|4,39,88,47,1725759431,"~/python_common/waivek/test_truncate.py"
+-'  86  96  ~/python_common/waivek/test_truncate.py
+|4,39,86,96,1725759400,"~/python_common/waivek/test_truncate.py"
+-'  86  96  ~/python_common/waivek/test_truncate.py
+|4,39,86,96,1725759400,"~/python_common/waivek/test_truncate.py"
+-'  86  96  ~/python_common/waivek/test_truncate.py
+|4,39,86,96,1725759400,"~/python_common/waivek/test_truncate.py"
+-'  89  63  ~/python_common/waivek/test_truncate.py
+|4,39,89,63,1725759377,"~/python_common/waivek/test_truncate.py"
+-'  89  63  ~/python_common/waivek/test_truncate.py
+|4,39,89,63,1725759377,"~/python_common/waivek/test_truncate.py"
+-'  89  63  ~/python_common/waivek/test_truncate.py
+|4,39,89,63,1725759377,"~/python_common/waivek/test_truncate.py"
+-'  93  15  ~/python_common/waivek/test_truncate.py
+|4,39,93,15,1725759336,"~/python_common/waivek/test_truncate.py"
+-'  93  15  ~/python_common/waivek/test_truncate.py
+|4,39,93,15,1725759336,"~/python_common/waivek/test_truncate.py"
+-'  93  15  ~/python_common/waivek/test_truncate.py
+|4,39,93,15,1725759336,"~/python_common/waivek/test_truncate.py"
+-'  111  16  ~/python_common/waivek/test_truncate.py
+|4,39,111,16,1725759242,"~/python_common/waivek/test_truncate.py"
+-'  111  16  ~/python_common/waivek/test_truncate.py
+|4,39,111,16,1725759242,"~/python_common/waivek/test_truncate.py"
+-'  111  16  ~/python_common/waivek/test_truncate.py
+|4,39,111,16,1725759242,"~/python_common/waivek/test_truncate.py"
+-'  161  4  ~/python_common/waivek/truncate.py
+|4,39,161,4,1725759241,"~/python_common/waivek/truncate.py"
+-'  161  4  ~/python_common/waivek/truncate.py
+|4,39,161,4,1725759241,"~/python_common/waivek/truncate.py"
+-'  161  4  ~/python_common/waivek/truncate.py
+|4,39,161,4,1725759241,"~/python_common/waivek/truncate.py"
+-'  120  24  ~/python_common/waivek/test_truncate.py
+|4,39,120,24,1725759229,"~/python_common/waivek/test_truncate.py"
+-'  120  24  ~/python_common/waivek/test_truncate.py
+|4,39,120,24,1725759229,"~/python_common/waivek/test_truncate.py"
+-'  120  24  ~/python_common/waivek/test_truncate.py
+|4,39,120,24,1725759229,"~/python_common/waivek/test_truncate.py"
+-'  92  8  ~/python_common/waivek/test_truncate.py
+|4,39,92,8,1725759165,"~/python_common/waivek/test_truncate.py"
+-'  92  8  ~/python_common/waivek/test_truncate.py
+|4,39,92,8,1725759165,"~/python_common/waivek/test_truncate.py"
+-'  92  8  ~/python_common/waivek/test_truncate.py
+|4,39,92,8,1725759165,"~/python_common/waivek/test_truncate.py"
+-'  91  83  ~/python_common/waivek/test_truncate.py
+|4,39,91,83,1725759072,"~/python_common/waivek/test_truncate.py"
+-'  91  83  ~/python_common/waivek/test_truncate.py
+|4,39,91,83,1725759072,"~/python_common/waivek/test_truncate.py"
+-'  91  83  ~/python_common/waivek/test_truncate.py
+|4,39,91,83,1725759072,"~/python_common/waivek/test_truncate.py"
+-'  94  8  ~/python_common/waivek/test_truncate.py
+|4,39,94,8,1725758999,"~/python_common/waivek/test_truncate.py"
+-'  94  8  ~/python_common/waivek/test_truncate.py
+|4,39,94,8,1725758999,"~/python_common/waivek/test_truncate.py"
+-'  94  8  ~/python_common/waivek/test_truncate.py
+|4,39,94,8,1725758999,"~/python_common/waivek/test_truncate.py"
+-'  177  0  ~/python_common/waivek/truncate.py
+|4,39,177,0,1725758940,"~/python_common/waivek/truncate.py"
+-'  177  0  ~/python_common/waivek/truncate.py
+|4,39,177,0,1725758940,"~/python_common/waivek/truncate.py"
+-'  177  0  ~/python_common/waivek/truncate.py
+|4,39,177,0,1725758940,"~/python_common/waivek/truncate.py"
+-'  114  30  ~/python_common/waivek/test_truncate.py
+|4,39,114,30,1725758939,"~/python_common/waivek/test_truncate.py"
+-'  114  30  ~/python_common/waivek/test_truncate.py
+|4,39,114,30,1725758939,"~/python_common/waivek/test_truncate.py"
+-'  114  30  ~/python_common/waivek/test_truncate.py
+|4,39,114,30,1725758939,"~/python_common/waivek/test_truncate.py"
+-'  103  52  ~/python_common/waivek/test_truncate.py
+|4,39,103,52,1725758730,"~/python_common/waivek/test_truncate.py"
+-'  103  52  ~/python_common/waivek/test_truncate.py
+|4,39,103,52,1725758730,"~/python_common/waivek/test_truncate.py"
+-'  103  52  ~/python_common/waivek/test_truncate.py
+|4,39,103,52,1725758730,"~/python_common/waivek/test_truncate.py"
+-'  115  12  ~/python_common/waivek/test_truncate.py
+|4,39,115,12,1725758706,"~/python_common/waivek/test_truncate.py"
+-'  115  12  ~/python_common/waivek/test_truncate.py
+|4,39,115,12,1725758706,"~/python_common/waivek/test_truncate.py"
+-'  115  12  ~/python_common/waivek/test_truncate.py
+|4,39,115,12,1725758706,"~/python_common/waivek/test_truncate.py"
+-'  99  12  ~/python_common/waivek/test_truncate.py
+|4,39,99,12,1725758694,"~/python_common/waivek/test_truncate.py"
+-'  99  12  ~/python_common/waivek/test_truncate.py
+|4,39,99,12,1725758694,"~/python_common/waivek/test_truncate.py"
+-'  99  12  ~/python_common/waivek/test_truncate.py
+|4,39,99,12,1725758694,"~/python_common/waivek/test_truncate.py"
+-'  98  90  ~/python_common/waivek/test_truncate.py
+|4,39,98,90,1725758560,"~/python_common/waivek/test_truncate.py"
+-'  98  90  ~/python_common/waivek/test_truncate.py
+|4,39,98,90,1725758560,"~/python_common/waivek/test_truncate.py"
+-'  98  90  ~/python_common/waivek/test_truncate.py
+|4,39,98,90,1725758560,"~/python_common/waivek/test_truncate.py"
+-'  857  0  ~/python_common/.direnv/python-3.10.12/lib/python3.10/site-packages/rich/text.py
+|4,39,857,0,1725749489,"~/python_common/.direnv/python-3.10.12/lib/python3.10/site-packages/rich/text.py"
+-'  857  0  ~/python_common/.direnv/python-3.10.12/lib/python3.10/site-packages/rich/text.py
+|4,39,857,0,1725749489,"~/python_common/.direnv/python-3.10.12/lib/python3.10/site-packages/rich/text.py"
+-'  857  0  ~/python_common/.direnv/python-3.10.12/lib/python3.10/site-packages/rich/text.py
+|4,39,857,0,1725749489,"~/python_common/.direnv/python-3.10.12/lib/python3.10/site-packages/rich/text.py"
+-'  15  14  ~/python_staging/rich_experiments.py
+|4,39,15,14,1725749481,"~/python_staging/rich_experiments.py"
+-'  15  14  ~/python_staging/rich_experiments.py
+|4,39,15,14,1725749481,"~/python_staging/rich_experiments.py"
+-'  15  14  ~/python_staging/rich_experiments.py
+|4,39,15,14,1725749481,"~/python_staging/rich_experiments.py"
+-'  44  14  ~/python_staging/rich_experiments.py
+|4,39,44,14,1725749464,"~/python_staging/rich_experiments.py"
+-'  44  14  ~/python_staging/rich_experiments.py
+|4,39,44,14,1725749464,"~/python_staging/rich_experiments.py"
+-'  44  14  ~/python_staging/rich_experiments.py
+|4,39,44,14,1725749464,"~/python_staging/rich_experiments.py"
+-'  40  14  ~/python_staging/rich_experiments.py
+|4,39,40,14,1725749401,"~/python_staging/rich_experiments.py"
+-'  40  14  ~/python_staging/rich_experiments.py
+|4,39,40,14,1725749401,"~/python_staging/rich_experiments.py"
+-'  40  14  ~/python_staging/rich_experiments.py
+|4,39,40,14,1725749401,"~/python_staging/rich_experiments.py"
+-'  42  18  ~/python_staging/rich_experiments.py
+|4,39,42,18,1725749385,"~/python_staging/rich_experiments.py"
+-'  42  18  ~/python_staging/rich_experiments.py
+|4,39,42,18,1725749385,"~/python_staging/rich_experiments.py"
+-'  42  18  ~/python_staging/rich_experiments.py
+|4,39,42,18,1725749385,"~/python_staging/rich_experiments.py"
+-'  41  15  ~/python_staging/rich_experiments.py
+|4,39,41,15,1725749254,"~/python_staging/rich_experiments.py"
+-'  41  15  ~/python_staging/rich_experiments.py
+|4,39,41,15,1725749254,"~/python_staging/rich_experiments.py"
+-'  41  15  ~/python_staging/rich_experiments.py
+|4,39,41,15,1725749254,"~/python_staging/rich_experiments.py"
+-'  1  0  ~/python_staging/rich_experiments.py
+|4,39,1,0,1725749232,"~/python_staging/rich_experiments.py"
+-'  1  0  ~/python_staging/rich_experiments.py
+|4,39,1,0,1725749232,"~/python_staging/rich_experiments.py"
+-'  38  4  ~/python_staging/rich_experiments.py
+|4,39,38,4,1725749229,"~/python_staging/rich_experiments.py"
+-'  38  4  ~/python_staging/rich_experiments.py
+|4,39,38,4,1725749229,"~/python_staging/rich_experiments.py"
+-'  38  4  ~/python_staging/rich_experiments.py
+|4,39,38,4,1725749229,"~/python_staging/rich_experiments.py"
+-'  43  0  ~/python_staging/rich_experiments.py
+|4,39,43,0,1725749228,"~/python_staging/rich_experiments.py"
+-'  43  0  ~/python_staging/rich_experiments.py
+|4,39,43,0,1725749228,"~/python_staging/rich_experiments.py"
+-'  43  0  ~/python_staging/rich_experiments.py
+|4,39,43,0,1725749228,"~/python_staging/rich_experiments.py"
+-'  47  7  ~/python_staging/rich_experiments.py
+|4,39,47,7,1725749200,"~/python_staging/rich_experiments.py"
+-'  47  7  ~/python_staging/rich_experiments.py
+|4,39,47,7,1725749200,"~/python_staging/rich_experiments.py"
+-'  7  20  ~/python_staging/rich_experiments.py
+|4,39,7,20,1725749197,"~/python_staging/rich_experiments.py"
+-'  7  20  ~/python_staging/rich_experiments.py
+|4,39,7,20,1725749197,"~/python_staging/rich_experiments.py"
+-'  7  20  ~/python_staging/rich_experiments.py
+|4,39,7,20,1725749197,"~/python_staging/rich_experiments.py"
+-'  64  0  ~/python_common/waivek/truncate.py
+|4,39,64,0,1725749174,"~/python_common/waivek/truncate.py"
+-'  64  0  ~/python_common/waivek/truncate.py
+|4,39,64,0,1725749174,"~/python_common/waivek/truncate.py"
+-'  64  0  ~/python_common/waivek/truncate.py
+|4,39,64,0,1725749174,"~/python_common/waivek/truncate.py"
+-'  62  0  ~/python_common/waivek/truncate.py
+|4,39,62,0,1725749167,"~/python_common/waivek/truncate.py"
+-'  62  0  ~/python_common/waivek/truncate.py
+|4,39,62,0,1725749167,"~/python_common/waivek/truncate.py"
+-'  62  0  ~/python_common/waivek/truncate.py
+|4,39,62,0,1725749167,"~/python_common/waivek/truncate.py"
+-'  71  0  ~/python_common/waivek/truncate.py
+|4,39,71,0,1725749166,"~/python_common/waivek/truncate.py"
+-'  83  0  ~/python_common/waivek/truncate.py
+|4,39,83,0,1725749166,"~/python_common/waivek/truncate.py"
+-'  71  0  ~/python_common/waivek/truncate.py
+|4,39,71,0,1725749166,"~/python_common/waivek/truncate.py"
+-'  83  0  ~/python_common/waivek/truncate.py
+|4,39,83,0,1725749166,"~/python_common/waivek/truncate.py"
+-'  71  0  ~/python_common/waivek/truncate.py
+|4,39,71,0,1725749166,"~/python_common/waivek/truncate.py"
 
 # Buffer list:
-%~/python_staging/dateutils.py	27	0
 
 # History of marks within files (newest to oldest):
 
+> ~/python_staging/rich_experiments.py
+	*	1725759927	0
+	"	47	7
+	^	40	15
+	.	47	7
+	+	1	0
+	+	9	10
+	+	10	0
+	+	35	56
+	+	45	0
+	+	2	10
+	+	46	26
+	+	47	9
+	+	36	10
+	+	35	42
+	+	40	28
+	+	44	18
+	+	7	20
+	+	47	7
+	+	44	14
+	+	43	0
+	+	39	22
+	+	40	0
+	+	41	0
+	+	6	0
+	+	42	19
+	+	44	14
+	+	42	0
+	+	44	18
+	+	42	18
+	+	40	0
+	+	47	7
+	a	47	7
+	b	47	7
+
+> ~/python_common/waivek/print_utils.py
+	*	1725759797	0
+	"	118	4
+	.	210	0
+	+	183	0
+	+	3	0
+	+	210	0
+
+> ~/python_common/waivek/test_truncate.py
+	*	1725759551	0
+	"	87	8
+	.	87	0
+	+	101	0
+	+	103	16
+	+	105	31
+	+	104	69
+	+	105	73
+	+	100	0
+	+	37	0
+	+	37	95
+	+	37	0
+	+	37	32
+	+	37	8
+	+	37	0
+	+	37	22
+	+	37	19
+	+	37	21
+	+	37	23
+	+	37	8
+	+	37	48
+	+	37	0
+	+	37	48
+	+	37	105
+	+	37	22
+	+	37	19
+	+	37	21
+	+	37	23
+	+	37	8
+	+	37	0
+	+	25	23
+	+	27	12
+	+	26	39
+	+	27	36
+	+	29	24
+	+	32	17
+	+	29	12
+	+	32	56
+	+	37	0
+	+	29	0
+	+	33	25
+	+	37	0
+	+	28	21
+	+	31	64
+	+	34	73
+	+	35	47
+	+	36	23
+	+	37	0
+	+	101	88
+	+	104	59
+	+	105	59
+	+	108	82
+	+	107	15
+	+	108	0
+	+	109	43
+	+	110	16
+	+	98	86
+	+	100	17
+	+	98	13
+	+	98	0
+	+	100	0
+	+	99	90
+	+	100	13
+	+	98	77
+	+	99	61
+	+	99	0
+	+	99	15
+	+	99	58
+	+	99	35
+	+	99	16
+	+	99	0
+	+	98	0
+	+	100	0
+	+	103	52
+	+	100	0
+	+	114	0
+	+	114	52
+	+	114	0
+	+	92	0
+	+	92	53
+	+	94	43
+	+	94	48
+	+	92	49
+	+	94	0
+	+	88	28
+	+	92	87
+	+	92	0
+	+	120	24
+	+	88	31
+	+	93	50
+	+	89	62
+	+	91	57
+	+	89	61
+	+	86	19
+	+	2	0
+	+	87	9
+	+	87	0
+	a	114	21
+	b	114	22
+
+> ~/python_common/waivek/truncate.py
+	*	1725759241	0
+	"	161	4
+	.	177	0
+	+	135	8
+	+	135	52
+	+	135	35
+	+	135	0
+	+	128	71
+	+	128	38
+	+	128	45
+	+	128	84
+	+	128	0
+	+	135	101
+	+	135	49
+	+	135	12
+	+	135	52
+	+	135	0
+	+	135	62
+	+	135	111
+	+	135	0
+	+	135	47
+	+	135	52
+	+	135	78
+	+	135	83
+	+	135	0
+	+	135	52
+	+	135	8
+	+	135	9
+	+	135	0
+	+	135	30
+	+	135	35
+	+	135	0
+	+	135	19
+	+	6	20
+	+	135	0
+	+	132	15
+	+	130	22
+	+	130	0
+	+	128	45
+	+	128	85
+	+	128	40
+	+	128	96
+	+	130	65
+	+	127	28
+	+	128	0
+	+	127	0
+	+	128	0
+	+	127	0
+	+	124	0
+	+	124	7
+	+	127	0
+	+	127	19
+	+	124	19
+	+	127	0
+	+	124	33
+	+	127	0
+	+	125	25
+	+	135	0
+	+	124	0
+	+	122	64
+	+	124	0
+	+	122	63
+	+	124	20
+	+	122	66
+	+	124	0
+	+	127	57
+	+	128	0
+	+	122	0
+	+	124	0
+	+	127	0
+	+	130	0
+	+	132	0
+	+	132	7
+	+	133	32
+	+	132	0
+	+	187	45
+	+	121	0
+	+	123	0
+	+	126	0
+	+	129	0
+	+	131	0
+	+	134	18
+	+	177	0
+	+	176	0
+	+	177	67
+	+	177	21
+	+	177	0
+	+	177	105
+	+	177	90
+	+	177	0
+	+	177	89
+	+	177	52
+	+	177	0
+	+	177	4
+	+	177	92
+	+	177	0
+	a	186	44
+	b	186	44
+
+> /usr/share/vim/vim90/doc/terminal.txt
+	*	1725759227	0
+	"	248	54
+
+> ~/python_common/waivek/truncatediff.py
+	*	1725751807	0
+	"	114	0
+	^	133	0
+	.	134	0
+	+	1	0
+	+	176	0
+	+	132	23
+	+	134	0
+
+> ~/python_common/.direnv/python-3.10.12/lib/python3.10/site-packages/rich/text.py
+	*	1725749487	0
+	"	857	0
+
+> ~/prompts/render_prompt.py
+	*	1725692158	0
+	"	15	0
+	^	15	20
+	.	14	30
+	+	1	0
+	+	27	0
+	+	11	0
+	+	7	27
+	+	11	40
+	+	23	26
+	+	11	23
+	+	23	0
+	+	12	24
+	+	16	54
+	+	17	32
+	+	16	54
+	+	8	13
+	+	16	85
+	+	17	48
+	+	23	0
+	+	18	48
+	+	19	13
+	+	20	40
+	+	23	0
+	+	22	18
+	+	23	0
+	+	14	30
+
+> ~/prompts/240907.truncate_data_strucuture.txt
+	*	1725691956	0
+	"	43	0
+	^	29	5
+	.	43	0
+	+	35	24
+	+	36	21
+	+	37	19
+	+	37	23
+	+	37	30
+	+	37	0
+	+	39	37
+	+	1	0
+	+	1	10
+	+	1	0
+	+	44	0
+	+	1	0
+	+	44	1
+	+	41	27
+	+	30	0
+	+	28	2
+	+	30	0
+	+	28	0
+	+	6	0
+	+	7	0
+	+	5	20
+	+	29	4
+	+	44	0
+	+	43	0
+
+> /usr/share/vim/vim90/doc/options.txt
+	*	1725691834	0
+	"	3501	6
+
+> ~/python_common/waivek/__init__.py
+	*	1725691601	0
+	"	17	37
+	^	23	2
+	.	23	1
+	+	25	1
+	+	20	38
+	+	1	0
+	+	12	30
+	+	13	0
+	+	13	27
+	+	13	0
+	+	6	0
+	+	17	0
+	+	21	57
+	+	13	1
+	+	14	11
+	+	25	10
+	+	21	58
+	+	21	0
+	+	25	18
+	+	25	25
+	+	25	0
+	+	23	17
+	+	23	74
+	+	23	17
+	+	25	1
+	+	25	0
+	+	25	4
+	+	23	0
+	+	25	18
+	+	25	0
+	+	25	35
+	+	25	5
+	+	25	47
+	+	23	85
+	+	25	0
+	+	23	0
+	+	25	0
+	+	24	35
+	+	25	0
+	+	24	0
+	+	23	58
+	+	24	0
+	+	23	51
+	+	23	0
+	+	1	0
+	+	23	0
+	+	24	35
+	+	24	0
+	+	24	88
+	+	24	0
+	+	4	64
+	+	4	31
+	+	4	30
+	+	23	21
+	+	24	0
+	+	23	0
+	+	24	0
+	+	23	5
+	+	23	1
+	+	24	4
+	+	23	44
+	+	24	13
+	+	23	36
+	+	24	6
+	+	23	51
+	+	24	15
+	+	23	0
+	+	24	0
+	+	24	5
+	+	24	0
+	+	8	0
+	+	21	0
+	+	10	0
+	+	15	0
+	+	7	0
+	+	4	0
+	+	23	0
+	+	25	0
+	+	1	0
+	+	3	0
+	+	23	1
+
+> ~/prompts/footer-edge-case.txt
+	*	1725691506	0
+	"	2	0
+
+> ~/prompts/preset-swe.txt
+	*	1725691401	0
+	"	2	0
+	^	3	0
+	.	3	0
+	+	2	42
+	+	3	0
+
+> ~/prompts/render_prompt.txt
+	*	1725690849	0
+	"	1	0
+
+> ~/python_common/tooling/text_rendering_hates_you.txt
+	*	1725690525	0
+	"	2	0
+	.	3	0
+	+	1	69
+	+	3	0
+	+	1	42
+	+	2	0
+	+	3	0
+
+> ~/pyscripts/print_todo.py
+	*	1725688216	0
+	"	78	8
+	^	77	73
+	.	73	52
+	+	98	9
+	+	100	0
+	+	98	0
+	+	66	34
+	+	67	33
+	+	68	35
+	+	69	24
+	+	85	0
+	+	85	148
+	+	85	177
+	+	65	30
+	+	85	115
+	+	85	25
+	+	85	154
+	+	85	150
+	+	85	33
+	+	85	175
+	+	85	34
+	+	85	176
+	+	85	79
+	+	1	21
+	+	1	0
+	+	132	22
+	+	132	0
+	+	18	0
+	+	18	24
+	+	18	0
+	+	18	25
+	+	74	26
+	+	132	0
+	+	74	9
+	+	85	0
+	+	88	0
+	+	85	7
+	+	85	20
+	+	85	0
+	+	85	54
+	+	87	0
+	+	85	9
+	+	87	168
+	+	85	29
+	+	85	117
+	+	85	50
+	+	85	111
+	+	18	25
+	+	85	80
+	+	85	51
+	+	85	55
+	+	85	71
+	+	126	0
+	+	74	9
+	+	77	27
+	+	47	0
+	+	18	8
+	+	46	0
+	+	17	0
+	+	47	0
+	+	77	52
+	+	121	32
+	+	122	33
+	+	124	0
+	+	122	0
+	+	125	0
+	+	123	21
+	+	126	128
+	+	74	34
+	+	77	0
+	+	75	11
+	+	76	12
+	+	77	0
+	+	127	104
+	+	127	0
+	+	127	12
+	+	127	21
+	+	127	17
+	+	127	106
+	+	127	24
+	+	127	108
+	+	127	0
+	+	77	60
+	+	74	0
+	+	85	0
+	+	81	17
+	+	81	76
+	+	81	17
+	+	132	25
+	+	86	0
+	+	84	0
+	+	81	0
+	+	74	53
+	+	73	72
+	+	81	48
+	+	74	0
+	+	131	0
+	+	132	0
+	+	64	0
+	+	77	72
+	+	127	0
+	+	73	52
+
+> ~/python_common/waivek/todo.txt
+	*	1725640168	0
+	"	1	2
+	^	1	2
+	.	1	0
+	+	10	121
+	+	10	0
+	+	12	0
+	+	11	17
+	+	11	0
+	+	10	0
+	+	12	0
+	+	11	0
+	+	9	166
+	+	8	64
+	+	7	153
+	+	6	134
+	+	5	14
+	+	7	16
+	+	8	14
+	+	9	16
+	+	10	16
+	+	11	19
+	+	6	16
+	+	5	0
+	+	11	0
+	+	5	31
+	+	5	21
+	+	5	146
+	+	5	96
+	+	5	167
+	+	6	0
+	+	5	0
+	+	7	112
+	+	8	35
+	+	10	50
+	+	10	0
+	+	8	42
+	+	9	319
+	+	9	0
+	+	10	25
+	+	11	63
+	+	7	70
+	+	5	1
+	+	11	0
+	+	5	1
+	+	5	0
+	+	7	126
+	+	10	67
+	+	5	0
+	+	11	0
+	+	5	1
+	+	6	0
+	+	5	0
+	+	4	120
+	+	3	91
+	+	2	88
+	+	1	155
+	+	1	1
+	+	2	0
+	+	1	0
+
+> ~/.vim/todo.txt
+	*	1725638507	0
+	"	1	2
+	^	1	88
+	.	1	87
+	+	31	0
+	+	23	99
+	+	23	0
+	+	22	53
+	+	20	96
+	+	20	0
+	+	19	167
+	+	33	0
+	+	32	0
+	+	18	0
+	+	33	0
+	+	18	79
+	+	18	0
+	+	17	165
+	+	19	0
+	+	22	0
+	+	17	0
+	+	18	0
+	+	33	0
+	+	17	0
+	+	19	0
+	+	24	0
+	+	17	0
+	+	18	0
+	+	19	0
+	+	18	0
+	+	19	0
+	+	18	0
+	+	19	0
+	+	20	68
+	+	17	0
+	+	20	68
+	+	17	0
+	+	23	0
+	+	23	87
+	+	17	0
+	+	22	0
+	+	20	0
+	+	17	0
+	+	20	0
+	+	25	0
+	+	24	0
+	+	23	0
+	+	15	84
+	+	15	0
+	+	14	19
+	+	23	27
+	+	14	100
+	+	14	0
+	+	16	165
+	+	14	0
+	+	15	0
+	+	20	0
+	+	19	0
+	+	21	108
+	+	28	0
+	+	13	69
+	+	21	0
+	+	12	83
+	+	11	69
+	+	10	87
+	+	9	27
+	+	9	105
+	+	9	0
+	+	12	0
+	+	13	0
+	+	23	0
+	+	9	128
+	+	12	46
+	+	12	0
+	+	9	0
+	+	12	0
+	+	8	124
+	+	9	174
+	+	8	214
+	+	7	75
+	+	6	63
+	+	7	0
+	+	5	142
+	+	4	103
+	+	3	143
+	+	2	123
+	+	2	0
+	+	3	0
+	+	5	0
+	+	6	0
+	+	16	0
+	+	13	0
+	+	8	0
+	+	26	0
+	+	25	0
+	+	2	0
+	+	25	79
+	+	1	1
+	+	2	2
+	+	3	2
+	+	8	7
+	+	5	9
+	+	4	6
+	+	1	87
+
+> ~/.vim/plugin/run3.vim
+	*	1725633393	0
+	"	75	4
+	^	54	16
+	.	75	0
+	+	69	0
+	+	63	0
+	+	51	44
+	+	52	11
+	+	32	0
+	+	52	36
+	+	57	0
+	+	52	75
+	+	53	31
+	+	56	0
+	+	55	13
+	+	77	0
+	+	73	71
+	+	74	26
+	+	84	0
+	+	79	0
+	+	80	0
+	+	83	0
+	+	79	28
+	+	74	0
+	+	74	43
+	+	9	0
+	+	12	42
+	+	11	63
+	+	74	0
+	+	12	0
+	+	63	0
+	+	59	10
+	+	63	0
+	+	59	17
+	+	62	0
+	+	61	13
+	+	63	0
+	+	73	0
+	+	5	0
+	+	5	23
+	+	49	0
+	+	48	7
+	+	48	8
+	+	49	0
+	+	48	0
+	+	60	0
+	+	59	0
+	+	1	0
+	+	2	6
+	+	5	0
+	+	48	31
+	+	12	42
+	+	35	10
+	+	35	61
+	+	35	14
+	+	35	9
+	+	35	0
+	+	35	71
+	+	35	47
+	+	35	70
+	+	35	0
+	+	35	26
+	+	35	27
+	+	35	0
+	+	35	37
+	+	48	35
+	+	53	30
+	+	53	0
+	+	48	0
+	+	12	0
+	+	4	0
+	+	35	10
+	+	35	0
+	+	48	0
+	+	38	43
+	+	44	0
+	+	48	7
+	+	44	0
+	+	48	0
+	+	45	0
+	+	48	0
+	+	46	25
+	+	47	13
+	+	50	21
+	+	43	14
+	+	50	34
+	+	43	40
+	+	37	50
+	+	43	46
+	+	50	44
+	+	58	42
+	+	64	50
+	+	76	0
+	+	73	0
+	+	79	40
+	+	79	0
+	+	84	0
+	+	76	0
+	+	63	0
+	+	65	5
+	+	52	59
+	+	54	15
+	+	41	0
+	+	75	0
+
+> ~/.vim/plugin/run.vim
+	*	1725633304	0
+	"	73	14
+	^	5	18
+	.	8	0
+	+	8	28
+	+	8	0
+	+	8	10
+	+	8	8
+	+	8	15
+	+	8	0
+	+	8	17
+	+	8	20
+	+	8	0
+	+	8	38
+	+	8	15
+	+	8	0
+	+	8	19
+	+	8	0
+	+	8	19
+	+	8	18
+	+	8	8
+	+	8	39
+	+	8	16
+	+	8	0
+	+	8	27
+	+	8	10
+	+	8	0
+	+	8	12
+	+	8	18
+	+	8	0
+	+	15	8
+	+	17	0
+	+	8	0
+	+	1	3
+	+	8	13
+	+	8	0
+	+	8	45
+	+	8	0
+	+	8	26
+	+	8	0
+	+	8	33
+	+	8	32
+	+	8	0
+	+	8	11
+	+	8	0
+	+	8	48
+	+	8	0
+	+	8	12
+	+	8	0
+	+	8	71
+	+	8	37
+	+	8	82
+	+	8	12
+	+	8	0
+	+	48	0
+	+	50	0
+	+	48	4
+	+	49	5
+	+	8	0
+	+	8	19
+	+	58	0
+	+	21	22
+	+	28	0
+	+	27	0
+	+	8	0
+	+	13	0
+	+	8	0
+	+	14	0
+	+	13	0
+	+	8	0
+	+	1	3
+	+	1	21
+	+	6	10
+	+	3	36
+	+	4	37
+	+	5	17
+	+	8	0
+	+	13	0
+	+	8	0
+
+> ~/tooling/docs/fzf.man
+	*	1725631218	0
+	"	638	44
+	^	34	12
+	.	34	0
+	+	34	0
+
+> /usr/lib/python3.10/textwrap.py
+	*	1725630832	0
+	"	376	0
+
+> ~/.vim/mappings.vim
+	*	1725592643	0
+	"	24	0
+	^	9	0
+	.	11	0
+	+	2	13
+	+	2	0
+	+	5	0
+	+	2	0
+	+	2	13
+	+	3	0
+	+	5	0
+	+	5	24
+	+	5	25
+	+	5	0
+	+	1	0
+	+	6	55
+	+	23	25
+	+	24	17
+	+	23	25
+	+	24	25
+	+	23	25
+	+	24	25
+	+	23	5
+	+	24	5
+	+	23	0
+	+	24	0
+	+	23	7
+	+	24	16
+	+	13	1
+	+	10	2
+	+	15	1
+	+	24	20
+	+	15	2
+	+	23	0
+	+	22	0
+	+	21	0
+	+	19	4
+	+	19	0
+	+	19	1
+	+	19	0
+	+	15	6
+	+	19	0
+	+	15	6
+	+	19	0
+	+	15	7
+	+	19	0
+	+	15	6
+	+	19	0
+	+	15	5
+	+	19	0
+	+	24	70
+	+	24	34
+	+	24	0
+	+	24	64
+	+	19	1
+	+	13	35
+	+	10	35
+	+	7	35
+	+	13	0
+	+	11	0
+	+	11	57
+	+	11	0
+	+	1	0
+	+	11	33
+	+	1	0
+	+	11	33
+	+	1	0
+	+	11	56
+	+	1	0
+	+	19	0
+	+	11	55
+	+	21	101
+	+	20	36
+	+	19	0
+	+	16	47
+	+	18	0
+	+	16	36
+	+	18	0
+	+	16	0
+	+	14	0
+	+	15	49
+	+	16	53
+	+	16	0
+	+	24	0
+	+	9	0
+	+	10	0
+	+	15	1
+	+	16	1
+	+	16	0
+	+	21	0
+	+	17	45
+	+	25	0
+	+	21	0
+	+	17	23
+	+	5	0
+	+	11	56
+	+	11	0
+
+> /usr/share/vim/vim90/doc/help.txt
+	*	1725592625	0
+	"	1	0
+
+> ~/.vim/plugin/jprev.vim
+	*	1725592622	0
+	"	116	0
+	^	130	9
+	.	130	8
+	+	99	39
+	+	99	0
+	+	86	18
+	+	99	78
+	+	99	23
+	+	99	40
+	+	99	42
+	+	99	24
+	+	99	0
+	+	63	49
+	+	69	10
+	+	63	37
+	+	64	0
+	+	99	41
+	+	99	109
+	+	66	60
+	+	67	38
+	+	68	40
+	+	99	11
+	+	99	0
+	+	99	19
+	+	99	0
+	+	99	8
+	+	99	0
+	+	99	8
+	+	99	0
+	+	71	26
+	+	82	10
+	+	99	0
+	+	80	0
+	+	86	39
+	+	87	38
+	+	74	42
+	+	87	42
+	+	98	0
+	+	93	54
+	+	97	154
+	+	91	18
+	+	97	23
+	+	97	35
+	+	97	0
+	+	97	116
+	+	92	0
+	+	97	27
+	+	94	11
+	+	95	63
+	+	96	12
+	+	97	77
+	+	97	97
+	+	97	0
+	+	97	36
+	+	99	38
+	+	99	46
+	+	99	0
+	+	92	0
+	+	91	0
+	+	99	0
+	+	88	0
+	+	91	53
+	+	89	32
+	+	90	0
+	+	91	0
+	+	106	0
+	+	97	0
+	+	91	0
+	+	87	0
+	+	78	0
+	+	129	0
+	+	109	0
+	+	103	0
+	+	129	0
+	+	117	34
+	+	118	7
+	+	120	14
+	+	121	8
+	+	129	0
+	+	105	39
+	+	105	9
+	+	123	48
+	+	124	43
+	+	128	53
+	+	119	0
+	+	105	0
+	+	124	28
+	+	125	53
+	+	128	29
+	+	128	0
+	+	142	38
+	+	144	0
+	+	142	10
+	+	143	38
+	+	105	0
+	+	139	0
+	+	11	0
+	+	127	0
+	+	130	0
+	+	131	0
+	+	130	31
+	+	140	0
+	+	130	8
+
+> /usr/share/vim/vim90/doc/motion.txt
+	*	1725592557	0
+	"	1010	16
+
+> ~/bash/oldfiles.bash
+	*	1725591753	0
+	"	1	0
+	^	2	108
+	.	2	107
+	+	2	1
+	+	2	12
+	+	2	49
+	+	2	12
+	+	2	0
+	+	3	1
+	+	1	10
+	+	2	62
+	+	2	34
+	+	2	1
+	+	2	16
+	+	2	0
+	+	5	33
+	+	2	68
+	+	3	66
+	+	3	0
+	+	2	13
+	+	3	23
+	+	4	51
+	+	5	28
+	+	6	22
+	+	2	107
+
+> ~/bash/pwd-oldfiles.bash
+	*	1725591072	0
+	"	7	0
+	.	1	0
+	+	1	0
+	+	1	10
+	+	1	0
+	+	1	1
+	+	1	0
+	+	1	71
+	+	1	0
+	+	2	53
+	+	1	0
+
+> ~/.vim/plugin/better.vim
+	*	1725566041	0
+	"	157	0
+	^	174	0
+	.	173	86
+	+	164	1
+	+	160	1
+	+	160	0
+	+	160	84
+	+	161	86
+	+	162	88
+	+	163	90
+	+	164	0
+	+	160	0
+	+	169	0
+	+	170	80
+	+	171	82
+	+	172	84
+	+	173	86
+
+> ~/python_staging/errors_as_values.py
+	*	1725566038	0
+	"	52	12
+	^	20	29
+	.	21	0
+	+	32	30
+	+	32	0
+	+	25	44
+	+	32	0
+	+	26	0
+	+	32	0
+	+	25	30
+	+	28	44
+	+	2	9
+	+	28	12
+	+	25	39
+	+	9	43
+	+	32	0
+	+	9	74
+	+	53	0
+	+	52	0
+	+	47	33
+	+	52	76
+	+	54	62
+	+	46	0
+	+	33	22
+	+	36	37
+	+	46	0
+	+	29	53
+	+	30	40
+	+	3	28
+	+	5	13
+	+	31	54
+	+	36	94
+	+	27	21
+	+	24	0
+	+	4	0
+	+	43	27
+	+	63	50
+	+	63	0
+	+	56	0
+	+	56	9
+	+	25	34
+	+	61	49
+	+	6	8
+	+	34	60
+	+	36	45
+	+	56	0
+	+	61	58
+	+	61	23
+	+	36	97
+	+	36	0
+	+	42	30
+	+	43	18
+	+	7	22
+	+	38	0
+	+	37	0
+	+	40	35
+	+	38	0
+	+	37	37
+	+	39	34
+	+	38	30
+	+	39	47
+	+	35	58
+	+	37	51
+	+	35	79
+	+	46	0
+	+	10	21
+	+	42	0
+	+	43	0
+	+	45	24
+	+	61	22
+	+	34	0
+	+	43	0
+	+	44	15
+	+	45	0
+	+	7	23
+	+	10	41
+	+	45	0
+	+	22	0
+	+	45	38
+	+	61	0
+	+	61	38
+	+	61	0
+	+	56	0
+	+	56	28
+	+	56	0
+	+	60	18
+	+	12	37
+	+	35	22
+	+	12	17
+	+	11	0
+	+	35	35
+	+	15	20
+	+	21	0
+	+	18	34
+	+	19	32
+	+	17	25
+	+	21	0
+	+	19	68
+	+	20	28
+	+	21	0
+
 > ~/python_staging/dateutils.py
-	*	1725548944	0
-	"	27	0
-	^	28	34
-	.	28	0
+	*	1725566037	0
+	"	2	0
+	^	75	26
+	.	75	25
 	+	22	0
 	+	22	13
 	+	22	0
@@ -15263,6 +16749,274 @@ $
 	+	68	77
 	+	69	14
 	+	28	0
+	+	75	25
+
+> /usr/share/vim/vim90/doc/builtin.txt
+	*	1725564106	0
+	"	2232	50
+
+> ~/.vim/plugin/hello-world.vim
+	*	1725564066	0
+	"	3	8
+	^	3	11
+	.	3	0
+	+	2	19
+	+	3	21
+	+	1	17
+	+	2	0
+	+	4	0
+	+	3	0
+
+> ~/golang/viminfo_utils/zdirs_one_wk.go
+	*	1725563276	0
+	"	1	0
+	^	89	63
+	.	89	0
+	+	74	0
+	+	83	0
+	+	80	4
+	+	79	55
+	+	85	0
+	+	87	0
+	+	12	0
+	+	91	34
+	+	79	0
+	+	80	4
+	+	79	2
+	+	87	0
+	+	85	27
+	+	91	48
+	+	82	25
+	+	90	0
+	+	89	0
+
+> ~/.vim/plugin/run2.vim
+	*	1725562474	0
+	"	34	0
+	^	82	100
+	.	82	99
+	+	93	31
+	+	95	0
+	+	96	0
+	+	94	13
+	+	93	17
+	+	91	0
+	+	72	10
+	+	93	22
+	+	71	0
+	+	92	0
+	+	118	0
+	+	119	29
+	+	117	0
+	+	120	0
+	+	97	47
+	+	97	5
+	+	69	0
+	+	33	0
+	+	46	0
+	+	57	8
+	+	65	0
+	+	58	38
+	+	59	11
+	+	64	28
+	+	64	0
+	+	63	129
+	+	67	43
+	+	64	0
+	+	63	0
+	+	67	47
+	+	63	64
+	+	43	35
+	+	45	10
+	+	63	0
+	+	63	13
+	+	63	136
+	+	97	34
+	+	97	7
+	+	97	8
+	+	67	36
+	+	97	21
+	+	97	111
+	+	97	13
+	+	63	41
+	+	63	36
+	+	63	119
+	+	63	0
+	+	97	17
+	+	63	0
+	+	62	64
+	+	63	109
+	+	64	0
+	+	63	166
+	+	40	24
+	+	97	0
+	+	47	40
+	+	63	144
+	+	97	34
+	+	97	72
+	+	97	4
+	+	66	42
+	+	92	0
+	+	119	1
+	+	114	0
+	+	91	0
+	+	89	10
+	+	97	0
+	+	75	0
+	+	96	0
+	+	75	13
+	+	77	19
+	+	80	43
+	+	112	10
+	+	117	0
+	+	116	17
+	+	116	20
+	+	116	43
+	+	116	41
+	+	116	52
+	+	116	64
+	+	116	17
+	+	116	0
+	+	101	0
+	+	111	0
+	+	109	0
+	+	88	26
+	+	109	54
+	+	110	49
+	+	47	57
+	+	51	30
+	+	59	39
+	+	60	47
+	+	63	157
+	+	92	0
+	+	74	39
+	+	76	30
+	+	82	99
+
+> /usr/share/vim/vim90/doc/cmdline.txt
+	*	1725562406	0
+	"	857	46
+
+> /usr/share/vim/vim90/doc/pattern.txt
+	*	1725562393	0
+	"	1166	0
+
+> ~/pyscripts/todo.txt
+	*	1725552855	0
+	"	2	24
+	^	2	25
+	.	2	24
+	+	2	96
+	+	1	113
+	+	2	24
+
+> ~/bash/logs/gh-timeago-updates.log
+	*	1725552004	0
+	"	1848	0
+	.	1	0
+	+	1	0
+
+> ~/pyscripts/viewlog.py
+	*	1725551928	0
+	"	155	46
+	^	9	17
+	.	9	16
+	+	127	0
+	+	114	0
+	+	123	100
+	+	124	96
+	+	125	71
+	+	126	0
+	+	115	30
+	+	125	56
+	+	127	0
+	+	119	0
+	+	126	81
+	+	126	0
+	+	127	0
+	+	157	68
+	+	97	115
+	+	97	0
+	+	97	115
+	+	122	37
+	+	121	0
+	+	91	33
+	+	259	0
+	+	259	48
+	+	155	73
+	+	259	0
+	+	260	0
+	+	258	0
+	+	5	0
+	+	255	3
+	+	255	18
+	+	255	0
+	+	4	0
+	+	140	0
+	+	142	0
+	+	151	0
+	+	247	0
+	+	227	0
+	+	231	0
+	+	191	0
+	+	232	0
+	+	216	0
+	+	195	0
+	+	203	0
+	+	191	0
+	+	195	0
+	+	203	0
+	+	198	0
+	+	196	0
+	+	197	0
+	+	195	0
+	+	196	0
+	+	129	0
+	+	159	0
+	+	158	0
+	+	159	0
+	+	129	0
+	+	141	0
+	+	140	0
+	+	145	0
+	+	151	0
+	+	156	0
+	+	159	0
+	+	119	0
+	+	116	40
+	+	120	0
+	+	117	49
+	+	120	0
+	+	122	0
+	+	119	26
+	+	126	30
+	+	126	0
+	+	120	0
+	+	119	0
+	+	126	0
+	+	121	0
+	+	120	26
+	+	121	0
+	+	122	0
+	+	126	0
+	+	124	0
+	+	120	0
+	+	122	0
+	+	123	0
+	+	118	43
+	+	124	56
+	+	123	0
+	+	124	0
+	+	123	0
+	+	124	0
+	+	156	0
+	+	196	0
+	+	258	0
+	+	260	21
+	+	8	23
+	+	9	16
+	a	257	13
+	b	91	33
 
 > ~/python_common/waivek/date.py
 	*	1725548942	0
@@ -15684,106 +17438,6 @@ $
 	+	438	0
 	+	441	0
 
-> ~/pyscripts/viewlog.py
-	*	1725543067	0
-	"	206	4
-	^	259	27
-	.	259	21
-	+	126	0
-	+	113	0
-	+	122	100
-	+	123	96
-	+	124	71
-	+	125	0
-	+	114	30
-	+	124	56
-	+	126	0
-	+	118	0
-	+	125	81
-	+	125	0
-	+	126	0
-	+	156	68
-	+	96	115
-	+	96	0
-	+	96	115
-	+	121	37
-	+	120	0
-	+	90	33
-	+	258	0
-	+	258	48
-	+	154	73
-	+	258	0
-	+	259	0
-	+	257	0
-	+	5	0
-	+	254	3
-	+	254	18
-	+	254	0
-	+	4	0
-	+	139	0
-	+	141	0
-	+	150	0
-	+	246	0
-	+	226	0
-	+	230	0
-	+	190	0
-	+	231	0
-	+	215	0
-	+	194	0
-	+	202	0
-	+	190	0
-	+	194	0
-	+	202	0
-	+	197	0
-	+	195	0
-	+	196	0
-	+	194	0
-	+	195	0
-	+	128	0
-	+	158	0
-	+	157	0
-	+	158	0
-	+	128	0
-	+	140	0
-	+	139	0
-	+	144	0
-	+	150	0
-	+	155	0
-	+	158	0
-	+	118	0
-	+	115	40
-	+	119	0
-	+	116	49
-	+	119	0
-	+	121	0
-	+	118	26
-	+	125	30
-	+	125	0
-	+	119	0
-	+	118	0
-	+	125	0
-	+	120	0
-	+	119	26
-	+	120	0
-	+	121	0
-	+	125	0
-	+	123	0
-	+	119	0
-	+	121	0
-	+	122	0
-	+	117	43
-	+	123	56
-	+	122	0
-	+	123	0
-	+	122	0
-	+	123	0
-	+	155	0
-	+	195	0
-	+	257	0
-	+	259	21
-	a	256	13
-	b	90	33
-
 > ~/pyscripts/mycommand.py
 	*	1725543061	0
 	"	7	0
@@ -15881,63 +17535,6 @@ $
 	+	4	0
 	+	3	63
 
-> ~/python_common/waivek/todo.txt
-	*	1725542606	0
-	"	1	0
-	^	1	92
-	.	1	91
-	+	8	121
-	+	8	0
-	+	10	0
-	+	9	17
-	+	9	0
-	+	8	0
-	+	10	0
-	+	9	0
-	+	7	166
-	+	6	64
-	+	5	153
-	+	4	134
-	+	3	14
-	+	5	16
-	+	6	14
-	+	7	16
-	+	8	16
-	+	9	19
-	+	4	16
-	+	3	0
-	+	9	0
-	+	3	31
-	+	3	21
-	+	3	146
-	+	3	96
-	+	3	167
-	+	4	0
-	+	3	0
-	+	5	112
-	+	6	35
-	+	8	50
-	+	8	0
-	+	6	42
-	+	7	319
-	+	7	0
-	+	8	25
-	+	9	63
-	+	5	70
-	+	3	1
-	+	9	0
-	+	3	1
-	+	3	0
-	+	5	126
-	+	8	67
-	+	3	0
-	+	9	0
-	+	3	1
-	+	4	0
-	+	3	0
-	+	2	120
-	+	1	91
-
 > ~/pyscripts/simple-pydantic-error.py
 	*	1725542602	0
 	"	46	0
@@ -16034,330 +17631,6 @@ $
 	+	4	43
 	+	5	43
 
-> ~/.vim/plugin/run2.vim
-	*	1725533201	0
-	"	103	0
-	^	82	100
-	.	82	99
-	+	93	31
-	+	95	0
-	+	96	0
-	+	94	13
-	+	93	17
-	+	91	0
-	+	72	10
-	+	93	22
-	+	71	0
-	+	92	0
-	+	118	0
-	+	119	29
-	+	117	0
-	+	120	0
-	+	97	47
-	+	97	5
-	+	69	0
-	+	33	0
-	+	46	0
-	+	57	8
-	+	65	0
-	+	58	38
-	+	59	11
-	+	64	28
-	+	64	0
-	+	63	129
-	+	67	43
-	+	64	0
-	+	63	0
-	+	67	47
-	+	63	64
-	+	43	35
-	+	45	10
-	+	63	0
-	+	63	13
-	+	63	136
-	+	97	34
-	+	97	7
-	+	97	8
-	+	67	36
-	+	97	21
-	+	97	111
-	+	97	13
-	+	63	41
-	+	63	36
-	+	63	119
-	+	63	0
-	+	97	17
-	+	63	0
-	+	62	64
-	+	63	109
-	+	64	0
-	+	63	166
-	+	40	24
-	+	97	0
-	+	47	40
-	+	63	144
-	+	97	34
-	+	97	72
-	+	97	4
-	+	66	42
-	+	92	0
-	+	119	1
-	+	114	0
-	+	91	0
-	+	89	10
-	+	97	0
-	+	75	0
-	+	96	0
-	+	75	13
-	+	77	19
-	+	80	43
-	+	112	10
-	+	117	0
-	+	116	17
-	+	116	20
-	+	116	43
-	+	116	41
-	+	116	52
-	+	116	64
-	+	116	17
-	+	116	0
-	+	101	0
-	+	111	0
-	+	109	0
-	+	88	26
-	+	109	54
-	+	110	49
-	+	47	57
-	+	51	30
-	+	59	39
-	+	60	47
-	+	63	157
-	+	92	0
-	+	74	39
-	+	76	30
-	+	82	99
-
-> ~/pyscripts/print_todo.py
-	*	1725532563	0
-	"	129	0
-	.	130	0
-	+	75	41
-	+	89	0
-	+	74	29
-	+	75	70
-	+	77	0
-	+	74	54
-	+	77	78
-	+	88	0
-	+	77	68
-	+	87	0
-	+	77	39
-	+	81	67
-	+	84	20
-	+	77	40
-	+	123	36
-	+	123	19
-	+	123	0
-	+	118	120
-	+	118	0
-	+	117	79
-	+	123	0
-	+	117	79
-	+	118	0
-	+	117	85
-	+	77	80
-	+	77	23
-	+	81	23
-	+	84	89
-	+	81	83
-	+	86	28
-	+	84	123
-	+	77	82
-	+	84	141
-	+	15	13
-	+	14	29
-	+	84	0
-	+	76	93
-	+	81	0
-	+	77	69
-	+	84	108
-	+	76	50
-	+	76	46
-	+	76	86
-	+	74	46
-	+	75	0
-	+	46	13
-	+	76	63
-	+	74	79
-	+	75	100
-	+	120	117
-	+	123	119
-	+	58	109
-	+	76	101
-	+	75	96
-	+	74	75
-	+	75	65
-	+	121	0
-	+	121	70
-	+	58	122
-	+	74	0
-	+	80	0
-	+	79	19
-	+	80	0
-	+	83	37
-	+	81	36
-	+	97	0
-	+	123	13
-	+	124	32
-	+	124	126
-	+	124	0
-	+	122	0
-	+	94	27
-	+	95	22
-	+	58	108
-	+	78	43
-	+	99	29
-	+	99	9
-	+	101	0
-	+	99	0
-	+	70	34
-	+	71	33
-	+	72	35
-	+	73	24
-	+	84	0
-	+	85	148
-	+	85	177
-	+	69	30
-	+	85	115
-	+	85	25
-	+	85	154
-	+	85	150
-	+	85	33
-	+	85	175
-	+	85	34
-	+	85	176
-	+	85	79
-	+	1	21
-	+	1	0
-	+	129	22
-	+	130	0
-
-> ~/golang/viminfo_utils/zdirs_one_wk.go
-	*	1725532503	0
-	"	1	0
-	^	89	63
-	.	89	0
-	+	74	0
-	+	83	0
-	+	80	4
-	+	79	55
-	+	85	0
-	+	87	0
-	+	12	0
-	+	91	34
-	+	79	0
-	+	80	4
-	+	79	2
-	+	87	0
-	+	85	27
-	+	91	48
-	+	82	25
-	+	90	0
-	+	89	0
-
-> ~/.vim/mappings.vim
-	*	1725532379	0
-	"	17	35
-	^	17	36
-	.	17	35
-	+	2	13
-	+	2	0
-	+	5	0
-	+	2	0
-	+	2	13
-	+	3	0
-	+	5	0
-	+	5	24
-	+	5	25
-	+	5	0
-	+	1	0
-	+	6	55
-	+	24	25
-	+	25	17
-	+	24	25
-	+	25	25
-	+	24	25
-	+	25	25
-	+	24	5
-	+	25	5
-	+	24	0
-	+	25	0
-	+	24	7
-	+	25	16
-	+	13	1
-	+	10	2
-	+	15	1
-	+	25	20
-	+	15	2
-	+	24	0
-	+	23	0
-	+	21	0
-	+	19	4
-	+	19	0
-	+	19	1
-	+	19	0
-	+	15	6
-	+	19	0
-	+	15	6
-	+	19	0
-	+	15	7
-	+	19	0
-	+	15	6
-	+	19	0
-	+	15	5
-	+	19	0
-	+	25	70
-	+	25	34
-	+	25	0
-	+	25	64
-	+	19	1
-	+	13	35
-	+	10	35
-	+	7	35
-	+	13	0
-	+	11	0
-	+	12	0
-	+	11	0
-	+	1	0
-	+	11	33
-	+	1	0
-	+	11	33
-	+	1	0
-	+	11	56
-	+	1	0
-	+	19	0
-	+	11	55
-	+	21	101
-	+	20	36
-	+	19	0
-	+	16	47
-	+	18	0
-	+	16	36
-	+	18	0
-	+	16	0
-	+	14	0
-	+	15	49
-	+	16	53
-	+	16	0
-	+	25	0
-	+	9	0
-	+	10	0
-	+	15	1
-	+	16	1
-	+	16	0
-	+	22	0
-	+	17	35
-
 > ~/.vim/vimrc
 	*	1725532352	0
 	"	1146	0
@@ -16443,208 +17716,10 @@ $
 	+	424	0
 	+	1146	0
 
-> ~/.vim/plugin/run.vim
-	*	1725532324	0
-	"	144	0
-	^	5	18
-	.	8	0
-	+	8	28
-	+	8	0
-	+	8	10
-	+	8	8
-	+	8	15
-	+	8	0
-	+	8	17
-	+	8	20
-	+	8	0
-	+	8	38
-	+	8	15
-	+	8	0
-	+	8	19
-	+	8	0
-	+	8	19
-	+	8	18
-	+	8	8
-	+	8	39
-	+	8	16
-	+	8	0
-	+	8	27
-	+	8	10
-	+	8	0
-	+	8	12
-	+	8	18
-	+	8	0
-	+	15	8
-	+	17	0
-	+	8	0
-	+	1	3
-	+	8	13
-	+	8	0
-	+	8	45
-	+	8	0
-	+	8	26
-	+	8	0
-	+	8	33
-	+	8	32
-	+	8	0
-	+	8	11
-	+	8	0
-	+	8	48
-	+	8	0
-	+	8	12
-	+	8	0
-	+	8	71
-	+	8	37
-	+	8	82
-	+	8	12
-	+	8	0
-	+	48	0
-	+	50	0
-	+	48	4
-	+	49	5
-	+	8	0
-	+	8	19
-	+	58	0
-	+	21	22
-	+	28	0
-	+	27	0
-	+	8	0
-	+	13	0
-	+	8	0
-	+	14	0
-	+	13	0
-	+	8	0
-	+	1	3
-	+	1	21
-	+	6	10
-	+	3	36
-	+	4	37
-	+	5	17
-	+	8	0
-	+	13	0
-	+	8	0
-
-> ~/.vim/plugin/hello-world.vim
-	*	1725531334	0
-	"	4	4
-	^	4	5
-	.	4	0
-	+	2	19
-	+	3	21
-	+	1	17
-	+	2	0
-	+	4	0
-
 > ~/.vim/_viminfo_linux
 	*	1725531220	0
 	"	1629	0
 	^	14398	34
-
-> ~/.vim/plugin/jprev.vim
-	*	1725531219	0
-	"	140	0
-	^	11	0
-	.	11	0
-	+	99	66
-	+	99	20
-	+	99	70
-	+	99	0
-	+	99	9
-	+	99	0
-	+	99	39
-	+	99	0
-	+	86	18
-	+	99	78
-	+	99	23
-	+	99	40
-	+	99	42
-	+	99	24
-	+	99	0
-	+	63	49
-	+	69	10
-	+	63	37
-	+	64	0
-	+	99	41
-	+	99	109
-	+	66	60
-	+	67	38
-	+	68	40
-	+	99	11
-	+	99	0
-	+	99	19
-	+	99	0
-	+	99	8
-	+	99	0
-	+	99	8
-	+	99	0
-	+	71	26
-	+	82	10
-	+	99	0
-	+	80	0
-	+	86	39
-	+	87	38
-	+	74	42
-	+	87	42
-	+	98	0
-	+	93	54
-	+	97	154
-	+	91	18
-	+	97	23
-	+	97	35
-	+	97	0
-	+	97	116
-	+	92	0
-	+	97	27
-	+	94	11
-	+	95	63
-	+	96	12
-	+	97	77
-	+	97	97
-	+	97	0
-	+	97	36
-	+	99	38
-	+	99	46
-	+	99	0
-	+	92	0
-	+	91	0
-	+	99	0
-	+	88	0
-	+	91	53
-	+	89	32
-	+	90	0
-	+	91	0
-	+	106	0
-	+	97	0
-	+	91	0
-	+	87	0
-	+	78	0
-	+	128	0
-	+	109	0
-	+	103	0
-	+	128	0
-	+	117	34
-	+	118	7
-	+	120	14
-	+	121	8
-	+	128	0
-	+	105	39
-	+	105	9
-	+	123	48
-	+	124	43
-	+	127	53
-	+	119	0
-	+	105	0
-	+	124	28
-	+	125	53
-	+	127	29
-	+	127	0
-	+	139	38
-	+	141	0
-	+	139	10
-	+	140	38
-	+	105	0
-	+	136	0
-	+	11	0
 
 > ~/python_common/waivek/data.py
 	*	1725522540	0
@@ -16668,134 +17743,9 @@ $
 	+	46	0
 	+	13	0
 
-> ~/.vim/plugin/better.vim
-	*	1725522241	0
-	"	1	0
-	^	174	0
-	.	173	86
-	+	164	1
-	+	160	1
-	+	160	0
-	+	160	84
-	+	161	86
-	+	162	88
-	+	163	90
-	+	164	0
-	+	160	0
-	+	169	0
-	+	170	80
-	+	171	82
-	+	172	84
-	+	173	86
-
 > /usr/share/vim/vim90/doc/map.txt
 	*	1725509820	0
 	"	1235	3
-
-> ~/.vim/todo.txt
-	*	1725509747	0
-	"	8	76
-	.	24	79
-	+	30	0
-	+	26	0
-	+	25	126
-	+	24	83
-	+	23	214
-	+	23	137
-	+	22	96
-	+	30	0
-	+	22	99
-	+	22	0
-	+	21	53
-	+	19	96
-	+	19	0
-	+	18	167
-	+	32	0
-	+	31	0
-	+	17	0
-	+	32	0
-	+	17	79
-	+	17	0
-	+	16	165
-	+	18	0
-	+	21	0
-	+	16	0
-	+	17	0
-	+	32	0
-	+	16	0
-	+	18	0
-	+	23	0
-	+	16	0
-	+	17	0
-	+	18	0
-	+	17	0
-	+	18	0
-	+	17	0
-	+	18	0
-	+	19	68
-	+	16	0
-	+	19	68
-	+	16	0
-	+	22	0
-	+	22	87
-	+	16	0
-	+	21	0
-	+	19	0
-	+	16	0
-	+	19	0
-	+	24	0
-	+	23	0
-	+	22	0
-	+	14	84
-	+	14	0
-	+	13	19
-	+	22	27
-	+	13	100
-	+	13	0
-	+	15	165
-	+	13	0
-	+	14	0
-	+	19	0
-	+	18	0
-	+	20	108
-	+	27	0
-	+	12	69
-	+	20	0
-	+	11	83
-	+	10	69
-	+	9	87
-	+	8	27
-	+	8	105
-	+	8	0
-	+	11	0
-	+	12	0
-	+	22	0
-	+	8	128
-	+	11	46
-	+	11	0
-	+	8	0
-	+	11	0
-	+	7	124
-	+	8	174
-	+	7	214
-	+	6	75
-	+	5	63
-	+	6	0
-	+	4	142
-	+	3	103
-	+	2	143
-	+	1	123
-	+	1	0
-	+	2	0
-	+	4	0
-	+	5	0
-	+	15	0
-	+	12	0
-	+	7	0
-	+	25	0
-	+	24	0
-	+	1	0
-	+	24	79
 
 > ~/.vim/Highlight test
 	*	1725509661	0
@@ -16930,10 +17880,6 @@ $
 	*	1725509571	0
 	"	5553	0
 
-> /usr/share/vim/vim90/doc/builtin.txt
-	*	1725509523	0
-	"	3635	42
-
 > ~/.vim/colors/codedark.vim
 	*	1725508283	0
 	"	186	25
@@ -17043,10 +17989,6 @@ $
 	+	20	13
 	+	20	0
 
-> /usr/share/vim/vim90/doc/motion.txt
-	*	1725468024	0
-	"	1125	59
-
 > ~/.vim/tmp/verbose-uses.txt
 	*	1725458065	0
 	"	19	0
@@ -17064,10 +18006,6 @@ $
 	+	19	0
 	+	7	0
 	+	19	0
-
-> /usr/share/vim/vim90/doc/options.txt
-	*	1725457908	0
-	"	8750	6
 
 > ~/.vim/plugin/pwd-oldfiles.vim
 	*	1725447402	0
@@ -17353,21 +18291,6 @@ $
 	+	71	28
 	+	52	0
 
-> ~/bash/pwd-oldfiles.bash
-	*	1725378632	0
-	"	1	0
-	^	2	72
-	.	2	71
-	+	2	0
-	+	3	0
-	+	2	0
-	+	1	10
-	+	2	0
-	+	2	1
-	+	2	0
-	+	3	0
-	+	2	71
-
 > ~/.vim/.fzf/doc/fzf.txt
 	*	1725378602	0
 	"	2	67
@@ -17557,33 +18480,6 @@ $
 	+	34	0
 	+	32	0
 	+	39	0
-
-> ~/bash/oldfiles.bash
-	*	1725365603	0
-	"	2	52
-	^	4	34
-	.	2	68
-	+	2	1
-	+	2	12
-	+	2	49
-	+	2	12
-	+	2	0
-	+	3	1
-	+	1	10
-	+	2	62
-	+	2	34
-	+	2	1
-	+	2	16
-	+	2	0
-	+	4	33
-	+	2	68
-
-> ~/tooling/docs/fzf.man
-	*	1725365342	0
-	"	1	0
-	^	34	12
-	.	34	0
-	+	34	0
 
 > /tmp/fzf-history.txt
 	*	1725283482	0
@@ -18092,22 +18988,6 @@ $
 	"	1	0
 	.	5	0
 	+	5	0
-
-> ~/python_staging/rich_experiments.py
-	*	1725109507	0
-	"	33	42
-	^	33	44
-	.	33	42
-	+	1	0
-	+	7	10
-	+	8	0
-	+	33	56
-	+	35	0
-	+	2	10
-	+	36	26
-	+	37	9
-	+	34	10
-	+	33	42
 
 > ~/bash/goutils/print.go
 	*	1725105258	0
@@ -18992,90 +19872,6 @@ $
 	+	399	0
 	+	398	0
 
-> ~/python_common/waivek/__init__.py
-	*	1724982151	0
-	"	23	26
-	^	23	2
-	.	23	1
-	+	25	1
-	+	20	38
-	+	1	0
-	+	12	30
-	+	13	0
-	+	13	27
-	+	13	0
-	+	6	0
-	+	17	0
-	+	21	57
-	+	13	1
-	+	14	11
-	+	25	10
-	+	21	58
-	+	21	0
-	+	25	18
-	+	25	25
-	+	25	0
-	+	23	17
-	+	23	74
-	+	23	17
-	+	25	1
-	+	25	0
-	+	25	4
-	+	23	0
-	+	25	18
-	+	25	0
-	+	25	35
-	+	25	5
-	+	25	47
-	+	23	85
-	+	25	0
-	+	23	0
-	+	25	0
-	+	24	35
-	+	25	0
-	+	24	0
-	+	23	58
-	+	24	0
-	+	23	51
-	+	23	0
-	+	1	0
-	+	23	0
-	+	24	35
-	+	24	0
-	+	24	88
-	+	24	0
-	+	4	64
-	+	4	31
-	+	4	30
-	+	23	21
-	+	24	0
-	+	23	0
-	+	24	0
-	+	23	5
-	+	23	1
-	+	24	4
-	+	23	44
-	+	24	13
-	+	23	36
-	+	24	6
-	+	23	51
-	+	24	15
-	+	23	0
-	+	24	0
-	+	24	5
-	+	24	0
-	+	8	0
-	+	21	0
-	+	10	0
-	+	15	0
-	+	7	0
-	+	4	0
-	+	23	0
-	+	25	0
-	+	1	0
-	+	3	0
-	+	23	1
-
 > ~/python_common/waivek/ic.py
 	*	1724981930	0
 	"	546	8
@@ -19386,14 +20182,6 @@ $
 	+	226	0
 	a	306	28
 	b	306	29
-
-> ~/python_common/waivek/print_utils.py
-	*	1724976111	0
-	"	210	4
-	.	210	0
-	+	183	0
-	+	3	0
-	+	210	0
 
 > ~/python_common/waivek/testbetterpdb.py
 	*	1724976086	0
@@ -20630,10 +21418,6 @@ $
 	+	2	9
 	+	4	11
 
-> /usr/share/vim/vim90/doc/terminal.txt
-	*	1724196168	0
-	"	912	23
-
 > /usr/share/vim/vim90/doc/remote.txt
 	*	1724195077	0
 	"	16	25
@@ -20662,109 +21446,6 @@ $
 	+	386	0
 	+	387	0
 	+	386	0
-
-> ~/python_staging/errors_as_values.py
-	*	1724186445	0
-	"	12	0
-	^	20	29
-	.	21	0
-	+	32	30
-	+	32	0
-	+	25	44
-	+	32	0
-	+	26	0
-	+	32	0
-	+	25	30
-	+	28	44
-	+	2	9
-	+	28	12
-	+	25	39
-	+	9	43
-	+	32	0
-	+	9	74
-	+	53	0
-	+	52	0
-	+	47	33
-	+	52	76
-	+	54	62
-	+	46	0
-	+	33	22
-	+	36	37
-	+	46	0
-	+	29	53
-	+	30	40
-	+	3	28
-	+	5	13
-	+	31	54
-	+	36	94
-	+	27	21
-	+	24	0
-	+	4	0
-	+	43	27
-	+	63	50
-	+	63	0
-	+	56	0
-	+	56	9
-	+	25	34
-	+	61	49
-	+	6	8
-	+	34	60
-	+	36	45
-	+	56	0
-	+	61	58
-	+	61	23
-	+	36	97
-	+	36	0
-	+	42	30
-	+	43	18
-	+	7	22
-	+	38	0
-	+	37	0
-	+	40	35
-	+	38	0
-	+	37	37
-	+	39	34
-	+	38	30
-	+	39	47
-	+	35	58
-	+	37	51
-	+	35	79
-	+	46	0
-	+	10	21
-	+	42	0
-	+	43	0
-	+	45	24
-	+	61	22
-	+	34	0
-	+	43	0
-	+	44	15
-	+	45	0
-	+	7	23
-	+	10	41
-	+	45	0
-	+	22	0
-	+	45	38
-	+	61	0
-	+	61	38
-	+	61	0
-	+	56	0
-	+	56	28
-	+	56	0
-	+	60	18
-	+	12	37
-	+	35	22
-	+	12	17
-	+	11	0
-	+	35	35
-	+	15	20
-	+	21	0
-	+	18	34
-	+	19	32
-	+	17	25
-	+	21	0
-	+	19	68
-	+	20	28
-	+	21	0
 
 > ~/python_common/waivek/log.py
 	*	1724186438	0
@@ -21962,10 +22643,6 @@ $
 	*	1723675880	0
 	"	27	0
 
-> /usr/share/vim/vim90/doc/help.txt
-	*	1723672890	0
-	"	1	0
-
 > ~/sqlite-editor/getdbpaths.py
 	*	1723672634	0
 	"	7	0
@@ -22403,12 +23080,6 @@ $
 > ~/bash/logs/cron.log
 	*	1723582216	0
 	"	1578	0
-
-> ~/bash/logs/gh-timeago-updates.log
-	*	1723582198	0
-	"	1	0
-	.	1	0
-	+	1	0
 
 > ~/python_common/waivek/data/experiments.log
 	*	1723581767	0
@@ -26338,10 +27009,6 @@ $
 > ~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim
 	*	1722457207	0
 	"	296	0
-
-> /usr/share/vim/vim90/doc/pattern.txt
-	*	1722455684	0
-	"	1270	11
 
 > /usr/share/vim/vim90/doc/indent.txt
 	*	1722455602	0
@@ -45009,10 +45676,6 @@ $
 > ~/frontend/buttons.html
 	*	1694047655	0
 	"	1	0
-
-> /usr/share/vim/vim90/doc/cmdline.txt
-	*	1694047005	0
-	"	978	11
 
 > ~/.vim/plugin/nuxtpaths.vim
 	*	1694041367	0

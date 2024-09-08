@@ -124,7 +124,10 @@ function! s:DoJPrevious()
     let l:ctrl_o_count_string = l:next_jump["jump"]
     let l:ctrl_o_count = str2nr(l:ctrl_o_count_string)
 
+
     execute "normal! " . l:ctrl_o_count . "\<C-o>"
+
+    echom "l:ctrl_o_count = " . string(l:ctrl_o_count)
 
 endfunction
 
@@ -132,9 +135,9 @@ function! s:Main()
     call s:DoJPrevious()
 endfunction
 
-if v:vim_did_enter
-    Capture call s:Main()
-endif
+" if v:vim_did_enter
+"     Capture call s:Main()
+" endif
 
 command! JPrevious call s:DoJPrevious()
 command! Jprevious call s:DoJPrevious()
