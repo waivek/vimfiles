@@ -569,7 +569,7 @@ function! s:TabularizeCharacterUnderCursor()
     let tabular_command = printf("Tabularize /%s/%s1", character_under_cursor, tabular_alignment_command)
     execute tabular_command
     let @a = tabular_command
-    echo tabular_command
+    " echo tabular_command
 
 endfunction
 nnoremap <silent> gt :call <SID>TabularizeCharacterUnderCursor()<CR>

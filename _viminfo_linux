@@ -11,45 +11,151 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/marker
+~MSle0~/ copper
 
 # Last Substitute Search Pattern:
 ~MSle0&Function\|Operator
 
 # Last Substitute String:
-$''.join(ansi_code for ansi_code in right_tokens[0].active_ansi_codes)
+$
 
 # Command Line History (newest to oldest):
-:qa
-|2,0,1725759930,,"qa"
+:q
+|2,0,1725999846,,"q"
 :bd
-|2,0,1725759928,,"bd"
+|2,0,1725999840,,"bd"
+:Tab / copper/
+|2,0,1725981394,,"Tab / copper/"
+:e ~/factorio/red_circuit.txt
+|2,0,1725980941,,"e ~/factorio/red_circuit.txt"
+:MRU alarm
+|2,0,1725917639,,"MRU alarm"
+:MRU cale
+|2,0,1725917634,,"MRU cale"
+:CopyToHost
+|2,0,1725916908,,"CopyToHost"
+:b table
+|2,0,1725916844,,"b table"
+:CocList diagnostics
+|2,0,1725916745,,"CocList diagnostics"
+:Rg get_max_width_and_height
+|2,0,1725916384,,"Rg get_max_width_and_height"
+:Rg file_count=$(echo "$selected_files" | wc -l)
+|2,0,1725916381,,"Rg file_count=$(echo \"$selected_files\" | wc -l)"
+:earlier 10h
+|2,0,1725916276,,"earlier 10h"
+:Date
+|2,0,1725916138,,"Date"
+:e ~/.vim/todo.txt
+|2,0,1725916134,,"e ~/.vim/todo.txt"
+:map [
+|2,0,1725916055,,"map ["
+:Template
+|2,0,1725915179,,"Template"
+:qa
+|2,0,1725915168,,"qa"
+:e oldfiles.bash
+|2,0,1725915143,,"e oldfiles.bash"
+:qa!
+|2,0,1725915104,,"qa!"
+:e waivek/table.py
+|2,0,1725915003,,"e waivek/table.py"
+:pwd
+|2,0,1725914955,,"pwd"
+:e ic.py
+|2,0,1725914953,,"e ic.py"
+:e printtodocopy.py
+|2,0,1725825001,,"e printtodocopy.py"
+:lnext
+|2,0,1725821095,,"lnext"
+:cn
+|2,0,1725821094,,"cn"
+:q!
+|2,0,1725819261,,"q!"
+:CocRestart
+|2,0,1725819010,,"CocRestart"
+:e colo
+|2,0,1725819007,,"e colo"
+:291
+|2,0,1725818334,,"291"
+:246
+|2,0,1725818071,,"246"
+:e error2.py
+|2,0,1725818069,,"e error2.py"
+:e foo.py
+|2,0,1725817697,,"e foo.py"
+:MRU 48:simple-pydantic-error.py
+|2,0,1725817610,,"MRU 48:simple-pydantic-error.py"
+:Rg
+|2,0,1725817573,,"Rg"
+:Jprevious
+|2,0,1725817081,,"Jprevious"
+:so %
+|2,0,1725817076,,"so %"
+:edit $MYVIMRC
+|2,0,1725817068,,"edit $MYVIMRC"
+:MRU mappin
+|2,0,1725817066,,"MRU mappin"
+:HotReload
+|2,0,1725816538,,"HotReload"
+:MRU run3
+|2,0,1725816479,,"MRU run3"
+:MRU run
+|2,0,1725816475,,"MRU run"
+:MRU ru3
+|2,0,1725816473,,"MRU ru3"
+:echo expand("%")
+|2,0,1725816471,,"echo expand(\"%\")"
+:echo %
+|2,0,1725816455,,"echo %"
+:!python %
+|2,0,1725816453,,"!python %"
+:echo 
+|2,0,1725816450,,"echo "
+:w
+|2,0,1725816440,,"w"
+:e truncate.py
+|2,0,1725816140,,"e truncate.py"
+:grep -g '*.py' --fixed-strings "def truncate"
+|2,0,1725815985,,"grep -g '*.py' --fixed-strings \"def truncate\""
+:grep -g '*.py' --fixed-strings def truncat
+|2,0,1725815978,,"grep -g '*.py' --fixed-strings def truncat"
+:Tab /#/
+|2,0,1725815920,,"Tab /#/"
+:Echo "Hello World!"
+|2,0,1725815768,,"Echo \"Hello World!\""
+:e test_truncate.py
+|2,0,1725813573,,"e test_truncate.py"
+:diffput
+|2,0,1725813560,,"diffput"
+:diffthis
+|2,0,1725813545,,"diffthis"
+:e truncatediff.py
+|2,0,1725813540,,"e truncatediff.py"
+:enew
+|2,0,1725813536,,"enew"
+:copen
+|2,0,1725804044,,"copen"
+:RgHome def truncate
+|2,0,1725804029,,"RgHome def truncate"
+:RgHome -g "*.py" "def truncate"
+|2,0,1725804017,,"RgHome -g \"*.py\" \"def truncate\""
+:RgHome -g "*.py" "^\\s*def truncate"
+|2,0,1725804002,,"RgHome -g \"*.py\" \"^\\\\s*def truncate\""
+:RgHome -g "*.py" "^\s*def truncate"
+|2,0,1725803987,,"RgHome -g \"*.py\" \"^\\s*def truncate\""
 :helpgrep ++rows
 |2,0,1725759196,,"helpgrep ++rows"
 :h :ter
 |2,0,1725759194,,"h :ter"
 :h ++rows
 |2,0,1725759191,,"h ++rows"
-:q!
-|2,0,1725759060,,"q!"
-:Rg
-|2,0,1725758759,,"Rg"
 :term
 |2,0,1725757230,,"term"
-:e test_truncate.py
-|2,0,1725754400,,"e test_truncate.py"
-:q
-|2,0,1725753841,,"q"
-:diffput
-|2,0,1725751775,,"diffput"
-:diffthis
-|2,0,1725751758,,"diffthis"
 :0read truncate.py
 |2,0,1725751736,,"0read truncate.py"
 :0read truncate
 |2,0,1725751733,,"0read truncate"
-:e truncatediff.py
-|2,0,1725751727,,"e truncatediff.py"
 :Enumerate
 |2,0,1725749928,,"Enumerate"
 :MRU truncate
@@ -94,8 +200,6 @@ $''.join(ansi_code for ansi_code in right_tokens[0].active_ansi_codes)
 |2,0,1725691410,,"Rename footer-edge-case.txt"
 :e preset-swe.txt
 |2,0,1725691189,,"e preset-swe.txt"
-:Template
-|2,0,1725690860,,"Template"
 :Rename render_prompt.py
 |2,0,1725690855,,"Rename render_prompt.py"
 :e ~/prompts/
@@ -112,18 +216,12 @@ $''.join(ansi_code for ansi_code in right_tokens[0].active_ansi_codes)
 |2,0,1725638483,,"MRU 10:todo.txt"
 :set 
 |2,0,1725638472,,"set "
-:Date
-|2,0,1725636690,,"Date"
-:so %
-|2,0,1725633393,,"so %"
 :MRU ru
 |2,0,1725633309,,"MRU ru"
 :MRU run.vim
 |2,0,1725633296,,"MRU run.vim"
 :set nonumber
 |2,0,1725633284,,"set nonumber"
-:MRU run
-|2,0,1725633155,,"MRU run"
 :later 2d
 |2,0,1725631175,,"later 2d"
 :earlier 1d
@@ -146,16 +244,12 @@ $''.join(ansi_code for ansi_code in right_tokens[0].active_ansi_codes)
 |2,0,1725592570,,"jpre"
 :h :keepjumps
 |2,0,1725592551,,"h :keepjumps"
-:Jprevious
-|2,0,1725592497,,"Jprevious"
 :jprev
 |2,0,1725592491,,"jprev"
 :jpr
 |2,0,1725592472,,"jpr"
 :h :jumps
 |2,0,1725591998,,"h :jumps"
-:pwd
-|2,0,1725591476,,"pwd"
 :Todo
 |2,0,1725591113,,"Todo"
 :next
@@ -222,8 +316,6 @@ $''.join(ansi_code for ansi_code in right_tokens[0].active_ansi_codes)
 |2,0,1725563228,,"call execute("
 :MRU go$
 |2,0,1725563163,,"MRU go$"
-:HotReload
-|2,0,1725563131,,"HotReload"
 :h term
 |2,0,1725562976,,"h term"
 :h terminal
@@ -264,14 +356,10 @@ $''.join(ansi_code for ansi_code in right_tokens[0].active_ansi_codes)
 |2,0,1725548941,,"b"
 :vert
 |2,0,1725545656,,"vert"
-:CocRestart
-|2,0,1725545229,,"CocRestart"
 :ver
 |2,0,1725544296,,"ver"
 :MRU 198:vivek/python_staging/dateutils.py
 |2,0,1725543709,,"MRU 198:vivek/python_staging/dateutils.py"
-:copen
-|2,0,1725543157,,"copen"
 :MRU 117:python_common/waivek/date.py
 |2,0,1725543135,,"MRU 117:python_common/waivek/date.py"
 :e ~/python_common/d
@@ -280,8 +368,6 @@ $''.join(ansi_code for ansi_code in right_tokens[0].active_ansi_codes)
 |2,0,1725543087,,"RgHome dateutil"
 :RgHome dateutils
 |2,0,1725543084,,"RgHome dateutils"
-:cn
-|2,0,1725543066,,"cn"
 :RgHome def.*parse
 |2,0,1725543057,,"RgHome def.*parse"
 :RgHome -g "*.py" parse
@@ -384,12 +470,8 @@ $''.join(ansi_code for ansi_code in right_tokens[0].active_ansi_codes)
 |2,0,1725507673,,"colo"
 :hi colo
 |2,0,1725507670,,"hi colo"
-:w
-|2,0,1725507351,,"w"
 :e plugin/hl-Function.vim
 |2,0,1725507349,,"e plugin/hl-Function.vim"
-:edit $MYVIMRC
-|2,0,1725507330,,"edit $MYVIMRC"
 :h :arglocal
 |2,0,1725507302,,"h :arglocal"
 :h local
@@ -476,8 +558,6 @@ $''.join(ansi_code for ansi_code in right_tokens[0].active_ansi_codes)
 |2,0,1725457917,,"%sort u"
 :set verbosefile?
 |2,0,1725457907,,"set verbosefile?"
-:echo 
-|2,0,1725457904,,"echo "
 :echo &verbosefile
 |2,0,1725457901,,"echo &verbosefile"
 :h 'verbosefile'
@@ -486,8 +566,6 @@ $''.join(ansi_code for ansi_code in right_tokens[0].active_ansi_codes)
 |2,0,1725457870,,"v/verbose/d"
 :e ~/.vim/tmp/verbose-uses.txt
 |2,0,1725457862,,"e ~/.vim/tmp/verbose-uses.txt"
-:enew
-|2,0,1725457856,,"enew"
 :abbrev jprev  
 |2,0,1725457810,,"abbrev jprev  "
 :cd plugin/
@@ -568,8 +646,6 @@ $''.join(ansi_code for ansi_code in right_tokens[0].active_ansi_codes)
 |2,0,1725365818,,"find X11/"
 :MRU oldfiles.go
 |2,0,1725365813,,"MRU oldfiles.go"
-:qa!
-|2,0,1725365616,,"qa!"
 :e zdirs_one_wk.go
 |2,0,1725365405,,"e zdirs_one_wk.go"
 :MRU fzf.man
@@ -668,8 +744,6 @@ $''.join(ansi_code for ansi_code in right_tokens[0].active_ansi_codes)
 |2,0,1725108829,,"e richPri"
 :e go.mod
 |2,0,1725108826,,"e go.mod"
-:e ~/.vim/todo.txt
-|2,0,1725108308,,"e ~/.vim/todo.txt"
 :CocDiagnostics
 |2,0,1725106354,,"CocDiagnostics"
 :LocalSymbols
@@ -678,8 +752,6 @@ $''.join(ansi_code for ansi_code in right_tokens[0].active_ansi_codes)
 |2,0,1725106218,,"CocList "
 :lopen
 |2,0,1725106210,,"lopen"
-:CocList diagnostics
-|2,0,1725106204,,"CocList diagnostics"
 :MRU al
 |2,0,1725074801,,"MRU al"
 :MRU bashrc
@@ -932,8 +1004,6 @@ $''.join(ansi_code for ansi_code in right_tokens[0].active_ansi_codes)
 |2,0,1724469675,,"b waivek/error2.py"
 :Rename olddirs.bash
 |2,0,1724363179,,"Rename olddirs.bash"
-:e oldfiles.bash
-|2,0,1724363119,,"e oldfiles.bash"
 :MRU 60:oldfiles.bash
 |2,0,1724362608,,"MRU 60:oldfiles.bash"
 :e oldfiles2.go.txt
@@ -1052,8 +1122,6 @@ $''.join(ansi_code for ansi_code in right_tokens[0].active_ansi_codes)
 |2,0,1724220937,,"e ~/Twitch/"
 :e waivek/
 |2,0,1724220862,,"e waivek/"
-:e foo.py
-|2,0,1724203728,,"e foo.py"
 :e mycmd.py
 |2,0,1724201175,,"e mycmd.py"
 :MRU 2:pdb2.py
@@ -1150,8 +1218,6 @@ $''.join(ansi_code for ansi_code in right_tokens[0].active_ansi_codes)
 |2,0,1724186029,,"lnex"
 :ll
 |2,0,1724186027,,"ll"
-:CopyToHost
-|2,0,1724114644,,"CopyToHost"
 :MRU _vimin
 |2,0,1724113952,,"MRU _vimin"
 :e oldfiles2.go
@@ -1186,8 +1252,6 @@ $''.join(ansi_code for ansi_code in right_tokens[0].active_ansi_codes)
 |2,0,1724111730,,"MRU 2:oldfiles.go"
 :!python3 %
 |2,0,1724111702,,"!python3 %"
-:!python %
-|2,0,1724111697,,"!python %"
 :e ~/pyscripts/oldfiles.py
 |2,0,1724111690,,"e ~/pyscripts/oldfiles.py"
 :e hello-go/oldfiles.go
@@ -2550,8 +2614,6 @@ $''.join(ansi_code for ansi_code in right_tokens[0].active_ansi_codes)
 |2,0,1722196801,,"VD data/videos.db"
 :OpenDB data/videos.db
 |2,0,1722196777,,"OpenDB data/videos.db"
-:lnext
-|2,0,1722196419,,"lnext"
 :e dow
 |2,0,1722194630,,"e dow"
 :MRU 42:mappings.vim
@@ -3318,8 +3380,6 @@ $''.join(ansi_code for ansi_code in right_tokens[0].active_ansi_codes)
 |2,0,1720792373,,"e /var/log/cron.log"
 :Template template
 |2,0,1720766912,,"Template template"
-:echo expand("%")
-|2,0,1720766701,,"echo expand(\"%\")"
 :echo expand("%:p:b")
 |2,0,1720766698,,"echo expand(\"%:p:b\")"
 :echo expand("%:p:h")
@@ -8850,8 +8910,6 @@ $''.join(ansi_code for ansi_code in right_tokens[0].active_ansi_codes)
 |2,0,1692342111,,"b validate.py"
 :b .direnv/python-3.10.6/lib/python3.10/site-packages/waivek/ic.py
 |2,0,1692342067,,"b .direnv/python-3.10.6/lib/python3.10/site-packages/waivek/ic.py"
-:e ic.py
-|2,0,1692341972,,"e ic.py"
 :MRU i
 |2,0,1692341967,,"MRU i"
 :MRU 2:introspection.py
@@ -10308,6 +10366,76 @@ $''.join(ansi_code for ansi_code in right_tokens[0].active_ansi_codes)
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/ copper
+|2,1,1725981390,47," copper"
+?/copper
+|2,1,1725981386,47,"copper"
+?/v_pad
+|2,1,1725917062,47,"v_pad"
+?/\(def\|class\)\s\+\w*fmt
+|2,1,1725917058,47,"\\(def\\|class\\)\\s\\+\\w*fmt"
+?/\(def\|class\)\s\+\w*distribute
+|2,1,1725917014,47,"\\(def\\|class\\)\\s\\+\\w*distribute"
+?/ignore
+|2,1,1725916858,47,"ignore"
+?/value
+|2,1,1725916831,47,"value"
+?/stmt
+|2,1,1725916811,47,"stmt"
+?/is_tupl
+|2,1,1725916339,47,"is_tupl"
+?/\(def\|class\)\s\+\w*is_tup
+|2,1,1725916208,47,"\\(def\\|class\\)\\s\\+\\w*is_tup"
+?/\(def\|class\)\s\+\w*v_pad
+|2,1,1725916032,47,"\\(def\\|class\\)\\s\\+\\w*v_pad"
+?/\(def\|class\)\s\+\w*Table
+|2,1,1725915917,47,"\\(def\\|class\\)\\s\\+\\w*Table"
+?/fzf
+|2,1,1725914731,47,"fzf"
+?/+
+|2,1,1725824740,47,"+"
+?/truncate
+|2,1,1725823296,47,"truncate"
+?/ljust
+|2,1,1725821795,47,"ljust"
+?/\(def\|class\)\s\+\w*width
+|2,1,1725821518,47,"\\(def\\|class\\)\\s\\+\\w*width"
+?/len(
+|2,1,1725821509,47,"len("
+?/get_di
+|2,1,1725821498,47,"get_di"
+?/len
+|2,1,1725821482,47,"len"
+?/pad
+|2,1,1725821429,47,"pad"
+?/\(def\|class\)\s\+\w*
+|2,1,1725820542,47,"\\(def\\|class\\)\\s\\+\\w*"
+?/get_displa
+|2,1,1725820501,47,"get_displa"
+?/\(def\|class\)\s\+\w*ic(
+|2,1,1725820252,47,"\\(def\\|class\\)\\s\\+\\w*ic("
+?/ic
+|2,1,1725820250,47,"ic"
+?/\(def\|class\)\s\+\w*wrap
+|2,1,1725819199,47,"\\(def\\|class\\)\\s\\+\\w*wrap"
+?/status
+|2,1,1725818899,47,"status"
+?/to le
+|2,1,1725817370,47,"to le"
+?/gt
+|2,1,1725817069,47,"gt"
+?/separator
+|2,1,1725816829,47,"separator"
+?/\(def\|class\)\s\+\w*trunc
+|2,1,1725816389,47,"\\(def\\|class\\)\\s\\+\\w*trunc"
+? ^\s*$\n\s*$
+|2,1,1725816363,,"^\\s*$\\n\\s*$"
+?/\(def\|class\)\s\+\w*color
+|2,1,1725816197,47,"\\(def\\|class\\)\\s\\+\\w*color"
+?/\(def\|class\)\s\+\w*truncate
+|2,1,1725816144,47,"\\(def\\|class\\)\\s\\+\\w*truncate"
+?/print(
+|2,1,1725815746,47,"print("
 ?/marker
 |2,1,1725759323,47,"marker"
 ?/++rows
@@ -10336,8 +10464,6 @@ $''.join(ansi_code for ansi_code in right_tokens[0].active_ansi_codes)
 |2,1,1725751395,47,"ansi"
 ? in \zs[^:]\+
 |2,1,1725749928,,"in \\zs[^:]\\+"
-?/truncate
-|2,1,1725691601,47,"truncate"
 ?/iter
 |2,1,1725688395,47,"iter"
 ?/number
@@ -10384,8 +10510,6 @@ $''.join(ansi_code for ansi_code in right_tokens[0].active_ansi_codes)
 |2,1,1725543160,47,"staging"
 ?/pyscript
 |2,1,1725543105,47,"pyscript"
-? ^\s*$\n\s*$
-|2,1,1725540985,,"^\\s*$\\n\\s*$"
 ?/resource
 |2,1,1725540973,47,"resource"
 ? \<video_ids_str\>
@@ -10510,8 +10634,6 @@ $''.join(ansi_code for ansi_code in right_tokens[0].active_ansi_codes)
 |2,1,1725227177,47,"toggle"
 ?/scheme
 |2,1,1725207429,47,"scheme"
-?/fzf
-|2,1,1725199262,47,"fzf"
 ?/No
 |2,1,1725198694,47,"No"
 ?/aliases
@@ -10642,8 +10764,6 @@ $''.join(ansi_code for ansi_code in right_tokens[0].active_ansi_codes)
 |2,1,1724470772,47,"console"
 ?/\(def\|class\)\s\+\w*__rich_console__
 |2,1,1724470302,47,"\\(def\\|class\\)\\s\\+\\w*__rich_console__"
-?/print(
-|2,1,1724469906,47,"print("
 ?/\(def\|class\)\s\+\w*render(
 |2,1,1724469887,47,"\\(def\\|class\\)\\s\\+\\w*render("
 ?/\(def\|class\)\s\+\w*extend
@@ -10798,8 +10918,6 @@ $''.join(ansi_code for ansi_code in right_tokens[0].active_ansi_codes)
 |2,1,1723659483,,"   \\s*"
 ?/skip
 |2,1,1723658796,47,"skip"
-?/gt
-|2,1,1723658685,47,"gt"
 ?/first
 |2,1,1723658530,47,"first"
 ?/alt-c
@@ -10852,8 +10970,6 @@ $''.join(ansi_code for ansi_code in right_tokens[0].active_ansi_codes)
 |2,1,1723474679,47,"v:"
 ?/current_line
 |2,1,1723473715,47,"current_line"
-?/len(
-|2,1,1723473576,47,"len("
 ?/rounded
 |2,1,1723472192,47,"rounded"
 ?/n
@@ -10912,8 +11028,6 @@ $''.join(ansi_code for ansi_code in right_tokens[0].active_ansi_codes)
 |2,1,1723065069,47,"PortionUrl("
 ?/args
 |2,1,1723062800,47,"args"
-?/\(def\|class\)\s\+\w*
-|2,1,1723062777,47,"\\(def\\|class\\)\\s\\+\\w*"
 ?/\(def\|class\)\s\+\w*videos
 |2,1,1723062382,47,"\\(def\\|class\\)\\s\\+\\w*videos"
 ??form_create_portion
@@ -11340,8 +11454,6 @@ $''.join(ansi_code for ansi_code in right_tokens[0].active_ansi_codes)
 |2,1,1722108467,47,"^\\w*abbr"
 ?/l:sid
 |2,1,1722107972,47,"l:sid"
-?/pad
-|2,1,1722107550,47,"pad"
 ? ^report
 |2,1,1722102373,,"^report"
 ?/fix-current
@@ -12024,14 +12136,10 @@ $''.join(ansi_code for ansi_code in right_tokens[0].active_ansi_codes)
 |2,1,1718136720,,"\\s*;"
 ?/backg
 |2,1,1718136177,47,"backg"
-?/ignore
-|2,1,1718134791,47,"ignore"
 ?/^\s*function!\?\s\+\(s:\)\?\(\w\+#\)\?\w*Fi
 |2,1,1718134539,47,"^\\s*function!\\?\\s\\+\\(s:\\)\\?\\(\\w\\+#\\)\\?\\w*Fi"
 ?/OPI
 |2,1,1718099071,47,"OPI"
-?/status
-|2,1,1718097620,47,"status"
 ?/url_map
 |2,1,1718096151,47,"url_map"
 ?/\(def\|class\)\s\+\w*requ`
@@ -12452,8 +12560,6 @@ $''.join(ansi_code for ansi_code in right_tokens[0].active_ansi_codes)
 |2,1,1717039761,47,"\\(def\\|class\\)\\s\\+\\w*yesca"
 ?/asyncio
 |2,1,1717039689,47,"asyncio"
-?/ic
-|2,1,1717039205,47,"ic"
 ?/makedirs
 |2,1,1717038162,47,"makedirs"
 ?/\(def\|class\)\s\+\w*db_init
@@ -14556,8 +14662,6 @@ $''.join(ansi_code for ansi_code in right_tokens[0].active_ansi_codes)
 |2,1,1690865838,47,"clips\""
 ?/clip"
 |2,1,1690865833,47,"clip\""
-?/+
-|2,1,1690865605,47,"+"
 ?/su
 |2,1,1690865600,47,"su"
 ?/_date
@@ -14860,8 +14964,6 @@ $''.join(ansi_code for ansi_code in right_tokens[0].active_ansi_codes)
 |2,1,1685392319,47,"cmdline"
 ?/fileform
 |2,1,1685391762,47,"fileform"
-?/separator
-|2,1,1685391710,47,"separator"
 ?/normali
 |2,1,1685391605,47,"normali"
 ?/preview
@@ -15080,39 +15182,40 @@ $''.join(ansi_code for ansi_code in right_tokens[0].active_ansi_codes)
 |2,4,1693311567,,"cont"
 
 # Registers:
-"0	CHAR	0
-	2
-|3,0,0,0,1,0,1725759923,"2"
+"0	LINE	0
+	    1xCopper Cable Machine can support 6 Red Circuit Machines
+|3,0,0,1,1,0,1725982183,"    1xCopper Cable Machine can support 6 Red Circuit Machines"
 "1	LINE	0
-	        ANSI_LIGHTWHITE_FG_BLUE_BG = "\033[1;37;44m"
-|3,0,1,1,1,0,1725759550,"        ANSI_LIGHTWHITE_FG_BLUE_BG = \"\\033[1;37;44m\""
+	1xElectronic Circuit Machine can support 2 / (1/3) = 6 Red Circuit Machines
+|3,0,1,1,1,0,1725982180,"1xElectronic Circuit Machine can support 2 / (1/3) = 6 Red Circuit Machines"
 "2	LINE	0
-	        ANSI_WHITE_FG_BLUE_BG = "\033[1;37;44m"
-|3,0,2,1,1,0,1725759529,"        ANSI_WHITE_FG_BLUE_BG = \"\\033[1;37;44m\""
+	(electronic circuit)
+|3,0,2,1,1,0,1725982024,"(electronic circuit)"
 "3	LINE	0
-	        white_fg_ansi
-|3,0,3,1,1,0,1725759510,"        white_fg_ansi"
+	
+|3,0,3,1,1,0,1725981826,""
 "4	LINE	0
-	        ANSI_BLUE_BG_BLACK_FG_BOLD = "\033[1;30;44m"
-|3,0,4,1,1,0,1725759473,"        ANSI_BLUE_BG_BLACK_FG_BOLD = \"\\033[1;30;44m\""
+	                                    = 
+|3,0,4,1,1,0,1725981515,"                                    = "
 "5	LINE	0
-	        # ANSI_BLUE_BG_BLACK_FG_BOLD = "\033[1;30;44m"
-|3,0,5,1,1,0,1725759447,"        # ANSI_BLUE_BG_BLACK_FG_BOLD = \"\\033[1;30;44m\""
+	                                    = 3x2
+|3,0,5,1,1,0,1725981511,"                                    = 3x2"
 "6	LINE	0
-	        print(f"Test case {count_string}")
-|3,0,6,1,1,0,1725759420,"        print(f\"Test case {count_string}\")"
+	                                    = 3x2
+	                                    = 6 Red Circuit Machines
+|3,0,6,1,2,0,1725981509,"                                    = 3x2","                                    = 6 Red Circuit Machines"
 "7	LINE	0
-	        print(f"input_string (len:{get_display_length(input_string)}) = `" + input_string + "`")
-|3,0,7,1,1,0,1725759103,"        print(f\"input_string (len:{get_display_length(input_string)}) = `\" + input_string + \"`\")"
+	                             = 1 Copper Cable Machine
+|3,0,7,1,1,0,1725981331,"                             = 1 Copper Cable Machine"
 "8	LINE	0
-	        print("truncated       = `" + result + "`")
-|3,0,8,1,1,0,1725758999,"        print(\"truncated       = `\" + result + \"`\")"
+	1x
+|3,0,8,1,1,0,1725981271,"1x"
 "9	LINE	0
-	        GREEN_BG_BLACK_FG_BOLD_ANSI = "\033[1;30;42m"
-|3,0,9,1,1,0,1725758849,"        GREEN_BG_BLACK_FG_BOLD_ANSI = \"\\033[1;30;42m\""
-"a@	CHAR	0
-	0f)i, F€kb"FOO"jkkj.kj.
-|3,2,10,0,1,0,1725758660,"0f)i, F€kb\"FOO\"jkkj.kj."
+	1xCopper Cabl
+|3,0,9,1,1,0,1725981009,"1xCopper Cabl"
+"a	CHAR	0
+	Tabularize /=/l1c1l1
+|3,0,10,0,1,0,1725981370,"Tabularize /=/l1c1l1"
 "i	CHAR	0
 	ado_up()jk:q!
 |3,0,18,0,1,0,1724200553,"ado_up()jk:q!"
@@ -15133,288 +15236,1133 @@ $''.join(ansi_code for ansi_code in right_tokens[0].active_ansi_codes)
 	set verbose=20 | quit
 |3,0,28,1,2,0,1725457945,"set verbosefile=verbose-file.txt","set verbose=20 | quit"
 ""-	CHAR	0
-	3
-|3,1,36,0,1,0,1725759923,"3"
+	 
+|3,1,36,0,1,0,1725982196," "
 
 # File marks:
-'0  87  8  ~/python_common/waivek/test_truncate.py
-|4,48,87,8,1725759687,"~/python_common/waivek/test_truncate.py"
-'1  87  8  ~/python_common/waivek/test_truncate.py
-|4,49,87,8,1725759687,"~/python_common/waivek/test_truncate.py"
-'2  87  8  ~/python_common/waivek/test_truncate.py
-|4,50,87,8,1725759687,"~/python_common/waivek/test_truncate.py"
-'3  87  8  ~/python_common/waivek/test_truncate.py
-|4,51,87,8,1725759687,"~/python_common/waivek/test_truncate.py"
-'4  857  0  ~/python_common/.direnv/python-3.10.12/lib/python3.10/site-packages/rich/text.py
-|4,52,857,0,1725749489,"~/python_common/.direnv/python-3.10.12/lib/python3.10/site-packages/rich/text.py"
-'5  857  0  ~/python_common/.direnv/python-3.10.12/lib/python3.10/site-packages/rich/text.py
-|4,53,857,0,1725749489,"~/python_common/.direnv/python-3.10.12/lib/python3.10/site-packages/rich/text.py"
-'6  857  0  ~/python_common/.direnv/python-3.10.12/lib/python3.10/site-packages/rich/text.py
-|4,54,857,0,1725749489,"~/python_common/.direnv/python-3.10.12/lib/python3.10/site-packages/rich/text.py"
-'7  857  0  ~/python_common/.direnv/python-3.10.12/lib/python3.10/site-packages/rich/text.py
-|4,55,857,0,1725749489,"~/python_common/.direnv/python-3.10.12/lib/python3.10/site-packages/rich/text.py"
-'8  1  0  ~/python_common/waivek/print_utils.py
-|4,56,1,0,1725748703,"~/python_common/waivek/print_utils.py"
-'9  1  0  ~/python_common/waivek/print_utils.py
-|4,57,1,0,1725748703,"~/python_common/waivek/print_utils.py"
+'0  3  41  ~/factorio/red_circuit.txt
+|4,48,3,41,1725999847,"~/factorio/red_circuit.txt"
+'1  2  0  ~/bash/pwd-oldfiles.bash
+|4,49,2,0,1725915168,"~/bash/pwd-oldfiles.bash"
+'2  2  0  ~/bash/pwd-oldfiles.bash
+|4,50,2,0,1725915168,"~/bash/pwd-oldfiles.bash"
+'3  221  0  ~/python_common/waivek/table.py
+|4,51,221,0,1725915105,"~/python_common/waivek/table.py"
+'4  221  0  ~/python_common/waivek/table.py
+|4,52,221,0,1725915105,"~/python_common/waivek/table.py"
+'5  1  0  ~/python_common/waivek/table.py
+|4,53,1,0,1725915105,"~/python_common/waivek/table.py"
+'6  1  0  ~/python_common/waivek/table.py
+|4,54,1,0,1725915105,"~/python_common/waivek/table.py"
+'7  7  0  ~/bash/pwd-oldfiles.bash
+|4,55,7,0,1725915098,"~/bash/pwd-oldfiles.bash"
+'8  7  0  ~/bash/pwd-oldfiles.bash
+|4,56,7,0,1725915098,"~/bash/pwd-oldfiles.bash"
+'9  6  0  ~/bash/pwd-oldfiles.bash
+|4,57,6,0,1725915098,"~/bash/pwd-oldfiles.bash"
 
 # Jumplist (newest first):
--'  47  7  ~/python_staging/rich_experiments.py
-|4,39,47,7,1725759928,"~/python_staging/rich_experiments.py"
--'  1  0  ~/python_staging/rich_experiments.py
-|4,39,1,0,1725759918,"~/python_staging/rich_experiments.py"
--'  118  4  ~/python_common/waivek/print_utils.py
-|4,39,118,4,1725759800,"~/python_common/waivek/print_utils.py"
--'  118  4  ~/python_common/waivek/print_utils.py
-|4,39,118,4,1725759800,"~/python_common/waivek/print_utils.py"
--'  1  0  ~/python_common/waivek/print_utils.py
-|4,39,1,0,1725759791,"~/python_common/waivek/print_utils.py"
--'  1  0  ~/python_common/waivek/print_utils.py
-|4,39,1,0,1725759791,"~/python_common/waivek/print_utils.py"
--'  87  8  ~/python_common/waivek/test_truncate.py
-|4,39,87,8,1725759687,"~/python_common/waivek/test_truncate.py"
--'  87  8  ~/python_common/waivek/test_truncate.py
-|4,39,87,8,1725759687,"~/python_common/waivek/test_truncate.py"
--'  87  8  ~/python_common/waivek/test_truncate.py
-|4,39,87,8,1725759687,"~/python_common/waivek/test_truncate.py"
--'  88  47  ~/python_common/waivek/test_truncate.py
-|4,39,88,47,1725759431,"~/python_common/waivek/test_truncate.py"
--'  88  47  ~/python_common/waivek/test_truncate.py
-|4,39,88,47,1725759431,"~/python_common/waivek/test_truncate.py"
--'  88  47  ~/python_common/waivek/test_truncate.py
-|4,39,88,47,1725759431,"~/python_common/waivek/test_truncate.py"
--'  86  96  ~/python_common/waivek/test_truncate.py
-|4,39,86,96,1725759400,"~/python_common/waivek/test_truncate.py"
--'  86  96  ~/python_common/waivek/test_truncate.py
-|4,39,86,96,1725759400,"~/python_common/waivek/test_truncate.py"
--'  86  96  ~/python_common/waivek/test_truncate.py
-|4,39,86,96,1725759400,"~/python_common/waivek/test_truncate.py"
--'  89  63  ~/python_common/waivek/test_truncate.py
-|4,39,89,63,1725759377,"~/python_common/waivek/test_truncate.py"
--'  89  63  ~/python_common/waivek/test_truncate.py
-|4,39,89,63,1725759377,"~/python_common/waivek/test_truncate.py"
--'  89  63  ~/python_common/waivek/test_truncate.py
-|4,39,89,63,1725759377,"~/python_common/waivek/test_truncate.py"
--'  93  15  ~/python_common/waivek/test_truncate.py
-|4,39,93,15,1725759336,"~/python_common/waivek/test_truncate.py"
--'  93  15  ~/python_common/waivek/test_truncate.py
-|4,39,93,15,1725759336,"~/python_common/waivek/test_truncate.py"
--'  93  15  ~/python_common/waivek/test_truncate.py
-|4,39,93,15,1725759336,"~/python_common/waivek/test_truncate.py"
--'  111  16  ~/python_common/waivek/test_truncate.py
-|4,39,111,16,1725759242,"~/python_common/waivek/test_truncate.py"
--'  111  16  ~/python_common/waivek/test_truncate.py
-|4,39,111,16,1725759242,"~/python_common/waivek/test_truncate.py"
--'  111  16  ~/python_common/waivek/test_truncate.py
-|4,39,111,16,1725759242,"~/python_common/waivek/test_truncate.py"
--'  161  4  ~/python_common/waivek/truncate.py
-|4,39,161,4,1725759241,"~/python_common/waivek/truncate.py"
--'  161  4  ~/python_common/waivek/truncate.py
-|4,39,161,4,1725759241,"~/python_common/waivek/truncate.py"
--'  161  4  ~/python_common/waivek/truncate.py
-|4,39,161,4,1725759241,"~/python_common/waivek/truncate.py"
--'  120  24  ~/python_common/waivek/test_truncate.py
-|4,39,120,24,1725759229,"~/python_common/waivek/test_truncate.py"
--'  120  24  ~/python_common/waivek/test_truncate.py
-|4,39,120,24,1725759229,"~/python_common/waivek/test_truncate.py"
--'  120  24  ~/python_common/waivek/test_truncate.py
-|4,39,120,24,1725759229,"~/python_common/waivek/test_truncate.py"
--'  92  8  ~/python_common/waivek/test_truncate.py
-|4,39,92,8,1725759165,"~/python_common/waivek/test_truncate.py"
--'  92  8  ~/python_common/waivek/test_truncate.py
-|4,39,92,8,1725759165,"~/python_common/waivek/test_truncate.py"
--'  92  8  ~/python_common/waivek/test_truncate.py
-|4,39,92,8,1725759165,"~/python_common/waivek/test_truncate.py"
--'  91  83  ~/python_common/waivek/test_truncate.py
-|4,39,91,83,1725759072,"~/python_common/waivek/test_truncate.py"
--'  91  83  ~/python_common/waivek/test_truncate.py
-|4,39,91,83,1725759072,"~/python_common/waivek/test_truncate.py"
--'  91  83  ~/python_common/waivek/test_truncate.py
-|4,39,91,83,1725759072,"~/python_common/waivek/test_truncate.py"
--'  94  8  ~/python_common/waivek/test_truncate.py
-|4,39,94,8,1725758999,"~/python_common/waivek/test_truncate.py"
--'  94  8  ~/python_common/waivek/test_truncate.py
-|4,39,94,8,1725758999,"~/python_common/waivek/test_truncate.py"
--'  94  8  ~/python_common/waivek/test_truncate.py
-|4,39,94,8,1725758999,"~/python_common/waivek/test_truncate.py"
--'  177  0  ~/python_common/waivek/truncate.py
-|4,39,177,0,1725758940,"~/python_common/waivek/truncate.py"
--'  177  0  ~/python_common/waivek/truncate.py
-|4,39,177,0,1725758940,"~/python_common/waivek/truncate.py"
--'  177  0  ~/python_common/waivek/truncate.py
-|4,39,177,0,1725758940,"~/python_common/waivek/truncate.py"
--'  114  30  ~/python_common/waivek/test_truncate.py
-|4,39,114,30,1725758939,"~/python_common/waivek/test_truncate.py"
--'  114  30  ~/python_common/waivek/test_truncate.py
-|4,39,114,30,1725758939,"~/python_common/waivek/test_truncate.py"
--'  114  30  ~/python_common/waivek/test_truncate.py
-|4,39,114,30,1725758939,"~/python_common/waivek/test_truncate.py"
--'  103  52  ~/python_common/waivek/test_truncate.py
-|4,39,103,52,1725758730,"~/python_common/waivek/test_truncate.py"
--'  103  52  ~/python_common/waivek/test_truncate.py
-|4,39,103,52,1725758730,"~/python_common/waivek/test_truncate.py"
--'  103  52  ~/python_common/waivek/test_truncate.py
-|4,39,103,52,1725758730,"~/python_common/waivek/test_truncate.py"
--'  115  12  ~/python_common/waivek/test_truncate.py
-|4,39,115,12,1725758706,"~/python_common/waivek/test_truncate.py"
--'  115  12  ~/python_common/waivek/test_truncate.py
-|4,39,115,12,1725758706,"~/python_common/waivek/test_truncate.py"
--'  115  12  ~/python_common/waivek/test_truncate.py
-|4,39,115,12,1725758706,"~/python_common/waivek/test_truncate.py"
--'  99  12  ~/python_common/waivek/test_truncate.py
-|4,39,99,12,1725758694,"~/python_common/waivek/test_truncate.py"
--'  99  12  ~/python_common/waivek/test_truncate.py
-|4,39,99,12,1725758694,"~/python_common/waivek/test_truncate.py"
--'  99  12  ~/python_common/waivek/test_truncate.py
-|4,39,99,12,1725758694,"~/python_common/waivek/test_truncate.py"
--'  98  90  ~/python_common/waivek/test_truncate.py
-|4,39,98,90,1725758560,"~/python_common/waivek/test_truncate.py"
--'  98  90  ~/python_common/waivek/test_truncate.py
-|4,39,98,90,1725758560,"~/python_common/waivek/test_truncate.py"
--'  98  90  ~/python_common/waivek/test_truncate.py
-|4,39,98,90,1725758560,"~/python_common/waivek/test_truncate.py"
--'  857  0  ~/python_common/.direnv/python-3.10.12/lib/python3.10/site-packages/rich/text.py
-|4,39,857,0,1725749489,"~/python_common/.direnv/python-3.10.12/lib/python3.10/site-packages/rich/text.py"
--'  857  0  ~/python_common/.direnv/python-3.10.12/lib/python3.10/site-packages/rich/text.py
-|4,39,857,0,1725749489,"~/python_common/.direnv/python-3.10.12/lib/python3.10/site-packages/rich/text.py"
--'  857  0  ~/python_common/.direnv/python-3.10.12/lib/python3.10/site-packages/rich/text.py
-|4,39,857,0,1725749489,"~/python_common/.direnv/python-3.10.12/lib/python3.10/site-packages/rich/text.py"
--'  15  14  ~/python_staging/rich_experiments.py
-|4,39,15,14,1725749481,"~/python_staging/rich_experiments.py"
--'  15  14  ~/python_staging/rich_experiments.py
-|4,39,15,14,1725749481,"~/python_staging/rich_experiments.py"
--'  15  14  ~/python_staging/rich_experiments.py
-|4,39,15,14,1725749481,"~/python_staging/rich_experiments.py"
--'  44  14  ~/python_staging/rich_experiments.py
-|4,39,44,14,1725749464,"~/python_staging/rich_experiments.py"
--'  44  14  ~/python_staging/rich_experiments.py
-|4,39,44,14,1725749464,"~/python_staging/rich_experiments.py"
--'  44  14  ~/python_staging/rich_experiments.py
-|4,39,44,14,1725749464,"~/python_staging/rich_experiments.py"
--'  40  14  ~/python_staging/rich_experiments.py
-|4,39,40,14,1725749401,"~/python_staging/rich_experiments.py"
--'  40  14  ~/python_staging/rich_experiments.py
-|4,39,40,14,1725749401,"~/python_staging/rich_experiments.py"
--'  40  14  ~/python_staging/rich_experiments.py
-|4,39,40,14,1725749401,"~/python_staging/rich_experiments.py"
--'  42  18  ~/python_staging/rich_experiments.py
-|4,39,42,18,1725749385,"~/python_staging/rich_experiments.py"
--'  42  18  ~/python_staging/rich_experiments.py
-|4,39,42,18,1725749385,"~/python_staging/rich_experiments.py"
--'  42  18  ~/python_staging/rich_experiments.py
-|4,39,42,18,1725749385,"~/python_staging/rich_experiments.py"
--'  41  15  ~/python_staging/rich_experiments.py
-|4,39,41,15,1725749254,"~/python_staging/rich_experiments.py"
--'  41  15  ~/python_staging/rich_experiments.py
-|4,39,41,15,1725749254,"~/python_staging/rich_experiments.py"
--'  41  15  ~/python_staging/rich_experiments.py
-|4,39,41,15,1725749254,"~/python_staging/rich_experiments.py"
--'  1  0  ~/python_staging/rich_experiments.py
-|4,39,1,0,1725749232,"~/python_staging/rich_experiments.py"
--'  1  0  ~/python_staging/rich_experiments.py
-|4,39,1,0,1725749232,"~/python_staging/rich_experiments.py"
--'  38  4  ~/python_staging/rich_experiments.py
-|4,39,38,4,1725749229,"~/python_staging/rich_experiments.py"
--'  38  4  ~/python_staging/rich_experiments.py
-|4,39,38,4,1725749229,"~/python_staging/rich_experiments.py"
--'  38  4  ~/python_staging/rich_experiments.py
-|4,39,38,4,1725749229,"~/python_staging/rich_experiments.py"
--'  43  0  ~/python_staging/rich_experiments.py
-|4,39,43,0,1725749228,"~/python_staging/rich_experiments.py"
--'  43  0  ~/python_staging/rich_experiments.py
-|4,39,43,0,1725749228,"~/python_staging/rich_experiments.py"
--'  43  0  ~/python_staging/rich_experiments.py
-|4,39,43,0,1725749228,"~/python_staging/rich_experiments.py"
--'  47  7  ~/python_staging/rich_experiments.py
-|4,39,47,7,1725749200,"~/python_staging/rich_experiments.py"
--'  47  7  ~/python_staging/rich_experiments.py
-|4,39,47,7,1725749200,"~/python_staging/rich_experiments.py"
--'  7  20  ~/python_staging/rich_experiments.py
-|4,39,7,20,1725749197,"~/python_staging/rich_experiments.py"
--'  7  20  ~/python_staging/rich_experiments.py
-|4,39,7,20,1725749197,"~/python_staging/rich_experiments.py"
--'  7  20  ~/python_staging/rich_experiments.py
-|4,39,7,20,1725749197,"~/python_staging/rich_experiments.py"
--'  64  0  ~/python_common/waivek/truncate.py
-|4,39,64,0,1725749174,"~/python_common/waivek/truncate.py"
--'  64  0  ~/python_common/waivek/truncate.py
-|4,39,64,0,1725749174,"~/python_common/waivek/truncate.py"
--'  64  0  ~/python_common/waivek/truncate.py
-|4,39,64,0,1725749174,"~/python_common/waivek/truncate.py"
--'  62  0  ~/python_common/waivek/truncate.py
-|4,39,62,0,1725749167,"~/python_common/waivek/truncate.py"
--'  62  0  ~/python_common/waivek/truncate.py
-|4,39,62,0,1725749167,"~/python_common/waivek/truncate.py"
--'  62  0  ~/python_common/waivek/truncate.py
-|4,39,62,0,1725749167,"~/python_common/waivek/truncate.py"
--'  71  0  ~/python_common/waivek/truncate.py
-|4,39,71,0,1725749166,"~/python_common/waivek/truncate.py"
--'  83  0  ~/python_common/waivek/truncate.py
-|4,39,83,0,1725749166,"~/python_common/waivek/truncate.py"
--'  71  0  ~/python_common/waivek/truncate.py
-|4,39,71,0,1725749166,"~/python_common/waivek/truncate.py"
--'  83  0  ~/python_common/waivek/truncate.py
-|4,39,83,0,1725749166,"~/python_common/waivek/truncate.py"
--'  71  0  ~/python_common/waivek/truncate.py
-|4,39,71,0,1725749166,"~/python_common/waivek/truncate.py"
+-'  3  41  ~/factorio/red_circuit.txt
+|4,39,3,41,1725999847,"~/factorio/red_circuit.txt"
+-'  44  0  ~/factorio/red_circuit.txt
+|4,39,44,0,1725999842,"~/factorio/red_circuit.txt"
+-'  4  0  ~/factorio/red_circuit.txt
+|4,39,4,0,1725982238,"~/factorio/red_circuit.txt"
+-'  29  0  ~/factorio/red_circuit.txt
+|4,39,29,0,1725982184,"~/factorio/red_circuit.txt"
+-'  43  0  ~/factorio/red_circuit.txt
+|4,39,43,0,1725982169,"~/factorio/red_circuit.txt"
+-'  25  4  ~/factorio/red_circuit.txt
+|4,39,25,4,1725982163,"~/factorio/red_circuit.txt"
+-'  42  87  ~/factorio/red_circuit.txt
+|4,39,42,87,1725982067,"~/factorio/red_circuit.txt"
+-'  5  29  ~/factorio/red_circuit.txt
+|4,39,5,29,1725982023,"~/factorio/red_circuit.txt"
+-'  26  0  ~/factorio/red_circuit.txt
+|4,39,26,0,1725982014,"~/factorio/red_circuit.txt"
+-'  35  0  ~/factorio/red_circuit.txt
+|4,39,35,0,1725982004,"~/factorio/red_circuit.txt"
+-'  37  4  ~/factorio/red_circuit.txt
+|4,39,37,4,1725981827,"~/factorio/red_circuit.txt"
+-'  33  0  ~/factorio/red_circuit.txt
+|4,39,33,0,1725981693,"~/factorio/red_circuit.txt"
+-'  16  4  ~/factorio/red_circuit.txt
+|4,39,16,4,1725981692,"~/factorio/red_circuit.txt"
+-'  28  0  ~/factorio/red_circuit.txt
+|4,39,28,0,1725981690,"~/factorio/red_circuit.txt"
+-'  23  0  ~/factorio/red_circuit.txt
+|4,39,23,0,1725981690,"~/factorio/red_circuit.txt"
+-'  36  10  ~/factorio/red_circuit.txt
+|4,39,36,10,1725981629,"~/factorio/red_circuit.txt"
+-'  14  8  ~/factorio/red_circuit.txt
+|4,39,14,8,1725981536,"~/factorio/red_circuit.txt"
+-'  27  33  ~/factorio/red_circuit.txt
+|4,39,27,33,1725981510,"~/factorio/red_circuit.txt"
+-'  17  38  ~/factorio/red_circuit.txt
+|4,39,17,38,1725981427,"~/factorio/red_circuit.txt"
+-'  20  36  ~/factorio/red_circuit.txt
+|4,39,20,36,1725981427,"~/factorio/red_circuit.txt"
+-'  21  36  ~/factorio/red_circuit.txt
+|4,39,21,36,1725981426,"~/factorio/red_circuit.txt"
+-'  22  36  ~/factorio/red_circuit.txt
+|4,39,22,36,1725981426,"~/factorio/red_circuit.txt"
+-'  18  0  ~/factorio/red_circuit.txt
+|4,39,18,0,1725981395,"~/factorio/red_circuit.txt"
+-'  9  81  ~/factorio/red_circuit.txt
+|4,39,9,81,1725981025,"~/factorio/red_circuit.txt"
+-'  12  64  ~/factorio/red_circuit.txt
+|4,39,12,64,1725981024,"~/factorio/red_circuit.txt"
+-'  178  16  ~/python_common/waivek/table.py
+|4,39,178,16,1725980941,"~/python_common/waivek/table.py"
+-'  11  0  ~/tooling/app_ideas/alarm.txt
+|4,39,11,0,1725917661,"~/tooling/app_ideas/alarm.txt"
+-'  169  8  ~/python_common/waivek/table.py
+|4,39,169,8,1725917062,"~/python_common/waivek/table.py"
+-'  90  8  ~/python_common/waivek/table.py
+|4,39,90,8,1725917058,"~/python_common/waivek/table.py"
+-'  1  0  ~/python_common/waivek/table.py
+|4,39,1,0,1725917014,"~/python_common/waivek/table.py"
+-'  202  15  ~/python_common/waivek/table.py
+|4,39,202,15,1725916901,"~/python_common/waivek/table.py"
+-'  216  15  ~/python_common/waivek/table.py
+|4,39,216,15,1725916893,"~/python_common/waivek/table.py"
+-'  204  15  ~/python_common/waivek/table.py
+|4,39,204,15,1725916888,"~/python_common/waivek/table.py"
+-'  110  84  ~/python_common/waivek/table.py
+|4,39,110,84,1725916865,"~/python_common/waivek/table.py"
+-'  466  39  ~/python_common/waivek/ic.py
+|4,39,466,39,1725916862,"~/python_common/waivek/ic.py"
+-'  409  122  ~/python_common/waivek/ic.py
+|4,39,409,122,1725916858,"~/python_common/waivek/ic.py"
+-'  357  8  ~/python_common/waivek/ic.py
+|4,39,357,8,1725916858,"~/python_common/waivek/ic.py"
+-'  303  4  ~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi
+|4,39,303,4,1725916843,"~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi"
+-'  300  43  ~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi
+|4,39,300,43,1725916834,"~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi"
+-'  295  39  ~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi
+|4,39,295,39,1725916834,"~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi"
+-'  291  48  ~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi
+|4,39,291,48,1725916834,"~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi"
+-'  287  39  ~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi
+|4,39,287,39,1725916833,"~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi"
+-'  282  4  ~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi
+|4,39,282,4,1725916833,"~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi"
+-'  280  38  ~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi
+|4,39,280,38,1725916833,"~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi"
+-'  267  23  ~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi
+|4,39,267,23,1725916833,"~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi"
+-'  266  4  ~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi
+|4,39,266,4,1725916832,"~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi"
+-'  265  27  ~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi
+|4,39,265,27,1725916832,"~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi"
+-'  1  0  ~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi
+|4,39,1,0,1725916831,"~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi"
+-'  85  6  ~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi
+|4,39,85,6,1725916828,"~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi"
+-'  92  18  ~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi
+|4,39,92,18,1725916828,"~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi"
+-'  99  15  ~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi
+|4,39,99,15,1725916827,"~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi"
+-'  110  23  ~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi
+|4,39,110,23,1725916827,"~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi"
+-'  123  23  ~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi
+|4,39,123,23,1725916827,"~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi"
+-'  135  23  ~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi
+|4,39,135,23,1725916827,"~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi"
+-'  148  23  ~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi
+|4,39,148,23,1725916827,"~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi"
+-'  77  38  ~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi
+|4,39,77,38,1725916816,"~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi"
+-'  75  38  ~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi
+|4,39,75,38,1725916813,"~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi"
+-'  73  15  ~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi
+|4,39,73,15,1725916813,"~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi"
+-'  68  38  ~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi
+|4,39,68,38,1725916812,"~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi"
+-'  66  38  ~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi
+|4,39,66,38,1725916812,"~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi"
+-'  63  15  ~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi
+|4,39,63,15,1725916812,"~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi"
+-'  50  8  ~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi
+|4,39,50,8,1725916809,"~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi"
+-'  380  8  ~/python_common/waivek/ic.py
+|4,39,380,8,1725916799,"~/python_common/waivek/ic.py"
+-'  220  18  ~/python_common/waivek/ic.py
+|4,39,220,18,1725916646,"~/python_common/waivek/ic.py"
+-'  204  36  ~/python_common/waivek/ic.py
+|4,39,204,36,1725916645,"~/python_common/waivek/ic.py"
+-'  183  4  ~/python_common/waivek/ic.py
+|4,39,183,4,1725916645,"~/python_common/waivek/ic.py"
+-'  464  13  ~/python_common/waivek/ic.py
+|4,39,464,13,1725916616,"~/python_common/waivek/ic.py"
+-'  460  8  ~/python_common/waivek/ic.py
+|4,39,460,8,1725916614,"~/python_common/waivek/ic.py"
+-'  461  26  ~/python_common/waivek/ic.py
+|4,39,461,26,1725916614,"~/python_common/waivek/ic.py"
+-'  462  48  ~/python_common/waivek/ic.py
+|4,39,462,48,1725916614,"~/python_common/waivek/ic.py"
+-'  465  27  ~/python_common/waivek/ic.py
+|4,39,465,27,1725916613,"~/python_common/waivek/ic.py"
+-'  24  0  ~/python_common/waivek/table.py
+|4,39,24,0,1725916464,"~/python_common/waivek/table.py"
+-'  23  4  ~/python_common/waivek/table.py
+|4,39,23,4,1725916456,"~/python_common/waivek/table.py"
+-'  2  0  ~/bash/pwd-oldfiles.bash
+|4,39,2,0,1725915168,"~/bash/pwd-oldfiles.bash"
+-'  1  0  ~/bash/pwd-oldfiles.bash
+|4,39,1,0,1725915112,"~/bash/pwd-oldfiles.bash"
+-'  1  0  ~/python_common/waivek/table.py
+|4,39,1,0,1725915105,"~/python_common/waivek/table.py"
+-'  1  0  ~/python_common/waivek/table.py
+|4,39,1,0,1725915105,"~/python_common/waivek/table.py"
+-'  7  0  ~/bash/pwd-oldfiles.bash
+|4,39,7,0,1725915098,"~/bash/pwd-oldfiles.bash"
+-'  6  0  ~/bash/pwd-oldfiles.bash
+|4,39,6,0,1725915098,"~/bash/pwd-oldfiles.bash"
+-'  6  0  ~/bash/pwd-oldfiles.bash
+|4,39,6,0,1725915098,"~/bash/pwd-oldfiles.bash"
+-'  1  11  ~/bash/pwd-oldfiles.bash
+|4,39,1,11,1725915051,"~/bash/pwd-oldfiles.bash"
+-'  1  11  ~/bash/pwd-oldfiles.bash
+|4,39,1,11,1725915051,"~/bash/pwd-oldfiles.bash"
+-'  1  0  ~/python_common/waivek/ic.py
+|4,39,1,0,1725915021,"~/python_common/waivek/ic.py"
+-'  1  0  ~/python_common/waivek/ic.py
+|4,39,1,0,1725915021,"~/python_common/waivek/ic.py"
+-'  1  0  ~/python_common/waivek/ic.py
+|4,39,1,0,1725915021,"~/python_common/waivek/ic.py"
+-'  1  0  ~/python_common/waivek/ic.py
+|4,39,1,0,1725915021,"~/python_common/waivek/ic.py"
+-'  350  4  ~/python_common/waivek/ic.py
+|4,39,350,4,1725915012,"~/python_common/waivek/ic.py"
+-'  350  4  ~/python_common/waivek/ic.py
+|4,39,350,4,1725915012,"~/python_common/waivek/ic.py"
+-'  350  4  ~/python_common/waivek/ic.py
+|4,39,350,4,1725915012,"~/python_common/waivek/ic.py"
+-'  350  4  ~/python_common/waivek/ic.py
+|4,39,350,4,1725915012,"~/python_common/waivek/ic.py"
+-'  350  4  ~/python_common/waivek/ic.py
+|4,39,350,4,1725915012,"~/python_common/waivek/ic.py"
+-'  1  0  ~/python_common/waivek/table.py
+|4,39,1,0,1725915006,"~/python_common/waivek/table.py"
+-'  1  0  ~/python_common/waivek/table.py
+|4,39,1,0,1725915006,"~/python_common/waivek/table.py"
+-'  1  0  ~/python_common/waivek/table.py
+|4,39,1,0,1725915006,"~/python_common/waivek/table.py"
+-'  1  0  ~/python_common/waivek/ic.py
+|4,39,1,0,1725914987,"~/python_common/waivek/ic.py"
+-'  6  5  ~/bash/pwd-oldfiles.bash
+|4,39,6,5,1725914976,"~/bash/pwd-oldfiles.bash"
+-'  5  5  ~/bash/pwd-oldfiles.bash
+|4,39,5,5,1725914976,"~/bash/pwd-oldfiles.bash"
+-'  5  5  ~/bash/pwd-oldfiles.bash
+|4,39,5,5,1725914976,"~/bash/pwd-oldfiles.bash"
+-'  5  5  ~/bash/pwd-oldfiles.bash
+|4,39,5,5,1725914976,"~/bash/pwd-oldfiles.bash"
+-'  5  5  ~/bash/pwd-oldfiles.bash
+|4,39,5,5,1725914976,"~/bash/pwd-oldfiles.bash"
 
 # Buffer list:
+%~/python_common/waivek/ic.py	466	39
+%~/python_common/waivek/table.py	178	16
+%~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi	303	4
+%~/tooling/app_ideas/alarm.txt	11	0
+%~/factorio/red_circuit.txt	3	41
 
 # History of marks within files (newest to oldest):
 
-> ~/python_staging/rich_experiments.py
-	*	1725759927	0
-	"	47	7
-	^	40	15
-	.	47	7
-	+	1	0
-	+	9	10
-	+	10	0
-	+	35	56
-	+	45	0
-	+	2	10
-	+	46	26
-	+	47	9
-	+	36	10
-	+	35	42
-	+	40	28
-	+	44	18
-	+	7	20
-	+	47	7
-	+	44	14
-	+	43	0
-	+	39	22
-	+	40	0
-	+	41	0
+> ~/factorio/red_circuit.txt
+	*	1725999845	0
+	"	3	41
+	^	1	0
+	.	3	0
+	+	9	18
+	+	10	5
+	+	9	0
+	+	11	0
+	+	10	1
+	+	9	1
+	+	11	0
+	+	12	64
+	+	16	1
+	+	7	17
+	+	17	56
+	+	16	34
+	+	19	5
+	+	21	0
+	+	15	0
+	+	21	2
+	+	16	31
+	+	19	31
+	+	21	33
+	+	22	0
+	+	16	0
+	+	18	42
+	+	17	42
+	+	16	42
+	+	20	40
+	+	21	41
+	+	18	0
+	+	24	63
+	+	25	62
+	+	24	2
+	+	25	2
+	+	27	35
+	+	26	42
+	+	27	38
+	+	27	0
+	+	29	0
+	+	28	0
+	+	29	35
+	+	14	8
+	+	33	92
+	+	34	100
+	+	35	137
+	+	36	11
+	+	37	23
+	+	8	0
+	+	4	0
+	+	38	0
+	+	16	0
+	+	33	0
+	+	38	0
+	+	39	20
 	+	6	0
-	+	42	19
-	+	44	14
-	+	42	0
-	+	44	18
-	+	42	18
-	+	40	0
-	+	47	7
-	a	47	7
-	b	47	7
-
-> ~/python_common/waivek/print_utils.py
-	*	1725759797	0
-	"	118	4
-	.	210	0
-	+	183	0
+	+	5	29
+	+	39	36
+	+	41	82
+	+	42	87
+	+	43	1
+	+	41	0
 	+	3	0
-	+	210	0
+	+	2	0
+	+	1	0
+	+	3	0
+
+> ~/python_common/waivek/table.py
+	*	1725917665	0
+	"	178	16
+	^	216	16
+	.	216	15
+	+	6	0
+	+	208	12
+	+	212	21
+	+	213	15
+	+	199	11
+	+	199	14
+	+	199	0
+	+	200	29
+	+	212	28
+	+	84	0
+	+	167	0
+	+	6	0
+	+	5	0
+	+	68	0
+	+	84	0
+	+	41	0
+	+	60	0
+	+	41	0
+	+	215	0
+	+	84	0
+	+	12	0
+	+	40	0
+	+	110	0
+	+	61	0
+	+	67	0
+	+	2	0
+	+	1	0
+	+	110	0
+	+	23	9
+	+	24	16
+	+	110	40
+	+	201	4
+	+	216	15
+
+> ~/tooling/app_ideas/alarm.txt
+	*	1725917660	0
+	"	11	0
+	.	1	0
+	+	1	11
+	+	6	0
+	+	8	12
+	+	10	197
+	+	11	85
+	+	12	0
+	+	5	10
+	+	6	0
+	+	3	132
+	+	12	0
+	+	1	0
+
+> ~/python_common/waivek/ic.py
+	*	1725916861	0
+	"	466	39
+	.	381	0
+	+	143	0
+	+	140	25
+	+	142	0
+	+	143	0
+	+	371	0
+	+	370	0
+	+	11	0
+	+	14	0
+	+	16	0
+	+	202	0
+	+	394	0
+	+	407	0
+	+	597	0
+	+	805	0
+	+	826	0
+	+	856	0
+	+	14	38
+	+	16	35
+	+	645	0
+	+	705	0
+	+	691	0
+	+	652	0
+	+	553	0
+	+	440	33
+	+	441	0
+	+	398	0
+	+	399	0
+	+	400	0
+	+	401	0
+	+	402	0
+	+	2	0
+	+	878	0
+	+	344	0
+	+	16	55
+	+	509	59
+	+	487	39
+	+	865	34
+	+	878	20
+	+	487	24
+	+	509	44
+	+	488	0
+	+	487	24
+	+	486	12
+	+	487	0
+	+	508	0
+	+	522	0
+	+	524	22
+	+	524	13
+	+	551	0
+	+	572	31
+	+	570	16
+	+	572	20
+	+	572	36
+	+	570	0
+	+	383	0
+	+	381	14
+	+	381	15
+	+	381	18
+	+	381	0
+	+	145	19
+	+	466	0
+	+	643	0
+	+	735	0
+	+	865	0
+	+	735	38
+	+	487	39
+	+	16	0
+	+	487	24
+	+	735	39
+	+	438	28
+	+	438	42
+	+	438	30
+	+	438	50
+	+	438	9
+	+	438	15
+	+	438	4
+	+	483	52
+	+	487	39
+	+	579	0
+	+	567	68
+	+	567	45
+	+	567	29
+	+	567	0
+	+	557	0
+	+	567	0
+	+	438	0
+	+	202	0
+	+	174	0
+	+	423	0
+	+	878	0
+	+	465	41
+	+	466	49
+	+	381	0
+
+> ~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi
+	*	1725916842	0
+	"	303	4
+
+> ~/.vim/todo.txt
+	*	1725916190	0
+	"	1	70
+	^	1	71
+	.	1	70
+	+	25	0
+	+	24	53
+	+	22	96
+	+	22	0
+	+	21	167
+	+	35	0
+	+	34	0
+	+	20	0
+	+	35	0
+	+	20	79
+	+	20	0
+	+	19	165
+	+	21	0
+	+	24	0
+	+	19	0
+	+	20	0
+	+	35	0
+	+	19	0
+	+	21	0
+	+	26	0
+	+	19	0
+	+	20	0
+	+	21	0
+	+	20	0
+	+	21	0
+	+	20	0
+	+	21	0
+	+	22	68
+	+	19	0
+	+	22	68
+	+	19	0
+	+	25	0
+	+	25	87
+	+	19	0
+	+	24	0
+	+	22	0
+	+	19	0
+	+	22	0
+	+	27	0
+	+	26	0
+	+	25	0
+	+	17	84
+	+	17	0
+	+	16	19
+	+	25	27
+	+	16	100
+	+	16	0
+	+	18	165
+	+	16	0
+	+	17	0
+	+	22	0
+	+	21	0
+	+	23	108
+	+	30	0
+	+	15	69
+	+	23	0
+	+	14	83
+	+	13	69
+	+	12	87
+	+	11	27
+	+	11	105
+	+	11	0
+	+	14	0
+	+	15	0
+	+	25	0
+	+	11	128
+	+	14	46
+	+	14	0
+	+	11	0
+	+	14	0
+	+	10	124
+	+	11	174
+	+	10	214
+	+	9	75
+	+	8	63
+	+	9	0
+	+	7	142
+	+	6	103
+	+	5	143
+	+	4	123
+	+	4	0
+	+	5	0
+	+	7	0
+	+	8	0
+	+	18	0
+	+	15	0
+	+	10	0
+	+	28	0
+	+	27	0
+	+	4	0
+	+	27	79
+	+	3	1
+	+	4	2
+	+	5	2
+	+	10	7
+	+	7	9
+	+	6	6
+	+	3	87
+	+	2	76
+	+	1	70
+
+> ~/bash/oldfiles.bash
+	*	1725915162	0
+	"	2	0
+	^	2	108
+	.	5	0
+	+	2	1
+	+	2	12
+	+	2	49
+	+	2	12
+	+	2	0
+	+	3	1
+	+	1	10
+	+	2	62
+	+	2	34
+	+	2	1
+	+	2	16
+	+	2	0
+	+	6	33
+	+	2	68
+	+	3	66
+	+	3	0
+	+	2	13
+	+	3	23
+	+	4	51
+	+	6	28
+	+	13	22
+	+	2	107
+	+	7	0
+	+	5	0
+
+> ~/bash/pwd-oldfiles.bash
+	*	1725915160	0
+	"	2	0
+	^	5	48
+	.	5	47
+	+	1	0
+	+	1	10
+	+	1	0
+	+	1	1
+	+	1	0
+	+	1	71
+	+	1	0
+	+	2	53
+	+	1	0
+	+	6	5
+	+	10	7
+	+	11	0
+	+	12	0
+	+	4	0
+	+	5	47
+
+> ~/python_common/ic.py
+	*	1725914955	0
+	"	1	0
+
+> ~/python_common/table.py
+	*	1725914950	0
+	"	8	0
+	.	1	0
+	+	1	0
+
+> ~/pyscripts/print_todo.py
+	*	1725914742	0
+	"	133	11
+	.	139	0
+	+	144	0
+	+	18	0
+	+	18	24
+	+	18	0
+	+	18	25
+	+	84	26
+	+	144	0
+	+	84	9
+	+	95	0
+	+	98	0
+	+	95	7
+	+	95	20
+	+	95	0
+	+	95	54
+	+	97	0
+	+	95	9
+	+	97	168
+	+	95	29
+	+	95	117
+	+	95	50
+	+	95	111
+	+	18	25
+	+	95	80
+	+	95	51
+	+	95	55
+	+	95	71
+	+	137	0
+	+	84	9
+	+	87	27
+	+	47	0
+	+	18	8
+	+	46	0
+	+	17	0
+	+	47	0
+	+	87	52
+	+	132	32
+	+	133	33
+	+	135	0
+	+	133	0
+	+	136	0
+	+	134	21
+	+	137	128
+	+	84	34
+	+	87	0
+	+	85	11
+	+	86	12
+	+	87	0
+	+	139	104
+	+	139	0
+	+	139	12
+	+	139	21
+	+	139	17
+	+	139	106
+	+	139	24
+	+	139	108
+	+	139	0
+	+	87	60
+	+	84	0
+	+	95	0
+	+	91	17
+	+	91	76
+	+	91	17
+	+	144	25
+	+	96	0
+	+	94	0
+	+	91	0
+	+	84	53
+	+	83	72
+	+	91	48
+	+	84	0
+	+	143	0
+	+	144	0
+	+	74	0
+	+	87	72
+	+	139	0
+	+	83	52
+	+	131	13
+	+	139	0
+	+	138	92
+	+	139	12
+	+	139	0
+	+	137	8
+	+	68	64
+	+	72	0
+	+	138	40
+	+	68	49
+	+	68	36
+	+	69	0
+	+	68	0
+	+	69	37
+	+	71	16
+	+	70	27
+	+	64	16
+	+	65	16
+	+	66	16
+	+	67	0
+	+	144	0
+	+	143	0
+	+	1	0
+	+	139	0
+
+> ~/python_common/waivek/printtodocopy.py
+	*	1725825019	0
+	"	140	0
+	.	140	0
+	+	2	0
+	+	68	0
+	+	140	0
+
+> ~/python_common/waivek/truncate.py
+	*	1725824996	0
+	"	190	0
+	.	134	0
+	+	129	19
+	+	126	19
+	+	129	0
+	+	126	33
+	+	129	0
+	+	127	25
+	+	137	0
+	+	126	0
+	+	124	64
+	+	126	0
+	+	124	63
+	+	126	20
+	+	124	66
+	+	126	0
+	+	129	57
+	+	130	0
+	+	124	0
+	+	126	0
+	+	129	0
+	+	132	0
+	+	134	0
+	+	134	7
+	+	135	32
+	+	134	0
+	+	185	45
+	+	123	0
+	+	125	0
+	+	128	0
+	+	131	0
+	+	133	0
+	+	136	18
+	+	175	0
+	+	174	0
+	+	175	67
+	+	175	21
+	+	175	0
+	+	175	105
+	+	175	90
+	+	175	0
+	+	175	89
+	+	175	52
+	+	175	0
+	+	175	4
+	+	175	92
+	+	175	0
+	+	168	9
+	+	35	0
+	+	67	0
+	+	168	0
+	+	190	0
+	+	1	0
+	+	9	0
+	+	18	0
+	+	17	0
+	+	18	0
+	+	20	0
+	+	18	0
+	+	19	0
+	+	18	0
+	+	16	0
+	+	18	0
+	+	84	0
+	+	81	0
+	+	80	0
+	+	81	0
+	+	3	0
+	+	1	0
+	+	2	0
+	+	190	0
+	+	190	28
+	+	190	0
+	+	168	0
+	+	169	0
+	+	137	0
+	+	144	0
+	+	121	0
+	+	134	0
+	a	184	44
+	b	184	44
+
+> ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/ic.py
+	*	1725819259	0
+	"	16	10
+	^	16	11
+	.	16	10
+	+	23	0
+	+	16	10
+
+> ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/color.py
+	*	1725819019	0
+	"	53	4
+
+> ~/prompts/render_prompt.py
+	*	1725818519	0
+	"	1	0
+	^	15	20
+	.	14	30
+	+	1	0
+	+	27	0
+	+	11	0
+	+	7	27
+	+	11	40
+	+	23	26
+	+	11	23
+	+	23	0
+	+	12	24
+	+	16	54
+	+	17	32
+	+	16	54
+	+	8	13
+	+	16	85
+	+	17	48
+	+	23	0
+	+	18	48
+	+	19	13
+	+	20	40
+	+	23	0
+	+	22	18
+	+	23	0
+	+	14	30
+
+> ~/python_common/waivek/error2.py
+	*	1725818466	0
+	"	1	0
+	^	291	22
+	.	291	21
+	+	394	0
+	+	400	0
+	+	386	0
+	+	385	0
+	+	1	130
+	+	1	104
+	+	1	0
+	+	1	41
+	+	1	9
+	+	1	0
+	+	389	0
+	+	396	36
+	+	397	23
+	+	400	54
+	+	389	0
+	+	395	38
+	+	400	52
+	+	400	0
+	+	398	34
+	+	400	0
+	+	395	5
+	+	398	39
+	+	1	17
+	+	1	5
+	+	1	35
+	+	1	0
+	+	1	50
+	+	1	0
+	+	1	59
+	+	1	0
+	+	1	41
+	+	1	25
+	+	1	15
+	+	1	40
+	+	1	13
+	+	1	55
+	+	1	0
+	+	1	7
+	+	1	13
+	+	1	64
+	+	1	0
+	+	1	35
+	+	1	0
+	+	1	19
+	+	1	0
+	+	1	18
+	+	1	0
+	+	1	44
+	+	1	0
+	+	1	12
+	+	1	0
+	+	1	35
+	+	1	0
+	+	1	42
+	+	1	0
+	+	1	24
+	+	1	0
+	+	1	46
+	+	1	0
+	+	1	52
+	+	1	0
+	+	1	52
+	+	1	0
+	+	1	13
+	+	1	0
+	+	1	14
+	+	1	32
+	+	1	14
+	+	1	0
+	+	1	18
+	+	2	0
+	+	301	25
+	+	302	0
+	+	298	0
+	+	298	9
+	+	9	0
+	+	1	0
+	+	10	0
+	+	301	0
+	+	302	3
+	+	302	0
+	+	298	0
+	+	9	0
+	+	84	0
+	+	199	0
+	+	215	0
+	+	226	0
+	+	264	0
+	+	256	48
+	+	255	35
+	+	256	0
+	+	255	60
+	+	256	0
+	+	262	13
+	+	263	12
+	+	263	110
+	+	305	0
+	+	291	0
+	+	290	14
+	+	291	21
+	a	309	28
+	b	309	29
+
+> ~/python_common/waivek/invoke_handler.py
+	*	1725818417	0
+	"	6	4
+	^	6	22
+	.	6	21
+	+	12	3
+	+	1	33
+	+	13	9
+	+	10	8
+	+	7	46
+	+	7	0
+	+	6	17
+	+	5	18
+	+	6	21
+
+> ~/python_common/waivek/date.py
+	*	1725817759	0
+	"	101	4
+	^	76	8
+	.	5	0
+	+	77	16
+	+	78	19
+	+	73	27
+	+	85	0
+	+	77	16
+	+	79	10
+	+	78	21
+	+	79	16
+	+	78	16
+	+	79	34
+	+	85	14
+	+	79	14
+	+	85	0
+	+	80	26
+	+	85	0
+	+	80	20
+	+	84	0
+	+	83	16
+	+	80	0
+	+	83	24
+	+	83	0
+	+	80	0
+	+	77	10
+	+	79	64
+	+	80	0
+	+	72	0
+	+	72	18
+	+	37	0
+	+	37	11
+	+	37	0
+	+	36	2
+	+	77	35
+	+	77	20
+	+	36	20
+	+	36	4
+	+	36	5
+	+	36	131
+	+	36	34
+	+	36	19
+	+	36	18
+	+	36	14
+	+	36	35
+	+	36	12
+	+	36	0
+	+	36	8
+	+	36	29
+	+	36	42
+	+	36	8
+	+	36	24
+	+	36	15
+	+	36	0
+	+	36	35
+	+	36	55
+	+	36	17
+	+	36	0
+	+	36	31
+	+	36	20
+	+	36	69
+	+	36	29
+	+	36	43
+	+	36	31
+	+	36	80
+	+	36	38
+	+	36	77
+	+	36	54
+	+	36	43
+	+	36	119
+	+	36	47
+	+	36	48
+	+	36	65
+	+	36	0
+	+	36	87
+	+	36	85
+	+	36	69
+	+	36	48
+	+	36	0
+	+	36	28
+	+	36	4
+	+	36	105
+	+	36	0
+	+	77	7
+	+	77	0
+	+	77	30
+	+	77	15
+	+	36	0
+	+	36	82
+	+	72	0
+	+	77	0
+	+	77	11
+	+	57	85
+	+	57	6
+	+	36	0
+	+	39	0
+	+	52	0
+	+	76	7
+	+	1	0
+	+	4	0
+	+	5	0
+	a	8	12
+
+> ~/python_common/waivek/foo.py
+	*	1725817711	0
+	"	4	7
+	^	4	8
+	.	4	7
+	+	4	7
+
+> ~/python_common/waivek/test_debugger.py
+	*	1725817691	0
+	"	12	4
+	.	17	0
+	+	82	18
+	+	82	11
+	+	1	0
+	+	82	0
+	+	174	18
+	+	1	0
+	+	10	4
+	+	38	8
+	+	65	0
+	+	65	25
+	+	65	0
+	+	17	0
 
 > ~/python_common/waivek/test_truncate.py
-	*	1725759551	0
-	"	87	8
-	.	87	0
-	+	101	0
-	+	103	16
-	+	105	31
-	+	104	69
-	+	105	73
-	+	100	0
+	*	1725817610	0
+	"	116	8
+	^	88	51
+	.	48	0
+	+	104	31
+	+	103	69
+	+	104	73
+	+	99	0
 	+	37	0
 	+	37	95
 	+	37	0
@@ -15454,208 +16402,439 @@ $''.join(ansi_code for ansi_code in right_tokens[0].active_ansi_codes)
 	+	35	47
 	+	36	23
 	+	37	0
-	+	101	88
+	+	100	88
+	+	103	59
 	+	104	59
-	+	105	59
-	+	108	82
-	+	107	15
-	+	108	0
-	+	109	43
-	+	110	16
-	+	98	86
-	+	100	17
-	+	98	13
-	+	98	0
-	+	100	0
-	+	99	90
-	+	100	13
-	+	98	77
-	+	99	61
+	+	107	82
+	+	106	15
+	+	107	0
+	+	108	43
+	+	111	16
+	+	97	86
+	+	99	17
+	+	97	13
+	+	97	0
 	+	99	0
-	+	99	15
-	+	99	58
-	+	99	35
-	+	99	16
-	+	99	0
+	+	98	90
+	+	99	13
+	+	97	77
+	+	98	61
 	+	98	0
-	+	100	0
-	+	103	52
-	+	100	0
-	+	114	0
-	+	114	52
-	+	114	0
-	+	92	0
-	+	92	53
-	+	94	43
-	+	94	48
-	+	92	49
-	+	94	0
+	+	98	15
+	+	98	58
+	+	98	35
+	+	98	16
+	+	98	0
+	+	97	0
+	+	99	0
+	+	102	52
+	+	99	0
+	+	115	0
+	+	115	52
+	+	115	0
+	+	91	0
+	+	91	53
+	+	93	43
+	+	93	48
+	+	91	49
+	+	93	0
 	+	88	28
-	+	92	87
-	+	92	0
-	+	120	24
+	+	91	87
+	+	91	0
+	+	121	24
 	+	88	31
-	+	93	50
+	+	92	50
 	+	89	62
-	+	91	57
+	+	90	57
 	+	89	61
 	+	86	19
 	+	2	0
 	+	87	9
 	+	87	0
-	a	114	21
-	b	114	22
+	+	110	0
+	+	111	0
+	+	110	50
+	+	90	0
+	+	103	0
+	+	110	9
+	+	89	0
+	+	48	0
+	a	115	21
+	b	115	22
 
-> ~/python_common/waivek/truncate.py
-	*	1725759241	0
-	"	161	4
-	.	177	0
-	+	135	8
-	+	135	52
-	+	135	35
-	+	135	0
-	+	128	71
-	+	128	38
-	+	128	45
-	+	128	84
-	+	128	0
-	+	135	101
-	+	135	49
-	+	135	12
-	+	135	52
-	+	135	0
-	+	135	62
-	+	135	111
-	+	135	0
-	+	135	47
-	+	135	52
-	+	135	78
-	+	135	83
-	+	135	0
-	+	135	52
-	+	135	8
-	+	135	9
-	+	135	0
-	+	135	30
-	+	135	35
-	+	135	0
-	+	135	19
-	+	6	20
-	+	135	0
-	+	132	15
-	+	130	22
-	+	130	0
-	+	128	45
-	+	128	85
-	+	128	40
-	+	128	96
-	+	130	65
-	+	127	28
-	+	128	0
-	+	127	0
-	+	128	0
-	+	127	0
-	+	124	0
-	+	124	7
-	+	127	0
-	+	127	19
-	+	124	19
-	+	127	0
-	+	124	33
-	+	127	0
-	+	125	25
-	+	135	0
-	+	124	0
-	+	122	64
-	+	124	0
-	+	122	63
-	+	124	20
-	+	122	66
-	+	124	0
-	+	127	57
-	+	128	0
-	+	122	0
-	+	124	0
-	+	127	0
-	+	130	0
-	+	132	0
-	+	132	7
-	+	133	32
-	+	132	0
-	+	187	45
-	+	121	0
-	+	123	0
-	+	126	0
-	+	129	0
-	+	131	0
-	+	134	18
-	+	177	0
-	+	176	0
-	+	177	67
-	+	177	21
-	+	177	0
-	+	177	105
-	+	177	90
-	+	177	0
-	+	177	89
-	+	177	52
-	+	177	0
-	+	177	4
-	+	177	92
-	+	177	0
-	a	186	44
-	b	186	44
+> ~/python_common/waivek/test.py
+	*	1725817570	0
+	"	130	0
+	^	764	20
+	.	751	0
+	+	752	11
+	+	753	26
+	+	775	13
+	+	767	15
+	+	775	18
+	+	767	35
+	+	767	0
+	+	749	23
+	+	753	16
+	+	773	29
+	+	775	20
+	+	752	18
+	+	767	20
+	+	752	18
+	+	767	0
+	+	65	4
+	+	66	31
+	+	666	0
+	+	775	5
+	+	774	15
+	+	757	15
+	+	759	0
+	+	765	19
+	+	766	19
+	+	771	19
+	+	772	9
+	+	758	0
+	+	766	0
+	+	765	0
+	+	750	0
+	+	764	19
+	+	745	0
+	+	742	0
+	+	741	0
+	+	5	0
+	+	8	0
+	+	9	0
+	+	10	0
+	+	62	0
+	+	108	0
+	+	151	0
+	+	552	0
+	+	590	0
+	+	591	0
+	+	632	0
+	+	662	0
+	+	663	0
+	+	705	0
+	+	714	0
+	+	715	0
+	+	751	0
 
-> /usr/share/vim/vim90/doc/terminal.txt
-	*	1725759227	0
-	"	248	54
+> ~/.vim/vimrc
+	*	1725817078	0
+	"	571	4
+	^	572	6
+	.	572	5
+	+	1	41
+	+	1	44
+	+	1	40
+	+	1	28
+	+	1	0
+	+	1	11
+	+	1	18
+	+	1	43
+	+	1	64
+	+	1	54
+	+	1	0
+	+	1	31
+	+	1	0
+	+	1	6
+	+	1	0
+	+	1	1
+	+	1	0
+	+	1	80
+	+	1	75
+	+	1	0
+	+	1	52
+	+	1	41
+	+	1	0
+	+	1	26
+	+	1	0
+	+	1	22
+	+	1	25
+	+	1	0
+	+	1	57
+	+	1	59
+	+	1	55
+	+	1	0
+	+	1	25
+	+	1	1
+	+	1	0
+	+	1	24
+	+	1	0
+	+	1	12
+	+	1	0
+	+	1	49
+	+	1	0
+	+	1	13
+	+	1	0
+	+	1	16
+	+	1	0
+	+	1	25
+	+	1	3
+	+	1	5
+	+	1	16
+	+	1	0
+	+	1	16
+	+	1	0
+	+	1	5
+	+	1	3
+	+	1	0
+	+	1	4
+	+	1	0
+	+	1	40
+	+	1	36
+	+	1	0
+	+	1	26
+	+	1	9
+	+	1	0
+	+	1	31
+	+	1	4
+	+	1	30
+	+	1	4
+	+	1	0
+	+	1	5
+	+	1	8
+	+	1	29
+	+	1	33
+	+	1	1
+	+	1	21
+	+	1	20
+	+	1	1
+	+	1	0
+	+	120	0
+	+	424	0
+	+	1146	0
+	+	572	5
+
+> ~/.vim/mappings.vim
+	*	1725817076	0
+	"	1	0
+	^	9	0
+	.	11	0
+	+	2	13
+	+	2	0
+	+	5	0
+	+	2	0
+	+	2	13
+	+	3	0
+	+	5	0
+	+	5	24
+	+	5	25
+	+	5	0
+	+	1	0
+	+	6	55
+	+	23	25
+	+	24	17
+	+	23	25
+	+	24	25
+	+	23	25
+	+	24	25
+	+	23	5
+	+	24	5
+	+	23	0
+	+	24	0
+	+	23	7
+	+	24	16
+	+	13	1
+	+	10	2
+	+	15	1
+	+	24	20
+	+	15	2
+	+	23	0
+	+	22	0
+	+	21	0
+	+	19	4
+	+	19	0
+	+	19	1
+	+	19	0
+	+	15	6
+	+	19	0
+	+	15	6
+	+	19	0
+	+	15	7
+	+	19	0
+	+	15	6
+	+	19	0
+	+	15	5
+	+	19	0
+	+	24	70
+	+	24	34
+	+	24	0
+	+	24	64
+	+	19	1
+	+	13	35
+	+	10	35
+	+	7	35
+	+	13	0
+	+	11	0
+	+	11	57
+	+	11	0
+	+	1	0
+	+	11	33
+	+	1	0
+	+	11	33
+	+	1	0
+	+	11	56
+	+	1	0
+	+	19	0
+	+	11	55
+	+	21	101
+	+	20	36
+	+	19	0
+	+	16	47
+	+	18	0
+	+	16	36
+	+	18	0
+	+	16	0
+	+	14	0
+	+	15	49
+	+	16	53
+	+	16	0
+	+	24	0
+	+	9	0
+	+	10	0
+	+	15	1
+	+	16	1
+	+	16	0
+	+	21	0
+	+	17	45
+	+	25	0
+	+	21	0
+	+	17	23
+	+	5	0
+	+	11	56
+	+	11	0
+
+> ~/.vim/plugin/run3.vim
+	*	1725816834	0
+	"	36	4
+	.	36	0
+	+	50	44
+	+	51	11
+	+	32	0
+	+	51	36
+	+	56	0
+	+	51	75
+	+	52	31
+	+	55	0
+	+	54	13
+	+	75	0
+	+	71	71
+	+	72	26
+	+	82	0
+	+	77	0
+	+	78	0
+	+	81	0
+	+	77	28
+	+	72	0
+	+	72	43
+	+	9	0
+	+	12	42
+	+	11	63
+	+	72	0
+	+	12	0
+	+	62	0
+	+	58	10
+	+	62	0
+	+	58	17
+	+	61	0
+	+	60	13
+	+	62	0
+	+	71	0
+	+	5	0
+	+	5	23
+	+	48	0
+	+	47	7
+	+	47	8
+	+	48	0
+	+	47	0
+	+	59	0
+	+	58	0
+	+	1	0
+	+	2	6
+	+	5	0
+	+	47	31
+	+	12	42
+	+	35	10
+	+	35	61
+	+	35	14
+	+	35	9
+	+	35	0
+	+	35	71
+	+	35	47
+	+	35	70
+	+	35	0
+	+	35	26
+	+	35	27
+	+	35	0
+	+	35	37
+	+	47	35
+	+	52	30
+	+	52	0
+	+	47	0
+	+	12	0
+	+	4	0
+	+	35	10
+	+	35	0
+	+	47	0
+	+	37	43
+	+	43	0
+	+	47	7
+	+	43	0
+	+	47	0
+	+	44	0
+	+	47	0
+	+	45	25
+	+	46	13
+	+	49	21
+	+	42	14
+	+	49	34
+	+	42	40
+	+	36	50
+	+	42	46
+	+	49	44
+	+	57	42
+	+	63	50
+	+	74	0
+	+	71	0
+	+	77	40
+	+	77	0
+	+	82	0
+	+	74	0
+	+	62	0
+	+	64	5
+	+	51	59
+	+	53	15
+	+	40	0
+	+	73	0
+	+	64	0
+	+	36	0
+
+> ~/python_common/waivek/print_utils.py
+	*	1725816093	0
+	"	1	0
+	.	154	0
+	+	183	0
+	+	3	0
+	+	210	0
+	+	155	0
+	+	154	0
 
 > ~/python_common/waivek/truncatediff.py
-	*	1725751807	0
-	"	114	0
-	^	133	0
-	.	134	0
+	*	1725813562	0
+	"	1	5
+	^	74	0
+	.	73	17
 	+	1	0
 	+	176	0
 	+	132	23
 	+	134	0
-
-> ~/python_common/.direnv/python-3.10.12/lib/python3.10/site-packages/rich/text.py
-	*	1725749487	0
-	"	857	0
-
-> ~/prompts/render_prompt.py
-	*	1725692158	0
-	"	15	0
-	^	15	20
-	.	14	30
-	+	1	0
-	+	27	0
-	+	11	0
-	+	7	27
-	+	11	40
-	+	23	26
-	+	11	23
-	+	23	0
-	+	12	24
-	+	16	54
-	+	17	32
-	+	16	54
-	+	8	13
-	+	16	85
-	+	17	48
-	+	23	0
-	+	18	48
-	+	19	13
-	+	20	40
-	+	23	0
-	+	22	18
-	+	23	0
-	+	14	30
+	+	1	9
+	+	73	17
 
 > ~/prompts/240907.truncate_data_strucuture.txt
-	*	1725691956	0
-	"	43	0
+	*	1725804062	0
+	"	7	0
 	^	29	5
 	.	43	0
 	+	35	24
@@ -15682,6 +16861,49 @@ $''.join(ansi_code for ansi_code in right_tokens[0].active_ansi_codes)
 	+	29	4
 	+	44	0
 	+	43	0
+
+> ~/python_staging/rich_experiments.py
+	*	1725759927	0
+	"	47	7
+	^	40	15
+	.	47	7
+	+	1	0
+	+	9	10
+	+	10	0
+	+	35	56
+	+	45	0
+	+	2	10
+	+	46	26
+	+	47	9
+	+	36	10
+	+	35	42
+	+	40	28
+	+	44	18
+	+	7	20
+	+	47	7
+	+	44	14
+	+	43	0
+	+	39	22
+	+	40	0
+	+	41	0
+	+	6	0
+	+	42	19
+	+	44	14
+	+	42	0
+	+	44	18
+	+	42	18
+	+	40	0
+	+	47	7
+	a	47	7
+	b	47	7
+
+> /usr/share/vim/vim90/doc/terminal.txt
+	*	1725759227	0
+	"	248	54
+
+> ~/python_common/.direnv/python-3.10.12/lib/python3.10/site-packages/rich/text.py
+	*	1725749487	0
+	"	857	0
 
 > /usr/share/vim/vim90/doc/options.txt
 	*	1725691834	0
@@ -15797,111 +17019,6 @@ $''.join(ansi_code for ansi_code in right_tokens[0].active_ansi_codes)
 	+	2	0
 	+	3	0
 
-> ~/pyscripts/print_todo.py
-	*	1725688216	0
-	"	78	8
-	^	77	73
-	.	73	52
-	+	98	9
-	+	100	0
-	+	98	0
-	+	66	34
-	+	67	33
-	+	68	35
-	+	69	24
-	+	85	0
-	+	85	148
-	+	85	177
-	+	65	30
-	+	85	115
-	+	85	25
-	+	85	154
-	+	85	150
-	+	85	33
-	+	85	175
-	+	85	34
-	+	85	176
-	+	85	79
-	+	1	21
-	+	1	0
-	+	132	22
-	+	132	0
-	+	18	0
-	+	18	24
-	+	18	0
-	+	18	25
-	+	74	26
-	+	132	0
-	+	74	9
-	+	85	0
-	+	88	0
-	+	85	7
-	+	85	20
-	+	85	0
-	+	85	54
-	+	87	0
-	+	85	9
-	+	87	168
-	+	85	29
-	+	85	117
-	+	85	50
-	+	85	111
-	+	18	25
-	+	85	80
-	+	85	51
-	+	85	55
-	+	85	71
-	+	126	0
-	+	74	9
-	+	77	27
-	+	47	0
-	+	18	8
-	+	46	0
-	+	17	0
-	+	47	0
-	+	77	52
-	+	121	32
-	+	122	33
-	+	124	0
-	+	122	0
-	+	125	0
-	+	123	21
-	+	126	128
-	+	74	34
-	+	77	0
-	+	75	11
-	+	76	12
-	+	77	0
-	+	127	104
-	+	127	0
-	+	127	12
-	+	127	21
-	+	127	17
-	+	127	106
-	+	127	24
-	+	127	108
-	+	127	0
-	+	77	60
-	+	74	0
-	+	85	0
-	+	81	17
-	+	81	76
-	+	81	17
-	+	132	25
-	+	86	0
-	+	84	0
-	+	81	0
-	+	74	53
-	+	73	72
-	+	81	48
-	+	74	0
-	+	131	0
-	+	132	0
-	+	64	0
-	+	77	72
-	+	127	0
-	+	73	52
-
 > ~/python_common/waivek/todo.txt
 	*	1725640168	0
 	"	1	2
@@ -15963,218 +17080,6 @@ $''.join(ansi_code for ansi_code in right_tokens[0].active_ansi_codes)
 	+	1	1
 	+	2	0
 	+	1	0
-
-> ~/.vim/todo.txt
-	*	1725638507	0
-	"	1	2
-	^	1	88
-	.	1	87
-	+	31	0
-	+	23	99
-	+	23	0
-	+	22	53
-	+	20	96
-	+	20	0
-	+	19	167
-	+	33	0
-	+	32	0
-	+	18	0
-	+	33	0
-	+	18	79
-	+	18	0
-	+	17	165
-	+	19	0
-	+	22	0
-	+	17	0
-	+	18	0
-	+	33	0
-	+	17	0
-	+	19	0
-	+	24	0
-	+	17	0
-	+	18	0
-	+	19	0
-	+	18	0
-	+	19	0
-	+	18	0
-	+	19	0
-	+	20	68
-	+	17	0
-	+	20	68
-	+	17	0
-	+	23	0
-	+	23	87
-	+	17	0
-	+	22	0
-	+	20	0
-	+	17	0
-	+	20	0
-	+	25	0
-	+	24	0
-	+	23	0
-	+	15	84
-	+	15	0
-	+	14	19
-	+	23	27
-	+	14	100
-	+	14	0
-	+	16	165
-	+	14	0
-	+	15	0
-	+	20	0
-	+	19	0
-	+	21	108
-	+	28	0
-	+	13	69
-	+	21	0
-	+	12	83
-	+	11	69
-	+	10	87
-	+	9	27
-	+	9	105
-	+	9	0
-	+	12	0
-	+	13	0
-	+	23	0
-	+	9	128
-	+	12	46
-	+	12	0
-	+	9	0
-	+	12	0
-	+	8	124
-	+	9	174
-	+	8	214
-	+	7	75
-	+	6	63
-	+	7	0
-	+	5	142
-	+	4	103
-	+	3	143
-	+	2	123
-	+	2	0
-	+	3	0
-	+	5	0
-	+	6	0
-	+	16	0
-	+	13	0
-	+	8	0
-	+	26	0
-	+	25	0
-	+	2	0
-	+	25	79
-	+	1	1
-	+	2	2
-	+	3	2
-	+	8	7
-	+	5	9
-	+	4	6
-	+	1	87
-
-> ~/.vim/plugin/run3.vim
-	*	1725633393	0
-	"	75	4
-	^	54	16
-	.	75	0
-	+	69	0
-	+	63	0
-	+	51	44
-	+	52	11
-	+	32	0
-	+	52	36
-	+	57	0
-	+	52	75
-	+	53	31
-	+	56	0
-	+	55	13
-	+	77	0
-	+	73	71
-	+	74	26
-	+	84	0
-	+	79	0
-	+	80	0
-	+	83	0
-	+	79	28
-	+	74	0
-	+	74	43
-	+	9	0
-	+	12	42
-	+	11	63
-	+	74	0
-	+	12	0
-	+	63	0
-	+	59	10
-	+	63	0
-	+	59	17
-	+	62	0
-	+	61	13
-	+	63	0
-	+	73	0
-	+	5	0
-	+	5	23
-	+	49	0
-	+	48	7
-	+	48	8
-	+	49	0
-	+	48	0
-	+	60	0
-	+	59	0
-	+	1	0
-	+	2	6
-	+	5	0
-	+	48	31
-	+	12	42
-	+	35	10
-	+	35	61
-	+	35	14
-	+	35	9
-	+	35	0
-	+	35	71
-	+	35	47
-	+	35	70
-	+	35	0
-	+	35	26
-	+	35	27
-	+	35	0
-	+	35	37
-	+	48	35
-	+	53	30
-	+	53	0
-	+	48	0
-	+	12	0
-	+	4	0
-	+	35	10
-	+	35	0
-	+	48	0
-	+	38	43
-	+	44	0
-	+	48	7
-	+	44	0
-	+	48	0
-	+	45	0
-	+	48	0
-	+	46	25
-	+	47	13
-	+	50	21
-	+	43	14
-	+	50	34
-	+	43	40
-	+	37	50
-	+	43	46
-	+	50	44
-	+	58	42
-	+	64	50
-	+	76	0
-	+	73	0
-	+	79	40
-	+	79	0
-	+	84	0
-	+	76	0
-	+	63	0
-	+	65	5
-	+	52	59
-	+	54	15
-	+	41	0
-	+	75	0
 
 > ~/.vim/plugin/run.vim
 	*	1725633304	0
@@ -16267,105 +17172,6 @@ $''.join(ansi_code for ansi_code in right_tokens[0].active_ansi_codes)
 > /usr/lib/python3.10/textwrap.py
 	*	1725630832	0
 	"	376	0
-
-> ~/.vim/mappings.vim
-	*	1725592643	0
-	"	24	0
-	^	9	0
-	.	11	0
-	+	2	13
-	+	2	0
-	+	5	0
-	+	2	0
-	+	2	13
-	+	3	0
-	+	5	0
-	+	5	24
-	+	5	25
-	+	5	0
-	+	1	0
-	+	6	55
-	+	23	25
-	+	24	17
-	+	23	25
-	+	24	25
-	+	23	25
-	+	24	25
-	+	23	5
-	+	24	5
-	+	23	0
-	+	24	0
-	+	23	7
-	+	24	16
-	+	13	1
-	+	10	2
-	+	15	1
-	+	24	20
-	+	15	2
-	+	23	0
-	+	22	0
-	+	21	0
-	+	19	4
-	+	19	0
-	+	19	1
-	+	19	0
-	+	15	6
-	+	19	0
-	+	15	6
-	+	19	0
-	+	15	7
-	+	19	0
-	+	15	6
-	+	19	0
-	+	15	5
-	+	19	0
-	+	24	70
-	+	24	34
-	+	24	0
-	+	24	64
-	+	19	1
-	+	13	35
-	+	10	35
-	+	7	35
-	+	13	0
-	+	11	0
-	+	11	57
-	+	11	0
-	+	1	0
-	+	11	33
-	+	1	0
-	+	11	33
-	+	1	0
-	+	11	56
-	+	1	0
-	+	19	0
-	+	11	55
-	+	21	101
-	+	20	36
-	+	19	0
-	+	16	47
-	+	18	0
-	+	16	36
-	+	18	0
-	+	16	0
-	+	14	0
-	+	15	49
-	+	16	53
-	+	16	0
-	+	24	0
-	+	9	0
-	+	10	0
-	+	15	1
-	+	16	1
-	+	16	0
-	+	21	0
-	+	17	45
-	+	25	0
-	+	21	0
-	+	17	23
-	+	5	0
-	+	11	56
-	+	11	0
 
 > /usr/share/vim/vim90/doc/help.txt
 	*	1725592625	0
@@ -16480,48 +17286,6 @@ $''.join(ansi_code for ansi_code in right_tokens[0].active_ansi_codes)
 > /usr/share/vim/vim90/doc/motion.txt
 	*	1725592557	0
 	"	1010	16
-
-> ~/bash/oldfiles.bash
-	*	1725591753	0
-	"	1	0
-	^	2	108
-	.	2	107
-	+	2	1
-	+	2	12
-	+	2	49
-	+	2	12
-	+	2	0
-	+	3	1
-	+	1	10
-	+	2	62
-	+	2	34
-	+	2	1
-	+	2	16
-	+	2	0
-	+	5	33
-	+	2	68
-	+	3	66
-	+	3	0
-	+	2	13
-	+	3	23
-	+	4	51
-	+	5	28
-	+	6	22
-	+	2	107
-
-> ~/bash/pwd-oldfiles.bash
-	*	1725591072	0
-	"	7	0
-	.	1	0
-	+	1	0
-	+	1	10
-	+	1	0
-	+	1	1
-	+	1	0
-	+	1	71
-	+	1	0
-	+	2	53
-	+	1	0
 
 > ~/.vim/plugin/better.vim
 	*	1725566041	0
@@ -17017,111 +17781,6 @@ $''.join(ansi_code for ansi_code in right_tokens[0].active_ansi_codes)
 	+	9	16
 	a	257	13
 	b	91	33
-
-> ~/python_common/waivek/date.py
-	*	1725548942	0
-	"	102	8
-	^	76	8
-	.	5	0
-	+	77	16
-	+	78	19
-	+	73	27
-	+	85	0
-	+	77	16
-	+	79	10
-	+	78	21
-	+	79	16
-	+	78	16
-	+	79	34
-	+	85	14
-	+	79	14
-	+	85	0
-	+	80	26
-	+	85	0
-	+	80	20
-	+	84	0
-	+	83	16
-	+	80	0
-	+	83	24
-	+	83	0
-	+	80	0
-	+	77	10
-	+	79	64
-	+	80	0
-	+	72	0
-	+	72	18
-	+	37	0
-	+	37	11
-	+	37	0
-	+	36	2
-	+	77	35
-	+	77	20
-	+	36	20
-	+	36	4
-	+	36	5
-	+	36	131
-	+	36	34
-	+	36	19
-	+	36	18
-	+	36	14
-	+	36	35
-	+	36	12
-	+	36	0
-	+	36	8
-	+	36	29
-	+	36	42
-	+	36	8
-	+	36	24
-	+	36	15
-	+	36	0
-	+	36	35
-	+	36	55
-	+	36	17
-	+	36	0
-	+	36	31
-	+	36	20
-	+	36	69
-	+	36	29
-	+	36	43
-	+	36	31
-	+	36	80
-	+	36	38
-	+	36	77
-	+	36	54
-	+	36	43
-	+	36	119
-	+	36	47
-	+	36	48
-	+	36	65
-	+	36	0
-	+	36	87
-	+	36	85
-	+	36	69
-	+	36	48
-	+	36	0
-	+	36	28
-	+	36	4
-	+	36	105
-	+	36	0
-	+	77	7
-	+	77	0
-	+	77	30
-	+	77	15
-	+	36	0
-	+	36	82
-	+	72	0
-	+	77	0
-	+	77	11
-	+	57	85
-	+	57	6
-	+	36	0
-	+	39	0
-	+	52	0
-	+	76	7
-	+	1	0
-	+	4	0
-	+	5	0
-	a	8	12
 
 > ~/pyscripts/youtube-text-to-dates.py
 	*	1725543825	0
@@ -17630,91 +18289,6 @@ $''.join(ansi_code for ansi_code in right_tokens[0].active_ansi_codes)
 	+	1	43
 	+	4	43
 	+	5	43
-
-> ~/.vim/vimrc
-	*	1725532352	0
-	"	1146	0
-	.	1146	0
-	+	1	41
-	+	1	44
-	+	1	40
-	+	1	28
-	+	1	0
-	+	1	11
-	+	1	18
-	+	1	43
-	+	1	64
-	+	1	54
-	+	1	0
-	+	1	31
-	+	1	0
-	+	1	6
-	+	1	0
-	+	1	1
-	+	1	0
-	+	1	80
-	+	1	75
-	+	1	0
-	+	1	52
-	+	1	41
-	+	1	0
-	+	1	26
-	+	1	0
-	+	1	22
-	+	1	25
-	+	1	0
-	+	1	57
-	+	1	59
-	+	1	55
-	+	1	0
-	+	1	25
-	+	1	1
-	+	1	0
-	+	1	24
-	+	1	0
-	+	1	12
-	+	1	0
-	+	1	49
-	+	1	0
-	+	1	13
-	+	1	0
-	+	1	16
-	+	1	0
-	+	1	25
-	+	1	3
-	+	1	5
-	+	1	16
-	+	1	0
-	+	1	16
-	+	1	0
-	+	1	5
-	+	1	3
-	+	1	0
-	+	1	4
-	+	1	0
-	+	1	40
-	+	1	36
-	+	1	0
-	+	1	26
-	+	1	9
-	+	1	0
-	+	1	31
-	+	1	4
-	+	1	30
-	+	1	4
-	+	1	0
-	+	1	5
-	+	1	8
-	+	1	29
-	+	1	33
-	+	1	1
-	+	1	21
-	+	1	20
-	+	1	1
-	+	1	0
-	+	120	0
-	+	424	0
-	+	1146	0
 
 > ~/.vim/_viminfo_linux
 	*	1725531220	0
@@ -19744,22 +20318,6 @@ $''.join(ansi_code for ansi_code in right_tokens[0].active_ansi_codes)
 	.	1	26
 	+	1	26
 
-> ~/tooling/app_ideas/alarm.txt
-	*	1725010060	0
-	"	11	1
-	.	1	0
-	+	1	11
-	+	6	0
-	+	8	12
-	+	10	197
-	+	11	85
-	+	12	0
-	+	5	10
-	+	6	0
-	+	3	132
-	+	12	0
-	+	1	0
-
 > ~/tooling/app_ideas/basics.txt
 	*	1724991707	0
 	"	4	0
@@ -19871,31 +20429,6 @@ $''.join(ansi_code for ansi_code in right_tokens[0].active_ansi_codes)
 	+	11	0
 	+	399	0
 	+	398	0
-
-> ~/python_common/waivek/ic.py
-	*	1724981930	0
-	"	546	8
-	^	370	0
-	.	886	0
-	+	397	4
-	+	398	31
-	+	837	23
-	+	144	0
-	+	141	25
-	+	143	0
-	+	144	0
-	+	371	0
-	+	370	0
-	+	12	0
-	+	15	0
-	+	16	0
-	+	198	0
-	+	394	0
-	+	407	0
-	+	615	0
-	+	834	0
-	+	856	0
-	+	886	0
 
 > /usr/share/vim/vim90/doc/editing.txt
 	*	1724981125	0
@@ -20081,108 +20614,6 @@ $''.join(ansi_code for ansi_code in right_tokens[0].active_ansi_codes)
 	+	37	0
 	+	442	0
 
-> ~/python_common/waivek/error2.py
-	*	1724976133	0
-	"	226	4
-	.	226	0
-	+	1	15
-	+	384	8
-	+	400	0
-	+	1	0
-	+	1	51
-	+	1	46
-	+	1	130
-	+	1	0
-	+	391	0
-	+	397	0
-	+	383	0
-	+	382	0
-	+	1	130
-	+	1	104
-	+	1	0
-	+	1	41
-	+	1	9
-	+	1	0
-	+	386	0
-	+	393	36
-	+	394	23
-	+	397	54
-	+	386	0
-	+	392	38
-	+	397	52
-	+	397	0
-	+	395	34
-	+	397	0
-	+	392	5
-	+	395	39
-	+	1	17
-	+	1	5
-	+	1	35
-	+	1	0
-	+	1	50
-	+	1	0
-	+	1	59
-	+	1	0
-	+	1	41
-	+	1	25
-	+	1	15
-	+	1	40
-	+	1	13
-	+	1	55
-	+	1	0
-	+	1	7
-	+	1	13
-	+	1	64
-	+	1	0
-	+	1	35
-	+	1	0
-	+	1	19
-	+	1	0
-	+	1	18
-	+	1	0
-	+	1	44
-	+	1	0
-	+	1	12
-	+	1	0
-	+	1	35
-	+	1	0
-	+	1	42
-	+	1	0
-	+	1	24
-	+	1	0
-	+	1	46
-	+	1	0
-	+	1	52
-	+	1	0
-	+	1	52
-	+	1	0
-	+	1	13
-	+	1	0
-	+	1	14
-	+	1	32
-	+	1	14
-	+	1	0
-	+	1	18
-	+	2	0
-	+	297	25
-	+	298	0
-	+	294	0
-	+	294	9
-	+	9	0
-	+	1	0
-	+	10	0
-	+	297	0
-	+	298	3
-	+	298	0
-	+	294	0
-	+	9	0
-	+	84	0
-	+	199	0
-	+	215	0
-	+	226	0
-	a	306	28
-	b	306	29
-
 > ~/python_common/waivek/testbetterpdb.py
 	*	1724976086	0
 	"	2	0
@@ -20304,63 +20735,6 @@ $''.join(ansi_code for ansi_code in right_tokens[0].active_ansi_codes)
 	+	15	4
 	+	12	0
 	+	13	0
-
-> ~/python_common/waivek/test.py
-	*	1724976075	0
-	"	751	4
-	^	764	20
-	.	751	0
-	+	752	11
-	+	753	26
-	+	775	13
-	+	767	15
-	+	775	18
-	+	767	35
-	+	767	0
-	+	749	23
-	+	753	16
-	+	773	29
-	+	775	20
-	+	752	18
-	+	767	20
-	+	752	18
-	+	767	0
-	+	65	4
-	+	66	31
-	+	666	0
-	+	775	5
-	+	774	15
-	+	757	15
-	+	759	0
-	+	765	19
-	+	766	19
-	+	771	19
-	+	772	9
-	+	758	0
-	+	766	0
-	+	765	0
-	+	750	0
-	+	764	19
-	+	745	0
-	+	742	0
-	+	741	0
-	+	5	0
-	+	8	0
-	+	9	0
-	+	10	0
-	+	62	0
-	+	108	0
-	+	151	0
-	+	552	0
-	+	590	0
-	+	591	0
-	+	632	0
-	+	662	0
-	+	663	0
-	+	705	0
-	+	714	0
-	+	715	0
-	+	751	0
 
 > ~/python_common/waivek/reqs.py
 	*	1724976053	0
@@ -20662,23 +21036,6 @@ $''.join(ansi_code for ansi_code in right_tokens[0].active_ansi_codes)
 	.	32	33
 	+	2	0
 	+	32	33
-
-> ~/python_common/waivek/test_debugger.py
-	*	1724913694	0
-	"	37	42
-	.	17	0
-	+	82	18
-	+	82	11
-	+	1	0
-	+	82	0
-	+	174	18
-	+	1	0
-	+	10	4
-	+	38	8
-	+	65	0
-	+	65	25
-	+	65	0
-	+	17	0
 
 > ~/.vim/colors/plain.vim
 	*	1724913360	0
@@ -22638,10 +22995,6 @@ $''.join(ansi_code for ansi_code in right_tokens[0].active_ansi_codes)
 	.	21	0
 	+	19	1
 	+	21	0
-
-> ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/color.py
-	*	1723675880	0
-	"	27	0
 
 > ~/sqlite-editor/getdbpaths.py
 	*	1723672634	0
@@ -36470,10 +36823,6 @@ $''.join(ansi_code for ansi_code in right_tokens[0].active_ansi_codes)
 	.	2	0
 	+	13	0
 	+	2	0
-
-> ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/ic.py
-	*	1716291281	0
-	"	292	19
 
 > ~/pyscripts/~
 	*	1716290278	0
@@ -51439,10 +51788,6 @@ $''.join(ansi_code for ansi_code in right_tokens[0].active_ansi_codes)
 > ~/.vim/performance/230529.long_pause_linux_term.v01.txt
 	*	1685392242	0
 	"	506	0
-
-> ~/python_common/ic.py
-	*	1685390490	0
-	"	1	0
 
 > /etc/timezone
 	*	1685235262	0

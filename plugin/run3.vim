@@ -33,7 +33,6 @@ function! s:RunLineToExecuteCommand(line, filename)
 endfunction
 
 function! s:Run3()
-
     " case 1: g:custom_runner, multi-file [non-vim]
     if g:custom_runner != "" && &ft != "vim"
         let l:command = s:ReplacePercentWithFilename(g:custom_runner, expand('%'))
@@ -62,7 +61,6 @@ function! s:Run3()
     endif
 
     " case 5: default runner, single-file [non-vim]
-    "
     let l:ft = &filetype
     let l:runners = s:GetRunners()
     let l:runner = get(l:runners, l:ft, "")
