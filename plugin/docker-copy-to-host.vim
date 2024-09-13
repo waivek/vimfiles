@@ -1,5 +1,5 @@
 
-let s:target_folder = 'C:\Users\vivek\claude\'
+let s:target_folder = 'C:\Users\vivek\Desktop\claude\'
 
 function! s:CopyToHost()
   let l:hostname = trim(system('hostname'))

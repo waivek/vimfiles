@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/ copper
+~MSle0~/quickfix
 
 # Last Substitute Search Pattern:
 ~MSle0&Function\|Operator
@@ -20,8 +20,88 @@
 $
 
 # Command Line History (newest to oldest):
+:qa
+|2,0,1726206171,,"qa"
 :q
-|2,0,1726003211,,"q"
+|2,0,1726206141,,"q"
+:CocConfig
+|2,0,1726206125,,"CocConfig"
+:e pyrightconfig.json
+|2,0,1726206121,,"e pyrightconfig.json"
+:e .envrc
+|2,0,1726206073,,"e .envrc"
+:q!
+|2,0,1726205990,,"q!"
+:bd!
+|2,0,1726205989,,"bd!"
+:echo CocAction('codeAction')
+|2,0,1726182527,,"echo CocAction('codeAction')"
+:echo       CocAction('codeAction', 'cursor')
+|2,0,1726182515,,"echo       CocAction('codeAction', 'cursor')"
+:call       CocActionAsync('quickfixes')
+|2,0,1726182505,,"call       CocActionAsync('quickfixes')"
+:call       CocActionAsync('codeAction')
+|2,0,1726182499,,"call       CocActionAsync('codeAction')"
+:echo $PYTHONPATH
+|2,0,1726182453,,"echo $PYTHONPATH"
+:PlugInstall
+|2,0,1726182437,,"PlugInstall"
+:CocList services
+|2,0,1726182394,,"CocList services"
+:CocInfo
+|2,0,1726182303,,"CocInfo"
+:call       CocActionAsync('codeAction', 'cursor')
+|2,0,1726182246,,"call       CocActionAsync('codeAction', 'cursor')"
+:call       CocActionAsync('codeAction', 'line')
+|2,0,1726182235,,"call       CocActionAsync('codeAction', 'line')"
+:CocList
+|2,0,1726182197,,"CocList"
+:CocInstall
+|2,0,1726182193,,"CocInstall"
+:echo  CocAction('quickfixes')
+|2,0,1726182021,,"echo  CocAction('quickfixes')"
+:call       CocActionA
+|2,0,1726182012,,"call       CocActionA"
+:e`
+|2,0,1726181984,,"e`"
+:ll
+|2,0,1726181842,,"ll"
+:h coc-nvim
+|2,0,1726181731,,"h coc-nvim"
+:call       CocAction('codeAction', 'cursor')
+|2,0,1726181713,,"call       CocAction('codeAction', 'cursor')"
+:map \f
+|2,0,1726181693,,"map \\f"
+:e .env
+|2,0,1726181664,,"e .env"
+:pwd
+|2,0,1726181305,,"pwd"
+:term
+|2,0,1726181268,,"term"
+:e requirements-dev.txt
+|2,0,1726181265,,"e requirements-dev.txt"
+:e test_truncate.py
+|2,0,1726181180,,"e test_truncate.py"
+:Rg
+|2,0,1726180869,,"Rg"
+:CocRestart
+|2,0,1726180859,,"CocRestart"
+:Enumerate
+|2,0,1726180836,,"Enumerate"
+:MRU jprev
+|2,0,1726180624,,"MRU jprev"
+:jumps
+|2,0,1726180613,,"jumps"
+:Jprevious
+|2,0,1726180589,,"Jprevious"
+:CopyToHost
+|2,0,1726180428,,"CopyToHost"
+:lopen
+|2,0,1726085799,,"lopen"
+:e
+|2,0,1726085753,,"e"
+:e waivek/ic.py
+|2,0,1726003602,,"e waivek/ic.py"
 :bd
 |2,0,1725999840,,"bd"
 :Tab / copper/
@@ -32,8 +112,6 @@ $
 |2,0,1725917639,,"MRU alarm"
 :MRU cale
 |2,0,1725917634,,"MRU cale"
-:CopyToHost
-|2,0,1725916908,,"CopyToHost"
 :b table
 |2,0,1725916844,,"b table"
 :CocList diagnostics
@@ -52,16 +130,12 @@ $
 |2,0,1725916055,,"map ["
 :Template
 |2,0,1725915179,,"Template"
-:qa
-|2,0,1725915168,,"qa"
 :e oldfiles.bash
 |2,0,1725915143,,"e oldfiles.bash"
 :qa!
 |2,0,1725915104,,"qa!"
 :e waivek/table.py
 |2,0,1725915003,,"e waivek/table.py"
-:pwd
-|2,0,1725914955,,"pwd"
 :e ic.py
 |2,0,1725914953,,"e ic.py"
 :e printtodocopy.py
@@ -70,10 +144,6 @@ $
 |2,0,1725821095,,"lnext"
 :cn
 |2,0,1725821094,,"cn"
-:q!
-|2,0,1725819261,,"q!"
-:CocRestart
-|2,0,1725819010,,"CocRestart"
 :e colo
 |2,0,1725819007,,"e colo"
 :291
@@ -86,10 +156,6 @@ $
 |2,0,1725817697,,"e foo.py"
 :MRU 48:simple-pydantic-error.py
 |2,0,1725817610,,"MRU 48:simple-pydantic-error.py"
-:Rg
-|2,0,1725817573,,"Rg"
-:Jprevious
-|2,0,1725817081,,"Jprevious"
 :so %
 |2,0,1725817076,,"so %"
 :edit $MYVIMRC
@@ -124,8 +190,6 @@ $
 |2,0,1725815920,,"Tab /#/"
 :Echo "Hello World!"
 |2,0,1725815768,,"Echo \"Hello World!\""
-:e test_truncate.py
-|2,0,1725813573,,"e test_truncate.py"
 :diffput
 |2,0,1725813560,,"diffput"
 :diffthis
@@ -150,14 +214,10 @@ $
 |2,0,1725759194,,"h :ter"
 :h ++rows
 |2,0,1725759191,,"h ++rows"
-:term
-|2,0,1725757230,,"term"
 :0read truncate.py
 |2,0,1725751736,,"0read truncate.py"
 :0read truncate
 |2,0,1725751733,,"0read truncate"
-:Enumerate
-|2,0,1725749928,,"Enumerate"
 :MRU truncate
 |2,0,1725749487,,"MRU truncate"
 :e 
@@ -166,8 +226,6 @@ $
 |2,0,1725749174,,"MRU rich"
 :e waivek/ri
 |2,0,1725749173,,"e waivek/ri"
-:e
-|2,0,1725691908,,"e"
 :let g
 |2,0,1725691849,,"let g"
 :verbose function Foldexpr_markdown
@@ -232,8 +290,6 @@ $
 |2,0,1725630304,,"echo g:custom_runner"
 :echo g:cusom_runner
 |2,0,1725630297,,"echo g:cusom_runner"
-:jumps
-|2,0,1725592628,,"jumps"
 :jups
 |2,0,1725592601,,"jups"
 :keepjumps JPrevious
@@ -336,8 +392,6 @@ $
 |2,0,1725551951,,"LogPrettyPrintLine"
 :Pre
 |2,0,1725551949,,"Pre"
-:bd!
-|2,0,1725551896,,"bd!"
 :q1
 |2,0,1725551889,,"q1"
 :vert term python % gh-timeago-updates.log
@@ -390,8 +444,6 @@ $
 |2,0,1725539843,,"CocR"
 :e model_
 |2,0,1725539320,,"e model_"
-:e .envrc
-|2,0,1725538389,,"e .envrc"
 :e secrets.env
 |2,0,1725538362,,"e secrets.env"
 :term python %
@@ -496,8 +548,6 @@ $
 |2,0,1725482356,,"MRU 3:better.vim"
 :Jprevious 
 |2,0,1725482312,,"Jprevious "
-:MRU jprev
-|2,0,1725482250,,"MRU jprev"
 :MRU Jprevious
 |2,0,1725482236,,"MRU Jprevious"
 :MRU 4:oldfiles.vim
@@ -750,8 +800,6 @@ $
 |2,0,1725106221,,"LocalSymbols"
 :CocList 
 |2,0,1725106218,,"CocList "
-:lopen
-|2,0,1725106210,,"lopen"
 :MRU al
 |2,0,1725074801,,"MRU al"
 :MRU bashrc
@@ -890,8 +938,6 @@ $
 |2,0,1724642365,,"MRU 23:python-third-party-libs-to-grok.txt"
 :MRU tx
 |2,0,1724642214,,"MRU tx"
-:CocConfig
-|2,0,1724641876,,"CocConfig"
 :CocSet
 |2,0,1724641875,,"CocSet"
 :MRU 2:knowledge-track-writes.txt
@@ -1112,8 +1158,6 @@ $
 |2,0,1724244698,,"!"
 :UndotreeShow
 |2,0,1724243926,,"UndotreeShow"
-:PlugInstall
-|2,0,1724243918,,"PlugInstall"
 :undo
 |2,0,1724243886,,"undo"
 :MRU 72:errors.txt
@@ -1216,8 +1260,6 @@ $
 |2,0,1724186135,,"e ~/python"
 :lnex
 |2,0,1724186029,,"lnex"
-:ll
-|2,0,1724186027,,"ll"
 :MRU _vimin
 |2,0,1724113952,,"MRU _vimin"
 :e oldfiles2.go
@@ -1368,8 +1410,6 @@ $
 |2,0,1723998925,,"b vim"
 :find ide.vim
 |2,0,1723997173,,"find ide.vim"
-:e pyrightconfig.json
-|2,0,1723997051,,"e pyrightconfig.json"
 :MRU errors.
 |2,0,1723938424,,"MRU errors."
 :el
@@ -1958,8 +1998,6 @@ $
 |2,0,1722780498,,"e waivek/print-colors.py"
 :Rename log.py
 |2,0,1722780344,,"Rename log.py"
-:h coc-nvim
-|2,0,1722772746,,"h coc-nvim"
 :call CocActionAsync("refactor.inline")
 |2,0,1722772744,,"call CocActionAsync(\"refactor.inline\")"
 :call CocActionAsync('refactor.inline')
@@ -2038,8 +2076,6 @@ $
 |2,0,1722704205,,"OpenDB"
 :e loglib.py
 |2,0,1722641018,,"e loglib.py"
-:CocInstall
-|2,0,1722634935,,"CocInstall"
 :CocInsatll
 |2,0,1722634933,,"CocInsatll"
 :MRU ide.vim
@@ -2098,8 +2134,6 @@ $
 |2,0,1722589753,,"h code-action"
 :nnoremap <leader>F <Plug>(code-action-line)
 |2,0,1722589742,,"nnoremap <leader>F <Plug>(code-action-line)"
-:map \f
-|2,0,1722589724,,"map \\f"
 :H coc-nvim
 |2,0,1722589607,,"H coc-nvim"
 :g
@@ -2784,8 +2818,6 @@ $
 |2,0,1722095564,,"e plugin/command-to-buffer.vim"
 :call CocActionAsync('codeAction', 'cursor')
 |2,0,1722061457,,"call CocActionAsync('codeAction', 'cursor')"
-:call       CocActionAsync('codeAction', 'cursor')
-|2,0,1722061427,,"call       CocActionAsync('codeAction', 'cursor')"
 :CocList mappings
 |2,0,1722061331,,"CocList mappings"
 :CocListMappings
@@ -3494,8 +3526,6 @@ $
 |2,0,1719880745,,"registers"
 :set reg
 |2,0,1719880736,,"set reg"
-:e .env
-|2,0,1719738641,,"e .env"
 :h :changes
 |2,0,1719694997,,"h :changes"
 :changes 3
@@ -4394,14 +4424,10 @@ $
 |2,0,1717912128,,"e ~/hateoas/requirements.txt"
 :cd ~/hateoas
 |2,0,1717911988,,"cd ~/hateoas"
-:CocList
-|2,0,1717911817,,"CocList"
 :PlugStatus
 |2,0,1717911807,,"PlugStatus"
 :Pluglist
 |2,0,1717911803,,"Pluglist"
-:CocInfo
-|2,0,1717911732,,"CocInfo"
 :e ~/hateoas/templates/base.html
 |2,0,1717911531,,"e ~/hateoas/templates/base.html"
 :e *.md
@@ -6668,8 +6694,6 @@ $
 |2,0,1711875212,,"CocUpdate coc-pyright"
 :CocUpdate coc-pyright 
 |2,0,1711875210,,"CocUpdate coc-pyright "
-:CocList services
-|2,0,1711875170,,"CocList services"
 :MRU api.py
 |2,0,1711874593,,"MRU api.py"
 :MRU 39:elements_backend/requirements.txt
@@ -8896,8 +8920,6 @@ $
 |2,0,1692375695,,"e ~/.vim/plugin/run.vim"
 ::w
 |2,0,1692366031,,":w"
-:e`
-|2,0,1692364794,,"e`"
 :MRU ic
 |2,0,1692362671,,"MRU ic"
 :%s/^\s\+$//
@@ -10366,6 +10388,26 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/quickfix
+|2,1,1726181765,47,"quickfix"
+?/codeAction
+|2,1,1726181741,47,"codeAction"
+?/c
+|2,1,1726181733,47,"c"
+??cursor
+|2,1,1726181700,63,"cursor"
+?/\(def\|class\)\s\+\w*v_pad
+|2,1,1726085809,47,"\\(def\\|class\\)\\s\\+\\w*v_pad"
+?/get_max
+|2,1,1726085774,47,"get_max"
+?/\(def\|class\)\s\+\w*Table
+|2,1,1726085695,47,"\\(def\\|class\\)\\s\\+\\w*Table"
+?/10
+|2,1,1726003795,47,"10"
+?/just
+|2,1,1726003747,47,"just"
+?/ignore
+|2,1,1726003742,47,"ignore"
 ?/ copper
 |2,1,1725981390,47," copper"
 ?/copper
@@ -10376,8 +10418,6 @@ $
 |2,1,1725917058,47,"\\(def\\|class\\)\\s\\+\\w*fmt"
 ?/\(def\|class\)\s\+\w*distribute
 |2,1,1725917014,47,"\\(def\\|class\\)\\s\\+\\w*distribute"
-?/ignore
-|2,1,1725916858,47,"ignore"
 ?/value
 |2,1,1725916831,47,"value"
 ?/stmt
@@ -10386,10 +10426,6 @@ $
 |2,1,1725916339,47,"is_tupl"
 ?/\(def\|class\)\s\+\w*is_tup
 |2,1,1725916208,47,"\\(def\\|class\\)\\s\\+\\w*is_tup"
-?/\(def\|class\)\s\+\w*v_pad
-|2,1,1725916032,47,"\\(def\\|class\\)\\s\\+\\w*v_pad"
-?/\(def\|class\)\s\+\w*Table
-|2,1,1725915917,47,"\\(def\\|class\\)\\s\\+\\w*Table"
 ?/fzf
 |2,1,1725914731,47,"fzf"
 ?/+
@@ -11264,8 +11300,6 @@ $
 |2,1,1722486603,,","
 ?/^\s*function!\?\s\+\(s:\)\?\(\w\+#\)\?\w*begin
 |2,1,1722486419,47,"^\\s*function!\\?\\s\\+\\(s:\\)\\?\\(\\w\\+#\\)\\?\\w*begin"
-?/c
-|2,1,1722486412,47,"c"
 ?/sort(
 |2,1,1722480779,47,"sort("
 ?/order
@@ -11460,8 +11494,6 @@ $
 |2,1,1722061278,47,"fix-current"
 ?/f
 |2,1,1722061275,47,"f"
-?/codeAction
-|2,1,1722061085,47,"codeAction"
 ? @attrs\.define
 |2,1,1722029820,,"@attrs\\.define"
 ?/To
@@ -12388,8 +12420,6 @@ $
 |2,1,1717167356,47,"\\.json"
 ?/\(def\|class\)\s\+\w*save_
 |2,1,1717167019,47,"\\(def\\|class\\)\\s\\+\\w*save_"
-?/10
-|2,1,1717166751,47,"10"
 ?/\.db
 |2,1,1717166560,47,"\\.db"
 ?/checkbox
@@ -13002,8 +13032,6 @@ $
 |2,1,1716100290,47,"jumpRefer"
 ?/location
 |2,1,1716098559,47,"location"
-?/quickfix
-|2,1,1716098540,47,"quickfix"
 ?/loc
 |2,1,1716098538,47,"loc"
 ?/\<referen
@@ -15182,40 +15210,43 @@ $
 |2,4,1693311567,,"cont"
 
 # Registers:
-"0	LINE	0
-	    1xCopper Cable Machine can support 6 Red Circuit Machines
-|3,0,0,1,1,0,1725982183,"    1xCopper Cable Machine can support 6 Red Circuit Machines"
-"1	LINE	0
-	1xElectronic Circuit Machine can support 2 / (1/3) = 6 Red Circuit Machines
-|3,0,1,1,1,0,1725982180,"1xElectronic Circuit Machine can support 2 / (1/3) = 6 Red Circuit Machines"
+"0	CHAR	0
+	.autoImportCompletions": true,
+|3,0,0,0,1,0,1726206139,".autoImportCompletions\": true,"
+""1	LINE	0
+	now = datet
+|3,1,1,1,1,0,1726206167,"now = datet"
 "2	LINE	0
-	(electronic circuit)
-|3,0,2,1,1,0,1725982024,"(electronic circuit)"
+	x = 1
+|3,0,2,1,1,0,1726206114,"x = 1"
 "3	LINE	0
-	
-|3,0,3,1,1,0,1725981826,""
+	print(
+|3,0,3,1,1,0,1726206112,"print("
 "4	LINE	0
-	                                    = 
-|3,0,4,1,1,0,1725981515,"                                    = "
+	
+	x =1 
+|3,0,4,1,2,0,1726205987,"","x =1 "
 "5	LINE	0
-	                                    = 3x2
-|3,0,5,1,1,0,1725981511,"                                    = 3x2"
+	ic(x)
+	now = datetime.now()
+|3,0,5,1,2,0,1726205987,"ic(x)","now = datetime.now()"
 "6	LINE	0
-	                                    = 3x2
-	                                    = 6 Red Circuit Machines
-|3,0,6,1,2,0,1725981509,"                                    = 3x2","                                    = 6 Red Circuit Machines"
+	
+|3,0,6,1,1,0,1726182088,""
 "7	LINE	0
-	                             = 1 Copper Cable Machine
-|3,0,7,1,1,0,1725981331,"                             = 1 Copper Cable Machine"
+	import bett
+|3,0,7,1,1,0,1726182087,"import bett"
 "8	LINE	0
-	1x
-|3,0,8,1,1,0,1725981271,"1x"
+	x = 0
+	y = 1
+	y/x
+|3,0,8,1,3,0,1726182084,"x = 0","y = 1","y/x"
 "9	LINE	0
-	1xCopper Cabl
-|3,0,9,1,1,0,1725981009,"1xCopper Cabl"
+	        ("is_multi_dict_table", [{"key1": "value1"}, {"key2": "value2"}]), # Different keys
+|3,0,9,1,1,0,1726181403,"        (\"is_multi_dict_table\", [{\"key1\": \"value1\"}, {\"key2\": \"value2\"}]), # Different keys"
 "a	CHAR	0
-	Tabularize /=/l1c1l1
-|3,0,10,0,1,0,1725981370,"Tabularize /=/l1c1l1"
+	0wF)F,dt)
+|3,0,10,0,1,0,1726180792,"0wF)F,dt)"
 "i	CHAR	0
 	ado_up()jk:q!
 |3,0,18,0,1,0,1724200553,"ado_up()jk:q!"
@@ -15235,240 +15266,906 @@ $
 	set verbosefile=verbose-file.txt
 	set verbose=20 | quit
 |3,0,28,1,2,0,1725457945,"set verbosefile=verbose-file.txt","set verbose=20 | quit"
-""-	CHAR	0
-	 
-|3,1,36,0,1,0,1725982196," "
+"-	CHAR	0
+	.autoImportCompletions": true,
+|3,0,36,0,1,0,1726206131,".autoImportCompletions\": true,"
 
 # File marks:
-'0  3  41  ~/factorio/red_circuit.txt
-|4,48,3,41,1725999847,"~/factorio/red_circuit.txt"
-'1  3  41  ~/factorio/red_circuit.txt
-|4,49,3,41,1725999847,"~/factorio/red_circuit.txt"
-'2  2  0  ~/bash/pwd-oldfiles.bash
-|4,50,2,0,1725915168,"~/bash/pwd-oldfiles.bash"
-'3  2  0  ~/bash/pwd-oldfiles.bash
-|4,51,2,0,1725915168,"~/bash/pwd-oldfiles.bash"
-'4  2  0  ~/bash/pwd-oldfiles.bash
-|4,52,2,0,1725915168,"~/bash/pwd-oldfiles.bash"
-'5  2  0  ~/bash/pwd-oldfiles.bash
-|4,53,2,0,1725915168,"~/bash/pwd-oldfiles.bash"
-'6  221  0  ~/python_common/waivek/table.py
-|4,54,221,0,1725915105,"~/python_common/waivek/table.py"
-'7  221  0  ~/python_common/waivek/table.py
-|4,55,221,0,1725915105,"~/python_common/waivek/table.py"
-'8  1  0  ~/python_common/waivek/table.py
-|4,56,1,0,1725915105,"~/python_common/waivek/table.py"
-'9  1  0  ~/python_common/waivek/table.py
-|4,57,1,0,1725915105,"~/python_common/waivek/table.py"
+'0  3  0  ~/python_codeaction_test/hello.py
+|4,48,3,0,1726206173,"~/python_codeaction_test/hello.py"
+'1  20  36  ~/.vim/coc-settings.json
+|4,49,20,36,1726206142,"~/.vim/coc-settings.json"
+'2  20  36  ~/.vim/coc-settings.json
+|4,50,20,36,1726206142,"~/.vim/coc-settings.json"
+'3  227  0  ~/python_common/waivek/table.py
+|4,51,227,0,1726205940,"~/python_common/waivek/table.py"
+'4  227  0  ~/python_common/waivek/table.py
+|4,52,227,0,1726205940,"~/python_common/waivek/table.py"
+'5  227  0  ~/python_common/waivek/table.py
+|4,53,227,0,1726205940,"~/python_common/waivek/table.py"
+'6  227  0  ~/python_common/waivek/table.py
+|4,54,227,0,1726205940,"~/python_common/waivek/table.py"
+'7  227  0  ~/python_common/waivek/table.py
+|4,55,227,0,1726205940,"~/python_common/waivek/table.py"
+'8  227  0  ~/python_common/waivek/table.py
+|4,56,227,0,1726205940,"~/python_common/waivek/table.py"
+'9  227  0  ~/python_common/waivek/table.py
+|4,57,227,0,1726205940,"~/python_common/waivek/table.py"
 
 # Jumplist (newest first):
--'  3  41  ~/factorio/red_circuit.txt
-|4,39,3,41,1725999847,"~/factorio/red_circuit.txt"
--'  3  41  ~/factorio/red_circuit.txt
-|4,39,3,41,1725999847,"~/factorio/red_circuit.txt"
--'  44  0  ~/factorio/red_circuit.txt
-|4,39,44,0,1725999842,"~/factorio/red_circuit.txt"
--'  44  0  ~/factorio/red_circuit.txt
-|4,39,44,0,1725999842,"~/factorio/red_circuit.txt"
--'  4  0  ~/factorio/red_circuit.txt
-|4,39,4,0,1725982238,"~/factorio/red_circuit.txt"
--'  4  0  ~/factorio/red_circuit.txt
-|4,39,4,0,1725982238,"~/factorio/red_circuit.txt"
--'  29  0  ~/factorio/red_circuit.txt
-|4,39,29,0,1725982184,"~/factorio/red_circuit.txt"
--'  29  0  ~/factorio/red_circuit.txt
-|4,39,29,0,1725982184,"~/factorio/red_circuit.txt"
--'  43  0  ~/factorio/red_circuit.txt
-|4,39,43,0,1725982169,"~/factorio/red_circuit.txt"
--'  43  0  ~/factorio/red_circuit.txt
-|4,39,43,0,1725982169,"~/factorio/red_circuit.txt"
--'  25  4  ~/factorio/red_circuit.txt
-|4,39,25,4,1725982163,"~/factorio/red_circuit.txt"
--'  25  4  ~/factorio/red_circuit.txt
-|4,39,25,4,1725982163,"~/factorio/red_circuit.txt"
--'  42  87  ~/factorio/red_circuit.txt
-|4,39,42,87,1725982067,"~/factorio/red_circuit.txt"
--'  42  87  ~/factorio/red_circuit.txt
-|4,39,42,87,1725982067,"~/factorio/red_circuit.txt"
--'  5  29  ~/factorio/red_circuit.txt
-|4,39,5,29,1725982023,"~/factorio/red_circuit.txt"
--'  5  29  ~/factorio/red_circuit.txt
-|4,39,5,29,1725982023,"~/factorio/red_circuit.txt"
--'  26  0  ~/factorio/red_circuit.txt
-|4,39,26,0,1725982014,"~/factorio/red_circuit.txt"
--'  26  0  ~/factorio/red_circuit.txt
-|4,39,26,0,1725982014,"~/factorio/red_circuit.txt"
--'  35  0  ~/factorio/red_circuit.txt
-|4,39,35,0,1725982004,"~/factorio/red_circuit.txt"
--'  35  0  ~/factorio/red_circuit.txt
-|4,39,35,0,1725982004,"~/factorio/red_circuit.txt"
--'  37  4  ~/factorio/red_circuit.txt
-|4,39,37,4,1725981827,"~/factorio/red_circuit.txt"
--'  37  4  ~/factorio/red_circuit.txt
-|4,39,37,4,1725981827,"~/factorio/red_circuit.txt"
--'  33  0  ~/factorio/red_circuit.txt
-|4,39,33,0,1725981693,"~/factorio/red_circuit.txt"
--'  33  0  ~/factorio/red_circuit.txt
-|4,39,33,0,1725981693,"~/factorio/red_circuit.txt"
--'  16  4  ~/factorio/red_circuit.txt
-|4,39,16,4,1725981692,"~/factorio/red_circuit.txt"
--'  16  4  ~/factorio/red_circuit.txt
-|4,39,16,4,1725981692,"~/factorio/red_circuit.txt"
--'  28  0  ~/factorio/red_circuit.txt
-|4,39,28,0,1725981690,"~/factorio/red_circuit.txt"
--'  23  0  ~/factorio/red_circuit.txt
-|4,39,23,0,1725981690,"~/factorio/red_circuit.txt"
--'  28  0  ~/factorio/red_circuit.txt
-|4,39,28,0,1725981690,"~/factorio/red_circuit.txt"
--'  23  0  ~/factorio/red_circuit.txt
-|4,39,23,0,1725981690,"~/factorio/red_circuit.txt"
--'  36  10  ~/factorio/red_circuit.txt
-|4,39,36,10,1725981629,"~/factorio/red_circuit.txt"
--'  36  10  ~/factorio/red_circuit.txt
-|4,39,36,10,1725981629,"~/factorio/red_circuit.txt"
--'  14  8  ~/factorio/red_circuit.txt
-|4,39,14,8,1725981536,"~/factorio/red_circuit.txt"
--'  14  8  ~/factorio/red_circuit.txt
-|4,39,14,8,1725981536,"~/factorio/red_circuit.txt"
--'  27  33  ~/factorio/red_circuit.txt
-|4,39,27,33,1725981510,"~/factorio/red_circuit.txt"
--'  27  33  ~/factorio/red_circuit.txt
-|4,39,27,33,1725981510,"~/factorio/red_circuit.txt"
--'  17  38  ~/factorio/red_circuit.txt
-|4,39,17,38,1725981427,"~/factorio/red_circuit.txt"
--'  20  36  ~/factorio/red_circuit.txt
-|4,39,20,36,1725981427,"~/factorio/red_circuit.txt"
--'  17  38  ~/factorio/red_circuit.txt
-|4,39,17,38,1725981427,"~/factorio/red_circuit.txt"
--'  20  36  ~/factorio/red_circuit.txt
-|4,39,20,36,1725981427,"~/factorio/red_circuit.txt"
--'  21  36  ~/factorio/red_circuit.txt
-|4,39,21,36,1725981426,"~/factorio/red_circuit.txt"
--'  22  36  ~/factorio/red_circuit.txt
-|4,39,22,36,1725981426,"~/factorio/red_circuit.txt"
--'  21  36  ~/factorio/red_circuit.txt
-|4,39,21,36,1725981426,"~/factorio/red_circuit.txt"
--'  22  36  ~/factorio/red_circuit.txt
-|4,39,22,36,1725981426,"~/factorio/red_circuit.txt"
--'  18  0  ~/factorio/red_circuit.txt
-|4,39,18,0,1725981395,"~/factorio/red_circuit.txt"
--'  18  0  ~/factorio/red_circuit.txt
-|4,39,18,0,1725981395,"~/factorio/red_circuit.txt"
--'  9  81  ~/factorio/red_circuit.txt
-|4,39,9,81,1725981025,"~/factorio/red_circuit.txt"
--'  9  81  ~/factorio/red_circuit.txt
-|4,39,9,81,1725981025,"~/factorio/red_circuit.txt"
--'  12  64  ~/factorio/red_circuit.txt
-|4,39,12,64,1725981024,"~/factorio/red_circuit.txt"
--'  12  64  ~/factorio/red_circuit.txt
-|4,39,12,64,1725981024,"~/factorio/red_circuit.txt"
--'  178  16  ~/python_common/waivek/table.py
-|4,39,178,16,1725980941,"~/python_common/waivek/table.py"
--'  178  16  ~/python_common/waivek/table.py
-|4,39,178,16,1725980941,"~/python_common/waivek/table.py"
--'  11  0  ~/tooling/app_ideas/alarm.txt
-|4,39,11,0,1725917661,"~/tooling/app_ideas/alarm.txt"
--'  11  0  ~/tooling/app_ideas/alarm.txt
-|4,39,11,0,1725917661,"~/tooling/app_ideas/alarm.txt"
--'  169  8  ~/python_common/waivek/table.py
-|4,39,169,8,1725917062,"~/python_common/waivek/table.py"
--'  169  8  ~/python_common/waivek/table.py
-|4,39,169,8,1725917062,"~/python_common/waivek/table.py"
--'  90  8  ~/python_common/waivek/table.py
-|4,39,90,8,1725917058,"~/python_common/waivek/table.py"
--'  90  8  ~/python_common/waivek/table.py
-|4,39,90,8,1725917058,"~/python_common/waivek/table.py"
+-'  3  0  ~/python_codeaction_test/hello.py
+|4,39,3,0,1726206173,"~/python_codeaction_test/hello.py"
+-'  1  0  ~/python_codeaction_test/hello.py
+|4,39,1,0,1726206146,"~/python_codeaction_test/hello.py"
+-'  20  36  ~/.vim/coc-settings.json
+|4,39,20,36,1726206142,"~/.vim/coc-settings.json"
+-'  20  36  ~/.vim/coc-settings.json
+|4,39,20,36,1726206142,"~/.vim/coc-settings.json"
+-'  5  0  ~/.vim/coc-settings.json
+|4,39,5,0,1726206139,"~/.vim/coc-settings.json"
+-'  5  0  ~/.vim/coc-settings.json
+|4,39,5,0,1726206139,"~/.vim/coc-settings.json"
+-'  4  49  ~/.vim/coc-settings.json
+|4,39,4,49,1726206136,"~/.vim/coc-settings.json"
+-'  4  49  ~/.vim/coc-settings.json
+|4,39,4,49,1726206136,"~/.vim/coc-settings.json"
+-'  2  0  ~/python_codeaction_test/hello.py
+|4,39,2,0,1726206125,"~/python_codeaction_test/hello.py"
+-'  1  0  ~/python_codeaction_test/pyrightconfig.json
+|4,39,1,0,1726206122,"~/python_codeaction_test/pyrightconfig.json"
+-'  1  0  ~/python_codeaction_test/pyrightconfig.json
+|4,39,1,0,1726206122,"~/python_codeaction_test/pyrightconfig.json"
+-'  1  0  ~/python_codeaction_test/.envrc
+|4,39,1,0,1726206077,"~/python_codeaction_test/.envrc"
+-'  1  0  ~/python_codeaction_test/.envrc
+|4,39,1,0,1726206077,"~/python_codeaction_test/.envrc"
+-'  1  21  ~/python_codeaction_test/hello.py
+|4,39,1,21,1726206063,"~/python_codeaction_test/hello.py"
+-'  1  0  ~/hateoas/file.py
+|4,39,1,0,1726205989,"~/hateoas/file.py"
+-'  1  0  ~/hateoas/file.py
+|4,39,1,0,1726205989,"~/hateoas/file.py"
+-'  1  0  ~/hateoas/file.py
+|4,39,1,0,1726205989,"~/hateoas/file.py"
+-'  227  0  ~/python_common/waivek/table.py
+|4,39,227,0,1726205940,"~/python_common/waivek/table.py"
+-'  227  0  ~/python_common/waivek/table.py
+|4,39,227,0,1726205940,"~/python_common/waivek/table.py"
+-'  227  0  ~/python_common/waivek/table.py
+|4,39,227,0,1726205940,"~/python_common/waivek/table.py"
+-'  227  0  ~/python_common/waivek/table.py
+|4,39,227,0,1726205940,"~/python_common/waivek/table.py"
+-'  1  0  ~/.vim/coc-settings.json
+|4,39,1,0,1726182301,"~/.vim/coc-settings.json"
+-'  1  0  ~/.vim/coc-settings.json
+|4,39,1,0,1726182301,"~/.vim/coc-settings.json"
+-'  1  0  ~/.vim/coc-settings.json
+|4,39,1,0,1726182301,"~/.vim/coc-settings.json"
+-'  1  0  ~/.vim/coc-settings.json
+|4,39,1,0,1726182301,"~/.vim/coc-settings.json"
+-'  228  4  ~/python_common/waivek/table.py
+|4,39,228,4,1726182299,"~/python_common/waivek/table.py"
+-'  228  4  ~/python_common/waivek/table.py
+|4,39,228,4,1726182299,"~/python_common/waivek/table.py"
+-'  228  4  ~/python_common/waivek/table.py
+|4,39,228,4,1726182299,"~/python_common/waivek/table.py"
+-'  228  4  ~/python_common/waivek/table.py
+|4,39,228,4,1726182299,"~/python_common/waivek/table.py"
 -'  1  0  ~/python_common/waivek/table.py
-|4,39,1,0,1725917014,"~/python_common/waivek/table.py"
+|4,39,1,0,1726182160,"~/python_common/waivek/table.py"
 -'  1  0  ~/python_common/waivek/table.py
-|4,39,1,0,1725917014,"~/python_common/waivek/table.py"
--'  202  15  ~/python_common/waivek/table.py
-|4,39,202,15,1725916901,"~/python_common/waivek/table.py"
--'  202  15  ~/python_common/waivek/table.py
-|4,39,202,15,1725916901,"~/python_common/waivek/table.py"
--'  216  15  ~/python_common/waivek/table.py
-|4,39,216,15,1725916893,"~/python_common/waivek/table.py"
--'  216  15  ~/python_common/waivek/table.py
-|4,39,216,15,1725916893,"~/python_common/waivek/table.py"
--'  204  15  ~/python_common/waivek/table.py
-|4,39,204,15,1725916888,"~/python_common/waivek/table.py"
--'  204  15  ~/python_common/waivek/table.py
-|4,39,204,15,1725916888,"~/python_common/waivek/table.py"
--'  110  84  ~/python_common/waivek/table.py
-|4,39,110,84,1725916865,"~/python_common/waivek/table.py"
--'  110  84  ~/python_common/waivek/table.py
-|4,39,110,84,1725916865,"~/python_common/waivek/table.py"
--'  466  39  ~/python_common/waivek/ic.py
-|4,39,466,39,1725916862,"~/python_common/waivek/ic.py"
--'  466  39  ~/python_common/waivek/ic.py
-|4,39,466,39,1725916862,"~/python_common/waivek/ic.py"
--'  409  122  ~/python_common/waivek/ic.py
-|4,39,409,122,1725916858,"~/python_common/waivek/ic.py"
--'  357  8  ~/python_common/waivek/ic.py
-|4,39,357,8,1725916858,"~/python_common/waivek/ic.py"
--'  409  122  ~/python_common/waivek/ic.py
-|4,39,409,122,1725916858,"~/python_common/waivek/ic.py"
--'  357  8  ~/python_common/waivek/ic.py
-|4,39,357,8,1725916858,"~/python_common/waivek/ic.py"
--'  303  4  ~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi
-|4,39,303,4,1725916843,"~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi"
--'  303  4  ~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi
-|4,39,303,4,1725916843,"~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi"
--'  300  43  ~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi
-|4,39,300,43,1725916834,"~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi"
--'  295  39  ~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi
-|4,39,295,39,1725916834,"~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi"
--'  291  48  ~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi
-|4,39,291,48,1725916834,"~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi"
--'  300  43  ~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi
-|4,39,300,43,1725916834,"~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi"
--'  295  39  ~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi
-|4,39,295,39,1725916834,"~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi"
--'  291  48  ~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi
-|4,39,291,48,1725916834,"~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi"
--'  287  39  ~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi
-|4,39,287,39,1725916833,"~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi"
--'  282  4  ~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi
-|4,39,282,4,1725916833,"~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi"
--'  280  38  ~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi
-|4,39,280,38,1725916833,"~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi"
--'  267  23  ~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi
-|4,39,267,23,1725916833,"~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi"
--'  287  39  ~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi
-|4,39,287,39,1725916833,"~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi"
--'  282  4  ~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi
-|4,39,282,4,1725916833,"~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi"
--'  280  38  ~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi
-|4,39,280,38,1725916833,"~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi"
--'  267  23  ~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi
-|4,39,267,23,1725916833,"~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi"
--'  266  4  ~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi
-|4,39,266,4,1725916832,"~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi"
--'  265  27  ~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi
-|4,39,265,27,1725916832,"~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi"
--'  266  4  ~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi
-|4,39,266,4,1725916832,"~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi"
--'  265  27  ~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi
-|4,39,265,27,1725916832,"~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi"
--'  1  0  ~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi
-|4,39,1,0,1725916831,"~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi"
--'  1  0  ~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi
-|4,39,1,0,1725916831,"~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi"
--'  85  6  ~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi
-|4,39,85,6,1725916828,"~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi"
--'  92  18  ~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi
-|4,39,92,18,1725916828,"~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi"
--'  85  6  ~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi
-|4,39,85,6,1725916828,"~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi"
+|4,39,1,0,1726182160,"~/python_common/waivek/table.py"
+-'  1  0  ~/python_common/waivek/table.py
+|4,39,1,0,1726182160,"~/python_common/waivek/table.py"
+-'  1  0  ~/python_common/waivek/table.py
+|4,39,1,0,1726182160,"~/python_common/waivek/table.py"
+-'  1  0  ~/python_common/waivek/table.py
+|4,39,1,0,1726182096,"~/python_common/waivek/table.py"
+-'  4  0  ~/python_common/.envrc
+|4,39,4,0,1726182057,"~/python_common/.envrc"
+-'  4  0  ~/python_common/.envrc
+|4,39,4,0,1726182057,"~/python_common/.envrc"
+-'  4  0  ~/python_common/.envrc
+|4,39,4,0,1726182057,"~/python_common/.envrc"
+-'  4  0  ~/python_common/.envrc
+|4,39,4,0,1726182057,"~/python_common/.envrc"
+-'  4  0  ~/python_common/.envrc
+|4,39,4,0,1726182057,"~/python_common/.envrc"
+-'  4  0  ~/python_common/.envrc
+|4,39,4,0,1726182057,"~/python_common/.envrc"
+-'  1  0  ~/python_common/.envrc
+|4,39,1,0,1726182051,"~/python_common/.envrc"
+-'  1  0  ~/python_common/.envrc
+|4,39,1,0,1726182051,"~/python_common/.envrc"
+-'  1  0  ~/python_common/.envrc
+|4,39,1,0,1726182051,"~/python_common/.envrc"
+-'  1  0  ~/python_common/.envrc
+|4,39,1,0,1726182051,"~/python_common/.envrc"
+-'  1  0  ~/python_common/.envrc
+|4,39,1,0,1726182051,"~/python_common/.envrc"
+-'  1  0  ~/python_common/.envrc
+|4,39,1,0,1726182051,"~/python_common/.envrc"
+-'  229  4  ~/python_common/waivek/table.py
+|4,39,229,4,1726182041,"~/python_common/waivek/table.py"
+-'  229  4  ~/python_common/waivek/table.py
+|4,39,229,4,1726182041,"~/python_common/waivek/table.py"
+-'  229  4  ~/python_common/waivek/table.py
+|4,39,229,4,1726182041,"~/python_common/waivek/table.py"
+-'  229  4  ~/python_common/waivek/table.py
+|4,39,229,4,1726182041,"~/python_common/waivek/table.py"
+-'  228  4  ~/python_common/waivek/table.py
+|4,39,228,4,1726182041,"~/python_common/waivek/table.py"
+-'  229  4  ~/python_common/waivek/table.py
+|4,39,229,4,1726182041,"~/python_common/waivek/table.py"
+-'  229  4  ~/python_common/waivek/table.py
+|4,39,229,4,1726182041,"~/python_common/waivek/table.py"
+-'  1  0  ~/python_common/waivek/table.py
+|4,39,1,0,1726181843,"~/python_common/waivek/table.py"
+-'  1  0  ~/python_common/waivek/table.py
+|4,39,1,0,1726181843,"~/python_common/waivek/table.py"
+-'  227  4  ~/python_common/waivek/table.py
+|4,39,227,4,1726181824,"~/python_common/waivek/table.py"
+-'  228  4  ~/python_common/waivek/table.py
+|4,39,228,4,1726181824,"~/python_common/waivek/table.py"
+-'  228  4  ~/python_common/waivek/table.py
+|4,39,228,4,1726181824,"~/python_common/waivek/table.py"
+-'  228  4  ~/python_common/waivek/table.py
+|4,39,228,4,1726181824,"~/python_common/waivek/table.py"
+-'  94  4  ~/python_common/waivek/common.py
+|4,39,94,4,1726181759,"~/python_common/waivek/common.py"
+-'  94  4  ~/python_common/waivek/common.py
+|4,39,94,4,1726181759,"~/python_common/waivek/common.py"
+-'  94  4  ~/python_common/waivek/common.py
+|4,39,94,4,1726181759,"~/python_common/waivek/common.py"
+-'  94  4  ~/python_common/waivek/common.py
+|4,39,94,4,1726181759,"~/python_common/waivek/common.py"
+-'  94  4  ~/python_common/waivek/common.py
+|4,39,94,4,1726181759,"~/python_common/waivek/common.py"
+-'  94  4  ~/python_common/waivek/common.py
+|4,39,94,4,1726181759,"~/python_common/waivek/common.py"
+-'  94  4  ~/python_common/waivek/common.py
+|4,39,94,4,1726181759,"~/python_common/waivek/common.py"
+-'  94  4  ~/python_common/waivek/common.py
+|4,39,94,4,1726181759,"~/python_common/waivek/common.py"
+-'  94  4  ~/python_common/waivek/common.py
+|4,39,94,4,1726181759,"~/python_common/waivek/common.py"
+-'  230  36  ~/python_common/waivek/table.py
+|4,39,230,36,1726181758,"~/python_common/waivek/table.py"
+-'  231  36  ~/python_common/waivek/table.py
+|4,39,231,36,1726181758,"~/python_common/waivek/table.py"
+-'  230  36  ~/python_common/waivek/table.py
+|4,39,230,36,1726181758,"~/python_common/waivek/table.py"
+-'  231  36  ~/python_common/waivek/table.py
+|4,39,231,36,1726181758,"~/python_common/waivek/table.py"
+-'  230  36  ~/python_common/waivek/table.py
+|4,39,230,36,1726181758,"~/python_common/waivek/table.py"
+-'  231  36  ~/python_common/waivek/table.py
+|4,39,231,36,1726181758,"~/python_common/waivek/table.py"
+-'  230  36  ~/python_common/waivek/table.py
+|4,39,230,36,1726181758,"~/python_common/waivek/table.py"
+-'  231  36  ~/python_common/waivek/table.py
+|4,39,231,36,1726181758,"~/python_common/waivek/table.py"
+-'  230  36  ~/python_common/waivek/table.py
+|4,39,230,36,1726181758,"~/python_common/waivek/table.py"
+-'  229  36  ~/python_common/waivek/table.py
+|4,39,229,36,1726181758,"~/python_common/waivek/table.py"
+-'  231  36  ~/python_common/waivek/table.py
+|4,39,231,36,1726181758,"~/python_common/waivek/table.py"
+-'  230  36  ~/python_common/waivek/table.py
+|4,39,230,36,1726181758,"~/python_common/waivek/table.py"
+-'  231  36  ~/python_common/waivek/table.py
+|4,39,231,36,1726181758,"~/python_common/waivek/table.py"
+-'  230  36  ~/python_common/waivek/table.py
+|4,39,230,36,1726181758,"~/python_common/waivek/table.py"
+-'  230  36  ~/python_common/waivek/table.py
+|4,39,230,36,1726181758,"~/python_common/waivek/table.py"
+-'  1  0  ~/python-types/.env
+|4,39,1,0,1726181674,"~/python-types/.env"
+-'  1  0  ~/python-types/.env
+|4,39,1,0,1726181674,"~/python-types/.env"
+-'  1  0  ~/python-types/.env
+|4,39,1,0,1726181674,"~/python-types/.env"
+-'  1  0  ~/python-types/.env
+|4,39,1,0,1726181674,"~/python-types/.env"
+-'  1  0  ~/python-types/.env
+|4,39,1,0,1726181674,"~/python-types/.env"
+-'  1  0  ~/python-types/.env
+|4,39,1,0,1726181674,"~/python-types/.env"
+-'  1  0  ~/python-types/.env
+|4,39,1,0,1726181674,"~/python-types/.env"
+-'  1  0  ~/python_common/waivek/table.py
+|4,39,1,0,1726181674,"~/python_common/waivek/table.py"
+-'  1  0  ~/python-types/.env
+|4,39,1,0,1726181674,"~/python-types/.env"
+-'  1  0  ~/python_common/waivek/table.py
+|4,39,1,0,1726181674,"~/python_common/waivek/table.py"
+-'  1  0  ~/python-types/.env
+|4,39,1,0,1726181674,"~/python-types/.env"
+-'  1  0  ~/python-types/.envrc
+|4,39,1,0,1726181671,"~/python-types/.envrc"
+-'  1  0  ~/python-types/.envrc
+|4,39,1,0,1726181671,"~/python-types/.envrc"
+-'  1  0  ~/python-types/.envrc
+|4,39,1,0,1726181671,"~/python-types/.envrc"
+-'  1  0  ~/python-types/.envrc
+|4,39,1,0,1726181671,"~/python-types/.envrc"
+-'  1  0  ~/python-types/.envrc
+|4,39,1,0,1726181671,"~/python-types/.envrc"
+-'  1  0  ~/python-types/.envrc
+|4,39,1,0,1726181671,"~/python-types/.envrc"
 
 # Buffer list:
-%~/python_common/waivek/ic.py	466	39
-%~/python_common/waivek/table.py	178	16
-%~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi	303	4
-%~/tooling/app_ideas/alarm.txt	11	0
-%~/factorio/red_circuit.txt	3	41
+%~/python_codeaction_test/hello.py	3	0
 
 # History of marks within files (newest to oldest):
+
+> ~/python_codeaction_test/hello.py
+	*	1726206170	0
+	"	3	0
+	.	3	0
+	+	1	21
+	+	3	19
+	+	3	0
+	+	2	0
+	+	3	0
+
+> ~/.vim/coc-settings.json
+	*	1726206139	0
+	"	20	36
+	^	4	50
+	.	4	49
+	+	44	0
+	+	44	11
+	+	44	0
+	+	2	0
+	+	18	0
+	+	19	0
+	+	20	0
+	+	19	0
+	+	2	33
+	+	3	38
+	+	20	0
+	+	4	0
+	+	11	0
+	+	13	0
+	+	24	0
+	+	20	0
+	+	24	0
+	+	25	0
+	+	43	42
+	+	26	0
+	+	43	0
+	+	29	34
+	+	43	0
+	+	40	0
+	+	29	0
+	+	4	0
+	+	27	0
+	+	4	0
+	+	40	0
+	+	31	37
+	+	3	38
+	+	11	0
+	+	8	33
+	+	11	0
+	+	9	49
+	+	11	0
+	+	8	0
+	+	10	131
+	+	9	78
+	+	8	0
+	+	24	0
+	+	68	0
+	+	67	25
+	+	68	0
+	+	86	0
+	+	56	14
+	+	57	44
+	+	55	0
+	+	84	0
+	+	83	0
+	+	80	71
+	+	81	33
+	+	83	0
+	+	82	16
+	+	83	0
+	+	82	25
+	+	81	11
+	+	79	48
+	+	81	30
+	+	79	0
+	+	23	6
+	+	33	29
+	+	40	33
+	+	40	0
+	+	37	0
+	+	33	6
+	+	34	5
+	+	33	0
+	+	37	0
+	+	38	28
+	+	39	32
+	+	43	0
+	+	41	39
+	+	43	0
+	+	49	0
+	+	54	0
+	+	54	69
+	+	54	34
+	+	54	30
+	+	54	44
+	+	54	18
+	+	54	0
+	+	46	51
+	+	48	41
+	+	42	33
+	+	8	0
+	+	17	0
+	+	15	4
+	+	16	39
+	+	8	0
+	+	6	50
+	+	7	0
+	+	50	27
+	+	51	31
+	+	50	6
+	+	51	6
+	+	29	6
+	+	30	33
+	+	6	225
+	+	4	49
+
+> ~/python_codeaction_test/pyrightconfig.json
+	*	1726206121	0
+	"	1	0
+
+> ~/python_codeaction_test/.envrc
+	*	1726206077	0
+	"	1	0
+
+> ~/hateoas/file.py
+	*	1726205987	0
+	"	1	0
+	.	1	0
+	+	1	4
+	+	1	0
+
+> ~/python_common/waivek/table.py
+	*	1726205938	0
+	"	227	0
+	^	226	5
+	.	1	0
+	+	309	28
+	+	161	0
+	+	264	0
+	+	83	0
+	+	82	0
+	+	145	0
+	+	161	0
+	+	118	0
+	+	137	0
+	+	118	0
+	+	312	0
+	+	161	0
+	+	89	0
+	+	117	0
+	+	187	0
+	+	138	0
+	+	144	0
+	+	8	0
+	+	187	0
+	+	100	9
+	+	101	16
+	+	187	40
+	+	298	4
+	+	313	15
+	+	8	0
+	+	80	0
+	+	44	0
+	+	59	0
+	+	9	0
+	+	3	45
+	+	52	0
+	+	38	0
+	+	37	0
+	+	2	0
+	+	1	0
+	+	3	0
+	+	60	0
+	+	79	0
+	+	5	0
+	+	245	0
+	+	210	4
+	+	240	64
+	+	240	22
+	+	240	12
+	+	241	26
+	+	242	15
+	+	216	0
+	+	240	11
+	+	216	61
+	+	216	0
+	+	240	0
+	+	229	21
+	+	240	21
+	+	228	1
+	+	216	0
+	+	217	81
+	+	226	0
+	+	229	9
+	+	216	0
+	+	229	34
+	+	218	43
+	+	225	55
+	+	229	36
+	+	230	40
+	+	232	30
+	+	240	0
+	+	233	11
+	+	234	30
+	+	240	0
+	+	230	67
+	+	4	17
+	+	230	31
+	+	235	37
+	+	238	14
+	+	239	19
+	+	237	11
+	+	235	51
+	+	225	0
+	+	224	0
+	+	220	0
+	+	219	0
+	+	220	0
+	+	221	0
+	+	224	0
+	+	223	0
+	+	8	0
+	+	7	10
+	+	235	16
+	+	238	12
+	+	235	59
+	+	238	57
+	+	225	0
+	+	221	40
+	+	236	19
+	+	234	32
+	+	236	42
+	+	228	27
+	+	227	0
+	+	1	0
+
+> ~/python_common/.envrc
+	*	1726182053	0
+	"	4	0
+	^	3	2
+	.	3	0
+	+	1	14
+	+	2	31
+	+	3	225
+	+	3	7
+	+	3	0
+	+	4	40
+	+	3	0
+
+> ~/.vim/plugged/coc.nvim/doc/coc.txt
+	*	1726181821	0
+	"	972	18
+
+> ~/python_common/waivek/common.py
+	*	1726181758	0
+	"	94	4
+	.	442	0
+	+	24	0
+	+	25	0
+	+	33	0
+	+	37	0
+	+	442	0
+
+> ~/python-types/.env
+	*	1726181671	0
+	"	1	0
+
+> ~/python-types/.envrc
+	*	1726181670	0
+	"	1	0
+	^	2	55
+	.	4	0
+	+	3	49
+	+	4	0
+	+	3	36
+	+	2	54
+	+	4	0
+
+> ~/python-types/pyrightconfig.json
+	*	1726181661	0
+	"	1	0
+
+> ~/python_common/waivek/requirements-dev.txt
+	*	1726181322	0
+	"	1	3
+	^	1	4
+	.	1	3
+	+	1	3
+
+> ~/python_common/waivek/test_truncate.py
+	*	1726181208	0
+	"	114	8
+	^	88	51
+	.	48	0
+	+	104	31
+	+	103	69
+	+	104	73
+	+	99	0
+	+	37	0
+	+	37	95
+	+	37	0
+	+	37	32
+	+	37	8
+	+	37	0
+	+	37	22
+	+	37	19
+	+	37	21
+	+	37	23
+	+	37	8
+	+	37	48
+	+	37	0
+	+	37	48
+	+	37	105
+	+	37	22
+	+	37	19
+	+	37	21
+	+	37	23
+	+	37	8
+	+	37	0
+	+	25	23
+	+	27	12
+	+	26	39
+	+	27	36
+	+	29	24
+	+	32	17
+	+	29	12
+	+	32	56
+	+	37	0
+	+	29	0
+	+	33	25
+	+	37	0
+	+	28	21
+	+	31	64
+	+	34	73
+	+	35	47
+	+	36	23
+	+	37	0
+	+	100	88
+	+	103	59
+	+	104	59
+	+	107	82
+	+	106	15
+	+	107	0
+	+	108	43
+	+	111	16
+	+	97	86
+	+	99	17
+	+	97	13
+	+	97	0
+	+	99	0
+	+	98	90
+	+	99	13
+	+	97	77
+	+	98	61
+	+	98	0
+	+	98	15
+	+	98	58
+	+	98	35
+	+	98	16
+	+	98	0
+	+	97	0
+	+	99	0
+	+	102	52
+	+	99	0
+	+	115	0
+	+	115	52
+	+	115	0
+	+	91	0
+	+	91	53
+	+	93	43
+	+	93	48
+	+	91	49
+	+	93	0
+	+	88	28
+	+	91	87
+	+	91	0
+	+	121	24
+	+	88	31
+	+	92	50
+	+	89	62
+	+	90	57
+	+	89	61
+	+	86	19
+	+	2	0
+	+	87	9
+	+	87	0
+	+	110	0
+	+	111	0
+	+	110	50
+	+	90	0
+	+	103	0
+	+	110	9
+	+	89	0
+	+	48	0
+	a	115	21
+	b	115	22
+
+> ~/.vim/plugin/jprev.vim
+	*	1726180662	0
+	"	111	15
+	^	128	9
+	.	111	60
+	+	97	40
+	+	97	42
+	+	97	24
+	+	97	0
+	+	63	49
+	+	69	10
+	+	63	37
+	+	64	0
+	+	97	41
+	+	97	109
+	+	66	60
+	+	67	38
+	+	68	40
+	+	97	11
+	+	97	0
+	+	97	19
+	+	97	0
+	+	97	8
+	+	97	0
+	+	97	8
+	+	97	0
+	+	71	26
+	+	82	10
+	+	97	0
+	+	80	0
+	+	86	39
+	+	87	38
+	+	74	42
+	+	87	42
+	+	96	0
+	+	93	54
+	+	96	154
+	+	91	18
+	+	96	23
+	+	96	35
+	+	96	0
+	+	96	116
+	+	92	0
+	+	96	27
+	+	94	11
+	+	95	63
+	+	96	12
+	+	96	77
+	+	96	97
+	+	96	0
+	+	96	36
+	+	97	38
+	+	97	46
+	+	97	0
+	+	92	0
+	+	91	0
+	+	97	0
+	+	88	0
+	+	91	53
+	+	89	32
+	+	90	0
+	+	91	0
+	+	104	0
+	+	96	0
+	+	91	0
+	+	87	0
+	+	78	0
+	+	127	0
+	+	107	0
+	+	101	0
+	+	127	0
+	+	115	34
+	+	116	7
+	+	118	14
+	+	119	8
+	+	127	0
+	+	103	39
+	+	103	9
+	+	121	48
+	+	122	43
+	+	126	53
+	+	117	0
+	+	103	0
+	+	122	28
+	+	123	53
+	+	126	29
+	+	126	0
+	+	140	38
+	+	142	0
+	+	140	10
+	+	141	38
+	+	103	0
+	+	137	0
+	+	11	0
+	+	125	0
+	+	128	0
+	+	129	0
+	+	128	31
+	+	138	0
+	+	128	8
+	+	94	30
+	+	96	0
+	+	97	45
+	+	104	42
+	+	111	60
+
+> ~/.vim/plugin/docker-copy-to-host.vim
+	*	1726180615	0
+	"	20	0
+	^	2	46
+	.	2	45
+	+	8	0
+	+	12	74
+	+	8	0
+	+	13	28
+	+	16	16
+	+	17	27
+	+	19	0
+	+	13	0
+	+	9	2
+	+	10	0
+	+	12	70
+	+	9	7
+	+	10	28
+	+	11	32
+	+	13	0
+	+	14	20
+	+	15	93
+	+	15	0
+	+	2	45
+
+> ~/python_common/table.py
+	*	1726086054	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/python_common/waivek/ic.py
+	*	1726085811	0
+	"	732	0
+	.	439	0
+	+	143	0
+	+	140	25
+	+	142	0
+	+	143	0
+	+	371	0
+	+	370	0
+	+	11	0
+	+	14	0
+	+	16	0
+	+	202	0
+	+	394	0
+	+	407	0
+	+	597	0
+	+	805	0
+	+	826	0
+	+	856	0
+	+	14	38
+	+	16	35
+	+	645	0
+	+	705	0
+	+	691	0
+	+	652	0
+	+	583	0
+	+	583	33
+	+	583	0
+	+	398	0
+	+	399	0
+	+	400	0
+	+	401	0
+	+	402	0
+	+	2	0
+	+	878	0
+	+	344	0
+	+	16	55
+	+	583	59
+	+	583	39
+	+	865	34
+	+	878	20
+	+	583	24
+	+	583	44
+	+	583	0
+	+	583	24
+	+	583	12
+	+	583	0
+	+	583	22
+	+	583	13
+	+	583	0
+	+	583	31
+	+	583	16
+	+	583	20
+	+	583	36
+	+	583	0
+	+	383	0
+	+	381	14
+	+	381	15
+	+	381	18
+	+	381	0
+	+	145	19
+	+	583	0
+	+	643	0
+	+	735	0
+	+	865	0
+	+	735	38
+	+	583	39
+	+	16	0
+	+	583	24
+	+	735	39
+	+	438	28
+	+	438	42
+	+	438	30
+	+	438	50
+	+	438	9
+	+	438	15
+	+	438	4
+	+	583	52
+	+	583	39
+	+	583	0
+	+	583	68
+	+	583	45
+	+	583	29
+	+	583	0
+	+	438	0
+	+	202	0
+	+	174	0
+	+	423	0
+	+	878	0
+	+	583	41
+	+	583	49
+	+	381	0
+	+	583	0
+	+	439	0
+
+> ~/.config/shell_data/fish_history
+	*	1726003479	0
+	"	9356	4
+
+> ~/.config/shell_data/.bash_history
+	*	1726003442	0
+	"	2020	0
+
+> ~/bash/oldfiles.bash
+	*	1726003311	0
+	"	1	0
+	^	2	108
+	.	5	0
+	+	2	1
+	+	2	12
+	+	2	49
+	+	2	12
+	+	2	0
+	+	3	1
+	+	1	10
+	+	2	62
+	+	2	34
+	+	2	1
+	+	2	16
+	+	2	0
+	+	6	33
+	+	2	68
+	+	3	66
+	+	3	0
+	+	2	13
+	+	3	23
+	+	4	51
+	+	6	28
+	+	13	22
+	+	2	107
+	+	7	0
+	+	5	0
 
 > ~/factorio/red_circuit.txt
 	*	1725999845	0
@@ -15538,45 +16235,6 @@ $
 	+	1	0
 	+	3	0
 
-> ~/python_common/waivek/table.py
-	*	1725917665	0
-	"	178	16
-	^	216	16
-	.	216	15
-	+	6	0
-	+	208	12
-	+	212	21
-	+	213	15
-	+	199	11
-	+	199	14
-	+	199	0
-	+	200	29
-	+	212	28
-	+	84	0
-	+	167	0
-	+	6	0
-	+	5	0
-	+	68	0
-	+	84	0
-	+	41	0
-	+	60	0
-	+	41	0
-	+	215	0
-	+	84	0
-	+	12	0
-	+	40	0
-	+	110	0
-	+	61	0
-	+	67	0
-	+	2	0
-	+	1	0
-	+	110	0
-	+	23	9
-	+	24	16
-	+	110	40
-	+	201	4
-	+	216	15
-
 > ~/tooling/app_ideas/alarm.txt
 	*	1725917660	0
 	"	11	0
@@ -15592,104 +16250,6 @@ $
 	+	3	132
 	+	12	0
 	+	1	0
-
-> ~/python_common/waivek/ic.py
-	*	1725916861	0
-	"	466	39
-	.	381	0
-	+	143	0
-	+	140	25
-	+	142	0
-	+	143	0
-	+	371	0
-	+	370	0
-	+	11	0
-	+	14	0
-	+	16	0
-	+	202	0
-	+	394	0
-	+	407	0
-	+	597	0
-	+	805	0
-	+	826	0
-	+	856	0
-	+	14	38
-	+	16	35
-	+	645	0
-	+	705	0
-	+	691	0
-	+	652	0
-	+	553	0
-	+	440	33
-	+	441	0
-	+	398	0
-	+	399	0
-	+	400	0
-	+	401	0
-	+	402	0
-	+	2	0
-	+	878	0
-	+	344	0
-	+	16	55
-	+	509	59
-	+	487	39
-	+	865	34
-	+	878	20
-	+	487	24
-	+	509	44
-	+	488	0
-	+	487	24
-	+	486	12
-	+	487	0
-	+	508	0
-	+	522	0
-	+	524	22
-	+	524	13
-	+	551	0
-	+	572	31
-	+	570	16
-	+	572	20
-	+	572	36
-	+	570	0
-	+	383	0
-	+	381	14
-	+	381	15
-	+	381	18
-	+	381	0
-	+	145	19
-	+	466	0
-	+	643	0
-	+	735	0
-	+	865	0
-	+	735	38
-	+	487	39
-	+	16	0
-	+	487	24
-	+	735	39
-	+	438	28
-	+	438	42
-	+	438	30
-	+	438	50
-	+	438	9
-	+	438	15
-	+	438	4
-	+	483	52
-	+	487	39
-	+	579	0
-	+	567	68
-	+	567	45
-	+	567	29
-	+	567	0
-	+	557	0
-	+	567	0
-	+	438	0
-	+	202	0
-	+	174	0
-	+	423	0
-	+	878	0
-	+	465	41
-	+	466	49
-	+	381	0
 
 > ~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/_ast.pyi
 	*	1725916842	0
@@ -15801,36 +16361,6 @@ $
 	+	2	76
 	+	1	70
 
-> ~/bash/oldfiles.bash
-	*	1725915162	0
-	"	2	0
-	^	2	108
-	.	5	0
-	+	2	1
-	+	2	12
-	+	2	49
-	+	2	12
-	+	2	0
-	+	3	1
-	+	1	10
-	+	2	62
-	+	2	34
-	+	2	1
-	+	2	16
-	+	2	0
-	+	6	33
-	+	2	68
-	+	3	66
-	+	3	0
-	+	2	13
-	+	3	23
-	+	4	51
-	+	6	28
-	+	13	22
-	+	2	107
-	+	7	0
-	+	5	0
-
 > ~/bash/pwd-oldfiles.bash
 	*	1725915160	0
 	"	2	0
@@ -15855,12 +16385,6 @@ $
 > ~/python_common/ic.py
 	*	1725914955	0
 	"	1	0
-
-> ~/python_common/table.py
-	*	1725914950	0
-	"	8	0
-	.	1	0
-	+	1	0
 
 > ~/pyscripts/print_todo.py
 	*	1725914742	0
@@ -16351,114 +16875,6 @@ $
 	+	65	25
 	+	65	0
 	+	17	0
-
-> ~/python_common/waivek/test_truncate.py
-	*	1725817610	0
-	"	116	8
-	^	88	51
-	.	48	0
-	+	104	31
-	+	103	69
-	+	104	73
-	+	99	0
-	+	37	0
-	+	37	95
-	+	37	0
-	+	37	32
-	+	37	8
-	+	37	0
-	+	37	22
-	+	37	19
-	+	37	21
-	+	37	23
-	+	37	8
-	+	37	48
-	+	37	0
-	+	37	48
-	+	37	105
-	+	37	22
-	+	37	19
-	+	37	21
-	+	37	23
-	+	37	8
-	+	37	0
-	+	25	23
-	+	27	12
-	+	26	39
-	+	27	36
-	+	29	24
-	+	32	17
-	+	29	12
-	+	32	56
-	+	37	0
-	+	29	0
-	+	33	25
-	+	37	0
-	+	28	21
-	+	31	64
-	+	34	73
-	+	35	47
-	+	36	23
-	+	37	0
-	+	100	88
-	+	103	59
-	+	104	59
-	+	107	82
-	+	106	15
-	+	107	0
-	+	108	43
-	+	111	16
-	+	97	86
-	+	99	17
-	+	97	13
-	+	97	0
-	+	99	0
-	+	98	90
-	+	99	13
-	+	97	77
-	+	98	61
-	+	98	0
-	+	98	15
-	+	98	58
-	+	98	35
-	+	98	16
-	+	98	0
-	+	97	0
-	+	99	0
-	+	102	52
-	+	99	0
-	+	115	0
-	+	115	52
-	+	115	0
-	+	91	0
-	+	91	53
-	+	93	43
-	+	93	48
-	+	91	49
-	+	93	0
-	+	88	28
-	+	91	87
-	+	91	0
-	+	121	24
-	+	88	31
-	+	92	50
-	+	89	62
-	+	90	57
-	+	89	61
-	+	86	19
-	+	2	0
-	+	87	9
-	+	87	0
-	+	110	0
-	+	111	0
-	+	110	50
-	+	90	0
-	+	103	0
-	+	110	9
-	+	89	0
-	+	48	0
-	a	115	21
-	b	115	22
 
 > ~/python_common/waivek/test.py
 	*	1725817570	0
@@ -17174,112 +17590,6 @@ $
 > /usr/share/vim/vim90/doc/help.txt
 	*	1725592625	0
 	"	1	0
-
-> ~/.vim/plugin/jprev.vim
-	*	1725592622	0
-	"	116	0
-	^	130	9
-	.	130	8
-	+	99	39
-	+	99	0
-	+	86	18
-	+	99	78
-	+	99	23
-	+	99	40
-	+	99	42
-	+	99	24
-	+	99	0
-	+	63	49
-	+	69	10
-	+	63	37
-	+	64	0
-	+	99	41
-	+	99	109
-	+	66	60
-	+	67	38
-	+	68	40
-	+	99	11
-	+	99	0
-	+	99	19
-	+	99	0
-	+	99	8
-	+	99	0
-	+	99	8
-	+	99	0
-	+	71	26
-	+	82	10
-	+	99	0
-	+	80	0
-	+	86	39
-	+	87	38
-	+	74	42
-	+	87	42
-	+	98	0
-	+	93	54
-	+	97	154
-	+	91	18
-	+	97	23
-	+	97	35
-	+	97	0
-	+	97	116
-	+	92	0
-	+	97	27
-	+	94	11
-	+	95	63
-	+	96	12
-	+	97	77
-	+	97	97
-	+	97	0
-	+	97	36
-	+	99	38
-	+	99	46
-	+	99	0
-	+	92	0
-	+	91	0
-	+	99	0
-	+	88	0
-	+	91	53
-	+	89	32
-	+	90	0
-	+	91	0
-	+	106	0
-	+	97	0
-	+	91	0
-	+	87	0
-	+	78	0
-	+	129	0
-	+	109	0
-	+	103	0
-	+	129	0
-	+	117	34
-	+	118	7
-	+	120	14
-	+	121	8
-	+	129	0
-	+	105	39
-	+	105	9
-	+	123	48
-	+	124	43
-	+	128	53
-	+	119	0
-	+	105	0
-	+	124	28
-	+	125	53
-	+	128	29
-	+	128	0
-	+	142	38
-	+	144	0
-	+	142	10
-	+	143	38
-	+	105	0
-	+	139	0
-	+	11	0
-	+	127	0
-	+	130	0
-	+	131	0
-	+	130	31
-	+	140	0
-	+	130	8
 
 > /usr/share/vim/vim90/doc/motion.txt
 	*	1725592557	0
@@ -20602,16 +20912,6 @@ $
 	+	93	0
 	+	94	0
 
-> ~/python_common/waivek/common.py
-	*	1724976141	0
-	"	442	4
-	.	442	0
-	+	24	0
-	+	25	0
-	+	33	0
-	+	37	0
-	+	442	0
-
 > ~/python_common/waivek/testbetterpdb.py
 	*	1724976086	0
 	"	2	0
@@ -21106,112 +21406,6 @@ $
 	+	5	4
 	+	10	0
 	+	11	0
-
-> ~/.vim/coc-settings.json
-	*	1724641934	0
-	"	6	225
-	^	6	226
-	.	6	225
-	+	2	0
-	+	44	0
-	+	44	11
-	+	44	0
-	+	2	0
-	+	18	0
-	+	19	0
-	+	20	0
-	+	19	0
-	+	2	33
-	+	3	38
-	+	20	0
-	+	4	0
-	+	11	0
-	+	13	0
-	+	24	0
-	+	20	0
-	+	24	0
-	+	25	0
-	+	43	42
-	+	26	0
-	+	43	0
-	+	29	34
-	+	43	0
-	+	40	0
-	+	29	0
-	+	4	0
-	+	27	0
-	+	4	0
-	+	40	0
-	+	31	37
-	+	3	38
-	+	11	0
-	+	8	33
-	+	11	0
-	+	9	49
-	+	11	0
-	+	8	0
-	+	10	131
-	+	9	78
-	+	8	0
-	+	24	0
-	+	68	0
-	+	67	25
-	+	68	0
-	+	86	0
-	+	56	14
-	+	57	44
-	+	55	0
-	+	84	0
-	+	83	0
-	+	80	71
-	+	81	33
-	+	83	0
-	+	82	16
-	+	83	0
-	+	82	25
-	+	81	11
-	+	79	48
-	+	81	30
-	+	79	0
-	+	23	6
-	+	33	29
-	+	40	33
-	+	40	0
-	+	37	0
-	+	33	6
-	+	34	5
-	+	33	0
-	+	37	0
-	+	38	28
-	+	39	32
-	+	43	0
-	+	41	39
-	+	43	0
-	+	49	0
-	+	54	0
-	+	54	69
-	+	54	34
-	+	54	30
-	+	54	44
-	+	54	18
-	+	54	0
-	+	46	51
-	+	48	41
-	+	42	33
-	+	8	0
-	+	17	0
-	+	15	4
-	+	16	39
-	+	8	0
-	+	6	50
-	+	7	0
-	+	50	27
-	+	51	31
-	+	50	6
-	+	51	6
-	+	29	6
-	+	30	33
-	+	6	225
 
 > /usr/lib/python3.10/unittest/mock.py
 	*	1724641905	0
@@ -21903,19 +22097,6 @@ $
 > ~/python_common/$(pwd)
 	*	1724186191	0
 	"	1	0
-
-> ~/python_common/.envrc
-	*	1724186188	0
-	"	1	0
-	^	3	2
-	.	3	0
-	+	1	14
-	+	2	31
-	+	3	225
-	+	3	7
-	+	3	0
-	+	4	40
-	+	3	0
 
 > ~/hello-go/oldfiles2.go
 	*	1724162629	0
@@ -26614,10 +26795,6 @@ $
 	+	70	42
 	+	58	16
 
-> ~/.vim/plugged/coc.nvim/doc/coc.txt
-	*	1722772760	0
-	"	2819	5
-
 > ~/python_common/waivek/sum.py
 	*	1722770946	0
 	"	1	0
@@ -28465,29 +28642,6 @@ $
 	+	2	0
 	+	52	0
 
-> ~/.vim/plugin/docker-copy-to-host.vim
-	*	1722168204	0
-	"	19	0
-	.	15	0
-	+	8	0
-	+	12	74
-	+	8	0
-	+	13	28
-	+	16	16
-	+	17	27
-	+	19	0
-	+	13	0
-	+	9	2
-	+	10	0
-	+	12	70
-	+	9	7
-	+	10	28
-	+	11	32
-	+	13	0
-	+	14	20
-	+	15	93
-	+	15	0
-
 > ~/plugin/docker-copy-to-host.vim
 	*	1722167982	0
 	"	8	15
@@ -28515,14 +28669,6 @@ $
 > ~/.vim/edit-plugin/test1.db
 	*	1722166867	0
 	"	1	0
-
-> ~/.config/shell_data/fish_history
-	*	1722156963	0
-	"	6373	27
-
-> ~/.config/shell_data/.bash_history
-	*	1722156936	0
-	"	1979	0
 
 > ~/.vim/edit-plugin/library_name.txt
 	*	1722141973	0
@@ -28865,17 +29011,6 @@ $
 	+	39	0
 	+	42	0
 	+	3	0
-
-> ~/python-types/.envrc
-	*	1722031147	0
-	"	2	0
-	^	2	55
-	.	4	0
-	+	3	49
-	+	4	0
-	+	3	36
-	+	2	54
-	+	4	0
 
 > ~/hateoas/model_pydantic.py
 	*	1722031117	0

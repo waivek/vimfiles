@@ -91,26 +91,24 @@ function! s:GetJumpStack()
     return l:jump_stack
 endfunction
 
-function! s:LogError(message, line, col, function_name)
+function! s:LogError(message, function_name)
     let l:message = a:message
-    let l:line = a:line
-    let l:col = a:col
     let l:function_name = a:function_name
-    echo printf("[jprev.vim:%d:%d] (%s) %s", l:line, l:col, l:function_name, l:message)
+    echo printf("[jprev.vim:%d:%d] (%s) %s", l:function_name, l:message)
 endfunction
 
 function! s:DoJPrevious()
 
     let l:jump_stack = s:GetJumpStack()
     if len(l:jump_stack) == 0
-        call s:LogError("No jumps found", line("."), col("."), "s:DoJPrevious")
+        call s:LogError("No jumps found", "s:DoJPrevious")
         return
     endif
 
     let l:bufnrs = map(copy(l:jump_stack), "v:val['bufnr']")
     let l:index = index(l:bufnrs, bufnr("%"))
     if l:index == -1
-        call s:LogError("Current buffer not in jump stack", line("."), col("."), "s:DoJPrevious")
+        call s:LogError("Current buffer not in jump stack", "s:DoJPrevious")
         return
     endif
 
