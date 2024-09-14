@@ -3,7 +3,10 @@
     "pyright.disableDiagnostics": false,
     "python.analysis.autoImportCompletions": true,
 
-    "python.analysis.diagnosticMode": "openFilesOnly", // if we set it to workspace, pyright is constantly analyzing files. more on https://old.reddit.com/r/neovim/comments/135fqp9/why_is_pyright_constantly_analyzing_files_it/
+    "python.analysis.indexing": true,
+
+    "python.analysis.diagnosticMode": "workspace",
+    // "python.analysis.diagnosticMode": "workspace",
 
     "diagnostic.virtualText": true,
     "diagnostic.virtualTextCurrentLineOnly": false, // we want inline errors on all lines, not just the current line
@@ -20,20 +23,15 @@
     "vimlsp.diagnostic.enable": true,
 
     "volar.enable": true,
-    // "volar.takeOverMode.enabled": true,
     "tsserver.enable": false,
     "css.lint.unknownAtRules": "ignore",
 
 
     "javascript.validate.enable": false, // re-enable once await googleapi.videos.list({}); stops showing errors
-    // "diagnostic.showUnused": false,
+
     "diagnostic.showUnused": true,
     "diagnostic.level": "information",
 
-    // "$schema" = 'https://starship.rs/config-schema.json'
-    "toml.schema.associations": {
-        "starship.toml": "https://starship.rs/config-schema.json"
-    },
 
     "outline.expandLevel": 0,
     "outline.sortBy": "position",
@@ -43,44 +41,6 @@
 
     "tailwindCSS.enable": true,
 
-    "coc.preferences.useQuickfixForLocations": true,
+    "coc.preferences.useQuickfixForLocations": true
 
-    "htmldjango.djlint.ignore": "H030,H031",
-
-    // "codeLens.enable": true,
-    // "codeLens.separator": " | ",
-
-    "languageserver": {
-        //"sql": {
-        //    "module": "/usr/lib/node_modules/sql-language-server/dist/bin/cli.js",
-        //    // "args": ["up", "--method", "node-ipc"],
-        //    "args": ["up", "--method", "stdio"],
-        //    "filetypes": ["sql", "mysql"],
-        //    "settings": {
-        //        "sql-language-server": {
-        //            "connections": [
-        //                {
-        //                    "name": "sqlite3-project",
-        //                    "adapter": "sqlite3",
-        //                    "filename": "/home/vivek/Twitch/coffee-vps/code/data/clips.db",
-        //                    "projectPaths": ["/home/vivek/Twitch/coffee-vps/code"]
-        //                },
-        //                {
-        //                    "name": "hateoas-backend-sqlite",
-        //                    "adapter": "sqlite3",
-        //                    "filename": "/home/vivek/hateoas/hateoas_backend/data/downloads.db",
-        //                    "projectPaths": ["/home/vivek/hateoas/hateoas_backend"]
-        //                }
-        //            ]
-        //        }
-        //    }
-        //}
-        // "sql": {
-        //     "command": "/home/vivek/go/bin/sqls",
-        //     "args": ["-config", "/home/vivek/.config/sqls/config.yml"],
-        //    "filetypes": ["sql"], 
-        //     "shell": true
-        // }
-
-    }
 }
