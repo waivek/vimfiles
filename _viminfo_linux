@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/color
+~MSle0~/echo \"
 
 # Last Substitute Search Pattern:
 ~MSle0&Function\|Operator
@@ -20,20 +20,54 @@
 $
 
 # Command Line History (newest to oldest):
+:q
+|2,0,1726512438,,"q"
+:e secrets.env
+|2,0,1726512397,,"e secrets.env"
+:CocRestart
+|2,0,1726512353,,"CocRestart"
+:q!
+|2,0,1726512349,,"q!"
+:term
+|2,0,1726512340,,"term"
+:e requirements.txt
+|2,0,1726512332,,"e requirements.txt"
+:Template
+|2,0,1726512323,,"Template"
+:Rename bugs.240913.python_autoimport_completion.txt
+|2,0,1726356165,,"Rename bugs.240913.python_autoimport_completion.txt"
+:pwd
+|2,0,1726356122,,"pwd"
+:verbose set isk
+|2,0,1726356029,,"verbose set isk"
+:g/echo \"/
+|2,0,1726356025,,"g/echo \\\"/"
+:set isk-=/
+|2,0,1726356024,,"set isk-=/"
+:g/echo \"
+|2,0,1726356017,,"g/echo \\\""
+:iabbrev g/echo \"
+|2,0,1726356009,,"iabbrev g/echo \\\""
+:scriptnames
+|2,0,1726356004,,"scriptnames"
+:gg/
+|2,0,1726355987,,"gg/"
+:MRU hel
+|2,0,1726355986,,"MRU hel"
+:MRU s
+|2,0,1726355979,,"MRU s"
 :qa
-|2,0,1726355759,,"qa"
+|2,0,1726355973,,"qa"
+:gg/d
+|2,0,1726355838,,"gg/d"
 :MRU 
 |2,0,1726355748,,"MRU "
-:q
-|2,0,1726306349,,"q"
 :MRU bugs
 |2,0,1726306268,,"MRU bugs"
 :e .envrc
 |2,0,1726306181,,"e .envrc"
 :e 
 |2,0,1726306148,,"e "
-:CocRestart
-|2,0,1726306089,,"CocRestart"
 :map \f
 |2,0,1726305957,,"map \\f"
 :e ~/bugs/240913.python_autoimport_completion.txt
@@ -42,24 +76,12 @@ $
 |2,0,1726305843,,"g/color/"
 :echo       CocAction('codeAction', 'cursor')
 |2,0,1726262443,,"echo       CocAction('codeAction', 'cursor')"
-:q!
-|2,0,1726262175,,"q!"
-:scriptnames
-|2,0,1726262166,,"scriptnames"
 :MRU fish
 |2,0,1726262163,,"MRU fish"
 :sc
 |2,0,1726262148,,"sc"
-:gg/
-|2,0,1726262132,,"gg/"
-:g/echo \"/
-|2,0,1726262124,,"g/echo \\\"/"
 :iabbrev
 |2,0,1726262112,,"iabbrev"
-:gg/d
-|2,0,1726262104,,"gg/d"
-:Template
-|2,0,1726261592,,"Template"
 :e file.py
 |2,0,1726261516,,"e file.py"
 :T
@@ -100,8 +122,6 @@ $
 |2,0,1726233653,,"CocConfig"
 :call CocActionAsync("quickfixes")
 |2,0,1726233541,,"call CocActionAsync(\"quickfixes\")"
-:term
-|2,0,1726233518,,"term"
 :CocUpdate
 |2,0,1726233424,,"CocUpdate"
 :PlugUpdate
@@ -110,8 +130,6 @@ $
 |2,0,1726233200,,"bd!"
 :enew
 |2,0,1726233142,,"enew"
-:pwd
-|2,0,1726214184,,"pwd"
 :MRU t
 |2,0,1726211643,,"MRU t"
 :MRU tr
@@ -508,8 +526,6 @@ $
 |2,0,1725542615,,"ve"
 :e simple-pydantic-error.py
 |2,0,1725542127,,"e simple-pydantic-error.py"
-:e requirements.txt
-|2,0,1725540891,,"e requirements.txt"
 :e model_yt_api.py
 |2,0,1725540879,,"e model_yt_api.py"
 :C
@@ -518,8 +534,6 @@ $
 |2,0,1725539843,,"CocR"
 :e model_
 |2,0,1725539320,,"e model_"
-:e secrets.env
-|2,0,1725538362,,"e secrets.env"
 :term python %
 |2,0,1725538227,,"term python %"
 :e data/youtube-urls.txt
@@ -1576,8 +1590,6 @@ $
 |2,0,1723658210,,"e ../sqlite-editor/todo.txt"
 :find ed
 |2,0,1723658202,,"find ed"
-:verbose set isk
-|2,0,1723658161,,"verbose set isk"
 :Files data/
 |2,0,1723658136,,"Files data/"
 :verbose hi ansiColorRed
@@ -4992,8 +5004,6 @@ $
 |2,0,1716612796,,"MRU sql_ch"
 :MRU 305:v1.txt
 |2,0,1716612794,,"MRU 305:v1.txt"
-:MRU s
-|2,0,1716599758,,"MRU s"
 :MRU base.
 |2,0,1716599732,,"MRU base."
 :MRU hat
@@ -15268,36 +15278,36 @@ $
 |2,4,1693311567,,"cont"
 
 # Registers:
-"0	CHAR	0
-	pass
-|3,0,0,0,1,0,1726262440,"pass"
+""0	CHAR	0
+	561324049
+|3,1,0,0,1,0,1726512435,"561324049"
 "1	LINE	0
-	import date
-|3,0,1,1,1,0,1726306172,"import date"
-"2	LINE	0
-	    import datetime
-|3,0,2,1,1,0,1726306168,"    import datetime"
-"3	LINE	0
-	    os.CLD
-|3,0,3,1,1,0,1726306128,"    os.CLD"
-"4	LINE	0
-	`import datetime` is suggested in existing python projects but not new ones via (coc-codeaction-cursor)
-|3,0,4,1,1,0,1726306066,"`import datetime` is suggested in existing python projects but not new ones via (coc-codeaction-cursor)"
-"5	LINE	0
-	    Completion suggests datetime package in existing python projects but not new ones
-|3,0,5,1,1,0,1726305915,"    Completion suggests datetime package in existing python projects but not new ones"
-"6	LINE	0
 	
-|3,0,6,1,1,0,1726262628,""
+|3,0,1,1,1,0,1726512363,""
+"2	LINE	0
+	
+|3,0,2,1,1,0,1726356797,""
+"3	LINE	0
+	
+|3,0,3,1,1,0,1726356797,""
+"4	LINE	0
+	    now = now
+|3,0,4,1,1,0,1726356786,"    now = now"
+"5	LINE	0
+	import datetime
+|3,0,5,1,1,0,1726356772,"import datetime"
+"6	LINE	0
+	    color = waiv
+|3,0,6,1,1,0,1726356768,"    color = waiv"
 "7	LINE	0
-	echo "[line14]"
-|3,0,7,1,1,0,1726262046,"echo \"[line14]\""
+	    pass
+|3,0,7,1,1,0,1726356717,"    pass"
 "8	LINE	0
-	    echo "[if] config.fish"
-|3,0,8,1,1,0,1726262021,"    echo \"[if] config.fish\""
+	
+|3,0,8,1,1,0,1726356715,""
 "9	LINE	0
-	echo "config.fish"
-|3,0,9,1,1,0,1726261998,"echo \"config.fish\""
+	    pass
+|3,0,9,1,1,0,1726356664,"    pass"
 "a	CHAR	0
 	Tabularize /=/l1c1l1
 |3,0,10,0,1,0,1726237274,"Tabularize /=/l1c1l1"
@@ -15320,241 +15330,282 @@ $
 	set verbosefile=verbose-file.txt
 	set verbose=20 | quit
 |3,0,28,1,2,0,1725457945,"set verbosefile=verbose-file.txt","set verbose=20 | quit"
-""-	CHAR	0
-	# 
-|3,1,36,0,1,0,1726306183,"# "
+"-	CHAR	0
+	561324049
+|3,0,36,0,1,0,1726512429,"561324049"
 
 # File marks:
-'0  12  13  ~/python_codeaction_test/hello.py
-|4,48,12,13,1726355760,"~/python_codeaction_test/hello.py"
-'1  12  10  ~/python_codeaction_test/hello.py
-|4,49,12,10,1726306350,"~/python_codeaction_test/hello.py"
-'2  1  0  ~/bugs/240913.python_autoimport_completion.txt
-|4,50,1,0,1726306308,"~/bugs/240913.python_autoimport_completion.txt"
-'3  1  0  ~/bugs/240913.python_autoimport_completion.txt
-|4,51,1,0,1726306308,"~/bugs/240913.python_autoimport_completion.txt"
-'4  1  0  ~/bugs/240913.python_autoimport_completion.txt
-|4,52,1,0,1726306308,"~/bugs/240913.python_autoimport_completion.txt"
-'5  1  0  ~/bugs/240913.python_autoimport_completion.txt
-|4,53,1,0,1726306308,"~/bugs/240913.python_autoimport_completion.txt"
-'6  10  10  ~/python_codeaction_test/hello.py
-|4,54,10,10,1726306273,"~/python_codeaction_test/hello.py"
-'7  10  10  ~/python_codeaction_test/hello.py
-|4,55,10,10,1726306273,"~/python_codeaction_test/hello.py"
-'8  10  10  ~/python_codeaction_test/hello.py
-|4,56,10,10,1726306273,"~/python_codeaction_test/hello.py"
-'9  10  10  ~/python_codeaction_test/hello.py
-|4,57,10,10,1726306273,"~/python_codeaction_test/hello.py"
+'0  14  41  ~/telegram_bots/reaction_alerts_bot.py
+|4,48,14,41,1726512439,"~/telegram_bots/reaction_alerts_bot.py"
+'1  4  17  ~/telegram_bots/.envrc
+|4,49,4,17,1726512299,"~/telegram_bots/.envrc"
+'2  4  17  ~/telegram_bots/.envrc
+|4,50,4,17,1726512299,"~/telegram_bots/.envrc"
+'3  1  17  ~/telegram_bots/secrets.env
+|4,51,1,17,1726512284,"~/telegram_bots/secrets.env"
+'4  1  17  ~/telegram_bots/secrets.env
+|4,52,1,17,1726512284,"~/telegram_bots/secrets.env"
+'5  1  17  ~/telegram_bots/secrets.env
+|4,53,1,17,1726512284,"~/telegram_bots/secrets.env"
+'6  1  17  ~/telegram_bots/secrets.env
+|4,54,1,17,1726512284,"~/telegram_bots/secrets.env"
+'7  14  0  ~/python_codeaction_test/hello.py
+|4,55,14,0,1726356803,"~/python_codeaction_test/hello.py"
+'8  14  0  ~/python_codeaction_test/hello.py
+|4,56,14,0,1726356803,"~/python_codeaction_test/hello.py"
+'9  14  0  ~/python_codeaction_test/hello.py
+|4,57,14,0,1726356803,"~/python_codeaction_test/hello.py"
 
 # Jumplist (newest first):
--'  12  13  ~/python_codeaction_test/hello.py
-|4,39,12,13,1726355760,"~/python_codeaction_test/hello.py"
--'  12  10  ~/python_codeaction_test/hello.py
-|4,39,12,10,1726306350,"~/python_codeaction_test/hello.py"
+-'  14  41  ~/telegram_bots/reaction_alerts_bot.py
+|4,39,14,41,1726512439,"~/telegram_bots/reaction_alerts_bot.py"
+-'  13  54  ~/telegram_bots/reaction_alerts_bot.py
+|4,39,13,54,1726512430,"~/telegram_bots/reaction_alerts_bot.py"
+-'  11  10  ~/telegram_bots/reaction_alerts_bot.py
+|4,39,11,10,1726512419,"~/telegram_bots/reaction_alerts_bot.py"
+-'  12  23  ~/telegram_bots/reaction_alerts_bot.py
+|4,39,12,23,1726512419,"~/telegram_bots/reaction_alerts_bot.py"
+-'  1  0  ~/telegram_bots/secrets.env
+|4,39,1,0,1726512412,"~/telegram_bots/secrets.env"
+-'  2  0  ~/telegram_bots/secrets.env
+|4,39,2,0,1726512410,"~/telegram_bots/secrets.env"
+-'  15  3  ~/telegram_bots/reaction_alerts_bot.py
+|4,39,15,3,1726512410,"~/telegram_bots/reaction_alerts_bot.py"
+-'  8  0  ~/telegram_bots/reaction_alerts_bot.py
+|4,39,8,0,1726512397,"~/telegram_bots/reaction_alerts_bot.py"
+-'  6  0  ~/telegram_bots/requirements.txt
+|4,39,6,0,1726512351,"~/telegram_bots/requirements.txt"
+-'  6  0  ~/telegram_bots/reaction_alerts_bot.py
+|4,39,6,0,1726512332,"~/telegram_bots/reaction_alerts_bot.py"
+-'  20  0  ~/telegram_bots/reaction_alerts_bot.py
+|4,39,20,0,1726512321,"~/telegram_bots/reaction_alerts_bot.py"
+-'  4  17  ~/telegram_bots/.envrc
+|4,39,4,17,1726512299,"~/telegram_bots/.envrc"
+-'  4  17  ~/telegram_bots/.envrc
+|4,39,4,17,1726512299,"~/telegram_bots/.envrc"
+-'  1  0  ~/telegram_bots/.envrc
+|4,39,1,0,1726512292,"~/telegram_bots/.envrc"
+-'  1  0  ~/telegram_bots/.envrc
+|4,39,1,0,1726512292,"~/telegram_bots/.envrc"
+-'  1  17  ~/telegram_bots/secrets.env
+|4,39,1,17,1726512284,"~/telegram_bots/secrets.env"
+-'  1  17  ~/telegram_bots/secrets.env
+|4,39,1,17,1726512284,"~/telegram_bots/secrets.env"
+-'  14  0  ~/python_codeaction_test/hello.py
+|4,39,14,0,1726356803,"~/python_codeaction_test/hello.py"
+-'  14  0  ~/python_codeaction_test/hello.py
+|4,39,14,0,1726356803,"~/python_codeaction_test/hello.py"
+-'  14  0  ~/python_codeaction_test/hello.py
+|4,39,14,0,1726356803,"~/python_codeaction_test/hello.py"
+-'  14  0  ~/python_codeaction_test/hello.py
+|4,39,14,0,1726356803,"~/python_codeaction_test/hello.py"
+-'  9  0  ~/python_codeaction_test/hello.py
+|4,39,9,0,1726356777,"~/python_codeaction_test/hello.py"
+-'  8  28  ~/python_codeaction_test/hello.py
+|4,39,8,28,1726356777,"~/python_codeaction_test/hello.py"
+-'  9  0  ~/python_codeaction_test/hello.py
+|4,39,9,0,1726356777,"~/python_codeaction_test/hello.py"
+-'  8  28  ~/python_codeaction_test/hello.py
+|4,39,8,28,1726356777,"~/python_codeaction_test/hello.py"
+-'  9  0  ~/python_codeaction_test/hello.py
+|4,39,9,0,1726356777,"~/python_codeaction_test/hello.py"
+-'  8  28  ~/python_codeaction_test/hello.py
+|4,39,8,28,1726356777,"~/python_codeaction_test/hello.py"
+-'  9  0  ~/python_codeaction_test/hello.py
+|4,39,9,0,1726356777,"~/python_codeaction_test/hello.py"
+-'  8  28  ~/python_codeaction_test/hello.py
+|4,39,8,28,1726356777,"~/python_codeaction_test/hello.py"
 -'  1  0  ~/python_codeaction_test/hello.py
-|4,39,1,0,1726306342,"~/python_codeaction_test/hello.py"
+|4,39,1,0,1726356758,"~/python_codeaction_test/hello.py"
 -'  1  0  ~/python_codeaction_test/hello.py
-|4,39,1,0,1726306342,"~/python_codeaction_test/hello.py"
--'  1  0  ~/bugs/240913.python_autoimport_completion.txt
-|4,39,1,0,1726306308,"~/bugs/240913.python_autoimport_completion.txt"
--'  1  0  ~/bugs/240913.python_autoimport_completion.txt
-|4,39,1,0,1726306308,"~/bugs/240913.python_autoimport_completion.txt"
--'  1  0  ~/bugs/240913.python_autoimport_completion.txt
-|4,39,1,0,1726306308,"~/bugs/240913.python_autoimport_completion.txt"
--'  10  10  ~/python_codeaction_test/hello.py
-|4,39,10,10,1726306273,"~/python_codeaction_test/hello.py"
--'  10  10  ~/python_codeaction_test/hello.py
-|4,39,10,10,1726306273,"~/python_codeaction_test/hello.py"
--'  10  10  ~/python_codeaction_test/hello.py
-|4,39,10,10,1726306273,"~/python_codeaction_test/hello.py"
--'  10  10  ~/python_codeaction_test/hello.py
-|4,39,10,10,1726306273,"~/python_codeaction_test/hello.py"
--'  10  10  ~/python_codeaction_test/hello.py
-|4,39,10,10,1726306273,"~/python_codeaction_test/hello.py"
+|4,39,1,0,1726356758,"~/python_codeaction_test/hello.py"
 -'  1  0  ~/python_codeaction_test/hello.py
-|4,39,1,0,1726306251,"~/python_codeaction_test/hello.py"
+|4,39,1,0,1726356758,"~/python_codeaction_test/hello.py"
 -'  1  0  ~/python_codeaction_test/hello.py
-|4,39,1,0,1726306251,"~/python_codeaction_test/hello.py"
--'  1  0  ~/python_codeaction_test/hello.py
-|4,39,1,0,1726306251,"~/python_codeaction_test/hello.py"
--'  1  0  ~/python_codeaction_test/.envrc
-|4,39,1,0,1726306244,"~/python_codeaction_test/.envrc"
--'  1  0  ~/python_codeaction_test/.envrc
-|4,39,1,0,1726306244,"~/python_codeaction_test/.envrc"
--'  1  0  ~/python_codeaction_test/.envrc
-|4,39,1,0,1726306244,"~/python_codeaction_test/.envrc"
--'  1  0  ~/python_codeaction_test/.envrc
-|4,39,1,0,1726306244,"~/python_codeaction_test/.envrc"
--'  1  0  ~/python_codeaction_test/.envrc
-|4,39,1,0,1726306244,"~/python_codeaction_test/.envrc"
--'  1  0  ~/python_codeaction_test/.envrc
-|4,39,1,0,1726306244,"~/python_codeaction_test/.envrc"
--'  3  1  ~/python_codeaction_test/.envrc
-|4,39,3,1,1726306217,"~/python_codeaction_test/.envrc"
--'  3  1  ~/python_codeaction_test/.envrc
-|4,39,3,1,1726306217,"~/python_codeaction_test/.envrc"
--'  3  1  ~/python_codeaction_test/.envrc
-|4,39,3,1,1726306217,"~/python_codeaction_test/.envrc"
--'  3  1  ~/python_codeaction_test/.envrc
-|4,39,3,1,1726306217,"~/python_codeaction_test/.envrc"
--'  3  1  ~/python_codeaction_test/.envrc
-|4,39,3,1,1726306217,"~/python_codeaction_test/.envrc"
--'  3  1  ~/python_codeaction_test/.envrc
-|4,39,3,1,1726306217,"~/python_codeaction_test/.envrc"
--'  3  1  ~/python_codeaction_test/.envrc
-|4,39,3,1,1726306217,"~/python_codeaction_test/.envrc"
--'  1  0  ~/python_codeaction_test/.envrc
-|4,39,1,0,1726306214,"~/python_codeaction_test/.envrc"
--'  3  0  ~/python_codeaction_test/.envrc
-|4,39,3,0,1726306186,"~/python_codeaction_test/.envrc"
--'  10  0  ~/python_codeaction_test/hello.py
-|4,39,10,0,1726306181,"~/python_codeaction_test/hello.py"
--'  10  0  ~/python_codeaction_test/hello.py
-|4,39,10,0,1726306181,"~/python_codeaction_test/hello.py"
--'  10  0  ~/python_codeaction_test/hello.py
-|4,39,10,0,1726306181,"~/python_codeaction_test/hello.py"
--'  1  0  ~/python_codeaction_test/hello.py
-|4,39,1,0,1726306156,"~/python_codeaction_test/hello.py"
--'  1  0  ~/python_codeaction_test/hello.py
-|4,39,1,0,1726306156,"~/python_codeaction_test/hello.py"
--'  1  0  ~/python_codeaction_test/hello.py
-|4,39,1,0,1726306156,"~/python_codeaction_test/hello.py"
--'  12  10  ~/python_codeaction_test/hello.py
-|4,39,12,10,1726306149,"~/python_codeaction_test/hello.py"
--'  12  10  ~/python_codeaction_test/hello.py
-|4,39,12,10,1726306149,"~/python_codeaction_test/hello.py"
--'  12  10  ~/python_codeaction_test/hello.py
-|4,39,12,10,1726306149,"~/python_codeaction_test/hello.py"
--'  12  10  ~/python_codeaction_test/hello.py
-|4,39,12,10,1726306149,"~/python_codeaction_test/hello.py"
--'  12  10  ~/python_codeaction_test/hello.py
-|4,39,12,10,1726306149,"~/python_codeaction_test/hello.py"
--'  12  10  ~/python_codeaction_test/hello.py
-|4,39,12,10,1726306149,"~/python_codeaction_test/hello.py"
--'  12  10  ~/python_codeaction_test/hello.py
-|4,39,12,10,1726306149,"~/python_codeaction_test/hello.py"
--'  1  0  ~/python_codeaction_test/hello.py
-|4,39,1,0,1726306141,"~/python_codeaction_test/hello.py"
--'  11  0  ~/python_codeaction_test/hello.py
-|4,39,11,0,1726306134,"~/python_codeaction_test/hello.py"
--'  11  0  ~/python_codeaction_test/hello.py
-|4,39,11,0,1726306134,"~/python_codeaction_test/hello.py"
--'  11  0  ~/python_codeaction_test/hello.py
-|4,39,11,0,1726306134,"~/python_codeaction_test/hello.py"
--'  11  0  ~/python_codeaction_test/hello.py
-|4,39,11,0,1726306134,"~/python_codeaction_test/hello.py"
--'  11  0  ~/python_codeaction_test/hello.py
-|4,39,11,0,1726306134,"~/python_codeaction_test/hello.py"
--'  11  0  ~/python_codeaction_test/hello.py
-|4,39,11,0,1726306134,"~/python_codeaction_test/hello.py"
--'  11  0  ~/python_codeaction_test/hello.py
-|4,39,11,0,1726306134,"~/python_codeaction_test/hello.py"
--'  11  0  ~/python_codeaction_test/hello.py
-|4,39,11,0,1726306134,"~/python_codeaction_test/hello.py"
--'  11  0  ~/python_codeaction_test/hello.py
-|4,39,11,0,1726306134,"~/python_codeaction_test/hello.py"
--'  11  0  ~/python_codeaction_test/hello.py
-|4,39,11,0,1726306134,"~/python_codeaction_test/hello.py"
--'  3  1  ~/python_codeaction_test/.envrc
-|4,39,3,1,1726306133,"~/python_codeaction_test/.envrc"
--'  3  1  ~/python_codeaction_test/.envrc
-|4,39,3,1,1726306133,"~/python_codeaction_test/.envrc"
--'  1  0  ~/python_codeaction_test/hello.py
-|4,39,1,0,1726305835,"~/python_codeaction_test/hello.py"
--'  171  13  ~/tooling/docs/fd.man
-|4,39,171,13,1726305732,"~/tooling/docs/fd.man"
--'  171  13  ~/tooling/docs/fd.man
-|4,39,171,13,1726305732,"~/tooling/docs/fd.man"
--'  171  13  ~/tooling/docs/fd.man
-|4,39,171,13,1726305732,"~/tooling/docs/fd.man"
--'  171  13  ~/tooling/docs/fd.man
-|4,39,171,13,1726305732,"~/tooling/docs/fd.man"
--'  171  13  ~/tooling/docs/fd.man
-|4,39,171,13,1726305732,"~/tooling/docs/fd.man"
--'  171  13  ~/tooling/docs/fd.man
-|4,39,171,13,1726305732,"~/tooling/docs/fd.man"
--'  171  13  ~/tooling/docs/fd.man
-|4,39,171,13,1726305732,"~/tooling/docs/fd.man"
--'  171  13  ~/tooling/docs/fd.man
-|4,39,171,13,1726305732,"~/tooling/docs/fd.man"
--'  171  13  ~/tooling/docs/fd.man
-|4,39,171,13,1726305732,"~/tooling/docs/fd.man"
--'  171  13  ~/tooling/docs/fd.man
-|4,39,171,13,1726305732,"~/tooling/docs/fd.man"
--'  171  13  ~/tooling/docs/fd.man
-|4,39,171,13,1726305732,"~/tooling/docs/fd.man"
--'  1  0  ~/tooling/docs/fd.man
-|4,39,1,0,1726305724,"~/tooling/docs/fd.man"
--'  1  0  ~/tooling/docs/fd.man
-|4,39,1,0,1726305724,"~/tooling/docs/fd.man"
--'  1  0  ~/tooling/docs/fd.man
-|4,39,1,0,1726305724,"~/tooling/docs/fd.man"
--'  1  0  ~/tooling/docs/fd.man
-|4,39,1,0,1726305724,"~/tooling/docs/fd.man"
--'  1  0  ~/tooling/docs/fd.man
-|4,39,1,0,1726305724,"~/tooling/docs/fd.man"
--'  1  0  ~/tooling/docs/fd.man
-|4,39,1,0,1726305724,"~/tooling/docs/fd.man"
--'  1  0  ~/tooling/docs/fd.man
-|4,39,1,0,1726305724,"~/tooling/docs/fd.man"
--'  1  0  ~/tooling/docs/fd.man
-|4,39,1,0,1726305724,"~/tooling/docs/fd.man"
--'  1  0  ~/tooling/docs/fd.man
-|4,39,1,0,1726305724,"~/tooling/docs/fd.man"
--'  1  0  ~/tooling/docs/fd.man
-|4,39,1,0,1726305724,"~/tooling/docs/fd.man"
--'  1  0  ~/tooling/docs/fd.man
-|4,39,1,0,1726305724,"~/tooling/docs/fd.man"
--'  1  8  ~/pyscripts/file.py
-|4,39,1,8,1726304914,"~/pyscripts/file.py"
--'  1  8  ~/pyscripts/file.py
-|4,39,1,8,1726304914,"~/pyscripts/file.py"
--'  1  8  ~/pyscripts/file.py
-|4,39,1,8,1726304914,"~/pyscripts/file.py"
--'  1  8  ~/pyscripts/file.py
-|4,39,1,8,1726304914,"~/pyscripts/file.py"
--'  1  8  ~/pyscripts/file.py
-|4,39,1,8,1726304914,"~/pyscripts/file.py"
--'  1  8  ~/pyscripts/file.py
-|4,39,1,8,1726304914,"~/pyscripts/file.py"
--'  1  8  ~/pyscripts/file.py
-|4,39,1,8,1726304914,"~/pyscripts/file.py"
--'  1  8  ~/pyscripts/file.py
-|4,39,1,8,1726304914,"~/pyscripts/file.py"
--'  1  8  ~/pyscripts/file.py
-|4,39,1,8,1726304914,"~/pyscripts/file.py"
--'  1  8  ~/pyscripts/file.py
-|4,39,1,8,1726304914,"~/pyscripts/file.py"
--'  1  8  ~/pyscripts/file.py
-|4,39,1,8,1726304914,"~/pyscripts/file.py"
--'  1  8  ~/pyscripts/file.py
-|4,39,1,8,1726304914,"~/pyscripts/file.py"
--'  9  51  ~/pyscripts/file.py
-|4,39,9,51,1726262440,"~/pyscripts/file.py"
--'  9  51  ~/pyscripts/file.py
-|4,39,9,51,1726262440,"~/pyscripts/file.py"
--'  9  51  ~/pyscripts/file.py
-|4,39,9,51,1726262440,"~/pyscripts/file.py"
--'  9  51  ~/pyscripts/file.py
-|4,39,9,51,1726262440,"~/pyscripts/file.py"
--'  9  51  ~/pyscripts/file.py
-|4,39,9,51,1726262440,"~/pyscripts/file.py"
--'  9  51  ~/pyscripts/file.py
-|4,39,9,51,1726262440,"~/pyscripts/file.py"
--'  9  51  ~/pyscripts/file.py
-|4,39,9,51,1726262440,"~/pyscripts/file.py"
--'  9  51  ~/pyscripts/file.py
-|4,39,9,51,1726262440,"~/pyscripts/file.py"
+|4,39,1,0,1726356758,"~/python_codeaction_test/hello.py"
+-'  5  7  ~/python_codeaction_test/requirements.txt
+|4,39,5,7,1726356752,"~/python_codeaction_test/requirements.txt"
+-'  5  7  ~/python_codeaction_test/requirements.txt
+|4,39,5,7,1726356752,"~/python_codeaction_test/requirements.txt"
+-'  5  7  ~/python_codeaction_test/requirements.txt
+|4,39,5,7,1726356752,"~/python_codeaction_test/requirements.txt"
+-'  5  7  ~/python_codeaction_test/requirements.txt
+|4,39,5,7,1726356752,"~/python_codeaction_test/requirements.txt"
+-'  5  7  ~/python_codeaction_test/requirements.txt
+|4,39,5,7,1726356752,"~/python_codeaction_test/requirements.txt"
+-'  1  0  ~/python_codeaction_test/requirements.txt
+|4,39,1,0,1726356747,"~/python_codeaction_test/requirements.txt"
+-'  1  0  ~/python_codeaction_test/requirements.txt
+|4,39,1,0,1726356747,"~/python_codeaction_test/requirements.txt"
+-'  1  0  ~/python_codeaction_test/requirements.txt
+|4,39,1,0,1726356747,"~/python_codeaction_test/requirements.txt"
+-'  1  0  ~/python_codeaction_test/requirements.txt
+|4,39,1,0,1726356747,"~/python_codeaction_test/requirements.txt"
+-'  1  0  ~/python_codeaction_test/requirements.txt
+|4,39,1,0,1726356747,"~/python_codeaction_test/requirements.txt"
+-'  9  4  ~/python-types/file.py
+|4,39,9,4,1726356735,"~/python-types/file.py"
+-'  9  4  ~/python-types/file.py
+|4,39,9,4,1726356735,"~/python-types/file.py"
+-'  9  4  ~/python-types/file.py
+|4,39,9,4,1726356735,"~/python-types/file.py"
+-'  9  4  ~/python-types/file.py
+|4,39,9,4,1726356735,"~/python-types/file.py"
+-'  9  4  ~/python-types/file.py
+|4,39,9,4,1726356735,"~/python-types/file.py"
+-'  9  4  ~/python-types/file.py
+|4,39,9,4,1726356735,"~/python-types/file.py"
+-'  14  0  ~/python-types/file.py
+|4,39,14,0,1726356710,"~/python-types/file.py"
+-'  14  0  ~/python-types/file.py
+|4,39,14,0,1726356710,"~/python-types/file.py"
+-'  14  0  ~/python-types/file.py
+|4,39,14,0,1726356710,"~/python-types/file.py"
+-'  14  0  ~/python-types/file.py
+|4,39,14,0,1726356710,"~/python-types/file.py"
+-'  14  0  ~/python-types/file.py
+|4,39,14,0,1726356710,"~/python-types/file.py"
+-'  14  0  ~/python-types/file.py
+|4,39,14,0,1726356710,"~/python-types/file.py"
+-'  21  0  ~/python-types/file.py
+|4,39,21,0,1726356677,"~/python-types/file.py"
+-'  21  0  ~/python-types/file.py
+|4,39,21,0,1726356677,"~/python-types/file.py"
+-'  21  0  ~/python-types/file.py
+|4,39,21,0,1726356677,"~/python-types/file.py"
+-'  21  0  ~/python-types/file.py
+|4,39,21,0,1726356677,"~/python-types/file.py"
+-'  21  0  ~/python-types/file.py
+|4,39,21,0,1726356677,"~/python-types/file.py"
+-'  21  0  ~/python-types/file.py
+|4,39,21,0,1726356677,"~/python-types/file.py"
+-'  9  0  ~/python-types/file.py
+|4,39,9,0,1726356677,"~/python-types/file.py"
+-'  26  0  ~/python-types/file.py
+|4,39,26,0,1726356661,"~/python-types/file.py"
+-'  26  0  ~/python-types/file.py
+|4,39,26,0,1726356661,"~/python-types/file.py"
+-'  26  0  ~/python-types/file.py
+|4,39,26,0,1726356661,"~/python-types/file.py"
+-'  26  0  ~/python-types/file.py
+|4,39,26,0,1726356661,"~/python-types/file.py"
+-'  26  0  ~/python-types/file.py
+|4,39,26,0,1726356661,"~/python-types/file.py"
+-'  26  0  ~/python-types/file.py
+|4,39,26,0,1726356661,"~/python-types/file.py"
+-'  14  0  ~/python-types/file.py
+|4,39,14,0,1726356661,"~/python-types/file.py"
+-'  1  0  ~/python-types/.envrc
+|4,39,1,0,1726356655,"~/python-types/.envrc"
+-'  1  0  ~/python-types/.envrc
+|4,39,1,0,1726356655,"~/python-types/.envrc"
+-'  1  0  ~/python-types/.envrc
+|4,39,1,0,1726356655,"~/python-types/.envrc"
+-'  1  0  ~/python-types/.envrc
+|4,39,1,0,1726356655,"~/python-types/.envrc"
+-'  1  0  ~/python-types/.envrc
+|4,39,1,0,1726356655,"~/python-types/.envrc"
+-'  1  0  ~/python-types/.envrc
+|4,39,1,0,1726356655,"~/python-types/.envrc"
+-'  1  0  ~/python-types/.envrc
+|4,39,1,0,1726356655,"~/python-types/.envrc"
+-'  1  0  ~/python-types/.envrc
+|4,39,1,0,1726356655,"~/python-types/.envrc"
+-'  34  24  ~/python-types/file.py
+|4,39,34,24,1726356624,"~/python-types/file.py"
+-'  22  24  ~/python-types/file.py
+|4,39,22,24,1726356624,"~/python-types/file.py"
+-'  34  24  ~/python-types/file.py
+|4,39,34,24,1726356624,"~/python-types/file.py"
+-'  22  24  ~/python-types/file.py
+|4,39,22,24,1726356624,"~/python-types/file.py"
+-'  34  24  ~/python-types/file.py
+|4,39,34,24,1726356624,"~/python-types/file.py"
+-'  22  24  ~/python-types/file.py
+|4,39,22,24,1726356624,"~/python-types/file.py"
+-'  34  24  ~/python-types/file.py
+|4,39,34,24,1726356624,"~/python-types/file.py"
+-'  22  24  ~/python-types/file.py
+|4,39,22,24,1726356624,"~/python-types/file.py"
+-'  34  24  ~/python-types/file.py
+|4,39,34,24,1726356624,"~/python-types/file.py"
+-'  22  24  ~/python-types/file.py
+|4,39,22,24,1726356624,"~/python-types/file.py"
+-'  34  24  ~/python-types/file.py
+|4,39,34,24,1726356624,"~/python-types/file.py"
+-'  22  24  ~/python-types/file.py
+|4,39,22,24,1726356624,"~/python-types/file.py"
+-'  9  24  ~/python-types/file.py
+|4,39,9,24,1726356624,"~/python-types/file.py"
+-'  9  24  ~/python-types/file.py
+|4,39,9,24,1726356624,"~/python-types/file.py"
+-'  39  0  ~/python-types/file.py
+|4,39,39,0,1726356610,"~/python-types/file.py"
+-'  27  0  ~/python-types/file.py
+|4,39,27,0,1726356610,"~/python-types/file.py"
+-'  39  0  ~/python-types/file.py
+|4,39,39,0,1726356610,"~/python-types/file.py"
+-'  27  0  ~/python-types/file.py
+|4,39,27,0,1726356610,"~/python-types/file.py"
+-'  39  0  ~/python-types/file.py
+|4,39,39,0,1726356610,"~/python-types/file.py"
+-'  27  0  ~/python-types/file.py
+|4,39,27,0,1726356610,"~/python-types/file.py"
+-'  39  0  ~/python-types/file.py
+|4,39,39,0,1726356610,"~/python-types/file.py"
+-'  27  0  ~/python-types/file.py
+|4,39,27,0,1726356610,"~/python-types/file.py"
+-'  39  0  ~/python-types/file.py
+|4,39,39,0,1726356610,"~/python-types/file.py"
 
 # Buffer list:
-%~/python_codeaction_test/hello.py	12	13
+%~/telegram_bots/reaction_alerts_bot.py	14	41
+%~/telegram_bots/requirements.txt	6	0
+%~/telegram_bots/secrets.env	1	0
 
 # History of marks within files (newest to oldest):
 
+> ~/telegram_bots/reaction_alerts_bot.py
+	*	1726512437	0
+	"	14	41
+	^	14	42
+	.	14	41
+	+	1	0
+	+	8	39
+	+	10	0
+	+	15	4
+	+	12	23
+	+	9	8
+	+	12	54
+	+	13	54
+	+	14	41
+
+> ~/telegram_bots/secrets.env
+	*	1726512411	0
+	"	1	0
+	^	2	26
+	.	2	25
+	+	1	62
+	+	2	25
+
+> ~/telegram_bots/requirements.txt
+	*	1726512349	0
+	"	6	0
+	^	6	0
+	.	5	19
+	+	5	19
+
+> ~/telegram_bots/.envrc
+	*	1726512297	0
+	"	4	17
+	^	4	18
+	.	4	17
+	+	4	17
+
 > ~/python_codeaction_test/hello.py
-	*	1726355755	0
-	"	12	13
-	.	8	0
+	*	1726356798	0
+	"	14	0
+	.	14	0
 	+	18	21
 	+	19	19
 	+	19	0
@@ -15567,48 +15618,219 @@ $
 	+	1	0
 	+	18	0
 	+	12	23
-	+	8	0
-	+	13	52
 	+	9	0
+	+	13	52
 	+	10	0
+	+	11	0
 	+	13	0
-	+	10	0
+	+	11	0
 	+	18	0
 	+	17	0
 	+	16	0
-	+	10	0
 	+	11	0
+	+	12	0
 	+	7	8
+	+	12	0
+	+	9	0
+	+	13	0
+	+	12	0
+	+	14	0
+	+	8	28
+	+	12	0
+	+	14	0
+
+> ~/python_codeaction_test/requirements.txt
+	*	1726356752	0
+	"	5	7
+	^	5	8
+	.	5	7
+	+	5	7
+
+> ~/python-types/file.py
+	*	1726356734	0
+	"	9	4
+	^	9	9
+	.	9	0
+	+	26	0
+	+	34	24
+	+	14	0
+	+	21	0
+	+	1	0
+	+	14	0
+	+	9	0
+
+> ~/python-types/.envrc
+	*	1726356654	0
+	"	1	0
+	^	2	55
+	.	4	0
+	+	3	49
+	+	4	0
+	+	3	36
+	+	2	54
+	+	4	0
+
+> ~/hateoas/file.py
+	*	1726356293	0
+	"	8	0
+	.	8	0
+	+	11	4
+	+	11	0
+	+	1	0
+	+	8	0
 	+	11	0
 	+	8	0
 
-> ~/bugs/240913.python_autoimport_completion.txt
-	*	1726306303	0
+> ~/file.py
+	*	1726356262	0
+	"	9	17
+	^	9	18
+	.	9	17
+	+	1	0
+	+	9	17
+
+> ~/python_codeaction_test/.envrc
+	*	1726356187	0
+	"	2	0
+	^	3	2
+	.	2	0
+	+	3	0
+	+	2	0
+
+> ~/bugs/bugs.240913.python_autoimport_completion.txt
+	*	1726356165	0
 	"	1	0
-	^	9	4
-	.	9	3
+
+> ~/bugs/240913.python_autoimport_completion.txt
+	*	1726356157	0
+	"	1	0
+	^	9	83
+	.	9	82
 	+	8	51
 	+	6	12
 	+	8	3
 	+	7	0
-	+	10	84
-	+	10	0
+	+	11	84
+	+	11	0
 	+	2	0
 	+	1	0
 	+	3	74
-	+	10	0
+	+	11	0
 	+	3	102
 	+	4	153
 	+	6	0
 	+	3	0
-	+	9	3
+	+	10	3
+	+	9	82
 
-> ~/python_codeaction_test/.envrc
-	*	1726306242	0
+> ~/.config/setup.fish
+	*	1726356031	0
 	"	1	0
-	^	3	2
-	.	3	1
-	+	3	1
+	.	29	0
+	+	6	22
+	+	6	0
+	+	6	5
+	+	6	40
+	+	9	34
+	+	6	0
+	+	6	43
+	+	6	42
+	+	6	0
+	+	6	45
+	+	6	5
+	+	6	0
+	+	6	9
+	+	6	5
+	+	6	0
+	+	6	9
+	+	6	39
+	+	6	9
+	+	6	0
+	+	6	20
+	+	6	19
+	+	6	23
+	+	6	8
+	+	6	23
+	+	6	9
+	+	6	0
+	+	16	1
+	+	6	0
+	+	22	0
+	+	10	0
+	+	10	13
+	+	10	0
+	+	24	21
+	+	24	18
+	+	24	0
+	+	24	42
+	+	24	0
+	+	23	0
+	+	24	0
+	+	6	0
+	+	6	44
+	+	6	0
+	+	6	4
+	+	6	0
+	+	6	7
+	+	6	37
+	+	6	24
+	+	6	7
+	+	6	5
+	+	6	25
+	+	6	13
+	+	6	30
+	+	6	7
+	+	6	0
+	+	6	21
+	+	6	0
+	+	8	0
+	+	9	1
+	+	6	0
+	+	9	0
+	+	8	0
+	+	9	32
+	+	6	23
+	+	6	0
+	+	6	19
+	+	6	0
+	+	6	26
+	+	6	10
+	+	6	5
+	+	6	0
+	+	6	37
+	+	6	0
+	+	6	22
+	+	6	58
+	+	6	0
+	+	7	30
+	+	9	18
+	+	24	0
+	+	25	0
+	+	26	0
+	+	25	29
+	+	26	11
+	+	28	34
+	+	29	0
+	+	10	0
+	+	21	55
+	+	21	0
+	+	13	82
+	+	14	80
+	+	1	0
+	+	11	26
+	+	1	13
+	+	13	12
+	+	22	0
+	+	21	11
+	+	29	12
+	+	1	0
+	+	13	0
+	+	21	0
+	+	29	0
+
+> ~/.config/setup.bash
+	*	1726355997	0
+	"	1	0
 
 > ~/tooling/docs/fd.man
 	*	1726305728	0
@@ -15622,114 +15844,6 @@ $
 	+	1	0
 	+	9	52
 	+	14	0
-
-> ~/.config/setup.fish
-	*	1726262174	0
-	"	1	0
-	^	14	13
-	.	32	12
-	+	7	11
-	+	7	0
-	+	7	22
-	+	7	24
-	+	7	22
-	+	7	0
-	+	7	5
-	+	7	40
-	+	10	34
-	+	7	0
-	+	7	43
-	+	7	42
-	+	7	0
-	+	7	45
-	+	7	5
-	+	7	0
-	+	7	9
-	+	7	5
-	+	7	0
-	+	7	9
-	+	7	39
-	+	7	9
-	+	7	0
-	+	7	20
-	+	7	19
-	+	7	23
-	+	7	8
-	+	7	23
-	+	7	9
-	+	7	0
-	+	18	1
-	+	7	0
-	+	25	0
-	+	11	0
-	+	11	13
-	+	11	0
-	+	27	21
-	+	27	18
-	+	27	0
-	+	27	42
-	+	27	0
-	+	26	0
-	+	27	0
-	+	7	0
-	+	7	44
-	+	7	0
-	+	7	4
-	+	7	0
-	+	7	7
-	+	7	37
-	+	7	24
-	+	7	7
-	+	7	5
-	+	7	25
-	+	7	13
-	+	7	30
-	+	7	7
-	+	7	0
-	+	7	21
-	+	7	0
-	+	9	0
-	+	10	1
-	+	7	0
-	+	10	0
-	+	9	0
-	+	10	32
-	+	7	23
-	+	7	0
-	+	7	19
-	+	7	0
-	+	7	26
-	+	7	10
-	+	7	5
-	+	7	0
-	+	7	37
-	+	7	0
-	+	7	22
-	+	7	58
-	+	7	0
-	+	8	30
-	+	10	18
-	+	27	0
-	+	28	0
-	+	29	0
-	+	28	29
-	+	29	11
-	+	31	34
-	+	32	0
-	+	11	0
-	+	24	55
-	+	24	0
-	+	15	82
-	+	16	80
-	+	2	0
-	+	12	26
-	+	1	13
-	+	14	12
-	+	25	0
-	+	23	11
-	+	32	12
-	a	23	11
-	b	23	12
 
 > ~/.config/fish/config.fish
 	*	1726262021	0
@@ -15874,16 +15988,6 @@ $
 	+	4	31
 	+	3	35
 	+	4	33
-
-> ~/hateoas/file.py
-	*	1726261412	0
-	"	10	8
-	.	11	0
-	+	11	4
-	+	11	0
-	+	1	0
-	+	8	0
-	+	11	0
 
 > ~/python_common/waivek/test_lsp.py
 	*	1726233890	0
@@ -16451,17 +16555,6 @@ $
 > ~/python-types/.env
 	*	1726181671	0
 	"	1	0
-
-> ~/python-types/.envrc
-	*	1726181670	0
-	"	1	0
-	^	2	55
-	.	4	0
-	+	3	49
-	+	4	0
-	+	3	36
-	+	2	54
-	+	4	0
 
 > ~/python-types/pyrightconfig.json
 	*	1726181661	0
@@ -20734,10 +20827,6 @@ $
 	+	29	144
 	+	29	112
 	+	16	19
-
-> ~/.config/setup.bash
-	*	1725019937	0
-	"	1	0
 
 > ~/bash/run-shell-specific-script.bash
 	*	1725011742	0
