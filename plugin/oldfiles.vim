@@ -56,8 +56,7 @@ function! s:RemoveCurrentPathFromList(paths)
 endfunction
 
 function! s:Fzf(source)
-    let l:preview_cmd="bat --color=always --style=plain {}"
-    let l:options = printf('--multi --delimiter=/ --nth -1 --no-sort --preview "%s"', l:preview_cmd)
+    let l:options = '--multi --delimiter=/ --nth -1 --no-sort --preview "bat --color=always --style=plain {}"'
     call fzf#run({
         \ 'source': a:source,
         \ 'sink': 'e',

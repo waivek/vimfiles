@@ -11,23 +11,89 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/search_mode
+~MSle0~/\C\<is_writing_to_stdout\>
 
 # Last Substitute Search Pattern:
-~MSle0&Function\|Operator
+~MSle0&--[a-z-]*
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1727039842,,"q"
+|2,0,1727222812,,"q"
 :q!
-|2,0,1727012864,,"q!"
+|2,0,1727220202,,"q!"
+:pwd
+|2,0,1727132145,,"pwd"
 :term
-|2,0,1727012770,,"term"
+|2,0,1727050163,,"term"
+:h :term
+|2,0,1727049999,,"h :term"
+:'<,'>!
+|2,0,1727049990,,"'<,'>!"
+:23
+|2,0,1727042848,,"23"
+:enew
+|2,0,1727042795,,"enew"
+:e!
+|2,0,1727042793,,"e!"
+:vert term
+|2,0,1727042724,,"vert term"
+:t
+|2,0,1727042721,,"t"
+:Rename fzf-command-samples.txt
+|2,0,1727042553,,"Rename fzf-command-samples.txt"
+:Rename fzf-command-samples.md
+|2,0,1727042522,,"Rename fzf-command-samples.md"
+:qa
+|2,0,1727042034,,"qa"
+:e fd.man
+|2,0,1727041894,,"e fd.man"
+:MRU rg.m
+|2,0,1727041833,,"MRU rg.m"
 :MRU 
-|2,0,1727012753,,"MRU "
+|2,0,1727041828,,"MRU "
+:%sort! n
+|2,0,1727041776,,"%sort! n"
+:%!uniq -c
+|2,0,1727041770,,"%!uniq -c"
+:%sort
+|2,0,1727041767,,"%sort"
+:e common-flags.txt
+|2,0,1727041751,,"e common-flags.txt"
+:diffoff
+|2,0,1727041744,,"diffoff"
+:diffthis
+|2,0,1727041733,,"diffthis"
+:%sort u
+|2,0,1727041725,,"%sort u"
+:Isolate /--[a-z-]*/
+|2,0,1727041715,,"Isolate /--[a-z-]*/"
+:e rg-flags.txt
+|2,0,1727041705,,"e rg-flags.txt"
+: w ~/tmp/fd-flags.txt
+|2,0,1727041696,," w ~/tmp/fd-flags.txt"
+:MRU fd
+|2,0,1727041662,,"MRU fd"
+:g/--[a-z-]*/d
+|2,0,1727041635,,"g/--[a-z-]*/d"
+:v/--/d
+|2,0,1727041609,,"v/--/d"
+:MRU fd.man
+|2,0,1727041598,,"MRU fd.man"
+: w ~/bash/fzf-command-samples.txt
+|2,0,1727040915,," w ~/bash/fzf-command-samples.txt"
+:cd ~
+|2,0,1727040744,,"cd ~"
+:e ~/tmp/output.txt
+|2,0,1727040719,,"e ~/tmp/output.txt"
+:e 
+|2,0,1727040713,,"e "
+: w ~/.vim/tmp/fzf-command-samples.txt
+|2,0,1727040711,," w ~/.vim/tmp/fzf-command-samples.txt"
+:so %
+|2,0,1727040431,,"so %"
 :Rename ripgrep-fd-fzf-flags-cheat-sheet.txt
 |2,0,1727012698,,"Rename ripgrep-fd-fzf-flags-cheat-sheet.txt"
 :e .
@@ -44,8 +110,6 @@ $
 |2,0,1727011953,,"h "
 :h rg.man
 |2,0,1727011948,,"h rg.man"
-:MRU fd.man
-|2,0,1727011685,,"MRU fd.man"
 :e rg.man
 |2,0,1727011465,,"e rg.man"
 :e ~/tooling/docs/fzf.man
@@ -56,12 +120,8 @@ $
 |2,0,1727011437,,"MRU rg.man"
 :MRU alias
 |2,0,1727011178,,"MRU alias"
-:t
-|2,0,1727011158,,"t"
 :e github-copilot/apps.json
 |2,0,1726969126,,"e github-copilot/apps.json"
-:pwd
-|2,0,1726969119,,"pwd"
 :17
 |2,0,1726962056,,"17"
 :e secrets.env
@@ -92,16 +152,12 @@ $
 |2,0,1726355986,,"MRU hel"
 :MRU s
 |2,0,1726355979,,"MRU s"
-:qa
-|2,0,1726355973,,"qa"
 :gg/d
 |2,0,1726355838,,"gg/d"
 :MRU bugs
 |2,0,1726306268,,"MRU bugs"
 :e .envrc
 |2,0,1726306181,,"e .envrc"
-:e 
-|2,0,1726306148,,"e "
 :map \f
 |2,0,1726305957,,"map \\f"
 :e ~/bugs/240913.python_autoimport_completion.txt
@@ -162,8 +218,6 @@ $
 |2,0,1726233380,,"PlugUpdate"
 :bd!
 |2,0,1726233200,,"bd!"
-:enew
-|2,0,1726233142,,"enew"
 :MRU t
 |2,0,1726211643,,"MRU t"
 :MRU tr
@@ -282,8 +336,6 @@ $
 |2,0,1725817697,,"e foo.py"
 :MRU 48:simple-pydantic-error.py
 |2,0,1725817610,,"MRU 48:simple-pydantic-error.py"
-:so %
-|2,0,1725817076,,"so %"
 :edit $MYVIMRC
 |2,0,1725817068,,"edit $MYVIMRC"
 :MRU mappin
@@ -318,8 +370,6 @@ $
 |2,0,1725815768,,"Echo \"Hello World!\""
 :diffput
 |2,0,1725813560,,"diffput"
-:diffthis
-|2,0,1725813545,,"diffthis"
 :e truncatediff.py
 |2,0,1725813540,,"e truncatediff.py"
 :copen
@@ -482,8 +532,6 @@ $
 |2,0,1725563904,,"let g:cu"
 :term ++rows=80
 |2,0,1725563677,,"term ++rows=80"
-:h :term
-|2,0,1725563637,,"h :term"
 :resize 80
 |2,0,1725563604,,"resize 80"
 :80term 
@@ -674,8 +722,6 @@ $
 |2,0,1725482164,,"MRU bett"
 :Jlast
 |2,0,1725468761,,"Jlast"
-:e!
-|2,0,1725468759,,"e!"
 :echo getjumplist()[0][59]
 |2,0,1725468381,,"echo getjumplist()[0][59]"
 :echo getjumplist()[0][61]
@@ -714,12 +760,8 @@ $
 |2,0,1725458059,,"verbose pwd"
 :Gro
 |2,0,1725457985,,"Gro"
-:%sort
-|2,0,1725457964,,"%sort"
 :%
 |2,0,1725457962,,"%"
-:%sort u
-|2,0,1725457917,,"%sort u"
 :set verbosefile?
 |2,0,1725457907,,"set verbosefile?"
 :echo &verbosefile
@@ -1406,8 +1448,6 @@ $
 |2,0,1724111651,,"e hello-go/oldfiles.go"
 :e port.py
 |2,0,1724109074,,"e port.py"
-:vert term
-|2,0,1724108732,,"vert term"
 :b ~/python_common/waivek/log.py
 |2,0,1724107924,,"b ~/python_common/waivek/log.py"
 :grep
@@ -3480,8 +3520,6 @@ $
 |2,0,1720865769,,"e alias.sh"
 :MRU cu
 |2,0,1720844967,,"MRU cu"
-:MRU fd
-|2,0,1720844853,,"MRU fd"
 :MRU cust
 |2,0,1720844849,,"MRU cust"
 :e ~/.config/bash_completions/custom.bash
@@ -4168,8 +4206,6 @@ $
 |2,0,1718198909,,"g/0\\.000/d"
 :g/0\.0000/d
 |2,0,1718198898,,"g/0\\.0000/d"
-:%sort! n
-|2,0,1718198874,,"%sort! n"
 :%sort n
 |2,0,1718198871,,"%sort n"
 :%!sort f
@@ -4554,8 +4590,6 @@ $
 |2,0,1717882526,,"Renam"
 :MRU us
 |2,0,1717882401,,"MRU us"
-:%!uniq -c
-|2,0,1717856608,,"%!uniq -c"
 :%sort 
 |2,0,1717856577,,"%sort "
 :e windows-desktop-css-paths.txt
@@ -7472,8 +7506,6 @@ $
 |2,0,1694701482,,"e clips.py"
 :e ap
 |2,0,1694701478,,"e ap"
-:diffoff
-|2,0,1694701405,,"diffoff"
 :find videos.sql
 |2,0,1694701316,,"find videos.sql"
 :esche
@@ -7498,8 +7530,6 @@ $
 |2,0,1694419337,,"terminal cd /home/vivek/python_common"
 :vert terminal cd /home/vivek/python_common
 |2,0,1694419327,,"vert terminal cd /home/vivek/python_common"
-:'<,'>!
-|2,0,1694419236,,"'<,'>!"
 :MRU hell
 |2,0,1694419109,,"MRU hell"
 :echo expand("%:h:t")
@@ -8272,8 +8302,6 @@ $
 |2,0,1693323944,,"MRU 61:vivek/frontend/src/shims-vue.d.ts"
 :MRU 116:/home/vivek/Twitch/coffee-vps/code/preview_db.py
 |2,0,1693323939,,"MRU 116:/home/vivek/Twitch/coffee-vps/code/preview_db.py"
-:cd ~
-|2,0,1693323931,,"cd ~"
 :MRU 248:/home/vivek/Twitch/coffee-vps/code/tmp/yt_videos.py
 |2,0,1693323927,,"MRU 248:/home/vivek/Twitch/coffee-vps/code/tmp/yt_videos.py"
 :MRU 14:code/.direnv/python-3.10.12/lib/python3.10/site-packages/chat_downloader/chat_downloader.py
@@ -10470,6 +10498,62 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+? timer\..*\"sec3\"
+|2,1,1727132060,,"timer\\..*\\\"sec3\\\""
+? timer\..*\"append\"
+|2,1,1727132059,,"timer\\..*\\\"append\\\""
+? timer\..*\"print\"
+|2,1,1727132059,,"timer\\..*\\\"print\\\""
+? timer\..*\"for\"
+|2,1,1727131990,,"timer\\..*\\\"for\\\""
+? timer\..*\"sec2\"
+|2,1,1727131989,,"timer\\..*\\\"sec2\\\""
+? @$
+|2,1,1727131166,,"@$"
+?/count
+|2,1,1727050452,47,"count"
+?/wrap
+|2,1,1727050004,47,"wrap"
+?/fzf
+|2,1,1727042862,47,"fzf"
+? ^\s*$\n\s*$
+|2,1,1727042558,,"^\\s*$\\n\\s*$"
+?/iglob
+|2,1,1727042146,47,"iglob"
+?/--color
+|2,1,1727041997,47,"--color"
+?/--follow
+|2,1,1727041993,47,"--follow"
+?/--glob
+|2,1,1727041976,47,"--glob"
+?/--smart-case
+|2,1,1727041961,47,"--smart-case"
+?/--ignore-case
+|2,1,1727041923,47,"--ignore-case"
+?/--ignore-file
+|2,1,1727041903,47,"--ignore-file"
+?/--max-depth
+|2,1,1727041884,47,"--max-depth"
+?/--one-file-system
+|2,1,1727041863,47,"--one-file-system"
+?/--one-
+|2,1,1727041855,47,"--one-"
+?/--threads
+|2,1,1727041849,47,"--threads"
+?/threads/
+|2,1,1727041845,47,"threads/"
+?/path-separator
+|2,1,1727041836,47,"path-separator"
+? --[a-z-]*
+|2,1,1727041715,,"--[a-z-]*"
+?/--type
+|2,1,1727041666,47,"--type"
+? --
+|2,1,1727041609,,"--"
+?/fixed
+|2,1,1727041516,47,"fixed"
+?/eact
+|2,1,1727040377,47,"eact"
 ?/search_mode
 |2,1,1727039324,47,"search_mode"
 ?/exact
@@ -10478,12 +10562,8 @@ $
 |2,1,1727012931,47,"quote"
 ?/exclude
 |2,1,1727012189,47,"exclude"
-? @$
-|2,1,1727012166,,"@$"
 ?/\<py
 |2,1,1727012004,47,"\\<py"
-?/--type
-|2,1,1727011965,47,"--type"
 ?/-e[x ]
 |2,1,1727011909,47,"-e[x ]"
 ?/extension
@@ -10554,8 +10634,6 @@ $
 |2,1,1725916339,47,"is_tupl"
 ?/\(def\|class\)\s\+\w*is_tup
 |2,1,1725916208,47,"\\(def\\|class\\)\\s\\+\\w*is_tup"
-?/fzf
-|2,1,1725914731,47,"fzf"
 ?/+
 |2,1,1725824740,47,"+"
 ?/ljust
@@ -10590,8 +10668,6 @@ $
 |2,1,1725816829,47,"separator"
 ?/\(def\|class\)\s\+\w*trunc
 |2,1,1725816389,47,"\\(def\\|class\\)\\s\\+\\w*trunc"
-? ^\s*$\n\s*$
-|2,1,1725816363,,"^\\s*$\\n\\s*$"
 ?/\(def\|class\)\s\+\w*color
 |2,1,1725816197,47,"\\(def\\|class\\)\\s\\+\\w*color"
 ?/\(def\|class\)\s\+\w*truncate
@@ -11056,8 +11132,6 @@ $
 |2,1,1723741995,47,"fold"
 ?/indent
 |2,1,1723677012,47,"indent"
-?/wrap
-|2,1,1723676974,47,"wrap"
 ?/--with-nth
 |2,1,1723676929,47,"--with-nth"
 ?/--with-
@@ -12926,8 +13000,6 @@ $
 |2,1,1716705925,47,"\\.content"
 ?/.content
 |2,1,1716704603,47,".content"
-?/fixed
-|2,1,1716704205,47,"fixed"
 ?/overflow
 |2,1,1716703946,47,"overflow"
 ?/45
@@ -13220,8 +13292,6 @@ $
 |2,1,1714990541,47,"\\C\\<-p\\>"
 ?/--path
 |2,1,1714990512,47,"--path"
-?/count
-|2,1,1714990382,47,"count"
 ?/\C\<-l\>
 |2,1,1714990316,47,"\\C\\<-l\\>"
 ?/\C\<-f\>
@@ -14282,8 +14352,6 @@ $
 |2,1,1693173173,47,"install"
 ?/comp
 |2,1,1693172890,47,"comp"
-?/iglob
-|2,1,1693132750,47,"iglob"
 ?/_Z
 |2,1,1693128422,47,"_Z"
 ?/PROMPT_COMMAND
@@ -15132,6 +15200,12 @@ $
 |2,2,1688309303,,"v:oldfiles"
 
 # Input Line History (newest to oldest):
+@sec3
+|2,3,1727131981,,"sec3"
+@sec2
+|2,3,1727131974,,"sec2"
+@for
+|2,3,1727131963,,"for"
 @string
 |2,3,1725565865,,"string"
 @eval
@@ -15318,71 +15392,39 @@ $
 |2,4,1693311567,,"cont"
 
 # Registers:
-""0	CHAR	0
-	fuzzy
-|3,1,0,0,1,0,1727039834,"fuzzy"
-"1	LINE	0
-	
-	
-|3,0,1,1,2,0,1727012745,"",""
+"0	LINE	0
+	        timer.print("append")
+|3,0,0,1,1,0,1727132060,"        timer.print(\"append\")"
+""1	LINE	0
+	    timer.print("sec3")
+|3,1,1,1,1,0,1727132060,"    timer.print(\"sec3\")"
 "2	LINE	0
-	[8] Search in files with a specific name and extension, and ignore case, and show line numbers
-	
-	    fd --name README.md --case-sensitive --line-number
-	    rg --file README.md --case-sensitive --line-number
-	
-	[9] Search in files with a specific name and extension, and ignore case, and show line numbers, and show line numbers with color
-	
-	    fd --name README.md --case-sensitive --line-number --color=always
-	    rg --file README.md --case-sensitive --line-number --color=always
-	
-	[10] Search in files with a specific name and extension, and ignore case, and show line numbers
-|3,0,2,1,11,0,1727012740,"[8] Search in files with a specific name and extension, and ignore case, and show line numbers","","    fd --name README.md --case-sensitive --line-number","    rg --file README.md --case-sensitive --line-number","","[9] Search in files with a specific name and extension, and ignore case, and show line numbers, and show line numbers with color","","    fd --name README.md --case-sensitive --line-number --color=always",>71
-|<"    rg --file README.md --case-sensitive --line-number --color=always","","[10] Search in files with a specific name and extension, and ignore case, and show line numbers"
+	    timer.start("sec3")
+|3,0,2,1,1,0,1727132060,"    timer.start(\"sec3\")"
 "3	LINE	0
-	[5] Search in files with a specific name
-	
-	    fd --name README
-	    rg --file README
-	
-	[6] Search in files with a specific name and extension
-	
-	    fd --name README.md
-	    rg --file README.md
-	
-	[7] Search in files with a specific name and extension, and ignore case
-	
-	    fd --name README.md --case-sensitive
-	    rg --file README.md --case-sensitive
-	
-|3,0,3,1,15,0,1727012734,"[5] Search in files with a specific name","","    fd --name README","    rg --file README","","[6] Search in files with a specific name and extension","","    fd --name README.md","    rg --file README.md","","[7] Search in files with a specific name and extension, and ignore case","","    fd --name README.md --case-sensitive","    rg --file README.md --case-sensitive",""
+	        timer.print("append")
+|3,0,3,1,1,0,1727132059,"        timer.print(\"append\")"
 "4	LINE	0
-	[4] Search in hidden files
-	
-	    fd --hidden
-	    rg --hidden
-	
-|3,0,4,1,5,0,1727012722,"[4] Search in hidden files","","    fd --hidden","    rg --hidden",""
+	        timer.start("append")
+|3,0,4,1,1,0,1727132059,"        timer.start(\"append\")"
 "5	LINE	0
-	
-	[3] Word Boundaries
-|3,0,5,1,2,0,1727012492,"","[3] Word Boundaries"
+	        timer.print("print")
+|3,0,5,1,1,0,1727132059,"        timer.print(\"print\")"
 "6	LINE	0
-	
-	    fd
-|3,0,6,1,2,0,1727012490,"","    fd"
+	        timer.start("print")
+|3,0,6,1,1,0,1727132059,"        timer.start(\"print\")"
 "7	LINE	0
-	
-|3,0,7,1,1,0,1726962161,""
+	    timer.print("for")
+|3,0,7,1,1,0,1727131990,"    timer.print(\"for\")"
 "8	LINE	0
-	    [elabo
-|3,0,8,1,1,0,1726962160,"    [elabo"
+	    timer.start("for")
+|3,0,8,1,1,0,1727131990,"    timer.start(\"for\")"
 "9	LINE	0
-	    Otherw
-|3,0,9,1,1,0,1726962148,"    Otherw"
+	    timer.print("sec2")
+|3,0,9,1,1,0,1727131989,"    timer.print(\"sec2\")"
 "a	CHAR	0
-	Tabularize /=/l1c1l1
-|3,0,10,0,1,0,1726969204,"Tabularize /=/l1c1l1"
+	0d;d;
+|3,0,10,0,1,0,1727050295,"0d;d;"
 "i	CHAR	0
 	ado_up()jk:q!
 |3,0,18,0,1,0,1724200553,"ado_up()jk:q!"
@@ -15403,257 +15445,714 @@ $
 	set verbose=20 | quit
 |3,0,28,1,2,0,1725457945,"set verbosefile=verbose-file.txt","set verbose=20 | quit"
 "-	CHAR	0
-	fuzzy
-|3,0,36,0,1,0,1727039822,"fuzzy"
+	)
+|3,0,36,0,1,0,1727132016,")"
 
 # File marks:
-'0  42  6  ~/.config/atuin/config.toml
-|4,48,42,6,1727039842,"~/.config/atuin/config.toml"
-'1  41  1  ~/.config/atuin/config.toml
-|4,49,41,1,1727039790,"~/.config/atuin/config.toml"
-'2  41  1  ~/.config/atuin/config.toml
-|4,50,41,1,1727039790,"~/.config/atuin/config.toml"
-'3  41  22  ~/.config/atuin/config.toml
-|4,51,41,22,1727039675,"~/.config/atuin/config.toml"
-'4  41  22  ~/.config/atuin/config.toml
-|4,52,41,22,1727039675,"~/.config/atuin/config.toml"
-'5  41  20  ~/.config/atuin/config.toml
-|4,53,41,20,1727039638,"~/.config/atuin/config.toml"
-'6  41  20  ~/.config/atuin/config.toml
-|4,54,41,20,1727039638,"~/.config/atuin/config.toml"
-'7  41  20  ~/.config/atuin/config.toml
-|4,55,41,20,1727039638,"~/.config/atuin/config.toml"
-'8  41  20  ~/.config/atuin/config.toml
-|4,56,41,20,1727039638,"~/.config/atuin/config.toml"
-'9  41  18  ~/.config/atuin/config.toml
-|4,57,41,18,1727039400,"~/.config/atuin/config.toml"
+'0  1  0  ~/prompts/240925.slow_curl_requests.txt
+|4,48,1,0,1727222813,"~/prompts/240925.slow_curl_requests.txt"
+'1  1  0  /root/.curlrc
+|4,49,1,0,1727220203,"/root/.curlrc"
+'2  1  0  /root/.curlrc
+|4,50,1,0,1727220203,"/root/.curlrc"
+'3  58  38  ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/requests/api.py
+|4,51,58,38,1727220076,"~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/requests/api.py"
+'4  58  38  ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/requests/api.py
+|4,52,58,38,1727220076,"~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/requests/api.py"
+'5  58  38  ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/requests/api.py
+|4,53,58,38,1727220076,"~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/requests/api.py"
+'6  58  38  ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/requests/api.py
+|4,54,58,38,1727220076,"~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/requests/api.py"
+'7  16  0  ~/pyscripts/tmp_profile_requests.py
+|4,55,16,0,1727220034,"~/pyscripts/tmp_profile_requests.py"
+'8  16  0  ~/pyscripts/tmp_profile_requests.py
+|4,56,16,0,1727220034,"~/pyscripts/tmp_profile_requests.py"
+'9  16  0  ~/pyscripts/tmp_profile_requests.py
+|4,57,16,0,1727220034,"~/pyscripts/tmp_profile_requests.py"
 
 # Jumplist (newest first):
--'  42  6  ~/.config/atuin/config.toml
-|4,39,42,6,1727039842,"~/.config/atuin/config.toml"
--'  41  22  ~/.config/atuin/config.toml
-|4,39,41,22,1727039824,"~/.config/atuin/config.toml"
--'  1  0  ~/.config/atuin/config.toml
-|4,39,1,0,1727039820,"~/.config/atuin/config.toml"
--'  41  1  ~/.config/atuin/config.toml
-|4,39,41,1,1727039790,"~/.config/atuin/config.toml"
--'  1  0  ~/.config/atuin/config.toml
-|4,39,1,0,1727039783,"~/.config/atuin/config.toml"
--'  41  22  ~/.config/atuin/config.toml
-|4,39,41,22,1727039675,"~/.config/atuin/config.toml"
--'  1  0  ~/.config/atuin/config.toml
-|4,39,1,0,1727039666,"~/.config/atuin/config.toml"
--'  41  20  ~/.config/atuin/config.toml
-|4,39,41,20,1727039638,"~/.config/atuin/config.toml"
--'  1  0  ~/.config/atuin/config.toml
-|4,39,1,0,1727039631,"~/.config/atuin/config.toml"
--'  41  18  ~/.config/atuin/config.toml
-|4,39,41,18,1727039400,"~/.config/atuin/config.toml"
--'  1  0  ~/.config/atuin/config.toml
-|4,39,1,0,1727039324,"~/.config/atuin/config.toml"
--'  206  0  ~/.config/atuin/config.toml
-|4,39,206,0,1727012960,"~/.config/atuin/config.toml"
--'  205  0  ~/.config/atuin/config.toml
-|4,39,205,0,1727012960,"~/.config/atuin/config.toml"
--'  205  0  ~/.config/atuin/config.toml
-|4,39,205,0,1727012960,"~/.config/atuin/config.toml"
--'  205  0  ~/.config/atuin/config.toml
-|4,39,205,0,1727012960,"~/.config/atuin/config.toml"
--'  205  0  ~/.config/atuin/config.toml
-|4,39,205,0,1727012960,"~/.config/atuin/config.toml"
--'  205  0  ~/.config/atuin/config.toml
-|4,39,205,0,1727012960,"~/.config/atuin/config.toml"
--'  58  50  ~/.config/atuin/config.toml
-|4,39,58,50,1727012934,"~/.config/atuin/config.toml"
--'  57  50  ~/.config/atuin/config.toml
-|4,39,57,50,1727012934,"~/.config/atuin/config.toml"
--'  57  50  ~/.config/atuin/config.toml
-|4,39,57,50,1727012934,"~/.config/atuin/config.toml"
--'  57  50  ~/.config/atuin/config.toml
-|4,39,57,50,1727012934,"~/.config/atuin/config.toml"
--'  57  50  ~/.config/atuin/config.toml
-|4,39,57,50,1727012934,"~/.config/atuin/config.toml"
--'  57  50  ~/.config/atuin/config.toml
-|4,39,57,50,1727012934,"~/.config/atuin/config.toml"
--'  41  2  ~/.config/atuin/config.toml
-|4,39,41,2,1727012933,"~/.config/atuin/config.toml"
--'  1  0  ~/.config/atuin/config.toml
-|4,39,1,0,1727012920,"~/.config/atuin/config.toml"
--'  7  18  ~/tooling/ripgrep-fd-fzf-flags-cheat-sheet.txt
-|4,39,7,18,1727012902,"~/tooling/ripgrep-fd-fzf-flags-cheat-sheet.txt"
--'  7  18  ~/tooling/ripgrep-fd-fzf-flags-cheat-sheet.txt
-|4,39,7,18,1727012902,"~/tooling/ripgrep-fd-fzf-flags-cheat-sheet.txt"
--'  7  18  ~/tooling/ripgrep-fd-fzf-flags-cheat-sheet.txt
-|4,39,7,18,1727012902,"~/tooling/ripgrep-fd-fzf-flags-cheat-sheet.txt"
--'  7  18  ~/tooling/ripgrep-fd-fzf-flags-cheat-sheet.txt
-|4,39,7,18,1727012902,"~/tooling/ripgrep-fd-fzf-flags-cheat-sheet.txt"
--'  7  18  ~/tooling/ripgrep-fd-fzf-flags-cheat-sheet.txt
-|4,39,7,18,1727012902,"~/tooling/ripgrep-fd-fzf-flags-cheat-sheet.txt"
--'  7  18  ~/tooling/ripgrep-fd-fzf-flags-cheat-sheet.txt
-|4,39,7,18,1727012902,"~/tooling/ripgrep-fd-fzf-flags-cheat-sheet.txt"
--'  7  18  ~/tooling/ripgrep-fd-fzf-flags-cheat-sheet.txt
-|4,39,7,18,1727012902,"~/tooling/ripgrep-fd-fzf-flags-cheat-sheet.txt"
--'  1  4  ~/tooling/ripgrep-fd-fzf-flags-cheat-sheet.txt
-|4,39,1,4,1727012770,"~/tooling/ripgrep-fd-fzf-flags-cheat-sheet.txt"
--'  1  4  ~/tooling/ripgrep-fd-fzf-flags-cheat-sheet.txt
-|4,39,1,4,1727012770,"~/tooling/ripgrep-fd-fzf-flags-cheat-sheet.txt"
--'  1  4  ~/tooling/ripgrep-fd-fzf-flags-cheat-sheet.txt
-|4,39,1,4,1727012770,"~/tooling/ripgrep-fd-fzf-flags-cheat-sheet.txt"
--'  1  4  ~/tooling/ripgrep-fd-fzf-flags-cheat-sheet.txt
-|4,39,1,4,1727012770,"~/tooling/ripgrep-fd-fzf-flags-cheat-sheet.txt"
--'  1  4  ~/tooling/ripgrep-fd-fzf-flags-cheat-sheet.txt
-|4,39,1,4,1727012770,"~/tooling/ripgrep-fd-fzf-flags-cheat-sheet.txt"
--'  1  4  ~/tooling/ripgrep-fd-fzf-flags-cheat-sheet.txt
-|4,39,1,4,1727012770,"~/tooling/ripgrep-fd-fzf-flags-cheat-sheet.txt"
--'  1  4  ~/tooling/ripgrep-fd-fzf-flags-cheat-sheet.txt
-|4,39,1,4,1727012770,"~/tooling/ripgrep-fd-fzf-flags-cheat-sheet.txt"
--'  1  0  ~/tooling/ripgrep-fd-flags-cheat-sheet.txt
-|4,39,1,0,1727012698,"~/tooling/ripgrep-fd-flags-cheat-sheet.txt"
--'  1  0  ~/tooling/ripgrep-fd-flags-cheat-sheet.txt
-|4,39,1,0,1727012698,"~/tooling/ripgrep-fd-flags-cheat-sheet.txt"
--'  1  0  ~/tooling/ripgrep-fd-flags-cheat-sheet.txt
-|4,39,1,0,1727012698,"~/tooling/ripgrep-fd-flags-cheat-sheet.txt"
--'  1  0  ~/tooling/ripgrep-fd-flags-cheat-sheet.txt
-|4,39,1,0,1727012698,"~/tooling/ripgrep-fd-flags-cheat-sheet.txt"
--'  1  0  ~/tooling/ripgrep-fd-flags-cheat-sheet.txt
-|4,39,1,0,1727012698,"~/tooling/ripgrep-fd-flags-cheat-sheet.txt"
--'  1  0  ~/tooling/ripgrep-fd-flags-cheat-sheet.txt
-|4,39,1,0,1727012698,"~/tooling/ripgrep-fd-flags-cheat-sheet.txt"
--'  1  0  ~/tooling/ripgrep-fd-flags-cheat-sheet.txt
-|4,39,1,0,1727012698,"~/tooling/ripgrep-fd-flags-cheat-sheet.txt"
--'  1  0  ~/bash/pwd-oldfiles.bash
-|4,39,1,0,1727012540,"~/bash/pwd-oldfiles.bash"
--'  1  0  ~/bash/pwd-oldfiles.bash
-|4,39,1,0,1727012540,"~/bash/pwd-oldfiles.bash"
--'  1  0  ~/bash/pwd-oldfiles.bash
-|4,39,1,0,1727012540,"~/bash/pwd-oldfiles.bash"
--'  1  0  ~/bash/pwd-oldfiles.bash
-|4,39,1,0,1727012540,"~/bash/pwd-oldfiles.bash"
--'  1  0  ~/bash/pwd-oldfiles.bash
-|4,39,1,0,1727012540,"~/bash/pwd-oldfiles.bash"
--'  1  0  ~/bash/pwd-oldfiles.bash
-|4,39,1,0,1727012540,"~/bash/pwd-oldfiles.bash"
--'  1  0  ~/bash/pwd-oldfiles.bash
-|4,39,1,0,1727012540,"~/bash/pwd-oldfiles.bash"
--'  1  0  ~/bash/pwd-oldfiles.bash
-|4,39,1,0,1727012540,"~/bash/pwd-oldfiles.bash"
--'  12  4  ~/tooling/ripgrep-fd-flags-cheat-sheet.txt
-|4,39,12,4,1727012494,"~/tooling/ripgrep-fd-flags-cheat-sheet.txt"
--'  12  4  ~/tooling/ripgrep-fd-flags-cheat-sheet.txt
-|4,39,12,4,1727012494,"~/tooling/ripgrep-fd-flags-cheat-sheet.txt"
--'  12  4  ~/tooling/ripgrep-fd-flags-cheat-sheet.txt
-|4,39,12,4,1727012494,"~/tooling/ripgrep-fd-flags-cheat-sheet.txt"
--'  12  4  ~/tooling/ripgrep-fd-flags-cheat-sheet.txt
-|4,39,12,4,1727012494,"~/tooling/ripgrep-fd-flags-cheat-sheet.txt"
--'  12  4  ~/tooling/ripgrep-fd-flags-cheat-sheet.txt
-|4,39,12,4,1727012494,"~/tooling/ripgrep-fd-flags-cheat-sheet.txt"
--'  12  4  ~/tooling/ripgrep-fd-flags-cheat-sheet.txt
-|4,39,12,4,1727012494,"~/tooling/ripgrep-fd-flags-cheat-sheet.txt"
--'  12  4  ~/tooling/ripgrep-fd-flags-cheat-sheet.txt
-|4,39,12,4,1727012494,"~/tooling/ripgrep-fd-flags-cheat-sheet.txt"
--'  12  4  ~/tooling/ripgrep-fd-flags-cheat-sheet.txt
-|4,39,12,4,1727012494,"~/tooling/ripgrep-fd-flags-cheat-sheet.txt"
--'  12  4  ~/tooling/ripgrep-fd-flags-cheat-sheet.txt
-|4,39,12,4,1727012494,"~/tooling/ripgrep-fd-flags-cheat-sheet.txt"
--'  1  0  ~/tooling/ripgrep-fd-flags-cheat-sheet.txt
-|4,39,1,0,1727012465,"~/tooling/ripgrep-fd-flags-cheat-sheet.txt"
--'  1  0  ~/tooling/ripgrep-fd-flags-cheat-sheet.txt
-|4,39,1,0,1727012465,"~/tooling/ripgrep-fd-flags-cheat-sheet.txt"
--'  1251  40  ~/tooling/docs/rg.man
-|4,39,1251,40,1727012213,"~/tooling/docs/rg.man"
--'  1251  40  ~/tooling/docs/rg.man
-|4,39,1251,40,1727012213,"~/tooling/docs/rg.man"
--'  1251  40  ~/tooling/docs/rg.man
-|4,39,1251,40,1727012213,"~/tooling/docs/rg.man"
--'  1251  40  ~/tooling/docs/rg.man
-|4,39,1251,40,1727012213,"~/tooling/docs/rg.man"
--'  1251  40  ~/tooling/docs/rg.man
-|4,39,1251,40,1727012213,"~/tooling/docs/rg.man"
--'  1251  40  ~/tooling/docs/rg.man
-|4,39,1251,40,1727012213,"~/tooling/docs/rg.man"
--'  1251  40  ~/tooling/docs/rg.man
-|4,39,1251,40,1727012213,"~/tooling/docs/rg.man"
--'  1251  40  ~/tooling/docs/rg.man
-|4,39,1251,40,1727012213,"~/tooling/docs/rg.man"
--'  1251  40  ~/tooling/docs/rg.man
-|4,39,1251,40,1727012213,"~/tooling/docs/rg.man"
--'  1251  40  ~/tooling/docs/rg.man
-|4,39,1251,40,1727012213,"~/tooling/docs/rg.man"
--'  1233  67  ~/tooling/docs/rg.man
-|4,39,1233,67,1727012208,"~/tooling/docs/rg.man"
--'  1228  49  ~/tooling/docs/rg.man
-|4,39,1228,49,1727012208,"~/tooling/docs/rg.man"
--'  1233  67  ~/tooling/docs/rg.man
-|4,39,1233,67,1727012208,"~/tooling/docs/rg.man"
--'  1228  49  ~/tooling/docs/rg.man
-|4,39,1228,49,1727012208,"~/tooling/docs/rg.man"
--'  1233  67  ~/tooling/docs/rg.man
-|4,39,1233,67,1727012208,"~/tooling/docs/rg.man"
--'  1228  49  ~/tooling/docs/rg.man
-|4,39,1228,49,1727012208,"~/tooling/docs/rg.man"
--'  1233  67  ~/tooling/docs/rg.man
-|4,39,1233,67,1727012208,"~/tooling/docs/rg.man"
--'  1228  49  ~/tooling/docs/rg.man
-|4,39,1228,49,1727012208,"~/tooling/docs/rg.man"
--'  1233  67  ~/tooling/docs/rg.man
-|4,39,1233,67,1727012208,"~/tooling/docs/rg.man"
--'  1228  49  ~/tooling/docs/rg.man
-|4,39,1228,49,1727012208,"~/tooling/docs/rg.man"
--'  1233  67  ~/tooling/docs/rg.man
-|4,39,1233,67,1727012208,"~/tooling/docs/rg.man"
--'  1228  49  ~/tooling/docs/rg.man
-|4,39,1228,49,1727012208,"~/tooling/docs/rg.man"
--'  1233  67  ~/tooling/docs/rg.man
-|4,39,1233,67,1727012208,"~/tooling/docs/rg.man"
--'  1228  49  ~/tooling/docs/rg.man
-|4,39,1228,49,1727012208,"~/tooling/docs/rg.man"
--'  1233  67  ~/tooling/docs/rg.man
-|4,39,1233,67,1727012208,"~/tooling/docs/rg.man"
--'  1228  49  ~/tooling/docs/rg.man
-|4,39,1228,49,1727012208,"~/tooling/docs/rg.man"
--'  1233  67  ~/tooling/docs/rg.man
-|4,39,1233,67,1727012208,"~/tooling/docs/rg.man"
--'  1228  49  ~/tooling/docs/rg.man
-|4,39,1228,49,1727012208,"~/tooling/docs/rg.man"
--'  1233  67  ~/tooling/docs/rg.man
-|4,39,1233,67,1727012208,"~/tooling/docs/rg.man"
--'  1228  49  ~/tooling/docs/rg.man
-|4,39,1228,49,1727012208,"~/tooling/docs/rg.man"
--'  949  38  ~/tooling/docs/rg.man
-|4,39,949,38,1727012207,"~/tooling/docs/rg.man"
--'  949  38  ~/tooling/docs/rg.man
-|4,39,949,38,1727012207,"~/tooling/docs/rg.man"
--'  949  38  ~/tooling/docs/rg.man
-|4,39,949,38,1727012207,"~/tooling/docs/rg.man"
--'  949  38  ~/tooling/docs/rg.man
-|4,39,949,38,1727012207,"~/tooling/docs/rg.man"
--'  949  38  ~/tooling/docs/rg.man
-|4,39,949,38,1727012207,"~/tooling/docs/rg.man"
+-'  1  0  ~/prompts/240925.slow_curl_requests.txt
+|4,39,1,0,1727222813,"~/prompts/240925.slow_curl_requests.txt"
+-'  1  0  /root/.curlrc
+|4,39,1,0,1727220203,"/root/.curlrc"
+-'  1  0  /root/.curlrc
+|4,39,1,0,1727220203,"/root/.curlrc"
+-'  58  38  ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/requests/api.py
+|4,39,58,38,1727220076,"~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/requests/api.py"
+-'  58  38  ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/requests/api.py
+|4,39,58,38,1727220076,"~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/requests/api.py"
+-'  58  38  ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/requests/api.py
+|4,39,58,38,1727220076,"~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/requests/api.py"
+-'  73  11  ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/requests/api.py
+|4,39,73,11,1727220064,"~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/requests/api.py"
+-'  73  11  ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/requests/api.py
+|4,39,73,11,1727220064,"~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/requests/api.py"
+-'  73  11  ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/requests/api.py
+|4,39,73,11,1727220064,"~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/requests/api.py"
+-'  12  24  ~/pyscripts/tmp_profile_requests.py
+|4,39,12,24,1727220060,"~/pyscripts/tmp_profile_requests.py"
+-'  12  24  ~/pyscripts/tmp_profile_requests.py
+|4,39,12,24,1727220060,"~/pyscripts/tmp_profile_requests.py"
+-'  12  24  ~/pyscripts/tmp_profile_requests.py
+|4,39,12,24,1727220060,"~/pyscripts/tmp_profile_requests.py"
+-'  1  0  ~/pyscripts/tmp_profile_requests.py
+|4,39,1,0,1727220056,"~/pyscripts/tmp_profile_requests.py"
+-'  1  0  ~/pyscripts/tmp_profile_requests.py
+|4,39,1,0,1727220056,"~/pyscripts/tmp_profile_requests.py"
+-'  1  0  ~/pyscripts/tmp_profile_requests.py
+|4,39,1,0,1727220056,"~/pyscripts/tmp_profile_requests.py"
+-'  16  0  ~/pyscripts/tmp_profile_requests.py
+|4,39,16,0,1727220034,"~/pyscripts/tmp_profile_requests.py"
+-'  16  0  ~/pyscripts/tmp_profile_requests.py
+|4,39,16,0,1727220034,"~/pyscripts/tmp_profile_requests.py"
+-'  16  0  ~/pyscripts/tmp_profile_requests.py
+|4,39,16,0,1727220034,"~/pyscripts/tmp_profile_requests.py"
+-'  16  0  ~/pyscripts/tmp_profile_requests.py
+|4,39,16,0,1727220034,"~/pyscripts/tmp_profile_requests.py"
+-'  1  0  ~/pyscripts/tmp_profile_requests.py
+|4,39,1,0,1727220020,"~/pyscripts/tmp_profile_requests.py"
+-'  1  24  ~/tooling/json-sqlite-third-party-tools.txt
+|4,39,1,24,1727219997,"~/tooling/json-sqlite-third-party-tools.txt"
+-'  1  24  ~/tooling/json-sqlite-third-party-tools.txt
+|4,39,1,24,1727219997,"~/tooling/json-sqlite-third-party-tools.txt"
+-'  1  24  ~/tooling/json-sqlite-third-party-tools.txt
+|4,39,1,24,1727219997,"~/tooling/json-sqlite-third-party-tools.txt"
+-'  1  24  ~/tooling/json-sqlite-third-party-tools.txt
+|4,39,1,24,1727219997,"~/tooling/json-sqlite-third-party-tools.txt"
+-'  1  24  ~/tooling/json-sqlite-third-party-tools.txt
+|4,39,1,24,1727219997,"~/tooling/json-sqlite-third-party-tools.txt"
+-'  4  8  ~/tooling/python-third-party-libs-to-grok.txt
+|4,39,4,8,1727219973,"~/tooling/python-third-party-libs-to-grok.txt"
+-'  4  8  ~/tooling/python-third-party-libs-to-grok.txt
+|4,39,4,8,1727219973,"~/tooling/python-third-party-libs-to-grok.txt"
+-'  4  8  ~/tooling/python-third-party-libs-to-grok.txt
+|4,39,4,8,1727219973,"~/tooling/python-third-party-libs-to-grok.txt"
+-'  4  8  ~/tooling/python-third-party-libs-to-grok.txt
+|4,39,4,8,1727219973,"~/tooling/python-third-party-libs-to-grok.txt"
+-'  4  8  ~/tooling/python-third-party-libs-to-grok.txt
+|4,39,4,8,1727219973,"~/tooling/python-third-party-libs-to-grok.txt"
+-'  4  8  ~/tooling/python-third-party-libs-to-grok.txt
+|4,39,4,8,1727219973,"~/tooling/python-third-party-libs-to-grok.txt"
+-'  1  0  ~/tooling/python-third-party-libs-to-grok.txt
+|4,39,1,0,1727219954,"~/tooling/python-third-party-libs-to-grok.txt"
+-'  1  0  ~/tooling/python-third-party-libs-to-grok.txt
+|4,39,1,0,1727219954,"~/tooling/python-third-party-libs-to-grok.txt"
+-'  1  0  ~/tooling/python-third-party-libs-to-grok.txt
+|4,39,1,0,1727219954,"~/tooling/python-third-party-libs-to-grok.txt"
+-'  1  0  ~/tooling/python-third-party-libs-to-grok.txt
+|4,39,1,0,1727219954,"~/tooling/python-third-party-libs-to-grok.txt"
+-'  1  0  ~/tooling/python-third-party-libs-to-grok.txt
+|4,39,1,0,1727219954,"~/tooling/python-third-party-libs-to-grok.txt"
+-'  1  0  ~/tooling/python-third-party-libs-to-grok.txt
+|4,39,1,0,1727219954,"~/tooling/python-third-party-libs-to-grok.txt"
+-'  1  0  ~/pyscripts/youtube-text-to-dates.py
+|4,39,1,0,1727132151,"~/pyscripts/youtube-text-to-dates.py"
+-'  1  0  ~/pyscripts/youtube-text-to-dates.py
+|4,39,1,0,1727132151,"~/pyscripts/youtube-text-to-dates.py"
+-'  1  0  ~/pyscripts/youtube-text-to-dates.py
+|4,39,1,0,1727132151,"~/pyscripts/youtube-text-to-dates.py"
+-'  1  0  ~/pyscripts/youtube-text-to-dates.py
+|4,39,1,0,1727132151,"~/pyscripts/youtube-text-to-dates.py"
+-'  1  0  ~/pyscripts/youtube-text-to-dates.py
+|4,39,1,0,1727132151,"~/pyscripts/youtube-text-to-dates.py"
+-'  1  0  ~/pyscripts/youtube-text-to-dates.py
+|4,39,1,0,1727132151,"~/pyscripts/youtube-text-to-dates.py"
+-'  1  0  ~/pyscripts/youtube-text-to-dates.py
+|4,39,1,0,1727132151,"~/pyscripts/youtube-text-to-dates.py"
+-'  141  8  ~/pyscripts/print_todo.py
+|4,39,141,8,1727132142,"~/pyscripts/print_todo.py"
+-'  141  8  ~/pyscripts/print_todo.py
+|4,39,141,8,1727132142,"~/pyscripts/print_todo.py"
+-'  141  8  ~/pyscripts/print_todo.py
+|4,39,141,8,1727132142,"~/pyscripts/print_todo.py"
+-'  141  8  ~/pyscripts/print_todo.py
+|4,39,141,8,1727132142,"~/pyscripts/print_todo.py"
+-'  141  8  ~/pyscripts/print_todo.py
+|4,39,141,8,1727132142,"~/pyscripts/print_todo.py"
+-'  141  8  ~/pyscripts/print_todo.py
+|4,39,141,8,1727132142,"~/pyscripts/print_todo.py"
+-'  141  8  ~/pyscripts/print_todo.py
+|4,39,141,8,1727132142,"~/pyscripts/print_todo.py"
+-'  142  0  ~/pyscripts/print_todo.py
+|4,39,142,0,1727132060,"~/pyscripts/print_todo.py"
+-'  142  0  ~/pyscripts/print_todo.py
+|4,39,142,0,1727132060,"~/pyscripts/print_todo.py"
+-'  142  0  ~/pyscripts/print_todo.py
+|4,39,142,0,1727132060,"~/pyscripts/print_todo.py"
+-'  142  0  ~/pyscripts/print_todo.py
+|4,39,142,0,1727132060,"~/pyscripts/print_todo.py"
+-'  142  0  ~/pyscripts/print_todo.py
+|4,39,142,0,1727132060,"~/pyscripts/print_todo.py"
+-'  142  0  ~/pyscripts/print_todo.py
+|4,39,142,0,1727132060,"~/pyscripts/print_todo.py"
+-'  142  0  ~/pyscripts/print_todo.py
+|4,39,142,0,1727132060,"~/pyscripts/print_todo.py"
+-'  140  20  ~/pyscripts/print_todo.py
+|4,39,140,20,1727132059,"~/pyscripts/print_todo.py"
+-'  140  20  ~/pyscripts/print_todo.py
+|4,39,140,20,1727132059,"~/pyscripts/print_todo.py"
+-'  140  20  ~/pyscripts/print_todo.py
+|4,39,140,20,1727132059,"~/pyscripts/print_todo.py"
+-'  140  20  ~/pyscripts/print_todo.py
+|4,39,140,20,1727132059,"~/pyscripts/print_todo.py"
+-'  140  20  ~/pyscripts/print_todo.py
+|4,39,140,20,1727132059,"~/pyscripts/print_todo.py"
+-'  140  20  ~/pyscripts/print_todo.py
+|4,39,140,20,1727132059,"~/pyscripts/print_todo.py"
+-'  140  20  ~/pyscripts/print_todo.py
+|4,39,140,20,1727132059,"~/pyscripts/print_todo.py"
+-'  136  36  ~/pyscripts/print_todo.py
+|4,39,136,36,1727132018,"~/pyscripts/print_todo.py"
+-'  136  36  ~/pyscripts/print_todo.py
+|4,39,136,36,1727132018,"~/pyscripts/print_todo.py"
+-'  136  36  ~/pyscripts/print_todo.py
+|4,39,136,36,1727132018,"~/pyscripts/print_todo.py"
+-'  136  36  ~/pyscripts/print_todo.py
+|4,39,136,36,1727132018,"~/pyscripts/print_todo.py"
+-'  136  36  ~/pyscripts/print_todo.py
+|4,39,136,36,1727132018,"~/pyscripts/print_todo.py"
+-'  136  36  ~/pyscripts/print_todo.py
+|4,39,136,36,1727132018,"~/pyscripts/print_todo.py"
+-'  136  36  ~/pyscripts/print_todo.py
+|4,39,136,36,1727132018,"~/pyscripts/print_todo.py"
+-'  103  4  ~/pyscripts/print_todo.py
+|4,39,103,4,1727131995,"~/pyscripts/print_todo.py"
+-'  103  4  ~/pyscripts/print_todo.py
+|4,39,103,4,1727131995,"~/pyscripts/print_todo.py"
+-'  103  4  ~/pyscripts/print_todo.py
+|4,39,103,4,1727131995,"~/pyscripts/print_todo.py"
+-'  103  4  ~/pyscripts/print_todo.py
+|4,39,103,4,1727131995,"~/pyscripts/print_todo.py"
+-'  103  4  ~/pyscripts/print_todo.py
+|4,39,103,4,1727131995,"~/pyscripts/print_todo.py"
+-'  103  4  ~/pyscripts/print_todo.py
+|4,39,103,4,1727131995,"~/pyscripts/print_todo.py"
+-'  103  4  ~/pyscripts/print_todo.py
+|4,39,103,4,1727131995,"~/pyscripts/print_todo.py"
+-'  128  4  ~/pyscripts/print_todo.py
+|4,39,128,4,1727131990,"~/pyscripts/print_todo.py"
+-'  127  16  ~/pyscripts/print_todo.py
+|4,39,127,16,1727131990,"~/pyscripts/print_todo.py"
+-'  128  4  ~/pyscripts/print_todo.py
+|4,39,128,4,1727131990,"~/pyscripts/print_todo.py"
+-'  127  16  ~/pyscripts/print_todo.py
+|4,39,127,16,1727131990,"~/pyscripts/print_todo.py"
+-'  128  4  ~/pyscripts/print_todo.py
+|4,39,128,4,1727131990,"~/pyscripts/print_todo.py"
+-'  127  16  ~/pyscripts/print_todo.py
+|4,39,127,16,1727131990,"~/pyscripts/print_todo.py"
+-'  128  4  ~/pyscripts/print_todo.py
+|4,39,128,4,1727131990,"~/pyscripts/print_todo.py"
+-'  127  16  ~/pyscripts/print_todo.py
+|4,39,127,16,1727131990,"~/pyscripts/print_todo.py"
+-'  128  4  ~/pyscripts/print_todo.py
+|4,39,128,4,1727131990,"~/pyscripts/print_todo.py"
+-'  127  16  ~/pyscripts/print_todo.py
+|4,39,127,16,1727131990,"~/pyscripts/print_todo.py"
+-'  128  4  ~/pyscripts/print_todo.py
+|4,39,128,4,1727131990,"~/pyscripts/print_todo.py"
+-'  127  16  ~/pyscripts/print_todo.py
+|4,39,127,16,1727131990,"~/pyscripts/print_todo.py"
+-'  128  4  ~/pyscripts/print_todo.py
+|4,39,128,4,1727131990,"~/pyscripts/print_todo.py"
+-'  127  16  ~/pyscripts/print_todo.py
+|4,39,127,16,1727131990,"~/pyscripts/print_todo.py"
+-'  134  4  ~/pyscripts/print_todo.py
+|4,39,134,4,1727131989,"~/pyscripts/print_todo.py"
+-'  133  13  ~/pyscripts/print_todo.py
+|4,39,133,13,1727131989,"~/pyscripts/print_todo.py"
+-'  134  4  ~/pyscripts/print_todo.py
+|4,39,134,4,1727131989,"~/pyscripts/print_todo.py"
+-'  133  13  ~/pyscripts/print_todo.py
+|4,39,133,13,1727131989,"~/pyscripts/print_todo.py"
+-'  134  4  ~/pyscripts/print_todo.py
+|4,39,134,4,1727131989,"~/pyscripts/print_todo.py"
+-'  133  13  ~/pyscripts/print_todo.py
+|4,39,133,13,1727131989,"~/pyscripts/print_todo.py"
+-'  134  4  ~/pyscripts/print_todo.py
+|4,39,134,4,1727131989,"~/pyscripts/print_todo.py"
 
 # Buffer list:
-%~/.config/atuin/config.toml	42	6
+%~/prompts/240925.slow_curl_requests.txt	1	0
 
 # History of marks within files (newest to oldest):
 
-> ~/.config/atuin/config.toml
-	*	1727039841	0
-	"	42	6
-	^	42	7
-	.	42	6
-	+	41	22
-	+	42	6
+> ~/prompts/240925.slow_curl_requests.txt
+	*	1727221716	0
+	"	1	0
+
+> ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/requests/api.py
+	*	1727220073	0
+	"	58	38
+
+> ~/pyscripts/tmp_profile_requests.py
+	*	1727220059	0
+	"	12	24
+
+> ~/tooling/json-sqlite-third-party-tools.txt
+	*	1727219995	0
+	"	1	24
+	^	1	25
+	.	1	24
+	+	1	24
+
+> ~/tooling/python-third-party-libs-to-grok.txt
+	*	1727219969	0
+	"	4	8
+	^	4	9
+	.	4	8
+	+	2	64
+	+	1	0
+	+	3	22
+	+	4	8
+
+> ~/pyscripts/youtube-text-to-dates.py
+	*	1727132149	0
+	"	1	0
+	^	67	57
+	.	67	56
+	+	43	0
+	+	70	0
+	+	43	0
+	+	43	4
+	+	43	0
+	+	70	26
+	+	70	0
+	+	70	18
+	+	70	0
+	+	70	12
+	+	70	24
+	+	70	11
+	+	70	0
+	+	70	36
+	+	15	43
+	+	43	24
+	+	70	0
+	+	43	12
+	+	43	11
+	+	43	18
+	+	15	0
+	+	43	0
+	+	42	0
+	+	43	0
+	+	40	59
+	+	70	15
+	+	40	55
+	+	14	32
+	+	42	50
+	+	42	27
+	+	72	0
+	+	71	18
+	+	72	0
+	+	1	0
+	+	6	0
+	+	42	24
+	+	42	0
+	+	70	22
+	+	70	0
+	+	45	0
+	+	44	0
+	+	45	0
+	+	49	27
+	+	50	13
+	+	49	18
+	+	50	59
+	+	52	44
+	+	50	14
+	+	49	12
+	+	51	67
+	+	53	13
+	+	49	12
+	+	54	29
+	+	55	4
+	+	59	22
+	+	70	0
+	+	59	12
+	+	39	0
+	+	41	62
+	+	42	0
+	+	69	22
+	+	70	47
+	+	70	0
+	+	41	96
+	+	69	0
+	+	59	14
+	+	59	8
+	+	70	0
+	+	59	0
+	+	15	0
+	+	20	0
+	+	36	0
+	+	17	29
+	+	19	29
+	+	19	0
+	+	3	0
+	+	18	0
+	+	3	0
+	+	16	0
+	+	69	48
+	+	69	0
+	+	63	0
+	+	68	37
+	+	69	0
+	+	64	12
+	+	65	58
+	+	2	0
+	+	65	81
+	+	68	55
+	+	67	0
+	+	68	17
+	+	67	49
+	+	66	23
+	+	67	34
+	+	66	27
+	+	67	46
+	+	66	34
+	+	67	51
+	+	66	40
+	+	67	56
+
+> ~/pyscripts/print_todo.py
+	*	1727132065	0
+	"	141	8
+	^	136	37
+	.	142	0
+	+	95	9
+	+	97	168
+	+	95	29
+	+	95	117
+	+	95	50
+	+	95	111
+	+	18	25
+	+	95	80
+	+	95	51
+	+	95	55
+	+	95	71
+	+	140	0
+	+	84	9
+	+	87	27
+	+	47	0
+	+	18	8
+	+	46	0
+	+	17	0
+	+	47	0
+	+	87	52
+	+	135	32
+	+	136	33
+	+	138	0
+	+	136	0
+	+	139	0
+	+	137	21
+	+	140	128
+	+	84	34
+	+	87	0
+	+	85	11
+	+	86	12
+	+	87	0
+	+	142	104
+	+	142	0
+	+	142	12
+	+	142	21
+	+	142	17
+	+	142	106
+	+	142	24
+	+	142	108
+	+	142	0
+	+	87	60
+	+	84	0
+	+	95	0
+	+	91	17
+	+	91	76
+	+	91	17
+	+	149	25
+	+	96	0
+	+	94	0
+	+	91	0
+	+	84	53
+	+	83	72
+	+	91	48
+	+	84	0
+	+	148	0
+	+	149	0
+	+	74	0
+	+	87	72
+	+	142	0
+	+	83	52
+	+	133	13
+	+	142	0
+	+	141	92
+	+	142	12
+	+	142	0
+	+	140	8
+	+	68	64
+	+	72	0
+	+	141	40
+	+	68	49
+	+	68	36
+	+	69	0
+	+	68	0
+	+	69	37
+	+	71	16
+	+	70	27
+	+	64	16
+	+	65	16
+	+	66	16
+	+	67	0
+	+	149	0
+	+	148	0
+	+	1	0
+	+	142	0
+	+	46	0
+	+	111	0
+	+	147	0
+	+	113	0
+	+	128	0
+	+	134	0
+	+	128	0
+	+	134	53
+	+	136	36
+	+	141	0
+	+	142	0
+	+	141	0
+	+	142	0
+	a	141	16
+
+> ~/tooling/fzf-command-samples.txt
+	*	1727131195	0
+	"	1	0
+
+> ~/tooling/docs/fzf.man
+	*	1727050460	0
+	"	1038	97
+	^	34	12
+	.	34	0
+	+	34	0
+
+> ~/bash/fzf-command-samples.txt
+	*	1727050378	0
+	"	14	4
+	^	14	6
+	.	14	0
+	+	2	0
+	+	3	33
+	+	16	3
+	+	3	4
+	+	16	41
+	+	20	40
+	+	24	39
+	+	28	46
+	+	3	20
+	+	16	21
+	+	20	21
+	+	24	21
+	+	28	21
+	+	3	24
+	+	8	6
+	+	3	8
+	+	4	12
+	+	5	12
+	+	6	14
+	+	4	0
+	+	12	18
+	+	3	0
+	+	2	0
+	+	31	0
+	+	32	0
+	+	35	0
+	+	32	92
+	+	32	52
+	+	35	0
+	+	33	0
+	+	31	1
+	+	34	0
+	+	36	0
+	+	35	38
+	+	34	0
+	+	14	0
+
+> /usr/share/vim/vim90/doc/terminal.txt
+	*	1727050004	0
+	"	1	0
+
+> ~/.config/alias.bash
+	*	1727042880	0
+	"	17	0
+	^	12	28
+	.	12	26
+	+	25	32
+	+	16	72
+	+	17	38
+	+	29	0
+	+	27	0
+	+	15	0
+	+	32	0
+	+	30	8
+	+	27	0
+	+	30	33
+	+	31	6
+	+	30	1
+	+	32	0
+	+	31	108
+	+	31	6
+	+	29	1
+	+	17	162
+	+	17	14
+	+	17	163
+	+	21	169
+	+	21	0
+	+	17	58
+	+	32	0
+	+	18	0
+	+	19	17
+	+	20	6
+	+	11	58
+	+	12	26
+
+> ~/.config/setup.bash
+	*	1727042848	0
+	"	23	0
+
+> ~/bash/!/usr/bin/fish
+	*	1727042793	0
+	"	1	0
+
+> ~/bash/fzf-command-samples.md
+	*	1727042548	0
+	"	14	0
+	.	14	0
+	+	4	0
+	+	14	7
+	+	14	0
+
+> ~/tooling/docs/rg.man
+	*	1727042152	0
+	"	444	9
+
+> ~/tooling/docs/fd.man
+	*	1727042009	0
+	"	171	7
+
+> ~/tmp/fd-flags.txt
+	*	1727041830	0
+	"	1	0
+	.	1	0
+	+	1	0
+	+	1	5
+	+	52	6
+	+	1	0
+
+> ~/tmp/common-flags.txt
+	*	1727041788	0
+	"	25	6
+	.	26	0
+	+	1	0
+	+	26	0
+	+	1	0
+	+	26	0
+
+> ~/tmp/rg-flags.txt
+	*	1727041756	0
+	"	1	0
+	.	1	0
+	+	1	0
+	+	136	0
+	+	1	0
 
 > ~/tooling/ripgrep-fd-fzf-flags-cheat-sheet.txt
-	*	1727012882	0
-	"	7	18
-	^	7	19
-	.	7	18
-	+	14	14
-	+	18	0
-	+	7	18
+	*	1727041566	0
+	"	4	4
+	^	1	0
+	.	4	4
+	+	15	14
+	+	19	0
+	+	8	18
+	+	19	21
+	+	1	0
+	+	4	4
+
+> ~/bash/git_fzf_select.bash
+	*	1727041015	0
+	"	6	0
+	^	10	64
+	.	10	63
+	+	37	2
+	+	37	0
+	+	37	2
+	+	1	2
+	+	1	0
+	+	37	0
+	+	9	0
+	+	4	46
+	+	34	0
+	+	36	0
+	+	34	3
+	+	35	2
+	+	7	73
+	+	10	63
+
+> ~/.vim/tmp/fzf-command-samples.txt
+	*	1727040915	0
+	"	11	6
+	^	11	7
+	.	11	6
+	+	3	0
+	+	2	12
+	+	5	16
+	+	6	0
+	+	13	0
+	+	9	0
+	+	6	53
+	+	3	0
+	+	9	0
+	+	12	88
+	+	9	3
+	+	2	4
+	+	5	4
+	+	2	1
+	+	5	1
+	+	8	13
+	+	11	6
+
+> ~/.vim/plugin/oldfiles.vim
+	*	1727040885	0
+	"	59	4
+	^	59	21
+	.	59	110
+	+	84	0
+	+	49	10
+	+	45	0
+	+	47	16
+	+	47	0
+	+	46	0
+	+	81	0
+	+	65	10
+	+	58	21
+	+	60	8
+	+	63	63
+	+	59	99
+	+	63	30
+	+	71	0
+	+	59	0
+	+	71	0
+	+	70	26
+	+	74	4
+	+	77	10
+	+	84	40
+	+	67	26
+	+	80	25
+	+	83	48
+	+	73	23
+	+	84	3
+	+	85	0
+	+	84	22
+	+	80	15
+	+	59	23
+	+	59	80
+	+	59	20
+	+	59	110
 
 > ~/bash/pwd-oldfiles.bash
-	*	1727012761	0
+	*	1727040875	0
 	"	2	0
 	^	5	48
 	.	5	47
@@ -15673,6 +16172,51 @@ $
 	+	4	0
 	+	5	47
 
+> ~/tmp/output.txt
+	*	1727040744	0
+	"	2	0
+	.	3	0
+	+	20	0
+	+	3	0
+
+> ~/bash/oldfiles.bash
+	*	1727040543	0
+	"	2	0
+	^	2	108
+	.	5	0
+	+	2	1
+	+	2	12
+	+	2	49
+	+	2	12
+	+	2	0
+	+	3	1
+	+	1	10
+	+	2	62
+	+	2	34
+	+	2	1
+	+	2	16
+	+	2	0
+	+	6	33
+	+	2	68
+	+	3	66
+	+	3	0
+	+	2	13
+	+	3	23
+	+	4	51
+	+	6	28
+	+	13	22
+	+	2	107
+	+	7	0
+	+	5	0
+
+> ~/.config/atuin/config.toml
+	*	1727039841	0
+	"	42	6
+	^	42	7
+	.	42	6
+	+	41	22
+	+	42	6
+
 > ~/tooling/ripgrep-fd-flags-cheat-sheet.txt
 	*	1727012691	0
 	"	1	0
@@ -15686,10 +16230,6 @@ $
 	+	11	35
 	+	12	25
 	+	13	0
-
-> ~/tooling/docs/rg.man
-	*	1727012211	0
-	"	1251	40
 
 > ~/tooling/fzf.txt
 	*	1727012173	0
@@ -15799,51 +16339,6 @@ $
 	+	40	40
 	+	36	0
 
-> ~/tooling/docs/fd.man
-	*	1727011941	0
-	"	274	25
-
-> ~/tooling/docs/fzf.man
-	*	1727011463	0
-	"	1	0
-	^	34	12
-	.	34	0
-	+	34	0
-
-> ~/.config/alias.bash
-	*	1727011441	0
-	"	1	0
-	^	12	28
-	.	12	26
-	+	25	32
-	+	16	72
-	+	17	38
-	+	29	0
-	+	27	0
-	+	15	0
-	+	32	0
-	+	30	8
-	+	27	0
-	+	30	33
-	+	31	6
-	+	30	1
-	+	32	0
-	+	31	108
-	+	31	6
-	+	29	1
-	+	17	162
-	+	17	14
-	+	17	163
-	+	21	169
-	+	21	0
-	+	17	58
-	+	32	0
-	+	18	0
-	+	19	17
-	+	20	6
-	+	11	58
-	+	12	26
-
 > ~/.config/fish/completions/gita.fish
 	*	1727011066	0
 	"	1	98
@@ -15912,26 +16407,6 @@ $
 > /tmp/crontab.IelnMN/crontab
 	*	1726962907	0
 	"	37	0
-
-> ~/bash/git_fzf_select.bash
-	*	1726962500	0
-	"	4	13
-	^	10	64
-	.	10	63
-	+	37	2
-	+	37	0
-	+	37	2
-	+	1	2
-	+	1	0
-	+	37	0
-	+	9	0
-	+	4	46
-	+	34	0
-	+	36	0
-	+	34	3
-	+	35	2
-	+	7	73
-	+	10	63
 
 > ~/bugs/bugs.240913.python_autoimport_completion.txt
 	*	1726962161	0
@@ -16242,10 +16717,6 @@ $
 	+	21	0
 	+	29	0
 
-> ~/.config/setup.bash
-	*	1726355997	0
-	"	1	0
-
 > ~/pyscripts/file.py
 	*	1726262644	0
 	"	1	8
@@ -16274,111 +16745,6 @@ $
 	.	9	23
 	+	1	0
 	+	9	23
-
-> ~/pyscripts/print_todo.py
-	*	1726261514	0
-	"	46	4
-	.	46	0
-	+	18	0
-	+	18	24
-	+	18	0
-	+	18	25
-	+	84	26
-	+	144	0
-	+	84	9
-	+	95	0
-	+	98	0
-	+	95	7
-	+	95	20
-	+	95	0
-	+	95	54
-	+	97	0
-	+	95	9
-	+	97	168
-	+	95	29
-	+	95	117
-	+	95	50
-	+	95	111
-	+	18	25
-	+	95	80
-	+	95	51
-	+	95	55
-	+	95	71
-	+	137	0
-	+	84	9
-	+	87	27
-	+	47	0
-	+	18	8
-	+	46	0
-	+	17	0
-	+	47	0
-	+	87	52
-	+	132	32
-	+	133	33
-	+	135	0
-	+	133	0
-	+	136	0
-	+	134	21
-	+	137	128
-	+	84	34
-	+	87	0
-	+	85	11
-	+	86	12
-	+	87	0
-	+	139	104
-	+	139	0
-	+	139	12
-	+	139	21
-	+	139	17
-	+	139	106
-	+	139	24
-	+	139	108
-	+	139	0
-	+	87	60
-	+	84	0
-	+	95	0
-	+	91	17
-	+	91	76
-	+	91	17
-	+	144	25
-	+	96	0
-	+	94	0
-	+	91	0
-	+	84	53
-	+	83	72
-	+	91	48
-	+	84	0
-	+	143	0
-	+	144	0
-	+	74	0
-	+	87	72
-	+	139	0
-	+	83	52
-	+	131	13
-	+	139	0
-	+	138	92
-	+	139	12
-	+	139	0
-	+	137	8
-	+	68	64
-	+	72	0
-	+	138	40
-	+	68	49
-	+	68	36
-	+	69	0
-	+	68	0
-	+	69	37
-	+	71	16
-	+	70	27
-	+	64	16
-	+	65	16
-	+	66	16
-	+	67	0
-	+	144	0
-	+	143	0
-	+	1	0
-	+	139	0
-	+	46	0
 
 > ~/python_codeaction_test/pyrightconfig.json
 	*	1726261453	0
@@ -17218,36 +17584,6 @@ $
 	*	1726003442	0
 	"	2020	0
 
-> ~/bash/oldfiles.bash
-	*	1726003311	0
-	"	1	0
-	^	2	108
-	.	5	0
-	+	2	1
-	+	2	12
-	+	2	49
-	+	2	12
-	+	2	0
-	+	3	1
-	+	1	10
-	+	2	62
-	+	2	34
-	+	2	1
-	+	2	16
-	+	2	0
-	+	6	33
-	+	2	68
-	+	3	66
-	+	3	0
-	+	2	13
-	+	3	23
-	+	4	51
-	+	6	28
-	+	13	22
-	+	2	107
-	+	7	0
-	+	5	0
-
 > ~/factorio/red_circuit.txt
 	*	1725999845	0
 	"	3	41
@@ -18076,10 +18412,6 @@ $
 	a	47	7
 	b	47	7
 
-> /usr/share/vim/vim90/doc/terminal.txt
-	*	1725759227	0
-	"	248	54
-
 > ~/python_common/.direnv/python-3.10.12/lib/python3.10/site-packages/rich/text.py
 	*	1725749487	0
 	"	857	0
@@ -18825,112 +19157,6 @@ $
 	a	257	13
 	b	91	33
 
-> ~/pyscripts/youtube-text-to-dates.py
-	*	1725543825	0
-	"	66	40
-	^	67	57
-	.	67	56
-	+	43	0
-	+	70	0
-	+	43	0
-	+	43	4
-	+	43	0
-	+	70	26
-	+	70	0
-	+	70	18
-	+	70	0
-	+	70	12
-	+	70	24
-	+	70	11
-	+	70	0
-	+	70	36
-	+	15	43
-	+	43	24
-	+	70	0
-	+	43	12
-	+	43	11
-	+	43	18
-	+	15	0
-	+	43	0
-	+	42	0
-	+	43	0
-	+	40	59
-	+	70	15
-	+	40	55
-	+	14	32
-	+	42	50
-	+	42	27
-	+	72	0
-	+	71	18
-	+	72	0
-	+	1	0
-	+	6	0
-	+	42	24
-	+	42	0
-	+	70	22
-	+	70	0
-	+	45	0
-	+	44	0
-	+	45	0
-	+	49	27
-	+	50	13
-	+	49	18
-	+	50	59
-	+	52	44
-	+	50	14
-	+	49	12
-	+	51	67
-	+	53	13
-	+	49	12
-	+	54	29
-	+	55	4
-	+	59	22
-	+	70	0
-	+	59	12
-	+	39	0
-	+	41	62
-	+	42	0
-	+	69	22
-	+	70	47
-	+	70	0
-	+	41	96
-	+	69	0
-	+	59	14
-	+	59	8
-	+	70	0
-	+	59	0
-	+	15	0
-	+	20	0
-	+	36	0
-	+	17	29
-	+	19	29
-	+	19	0
-	+	3	0
-	+	18	0
-	+	3	0
-	+	16	0
-	+	69	48
-	+	69	0
-	+	63	0
-	+	68	37
-	+	69	0
-	+	64	12
-	+	65	58
-	+	2	0
-	+	65	81
-	+	68	55
-	+	67	0
-	+	68	17
-	+	67	49
-	+	66	23
-	+	67	34
-	+	66	27
-	+	67	46
-	+	66	34
-	+	67	51
-	+	66	40
-	+	67	56
-
 > ~/pyscripts/time_zone.py
 	*	1725543131	0
 	"	66	0
@@ -19564,40 +19790,6 @@ $
 	^	2	2
 	.	2	1
 	+	2	1
-
-> ~/.vim/plugin/oldfiles.vim
-	*	1725482426	0
-	"	37	4
-	^	85	23
-	.	81	15
-	+	85	0
-	+	49	10
-	+	45	0
-	+	47	16
-	+	47	0
-	+	46	0
-	+	82	0
-	+	66	10
-	+	58	21
-	+	61	8
-	+	64	63
-	+	60	99
-	+	64	30
-	+	72	0
-	+	59	0
-	+	72	0
-	+	71	26
-	+	75	4
-	+	78	10
-	+	85	40
-	+	68	26
-	+	81	25
-	+	84	48
-	+	74	23
-	+	85	3
-	+	86	0
-	+	85	22
-	+	81	15
 
 > ~/.vim/plugin/open-todo-if-exists.vim
 	*	1725468784	0
@@ -21266,14 +21458,6 @@ $
 > /usr/share/vim/vim90/doc/editing.txt
 	*	1724981125	0
 	"	287	35
-
-> ~/tooling/python-third-party-libs-to-grok.txt
-	*	1724980813	0
-	"	2	0
-	.	3	0
-	+	2	64
-	+	1	0
-	+	3	0
 
 > ~/pyscripts/server.py
 	*	1724980592	0
@@ -36106,12 +36290,6 @@ $
 > ~/python_common/req
 	*	1716959956	0
 	"	1	0
-
-> ~/tmp/output.txt
-	*	1716955506	0
-	"	1	0
-	.	24	0
-	+	24	0
 
 > ~/bash/fd.man
 	*	1716953617	0
