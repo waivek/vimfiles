@@ -21,13 +21,31 @@ $
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1727222812,,"q"
+|2,0,1727307652,,"q"
+:qa
+|2,0,1727307276,,"qa"
+:e requirements.txt
+|2,0,1727307019,,"e requirements.txt"
+:e request_profiler.py
+|2,0,1727307017,,"e request_profiler.py"
 :q!
-|2,0,1727220202,,"q!"
+|2,0,1727306875,,"q!"
+:term
+|2,0,1727306865,,"term"
+:e /etc/resolv.conf
+|2,0,1727306833,,"e /etc/resolv.conf"
+:CocDiagnostics
+|2,0,1727306565,,"CocDiagnostics"
+:lnext
+|2,0,1727306516,,"lnext"
+:lopen
+|2,0,1727306513,,"lopen"
+:Coc
+|2,0,1727306511,,"Coc"
+:o
+|2,0,1727304745,,"o"
 :pwd
 |2,0,1727132145,,"pwd"
-:term
-|2,0,1727050163,,"term"
 :h :term
 |2,0,1727049999,,"h :term"
 :'<,'>!
@@ -46,8 +64,6 @@ $
 |2,0,1727042553,,"Rename fzf-command-samples.txt"
 :Rename fzf-command-samples.md
 |2,0,1727042522,,"Rename fzf-command-samples.md"
-:qa
-|2,0,1727042034,,"qa"
 :e fd.man
 |2,0,1727041894,,"e fd.man"
 :MRU rg.m
@@ -128,8 +144,6 @@ $
 |2,0,1726512397,,"e secrets.env"
 :CocRestart
 |2,0,1726512353,,"CocRestart"
-:e requirements.txt
-|2,0,1726512332,,"e requirements.txt"
 :Template
 |2,0,1726512323,,"Template"
 :Rename bugs.240913.python_autoimport_completion.txt
@@ -192,8 +206,6 @@ $
 |2,0,1726233830,,"Date"
 :e ~/.vim/todo.txt
 |2,0,1726233828,,"e ~/.vim/todo.txt"
-:CocDiagnostics
-|2,0,1726233814,,"CocDiagnostics"
 :h :Coc
 |2,0,1726233798,,"h :Coc"
 :CocOpenLog
@@ -232,8 +244,6 @@ $
 |2,0,1726208208,,"e test_truncate.py"
 :MRU tru
 |2,0,1726208073,,"MRU tru"
-:Coc
-|2,0,1726206549,,"Coc"
 :CocI
 |2,0,1726206215,,"CocI"
 :CocUninstall coc-pyright
@@ -286,8 +296,6 @@ $
 |2,0,1726180589,,"Jprevious"
 :CopyToHost
 |2,0,1726180428,,"CopyToHost"
-:lopen
-|2,0,1726085799,,"lopen"
 :e waivek/ic.py
 |2,0,1726003602,,"e waivek/ic.py"
 :Tab / copper/
@@ -320,8 +328,6 @@ $
 |2,0,1725914953,,"e ic.py"
 :e printtodocopy.py
 |2,0,1725825001,,"e printtodocopy.py"
-:lnext
-|2,0,1725821095,,"lnext"
 :cn
 |2,0,1725821094,,"cn"
 :e colo
@@ -782,8 +788,6 @@ $
 |2,0,1725450895,,"!start everything -path . "
 :!start everything -path .`
 |2,0,1725450890,,"!start everything -path .`"
-:o
-|2,0,1725450879,,"o"
 :e README.md
 |2,0,1725450877,,"e README.md"
 :ido
@@ -15392,39 +15396,478 @@ $
 |2,4,1693311567,,"cont"
 
 # Registers:
-"0	LINE	0
-	        timer.print("append")
-|3,0,0,1,1,0,1727132060,"        timer.print(\"append\")"
-""1	LINE	0
-	    timer.print("sec3")
-|3,1,1,1,1,0,1727132060,"    timer.print(\"sec3\")"
+""0	LINE	0
+	#include <stdio.h>
+	#include <stdlib.h>
+	#include <string.h>
+	#include <sys/socket.h>
+	#include <netdb.h>
+	#include <time.h>
+	
+	int main() {
+	    const char* hostname = "www.example.com";  // Replace with a hostname where you've observed the issue
+	    struct addrinfo hints, *res;
+	    int err;
+	    struct timespec start, end;
+	
+	    memset(&hints, 0, sizeof(hints));
+	    hints.ai_family = AF_UNSPEC; // Request both IPv4 and IPv6 addresses
+	    hints.ai_socktype = SOCK_STREAM;
+	
+	    printf("Resolving %s\n", hostname);
+	
+	    clock_gettime(CLOCK_MONOTONIC, &start);
+	    err = getaddrinfo(hostname, NULL, &hints, &res);
+	    clock_gettime(CLOCK_MONOTONIC, &end);
+	
+	    if (err != 0) {
+	        printf("getaddrinfo: %s\n", gai_strerror(err));
+	        return 1;
+	    }
+	
+	    double dns_time = (end.tv_sec - start.tv_sec) * 1000.0 +
+	                      (end.tv_nsec - start.tv_nsec) / 1000000.0;
+	    printf("DNS Lookup Time: %.2f ms\n", dns_time);
+	
+	    freeaddrinfo(res);
+	    return 0;
+	}
+	
+|3,1,0,1,36,0,1727307651,"#include <stdio.h>","#include <stdlib.h>","#include <string.h>","#include <sys/socket.h>","#include <netdb.h>","#include <time.h>","","int main() {","    const char* hostname = \"www.example.com\";  // Replace with a hostname where you've observed the issue","    struct addrinfo hints, *res;","    int err;","    struct timespec start, end;","","    memset(&hints, 0, sizeof(hints));",>74
+|<"    hints.ai_family = AF_UNSPEC; // Request both IPv4 and IPv6 addresses","    hints.ai_socktype = SOCK_STREAM;","","    printf(\"Resolving %s\\n\", hostname);","","    clock_gettime(CLOCK_MONOTONIC, &start);","    err = getaddrinfo(hostname, NULL, &hints, &res);","    clock_gettime(CLOCK_MONOTONIC, &end);","","    if (err != 0) {","        printf(\"getaddrinfo: %s\\n\", gai_strerror(err));","        return 1;","    }","","    double dns_time = (end.tv_sec - start.tv_sec) * 1000.0 +",>66
+|<"                      (end.tv_nsec - start.tv_nsec) / 1000000.0;","    printf(\"DNS Lookup Time: %.2f ms\\n\", dns_time);","","    freeaddrinfo(res);","    return 0;","}",""
+"1	LINE	0
+	#include <stdio.h>
+	#include <stdlib.h>
+	#include <string.h>
+	#include <sys/socket.h>
+	#include <netdb.h>
+	#include <time.h>
+	
+	int main() {
+	    const char* hostname = "www.example.com";  // Replace with a hostname where you've observed the issue
+	    struct addrinfo hints, *res;
+	    int err;
+	    struct timespec start, end;
+	
+	    memset(&hints, 0, sizeof(hints));
+	    hints.ai_family = AF_UNSPEC; // Request both IPv4 and IPv6 addresses
+	    hints.ai_socktype = SOCK_STREAM;
+	
+	    printf("Resolving %s\n", hostname);
+	
+	    clock_gettime(CLOCK_MONOTONIC, &start);
+	    err = getaddrinfo(hostname, NULL, &hints, &res);
+	    clock_gettime(CLOCK_MONOTONIC, &end);
+	
+	    if (err != 0) {
+	        printf("getaddrinfo: %s\n", gai_strerror(err));
+	        return 1;
+	    }
+	
+	    double dns_time = (end.tv_sec - start.tv_sec) * 1000.0 +
+	                      (end.tv_nsec - start.tv_nsec) / 1000000.0;
+	    printf("DNS Lookup Time: %.2f ms\n", dns_time);
+	
+	    freeaddrinfo(res);
+	    return 0;
+	}
+	
+|3,0,1,1,36,0,1727307650,"#include <stdio.h>","#include <stdlib.h>","#include <string.h>","#include <sys/socket.h>","#include <netdb.h>","#include <time.h>","","int main() {","    const char* hostname = \"www.example.com\";  // Replace with a hostname where you've observed the issue","    struct addrinfo hints, *res;","    int err;","    struct timespec start, end;","","    memset(&hints, 0, sizeof(hints));",>74
+|<"    hints.ai_family = AF_UNSPEC; // Request both IPv4 and IPv6 addresses","    hints.ai_socktype = SOCK_STREAM;","","    printf(\"Resolving %s\\n\", hostname);","","    clock_gettime(CLOCK_MONOTONIC, &start);","    err = getaddrinfo(hostname, NULL, &hints, &res);","    clock_gettime(CLOCK_MONOTONIC, &end);","","    if (err != 0) {","        printf(\"getaddrinfo: %s\\n\", gai_strerror(err));","        return 1;","    }","","    double dns_time = (end.tv_sec - start.tv_sec) * 1000.0 +",>66
+|<"                      (end.tv_nsec - start.tv_nsec) / 1000000.0;","    printf(\"DNS Lookup Time: %.2f ms\\n\", dns_time);","","    freeaddrinfo(res);","    return 0;","}",""
 "2	LINE	0
-	    timer.start("sec3")
-|3,0,2,1,1,0,1727132060,"    timer.start(\"sec3\")"
+	//go:build cgo
+	// +build cgo
+	
+	package main
+	
+	/*
+	This import forces cgo to be used.
+	*/
+	import "C"
+	
+	import (
+		"context"
+		"crypto/tls"
+		"fmt"
+		"net"
+		"net/http"
+		"net/http/httptrace"
+		"os"
+		"time"
+	)
+	
+	func main() {
+		url := "https://www.google.com"
+	
+		fmt.Printf("Profiling request to %s\n", url)
+	
+		// Create a context to attach the DNS start and end times
+		var dnsStartA, dnsEndA, dnsStartAAAA, dnsEndAAAA time.Time
+		var dnsErrA, dnsErrAAAA error
+	
+		// Use channels to synchronize DNS query results
+		doneA := make(chan struct{})
+		doneAAAA := make(chan struct{})
+	
+		// Resolver that uses the system resolver
+		resolver := &net.Resolver{
+			PreferGo: false, // Force the use of the system resolver
+		}
+	
+		// Perform A and AAAA queries simultaneously
+		go func() {
+			dnsStartA = time.Now()
+			_, dnsErrA = resolver.LookupIP(context.Background(), "ip4", "www.google.com")
+			dnsEndA = time.Now()
+			close(doneA)
+		}()
+	
+		go func() {
+			dnsStartAAAA = time.Now()
+			_, dnsErrAAAA = resolver.LookupIP(context.Background(), "ip6", "www.google.com")
+|3,0,2,1,50,0,1727307504,"//go:build cgo","// +build cgo","","package main","","/*","This import forces cgo to be used.","*/","import \"C\"","","import (","	\"context\"","	\"crypto/tls\"","	\"fmt\"","	\"net\"","	\"net/http\"","	\"net/http/httptrace\"","	\"os\"","	\"time\"",")","","func main() {","	url := \"https://www.google.com\"","","	fmt.Printf(\"Profiling request to %s\\n\", url)","","	// Create a context to attach the DNS start and end times",>61
+|<"	var dnsStartA, dnsEndA, dnsStartAAAA, dnsEndAAAA time.Time","	var dnsErrA, dnsErrAAAA error","","	// Use channels to synchronize DNS query results","	doneA := make(chan struct{})","	doneAAAA := make(chan struct{})","","	// Resolver that uses the system resolver","	resolver := &net.Resolver{","		PreferGo: false, // Force the use of the system resolver","	}","","	// Perform A and AAAA queries simultaneously","	go func() {","		dnsStartA = time.Now()",>85
+|<"		_, dnsErrA = resolver.LookupIP(context.Background(), \"ip4\", \"www.google.com\")","		dnsEndA = time.Now()","		close(doneA)","	}()","","	go func() {","		dnsStartAAAA = time.Now()","		_, dnsErrAAAA = resolver.LookupIP(context.Background(), \"ip6\", \"www.google.com\")"
 "3	LINE	0
-	        timer.print("append")
-|3,0,3,1,1,0,1727132059,"        timer.print(\"append\")"
+	package main
+	
+	import (
+		"context"
+		"crypto/tls"
+		"fmt"
+		"net"
+		"net/http"
+		"net/http/httptrace"
+		"os"
+		"time"
+	)
+	
+	func main() {
+		url := "https://www.google.com"
+	
+		fmt.Printf("Profiling request to %s\n", url)
+	
+		// Create a context to attach the DNS start and end times
+		var dnsStartA, dnsEndA, dnsStartAAAA, dnsEndAAAA time.Time
+		var dnsErrA, dnsErrAAAA error
+	
+		// Use channels to synchronize DNS query results
+		doneA := make(chan struct{})
+		doneAAAA := make(chan struct{})
+	
+		// Resolver that uses the system resolver
+		resolver := &net.Resolver{
+			PreferGo: false,
+		}
+	
+		// Perform A and AAAA queries simultaneously
+		go func() {
+			dnsStartA = time.Now()
+			_, dnsErrA = resolver.LookupIPAddr(context.Background(), "ipv4:"+url)
+			dnsEndA = time.Now()
+			close(doneA)
+		}()
+	
+		go func() {
+			dnsStartAAAA = time.Now()
+			_, dnsErrAAAA = resolver.LookupIPAddr(context.Background(), "ipv6:"+url)
+			dnsEndAAAA = time.Now()
+			close(doneAAAA)
+		}()
+	
+		// Wait for both DNS queries to complete
+		<-doneA
+		<-doneAAAA
+	
+|3,0,3,1,50,0,1727307427,"package main","","import (","	\"context\"","	\"crypto/tls\"","	\"fmt\"","	\"net\"","	\"net/http\"","	\"net/http/httptrace\"","	\"os\"","	\"time\"",")","","func main() {","	url := \"https://www.google.com\"","","	fmt.Printf(\"Profiling request to %s\\n\", url)","","	// Create a context to attach the DNS start and end times","	var dnsStartA, dnsEndA, dnsStartAAAA, dnsEndAAAA time.Time","	var dnsErrA, dnsErrAAAA error","",>51
+|<"	// Use channels to synchronize DNS query results","	doneA := make(chan struct{})","	doneAAAA := make(chan struct{})","","	// Resolver that uses the system resolver","	resolver := &net.Resolver{","		PreferGo: false,","	}","","	// Perform A and AAAA queries simultaneously","	go func() {","		dnsStartA = time.Now()","		_, dnsErrA = resolver.LookupIPAddr(context.Background(), \"ipv4:\"+url)","		dnsEndA = time.Now()","		close(doneA)","	}()","","	go func() {","		dnsStartAAAA = time.Now()",>78
+|<"		_, dnsErrAAAA = resolver.LookupIPAddr(context.Background(), \"ipv6:\"+url)","		dnsEndAAAA = time.Now()","		close(doneAAAA)","	}()","","	// Wait for both DNS queries to complete","	<-doneA","	<-doneAAAA",""
 "4	LINE	0
-	        timer.start("append")
-|3,0,4,1,1,0,1727132059,"        timer.start(\"append\")"
+	import socket
+	import ssl
+	import sys
+	import time
+	from urllib.parse import urlparse
+	
+	def profile_request():
+	    url = 'https://www.google.com'  # Hardcoded URL
+	    parsed_url = urlparse(url)
+	    hostname = parsed_url.hostname
+	    port = parsed_url.port or (443 if parsed_url.scheme == 'https' else 80)
+	    scheme = parsed_url.scheme
+	    path = parsed_url.path or '/'
+	
+	    print(f"Profiling request to {url}")
+	    print(f"Hostname: {hostname}")
+	    print(f"Port: {port}")
+	    print(f"Scheme: {scheme.upper()}")
+	
+	    # Phase 1: DNS Lookup using socket.getaddrinfo() with AF_UNSPEC
+	    dns_start = time.time()
+	    try:
+	        # This uses the system resolver and is affected by /etc/resolv.conf options
+	        # Including 'options single-request'
+	        addr_info = socket.getaddrinfo(hostname, port, family=socket.AF_UNSPEC, proto=socket.IPPROTO_TCP)
+	        dns_end = time.time()
+	        dns_time = dns_end - dns_start
+	        print(f"DNS Lookup Time: {dns_time*1000:.2f} ms")
+	    except socket.gaierror as e:
+	        dns_end = time.time()
+	        dns_time = dns_end - dns_start
+	        print(f"DNS Lookup Time: {dns_time*1000:.2f} ms")
+	        print(f"DNS lookup failed: {e}")
+	        sys.exit(1)
+	
+	    # Use the first address
+	    family, socktype, proto, canonname, sockaddr = addr_info[0]
+	
+	    # Phase 2: TCP Connection
+	    tcp_start = time.time()
+	    sock = socket.socket(family, socktype, proto)
+	    try:
+	        sock.settimeout(5)
+	        sock.connect(sockaddr)
+	        tcp_end = time.time()
+	        print(f"TCP Connection Time: {(tcp_end - tcp_start)*1000:.2f} ms")
+	    except socket.error as e:
+	        tcp_end = time.time()
+	        print(f"TCP Connection Time: {(tcp_end - tcp_start)*1000:.2f} ms")
+	        print(f"TCP connection failed: {e}")
+|3,0,4,1,50,0,1727307200,"import socket","import ssl","import sys","import time","from urllib.parse import urlparse","","def profile_request():","    url = 'https://www.google.com'  # Hardcoded URL","    parsed_url = urlparse(url)","    hostname = parsed_url.hostname","    port = parsed_url.port or (443 if parsed_url.scheme == 'https' else 80)","    scheme = parsed_url.scheme","    path = parsed_url.path or '/'","","    print(f\"Profiling request to {url}\")",>38
+|<"    print(f\"Hostname: {hostname}\")","    print(f\"Port: {port}\")","    print(f\"Scheme: {scheme.upper()}\")","","    # Phase 1: DNS Lookup using socket.getaddrinfo() with AF_UNSPEC","    dns_start = time.time()","    try:","        # This uses the system resolver and is affected by /etc/resolv.conf options","        # Including 'options single-request'","        addr_info = socket.getaddrinfo(hostname, port, family=socket.AF_UNSPEC, proto=socket.IPPROTO_TCP)",>31
+|<"        dns_end = time.time()","        dns_time = dns_end - dns_start","        print(f\"DNS Lookup Time: {dns_time*1000:.2f} ms\")","    except socket.gaierror as e:","        dns_end = time.time()","        dns_time = dns_end - dns_start","        print(f\"DNS Lookup Time: {dns_time*1000:.2f} ms\")","        print(f\"DNS lookup failed: {e}\")","        sys.exit(1)","","    # Use the first address","    family, socktype, proto, canonname, sockaddr = addr_info[0]","",>31
+|<"    # Phase 2: TCP Connection","    tcp_start = time.time()","    sock = socket.socket(family, socktype, proto)","    try:","        sock.settimeout(5)","        sock.connect(sockaddr)","        tcp_end = time.time()","        print(f\"TCP Connection Time: {(tcp_end - tcp_start)*1000:.2f} ms\")","    except socket.error as e:","        tcp_end = time.time()","        print(f\"TCP Connection Time: {(tcp_end - tcp_start)*1000:.2f} ms\")","        print(f\"TCP connection failed: {e}\")"
 "5	LINE	0
-	        timer.print("print")
-|3,0,5,1,1,0,1727132059,"        timer.print(\"print\")"
+	import socket
+	import ssl
+	import sys
+	import time
+	from urllib.parse import urlparse
+	
+	def profile_request():
+	    url = 'https://www.google.com'  # Hardcoded URL
+	    parsed_url = urlparse(url)
+	    hostname = parsed_url.hostname
+	    port = parsed_url.port or (443 if parsed_url.scheme == 'https' else 80)
+	    scheme = parsed_url.scheme
+	    path = parsed_url.path or '/'
+	
+	    print(f"Profiling request to {url}")
+	    print(f"Hostname: {hostname}")
+	    print(f"Port: {port}")
+	    print(f"Scheme: {scheme.upper()}")
+	
+	    # Initialize total DNS time
+	    total_dns_time = 0
+	
+	    # Phase 1: DNS Lookup - A Record (IPv4)
+	    try:
+	        dns_a_start = time.time()
+	        addr_info_a = socket.getaddrinfo(hostname, port, family=socket.AF_INET, proto=socket.IPPROTO_TCP)
+	        dns_a_end = time.time()
+	        dns_a_time = dns_a_end - dns_a_start
+	        total_dns_time += dns_a_time
+	        print(f"A Record Lookup Time: {dns_a_time*1000:.2f} ms")
+	        ipv4_addresses = [sockaddr[4][0] for sockaddr in addr_info_a]
+	    except socket.gaierror as e:
+	        dns_a_end = time.time()
+	        dns_a_time = dns_a_end - dns_a_start
+	        total_dns_time += dns_a_time
+	        ipv4_addresses = []
+	        print(f"A Record Lookup Time: {dns_a_time*1000:.2f} ms")
+	        print(f"A Record lookup failed: {e}")
+	
+	    # Phase 1b: DNS Lookup - AAAA Record (IPv6)
+	    try:
+	        dns_aaaa_start = time.time()
+	        addr_info_aaaa = socket.getaddrinfo(hostname, port, family=socket.AF_INET6, proto=socket.IPPROTO_TCP)
+	        dns_aaaa_end = time.time()
+	        dns_aaaa_time = dns_aaaa_end - dns_aaaa_start
+	        total_dns_time += dns_aaaa_time
+	        print(f"AAAA Record Lookup Time: {dns_aaaa_time*1000:.2f} ms")
+	        ipv6_addresses = [sockaddr[4][0] for sockaddr in addr_info_aaaa]
+	    except socket.gaierror as e:
+	        dns_aaaa_end = time.time()
+|3,0,5,1,50,0,1727307104,"import socket","import ssl","import sys","import time","from urllib.parse import urlparse","","def profile_request():","    url = 'https://www.google.com'  # Hardcoded URL","    parsed_url = urlparse(url)","    hostname = parsed_url.hostname","    port = parsed_url.port or (443 if parsed_url.scheme == 'https' else 80)","    scheme = parsed_url.scheme","    path = parsed_url.path or '/'","","    print(f\"Profiling request to {url}\")",>38
+|<"    print(f\"Hostname: {hostname}\")","    print(f\"Port: {port}\")","    print(f\"Scheme: {scheme.upper()}\")","","    # Initialize total DNS time","    total_dns_time = 0","","    # Phase 1: DNS Lookup - A Record (IPv4)","    try:","        dns_a_start = time.time()","        addr_info_a = socket.getaddrinfo(hostname, port, family=socket.AF_INET, proto=socket.IPPROTO_TCP)","        dns_a_end = time.time()","        dns_a_time = dns_a_end - dns_a_start",>38
+|<"        total_dns_time += dns_a_time","        print(f\"A Record Lookup Time: {dns_a_time*1000:.2f} ms\")","        ipv4_addresses = [sockaddr[4][0] for sockaddr in addr_info_a]","    except socket.gaierror as e:","        dns_a_end = time.time()","        dns_a_time = dns_a_end - dns_a_start","        total_dns_time += dns_a_time","        ipv4_addresses = []","        print(f\"A Record Lookup Time: {dns_a_time*1000:.2f} ms\")","        print(f\"A Record lookup failed: {e}\")","",>49
+|<"    # Phase 1b: DNS Lookup - AAAA Record (IPv6)","    try:","        dns_aaaa_start = time.time()","        addr_info_aaaa = socket.getaddrinfo(hostname, port, family=socket.AF_INET6, proto=socket.IPPROTO_TCP)","        dns_aaaa_end = time.time()","        dns_aaaa_time = dns_aaaa_end - dns_aaaa_start","        total_dns_time += dns_aaaa_time","        print(f\"AAAA Record Lookup Time: {dns_aaaa_time*1000:.2f} ms\")",>74
+|<"        ipv6_addresses = [sockaddr[4][0] for sockaddr in addr_info_aaaa]","    except socket.gaierror as e:","        dns_aaaa_end = time.time()"
 "6	LINE	0
-	        timer.start("print")
-|3,0,6,1,1,0,1727132059,"        timer.start(\"print\")"
+	import socket
+	import ssl
+	import sys
+	import time
+	from urllib.parse import urlparse
+	
+	def profile_request():
+	    url = 'https://www.google.com'  # Hardcoded URL
+	    parsed_url = urlparse(url)
+	    hostname = parsed_url.hostname
+	    port = parsed_url.port or (443 if parsed_url.scheme == 'https' else 80)
+	    scheme = parsed_url.scheme
+	    path = parsed_url.path or '/'
+	    
+	    print(f"Profiling request to {url}")
+	    print(f"Hostname: {hostname}")
+	    print(f"Port: {port}")
+	    print(f"Scheme: {scheme.upper()}")
+	    
+	    # Initialize total DNS time
+	    total_dns_time = 0
+	    
+	    # Phase 1: DNS Lookup - A Record (IPv4)
+	    try:
+	        dns_a_start = time.time()
+	        addr_info_a = socket.getaddrinfo(hostname, port, family=socket.AF_INET, proto=socket.IPPROTO_TCP)
+	        dns_a_end = time.time()
+	        dns_a_time = dns_a_end - dns_a_start
+	        total_dns_time += dns_a_time
+	        print(f"A Record Lookup Time: {dns_a_time*1000:.2f} ms")
+	        ipv4_addresses = [sockaddr[4][0] for sockaddr in addr_info_a]
+	    except socket.gaierror as e:
+	        dns_a_end = time.time()
+	        dns_a_time = dns_a_end - dns_a_start
+	        total_dns_time += dns_a_time
+	        ipv4_addresses = []
+	        print(f"A Record Lookup Time: {dns_a_time*1000:.2f} ms")
+	        print(f"A Record lookup failed: {e}")
+	    
+	    # Phase 1b: DNS Lookup - AAAA Record (IPv6)
+	    try:
+	        dns_aaaa_start = time.time()
+	        addr_info_aaaa = socket.getaddrinfo(hostname, port, family=socket.AF_INET6, proto=socket.IPPROTO_TCP)
+	        dns_aaaa_end = time.time()
+	        dns_aaaa_time = dns_aaaa_end - dns_aaaa_start
+	        total_dns_time += dns_aaaa_time
+	        print(f"AAAA Record Lookup Time: {dns_aaaa_time*1000:.2f} ms")
+	        ipv6_addresses = [sockaddr[4][0] for sockaddr in addr_info_aaaa]
+	    except socket.gaierror as e:
+	        dns_aaaa_end = time.time()
+|3,0,6,1,50,0,1727307068,"import socket","import ssl","import sys","import time","from urllib.parse import urlparse","","def profile_request():","    url = 'https://www.google.com'  # Hardcoded URL","    parsed_url = urlparse(url)","    hostname = parsed_url.hostname","    port = parsed_url.port or (443 if parsed_url.scheme == 'https' else 80)","    scheme = parsed_url.scheme","    path = parsed_url.path or '/'","    ",>44
+|<"    print(f\"Profiling request to {url}\")","    print(f\"Hostname: {hostname}\")","    print(f\"Port: {port}\")","    print(f\"Scheme: {scheme.upper()}\")","    ","    # Initialize total DNS time","    total_dns_time = 0","    ","    # Phase 1: DNS Lookup - A Record (IPv4)","    try:","        dns_a_start = time.time()","        addr_info_a = socket.getaddrinfo(hostname, port, family=socket.AF_INET, proto=socket.IPPROTO_TCP)","        dns_a_end = time.time()",>46
+|<"        dns_a_time = dns_a_end - dns_a_start","        total_dns_time += dns_a_time","        print(f\"A Record Lookup Time: {dns_a_time*1000:.2f} ms\")","        ipv4_addresses = [sockaddr[4][0] for sockaddr in addr_info_a]","    except socket.gaierror as e:","        dns_a_end = time.time()","        dns_a_time = dns_a_end - dns_a_start","        total_dns_time += dns_a_time","        ipv4_addresses = []","        print(f\"A Record Lookup Time: {dns_a_time*1000:.2f} ms\")",>49
+|<"        print(f\"A Record lookup failed: {e}\")","    ","    # Phase 1b: DNS Lookup - AAAA Record (IPv6)","    try:","        dns_aaaa_start = time.time()","        addr_info_aaaa = socket.getaddrinfo(hostname, port, family=socket.AF_INET6, proto=socket.IPPROTO_TCP)","        dns_aaaa_end = time.time()","        dns_aaaa_time = dns_aaaa_end - dns_aaaa_start","        total_dns_time += dns_aaaa_time","        print(f\"AAAA Record Lookup Time: {dns_aaaa_time*1000:.2f} ms\")",>74
+|<"        ipv6_addresses = [sockaddr[4][0] for sockaddr in addr_info_aaaa]","    except socket.gaierror as e:","        dns_aaaa_end = time.time()"
 "7	LINE	0
-	    timer.print("for")
-|3,0,7,1,1,0,1727131990,"    timer.print(\"for\")"
+	import socket
+	import ssl
+	import sys
+	import time
+	from urllib.parse import urlparse
+	
+	def profile_request():
+	    url = 'https://www.google.com'  # Hardcoded URL
+	    parsed_url = urlparse(url)
+	    hostname = parsed_url.hostname
+	    port = parsed_url.port or (443 if parsed_url.scheme == 'https' else 80)
+	    scheme = parsed_url.scheme
+	    path = parsed_url.path or '/'
+	
+	    print(f"Profiling request to {url}")
+	    print(f"Hostname: {hostname}")
+	    print(f"Port: {port}")
+	    print(f"Scheme: {scheme.upper()}")
+	
+	    # Phase 1: DNS Lookup using socket.getaddrinfo()
+	    dns_start = time.time()
+	    try:
+	        # This uses the system resolver and is affected by /etc/resolv.conf options
+	        # Including 'options single-request'
+	        addr_info = socket.getaddrinfo(hostname, port, proto=socket.IPPROTO_TCP)
+	        dns_end = time.time()
+	        dns_time = dns_end - dns_start
+	        print(f"DNS Lookup Time: {dns_time*1000:.2f} ms")
+	    except socket.gaierror as e:
+	        dns_end = time.time()
+	        dns_time = dns_end - dns_start
+	        print(f"DNS Lookup Time: {dns_time*1000:.2f} ms")
+	        print(f"DNS lookup failed: {e}")
+	        sys.exit(1)
+	
+	    # Use the first address
+	    family, socktype, proto, canonname, sockaddr = addr_info[0]
+	
+	    # Phase 2: TCP Connection
+	    tcp_start = time.time()
+	    sock = socket.socket(family, socktype, proto)
+	    try:
+	        sock.settimeout(5)
+	        sock.connect(sockaddr)
+	        tcp_end = time.time()
+	        print(f"TCP Connection Time: {(tcp_end - tcp_start)*1000:.2f} ms")
+	    except socket.error as e:
+	        tcp_end = time.time()
+	        print(f"TCP Connection Time: {(tcp_end - tcp_start)*1000:.2f} ms")
+	        print(f"TCP connection failed: {e}")
+|3,0,7,1,50,0,1727307026,"import socket","import ssl","import sys","import time","from urllib.parse import urlparse","","def profile_request():","    url = 'https://www.google.com'  # Hardcoded URL","    parsed_url = urlparse(url)","    hostname = parsed_url.hostname","    port = parsed_url.port or (443 if parsed_url.scheme == 'https' else 80)","    scheme = parsed_url.scheme","    path = parsed_url.path or '/'","","    print(f\"Profiling request to {url}\")",>38
+|<"    print(f\"Hostname: {hostname}\")","    print(f\"Port: {port}\")","    print(f\"Scheme: {scheme.upper()}\")","","    # Phase 1: DNS Lookup using socket.getaddrinfo()","    dns_start = time.time()","    try:","        # This uses the system resolver and is affected by /etc/resolv.conf options","        # Including 'options single-request'","        addr_info = socket.getaddrinfo(hostname, port, proto=socket.IPPROTO_TCP)","        dns_end = time.time()",>40
+|<"        dns_time = dns_end - dns_start","        print(f\"DNS Lookup Time: {dns_time*1000:.2f} ms\")","    except socket.gaierror as e:","        dns_end = time.time()","        dns_time = dns_end - dns_start","        print(f\"DNS Lookup Time: {dns_time*1000:.2f} ms\")","        print(f\"DNS lookup failed: {e}\")","        sys.exit(1)","","    # Use the first address","    family, socktype, proto, canonname, sockaddr = addr_info[0]","","    # Phase 2: TCP Connection",>29
+|<"    tcp_start = time.time()","    sock = socket.socket(family, socktype, proto)","    try:","        sock.settimeout(5)","        sock.connect(sockaddr)","        tcp_end = time.time()","        print(f\"TCP Connection Time: {(tcp_end - tcp_start)*1000:.2f} ms\")","    except socket.error as e:","        tcp_end = time.time()","        print(f\"TCP Connection Time: {(tcp_end - tcp_start)*1000:.2f} ms\")","        print(f\"TCP connection failed: {e}\")"
 "8	LINE	0
-	    timer.start("for")
-|3,0,8,1,1,0,1727131990,"    timer.start(\"for\")"
+	# ./request_profiler.py
+	dnspython
+|3,0,8,1,2,0,1727307021,"# ./request_profiler.py","dnspython"
 "9	LINE	0
-	    timer.print("sec2")
-|3,0,9,1,1,0,1727131989,"    timer.print(\"sec2\")"
+	import socket
+	import ssl
+	import sys
+	import time
+	from urllib.parse import urlparse
+	
+	import dns.resolver  # Requires dnspython package
+	
+	def profile_request():
+	    url = 'https://www.google.com'  # Hardcoded URL
+	    parsed_url = urlparse(url)
+	    hostname = parsed_url.hostname
+	    port = parsed_url.port
+	    scheme = parsed_url.scheme
+	    path = parsed_url.path or '/'
+	    if not port:
+	        port = 443 if scheme == 'https' else 80
+	
+	    print(f"Profiling request to {url}")
+	    print(f"Hostname: {hostname}")
+	    print(f"Port: {port}")
+	    print(f"Scheme: {scheme.upper()}")
+	
+	    # Initialize total DNS time
+	    total_dns_time = 0
+	
+	    # Phase 1: DNS Lookup - A Record (IPv4)
+	    try:
+	        dns_a_start = time.time()
+	        answers_a = dns.resolver.resolve(hostname, 'A')
+	        dns_a_end = time.time()
+	        dns_a_time = dns_a_end - dns_a_start
+	        total_dns_time += dns_a_time
+	        ipv4_addresses = [answer.to_text() for answer in answers_a]
+	        print(f"A Record Lookup Time: {dns_a_time*1000:.2f} ms")
+	    except dns.resolver.NoAnswer:
+	        print("No A record found.")
+	        ipv4_addresses = []
+	    except dns.resolver.NXDOMAIN:
+	        print("Domain does not exist.")
+	        sys.exit(1)
+	    except Exception as e:
+	        print(f"A Record lookup failed: {e}")
+	        sys.exit(1)
+	
+	    # Phase 1b: DNS Lookup - AAAA Record (IPv6)
+	    try:
+	        dns_aaaa_start = time.time()
+	        answers_aaaa = dns.resolver.resolve(hostname, 'AAAA')
+	        dns_aaaa_end = time.time()
+|3,0,9,1,50,0,1727306973,"import socket","import ssl","import sys","import time","from urllib.parse import urlparse","","import dns.resolver  # Requires dnspython package","","def profile_request():","    url = 'https://www.google.com'  # Hardcoded URL","    parsed_url = urlparse(url)","    hostname = parsed_url.hostname","    port = parsed_url.port","    scheme = parsed_url.scheme","    path = parsed_url.path or '/'","    if not port:",>49
+|<"        port = 443 if scheme == 'https' else 80","","    print(f\"Profiling request to {url}\")","    print(f\"Hostname: {hostname}\")","    print(f\"Port: {port}\")","    print(f\"Scheme: {scheme.upper()}\")","","    # Initialize total DNS time","    total_dns_time = 0","","    # Phase 1: DNS Lookup - A Record (IPv4)","    try:","        dns_a_start = time.time()","        answers_a = dns.resolver.resolve(hostname, 'A')","        dns_a_end = time.time()",>46
+|<"        dns_a_time = dns_a_end - dns_a_start","        total_dns_time += dns_a_time","        ipv4_addresses = [answer.to_text() for answer in answers_a]","        print(f\"A Record Lookup Time: {dns_a_time*1000:.2f} ms\")","    except dns.resolver.NoAnswer:","        print(\"No A record found.\")","        ipv4_addresses = []","    except dns.resolver.NXDOMAIN:","        print(\"Domain does not exist.\")","        sys.exit(1)","    except Exception as e:",>49
+|<"        print(f\"A Record lookup failed: {e}\")","        sys.exit(1)","","    # Phase 1b: DNS Lookup - AAAA Record (IPv6)","    try:","        dns_aaaa_start = time.time()","        answers_aaaa = dns.resolver.resolve(hostname, 'AAAA')","        dns_aaaa_end = time.time()"
 "a	CHAR	0
 	0d;d;
-|3,0,10,0,1,0,1727050295,"0d;d;"
+|3,0,10,0,1,0,1727306719,"0d;d;"
 "i	CHAR	0
 	ado_up()jk:q!
 |3,0,18,0,1,0,1724200553,"ado_up()jk:q!"
@@ -15445,237 +15888,367 @@ $
 	set verbose=20 | quit
 |3,0,28,1,2,0,1725457945,"set verbosefile=verbose-file.txt","set verbose=20 | quit"
 "-	CHAR	0
-	)
-|3,0,36,0,1,0,1727132016,")"
+	google
+|3,0,36,0,1,0,1727306826,"google"
 
 # File marks:
-'0  1  0  ~/prompts/240925.slow_curl_requests.txt
-|4,48,1,0,1727222813,"~/prompts/240925.slow_curl_requests.txt"
-'1  1  0  /root/.curlrc
-|4,49,1,0,1727220203,"/root/.curlrc"
-'2  1  0  /root/.curlrc
-|4,50,1,0,1727220203,"/root/.curlrc"
-'3  58  38  ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/requests/api.py
-|4,51,58,38,1727220076,"~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/requests/api.py"
-'4  58  38  ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/requests/api.py
-|4,52,58,38,1727220076,"~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/requests/api.py"
-'5  58  38  ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/requests/api.py
-|4,53,58,38,1727220076,"~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/requests/api.py"
-'6  58  38  ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/requests/api.py
-|4,54,58,38,1727220076,"~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/requests/api.py"
-'7  16  0  ~/pyscripts/tmp_profile_requests.py
-|4,55,16,0,1727220034,"~/pyscripts/tmp_profile_requests.py"
-'8  16  0  ~/pyscripts/tmp_profile_requests.py
-|4,56,16,0,1727220034,"~/pyscripts/tmp_profile_requests.py"
-'9  16  0  ~/pyscripts/tmp_profile_requests.py
-|4,57,16,0,1727220034,"~/pyscripts/tmp_profile_requests.py"
+'0  134  0  ~/golang/request_profiler/dns_test.c
+|4,48,134,0,1727307653,"~/golang/request_profiler/dns_test.c"
+'1  2  0  ~/golang/request_profiler/dns_test.c
+|4,49,2,0,1727307598,"~/golang/request_profiler/dns_test.c"
+'2  10  0  ~/golang/request_profiler/dns_test.c
+|4,50,10,0,1727307598,"~/golang/request_profiler/dns_test.c"
+'3  12  0  ~/golang/request_profiler/main.go
+|4,51,12,0,1727307516,"~/golang/request_profiler/main.go"
+'4  12  0  ~/golang/request_profiler/main.go
+|4,52,12,0,1727307516,"~/golang/request_profiler/main.go"
+'5  12  0  ~/golang/request_profiler/main.go
+|4,53,12,0,1727307516,"~/golang/request_profiler/main.go"
+'6  12  0  ~/golang/request_profiler/main.go
+|4,54,12,0,1727307516,"~/golang/request_profiler/main.go"
+'7  1  0  ~/golang/request_profiler/main.go
+|4,55,1,0,1727307437,"~/golang/request_profiler/main.go"
+'8  1  0  ~/golang/request_profiler/main.go
+|4,56,1,0,1727307437,"~/golang/request_profiler/main.go"
+'9  1  0  ~/golang/request_profiler/main.go
+|4,57,1,0,1727307437,"~/golang/request_profiler/main.go"
 
 # Jumplist (newest first):
--'  1  0  ~/prompts/240925.slow_curl_requests.txt
-|4,39,1,0,1727222813,"~/prompts/240925.slow_curl_requests.txt"
--'  1  0  /root/.curlrc
-|4,39,1,0,1727220203,"/root/.curlrc"
--'  1  0  /root/.curlrc
-|4,39,1,0,1727220203,"/root/.curlrc"
--'  58  38  ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/requests/api.py
-|4,39,58,38,1727220076,"~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/requests/api.py"
--'  58  38  ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/requests/api.py
-|4,39,58,38,1727220076,"~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/requests/api.py"
--'  58  38  ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/requests/api.py
-|4,39,58,38,1727220076,"~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/requests/api.py"
--'  73  11  ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/requests/api.py
-|4,39,73,11,1727220064,"~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/requests/api.py"
--'  73  11  ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/requests/api.py
-|4,39,73,11,1727220064,"~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/requests/api.py"
--'  73  11  ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/requests/api.py
-|4,39,73,11,1727220064,"~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/requests/api.py"
--'  12  24  ~/pyscripts/tmp_profile_requests.py
-|4,39,12,24,1727220060,"~/pyscripts/tmp_profile_requests.py"
--'  12  24  ~/pyscripts/tmp_profile_requests.py
-|4,39,12,24,1727220060,"~/pyscripts/tmp_profile_requests.py"
--'  12  24  ~/pyscripts/tmp_profile_requests.py
-|4,39,12,24,1727220060,"~/pyscripts/tmp_profile_requests.py"
--'  1  0  ~/pyscripts/tmp_profile_requests.py
-|4,39,1,0,1727220056,"~/pyscripts/tmp_profile_requests.py"
--'  1  0  ~/pyscripts/tmp_profile_requests.py
-|4,39,1,0,1727220056,"~/pyscripts/tmp_profile_requests.py"
--'  1  0  ~/pyscripts/tmp_profile_requests.py
-|4,39,1,0,1727220056,"~/pyscripts/tmp_profile_requests.py"
--'  16  0  ~/pyscripts/tmp_profile_requests.py
-|4,39,16,0,1727220034,"~/pyscripts/tmp_profile_requests.py"
--'  16  0  ~/pyscripts/tmp_profile_requests.py
-|4,39,16,0,1727220034,"~/pyscripts/tmp_profile_requests.py"
--'  16  0  ~/pyscripts/tmp_profile_requests.py
-|4,39,16,0,1727220034,"~/pyscripts/tmp_profile_requests.py"
--'  16  0  ~/pyscripts/tmp_profile_requests.py
-|4,39,16,0,1727220034,"~/pyscripts/tmp_profile_requests.py"
--'  1  0  ~/pyscripts/tmp_profile_requests.py
-|4,39,1,0,1727220020,"~/pyscripts/tmp_profile_requests.py"
--'  1  24  ~/tooling/json-sqlite-third-party-tools.txt
-|4,39,1,24,1727219997,"~/tooling/json-sqlite-third-party-tools.txt"
--'  1  24  ~/tooling/json-sqlite-third-party-tools.txt
-|4,39,1,24,1727219997,"~/tooling/json-sqlite-third-party-tools.txt"
--'  1  24  ~/tooling/json-sqlite-third-party-tools.txt
-|4,39,1,24,1727219997,"~/tooling/json-sqlite-third-party-tools.txt"
--'  1  24  ~/tooling/json-sqlite-third-party-tools.txt
-|4,39,1,24,1727219997,"~/tooling/json-sqlite-third-party-tools.txt"
--'  1  24  ~/tooling/json-sqlite-third-party-tools.txt
-|4,39,1,24,1727219997,"~/tooling/json-sqlite-third-party-tools.txt"
--'  4  8  ~/tooling/python-third-party-libs-to-grok.txt
-|4,39,4,8,1727219973,"~/tooling/python-third-party-libs-to-grok.txt"
--'  4  8  ~/tooling/python-third-party-libs-to-grok.txt
-|4,39,4,8,1727219973,"~/tooling/python-third-party-libs-to-grok.txt"
--'  4  8  ~/tooling/python-third-party-libs-to-grok.txt
-|4,39,4,8,1727219973,"~/tooling/python-third-party-libs-to-grok.txt"
--'  4  8  ~/tooling/python-third-party-libs-to-grok.txt
-|4,39,4,8,1727219973,"~/tooling/python-third-party-libs-to-grok.txt"
--'  4  8  ~/tooling/python-third-party-libs-to-grok.txt
-|4,39,4,8,1727219973,"~/tooling/python-third-party-libs-to-grok.txt"
--'  4  8  ~/tooling/python-third-party-libs-to-grok.txt
-|4,39,4,8,1727219973,"~/tooling/python-third-party-libs-to-grok.txt"
--'  1  0  ~/tooling/python-third-party-libs-to-grok.txt
-|4,39,1,0,1727219954,"~/tooling/python-third-party-libs-to-grok.txt"
--'  1  0  ~/tooling/python-third-party-libs-to-grok.txt
-|4,39,1,0,1727219954,"~/tooling/python-third-party-libs-to-grok.txt"
--'  1  0  ~/tooling/python-third-party-libs-to-grok.txt
-|4,39,1,0,1727219954,"~/tooling/python-third-party-libs-to-grok.txt"
--'  1  0  ~/tooling/python-third-party-libs-to-grok.txt
-|4,39,1,0,1727219954,"~/tooling/python-third-party-libs-to-grok.txt"
--'  1  0  ~/tooling/python-third-party-libs-to-grok.txt
-|4,39,1,0,1727219954,"~/tooling/python-third-party-libs-to-grok.txt"
--'  1  0  ~/tooling/python-third-party-libs-to-grok.txt
-|4,39,1,0,1727219954,"~/tooling/python-third-party-libs-to-grok.txt"
--'  1  0  ~/pyscripts/youtube-text-to-dates.py
-|4,39,1,0,1727132151,"~/pyscripts/youtube-text-to-dates.py"
--'  1  0  ~/pyscripts/youtube-text-to-dates.py
-|4,39,1,0,1727132151,"~/pyscripts/youtube-text-to-dates.py"
--'  1  0  ~/pyscripts/youtube-text-to-dates.py
-|4,39,1,0,1727132151,"~/pyscripts/youtube-text-to-dates.py"
--'  1  0  ~/pyscripts/youtube-text-to-dates.py
-|4,39,1,0,1727132151,"~/pyscripts/youtube-text-to-dates.py"
--'  1  0  ~/pyscripts/youtube-text-to-dates.py
-|4,39,1,0,1727132151,"~/pyscripts/youtube-text-to-dates.py"
--'  1  0  ~/pyscripts/youtube-text-to-dates.py
-|4,39,1,0,1727132151,"~/pyscripts/youtube-text-to-dates.py"
--'  1  0  ~/pyscripts/youtube-text-to-dates.py
-|4,39,1,0,1727132151,"~/pyscripts/youtube-text-to-dates.py"
--'  141  8  ~/pyscripts/print_todo.py
-|4,39,141,8,1727132142,"~/pyscripts/print_todo.py"
--'  141  8  ~/pyscripts/print_todo.py
-|4,39,141,8,1727132142,"~/pyscripts/print_todo.py"
--'  141  8  ~/pyscripts/print_todo.py
-|4,39,141,8,1727132142,"~/pyscripts/print_todo.py"
--'  141  8  ~/pyscripts/print_todo.py
-|4,39,141,8,1727132142,"~/pyscripts/print_todo.py"
--'  141  8  ~/pyscripts/print_todo.py
-|4,39,141,8,1727132142,"~/pyscripts/print_todo.py"
--'  141  8  ~/pyscripts/print_todo.py
-|4,39,141,8,1727132142,"~/pyscripts/print_todo.py"
--'  141  8  ~/pyscripts/print_todo.py
-|4,39,141,8,1727132142,"~/pyscripts/print_todo.py"
--'  142  0  ~/pyscripts/print_todo.py
-|4,39,142,0,1727132060,"~/pyscripts/print_todo.py"
--'  142  0  ~/pyscripts/print_todo.py
-|4,39,142,0,1727132060,"~/pyscripts/print_todo.py"
--'  142  0  ~/pyscripts/print_todo.py
-|4,39,142,0,1727132060,"~/pyscripts/print_todo.py"
--'  142  0  ~/pyscripts/print_todo.py
-|4,39,142,0,1727132060,"~/pyscripts/print_todo.py"
--'  142  0  ~/pyscripts/print_todo.py
-|4,39,142,0,1727132060,"~/pyscripts/print_todo.py"
--'  142  0  ~/pyscripts/print_todo.py
-|4,39,142,0,1727132060,"~/pyscripts/print_todo.py"
--'  142  0  ~/pyscripts/print_todo.py
-|4,39,142,0,1727132060,"~/pyscripts/print_todo.py"
--'  140  20  ~/pyscripts/print_todo.py
-|4,39,140,20,1727132059,"~/pyscripts/print_todo.py"
--'  140  20  ~/pyscripts/print_todo.py
-|4,39,140,20,1727132059,"~/pyscripts/print_todo.py"
--'  140  20  ~/pyscripts/print_todo.py
-|4,39,140,20,1727132059,"~/pyscripts/print_todo.py"
--'  140  20  ~/pyscripts/print_todo.py
-|4,39,140,20,1727132059,"~/pyscripts/print_todo.py"
--'  140  20  ~/pyscripts/print_todo.py
-|4,39,140,20,1727132059,"~/pyscripts/print_todo.py"
--'  140  20  ~/pyscripts/print_todo.py
-|4,39,140,20,1727132059,"~/pyscripts/print_todo.py"
--'  140  20  ~/pyscripts/print_todo.py
-|4,39,140,20,1727132059,"~/pyscripts/print_todo.py"
--'  136  36  ~/pyscripts/print_todo.py
-|4,39,136,36,1727132018,"~/pyscripts/print_todo.py"
--'  136  36  ~/pyscripts/print_todo.py
-|4,39,136,36,1727132018,"~/pyscripts/print_todo.py"
--'  136  36  ~/pyscripts/print_todo.py
-|4,39,136,36,1727132018,"~/pyscripts/print_todo.py"
--'  136  36  ~/pyscripts/print_todo.py
-|4,39,136,36,1727132018,"~/pyscripts/print_todo.py"
--'  136  36  ~/pyscripts/print_todo.py
-|4,39,136,36,1727132018,"~/pyscripts/print_todo.py"
--'  136  36  ~/pyscripts/print_todo.py
-|4,39,136,36,1727132018,"~/pyscripts/print_todo.py"
--'  136  36  ~/pyscripts/print_todo.py
-|4,39,136,36,1727132018,"~/pyscripts/print_todo.py"
--'  103  4  ~/pyscripts/print_todo.py
-|4,39,103,4,1727131995,"~/pyscripts/print_todo.py"
--'  103  4  ~/pyscripts/print_todo.py
-|4,39,103,4,1727131995,"~/pyscripts/print_todo.py"
--'  103  4  ~/pyscripts/print_todo.py
-|4,39,103,4,1727131995,"~/pyscripts/print_todo.py"
--'  103  4  ~/pyscripts/print_todo.py
-|4,39,103,4,1727131995,"~/pyscripts/print_todo.py"
--'  103  4  ~/pyscripts/print_todo.py
-|4,39,103,4,1727131995,"~/pyscripts/print_todo.py"
--'  103  4  ~/pyscripts/print_todo.py
-|4,39,103,4,1727131995,"~/pyscripts/print_todo.py"
--'  103  4  ~/pyscripts/print_todo.py
-|4,39,103,4,1727131995,"~/pyscripts/print_todo.py"
--'  128  4  ~/pyscripts/print_todo.py
-|4,39,128,4,1727131990,"~/pyscripts/print_todo.py"
--'  127  16  ~/pyscripts/print_todo.py
-|4,39,127,16,1727131990,"~/pyscripts/print_todo.py"
--'  128  4  ~/pyscripts/print_todo.py
-|4,39,128,4,1727131990,"~/pyscripts/print_todo.py"
--'  127  16  ~/pyscripts/print_todo.py
-|4,39,127,16,1727131990,"~/pyscripts/print_todo.py"
--'  128  4  ~/pyscripts/print_todo.py
-|4,39,128,4,1727131990,"~/pyscripts/print_todo.py"
--'  127  16  ~/pyscripts/print_todo.py
-|4,39,127,16,1727131990,"~/pyscripts/print_todo.py"
--'  128  4  ~/pyscripts/print_todo.py
-|4,39,128,4,1727131990,"~/pyscripts/print_todo.py"
--'  127  16  ~/pyscripts/print_todo.py
-|4,39,127,16,1727131990,"~/pyscripts/print_todo.py"
--'  128  4  ~/pyscripts/print_todo.py
-|4,39,128,4,1727131990,"~/pyscripts/print_todo.py"
--'  127  16  ~/pyscripts/print_todo.py
-|4,39,127,16,1727131990,"~/pyscripts/print_todo.py"
--'  128  4  ~/pyscripts/print_todo.py
-|4,39,128,4,1727131990,"~/pyscripts/print_todo.py"
--'  127  16  ~/pyscripts/print_todo.py
-|4,39,127,16,1727131990,"~/pyscripts/print_todo.py"
--'  128  4  ~/pyscripts/print_todo.py
-|4,39,128,4,1727131990,"~/pyscripts/print_todo.py"
--'  127  16  ~/pyscripts/print_todo.py
-|4,39,127,16,1727131990,"~/pyscripts/print_todo.py"
--'  134  4  ~/pyscripts/print_todo.py
-|4,39,134,4,1727131989,"~/pyscripts/print_todo.py"
--'  133  13  ~/pyscripts/print_todo.py
-|4,39,133,13,1727131989,"~/pyscripts/print_todo.py"
--'  134  4  ~/pyscripts/print_todo.py
-|4,39,134,4,1727131989,"~/pyscripts/print_todo.py"
--'  133  13  ~/pyscripts/print_todo.py
-|4,39,133,13,1727131989,"~/pyscripts/print_todo.py"
--'  134  4  ~/pyscripts/print_todo.py
-|4,39,134,4,1727131989,"~/pyscripts/print_todo.py"
--'  133  13  ~/pyscripts/print_todo.py
-|4,39,133,13,1727131989,"~/pyscripts/print_todo.py"
--'  134  4  ~/pyscripts/print_todo.py
-|4,39,134,4,1727131989,"~/pyscripts/print_todo.py"
+-'  134  0  ~/golang/request_profiler/dns_test.c
+|4,39,134,0,1727307653,"~/golang/request_profiler/dns_test.c"
+-'  1  18  ~/golang/request_profiler/dns_test.c
+|4,39,1,18,1727307650,"~/golang/request_profiler/dns_test.c"
+-'  2  0  ~/golang/request_profiler/dns_test.c
+|4,39,2,0,1727307598,"~/golang/request_profiler/dns_test.c"
+-'  10  0  ~/golang/request_profiler/dns_test.c
+|4,39,10,0,1727307598,"~/golang/request_profiler/dns_test.c"
+-'  1  0  ~/golang/request_profiler/dns_test.c
+|4,39,1,0,1727307594,"~/golang/request_profiler/dns_test.c"
+-'  12  0  ~/golang/request_profiler/main.go
+|4,39,12,0,1727307516,"~/golang/request_profiler/main.go"
+-'  12  0  ~/golang/request_profiler/main.go
+|4,39,12,0,1727307516,"~/golang/request_profiler/main.go"
+-'  12  0  ~/golang/request_profiler/main.go
+|4,39,12,0,1727307516,"~/golang/request_profiler/main.go"
+-'  132  0  ~/golang/request_profiler/main.go
+|4,39,132,0,1727307513,"~/golang/request_profiler/main.go"
+-'  132  0  ~/golang/request_profiler/main.go
+|4,39,132,0,1727307513,"~/golang/request_profiler/main.go"
+-'  132  0  ~/golang/request_profiler/main.go
+|4,39,132,0,1727307513,"~/golang/request_profiler/main.go"
+-'  1  14  ~/golang/request_profiler/main.go
+|4,39,1,14,1727307504,"~/golang/request_profiler/main.go"
+-'  1  14  ~/golang/request_profiler/main.go
+|4,39,1,14,1727307504,"~/golang/request_profiler/main.go"
+-'  1  14  ~/golang/request_profiler/main.go
+|4,39,1,14,1727307504,"~/golang/request_profiler/main.go"
+-'  1  0  ~/golang/request_profiler/main.go
+|4,39,1,0,1727307437,"~/golang/request_profiler/main.go"
+-'  2  0  ~/golang/request_profiler/main.go
+|4,39,2,0,1727307432,"~/golang/request_profiler/main.go"
+-'  133  0  ~/golang/request_profiler/main.go
+|4,39,133,0,1727307432,"~/golang/request_profiler/main.go"
+-'  2  0  ~/golang/request_profiler/main.go
+|4,39,2,0,1727307432,"~/golang/request_profiler/main.go"
+-'  133  0  ~/golang/request_profiler/main.go
+|4,39,133,0,1727307432,"~/golang/request_profiler/main.go"
+-'  2  0  ~/golang/request_profiler/main.go
+|4,39,2,0,1727307432,"~/golang/request_profiler/main.go"
+-'  133  0  ~/golang/request_profiler/main.go
+|4,39,133,0,1727307432,"~/golang/request_profiler/main.go"
+-'  2  0  ~/golang/request_profiler/main.go
+|4,39,2,0,1727307341,"~/golang/request_profiler/main.go"
+-'  109  0  ~/pyscripts/request_profiler.py
+|4,39,109,0,1727307277,"~/pyscripts/request_profiler.py"
+-'  109  0  ~/pyscripts/request_profiler.py
+|4,39,109,0,1727307277,"~/pyscripts/request_profiler.py"
+-'  109  0  ~/pyscripts/request_profiler.py
+|4,39,109,0,1727307277,"~/pyscripts/request_profiler.py"
+-'  109  0  ~/pyscripts/request_profiler.py
+|4,39,109,0,1727307277,"~/pyscripts/request_profiler.py"
+-'  109  0  ~/pyscripts/request_profiler.py
+|4,39,109,0,1727307277,"~/pyscripts/request_profiler.py"
+-'  1  13  ~/pyscripts/request_profiler.py
+|4,39,1,13,1727307200,"~/pyscripts/request_profiler.py"
+-'  2  0  ~/pyscripts/request_profiler.py
+|4,39,2,0,1727307200,"~/pyscripts/request_profiler.py"
+-'  1  13  ~/pyscripts/request_profiler.py
+|4,39,1,13,1727307200,"~/pyscripts/request_profiler.py"
+-'  2  0  ~/pyscripts/request_profiler.py
+|4,39,2,0,1727307200,"~/pyscripts/request_profiler.py"
+-'  1  13  ~/pyscripts/request_profiler.py
+|4,39,1,13,1727307200,"~/pyscripts/request_profiler.py"
+-'  2  0  ~/pyscripts/request_profiler.py
+|4,39,2,0,1727307200,"~/pyscripts/request_profiler.py"
+-'  1  13  ~/pyscripts/request_profiler.py
+|4,39,1,13,1727307200,"~/pyscripts/request_profiler.py"
+-'  2  0  ~/pyscripts/request_profiler.py
+|4,39,2,0,1727307200,"~/pyscripts/request_profiler.py"
+-'  1  13  ~/pyscripts/request_profiler.py
+|4,39,1,13,1727307200,"~/pyscripts/request_profiler.py"
+-'  2  0  ~/pyscripts/request_profiler.py
+|4,39,2,0,1727307200,"~/pyscripts/request_profiler.py"
+-'  15  0  ~/pyscripts/requirements.txt
+|4,39,15,0,1727307022,"~/pyscripts/requirements.txt"
+-'  15  0  ~/pyscripts/requirements.txt
+|4,39,15,0,1727307022,"~/pyscripts/requirements.txt"
+-'  15  0  ~/pyscripts/requirements.txt
+|4,39,15,0,1727307022,"~/pyscripts/requirements.txt"
+-'  15  0  ~/pyscripts/requirements.txt
+|4,39,15,0,1727307022,"~/pyscripts/requirements.txt"
+-'  15  0  ~/pyscripts/requirements.txt
+|4,39,15,0,1727307022,"~/pyscripts/requirements.txt"
+-'  1  0  ~/pyscripts/requirements.txt
+|4,39,1,0,1727307019,"~/pyscripts/requirements.txt"
+-'  1  0  ~/pyscripts/requirements.txt
+|4,39,1,0,1727307019,"~/pyscripts/requirements.txt"
+-'  1  0  ~/pyscripts/requirements.txt
+|4,39,1,0,1727307019,"~/pyscripts/requirements.txt"
+-'  1  0  ~/pyscripts/requirements.txt
+|4,39,1,0,1727307019,"~/pyscripts/requirements.txt"
+-'  1  0  ~/pyscripts/requirements.txt
+|4,39,1,0,1727307019,"~/pyscripts/requirements.txt"
+-'  1  0  /etc/resolv.conf
+|4,39,1,0,1727306834,"/etc/resolv.conf"
+-'  1  0  /etc/resolv.conf
+|4,39,1,0,1727306834,"/etc/resolv.conf"
+-'  1  0  /etc/resolv.conf
+|4,39,1,0,1727306834,"/etc/resolv.conf"
+-'  1  0  /etc/resolv.conf
+|4,39,1,0,1727306834,"/etc/resolv.conf"
+-'  1  0  /etc/resolv.conf
+|4,39,1,0,1727306834,"/etc/resolv.conf"
+-'  16  8  ~/pyscripts/requirements.txt
+|4,39,16,8,1727306786,"~/pyscripts/requirements.txt"
+-'  17  8  ~/pyscripts/requirements.txt
+|4,39,17,8,1727306786,"~/pyscripts/requirements.txt"
+-'  16  8  ~/pyscripts/requirements.txt
+|4,39,16,8,1727306786,"~/pyscripts/requirements.txt"
+-'  17  8  ~/pyscripts/requirements.txt
+|4,39,17,8,1727306786,"~/pyscripts/requirements.txt"
+-'  16  8  ~/pyscripts/requirements.txt
+|4,39,16,8,1727306786,"~/pyscripts/requirements.txt"
+-'  17  8  ~/pyscripts/requirements.txt
+|4,39,17,8,1727306786,"~/pyscripts/requirements.txt"
+-'  16  8  ~/pyscripts/requirements.txt
+|4,39,16,8,1727306786,"~/pyscripts/requirements.txt"
+-'  17  8  ~/pyscripts/requirements.txt
+|4,39,17,8,1727306786,"~/pyscripts/requirements.txt"
+-'  16  8  ~/pyscripts/requirements.txt
+|4,39,16,8,1727306786,"~/pyscripts/requirements.txt"
+-'  17  8  ~/pyscripts/requirements.txt
+|4,39,17,8,1727306786,"~/pyscripts/requirements.txt"
+-'  1  0  ~/pyscripts/requirements.txt
+|4,39,1,0,1727306777,"~/pyscripts/requirements.txt"
+-'  94  38  ~/pyscripts/request_profiler.py
+|4,39,94,38,1727306774,"~/pyscripts/request_profiler.py"
+-'  94  38  ~/pyscripts/request_profiler.py
+|4,39,94,38,1727306774,"~/pyscripts/request_profiler.py"
+-'  94  38  ~/pyscripts/request_profiler.py
+|4,39,94,38,1727306774,"~/pyscripts/request_profiler.py"
+-'  94  38  ~/pyscripts/request_profiler.py
+|4,39,94,38,1727306774,"~/pyscripts/request_profiler.py"
+-'  94  38  ~/pyscripts/request_profiler.py
+|4,39,94,38,1727306774,"~/pyscripts/request_profiler.py"
+-'  94  38  ~/pyscripts/request_profiler.py
+|4,39,94,38,1727306774,"~/pyscripts/request_profiler.py"
+-'  60  0  ~/pyscripts/request_profiler.py
+|4,39,60,0,1727306678,"~/pyscripts/request_profiler.py"
+-'  60  0  ~/pyscripts/request_profiler.py
+|4,39,60,0,1727306678,"~/pyscripts/request_profiler.py"
+-'  60  0  ~/pyscripts/request_profiler.py
+|4,39,60,0,1727306678,"~/pyscripts/request_profiler.py"
+-'  60  0  ~/pyscripts/request_profiler.py
+|4,39,60,0,1727306678,"~/pyscripts/request_profiler.py"
+-'  60  0  ~/pyscripts/request_profiler.py
+|4,39,60,0,1727306678,"~/pyscripts/request_profiler.py"
+-'  60  0  ~/pyscripts/request_profiler.py
+|4,39,60,0,1727306678,"~/pyscripts/request_profiler.py"
+-'  86  0  ~/pyscripts/request_profiler.py
+|4,39,86,0,1727306672,"~/pyscripts/request_profiler.py"
+-'  86  0  ~/pyscripts/request_profiler.py
+|4,39,86,0,1727306672,"~/pyscripts/request_profiler.py"
+-'  86  0  ~/pyscripts/request_profiler.py
+|4,39,86,0,1727306672,"~/pyscripts/request_profiler.py"
+-'  86  0  ~/pyscripts/request_profiler.py
+|4,39,86,0,1727306672,"~/pyscripts/request_profiler.py"
+-'  86  0  ~/pyscripts/request_profiler.py
+|4,39,86,0,1727306672,"~/pyscripts/request_profiler.py"
+-'  86  0  ~/pyscripts/request_profiler.py
+|4,39,86,0,1727306672,"~/pyscripts/request_profiler.py"
+-'  95  0  ~/pyscripts/request_profiler.py
+|4,39,95,0,1727306671,"~/pyscripts/request_profiler.py"
+-'  95  0  ~/pyscripts/request_profiler.py
+|4,39,95,0,1727306671,"~/pyscripts/request_profiler.py"
+-'  95  0  ~/pyscripts/request_profiler.py
+|4,39,95,0,1727306671,"~/pyscripts/request_profiler.py"
+-'  95  0  ~/pyscripts/request_profiler.py
+|4,39,95,0,1727306671,"~/pyscripts/request_profiler.py"
+-'  95  0  ~/pyscripts/request_profiler.py
+|4,39,95,0,1727306671,"~/pyscripts/request_profiler.py"
+-'  95  0  ~/pyscripts/request_profiler.py
+|4,39,95,0,1727306671,"~/pyscripts/request_profiler.py"
+-'  96  0  ~/pyscripts/request_profiler.py
+|4,39,96,0,1727306670,"~/pyscripts/request_profiler.py"
+-'  96  0  ~/pyscripts/request_profiler.py
+|4,39,96,0,1727306670,"~/pyscripts/request_profiler.py"
+-'  96  0  ~/pyscripts/request_profiler.py
+|4,39,96,0,1727306670,"~/pyscripts/request_profiler.py"
+-'  96  0  ~/pyscripts/request_profiler.py
+|4,39,96,0,1727306670,"~/pyscripts/request_profiler.py"
+-'  96  0  ~/pyscripts/request_profiler.py
+|4,39,96,0,1727306670,"~/pyscripts/request_profiler.py"
+-'  96  0  ~/pyscripts/request_profiler.py
+|4,39,96,0,1727306670,"~/pyscripts/request_profiler.py"
+-'  1  11  ~/pyscripts/request_profiler.py
+|4,39,1,11,1727306669,"~/pyscripts/request_profiler.py"
+-'  2  0  ~/pyscripts/request_profiler.py
+|4,39,2,0,1727306669,"~/pyscripts/request_profiler.py"
+-'  1  11  ~/pyscripts/request_profiler.py
+|4,39,1,11,1727306669,"~/pyscripts/request_profiler.py"
+-'  2  0  ~/pyscripts/request_profiler.py
+|4,39,2,0,1727306669,"~/pyscripts/request_profiler.py"
+-'  2  0  ~/bugs/bug.240925.slow_curl_and_requests.txt
+|4,39,2,0,1727306360,"~/bugs/bug.240925.slow_curl_and_requests.txt"
+-'  2  0  ~/bugs/bug.240925.slow_curl_and_requests.txt
+|4,39,2,0,1727306360,"~/bugs/bug.240925.slow_curl_and_requests.txt"
+-'  2  0  ~/bugs/bug.240925.slow_curl_and_requests.txt
+|4,39,2,0,1727306360,"~/bugs/bug.240925.slow_curl_and_requests.txt"
 
 # Buffer list:
-%~/prompts/240925.slow_curl_requests.txt	1	0
+%~/golang/request_profiler/dns_test.c	134	0
 
 # History of marks within files (newest to oldest):
+
+> ~/golang/request_profiler/dns_test.c
+	*	1727307651	0
+	"	134	0
+	^	134	0
+	.	133	1
+	+	2	0
+	+	133	1
+
+> ~/golang/request_profiler/main.go
+	*	1727307514	0
+	"	12	0
+	^	132	0
+	.	131	1
+	+	2	0
+	+	131	1
+
+> ~/pyscripts/request_profiler.py
+	*	1727307201	0
+	"	109	0
+	^	109	0
+	.	108	21
+	+	1	0
+	+	1	20
+	+	1	18
+	+	1	0
+	+	1	29
+	+	1	68
+	+	1	5
+	+	1	0
+	+	1	21
+	+	1	0
+	+	1	13
+	+	2	0
+	+	108	21
+
+> ~/pyscripts/requirements.txt
+	*	1727307021	0
+	"	15	0
+	.	16	0
+	+	2	4
+	+	1	5
+	+	4	10
+	+	5	7
+	+	6	5
+	+	7	6
+	+	10	8
+	+	9	0
+	+	8	0
+	+	12	3
+	+	14	23
+	+	14	0
+	+	16	0
+
+> /etc/resolv.conf
+	*	1727306833	0
+	"	1	0
+
+> ~/bugs/bug.240925.slow_curl_and_requests.txt
+	*	1727306245	0
+	"	2	0
+	^	2	0
+	.	1	45
+	+	17	0
+	+	17	32
+	+	23	28
+	+	21	0
+	+	19	20
+	+	26	0
+	+	18	59
+	+	17	0
+	+	18	0
+	+	26	0
+	+	47	0
+	+	18	0
+	+	14	9
+	+	15	0
+	+	18	0
+	+	19	3
+	+	19	0
+	+	19	21
+	+	47	0
+	+	24	6
+	+	20	0
+	+	25	0
+	+	19	0
+	+	28	27
+	+	31	3
+	+	33	28
+	+	17	0
+	+	16	0
+	+	17	0
+	+	16	7
+	+	18	7
+	+	26	7
+	+	28	7
+	+	30	7
+	+	33	7
+	+	35	32
+	+	47	0
+	+	35	7
+	+	44	163
+	+	46	66
+	+	43	39
+	+	6	84
+	+	47	0
+	+	41	0
+	+	42	54
+	+	44	59
+	+	43	66
+	+	44	104
+	+	45	0
+	+	37	149
+	+	40	0
+	+	47	67
+	+	39	43
+	+	51	81
+	+	61	0
+	+	49	0
+	+	50	0
+	+	53	39
+	+	59	32
+	+	8	9
+	+	10	3
+	+	9	0
+	+	7	0
+	+	3	7
+	+	5	0
+	+	4	0
+	+	1	45
 
 > ~/prompts/240925.slow_curl_requests.txt
 	*	1727221716	0
@@ -19510,24 +20083,6 @@ $
 	+	5	0
 	+	162	0
 	+	4	0
-
-> ~/pyscripts/requirements.txt
-	*	1725540912	0
-	"	14	0
-	^	14	8
-	.	14	0
-	+	2	4
-	+	1	5
-	+	4	10
-	+	5	7
-	+	6	5
-	+	7	6
-	+	10	8
-	+	9	0
-	+	8	0
-	+	12	3
-	+	14	23
-	+	14	0
 
 > ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/googleapiclient/discovery.py
 	*	1725539803	0
