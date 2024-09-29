@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/\C\<is_writing_to_stdout\>
+~MSle0~/fzf
 
 # Last Substitute Search Pattern:
 ~MSle0&--[a-z-]*
@@ -21,17 +21,71 @@ $
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1727307652,,"q"
+|2,0,1727508916,,"q"
+:Date
+|2,0,1727446442,,"Date"
+:q!
+|2,0,1727446429,,"q!"
+:e!
+|2,0,1727446216,,"e!"
+:MRU fish
+|2,0,1727445914,,"MRU fish"
+:MRU fish_his
+|2,0,1727445813,,"MRU fish_his"
+:MRU bash_his
+|2,0,1727445806,,"MRU bash_his"
+:Enumerate
+|2,0,1727425122,,"Enumerate"
+:pwd
+|2,0,1727425088,,"pwd"
+:MRU 215:.config/todo.txt
+|2,0,1727424695,,"MRU 215:.config/todo.txt"
+:CocRestart
+|2,0,1727364335,,"CocRestart"
+:CocConfig
+|2,0,1727364325,,"CocConfig"
+:e
+|2,0,1727364239,,"e"
+:Co
+|2,0,1727364222,,"Co"
+:e hateoas-api.py
+|2,0,1727364170,,"e hateoas-api.py"
+:Rg 
+|2,0,1727362029,,"Rg "
+:Rg
+|2,0,1727361813,,"Rg"
+:e ~/tmp/colors.txt
+|2,0,1727360012,,"e ~/tmp/colors.txt"
+:MRU fz
+|2,0,1727354693,,"MRU fz"
+:term
+|2,0,1727349167,,"term"
+:fzf
+|2,0,1727348522,,"fzf"
+:R
+|2,0,1727347651,,"R"
+:bd!
+|2,0,1727347590,,"bd!"
+:bd
+|2,0,1727347586,,"bd"
+:MRU 3:fzf-command-samples.txt
+|2,0,1727346708,,"MRU 3:fzf-command-samples.txt"
+:so %
+|2,0,1727328052,,"so %"
+:e fzf-command-samples.txt
+|2,0,1727328036,,"e fzf-command-samples.txt"
+:Coc
+|2,0,1727327193,,"Coc"
+:map \d
+|2,0,1727327169,,"map \\d"
+:e requirements-large.txt
+|2,0,1727312859,,"e requirements-large.txt"
 :qa
 |2,0,1727307276,,"qa"
 :e requirements.txt
 |2,0,1727307019,,"e requirements.txt"
 :e request_profiler.py
 |2,0,1727307017,,"e request_profiler.py"
-:q!
-|2,0,1727306875,,"q!"
-:term
-|2,0,1727306865,,"term"
 :e /etc/resolv.conf
 |2,0,1727306833,,"e /etc/resolv.conf"
 :CocDiagnostics
@@ -40,12 +94,8 @@ $
 |2,0,1727306516,,"lnext"
 :lopen
 |2,0,1727306513,,"lopen"
-:Coc
-|2,0,1727306511,,"Coc"
 :o
 |2,0,1727304745,,"o"
-:pwd
-|2,0,1727132145,,"pwd"
 :h :term
 |2,0,1727049999,,"h :term"
 :'<,'>!
@@ -54,8 +104,6 @@ $
 |2,0,1727042848,,"23"
 :enew
 |2,0,1727042795,,"enew"
-:e!
-|2,0,1727042793,,"e!"
 :vert term
 |2,0,1727042724,,"vert term"
 :t
@@ -108,18 +156,12 @@ $
 |2,0,1727040713,,"e "
 : w ~/.vim/tmp/fzf-command-samples.txt
 |2,0,1727040711,," w ~/.vim/tmp/fzf-command-samples.txt"
-:so %
-|2,0,1727040431,,"so %"
 :Rename ripgrep-fd-fzf-flags-cheat-sheet.txt
 |2,0,1727012698,,"Rename ripgrep-fd-fzf-flags-cheat-sheet.txt"
 :e .
 |2,0,1727012138,,"e ."
-:e
-|2,0,1727012135,,"e"
 :e fzf.txt
 |2,0,1727012109,,"e fzf.txt"
-:Rg
-|2,0,1727012085,,"Rg"
 :MRU rg
 |2,0,1727011956,,"MRU rg"
 :h 
@@ -142,8 +184,6 @@ $
 |2,0,1726962056,,"17"
 :e secrets.env
 |2,0,1726512397,,"e secrets.env"
-:CocRestart
-|2,0,1726512353,,"CocRestart"
 :Template
 |2,0,1726512323,,"Template"
 :Rename bugs.240913.python_autoimport_completion.txt
@@ -180,8 +220,6 @@ $
 |2,0,1726305843,,"g/color/"
 :echo       CocAction('codeAction', 'cursor')
 |2,0,1726262443,,"echo       CocAction('codeAction', 'cursor')"
-:MRU fish
-|2,0,1726262163,,"MRU fish"
 :sc
 |2,0,1726262148,,"sc"
 :iabbrev
@@ -200,10 +238,6 @@ $
 |2,0,1726233980,,"CocList"
 :CocFirst
 |2,0,1726233867,,"CocFirst"
-:bd
-|2,0,1726233858,,"bd"
-:Date
-|2,0,1726233830,,"Date"
 :e ~/.vim/todo.txt
 |2,0,1726233828,,"e ~/.vim/todo.txt"
 :h :Coc
@@ -220,16 +254,12 @@ $
 |2,0,1726233693,,"MRU py"
 :e test_lsp.py
 |2,0,1726233668,,"e test_lsp.py"
-:CocConfig
-|2,0,1726233653,,"CocConfig"
 :call CocActionAsync("quickfixes")
 |2,0,1726233541,,"call CocActionAsync(\"quickfixes\")"
 :CocUpdate
 |2,0,1726233424,,"CocUpdate"
 :PlugUpdate
 |2,0,1726233380,,"PlugUpdate"
-:bd!
-|2,0,1726233200,,"bd!"
 :MRU t
 |2,0,1726211643,,"MRU t"
 :MRU tr
@@ -286,8 +316,6 @@ $
 |2,0,1726181664,,"e .env"
 :e requirements-dev.txt
 |2,0,1726181265,,"e requirements-dev.txt"
-:Enumerate
-|2,0,1726180836,,"Enumerate"
 :MRU jprev
 |2,0,1726180624,,"MRU jprev"
 :jumps
@@ -1692,8 +1720,6 @@ $
 |2,0,1723624033,,"e ~/.vim/syntax/ansilog.vim"
 :%!bat %
 |2,0,1723589152,,"%!bat %"
-:e ~/tmp/colors.txt
-|2,0,1723589110,,"e ~/tmp/colors.txt"
 :let g:colorizer_conceal_cursor_mode='nvc'
 |2,0,1723589077,,"let g:colorizer_conceal_cursor_mode='nvc'"
 :let g:colorizer_auto_color = 1
@@ -1990,8 +2016,6 @@ $
 |2,0,1723131219,,"e1"
 :e ui-components-css/static/css-themes/dark-gray-mono.css
 |2,0,1723100747,,"e ui-components-css/static/css-themes/dark-gray-mono.css"
-:e hateoas-api.py
-|2,0,1723065835,,"e hateoas-api.py"
 :b migrations/2400808_portionurls-resync.py
 |2,0,1723065727,,"b migrations/2400808_portionurls-resync.py"
 :e main.sql
@@ -2066,8 +2090,6 @@ $
 |2,0,1722961634,,"Buff"
 :grep -g '*.vim' -g 'vimrc' --fixed-strings undo
 |2,0,1722961542,,"grep -g '*.vim' -g 'vimrc' --fixed-strings undo"
-:R
-|2,0,1722961538,,"R"
 :grep -g '*.txt' --fixed-strings 
 |2,0,1722961518,,"grep -g '*.txt' --fixed-strings "
 :h undo
@@ -2246,8 +2268,6 @@ $
 |2,0,1722629102,,"36"
 :e ../setup.py
 |2,0,1722629025,,"e ../setup.py"
-:Rg 
-|2,0,1722626819,,"Rg "
 :MRU 43:print-personal-mappings.vim
 |2,0,1722626803,,"MRU 43:print-personal-mappings.vim"
 :MRU 22:utils.vim
@@ -5818,8 +5838,6 @@ $
 |2,0,1713970231,,"e download-portionurl.py"
 :Copilot enable
 |2,0,1713970041,,"Copilot enable"
-:Co
-|2,0,1713955430,,"Co"
 :let g:copilot_workspace_folders=["/home/vivek/hateoas"]
 |2,0,1713955427,,"let g:copilot_workspace_folders=[\"/home/vivek/hateoas\"]"
 :Rename download.py
@@ -7708,8 +7726,6 @@ $
 |2,0,1694110532,,"set ft=python"
 :find tsconfig.json
 |2,0,1694110504,,"find tsconfig.json"
-:map \d
-|2,0,1694110411,,"map \\d"
 :find Actions.vue
 |2,0,1694108301,,"find Actions.vue"
 :let g:vue_pre_processors = []
@@ -10502,6 +10518,38 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/fzf
+|2,1,1727446916,47,"fzf"
+?/timeago
+|2,1,1727446676,47,"timeago"
+? ^\s*$\n\s*$
+|2,1,1727446583,,"^\\s*$\\n\\s*$"
+?/reoad
+|2,1,1727446290,47,"reoad"
+?/todos
+|2,1,1727446238,47,"todos"
+?/\t
+|2,1,1727425461,47,"\\t"
+?/\(def\|class\)\s\+\w*fzf
+|2,1,1727425328,47,"\\(def\\|class\\)\\s\\+\\w*fzf"
+? in \zs[^:]\+
+|2,1,1727425122,,"in \\zs[^:]\\+"
+?/to
+|2,1,1727425094,47,"to"
+?/module
+|2,1,1727361756,47,"module"
+?/--
+|2,1,1727347621,47,"--"
+?/-1
+|2,1,1727328042,47,"-1"
+?/nth
+|2,1,1727327320,47,"nth"
+?/oldfiles
+|2,1,1727327318,47,"oldfiles"
+? timer\..*\"get_todo_files\"
+|2,1,1727327150,,"timer\\..*\\\"get_todo_files\\\""
+? timer\..*\"main\"
+|2,1,1727327139,,"timer\\..*\\\"main\\\""
 ? timer\..*\"sec3\"
 |2,1,1727132060,,"timer\\..*\\\"sec3\\\""
 ? timer\..*\"append\"
@@ -10518,10 +10566,6 @@ $
 |2,1,1727050452,47,"count"
 ?/wrap
 |2,1,1727050004,47,"wrap"
-?/fzf
-|2,1,1727042862,47,"fzf"
-? ^\s*$\n\s*$
-|2,1,1727042558,,"^\\s*$\\n\\s*$"
 ?/iglob
 |2,1,1727042146,47,"iglob"
 ?/--color
@@ -10702,8 +10746,6 @@ $
 |2,1,1725752559,47,"right_tokens"
 ?/right_toke
 |2,1,1725752369,47,"right_toke"
-? in \zs[^:]\+
-|2,1,1725749928,,"in \\zs[^:]\\+"
 ?/iter
 |2,1,1725688395,47,"iter"
 ?/number
@@ -11102,8 +11144,6 @@ $
 |2,1,1724114042,47,"needle"
 ?/should
 |2,1,1724112946,47,"should"
-? timer\..*\"main\"
-|2,1,1724112037,,"timer\\..*\\\"main\\\""
 ?/cwd
 |2,1,1724111493,47,"cwd"
 ?/NOTE:\d\/\zs
@@ -11178,8 +11218,6 @@ $
 |2,1,1723586651,47,"\\(def\\|class\\)\\s\\+\\w*date"
 ?/raw
 |2,1,1723585474,47,"raw"
-?/timeago
-|2,1,1723584616,47,"timeago"
 ?/T
 |2,1,1723583567,47,"T"
 ?/fromisoformat
@@ -11300,8 +11338,6 @@ $
 |2,1,1722964464,,"\\<transcription_dir\\>"
 ?/120
 |2,1,1722963676,47,"120"
-?/\t
-|2,1,1722963357,47,"\\t"
 ?/wav
 |2,1,1722963099,47,"wav"
 ? \<offset\>
@@ -12100,8 +12136,6 @@ $
 |2,1,1718899540,47,"^#"
 ?/search\.html
 |2,1,1718899481,47,"search\\.html"
-?/oldfiles
-|2,1,1718899471,47,"oldfiles"
 ?/TabCom
 |2,1,1718898953,47,"TabCom"
 ?/grepprg
@@ -15396,478 +15430,39 @@ $
 |2,4,1693311567,,"cont"
 
 # Registers:
-""0	LINE	0
-	#include <stdio.h>
-	#include <stdlib.h>
-	#include <string.h>
-	#include <sys/socket.h>
-	#include <netdb.h>
-	#include <time.h>
+"0	LINE	0
+	    print(x.days)
+|3,0,0,1,1,0,1727446829,"    print(x.days)"
+""1	LINE	0
 	
-	int main() {
-	    const char* hostname = "www.example.com";  // Replace with a hostname where you've observed the issue
-	    struct addrinfo hints, *res;
-	    int err;
-	    struct timespec start, end;
-	
-	    memset(&hints, 0, sizeof(hints));
-	    hints.ai_family = AF_UNSPEC; // Request both IPv4 and IPv6 addresses
-	    hints.ai_socktype = SOCK_STREAM;
-	
-	    printf("Resolving %s\n", hostname);
-	
-	    clock_gettime(CLOCK_MONOTONIC, &start);
-	    err = getaddrinfo(hostname, NULL, &hints, &res);
-	    clock_gettime(CLOCK_MONOTONIC, &end);
-	
-	    if (err != 0) {
-	        printf("getaddrinfo: %s\n", gai_strerror(err));
-	        return 1;
-	    }
-	
-	    double dns_time = (end.tv_sec - start.tv_sec) * 1000.0 +
-	                      (end.tv_nsec - start.tv_nsec) / 1000000.0;
-	    printf("DNS Lookup Time: %.2f ms\n", dns_time);
-	
-	    freeaddrinfo(res);
-	    return 0;
-	}
-	
-|3,1,0,1,36,0,1727307651,"#include <stdio.h>","#include <stdlib.h>","#include <string.h>","#include <sys/socket.h>","#include <netdb.h>","#include <time.h>","","int main() {","    const char* hostname = \"www.example.com\";  // Replace with a hostname where you've observed the issue","    struct addrinfo hints, *res;","    int err;","    struct timespec start, end;","","    memset(&hints, 0, sizeof(hints));",>74
-|<"    hints.ai_family = AF_UNSPEC; // Request both IPv4 and IPv6 addresses","    hints.ai_socktype = SOCK_STREAM;","","    printf(\"Resolving %s\\n\", hostname);","","    clock_gettime(CLOCK_MONOTONIC, &start);","    err = getaddrinfo(hostname, NULL, &hints, &res);","    clock_gettime(CLOCK_MONOTONIC, &end);","","    if (err != 0) {","        printf(\"getaddrinfo: %s\\n\", gai_strerror(err));","        return 1;","    }","","    double dns_time = (end.tv_sec - start.tv_sec) * 1000.0 +",>66
-|<"                      (end.tv_nsec - start.tv_nsec) / 1000000.0;","    printf(\"DNS Lookup Time: %.2f ms\\n\", dns_time);","","    freeaddrinfo(res);","    return 0;","}",""
-"1	LINE	0
-	#include <stdio.h>
-	#include <stdlib.h>
-	#include <string.h>
-	#include <sys/socket.h>
-	#include <netdb.h>
-	#include <time.h>
-	
-	int main() {
-	    const char* hostname = "www.example.com";  // Replace with a hostname where you've observed the issue
-	    struct addrinfo hints, *res;
-	    int err;
-	    struct timespec start, end;
-	
-	    memset(&hints, 0, sizeof(hints));
-	    hints.ai_family = AF_UNSPEC; // Request both IPv4 and IPv6 addresses
-	    hints.ai_socktype = SOCK_STREAM;
-	
-	    printf("Resolving %s\n", hostname);
-	
-	    clock_gettime(CLOCK_MONOTONIC, &start);
-	    err = getaddrinfo(hostname, NULL, &hints, &res);
-	    clock_gettime(CLOCK_MONOTONIC, &end);
-	
-	    if (err != 0) {
-	        printf("getaddrinfo: %s\n", gai_strerror(err));
-	        return 1;
-	    }
-	
-	    double dns_time = (end.tv_sec - start.tv_sec) * 1000.0 +
-	                      (end.tv_nsec - start.tv_nsec) / 1000000.0;
-	    printf("DNS Lookup Time: %.2f ms\n", dns_time);
-	
-	    freeaddrinfo(res);
-	    return 0;
-	}
-	
-|3,0,1,1,36,0,1727307650,"#include <stdio.h>","#include <stdlib.h>","#include <string.h>","#include <sys/socket.h>","#include <netdb.h>","#include <time.h>","","int main() {","    const char* hostname = \"www.example.com\";  // Replace with a hostname where you've observed the issue","    struct addrinfo hints, *res;","    int err;","    struct timespec start, end;","","    memset(&hints, 0, sizeof(hints));",>74
-|<"    hints.ai_family = AF_UNSPEC; // Request both IPv4 and IPv6 addresses","    hints.ai_socktype = SOCK_STREAM;","","    printf(\"Resolving %s\\n\", hostname);","","    clock_gettime(CLOCK_MONOTONIC, &start);","    err = getaddrinfo(hostname, NULL, &hints, &res);","    clock_gettime(CLOCK_MONOTONIC, &end);","","    if (err != 0) {","        printf(\"getaddrinfo: %s\\n\", gai_strerror(err));","        return 1;","    }","","    double dns_time = (end.tv_sec - start.tv_sec) * 1000.0 +",>66
-|<"                      (end.tv_nsec - start.tv_nsec) / 1000000.0;","    printf(\"DNS Lookup Time: %.2f ms\\n\", dns_time);","","    freeaddrinfo(res);","    return 0;","}",""
+|3,1,1,1,1,0,1727447184,""
 "2	LINE	0
-	//go:build cgo
-	// +build cgo
 	
-	package main
-	
-	/*
-	This import forces cgo to be used.
-	*/
-	import "C"
-	
-	import (
-		"context"
-		"crypto/tls"
-		"fmt"
-		"net"
-		"net/http"
-		"net/http/httptrace"
-		"os"
-		"time"
-	)
-	
-	func main() {
-		url := "https://www.google.com"
-	
-		fmt.Printf("Profiling request to %s\n", url)
-	
-		// Create a context to attach the DNS start and end times
-		var dnsStartA, dnsEndA, dnsStartAAAA, dnsEndAAAA time.Time
-		var dnsErrA, dnsErrAAAA error
-	
-		// Use channels to synchronize DNS query results
-		doneA := make(chan struct{})
-		doneAAAA := make(chan struct{})
-	
-		// Resolver that uses the system resolver
-		resolver := &net.Resolver{
-			PreferGo: false, // Force the use of the system resolver
-		}
-	
-		// Perform A and AAAA queries simultaneously
-		go func() {
-			dnsStartA = time.Now()
-			_, dnsErrA = resolver.LookupIP(context.Background(), "ip4", "www.google.com")
-			dnsEndA = time.Now()
-			close(doneA)
-		}()
-	
-		go func() {
-			dnsStartAAAA = time.Now()
-			_, dnsErrAAAA = resolver.LookupIP(context.Background(), "ip6", "www.google.com")
-|3,0,2,1,50,0,1727307504,"//go:build cgo","// +build cgo","","package main","","/*","This import forces cgo to be used.","*/","import \"C\"","","import (","	\"context\"","	\"crypto/tls\"","	\"fmt\"","	\"net\"","	\"net/http\"","	\"net/http/httptrace\"","	\"os\"","	\"time\"",")","","func main() {","	url := \"https://www.google.com\"","","	fmt.Printf(\"Profiling request to %s\\n\", url)","","	// Create a context to attach the DNS start and end times",>61
-|<"	var dnsStartA, dnsEndA, dnsStartAAAA, dnsEndAAAA time.Time","	var dnsErrA, dnsErrAAAA error","","	// Use channels to synchronize DNS query results","	doneA := make(chan struct{})","	doneAAAA := make(chan struct{})","","	// Resolver that uses the system resolver","	resolver := &net.Resolver{","		PreferGo: false, // Force the use of the system resolver","	}","","	// Perform A and AAAA queries simultaneously","	go func() {","		dnsStartA = time.Now()",>85
-|<"		_, dnsErrA = resolver.LookupIP(context.Background(), \"ip4\", \"www.google.com\")","		dnsEndA = time.Now()","		close(doneA)","	}()","","	go func() {","		dnsStartAAAA = time.Now()","		_, dnsErrAAAA = resolver.LookupIP(context.Background(), \"ip6\", \"www.google.com\")"
+|3,0,2,1,1,0,1727447182,""
 "3	LINE	0
-	package main
-	
-	import (
-		"context"
-		"crypto/tls"
-		"fmt"
-		"net"
-		"net/http"
-		"net/http/httptrace"
-		"os"
-		"time"
-	)
-	
-	func main() {
-		url := "https://www.google.com"
-	
-		fmt.Printf("Profiling request to %s\n", url)
-	
-		// Create a context to attach the DNS start and end times
-		var dnsStartA, dnsEndA, dnsStartAAAA, dnsEndAAAA time.Time
-		var dnsErrA, dnsErrAAAA error
-	
-		// Use channels to synchronize DNS query results
-		doneA := make(chan struct{})
-		doneAAAA := make(chan struct{})
-	
-		// Resolver that uses the system resolver
-		resolver := &net.Resolver{
-			PreferGo: false,
-		}
-	
-		// Perform A and AAAA queries simultaneously
-		go func() {
-			dnsStartA = time.Now()
-			_, dnsErrA = resolver.LookupIPAddr(context.Background(), "ipv4:"+url)
-			dnsEndA = time.Now()
-			close(doneA)
-		}()
-	
-		go func() {
-			dnsStartAAAA = time.Now()
-			_, dnsErrAAAA = resolver.LookupIPAddr(context.Background(), "ipv6:"+url)
-			dnsEndAAAA = time.Now()
-			close(doneAAAA)
-		}()
-	
-		// Wait for both DNS queries to complete
-		<-doneA
-		<-doneAAAA
-	
-|3,0,3,1,50,0,1727307427,"package main","","import (","	\"context\"","	\"crypto/tls\"","	\"fmt\"","	\"net\"","	\"net/http\"","	\"net/http/httptrace\"","	\"os\"","	\"time\"",")","","func main() {","	url := \"https://www.google.com\"","","	fmt.Printf(\"Profiling request to %s\\n\", url)","","	// Create a context to attach the DNS start and end times","	var dnsStartA, dnsEndA, dnsStartAAAA, dnsEndAAAA time.Time","	var dnsErrA, dnsErrAAAA error","",>51
-|<"	// Use channels to synchronize DNS query results","	doneA := make(chan struct{})","	doneAAAA := make(chan struct{})","","	// Resolver that uses the system resolver","	resolver := &net.Resolver{","		PreferGo: false,","	}","","	// Perform A and AAAA queries simultaneously","	go func() {","		dnsStartA = time.Now()","		_, dnsErrA = resolver.LookupIPAddr(context.Background(), \"ipv4:\"+url)","		dnsEndA = time.Now()","		close(doneA)","	}()","","	go func() {","		dnsStartAAAA = time.Now()",>78
-|<"		_, dnsErrAAAA = resolver.LookupIPAddr(context.Background(), \"ipv6:\"+url)","		dnsEndAAAA = time.Now()","		close(doneAAAA)","	}()","","	// Wait for both DNS queries to complete","	<-doneA","	<-doneAAAA",""
+	    import sys; sys.exit(0)
+|3,0,3,1,1,0,1727446830,"    import sys; sys.exit(0)"
 "4	LINE	0
-	import socket
-	import ssl
-	import sys
-	import time
-	from urllib.parse import urlparse
-	
-	def profile_request():
-	    url = 'https://www.google.com'  # Hardcoded URL
-	    parsed_url = urlparse(url)
-	    hostname = parsed_url.hostname
-	    port = parsed_url.port or (443 if parsed_url.scheme == 'https' else 80)
-	    scheme = parsed_url.scheme
-	    path = parsed_url.path or '/'
-	
-	    print(f"Profiling request to {url}")
-	    print(f"Hostname: {hostname}")
-	    print(f"Port: {port}")
-	    print(f"Scheme: {scheme.upper()}")
-	
-	    # Phase 1: DNS Lookup using socket.getaddrinfo() with AF_UNSPEC
-	    dns_start = time.time()
-	    try:
-	        # This uses the system resolver and is affected by /etc/resolv.conf options
-	        # Including 'options single-request'
-	        addr_info = socket.getaddrinfo(hostname, port, family=socket.AF_UNSPEC, proto=socket.IPPROTO_TCP)
-	        dns_end = time.time()
-	        dns_time = dns_end - dns_start
-	        print(f"DNS Lookup Time: {dns_time*1000:.2f} ms")
-	    except socket.gaierror as e:
-	        dns_end = time.time()
-	        dns_time = dns_end - dns_start
-	        print(f"DNS Lookup Time: {dns_time*1000:.2f} ms")
-	        print(f"DNS lookup failed: {e}")
-	        sys.exit(1)
-	
-	    # Use the first address
-	    family, socktype, proto, canonname, sockaddr = addr_info[0]
-	
-	    # Phase 2: TCP Connection
-	    tcp_start = time.time()
-	    sock = socket.socket(family, socktype, proto)
-	    try:
-	        sock.settimeout(5)
-	        sock.connect(sockaddr)
-	        tcp_end = time.time()
-	        print(f"TCP Connection Time: {(tcp_end - tcp_start)*1000:.2f} ms")
-	    except socket.error as e:
-	        tcp_end = time.time()
-	        print(f"TCP Connection Time: {(tcp_end - tcp_start)*1000:.2f} ms")
-	        print(f"TCP connection failed: {e}")
-|3,0,4,1,50,0,1727307200,"import socket","import ssl","import sys","import time","from urllib.parse import urlparse","","def profile_request():","    url = 'https://www.google.com'  # Hardcoded URL","    parsed_url = urlparse(url)","    hostname = parsed_url.hostname","    port = parsed_url.port or (443 if parsed_url.scheme == 'https' else 80)","    scheme = parsed_url.scheme","    path = parsed_url.path or '/'","","    print(f\"Profiling request to {url}\")",>38
-|<"    print(f\"Hostname: {hostname}\")","    print(f\"Port: {port}\")","    print(f\"Scheme: {scheme.upper()}\")","","    # Phase 1: DNS Lookup using socket.getaddrinfo() with AF_UNSPEC","    dns_start = time.time()","    try:","        # This uses the system resolver and is affected by /etc/resolv.conf options","        # Including 'options single-request'","        addr_info = socket.getaddrinfo(hostname, port, family=socket.AF_UNSPEC, proto=socket.IPPROTO_TCP)",>31
-|<"        dns_end = time.time()","        dns_time = dns_end - dns_start","        print(f\"DNS Lookup Time: {dns_time*1000:.2f} ms\")","    except socket.gaierror as e:","        dns_end = time.time()","        dns_time = dns_end - dns_start","        print(f\"DNS Lookup Time: {dns_time*1000:.2f} ms\")","        print(f\"DNS lookup failed: {e}\")","        sys.exit(1)","","    # Use the first address","    family, socktype, proto, canonname, sockaddr = addr_info[0]","",>31
-|<"    # Phase 2: TCP Connection","    tcp_start = time.time()","    sock = socket.socket(family, socktype, proto)","    try:","        sock.settimeout(5)","        sock.connect(sockaddr)","        tcp_end = time.time()","        print(f\"TCP Connection Time: {(tcp_end - tcp_start)*1000:.2f} ms\")","    except socket.error as e:","        tcp_end = time.time()","        print(f\"TCP Connection Time: {(tcp_end - tcp_start)*1000:.2f} ms\")","        print(f\"TCP connection failed: {e}\")"
+	    print(x.days)
+|3,0,4,1,1,0,1727446809,"    print(x.days)"
 "5	LINE	0
-	import socket
-	import ssl
-	import sys
-	import time
-	from urllib.parse import urlparse
-	
-	def profile_request():
-	    url = 'https://www.google.com'  # Hardcoded URL
-	    parsed_url = urlparse(url)
-	    hostname = parsed_url.hostname
-	    port = parsed_url.port or (443 if parsed_url.scheme == 'https' else 80)
-	    scheme = parsed_url.scheme
-	    path = parsed_url.path or '/'
-	
-	    print(f"Profiling request to {url}")
-	    print(f"Hostname: {hostname}")
-	    print(f"Port: {port}")
-	    print(f"Scheme: {scheme.upper()}")
-	
-	    # Initialize total DNS time
-	    total_dns_time = 0
-	
-	    # Phase 1: DNS Lookup - A Record (IPv4)
-	    try:
-	        dns_a_start = time.time()
-	        addr_info_a = socket.getaddrinfo(hostname, port, family=socket.AF_INET, proto=socket.IPPROTO_TCP)
-	        dns_a_end = time.time()
-	        dns_a_time = dns_a_end - dns_a_start
-	        total_dns_time += dns_a_time
-	        print(f"A Record Lookup Time: {dns_a_time*1000:.2f} ms")
-	        ipv4_addresses = [sockaddr[4][0] for sockaddr in addr_info_a]
-	    except socket.gaierror as e:
-	        dns_a_end = time.time()
-	        dns_a_time = dns_a_end - dns_a_start
-	        total_dns_time += dns_a_time
-	        ipv4_addresses = []
-	        print(f"A Record Lookup Time: {dns_a_time*1000:.2f} ms")
-	        print(f"A Record lookup failed: {e}")
-	
-	    # Phase 1b: DNS Lookup - AAAA Record (IPv6)
-	    try:
-	        dns_aaaa_start = time.time()
-	        addr_info_aaaa = socket.getaddrinfo(hostname, port, family=socket.AF_INET6, proto=socket.IPPROTO_TCP)
-	        dns_aaaa_end = time.time()
-	        dns_aaaa_time = dns_aaaa_end - dns_aaaa_start
-	        total_dns_time += dns_aaaa_time
-	        print(f"AAAA Record Lookup Time: {dns_aaaa_time*1000:.2f} ms")
-	        ipv6_addresses = [sockaddr[4][0] for sockaddr in addr_info_aaaa]
-	    except socket.gaierror as e:
-	        dns_aaaa_end = time.time()
-|3,0,5,1,50,0,1727307104,"import socket","import ssl","import sys","import time","from urllib.parse import urlparse","","def profile_request():","    url = 'https://www.google.com'  # Hardcoded URL","    parsed_url = urlparse(url)","    hostname = parsed_url.hostname","    port = parsed_url.port or (443 if parsed_url.scheme == 'https' else 80)","    scheme = parsed_url.scheme","    path = parsed_url.path or '/'","","    print(f\"Profiling request to {url}\")",>38
-|<"    print(f\"Hostname: {hostname}\")","    print(f\"Port: {port}\")","    print(f\"Scheme: {scheme.upper()}\")","","    # Initialize total DNS time","    total_dns_time = 0","","    # Phase 1: DNS Lookup - A Record (IPv4)","    try:","        dns_a_start = time.time()","        addr_info_a = socket.getaddrinfo(hostname, port, family=socket.AF_INET, proto=socket.IPPROTO_TCP)","        dns_a_end = time.time()","        dns_a_time = dns_a_end - dns_a_start",>38
-|<"        total_dns_time += dns_a_time","        print(f\"A Record Lookup Time: {dns_a_time*1000:.2f} ms\")","        ipv4_addresses = [sockaddr[4][0] for sockaddr in addr_info_a]","    except socket.gaierror as e:","        dns_a_end = time.time()","        dns_a_time = dns_a_end - dns_a_start","        total_dns_time += dns_a_time","        ipv4_addresses = []","        print(f\"A Record Lookup Time: {dns_a_time*1000:.2f} ms\")","        print(f\"A Record lookup failed: {e}\")","",>49
-|<"    # Phase 1b: DNS Lookup - AAAA Record (IPv6)","    try:","        dns_aaaa_start = time.time()","        addr_info_aaaa = socket.getaddrinfo(hostname, port, family=socket.AF_INET6, proto=socket.IPPROTO_TCP)","        dns_aaaa_end = time.time()","        dns_aaaa_time = dns_aaaa_end - dns_aaaa_start","        total_dns_time += dns_aaaa_time","        print(f\"AAAA Record Lookup Time: {dns_aaaa_time*1000:.2f} ms\")",>74
-|<"        ipv6_addresses = [sockaddr[4][0] for sockaddr in addr_info_aaaa]","    except socket.gaierror as e:","        dns_aaaa_end = time.time()"
+	    x = now-dt
+|3,0,5,1,1,0,1727446803,"    x = now-dt"
 "6	LINE	0
-	import socket
-	import ssl
-	import sys
-	import time
-	from urllib.parse import urlparse
-	
-	def profile_request():
-	    url = 'https://www.google.com'  # Hardcoded URL
-	    parsed_url = urlparse(url)
-	    hostname = parsed_url.hostname
-	    port = parsed_url.port or (443 if parsed_url.scheme == 'https' else 80)
-	    scheme = parsed_url.scheme
-	    path = parsed_url.path or '/'
-	    
-	    print(f"Profiling request to {url}")
-	    print(f"Hostname: {hostname}")
-	    print(f"Port: {port}")
-	    print(f"Scheme: {scheme.upper()}")
-	    
-	    # Initialize total DNS time
-	    total_dns_time = 0
-	    
-	    # Phase 1: DNS Lookup - A Record (IPv4)
-	    try:
-	        dns_a_start = time.time()
-	        addr_info_a = socket.getaddrinfo(hostname, port, family=socket.AF_INET, proto=socket.IPPROTO_TCP)
-	        dns_a_end = time.time()
-	        dns_a_time = dns_a_end - dns_a_start
-	        total_dns_time += dns_a_time
-	        print(f"A Record Lookup Time: {dns_a_time*1000:.2f} ms")
-	        ipv4_addresses = [sockaddr[4][0] for sockaddr in addr_info_a]
-	    except socket.gaierror as e:
-	        dns_a_end = time.time()
-	        dns_a_time = dns_a_end - dns_a_start
-	        total_dns_time += dns_a_time
-	        ipv4_addresses = []
-	        print(f"A Record Lookup Time: {dns_a_time*1000:.2f} ms")
-	        print(f"A Record lookup failed: {e}")
-	    
-	    # Phase 1b: DNS Lookup - AAAA Record (IPv6)
-	    try:
-	        dns_aaaa_start = time.time()
-	        addr_info_aaaa = socket.getaddrinfo(hostname, port, family=socket.AF_INET6, proto=socket.IPPROTO_TCP)
-	        dns_aaaa_end = time.time()
-	        dns_aaaa_time = dns_aaaa_end - dns_aaaa_start
-	        total_dns_time += dns_aaaa_time
-	        print(f"AAAA Record Lookup Time: {dns_aaaa_time*1000:.2f} ms")
-	        ipv6_addresses = [sockaddr[4][0] for sockaddr in addr_info_aaaa]
-	    except socket.gaierror as e:
-	        dns_aaaa_end = time.time()
-|3,0,6,1,50,0,1727307068,"import socket","import ssl","import sys","import time","from urllib.parse import urlparse","","def profile_request():","    url = 'https://www.google.com'  # Hardcoded URL","    parsed_url = urlparse(url)","    hostname = parsed_url.hostname","    port = parsed_url.port or (443 if parsed_url.scheme == 'https' else 80)","    scheme = parsed_url.scheme","    path = parsed_url.path or '/'","    ",>44
-|<"    print(f\"Profiling request to {url}\")","    print(f\"Hostname: {hostname}\")","    print(f\"Port: {port}\")","    print(f\"Scheme: {scheme.upper()}\")","    ","    # Initialize total DNS time","    total_dns_time = 0","    ","    # Phase 1: DNS Lookup - A Record (IPv4)","    try:","        dns_a_start = time.time()","        addr_info_a = socket.getaddrinfo(hostname, port, family=socket.AF_INET, proto=socket.IPPROTO_TCP)","        dns_a_end = time.time()",>46
-|<"        dns_a_time = dns_a_end - dns_a_start","        total_dns_time += dns_a_time","        print(f\"A Record Lookup Time: {dns_a_time*1000:.2f} ms\")","        ipv4_addresses = [sockaddr[4][0] for sockaddr in addr_info_a]","    except socket.gaierror as e:","        dns_a_end = time.time()","        dns_a_time = dns_a_end - dns_a_start","        total_dns_time += dns_a_time","        ipv4_addresses = []","        print(f\"A Record Lookup Time: {dns_a_time*1000:.2f} ms\")",>49
-|<"        print(f\"A Record lookup failed: {e}\")","    ","    # Phase 1b: DNS Lookup - AAAA Record (IPv6)","    try:","        dns_aaaa_start = time.time()","        addr_info_aaaa = socket.getaddrinfo(hostname, port, family=socket.AF_INET6, proto=socket.IPPROTO_TCP)","        dns_aaaa_end = time.time()","        dns_aaaa_time = dns_aaaa_end - dns_aaaa_start","        total_dns_time += dns_aaaa_time","        print(f\"AAAA Record Lookup Time: {dns_aaaa_time*1000:.2f} ms\")",>74
-|<"        ipv6_addresses = [sockaddr[4][0] for sockaddr in addr_info_aaaa]","    except socket.gaierror as e:","        dns_aaaa_end = time.time()"
+	    breakpoint
+|3,0,6,1,1,0,1727446755,"    breakpoint"
 "7	LINE	0
-	import socket
-	import ssl
-	import sys
-	import time
-	from urllib.parse import urlparse
-	
-	def profile_request():
-	    url = 'https://www.google.com'  # Hardcoded URL
-	    parsed_url = urlparse(url)
-	    hostname = parsed_url.hostname
-	    port = parsed_url.port or (443 if parsed_url.scheme == 'https' else 80)
-	    scheme = parsed_url.scheme
-	    path = parsed_url.path or '/'
-	
-	    print(f"Profiling request to {url}")
-	    print(f"Hostname: {hostname}")
-	    print(f"Port: {port}")
-	    print(f"Scheme: {scheme.upper()}")
-	
-	    # Phase 1: DNS Lookup using socket.getaddrinfo()
-	    dns_start = time.time()
-	    try:
-	        # This uses the system resolver and is affected by /etc/resolv.conf options
-	        # Including 'options single-request'
-	        addr_info = socket.getaddrinfo(hostname, port, proto=socket.IPPROTO_TCP)
-	        dns_end = time.time()
-	        dns_time = dns_end - dns_start
-	        print(f"DNS Lookup Time: {dns_time*1000:.2f} ms")
-	    except socket.gaierror as e:
-	        dns_end = time.time()
-	        dns_time = dns_end - dns_start
-	        print(f"DNS Lookup Time: {dns_time*1000:.2f} ms")
-	        print(f"DNS lookup failed: {e}")
-	        sys.exit(1)
-	
-	    # Use the first address
-	    family, socktype, proto, canonname, sockaddr = addr_info[0]
-	
-	    # Phase 2: TCP Connection
-	    tcp_start = time.time()
-	    sock = socket.socket(family, socktype, proto)
-	    try:
-	        sock.settimeout(5)
-	        sock.connect(sockaddr)
-	        tcp_end = time.time()
-	        print(f"TCP Connection Time: {(tcp_end - tcp_start)*1000:.2f} ms")
-	    except socket.error as e:
-	        tcp_end = time.time()
-	        print(f"TCP Connection Time: {(tcp_end - tcp_start)*1000:.2f} ms")
-	        print(f"TCP connection failed: {e}")
-|3,0,7,1,50,0,1727307026,"import socket","import ssl","import sys","import time","from urllib.parse import urlparse","","def profile_request():","    url = 'https://www.google.com'  # Hardcoded URL","    parsed_url = urlparse(url)","    hostname = parsed_url.hostname","    port = parsed_url.port or (443 if parsed_url.scheme == 'https' else 80)","    scheme = parsed_url.scheme","    path = parsed_url.path or '/'","","    print(f\"Profiling request to {url}\")",>38
-|<"    print(f\"Hostname: {hostname}\")","    print(f\"Port: {port}\")","    print(f\"Scheme: {scheme.upper()}\")","","    # Phase 1: DNS Lookup using socket.getaddrinfo()","    dns_start = time.time()","    try:","        # This uses the system resolver and is affected by /etc/resolv.conf options","        # Including 'options single-request'","        addr_info = socket.getaddrinfo(hostname, port, proto=socket.IPPROTO_TCP)","        dns_end = time.time()",>40
-|<"        dns_time = dns_end - dns_start","        print(f\"DNS Lookup Time: {dns_time*1000:.2f} ms\")","    except socket.gaierror as e:","        dns_end = time.time()","        dns_time = dns_end - dns_start","        print(f\"DNS Lookup Time: {dns_time*1000:.2f} ms\")","        print(f\"DNS lookup failed: {e}\")","        sys.exit(1)","","    # Use the first address","    family, socktype, proto, canonname, sockaddr = addr_info[0]","","    # Phase 2: TCP Connection",>29
-|<"    tcp_start = time.time()","    sock = socket.socket(family, socktype, proto)","    try:","        sock.settimeout(5)","        sock.connect(sockaddr)","        tcp_end = time.time()","        print(f\"TCP Connection Time: {(tcp_end - tcp_start)*1000:.2f} ms\")","    except socket.error as e:","        tcp_end = time.time()","        print(f\"TCP Connection Time: {(tcp_end - tcp_start)*1000:.2f} ms\")","        print(f\"TCP connection failed: {e}\")"
+	    if now - dt
+|3,0,7,1,1,0,1727446753,"    if now - dt"
 "8	LINE	0
-	# ./request_profiler.py
-	dnspython
-|3,0,8,1,2,0,1727307021,"# ./request_profiler.py","dnspython"
+	    timeago.
+|3,0,8,1,1,0,1727446701,"    timeago."
 "9	LINE	0
-	import socket
-	import ssl
-	import sys
-	import time
-	from urllib.parse import urlparse
-	
-	import dns.resolver  # Requires dnspython package
-	
-	def profile_request():
-	    url = 'https://www.google.com'  # Hardcoded URL
-	    parsed_url = urlparse(url)
-	    hostname = parsed_url.hostname
-	    port = parsed_url.port
-	    scheme = parsed_url.scheme
-	    path = parsed_url.path or '/'
-	    if not port:
-	        port = 443 if scheme == 'https' else 80
-	
-	    print(f"Profiling request to {url}")
-	    print(f"Hostname: {hostname}")
-	    print(f"Port: {port}")
-	    print(f"Scheme: {scheme.upper()}")
-	
-	    # Initialize total DNS time
-	    total_dns_time = 0
-	
-	    # Phase 1: DNS Lookup - A Record (IPv4)
-	    try:
-	        dns_a_start = time.time()
-	        answers_a = dns.resolver.resolve(hostname, 'A')
-	        dns_a_end = time.time()
-	        dns_a_time = dns_a_end - dns_a_start
-	        total_dns_time += dns_a_time
-	        ipv4_addresses = [answer.to_text() for answer in answers_a]
-	        print(f"A Record Lookup Time: {dns_a_time*1000:.2f} ms")
-	    except dns.resolver.NoAnswer:
-	        print("No A record found.")
-	        ipv4_addresses = []
-	    except dns.resolver.NXDOMAIN:
-	        print("Domain does not exist.")
-	        sys.exit(1)
-	    except Exception as e:
-	        print(f"A Record lookup failed: {e}")
-	        sys.exit(1)
-	
-	    # Phase 1b: DNS Lookup - AAAA Record (IPv6)
-	    try:
-	        dns_aaaa_start = time.time()
-	        answers_aaaa = dns.resolver.resolve(hostname, 'AAAA')
-	        dns_aaaa_end = time.time()
-|3,0,9,1,50,0,1727306973,"import socket","import ssl","import sys","import time","from urllib.parse import urlparse","","import dns.resolver  # Requires dnspython package","","def profile_request():","    url = 'https://www.google.com'  # Hardcoded URL","    parsed_url = urlparse(url)","    hostname = parsed_url.hostname","    port = parsed_url.port","    scheme = parsed_url.scheme","    path = parsed_url.path or '/'","    if not port:",>49
-|<"        port = 443 if scheme == 'https' else 80","","    print(f\"Profiling request to {url}\")","    print(f\"Hostname: {hostname}\")","    print(f\"Port: {port}\")","    print(f\"Scheme: {scheme.upper()}\")","","    # Initialize total DNS time","    total_dns_time = 0","","    # Phase 1: DNS Lookup - A Record (IPv4)","    try:","        dns_a_start = time.time()","        answers_a = dns.resolver.resolve(hostname, 'A')","        dns_a_end = time.time()",>46
-|<"        dns_a_time = dns_a_end - dns_a_start","        total_dns_time += dns_a_time","        ipv4_addresses = [answer.to_text() for answer in answers_a]","        print(f\"A Record Lookup Time: {dns_a_time*1000:.2f} ms\")","    except dns.resolver.NoAnswer:","        print(\"No A record found.\")","        ipv4_addresses = []","    except dns.resolver.NXDOMAIN:","        print(\"Domain does not exist.\")","        sys.exit(1)","    except Exception as e:",>49
-|<"        print(f\"A Record lookup failed: {e}\")","        sys.exit(1)","","    # Phase 1b: DNS Lookup - AAAA Record (IPv6)","    try:","        dns_aaaa_start = time.time()","        answers_aaaa = dns.resolver.resolve(hostname, 'AAAA')","        dns_aaaa_end = time.time()"
+	    now =
+|3,0,9,1,1,0,1727446688,"    now ="
 "a	CHAR	0
 	0d;d;
-|3,0,10,0,1,0,1727306719,"0d;d;"
+|3,0,10,0,1,0,1727446780,"0d;d;"
 "i	CHAR	0
 	ado_up()jk:q!
 |3,0,18,0,1,0,1724200553,"ado_up()jk:q!"
@@ -15888,237 +15483,1396 @@ $
 	set verbose=20 | quit
 |3,0,28,1,2,0,1725457945,"set verbosefile=verbose-file.txt","set verbose=20 | quit"
 "-	CHAR	0
-	google
-|3,0,36,0,1,0,1727306826,"google"
+	print(now-dt)
+|3,0,36,0,1,0,1727446780,"print(now-dt)"
 
 # File marks:
-'0  134  0  ~/golang/request_profiler/dns_test.c
-|4,48,134,0,1727307653,"~/golang/request_profiler/dns_test.c"
-'1  2  0  ~/golang/request_profiler/dns_test.c
-|4,49,2,0,1727307598,"~/golang/request_profiler/dns_test.c"
-'2  10  0  ~/golang/request_profiler/dns_test.c
-|4,50,10,0,1727307598,"~/golang/request_profiler/dns_test.c"
-'3  12  0  ~/golang/request_profiler/main.go
-|4,51,12,0,1727307516,"~/golang/request_profiler/main.go"
-'4  12  0  ~/golang/request_profiler/main.go
-|4,52,12,0,1727307516,"~/golang/request_profiler/main.go"
-'5  12  0  ~/golang/request_profiler/main.go
-|4,53,12,0,1727307516,"~/golang/request_profiler/main.go"
-'6  12  0  ~/golang/request_profiler/main.go
-|4,54,12,0,1727307516,"~/golang/request_profiler/main.go"
-'7  1  0  ~/golang/request_profiler/main.go
-|4,55,1,0,1727307437,"~/golang/request_profiler/main.go"
-'8  1  0  ~/golang/request_profiler/main.go
-|4,56,1,0,1727307437,"~/golang/request_profiler/main.go"
-'9  1  0  ~/golang/request_profiler/main.go
-|4,57,1,0,1727307437,"~/golang/request_profiler/main.go"
+'0  1  0  ~/pyscripts/print_todo.py
+|4,48,1,0,1727508917,"~/pyscripts/print_todo.py"
+'1  154  0  ~/pyscripts/print_todo.py
+|4,49,154,0,1727447219,"~/pyscripts/print_todo.py"
+'2  154  0  ~/pyscripts/print_todo.py
+|4,50,154,0,1727447219,"~/pyscripts/print_todo.py"
+'3  93  60  ~/pyscripts/print_todo.py
+|4,51,93,60,1727446980,"~/pyscripts/print_todo.py"
+'4  93  60  ~/pyscripts/print_todo.py
+|4,52,93,60,1727446980,"~/pyscripts/print_todo.py"
+'5  93  60  ~/pyscripts/print_todo.py
+|4,53,93,60,1727446980,"~/pyscripts/print_todo.py"
+'6  93  60  ~/pyscripts/print_todo.py
+|4,54,93,60,1727446980,"~/pyscripts/print_todo.py"
+'7  93  60  ~/pyscripts/print_todo.py
+|4,55,93,60,1727446967,"~/pyscripts/print_todo.py"
+'8  93  60  ~/pyscripts/print_todo.py
+|4,56,93,60,1727446967,"~/pyscripts/print_todo.py"
+'9  93  60  ~/pyscripts/print_todo.py
+|4,57,93,60,1727446967,"~/pyscripts/print_todo.py"
 
 # Jumplist (newest first):
--'  134  0  ~/golang/request_profiler/dns_test.c
-|4,39,134,0,1727307653,"~/golang/request_profiler/dns_test.c"
--'  1  18  ~/golang/request_profiler/dns_test.c
-|4,39,1,18,1727307650,"~/golang/request_profiler/dns_test.c"
--'  2  0  ~/golang/request_profiler/dns_test.c
-|4,39,2,0,1727307598,"~/golang/request_profiler/dns_test.c"
--'  10  0  ~/golang/request_profiler/dns_test.c
-|4,39,10,0,1727307598,"~/golang/request_profiler/dns_test.c"
--'  1  0  ~/golang/request_profiler/dns_test.c
-|4,39,1,0,1727307594,"~/golang/request_profiler/dns_test.c"
--'  12  0  ~/golang/request_profiler/main.go
-|4,39,12,0,1727307516,"~/golang/request_profiler/main.go"
--'  12  0  ~/golang/request_profiler/main.go
-|4,39,12,0,1727307516,"~/golang/request_profiler/main.go"
--'  12  0  ~/golang/request_profiler/main.go
-|4,39,12,0,1727307516,"~/golang/request_profiler/main.go"
--'  132  0  ~/golang/request_profiler/main.go
-|4,39,132,0,1727307513,"~/golang/request_profiler/main.go"
--'  132  0  ~/golang/request_profiler/main.go
-|4,39,132,0,1727307513,"~/golang/request_profiler/main.go"
--'  132  0  ~/golang/request_profiler/main.go
-|4,39,132,0,1727307513,"~/golang/request_profiler/main.go"
--'  1  14  ~/golang/request_profiler/main.go
-|4,39,1,14,1727307504,"~/golang/request_profiler/main.go"
--'  1  14  ~/golang/request_profiler/main.go
-|4,39,1,14,1727307504,"~/golang/request_profiler/main.go"
--'  1  14  ~/golang/request_profiler/main.go
-|4,39,1,14,1727307504,"~/golang/request_profiler/main.go"
--'  1  0  ~/golang/request_profiler/main.go
-|4,39,1,0,1727307437,"~/golang/request_profiler/main.go"
--'  2  0  ~/golang/request_profiler/main.go
-|4,39,2,0,1727307432,"~/golang/request_profiler/main.go"
--'  133  0  ~/golang/request_profiler/main.go
-|4,39,133,0,1727307432,"~/golang/request_profiler/main.go"
--'  2  0  ~/golang/request_profiler/main.go
-|4,39,2,0,1727307432,"~/golang/request_profiler/main.go"
--'  133  0  ~/golang/request_profiler/main.go
-|4,39,133,0,1727307432,"~/golang/request_profiler/main.go"
--'  2  0  ~/golang/request_profiler/main.go
-|4,39,2,0,1727307432,"~/golang/request_profiler/main.go"
--'  133  0  ~/golang/request_profiler/main.go
-|4,39,133,0,1727307432,"~/golang/request_profiler/main.go"
--'  2  0  ~/golang/request_profiler/main.go
-|4,39,2,0,1727307341,"~/golang/request_profiler/main.go"
--'  109  0  ~/pyscripts/request_profiler.py
-|4,39,109,0,1727307277,"~/pyscripts/request_profiler.py"
--'  109  0  ~/pyscripts/request_profiler.py
-|4,39,109,0,1727307277,"~/pyscripts/request_profiler.py"
--'  109  0  ~/pyscripts/request_profiler.py
-|4,39,109,0,1727307277,"~/pyscripts/request_profiler.py"
--'  109  0  ~/pyscripts/request_profiler.py
-|4,39,109,0,1727307277,"~/pyscripts/request_profiler.py"
--'  109  0  ~/pyscripts/request_profiler.py
-|4,39,109,0,1727307277,"~/pyscripts/request_profiler.py"
--'  1  13  ~/pyscripts/request_profiler.py
-|4,39,1,13,1727307200,"~/pyscripts/request_profiler.py"
--'  2  0  ~/pyscripts/request_profiler.py
-|4,39,2,0,1727307200,"~/pyscripts/request_profiler.py"
--'  1  13  ~/pyscripts/request_profiler.py
-|4,39,1,13,1727307200,"~/pyscripts/request_profiler.py"
--'  2  0  ~/pyscripts/request_profiler.py
-|4,39,2,0,1727307200,"~/pyscripts/request_profiler.py"
--'  1  13  ~/pyscripts/request_profiler.py
-|4,39,1,13,1727307200,"~/pyscripts/request_profiler.py"
--'  2  0  ~/pyscripts/request_profiler.py
-|4,39,2,0,1727307200,"~/pyscripts/request_profiler.py"
--'  1  13  ~/pyscripts/request_profiler.py
-|4,39,1,13,1727307200,"~/pyscripts/request_profiler.py"
--'  2  0  ~/pyscripts/request_profiler.py
-|4,39,2,0,1727307200,"~/pyscripts/request_profiler.py"
--'  1  13  ~/pyscripts/request_profiler.py
-|4,39,1,13,1727307200,"~/pyscripts/request_profiler.py"
--'  2  0  ~/pyscripts/request_profiler.py
-|4,39,2,0,1727307200,"~/pyscripts/request_profiler.py"
--'  15  0  ~/pyscripts/requirements.txt
-|4,39,15,0,1727307022,"~/pyscripts/requirements.txt"
--'  15  0  ~/pyscripts/requirements.txt
-|4,39,15,0,1727307022,"~/pyscripts/requirements.txt"
--'  15  0  ~/pyscripts/requirements.txt
-|4,39,15,0,1727307022,"~/pyscripts/requirements.txt"
--'  15  0  ~/pyscripts/requirements.txt
-|4,39,15,0,1727307022,"~/pyscripts/requirements.txt"
--'  15  0  ~/pyscripts/requirements.txt
-|4,39,15,0,1727307022,"~/pyscripts/requirements.txt"
--'  1  0  ~/pyscripts/requirements.txt
-|4,39,1,0,1727307019,"~/pyscripts/requirements.txt"
--'  1  0  ~/pyscripts/requirements.txt
-|4,39,1,0,1727307019,"~/pyscripts/requirements.txt"
--'  1  0  ~/pyscripts/requirements.txt
-|4,39,1,0,1727307019,"~/pyscripts/requirements.txt"
--'  1  0  ~/pyscripts/requirements.txt
-|4,39,1,0,1727307019,"~/pyscripts/requirements.txt"
--'  1  0  ~/pyscripts/requirements.txt
-|4,39,1,0,1727307019,"~/pyscripts/requirements.txt"
--'  1  0  /etc/resolv.conf
-|4,39,1,0,1727306834,"/etc/resolv.conf"
--'  1  0  /etc/resolv.conf
-|4,39,1,0,1727306834,"/etc/resolv.conf"
--'  1  0  /etc/resolv.conf
-|4,39,1,0,1727306834,"/etc/resolv.conf"
--'  1  0  /etc/resolv.conf
-|4,39,1,0,1727306834,"/etc/resolv.conf"
--'  1  0  /etc/resolv.conf
-|4,39,1,0,1727306834,"/etc/resolv.conf"
--'  16  8  ~/pyscripts/requirements.txt
-|4,39,16,8,1727306786,"~/pyscripts/requirements.txt"
--'  17  8  ~/pyscripts/requirements.txt
-|4,39,17,8,1727306786,"~/pyscripts/requirements.txt"
--'  16  8  ~/pyscripts/requirements.txt
-|4,39,16,8,1727306786,"~/pyscripts/requirements.txt"
--'  17  8  ~/pyscripts/requirements.txt
-|4,39,17,8,1727306786,"~/pyscripts/requirements.txt"
--'  16  8  ~/pyscripts/requirements.txt
-|4,39,16,8,1727306786,"~/pyscripts/requirements.txt"
--'  17  8  ~/pyscripts/requirements.txt
-|4,39,17,8,1727306786,"~/pyscripts/requirements.txt"
--'  16  8  ~/pyscripts/requirements.txt
-|4,39,16,8,1727306786,"~/pyscripts/requirements.txt"
--'  17  8  ~/pyscripts/requirements.txt
-|4,39,17,8,1727306786,"~/pyscripts/requirements.txt"
--'  16  8  ~/pyscripts/requirements.txt
-|4,39,16,8,1727306786,"~/pyscripts/requirements.txt"
--'  17  8  ~/pyscripts/requirements.txt
-|4,39,17,8,1727306786,"~/pyscripts/requirements.txt"
--'  1  0  ~/pyscripts/requirements.txt
-|4,39,1,0,1727306777,"~/pyscripts/requirements.txt"
--'  94  38  ~/pyscripts/request_profiler.py
-|4,39,94,38,1727306774,"~/pyscripts/request_profiler.py"
--'  94  38  ~/pyscripts/request_profiler.py
-|4,39,94,38,1727306774,"~/pyscripts/request_profiler.py"
--'  94  38  ~/pyscripts/request_profiler.py
-|4,39,94,38,1727306774,"~/pyscripts/request_profiler.py"
--'  94  38  ~/pyscripts/request_profiler.py
-|4,39,94,38,1727306774,"~/pyscripts/request_profiler.py"
--'  94  38  ~/pyscripts/request_profiler.py
-|4,39,94,38,1727306774,"~/pyscripts/request_profiler.py"
--'  94  38  ~/pyscripts/request_profiler.py
-|4,39,94,38,1727306774,"~/pyscripts/request_profiler.py"
--'  60  0  ~/pyscripts/request_profiler.py
-|4,39,60,0,1727306678,"~/pyscripts/request_profiler.py"
--'  60  0  ~/pyscripts/request_profiler.py
-|4,39,60,0,1727306678,"~/pyscripts/request_profiler.py"
--'  60  0  ~/pyscripts/request_profiler.py
-|4,39,60,0,1727306678,"~/pyscripts/request_profiler.py"
--'  60  0  ~/pyscripts/request_profiler.py
-|4,39,60,0,1727306678,"~/pyscripts/request_profiler.py"
--'  60  0  ~/pyscripts/request_profiler.py
-|4,39,60,0,1727306678,"~/pyscripts/request_profiler.py"
--'  60  0  ~/pyscripts/request_profiler.py
-|4,39,60,0,1727306678,"~/pyscripts/request_profiler.py"
--'  86  0  ~/pyscripts/request_profiler.py
-|4,39,86,0,1727306672,"~/pyscripts/request_profiler.py"
--'  86  0  ~/pyscripts/request_profiler.py
-|4,39,86,0,1727306672,"~/pyscripts/request_profiler.py"
--'  86  0  ~/pyscripts/request_profiler.py
-|4,39,86,0,1727306672,"~/pyscripts/request_profiler.py"
--'  86  0  ~/pyscripts/request_profiler.py
-|4,39,86,0,1727306672,"~/pyscripts/request_profiler.py"
--'  86  0  ~/pyscripts/request_profiler.py
-|4,39,86,0,1727306672,"~/pyscripts/request_profiler.py"
--'  86  0  ~/pyscripts/request_profiler.py
-|4,39,86,0,1727306672,"~/pyscripts/request_profiler.py"
--'  95  0  ~/pyscripts/request_profiler.py
-|4,39,95,0,1727306671,"~/pyscripts/request_profiler.py"
--'  95  0  ~/pyscripts/request_profiler.py
-|4,39,95,0,1727306671,"~/pyscripts/request_profiler.py"
--'  95  0  ~/pyscripts/request_profiler.py
-|4,39,95,0,1727306671,"~/pyscripts/request_profiler.py"
--'  95  0  ~/pyscripts/request_profiler.py
-|4,39,95,0,1727306671,"~/pyscripts/request_profiler.py"
--'  95  0  ~/pyscripts/request_profiler.py
-|4,39,95,0,1727306671,"~/pyscripts/request_profiler.py"
--'  95  0  ~/pyscripts/request_profiler.py
-|4,39,95,0,1727306671,"~/pyscripts/request_profiler.py"
--'  96  0  ~/pyscripts/request_profiler.py
-|4,39,96,0,1727306670,"~/pyscripts/request_profiler.py"
--'  96  0  ~/pyscripts/request_profiler.py
-|4,39,96,0,1727306670,"~/pyscripts/request_profiler.py"
--'  96  0  ~/pyscripts/request_profiler.py
-|4,39,96,0,1727306670,"~/pyscripts/request_profiler.py"
--'  96  0  ~/pyscripts/request_profiler.py
-|4,39,96,0,1727306670,"~/pyscripts/request_profiler.py"
--'  96  0  ~/pyscripts/request_profiler.py
-|4,39,96,0,1727306670,"~/pyscripts/request_profiler.py"
--'  96  0  ~/pyscripts/request_profiler.py
-|4,39,96,0,1727306670,"~/pyscripts/request_profiler.py"
--'  1  11  ~/pyscripts/request_profiler.py
-|4,39,1,11,1727306669,"~/pyscripts/request_profiler.py"
--'  2  0  ~/pyscripts/request_profiler.py
-|4,39,2,0,1727306669,"~/pyscripts/request_profiler.py"
--'  1  11  ~/pyscripts/request_profiler.py
-|4,39,1,11,1727306669,"~/pyscripts/request_profiler.py"
--'  2  0  ~/pyscripts/request_profiler.py
-|4,39,2,0,1727306669,"~/pyscripts/request_profiler.py"
--'  2  0  ~/bugs/bug.240925.slow_curl_and_requests.txt
-|4,39,2,0,1727306360,"~/bugs/bug.240925.slow_curl_and_requests.txt"
--'  2  0  ~/bugs/bug.240925.slow_curl_and_requests.txt
-|4,39,2,0,1727306360,"~/bugs/bug.240925.slow_curl_and_requests.txt"
--'  2  0  ~/bugs/bug.240925.slow_curl_and_requests.txt
-|4,39,2,0,1727306360,"~/bugs/bug.240925.slow_curl_and_requests.txt"
+-'  1  0  ~/pyscripts/print_todo.py
+|4,39,1,0,1727508917,"~/pyscripts/print_todo.py"
+-'  154  0  ~/pyscripts/print_todo.py
+|4,39,154,0,1727447219,"~/pyscripts/print_todo.py"
+-'  154  0  ~/pyscripts/print_todo.py
+|4,39,154,0,1727447219,"~/pyscripts/print_todo.py"
+-'  1  0  ~/pyscripts/print_todo.py
+|4,39,1,0,1727447164,"~/pyscripts/print_todo.py"
+-'  93  60  ~/pyscripts/print_todo.py
+|4,39,93,60,1727446980,"~/pyscripts/print_todo.py"
+-'  93  60  ~/pyscripts/print_todo.py
+|4,39,93,60,1727446980,"~/pyscripts/print_todo.py"
+-'  93  60  ~/pyscripts/print_todo.py
+|4,39,93,60,1727446980,"~/pyscripts/print_todo.py"
+-'  1  0  ~/pyscripts/print_todo.py
+|4,39,1,0,1727446978,"~/pyscripts/print_todo.py"
+-'  93  60  ~/pyscripts/print_todo.py
+|4,39,93,60,1727446967,"~/pyscripts/print_todo.py"
+-'  1  0  ~/pyscripts/print_todo.py
+|4,39,1,0,1727446964,"~/pyscripts/print_todo.py"
+-'  93  60  ~/pyscripts/print_todo.py
+|4,39,93,60,1727446944,"~/pyscripts/print_todo.py"
+-'  1  0  ~/pyscripts/print_todo.py
+|4,39,1,0,1727446935,"~/pyscripts/print_todo.py"
+-'  93  60  ~/pyscripts/print_todo.py
+|4,39,93,60,1727446919,"~/pyscripts/print_todo.py"
+-'  1  0  ~/pyscripts/print_todo.py
+|4,39,1,0,1727446916,"~/pyscripts/print_todo.py"
+-'  56  17  ~/pyscripts/print_todo.py
+|4,39,56,17,1727446866,"~/pyscripts/print_todo.py"
+-'  56  17  ~/pyscripts/print_todo.py
+|4,39,56,17,1727446866,"~/pyscripts/print_todo.py"
+-'  56  17  ~/pyscripts/print_todo.py
+|4,39,56,17,1727446866,"~/pyscripts/print_todo.py"
+-'  56  17  ~/pyscripts/print_todo.py
+|4,39,56,17,1727446866,"~/pyscripts/print_todo.py"
+-'  56  17  ~/pyscripts/print_todo.py
+|4,39,56,17,1727446866,"~/pyscripts/print_todo.py"
+-'  56  17  ~/pyscripts/print_todo.py
+|4,39,56,17,1727446866,"~/pyscripts/print_todo.py"
+-'  56  17  ~/pyscripts/print_todo.py
+|4,39,56,17,1727446866,"~/pyscripts/print_todo.py"
+-'  1  0  ~/pyscripts/print_todo.py
+|4,39,1,0,1727446862,"~/pyscripts/print_todo.py"
+-'  1  0  ~/pyscripts/print_todo.py
+|4,39,1,0,1727446846,"~/pyscripts/print_todo.py"
+-'  57  4  ~/pyscripts/print_todo.py
+|4,39,57,4,1727446833,"~/pyscripts/print_todo.py"
+-'  57  4  ~/pyscripts/print_todo.py
+|4,39,57,4,1727446833,"~/pyscripts/print_todo.py"
+-'  57  4  ~/pyscripts/print_todo.py
+|4,39,57,4,1727446833,"~/pyscripts/print_todo.py"
+-'  57  4  ~/pyscripts/print_todo.py
+|4,39,57,4,1727446833,"~/pyscripts/print_todo.py"
+-'  57  4  ~/pyscripts/print_todo.py
+|4,39,57,4,1727446833,"~/pyscripts/print_todo.py"
+-'  57  4  ~/pyscripts/print_todo.py
+|4,39,57,4,1727446833,"~/pyscripts/print_todo.py"
+-'  57  4  ~/pyscripts/print_todo.py
+|4,39,57,4,1727446833,"~/pyscripts/print_todo.py"
+-'  57  4  ~/pyscripts/print_todo.py
+|4,39,57,4,1727446833,"~/pyscripts/print_todo.py"
+-'  57  4  ~/pyscripts/print_todo.py
+|4,39,57,4,1727446833,"~/pyscripts/print_todo.py"
+-'  56  21  ~/pyscripts/print_todo.py
+|4,39,56,21,1727446829,"~/pyscripts/print_todo.py"
+-'  56  21  ~/pyscripts/print_todo.py
+|4,39,56,21,1727446829,"~/pyscripts/print_todo.py"
+-'  54  25  ~/pyscripts/print_todo.py
+|4,39,54,25,1727446818,"~/pyscripts/print_todo.py"
+-'  54  25  ~/pyscripts/print_todo.py
+|4,39,54,25,1727446818,"~/pyscripts/print_todo.py"
+-'  54  25  ~/pyscripts/print_todo.py
+|4,39,54,25,1727446818,"~/pyscripts/print_todo.py"
+-'  54  25  ~/pyscripts/print_todo.py
+|4,39,54,25,1727446818,"~/pyscripts/print_todo.py"
+-'  54  25  ~/pyscripts/print_todo.py
+|4,39,54,25,1727446818,"~/pyscripts/print_todo.py"
+-'  54  25  ~/pyscripts/print_todo.py
+|4,39,54,25,1727446818,"~/pyscripts/print_todo.py"
+-'  54  25  ~/pyscripts/print_todo.py
+|4,39,54,25,1727446818,"~/pyscripts/print_todo.py"
+-'  54  25  ~/pyscripts/print_todo.py
+|4,39,54,25,1727446818,"~/pyscripts/print_todo.py"
+-'  54  25  ~/pyscripts/print_todo.py
+|4,39,54,25,1727446818,"~/pyscripts/print_todo.py"
+-'  53  33  ~/pyscripts/print_todo.py
+|4,39,53,33,1727446737,"~/pyscripts/print_todo.py"
+-'  53  33  ~/pyscripts/print_todo.py
+|4,39,53,33,1727446737,"~/pyscripts/print_todo.py"
+-'  53  33  ~/pyscripts/print_todo.py
+|4,39,53,33,1727446737,"~/pyscripts/print_todo.py"
+-'  53  33  ~/pyscripts/print_todo.py
+|4,39,53,33,1727446737,"~/pyscripts/print_todo.py"
+-'  53  33  ~/pyscripts/print_todo.py
+|4,39,53,33,1727446737,"~/pyscripts/print_todo.py"
+-'  53  33  ~/pyscripts/print_todo.py
+|4,39,53,33,1727446737,"~/pyscripts/print_todo.py"
+-'  53  33  ~/pyscripts/print_todo.py
+|4,39,53,33,1727446737,"~/pyscripts/print_todo.py"
+-'  53  33  ~/pyscripts/print_todo.py
+|4,39,53,33,1727446737,"~/pyscripts/print_todo.py"
+-'  53  33  ~/pyscripts/print_todo.py
+|4,39,53,33,1727446737,"~/pyscripts/print_todo.py"
+-'  1  0  ~/pyscripts/print_todo.py
+|4,39,1,0,1727446711,"~/pyscripts/print_todo.py"
+-'  13  13  ~/pyscripts/print_todo.py
+|4,39,13,13,1727446708,"~/pyscripts/print_todo.py"
+-'  13  13  ~/pyscripts/print_todo.py
+|4,39,13,13,1727446708,"~/pyscripts/print_todo.py"
+-'  13  13  ~/pyscripts/print_todo.py
+|4,39,13,13,1727446708,"~/pyscripts/print_todo.py"
+-'  13  13  ~/pyscripts/print_todo.py
+|4,39,13,13,1727446708,"~/pyscripts/print_todo.py"
+-'  13  13  ~/pyscripts/print_todo.py
+|4,39,13,13,1727446708,"~/pyscripts/print_todo.py"
+-'  13  13  ~/pyscripts/print_todo.py
+|4,39,13,13,1727446708,"~/pyscripts/print_todo.py"
+-'  13  13  ~/pyscripts/print_todo.py
+|4,39,13,13,1727446708,"~/pyscripts/print_todo.py"
+-'  13  13  ~/pyscripts/print_todo.py
+|4,39,13,13,1727446708,"~/pyscripts/print_todo.py"
+-'  13  13  ~/pyscripts/print_todo.py
+|4,39,13,13,1727446708,"~/pyscripts/print_todo.py"
+-'  13  13  ~/pyscripts/print_todo.py
+|4,39,13,13,1727446708,"~/pyscripts/print_todo.py"
+-'  1  0  ~/pyscripts/print_todo.py
+|4,39,1,0,1727446676,"~/pyscripts/print_todo.py"
+-'  1  0  ~/.vim/plugin/print-personal-mappings.vim
+|4,39,1,0,1727446670,"~/.vim/plugin/print-personal-mappings.vim"
+-'  1  0  ~/.vim/plugin/print-personal-mappings.vim
+|4,39,1,0,1727446670,"~/.vim/plugin/print-personal-mappings.vim"
+-'  1  0  ~/.vim/plugin/print-personal-mappings.vim
+|4,39,1,0,1727446670,"~/.vim/plugin/print-personal-mappings.vim"
+-'  1  0  ~/.vim/plugin/print-personal-mappings.vim
+|4,39,1,0,1727446670,"~/.vim/plugin/print-personal-mappings.vim"
+-'  1  0  ~/.vim/plugin/print-personal-mappings.vim
+|4,39,1,0,1727446670,"~/.vim/plugin/print-personal-mappings.vim"
+-'  1  0  ~/.vim/plugin/print-personal-mappings.vim
+|4,39,1,0,1727446670,"~/.vim/plugin/print-personal-mappings.vim"
+-'  1  0  ~/.vim/plugin/print-personal-mappings.vim
+|4,39,1,0,1727446670,"~/.vim/plugin/print-personal-mappings.vim"
+-'  1  0  ~/.vim/plugin/print-personal-mappings.vim
+|4,39,1,0,1727446670,"~/.vim/plugin/print-personal-mappings.vim"
+-'  1  0  ~/.vim/plugin/print-personal-mappings.vim
+|4,39,1,0,1727446670,"~/.vim/plugin/print-personal-mappings.vim"
+-'  1  0  ~/.vim/plugin/print-personal-mappings.vim
+|4,39,1,0,1727446670,"~/.vim/plugin/print-personal-mappings.vim"
+-'  1  0  ~/.vim/plugin/print-personal-mappings.vim
+|4,39,1,0,1727446670,"~/.vim/plugin/print-personal-mappings.vim"
+-'  1  0  ~/.vim/plugin/print-personal-mappings.vim
+|4,39,1,0,1727446664,"~/.vim/plugin/print-personal-mappings.vim"
+-'  52  0  ~/pyscripts/print_todo.py
+|4,39,52,0,1727446656,"~/pyscripts/print_todo.py"
+-'  52  0  ~/pyscripts/print_todo.py
+|4,39,52,0,1727446656,"~/pyscripts/print_todo.py"
+-'  52  0  ~/pyscripts/print_todo.py
+|4,39,52,0,1727446656,"~/pyscripts/print_todo.py"
+-'  52  0  ~/pyscripts/print_todo.py
+|4,39,52,0,1727446656,"~/pyscripts/print_todo.py"
+-'  52  0  ~/pyscripts/print_todo.py
+|4,39,52,0,1727446656,"~/pyscripts/print_todo.py"
+-'  52  0  ~/pyscripts/print_todo.py
+|4,39,52,0,1727446656,"~/pyscripts/print_todo.py"
+-'  52  0  ~/pyscripts/print_todo.py
+|4,39,52,0,1727446656,"~/pyscripts/print_todo.py"
+-'  52  0  ~/pyscripts/print_todo.py
+|4,39,52,0,1727446656,"~/pyscripts/print_todo.py"
+-'  52  0  ~/pyscripts/print_todo.py
+|4,39,52,0,1727446656,"~/pyscripts/print_todo.py"
+-'  52  0  ~/pyscripts/print_todo.py
+|4,39,52,0,1727446656,"~/pyscripts/print_todo.py"
+-'  52  0  ~/pyscripts/print_todo.py
+|4,39,52,0,1727446656,"~/pyscripts/print_todo.py"
+-'  52  0  ~/pyscripts/print_todo.py
+|4,39,52,0,1727446656,"~/pyscripts/print_todo.py"
+-'  52  0  ~/pyscripts/print_todo.py
+|4,39,52,0,1727446656,"~/pyscripts/print_todo.py"
+-'  118  0  ~/pyscripts/print_todo.py
+|4,39,118,0,1727446583,"~/pyscripts/print_todo.py"
+-'  114  0  ~/pyscripts/print_todo.py
+|4,39,114,0,1727446583,"~/pyscripts/print_todo.py"
+-'  118  0  ~/pyscripts/print_todo.py
+|4,39,118,0,1727446583,"~/pyscripts/print_todo.py"
+-'  114  0  ~/pyscripts/print_todo.py
+|4,39,114,0,1727446583,"~/pyscripts/print_todo.py"
+-'  118  0  ~/pyscripts/print_todo.py
+|4,39,118,0,1727446583,"~/pyscripts/print_todo.py"
+-'  114  0  ~/pyscripts/print_todo.py
+|4,39,114,0,1727446583,"~/pyscripts/print_todo.py"
+-'  118  0  ~/pyscripts/print_todo.py
+|4,39,118,0,1727446583,"~/pyscripts/print_todo.py"
+-'  114  0  ~/pyscripts/print_todo.py
+|4,39,114,0,1727446583,"~/pyscripts/print_todo.py"
+-'  118  0  ~/pyscripts/print_todo.py
+|4,39,118,0,1727446583,"~/pyscripts/print_todo.py"
+-'  114  0  ~/pyscripts/print_todo.py
+|4,39,114,0,1727446583,"~/pyscripts/print_todo.py"
+-'  118  0  ~/pyscripts/print_todo.py
+|4,39,118,0,1727446583,"~/pyscripts/print_todo.py"
 
 # Buffer list:
-%~/golang/request_profiler/dns_test.c	134	0
+%~/pyscripts/print_todo.py	1	0
 
 # History of marks within files (newest to oldest):
+
+> ~/pyscripts/print_todo.py
+	*	1727508914	0
+	"	1	0
+	.	154	0
+	+	97	17
+	+	155	25
+	+	102	0
+	+	100	0
+	+	97	0
+	+	90	53
+	+	89	72
+	+	97	48
+	+	90	0
+	+	154	0
+	+	155	0
+	+	80	0
+	+	93	72
+	+	150	0
+	+	89	52
+	+	136	13
+	+	150	0
+	+	149	92
+	+	150	12
+	+	150	0
+	+	146	8
+	+	74	64
+	+	78	0
+	+	149	40
+	+	74	49
+	+	74	36
+	+	75	0
+	+	74	0
+	+	75	37
+	+	77	16
+	+	76	27
+	+	70	16
+	+	71	16
+	+	72	16
+	+	73	0
+	+	155	0
+	+	154	0
+	+	1	0
+	+	150	0
+	+	46	0
+	+	115	0
+	+	154	0
+	+	116	0
+	+	131	0
+	+	137	0
+	+	131	0
+	+	137	53
+	+	139	36
+	+	149	0
+	+	150	0
+	+	149	0
+	+	150	0
+	+	154	0
+	+	115	0
+	+	110	0
+	+	149	0
+	+	115	29
+	+	149	0
+	+	124	0
+	+	124	34
+	+	124	0
+	+	125	15
+	+	125	0
+	+	122	0
+	+	125	35
+	+	125	0
+	+	67	23
+	+	60	75
+	+	129	89
+	+	146	59
+	+	146	17
+	+	146	14
+	+	146	18
+	+	147	33
+	+	146	14
+	+	147	0
+	+	146	14
+	+	147	20
+	+	148	49
+	+	146	0
+	+	147	56
+	+	148	0
+	+	143	36
+	+	144	132
+	+	145	12
+	+	146	0
+	+	147	43
+	+	111	0
+	+	57	0
+	+	53	46
+	+	57	33
+	+	57	26
+	+	54	7
+	+	54	25
+	+	56	21
+	+	57	0
+	+	56	16
+	+	93	60
+	+	155	0
+	+	154	0
+	a	114	16
+
+> ~/.vim/plugin/print-personal-mappings.vim
+	*	1727446668	0
+	"	1	0
+	^	173	67
+	.	173	66
+	+	149	4
+	+	149	86
+	+	149	0
+	+	147	0
+	+	147	3
+	+	147	83
+	+	147	0
+	+	146	0
+	+	142	0
+	+	141	0
+	+	154	0
+	+	154	43
+	+	156	49
+	+	154	0
+	+	158	0
+	+	155	0
+	+	154	0
+	+	153	0
+	+	160	0
+	+	145	0
+	+	145	29
+	+	145	37
+	+	145	0
+	+	73	43
+	+	163	65
+	+	88	11
+	+	90	11
+	+	91	0
+	+	92	12
+	+	145	30
+	+	89	36
+	+	149	5
+	+	149	88
+	+	149	0
+	+	144	12
+	+	143	16
+	+	144	37
+	+	145	40
+	+	121	0
+	+	156	37
+	+	148	0
+	+	172	4
+	+	175	17
+	+	177	0
+	+	178	0
+	+	172	0
+	+	176	63
+	+	173	66
+
+> ~/pyscripts/todo.txt
+	*	1727446501	0
+	"	1	146
+	^	1	147
+	.	1	146
+	+	3	96
+	+	2	113
+	+	3	24
+	+	2	0
+	+	4	0
+	+	1	146
+
+> ~/.vim/todo.txt
+	*	1727446353	0
+	"	1	4
+	^	1	63
+	.	1	0
+	+	23	0
+	+	22	167
+	+	36	0
+	+	35	0
+	+	21	0
+	+	36	0
+	+	21	79
+	+	21	0
+	+	20	165
+	+	22	0
+	+	25	0
+	+	20	0
+	+	21	0
+	+	36	0
+	+	20	0
+	+	22	0
+	+	27	0
+	+	20	0
+	+	21	0
+	+	22	0
+	+	21	0
+	+	22	0
+	+	21	0
+	+	22	0
+	+	23	68
+	+	20	0
+	+	23	68
+	+	20	0
+	+	26	0
+	+	26	87
+	+	20	0
+	+	25	0
+	+	23	0
+	+	20	0
+	+	23	0
+	+	28	0
+	+	27	0
+	+	26	0
+	+	18	84
+	+	18	0
+	+	17	19
+	+	26	27
+	+	17	100
+	+	17	0
+	+	19	165
+	+	17	0
+	+	18	0
+	+	23	0
+	+	22	0
+	+	24	108
+	+	31	0
+	+	16	69
+	+	24	0
+	+	15	83
+	+	14	69
+	+	13	87
+	+	12	27
+	+	12	105
+	+	12	0
+	+	15	0
+	+	16	0
+	+	26	0
+	+	12	128
+	+	15	46
+	+	15	0
+	+	12	0
+	+	15	0
+	+	11	124
+	+	12	174
+	+	11	214
+	+	10	75
+	+	9	63
+	+	10	0
+	+	8	142
+	+	7	103
+	+	6	143
+	+	5	123
+	+	5	0
+	+	6	0
+	+	8	0
+	+	9	0
+	+	19	0
+	+	16	0
+	+	11	0
+	+	29	0
+	+	28	0
+	+	5	0
+	+	28	79
+	+	4	1
+	+	5	2
+	+	6	2
+	+	11	7
+	+	8	9
+	+	7	6
+	+	4	87
+	+	3	76
+	+	2	70
+	+	1	62
+	+	4	0
+	+	1	0
+
+> ~/python_common/waivek/todo.txt
+	*	1727446325	0
+	"	6	2
+	^	1	2
+	.	1	0
+	+	10	121
+	+	10	0
+	+	12	0
+	+	11	17
+	+	11	0
+	+	10	0
+	+	12	0
+	+	11	0
+	+	9	166
+	+	8	64
+	+	7	153
+	+	6	134
+	+	5	14
+	+	7	16
+	+	8	14
+	+	9	16
+	+	10	16
+	+	11	19
+	+	6	16
+	+	5	0
+	+	11	0
+	+	5	31
+	+	5	21
+	+	5	146
+	+	5	96
+	+	5	167
+	+	6	0
+	+	5	0
+	+	7	112
+	+	8	35
+	+	10	50
+	+	10	0
+	+	8	42
+	+	9	319
+	+	9	0
+	+	10	25
+	+	11	63
+	+	7	70
+	+	5	1
+	+	11	0
+	+	5	1
+	+	5	0
+	+	7	126
+	+	10	67
+	+	5	0
+	+	11	0
+	+	5	1
+	+	6	0
+	+	5	0
+	+	4	120
+	+	3	91
+	+	2	88
+	+	1	155
+	+	1	1
+	+	2	0
+	+	1	0
+
+> ~/.config/alias.bash
+	*	1727446299	0
+	"	16	41
+	^	20	55
+	.	16	41
+	+	25	32
+	+	16	72
+	+	17	38
+	+	29	0
+	+	27	0
+	+	15	0
+	+	32	0
+	+	30	8
+	+	27	0
+	+	30	33
+	+	31	6
+	+	30	1
+	+	32	0
+	+	31	108
+	+	31	6
+	+	29	1
+	+	17	162
+	+	17	14
+	+	17	163
+	+	21	169
+	+	21	0
+	+	17	58
+	+	32	0
+	+	18	0
+	+	19	17
+	+	20	6
+	+	11	58
+	+	12	26
+	+	20	54
+	+	16	41
+
+> ~/bash/todo_vim_fzf_select.bash
+	*	1727446191	0
+	"	4	4
+	^	4	5
+	.	4	4
+	+	2	0
+	+	4	13
+	+	3	0
+	+	2	9
+	+	2	118
+	+	2	10
+	+	2	119
+	+	3	1
+	+	5	2
+	+	6	0
+	+	1	10
+	+	2	35
+	+	4	4
+
+> ~/.config/shell_data/fish_history
+	*	1727445919	0
+	"	10164	7
+
+> ~/bash/git_fzf_select.bash
+	*	1727445860	0
+	"	1	0
+	^	10	64
+	.	10	63
+	+	37	2
+	+	37	0
+	+	37	2
+	+	1	2
+	+	1	0
+	+	37	0
+	+	9	0
+	+	4	46
+	+	34	0
+	+	36	0
+	+	34	3
+	+	35	2
+	+	7	73
+	+	10	63
+
+> ~/.config/shell_data/.bash_history
+	*	1727445808	0
+	"	1995	0
+
+> ~/.vim/todo.txt:1
+	*	1727445623	0
+	"	1	0
+
+> ~/goutils/print.go
+	*	1727424828	0
+	"	145	1
+	^	165	6
+	.	165	5
+	+	2	0
+	+	89	48
+	+	141	63
+	+	143	41
+	+	145	41
+	+	147	36
+	+	141	0
+	+	49	45
+	+	18	0
+	+	49	0
+	+	142	16
+	+	144	0
+	+	146	0
+	+	148	0
+	+	150	0
+	+	145	0
+	+	151	19
+	+	152	16
+	+	163	0
+	+	161	29
+	+	171	0
+	+	2	0
+	+	157	0
+	+	2	11
+	+	162	70
+	+	163	48
+	+	164	48
+	+	166	43
+	+	167	43
+	+	162	0
+	+	2	0
+	+	1	0
+	+	2	0
+	+	162	70
+	+	163	48
+	+	164	48
+	+	166	43
+	+	167	43
+	+	168	47
+	+	2	0
+	+	1	0
+	+	142	0
+	+	1	0
+	+	2	0
+	+	1	0
+	+	2	0
+	+	13	0
+	+	169	33
+	+	63	0
+	+	1	14
+	+	173	0
+	+	164	0
+	+	173	0
+	+	172	0
+	+	165	5
+
+> ~/hateoas/hateoas-api.py
+	*	1727424695	0
+	"	34	25
+	.	26	0
+	+	656	29
+	+	667	17
+	+	657	0
+	+	926	46
+	+	921	80
+	+	922	25
+	+	926	16
+	+	889	13
+	+	892	116
+	+	892	81
+	+	892	0
+	+	890	0
+	+	921	0
+	+	968	24
+	+	973	78
+	+	994	123
+	+	985	86
+	+	987	0
+	+	985	35
+	+	987	33
+	+	975	159
+	+	987	0
+	+	989	0
+	+	909	0
+	+	909	58
+	+	909	63
+	+	934	237
+	+	909	0
+	+	542	0
+	+	601	58
+	+	602	59
+	+	684	80
+	+	658	21
+	+	665	97
+	+	666	16
+	+	661	51
+	+	665	161
+	+	665	31
+	+	665	102
+	+	602	63
+	+	665	22
+	+	665	0
+	+	660	103
+	+	665	0
+	+	660	0
+	+	661	0
+	+	661	27
+	+	661	47
+	+	664	92
+	+	664	29
+	+	664	0
+	+	660	103
+	+	661	0
+	+	664	23
+	+	665	0
+	+	664	23
+	+	660	0
+	+	665	0
+	+	660	0
+	+	659	0
+	+	661	51
+	+	661	0
+	+	662	0
+	+	663	31
+	+	656	27
+	+	658	32
+	+	660	20
+	+	660	161
+	+	660	38
+	+	662	156
+	+	662	153
+	+	883	54
+	+	893	0
+	+	883	0
+	+	909	0
+	+	905	0
+	+	934	241
+	+	435	157
+	+	440	59
+	+	441	83
+	+	435	108
+	+	441	111
+	+	240	57
+	+	240	65
+	+	240	0
+	+	240	77
+	+	240	0
+	+	232	0
+	+	234	49
+	+	27	0
+	+	23	0
+	+	27	0
+	+	2	1
+	+	27	0
+	+	2	0
+	+	26	0
+	g	934	0
+
+> ~/.vim/coc-settings.json
+	*	1727364352	0
+	"	8	4
+	^	8	52
+	.	8	4
+	+	41	0
+	+	32	34
+	+	41	0
+	+	38	0
+	+	32	0
+	+	4	0
+	+	29	0
+	+	4	0
+	+	38	0
+	+	33	37
+	+	3	38
+	+	14	0
+	+	11	33
+	+	14	0
+	+	12	49
+	+	14	0
+	+	11	0
+	+	13	131
+	+	12	78
+	+	11	0
+	+	26	0
+	+	46	0
+	+	46	25
+	+	46	0
+	+	46	14
+	+	46	44
+	+	46	0
+	+	46	71
+	+	46	33
+	+	46	0
+	+	46	16
+	+	46	0
+	+	46	25
+	+	46	11
+	+	46	48
+	+	46	30
+	+	46	0
+	+	26	6
+	+	35	29
+	+	38	33
+	+	38	0
+	+	35	0
+	+	35	6
+	+	35	5
+	+	35	0
+	+	36	28
+	+	37	32
+	+	41	0
+	+	39	39
+	+	41	0
+	+	46	0
+	+	46	69
+	+	46	34
+	+	46	30
+	+	46	44
+	+	46	18
+	+	46	0
+	+	44	51
+	+	46	41
+	+	40	33
+	+	11	0
+	+	20	0
+	+	18	4
+	+	19	39
+	+	11	0
+	+	8	50
+	+	10	0
+	+	46	27
+	+	46	31
+	+	46	6
+	+	32	6
+	+	32	33
+	+	8	225
+	+	4	49
+	+	8	6
+	+	9	221
+	+	9	50
+	+	8	4
+	+	9	4
+	+	8	6
+	+	9	6
+	+	8	4
+	+	4	0
+	+	6	0
+	+	8	49
+	+	5	0
+	+	7	0
+	+	26	0
+	+	35	0
+	+	46	0
+	+	32	0
+	+	31	0
+	+	44	51
+	+	9	0
+	+	8	0
+	+	9	0
+	+	8	52
+	+	9	4
+	+	8	4
+
+> ~/hateoas/ui-components-css/static/css-themes/dark-gray-mono.css
+	*	1727364167	0
+	"	31	0
+	.	29	0
+	+	19	0
+	+	19	2
+	+	19	19
+	+	19	0
+	+	19	18
+	+	19	0
+	+	30	0
+	+	61	32
+	+	57	65
+	+	61	4
+	+	61	0
+	+	61	24
+	+	61	0
+	+	61	22
+	+	61	0
+	+	58	0
+	+	59	25
+	+	56	0
+	+	55	0
+	+	54	58
+	+	19	0
+	+	17	0
+	+	19	0
+	+	72	0
+	+	10	0
+	+	29	0
+
+> ~/hateoas/fd
+	*	1727362326	0
+	"	1	0
+
+> ~/ui-components-css/todo.txt
+	*	1727362278	0
+	"	1	0
+	.	1	0
+	+	1	66
+	+	2	0
+	+	1	0
+
+> ~/sqlite-editor/ui-components-css/static/css-themes/dark-gray-mono.css
+	*	1727362043	0
+	"	63	0
+	^	61	16
+	.	61	10
+	+	57	14
+	+	61	10
+
+> ~/sqlite-editor/editor-api.py
+	*	1727362020	0
+	"	430	5
+	^	430	6
+	.	430	5
+	+	349	77
+	+	349	45
+	+	352	44
+	+	349	0
+	+	349	45
+	+	349	46
+	+	349	0
+	+	353	0
+	+	349	0
+	+	353	0
+	+	341	40
+	+	341	0
+	+	336	0
+	+	337	40
+	+	338	13
+	+	162	0
+	+	19	10
+	+	161	29
+	+	319	17
+	+	667	0
+	+	334	84
+	+	444	84
+	+	444	14
+	+	444	102
+	+	444	96
+	+	444	14
+	+	444	101
+	+	444	12
+	+	444	15
+	+	444	94
+	+	444	0
+	+	440	0
+	+	440	11
+	+	440	101
+	+	436	41
+	+	440	0
+	+	444	0
+	+	440	0
+	+	436	22
+	+	443	13
+	+	446	12
+	+	436	0
+	+	439	0
+	+	436	0
+	+	441	0
+	+	441	83
+	+	474	67
+	+	474	24
+	+	466	39
+	+	436	22
+	+	430	22
+	+	436	29
+	+	473	19
+	+	466	0
+	+	472	0
+	+	465	36
+	+	469	52
+	+	470	62
+	+	471	0
+	+	671	41
+	+	671	21
+	+	720	337
+	+	430	23
+	+	671	30
+	+	671	0
+	+	650	43
+	+	470	64
+	+	430	23
+	+	456	23
+	+	474	54
+	+	430	22
+	+	457	25
+	+	571	69
+	+	583	69
+	+	658	105
+	+	660	93
+	+	555	52
+	+	556	0
+	+	555	69
+	+	571	0
+	+	460	46
+	+	458	0
+	+	462	0
+	+	461	0
+	+	438	11
+	+	439	0
+	+	437	0
+	+	439	0
+	+	439	14
+	+	439	104
+	+	439	0
+	+	439	90
+	+	440	14
+	+	440	106
+	+	440	0
+	+	439	0
+	+	442	0
+	+	430	23
+	+	431	4
+	+	430	5
+
+> ~/tooling/git-knowledge.txt
+	*	1727361764	0
+	"	33	4
+	.	40	0
+	+	13	49
+	+	11	70
+	+	25	32
+	+	25	69
+	+	27	7
+	+	29	19
+	+	31	7
+	+	40	0
+	+	31	51
+	+	33	7
+	+	40	13
+	+	40	0
+	+	40	3
+	+	33	34
+	+	10	0
+	+	9	16
+	+	6	7
+	+	8	0
+	+	7	49
+	+	20	33
+	+	23	36
+	+	24	0
+	+	39	28
+	+	1	0
+	+	40	0
+
+> ~/.config/fzf/.fzfrc
+	*	1727357606	0
+	"	6	0
+	^	8	1
+	.	8	0
+	+	2	0
+	+	2	1
+	+	2	37
+	+	2	0
+	+	2	1
+	+	4	0
+	+	9	210
+	+	9	0
+	+	9	166
+	+	9	1
+	+	9	17
+	+	9	0
+	+	10	0
+	+	9	23
+	+	9	14
+	+	9	34
+	+	6	0
+	+	2	0
+	+	9	20
+	+	6	1
+	+	9	0
+	+	3	0
+	+	4	0
+	+	9	0
+	+	9	21
+	+	7	1
+	+	9	0
+	+	9	58
+	+	9	0
+	+	5	0
+	+	9	0
+	+	1	0
+	+	9	0
+	+	8	0
+
+> ~/tooling/simpler-vcs-git.txt
+	*	1727355254	0
+	"	32	73
+	^	32	74
+	.	32	73
+	+	32	73
+
+> ~/tooling/fzf-command-samples.txt
+	*	1727351976	0
+	"	9	0
+
+> ~/.vim/plugin/oldfiles.vim
+	*	1727351949	0
+	"	1	0
+	^	59	52
+	.	59	51
+	+	84	0
+	+	49	10
+	+	45	0
+	+	47	16
+	+	47	0
+	+	46	0
+	+	81	0
+	+	65	10
+	+	58	21
+	+	60	8
+	+	63	63
+	+	59	99
+	+	63	30
+	+	71	0
+	+	59	0
+	+	71	0
+	+	70	26
+	+	74	4
+	+	77	10
+	+	84	40
+	+	67	26
+	+	80	25
+	+	83	48
+	+	73	23
+	+	84	3
+	+	85	0
+	+	84	22
+	+	80	15
+	+	59	23
+	+	59	80
+	+	59	20
+	+	59	51
+
+> ~/python_common/examples/example-colors.py
+	*	1727350819	0
+	"	10	0
+	^	70	83
+	.	70	82
+	+	40	24
+	+	42	0
+	+	14	0
+	+	12	17
+	+	91	16
+	+	71	16
+	+	41	23
+	+	68	0
+	+	13	16
+	+	42	0
+	+	14	0
+	+	8	0
+	+	14	0
+	+	9	0
+	+	42	0
+	+	72	0
+	+	11	0
+	+	7	0
+	+	11	0
+	+	71	0
+	+	11	0
+	+	70	82
+
+> ~/.config/setup.bash
+	*	1727347318	0
+	"	2	0
+	^	13	55
+	.	13	54
+	+	14	0
+	+	13	54
+
+> ~/fzf-options.txt
+	*	1727328717	0
+	"	1	0
+	^	1	38
+	.	1	37
+	+	1	37
+
+> ~/tooling/ripgrep-fd-fzf-flags-cheat-sheet.txt
+	*	1727328017	0
+	"	1	0
+	^	1	0
+	.	4	4
+	+	15	14
+	+	19	0
+	+	8	18
+	+	19	21
+	+	1	0
+	+	4	4
+
+> ~/.vim/mappings.vim
+	*	1727327204	0
+	"	9	0
+	^	9	55
+	.	9	54
+	+	2	13
+	+	2	0
+	+	5	0
+	+	2	0
+	+	2	13
+	+	3	0
+	+	5	0
+	+	5	24
+	+	5	25
+	+	5	0
+	+	1	0
+	+	6	55
+	+	24	25
+	+	25	17
+	+	24	25
+	+	25	25
+	+	24	25
+	+	25	25
+	+	24	5
+	+	25	5
+	+	24	0
+	+	25	0
+	+	24	7
+	+	25	16
+	+	14	1
+	+	11	2
+	+	16	1
+	+	25	20
+	+	16	2
+	+	24	0
+	+	23	0
+	+	22	0
+	+	20	4
+	+	20	0
+	+	20	1
+	+	20	0
+	+	16	6
+	+	20	0
+	+	16	6
+	+	20	0
+	+	16	7
+	+	20	0
+	+	16	6
+	+	20	0
+	+	16	5
+	+	20	0
+	+	25	70
+	+	25	34
+	+	25	0
+	+	25	64
+	+	20	1
+	+	14	35
+	+	11	35
+	+	7	35
+	+	14	0
+	+	12	0
+	+	12	57
+	+	12	0
+	+	1	0
+	+	12	33
+	+	1	0
+	+	12	33
+	+	1	0
+	+	12	56
+	+	1	0
+	+	20	0
+	+	12	55
+	+	22	101
+	+	21	36
+	+	20	0
+	+	17	47
+	+	19	0
+	+	17	36
+	+	19	0
+	+	17	0
+	+	15	0
+	+	16	49
+	+	17	53
+	+	17	0
+	+	25	0
+	+	10	0
+	+	11	0
+	+	16	1
+	+	17	1
+	+	17	0
+	+	22	0
+	+	18	45
+	+	26	0
+	+	22	0
+	+	18	23
+	+	5	0
+	+	12	56
+	+	12	0
+	+	9	54
+
+> ~/hateoas/requirements.txt
+	*	1727327006	0
+	"	2	0
+	^	2	0
+	.	2	0
+	+	6	5
+	+	12	20
+	+	4	4
+	+	13	13
+	+	14	0
+	+	16	7
+	+	17	18
+	+	17	0
+	+	20	5
+	+	21	5
+	+	24	6
+	+	24	0
+	+	25	0
+	+	5	0
+	+	26	6
+	+	26	13
+	+	27	5
+	+	29	14
+	+	29	0
+	+	1	7
+	+	2	0
+
+> ~/hateoas/requirements-large.txt
+	*	1727312863	0
+	"	1	0
+	.	1	0
+	+	1	0
 
 > ~/golang/request_profiler/dns_test.c
 	*	1727307651	0
@@ -16385,115 +17139,6 @@ $
 	+	66	40
 	+	67	56
 
-> ~/pyscripts/print_todo.py
-	*	1727132065	0
-	"	141	8
-	^	136	37
-	.	142	0
-	+	95	9
-	+	97	168
-	+	95	29
-	+	95	117
-	+	95	50
-	+	95	111
-	+	18	25
-	+	95	80
-	+	95	51
-	+	95	55
-	+	95	71
-	+	140	0
-	+	84	9
-	+	87	27
-	+	47	0
-	+	18	8
-	+	46	0
-	+	17	0
-	+	47	0
-	+	87	52
-	+	135	32
-	+	136	33
-	+	138	0
-	+	136	0
-	+	139	0
-	+	137	21
-	+	140	128
-	+	84	34
-	+	87	0
-	+	85	11
-	+	86	12
-	+	87	0
-	+	142	104
-	+	142	0
-	+	142	12
-	+	142	21
-	+	142	17
-	+	142	106
-	+	142	24
-	+	142	108
-	+	142	0
-	+	87	60
-	+	84	0
-	+	95	0
-	+	91	17
-	+	91	76
-	+	91	17
-	+	149	25
-	+	96	0
-	+	94	0
-	+	91	0
-	+	84	53
-	+	83	72
-	+	91	48
-	+	84	0
-	+	148	0
-	+	149	0
-	+	74	0
-	+	87	72
-	+	142	0
-	+	83	52
-	+	133	13
-	+	142	0
-	+	141	92
-	+	142	12
-	+	142	0
-	+	140	8
-	+	68	64
-	+	72	0
-	+	141	40
-	+	68	49
-	+	68	36
-	+	69	0
-	+	68	0
-	+	69	37
-	+	71	16
-	+	70	27
-	+	64	16
-	+	65	16
-	+	66	16
-	+	67	0
-	+	149	0
-	+	148	0
-	+	1	0
-	+	142	0
-	+	46	0
-	+	111	0
-	+	147	0
-	+	113	0
-	+	128	0
-	+	134	0
-	+	128	0
-	+	134	53
-	+	136	36
-	+	141	0
-	+	142	0
-	+	141	0
-	+	142	0
-	a	141	16
-
-> ~/tooling/fzf-command-samples.txt
-	*	1727131195	0
-	"	1	0
-
 > ~/tooling/docs/fzf.man
 	*	1727050460	0
 	"	1038	97
@@ -16547,44 +17192,6 @@ $
 	*	1727050004	0
 	"	1	0
 
-> ~/.config/alias.bash
-	*	1727042880	0
-	"	17	0
-	^	12	28
-	.	12	26
-	+	25	32
-	+	16	72
-	+	17	38
-	+	29	0
-	+	27	0
-	+	15	0
-	+	32	0
-	+	30	8
-	+	27	0
-	+	30	33
-	+	31	6
-	+	30	1
-	+	32	0
-	+	31	108
-	+	31	6
-	+	29	1
-	+	17	162
-	+	17	14
-	+	17	163
-	+	21	169
-	+	21	0
-	+	17	58
-	+	32	0
-	+	18	0
-	+	19	17
-	+	20	6
-	+	11	58
-	+	12	26
-
-> ~/.config/setup.bash
-	*	1727042848	0
-	"	23	0
-
 > ~/bash/!/usr/bin/fish
 	*	1727042793	0
 	"	1	0
@@ -16631,38 +17238,6 @@ $
 	+	136	0
 	+	1	0
 
-> ~/tooling/ripgrep-fd-fzf-flags-cheat-sheet.txt
-	*	1727041566	0
-	"	4	4
-	^	1	0
-	.	4	4
-	+	15	14
-	+	19	0
-	+	8	18
-	+	19	21
-	+	1	0
-	+	4	4
-
-> ~/bash/git_fzf_select.bash
-	*	1727041015	0
-	"	6	0
-	^	10	64
-	.	10	63
-	+	37	2
-	+	37	0
-	+	37	2
-	+	1	2
-	+	1	0
-	+	37	0
-	+	9	0
-	+	4	46
-	+	34	0
-	+	36	0
-	+	34	3
-	+	35	2
-	+	7	73
-	+	10	63
-
 > ~/.vim/tmp/fzf-command-samples.txt
 	*	1727040915	0
 	"	11	6
@@ -16685,44 +17260,6 @@ $
 	+	5	1
 	+	8	13
 	+	11	6
-
-> ~/.vim/plugin/oldfiles.vim
-	*	1727040885	0
-	"	59	4
-	^	59	21
-	.	59	110
-	+	84	0
-	+	49	10
-	+	45	0
-	+	47	16
-	+	47	0
-	+	46	0
-	+	81	0
-	+	65	10
-	+	58	21
-	+	60	8
-	+	63	63
-	+	59	99
-	+	63	30
-	+	71	0
-	+	59	0
-	+	71	0
-	+	70	26
-	+	74	4
-	+	77	10
-	+	84	40
-	+	67	26
-	+	80	25
-	+	83	48
-	+	73	23
-	+	84	3
-	+	85	0
-	+	84	22
-	+	80	15
-	+	59	23
-	+	59	80
-	+	59	20
-	+	59	110
 
 > ~/bash/pwd-oldfiles.bash
 	*	1727040875	0
@@ -17348,112 +17885,6 @@ $
 	+	12	0
 	+	9	23
 
-> ~/.vim/todo.txt
-	*	1726233856	0
-	"	1	62
-	^	1	63
-	.	1	62
-	+	25	53
-	+	23	96
-	+	23	0
-	+	22	167
-	+	36	0
-	+	35	0
-	+	21	0
-	+	36	0
-	+	21	79
-	+	21	0
-	+	20	165
-	+	22	0
-	+	25	0
-	+	20	0
-	+	21	0
-	+	36	0
-	+	20	0
-	+	22	0
-	+	27	0
-	+	20	0
-	+	21	0
-	+	22	0
-	+	21	0
-	+	22	0
-	+	21	0
-	+	22	0
-	+	23	68
-	+	20	0
-	+	23	68
-	+	20	0
-	+	26	0
-	+	26	87
-	+	20	0
-	+	25	0
-	+	23	0
-	+	20	0
-	+	23	0
-	+	28	0
-	+	27	0
-	+	26	0
-	+	18	84
-	+	18	0
-	+	17	19
-	+	26	27
-	+	17	100
-	+	17	0
-	+	19	165
-	+	17	0
-	+	18	0
-	+	23	0
-	+	22	0
-	+	24	108
-	+	31	0
-	+	16	69
-	+	24	0
-	+	15	83
-	+	14	69
-	+	13	87
-	+	12	27
-	+	12	105
-	+	12	0
-	+	15	0
-	+	16	0
-	+	26	0
-	+	12	128
-	+	15	46
-	+	15	0
-	+	12	0
-	+	15	0
-	+	11	124
-	+	12	174
-	+	11	214
-	+	10	75
-	+	9	63
-	+	10	0
-	+	8	142
-	+	7	103
-	+	6	143
-	+	5	123
-	+	5	0
-	+	6	0
-	+	8	0
-	+	9	0
-	+	19	0
-	+	16	0
-	+	11	0
-	+	29	0
-	+	28	0
-	+	5	0
-	+	28	79
-	+	4	1
-	+	5	2
-	+	6	2
-	+	11	7
-	+	8	9
-	+	7	6
-	+	4	87
-	+	3	76
-	+	2	70
-	+	1	62
-
 > ~/.vim/plugged/coc.nvim/doc/coc.txt
 	*	1726233810	0
 	"	3043	49
@@ -17555,105 +17986,6 @@ $
 	+	9	0
 	a	184	44
 	b	184	44
-
-> ~/.vim/coc-settings.json
-	*	1726233658	0
-	"	9	4
-	.	9	0
-	+	41	0
-	+	32	34
-	+	41	0
-	+	38	0
-	+	32	0
-	+	4	0
-	+	29	0
-	+	4	0
-	+	38	0
-	+	33	37
-	+	3	38
-	+	14	0
-	+	11	33
-	+	14	0
-	+	12	49
-	+	14	0
-	+	11	0
-	+	13	131
-	+	12	78
-	+	11	0
-	+	26	0
-	+	46	0
-	+	46	25
-	+	46	0
-	+	46	14
-	+	46	44
-	+	46	0
-	+	46	71
-	+	46	33
-	+	46	0
-	+	46	16
-	+	46	0
-	+	46	25
-	+	46	11
-	+	46	48
-	+	46	30
-	+	46	0
-	+	26	6
-	+	35	29
-	+	38	33
-	+	38	0
-	+	35	0
-	+	35	6
-	+	35	5
-	+	35	0
-	+	36	28
-	+	37	32
-	+	41	0
-	+	39	39
-	+	41	0
-	+	46	0
-	+	46	69
-	+	46	34
-	+	46	30
-	+	46	44
-	+	46	18
-	+	46	0
-	+	44	51
-	+	46	41
-	+	40	33
-	+	11	0
-	+	20	0
-	+	18	4
-	+	19	39
-	+	11	0
-	+	8	50
-	+	10	0
-	+	46	27
-	+	46	31
-	+	46	6
-	+	32	6
-	+	32	33
-	+	8	225
-	+	4	49
-	+	8	6
-	+	9	221
-	+	9	50
-	+	8	4
-	+	9	4
-	+	8	6
-	+	9	6
-	+	8	4
-	+	4	0
-	+	6	0
-	+	8	49
-	+	5	0
-	+	7	0
-	+	26	0
-	+	35	0
-	+	46	0
-	+	32	0
-	+	31	0
-	+	44	51
-	+	9	0
 
 > ~/python_common/waivek/test_truncate.py
 	*	1726211643	0
@@ -18148,14 +18480,6 @@ $
 	+	381	0
 	+	583	0
 	+	439	0
-
-> ~/.config/shell_data/fish_history
-	*	1726003479	0
-	"	9356	4
-
-> ~/.config/shell_data/.bash_history
-	*	1726003442	0
-	"	2020	0
 
 > ~/factorio/red_circuit.txt
 	*	1725999845	0
@@ -18694,105 +19018,6 @@ $
 	+	1146	0
 	+	572	5
 
-> ~/.vim/mappings.vim
-	*	1725817076	0
-	"	1	0
-	^	9	0
-	.	11	0
-	+	2	13
-	+	2	0
-	+	5	0
-	+	2	0
-	+	2	13
-	+	3	0
-	+	5	0
-	+	5	24
-	+	5	25
-	+	5	0
-	+	1	0
-	+	6	55
-	+	23	25
-	+	24	17
-	+	23	25
-	+	24	25
-	+	23	25
-	+	24	25
-	+	23	5
-	+	24	5
-	+	23	0
-	+	24	0
-	+	23	7
-	+	24	16
-	+	13	1
-	+	10	2
-	+	15	1
-	+	24	20
-	+	15	2
-	+	23	0
-	+	22	0
-	+	21	0
-	+	19	4
-	+	19	0
-	+	19	1
-	+	19	0
-	+	15	6
-	+	19	0
-	+	15	6
-	+	19	0
-	+	15	7
-	+	19	0
-	+	15	6
-	+	19	0
-	+	15	5
-	+	19	0
-	+	24	70
-	+	24	34
-	+	24	0
-	+	24	64
-	+	19	1
-	+	13	35
-	+	10	35
-	+	7	35
-	+	13	0
-	+	11	0
-	+	11	57
-	+	11	0
-	+	1	0
-	+	11	33
-	+	1	0
-	+	11	33
-	+	1	0
-	+	11	56
-	+	1	0
-	+	19	0
-	+	11	55
-	+	21	101
-	+	20	36
-	+	19	0
-	+	16	47
-	+	18	0
-	+	16	36
-	+	18	0
-	+	16	0
-	+	14	0
-	+	15	49
-	+	16	53
-	+	16	0
-	+	24	0
-	+	9	0
-	+	10	0
-	+	15	1
-	+	16	1
-	+	16	0
-	+	21	0
-	+	17	45
-	+	25	0
-	+	21	0
-	+	17	23
-	+	5	0
-	+	11	56
-	+	11	0
-
 > ~/.vim/plugin/run3.vim
 	*	1725816834	0
 	"	36	4
@@ -19102,68 +19327,6 @@ $
 	+	1	42
 	+	2	0
 	+	3	0
-
-> ~/python_common/waivek/todo.txt
-	*	1725640168	0
-	"	1	2
-	^	1	2
-	.	1	0
-	+	10	121
-	+	10	0
-	+	12	0
-	+	11	17
-	+	11	0
-	+	10	0
-	+	12	0
-	+	11	0
-	+	9	166
-	+	8	64
-	+	7	153
-	+	6	134
-	+	5	14
-	+	7	16
-	+	8	14
-	+	9	16
-	+	10	16
-	+	11	19
-	+	6	16
-	+	5	0
-	+	11	0
-	+	5	31
-	+	5	21
-	+	5	146
-	+	5	96
-	+	5	167
-	+	6	0
-	+	5	0
-	+	7	112
-	+	8	35
-	+	10	50
-	+	10	0
-	+	8	42
-	+	9	319
-	+	9	0
-	+	10	25
-	+	11	63
-	+	7	70
-	+	5	1
-	+	11	0
-	+	5	1
-	+	5	0
-	+	7	126
-	+	10	67
-	+	5	0
-	+	11	0
-	+	5	1
-	+	6	0
-	+	5	0
-	+	4	120
-	+	3	91
-	+	2	88
-	+	1	155
-	+	1	1
-	+	2	0
-	+	1	0
 
 > ~/.vim/plugin/run.vim
 	*	1725633304	0
@@ -19613,15 +19776,6 @@ $
 	*	1725562393	0
 	"	1166	0
 
-> ~/pyscripts/todo.txt
-	*	1725552855	0
-	"	2	24
-	^	2	25
-	.	2	24
-	+	2	96
-	+	1	113
-	+	2	24
-
 > ~/bash/logs/gh-timeago-updates.log
 	*	1725552004	0
 	"	1848	0
@@ -19834,110 +19988,6 @@ $
 	+	52	0
 	+	34	4
 	+	53	0
-
-> ~/sqlite-editor/editor-api.py
-	*	1725543069	0
-	"	216	0
-	^	441	0
-	.	441	0
-	+	349	48
-	+	349	77
-	+	349	45
-	+	352	44
-	+	349	0
-	+	349	45
-	+	349	46
-	+	349	0
-	+	353	0
-	+	349	0
-	+	353	0
-	+	341	40
-	+	341	0
-	+	336	0
-	+	337	40
-	+	338	13
-	+	162	0
-	+	19	10
-	+	161	29
-	+	319	17
-	+	666	0
-	+	334	84
-	+	443	84
-	+	443	14
-	+	443	102
-	+	443	96
-	+	443	14
-	+	443	101
-	+	443	12
-	+	443	15
-	+	443	94
-	+	443	0
-	+	439	0
-	+	439	11
-	+	439	101
-	+	435	41
-	+	439	0
-	+	443	0
-	+	439	0
-	+	435	22
-	+	442	13
-	+	445	12
-	+	435	0
-	+	438	0
-	+	435	0
-	+	440	0
-	+	440	83
-	+	473	67
-	+	473	24
-	+	465	39
-	+	435	22
-	+	430	22
-	+	435	29
-	+	472	19
-	+	465	0
-	+	471	0
-	+	464	36
-	+	468	52
-	+	469	62
-	+	470	0
-	+	670	41
-	+	670	21
-	+	719	337
-	+	430	23
-	+	670	30
-	+	670	0
-	+	649	43
-	+	469	64
-	+	430	23
-	+	455	23
-	+	473	54
-	+	430	22
-	+	456	25
-	+	570	69
-	+	582	69
-	+	657	105
-	+	659	93
-	+	554	52
-	+	555	0
-	+	554	69
-	+	570	0
-	+	459	46
-	+	457	0
-	+	461	0
-	+	460	0
-	+	437	11
-	+	438	0
-	+	436	0
-	+	438	0
-	+	438	14
-	+	438	104
-	+	438	0
-	+	438	90
-	+	439	14
-	+	439	106
-	+	439	0
-	+	438	0
-	+	441	0
 
 > ~/pyscripts/mycommand.py
 	*	1725543061	0
@@ -20850,67 +20900,6 @@ $
 	+	5	9
 	+	6	8
 	+	7	1
-
-> ~/goutils/print.go
-	*	1725206986	0
-	"	1	0
-	^	165	6
-	.	165	5
-	+	2	0
-	+	89	48
-	+	141	63
-	+	143	41
-	+	145	41
-	+	147	36
-	+	141	0
-	+	49	45
-	+	18	0
-	+	49	0
-	+	142	16
-	+	144	0
-	+	146	0
-	+	148	0
-	+	150	0
-	+	145	0
-	+	151	19
-	+	152	16
-	+	163	0
-	+	161	29
-	+	171	0
-	+	2	0
-	+	157	0
-	+	2	11
-	+	162	70
-	+	163	48
-	+	164	48
-	+	166	43
-	+	167	43
-	+	162	0
-	+	2	0
-	+	1	0
-	+	2	0
-	+	162	70
-	+	163	48
-	+	164	48
-	+	166	43
-	+	167	43
-	+	168	47
-	+	2	0
-	+	1	0
-	+	142	0
-	+	1	0
-	+	2	0
-	+	1	0
-	+	2	0
-	+	13	0
-	+	169	33
-	+	63	0
-	+	1	14
-	+	173	0
-	+	164	0
-	+	173	0
-	+	172	0
-	+	165	5
 
 > ~/python-types/chat_utils.py
 	*	1725200576	0
@@ -24531,117 +24520,6 @@ $
 	a	74	12
 	b	74	12
 
-> ~/hateoas/hateoas-api.py
-	*	1723672608	0
-	"	1	0
-	.	27	0
-	+	911	0
-	+	919	7
-	+	928	0
-	+	934	0
-	+	934	113
-	+	657	0
-	+	658	65
-	+	656	29
-	+	667	17
-	+	657	0
-	+	926	46
-	+	921	80
-	+	922	25
-	+	926	16
-	+	889	13
-	+	892	116
-	+	892	81
-	+	892	0
-	+	890	0
-	+	921	0
-	+	968	24
-	+	973	78
-	+	994	123
-	+	985	86
-	+	987	0
-	+	985	35
-	+	987	33
-	+	975	159
-	+	987	0
-	+	989	0
-	+	909	0
-	+	909	58
-	+	909	63
-	+	934	237
-	+	909	0
-	+	542	0
-	+	601	58
-	+	602	59
-	+	684	80
-	+	658	21
-	+	665	97
-	+	666	16
-	+	661	51
-	+	665	161
-	+	665	31
-	+	665	102
-	+	602	63
-	+	665	22
-	+	665	0
-	+	660	103
-	+	665	0
-	+	660	0
-	+	661	0
-	+	661	27
-	+	661	47
-	+	664	92
-	+	664	29
-	+	664	0
-	+	660	103
-	+	661	0
-	+	664	23
-	+	665	0
-	+	664	23
-	+	660	0
-	+	665	0
-	+	660	0
-	+	659	0
-	+	661	51
-	+	661	0
-	+	662	0
-	+	663	31
-	+	656	27
-	+	658	32
-	+	660	20
-	+	660	161
-	+	660	38
-	+	662	156
-	+	662	153
-	+	883	54
-	+	893	0
-	+	883	0
-	+	909	0
-	+	905	0
-	+	934	241
-	+	435	157
-	+	440	59
-	+	441	83
-	+	435	108
-	+	441	111
-	+	240	57
-	+	240	65
-	+	240	0
-	+	240	77
-	+	240	0
-	+	232	0
-	+	234	49
-	+	27	0
-	g	934	0
-
-> ~/ui-components-css/todo.txt
-	*	1723659391	0
-	"	1	0
-	.	1	0
-	+	1	66
-	+	2	0
-	+	1	0
-
 > ~/sqlite-editor/todo.txt
 	*	1723659377	0
 	"	1	0
@@ -25127,31 +25005,6 @@ $
 	+	10	15
 	+	12	38
 	+	13	16
-
-> ~/hateoas/requirements.txt
-	*	1723497536	0
-	"	28	0
-	^	27	15
-	.	28	0
-	+	4	5
-	+	10	20
-	+	2	4
-	+	11	13
-	+	12	0
-	+	14	7
-	+	15	18
-	+	15	0
-	+	18	5
-	+	19	5
-	+	22	6
-	+	22	0
-	+	23	0
-	+	3	0
-	+	24	6
-	+	24	13
-	+	25	5
-	+	27	14
-	+	28	0
 
 > ~/hateoas/sample.py
 	*	1723497530	0
@@ -26413,32 +26266,6 @@ $
 > ~/bash/1
 	*	1723131219	0
 	"	1	0
-
-> ~/hateoas/ui-components-css/static/css-themes/dark-gray-mono.css
-	*	1723100818	0
-	"	57	58
-	^	57	59
-	.	57	58
-	+	21	0
-	+	21	2
-	+	21	19
-	+	21	0
-	+	20	18
-	+	21	0
-	+	32	0
-	+	64	32
-	+	60	65
-	+	64	4
-	+	64	0
-	+	64	24
-	+	64	0
-	+	64	22
-	+	64	0
-	+	61	0
-	+	62	25
-	+	59	0
-	+	58	0
-	+	57	58
 
 > ~/hateoas/migrations/2400808_portionurls-resync.py
 	*	1723065829	0
@@ -27821,34 +27648,6 @@ $
 	+	19	0
 	+	16	0
 
-> ~/python_common/examples/example-colors.py
-	*	1722780709	0
-	"	96	0
-	^	70	83
-	.	70	82
-	+	40	24
-	+	42	0
-	+	14	0
-	+	12	17
-	+	91	16
-	+	71	16
-	+	41	23
-	+	68	0
-	+	13	16
-	+	42	0
-	+	14	0
-	+	8	0
-	+	14	0
-	+	9	0
-	+	42	0
-	+	72	0
-	+	11	0
-	+	7	0
-	+	11	0
-	+	71	0
-	+	11	0
-	+	70	82
-
 > ~/python_common/waivek/print-colors.py
 	*	1722780517	0
 	"	1	0
@@ -28312,60 +28111,6 @@ $
 	+	6	37
 	+	7	14
 	+	8	0
-
-> ~/.vim/plugin/print-personal-mappings.vim
-	*	1722626848	0
-	"	160	40
-	^	173	67
-	.	173	66
-	+	149	4
-	+	149	86
-	+	149	0
-	+	147	0
-	+	147	3
-	+	147	83
-	+	147	0
-	+	146	0
-	+	142	0
-	+	141	0
-	+	154	0
-	+	154	43
-	+	156	49
-	+	154	0
-	+	158	0
-	+	155	0
-	+	154	0
-	+	153	0
-	+	160	0
-	+	145	0
-	+	145	29
-	+	145	37
-	+	145	0
-	+	73	43
-	+	163	65
-	+	88	11
-	+	90	11
-	+	91	0
-	+	92	12
-	+	145	30
-	+	89	36
-	+	149	5
-	+	149	88
-	+	149	0
-	+	144	12
-	+	143	16
-	+	144	37
-	+	145	40
-	+	121	0
-	+	156	37
-	+	148	0
-	+	172	4
-	+	175	17
-	+	177	0
-	+	178	0
-	+	172	0
-	+	176	63
-	+	173	66
 
 > ~/tooling/python-date-knowledge.txt
 	*	1722617601	0
@@ -31363,10 +31108,6 @@ $
 	+	62	0
 	+	63	0
 
-> ~/sqlite-editor/ui-components-css/static/css-themes/dark-gray-mono.css
-	*	1721314489	0
-	"	36	0
-
 > ~/sqlite-editor/dbutils.py
 	*	1721314475	0
 	"	1	0
@@ -33399,10 +33140,6 @@ $
 	*	1720633818	0
 	"	1	0
 
-> ~/tooling/simpler-vcs-git.txt
-	*	1720633692	0
-	"	30	0
-
 > /tmp/crontab.OW9BDt/crontab
 	*	1720621447	0
 	"	34	0
@@ -33745,35 +33482,6 @@ $
 	+	4	23
 	+	5	0
 	+	1	214
-	+	1	0
-
-> ~/tooling/git-knowledge.txt
-	*	1719695120	0
-	"	1	0
-	.	1	0
-	+	13	49
-	+	11	70
-	+	25	32
-	+	25	69
-	+	27	7
-	+	29	19
-	+	31	7
-	+	45	0
-	+	31	51
-	+	33	7
-	+	41	13
-	+	43	0
-	+	41	3
-	+	33	34
-	+	10	0
-	+	9	16
-	+	6	7
-	+	8	0
-	+	7	49
-	+	20	33
-	+	23	36
-	+	24	0
-	+	39	28
 	+	1	0
 
 > ~/.config/git/config
