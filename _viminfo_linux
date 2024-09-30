@@ -11,21 +11,63 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/fzf
+~MSle0~/\C\<starship_precmd\>
 
 # Last Substitute Search Pattern:
-~MSle0&--[a-z-]*
+~MSle0&^\S*\.bash[-:]
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1727508916,,"q"
-:Date
-|2,0,1727446442,,"Date"
+|2,0,1727663545,,"q"
 :q!
-|2,0,1727446429,,"q!"
+|2,0,1727657736,,"q!"
+:e
+|2,0,1727657158,,"e"
+:e .bashrc
+|2,0,1727656588,,"e .bashrc"
+:so %
+|2,0,1727582028,,"so %"
+:call <SNR>68_ShowPwdOldfiles()k
+|2,0,1727582021,,"call <SNR>68_ShowPwdOldfiles()k"
+:MRU 34:mappings.vim
+|2,0,1727581996,,"MRU 34:mappings.vim"
+:map <space>e
+|2,0,1727581920,,"map <space>e"
+:Capture PrintPersonalMappings
+|2,0,1727581838,,"Capture PrintPersonalMappings"
+:Capture PrintPersonalMappinsg
+|2,0,1727581831,,"Capture PrintPersonalMappinsg"
+:PrintPersonalMappings
+|2,0,1727581820,,"PrintPersonalMappings"
+:e tmp-fzf-if-ripgrep.txt
+|2,0,1727581672,,"e tmp-fzf-if-ripgrep.txt"
+:Rg
+|2,0,1727581658,,"Rg"
+:e 
+|2,0,1727581657,,"e "
+:e oldfiles.bash
+|2,0,1727581651,,"e oldfiles.bash"
+:e pwd-oldfiles.bash
+|2,0,1727581639,,"e pwd-oldfiles.bash"
+:e zdirs.bash
+|2,0,1727580702,,"e zdirs.bash"
+:e fzf_select.bash
+|2,0,1727580344,,"e fzf_select.bash"
+:pwd
+|2,0,1727580342,,"pwd"
+:'<,'>s/^\S*\.bash[-:]//
+|2,0,1727579802,,"'<,'>s/^\\S*\\.bash[-:]//"
+:'<,'>s/^\w*\.bash[-:]//
+|2,0,1727579788,,"'<,'>s/^\\w*\\.bash[-:]//"
+:'<,'>s/^\s\s\s\s\zs.*\s\{2,}/ /g
+|2,0,1727579717,,"'<,'>s/^\\s\\s\\s\\s\\zs.*\\s\\{2,}/ /g"
+:%s/^\w*\.bash[-:]//
+|2,0,1727579708,,"%s/^\\w*\\.bash[-:]//"
+:Date
+|2,0,1727579392,,"Date"
 :e!
 |2,0,1727446216,,"e!"
 :MRU fish
@@ -36,24 +78,18 @@ $
 |2,0,1727445806,,"MRU bash_his"
 :Enumerate
 |2,0,1727425122,,"Enumerate"
-:pwd
-|2,0,1727425088,,"pwd"
 :MRU 215:.config/todo.txt
 |2,0,1727424695,,"MRU 215:.config/todo.txt"
 :CocRestart
 |2,0,1727364335,,"CocRestart"
 :CocConfig
 |2,0,1727364325,,"CocConfig"
-:e
-|2,0,1727364239,,"e"
 :Co
 |2,0,1727364222,,"Co"
 :e hateoas-api.py
 |2,0,1727364170,,"e hateoas-api.py"
 :Rg 
 |2,0,1727362029,,"Rg "
-:Rg
-|2,0,1727361813,,"Rg"
 :e ~/tmp/colors.txt
 |2,0,1727360012,,"e ~/tmp/colors.txt"
 :MRU fz
@@ -70,8 +106,6 @@ $
 |2,0,1727347586,,"bd"
 :MRU 3:fzf-command-samples.txt
 |2,0,1727346708,,"MRU 3:fzf-command-samples.txt"
-:so %
-|2,0,1727328052,,"so %"
 :e fzf-command-samples.txt
 |2,0,1727328036,,"e fzf-command-samples.txt"
 :Coc
@@ -152,8 +186,6 @@ $
 |2,0,1727040744,,"cd ~"
 :e ~/tmp/output.txt
 |2,0,1727040719,,"e ~/tmp/output.txt"
-:e 
-|2,0,1727040713,,"e "
 : w ~/.vim/tmp/fzf-command-samples.txt
 |2,0,1727040711,," w ~/.vim/tmp/fzf-command-samples.txt"
 :Rename ripgrep-fd-fzf-flags-cheat-sheet.txt
@@ -346,8 +378,6 @@ $
 |2,0,1725916276,,"earlier 10h"
 :map [
 |2,0,1725916055,,"map ["
-:e oldfiles.bash
-|2,0,1725915143,,"e oldfiles.bash"
 :qa!
 |2,0,1725915104,,"qa!"
 :e waivek/table.py
@@ -516,8 +546,6 @@ $
 |2,0,1725591113,,"Todo"
 :next
 |2,0,1725591099,,"next"
-:e pwd-oldfiles.bash
-|2,0,1725591034,,"e pwd-oldfiles.bash"
 :messages
 |2,0,1725565962,,"messages"
 :source %
@@ -830,20 +858,14 @@ $
 |2,0,1725442186,,"e ~/tooling/search-syntax.txt"
 :MergeEmptyLines
 |2,0,1725440174,,"MergeEmptyLines"
-:map <space>e
-|2,0,1725440108,,"map <space>e"
 :verbose command PrintPersonalMappings
 |2,0,1725440015,,"verbose command PrintPersonalMappings"
-:Capture PrintPersonalMappings
-|2,0,1725439850,,"Capture PrintPersonalMappings"
 :todo
 |2,0,1725439807,,"todo"
 :echo v:oldfiles
 |2,0,1725439524,,"echo v:oldfiles"
 :Capture call PrintPersonalMappings()
 |2,0,1725439369,,"Capture call PrintPersonalMappings()"
-:PrintPersonalMappings
-|2,0,1725439356,,"PrintPersonalMappings"
 :echo getbufinfo(3)
 |2,0,1725379231,,"echo getbufinfo(3)"
 :echo bufnr()
@@ -5504,8 +5526,6 @@ $
 |2,0,1714655849,,"VD"
 :472
 |2,0,1714655515,,"472"
-:e .bashrc
-|2,0,1714640159,,"e .bashrc"
 :e ali
 |2,0,1714640142,,"e ali"
 :e setup.zsh
@@ -6314,8 +6334,6 @@ $
 |2,0,1713516491,,"h blackho"
 :b main.sql
 |2,0,1713516143,,"b main.sql"
-:'<,'>s/^\s\s\s\s\zs.*\s\{2,}/ /g
-|2,0,1713516096,,"'<,'>s/^\\s\\s\\s\\s\\zs.*\\s\\{2,}/ /g"
 :'<,'>s/^    \s\{2,}/ /g
 |2,0,1713516067,,"'<,'>s/^    \\s\\{2,}/ /g"
 :'<,'>s/\s\{2,}/ /g
@@ -10518,6 +10536,24 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/PS1
+|2,1,1727657172,47,"PS1"
+?/Set PS1
+|2,1,1727656868,47,"Set PS1"
+?/pre
+|2,1,1727656629,47,"pre"
+?/<space>e
+|2,1,1727581846,47,"<space>e"
+?/vim
+|2,1,1727581674,47,"vim"
+? ^\S*\.bash[-:]
+|2,1,1727579802,,"^\\S*\\.bash[-:]"
+? ^\w*\.bash[-:]
+|2,1,1727579788,,"^\\w*\\.bash[-:]"
+? ^\s\s\s\s\zs.*\s\{2,}
+|2,1,1727579717,,"^\\s\\s\\s\\s\\zs.*\\s\\{2,}"
+?/if 
+|2,1,1727579523,47,"if "
 ?/fzf
 |2,1,1727446916,47,"fzf"
 ?/timeago
@@ -11482,8 +11518,6 @@ $
 |2,1,1722536205,47,"suggest"
 ?/symbol
 |2,1,1722535925,47,"symbol"
-?/vim
-|2,1,1722524062,47,"vim"
 ?/virtual
 |2,1,1722524021,47,"virtual"
 ?/\<b:
@@ -15430,39 +15464,53 @@ $
 |2,4,1693311567,,"cont"
 
 # Registers:
-"0	LINE	0
-	    print(x.days)
-|3,0,0,1,1,0,1727446829,"    print(x.days)"
-""1	LINE	0
-	
-|3,1,1,1,1,0,1727447184,""
+"0	CHAR	0
+	2
+|3,0,0,0,1,0,1727658019,"2"
+"1	LINE	0
+	# F2 functionality for window switching
+	bind -n F2 if-shell \
+	  'tmux list-windows -F "#{window_index}" | grep -q "^2$"' \
+	  'if-shell "[ #{window_index} -eq 1 ]" "select-window -t 2" "select-window -t 1"' \
+	  'new-window -n Window2'
+|3,0,1,1,5,0,1727658014,"# F2 functionality for window switching","bind -n F2 if-shell \\","  'tmux list-windows -F \"#{window_index}\" | grep -q \"^2$\"' \\","  'if-shell \"[ #{window_index} -eq 1 ]\" \"select-window -t 2\" \"select-window -t 1\"' \\","  'new-window -n Window2'"
 "2	LINE	0
 	
-|3,0,2,1,1,0,1727447182,""
+|3,0,2,1,1,0,1727657911,""
 "3	LINE	0
-	    import sys; sys.exit(0)
-|3,0,3,1,1,0,1727446830,"    import sys; sys.exit(0)"
+	# Hide statusline by default
+	set -g status off
+	
+	# Toggle statusline on/off with F1
+	bind -n F1 set -g status
+	
+	# F2 functionality for window switching
+	bind -n F2 if-shell \
+	  '[ "$(tmux list-windows | grep -c "^2:")" -eq 0 ]' \
+	  'new-window' \
+	  'if-shell "[ #{window_index} -eq 1 ]" "select-window -t 1" "select-window -t 2"'
+|3,0,3,1,11,0,1727657908,"# Hide statusline by default","set -g status off","","# Toggle statusline on/off with F1","bind -n F1 set -g status","","# F2 functionality for window switching","bind -n F2 if-shell \\","  '[ \"$(tmux list-windows | grep -c \"^2:\")\" -eq 0 ]' \\","  'new-window' \\","  'if-shell \"[ #{window_index} -eq 1 ]\" \"select-window -t 1\" \"select-window -t 2\"'"
 "4	LINE	0
-	    print(x.days)
-|3,0,4,1,1,0,1727446809,"    print(x.days)"
+	
+|3,0,4,1,1,0,1727657765,""
 "5	LINE	0
-	    x = now-dt
-|3,0,5,1,1,0,1727446803,"    x = now-dt"
+	source ~/tmp/starship-init.bash
+|3,0,5,1,1,0,1727657152,"source ~/tmp/starship-init.bash"
 "6	LINE	0
-	    breakpoint
-|3,0,6,1,1,0,1727446755,"    breakpoint"
+	eva
+|3,0,6,1,1,0,1727657094,"eva"
 "7	LINE	0
-	    if now - dt
-|3,0,7,1,1,0,1727446753,"    if now - dt"
+	echo "Done."
+|3,0,7,1,1,0,1727656589,"echo \"Done.\""
 "8	LINE	0
-	    timeago.
-|3,0,8,1,1,0,1727446701,"    timeago."
+	    echoerr "BEFORE"
+|3,0,8,1,1,0,1727581972,"    echoerr \"BEFORE\""
 "9	LINE	0
-	    now =
-|3,0,9,1,1,0,1727446688,"    now ="
+	source ~/bash/fzf_select.bash
+|3,0,9,1,1,0,1727581711,"source ~/bash/fzf_select.bash"
 "a	CHAR	0
 	0d;d;
-|3,0,10,0,1,0,1727446780,"0d;d;"
+|3,0,10,0,1,0,1727656396,"0d;d;"
 "i	CHAR	0
 	ado_up()jk:q!
 |3,0,18,0,1,0,1724200553,"ado_up()jk:q!"
@@ -15482,238 +15530,766 @@ $
 	set verbosefile=verbose-file.txt
 	set verbose=20 | quit
 |3,0,28,1,2,0,1725457945,"set verbosefile=verbose-file.txt","set verbose=20 | quit"
-"-	CHAR	0
-	print(now-dt)
-|3,0,36,0,1,0,1727446780,"print(now-dt)"
+""-	CHAR	0
+	1
+|3,1,36,0,1,0,1727658019,"1"
 
 # File marks:
-'0  1  0  ~/pyscripts/print_todo.py
-|4,48,1,0,1727508917,"~/pyscripts/print_todo.py"
-'1  154  0  ~/pyscripts/print_todo.py
-|4,49,154,0,1727447219,"~/pyscripts/print_todo.py"
-'2  154  0  ~/pyscripts/print_todo.py
-|4,50,154,0,1727447219,"~/pyscripts/print_todo.py"
-'3  93  60  ~/pyscripts/print_todo.py
-|4,51,93,60,1727446980,"~/pyscripts/print_todo.py"
-'4  93  60  ~/pyscripts/print_todo.py
-|4,52,93,60,1727446980,"~/pyscripts/print_todo.py"
-'5  93  60  ~/pyscripts/print_todo.py
-|4,53,93,60,1727446980,"~/pyscripts/print_todo.py"
-'6  93  60  ~/pyscripts/print_todo.py
-|4,54,93,60,1727446980,"~/pyscripts/print_todo.py"
-'7  93  60  ~/pyscripts/print_todo.py
-|4,55,93,60,1727446967,"~/pyscripts/print_todo.py"
-'8  93  60  ~/pyscripts/print_todo.py
-|4,56,93,60,1727446967,"~/pyscripts/print_todo.py"
-'9  93  60  ~/pyscripts/print_todo.py
-|4,57,93,60,1727446967,"~/pyscripts/print_todo.py"
+'0  1  21  ~/.config/git/token.gitconfig
+|4,48,1,21,1727663546,"~/.config/git/token.gitconfig"
+'1  8  9  ~/.config/tmux/tmux.conf
+|4,49,8,9,1727658024,"~/.config/tmux/tmux.conf"
+'2  8  9  ~/.config/tmux/tmux.conf
+|4,50,8,9,1727658024,"~/.config/tmux/tmux.conf"
+'3  11  2  ~/.config/tmux/tmux.conf
+|4,51,11,2,1727657916,"~/.config/tmux/tmux.conf"
+'4  11  2  ~/.config/tmux/tmux.conf
+|4,52,11,2,1727657916,"~/.config/tmux/tmux.conf"
+'5  1  0  ~/.config/setup.bash
+|4,53,1,0,1727657809,"~/.config/setup.bash"
+'6  1  0  ~/.config/setup.bash
+|4,54,1,0,1727657809,"~/.config/setup.bash"
+'7  1  0  ~/.config/setup.bash
+|4,55,1,0,1727657809,"~/.config/setup.bash"
+'8  1  0  ~/.config/setup.bash
+|4,56,1,0,1727657809,"~/.config/setup.bash"
+'9  1  0  ~/.config/setup.bash
+|4,57,1,0,1727657809,"~/.config/setup.bash"
 
 # Jumplist (newest first):
--'  1  0  ~/pyscripts/print_todo.py
-|4,39,1,0,1727508917,"~/pyscripts/print_todo.py"
--'  154  0  ~/pyscripts/print_todo.py
-|4,39,154,0,1727447219,"~/pyscripts/print_todo.py"
--'  154  0  ~/pyscripts/print_todo.py
-|4,39,154,0,1727447219,"~/pyscripts/print_todo.py"
--'  1  0  ~/pyscripts/print_todo.py
-|4,39,1,0,1727447164,"~/pyscripts/print_todo.py"
--'  93  60  ~/pyscripts/print_todo.py
-|4,39,93,60,1727446980,"~/pyscripts/print_todo.py"
--'  93  60  ~/pyscripts/print_todo.py
-|4,39,93,60,1727446980,"~/pyscripts/print_todo.py"
--'  93  60  ~/pyscripts/print_todo.py
-|4,39,93,60,1727446980,"~/pyscripts/print_todo.py"
--'  1  0  ~/pyscripts/print_todo.py
-|4,39,1,0,1727446978,"~/pyscripts/print_todo.py"
--'  93  60  ~/pyscripts/print_todo.py
-|4,39,93,60,1727446967,"~/pyscripts/print_todo.py"
--'  1  0  ~/pyscripts/print_todo.py
-|4,39,1,0,1727446964,"~/pyscripts/print_todo.py"
--'  93  60  ~/pyscripts/print_todo.py
-|4,39,93,60,1727446944,"~/pyscripts/print_todo.py"
--'  1  0  ~/pyscripts/print_todo.py
-|4,39,1,0,1727446935,"~/pyscripts/print_todo.py"
--'  93  60  ~/pyscripts/print_todo.py
-|4,39,93,60,1727446919,"~/pyscripts/print_todo.py"
--'  1  0  ~/pyscripts/print_todo.py
-|4,39,1,0,1727446916,"~/pyscripts/print_todo.py"
--'  56  17  ~/pyscripts/print_todo.py
-|4,39,56,17,1727446866,"~/pyscripts/print_todo.py"
--'  56  17  ~/pyscripts/print_todo.py
-|4,39,56,17,1727446866,"~/pyscripts/print_todo.py"
--'  56  17  ~/pyscripts/print_todo.py
-|4,39,56,17,1727446866,"~/pyscripts/print_todo.py"
--'  56  17  ~/pyscripts/print_todo.py
-|4,39,56,17,1727446866,"~/pyscripts/print_todo.py"
--'  56  17  ~/pyscripts/print_todo.py
-|4,39,56,17,1727446866,"~/pyscripts/print_todo.py"
--'  56  17  ~/pyscripts/print_todo.py
-|4,39,56,17,1727446866,"~/pyscripts/print_todo.py"
--'  56  17  ~/pyscripts/print_todo.py
-|4,39,56,17,1727446866,"~/pyscripts/print_todo.py"
--'  1  0  ~/pyscripts/print_todo.py
-|4,39,1,0,1727446862,"~/pyscripts/print_todo.py"
--'  1  0  ~/pyscripts/print_todo.py
-|4,39,1,0,1727446846,"~/pyscripts/print_todo.py"
--'  57  4  ~/pyscripts/print_todo.py
-|4,39,57,4,1727446833,"~/pyscripts/print_todo.py"
--'  57  4  ~/pyscripts/print_todo.py
-|4,39,57,4,1727446833,"~/pyscripts/print_todo.py"
--'  57  4  ~/pyscripts/print_todo.py
-|4,39,57,4,1727446833,"~/pyscripts/print_todo.py"
--'  57  4  ~/pyscripts/print_todo.py
-|4,39,57,4,1727446833,"~/pyscripts/print_todo.py"
--'  57  4  ~/pyscripts/print_todo.py
-|4,39,57,4,1727446833,"~/pyscripts/print_todo.py"
--'  57  4  ~/pyscripts/print_todo.py
-|4,39,57,4,1727446833,"~/pyscripts/print_todo.py"
--'  57  4  ~/pyscripts/print_todo.py
-|4,39,57,4,1727446833,"~/pyscripts/print_todo.py"
--'  57  4  ~/pyscripts/print_todo.py
-|4,39,57,4,1727446833,"~/pyscripts/print_todo.py"
--'  57  4  ~/pyscripts/print_todo.py
-|4,39,57,4,1727446833,"~/pyscripts/print_todo.py"
--'  56  21  ~/pyscripts/print_todo.py
-|4,39,56,21,1727446829,"~/pyscripts/print_todo.py"
--'  56  21  ~/pyscripts/print_todo.py
-|4,39,56,21,1727446829,"~/pyscripts/print_todo.py"
--'  54  25  ~/pyscripts/print_todo.py
-|4,39,54,25,1727446818,"~/pyscripts/print_todo.py"
--'  54  25  ~/pyscripts/print_todo.py
-|4,39,54,25,1727446818,"~/pyscripts/print_todo.py"
--'  54  25  ~/pyscripts/print_todo.py
-|4,39,54,25,1727446818,"~/pyscripts/print_todo.py"
--'  54  25  ~/pyscripts/print_todo.py
-|4,39,54,25,1727446818,"~/pyscripts/print_todo.py"
--'  54  25  ~/pyscripts/print_todo.py
-|4,39,54,25,1727446818,"~/pyscripts/print_todo.py"
--'  54  25  ~/pyscripts/print_todo.py
-|4,39,54,25,1727446818,"~/pyscripts/print_todo.py"
--'  54  25  ~/pyscripts/print_todo.py
-|4,39,54,25,1727446818,"~/pyscripts/print_todo.py"
--'  54  25  ~/pyscripts/print_todo.py
-|4,39,54,25,1727446818,"~/pyscripts/print_todo.py"
--'  54  25  ~/pyscripts/print_todo.py
-|4,39,54,25,1727446818,"~/pyscripts/print_todo.py"
--'  53  33  ~/pyscripts/print_todo.py
-|4,39,53,33,1727446737,"~/pyscripts/print_todo.py"
--'  53  33  ~/pyscripts/print_todo.py
-|4,39,53,33,1727446737,"~/pyscripts/print_todo.py"
--'  53  33  ~/pyscripts/print_todo.py
-|4,39,53,33,1727446737,"~/pyscripts/print_todo.py"
--'  53  33  ~/pyscripts/print_todo.py
-|4,39,53,33,1727446737,"~/pyscripts/print_todo.py"
--'  53  33  ~/pyscripts/print_todo.py
-|4,39,53,33,1727446737,"~/pyscripts/print_todo.py"
--'  53  33  ~/pyscripts/print_todo.py
-|4,39,53,33,1727446737,"~/pyscripts/print_todo.py"
--'  53  33  ~/pyscripts/print_todo.py
-|4,39,53,33,1727446737,"~/pyscripts/print_todo.py"
--'  53  33  ~/pyscripts/print_todo.py
-|4,39,53,33,1727446737,"~/pyscripts/print_todo.py"
--'  53  33  ~/pyscripts/print_todo.py
-|4,39,53,33,1727446737,"~/pyscripts/print_todo.py"
--'  1  0  ~/pyscripts/print_todo.py
-|4,39,1,0,1727446711,"~/pyscripts/print_todo.py"
--'  13  13  ~/pyscripts/print_todo.py
-|4,39,13,13,1727446708,"~/pyscripts/print_todo.py"
--'  13  13  ~/pyscripts/print_todo.py
-|4,39,13,13,1727446708,"~/pyscripts/print_todo.py"
--'  13  13  ~/pyscripts/print_todo.py
-|4,39,13,13,1727446708,"~/pyscripts/print_todo.py"
--'  13  13  ~/pyscripts/print_todo.py
-|4,39,13,13,1727446708,"~/pyscripts/print_todo.py"
--'  13  13  ~/pyscripts/print_todo.py
-|4,39,13,13,1727446708,"~/pyscripts/print_todo.py"
--'  13  13  ~/pyscripts/print_todo.py
-|4,39,13,13,1727446708,"~/pyscripts/print_todo.py"
--'  13  13  ~/pyscripts/print_todo.py
-|4,39,13,13,1727446708,"~/pyscripts/print_todo.py"
--'  13  13  ~/pyscripts/print_todo.py
-|4,39,13,13,1727446708,"~/pyscripts/print_todo.py"
--'  13  13  ~/pyscripts/print_todo.py
-|4,39,13,13,1727446708,"~/pyscripts/print_todo.py"
--'  13  13  ~/pyscripts/print_todo.py
-|4,39,13,13,1727446708,"~/pyscripts/print_todo.py"
--'  1  0  ~/pyscripts/print_todo.py
-|4,39,1,0,1727446676,"~/pyscripts/print_todo.py"
--'  1  0  ~/.vim/plugin/print-personal-mappings.vim
-|4,39,1,0,1727446670,"~/.vim/plugin/print-personal-mappings.vim"
--'  1  0  ~/.vim/plugin/print-personal-mappings.vim
-|4,39,1,0,1727446670,"~/.vim/plugin/print-personal-mappings.vim"
--'  1  0  ~/.vim/plugin/print-personal-mappings.vim
-|4,39,1,0,1727446670,"~/.vim/plugin/print-personal-mappings.vim"
--'  1  0  ~/.vim/plugin/print-personal-mappings.vim
-|4,39,1,0,1727446670,"~/.vim/plugin/print-personal-mappings.vim"
--'  1  0  ~/.vim/plugin/print-personal-mappings.vim
-|4,39,1,0,1727446670,"~/.vim/plugin/print-personal-mappings.vim"
--'  1  0  ~/.vim/plugin/print-personal-mappings.vim
-|4,39,1,0,1727446670,"~/.vim/plugin/print-personal-mappings.vim"
--'  1  0  ~/.vim/plugin/print-personal-mappings.vim
-|4,39,1,0,1727446670,"~/.vim/plugin/print-personal-mappings.vim"
--'  1  0  ~/.vim/plugin/print-personal-mappings.vim
-|4,39,1,0,1727446670,"~/.vim/plugin/print-personal-mappings.vim"
--'  1  0  ~/.vim/plugin/print-personal-mappings.vim
-|4,39,1,0,1727446670,"~/.vim/plugin/print-personal-mappings.vim"
--'  1  0  ~/.vim/plugin/print-personal-mappings.vim
-|4,39,1,0,1727446670,"~/.vim/plugin/print-personal-mappings.vim"
--'  1  0  ~/.vim/plugin/print-personal-mappings.vim
-|4,39,1,0,1727446670,"~/.vim/plugin/print-personal-mappings.vim"
--'  1  0  ~/.vim/plugin/print-personal-mappings.vim
-|4,39,1,0,1727446664,"~/.vim/plugin/print-personal-mappings.vim"
--'  52  0  ~/pyscripts/print_todo.py
-|4,39,52,0,1727446656,"~/pyscripts/print_todo.py"
--'  52  0  ~/pyscripts/print_todo.py
-|4,39,52,0,1727446656,"~/pyscripts/print_todo.py"
--'  52  0  ~/pyscripts/print_todo.py
-|4,39,52,0,1727446656,"~/pyscripts/print_todo.py"
--'  52  0  ~/pyscripts/print_todo.py
-|4,39,52,0,1727446656,"~/pyscripts/print_todo.py"
--'  52  0  ~/pyscripts/print_todo.py
-|4,39,52,0,1727446656,"~/pyscripts/print_todo.py"
--'  52  0  ~/pyscripts/print_todo.py
-|4,39,52,0,1727446656,"~/pyscripts/print_todo.py"
--'  52  0  ~/pyscripts/print_todo.py
-|4,39,52,0,1727446656,"~/pyscripts/print_todo.py"
--'  52  0  ~/pyscripts/print_todo.py
-|4,39,52,0,1727446656,"~/pyscripts/print_todo.py"
--'  52  0  ~/pyscripts/print_todo.py
-|4,39,52,0,1727446656,"~/pyscripts/print_todo.py"
--'  52  0  ~/pyscripts/print_todo.py
-|4,39,52,0,1727446656,"~/pyscripts/print_todo.py"
--'  52  0  ~/pyscripts/print_todo.py
-|4,39,52,0,1727446656,"~/pyscripts/print_todo.py"
--'  52  0  ~/pyscripts/print_todo.py
-|4,39,52,0,1727446656,"~/pyscripts/print_todo.py"
--'  52  0  ~/pyscripts/print_todo.py
-|4,39,52,0,1727446656,"~/pyscripts/print_todo.py"
--'  118  0  ~/pyscripts/print_todo.py
-|4,39,118,0,1727446583,"~/pyscripts/print_todo.py"
--'  114  0  ~/pyscripts/print_todo.py
-|4,39,114,0,1727446583,"~/pyscripts/print_todo.py"
--'  118  0  ~/pyscripts/print_todo.py
-|4,39,118,0,1727446583,"~/pyscripts/print_todo.py"
--'  114  0  ~/pyscripts/print_todo.py
-|4,39,114,0,1727446583,"~/pyscripts/print_todo.py"
--'  118  0  ~/pyscripts/print_todo.py
-|4,39,118,0,1727446583,"~/pyscripts/print_todo.py"
--'  114  0  ~/pyscripts/print_todo.py
-|4,39,114,0,1727446583,"~/pyscripts/print_todo.py"
--'  118  0  ~/pyscripts/print_todo.py
-|4,39,118,0,1727446583,"~/pyscripts/print_todo.py"
--'  114  0  ~/pyscripts/print_todo.py
-|4,39,114,0,1727446583,"~/pyscripts/print_todo.py"
--'  118  0  ~/pyscripts/print_todo.py
-|4,39,118,0,1727446583,"~/pyscripts/print_todo.py"
--'  114  0  ~/pyscripts/print_todo.py
-|4,39,114,0,1727446583,"~/pyscripts/print_todo.py"
--'  118  0  ~/pyscripts/print_todo.py
-|4,39,118,0,1727446583,"~/pyscripts/print_todo.py"
+-'  1  21  ~/.config/git/token.gitconfig
+|4,39,1,21,1727663546,"~/.config/git/token.gitconfig"
+-'  8  9  ~/.config/tmux/tmux.conf
+|4,39,8,9,1727658024,"~/.config/tmux/tmux.conf"
+-'  8  9  ~/.config/tmux/tmux.conf
+|4,39,8,9,1727658024,"~/.config/tmux/tmux.conf"
+-'  21  0  ~/.config/tmux/tmux.conf
+|4,39,21,0,1727658017,"~/.config/tmux/tmux.conf"
+-'  21  0  ~/.config/tmux/tmux.conf
+|4,39,21,0,1727658017,"~/.config/tmux/tmux.conf"
+-'  22  0  ~/.config/tmux/tmux.conf
+|4,39,22,0,1727658015,"~/.config/tmux/tmux.conf"
+-'  22  0  ~/.config/tmux/tmux.conf
+|4,39,22,0,1727658015,"~/.config/tmux/tmux.conf"
+-'  7  39  ~/.config/tmux/tmux.conf
+|4,39,7,39,1727658014,"~/.config/tmux/tmux.conf"
+-'  7  39  ~/.config/tmux/tmux.conf
+|4,39,7,39,1727658014,"~/.config/tmux/tmux.conf"
+-'  1  0  ~/.config/tmux/tmux.conf
+|4,39,1,0,1727658011,"~/.config/tmux/tmux.conf"
+-'  1  0  ~/.config/tmux/tmux.conf
+|4,39,1,0,1727658011,"~/.config/tmux/tmux.conf"
+-'  11  2  ~/.config/tmux/tmux.conf
+|4,39,11,2,1727657916,"~/.config/tmux/tmux.conf"
+-'  11  2  ~/.config/tmux/tmux.conf
+|4,39,11,2,1727657916,"~/.config/tmux/tmux.conf"
+-'  12  0  ~/.config/tmux/tmux.conf
+|4,39,12,0,1727657910,"~/.config/tmux/tmux.conf"
+-'  12  0  ~/.config/tmux/tmux.conf
+|4,39,12,0,1727657910,"~/.config/tmux/tmux.conf"
+-'  1  28  ~/.config/tmux/tmux.conf
+|4,39,1,28,1727657908,"~/.config/tmux/tmux.conf"
+-'  1  0  ~/.config/setup.bash
+|4,39,1,0,1727657809,"~/.config/setup.bash"
+-'  1  0  ~/.config/setup.bash
+|4,39,1,0,1727657809,"~/.config/setup.bash"
+-'  1  0  ~/.config/setup.bash
+|4,39,1,0,1727657809,"~/.config/setup.bash"
+-'  1  0  ~/.config/setup.bash
+|4,39,1,0,1727657809,"~/.config/setup.bash"
+-'  2  2  ~/.config/tmux/tmux.conf
+|4,39,2,2,1727657769,"~/.config/tmux/tmux.conf"
+-'  2  2  ~/.config/tmux/tmux.conf
+|4,39,2,2,1727657769,"~/.config/tmux/tmux.conf"
+-'  2  2  ~/.config/tmux/tmux.conf
+|4,39,2,2,1727657769,"~/.config/tmux/tmux.conf"
+-'  11  2  ~/.config/tmux/tmux.conf
+|4,39,11,2,1727657769,"~/.config/tmux/tmux.conf"
+-'  11  2  ~/.config/tmux/tmux.conf
+|4,39,11,2,1727657769,"~/.config/tmux/tmux.conf"
+-'  1  0  ~/.config/tmux/tmux.conf
+|4,39,1,0,1727657756,"~/.config/tmux/tmux.conf"
+-'  1  0  ~/.config/tmux/tmux.conf
+|4,39,1,0,1727657756,"~/.config/tmux/tmux.conf"
+-'  1  0  ~/cd
+|4,39,1,0,1727657737,"~/cd"
+-'  1  0  ~/cd
+|4,39,1,0,1727657737,"~/cd"
+-'  1  0  ~/cd
+|4,39,1,0,1727657737,"~/cd"
+-'  1  0  ~/cd
+|4,39,1,0,1727657737,"~/cd"
+-'  1  0  ~/cd
+|4,39,1,0,1727657737,"~/cd"
+-'  1  0  ~/cd
+|4,39,1,0,1727657737,"~/cd"
+-'  135  8  ~/tmp/starship-init.bash
+|4,39,135,8,1727657477,"~/tmp/starship-init.bash"
+-'  135  8  ~/tmp/starship-init.bash
+|4,39,135,8,1727657477,"~/tmp/starship-init.bash"
+-'  135  8  ~/tmp/starship-init.bash
+|4,39,135,8,1727657477,"~/tmp/starship-init.bash"
+-'  135  8  ~/tmp/starship-init.bash
+|4,39,135,8,1727657477,"~/tmp/starship-init.bash"
+-'  135  8  ~/tmp/starship-init.bash
+|4,39,135,8,1727657477,"~/tmp/starship-init.bash"
+-'  135  8  ~/tmp/starship-init.bash
+|4,39,135,8,1727657477,"~/tmp/starship-init.bash"
+-'  135  8  ~/tmp/starship-init.bash
+|4,39,135,8,1727657477,"~/tmp/starship-init.bash"
+-'  1  0  ~/tmp/starship-init.bash
+|4,39,1,0,1727657458,"~/tmp/starship-init.bash"
+-'  1  0  ~/tmp/starship-init.bash
+|4,39,1,0,1727657458,"~/tmp/starship-init.bash"
+-'  1  0  ~/tmp/starship-init.bash
+|4,39,1,0,1727657458,"~/tmp/starship-init.bash"
+-'  1  0  ~/tmp/starship-init.bash
+|4,39,1,0,1727657458,"~/tmp/starship-init.bash"
+-'  1  0  ~/tmp/starship-init.bash
+|4,39,1,0,1727657458,"~/tmp/starship-init.bash"
+-'  1  0  ~/tmp/starship-init.bash
+|4,39,1,0,1727657458,"~/tmp/starship-init.bash"
+-'  1  0  ~/tmp/starship-init.bash
+|4,39,1,0,1727657458,"~/tmp/starship-init.bash"
+-'  88  0  ~/tmp/starship-init.bash
+|4,39,88,0,1727657456,"~/tmp/starship-init.bash"
+-'  88  0  ~/tmp/starship-init.bash
+|4,39,88,0,1727657456,"~/tmp/starship-init.bash"
+-'  88  0  ~/tmp/starship-init.bash
+|4,39,88,0,1727657456,"~/tmp/starship-init.bash"
+-'  88  0  ~/tmp/starship-init.bash
+|4,39,88,0,1727657456,"~/tmp/starship-init.bash"
+-'  88  0  ~/tmp/starship-init.bash
+|4,39,88,0,1727657456,"~/tmp/starship-init.bash"
+-'  88  0  ~/tmp/starship-init.bash
+|4,39,88,0,1727657456,"~/tmp/starship-init.bash"
+-'  88  0  ~/tmp/starship-init.bash
+|4,39,88,0,1727657456,"~/tmp/starship-init.bash"
+-'  88  0  ~/tmp/starship-init.bash
+|4,39,88,0,1727657456,"~/tmp/starship-init.bash"
+-'  1  0  ~/tmp/starship-init.bash
+|4,39,1,0,1727657451,"~/tmp/starship-init.bash"
+-'  61  4  ~/tmp/starship-init.bash
+|4,39,61,4,1727657202,"~/tmp/starship-init.bash"
+-'  61  4  ~/tmp/starship-init.bash
+|4,39,61,4,1727657202,"~/tmp/starship-init.bash"
+-'  61  4  ~/tmp/starship-init.bash
+|4,39,61,4,1727657202,"~/tmp/starship-init.bash"
+-'  61  4  ~/tmp/starship-init.bash
+|4,39,61,4,1727657202,"~/tmp/starship-init.bash"
+-'  61  4  ~/tmp/starship-init.bash
+|4,39,61,4,1727657202,"~/tmp/starship-init.bash"
+-'  61  4  ~/tmp/starship-init.bash
+|4,39,61,4,1727657202,"~/tmp/starship-init.bash"
+-'  61  4  ~/tmp/starship-init.bash
+|4,39,61,4,1727657202,"~/tmp/starship-init.bash"
+-'  61  4  ~/tmp/starship-init.bash
+|4,39,61,4,1727657202,"~/tmp/starship-init.bash"
+-'  61  4  ~/tmp/starship-init.bash
+|4,39,61,4,1727657202,"~/tmp/starship-init.bash"
+-'  93  21  ~/tmp/starship-init.bash
+|4,39,93,21,1727657182,"~/tmp/starship-init.bash"
+-'  101  23  ~/tmp/starship-init.bash
+|4,39,101,23,1727657182,"~/tmp/starship-init.bash"
+-'  93  21  ~/tmp/starship-init.bash
+|4,39,93,21,1727657182,"~/tmp/starship-init.bash"
+-'  101  23  ~/tmp/starship-init.bash
+|4,39,101,23,1727657182,"~/tmp/starship-init.bash"
+-'  93  21  ~/tmp/starship-init.bash
+|4,39,93,21,1727657182,"~/tmp/starship-init.bash"
+-'  101  23  ~/tmp/starship-init.bash
+|4,39,101,23,1727657182,"~/tmp/starship-init.bash"
+-'  93  21  ~/tmp/starship-init.bash
+|4,39,93,21,1727657182,"~/tmp/starship-init.bash"
+-'  101  23  ~/tmp/starship-init.bash
+|4,39,101,23,1727657182,"~/tmp/starship-init.bash"
+-'  93  21  ~/tmp/starship-init.bash
+|4,39,93,21,1727657182,"~/tmp/starship-init.bash"
+-'  101  23  ~/tmp/starship-init.bash
+|4,39,101,23,1727657182,"~/tmp/starship-init.bash"
+-'  93  21  ~/tmp/starship-init.bash
+|4,39,93,21,1727657182,"~/tmp/starship-init.bash"
+-'  101  23  ~/tmp/starship-init.bash
+|4,39,101,23,1727657182,"~/tmp/starship-init.bash"
+-'  93  21  ~/tmp/starship-init.bash
+|4,39,93,21,1727657182,"~/tmp/starship-init.bash"
+-'  101  23  ~/tmp/starship-init.bash
+|4,39,101,23,1727657182,"~/tmp/starship-init.bash"
+-'  93  21  ~/tmp/starship-init.bash
+|4,39,93,21,1727657182,"~/tmp/starship-init.bash"
+-'  101  23  ~/tmp/starship-init.bash
+|4,39,101,23,1727657182,"~/tmp/starship-init.bash"
+-'  93  21  ~/tmp/starship-init.bash
+|4,39,93,21,1727657182,"~/tmp/starship-init.bash"
+-'  101  23  ~/tmp/starship-init.bash
+|4,39,101,23,1727657182,"~/tmp/starship-init.bash"
+-'  33  0  ~/tmp/starship-init.bash
+|4,39,33,0,1727657173,"~/tmp/starship-init.bash"
+-'  33  0  ~/tmp/starship-init.bash
+|4,39,33,0,1727657173,"~/tmp/starship-init.bash"
+-'  33  0  ~/tmp/starship-init.bash
+|4,39,33,0,1727657173,"~/tmp/starship-init.bash"
+-'  33  0  ~/tmp/starship-init.bash
+|4,39,33,0,1727657173,"~/tmp/starship-init.bash"
+-'  33  0  ~/tmp/starship-init.bash
+|4,39,33,0,1727657173,"~/tmp/starship-init.bash"
+-'  33  0  ~/tmp/starship-init.bash
+|4,39,33,0,1727657173,"~/tmp/starship-init.bash"
+-'  33  0  ~/tmp/starship-init.bash
+|4,39,33,0,1727657173,"~/tmp/starship-init.bash"
+-'  33  0  ~/tmp/starship-init.bash
+|4,39,33,0,1727657173,"~/tmp/starship-init.bash"
+-'  33  0  ~/tmp/starship-init.bash
+|4,39,33,0,1727657173,"~/tmp/starship-init.bash"
+-'  80  4  ~/tmp/starship-init.bash
+|4,39,80,4,1727657172,"~/tmp/starship-init.bash"
+-'  80  4  ~/tmp/starship-init.bash
+|4,39,80,4,1727657172,"~/tmp/starship-init.bash"
+-'  80  4  ~/tmp/starship-init.bash
+|4,39,80,4,1727657172,"~/tmp/starship-init.bash"
+-'  80  4  ~/tmp/starship-init.bash
+|4,39,80,4,1727657172,"~/tmp/starship-init.bash"
+-'  80  4  ~/tmp/starship-init.bash
+|4,39,80,4,1727657172,"~/tmp/starship-init.bash"
+-'  80  4  ~/tmp/starship-init.bash
+|4,39,80,4,1727657172,"~/tmp/starship-init.bash"
+-'  80  4  ~/tmp/starship-init.bash
+|4,39,80,4,1727657172,"~/tmp/starship-init.bash"
+-'  80  4  ~/tmp/starship-init.bash
+|4,39,80,4,1727657172,"~/tmp/starship-init.bash"
 
 # Buffer list:
-%~/pyscripts/print_todo.py	1	0
+%~/.config/git/token.gitconfig	1	21
 
 # History of marks within files (newest to oldest):
+
+> ~/.config/git/token.gitconfig
+	*	1727663543	0
+	"	1	21
+	^	2	62
+	.	2	21
+	+	2	21
+	+	2	0
+	+	1	0
+	+	2	0
+	+	1	0
+	+	2	21
+
+> ~/.config/tmux/tmux.conf
+	*	1727658022	0
+	"	8	9
+	^	22	0
+	.	8	9
+	+	2	82
+	+	2	0
+	+	8	25
+	+	8	0
+	+	21	1
+	+	8	9
+	a	8	9
+	b	8	9
+
+> ~/.config/setup.bash
+	*	1727657808	0
+	"	1	0
+	.	31	0
+	+	14	0
+	+	13	54
+	+	31	0
+	+	34	28
+	+	33	0
+	+	34	1
+	+	34	0
+	+	34	5
+	+	33	1
+	+	34	0
+	+	33	0
+	+	31	0
+
+> ~/cd
+	*	1727657735	0
+	"	1	0
+
+> ~/tmp/starship-init.bash
+	*	1727657474	0
+	"	135	8
+	^	103	50
+	.	103	49
+	+	157	36
+	+	81	43
+	+	98	54
+	+	103	49
+
+> ~/.bashrc
+	*	1727656589	0
+	"	126	0
+	.	127	0
+	+	121	0
+	+	121	55
+	+	121	0
+	+	121	47
+	+	125	0
+	+	121	0
+	+	125	0
+	+	124	0
+	+	127	0
+	+	120	0
+	+	124	0
+	+	118	0
+	+	120	0
+	+	124	0
+	+	6	5
+	+	5	0
+	+	6	0
+	+	124	0
+	+	109	0
+	+	120	0
+	+	114	5
+	+	115	4
+	+	116	0
+	+	117	4
+	+	115	0
+	+	115	4
+	+	117	0
+	+	116	4
+	+	114	4
+	+	118	0
+	+	112	0
+	+	115	0
+	+	124	0
+	+	121	0
+	+	125	0
+	+	124	0
+	+	120	26
+	+	121	26
+	+	120	0
+	+	122	0
+	+	124	0
+	+	123	0
+	+	126	0
+	+	124	17
+	+	125	17
+	+	126	18
+	+	127	0
+
+> ~/.config/fzf/.fzfrc
+	*	1727583003	0
+	"	12	15
+	^	12	45
+	.	12	0
+	+	2	0
+	+	2	1
+	+	2	37
+	+	2	0
+	+	2	1
+	+	4	0
+	+	9	210
+	+	9	0
+	+	9	166
+	+	9	1
+	+	9	17
+	+	9	0
+	+	10	0
+	+	9	23
+	+	9	14
+	+	9	34
+	+	6	0
+	+	2	0
+	+	9	20
+	+	6	1
+	+	9	0
+	+	3	0
+	+	4	0
+	+	9	0
+	+	9	21
+	+	7	1
+	+	9	0
+	+	9	58
+	+	9	0
+	+	5	0
+	+	9	0
+	+	1	0
+	+	9	0
+	+	8	0
+	+	12	0
+
+> ~/.vim/plugin/oldfiles.vim
+	*	1727582995	0
+	"	83	54
+	^	83	55
+	.	83	54
+	+	84	0
+	+	49	10
+	+	45	0
+	+	47	16
+	+	47	0
+	+	46	0
+	+	81	0
+	+	65	10
+	+	58	21
+	+	60	8
+	+	63	63
+	+	59	99
+	+	63	30
+	+	71	0
+	+	59	0
+	+	71	0
+	+	70	26
+	+	74	4
+	+	77	10
+	+	84	40
+	+	67	26
+	+	80	25
+	+	83	48
+	+	73	23
+	+	84	3
+	+	85	0
+	+	84	22
+	+	80	15
+	+	59	23
+	+	59	80
+	+	59	20
+	+	59	51
+	+	70	5
+	+	69	5
+	+	68	5
+	+	68	0
+	+	83	51
+	+	70	0
+	+	83	54
+
+> ~/.vim/mappings.vim
+	*	1727582003	0
+	"	17	52
+	^	9	55
+	.	17	53
+	+	2	13
+	+	2	0
+	+	5	0
+	+	2	0
+	+	2	13
+	+	3	0
+	+	5	0
+	+	5	24
+	+	5	25
+	+	5	0
+	+	1	0
+	+	6	55
+	+	24	25
+	+	25	17
+	+	24	25
+	+	25	25
+	+	24	25
+	+	25	25
+	+	24	5
+	+	25	5
+	+	24	0
+	+	25	0
+	+	24	7
+	+	25	16
+	+	14	1
+	+	11	2
+	+	16	1
+	+	25	20
+	+	16	2
+	+	24	0
+	+	23	0
+	+	22	0
+	+	20	4
+	+	20	0
+	+	20	1
+	+	20	0
+	+	16	6
+	+	20	0
+	+	16	6
+	+	20	0
+	+	16	7
+	+	20	0
+	+	16	6
+	+	20	0
+	+	16	5
+	+	20	0
+	+	25	70
+	+	25	34
+	+	25	0
+	+	25	64
+	+	20	1
+	+	14	35
+	+	11	35
+	+	7	35
+	+	14	0
+	+	12	0
+	+	12	57
+	+	12	0
+	+	1	0
+	+	12	33
+	+	1	0
+	+	12	33
+	+	1	0
+	+	12	56
+	+	1	0
+	+	20	0
+	+	12	55
+	+	22	101
+	+	21	36
+	+	20	0
+	+	17	47
+	+	19	0
+	+	17	36
+	+	19	0
+	+	17	0
+	+	15	0
+	+	16	49
+	+	17	53
+	+	17	0
+	+	25	0
+	+	10	0
+	+	11	0
+	+	16	1
+	+	17	1
+	+	17	0
+	+	22	0
+	+	18	45
+	+	26	0
+	+	22	0
+	+	18	23
+	+	5	0
+	+	12	56
+	+	12	0
+	+	9	54
+	+	17	53
+
+> ~/bash/pwd-oldfiles.bash
+	*	1727581711	0
+	"	2	0
+	.	2	0
+	+	1	0
+	+	1	10
+	+	1	0
+	+	1	1
+	+	1	0
+	+	1	71
+	+	1	0
+	+	2	53
+	+	1	0
+	+	6	5
+	+	10	7
+	+	11	0
+	+	12	0
+	+	4	0
+	+	5	47
+	+	2	0
+
+> ~/bash/todo_vim_fzf_select.bash
+	*	1727581698	0
+	"	5	0
+	.	3	0
+	+	2	0
+	+	2	13
+	+	2	0
+	+	2	9
+	+	2	118
+	+	2	10
+	+	2	119
+	+	2	1
+	+	2	2
+	+	2	0
+	+	2	10
+	+	2	35
+	+	2	0
+	+	2	1
+	+	6	0
+	+	3	0
+
+> ~/bash/tmp-fzf-if-ripgrep.txt
+	*	1727581678	0
+	"	22	9
+	^	26	0
+	.	26	0
+	+	2	0
+	+	4	0
+	+	2	19
+	+	3	0
+	+	6	0
+	+	5	0
+	+	4	3
+	+	5	0
+	+	10	0
+	+	7	29
+	+	8	0
+	+	9	0
+	+	14	0
+	+	12	17
+	+	14	3
+	+	16	0
+	+	14	0
+	+	11	0
+	+	5	0
+	+	22	0
+	+	17	13
+	+	20	0
+	+	19	0
+	+	18	0
+	+	7	0
+	+	11	0
+	+	16	0
+	+	22	0
+	+	24	0
+	+	26	0
+	+	25	0
+	+	22	0
+	+	21	0
+	+	22	24
+	+	24	0
+	+	23	0
+	+	7	11
+	+	9	22
+	+	7	10
+	+	13	0
+	+	1	0
+	+	26	0
+
+> ~/bash/oldfiles.bash
+	*	1727581670	0
+	"	1	0
+	^	2	108
+	.	5	0
+	+	2	1
+	+	2	12
+	+	2	49
+	+	2	12
+	+	2	0
+	+	3	1
+	+	1	10
+	+	2	62
+	+	2	34
+	+	2	1
+	+	2	16
+	+	2	0
+	+	6	33
+	+	2	68
+	+	3	66
+	+	3	0
+	+	2	13
+	+	3	23
+	+	4	51
+	+	6	28
+	+	13	22
+	+	2	107
+	+	7	0
+	+	5	0
+
+> ~/bash/fzf_select.bash
+	*	1727581636	0
+	"	6	0
+	^	1	14
+	.	1	14
+	+	1	15
+	+	1	0
+	+	1	1
+	+	1	0
+	+	1	57
+	+	1	13
+	+	1	0
+	+	1	6
+	+	1	0
+	+	1	11
+	+	1	5
+	+	1	0
+	+	1	5
+	+	1	22
+	+	1	0
+	+	3	0
+	+	4	0
+	+	3	0
+	+	1	0
+	+	8	0
+	+	1	0
+	+	1	14
+
+> ~/bash/git_fzf_select.bash
+	*	1727580919	0
+	"	14	0
+	^	10	64
+	.	10	63
+	+	37	2
+	+	37	0
+	+	37	2
+	+	1	2
+	+	1	0
+	+	37	0
+	+	9	0
+	+	4	46
+	+	34	0
+	+	36	0
+	+	34	3
+	+	35	2
+	+	7	73
+	+	10	63
+
+> ~/bash/zdirs.bash
+	*	1727580824	0
+	"	1	0
+	^	1	48
+	.	1	84
+	+	5	18
+	+	5	0
+	+	4	0
+	+	1	20
+	+	1	84
+
+> ~/.config/todo.txt
+	*	1727579440	0
+	"	2	176
+	^	2	177
+	.	2	176
+	+	29	94
+	+	30	0
+	+	23	0
+	+	32	51
+	+	24	107
+	+	23	0
+	+	33	0
+	+	23	9
+	+	28	0
+	+	31	0
+	+	33	0
+	+	23	0
+	+	18	0
+	+	21	15
+	+	20	64
+	+	21	61
+	+	19	9
+	+	24	5
+	+	29	5
+	+	32	0
+	+	17	84
+	+	25	114
+	+	26	52
+	+	25	4
+	+	26	0
+	+	23	19
+	+	28	19
+	+	7	10
+	+	13	0
+	+	9	127
+	+	9	12
+	+	8	6
+	+	9	0
+	+	10	0
+	+	9	0
+	+	12	32
+	+	5	8
+	+	6	0
+	+	5	94
+	+	4	83
+	+	3	18
+	+	4	16
+	+	5	16
+	+	3	113
+	+	2	0
+	+	1	0
+	+	2	176
 
 > ~/pyscripts/print_todo.py
 	*	1727508914	0
@@ -16091,48 +16667,9 @@ $
 	+	20	54
 	+	16	41
 
-> ~/bash/todo_vim_fzf_select.bash
-	*	1727446191	0
-	"	4	4
-	^	4	5
-	.	4	4
-	+	2	0
-	+	4	13
-	+	3	0
-	+	2	9
-	+	2	118
-	+	2	10
-	+	2	119
-	+	3	1
-	+	5	2
-	+	6	0
-	+	1	10
-	+	2	35
-	+	4	4
-
 > ~/.config/shell_data/fish_history
 	*	1727445919	0
 	"	10164	7
-
-> ~/bash/git_fzf_select.bash
-	*	1727445860	0
-	"	1	0
-	^	10	64
-	.	10	63
-	+	37	2
-	+	37	0
-	+	37	2
-	+	1	2
-	+	1	0
-	+	37	0
-	+	9	0
-	+	4	46
-	+	34	0
-	+	36	0
-	+	34	3
-	+	35	2
-	+	7	73
-	+	10	63
 
 > ~/.config/shell_data/.bash_history
 	*	1727445808	0
@@ -16597,46 +17134,6 @@ $
 	+	1	0
 	+	40	0
 
-> ~/.config/fzf/.fzfrc
-	*	1727357606	0
-	"	6	0
-	^	8	1
-	.	8	0
-	+	2	0
-	+	2	1
-	+	2	37
-	+	2	0
-	+	2	1
-	+	4	0
-	+	9	210
-	+	9	0
-	+	9	166
-	+	9	1
-	+	9	17
-	+	9	0
-	+	10	0
-	+	9	23
-	+	9	14
-	+	9	34
-	+	6	0
-	+	2	0
-	+	9	20
-	+	6	1
-	+	9	0
-	+	3	0
-	+	4	0
-	+	9	0
-	+	9	21
-	+	7	1
-	+	9	0
-	+	9	58
-	+	9	0
-	+	5	0
-	+	9	0
-	+	1	0
-	+	9	0
-	+	8	0
-
 > ~/tooling/simpler-vcs-git.txt
 	*	1727355254	0
 	"	32	73
@@ -16647,44 +17144,6 @@ $
 > ~/tooling/fzf-command-samples.txt
 	*	1727351976	0
 	"	9	0
-
-> ~/.vim/plugin/oldfiles.vim
-	*	1727351949	0
-	"	1	0
-	^	59	52
-	.	59	51
-	+	84	0
-	+	49	10
-	+	45	0
-	+	47	16
-	+	47	0
-	+	46	0
-	+	81	0
-	+	65	10
-	+	58	21
-	+	60	8
-	+	63	63
-	+	59	99
-	+	63	30
-	+	71	0
-	+	59	0
-	+	71	0
-	+	70	26
-	+	74	4
-	+	77	10
-	+	84	40
-	+	67	26
-	+	80	25
-	+	83	48
-	+	73	23
-	+	84	3
-	+	85	0
-	+	84	22
-	+	80	15
-	+	59	23
-	+	59	80
-	+	59	20
-	+	59	51
 
 > ~/python_common/examples/example-colors.py
 	*	1727350819	0
@@ -16714,14 +17173,6 @@ $
 	+	11	0
 	+	70	82
 
-> ~/.config/setup.bash
-	*	1727347318	0
-	"	2	0
-	^	13	55
-	.	13	54
-	+	14	0
-	+	13	54
-
 > ~/fzf-options.txt
 	*	1727328717	0
 	"	1	0
@@ -16740,106 +17191,6 @@ $
 	+	19	21
 	+	1	0
 	+	4	4
-
-> ~/.vim/mappings.vim
-	*	1727327204	0
-	"	9	0
-	^	9	55
-	.	9	54
-	+	2	13
-	+	2	0
-	+	5	0
-	+	2	0
-	+	2	13
-	+	3	0
-	+	5	0
-	+	5	24
-	+	5	25
-	+	5	0
-	+	1	0
-	+	6	55
-	+	24	25
-	+	25	17
-	+	24	25
-	+	25	25
-	+	24	25
-	+	25	25
-	+	24	5
-	+	25	5
-	+	24	0
-	+	25	0
-	+	24	7
-	+	25	16
-	+	14	1
-	+	11	2
-	+	16	1
-	+	25	20
-	+	16	2
-	+	24	0
-	+	23	0
-	+	22	0
-	+	20	4
-	+	20	0
-	+	20	1
-	+	20	0
-	+	16	6
-	+	20	0
-	+	16	6
-	+	20	0
-	+	16	7
-	+	20	0
-	+	16	6
-	+	20	0
-	+	16	5
-	+	20	0
-	+	25	70
-	+	25	34
-	+	25	0
-	+	25	64
-	+	20	1
-	+	14	35
-	+	11	35
-	+	7	35
-	+	14	0
-	+	12	0
-	+	12	57
-	+	12	0
-	+	1	0
-	+	12	33
-	+	1	0
-	+	12	33
-	+	1	0
-	+	12	56
-	+	1	0
-	+	20	0
-	+	12	55
-	+	22	101
-	+	21	36
-	+	20	0
-	+	17	47
-	+	19	0
-	+	17	36
-	+	19	0
-	+	17	0
-	+	15	0
-	+	16	49
-	+	17	53
-	+	17	0
-	+	25	0
-	+	10	0
-	+	11	0
-	+	16	1
-	+	17	1
-	+	17	0
-	+	22	0
-	+	18	45
-	+	26	0
-	+	22	0
-	+	18	23
-	+	5	0
-	+	12	56
-	+	12	0
-	+	9	54
 
 > ~/hateoas/requirements.txt
 	*	1727327006	0
@@ -17261,63 +17612,12 @@ $
 	+	8	13
 	+	11	6
 
-> ~/bash/pwd-oldfiles.bash
-	*	1727040875	0
-	"	2	0
-	^	5	48
-	.	5	47
-	+	1	0
-	+	1	10
-	+	1	0
-	+	1	1
-	+	1	0
-	+	1	71
-	+	1	0
-	+	2	53
-	+	1	0
-	+	6	5
-	+	10	7
-	+	11	0
-	+	12	0
-	+	4	0
-	+	5	47
-
 > ~/tmp/output.txt
 	*	1727040744	0
 	"	2	0
 	.	3	0
 	+	20	0
 	+	3	0
-
-> ~/bash/oldfiles.bash
-	*	1727040543	0
-	"	2	0
-	^	2	108
-	.	5	0
-	+	2	1
-	+	2	12
-	+	2	49
-	+	2	12
-	+	2	0
-	+	3	1
-	+	1	10
-	+	2	62
-	+	2	34
-	+	2	1
-	+	2	16
-	+	2	0
-	+	6	33
-	+	2	68
-	+	3	66
-	+	3	0
-	+	2	13
-	+	3	23
-	+	4	51
-	+	6	28
-	+	13	22
-	+	2	107
-	+	7	0
-	+	5	0
 
 > ~/.config/atuin/config.toml
 	*	1727039841	0
@@ -20869,17 +21169,6 @@ $
 	.	1	119
 	+	1	119
 
-> ~/bash/zdirs.bash
-	*	1725281302	0
-	"	1	63
-	^	1	48
-	.	1	84
-	+	5	18
-	+	5	0
-	+	4	0
-	+	1	20
-	+	1	84
-
 > ~/bash/zdirs.fish
 	*	1725281280	0
 	"	1	60
@@ -21346,56 +21635,6 @@ $
 	.	2	15
 	+	2	15
 
-> ~/.config/todo.txt
-	*	1725074285	0
-	"	2	40
-	^	1	114
-	.	1	113
-	+	27	94
-	+	28	0
-	+	21	0
-	+	30	51
-	+	22	107
-	+	21	0
-	+	31	0
-	+	21	9
-	+	26	0
-	+	29	0
-	+	31	0
-	+	21	0
-	+	16	0
-	+	19	15
-	+	18	64
-	+	19	61
-	+	17	9
-	+	22	5
-	+	27	5
-	+	30	0
-	+	15	84
-	+	23	114
-	+	24	52
-	+	23	4
-	+	24	0
-	+	21	19
-	+	26	19
-	+	5	10
-	+	11	0
-	+	7	127
-	+	7	12
-	+	6	6
-	+	7	0
-	+	8	0
-	+	7	0
-	+	10	32
-	+	3	8
-	+	4	0
-	+	3	94
-	+	2	83
-	+	1	18
-	+	2	16
-	+	3	16
-	+	1	113
-
 > ~/golang/viminfo_utils/olddirs.go
 	*	1725074252	0
 	"	49	27
@@ -21586,59 +21825,6 @@ $
 	+	12	0
 	+	59	24
 	a	11	10
-
-> ~/.bashrc
-	*	1725022084	0
-	"	126	0
-	^	126	19
-	.	126	18
-	+	121	0
-	+	121	55
-	+	121	0
-	+	121	47
-	+	125	0
-	+	121	0
-	+	125	0
-	+	124	0
-	+	127	0
-	+	128	0
-	+	120	0
-	+	124	0
-	+	118	0
-	+	120	0
-	+	124	0
-	+	6	5
-	+	5	0
-	+	6	0
-	+	124	0
-	+	109	0
-	+	120	0
-	+	114	5
-	+	115	4
-	+	116	0
-	+	117	4
-	+	115	0
-	+	115	4
-	+	117	0
-	+	116	4
-	+	114	4
-	+	118	0
-	+	112	0
-	+	115	0
-	+	124	0
-	+	121	0
-	+	125	0
-	+	124	0
-	+	120	26
-	+	121	26
-	+	120	0
-	+	122	0
-	+	124	0
-	+	123	0
-	+	126	0
-	+	124	17
-	+	125	17
-	+	126	18
 
 > ~/.config/setup.sh
 	*	1725022070	0
@@ -33503,18 +33689,6 @@ $
 > ~/pyscripts/.git/config
 	*	1719654606	0
 	"	7	0
-
-> ~/.config/git/token.gitconfig
-	*	1719653640	0
-	"	1	0
-	^	2	62
-	.	2	21
-	+	2	21
-	+	2	0
-	+	1	0
-	+	2	0
-	+	1	0
-	+	2	21
 
 > ~/servers/hackernews-search.config.js
 	*	1719653317	0

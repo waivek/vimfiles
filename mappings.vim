@@ -14,7 +14,7 @@ nmap                     <leader>q  :MergeEmptyLines<CR>
 
 nmap                     h          :Buffers<CR>
 nmap                     <space>o   <Plug>Oldfiles
-nmap                     <space>e   <Plug>PwdOldfilesk
+nmap                     <space>e   <Plug>PwdOldfiles
 nmap     <silent>        <space>;   <Plug>Run3
 
 " copilot mappings
