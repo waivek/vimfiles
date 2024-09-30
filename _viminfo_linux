@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/\C\<starship_precmd\>
+~MSle0~/_
 
 # Last Substitute Search Pattern:
 ~MSle0&^\S*\.bash[-:]
@@ -21,9 +21,9 @@ $
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1727663545,,"q"
+|2,0,1727663732,,"q"
 :q!
-|2,0,1727657736,,"q!"
+|2,0,1727663643,,"q!"
 :e
 |2,0,1727657158,,"e"
 :e .bashrc
@@ -10536,6 +10536,10 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/_
+|2,1,1727663668,47,"_"
+?/tmux
+|2,1,1727663667,47,"tmux"
 ?/PS1
 |2,1,1727657172,47,"PS1"
 ?/Set PS1
@@ -15535,34 +15539,68 @@ $
 |3,1,36,0,1,0,1727658019,"1"
 
 # File marks:
-'0  1  21  ~/.config/git/token.gitconfig
-|4,48,1,21,1727663546,"~/.config/git/token.gitconfig"
-'1  8  9  ~/.config/tmux/tmux.conf
-|4,49,8,9,1727658024,"~/.config/tmux/tmux.conf"
-'2  8  9  ~/.config/tmux/tmux.conf
-|4,50,8,9,1727658024,"~/.config/tmux/tmux.conf"
-'3  11  2  ~/.config/tmux/tmux.conf
-|4,51,11,2,1727657916,"~/.config/tmux/tmux.conf"
-'4  11  2  ~/.config/tmux/tmux.conf
-|4,52,11,2,1727657916,"~/.config/tmux/tmux.conf"
-'5  1  0  ~/.config/setup.bash
-|4,53,1,0,1727657809,"~/.config/setup.bash"
-'6  1  0  ~/.config/setup.bash
-|4,54,1,0,1727657809,"~/.config/setup.bash"
-'7  1  0  ~/.config/setup.bash
-|4,55,1,0,1727657809,"~/.config/setup.bash"
-'8  1  0  ~/.config/setup.bash
-|4,56,1,0,1727657809,"~/.config/setup.bash"
-'9  1  0  ~/.config/setup.bash
-|4,57,1,0,1727657809,"~/.config/setup.bash"
+'0  20  0  ~/.config/starship/starship.toml
+|4,48,20,0,1727663733,"~/.config/starship/starship.toml"
+'1  14  8  ~/.config/starship/starship.toml
+|4,49,14,8,1727663726,"~/.config/starship/starship.toml"
+'2  14  8  ~/.config/starship/starship.toml
+|4,50,14,8,1727663726,"~/.config/starship/starship.toml"
+'3  1  21  ~/.config/git/token.gitconfig
+|4,51,1,21,1727663546,"~/.config/git/token.gitconfig"
+'4  1  21  ~/.config/git/token.gitconfig
+|4,52,1,21,1727663546,"~/.config/git/token.gitconfig"
+'5  1  21  ~/.config/git/token.gitconfig
+|4,53,1,21,1727663546,"~/.config/git/token.gitconfig"
+'6  1  21  ~/.config/git/token.gitconfig
+|4,54,1,21,1727663546,"~/.config/git/token.gitconfig"
+'7  8  9  ~/.config/tmux/tmux.conf
+|4,55,8,9,1727658024,"~/.config/tmux/tmux.conf"
+'8  8  9  ~/.config/tmux/tmux.conf
+|4,56,8,9,1727658024,"~/.config/tmux/tmux.conf"
+'9  8  9  ~/.config/tmux/tmux.conf
+|4,57,8,9,1727658024,"~/.config/tmux/tmux.conf"
 
 # Jumplist (newest first):
+-'  20  0  ~/.config/starship/starship.toml
+|4,39,20,0,1727663733,"~/.config/starship/starship.toml"
+-'  1  0  ~/.config/starship/starship.toml
+|4,39,1,0,1727663729,"~/.config/starship/starship.toml"
+-'  14  8  ~/.config/starship/starship.toml
+|4,39,14,8,1727663726,"~/.config/starship/starship.toml"
+-'  14  8  ~/.config/starship/starship.toml
+|4,39,14,8,1727663726,"~/.config/starship/starship.toml"
+-'  9  5  ~/.config/starship/starship.toml
+|4,39,9,5,1727663669,"~/.config/starship/starship.toml"
+-'  8  5  ~/.config/starship/starship.toml
+|4,39,8,5,1727663669,"~/.config/starship/starship.toml"
+-'  9  5  ~/.config/starship/starship.toml
+|4,39,9,5,1727663669,"~/.config/starship/starship.toml"
+-'  8  5  ~/.config/starship/starship.toml
+|4,39,8,5,1727663669,"~/.config/starship/starship.toml"
+-'  1  0  ~/.config/starship/starship.toml
+|4,39,1,0,1727663668,"~/.config/starship/starship.toml"
+-'  1  21  ~/.config/git/token.gitconfig
+|4,39,1,21,1727663546,"~/.config/git/token.gitconfig"
+-'  1  21  ~/.config/git/token.gitconfig
+|4,39,1,21,1727663546,"~/.config/git/token.gitconfig"
 -'  1  21  ~/.config/git/token.gitconfig
 |4,39,1,21,1727663546,"~/.config/git/token.gitconfig"
 -'  8  9  ~/.config/tmux/tmux.conf
 |4,39,8,9,1727658024,"~/.config/tmux/tmux.conf"
 -'  8  9  ~/.config/tmux/tmux.conf
 |4,39,8,9,1727658024,"~/.config/tmux/tmux.conf"
+-'  8  9  ~/.config/tmux/tmux.conf
+|4,39,8,9,1727658024,"~/.config/tmux/tmux.conf"
+-'  8  9  ~/.config/tmux/tmux.conf
+|4,39,8,9,1727658024,"~/.config/tmux/tmux.conf"
+-'  8  9  ~/.config/tmux/tmux.conf
+|4,39,8,9,1727658024,"~/.config/tmux/tmux.conf"
+-'  21  0  ~/.config/tmux/tmux.conf
+|4,39,21,0,1727658017,"~/.config/tmux/tmux.conf"
+-'  21  0  ~/.config/tmux/tmux.conf
+|4,39,21,0,1727658017,"~/.config/tmux/tmux.conf"
+-'  21  0  ~/.config/tmux/tmux.conf
+|4,39,21,0,1727658017,"~/.config/tmux/tmux.conf"
 -'  21  0  ~/.config/tmux/tmux.conf
 |4,39,21,0,1727658017,"~/.config/tmux/tmux.conf"
 -'  21  0  ~/.config/tmux/tmux.conf
@@ -15571,6 +15609,18 @@ $
 |4,39,22,0,1727658015,"~/.config/tmux/tmux.conf"
 -'  22  0  ~/.config/tmux/tmux.conf
 |4,39,22,0,1727658015,"~/.config/tmux/tmux.conf"
+-'  22  0  ~/.config/tmux/tmux.conf
+|4,39,22,0,1727658015,"~/.config/tmux/tmux.conf"
+-'  22  0  ~/.config/tmux/tmux.conf
+|4,39,22,0,1727658015,"~/.config/tmux/tmux.conf"
+-'  22  0  ~/.config/tmux/tmux.conf
+|4,39,22,0,1727658015,"~/.config/tmux/tmux.conf"
+-'  7  39  ~/.config/tmux/tmux.conf
+|4,39,7,39,1727658014,"~/.config/tmux/tmux.conf"
+-'  7  39  ~/.config/tmux/tmux.conf
+|4,39,7,39,1727658014,"~/.config/tmux/tmux.conf"
+-'  7  39  ~/.config/tmux/tmux.conf
+|4,39,7,39,1727658014,"~/.config/tmux/tmux.conf"
 -'  7  39  ~/.config/tmux/tmux.conf
 |4,39,7,39,1727658014,"~/.config/tmux/tmux.conf"
 -'  7  39  ~/.config/tmux/tmux.conf
@@ -15579,10 +15629,28 @@ $
 |4,39,1,0,1727658011,"~/.config/tmux/tmux.conf"
 -'  1  0  ~/.config/tmux/tmux.conf
 |4,39,1,0,1727658011,"~/.config/tmux/tmux.conf"
+-'  1  0  ~/.config/tmux/tmux.conf
+|4,39,1,0,1727658011,"~/.config/tmux/tmux.conf"
+-'  1  0  ~/.config/tmux/tmux.conf
+|4,39,1,0,1727658011,"~/.config/tmux/tmux.conf"
+-'  1  0  ~/.config/tmux/tmux.conf
+|4,39,1,0,1727658011,"~/.config/tmux/tmux.conf"
 -'  11  2  ~/.config/tmux/tmux.conf
 |4,39,11,2,1727657916,"~/.config/tmux/tmux.conf"
 -'  11  2  ~/.config/tmux/tmux.conf
 |4,39,11,2,1727657916,"~/.config/tmux/tmux.conf"
+-'  11  2  ~/.config/tmux/tmux.conf
+|4,39,11,2,1727657916,"~/.config/tmux/tmux.conf"
+-'  11  2  ~/.config/tmux/tmux.conf
+|4,39,11,2,1727657916,"~/.config/tmux/tmux.conf"
+-'  11  2  ~/.config/tmux/tmux.conf
+|4,39,11,2,1727657916,"~/.config/tmux/tmux.conf"
+-'  12  0  ~/.config/tmux/tmux.conf
+|4,39,12,0,1727657910,"~/.config/tmux/tmux.conf"
+-'  12  0  ~/.config/tmux/tmux.conf
+|4,39,12,0,1727657910,"~/.config/tmux/tmux.conf"
+-'  12  0  ~/.config/tmux/tmux.conf
+|4,39,12,0,1727657910,"~/.config/tmux/tmux.conf"
 -'  12  0  ~/.config/tmux/tmux.conf
 |4,39,12,0,1727657910,"~/.config/tmux/tmux.conf"
 -'  12  0  ~/.config/tmux/tmux.conf
@@ -15597,6 +15665,18 @@ $
 |4,39,1,0,1727657809,"~/.config/setup.bash"
 -'  1  0  ~/.config/setup.bash
 |4,39,1,0,1727657809,"~/.config/setup.bash"
+-'  1  0  ~/.config/setup.bash
+|4,39,1,0,1727657809,"~/.config/setup.bash"
+-'  1  0  ~/.config/setup.bash
+|4,39,1,0,1727657809,"~/.config/setup.bash"
+-'  1  0  ~/.config/setup.bash
+|4,39,1,0,1727657809,"~/.config/setup.bash"
+-'  2  2  ~/.config/tmux/tmux.conf
+|4,39,2,2,1727657769,"~/.config/tmux/tmux.conf"
+-'  2  2  ~/.config/tmux/tmux.conf
+|4,39,2,2,1727657769,"~/.config/tmux/tmux.conf"
+-'  2  2  ~/.config/tmux/tmux.conf
+|4,39,2,2,1727657769,"~/.config/tmux/tmux.conf"
 -'  2  2  ~/.config/tmux/tmux.conf
 |4,39,2,2,1727657769,"~/.config/tmux/tmux.conf"
 -'  2  2  ~/.config/tmux/tmux.conf
@@ -15623,6 +15703,18 @@ $
 |4,39,1,0,1727657737,"~/cd"
 -'  1  0  ~/cd
 |4,39,1,0,1727657737,"~/cd"
+-'  1  0  ~/cd
+|4,39,1,0,1727657737,"~/cd"
+-'  1  0  ~/cd
+|4,39,1,0,1727657737,"~/cd"
+-'  1  0  ~/cd
+|4,39,1,0,1727657737,"~/cd"
+-'  135  8  ~/tmp/starship-init.bash
+|4,39,135,8,1727657477,"~/tmp/starship-init.bash"
+-'  135  8  ~/tmp/starship-init.bash
+|4,39,135,8,1727657477,"~/tmp/starship-init.bash"
+-'  135  8  ~/tmp/starship-init.bash
+|4,39,135,8,1727657477,"~/tmp/starship-init.bash"
 -'  135  8  ~/tmp/starship-init.bash
 |4,39,135,8,1727657477,"~/tmp/starship-init.bash"
 -'  135  8  ~/tmp/starship-init.bash
@@ -15651,117 +15743,135 @@ $
 |4,39,1,0,1727657458,"~/tmp/starship-init.bash"
 -'  1  0  ~/tmp/starship-init.bash
 |4,39,1,0,1727657458,"~/tmp/starship-init.bash"
--'  88  0  ~/tmp/starship-init.bash
-|4,39,88,0,1727657456,"~/tmp/starship-init.bash"
--'  88  0  ~/tmp/starship-init.bash
-|4,39,88,0,1727657456,"~/tmp/starship-init.bash"
--'  88  0  ~/tmp/starship-init.bash
-|4,39,88,0,1727657456,"~/tmp/starship-init.bash"
--'  88  0  ~/tmp/starship-init.bash
-|4,39,88,0,1727657456,"~/tmp/starship-init.bash"
--'  88  0  ~/tmp/starship-init.bash
-|4,39,88,0,1727657456,"~/tmp/starship-init.bash"
--'  88  0  ~/tmp/starship-init.bash
-|4,39,88,0,1727657456,"~/tmp/starship-init.bash"
--'  88  0  ~/tmp/starship-init.bash
-|4,39,88,0,1727657456,"~/tmp/starship-init.bash"
--'  88  0  ~/tmp/starship-init.bash
-|4,39,88,0,1727657456,"~/tmp/starship-init.bash"
 -'  1  0  ~/tmp/starship-init.bash
-|4,39,1,0,1727657451,"~/tmp/starship-init.bash"
--'  61  4  ~/tmp/starship-init.bash
-|4,39,61,4,1727657202,"~/tmp/starship-init.bash"
--'  61  4  ~/tmp/starship-init.bash
-|4,39,61,4,1727657202,"~/tmp/starship-init.bash"
--'  61  4  ~/tmp/starship-init.bash
-|4,39,61,4,1727657202,"~/tmp/starship-init.bash"
--'  61  4  ~/tmp/starship-init.bash
-|4,39,61,4,1727657202,"~/tmp/starship-init.bash"
--'  61  4  ~/tmp/starship-init.bash
-|4,39,61,4,1727657202,"~/tmp/starship-init.bash"
--'  61  4  ~/tmp/starship-init.bash
-|4,39,61,4,1727657202,"~/tmp/starship-init.bash"
--'  61  4  ~/tmp/starship-init.bash
-|4,39,61,4,1727657202,"~/tmp/starship-init.bash"
--'  61  4  ~/tmp/starship-init.bash
-|4,39,61,4,1727657202,"~/tmp/starship-init.bash"
--'  61  4  ~/tmp/starship-init.bash
-|4,39,61,4,1727657202,"~/tmp/starship-init.bash"
--'  93  21  ~/tmp/starship-init.bash
-|4,39,93,21,1727657182,"~/tmp/starship-init.bash"
--'  101  23  ~/tmp/starship-init.bash
-|4,39,101,23,1727657182,"~/tmp/starship-init.bash"
--'  93  21  ~/tmp/starship-init.bash
-|4,39,93,21,1727657182,"~/tmp/starship-init.bash"
--'  101  23  ~/tmp/starship-init.bash
-|4,39,101,23,1727657182,"~/tmp/starship-init.bash"
--'  93  21  ~/tmp/starship-init.bash
-|4,39,93,21,1727657182,"~/tmp/starship-init.bash"
--'  101  23  ~/tmp/starship-init.bash
-|4,39,101,23,1727657182,"~/tmp/starship-init.bash"
--'  93  21  ~/tmp/starship-init.bash
-|4,39,93,21,1727657182,"~/tmp/starship-init.bash"
--'  101  23  ~/tmp/starship-init.bash
-|4,39,101,23,1727657182,"~/tmp/starship-init.bash"
--'  93  21  ~/tmp/starship-init.bash
-|4,39,93,21,1727657182,"~/tmp/starship-init.bash"
--'  101  23  ~/tmp/starship-init.bash
-|4,39,101,23,1727657182,"~/tmp/starship-init.bash"
--'  93  21  ~/tmp/starship-init.bash
-|4,39,93,21,1727657182,"~/tmp/starship-init.bash"
--'  101  23  ~/tmp/starship-init.bash
-|4,39,101,23,1727657182,"~/tmp/starship-init.bash"
--'  93  21  ~/tmp/starship-init.bash
-|4,39,93,21,1727657182,"~/tmp/starship-init.bash"
--'  101  23  ~/tmp/starship-init.bash
-|4,39,101,23,1727657182,"~/tmp/starship-init.bash"
--'  93  21  ~/tmp/starship-init.bash
-|4,39,93,21,1727657182,"~/tmp/starship-init.bash"
--'  101  23  ~/tmp/starship-init.bash
-|4,39,101,23,1727657182,"~/tmp/starship-init.bash"
--'  93  21  ~/tmp/starship-init.bash
-|4,39,93,21,1727657182,"~/tmp/starship-init.bash"
--'  101  23  ~/tmp/starship-init.bash
-|4,39,101,23,1727657182,"~/tmp/starship-init.bash"
--'  33  0  ~/tmp/starship-init.bash
-|4,39,33,0,1727657173,"~/tmp/starship-init.bash"
--'  33  0  ~/tmp/starship-init.bash
-|4,39,33,0,1727657173,"~/tmp/starship-init.bash"
--'  33  0  ~/tmp/starship-init.bash
-|4,39,33,0,1727657173,"~/tmp/starship-init.bash"
--'  33  0  ~/tmp/starship-init.bash
-|4,39,33,0,1727657173,"~/tmp/starship-init.bash"
--'  33  0  ~/tmp/starship-init.bash
-|4,39,33,0,1727657173,"~/tmp/starship-init.bash"
--'  33  0  ~/tmp/starship-init.bash
-|4,39,33,0,1727657173,"~/tmp/starship-init.bash"
--'  33  0  ~/tmp/starship-init.bash
-|4,39,33,0,1727657173,"~/tmp/starship-init.bash"
--'  33  0  ~/tmp/starship-init.bash
-|4,39,33,0,1727657173,"~/tmp/starship-init.bash"
--'  33  0  ~/tmp/starship-init.bash
-|4,39,33,0,1727657173,"~/tmp/starship-init.bash"
--'  80  4  ~/tmp/starship-init.bash
-|4,39,80,4,1727657172,"~/tmp/starship-init.bash"
--'  80  4  ~/tmp/starship-init.bash
-|4,39,80,4,1727657172,"~/tmp/starship-init.bash"
--'  80  4  ~/tmp/starship-init.bash
-|4,39,80,4,1727657172,"~/tmp/starship-init.bash"
--'  80  4  ~/tmp/starship-init.bash
-|4,39,80,4,1727657172,"~/tmp/starship-init.bash"
--'  80  4  ~/tmp/starship-init.bash
-|4,39,80,4,1727657172,"~/tmp/starship-init.bash"
--'  80  4  ~/tmp/starship-init.bash
-|4,39,80,4,1727657172,"~/tmp/starship-init.bash"
--'  80  4  ~/tmp/starship-init.bash
-|4,39,80,4,1727657172,"~/tmp/starship-init.bash"
--'  80  4  ~/tmp/starship-init.bash
-|4,39,80,4,1727657172,"~/tmp/starship-init.bash"
+|4,39,1,0,1727657458,"~/tmp/starship-init.bash"
+-'  1  0  ~/tmp/starship-init.bash
+|4,39,1,0,1727657458,"~/tmp/starship-init.bash"
+-'  1  0  ~/tmp/starship-init.bash
+|4,39,1,0,1727657458,"~/tmp/starship-init.bash"
+-'  88  0  ~/tmp/starship-init.bash
+|4,39,88,0,1727657456,"~/tmp/starship-init.bash"
+-'  88  0  ~/tmp/starship-init.bash
+|4,39,88,0,1727657456,"~/tmp/starship-init.bash"
+-'  88  0  ~/tmp/starship-init.bash
+|4,39,88,0,1727657456,"~/tmp/starship-init.bash"
+-'  88  0  ~/tmp/starship-init.bash
+|4,39,88,0,1727657456,"~/tmp/starship-init.bash"
+-'  88  0  ~/tmp/starship-init.bash
+|4,39,88,0,1727657456,"~/tmp/starship-init.bash"
+-'  88  0  ~/tmp/starship-init.bash
+|4,39,88,0,1727657456,"~/tmp/starship-init.bash"
 
 # Buffer list:
-%~/.config/git/token.gitconfig	1	21
+%~/.config/starship/starship.toml	20	0
 
 # History of marks within files (newest to oldest):
+
+> ~/.config/starship/starship.toml
+	*	1727663730	0
+	"	20	0
+	^	18	15
+	.	18	12
+	+	4	7
+	+	4	15
+	+	4	39
+	+	4	25
+	+	4	0
+	+	2	51
+	+	16	0
+	+	12	0
+	+	7	0
+	+	5	0
+	+	7	0
+	+	4	0
+	+	7	0
+	+	6	0
+	+	5	0
+	+	6	0
+	+	7	8
+	+	7	0
+	+	12	0
+	+	16	19
+	+	16	31
+	+	16	1
+	+	16	0
+	+	4	0
+	+	4	16
+	+	16	10
+	+	4	22
+	+	16	7
+	+	16	1
+	+	16	9
+	+	16	16
+	+	4	24
+	+	16	17
+	+	16	50
+	+	16	0
+	+	4	22
+	+	16	19
+	+	4	0
+	+	16	20
+	+	16	24
+	+	16	0
+	+	20	0
+	+	4	0
+	+	21	0
+	+	4	10
+	+	17	20
+	+	4	17
+	+	20	10
+	+	17	28
+	+	4	0
+	+	16	17
+	+	17	26
+	+	18	31
+	+	19	9
+	+	17	60
+	+	21	0
+	+	4	21
+	+	21	0
+	+	20	10
+	+	21	0
+	+	21	86
+	+	20	0
+	+	21	2
+	+	17	0
+	+	21	0
+	+	17	11
+	+	21	0
+	+	17	0
+	+	19	0
+	+	18	15
+	+	17	17
+	+	17	113
+	+	19	23
+	+	20	11
+	+	20	105
+	+	21	0
+	+	20	8
+	+	20	107
+	+	20	7
+	+	20	107
+	+	17	73
+	+	20	67
+	+	21	0
+	+	4	0
+	+	19	44
+	+	18	0
+	+	20	0
+	+	14	25
+	+	14	0
+	+	19	40
+	+	20	0
+	+	17	11
+	+	17	0
+	+	17	108
+	+	21	10
+	+	21	0
+	+	18	11
+	+	19	0
+	+	21	0
+	+	18	12
 
 > ~/.config/git/token.gitconfig
 	*	1727663543	0
@@ -26960,112 +27070,6 @@ $
 > /tmp/crontab.1GQWZL/crontab
 	*	1723014834	0
 	"	32	24
-
-> ~/.config/starship/starship.toml
-	*	1722987431	0
-	"	18	12
-	^	18	15
-	.	18	12
-	+	4	7
-	+	4	15
-	+	4	39
-	+	4	25
-	+	4	0
-	+	2	51
-	+	16	0
-	+	12	0
-	+	7	0
-	+	5	0
-	+	7	0
-	+	4	0
-	+	7	0
-	+	6	0
-	+	5	0
-	+	6	0
-	+	7	8
-	+	7	0
-	+	12	0
-	+	16	19
-	+	16	31
-	+	16	1
-	+	16	0
-	+	4	0
-	+	4	16
-	+	16	10
-	+	4	22
-	+	16	7
-	+	16	1
-	+	16	9
-	+	16	16
-	+	4	24
-	+	16	17
-	+	16	50
-	+	16	0
-	+	4	22
-	+	16	19
-	+	4	0
-	+	16	20
-	+	16	24
-	+	16	0
-	+	20	0
-	+	4	0
-	+	21	0
-	+	4	10
-	+	17	20
-	+	4	17
-	+	20	10
-	+	17	28
-	+	4	0
-	+	16	17
-	+	17	26
-	+	18	31
-	+	19	9
-	+	17	60
-	+	21	0
-	+	4	21
-	+	21	0
-	+	20	10
-	+	21	0
-	+	21	86
-	+	20	0
-	+	21	2
-	+	17	0
-	+	21	0
-	+	17	11
-	+	21	0
-	+	17	0
-	+	19	0
-	+	18	15
-	+	17	17
-	+	17	113
-	+	19	23
-	+	20	11
-	+	20	105
-	+	21	0
-	+	20	8
-	+	20	107
-	+	20	7
-	+	20	107
-	+	17	73
-	+	20	67
-	+	21	0
-	+	4	0
-	+	19	44
-	+	18	0
-	+	20	0
-	+	14	25
-	+	14	0
-	+	19	40
-	+	20	0
-	+	17	11
-	+	17	0
-	+	17	108
-	+	21	10
-	+	21	0
-	+	18	11
-	+	19	0
-	+	21	0
-	+	18	12
 
 > /tmp/crontab.AjbEdP/crontab
 	*	1722987213	0
