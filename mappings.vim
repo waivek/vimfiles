@@ -21,5 +21,5 @@ nmap     <silent>        <space>;   <Plug>Run3
 imap                     <C-L>     <Plug>(copilot-accept-word)
 
 " conditional command line expansions
-cabbrev <expr> Rename len(getcmdline()) == 6 && getcmdtype() == ":" ? "Rename ".expand("%:t")."\<C-f>" : "Rename"
+cnoreabbrev <expr> Rename len(getcmdline()) == 6 && getcmdtype() == ":" ? "Rename ".expand("%:t")."\<C-f>" : "Rename"
 

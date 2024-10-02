@@ -56,11 +56,11 @@ function! s:RemoveCurrentPathFromList(paths)
 endfunction
 
 function! s:Fzf(source)
-    let l:options = '--multi --delimiter=/ --nth 4.. --no-sort --preview "bat --color=always --style=plain {}"'
+    let l:fzf_options = '--multi --delimiter=/ --nth -1.. --no-sort --preview "bat --color=always --style=plain {}"'
     call fzf#run({
         \ 'source': a:source,
         \ 'sink': 'e',
-        \ 'options': l:options,
+        \ 'options': l:fzf_options,
         \ })
 endfunction
 

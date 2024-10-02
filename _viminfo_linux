@@ -11,25 +11,145 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/_
+~MSle0~/\C\<cmd_after\>
 
 # Last Substitute Search Pattern:
-~MSle0&^\S*\.bash[-:]
+~MSle0&github
 
 # Last Substitute String:
-$
+$enumerate(\0)
 
 # Command Line History (newest to oldest):
+:qa
+|2,0,1727873293,,"qa"
 :q
-|2,0,1727663732,,"q"
-:q!
-|2,0,1727663643,,"q!"
+|2,0,1727873231,,"q"
 :e
-|2,0,1727657158,,"e"
+|2,0,1727872306,,"e"
+:w
+|2,0,1727871803,,"w"
+:e insert_oldfiles.bash
+|2,0,1727868905,,"e insert_oldfiles.bash"
+:e insert_oldfiles.fish
+|2,0,1727868397,,"e insert_oldfiles.fish"
+:e pwd-oldfiles.bash
+|2,0,1727866235,,"e pwd-oldfiles.bash"
+:Rg
+|2,0,1727866131,,"Rg"
+:e bindings.inputrc
+|2,0,1727866123,,"e bindings.inputrc"
+:q!
+|2,0,1727861466,,"q!"
+:diffthis
+|2,0,1727861433,,"diffthis"
+:d
+|2,0,1727861429,,"d"
+:enew
+|2,0,1727861426,,"enew"
+:!start everything -path . 
+|2,0,1727861072,,"!start everything -path . "
+:e 
+|2,0,1727861070,,"e "
+:MRU tm
+|2,0,1727843769,,"MRU tm"
+:e remaps.txt
+|2,0,1727843198,,"e remaps.txt"
+:MRU bindin
+|2,0,1727843120,,"MRU bindin"
+:asdf as df
+|2,0,1727843064,,"asdf as df"
+:cmap <C-l>
+|2,0,1727843035,,"cmap <C-l>"
+:e remaps-hjkl-jkl;.txt
+|2,0,1727843012,,"e remaps-hjkl-jkl;.txt"
+:a sdf asd fas dfa sdf asdf 
+|2,0,1727842937,,"a sdf asd fas dfa sdf asdf "
+:asdf asd fas df asdf
+|2,0,1727842913,,"asdf asd fas df asdf"
+:e remaps-readline-emacs.txt
+|2,0,1727842783,,"e remaps-readline-emacs.txt"
+:Ren
+|2,0,1727842774,,"Ren"
+:Rename remaps-hjkl-jkl;.txt
+|2,0,1727842771,,"Rename remaps-hjkl-jkl;.txt"
+:so %
+|2,0,1727842758,,"so %"
+::w:
+|2,0,1727842668,,":w:"
+:set title
+|2,0,1727839574,,"set title"
+:set title?
+|2,0,1727839505,,"set title?"
+:!tmux display-message -p '#W'
+|2,0,1727838827,,"!tmux display-message -p '#W'"
+:tmux display-message -p '#W'
+|2,0,1727838815,,"tmux display-message -p '#W'"
+:echo v:servername
+|2,0,1727838238,,"echo v:servername"
+:h v:servername
+|2,0,1727838056,,"h v:servername"
+:echo $VIMRUNTIME
+|2,0,1727838019,,"echo $VIMRUNTIME"
+:126
+|2,0,1727836691,,"126"
+:e gh-timeago-updates.log
+|2,0,1727836562,,"e gh-timeago-updates.log"
+:h xterm-bracketed-paste
+|2,0,1727787989,,"h xterm-bracketed-paste"
+: Manager {{{N
+|2,0,1727787513,," Manager {{{N"
+:set paste
+|2,0,1727787512,,"set paste"
+:bd!
+|2,0,1727787509,,"bd!"
+:set ft=toml
+|2,0,1727787468,,"set ft=toml"
+:messages
+|2,0,1727787045,,"messages"
+:e theme.toml
+|2,0,1727786749,,"e theme.toml"
+:map <C-v>
+|2,0,1727786696,,"map <C-v>"
+:imap <C-v>
+|2,0,1727786680,,"imap <C-v>"
+:e ~/tooling/hjkl-jkl;.txt
+|2,0,1727784908,,"e ~/tooling/hjkl-jkl;.txt"
+:e python-error-library-stats.py
+|2,0,1727782592,,"e python-error-library-stats.py"
+:Py
+|2,0,1727782590,,"Py"
+:e data/python-error-library-repo-stats.json
+|2,0,1727782574,,"e data/python-error-library-repo-stats.json"
+:Enumerate
+|2,0,1727781677,,"Enumerate"
+:Template
+|2,0,1727781178,,"Template"
+:e tmux-repos.py
+|2,0,1727781176,,"e tmux-repos.py"
+:Isolate /https:\/\/github\.com\/[^)]*/
+|2,0,1727781088,,"Isolate /https:\\/\\/github\\.com\\/[^)]*/"
+:v/github/d
+|2,0,1727781033,,"v/github/d"
+:e ~/tmp/tmux-plugins.txt
+|2,0,1727781019,,"e ~/tmp/tmux-plugins.txt"
+:e tmux.conf
+|2,0,1727780617,,"e tmux.conf"
+:asdf asdf as dfa sdf
+|2,0,1727780072,,"asdf asdf as dfa sdf"
+:MRU 
+|2,0,1727778676,,"MRU "
+:silent !tmux setw status off
+|2,0,1727776296,,"silent !tmux setw status off"
+:silent !tmux setw status on
+|2,0,1727776291,,"silent !tmux setw status on"
+:MRU py
+|2,0,1727776285,,"MRU py"
+:MRU tmux.
+|2,0,1727753533,,"MRU tmux."
+:diffget
+|2,0,1727664339,,"diffget"
 :e .bashrc
 |2,0,1727656588,,"e .bashrc"
-:so %
-|2,0,1727582028,,"so %"
 :call <SNR>68_ShowPwdOldfiles()k
 |2,0,1727582021,,"call <SNR>68_ShowPwdOldfiles()k"
 :MRU 34:mappings.vim
@@ -44,14 +164,8 @@ $
 |2,0,1727581820,,"PrintPersonalMappings"
 :e tmp-fzf-if-ripgrep.txt
 |2,0,1727581672,,"e tmp-fzf-if-ripgrep.txt"
-:Rg
-|2,0,1727581658,,"Rg"
-:e 
-|2,0,1727581657,,"e "
 :e oldfiles.bash
 |2,0,1727581651,,"e oldfiles.bash"
-:e pwd-oldfiles.bash
-|2,0,1727581639,,"e pwd-oldfiles.bash"
 :e zdirs.bash
 |2,0,1727580702,,"e zdirs.bash"
 :e fzf_select.bash
@@ -76,8 +190,6 @@ $
 |2,0,1727445813,,"MRU fish_his"
 :MRU bash_his
 |2,0,1727445806,,"MRU bash_his"
-:Enumerate
-|2,0,1727425122,,"Enumerate"
 :MRU 215:.config/todo.txt
 |2,0,1727424695,,"MRU 215:.config/todo.txt"
 :CocRestart
@@ -100,8 +212,6 @@ $
 |2,0,1727348522,,"fzf"
 :R
 |2,0,1727347651,,"R"
-:bd!
-|2,0,1727347590,,"bd!"
 :bd
 |2,0,1727347586,,"bd"
 :MRU 3:fzf-command-samples.txt
@@ -114,8 +224,6 @@ $
 |2,0,1727327169,,"map \\d"
 :e requirements-large.txt
 |2,0,1727312859,,"e requirements-large.txt"
-:qa
-|2,0,1727307276,,"qa"
 :e requirements.txt
 |2,0,1727307019,,"e requirements.txt"
 :e request_profiler.py
@@ -136,8 +244,6 @@ $
 |2,0,1727049990,,"'<,'>!"
 :23
 |2,0,1727042848,,"23"
-:enew
-|2,0,1727042795,,"enew"
 :vert term
 |2,0,1727042724,,"vert term"
 :t
@@ -150,8 +256,6 @@ $
 |2,0,1727041894,,"e fd.man"
 :MRU rg.m
 |2,0,1727041833,,"MRU rg.m"
-:MRU 
-|2,0,1727041828,,"MRU "
 :%sort! n
 |2,0,1727041776,,"%sort! n"
 :%!uniq -c
@@ -162,8 +266,6 @@ $
 |2,0,1727041751,,"e common-flags.txt"
 :diffoff
 |2,0,1727041744,,"diffoff"
-:diffthis
-|2,0,1727041733,,"diffthis"
 :%sort u
 |2,0,1727041725,,"%sort u"
 :Isolate /--[a-z-]*/
@@ -216,8 +318,6 @@ $
 |2,0,1726962056,,"17"
 :e secrets.env
 |2,0,1726512397,,"e secrets.env"
-:Template
-|2,0,1726512323,,"Template"
 :Rename bugs.240913.python_autoimport_completion.txt
 |2,0,1726356165,,"Rename bugs.240913.python_autoimport_completion.txt"
 :verbose set isk
@@ -282,8 +382,6 @@ $
 |2,0,1726233739,,"CocCommand workspaces"
 :CocCommand workspaces.showOutput
 |2,0,1726233733,,"CocCommand workspaces.showOutput"
-:MRU py
-|2,0,1726233693,,"MRU py"
 :e test_lsp.py
 |2,0,1726233668,,"e test_lsp.py"
 :call CocActionAsync("quickfixes")
@@ -420,8 +518,6 @@ $
 |2,0,1725816453,,"!python %"
 :echo 
 |2,0,1725816450,,"echo "
-:w
-|2,0,1725816440,,"w"
 :e truncate.py
 |2,0,1725816140,,"e truncate.py"
 :grep -g '*.py' --fixed-strings "def truncate"
@@ -546,8 +642,6 @@ $
 |2,0,1725591113,,"Todo"
 :next
 |2,0,1725591099,,"next"
-:messages
-|2,0,1725565962,,"messages"
 :source %
 |2,0,1725565905,,"source %"
 :!start 
@@ -628,8 +722,6 @@ $
 |2,0,1725551889,,"q1"
 :vert term python % gh-timeago-updates.log
 |2,0,1725551775,,"vert term python % gh-timeago-updates.log"
-:126
-|2,0,1725551767,,"126"
 :12
 |2,0,1725551765,,"12"
 :vert term python % gh-timeago-updates.log
@@ -840,8 +932,6 @@ $
 |2,0,1725457364,,"cd plugin/"
 :Tdo
 |2,0,1725454548,,"Tdo"
-:!start everything -path . 
-|2,0,1725450895,,"!start everything -path . "
 :!start everything -path .`
 |2,0,1725450890,,"!start everything -path .`"
 :e README.md
@@ -1434,8 +1524,6 @@ $
 |2,0,1724195391,,":call RHEF('/home/vivek/.vim/tmp/handler_error.txt', 4)"
 :.q!
 |2,0,1724195350,,".q!"
-:echo v:servername
-|2,0,1724195165,,"echo v:servername"
 :echo has('clientserver')
 |2,0,1724195127,,"echo has('clientserver')"
 :h clientserver
@@ -1588,8 +1676,6 @@ $
 |2,0,1724015654,,"MRU 2:worker_oldfiles_to_sqlite.py"
 :!rm data/oldfiles.db
 |2,0,1724015544,,"!rm data/oldfiles.db"
-:e data/python-error-library-repo-stats.json
-|2,0,1724014167,,"e data/python-error-library-repo-stats.json"
 :e oldfiles.py
 |2,0,1724014102,,"e oldfiles.py"
 :e worker_oldfiles_to_sqlite.py
@@ -4238,8 +4324,6 @@ $
 |2,0,1718269642,,"MRU ui"
 :Rename ui-components-css-tailwind-output.css
 |2,0,1718269629,,"Rename ui-components-css-tailwind-output.css"
-:Ren
-|2,0,1718269589,,"Ren"
 :e static/css-utilities/tailwind-colors.css
 |2,0,1718216929,,"e static/css-utilities/tailwind-colors.css"
 :'<,'>w
@@ -5052,8 +5136,6 @@ $
 |2,0,1716890398,,"!start everything -path . ge"
 :!start everything -path . data
 |2,0,1716886031,,"!start everything -path . data"
-:d
-|2,0,1716886001,,"d"
 :166
 |2,0,1716884690,,"166"
 :151
@@ -5520,8 +5602,6 @@ $
 |2,0,1714989157,,"q "
 :set ft=bash
 |2,0,1714944406,,"set ft=bash"
-:e bindings.inputrc
-|2,0,1714944397,,"e bindings.inputrc"
 :VD
 |2,0,1714655849,,"VD"
 :472
@@ -5692,8 +5772,6 @@ $
 |2,0,1714334366,,"ALEFixSuggestg"
 :e ~/bin/bash
 |2,0,1714329632,,"e ~/bin/bash"
-:e gh-timeago-updates.log
-|2,0,1714329437,,"e gh-timeago-updates.log"
 :norm
 |2,0,1714328161,,"norm"
 :MRU 4:cron-concerns.txt
@@ -6676,8 +6754,6 @@ $
 |2,0,1712452435,,"Rename downloader_routes.py"
 :e downloader-routes.py
 |2,0,1712452338,,"e downloader-routes.py"
-:Py
-|2,0,1712451088,,"Py"
 :'<,'>s/\s\s\+/ /g
 |2,0,1712445168,,"'<,'>s/\\s\\s\\+/ /g"
 :Tab /THEN
@@ -9594,8 +9670,6 @@ $
 |2,0,1691393329,,"h +quickfix"
 :set nopaste
 |2,0,1691393075,,"set nopaste"
-:set paste
-|2,0,1691393071,,"set paste"
 :ALEPopulateLocList
 |2,0,1691392287,,"ALEPopulateLocList"
 :ALELintStop
@@ -10494,8 +10568,6 @@ $
 |2,0,1685391935,,"map <C-t"
 :map <C-
 |2,0,1685391923,,"map <C-"
-:map <C-v>
-|2,0,1685391920,,"map <C-v>"
 :map <C-T>
 |2,0,1685391913,,"map <C-T>"
 :map <C-Space>
@@ -10536,6 +10608,42 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/bat
+|2,1,1727865598,47,"bat"
+?/vcs
+|2,1,1727860487,47,"vcs"
+?/nth
+|2,1,1727860333,47,"nth"
+?/vim$
+|2,1,1727860327,47,"vim$"
+?/rename
+|2,1,1727842715,47,"rename"
+?/Rename 
+|2,1,1727842702,47,"Rename "
+?/expand
+|2,1,1727842697,47,"expand"
+?/feedkeys
+|2,1,1727842695,47,"feedkeys"
+?/github
+|2,1,1727782738,47,"github"
+?/\(def\|class\)\s\+\w*print
+|2,1,1727782594,47,"\\(def\\|class\\)\\s\\+\\w*print"
+?/human-rea
+|2,1,1727782412,47,"human-rea"
+? in \zs[^:]\+
+|2,1,1727781677,,"in \\zs[^:]\\+"
+?/last_mod
+|2,1,1727781374,47,"last_mod"
+? https:\/\/github\.com\/[^)]*
+|2,1,1727781088,,"https:\\/\\/github\\.com\\/[^)]*"
+? github
+|2,1,1727781033,,"github"
+?/source
+|2,1,1727780567,47,"source"
+?/bot
+|2,1,1727778559,47,"bot"
+?/default
+|2,1,1727753631,47,"default"
 ?/_
 |2,1,1727663668,47,"_"
 ?/tmux
@@ -10572,8 +10680,6 @@ $
 |2,1,1727425461,47,"\\t"
 ?/\(def\|class\)\s\+\w*fzf
 |2,1,1727425328,47,"\\(def\\|class\\)\\s\\+\\w*fzf"
-? in \zs[^:]\+
-|2,1,1727425122,,"in \\zs[^:]\\+"
 ?/to
 |2,1,1727425094,47,"to"
 ?/module
@@ -10582,8 +10688,6 @@ $
 |2,1,1727347621,47,"--"
 ?/-1
 |2,1,1727328042,47,"-1"
-?/nth
-|2,1,1727327320,47,"nth"
 ?/oldfiles
 |2,1,1727327318,47,"oldfiles"
 ? timer\..*\"get_todo_files\"
@@ -10662,8 +10766,6 @@ $
 |2,1,1727011606,47,"-uu"
 ?/--hidden
 |2,1,1727011529,47,"--hidden"
-?/vcs
-|2,1,1727011506,47,"vcs"
 ?/ll
 |2,1,1726963329,47,"ll"
 ?/bugs
@@ -10922,8 +11024,6 @@ $
 |2,1,1725378883,,"oldfiles"
 ?/continue
 |2,1,1725378855,47,"continue"
-?/bat
-|2,1,1725377525,47,"bat"
 ?/b:oldfiles
 |2,1,1725365737,47,"b:oldfiles"
 ? \<l:buffer_path\>
@@ -11090,8 +11190,6 @@ $
 |2,1,1724469613,47,"\\(def\\|class\\)\\s\\+\\w*buffer_extend"
 ?/pwd
 |2,1,1724362369,47,"pwd"
-?/\(def\|class\)\s\+\w*print
-|2,1,1724292169,47,"\\(def\\|class\\)\\s\\+\\w*print"
 ?/\.py
 |2,1,1724291641,47,"\\.py"
 ?/zig
@@ -11574,8 +11672,6 @@ $
 |2,1,1722480779,47,"sort("
 ?/order
 |2,1,1722480618,47,"order"
-?/expand
-|2,1,1722480390,47,"expand"
 ?/a:sid
 |2,1,1722480052,47,"a:sid"
 ?/sid
@@ -13376,8 +13472,6 @@ $
 |2,1,1714990199,47,"^\\s*\\zs"
 ?/kk
 |2,1,1714990178,47,"kk"
-?/source
-|2,1,1714949666,47,"source"
 ?/\\t
 |2,1,1714948752,47,"\\\\t"
 ?/\\r
@@ -15469,52 +15563,64 @@ $
 
 # Registers:
 "0	CHAR	0
-	2
-|3,0,0,0,1,0,1727658019,"2"
-"1	LINE	0
-	# F2 functionality for window switching
-	bind -n F2 if-shell \
-	  'tmux list-windows -F "#{window_index}" | grep -q "^2$"' \
-	  'if-shell "[ #{window_index} -eq 1 ]" "select-window -t 2" "select-window -t 1"' \
-	  'new-window -n Window2'
-|3,0,1,1,5,0,1727658014,"# F2 functionality for window switching","bind -n F2 if-shell \\","  'tmux list-windows -F \"#{window_index}\" | grep -q \"^2$\"' \\","  'if-shell \"[ #{window_index} -eq 1 ]\" \"select-window -t 2\" \"select-window -t 1\"' \\","  'new-window -n Window2'"
+	new_cursor
+|3,0,0,0,1,0,1727873225,"new_cursor"
+""1	LINE	0
+	
+|3,1,1,1,1,0,1727873289,""
 "2	LINE	0
-	
-|3,0,2,1,1,0,1727657911,""
+	bind \r close_completion_if_open_and_execute
+	bind \t do_complete
+|3,0,2,1,2,0,1727873287,"bind \\r close_completion_if_open_and_execute","bind \\t do_complete"
 "3	LINE	0
-	# Hide statusline by default
-	set -g status off
-	
-	# Toggle statusline on/off with F1
-	bind -n F1 set -g status
-	
-	# F2 functionality for window switching
-	bind -n F2 if-shell \
-	  '[ "$(tmux list-windows | grep -c "^2:")" -eq 0 ]' \
-	  'new-window' \
-	  'if-shell "[ #{window_index} -eq 1 ]" "select-window -t 1" "select-window -t 2"'
-|3,0,3,1,11,0,1727657908,"# Hide statusline by default","set -g status off","","# Toggle statusline on/off with F1","bind -n F1 set -g status","","# F2 functionality for window switching","bind -n F2 if-shell \\","  '[ \"$(tmux list-windows | grep -c \"^2:\")\" -eq 0 ]' \\","  'new-window' \\","  'if-shell \"[ #{window_index} -eq 1 ]\" \"select-window -t 1\" \"select-window -t 2\"'"
+	bind \co insert_oldfiles
+|3,0,3,1,1,0,1727873278,"bind \\co insert_oldfiles"
 "4	LINE	0
 	
-|3,0,4,1,1,0,1727657765,""
+|3,0,4,1,1,0,1727873129,""
 "5	LINE	0
-	source ~/tmp/starship-init.bash
-|3,0,5,1,1,0,1727657152,"source ~/tmp/starship-init.bash"
+	
+	bind -x '"\C-o":insert_oldfiles'
+|3,0,5,1,2,0,1727873067,"","bind -x '\"\\C-o\":insert_oldfiles'"
 "6	LINE	0
-	eva
-|3,0,6,1,1,0,1727657094,"eva"
+	
+|3,0,6,1,1,0,1727873019,""
 "7	LINE	0
-	echo "Done."
-|3,0,7,1,1,0,1727656589,"echo \"Done.\""
+	# source ~/bash/insert_oldfiles.bash
+	insert_oldfiles_wrapper() {
+	    
+	}
+|3,0,7,1,4,0,1727873018,"# source ~/bash/insert_oldfiles.bash","insert_oldfiles_wrapper() {","    ","}"
 "8	LINE	0
-	    echoerr "BEFORE"
-|3,0,8,1,1,0,1727581972,"    echoerr \"BEFORE\""
+	
+|3,0,8,1,1,0,1727872996,""
 "9	LINE	0
-	source ~/bash/fzf_select.bash
-|3,0,9,1,1,0,1727581711,"source ~/bash/fzf_select.bash"
+	
+	function insert_oldfiles
+	    set selected_files (~/golang/viminfo_utils/bin/oldfiles | \
+	        fzf --no-sort --exact --delimiter=/ --nth -1.. --multi | \
+	        sed "s|$HOME|~|g" | \
+	        string trim | \
+	        string split '\n' | \
+	        string join ' ')
+	    if test -n "$selected_files"
+	
+	        set cmd_before (commandline --cut-at-cursor)    # Get the part of the command before the cursor
+	        set cmd_after (commandline | string sub -s (math $before_cursor + 1)) # Get the part of the command after the cursor
+	
+	        commandline -r "$cmd_before$selected_files$cmd_after" # Replace command line with before, "bingo", and after
+	
+	        commandline -f repaint                       # Repaint the command line
+	    end
+	end
+	
+	bind \co insert_oldfiles
+	
+|3,0,9,1,21,0,1727872714,"","function insert_oldfiles","    set selected_files (~/golang/viminfo_utils/bin/oldfiles | \\","        fzf --no-sort --exact --delimiter=/ --nth -1.. --multi | \\","        sed \"s|$HOME|~|g\" | \\","        string trim | \\","        string split '\\n' | \\","        string join ' ')","    if test -n \"$selected_files\"","","        set cmd_before (commandline --cut-at-cursor)    # Get the part of the command before the cursor",>126
+|<"        set cmd_after (commandline | string sub -s (math $before_cursor + 1)) # Get the part of the command after the cursor","","        commandline -r \"$cmd_before$selected_files$cmd_after\" # Replace command line with before, \"bingo\", and after","","        commandline -f repaint                       # Repaint the command line","    end","end","","bind \\co insert_oldfiles",""
 "a	CHAR	0
-	0d;d;
-|3,0,10,0,1,0,1727656396,"0d;d;"
+	Tabularize /#/l1c1l1
+|3,0,10,0,1,0,1727873225,"Tabularize /#/l1c1l1"
 "i	CHAR	0
 	ado_up()jk:q!
 |3,0,18,0,1,0,1724200553,"ado_up()jk:q!"
@@ -15525,8 +15631,8 @@ $
 	kkkkkkllllll
 |3,0,20,0,1,0,1725440178,"kkkkkkllllll"
 "l	CHAR	0
-	ll
-|3,0,21,0,1,0,1726262174,"ll"
+	jk:q!llk;loline.repla	ceh€kb("https:jklllll;;;gf:w
+|3,0,21,0,1,0,1727781297,"jk:q!llk;loline.repla	ceh€kb(\"https:jklllll;;;gf:w"
 "q	CHAR	0
 	!jk€ýajk
 |3,0,26,0,1,0,1724288785,"!jk€ýajk"
@@ -15534,238 +15640,1828 @@ $
 	set verbosefile=verbose-file.txt
 	set verbose=20 | quit
 |3,0,28,1,2,0,1725457945,"set verbosefile=verbose-file.txt","set verbose=20 | quit"
-""-	CHAR	0
-	1
-|3,1,36,0,1,0,1727658019,"1"
+"-	CHAR	0
+	new_cursor
+|3,0,36,0,1,0,1727873190,"new_cursor"
 
 # File marks:
-'0  20  0  ~/.config/starship/starship.toml
-|4,48,20,0,1727663733,"~/.config/starship/starship.toml"
-'1  14  8  ~/.config/starship/starship.toml
-|4,49,14,8,1727663726,"~/.config/starship/starship.toml"
-'2  14  8  ~/.config/starship/starship.toml
-|4,50,14,8,1727663726,"~/.config/starship/starship.toml"
-'3  1  21  ~/.config/git/token.gitconfig
-|4,51,1,21,1727663546,"~/.config/git/token.gitconfig"
-'4  1  21  ~/.config/git/token.gitconfig
-|4,52,1,21,1727663546,"~/.config/git/token.gitconfig"
-'5  1  21  ~/.config/git/token.gitconfig
-|4,53,1,21,1727663546,"~/.config/git/token.gitconfig"
-'6  1  21  ~/.config/git/token.gitconfig
-|4,54,1,21,1727663546,"~/.config/git/token.gitconfig"
-'7  8  9  ~/.config/tmux/tmux.conf
-|4,55,8,9,1727658024,"~/.config/tmux/tmux.conf"
-'8  8  9  ~/.config/tmux/tmux.conf
-|4,56,8,9,1727658024,"~/.config/tmux/tmux.conf"
-'9  8  9  ~/.config/tmux/tmux.conf
-|4,57,8,9,1727658024,"~/.config/tmux/tmux.conf"
+'0  13  0  ~/.config/setup.fish
+|4,48,13,0,1727873293,"~/.config/setup.fish"
+'1  22  23  ~/bash/insert_oldfiles.fish
+|4,49,22,23,1727873231,"~/bash/insert_oldfiles.fish"
+'2  22  23  ~/bash/insert_oldfiles.fish
+|4,50,22,23,1727873231,"~/bash/insert_oldfiles.fish"
+'3  16  33  ~/bash/insert_oldfiles.fish
+|4,51,16,33,1727873144,"~/bash/insert_oldfiles.fish"
+'4  16  33  ~/bash/insert_oldfiles.fish
+|4,52,16,33,1727873144,"~/bash/insert_oldfiles.fish"
+'5  16  33  ~/bash/insert_oldfiles.fish
+|4,53,16,33,1727873144,"~/bash/insert_oldfiles.fish"
+'6  16  33  ~/bash/insert_oldfiles.fish
+|4,54,16,33,1727873144,"~/bash/insert_oldfiles.fish"
+'7  1  0  ~/bash/insert_oldfiles.bash
+|4,55,1,0,1727873093,"~/bash/insert_oldfiles.bash"
+'8  1  0  ~/bash/insert_oldfiles.bash
+|4,56,1,0,1727873093,"~/bash/insert_oldfiles.bash"
+'9  1  0  ~/bash/insert_oldfiles.bash
+|4,57,1,0,1727873093,"~/bash/insert_oldfiles.bash"
 
 # Jumplist (newest first):
--'  20  0  ~/.config/starship/starship.toml
-|4,39,20,0,1727663733,"~/.config/starship/starship.toml"
--'  1  0  ~/.config/starship/starship.toml
-|4,39,1,0,1727663729,"~/.config/starship/starship.toml"
--'  14  8  ~/.config/starship/starship.toml
-|4,39,14,8,1727663726,"~/.config/starship/starship.toml"
--'  14  8  ~/.config/starship/starship.toml
-|4,39,14,8,1727663726,"~/.config/starship/starship.toml"
--'  9  5  ~/.config/starship/starship.toml
-|4,39,9,5,1727663669,"~/.config/starship/starship.toml"
--'  8  5  ~/.config/starship/starship.toml
-|4,39,8,5,1727663669,"~/.config/starship/starship.toml"
--'  9  5  ~/.config/starship/starship.toml
-|4,39,9,5,1727663669,"~/.config/starship/starship.toml"
--'  8  5  ~/.config/starship/starship.toml
-|4,39,8,5,1727663669,"~/.config/starship/starship.toml"
--'  1  0  ~/.config/starship/starship.toml
-|4,39,1,0,1727663668,"~/.config/starship/starship.toml"
--'  1  21  ~/.config/git/token.gitconfig
-|4,39,1,21,1727663546,"~/.config/git/token.gitconfig"
--'  1  21  ~/.config/git/token.gitconfig
-|4,39,1,21,1727663546,"~/.config/git/token.gitconfig"
--'  1  21  ~/.config/git/token.gitconfig
-|4,39,1,21,1727663546,"~/.config/git/token.gitconfig"
--'  8  9  ~/.config/tmux/tmux.conf
-|4,39,8,9,1727658024,"~/.config/tmux/tmux.conf"
--'  8  9  ~/.config/tmux/tmux.conf
-|4,39,8,9,1727658024,"~/.config/tmux/tmux.conf"
--'  8  9  ~/.config/tmux/tmux.conf
-|4,39,8,9,1727658024,"~/.config/tmux/tmux.conf"
--'  8  9  ~/.config/tmux/tmux.conf
-|4,39,8,9,1727658024,"~/.config/tmux/tmux.conf"
--'  8  9  ~/.config/tmux/tmux.conf
-|4,39,8,9,1727658024,"~/.config/tmux/tmux.conf"
--'  21  0  ~/.config/tmux/tmux.conf
-|4,39,21,0,1727658017,"~/.config/tmux/tmux.conf"
--'  21  0  ~/.config/tmux/tmux.conf
-|4,39,21,0,1727658017,"~/.config/tmux/tmux.conf"
--'  21  0  ~/.config/tmux/tmux.conf
-|4,39,21,0,1727658017,"~/.config/tmux/tmux.conf"
--'  21  0  ~/.config/tmux/tmux.conf
-|4,39,21,0,1727658017,"~/.config/tmux/tmux.conf"
--'  21  0  ~/.config/tmux/tmux.conf
-|4,39,21,0,1727658017,"~/.config/tmux/tmux.conf"
--'  22  0  ~/.config/tmux/tmux.conf
-|4,39,22,0,1727658015,"~/.config/tmux/tmux.conf"
--'  22  0  ~/.config/tmux/tmux.conf
-|4,39,22,0,1727658015,"~/.config/tmux/tmux.conf"
--'  22  0  ~/.config/tmux/tmux.conf
-|4,39,22,0,1727658015,"~/.config/tmux/tmux.conf"
--'  22  0  ~/.config/tmux/tmux.conf
-|4,39,22,0,1727658015,"~/.config/tmux/tmux.conf"
--'  22  0  ~/.config/tmux/tmux.conf
-|4,39,22,0,1727658015,"~/.config/tmux/tmux.conf"
--'  7  39  ~/.config/tmux/tmux.conf
-|4,39,7,39,1727658014,"~/.config/tmux/tmux.conf"
--'  7  39  ~/.config/tmux/tmux.conf
-|4,39,7,39,1727658014,"~/.config/tmux/tmux.conf"
--'  7  39  ~/.config/tmux/tmux.conf
-|4,39,7,39,1727658014,"~/.config/tmux/tmux.conf"
--'  7  39  ~/.config/tmux/tmux.conf
-|4,39,7,39,1727658014,"~/.config/tmux/tmux.conf"
--'  7  39  ~/.config/tmux/tmux.conf
-|4,39,7,39,1727658014,"~/.config/tmux/tmux.conf"
--'  1  0  ~/.config/tmux/tmux.conf
-|4,39,1,0,1727658011,"~/.config/tmux/tmux.conf"
--'  1  0  ~/.config/tmux/tmux.conf
-|4,39,1,0,1727658011,"~/.config/tmux/tmux.conf"
--'  1  0  ~/.config/tmux/tmux.conf
-|4,39,1,0,1727658011,"~/.config/tmux/tmux.conf"
--'  1  0  ~/.config/tmux/tmux.conf
-|4,39,1,0,1727658011,"~/.config/tmux/tmux.conf"
--'  1  0  ~/.config/tmux/tmux.conf
-|4,39,1,0,1727658011,"~/.config/tmux/tmux.conf"
--'  11  2  ~/.config/tmux/tmux.conf
-|4,39,11,2,1727657916,"~/.config/tmux/tmux.conf"
--'  11  2  ~/.config/tmux/tmux.conf
-|4,39,11,2,1727657916,"~/.config/tmux/tmux.conf"
--'  11  2  ~/.config/tmux/tmux.conf
-|4,39,11,2,1727657916,"~/.config/tmux/tmux.conf"
--'  11  2  ~/.config/tmux/tmux.conf
-|4,39,11,2,1727657916,"~/.config/tmux/tmux.conf"
--'  11  2  ~/.config/tmux/tmux.conf
-|4,39,11,2,1727657916,"~/.config/tmux/tmux.conf"
--'  12  0  ~/.config/tmux/tmux.conf
-|4,39,12,0,1727657910,"~/.config/tmux/tmux.conf"
--'  12  0  ~/.config/tmux/tmux.conf
-|4,39,12,0,1727657910,"~/.config/tmux/tmux.conf"
--'  12  0  ~/.config/tmux/tmux.conf
-|4,39,12,0,1727657910,"~/.config/tmux/tmux.conf"
--'  12  0  ~/.config/tmux/tmux.conf
-|4,39,12,0,1727657910,"~/.config/tmux/tmux.conf"
--'  12  0  ~/.config/tmux/tmux.conf
-|4,39,12,0,1727657910,"~/.config/tmux/tmux.conf"
--'  1  28  ~/.config/tmux/tmux.conf
-|4,39,1,28,1727657908,"~/.config/tmux/tmux.conf"
+-'  13  0  ~/.config/setup.fish
+|4,39,13,0,1727873293,"~/.config/setup.fish"
+-'  1  0  ~/.config/setup.fish
+|4,39,1,0,1727873271,"~/.config/setup.fish"
 -'  1  0  ~/.config/setup.bash
-|4,39,1,0,1727657809,"~/.config/setup.bash"
+|4,39,1,0,1727873270,"~/.config/setup.bash"
+-'  1  0  ~/bash/insert_oldfiles.fish
+|4,39,1,0,1727873267,"~/bash/insert_oldfiles.fish"
+-'  1  0  ~/bash/insert_oldfiles.bash
+|4,39,1,0,1727873251,"~/bash/insert_oldfiles.bash"
+-'  22  23  ~/bash/insert_oldfiles.fish
+|4,39,22,23,1727873231,"~/bash/insert_oldfiles.fish"
+-'  22  23  ~/bash/insert_oldfiles.fish
+|4,39,22,23,1727873231,"~/bash/insert_oldfiles.fish"
+-'  12  12  ~/bash/insert_oldfiles.fish
+|4,39,12,12,1727873214,"~/bash/insert_oldfiles.fish"
+-'  12  12  ~/bash/insert_oldfiles.fish
+|4,39,12,12,1727873214,"~/bash/insert_oldfiles.fish"
+-'  10  12  ~/bash/insert_oldfiles.fish
+|4,39,10,12,1727873210,"~/bash/insert_oldfiles.fish"
+-'  10  12  ~/bash/insert_oldfiles.fish
+|4,39,10,12,1727873210,"~/bash/insert_oldfiles.fish"
+-'  14  18  ~/bash/insert_oldfiles.fish
+|4,39,14,18,1727873209,"~/bash/insert_oldfiles.fish"
+-'  14  18  ~/bash/insert_oldfiles.fish
+|4,39,14,18,1727873209,"~/bash/insert_oldfiles.fish"
+-'  15  18  ~/bash/insert_oldfiles.fish
+|4,39,15,18,1727873192,"~/bash/insert_oldfiles.fish"
+-'  15  18  ~/bash/insert_oldfiles.fish
+|4,39,15,18,1727873192,"~/bash/insert_oldfiles.fish"
+-'  16  30  ~/bash/insert_oldfiles.fish
+|4,39,16,30,1727873188,"~/bash/insert_oldfiles.fish"
+-'  16  30  ~/bash/insert_oldfiles.fish
+|4,39,16,30,1727873188,"~/bash/insert_oldfiles.fish"
+-'  1  0  ~/bash/insert_oldfiles.fish
+|4,39,1,0,1727873147,"~/bash/insert_oldfiles.fish"
+-'  16  33  ~/bash/insert_oldfiles.fish
+|4,39,16,33,1727873144,"~/bash/insert_oldfiles.fish"
+-'  1  0  ~/bash/insert_oldfiles.fish
+|4,39,1,0,1727873111,"~/bash/insert_oldfiles.fish"
+-'  1  0  ~/bash/insert_oldfiles.bash
+|4,39,1,0,1727873093,"~/bash/insert_oldfiles.bash"
+-'  1  0  ~/bash/insert_oldfiles.bash
+|4,39,1,0,1727873093,"~/bash/insert_oldfiles.bash"
+-'  1  0  ~/bash/insert_oldfiles.bash
+|4,39,1,0,1727873093,"~/bash/insert_oldfiles.bash"
+-'  9  0  ~/bash/insert_oldfiles.bash
+|4,39,9,0,1727873072,"~/bash/insert_oldfiles.bash"
+-'  9  0  ~/bash/insert_oldfiles.bash
+|4,39,9,0,1727873072,"~/bash/insert_oldfiles.bash"
+-'  9  0  ~/bash/insert_oldfiles.bash
+|4,39,9,0,1727873072,"~/bash/insert_oldfiles.bash"
+-'  9  0  ~/bash/insert_oldfiles.bash
+|4,39,9,0,1727873072,"~/bash/insert_oldfiles.bash"
+-'  9  0  ~/bash/insert_oldfiles.bash
+|4,39,9,0,1727873072,"~/bash/insert_oldfiles.bash"
+-'  1  0  ~/bash/insert_oldfiles.bash
+|4,39,1,0,1727873067,"~/bash/insert_oldfiles.bash"
+-'  62  46  ~/.config/setup.bash
+|4,39,62,46,1727873065,"~/.config/setup.bash"
+-'  62  46  ~/.config/setup.bash
+|4,39,62,46,1727873065,"~/.config/setup.bash"
+-'  62  46  ~/.config/setup.bash
+|4,39,62,46,1727873065,"~/.config/setup.bash"
+-'  62  46  ~/.config/setup.bash
+|4,39,62,46,1727873065,"~/.config/setup.bash"
+-'  62  46  ~/.config/setup.bash
+|4,39,62,46,1727873065,"~/.config/setup.bash"
+-'  63  0  ~/.config/setup.bash
+|4,39,63,0,1727873061,"~/.config/setup.bash"
+-'  63  0  ~/.config/setup.bash
+|4,39,63,0,1727873061,"~/.config/setup.bash"
+-'  63  0  ~/.config/setup.bash
+|4,39,63,0,1727873061,"~/.config/setup.bash"
+-'  63  0  ~/.config/setup.bash
+|4,39,63,0,1727873061,"~/.config/setup.bash"
+-'  63  0  ~/.config/setup.bash
+|4,39,63,0,1727873061,"~/.config/setup.bash"
 -'  1  0  ~/.config/setup.bash
-|4,39,1,0,1727657809,"~/.config/setup.bash"
+|4,39,1,0,1727873045,"~/.config/setup.bash"
 -'  1  0  ~/.config/setup.bash
-|4,39,1,0,1727657809,"~/.config/setup.bash"
+|4,39,1,0,1727873045,"~/.config/setup.bash"
 -'  1  0  ~/.config/setup.bash
-|4,39,1,0,1727657809,"~/.config/setup.bash"
+|4,39,1,0,1727873045,"~/.config/setup.bash"
 -'  1  0  ~/.config/setup.bash
-|4,39,1,0,1727657809,"~/.config/setup.bash"
+|4,39,1,0,1727873045,"~/.config/setup.bash"
+-'  10  42  ~/bash/insert_oldfiles.fish
+|4,39,10,42,1727873028,"~/bash/insert_oldfiles.fish"
+-'  10  42  ~/bash/insert_oldfiles.fish
+|4,39,10,42,1727873028,"~/bash/insert_oldfiles.fish"
+-'  10  42  ~/bash/insert_oldfiles.fish
+|4,39,10,42,1727873028,"~/bash/insert_oldfiles.fish"
+-'  10  42  ~/bash/insert_oldfiles.fish
+|4,39,10,42,1727873028,"~/bash/insert_oldfiles.fish"
+-'  61  0  ~/.config/setup.bash
+|4,39,61,0,1727873026,"~/.config/setup.bash"
+-'  61  0  ~/.config/setup.bash
+|4,39,61,0,1727873026,"~/.config/setup.bash"
+-'  61  0  ~/.config/setup.bash
+|4,39,61,0,1727873026,"~/.config/setup.bash"
+-'  61  0  ~/.config/setup.bash
+|4,39,61,0,1727873026,"~/.config/setup.bash"
+-'  61  0  ~/.config/setup.bash
+|4,39,61,0,1727873026,"~/.config/setup.bash"
+-'  61  0  ~/.config/setup.bash
+|4,39,61,0,1727873026,"~/.config/setup.bash"
+-'  1  0  ~/bash/insert_oldfiles.bash
+|4,39,1,0,1727873002,"~/bash/insert_oldfiles.bash"
+-'  62  37  ~/.config/setup.bash
+|4,39,62,37,1727873000,"~/.config/setup.bash"
+-'  13  0  ~/.config/setup.bash
+|4,39,13,0,1727872967,"~/.config/setup.bash"
+-'  13  0  ~/.config/setup.bash
+|4,39,13,0,1727872967,"~/.config/setup.bash"
+-'  13  0  ~/.config/setup.bash
+|4,39,13,0,1727872967,"~/.config/setup.bash"
+-'  13  0  ~/.config/setup.bash
+|4,39,13,0,1727872967,"~/.config/setup.bash"
+-'  13  0  ~/.config/setup.bash
+|4,39,13,0,1727872967,"~/.config/setup.bash"
+-'  13  0  ~/.config/setup.bash
+|4,39,13,0,1727872967,"~/.config/setup.bash"
 -'  1  0  ~/.config/setup.bash
-|4,39,1,0,1727657809,"~/.config/setup.bash"
--'  1  0  ~/.config/setup.bash
-|4,39,1,0,1727657809,"~/.config/setup.bash"
--'  2  2  ~/.config/tmux/tmux.conf
-|4,39,2,2,1727657769,"~/.config/tmux/tmux.conf"
--'  2  2  ~/.config/tmux/tmux.conf
-|4,39,2,2,1727657769,"~/.config/tmux/tmux.conf"
--'  2  2  ~/.config/tmux/tmux.conf
-|4,39,2,2,1727657769,"~/.config/tmux/tmux.conf"
--'  2  2  ~/.config/tmux/tmux.conf
-|4,39,2,2,1727657769,"~/.config/tmux/tmux.conf"
--'  2  2  ~/.config/tmux/tmux.conf
-|4,39,2,2,1727657769,"~/.config/tmux/tmux.conf"
--'  2  2  ~/.config/tmux/tmux.conf
-|4,39,2,2,1727657769,"~/.config/tmux/tmux.conf"
--'  11  2  ~/.config/tmux/tmux.conf
-|4,39,11,2,1727657769,"~/.config/tmux/tmux.conf"
--'  11  2  ~/.config/tmux/tmux.conf
-|4,39,11,2,1727657769,"~/.config/tmux/tmux.conf"
--'  1  0  ~/.config/tmux/tmux.conf
-|4,39,1,0,1727657756,"~/.config/tmux/tmux.conf"
--'  1  0  ~/.config/tmux/tmux.conf
-|4,39,1,0,1727657756,"~/.config/tmux/tmux.conf"
--'  1  0  ~/cd
-|4,39,1,0,1727657737,"~/cd"
--'  1  0  ~/cd
-|4,39,1,0,1727657737,"~/cd"
--'  1  0  ~/cd
-|4,39,1,0,1727657737,"~/cd"
--'  1  0  ~/cd
-|4,39,1,0,1727657737,"~/cd"
--'  1  0  ~/cd
-|4,39,1,0,1727657737,"~/cd"
--'  1  0  ~/cd
-|4,39,1,0,1727657737,"~/cd"
--'  1  0  ~/cd
-|4,39,1,0,1727657737,"~/cd"
--'  1  0  ~/cd
-|4,39,1,0,1727657737,"~/cd"
--'  1  0  ~/cd
-|4,39,1,0,1727657737,"~/cd"
--'  135  8  ~/tmp/starship-init.bash
-|4,39,135,8,1727657477,"~/tmp/starship-init.bash"
--'  135  8  ~/tmp/starship-init.bash
-|4,39,135,8,1727657477,"~/tmp/starship-init.bash"
--'  135  8  ~/tmp/starship-init.bash
-|4,39,135,8,1727657477,"~/tmp/starship-init.bash"
--'  135  8  ~/tmp/starship-init.bash
-|4,39,135,8,1727657477,"~/tmp/starship-init.bash"
--'  135  8  ~/tmp/starship-init.bash
-|4,39,135,8,1727657477,"~/tmp/starship-init.bash"
--'  135  8  ~/tmp/starship-init.bash
-|4,39,135,8,1727657477,"~/tmp/starship-init.bash"
--'  135  8  ~/tmp/starship-init.bash
-|4,39,135,8,1727657477,"~/tmp/starship-init.bash"
--'  135  8  ~/tmp/starship-init.bash
-|4,39,135,8,1727657477,"~/tmp/starship-init.bash"
--'  135  8  ~/tmp/starship-init.bash
-|4,39,135,8,1727657477,"~/tmp/starship-init.bash"
--'  135  8  ~/tmp/starship-init.bash
-|4,39,135,8,1727657477,"~/tmp/starship-init.bash"
--'  1  0  ~/tmp/starship-init.bash
-|4,39,1,0,1727657458,"~/tmp/starship-init.bash"
--'  1  0  ~/tmp/starship-init.bash
-|4,39,1,0,1727657458,"~/tmp/starship-init.bash"
--'  1  0  ~/tmp/starship-init.bash
-|4,39,1,0,1727657458,"~/tmp/starship-init.bash"
--'  1  0  ~/tmp/starship-init.bash
-|4,39,1,0,1727657458,"~/tmp/starship-init.bash"
--'  1  0  ~/tmp/starship-init.bash
-|4,39,1,0,1727657458,"~/tmp/starship-init.bash"
--'  1  0  ~/tmp/starship-init.bash
-|4,39,1,0,1727657458,"~/tmp/starship-init.bash"
--'  1  0  ~/tmp/starship-init.bash
-|4,39,1,0,1727657458,"~/tmp/starship-init.bash"
--'  1  0  ~/tmp/starship-init.bash
-|4,39,1,0,1727657458,"~/tmp/starship-init.bash"
--'  1  0  ~/tmp/starship-init.bash
-|4,39,1,0,1727657458,"~/tmp/starship-init.bash"
--'  1  0  ~/tmp/starship-init.bash
-|4,39,1,0,1727657458,"~/tmp/starship-init.bash"
--'  88  0  ~/tmp/starship-init.bash
-|4,39,88,0,1727657456,"~/tmp/starship-init.bash"
--'  88  0  ~/tmp/starship-init.bash
-|4,39,88,0,1727657456,"~/tmp/starship-init.bash"
--'  88  0  ~/tmp/starship-init.bash
-|4,39,88,0,1727657456,"~/tmp/starship-init.bash"
--'  88  0  ~/tmp/starship-init.bash
-|4,39,88,0,1727657456,"~/tmp/starship-init.bash"
--'  88  0  ~/tmp/starship-init.bash
-|4,39,88,0,1727657456,"~/tmp/starship-init.bash"
--'  88  0  ~/tmp/starship-init.bash
-|4,39,88,0,1727657456,"~/tmp/starship-init.bash"
+|4,39,1,0,1727872964,"~/.config/setup.bash"
+-'  14  36  ~/bash/insert_oldfiles.fish
+|4,39,14,36,1727872867,"~/bash/insert_oldfiles.fish"
+-'  14  36  ~/bash/insert_oldfiles.fish
+|4,39,14,36,1727872867,"~/bash/insert_oldfiles.fish"
+-'  14  36  ~/bash/insert_oldfiles.fish
+|4,39,14,36,1727872867,"~/bash/insert_oldfiles.fish"
+-'  14  36  ~/bash/insert_oldfiles.fish
+|4,39,14,36,1727872867,"~/bash/insert_oldfiles.fish"
+-'  17  8  ~/bash/insert_oldfiles.fish
+|4,39,17,8,1727872866,"~/bash/insert_oldfiles.fish"
+-'  17  8  ~/bash/insert_oldfiles.fish
+|4,39,17,8,1727872866,"~/bash/insert_oldfiles.fish"
+-'  17  8  ~/bash/insert_oldfiles.fish
+|4,39,17,8,1727872866,"~/bash/insert_oldfiles.fish"
+-'  15  8  ~/bash/insert_oldfiles.fish
+|4,39,15,8,1727872866,"~/bash/insert_oldfiles.fish"
+-'  15  8  ~/bash/insert_oldfiles.fish
+|4,39,15,8,1727872866,"~/bash/insert_oldfiles.fish"
+-'  15  8  ~/bash/insert_oldfiles.fish
+|4,39,15,8,1727872866,"~/bash/insert_oldfiles.fish"
+-'  18  8  ~/bash/insert_oldfiles.fish
+|4,39,18,8,1727872865,"~/bash/insert_oldfiles.fish"
+-'  18  8  ~/bash/insert_oldfiles.fish
+|4,39,18,8,1727872865,"~/bash/insert_oldfiles.fish"
+-'  18  8  ~/bash/insert_oldfiles.fish
+|4,39,18,8,1727872865,"~/bash/insert_oldfiles.fish"
+-'  16  8  ~/bash/insert_oldfiles.fish
+|4,39,16,8,1727872865,"~/bash/insert_oldfiles.fish"
+-'  16  8  ~/bash/insert_oldfiles.fish
+|4,39,16,8,1727872865,"~/bash/insert_oldfiles.fish"
+-'  16  8  ~/bash/insert_oldfiles.fish
+|4,39,16,8,1727872865,"~/bash/insert_oldfiles.fish"
+-'  1  9  ~/bash/insert_oldfiles.fish
+|4,39,1,9,1727872762,"~/bash/insert_oldfiles.fish"
+-'  1  9  ~/bash/insert_oldfiles.fish
+|4,39,1,9,1727872762,"~/bash/insert_oldfiles.fish"
+-'  1  9  ~/bash/insert_oldfiles.fish
+|4,39,1,9,1727872762,"~/bash/insert_oldfiles.fish"
+-'  11  0  ~/bash/insert_oldfiles.fish
+|4,39,11,0,1727872757,"~/bash/insert_oldfiles.fish"
+-'  11  0  ~/bash/insert_oldfiles.fish
+|4,39,11,0,1727872757,"~/bash/insert_oldfiles.fish"
+-'  11  0  ~/bash/insert_oldfiles.fish
+|4,39,11,0,1727872757,"~/bash/insert_oldfiles.fish"
+-'  11  0  ~/bash/insert_oldfiles.fish
+|4,39,11,0,1727872757,"~/bash/insert_oldfiles.fish"
+-'  11  0  ~/bash/insert_oldfiles.fish
+|4,39,11,0,1727872757,"~/bash/insert_oldfiles.fish"
+-'  11  0  ~/bash/insert_oldfiles.fish
+|4,39,11,0,1727872757,"~/bash/insert_oldfiles.fish"
+-'  20  0  ~/bash/insert_oldfiles.fish
+|4,39,20,0,1727872716,"~/bash/insert_oldfiles.fish"
+-'  20  0  ~/bash/insert_oldfiles.fish
+|4,39,20,0,1727872716,"~/bash/insert_oldfiles.fish"
+-'  20  0  ~/bash/insert_oldfiles.fish
+|4,39,20,0,1727872716,"~/bash/insert_oldfiles.fish"
+-'  18  0  ~/bash/insert_oldfiles.fish
+|4,39,18,0,1727872716,"~/bash/insert_oldfiles.fish"
+-'  18  0  ~/bash/insert_oldfiles.fish
+|4,39,18,0,1727872716,"~/bash/insert_oldfiles.fish"
+-'  18  0  ~/bash/insert_oldfiles.fish
+|4,39,18,0,1727872716,"~/bash/insert_oldfiles.fish"
+-'  18  0  ~/bash/insert_oldfiles.fish
+|4,39,18,0,1727872716,"~/bash/insert_oldfiles.fish"
+-'  2  12  ~/bash/insert_oldfiles.fish
+|4,39,2,12,1727872713,"~/bash/insert_oldfiles.fish"
+-'  2  12  ~/bash/insert_oldfiles.fish
+|4,39,2,12,1727872713,"~/bash/insert_oldfiles.fish"
+-'  2  12  ~/bash/insert_oldfiles.fish
+|4,39,2,12,1727872713,"~/bash/insert_oldfiles.fish"
+-'  2  12  ~/bash/insert_oldfiles.fish
+|4,39,2,12,1727872713,"~/bash/insert_oldfiles.fish"
+-'  2  12  ~/bash/insert_oldfiles.fish
+|4,39,2,12,1727872713,"~/bash/insert_oldfiles.fish"
+-'  1  0  ~/bash/insert_oldfiles.fish
+|4,39,1,0,1727872713,"~/bash/insert_oldfiles.fish"
 
 # Buffer list:
-%~/.config/starship/starship.toml	20	0
+%~/bash/insert_oldfiles.fish	21	0
+%~/bash/insert_oldfiles.bash	1	0
+%~/.config/setup.bash	1	0
+%~/.config/setup.fish	13	0
 
 # History of marks within files (newest to oldest):
+
+> ~/.config/setup.fish
+	*	1727873290	0
+	"	13	0
+	^	10	0
+	.	13	0
+	+	6	42
+	+	6	0
+	+	6	45
+	+	6	5
+	+	6	0
+	+	6	9
+	+	6	5
+	+	6	0
+	+	6	9
+	+	6	39
+	+	6	9
+	+	6	0
+	+	6	20
+	+	6	19
+	+	6	23
+	+	6	8
+	+	6	23
+	+	6	9
+	+	6	0
+	+	19	1
+	+	6	0
+	+	25	0
+	+	13	0
+	+	13	13
+	+	13	0
+	+	27	21
+	+	27	18
+	+	27	0
+	+	27	42
+	+	27	0
+	+	26	0
+	+	27	0
+	+	6	0
+	+	6	44
+	+	6	0
+	+	6	4
+	+	6	0
+	+	6	7
+	+	6	37
+	+	6	24
+	+	6	7
+	+	6	5
+	+	6	25
+	+	6	13
+	+	6	30
+	+	6	7
+	+	6	0
+	+	6	21
+	+	6	0
+	+	13	0
+	+	13	1
+	+	6	0
+	+	13	0
+	+	13	32
+	+	6	23
+	+	6	0
+	+	6	19
+	+	6	0
+	+	6	26
+	+	6	10
+	+	6	5
+	+	6	0
+	+	6	37
+	+	6	0
+	+	6	22
+	+	6	58
+	+	6	0
+	+	7	30
+	+	13	18
+	+	27	0
+	+	28	0
+	+	29	0
+	+	28	29
+	+	29	11
+	+	31	34
+	+	32	0
+	+	13	0
+	+	24	55
+	+	24	0
+	+	16	82
+	+	17	80
+	+	1	0
+	+	14	26
+	+	1	13
+	+	16	12
+	+	25	0
+	+	24	11
+	+	32	12
+	+	1	0
+	+	16	0
+	+	24	0
+	+	32	0
+	+	11	33
+	+	12	0
+	+	13	0
+	+	10	0
+	+	13	0
+	+	8	0
+	+	13	0
+
+> ~/bash/insert_oldfiles.fish
+	*	1727873278	0
+	"	21	0
+	^	15	19
+	.	22	0
+	+	1	3
+	+	1	63
+	+	1	120
+	+	1	140
+	+	1	154
+	+	1	0
+	+	1	152
+	+	1	0
+	+	1	24
+	+	1	0
+	+	1	24
+	+	1	0
+	+	1	65
+	+	1	0
+	+	1	31
+	+	1	0
+	+	1	71
+	+	1	0
+	+	1	38
+	+	1	0
+	+	1	9
+	+	1	0
+	+	1	83
+	+	1	0
+	+	1	49
+	+	1	9
+	+	1	0
+	+	17	0
+	+	11	0
+	+	18	0
+	+	14	0
+	+	17	0
+	+	22	0
+	+	14	61
+	+	15	91
+	+	16	33
+	+	10	19
+	+	12	65
+	+	16	30
+	+	15	18
+	+	12	0
+	+	22	0
+
+> ~/.config/setup.bash
+	*	1727873267	0
+	"	1	0
+	.	62	0
+	+	18	0
+	+	13	54
+	+	35	0
+	+	38	28
+	+	37	0
+	+	38	1
+	+	38	0
+	+	38	5
+	+	37	1
+	+	38	0
+	+	37	0
+	+	35	0
+	+	17	23
+	+	18	0
+	+	15	25
+	+	17	0
+	+	34	37
+	+	34	1
+	+	34	0
+	+	62	33
+	+	62	51
+	+	62	0
+	+	60	0
+	+	62	0
+	+	62	1
+	+	62	0
+	+	62	1
+	+	62	38
+	+	63	0
+	+	62	4
+	+	62	16
+	+	62	0
+	+	61	0
+	+	62	1
+	+	63	53
+	+	63	0
+	+	62	0
+
+> ~/bash/insert_oldfiles.bash
+	*	1727873250	0
+	"	1	0
+	.	10	0
+	+	1	33
+	+	1	14
+	+	1	13
+	+	1	134
+	+	1	0
+	+	1	32
+	+	1	0
+	+	1	32
+	+	1	45
+	+	1	88
+	+	1	52
+	+	1	9
+	+	1	0
+	+	1	10
+	+	1	27
+	+	1	0
+	+	1	37
+	+	1	0
+	+	1	2
+	+	1	0
+	+	1	10
+	+	1	0
+	+	1	1
+	+	1	0
+	+	1	1
+	+	1	0
+	+	1	10
+	+	1	0
+	+	2	0
+	+	10	0
+
+> ~/.config/functions.fish
+	*	1727872985	0
+	"	96	4
+	^	32	52
+	.	52	0
+	+	56	0
+	+	56	46
+	+	56	17
+	+	56	14
+	+	56	0
+	+	56	9
+	+	56	0
+	+	56	39
+	+	56	17
+	+	56	0
+	+	56	63
+	+	56	29
+	+	56	0
+	+	56	29
+	+	56	0
+	+	56	8
+	+	56	28
+	+	56	45
+	+	56	14
+	+	56	0
+	+	78	0
+	+	67	0
+	+	78	0
+	+	66	0
+	+	67	0
+	+	78	0
+	+	79	23
+	+	84	0
+	+	78	0
+	+	66	0
+	+	67	0
+	+	78	0
+	+	84	0
+	+	78	8
+	+	78	0
+	+	78	10
+	+	72	0
+	+	66	0
+	+	58	0
+	+	66	0
+	+	56	0
+	+	57	0
+	+	65	19
+	+	87	4
+	+	88	3
+	+	93	20
+	+	102	0
+	+	90	26
+	+	93	4
+	+	102	0
+	+	94	15
+	+	99	46
+	+	101	0
+	+	99	8
+	+	99	16
+	+	100	25
+	+	100	0
+	+	93	18
+	+	94	4
+	+	93	20
+	+	98	0
+	+	99	4
+	+	100	4
+	+	99	49
+	+	97	4
+	+	99	35
+	+	56	74
+	+	1	29
+	+	4	23
+	+	1	0
+	+	28	0
+	+	27	0
+	+	29	29
+	+	32	0
+	+	4	45
+	+	4	0
+	+	21	27
+	+	51	27
+	+	32	51
+	+	51	27
+	+	52	0
+
+> ~/bash/pwd-oldfiles.bash
+	*	1727866239	0
+	"	1	0
+	^	2	120
+	.	2	119
+	+	1	0
+	+	1	10
+	+	1	0
+	+	1	1
+	+	1	0
+	+	1	71
+	+	1	0
+	+	2	53
+	+	1	0
+	+	6	5
+	+	10	7
+	+	11	0
+	+	12	0
+	+	4	0
+	+	5	47
+	+	2	0
+	+	2	119
+
+> ~/.config/bindings.inputrc
+	*	1727866123	0
+	"	1	0
+	^	16	30
+	.	16	29
+	+	16	29
+
+> ~/.config/load_completions.bash
+	*	1727866106	0
+	"	1	0
+	^	17	48
+	.	13	0
+	+	8	23
+	+	2	0
+	+	10	0
+	+	5	0
+	+	9	0
+	+	6	13
+	+	7	43
+	+	7	36
+	+	7	0
+	+	6	0
+	+	7	0
+	+	8	0
+	+	17	41
+	+	12	63
+	+	17	47
+	+	13	0
+
+> ~/bash/todo.txt
+	*	1727861125	0
+	"	2	1
+	^	2	2
+	.	2	2
+	+	2	119
+	+	1	0
+	+	2	2
+
+> ~/.config/tmux/colon_bind.bash
+	*	1727861081	0
+	"	1	0
+	.	1	0
+	+	1	36
+	+	1	0
+
+> ~/.vim/vimrc
+	*	1727860722	0
+	"	1128	0
+	^	572	6
+	.	572	5
+	+	1	41
+	+	1	44
+	+	1	40
+	+	1	28
+	+	1	0
+	+	1	11
+	+	1	18
+	+	1	43
+	+	1	64
+	+	1	54
+	+	1	0
+	+	1	31
+	+	1	0
+	+	1	6
+	+	1	0
+	+	1	1
+	+	1	0
+	+	1	80
+	+	1	75
+	+	1	0
+	+	1	52
+	+	1	41
+	+	1	0
+	+	1	26
+	+	1	0
+	+	1	22
+	+	1	25
+	+	1	0
+	+	1	57
+	+	1	59
+	+	1	55
+	+	1	0
+	+	1	25
+	+	1	1
+	+	1	0
+	+	1	24
+	+	1	0
+	+	1	12
+	+	1	0
+	+	1	49
+	+	1	0
+	+	1	13
+	+	1	0
+	+	1	16
+	+	1	0
+	+	1	25
+	+	1	3
+	+	1	5
+	+	1	16
+	+	1	0
+	+	1	16
+	+	1	0
+	+	1	5
+	+	1	3
+	+	1	0
+	+	1	4
+	+	1	0
+	+	1	40
+	+	1	36
+	+	1	0
+	+	1	26
+	+	1	9
+	+	1	0
+	+	1	31
+	+	1	4
+	+	1	30
+	+	1	4
+	+	1	0
+	+	1	5
+	+	1	8
+	+	1	29
+	+	1	33
+	+	1	1
+	+	1	21
+	+	1	20
+	+	1	1
+	+	1	0
+	+	120	0
+	+	424	0
+	+	1146	0
+	+	572	5
+
+> ~/tooling/docs/rg.man
+	*	1727860492	0
+	"	733	55
+
+> ~/.vim/plugin/oldfiles.vim
+	*	1727860384	0
+	"	73	25
+	^	63	34
+	.	63	33
+	+	84	0
+	+	49	10
+	+	45	0
+	+	47	16
+	+	47	0
+	+	46	0
+	+	81	0
+	+	65	10
+	+	58	21
+	+	60	8
+	+	63	63
+	+	59	99
+	+	63	30
+	+	71	0
+	+	59	0
+	+	71	0
+	+	70	26
+	+	74	4
+	+	77	10
+	+	84	40
+	+	67	26
+	+	80	25
+	+	83	48
+	+	73	23
+	+	84	3
+	+	85	0
+	+	84	22
+	+	80	15
+	+	59	23
+	+	59	80
+	+	59	20
+	+	59	51
+	+	70	5
+	+	69	5
+	+	68	5
+	+	68	0
+	+	83	51
+	+	70	0
+	+	83	54
+	+	59	20
+	+	63	33
+
+> ~/tooling/fzf-command-samples.txt
+	*	1727860330	0
+	"	24	23
+
+> ~/bash/oldfiles.bash
+	*	1727860203	0
+	"	2	0
+	^	2	99
+	.	2	98
+	+	2	1
+	+	2	12
+	+	2	49
+	+	2	12
+	+	2	0
+	+	3	1
+	+	1	10
+	+	2	62
+	+	2	34
+	+	2	1
+	+	2	16
+	+	2	0
+	+	6	33
+	+	2	68
+	+	3	66
+	+	3	0
+	+	2	13
+	+	3	23
+	+	4	51
+	+	6	28
+	+	14	22
+	+	2	107
+	+	8	0
+	+	5	0
+	+	1	0
+	+	7	0
+	+	2	98
+
+> ~/.config/fzf/.fzfrc
+	*	1727860183	0
+	"	13	0
+	.	13	0
+	+	2	0
+	+	2	1
+	+	2	37
+	+	2	0
+	+	2	1
+	+	4	0
+	+	9	210
+	+	9	0
+	+	9	166
+	+	9	1
+	+	9	17
+	+	9	0
+	+	10	0
+	+	9	23
+	+	9	14
+	+	9	34
+	+	6	0
+	+	2	0
+	+	9	20
+	+	6	1
+	+	9	0
+	+	3	0
+	+	4	0
+	+	9	0
+	+	9	21
+	+	7	1
+	+	9	0
+	+	9	58
+	+	9	0
+	+	5	0
+	+	9	0
+	+	1	0
+	+	9	0
+	+	8	0
+	+	12	0
+	+	13	0
+	+	12	0
+	+	13	0
+
+> ~/.config/tmux/tmux.conf
+	*	1727860167	0
+	"	54	0
+	.	58	0
+	+	15	30
+	+	26	1
+	+	15	37
+	+	15	1
+	+	28	0
+	+	27	34
+	+	1	0
+	+	3	0
+	+	28	0
+	+	26	0
+	+	15	0
+	+	26	1
+	+	15	0
+	+	18	39
+	+	17	19
+	+	18	45
+	+	26	0
+	+	21	1
+	+	27	0
+	+	28	0
+	+	21	0
+	+	26	0
+	+	24	36
+	+	25	0
+	+	23	43
+	+	23	39
+	+	23	82
+	+	24	69
+	+	23	0
+	+	25	0
+	+	28	62
+	+	25	0
+	+	28	0
+	+	28	64
+	+	3	19
+	+	28	0
+	+	30	32
+	+	23	44
+	+	24	30
+	+	21	66
+	+	23	43
+	+	24	30
+	+	24	0
+	+	18	34
+	+	21	73
+	+	34	27
+	+	35	20
+	+	36	21
+	+	37	21
+	+	34	7
+	+	39	82
+	+	37	50
+	+	38	48
+	+	39	54
+	+	36	51
+	+	37	51
+	+	38	49
+	+	36	52
+	+	42	45
+	+	44	0
+	+	45	50
+	+	46	0
+	+	40	0
+	+	2	10
+	+	2	5
+	+	2	0
+	+	7	2
+	+	1	0
+	+	3	9
+	+	5	0
+	+	1	34
+	+	7	0
+	+	1	0
+	+	5	0
+	+	8	0
+	+	2	0
+	+	7	0
+	+	2	0
+	+	8	89
+	+	8	0
+	+	3	6
+	+	5	10
+	+	3	10
+	+	32	20
+	+	33	0
+	+	1	0
+	+	12	41
+	+	10	119
+	+	13	0
+	+	13	1
+	+	8	0
+	+	13	0
+	+	11	147
+	+	11	0
+	+	8	33
+	+	8	0
+	+	56	56
+	+	58	20
+	+	58	0
+	a	1	9
+	b	1	9
+
+> ~/tooling/expansions.txt
+	*	1727843767	0
+	"	1	0
+	^	1	16
+	.	1	15
+	+	5	15
+	+	2	0
+	+	1	15
+
+> ~/tooling/remaps.txt
+	*	1727843344	0
+	"	1	0
+	.	1	0
+	+	15	0
+	+	10	0
+	+	8	3
+	+	13	19
+	+	8	11
+	+	20	17
+	+	18	22
+	+	21	5
+	+	21	0
+	+	22	20
+	+	21	0
+	+	23	0
+	+	20	0
+	+	19	0
+	+	15	0
+	+	14	0
+	+	10	0
+	+	9	0
+	+	7	0
+	+	6	35
+	+	2	0
+	+	1	19
+	+	1	0
+
+> ~/tooling/remaps-hjkl-jkl;.txt
+	*	1727842971	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/tooling/remaps-readline-emacs.txt
+	*	1727842965	0
+	"	1	0
+	.	1	0
+	+	1	3
+	+	1	0
+	+	1	6
+	+	1	0
+	+	1	8
+	+	1	0
+
+> ~/tooling/hjkl-jkl;.txt
+	*	1727842763	0
+	"	1	0
+	^	2	32
+	.	3	0
+	+	2	8
+	+	2	32
+	+	1	39
+	+	2	32
+	+	1	0
+	+	2	32
+	+	3	0
+
+> ~/.vim/mappings.vim
+	*	1727842758	0
+	"	24	4
+	^	24	5
+	.	24	4
+	+	2	13
+	+	2	0
+	+	5	0
+	+	2	0
+	+	2	13
+	+	3	0
+	+	5	0
+	+	5	24
+	+	5	25
+	+	5	0
+	+	1	0
+	+	6	55
+	+	24	25
+	+	25	17
+	+	24	25
+	+	25	25
+	+	24	25
+	+	25	25
+	+	24	5
+	+	25	5
+	+	24	0
+	+	25	0
+	+	24	7
+	+	25	16
+	+	14	1
+	+	11	2
+	+	16	1
+	+	25	20
+	+	16	2
+	+	24	0
+	+	23	0
+	+	22	0
+	+	20	4
+	+	20	0
+	+	20	1
+	+	20	0
+	+	16	6
+	+	20	0
+	+	16	6
+	+	20	0
+	+	16	7
+	+	20	0
+	+	16	6
+	+	20	0
+	+	16	5
+	+	20	0
+	+	25	70
+	+	25	34
+	+	25	0
+	+	25	64
+	+	20	1
+	+	14	35
+	+	11	35
+	+	7	35
+	+	14	0
+	+	12	0
+	+	12	57
+	+	12	0
+	+	1	0
+	+	12	33
+	+	1	0
+	+	12	33
+	+	1	0
+	+	12	56
+	+	1	0
+	+	20	0
+	+	12	55
+	+	22	101
+	+	21	36
+	+	20	0
+	+	17	47
+	+	19	0
+	+	17	36
+	+	19	0
+	+	17	0
+	+	15	0
+	+	16	49
+	+	17	53
+	+	17	0
+	+	25	0
+	+	10	0
+	+	11	0
+	+	16	1
+	+	17	1
+	+	17	0
+	+	22	0
+	+	18	45
+	+	26	0
+	+	22	0
+	+	18	23
+	+	5	0
+	+	12	56
+	+	12	0
+	+	9	54
+	+	17	53
+	+	24	4
+
+> ~/.vim/plugin/rename.vim
+	*	1727842705	0
+	"	24	46
+	^	25	9
+	.	25	0
+	+	1	25
+	+	5	0
+	+	30	1
+	+	31	7
+	+	4	0
+	+	4	22
+	+	3	31
+	+	2	21
+	+	3	24
+	+	4	0
+	+	32	0
+	+	16	0
+	+	18	0
+	+	17	10
+	+	18	0
+	+	20	0
+	+	22	0
+	+	23	21
+	+	24	0
+	+	25	0
+
+> ~/.vim/plugin/tmux.vim
+	*	1727839524	0
+	"	23	8
+	^	23	9
+	.	23	8
+	+	4	24
+	+	12	11
+	+	2	64
+	+	13	0
+	+	21	5
+	+	17	0
+	+	16	19
+	+	22	0
+	+	15	28
+	+	23	8
+
+> ~/tmp/tmux-pid.bash
+	*	1727838999	0
+	"	14	0
+	^	14	0
+	.	13	4
+	+	13	4
+
+> /usr/share/vim/vim90/doc/remote.txt
+	*	1727838079	0
+	"	141	10
+
+> /usr/share/vim/vim90/doc/eval.txt
+	*	1727838058	0
+	"	2411	38
+
+> ~/pyscripts/viewlog.py
+	*	1727836757	0
+	"	123	4
+	^	259	16
+	.	259	15
+	+	127	0
+	+	114	0
+	+	123	100
+	+	124	96
+	+	125	71
+	+	126	0
+	+	115	30
+	+	125	56
+	+	127	0
+	+	119	0
+	+	126	81
+	+	126	0
+	+	127	0
+	+	157	68
+	+	97	115
+	+	97	0
+	+	97	115
+	+	122	37
+	+	121	0
+	+	91	33
+	+	259	0
+	+	259	48
+	+	155	73
+	+	259	0
+	+	260	0
+	+	258	0
+	+	5	0
+	+	255	3
+	+	255	18
+	+	255	0
+	+	4	0
+	+	140	0
+	+	142	0
+	+	151	0
+	+	247	0
+	+	227	0
+	+	231	0
+	+	191	0
+	+	232	0
+	+	216	0
+	+	195	0
+	+	203	0
+	+	191	0
+	+	195	0
+	+	203	0
+	+	198	0
+	+	196	0
+	+	197	0
+	+	195	0
+	+	196	0
+	+	129	0
+	+	159	0
+	+	158	0
+	+	159	0
+	+	129	0
+	+	141	0
+	+	140	0
+	+	145	0
+	+	151	0
+	+	156	0
+	+	159	0
+	+	119	0
+	+	116	40
+	+	120	0
+	+	117	49
+	+	120	0
+	+	122	0
+	+	119	26
+	+	126	30
+	+	126	0
+	+	120	0
+	+	119	0
+	+	126	0
+	+	121	0
+	+	120	26
+	+	121	0
+	+	122	0
+	+	126	0
+	+	124	0
+	+	120	0
+	+	122	0
+	+	123	0
+	+	118	43
+	+	124	56
+	+	123	0
+	+	124	0
+	+	123	0
+	+	124	0
+	+	156	0
+	+	196	0
+	+	258	0
+	+	260	21
+	+	8	23
+	+	9	16
+	+	260	0
+	+	259	15
+	a	257	13
+	b	91	33
+
+> ~/pyscripts/.envrc
+	*	1727836572	0
+	"	1	0
+	^	3	18
+	.	3	17
+	+	1	13
+	+	3	0
+	+	2	1
+	+	3	17
+
+> ~/bash/logs/gh-timeago-updates.log
+	*	1727836562	0
+	"	3015	0
+	.	1	0
+	+	1	0
+
+> ~/.config/yazi/theme.toml
+	*	1727788090	0
+	"	1	0
+	^	151	7
+	.	151	6
+	+	1	6
+	+	1	92
+	+	1	15
+	+	1	92
+	+	1	15
+	+	1	6
+	+	1	15
+	+	151	6
+
+> /usr/share/vim/vim90/doc/term.txt
+	*	1727788026	0
+	"	153	48
+
+> ~/tmp/file.toml
+	*	1727787585	0
+	"	1	0
+	^	1	20
+	.	1	0
+	+	150	93
+	+	1	0
+
+> ~/.config/yazi/keymap.toml
+	*	1727786744	0
+	"	1	0
+	^	30	7
+	.	30	6
+	+	1	59
+	+	3	9
+	+	34	3
+	+	34	0
+	+	11	0
+	+	6	3
+	+	10	69
+	+	9	4
+	+	6	0
+	+	11	0
+	+	32	63
+	+	30	16
+	+	33	0
+	+	16	0
+	+	6	0
+	+	9	0
+	+	16	0
+	+	1	0
+	+	32	0
+	+	6	0
+	+	8	0
+	+	6	0
+	+	7	0
+	+	4	4
+	+	7	14
+	+	6	14
+	+	4	0
+	+	16	14
+	+	17	14
+	+	23	14
+	+	24	14
+	+	9	14
+	+	10	14
+	+	6	0
+	+	31	14
+	+	32	14
+	+	4	0
+	+	34	0
+	+	1	0
+	+	5	6
+	+	15	6
+	+	22	6
+	+	30	6
+
+> /usr/share/vim/vim90/doc/help.txt
+	*	1727783967	0
+	"	1	0
+
+> ~/pyscripts/tmux-repos.py
+	*	1727783936	0
+	"	1	0
+	.	53	0
+	+	78	0
+	+	3	0
+	+	80	34
+	+	113	0
+	+	80	54
+	+	81	4
+	+	91	11
+	+	83	47
+	+	91	8
+	+	96	43
+	+	100	25
+	+	93	46
+	+	96	8
+	+	93	14
+	+	94	19
+	+	96	0
+	+	94	26
+	+	95	27
+	+	100	56
+	+	113	0
+	+	84	13
+	+	102	30
+	+	103	25
+	+	104	27
+	+	105	38
+	+	106	0
+	+	113	0
+	+	91	25
+	+	108	12
+	+	113	0
+	+	10	38
+	+	108	10
+	+	113	0
+	+	11	10
+	+	109	44
+	+	108	10
+	+	109	51
+	+	113	0
+	+	91	41
+	+	5	0
+	+	92	45
+	+	107	10
+	+	14	7
+	+	12	21
+	+	14	47
+	+	33	26
+	+	18	18
+	+	19	18
+	+	67	0
+	+	68	78
+	+	33	0
+	+	30	28
+	+	30	0
+	+	66	0
+	+	33	19
+	+	91	52
+	+	86	40
+	+	93	0
+	+	100	0
+	+	90	60
+	+	101	0
+	+	97	10
+	+	98	21
+	+	99	19
+	+	91	48
+	+	84	20
+	+	84	43
+	+	85	58
+	+	86	0
+	+	86	12
+	+	90	59
+	+	88	17
+	+	86	13
+	+	90	0
+	+	89	33
+	+	63	0
+	+	42	0
+	+	1	0
+	+	40	20
+	+	41	43
+	+	5	0
+	+	1	28
+	+	5	0
+	+	2	12
+	+	4	0
+	+	84	25
+	+	86	25
+	+	108	28
+	+	79	28
+	+	112	4
+	+	113	0
+	+	63	0
+	+	35	0
+	+	39	0
+	+	63	0
+	+	43	0
+	+	118	25
+	+	52	0
+	+	53	0
+
+> ~/pyscripts/python-error-library-stats.py
+	*	1727782598	0
+	"	58	0
+	^	62	62
+	.	62	61
+	+	7	38
+	+	50	32
+	+	56	37
+	+	79	0
+	+	81	22
+	+	51	42
+	+	53	25
+	+	54	61
+	+	56	23
+	+	50	0
+	+	51	48
+	+	54	45
+	+	51	0
+	+	52	28
+	+	55	62
+	+	56	32
+	+	52	28
+	+	55	29
+	+	52	28
+	+	79	0
+	+	56	35
+	+	50	0
+	+	58	19
+	+	81	5
+	+	82	21
+	+	64	4
+	+	70	4
+	+	63	0
+	+	79	67
+	+	1	0
+	+	79	0
+	+	79	67
+	+	79	16
+	+	79	0
+	+	59	32
+	+	63	123
+	+	1	0
+	+	63	102
+	+	59	17
+	+	63	0
+	+	60	24
+	+	60	0
+	+	59	0
+	+	79	0
+	+	70	51
+	+	79	15
+	+	70	9
+	+	79	0
+	+	79	13
+	+	70	47
+	+	70	0
+	+	79	24
+	+	59	0
+	+	70	64
+	+	71	70
+	+	79	0
+	+	72	62
+	+	73	63
+	+	78	0
+	+	72	60
+	+	73	62
+	+	77	0
+	+	76	21
+	+	74	0
+	+	69	0
+	+	72	23
+	+	72	0
+	+	62	0
+	+	82	0
+	+	81	4
+	+	20	19
+	+	22	48
+	+	22	25
+	+	20	0
+	+	21	16
+	+	22	20
+	+	21	20
+	+	22	22
+	+	21	16
+	+	22	30
+	+	26	15
+	+	23	0
+	+	26	0
+	+	25	15
+	+	24	23
+	+	15	0
+	+	10	8
+	+	13	0
+	+	14	3
+	+	17	76
+	+	82	4
+	+	81	4
+	+	62	54
+	+	68	0
+	+	11	13
+	+	66	8
+	+	67	27
+	+	62	56
+	+	61	18
+	+	62	61
+
+> ~/pyscripts/data/tmux-plugins.json
+	*	1727782577	0
+	"	1	0
+
+> ~/pyscripts/data/python-error-library-repo-stats.json
+	*	1727782574	0
+	"	1	0
+
+> ~/pyscripts/requirements.txt
+	*	1727782049	0
+	"	16	8
+	^	16	9
+	.	16	8
+	+	2	4
+	+	1	5
+	+	4	10
+	+	5	7
+	+	6	5
+	+	7	6
+	+	10	8
+	+	9	0
+	+	8	0
+	+	12	3
+	+	14	23
+	+	14	0
+	+	16	8
+
+> ~/pyscripts/secrets.env
+	*	1727781502	0
+	"	2	8
+	^	2	9
+	.	2	8
+	+	1	15
+	+	2	8
+
+> ~/tmp/tmux-plugins.txt
+	*	1727781300	0
+	"	1	0
+	.	93	0
+	+	1	110
+	+	87	0
+	+	1	0
+	+	93	0
+
+> ~/.config/tmux/tmux_toggle.bash
+	*	1727780817	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/.config/alias.bash
+	*	1727777386	0
+	"	1	0
+	^	17	16
+	.	17	15
+	+	26	32
+	+	16	72
+	+	18	38
+	+	30	0
+	+	28	0
+	+	15	0
+	+	33	0
+	+	31	8
+	+	28	0
+	+	31	33
+	+	32	6
+	+	31	1
+	+	33	0
+	+	32	108
+	+	32	6
+	+	30	1
+	+	18	162
+	+	18	14
+	+	18	163
+	+	22	169
+	+	22	0
+	+	18	58
+	+	33	0
+	+	19	0
+	+	20	17
+	+	21	6
+	+	11	58
+	+	12	26
+	+	21	54
+	+	16	41
+	+	17	15
+
+> ~/pyscripts/print_todo.py
+	*	1727776298	0
+	"	61	8
+	.	154	0
+	+	97	17
+	+	155	25
+	+	102	0
+	+	100	0
+	+	97	0
+	+	90	53
+	+	89	72
+	+	97	48
+	+	90	0
+	+	154	0
+	+	155	0
+	+	80	0
+	+	93	72
+	+	150	0
+	+	89	52
+	+	136	13
+	+	150	0
+	+	149	92
+	+	150	12
+	+	150	0
+	+	146	8
+	+	74	64
+	+	78	0
+	+	149	40
+	+	74	49
+	+	74	36
+	+	75	0
+	+	74	0
+	+	75	37
+	+	77	16
+	+	76	27
+	+	70	16
+	+	71	16
+	+	72	16
+	+	73	0
+	+	155	0
+	+	154	0
+	+	1	0
+	+	150	0
+	+	46	0
+	+	115	0
+	+	154	0
+	+	116	0
+	+	131	0
+	+	137	0
+	+	131	0
+	+	137	53
+	+	139	36
+	+	149	0
+	+	150	0
+	+	149	0
+	+	150	0
+	+	154	0
+	+	115	0
+	+	110	0
+	+	149	0
+	+	115	29
+	+	149	0
+	+	124	0
+	+	124	34
+	+	124	0
+	+	125	15
+	+	125	0
+	+	122	0
+	+	125	35
+	+	125	0
+	+	67	23
+	+	60	75
+	+	129	89
+	+	146	59
+	+	146	17
+	+	146	14
+	+	146	18
+	+	147	33
+	+	146	14
+	+	147	0
+	+	146	14
+	+	147	20
+	+	148	49
+	+	146	0
+	+	147	56
+	+	148	0
+	+	143	36
+	+	144	132
+	+	145	12
+	+	146	0
+	+	147	43
+	+	111	0
+	+	57	0
+	+	53	46
+	+	57	33
+	+	57	26
+	+	54	7
+	+	54	25
+	+	56	21
+	+	57	0
+	+	56	16
+	+	93	60
+	+	155	0
+	+	154	0
+	a	114	16
+
+> ~/prompts/tmux-status-line-properties.txt
+	*	1727753513	0
+	"	1	0
+	^	6	29
+	.	6	28
+	+	5	26
+	+	6	28
+
+> ~/hateoas/ui-components-css/static/css-themes/dark-gray-mono.css
+	*	1727664349	0
+	"	1	0
+	.	32	0
+	+	21	0
+	+	21	2
+	+	21	19
+	+	21	0
+	+	21	18
+	+	21	0
+	+	33	0
+	+	64	32
+	+	60	65
+	+	64	4
+	+	64	0
+	+	64	24
+	+	64	0
+	+	64	22
+	+	64	0
+	+	61	0
+	+	62	25
+	+	59	0
+	+	58	0
+	+	57	58
+	+	21	0
+	+	17	0
+	+	21	0
+	+	75	0
+	+	10	0
+	+	31	0
+	+	18	0
+	+	20	0
+	+	32	0
+
+> /proc/34992/fd/63
+	*	1727664348	0
+	"	1	0
+
+> /proc/33923/fd/63
+	*	1727664129	0
+	"	1	0
 
 > ~/.config/starship/starship.toml
 	*	1727663730	0
@@ -15885,37 +17581,6 @@ $
 	+	1	0
 	+	2	21
 
-> ~/.config/tmux/tmux.conf
-	*	1727658022	0
-	"	8	9
-	^	22	0
-	.	8	9
-	+	2	82
-	+	2	0
-	+	8	25
-	+	8	0
-	+	21	1
-	+	8	9
-	a	8	9
-	b	8	9
-
-> ~/.config/setup.bash
-	*	1727657808	0
-	"	1	0
-	.	31	0
-	+	14	0
-	+	13	54
-	+	31	0
-	+	34	28
-	+	33	0
-	+	34	1
-	+	34	0
-	+	34	5
-	+	33	1
-	+	34	0
-	+	33	0
-	+	31	0
-
 > ~/cd
 	*	1727657735	0
 	"	1	0
@@ -15981,214 +17646,6 @@ $
 	+	125	17
 	+	126	18
 	+	127	0
-
-> ~/.config/fzf/.fzfrc
-	*	1727583003	0
-	"	12	15
-	^	12	45
-	.	12	0
-	+	2	0
-	+	2	1
-	+	2	37
-	+	2	0
-	+	2	1
-	+	4	0
-	+	9	210
-	+	9	0
-	+	9	166
-	+	9	1
-	+	9	17
-	+	9	0
-	+	10	0
-	+	9	23
-	+	9	14
-	+	9	34
-	+	6	0
-	+	2	0
-	+	9	20
-	+	6	1
-	+	9	0
-	+	3	0
-	+	4	0
-	+	9	0
-	+	9	21
-	+	7	1
-	+	9	0
-	+	9	58
-	+	9	0
-	+	5	0
-	+	9	0
-	+	1	0
-	+	9	0
-	+	8	0
-	+	12	0
-
-> ~/.vim/plugin/oldfiles.vim
-	*	1727582995	0
-	"	83	54
-	^	83	55
-	.	83	54
-	+	84	0
-	+	49	10
-	+	45	0
-	+	47	16
-	+	47	0
-	+	46	0
-	+	81	0
-	+	65	10
-	+	58	21
-	+	60	8
-	+	63	63
-	+	59	99
-	+	63	30
-	+	71	0
-	+	59	0
-	+	71	0
-	+	70	26
-	+	74	4
-	+	77	10
-	+	84	40
-	+	67	26
-	+	80	25
-	+	83	48
-	+	73	23
-	+	84	3
-	+	85	0
-	+	84	22
-	+	80	15
-	+	59	23
-	+	59	80
-	+	59	20
-	+	59	51
-	+	70	5
-	+	69	5
-	+	68	5
-	+	68	0
-	+	83	51
-	+	70	0
-	+	83	54
-
-> ~/.vim/mappings.vim
-	*	1727582003	0
-	"	17	52
-	^	9	55
-	.	17	53
-	+	2	13
-	+	2	0
-	+	5	0
-	+	2	0
-	+	2	13
-	+	3	0
-	+	5	0
-	+	5	24
-	+	5	25
-	+	5	0
-	+	1	0
-	+	6	55
-	+	24	25
-	+	25	17
-	+	24	25
-	+	25	25
-	+	24	25
-	+	25	25
-	+	24	5
-	+	25	5
-	+	24	0
-	+	25	0
-	+	24	7
-	+	25	16
-	+	14	1
-	+	11	2
-	+	16	1
-	+	25	20
-	+	16	2
-	+	24	0
-	+	23	0
-	+	22	0
-	+	20	4
-	+	20	0
-	+	20	1
-	+	20	0
-	+	16	6
-	+	20	0
-	+	16	6
-	+	20	0
-	+	16	7
-	+	20	0
-	+	16	6
-	+	20	0
-	+	16	5
-	+	20	0
-	+	25	70
-	+	25	34
-	+	25	0
-	+	25	64
-	+	20	1
-	+	14	35
-	+	11	35
-	+	7	35
-	+	14	0
-	+	12	0
-	+	12	57
-	+	12	0
-	+	1	0
-	+	12	33
-	+	1	0
-	+	12	33
-	+	1	0
-	+	12	56
-	+	1	0
-	+	20	0
-	+	12	55
-	+	22	101
-	+	21	36
-	+	20	0
-	+	17	47
-	+	19	0
-	+	17	36
-	+	19	0
-	+	17	0
-	+	15	0
-	+	16	49
-	+	17	53
-	+	17	0
-	+	25	0
-	+	10	0
-	+	11	0
-	+	16	1
-	+	17	1
-	+	17	0
-	+	22	0
-	+	18	45
-	+	26	0
-	+	22	0
-	+	18	23
-	+	5	0
-	+	12	56
-	+	12	0
-	+	9	54
-	+	17	53
-
-> ~/bash/pwd-oldfiles.bash
-	*	1727581711	0
-	"	2	0
-	.	2	0
-	+	1	0
-	+	1	10
-	+	1	0
-	+	1	1
-	+	1	0
-	+	1	71
-	+	1	0
-	+	2	53
-	+	1	0
-	+	6	5
-	+	10	7
-	+	11	0
-	+	12	0
-	+	4	0
-	+	5	47
-	+	2	0
 
 > ~/bash/todo_vim_fzf_select.bash
 	*	1727581698	0
@@ -16258,36 +17715,6 @@ $
 	+	13	0
 	+	1	0
 	+	26	0
-
-> ~/bash/oldfiles.bash
-	*	1727581670	0
-	"	1	0
-	^	2	108
-	.	5	0
-	+	2	1
-	+	2	12
-	+	2	49
-	+	2	12
-	+	2	0
-	+	3	1
-	+	1	10
-	+	2	62
-	+	2	34
-	+	2	1
-	+	2	16
-	+	2	0
-	+	6	33
-	+	2	68
-	+	3	66
-	+	3	0
-	+	2	13
-	+	3	23
-	+	4	51
-	+	6	28
-	+	13	22
-	+	2	107
-	+	7	0
-	+	5	0
 
 > ~/bash/fzf_select.bash
 	*	1727581636	0
@@ -16400,112 +17827,6 @@ $
 	+	2	0
 	+	1	0
 	+	2	176
-
-> ~/pyscripts/print_todo.py
-	*	1727508914	0
-	"	1	0
-	.	154	0
-	+	97	17
-	+	155	25
-	+	102	0
-	+	100	0
-	+	97	0
-	+	90	53
-	+	89	72
-	+	97	48
-	+	90	0
-	+	154	0
-	+	155	0
-	+	80	0
-	+	93	72
-	+	150	0
-	+	89	52
-	+	136	13
-	+	150	0
-	+	149	92
-	+	150	12
-	+	150	0
-	+	146	8
-	+	74	64
-	+	78	0
-	+	149	40
-	+	74	49
-	+	74	36
-	+	75	0
-	+	74	0
-	+	75	37
-	+	77	16
-	+	76	27
-	+	70	16
-	+	71	16
-	+	72	16
-	+	73	0
-	+	155	0
-	+	154	0
-	+	1	0
-	+	150	0
-	+	46	0
-	+	115	0
-	+	154	0
-	+	116	0
-	+	131	0
-	+	137	0
-	+	131	0
-	+	137	53
-	+	139	36
-	+	149	0
-	+	150	0
-	+	149	0
-	+	150	0
-	+	154	0
-	+	115	0
-	+	110	0
-	+	149	0
-	+	115	29
-	+	149	0
-	+	124	0
-	+	124	34
-	+	124	0
-	+	125	15
-	+	125	0
-	+	122	0
-	+	125	35
-	+	125	0
-	+	67	23
-	+	60	75
-	+	129	89
-	+	146	59
-	+	146	17
-	+	146	14
-	+	146	18
-	+	147	33
-	+	146	14
-	+	147	0
-	+	146	14
-	+	147	20
-	+	148	49
-	+	146	0
-	+	147	56
-	+	148	0
-	+	143	36
-	+	144	132
-	+	145	12
-	+	146	0
-	+	147	43
-	+	111	0
-	+	57	0
-	+	53	46
-	+	57	33
-	+	57	26
-	+	54	7
-	+	54	25
-	+	56	21
-	+	57	0
-	+	56	16
-	+	93	60
-	+	155	0
-	+	154	0
-	a	114	16
 
 > ~/.vim/plugin/print-personal-mappings.vim
 	*	1727446668	0
@@ -16740,42 +18061,6 @@ $
 	+	1	1
 	+	2	0
 	+	1	0
-
-> ~/.config/alias.bash
-	*	1727446299	0
-	"	16	41
-	^	20	55
-	.	16	41
-	+	25	32
-	+	16	72
-	+	17	38
-	+	29	0
-	+	27	0
-	+	15	0
-	+	32	0
-	+	30	8
-	+	27	0
-	+	30	33
-	+	31	6
-	+	30	1
-	+	32	0
-	+	31	108
-	+	31	6
-	+	29	1
-	+	17	162
-	+	17	14
-	+	17	163
-	+	21	169
-	+	21	0
-	+	17	58
-	+	32	0
-	+	18	0
-	+	19	17
-	+	20	6
-	+	11	58
-	+	12	26
-	+	20	54
-	+	16	41
 
 > ~/.config/shell_data/fish_history
 	*	1727445919	0
@@ -17057,37 +18342,6 @@ $
 	+	9	4
 	+	8	4
 
-> ~/hateoas/ui-components-css/static/css-themes/dark-gray-mono.css
-	*	1727364167	0
-	"	31	0
-	.	29	0
-	+	19	0
-	+	19	2
-	+	19	19
-	+	19	0
-	+	19	18
-	+	19	0
-	+	30	0
-	+	61	32
-	+	57	65
-	+	61	4
-	+	61	0
-	+	61	24
-	+	61	0
-	+	61	22
-	+	61	0
-	+	58	0
-	+	59	25
-	+	56	0
-	+	55	0
-	+	54	58
-	+	19	0
-	+	17	0
-	+	19	0
-	+	72	0
-	+	10	0
-	+	29	0
-
 > ~/hateoas/fd
 	*	1727362326	0
 	"	1	0
@@ -17251,10 +18505,6 @@ $
 	.	32	73
 	+	32	73
 
-> ~/tooling/fzf-command-samples.txt
-	*	1727351976	0
-	"	9	0
-
 > ~/python_common/examples/example-colors.py
 	*	1727350819	0
 	"	10	0
@@ -17369,24 +18619,6 @@ $
 	+	1	13
 	+	2	0
 	+	108	21
-
-> ~/pyscripts/requirements.txt
-	*	1727307021	0
-	"	15	0
-	.	16	0
-	+	2	4
-	+	1	5
-	+	4	10
-	+	5	7
-	+	6	5
-	+	7	6
-	+	10	8
-	+	9	0
-	+	8	0
-	+	12	3
-	+	14	23
-	+	14	0
-	+	16	0
 
 > /etc/resolv.conf
 	*	1727306833	0
@@ -17665,10 +18897,6 @@ $
 	+	14	7
 	+	14	0
 
-> ~/tooling/docs/rg.man
-	*	1727042152	0
-	"	444	9
-
 > ~/tooling/docs/fd.man
 	*	1727042009	0
 	"	171	7
@@ -17869,28 +19097,6 @@ $
 > ~/.config/bash_completions/completion-urls.afl
 	*	1727010971	0
 	"	1	0
-
-> ~/.config/load_completions.bash
-	*	1727010958	0
-	"	17	0
-	^	17	48
-	.	13	0
-	+	8	23
-	+	2	0
-	+	10	0
-	+	5	0
-	+	9	0
-	+	6	13
-	+	7	43
-	+	7	36
-	+	7	0
-	+	6	0
-	+	7	0
-	+	8	0
-	+	17	41
-	+	12	63
-	+	17	47
-	+	13	0
 
 > ~/.config/lazygit/config.yml
 	*	1726970129	0
@@ -18131,111 +19337,6 @@ $
 	+	3	0
 	+	10	3
 	+	9	82
-
-> ~/.config/setup.fish
-	*	1726356031	0
-	"	1	0
-	.	29	0
-	+	6	22
-	+	6	0
-	+	6	5
-	+	6	40
-	+	9	34
-	+	6	0
-	+	6	43
-	+	6	42
-	+	6	0
-	+	6	45
-	+	6	5
-	+	6	0
-	+	6	9
-	+	6	5
-	+	6	0
-	+	6	9
-	+	6	39
-	+	6	9
-	+	6	0
-	+	6	20
-	+	6	19
-	+	6	23
-	+	6	8
-	+	6	23
-	+	6	9
-	+	6	0
-	+	16	1
-	+	6	0
-	+	22	0
-	+	10	0
-	+	10	13
-	+	10	0
-	+	24	21
-	+	24	18
-	+	24	0
-	+	24	42
-	+	24	0
-	+	23	0
-	+	24	0
-	+	6	0
-	+	6	44
-	+	6	0
-	+	6	4
-	+	6	0
-	+	6	7
-	+	6	37
-	+	6	24
-	+	6	7
-	+	6	5
-	+	6	25
-	+	6	13
-	+	6	30
-	+	6	7
-	+	6	0
-	+	6	21
-	+	6	0
-	+	8	0
-	+	9	1
-	+	6	0
-	+	9	0
-	+	8	0
-	+	9	32
-	+	6	23
-	+	6	0
-	+	6	19
-	+	6	0
-	+	6	26
-	+	6	10
-	+	6	5
-	+	6	0
-	+	6	37
-	+	6	0
-	+	6	22
-	+	6	58
-	+	6	0
-	+	7	30
-	+	9	18
-	+	24	0
-	+	25	0
-	+	26	0
-	+	25	29
-	+	26	11
-	+	28	34
-	+	29	0
-	+	10	0
-	+	21	55
-	+	21	0
-	+	13	82
-	+	14	80
-	+	1	0
-	+	11	26
-	+	1	13
-	+	13	12
-	+	22	0
-	+	21	11
-	+	29	12
-	+	1	0
-	+	13	0
-	+	21	0
-	+	29	0
 
 > ~/pyscripts/file.py
 	*	1726262644	0
@@ -19341,93 +20442,6 @@ $
 	+	715	0
 	+	751	0
 
-> ~/.vim/vimrc
-	*	1725817078	0
-	"	571	4
-	^	572	6
-	.	572	5
-	+	1	41
-	+	1	44
-	+	1	40
-	+	1	28
-	+	1	0
-	+	1	11
-	+	1	18
-	+	1	43
-	+	1	64
-	+	1	54
-	+	1	0
-	+	1	31
-	+	1	0
-	+	1	6
-	+	1	0
-	+	1	1
-	+	1	0
-	+	1	80
-	+	1	75
-	+	1	0
-	+	1	52
-	+	1	41
-	+	1	0
-	+	1	26
-	+	1	0
-	+	1	22
-	+	1	25
-	+	1	0
-	+	1	57
-	+	1	59
-	+	1	55
-	+	1	0
-	+	1	25
-	+	1	1
-	+	1	0
-	+	1	24
-	+	1	0
-	+	1	12
-	+	1	0
-	+	1	49
-	+	1	0
-	+	1	13
-	+	1	0
-	+	1	16
-	+	1	0
-	+	1	25
-	+	1	3
-	+	1	5
-	+	1	16
-	+	1	0
-	+	1	16
-	+	1	0
-	+	1	5
-	+	1	3
-	+	1	0
-	+	1	4
-	+	1	0
-	+	1	40
-	+	1	36
-	+	1	0
-	+	1	26
-	+	1	9
-	+	1	0
-	+	1	31
-	+	1	4
-	+	1	30
-	+	1	4
-	+	1	0
-	+	1	5
-	+	1	8
-	+	1	29
-	+	1	33
-	+	1	1
-	+	1	21
-	+	1	20
-	+	1	1
-	+	1	0
-	+	120	0
-	+	424	0
-	+	1146	0
-	+	572	5
-
 > ~/.vim/plugin/run3.vim
 	*	1725816834	0
 	"	36	4
@@ -19823,10 +20837,6 @@ $
 	*	1725630832	0
 	"	376	0
 
-> /usr/share/vim/vim90/doc/help.txt
-	*	1725592625	0
-	"	1	0
-
 > /usr/share/vim/vim90/doc/motion.txt
 	*	1725592557	0
 	"	1010	16
@@ -20186,114 +21196,6 @@ $
 	*	1725562393	0
 	"	1166	0
 
-> ~/bash/logs/gh-timeago-updates.log
-	*	1725552004	0
-	"	1848	0
-	.	1	0
-	+	1	0
-
-> ~/pyscripts/viewlog.py
-	*	1725551928	0
-	"	155	46
-	^	9	17
-	.	9	16
-	+	127	0
-	+	114	0
-	+	123	100
-	+	124	96
-	+	125	71
-	+	126	0
-	+	115	30
-	+	125	56
-	+	127	0
-	+	119	0
-	+	126	81
-	+	126	0
-	+	127	0
-	+	157	68
-	+	97	115
-	+	97	0
-	+	97	115
-	+	122	37
-	+	121	0
-	+	91	33
-	+	259	0
-	+	259	48
-	+	155	73
-	+	259	0
-	+	260	0
-	+	258	0
-	+	5	0
-	+	255	3
-	+	255	18
-	+	255	0
-	+	4	0
-	+	140	0
-	+	142	0
-	+	151	0
-	+	247	0
-	+	227	0
-	+	231	0
-	+	191	0
-	+	232	0
-	+	216	0
-	+	195	0
-	+	203	0
-	+	191	0
-	+	195	0
-	+	203	0
-	+	198	0
-	+	196	0
-	+	197	0
-	+	195	0
-	+	196	0
-	+	129	0
-	+	159	0
-	+	158	0
-	+	159	0
-	+	129	0
-	+	141	0
-	+	140	0
-	+	145	0
-	+	151	0
-	+	156	0
-	+	159	0
-	+	119	0
-	+	116	40
-	+	120	0
-	+	117	49
-	+	120	0
-	+	122	0
-	+	119	26
-	+	126	30
-	+	126	0
-	+	120	0
-	+	119	0
-	+	126	0
-	+	121	0
-	+	120	26
-	+	121	0
-	+	122	0
-	+	126	0
-	+	124	0
-	+	120	0
-	+	122	0
-	+	123	0
-	+	118	43
-	+	124	56
-	+	123	0
-	+	124	0
-	+	123	0
-	+	124	0
-	+	156	0
-	+	196	0
-	+	258	0
-	+	260	21
-	+	8	23
-	+	9	16
-	a	257	13
-	b	91	33
-
 > ~/pyscripts/time_zone.py
 	*	1725543131	0
 	"	66	0
@@ -20547,23 +21449,6 @@ $
 > ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/googleapiclient/discovery.py
 	*	1725539803	0
 	"	328	16
-
-> ~/pyscripts/secrets.env
-	*	1725538396	0
-	"	1	0
-	^	1	16
-	.	1	15
-	+	1	15
-
-> ~/pyscripts/.envrc
-	*	1725538395	0
-	"	3	17
-	^	3	18
-	.	3	17
-	+	1	13
-	+	3	0
-	+	2	1
-	+	3	17
 
 > ~/pyscripts/data/youtube-urls.txt
 	*	1725538154	0
@@ -21034,10 +21919,6 @@ $
 	+	224	19
 	+	192	154
 
-> /usr/share/vim/vim90/doc/eval.txt
-	*	1725378923	0
-	"	3076	27
-
 > ~/.vim/autoload/utils.vim
 	*	1725378817	0
 	"	88	10
@@ -21271,13 +22152,6 @@ $
 > /tmp/fzf-history.txt
 	*	1725283482	0
 	"	1	0
-
-> ~/bash/todo.txt
-	*	1725281307	0
-	"	1	39
-	^	1	120
-	.	1	119
-	+	1	119
 
 > ~/bash/zdirs.fish
 	*	1725281280	0
@@ -22827,32 +23701,6 @@ $
 	*	1724929193	0
 	"	1	0
 
-> ~/.vim/plugin/rename.vim
-	*	1724929192	0
-	"	22	8
-	^	25	9
-	.	25	0
-	+	1	25
-	+	5	0
-	+	30	1
-	+	31	7
-	+	4	0
-	+	4	22
-	+	3	31
-	+	2	21
-	+	3	24
-	+	4	0
-	+	32	0
-	+	16	0
-	+	18	0
-	+	17	10
-	+	18	0
-	+	20	0
-	+	22	0
-	+	23	21
-	+	24	0
-	+	25	0
-
 > ~/.vim/plugin/h.vim
 	*	1724929080	0
 	"	1	0
@@ -23515,10 +24363,6 @@ $
 	+	1	9
 	+	2	9
 	+	4	11
-
-> /usr/share/vim/vim90/doc/remote.txt
-	*	1724195077	0
-	"	16	25
 
 > /usr/share/vim/vim90/doc/various.txt
 	*	1724195077	0
@@ -24386,112 +25230,6 @@ $
 	+	7	12
 	+	9	13
 	+	10	0
-
-> ~/pyscripts/python-error-library-stats.py
-	*	1723937168	0
-	"	88	0
-	^	62	62
-	.	62	61
-	+	7	38
-	+	50	32
-	+	56	37
-	+	79	0
-	+	81	22
-	+	51	42
-	+	53	25
-	+	54	61
-	+	56	23
-	+	50	0
-	+	51	48
-	+	54	45
-	+	51	0
-	+	52	28
-	+	55	62
-	+	56	32
-	+	52	28
-	+	55	29
-	+	52	28
-	+	79	0
-	+	56	35
-	+	50	0
-	+	58	19
-	+	81	5
-	+	82	21
-	+	64	4
-	+	70	4
-	+	63	0
-	+	79	67
-	+	1	0
-	+	79	0
-	+	79	67
-	+	79	16
-	+	79	0
-	+	59	32
-	+	63	123
-	+	1	0
-	+	63	102
-	+	59	17
-	+	63	0
-	+	60	24
-	+	60	0
-	+	59	0
-	+	79	0
-	+	70	51
-	+	79	15
-	+	70	9
-	+	79	0
-	+	79	13
-	+	70	47
-	+	70	0
-	+	79	24
-	+	59	0
-	+	70	64
-	+	71	70
-	+	79	0
-	+	72	62
-	+	73	63
-	+	78	0
-	+	72	60
-	+	73	62
-	+	77	0
-	+	76	21
-	+	74	0
-	+	69	0
-	+	72	23
-	+	72	0
-	+	62	0
-	+	82	0
-	+	81	4
-	+	20	19
-	+	22	48
-	+	22	25
-	+	20	0
-	+	21	16
-	+	22	20
-	+	21	20
-	+	22	22
-	+	21	16
-	+	22	30
-	+	26	15
-	+	23	0
-	+	26	0
-	+	25	15
-	+	24	23
-	+	15	0
-	+	10	8
-	+	13	0
-	+	14	3
-	+	17	76
-	+	82	4
-	+	81	4
-	+	62	54
-	+	68	0
-	+	11	13
-	+	66	8
-	+	67	27
-	+	62	56
-	+	61	18
-	+	62	61
 
 > ~/tooling/python-error-traceback-prettify-libs.txt
 	*	1723937148	0
@@ -28148,10 +28886,6 @@ $
 	+	42	0
 	+	36	0
 	+	4	0
-
-> ~/pyscripts/data/python-error-library-repo-stats.json
-	*	1722760873	0
-	"	1	0
 
 > ~/hateoas/secrets.env
 	*	1722727446	0
@@ -33728,55 +34462,6 @@ $
 	+	2	0
 	+	1	1
 
-> ~/.config/yazi/keymap.toml
-	*	1719501887	0
-	"	30	6
-	^	30	7
-	.	30	6
-	+	1	59
-	+	3	9
-	+	34	3
-	+	34	0
-	+	11	0
-	+	6	3
-	+	10	69
-	+	9	4
-	+	6	0
-	+	11	0
-	+	32	63
-	+	30	16
-	+	33	0
-	+	16	0
-	+	6	0
-	+	9	0
-	+	16	0
-	+	1	0
-	+	32	0
-	+	6	0
-	+	8	0
-	+	6	0
-	+	7	0
-	+	4	4
-	+	7	14
-	+	6	14
-	+	4	0
-	+	16	14
-	+	17	14
-	+	23	14
-	+	24	14
-	+	9	14
-	+	10	14
-	+	6	0
-	+	31	14
-	+	32	14
-	+	4	0
-	+	34	0
-	+	1	0
-	+	5	6
-	+	15	6
-	+	22	6
-	+	30	6
-
 > ~/test-1/requirements.txt
 	*	1719501054	0
 	"	1	0
@@ -38103,93 +38788,6 @@ $
 	*	1716174944	0
 	"	1	0
 
-> ~/.config/functions.fish
-	*	1716172488	0
-	"	73	29
-	^	32	52
-	.	52	0
-	+	56	0
-	+	56	46
-	+	56	17
-	+	56	14
-	+	56	0
-	+	56	9
-	+	56	0
-	+	56	39
-	+	56	17
-	+	56	0
-	+	56	63
-	+	56	29
-	+	56	0
-	+	56	29
-	+	56	0
-	+	56	8
-	+	56	28
-	+	56	45
-	+	56	14
-	+	56	0
-	+	78	0
-	+	67	0
-	+	78	0
-	+	66	0
-	+	67	0
-	+	78	0
-	+	79	23
-	+	84	0
-	+	78	0
-	+	66	0
-	+	67	0
-	+	78	0
-	+	84	0
-	+	78	8
-	+	78	0
-	+	78	10
-	+	72	0
-	+	66	0
-	+	58	0
-	+	66	0
-	+	56	0
-	+	57	0
-	+	65	19
-	+	87	4
-	+	88	3
-	+	93	20
-	+	102	0
-	+	90	26
-	+	93	4
-	+	102	0
-	+	94	15
-	+	99	46
-	+	101	0
-	+	99	8
-	+	99	16
-	+	100	25
-	+	100	0
-	+	93	18
-	+	94	4
-	+	93	20
-	+	98	0
-	+	99	4
-	+	100	4
-	+	99	49
-	+	97	4
-	+	99	35
-	+	56	74
-	+	1	29
-	+	4	23
-	+	1	0
-	+	28	0
-	+	27	0
-	+	29	29
-	+	32	0
-	+	4	45
-	+	4	0
-	+	21	27
-	+	51	27
-	+	32	51
-	+	51	27
-	+	52	0
-
 > ~/hateoas/todo.txt
 	*	1716157517	0
 	"	5	0
@@ -38870,13 +39468,6 @@ $
 > ~/.local/share/fish/fish_history
 	*	1714946202	0
 	"	1	0
-
-> ~/.config/bindings.inputrc
-	*	1714944409	0
-	"	2	0
-	^	16	30
-	.	16	29
-	+	16	29
 
 > ~/.config/fish/completions/fisher.fish
 	*	1714775966	0
