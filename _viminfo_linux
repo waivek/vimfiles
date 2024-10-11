@@ -11,41 +11,79 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/\C\<cmd_after\>
+~MSle0~/cascade
 
 # Last Substitute Search Pattern:
-~MSle0&github
+~MSle0&^@app.route("\/\(.*\)")\s*\ndef \1
 
 # Last Substitute String:
-$enumerate(\0)
+$sub
 
 # Command Line History (newest to oldest):
-:qa
-|2,0,1727873293,,"qa"
 :q
-|2,0,1727873231,,"q"
+|2,0,1728437585,,"q"
+:Date
+|2,0,1728437535,,"Date"
+:qa
+|2,0,1728393580,,"qa"
+:e main.sql
+|2,0,1728016461,,"e main.sql"
+:270
+|2,0,1728006410,,"270"
+:CocRestart
+|2,0,1728004891,,"CocRestart"
+:CocConfig
+|2,0,1728004881,,"CocConfig"
+:Rg
+|2,0,1727962891,,"Rg"
+:268
+|2,0,1727962454,,"268"
+:e!
+|2,0,1727962119,,"e!"
+:421
+|2,0,1727962091,,"421"
+:%s/^@app.route("\/\(.*\)")\s*\ndef \1/sub
+|2,0,1727961327,,"%s/^@app.route(\"\\/\\(.*\\)\")\\s*\\ndef \\1/sub"
+:g/^@app.route("\/\(.*\)")\s*\ndef \1/d
+|2,0,1727961323,,"g/^@app.route(\"\\/\\(.*\\)\")\\s*\\ndef \\1/d"
+:v/^@app.route("\/\(.*\)")\s*\ndef \1/d
+|2,0,1727961319,,"v/^@app.route(\"\\/\\(.*\\)\")\\s*\\ndef \\1/d"
+:q!
+|2,0,1727924093,,"q!"
+:e ~/pro
+|2,0,1727923974,,"e ~/pro"
+:enew
+|2,0,1727923924,,"enew"
+:'<,'>Tab /(orig:/
+|2,0,1727922452,,"'<,'>Tab /(orig:/"
+:'<,'>Tab //
+|2,0,1727922446,,"'<,'>Tab //"
+:'<,'>Tab//
+|2,0,1727922440,,"'<,'>Tab//"
+:'<,'>Tab /#
+|2,0,1727922411,,"'<,'>Tab /#"
+:MRU 
+|2,0,1727921774,,"MRU "
+:'<,'>s/\s*\\\n\s*/ /
+|2,0,1727919977,,"'<,'>s/\\s*\\\\\\n\\s*/ /"
+:'<,'>s/\\\n//
+|2,0,1727919955,,"'<,'>s/\\\\\\n//"
+:e insert_oldfiles.fish
+|2,0,1727919924,,"e insert_oldfiles.fish"
 :e
 |2,0,1727872306,,"e"
 :w
 |2,0,1727871803,,"w"
 :e insert_oldfiles.bash
 |2,0,1727868905,,"e insert_oldfiles.bash"
-:e insert_oldfiles.fish
-|2,0,1727868397,,"e insert_oldfiles.fish"
 :e pwd-oldfiles.bash
 |2,0,1727866235,,"e pwd-oldfiles.bash"
-:Rg
-|2,0,1727866131,,"Rg"
 :e bindings.inputrc
 |2,0,1727866123,,"e bindings.inputrc"
-:q!
-|2,0,1727861466,,"q!"
 :diffthis
 |2,0,1727861433,,"diffthis"
 :d
 |2,0,1727861429,,"d"
-:enew
-|2,0,1727861426,,"enew"
 :!start everything -path . 
 |2,0,1727861072,,"!start everything -path . "
 :e 
@@ -136,8 +174,6 @@ $enumerate(\0)
 |2,0,1727780617,,"e tmux.conf"
 :asdf asdf as dfa sdf
 |2,0,1727780072,,"asdf asdf as dfa sdf"
-:MRU 
-|2,0,1727778676,,"MRU "
 :silent !tmux setw status off
 |2,0,1727776296,,"silent !tmux setw status off"
 :silent !tmux setw status on
@@ -180,10 +216,6 @@ $enumerate(\0)
 |2,0,1727579717,,"'<,'>s/^\\s\\s\\s\\s\\zs.*\\s\\{2,}/ /g"
 :%s/^\w*\.bash[-:]//
 |2,0,1727579708,,"%s/^\\w*\\.bash[-:]//"
-:Date
-|2,0,1727579392,,"Date"
-:e!
-|2,0,1727446216,,"e!"
 :MRU fish
 |2,0,1727445914,,"MRU fish"
 :MRU fish_his
@@ -192,10 +224,6 @@ $enumerate(\0)
 |2,0,1727445806,,"MRU bash_his"
 :MRU 215:.config/todo.txt
 |2,0,1727424695,,"MRU 215:.config/todo.txt"
-:CocRestart
-|2,0,1727364335,,"CocRestart"
-:CocConfig
-|2,0,1727364325,,"CocConfig"
 :Co
 |2,0,1727364222,,"Co"
 :e hateoas-api.py
@@ -1328,8 +1356,6 @@ $enumerate(\0)
 |2,0,1724475238,,"e todo.txt"
 :e todo/
 |2,0,1724475234,,"e todo/"
-:'<,'>Tab /#
-|2,0,1724475099,,"'<,'>Tab /#"
 :b ~/python_common/waivek/error2.py
 |2,0,1724470339,,"b ~/python_common/waivek/error2.py"
 :e console.py
@@ -2126,8 +2152,6 @@ $enumerate(\0)
 |2,0,1723100747,,"e ui-components-css/static/css-themes/dark-gray-mono.css"
 :b migrations/2400808_portionurls-resync.py
 |2,0,1723065727,,"b migrations/2400808_portionurls-resync.py"
-:e main.sql
-|2,0,1723065179,,"e main.sql"
 :e migrations/2400808_portionurls-resync.py
 |2,0,1723065164,,"e migrations/2400808_portionurls-resync.py"
 :e migrations/240424_2151_portionurls-user_id.py
@@ -10608,6 +10632,44 @@ $enumerate(\0)
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/cascade
+|2,1,1728016464,47,"cascade"
+?/\(def\|class\)\s\+\w*view_portion
+|2,1,1728006376,47,"\\(def\\|class\\)\\s\\+\\w*view_portion"
+?/\(def\|class\)\s\+\w*view
+|2,1,1728006373,47,"\\(def\\|class\\)\\s\\+\\w*view"
+?/\(def\|class\)\s\+\w*portion
+|2,1,1728004365,47,"\\(def\\|class\\)\\s\\+\\w*portion"
+?/\(def\|class\)\s\+\w*add_port
+|2,1,1728004363,47,"\\(def\\|class\\)\\s\\+\\w*add_port"
+?/\(def\|class\)\s\+\w*seq
+|2,1,1728004360,47,"\\(def\\|class\\)\\s\\+\\w*seq"
+?/\(def\|class\)\s\+\w*view_portions
+|2,1,1727962722,47,"\\(def\\|class\\)\\s\\+\\w*view_portions"
+?/\(def\|class\)\s\+\w*view_sequence
+|2,1,1727962706,47,"\\(def\\|class\\)\\s\\+\\w*view_sequence"
+?/<input
+|2,1,1727962255,47,"<input"
+?/subm
+|2,1,1727962212,47,"subm"
+?/Set
+|2,1,1727962129,47,"Set"
+?/Updated
+|2,1,1727961437,47,"Updated"
+?/Sync
+|2,1,1727961420,47,"Sync"
+?/sync_video_to_video
+|2,1,1727961380,47,"sync_video_to_video"
+?/@app\.route
+|2,1,1727961331,47,"@app\\.route"
+? ^@app.route("\/\(.*\)")\s*\ndef \1
+|2,1,1727961327,,"^@app.route(\"\\/\\(.*\\)\")\\s*\\ndef \\1"
+?/^@app.route("\/\(.*\)")\s*\ndef \1
+|2,1,1727961316,47,"^@app.route(\"\\/\\(.*\\)\")\\s*\\ndef \\1"
+? \s*\\\n\s*
+|2,1,1727919977,,"\\s*\\\\\\n\\s*"
+? \\\n
+|2,1,1727919955,,"\\\\\\n"
 ?/bat
 |2,1,1727865598,47,"bat"
 ?/vcs
@@ -11760,8 +11822,6 @@ $enumerate(\0)
 |2,1,1722273905,47,"\\(def\\|class\\)\\s\\+\\w*video_to"
 ?/\(def\|class\)\s\+\w*get_synced_videos_html
 |2,1,1722273869,47,"\\(def\\|class\\)\\s\\+\\w*get_synced_videos_html"
-?/Sync
-|2,1,1722273701,47,"Sync"
 ?/\(def\|class\)\s\+\w*get_glo
 |2,1,1722255326,47,"\\(def\\|class\\)\\s\\+\\w*get_glo"
 ?/\(def\|class\)\s\+\w*get
@@ -12016,8 +12076,6 @@ $enumerate(\0)
 |2,1,1721311595,47,"input"
 ?/disabled
 |2,1,1721311403,47,"disabled"
-?/<input
-|2,1,1721311321,47,"<input"
 ?/\(def\|class\)\s\+\w*form_create_port
 |2,1,1721311318,47,"\\(def\\|class\\)\\s\\+\\w*form_create_port"
 ?/input[
@@ -12702,8 +12760,6 @@ $enumerate(\0)
 |2,1,1717595865,47,"<a"
 ?/\(def\|class\)\s\+\w*html
 |2,1,1717595864,47,"\\(def\\|class\\)\\s\\+\\w*html"
-?/\(def\|class\)\s\+\w*view
-|2,1,1717595853,47,"\\(def\\|class\\)\\s\\+\\w*view"
 ?/<a 
 |2,1,1717595850,47,"<a "
 ?/emb
@@ -13542,8 +13598,6 @@ $enumerate(\0)
 |2,1,1714221508,47,"-w"
 ?/selected urls
 |2,1,1714193191,47,"selected urls"
-?/\(def\|class\)\s\+\w*view_portion
-|2,1,1714155445,47,"\\(def\\|class\\)\\s\\+\\w*view_portion"
 ? ?
 |2,1,1714141543,,"?"
 ? \.execute
@@ -13630,8 +13684,6 @@ $enumerate(\0)
 |2,1,1713951834,47,"Portion"
 ?/hhmmss
 |2,1,1713951509,47,"hhmmss"
-?/\(def\|class\)\s\+\w*view_portions
-|2,1,1713942671,47,"\\(def\\|class\\)\\s\\+\\w*view_portions"
 ?/\(def\|class\)\s\+\w*hash
 |2,1,1713938130,47,"\\(def\\|class\\)\\s\\+\\w*hash"
 ?/\(def\|class\)\s\+\w*delete_port
@@ -13980,8 +14032,6 @@ $enumerate(\0)
 |2,1,1712009770,47,"duration"
 ?/start_epoch <
 |2,1,1712009725,47,"start_epoch <"
-?/\(def\|class\)\s\+\w*portion
-|2,1,1712008121,47,"\\(def\\|class\\)\\s\\+\\w*portion"
 ?/request\.args
 |2,1,1712004297,47,"request\\.args"
 ?/pageCount
@@ -14176,8 +14226,6 @@ $enumerate(\0)
 |2,1,1710034075,47,"\\(\\w\\+\\)\\.value"
 ?/Keys
 |2,1,1710033496,47,"Keys"
-?/Set
-|2,1,1710032031,47,"Set"
 ??embed
 |2,1,1710031241,63,"embed"
 ?/<video
@@ -15562,65 +15610,41 @@ $enumerate(\0)
 |2,4,1693311567,,"cont"
 
 # Registers:
-"0	CHAR	0
-	new_cursor
-|3,0,0,0,1,0,1727873225,"new_cursor"
-""1	LINE	0
-	
-|3,1,1,1,1,0,1727873289,""
+"0	LINE	0
+	export STARSHIP_CONFIG=~/.config/starship/starship.toml
+|3,0,0,1,1,0,1728393569,"export STARSHIP_CONFIG=~/.config/starship/starship.toml"
+"1	LINE	0
+	        portion.
+|3,0,1,1,1,0,1728004903,"        portion."
 "2	LINE	0
-	bind \r close_completion_if_open_and_execute
-	bind \t do_complete
-|3,0,2,1,2,0,1727873287,"bind \\r close_completion_if_open_and_execute","bind \\t do_complete"
+	    // "python.analysis.diagnosticMode": "openFilesOnly",
+	    "python.analysis.diagnosticMode": "workspace",
+|3,0,2,1,2,0,1728004884,"    // \"python.analysis.diagnosticMode\": \"openFilesOnly\",","    \"python.analysis.diagnosticMode\": \"workspace\","
 "3	LINE	0
-	bind \co insert_oldfiles
-|3,0,3,1,1,0,1727873278,"bind \\co insert_oldfiles"
+	           video = videos[0
+|3,0,3,1,1,0,1728004858,"           video = videos[0"
 "4	LINE	0
-	
-|3,0,4,1,1,0,1727873129,""
+	        portion.
+|3,0,4,1,1,0,1728004822,"        portion."
 "5	LINE	0
-	
-	bind -x '"\C-o":insert_oldfiles'
-|3,0,5,1,2,0,1727873067,"","bind -x '\"\\C-o\":insert_oldfiles'"
+	        portion.
+|3,0,5,1,1,0,1728004761,"        portion."
 "6	LINE	0
 	
-|3,0,6,1,1,0,1727873019,""
+|3,0,6,1,1,0,1728004617,""
 "7	LINE	0
-	# source ~/bash/insert_oldfiles.bash
-	insert_oldfiles_wrapper() {
-	    
-	}
-|3,0,7,1,4,0,1727873018,"# source ~/bash/insert_oldfiles.bash","insert_oldfiles_wrapper() {","    ","}"
+	        try:
+|3,0,7,1,1,0,1728004478,"        try:"
 "8	LINE	0
-	
-|3,0,8,1,1,0,1727872996,""
+	        except StopIteration:
+	            return 
+|3,0,8,1,2,0,1728004477,"        except StopIteration:","            return "
 "9	LINE	0
-	
-	function insert_oldfiles
-	    set selected_files (~/golang/viminfo_utils/bin/oldfiles | \
-	        fzf --no-sort --exact --delimiter=/ --nth -1.. --multi | \
-	        sed "s|$HOME|~|g" | \
-	        string trim | \
-	        string split '\n' | \
-	        string join ' ')
-	    if test -n "$selected_files"
-	
-	        set cmd_before (commandline --cut-at-cursor)    # Get the part of the command before the cursor
-	        set cmd_after (commandline | string sub -s (math $before_cursor + 1)) # Get the part of the command after the cursor
-	
-	        commandline -r "$cmd_before$selected_files$cmd_after" # Replace command line with before, "bingo", and after
-	
-	        commandline -f repaint                       # Repaint the command line
-	    end
-	end
-	
-	bind \co insert_oldfiles
-	
-|3,0,9,1,21,0,1727872714,"","function insert_oldfiles","    set selected_files (~/golang/viminfo_utils/bin/oldfiles | \\","        fzf --no-sort --exact --delimiter=/ --nth -1.. --multi | \\","        sed \"s|$HOME|~|g\" | \\","        string trim | \\","        string split '\\n' | \\","        string join ' ')","    if test -n \"$selected_files\"","","        set cmd_before (commandline --cut-at-cursor)    # Get the part of the command before the cursor",>126
-|<"        set cmd_after (commandline | string sub -s (math $before_cursor + 1)) # Get the part of the command after the cursor","","        commandline -r \"$cmd_before$selected_files$cmd_after\" # Replace command line with before, \"bingo\", and after","","        commandline -f repaint                       # Repaint the command line","    end","end","","bind \\co insert_oldfiles",""
-"a	CHAR	0
-	Tabularize /#/l1c1l1
-|3,0,10,0,1,0,1727873225,"Tabularize /#/l1c1l1"
+	            video = None
+|3,0,9,1,1,0,1728004468,"            video = None"
+"a@	CHAR	0
+	0i# €ýabi €ýadwkwp
+|3,2,10,0,1,0,1728393661,"0i# €ýabi €ýadwkwp"
 "i	CHAR	0
 	ado_up()jk:q!
 |3,0,18,0,1,0,1724200553,"ado_up()jk:q!"
@@ -15633,405 +15657,493 @@ $enumerate(\0)
 "l	CHAR	0
 	jk:q!llk;loline.repla	ceh€kb("https:jklllll;;;gf:w
 |3,0,21,0,1,0,1727781297,"jk:q!llk;loline.repla	ceh€kb(\"https:jklllll;;;gf:w"
-"q	CHAR	0
-	!jk€ýajk
-|3,0,26,0,1,0,1724288785,"!jk€ýajk"
 "s	LINE	0
 	set verbosefile=verbose-file.txt
 	set verbose=20 | quit
 |3,0,28,1,2,0,1725457945,"set verbosefile=verbose-file.txt","set verbose=20 | quit"
-"-	CHAR	0
-	new_cursor
-|3,0,36,0,1,0,1727873190,"new_cursor"
+""-	CHAR	0
+	~
+|3,1,36,0,1,0,1728393716,"~"
 
 # File marks:
-'0  13  0  ~/.config/setup.fish
-|4,48,13,0,1727873293,"~/.config/setup.fish"
-'1  22  23  ~/bash/insert_oldfiles.fish
-|4,49,22,23,1727873231,"~/bash/insert_oldfiles.fish"
-'2  22  23  ~/bash/insert_oldfiles.fish
-|4,50,22,23,1727873231,"~/bash/insert_oldfiles.fish"
-'3  16  33  ~/bash/insert_oldfiles.fish
-|4,51,16,33,1727873144,"~/bash/insert_oldfiles.fish"
-'4  16  33  ~/bash/insert_oldfiles.fish
-|4,52,16,33,1727873144,"~/bash/insert_oldfiles.fish"
-'5  16  33  ~/bash/insert_oldfiles.fish
-|4,53,16,33,1727873144,"~/bash/insert_oldfiles.fish"
-'6  16  33  ~/bash/insert_oldfiles.fish
-|4,54,16,33,1727873144,"~/bash/insert_oldfiles.fish"
-'7  1  0  ~/bash/insert_oldfiles.bash
-|4,55,1,0,1727873093,"~/bash/insert_oldfiles.bash"
-'8  1  0  ~/bash/insert_oldfiles.bash
-|4,56,1,0,1727873093,"~/bash/insert_oldfiles.bash"
-'9  1  0  ~/bash/insert_oldfiles.bash
-|4,57,1,0,1727873093,"~/bash/insert_oldfiles.bash"
+'0  1  77  ~/hateoas/todo.txt
+|4,48,1,77,1728437585,"~/hateoas/todo.txt"
+'1  4  25  ~/.config/setup.fish
+|4,49,4,25,1728394003,"~/.config/setup.fish"
+'2  4  25  ~/.config/setup.fish
+|4,50,4,25,1728394003,"~/.config/setup.fish"
+'3  17  0  ~/.config/tmux/tmux.conf
+|4,51,17,0,1728393721,"~/.config/tmux/tmux.conf"
+'4  17  0  ~/.config/tmux/tmux.conf
+|4,52,17,0,1728393721,"~/.config/tmux/tmux.conf"
+'5  17  0  ~/.config/tmux/tmux.conf
+|4,53,17,0,1728393721,"~/.config/tmux/tmux.conf"
+'6  17  0  ~/.config/tmux/tmux.conf
+|4,54,17,0,1728393721,"~/.config/tmux/tmux.conf"
+'7  15  25  ~/.config/tmux/tmux.conf
+|4,55,15,25,1728393663,"~/.config/tmux/tmux.conf"
+'8  15  25  ~/.config/tmux/tmux.conf
+|4,56,15,25,1728393663,"~/.config/tmux/tmux.conf"
+'9  15  25  ~/.config/tmux/tmux.conf
+|4,57,15,25,1728393663,"~/.config/tmux/tmux.conf"
 
 # Jumplist (newest first):
--'  13  0  ~/.config/setup.fish
-|4,39,13,0,1727873293,"~/.config/setup.fish"
+-'  1  77  ~/hateoas/todo.txt
+|4,39,1,77,1728437585,"~/hateoas/todo.txt"
+-'  2  0  ~/hateoas/todo.txt
+|4,39,2,0,1728437529,"~/hateoas/todo.txt"
+-'  4  25  ~/.config/setup.fish
+|4,39,4,25,1728394003,"~/.config/setup.fish"
+-'  4  25  ~/.config/setup.fish
+|4,39,4,25,1728394003,"~/.config/setup.fish"
 -'  1  0  ~/.config/setup.fish
-|4,39,1,0,1727873271,"~/.config/setup.fish"
+|4,39,1,0,1728393923,"~/.config/setup.fish"
+-'  1  0  ~/.config/setup.fish
+|4,39,1,0,1728393923,"~/.config/setup.fish"
+-'  17  0  ~/.config/tmux/tmux.conf
+|4,39,17,0,1728393721,"~/.config/tmux/tmux.conf"
+-'  17  0  ~/.config/tmux/tmux.conf
+|4,39,17,0,1728393721,"~/.config/tmux/tmux.conf"
+-'  17  0  ~/.config/tmux/tmux.conf
+|4,39,17,0,1728393721,"~/.config/tmux/tmux.conf"
+-'  3  33  ~/.config/setup.fish
+|4,39,3,33,1728393719,"~/.config/setup.fish"
+-'  3  33  ~/.config/setup.fish
+|4,39,3,33,1728393719,"~/.config/setup.fish"
+-'  3  33  ~/.config/setup.fish
+|4,39,3,33,1728393719,"~/.config/setup.fish"
+-'  1  0  ~/.config/tmux/tmux.conf
+|4,39,1,0,1728393706,"~/.config/tmux/tmux.conf"
+-'  1  0  ~/.config/tmux/tmux.conf
+|4,39,1,0,1728393706,"~/.config/tmux/tmux.conf"
+-'  1  0  ~/.config/tmux/tmux.conf
+|4,39,1,0,1728393706,"~/.config/tmux/tmux.conf"
+-'  15  25  ~/.config/tmux/tmux.conf
+|4,39,15,25,1728393663,"~/.config/tmux/tmux.conf"
+-'  15  25  ~/.config/tmux/tmux.conf
+|4,39,15,25,1728393663,"~/.config/tmux/tmux.conf"
+-'  15  25  ~/.config/tmux/tmux.conf
+|4,39,15,25,1728393663,"~/.config/tmux/tmux.conf"
+-'  15  25  ~/.config/tmux/tmux.conf
+|4,39,15,25,1728393663,"~/.config/tmux/tmux.conf"
+-'  1  0  ~/.config/tmux/tmux.conf
+|4,39,1,0,1728393657,"~/.config/tmux/tmux.conf"
+-'  15  25  ~/.config/tmux/tmux.conf
+|4,39,15,25,1728393642,"~/.config/tmux/tmux.conf"
+-'  1  0  ~/.config/tmux/tmux.conf
+|4,39,1,0,1728393633,"~/.config/tmux/tmux.conf"
+-'  19  0  ~/.config/setup.bash
+|4,39,19,0,1728393581,"~/.config/setup.bash"
+-'  19  0  ~/.config/setup.bash
+|4,39,19,0,1728393581,"~/.config/setup.bash"
+-'  19  0  ~/.config/setup.bash
+|4,39,19,0,1728393581,"~/.config/setup.bash"
+-'  19  0  ~/.config/setup.bash
+|4,39,19,0,1728393581,"~/.config/setup.bash"
+-'  19  0  ~/.config/setup.bash
+|4,39,19,0,1728393581,"~/.config/setup.bash"
+-'  19  0  ~/.config/setup.bash
+|4,39,19,0,1728393581,"~/.config/setup.bash"
 -'  1  0  ~/.config/setup.bash
-|4,39,1,0,1727873270,"~/.config/setup.bash"
--'  1  0  ~/bash/insert_oldfiles.fish
-|4,39,1,0,1727873267,"~/bash/insert_oldfiles.fish"
--'  1  0  ~/bash/insert_oldfiles.bash
-|4,39,1,0,1727873251,"~/bash/insert_oldfiles.bash"
--'  22  23  ~/bash/insert_oldfiles.fish
-|4,39,22,23,1727873231,"~/bash/insert_oldfiles.fish"
--'  22  23  ~/bash/insert_oldfiles.fish
-|4,39,22,23,1727873231,"~/bash/insert_oldfiles.fish"
--'  12  12  ~/bash/insert_oldfiles.fish
-|4,39,12,12,1727873214,"~/bash/insert_oldfiles.fish"
--'  12  12  ~/bash/insert_oldfiles.fish
-|4,39,12,12,1727873214,"~/bash/insert_oldfiles.fish"
--'  10  12  ~/bash/insert_oldfiles.fish
-|4,39,10,12,1727873210,"~/bash/insert_oldfiles.fish"
--'  10  12  ~/bash/insert_oldfiles.fish
-|4,39,10,12,1727873210,"~/bash/insert_oldfiles.fish"
--'  14  18  ~/bash/insert_oldfiles.fish
-|4,39,14,18,1727873209,"~/bash/insert_oldfiles.fish"
--'  14  18  ~/bash/insert_oldfiles.fish
-|4,39,14,18,1727873209,"~/bash/insert_oldfiles.fish"
--'  15  18  ~/bash/insert_oldfiles.fish
-|4,39,15,18,1727873192,"~/bash/insert_oldfiles.fish"
--'  15  18  ~/bash/insert_oldfiles.fish
-|4,39,15,18,1727873192,"~/bash/insert_oldfiles.fish"
--'  16  30  ~/bash/insert_oldfiles.fish
-|4,39,16,30,1727873188,"~/bash/insert_oldfiles.fish"
--'  16  30  ~/bash/insert_oldfiles.fish
-|4,39,16,30,1727873188,"~/bash/insert_oldfiles.fish"
--'  1  0  ~/bash/insert_oldfiles.fish
-|4,39,1,0,1727873147,"~/bash/insert_oldfiles.fish"
--'  16  33  ~/bash/insert_oldfiles.fish
-|4,39,16,33,1727873144,"~/bash/insert_oldfiles.fish"
--'  1  0  ~/bash/insert_oldfiles.fish
-|4,39,1,0,1727873111,"~/bash/insert_oldfiles.fish"
--'  1  0  ~/bash/insert_oldfiles.bash
-|4,39,1,0,1727873093,"~/bash/insert_oldfiles.bash"
--'  1  0  ~/bash/insert_oldfiles.bash
-|4,39,1,0,1727873093,"~/bash/insert_oldfiles.bash"
--'  1  0  ~/bash/insert_oldfiles.bash
-|4,39,1,0,1727873093,"~/bash/insert_oldfiles.bash"
--'  9  0  ~/bash/insert_oldfiles.bash
-|4,39,9,0,1727873072,"~/bash/insert_oldfiles.bash"
--'  9  0  ~/bash/insert_oldfiles.bash
-|4,39,9,0,1727873072,"~/bash/insert_oldfiles.bash"
--'  9  0  ~/bash/insert_oldfiles.bash
-|4,39,9,0,1727873072,"~/bash/insert_oldfiles.bash"
--'  9  0  ~/bash/insert_oldfiles.bash
-|4,39,9,0,1727873072,"~/bash/insert_oldfiles.bash"
--'  9  0  ~/bash/insert_oldfiles.bash
-|4,39,9,0,1727873072,"~/bash/insert_oldfiles.bash"
--'  1  0  ~/bash/insert_oldfiles.bash
-|4,39,1,0,1727873067,"~/bash/insert_oldfiles.bash"
--'  62  46  ~/.config/setup.bash
-|4,39,62,46,1727873065,"~/.config/setup.bash"
--'  62  46  ~/.config/setup.bash
-|4,39,62,46,1727873065,"~/.config/setup.bash"
--'  62  46  ~/.config/setup.bash
-|4,39,62,46,1727873065,"~/.config/setup.bash"
--'  62  46  ~/.config/setup.bash
-|4,39,62,46,1727873065,"~/.config/setup.bash"
--'  62  46  ~/.config/setup.bash
-|4,39,62,46,1727873065,"~/.config/setup.bash"
--'  63  0  ~/.config/setup.bash
-|4,39,63,0,1727873061,"~/.config/setup.bash"
--'  63  0  ~/.config/setup.bash
-|4,39,63,0,1727873061,"~/.config/setup.bash"
--'  63  0  ~/.config/setup.bash
-|4,39,63,0,1727873061,"~/.config/setup.bash"
--'  63  0  ~/.config/setup.bash
-|4,39,63,0,1727873061,"~/.config/setup.bash"
--'  63  0  ~/.config/setup.bash
-|4,39,63,0,1727873061,"~/.config/setup.bash"
+|4,39,1,0,1728393550,"~/.config/setup.bash"
 -'  1  0  ~/.config/setup.bash
-|4,39,1,0,1727873045,"~/.config/setup.bash"
+|4,39,1,0,1728393550,"~/.config/setup.bash"
 -'  1  0  ~/.config/setup.bash
-|4,39,1,0,1727873045,"~/.config/setup.bash"
+|4,39,1,0,1728393550,"~/.config/setup.bash"
 -'  1  0  ~/.config/setup.bash
-|4,39,1,0,1727873045,"~/.config/setup.bash"
+|4,39,1,0,1728393550,"~/.config/setup.bash"
 -'  1  0  ~/.config/setup.bash
-|4,39,1,0,1727873045,"~/.config/setup.bash"
--'  10  42  ~/bash/insert_oldfiles.fish
-|4,39,10,42,1727873028,"~/bash/insert_oldfiles.fish"
--'  10  42  ~/bash/insert_oldfiles.fish
-|4,39,10,42,1727873028,"~/bash/insert_oldfiles.fish"
--'  10  42  ~/bash/insert_oldfiles.fish
-|4,39,10,42,1727873028,"~/bash/insert_oldfiles.fish"
--'  10  42  ~/bash/insert_oldfiles.fish
-|4,39,10,42,1727873028,"~/bash/insert_oldfiles.fish"
--'  61  0  ~/.config/setup.bash
-|4,39,61,0,1727873026,"~/.config/setup.bash"
--'  61  0  ~/.config/setup.bash
-|4,39,61,0,1727873026,"~/.config/setup.bash"
--'  61  0  ~/.config/setup.bash
-|4,39,61,0,1727873026,"~/.config/setup.bash"
--'  61  0  ~/.config/setup.bash
-|4,39,61,0,1727873026,"~/.config/setup.bash"
--'  61  0  ~/.config/setup.bash
-|4,39,61,0,1727873026,"~/.config/setup.bash"
--'  61  0  ~/.config/setup.bash
-|4,39,61,0,1727873026,"~/.config/setup.bash"
--'  1  0  ~/bash/insert_oldfiles.bash
-|4,39,1,0,1727873002,"~/bash/insert_oldfiles.bash"
--'  62  37  ~/.config/setup.bash
-|4,39,62,37,1727873000,"~/.config/setup.bash"
--'  13  0  ~/.config/setup.bash
-|4,39,13,0,1727872967,"~/.config/setup.bash"
--'  13  0  ~/.config/setup.bash
-|4,39,13,0,1727872967,"~/.config/setup.bash"
--'  13  0  ~/.config/setup.bash
-|4,39,13,0,1727872967,"~/.config/setup.bash"
--'  13  0  ~/.config/setup.bash
-|4,39,13,0,1727872967,"~/.config/setup.bash"
--'  13  0  ~/.config/setup.bash
-|4,39,13,0,1727872967,"~/.config/setup.bash"
--'  13  0  ~/.config/setup.bash
-|4,39,13,0,1727872967,"~/.config/setup.bash"
+|4,39,1,0,1728393550,"~/.config/setup.bash"
 -'  1  0  ~/.config/setup.bash
-|4,39,1,0,1727872964,"~/.config/setup.bash"
--'  14  36  ~/bash/insert_oldfiles.fish
-|4,39,14,36,1727872867,"~/bash/insert_oldfiles.fish"
--'  14  36  ~/bash/insert_oldfiles.fish
-|4,39,14,36,1727872867,"~/bash/insert_oldfiles.fish"
--'  14  36  ~/bash/insert_oldfiles.fish
-|4,39,14,36,1727872867,"~/bash/insert_oldfiles.fish"
--'  14  36  ~/bash/insert_oldfiles.fish
-|4,39,14,36,1727872867,"~/bash/insert_oldfiles.fish"
--'  17  8  ~/bash/insert_oldfiles.fish
-|4,39,17,8,1727872866,"~/bash/insert_oldfiles.fish"
--'  17  8  ~/bash/insert_oldfiles.fish
-|4,39,17,8,1727872866,"~/bash/insert_oldfiles.fish"
--'  17  8  ~/bash/insert_oldfiles.fish
-|4,39,17,8,1727872866,"~/bash/insert_oldfiles.fish"
--'  15  8  ~/bash/insert_oldfiles.fish
-|4,39,15,8,1727872866,"~/bash/insert_oldfiles.fish"
--'  15  8  ~/bash/insert_oldfiles.fish
-|4,39,15,8,1727872866,"~/bash/insert_oldfiles.fish"
--'  15  8  ~/bash/insert_oldfiles.fish
-|4,39,15,8,1727872866,"~/bash/insert_oldfiles.fish"
--'  18  8  ~/bash/insert_oldfiles.fish
-|4,39,18,8,1727872865,"~/bash/insert_oldfiles.fish"
--'  18  8  ~/bash/insert_oldfiles.fish
-|4,39,18,8,1727872865,"~/bash/insert_oldfiles.fish"
--'  18  8  ~/bash/insert_oldfiles.fish
-|4,39,18,8,1727872865,"~/bash/insert_oldfiles.fish"
--'  16  8  ~/bash/insert_oldfiles.fish
-|4,39,16,8,1727872865,"~/bash/insert_oldfiles.fish"
--'  16  8  ~/bash/insert_oldfiles.fish
-|4,39,16,8,1727872865,"~/bash/insert_oldfiles.fish"
--'  16  8  ~/bash/insert_oldfiles.fish
-|4,39,16,8,1727872865,"~/bash/insert_oldfiles.fish"
--'  1  9  ~/bash/insert_oldfiles.fish
-|4,39,1,9,1727872762,"~/bash/insert_oldfiles.fish"
--'  1  9  ~/bash/insert_oldfiles.fish
-|4,39,1,9,1727872762,"~/bash/insert_oldfiles.fish"
--'  1  9  ~/bash/insert_oldfiles.fish
-|4,39,1,9,1727872762,"~/bash/insert_oldfiles.fish"
--'  11  0  ~/bash/insert_oldfiles.fish
-|4,39,11,0,1727872757,"~/bash/insert_oldfiles.fish"
--'  11  0  ~/bash/insert_oldfiles.fish
-|4,39,11,0,1727872757,"~/bash/insert_oldfiles.fish"
--'  11  0  ~/bash/insert_oldfiles.fish
-|4,39,11,0,1727872757,"~/bash/insert_oldfiles.fish"
--'  11  0  ~/bash/insert_oldfiles.fish
-|4,39,11,0,1727872757,"~/bash/insert_oldfiles.fish"
--'  11  0  ~/bash/insert_oldfiles.fish
-|4,39,11,0,1727872757,"~/bash/insert_oldfiles.fish"
--'  11  0  ~/bash/insert_oldfiles.fish
-|4,39,11,0,1727872757,"~/bash/insert_oldfiles.fish"
--'  20  0  ~/bash/insert_oldfiles.fish
-|4,39,20,0,1727872716,"~/bash/insert_oldfiles.fish"
--'  20  0  ~/bash/insert_oldfiles.fish
-|4,39,20,0,1727872716,"~/bash/insert_oldfiles.fish"
--'  20  0  ~/bash/insert_oldfiles.fish
-|4,39,20,0,1727872716,"~/bash/insert_oldfiles.fish"
--'  18  0  ~/bash/insert_oldfiles.fish
-|4,39,18,0,1727872716,"~/bash/insert_oldfiles.fish"
--'  18  0  ~/bash/insert_oldfiles.fish
-|4,39,18,0,1727872716,"~/bash/insert_oldfiles.fish"
--'  18  0  ~/bash/insert_oldfiles.fish
-|4,39,18,0,1727872716,"~/bash/insert_oldfiles.fish"
--'  18  0  ~/bash/insert_oldfiles.fish
-|4,39,18,0,1727872716,"~/bash/insert_oldfiles.fish"
--'  2  12  ~/bash/insert_oldfiles.fish
-|4,39,2,12,1727872713,"~/bash/insert_oldfiles.fish"
--'  2  12  ~/bash/insert_oldfiles.fish
-|4,39,2,12,1727872713,"~/bash/insert_oldfiles.fish"
--'  2  12  ~/bash/insert_oldfiles.fish
-|4,39,2,12,1727872713,"~/bash/insert_oldfiles.fish"
--'  2  12  ~/bash/insert_oldfiles.fish
-|4,39,2,12,1727872713,"~/bash/insert_oldfiles.fish"
--'  2  12  ~/bash/insert_oldfiles.fish
-|4,39,2,12,1727872713,"~/bash/insert_oldfiles.fish"
--'  1  0  ~/bash/insert_oldfiles.fish
-|4,39,1,0,1727872713,"~/bash/insert_oldfiles.fish"
+|4,39,1,0,1728393550,"~/.config/setup.bash"
+-'  1  0  ~/hateoas/main.sql
+|4,39,1,0,1728386868,"~/hateoas/main.sql"
+-'  1  0  ~/hateoas/main.sql
+|4,39,1,0,1728386868,"~/hateoas/main.sql"
+-'  1  0  ~/hateoas/main.sql
+|4,39,1,0,1728386868,"~/hateoas/main.sql"
+-'  1  0  ~/hateoas/main.sql
+|4,39,1,0,1728386868,"~/hateoas/main.sql"
+-'  1  0  ~/hateoas/main.sql
+|4,39,1,0,1728386868,"~/hateoas/main.sql"
+-'  1  0  ~/hateoas/main.sql
+|4,39,1,0,1728386868,"~/hateoas/main.sql"
+-'  1  0  ~/hateoas/main.sql
+|4,39,1,0,1728386868,"~/hateoas/main.sql"
+-'  5  0  ~/hateoas/main.sql
+|4,39,5,0,1728385549,"~/hateoas/main.sql"
+-'  5  0  ~/hateoas/main.sql
+|4,39,5,0,1728385549,"~/hateoas/main.sql"
+-'  5  0  ~/hateoas/main.sql
+|4,39,5,0,1728385549,"~/hateoas/main.sql"
+-'  5  0  ~/hateoas/main.sql
+|4,39,5,0,1728385549,"~/hateoas/main.sql"
+-'  5  0  ~/hateoas/main.sql
+|4,39,5,0,1728385549,"~/hateoas/main.sql"
+-'  5  0  ~/hateoas/main.sql
+|4,39,5,0,1728385549,"~/hateoas/main.sql"
+-'  5  0  ~/hateoas/main.sql
+|4,39,5,0,1728385549,"~/hateoas/main.sql"
+-'  5  0  ~/hateoas/main.sql
+|4,39,5,0,1728385549,"~/hateoas/main.sql"
+-'  1  0  ~/hateoas/main.sql
+|4,39,1,0,1728385547,"~/hateoas/main.sql"
+-'  1  0  ~/hateoas/main.sql
+|4,39,1,0,1728374394,"~/hateoas/main.sql"
+-'  27  64  ~/hateoas/main.sql
+|4,39,27,64,1728016718,"~/hateoas/main.sql"
+-'  27  64  ~/hateoas/main.sql
+|4,39,27,64,1728016718,"~/hateoas/main.sql"
+-'  27  64  ~/hateoas/main.sql
+|4,39,27,64,1728016718,"~/hateoas/main.sql"
+-'  27  64  ~/hateoas/main.sql
+|4,39,27,64,1728016718,"~/hateoas/main.sql"
+-'  27  64  ~/hateoas/main.sql
+|4,39,27,64,1728016718,"~/hateoas/main.sql"
+-'  27  64  ~/hateoas/main.sql
+|4,39,27,64,1728016718,"~/hateoas/main.sql"
+-'  27  64  ~/hateoas/main.sql
+|4,39,27,64,1728016718,"~/hateoas/main.sql"
+-'  27  64  ~/hateoas/main.sql
+|4,39,27,64,1728016718,"~/hateoas/main.sql"
+-'  27  64  ~/hateoas/main.sql
+|4,39,27,64,1728016718,"~/hateoas/main.sql"
+-'  27  64  ~/hateoas/main.sql
+|4,39,27,64,1728016718,"~/hateoas/main.sql"
+-'  17  66  ~/hateoas/main.sql
+|4,39,17,66,1728016466,"~/hateoas/main.sql"
+-'  17  66  ~/hateoas/main.sql
+|4,39,17,66,1728016466,"~/hateoas/main.sql"
+-'  17  66  ~/hateoas/main.sql
+|4,39,17,66,1728016466,"~/hateoas/main.sql"
+-'  17  66  ~/hateoas/main.sql
+|4,39,17,66,1728016466,"~/hateoas/main.sql"
+-'  17  66  ~/hateoas/main.sql
+|4,39,17,66,1728016466,"~/hateoas/main.sql"
+-'  17  66  ~/hateoas/main.sql
+|4,39,17,66,1728016466,"~/hateoas/main.sql"
+-'  17  66  ~/hateoas/main.sql
+|4,39,17,66,1728016466,"~/hateoas/main.sql"
+-'  17  66  ~/hateoas/main.sql
+|4,39,17,66,1728016466,"~/hateoas/main.sql"
+-'  17  66  ~/hateoas/main.sql
+|4,39,17,66,1728016466,"~/hateoas/main.sql"
+-'  17  66  ~/hateoas/main.sql
+|4,39,17,66,1728016466,"~/hateoas/main.sql"
+-'  1  0  ~/hateoas/main.sql
+|4,39,1,0,1728016464,"~/hateoas/main.sql"
+-'  122  8  ~/hateoas/hateoas-api.py
+|4,39,122,8,1728016461,"~/hateoas/hateoas-api.py"
+-'  122  8  ~/hateoas/hateoas-api.py
+|4,39,122,8,1728016461,"~/hateoas/hateoas-api.py"
+-'  122  8  ~/hateoas/hateoas-api.py
+|4,39,122,8,1728016461,"~/hateoas/hateoas-api.py"
+-'  122  8  ~/hateoas/hateoas-api.py
+|4,39,122,8,1728016461,"~/hateoas/hateoas-api.py"
+-'  122  8  ~/hateoas/hateoas-api.py
+|4,39,122,8,1728016461,"~/hateoas/hateoas-api.py"
+-'  122  8  ~/hateoas/hateoas-api.py
+|4,39,122,8,1728016461,"~/hateoas/hateoas-api.py"
+-'  122  8  ~/hateoas/hateoas-api.py
+|4,39,122,8,1728016461,"~/hateoas/hateoas-api.py"
+-'  122  8  ~/hateoas/hateoas-api.py
+|4,39,122,8,1728016461,"~/hateoas/hateoas-api.py"
+-'  122  8  ~/hateoas/hateoas-api.py
+|4,39,122,8,1728016461,"~/hateoas/hateoas-api.py"
+-'  122  8  ~/hateoas/hateoas-api.py
+|4,39,122,8,1728016461,"~/hateoas/hateoas-api.py"
+-'  167  13  ~/hateoas/hateoas-api.py
+|4,39,167,13,1728006426,"~/hateoas/hateoas-api.py"
+-'  167  13  ~/hateoas/hateoas-api.py
+|4,39,167,13,1728006426,"~/hateoas/hateoas-api.py"
+-'  167  13  ~/hateoas/hateoas-api.py
+|4,39,167,13,1728006426,"~/hateoas/hateoas-api.py"
+-'  167  13  ~/hateoas/hateoas-api.py
+|4,39,167,13,1728006426,"~/hateoas/hateoas-api.py"
+-'  167  13  ~/hateoas/hateoas-api.py
+|4,39,167,13,1728006426,"~/hateoas/hateoas-api.py"
+-'  167  13  ~/hateoas/hateoas-api.py
+|4,39,167,13,1728006426,"~/hateoas/hateoas-api.py"
+-'  167  13  ~/hateoas/hateoas-api.py
+|4,39,167,13,1728006426,"~/hateoas/hateoas-api.py"
+-'  167  13  ~/hateoas/hateoas-api.py
+|4,39,167,13,1728006426,"~/hateoas/hateoas-api.py"
+-'  167  13  ~/hateoas/hateoas-api.py
+|4,39,167,13,1728006426,"~/hateoas/hateoas-api.py"
+-'  167  13  ~/hateoas/hateoas-api.py
+|4,39,167,13,1728006426,"~/hateoas/hateoas-api.py"
+-'  268  17  ~/hateoas/hateoas-api.py
+|4,39,268,17,1728006424,"~/hateoas/hateoas-api.py"
+-'  268  17  ~/hateoas/hateoas-api.py
+|4,39,268,17,1728006424,"~/hateoas/hateoas-api.py"
+-'  268  17  ~/hateoas/hateoas-api.py
+|4,39,268,17,1728006424,"~/hateoas/hateoas-api.py"
+-'  268  17  ~/hateoas/hateoas-api.py
+|4,39,268,17,1728006424,"~/hateoas/hateoas-api.py"
+-'  268  17  ~/hateoas/hateoas-api.py
+|4,39,268,17,1728006424,"~/hateoas/hateoas-api.py"
+-'  268  17  ~/hateoas/hateoas-api.py
+|4,39,268,17,1728006424,"~/hateoas/hateoas-api.py"
+-'  268  17  ~/hateoas/hateoas-api.py
+|4,39,268,17,1728006424,"~/hateoas/hateoas-api.py"
+-'  268  17  ~/hateoas/hateoas-api.py
+|4,39,268,17,1728006424,"~/hateoas/hateoas-api.py"
 
 # Buffer list:
-%~/bash/insert_oldfiles.fish	21	0
-%~/bash/insert_oldfiles.bash	1	0
-%~/.config/setup.bash	1	0
-%~/.config/setup.fish	13	0
+%~/hateoas/todo.txt	1	77
 
 # History of marks within files (newest to oldest):
 
+> ~/hateoas/todo.txt
+	*	1728437583	0
+	"	1	77
+	^	1	78
+	.	1	77
+	+	6	1
+	+	3	57
+	+	4	71
+	+	2	73
+	+	4	83
+	+	3	3
+	+	4	3
+	+	2	3
+	+	4	0
+	+	5	36
+	+	6	0
+	+	5	0
+	+	6	11
+	+	5	0
+	+	6	0
+	+	5	0
+	+	2	0
+	+	5	0
+	+	4	0
+	+	2	78
+	+	4	0
+	+	6	0
+	+	4	0
+	+	5	0
+	+	6	61
+	+	2	0
+	+	1	77
+
 > ~/.config/setup.fish
-	*	1727873290	0
-	"	13	0
-	^	10	0
-	.	13	0
-	+	6	42
-	+	6	0
-	+	6	45
-	+	6	5
-	+	6	0
-	+	6	9
-	+	6	5
-	+	6	0
-	+	6	9
-	+	6	39
-	+	6	9
-	+	6	0
-	+	6	20
-	+	6	19
-	+	6	23
-	+	6	8
-	+	6	23
-	+	6	9
-	+	6	0
-	+	19	1
-	+	6	0
-	+	25	0
-	+	13	0
-	+	13	13
-	+	13	0
-	+	27	21
-	+	27	18
+	*	1728393965	0
+	"	4	25
+	^	4	26
+	.	4	25
+	+	8	0
+	+	8	45
+	+	8	5
+	+	8	0
+	+	8	9
+	+	8	5
+	+	8	0
+	+	8	9
+	+	8	39
+	+	8	9
+	+	8	0
+	+	8	20
+	+	8	19
+	+	8	23
+	+	8	8
+	+	8	23
+	+	8	9
+	+	8	0
+	+	21	1
+	+	8	0
 	+	27	0
-	+	27	42
-	+	27	0
-	+	26	0
-	+	27	0
-	+	6	0
-	+	6	44
-	+	6	0
-	+	6	4
-	+	6	0
-	+	6	7
-	+	6	37
-	+	6	24
-	+	6	7
-	+	6	5
-	+	6	25
-	+	6	13
-	+	6	30
-	+	6	7
-	+	6	0
-	+	6	21
-	+	6	0
-	+	13	0
-	+	13	1
-	+	6	0
-	+	13	0
-	+	13	32
-	+	6	23
-	+	6	0
-	+	6	19
-	+	6	0
-	+	6	26
-	+	6	10
-	+	6	5
-	+	6	0
-	+	6	37
-	+	6	0
-	+	6	22
-	+	6	58
-	+	6	0
-	+	7	30
-	+	13	18
-	+	27	0
+	+	15	0
+	+	15	13
+	+	15	0
+	+	29	21
+	+	29	18
+	+	29	0
+	+	29	42
+	+	29	0
 	+	28	0
 	+	29	0
-	+	28	29
-	+	29	11
-	+	31	34
-	+	32	0
-	+	13	0
-	+	24	55
-	+	24	0
-	+	16	82
-	+	17	80
-	+	1	0
-	+	14	26
-	+	1	13
-	+	16	12
-	+	25	0
-	+	24	11
-	+	32	12
-	+	1	0
-	+	16	0
-	+	24	0
-	+	32	0
-	+	11	33
-	+	12	0
-	+	13	0
-	+	10	0
-	+	13	0
 	+	8	0
-	+	13	0
-
-> ~/bash/insert_oldfiles.fish
-	*	1727873278	0
-	"	21	0
-	^	15	19
-	.	22	0
-	+	1	3
-	+	1	63
-	+	1	120
-	+	1	140
-	+	1	154
-	+	1	0
-	+	1	152
-	+	1	0
-	+	1	24
-	+	1	0
-	+	1	24
-	+	1	0
-	+	1	65
-	+	1	0
-	+	1	31
-	+	1	0
-	+	1	71
-	+	1	0
-	+	1	38
-	+	1	0
-	+	1	9
-	+	1	0
-	+	1	83
-	+	1	0
-	+	1	49
-	+	1	9
-	+	1	0
-	+	17	0
-	+	11	0
-	+	18	0
-	+	14	0
-	+	17	0
-	+	22	0
-	+	14	61
-	+	15	91
-	+	16	33
-	+	10	19
-	+	12	65
-	+	16	30
+	+	8	44
+	+	8	0
+	+	8	4
+	+	8	0
+	+	8	7
+	+	8	37
+	+	8	24
+	+	8	7
+	+	8	5
+	+	8	25
+	+	8	13
+	+	8	30
+	+	8	7
+	+	8	0
+	+	8	21
+	+	8	0
+	+	15	0
+	+	15	1
+	+	8	0
+	+	15	0
+	+	15	32
+	+	8	23
+	+	8	0
+	+	8	19
+	+	8	0
+	+	8	26
+	+	8	10
+	+	8	5
+	+	8	0
+	+	8	37
+	+	8	0
+	+	8	22
+	+	8	58
+	+	8	0
+	+	9	30
 	+	15	18
+	+	29	0
+	+	30	0
+	+	31	0
+	+	30	29
+	+	31	11
+	+	33	34
+	+	34	0
+	+	15	0
+	+	26	55
+	+	26	0
+	+	18	82
+	+	19	80
+	+	1	0
+	+	16	26
+	+	1	13
+	+	18	12
+	+	27	0
+	+	26	11
+	+	34	12
+	+	1	0
+	+	18	0
+	+	26	0
+	+	34	0
+	+	13	33
+	+	14	0
+	+	15	0
 	+	12	0
-	+	22	0
+	+	15	0
+	+	10	0
+	+	15	0
+	+	3	33
+	+	4	25
+
+> ~/.config/tmux/tmux.conf
+	*	1728393719	0
+	"	17	0
+	^	9	93
+	.	9	92
+	+	29	1
+	+	18	37
+	+	18	1
+	+	31	0
+	+	30	34
+	+	1	0
+	+	3	0
+	+	31	0
+	+	29	0
+	+	18	0
+	+	29	1
+	+	18	0
+	+	21	39
+	+	20	19
+	+	21	45
+	+	29	0
+	+	24	1
+	+	30	0
+	+	31	0
+	+	24	0
+	+	29	0
+	+	27	36
+	+	28	0
+	+	26	43
+	+	26	39
+	+	26	82
+	+	27	69
+	+	26	0
+	+	28	0
+	+	31	62
+	+	28	0
+	+	31	0
+	+	31	64
+	+	3	19
+	+	31	0
+	+	33	32
+	+	26	44
+	+	27	30
+	+	24	66
+	+	26	43
+	+	27	30
+	+	27	0
+	+	21	34
+	+	24	73
+	+	37	27
+	+	38	20
+	+	39	21
+	+	40	21
+	+	37	7
+	+	42	82
+	+	40	50
+	+	41	48
+	+	42	54
+	+	39	51
+	+	40	51
+	+	41	49
+	+	39	52
+	+	45	45
+	+	47	0
+	+	48	50
+	+	49	0
+	+	43	0
+	+	2	10
+	+	2	5
+	+	2	0
+	+	7	2
+	+	1	0
+	+	3	9
+	+	5	0
+	+	1	34
+	+	7	0
+	+	1	0
+	+	5	0
+	+	11	0
+	+	2	0
+	+	7	0
+	+	2	0
+	+	11	89
+	+	11	0
+	+	3	6
+	+	5	10
+	+	3	10
+	+	35	20
+	+	36	0
+	+	1	0
+	+	15	41
+	+	13	119
+	+	16	0
+	+	16	1
+	+	11	0
+	+	16	0
+	+	14	147
+	+	14	0
+	+	11	33
+	+	11	0
+	+	59	56
+	+	61	20
+	+	61	0
+	+	10	21
+	+	9	92
+	a	1	9
+	b	1	9
 
 > ~/.config/setup.bash
-	*	1727873267	0
-	"	1	0
+	*	1728393569	0
+	"	19	0
 	.	62	0
 	+	18	0
 	+	13	54
@@ -16071,10 +16183,869 @@ $enumerate(\0)
 	+	63	0
 	+	62	0
 
-> ~/bash/insert_oldfiles.bash
-	*	1727873250	0
+> ~/hateoas/main.sql
+	*	1728386863	0
 	"	1	0
-	.	10	0
+	^	25	28
+	.	25	27
+	+	20	0
+	+	9	283
+	+	9	282
+	+	9	339
+	+	9	283
+	+	52	0
+	+	53	0
+	+	51	2
+	+	52	0
+	+	51	5
+	+	52	31
+	+	54	0
+	+	50	0
+	+	50	103
+	+	50	225
+	+	50	153
+	+	50	226
+	+	3	0
+	+	50	0
+	+	9	215
+	+	20	165
+	+	50	0
+	+	9	282
+	+	50	0
+	+	36	0
+	+	36	119
+	+	50	62
+	+	50	0
+	+	50	37
+	+	50	153
+	+	50	6
+	+	50	78
+	+	36	97
+	+	50	0
+	+	36	97
+	+	50	0
+	+	36	144
+	+	50	75
+	+	36	97
+	+	36	211
+	+	36	97
+	+	36	211
+	+	3	115
+	+	9	289
+	+	20	262
+	+	36	290
+	+	3	22
+	+	1	0
+	+	3	23
+	+	3	62
+	+	3	82
+	+	3	22
+	+	9	0
+	+	8	0
+	+	3	108
+	+	3	0
+	+	9	0
+	+	9	193
+	+	53	0
+	+	1	0
+	+	50	0
+	+	9	136
+	+	20	174
+	+	9	211
+	+	9	186
+	+	20	139
+	+	53	0
+	+	3	0
+	+	36	0
+	+	3	0
+	+	36	0
+	+	9	187
+	+	3	0
+	+	1	0
+	+	3	0
+	+	1	0
+	+	36	228
+	+	36	300
+	+	36	306
+	+	36	242
+	+	44	44
+	+	44	118
+	+	3	26
+	+	3	38
+	+	9	26
+	+	44	13
+	+	44	0
+	+	44	43
+	+	49	0
+	+	50	0
+	+	31	104
+	+	31	100
+	+	31	103
+	+	31	101
+	+	31	90
+	+	3	0
+	+	1	0
+	+	33	32
+	+	26	0
+	+	25	27
+
+> ~/hateoas/hateoas-api.py
+	*	1728015771	0
+	"	122	8
+	.	262	0
+	+	688	27
+	+	688	32
+	+	688	20
+	+	688	161
+	+	688	38
+	+	688	156
+	+	688	153
+	+	904	54
+	+	904	0
+	+	936	0
+	+	936	241
+	+	540	157
+	+	540	59
+	+	540	83
+	+	540	108
+	+	540	111
+	+	371	57
+	+	371	65
+	+	371	0
+	+	371	77
+	+	371	0
+	+	371	49
+	+	87	0
+	+	87	1
+	+	87	0
+	+	1	0
+	+	87	0
+	+	897	0
+	+	898	0
+	+	897	8
+	+	896	0
+	+	895	8
+	+	426	15
+	+	423	12
+	+	251	28
+	+	231	168
+	+	217	178
+	+	218	29
+	+	219	26
+	+	220	27
+	+	221	22
+	+	222	19
+	+	223	18
+	+	224	14
+	+	225	13
+	+	226	17
+	+	227	17
+	+	228	19
+	+	229	21
+	+	230	25
+	+	231	25
+	+	232	29
+	+	233	35
+	+	234	33
+	+	235	37
+	+	236	37
+	+	237	34
+	+	238	33
+	+	239	30
+	+	240	26
+	+	241	22
+	+	242	19
+	+	243	18
+	+	244	14
+	+	245	10
+	+	247	6
+	+	248	9
+	+	270	74
+	+	270	0
+	+	277	13
+	+	277	0
+	+	277	26
+	+	277	25
+	+	270	0
+	+	277	0
+	+	277	14
+	+	277	23
+	+	270	0
+	+	277	0
+	+	270	0
+	+	263	11
+	+	263	0
+	+	270	11
+	+	270	0
+	+	274	14
+	+	274	0
+	+	270	0
+	+	263	0
+	+	262	0
+	+	269	11
+	+	270	0
+	+	271	17
+	+	272	28
+	+	271	28
+	+	272	1
+	+	271	52
+	+	272	35
+	+	273	37
+	+	262	0
+	g	934	0
+
+> ~/hateoas/Types.py
+	*	1728006373	0
+	"	61	24
+	^	15	62
+	.	15	61
+	+	15	20
+	+	13	0
+	+	15	23
+	+	16	8
+	+	15	0
+	+	22	0
+	+	14	0
+	+	23	21
+	+	43	8
+	+	24	8
+	+	24	35
+	+	25	36
+	+	26	102
+	+	27	41
+	+	28	15
+	+	24	0
+	+	28	38
+	+	28	15
+	+	28	41
+	+	28	35
+	+	28	83
+	+	27	0
+	+	26	66
+	+	27	23
+	+	28	117
+	+	28	19
+	+	29	84
+	+	30	25
+	+	32	30
+	+	33	103
+	+	34	31
+	+	35	23
+	+	36	8
+	+	38	26
+	+	39	44
+	+	47	11
+	+	47	15
+	+	20	27
+	+	15	61
+
+> ~/.vim/coc-settings.json
+	*	1728004889	0
+	"	9	51
+	^	9	52
+	.	9	51
+	+	41	0
+	+	32	34
+	+	41	0
+	+	38	0
+	+	32	0
+	+	4	0
+	+	29	0
+	+	4	0
+	+	38	0
+	+	33	37
+	+	3	38
+	+	14	0
+	+	11	33
+	+	14	0
+	+	12	49
+	+	14	0
+	+	11	0
+	+	13	131
+	+	12	78
+	+	11	0
+	+	26	0
+	+	46	0
+	+	46	25
+	+	46	0
+	+	46	14
+	+	46	44
+	+	46	0
+	+	46	71
+	+	46	33
+	+	46	0
+	+	46	16
+	+	46	0
+	+	46	25
+	+	46	11
+	+	46	48
+	+	46	30
+	+	46	0
+	+	26	6
+	+	35	29
+	+	38	33
+	+	38	0
+	+	35	0
+	+	35	6
+	+	35	5
+	+	35	0
+	+	36	28
+	+	37	32
+	+	41	0
+	+	39	39
+	+	41	0
+	+	46	0
+	+	46	69
+	+	46	34
+	+	46	30
+	+	46	44
+	+	46	18
+	+	46	0
+	+	44	51
+	+	46	41
+	+	40	33
+	+	11	0
+	+	20	0
+	+	18	4
+	+	19	39
+	+	11	0
+	+	8	50
+	+	10	0
+	+	46	27
+	+	46	31
+	+	46	6
+	+	32	6
+	+	32	33
+	+	8	225
+	+	4	49
+	+	8	6
+	+	10	221
+	+	10	50
+	+	8	4
+	+	10	4
+	+	8	6
+	+	10	6
+	+	8	4
+	+	4	0
+	+	6	0
+	+	8	49
+	+	5	0
+	+	7	0
+	+	26	0
+	+	35	0
+	+	46	0
+	+	32	0
+	+	31	0
+	+	44	51
+	+	10	0
+	+	8	0
+	+	10	0
+	+	8	52
+	+	10	4
+	+	8	4
+	+	9	51
+
+> ~/servers/hateoas.config.js
+	*	1728004661	0
+	"	11	0
+	^	5	33
+	.	7	0
+	+	32	0
+	+	33	19
+	+	34	28
+	+	35	48
+	+	37	0
+	+	40	0
+	+	39	5
+	+	32	0
+	+	32	23
+	+	32	11
+	+	32	9
+	+	32	0
+	+	11	0
+	+	10	5
+	+	10	0
+	+	10	8
+	+	3	0
+	+	6	35
+	+	10	0
+	+	10	13
+	+	10	25
+	+	10	65
+	+	10	0
+	+	7	8
+	+	6	0
+	+	4	22
+	+	5	32
+	+	7	0
+	+	8	0
+	+	7	0
+
+> ~/sqlite-editor/todo.txt
+	*	1728004618	0
+	"	1	2
+	^	1	81
+	.	1	0
+	+	3	87
+	+	2	94
+	+	2	0
+	+	3	0
+	+	1	0
+	+	2	1
+	+	3	1
+	+	1	80
+	+	1	0
+
+> ~/hateoas/templates/sync_video_to_video.html
+	*	1727962621	0
+	"	31	34
+	^	62	50
+	.	62	49
+	+	354	0
+	+	299	0
+	+	269	0
+	+	224	0
+	+	272	0
+	+	295	12
+	+	294	14
+	+	274	14
+	+	271	42
+	+	273	0
+	+	271	42
+	+	295	12
+	+	224	0
+	+	222	26
+	+	270	20
+	+	300	55
+	+	301	23
+	+	301	43
+	+	301	26
+	+	301	34
+	+	301	41
+	+	302	0
+	+	301	46
+	+	300	50
+	+	110	0
+	+	108	46
+	+	107	60
+	+	106	13
+	+	109	13
+	+	103	0
+	+	111	0
+	+	103	0
+	+	191	0
+	+	74	0
+	+	74	68
+	+	74	63
+	+	196	4
+	+	203	4
+	+	198	12
+	+	201	0
+	+	198	15
+	+	205	8
+	+	208	0
+	+	201	47
+	+	199	49
+	+	208	29
+	+	208	0
+	+	201	38
+	+	209	0
+	+	199	0
+	+	201	0
+	+	74	0
+	+	71	0
+	+	71	74
+	+	71	0
+	+	71	15
+	+	71	16
+	+	71	28
+	+	71	0
+	+	71	12
+	+	31	0
+	+	32	28
+	+	70	0
+	+	50	32
+	+	72	0
+	+	73	25
+	+	71	0
+	+	68	15
+	+	66	20
+	+	69	21
+	+	68	59
+	+	31	0
+	+	18	28
+	+	26	30
+	+	18	0
+	+	17	0
+	+	26	16
+	+	20	16
+	+	67	71
+	+	68	20
+	+	68	28
+	+	68	0
+	+	31	90
+	+	31	8
+	+	34	0
+	+	33	33
+	+	48	0
+	+	46	26
+	+	46	0
+	+	54	54
+	+	55	0
+	+	54	0
+	+	68	59
+	+	69	0
+	+	68	59
+	+	54	49
+	+	55	49
+	+	61	49
+	+	62	49
+
+> ~/tooling/remaps.txt
+	*	1727960297	0
+	"	27	0
+	.	1	0
+	+	20	0
+	+	15	0
+	+	13	3
+	+	18	19
+	+	13	11
+	+	25	17
+	+	23	22
+	+	26	5
+	+	26	0
+	+	27	20
+	+	26	0
+	+	28	0
+	+	25	0
+	+	24	0
+	+	20	0
+	+	19	0
+	+	15	0
+	+	14	0
+	+	12	0
+	+	11	35
+	+	7	0
+	+	1	19
+	+	1	0
+	+	5	144
+	+	7	0
+	+	6	103
+	+	4	0
+	+	5	4
+	+	6	4
+	+	1	0
+
+> ~/.config/starship/starship.toml
+	*	1727958451	0
+	"	1	0
+	^	8	24
+	.	8	0
+	+	4	15
+	+	4	39
+	+	4	25
+	+	4	0
+	+	2	51
+	+	16	0
+	+	12	0
+	+	7	0
+	+	5	0
+	+	7	0
+	+	4	0
+	+	7	0
+	+	6	0
+	+	5	0
+	+	6	0
+	+	7	8
+	+	7	0
+	+	12	0
+	+	16	19
+	+	16	31
+	+	16	1
+	+	16	0
+	+	4	0
+	+	4	16
+	+	16	10
+	+	4	22
+	+	16	7
+	+	16	1
+	+	16	9
+	+	16	16
+	+	4	24
+	+	16	17
+	+	16	50
+	+	16	0
+	+	4	22
+	+	16	19
+	+	4	0
+	+	16	20
+	+	16	24
+	+	16	0
+	+	20	0
+	+	4	0
+	+	21	0
+	+	4	10
+	+	17	20
+	+	4	17
+	+	20	10
+	+	17	28
+	+	4	0
+	+	16	17
+	+	17	26
+	+	18	31
+	+	19	9
+	+	17	60
+	+	21	0
+	+	4	21
+	+	21	0
+	+	20	10
+	+	21	0
+	+	21	86
+	+	20	0
+	+	21	2
+	+	17	0
+	+	21	0
+	+	17	11
+	+	21	0
+	+	17	0
+	+	19	0
+	+	18	15
+	+	17	17
+	+	17	113
+	+	19	23
+	+	20	11
+	+	20	105
+	+	21	0
+	+	20	8
+	+	20	107
+	+	20	7
+	+	20	107
+	+	17	73
+	+	20	67
+	+	21	0
+	+	4	0
+	+	19	44
+	+	18	0
+	+	20	0
+	+	14	25
+	+	14	0
+	+	19	40
+	+	20	0
+	+	17	11
+	+	17	0
+	+	17	108
+	+	21	10
+	+	21	0
+	+	18	11
+	+	19	0
+	+	21	0
+	+	18	12
+	+	8	0
+
+> ~/bash/pwd-oldfiles.bash
+	*	1727955971	0
+	"	13	1
+	.	2	0
+	+	1	0
+	+	1	10
+	+	1	0
+	+	1	1
+	+	1	0
+	+	1	71
+	+	1	0
+	+	2	53
+	+	1	0
+	+	6	5
+	+	10	7
+	+	11	0
+	+	12	0
+	+	4	0
+	+	5	47
+	+	2	0
+	+	2	119
+	+	2	0
+
+> ~/bash/oldfiles.bash
+	*	1727924106	0
+	"	1	0
+	^	1	1
+	.	2	98
+	+	2	1
+	+	2	12
+	+	2	49
+	+	2	12
+	+	2	0
+	+	3	1
+	+	1	10
+	+	2	62
+	+	2	34
+	+	2	1
+	+	2	16
+	+	2	0
+	+	6	33
+	+	2	68
+	+	3	66
+	+	3	0
+	+	2	13
+	+	3	23
+	+	4	51
+	+	6	28
+	+	14	22
+	+	2	107
+	+	8	0
+	+	5	0
+	+	1	0
+	+	7	0
+	+	2	98
+
+> ~/.config/alias.bash
+	*	1727924094	0
+	"	28	1
+	^	17	16
+	.	17	15
+	+	26	32
+	+	16	72
+	+	18	38
+	+	30	0
+	+	28	0
+	+	15	0
+	+	33	0
+	+	31	8
+	+	28	0
+	+	31	33
+	+	32	6
+	+	31	1
+	+	33	0
+	+	32	108
+	+	32	6
+	+	30	1
+	+	18	162
+	+	18	14
+	+	18	163
+	+	22	169
+	+	22	0
+	+	18	58
+	+	33	0
+	+	19	0
+	+	20	17
+	+	21	6
+	+	11	58
+	+	12	26
+	+	21	54
+	+	16	41
+	+	17	15
+
+> ~/oldfiles-fzf/index.txt
+	*	1727923867	0
+	"	11	13
+	^	14	1
+	.	4	0
+	+	14	19
+	+	7	0
+	+	1	12
+	+	1	0
+	+	7	15
+	+	8	0
+	+	9	0
+	+	7	15
+	+	8	0
+	+	9	20
+	+	10	0
+	+	12	44
+	+	13	0
+	+	2	22
+	+	7	38
+	+	9	0
+	+	7	50
+	+	9	56
+	+	12	61
+	+	6	9
+	+	1	0
+	+	6	44
+	+	3	10
+	+	6	7
+	+	4	18
+	+	3	52
+	+	6	0
+	+	6	16
+	+	8	16
+	+	10	17
+	+	11	21
+	+	13	24
+	+	14	24
+	+	4	19
+	+	6	0
+	+	5	0
+	+	7	0
+	+	9	0
+	+	12	0
+	+	4	0
+	+	3	0
+	+	2	0
+	+	14	0
+	+	4	26
+	+	2	42
+	+	1	0
+	+	15	0
+	+	4	0
+
+> ~/bash/insert_oldfiles.fish
+	*	1727921774	0
+	"	1	0
+	^	2	6
+	.	3	24
+	+	1	3
+	+	1	63
+	+	1	120
+	+	1	140
+	+	1	154
+	+	1	0
+	+	1	152
+	+	1	0
+	+	1	24
+	+	1	0
+	+	1	24
+	+	1	0
+	+	1	65
+	+	1	0
+	+	1	31
+	+	1	0
+	+	1	71
+	+	1	0
+	+	1	38
+	+	1	0
+	+	1	9
+	+	1	0
+	+	1	83
+	+	1	0
+	+	1	49
+	+	1	9
+	+	1	0
+	+	13	0
+	+	7	0
+	+	14	0
+	+	10	0
+	+	13	0
+	+	18	0
+	+	10	61
+	+	11	91
+	+	12	33
+	+	6	19
+	+	8	65
+	+	12	30
+	+	11	18
+	+	8	0
+	+	18	0
+	+	2	0
+	+	3	0
+	+	2	5
+	+	3	24
+
+> ~/bash/insert_oldfiles.bash
+	*	1727920020	0
+	"	5	0
+	^	5	1
+	.	5	0
 	+	1	33
 	+	1	14
 	+	1	13
@@ -16105,6 +17076,16 @@ $enumerate(\0)
 	+	1	0
 	+	2	0
 	+	10	0
+	+	5	0
+
+> ~/tooling/expansions.txt
+	*	1727919833	0
+	"	1	0
+	^	1	16
+	.	1	15
+	+	5	15
+	+	2	0
+	+	1	15
 
 > ~/.config/functions.fish
 	*	1727872985	0
@@ -16192,29 +17173,6 @@ $enumerate(\0)
 	+	32	51
 	+	51	27
 	+	52	0
-
-> ~/bash/pwd-oldfiles.bash
-	*	1727866239	0
-	"	1	0
-	^	2	120
-	.	2	119
-	+	1	0
-	+	1	10
-	+	1	0
-	+	1	1
-	+	1	0
-	+	1	71
-	+	1	0
-	+	2	53
-	+	1	0
-	+	6	5
-	+	10	7
-	+	11	0
-	+	12	0
-	+	4	0
-	+	5	47
-	+	2	0
-	+	2	119
 
 > ~/.config/bindings.inputrc
 	*	1727866123	0
@@ -16403,39 +17361,6 @@ $enumerate(\0)
 	*	1727860330	0
 	"	24	23
 
-> ~/bash/oldfiles.bash
-	*	1727860203	0
-	"	2	0
-	^	2	99
-	.	2	98
-	+	2	1
-	+	2	12
-	+	2	49
-	+	2	12
-	+	2	0
-	+	3	1
-	+	1	10
-	+	2	62
-	+	2	34
-	+	2	1
-	+	2	16
-	+	2	0
-	+	6	33
-	+	2	68
-	+	3	66
-	+	3	0
-	+	2	13
-	+	3	23
-	+	4	51
-	+	6	28
-	+	14	22
-	+	2	107
-	+	8	0
-	+	5	0
-	+	1	0
-	+	7	0
-	+	2	98
-
 > ~/.config/fzf/.fzfrc
 	*	1727860183	0
 	"	13	0
@@ -16478,149 +17403,6 @@ $enumerate(\0)
 	+	13	0
 	+	12	0
 	+	13	0
-
-> ~/.config/tmux/tmux.conf
-	*	1727860167	0
-	"	54	0
-	.	58	0
-	+	15	30
-	+	26	1
-	+	15	37
-	+	15	1
-	+	28	0
-	+	27	34
-	+	1	0
-	+	3	0
-	+	28	0
-	+	26	0
-	+	15	0
-	+	26	1
-	+	15	0
-	+	18	39
-	+	17	19
-	+	18	45
-	+	26	0
-	+	21	1
-	+	27	0
-	+	28	0
-	+	21	0
-	+	26	0
-	+	24	36
-	+	25	0
-	+	23	43
-	+	23	39
-	+	23	82
-	+	24	69
-	+	23	0
-	+	25	0
-	+	28	62
-	+	25	0
-	+	28	0
-	+	28	64
-	+	3	19
-	+	28	0
-	+	30	32
-	+	23	44
-	+	24	30
-	+	21	66
-	+	23	43
-	+	24	30
-	+	24	0
-	+	18	34
-	+	21	73
-	+	34	27
-	+	35	20
-	+	36	21
-	+	37	21
-	+	34	7
-	+	39	82
-	+	37	50
-	+	38	48
-	+	39	54
-	+	36	51
-	+	37	51
-	+	38	49
-	+	36	52
-	+	42	45
-	+	44	0
-	+	45	50
-	+	46	0
-	+	40	0
-	+	2	10
-	+	2	5
-	+	2	0
-	+	7	2
-	+	1	0
-	+	3	9
-	+	5	0
-	+	1	34
-	+	7	0
-	+	1	0
-	+	5	0
-	+	8	0
-	+	2	0
-	+	7	0
-	+	2	0
-	+	8	89
-	+	8	0
-	+	3	6
-	+	5	10
-	+	3	10
-	+	32	20
-	+	33	0
-	+	1	0
-	+	12	41
-	+	10	119
-	+	13	0
-	+	13	1
-	+	8	0
-	+	13	0
-	+	11	147
-	+	11	0
-	+	8	33
-	+	8	0
-	+	56	56
-	+	58	20
-	+	58	0
-	a	1	9
-	b	1	9
-
-> ~/tooling/expansions.txt
-	*	1727843767	0
-	"	1	0
-	^	1	16
-	.	1	15
-	+	5	15
-	+	2	0
-	+	1	15
-
-> ~/tooling/remaps.txt
-	*	1727843344	0
-	"	1	0
-	.	1	0
-	+	15	0
-	+	10	0
-	+	8	3
-	+	13	19
-	+	8	11
-	+	20	17
-	+	18	22
-	+	21	5
-	+	21	0
-	+	22	20
-	+	21	0
-	+	23	0
-	+	20	0
-	+	19	0
-	+	15	0
-	+	14	0
-	+	10	0
-	+	9	0
-	+	7	0
-	+	6	35
-	+	2	0
-	+	1	19
-	+	1	0
 
 > ~/tooling/remaps-hjkl-jkl;.txt
 	*	1727842971	0
@@ -17270,43 +18052,6 @@ $enumerate(\0)
 	.	1	0
 	+	1	0
 
-> ~/.config/alias.bash
-	*	1727777386	0
-	"	1	0
-	^	17	16
-	.	17	15
-	+	26	32
-	+	16	72
-	+	18	38
-	+	30	0
-	+	28	0
-	+	15	0
-	+	33	0
-	+	31	8
-	+	28	0
-	+	31	33
-	+	32	6
-	+	31	1
-	+	33	0
-	+	32	108
-	+	32	6
-	+	30	1
-	+	18	162
-	+	18	14
-	+	18	163
-	+	22	169
-	+	22	0
-	+	18	58
-	+	33	0
-	+	19	0
-	+	20	17
-	+	21	6
-	+	11	58
-	+	12	26
-	+	21	54
-	+	16	41
-	+	17	15
-
 > ~/pyscripts/print_todo.py
 	*	1727776298	0
 	"	61	8
@@ -17462,112 +18207,6 @@ $enumerate(\0)
 > /proc/33923/fd/63
 	*	1727664129	0
 	"	1	0
-
-> ~/.config/starship/starship.toml
-	*	1727663730	0
-	"	20	0
-	^	18	15
-	.	18	12
-	+	4	7
-	+	4	15
-	+	4	39
-	+	4	25
-	+	4	0
-	+	2	51
-	+	16	0
-	+	12	0
-	+	7	0
-	+	5	0
-	+	7	0
-	+	4	0
-	+	7	0
-	+	6	0
-	+	5	0
-	+	6	0
-	+	7	8
-	+	7	0
-	+	12	0
-	+	16	19
-	+	16	31
-	+	16	1
-	+	16	0
-	+	4	0
-	+	4	16
-	+	16	10
-	+	4	22
-	+	16	7
-	+	16	1
-	+	16	9
-	+	16	16
-	+	4	24
-	+	16	17
-	+	16	50
-	+	16	0
-	+	4	22
-	+	16	19
-	+	4	0
-	+	16	20
-	+	16	24
-	+	16	0
-	+	20	0
-	+	4	0
-	+	21	0
-	+	4	10
-	+	17	20
-	+	4	17
-	+	20	10
-	+	17	28
-	+	4	0
-	+	16	17
-	+	17	26
-	+	18	31
-	+	19	9
-	+	17	60
-	+	21	0
-	+	4	21
-	+	21	0
-	+	20	10
-	+	21	0
-	+	21	86
-	+	20	0
-	+	21	2
-	+	17	0
-	+	21	0
-	+	17	11
-	+	21	0
-	+	17	0
-	+	19	0
-	+	18	15
-	+	17	17
-	+	17	113
-	+	19	23
-	+	20	11
-	+	20	105
-	+	21	0
-	+	20	8
-	+	20	107
-	+	20	7
-	+	20	107
-	+	17	73
-	+	20	67
-	+	21	0
-	+	4	0
-	+	19	44
-	+	18	0
-	+	20	0
-	+	14	25
-	+	14	0
-	+	19	40
-	+	20	0
-	+	17	11
-	+	17	0
-	+	17	108
-	+	21	10
-	+	21	0
-	+	18	11
-	+	19	0
-	+	21	0
-	+	18	12
 
 > ~/.config/git/token.gitconfig
 	*	1727663543	0
@@ -18134,213 +18773,6 @@ $enumerate(\0)
 	+	173	0
 	+	172	0
 	+	165	5
-
-> ~/hateoas/hateoas-api.py
-	*	1727424695	0
-	"	34	25
-	.	26	0
-	+	656	29
-	+	667	17
-	+	657	0
-	+	926	46
-	+	921	80
-	+	922	25
-	+	926	16
-	+	889	13
-	+	892	116
-	+	892	81
-	+	892	0
-	+	890	0
-	+	921	0
-	+	968	24
-	+	973	78
-	+	994	123
-	+	985	86
-	+	987	0
-	+	985	35
-	+	987	33
-	+	975	159
-	+	987	0
-	+	989	0
-	+	909	0
-	+	909	58
-	+	909	63
-	+	934	237
-	+	909	0
-	+	542	0
-	+	601	58
-	+	602	59
-	+	684	80
-	+	658	21
-	+	665	97
-	+	666	16
-	+	661	51
-	+	665	161
-	+	665	31
-	+	665	102
-	+	602	63
-	+	665	22
-	+	665	0
-	+	660	103
-	+	665	0
-	+	660	0
-	+	661	0
-	+	661	27
-	+	661	47
-	+	664	92
-	+	664	29
-	+	664	0
-	+	660	103
-	+	661	0
-	+	664	23
-	+	665	0
-	+	664	23
-	+	660	0
-	+	665	0
-	+	660	0
-	+	659	0
-	+	661	51
-	+	661	0
-	+	662	0
-	+	663	31
-	+	656	27
-	+	658	32
-	+	660	20
-	+	660	161
-	+	660	38
-	+	662	156
-	+	662	153
-	+	883	54
-	+	893	0
-	+	883	0
-	+	909	0
-	+	905	0
-	+	934	241
-	+	435	157
-	+	440	59
-	+	441	83
-	+	435	108
-	+	441	111
-	+	240	57
-	+	240	65
-	+	240	0
-	+	240	77
-	+	240	0
-	+	232	0
-	+	234	49
-	+	27	0
-	+	23	0
-	+	27	0
-	+	2	1
-	+	27	0
-	+	2	0
-	+	26	0
-	g	934	0
-
-> ~/.vim/coc-settings.json
-	*	1727364352	0
-	"	8	4
-	^	8	52
-	.	8	4
-	+	41	0
-	+	32	34
-	+	41	0
-	+	38	0
-	+	32	0
-	+	4	0
-	+	29	0
-	+	4	0
-	+	38	0
-	+	33	37
-	+	3	38
-	+	14	0
-	+	11	33
-	+	14	0
-	+	12	49
-	+	14	0
-	+	11	0
-	+	13	131
-	+	12	78
-	+	11	0
-	+	26	0
-	+	46	0
-	+	46	25
-	+	46	0
-	+	46	14
-	+	46	44
-	+	46	0
-	+	46	71
-	+	46	33
-	+	46	0
-	+	46	16
-	+	46	0
-	+	46	25
-	+	46	11
-	+	46	48
-	+	46	30
-	+	46	0
-	+	26	6
-	+	35	29
-	+	38	33
-	+	38	0
-	+	35	0
-	+	35	6
-	+	35	5
-	+	35	0
-	+	36	28
-	+	37	32
-	+	41	0
-	+	39	39
-	+	41	0
-	+	46	0
-	+	46	69
-	+	46	34
-	+	46	30
-	+	46	44
-	+	46	18
-	+	46	0
-	+	44	51
-	+	46	41
-	+	40	33
-	+	11	0
-	+	20	0
-	+	18	4
-	+	19	39
-	+	11	0
-	+	8	50
-	+	10	0
-	+	46	27
-	+	46	31
-	+	46	6
-	+	32	6
-	+	32	33
-	+	8	225
-	+	4	49
-	+	8	6
-	+	9	221
-	+	9	50
-	+	8	4
-	+	9	4
-	+	8	6
-	+	9	6
-	+	8	4
-	+	4	0
-	+	6	0
-	+	8	49
-	+	5	0
-	+	7	0
-	+	26	0
-	+	35	0
-	+	46	0
-	+	32	0
-	+	31	0
-	+	44	51
-	+	9	0
-	+	8	0
-	+	9	0
-	+	8	52
-	+	9	4
-	+	8	4
 
 > ~/hateoas/fd
 	*	1727362326	0
@@ -25554,17 +25986,6 @@ $enumerate(\0)
 	a	74	12
 	b	74	12
 
-> ~/sqlite-editor/todo.txt
-	*	1723659377	0
-	"	1	0
-	^	1	0
-	.	1	0
-	+	3	87
-	+	2	94
-	+	2	0
-	+	3	0
-	+	1	0
-
 > ~/.vim/plugged/tabular/doc/Tabular.txt
 	*	1723658905	0
 	"	254	0
@@ -27410,256 +27831,6 @@ $enumerate(\0)
 	+	6	4
 	+	6	5
 	+	6	0
-
-> ~/hateoas/main.sql
-	*	1723065248	0
-	"	1	0
-	^	25	28
-	.	25	27
-	+	20	0
-	+	9	283
-	+	9	282
-	+	9	339
-	+	9	283
-	+	52	0
-	+	53	0
-	+	51	2
-	+	52	0
-	+	51	5
-	+	52	31
-	+	54	0
-	+	50	0
-	+	50	103
-	+	50	225
-	+	50	153
-	+	50	226
-	+	3	0
-	+	50	0
-	+	9	215
-	+	20	165
-	+	50	0
-	+	9	282
-	+	50	0
-	+	36	0
-	+	36	119
-	+	50	62
-	+	50	0
-	+	50	37
-	+	50	153
-	+	50	6
-	+	50	78
-	+	36	97
-	+	50	0
-	+	36	97
-	+	50	0
-	+	36	144
-	+	50	75
-	+	36	97
-	+	36	211
-	+	36	97
-	+	36	211
-	+	3	115
-	+	9	289
-	+	20	262
-	+	36	290
-	+	3	22
-	+	1	0
-	+	3	23
-	+	3	62
-	+	3	82
-	+	3	22
-	+	9	0
-	+	8	0
-	+	3	108
-	+	3	0
-	+	9	0
-	+	9	193
-	+	53	0
-	+	1	0
-	+	50	0
-	+	9	136
-	+	20	174
-	+	9	211
-	+	9	186
-	+	20	139
-	+	53	0
-	+	3	0
-	+	36	0
-	+	3	0
-	+	36	0
-	+	9	187
-	+	3	0
-	+	1	0
-	+	3	0
-	+	1	0
-	+	36	228
-	+	36	300
-	+	36	306
-	+	36	242
-	+	44	44
-	+	44	118
-	+	3	26
-	+	3	38
-	+	9	26
-	+	44	13
-	+	44	0
-	+	44	43
-	+	49	0
-	+	50	0
-	+	31	104
-	+	31	100
-	+	31	103
-	+	31	101
-	+	31	90
-	+	3	0
-	+	1	0
-	+	33	32
-	+	26	0
-	+	25	27
-
-> ~/hateoas/Types.py
-	*	1723065054	0
-	"	22	0
-	^	15	62
-	.	15	61
-	+	15	20
-	+	13	0
-	+	15	23
-	+	16	8
-	+	15	0
-	+	22	0
-	+	14	0
-	+	23	21
-	+	43	8
-	+	24	8
-	+	24	35
-	+	25	36
-	+	26	102
-	+	27	41
-	+	28	15
-	+	24	0
-	+	28	38
-	+	28	15
-	+	28	41
-	+	28	35
-	+	28	83
-	+	27	0
-	+	26	66
-	+	27	23
-	+	28	117
-	+	28	19
-	+	29	84
-	+	30	25
-	+	32	30
-	+	33	103
-	+	34	31
-	+	35	23
-	+	36	8
-	+	38	26
-	+	39	44
-	+	47	11
-	+	47	15
-	+	20	27
-	+	15	61
-
-> ~/hateoas/templates/sync_video_to_video.html
-	*	1723062979	0
-	"	46	38
-	^	46	39
-	.	46	0
-	+	272	0
-	+	224	0
-	+	268	17
-	+	322	0
-	+	354	0
-	+	299	0
-	+	269	0
-	+	224	0
-	+	272	0
-	+	295	12
-	+	294	14
-	+	274	14
-	+	271	42
-	+	273	0
-	+	271	42
-	+	295	12
-	+	224	0
-	+	222	26
-	+	270	20
-	+	300	55
-	+	301	23
-	+	301	43
-	+	301	26
-	+	301	34
-	+	301	41
-	+	302	0
-	+	301	46
-	+	300	50
-	+	110	0
-	+	108	46
-	+	107	60
-	+	106	13
-	+	109	13
-	+	103	0
-	+	111	0
-	+	103	0
-	+	191	0
-	+	74	0
-	+	74	68
-	+	74	63
-	+	196	4
-	+	203	4
-	+	198	12
-	+	201	0
-	+	198	15
-	+	205	8
-	+	208	0
-	+	201	47
-	+	199	49
-	+	208	29
-	+	208	0
-	+	201	38
-	+	209	0
-	+	199	0
-	+	201	0
-	+	74	0
-	+	71	0
-	+	71	74
-	+	71	0
-	+	71	15
-	+	71	16
-	+	71	28
-	+	71	0
-	+	71	12
-	+	31	0
-	+	32	28
-	+	70	0
-	+	50	32
-	+	72	0
-	+	73	25
-	+	71	0
-	+	68	15
-	+	66	20
-	+	69	21
-	+	68	59
-	+	31	0
-	+	18	28
-	+	26	30
-	+	18	0
-	+	17	0
-	+	26	16
-	+	20	16
-	+	67	71
-	+	68	20
-	+	68	28
-	+	68	0
-	+	31	90
-	+	31	8
-	+	34	0
-	+	33	33
-	+	48	0
-	+	46	26
-	+	46	0
 
 > ~/hateoas/static/css/hateoas.css
 	*	1723060144	0
@@ -36405,42 +36576,6 @@ $enumerate(\0)
 	+	5	7
 	+	3	52
 
-> ~/servers/hateoas.config.js
-	*	1717913067	0
-	"	1	0
-	^	5	33
-	.	7	0
-	+	32	0
-	+	33	19
-	+	34	28
-	+	35	48
-	+	37	0
-	+	40	0
-	+	39	5
-	+	32	0
-	+	32	23
-	+	32	11
-	+	32	9
-	+	32	0
-	+	11	0
-	+	10	5
-	+	10	0
-	+	10	8
-	+	3	0
-	+	6	35
-	+	10	0
-	+	10	13
-	+	10	25
-	+	10	65
-	+	10	0
-	+	7	8
-	+	6	0
-	+	4	22
-	+	5	32
-	+	7	0
-	+	8	0
-	+	7	0
-
 > ~/ui-components-css/app.py
 	*	1717912653	0
 	"	1	0
@@ -38787,37 +38922,6 @@ $enumerate(\0)
 > /tmp/viewlog_last_command.json
 	*	1716174944	0
 	"	1	0
-
-> ~/hateoas/todo.txt
-	*	1716157517	0
-	"	5	0
-	^	5	62
-	.	5	61
-	+	5	1
-	+	2	57
-	+	3	71
-	+	1	73
-	+	3	83
-	+	2	3
-	+	3	3
-	+	1	3
-	+	3	0
-	+	4	36
-	+	5	0
-	+	4	0
-	+	5	11
-	+	4	0
-	+	5	0
-	+	4	0
-	+	1	0
-	+	4	0
-	+	3	0
-	+	1	78
-	+	3	0
-	+	5	0
-	+	3	0
-	+	4	0
-	+	5	61
 
 > ~/.vim/plugin/colorscheme.vim
 	*	1716154947	0
