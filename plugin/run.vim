@@ -40,25 +40,9 @@ function! s:RunPython()
         else
             let command = '!start cmd /k python ' . expand("%:p")
         endif
-        " let command = '!start wt -w 0 nt -p "Command Prompt" python ' . expand("%:p")
         execute command
     else
-        " let command = 'vert terminal python ' . expand("%:p")
         let parent_folder_name = expand("%:p:h:t")
-
-        " if parent_folder_name == 'waivek'
-        "     let filename_without_extension = expand("%:t:r")
-        "     let command = 'vert terminal python -m waivek.' . filename_without_extension
-        " else
-        "     let last_line = getline("$")
-        "     if last_line =~ '^# run.vim:'
-        "         let args = substitute(last_line, '^# run.vim:', '', '')
-        "         let args = trim(args)
-        "         let command = 'vert terminal python ' . expand("%:p") . ' ' . args
-        "     else
-        "         let command = 'vert terminal python %'
-        "     endif
-        " endif
 
         let last_line = getline("$")
         if last_line =~ '^# run.vim:'
@@ -141,5 +125,33 @@ function! s:Run()
     endif
 endfunction
 
+function! s:RunCreateCommandCompletion(A, L, P)
+    let l:options = [ "vertical (default)", "horizontal", "full" ]
+    return filter(l:options, 'v:val =~ "^' . a:A . '"')
+endfunction
+
+function! s:RunCreateCommand(run_command_name)
+    let l:last_line = getline("$")
+    if l:last_line =~ '^# run.vim:'
+        echon "Last line already contains run.vim config: "
+        echohl String | echo l:last_line | echohl None
+        return
+    endif
+    let l:run_command_name = a:run_command_name
+    if l:run_command_name == "horizontal"
+        let l:run_command = 'term python %'
+    elseif l:run_command_name == "full"
+        let l:run_command = 'term ++rows=100 python %'
+    elseif l:run_command_name == "vertical (default)"
+        let l:run_command = 'vert term python %'
+    else
+        echo printf("Invalid run command name: %s", l:run_command_name)
+        return
+    endif
+    call append("$", printf("# run.vim: %s", l:run_command))
+    normal! G
+endfunction
+
 nnoremap <Plug>Run :call <SID>Run()<CR>
 
+command! -complete=customlist,s:RunCreateCommandCompletion -nargs=? RunCreateCommand call s:RunCreateCommand(<f-args>)

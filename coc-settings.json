@@ -22,12 +22,13 @@
 
     "vimlsp.diagnostic.enable": true,
 
-    "volar.enable": true,
-    "tsserver.enable": false,
+    // "volar.enable": true,
+    "javascript.validate.enable": true,
+    "typescript.validate.enable": true, 
+    "tsserver.enable": true,
     "css.lint.unknownAtRules": "ignore",
 
 
-    "javascript.validate.enable": false, // re-enable once await googleapi.videos.list({}); stops showing errors
 
     "diagnostic.showUnused": true,
     "diagnostic.level": "information",

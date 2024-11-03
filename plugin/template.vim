@@ -49,5 +49,9 @@ function! s:Template(args)
     endif
     let l:template = readfile(template_path)
     call append(0, l:template)
+    if trim(getline("$")) == ""
+        " delete last line
+        call deletebufline("%", "$")
+    endif
 endfunction
 command -complete=customlist,s:GetTemplateNames -nargs=? Template call s:Template(<q-args>)
