@@ -5,8 +5,14 @@ function! s:CustomComplete(ArgLead, CmdLine, CursorPos)
 endfunction
 
 function! s:Rename(new_name)
+    if trim(a:new_name) == ""
+        echohl WarningMsg | echo "File Name Required" | echohl Normal
+        return
+    endif
+
     if match(a:new_name, '^\(\f\| \)\+$') == -1
         echohl WarningMsg | echo "Invalid File Name: ".a:new_name | echohl Normal
+        return
     endif
     let old_path = expand("%:p")
     let curdir = expand("%:p:h")
