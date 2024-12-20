@@ -11,41 +11,367 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/GEMINI
+~MSle0~/copilot
 
 # Last Substitute Search Pattern:
-~MSle0&download
+~MSle0&\C\<FRIENDS\>
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1731247592,,"q"
+|2,0,1734652100,,"q"
+:Copilot status
+|2,0,1734605616,,"Copilot status"
+:e file.py
+|2,0,1734605610,,"e file.py"
+:edit $MYVIMRC
+|2,0,1734605592,,"edit $MYVIMRC"
+:q!
+|2,0,1734518339,,"q!"
+:enew
+|2,0,1734475434,,"enew"
+:e
+|2,0,1734125783,,"e"
+:Rename vm.bash
+|2,0,1734125300,,"Rename vm.bash"
+:e build.bash
+|2,0,1734124879,,"e build.bash"
+:echo v:fcs_choice
+|2,0,1734097499,,"echo v:fcs_choice"
+:echo 
+|2,0,1734097491,,"echo "
+:let v:fcs_choice = 'reload'
+|2,0,1734097468,,"let v:fcs_choice = 'reload'"
+:set writeany
+|2,0,1734097423,,"set writeany"
+:h 'writeany'
+|2,0,1734097416,,"h 'writeany'"
+: write!
+|2,0,1734097404,," write!"
+: w!
+|2,0,1734097393,," w!"
+:w
+|2,0,1734097281,,"w"
+:e!
+|2,0,1734097279,,"e!"
+:e ~/.ssh/known_hosts
+|2,0,1734093381,,"e ~/.ssh/known_hosts"
+:qa
+|2,0,1734077671,,"qa"
+:e ~/.ssh/config
+|2,0,1734075228,,"e ~/.ssh/config"
+::q!q!
+|2,0,1734074250,,":q!q!"
+:e 
+|2,0,1734070522,,"e "
+:e :q
+|2,0,1734070503,,"e :q"
+:bd
+|2,0,1734070196,,"bd"
+:Explore
+|2,0,1734070186,,"Explore"
+:bd!
+|2,0,1734037436,,"bd!"
+:v/\C\<FRIENDS\>/d
+|2,0,1734037406,,"v/\\C\\<FRIENDS\\>/d"
+:q1
+|2,0,1733266658,,"q1"
+:Buffers
+|2,0,1732925997,,"Buffers"
+:bd .direnv/python-3.10.12/lib/python3.10/site-packages/box/db_api_base.py
+|2,0,1732925993,,"bd .direnv/python-3.10.12/lib/python3.10/site-packages/box/db_api_base.py"
+:e __pycache__/
+|2,0,1732904543,,"e __pycache__/"
+:Date
+|2,0,1732886325,,"Date"
+:Rg
+|2,0,1732799332,,"Rg"
+:e filters_and_pagination.py
+|2,0,1732747324,,"e filters_and_pagination.py"
+: w composer-error.txt
+|2,0,1732746840,," w composer-error.txt"
+:pwd
+|2,0,1732746831,,"pwd"
+: w 
+|2,0,1732746831,," w "
+: w ~/.vim/tmp/
+|2,0,1732746828,," w ~/.vim/tmp/"
+:74
+|2,0,1732746255,,"74"
+:CocRestart
+|2,0,1732731554,,"CocRestart"
+:e mod
+|2,0,1732727900,,"e mod"
+:e todo.txt
+|2,0,1732665688,,"e todo.txt"
+:CocOutline
+|2,0,1732665635,,"CocOutline"
+:b!# | bd! #
+|2,0,1732663745,,"b!# | bd! #"
+:set ft=htmldjango
+|2,0,1732663577,,"set ft=htmldjango"
+:CopyToHost
+|2,0,1732662420,,"CopyToHost"
+:e tmp_peewee_endpoint.py
+|2,0,1732653784,,"e tmp_peewee_endpoint.py"
+:set wrap
+|2,0,1732631302,,"set wrap"
+:e base.html
+|2,0,1732610715,,"e base.html"
+:e tem
+|2,0,1732610711,,"e tem"
+:FlaskStylesheet css-resets/reset.css
+|2,0,1732610416,,"FlaskStylesheet css-resets/reset.css"
+:e icon-row.html
+|2,0,1732609618,,"e icon-row.html"
+:e templates/components/filters-and-pagination.html
+|2,0,1732609612,,"e templates/components/filters-and-pagination.html"
+:Rename filter-and-pagination-schemas.txt
+|2,0,1732609153,,"Rename filter-and-pagination-schemas.txt"
+:e filter-schemas.txt
+|2,0,1732609003,,"e filter-schemas.txt"
+:e templates/components/icon-row.html
+|2,0,1732579718,,"e templates/components/icon-row.html"
+:e data/
+|2,0,1732579694,,"e data/"
+:cd data/
+|2,0,1732579671,,"cd data/"
+:e com
+|2,0,1732579668,,"e com"
+:e apps.json
+|2,0,1732568570,,"e apps.json"
+:Copilot log
+|2,0,1732563598,,"Copilot log"
+:Copilot help
+|2,0,1732563595,,"Copilot help"
+:Copilot setup
+|2,0,1732563587,,"Copilot setup"
+:Copilot panel
+|2,0,1732563577,,"Copilot panel"
+:Copilot enable
+|2,0,1732563572,,"Copilot enable"
+:Copilot auth
+|2,0,1732563566,,"Copilot auth"
+:e versions.json
+|2,0,1732563545,,"e versions.json"
+:e box/tmp_sqlalchemy_where_to_str.py
+|2,0,1732533193,,"e box/tmp_sqlalchemy_where_to_str.py"
+:e box/tmp_sqlite_to_sqlalchemy.py
+|2,0,1732533158,,"e box/tmp_sqlite_to_sqlalchemy.py"
+:e box/peewee_clusters.py
+|2,0,1732531135,,"e box/peewee_clusters.py"
+:e box/rich_experiments.py
+|2,0,1732529832,,"e box/rich_experiments.py"
+:e box/tm
+|2,0,1732529821,,"e box/tm"
+:set number
+|2,0,1732496763,,"set number"
+:e tests/conftest.py
+|2,0,1732495898,,"e tests/conftest.py"
+::e
+|2,0,1732494574,,":e"
+:e pyrightconfig.json
+|2,0,1732494495,,"e pyrightconfig.json"
+:e tests/test_db_api_base.py
+|2,0,1732493771,,"e tests/test_db_api_base.py"
+:e box/tests/
+|2,0,1732493744,,"e box/tests/"
+:set autoread<
+|2,0,1732492791,,"set autoread<"
+:h 'autoread'
+|2,0,1732492778,,"h 'autoread'"
+:set autoread
+|2,0,1732492752,,"set autoread"
+:.,.+1q
+|2,0,1732401371,,".,.+1q"
+:lopen
+|2,0,1732401241,,"lopen"
+:qa!
+|2,0,1732399401,,"qa!"
+:RenumberList
+|2,0,1732360998,,"RenumberList"
+:Tab 
+|2,0,1732359422,,"Tab "
+:'<,'>Tab /,
+|2,0,1732359414,,"'<,'>Tab /,"
+:h :Tab
+|2,0,1732359373,,"h :Tab"
+:Tab /,/l0
+|2,0,1732359371,,"Tab /,/l0"
+:Tab /,/l0c0r1
+|2,0,1732359363,,"Tab /,/l0c0r1"
+:Tab /,/r0
+|2,0,1732359350,,"Tab /,/r0"
+:Tab /,/
+|2,0,1732359329,,"Tab /,/"
+:Tab /,/0l0
+|2,0,1732359326,,"Tab /,/0l0"
+:Tab /,/0l1
+|2,0,1732359318,,"Tab /,/0l1"
+:Tab /,/0c1
+|2,0,1732359312,,"Tab /,/0c1"
+:so %
+|2,0,1732359179,,"so %"
+:'{,'}s/\s*\zs\d\+\ze/\=line('.')-line("'{")
+|2,0,1732359137,,"'{,'}s/\\s*\\zs\\d\\+\\ze/\\=line('.')-line(\"'{\")"
+:'{,'}s/\s*\zs\d\+\ze/\=line('.')-5
+|2,0,1732359086,,"'{,'}s/\\s*\\zs\\d\\+\\ze/\\=line('.')-5"
+:'{,'}s/\s*\zs\d\+\ze/\=line('.')
+|2,0,1732359076,,"'{,'}s/\\s*\\zs\\d\\+\\ze/\\=line('.')"
+:'{,'}s/\s*\zs\d\+\ze/\='0'
+|2,0,1732359063,,"'{,'}s/\\s*\\zs\\d\\+\\ze/\\='0'"
+:HotReload
+|2,0,1732359007,,"HotReload"
+:e ~/.vim/tmp/renumber-list.vim
+|2,0,1732359003,,"e ~/.vim/tmp/renumber-list.vim"
+:!
+|2,0,1732399244,,"!"
+:e sql_checklist.txt
+|2,0,1732358639,,"e sql_checklist.txt"
+:e 240907.truncate_data_strucuture.txt
+|2,0,1732358347,,"e 240907.truncate_data_strucuture.txt"
+:e src/components/UserComments.tsx
+|2,0,1732309759,,"e src/components/UserComments.tsx"
+:e frontend/com
+|2,0,1732309744,,"e frontend/com"
+:e frontend/src/App.tsx
+|2,0,1732309720,,"e frontend/src/App.tsx"
+:!rm data/Const_Velocity.db
+|2,0,1732299257,,"!rm data/Const_Velocity.db"
+:e data/Const_Velocity.json
+|2,0,1732299245,,"e data/Const_Velocity.json"
+:term
+|2,0,1732294367,,"term"
+:e fro
+|2,0,1732293499,,"e fro"
+:e reddit-user-comments.config.js
+|2,0,1732293168,,"e reddit-user-comments.config.js"
+:e hackernews-search.config.js
+|2,0,1732293161,,"e hackernews-search.config.js"
+:e reddit-user-com
+|2,0,1732293158,,"e reddit-user-com"
+:e re
+|2,0,1732293139,,"e re"
+:e reddit-com
+|2,0,1732293137,,"e reddit-com"
+:llll
+|2,0,1732292510,,"llll"
+:e data/Const_Velocity.db
+|2,0,1732292474,,"e data/Const_Velocity.db"
+:55
+|2,0,1732291680,,"55"
+: ;
+|2,0,1732281770,," ;"
+:e pydantic_to_sqlite.py
+|2,0,1732281242,,"e pydantic_to_sqlite.py"
+:Template
+|2,0,1732281201,,"Template"
+:e requirements.txt
+|2,0,1732279431,,"e requirements.txt"
+:Co
+|2,0,1732277634,,"Co"
+:e ~/python_common/waivek/todo.txt
+|2,0,1732277078,,"e ~/python_common/waivek/todo.txt"
+:e ~/python_common/todo.txt
+|2,0,1732277058,,"e ~/python_common/todo.txt"
+:e models/comment.py
+|2,0,1732276814,,"e models/comment.py"
+:Jprevious
+|2,0,1732275367,,"Jprevious"
+:e secrets.env
+|2,0,1732274762,,"e secrets.env"
+:Template flask
+|2,0,1732290424,,"Template flask"
+:copen
+|2,0,1732279970,,"copen"
+:grep -g '*.py' --fixed-strings waivek
+|2,0,1732279967,,"grep -g '*.py' --fixed-strings waivek"
+:cn
+|2,0,1732279724,,"cn"
+:e .envrc
+|2,0,1732274677,,"e .envrc"
+:e scrape_reddit_user_comments.py
+|2,0,1732274245,,"e scrape_reddit_user_comments.py"
+:e *.py
+|2,0,1732274237,,"e *.py"
+:73
+|2,0,1731798202,,"73"
+:63
+|2,0,1731797956,,"63"
+:jp
+|2,0,1731541538,,"jp"
+:e ~/bash/logs/worker_create_graph_payload.log
+|2,0,1731541103,,"e ~/bash/logs/worker_create_graph_payload.log"
+:Cfilter worekr
+|2,0,1731540729,,"Cfilter worekr"
+:Cfilter! import
+|2,0,1731540691,,"Cfilter! import"
+:e ~/bash/logs/worker_chat_to_offset.log
+|2,0,1731540306,,"e ~/bash/logs/worker_chat_to_offset.log"
+:109
+|2,0,1731539986,,"109"
+:122
+|2,0,1731539975,,"122"
+:349
+|2,0,1731539971,,"349"
+:135
+|2,0,1731539938,,"135"
+:e tmp_create_date_regex.py
+|2,0,1731539539,,"e tmp_create_date_regex.py"
+:Q
+|2,0,1731535151,,"Q"
+:W
+|2,0,1731535087,,"W"
+:D
+|2,0,1731535069,,"D"
+:Date 2024-11-14
+|2,0,1731534361,,"Date 2024-11-14"
+:e __init__.py
+|2,0,1731277908,,"e __init__.py"
+:RunCreateCommand horizontal
+|2,0,1731276324,,"RunCreateCommand horizontal"
+:29
+|2,0,1731266217,,"29"
+:%!python3 -m json.tool
+|2,0,1731264693,,"%!python3 -m json.tool"
+: w data/page-pretty.json 
+|2,0,1731264690,," w data/page-pretty.json "
+:e pflix_scrape.py
+|2,0,1731264218,,"e pflix_scrape.py"
+:.! w
+|2,0,1731264092,,".! w"
+:e tests/test_pflix_scrape.py
+|2,0,1731264078,,"e tests/test_pflix_scrape.py"
+:e tests/
+|2,0,1731264064,,"e tests/"
+:A
+|2,0,1731262762,,"A"
+:syntax on
+|2,0,1731257557,,"syntax on"
+:syntax off
+|2,0,1731257426,,"syntax off"
+:e data/pretty.json
+|2,0,1731257187,,"e data/pretty.json"
+:synta
+|2,0,1731257160,,"synta"
+:e data/pretty.html
+|2,0,1731257154,,"e data/pretty.html"
+:e python.sh
+|2,0,1731256315,,"e python.sh"
+:v/\C\<COMMUNITY\>/d
+|2,0,1731254929,,"v/\\C\\<COMMUNITY\\>/d"
+:e commit-message.txt
+|2,0,1731247641,,"e commit-message.txt"
 :Rename commit-message-gemini.py
 |2,0,1731247336,,"Rename commit-message-gemini.py"
-:e 
-|2,0,1731241172,,"e "
-:q!
-|2,0,1731240825,,"q!"
-:bd
-|2,0,1731240518,,"bd"
-:e
-|2,0,1731240516,,"e"
-:w
-|2,0,1731240170,,"w"
-:qa
-|2,0,1731239948,,"qa"
-:Template
-|2,0,1731239395,,"Template"
 :v/download/d
 |2,0,1731238350,,"v/download/d"
 :v/MB
 |2,0,1731238347,,"v/MB"
 :v/GB/d
 |2,0,1731238341,,"v/GB/d"
-:CopyToHost
-|2,0,1731236739,,"CopyToHost"
 :e static/downloads/chapters/2277151094.json
 |2,0,1730749786,,"e static/downloads/chapters/2277151094.json"
 :e static/downloads/grc
@@ -84,8 +410,6 @@ $
 |2,0,1730738440,,"e tmp-job.py"
 :e worker_db_utils.py
 |2,0,1730738410,,"e worker_db_utils.py"
-:CocRestart
-|2,0,1730735441,,"CocRestart"
 :Rename tmp_idle_process.py
 |2,0,1730735416,,"Rename tmp_idle_process.py"
 :Rename tmp-idle-process.py
@@ -98,18 +422,12 @@ $
 |2,0,1730731347,,"e worker_single.py"
 :R
 |2,0,1730730960,,"R"
-:RunCreateCommand horizontal
-|2,0,1730729811,,"RunCreateCommand horizontal"
 :jjj
 |2,0,1730729618,,"jjj"
 :jpre
 |2,0,1730729008,,"jpre"
 :e static/downloads/graph_payloads/
 |2,0,1730728986,,"e static/downloads/graph_payloads/"
-:Rg
-|2,0,1730728664,,"Rg"
-:Jprevious
-|2,0,1730726498,,"Jprevious"
 :e db.py
 |2,0,1730726490,,"e db.py"
 :e ./dbutils.py
@@ -128,8 +446,6 @@ $
 |2,0,1730712930,,"526"
 :e ~/hateoas/data/worker.db
 |2,0,1730712433,,"e ~/hateoas/data/worker.db"
-:e data/
-|2,0,1730712426,,"e data/"
 :133
 |2,0,1730712289,,"133"
 :VD data/que
@@ -144,30 +460,18 @@ $
 |2,0,1730685367,,"e worker_chapters.py"
 :saveas backup_worker_chat_to_offset.py
 |2,0,1730685357,,"saveas backup_worker_chat_to_offset.py"
-:e!
-|2,0,1730622988,,"e!"
 :e rich_markup.py
 |2,0,1730622803,,"e rich_markup.py"
 :e worker.txt
 |2,0,1730622724,,"e worker.txt"
 :j
 |2,0,1730553585,,"j"
-:Copilot status
-|2,0,1730539446,,"Copilot status"
-:edit $MYVIMRC
-|2,0,1730539434,,"edit $MYVIMRC"
-:qa!
-|2,0,1730504795,,"qa!"
-:b!# | bd! #
-|2,0,1730504794,,"b!# | bd! #"
 :MRU reac
 |2,0,1730504750,,"MRU reac"
 :e ~/
 |2,0,1730504749,,"e ~/"
 :v/bear/d
 |2,0,1730504610,,"v/bear/d"
-:enew
-|2,0,1730504606,,"enew"
 :e anon
 |2,0,1730413903,,"e anon"
 :e worker_download_chat.log
@@ -190,8 +494,6 @@ $
 |2,0,1730200947,,"CocStatus"
 :CocConfig
 |2,0,1730200938,,"CocConfig"
-:lopen
-|2,0,1730200883,,"lopen"
 :ll
 |2,0,1730200866,,"ll"
 :e worker_utils.py
@@ -222,16 +524,12 @@ $
 |2,0,1730140617,,"set readonly!"
 :set readonly
 |2,0,1730140603,,"set readonly"
-: w!
-|2,0,1730140591,," w!"
 :.,.+1!
 |2,0,1730139542,,".,.+1!"
 :e pac
 |2,0,1730111144,,"e pac"
 :e src/index.css
 |2,0,1730109530,,"e src/index.css"
-:Date
-|2,0,1729847066,,"Date"
 :e tmp_parse.py
 |2,0,1729806043,,"e tmp_parse.py"
 :set ft=log
@@ -246,8 +544,6 @@ $
 |2,0,1729804411,,"e gql_video_recorded_at_sync.py"
 :diffput
 |2,0,1729799703,,"diffput"
-:pwd
-|2,0,1729797872,,"pwd"
 :e ~/.sqlfluff
 |2,0,1729797853,,"e ~/.sqlfluff"
 :Tab /INTEGER\|TEXT
@@ -278,14 +574,10 @@ $
 |2,0,1729761021,,"1446"
 :e templates/sync_video_to_video.html
 |2,0,1729722125,,"e templates/sync_video_to_video.html"
-:so %
-|2,0,1729722067,,"so %"
 :Ftplugin
 |2,0,1729722046,,"Ftplugin"
 :35
 |2,0,1729721742,,"35"
-:Cfilter! import
-|2,0,1729719969,,"Cfilter! import"
 :Cfilter import
 |2,0,1729719963,,"Cfilter import"
 : l
@@ -324,10 +616,6 @@ $
 |2,0,1729675007,,"ek"
 ::q!redraw
 |2,0,1729674999,,":q!redraw"
-:bd!
-|2,0,1729674915,,"bd!"
-:e todo.txt
-|2,0,1729639633,,"e todo.txt"
 :e static/css/editor-2.css
 |2,0,1729633443,,"e static/css/editor-2.css"
 :e state.py
@@ -426,12 +714,8 @@ $
 |2,0,1729257143,,"e templates/"
 :e oldfiles.bash
 |2,0,1729255794,,"e oldfiles.bash"
-:set number
-|2,0,1729252238,,"set number"
 :Cfilter **
 |2,0,1729244507,,"Cfilter **"
-:copen
-|2,0,1729244503,,"copen"
 :e jsonfile.py
 |2,0,1729198473,,"e jsonfile.py"
 :earlier 1m
@@ -446,8 +730,6 @@ $
 |2,0,1729193200,," w ~/tmp/python_common_slow_imports.txt"
 :g/0\.00 seconds/d
 |2,0,1729193168,,"g/0\\.00 seconds/d"
-:e __init__.py
-|2,0,1729193047,,"e __init__.py"
 :e dbutils.py
 |2,0,1729192906,,"e dbutils.py"
 :find db_ut
@@ -482,8 +764,6 @@ $
 |2,0,1729160842,,"grep -g '*.py' --fixed-strings os.path.join\\(downloads_folder\\("
 :grep -g '*.py' --fixed-strings os.path.join(downloads_folder(
 |2,0,1729160830,,"grep -g '*.py' --fixed-strings os.path.join(downloads_folder("
-:e requirements.txt
-|2,0,1729160489,,"e requirements.txt"
 :e requirements-large.txt
 |2,0,1729160487,,"e requirements-large.txt"
 :Tab / - /
@@ -492,8 +772,6 @@ $
 |2,0,1729155183,,"earlier "
 :e output.txt
 |2,0,1729153336,,"e output.txt"
-:HotReload
-|2,0,1729152518,,"HotReload"
 :h nargs
 |2,0,1729152501,,"h nargs"
 :Run
@@ -550,26 +828,18 @@ $
 |2,0,1729088563,,"e tmp_empty_game_id_exploration.py"
 :e templates/files.html
 |2,0,1729069294,,"e templates/files.html"
-:Template flask
-|2,0,1729069251,,"Template flask"
-:CocOutline
-|2,0,1729074555,,"CocOutline"
 :e usernames.txt
 |2,0,1729073972,,"e usernames.txt"
 :e req
 |2,0,1729018793,,"e req"
 :Docker
 |2,0,1728929823,,"Docker"
-:.,.+1q
-|2,0,1728928863,,".,.+1q"
 :h
 |2,0,1728911642,,"h"
 :VD
 |2,0,1728911049,,"VD"
 :e video_utils.py
 |2,0,1728893999,,"e video_utils.py"
-:term
-|2,0,1728893841,,"term"
 :redraw
 |2,0,1728893639,,"redraw"
 :e query_user_ids.py
@@ -578,8 +848,6 @@ $
 |2,0,1728893021,,"145"
 :144
 |2,0,1728892767,,"144"
-:29
-|2,0,1728891592,,"29"
 :24
 |2,0,1728890894,,"24"
 :find staging-grid.css
@@ -812,8 +1080,6 @@ $
 |2,0,1727445806,,"MRU bash_his"
 :MRU 215:.config/todo.txt
 |2,0,1727424695,,"MRU 215:.config/todo.txt"
-:Co
-|2,0,1727364222,,"Co"
 :e ~/tmp/colors.txt
 |2,0,1727360012,,"e ~/tmp/colors.txt"
 :MRU fz
@@ -914,8 +1180,6 @@ $
 |2,0,1726969126,,"e github-copilot/apps.json"
 :17
 |2,0,1726962056,,"17"
-:e secrets.env
-|2,0,1726512397,,"e secrets.env"
 :Rename bugs.240913.python_autoimport_completion.txt
 |2,0,1726356165,,"Rename bugs.240913.python_autoimport_completion.txt"
 :verbose set isk
@@ -940,8 +1204,6 @@ $
 |2,0,1726355838,,"gg/d"
 :MRU bugs
 |2,0,1726306268,,"MRU bugs"
-:e .envrc
-|2,0,1726306181,,"e .envrc"
 :map \f
 |2,0,1726305957,,"map \\f"
 :e ~/bugs/240913.python_autoimport_completion.txt
@@ -954,8 +1216,6 @@ $
 |2,0,1726262148,,"sc"
 :iabbrev
 |2,0,1726262112,,"iabbrev"
-:e file.py
-|2,0,1726261516,,"e file.py"
 :T
 |2,0,1726261369,,"T"
 :CocList commands
@@ -1002,8 +1262,6 @@ $
 |2,0,1726208073,,"MRU tru"
 :CocUninstall coc-pyright
 |2,0,1726206212,,"CocUninstall coc-pyright"
-:e pyrightconfig.json
-|2,0,1726206121,,"e pyrightconfig.json"
 :echo CocAction('codeAction')
 |2,0,1726182527,,"echo CocAction('codeAction')"
 :call       CocActionAsync('quickfixes')
@@ -1064,8 +1322,6 @@ $
 |2,0,1725914953,,"e ic.py"
 :e printtodocopy.py
 |2,0,1725825001,,"e printtodocopy.py"
-:cn
-|2,0,1725821094,,"cn"
 :e colo
 |2,0,1725819007,,"e colo"
 :291
@@ -1092,8 +1348,6 @@ $
 |2,0,1725816455,,"echo %"
 :!python %
 |2,0,1725816453,,"!python %"
-:echo 
-|2,0,1725816450,,"echo "
 :e truncate.py
 |2,0,1725816140,,"e truncate.py"
 :grep -g '*.py' --fixed-strings "def truncate"
@@ -1284,8 +1538,6 @@ $
 |2,0,1725551951,,"LogPrettyPrintLine"
 :Pre
 |2,0,1725551949,,"Pre"
-:q1
-|2,0,1725551889,,"q1"
 :vert term python % gh-timeago-updates.log
 |2,0,1725551775,,"vert term python % gh-timeago-updates.log"
 :12
@@ -1458,10 +1710,6 @@ $
 |2,0,1725458642,,"colo apprentice"
 :hi clear
 |2,0,1725458636,,"hi clear"
-:syntax on
-|2,0,1725458632,,"syntax on"
-:syntax off
-|2,0,1725458630,,"syntax off"
 :h getjumplist(
 |2,0,1725458544,,"h getjumplist("
 :Rename jprev.vim
@@ -1618,8 +1866,6 @@ $
 |2,0,1725192685,,"MRU 3:output.txt"
 :Rename zdirs_one_wk.go
 |2,0,1725192262,,"Rename zdirs_one_wk.go"
-:Copilot panel
-|2,0,1725123430,,"Copilot panel"
 :e go.sum
 |2,0,1725118384,,"e go.sum"
 : wa
@@ -1790,8 +2036,6 @@ $
 |2,0,1724552523,,"b h.vim"
 :MRU mappings
 |2,0,1724552485,,"MRU mappings"
-:Buffers
-|2,0,1724552478,,"Buffers"
 :MRU kno
 |2,0,1724552476,,"MRU kno"
 :MRU 2:main.go
@@ -1968,14 +2212,10 @@ $
 |2,0,1724289669,,"set formatoptions-=o"
 :verbose set formatoptions?
 |2,0,1724289633,,"verbose set formatoptions?"
-: ;
-|2,0,1724289322,," ;"
 :.!k
 |2,0,1724288784,,".!k"
 :MRU error.py
 |2,0,1724287939,,"MRU error.py"
-:W
-|2,0,1724286789,,"W"
 :VD data/oldfiles.db
 |2,0,1724279152,,"VD data/oldfiles.db"
 :OpenDB data/oldfiles.db
@@ -1988,8 +2228,6 @@ $
 |2,0,1724274147,,"e ~/.custompy"
 :e ~/.
 |2,0,1724274141,,"e ~/."
-:!
-|2,0,1724244698,,"!"
 :UndotreeShow
 |2,0,1724243926,,"UndotreeShow"
 :undo
@@ -2140,8 +2378,6 @@ $
 |2,0,1724024609,,"AnsiEsc"
 :ANsi
 |2,0,1724024606,,"ANsi"
-:A
-|2,0,1724024320,,"A"
 :MRU mak
 |2,0,1724024205,,"MRU mak"
 :!bat %
@@ -2298,8 +2534,6 @@ $
 |2,0,1723658922,,"Tabularize / - /0"
 :Tabularize / - /
 |2,0,1723658919,,"Tabularize / - /"
-:h :Tab
-|2,0,1723658794,,"h :Tab"
 :Tabularize /-/r0
 |2,0,1723658789,,"Tabularize /-/r0"
 :Capture filter /gt/ PrintPersonalMappings
@@ -2568,8 +2802,6 @@ $
 |2,0,1723419992,,"e insert_word.vim"
 :set nowrap
 |2,0,1723419906,,"set nowrap"
-:set wrap
-|2,0,1723418688,,"set wrap"
 :so%
 |2,0,1723418327,,"so%"
 :e dotty.vim
@@ -2754,8 +2986,6 @@ $
 |2,0,1722785413,,"e ~/.vim/templates/template.gitignore"
 :e ../hateoas/.gitignore
 |2,0,1722785399,,"e ../hateoas/.gitignore"
-:cd data/
-|2,0,1722785371,,"cd data/"
 :MRU templ*giti
 |2,0,1722783120,,"MRU templ*giti"
 :MRU py*.sh
@@ -2958,8 +3188,6 @@ $
 |2,0,1722539456,,"g/^\\s\\{4\\}{,/^\\s\\{4\\}}/join"
 :g/{/,/
 |2,0,1722539428,,"g/{/,/"
-:%!python3 -m json.tool
-|2,0,1722539391,,"%!python3 -m json.tool"
 :%!python -m json.tool
 |2,0,1722539385,,"%!python -m json.tool"
 :.!jsonfmt
@@ -3272,8 +3500,6 @@ $
 |2,0,1722454536,,"g/^[|! ]\\{4\\}[A-Z][a-z0-9A-Z]*\\s*[01*+?]\\s*:\\?call /d"
 : w ~/.vim/tmp/command-output.txt
 |2,0,1722454456,," w ~/.vim/tmp/command-output.txt"
-: w ~/.vim/tmp/
-|2,0,1722454447,," w ~/.vim/tmp/"
 :MRU 2:table.py
 |2,0,1722447889,,"MRU 2:table.py"
 :grep -g '*.py' rich.*Table
@@ -3832,8 +4058,6 @@ $
 |2,0,1721479529,,"grep -g '*.py' --fixed-strings partially_downloaded"
 :e download_utils.py
 |2,0,1721479521,,"e download_utils.py"
-:e *.py
-|2,0,1721479499,,"e *.py"
 :s/^\(\s*\)\(\w\+\), \(.*\)/\1\3\1\2 = connection.cursor()
 |2,0,1721326884,,"s/^\\(\\s*\\)\\(\\w\\+\\), \\(.*\\)/\\1\\3\\1\\2 = connection.cursor()"
 :grep -g '*.py' --fixed-strings get_worker_info
@@ -3850,8 +4074,6 @@ $
 |2,0,1721324290,,"FIND sy"
 :Date 
 |2,0,1721320918,,"Date "
-:D
-|2,0,1721320912,,"D"
 :!start . at
 |2,0,1721320872,,"!start . at"
 :inoremap <C-;> :echo "Test"
@@ -4004,8 +4226,6 @@ $
 |2,0,1721144927,,"grep -g '*.py' --fixed-strings sample_payload"
 :e curl_payload.py
 |2,0,1721144920,,"e curl_payload.py"
-:e __pycache__/
-|2,0,1721144918,,"e __pycache__/"
 :term python 
 |2,0,1721143113,,"term python "
 :b parsejson.py
@@ -4248,8 +4468,6 @@ $
 |2,0,1720366427,,"map <C-c>"
 :imap 
 |2,0,1720366425,,"imap "
-:Copilot auth
-|2,0,1719883022,,"Copilot auth"
 :registers
 |2,0,1719880745,,"registers"
 :set reg
@@ -4330,8 +4548,6 @@ $
 |2,0,1719317030,,"FIND reset.css"
 :FIND reset
 |2,0,1719317026,,"FIND reset"
-:73
-|2,0,1719317009,,"73"
 :e ~/pyscripts/uuid7-experiment.py
 |2,0,1719313801,,"e ~/pyscripts/uuid7-experiment.py"
 :set verbose=20 | quit
@@ -4646,8 +4862,6 @@ $
 |2,0,1718437085,,"FIND Proxima_Nova.300italic.ttf"
 :term pm2 log ui-components-css
 |2,0,1718436923,,"term pm2 log ui-components-css"
-:e templates/components/icon-row.html
-|2,0,1718435704,,"e templates/components/icon-row.html"
 :FIND ic
 |2,0,1718435695,,"FIND ic"
 :FIND Proxima_Nova.100italic.ttf
@@ -5080,8 +5294,6 @@ $
 |2,0,1717917416,,"saveas static/css-resets/button-reset.css"
 :saveas css
 |2,0,1717917396,,"saveas css"
-:e re
-|2,0,1717917380,,"e re"
 :e reset
 |2,0,1717917377,,"e reset"
 :e css-resets/button-reset.css
@@ -5174,8 +5386,6 @@ $
 |2,0,1717853860,,"e previous-attempts.txt"
 :Rename usage.md
 |2,0,1717853773,,"Rename usage.md"
-:Tab /,/
-|2,0,1717852869,,"Tab /,/"
 :echo undofile("%")
 |2,0,1717852042,,"echo undofile(\"%\")"
 :echo undofile()
@@ -6356,8 +6566,6 @@ $
 |2,0,1713970243,,"Rename download_portionurl.py"
 :e download-portionurl.py
 |2,0,1713970231,,"e download-portionurl.py"
-:Copilot enable
-|2,0,1713970041,,"Copilot enable"
 :let g:copilot_workspace_folders=["/home/vivek/hateoas"]
 |2,0,1713955427,,"let g:copilot_workspace_folders=[\"/home/vivek/hateoas\"]"
 :Rename download.py
@@ -6606,8 +6814,6 @@ $
 |2,0,1713768728,,"e cronlogger.sh"
 :e simple-source.bash
 |2,0,1713768711,,"e simple-source.bash"
-:e sql_checklist.txt
-|2,0,1713758803,,"e sql_checklist.txt"
 :MRU gen
 |2,0,1713758253,,"MRU gen"
 :34
@@ -6762,8 +6968,6 @@ $
 |2,0,1713540313,,"e mo"
 :g/\./d
 |2,0,1713524737,,"g/\\./d"
-:set ft=htmldjango
-|2,0,1713524684,,"set ft=htmldjango"
 :v/{[{%]/d
 |2,0,1713524678,,"v/{[{%]/d"
 :v/{{/d
@@ -7042,8 +7246,6 @@ $
 |2,0,1713265204,,"MRU 85:api.py"
 :MRU 1:alias.sh
 |2,0,1713265186,,"MRU 1:alias.sh"
-:Copilot setup
-|2,0,1713263573,,"Copilot setup"
 :MRU input-bin
 |2,0,1712960127,,"MRU input-bin"
 :CocInf
@@ -7088,8 +7290,6 @@ $
 |2,0,1712791649,,"e req2.txt"
 :e curl.py
 |2,0,1712791632,,"e curl.py"
-:Q
-|2,0,1712791558,,"Q"
 :call CocAction('doCodeAction')
 |2,0,1712727240,,"call CocAction('doCodeAction')"
 :MRU 4:downloads.sql
@@ -7920,8 +8120,6 @@ $
 |2,0,1705963920,,"e Twi"
 :%s/Twitch/window.Twitch/g
 |2,0,1705927350,,"%s/Twitch/window.Twitch/g"
-:109
-|2,0,1705926051,,"109"
 :128
 |2,0,1705925576,,"128"
 :llllll
@@ -9420,8 +9618,6 @@ $
 |2,0,1692508830,,"e H"
 :e src/H
 |2,0,1692508828,,"e src/H"
-:e com
-|2,0,1692508809,,"e com"
 :MRU 16:vite.config.js
 |2,0,1692508713,,"MRU 16:vite.config.js"
 :e components/HelloWorld.vue
@@ -10994,6 +11190,306 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/copilot
+|2,1,1734605601,47,"copilot"
+?/requi
+|2,1,1734347757,47,"requi"
+?/dns
+|2,1,1734071698,47,"dns"
+?/usedns
+|2,1,1734071691,47,"usedns"
+? \C\<FRIENDS\>
+|2,1,1734037406,,"\\C\\<FRIENDS\\>"
+?/keyup
+|2,1,1733001113,47,"keyup"
+?/hx-tribber
+|2,1,1733000935,47,"hx-tribber"
+?/<input
+|2,1,1733000883,47,"<input"
+?/include
+|2,1,1732925787,47,"include"
+?/text-wrap
+|2,1,1732904499,47,"text-wrap"
+?/flex
+|2,1,1732904278,47,"flex"
+?/gap-1
+|2,1,1732904260,47,"gap-1"
+?/First
+|2,1,1732904257,47,"First"
+?/^\s*@app.route(["']\/\w*
+|2,1,1732745948,47,"^\\s*@app.route([\"']\\/\\w*"
+?/^@app.route(["']\/\w*
+|2,1,1732745943,47,"^@app.route([\"']\\/\\w*"
+?/\(def\|class\)\s\+\w*filter
+|2,1,1732745937,47,"\\(def\\|class\\)\\s\\+\\w*filter"
+?/filter
+|2,1,1732745935,47,"filter"
+?/macro
+|2,1,1732745912,47,"macro"
+?/rose
+|2,1,1732745748,47,"rose"
+?/checked
+|2,1,1732745744,47,"checked"
+?/red
+|2,1,1732745736,47,"red"
+?/page.*1
+|2,1,1732745245,47,"page.*1"
+?/paginat
+|2,1,1732736377,47,"paginat"
+?/stat
+|2,1,1732736154,47,"stat"
+?/filter-state
+|2,1,1732735970,47,"filter-state"
+?/disabled
+|2,1,1732735082,47,"disabled"
+?/\S
+|2,1,1732734732,47,"\\S"
+?/get_pagination
+|2,1,1732732636,47,"get_pagination"
+?/pagination_controls
+|2,1,1732732232,47,"pagination_controls"
+?/pagination
+|2,1,1732732119,47,"pagination"
+?/500
+|2,1,1732728679,47,"500"
+?/teal
+|2,1,1732728646,47,"teal"
+?/highlight_search_term
+|2,1,1732728349,47,"highlight_search_term"
+?/compo e
+|2,1,1732727945,47,"compo e"
+?/build_filt
+|2,1,1732727883,47,"build_filt"
+?/Colu
+|2,1,1732727849,47,"Colu"
+?/regist
+|2,1,1732727717,47,"regist"
+?/before
+|2,1,1732665272,47,"before"
+?/result
+|2,1,1732664957,47,"result"
+?/sort_mode
+|2,1,1732664510,47,"sort_mode"
+?/\C\<sort\>
+|2,1,1732664499,47,"\\C\\<sort\\>"
+?/<pre
+|2,1,1732663919,47,"<pre"
+?/From
+|2,1,1732657149,47,"From"
+?/device
+|2,1,1732657109,47,"device"
+?/pre
+|2,1,1732656525,47,"pre"
+?/p-
+|2,1,1732656465,47,"p-"
+?/mt-4
+|2,1,1732656451,47,"mt-4"
+?/waivek
+|2,1,1732656270,47,"waivek"
+?/S
+|2,1,1732655147,47,"S"
+?/Connection
+|2,1,1732654536,47,"Connection"
+?/videos_fts
+|2,1,1732654496,47,"videos_fts"
+?/^@app.route(["']\/\w*com
+|2,1,1732653835,47,"^@app.route([\"']\\/\\w*com"
+?/name
+|2,1,1732648068,47,"name"
+?/weight
+|2,1,1732647694,47,"weight"
+?/underl
+|2,1,1732647619,47,"underl"
+?/black
+|2,1,1732647492,47,"black"
+?/{%
+|2,1,1732647388,47,"{%"
+?/latest
+|2,1,1732647276,47,"latest"
+?/bold
+|2,1,1732647188,47,"bold"
+?/ch
+|2,1,1732646600,47,"ch"
+?/color
+|2,1,1732643290,47,"color"
+?/hover
+|2,1,1732642286,47,"hover"
+?/inter
+|2,1,1732641744,47,"inter"
+?/\C\<\>
+|2,1,1732641647,47,"\\C\\<\\>"
+?/Inter var
+|2,1,1732641555,47,"Inter var"
+??container
+|2,1,1732641379,63,"container"
+?/:checked
+|2,1,1732641353,47,":checked"
+?/lower
+|2,1,1732632314,47,"lower"
+??lable
+|2,1,1732632309,63,"lable"
+?/from
+|2,1,1732632306,47,"from"
+??font-size
+|2,1,1732632247,63,"font-size"
+?/padding
+|2,1,1732632022,47,"padding"
+?/pt
+|2,1,1732631821,47,"pt"
+?/seven
+|2,1,1732631289,47,"seven"
+?/Search
+|2,1,1732631266,47,"Search"
+?/icon-row
+|2,1,1732609695,47,"icon-row"
+?/hateoas
+|2,1,1732608974,47,"hateoas"
+?/github
+|2,1,1732563247,47,"github"
+?/ -s 
+|2,1,1732545515,47," -s "
+?/get_clusters
+|2,1,1732542386,47,"get_clusters"
+?/"""
+|2,1,1732542220,47,"\"\"\""
+?/Select
+|2,1,1732542198,47,"Select"
+? timer\..*\"\[name={__name__}\] import get_pagination, get_clusters\"
+|2,1,1732542135,,"timer\\..*\\\"\\[name={__name__}\\] import get_pagination, get_clusters\\\""
+? timer\..*\"import\"
+|2,1,1732531019,,"timer\\..*\\\"import\\\""
+?/nam
+|2,1,1732497812,47,"nam"
+?/WH
+|2,1,1732497809,47,"WH"
+?/select
+|2,1,1732494305,47,"select"
+?/selec
+|2,1,1732494271,47,"selec"
+?/sele
+|2,1,1732494263,47,"sele"
+? timer\..*\"db_api_base\.py\"
+|2,1,1732493990,,"timer\\..*\\\"db_api_base\\.py\\\""
+? timer\..*    session\.commit\n
+|2,1,1732493984,,"timer\\..*    session\\.commit\\n"
+?/engine
+|2,1,1732493776,47,"engine"
+? ^\s*$\n\s*$
+|2,1,1732493502,,"^\\s*$\\n\\s*$"
+?/class Select\>
+|2,1,1732493401,47,"class Select\\>"
+?/\C\<Select\>
+|2,1,1732493392,47,"\\C\\<Select\\>"
+?/Session
+|2,1,1732493001,47,"Session"
+? timer\..*\"imports\"
+|2,1,1732492829,,"timer\\..*\\\"imports\\\""
+?/pee
+|2,1,1732492384,47,"pee"
+?/comp
+|2,1,1732529530,47,"comp"
+?/User
+|2,1,1732400075,47,"User"
+?/where
+|2,1,1732399895,47,"where"
+? timer\..*\"import fn\"
+|2,1,1732399557,,"timer\\..*\\\"import fn\\\""
+? timer\..*\"import ModelSelect\"
+|2,1,1732399556,,"timer\\..*\\\"import ModelSelect\\\""
+? timer\..*\"import ModelSelect, fn\"
+|2,1,1732399552,,"timer\\..*\\\"import ModelSelect, fn\\\""
+?/IN
+|2,1,1732395278,47,"IN"
+?/WHERE
+|2,1,1732395274,47,"WHERE"
+? \s*\zs\d\+\ze
+|2,1,1732360998,,"\\s*\\zs\\d\\+\\ze"
+?/^@app.route(["']\/\w*clip
+|2,1,1732360934,47,"^@app.route([\"']\\/\\w*clip"
+?/shadow
+|2,1,1732310176,47,"shadow"
+?/sticky
+|2,1,1732310143,47,"sticky"
+?/Prev
+|2,1,1732309937,47,"Prev"
+?/round
+|2,1,1732309885,47,"round"
+?/Showing
+|2,1,1732309865,47,"Showing"
+?/Quick
+|2,1,1732309843,47,"Quick"
+??\a
+|2,1,1732293193,63,"\\a"
+? @$
+|2,1,1732293193,,"@$"
+?/limit
+|2,1,1732291637,47,"limit"
+?/u
+|2,1,1732291549,47,"u"
+?/page.* = 
+|2,1,1732291046,47,"page.* = "
+?/comment
+|2,1,1732275329,47,"comment"
+?/box
+|2,1,1732279566,47,"box"
+?/json
+|2,1,1732201121,47,"json"
+?/row
+|2,1,1731797965,47,"row"
+?/offsets
+|2,1,1731541459,47,"offsets"
+?/read(
+|2,1,1731541410,47,"read("
+?/read
+|2,1,1731541252,47,"read"
+??exit_code=1
+|2,1,1731541108,63,"exit_code=1"
+?/def
+|2,1,1731540698,47,"def"
+?/exit_code=[^0]
+|2,1,1731540420,47,"exit_code=[^0]"
+?/not found
+|2,1,1731540109,47,"not found"
+? \<L\>
+|2,1,1731540042,,"\\<L\\>"
+?/max(
+|2,1,1731540038,47,"max("
+?/START
+|2,1,1731540225,47,"START"
+?/import
+|2,1,1731536737,47,"import"
+?/print
+|2,1,1731534514,47,"print"
+?/wrap
+|2,1,1731278216,47,"wrap"
+?/diff
+|2,1,1731275736,47,"diff"
+?/git diff
+|2,1,1731275733,47,"git diff"
+?/Beautiful
+|2,1,1731266980,47,"Beautiful"
+?/\(def\|class\)\s\+\w*title
+|2,1,1731266383,47,"\\(def\\|class\\)\\s\\+\\w*title"
+?/^@app.route(["']\/\w*title
+|2,1,1731266379,47,"^@app.route([\"']\\/\\w*title"
+?/^@app.route(["']\/\w*main
+|2,1,1731266342,47,"^@app.route([\"']\\/\\w*main"
+?/page
+|2,1,1731265629,47,"page"
+?/test_video
+|2,1,1731264083,47,"test_video"
+?/"video"
+|2,1,1731263950,47,"\"video\""
+?/datePublish
+|2,1,1731257166,47,"datePublish"
+?/api
+|2,1,1731256003,47,"api"
+? \C\<COMMUNITY\>
+|2,1,1731254929,,"\\C\\<COMMUNITY\\>"
+?/touc
+|2,1,1731252056,47,"touc"
+?/, vla
+|2,1,1731247758,47,", vla"
 ?/GEMINI
 |2,1,1731247588,47,"GEMINI"
 ?/err
@@ -11024,14 +11520,10 @@ $
 |2,1,1730738639,47,"exists"
 ?/ALIVE
 |2,1,1730738550,47,"ALIVE"
-? @$
-|2,1,1730735397,,"@$"
 ?/graphy
 |2,1,1730728914,47,"graphy"
 ?/anony
 |2,1,1730727939,47,"anony"
-? ^\s*$\n\s*$
-|2,1,1730726934,,"^\\s*$\\n\\s*$"
 ?/Conn
 |2,1,1730726476,47,"Conn"
 ?/worker
@@ -11060,8 +11552,6 @@ $
 |2,1,1730554433,47,"rounded"
 ?/bg-teal
 |2,1,1730554009,47,"bg-teal"
-?/teal
-|2,1,1730554006,47,"teal"
 ?/group-hover:.*green
 |2,1,1730553568,47,"group-hover:.*green"
 ??green
@@ -11084,8 +11574,6 @@ $
 |2,1,1730504828,47,"screen"
 ? bear
 |2,1,1730504610,,"bear"
-?/copilot
-|2,1,1730504105,47,"copilot"
 ?/session\.post
 |2,1,1730414561,47,"session\\.post"
 ?/agk
@@ -11126,12 +11614,8 @@ $
 |2,1,1730141026,47,"slate"
 ?/divide
 |2,1,1730141024,47,"divide"
-?/hover
-|2,1,1730140572,47,"hover"
 ?/\C\<red\>
 |2,1,1730139570,47,"\\C\\<red\\>"
-?/red
-|2,1,1730139568,47,"red"
 ?/luxon
 |2,1,1730111139,47,"luxon"
 ?/\~
@@ -11150,8 +11634,6 @@ $
 |2,1,1729805861,47,"max_len_timeago"
 ? \[2024
 |2,1,1729806552,,"\\[2024"
-?/max(
-|2,1,1729805719,47,"max("
 ?/FF
 |2,1,1729800646,47,"FF"
 ?/FFmpeg
@@ -11188,8 +11670,6 @@ $
 |2,1,1729789445,,"timer\\..*\\\"import rich\\\""
 ? timer\..*\"import requests\"
 |2,1,1729789443,,"timer\\..*\\\"import requests\\\""
-? timer\..*\"import\"
-|2,1,1729789442,,"timer\\..*\\\"import\\\""
 ?/queue
 |2,1,1729771286,47,"queue"
 ?/not c
@@ -11272,10 +11752,6 @@ $
 |2,1,1729632638,47,"INTEGER"
 ?/_dict
 |2,1,1729632436,47,"_dict"
-?/name
-|2,1,1729632268,47,"name"
-?/json
-|2,1,1729631739,47,"json"
 ?/batch_select
 |2,1,1729630137,47,"batch_select"
 ?/^@app.route("\/\w*batch
@@ -11378,16 +11854,12 @@ $
 |2,1,1729342935,47,"capture_output"
 ?/\(def\|class\)\s\+\w*loop
 |2,1,1729284038,47,"\\(def\\|class\\)\\s\\+\\w*loop"
-?/black
-|2,1,1729278837,47,"black"
 ?/GET
 |2,1,1729277690,47,"GET"
 ?/\.print
 |2,1,1729277644,47,"\\.print"
 ?/rich
 |2,1,1729277642,47,"rich"
-?/print
-|2,1,1729277237,47,"print"
 ?/\C\<fd\>
 |2,1,1729259495,47,"\\C\\<fd\\>"
 ?/sqlite3
@@ -11422,8 +11894,6 @@ $
 |2,1,1729197048,,"timer\\..*\\\"import sys\\\""
 ? timer\..*\"import ic\"
 |2,1,1729196978,,"timer\\..*\\\"import ic\\\""
-? timer\..*\"imports\"
-|2,1,1729196973,,"timer\\..*\\\"imports\\\""
 ? timer\..*\"error2\.py\"
 |2,1,1729196891,,"timer\\..*\\\"error2\\.py\\\""
 ? timer\..*\"import TYPE_CHECKING\"
@@ -11510,8 +11980,6 @@ $
 |2,1,1729193541,,"timer\\..*\\\"block\\\""
 ? 0\.00 seconds
 |2,1,1729193168,,"0\\.00 seconds"
-?/Connection
-|2,1,1729192918,47,"Connection"
 ? timer\..*\"import db_init, insert_dictionaries\"
 |2,1,1729192801,,"timer\\..*\\\"import db_init, insert_dictionaries\\\""
 ? timer\..*\"rest\"
@@ -11610,8 +12078,6 @@ $
 |2,1,1729090543,47,"break"
 ?/^@app.route("\/\w*clip
 |2,1,1729093940,47,"^@app.route(\"\\/\\w*clip"
-?/\(def\|class\)\s\+\w*filter
-|2,1,1729090303,47,"\\(def\\|class\\)\\s\\+\\w*filter"
 ?/usernames
 |2,1,1729089101,47,"usernames"
 ? ^\s*create
@@ -11634,8 +12100,6 @@ $
 |2,1,1729074173,47,"^@app.route(\"\\/\\w*user"
 ?/user_id
 |2,1,1729074164,47,"user_id"
-??\a
-|2,1,1729070512,63,"\\a"
 ?/DROP TABLE
 |2,1,1728893435,47,"DROP TABLE"
 ?/requests\.get
@@ -11674,8 +12138,6 @@ $
 |2,1,1728885773,47,"\\(def\\|class\\)\\s\\+\\w*hh"
 ?/\(def\|class\)\s\+\w*date
 |2,1,1728885768,47,"\\(def\\|class\\)\\s\\+\\w*date"
-?/First
-|2,1,1728885341,47,"First"
 ?/currentPage
 |2,1,1728885291,47,"currentPage"
 ??start_date
@@ -11762,8 +12224,6 @@ $
 |2,1,1727962722,47,"\\(def\\|class\\)\\s\\+\\w*view_portions"
 ?/\(def\|class\)\s\+\w*view_sequence
 |2,1,1727962706,47,"\\(def\\|class\\)\\s\\+\\w*view_sequence"
-?/<input
-|2,1,1727962255,47,"<input"
 ?/subm
 |2,1,1727962212,47,"subm"
 ?/Set
@@ -11798,8 +12258,6 @@ $
 |2,1,1727842697,47,"expand"
 ?/feedkeys
 |2,1,1727842695,47,"feedkeys"
-?/github
-|2,1,1727782738,47,"github"
 ?/\(def\|class\)\s\+\w*print
 |2,1,1727782594,47,"\\(def\\|class\\)\\s\\+\\w*print"
 ?/human-rea
@@ -11824,8 +12282,6 @@ $
 |2,1,1727657172,47,"PS1"
 ?/Set PS1
 |2,1,1727656868,47,"Set PS1"
-?/pre
-|2,1,1727656629,47,"pre"
 ?/<space>e
 |2,1,1727581846,47,"<space>e"
 ?/vim
@@ -11876,8 +12332,6 @@ $
 |2,1,1727131989,,"timer\\..*\\\"sec2\\\""
 ?/count
 |2,1,1727050452,47,"count"
-?/wrap
-|2,1,1727050004,47,"wrap"
 ?/iglob
 |2,1,1727042146,47,"iglob"
 ?/--color
@@ -11940,8 +12394,6 @@ $
 |2,1,1726963276,47,"bugs"
 ?/preview
 |2,1,1726962481,47,"preview"
-?/color
-|2,1,1726305724,47,"color"
 ?/ansi
 |2,1,1726305723,47,"ansi"
 ?/workspaces
@@ -12278,16 +12730,10 @@ $
 |2,1,1724978508,47,"aget_cache"
 ? from \.
 |2,1,1724975910,,"from \\."
-?/waivek
-|2,1,1724974740,47,"waivek"
-?/Search
-|2,1,1724913607,47,"Search"
 ?/self
 |2,1,1724913602,47,"self"
 ?/high
 |2,1,1724913595,47,"high"
-?/def
-|2,1,1724913592,47,"def"
 ?/mock
 |2,1,1724913586,47,"mock"
 ?/colorscheme
@@ -12582,8 +13028,6 @@ $
 |2,1,1723061816,47,"\\(def\\|class\\)\\s\\+\\w*sync_"
 ?/form_crea
 |2,1,1723060504,47,"form_crea"
-?/box
-|2,1,1723060197,47,"box"
 ??hhmm
 |2,1,1723056805,63,"hhmm"
 ?/h
@@ -12700,14 +13144,10 @@ $
 |2,1,1722630855,47,"\\f"
 ?/ - 
 |2,1,1722630665,47," - "
-?/bold
-|2,1,1722618191,47,"bold"
 ?/TERM
 |2,1,1722618049,47,"TERM"
 ? ^#\s
 |2,1,1722617161,,"^#\\s"
-?/\C\<\>
-|2,1,1722616708,47,"\\C\\<\\>"
 ?/winreg
 |2,1,1722616615,47,"winreg"
 ?/sys\.pla
@@ -12854,10 +13294,6 @@ $
 |2,1,1722363786,47,"ENSURE"
 ?/print_utis
 |2,1,1722360793,47,"print_utis"
-?/import
-|2,1,1722360628,47,"import"
-?/from
-|2,1,1722360627,47,"from"
 ?/print_utils
 |2,1,1722360539,47,"print_utils"
 ?/top_offsets
@@ -12868,8 +13304,6 @@ $
 |2,1,1722289657,47,"{{ offset"
 ?/flask_data
 |2,1,1722289654,47,"flask_data"
-?/offsets
-|2,1,1722289635,47,"offsets"
 ?/\(def\|class\)\s\+\w*offset
 |2,1,1722289341,47,"\\(def\\|class\\)\\s\\+\\w*offset"
 ?/\(def\|class\)\s\+\w*to_url
@@ -13040,8 +13474,6 @@ $
 |2,1,1721955099,47,"fi"
 ?/edge
 |2,1,1721954796,47,"edge"
-?/page
-|2,1,1721954569,47,"page"
 ? timer\..*\"gzip\.open\"
 |2,1,1721946409,,"timer\\..*\\\"gzip\\.open\\\""
 ?/json_path
@@ -13106,14 +13538,10 @@ $
 |2,1,1721324351,47,"\\(def\\|class\\)\\s\\+\\w*on"
 ?/^\s*function!\?\s\+\(s:\)\?\(\w\+#\)\?\w*date
 |2,1,1721320340,47,"^\\s*function!\\?\\s\\+\\(s:\\)\\?\\(\\w\\+#\\)\\?\\w*date"
-?/read
-|2,1,1721314435,47,"read"
 ?/downloads
 |2,1,1721312191,47,"downloads"
 ?/input
 |2,1,1721311595,47,"input"
-?/disabled
-|2,1,1721311403,47,"disabled"
 ?/\(def\|class\)\s\+\w*form_create_port
 |2,1,1721311318,47,"\\(def\\|class\\)\\s\\+\\w*form_create_port"
 ?/input[
@@ -13380,8 +13808,6 @@ $
 |2,1,1718874160,47,"&"
 ?/none
 |2,1,1718872824,47,"none"
-?/select
-|2,1,1718871697,47,"select"
 ?/FlaskStylesheet
 |2,1,1718755370,47,"FlaskStylesheet"
 ??Flask
@@ -13400,10 +13826,6 @@ $
 |2,1,1718616968,47,"active-footer"
 ?/th
 |2,1,1718616305,47,"th"
-?/shadow
-|2,1,1718614717,47,"shadow"
-?/padding
-|2,1,1718613051,47,"padding"
 ?/\(def\|class\)\s\+\w*inde
 |2,1,1718612974,47,"\\(def\\|class\\)\\s\\+\\w*inde"
 ?/\(def\|class\)\s\+\w*eleme
@@ -13422,8 +13844,6 @@ $
 |2,1,1718570296,47,"\\(def\\|class\\)\\s\\+\\w*elemen"
 ?/icon
 |2,1,1718533855,47,"icon"
-?/inter
-|2,1,1718532567,47,"inter"
 ?/md
 |2,1,1718532392,47,"md"
 ?/most chap
@@ -13556,8 +13976,6 @@ $
 |2,1,1718185602,47,"py-1"
 ?/px-
 |2,1,1718185497,47,"px-"
-?/rose
-|2,1,1718185417,47,"rose"
 ?/border-
 |2,1,1718185349,47,"border-"
 ?/\[
@@ -13594,8 +14012,6 @@ $
 |2,1,1718141174,47,"radio"
 ?/bg-
 |2,1,1718140579,47,"bg-"
-?/flex
-|2,1,1718137687,47,"flex"
 ?/cursor: pointer
 |2,1,1718136998,47,"cursor: pointer"
 ? \s*;
@@ -13610,8 +14026,6 @@ $
 |2,1,1718096151,47,"url_map"
 ?/\(def\|class\)\s\+\w*requ`
 |2,1,1718096069,47,"\\(def\\|class\\)\\s\\+\\w*requ`"
-?/before
-|2,1,1718096065,47,"before"
 ?/\(def\|class\)\s\+\w*befo
 |2,1,1718096040,47,"\\(def\\|class\\)\\s\\+\\w*befo"
 ?/legent
@@ -13620,8 +14034,6 @@ $
 |2,1,1717962612,47,"background"
 ?/width
 |2,1,1717960984,47,"width"
-?/p-
-|2,1,1717960804,47,"p-"
 ?/hover-fill
 |2,1,1717948384,47,"hover-fill"
 ?/{
@@ -13832,8 +14244,6 @@ $
 |2,1,1717235714,47,"Status:"
 ?/footer
 |2,1,1717232401,47,"footer"
-?/sticky
-|2,1,1717232391,47,"sticky"
 ?/\C\<path\>
 |2,1,1717230957,47,"\\C\\<path\\>"
 ?/set.*path
@@ -14126,12 +14536,8 @@ $
 |2,1,1716856989,47,"create"
 ?/crete
 |2,1,1716804179,47,"crete"
-?/stat
-|2,1,1716804177,47,"stat"
 ?/sqlite-editor
 |2,1,1716802707,47,"sqlite-editor"
-?/hateoas
-|2,1,1716802700,47,"hateoas"
 ?/vivek
 |2,1,1716802334,47,"vivek"
 ?/get_db_p
@@ -14322,8 +14728,6 @@ $
 |2,1,1716605294,47,"autoincrement"
 ?/delete
 |2,1,1716603917,47,"delete"
-?/api
-|2,1,1716603891,47,"api"
 ?/offset
 |2,1,1716579790,47,"offset"
 ?/READONLY
@@ -14452,8 +14856,6 @@ $
 |2,1,1716098241,47,"usage"
 ?/check
 |2,1,1716098088,47,"check"
-?/filter
-|2,1,1716097941,47,"filter"
 ?/Cleaning up
 |2,1,1716092566,47,"Cleaning up"
 ?/\(def\|class\)\s\+\w*stale
@@ -14710,8 +15112,6 @@ $
 |2,1,1713774327,47,"alt"
 ?/shopt
 |2,1,1713773510,47,"shopt"
-?/requi
-|2,1,1713758601,47,"requi"
 ?/history 
 |2,1,1713757202,47,"history "
 ?/histfie
@@ -14796,8 +15196,6 @@ $
 |2,1,1713515647,,"\\s\\s\\+"
 ? row
 |2,1,1713512222,,"row"
-?/row
-|2,1,1713512219,47,"row"
 ?/\d
 |2,1,1713507579,47,"\\d"
 ?/-m
@@ -15004,8 +15402,6 @@ $
 |2,1,1712003127,47,"pageCount"
 ?/(
 |2,1,1712001677,47,"("
-?/User
-|2,1,1712000699,47,"User"
 ?/sqlite:
 |2,1,1711998922,47,"sqlite:"
 ?/\(def\|class\)\s\+\w*query_videos
@@ -15520,8 +15916,6 @@ $
 |2,1,1693202631,47,"."
 ?/install
 |2,1,1693173173,47,"install"
-?/comp
-|2,1,1693172890,47,"comp"
 ?/_Z
 |2,1,1693128422,47,"_Z"
 ?/PROMPT_COMMAND
@@ -15768,8 +16162,6 @@ $
 |2,1,1691671322,47,"dat"
 ?/text-black
 |2,1,1691671188,47,"text-black"
-?/selec
-|2,1,1691671186,47,"selec"
 ?/dark:text-black
 |2,1,1691671095,47,"dark:text-black"
 ?/disabled:
@@ -16336,6 +16728,18 @@ $
 |2,2,1688309303,,"v:oldfiles"
 
 # Input Line History (newest to oldest):
+@div class="wide">
+|2,3,1732631639,,"div class=\"wide\">"
+@div>
+|2,3,1732611518,,"div>"
+@div
+|2,3,1732611399,,"div"
+@create_engine
+|2,3,1732531077,,"create_engine"
+@import
+|2,3,1732531012,,"import"
+@imports
+|2,3,1732493087,,"imports"
 @g
 |2,3,1729861099,,"g"
 @int
@@ -16344,8 +16748,6 @@ $
 |2,3,1729800613,,"div class=\"tall\">"
 @span>
 |2,3,1729796738,,"span>"
-@div>
-|2,3,1729638609,,"div>"
 @main
 |2,3,1729510974,,"main"
 @libs
@@ -16360,8 +16762,6 @@ $
 |2,3,1729500730,,"imports-2"
 @os.path.basename
 |2,3,1729454783,,"os.path.basename"
-@imports
-|2,3,1729196960,,"imports"
 @contextmanager
 |2,3,1729196794,,"contextmanager"
 @3imports
@@ -16390,8 +16790,6 @@ $
 |2,3,1729192604,,"imports A"
 @func1
 |2,3,1729192260,,"func1"
-@import
-|2,3,1729192229,,"import"
 @div class="wide>
 |2,3,1728887205,,"div class=\"wide>"
 @sec3
@@ -16460,8 +16858,6 @@ $
 |2,3,1717915305,,"form"
 @di
 |2,3,1717913804,,"di"
-@div class="wide">
-|2,3,1717523773,,"div class=\"wide\">"
 @div 
 |2,3,1717163030,,"div "
 @loop
@@ -16540,8 +16936,6 @@ $
 |2,3,1691304404,,"db.prepare"
 @Date
 |2,3,1690944131,,"Date"
-@div
-|2,3,1690923905,,"div"
 @to_hh_m
 |2,3,1690770475,,"to_hh_m"
 @div class="border-2 border-yellow-400 p-2">
@@ -16572,47 +16966,56 @@ $
 |2,4,1693311567,,"cont"
 
 # Registers:
-""0	CHAR	0
-	print
-|3,1,0,0,1,0,1731247410,"print"
-"1	LINE	0
-	        sys.stderr.flush()
-|3,0,1,1,1,0,1731247406,"        sys.stderr.flush()"
+"0	LINE	0
+	  ATK     CRIT    DMR 
+	  ATK     ATKSPD  DMR 
+	  ATKSPD  CRIT    DMR 
+	  ATK     CD      CRIT
+	  ATK     ATKSPD  CD  
+	  ATKSPD  CD      CRIT
+	  ATK     ATKSPD  CRIT
+	
+|3,0,0,1,8,0,1734475433,"  ATK     CRIT    DMR ","  ATK     ATKSPD  DMR ","  ATKSPD  CRIT    DMR ","  ATK     CD      CRIT","  ATK     ATKSPD  CD  ","  ATKSPD  CD      CRIT","  ATK     ATKSPD  CRIT",""
+""1	LINE	0
+	
+|3,1,1,1,1,0,1734605638,""
 "2	LINE	0
-	    sys.stderr.flush()
-|3,0,2,1,1,0,1731247401,"    sys.stderr.flush()"
+	def add(a, b):
+	    return a + b
+|3,0,2,1,2,0,1734605637,"def add(a, b):","    return a + b"
 "3	LINE	0
-	    print(msg, file=sys.stderr)
-	    sys.exit(1)
-|3,0,3,1,2,0,1731247397,"    print(msg, file=sys.stderr)","    sys.exit(1)"
+	def main():
+|3,0,3,1,1,0,1734605621,"def main():"
 "4	LINE	0
-	                print(f"Loaded GEMINI_API_KEY from {secrets_path}, value: {value}")
-	                genai.configure(api_key=value)
-|3,0,4,1,2,0,1731241315,"                print(f\"Loaded GEMINI_API_KEY from {secrets_path}, value: {value}\")","                genai.configure(api_key=value)"
+	
+|3,0,4,1,1,0,1734476036,""
 "5	LINE	0
-	                print(f"Loaded GEMINI_API_KEY from {secrets_path}, value: {value}")
-|3,0,5,1,1,0,1731241313,"                print(f\"Loaded GEMINI_API_KEY from {secrets_path}, value: {value}\")"
+	
+|3,0,5,1,1,0,1734475903,""
 "6	LINE	0
 	
-|3,0,6,1,1,0,1731241312,""
+|3,0,6,1,1,0,1734475780,""
 "7	LINE	0
-	    print(f"Loaded GEMINI_API_KEY from {secrets_path}, value: {value}")
-|3,0,7,1,1,0,1731241307,"    print(f\"Loaded GEMINI_API_KEY from {secrets_path}, value: {value}\")"
+	
+|3,0,7,1,1,0,1734475561,""
 "8	LINE	0
-	    
-|3,0,8,1,1,0,1731241180,"    "
+	# Output file path
+	output_file = "substat_permutations_5c3.txt"
+	
+|3,0,8,1,3,0,1734474942,"# Output file path","output_file = \"substat_permutations_5c3.txt\"",""
 "9	LINE	0
-	import sys; sys.exit(0)
-|3,0,9,1,1,0,1731241072,"import sys; sys.exit(0)"
+	    
+	    print(f"Generated {len(permutations)} permutations. Saved to {output_file}")
+|3,0,9,1,2,0,1734474928,"    ","    print(f\"Generated {len(permutations)} permutations. Saved to {output_file}\")"
 "a	CHAR	0
-	0f dw
-|3,0,10,0,1,0,1731240943,"0f dw"
+	0;i'jkea'jk
+|3,0,10,0,1,0,1734475064,"0;i'jkea'jk"
 "i	CHAR	0
 	ado_up()jk:q!
 |3,0,18,0,1,0,1724200553,"ado_up()jk:q!"
 "j	CHAR	0
-	k:q!€ýajk:q!
-|3,0,19,0,1,0,1724474771,"k:q!€ýajk:q!"
+	k:q!
+|3,0,19,0,1,0,1731540051,"k:q!"
 "k	CHAR	0
 	:w:€ýa
 |3,0,20,0,1,0,1730556532,":w:€ýa"
@@ -16623,674 +17026,1966 @@ $
 	{time.time() - start_time:.2f} seconds 
 |3,0,28,0,1,0,1728799695,"{time.time() - start_time:.2f} seconds "
 "-	CHAR	0
-	print
-|3,0,36,0,1,0,1731247409,"print"
+	" 
+|3,0,36,0,1,0,1734605602,"\" "
 
 # File marks:
-'0  16598  45  ~/.vim/_viminfo_linux
-|4,48,16598,45,1731247594,"~/.vim/_viminfo_linux"
-'1  4  0  ~/llm/commit-message-gemini.py
-|4,49,4,0,1731247448,"~/llm/commit-message-gemini.py"
-'2  4  0  ~/llm/commit-message-gemini.py
-|4,50,4,0,1731247448,"~/llm/commit-message-gemini.py"
-'3  16  0  ~/llm/commit-message-gemini.py
-|4,51,16,0,1731247416,"~/llm/commit-message-gemini.py"
-'4  16  0  ~/llm/commit-message-gemini.py
-|4,52,16,0,1731247416,"~/llm/commit-message-gemini.py"
-'5  16  0  ~/llm/commit-message-gemini.py
-|4,53,16,0,1731247416,"~/llm/commit-message-gemini.py"
-'6  16  0  ~/llm/commit-message-gemini.py
-|4,54,16,0,1731247416,"~/llm/commit-message-gemini.py"
-'7  10  0  ~/nicesite/.git/COMMIT_EDITMSG
-|4,55,10,0,1731243703,"~/nicesite/.git/COMMIT_EDITMSG"
-'8  10  0  ~/nicesite/.git/COMMIT_EDITMSG
-|4,56,10,0,1731243703,"~/nicesite/.git/COMMIT_EDITMSG"
-'9  10  0  ~/nicesite/.git/COMMIT_EDITMSG
-|4,57,10,0,1731243703,"~/nicesite/.git/COMMIT_EDITMSG"
+'0  14  0  ~/file.py
+|4,48,14,0,1734652105,"~/file.py"
+'1  90  0  ~/.vim/vimrc
+|4,49,90,0,1734605604,"~/.vim/vimrc"
+'2  90  0  ~/.vim/vimrc
+|4,50,90,0,1734605604,"~/.vim/vimrc"
+'3  10  115  ~/pyscripts/crk_substats.py
+|4,51,10,115,1734518343,"~/pyscripts/crk_substats.py"
+'4  10  115  ~/pyscripts/crk_substats.py
+|4,52,10,115,1734518343,"~/pyscripts/crk_substats.py"
+'5  10  115  ~/pyscripts/crk_substats.py
+|4,53,10,115,1734518343,"~/pyscripts/crk_substats.py"
+'6  10  115  ~/pyscripts/crk_substats.py
+|4,54,10,115,1734518343,"~/pyscripts/crk_substats.py"
+'7  1  2  ~/pyscripts/requirements.txt
+|4,55,1,2,1734474983,"~/pyscripts/requirements.txt"
+'8  1  2  ~/pyscripts/requirements.txt
+|4,56,1,2,1734474983,"~/pyscripts/requirements.txt"
+'9  1  2  ~/pyscripts/requirements.txt
+|4,57,1,2,1734474983,"~/pyscripts/requirements.txt"
 
 # Jumplist (newest first):
--'  16598  45  ~/.vim/_viminfo_linux
-|4,39,16598,45,1731247594,"~/.vim/_viminfo_linux"
--'  16597  20  ~/.vim/_viminfo_linux
-|4,39,16597,20,1731247590,"~/.vim/_viminfo_linux"
--'  16592  57  ~/.vim/_viminfo_linux
-|4,39,16592,57,1731247590,"~/.vim/_viminfo_linux"
--'  16591  32  ~/.vim/_viminfo_linux
-|4,39,16591,32,1731247590,"~/.vim/_viminfo_linux"
--'  16589  57  ~/.vim/_viminfo_linux
-|4,39,16589,57,1731247589,"~/.vim/_viminfo_linux"
--'  16587  32  ~/.vim/_viminfo_linux
-|4,39,16587,32,1731247589,"~/.vim/_viminfo_linux"
--'  1  0  ~/.vim/_viminfo_linux
-|4,39,1,0,1731247588,"~/.vim/_viminfo_linux"
--'  4  0  ~/llm/commit-message-gemini.py
-|4,39,4,0,1731247448,"~/llm/commit-message-gemini.py"
--'  4  0  ~/llm/commit-message-gemini.py
-|4,39,4,0,1731247448,"~/llm/commit-message-gemini.py"
--'  1  0  ~/llm/commit-message-gemini.py
-|4,39,1,0,1731247439,"~/llm/commit-message-gemini.py"
--'  1  0  ~/llm/commit-message-gemini.py
-|4,39,1,0,1731247439,"~/llm/commit-message-gemini.py"
--'  16  0  ~/llm/commit-message-gemini.py
-|4,39,16,0,1731247416,"~/llm/commit-message-gemini.py"
--'  16  0  ~/llm/commit-message-gemini.py
-|4,39,16,0,1731247416,"~/llm/commit-message-gemini.py"
--'  16  0  ~/llm/commit-message-gemini.py
-|4,39,16,0,1731247416,"~/llm/commit-message-gemini.py"
--'  35  6  ~/llm/commit-message-gemini.py
-|4,39,35,6,1731247410,"~/llm/commit-message-gemini.py"
--'  35  6  ~/llm/commit-message-gemini.py
-|4,39,35,6,1731247410,"~/llm/commit-message-gemini.py"
--'  35  6  ~/llm/commit-message-gemini.py
-|4,39,35,6,1731247410,"~/llm/commit-message-gemini.py"
--'  34  6  ~/llm/commit-message-gemini.py
-|4,39,34,6,1731247409,"~/llm/commit-message-gemini.py"
--'  34  6  ~/llm/commit-message-gemini.py
-|4,39,34,6,1731247409,"~/llm/commit-message-gemini.py"
--'  34  6  ~/llm/commit-message-gemini.py
-|4,39,34,6,1731247409,"~/llm/commit-message-gemini.py"
--'  32  10  ~/llm/commit-message-gemini.py
-|4,39,32,10,1731247407,"~/llm/commit-message-gemini.py"
--'  31  10  ~/llm/commit-message-gemini.py
-|4,39,31,10,1731247407,"~/llm/commit-message-gemini.py"
--'  32  10  ~/llm/commit-message-gemini.py
-|4,39,32,10,1731247407,"~/llm/commit-message-gemini.py"
--'  31  10  ~/llm/commit-message-gemini.py
-|4,39,31,10,1731247407,"~/llm/commit-message-gemini.py"
--'  32  10  ~/llm/commit-message-gemini.py
-|4,39,32,10,1731247407,"~/llm/commit-message-gemini.py"
--'  31  10  ~/llm/commit-message-gemini.py
-|4,39,31,10,1731247407,"~/llm/commit-message-gemini.py"
--'  29  10  ~/llm/commit-message-gemini.py
-|4,39,29,10,1731247405,"~/llm/commit-message-gemini.py"
--'  29  10  ~/llm/commit-message-gemini.py
-|4,39,29,10,1731247405,"~/llm/commit-message-gemini.py"
--'  29  10  ~/llm/commit-message-gemini.py
-|4,39,29,10,1731247405,"~/llm/commit-message-gemini.py"
--'  28  10  ~/llm/commit-message-gemini.py
-|4,39,28,10,1731247404,"~/llm/commit-message-gemini.py"
--'  18  6  ~/llm/commit-message-gemini.py
-|4,39,18,6,1731247404,"~/llm/commit-message-gemini.py"
--'  28  10  ~/llm/commit-message-gemini.py
-|4,39,28,10,1731247404,"~/llm/commit-message-gemini.py"
--'  18  6  ~/llm/commit-message-gemini.py
-|4,39,18,6,1731247404,"~/llm/commit-message-gemini.py"
--'  28  10  ~/llm/commit-message-gemini.py
-|4,39,28,10,1731247404,"~/llm/commit-message-gemini.py"
--'  18  6  ~/llm/commit-message-gemini.py
-|4,39,18,6,1731247404,"~/llm/commit-message-gemini.py"
--'  15  0  ~/llm/commit-message-gemini.py
-|4,39,15,0,1731247400,"~/llm/commit-message-gemini.py"
--'  14  21  ~/llm/commit-message-gemini.py
-|4,39,14,21,1731247400,"~/llm/commit-message-gemini.py"
--'  15  0  ~/llm/commit-message-gemini.py
-|4,39,15,0,1731247400,"~/llm/commit-message-gemini.py"
--'  14  21  ~/llm/commit-message-gemini.py
-|4,39,14,21,1731247400,"~/llm/commit-message-gemini.py"
--'  15  0  ~/llm/commit-message-gemini.py
-|4,39,15,0,1731247400,"~/llm/commit-message-gemini.py"
--'  14  21  ~/llm/commit-message-gemini.py
-|4,39,14,21,1731247400,"~/llm/commit-message-gemini.py"
--'  45  0  ~/llm/commit-message-gemini.py
-|4,39,45,0,1731247344,"~/llm/commit-message-gemini.py"
--'  45  0  ~/llm/commit-message-gemini.py
-|4,39,45,0,1731247344,"~/llm/commit-message-gemini.py"
--'  45  0  ~/llm/commit-message-gemini.py
-|4,39,45,0,1731247344,"~/llm/commit-message-gemini.py"
--'  10  0  ~/llm/commit-message-gemini.py
-|4,39,10,0,1731247343,"~/llm/commit-message-gemini.py"
--'  10  0  ~/llm/commit-message-gemini.py
-|4,39,10,0,1731247343,"~/llm/commit-message-gemini.py"
--'  10  0  ~/llm/commit-message-gemini.py
-|4,39,10,0,1731247343,"~/llm/commit-message-gemini.py"
--'  1  0  ~/llm/gemini.py
-|4,39,1,0,1731247336,"~/llm/gemini.py"
--'  1  0  ~/llm/gemini.py
-|4,39,1,0,1731247336,"~/llm/gemini.py"
--'  1  0  ~/llm/gemini.py
-|4,39,1,0,1731247336,"~/llm/gemini.py"
--'  10  0  ~/nicesite/.git/COMMIT_EDITMSG
-|4,39,10,0,1731243703,"~/nicesite/.git/COMMIT_EDITMSG"
--'  10  0  ~/nicesite/.git/COMMIT_EDITMSG
-|4,39,10,0,1731243703,"~/nicesite/.git/COMMIT_EDITMSG"
--'  10  0  ~/nicesite/.git/COMMIT_EDITMSG
-|4,39,10,0,1731243703,"~/nicesite/.git/COMMIT_EDITMSG"
--'  10  0  ~/nicesite/.git/COMMIT_EDITMSG
-|4,39,10,0,1731243703,"~/nicesite/.git/COMMIT_EDITMSG"
--'  1  0  ~/nicesite/.git/COMMIT_EDITMSG
-|4,39,1,0,1731243700,"~/nicesite/.git/COMMIT_EDITMSG"
--'  1  0  ~/nicesite/.git/COMMIT_EDITMSG
-|4,39,1,0,1731243700,"~/nicesite/.git/COMMIT_EDITMSG"
--'  1  0  ~/nicesite/.git/COMMIT_EDITMSG
-|4,39,1,0,1731243700,"~/nicesite/.git/COMMIT_EDITMSG"
--'  1  0  ~/nicesite/.git/COMMIT_EDITMSG
-|4,39,1,0,1731243700,"~/nicesite/.git/COMMIT_EDITMSG"
--'  25  98  ~/nicesite/.git/COMMIT_EDITMSG
-|4,39,25,98,1731241377,"~/nicesite/.git/COMMIT_EDITMSG"
--'  16  98  ~/nicesite/.git/COMMIT_EDITMSG
-|4,39,16,98,1731241377,"~/nicesite/.git/COMMIT_EDITMSG"
--'  25  98  ~/nicesite/.git/COMMIT_EDITMSG
-|4,39,25,98,1731241377,"~/nicesite/.git/COMMIT_EDITMSG"
--'  16  98  ~/nicesite/.git/COMMIT_EDITMSG
-|4,39,16,98,1731241377,"~/nicesite/.git/COMMIT_EDITMSG"
--'  25  98  ~/nicesite/.git/COMMIT_EDITMSG
-|4,39,25,98,1731241377,"~/nicesite/.git/COMMIT_EDITMSG"
--'  16  98  ~/nicesite/.git/COMMIT_EDITMSG
-|4,39,16,98,1731241377,"~/nicesite/.git/COMMIT_EDITMSG"
--'  25  98  ~/nicesite/.git/COMMIT_EDITMSG
-|4,39,25,98,1731241377,"~/nicesite/.git/COMMIT_EDITMSG"
--'  16  98  ~/nicesite/.git/COMMIT_EDITMSG
-|4,39,16,98,1731241377,"~/nicesite/.git/COMMIT_EDITMSG"
--'  1  0  ~/nicesite/.git/COMMIT_EDITMSG
-|4,39,1,0,1731241372,"~/nicesite/.git/COMMIT_EDITMSG"
--'  25  4  ~/llm/gemini.py
-|4,39,25,4,1731241338,"~/llm/gemini.py"
--'  25  4  ~/llm/gemini.py
-|4,39,25,4,1731241338,"~/llm/gemini.py"
--'  25  4  ~/llm/gemini.py
-|4,39,25,4,1731241338,"~/llm/gemini.py"
--'  25  4  ~/llm/gemini.py
-|4,39,25,4,1731241338,"~/llm/gemini.py"
--'  25  4  ~/llm/gemini.py
-|4,39,25,4,1731241338,"~/llm/gemini.py"
--'  25  4  ~/llm/gemini.py
-|4,39,25,4,1731241338,"~/llm/gemini.py"
--'  21  16  ~/llm/gemini.py
-|4,39,21,16,1731241314,"~/llm/gemini.py"
--'  21  16  ~/llm/gemini.py
-|4,39,21,16,1731241314,"~/llm/gemini.py"
--'  21  16  ~/llm/gemini.py
-|4,39,21,16,1731241314,"~/llm/gemini.py"
--'  21  16  ~/llm/gemini.py
-|4,39,21,16,1731241314,"~/llm/gemini.py"
--'  21  16  ~/llm/gemini.py
-|4,39,21,16,1731241314,"~/llm/gemini.py"
--'  21  16  ~/llm/gemini.py
-|4,39,21,16,1731241314,"~/llm/gemini.py"
--'  1  0  ~/llm/gemini.py
-|4,39,1,0,1731241286,"~/llm/gemini.py"
--'  1  0  ~/llm/gemini.py
-|4,39,1,0,1731241286,"~/llm/gemini.py"
--'  1  0  ~/llm/gemini.py
-|4,39,1,0,1731241286,"~/llm/gemini.py"
--'  1  0  ~/nicesite/src/pages/Reactions.tsx
-|4,39,1,0,1731241283,"~/nicesite/src/pages/Reactions.tsx"
--'  1  0  ~/nicesite/src/pages/Reactions.tsx
-|4,39,1,0,1731241283,"~/nicesite/src/pages/Reactions.tsx"
--'  1  0  ~/nicesite/src/pages/Reactions.tsx
-|4,39,1,0,1731241283,"~/nicesite/src/pages/Reactions.tsx"
--'  1  0  ~/nicesite/src/pages/Reactions.tsx
-|4,39,1,0,1731241283,"~/nicesite/src/pages/Reactions.tsx"
--'  1  0  ~/nicesite/src/pages/Reactions.tsx
-|4,39,1,0,1731241283,"~/nicesite/src/pages/Reactions.tsx"
--'  1  0  ~/nicesite/src/pages/Reactions.tsx
-|4,39,1,0,1731241283,"~/nicesite/src/pages/Reactions.tsx"
--'  1  0  ~/nicesite/src/pages/Reactions.tsx
-|4,39,1,0,1731241283,"~/nicesite/src/pages/Reactions.tsx"
--'  15  8  ~/llm/gemini.py
-|4,39,15,8,1731241267,"~/llm/gemini.py"
--'  15  8  ~/llm/gemini.py
-|4,39,15,8,1731241267,"~/llm/gemini.py"
--'  15  8  ~/llm/gemini.py
-|4,39,15,8,1731241267,"~/llm/gemini.py"
--'  15  8  ~/llm/gemini.py
-|4,39,15,8,1731241267,"~/llm/gemini.py"
--'  15  8  ~/llm/gemini.py
-|4,39,15,8,1731241267,"~/llm/gemini.py"
--'  15  8  ~/llm/gemini.py
-|4,39,15,8,1731241267,"~/llm/gemini.py"
--'  15  8  ~/llm/gemini.py
-|4,39,15,8,1731241267,"~/llm/gemini.py"
--'  15  8  ~/llm/gemini.py
-|4,39,15,8,1731241267,"~/llm/gemini.py"
--'  28  68  ~/llm/gemini.py
-|4,39,28,68,1731241260,"~/llm/gemini.py"
--'  22  68  ~/llm/gemini.py
-|4,39,22,68,1731241260,"~/llm/gemini.py"
--'  28  68  ~/llm/gemini.py
-|4,39,28,68,1731241260,"~/llm/gemini.py"
+-'  14  0  ~/file.py
+|4,39,14,0,1734652105,"~/file.py"
+-'  1  0  ~/file.py
+|4,39,1,0,1734605610,"~/file.py"
+-'  90  0  ~/.vim/vimrc
+|4,39,90,0,1734605604,"~/.vim/vimrc"
+-'  90  0  ~/.vim/vimrc
+|4,39,90,0,1734605604,"~/.vim/vimrc"
+-'  41  0  ~/.vim/vimrc
+|4,39,41,0,1734605601,"~/.vim/vimrc"
+-'  41  0  ~/.vim/vimrc
+|4,39,41,0,1734605601,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1734605592,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1734605592,"~/.vim/vimrc"
+-'  10  115  ~/pyscripts/crk_substats.py
+|4,39,10,115,1734518343,"~/pyscripts/crk_substats.py"
+-'  10  115  ~/pyscripts/crk_substats.py
+|4,39,10,115,1734518343,"~/pyscripts/crk_substats.py"
+-'  10  115  ~/pyscripts/crk_substats.py
+|4,39,10,115,1734518343,"~/pyscripts/crk_substats.py"
+-'  9  42  ~/pyscripts/crk_substats.py
+|4,39,9,42,1734475073,"~/pyscripts/crk_substats.py"
+-'  9  42  ~/pyscripts/crk_substats.py
+|4,39,9,42,1734475073,"~/pyscripts/crk_substats.py"
+-'  9  42  ~/pyscripts/crk_substats.py
+|4,39,9,42,1734475073,"~/pyscripts/crk_substats.py"
+-'  16  36  ~/pyscripts/crk_substats.py
+|4,39,16,36,1734475057,"~/pyscripts/crk_substats.py"
+-'  16  36  ~/pyscripts/crk_substats.py
+|4,39,16,36,1734475057,"~/pyscripts/crk_substats.py"
+-'  16  36  ~/pyscripts/crk_substats.py
+|4,39,16,36,1734475057,"~/pyscripts/crk_substats.py"
+-'  13  29  ~/pyscripts/crk_substats.py
+|4,39,13,29,1734474990,"~/pyscripts/crk_substats.py"
+-'  13  29  ~/pyscripts/crk_substats.py
+|4,39,13,29,1734474990,"~/pyscripts/crk_substats.py"
+-'  13  29  ~/pyscripts/crk_substats.py
+|4,39,13,29,1734474990,"~/pyscripts/crk_substats.py"
+-'  1  2  ~/pyscripts/requirements.txt
+|4,39,1,2,1734474983,"~/pyscripts/requirements.txt"
+-'  1  2  ~/pyscripts/requirements.txt
+|4,39,1,2,1734474983,"~/pyscripts/requirements.txt"
+-'  1  2  ~/pyscripts/requirements.txt
+|4,39,1,2,1734474983,"~/pyscripts/requirements.txt"
+-'  253  4  ~/ui-components-css/ui-components-css-api.py
+|4,39,253,4,1734474967,"~/ui-components-css/ui-components-css-api.py"
+-'  253  4  ~/ui-components-css/ui-components-css-api.py
+|4,39,253,4,1734474967,"~/ui-components-css/ui-components-css-api.py"
+-'  253  4  ~/ui-components-css/ui-components-css-api.py
+|4,39,253,4,1734474967,"~/ui-components-css/ui-components-css-api.py"
+-'  253  4  ~/ui-components-css/ui-components-css-api.py
+|4,39,253,4,1734474967,"~/ui-components-css/ui-components-css-api.py"
+-'  11  4  ~/pyscripts/crk_substats.py
+|4,39,11,4,1734474956,"~/pyscripts/crk_substats.py"
+-'  11  4  ~/pyscripts/crk_substats.py
+|4,39,11,4,1734474956,"~/pyscripts/crk_substats.py"
+-'  11  4  ~/pyscripts/crk_substats.py
+|4,39,11,4,1734474956,"~/pyscripts/crk_substats.py"
+-'  18  0  ~/pyscripts/crk_substats.py
+|4,39,18,0,1734474943,"~/pyscripts/crk_substats.py"
+-'  18  0  ~/pyscripts/crk_substats.py
+|4,39,18,0,1734474943,"~/pyscripts/crk_substats.py"
+-'  18  0  ~/pyscripts/crk_substats.py
+|4,39,18,0,1734474943,"~/pyscripts/crk_substats.py"
+-'  4  38  ~/pyscripts/crk_substats.py
+|4,39,4,38,1734474924,"~/pyscripts/crk_substats.py"
+-'  4  38  ~/pyscripts/crk_substats.py
+|4,39,4,38,1734474924,"~/pyscripts/crk_substats.py"
+-'  4  38  ~/pyscripts/crk_substats.py
+|4,39,4,38,1734474924,"~/pyscripts/crk_substats.py"
+-'  14  0  ~/pyscripts/crk_substats.py
+|4,39,14,0,1734474919,"~/pyscripts/crk_substats.py"
+-'  14  0  ~/pyscripts/crk_substats.py
+|4,39,14,0,1734474919,"~/pyscripts/crk_substats.py"
+-'  14  0  ~/pyscripts/crk_substats.py
+|4,39,14,0,1734474919,"~/pyscripts/crk_substats.py"
+-'  19  4  ~/pyscripts/crk_substats.py
+|4,39,19,4,1734474907,"~/pyscripts/crk_substats.py"
+-'  19  4  ~/pyscripts/crk_substats.py
+|4,39,19,4,1734474907,"~/pyscripts/crk_substats.py"
+-'  19  4  ~/pyscripts/crk_substats.py
+|4,39,19,4,1734474907,"~/pyscripts/crk_substats.py"
+-'  20  0  ~/pyscripts/crk_substats.py
+|4,39,20,0,1734474902,"~/pyscripts/crk_substats.py"
+-'  20  0  ~/pyscripts/crk_substats.py
+|4,39,20,0,1734474902,"~/pyscripts/crk_substats.py"
+-'  20  0  ~/pyscripts/crk_substats.py
+|4,39,20,0,1734474902,"~/pyscripts/crk_substats.py"
+-'  1  0  ~/pyscripts/crk_substats.py
+|4,39,1,0,1734474893,"~/pyscripts/crk_substats.py"
+-'  1  0  ~/pyscripts/crk_substats.py
+|4,39,1,0,1734474893,"~/pyscripts/crk_substats.py"
+-'  1  0  ~/pyscripts/crk_substats.py
+|4,39,1,0,1734474893,"~/pyscripts/crk_substats.py"
+-'  21  0  ~/pyscripts/crk_substats.py
+|4,39,21,0,1734474889,"~/pyscripts/crk_substats.py"
+-'  21  0  ~/pyscripts/crk_substats.py
+|4,39,21,0,1734474889,"~/pyscripts/crk_substats.py"
+-'  21  0  ~/pyscripts/crk_substats.py
+|4,39,21,0,1734474889,"~/pyscripts/crk_substats.py"
+-'  1  0  ~/ui-components-css/ui-components-css-api.py
+|4,39,1,0,1734347938,"~/ui-components-css/ui-components-css-api.py"
+-'  1  0  ~/ui-components-css/ui-components-css-api.py
+|4,39,1,0,1734347938,"~/ui-components-css/ui-components-css-api.py"
+-'  1  0  ~/ui-components-css/ui-components-css-api.py
+|4,39,1,0,1734347938,"~/ui-components-css/ui-components-css-api.py"
+-'  1  0  ~/ui-components-css/ui-components-css-api.py
+|4,39,1,0,1734347938,"~/ui-components-css/ui-components-css-api.py"
+-'  12  0  ~/genproject/python-flask-tailwind.sh
+|4,39,12,0,1734347937,"~/genproject/python-flask-tailwind.sh"
+-'  12  0  ~/genproject/python-flask-tailwind.sh
+|4,39,12,0,1734347937,"~/genproject/python-flask-tailwind.sh"
+-'  12  0  ~/genproject/python-flask-tailwind.sh
+|4,39,12,0,1734347937,"~/genproject/python-flask-tailwind.sh"
+-'  12  0  ~/genproject/python-flask-tailwind.sh
+|4,39,12,0,1734347937,"~/genproject/python-flask-tailwind.sh"
+-'  1  0  ~/genproject/python-flask-tailwind.sh
+|4,39,1,0,1734347757,"~/genproject/python-flask-tailwind.sh"
+-'  1  0  ~/genproject/python-flask-tailwind.sh
+|4,39,1,0,1734347757,"~/genproject/python-flask-tailwind.sh"
+-'  1  0  ~/genproject/python-flask-tailwind.sh
+|4,39,1,0,1734347757,"~/genproject/python-flask-tailwind.sh"
+-'  1  0  ~/genproject/python-flask-tailwind.sh
+|4,39,1,0,1734347757,"~/genproject/python-flask-tailwind.sh"
+-'  1  0  /mnt/vps/Dockerfile-deploy
+|4,39,1,0,1734340841,"/mnt/vps/Dockerfile-deploy"
+-'  1  0  /mnt/vps/Dockerfile-deploy
+|4,39,1,0,1734340841,"/mnt/vps/Dockerfile-deploy"
+-'  1  0  /mnt/vps/Dockerfile-deploy
+|4,39,1,0,1734340841,"/mnt/vps/Dockerfile-deploy"
+-'  1  0  /mnt/vps/Dockerfile-deploy
+|4,39,1,0,1734340841,"/mnt/vps/Dockerfile-deploy"
+-'  1  0  /mnt/vps/Dockerfile-deploy
+|4,39,1,0,1734340841,"/mnt/vps/Dockerfile-deploy"
+-'  1  0  /mnt/vps/Dockerfile-deploy
+|4,39,1,0,1734340841,"/mnt/vps/Dockerfile-deploy"
+-'  1  0  /mnt/vps/Dockerfile-deploy
+|4,39,1,0,1734340841,"/mnt/vps/Dockerfile-deploy"
+-'  1  0  /mnt/vps/Dockerfile-deploy
+|4,39,1,0,1734340841,"/mnt/vps/Dockerfile-deploy"
+-'  1  2  /mnt/vps/Dockerfile-deploy
+|4,39,1,2,1734340583,"/mnt/vps/Dockerfile-deploy"
+-'  2  0  /mnt/vps/vm.bash
+|4,39,2,0,1734125848,"/mnt/vps/vm.bash"
+-'  2  0  /mnt/vps/vm.bash
+|4,39,2,0,1734125848,"/mnt/vps/vm.bash"
+-'  2  0  /mnt/vps/vm.bash
+|4,39,2,0,1734125848,"/mnt/vps/vm.bash"
+-'  2  0  /mnt/vps/vm.bash
+|4,39,2,0,1734125848,"/mnt/vps/vm.bash"
+-'  2  0  /mnt/vps/vm.bash
+|4,39,2,0,1734125848,"/mnt/vps/vm.bash"
+-'  2  0  /mnt/vps/vm.bash
+|4,39,2,0,1734125848,"/mnt/vps/vm.bash"
+-'  2  0  /mnt/vps/vm.bash
+|4,39,2,0,1734125848,"/mnt/vps/vm.bash"
+-'  2  0  /mnt/vps/vm.bash
+|4,39,2,0,1734125848,"/mnt/vps/vm.bash"
+-'  2  0  /mnt/vps/vm.bash
+|4,39,2,0,1734125848,"/mnt/vps/vm.bash"
+-'  2  0  /mnt/vps/vm.bash
+|4,39,2,0,1734125848,"/mnt/vps/vm.bash"
+-'  3  0  /mnt/vps/vm.bash
+|4,39,3,0,1734125330,"/mnt/vps/vm.bash"
+-'  3  0  /mnt/vps/vm.bash
+|4,39,3,0,1734125330,"/mnt/vps/vm.bash"
+-'  3  0  /mnt/vps/vm.bash
+|4,39,3,0,1734125330,"/mnt/vps/vm.bash"
+-'  3  0  /mnt/vps/vm.bash
+|4,39,3,0,1734125330,"/mnt/vps/vm.bash"
+-'  3  0  /mnt/vps/vm.bash
+|4,39,3,0,1734125330,"/mnt/vps/vm.bash"
+-'  3  0  /mnt/vps/vm.bash
+|4,39,3,0,1734125330,"/mnt/vps/vm.bash"
+-'  3  0  /mnt/vps/vm.bash
+|4,39,3,0,1734125330,"/mnt/vps/vm.bash"
+-'  3  0  /mnt/vps/vm.bash
+|4,39,3,0,1734125330,"/mnt/vps/vm.bash"
+-'  3  0  /mnt/vps/vm.bash
+|4,39,3,0,1734125330,"/mnt/vps/vm.bash"
+-'  3  0  /mnt/vps/vm.bash
+|4,39,3,0,1734125330,"/mnt/vps/vm.bash"
+-'  4  65  /mnt/vps/vm.bash
+|4,39,4,65,1734125328,"/mnt/vps/vm.bash"
+-'  4  65  /mnt/vps/vm.bash
+|4,39,4,65,1734125328,"/mnt/vps/vm.bash"
+-'  4  65  /mnt/vps/vm.bash
+|4,39,4,65,1734125328,"/mnt/vps/vm.bash"
+-'  4  65  /mnt/vps/vm.bash
+|4,39,4,65,1734125328,"/mnt/vps/vm.bash"
+-'  4  65  /mnt/vps/vm.bash
+|4,39,4,65,1734125328,"/mnt/vps/vm.bash"
+-'  4  65  /mnt/vps/vm.bash
+|4,39,4,65,1734125328,"/mnt/vps/vm.bash"
+-'  4  65  /mnt/vps/vm.bash
+|4,39,4,65,1734125328,"/mnt/vps/vm.bash"
+-'  4  65  /mnt/vps/vm.bash
+|4,39,4,65,1734125328,"/mnt/vps/vm.bash"
 
 # Buffer list:
-%~/.vim/_viminfo_linux	16598	45
+%~/file.py	14	0
+%~/.vim/vimrc	90	0
+%~/pyscripts/crk_substats.py	10	115
 
 # History of marks within files (newest to oldest):
 
-> ~/.vim/_viminfo_linux
-	*	1731247590	0
-	"	16598	45
-	^	14398	34
-
-> ~/llm/commit-message-gemini.py
-	*	1731247444	0
-	"	4	0
-	^	34	7
-	.	34	6
-	+	5	9
-	+	18	13
-	+	19	21
-	+	18	19
-	+	28	23
-	+	29	25
-	+	12	8
-	+	13	25
-	+	14	21
-	+	19	0
-	+	18	6
-	+	28	10
-	+	29	0
-	+	31	10
-	+	34	6
-
-> ~/llm/gemini.py
-	*	1731247328	0
-	"	1	0
-	^	27	19
-	.	25	0
-	+	2	46
-	+	2	20
-	+	2	42
-	+	2	0
-	+	40	20
-	+	32	30
-	+	5	0
-	+	32	17
-	+	32	0
-	+	32	17
-	+	32	0
-	+	3	0
-	+	32	0
-	+	1	63
-	+	40	0
-	+	33	18
-	+	8	16
-	+	9	9
-	+	33	1
-	+	9	18
-	+	2	0
-	+	10	0
-	+	11	0
-	+	10	21
-	+	11	5
-	+	12	0
-	+	11	20
-	+	12	0
-	+	14	27
-	+	16	21
-	+	28	5
-	+	29	66
-	+	30	10
-	+	6	35
-	+	7	68
-	+	14	31
-	+	16	25
-	+	29	69
-	+	11	0
-	+	4	0
-	+	10	0
-	+	33	0
-	+	40	0
-	+	33	1
-	+	9	1
-	+	28	0
-	+	28	54
-	+	13	50
-	+	15	13
-	+	28	70
-	+	15	8
-	+	28	0
-	+	21	15
-	+	28	0
-	+	21	0
-	+	23	0
-	+	20	28
-	+	22	12
-	+	23	0
-	+	25	0
-
-> ~/nicesite/.git/COMMIT_EDITMSG
-	*	1731243701	0
-	"	10	0
-	^	10	0
-	.	9	107
-	+	44	0
-	+	43	0
-	+	34	99
-	+	25	98
-	+	9	107
-
-> ~/nicesite/src/pages/Reactions.tsx
-	*	1731241281	0
-	"	1	0
-	^	318	131
-	.	321	124
-	+	321	60
-	+	305	34
-	+	326	54
-	+	320	132
-	+	320	31
-	+	326	0
-	+	159	124
-	+	170	124
-	+	177	124
-	+	177	0
-	+	177	55
-	+	159	0
-	+	159	193
-	+	170	193
-	+	177	193
-	+	23	0
-	+	22	0
-	+	16	7
-	+	17	89
-	+	305	0
-	+	13	9
-	+	171	35
-	+	179	0
-	+	318	32
-	+	321	51
-	+	337	53
-	+	337	151
-	+	337	0
-	+	337	147
-	+	329	72
-	+	318	117
-	+	321	55
-	+	318	0
-	+	318	116
-	+	321	54
-	+	337	0
-	+	318	112
-	+	321	50
-	+	318	114
-	+	321	52
-	+	318	114
-	+	337	0
-	+	345	89
-	+	345	0
-	+	344	90
-	+	347	81
-	+	347	0
-	+	319	16
-	+	337	54
-	+	318	112
-	+	321	50
-	+	344	88
-	+	318	0
-	+	318	112
-	+	321	50
-	+	344	88
-	+	318	0
-	+	318	113
-	+	321	51
-	+	344	89
-	+	318	0
-	+	324	157
-	+	318	117
-	+	321	139
-	+	321	0
-	+	322	63
-	+	318	0
-	+	322	63
-	+	321	125
-	+	322	61
-	+	321	148
-	+	321	0
-	+	319	0
-	+	318	0
-	+	318	96
-	+	321	0
-	+	345	0
-	+	324	27
-	+	324	0
-	+	343	0
-	+	318	78
-	+	319	88
-	+	324	88
-	+	318	0
-	+	318	130
-	+	321	124
-	a	177	193
-	b	177	194
-
-> ~/llm/secrets.env
-	*	1731241176	0
-	"	1	0
-	^	1	22
-	.	1	21
-	+	1	21
-
-> ~/bash/python-direnv.bash
-	*	1731240943	0
-	"	4	0
-	^	4	19
-	.	4	0
-	+	5	8
-	+	4	0
-	+	2	25
-	+	5	10
-	+	2	1
-	+	1	1
-	+	4	18
-	+	2	0
-	+	4	0
-
-> ~/hateoas/viewworkers.py
-	*	1731240658	0
-	"	1	0
-	.	24	0
-	+	1	67
-	+	45	16
-	+	3	0
-	+	45	0
-	+	32	31
-	+	30	28
-	+	32	30
-	+	30	32
-	+	66	0
-	+	16	17
-	+	16	9
-	+	16	10
-	+	20	5
-	+	17	27
-	+	14	0
-	+	15	0
-	+	18	34
-	+	19	0
-	+	16	0
-	+	17	26
-	+	19	0
-	+	16	0
-	+	19	0
-	+	66	0
-	+	21	74
-	+	45	0
-	+	39	0
-	+	38	5
-	+	37	93
-	+	56	0
-	+	57	9
-	+	57	0
-	+	14	0
-	+	43	29
-	+	13	27
-	+	43	33
-	+	57	0
-	+	58	46
-	+	56	0
-	+	59	23
-	+	37	58
-	+	52	28
-	+	52	30
-	+	53	27
-	+	54	32
-	+	55	33
-	+	52	0
-	+	43	84
-	+	30	36
-	+	32	38
-	+	43	0
-	+	16	0
-	+	25	0
-	+	30	0
-	+	26	47
-	+	27	38
-	+	28	44
-	+	29	12
-	+	30	0
-	+	37	0
-	+	24	0
-
-> ~/llm/.envrc
-	*	1731240194	0
-	"	4	17
-	^	4	18
-	.	4	17
-	+	4	17
-
-> ~/llm/requirements.txt
-	*	1731240061	0
-	"	4	1
-	^	4	2
-	.	4	1
-	+	5	2
-	+	5	0
-	+	4	1
-
-> ~/llm/llm_commit.py
-	*	1731239897	0
-	"	11	25
-	^	11	26
-	.	11	25
-	+	18	0
-	+	4	9
-	+	11	22
+> ~/file.py
+	*	1734652100	0
+	"	14	0
+	.	8	0
+	+	1	0
+	+	9	17
 	+	8	0
-	+	7	33
-	+	10	0
-	+	11	5
-	+	10	48
-	+	11	26
+
+> ~/.vim/vimrc
+	*	1734605602	0
+	"	90	0
+	^	90	2
+	.	90	0
+	+	1	41
+	+	1	44
+	+	1	40
+	+	1	28
+	+	1	0
+	+	1	11
+	+	1	18
+	+	1	43
+	+	1	64
+	+	1	54
+	+	1	0
+	+	1	31
+	+	1	0
+	+	1	6
+	+	1	0
+	+	1	1
+	+	1	0
+	+	1	80
+	+	1	75
+	+	1	0
+	+	1	52
+	+	1	41
+	+	1	0
+	+	1	26
+	+	1	0
+	+	1	22
+	+	1	25
+	+	1	0
+	+	1	57
+	+	1	59
+	+	1	55
+	+	1	0
+	+	1	25
+	+	1	1
+	+	1	0
+	+	1	24
+	+	1	0
+	+	1	12
+	+	1	0
+	+	1	49
+	+	1	0
+	+	1	13
+	+	1	0
+	+	1	16
+	+	1	0
+	+	1	25
+	+	1	3
+	+	1	5
+	+	1	16
+	+	1	0
+	+	1	16
+	+	1	0
+	+	1	5
+	+	1	3
+	+	1	0
+	+	1	4
+	+	1	0
+	+	1	40
+	+	1	36
+	+	1	0
+	+	1	26
+	+	1	9
+	+	1	0
+	+	1	31
+	+	1	4
+	+	1	30
+	+	1	4
+	+	1	0
+	+	1	5
+	+	1	8
+	+	1	29
+	+	1	33
+	+	1	1
+	+	1	21
+	+	1	20
+	+	1	1
+	+	1	0
+	+	120	0
+	+	424	0
+	+	1146	0
+	+	572	5
+	+	90	0
+
+> ~/pyscripts/crk_substats.py
+	*	1734518339	0
+	"	10	115
+	^	10	116
+	.	10	115
+	+	19	48
+	+	20	0
+	+	19	4
+	+	18	0
+	+	19	0
+	+	4	38
+	+	14	0
+	+	12	36
+	+	18	0
+	+	2	17
 	+	12	0
-	+	9	24
-	+	11	25
+	+	13	29
+	+	9	51
+	+	16	36
+	+	9	42
+	+	10	115
 
-> ~/llm/.direnv/python-3.10.12/lib/python3.10/site-packages/llm/models.py
-	*	1731239770	0
-	"	397	8
-
-> ~/nicesite/diff.txt
-	*	1731236744	0
-	"	1	0
+> ~/pyscripts/requirements.txt
+	*	1734474981	0
+	"	1	2
+	^	1	3
+	.	1	2
+	+	2	4
+	+	1	5
+	+	4	10
+	+	5	7
+	+	6	5
+	+	7	6
+	+	10	8
+	+	9	0
+	+	8	0
+	+	12	3
+	+	14	23
+	+	14	0
+	+	16	8
+	+	18	0
+	+	17	0
+	+	20	2
+	+	1	2
 
 > ~/ui-components-css/ui-components-css-api.py
-	*	1730899864	0
-	"	7	10
-	^	7	11
-	.	7	10
-	+	76	0
+	*	1734466133	0
+	"	253	4
+	^	20	43
+	.	10	0
+	+	85	17
+	+	85	7
+	+	85	18
+	+	85	17
+	+	85	12
+	+	85	18
+	+	85	0
+	+	85	45
+	+	85	25
+	+	43	22
+	+	85	0
+	+	85	41
+	+	85	8
+	+	85	32
+	+	85	0
+	+	64	0
+	+	63	0
+	+	68	0
+	+	62	0
+	+	69	3
+	+	70	0
+	+	70	84
+	+	71	33
+	+	72	46
+	+	72	37
+	+	72	4
+	+	74	11
+	+	74	33
+	+	74	4
+	+	76	4
+	+	82	10
+	+	83	4
+	+	84	66
+	+	76	23
+	+	73	0
+	+	72	0
+	+	72	3
+	+	74	0
 	+	77	0
-	+	84	0
-	+	76	0
-	+	68	42
-	+	114	15
-	+	83	15
-	+	114	23
-	+	101	22
-	+	102	31
-	+	103	13
-	+	104	80
-	+	105	32
-	+	106	39
-	+	107	85
-	+	109	24
-	+	110	18
-	+	111	14
-	+	112	4
-	+	107	32
-	+	80	126
-	+	80	0
-	+	80	14
-	+	80	148
-	+	80	21
-	+	77	58
-	+	84	58
-	+	83	41
-	+	108	0
-	+	107	92
-	+	108	0
-	+	107	92
-	+	97	0
-	+	83	34
-	+	80	0
-	+	29	49
-	+	29	25
-	+	29	29
-	+	29	53
-	+	13	0
-	+	149	25
-	+	118	4
-	+	116	0
-	+	148	52
-	+	148	15
-	+	148	0
-	+	148	19
-	+	119	39
-	+	119	46
-	+	148	24
-	+	148	17
-	+	148	7
-	+	148	18
-	+	148	17
-	+	148	12
-	+	148	18
-	+	148	0
-	+	148	45
-	+	148	25
-	+	27	22
-	+	148	0
-	+	148	41
-	+	148	8
-	+	148	32
-	+	148	0
-	+	121	0
-	+	120	0
-	+	125	0
-	+	119	0
-	+	126	3
-	+	127	0
-	+	127	84
-	+	128	33
-	+	129	46
-	+	130	37
-	+	131	4
-	+	134	4
-	+	137	11
-	+	137	33
-	+	137	4
-	+	139	4
-	+	145	10
-	+	146	4
-	+	147	66
-	+	139	23
-	+	136	0
-	+	134	0
-	+	135	3
-	+	137	0
-	+	140	0
-	+	139	33
-	+	142	32
-	+	140	24
-	+	142	38
-	+	140	25
-	+	142	84
+	+	76	33
+	+	79	32
+	+	77	24
+	+	79	38
+	+	77	25
+	+	79	84
 	+	7	10
+	+	41	67
+	+	156	19
+	+	156	0
+	+	156	36
+	+	156	27
+	+	156	19
+	+	156	5
+	+	1	0
+	+	156	0
+	+	156	15
+	+	156	20
+	+	156	11
+	+	156	5
+	+	156	0
+	+	23	0
+	+	40	4
+	+	41	81
+	+	6	49
+	+	10	0
+	+	58	0
+	+	72	0
+	+	58	37
+	+	58	41
+	+	5	7
+	+	7	7
+	+	5	7
+	+	7	7
+	+	46	54
+	+	10	0
+	+	58	41
+	+	32	52
+	+	58	15
+	+	58	9
+	+	58	11
+	+	361	141
+	+	362	0
+	+	361	141
+	+	56	24
+	+	56	12
+	+	54	26
+	+	55	67
+	+	56	14
+	+	52	25
+	+	53	66
+	+	56	13
+	+	56	39
+	+	56	25
+	+	13	83
+	+	20	42
+	+	58	0
+	+	56	0
+	+	13	73
+	+	10	0
+
+> ~/genproject/python-flask-tailwind.sh
+	*	1734347765	0
+	"	12	0
+	^	2	38
+	.	19	0
+	+	17	3
+	+	18	3
+	+	17	1
+	+	20	1
+	+	24	0
+	+	21	94
+	+	6	1
+	+	8	5
+	+	12	5
+	+	17	5
+	+	17	3
+	+	18	3
+	+	21	5
+	+	12	55
+	+	8	19
+	+	9	5
+	+	12	35
+	+	13	3
+	+	14	3
+	+	12	6
+	+	17	6
+	+	17	0
+	+	12	0
+	+	10	1
+	+	8	2
+	+	9	3
+	+	8	1
+	+	9	1
+	+	12	1
+	+	13	1
+	+	14	1
+	+	17	1
+	+	18	1
+	+	24	1
+	+	24	9
+	+	21	31
+	+	24	65
+	+	20	0
+	+	21	1
+	+	16	21
+	+	18	0
+	+	24	0
+	+	21	0
+	+	20	0
+	+	24	0
+	+	16	0
+	+	14	0
+	+	13	0
+	+	12	0
+	+	11	6
+	+	10	0
+	+	9	0
+	+	8	0
+	+	7	17
+	+	6	0
+	+	22	0
+	+	24	1
+	+	24	0
+	+	24	23
+	+	24	5
+	+	22	0
+	+	21	22
+	+	22	19
+	+	23	11
+	+	24	0
+	+	21	0
+	+	21	24
+	+	19	0
+	+	22	0
+	+	15	0
+	+	21	0
+	+	5	0
+	+	2	37
+	+	5	14
+	+	5	0
+	+	24	0
+	+	5	0
+	+	24	0
+	+	5	0
+	+	3	16
+	+	5	0
+	+	4	0
+	+	5	28
+	+	2	3
+	+	2	0
+	+	1	0
+	+	10	0
+	+	19	0
+
+> /mnt/vps/Dockerfile-deploy
+	*	1734340625	0
+	"	1	0
+	^	1	3
+	.	1	2
+	+	1	16
+	+	3	31
+	+	5	67
+	+	2	0
+	+	7	26
+	+	6	0
+	+	8	31
+	+	10	0
+	+	8	0
+	+	16	0
+	+	17	72
+	+	18	0
+	+	7	33
+	+	8	0
+	+	18	0
+	+	14	0
+	+	16	0
+	+	15	64
+	+	16	0
+	+	18	0
+	+	1	2
+
+> /mnt/vps/vm.bash
+	*	1734125790	0
+	"	2	0
+	^	4	66
+	.	4	65
+	+	4	65
+
+> /mnt/vps/build.bash
+	*	1734124953	0
+	"	2	13
+	^	1	2
+	.	2	13
+	+	1	142
+	+	1	1
+	+	2	13
+
+> /mnt/vps/file.txt
+	*	1734097503	0
+	"	4	4
+	^	6	5
+	.	6	4
+	+	2	12
+	+	6	4
+
+> /usr/share/vim/vim90/doc/options.txt
+	*	1734097440	0
+	"	9349	18
+
+> ~/.config/rclone/rclone.conf
+	*	1734093917	0
+	"	3	7
+	^	6	37
+	.	6	36
+	+	8	0
+	+	3	19
+	+	8	0
+	+	5	21
+	+	8	0
+	+	7	0
+	+	8	0
+	+	4	0
+	+	6	36
+
+> ~/.ssh/known_hosts
+	*	1734093385	0
+	"	3	9
+
+> ~/.ssh/id_rsa
+	*	1734093362	0
+	"	1	0
+
+> ~/.ssh/config
+	*	1734075238	0
+	"	5	4
+	.	5	0
+	+	1	18
+	+	5	0
+	+	2	13
+	+	5	22
+	+	8	0
+	+	5	0
+
+> ~/tmp/strace_output.txt
+	*	1734075058	0
+	"	1	0
+
+> ~/tmp/ssh-profile.txt
+	*	1734074959	0
+	"	1	0
+
+> /mnt/vps/install_docker.bash
+	*	1734074669	0
+	"	8	0
+
+> /etc/ssh/ssh_config
+	*	1734074380	0
+	"	1	0
+	^	54	0
+	.	54	0
+	+	54	0
+
+> scp://vivek@128.140.63.20/~/vps/install_docker.bash
+	*	1734070292	0
+	"	32	0
+
+> scp://vivek@128.140.63.20/~/vps/
+	*	1734070195	0
+	"	13	0
+	.	13	0
+	+	13	0
+
+> scp://vivek@128.140.63.20/~/vps/file
+	*	1734070073	0
+	"	1	0
+
+> scp://vivek@
+	*	1734070025	0
+	"	1	0
+
+> ~/pyscripts/youtube-text-to-dates.py
+	*	1734037440	0
+	"	135	0
+	^	135	21
+	.	135	20
+	+	48	27
+	+	49	13
+	+	48	18
+	+	49	59
+	+	51	44
+	+	49	14
+	+	48	12
+	+	50	67
+	+	52	13
+	+	48	12
+	+	53	29
+	+	54	4
+	+	58	22
+	+	69	0
+	+	58	12
+	+	34	0
+	+	36	62
+	+	37	0
+	+	68	22
+	+	69	47
+	+	69	0
+	+	36	96
+	+	68	0
+	+	58	14
+	+	58	8
+	+	69	0
+	+	58	0
+	+	13	0
+	+	17	0
+	+	31	0
+	+	15	29
+	+	16	29
+	+	16	0
+	+	5	0
+	+	16	0
+	+	5	0
+	+	14	0
+	+	68	48
+	+	68	0
+	+	62	0
+	+	67	37
+	+	68	0
+	+	63	12
+	+	64	58
+	+	3	0
+	+	64	81
+	+	67	55
+	+	66	0
+	+	67	17
+	+	66	49
+	+	65	23
+	+	66	34
+	+	65	27
+	+	66	46
+	+	65	34
+	+	66	51
+	+	65	40
+	+	66	56
+	+	25	0
+	+	17	0
+	+	8	0
+	+	173	0
+	+	136	0
+	+	137	0
+	+	125	0
+	+	128	22
+	+	83	27
+	+	175	0
+	+	174	0
+	+	84	26
+	+	128	22
+	+	143	15
+	+	143	0
+	+	109	48
+	+	109	0
+	+	100	0
+	+	128	0
+	+	129	17
+	+	45	44
+	+	46	42
+	+	47	20
+	+	107	0
+	+	101	46
+	+	4	10
+	+	146	38
+	+	96	38
+	+	107	26
+	+	104	0
+	+	105	0
+	+	106	0
+	+	107	0
+	+	106	87
+	+	2	0
+	+	113	0
+	+	145	39
+	+	145	0
+	+	128	0
+	+	131	0
+	+	134	14
+	+	135	20
+	a	130	16
+
+> ~/tooling/app_ideas/crk_arena_meta.txt
+	*	1733965710	0
+	"	12	0
+	^	17	0
+	.	16	0
+	+	4	11
+	+	6	14
+	+	7	0
+	+	9	12
+	+	1	4
+	+	13	26
+	+	14	14
+	+	15	7
+	+	16	0
+
+> ~/ui-components-css/templates/components/filters-and-pagination.html
+	*	1733266656	0
+	"	108	0
+	^	19	16
+	.	97	0
+	+	1	50
+	+	1	48
+	+	1	50
+	+	1	48
+	+	1	50
+	+	1	48
+	+	1	50
+	+	1	54
+	+	1	56
+	+	1	54
+	+	1	56
+	+	1	55
+	+	1	57
+	+	1	55
+	+	1	57
+	+	1	50
+	+	1	52
+	+	1	50
+	+	1	52
+	+	1	47
+	+	1	26
+	+	1	0
+	+	1	47
+	+	1	0
+	+	1	25
+	+	1	21
+	+	1	24
+	+	1	0
+	+	1	71
+	+	1	72
+	+	1	60
+	+	1	61
+	+	1	17
+	+	1	0
+	+	1	5
+	+	1	40
+	+	1	39
+	+	1	0
+	+	1	39
+	+	1	0
+	+	1	70
+	+	1	0
+	+	1	17
+	+	1	0
+	+	1	24
+	+	1	17
+	+	1	0
+	+	1	36
+	+	1	0
+	+	190	118
+	+	190	81
+	+	190	118
+	+	189	43
+	+	190	96
+	+	190	0
+	+	205	0
+	+	189	43
+	+	190	118
+	+	191	0
+	+	190	118
+	+	142	0
+	+	140	29
+	+	141	45
+	+	147	29
+	+	148	45
+	+	174	31
+	+	177	71
+	+	162	30
+	+	165	69
+	+	184	22
+	+	205	0
+	+	191	0
+	+	205	0
+	+	191	114
+	+	191	77
+	+	191	114
+	+	192	0
+	+	191	114
+	+	66	0
+	+	64	39
+	+	65	0
+	+	189	44
+	+	55	13
+	+	20	19
+	+	37	19
+	+	19	32
+	+	108	0
+	+	85	0
+	+	97	0
+	a	112	24
+	b	112	27
+
+> ~/ui-components-css/filters_and_pagination.py
+	*	1732926022	0
+	"	82	12
+	^	205	0
+	.	205	0
+	+	135	0
+	+	95	0
+	+	1	0
+	+	2	0
+	+	1	0
+	+	2	12
+	+	3	0
+	+	9	0
+	+	24	0
+	+	5	0
+	+	6	0
+	+	52	54
+	+	5	0
+	+	8	0
+	+	87	0
+	+	147	0
+	+	79	0
+	+	85	48
+	+	3	26
+	+	4	0
+	+	3	26
+	+	177	53
+	+	211	53
+	+	155	0
+	+	152	0
+	+	39	0
+	+	154	0
+	+	112	27
+	+	216	0
+	+	214	37
+	+	216	33
+	+	217	0
+	+	215	33
+	+	203	0
+	+	204	12
+	+	205	0
+
+> ~/ui-components-css/.direnv/python-3.10.12/lib/python3.10/site-packages/box/db_api_base.py
+	*	1732925781	0
+	"	1	0
+
+> ~/ui-components-css/templates/base.html
+	*	1732904633	0
+	"	16	0
+	^	7	91
+	.	20	0
+	+	2	6
+	+	3	0
+	+	18	0
+	+	4	26
+	+	6	0
+	+	5	0
+	+	18	0
+	+	8	27
+	+	8	18
+	+	9	5
+	+	11	5
+	+	18	3
+	+	3	0
+	+	15	9
+	+	17	11
+	+	18	0
+	+	8	21
+	+	10	20
+	+	12	20
+	+	16	20
+	+	18	5
+	+	2	22
+	+	6	64
+	+	2	5
+	+	6	0
+	+	6	14
+	+	6	0
+	+	2	7
+	+	6	0
+	+	2	22
+	+	8	0
+	+	2	16
+	+	6	0
+	+	7	8
+	+	19	68
+	+	20	0
+	+	7	90
+	+	8	0
+	+	20	0
+
+> ~/ui-components-css/static/css-resets/reset.css
+	*	1732904547	0
+	"	1	0
+	^	1	79
+	.	1	78
+	+	10	38
+	+	2	0
+	+	3	48
+	+	4	0
+	+	4	14
+	+	5	0
+	+	4	27
+	+	4	0
+	+	4	16
+	+	3	44
+	+	3	0
+	+	3	50
+	+	4	0
+	+	6	6
+	+	5	25
+	+	6	6
+	+	6	43
+	+	7	0
+	+	5	0
+	+	4	16
+	+	3	50
+	+	5	0
+	+	7	50
+	+	7	67
+	+	8	0
+	+	7	0
+	+	8	33
+	+	8	48
+	+	9	27
+	+	9	54
+	+	10	16
+	+	10	36
+	+	13	0
+	+	3	72
+	+	13	0
+	+	11	0
+	+	12	13
+	+	1	78
+
+> ~/ui-components-css/templates/components/icon-row.html
+	*	1732888986	0
+	"	1	0
+	^	280	22
+	.	280	0
+	+	5	0
+	+	5	23
+	+	14	0
+	+	5	0
+	+	14	0
+	+	5	32
+	+	14	0
+	+	11	0
+	+	13	66
+	+	17	0
+	+	16	48
+	+	154	30
+	+	156	0
+	+	155	28
+	+	156	0
+	+	154	24
+	+	16	25
+	+	154	0
+	+	16	32
+	+	14	0
+	+	12	0
+	+	13	60
+	+	16	3
+	+	14	33
+	+	10	0
+	+	6	90
+	+	252	63
+	+	142	9
+	+	143	34
+	+	148	0
+	+	144	32
+	+	145	32
+	+	146	21
+	+	147	30
+	+	148	0
+	+	142	0
+	+	135	0
+	+	14	0
+	+	314	0
+	+	314	35
+	+	314	61
+	+	314	44
+	+	314	4
+	+	314	117
+	+	314	0
+	+	314	142
+	+	314	22
+	+	314	160
+	+	314	21
+	+	199	0
+	+	190	14
+	+	199	28
+	+	190	14
+	+	9	209
+	+	199	0
+	+	314	59
+	+	314	156
+	+	314	96
+	+	314	0
+	+	312	0
+	+	309	46
+	+	310	20
+	+	258	0
+	+	256	0
+	+	258	29
+	+	261	0
+	+	262	72
+	+	260	23
+	+	260	144
+	+	191	6
+	+	196	0
+	+	191	0
+	+	197	0
+	+	198	19
+	+	257	13
+	+	261	26
+	+	260	120
+	+	192	22
+	+	193	24
+	+	195	21
+	+	191	23
+	+	190	0
+	+	45	0
+	+	283	0
+	+	276	0
+	+	277	0
+	+	287	0
+	+	277	0
+	+	286	14
+	+	287	0
+	+	286	14
+	+	277	0
+	+	275	26
+	+	281	12
+	+	275	26
+	+	276	19
+	+	277	31
+	+	275	68
+	+	276	0
+	+	280	0
+
+> ~/tooling/frameworks-to-grok.txt
+	*	1732886405	0
+	"	1	9
+	^	2	2
+	.	2	0
+	+	2	4
+	+	1	0
+	+	2	0
+
+> ~/tooling/python-third-party-libs-to-grok.txt
+	*	1732886102	0
+	"	5	0
+	^	4	2
+	.	4	1
+	+	2	64
+	+	1	0
+	+	3	22
+	+	4	8
+	+	5	9
+	+	4	1
+
+> ~/ui-components-css/.direnv/python-3.10.12/lib/python3.10/site-packages/flask/app.py
+	*	1732832494	0
+	"	1073	0
+
+> ~/ui-components-css/.direnv/python-3.10.12/lib/python3.10/site-packages/werkzeug/routing/map.py
+	*	1732832492	0
+	"	939	8
+
+> ~/ui-components-css/flask-history.py
+	*	1732747322	0
+	"	1	0
+	^	10	8
+	.	11	0
+	+	1	0
+	+	15	0
+	+	12	4
+	+	12	0
+	+	11	0
+	+	10	7
+	+	11	0
+
+> ~/ui-components-css/composer-error.txt
+	*	1732747246	0
+	"	1	0
+	^	9	18
+	.	9	17
+	+	5	53
+	+	10	111
+	+	10	0
+	+	7	44
+	+	10	0
+	+	11	0
+	+	14	28
+	+	9	17
+
+> ~/ui-components-css/todo.txt
+	*	1732737015	0
+	"	8	0
+	^	1	2
+	.	8	0
+	+	9	66
+	+	10	0
+	+	9	0
+	+	8	198
+	+	7	141
+	+	6	109
+	+	4	60
+	+	3	53
+	+	5	72
+	+	2	57
+	+	2	0
+	+	1	58
+	+	7	0
+	+	2	0
+	+	7	0
+	+	4	0
+	+	8	0
+
+> ~/python_common/box/__init__.py
+	*	1732731493	0
+	"	1	0
+	^	26	67
+	.	26	66
+	+	1	7
+	+	5	7
+	+	6	7
+	+	7	7
+	+	9	7
+	+	11	7
+	+	12	7
+	+	13	7
+	+	14	7
+	+	15	7
+	+	16	7
+	+	18	7
+	+	20	7
+	+	21	7
+	+	22	7
+	+	24	7
+	+	28	9
+	+	3	16
+	+	28	0
+	+	29	26
+	+	29	21
+	+	2	0
+	+	17	0
+	+	26	55
+	+	2	0
+	+	27	0
+	+	26	31
+	+	27	12
+	+	3	18
+	+	29	18
+	+	27	0
+	+	26	1
+	+	3	0
+	+	29	0
+	+	26	66
+	a	26	13
+
+> ~/python_common/box/db_api_base.py
+	*	1732731410	0
+	"	1	0
+	^	37	27
+	.	37	26
+	+	4	0
+	+	4	77
+	+	4	0
+	+	4	55
+	+	4	16
+	+	4	0
+	+	4	31
+	+	4	0
+	+	4	24
+	+	4	0
+	+	4	31
+	+	4	35
+	+	4	0
+	+	4	19
+	+	4	29
+	+	4	24
+	+	4	0
+	+	4	24
+	+	4	16
+	+	4	0
+	+	4	31
+	+	4	0
+	+	4	35
+	+	4	0
+	+	4	19
+	+	4	0
+	+	4	24
+	+	4	0
+	+	4	23
+	+	4	0
+	+	4	64
+	+	4	14
+	+	40	0
+	+	4	0
+	+	3	0
+	+	5	0
+	+	37	64
+	+	5	0
+	+	38	0
+	+	38	51
+	+	3	0
+	+	38	7
+	+	59	0
+	+	58	6
+	+	58	0
+	+	45	4
+	+	44	40
+	+	58	0
+	+	57	33
+	+	98	0
+	+	112	51
+	+	97	0
+	+	95	0
+	+	148	52
+	+	95	0
+	+	76	9
+	+	85	9
+	+	2	16
+	+	3	0
+	+	37	64
+	+	3	0
+	+	105	0
+	+	106	0
+	+	1	0
+	+	37	26
+	a	85	9
+	b	85	9
+
+> ~/ui-components-css/filter-and-pagination-schemas.txt
+	*	1732727631	0
+	"	1	0
+	.	13	0
+	+	9	21
+	+	10	25
+	+	7	16
+	+	11	33
+	+	12	0
+	+	9	8
+	+	10	12
+	+	11	14
+	+	12	11
+	+	9	48
+	+	12	21
+	+	2	37
+	+	3	0
+	+	1	0
+	+	13	0
+
+> ~/ui-components-css/requirements.txt
+	*	1732656257	0
+	"	1	2
+	^	1	3
+	.	1	2
+	+	5	12
+	+	7	9
+	+	1	2
+
+> ~/python_common/box/tmp_peewee_endpoint.py
+	*	1732653821	0
+	"	33	0
+
+> ~/python_common/box/tmp_sqlalchemy_where_to_str.py
+	*	1732653819	0
+	"	62	9
+	^	34	21
+	.	34	20
+	+	30	20
+	+	33	20
+	+	34	20
+
+> ~/ui-components-css/static/fonts/Inter/Inter_Web/inter.css
+	*	1732641749	0
+	"	1	0
+	.	158	0
+	+	158	0
+
+> ~/ui-components-css/static/css-utilities/tailwind-colors.css
+	*	1732609634	0
+	"	22	2
+	^	287	1
+	.	287	0
+	+	287	0
+
+> ~/prompts/241123.sqlite_pagination.txt
+	*	1732609570	0
+	"	15	0
+	^	39	16
+	.	39	15
+	+	24	0
+	+	39	0
+	+	38	0
+	+	27	7
+	+	38	2
+	+	38	0
+	+	38	22
+	+	38	0
+	+	38	8
+	+	38	16
+	+	38	9
+	+	38	0
+	+	37	0
+	+	2	58
+	+	39	0
+	+	5	0
+	+	24	6
+	+	25	0
+	+	10	11
+	+	7	40
+	+	10	82
+	+	24	0
+	+	11	81
+	+	13	76
+	+	24	0
+	+	7	55
+	+	10	0
+	+	8	58
+	+	9	51
+	+	7	0
+	+	18	82
+	+	24	0
+	+	26	16
+	+	39	0
+	+	24	0
+	+	22	38
+	+	41	26
+	+	45	0
+	+	43	13
+	+	43	0
+	+	40	4
+	+	41	26
+	+	41	27
+	+	41	26
+	+	43	4
+	+	41	19
+	+	41	38
+	+	41	26
+	+	43	0
+	+	41	26
+	+	43	0
+	+	41	36
+	+	42	10
+	+	44	19
+	+	45	0
+	+	8	0
+	+	6	0
+	+	46	56
+	+	14	61
+	+	39	15
+
+> ~/ui-components-css/filter-schemas.txt
+	*	1732609143	0
+	"	3	0
+	.	4	0
+	+	1	6
+	+	3	7
+	+	4	0
+	+	1	5
+	+	4	0
+
+> ~/ui-components-css/previous-attempts.txt
+	*	1732608989	0
+	"	1	28
+	^	1	29
+	.	2	0
+	+	15	35
+	+	22	47
+	+	22	44
+	+	10	41
+	+	11	0
+	+	10	0
+	+	11	0
+	+	22	0
+	+	11	0
+	+	16	0
+	+	22	0
+	+	11	0
+	+	22	0
+	+	18	24
+	+	11	0
+	+	9	0
+	+	7	0
+	+	8	21
+	+	5	49
+	+	4	15
+	+	25	31
+	+	26	32
+	+	3	0
+	+	1	12
+	+	11	0
+	+	23	32
+	+	24	29
+	+	22	0
+	+	15	0
+	+	13	0
+	+	12	8
+	+	22	0
+	+	20	0
+	+	22	0
+	+	21	13
+	+	11	0
+	+	20	0
+	+	27	22
+	+	28	42
+	+	33	0
+	+	32	0
+	+	33	0
+	+	33	8
+	+	29	0
+	+	33	0
+	+	30	5
+	+	31	5
+	+	30	0
+	+	37	0
+	+	36	0
+	+	37	0
+	+	34	11
+	+	35	6
+	+	36	6
+	+	35	0
+	+	34	15
+	+	12	14
+	+	19	4
+	+	37	12
+	+	5	0
+	+	6	0
+	+	13	0
+	+	22	0
+	+	35	0
+	+	37	0
+	+	17	0
+	+	13	0
+	+	14	0
+	+	15	0
+	+	16	0
+	+	17	0
+	+	13	0
+	+	14	0
+	+	16	0
+	+	15	0
+	+	19	1
+	+	13	0
+	+	8	0
+	+	16	0
+	+	26	0
+	+	19	0
+	+	13	0
+	+	19	0
+	+	12	0
+	+	1	0
+	+	2	0
+
+> ~/ui-components-css/usage.md
+	*	1732608959	0
+	"	1	0
+	^	2	29
+	.	2	28
+	+	17	82
+	+	18	52
+	+	7	17
+	+	15	0
+	+	14	7
+	+	11	7
+	+	9	0
+	+	7	17
+	+	19	89
+	+	19	153
+	+	21	0
+	+	20	20
+	+	64	0
+	+	65	37
+	+	64	33
+	+	67	0
+	+	39	100
+	+	39	0
+	+	64	0
+	+	68	53
+	+	64	45
+	+	65	14
+	+	3	0
+	+	69	4
+	+	69	0
+	+	37	57
+	+	39	0
+	+	37	45
+	+	39	0
+	+	25	89
+	+	26	0
+	+	26	81
+	+	39	1
+	+	37	0
+	+	39	0
+	+	37	10
+	+	37	28
+	+	38	46
+	+	39	0
+	+	1	27
+	+	22	0
+	+	69	0
+	+	16	11
+	+	30	80
+	+	32	77
+	+	1	0
+	+	3	0
+	+	33	90
+	+	34	79
+	+	35	81
+	+	22	0
+	+	22	108
+	+	22	0
+	+	23	0
+	+	23	89
+	+	23	0
+	+	23	70
+	+	23	83
+	+	23	0
+	+	27	0
+	+	31	0
+	+	36	0
+	+	23	0
+	+	47	0
+	+	63	0
+	+	47	0
+	+	41	5
+	+	62	6
+	+	45	17
+	+	43	30
+	+	44	11
+	+	47	0
+	+	40	14
+	+	47	12
+	+	62	10
+	+	47	0
+	+	62	0
+	+	47	0
+	+	48	0
+	+	50	0
+	+	46	29
+	+	52	16
+	+	54	11
+	+	55	4
+	+	56	9
+	+	53	7
+	+	56	48
+	+	57	47
+	+	58	47
+	+	59	55
+	+	60	47
+	+	61	8
+	+	2	28
+
+> ~/.config/github-copilot/apps.json
+	*	1732568572	0
+	"	1	0
+	.	1	0
+	+	2	0
+	+	2	158
+	+	2	153
+	+	1	0
+
+> ~/.config/github-copilot/versions.json
+	*	1732568568	0
+	"	1	0
+	^	1	24
+	.	1	0
+	+	1	1
+	+	1	0
+
+> ~/.config/github-copilot/file.py
+	*	1732564011	0
+	"	1	0
+	^	1	2
+	.	1	0
+	+	2	0
+	+	1	0
+
+> ~/.vim/plugged/copilot.vim/doc/copilot.txt
+	*	1732563595	0
+	"	3	48
+
+> ~/python_common/tests/conftest.py
+	*	1732545503	0
+	"	7	4
+	.	7	0
+	+	1	0
+	+	4	0
+	+	2	0
+	+	6	0
+	+	11	61
+	+	5	0
+	+	6	10
+	+	12	61
+	+	8	57
+	+	6	0
+	+	12	61
+	+	8	58
+	+	12	61
+	+	9	0
+	+	10	0
+	+	12	64
+	+	10	0
+	+	16	0
+	+	8	55
+	+	11	55
+	+	14	56
+	+	16	0
+	+	18	62
+	+	16	0
+	+	18	61
+	+	16	0
+	+	14	65
+	+	7	0
+
+> ~/python_common/tests/test_db_api_base.py
+	*	1732545208	0
+	"	236	0
+	^	235	17
+	.	235	16
+	+	1	0
+	+	1	7
+	+	1	0
+	+	1	7
+	+	1	20
+	+	1	41
+	+	1	0
+	+	1	19
+	+	1	0
+	+	13	14
+	+	151	52
+	+	15	33
+	+	167	14
+	+	145	0
+	+	103	0
+	+	123	0
+	+	124	13
+	+	9	50
+	+	136	36
+	+	155	36
+	+	177	36
+	+	199	36
+	+	221	36
+	+	235	16
+	a	124	13
+	b	124	13
+
+> ~/python_common/box/timer.py
+	*	1732541970	0
+	"	3	6
+
+> ~/python_common/box/tmp_sqlite_to_sqlalchemy.py
+	*	1732533166	0
+	"	72	0
+	^	41	1
+	.	41	0
+	+	71	30
+	+	2	14
+	+	72	0
+	+	5	0
+	+	10	0
+	+	6	0
+	+	8	0
+	+	9	0
+	+	7	0
+	+	41	0
+	a	5	12
+
+> ~/python_common/box/peewee_clusters.py
+	*	1732533045	0
+	"	3	0
+	.	2	0
+	+	3	0
+	+	2	0
+
+> ~/python_common/box/rich_experiments.py
+	*	1732533045	0
+	"	10	0
+	^	10	172
+	.	10	171
+	+	2	10
+	+	5	27
+	+	3	0
+	+	10	120
+	+	10	0
+	+	10	171
+
+> ~/python_common/pyrightconfig.json
+	*	1732494963	0
+	"	2	4
+	^	2	31
+	.	2	30
+	+	2	30
+
+> ~/python_common/.direnv/python-3.10.12/lib/python3.10/site-packages/sqlalchemy/sql/selectable.py
+	*	1732493405	0
+	"	5095	0
+
+> ~/python_common/.direnv/python-3.10.12/lib/python3.10/site-packages/sqlalchemy/sql/__init__.py
+	*	1732493338	0
+	"	84	24
+
+> ~/.config/todo.txt
+	*	1732477879	0
+	"	2	6
+	^	3	24
+	.	2	0
+	+	30	94
+	+	31	0
+	+	24	0
+	+	33	51
+	+	25	107
+	+	24	0
+	+	34	0
+	+	24	9
+	+	29	0
+	+	32	0
+	+	34	0
+	+	24	0
+	+	19	0
+	+	22	15
+	+	21	64
+	+	22	61
+	+	20	9
+	+	25	5
+	+	30	5
+	+	33	0
+	+	18	84
+	+	26	114
+	+	27	52
+	+	26	4
+	+	27	0
+	+	24	19
+	+	29	19
+	+	8	10
+	+	14	0
+	+	10	127
+	+	10	12
+	+	9	6
+	+	10	0
+	+	11	0
+	+	10	0
+	+	13	32
+	+	6	8
+	+	7	0
+	+	6	94
+	+	5	83
+	+	4	18
+	+	5	16
+	+	6	16
+	+	4	113
+	+	3	0
+	+	1	0
+	+	3	176
+	+	2	77
+	+	4	0
+	+	2	0
+
+> ~/python_common/.gitignore
+	*	1732477404	0
+	"	13	7
+	^	13	8
+	.	13	7
+	+	19	4
+	+	19	5
+	+	19	4
+	+	19	1
+	+	19	0
+	+	1	0
+	+	23	9
+	+	19	13
+	+	16	5
+	+	19	0
+	+	16	0
+	+	12	0
+	+	8	0
+	+	19	0
+	+	9	0
+	+	19	0
+	+	11	8
+	+	24	0
+	+	22	4
+	+	25	9
+	+	13	7
+
+> ~/python_common/box/reqs.py
+	*	1732399410	0
+	"	1	0
+	^	18	23
+	.	18	22
+	+	1	7
+	+	3	7
+	+	4	7
+	+	5	7
+	+	7	7
+	+	16	11
+	+	18	22
+
+> ~/python_common/box/dbutils.py
+	*	1732399245	0
+	"	6	0
+	^	47	31
+	.	47	30
+	+	1	7
+	+	47	30
+
+> ~/python_common/box/db.py
+	*	1732399145	0
+	"	1	0
+	^	469	12
+	.	469	11
+	+	5	7
+	+	7	7
+	+	8	7
+	+	9	7
+	+	469	11
+
+> ~/hateoas/schema/clips.sql
+	*	1732395762	0
+	"	1	0
+	.	9	17
+	+	1	0
+	+	1	339
+	+	1	0
+	+	1	412
+	+	1	0
+	+	9	17
+
+> ~/reddit-user-comments/data/Const_Velocity.db
+	*	1732395762	0
+	"	2	0
 
 > ~/hateoas/hateoas-api.py
-	*	1730749793	0
-	"	1045	0
-	^	1062	6
-	.	1062	5
-	+	1493	12
+	*	1732395678	0
+	"	1152	4
+	^	1201	9
+	.	1201	8
 	+	1497	73
 	+	1493	32
 	+	1493	95
@@ -17390,7 +19085,3697 @@ $
 	+	819	0
 	+	817	0
 	+	1062	5
+	+	1201	8
 	g	970	0
+
+> ~/reddit-user-comments/reddit_user_comments_api.py
+	*	1732395500	0
+	"	51	48
+	^	21	15
+	.	21	14
+	+	58	0
+	+	44	0
+	+	49	0
+	+	46	37
+	+	51	0
+	+	1	22
+	+	5	20
+	+	46	33
+	+	48	0
+	+	50	15
+	+	47	24
+	+	50	21
+	+	11	12
+	+	44	11
+	+	11	34
+	+	43	0
+	+	12	29
+	+	43	12
+	+	43	4
+	+	12	44
+	+	11	23
+	+	43	0
+	+	22	7
+	+	40	3
+	+	22	0
+	+	40	12
+	+	40	0
+	+	22	48
+	+	1	0
+	+	40	0
+	+	23	31
+	+	32	30
+	+	24	13
+	+	33	35
+	+	27	46
+	+	40	12
+	+	42	4
+	+	27	36
+	+	32	22
+	+	31	0
+	+	26	0
+	+	27	17
+	+	31	0
+	+	26	47
+	+	28	41
+	+	30	22
+	+	22	28
+	+	39	0
+	+	35	0
+	+	36	24
+	+	39	0
+	+	38	22
+	+	39	0
+	+	34	14
+	+	39	4
+	+	35	27
+	+	38	17
+	+	14	0
+	+	20	0
+	+	13	28
+	+	14	0
+	+	21	14
+
+> ~/.vim/plugged/tabular/doc/Tabular.txt
+	*	1732359403	0
+	"	201	0
+
+> ~/.vim/tmp/renumber-list.vim
+	*	1732359296	0
+	"	7	48
+	^	7	49
+	.	7	48
+	+	5	10
+	+	3	0
+	+	7	42
+	+	2	31
+	+	4	20
+	+	1	27
+	+	7	48
+
+> /usr/share/vim/vim90/doc/builtin.txt
+	*	1732359236	0
+	"	8099	7
+
+> ~/genproject/sql_checklist.txt
+	*	1732358643	0
+	"	1	0
+	.	27	0
+	+	12	29
+	+	13	29
+	+	13	0
+	+	12	40
+	+	13	0
+	+	4	19
+	+	13	45
+	+	4	0
+	+	27	35
+	+	27	4
+	+	27	82
+	+	27	81
+	+	27	4
+	+	27	0
+	+	27	90
+	+	27	26
+	+	27	24
+	+	27	26
+	+	27	0
+	+	17	8
+	+	27	0
+	+	16	0
+	+	27	0
+	+	21	54
+	+	21	35
+	+	22	53
+	+	23	39
+	+	27	49
+	+	27	0
+	+	21	0
+	+	27	0
+	+	27	55
+	+	27	56
+	+	27	0
+	+	27	49
+	+	27	55
+	+	27	56
+	+	27	0
+	+	21	0
+	+	26	0
+	+	27	69
+	+	27	4
+	+	27	0
+	+	24	0
+	+	27	44
+	+	27	0
+	+	19	0
+	+	27	0
+	+	27	76
+	+	27	0
+	+	18	0
+	+	27	0
+	+	27	3
+	+	27	26
+	+	27	18
+	+	27	35
+	+	27	0
+	+	11	24
+	+	20	26
+	+	10	0
+	+	6	9
+	+	9	21
+	+	10	0
+	+	12	0
+	+	5	0
+	+	6	15
+	+	11	24
+	+	20	19
+	+	2	33
+	+	27	14
+	+	27	4
+	+	27	77
+	+	27	79
+	+	27	4
+	+	27	0
+	+	25	0
+	+	27	0
+	+	14	52
+	+	15	19
+	+	16	0
+	+	17	0
+	+	10	30
+	+	9	4
+	+	10	0
+	+	27	0
+
+> ~/prompts/240907.truncate_data_strucuture.txt
+	*	1732358419	0
+	"	5	0
+	^	29	5
+	.	43	0
+	+	35	24
+	+	36	21
+	+	37	19
+	+	37	23
+	+	37	30
+	+	37	0
+	+	39	37
+	+	1	0
+	+	1	10
+	+	1	0
+	+	44	0
+	+	1	0
+	+	44	1
+	+	41	27
+	+	30	0
+	+	28	2
+	+	30	0
+	+	28	0
+	+	6	0
+	+	7	0
+	+	5	20
+	+	29	4
+	+	44	0
+	+	43	0
+
+> ~/prompts/footer-edge-case.txt
+	*	1732358354	0
+	"	1	0
+
+> ~/prompts/render_prompt.py
+	*	1732358317	0
+	"	1	0
+	^	15	20
+	.	14	30
+	+	1	0
+	+	27	0
+	+	11	0
+	+	7	27
+	+	11	40
+	+	23	26
+	+	11	23
+	+	23	0
+	+	12	24
+	+	16	54
+	+	17	32
+	+	16	54
+	+	8	13
+	+	16	85
+	+	17	48
+	+	23	0
+	+	18	48
+	+	19	13
+	+	20	40
+	+	23	0
+	+	22	18
+	+	23	0
+	+	14	30
+
+> ~/reddit-user-comments/frontend/src/components/UserComments.tsx
+	*	1732310186	0
+	"	164	116
+	^	164	117
+	.	164	116
+	+	163	65
+	+	206	0
+	+	163	66
+	+	163	163
+	+	163	105
+	+	163	0
+	+	193	0
+	+	164	84
+	+	169	93
+	+	185	93
+	+	178	14
+	+	169	91
+	+	185	91
+	+	164	116
+
+> ~/reddit-user-comments/data/Const_Velocity.json
+	*	1732309761	0
+	"	6	20
+	.	1	0
+	+	1	0
+
+> ~/reddit-user-comments/frontend/src/App.tsx
+	*	1732309747	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/reddit-user-comments/scrape_reddit_user_comments.py
+	*	1732309707	0
+	"	73	45
+	^	73	46
+	.	73	45
+	+	45	34
+	+	58	0
+	+	85	0
+	+	69	0
+	+	85	0
+	+	69	0
+	+	85	0
+	+	72	11
+	+	58	0
+	+	49	0
+	+	45	24
+	+	72	32
+	+	85	0
+	+	45	43
+	+	49	51
+	+	6	25
+	+	5	7
+	+	6	7
+	+	1	7
+	+	72	0
+	+	69	0
+	+	68	0
+	+	61	0
+	+	68	0
+	+	67	14
+	+	74	19
+	+	73	14
+	+	1	0
+	+	85	0
+	+	85	15
+	+	72	18
+	+	71	10
+	+	73	8
+	+	72	21
+	+	85	0
+	+	85	23
+	+	61	48
+	+	73	46
+	+	60	54
+	+	45	52
+	+	85	0
+	+	1	0
+	+	10	0
+	+	85	0
+	+	6	0
+	+	5	60
+	+	85	0
+	+	75	48
+	+	77	13
+	+	2	0
+	+	79	27
+	+	77	7
+	+	79	28
+	+	77	20
+	+	79	46
+	+	78	19
+	+	79	0
+	+	85	0
+	+	80	31
+	+	85	0
+	+	80	0
+	+	84	0
+	+	75	28
+	+	84	0
+	+	81	0
+	+	81	23
+	+	76	26
+	+	77	96
+	+	81	143
+	+	81	0
+	+	81	30
+	+	75	21
+	+	81	99
+	+	81	0
+	+	81	117
+	+	81	177
+	+	81	116
+	+	81	177
+	+	84	0
+	+	81	0
+	+	75	0
+	+	82	22
+	+	81	0
+	+	81	166
+	+	53	25
+	+	50	46
+	+	73	43
+	+	54	55
+	+	83	17
+	+	73	45
+
+> ~/reddit-user-comments/frontend/tailwind.config.js
+	*	1732296126	0
+	"	1	0
+	^	6	2
+	.	4	0
+	+	3	12
+	+	4	0
+
+> ~/reddit-user-comments/frontend/index.html
+	*	1732294234	0
+	"	1	0
+
+> ~/nicesite/tailwind.config.js
+	*	1732294205	0
+	"	4	0
+	.	6	0
+	+	4	19
+	+	5	33
+	+	6	0
+
+> ~/servers/reddit-user-comments.config.js
+	*	1732293499	0
+	"	8	37
+	^	5	38
+	.	5	37
+	+	1	0
+	+	3	34
+	+	5	36
+	+	6	45
+	+	8	50
+	+	5	37
+
+> ~/servers/hateoas.config.js
+	*	1732293161	0
+	"	1	0
+	^	3	26
+	.	3	0
+	+	32	0
+	+	33	19
+	+	34	28
+	+	35	48
+	+	37	0
+	+	40	0
+	+	39	5
+	+	32	0
+	+	32	23
+	+	32	11
+	+	32	9
+	+	32	0
+	+	11	0
+	+	10	5
+	+	10	0
+	+	10	8
+	+	3	0
+	+	6	35
+	+	10	0
+	+	10	13
+	+	10	25
+	+	10	65
+	+	10	0
+	+	7	8
+	+	6	0
+	+	4	22
+	+	5	32
+	+	7	0
+	+	8	0
+	+	7	0
+	+	3	0
+
+> ~/reddit-user-comments/models/comment.py
+	*	1732291542	0
+	"	9	4
+	^	9	14
+	.	9	13
+	+	2	30
+	+	4	14
+	+	12	0
+	+	6	0
+	+	12	0
+	+	6	0
+	+	11	20
+	+	12	0
+	+	6	0
+	+	4	23
+	+	8	0
+	+	5	0
+	+	9	13
+
+> ~/reddit-user-comments/pydantic_to_sqlite.py
+	*	1732283198	0
+	"	45	4
+	^	23	43
+	.	23	42
+	+	11	35
+	+	43	24
+	+	43	0
+	+	11	12
+	+	43	0
+	+	7	10
+	+	12	38
+	+	43	0
+	+	13	17
+	+	12	30
+	+	21	26
+	+	12	0
+	+	43	37
+	+	45	12
+	+	46	16
+	+	43	46
+	+	47	10
+	+	40	20
+	+	40	8
+	+	40	0
+	+	31	27
+	+	18	18
+	+	30	26
+	+	31	0
+	+	40	0
+	+	31	44
+	+	10	63
+	+	25	18
+	+	31	25
+	+	40	0
+	+	27	30
+	+	28	39
+	+	29	12
+	+	30	0
+	+	37	47
+	+	26	19
+	+	17	0
+	+	26	57
+	+	37	36
+	+	43	26
+	+	40	21
+	+	23	13
+	+	40	0
+	+	37	55
+	+	40	27
+	+	43	10
+	+	8	26
+	+	40	35
+	+	23	38
+	+	40	28
+	+	42	0
+	+	41	9
+	+	40	0
+	+	41	26
+	+	23	37
+	+	37	0
+	+	33	14
+	+	37	21
+	+	33	15
+	+	37	30
+	+	39	80
+	+	40	0
+	+	41	0
+	+	39	52
+	+	10	79
+	+	20	8
+	+	21	0
+	+	45	61
+	+	18	0
+	+	45	58
+	+	35	36
+	+	36	12
+	+	37	0
+	+	36	12
+	+	35	0
+	+	9	23
+	+	24	19
+	+	34	0
+	+	25	18
+	+	33	40
+	+	34	33
+	+	33	0
+	+	35	32
+	+	37	29
+	+	35	22
+	+	37	36
+	+	35	39
+	+	34	0
+	+	35	31
+	+	34	0
+	+	38	0
+	+	39	0
+	+	38	0
+	+	38	44
+	+	9	0
+	+	23	42
+
+> ~/reddit-user-comments/.direnv/python-3.10.12/lib/python3.10/site-packages/box/ic.py
+	*	1732282978	0
+	"	258	8
+
+> ~/hateoas/rich_table.py
+	*	1732282605	0
+	"	2	0
+	^	90	53
+	.	90	52
+	+	59	53
+	+	6	66
+	+	59	59
+	+	6	81
+	+	59	113
+	+	7	0
+	+	6	1
+	+	7	67
+	+	37	29
+	+	37	32
+	+	38	33
+	+	37	51
+	+	38	51
+	+	56	0
+	+	37	0
+	+	39	5
+	+	38	57
+	+	39	12
+	+	40	65
+	+	36	0
+	+	7	0
+	+	56	40
+	+	56	9
+	+	56	0
+	+	41	20
+	+	59	32
+	+	56	0
+	+	59	22
+	+	43	27
+	+	44	27
+	+	59	30
+	+	42	36
+	+	9	0
+	+	34	0
+	+	8	22
+	+	44	0
+	+	4	31
+	+	46	26
+	+	56	33
+	+	56	0
+	+	50	1
+	+	46	0
+	+	50	0
+	+	55	0
+	+	54	53
+	+	55	0
+	+	53	3
+	+	50	5
+	+	54	0
+	+	53	0
+	+	51	0
+	+	87	4
+	+	86	4
+	+	87	36
+	+	59	39
+	+	82	28
+	+	87	0
+	+	91	54
+	+	90	52
+
+> ~/python-types/model_pydantic.py
+	*	1732281237	0
+	"	1	0
+	^	56	0
+	.	11	0
+	+	56	0
+	+	10	0
+	+	9	0
+	+	55	0
+	+	56	0
+	+	5	0
+	+	52	22
+	+	56	0
+	+	11	0
+
+> ~/python_common/box/template.py
+	*	1732281235	0
+	"	1	0
+	^	5	8
+	.	5	7
+	+	1	7
+	+	3	7
+	+	4	7
+	+	5	7
+
+> ~/.vim/templates/template.py
+	*	1732281227	0
+	"	3	0
+	^	3	8
+	.	3	7
+	+	1	0
+	+	4	12
+	+	1	0
+	+	11	0
+	+	3	103
+	+	4	0
+	+	3	26
+	+	3	27
+	+	3	77
+	+	3	34
+	+	4	0
+	+	1	7
+	+	3	7
+
+> ~/reddit-user-comments/.direnv/python-3.10.12/lib/python3.10/site-packages/box/reltools.py
+	*	1732280827	0
+	"	43	4
+
+> /usr/lib/python3.10/json/__init__.py
+	*	1732280813	0
+	"	295	0
+
+> ~/reddit-user-comments/.direnv/python-3.10.12/lib/python3.10/site-packages/box/jsonfile.py
+	*	1732280810	0
+	"	21	12
+
+> ~/python_common/examples/example-log.py
+	*	1732279975	0
+	"	25	11
+	^	25	12
+	.	25	11
+	+	19	0
+	+	16	0
+	+	25	11
+
+> ~/python_common/box/common.py
+	*	1732279968	0
+	"	7	35
+	^	447	26
+	.	447	25
+	+	7	37
+	+	7	0
+	+	24	7
+	+	25	7
+	+	33	11
+	+	37	11
+	+	442	11
+	+	447	25
+
+> ~/python_common/examples/example-log-1.py
+	*	1732279964	0
+	"	8	7
+	^	8	8
+	.	8	7
+	+	16	19
+	+	8	14
+	+	12	28
+	+	1	7
+	+	3	7
+	+	4	7
+	+	5	7
+	+	6	7
+	+	8	7
+
+> ~/python_common/examples/example-colors.py
+	*	1732279956	0
+	"	6	7
+	^	6	8
+	.	6	7
+	+	40	24
+	+	42	0
+	+	14	0
+	+	12	17
+	+	91	16
+	+	71	16
+	+	41	23
+	+	68	0
+	+	13	16
+	+	42	0
+	+	14	0
+	+	8	0
+	+	14	0
+	+	9	0
+	+	42	0
+	+	72	0
+	+	11	0
+	+	7	0
+	+	11	0
+	+	71	0
+	+	11	0
+	+	70	82
+	+	1	7
+	+	3	7
+	+	4	7
+	+	5	7
+	+	6	7
+
+> ~/python_common/examples/example-datetime.py
+	*	1732279952	0
+	"	12	7
+	^	12	8
+	.	12	7
+	+	7	7
+	+	9	7
+	+	12	7
+
+> ~/python_common/examples/examplelog2.py
+	*	1732279946	0
+	"	8	40
+	^	8	8
+	.	8	7
+	+	11	14
+	+	8	14
+	+	11	0
+	+	1	7
+	+	3	7
+	+	4	7
+	+	5	7
+	+	6	7
+	+	8	7
+
+> ~/python_common/test_package.py
+	*	1732279940	0
+	"	3	7
+	^	3	8
+	.	3	7
+	+	2	0
+	+	3	4
+	+	2	39
+	+	3	0
+	+	2	24
+	+	3	42
+	+	4	0
+	+	2	7
+	+	3	7
+
+> ~/python_common/box/reltools.py
+	*	1732279935	0
+	"	45	9
+	^	94	12
+	.	94	11
+	+	14	7
+	+	45	11
+	+	66	11
+	+	93	11
+	+	94	11
+
+> ~/python_common/box/bat.py
+	*	1732279920	0
+	"	4	7
+	^	4	8
+	.	4	7
+	+	4	7
+
+> ~/python_common/box/data.py
+	*	1732279912	0
+	"	75	24
+	^	75	12
+	.	75	11
+	+	45	0
+	+	6	7
+	+	8	7
+	+	9	7
+	+	11	7
+	+	12	7
+	+	42	11
+	+	71	11
+	+	75	11
+
+> ~/python_common/box/get.py
+	*	1732279899	0
+	"	262	11
+	^	262	12
+	.	262	11
+	+	11	7
+	+	14	7
+	+	15	7
+	+	261	11
+	+	262	11
+
+> ~/python_common/box/date.py
+	*	1732279856	0
+	"	5	7
+	^	5	8
+	.	5	7
+	+	1	7
+	+	4	7
+	+	5	7
+
+> ~/python_common/box/null.py
+	*	1732279850	0
+	"	53	11
+	^	53	12
+	.	53	11
+	+	1	7
+	+	3	7
+	+	4	7
+	+	5	7
+	+	6	7
+	+	53	11
+
+> ~/python_common/box/print_utils.py
+	*	1732279846	0
+	"	210	11
+	^	210	12
+	.	210	11
+	+	3	7
+	+	210	11
+
+> ~/python_common/box/error2.py
+	*	1732279839	0
+	"	311	30
+	^	311	31
+	.	311	30
+	+	1	7
+	+	13	7
+	+	88	11
+	+	89	11
+	+	98	11
+	+	203	11
+	+	219	11
+	+	230	11
+	+	311	30
+
+> ~/python_common/box/color.py
+	*	1732279823	0
+	"	68	11
+	^	68	12
+	.	68	11
+	+	21	7
+	+	68	11
+
+> ~/python_common/box/truncate.py
+	*	1732279819	0
+	"	6	5
+	^	6	8
+	.	6	7
+	+	1	7
+	+	6	7
+
+> ~/python_common/box/test_debugger.py
+	*	1732279815	0
+	"	8	7
+	^	8	8
+	.	8	7
+	+	8	7
+
+> ~/python_common/box/test_import.py
+	*	1732279811	0
+	"	3	7
+	^	3	8
+	.	3	7
+	+	2	7
+	+	3	7
+
+> ~/python_common/box/ic.py
+	*	1732279807	0
+	"	876	11
+	^	876	12
+	.	876	11
+	+	11	7
+	+	14	7
+	+	15	7
+	+	16	7
+	+	199	11
+	+	405	11
+	+	418	11
+	+	610	11
+	+	817	11
+	+	828	11
+	+	848	11
+	+	876	11
+
+> ~/python_common/box/table.py
+	*	1732279801	0
+	"	217	11
+	^	217	12
+	.	217	11
+	+	3	7
+	+	4	7
+	+	34	11
+	+	217	11
+
+> ~/python_common/box/frame.py
+	*	1732279796	0
+	"	8	7
+	^	8	8
+	.	8	7
+	+	1	7
+	+	6	7
+	+	7	7
+	+	8	7
+
+> ~/python_common/box/log.py
+	*	1732279788	0
+	"	115	9
+	^	145	31
+	.	145	30
+	+	3	7
+	+	80	11
+	+	109	11
+	+	110	11
+	+	145	30
+
+> ~/python_common/box/tdd.py
+	*	1732279782	0
+	"	13	11
+	^	13	12
+	.	13	11
+	+	12	11
+	+	13	11
+
+> ~/python_common/box/jsonfile.py
+	*	1732279760	0
+	"	5	7
+	^	5	8
+	.	5	7
+	+	5	7
+
+> ~/python_common/box/test.py
+	*	1732279755	0
+	"	751	11
+	^	751	12
+	.	751	11
+	+	5	7
+	+	8	7
+	+	9	7
+	+	10	7
+	+	62	11
+	+	108	11
+	+	113	32
+	+	151	11
+	+	552	11
+	+	590	11
+	+	591	11
+	+	632	11
+	+	657	43
+	+	662	15
+	+	663	15
+	+	705	11
+	+	714	11
+	+	715	11
+	+	751	11
+
+> ~/python_common/box/error.py
+	*	1732279739	0
+	"	416	11
+	^	416	12
+	.	416	11
+	+	7	7
+	+	9	7
+	+	10	7
+	+	40	15
+	+	93	15
+	+	94	15
+	+	123	11
+	+	255	11
+	+	264	11
+	+	296	11
+	+	326	11
+	+	329	11
+	+	416	11
+
+> ~/python_common/box/json_decode_error.py
+	*	1732279730	0
+	"	30	11
+	^	30	12
+	.	30	11
+	+	30	11
+
+> ~/python_common/box/introspection.py
+	*	1732279724	0
+	"	3	5
+	^	104	31
+	.	104	30
+	+	1	7
+	+	3	7
+	+	4	7
+	+	5	7
+	+	6	7
+	+	104	30
+
+> ~/python_common/box/trace.py
+	*	1732279712	0
+	"	31	5
+	^	97	12
+	.	97	11
+	+	29	7
+	+	31	7
+	+	32	7
+	+	33	7
+	+	97	11
+
+> ~/python_common/setup.py
+	*	1732279569	0
+	"	98	19
+	^	90	6
+	.	91	4
+	+	49	0
+	+	85	0
+	+	51	18
+	+	51	0
+	+	71	9
+	+	50	9
+	+	50	13
+	+	51	12
+	+	52	22
+	+	51	0
+	+	51	19
+	+	52	22
+	+	52	0
+	+	52	21
+	+	52	25
+	+	40	0
+	+	112	0
+	+	50	16
+	+	113	0
+	+	50	0
+	+	112	0
+	+	40	68
+	+	50	0
+	+	51	0
+	+	52	0
+	+	71	0
+	+	17	0
+	+	19	0
+	+	21	18
+	+	13	36
+	+	21	19
+	+	23	9
+	+	26	0
+	+	21	23
+	+	24	39
+	+	25	8
+	+	10	0
+	+	11	19
+	+	11	10
+	+	11	26
+	+	59	0
+	+	87	0
+	+	84	0
+	+	77	8
+	+	80	34
+	+	80	8
+	+	75	26
+	+	78	12
+	+	81	30
+	+	82	23
+	+	83	8
+	+	11	0
+	+	77	48
+	+	80	12
+	+	77	0
+	+	77	25
+	+	113	15
+	+	77	28
+	+	76	46
+	+	77	0
+	+	5	0
+	+	76	0
+	+	77	0
+	+	79	37
+	+	87	0
+	+	54	0
+	+	53	18
+	+	68	8
+	+	40	67
+	+	46	0
+	+	44	63
+	+	43	63
+	+	44	0
+	+	43	5
+	+	45	31
+	+	106	13
+	+	101	20
+	+	65	0
+	+	66	0
+	+	67	32
+	+	66	26
+	+	67	52
+	+	63	74
+	+	113	0
+	+	63	73
+	+	69	28
+	+	69	0
+	+	52	0
+	+	104	36
+	+	104	20
+	+	104	23
+	+	104	0
+	+	15	22
+	+	93	17
+	+	96	16
+	+	98	21
+	+	90	24
+	+	91	5
+	+	90	5
+	+	91	4
+
+> ~/reddit-user-comments/requirements.txt
+	*	1732279437	0
+	"	1	2
+	^	1	3
+	.	1	2
+	+	6	7
+	+	7	3
+	+	8	7
+	+	9	3
+	+	1	2
+
+> ~/python_common/waivek/__init__.py
+	*	1732279383	0
+	"	14	0
+	.	24	0
+	+	20	0
+	+	7	0
+	+	13	0
+	+	5	0
+	+	25	0
+	+	26	0
+	+	4	0
+	+	5	0
+	+	25	1
+	+	9	63
+	+	11	0
+	+	9	59
+	+	27	12
+	+	1	13
+	+	4	0
+	+	18	0
+	+	1	0
+	+	27	0
+	+	3	0
+	+	2	14
+	+	27	21
+	+	27	0
+	+	5	0
+	+	12	0
+	+	25	0
+	+	26	12
+	+	4	0
+	+	5	0
+	+	6	0
+	+	7	0
+	+	9	0
+	+	25	0
+	+	20	0
+	+	18	0
+	+	16	0
+	+	15	0
+	+	14	0
+	+	13	0
+	+	12	0
+	+	5	0
+	+	10	0
+	+	13	0
+	+	19	0
+	+	25	0
+	+	12	0
+	+	13	0
+	+	17	0
+	+	19	0
+	+	20	0
+	+	25	0
+	+	12	0
+	+	13	0
+	+	8	0
+	+	10	0
+	+	27	23
+	+	3	23
+	+	12	1
+	+	13	1
+	+	12	82
+	+	17	0
+	+	19	0
+	+	20	0
+	+	17	0
+	+	20	0
+	+	25	0
+	+	17	0
+	+	19	0
+	+	12	0
+	+	13	0
+	+	10	0
+	+	8	0
+	+	27	8
+	+	2	25
+	+	12	62
+	+	10	1
+	+	8	0
+	+	19	0
+	+	17	0
+	+	12	0
+	+	2	24
+	+	12	0
+	+	17	0
+	+	2	24
+	+	13	0
+	+	9	0
+	+	13	0
+	+	2	24
+	+	3	31
+	+	3	76
+	+	13	0
+	+	8	0
+	+	10	0
+	+	17	0
+	+	8	0
+	+	27	0
+	+	21	25
+	+	22	17
+	+	24	33
+	+	24	0
+	a	26	12
+	b	9	62
+
+> ~/hateoas/jsonfile.py
+	*	1732279324	0
+	"	1	0
+	.	25	0
+	+	6	0
+	+	19	0
+	+	2	8
+	+	15	10
+	+	19	42
+	+	19	20
+	+	19	0
+	+	17	12
+	+	19	0
+	+	14	104
+	+	7	0
+	+	3	9
+	+	19	0
+	+	4	0
+	+	23	19
+	+	24	14
+	+	4	0
+	+	10	25
+	+	11	27
+	+	12	39
+	+	13	6
+	+	10	0
+	+	9	18
+	+	10	0
+	+	13	0
+	+	10	0
+	+	13	0
+	+	10	0
+	+	11	30
+	+	5	35
+	+	7	0
+	+	25	10
+	+	25	0
+	+	25	34
+	+	25	0
+
+> ~/python_common/todo.txt
+	*	1732277119	0
+	"	1	0
+
+> ~/python_common/waivek/todo.txt
+	*	1732277118	0
+	"	1	2
+	^	1	83
+	.	1	82
+	+	11	121
+	+	11	0
+	+	13	0
+	+	12	17
+	+	12	0
+	+	11	0
+	+	13	0
+	+	12	0
+	+	10	166
+	+	9	64
+	+	8	153
+	+	7	134
+	+	6	14
+	+	8	16
+	+	9	14
+	+	10	16
+	+	11	16
+	+	12	19
+	+	7	16
+	+	6	0
+	+	12	0
+	+	6	31
+	+	6	21
+	+	6	146
+	+	6	96
+	+	6	167
+	+	7	0
+	+	6	0
+	+	8	112
+	+	9	35
+	+	11	50
+	+	11	0
+	+	9	42
+	+	10	319
+	+	10	0
+	+	11	25
+	+	12	63
+	+	8	70
+	+	6	1
+	+	12	0
+	+	6	1
+	+	6	0
+	+	8	126
+	+	11	67
+	+	6	0
+	+	12	0
+	+	6	1
+	+	7	0
+	+	6	0
+	+	5	120
+	+	4	91
+	+	3	88
+	+	2	155
+	+	2	1
+	+	3	0
+	+	2	0
+	+	1	82
+
+> ~/reddit-user-comments/.direnv/python-3.10.12/lib/python3.10/site-packages/praw/models/reddit/comment.py
+	*	1732275661	0
+	"	32	0
+
+> ~/reddit-user-comments/.direnv/python-3.10.12/lib/python3.10/site-packages/praw/models/__init__.py
+	*	1732275625	0
+	"	19	34
+
+> ~/reddit-user-comments/.direnv/python-3.10.12/lib/python3.10/site-packages/praw/models/reddit/mixins/inboxtoggleable.py
+	*	1732275499	0
+	"	6	0
+
+> ~/reddit-user-comments/.direnv/python-3.10.12/lib/python3.10/site-packages/praw/models/listing/mixins/redditor.py
+	*	1732275348	0
+	"	13	0
+
+> ~/reddit-user-comments/secrets.env
+	*	1732274885	0
+	"	1	0
+	^	1	46
+	.	1	45
+	+	2	57
+	+	1	45
+
+> ~/reddit-user-comments/.envrc
+	*	1732274683	0
+	"	4	17
+	^	4	18
+	.	4	17
+	+	4	17
+
+> ~/python_common/twine-secrets.env
+	*	1732201352	0
+	"	1	0
+
+> ~/pyscripts/scrape_lenovo.py
+	*	1732031211	0
+	"	17	15
+	^	17	16
+	.	17	15
+	+	23	0
+	+	19	0
+	+	4	14
+	+	10	14
+	+	11	30
+	+	12	22
+	+	13	8
+	+	19	0
+	+	13	29
+	+	9	180
+	+	13	0
+	+	14	24
+	+	18	0
+	+	5	28
+	+	17	15
+
+> ~/hateoas/viewjobs.py
+	*	1731798275	0
+	"	51	4
+	.	51	0
+	+	1	0
+	+	13	1
+	+	14	56
+	+	15	0
+	+	20	41
+	+	12	0
+	+	16	14
+	+	20	0
+	+	36	18
+	+	39	0
+	+	37	29
+	+	38	8
+	+	39	0
+	+	37	29
+	+	69	15
+	+	69	0
+	+	69	8
+	+	69	0
+	+	69	59
+	+	69	36
+	+	69	12
+	+	69	49
+	+	69	0
+	+	69	35
+	+	69	12
+	+	69	26
+	+	47	41
+	+	54	4
+	+	49	8
+	+	53	8
+	+	37	20
+	+	44	20
+	+	53	22
+	+	44	0
+	+	47	8
+	+	48	8
+	+	47	111
+	+	47	55
+	+	48	0
+	+	47	12
+	+	48	0
+	+	47	0
+	+	47	85
+	+	47	0
+	+	44	79
+	+	45	58
+	+	47	0
+	+	44	0
+	+	37	27
+	+	53	16
+	+	37	16
+	+	40	0
+	+	46	42
+	+	49	0
+	+	46	100
+	+	69	107
+	+	69	0
+	+	69	30
+	+	71	0
+	+	70	0
+	+	64	0
+	+	68	19
+	+	66	12
+	+	68	24
+	+	67	47
+	+	66	63
+	+	67	30
+	+	68	0
+	+	61	15
+	+	69	40
+	+	61	0
+	+	72	46
+	+	68	0
+	+	70	0
+	+	51	0
+
+> ~/.config/functions.fish
+	*	1731595858	0
+	"	67	25
+	^	67	26
+	.	67	25
+	+	56	0
+	+	56	46
+	+	56	17
+	+	56	14
+	+	56	0
+	+	56	9
+	+	56	0
+	+	56	39
+	+	56	17
+	+	56	0
+	+	56	63
+	+	56	29
+	+	56	0
+	+	56	29
+	+	56	0
+	+	56	8
+	+	56	28
+	+	56	45
+	+	56	14
+	+	56	0
+	+	79	0
+	+	68	0
+	+	79	0
+	+	66	0
+	+	68	0
+	+	79	0
+	+	80	23
+	+	86	0
+	+	79	0
+	+	66	0
+	+	68	0
+	+	79	0
+	+	86	0
+	+	79	8
+	+	79	0
+	+	79	10
+	+	73	0
+	+	66	0
+	+	58	0
+	+	66	0
+	+	56	0
+	+	57	0
+	+	65	19
+	+	89	4
+	+	90	3
+	+	95	20
+	+	104	0
+	+	92	26
+	+	95	4
+	+	104	0
+	+	96	15
+	+	101	46
+	+	103	0
+	+	101	8
+	+	101	16
+	+	102	25
+	+	102	0
+	+	95	18
+	+	96	4
+	+	95	20
+	+	100	0
+	+	101	4
+	+	102	4
+	+	101	49
+	+	99	4
+	+	101	35
+	+	56	74
+	+	1	29
+	+	4	23
+	+	1	0
+	+	28	0
+	+	27	0
+	+	29	29
+	+	32	0
+	+	4	45
+	+	4	0
+	+	21	27
+	+	51	27
+	+	32	51
+	+	51	27
+	+	52	0
+	+	81	0
+	+	80	9
+	+	81	41
+	+	67	25
+
+> ~/.config/setup.fish
+	*	1731595831	0
+	"	13	8
+	^	4	26
+	.	4	25
+	+	8	0
+	+	8	45
+	+	8	5
+	+	8	0
+	+	8	9
+	+	8	5
+	+	8	0
+	+	8	9
+	+	8	39
+	+	8	9
+	+	8	0
+	+	8	20
+	+	8	19
+	+	8	23
+	+	8	8
+	+	8	23
+	+	8	9
+	+	8	0
+	+	21	1
+	+	8	0
+	+	27	0
+	+	15	0
+	+	15	13
+	+	15	0
+	+	29	21
+	+	29	18
+	+	29	0
+	+	29	42
+	+	29	0
+	+	28	0
+	+	29	0
+	+	8	0
+	+	8	44
+	+	8	0
+	+	8	4
+	+	8	0
+	+	8	7
+	+	8	37
+	+	8	24
+	+	8	7
+	+	8	5
+	+	8	25
+	+	8	13
+	+	8	30
+	+	8	7
+	+	8	0
+	+	8	21
+	+	8	0
+	+	15	0
+	+	15	1
+	+	8	0
+	+	15	0
+	+	15	32
+	+	8	23
+	+	8	0
+	+	8	19
+	+	8	0
+	+	8	26
+	+	8	10
+	+	8	5
+	+	8	0
+	+	8	37
+	+	8	0
+	+	8	22
+	+	8	58
+	+	8	0
+	+	9	30
+	+	15	18
+	+	29	0
+	+	30	0
+	+	31	0
+	+	30	29
+	+	31	11
+	+	33	34
+	+	34	0
+	+	15	0
+	+	26	55
+	+	26	0
+	+	18	82
+	+	19	80
+	+	1	0
+	+	16	26
+	+	1	13
+	+	18	12
+	+	27	0
+	+	26	11
+	+	34	12
+	+	1	0
+	+	18	0
+	+	26	0
+	+	34	0
+	+	13	33
+	+	14	0
+	+	15	0
+	+	12	0
+	+	15	0
+	+	10	0
+	+	15	0
+	+	3	33
+	+	4	25
+
+> ~/.config/fish/config.fish
+	*	1731595827	0
+	"	3	12
+	.	3	0
+	+	3	30
+	+	1	0
+	+	3	0
+
+> ~/hateoas/worker_create_graph_payload.py
+	*	1731541683	0
+	"	19	73
+	^	19	74
+	.	19	73
+	+	1	0
+	+	20	20
+	+	19	73
+
+> ~/bash/logs/worker_create_graph_payload.log
+	*	1731541635	0
+	"	44	0
+
+> ~/hateoas/video_stats.py
+	*	1731541631	0
+	"	11	0
+	.	86	0
+	+	95	0
+	+	2	0
+	+	32	0
+	+	95	0
+	+	13	7
+	+	9	52
+	+	13	57
+	+	14	32
+	+	15	17
+	+	2	0
+	+	33	24
+	+	13	80
+	+	1	0
+	+	2	0
+	+	95	0
+	+	88	0
+	+	17	0
+	+	19	0
+	+	20	0
+	+	31	0
+	+	64	7
+	+	61	0
+	+	64	0
+	+	64	27
+	+	64	0
+	+	34	0
+	+	33	0
+	+	64	0
+	+	64	36
+	+	64	0
+	+	64	14
+	+	64	8
+	+	64	15
+	+	64	0
+	+	66	44
+	+	68	24
+	+	69	4
+	+	70	15
+	+	72	0
+	+	70	21
+	+	72	0
+	+	71	50
+	+	72	34
+	+	49	23
+	+	77	0
+	+	77	13
+	+	77	0
+	+	78	0
+	+	77	0
+	+	75	4
+	+	77	0
+	+	9	0
+	+	33	0
+	+	10	0
+	+	70	0
+	+	72	0
+	+	89	26
+	+	90	18
+	+	85	0
+	+	86	0
+	+	68	0
+	+	85	0
+	+	68	17
+	+	68	0
+	+	67	4
+	+	69	60
+	+	68	68
+	+	69	0
+	+	67	0
+	+	69	0
+	+	69	15
+	+	62	0
+	+	66	54
+	+	69	23
+	+	68	26
+	+	66	14
+	+	68	0
+	+	66	0
+	+	65	22
+	+	66	0
+	+	63	0
+	+	65	36
+	+	69	0
+	+	86	0
+	+	85	0
+	+	86	0
+
+> ~/hateoas/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/reltools.py
+	*	1731541630	0
+	"	71	4
+
+> ~/hateoas/worker_utils.py
+	*	1731541073	0
+	"	1	0
+	^	86	15
+	.	86	14
+	+	36	45
+	+	13	29
+	+	24	73
+	+	4	8
+	+	4	31
+	+	24	0
+	+	21	7
+	+	4	0
+	+	2	0
+	+	21	8
+	+	22	38
+	+	23	64
+	+	24	49
+	+	4	0
+	+	21	0
+	+	3	0
+	+	14	26
+	+	21	0
+	+	12	0
+	+	4	0
+	+	15	3
+	+	3	26
+	+	24	51
+	+	17	32
+	+	12	7
+	+	12	14
+	+	12	0
+	+	12	47
+	+	12	9
+	+	12	18
+	+	12	0
+	+	12	14
+	+	12	41
+	+	12	24
+	+	12	0
+	+	12	79
+	+	12	16
+	+	12	21
+	+	12	0
+	+	20	0
+	+	28	19
+	+	17	27
+	+	27	0
+	+	17	10
+	+	19	65
+	+	20	0
+	+	19	46
+	+	20	18
+	+	19	0
+	+	17	27
+	+	17	38
+	+	19	14
+	+	20	20
+	+	18	8
+	+	20	0
+	+	16	0
+	+	27	0
+	+	23	44
+	+	28	0
+	+	12	0
+	+	39	52
+	+	51	0
+	+	80	0
+	+	17	0
+	+	6	20
+	+	7	4
+	+	80	18
+	+	17	0
+	+	80	1
+	+	79	25
+	+	80	63
+	+	88	0
+	+	91	0
+	+	110	0
+	+	122	0
+	+	112	43
+	+	112	51
+	+	3	0
+	+	112	0
+	+	9	0
+	+	11	0
+	+	10	0
+	+	11	0
+	+	9	0
+	+	96	0
+	+	123	0
+	+	123	55
+	+	123	41
+	+	123	0
+	+	95	46
+	+	87	0
+	+	63	0
+	+	1	0
+	+	87	0
+	+	82	8
+	+	87	11
+	+	87	0
+	+	82	10
+	+	84	7
+	+	86	14
+
+> ~/hateoas/worker_chat_to_offset.py
+	*	1731541016	0
+	"	6	0
+	.	6	0
+	+	2	68
+	+	2	105
+	+	2	72
+	+	2	0
+	+	2	116
+	+	2	0
+	+	2	57
+	+	2	100
+	+	2	0
+	+	2	74
+	+	2	0
+	+	2	21
+	+	2	0
+	+	2	17
+	+	2	0
+	+	2	43
+	+	2	65
+	+	2	0
+	+	2	24
+	+	2	40
+	+	2	101
+	+	2	0
+	+	2	29
+	+	2	0
+	+	2	37
+	+	2	34
+	+	2	29
+	+	2	0
+	+	2	37
+	+	2	33
+	+	2	37
+	+	2	0
+	+	2	31
+	+	2	0
+	+	2	28
+	+	2	10
+	+	2	0
+	+	2	211
+	+	2	64
+	+	2	213
+	+	2	64
+	+	2	97
+	+	2	109
+	+	2	28
+	+	2	26
+	+	2	0
+	+	2	57
+	+	2	8
+	+	37	9
+	+	34	7
+	+	2	0
+	+	4	38
+	+	33	0
+	+	1	28
+	+	9	18
+	+	7	38
+	+	11	4
+	+	13	50
+	+	5	0
+	+	14	158
+	+	5	0
+	+	33	0
+	+	17	14
+	+	17	0
+	+	15	7
+	+	17	0
+	+	33	0
+	+	20	28
+	+	3	0
+	+	1	0
+	+	26	8
+	+	1	0
+	+	26	70
+	+	1	19
+	+	26	21
+	+	33	0
+	+	33	45
+	+	30	11
+	+	22	7
+	+	23	0
+	+	27	26
+	+	28	56
+	+	10	17
+	+	20	33
+	+	1	0
+	+	21	18
+	+	33	0
+	+	34	0
+	+	33	0
+	+	19	0
+	+	35	0
+	+	9	19
+	+	6	10
+	+	9	22
+	+	14	158
+	+	14	0
+	+	15	144
+	+	15	0
+	+	9	0
+	+	6	0
+
+> ~/bash/logs/worker_chat_to_offset.log
+	*	1731540771	0
+	"	28	82
+
+> ~/hateoas/chat_download_worker.py
+	*	1731540721	0
+	"	93	69
+	^	15	28
+	.	15	0
+	+	52	0
+	+	12	1
+	+	15	0
+	+	12	1
+	+	12	38
+	+	143	51
+	+	13	0
+	+	25	38
+	+	179	35
+	+	180	29
+	+	53	84
+	+	53	58
+	+	53	63
+	+	53	32
+	+	53	22
+	+	53	27
+	+	53	34
+	+	53	26
+	+	56	26
+	+	57	22
+	+	138	0
+	+	140	0
+	+	148	0
+	+	140	0
+	+	142	33
+	+	145	36
+	+	147	44
+	+	143	0
+	+	28	24
+	+	29	37
+	+	32	49
+	+	34	24
+	+	35	37
+	+	37	49
+	+	39	23
+	+	40	37
+	+	43	25
+	+	44	37
+	+	12	0
+	+	171	48
+	+	172	78
+	+	53	38
+	+	76	0
+	+	75	15
+	+	80	0
+	+	83	15
+	+	108	0
+	+	59	0
+	+	108	0
+	+	65	0
+	+	71	0
+	+	53	0
+	+	90	0
+	+	95	53
+	+	93	62
+	+	95	0
+	+	94	0
+	+	137	0
+	+	181	0
+	+	15	0
+
+> ~/hateoas/download_chat.py
+	*	1731540676	0
+	"	171	35
+	^	74	63
+	.	74	0
+	+	169	54
+	+	169	0
+	+	169	38
+	+	84	11
+	+	169	15
+	+	169	4
+	+	169	32
+	+	169	58
+	+	178	56
+	+	179	0
+	+	181	0
+	+	181	4
+	+	182	27
+	+	169	0
+	+	5	0
+	+	151	0
+	+	155	32
+	+	169	0
+	+	164	0
+	+	166	0
+	+	168	0
+	+	165	0
+	+	169	0
+	+	170	0
+	+	203	0
+	+	218	0
+	+	198	0
+	+	197	17
+	+	205	0
+	+	203	4
+	+	155	0
+	+	195	17
+	+	197	0
+	+	194	0
+	+	203	0
+	+	205	13
+	+	217	0
+	+	177	0
+	+	197	0
+	+	177	0
+	+	181	0
+	+	179	0
+	+	181	19
+	+	187	13
+	+	188	45
+	+	196	0
+	+	181	0
+	+	196	0
+	+	183	0
+	+	32	0
+	+	28	66
+	+	29	66
+	+	30	39
+	+	31	53
+	+	32	5
+	+	32	0
+	+	147	20
+	+	6	0
+	+	147	29
+	+	150	41
+	+	146	0
+	+	135	0
+	+	146	0
+	+	126	0
+	+	146	0
+	+	132	0
+	+	123	16
+	+	124	41
+	+	127	15
+	+	128	27
+	+	133	29
+	+	134	0
+	+	133	17
+	+	146	24
+	+	134	0
+	+	145	0
+	+	87	0
+	+	77	49
+	+	3	0
+	+	78	41
+	+	178	63
+	+	216	0
+	+	207	35
+	+	208	81
+	+	210	56
+	+	214	12
+	+	215	0
+	+	209	7
+	+	210	0
+	+	211	26
+	+	212	8
+	+	220	0
+	+	221	26
+	+	220	5
+	+	26	0
+	+	25	4
+	+	25	0
+	+	69	0
+	+	9	0
+	+	74	0
+	a	181	16
+
+> ~/hateoas/worker_download_chat.py
+	*	1731540631	0
+	"	20	32
+	.	19	0
+	+	9	0
+	+	7	0
+	+	8	0
+	+	16	0
+	+	15	26
+	+	16	0
+	+	21	0
+	+	5	0
+	+	6	0
+	+	2	0
+	+	22	0
+	+	16	0
+	+	14	0
+	+	10	17
+	+	22	0
+	+	20	45
+	+	4	0
+	+	22	11
+	+	19	0
+	+	3	0
+	+	19	0
+
+> ~/hateoas/worker_single.py
+	*	1731540470	0
+	"	40	24
+	^	35	17
+	.	35	16
+	+	9	26
+	+	25	66
+	+	26	87
+	+	26	0
+	+	25	1
+	+	11	67
+	+	9	35
+	+	29	0
+	+	36	40
+	+	5	0
+	+	43	28
+	+	48	0
+	+	43	29
+	+	48	0
+	+	24	0
+	+	45	21
+	+	48	0
+	+	36	0
+	+	15	0
+	+	17	0
+	+	21	0
+	+	20	0
+	+	21	0
+	+	16	31
+	+	17	33
+	+	21	0
+	+	45	0
+	+	44	128
+	+	49	0
+	+	14	11
+	+	25	0
+	+	43	0
+	+	46	0
+	+	35	16
+
+> ~/hateoas/worker_db_utils.py
+	*	1731540467	0
+	"	51	0
+	.	52	0
+	+	8	0
+	+	5	0
+	+	3	0
+	+	4	0
+	+	2	0
+	+	1	0
+	+	27	0
+	+	11	90
+	+	29	4
+	+	30	16
+	+	11	138
+	+	26	119
+	+	6	43
+	+	5	43
+	+	36	14
+	+	37	12
+	+	38	11
+	+	41	14
+	+	42	12
+	+	43	20
+	+	48	14
+	+	49	12
+	+	50	11
+	+	38	0
+	+	38	143
+	+	52	0
+
+> ~/hateoas/worker.py
+	*	1731540225	0
+	"	1	0
+	^	29	5
+	.	28	0
+	+	61	0
+	+	61	62
+	+	72	0
+	+	63	38
+	+	19	52
+	+	59	0
+	+	38	13
+	+	52	14
+	+	53	52
+	+	70	14
+	+	71	5
+	+	56	34
+	+	64	109
+	+	71	4
+	+	70	4
+	+	56	85
+	+	64	20
+	+	67	10
+	+	24	58
+	+	24	49
+	+	65	44
+	+	66	110
+	+	51	0
+	+	42	55
+	+	43	8
+	+	49	40
+	+	50	108
+	+	43	31
+	+	50	25
+	+	53	31
+	+	56	25
+	+	61	31
+	+	64	25
+	+	66	25
+	+	43	0
+	+	50	32
+	+	43	38
+	+	56	32
+	+	61	38
+	+	64	32
+	+	66	32
+	+	6	20
+	+	7	20
+	+	72	88
+	+	73	4
+	+	75	114
+	+	75	0
+	+	41	0
+	+	45	0
+	+	46	47
+	+	47	38
+	+	53	38
+	+	43	78
+	+	47	80
+	+	50	72
+	+	53	78
+	+	56	72
+	+	61	77
+	+	64	74
+	+	66	74
+	+	75	74
+	+	8	18
+	+	3	0
+	+	4	16
+	+	9	22
+	+	75	0
+	+	1	0
+	+	31	0
+	+	1	0
+	+	33	0
+	+	32	0
+	+	20	73
+	+	24	45
+	+	21	73
+	+	24	73
+	+	12	22
+	+	13	17
+	+	15	27
+	+	19	27
+	+	19	5
+	+	14	16
+	+	15	26
+	+	19	0
+	+	21	63
+	+	24	11
+	+	20	5
+	+	21	51
+	+	22	34
+	+	19	0
+	+	17	27
+	+	23	50
+	+	17	27
+	+	18	22
+	+	19	0
+	+	16	12
+	+	24	12
+	+	24	19
+	+	24	12
+	+	25	8
+	+	28	0
+
+> ~/pyscripts/viewlog.py
+	*	1731540114	0
+	"	120	18
+	^	120	19
+	.	120	18
+	+	133	26
+	+	142	30
+	+	142	0
+	+	134	0
+	+	133	0
+	+	142	0
+	+	135	0
+	+	134	26
+	+	135	0
+	+	136	0
+	+	142	0
+	+	140	0
+	+	134	0
+	+	136	0
+	+	137	0
+	+	132	43
+	+	140	56
+	+	137	0
+	+	140	0
+	+	137	0
+	+	140	0
+	+	173	0
+	+	210	0
+	+	269	0
+	+	270	21
+	+	8	23
+	+	9	16
+	+	270	0
+	+	269	15
+	+	102	0
+	+	103	0
+	+	93	0
+	+	92	0
+	+	88	42
+	+	92	0
+	+	101	0
+	+	88	0
+	+	92	0
+	+	88	40
+	+	90	0
+	+	89	0
+	+	90	42
+	+	91	16
+	+	94	0
+	+	88	49
+	+	88	47
+	+	90	50
+	+	91	48
+	+	93	59
+	+	100	0
+	+	98	74
+	+	97	20
+	+	45	0
+	+	16	0
+	+	48	0
+	+	182	0
+	+	18	0
+	+	17	0
+	+	248	0
+	+	247	0
+	+	42	0
+	+	222	49
+	+	222	38
+	+	222	0
+	+	100	35
+	+	100	22
+	+	100	0
+	+	98	0
+	+	86	0
+	+	88	0
+	+	87	17
+	+	99	0
+	+	119	0
+	+	123	0
+	+	118	32
+	+	130	35
+	+	279	54
+	+	20	32
+	+	139	0
+	+	137	13
+	+	138	64
+	+	138	0
+	+	137	40
+	+	110	60
+	+	109	9
+	+	105	11
+	+	107	41
+	+	109	36
+	+	110	22
+	+	279	0
+	+	278	0
+	+	142	8
+	+	142	15
+	+	160	74
+	+	161	25
+	+	278	0
+	+	279	0
+	+	120	18
+	b	105	33
+
+> ~/pyscripts/tmp_create_date_regex.py
+	*	1731539721	0
+	"	9	0
+	^	9	69
+	.	9	68
+	+	22	0
+	+	6	0
+	+	17	21
+	+	4	8
+	+	8	13
+	+	10	38
+	+	11	6
+	+	15	0
+	+	8	5
+	+	9	68
+
+> ~/hateoas/viewworkers.py
+	*	1731539493	0
+	"	40	4
+	.	24	0
+	+	1	67
+	+	45	16
+	+	3	0
+	+	45	0
+	+	32	31
+	+	30	28
+	+	32	30
+	+	30	32
+	+	66	0
+	+	16	17
+	+	16	9
+	+	16	10
+	+	20	5
+	+	17	27
+	+	14	0
+	+	15	0
+	+	18	34
+	+	19	0
+	+	16	0
+	+	17	26
+	+	19	0
+	+	16	0
+	+	19	0
+	+	66	0
+	+	21	74
+	+	45	0
+	+	39	0
+	+	38	5
+	+	37	93
+	+	56	0
+	+	57	9
+	+	57	0
+	+	14	0
+	+	43	29
+	+	13	27
+	+	43	33
+	+	57	0
+	+	58	46
+	+	56	0
+	+	59	23
+	+	37	58
+	+	52	28
+	+	52	30
+	+	53	27
+	+	54	32
+	+	55	33
+	+	52	0
+	+	43	84
+	+	30	36
+	+	32	38
+	+	43	0
+	+	16	0
+	+	25	0
+	+	30	0
+	+	26	47
+	+	27	38
+	+	28	44
+	+	29	12
+	+	30	0
+	+	37	0
+	+	24	0
+
+> ~/pyscripts/tests/test_viewlog.py
+	*	1731538013	0
+	"	57	38
+	^	57	39
+	.	57	38
+	+	5	10
+	+	56	0
+	+	7	28
+	+	8	25
+	+	56	15
+	+	57	15
+	+	56	38
+	+	57	38
+
+> ~/pyscripts/test_viewlog.py
+	*	1731537406	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/pyscripts/test_upsert.py
+	*	1731536470	0
+	"	1	0
+
+> ~/hateoas/format_git_output.py
+	*	1731535595	0
+	"	99	9
+	^	99	10
+	.	99	9
+	+	2	0
+	+	99	9
+
+> ~/tmp/file.bash
+	*	1731535483	0
+	"	1	0
+	^	5	0
+	.	4	4
+	+	4	4
+
+> ~/hateoas/download_portionurl.py
+	*	1731535170	0
+	"	15	10
+	^	15	11
+	.	15	10
+	+	84	0
+	+	85	24
+	+	42	5
+	+	44	15
+	+	113	15
+	+	79	33
+	+	79	32
+	+	44	16
+	+	79	0
+	+	79	32
+	+	79	0
+	+	2	0
+	+	79	0
+	+	76	0
+	+	79	29
+	+	79	0
+	+	70	52
+	+	71	0
+	+	70	0
+	+	77	25
+	+	78	37
+	+	70	0
+	+	70	36
+	+	70	4
+	+	79	0
+	+	70	45
+	+	70	0
+	+	70	19
+	+	70	18
+	+	70	31
+	+	70	0
+	+	70	38
+	+	70	0
+	+	70	29
+	+	70	0
+	+	70	32
+	+	70	22
+	+	92	50
+	+	93	69
+	+	95	64
+	+	72	0
+	+	73	0
+	+	74	0
+	+	70	14
+	+	70	46
+	+	70	24
+	+	70	18
+	+	70	11
+	+	70	22
+	+	93	16
+	+	93	14
+	+	43	14
+	+	21	23
+	+	21	6
+	+	21	0
+	+	21	25
+	+	70	39
+	+	70	24
+	+	72	0
+	+	85	0
+	+	76	0
+	+	79	0
+	+	76	0
+	+	79	8
+	+	95	0
+	+	71	0
+	+	112	0
+	+	21	0
+	+	88	48
+	+	88	4
+	+	88	0
+	+	3	0
+	+	93	5
+	+	44	5
+	+	42	4
+	+	113	30
+	+	56	5
+	+	55	4
+	+	113	30
+	+	105	35
+	+	110	18
+	+	111	0
+	+	8	0
+	+	27	0
+	+	91	99
+	+	92	17
+	+	92	0
+	+	93	0
+	+	95	0
+	+	96	0
+	+	70	0
+	+	16	55
+	+	88	0
+	+	21	0
+	+	93	0
+	+	61	0
+	+	60	26
+	+	96	48
+	+	15	10
+
+> ~/bash/todo_vim_fzf_select.bash
+	*	1731535151	0
+	"	2	22
+	.	3	0
+	+	2	0
+	+	2	13
+	+	2	0
+	+	2	9
+	+	2	118
+	+	2	10
+	+	2	119
+	+	2	1
+	+	2	2
+	+	2	0
+	+	2	10
+	+	2	35
+	+	2	0
+	+	2	1
+	+	6	0
+	+	3	0
+
+> ~/bash/todo.txt
+	*	1731535077	0
+	"	1	2
+	.	1	0
+	+	2	119
+	+	1	0
+	+	2	2
+	+	1	0
+
+> ~/pyscripts/commit-message-gemini.py
+	*	1731534526	0
+	"	87	10
+	^	87	11
+	.	87	10
+	+	64	60
+	+	26	30
+	+	60	10
+	+	61	35
+	+	10	25
+	+	64	4
+	+	64	0
+	+	64	40
+	+	77	116
+	+	10	14
+	+	94	0
+	+	94	33
+	+	94	4
+	+	94	6
+	+	94	8
+	+	94	22
+	+	81	19
+	+	94	0
+	+	94	23
+	+	94	17
+	+	94	3
+	+	94	30
+	+	94	12
+	+	94	0
+	+	11	0
+	+	20	41
+	+	93	6
+	+	94	0
+	+	25	0
+	+	34	0
+	+	29	60
+	+	30	70
+	+	31	24
+	+	6	0
+	+	32	23
+	+	6	0
+	+	60	0
+	+	74	0
+	+	8	13
+	+	60	0
+	+	70	58
+	+	71	0
+	+	92	0
+	+	84	23
+	+	85	23
+	+	66	30
+	+	67	5
+	+	59	0
+	+	82	5
+	+	93	6
+	+	82	6
+	+	93	2
+	+	9	21
+	+	1	35
+	+	90	11
+	+	93	24
+	+	89	50
+	+	90	28
+	+	93	1
+	+	92	0
+	+	87	10
+
+> ~/tooling/swe_knowledge.txt
+	*	1731534419	0
+	"	1	0
+	^	7	75
+	.	7	74
+	+	1	83
+	+	1	312
+	+	2	4
+	+	5	77
+	+	1	76
+	+	8	0
+	+	1	0
+	+	1	7
+	+	1	0
+	+	7	74
+
+> ~/tooling/errors.txt
+	*	1731534386	0
+	"	34	0
+	^	26	190
+	.	35	0
+	+	2	0
+	+	24	0
+	+	25	162
+	+	35	0
+	+	26	189
+	+	35	0
+
+> ~/tooling/digest/all_the_data_can_be_yours.txt
+	*	1731534363	0
+	"	9	0
+	^	1	0
+	.	1	0
+	+	3	47
+	+	4	0
+	+	9	13
+	+	8	76
+	+	2	0
+	+	1	0
+
+> ~/python_common/.github/workflows/python-package.yml
+	*	1731525738	0
+	"	32	21
+	^	32	22
+	.	32	21
+	+	1	23
+	+	28	14
+	+	5	21
+	+	7	21
+	+	8	20
+	+	9	0
+	+	17	0
+	+	17	29
+	+	18	0
+	+	18	26
+	+	20	30
+	+	22	34
+	+	17	30
+	+	27	11
+	+	27	10
+	+	27	12
+	+	27	0
+	+	27	10
+	+	28	10
+	+	27	6
+	+	27	0
+	+	28	4
+	+	27	6
+	+	27	0
+	+	21	0
+	+	27	0
+	+	26	29
+	+	27	10
+	+	26	11
+	+	27	6
+	+	26	11
+	+	26	19
+	+	17	31
+	+	26	0
+	+	27	0
+	+	26	27
+	+	27	8
+	+	28	0
+	+	17	30
+	+	29	22
+	+	17	42
+	+	26	11
+	+	27	10
+	+	17	0
+	+	17	30
+	+	27	27
+	+	27	0
+	+	25	0
+	+	27	0
+	+	14	0
+	+	15	8
+	+	17	8
+	+	18	8
+	+	25	52
+	+	26	53
+	+	18	0
+	+	16	0
+	+	32	21
+	a	22	34
+	b	22	34
+
+> ~/python_common/waivek/bat.py
+	*	1731525642	0
+	"	53	0
+	^	53	2
+	.	53	0
+	+	53	0
+
+> ~/python_common/commit.tmp
+	*	1731525619	0
+	"	8	0
+	^	15	8
+	.	15	7
+	+	19	68
+	+	15	7
+
+> ~/python_common/waivek/test.py
+	*	1731524899	0
+	"	794	0
+	^	764	20
+	.	751	0
+	+	752	11
+	+	753	26
+	+	775	13
+	+	767	15
+	+	775	18
+	+	767	35
+	+	767	0
+	+	749	23
+	+	753	16
+	+	773	29
+	+	775	20
+	+	752	18
+	+	767	20
+	+	752	18
+	+	767	0
+	+	65	4
+	+	66	31
+	+	666	0
+	+	775	5
+	+	774	15
+	+	757	15
+	+	759	0
+	+	765	19
+	+	766	19
+	+	771	19
+	+	772	9
+	+	758	0
+	+	766	0
+	+	765	0
+	+	750	0
+	+	764	19
+	+	745	0
+	+	742	0
+	+	741	0
+	+	5	0
+	+	8	0
+	+	9	0
+	+	10	0
+	+	62	0
+	+	108	0
+	+	151	0
+	+	552	0
+	+	590	0
+	+	591	0
+	+	632	0
+	+	662	0
+	+	663	0
+	+	705	0
+	+	714	0
+	+	715	0
+	+	751	0
+
+> ~/python_common/waivek/json_decode_error.py
+	*	1731524446	0
+	"	7	0
+	^	7	53
+	.	7	52
+	+	30	0
+	+	198	19
+	+	4	16
+	+	5	0
+	+	3	0
+	+	4	0
+	+	7	52
+
+> ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/bat.py
+	*	1731278103	0
+	"	12	4
+
+> ~/llm/requirements.txt
+	*	1731278054	0
+	"	5	0
+	^	4	2
+	.	4	1
+	+	5	2
+	+	5	0
+	+	4	1
+
+> ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/__init__.py
+	*	1731277913	0
+	"	20	0
+
+> ~/pyscripts/data/commit-message-gemini-cache.json
+	*	1731277711	0
+	"	2	641
+	.	2	642
+	+	3	0
+	+	2	642
+
+> ~/python_common/waivek/markup.py
+	*	1731277636	0
+	"	158	8
+
+> ~/python_common/waivek/rich_markup.py
+	*	1731277582	0
+	"	3	4
+	.	1	0
+	+	2	0
+	+	4	3
+	+	1	0
+
+> ~/python_common/__init__.py
+	*	1731277536	0
+	"	1	0
+
+> ~/hateoas/rich_markup.py
+	*	1731277510	0
+	"	1	0
+	^	2	0
+	.	2	0
+	+	6	0
+	+	5	7
+	+	3	10
+	+	5	31
+	+	14	5
+	+	22	50
+	+	22	0
+	+	20	18
+	+	22	25
+	+	4	0
+	+	16	37
+	+	17	41
+	+	18	75
+	+	19	8
+	+	20	25
+	+	18	45
+	+	3	0
+	+	2	0
+
+> ~/python_common/__
+	*	1731277470	0
+	"	1	0
+
+> ~/pyscripts/wrap_commit_message.py
+	*	1731276603	0
+	"	5	0
+	^	31	23
+	.	5	0
+	+	37	0
+	+	20	32
+	+	21	8
+	+	20	7
+	+	21	21
+	+	22	29
+	+	33	0
+	+	32	0
+	+	26	10
+	+	22	25
+	+	26	17
+	+	37	0
+	+	36	0
+	+	4	24
+	+	26	30
+	+	32	26
+	+	25	0
+	+	28	16
+	+	27	0
+	+	28	18
+	+	30	21
+	+	32	4
+	+	32	45
+	+	32	24
+	+	32	98
+	+	32	0
+	+	26	0
+	+	19	35
+	+	19	33
+	+	30	67
+	+	31	22
+	+	5	0
+
+> ~/pyscripts/diff.txt
+	*	1731276054	0
+	"	51	0
+	.	52	0
+	+	52	0
+
+> ~/pflix/tests/test_pflix_scrape.py
+	*	1731275081	0
+	"	5	4
+	^	14	17
+	.	50	0
+	+	15	27
+	+	14	16
+	+	50	0
+
+> ~/pflix/pflix_scrape.py
+	*	1731275075	0
+	"	105	27
+	^	95	28
+	.	95	27
+	+	104	0
+	+	77	50
+	+	104	4
+	+	133	21
+	+	140	0
+	+	139	3
+	+	140	0
+	+	133	0
+	+	133	4
+	+	134	0
+	+	116	0
+	+	133	0
+	+	124	35
+	+	125	53
+	+	125	42
+	+	126	43
+	+	127	20
+	+	133	0
+	+	104	0
+	+	79	4
+	+	125	0
+	+	79	0
+	+	78	52
+	+	79	0
+	+	92	21
+	+	12	8
+	+	92	0
+	+	92	23
+	+	80	7
+	+	81	100
+	+	82	23
+	+	83	42
+	+	92	4
+	+	92	40
+	+	84	59
+	+	92	23
+	+	84	0
+	+	84	22
+	+	85	48
+	+	89	27
+	+	90	34
+	+	91	60
+	+	83	47
+	+	77	72
+	+	126	25
+	+	127	29
+	+	86	7
+	+	87	125
+	+	115	59
+	+	115	4
+	+	127	53
+	+	115	0
+	+	128	11
+	+	115	81
+	+	1	0
+	+	115	0
+	+	105	0
+	+	127	30
+	+	128	31
+	+	129	4
+	+	28	0
+	+	25	45
+	+	129	37
+	+	146	0
+	+	72	46
+	+	73	4
+	+	130	28
+	+	127	39
+	+	128	0
+	+	129	0
+	+	94	62
+	+	98	7
+	+	100	51
+	+	94	87
+	+	104	0
+	+	96	32
+	+	102	57
+	+	103	34
+	+	100	39
+	+	101	41
+	+	104	0
+	+	123	28
+	+	132	28
+	+	133	0
+	+	122	0
+	+	117	36
+	+	118	41
+	+	143	0
+	+	121	0
+	+	119	73
+	+	120	51
+	+	121	0
+	+	120	31
+	+	121	0
+	+	98	0
+	+	97	34
+	+	98	20
+	+	95	27
+
+> ~/pflix/data/urls.json
+	*	1731265162	0
+	"	8	16
+	^	8	17
+	.	8	16
+	+	3	51
+	+	9	0
+	+	3	51
+	+	4	57
+	+	9	0
+	+	4	56
+	+	9	0
+	+	3	18
+	+	4	61
+	+	5	8
+	+	9	0
+	+	6	45
+	+	7	0
+	+	9	0
+	+	4	0
+	+	2	0
+	+	8	16
+
+> ~/pflix/data/page-pretty.json
+	*	1731264708	0
+	"	1	0
+	.	1	0
+	+	1	1
+	+	1	1009
+	+	1	0
+
+> ~/pflix/requirements.txt
+	*	1731263960	0
+	"	3	0
+	^	6	14
+	.	6	13
+	+	6	13
+
+> ~/pflix/pflix_pretty.py
+	*	1731262638	0
+	"	21	0
+	^	36	22
+	.	36	21
+	+	46	0
+	+	30	33
+	+	42	22
+	+	42	27
+	+	42	0
+	+	31	13
+	+	42	0
+	+	31	9
+	+	4	14
+	+	42	0
+	+	5	28
+	+	32	25
+	+	33	23
+	+	42	4
+	+	34	47
+	+	42	0
+	+	37	19
+	+	38	45
+	+	39	4
+	+	42	0
+	+	6	10
+	+	41	63
+	+	42	0
+	+	30	11
+	+	1	0
+	+	9	28
+	+	10	25
+	+	28	0
+	+	14	18
+	+	15	37
+	+	16	69
+	+	17	4
+	+	28	0
+	+	18	106
+	+	19	23
+	+	28	0
+	+	20	29
+	+	21	28
+	+	7	10
+	+	41	0
+	+	35	48
+	+	22	8
+	+	23	56
+	+	24	20
+	+	25	48
+	+	26	14
+	+	24	24
+	+	26	14
+	+	27	24
+	+	36	21
+
+> ~/pflix/data/pretty.html
+	*	1731257553	0
+	"	83	68
+
+> ~/pflix/data/pretty.json
+	*	1731257393	0
+	"	1	0
+	^	1	1694
+	.	1	0
+	+	1	1693
+	+	1	0
+
+> ~/genproject/python.sh
+	*	1731256316	0
+	"	1	0
+	^	37	32
+	.	45	37
+	+	7	0
+	+	2	0
+	+	4	9
+	+	12	9
+	+	19	9
+	+	54	0
+	+	67	26
+	+	68	0
+	+	69	8
+	+	51	6
+	+	53	0
+	+	52	0
+	+	53	0
+	+	33	15
+	+	57	0
+	+	48	13
+	+	65	4
+	+	69	1
+	+	40	6
+	+	53	1
+	+	69	35
+	+	53	0
+	+	49	26
+	+	5	8
+	+	13	0
+	+	20	0
+	+	49	15
+	+	24	0
+	+	25	60
+	+	48	48
+	+	41	5
+	+	35	20
+	+	40	0
+	+	36	0
+	+	38	0
+	+	37	31
+	+	46	0
+	+	45	37
+
+> ~/pflix/tailwind.config.js
+	*	1731256072	0
+	"	3	1
+	^	3	2
+	.	3	1
+	+	3	1
+
+> ~/pflix/pflix-api.py
+	*	1731255979	0
+	"	17	0
+	.	18	0
+	+	18	0
+
+> ~/nicesite/src/pages/Dailies.tsx
+	*	1731252079	0
+	"	170	27
+	^	170	28
+	.	170	27
+	+	171	33
+	+	170	27
+
+> ~/nicesite/src/pages/Reactions.tsx
+	*	1731252037	0
+	"	1	0
+	.	2	0
+	+	322	60
+	+	306	34
+	+	327	54
+	+	321	132
+	+	321	31
+	+	327	0
+	+	160	124
+	+	171	124
+	+	178	124
+	+	178	0
+	+	178	55
+	+	160	0
+	+	160	193
+	+	171	193
+	+	178	193
+	+	24	0
+	+	23	0
+	+	17	7
+	+	18	89
+	+	306	0
+	+	14	9
+	+	172	35
+	+	180	0
+	+	319	32
+	+	322	51
+	+	338	53
+	+	338	151
+	+	338	0
+	+	338	147
+	+	330	72
+	+	319	117
+	+	322	55
+	+	319	0
+	+	319	116
+	+	322	54
+	+	338	0
+	+	319	112
+	+	322	50
+	+	319	114
+	+	322	52
+	+	319	114
+	+	338	0
+	+	346	89
+	+	346	0
+	+	345	90
+	+	348	81
+	+	348	0
+	+	320	16
+	+	338	54
+	+	319	112
+	+	322	50
+	+	345	88
+	+	319	0
+	+	319	112
+	+	322	50
+	+	345	88
+	+	319	0
+	+	319	113
+	+	322	51
+	+	345	89
+	+	319	0
+	+	325	157
+	+	319	117
+	+	322	139
+	+	322	0
+	+	323	63
+	+	319	0
+	+	323	63
+	+	322	125
+	+	323	61
+	+	322	148
+	+	322	0
+	+	320	0
+	+	319	0
+	+	319	96
+	+	322	0
+	+	346	0
+	+	325	27
+	+	325	0
+	+	344	0
+	+	319	78
+	+	320	88
+	+	325	88
+	+	319	0
+	+	319	130
+	+	322	124
+	+	2	0
+	a	178	193
+	b	178	194
+
+> ~/nicesite/.git/COMMIT_EDITMSG
+	*	1731248191	0
+	"	1	0
+
+> ~/llm/commit-message-gemini.py
+	*	1731247763	0
+	"	28	55
+	^	34	7
+	.	28	55
+	+	5	9
+	+	18	13
+	+	19	21
+	+	18	19
+	+	28	23
+	+	29	25
+	+	12	8
+	+	13	25
+	+	14	21
+	+	19	0
+	+	18	6
+	+	28	10
+	+	29	0
+	+	31	10
+	+	34	6
+	+	28	55
+
+> ~/.vim/commit-message.txt
+	*	1731247645	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/.vim/_viminfo_linux
+	*	1731247590	0
+	"	16598	45
+	^	14398	34
+
+> ~/llm/gemini.py
+	*	1731247328	0
+	"	1	0
+	^	27	19
+	.	25	0
+	+	2	46
+	+	2	20
+	+	2	42
+	+	2	0
+	+	40	20
+	+	32	30
+	+	5	0
+	+	32	17
+	+	32	0
+	+	32	17
+	+	32	0
+	+	3	0
+	+	32	0
+	+	1	63
+	+	40	0
+	+	33	18
+	+	8	16
+	+	9	9
+	+	33	1
+	+	9	18
+	+	2	0
+	+	10	0
+	+	11	0
+	+	10	21
+	+	11	5
+	+	12	0
+	+	11	20
+	+	12	0
+	+	14	27
+	+	16	21
+	+	28	5
+	+	29	66
+	+	30	10
+	+	6	35
+	+	7	68
+	+	14	31
+	+	16	25
+	+	29	69
+	+	11	0
+	+	4	0
+	+	10	0
+	+	33	0
+	+	40	0
+	+	33	1
+	+	9	1
+	+	28	0
+	+	28	54
+	+	13	50
+	+	15	13
+	+	28	70
+	+	15	8
+	+	28	0
+	+	21	15
+	+	28	0
+	+	21	0
+	+	23	0
+	+	20	28
+	+	22	12
+	+	23	0
+	+	25	0
+
+> ~/llm/secrets.env
+	*	1731241176	0
+	"	1	0
+	^	1	22
+	.	1	21
+	+	1	21
+
+> ~/bash/python-direnv.bash
+	*	1731240943	0
+	"	4	0
+	^	4	19
+	.	4	0
+	+	5	8
+	+	4	0
+	+	2	25
+	+	5	10
+	+	2	1
+	+	1	1
+	+	4	18
+	+	2	0
+	+	4	0
+
+> ~/llm/.envrc
+	*	1731240194	0
+	"	4	17
+	^	4	18
+	.	4	17
+	+	4	17
+
+> ~/llm/llm_commit.py
+	*	1731239897	0
+	"	11	25
+	^	11	26
+	.	11	25
+	+	18	0
+	+	4	9
+	+	11	22
+	+	8	0
+	+	7	33
+	+	10	0
+	+	11	5
+	+	10	48
+	+	11	26
+	+	12	0
+	+	9	24
+	+	11	25
+
+> ~/llm/.direnv/python-3.10.12/lib/python3.10/site-packages/llm/models.py
+	*	1731239770	0
+	"	397	8
+
+> ~/nicesite/diff.txt
+	*	1731236744	0
+	"	1	0
 
 > ~/hateoas/static/downloads/chapters/2277151094.json
 	*	1730749792	0
@@ -17508,113 +22893,6 @@ $
 	*	1730749380	0
 	"	458	76
 
-> ~/hateoas/download_chat.py
-	*	1730749307	0
-	"	1	0
-	^	74	63
-	.	74	0
-	+	169	54
-	+	169	0
-	+	169	38
-	+	84	11
-	+	169	15
-	+	169	4
-	+	169	32
-	+	169	58
-	+	178	56
-	+	179	0
-	+	181	0
-	+	181	4
-	+	182	27
-	+	169	0
-	+	5	0
-	+	151	0
-	+	155	32
-	+	169	0
-	+	164	0
-	+	166	0
-	+	168	0
-	+	165	0
-	+	169	0
-	+	170	0
-	+	203	0
-	+	218	0
-	+	198	0
-	+	197	17
-	+	205	0
-	+	203	4
-	+	155	0
-	+	195	17
-	+	197	0
-	+	194	0
-	+	203	0
-	+	205	13
-	+	217	0
-	+	177	0
-	+	197	0
-	+	177	0
-	+	181	0
-	+	179	0
-	+	181	19
-	+	187	13
-	+	188	45
-	+	196	0
-	+	181	0
-	+	196	0
-	+	183	0
-	+	32	0
-	+	28	66
-	+	29	66
-	+	30	39
-	+	31	53
-	+	32	5
-	+	32	0
-	+	147	20
-	+	6	0
-	+	147	29
-	+	150	41
-	+	146	0
-	+	135	0
-	+	146	0
-	+	126	0
-	+	146	0
-	+	132	0
-	+	123	16
-	+	124	41
-	+	127	15
-	+	128	27
-	+	133	29
-	+	134	0
-	+	133	17
-	+	146	24
-	+	134	0
-	+	145	0
-	+	87	0
-	+	77	49
-	+	3	0
-	+	78	41
-	+	178	63
-	+	216	0
-	+	207	35
-	+	208	81
-	+	210	56
-	+	214	12
-	+	215	0
-	+	209	7
-	+	210	0
-	+	211	26
-	+	212	8
-	+	220	0
-	+	221	26
-	+	220	5
-	+	26	0
-	+	25	4
-	+	25	0
-	+	69	0
-	+	9	0
-	+	74	0
-	a	181	16
-
 > ~/hateoas/static/downloads/offsets/2277151094.json
 	*	1730749258	0
 	"	32	4
@@ -17625,49 +22903,6 @@ $
 	^	47	2
 	.	47	1
 	+	47	1
-
-> ~/hateoas/worker_single.py
-	*	1730749030	0
-	"	25	4
-	^	14	12
-	.	46	0
-	+	9	26
-	+	25	66
-	+	26	87
-	+	26	0
-	+	25	1
-	+	11	67
-	+	9	35
-	+	29	0
-	+	36	40
-	+	5	0
-	+	43	28
-	+	48	0
-	+	43	29
-	+	48	0
-	+	24	0
-	+	45	21
-	+	48	0
-	+	36	0
-	+	15	0
-	+	17	0
-	+	21	0
-	+	20	0
-	+	21	0
-	+	16	31
-	+	17	33
-	+	21	0
-	+	45	0
-	+	44	128
-	+	49	0
-	+	14	11
-	+	25	0
-	+	43	0
-	+	46	0
-
-> ~/hateoas/worker_create_graph_payload.py
-	*	1730749019	0
-	"	57	4
 
 > /tmp/crontab.i2dsmX/crontab
 	*	1730745156	0
@@ -17777,97 +23012,6 @@ $
 	*	1730743155	0
 	"	33569	0
 
-> ~/hateoas/video_stats.py
-	*	1730743071	0
-	"	86	4
-	.	86	0
-	+	95	0
-	+	2	0
-	+	32	0
-	+	95	0
-	+	13	7
-	+	9	52
-	+	13	57
-	+	14	32
-	+	15	17
-	+	2	0
-	+	33	24
-	+	13	80
-	+	1	0
-	+	2	0
-	+	95	0
-	+	88	0
-	+	17	0
-	+	19	0
-	+	20	0
-	+	31	0
-	+	64	7
-	+	61	0
-	+	64	0
-	+	64	27
-	+	64	0
-	+	34	0
-	+	33	0
-	+	64	0
-	+	64	36
-	+	64	0
-	+	64	14
-	+	64	8
-	+	64	15
-	+	64	0
-	+	66	44
-	+	68	24
-	+	69	4
-	+	70	15
-	+	72	0
-	+	70	21
-	+	72	0
-	+	71	50
-	+	72	34
-	+	49	23
-	+	77	0
-	+	77	13
-	+	77	0
-	+	78	0
-	+	77	0
-	+	75	4
-	+	77	0
-	+	9	0
-	+	33	0
-	+	10	0
-	+	70	0
-	+	72	0
-	+	89	26
-	+	90	18
-	+	85	0
-	+	86	0
-	+	68	0
-	+	85	0
-	+	68	17
-	+	68	0
-	+	67	4
-	+	69	60
-	+	68	68
-	+	69	0
-	+	67	0
-	+	69	0
-	+	69	15
-	+	62	0
-	+	66	54
-	+	69	23
-	+	68	26
-	+	66	14
-	+	68	0
-	+	66	0
-	+	65	22
-	+	66	0
-	+	63	0
-	+	65	36
-	+	69	0
-	+	86	0
-	+	85	0
-	+	86	0
-
 > ~/hateoas/tmp-psutil.py
 	*	1730742551	0
 	"	19	0
@@ -17954,37 +23098,6 @@ $
 	*	1730738440	0
 	"	1	0
 
-> ~/hateoas/worker_db_utils.py
-	*	1730738434	0
-	"	51	0
-	.	52	0
-	+	8	0
-	+	5	0
-	+	3	0
-	+	4	0
-	+	2	0
-	+	1	0
-	+	27	0
-	+	11	90
-	+	29	4
-	+	30	16
-	+	11	138
-	+	26	119
-	+	6	43
-	+	5	43
-	+	36	14
-	+	37	12
-	+	38	11
-	+	41	14
-	+	42	12
-	+	43	20
-	+	48	14
-	+	49	12
-	+	50	11
-	+	38	0
-	+	38	143
-	+	52	0
-
 > ~/hateoas/tmp-idle-process.py
 	*	1730735406	0
 	"	8	0
@@ -18024,147 +23137,6 @@ $
 > ~/hateoas/.direnv/python-3.10.12/lib/python3.10/site-packages/psutil/_pslinux.py
 	*	1730735019	0
 	"	133	0
-
-> ~/hateoas/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/reltools.py
-	*	1730730978	0
-	"	57	4
-
-> ~/hateoas/worker_utils.py
-	*	1730730935	0
-	"	105	0
-	^	74	47
-	.	74	46
-	+	59	61
-	+	35	45
-	+	12	29
-	+	23	73
-	+	3	8
-	+	3	31
-	+	23	0
-	+	20	7
-	+	3	0
-	+	1	0
-	+	20	8
-	+	21	38
-	+	22	64
-	+	23	49
-	+	3	0
-	+	20	0
-	+	2	0
-	+	13	26
-	+	20	0
-	+	11	0
-	+	3	0
-	+	14	3
-	+	2	26
-	+	23	51
-	+	16	32
-	+	11	7
-	+	11	14
-	+	11	0
-	+	11	47
-	+	11	9
-	+	11	18
-	+	11	0
-	+	11	14
-	+	11	41
-	+	11	24
-	+	11	0
-	+	11	79
-	+	11	16
-	+	11	21
-	+	11	0
-	+	19	0
-	+	27	19
-	+	16	27
-	+	26	0
-	+	16	10
-	+	18	65
-	+	19	0
-	+	18	46
-	+	19	18
-	+	18	0
-	+	16	27
-	+	16	38
-	+	18	14
-	+	19	20
-	+	17	8
-	+	19	0
-	+	15	0
-	+	26	0
-	+	22	44
-	+	27	0
-	+	11	0
-	+	38	52
-	+	50	0
-	+	63	0
-	+	16	0
-	+	5	20
-	+	6	4
-	+	63	18
-	+	16	0
-	+	63	1
-	+	62	25
-	+	63	63
-	+	67	0
-	+	70	0
-	+	89	0
-	+	101	0
-	+	91	43
-	+	91	51
-	+	2	0
-	+	91	0
-	+	8	0
-	+	10	0
-	+	9	0
-	+	10	0
-	+	8	0
-	+	75	0
-	+	102	0
-	+	102	55
-	+	102	41
-	+	102	0
-	+	74	46
-
-> ~/hateoas/jsonfile.py
-	*	1730730929	0
-	"	7	4
-	.	25	0
-	+	6	0
-	+	19	0
-	+	2	8
-	+	15	10
-	+	19	42
-	+	19	20
-	+	19	0
-	+	17	12
-	+	19	0
-	+	14	104
-	+	7	0
-	+	3	9
-	+	19	0
-	+	4	0
-	+	23	19
-	+	24	14
-	+	4	0
-	+	10	25
-	+	11	27
-	+	12	39
-	+	13	6
-	+	10	0
-	+	9	18
-	+	10	0
-	+	13	0
-	+	10	0
-	+	13	0
-	+	10	0
-	+	11	30
-	+	5	35
-	+	7	0
-	+	25	10
-	+	25	0
-	+	25	34
-	+	25	0
 
 > ~/hateoas/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/dbutils.py
 	*	1730730926	0
@@ -18471,108 +23443,6 @@ $
 	+	131	8
 	+	133	11
 	+	134	0
-
-> ~/hateoas/worker_chat_to_offset.py
-	*	1730727930	0
-	"	10	0
-	.	35	0
-	+	2	60
-	+	2	139
-	+	2	179
-	+	2	0
-	+	2	94
-	+	2	0
-	+	2	68
-	+	2	105
-	+	2	72
-	+	2	0
-	+	2	116
-	+	2	0
-	+	2	57
-	+	2	100
-	+	2	0
-	+	2	74
-	+	2	0
-	+	2	21
-	+	2	0
-	+	2	17
-	+	2	0
-	+	2	43
-	+	2	65
-	+	2	0
-	+	2	24
-	+	2	40
-	+	2	101
-	+	2	0
-	+	2	29
-	+	2	0
-	+	2	37
-	+	2	34
-	+	2	29
-	+	2	0
-	+	2	37
-	+	2	33
-	+	2	37
-	+	2	0
-	+	2	31
-	+	2	0
-	+	2	28
-	+	2	10
-	+	2	0
-	+	2	211
-	+	2	64
-	+	2	213
-	+	2	64
-	+	2	97
-	+	2	109
-	+	2	28
-	+	2	26
-	+	2	0
-	+	2	57
-	+	2	8
-	+	37	9
-	+	34	7
-	+	2	0
-	+	4	38
-	+	33	0
-	+	1	28
-	+	9	18
-	+	7	38
-	+	11	4
-	+	13	50
-	+	5	0
-	+	14	158
-	+	5	0
-	+	33	0
-	+	17	14
-	+	17	0
-	+	15	7
-	+	17	0
-	+	33	0
-	+	20	28
-	+	3	0
-	+	1	0
-	+	26	8
-	+	1	0
-	+	26	70
-	+	1	19
-	+	26	21
-	+	33	0
-	+	33	45
-	+	30	11
-	+	22	7
-	+	23	0
-	+	27	26
-	+	28	56
-	+	10	17
-	+	20	33
-	+	1	0
-	+	21	18
-	+	33	0
-	+	34	0
-	+	33	0
-	+	19	0
-	+	35	0
 
 > ~/hateoas/handle_sqlite_error.py
 	*	1730727188	0
@@ -19345,18 +24215,6 @@ $
 	a	1	9
 	b	1	9
 
-> ~/tooling/python-third-party-libs-to-grok.txt
-	*	1730623815	0
-	"	1	0
-	^	4	2
-	.	4	1
-	+	2	64
-	+	1	0
-	+	3	22
-	+	4	8
-	+	5	9
-	+	4	1
-
 > ~/.vim/plugin/tmux.vim
 	*	1730623740	0
 	"	1	0
@@ -19374,276 +24232,6 @@ $
 	+	1	0
 	+	8	0
 	+	1	0
-
-> ~/hateoas/rich_markup.py
-	*	1730623234	0
-	"	2	0
-	^	2	0
-	.	2	0
-	+	6	0
-	+	5	7
-	+	3	10
-	+	5	31
-	+	14	5
-	+	22	50
-	+	22	0
-	+	20	18
-	+	22	25
-	+	4	0
-	+	16	37
-	+	17	41
-	+	18	75
-	+	19	8
-	+	20	25
-	+	18	45
-	+	3	0
-	+	2	0
-
-> ~/hateoas/rich_table.py
-	*	1730622797	0
-	"	82	28
-	^	82	29
-	.	82	28
-	+	59	53
-	+	6	66
-	+	59	59
-	+	6	81
-	+	59	113
-	+	7	0
-	+	6	1
-	+	7	67
-	+	37	29
-	+	37	32
-	+	38	33
-	+	37	51
-	+	38	51
-	+	56	0
-	+	37	0
-	+	39	5
-	+	38	57
-	+	39	12
-	+	40	65
-	+	36	0
-	+	7	0
-	+	56	40
-	+	56	9
-	+	56	0
-	+	41	20
-	+	59	32
-	+	56	0
-	+	59	22
-	+	43	27
-	+	44	27
-	+	59	30
-	+	42	36
-	+	9	0
-	+	34	0
-	+	8	22
-	+	44	0
-	+	4	31
-	+	46	26
-	+	56	33
-	+	56	0
-	+	50	1
-	+	46	0
-	+	50	0
-	+	55	0
-	+	54	53
-	+	55	0
-	+	53	3
-	+	50	5
-	+	54	0
-	+	53	0
-	+	51	0
-	+	87	4
-	+	86	4
-	+	87	36
-	+	59	39
-	+	82	28
-
-> ~/hateoas/viewjobs.py
-	*	1730622786	0
-	"	72	46
-	^	72	57
-	.	72	46
-	+	1	0
-	+	13	1
-	+	14	56
-	+	15	0
-	+	20	41
-	+	12	0
-	+	16	14
-	+	20	0
-	+	36	18
-	+	39	0
-	+	37	29
-	+	38	8
-	+	39	0
-	+	37	29
-	+	69	15
-	+	69	0
-	+	69	8
-	+	69	0
-	+	69	59
-	+	69	36
-	+	69	12
-	+	69	49
-	+	69	0
-	+	69	35
-	+	69	12
-	+	69	26
-	+	47	41
-	+	54	4
-	+	49	8
-	+	53	8
-	+	37	20
-	+	44	20
-	+	53	22
-	+	44	0
-	+	47	8
-	+	48	8
-	+	47	111
-	+	47	55
-	+	48	0
-	+	47	12
-	+	48	0
-	+	47	0
-	+	47	85
-	+	47	0
-	+	44	79
-	+	45	58
-	+	47	0
-	+	44	0
-	+	37	27
-	+	53	16
-	+	37	16
-	+	40	0
-	+	46	42
-	+	49	0
-	+	46	100
-	+	69	107
-	+	69	0
-	+	69	30
-	+	71	0
-	+	70	0
-	+	64	0
-	+	68	19
-	+	66	12
-	+	68	24
-	+	67	47
-	+	66	63
-	+	67	30
-	+	68	0
-	+	61	15
-	+	69	40
-	+	61	0
-	+	72	46
-
-> ~/hateoas/worker.py
-	*	1730622741	0
-	"	68	0
-	^	29	5
-	.	28	0
-	+	61	0
-	+	61	62
-	+	72	0
-	+	63	38
-	+	19	52
-	+	59	0
-	+	38	13
-	+	52	14
-	+	53	52
-	+	70	14
-	+	71	5
-	+	56	34
-	+	64	109
-	+	71	4
-	+	70	4
-	+	56	85
-	+	64	20
-	+	67	10
-	+	24	58
-	+	24	49
-	+	65	44
-	+	66	110
-	+	51	0
-	+	42	55
-	+	43	8
-	+	49	40
-	+	50	108
-	+	43	31
-	+	50	25
-	+	53	31
-	+	56	25
-	+	61	31
-	+	64	25
-	+	66	25
-	+	43	0
-	+	50	32
-	+	43	38
-	+	56	32
-	+	61	38
-	+	64	32
-	+	66	32
-	+	6	20
-	+	7	20
-	+	72	88
-	+	73	4
-	+	75	114
-	+	75	0
-	+	41	0
-	+	45	0
-	+	46	47
-	+	47	38
-	+	53	38
-	+	43	78
-	+	47	80
-	+	50	72
-	+	53	78
-	+	56	72
-	+	61	77
-	+	64	74
-	+	66	74
-	+	75	74
-	+	8	18
-	+	3	0
-	+	4	16
-	+	9	22
-	+	75	0
-	+	1	0
-	+	31	0
-	+	1	0
-	+	33	0
-	+	32	0
-	+	20	73
-	+	24	45
-	+	21	73
-	+	24	73
-	+	12	22
-	+	13	17
-	+	15	27
-	+	19	27
-	+	19	5
-	+	14	16
-	+	15	26
-	+	19	0
-	+	21	63
-	+	24	11
-	+	20	5
-	+	21	51
-	+	22	34
-	+	19	0
-	+	17	27
-	+	23	50
-	+	17	27
-	+	18	22
-	+	19	0
-	+	16	12
-	+	24	12
-	+	24	19
-	+	24	12
-	+	25	8
-	+	28	0
 
 > ~/hateoas/.direnv/python-3.10.12/lib/python3.10/site-packages/rich/table.py
 	*	1730622676	0
@@ -19751,94 +24339,6 @@ $
 	.	2	0
 	+	2	0
 
-> ~/.vim/vimrc
-	*	1730539449	0
-	"	90	5
-	^	90	2
-	.	90	0
-	+	1	41
-	+	1	44
-	+	1	40
-	+	1	28
-	+	1	0
-	+	1	11
-	+	1	18
-	+	1	43
-	+	1	64
-	+	1	54
-	+	1	0
-	+	1	31
-	+	1	0
-	+	1	6
-	+	1	0
-	+	1	1
-	+	1	0
-	+	1	80
-	+	1	75
-	+	1	0
-	+	1	52
-	+	1	41
-	+	1	0
-	+	1	26
-	+	1	0
-	+	1	22
-	+	1	25
-	+	1	0
-	+	1	57
-	+	1	59
-	+	1	55
-	+	1	0
-	+	1	25
-	+	1	1
-	+	1	0
-	+	1	24
-	+	1	0
-	+	1	12
-	+	1	0
-	+	1	49
-	+	1	0
-	+	1	13
-	+	1	0
-	+	1	16
-	+	1	0
-	+	1	25
-	+	1	3
-	+	1	5
-	+	1	16
-	+	1	0
-	+	1	16
-	+	1	0
-	+	1	5
-	+	1	3
-	+	1	0
-	+	1	4
-	+	1	0
-	+	1	40
-	+	1	36
-	+	1	0
-	+	1	26
-	+	1	9
-	+	1	0
-	+	1	31
-	+	1	4
-	+	1	30
-	+	1	4
-	+	1	0
-	+	1	5
-	+	1	8
-	+	1	29
-	+	1	33
-	+	1	1
-	+	1	21
-	+	1	20
-	+	1	1
-	+	1	0
-	+	120	0
-	+	424	0
-	+	1146	0
-	+	572	5
-	+	90	0
-
 > ~/nicesite/src/pages/Home.tsx
 	*	1730504843	0
 	"	20	35
@@ -19851,112 +24351,6 @@ $
 	^	4	92
 	.	4	91
 	+	4	91
-
-> ~/pyscripts/youtube-text-to-dates.py
-	*	1730504608	0
-	"	143	0
-	.	143	0
-	+	40	0
-	+	39	0
-	+	40	0
-	+	48	27
-	+	49	13
-	+	48	18
-	+	49	59
-	+	51	44
-	+	49	14
-	+	48	12
-	+	50	67
-	+	52	13
-	+	48	12
-	+	53	29
-	+	54	4
-	+	58	22
-	+	69	0
-	+	58	12
-	+	34	0
-	+	36	62
-	+	37	0
-	+	68	22
-	+	69	47
-	+	69	0
-	+	36	96
-	+	68	0
-	+	58	14
-	+	58	8
-	+	69	0
-	+	58	0
-	+	13	0
-	+	17	0
-	+	31	0
-	+	15	29
-	+	16	29
-	+	16	0
-	+	5	0
-	+	16	0
-	+	5	0
-	+	14	0
-	+	68	48
-	+	68	0
-	+	62	0
-	+	67	37
-	+	68	0
-	+	63	12
-	+	64	58
-	+	3	0
-	+	64	81
-	+	67	55
-	+	66	0
-	+	67	17
-	+	66	49
-	+	65	23
-	+	66	34
-	+	65	27
-	+	66	46
-	+	65	34
-	+	66	51
-	+	65	40
-	+	66	56
-	+	25	0
-	+	17	0
-	+	8	0
-	+	171	0
-	+	134	0
-	+	135	0
-	+	125	0
-	+	128	22
-	+	83	27
-	+	173	0
-	+	172	0
-	+	84	26
-	+	128	22
-	+	141	15
-	+	141	0
-	+	109	48
-	+	109	0
-	+	100	0
-	+	129	0
-	+	128	0
-	+	132	17
-	+	45	44
-	+	46	42
-	+	47	20
-	+	107	0
-	+	101	46
-	+	4	10
-	+	144	38
-	+	96	38
-	+	107	26
-	+	104	0
-	+	105	0
-	+	106	0
-	+	107	0
-	+	106	87
-	+	2	0
-	+	113	0
-	+	143	39
-	+	143	0
-	a	133	16
 
 > ~/hateoas/download_chat
 	*	1730414551	0
@@ -19984,98 +24378,6 @@ $
 	"	1	0
 	.	1	0
 	+	1	0
-
-> ~/hateoas/worker_download_chat.py
-	*	1730413404	0
-	"	13	0
-	.	19	0
-	+	9	0
-	+	7	0
-	+	8	0
-	+	16	0
-	+	15	26
-	+	16	0
-	+	21	0
-	+	5	0
-	+	6	0
-	+	2	0
-	+	22	0
-	+	16	0
-	+	14	0
-	+	10	17
-	+	22	0
-	+	20	45
-	+	4	0
-	+	22	11
-	+	19	0
-	+	3	0
-	+	19	0
-
-> ~/hateoas/chat_download_worker.py
-	*	1730413401	0
-	"	12	26
-	^	15	28
-	.	15	0
-	+	52	0
-	+	12	1
-	+	15	0
-	+	12	1
-	+	12	38
-	+	143	51
-	+	13	0
-	+	25	38
-	+	179	35
-	+	180	29
-	+	53	84
-	+	53	58
-	+	53	63
-	+	53	32
-	+	53	22
-	+	53	27
-	+	53	34
-	+	53	26
-	+	56	26
-	+	57	22
-	+	138	0
-	+	140	0
-	+	148	0
-	+	140	0
-	+	142	33
-	+	145	36
-	+	147	44
-	+	143	0
-	+	28	24
-	+	29	37
-	+	32	49
-	+	34	24
-	+	35	37
-	+	37	49
-	+	39	23
-	+	40	37
-	+	43	25
-	+	44	37
-	+	12	0
-	+	171	48
-	+	172	78
-	+	53	38
-	+	76	0
-	+	75	15
-	+	80	0
-	+	83	15
-	+	108	0
-	+	59	0
-	+	108	0
-	+	65	0
-	+	71	0
-	+	53	0
-	+	90	0
-	+	95	53
-	+	93	62
-	+	95	0
-	+	94	0
-	+	137	0
-	+	181	0
-	+	15	0
 
 > ~/nicesite/public/_redirects
 	*	1730226637	0
@@ -20353,14 +24655,6 @@ $
 	+	3	95
 	+	4	0
 
-> ~/nicesite/tailwind.config.js
-	*	1730109552	0
-	"	6	0
-	.	6	0
-	+	4	19
-	+	5	33
-	+	6	0
-
 > ~/.config/worker_chapters.py
 	*	1729892506	0
 	"	1	0
@@ -20517,112 +24811,6 @@ $
 > ~/bash/logs/download_worker-red.log
 	*	1729806967	0
 	"	194016	0
-
-> ~/pyscripts/viewlog.py
-	*	1729806959	0
-	"	93	0
-	^	94	21
-	.	94	20
-	+	270	48
-	+	166	73
-	+	270	0
-	+	271	0
-	+	269	0
-	+	5	0
-	+	266	3
-	+	266	18
-	+	266	0
-	+	4	0
-	+	151	0
-	+	153	0
-	+	162	0
-	+	258	0
-	+	238	0
-	+	242	0
-	+	202	0
-	+	243	0
-	+	227	0
-	+	206	0
-	+	214	0
-	+	202	0
-	+	206	0
-	+	214	0
-	+	209	0
-	+	207	0
-	+	208	0
-	+	206	0
-	+	207	0
-	+	140	0
-	+	170	0
-	+	169	0
-	+	170	0
-	+	140	0
-	+	152	0
-	+	151	0
-	+	156	0
-	+	162	0
-	+	167	0
-	+	170	0
-	+	130	0
-	+	127	40
-	+	131	0
-	+	128	49
-	+	131	0
-	+	133	0
-	+	130	26
-	+	137	30
-	+	137	0
-	+	131	0
-	+	130	0
-	+	137	0
-	+	132	0
-	+	131	26
-	+	132	0
-	+	133	0
-	+	137	0
-	+	135	0
-	+	131	0
-	+	133	0
-	+	134	0
-	+	129	43
-	+	135	56
-	+	134	0
-	+	135	0
-	+	134	0
-	+	135	0
-	+	167	0
-	+	207	0
-	+	269	0
-	+	271	21
-	+	8	23
-	+	9	16
-	+	271	0
-	+	270	15
-	+	99	0
-	+	100	0
-	+	90	0
-	+	89	0
-	+	84	42
-	+	89	0
-	+	98	0
-	+	85	0
-	+	89	0
-	+	85	40
-	+	87	0
-	+	86	0
-	+	87	42
-	+	88	16
-	+	91	0
-	+	84	49
-	+	85	47
-	+	87	50
-	+	88	48
-	+	90	59
-	+	96	0
-	+	95	74
-	+	94	20
-	a	268	13
-	b	102	33
 
 > ~/pyscripts/tmp_parse.py
 	*	1729806683	0
@@ -21071,110 +25259,6 @@ $
 	+	101	5
 	+	98	5
 	+	101	4
-
-> ~/hateoas/download_portionurl.py
-	*	1729796645	0
-	"	39	0
-	^	96	49
-	.	96	48
-	+	84	0
-	+	85	24
-	+	42	5
-	+	44	15
-	+	113	15
-	+	79	33
-	+	79	32
-	+	44	16
-	+	79	0
-	+	79	32
-	+	79	0
-	+	2	0
-	+	79	0
-	+	76	0
-	+	79	29
-	+	79	0
-	+	70	52
-	+	71	0
-	+	70	0
-	+	77	25
-	+	78	37
-	+	70	0
-	+	70	36
-	+	70	4
-	+	79	0
-	+	70	45
-	+	70	0
-	+	70	19
-	+	70	18
-	+	70	31
-	+	70	0
-	+	70	38
-	+	70	0
-	+	70	29
-	+	70	0
-	+	70	32
-	+	70	22
-	+	92	50
-	+	93	69
-	+	95	64
-	+	72	0
-	+	73	0
-	+	74	0
-	+	70	14
-	+	70	46
-	+	70	24
-	+	70	18
-	+	70	11
-	+	70	22
-	+	93	16
-	+	93	14
-	+	43	14
-	+	21	23
-	+	21	6
-	+	21	0
-	+	21	25
-	+	70	39
-	+	70	24
-	+	72	0
-	+	85	0
-	+	76	0
-	+	79	0
-	+	76	0
-	+	79	8
-	+	95	0
-	+	71	0
-	+	112	0
-	+	21	0
-	+	88	48
-	+	88	4
-	+	88	0
-	+	3	0
-	+	93	5
-	+	44	5
-	+	42	4
-	+	113	30
-	+	56	5
-	+	55	4
-	+	113	30
-	+	105	35
-	+	110	18
-	+	111	0
-	+	8	0
-	+	27	0
-	+	91	99
-	+	92	17
-	+	92	0
-	+	93	0
-	+	95	0
-	+	96	0
-	+	70	0
-	+	16	55
-	+	88	0
-	+	21	0
-	+	93	0
-	+	61	0
-	+	60	26
-	+	96	48
 
 > /tmp/crontab.txKwrC/crontab
 	*	1729796529	0
@@ -21879,96 +25963,6 @@ $
 	+	18	30
 	+	19	51
 
-> ~/genproject/sql_checklist.txt
-	*	1729622323	0
-	"	26	4
-	.	27	0
-	+	12	29
-	+	13	29
-	+	13	0
-	+	12	40
-	+	13	0
-	+	4	19
-	+	13	45
-	+	4	0
-	+	27	35
-	+	27	4
-	+	27	82
-	+	27	81
-	+	27	4
-	+	27	0
-	+	27	90
-	+	27	26
-	+	27	24
-	+	27	26
-	+	27	0
-	+	17	8
-	+	27	0
-	+	16	0
-	+	27	0
-	+	21	54
-	+	21	35
-	+	22	53
-	+	23	39
-	+	27	49
-	+	27	0
-	+	21	0
-	+	27	0
-	+	27	55
-	+	27	56
-	+	27	0
-	+	27	49
-	+	27	55
-	+	27	56
-	+	27	0
-	+	21	0
-	+	26	0
-	+	27	69
-	+	27	4
-	+	27	0
-	+	24	0
-	+	27	44
-	+	27	0
-	+	19	0
-	+	27	0
-	+	27	76
-	+	27	0
-	+	18	0
-	+	27	0
-	+	27	3
-	+	27	26
-	+	27	18
-	+	27	35
-	+	27	0
-	+	11	24
-	+	20	26
-	+	10	0
-	+	6	9
-	+	9	21
-	+	10	0
-	+	12	0
-	+	5	0
-	+	6	15
-	+	11	24
-	+	20	19
-	+	2	33
-	+	27	14
-	+	27	4
-	+	27	77
-	+	27	79
-	+	27	4
-	+	27	0
-	+	25	0
-	+	27	0
-	+	14	52
-	+	15	19
-	+	16	0
-	+	17	0
-	+	10	30
-	+	9	4
-	+	10	0
-	+	27	0
-
 > /tmp/crontab.jAFUYj/crontab
 	*	1729590667	0
 	"	40	81
@@ -22647,23 +26641,6 @@ $
 	+	87	24
 	+	63	30
 
-> ~/.vim/templates/template.py
-	*	1729500655	0
-	"	1	23
-	.	1	24
-	+	1	0
-	+	4	12
-	+	1	0
-	+	11	0
-	+	3	103
-	+	4	0
-	+	3	26
-	+	3	27
-	+	3	77
-	+	3	34
-	+	4	0
-	+	1	24
-
 > ~/.config/coc/extensions/node_modules/coc-pyright/node_modules/pyright/dist/typeshed-fallback/stdlib/select.pyi
 	*	1729456825	0
 	"	30	4
@@ -22931,34 +26908,6 @@ $
 	+	20	37
 	+	21	36
 	+	22	0
-
-> ~/python_common/examples/example-colors.py
-	*	1729278923	0
-	"	96	0
-	^	70	83
-	.	70	82
-	+	40	24
-	+	42	0
-	+	14	0
-	+	12	17
-	+	91	16
-	+	71	16
-	+	41	23
-	+	68	0
-	+	13	16
-	+	42	0
-	+	14	0
-	+	8	0
-	+	14	0
-	+	9	0
-	+	42	0
-	+	72	0
-	+	11	0
-	+	7	0
-	+	11	0
-	+	71	0
-	+	11	0
-	+	70	82
 
 > ~/pyscripts/print_waivek_versions.py
 	*	1729278303	0
@@ -24164,111 +28113,6 @@ $
 	*	1729197296	0
 	"	1	0
 
-> ~/python_common/waivek/__init__.py
-	*	1729197150	0
-	"	22	0
-	^	3	77
-	.	23	0
-	+	21	0
-	+	5	0
-	+	20	0
-	+	7	0
-	+	13	0
-	+	5	0
-	+	21	0
-	+	22	0
-	+	4	0
-	+	5	0
-	+	21	1
-	+	9	63
-	+	11	0
-	+	9	59
-	+	23	12
-	+	1	13
-	+	4	0
-	+	18	0
-	+	1	0
-	+	23	0
-	+	3	0
-	+	2	14
-	+	23	21
-	+	23	0
-	+	5	0
-	+	12	0
-	+	21	0
-	+	22	12
-	+	4	0
-	+	5	0
-	+	6	0
-	+	7	0
-	+	9	0
-	+	21	0
-	+	20	0
-	+	18	0
-	+	16	0
-	+	15	0
-	+	14	0
-	+	13	0
-	+	12	0
-	+	5	0
-	+	10	0
-	+	13	0
-	+	19	0
-	+	21	0
-	+	12	0
-	+	13	0
-	+	17	0
-	+	19	0
-	+	20	0
-	+	21	0
-	+	12	0
-	+	13	0
-	+	8	0
-	+	10	0
-	+	23	23
-	+	3	23
-	+	12	1
-	+	13	1
-	+	12	82
-	+	17	0
-	+	19	0
-	+	20	0
-	+	17	0
-	+	20	0
-	+	21	0
-	+	17	0
-	+	19	0
-	+	12	0
-	+	13	0
-	+	10	0
-	+	8	0
-	+	23	8
-	+	2	25
-	+	12	62
-	+	10	1
-	+	8	0
-	+	19	0
-	+	17	0
-	+	12	0
-	+	2	24
-	+	12	0
-	+	17	0
-	+	2	24
-	+	13	0
-	+	9	0
-	+	13	0
-	+	2	24
-	+	3	31
-	+	3	76
-	+	13	0
-	+	8	0
-	+	10	0
-	+	17	0
-	+	8	0
-	+	23	0
-	a	22	12
-	b	9	62
-
 > ~/python_common/waivek/introspection.py
 	*	1729197135	0
 	"	6	73
@@ -24512,19 +28356,6 @@ $
 	+	5	0
 	+	311	0
 	a	310	12
-
-> ~/python_common/waivek/json_decode_error.py
-	*	1729196840	0
-	"	5	4
-	^	7	53
-	.	7	52
-	+	30	0
-	+	198	19
-	+	4	16
-	+	5	0
-	+	3	0
-	+	4	0
-	+	7	52
 
 > ~/python_common/waivek/log.py
 	*	1729196199	0
@@ -25332,17 +29163,6 @@ $
 	+	1	0
 	+	4	0
 
-> ~/hateoas/schema/clips.sql
-	*	1729090395	0
-	"	9	16
-	.	9	17
-	+	1	0
-	+	1	339
-	+	1	0
-	+	1	412
-	+	1	0
-	+	9	17
-
 > ~/hateoas/schema/videos.sql
 	*	1729088631	0
 	"	1	0
@@ -25390,42 +29210,6 @@ $
 	+	6	35
 	+	8	40
 
-> ~/servers/hateoas.config.js
-	*	1729070421	0
-	"	1	0
-	^	5	33
-	.	7	0
-	+	32	0
-	+	33	19
-	+	34	28
-	+	35	48
-	+	37	0
-	+	40	0
-	+	39	5
-	+	32	0
-	+	32	23
-	+	32	11
-	+	32	9
-	+	32	0
-	+	11	0
-	+	10	5
-	+	10	0
-	+	10	8
-	+	3	0
-	+	6	35
-	+	10	0
-	+	10	13
-	+	10	25
-	+	10	65
-	+	10	0
-	+	7	8
-	+	6	0
-	+	4	22
-	+	5	32
-	+	7	0
-	+	8	0
-	+	7	0
-
 > ~/audiosplit/requirements.txt
 	*	1729069864	0
 	"	1	0
@@ -25447,100 +29231,6 @@ $
 > ~/audiosplit/templates/files.html
 	*	1729069396	0
 	"	1	0
-
-> ~/genproject/python-flask-tailwind.sh
-	*	1729069171	0
-	"	1	0
-	^	2	38
-	.	19	0
-	+	17	3
-	+	18	3
-	+	17	1
-	+	20	1
-	+	24	0
-	+	21	94
-	+	6	1
-	+	8	5
-	+	12	5
-	+	17	5
-	+	17	3
-	+	18	3
-	+	21	5
-	+	12	55
-	+	8	19
-	+	9	5
-	+	12	35
-	+	13	3
-	+	14	3
-	+	12	6
-	+	17	6
-	+	17	0
-	+	12	0
-	+	10	1
-	+	8	2
-	+	9	3
-	+	8	1
-	+	9	1
-	+	12	1
-	+	13	1
-	+	14	1
-	+	17	1
-	+	18	1
-	+	24	1
-	+	24	9
-	+	21	31
-	+	24	65
-	+	20	0
-	+	21	1
-	+	16	21
-	+	18	0
-	+	24	0
-	+	21	0
-	+	20	0
-	+	24	0
-	+	16	0
-	+	14	0
-	+	13	0
-	+	12	0
-	+	11	6
-	+	10	0
-	+	9	0
-	+	8	0
-	+	7	17
-	+	6	0
-	+	22	0
-	+	24	1
-	+	24	0
-	+	24	23
-	+	24	5
-	+	22	0
-	+	21	22
-	+	22	19
-	+	23	11
-	+	24	0
-	+	21	0
-	+	21	24
-	+	19	0
-	+	22	0
-	+	15	0
-	+	21	0
-	+	5	0
-	+	2	37
-	+	5	14
-	+	5	0
-	+	24	0
-	+	5	0
-	+	24	0
-	+	5	0
-	+	3	16
-	+	5	0
-	+	4	0
-	+	5	28
-	+	2	3
-	+	2	0
-	+	1	0
-	+	10	0
-	+	19	0
 
 > ~/tooling/saas-ideas.txt
 	*	1729068256	0
@@ -26486,112 +30176,6 @@ $
 	+	8	34
 	+	6	38
 
-> ~/.config/setup.fish
-	*	1728393965	0
-	"	4	25
-	^	4	26
-	.	4	25
-	+	8	0
-	+	8	45
-	+	8	5
-	+	8	0
-	+	8	9
-	+	8	5
-	+	8	0
-	+	8	9
-	+	8	39
-	+	8	9
-	+	8	0
-	+	8	20
-	+	8	19
-	+	8	23
-	+	8	8
-	+	8	23
-	+	8	9
-	+	8	0
-	+	21	1
-	+	8	0
-	+	27	0
-	+	15	0
-	+	15	13
-	+	15	0
-	+	29	21
-	+	29	18
-	+	29	0
-	+	29	42
-	+	29	0
-	+	28	0
-	+	29	0
-	+	8	0
-	+	8	44
-	+	8	0
-	+	8	4
-	+	8	0
-	+	8	7
-	+	8	37
-	+	8	24
-	+	8	7
-	+	8	5
-	+	8	25
-	+	8	13
-	+	8	30
-	+	8	7
-	+	8	0
-	+	8	21
-	+	8	0
-	+	15	0
-	+	15	1
-	+	8	0
-	+	15	0
-	+	15	32
-	+	8	23
-	+	8	0
-	+	8	19
-	+	8	0
-	+	8	26
-	+	8	10
-	+	8	5
-	+	8	0
-	+	8	37
-	+	8	0
-	+	8	22
-	+	8	58
-	+	8	0
-	+	9	30
-	+	15	18
-	+	29	0
-	+	30	0
-	+	31	0
-	+	30	29
-	+	31	11
-	+	33	34
-	+	34	0
-	+	15	0
-	+	26	55
-	+	26	0
-	+	18	82
-	+	19	80
-	+	1	0
-	+	16	26
-	+	1	13
-	+	18	12
-	+	27	0
-	+	26	11
-	+	34	12
-	+	1	0
-	+	18	0
-	+	26	0
-	+	34	0
-	+	13	33
-	+	14	0
-	+	15	0
-	+	12	0
-	+	15	0
-	+	10	0
-	+	15	0
-	+	3	33
-	+	4	25
-
 > ~/.config/setup.bash
 	*	1728393569	0
 	"	19	0
@@ -26927,93 +30511,6 @@ $
 	+	2	0
 	+	1	15
 
-> ~/.config/functions.fish
-	*	1727872985	0
-	"	96	4
-	^	32	52
-	.	52	0
-	+	56	0
-	+	56	46
-	+	56	17
-	+	56	14
-	+	56	0
-	+	56	9
-	+	56	0
-	+	56	39
-	+	56	17
-	+	56	0
-	+	56	63
-	+	56	29
-	+	56	0
-	+	56	29
-	+	56	0
-	+	56	8
-	+	56	28
-	+	56	45
-	+	56	14
-	+	56	0
-	+	78	0
-	+	67	0
-	+	78	0
-	+	66	0
-	+	67	0
-	+	78	0
-	+	79	23
-	+	84	0
-	+	78	0
-	+	66	0
-	+	67	0
-	+	78	0
-	+	84	0
-	+	78	8
-	+	78	0
-	+	78	10
-	+	72	0
-	+	66	0
-	+	58	0
-	+	66	0
-	+	56	0
-	+	57	0
-	+	65	19
-	+	87	4
-	+	88	3
-	+	93	20
-	+	102	0
-	+	90	26
-	+	93	4
-	+	102	0
-	+	94	15
-	+	99	46
-	+	101	0
-	+	99	8
-	+	99	16
-	+	100	25
-	+	100	0
-	+	93	18
-	+	94	4
-	+	93	20
-	+	98	0
-	+	99	4
-	+	100	4
-	+	99	49
-	+	97	4
-	+	99	35
-	+	56	74
-	+	1	29
-	+	4	23
-	+	1	0
-	+	28	0
-	+	27	0
-	+	29	29
-	+	32	0
-	+	4	45
-	+	4	0
-	+	21	27
-	+	51	27
-	+	32	51
-	+	51	27
-	+	52	0
-
 > ~/.config/bindings.inputrc
 	*	1727866123	0
 	"	1	0
@@ -27042,15 +30539,6 @@ $
 	+	12	63
 	+	17	47
 	+	13	0
-
-> ~/bash/todo.txt
-	*	1727861125	0
-	"	2	1
-	^	2	2
-	.	2	2
-	+	2	119
-	+	1	0
-	+	2	2
 
 > ~/.config/tmux/colon_bind.bash
 	*	1727861081	0
@@ -27360,25 +30848,6 @@ $
 	*	1727782574	0
 	"	1	0
 
-> ~/pyscripts/requirements.txt
-	*	1727782049	0
-	"	16	8
-	^	16	9
-	.	16	8
-	+	2	4
-	+	1	5
-	+	4	10
-	+	5	7
-	+	6	5
-	+	7	6
-	+	10	8
-	+	9	0
-	+	8	0
-	+	12	3
-	+	14	23
-	+	14	0
-	+	16	8
-
 > ~/pyscripts/secrets.env
 	*	1727781502	0
 	"	2	8
@@ -27602,27 +31071,6 @@ $
 	+	126	18
 	+	127	0
 
-> ~/bash/todo_vim_fzf_select.bash
-	*	1727581698	0
-	"	5	0
-	.	3	0
-	+	2	0
-	+	2	13
-	+	2	0
-	+	2	9
-	+	2	118
-	+	2	10
-	+	2	119
-	+	2	1
-	+	2	2
-	+	2	0
-	+	2	10
-	+	2	35
-	+	2	0
-	+	2	1
-	+	6	0
-	+	3	0
-
 > ~/bash/tmp-fzf-if-ripgrep.txt
 	*	1727581678	0
 	"	22	9
@@ -27729,59 +31177,6 @@ $
 	+	4	0
 	+	1	20
 	+	1	84
-
-> ~/.config/todo.txt
-	*	1727579440	0
-	"	2	176
-	^	2	177
-	.	2	176
-	+	29	94
-	+	30	0
-	+	23	0
-	+	32	51
-	+	24	107
-	+	23	0
-	+	33	0
-	+	23	9
-	+	28	0
-	+	31	0
-	+	33	0
-	+	23	0
-	+	18	0
-	+	21	15
-	+	20	64
-	+	21	61
-	+	19	9
-	+	24	5
-	+	29	5
-	+	32	0
-	+	17	84
-	+	25	114
-	+	26	52
-	+	25	4
-	+	26	0
-	+	23	19
-	+	28	19
-	+	7	10
-	+	13	0
-	+	9	127
-	+	9	12
-	+	8	6
-	+	9	0
-	+	10	0
-	+	9	0
-	+	12	32
-	+	5	8
-	+	6	0
-	+	5	94
-	+	4	83
-	+	3	18
-	+	4	16
-	+	5	16
-	+	3	113
-	+	2	0
-	+	1	0
-	+	2	176
 
 > ~/.vim/plugin/print-personal-mappings.vim
 	*	1727446668	0
@@ -27943,68 +31338,6 @@ $
 	+	4	0
 	+	1	0
 
-> ~/python_common/waivek/todo.txt
-	*	1727446325	0
-	"	6	2
-	^	1	2
-	.	1	0
-	+	10	121
-	+	10	0
-	+	12	0
-	+	11	17
-	+	11	0
-	+	10	0
-	+	12	0
-	+	11	0
-	+	9	166
-	+	8	64
-	+	7	153
-	+	6	134
-	+	5	14
-	+	7	16
-	+	8	14
-	+	9	16
-	+	10	16
-	+	11	19
-	+	6	16
-	+	5	0
-	+	11	0
-	+	5	31
-	+	5	21
-	+	5	146
-	+	5	96
-	+	5	167
-	+	6	0
-	+	5	0
-	+	7	112
-	+	8	35
-	+	10	50
-	+	10	0
-	+	8	42
-	+	9	319
-	+	9	0
-	+	10	25
-	+	11	63
-	+	7	70
-	+	5	1
-	+	11	0
-	+	5	1
-	+	5	0
-	+	7	126
-	+	10	67
-	+	5	0
-	+	11	0
-	+	5	1
-	+	6	0
-	+	5	0
-	+	4	120
-	+	3	91
-	+	2	88
-	+	1	155
-	+	1	1
-	+	2	0
-	+	1	0
-
 > ~/.config/shell_data/fish_history
 	*	1727445919	0
 	"	10164	7
@@ -28081,14 +31414,6 @@ $
 > ~/hateoas/fd
 	*	1727362326	0
 	"	1	0
-
-> ~/ui-components-css/todo.txt
-	*	1727362278	0
-	"	1	0
-	.	1	0
-	+	1	66
-	+	2	0
-	+	1	0
 
 > ~/sqlite-editor/ui-components-css/static/css-themes/dark-gray-mono.css
 	*	1727362043	0
@@ -28505,18 +31830,6 @@ $
 	+	3	25
 	+	4	14
 
-> ~/.config/github-copilot/apps.json
-	*	1726969208	0
-	"	1	53
-
-> ~/.config/github-copilot/versions.json
-	*	1726969128	0
-	"	1	0
-	^	3	0
-	.	2	25
-	+	1	1
-	+	2	25
-
 > ~/tmp/install-lazygit.bash
 	*	1726968756	0
 	"	1	10
@@ -28699,14 +32012,6 @@ $
 	+	11	0
 	+	8	0
 
-> ~/file.py
-	*	1726356262	0
-	"	9	17
-	^	9	18
-	.	9	17
-	+	1	0
-	+	9	17
-
 > ~/python_codeaction_test/.envrc
 	*	1726356187	0
 	"	2	0
@@ -28745,14 +32050,6 @@ $
 	+	1	0
 	+	9	52
 	+	14	0
-
-> ~/.config/fish/config.fish
-	*	1726262021	0
-	"	3	30
-	.	3	0
-	+	3	30
-	+	1	0
-	+	3	0
 
 > ~/fish/config.fish
 	*	1726262008	0
@@ -29204,35 +32501,6 @@ $
 	*	1725819019	0
 	"	53	4
 
-> ~/prompts/render_prompt.py
-	*	1725818519	0
-	"	1	0
-	^	15	20
-	.	14	30
-	+	1	0
-	+	27	0
-	+	11	0
-	+	7	27
-	+	11	40
-	+	23	26
-	+	11	23
-	+	23	0
-	+	12	24
-	+	16	54
-	+	17	32
-	+	16	54
-	+	8	13
-	+	16	85
-	+	17	48
-	+	23	0
-	+	18	48
-	+	19	13
-	+	20	40
-	+	23	0
-	+	22	18
-	+	23	0
-	+	14	30
-
 > ~/python_common/waivek/invoke_handler.py
 	*	1725818417	0
 	"	6	4
@@ -29271,63 +32539,6 @@ $
 	+	65	25
 	+	65	0
 	+	17	0
-
-> ~/python_common/waivek/test.py
-	*	1725817570	0
-	"	130	0
-	^	764	20
-	.	751	0
-	+	752	11
-	+	753	26
-	+	775	13
-	+	767	15
-	+	775	18
-	+	767	35
-	+	767	0
-	+	749	23
-	+	753	16
-	+	773	29
-	+	775	20
-	+	752	18
-	+	767	20
-	+	752	18
-	+	767	0
-	+	65	4
-	+	66	31
-	+	666	0
-	+	775	5
-	+	774	15
-	+	757	15
-	+	759	0
-	+	765	19
-	+	766	19
-	+	771	19
-	+	772	9
-	+	758	0
-	+	766	0
-	+	765	0
-	+	750	0
-	+	764	19
-	+	745	0
-	+	742	0
-	+	741	0
-	+	5	0
-	+	8	0
-	+	9	0
-	+	10	0
-	+	62	0
-	+	108	0
-	+	151	0
-	+	552	0
-	+	590	0
-	+	591	0
-	+	632	0
-	+	662	0
-	+	663	0
-	+	705	0
-	+	714	0
-	+	715	0
-	+	751	0
 
 > ~/.vim/plugin/run3.vim
 	*	1725816834	0
@@ -29446,47 +32657,9 @@ $
 	+	1	9
 	+	73	17
 
-> ~/prompts/240907.truncate_data_strucuture.txt
-	*	1725804062	0
-	"	7	0
-	^	29	5
-	.	43	0
-	+	35	24
-	+	36	21
-	+	37	19
-	+	37	23
-	+	37	30
-	+	37	0
-	+	39	37
-	+	1	0
-	+	1	10
-	+	1	0
-	+	44	0
-	+	1	0
-	+	44	1
-	+	41	27
-	+	30	0
-	+	28	2
-	+	30	0
-	+	28	0
-	+	6	0
-	+	7	0
-	+	5	20
-	+	29	4
-	+	44	0
-	+	43	0
-
 > ~/python_common/.direnv/python-3.10.12/lib/python3.10/site-packages/rich/text.py
 	*	1725749487	0
 	"	857	0
-
-> /usr/share/vim/vim90/doc/options.txt
-	*	1725691834	0
-	"	3501	6
-
-> ~/prompts/footer-edge-case.txt
-	*	1725691506	0
-	"	2	0
 
 > ~/prompts/preset-swe.txt
 	*	1725691401	0
@@ -29640,10 +32813,6 @@ $
 	+	19	68
 	+	20	28
 	+	21	0
-
-> /usr/share/vim/vim90/doc/builtin.txt
-	*	1725564106	0
-	"	2232	50
 
 > ~/.vim/plugin/hello-world.vim
 	*	1725564066	0
@@ -31589,32 +34758,6 @@ $
 	*	1724980281	0
 	"	29	4
 
-> ~/python_common/.gitignore
-	*	1724978542	0
-	"	24	9
-	^	24	10
-	.	24	9
-	+	18	4
-	+	18	5
-	+	18	4
-	+	18	1
-	+	18	0
-	+	1	0
-	+	22	9
-	+	18	13
-	+	15	5
-	+	18	0
-	+	15	0
-	+	12	0
-	+	8	0
-	+	18	0
-	+	9	0
-	+	18	0
-	+	11	8
-	+	23	0
-	+	21	4
-	+	24	9
-
 > ~/python_common/waivek/get.py
 	*	1724978512	0
 	"	235	30
@@ -31780,20 +34923,6 @@ $
 	+	33	0
 	+	97	0
 
-> ~/python_common/test_package.py
-	*	1724975137	0
-	"	2	0
-	^	2	11
-	.	2	11
-	+	2	0
-	+	3	4
-	+	2	39
-	+	3	0
-	+	2	24
-	+	3	42
-	+	4	0
-	+	2	11
-
 > ~/python_common/waivek/nest/nest.py
 	*	1724974872	0
 	"	1	0
@@ -31871,17 +35000,6 @@ $
 	^	26	0
 	.	25	33
 	+	25	33
-
-> ~/tooling/errors.txt
-	*	1724913341	0
-	"	1	0
-	^	26	190
-	.	26	189
-	+	2	0
-	+	24	0
-	+	25	162
-	+	36	0
-	+	26	189
 
 > ~/hello-go/hello-world.go
 	*	1724701573	0
@@ -33127,10 +36245,6 @@ $
 	+	19	1
 	+	21	0
 
-> ~/.vim/plugged/tabular/doc/Tabular.txt
-	*	1723658905	0
-	"	254	0
-
 > ~/ui-components-css/static/css-themes/dark-gray-mono.css
 	*	1723658123	0
 	"	1	1
@@ -33317,50 +36431,6 @@ $
 	+	28	79
 	+	29	5
 	+	30	0
-
-> ~/genproject/python.sh
-	*	1723556517	0
-	"	37	0
-	^	37	32
-	.	45	37
-	+	7	0
-	+	2	0
-	+	4	9
-	+	12	9
-	+	19	9
-	+	54	0
-	+	67	26
-	+	68	0
-	+	69	8
-	+	51	6
-	+	53	0
-	+	52	0
-	+	53	0
-	+	33	15
-	+	57	0
-	+	48	13
-	+	65	4
-	+	69	1
-	+	40	6
-	+	53	1
-	+	69	35
-	+	53	0
-	+	49	26
-	+	5	8
-	+	13	0
-	+	20	0
-	+	49	15
-	+	24	0
-	+	25	60
-	+	48	48
-	+	41	5
-	+	35	20
-	+	40	0
-	+	36	0
-	+	38	0
-	+	37	31
-	+	46	0
-	+	45	37
 
 > ~/.vim/plugin/inline.vim
 	*	1723556053	0
@@ -35202,112 +38272,6 @@ $
 	*	1722792706	0
 	"	2346	4
 
-> ~/python_common/setup.py
-	*	1722785751	0
-	"	111	0
-	^	103	21
-	.	103	0
-	+	90	4
-	+	51	0
-	+	85	0
-	+	87	0
-	+	72	6
-	+	49	0
-	+	40	0
-	+	41	7
-	+	49	0
-	+	85	0
-	+	51	18
-	+	51	0
-	+	71	9
-	+	50	9
-	+	50	13
-	+	51	12
-	+	52	22
-	+	51	0
-	+	51	19
-	+	52	22
-	+	52	0
-	+	52	21
-	+	52	25
-	+	40	0
-	+	111	0
-	+	50	16
-	+	112	0
-	+	50	0
-	+	111	0
-	+	40	68
-	+	50	0
-	+	51	0
-	+	52	0
-	+	71	0
-	+	17	0
-	+	19	0
-	+	21	18
-	+	13	36
-	+	21	19
-	+	23	9
-	+	26	0
-	+	21	23
-	+	24	39
-	+	25	8
-	+	10	0
-	+	11	19
-	+	11	10
-	+	11	26
-	+	59	0
-	+	87	0
-	+	84	0
-	+	77	8
-	+	80	34
-	+	80	8
-	+	75	26
-	+	78	12
-	+	81	30
-	+	82	23
-	+	83	8
-	+	11	0
-	+	77	48
-	+	80	12
-	+	77	0
-	+	77	25
-	+	112	15
-	+	77	28
-	+	76	46
-	+	77	0
-	+	5	0
-	+	76	0
-	+	77	0
-	+	79	37
-	+	87	0
-	+	54	0
-	+	53	18
-	+	68	8
-	+	40	67
-	+	46	0
-	+	44	63
-	+	43	63
-	+	44	0
-	+	43	5
-	+	45	31
-	+	105	13
-	+	100	20
-	+	65	0
-	+	66	0
-	+	67	32
-	+	66	26
-	+	67	52
-	+	63	74
-	+	112	0
-	+	63	73
-	+	69	28
-	+	69	0
-	+	52	0
-	+	103	36
-	+	103	20
-	+	103	23
-	+	103	0
-
 > ~/.vim/templates/template.gitignore
 	*	1722785425	0
 	"	9	0
@@ -35336,15 +38300,6 @@ $
 	+	13	0
 	+	9	0
 
-> ~/python_common/examples/example-log-1.py
-	*	1722784014	0
-	"	12	28
-	^	12	29
-	.	12	28
-	+	16	19
-	+	8	14
-	+	12	28
-
 > ~/python_common/waivek/data/.gitkeep
 	*	1722782928	0
 	"	1	3
@@ -35356,22 +38311,6 @@ $
 	*	1722782921	0
 	"	1	0
 	^	1	0
-
-> ~/python_common/examples/examplelog2.py
-	*	1722781059	0
-	"	11	4
-	^	8	15
-	.	11	0
-	+	11	14
-	+	8	14
-	+	11	0
-
-> ~/python_common/examples/example-log.py
-	*	1722780734	0
-	"	16	8
-	.	16	0
-	+	19	0
-	+	16	0
 
 > ~/python_common/waivek/print-colors.py
 	*	1722780517	0
@@ -37453,21 +40392,6 @@ $
 	+	9	35
 	+	18	28
 
-> ~/python-types/model_pydantic.py
-	*	1722029658	0
-	"	52	6
-	^	56	0
-	.	11	0
-	+	56	0
-	+	10	0
-	+	9	0
-	+	55	0
-	+	56	0
-	+	5	0
-	+	52	22
-	+	56	0
-	+	11	0
-
 > ~/python-types/parse_attrs.py
 	*	1722014737	0
 	"	1	0
@@ -38065,22 +40989,6 @@ $
 	+	32	6
 	+	24	43
 	+	30	34
-
-> ~/tooling/swe_knowledge.txt
-	*	1721674521	0
-	"	7	74
-	^	7	75
-	.	7	74
-	+	1	83
-	+	1	312
-	+	2	4
-	+	5	77
-	+	1	76
-	+	8	0
-	+	1	0
-	+	1	7
-	+	1	0
-	+	7	74
 
 > ~/bash/filter_atuin_history_by_docker_image_creation.sh
 	*	1721504853	0
@@ -38915,10 +41823,6 @@ $
 	+	1	0
 	+	8	10
 	+	11	13
-
-> /usr/lib/python3.10/json/__init__.py
-	*	1721147617	0
-	"	299	4
 
 > ~/scrape-food-delivery/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/reltools.py
 	*	1721147612	0
@@ -40530,50 +43434,6 @@ $
 	+	1	21
 	+	1	0
 
-> ~/ui-components-css/static/css-resets/reset.css
-	*	1719317128	0
-	"	1	0
-	^	1	79
-	.	1	78
-	+	10	38
-	+	2	0
-	+	3	48
-	+	4	0
-	+	4	14
-	+	5	0
-	+	4	27
-	+	4	0
-	+	4	16
-	+	3	44
-	+	3	0
-	+	3	50
-	+	4	0
-	+	6	6
-	+	5	25
-	+	6	6
-	+	6	43
-	+	7	0
-	+	5	0
-	+	4	16
-	+	3	50
-	+	5	0
-	+	7	50
-	+	7	67
-	+	8	0
-	+	7	0
-	+	8	33
-	+	8	48
-	+	9	27
-	+	9	54
-	+	10	16
-	+	10	36
-	+	13	0
-	+	3	72
-	+	13	0
-	+	11	0
-	+	12	13
-	+	1	78
-
 > ~/pyscripts/uuid7-experiment.py
 	*	1719316271	0
 	"	25	0
@@ -40647,10 +43507,6 @@ $
 	+	53	0
 	+	52	0
 	+	28	18
-
-> ~/.vim/.git/COMMIT_EDITMSG
-	*	1719217906	0
-	"	1	0
 
 > ~/.vim/performance/verbose-file.txt
 	*	1719009732	0
@@ -41097,111 +43953,6 @@ $
 	+	143	10
 	+	143	0
 
-> ~/ui-components-css/templates/components/icon-row.html
-	*	1718755682	0
-	"	5	0
-	.	190	0
-	+	14	0
-	+	322	4
-	+	325	5
-	+	323	0
-	+	322	4
-	+	323	0
-	+	323	8
-	+	322	4
-	+	323	0
-	+	325	0
-	+	324	0
-	+	322	30
-	+	322	0
-	+	322	71
-	+	322	0
-	+	315	0
-	+	324	0
-	+	14	0
-	+	5	0
-	+	5	23
-	+	14	0
-	+	5	0
-	+	14	0
-	+	5	32
-	+	14	0
-	+	11	0
-	+	13	66
-	+	17	0
-	+	16	48
-	+	154	30
-	+	156	0
-	+	155	28
-	+	156	0
-	+	154	24
-	+	16	25
-	+	154	0
-	+	16	32
-	+	14	0
-	+	12	0
-	+	13	60
-	+	16	3
-	+	14	33
-	+	10	0
-	+	6	90
-	+	252	63
-	+	142	9
-	+	143	34
-	+	148	0
-	+	144	32
-	+	145	32
-	+	146	21
-	+	147	30
-	+	148	0
-	+	142	0
-	+	135	0
-	+	14	0
-	+	315	0
-	+	315	35
-	+	315	61
-	+	315	44
-	+	315	4
-	+	315	117
-	+	315	0
-	+	315	142
-	+	315	22
-	+	315	160
-	+	315	21
-	+	199	0
-	+	190	14
-	+	199	28
-	+	190	14
-	+	9	209
-	+	199	0
-	+	315	59
-	+	315	156
-	+	315	96
-	+	315	0
-	+	313	0
-	+	310	46
-	+	311	20
-	+	258	0
-	+	256	0
-	+	258	29
-	+	261	0
-	+	262	72
-	+	260	23
-	+	260	144
-	+	191	6
-	+	196	0
-	+	191	0
-	+	197	0
-	+	198	19
-	+	257	13
-	+	261	26
-	+	260	120
-	+	192	22
-	+	193	24
-	+	195	21
-	+	191	23
-	+	190	0
-
 > ~/.vim/plugin/flask-stylesheet.vim
 	*	1718755485	0
 	"	49	0
@@ -41491,45 +44242,6 @@ $
 	+	1	0
 	+	9	0
 
-> ~/ui-components-css/templates/base.html
-	*	1718570655	0
-	"	6	0
-	^	2	22
-	.	6	0
-	+	2	6
-	+	3	0
-	+	18	0
-	+	4	26
-	+	6	0
-	+	5	0
-	+	18	0
-	+	7	27
-	+	8	18
-	+	9	5
-	+	11	5
-	+	18	3
-	+	3	0
-	+	15	9
-	+	17	11
-	+	18	0
-	+	8	21
-	+	10	20
-	+	12	20
-	+	16	20
-	+	18	5
-	+	2	22
-	+	6	64
-	+	2	5
-	+	6	0
-	+	6	14
-	+	6	0
-	+	2	7
-	+	6	0
-	+	2	22
-	+	8	0
-	+	2	16
-	+	6	0
-
 > ~/hateoas/templates/elements.html
 	*	1718570324	0
 	"	1	12
@@ -41572,12 +44284,6 @@ $
 	+	10	24
 	+	1	0
 	+	10	0
-
-> ~/ui-components-css/static/fonts/Inter/Inter_Web/inter.css
-	*	1718485487	0
-	"	1	0
-	.	158	0
-	+	158	0
 
 > ~/ui-components-css/static/fonts/inter.css
 	*	1718484103	0
@@ -41735,197 +44441,6 @@ $
 	.	50	0
 	+	50	0
 
-> ~/ui-components-css/previous-attempts.txt
-	*	1718434338	0
-	"	1	0
-	^	1	29
-	.	2	0
-	+	15	35
-	+	22	47
-	+	22	44
-	+	10	41
-	+	11	0
-	+	10	0
-	+	11	0
-	+	22	0
-	+	11	0
-	+	16	0
-	+	22	0
-	+	11	0
-	+	22	0
-	+	18	24
-	+	11	0
-	+	9	0
-	+	7	0
-	+	8	21
-	+	5	49
-	+	4	15
-	+	25	31
-	+	26	32
-	+	3	0
-	+	1	12
-	+	11	0
-	+	23	32
-	+	24	29
-	+	22	0
-	+	15	0
-	+	13	0
-	+	12	8
-	+	22	0
-	+	20	0
-	+	22	0
-	+	21	13
-	+	11	0
-	+	20	0
-	+	27	22
-	+	28	42
-	+	33	0
-	+	32	0
-	+	33	0
-	+	33	8
-	+	29	0
-	+	33	0
-	+	30	5
-	+	31	5
-	+	30	0
-	+	37	0
-	+	36	0
-	+	37	0
-	+	34	11
-	+	35	6
-	+	36	6
-	+	35	0
-	+	34	15
-	+	12	14
-	+	19	4
-	+	37	12
-	+	5	0
-	+	6	0
-	+	13	0
-	+	22	0
-	+	35	0
-	+	37	0
-	+	17	0
-	+	13	0
-	+	14	0
-	+	15	0
-	+	16	0
-	+	17	0
-	+	13	0
-	+	14	0
-	+	16	0
-	+	15	0
-	+	19	1
-	+	13	0
-	+	8	0
-	+	16	0
-	+	26	0
-	+	19	0
-	+	13	0
-	+	19	0
-	+	12	0
-	+	1	0
-	+	2	0
-
-> ~/ui-components-css/usage.md
-	*	1718409762	0
-	"	1	0
-	^	2	29
-	.	2	28
-	+	17	82
-	+	18	52
-	+	7	17
-	+	15	0
-	+	14	7
-	+	11	7
-	+	9	0
-	+	7	17
-	+	19	89
-	+	19	153
-	+	21	0
-	+	20	20
-	+	64	0
-	+	65	37
-	+	64	33
-	+	67	0
-	+	39	100
-	+	39	0
-	+	64	0
-	+	68	53
-	+	64	45
-	+	65	14
-	+	3	0
-	+	69	4
-	+	69	0
-	+	37	57
-	+	39	0
-	+	37	45
-	+	39	0
-	+	25	89
-	+	26	0
-	+	26	81
-	+	39	1
-	+	37	0
-	+	39	0
-	+	37	10
-	+	37	28
-	+	38	46
-	+	39	0
-	+	1	27
-	+	22	0
-	+	69	0
-	+	16	11
-	+	30	80
-	+	32	77
-	+	1	0
-	+	3	0
-	+	33	90
-	+	34	79
-	+	35	81
-	+	22	0
-	+	22	108
-	+	22	0
-	+	23	0
-	+	23	89
-	+	23	0
-	+	23	70
-	+	23	83
-	+	23	0
-	+	27	0
-	+	31	0
-	+	36	0
-	+	23	0
-	+	47	0
-	+	63	0
-	+	47	0
-	+	41	5
-	+	62	6
-	+	45	17
-	+	43	30
-	+	44	11
-	+	47	0
-	+	40	14
-	+	47	12
-	+	62	10
-	+	47	0
-	+	62	0
-	+	47	0
-	+	48	0
-	+	50	0
-	+	46	29
-	+	52	16
-	+	54	11
-	+	55	4
-	+	56	9
-	+	53	7
-	+	56	48
-	+	57	47
-	+	58	47
-	+	59	55
-	+	60	47
-	+	61	8
-	+	2	28
-
 > ~/frontend/ripgrep-padding-html-vue-results.txt
 	*	1718270036	0
 	"	1	0
@@ -41951,18 +44466,6 @@ $
 	+	114	8
 	+	2	0
 
-> ~/ui-components-css/flask-history.py
-	*	1718269816	0
-	"	1	0
-	^	10	8
-	.	10	7
-	+	1	0
-	+	17	0
-	+	12	4
-	+	12	0
-	+	11	0
-	+	10	7
-
 > ~/ui-components-css/static/css-tailwind-outputs/output-1.css
 	*	1718269628	0
 	"	2	1
@@ -41970,13 +44473,6 @@ $
 	.	2	2
 	+	3	0
 	+	2	2
-
-> ~/ui-components-css/static/css-utilities/tailwind-colors.css
-	*	1718216936	0
-	"	287	0
-	^	287	1
-	.	287	0
-	+	287	0
 
 > ~/ui-components-css/templates/components/output.txt
 	*	1718214664	0
@@ -42144,13 +44640,6 @@ $
 > ~/ui-components-css/app.py
 	*	1717912653	0
 	"	1	0
-
-> ~/ui-components-css/requirements.txt
-	*	1717912143	0
-	"	5	12
-	^	5	13
-	.	5	12
-	+	5	12
 
 > ~/ui-components-css/static/css-utilities/reset.css
 	*	1717911378	0
@@ -42917,71 +45406,6 @@ $
 > /usr/lib/python3/dist-packages/pip/_vendor/rich/__init__.py
 	*	1716994912	0
 	"	3	0
-
-> ~/python_common/.github/workflows/python-package.yml
-	*	1716992198	0
-	"	16	8
-	^	26	54
-	.	16	0
-	+	1	23
-	+	28	14
-	+	5	21
-	+	7	21
-	+	8	20
-	+	9	0
-	+	17	0
-	+	17	29
-	+	18	0
-	+	18	26
-	+	20	30
-	+	22	34
-	+	17	30
-	+	27	11
-	+	27	10
-	+	27	12
-	+	27	0
-	+	27	10
-	+	28	10
-	+	27	6
-	+	27	0
-	+	28	4
-	+	27	6
-	+	27	0
-	+	21	0
-	+	27	0
-	+	26	29
-	+	27	10
-	+	26	11
-	+	27	6
-	+	26	11
-	+	26	19
-	+	17	31
-	+	26	0
-	+	27	0
-	+	26	27
-	+	27	8
-	+	28	0
-	+	17	30
-	+	29	22
-	+	17	42
-	+	26	11
-	+	27	10
-	+	17	0
-	+	17	30
-	+	27	27
-	+	27	0
-	+	25	0
-	+	27	0
-	+	14	0
-	+	15	8
-	+	17	8
-	+	18	8
-	+	25	52
-	+	26	53
-	+	18	0
-	+	16	0
-	a	22	34
-	b	22	34
 
 > ~/crk-coupon/.github/workflows/scrapecrk.yml
 	*	1716986467	0
@@ -44829,10 +47253,6 @@ $
 	+	19	28
 	+	19	32
 	+	19	0
-
-> ~/.vim/plugged/copilot.vim/doc/copilot.txt
-	*	1715898239	0
-	"	107	41
 
 > ~/helix-test/helix.py
 	*	1715178765	0
