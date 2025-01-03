@@ -63,7 +63,11 @@ function! s:IsValidProfileFilename(filename)
     return match(a:filename, '^2\d\d\d\d\d\.[a-zA-Z_]\+\.v\d\+\.txt') == 0
 endfunction
 function! s:GetProfileFileDictionaries()
-    let files = split(glob('~/vimfiles/performance/*.txt'), "\n")
+    if has('win32')
+        let files = split(glob('~/vimfiles/performance/*.txt'), "\n")
+    else
+        let files = split(glob('~/.vim/performance/*.txt'), "\n")
+    endif
     let l:now = localtime()
     let file_dictionaries = map(files, { _, file -> { "filename": fnamemodify(file, ":t"), "m_timeago": l:now-getftime(file) } })
     call filter(file_dictionaries, { _, D -> s:IsValidProfileFilename(D["filename"]) })
@@ -71,7 +75,11 @@ function! s:GetProfileFileDictionaries()
 endfunction
 function! s:ProfileCompletion(ArgLead, CmdLine, CursorPos)
     let date_filename = printf("%s.", strftime("%y%m%d"))
-    let files = split(glob('~/vimfiles/performance/*.txt'), "\n")
+    if has('win32')
+        let files = split(glob('~/vimfiles/performance/*.txt'), "\n")
+    else
+        let files = split(glob('~/.vim/performance/*.txt'), "\n")
+    endif
     let dictionaries = s:GetProfileFileDictionaries()
     call s:SortDictionaries(dictionaries, [ "filename" ])
     let stack = [ dictionaries[0] ]
@@ -102,7 +110,11 @@ function! s:ProfileFunction(profile_filename)
         echohl WarningMsg | echo 'Filename '.profile_filename.' does not match format: "{date}.{title}.{version}.txt"' | echohl Normal
         return
     endif
-    let command = printf('profile start ~/vimfiles/performance/%s | profile func * | profile file *', profile_filename)
+    if has('win32')
+        let command = printf('profile start ~/vimfiles/performance/%s | profile func * | profile file *', profile_filename)
+    else
+        let command = printf('profile start ~/.vim/performance/%s | profile func * | profile file *', profile_filename)
+    endif
     execute command
     echo command
 endfunction

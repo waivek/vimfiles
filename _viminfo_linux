@@ -11,29 +11,515 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/copilot
+~MSle0~/src\/utils\/
 
 # Last Substitute Search Pattern:
-~MSle0&\C\<FRIENDS\>
+~MSle0&^\s\+$
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1734652100,,"q"
+|2,0,1735934549,,"q"
+:Date
+|2,0,1735934541,,"Date"
+:qa
+|2,0,1735933954,,"qa"
+:qa!
+|2,0,1735933622,,"qa!"
+:RunCreateCommand full
+|2,0,1735930327,,"RunCreateCommand full"
+:e
+|2,0,1735930308,,"e"
+:!/bin/bash %
+|2,0,1735930277,,"!/bin/bash %"
+:!/bin/bash -c "source %"
+|2,0,1735930271,,"!/bin/bash -c \"source %\""
+:/bin/bash -c source %
+|2,0,1735930265,,"/bin/bash -c source %"
+:!source %
+|2,0,1735930250,,"!source %"
+:q!
+|2,0,1735909644,,"q!"
+:e commit-message-unwrapped.txt
+|2,0,1735908967,,"e commit-message-unwrapped.txt"
+:e commit-message-buggy.txt
+|2,0,1735908956,,"e commit-message-buggy.txt"
+:bd
+|2,0,1735908197,,"bd"
+:e commit-message.txt
+|2,0,1735907921,,"e commit-message.txt"
+:CocRestart
+|2,0,1735907614,,"CocRestart"
+:e requirements.txt
+|2,0,1735907589,,"e requirements.txt"
+:e cache.py
+|2,0,1735904534,,"e cache.py"
+:e cac
+|2,0,1735904531,,"e cac"
+:set tw=120
+|2,0,1735904431,,"set tw=120"
+:set formatprg=
+|2,0,1735904416,,"set formatprg="
+:set formatprg
+|2,0,1735904413,,"set formatprg"
+:'<,'>!jsonfmt
+|2,0,1735904405,,"'<,'>!jsonfmt"
+:.!jsonfmt
+|2,0,1735904400,,".!jsonfmt"
+:e color.py
+|2,0,1735903910,,"e color.py"
+:e ~/python_common/box/ca
+|2,0,1735903705,,"e ~/python_common/box/ca"
+:<F1>
+|2,0,1735895077,,"<F1>"
+:Rename flask-history-dashboard.py
+|2,0,1735842020,,"Rename flask-history-dashboard.py"
+:%s/^\s\+$//
+|2,0,1735842001,,"%s/^\\s\\+$//"
+:Jprevious
+|2,0,1735841706,,"Jprevious"
+:pwd
+|2,0,1735841423,,"pwd"
+:Rg
+|2,0,1735841423,,"Rg"
+:VD hateoas-history.db
+|2,0,1735841219,,"VD hateoas-history.db"
+:VD
+|2,0,1735841214,,"VD"
+:OpenDB
+|2,0,1735841202,,"OpenDB"
+:b!# | bd! #
+|2,0,1735841128,,"b!# | bd! #"
+:ToList
+|2,0,1735841119,,"ToList"
+:T
+|2,0,1735841106,,"T"
+:enew
+|2,0,1735841101,,"enew"
+:e 
+|2,0,1735840457,,"e "
+:e!
+|2,0,1735837155,,"e!"
+:g/Not provided/d
+|2,0,1735836299,,"g/Not provided/d"
+:Template
+|2,0,1735835719,,"Template"
+:a
+|2,0,1735828230,,"a"
+:bd!
+|2,0,1735824961,,"bd!"
+:%sort u
+|2,0,1735824923,,"%sort u"
+:e src/utils/leaderboard_chrome.py
+|2,0,1735824081,,"e src/utils/leaderboard_chrome.py"
+:Rename setup_chrome_testing_binaries.py
+|2,0,1735823743,,"Rename setup_chrome_testing_binaries.py"
+:pytest %
+|2,0,1735820790,,"pytest %"
+:e ~/tmp/cheem.txt
+|2,0,1735813057,,"e ~/tmp/cheem.txt"
+:MRU guilds.json
+|2,0,1735807734,,"MRU guilds.json"
+:e .env
+|2,0,1735805376,,"e .env"
+:68
+|2,0,1735805259,,"68"
+:e zip_url_to_
+|2,0,1735757897,,"e zip_url_to_"
+: w ~/tmp/unzip_url_commands.txt
+|2,0,1735762738,," w ~/tmp/unzip_url_commands.txt"
+:v/python/d
+|2,0,1735762629,,"v/python/d"
+:vert h digraph
+|2,0,1735757579,,"vert h digraph"
+:cd ~/bash
+|2,0,1735756812,,"cd ~/bash"
+:e ~/.vim/templates/template.bash
+|2,0,1735751523,,"e ~/.vim/templates/template.bash"
+:e bash_completions/find-all-files-completion.bash
+|2,0,1735756012,,"e bash_completions/find-all-files-completion.bash"
+:e com
+|2,0,1735756003,,"e com"
+:e env.bash
+|2,0,1735756000,,"e env.bash"
+:.,.+1qa
+|2,0,1735751593,,".,.+1qa"
+:e data/secret.txt
+|2,0,1735750949,,"e data/secret.txt"
+:term
+|2,0,1735750862,,"term"
+:e data/.gitkeep
+|2,0,1735750604,,"e data/.gitkeep"
+:e tests/test_db_api_base.py
+|2,0,1735749229,,"e tests/test_db_api_base.py"
+:e tests/
+|2,0,1735749226,,"e tests/"
+:pytest
+|2,0,1735749222,,"pytest"
+:%s/\./,/g
+|2,0,1735730259,,"%s/\\./,/g"
+:lw
+|2,0,1735729398,,"lw"
+:UndotreeToggle
+|2,0,1735728020,,"UndotreeToggle"
+:UndoTree
+|2,0,1735728012,,"UndoTree"
+:PlugInstall
+|2,0,1735728008,,"PlugInstall"
+:UndoTreeShow
+|2,0,1735727986,,"UndoTreeShow"
+:h undotree
+|2,0,1735727960,,"h undotree"
+:h :undo
+|2,0,1735727956,,"h :undo"
+:h undotree_CustomUndotreeCmd
+|2,0,1735727949,,"h undotree_CustomUndotreeCmd"
+:h 'undotree'
+|2,0,1735727940,,"h 'undotree'"
+:U
+|2,0,1735727936,,"U"
+:edit $MYVIMRC
+|2,0,1735727928,,"edit $MYVIMRC"
+:undotree
+|2,0,1735727925,,"undotree"
+:gundo
+|2,0,1735727923,,"gundo"
+:Gundo
+|2,0,1735727921,,"Gundo"
+:u
+|2,0,1735727885,,"u"
+:lclose
+|2,0,1735724343,,"lclose"
+:ln
+|2,0,1735724340,,"ln"
+:lnext
+|2,0,1735724335,,"lnext"
+:cn
+|2,0,1735724334,,"cn"
+:set updatetime
+|2,0,1735723465,,"set updatetime"
+:h 'updatetime'
+|2,0,1735723461,,"h 'updatetime'"
+:h CursorHold
+|2,0,1735723443,,"h CursorHold"
+:checktime
+|2,0,1735723366,,"checktime"
+:set autoread<
+|2,0,1735723351,,"set autoread<"
+:h 'autoread'
+|2,0,1735723334,,"h 'autoread'"
+:set autoread
+|2,0,1735723316,,"set autoread"
+:g/\/\.git\//d
+|2,0,1735682034,,"g/\\/\\.git\\//d"
+:g/
+|2,0,1735682029,,"g/"
+:g/undofiles/d
+|2,0,1735682010,,"g/undofiles/d"
+:g/^\.\/\.cache\//d
+|2,0,1735682000,,"g/^\\.\\/\\.cache\\//d"
+:g/\.\/\.cache\/pip/d
+|2,0,1735681986,,"g/\\.\\/\\.cache\\/pip/d"
+:g/\.gomi/d
+|2,0,1735681975,,"g/\\.gomi/d"
+:g/node_modules/d
+|2,0,1735681971,,"g/node_modules/d"
+:g/\/\.npm\//d
+|2,0,1735681966,,"g/\\/\\.npm\\//d"
+:g/\/\.direnv\/python-3\.10\.12/d
+|2,0,1735681960,,"g/\\/\\.direnv\\/python-3\\.10\\.12/d"
+:ggk
+|2,0,1735681715,,"ggk"
+:g/\/node_modules\//d
+|2,0,1735681698,,"g/\\/node_modules\\//d"
+:g/\.npm\//d
+|2,0,1735681683,,"g/\\.npm\\//d"
+:g/\.direnv\/python-3\.10/d
+|2,0,1735681672,,"g/\\.direnv\\/python-3\\.10/d"
+:%sort
+|2,0,1735676246,,"%sort"
+:%sort! n
+|2,0,1735675938,,"%sort! n"
+:%sort n
+|2,0,1735675933,,"%sort n"
+:%!uniq -c
+|2,0,1735675931,,"%!uniq -c"
+:%sor
+|2,0,1735675928,,"%sor"
+:copen
+|2,0,1735675906,,"copen"
+:grep -g '*.py' --fixed-strings 'from worker'
+|2,0,1735675903,,"grep -g '*.py' --fixed-strings 'from worker'"
+:cfile %
+|2,0,1735675521,,"cfile %"
+:e requirements-large.txt
+|2,0,1735675494,,"e requirements-large.txt"
+:e .config/setup.fish
+|2,0,1735654977,,"e .config/setup.fish"
+:e setup.bash
+|2,0,1735653846,,"e setup.bash"
+:e setup.fish
+|2,0,1735653355,,"e setup.fish"
+:e e
+|2,0,1735652361,,"e e"
+: w ~/tmp/tmux-unicode.bash
+|2,0,1735651054,," w ~/tmp/tmux-unicode.bash"
+:set ft=man
+|2,0,1735650968,,"set ft=man"
+:set ft=markdown
+|2,0,1735645843,,"set ft=markdown"
+:set tw=70
+|2,0,1735645819,,"set tw=70"
+:v/season/d
+|2,0,1735645651,,"v/season/d"
+:v/Season/d
+|2,0,1735645647,,"v/Season/d"
+:let @"=expand("%:p")
+|2,0,1735637664,,"let @\"=expand(\"%:p\")"
+:e assets/guild_dmgs_from_max/1.webp
+|2,0,1735637658,,"e assets/guild_dmgs_from_max/1.webp"
+:g/\C\<ERROR\>/d
+|2,0,1735636169,,"g/\\C\\<ERROR\\>/d"
+:v/assets\/guild_dmgs_from_max\//d
+|2,0,1735636165,,"v/assets\\/guild_dmgs_from_max\\//d"
+:e error_levels.txt
+|2,0,1735635917,,"e error_levels.txt"
+:e error_files.txt
+|2,0,1735635910,,"e error_files.txt"
+:'<,'>ToList
+|2,0,1735635744,,"'<,'>ToList"
+:diffthis
+|2,0,1735635691,,"diffthis"
+:g/ERROR/d
+|2,0,1735635684,,"g/ERROR/d"
+:v/assets\/guild_dmgs_from_max/d
+|2,0,1735635681,,"v/assets\\/guild_dmgs_from_max/d"
+:e src/utils/preprocess_damage_image.py
+|2,0,1735631470,,"e src/utils/preprocess_damage_image.py"
+: w error_levels.txt
+|2,0,1735630148,," w error_levels.txt"
+:g/{'boss':/d
+|2,0,1735630040,,"g/{'boss':/d"
+:g/Time taken/d
+|2,0,1735630033,,"g/Time taken/d"
+:v/error/d
+|2,0,1735629498,,"v/error/d"
+:v/Error
+|2,0,1735629497,,"v/Error"
+:Rg 
+|2,0,1735571661,,"Rg "
+:RunCreateCommand horizontal
+|2,0,1735567158,,"RunCreateCommand horizontal"
+:term pi
+|2,0,1735566902,,"term pi"
+:e src/utils/flask_endpoint.py
+|2,0,1735496227,,"e src/utils/flask_endpoint.py"
+:e assets/template.html
+|2,0,1735495983,,"e assets/template.html"
+:10
+|2,0,1735493939,,"10"
+:CopyToHost
+|2,0,1735492079,,"CopyToHost"
+:e src/utils/leader_image_chrome.py
+|2,0,1735468801,,"e src/utils/leader_image_chrome.py"
+:e src/utils/__pycache__/
+|2,0,1735468447,,"e src/utils/__pycache__/"
+:Rename download_chromedriver.py
+|2,0,1735468289,,"Rename download_chromedriver.py"
+:39
+|2,0,1735467628,,"39"
+:44
+|2,0,1735467623,,"44"
+:e src/
+|2,0,1735467509,,"e src/"
+:e src/utils/tmp_chrome.py
+|2,0,1735467360,,"e src/utils/tmp_chrome.py"
+:e src/utils/leaderboard_image.py
+|2,0,1735466309,,"e src/utils/leaderboard_image.py"
+:e damage_board.png
+|2,0,1735463767,,"e damage_board.png"
+:new-win
+|2,0,1735463392,,"new-win"
+:e officer.py
+|2,0,1735416650,,"e officer.py"
+:e config/config.json
+|2,0,1735416513,,"e config/config.json"
+:e data/guilds.json
+|2,0,1735415756,,"e data/guilds.json"
+:e src/commands/member.py
+|2,0,1735415289,,"e src/commands/member.py"
+:.,$!jsonfmt
+|2,0,1735415005,,".,$!jsonfmt"
+:e data/leaderboard_messages.json
+|2,0,1735414957,,"e data/leaderboard_messages.json"
+:e src/commands/officer.py
+|2,0,1735412306,,"e src/commands/officer.py"
+:%s/ as f://
+|2,0,1735411444,,"%s/ as f://"
+:grep -g '*.py' 'open.*data.*json'
+|2,0,1735411421,,"grep -g '*.py' 'open.*data.*json'"
+:grep -g '*.py' open.*data.*json
+|2,0,1735411406,,"grep -g '*.py' open.*data.*json"
+:e src/commands/leaderboard.py
+|2,0,1735411097,,"e src/commands/leaderboard.py"
+:e src/commands/admin.py
+|2,0,1735410501,,"e src/commands/admin.py"
+:e comm
+|2,0,1735410497,,"e comm"
+:MRU envr
+|2,0,1735410333,,"MRU envr"
+:LogPrettyPrintLine
+|2,0,1735394804,,"LogPrettyPrintLine"
+:g/\C\<GH_TOKEN\>/d
+|2,0,1735394535,,"g/\\C\\<GH_TOKEN\\>/d"
+:LogPrettifyFile
+|2,0,1735390443,,"LogPrettifyFile"
+:preserve
+|2,0,1735390440,,"preserve"
+: w ~/tmp/starship-timings.json
+|2,0,1735389399,," w ~/tmp/starship-timings.json"
+:%s/Âµs/ * (0.000001)
+|2,0,1735389391,,"%s/Âµs/ * (0.000001)"
+:%s/[(\)]//g
+|2,0,1735389369,,"%s/[(\\)]//g"
+:%s/[(\)]//
+|2,0,1735389366,,"%s/[(\\)]//"
+:%s/[()]//
+|2,0,1735389360,,"%s/[()]//"
+:%s/Âµs,/ * (0.000001),
+|2,0,1735389348,,"%s/Âµs,/ * (0.000001),"
+:%s/ms,/ * (0.001),
+|2,0,1735389315,,"%s/ms,/ * (0.001),"
+:Tab /:
+|2,0,1735389227,,"Tab /:"
+:%s/\(.*\):\s*\(.*\)/\2 : \1
+|2,0,1735389222,,"%s/\\(.*\\):\\s*\\(.*\\)/\\2 : \\1"
+:%s/ to compute module /: 
+|2,0,1735389182,,"%s/ to compute module /: "
+:v/Took/d
+|2,0,1735389155,,"v/Took/d"
+:MRU 
+|2,0,1735388788,,"MRU "
+:e starship.toml
+|2,0,1735309424,,"e starship.toml"
+:e ~
+|2,0,1735309415,,"e ~"
+:e ~/rem
+|2,0,1735308911,,"e ~/rem"
+:e minimal_starship.toml
+|2,0,1735308892,,"e minimal_starship.toml"
+:.!qa!
+|2,0,1735308845,,".!qa!"
+:e ~/remote_utils/minimal_starship.toml
+|2,0,1735308822,,"e ~/remote_utils/minimal_starship.toml"
+:e ~/remote_utils/starship.toml
+|2,0,1735308798,,"e ~/remote_utils/starship.toml"
+:e ~/remote_utils/starship.tolm
+|2,0,1735308795,,"e ~/remote_utils/starship.tolm"
+:e install.bash
+|2,0,1735308419,,"e install.bash"
+:e scp:/128.140.63.20/home/vivek/
+|2,0,1735257961,,"e scp:/128.140.63.20/home/vivek/"
+:e ~/remote_utils/minimal.fish
+|2,0,1735236339,,"e ~/remote_utils/minimal.fish"
+:h netrw
+|2,0,1735229521,,"h netrw"
+:Explore
+|2,0,1735229457,,"Explore"
+:!start everything -path .
+|2,0,1735229453,,"!start everything -path ."
+:netrw
+|2,0,1735229452,,"netrw"
+:h 
+|2,0,1735229419,,"h "
+:Profile 241226.slow_ssh_write.v01.txt
+|2,0,1735229333,,"Profile 241226.slow_ssh_write.v01.txt"
+:Profile 
+|2,0,1735229316,,"Profile "
+:e ~/.vim/plugin/profile.vim
+|2,0,1735229222,,"e ~/.vim/plugin/profile.vim"
+:verbose command Profile
+|2,0,1735229216,,"verbose command Profile"
+:h fzf
+|2,0,1735227340,,"h fzf"
+:e scp://128.140.63.20//home/vivek/file1.txt
+|2,0,1735227312,,"e scp://128.140.63.20//home/vivek/file1.txt"
+:e config
+|2,0,1735227297,,"e config"
+:e ftp://128.140.63.20/home/vivek/file.txt
+|2,0,1735227179,,"e ftp://128.140.63.20/home/vivek/file.txt"
+:e ssh://128.140.63.20/home/vivek/file.txt
+|2,0,1735227168,,"e ssh://128.140.63.20/home/vivek/file.txt"
+:NetrwSettings
+|2,0,1735227113,,"NetrwSettings"
+:helpgrep ssh
+|2,0,1735227109,,"helpgrep ssh"
+:e 128
+|2,0,1735227100,,"e 128"
+:!ssh-add
+|2,0,1735227089,,"!ssh-add"
+:h ssh
+|2,0,1735227077,,"h ssh"
+:h ssh-agent
+|2,0,1735227075,,"h ssh-agent"
+:e control:128.140.63.20:22:vivek
+|2,0,1735227072,,"e control:128.140.63.20:22:vivek"
+:e scp://128
+|2,0,1735226906,,"e scp://128"
+:e ssh
+|2,0,1735224340,,"e ssh"
+:e bind
+|2,0,1735221350,,"e bind"
+:e known_hosts.old
+|2,0,1735216704,,"e known_hosts.old"
+:e ~/.ssh/known_hosts.old
+|2,0,1735216572,,"e ~/.ssh/known_hosts.old"
+:Rename setup_ssh_windows.ps1
+|2,0,1735194656,,"Rename setup_ssh_windows.ps1"
+:e ~/.ssh/config
+|2,0,1735193572,,"e ~/.ssh/config"
+:e setup_ssh_windows.txt
+|2,0,1735193206,,"e setup_ssh_windows.txt"
+:e hertzner_rsa.pub
+|2,0,1735192910,,"e hertzner_rsa.pub"
+:e hertzner_rsa
+|2,0,1735192891,,"e hertzner_rsa"
+:e known_hosts
+|2,0,1735192871,,"e known_hosts"
+:e ~/.ssh
+|2,0,1735180094,,"e ~/.ssh"
+:set ft=bash
+|2,0,1735179813,,"set ft=bash"
+:e setup_ssh.bash
+|2,0,1735179783,,"e setup_ssh.bash"
+:e source_vs_bash.bash
+|2,0,1735179120,,"e source_vs_bash.bash"
+:e ~/bash/setup_ssh.bash
+|2,0,1735179093,,"e ~/bash/setup_ssh.bash"
+:e ~/tmp/minimal.bash
+|2,0,1735221110,,"e ~/tmp/minimal.bash"
+:e ~/tmp/setup_ssh.bash
+|2,0,1735138224,,"e ~/tmp/setup_ssh.bash"
+:e con
+|2,0,1735096539,,"e con"
+:e conf
+|2,0,1735096536,,"e conf"
+:set nu
+|2,0,1735095720,,"set nu"
+:MRU config
+|2,0,1735092563,,"MRU config"
+:Date 2024-12-25
+|2,0,1735092517,,"Date 2024-12-25"
+:e ~/tooling/app_ideas/cli_text_modification_tool.txt
+|2,0,1735092502,,"e ~/tooling/app_ideas/cli_text_modification_tool.txt"
+:e variables.
+|2,0,1734892436,,"e variables."
 :Copilot status
 |2,0,1734605616,,"Copilot status"
 :e file.py
 |2,0,1734605610,,"e file.py"
-:edit $MYVIMRC
-|2,0,1734605592,,"edit $MYVIMRC"
-:q!
-|2,0,1734518339,,"q!"
-:enew
-|2,0,1734475434,,"enew"
-:e
-|2,0,1734125783,,"e"
 :Rename vm.bash
 |2,0,1734125300,,"Rename vm.bash"
 :e build.bash
@@ -54,26 +540,12 @@ $
 |2,0,1734097393,," w!"
 :w
 |2,0,1734097281,,"w"
-:e!
-|2,0,1734097279,,"e!"
 :e ~/.ssh/known_hosts
 |2,0,1734093381,,"e ~/.ssh/known_hosts"
-:qa
-|2,0,1734077671,,"qa"
-:e ~/.ssh/config
-|2,0,1734075228,,"e ~/.ssh/config"
 ::q!q!
 |2,0,1734074250,,":q!q!"
-:e 
-|2,0,1734070522,,"e "
 :e :q
 |2,0,1734070503,,"e :q"
-:bd
-|2,0,1734070196,,"bd"
-:Explore
-|2,0,1734070186,,"Explore"
-:bd!
-|2,0,1734037436,,"bd!"
 :v/\C\<FRIENDS\>/d
 |2,0,1734037406,,"v/\\C\\<FRIENDS\\>/d"
 :q1
@@ -84,36 +556,24 @@ $
 |2,0,1732925993,,"bd .direnv/python-3.10.12/lib/python3.10/site-packages/box/db_api_base.py"
 :e __pycache__/
 |2,0,1732904543,,"e __pycache__/"
-:Date
-|2,0,1732886325,,"Date"
-:Rg
-|2,0,1732799332,,"Rg"
 :e filters_and_pagination.py
 |2,0,1732747324,,"e filters_and_pagination.py"
 : w composer-error.txt
 |2,0,1732746840,," w composer-error.txt"
-:pwd
-|2,0,1732746831,,"pwd"
 : w 
 |2,0,1732746831,," w "
 : w ~/.vim/tmp/
 |2,0,1732746828,," w ~/.vim/tmp/"
 :74
 |2,0,1732746255,,"74"
-:CocRestart
-|2,0,1732731554,,"CocRestart"
 :e mod
 |2,0,1732727900,,"e mod"
 :e todo.txt
 |2,0,1732665688,,"e todo.txt"
 :CocOutline
 |2,0,1732665635,,"CocOutline"
-:b!# | bd! #
-|2,0,1732663745,,"b!# | bd! #"
 :set ft=htmldjango
 |2,0,1732663577,,"set ft=htmldjango"
-:CopyToHost
-|2,0,1732662420,,"CopyToHost"
 :e tmp_peewee_endpoint.py
 |2,0,1732653784,,"e tmp_peewee_endpoint.py"
 :set wrap
@@ -138,8 +598,6 @@ $
 |2,0,1732579694,,"e data/"
 :cd data/
 |2,0,1732579671,,"cd data/"
-:e com
-|2,0,1732579668,,"e com"
 :e apps.json
 |2,0,1732568570,,"e apps.json"
 :Copilot log
@@ -174,22 +632,12 @@ $
 |2,0,1732494574,,":e"
 :e pyrightconfig.json
 |2,0,1732494495,,"e pyrightconfig.json"
-:e tests/test_db_api_base.py
-|2,0,1732493771,,"e tests/test_db_api_base.py"
 :e box/tests/
 |2,0,1732493744,,"e box/tests/"
-:set autoread<
-|2,0,1732492791,,"set autoread<"
-:h 'autoread'
-|2,0,1732492778,,"h 'autoread'"
-:set autoread
-|2,0,1732492752,,"set autoread"
 :.,.+1q
 |2,0,1732401371,,".,.+1q"
 :lopen
 |2,0,1732401241,,"lopen"
-:qa!
-|2,0,1732399401,,"qa!"
 :RenumberList
 |2,0,1732360998,,"RenumberList"
 :Tab 
@@ -242,8 +690,6 @@ $
 |2,0,1732299257,,"!rm data/Const_Velocity.db"
 :e data/Const_Velocity.json
 |2,0,1732299245,,"e data/Const_Velocity.json"
-:term
-|2,0,1732294367,,"term"
 :e fro
 |2,0,1732293499,,"e fro"
 :e reddit-user-comments.config.js
@@ -266,10 +712,6 @@ $
 |2,0,1732281770,," ;"
 :e pydantic_to_sqlite.py
 |2,0,1732281242,,"e pydantic_to_sqlite.py"
-:Template
-|2,0,1732281201,,"Template"
-:e requirements.txt
-|2,0,1732279431,,"e requirements.txt"
 :Co
 |2,0,1732277634,,"Co"
 :e ~/python_common/waivek/todo.txt
@@ -278,18 +720,12 @@ $
 |2,0,1732277058,,"e ~/python_common/todo.txt"
 :e models/comment.py
 |2,0,1732276814,,"e models/comment.py"
-:Jprevious
-|2,0,1732275367,,"Jprevious"
 :e secrets.env
 |2,0,1732274762,,"e secrets.env"
 :Template flask
 |2,0,1732290424,,"Template flask"
-:copen
-|2,0,1732279970,,"copen"
 :grep -g '*.py' --fixed-strings waivek
 |2,0,1732279967,,"grep -g '*.py' --fixed-strings waivek"
-:cn
-|2,0,1732279724,,"cn"
 :e .envrc
 |2,0,1732274677,,"e .envrc"
 :e scrape_reddit_user_comments.py
@@ -330,8 +766,6 @@ $
 |2,0,1731534361,,"Date 2024-11-14"
 :e __init__.py
 |2,0,1731277908,,"e __init__.py"
-:RunCreateCommand horizontal
-|2,0,1731276324,,"RunCreateCommand horizontal"
 :29
 |2,0,1731266217,,"29"
 :%!python3 -m json.tool
@@ -344,8 +778,6 @@ $
 |2,0,1731264092,,".! w"
 :e tests/test_pflix_scrape.py
 |2,0,1731264078,,"e tests/test_pflix_scrape.py"
-:e tests/
-|2,0,1731264064,,"e tests/"
 :A
 |2,0,1731262762,,"A"
 :syntax on
@@ -362,8 +794,6 @@ $
 |2,0,1731256315,,"e python.sh"
 :v/\C\<COMMUNITY\>/d
 |2,0,1731254929,,"v/\\C\\<COMMUNITY\\>/d"
-:e commit-message.txt
-|2,0,1731247641,,"e commit-message.txt"
 :Rename commit-message-gemini.py
 |2,0,1731247336,,"Rename commit-message-gemini.py"
 :v/download/d
@@ -394,8 +824,6 @@ $
 |2,0,1730743148,,"e static/downloads/graph_payloads/2199468577.json"
 :e static/downloads/graph_payloads/2277153699.json
 |2,0,1730743104,,"e static/downloads/graph_payloads/2277153699.json"
-:e ~
-|2,0,1730743097,,"e ~"
 :87
 |2,0,1730743007,,"87"
 :quitall!
@@ -536,8 +964,6 @@ $
 |2,0,1729806563,,"set ft=log"
 :v/\[2024/d
 |2,0,1729806552,,"v/\\[2024/d"
-:diffthis
-|2,0,1729804784,,"diffthis"
 :e tmp_chapters.py
 |2,0,1729804515,,"e tmp_chapters.py"
 :e gql_video_recorded_at_sync.py
@@ -564,8 +990,6 @@ $
 |2,0,1729790207,,"e ~/tmp/"
 :g/#community/d
 |2,0,1729790131,,"g/#community/d"
-:e cache.py
-|2,0,1729789424,,"e cache.py"
 :e ca
 |2,0,1729789382,,"e ca"
 :1466
@@ -764,8 +1188,6 @@ $
 |2,0,1729160842,,"grep -g '*.py' --fixed-strings os.path.join\\(downloads_folder\\("
 :grep -g '*.py' --fixed-strings os.path.join(downloads_folder(
 |2,0,1729160830,,"grep -g '*.py' --fixed-strings os.path.join(downloads_folder("
-:e requirements-large.txt
-|2,0,1729160487,,"e requirements-large.txt"
 :Tab / - /
 |2,0,1729155762,,"Tab / - /"
 :earlier 
@@ -836,8 +1258,6 @@ $
 |2,0,1728929823,,"Docker"
 :h
 |2,0,1728911642,,"h"
-:VD
-|2,0,1728911049,,"VD"
 :e video_utils.py
 |2,0,1728893999,,"e video_utils.py"
 :redraw
@@ -854,8 +1274,6 @@ $
 |2,0,1728886115,,"find staging-grid.css"
 :e parse-date-test.py
 |2,0,1728885645,,"e parse-date-test.py"
-:39
-|2,0,1728817026,,"39"
 :e user
 |2,0,1728816152,,"e user"
 :e hateoas-out.log
@@ -892,8 +1310,6 @@ $
 |2,0,1728806886,,"MRU twitch_uti"
 :MRU 1:videos.py
 |2,0,1728806873,,"MRU 1:videos.py"
-:MRU 
-|2,0,1728806862,,"MRU "
 :e test_lock_manager.py
 |2,0,1728805943,,"e test_lock_manager.py"
 :e Types.py
@@ -908,8 +1324,6 @@ $
 |2,0,1728799469,,"Enumerate"
 :e auth.py
 |2,0,1728798696,,"e auth.py"
-:Rg 
-|2,0,1728797094,,"Rg "
 :MRU uti
 |2,0,1728797090,,"MRU uti"
 :e man
@@ -1100,8 +1514,6 @@ $
 |2,0,1727306833,,"e /etc/resolv.conf"
 :CocDiagnostics
 |2,0,1727306565,,"CocDiagnostics"
-:lnext
-|2,0,1727306516,,"lnext"
 :o
 |2,0,1727304745,,"o"
 :h :term
@@ -1120,18 +1532,10 @@ $
 |2,0,1727041894,,"e fd.man"
 :MRU rg.m
 |2,0,1727041833,,"MRU rg.m"
-:%sort! n
-|2,0,1727041776,,"%sort! n"
-:%!uniq -c
-|2,0,1727041770,,"%!uniq -c"
-:%sort
-|2,0,1727041767,,"%sort"
 :e common-flags.txt
 |2,0,1727041751,,"e common-flags.txt"
 :diffoff
 |2,0,1727041744,,"diffoff"
-:%sort u
-|2,0,1727041725,,"%sort u"
 :Isolate /--[a-z-]*/
 |2,0,1727041715,,"Isolate /--[a-z-]*/"
 :e rg-flags.txt
@@ -1162,8 +1566,6 @@ $
 |2,0,1727012109,,"e fzf.txt"
 :MRU rg
 |2,0,1727011956,,"MRU rg"
-:h 
-|2,0,1727011953,,"h "
 :h rg.man
 |2,0,1727011948,,"h rg.man"
 :e rg.man
@@ -1216,8 +1618,6 @@ $
 |2,0,1726262148,,"sc"
 :iabbrev
 |2,0,1726262112,,"iabbrev"
-:T
-|2,0,1726261369,,"T"
 :CocList commands
 |2,0,1726237341,,"CocList commands"
 :CocList comman
@@ -1270,8 +1670,6 @@ $
 |2,0,1726182499,,"call       CocActionAsync('codeAction')"
 :echo $PYTHONPATH
 |2,0,1726182453,,"echo $PYTHONPATH"
-:PlugInstall
-|2,0,1726182437,,"PlugInstall"
 :call       CocActionAsync('codeAction', 'cursor')
 |2,0,1726182246,,"call       CocActionAsync('codeAction', 'cursor')"
 :call       CocActionAsync('codeAction', 'line')
@@ -1286,8 +1684,6 @@ $
 |2,0,1726181984,,"e`"
 :call       CocAction('codeAction', 'cursor')
 |2,0,1726181713,,"call       CocAction('codeAction', 'cursor')"
-:e .env
-|2,0,1726181664,,"e .env"
 :e requirements-dev.txt
 |2,0,1726181265,,"e requirements-dev.txt"
 :MRU jprev
@@ -1404,8 +1800,6 @@ $
 |2,0,1725691777,,"set cms?"
 :set ft=
 |2,0,1725691767,,"set ft="
-:set ft=markdown
-|2,0,1725691699,,"set ft=markdown"
 :MRU truncate.py
 |2,0,1725691574,,"MRU truncate.py"
 :e trun
@@ -1534,8 +1928,6 @@ $
 |2,0,1725562395,,"h %"
 :h [:fname:]
 |2,0,1725562393,,"h [:fname:]"
-:LogPrettyPrintLine
-|2,0,1725551951,,"LogPrettyPrintLine"
 :Pre
 |2,0,1725551949,,"Pre"
 :vert term python % gh-timeago-updates.log
@@ -1568,8 +1960,6 @@ $
 |2,0,1725543040,,"RgHome -g \"*.py\" parse"
 :RgHome parse
 |2,0,1725543027,,"RgHome parse"
-:u
-|2,0,1725542690,,"u"
 :ve
 |2,0,1725542615,,"ve"
 :e simple-pydantic-error.py
@@ -1782,8 +2172,6 @@ $
 |2,0,1725378675,,"so"
 :ls!
 |2,0,1725378616,,"ls!"
-:h fzf
-|2,0,1725378602,,"h fzf"
 :nunmap e
 |2,0,1725378393,,"nunmap e"
 :MRU mapp
@@ -1830,8 +2218,6 @@ $
 |2,0,1725195005,,"grep -g '*' --fixed-strings viminfo"
 :rg 
 |2,0,1725195001,,"rg "
-:cd ~/bash
-|2,0,1725194998,,"cd ~/bash"
 :MRU zdirs
 |2,0,1725194996,,"MRU zdirs"
 :MRU zd
@@ -2758,8 +3144,6 @@ $
 |2,0,1723461710,,"!start % "
 :h index(
 |2,0,1723460325,,"h index("
-:10
-|2,0,1723459861,,"10"
 :h List
 |2,0,1723457741,,"h List"
 :h strpart(
@@ -2814,8 +3198,6 @@ $
 |2,0,1723329377,,"MRU bas"
 :e _python-argcomplete
 |2,0,1723329376,,"e _python-argcomplete"
-:LogPrettifyFile
-|2,0,1723329328,,"LogPrettifyFile"
 :e gh-timeago.bash
 |2,0,1723281777,,"e gh-timeago.bash"
 :set tw?
@@ -2950,8 +3332,6 @@ $
 |2,0,1722961179,,"kkkkkk"
 :e requirements-audio-sync.txt
 |2,0,1722888972,,"e requirements-audio-sync.txt"
-:ToList
-|2,0,1722888426,,"ToList"
 :e audio_sync.py
 |2,0,1722885844,,"e audio_sync.py"
 :Daet
@@ -3078,8 +3458,6 @@ $
 |2,0,1722704240,,"h filter()"
 :echo filter
 |2,0,1722704235,,"echo filter"
-:OpenDB
-|2,0,1722704205,,"OpenDB"
 :e loglib.py
 |2,0,1722641018,,"e loglib.py"
 :CocInsatll
@@ -3100,8 +3478,6 @@ $
 |2,0,1722630201,,"b todo"
 :e ../test.py
 |2,0,1722629508,,"e ../test.py"
-:e color.py
-|2,0,1722629332,,"e color.py"
 :MRU runpy
 |2,0,1722629247,,"MRU runpy"
 :36
@@ -3190,8 +3566,6 @@ $
 |2,0,1722539428,,"g/{/,/"
 :%!python -m json.tool
 |2,0,1722539385,,"%!python -m json.tool"
-:.!jsonfmt
-|2,0,1722539377,,".!jsonfmt"
 :let @"=json_encode(CocAction('documentSymbols'))
 |2,0,1722539369,,"let @\"=json_encode(CocAction('documentSymbols'))"
 :e ~/.vim/tmp/symbols-sample.json
@@ -3926,8 +4300,6 @@ $
 |2,0,1721995583,,"MRU 1:validation.py"
 :!pytest %
 |2,0,1721995475,,"!pytest %"
-:pytest %
-|2,0,1721995469,,"pytest %"
 :e sample-pass-token.json
 |2,0,1721989197,,"e sample-pass-token.json"
 : w sample-pass-token.json
@@ -3962,8 +4334,6 @@ $
 |2,0,1721954598,,"echo indent(\".\")"
 :echo inden()
 |2,0,1721954595,,"echo inden()"
-:let @"=expand("%:p")
-|2,0,1721954482,,"let @\"=expand(\"%:p\")"
 :MRU json
 |2,0,1721954441,,"MRU json"
 :e type_chat.py
@@ -4130,8 +4500,6 @@ $
 |2,0,1721310652,,"MRU 319:hateoas/templates/sync_video_to_video.html"
 :MRU html
 |2,0,1721310646,,"MRU html"
-:Tab /:
-|2,0,1721310606,,"Tab /:"
 :MRU workspa
 |2,0,1721310536,,"MRU workspa"
 :e safe_download_assigner.py
@@ -4152,8 +4520,6 @@ $
 |2,0,1721238114,,"nmap 2 :cn<CR>"
 :nmap 1 :s \| w<CR>
 |2,0,1721238112,,"nmap 1 :s \\| w<CR>"
-:cfile %
-|2,0,1721238093,,"cfile %"
 :cfile
 |2,0,1721238090,,"cfile"
 :e db_init.rg
@@ -4190,8 +4556,6 @@ $
 |2,0,1721237161,,"call CocActionAsync('jumpUsed')"
 :e python-flask-tailwind.sh
 |2,0,1721235247,,"e python-flask-tailwind.sh"
-:!start everything -path .
-|2,0,1721235244,,"!start everything -path ."
 :imap <C-o> :echo "Hello, World!"
 |2,0,1721219435,,"imap <C-o> :echo \"Hello, World!\""
 :imap <C-;> :echo "Hello, World!"
@@ -4346,8 +4710,6 @@ $
 |2,0,1720842708,,"grep -g '*' --fixed-strings find-all-files"
 :e setup.sh
 |2,0,1720842680,,"e setup.sh"
-:e setup.fish
-|2,0,1720842676,,"e setup.fish"
 :e shell_data/.bash_history
 |2,0,1720841619,,"e shell_data/.bash_history"
 :MRU .bash
@@ -4804,8 +5166,6 @@ $
 |2,0,1718459346,,"MRU gf"
 :set ft=help
 |2,0,1718458643,,"set ft=help"
-:set ft=man
-|2,0,1718458638,,"set ft=man"
 :find viewlog.py
 |2,0,1718458298,,"find viewlog.py"
 :FIND viewl
@@ -5000,8 +5360,6 @@ $
 |2,0,1718198909,,"g/0\\.000/d"
 :g/0\.0000/d
 |2,0,1718198898,,"g/0\\.0000/d"
-:%sort n
-|2,0,1718198871,,"%sort n"
 :%!sort f
 |2,0,1718198865,,"%!sort f"
 :%sort! d
@@ -5890,8 +6248,6 @@ $
 |2,0,1716563162,,"term date"
 :MRU 4:updatebin.py
 |2,0,1716563137,,"MRU 4:updatebin.py"
-:<F1>
-|2,0,1716561919,,"<F1>"
 :e tztypes.py
 |2,0,1716550006,,"e tztypes.py"
 :MRU 1:__init__.py
@@ -6240,8 +6596,6 @@ $
 |2,0,1714990017,,"man"
 :q 
 |2,0,1714989157,,"q "
-:set ft=bash
-|2,0,1714944406,,"set ft=bash"
 :472
 |2,0,1714655515,,"472"
 :e ali
@@ -6470,8 +6824,6 @@ $
 |2,0,1714109014,,"s/,\\s*\\zs\\(FOREIGN\\|UNIQUE\\)/\\r\\0"
 :g/,\s*\zs\(FOREIGN\|UNIQUE\)/\r\0
 |2,0,1714109003,,"g/,\\s*\\zs\\(FOREIGN\\|UNIQUE\\)/\\r\\0"
-:g/
-|2,0,1714108945,,"g/"
 :MRU sqljoi
 |2,0,1714108852,,"MRU sqljoi"
 :grep -g '*.py' sqlmodel
@@ -6498,8 +6850,6 @@ $
 |2,0,1714047464,,"408"
 :e create-databases.py
 |2,0,1714047359,,"e create-databases.py"
-:e con
-|2,0,1714047261,,"e con"
 :data
 |2,0,1714046809,,"data"
 :e *.
@@ -6900,8 +7250,6 @@ $
 |2,0,1713685237,,"e gh-timeago-starship.bash"
 :%s//\n/g
 |2,0,1713682366,,"%s//\\n/g"
-:e starship.toml
-|2,0,1713612244,,"e starship.toml"
 :MRU 44:opt/z/z.sh
 |2,0,1713612113,,"MRU 44:opt/z/z.sh"
 :h coc-toml-options
@@ -6920,8 +7268,6 @@ $
 |2,0,1713607055,,"map <space`"
 :MRU stars
 |2,0,1713606061,,"MRU stars"
-:e config
-|2,0,1713596640,,"e config"
 :MRU gitco
 |2,0,1713596637,,"MRU gitco"
 :VD %
@@ -7066,8 +7412,6 @@ $
 |2,0,1713507381,,"s/-/\\.//g"
 :'<,'>center
 |2,0,1713507344,,"'<,'>center"
-:set tw=120
-|2,0,1713507342,,"set tw=120"
 :MRU mai
 |2,0,1713507020,,"MRU mai"
 :vert term sqlite3 /home/vivek/hateoas/data/main.db -cmd .schema
@@ -7228,8 +7572,6 @@ $
 |2,0,1713276861,,"MRU dump"
 :e hateoas.config.js
 |2,0,1713276859,,"e hateoas.config.js"
-:v/python/d
-|2,0,1713276657,,"v/python/d"
 :v/cwd/d
 |2,0,1713276656,,"v/cwd/d"
 :MRU 7:api.py
@@ -7662,8 +8004,6 @@ $
 |2,0,1711007890,,"FIND main"
 :e src/components/Elements.vue
 |2,0,1711007856,,"e src/components/Elements.vue"
-:e src/
-|2,0,1711007850,,"e src/"
 :e src/components/
 |2,0,1711007839,,"e src/components/"
 :0read index.html
@@ -7886,8 +8226,6 @@ $
 |2,0,1709957522,,"MRU temp"
 :FIND Emb
 |2,0,1709956919,,"FIND Emb"
-:68
-|2,0,1709956868,,"68"
 :FIND YT
 |2,0,1709956864,,"FIND YT"
 :FIND Da
@@ -8462,8 +8800,6 @@ $
 |2,0,1694107191,,"MRU perfo"
 :Per
 |2,0,1694107190,,"Per"
-:verbose command Profile
-|2,0,1694107182,,"verbose command Profile"
 :Profile
 |2,0,1694107179,,"Profile"
 :au BufEnter
@@ -9400,8 +9736,6 @@ $
 |2,0,1692769022,,"MRU Vi"
 :MRU videos
 |2,0,1692769020,,"MRU videos"
-:lw
-|2,0,1692734682,,"lw"
 :MRU 2:eslint_config.json
 |2,0,1692734678,,"MRU 2:eslint_config.json"
 :MRU 278:eslint_config.json
@@ -9736,8 +10070,6 @@ $
 |2,0,1692366031,,":w"
 :MRU ic
 |2,0,1692362671,,"MRU ic"
-:%s/^\s\+$//
-|2,0,1692361051,,"%s/^\\s\\+$//"
 :b function.py
 |2,0,1692351161,,"b function.py"
 :e api_db.py
@@ -9800,8 +10132,6 @@ $
 |2,0,1692247415,,"CocComma"
 : w .envrc
 |2,0,1692216469,," w .envrc"
-:MRU envr
-|2,0,1692216461,,"MRU envr"
 :e nuxt.config.ts
 |2,0,1692215936,,"e nuxt.config.ts"
 :MRU prepa
@@ -10114,8 +10444,6 @@ $
 |2,0,1691571826,,"PlugInstall "
 :%s/, /,/g
 |2,0,1691571618,,"%s/, /,/g"
-:.,$!jsonfmt
-|2,0,1691569456,,".,$!jsonfmt"
 :e ~/.vim/ftplugin/json.vim
 |2,0,1691569400,,"e ~/.vim/ftplugin/json.vim"
 :verbose set formatprg?
@@ -10526,8 +10854,6 @@ $
 |2,0,1690481075,,"MRU py$"
 :h ale-python-pyflakes
 |2,0,1690480552,,"h ale-python-pyflakes"
-:44
-|2,0,1689186815,,"44"
 :MRU 2:package.json
 |2,0,1689184658,,"MRU 2:package.json"
 :MRU 5:actions.html
@@ -11190,6 +11516,368 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/src/
+|2,1,1735933854,47,"src/"
+?/register
+|2,1,1735933689,47,"register"
+?/compl
+|2,1,1735933618,47,"compl"
+? bin
+|2,1,1735930265,,"bin"
+? timer\..*\"get_diff\"
+|2,1,1735909112,,"timer\\..*\\\"get_diff\\\""
+?/\\n
+|2,1,1735908418,47,"\\\\n"
+?/strip
+|2,1,1735907840,47,"strip"
+?/genai
+|2,1,1735907515,47,"genai"
+?/confi
+|2,1,1735907253,47,"confi"
+?/exit(
+|2,1,1735905876,47,"exit("
+?/cache
+|2,1,1735904558,47,"cache"
+? \<color\>
+|2,1,1735904178,,"\\<color\\>"
+?/os\.
+|2,1,1735903916,47,"os\\."
+?/print
+|2,1,1735903405,47,"print"
+?/PIP_
+|2,1,1735903307,47,"PIP_"
+?/conolidate envi
+|2,1,1735903287,47,"conolidate envi"
+?/refactor
+|2,1,1735903271,47,"refactor"
+?/response
+|2,1,1735842104,47,"response"
+? ^\s\+$
+|2,1,1735842001,,"^\\s\\+$"
+? ,  \ze]
+|2,1,1735841119,,",  \\ze]"
+? .*
+|2,1,1735841119,,".*"
+?/uuu
+|2,1,1735840923,47,"uuu"
+?/hour
+|2,1,1735840414,47,"hour"
+?/not
+|2,1,1735836842,47,"not"
+?/not provided
+|2,1,1735836817,47,"not provided"
+?/encoding
+|2,1,1735836380,47,"encoding"
+?/encod
+|2,1,1735836366,47,"encod"
+? Not provided
+|2,1,1735836299,,"Not provided"
+?/content-dis
+|2,1,1735836169,47,"content-dis"
+?/dispo
+|2,1,1735836102,47,"dispo"
+?/etag
+|2,1,1735835886,47,"etag"
+?/\(def\|class\)\s\+\w*parse_image
+|2,1,1735833071,47,"\\(def\\|class\\)\\s\\+\\w*parse_image"
+?/['"]bin
+|2,1,1735831306,47,"['\"]bin"
+?/lln
+|2,1,1735831302,47,"lln"
+?/bin'
+|2,1,1735831298,47,"bin'"
+?/"bin"
+|2,1,1735831296,47,"\"bin\""
+?/bin
+|2,1,1735831288,47,"bin"
+?/\(def\|class\)\s\+\w*history
+|2,1,1735828323,47,"\\(def\\|class\\)\\s\\+\\w*history"
+?/history
+|2,1,1735828315,47,"history"
+?/win
+|2,1,1735825151,47,"win"
+?/win64
+|2,1,1735824655,47,"win64"
+?/linux64
+|2,1,1735824651,47,"linux64"
+? @$
+|2,1,1735824210,,"@$"
+?/bin\/
+|2,1,1735824102,47,"bin\\/"
+?/markup
+|2,1,1735823989,47,"markup"
+?/Chr
+|2,1,1735823720,47,"Chr"
+?/selenium
+|2,1,1735823690,47,"selenium"
+? ^\s*$\n\s*$
+|2,1,1735823452,,"^\\s*$\\n\\s*$"
+?/\/tmp
+|2,1,1735822045,47,"\\/tmp"
+?/chromedri
+|2,1,1735826220,47,"chromedri"
+?/permiss
+|2,1,1735765460,47,"permiss"
+?/chrome
+|2,1,1735765274,47,"chrome"
+?/static
+|2,1,1735805238,47,"static"
+?/loggin
+|2,1,1735805237,47,"loggin"
+?/unzip_url_cache
+|2,1,1735759868,47,"unzip_url_cache"
+?/tmp
+|2,1,1735759811,47,"tmp"
+?/headless
+|2,1,1735757677,47,"headless"
+? python
+|2,1,1735762629,,"python"
+?/gh-tim
+|2,1,1735757593,47,"gh-tim"
+?/check
+|2,1,1735757583,47,"check"
+?/tick
+|2,1,1735757581,47,"tick"
+?/exit
+|2,1,1735752866,47,"exit"
+?/bash_source
+|2,1,1735752461,47,"bash_source"
+?/SCRIPT_
+|2,1,1735751757,47,"SCRIPT_"
+?/\>>
+|2,1,1735751433,47,"\\>>"
+?/avatar
+|2,1,1735748942,47,"avatar"
+? \.
+|2,1,1735730259,,"\\."
+?/\.
+|2,1,1735730255,47,"\\."
+?/\.0
+|2,1,1735730240,47,"\\.0"
+?/undo
+|2,1,1735727931,47,"undo"
+?/lef
+|2,1,1735727220,47,"lef"
+?/height
+|2,1,1735725676,47,"height"
+?/\(def\|class\)\s\+\w*box
+|2,1,1735725320,47,"\\(def\\|class\\)\\s\\+\\w*box"
+?/result
+|2,1,1735725300,47,"result"
+?/roi
+|2,1,1735725149,47,"roi"
+?/^@app.route(["']\/\w*get
+|2,1,1735724961,47,"^@app.route([\"']\\/\\w*get"
+?/participants
+|2,1,1735724510,47,"participants"
+?/DISPLAY
+|2,1,1735687487,47,"DISPLAY"
+? \/\.git\/
+|2,1,1735682034,,"\\/\\.git\\/"
+?/token
+|2,1,1735682013,47,"token"
+? undofiles
+|2,1,1735682010,,"undofiles"
+? ^\.\/\.cache\/
+|2,1,1735682000,,"^\\.\\/\\.cache\\/"
+? \.\/\.cache\/pip
+|2,1,1735681986,,"\\.\\/\\.cache\\/pip"
+? \.gomi
+|2,1,1735681975,,"\\.gomi"
+? node_modules
+|2,1,1735681971,,"node_modules"
+? \/\.npm\/
+|2,1,1735681966,,"\\/\\.npm\\/"
+? \/\.direnv\/python-3\.10\.12
+|2,1,1735681960,,"\\/\\.direnv\\/python-3\\.10\\.12"
+? \/node_modules\/
+|2,1,1735681698,,"\\/node_modules\\/"
+? \.npm\/
+|2,1,1735681683,,"\\.npm\\/"
+? \.direnv\/python-3\.10
+|2,1,1735681672,,"\\.direnv\\/python-3\\.10"
+?/import
+|2,1,1735675968,47,"import"
+?/from
+|2,1,1735675919,47,"from"
+?/htmx
+|2,1,1735675768,47,"htmx"
+?/col
+|2,1,1735656280,47,"col"
+?/export
+|2,1,1735654411,47,"export"
+?/\~
+|2,1,1735654406,47,"\\~"
+?/HOME
+|2,1,1735654290,47,"HOME"
+?/config
+|2,1,1735654236,47,"config"
+?/bind
+|2,1,1735653924,47,"bind"
+?/atuin
+|2,1,1735653217,47,"atuin"
+?/starship
+|2,1,1735652410,47,"starship"
+?/SHELL
+|2,1,1735651437,47,"SHELL"
+?/utf
+|2,1,1735650953,47,"utf"
+?/256
+|2,1,1735650862,47,"256"
+? season
+|2,1,1735645651,,"season"
+? Season
+|2,1,1735645647,,"Season"
+?/error
+|2,1,1735638900,47,"error"
+? \C\<ERROR\>
+|2,1,1735636169,,"\\C\\<ERROR\\>"
+? assets\/guild_dmgs_from_max\/
+|2,1,1735636165,,"assets\\/guild_dmgs_from_max\\/"
+?/43
+|2,1,1735635934,47,"43"
+?/42
+|2,1,1735635923,47,"42"
+?/Tota
+|2,1,1735635894,47,"Tota"
+? ERROR
+|2,1,1735635684,,"ERROR"
+? assets\/guild_dmgs_from_max
+|2,1,1735635681,,"assets\\/guild_dmgs_from_max"
+?/digit
+|2,1,1735632293,47,"digit"
+? {'boss':
+|2,1,1735630040,,"{'boss':"
+? Time taken
+|2,1,1735630033,,"Time taken"
+?/'boss'
+|2,1,1735629999,47,"'boss'"
+?/keys.*'damage'
+|2,1,1735629989,47,"keys.*'damage'"
+? error
+|2,1,1735629498,,"error"
+?/none
+|2,1,1735571206,47,"none"
+?/aFalse
+|2,1,1735568850,47,"aFalse"
+?/back
+|2,1,1735565800,47,"back"
+?/background
+|2,1,1735565654,47,"background"
+?/color
+|2,1,1735565471,47,"color"
+?/f"\zs
+|2,1,1735565176,47,"f\"\\zs"
+?/padding
+|2,1,1735543825,47,"padding"
+? \<element_width\>
+|2,1,1735543349,,"\\<element_width\\>"
+? \<element_height\>
+|2,1,1735543347,,"\\<element_height\\>"
+?/html
+|2,1,1735491951,47,"html"
+?/font-family
+|2,1,1735490962,47,"font-family"
+?/find(
+|2,1,1735467754,47,"find("
+?/uc\.Chrome
+|2,1,1735466956,47,"uc\\.Chrome"
+?/driver
+|2,1,1735466401,47,"driver"
+?/create_d
+|2,1,1735466345,47,"create_d"
+?/member
+|2,1,1735465308,47,"member"
+?/snowyc
+|2,1,1735465299,47,"snowyc"
+?/logger
+|2,1,1735463137,47,"logger"
+?/edit_member
+|2,1,1735461163,47,"edit_member"
+?/group
+|2,1,1735461137,47,"group"
+?/edit
+|2,1,1735416654,47,"edit"
+?/a
+|2,1,1735416111,47,"a"
+?/test
+|2,1,1735415758,47,"test"
+?/1140634765297451113
+|2,1,1735415552,47,"1140634765297451113"
+?/permission
+|2,1,1735415318,47,"permission"
+?/per
+|2,1,1735415307,47,"per"
+?/west
+|2,1,1735415029,47,"west"
+?  as f:
+|2,1,1735411444,," as f:"
+?/open
+|2,1,1735411437,47,"open"
+? \C\<GH_TOKEN\>
+|2,1,1735394535,,"\\C\\<GH_TOKEN\\>"
+?/gh-timeago
+|2,1,1735390478,47,"gh-timeago"
+? ^\(\d\+\)
+|2,1,1735390443,,"^\\(\\d\\+\\)"
+?/ms to
+|2,1,1735389752,47,"ms to"
+? Âµs
+|2,1,1735389391,,"Âµs"
+? [(\)]
+|2,1,1735389369,,"[(\\)]"
+? [()]
+|2,1,1735389360,,"[()]"
+? Âµs,
+|2,1,1735389348,,"Âµs,"
+? ms,
+|2,1,1735389315,,"ms,"
+? \(.*\):\s*\(.*\)
+|2,1,1735389222,,"\\(.*\\):\\s*\\(.*\\)"
+?  to compute module 
+|2,1,1735389182,," to compute module "
+? Took
+|2,1,1735389155,,"Took"
+?/STARS
+|2,1,1735308639,47,"STARS"
+?/finish
+|2,1,1735259112,47,"finish"
+?/up-or-prefix-search
+|2,1,1735236430,47,"up-or-prefix-search"
+?/perfor
+|2,1,1735229537,47,"perfor"
+?/restore
+|2,1,1735229524,47,"restore"
+?/vimfiles
+|2,1,1735229225,47,"vimfiles"
+?/remote
+|2,1,1735227343,47,"remote"
+?/ssh
+|2,1,1735227116,47,"ssh"
+?/ssh-agent
+|2,1,1735227080,47,"ssh-agent"
+?/known_
+|2,1,1735224920,47,"known_"
+?/AAAAB3NzaC1yc2
+|2,1,1735192950,47,"AAAAB3NzaC1yc2"
+?/b3
+|2,1,1735192900,47,"b3"
+?/\C\\>
+|2,1,1735138280,47,"\\C\\\\>"
+?/user
+|2,1,1735138241,47,"user"
+?/password
+|2,1,1735101678,47,"password"
+?/pass
+|2,1,1735101665,47,"pass"
+?/-o
+|2,1,1735098622,47,"-o"
+?/controlpath
+|2,1,1735095729,47,"controlpath"
+?/cont
+|2,1,1735095724,47,"cont"
+?/scp
+|2,1,1735070292,47,"scp"
 ?/copilot
 |2,1,1734605601,47,"copilot"
 ?/requi
@@ -11266,8 +11954,6 @@ $
 |2,1,1732727717,47,"regist"
 ?/before
 |2,1,1732665272,47,"before"
-?/result
-|2,1,1732664957,47,"result"
 ?/sort_mode
 |2,1,1732664510,47,"sort_mode"
 ?/\C\<sort\>
@@ -11310,8 +11996,6 @@ $
 |2,1,1732647188,47,"bold"
 ?/ch
 |2,1,1732646600,47,"ch"
-?/color
-|2,1,1732643290,47,"color"
 ?/hover
 |2,1,1732642286,47,"hover"
 ?/inter
@@ -11328,12 +12012,8 @@ $
 |2,1,1732632314,47,"lower"
 ??lable
 |2,1,1732632309,63,"lable"
-?/from
-|2,1,1732632306,47,"from"
 ??font-size
 |2,1,1732632247,63,"font-size"
-?/padding
-|2,1,1732632022,47,"padding"
 ?/pt
 |2,1,1732631821,47,"pt"
 ?/seven
@@ -11374,8 +12054,6 @@ $
 |2,1,1732493984,,"timer\\..*    session\\.commit\\n"
 ?/engine
 |2,1,1732493776,47,"engine"
-? ^\s*$\n\s*$
-|2,1,1732493502,,"^\\s*$\\n\\s*$"
 ?/class Select\>
 |2,1,1732493401,47,"class Select\\>"
 ?/\C\<Select\>
@@ -11420,8 +12098,6 @@ $
 |2,1,1732309843,47,"Quick"
 ??\a
 |2,1,1732293193,63,"\\a"
-? @$
-|2,1,1732293193,,"@$"
 ?/limit
 |2,1,1732291637,47,"limit"
 ?/u
@@ -11456,10 +12132,6 @@ $
 |2,1,1731540038,47,"max("
 ?/START
 |2,1,1731540225,47,"START"
-?/import
-|2,1,1731536737,47,"import"
-?/print
-|2,1,1731534514,47,"print"
 ?/wrap
 |2,1,1731278216,47,"wrap"
 ?/diff
@@ -11528,8 +12200,6 @@ $
 |2,1,1730726476,47,"Conn"
 ?/worker
 |2,1,1730712880,47,"worker"
-?/256
-|2,1,1730623509,47,"256"
 ?/headers
 |2,1,1730622487,47,"headers"
 ?/2
@@ -11618,8 +12288,6 @@ $
 |2,1,1730139570,47,"\\C\\<red\\>"
 ?/luxon
 |2,1,1730111139,47,"luxon"
-?/\~
-|2,1,1729892193,47,"\\~"
 ?/~
 |2,1,1729892191,47,"~"
 ??complete
@@ -11806,8 +12474,6 @@ $
 |2,1,1729528322,47,"gray"
 ?/unused
 |2,1,1729525814,47,"unused"
-?/tmp
-|2,1,1729525370,47,"tmp"
 ?/worker.*status
 |2,1,1729515318,47,"worker.*status"
 ?/status
@@ -11866,8 +12532,6 @@ $
 |2,1,1729267201,47,"sqlite3"
 ?/file
 |2,1,1729267065,47,"file"
-?/\/tmp
-|2,1,1729257134,47,"\\/tmp"
 ?/FIEL
 |2,1,1729255703,47,"FIEL"
 ?/--nth
@@ -12012,8 +12676,6 @@ $
 |2,1,1729185417,47,"\\(def\\|class\\)\\s\\+\\w*modi"
 ?/Timestap
 |2,1,1729173489,47,"Timestap"
-?/group
-|2,1,1729173329,47,"group"
 ?/duration = 
 |2,1,1729172841,47,"duration = "
 ?/ = 1
@@ -12034,8 +12696,6 @@ $
 |2,1,1729165636,47,"system"
 ?/download_portionurl
 |2,1,1729165595,47,"download_portionurl"
-?/os\.
-|2,1,1729165579,47,"os\\."
 ?/breakpoi
 |2,1,1729163608,47,"breakpoi"
 ?/do
@@ -12126,8 +12786,6 @@ $
 |2,1,1728889493,47,"Start"
 ?/video['c
 |2,1,1728888954,47,"video['c"
-?/html
-|2,1,1728888914,47,"html"
 ?/Downloaded
 |2,1,1728887024,47,"Downloaded"
 ?/URL:
@@ -12480,8 +13138,6 @@ $
 |2,1,1725759219,47,"++rows"
 ?/\C\<rows\>
 |2,1,1725759204,47,"\\C\\<rows\\>"
-?/error
-|2,1,1725758708,47,"error"
 ?/Error:
 |2,1,1725758428,47,"Error:"
 ?/sort_ans
@@ -12526,8 +13182,6 @@ $
 |2,1,1725563660,47,"rows="
 ?/rows
 |2,1,1725563657,47,"rows"
-?/height
-|2,1,1725563647,47,"height"
 ?/term_open
 |2,1,1725562942,47,"term_open"
 ?/termopen
@@ -12644,8 +13298,6 @@ $
 |2,1,1725292389,47,"--expect"
 ?/print-query
 |2,1,1725292327,47,"print-query"
-?/history
-|2,1,1725290550,47,"history"
 ?/reverse
 |2,1,1725282744,47,"reverse"
 ?/--reverse
@@ -12710,8 +13362,6 @@ $
 |2,1,1725017371,47,"bashrc"
 ?/reload
 |2,1,1725017277,47,"reload"
-?/SHELL
-|2,1,1725011308,47,"SHELL"
 ?/data_files
 |2,1,1724982469,47,"data_files"
 ?/use_cac
@@ -12812,8 +13462,6 @@ $
 |2,1,1724273995,47,"pypirc"
 ? \<needle_index\>
 |2,1,1724270745,,"\\<needle_index\\>"
-?/undo
-|2,1,1724243888,47,"undo"
 ?/\(def\|class\)\s\+\w*setup
 |2,1,1724243839,47,"\\(def\\|class\\)\\s\\+\\w*setup"
 ?/setup(
@@ -12856,8 +13504,6 @@ $
 |2,1,1724196558,47,"jk"
 ?/clientserver
 |2,1,1724195074,47,"clientserver"
-?/remote
-|2,1,1724195012,47,"remote"
 ??win32
 |2,1,1724194907,63,"win32"
 ?/post_mo
@@ -12984,8 +13630,6 @@ $
 |2,1,1723417106,47,"shift"
 ?/bitwise
 |2,1,1723417096,47,"bitwise"
-? ^\(\d\+\)
-|2,1,1723329328,,"^\\(\\d\\+\\)"
 ?/GH
 |2,1,1723327204,47,"GH"
 ?/TAB
@@ -13072,8 +13716,6 @@ $
 |2,1,1722888332,,"DURATION"
 ? offset_integer
 |2,1,1722888323,,"offset_integer"
-?/static
-|2,1,1722887557,47,"static"
 ?/glob
 |2,1,1722887180,47,"glob"
 ?/videos
@@ -13422,8 +14064,6 @@ $
 |2,1,1722029645,,"Video"
 ? @enforce_types
 |2,1,1722029631,,"@enforce_types"
-? .*
-|2,1,1722014185,,".*"
 ? __typename
 |2,1,1722014185,,"__typename"
 ?/envrc
@@ -13466,8 +14106,6 @@ $
 |2,1,1721955691,47,"\\(def\\|class\\)\\s\\+\\w*Video.*Edge"
 ?/contentOffsetSeconds
 |2,1,1721955560,47,"contentOffsetSeconds"
-?/user
-|2,1,1721955387,47,"user"
 ?/Config
 |2,1,1721955120,47,"Config"
 ?/fi
@@ -13512,8 +14150,6 @@ $
 |2,1,1721480262,63,"CocOutline"
 ?/temp_path
 |2,1,1721479444,47,"temp_path"
-?/starship
-|2,1,1721416509,47,"starship"
 ? ^\(\s*\)\(\w\+\), \(.*\)
 |2,1,1721326884,,"^\\(\\s*\\)\\(\\w\\+\\), \\(.*\\)"
 ?/worker_table
@@ -13806,8 +14442,6 @@ $
 |2,1,1718874181,47,">"
 ?/&
 |2,1,1718874160,47,"&"
-?/none
-|2,1,1718872824,47,"none"
 ?/FlaskStylesheet
 |2,1,1718755370,47,"FlaskStylesheet"
 ??Flask
@@ -14030,8 +14664,6 @@ $
 |2,1,1718096040,47,"\\(def\\|class\\)\\s\\+\\w*befo"
 ?/legent
 |2,1,1718095510,47,"legent"
-?/background
-|2,1,1717962612,47,"background"
 ?/width
 |2,1,1717960984,47,"width"
 ?/hover-fill
@@ -14170,8 +14802,6 @@ $
 |2,1,1717651166,47,"\\.post"
 ?/AWS
 |2,1,1717650670,47,"AWS"
-?/export
-|2,1,1717616732,47,"export"
 ?/(5)
 |2,1,1717612416,47,"(5)"
 ?/except
@@ -14322,10 +14952,6 @@ $
 |2,1,1717152420,47,"Processing post"
 ?/None
 |2,1,1717152299,47,"None"
-? ,  \ze]
-|2,1,1717151406,,",  \\ze]"
-? Time taken
-|2,1,1717151391,,"Time taken"
 ? timer\..*\"getattr {key}\"
 |2,1,1717151162,,"timer\\..*\\\"getattr {key}\\\""
 ? timer\..*\"loop\"
@@ -14438,8 +15064,6 @@ $
 |2,1,1716989383,47,"wheel"
 ?/twine
 |2,1,1716985129,47,"twine"
-?/col
-|2,1,1716981888,47,"col"
 ?/scrollbar
 |2,1,1716981742,47,"scrollbar"
 ?/\(def\|class\)\s\+\w*load_db
@@ -14702,8 +15326,6 @@ $
 |2,1,1716622633,47,"https"
 ?/Raw
 |2,1,1716621397,47,"Raw"
-?/back
-|2,1,1716620291,47,"back"
 ?/backgr
 |2,1,1716620234,47,"backgr"
 ?/Delete 
@@ -14756,8 +15378,6 @@ $
 |2,1,1716545595,47,"dotenv"
 ?/fileutil
 |2,1,1716545332,47,"fileutil"
-?/headless
-|2,1,1716496142,47,"headless"
 ?/PWD
 |2,1,1716428002,47,"PWD"
 ?/chromedriver
@@ -14796,8 +15416,6 @@ $
 |2,1,1716177922,47,"startswith"
 ? timer\..*\"basename\"
 |2,1,1716172350,,"timer\\..*\\\"basename\\\""
-?/atuin
-|2,1,1716168031,47,"atuin"
 ?/\(def\|class\)\s\+\w*fish
 |2,1,1716167104,47,"\\(def\\|class\\)\\s\\+\\w*fish"
 ?/comple
@@ -14854,8 +15472,6 @@ $
 |2,1,1716098246,47,"refrenc"
 ?/usage
 |2,1,1716098241,47,"usage"
-?/check
-|2,1,1716098088,47,"check"
 ?/Cleaning up
 |2,1,1716092566,47,"Cleaning up"
 ?/\(def\|class\)\s\+\w*stale
@@ -14942,8 +15558,6 @@ $
 |2,1,1714567594,47,"fix"
 ?/\(def\|class\)\s\+\w*elements
 |2,1,1714557737,47,"\\(def\\|class\\)\\s\\+\\w*elements"
-?/bind
-|2,1,1714453306,47,"bind"
 ?/Cleaning
 |2,1,1714387404,47,"Cleaning"
 ?/DELETE
@@ -14962,8 +15576,6 @@ $
 |2,1,1714334328,47,"shellcheck"
 ?/flock
 |2,1,1714328421,47,"flock"
-?/HOME
-|2,1,1714326060,47,"HOME"
 ?/expan
 |2,1,1714326045,47,"expan"
 ?/\$
@@ -15038,8 +15650,6 @@ $
 |2,1,1714027009,47,"\\r"
 ?/
 |2,1,1714027004,47,""
-?/\\n
-|2,1,1714026988,47,"\\\\n"
 ?/\s\s\s\s
 |2,1,1714026946,47,"\\s\\s\\s\\s"
 ?/ale_
@@ -15160,10 +15770,6 @@ $
 |2,1,1713540619,47,": Portion"
 ?/{{
 |2,1,1713524757,47,"{{"
-? \.
-|2,1,1713524723,,"\\."
-?/\.
-|2,1,1713524710,47,"\\."
 ? {[{%]
 |2,1,1713524678,,"{[{%]"
 ? {{
@@ -15238,8 +15844,6 @@ $
 |2,1,1713276869,47,"script"
 ?/interpreter
 |2,1,1713276753,47,"interpreter"
-? python
-|2,1,1713276657,,"python"
 ?/undetec
 |2,1,1712793130,47,"undetec"
 ?/coc.*action
@@ -15268,8 +15872,6 @@ $
 |2,1,1712504489,47,"dict(row"
 ?/db
 |2,1,1712503273,47,"db"
-?/htmx
-|2,1,1712497362,47,"htmx"
 ?/Done
 |2,1,1712496577,47,"Done"
 ?/\(def\|class\)\s\+\w*pong
@@ -15296,8 +15898,6 @@ $
 |2,1,1712364245,47,"\\(def\\|class\\)\\s\\+\\w*vivek"
 ?/\(def\|class\)\s\+\w*test
 |2,1,1712364243,47,"\\(def\\|class\\)\\s\\+\\w*test"
-?/test
-|2,1,1712364150,47,"test"
 ?/\C\<endpoint\>
 |2,1,1712363942,47,"\\C\\<endpoint\\>"
 ?/endpoint
@@ -15434,8 +16034,6 @@ $
 |2,1,1711927796,47,"\\/edit"
 ?/@app\.route('\/[^')]*\<videos
 |2,1,1711917015,47,"@app\\.route('\\/[^')]*\\<videos"
-?/pass
-|2,1,1711915802,47,"pass"
 ?/passs
 |2,1,1711915801,47,"passs"
 ?/@app\.route('\/[^')]*\<
@@ -15504,8 +16102,6 @@ $
 |2,1,1711089394,47,"load_db"
 ?/app\.config
 |2,1,1711063386,47,"app\\.config"
-?/config
-|2,1,1711063376,47,"config"
 ?/values
 |2,1,1711060616,47,"values"
 ?/column_categories
@@ -16060,8 +16656,6 @@ $
 |2,1,1692362776,47,"arg_string"
 ?/argspec
 |2,1,1692362674,47,"argspec"
-? ^\s\+$
-|2,1,1692361051,,"^\\s\\+$"
 ?/argp
 |2,1,1692360763,47,"argp"
 ? timer\..*\"import inspect\"
@@ -16228,8 +16822,6 @@ $
 |2,1,1691494684,47,"cache_handle"
 ?/videoid_
 |2,1,1691494369,47,"videoid_"
-?/cache
-|2,1,1691494338,47,"cache"
 ?/\v^\s*\zs(async)?\s*function\s*\zs\w*\s*[^(]*sqlit
 |2,1,1691494061,47,"\\v^\\s*\\zs(async)?\\s*function\\s*\\zs\\w*\\s*[^(]*sqlit"
 ?/\v^\s*\zs(async)?\s*function\s*\w*\s*\zs[^(]*
@@ -16272,8 +16864,6 @@ $
 |2,1,1691440366,47,"tslint"
 ?/ALE
 |2,1,1691400172,47,"ALE"
-?/confi
-|2,1,1691399243,47,"confi"
 ?/eslint
 |2,1,1691391779,47,"eslint"
 ?/lint
@@ -16514,8 +17104,6 @@ $
 |2,1,1689185437,47,"io"
 ?/so
 |2,1,1689185434,47,"so"
-?/compl
-|2,1,1689184677,47,"compl"
 ?/poll
 |2,1,1689184638,47,"poll"
 ?/vu
@@ -16708,8 +17296,12 @@ $
 |2,1,1685152394,47,"handle_error"
 
 # Expression History (newest to oldest):
+=expand("#:p")
+|2,2,1735757784,,"expand(\"#:p\")"
 =expand("#")
-|2,2,1718483606,,"expand(\"#\")"
+|2,2,1735757771,,"expand(\"#\")"
+=expand("%")
+|2,2,1735308900,,"expand(\"%\")"
 =expand("%#")
 |2,2,1718483597,,"expand(\"%#\")"
 =g:coc_status
@@ -16728,6 +17320,8 @@ $
 |2,2,1688309303,,"v:oldfiles"
 
 # Input Line History (newest to oldest):
+@vivek
+|2,3,1735227181,,"vivek"
 @div class="wide">
 |2,3,1732631639,,"div class=\"wide\">"
 @div>
@@ -16966,50 +17560,52 @@ $
 |2,4,1693311567,,"cont"
 
 # Registers:
-"0	LINE	0
-	  ATK     CRIT    DMR 
-	  ATK     ATKSPD  DMR 
-	  ATKSPD  CRIT    DMR 
-	  ATK     CD      CRIT
-	  ATK     ATKSPD  CD  
-	  ATKSPD  CD      CRIT
-	  ATK     ATKSPD  CRIT
-	
-|3,0,0,1,8,0,1734475433,"  ATK     CRIT    DMR ","  ATK     ATKSPD  DMR ","  ATKSPD  CRIT    DMR ","  ATK     CD      CRIT","  ATK     ATKSPD  CD  ","  ATKSPD  CD      CRIT","  ATK     ATKSPD  CRIT",""
-""1	LINE	0
-	
-|3,1,1,1,1,0,1734605638,""
+""0	LINE	0
+	  241122 -
+|3,1,0,1,1,0,1735934542,"  241122 -"
+"1	LINE	0
+	  241122 -
+|3,0,1,1,1,0,1735934539,"  241122 -"
 "2	LINE	0
-	def add(a, b):
-	    return a + b
-|3,0,2,1,2,0,1734605637,"def add(a, b):","    return a + b"
+	#
+|3,0,2,1,1,0,1735930500,"#"
 "3	LINE	0
-	def main():
-|3,0,3,1,1,0,1734605621,"def main():"
+	#
+|3,0,3,1,1,0,1735930499,"#"
 "4	LINE	0
-	
-|3,0,4,1,1,0,1734476036,""
+	# run.vim: 
+|3,0,4,1,1,0,1735930324,"# run.vim: "
 "5	LINE	0
+	    text = remove_adjacent_blank_lines(text)
+	    text = insert_blank_line_between_adjacent_lines_beginning_with_dash(text)
+	    text = wrap_text_preserve_empty_lines(text, width=70)
 	
-|3,0,5,1,1,0,1734475903,""
+|3,0,5,1,4,0,1735909528,"    text = remove_adjacent_blank_lines(text)","    text = insert_blank_line_between_adjacent_lines_beginning_with_dash(text)","    text = wrap_text_preserve_empty_lines(text, width=70)",""
 "6	LINE	0
-	
-|3,0,6,1,1,0,1734475780,""
+	    # def remove_adjacent_blank_lines(text):
+|3,0,6,1,1,0,1735909382,"    # def remove_adjacent_blank_lines(text):"
 "7	LINE	0
-	
-|3,0,7,1,1,0,1734475561,""
+	    # 
+|3,0,7,1,1,0,1735909345,"    # "
 "8	LINE	0
-	# Output file path
-	output_file = "substat_permutations_5c3.txt"
+	def remove_adjacent_blank_lines(text):
+	    # remove_adjacent_blank_lines {{{
+	    lines = text.split("\n")
+	    new_lines = []
+	    for i, line in enumerate(lines):
+	        if i > 0 and lines[i-1].strip() == "" and line.strip() == "":
+	            continue
+	        new_lines.append(line)
+	    return "\n".join(new_lines)
+	    # }}}
 	
-|3,0,8,1,3,0,1734474942,"# Output file path","output_file = \"substat_permutations_5c3.txt\"",""
+|3,0,8,1,11,0,1735909328,"def remove_adjacent_blank_lines(text):","    # remove_adjacent_blank_lines {{{","    lines = text.split(\"\\n\")","    new_lines = []","    for i, line in enumerate(lines):","        if i > 0 and lines[i-1].strip() == \"\" and line.strip() == \"\":","            continue","        new_lines.append(line)","    return \"\\n\".join(new_lines)","    # }}}",""
 "9	LINE	0
-	    
-	    print(f"Generated {len(permutations)} permutations. Saved to {output_file}")
-|3,0,9,1,2,0,1734474928,"    ","    print(f\"Generated {len(permutations)} permutations. Saved to {output_file}\")"
+	    timer.print("get_diff")
+|3,0,9,1,1,0,1735909112,"    timer.print(\"get_diff\")"
 "a	CHAR	0
-	0;i'jkea'jk
-|3,0,10,0,1,0,1734475064,"0;i'jkea'jk"
+	Tabularize /:/l1c1l1
+|3,0,10,0,1,0,1735909446,"Tabularize /:/l1c1l1"
 "i	CHAR	0
 	ado_up()jk:q!
 |3,0,18,0,1,0,1724200553,"ado_up()jk:q!"
@@ -17020,367 +17616,704 @@ $
 	:w:€ýa
 |3,0,20,0,1,0,1730556532,":w:€ýa"
 "l	CHAR	0
-	jk:q!llk;loline.repla	ceh€kb("https:jklllll;;;gf:w
-|3,0,21,0,1,0,1727781297,"jk:q!llk;loline.repla	ceh€kb(\"https:jklllll;;;gf:w"
-"s	CHAR	0
-	{time.time() - start_time:.2f} seconds 
-|3,0,28,0,1,0,1728799695,"{time.time() - start_time:.2f} seconds "
+	lc
+|3,0,21,0,1,0,1735631681,"lc"
+"s	LINE	0
+	from box import Timer
+	timer = Timer()
+	from box import handler, ic, ib , rel2abs, markup
+	from paddleocr import PaddleOCR
+	import time
+	import glob
+	import re
+	
+	def parse_raw(image_path):
+	    ocr = PaddleOCR(use_angle_cls=True, lang='en', show_log=True)
+	    result = ocr.ocr(image_path, cls=True)
+	    lines = [line[1][0] for line in result]
+	    for idx in range(len(result)):
+	        res = result[idx]
+	        for line in res:
+	            print(line)
+	
+	def pretty_print_box(box):
+	    # box sample: [[[138.0, 36.0], [462.0, 36.0], [462.0, 77.0], [138.0, 77.0]]
+	    (top_left, top_right, bottom_right, bottom_left) = box
+	    (x1, y1), (x2, y2), (x3, y3), (x4, y4) = box
+	
+	    x_min = min(x1, x2, x3, x4)
+	    x_max = max(x1, x2, x3, x4)
+	    y_min = min(y1, y2, y3, y4)
+	    y_max = max(y1, y2, y3, y4)
+	
+	    # Validation checks
+	    assert x_min < x_max, f"Invalid x coordinates: min ({x_min}) >= max ({x_max})"
+	    assert y_min < y_max, f"Invalid y coordinates: min ({y_min}) >= max ({y_max})"
+	    
+	    # Additional geometric checks
+	    assert abs(y1 - y2) < (y_max - y_min), "Top edge is not roughly horizontal"
+	    assert abs(y3 - y4) < (y_max - y_min), "Bottom edge is not roughly horizontal"
+	    assert abs(x1 - x4) < (x_max - x_min), "Left edge is not roughly vertical"
+	    assert abs(x2 - x3) < (x_max - x_min), "Right edge is not roughly vertical"
+	
+	    pretty_string_flat = {
+	        "left": x_min,
+	        "right": x_max,
+	        "top": y_min,
+	        "bottom": y_max,
+	        "top_left": (x1, y1),
+	        "top_right": (x2, y2),
+	        "bottom_right": (x3, y3),
+	        "bottom_left": (x4, y4),
+	    }
+	    
+	    print(f"{box} => {pretty_string_flat}")
+	
+|3,0,28,1,50,0,1735724051,"from box import Timer","timer = Timer()","from box import handler, ic, ib , rel2abs, markup","from paddleocr import PaddleOCR","import time","import glob","import re","","def parse_raw(image_path):","    ocr = PaddleOCR(use_angle_cls=True, lang='en', show_log=True)","    result = ocr.ocr(image_path, cls=True)","    lines = [line[1][0] for line in result]","    for idx in range(len(result)):","        res = result[idx]",>26
+|<"        for line in res:","            print(line)","","def pretty_print_box(box):","    # box sample: [[[138.0, 36.0], [462.0, 36.0], [462.0, 77.0], [138.0, 77.0]]","    (top_left, top_right, bottom_right, bottom_left) = box","    (x1, y1), (x2, y2), (x3, y3), (x4, y4) = box","","    x_min = min(x1, x2, x3, x4)","    x_max = max(x1, x2, x3, x4)","    y_min = min(y1, y2, y3, y4)","    y_max = max(y1, y2, y3, y4)","","    # Validation checks",>86
+|<"    assert x_min < x_max, f\"Invalid x coordinates: min ({x_min}) >= max ({x_max})\"","    assert y_min < y_max, f\"Invalid y coordinates: min ({y_min}) >= max ({y_max})\"","    ","    # Additional geometric checks","    assert abs(y1 - y2) < (y_max - y_min), \"Top edge is not roughly horizontal\"","    assert abs(y3 - y4) < (y_max - y_min), \"Bottom edge is not roughly horizontal\"","    assert abs(x1 - x4) < (x_max - x_min), \"Left edge is not roughly vertical\"",>83
+|<"    assert abs(x2 - x3) < (x_max - x_min), \"Right edge is not roughly vertical\"","","    pretty_string_flat = {","        \"left\": x_min,","        \"right\": x_max,","        \"top\": y_min,","        \"bottom\": y_max,","        \"top_left\": (x1, y1),","        \"top_right\": (x2, y2),","        \"bottom_right\": (x3, y3),","        \"bottom_left\": (x4, y4),","    }","    ","    print(f\"{box} => {pretty_string_flat}\")",""
 "-	CHAR	0
-	" 
-|3,0,36,0,1,0,1734605602,"\" "
+	src/utils/
+|3,0,36,0,1,0,1735933883,"src/utils/"
 
 # File marks:
-'0  14  0  ~/file.py
-|4,48,14,0,1734652105,"~/file.py"
-'1  90  0  ~/.vim/vimrc
-|4,49,90,0,1734605604,"~/.vim/vimrc"
-'2  90  0  ~/.vim/vimrc
-|4,50,90,0,1734605604,"~/.vim/vimrc"
-'3  10  115  ~/pyscripts/crk_substats.py
-|4,51,10,115,1734518343,"~/pyscripts/crk_substats.py"
-'4  10  115  ~/pyscripts/crk_substats.py
-|4,52,10,115,1734518343,"~/pyscripts/crk_substats.py"
-'5  10  115  ~/pyscripts/crk_substats.py
-|4,53,10,115,1734518343,"~/pyscripts/crk_substats.py"
-'6  10  115  ~/pyscripts/crk_substats.py
-|4,54,10,115,1734518343,"~/pyscripts/crk_substats.py"
-'7  1  2  ~/pyscripts/requirements.txt
-|4,55,1,2,1734474983,"~/pyscripts/requirements.txt"
-'8  1  2  ~/pyscripts/requirements.txt
-|4,56,1,2,1734474983,"~/pyscripts/requirements.txt"
-'9  1  2  ~/pyscripts/requirements.txt
-|4,57,1,2,1734474983,"~/pyscripts/requirements.txt"
+'0  1  22  ~/python_common/box/todo.txt
+|4,48,1,22,1735934550,"~/python_common/box/todo.txt"
+'1  101  39  ~/python_common/box/test_unzip_url.py
+|4,49,101,39,1735933955,"~/python_common/box/test_unzip_url.py"
+'2  101  39  ~/python_common/box/test_unzip_url.py
+|4,50,101,39,1735933955,"~/python_common/box/test_unzip_url.py"
+'3  31  4  ~/disc-bot/src/utils/test_unzip_url.py
+|4,51,31,4,1735933952,"~/disc-bot/src/utils/test_unzip_url.py"
+'4  31  4  ~/disc-bot/src/utils/test_unzip_url.py
+|4,52,31,4,1735933952,"~/disc-bot/src/utils/test_unzip_url.py"
+'5  23  0  ~/.config/setup.fish
+|4,53,23,0,1735933691,"~/.config/setup.fish"
+'6  23  0  ~/.config/setup.fish
+|4,54,23,0,1735933691,"~/.config/setup.fish"
+'7  23  0  ~/.config/setup.fish
+|4,55,23,0,1735933691,"~/.config/setup.fish"
+'8  23  0  ~/.config/setup.fish
+|4,56,23,0,1735933691,"~/.config/setup.fish"
+'9  23  0  ~/.config/setup.fish
+|4,57,23,0,1735933691,"~/.config/setup.fish"
 
 # Jumplist (newest first):
--'  14  0  ~/file.py
-|4,39,14,0,1734652105,"~/file.py"
--'  1  0  ~/file.py
-|4,39,1,0,1734605610,"~/file.py"
--'  90  0  ~/.vim/vimrc
-|4,39,90,0,1734605604,"~/.vim/vimrc"
--'  90  0  ~/.vim/vimrc
-|4,39,90,0,1734605604,"~/.vim/vimrc"
--'  41  0  ~/.vim/vimrc
-|4,39,41,0,1734605601,"~/.vim/vimrc"
--'  41  0  ~/.vim/vimrc
-|4,39,41,0,1734605601,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1734605592,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1734605592,"~/.vim/vimrc"
--'  10  115  ~/pyscripts/crk_substats.py
-|4,39,10,115,1734518343,"~/pyscripts/crk_substats.py"
--'  10  115  ~/pyscripts/crk_substats.py
-|4,39,10,115,1734518343,"~/pyscripts/crk_substats.py"
--'  10  115  ~/pyscripts/crk_substats.py
-|4,39,10,115,1734518343,"~/pyscripts/crk_substats.py"
--'  9  42  ~/pyscripts/crk_substats.py
-|4,39,9,42,1734475073,"~/pyscripts/crk_substats.py"
--'  9  42  ~/pyscripts/crk_substats.py
-|4,39,9,42,1734475073,"~/pyscripts/crk_substats.py"
--'  9  42  ~/pyscripts/crk_substats.py
-|4,39,9,42,1734475073,"~/pyscripts/crk_substats.py"
--'  16  36  ~/pyscripts/crk_substats.py
-|4,39,16,36,1734475057,"~/pyscripts/crk_substats.py"
--'  16  36  ~/pyscripts/crk_substats.py
-|4,39,16,36,1734475057,"~/pyscripts/crk_substats.py"
--'  16  36  ~/pyscripts/crk_substats.py
-|4,39,16,36,1734475057,"~/pyscripts/crk_substats.py"
--'  13  29  ~/pyscripts/crk_substats.py
-|4,39,13,29,1734474990,"~/pyscripts/crk_substats.py"
--'  13  29  ~/pyscripts/crk_substats.py
-|4,39,13,29,1734474990,"~/pyscripts/crk_substats.py"
--'  13  29  ~/pyscripts/crk_substats.py
-|4,39,13,29,1734474990,"~/pyscripts/crk_substats.py"
--'  1  2  ~/pyscripts/requirements.txt
-|4,39,1,2,1734474983,"~/pyscripts/requirements.txt"
--'  1  2  ~/pyscripts/requirements.txt
-|4,39,1,2,1734474983,"~/pyscripts/requirements.txt"
--'  1  2  ~/pyscripts/requirements.txt
-|4,39,1,2,1734474983,"~/pyscripts/requirements.txt"
--'  253  4  ~/ui-components-css/ui-components-css-api.py
-|4,39,253,4,1734474967,"~/ui-components-css/ui-components-css-api.py"
--'  253  4  ~/ui-components-css/ui-components-css-api.py
-|4,39,253,4,1734474967,"~/ui-components-css/ui-components-css-api.py"
--'  253  4  ~/ui-components-css/ui-components-css-api.py
-|4,39,253,4,1734474967,"~/ui-components-css/ui-components-css-api.py"
--'  253  4  ~/ui-components-css/ui-components-css-api.py
-|4,39,253,4,1734474967,"~/ui-components-css/ui-components-css-api.py"
--'  11  4  ~/pyscripts/crk_substats.py
-|4,39,11,4,1734474956,"~/pyscripts/crk_substats.py"
--'  11  4  ~/pyscripts/crk_substats.py
-|4,39,11,4,1734474956,"~/pyscripts/crk_substats.py"
--'  11  4  ~/pyscripts/crk_substats.py
-|4,39,11,4,1734474956,"~/pyscripts/crk_substats.py"
--'  18  0  ~/pyscripts/crk_substats.py
-|4,39,18,0,1734474943,"~/pyscripts/crk_substats.py"
--'  18  0  ~/pyscripts/crk_substats.py
-|4,39,18,0,1734474943,"~/pyscripts/crk_substats.py"
--'  18  0  ~/pyscripts/crk_substats.py
-|4,39,18,0,1734474943,"~/pyscripts/crk_substats.py"
--'  4  38  ~/pyscripts/crk_substats.py
-|4,39,4,38,1734474924,"~/pyscripts/crk_substats.py"
--'  4  38  ~/pyscripts/crk_substats.py
-|4,39,4,38,1734474924,"~/pyscripts/crk_substats.py"
--'  4  38  ~/pyscripts/crk_substats.py
-|4,39,4,38,1734474924,"~/pyscripts/crk_substats.py"
--'  14  0  ~/pyscripts/crk_substats.py
-|4,39,14,0,1734474919,"~/pyscripts/crk_substats.py"
--'  14  0  ~/pyscripts/crk_substats.py
-|4,39,14,0,1734474919,"~/pyscripts/crk_substats.py"
--'  14  0  ~/pyscripts/crk_substats.py
-|4,39,14,0,1734474919,"~/pyscripts/crk_substats.py"
--'  19  4  ~/pyscripts/crk_substats.py
-|4,39,19,4,1734474907,"~/pyscripts/crk_substats.py"
--'  19  4  ~/pyscripts/crk_substats.py
-|4,39,19,4,1734474907,"~/pyscripts/crk_substats.py"
--'  19  4  ~/pyscripts/crk_substats.py
-|4,39,19,4,1734474907,"~/pyscripts/crk_substats.py"
--'  20  0  ~/pyscripts/crk_substats.py
-|4,39,20,0,1734474902,"~/pyscripts/crk_substats.py"
--'  20  0  ~/pyscripts/crk_substats.py
-|4,39,20,0,1734474902,"~/pyscripts/crk_substats.py"
--'  20  0  ~/pyscripts/crk_substats.py
-|4,39,20,0,1734474902,"~/pyscripts/crk_substats.py"
--'  1  0  ~/pyscripts/crk_substats.py
-|4,39,1,0,1734474893,"~/pyscripts/crk_substats.py"
--'  1  0  ~/pyscripts/crk_substats.py
-|4,39,1,0,1734474893,"~/pyscripts/crk_substats.py"
--'  1  0  ~/pyscripts/crk_substats.py
-|4,39,1,0,1734474893,"~/pyscripts/crk_substats.py"
--'  21  0  ~/pyscripts/crk_substats.py
-|4,39,21,0,1734474889,"~/pyscripts/crk_substats.py"
--'  21  0  ~/pyscripts/crk_substats.py
-|4,39,21,0,1734474889,"~/pyscripts/crk_substats.py"
--'  21  0  ~/pyscripts/crk_substats.py
-|4,39,21,0,1734474889,"~/pyscripts/crk_substats.py"
--'  1  0  ~/ui-components-css/ui-components-css-api.py
-|4,39,1,0,1734347938,"~/ui-components-css/ui-components-css-api.py"
--'  1  0  ~/ui-components-css/ui-components-css-api.py
-|4,39,1,0,1734347938,"~/ui-components-css/ui-components-css-api.py"
--'  1  0  ~/ui-components-css/ui-components-css-api.py
-|4,39,1,0,1734347938,"~/ui-components-css/ui-components-css-api.py"
--'  1  0  ~/ui-components-css/ui-components-css-api.py
-|4,39,1,0,1734347938,"~/ui-components-css/ui-components-css-api.py"
--'  12  0  ~/genproject/python-flask-tailwind.sh
-|4,39,12,0,1734347937,"~/genproject/python-flask-tailwind.sh"
--'  12  0  ~/genproject/python-flask-tailwind.sh
-|4,39,12,0,1734347937,"~/genproject/python-flask-tailwind.sh"
--'  12  0  ~/genproject/python-flask-tailwind.sh
-|4,39,12,0,1734347937,"~/genproject/python-flask-tailwind.sh"
--'  12  0  ~/genproject/python-flask-tailwind.sh
-|4,39,12,0,1734347937,"~/genproject/python-flask-tailwind.sh"
--'  1  0  ~/genproject/python-flask-tailwind.sh
-|4,39,1,0,1734347757,"~/genproject/python-flask-tailwind.sh"
--'  1  0  ~/genproject/python-flask-tailwind.sh
-|4,39,1,0,1734347757,"~/genproject/python-flask-tailwind.sh"
--'  1  0  ~/genproject/python-flask-tailwind.sh
-|4,39,1,0,1734347757,"~/genproject/python-flask-tailwind.sh"
--'  1  0  ~/genproject/python-flask-tailwind.sh
-|4,39,1,0,1734347757,"~/genproject/python-flask-tailwind.sh"
--'  1  0  /mnt/vps/Dockerfile-deploy
-|4,39,1,0,1734340841,"/mnt/vps/Dockerfile-deploy"
--'  1  0  /mnt/vps/Dockerfile-deploy
-|4,39,1,0,1734340841,"/mnt/vps/Dockerfile-deploy"
--'  1  0  /mnt/vps/Dockerfile-deploy
-|4,39,1,0,1734340841,"/mnt/vps/Dockerfile-deploy"
--'  1  0  /mnt/vps/Dockerfile-deploy
-|4,39,1,0,1734340841,"/mnt/vps/Dockerfile-deploy"
--'  1  0  /mnt/vps/Dockerfile-deploy
-|4,39,1,0,1734340841,"/mnt/vps/Dockerfile-deploy"
--'  1  0  /mnt/vps/Dockerfile-deploy
-|4,39,1,0,1734340841,"/mnt/vps/Dockerfile-deploy"
--'  1  0  /mnt/vps/Dockerfile-deploy
-|4,39,1,0,1734340841,"/mnt/vps/Dockerfile-deploy"
--'  1  0  /mnt/vps/Dockerfile-deploy
-|4,39,1,0,1734340841,"/mnt/vps/Dockerfile-deploy"
--'  1  2  /mnt/vps/Dockerfile-deploy
-|4,39,1,2,1734340583,"/mnt/vps/Dockerfile-deploy"
--'  2  0  /mnt/vps/vm.bash
-|4,39,2,0,1734125848,"/mnt/vps/vm.bash"
--'  2  0  /mnt/vps/vm.bash
-|4,39,2,0,1734125848,"/mnt/vps/vm.bash"
--'  2  0  /mnt/vps/vm.bash
-|4,39,2,0,1734125848,"/mnt/vps/vm.bash"
--'  2  0  /mnt/vps/vm.bash
-|4,39,2,0,1734125848,"/mnt/vps/vm.bash"
--'  2  0  /mnt/vps/vm.bash
-|4,39,2,0,1734125848,"/mnt/vps/vm.bash"
--'  2  0  /mnt/vps/vm.bash
-|4,39,2,0,1734125848,"/mnt/vps/vm.bash"
--'  2  0  /mnt/vps/vm.bash
-|4,39,2,0,1734125848,"/mnt/vps/vm.bash"
--'  2  0  /mnt/vps/vm.bash
-|4,39,2,0,1734125848,"/mnt/vps/vm.bash"
--'  2  0  /mnt/vps/vm.bash
-|4,39,2,0,1734125848,"/mnt/vps/vm.bash"
--'  2  0  /mnt/vps/vm.bash
-|4,39,2,0,1734125848,"/mnt/vps/vm.bash"
--'  3  0  /mnt/vps/vm.bash
-|4,39,3,0,1734125330,"/mnt/vps/vm.bash"
--'  3  0  /mnt/vps/vm.bash
-|4,39,3,0,1734125330,"/mnt/vps/vm.bash"
--'  3  0  /mnt/vps/vm.bash
-|4,39,3,0,1734125330,"/mnt/vps/vm.bash"
--'  3  0  /mnt/vps/vm.bash
-|4,39,3,0,1734125330,"/mnt/vps/vm.bash"
--'  3  0  /mnt/vps/vm.bash
-|4,39,3,0,1734125330,"/mnt/vps/vm.bash"
--'  3  0  /mnt/vps/vm.bash
-|4,39,3,0,1734125330,"/mnt/vps/vm.bash"
--'  3  0  /mnt/vps/vm.bash
-|4,39,3,0,1734125330,"/mnt/vps/vm.bash"
--'  3  0  /mnt/vps/vm.bash
-|4,39,3,0,1734125330,"/mnt/vps/vm.bash"
--'  3  0  /mnt/vps/vm.bash
-|4,39,3,0,1734125330,"/mnt/vps/vm.bash"
--'  3  0  /mnt/vps/vm.bash
-|4,39,3,0,1734125330,"/mnt/vps/vm.bash"
--'  4  65  /mnt/vps/vm.bash
-|4,39,4,65,1734125328,"/mnt/vps/vm.bash"
--'  4  65  /mnt/vps/vm.bash
-|4,39,4,65,1734125328,"/mnt/vps/vm.bash"
--'  4  65  /mnt/vps/vm.bash
-|4,39,4,65,1734125328,"/mnt/vps/vm.bash"
--'  4  65  /mnt/vps/vm.bash
-|4,39,4,65,1734125328,"/mnt/vps/vm.bash"
--'  4  65  /mnt/vps/vm.bash
-|4,39,4,65,1734125328,"/mnt/vps/vm.bash"
--'  4  65  /mnt/vps/vm.bash
-|4,39,4,65,1734125328,"/mnt/vps/vm.bash"
--'  4  65  /mnt/vps/vm.bash
-|4,39,4,65,1734125328,"/mnt/vps/vm.bash"
--'  4  65  /mnt/vps/vm.bash
-|4,39,4,65,1734125328,"/mnt/vps/vm.bash"
+-'  1  22  ~/python_common/box/todo.txt
+|4,39,1,22,1735934550,"~/python_common/box/todo.txt"
+-'  2  2  ~/python_common/box/todo.txt
+|4,39,2,2,1735934528,"~/python_common/box/todo.txt"
+-'  101  39  ~/python_common/box/test_unzip_url.py
+|4,39,101,39,1735933955,"~/python_common/box/test_unzip_url.py"
+-'  101  39  ~/python_common/box/test_unzip_url.py
+|4,39,101,39,1735933955,"~/python_common/box/test_unzip_url.py"
+-'  31  4  ~/disc-bot/src/utils/test_unzip_url.py
+|4,39,31,4,1735933952,"~/disc-bot/src/utils/test_unzip_url.py"
+-'  31  4  ~/disc-bot/src/utils/test_unzip_url.py
+|4,39,31,4,1735933952,"~/disc-bot/src/utils/test_unzip_url.py"
+-'  1  0  ~/disc-bot/src/utils/test_unzip_url.py
+|4,39,1,0,1735933947,"~/disc-bot/src/utils/test_unzip_url.py"
+-'  1  0  ~/disc-bot/src/utils/test_unzip_url.py
+|4,39,1,0,1735933947,"~/disc-bot/src/utils/test_unzip_url.py"
+-'  127  39  ~/python_common/box/test_unzip_url.py
+|4,39,127,39,1735933883,"~/python_common/box/test_unzip_url.py"
+-'  126  21  ~/python_common/box/test_unzip_url.py
+|4,39,126,21,1735933883,"~/python_common/box/test_unzip_url.py"
+-'  119  39  ~/python_common/box/test_unzip_url.py
+|4,39,119,39,1735933883,"~/python_common/box/test_unzip_url.py"
+-'  118  21  ~/python_common/box/test_unzip_url.py
+|4,39,118,21,1735933883,"~/python_common/box/test_unzip_url.py"
+-'  111  39  ~/python_common/box/test_unzip_url.py
+|4,39,111,39,1735933883,"~/python_common/box/test_unzip_url.py"
+-'  110  21  ~/python_common/box/test_unzip_url.py
+|4,39,110,21,1735933883,"~/python_common/box/test_unzip_url.py"
+-'  95  39  ~/python_common/box/test_unzip_url.py
+|4,39,95,39,1735933883,"~/python_common/box/test_unzip_url.py"
+-'  93  22  ~/python_common/box/test_unzip_url.py
+|4,39,93,22,1735933883,"~/python_common/box/test_unzip_url.py"
+-'  79  39  ~/python_common/box/test_unzip_url.py
+|4,39,79,39,1735933883,"~/python_common/box/test_unzip_url.py"
+-'  77  22  ~/python_common/box/test_unzip_url.py
+|4,39,77,22,1735933883,"~/python_common/box/test_unzip_url.py"
+-'  64  39  ~/python_common/box/test_unzip_url.py
+|4,39,64,39,1735933883,"~/python_common/box/test_unzip_url.py"
+-'  62  22  ~/python_common/box/test_unzip_url.py
+|4,39,62,22,1735933883,"~/python_common/box/test_unzip_url.py"
+-'  51  39  ~/python_common/box/test_unzip_url.py
+|4,39,51,39,1735933883,"~/python_common/box/test_unzip_url.py"
+-'  50  22  ~/python_common/box/test_unzip_url.py
+|4,39,50,22,1735933883,"~/python_common/box/test_unzip_url.py"
+-'  40  39  ~/python_common/box/test_unzip_url.py
+|4,39,40,39,1735933883,"~/python_common/box/test_unzip_url.py"
+-'  39  22  ~/python_common/box/test_unzip_url.py
+|4,39,39,22,1735933883,"~/python_common/box/test_unzip_url.py"
+-'  31  39  ~/python_common/box/test_unzip_url.py
+|4,39,31,39,1735933883,"~/python_common/box/test_unzip_url.py"
+-'  127  39  ~/python_common/box/test_unzip_url.py
+|4,39,127,39,1735933883,"~/python_common/box/test_unzip_url.py"
+-'  126  21  ~/python_common/box/test_unzip_url.py
+|4,39,126,21,1735933883,"~/python_common/box/test_unzip_url.py"
+-'  119  39  ~/python_common/box/test_unzip_url.py
+|4,39,119,39,1735933883,"~/python_common/box/test_unzip_url.py"
+-'  118  21  ~/python_common/box/test_unzip_url.py
+|4,39,118,21,1735933883,"~/python_common/box/test_unzip_url.py"
+-'  111  39  ~/python_common/box/test_unzip_url.py
+|4,39,111,39,1735933883,"~/python_common/box/test_unzip_url.py"
+-'  110  21  ~/python_common/box/test_unzip_url.py
+|4,39,110,21,1735933883,"~/python_common/box/test_unzip_url.py"
+-'  95  39  ~/python_common/box/test_unzip_url.py
+|4,39,95,39,1735933883,"~/python_common/box/test_unzip_url.py"
+-'  93  22  ~/python_common/box/test_unzip_url.py
+|4,39,93,22,1735933883,"~/python_common/box/test_unzip_url.py"
+-'  79  39  ~/python_common/box/test_unzip_url.py
+|4,39,79,39,1735933883,"~/python_common/box/test_unzip_url.py"
+-'  77  22  ~/python_common/box/test_unzip_url.py
+|4,39,77,22,1735933883,"~/python_common/box/test_unzip_url.py"
+-'  64  39  ~/python_common/box/test_unzip_url.py
+|4,39,64,39,1735933883,"~/python_common/box/test_unzip_url.py"
+-'  62  22  ~/python_common/box/test_unzip_url.py
+|4,39,62,22,1735933883,"~/python_common/box/test_unzip_url.py"
+-'  51  39  ~/python_common/box/test_unzip_url.py
+|4,39,51,39,1735933883,"~/python_common/box/test_unzip_url.py"
+-'  50  22  ~/python_common/box/test_unzip_url.py
+|4,39,50,22,1735933883,"~/python_common/box/test_unzip_url.py"
+-'  40  39  ~/python_common/box/test_unzip_url.py
+|4,39,40,39,1735933883,"~/python_common/box/test_unzip_url.py"
+-'  39  22  ~/python_common/box/test_unzip_url.py
+|4,39,39,22,1735933883,"~/python_common/box/test_unzip_url.py"
+-'  31  39  ~/python_common/box/test_unzip_url.py
+|4,39,31,39,1735933883,"~/python_common/box/test_unzip_url.py"
+-'  30  22  ~/python_common/box/test_unzip_url.py
+|4,39,30,22,1735933882,"~/python_common/box/test_unzip_url.py"
+-'  30  22  ~/python_common/box/test_unzip_url.py
+|4,39,30,22,1735933882,"~/python_common/box/test_unzip_url.py"
+-'  19  23  ~/python_common/box/test_unzip_url.py
+|4,39,19,23,1735933862,"~/python_common/box/test_unzip_url.py"
+-'  19  23  ~/python_common/box/test_unzip_url.py
+|4,39,19,23,1735933862,"~/python_common/box/test_unzip_url.py"
+-'  1  0  ~/python_common/box/test_unzip_url.py
+|4,39,1,0,1735933854,"~/python_common/box/test_unzip_url.py"
+-'  1  0  ~/python_common/box/test_unzip_url.py
+|4,39,1,0,1735933854,"~/python_common/box/test_unzip_url.py"
+-'  23  0  ~/.config/setup.fish
+|4,39,23,0,1735933691,"~/.config/setup.fish"
+-'  23  0  ~/.config/setup.fish
+|4,39,23,0,1735933691,"~/.config/setup.fish"
+-'  23  0  ~/.config/setup.fish
+|4,39,23,0,1735933691,"~/.config/setup.fish"
+-'  23  0  ~/.config/setup.fish
+|4,39,23,0,1735933691,"~/.config/setup.fish"
+-'  1  0  ~/.config/setup.fish
+|4,39,1,0,1735933689,"~/.config/setup.fish"
+-'  1  0  ~/.config/setup.fish
+|4,39,1,0,1735933689,"~/.config/setup.fish"
+-'  1  0  ~/.config/setup.fish
+|4,39,1,0,1735933689,"~/.config/setup.fish"
+-'  1  0  ~/.config/setup.fish
+|4,39,1,0,1735933689,"~/.config/setup.fish"
+-'  6  2  ~/bash/oldfiles.bash
+|4,39,6,2,1735933585,"~/bash/oldfiles.bash"
+-'  6  2  ~/bash/oldfiles.bash
+|4,39,6,2,1735933585,"~/bash/oldfiles.bash"
+-'  6  2  ~/bash/oldfiles.bash
+|4,39,6,2,1735933585,"~/bash/oldfiles.bash"
+-'  6  2  ~/bash/oldfiles.bash
+|4,39,6,2,1735933585,"~/bash/oldfiles.bash"
+-'  6  2  ~/bash/oldfiles.bash
+|4,39,6,2,1735933585,"~/bash/oldfiles.bash"
+-'  6  2  ~/bash/oldfiles.bash
+|4,39,6,2,1735933585,"~/bash/oldfiles.bash"
+-'  4  0  ~/bash/oldfiles.bash
+|4,39,4,0,1735930498,"~/bash/oldfiles.bash"
+-'  4  0  ~/bash/oldfiles.bash
+|4,39,4,0,1735930498,"~/bash/oldfiles.bash"
+-'  4  0  ~/bash/oldfiles.bash
+|4,39,4,0,1735930498,"~/bash/oldfiles.bash"
+-'  4  0  ~/bash/oldfiles.bash
+|4,39,4,0,1735930498,"~/bash/oldfiles.bash"
+-'  4  0  ~/bash/oldfiles.bash
+|4,39,4,0,1735930498,"~/bash/oldfiles.bash"
+-'  4  0  ~/bash/oldfiles.bash
+|4,39,4,0,1735930498,"~/bash/oldfiles.bash"
+-'  18  16  ~/bash/oldfiles.bash
+|4,39,18,16,1735930357,"~/bash/oldfiles.bash"
+-'  18  16  ~/bash/oldfiles.bash
+|4,39,18,16,1735930357,"~/bash/oldfiles.bash"
+-'  18  16  ~/bash/oldfiles.bash
+|4,39,18,16,1735930357,"~/bash/oldfiles.bash"
+-'  18  16  ~/bash/oldfiles.bash
+|4,39,18,16,1735930357,"~/bash/oldfiles.bash"
+-'  18  16  ~/bash/oldfiles.bash
+|4,39,18,16,1735930357,"~/bash/oldfiles.bash"
+-'  18  16  ~/bash/oldfiles.bash
+|4,39,18,16,1735930357,"~/bash/oldfiles.bash"
+-'  16  0  ~/bash/oldfiles.bash
+|4,39,16,0,1735930327,"~/bash/oldfiles.bash"
+-'  16  0  ~/bash/oldfiles.bash
+|4,39,16,0,1735930327,"~/bash/oldfiles.bash"
+-'  16  0  ~/bash/oldfiles.bash
+|4,39,16,0,1735930327,"~/bash/oldfiles.bash"
+-'  16  0  ~/bash/oldfiles.bash
+|4,39,16,0,1735930327,"~/bash/oldfiles.bash"
+-'  16  0  ~/bash/oldfiles.bash
+|4,39,16,0,1735930327,"~/bash/oldfiles.bash"
+-'  16  0  ~/bash/oldfiles.bash
+|4,39,16,0,1735930327,"~/bash/oldfiles.bash"
+-'  1  0  ~/bash/oldfiles.bash
+|4,39,1,0,1735930318,"~/bash/oldfiles.bash"
+-'  1  0  ~/bash/oldfiles.bash
+|4,39,1,0,1735930318,"~/bash/oldfiles.bash"
+-'  1  0  ~/bash/oldfiles.bash
+|4,39,1,0,1735930318,"~/bash/oldfiles.bash"
+-'  1  0  ~/bash/oldfiles.bash
+|4,39,1,0,1735930318,"~/bash/oldfiles.bash"
+-'  1  0  ~/bash/oldfiles.bash
+|4,39,1,0,1735930318,"~/bash/oldfiles.bash"
+-'  1  0  ~/bash/oldfiles.bash
+|4,39,1,0,1735930318,"~/bash/oldfiles.bash"
+-'  15  0  ~/bash/oldfiles.bash
+|4,39,15,0,1735930311,"~/bash/oldfiles.bash"
+-'  15  0  ~/bash/oldfiles.bash
+|4,39,15,0,1735930311,"~/bash/oldfiles.bash"
+-'  15  0  ~/bash/oldfiles.bash
+|4,39,15,0,1735930311,"~/bash/oldfiles.bash"
+-'  15  0  ~/bash/oldfiles.bash
+|4,39,15,0,1735930311,"~/bash/oldfiles.bash"
+-'  15  0  ~/bash/oldfiles.bash
+|4,39,15,0,1735930311,"~/bash/oldfiles.bash"
+-'  15  0  ~/bash/oldfiles.bash
+|4,39,15,0,1735930311,"~/bash/oldfiles.bash"
+-'  2  71  ~/bash/oldfiles.bash
+|4,39,2,71,1735930240,"~/bash/oldfiles.bash"
+-'  2  71  ~/bash/oldfiles.bash
+|4,39,2,71,1735930240,"~/bash/oldfiles.bash"
+-'  2  71  ~/bash/oldfiles.bash
+|4,39,2,71,1735930240,"~/bash/oldfiles.bash"
+-'  2  71  ~/bash/oldfiles.bash
+|4,39,2,71,1735930240,"~/bash/oldfiles.bash"
+-'  2  71  ~/bash/oldfiles.bash
+|4,39,2,71,1735930240,"~/bash/oldfiles.bash"
+-'  2  71  ~/bash/oldfiles.bash
+|4,39,2,71,1735930240,"~/bash/oldfiles.bash"
+-'  2  71  ~/bash/oldfiles.bash
+|4,39,2,71,1735930240,"~/bash/oldfiles.bash"
+-'  1  0  ~/bash/oldfiles.bash
+|4,39,1,0,1735930232,"~/bash/oldfiles.bash"
 
 # Buffer list:
-%~/file.py	14	0
-%~/.vim/vimrc	90	0
-%~/pyscripts/crk_substats.py	10	115
+%~/python_common/box/todo.txt	1	22
 
 # History of marks within files (newest to oldest):
 
-> ~/file.py
-	*	1734652100	0
-	"	14	0
-	.	8	0
-	+	1	0
-	+	9	17
-	+	8	0
-
-> ~/.vim/vimrc
-	*	1734605602	0
-	"	90	0
-	^	90	2
-	.	90	0
-	+	1	41
-	+	1	44
-	+	1	40
-	+	1	28
-	+	1	0
-	+	1	11
-	+	1	18
-	+	1	43
-	+	1	64
-	+	1	54
-	+	1	0
-	+	1	31
-	+	1	0
-	+	1	6
-	+	1	0
-	+	1	1
-	+	1	0
-	+	1	80
-	+	1	75
-	+	1	0
-	+	1	52
-	+	1	41
-	+	1	0
-	+	1	26
-	+	1	0
+> ~/python_common/box/todo.txt
+	*	1735934547	0
+	"	1	22
+	^	1	23
+	.	1	22
 	+	1	22
-	+	1	25
-	+	1	0
-	+	1	57
-	+	1	59
-	+	1	55
-	+	1	0
-	+	1	25
-	+	1	1
-	+	1	0
-	+	1	24
-	+	1	0
-	+	1	12
-	+	1	0
-	+	1	49
-	+	1	0
-	+	1	13
-	+	1	0
-	+	1	16
-	+	1	0
-	+	1	25
-	+	1	3
-	+	1	5
-	+	1	16
-	+	1	0
-	+	1	16
-	+	1	0
-	+	1	5
-	+	1	3
-	+	1	0
-	+	1	4
-	+	1	0
-	+	1	40
-	+	1	36
-	+	1	0
-	+	1	26
-	+	1	9
-	+	1	0
-	+	1	31
-	+	1	4
-	+	1	30
-	+	1	4
-	+	1	0
-	+	1	5
-	+	1	8
-	+	1	29
-	+	1	33
-	+	1	1
-	+	1	21
-	+	1	20
-	+	1	1
-	+	1	0
-	+	120	0
-	+	424	0
-	+	1146	0
-	+	572	5
-	+	90	0
 
-> ~/pyscripts/crk_substats.py
-	*	1734518339	0
-	"	10	115
-	^	10	116
-	.	10	115
-	+	19	48
-	+	20	0
+> ~/disc-bot/src/utils/test_unzip_url.py
+	*	1735933950	0
+	"	31	4
+	.	132	0
+	+	108	0
+	+	132	0
+
+> ~/python_common/box/test_unzip_url.py
+	*	1735933926	0
+	"	101	39
+	^	127	40
+	.	127	40
+	+	30	23
+	+	31	40
+	+	39	23
+	+	40	40
+	+	50	23
+	+	51	40
+	+	62	23
+	+	64	40
+	+	77	23
+	+	79	40
+	+	93	23
+	+	95	40
+	+	110	22
+	+	111	40
+	+	118	22
+	+	119	40
+	+	126	22
+	+	127	40
+
+> ~/.config/setup.fish
+	*	1735933689	0
+	"	23	0
+	.	23	0
+	+	26	0
+	+	26	42
+	+	26	0
+	+	25	0
+	+	26	0
+	+	7	0
+	+	7	44
+	+	7	0
+	+	7	4
+	+	7	0
+	+	7	7
+	+	7	37
+	+	7	24
+	+	7	7
+	+	7	5
+	+	7	25
+	+	7	13
+	+	7	30
+	+	7	7
+	+	7	0
+	+	7	21
+	+	7	0
+	+	13	0
+	+	13	1
+	+	7	0
+	+	13	0
+	+	13	32
+	+	7	23
+	+	7	0
+	+	7	19
+	+	7	0
+	+	7	26
+	+	7	10
+	+	7	5
+	+	7	0
+	+	7	37
+	+	7	0
+	+	7	22
+	+	7	58
+	+	7	0
+	+	8	30
+	+	13	18
+	+	26	0
+	+	27	0
+	+	28	0
+	+	27	29
+	+	28	11
+	+	30	34
+	+	31	0
+	+	13	0
+	+	21	55
+	+	21	0
+	+	16	82
+	+	17	80
+	+	4	0
+	+	14	26
+	+	4	13
+	+	16	12
+	+	22	0
+	+	21	11
+	+	31	12
+	+	4	0
+	+	16	0
+	+	21	0
+	+	31	0
+	+	11	33
+	+	12	0
+	+	13	0
+	+	10	0
+	+	13	0
+	+	9	0
+	+	13	0
+	+	5	33
+	+	6	25
+	+	1	0
+	+	8	0
+	+	18	33
+	+	18	36
+	+	18	0
 	+	19	4
+	+	19	0
 	+	18	0
 	+	19	0
-	+	4	38
-	+	14	0
-	+	12	36
 	+	18	0
-	+	2	17
+	+	6	0
+	+	4	0
+	+	2	0
+	+	3	0
+	+	2	1
+	+	3	0
+	+	2	0
+	+	3	0
+	+	3	1
+	+	3	36
+	+	3	0
+	+	18	0
+	+	19	0
+	+	6	0
+	+	18	0
+	+	23	0
+
+> ~/bash/oldfiles.bash
+	*	1735930509	0
+	"	6	2
+	.	5	0
+	+	2	1
+	+	2	12
+	+	2	49
+	+	2	12
+	+	2	0
+	+	5	1
+	+	1	10
+	+	2	62
+	+	2	34
+	+	2	1
+	+	2	16
+	+	2	0
+	+	8	33
+	+	2	68
+	+	5	66
+	+	5	0
+	+	2	13
+	+	5	23
+	+	6	51
+	+	8	28
+	+	16	22
+	+	2	107
+	+	10	0
+	+	7	0
+	+	1	0
+	+	10	0
+	+	2	83
+	+	2	0
+	+	18	0
+	+	17	1
+	+	18	16
+	+	4	0
+	+	2	1
+	+	4	97
+	+	4	1
+	+	2	0
+	+	3	27
+	+	4	1
+	+	5	1
+	+	4	0
+	+	5	0
+
+> ~/bash/pwd-oldfiles.bash
+	*	1735930475	0
+	"	2	0
+	.	2	0
+	+	1	0
+	+	1	10
+	+	1	0
+	+	1	1
+	+	1	0
+	+	1	71
+	+	1	0
+	+	2	53
+	+	1	0
+	+	6	5
+	+	10	7
+	+	11	0
 	+	12	0
-	+	13	29
-	+	9	51
-	+	16	36
-	+	9	42
-	+	10	115
+	+	4	0
+	+	5	47
+	+	2	0
+	+	2	119
+	+	2	0
+	+	2	131
+	+	3	0
+	+	2	285
+	+	2	163
+	+	3	0
+	+	2	0
+	+	2	163
+	+	3	80
+	+	3	0
+	+	2	131
+	+	3	80
+	+	3	0
+	+	2	0
+	+	2	104
+	+	2	0
+
+> ~/tooling/python-orms.txt
+	*	1735930039	0
+	"	1	0
+
+> ~/pyscripts/commit-message-gemini.py
+	*	1735929924	0
+	"	118	4
+	^	106	27
+	.	106	26
+	+	113	0
+	+	8	13
+	+	84	0
+	+	94	58
+	+	95	0
+	+	127	0
+	+	119	23
+	+	120	23
+	+	90	30
+	+	91	5
+	+	83	0
+	+	117	5
+	+	128	6
+	+	117	6
+	+	128	2
+	+	9	21
+	+	1	35
+	+	125	11
+	+	128	24
+	+	124	50
+	+	125	28
+	+	128	1
+	+	127	0
+	+	122	10
+	+	13	71
+	+	15	4
+	+	132	76
+	+	98	71
+	+	98	46
+	+	98	77
+	+	98	14
+	+	115	70
+	+	115	9
+	+	98	46
+	+	98	0
+	+	98	51
+	+	98	11
+	+	98	0
+	+	115	0
+	+	132	4
+	+	132	0
+	+	113	32
+	+	113	4
+	+	113	0
+	+	114	31
+	+	114	0
+	+	115	0
+	+	134	55
+	+	117	0
+	+	119	0
+	+	118	5
+	+	98	0
+	+	98	35
+	+	98	4
+	+	98	7
+	+	98	50
+	+	98	51
+	+	98	8
+	+	98	0
+	+	114	34
+	+	114	9
+	+	118	0
+	+	98	20
+	+	114	5
+	+	114	10
+	+	114	43
+	+	114	10
+	+	114	0
+	+	102	0
+	+	98	12
+	+	102	33
+	+	112	0
+	+	114	0
+	+	114	51
+	+	114	10
+	+	103	51
+	+	112	0
+	+	113	0
+	+	98	0
+	+	132	43
+	+	114	0
+	+	116	0
+	+	65	9
+	+	75	13
+	+	134	3
+	+	98	32
+	+	25	35
+	+	14	65
+	+	98	0
+	+	43	0
+	+	100	5
+	+	100	0
+	+	101	5
+	+	102	0
+	+	99	0
+	+	105	54
+	+	107	4
+	+	120	53
+	+	132	37
+	+	106	26
+	a	115	16
+
+> ~/tooling/app_ideas/typography.txt
+	*	1735921053	0
+	"	5	0
+	^	5	0
+	.	5	0
+	+	1	54
+	+	4	68
+	+	3	31
+	+	5	0
+
+> ~/tooling/app_ideas/design-inspo-tracker.txt
+	*	1735919541	0
+	"	1	0
+	^	10	0
+	.	11	0
+	+	4	12
+	+	7	0
+	+	5	4
+	+	10	0
+	+	11	0
+
+> ~/.config/commit.md
+	*	1735909654	0
+	"	25	0
+	^	14	2
+	.	7	0
+	+	8	0
+	+	7	0
+
+> ~/.config/commid.md
+	*	1735909642	0
+	"	1	0
+
+> ~/pyscripts/cache.py
+	*	1735909438	0
+	"	6	6
+	^	36	0
+	.	35	0
+	+	35	0
+
+> ~/pyscripts/commit-message-unwrapped.json
+	*	1735909012	0
+	"	2	0
+
+> ~/pyscripts/commit-message-unwrapped.txt
+	*	1735909005	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/pyscripts/commit-message-buggy.txt
+	*	1735908971	0
+	"	1	0
+
+> ~/pyscripts/data/commit-message-gemini-cache.json
+	*	1735908378	0
+	"	43	0
+	.	34	464
+	+	3	0
+	+	2	642
+	+	35	0
+	+	34	464
+
+> ~/pyscripts/commit-message.txt
+	*	1735908108	0
+	"	1	0
 
 > ~/pyscripts/requirements.txt
-	*	1734474981	0
-	"	1	2
+	*	1735907594	0
+	"	2	0
 	^	1	3
 	.	1	2
 	+	2	4
@@ -17401,9 +18334,258 @@ $
 	+	20	2
 	+	1	2
 
+> ~/python_common/box/markup.py
+	*	1735904532	0
+	"	1	0
+	^	37	75
+	.	37	74
+	+	174	43
+	+	173	87
+	+	174	0
+	+	173	87
+	+	50	0
+	+	47	17
+	+	50	0
+	+	47	24
+	+	50	25
+	+	47	8
+	+	50	0
+	+	47	0
+	+	46	0
+	+	41	60
+	+	28	17
+	+	45	14
+	+	48	4
+	+	48	33
+	+	49	15
+	+	40	0
+	+	39	26
+	+	39	12
+	+	41	15
+	+	42	19
+	+	29	16
+	+	36	19
+	+	40	0
+	+	42	20
+	+	45	12
+	+	37	36
+	+	36	19
+	+	27	21
+	+	37	17
+	+	38	0
+	+	42	19
+	+	45	0
+	+	43	53
+	+	45	0
+	+	44	0
+	+	45	15
+	+	27	13
+	+	48	39
+	+	42	0
+	+	45	8
+	+	45	0
+	+	36	0
+	+	40	0
+	+	39	26
+	+	31	30
+	+	30	64
+	+	36	231
+	+	36	0
+	+	33	78
+	+	34	113
+	+	32	9
+	+	33	0
+	+	36	0
+	+	34	117
+	+	36	0
+	+	37	74
+
+> ~/python_common/box/color.py
+	*	1735904403	0
+	"	133	0
+	^	68	12
+	.	68	11
+	+	21	7
+	+	68	11
+
+> ~/bash/gh-timeago.bash
+	*	1735902885	0
+	"	30	0
+	.	21	0
+	+	35	63
+	+	4	75
+	+	35	38
+	+	32	47
+	+	34	0
+	+	32	4
+	+	33	1
+	+	35	82
+	+	27	49
+	+	32	49
+	+	35	0
+	+	26	0
+	+	23	25
+	+	21	0
+	+	12	75
+	+	21	6
+	+	12	1
+	+	21	1
+	+	12	13
+	+	21	0
+	+	33	0
+	+	32	0
+	+	33	37
+	+	21	0
+	+	25	85
+	+	25	0
+	+	12	1
+	+	24	1
+	+	34	25
+	+	35	22
+	+	32	0
+	+	13	36
+	+	14	32
+	+	15	0
+	+	21	0
+
+> ~/ui-components-css/filters_and_pagination.py
+	*	1735902845	0
+	"	213	12
+	^	205	0
+	.	216	0
+	+	135	0
+	+	95	0
+	+	1	0
+	+	2	0
+	+	1	0
+	+	2	12
+	+	3	0
+	+	9	0
+	+	24	0
+	+	5	0
+	+	6	0
+	+	52	54
+	+	5	0
+	+	8	0
+	+	87	0
+	+	147	0
+	+	79	0
+	+	85	48
+	+	3	26
+	+	4	0
+	+	3	26
+	+	177	53
+	+	211	53
+	+	155	0
+	+	152	0
+	+	39	0
+	+	154	0
+	+	112	27
+	+	216	0
+	+	214	37
+	+	216	33
+	+	217	0
+	+	215	33
+	+	203	0
+	+	204	12
+	+	205	0
+	+	216	0
+
+> ~/projects.txt
+	*	1735848527	0
+	"	3	2
+	.	3	0
+	+	4	33
+	+	6	67
+	+	7	51
+	+	8	20
+	+	9	83
+	+	9	0
+	+	8	28
+	+	10	24
+	+	10	0
+	+	10	9
+	+	10	38
+	+	10	65
+	+	10	27
+	+	10	54
+	+	10	80
+	+	10	28
+	+	10	55
+	+	10	21
+	+	10	44
+	+	4	0
+	+	10	0
+	+	10	28
+	+	4	1
+	+	6	0
+	+	10	0
+	+	1	0
+	+	10	0
+	+	2	0
+	+	10	0
+	+	5	0
+	+	2	100
+	+	11	62
+	+	11	336
+	+	11	68
+	+	11	106
+	+	11	150
+	+	11	64
+	+	11	104
+	+	11	146
+	+	11	103
+	+	11	145
+	+	11	185
+	+	11	103
+	+	11	145
+	+	12	0
+	+	9	0
+	+	10	0
+	+	3	0
+
+> ~/tmp/cheem.txt
+	*	1735846910	0
+	"	6	0
+	.	6	0
+	+	1	3
+	+	3	56
+	+	4	137
+	+	4	67
+	+	5	45
+	+	2	11
+	+	4	0
+	+	6	0
+
+> ~/ui-components-css/flask-history-dashboard.py
+	*	1735843691	0
+	"	24	0
+	.	24	0
+	+	32	0
+	+	36	0
+	+	35	0
+	+	13	59
+	+	14	4
+	+	18	0
+	+	14	7
+	+	18	0
+	+	13	36
+	+	18	0
+	+	16	3
+	+	19	35
+	+	17	7
+	+	1	0
+	+	19	86
+	+	24	0
+	+	25	0
+	+	21	34
+	+	22	27
+	+	23	73
+	+	24	0
+
 > ~/ui-components-css/ui-components-css-api.py
-	*	1734466133	0
-	"	253	4
+	*	1735842191	0
+	"	155	4
 	^	20	43
 	.	10	0
 	+	85	17
@@ -17505,6 +18687,3655 @@ $
 	+	56	0
 	+	13	73
 	+	10	0
+
+> ~/ui-components-css/flask-history.py
+	*	1735842014	0
+	"	10	4
+	.	40	0
+	+	3	0
+	+	39	0
+	+	37	4
+	+	37	0
+	+	37	7
+	+	37	0
+	+	37	14
+	+	37	51
+	+	37	0
+	+	36	12
+	+	36	14
+	+	36	43
+	+	36	55
+	+	36	45
+	+	36	64
+	+	37	0
+	+	36	0
+	+	34	7
+	+	30	4
+	+	27	30
+	+	28	7
+	+	10	0
+	+	4	7
+	+	5	7
+	+	6	7
+	+	7	7
+	+	3	7
+	+	8	0
+	+	12	0
+	+	26	0
+	+	11	20
+	+	26	18
+	+	11	17
+	+	13	0
+	+	37	0
+	+	25	7
+	+	24	0
+	+	23	7
+	+	3	0
+	+	23	0
+	+	22	24
+	+	23	0
+	+	15	26
+	+	15	35
+	+	22	0
+	+	15	35
+	+	2	0
+	+	16	77
+	+	21	0
+	+	16	0
+	+	16	18
+	+	17	15
+	+	18	16
+	+	19	16
+	+	33	0
+	+	16	0
+	+	35	24
+	+	9	10
+	+	35	29
+	+	36	0
+	+	40	0
+	+	37	0
+	+	36	0
+	+	37	0
+	+	40	0
+	+	34	0
+	+	40	0
+
+> ~/hateoas/hateoas-api.py
+	*	1735841854	0
+	"	69	34
+	^	1201	9
+	.	15	0
+	+	1493	32
+	+	1493	95
+	+	1494	37
+	+	1495	4
+	+	1493	0
+	+	1495	82
+	+	1496	37
+	+	1497	74
+	+	1486	29
+	+	1487	29
+	+	1488	37
+	+	1489	38
+	+	1491	141
+	+	1485	52
+	+	1493	83
+	+	24	0
+	+	936	45
+	+	936	0
+	+	952	0
+	+	975	349
+	+	19	36
+	+	925	55
+	+	926	84
+	+	932	34
+	+	933	85
+	+	934	34
+	+	936	0
+	+	935	54
+	+	936	82
+	+	944	34
+	+	945	84
+	+	950	34
+	+	946	41
+	+	949	24
+	+	946	53
+	+	945	28
+	+	948	125
+	+	883	0
+	+	29	33
+	+	891	0
+	+	884	26
+	+	975	18
+	+	976	24
+	+	892	42
+	+	892	0
+	+	976	0
+	+	975	0
+	+	884	0
+	+	29	1
+	+	892	0
+	+	883	11
+	+	977	16
+	+	884	0
+	+	977	0
+	+	883	0
+	+	976	364
+	+	19	0
+	+	945	0
+	+	942	61
+	+	943	89
+	+	944	0
+	+	942	28
+	+	951	26
+	+	955	25
+	+	961	0
+	+	927	28
+	+	931	0
+	+	930	115
+	+	875	29
+	+	875	0
+	+	874	72
+	+	874	0
+	+	930	140
+	+	929	88
+	+	976	417
+	+	17	0
+	+	930	96
+	+	937	53
+	+	938	62
+	+	939	89
+	+	940	95
+	+	941	29
+	+	929	41
+	+	930	95
+	+	939	39
+	+	940	89
+	+	961	0
+	+	920	57
+	+	921	65
+	+	922	98
+	+	923	107
+	+	924	29
+	+	922	84
+	+	794	0
+	+	795	0
+	+	819	0
+	+	817	0
+	+	1062	5
+	+	1201	8
+	+	15	0
+	g	970	0
+
+> ~/ui-components-css/.direnv/python-3.10.12/lib/python3.10/site-packages/flask/wrappers.py
+	*	1735841707	0
+	"	17	0
+
+> ~/ui-components-css/.direnv/python-3.10.12/lib/python3.10/site-packages/werkzeug/sansio/request.py
+	*	1735841705	0
+	"	140	8
+
+> ~/ui-components-css/.direnv/python-3.10.12/lib/python3.10/site-packages/werkzeug/wrappers/request.py
+	*	1735841704	0
+	"	31	0
+
+> ~/ui-components-css/data/history.txt
+	*	1735841472	0
+	"	7012	0
+	.	7	0
+	+	7	0
+
+> ~/hateoas/data/hateoas-history.db
+	*	1735841247	0
+	"	1	0
+
+> ~/hateoas/data/ui-components-css-history.db
+	*	1735841173	0
+	"	1	0
+
+> ~/ui-components-css/data/ui-components-css-history.db
+	*	1735841165	0
+	"	1	0
+
+> ~/.config/shell_data/history.db
+	*	1735841151	0
+	"	1	0
+
+> ~/tooling/docs/rg.man
+	*	1735840934	0
+	"	1276	14
+
+> ~/tooling/docs/fd.man
+	*	1735840879	0
+	"	267	0
+
+> ~/sqlite-editor/editor-api.py
+	*	1735840773	0
+	"	1	0
+	^	560	78
+	.	560	77
+	+	423	58
+	+	460	0
+	+	426	36
+	+	427	4
+	+	460	0
+	+	438	15
+	+	456	37
+	+	456	16
+	+	456	24
+	+	456	28
+	+	456	52
+	+	456	19
+	+	457	15
+	+	458	11
+	+	459	112
+	+	655	71
+	+	659	146
+	+	661	0
+	+	659	0
+	+	661	83
+	+	425	35
+	+	414	136
+	+	436	31
+	+	400	48
+	+	400	51
+	+	386	70
+	+	387	31
+	+	388	22
+	+	389	26
+	+	389	8
+	+	389	29
+	+	398	71
+	+	398	0
+	+	389	32
+	+	390	8
+	+	392	31
+	+	393	8
+	+	395	9
+	+	396	8
+	+	389	0
+	+	386	0
+	+	389	0
+	+	388	92
+	+	389	0
+	+	377	0
+	+	382	29
+	+	400	0
+	+	456	0
+	+	437	37
+	+	659	142
+	+	659	0
+	+	659	142
+	+	659	0
+	+	661	0
+	+	659	129
+	+	659	114
+	+	659	163
+	+	659	62
+	+	659	0
+	+	827	385
+	+	656	114
+	+	659	62
+	+	657	162
+	+	659	0
+	+	660	0
+	+	658	61
+	+	456	75
+	+	456	0
+	+	456	20
+	+	456	0
+	+	439	0
+	+	448	0
+	+	440	0
+	+	378	0
+	+	376	0
+	+	376	19
+	+	376	8
+	+	376	0
+	+	376	39
+	+	448	69
+	+	376	23
+	+	376	27
+	+	376	71
+	+	376	0
+	+	376	9
+	+	376	0
+	+	448	0
+	+	449	164
+	+	450	166
+	+	451	25
+	+	448	0
+	+	452	0
+	+	559	53
+	+	560	77
+
+> ~/disc-bot/src/utils/setup_chrome_testing_binaries.py
+	*	1735840457	0
+	"	33	4
+	^	69	103
+	.	69	102
+	+	27	55
+	+	11	0
+	+	10	0
+	+	11	68
+	+	15	32
+	+	18	68
+	+	11	69
+	+	15	33
+	+	18	69
+	+	11	97
+	+	15	61
+	+	18	97
+	+	2	0
+	+	1	0
+	+	2	21
+	+	4	41
+	+	85	0
+	+	81	5
+	+	82	0
+	+	82	70
+	+	82	0
+	+	81	0
+	+	82	55
+	+	82	0
+	+	61	0
+	+	9	54
+	+	11	72
+	+	15	36
+	+	18	72
+	+	27	57
+	+	59	23
+	+	64	26
+	+	72	32
+	+	75	59
+	+	78	30
+	+	81	23
+	+	82	29
+	+	9	70
+	+	11	88
+	+	15	52
+	+	18	88
+	+	26	50
+	+	61	17
+	+	66	20
+	+	73	26
+	+	76	62
+	+	78	46
+	+	81	39
+	+	82	45
+	+	61	27
+	+	66	30
+	+	69	83
+	+	82	0
+	+	58	0
+	+	56	69
+	+	57	75
+	+	58	72
+	+	58	73
+	+	60	0
+	+	59	5
+	+	60	103
+	+	62	0
+	+	61	0
+	+	62	126
+	+	46	26
+	+	54	129
+	+	55	148
+	+	56	57
+	+	57	75
+	+	59	0
+	+	54	26
+	+	55	36
+	+	56	35
+	+	57	44
+	+	54	0
+	+	53	0
+	+	58	0
+	+	48	0
+	+	58	0
+	+	51	0
+	+	49	14
+	+	58	0
+	+	47	41
+	+	50	45
+	+	56	100
+	+	58	0
+	+	70	0
+	+	71	9
+	+	72	0
+	+	58	93
+	+	58	0
+	+	49	24
+	+	47	8
+	+	50	8
+	+	56	72
+	+	69	102
+
+> ~/disc-bot/src/utils/unzip_url.py
+	*	1735840455	0
+	"	76	19
+	.	32	0
+	+	11	0
+	+	32	0
+
+> ~/disc-bot/src/utils/etag.py
+	*	1735840405	0
+	"	134	4
+	.	53	0
+	+	11	0
+	+	53	108
+	+	53	0
+	+	47	0
+	+	53	0
+
+> ~/python_common/box/__init__.py
+	*	1735835656	0
+	"	26	0
+	^	26	0
+	.	26	0
+	+	1	7
+	+	5	7
+	+	6	7
+	+	7	7
+	+	9	7
+	+	11	7
+	+	12	7
+	+	13	7
+	+	14	7
+	+	15	7
+	+	16	7
+	+	18	7
+	+	20	7
+	+	21	7
+	+	22	7
+	+	24	7
+	+	28	9
+	+	3	16
+	+	28	0
+	+	29	26
+	+	29	21
+	+	2	0
+	+	17	0
+	+	26	55
+	+	2	0
+	+	27	0
+	+	26	31
+	+	27	12
+	+	3	18
+	+	29	18
+	+	27	0
+	+	26	1
+	+	3	0
+	+	29	0
+	+	26	66
+	+	27	0
+	+	26	0
+	a	26	13
+
+> ~/python_common/box/unzip_url.py
+	*	1735834475	0
+	"	164	8
+
+> ~/disc-bot/src/utils/parse_damage_image.py
+	*	1735833072	0
+	"	78	0
+	^	98	50
+	.	98	49
+	+	54	0
+	+	5	0
+	+	54	0
+	+	54	20
+	+	78	11
+	+	54	0
+	+	78	0
+	+	7	10
+	+	82	43
+	+	81	0
+	+	83	12
+	+	82	51
+	+	83	0
+	+	84	18
+	+	86	14
+	+	87	15
+	+	103	55
+	+	103	15
+	+	103	23
+	+	5	0
+	+	4	47
+	+	103	50
+	+	103	14
+	+	103	45
+	+	103	57
+	+	103	84
+	+	103	0
+	+	90	0
+	+	90	52
+	+	79	0
+	+	90	0
+	+	103	0
+	+	103	8
+	+	103	77
+	+	103	93
+	+	103	0
+	+	103	115
+	+	103	41
+	+	103	0
+	+	90	0
+	+	90	50
+	+	90	10
+	+	90	0
+	+	90	60
+	+	94	0
+	+	93	0
+	+	94	0
+	+	92	37
+	+	92	4
+	+	2	0
+	+	92	20
+	+	95	0
+	+	93	24
+	+	3	8
+	+	95	0
+	+	93	5
+	+	94	19
+	+	92	43
+	+	3	0
+	+	93	0
+	+	93	4
+	+	90	47
+	+	91	0
+	+	93	0
+	+	97	0
+	+	96	0
+	+	97	42
+	+	103	0
+	+	103	10
+	+	103	16
+	+	103	10
+	+	103	16
+	+	95	0
+	+	103	0
+	+	79	0
+	+	72	0
+	+	79	0
+	+	61	36
+	+	103	22
+	+	66	0
+	+	65	21
+	+	107	7
+	+	103	0
+	+	106	4
+	+	114	132
+	+	114	140
+	+	115	16
+	+	116	0
+	+	106	111
+	+	103	0
+	+	102	0
+	+	98	4
+	+	99	4
+	+	101	9
+	+	98	40
+	+	100	10
+	+	99	14
+	+	3	0
+	+	102	0
+	+	98	49
+
+> ~/tmp/disc-bot/requirements.txt
+	*	1735825685	0
+	"	11	1
+	^	13	2
+	.	13	1
+	+	12	1
+	+	13	1
+
+> ~/disc-bot/commit.md
+	*	1735824414	0
+	"	35	0
+	^	22	0
+	.	22	0
+	+	8	0
+	+	15	0
+	+	19	0
+	+	29	0
+	+	22	0
+
+> ~/disc-bot/src/utils/leaderboard_chrome.py
+	*	1735824158	0
+	"	71	0
+	^	78	48
+	.	78	47
+	+	1	60
+	+	1	0
+	+	1	44
+	+	1	77
+	+	1	0
+	+	107	0
+	+	106	0
+	+	107	0
+	+	108	0
+	+	107	0
+	+	107	4
+	+	107	0
+	+	105	5
+	+	41	29
+	+	43	121
+	+	43	119
+	+	43	84
+	+	41	0
+	+	43	24
+	+	43	141
+	+	43	128
+	+	43	60
+	+	43	107
+	+	43	87
+	+	43	0
+	+	42	49
+	+	43	107
+	+	44	0
+	+	43	103
+	+	82	16
+	+	83	22
+	+	8	9
+	+	82	51
+	+	9	21
+	+	82	133
+	+	83	92
+	+	84	18
+	+	75	0
+	+	76	0
+	+	78	91
+	+	82	38
+	+	78	22
+	+	77	14
+	+	82	26
+	+	82	0
+	+	79	0
+	+	78	47
+
+> ~/disc-bot/src/utils/download_chromedriver.py
+	*	1735823728	0
+	"	4	0
+	^	58	83
+	.	59	0
+	+	64	30
+	+	64	32
+	+	64	0
+	+	64	25
+	+	64	0
+	+	64	18
+	+	64	33
+	+	64	13
+	+	64	0
+	+	4	8
+	+	26	21
+	+	27	38
+	+	28	4
+	+	61	0
+	+	3	41
+	+	30	36
+	+	33	115
+	+	34	120
+	+	33	4
+	+	34	3
+	+	33	4
+	+	33	108
+	+	34	4
+	+	34	117
+	+	31	0
+	+	5	14
+	+	32	7
+	+	33	0
+	+	32	30
+	+	33	25
+	+	34	35
+	+	35	39
+	+	61	0
+	+	36	8
+	+	61	0
+	+	6	36
+	+	41	70
+	+	39	68
+	+	41	0
+	+	42	89
+	+	6	5
+	+	41	71
+	+	42	78
+	+	41	23
+	+	42	32
+	+	49	52
+	+	49	69
+	+	60	0
+	+	49	5
+	+	49	38
+	+	50	46
+	+	49	0
+	+	48	0
+	+	44	6
+	+	46	54
+	+	47	96
+	+	44	32
+	+	46	41
+	+	40	0
+	+	25	0
+	+	60	0
+	+	49	0
+	+	60	0
+	+	51	0
+	+	52	60
+	+	53	78
+	+	60	0
+	+	8	36
+	+	23	0
+	+	9	4
+	+	8	81
+	+	12	23
+	+	13	56
+	+	14	38
+	+	15	40
+	+	23	41
+	+	23	57
+	+	23	51
+	+	23	56
+	+	23	48
+	+	23	51
+	+	23	0
+	+	16	88
+	+	17	40
+	+	19	40
+	+	20	17
+	+	23	0
+	+	22	23
+	+	24	35
+	+	58	4
+	+	55	55
+	+	58	82
+	+	59	0
+
+> ~/crk-coupon/get_chrome_and_chromedriver.bash
+	*	1735821595	0
+	"	10	0
+	^	7	25
+	.	7	24
+	+	17	30
+	+	1	0
+	+	7	24
+
+> ~/disc-bot/src/commands/member.py
+	*	1735808906	0
+	"	14	0
+	.	14	0
+	+	14	0
+	+	15	0
+	+	15	18
+	+	14	53
+	+	15	0
+	+	14	0
+
+> ~/disc-bot/data/guilds.json
+	*	1735807739	0
+	"	1	0
+	^	374	1
+	.	374	0
+	+	374	0
+
+> ~/disc-bot/.env
+	*	1735805421	0
+	"	1	0
+	^	1	87
+	.	1	0
+	+	1	71
+	+	1	86
+	+	1	0
+
+> ~/tmp/disc-bot/src/main.py
+	*	1735805378	0
+	"	9	0
+	^	69	15
+	.	69	14
+	+	70	36
+	+	70	28
+	+	70	0
+	+	68	23
+	+	68	0
+	+	70	0
+	+	68	0
+	+	70	28
+	+	70	23
+	+	70	0
+	+	69	14
+
+> ~/tmp/disc-bot/.env
+	*	1735805376	0
+	"	1	0
+
+> ~/disc-bot/bin/chromedriver
+	*	1735765112	0
+	"	1	0
+
+> ~/disc-bot/bin/chrome-headless-shell-linux64/chrome-headless-shell
+	*	1735765108	0
+	"	1	0
+
+> ~/disc-bot/requirements.txt
+	*	1735763230	0
+	"	8	0
+	^	8	0
+	.	8	0
+	+	4	5
+	+	4	7
+	+	6	24
+	+	6	2
+	+	9	5
+	+	12	10
+	+	12	11
+	+	13	8
+	+	12	0
+	+	6	0
+	+	4	0
+	+	3	0
+	+	11	15
+	+	14	0
+	+	7	0
+	+	8	0
+
+> ~/tmp/unzip_url_commands.txt
+	*	1735762825	0
+	"	1	0
+	.	9	0
+	+	1	0
+	+	33	0
+	+	1	36
+	+	1	48
+	+	1	36
+	+	1	38
+	+	1	36
+	+	1	0
+	+	27	0
+	+	28	0
+	+	17	0
+	+	22	0
+	+	1	0
+	+	2	0
+	+	9	0
+
+> ~/disc-bot/archive.zip
+	*	1735762544	0
+	"	6	0
+	.	1	0
+	+	1	0
+
+> zipfile:///home/vivek/disc-bot/archive.zip::local/file.txt
+	*	1735762544	0
+	"	1	0
+
+> ~/disc-bot/local/file.txt
+	*	1735761680	0
+	"	1	4
+	^	1	5
+	.	1	4
+	+	1	4
+
+> ~/disc-bot/local.zip
+	*	1735761609	0
+	"	5	0
+	.	1	0
+	+	1	0
+
+> ~/disc-bot/src/utils/zip_url_to_
+	*	1735759681	0
+	"	1	0
+
+> /usr/share/vim/vim90/doc/digraph.txt
+	*	1735757586	0
+	"	1229	0
+
+> ~/bash/python-direnv.bash
+	*	1735757289	0
+	"	3	0
+	^	4	19
+	.	4	0
+	+	5	8
+	+	4	0
+	+	2	25
+	+	5	10
+	+	2	1
+	+	1	1
+	+	4	18
+	+	2	0
+	+	4	0
+
+> ~/.vim/templates/template.bash
+	*	1735757204	0
+	"	3	0
+	.	61	0
+	+	1	31
+	+	1	41
+	+	1	0
+	+	1	10
+	+	33	2
+	+	1	0
+	+	1	19
+	+	1	44
+	+	1	13
+	+	1	0
+	+	1	2
+	+	1	46
+	+	1	0
+	+	1	68
+	+	1	80
+	+	1	0
+	+	30	0
+	+	30	2
+	+	29	18
+	+	30	0
+	+	29	10
+	+	29	16
+	+	30	0
+	+	29	0
+	+	32	16
+	+	1	44
+	+	1	0
+	+	34	0
+	+	1	0
+	+	21	0
+	+	23	0
+	+	20	0
+	+	39	1
+	+	40	1
+	+	27	44
+	+	17	12
+	+	23	0
+	+	17	64
+	+	41	5
+	+	43	0
+	+	44	0
+	+	26	0
+	+	3	17
+	+	1	0
+	+	44	0
+	+	3	29
+	+	44	5
+	+	42	1
+	+	44	0
+	+	42	0
+	+	44	29
+	+	44	85
+	+	44	0
+	+	59	4
+	+	52	6
+	+	48	0
+	+	53	0
+	+	54	0
+	+	43	46
+	+	60	0
+	+	3	32
+	+	61	0
+	+	21	1
+	+	23	2
+	+	61	0
+
+> ~/.config/setup.bash
+	*	1735756800	0
+	"	4	0
+	^	55	0
+	.	55	0
+	+	16	0
+	+	16	54
+	+	30	0
+	+	33	28
+	+	32	0
+	+	33	1
+	+	33	0
+	+	33	5
+	+	32	1
+	+	33	0
+	+	32	0
+	+	30	0
+	+	16	23
+	+	16	0
+	+	16	25
+	+	16	0
+	+	29	37
+	+	29	1
+	+	29	0
+	+	59	33
+	+	59	51
+	+	59	0
+	+	57	0
+	+	59	0
+	+	59	1
+	+	59	0
+	+	59	1
+	+	59	38
+	+	60	0
+	+	59	4
+	+	59	16
+	+	59	0
+	+	58	0
+	+	59	1
+	+	60	53
+	+	60	0
+	+	59	0
+	+	11	3
+	+	16	0
+	+	12	0
+	+	15	0
+	+	12	30
+	+	14	57
+	+	11	23
+	+	11	0
+	+	16	0
+	+	35	20
+	+	7	25
+	+	7	0
+	+	7	90
+	+	7	27
+	+	7	25
+	+	11	0
+	+	7	0
+	+	11	0
+	+	16	0
+	+	6	0
+	+	4	24
+	+	4	0
+	+	5	0
+	+	7	0
+	+	16	0
+	+	7	0
+	+	8	0
+	+	7	0
+	+	10	0
+	+	16	0
+	+	8	0
+	+	24	0
+	+	8	0
+	+	56	0
+	+	55	0
+
+> ~/.config/env.bash
+	*	1735756798	0
+	"	3	60
+	^	3	61
+	.	3	60
+	+	9	0
+	+	11	0
+	+	10	0
+	+	15	0
+	+	7	0
+	+	4	0
+	+	15	0
+	+	5	0
+	+	6	0
+	+	5	112
+	+	17	0
+	+	16	0
+	+	17	138
+	+	2	65
+	+	3	60
+
+> ~/bash/zdirs.bash
+	*	1735756076	0
+	"	1	0
+	^	1	48
+	.	1	84
+	+	5	18
+	+	5	0
+	+	4	0
+	+	1	20
+	+	1	84
+
+> ~/.config/load_completions.bash
+	*	1735756016	0
+	"	4	0
+	^	18	54
+	.	18	53
+	+	8	23
+	+	2	0
+	+	10	0
+	+	5	0
+	+	9	0
+	+	6	13
+	+	7	43
+	+	7	36
+	+	7	0
+	+	6	0
+	+	7	0
+	+	8	0
+	+	17	41
+	+	12	63
+	+	17	47
+	+	13	0
+	+	18	53
+
+> ~/.config/starship/starship.toml
+	*	1735755885	0
+	"	13	0
+	^	8	19
+	.	1	0
+	+	4	0
+	+	2	51
+	+	16	0
+	+	12	0
+	+	7	0
+	+	5	0
+	+	7	0
+	+	4	0
+	+	7	0
+	+	6	0
+	+	5	0
+	+	6	0
+	+	7	8
+	+	7	0
+	+	12	0
+	+	16	19
+	+	16	31
+	+	16	1
+	+	16	0
+	+	4	0
+	+	4	16
+	+	16	10
+	+	4	22
+	+	16	7
+	+	16	1
+	+	16	9
+	+	16	16
+	+	4	24
+	+	16	17
+	+	16	50
+	+	16	0
+	+	4	22
+	+	16	19
+	+	4	0
+	+	16	20
+	+	16	24
+	+	16	0
+	+	20	0
+	+	4	0
+	+	21	0
+	+	4	10
+	+	17	20
+	+	4	17
+	+	20	10
+	+	17	28
+	+	4	0
+	+	16	17
+	+	17	26
+	+	18	31
+	+	19	9
+	+	17	60
+	+	21	0
+	+	4	21
+	+	21	0
+	+	20	10
+	+	21	0
+	+	21	86
+	+	20	0
+	+	21	2
+	+	17	0
+	+	21	0
+	+	17	11
+	+	21	0
+	+	17	0
+	+	19	0
+	+	18	15
+	+	17	17
+	+	17	113
+	+	19	23
+	+	20	11
+	+	20	105
+	+	21	0
+	+	20	8
+	+	20	107
+	+	20	7
+	+	20	107
+	+	17	73
+	+	20	67
+	+	21	0
+	+	4	0
+	+	19	44
+	+	18	0
+	+	20	0
+	+	14	25
+	+	14	0
+	+	19	40
+	+	20	0
+	+	17	11
+	+	17	0
+	+	17	108
+	+	21	10
+	+	21	0
+	+	18	11
+	+	19	0
+	+	21	0
+	+	18	12
+	+	8	0
+	+	20	0
+	+	8	0
+	+	1	0
+
+> ~/bash/source_vs_bash.bash
+	*	1735752694	0
+	"	2	0
+	^	3	0
+	.	2	0
+	+	4	0
+	+	3	0
+	+	1	0
+	+	2	0
+
+> ~/bash/logs/gh-timeago-updates.log
+	*	1735751593	0
+	"	1	0
+	.	1	0
+	+	1	0
+	+	1	3
+	+	1	2
+	+	1	0
+
+> /tmp/crontab.9qXMhF/crontab
+	*	1735751450	0
+	"	40	55
+	^	38	2
+	.	38	55
+	+	38	1
+	+	37	56
+	+	38	55
+
+> ~/bash/commit.md
+	*	1735751353	0
+	"	7	0
+	^	17	0
+	.	17	0
+	+	10	0
+	+	14	0
+	+	17	0
+
+> /tmp/crontab.Ol2gtb/crontab
+	*	1735751201	0
+	"	38	0
+	.	38	0
+	+	38	0
+
+> ~/bash/data/secret.txt
+	*	1735750963	0
+	"	1	8
+	^	1	9
+	.	1	8
+	+	1	8
+
+> ~/bash/.gitignore
+	*	1735750879	0
+	"	6	0
+	^	6	0
+	.	5	1
+	+	1	4
+	+	3	4
+	+	1	5
+	+	2	5
+	+	3	1
+	+	3	0
+	+	5	15
+	+	4	0
+	+	5	1
+
+> ~/bash/data/.gitkeep
+	*	1735750755	0
+	"	1	0
+
+> ~/.vim/templates/template.gitignore
+	*	1735750640	0
+	"	1	0
+	^	8	55
+	.	9	0
+	+	5	12
+	+	7	7
+	+	19	8
+	+	19	0
+	+	15	0
+	+	16	0
+	+	4	8
+	+	14	6
+	+	17	1
+	+	14	16
+	+	17	14
+	+	13	4
+	+	2	11
+	+	3	0
+	+	19	10
+	+	18	38
+	+	1	0
+	+	13	5
+	+	8	54
+	+	19	0
+	+	13	0
+	+	9	0
+
+> ~/bash/todo.txt
+	*	1735749472	0
+	"	1	2
+	.	1	0
+	+	2	119
+	+	1	0
+	+	2	2
+	+	1	0
+
+> ~/disc-bot/src/utils/parse_total.py
+	*	1735749006	0
+	"	253	0
+	.	253	0
+	+	1	0
+	+	1	79
+	+	1	13
+	+	1	10
+	+	1	0
+	+	1	18
+	+	1	0
+	+	1	37
+	+	1	32
+	+	1	13
+	+	1	0
+	+	1	17
+	+	1	18
+	+	1	0
+	+	1	15
+	+	1	0
+	+	1	3
+	+	1	0
+	+	1	3
+	+	1	0
+	+	1	10
+	+	1	0
+	+	1	5
+	+	1	0
+	+	1	5
+	+	1	4
+	+	1	0
+	+	1	36
+	+	1	0
+	+	1	54
+	+	1	0
+	+	1	5
+	+	1	10
+	+	1	4
+	+	1	16
+	+	1	72
+	+	1	62
+	+	1	58
+	+	1	24
+	+	1	73
+	+	1	36
+	+	1	0
+	+	1	20
+	+	1	0
+	+	1	11
+	+	1	0
+	+	220	0
+	+	220	15
+	+	220	0
+	+	220	21
+	+	220	0
+	+	220	9
+	+	220	29
+	+	220	0
+	+	259	0
+	+	253	0
+
+> ~/.vim/undotree_2
+	*	1735728023	0
+	"	3	1
+	.	3	0
+	+	5	0
+	+	3	0
+
+> ~/.vim/diffpanel_3
+	*	1735728023	0
+	"	1	0
+	.	2	0
+	+	4	0
+	+	2	0
+
+> ~/.vim/vimrc
+	*	1735728021	0
+	"	43	6
+	.	42	0
+	+	1	41
+	+	1	44
+	+	1	40
+	+	1	28
+	+	1	0
+	+	1	11
+	+	1	18
+	+	1	43
+	+	1	64
+	+	1	54
+	+	1	0
+	+	1	31
+	+	1	0
+	+	1	6
+	+	1	0
+	+	1	1
+	+	1	0
+	+	1	80
+	+	1	75
+	+	1	0
+	+	1	52
+	+	1	41
+	+	1	0
+	+	1	26
+	+	1	0
+	+	1	22
+	+	1	25
+	+	1	0
+	+	1	57
+	+	1	59
+	+	1	55
+	+	1	0
+	+	1	25
+	+	1	1
+	+	1	0
+	+	1	24
+	+	1	0
+	+	1	12
+	+	1	0
+	+	1	49
+	+	1	0
+	+	1	13
+	+	1	0
+	+	1	16
+	+	1	0
+	+	1	25
+	+	1	3
+	+	1	5
+	+	1	16
+	+	1	0
+	+	1	16
+	+	1	0
+	+	1	5
+	+	1	3
+	+	1	0
+	+	1	4
+	+	1	0
+	+	1	40
+	+	1	36
+	+	1	0
+	+	1	26
+	+	1	9
+	+	1	0
+	+	1	31
+	+	1	4
+	+	1	30
+	+	1	4
+	+	1	0
+	+	1	5
+	+	1	8
+	+	1	29
+	+	1	33
+	+	1	1
+	+	1	21
+	+	1	20
+	+	1	1
+	+	1	0
+	+	120	0
+	+	424	0
+	+	1146	0
+	+	572	5
+	+	90	0
+	+	42	0
+
+> /usr/share/vim/vim90/doc/builtin.txt
+	*	1735727962	0
+	"	9916	16
+
+> /usr/share/vim/vim90/doc/options.txt
+	*	1735723461	0
+	"	8682	6
+
+> /usr/share/vim/vim90/doc/autocmd.txt
+	*	1735723447	0
+	"	696	28
+
+> ~/tmp/reboots.txt
+	*	1735721615	0
+	"	53	0
+	.	1	0
+	+	1	0
+
+> /tmp/crontab.F6F06J/crontab
+	*	1735721613	0
+	"	49	0
+	^	38	2
+	.	38	1
+	+	38	1
+
+> ~/tmp/paths.txt
+	*	1735682043	0
+	"	33	0
+	.	202	0
+	+	116	0
+	+	202	0
+	+	164	0
+	+	161	0
+	+	190	0
+	+	195	0
+	+	2	0
+	+	202	0
+
+> ~/.config/git/token.gitconfig
+	*	1735681509	0
+	"	1	21
+	^	2	62
+	.	2	21
+	+	2	21
+	+	2	0
+	+	1	0
+	+	2	0
+	+	1	0
+	+	2	21
+
+> ~/.config/git/config
+	*	1735681493	0
+	"	11	0
+	.	14	0
+	+	8	17
+	+	9	8
+	+	10	0
+	+	14	0
+
+> /tmp/crontab.f4FFSp/crontab
+	*	1735680312	0
+	"	38	39
+
+> ~/remote_utils/setup_ssh.bash
+	*	1735677379	0
+	"	2	0
+	.	2	0
+	+	2	0
+
+> ~/hateoas/worker_db_utils.py
+	*	1735676015	0
+	"	1	0
+	.	52	0
+	+	8	0
+	+	5	0
+	+	3	0
+	+	4	0
+	+	2	0
+	+	1	0
+	+	27	0
+	+	11	90
+	+	29	4
+	+	30	16
+	+	11	138
+	+	26	119
+	+	6	43
+	+	5	43
+	+	36	14
+	+	37	12
+	+	38	11
+	+	41	14
+	+	42	12
+	+	43	20
+	+	48	14
+	+	49	12
+	+	50	11
+	+	38	0
+	+	38	143
+	+	52	0
+
+> ~/hateoas/worker_single.py
+	*	1735676014	0
+	"	1	0
+	^	35	17
+	.	35	16
+	+	9	26
+	+	25	66
+	+	26	87
+	+	26	0
+	+	25	1
+	+	11	67
+	+	9	35
+	+	29	0
+	+	36	40
+	+	5	0
+	+	43	28
+	+	48	0
+	+	43	29
+	+	48	0
+	+	24	0
+	+	45	21
+	+	48	0
+	+	36	0
+	+	15	0
+	+	17	0
+	+	21	0
+	+	20	0
+	+	21	0
+	+	16	31
+	+	17	33
+	+	21	0
+	+	45	0
+	+	44	128
+	+	49	0
+	+	14	11
+	+	25	0
+	+	43	0
+	+	46	0
+	+	35	16
+
+> ~/hateoas/worker_utils.py
+	*	1735676011	0
+	"	50	0
+	.	50	0
+	+	13	29
+	+	24	73
+	+	4	8
+	+	4	31
+	+	24	0
+	+	21	7
+	+	4	0
+	+	2	0
+	+	21	8
+	+	22	38
+	+	23	64
+	+	24	49
+	+	4	0
+	+	21	0
+	+	3	0
+	+	14	26
+	+	21	0
+	+	12	0
+	+	4	0
+	+	15	3
+	+	3	26
+	+	24	51
+	+	17	32
+	+	12	7
+	+	12	14
+	+	12	0
+	+	12	47
+	+	12	9
+	+	12	18
+	+	12	0
+	+	12	14
+	+	12	41
+	+	12	24
+	+	12	0
+	+	12	79
+	+	12	16
+	+	12	21
+	+	12	0
+	+	20	0
+	+	28	19
+	+	17	27
+	+	27	0
+	+	17	10
+	+	19	65
+	+	20	0
+	+	19	46
+	+	20	18
+	+	19	0
+	+	17	27
+	+	17	38
+	+	19	14
+	+	20	20
+	+	18	8
+	+	20	0
+	+	16	0
+	+	27	0
+	+	23	44
+	+	28	0
+	+	12	0
+	+	39	52
+	+	51	0
+	+	80	0
+	+	17	0
+	+	6	20
+	+	7	4
+	+	80	18
+	+	17	0
+	+	80	1
+	+	79	25
+	+	80	63
+	+	88	0
+	+	91	0
+	+	110	0
+	+	122	0
+	+	112	43
+	+	112	51
+	+	3	0
+	+	112	0
+	+	9	0
+	+	11	0
+	+	10	0
+	+	11	0
+	+	9	0
+	+	96	0
+	+	123	0
+	+	123	55
+	+	123	41
+	+	123	0
+	+	95	46
+	+	87	0
+	+	63	0
+	+	1	0
+	+	87	0
+	+	82	8
+	+	87	11
+	+	87	0
+	+	82	10
+	+	84	7
+	+	86	14
+	+	50	0
+
+> ~/hateoas/worker_tmp_yt_dlp.py
+	*	1735675984	0
+	"	6	0
+	.	17	0
+	+	2	12
+	+	2	0
+	+	2	28
+	+	7	45
+	+	20	6
+	+	20	0
+	+	20	76
+	+	20	27
+	+	20	4
+	+	20	21
+	+	20	82
+	+	20	23
+	+	20	28
+	+	20	53
+	+	20	25
+	+	20	0
+	+	2	0
+	+	20	3
+	+	1	16
+	+	20	0
+	+	20	133
+	+	20	0
+	+	20	10
+	+	3	10
+	+	20	0
+	+	20	4
+	+	20	85
+	+	20	13
+	+	20	0
+	+	20	82
+	+	20	84
+	+	20	0
+	+	20	22
+	+	20	17
+	+	20	0
+	+	37	17
+	+	11	17
+	+	23	24
+	+	17	12
+	+	32	8
+	+	18	5
+	+	11	0
+	+	10	0
+	+	8	88
+	+	10	0
+	+	22	0
+	+	21	71
+	+	4	8
+	+	21	35
+	+	5	21
+	+	21	2
+	+	32	10
+	+	35	10
+	+	21	4
+	+	5	42
+	+	9	2
+	+	5	59
+	+	9	35
+	+	5	68
+	+	9	44
+	+	17	27
+	+	16	5
+	+	12	0
+	+	23	0
+	+	20	35
+	+	17	0
+	+	13	0
+	+	17	0
+	+	17	4
+	+	17	148
+	+	17	0
+	+	17	169
+	+	17	0
+	+	17	176
+	+	17	45
+	+	17	0
+	+	17	10
+	+	17	42
+	+	17	17
+	+	12	0
+	+	16	0
+	+	17	0
+
+> ~/hateoas/worker_create_graph_payload.py
+	*	1735675557	0
+	"	7	0
+	^	19	74
+	.	7	0
+	+	1	0
+	+	20	20
+	+	19	73
+	+	7	0
+
+> ~/hateoas/chapters.py
+	*	1735675547	0
+	"	7	0
+	^	133	12
+	.	7	0
+	+	2	19
+	+	2	55
+	+	2	0
+	+	2	25
+	+	2	30
+	+	2	0
+	+	2	20
+	+	2	0
+	+	2	18
+	+	2	14
+	+	2	0
+	+	2	29
+	+	2	8
+	+	2	0
+	+	2	18
+	+	2	31
+	+	2	29
+	+	2	0
+	+	2	8
+	+	2	19
+	+	2	5
+	+	2	16
+	+	2	0
+	+	2	4
+	+	2	44
+	+	2	0
+	+	2	26
+	+	2	0
+	+	2	42
+	+	2	14
+	+	2	41
+	+	2	30
+	+	2	40
+	+	2	0
+	+	2	10
+	+	2	70
+	+	2	0
+	+	2	10
+	+	2	11
+	+	2	0
+	+	2	29
+	+	2	30
+	+	1	0
+	+	2	0
+	+	151	50
+	+	23	0
+	+	1	0
+	+	117	0
+	+	124	11
+	+	124	0
+	+	117	0
+	+	120	11
+	+	121	55
+	+	124	36
+	+	124	0
+	+	122	14
+	+	124	0
+	+	122	22
+	+	122	48
+	+	122	13
+	+	122	23
+	+	122	36
+	+	121	50
+	+	122	0
+	+	124	0
+	+	118	18
+	+	123	55
+	+	154	61
+	+	92	0
+	+	82	0
+	+	117	0
+	+	115	0
+	+	119	46
+	+	8	0
+	+	121	13
+	+	121	0
+	+	70	96
+	+	123	78
+	+	139	65
+	+	143	72
+	+	147	89
+	+	153	0
+	+	102	0
+	+	151	0
+	+	127	29
+	+	129	57
+	+	134	6
+	+	134	0
+	+	128	7
+	+	129	0
+	+	130	8
+	+	127	35
+	+	130	26
+	+	131	8
+	+	133	11
+	+	134	0
+	+	7	0
+
+> ~/hateoas/tmp_yt_dlp.py
+	*	1735675544	0
+	"	9	0
+	.	9	0
+	+	79	0
+	+	79	92
+	+	79	0
+	+	73	0
+	+	15	42
+	+	15	41
+	+	96	0
+	+	73	0
+	+	88	5
+	+	82	17
+	+	11	0
+	+	10	0
+	+	96	0
+	+	3	0
+	+	10	0
+	+	8	0
+	+	82	0
+	+	10	0
+	+	11	0
+	+	12	0
+	+	14	0
+	+	8	0
+	+	14	0
+	+	8	0
+	+	96	0
+	+	10	0
+	+	84	0
+	+	96	0
+	+	83	0
+	+	84	0
+	+	15	29
+	+	15	75
+	+	12	0
+	+	11	0
+	+	3	23
+	+	3	57
+	+	3	31
+	+	3	40
+	+	3	39
+	+	8	0
+	+	3	23
+	+	8	0
+	+	3	23
+	+	4	0
+	+	10	0
+	+	11	0
+	+	12	0
+	+	14	0
+	+	12	0
+	+	8	0
+	+	14	0
+	+	12	0
+	+	4	0
+	+	6	0
+	+	10	0
+	+	6	0
+	+	11	0
+	+	5	0
+	+	12	0
+	+	6	0
+	+	7	0
+	+	8	0
+	+	7	0
+	+	82	0
+	+	93	0
+	+	82	0
+	+	84	0
+	+	82	0
+	+	90	0
+	+	7	0
+	+	14	0
+	+	4	0
+	+	96	0
+	+	15	0
+	+	13	41
+	+	82	42
+	+	83	42
+	+	5	0
+	+	6	0
+	+	1	24
+	+	3	49
+	+	1	24
+	+	6	0
+	+	7	0
+	+	9	0
+	a	3	12
+	b	85	12
+
+> ~/hateoas/yt_dlp_info_json.py
+	*	1735675540	0
+	"	2	0
+	.	2	0
+	+	34	0
+	+	5	26
+	+	17	0
+	+	2	12
+	+	6	0
+	+	20	9
+	+	21	32
+	+	23	0
+	+	22	17
+	+	10	0
+	+	1	27
+	+	1	0
+	+	1	28
+	+	1	35
+	+	1	34
+	+	2	0
+	+	1	24
+	+	1	43
+	+	5	0
+	+	3	0
+	+	1	0
+	+	11	66
+	+	7	29
+	+	11	54
+	+	12	77
+	+	11	0
+	+	12	0
+	+	11	0
+	+	7	30
+	+	31	0
+	+	39	0
+	+	25	78
+	+	7	29
+	+	25	89
+	+	26	43
+	+	27	8
+	+	31	0
+	+	24	57
+	+	27	34
+	+	37	47
+	+	38	39
+	+	25	95
+	+	38	0
+	+	3	0
+	+	2	21
+	+	2	0
+
+> ~/hateoas/jsonfile.rg
+	*	1735675520	0
+	"	1	0
+
+> ~/hateoas/requirements.txt
+	*	1735675500	0
+	"	3	2
+	^	3	3
+	.	3	2
+	+	6	5
+	+	12	20
+	+	4	4
+	+	13	13
+	+	14	0
+	+	16	7
+	+	17	18
+	+	17	0
+	+	20	5
+	+	21	5
+	+	24	6
+	+	24	0
+	+	25	0
+	+	5	0
+	+	26	6
+	+	26	13
+	+	27	5
+	+	29	14
+	+	29	0
+	+	1	7
+	+	2	0
+	+	30	6
+	+	31	8
+	+	34	12
+	+	33	2
+	+	3	2
+
+> ~/hateoas/requirements-large.txt
+	*	1735675494	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/bash/insert_oldfiles.bash
+	*	1735655095	0
+	"	1	0
+	^	5	1
+	.	5	0
+	+	1	33
+	+	1	14
+	+	1	13
+	+	1	134
+	+	1	0
+	+	1	32
+	+	1	0
+	+	1	32
+	+	1	45
+	+	1	88
+	+	1	52
+	+	1	9
+	+	1	0
+	+	1	10
+	+	1	27
+	+	1	0
+	+	1	37
+	+	1	0
+	+	1	2
+	+	1	0
+	+	1	10
+	+	1	0
+	+	1	1
+	+	1	0
+	+	1	1
+	+	1	0
+	+	1	10
+	+	1	0
+	+	2	0
+	+	10	0
+	+	5	0
+
+> /usr/bin/bash
+	*	1735654434	0
+	"	1	0
+
+> /usr/bin/fish
+	*	1735654431	0
+	"	1	0
+
+> ~/setup.bash
+	*	1735653348	0
+	"	1	0
+
+> ~/tmp/tmux-unicode.bash
+	*	1735651361	0
+	"	1	0
+	^	4	0
+	.	1	0
+	+	1	167
+	+	1	13
+	+	1	15
+	+	1	7
+	+	3	25
+	+	1	0
+
+> ~/.config/tmux/tmux.conf
+	*	1735650897	0
+	"	19	30
+	.	20	0
+	+	3	0
+	+	35	0
+	+	33	0
+	+	22	0
+	+	33	1
+	+	22	0
+	+	25	39
+	+	24	19
+	+	25	45
+	+	33	0
+	+	28	1
+	+	34	0
+	+	35	0
+	+	28	0
+	+	33	0
+	+	31	36
+	+	32	0
+	+	30	43
+	+	30	39
+	+	30	82
+	+	31	69
+	+	30	0
+	+	32	0
+	+	35	62
+	+	32	0
+	+	35	0
+	+	35	64
+	+	3	19
+	+	35	0
+	+	37	32
+	+	30	44
+	+	31	30
+	+	28	66
+	+	30	43
+	+	31	30
+	+	31	0
+	+	25	34
+	+	28	73
+	+	41	27
+	+	42	20
+	+	43	21
+	+	44	21
+	+	41	7
+	+	46	82
+	+	44	50
+	+	45	48
+	+	46	54
+	+	43	51
+	+	44	51
+	+	45	49
+	+	43	52
+	+	49	45
+	+	51	0
+	+	52	50
+	+	53	0
+	+	47	0
+	+	2	10
+	+	2	5
+	+	2	0
+	+	7	2
+	+	1	0
+	+	3	9
+	+	5	0
+	+	1	34
+	+	7	0
+	+	1	0
+	+	5	0
+	+	11	0
+	+	2	0
+	+	7	0
+	+	2	0
+	+	11	89
+	+	11	0
+	+	3	6
+	+	5	10
+	+	3	10
+	+	39	20
+	+	40	0
+	+	1	0
+	+	16	41
+	+	13	119
+	+	20	0
+	+	20	1
+	+	11	0
+	+	20	0
+	+	14	147
+	+	14	0
+	+	11	33
+	+	11	0
+	+	63	56
+	+	65	20
+	+	65	0
+	+	10	21
+	+	9	92
+	+	15	0
+	+	16	1
+	+	19	38
+	+	18	56
+	+	46	50
+	+	20	0
+	a	1	9
+	b	1	9
+
+> ~/remote_utils/commit.tmp
+	*	1735645860	0
+	"	25	0
+	^	22	0
+	.	24	65
+	+	11	0
+	+	16	0
+	+	20	0
+	+	22	0
+	+	8	64
+	+	9	69
+	+	14	65
+	+	18	66
+	+	24	65
+
+> ~/remote_utils/minimal_starship.toml
+	*	1735645798	0
+	"	1	0
+	^	1	0
+	.	1	0
+	+	17	0
+	+	1	0
+
+> ~/disc-bot/error_levels.txt
+	*	1735638608	0
+	"	1	0
+	^	1	3
+	.	2	0
+	+	2	0
+	+	3	0
+	+	5	0
+	+	2	0
+	+	6	0
+	+	17	0
+	+	16	0
+	+	17	2
+	+	1	2
+	+	2	0
+
+> ~/disc-bot/assets/guild_dmgs_from_max/1.webp
+	*	1735638481	0
+	"	1	0
+
+> ~/disc-bot/images.html
+	*	1735638478	0
+	"	15	14
+	^	1	15
+	.	15	14
+	+	16	7
+	+	1	8
+	+	1	0
+	+	2	27
+	+	3	0
+	+	2	0
+	+	15	14
+
+> ~/disc-bot/error_files.txt
+	*	1735635930	0
+	"	14	0
+	.	14	0
+	+	1	0
+	+	244	0
+	+	1	34
+	+	244	34
+	+	1	0
+	+	6	0
+	+	1	0
+	+	2	0
+	+	3	0
+	+	6	0
+	+	3	0
+	+	14	0
+
+> ~/disc-bot/en_dict_only_digits.txt
+	*	1735632381	0
+	"	10	0
+	^	11	1
+	.	11	0
+	+	11	0
+
+> ~/disc-bot/src/utils/preprocess_damage_image.py
+	*	1735631841	0
+	"	34	0
+	^	31	62
+	.	31	0
+	+	23	51
+	+	18	16
+	+	23	0
+	+	19	0
+	+	3	13
+	+	19	47
+	+	19	0
+	+	20	53
+	+	21	29
+	+	20	17
+	+	22	24
+	+	34	45
+	+	29	4
+	+	34	0
+	+	5	44
+	+	6	4
+	+	19	0
+	+	20	5
+	+	20	0
+	+	30	0
+	+	31	0
+
+> ~/.config/bash_completions/_download_bat_completion.bash
+	*	1735628292	0
+	"	1	0
+	^	18	31
+	.	18	30
+	+	12	0
+	+	12	74
+	+	13	0
+	+	13	124
+	+	17	49
+	+	17	0
+	+	17	8
+	+	1	10
+	+	17	46
+	+	17	0
+	+	13	0
+	+	16	27
+	+	17	47
+	+	17	0
+	+	17	46
+	+	14	53
+	+	17	0
+	+	16	9
+	+	14	108
+	+	16	0
+	+	17	126
+	+	17	0
+	+	16	11
+	+	15	6
+	+	17	74
+	+	10	0
+	+	6	77
+	+	10	0
+	+	8	73
+	+	7	76
+	+	12	0
+	+	13	0
+	+	16	0
+	+	17	0
+	+	12	0
+	+	4	1
+	+	10	0
+	+	17	0
+	+	11	39
+	+	8	87
+	+	17	96
+	+	17	146
+	+	17	0
+	+	9	0
+	+	18	30
+
+> ~/.config/bash_completions/completion-urls.afl
+	*	1735628277	0
+	"	17	23
+	^	17	24
+	.	15	88
+	+	15	88
+
+> ~/disc-bot/.gitignore
+	*	1735571541	0
+	"	7	3
+	^	7	4
+	.	7	3
+	+	7	3
+
+> ~/disc-bot/commit.tmp
+	*	1735571502	0
+	"	32	0
+	.	7	0
+	+	20	0
+	+	6	65
+	+	6	0
+	+	7	53
+	+	8	2
+	+	6	65
+	+	8	68
+	+	11	0
+	+	7	0
+
+> ~/disc-bot/assets/template.html
+	*	1735566187	0
+	"	121	25
+	.	121	0
+	+	5	7
+	+	5	0
+	+	6	0
+	+	19	0
+	+	6	0
+	+	55	0
+	+	68	0
+	+	24	21
+	+	52	24
+	+	54	9
+	+	54	0
+	+	54	9
+	+	54	0
+	+	54	9
+	+	69	9
+	+	125	25
+	+	134	40
+	+	102	28
+	+	103	28
+	+	103	0
+	+	103	40
+	+	109	0
+	+	103	35
+	+	103	25
+	+	103	28
+	+	54	0
+	+	69	0
+	+	64	30
+	+	63	0
+	+	109	24
+	+	109	46
+	+	111	29
+	+	110	30
+	+	103	0
+	+	111	0
+	+	109	0
+	+	103	0
+	+	121	46
+	+	84	0
+	+	110	0
+	+	111	0
+	+	121	0
+
+> /usr/share/vim/vim90/doc/help.txt
+	*	1735565162	0
+	"	2	0
+
+> ~/disc-bot/leaderboard_StarCookiez.html
+	*	1735543312	0
+	"	10	0
+
+> ~/disc-bot/src/utils/flask_endpoint.py
+	*	1735496232	0
+	"	1	0
+
+> ~/ui-components-css/static/css-utilities/tailwind-colors.css
+	*	1735496073	0
+	"	1	0
+	^	287	1
+	.	287	0
+	+	287	0
+
+> ~/disc-bot/src/utils/leader_image_chrome.py
+	*	1735468273	0
+	"	52	10
+	^	47	34
+	.	52	10
+	+	1	0
+	+	181	16
+	+	1	0
+	+	24	0
+	+	5	8
+	+	24	0
+	+	6	26
+	+	62	20
+	+	31	16
+	+	33	13
+	+	45	43
+	+	45	41
+	+	24	26
+	+	24	37
+	+	63	12
+	+	49	39
+	+	45	0
+	+	45	13
+	+	45	27
+	+	63	0
+	+	60	27
+	+	27	14
+	+	24	0
+	+	45	0
+	+	8	0
+	+	25	22
+	+	60	27
+	+	46	9
+	+	46	65
+	+	47	61
+	+	48	0
+	+	46	0
+	+	45	0
+	+	45	33
+	+	45	0
+	+	53	0
+	+	55	27
+	+	56	0
+	+	59	0
+	+	42	0
+	+	41	39
+	+	39	0
+	+	38	42
+	+	45	0
+	+	43	0
+	+	45	0
+	+	51	0
+	+	50	0
+	+	51	26
+	+	45	0
+	+	46	30
+	+	47	33
+	+	52	10
+
+> ~/disc-bot/src/utils/tmp_chrome.py
+	*	1735467461	0
+	"	8	0
+	^	6	8
+	.	6	7
+	+	109	0
+	+	5	7
+	+	6	7
+
+> ~/Twitch/coffee-vps/code/chat.py
+	*	1735466967	0
+	"	715	15
+	.	434	0
+	+	445	0
+	+	439	0
+	+	433	0
+	+	437	19
+	+	444	0
+	+	468	0
+	+	447	0
+	+	789	0
+	+	636	0
+	+	642	54
+	+	675	0
+	+	676	0
+	+	609	22
+	+	610	15
+	+	610	0
+	+	611	18
+	+	676	0
+	+	667	0
+	+	669	59
+	+	622	68
+	+	623	47
+	+	633	0
+	+	622	55
+	+	624	61
+	+	625	9
+	+	627	32
+	+	629	0
+	+	626	0
+	+	632	17
+	+	633	0
+	+	623	31
+	+	628	27
+	+	622	73
+	+	628	23
+	+	669	70
+	+	687	0
+	+	688	0
+	+	658	44
+	+	635	73
+	+	643	59
+	+	788	26
+	+	669	32
+	+	669	0
+	+	675	0
+	+	673	35
+	+	671	53
+	+	674	12
+	+	675	0
+	+	672	18
+	+	673	30
+	+	671	103
+	+	672	0
+	+	675	0
+	+	678	19
+	+	679	40
+	+	676	0
+	+	675	0
+	+	672	0
+	+	790	26
+	+	817	17
+	+	816	29
+	+	817	18
+	+	818	0
+	+	650	4
+	+	646	31
+	+	647	30
+	+	648	0
+	+	437	0
+	+	439	0
+	+	439	27
+	+	437	15
+	+	438	38
+	+	439	0
+	+	791	9
+	+	72	0
+	+	623	0
+	+	631	13
+	+	632	0
+	+	630	11
+	+	631	4
+	+	631	0
+	+	72	27
+	+	72	15
+	+	72	0
+	+	72	41
+	+	72	32
+	+	72	0
+	+	621	0
+	+	614	70
+	+	3	15
+	+	70	16
+	+	69	0
+	+	617	23
+	+	618	22
+	+	619	0
+	+	792	26
+	+	793	26
+	+	434	4
+	+	436	0
+	+	434	0
+
+> ~/disc-bot/src/utils/leaderboard_image.py
+	*	1735466313	0
+	"	97	0
+	^	46	45
+	.	17	24
+	+	5	0
+	+	4	0
+	+	5	0
+	+	2	0
+	+	3	0
+	+	15	0
+	+	4	0
+	+	1	0
+	+	45	46
+	+	48	0
+	+	73	12
+	+	58	65
+	+	51	43
+	+	57	63
+	+	63	57
+	+	25	5
+	+	43	101
+	+	43	9
+	+	50	0
+	+	44	24
+	+	47	0
+	+	46	44
+	+	17	24
+
+> ~/disc-bot/damage_board.png
+	*	1735463775	0
+	"	1	0
+
+> ~/disc-bot/src/commands/leaderboard.py
+	*	1735463140	0
+	"	5	0
+
+> ~/disc-bot/src/commands/officer.py
+	*	1735463092	0
+	"	10	0
+	^	64	17
+	.	9	0
+	+	18	0
+	+	22	0
+	+	21	0
+	+	17	337
+	+	10	0
+	+	64	79
+	+	7	0
+	+	64	60
+	+	69	11
+	+	77	18
+	+	80	39
+	+	81	79
+	+	70	17
+	+	78	42
+	+	80	51
+	+	70	0
+	+	65	0
+	+	64	0
+	+	10	89
+	+	64	0
+	+	64	30
+	+	64	0
+	+	9	0
+
+> ~/disc-bot/src/utils/data.py
+	*	1735461207	0
+	"	85	10
+	^	85	59
+	.	85	0
+	+	85	36
+	+	94	10
+	+	95	60
+	+	96	12
+	+	99	50
+	+	85	53
+	+	95	78
+	+	97	74
+	+	85	0
+
+> ~/disc-bot/config/config.json
+	*	1735416634	0
+	"	1	0
+
+> ~/disc-bot/src/commands/admin.py
+	*	1735416142	0
+	"	7	10
+	.	65	0
+	+	26	27
+	+	26	0
+	+	65	0
+
+> ~/disc-bot/data/leaderboard_messages.json
+	*	1735415010	0
+	"	1	0
+	.	2	0
+	+	1	0
+	+	2	0
+
+> ~/disc-bot/src/main.py
+	*	1735414615	0
+	"	1	0
+
+> ~/disc-bot/.direnv/python-3.10.12/lib/python3.10/site-packages/dotenv/main.py
+	*	1735410451	0
+	"	321	4
+
+> ~/disc-bot/main.py
+	*	1735410416	0
+	"	1	0
+
+> ~/reddit-user-comments/.envrc
+	*	1735410344	0
+	"	3	0
+	^	4	18
+	.	4	17
+	+	4	17
+
+> ~/disc-bot/.envrc
+	*	1735410339	0
+	"	1	0
+	.	1	0
+	+	1	0
+	+	2	0
+	+	1	0
+
+> /tmp/crontab.Qop2mR/crontab
+	*	1735394712	0
+	"	36	0
+
+> /tmp/crontab.8XGPLb/crontab
+	*	1735390951	0
+	"	38	1
+	^	39	0
+	.	38	1
+	+	37	1
+	+	39	0
+	+	38	1
+
+> ~/bash/backup.crontab
+	*	1735390478	0
+	"	37	40
+	^	26	4
+	.	26	3
+	+	26	3
+
+> ~/pyscripts/process_starship_performance.py
+	*	1735390052	0
+	"	43	8
+	^	43	38
+	.	43	37
+	+	50	0
+	+	23	4
+	+	21	0
+	+	46	0
+	+	23	46
+	+	24	13
+	+	26	22
+	+	46	0
+	+	26	44
+	+	29	12
+	+	26	61
+	+	46	0
+	+	27	0
+	+	30	16
+	+	31	4
+	+	45	0
+	+	28	18
+	+	32	8
+	+	38	36
+	+	40	4
+	+	31	19
+	+	31	20
+	+	31	4
+	+	34	19
+	+	37	0
+	+	6	41
+	+	7	4
+	+	31	0
+	+	10	0
+	+	4	0
+	+	36	60
+	+	37	47
+	+	38	49
+	+	39	55
+	+	40	0
+	+	44	24
+	+	41	32
+	+	42	9
+	+	43	37
+
+> ~/pyscripts/data/starship_timings.txt
+	*	1735390049	0
+	"	73	0
+
+> ~/tmp/starship-timings.json
+	*	1735389434	0
+	"	1	0
+	^	1	3
+	.	1	0
+	+	1	0
+	+	1	11
+	+	1	0
+	+	1	29
+	+	1	0
+
+> ~/remote_utils/minimal.fish
+	*	1735387932	0
+	"	6	25
+	^	6	26
+	.	6	25
+	+	2	0
+	+	3	0
+	+	13	0
+	+	11	0
+	+	8	0
+	+	1	0
+	+	9	0
+	+	12	0
+	+	10	0
+	+	8	0
+	+	7	0
+	+	6	25
+
+> ~/remote_utils/minimal.bash
+	*	1735387880	0
+	"	3	0
+	^	1	22
+	.	1	21
+	+	2	0
+	+	7	144
+	+	7	0
+	+	3	0
+	+	5	26
+	+	6	0
+	+	7	1
+	+	4	27
+	+	3	1
+	+	1	21
+
+> ~/remote_utils/env.bash
+	*	1735309367	0
+	"	1	0
+	^	1	59
+	.	1	58
+	+	1	58
+
+> ~/remote_utils/starship.tolm
+	*	1735308812	0
+	"	1	0
+
+> ~/remote_utils/starship.toml
+	*	1735308811	0
+	"	1	0
+
+> ~/remote_utils/install.bash
+	*	1735308456	0
+	"	31	0
+	^	31	0
+	.	30	55
+	+	2	33
+	+	2	45
+	+	2	21
+	+	2	20
+	+	2	0
+	+	30	55
+
+> ~/remote_utils/statusline_features.txt
+	*	1735307669	0
+	"	11	4
+	.	12	0
+	+	4	1
+	+	2	0
+	+	1	2
+	+	5	2
+	+	11	15
+	+	7	4
+	+	9	0
+	+	8	0
+	+	12	0
+
+> ~/.ssh/config
+	*	1735307557	0
+	"	13	124
+	^	13	125
+	.	13	124
+	+	10	18
+	+	16	0
+	+	11	13
+	+	16	22
+	+	16	0
+	+	14	0
+	+	16	0
+	+	16	35
+	+	16	4
+	+	14	4
+	+	15	4
+	+	16	4
+	+	16	5
+	+	15	5
+	+	14	5
+	+	16	5
+	+	16	4
+	+	16	0
+	+	16	4
+	+	16	117
+	+	16	4
+	+	9	0
+	+	2	5
+	+	16	0
+	+	3	0
+	+	1	16
+	+	16	0
+	+	12	35
+	+	4	95
+	+	5	48
+	+	13	124
+
+> ~/.config/alias.bash
+	*	1735236611	0
+	"	1	0
+	^	22	130
+	.	22	129
+	+	27	32
+	+	16	72
+	+	18	38
+	+	31	0
+	+	29	0
+	+	15	0
+	+	34	0
+	+	32	8
+	+	29	0
+	+	32	33
+	+	33	6
+	+	32	1
+	+	34	0
+	+	33	108
+	+	33	6
+	+	31	1
+	+	18	162
+	+	18	14
+	+	18	163
+	+	23	169
+	+	23	0
+	+	18	58
+	+	34	0
+	+	19	0
+	+	20	17
+	+	21	6
+	+	11	58
+	+	12	26
+	+	21	54
+	+	16	41
+	+	17	15
+	+	22	129
+
+> ~/.config/functions.fish
+	*	1735236430	0
+	"	1	9
+	^	67	26
+	.	67	25
+	+	56	0
+	+	56	46
+	+	56	17
+	+	56	14
+	+	56	0
+	+	56	9
+	+	56	0
+	+	56	39
+	+	56	17
+	+	56	0
+	+	56	63
+	+	56	29
+	+	56	0
+	+	56	29
+	+	56	0
+	+	56	8
+	+	56	28
+	+	56	45
+	+	56	14
+	+	56	0
+	+	79	0
+	+	68	0
+	+	79	0
+	+	66	0
+	+	68	0
+	+	79	0
+	+	80	23
+	+	86	0
+	+	79	0
+	+	66	0
+	+	68	0
+	+	79	0
+	+	86	0
+	+	79	8
+	+	79	0
+	+	79	10
+	+	73	0
+	+	66	0
+	+	58	0
+	+	66	0
+	+	56	0
+	+	57	0
+	+	65	19
+	+	89	4
+	+	90	3
+	+	95	20
+	+	104	0
+	+	92	26
+	+	95	4
+	+	104	0
+	+	96	15
+	+	101	46
+	+	103	0
+	+	101	8
+	+	101	16
+	+	102	25
+	+	102	0
+	+	95	18
+	+	96	4
+	+	95	20
+	+	100	0
+	+	101	4
+	+	102	4
+	+	101	49
+	+	99	4
+	+	101	35
+	+	56	74
+	+	1	29
+	+	4	23
+	+	1	0
+	+	28	0
+	+	27	0
+	+	29	29
+	+	32	0
+	+	4	45
+	+	4	0
+	+	21	27
+	+	51	27
+	+	32	51
+	+	51	27
+	+	52	0
+	+	81	0
+	+	80	9
+	+	81	41
+	+	67	25
+
+> ~/.vim/performance/241226.slow_ssh_write.v01.txt
+	*	1735229565	0
+	"	3750	15
+
+> /usr/share/vim/vim90/doc/pi_netrw.txt
+	*	1735229544	0
+	"	4171	27
+
+> scp://128.140.63.20//home/vivek/minimal.bash
+	*	1735229471	0
+	"	1	0
+
+> ~/.vim/plugin/profile.vim
+	*	1735229288	0
+	"	117	8
+	^	117	9
+	.	117	8
+	+	66	18
+	+	67	0
+	+	69	69
+	+	70	8
+	+	69	37
+	+	78	6
+	+	82	0
+	+	83	0
+	+	114	0
+	+	113	18
+	+	114	0
+	+	116	119
+	+	117	8
+
+> ~/.vim/performance/performance.vim
+	*	1735229213	0
+	"	371	0
+	^	377	36
+	.	377	0
+	+	362	10
+	+	362	0
+	+	301	0
+	+	302	0
+	+	301	55
+	+	301	31
+	+	301	22
+	+	301	14
+	+	301	34
+	+	301	46
+	+	301	0
+	+	301	15
+	+	301	0
+	+	300	78
+	+	298	18
+	+	300	44
+	+	298	19
+	+	301	0
+	+	358	36
+	+	362	0
+	+	360	0
+	+	363	48
+	+	361	18
+	+	378	0
+	+	365	32
+	+	369	10
+	+	366	56
+	+	367	4
+	+	368	4
+	+	370	0
+	+	373	4
+	+	376	0
+	+	377	0
+
+> scp://128.140.63.20//home/vivek/file1.txt
+	*	1735227348	0
+	"	1	10
+	^	1	11
+	.	1	10
+	+	1	10
+
+> ~/.vim/.fzf/doc/fzf.txt
+	*	1735227343	0
+	"	2	67
+
+> ftp://128.140.63.20/home/vivek/file.txt
+	*	1735227188	0
+	"	1	0
+
+> ssh://128.140.63.20/home/vivek/file.txt
+	*	1735227172	0
+	"	1	0
+
+> scp://vivek@128.140.63.20/home/vivek/minimal.bash
+	*	1735226942	0
+	"	1	0
+
+> ~/tooling/ssh-knowledge.txt
+	*	1735224920	0
+	"	14	60
+	^	14	26
+	.	14	25
+	+	39	11
+	+	39	0
+	+	24	18
+	+	26	0
+	+	25	0
+	+	39	77
+	+	39	67
+	+	41	50
+	+	49	0
+	+	30	4
+	+	35	5
+	+	35	28
+	+	30	79
+	+	39	4
+	+	35	85
+	+	39	0
+	+	35	0
+	+	29	0
+	+	30	12
+	+	29	0
+	+	30	0
+	+	35	0
+	+	42	33
+	+	48	22
+	+	48	29
+	+	48	28
+	+	48	43
+	+	48	0
+	+	42	62
+	+	44	4
+	+	48	0
+	+	43	16
+	+	47	6
+	+	43	8
+	+	31	40
+	+	27	0
+	+	35	0
+	+	34	46
+	+	39	0
+	+	35	0
+	+	41	0
+	+	35	0
+	+	39	0
+	+	35	0
+	+	39	0
+	+	36	42
+	+	35	0
+	+	35	17
+	+	39	17
+	+	34	17
+	+	32	0
+	+	35	0
+	+	39	0
+	+	35	0
+	+	37	0
+	+	36	132
+	+	34	4
+	+	35	4
+	+	37	4
+	+	38	4
+	+	39	4
+	+	33	37
+	+	40	0
+	+	33	13
+	+	40	0
+	+	33	83
+	+	40	81
+	+	33	24
+	+	40	22
+	+	20	75
+	+	24	0
+	+	29	0
+	+	28	76
+	+	49	379
+	+	49	0
+	+	16	0
+	+	19	0
+	+	16	0
+	+	17	75
+	+	17	78
+	+	15	0
+	+	1	15
+	+	5	30
+	+	6	34
+	+	7	19
+	+	7	0
+	+	4	0
+	+	6	116
+	+	5	84
+	+	4	22
+	+	10	43
+	+	11	71
+	+	12	25
+	+	13	44
+	+	14	58
+	+	15	0
+	+	14	0
+	+	15	0
+	+	14	25
+
+> ~/.config/bindings.inputrc
+	*	1735221372	0
+	"	12	0
+	^	16	30
+	.	16	29
+	+	16	29
+
+> ~/tmp/minimal.bash
+	*	1735221351	0
+	"	3	16
+	.	3	0
+	+	1	0
+	+	4	0
+	+	3	0
+	+	4	0
+	+	2	0
+	+	2	30
+	+	4	0
+	+	1	0
+	+	2	0
+	+	3	0
+
+> ~/.ssh/known_hosts.old
+	*	1735216707	0
+	"	1	0
+
+> ~/.ssh/known_hosts
+	*	1735216706	0
+	"	3	0
+
+> ~/bash/setup_ssh_windows.ps1
+	*	1735216576	0
+	"	8	30
+	.	9	0
+	+	4	0
+	+	5	0
+	+	8	83
+	+	8	1
+	+	7	36
+	+	9	0
+
+> ~/bash/setup_ssh_windows.txt
+	*	1735194639	0
+	"	1	0
+	^	4	69
+	.	4	0
+	+	1	0
+	+	2	52
+	+	3	55
+	+	5	66
+	+	3	0
+	+	4	0
+	+	5	12
+	+	4	0
+
+> ~/bash/setup_ssh.bash
+	*	1735194482	0
+	"	4	0
+	^	1	13
+	.	1	12
+	+	2	0
+	+	1	12
+
+> ~/.ssh/hertzner_rsa.pub
+	*	1735193175	0
+	"	1	8
+
+> ~/.ssh/hertzner_rsa
+	*	1735192907	0
+	"	2	0
+
+> ~/tmp/setup_ssh.bash
+	*	1735138369	0
+	"	2	0
+	^	2	79
+	.	2	78
+	+	17	7
+	+	2	38
+	+	3	38
+	+	5	60
+	+	5	39
+	+	6	63
+	+	8	54
+	+	9	43
+	+	10	43
+	+	11	58
+	+	15	17
+	+	2	12
+	+	2	52
+	+	3	25
+	+	5	25
+	+	6	56
+	+	8	25
+	+	9	25
+	+	10	25
+	+	14	21
+	+	2	0
+	+	6	28
+	+	16	41
+	+	5	0
+	+	11	0
+	+	7	0
+	+	12	0
+	+	1	0
+	+	2	78
+
+> ~/.ssh/ssh-agent(1) manpage
+	*	1735098210	0
+	"	84	0
+	.	1	0
+	+	1	0
+
+> ~/.ssh/ssh_config(5) manpage
+	*	1735095866	0
+	"	20	0
+	.	1	0
+	+	1	0
+
+> ~/tooling/app_ideas/cli_text_modification_tool.txt
+	*	1735094879	0
+	"	2	0
+	.	2	0
+	+	2	0
+	+	3	0
+	+	11	0
+	+	10	0
+	+	11	0
+	+	4	142
+	+	7	6
+	+	5	115
+	+	6	0
+	+	1	0
+	+	2	0
+
+> ~/.config/rclone/rclone.conf
+	*	1734955020	0
+	"	5	19
+	^	5	20
+	.	5	19
+	+	8	0
+	+	3	19
+	+	8	0
+	+	5	21
+	+	8	0
+	+	7	0
+	+	8	0
+	+	4	0
+	+	6	36
+	+	5	19
+
+> ~/sqlite-editor/requirements.txt
+	*	1734895545	0
+	"	2	4
+	^	1	3
+	.	1	2
+	+	3	0
+	+	8	0
+	+	9	15
+	+	10	9
+	+	1	2
+
+> ~/sqlite-editor/make_sample_database.py
+	*	1734895535	0
+	"	3	52
+	^	3	53
+	.	3	52
+	+	11	0
+	+	6	0
+	+	3	52
+
+> ~/sqlite-editor/make_sample_database.db
+	*	1734895515	0
+	"	1	0
+
+> ~/bugs/bug.240925.slow_curl_and_requests.txt
+	*	1734694756	0
+	"	60	0
+	^	2	0
+	.	1	45
+	+	17	0
+	+	17	32
+	+	23	28
+	+	21	0
+	+	19	20
+	+	26	0
+	+	18	59
+	+	17	0
+	+	18	0
+	+	26	0
+	+	47	0
+	+	18	0
+	+	14	9
+	+	15	0
+	+	18	0
+	+	19	3
+	+	19	0
+	+	19	21
+	+	47	0
+	+	24	6
+	+	20	0
+	+	25	0
+	+	19	0
+	+	28	27
+	+	31	3
+	+	33	28
+	+	17	0
+	+	16	0
+	+	17	0
+	+	16	7
+	+	18	7
+	+	26	7
+	+	28	7
+	+	30	7
+	+	33	7
+	+	35	32
+	+	47	0
+	+	35	7
+	+	44	163
+	+	46	66
+	+	43	39
+	+	6	84
+	+	47	0
+	+	41	0
+	+	42	54
+	+	44	59
+	+	43	66
+	+	44	104
+	+	45	0
+	+	37	149
+	+	40	0
+	+	47	67
+	+	39	43
+	+	51	81
+	+	61	0
+	+	49	0
+	+	50	0
+	+	53	39
+	+	59	32
+	+	8	9
+	+	10	3
+	+	9	0
+	+	7	0
+	+	3	7
+	+	5	0
+	+	4	0
+	+	1	45
+
+> ~/tmp/python_common_slow_imports.txt
+	*	1734694702	0
+	"	1	0
+	.	7	0
+	+	2	0
+	+	7	0
+
+> ~/file.py
+	*	1734652100	0
+	"	14	0
+	.	8	0
+	+	1	0
+	+	9	17
+	+	8	0
+
+> ~/pyscripts/crk_substats.py
+	*	1734518339	0
+	"	10	115
+	^	10	116
+	.	10	115
+	+	19	48
+	+	20	0
+	+	19	4
+	+	18	0
+	+	19	0
+	+	4	38
+	+	14	0
+	+	12	36
+	+	18	0
+	+	2	17
+	+	12	0
+	+	13	29
+	+	9	51
+	+	16	36
+	+	9	42
+	+	10	115
 
 > ~/genproject/python-flask-tailwind.sh
 	*	1734347765	0
@@ -17651,43 +22482,9 @@ $
 	+	2	12
 	+	6	4
 
-> /usr/share/vim/vim90/doc/options.txt
-	*	1734097440	0
-	"	9349	18
-
-> ~/.config/rclone/rclone.conf
-	*	1734093917	0
-	"	3	7
-	^	6	37
-	.	6	36
-	+	8	0
-	+	3	19
-	+	8	0
-	+	5	21
-	+	8	0
-	+	7	0
-	+	8	0
-	+	4	0
-	+	6	36
-
-> ~/.ssh/known_hosts
-	*	1734093385	0
-	"	3	9
-
 > ~/.ssh/id_rsa
 	*	1734093362	0
 	"	1	0
-
-> ~/.ssh/config
-	*	1734075238	0
-	"	5	4
-	.	5	0
-	+	1	18
-	+	5	0
-	+	2	13
-	+	5	22
-	+	8	0
-	+	5	0
 
 > ~/tmp/strace_output.txt
 	*	1734075058	0
@@ -17945,48 +22742,6 @@ $
 	a	112	24
 	b	112	27
 
-> ~/ui-components-css/filters_and_pagination.py
-	*	1732926022	0
-	"	82	12
-	^	205	0
-	.	205	0
-	+	135	0
-	+	95	0
-	+	1	0
-	+	2	0
-	+	1	0
-	+	2	12
-	+	3	0
-	+	9	0
-	+	24	0
-	+	5	0
-	+	6	0
-	+	52	54
-	+	5	0
-	+	8	0
-	+	87	0
-	+	147	0
-	+	79	0
-	+	85	48
-	+	3	26
-	+	4	0
-	+	3	26
-	+	177	53
-	+	211	53
-	+	155	0
-	+	152	0
-	+	39	0
-	+	154	0
-	+	112	27
-	+	216	0
-	+	214	37
-	+	216	33
-	+	217	0
-	+	215	33
-	+	203	0
-	+	204	12
-	+	205	0
-
 > ~/ui-components-css/.direnv/python-3.10.12/lib/python3.10/site-packages/box/db_api_base.py
 	*	1732925781	0
 	"	1	0
@@ -18215,19 +22970,6 @@ $
 	*	1732832492	0
 	"	939	8
 
-> ~/ui-components-css/flask-history.py
-	*	1732747322	0
-	"	1	0
-	^	10	8
-	.	11	0
-	+	1	0
-	+	15	0
-	+	12	4
-	+	12	0
-	+	11	0
-	+	10	7
-	+	11	0
-
 > ~/ui-components-css/composer-error.txt
 	*	1732747246	0
 	"	1	0
@@ -18264,48 +23006,6 @@ $
 	+	7	0
 	+	4	0
 	+	8	0
-
-> ~/python_common/box/__init__.py
-	*	1732731493	0
-	"	1	0
-	^	26	67
-	.	26	66
-	+	1	7
-	+	5	7
-	+	6	7
-	+	7	7
-	+	9	7
-	+	11	7
-	+	12	7
-	+	13	7
-	+	14	7
-	+	15	7
-	+	16	7
-	+	18	7
-	+	20	7
-	+	21	7
-	+	22	7
-	+	24	7
-	+	28	9
-	+	3	16
-	+	28	0
-	+	29	26
-	+	29	21
-	+	2	0
-	+	17	0
-	+	26	55
-	+	2	0
-	+	27	0
-	+	26	31
-	+	27	12
-	+	3	18
-	+	29	18
-	+	27	0
-	+	26	1
-	+	3	0
-	+	29	0
-	+	26	66
-	a	26	13
 
 > ~/python_common/box/db_api_base.py
 	*	1732731410	0
@@ -18427,13 +23127,6 @@ $
 	"	1	0
 	.	158	0
 	+	158	0
-
-> ~/ui-components-css/static/css-utilities/tailwind-colors.css
-	*	1732609634	0
-	"	22	2
-	^	287	1
-	.	287	0
-	+	287	0
 
 > ~/prompts/241123.sqlite_pagination.txt
 	*	1732609570	0
@@ -18981,113 +23674,6 @@ $
 	*	1732395762	0
 	"	2	0
 
-> ~/hateoas/hateoas-api.py
-	*	1732395678	0
-	"	1152	4
-	^	1201	9
-	.	1201	8
-	+	1497	73
-	+	1493	32
-	+	1493	95
-	+	1494	37
-	+	1495	4
-	+	1493	0
-	+	1495	82
-	+	1496	37
-	+	1497	74
-	+	1486	29
-	+	1487	29
-	+	1488	37
-	+	1489	38
-	+	1491	141
-	+	1485	52
-	+	1493	83
-	+	24	0
-	+	936	45
-	+	936	0
-	+	952	0
-	+	975	349
-	+	19	36
-	+	925	55
-	+	926	84
-	+	932	34
-	+	933	85
-	+	934	34
-	+	936	0
-	+	935	54
-	+	936	82
-	+	944	34
-	+	945	84
-	+	950	34
-	+	946	41
-	+	949	24
-	+	946	53
-	+	945	28
-	+	948	125
-	+	883	0
-	+	29	33
-	+	891	0
-	+	884	26
-	+	975	18
-	+	976	24
-	+	892	42
-	+	892	0
-	+	976	0
-	+	975	0
-	+	884	0
-	+	29	1
-	+	892	0
-	+	883	11
-	+	977	16
-	+	884	0
-	+	977	0
-	+	883	0
-	+	976	364
-	+	19	0
-	+	945	0
-	+	942	61
-	+	943	89
-	+	944	0
-	+	942	28
-	+	951	26
-	+	955	25
-	+	961	0
-	+	927	28
-	+	931	0
-	+	930	115
-	+	875	29
-	+	875	0
-	+	874	72
-	+	874	0
-	+	930	140
-	+	929	88
-	+	976	417
-	+	17	0
-	+	930	96
-	+	937	53
-	+	938	62
-	+	939	89
-	+	940	95
-	+	941	29
-	+	929	41
-	+	930	95
-	+	939	39
-	+	940	89
-	+	961	0
-	+	920	57
-	+	921	65
-	+	922	98
-	+	923	107
-	+	924	29
-	+	922	84
-	+	794	0
-	+	795	0
-	+	819	0
-	+	817	0
-	+	1062	5
-	+	1201	8
-	g	970	0
-
 > ~/reddit-user-comments/reddit_user_comments_api.py
 	*	1732395500	0
 	"	51	48
@@ -19172,10 +23758,6 @@ $
 	+	4	20
 	+	1	27
 	+	7	48
-
-> /usr/share/vim/vim90/doc/builtin.txt
-	*	1732359236	0
-	"	8099	7
 
 > ~/genproject/sql_checklist.txt
 	*	1732358643	0
@@ -19971,14 +24553,6 @@ $
 	+	230	11
 	+	311	30
 
-> ~/python_common/box/color.py
-	*	1732279823	0
-	"	68	11
-	^	68	12
-	.	68	11
-	+	21	7
-	+	68	11
-
 > ~/python_common/box/truncate.py
 	*	1732279819	0
 	"	6	5
@@ -20494,13 +25068,6 @@ $
 	+	2	57
 	+	1	45
 
-> ~/reddit-user-comments/.envrc
-	*	1732274683	0
-	"	4	17
-	^	4	18
-	.	4	17
-	+	4	17
-
 > ~/python_common/twine-secrets.env
 	*	1732201352	0
 	"	1	0
@@ -20606,203 +25173,6 @@ $
 	+	70	0
 	+	51	0
 
-> ~/.config/functions.fish
-	*	1731595858	0
-	"	67	25
-	^	67	26
-	.	67	25
-	+	56	0
-	+	56	46
-	+	56	17
-	+	56	14
-	+	56	0
-	+	56	9
-	+	56	0
-	+	56	39
-	+	56	17
-	+	56	0
-	+	56	63
-	+	56	29
-	+	56	0
-	+	56	29
-	+	56	0
-	+	56	8
-	+	56	28
-	+	56	45
-	+	56	14
-	+	56	0
-	+	79	0
-	+	68	0
-	+	79	0
-	+	66	0
-	+	68	0
-	+	79	0
-	+	80	23
-	+	86	0
-	+	79	0
-	+	66	0
-	+	68	0
-	+	79	0
-	+	86	0
-	+	79	8
-	+	79	0
-	+	79	10
-	+	73	0
-	+	66	0
-	+	58	0
-	+	66	0
-	+	56	0
-	+	57	0
-	+	65	19
-	+	89	4
-	+	90	3
-	+	95	20
-	+	104	0
-	+	92	26
-	+	95	4
-	+	104	0
-	+	96	15
-	+	101	46
-	+	103	0
-	+	101	8
-	+	101	16
-	+	102	25
-	+	102	0
-	+	95	18
-	+	96	4
-	+	95	20
-	+	100	0
-	+	101	4
-	+	102	4
-	+	101	49
-	+	99	4
-	+	101	35
-	+	56	74
-	+	1	29
-	+	4	23
-	+	1	0
-	+	28	0
-	+	27	0
-	+	29	29
-	+	32	0
-	+	4	45
-	+	4	0
-	+	21	27
-	+	51	27
-	+	32	51
-	+	51	27
-	+	52	0
-	+	81	0
-	+	80	9
-	+	81	41
-	+	67	25
-
-> ~/.config/setup.fish
-	*	1731595831	0
-	"	13	8
-	^	4	26
-	.	4	25
-	+	8	0
-	+	8	45
-	+	8	5
-	+	8	0
-	+	8	9
-	+	8	5
-	+	8	0
-	+	8	9
-	+	8	39
-	+	8	9
-	+	8	0
-	+	8	20
-	+	8	19
-	+	8	23
-	+	8	8
-	+	8	23
-	+	8	9
-	+	8	0
-	+	21	1
-	+	8	0
-	+	27	0
-	+	15	0
-	+	15	13
-	+	15	0
-	+	29	21
-	+	29	18
-	+	29	0
-	+	29	42
-	+	29	0
-	+	28	0
-	+	29	0
-	+	8	0
-	+	8	44
-	+	8	0
-	+	8	4
-	+	8	0
-	+	8	7
-	+	8	37
-	+	8	24
-	+	8	7
-	+	8	5
-	+	8	25
-	+	8	13
-	+	8	30
-	+	8	7
-	+	8	0
-	+	8	21
-	+	8	0
-	+	15	0
-	+	15	1
-	+	8	0
-	+	15	0
-	+	15	32
-	+	8	23
-	+	8	0
-	+	8	19
-	+	8	0
-	+	8	26
-	+	8	10
-	+	8	5
-	+	8	0
-	+	8	37
-	+	8	0
-	+	8	22
-	+	8	58
-	+	8	0
-	+	9	30
-	+	15	18
-	+	29	0
-	+	30	0
-	+	31	0
-	+	30	29
-	+	31	11
-	+	33	34
-	+	34	0
-	+	15	0
-	+	26	55
-	+	26	0
-	+	18	82
-	+	19	80
-	+	1	0
-	+	16	26
-	+	1	13
-	+	18	12
-	+	27	0
-	+	26	11
-	+	34	12
-	+	1	0
-	+	18	0
-	+	26	0
-	+	34	0
-	+	13	33
-	+	14	0
-	+	15	0
-	+	12	0
-	+	15	0
-	+	10	0
-	+	15	0
-	+	3	33
-	+	4	25
-
 > ~/.config/fish/config.fish
 	*	1731595827	0
 	"	3	12
@@ -20810,15 +25180,6 @@ $
 	+	3	30
 	+	1	0
 	+	3	0
-
-> ~/hateoas/worker_create_graph_payload.py
-	*	1731541683	0
-	"	19	73
-	^	19	74
-	.	19	73
-	+	1	0
-	+	20	20
-	+	19	73
 
 > ~/bash/logs/worker_create_graph_payload.log
 	*	1731541635	0
@@ -20918,112 +25279,6 @@ $
 > ~/hateoas/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/reltools.py
 	*	1731541630	0
 	"	71	4
-
-> ~/hateoas/worker_utils.py
-	*	1731541073	0
-	"	1	0
-	^	86	15
-	.	86	14
-	+	36	45
-	+	13	29
-	+	24	73
-	+	4	8
-	+	4	31
-	+	24	0
-	+	21	7
-	+	4	0
-	+	2	0
-	+	21	8
-	+	22	38
-	+	23	64
-	+	24	49
-	+	4	0
-	+	21	0
-	+	3	0
-	+	14	26
-	+	21	0
-	+	12	0
-	+	4	0
-	+	15	3
-	+	3	26
-	+	24	51
-	+	17	32
-	+	12	7
-	+	12	14
-	+	12	0
-	+	12	47
-	+	12	9
-	+	12	18
-	+	12	0
-	+	12	14
-	+	12	41
-	+	12	24
-	+	12	0
-	+	12	79
-	+	12	16
-	+	12	21
-	+	12	0
-	+	20	0
-	+	28	19
-	+	17	27
-	+	27	0
-	+	17	10
-	+	19	65
-	+	20	0
-	+	19	46
-	+	20	18
-	+	19	0
-	+	17	27
-	+	17	38
-	+	19	14
-	+	20	20
-	+	18	8
-	+	20	0
-	+	16	0
-	+	27	0
-	+	23	44
-	+	28	0
-	+	12	0
-	+	39	52
-	+	51	0
-	+	80	0
-	+	17	0
-	+	6	20
-	+	7	4
-	+	80	18
-	+	17	0
-	+	80	1
-	+	79	25
-	+	80	63
-	+	88	0
-	+	91	0
-	+	110	0
-	+	122	0
-	+	112	43
-	+	112	51
-	+	3	0
-	+	112	0
-	+	9	0
-	+	11	0
-	+	10	0
-	+	11	0
-	+	9	0
-	+	96	0
-	+	123	0
-	+	123	55
-	+	123	41
-	+	123	0
-	+	95	46
-	+	87	0
-	+	63	0
-	+	1	0
-	+	87	0
-	+	82	8
-	+	87	11
-	+	87	0
-	+	82	10
-	+	84	7
-	+	86	14
 
 > ~/hateoas/worker_chat_to_offset.py
 	*	1731541016	0
@@ -21332,77 +25587,6 @@ $
 	+	19	0
 	+	3	0
 	+	19	0
-
-> ~/hateoas/worker_single.py
-	*	1731540470	0
-	"	40	24
-	^	35	17
-	.	35	16
-	+	9	26
-	+	25	66
-	+	26	87
-	+	26	0
-	+	25	1
-	+	11	67
-	+	9	35
-	+	29	0
-	+	36	40
-	+	5	0
-	+	43	28
-	+	48	0
-	+	43	29
-	+	48	0
-	+	24	0
-	+	45	21
-	+	48	0
-	+	36	0
-	+	15	0
-	+	17	0
-	+	21	0
-	+	20	0
-	+	21	0
-	+	16	31
-	+	17	33
-	+	21	0
-	+	45	0
-	+	44	128
-	+	49	0
-	+	14	11
-	+	25	0
-	+	43	0
-	+	46	0
-	+	35	16
-
-> ~/hateoas/worker_db_utils.py
-	*	1731540467	0
-	"	51	0
-	.	52	0
-	+	8	0
-	+	5	0
-	+	3	0
-	+	4	0
-	+	2	0
-	+	1	0
-	+	27	0
-	+	11	90
-	+	29	4
-	+	30	16
-	+	11	138
-	+	26	119
-	+	6	43
-	+	5	43
-	+	36	14
-	+	37	12
-	+	38	11
-	+	41	14
-	+	42	12
-	+	43	20
-	+	48	14
-	+	49	12
-	+	50	11
-	+	38	0
-	+	38	143
-	+	52	0
 
 > ~/hateoas/worker.py
 	*	1731540225	0
@@ -21862,82 +26046,6 @@ $
 	+	6	0
 	+	3	0
 
-> ~/bash/todo.txt
-	*	1731535077	0
-	"	1	2
-	.	1	0
-	+	2	119
-	+	1	0
-	+	2	2
-	+	1	0
-
-> ~/pyscripts/commit-message-gemini.py
-	*	1731534526	0
-	"	87	10
-	^	87	11
-	.	87	10
-	+	64	60
-	+	26	30
-	+	60	10
-	+	61	35
-	+	10	25
-	+	64	4
-	+	64	0
-	+	64	40
-	+	77	116
-	+	10	14
-	+	94	0
-	+	94	33
-	+	94	4
-	+	94	6
-	+	94	8
-	+	94	22
-	+	81	19
-	+	94	0
-	+	94	23
-	+	94	17
-	+	94	3
-	+	94	30
-	+	94	12
-	+	94	0
-	+	11	0
-	+	20	41
-	+	93	6
-	+	94	0
-	+	25	0
-	+	34	0
-	+	29	60
-	+	30	70
-	+	31	24
-	+	6	0
-	+	32	23
-	+	6	0
-	+	60	0
-	+	74	0
-	+	8	13
-	+	60	0
-	+	70	58
-	+	71	0
-	+	92	0
-	+	84	23
-	+	85	23
-	+	66	30
-	+	67	5
-	+	59	0
-	+	82	5
-	+	93	6
-	+	82	6
-	+	93	2
-	+	9	21
-	+	1	35
-	+	90	11
-	+	93	24
-	+	89	50
-	+	90	28
-	+	93	1
-	+	92	0
-	+	87	10
-
 > ~/tooling/swe_knowledge.txt
 	*	1731534419	0
 	"	1	0
@@ -22145,13 +26253,6 @@ $
 > ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/__init__.py
 	*	1731277913	0
 	"	20	0
-
-> ~/pyscripts/data/commit-message-gemini-cache.json
-	*	1731277711	0
-	"	2	641
-	.	2	642
-	+	3	0
-	+	2	642
 
 > ~/python_common/waivek/markup.py
 	*	1731277636	0
@@ -22728,21 +26829,6 @@ $
 	^	1	22
 	.	1	21
 	+	1	21
-
-> ~/bash/python-direnv.bash
-	*	1731240943	0
-	"	4	0
-	^	4	19
-	.	4	0
-	+	5	8
-	+	4	0
-	+	2	25
-	+	5	10
-	+	2	1
-	+	1	1
-	+	4	18
-	+	2	0
-	+	4	0
 
 > ~/llm/.envrc
 	*	1731240194	0
@@ -23342,108 +27428,6 @@ $
 	+	39	0
 	+	38	0
 
-> ~/hateoas/chapters.py
-	*	1730728064	0
-	"	130	8
-	^	133	12
-	.	134	0
-	+	2	19
-	+	2	55
-	+	2	0
-	+	2	25
-	+	2	30
-	+	2	0
-	+	2	20
-	+	2	0
-	+	2	18
-	+	2	14
-	+	2	0
-	+	2	29
-	+	2	8
-	+	2	0
-	+	2	18
-	+	2	31
-	+	2	29
-	+	2	0
-	+	2	8
-	+	2	19
-	+	2	5
-	+	2	16
-	+	2	0
-	+	2	4
-	+	2	44
-	+	2	0
-	+	2	26
-	+	2	0
-	+	2	42
-	+	2	14
-	+	2	41
-	+	2	30
-	+	2	40
-	+	2	0
-	+	2	10
-	+	2	70
-	+	2	0
-	+	2	10
-	+	2	11
-	+	2	0
-	+	2	29
-	+	2	30
-	+	1	0
-	+	2	0
-	+	151	50
-	+	23	0
-	+	1	0
-	+	117	0
-	+	124	11
-	+	124	0
-	+	117	0
-	+	120	11
-	+	121	55
-	+	124	36
-	+	124	0
-	+	122	14
-	+	124	0
-	+	122	22
-	+	122	48
-	+	122	13
-	+	122	23
-	+	122	36
-	+	121	50
-	+	122	0
-	+	124	0
-	+	118	18
-	+	123	55
-	+	154	61
-	+	92	0
-	+	82	0
-	+	117	0
-	+	115	0
-	+	119	46
-	+	8	0
-	+	121	13
-	+	121	0
-	+	70	96
-	+	123	78
-	+	139	65
-	+	143	72
-	+	147	89
-	+	153	0
-	+	102	0
-	+	151	0
-	+	127	29
-	+	129	57
-	+	134	6
-	+	134	0
-	+	128	7
-	+	129	0
-	+	130	8
-	+	127	35
-	+	130	26
-	+	131	8
-	+	133	11
-	+	134	0
-
 > ~/hateoas/handle_sqlite_error.py
 	*	1730727188	0
 	"	6	0
@@ -23759,106 +27743,6 @@ $
 	a	92	12
 	b	92	12
 
-> ~/sqlite-editor/editor-api.py
-	*	1730712965	0
-	"	247	21
-	^	560	78
-	.	560	77
-	+	423	58
-	+	460	0
-	+	426	36
-	+	427	4
-	+	460	0
-	+	438	15
-	+	456	37
-	+	456	16
-	+	456	24
-	+	456	28
-	+	456	52
-	+	456	19
-	+	457	15
-	+	458	11
-	+	459	112
-	+	655	71
-	+	659	146
-	+	661	0
-	+	659	0
-	+	661	83
-	+	425	35
-	+	414	136
-	+	436	31
-	+	400	48
-	+	400	51
-	+	386	70
-	+	387	31
-	+	388	22
-	+	389	26
-	+	389	8
-	+	389	29
-	+	398	71
-	+	398	0
-	+	389	32
-	+	390	8
-	+	392	31
-	+	393	8
-	+	395	9
-	+	396	8
-	+	389	0
-	+	386	0
-	+	389	0
-	+	388	92
-	+	389	0
-	+	377	0
-	+	382	29
-	+	400	0
-	+	456	0
-	+	437	37
-	+	659	142
-	+	659	0
-	+	659	142
-	+	659	0
-	+	661	0
-	+	659	129
-	+	659	114
-	+	659	163
-	+	659	62
-	+	659	0
-	+	827	385
-	+	656	114
-	+	659	62
-	+	657	162
-	+	659	0
-	+	660	0
-	+	658	61
-	+	456	75
-	+	456	0
-	+	456	20
-	+	456	0
-	+	439	0
-	+	448	0
-	+	440	0
-	+	378	0
-	+	376	0
-	+	376	19
-	+	376	8
-	+	376	0
-	+	376	39
-	+	448	69
-	+	376	23
-	+	376	27
-	+	376	71
-	+	376	0
-	+	376	9
-	+	376	0
-	+	448	0
-	+	449	164
-	+	450	166
-	+	451	25
-	+	448	0
-	+	452	0
-	+	559	53
-	+	560	77
-
 > ~/sqlite-editor/data/state_1.json
 	*	1730712951	0
 	"	1	0
@@ -24107,114 +27991,6 @@ $
 	+	4	0
 	+	10	37
 
-> ~/.config/tmux/tmux.conf
-	*	1730634948	0
-	"	18	56
-	^	18	57
-	.	18	56
-	+	34	34
-	+	1	0
-	+	3	0
-	+	35	0
-	+	33	0
-	+	22	0
-	+	33	1
-	+	22	0
-	+	25	39
-	+	24	19
-	+	25	45
-	+	33	0
-	+	28	1
-	+	34	0
-	+	35	0
-	+	28	0
-	+	33	0
-	+	31	36
-	+	32	0
-	+	30	43
-	+	30	39
-	+	30	82
-	+	31	69
-	+	30	0
-	+	32	0
-	+	35	62
-	+	32	0
-	+	35	0
-	+	35	64
-	+	3	19
-	+	35	0
-	+	37	32
-	+	30	44
-	+	31	30
-	+	28	66
-	+	30	43
-	+	31	30
-	+	31	0
-	+	25	34
-	+	28	73
-	+	41	27
-	+	42	20
-	+	43	21
-	+	44	21
-	+	41	7
-	+	46	82
-	+	44	50
-	+	45	48
-	+	46	54
-	+	43	51
-	+	44	51
-	+	45	49
-	+	43	52
-	+	49	45
-	+	51	0
-	+	52	50
-	+	53	0
-	+	47	0
-	+	2	10
-	+	2	5
-	+	2	0
-	+	7	2
-	+	1	0
-	+	3	9
-	+	5	0
-	+	1	34
-	+	7	0
-	+	1	0
-	+	5	0
-	+	11	0
-	+	2	0
-	+	7	0
-	+	2	0
-	+	11	89
-	+	11	0
-	+	3	6
-	+	5	10
-	+	3	10
-	+	39	20
-	+	40	0
-	+	1	0
-	+	16	41
-	+	13	119
-	+	20	0
-	+	20	1
-	+	11	0
-	+	20	0
-	+	14	147
-	+	14	0
-	+	11	33
-	+	11	0
-	+	63	56
-	+	65	20
-	+	65	0
-	+	10	21
-	+	9	92
-	+	15	0
-	+	16	1
-	+	19	38
-	+	18	56
-	a	1	9
-	b	1	9
-
 > ~/.vim/plugin/tmux.vim
 	*	1730623740	0
 	"	1	0
@@ -24372,12 +28148,6 @@ $
 	+	45	0
 	+	40	0
 	+	45	0
-
-> ~/tmp/reboots.txt
-	*	1730413484	0
-	"	1	0
-	.	1	0
-	+	1	0
 
 > ~/nicesite/public/_redirects
 	*	1730226637	0
@@ -25120,44 +28890,6 @@ $
 	+	36	204
 	+	3	0
 
-> ~/.config/alias.bash
-	*	1729798234	0
-	"	22	129
-	^	22	130
-	.	22	129
-	+	27	32
-	+	16	72
-	+	18	38
-	+	31	0
-	+	29	0
-	+	15	0
-	+	34	0
-	+	32	8
-	+	29	0
-	+	32	33
-	+	33	6
-	+	32	1
-	+	34	0
-	+	33	108
-	+	33	6
-	+	31	1
-	+	18	162
-	+	18	14
-	+	18	163
-	+	23	169
-	+	23	0
-	+	18	58
-	+	34	0
-	+	19	0
-	+	20	17
-	+	21	6
-	+	11	58
-	+	12	26
-	+	21	54
-	+	16	41
-	+	17	15
-	+	22	129
-
 > ~/hateoas/worker_encode_video.py
 	*	1729797319	0
 	"	101	4
@@ -25275,13 +29007,6 @@ $
 	+	42	131
 	+	41	131
 	+	42	130
-
-> ~/pyscripts/cache.py
-	*	1729789425	0
-	"	36	0
-	^	36	0
-	.	35	0
-	+	35	0
 
 > ~/pyscripts/data/youtube-handle-to-channel-id.json
 	*	1729789395	0
@@ -26445,99 +30170,6 @@ $
 	*	1729513917	0
 	"	1	0
 
-> ~/hateoas/tmp_yt_dlp.py
-	*	1729513865	0
-	"	1	0
-	.	7	0
-	+	79	0
-	+	79	92
-	+	79	0
-	+	73	0
-	+	15	42
-	+	15	41
-	+	96	0
-	+	73	0
-	+	88	5
-	+	82	17
-	+	11	0
-	+	9	0
-	+	96	0
-	+	3	0
-	+	9	0
-	+	8	0
-	+	82	0
-	+	9	0
-	+	10	0
-	+	11	0
-	+	12	0
-	+	14	0
-	+	8	0
-	+	14	0
-	+	8	0
-	+	96	0
-	+	10	0
-	+	84	0
-	+	96	0
-	+	83	0
-	+	84	0
-	+	15	29
-	+	15	75
-	+	12	0
-	+	11	0
-	+	3	23
-	+	3	57
-	+	3	31
-	+	3	40
-	+	3	39
-	+	8	0
-	+	3	23
-	+	8	0
-	+	3	23
-	+	4	0
-	+	9	0
-	+	10	0
-	+	11	0
-	+	12	0
-	+	14	0
-	+	12	0
-	+	8	0
-	+	14	0
-	+	12	0
-	+	4	0
-	+	6	0
-	+	9	0
-	+	6	0
-	+	11	0
-	+	5	0
-	+	12	0
-	+	6	0
-	+	7	0
-	+	8	0
-	+	7	0
-	+	82	0
-	+	93	0
-	+	82	0
-	+	84	0
-	+	82	0
-	+	90	0
-	+	7	0
-	+	14	0
-	+	4	0
-	+	96	0
-	+	15	0
-	+	13	41
-	+	82	42
-	+	83	42
-	+	5	0
-	+	6	0
-	+	1	24
-	+	3	49
-	+	1	24
-	+	6	0
-	+	7	0
-	a	3	12
-	b	85	12
-
 > ~/hateoas/download_portionurl_2.py
 	*	1729511757	0
 	"	33	0
@@ -26666,55 +30298,6 @@ $
 	*	1729363533	0
 	"	2710	0
 
-> ~/hateoas/yt_dlp_info_json.py
-	*	1729363532	0
-	"	37	47
-	^	25	96
-	.	38	0
-	+	34	0
-	+	5	26
-	+	17	0
-	+	2	12
-	+	6	0
-	+	20	9
-	+	21	32
-	+	23	0
-	+	22	17
-	+	10	0
-	+	1	27
-	+	1	0
-	+	1	28
-	+	1	35
-	+	1	34
-	+	2	0
-	+	1	24
-	+	1	43
-	+	5	0
-	+	3	0
-	+	1	0
-	+	11	66
-	+	7	29
-	+	11	54
-	+	12	77
-	+	11	0
-	+	12	0
-	+	11	0
-	+	7	30
-	+	31	0
-	+	39	0
-	+	25	78
-	+	7	29
-	+	25	89
-	+	26	43
-	+	27	8
-	+	31	0
-	+	24	57
-	+	27	34
-	+	37	47
-	+	38	39
-	+	25	95
-	+	38	0
-
 > ~/hateoas/tmp/kfchvCyHmsc-2.info.json
 	*	1729363296	0
 	"	2710	12
@@ -26725,93 +30308,6 @@ $
 	^	1	12
 	.	1	0
 	+	1	0
-
-> ~/hateoas/worker_tmp_yt_dlp.py
-	*	1729343066	0
-	"	20	0
-	.	17	0
-	+	2	12
-	+	2	0
-	+	2	28
-	+	7	45
-	+	20	6
-	+	20	0
-	+	20	76
-	+	20	27
-	+	20	4
-	+	20	21
-	+	20	82
-	+	20	23
-	+	20	28
-	+	20	53
-	+	20	25
-	+	20	0
-	+	2	0
-	+	20	3
-	+	1	16
-	+	20	0
-	+	20	133
-	+	20	0
-	+	20	10
-	+	3	10
-	+	20	0
-	+	20	4
-	+	20	85
-	+	20	13
-	+	20	0
-	+	20	82
-	+	20	84
-	+	20	0
-	+	20	22
-	+	20	17
-	+	20	0
-	+	37	17
-	+	11	17
-	+	23	24
-	+	17	12
-	+	32	8
-	+	18	5
-	+	11	0
-	+	10	0
-	+	8	88
-	+	10	0
-	+	22	0
-	+	21	71
-	+	4	8
-	+	21	35
-	+	5	21
-	+	21	2
-	+	32	10
-	+	35	10
-	+	21	4
-	+	5	42
-	+	9	2
-	+	5	59
-	+	9	35
-	+	5	68
-	+	9	44
-	+	17	27
-	+	16	5
-	+	12	0
-	+	23	0
-	+	20	35
-	+	17	0
-	+	13	0
-	+	17	0
-	+	17	4
-	+	17	148
-	+	17	0
-	+	17	169
-	+	17	0
-	+	17	176
-	+	17	45
-	+	17	0
-	+	17	10
-	+	17	42
-	+	17	17
-	+	12	0
-	+	16	0
-	+	17	0
 
 > /usr/lib/python3.10/subprocess.py
 	*	1729342957	0
@@ -27363,13 +30859,6 @@ $
 	+	8	10
 	+	13	12
 
-> ~/bash/backup.crontab
-	*	1729268220	0
-	"	36	0
-	^	26	4
-	.	26	3
-	+	26	3
-
 > ~/python_common/waivek/table.py
 	*	1729267372	0
 	"	6	0
@@ -27787,78 +31276,6 @@ $
 > /proc/41299/attr/exec
 	*	1729258463	0
 	"	1	0
-
-> ~/bash/oldfiles.bash
-	*	1729255907	0
-	"	2	69
-	^	1	1
-	.	2	0
-	+	2	1
-	+	2	12
-	+	2	49
-	+	2	12
-	+	2	0
-	+	3	1
-	+	1	10
-	+	2	62
-	+	2	34
-	+	2	1
-	+	2	16
-	+	2	0
-	+	6	33
-	+	2	68
-	+	3	66
-	+	3	0
-	+	2	13
-	+	3	23
-	+	4	51
-	+	6	28
-	+	14	22
-	+	2	107
-	+	8	0
-	+	5	0
-	+	1	0
-	+	8	0
-	+	2	83
-	+	2	0
-
-> ~/bash/pwd-oldfiles.bash
-	*	1729255906	0
-	"	2	90
-	.	2	0
-	+	1	0
-	+	1	10
-	+	1	0
-	+	1	1
-	+	1	0
-	+	1	71
-	+	1	0
-	+	2	53
-	+	1	0
-	+	6	5
-	+	10	7
-	+	11	0
-	+	12	0
-	+	4	0
-	+	5	47
-	+	2	0
-	+	2	119
-	+	2	0
-	+	2	131
-	+	3	0
-	+	2	285
-	+	2	163
-	+	3	0
-	+	2	0
-	+	2	163
-	+	3	80
-	+	3	0
-	+	2	131
-	+	3	80
-	+	3	0
-	+	2	0
-	+	2	104
-	+	2	0
 
 > ~/tooling/docs/fzf.man
 	*	1729255767	0
@@ -28595,13 +32012,6 @@ $
 	+	129	18
 	+	130	54
 
-> ~/tmp/python_common_slow_imports.txt
-	*	1729193230	0
-	"	1	0
-	.	7	0
-	+	2	0
-	+	7	0
-
 > ~/hateoas/.direnv/python-3.10.12/lib/python3.10/site-packages/waivek/__read_2.py
 	*	1729192822	0
 	"	11	0
@@ -28795,43 +32205,6 @@ $
 	"	1	0
 	.	1	0
 	+	1	0
-
-> ~/hateoas/requirements-large.txt
-	*	1729160498	0
-	"	1	0
-	.	1	0
-	+	1	0
-
-> ~/hateoas/requirements.txt
-	*	1729160496	0
-	"	21	0
-	^	33	20
-	.	33	2
-	+	6	5
-	+	12	20
-	+	4	4
-	+	13	13
-	+	14	0
-	+	16	7
-	+	17	18
-	+	17	0
-	+	20	5
-	+	21	5
-	+	24	6
-	+	24	0
-	+	25	0
-	+	5	0
-	+	26	6
-	+	26	13
-	+	27	5
-	+	29	14
-	+	29	0
-	+	1	7
-	+	2	0
-	+	30	6
-	+	31	8
-	+	34	12
-	+	33	2
 
 > ~/hateoas/output.txt
 	*	1729154446	0
@@ -29264,10 +32637,6 @@ $
 	+	1	0
 	+	26	134
 	+	26	0
-
-> /usr/share/vim/vim90/doc/help.txt
-	*	1728911887	0
-	"	1	0
 
 > ~/hateoas/video_utils.py
 	*	1728893999	0
@@ -30176,48 +33545,6 @@ $
 	+	8	34
 	+	6	38
 
-> ~/.config/setup.bash
-	*	1728393569	0
-	"	19	0
-	.	62	0
-	+	18	0
-	+	13	54
-	+	35	0
-	+	38	28
-	+	37	0
-	+	38	1
-	+	38	0
-	+	38	5
-	+	37	1
-	+	38	0
-	+	37	0
-	+	35	0
-	+	17	23
-	+	18	0
-	+	15	25
-	+	17	0
-	+	34	37
-	+	34	1
-	+	34	0
-	+	62	33
-	+	62	51
-	+	62	0
-	+	60	0
-	+	62	0
-	+	62	1
-	+	62	0
-	+	62	1
-	+	62	38
-	+	63	0
-	+	62	4
-	+	62	16
-	+	62	0
-	+	61	0
-	+	62	1
-	+	63	53
-	+	63	0
-	+	62	0
-
 > ~/tooling/remaps.txt
 	*	1727960297	0
 	"	27	0
@@ -30252,112 +33579,6 @@ $
 	+	5	4
 	+	6	4
 	+	1	0
-
-> ~/.config/starship/starship.toml
-	*	1727958451	0
-	"	1	0
-	^	8	24
-	.	8	0
-	+	4	15
-	+	4	39
-	+	4	25
-	+	4	0
-	+	2	51
-	+	16	0
-	+	12	0
-	+	7	0
-	+	5	0
-	+	7	0
-	+	4	0
-	+	7	0
-	+	6	0
-	+	5	0
-	+	6	0
-	+	7	8
-	+	7	0
-	+	12	0
-	+	16	19
-	+	16	31
-	+	16	1
-	+	16	0
-	+	4	0
-	+	4	16
-	+	16	10
-	+	4	22
-	+	16	7
-	+	16	1
-	+	16	9
-	+	16	16
-	+	4	24
-	+	16	17
-	+	16	50
-	+	16	0
-	+	4	22
-	+	16	19
-	+	4	0
-	+	16	20
-	+	16	24
-	+	16	0
-	+	20	0
-	+	4	0
-	+	21	0
-	+	4	10
-	+	17	20
-	+	4	17
-	+	20	10
-	+	17	28
-	+	4	0
-	+	16	17
-	+	17	26
-	+	18	31
-	+	19	9
-	+	17	60
-	+	21	0
-	+	4	21
-	+	21	0
-	+	20	10
-	+	21	0
-	+	21	86
-	+	20	0
-	+	21	2
-	+	17	0
-	+	21	0
-	+	17	11
-	+	21	0
-	+	17	0
-	+	19	0
-	+	18	15
-	+	17	17
-	+	17	113
-	+	19	23
-	+	20	11
-	+	20	105
-	+	21	0
-	+	20	8
-	+	20	107
-	+	20	7
-	+	20	107
-	+	17	73
-	+	20	67
-	+	21	0
-	+	4	0
-	+	19	44
-	+	18	0
-	+	20	0
-	+	14	25
-	+	14	0
-	+	19	40
-	+	20	0
-	+	17	11
-	+	17	0
-	+	17	108
-	+	21	10
-	+	21	0
-	+	18	11
-	+	19	0
-	+	21	0
-	+	18	12
-	+	8	0
 
 > ~/oldfiles-fzf/index.txt
 	*	1727923867	0
@@ -30465,43 +33686,6 @@ $
 	+	2	5
 	+	3	24
 
-> ~/bash/insert_oldfiles.bash
-	*	1727920020	0
-	"	5	0
-	^	5	1
-	.	5	0
-	+	1	33
-	+	1	14
-	+	1	13
-	+	1	134
-	+	1	0
-	+	1	32
-	+	1	0
-	+	1	32
-	+	1	45
-	+	1	88
-	+	1	52
-	+	1	9
-	+	1	0
-	+	1	10
-	+	1	27
-	+	1	0
-	+	1	37
-	+	1	0
-	+	1	2
-	+	1	0
-	+	1	10
-	+	1	0
-	+	1	1
-	+	1	0
-	+	1	1
-	+	1	0
-	+	1	10
-	+	1	0
-	+	2	0
-	+	10	0
-	+	5	0
-
 > ~/tooling/expansions.txt
 	*	1727919833	0
 	"	1	0
@@ -30511,45 +33695,12 @@ $
 	+	2	0
 	+	1	15
 
-> ~/.config/bindings.inputrc
-	*	1727866123	0
-	"	1	0
-	^	16	30
-	.	16	29
-	+	16	29
-
-> ~/.config/load_completions.bash
-	*	1727866106	0
-	"	1	0
-	^	17	48
-	.	13	0
-	+	8	23
-	+	2	0
-	+	10	0
-	+	5	0
-	+	9	0
-	+	6	13
-	+	7	43
-	+	7	36
-	+	7	0
-	+	6	0
-	+	7	0
-	+	8	0
-	+	17	41
-	+	12	63
-	+	17	47
-	+	13	0
-
 > ~/.config/tmux/colon_bind.bash
 	*	1727861081	0
 	"	1	0
 	.	1	0
 	+	1	36
 	+	1	0
-
-> ~/tooling/docs/rg.man
-	*	1727860492	0
-	"	733	55
 
 > ~/.vim/plugin/oldfiles.vim
 	*	1727860384	0
@@ -30652,12 +33803,6 @@ $
 	+	3	0
 	+	2	1
 	+	3	17
-
-> ~/bash/logs/gh-timeago-updates.log
-	*	1727836562	0
-	"	3015	0
-	.	1	0
-	+	1	0
 
 > ~/.config/yazi/theme.toml
 	*	1727788090	0
@@ -30993,18 +34138,6 @@ $
 	*	1727664129	0
 	"	1	0
 
-> ~/.config/git/token.gitconfig
-	*	1727663543	0
-	"	1	21
-	^	2	62
-	.	2	21
-	+	2	21
-	+	2	0
-	+	1	0
-	+	2	0
-	+	1	0
-	+	2	21
-
 > ~/cd
 	*	1727657735	0
 	"	1	0
@@ -31166,17 +34299,6 @@ $
 	+	35	2
 	+	7	73
 	+	10	63
-
-> ~/bash/zdirs.bash
-	*	1727580824	0
-	"	1	0
-	^	1	48
-	.	1	84
-	+	5	18
-	+	5	0
-	+	4	0
-	+	1	20
-	+	1	84
 
 > ~/.vim/plugin/print-personal-mappings.vim
 	*	1727446668	0
@@ -31488,79 +34610,6 @@ $
 	*	1727306833	0
 	"	1	0
 
-> ~/bugs/bug.240925.slow_curl_and_requests.txt
-	*	1727306245	0
-	"	2	0
-	^	2	0
-	.	1	45
-	+	17	0
-	+	17	32
-	+	23	28
-	+	21	0
-	+	19	20
-	+	26	0
-	+	18	59
-	+	17	0
-	+	18	0
-	+	26	0
-	+	47	0
-	+	18	0
-	+	14	9
-	+	15	0
-	+	18	0
-	+	19	3
-	+	19	0
-	+	19	21
-	+	47	0
-	+	24	6
-	+	20	0
-	+	25	0
-	+	19	0
-	+	28	27
-	+	31	3
-	+	33	28
-	+	17	0
-	+	16	0
-	+	17	0
-	+	16	7
-	+	18	7
-	+	26	7
-	+	28	7
-	+	30	7
-	+	33	7
-	+	35	32
-	+	47	0
-	+	35	7
-	+	44	163
-	+	46	66
-	+	43	39
-	+	6	84
-	+	47	0
-	+	41	0
-	+	42	54
-	+	44	59
-	+	43	66
-	+	44	104
-	+	45	0
-	+	37	149
-	+	40	0
-	+	47	67
-	+	39	43
-	+	51	81
-	+	61	0
-	+	49	0
-	+	50	0
-	+	53	39
-	+	59	32
-	+	8	9
-	+	10	3
-	+	9	0
-	+	7	0
-	+	3	7
-	+	5	0
-	+	4	0
-	+	1	45
-
 > ~/prompts/240925.slow_curl_requests.txt
 	*	1727221716	0
 	"	1	0
@@ -31637,10 +34686,6 @@ $
 	+	4	0
 	+	14	7
 	+	14	0
-
-> ~/tooling/docs/fd.man
-	*	1727042009	0
-	"	171	7
 
 > ~/tmp/fd-flags.txt
 	*	1727041830	0
@@ -31817,10 +34862,6 @@ $
 	^	1	99
 	.	1	98
 	+	1	98
-
-> ~/.config/bash_completions/completion-urls.afl
-	*	1727010971	0
-	"	1	0
 
 > ~/.config/lazygit/config.yml
 	*	1726970129	0
@@ -33711,10 +36752,6 @@ $
 	+	71	28
 	+	52	0
 
-> ~/.vim/.fzf/doc/fzf.txt
-	*	1725378602	0
-	"	2	67
-
 > ~/golang/viminfo_utils/oldutils/oldutils.go
 	*	1725367389	0
 	"	1	0
@@ -35043,17 +38080,6 @@ $
 	+	1	35
 	+	1	26
 	+	1	0
-
-> ~/tooling/app_ideas/design-inspo-tracker.txt
-	*	1724643703	0
-	"	11	0
-	^	10	0
-	.	11	0
-	+	4	12
-	+	7	0
-	+	5	4
-	+	10	0
-	+	11	0
 
 > /usr/lib/python3.10/unittest/mock.py
 	*	1724641905	0
@@ -37114,10 +40140,6 @@ $
 	*	1723473634	0
 	"	1	0
 
-> /usr/share/vim/vim90/doc/digraph.txt
-	*	1723472359	0
-	"	1179	35
-
 > ~/python_common/error.py
 	*	1723463368	0
 	"	1	0
@@ -37290,38 +40312,6 @@ $
 > ~/.vim/plugin/dotty.vim
 	*	1723417829	0
 	"	98	2
-
-> ~/bash/gh-timeago.bash
-	*	1723382936	0
-	"	11	0
-	^	17	86
-	.	17	0
-	+	38	63
-	+	4	75
-	+	38	38
-	+	26	47
-	+	36	0
-	+	30	4
-	+	35	1
-	+	38	82
-	+	19	49
-	+	29	49
-	+	38	0
-	+	18	0
-	+	15	25
-	+	13	0
-	+	12	75
-	+	13	6
-	+	12	1
-	+	13	1
-	+	12	13
-	+	13	0
-	+	35	0
-	+	32	0
-	+	35	37
-	+	13	0
-	+	17	85
-	+	17	0
 
 > /tmp/crontab.gclVIL/crontab
 	*	1723329509	0
@@ -37501,10 +40491,6 @@ $
 > /tmp/crontab.PIqQNt/crontab
 	*	1723325626	0
 	"	33	21
-
-> /usr/bin/bash
-	*	1723325624	0
-	"	7	0
 
 > /tmp/crontab.D2azdQ/crontab
 	*	1723325617	0
@@ -38271,34 +41257,6 @@ $
 > ~/hateoas/static/downloads/offsets/2199468577.json
 	*	1722792706	0
 	"	2346	4
-
-> ~/.vim/templates/template.gitignore
-	*	1722785425	0
-	"	9	0
-	^	8	55
-	.	9	0
-	+	5	12
-	+	7	7
-	+	19	8
-	+	19	0
-	+	15	0
-	+	16	0
-	+	4	8
-	+	14	6
-	+	17	1
-	+	14	16
-	+	17	14
-	+	13	4
-	+	2	11
-	+	3	0
-	+	19	10
-	+	18	38
-	+	1	0
-	+	13	5
-	+	8	54
-	+	19	0
-	+	13	0
-	+	9	0
 
 > ~/python_common/waivek/data/.gitkeep
 	*	1722782928	0
@@ -41568,111 +44526,6 @@ $
 	+	375	0
 	+	426	0
 
-> ~/Twitch/coffee-vps/code/chat.py
-	*	1721237539	0
-	"	435	4
-	.	434	0
-	+	445	0
-	+	439	0
-	+	433	0
-	+	437	19
-	+	444	0
-	+	468	0
-	+	447	0
-	+	789	0
-	+	636	0
-	+	642	54
-	+	675	0
-	+	676	0
-	+	609	22
-	+	610	15
-	+	610	0
-	+	611	18
-	+	676	0
-	+	667	0
-	+	669	59
-	+	622	68
-	+	623	47
-	+	633	0
-	+	622	55
-	+	624	61
-	+	625	9
-	+	627	32
-	+	629	0
-	+	626	0
-	+	632	17
-	+	633	0
-	+	623	31
-	+	628	27
-	+	622	73
-	+	628	23
-	+	669	70
-	+	687	0
-	+	688	0
-	+	658	44
-	+	635	73
-	+	643	59
-	+	788	26
-	+	669	32
-	+	669	0
-	+	675	0
-	+	673	35
-	+	671	53
-	+	674	12
-	+	675	0
-	+	672	18
-	+	673	30
-	+	671	103
-	+	672	0
-	+	675	0
-	+	678	19
-	+	679	40
-	+	676	0
-	+	675	0
-	+	672	0
-	+	790	26
-	+	817	17
-	+	816	29
-	+	817	18
-	+	818	0
-	+	650	4
-	+	646	31
-	+	647	30
-	+	648	0
-	+	437	0
-	+	439	0
-	+	439	27
-	+	437	15
-	+	438	38
-	+	439	0
-	+	791	9
-	+	72	0
-	+	623	0
-	+	631	13
-	+	632	0
-	+	630	11
-	+	631	4
-	+	631	0
-	+	72	27
-	+	72	15
-	+	72	0
-	+	72	41
-	+	72	32
-	+	72	0
-	+	621	0
-	+	614	70
-	+	3	15
-	+	70	16
-	+	69	0
-	+	617	23
-	+	618	22
-	+	619	0
-	+	792	26
-	+	793	26
-	+	434	4
-	+	436	0
-	+	434	0
-
 > ~/Twitch/coffee-vps/code/requirements.txt
 	*	1721236927	0
 	"	1	0
@@ -42478,57 +45331,6 @@ $
 	+	169	0
 	+	170	67
 
-> ~/.config/bash_completions/_download_bat_completion.bash
-	*	1720866955	0
-	"	1	0
-	^	18	31
-	.	18	30
-	+	12	0
-	+	12	74
-	+	13	0
-	+	13	124
-	+	17	49
-	+	17	0
-	+	17	8
-	+	1	10
-	+	17	46
-	+	17	0
-	+	13	0
-	+	16	27
-	+	17	47
-	+	17	0
-	+	17	46
-	+	14	53
-	+	17	0
-	+	16	9
-	+	14	108
-	+	16	0
-	+	17	126
-	+	17	0
-	+	16	11
-	+	15	6
-	+	17	74
-	+	10	0
-	+	6	77
-	+	10	0
-	+	8	73
-	+	7	76
-	+	12	0
-	+	13	0
-	+	16	0
-	+	17	0
-	+	12	0
-	+	4	1
-	+	10	0
-	+	17	0
-	+	11	39
-	+	8	87
-	+	17	96
-	+	17	146
-	+	17	0
-	+	9	0
-	+	18	30
-
 > ~/.config/bash_completions/_tar_url_to_file.bash
 	*	1720866953	0
 	"	1	0
@@ -42795,17 +45597,6 @@ $
 > ~/frontend/.gitignore
 	*	1720758175	0
 	"	1	0
-
-> ~/bash/.gitignore
-	*	1720758159	0
-	"	4	0
-	^	3	2
-	.	3	1
-	+	1	4
-	+	4	4
-	+	1	5
-	+	2	5
-	+	3	1
 
 > ~/Twitch/.gitignore
 	*	1720758150	0
@@ -43226,15 +46017,6 @@ $
 	+	1	214
 	+	1	0
 
-> ~/.config/git/config
-	*	1719654830	0
-	"	13	4
-	.	14	0
-	+	8	17
-	+	9	8
-	+	10	0
-	+	14	0
-
 > ~/.config/.git/config
 	*	1719654626	0
 	"	7	15
@@ -43534,45 +46316,6 @@ $
 > ~/.vim/data/startup03.txt
 	*	1719009007	0
 	"	174	0
-
-> ~/.vim/performance/performance.vim
-	*	1719008925	0
-	"	377	35
-	^	377	36
-	.	377	0
-	+	362	10
-	+	362	0
-	+	301	0
-	+	302	0
-	+	301	55
-	+	301	31
-	+	301	22
-	+	301	14
-	+	301	34
-	+	301	46
-	+	301	0
-	+	301	15
-	+	301	0
-	+	300	78
-	+	298	18
-	+	300	44
-	+	298	19
-	+	301	0
-	+	358	36
-	+	362	0
-	+	360	0
-	+	363	48
-	+	361	18
-	+	378	0
-	+	365	32
-	+	369	10
-	+	366	56
-	+	367	4
-	+	368	4
-	+	370	0
-	+	373	4
-	+	376	0
-	+	377	0
 
 > ~/.vim/data/_viminfo_sample
 	*	1719008850	0
@@ -44582,12 +47325,6 @@ $
 	+	5	0
 	+	6	10
 
-> ~/ui-components-css/data/history.txt
-	*	1718098969	0
-	"	7	0
-	.	7	0
-	+	7	0
-
 > ~/pytest/date.py
 	*	1718096578	0
 	"	1	0
@@ -45355,16 +48092,6 @@ $
 	+	47	16
 	a	19	174
 	b	19	174
-
-> ~/sqlite-editor/requirements.txt
-	*	1717050614	0
-	"	10	0
-	^	10	10
-	.	10	9
-	+	3	0
-	+	8	0
-	+	9	15
-	+	10	9
 
 > ~/sqlite-editor/editor-ap
 	*	1717050411	0
@@ -46303,15 +49030,6 @@ $
 	+	88	0
 	+	87	5
 	+	93	5
-
-> ~/crk-coupon/get_chrome_and_chromedriver.bash
-	*	1716544318	0
-	"	17	24
-	^	7	25
-	.	7	24
-	+	17	30
-	+	1	0
-	+	7	24
 
 > ~/crk-coupon/.gitignore
 	*	1716505008	0
@@ -55527,10 +58245,6 @@ $
 	*	1694108285	0
 	"	5958	4
 
-> ~/.vim/plugin/profile.vim
-	*	1694107247	0
-	"	109	0
-
 > ~/.vim/colors/apprentice.vim
 	*	1694087319	0
 	"	1	0
@@ -56411,10 +59125,6 @@ $
 	+	4	6
 	+	3	3
 	+	2	16
-
-> /usr/bin/fish
-	*	1693082741	0
-	"	1	0
 
 > ~/.config/s2.sh
 	*	1693082346	0
