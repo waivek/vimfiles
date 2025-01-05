@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/src\/utils\/
+~MSle0~/\C\<server\>
 
 # Last Substitute Search Pattern:
 ~MSle0&^\s\+$
@@ -20,18 +20,28 @@
 $
 
 # Command Line History (newest to oldest):
+:qa
+|2,0,1736064492,,"qa"
+:h copilot
+|2,0,1736063473,,"h copilot"
 :q
-|2,0,1735934549,,"q"
+|2,0,1735983186,,"q"
+:e todo.txt
+|2,0,1735936283,,"e todo.txt"
+:91
+|2,0,1735934495,,"91"
+:pwd
+|2,0,1735979455,,"pwd"
+:e
+|2,0,1735979453,,"e"
+:set ft=todo
+|2,0,1735937764,,"set ft=todo"
 :Date
 |2,0,1735934541,,"Date"
-:qa
-|2,0,1735933954,,"qa"
 :qa!
 |2,0,1735933622,,"qa!"
 :RunCreateCommand full
 |2,0,1735930327,,"RunCreateCommand full"
-:e
-|2,0,1735930308,,"e"
 :!/bin/bash %
 |2,0,1735930277,,"!/bin/bash %"
 :!/bin/bash -c "source %"
@@ -80,8 +90,6 @@ $
 |2,0,1735842001,,"%s/^\\s\\+$//"
 :Jprevious
 |2,0,1735841706,,"Jprevious"
-:pwd
-|2,0,1735841423,,"pwd"
 :Rg
 |2,0,1735841423,,"Rg"
 :VD hateoas-history.db
@@ -568,8 +576,6 @@ $
 |2,0,1732746255,,"74"
 :e mod
 |2,0,1732727900,,"e mod"
-:e todo.txt
-|2,0,1732665688,,"e todo.txt"
 :CocOutline
 |2,0,1732665635,,"CocOutline"
 :set ft=htmldjango
@@ -6538,8 +6544,6 @@ $
 |2,0,1715898220,,"let b:workspace_folder="
 :echo g:copilot_workspace_folders
 |2,0,1715898185,,"echo g:copilot_workspace_folders"
-:h copilot
-|2,0,1715898174,,"h copilot"
 :grep -g '*.py' Lock
 |2,0,1715896294,,"grep -g '*.py' Lock"
 :grep -g '*.py' Lo
@@ -10682,8 +10686,6 @@ $
 |2,0,1690908654,,"Helptags"
 :116
 |2,0,1690907240,,"116"
-:91
-|2,0,1690907179,,"91"
 :e typ
 |2,0,1690904702,,"e typ"
 :MRU C
@@ -11516,6 +11518,16 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/get_diff
+|2,1,1735936500,47,"get_diff"
+?/bold
+|2,1,1735936407,47,"bold"
+?/viminfo
+|2,1,1735936073,47,"viminfo"
+?/1730556532
+|2,1,1735935305,47,"1730556532"
+?/17020
+|2,1,1735935276,47,"17020"
 ?/src/
 |2,1,1735933854,47,"src/"
 ?/register
@@ -11992,8 +12004,6 @@ $
 |2,1,1732647388,47,"{%"
 ?/latest
 |2,1,1732647276,47,"latest"
-?/bold
-|2,1,1732647188,47,"bold"
 ?/ch
 |2,1,1732646600,47,"ch"
 ?/hover
@@ -15714,8 +15724,6 @@ $
 |2,1,1713790265,47,"ale"
 ?/vimspector
 |2,1,1713790151,47,"vimspector"
-?/viminfo
-|2,1,1713790097,47,"viminfo"
 ?/^\S*\s*\zs
 |2,1,1713790010,47,"^\\S*\\s*\\zs"
 ?/alt
@@ -17561,51 +17569,39 @@ $
 
 # Registers:
 ""0	LINE	0
-	  241122 -
-|3,1,0,1,1,0,1735934542,"  241122 -"
+	  ~/remote_utils/setup_ssh.bash
+|3,1,0,1,1,0,1736063424,"  ~/remote_utils/setup_ssh.bash"
 "1	LINE	0
-	  241122 -
-|3,0,1,1,1,0,1735934539,"  241122 -"
+	  ~/remote_utils/setup_ssh.bash
+|3,0,1,1,1,0,1736027404,"  ~/remote_utils/setup_ssh.bash"
 "2	LINE	0
-	#
-|3,0,2,1,1,0,1735930500,"#"
+	
+|3,0,2,1,1,0,1736027324,""
 "3	LINE	0
-	#
-|3,0,3,1,1,0,1735930499,"#"
+	col() { awk -v col="$1" "{print (col >= 0) ? \$(col+1) : \$(NF + col + 1)}"; }
+|3,0,3,1,1,0,1736027297,"col() { awk -v col=\"$1\" \"{print (col >= 0) ? \\$(col+1) : \\$(NF + col + 1)}\"; }"
 "4	LINE	0
-	# run.vim: 
-|3,0,4,1,1,0,1735930324,"# run.vim: "
+	  ~/python_common/box/log.py ~/python_common/box/print_utils.py ~/python_common/examples/examplelog2.py ~/python_common/examples/example-log-1.py ~/python_common/examples/example-log.py
+|3,0,4,1,1,0,1735937749,"  ~/python_common/box/log.py ~/python_common/box/print_utils.py ~/python_common/examples/examplelog2.py ~/python_common/examples/example-log-1.py ~/python_common/examples/example-log.py"
 "5	LINE	0
-	    text = remove_adjacent_blank_lines(text)
-	    text = insert_blank_line_between_adjacent_lines_beginning_with_dash(text)
-	    text = wrap_text_preserve_empty_lines(text, width=70)
-	
-|3,0,5,1,4,0,1735909528,"    text = remove_adjacent_blank_lines(text)","    text = insert_blank_line_between_adjacent_lines_beginning_with_dash(text)","    text = wrap_text_preserve_empty_lines(text, width=70)",""
+	  ~/pyscripts/viewlog.py
+|3,0,5,1,1,0,1735937745,"  ~/pyscripts/viewlog.py"
 "6	LINE	0
-	    # def remove_adjacent_blank_lines(text):
-|3,0,6,1,1,0,1735909382,"    # def remove_adjacent_blank_lines(text):"
+	        import sys
+|3,0,6,1,1,0,1735936638,"        import sys"
 "7	LINE	0
-	    # 
-|3,0,7,1,1,0,1735909345,"    # "
+	    assert diff_content
+|3,0,7,1,1,0,1735936630,"    assert diff_content"
 "8	LINE	0
-	def remove_adjacent_blank_lines(text):
-	    # remove_adjacent_blank_lines {{{
-	    lines = text.split("\n")
-	    new_lines = []
-	    for i, line in enumerate(lines):
-	        if i > 0 and lines[i-1].strip() == "" and line.strip() == "":
-	            continue
-	        new_lines.append(line)
-	    return "\n".join(new_lines)
-	    # }}}
-	
-|3,0,8,1,11,0,1735909328,"def remove_adjacent_blank_lines(text):","    # remove_adjacent_blank_lines {{{","    lines = text.split(\"\\n\")","    new_lines = []","    for i, line in enumerate(lines):","        if i > 0 and lines[i-1].strip() == \"\" and line.strip() == \"\":","            continue","        new_lines.append(line)","    return \"\\n\".join(new_lines)","    # }}}",""
+	    handle_dot_vim()
+|3,0,8,1,1,0,1735936506,"    handle_dot_vim()"
 "9	LINE	0
-	    timer.print("get_diff")
-|3,0,9,1,1,0,1735909112,"    timer.print(\"get_diff\")"
+	    # check if _viminfo_linux is in git dif
+	    subprocess.check_output(["git", "diff", "HEAD", "--", ":!_viminfo"])
+|3,0,9,1,2,0,1735936078,"    # check if _viminfo_linux is in git dif","    subprocess.check_output([\"git\", \"diff\", \"HEAD\", \"--\", \":!_viminfo\"])"
 "a	CHAR	0
 	Tabularize /:/l1c1l1
-|3,0,10,0,1,0,1735909446,"Tabularize /:/l1c1l1"
+|3,0,10,0,1,0,1735936530,"Tabularize /:/l1c1l1"
 "i	CHAR	0
 	ado_up()jk:q!
 |3,0,18,0,1,0,1724200553,"ado_up()jk:q!"
@@ -17674,279 +17670,443 @@ $
 |<"    assert x_min < x_max, f\"Invalid x coordinates: min ({x_min}) >= max ({x_max})\"","    assert y_min < y_max, f\"Invalid y coordinates: min ({y_min}) >= max ({y_max})\"","    ","    # Additional geometric checks","    assert abs(y1 - y2) < (y_max - y_min), \"Top edge is not roughly horizontal\"","    assert abs(y3 - y4) < (y_max - y_min), \"Bottom edge is not roughly horizontal\"","    assert abs(x1 - x4) < (x_max - x_min), \"Left edge is not roughly vertical\"",>83
 |<"    assert abs(x2 - x3) < (x_max - x_min), \"Right edge is not roughly vertical\"","","    pretty_string_flat = {","        \"left\": x_min,","        \"right\": x_max,","        \"top\": y_min,","        \"bottom\": y_max,","        \"top_left\": (x1, y1),","        \"top_right\": (x2, y2),","        \"bottom_right\": (x3, y3),","        \"bottom_left\": (x4, y4),","    }","    ","    print(f\"{box} => {pretty_string_flat}\")",""
 "-	CHAR	0
-	src/utils/
-|3,0,36,0,1,0,1735933883,"src/utils/"
+	rel2abs(sys.argv[1])
+|3,0,36,0,1,0,1735936530,"rel2abs(sys.argv[1])"
 
 # File marks:
-'0  1  22  ~/python_common/box/todo.txt
-|4,48,1,22,1735934550,"~/python_common/box/todo.txt"
-'1  101  39  ~/python_common/box/test_unzip_url.py
-|4,49,101,39,1735933955,"~/python_common/box/test_unzip_url.py"
-'2  101  39  ~/python_common/box/test_unzip_url.py
-|4,50,101,39,1735933955,"~/python_common/box/test_unzip_url.py"
-'3  31  4  ~/disc-bot/src/utils/test_unzip_url.py
-|4,51,31,4,1735933952,"~/disc-bot/src/utils/test_unzip_url.py"
-'4  31  4  ~/disc-bot/src/utils/test_unzip_url.py
-|4,52,31,4,1735933952,"~/disc-bot/src/utils/test_unzip_url.py"
-'5  23  0  ~/.config/setup.fish
-|4,53,23,0,1735933691,"~/.config/setup.fish"
-'6  23  0  ~/.config/setup.fish
-|4,54,23,0,1735933691,"~/.config/setup.fish"
-'7  23  0  ~/.config/setup.fish
-|4,55,23,0,1735933691,"~/.config/setup.fish"
-'8  23  0  ~/.config/setup.fish
-|4,56,23,0,1735933691,"~/.config/setup.fish"
-'9  23  0  ~/.config/setup.fish
-|4,57,23,0,1735933691,"~/.config/setup.fish"
+'0  18  0  ~/.vim/plugged/copilot.vim/doc/copilot.txt
+|4,48,18,0,1736064497,"~/.vim/plugged/copilot.vim/doc/copilot.txt"
+'1  4  91  ~/.config/symlinks.txt
+|4,49,4,91,1736063426,"~/.config/symlinks.txt"
+'2  4  91  ~/.config/symlinks.txt
+|4,50,4,91,1736063426,"~/.config/symlinks.txt"
+'3  5  0  ~/projects.txt
+|4,51,5,0,1736027427,"~/projects.txt"
+'4  5  0  ~/projects.txt
+|4,52,5,0,1736027427,"~/projects.txt"
+'5  5  0  ~/projects.txt
+|4,53,5,0,1736027427,"~/projects.txt"
+'6  5  0  ~/projects.txt
+|4,54,5,0,1736027427,"~/projects.txt"
+'7  1  0  ~/python-types/page_lsp.py
+|4,55,1,0,1735983188,"~/python-types/page_lsp.py"
+'8  1  0  ~/python-types/page_lsp.py
+|4,56,1,0,1735983188,"~/python-types/page_lsp.py"
+'9  1  0  ~/python-types/page_lsp.py
+|4,57,1,0,1735983188,"~/python-types/page_lsp.py"
 
 # Jumplist (newest first):
--'  1  22  ~/python_common/box/todo.txt
-|4,39,1,22,1735934550,"~/python_common/box/todo.txt"
--'  2  2  ~/python_common/box/todo.txt
-|4,39,2,2,1735934528,"~/python_common/box/todo.txt"
--'  101  39  ~/python_common/box/test_unzip_url.py
-|4,39,101,39,1735933955,"~/python_common/box/test_unzip_url.py"
--'  101  39  ~/python_common/box/test_unzip_url.py
-|4,39,101,39,1735933955,"~/python_common/box/test_unzip_url.py"
--'  31  4  ~/disc-bot/src/utils/test_unzip_url.py
-|4,39,31,4,1735933952,"~/disc-bot/src/utils/test_unzip_url.py"
--'  31  4  ~/disc-bot/src/utils/test_unzip_url.py
-|4,39,31,4,1735933952,"~/disc-bot/src/utils/test_unzip_url.py"
--'  1  0  ~/disc-bot/src/utils/test_unzip_url.py
-|4,39,1,0,1735933947,"~/disc-bot/src/utils/test_unzip_url.py"
--'  1  0  ~/disc-bot/src/utils/test_unzip_url.py
-|4,39,1,0,1735933947,"~/disc-bot/src/utils/test_unzip_url.py"
--'  127  39  ~/python_common/box/test_unzip_url.py
-|4,39,127,39,1735933883,"~/python_common/box/test_unzip_url.py"
--'  126  21  ~/python_common/box/test_unzip_url.py
-|4,39,126,21,1735933883,"~/python_common/box/test_unzip_url.py"
--'  119  39  ~/python_common/box/test_unzip_url.py
-|4,39,119,39,1735933883,"~/python_common/box/test_unzip_url.py"
--'  118  21  ~/python_common/box/test_unzip_url.py
-|4,39,118,21,1735933883,"~/python_common/box/test_unzip_url.py"
--'  111  39  ~/python_common/box/test_unzip_url.py
-|4,39,111,39,1735933883,"~/python_common/box/test_unzip_url.py"
--'  110  21  ~/python_common/box/test_unzip_url.py
-|4,39,110,21,1735933883,"~/python_common/box/test_unzip_url.py"
--'  95  39  ~/python_common/box/test_unzip_url.py
-|4,39,95,39,1735933883,"~/python_common/box/test_unzip_url.py"
--'  93  22  ~/python_common/box/test_unzip_url.py
-|4,39,93,22,1735933883,"~/python_common/box/test_unzip_url.py"
--'  79  39  ~/python_common/box/test_unzip_url.py
-|4,39,79,39,1735933883,"~/python_common/box/test_unzip_url.py"
--'  77  22  ~/python_common/box/test_unzip_url.py
-|4,39,77,22,1735933883,"~/python_common/box/test_unzip_url.py"
--'  64  39  ~/python_common/box/test_unzip_url.py
-|4,39,64,39,1735933883,"~/python_common/box/test_unzip_url.py"
--'  62  22  ~/python_common/box/test_unzip_url.py
-|4,39,62,22,1735933883,"~/python_common/box/test_unzip_url.py"
--'  51  39  ~/python_common/box/test_unzip_url.py
-|4,39,51,39,1735933883,"~/python_common/box/test_unzip_url.py"
--'  50  22  ~/python_common/box/test_unzip_url.py
-|4,39,50,22,1735933883,"~/python_common/box/test_unzip_url.py"
--'  40  39  ~/python_common/box/test_unzip_url.py
-|4,39,40,39,1735933883,"~/python_common/box/test_unzip_url.py"
--'  39  22  ~/python_common/box/test_unzip_url.py
-|4,39,39,22,1735933883,"~/python_common/box/test_unzip_url.py"
--'  31  39  ~/python_common/box/test_unzip_url.py
-|4,39,31,39,1735933883,"~/python_common/box/test_unzip_url.py"
--'  127  39  ~/python_common/box/test_unzip_url.py
-|4,39,127,39,1735933883,"~/python_common/box/test_unzip_url.py"
--'  126  21  ~/python_common/box/test_unzip_url.py
-|4,39,126,21,1735933883,"~/python_common/box/test_unzip_url.py"
--'  119  39  ~/python_common/box/test_unzip_url.py
-|4,39,119,39,1735933883,"~/python_common/box/test_unzip_url.py"
--'  118  21  ~/python_common/box/test_unzip_url.py
-|4,39,118,21,1735933883,"~/python_common/box/test_unzip_url.py"
--'  111  39  ~/python_common/box/test_unzip_url.py
-|4,39,111,39,1735933883,"~/python_common/box/test_unzip_url.py"
--'  110  21  ~/python_common/box/test_unzip_url.py
-|4,39,110,21,1735933883,"~/python_common/box/test_unzip_url.py"
--'  95  39  ~/python_common/box/test_unzip_url.py
-|4,39,95,39,1735933883,"~/python_common/box/test_unzip_url.py"
--'  93  22  ~/python_common/box/test_unzip_url.py
-|4,39,93,22,1735933883,"~/python_common/box/test_unzip_url.py"
--'  79  39  ~/python_common/box/test_unzip_url.py
-|4,39,79,39,1735933883,"~/python_common/box/test_unzip_url.py"
--'  77  22  ~/python_common/box/test_unzip_url.py
-|4,39,77,22,1735933883,"~/python_common/box/test_unzip_url.py"
--'  64  39  ~/python_common/box/test_unzip_url.py
-|4,39,64,39,1735933883,"~/python_common/box/test_unzip_url.py"
--'  62  22  ~/python_common/box/test_unzip_url.py
-|4,39,62,22,1735933883,"~/python_common/box/test_unzip_url.py"
--'  51  39  ~/python_common/box/test_unzip_url.py
-|4,39,51,39,1735933883,"~/python_common/box/test_unzip_url.py"
--'  50  22  ~/python_common/box/test_unzip_url.py
-|4,39,50,22,1735933883,"~/python_common/box/test_unzip_url.py"
--'  40  39  ~/python_common/box/test_unzip_url.py
-|4,39,40,39,1735933883,"~/python_common/box/test_unzip_url.py"
--'  39  22  ~/python_common/box/test_unzip_url.py
-|4,39,39,22,1735933883,"~/python_common/box/test_unzip_url.py"
--'  31  39  ~/python_common/box/test_unzip_url.py
-|4,39,31,39,1735933883,"~/python_common/box/test_unzip_url.py"
--'  30  22  ~/python_common/box/test_unzip_url.py
-|4,39,30,22,1735933882,"~/python_common/box/test_unzip_url.py"
--'  30  22  ~/python_common/box/test_unzip_url.py
-|4,39,30,22,1735933882,"~/python_common/box/test_unzip_url.py"
--'  19  23  ~/python_common/box/test_unzip_url.py
-|4,39,19,23,1735933862,"~/python_common/box/test_unzip_url.py"
--'  19  23  ~/python_common/box/test_unzip_url.py
-|4,39,19,23,1735933862,"~/python_common/box/test_unzip_url.py"
--'  1  0  ~/python_common/box/test_unzip_url.py
-|4,39,1,0,1735933854,"~/python_common/box/test_unzip_url.py"
--'  1  0  ~/python_common/box/test_unzip_url.py
-|4,39,1,0,1735933854,"~/python_common/box/test_unzip_url.py"
--'  23  0  ~/.config/setup.fish
-|4,39,23,0,1735933691,"~/.config/setup.fish"
--'  23  0  ~/.config/setup.fish
-|4,39,23,0,1735933691,"~/.config/setup.fish"
--'  23  0  ~/.config/setup.fish
-|4,39,23,0,1735933691,"~/.config/setup.fish"
--'  23  0  ~/.config/setup.fish
-|4,39,23,0,1735933691,"~/.config/setup.fish"
+-'  18  0  ~/.vim/plugged/copilot.vim/doc/copilot.txt
+|4,39,18,0,1736064497,"~/.vim/plugged/copilot.vim/doc/copilot.txt"
+-'  1  0  ~/.vim/plugged/copilot.vim/doc/copilot.txt
+|4,39,1,0,1736063473,"~/.vim/plugged/copilot.vim/doc/copilot.txt"
+-'  1  0  ~/bash/backup.crontab
+|4,39,1,0,1736063459,"~/bash/backup.crontab"
+-'  4  91  ~/.config/symlinks.txt
+|4,39,4,91,1736063426,"~/.config/symlinks.txt"
+-'  4  91  ~/.config/symlinks.txt
+|4,39,4,91,1736063426,"~/.config/symlinks.txt"
+-'  3  99  ~/.config/symlinks.txt
+|4,39,3,99,1736063421,"~/.config/symlinks.txt"
+-'  3  99  ~/.config/symlinks.txt
+|4,39,3,99,1736063421,"~/.config/symlinks.txt"
+-'  1  0  ~/.config/symlinks.txt
+|4,39,1,0,1736063402,"~/.config/symlinks.txt"
+-'  1  0  ~/.config/symlinks.txt
+|4,39,1,0,1736063402,"~/.config/symlinks.txt"
+-'  5  0  ~/projects.txt
+|4,39,5,0,1736027427,"~/projects.txt"
+-'  5  0  ~/projects.txt
+|4,39,5,0,1736027427,"~/projects.txt"
+-'  5  0  ~/projects.txt
+|4,39,5,0,1736027427,"~/projects.txt"
+-'  1  0  ~/pyscripts/viewlog.py
+|4,39,1,0,1736027425,"~/pyscripts/viewlog.py"
+-'  1  0  ~/pyscripts/viewlog.py
+|4,39,1,0,1736027425,"~/pyscripts/viewlog.py"
+-'  1  0  ~/pyscripts/viewlog.py
+|4,39,1,0,1736027425,"~/pyscripts/viewlog.py"
+-'  1  0  ~/projects.txt
+|4,39,1,0,1736027403,"~/projects.txt"
+-'  1  0  ~/projects.txt
+|4,39,1,0,1736027403,"~/projects.txt"
+-'  1  0  ~/projects.txt
+|4,39,1,0,1736027403,"~/projects.txt"
 -'  1  0  ~/.config/setup.fish
-|4,39,1,0,1735933689,"~/.config/setup.fish"
+|4,39,1,0,1736027397,"~/.config/setup.fish"
 -'  1  0  ~/.config/setup.fish
-|4,39,1,0,1735933689,"~/.config/setup.fish"
+|4,39,1,0,1736027397,"~/.config/setup.fish"
 -'  1  0  ~/.config/setup.fish
-|4,39,1,0,1735933689,"~/.config/setup.fish"
+|4,39,1,0,1736027397,"~/.config/setup.fish"
 -'  1  0  ~/.config/setup.fish
-|4,39,1,0,1735933689,"~/.config/setup.fish"
--'  6  2  ~/bash/oldfiles.bash
-|4,39,6,2,1735933585,"~/bash/oldfiles.bash"
--'  6  2  ~/bash/oldfiles.bash
-|4,39,6,2,1735933585,"~/bash/oldfiles.bash"
--'  6  2  ~/bash/oldfiles.bash
-|4,39,6,2,1735933585,"~/bash/oldfiles.bash"
--'  6  2  ~/bash/oldfiles.bash
-|4,39,6,2,1735933585,"~/bash/oldfiles.bash"
--'  6  2  ~/bash/oldfiles.bash
-|4,39,6,2,1735933585,"~/bash/oldfiles.bash"
--'  6  2  ~/bash/oldfiles.bash
-|4,39,6,2,1735933585,"~/bash/oldfiles.bash"
--'  4  0  ~/bash/oldfiles.bash
-|4,39,4,0,1735930498,"~/bash/oldfiles.bash"
--'  4  0  ~/bash/oldfiles.bash
-|4,39,4,0,1735930498,"~/bash/oldfiles.bash"
--'  4  0  ~/bash/oldfiles.bash
-|4,39,4,0,1735930498,"~/bash/oldfiles.bash"
--'  4  0  ~/bash/oldfiles.bash
-|4,39,4,0,1735930498,"~/bash/oldfiles.bash"
--'  4  0  ~/bash/oldfiles.bash
-|4,39,4,0,1735930498,"~/bash/oldfiles.bash"
--'  4  0  ~/bash/oldfiles.bash
-|4,39,4,0,1735930498,"~/bash/oldfiles.bash"
--'  18  16  ~/bash/oldfiles.bash
-|4,39,18,16,1735930357,"~/bash/oldfiles.bash"
--'  18  16  ~/bash/oldfiles.bash
-|4,39,18,16,1735930357,"~/bash/oldfiles.bash"
--'  18  16  ~/bash/oldfiles.bash
-|4,39,18,16,1735930357,"~/bash/oldfiles.bash"
--'  18  16  ~/bash/oldfiles.bash
-|4,39,18,16,1735930357,"~/bash/oldfiles.bash"
--'  18  16  ~/bash/oldfiles.bash
-|4,39,18,16,1735930357,"~/bash/oldfiles.bash"
--'  18  16  ~/bash/oldfiles.bash
-|4,39,18,16,1735930357,"~/bash/oldfiles.bash"
--'  16  0  ~/bash/oldfiles.bash
-|4,39,16,0,1735930327,"~/bash/oldfiles.bash"
--'  16  0  ~/bash/oldfiles.bash
-|4,39,16,0,1735930327,"~/bash/oldfiles.bash"
--'  16  0  ~/bash/oldfiles.bash
-|4,39,16,0,1735930327,"~/bash/oldfiles.bash"
--'  16  0  ~/bash/oldfiles.bash
-|4,39,16,0,1735930327,"~/bash/oldfiles.bash"
--'  16  0  ~/bash/oldfiles.bash
-|4,39,16,0,1735930327,"~/bash/oldfiles.bash"
--'  16  0  ~/bash/oldfiles.bash
-|4,39,16,0,1735930327,"~/bash/oldfiles.bash"
--'  1  0  ~/bash/oldfiles.bash
-|4,39,1,0,1735930318,"~/bash/oldfiles.bash"
--'  1  0  ~/bash/oldfiles.bash
-|4,39,1,0,1735930318,"~/bash/oldfiles.bash"
--'  1  0  ~/bash/oldfiles.bash
-|4,39,1,0,1735930318,"~/bash/oldfiles.bash"
--'  1  0  ~/bash/oldfiles.bash
-|4,39,1,0,1735930318,"~/bash/oldfiles.bash"
--'  1  0  ~/bash/oldfiles.bash
-|4,39,1,0,1735930318,"~/bash/oldfiles.bash"
--'  1  0  ~/bash/oldfiles.bash
-|4,39,1,0,1735930318,"~/bash/oldfiles.bash"
--'  15  0  ~/bash/oldfiles.bash
-|4,39,15,0,1735930311,"~/bash/oldfiles.bash"
--'  15  0  ~/bash/oldfiles.bash
-|4,39,15,0,1735930311,"~/bash/oldfiles.bash"
--'  15  0  ~/bash/oldfiles.bash
-|4,39,15,0,1735930311,"~/bash/oldfiles.bash"
--'  15  0  ~/bash/oldfiles.bash
-|4,39,15,0,1735930311,"~/bash/oldfiles.bash"
--'  15  0  ~/bash/oldfiles.bash
-|4,39,15,0,1735930311,"~/bash/oldfiles.bash"
--'  15  0  ~/bash/oldfiles.bash
-|4,39,15,0,1735930311,"~/bash/oldfiles.bash"
--'  2  71  ~/bash/oldfiles.bash
-|4,39,2,71,1735930240,"~/bash/oldfiles.bash"
--'  2  71  ~/bash/oldfiles.bash
-|4,39,2,71,1735930240,"~/bash/oldfiles.bash"
--'  2  71  ~/bash/oldfiles.bash
-|4,39,2,71,1735930240,"~/bash/oldfiles.bash"
--'  2  71  ~/bash/oldfiles.bash
-|4,39,2,71,1735930240,"~/bash/oldfiles.bash"
--'  2  71  ~/bash/oldfiles.bash
-|4,39,2,71,1735930240,"~/bash/oldfiles.bash"
--'  2  71  ~/bash/oldfiles.bash
-|4,39,2,71,1735930240,"~/bash/oldfiles.bash"
--'  2  71  ~/bash/oldfiles.bash
-|4,39,2,71,1735930240,"~/bash/oldfiles.bash"
--'  1  0  ~/bash/oldfiles.bash
-|4,39,1,0,1735930232,"~/bash/oldfiles.bash"
+|4,39,1,0,1736027397,"~/.config/setup.fish"
+-'  1  0  ~/python-types/page_lsp.py
+|4,39,1,0,1735983188,"~/python-types/page_lsp.py"
+-'  1  0  ~/python-types/page_lsp.py
+|4,39,1,0,1735983188,"~/python-types/page_lsp.py"
+-'  1  0  ~/python-types/page_lsp.py
+|4,39,1,0,1735983188,"~/python-types/page_lsp.py"
+-'  1  0  ~/python-types/page_lsp.py
+|4,39,1,0,1735983188,"~/python-types/page_lsp.py"
+-'  1  0  ~/python-types/page_lsp.py
+|4,39,1,0,1735983188,"~/python-types/page_lsp.py"
+-'  16  0  ~/python-types/tests/test_comments_page.py
+|4,39,16,0,1735982115,"~/python-types/tests/test_comments_page.py"
+-'  16  0  ~/python-types/tests/test_comments_page.py
+|4,39,16,0,1735982115,"~/python-types/tests/test_comments_page.py"
+-'  16  0  ~/python-types/tests/test_comments_page.py
+|4,39,16,0,1735982115,"~/python-types/tests/test_comments_page.py"
+-'  16  0  ~/python-types/tests/test_comments_page.py
+|4,39,16,0,1735982115,"~/python-types/tests/test_comments_page.py"
+-'  16  0  ~/python-types/tests/test_comments_page.py
+|4,39,16,0,1735982115,"~/python-types/tests/test_comments_page.py"
+-'  16  0  ~/python-types/tests/test_comments_page.py
+|4,39,16,0,1735982115,"~/python-types/tests/test_comments_page.py"
+-'  22  0  ~/python-types/model_pydantic.py
+|4,39,22,0,1735982114,"~/python-types/model_pydantic.py"
+-'  22  0  ~/python-types/model_pydantic.py
+|4,39,22,0,1735982114,"~/python-types/model_pydantic.py"
+-'  22  0  ~/python-types/model_pydantic.py
+|4,39,22,0,1735982114,"~/python-types/model_pydantic.py"
+-'  22  0  ~/python-types/model_pydantic.py
+|4,39,22,0,1735982114,"~/python-types/model_pydantic.py"
+-'  22  0  ~/python-types/model_pydantic.py
+|4,39,22,0,1735982114,"~/python-types/model_pydantic.py"
+-'  22  0  ~/python-types/model_pydantic.py
+|4,39,22,0,1735982114,"~/python-types/model_pydantic.py"
+-'  46  8  ~/python-types/tests/sample-fail-token.json.gz
+|4,39,46,8,1735982098,"~/python-types/tests/sample-fail-token.json.gz"
+-'  46  8  ~/python-types/tests/sample-fail-token.json.gz
+|4,39,46,8,1735982098,"~/python-types/tests/sample-fail-token.json.gz"
+-'  46  8  ~/python-types/tests/sample-fail-token.json.gz
+|4,39,46,8,1735982098,"~/python-types/tests/sample-fail-token.json.gz"
+-'  46  8  ~/python-types/tests/sample-fail-token.json.gz
+|4,39,46,8,1735982098,"~/python-types/tests/sample-fail-token.json.gz"
+-'  46  8  ~/python-types/tests/sample-fail-token.json.gz
+|4,39,46,8,1735982098,"~/python-types/tests/sample-fail-token.json.gz"
+-'  46  8  ~/python-types/tests/sample-fail-token.json.gz
+|4,39,46,8,1735982098,"~/python-types/tests/sample-fail-token.json.gz"
+-'  1  0  ~/python-types/tests/sample-fail-token.json.gz
+|4,39,1,0,1735982095,"~/python-types/tests/sample-fail-token.json.gz"
+-'  10  42  ~/python-types/tests/test_comments_page.py
+|4,39,10,42,1735982095,"~/python-types/tests/test_comments_page.py"
+-'  1  0  ~/python-types/tests/sample-fail-token.json.gz
+|4,39,1,0,1735982095,"~/python-types/tests/sample-fail-token.json.gz"
+-'  10  42  ~/python-types/tests/test_comments_page.py
+|4,39,10,42,1735982095,"~/python-types/tests/test_comments_page.py"
+-'  1  0  ~/python-types/tests/sample-fail-token.json.gz
+|4,39,1,0,1735982095,"~/python-types/tests/sample-fail-token.json.gz"
+-'  10  42  ~/python-types/tests/test_comments_page.py
+|4,39,10,42,1735982095,"~/python-types/tests/test_comments_page.py"
+-'  1  0  ~/python-types/tests/sample-fail-token.json.gz
+|4,39,1,0,1735982095,"~/python-types/tests/sample-fail-token.json.gz"
+-'  10  42  ~/python-types/tests/test_comments_page.py
+|4,39,10,42,1735982095,"~/python-types/tests/test_comments_page.py"
+-'  1  0  ~/python-types/tests/sample-fail-token.json.gz
+|4,39,1,0,1735982095,"~/python-types/tests/sample-fail-token.json.gz"
+-'  10  42  ~/python-types/tests/test_comments_page.py
+|4,39,10,42,1735982095,"~/python-types/tests/test_comments_page.py"
+-'  1  0  ~/python-types/tests/sample-fail-token.json.gz
+|4,39,1,0,1735982095,"~/python-types/tests/sample-fail-token.json.gz"
+-'  10  42  ~/python-types/tests/test_comments_page.py
+|4,39,10,42,1735982095,"~/python-types/tests/test_comments_page.py"
+-'  1  0  ~/python-types/tests/test_comments_page.py
+|4,39,1,0,1735982092,"~/python-types/tests/test_comments_page.py"
+-'  1  0  ~/python-types/tests/test_comments_page.py
+|4,39,1,0,1735982092,"~/python-types/tests/test_comments_page.py"
+-'  1  0  ~/python-types/tests/test_comments_page.py
+|4,39,1,0,1735982092,"~/python-types/tests/test_comments_page.py"
+-'  1  0  ~/python-types/tests/test_comments_page.py
+|4,39,1,0,1735982092,"~/python-types/tests/test_comments_page.py"
+-'  1  0  ~/python-types/tests/test_comments_page.py
+|4,39,1,0,1735982092,"~/python-types/tests/test_comments_page.py"
+-'  1  0  ~/python-types/tests/test_comments_page.py
+|4,39,1,0,1735982092,"~/python-types/tests/test_comments_page.py"
+-'  41  0  ~/python-types/tests/test_comments_page.py
+|4,39,41,0,1735982076,"~/python-types/tests/test_comments_page.py"
+-'  41  0  ~/python-types/tests/test_comments_page.py
+|4,39,41,0,1735982076,"~/python-types/tests/test_comments_page.py"
+-'  41  0  ~/python-types/tests/test_comments_page.py
+|4,39,41,0,1735982076,"~/python-types/tests/test_comments_page.py"
+-'  41  0  ~/python-types/tests/test_comments_page.py
+|4,39,41,0,1735982076,"~/python-types/tests/test_comments_page.py"
+-'  41  0  ~/python-types/tests/test_comments_page.py
+|4,39,41,0,1735982076,"~/python-types/tests/test_comments_page.py"
+-'  41  0  ~/python-types/tests/test_comments_page.py
+|4,39,41,0,1735982076,"~/python-types/tests/test_comments_page.py"
+-'  41  0  ~/python-types/tests/test_comments_page.py
+|4,39,41,0,1735982076,"~/python-types/tests/test_comments_page.py"
+-'  1  0  ~/python-types/tests/test_comments_page.py
+|4,39,1,0,1735982068,"~/python-types/tests/test_comments_page.py"
+-'  6  0  ~/disc-bot/.git/MERGE_MSG
+|4,39,6,0,1735981414,"~/disc-bot/.git/MERGE_MSG"
+-'  6  0  ~/disc-bot/.git/MERGE_MSG
+|4,39,6,0,1735981414,"~/disc-bot/.git/MERGE_MSG"
+-'  6  0  ~/disc-bot/.git/MERGE_MSG
+|4,39,6,0,1735981414,"~/disc-bot/.git/MERGE_MSG"
+-'  6  0  ~/disc-bot/.git/MERGE_MSG
+|4,39,6,0,1735981414,"~/disc-bot/.git/MERGE_MSG"
+-'  6  0  ~/disc-bot/.git/MERGE_MSG
+|4,39,6,0,1735981414,"~/disc-bot/.git/MERGE_MSG"
+-'  6  0  ~/disc-bot/.git/MERGE_MSG
+|4,39,6,0,1735981414,"~/disc-bot/.git/MERGE_MSG"
+-'  6  0  ~/disc-bot/.git/MERGE_MSG
+|4,39,6,0,1735981414,"~/disc-bot/.git/MERGE_MSG"
+-'  6  0  ~/disc-bot/.git/MERGE_MSG
+|4,39,6,0,1735981414,"~/disc-bot/.git/MERGE_MSG"
+-'  1  0  ~/disc-bot/.git/MERGE_MSG
+|4,39,1,0,1735981407,"~/disc-bot/.git/MERGE_MSG"
+-'  1  0  ~/disc-bot/.git/MERGE_MSG
+|4,39,1,0,1735981407,"~/disc-bot/.git/MERGE_MSG"
+-'  1  0  ~/disc-bot/.git/MERGE_MSG
+|4,39,1,0,1735981407,"~/disc-bot/.git/MERGE_MSG"
+-'  1  0  ~/disc-bot/.git/MERGE_MSG
+|4,39,1,0,1735981407,"~/disc-bot/.git/MERGE_MSG"
+-'  1  0  ~/disc-bot/.git/MERGE_MSG
+|4,39,1,0,1735981407,"~/disc-bot/.git/MERGE_MSG"
+-'  1  0  ~/disc-bot/.git/MERGE_MSG
+|4,39,1,0,1735981407,"~/disc-bot/.git/MERGE_MSG"
+-'  1  0  ~/disc-bot/.git/MERGE_MSG
+|4,39,1,0,1735981407,"~/disc-bot/.git/MERGE_MSG"
+-'  1  0  ~/disc-bot/.git/MERGE_MSG
+|4,39,1,0,1735981407,"~/disc-bot/.git/MERGE_MSG"
+-'  300  0  ~/disc-bot/src/utils/parse_total.py
+|4,39,300,0,1735981257,"~/disc-bot/src/utils/parse_total.py"
+-'  300  0  ~/disc-bot/src/utils/parse_total.py
+|4,39,300,0,1735981257,"~/disc-bot/src/utils/parse_total.py"
+-'  300  0  ~/disc-bot/src/utils/parse_total.py
+|4,39,300,0,1735981257,"~/disc-bot/src/utils/parse_total.py"
+-'  300  0  ~/disc-bot/src/utils/parse_total.py
+|4,39,300,0,1735981257,"~/disc-bot/src/utils/parse_total.py"
+-'  300  0  ~/disc-bot/src/utils/parse_total.py
+|4,39,300,0,1735981257,"~/disc-bot/src/utils/parse_total.py"
+-'  300  0  ~/disc-bot/src/utils/parse_total.py
+|4,39,300,0,1735981257,"~/disc-bot/src/utils/parse_total.py"
+-'  300  0  ~/disc-bot/src/utils/parse_total.py
+|4,39,300,0,1735981257,"~/disc-bot/src/utils/parse_total.py"
+-'  300  0  ~/disc-bot/src/utils/parse_total.py
+|4,39,300,0,1735981257,"~/disc-bot/src/utils/parse_total.py"
+-'  300  0  ~/disc-bot/src/utils/parse_total.py
+|4,39,300,0,1735981257,"~/disc-bot/src/utils/parse_total.py"
+-'  1  0  ~/disc-bot/src/utils/parse_total.py
+|4,39,1,0,1735981248,"~/disc-bot/src/utils/parse_total.py"
+-'  1  0  ~/disc-bot/src/utils/parse_total.py
+|4,39,1,0,1735981248,"~/disc-bot/src/utils/parse_total.py"
+-'  1  0  ~/disc-bot/src/utils/parse_total.py
+|4,39,1,0,1735981248,"~/disc-bot/src/utils/parse_total.py"
+-'  1  0  ~/disc-bot/src/utils/parse_total.py
+|4,39,1,0,1735981248,"~/disc-bot/src/utils/parse_total.py"
 
 # Buffer list:
-%~/python_common/box/todo.txt	1	22
+%~/bash/backup.crontab	33	0
 
 # History of marks within files (newest to oldest):
 
-> ~/python_common/box/todo.txt
-	*	1735934547	0
-	"	1	22
-	^	1	23
-	.	1	22
-	+	1	22
+> ~/.vim/plugged/copilot.vim/doc/copilot.txt
+	*	1736063488	0
+	"	18	0
 
-> ~/disc-bot/src/utils/test_unzip_url.py
-	*	1735933950	0
-	"	31	4
-	.	132	0
-	+	108	0
-	+	132	0
+> ~/bash/backup.crontab
+	*	1736063471	0
+	"	33	0
+	^	26	4
+	.	26	3
+	+	26	3
 
-> ~/python_common/box/test_unzip_url.py
-	*	1735933926	0
-	"	101	39
-	^	127	40
-	.	127	40
-	+	30	23
-	+	31	40
-	+	39	23
-	+	40	40
-	+	50	23
-	+	51	40
-	+	62	23
-	+	64	40
-	+	77	23
-	+	79	40
-	+	93	23
-	+	95	40
+> ~/.config/symlinks.txt
+	*	1736063424	0
+	"	4	91
+	^	13	0
+	.	13	0
+	+	7	42
+	+	4	3
+	+	5	3
+	+	6	3
+	+	7	3
+	+	3	7
+	+	4	5
+	+	3	5
+	+	5	5
+	+	6	5
+	+	7	5
+	+	3	53
+	+	11	27
+	+	12	11
+	+	11	14
+	+	13	0
+
+> ~/projects.txt
+	*	1736027425	0
+	"	5	0
+	^	7	0
+	.	7	0
+	+	10	33
+	+	11	67
+	+	12	51
+	+	13	20
+	+	14	83
+	+	14	0
+	+	13	28
+	+	15	24
+	+	15	0
+	+	15	9
+	+	15	38
+	+	15	65
+	+	15	27
+	+	15	54
+	+	15	80
+	+	15	28
+	+	15	55
+	+	15	21
+	+	15	44
+	+	10	0
+	+	15	0
+	+	15	28
+	+	10	1
+	+	11	0
+	+	15	0
+	+	1	0
+	+	15	0
+	+	2	0
+	+	15	0
+	+	11	0
+	+	2	100
+	+	15	62
+	+	15	336
+	+	15	68
+	+	15	106
+	+	15	150
+	+	15	64
+	+	15	104
+	+	15	146
+	+	15	103
+	+	15	145
+	+	15	185
+	+	15	103
+	+	15	145
+	+	15	0
+	+	14	0
+	+	15	0
+	+	4	0
+	+	3	0
+	+	9	0
+	+	11	0
+	+	5	0
+	+	15	0
+	+	6	0
+	+	4	0
+	+	15	0
+	+	8	0
+	+	7	0
+
+> ~/pyscripts/viewlog.py
+	*	1736027423	0
+	"	1	0
+	^	120	19
+	.	120	18
+	+	133	26
+	+	142	30
+	+	142	0
+	+	134	0
+	+	133	0
+	+	142	0
+	+	135	0
+	+	134	26
+	+	135	0
+	+	136	0
+	+	142	0
+	+	140	0
+	+	134	0
+	+	136	0
+	+	137	0
+	+	132	43
+	+	140	56
+	+	137	0
+	+	140	0
+	+	137	0
+	+	140	0
+	+	173	0
+	+	210	0
+	+	269	0
+	+	270	21
+	+	8	23
+	+	9	16
+	+	270	0
+	+	269	15
+	+	102	0
+	+	103	0
+	+	93	0
+	+	92	0
+	+	88	42
+	+	92	0
+	+	101	0
+	+	88	0
+	+	92	0
+	+	88	40
+	+	90	0
+	+	89	0
+	+	90	42
+	+	91	16
+	+	94	0
+	+	88	49
+	+	88	47
+	+	90	50
+	+	91	48
+	+	93	59
+	+	100	0
+	+	98	74
+	+	97	20
+	+	45	0
+	+	16	0
+	+	48	0
+	+	182	0
+	+	18	0
+	+	17	0
+	+	248	0
+	+	247	0
+	+	42	0
+	+	222	49
+	+	222	38
+	+	222	0
+	+	100	35
+	+	100	22
+	+	100	0
+	+	98	0
+	+	86	0
+	+	88	0
+	+	87	17
+	+	99	0
+	+	119	0
+	+	123	0
+	+	118	32
+	+	130	35
+	+	279	54
+	+	20	32
+	+	139	0
+	+	137	13
+	+	138	64
+	+	138	0
+	+	137	40
+	+	110	60
+	+	109	9
+	+	105	11
+	+	107	41
+	+	109	36
 	+	110	22
-	+	111	40
-	+	118	22
-	+	119	40
-	+	126	22
-	+	127	40
+	+	279	0
+	+	278	0
+	+	142	8
+	+	142	15
+	+	160	74
+	+	161	25
+	+	278	0
+	+	279	0
+	+	120	18
+	b	105	33
 
 > ~/.config/setup.fish
-	*	1735933689	0
-	"	23	0
+	*	1736027396	0
+	"	1	0
 	.	23	0
 	+	26	0
 	+	26	42
@@ -18049,6 +18209,576 @@ $
 	+	18	0
 	+	23	0
 
+> ~/.config/setup.bash
+	*	1736027395	0
+	"	13	0
+	^	54	0
+	.	18	0
+	+	16	0
+	+	16	54
+	+	28	0
+	+	31	28
+	+	30	0
+	+	31	1
+	+	31	0
+	+	31	5
+	+	30	1
+	+	31	0
+	+	30	0
+	+	28	0
+	+	16	23
+	+	16	0
+	+	16	25
+	+	16	0
+	+	27	37
+	+	27	1
+	+	27	0
+	+	58	33
+	+	58	51
+	+	58	0
+	+	56	0
+	+	58	0
+	+	58	1
+	+	58	0
+	+	58	1
+	+	58	38
+	+	59	0
+	+	58	4
+	+	58	16
+	+	58	0
+	+	57	0
+	+	58	1
+	+	59	53
+	+	59	0
+	+	58	0
+	+	11	3
+	+	16	0
+	+	12	0
+	+	15	0
+	+	12	30
+	+	14	57
+	+	11	23
+	+	11	0
+	+	16	0
+	+	34	20
+	+	7	25
+	+	7	0
+	+	7	90
+	+	7	27
+	+	7	25
+	+	11	0
+	+	7	0
+	+	11	0
+	+	16	0
+	+	6	0
+	+	4	24
+	+	4	0
+	+	5	0
+	+	7	0
+	+	16	0
+	+	7	0
+	+	8	0
+	+	7	0
+	+	10	0
+	+	16	0
+	+	8	0
+	+	22	0
+	+	8	0
+	+	55	0
+	+	54	0
+	+	18	0
+	+	32	0
+	+	18	0
+
+> ~/python-types/page_lsp.py
+	*	1735983184	0
+	"	1	0
+	.	19	0
+	+	19	0
+	+	17	7
+	+	18	33
+	+	19	10
+	+	20	0
+	+	19	0
+
+> ~/python-types/tests/test_comments_page.py
+	*	1735982114	0
+	"	16	0
+
+> ~/python-types/model_pydantic.py
+	*	1735982112	0
+	"	22	0
+	^	56	0
+	.	11	0
+	+	56	0
+	+	10	0
+	+	9	0
+	+	55	0
+	+	56	0
+	+	5	0
+	+	52	22
+	+	56	0
+	+	11	0
+
+> ~/python-types/tests/sample-fail-token.json.gz
+	*	1735982099	0
+	"	6	0
+	^	13	42
+	.	50	0
+	+	50	0
+	+	50	42
+	+	50	0
+	+	13	40
+	+	50	0
+
+> ~/disc-bot/.git/MERGE_MSG
+	*	1735981412	0
+	"	6	0
+
+> ~/disc-bot/src/utils/parse_total.py
+	*	1735981255	0
+	"	300	0
+	.	253	0
+	+	1	0
+	+	1	79
+	+	1	13
+	+	1	10
+	+	1	0
+	+	1	18
+	+	1	0
+	+	1	37
+	+	1	32
+	+	1	13
+	+	1	0
+	+	1	17
+	+	1	18
+	+	1	0
+	+	1	15
+	+	1	0
+	+	1	3
+	+	1	0
+	+	1	3
+	+	1	0
+	+	1	10
+	+	1	0
+	+	1	5
+	+	1	0
+	+	1	5
+	+	1	4
+	+	1	0
+	+	1	36
+	+	1	0
+	+	1	54
+	+	1	0
+	+	1	5
+	+	1	10
+	+	1	4
+	+	1	16
+	+	1	72
+	+	1	62
+	+	1	58
+	+	1	24
+	+	1	73
+	+	1	36
+	+	1	0
+	+	1	20
+	+	1	0
+	+	1	11
+	+	1	0
+	+	220	0
+	+	220	15
+	+	220	0
+	+	220	21
+	+	220	0
+	+	220	9
+	+	220	29
+	+	220	0
+	+	259	0
+	+	253	0
+
+> ~/disc-bot/src/utils/etag.py
+	*	1735981222	0
+	"	135	8
+	.	53	0
+	+	11	0
+	+	53	108
+	+	53	0
+	+	47	0
+	+	53	0
+
+> ~/disc-bot/src/utils/setup_chrome_testing_binaries.py
+	*	1735981174	0
+	"	44	4
+	^	69	103
+	.	69	102
+	+	27	55
+	+	11	0
+	+	10	0
+	+	11	68
+	+	15	32
+	+	18	68
+	+	11	69
+	+	15	33
+	+	18	69
+	+	11	97
+	+	15	61
+	+	18	97
+	+	2	0
+	+	1	0
+	+	2	21
+	+	4	41
+	+	85	0
+	+	81	5
+	+	82	0
+	+	82	70
+	+	82	0
+	+	81	0
+	+	82	55
+	+	82	0
+	+	61	0
+	+	9	54
+	+	11	72
+	+	15	36
+	+	18	72
+	+	27	57
+	+	59	23
+	+	64	26
+	+	72	32
+	+	75	59
+	+	78	30
+	+	81	23
+	+	82	29
+	+	9	70
+	+	11	88
+	+	15	52
+	+	18	88
+	+	26	50
+	+	61	17
+	+	66	20
+	+	73	26
+	+	76	62
+	+	78	46
+	+	81	39
+	+	82	45
+	+	61	27
+	+	66	30
+	+	69	83
+	+	82	0
+	+	58	0
+	+	56	69
+	+	57	75
+	+	58	72
+	+	58	73
+	+	60	0
+	+	59	5
+	+	60	103
+	+	62	0
+	+	61	0
+	+	62	126
+	+	46	26
+	+	54	129
+	+	55	148
+	+	56	57
+	+	57	75
+	+	59	0
+	+	54	26
+	+	55	36
+	+	56	35
+	+	57	44
+	+	54	0
+	+	53	0
+	+	58	0
+	+	48	0
+	+	58	0
+	+	51	0
+	+	49	14
+	+	58	0
+	+	47	41
+	+	50	45
+	+	56	100
+	+	58	0
+	+	70	0
+	+	71	9
+	+	72	0
+	+	58	93
+	+	58	0
+	+	49	24
+	+	47	8
+	+	50	8
+	+	56	72
+	+	69	102
+
+> ~/crk-coupon/get_chrome_and_chromedriver.bash
+	*	1735979441	0
+	"	1	0
+	^	7	25
+	.	7	24
+	+	17	30
+	+	1	0
+	+	7	24
+
+> ~/ui-components-css/.gitignore
+	*	1735937017	0
+	"	4	0
+	^	4	13
+	.	4	0
+	+	3	4
+	+	4	0
+
+> ~/.vim/templates/template.gitignore
+	*	1735937015	0
+	"	6	0
+	^	8	55
+	.	9	0
+	+	5	12
+	+	7	7
+	+	19	8
+	+	19	0
+	+	15	0
+	+	16	0
+	+	4	8
+	+	14	6
+	+	17	1
+	+	14	16
+	+	17	14
+	+	13	4
+	+	2	11
+	+	3	0
+	+	19	10
+	+	18	38
+	+	1	0
+	+	13	5
+	+	8	54
+	+	19	0
+	+	13	0
+	+	9	0
+
+> ~/pyscripts/commit-message-gemini.py
+	*	1735936653	0
+	"	144	4
+	^	142	14
+	.	144	0
+	+	162	3
+	+	116	32
+	+	25	35
+	+	14	65
+	+	116	0
+	+	43	0
+	+	118	5
+	+	118	0
+	+	119	5
+	+	120	0
+	+	117	0
+	+	123	54
+	+	125	4
+	+	148	53
+	+	160	37
+	+	124	26
+	+	133	0
+	+	134	0
+	+	135	47
+	+	143	7
+	+	143	19
+	+	137	33
+	+	136	53
+	+	143	0
+	+	137	0
+	+	137	17
+	+	137	30
+	+	137	0
+	+	134	0
+	+	137	0
+	+	134	0
+	+	143	0
+	+	137	0
+	+	134	0
+	+	143	19
+	+	135	33
+	+	137	62
+	+	140	33
+	+	141	7
+	+	143	0
+	+	141	0
+	+	143	0
+	+	101	38
+	+	101	0
+	+	109	103
+	+	109	0
+	+	102	0
+	+	102	33
+	+	102	71
+	+	102	28
+	+	102	0
+	+	101	0
+	+	87	21
+	+	88	13
+	+	95	76
+	+	96	24
+	+	92	88
+	+	92	12
+	+	95	0
+	+	90	26
+	+	89	42
+	+	91	57
+	+	93	53
+	+	96	105
+	+	97	70
+	+	98	67
+	+	102	0
+	+	103	19
+	+	97	31
+	+	98	31
+	+	97	33
+	+	98	33
+	+	97	45
+	+	98	45
+	+	96	20
+	+	97	37
+	+	98	37
+	+	97	49
+	+	98	49
+	+	97	23
+	+	98	23
+	+	94	13
+	+	95	99
+	+	93	24
+	+	91	53
+	+	103	0
+	+	108	7
+	+	104	0
+	+	105	0
+	+	104	9
+	+	105	20
+	+	144	0
+	+	134	0
+	+	136	0
+	+	142	13
+	+	144	0
+	a	134	16
+
+> ~/python_common/box/todo.txt
+	*	1735936308	0
+	"	1	39
+	^	1	38
+	.	1	37
+	+	3	132
+	+	2	97
+	+	3	207
+	+	1	37
+
+> ~/python_common/box/markup.py
+	*	1735936281	0
+	"	1	0
+	^	37	75
+	.	37	74
+	+	174	43
+	+	173	87
+	+	174	0
+	+	173	87
+	+	50	0
+	+	47	17
+	+	50	0
+	+	47	24
+	+	50	25
+	+	47	8
+	+	50	0
+	+	47	0
+	+	46	0
+	+	41	60
+	+	28	17
+	+	45	14
+	+	48	4
+	+	48	33
+	+	49	15
+	+	40	0
+	+	39	26
+	+	39	12
+	+	41	15
+	+	42	19
+	+	29	16
+	+	36	19
+	+	40	0
+	+	42	20
+	+	45	12
+	+	37	36
+	+	36	19
+	+	27	21
+	+	37	17
+	+	38	0
+	+	42	19
+	+	45	0
+	+	43	53
+	+	45	0
+	+	44	0
+	+	45	15
+	+	27	13
+	+	48	39
+	+	42	0
+	+	45	8
+	+	45	0
+	+	36	0
+	+	40	0
+	+	39	26
+	+	31	30
+	+	30	64
+	+	36	231
+	+	36	0
+	+	33	78
+	+	34	113
+	+	32	9
+	+	33	0
+	+	36	0
+	+	34	117
+	+	36	0
+	+	37	74
+
+> ~/.vim/_viminfo_linux
+	*	1735935743	0
+	"	17617	14
+	^	14398	34
+
+> ~/python_common/box/json_decode_error.py
+	*	1735935268	0
+	"	24	4
+	^	30	12
+	.	30	11
+	+	30	11
+
+> ~/pyscripts/.direnv/python-3.10.12/lib/python3.10/site-packages/box/error2.py
+	*	1735934991	0
+	"	294	0
+
+> ~/disc-bot/src/utils/test_unzip_url.py
+	*	1735933950	0
+	"	31	4
+	.	132	0
+	+	108	0
+	+	132	0
+
+> ~/python_common/box/test_unzip_url.py
+	*	1735933926	0
+	"	101	39
+	^	127	40
+	.	127	40
+	+	30	23
+	+	31	40
+	+	39	23
+	+	40	40
+	+	50	23
+	+	51	40
+	+	62	23
+	+	64	40
+	+	77	23
+	+	79	40
+	+	93	23
+	+	95	40
+	+	110	22
+	+	111	40
+	+	118	22
+	+	119	40
+	+	126	22
+	+	127	40
+
 > ~/bash/oldfiles.bash
 	*	1735930509	0
 	"	6	2
@@ -18136,113 +18866,6 @@ $
 > ~/tooling/python-orms.txt
 	*	1735930039	0
 	"	1	0
-
-> ~/pyscripts/commit-message-gemini.py
-	*	1735929924	0
-	"	118	4
-	^	106	27
-	.	106	26
-	+	113	0
-	+	8	13
-	+	84	0
-	+	94	58
-	+	95	0
-	+	127	0
-	+	119	23
-	+	120	23
-	+	90	30
-	+	91	5
-	+	83	0
-	+	117	5
-	+	128	6
-	+	117	6
-	+	128	2
-	+	9	21
-	+	1	35
-	+	125	11
-	+	128	24
-	+	124	50
-	+	125	28
-	+	128	1
-	+	127	0
-	+	122	10
-	+	13	71
-	+	15	4
-	+	132	76
-	+	98	71
-	+	98	46
-	+	98	77
-	+	98	14
-	+	115	70
-	+	115	9
-	+	98	46
-	+	98	0
-	+	98	51
-	+	98	11
-	+	98	0
-	+	115	0
-	+	132	4
-	+	132	0
-	+	113	32
-	+	113	4
-	+	113	0
-	+	114	31
-	+	114	0
-	+	115	0
-	+	134	55
-	+	117	0
-	+	119	0
-	+	118	5
-	+	98	0
-	+	98	35
-	+	98	4
-	+	98	7
-	+	98	50
-	+	98	51
-	+	98	8
-	+	98	0
-	+	114	34
-	+	114	9
-	+	118	0
-	+	98	20
-	+	114	5
-	+	114	10
-	+	114	43
-	+	114	10
-	+	114	0
-	+	102	0
-	+	98	12
-	+	102	33
-	+	112	0
-	+	114	0
-	+	114	51
-	+	114	10
-	+	103	51
-	+	112	0
-	+	113	0
-	+	98	0
-	+	132	43
-	+	114	0
-	+	116	0
-	+	65	9
-	+	75	13
-	+	134	3
-	+	98	32
-	+	25	35
-	+	14	65
-	+	98	0
-	+	43	0
-	+	100	5
-	+	100	0
-	+	101	5
-	+	102	0
-	+	99	0
-	+	105	54
-	+	107	4
-	+	120	53
-	+	132	37
-	+	106	26
-	a	115	16
 
 > ~/tooling/app_ideas/typography.txt
 	*	1735921053	0
@@ -18334,72 +18957,6 @@ $
 	+	20	2
 	+	1	2
 
-> ~/python_common/box/markup.py
-	*	1735904532	0
-	"	1	0
-	^	37	75
-	.	37	74
-	+	174	43
-	+	173	87
-	+	174	0
-	+	173	87
-	+	50	0
-	+	47	17
-	+	50	0
-	+	47	24
-	+	50	25
-	+	47	8
-	+	50	0
-	+	47	0
-	+	46	0
-	+	41	60
-	+	28	17
-	+	45	14
-	+	48	4
-	+	48	33
-	+	49	15
-	+	40	0
-	+	39	26
-	+	39	12
-	+	41	15
-	+	42	19
-	+	29	16
-	+	36	19
-	+	40	0
-	+	42	20
-	+	45	12
-	+	37	36
-	+	36	19
-	+	27	21
-	+	37	17
-	+	38	0
-	+	42	19
-	+	45	0
-	+	43	53
-	+	45	0
-	+	44	0
-	+	45	15
-	+	27	13
-	+	48	39
-	+	42	0
-	+	45	8
-	+	45	0
-	+	36	0
-	+	40	0
-	+	39	26
-	+	31	30
-	+	30	64
-	+	36	231
-	+	36	0
-	+	33	78
-	+	34	113
-	+	32	9
-	+	33	0
-	+	36	0
-	+	34	117
-	+	36	0
-	+	37	74
-
 > ~/python_common/box/color.py
 	*	1735904403	0
 	"	133	0
@@ -18490,59 +19047,6 @@ $
 	+	204	12
 	+	205	0
 	+	216	0
-
-> ~/projects.txt
-	*	1735848527	0
-	"	3	2
-	.	3	0
-	+	4	33
-	+	6	67
-	+	7	51
-	+	8	20
-	+	9	83
-	+	9	0
-	+	8	28
-	+	10	24
-	+	10	0
-	+	10	9
-	+	10	38
-	+	10	65
-	+	10	27
-	+	10	54
-	+	10	80
-	+	10	28
-	+	10	55
-	+	10	21
-	+	10	44
-	+	4	0
-	+	10	0
-	+	10	28
-	+	4	1
-	+	6	0
-	+	10	0
-	+	1	0
-	+	10	0
-	+	2	0
-	+	10	0
-	+	5	0
-	+	2	100
-	+	11	62
-	+	11	336
-	+	11	68
-	+	11	106
-	+	11	150
-	+	11	64
-	+	11	104
-	+	11	146
-	+	11	103
-	+	11	145
-	+	11	185
-	+	11	103
-	+	11	145
-	+	12	0
-	+	9	0
-	+	10	0
-	+	3	0
 
 > ~/tmp/cheem.txt
 	*	1735846910	0
@@ -19009,124 +19513,12 @@ $
 	+	559	53
 	+	560	77
 
-> ~/disc-bot/src/utils/setup_chrome_testing_binaries.py
-	*	1735840457	0
-	"	33	4
-	^	69	103
-	.	69	102
-	+	27	55
-	+	11	0
-	+	10	0
-	+	11	68
-	+	15	32
-	+	18	68
-	+	11	69
-	+	15	33
-	+	18	69
-	+	11	97
-	+	15	61
-	+	18	97
-	+	2	0
-	+	1	0
-	+	2	21
-	+	4	41
-	+	85	0
-	+	81	5
-	+	82	0
-	+	82	70
-	+	82	0
-	+	81	0
-	+	82	55
-	+	82	0
-	+	61	0
-	+	9	54
-	+	11	72
-	+	15	36
-	+	18	72
-	+	27	57
-	+	59	23
-	+	64	26
-	+	72	32
-	+	75	59
-	+	78	30
-	+	81	23
-	+	82	29
-	+	9	70
-	+	11	88
-	+	15	52
-	+	18	88
-	+	26	50
-	+	61	17
-	+	66	20
-	+	73	26
-	+	76	62
-	+	78	46
-	+	81	39
-	+	82	45
-	+	61	27
-	+	66	30
-	+	69	83
-	+	82	0
-	+	58	0
-	+	56	69
-	+	57	75
-	+	58	72
-	+	58	73
-	+	60	0
-	+	59	5
-	+	60	103
-	+	62	0
-	+	61	0
-	+	62	126
-	+	46	26
-	+	54	129
-	+	55	148
-	+	56	57
-	+	57	75
-	+	59	0
-	+	54	26
-	+	55	36
-	+	56	35
-	+	57	44
-	+	54	0
-	+	53	0
-	+	58	0
-	+	48	0
-	+	58	0
-	+	51	0
-	+	49	14
-	+	58	0
-	+	47	41
-	+	50	45
-	+	56	100
-	+	58	0
-	+	70	0
-	+	71	9
-	+	72	0
-	+	58	93
-	+	58	0
-	+	49	24
-	+	47	8
-	+	50	8
-	+	56	72
-	+	69	102
-
 > ~/disc-bot/src/utils/unzip_url.py
 	*	1735840455	0
 	"	76	19
 	.	32	0
 	+	11	0
 	+	32	0
-
-> ~/disc-bot/src/utils/etag.py
-	*	1735840405	0
-	"	134	4
-	.	53	0
-	+	11	0
-	+	53	108
-	+	53	0
-	+	47	0
-	+	53	0
 
 > ~/python_common/box/__init__.py
 	*	1735835656	0
@@ -19453,15 +19845,6 @@ $
 	+	58	82
 	+	59	0
 
-> ~/crk-coupon/get_chrome_and_chromedriver.bash
-	*	1735821595	0
-	"	10	0
-	^	7	25
-	.	7	24
-	+	17	30
-	+	1	0
-	+	7	24
-
 > ~/disc-bot/src/commands/member.py
 	*	1735808906	0
 	"	14	0
@@ -19675,84 +20058,6 @@ $
 	+	21	1
 	+	23	2
 	+	61	0
-
-> ~/.config/setup.bash
-	*	1735756800	0
-	"	4	0
-	^	55	0
-	.	55	0
-	+	16	0
-	+	16	54
-	+	30	0
-	+	33	28
-	+	32	0
-	+	33	1
-	+	33	0
-	+	33	5
-	+	32	1
-	+	33	0
-	+	32	0
-	+	30	0
-	+	16	23
-	+	16	0
-	+	16	25
-	+	16	0
-	+	29	37
-	+	29	1
-	+	29	0
-	+	59	33
-	+	59	51
-	+	59	0
-	+	57	0
-	+	59	0
-	+	59	1
-	+	59	0
-	+	59	1
-	+	59	38
-	+	60	0
-	+	59	4
-	+	59	16
-	+	59	0
-	+	58	0
-	+	59	1
-	+	60	53
-	+	60	0
-	+	59	0
-	+	11	3
-	+	16	0
-	+	12	0
-	+	15	0
-	+	12	30
-	+	14	57
-	+	11	23
-	+	11	0
-	+	16	0
-	+	35	20
-	+	7	25
-	+	7	0
-	+	7	90
-	+	7	27
-	+	7	25
-	+	11	0
-	+	7	0
-	+	11	0
-	+	16	0
-	+	6	0
-	+	4	24
-	+	4	0
-	+	5	0
-	+	7	0
-	+	16	0
-	+	7	0
-	+	8	0
-	+	7	0
-	+	10	0
-	+	16	0
-	+	8	0
-	+	24	0
-	+	8	0
-	+	56	0
-	+	55	0
 
 > ~/.config/env.bash
 	*	1735756798	0
@@ -19984,34 +20289,6 @@ $
 	*	1735750755	0
 	"	1	0
 
-> ~/.vim/templates/template.gitignore
-	*	1735750640	0
-	"	1	0
-	^	8	55
-	.	9	0
-	+	5	12
-	+	7	7
-	+	19	8
-	+	19	0
-	+	15	0
-	+	16	0
-	+	4	8
-	+	14	6
-	+	17	1
-	+	14	16
-	+	17	14
-	+	13	4
-	+	2	11
-	+	3	0
-	+	19	10
-	+	18	38
-	+	1	0
-	+	13	5
-	+	8	54
-	+	19	0
-	+	13	0
-	+	9	0
-
 > ~/bash/todo.txt
 	*	1735749472	0
 	"	1	2
@@ -20020,67 +20297,6 @@ $
 	+	1	0
 	+	2	2
 	+	1	0
-
-> ~/disc-bot/src/utils/parse_total.py
-	*	1735749006	0
-	"	253	0
-	.	253	0
-	+	1	0
-	+	1	79
-	+	1	13
-	+	1	10
-	+	1	0
-	+	1	18
-	+	1	0
-	+	1	37
-	+	1	32
-	+	1	13
-	+	1	0
-	+	1	17
-	+	1	18
-	+	1	0
-	+	1	15
-	+	1	0
-	+	1	3
-	+	1	0
-	+	1	3
-	+	1	0
-	+	1	10
-	+	1	0
-	+	1	5
-	+	1	0
-	+	1	5
-	+	1	4
-	+	1	0
-	+	1	36
-	+	1	0
-	+	1	54
-	+	1	0
-	+	1	5
-	+	1	10
-	+	1	4
-	+	1	16
-	+	1	72
-	+	1	62
-	+	1	58
-	+	1	24
-	+	1	73
-	+	1	36
-	+	1	0
-	+	1	20
-	+	1	0
-	+	1	11
-	+	1	0
-	+	220	0
-	+	220	15
-	+	220	0
-	+	220	21
-	+	220	0
-	+	220	9
-	+	220	29
-	+	220	0
-	+	259	0
-	+	253	0
 
 > ~/.vim/undotree_2
 	*	1735728023	0
@@ -21546,13 +21762,6 @@ $
 	+	37	1
 	+	39	0
 	+	38	1
-
-> ~/bash/backup.crontab
-	*	1735390478	0
-	"	37	40
-	^	26	4
-	.	26	3
-	+	26	3
 
 > ~/pyscripts/process_starship_performance.py
 	*	1735390052	0
@@ -23420,10 +23629,6 @@ $
 	+	2	0
 	+	1	0
 
-> ~/.vim/plugged/copilot.vim/doc/copilot.txt
-	*	1732563595	0
-	"	3	48
-
 > ~/python_common/tests/conftest.py
 	*	1732545503	0
 	"	7	4
@@ -24299,21 +24504,6 @@ $
 	+	91	54
 	+	90	52
 
-> ~/python-types/model_pydantic.py
-	*	1732281237	0
-	"	1	0
-	^	56	0
-	.	11	0
-	+	56	0
-	+	10	0
-	+	9	0
-	+	55	0
-	+	56	0
-	+	5	0
-	+	52	22
-	+	56	0
-	+	11	0
-
 > ~/python_common/box/template.py
 	*	1732281235	0
 	"	1	0
@@ -24683,13 +24873,6 @@ $
 	+	326	11
 	+	329	11
 	+	416	11
-
-> ~/python_common/box/json_decode_error.py
-	*	1732279730	0
-	"	30	11
-	^	30	12
-	.	30	11
-	+	30	11
 
 > ~/python_common/box/introspection.py
 	*	1732279724	0
@@ -25694,111 +25877,6 @@ $
 	+	25	8
 	+	28	0
 
-> ~/pyscripts/viewlog.py
-	*	1731540114	0
-	"	120	18
-	^	120	19
-	.	120	18
-	+	133	26
-	+	142	30
-	+	142	0
-	+	134	0
-	+	133	0
-	+	142	0
-	+	135	0
-	+	134	26
-	+	135	0
-	+	136	0
-	+	142	0
-	+	140	0
-	+	134	0
-	+	136	0
-	+	137	0
-	+	132	43
-	+	140	56
-	+	137	0
-	+	140	0
-	+	137	0
-	+	140	0
-	+	173	0
-	+	210	0
-	+	269	0
-	+	270	21
-	+	8	23
-	+	9	16
-	+	270	0
-	+	269	15
-	+	102	0
-	+	103	0
-	+	93	0
-	+	92	0
-	+	88	42
-	+	92	0
-	+	101	0
-	+	88	0
-	+	92	0
-	+	88	40
-	+	90	0
-	+	89	0
-	+	90	42
-	+	91	16
-	+	94	0
-	+	88	49
-	+	88	47
-	+	90	50
-	+	91	48
-	+	93	59
-	+	100	0
-	+	98	74
-	+	97	20
-	+	45	0
-	+	16	0
-	+	48	0
-	+	182	0
-	+	18	0
-	+	17	0
-	+	248	0
-	+	247	0
-	+	42	0
-	+	222	49
-	+	222	38
-	+	222	0
-	+	100	35
-	+	100	22
-	+	100	0
-	+	98	0
-	+	86	0
-	+	88	0
-	+	87	17
-	+	99	0
-	+	119	0
-	+	123	0
-	+	118	32
-	+	130	35
-	+	279	54
-	+	20	32
-	+	139	0
-	+	137	13
-	+	138	64
-	+	138	0
-	+	137	40
-	+	110	60
-	+	109	9
-	+	105	11
-	+	107	41
-	+	109	36
-	+	110	22
-	+	279	0
-	+	278	0
-	+	142	8
-	+	142	15
-	+	160	74
-	+	161	25
-	+	278	0
-	+	279	0
-	+	120	18
-	b	105	33
-
 > ~/pyscripts/tmp_create_date_regex.py
 	*	1731539721	0
 	"	9	0
@@ -26751,11 +26829,6 @@ $
 	"	1	0
 	.	1	0
 	+	1	0
-
-> ~/.vim/_viminfo_linux
-	*	1731247590	0
-	"	16598	45
-	^	14398	34
 
 > ~/llm/gemini.py
 	*	1731247328	0
@@ -34895,17 +34968,6 @@ $
 	+	2	0
 	+	13	8
 	+	16	0
-
-> ~/python-types/page_lsp.py
-	*	1726962070	0
-	"	19	4
-	.	19	0
-	+	19	0
-	+	17	7
-	+	18	33
-	+	19	10
-	+	20	0
-	+	19	0
 
 > ~/golang/viminfo_utils/zdirs_one_wk.go
 	*	1726750556	0
@@ -43219,10 +43281,6 @@ $
 	*	1722031117	0
 	"	1	0
 
-> ~/python-types/tests/test_comments_page.py
-	*	1722029962	0
-	"	41	0
-
 > ~/python-types/tests/test_token.py
 	*	1722029887	0
 	"	1	0
@@ -43644,16 +43702,6 @@ $
 > ~/tmp/.envr
 	*	1722013970	0
 	"	1	0
-
-> ~/python-types/tests/sample-fail-token.json.gz
-	*	1722011268	0
-	"	13	40
-	^	13	42
-	.	13	40
-	+	50	0
-	+	50	42
-	+	50	0
-	+	13	40
 
 > ~/python-types/tests/sample-pass-token.json.gz
 	*	1722009885	0
@@ -45577,14 +45625,6 @@ $
 	"	1	0
 	.	1	0
 	+	1	0
-
-> ~/ui-components-css/.gitignore
-	*	1720758321	0
-	"	1	0
-	^	4	13
-	.	4	12
-	+	3	4
-	+	4	12
 
 > ~/sqlite-editor/.gitignore
 	*	1720758220	0
@@ -52657,28 +52697,6 @@ $
 	^	1	12
 	.	1	11
 	+	1	11
-
-> ~/.config/symlinks.txt
-	*	1713433931	0
-	"	13	0
-	^	13	0
-	.	13	0
-	+	7	42
-	+	4	3
-	+	5	3
-	+	6	3
-	+	7	3
-	+	3	7
-	+	4	5
-	+	3	5
-	+	5	5
-	+	6	5
-	+	7	5
-	+	3	53
-	+	11	27
-	+	12	11
-	+	11	14
-	+	13	0
 
 > ~/downloads/source/t4.txt
 	*	1713433828	0
@@ -64041,6 +64059,9 @@ $
 > ~/python_common/db.py
 	*	1685152396	0
 	"	1	0
+
+> /tmp/s6AadW_setup_chrome_testing_binaries.py
+	"	40	4
 
 > ~/.config/coc/extensions/)
 	"	1	0
