@@ -11,35 +11,89 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/\C\<server\>
+~MSle0/diff 
 
 # Last Substitute Search Pattern:
-~MSle0&^\s\+$
+~MSle0~&diff 
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
 :qa
-|2,0,1736064492,,"qa"
+|2,0,1736074427,,"qa"
+:bd!
+|2,0,1736074426,,"bd!"
+:v/diff /d
+|2,0,1736074423,,"v/diff /d"
+:set ft=
+|2,0,1736074413,,"set ft="
+:q
+|2,0,1736071623,,"q"
+:e
+|2,0,1736071448,,"e"
+:set ft=bash
+|2,0,1736071445,,"set ft=bash"
+:set ft?
+|2,0,1736071443,,"set ft?"
+:RunCreateCommand vertical (default)
+|2,0,1736071394,,"RunCreateCommand vertical (default)"
+:RunCreateCommand 
+|2,0,1736071093,,"RunCreateCommand "
+:Rg
+|2,0,1736066429,,"Rg"
+:e ~/tooling/my-shell-scripting-language.txt
+|2,0,1736066299,,"e ~/tooling/my-shell-scripting-language.txt"
+:qa!
+|2,0,1736068645,,"qa!"
+:b!# | bd! #
+|2,0,1736068643,,"b!# | bd! #"
+:diffthis
+|2,0,1736068599,,"diffthis"
+:%sort u
+|2,0,1736068594,,"%sort u"
+:diffoff
+|2,0,1736068592,,"diffoff"
+:next
+|2,0,1736068569,,"next"
+:e!
+|2,0,1736068498,,"e!"
+:prev
+|2,0,1736068449,,"prev"
+:set title
+|2,0,1736065579,,"set title"
+:set titlestring=abc
+|2,0,1736065574,,"set titlestring=abc"
+:set titlestring?
+|2,0,1736065518,,"set titlestring?"
+:h titlestring
+|2,0,1736065513,,"h titlestring"
+:h 'title'
+|2,0,1736065505,,"h 'title'"
+:set tit
+|2,0,1736065500,,"set tit"
+:set title?
+|2,0,1736065493,,"set title?"
+:pwd
+|2,0,1736065053,,"pwd"
+:edit $MYVIMRC
+|2,0,1736064981,,"edit $MYVIMRC"
+:Copilot
+|2,0,1736064963,,"Copilot"
+:Copilot status
+|2,0,1736064960,,"Copilot status"
+:q!
+|2,0,1736028865,,"q!"
 :h copilot
 |2,0,1736063473,,"h copilot"
-:q
-|2,0,1735983186,,"q"
 :e todo.txt
 |2,0,1735936283,,"e todo.txt"
 :91
 |2,0,1735934495,,"91"
-:pwd
-|2,0,1735979455,,"pwd"
-:e
-|2,0,1735979453,,"e"
 :set ft=todo
 |2,0,1735937764,,"set ft=todo"
 :Date
 |2,0,1735934541,,"Date"
-:qa!
-|2,0,1735933622,,"qa!"
 :RunCreateCommand full
 |2,0,1735930327,,"RunCreateCommand full"
 :!/bin/bash %
@@ -50,8 +104,6 @@ $
 |2,0,1735930265,,"/bin/bash -c source %"
 :!source %
 |2,0,1735930250,,"!source %"
-:q!
-|2,0,1735909644,,"q!"
 :e commit-message-unwrapped.txt
 |2,0,1735908967,,"e commit-message-unwrapped.txt"
 :e commit-message-buggy.txt
@@ -90,16 +142,12 @@ $
 |2,0,1735842001,,"%s/^\\s\\+$//"
 :Jprevious
 |2,0,1735841706,,"Jprevious"
-:Rg
-|2,0,1735841423,,"Rg"
 :VD hateoas-history.db
 |2,0,1735841219,,"VD hateoas-history.db"
 :VD
 |2,0,1735841214,,"VD"
 :OpenDB
 |2,0,1735841202,,"OpenDB"
-:b!# | bd! #
-|2,0,1735841128,,"b!# | bd! #"
 :ToList
 |2,0,1735841119,,"ToList"
 :T
@@ -108,18 +156,12 @@ $
 |2,0,1735841101,,"enew"
 :e 
 |2,0,1735840457,,"e "
-:e!
-|2,0,1735837155,,"e!"
 :g/Not provided/d
 |2,0,1735836299,,"g/Not provided/d"
 :Template
 |2,0,1735835719,,"Template"
 :a
 |2,0,1735828230,,"a"
-:bd!
-|2,0,1735824961,,"bd!"
-:%sort u
-|2,0,1735824923,,"%sort u"
 :e src/utils/leaderboard_chrome.py
 |2,0,1735824081,,"e src/utils/leaderboard_chrome.py"
 :Rename setup_chrome_testing_binaries.py
@@ -188,8 +230,6 @@ $
 |2,0,1735727940,,"h 'undotree'"
 :U
 |2,0,1735727936,,"U"
-:edit $MYVIMRC
-|2,0,1735727928,,"edit $MYVIMRC"
 :undotree
 |2,0,1735727925,,"undotree"
 :gundo
@@ -298,8 +338,6 @@ $
 |2,0,1735635910,,"e error_files.txt"
 :'<,'>ToList
 |2,0,1735635744,,"'<,'>ToList"
-:diffthis
-|2,0,1735635691,,"diffthis"
 :g/ERROR/d
 |2,0,1735635684,,"g/ERROR/d"
 :v/assets\/guild_dmgs_from_max/d
@@ -498,8 +536,6 @@ $
 |2,0,1735192871,,"e known_hosts"
 :e ~/.ssh
 |2,0,1735180094,,"e ~/.ssh"
-:set ft=bash
-|2,0,1735179813,,"set ft=bash"
 :e setup_ssh.bash
 |2,0,1735179783,,"e setup_ssh.bash"
 :e source_vs_bash.bash
@@ -524,8 +560,6 @@ $
 |2,0,1735092502,,"e ~/tooling/app_ideas/cli_text_modification_tool.txt"
 :e variables.
 |2,0,1734892436,,"e variables."
-:Copilot status
-|2,0,1734605616,,"Copilot status"
 :e file.py
 |2,0,1734605610,,"e file.py"
 :Rename vm.bash
@@ -814,8 +848,6 @@ $
 |2,0,1730749781,,"e static/downloads/grc"
 :e static/downloads/graph_payloads/2277151094.json
 |2,0,1730749609,,"e static/downloads/graph_payloads/2277151094.json"
-:next
-|2,0,1730749258,,"next"
 :e tmp
 |2,0,1730740104,,"e tmp"
 :e tmp-psutil.py
@@ -1138,8 +1170,6 @@ $
 |2,0,1729277043,,"e ~/python_common/examples/example-colors.py"
 :199
 |2,0,1729267282,,"199"
-:RunCreateCommand vertical (default)
-|2,0,1729266905,,"RunCreateCommand vertical (default)"
 :e templates/
 |2,0,1729257143,,"e templates/"
 :e oldfiles.bash
@@ -1404,10 +1434,6 @@ $
 |2,0,1727842771,,"Rename remaps-hjkl-jkl;.txt"
 ::w:
 |2,0,1727842668,,":w:"
-:set title
-|2,0,1727839574,,"set title"
-:set title?
-|2,0,1727839505,,"set title?"
 :!tmux display-message -p '#W'
 |2,0,1727838827,,"!tmux display-message -p '#W'"
 :tmux display-message -p '#W'
@@ -1540,8 +1566,6 @@ $
 |2,0,1727041833,,"MRU rg.m"
 :e common-flags.txt
 |2,0,1727041751,,"e common-flags.txt"
-:diffoff
-|2,0,1727041744,,"diffoff"
 :Isolate /--[a-z-]*/
 |2,0,1727041715,,"Isolate /--[a-z-]*/"
 :e rg-flags.txt
@@ -1804,8 +1828,6 @@ $
 |2,0,1725691782,,"set cms=#%s"
 :set cms?
 |2,0,1725691777,,"set cms?"
-:set ft=
-|2,0,1725691767,,"set ft="
 :MRU truncate.py
 |2,0,1725691574,,"MRU truncate.py"
 :e trun
@@ -2728,8 +2750,6 @@ $
 |2,0,1724113467,,"DoMatchParen"
 :Doc
 |2,0,1724113464,,"Doc"
-:Copilot
-|2,0,1724113208,,"Copilot"
 :e c
 |2,0,1724113010,,"e c"
 :e ../bash/oldfiles.bash
@@ -3026,8 +3046,6 @@ $
 |2,0,1723582743,,"find README.md"
 :first
 |2,0,1723582729,,"first"
-:prev
-|2,0,1723582208,,"prev"
 :argadd /home/vivek/bash/logs/*.log
 |2,0,1723582138,,"argadd /home/vivek/bash/logs/*.log"
 :argadd *.log
@@ -4010,8 +4028,6 @@ $
 |2,0,1722194630,,"e dow"
 :MRU 42:mappings.vim
 |2,0,1722193768,,"MRU 42:mappings.vim"
-:set ft?
-|2,0,1722188714,,"set ft?"
 :MRU todo.vim
 |2,0,1722188654,,"MRU todo.vim"
 :e test.db
@@ -11518,6 +11534,16 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+? diff 
+|2,1,1736074423,,"diff "
+?/SHELL
+|2,1,1736068583,47,"SHELL"
+?/tmux
+|2,1,1736065486,47,"tmux"
+?/automatic
+|2,1,1736065335,47,"automatic"
+?/copilot
+|2,1,1736064984,47,"copilot"
 ?/get_diff
 |2,1,1735936500,47,"get_diff"
 ?/bold
@@ -11730,8 +11756,6 @@ $
 |2,1,1735653217,47,"atuin"
 ?/starship
 |2,1,1735652410,47,"starship"
-?/SHELL
-|2,1,1735651437,47,"SHELL"
 ?/utf
 |2,1,1735650953,47,"utf"
 ?/256
@@ -11890,8 +11914,6 @@ $
 |2,1,1735095724,47,"cont"
 ?/scp
 |2,1,1735070292,47,"scp"
-?/copilot
-|2,1,1734605601,47,"copilot"
 ?/requi
 |2,1,1734347757,47,"requi"
 ?/dns
@@ -12944,8 +12966,6 @@ $
 |2,1,1727753631,47,"default"
 ?/_
 |2,1,1727663668,47,"_"
-?/tmux
-|2,1,1727663667,47,"tmux"
 ?/PS1
 |2,1,1727657172,47,"PS1"
 ?/Set PS1
@@ -17568,40 +17588,39 @@ $
 |2,4,1693311567,,"cont"
 
 # Registers:
-""0	LINE	0
-	  ~/remote_utils/setup_ssh.bash
-|3,1,0,1,1,0,1736063424,"  ~/remote_utils/setup_ssh.bash"
-"1	LINE	0
-	  ~/remote_utils/setup_ssh.bash
-|3,0,1,1,1,0,1736027404,"  ~/remote_utils/setup_ssh.bash"
+"0	CHAR	0
+	mapfile
+|3,0,0,0,1,0,1736074421,"mapfile"
+""1	LINE	0
+	     source ~/vimfiles/ide.vim
+|3,1,1,1,1,0,1736074423,"     source ~/vimfiles/ide.vim"
 "2	LINE	0
-	
-|3,0,2,1,1,0,1736027324,""
+	 if has("win32")
+|3,0,2,1,1,0,1736074423," if has(\"win32\")"
 "3	LINE	0
-	col() { awk -v col="$1" "{print (col >= 0) ? \$(col+1) : \$(NF + col + 1)}"; }
-|3,0,3,1,1,0,1736027297,"col() { awk -v col=\"$1\" \"{print (col >= 0) ? \\$(col+1) : \\$(NF + col + 1)}\"; }"
+	 call plug#end()
+|3,0,3,1,1,0,1736074423," call plug#end()"
 "4	LINE	0
-	  ~/python_common/box/log.py ~/python_common/box/print_utils.py ~/python_common/examples/examplelog2.py ~/python_common/examples/example-log-1.py ~/python_common/examples/example-log.py
-|3,0,4,1,1,0,1735937749,"  ~/python_common/box/log.py ~/python_common/box/print_utils.py ~/python_common/examples/examplelog2.py ~/python_common/examples/example-log-1.py ~/python_common/examples/example-log.py"
+	+" Plug 'github/copilot.vim'
+|3,0,4,1,1,0,1736074423,"+\" Plug 'github/copilot.vim'"
 "5	LINE	0
-	  ~/pyscripts/viewlog.py
-|3,0,5,1,1,0,1735937745,"  ~/pyscripts/viewlog.py"
+	+" Disabled till Jan 19
+|3,0,5,1,1,0,1736074423,"+\" Disabled till Jan 19"
 "6	LINE	0
-	        import sys
-|3,0,6,1,1,0,1735936638,"        import sys"
+	-Plug 'github/copilot.vim'
+|3,0,6,1,1,0,1736074423,"-Plug 'github/copilot.vim'"
 "7	LINE	0
-	    assert diff_content
-|3,0,7,1,1,0,1735936630,"    assert diff_content"
+	 
+|3,0,7,1,1,0,1736074423," "
 "8	LINE	0
-	    handle_dot_vim()
-|3,0,8,1,1,0,1735936506,"    handle_dot_vim()"
+	 Plug 'AndrewRadev/splitjoin.vim'
+|3,0,8,1,1,0,1736074423," Plug 'AndrewRadev/splitjoin.vim'"
 "9	LINE	0
-	    # check if _viminfo_linux is in git dif
-	    subprocess.check_output(["git", "diff", "HEAD", "--", ":!_viminfo"])
-|3,0,9,1,2,0,1735936078,"    # check if _viminfo_linux is in git dif","    subprocess.check_output([\"git\", \"diff\", \"HEAD\", \"--\", \":!_viminfo\"])"
+	 Plug 'arcticicestudio/nord-vim'
+|3,0,9,1,1,0,1736074423," Plug 'arcticicestudio/nord-vim'"
 "a	CHAR	0
 	Tabularize /:/l1c1l1
-|3,0,10,0,1,0,1735936530,"Tabularize /:/l1c1l1"
+|3,0,10,0,1,0,1736071486,"Tabularize /:/l1c1l1"
 "i	CHAR	0
 	ado_up()jk:q!
 |3,0,18,0,1,0,1724200553,"ado_up()jk:q!"
@@ -17670,339 +17689,607 @@ $
 |<"    assert x_min < x_max, f\"Invalid x coordinates: min ({x_min}) >= max ({x_max})\"","    assert y_min < y_max, f\"Invalid y coordinates: min ({y_min}) >= max ({y_max})\"","    ","    # Additional geometric checks","    assert abs(y1 - y2) < (y_max - y_min), \"Top edge is not roughly horizontal\"","    assert abs(y3 - y4) < (y_max - y_min), \"Bottom edge is not roughly horizontal\"","    assert abs(x1 - x4) < (x_max - x_min), \"Left edge is not roughly vertical\"",>83
 |<"    assert abs(x2 - x3) < (x_max - x_min), \"Right edge is not roughly vertical\"","","    pretty_string_flat = {","        \"left\": x_min,","        \"right\": x_max,","        \"top\": y_min,","        \"bottom\": y_max,","        \"top_left\": (x1, y1),","        \"top_right\": (x2, y2),","        \"bottom_right\": (x3, y3),","        \"bottom_left\": (x4, y4),","    }","    ","    print(f\"{box} => {pretty_string_flat}\")",""
 "-	CHAR	0
-	rel2abs(sys.argv[1])
-|3,0,36,0,1,0,1735936530,"rel2abs(sys.argv[1])"
+	mapfile
+|3,0,36,0,1,0,1736071530,"mapfile"
 
 # File marks:
-'0  18  0  ~/.vim/plugged/copilot.vim/doc/copilot.txt
-|4,48,18,0,1736064497,"~/.vim/plugged/copilot.vim/doc/copilot.txt"
-'1  4  91  ~/.config/symlinks.txt
-|4,49,4,91,1736063426,"~/.config/symlinks.txt"
-'2  4  91  ~/.config/symlinks.txt
-|4,50,4,91,1736063426,"~/.config/symlinks.txt"
-'3  5  0  ~/projects.txt
-|4,51,5,0,1736027427,"~/projects.txt"
-'4  5  0  ~/projects.txt
-|4,52,5,0,1736027427,"~/projects.txt"
-'5  5  0  ~/projects.txt
-|4,53,5,0,1736027427,"~/projects.txt"
-'6  5  0  ~/projects.txt
-|4,54,5,0,1736027427,"~/projects.txt"
-'7  1  0  ~/python-types/page_lsp.py
-|4,55,1,0,1735983188,"~/python-types/page_lsp.py"
-'8  1  0  ~/python-types/page_lsp.py
-|4,56,1,0,1735983188,"~/python-types/page_lsp.py"
-'9  1  0  ~/python-types/page_lsp.py
-|4,57,1,0,1735983188,"~/python-types/page_lsp.py"
+'0  1  0  ~/bash/pwd-oldfiles.bash
+|4,48,1,0,1736071625,"~/bash/pwd-oldfiles.bash"
+'1  1  0  ~/bash/pwd-oldfiles.bash
+|4,49,1,0,1736071625,"~/bash/pwd-oldfiles.bash"
+'2  2  8  ~/bash/pwd-oldfiles.bash
+|4,50,2,8,1736071536,"~/bash/pwd-oldfiles.bash"
+'3  2  8  ~/bash/pwd-oldfiles.bash
+|4,51,2,8,1736071536,"~/bash/pwd-oldfiles.bash"
+'4  2  8  ~/bash/pwd-oldfiles.bash
+|4,52,2,8,1736071536,"~/bash/pwd-oldfiles.bash"
+'5  2  8  ~/bash/pwd-oldfiles.bash
+|4,53,2,8,1736071536,"~/bash/pwd-oldfiles.bash"
+'6  1  0  ~/bash/pwd-oldfiles.bash
+|4,54,1,0,1736071433,"~/bash/pwd-oldfiles.bash"
+'7  1  0  ~/bash/pwd-oldfiles.bash
+|4,55,1,0,1736071433,"~/bash/pwd-oldfiles.bash"
+'8  39  0  ~/tmp/environ.txt
+|4,56,39,0,1736068646,"~/tmp/environ.txt"
+'9  39  0  ~/tmp/environ.txt
+|4,57,39,0,1736068646,"~/tmp/environ.txt"
 
 # Jumplist (newest first):
--'  18  0  ~/.vim/plugged/copilot.vim/doc/copilot.txt
-|4,39,18,0,1736064497,"~/.vim/plugged/copilot.vim/doc/copilot.txt"
--'  1  0  ~/.vim/plugged/copilot.vim/doc/copilot.txt
-|4,39,1,0,1736063473,"~/.vim/plugged/copilot.vim/doc/copilot.txt"
--'  1  0  ~/bash/backup.crontab
-|4,39,1,0,1736063459,"~/bash/backup.crontab"
--'  4  91  ~/.config/symlinks.txt
-|4,39,4,91,1736063426,"~/.config/symlinks.txt"
--'  4  91  ~/.config/symlinks.txt
-|4,39,4,91,1736063426,"~/.config/symlinks.txt"
--'  3  99  ~/.config/symlinks.txt
-|4,39,3,99,1736063421,"~/.config/symlinks.txt"
--'  3  99  ~/.config/symlinks.txt
-|4,39,3,99,1736063421,"~/.config/symlinks.txt"
--'  1  0  ~/.config/symlinks.txt
-|4,39,1,0,1736063402,"~/.config/symlinks.txt"
--'  1  0  ~/.config/symlinks.txt
-|4,39,1,0,1736063402,"~/.config/symlinks.txt"
--'  5  0  ~/projects.txt
-|4,39,5,0,1736027427,"~/projects.txt"
--'  5  0  ~/projects.txt
-|4,39,5,0,1736027427,"~/projects.txt"
--'  5  0  ~/projects.txt
-|4,39,5,0,1736027427,"~/projects.txt"
--'  1  0  ~/pyscripts/viewlog.py
-|4,39,1,0,1736027425,"~/pyscripts/viewlog.py"
--'  1  0  ~/pyscripts/viewlog.py
-|4,39,1,0,1736027425,"~/pyscripts/viewlog.py"
--'  1  0  ~/pyscripts/viewlog.py
-|4,39,1,0,1736027425,"~/pyscripts/viewlog.py"
--'  1  0  ~/projects.txt
-|4,39,1,0,1736027403,"~/projects.txt"
--'  1  0  ~/projects.txt
-|4,39,1,0,1736027403,"~/projects.txt"
--'  1  0  ~/projects.txt
-|4,39,1,0,1736027403,"~/projects.txt"
--'  1  0  ~/.config/setup.fish
-|4,39,1,0,1736027397,"~/.config/setup.fish"
--'  1  0  ~/.config/setup.fish
-|4,39,1,0,1736027397,"~/.config/setup.fish"
--'  1  0  ~/.config/setup.fish
-|4,39,1,0,1736027397,"~/.config/setup.fish"
--'  1  0  ~/.config/setup.fish
-|4,39,1,0,1736027397,"~/.config/setup.fish"
--'  1  0  ~/python-types/page_lsp.py
-|4,39,1,0,1735983188,"~/python-types/page_lsp.py"
--'  1  0  ~/python-types/page_lsp.py
-|4,39,1,0,1735983188,"~/python-types/page_lsp.py"
--'  1  0  ~/python-types/page_lsp.py
-|4,39,1,0,1735983188,"~/python-types/page_lsp.py"
--'  1  0  ~/python-types/page_lsp.py
-|4,39,1,0,1735983188,"~/python-types/page_lsp.py"
--'  1  0  ~/python-types/page_lsp.py
-|4,39,1,0,1735983188,"~/python-types/page_lsp.py"
--'  16  0  ~/python-types/tests/test_comments_page.py
-|4,39,16,0,1735982115,"~/python-types/tests/test_comments_page.py"
--'  16  0  ~/python-types/tests/test_comments_page.py
-|4,39,16,0,1735982115,"~/python-types/tests/test_comments_page.py"
--'  16  0  ~/python-types/tests/test_comments_page.py
-|4,39,16,0,1735982115,"~/python-types/tests/test_comments_page.py"
--'  16  0  ~/python-types/tests/test_comments_page.py
-|4,39,16,0,1735982115,"~/python-types/tests/test_comments_page.py"
--'  16  0  ~/python-types/tests/test_comments_page.py
-|4,39,16,0,1735982115,"~/python-types/tests/test_comments_page.py"
--'  16  0  ~/python-types/tests/test_comments_page.py
-|4,39,16,0,1735982115,"~/python-types/tests/test_comments_page.py"
--'  22  0  ~/python-types/model_pydantic.py
-|4,39,22,0,1735982114,"~/python-types/model_pydantic.py"
--'  22  0  ~/python-types/model_pydantic.py
-|4,39,22,0,1735982114,"~/python-types/model_pydantic.py"
--'  22  0  ~/python-types/model_pydantic.py
-|4,39,22,0,1735982114,"~/python-types/model_pydantic.py"
--'  22  0  ~/python-types/model_pydantic.py
-|4,39,22,0,1735982114,"~/python-types/model_pydantic.py"
--'  22  0  ~/python-types/model_pydantic.py
-|4,39,22,0,1735982114,"~/python-types/model_pydantic.py"
--'  22  0  ~/python-types/model_pydantic.py
-|4,39,22,0,1735982114,"~/python-types/model_pydantic.py"
--'  46  8  ~/python-types/tests/sample-fail-token.json.gz
-|4,39,46,8,1735982098,"~/python-types/tests/sample-fail-token.json.gz"
--'  46  8  ~/python-types/tests/sample-fail-token.json.gz
-|4,39,46,8,1735982098,"~/python-types/tests/sample-fail-token.json.gz"
--'  46  8  ~/python-types/tests/sample-fail-token.json.gz
-|4,39,46,8,1735982098,"~/python-types/tests/sample-fail-token.json.gz"
--'  46  8  ~/python-types/tests/sample-fail-token.json.gz
-|4,39,46,8,1735982098,"~/python-types/tests/sample-fail-token.json.gz"
--'  46  8  ~/python-types/tests/sample-fail-token.json.gz
-|4,39,46,8,1735982098,"~/python-types/tests/sample-fail-token.json.gz"
--'  46  8  ~/python-types/tests/sample-fail-token.json.gz
-|4,39,46,8,1735982098,"~/python-types/tests/sample-fail-token.json.gz"
--'  1  0  ~/python-types/tests/sample-fail-token.json.gz
-|4,39,1,0,1735982095,"~/python-types/tests/sample-fail-token.json.gz"
--'  10  42  ~/python-types/tests/test_comments_page.py
-|4,39,10,42,1735982095,"~/python-types/tests/test_comments_page.py"
--'  1  0  ~/python-types/tests/sample-fail-token.json.gz
-|4,39,1,0,1735982095,"~/python-types/tests/sample-fail-token.json.gz"
--'  10  42  ~/python-types/tests/test_comments_page.py
-|4,39,10,42,1735982095,"~/python-types/tests/test_comments_page.py"
--'  1  0  ~/python-types/tests/sample-fail-token.json.gz
-|4,39,1,0,1735982095,"~/python-types/tests/sample-fail-token.json.gz"
--'  10  42  ~/python-types/tests/test_comments_page.py
-|4,39,10,42,1735982095,"~/python-types/tests/test_comments_page.py"
--'  1  0  ~/python-types/tests/sample-fail-token.json.gz
-|4,39,1,0,1735982095,"~/python-types/tests/sample-fail-token.json.gz"
--'  10  42  ~/python-types/tests/test_comments_page.py
-|4,39,10,42,1735982095,"~/python-types/tests/test_comments_page.py"
--'  1  0  ~/python-types/tests/sample-fail-token.json.gz
-|4,39,1,0,1735982095,"~/python-types/tests/sample-fail-token.json.gz"
--'  10  42  ~/python-types/tests/test_comments_page.py
-|4,39,10,42,1735982095,"~/python-types/tests/test_comments_page.py"
--'  1  0  ~/python-types/tests/sample-fail-token.json.gz
-|4,39,1,0,1735982095,"~/python-types/tests/sample-fail-token.json.gz"
--'  10  42  ~/python-types/tests/test_comments_page.py
-|4,39,10,42,1735982095,"~/python-types/tests/test_comments_page.py"
--'  1  0  ~/python-types/tests/test_comments_page.py
-|4,39,1,0,1735982092,"~/python-types/tests/test_comments_page.py"
--'  1  0  ~/python-types/tests/test_comments_page.py
-|4,39,1,0,1735982092,"~/python-types/tests/test_comments_page.py"
--'  1  0  ~/python-types/tests/test_comments_page.py
-|4,39,1,0,1735982092,"~/python-types/tests/test_comments_page.py"
--'  1  0  ~/python-types/tests/test_comments_page.py
-|4,39,1,0,1735982092,"~/python-types/tests/test_comments_page.py"
--'  1  0  ~/python-types/tests/test_comments_page.py
-|4,39,1,0,1735982092,"~/python-types/tests/test_comments_page.py"
--'  1  0  ~/python-types/tests/test_comments_page.py
-|4,39,1,0,1735982092,"~/python-types/tests/test_comments_page.py"
--'  41  0  ~/python-types/tests/test_comments_page.py
-|4,39,41,0,1735982076,"~/python-types/tests/test_comments_page.py"
--'  41  0  ~/python-types/tests/test_comments_page.py
-|4,39,41,0,1735982076,"~/python-types/tests/test_comments_page.py"
--'  41  0  ~/python-types/tests/test_comments_page.py
-|4,39,41,0,1735982076,"~/python-types/tests/test_comments_page.py"
--'  41  0  ~/python-types/tests/test_comments_page.py
-|4,39,41,0,1735982076,"~/python-types/tests/test_comments_page.py"
--'  41  0  ~/python-types/tests/test_comments_page.py
-|4,39,41,0,1735982076,"~/python-types/tests/test_comments_page.py"
--'  41  0  ~/python-types/tests/test_comments_page.py
-|4,39,41,0,1735982076,"~/python-types/tests/test_comments_page.py"
--'  41  0  ~/python-types/tests/test_comments_page.py
-|4,39,41,0,1735982076,"~/python-types/tests/test_comments_page.py"
--'  1  0  ~/python-types/tests/test_comments_page.py
-|4,39,1,0,1735982068,"~/python-types/tests/test_comments_page.py"
--'  6  0  ~/disc-bot/.git/MERGE_MSG
-|4,39,6,0,1735981414,"~/disc-bot/.git/MERGE_MSG"
--'  6  0  ~/disc-bot/.git/MERGE_MSG
-|4,39,6,0,1735981414,"~/disc-bot/.git/MERGE_MSG"
--'  6  0  ~/disc-bot/.git/MERGE_MSG
-|4,39,6,0,1735981414,"~/disc-bot/.git/MERGE_MSG"
--'  6  0  ~/disc-bot/.git/MERGE_MSG
-|4,39,6,0,1735981414,"~/disc-bot/.git/MERGE_MSG"
--'  6  0  ~/disc-bot/.git/MERGE_MSG
-|4,39,6,0,1735981414,"~/disc-bot/.git/MERGE_MSG"
--'  6  0  ~/disc-bot/.git/MERGE_MSG
-|4,39,6,0,1735981414,"~/disc-bot/.git/MERGE_MSG"
--'  6  0  ~/disc-bot/.git/MERGE_MSG
-|4,39,6,0,1735981414,"~/disc-bot/.git/MERGE_MSG"
--'  6  0  ~/disc-bot/.git/MERGE_MSG
-|4,39,6,0,1735981414,"~/disc-bot/.git/MERGE_MSG"
--'  1  0  ~/disc-bot/.git/MERGE_MSG
-|4,39,1,0,1735981407,"~/disc-bot/.git/MERGE_MSG"
--'  1  0  ~/disc-bot/.git/MERGE_MSG
-|4,39,1,0,1735981407,"~/disc-bot/.git/MERGE_MSG"
--'  1  0  ~/disc-bot/.git/MERGE_MSG
-|4,39,1,0,1735981407,"~/disc-bot/.git/MERGE_MSG"
--'  1  0  ~/disc-bot/.git/MERGE_MSG
-|4,39,1,0,1735981407,"~/disc-bot/.git/MERGE_MSG"
--'  1  0  ~/disc-bot/.git/MERGE_MSG
-|4,39,1,0,1735981407,"~/disc-bot/.git/MERGE_MSG"
--'  1  0  ~/disc-bot/.git/MERGE_MSG
-|4,39,1,0,1735981407,"~/disc-bot/.git/MERGE_MSG"
--'  1  0  ~/disc-bot/.git/MERGE_MSG
-|4,39,1,0,1735981407,"~/disc-bot/.git/MERGE_MSG"
--'  1  0  ~/disc-bot/.git/MERGE_MSG
-|4,39,1,0,1735981407,"~/disc-bot/.git/MERGE_MSG"
--'  300  0  ~/disc-bot/src/utils/parse_total.py
-|4,39,300,0,1735981257,"~/disc-bot/src/utils/parse_total.py"
--'  300  0  ~/disc-bot/src/utils/parse_total.py
-|4,39,300,0,1735981257,"~/disc-bot/src/utils/parse_total.py"
--'  300  0  ~/disc-bot/src/utils/parse_total.py
-|4,39,300,0,1735981257,"~/disc-bot/src/utils/parse_total.py"
--'  300  0  ~/disc-bot/src/utils/parse_total.py
-|4,39,300,0,1735981257,"~/disc-bot/src/utils/parse_total.py"
--'  300  0  ~/disc-bot/src/utils/parse_total.py
-|4,39,300,0,1735981257,"~/disc-bot/src/utils/parse_total.py"
--'  300  0  ~/disc-bot/src/utils/parse_total.py
-|4,39,300,0,1735981257,"~/disc-bot/src/utils/parse_total.py"
--'  300  0  ~/disc-bot/src/utils/parse_total.py
-|4,39,300,0,1735981257,"~/disc-bot/src/utils/parse_total.py"
--'  300  0  ~/disc-bot/src/utils/parse_total.py
-|4,39,300,0,1735981257,"~/disc-bot/src/utils/parse_total.py"
--'  300  0  ~/disc-bot/src/utils/parse_total.py
-|4,39,300,0,1735981257,"~/disc-bot/src/utils/parse_total.py"
--'  1  0  ~/disc-bot/src/utils/parse_total.py
-|4,39,1,0,1735981248,"~/disc-bot/src/utils/parse_total.py"
--'  1  0  ~/disc-bot/src/utils/parse_total.py
-|4,39,1,0,1735981248,"~/disc-bot/src/utils/parse_total.py"
--'  1  0  ~/disc-bot/src/utils/parse_total.py
-|4,39,1,0,1735981248,"~/disc-bot/src/utils/parse_total.py"
--'  1  0  ~/disc-bot/src/utils/parse_total.py
-|4,39,1,0,1735981248,"~/disc-bot/src/utils/parse_total.py"
+-'  1  0  ~/.vim/diff.txt
+|4,39,1,0,1736074426,"~/.vim/diff.txt"
+-'  2  0  ~/.vim/diff.txt
+|4,39,2,0,1736074423,"~/.vim/diff.txt"
+-'  1  0  ~/bash/pwd-oldfiles.bash
+|4,39,1,0,1736071625,"~/bash/pwd-oldfiles.bash"
+-'  1  0  ~/bash/pwd-oldfiles.bash
+|4,39,1,0,1736071625,"~/bash/pwd-oldfiles.bash"
+-'  2  8  ~/bash/pwd-oldfiles.bash
+|4,39,2,8,1736071536,"~/bash/pwd-oldfiles.bash"
+-'  2  8  ~/bash/pwd-oldfiles.bash
+|4,39,2,8,1736071536,"~/bash/pwd-oldfiles.bash"
+-'  2  8  ~/bash/pwd-oldfiles.bash
+|4,39,2,8,1736071536,"~/bash/pwd-oldfiles.bash"
+-'  1  0  ~/bash/pwd-oldfiles.bash
+|4,39,1,0,1736071433,"~/bash/pwd-oldfiles.bash"
+-'  4  4  ~/bash/pwd-oldfiles.bash
+|4,39,4,4,1736071429,"~/bash/pwd-oldfiles.bash"
+-'  4  4  ~/bash/pwd-oldfiles.bash
+|4,39,4,4,1736071429,"~/bash/pwd-oldfiles.bash"
+-'  4  4  ~/bash/pwd-oldfiles.bash
+|4,39,4,4,1736071429,"~/bash/pwd-oldfiles.bash"
+-'  15  0  ~/bash/pwd-oldfiles.bash
+|4,39,15,0,1736071414,"~/bash/pwd-oldfiles.bash"
+-'  15  0  ~/bash/pwd-oldfiles.bash
+|4,39,15,0,1736071414,"~/bash/pwd-oldfiles.bash"
+-'  15  0  ~/bash/pwd-oldfiles.bash
+|4,39,15,0,1736071414,"~/bash/pwd-oldfiles.bash"
+-'  14  1  ~/bash/pwd-oldfiles.bash
+|4,39,14,1,1736071413,"~/bash/pwd-oldfiles.bash"
+-'  16  21  ~/bash/pwd-oldfiles.bash
+|4,39,16,21,1736071413,"~/bash/pwd-oldfiles.bash"
+-'  14  1  ~/bash/pwd-oldfiles.bash
+|4,39,14,1,1736071413,"~/bash/pwd-oldfiles.bash"
+-'  16  21  ~/bash/pwd-oldfiles.bash
+|4,39,16,21,1736071413,"~/bash/pwd-oldfiles.bash"
+-'  14  1  ~/bash/pwd-oldfiles.bash
+|4,39,14,1,1736071413,"~/bash/pwd-oldfiles.bash"
+-'  16  21  ~/bash/pwd-oldfiles.bash
+|4,39,16,21,1736071413,"~/bash/pwd-oldfiles.bash"
+-'  3  0  ~/bash/pwd-oldfiles.bash
+|4,39,3,0,1736071176,"~/bash/pwd-oldfiles.bash"
+-'  3  0  ~/bash/pwd-oldfiles.bash
+|4,39,3,0,1736071176,"~/bash/pwd-oldfiles.bash"
+-'  3  0  ~/bash/pwd-oldfiles.bash
+|4,39,3,0,1736071176,"~/bash/pwd-oldfiles.bash"
+-'  1  0  ~/bash/pwd-oldfiles.bash
+|4,39,1,0,1736071134,"~/bash/pwd-oldfiles.bash"
+-'  39  0  ~/tmp/environ.txt
+|4,39,39,0,1736068646,"~/tmp/environ.txt"
+-'  39  0  ~/tmp/environ.txt
+|4,39,39,0,1736068646,"~/tmp/environ.txt"
+-'  39  0  ~/tmp/environ.txt
+|4,39,39,0,1736068646,"~/tmp/environ.txt"
+-'  39  0  ~/tmp/environ.txt
+|4,39,39,0,1736068646,"~/tmp/environ.txt"
+-'  9  9  ~/tmp/environ.txt
+|4,39,9,9,1736068584,"~/tmp/environ.txt"
+-'  9  9  ~/tmp/environ.txt
+|4,39,9,9,1736068584,"~/tmp/environ.txt"
+-'  9  9  ~/tmp/environ.txt
+|4,39,9,9,1736068584,"~/tmp/environ.txt"
+-'  9  9  ~/tmp/environ.txt
+|4,39,9,9,1736068584,"~/tmp/environ.txt"
+-'  1  0  ~/tmp/environ.txt
+|4,39,1,0,1736068583,"~/tmp/environ.txt"
+-'  1  0  ~/tmp/environ.txt
+|4,39,1,0,1736068583,"~/tmp/environ.txt"
+-'  1  0  ~/tmp/environ.txt
+|4,39,1,0,1736068583,"~/tmp/environ.txt"
+-'  1  0  ~/tmp/environ.txt
+|4,39,1,0,1736068583,"~/tmp/environ.txt"
+-'  1  0  ~/tmp/env.txt
+|4,39,1,0,1736068573,"~/tmp/env.txt"
+-'  1  0  ~/tmp/env.txt
+|4,39,1,0,1736068573,"~/tmp/env.txt"
+-'  1  0  ~/tmp/env.txt
+|4,39,1,0,1736068573,"~/tmp/env.txt"
+-'  1  0  ~/tmp/env.txt
+|4,39,1,0,1736068573,"~/tmp/env.txt"
+-'  42  0  ~/tmp/printenv.txt
+|4,39,42,0,1736068540,"~/tmp/printenv.txt"
+-'  42  0  ~/tmp/printenv.txt
+|4,39,42,0,1736068540,"~/tmp/printenv.txt"
+-'  42  0  ~/tmp/printenv.txt
+|4,39,42,0,1736068540,"~/tmp/printenv.txt"
+-'  42  0  ~/tmp/printenv.txt
+|4,39,42,0,1736068540,"~/tmp/printenv.txt"
+-'  42  0  ~/tmp/printenv.txt
+|4,39,42,0,1736068540,"~/tmp/printenv.txt"
+-'  1  0  ~/tmp/printenv.txt
+|4,39,1,0,1736068453,"~/tmp/printenv.txt"
+-'  1  0  ~/tmp/printenv.txt
+|4,39,1,0,1736068453,"~/tmp/printenv.txt"
+-'  1  0  ~/tmp/printenv.txt
+|4,39,1,0,1736068453,"~/tmp/printenv.txt"
+-'  1  0  ~/tmp/printenv.txt
+|4,39,1,0,1736068453,"~/tmp/printenv.txt"
+-'  1  0  ~/tmp/printenv.txt
+|4,39,1,0,1736068453,"~/tmp/printenv.txt"
+-'  1  0  ~/tmp/env.txt
+|4,39,1,0,1736068453,"~/tmp/env.txt"
+-'  1  0  ~/tmp/environ.txt
+|4,39,1,0,1736068445,"~/tmp/environ.txt"
+-'  8  24  ~/bash/pwd-oldfiles.bash
+|4,39,8,24,1736065720,"~/bash/pwd-oldfiles.bash"
+-'  8  24  ~/bash/pwd-oldfiles.bash
+|4,39,8,24,1736065720,"~/bash/pwd-oldfiles.bash"
+-'  8  24  ~/bash/pwd-oldfiles.bash
+|4,39,8,24,1736065720,"~/bash/pwd-oldfiles.bash"
+-'  8  24  ~/bash/pwd-oldfiles.bash
+|4,39,8,24,1736065720,"~/bash/pwd-oldfiles.bash"
+-'  8  24  ~/bash/pwd-oldfiles.bash
+|4,39,8,24,1736065720,"~/bash/pwd-oldfiles.bash"
+-'  8  24  ~/bash/pwd-oldfiles.bash
+|4,39,8,24,1736065720,"~/bash/pwd-oldfiles.bash"
+-'  1  0  ~/bash/pwd-oldfiles.bash
+|4,39,1,0,1736065716,"~/bash/pwd-oldfiles.bash"
+-'  1  0  ~/bash/pwd-oldfiles.bash
+|4,39,1,0,1736065716,"~/bash/pwd-oldfiles.bash"
+-'  1  0  ~/bash/pwd-oldfiles.bash
+|4,39,1,0,1736065716,"~/bash/pwd-oldfiles.bash"
+-'  1  0  ~/bash/pwd-oldfiles.bash
+|4,39,1,0,1736065708,"~/bash/pwd-oldfiles.bash"
+-'  14  4  ~/bash/pwd-oldfiles.bash
+|4,39,14,4,1736065703,"~/bash/pwd-oldfiles.bash"
+-'  14  4  ~/bash/pwd-oldfiles.bash
+|4,39,14,4,1736065703,"~/bash/pwd-oldfiles.bash"
+-'  14  4  ~/bash/pwd-oldfiles.bash
+|4,39,14,4,1736065703,"~/bash/pwd-oldfiles.bash"
+-'  14  4  ~/bash/pwd-oldfiles.bash
+|4,39,14,4,1736065703,"~/bash/pwd-oldfiles.bash"
+-'  14  4  ~/bash/pwd-oldfiles.bash
+|4,39,14,4,1736065703,"~/bash/pwd-oldfiles.bash"
+-'  14  4  ~/bash/pwd-oldfiles.bash
+|4,39,14,4,1736065703,"~/bash/pwd-oldfiles.bash"
+-'  7  4  ~/bash/pwd-oldfiles.bash
+|4,39,7,4,1736065700,"~/bash/pwd-oldfiles.bash"
+-'  13  0  ~/bash/pwd-oldfiles.bash
+|4,39,13,0,1736065700,"~/bash/pwd-oldfiles.bash"
+-'  7  4  ~/bash/pwd-oldfiles.bash
+|4,39,7,4,1736065700,"~/bash/pwd-oldfiles.bash"
+-'  13  0  ~/bash/pwd-oldfiles.bash
+|4,39,13,0,1736065700,"~/bash/pwd-oldfiles.bash"
+-'  7  4  ~/bash/pwd-oldfiles.bash
+|4,39,7,4,1736065700,"~/bash/pwd-oldfiles.bash"
+-'  13  0  ~/bash/pwd-oldfiles.bash
+|4,39,13,0,1736065700,"~/bash/pwd-oldfiles.bash"
+-'  7  4  ~/bash/pwd-oldfiles.bash
+|4,39,7,4,1736065700,"~/bash/pwd-oldfiles.bash"
+-'  13  0  ~/bash/pwd-oldfiles.bash
+|4,39,13,0,1736065700,"~/bash/pwd-oldfiles.bash"
+-'  7  4  ~/bash/pwd-oldfiles.bash
+|4,39,7,4,1736065700,"~/bash/pwd-oldfiles.bash"
+-'  13  0  ~/bash/pwd-oldfiles.bash
+|4,39,13,0,1736065700,"~/bash/pwd-oldfiles.bash"
+-'  7  4  ~/bash/pwd-oldfiles.bash
+|4,39,7,4,1736065700,"~/bash/pwd-oldfiles.bash"
+-'  13  0  ~/bash/pwd-oldfiles.bash
+|4,39,13,0,1736065700,"~/bash/pwd-oldfiles.bash"
+-'  7  4  ~/bash/pwd-oldfiles.bash
+|4,39,7,4,1736065700,"~/bash/pwd-oldfiles.bash"
+-'  13  0  ~/bash/pwd-oldfiles.bash
+|4,39,13,0,1736065700,"~/bash/pwd-oldfiles.bash"
+-'  7  4  ~/bash/pwd-oldfiles.bash
+|4,39,7,4,1736065700,"~/bash/pwd-oldfiles.bash"
+-'  13  0  ~/bash/pwd-oldfiles.bash
+|4,39,13,0,1736065700,"~/bash/pwd-oldfiles.bash"
+-'  8  4  ~/bash/pwd-oldfiles.bash
+|4,39,8,4,1736065698,"~/bash/pwd-oldfiles.bash"
+-'  8  4  ~/bash/pwd-oldfiles.bash
+|4,39,8,4,1736065698,"~/bash/pwd-oldfiles.bash"
+-'  15  4  ~/bash/pwd-oldfiles.bash
+|4,39,15,4,1736065696,"~/bash/pwd-oldfiles.bash"
+-'  15  4  ~/bash/pwd-oldfiles.bash
+|4,39,15,4,1736065696,"~/bash/pwd-oldfiles.bash"
+-'  15  4  ~/bash/pwd-oldfiles.bash
+|4,39,15,4,1736065696,"~/bash/pwd-oldfiles.bash"
+-'  15  4  ~/bash/pwd-oldfiles.bash
+|4,39,15,4,1736065696,"~/bash/pwd-oldfiles.bash"
+-'  15  4  ~/bash/pwd-oldfiles.bash
+|4,39,15,4,1736065696,"~/bash/pwd-oldfiles.bash"
+-'  15  4  ~/bash/pwd-oldfiles.bash
+|4,39,15,4,1736065696,"~/bash/pwd-oldfiles.bash"
+-'  1  0  ~/bash/pwd-oldfiles.bash
+|4,39,1,0,1736065684,"~/bash/pwd-oldfiles.bash"
+-'  1  0  ~/bash/pwd-oldfiles.bash
+|4,39,1,0,1736065676,"~/bash/pwd-oldfiles.bash"
+-'  14  38  ~/bash/pwd-oldfiles.bash
+|4,39,14,38,1736065672,"~/bash/pwd-oldfiles.bash"
+-'  14  38  ~/bash/pwd-oldfiles.bash
+|4,39,14,38,1736065672,"~/bash/pwd-oldfiles.bash"
+-'  7  4  ~/bash/pwd-oldfiles.bash
+|4,39,7,4,1736065654,"~/bash/pwd-oldfiles.bash"
+-'  7  4  ~/bash/pwd-oldfiles.bash
+|4,39,7,4,1736065654,"~/bash/pwd-oldfiles.bash"
+-'  1  0  ~/bash/pwd-oldfiles.bash
+|4,39,1,0,1736065648,"~/bash/pwd-oldfiles.bash"
 
 # Buffer list:
-%~/bash/backup.crontab	33	0
 
 # History of marks within files (newest to oldest):
 
-> ~/.vim/plugged/copilot.vim/doc/copilot.txt
-	*	1736063488	0
-	"	18	0
-
-> ~/bash/backup.crontab
-	*	1736063471	0
-	"	33	0
-	^	26	4
-	.	26	3
-	+	26	3
-
-> ~/.config/symlinks.txt
-	*	1736063424	0
-	"	4	91
-	^	13	0
-	.	13	0
-	+	7	42
-	+	4	3
-	+	5	3
-	+	6	3
-	+	7	3
-	+	3	7
-	+	4	5
-	+	3	5
-	+	5	5
-	+	6	5
-	+	7	5
-	+	3	53
-	+	11	27
-	+	12	11
-	+	11	14
-	+	13	0
-
-> ~/projects.txt
-	*	1736027425	0
-	"	5	0
-	^	7	0
-	.	7	0
-	+	10	33
-	+	11	67
-	+	12	51
-	+	13	20
-	+	14	83
-	+	14	0
-	+	13	28
-	+	15	24
-	+	15	0
-	+	15	9
-	+	15	38
-	+	15	65
-	+	15	27
-	+	15	54
-	+	15	80
-	+	15	28
-	+	15	55
-	+	15	21
-	+	15	44
-	+	10	0
-	+	15	0
-	+	15	28
-	+	10	1
-	+	11	0
-	+	15	0
-	+	1	0
-	+	15	0
-	+	2	0
-	+	15	0
-	+	11	0
-	+	2	100
-	+	15	62
-	+	15	336
-	+	15	68
-	+	15	106
-	+	15	150
-	+	15	64
-	+	15	104
-	+	15	146
-	+	15	103
-	+	15	145
-	+	15	185
-	+	15	103
-	+	15	145
-	+	15	0
-	+	14	0
-	+	15	0
-	+	4	0
-	+	3	0
-	+	9	0
-	+	11	0
+> ~/.vim/diff.txt
+	*	1736074425	0
+	"	1	0
+	.	5	0
 	+	5	0
-	+	15	0
-	+	6	0
+
+> ~/bash/pwd-oldfiles.bash
+	*	1736071620	0
+	"	1	0
+	^	2	9
+	.	2	8
+	+	2	0
+	+	2	10
+	+	2	0
+	+	2	1
+	+	2	0
+	+	2	71
+	+	2	0
+	+	2	53
+	+	2	0
+	+	16	5
+	+	16	7
+	+	16	0
+	+	16	47
+	+	2	0
+	+	2	119
+	+	2	0
+	+	2	131
+	+	16	0
+	+	2	285
+	+	2	163
+	+	16	0
+	+	2	0
+	+	2	163
+	+	16	80
+	+	16	0
+	+	2	131
+	+	16	80
+	+	16	0
+	+	2	0
+	+	2	104
+	+	2	0
+	+	16	0
+	+	16	27
+	+	16	0
+	+	16	34
+	+	16	0
+	+	16	4
+	+	16	0
+	+	16	145
+	+	2	27
+	+	16	86
+	+	2	1
+	+	16	0
+	+	16	38
+	+	16	0
+	+	2	7
+	+	16	0
+	+	16	38
+	+	2	0
+	+	16	0
+	+	2	0
+	+	16	0
+	+	2	0
+	+	16	0
+	+	3	0
+	+	2	0
+	+	3	0
+	+	14	0
+	+	4	38
 	+	4	0
-	+	15	0
-	+	8	0
+	+	14	0
+	+	16	0
+	+	14	33
+	+	16	0
+	+	4	0
+	+	13	0
+	+	4	0
 	+	7	0
+	+	2	8
+
+> ~/tmp/environ.txt
+	*	1736068643	0
+	"	39	0
+	.	27	0
+	+	1	0
+	+	27	0
+
+> ~/tmp/env.txt
+	*	1736068640	0
+	"	40	0
+	.	27	0
+	+	31	0
+	+	1	0
+	+	27	0
+
+> ~/tmp/printenv.txt
+	*	1736068538	0
+	"	42	0
+	.	35	0
+	+	35	0
+
+> ~/.vim/templates/template.bash
+	*	1736068500	0
+	"	1	0
+	.	61	0
+	+	1	31
+	+	1	41
+	+	1	0
+	+	1	10
+	+	33	2
+	+	1	0
+	+	1	19
+	+	1	44
+	+	1	13
+	+	1	0
+	+	1	2
+	+	1	46
+	+	1	0
+	+	1	68
+	+	1	80
+	+	1	0
+	+	30	0
+	+	30	2
+	+	29	18
+	+	30	0
+	+	29	10
+	+	29	16
+	+	30	0
+	+	29	0
+	+	32	16
+	+	1	44
+	+	1	0
+	+	34	0
+	+	1	0
+	+	21	0
+	+	23	0
+	+	20	0
+	+	39	1
+	+	40	1
+	+	27	44
+	+	17	12
+	+	23	0
+	+	17	64
+	+	41	5
+	+	43	0
+	+	44	0
+	+	26	0
+	+	3	17
+	+	1	0
+	+	44	0
+	+	3	29
+	+	44	5
+	+	42	1
+	+	44	0
+	+	42	0
+	+	44	29
+	+	44	85
+	+	44	0
+	+	59	4
+	+	52	6
+	+	48	0
+	+	53	0
+	+	54	0
+	+	43	46
+	+	60	0
+	+	3	32
+	+	61	0
+	+	21	1
+	+	23	2
+	+	61	0
+
+> ~/tooling/my-shell-scripting-language.txt
+	*	1736066570	0
+	"	11	23
+	^	10	72
+	.	10	71
+	+	1	31
+	+	3	47
+	+	6	43
+	+	11	67
+	+	10	71
+
+> ~/bash/oldfiles.bash
+	*	1736066270	0
+	"	1	4
+	.	20	0
+	+	2	1
+	+	2	12
+	+	2	49
+	+	2	12
+	+	2	0
+	+	5	1
+	+	1	10
+	+	2	62
+	+	2	34
+	+	2	1
+	+	2	16
+	+	2	0
+	+	10	33
+	+	2	68
+	+	5	66
+	+	5	0
+	+	2	13
+	+	5	23
+	+	6	51
+	+	10	28
+	+	19	22
+	+	2	107
+	+	12	0
+	+	7	0
+	+	1	0
+	+	12	0
+	+	2	83
+	+	2	0
+	+	20	0
+	+	20	1
+	+	20	16
+	+	4	0
+	+	2	1
+	+	4	97
+	+	4	1
+	+	2	0
+	+	3	27
+	+	4	1
+	+	5	1
+	+	4	0
+	+	5	0
+	+	14	0
+	+	10	0
+	+	12	0
+	+	8	0
+	+	9	0
+	+	12	0
+	+	11	0
+	+	18	0
+	+	20	0
+
+> ~/.vim/plugin/tmux.vim
+	*	1736065531	0
+	"	4	4
+	.	4	0
+	+	1	24
+	+	1	11
+	+	1	64
+	+	1	0
+	+	7	5
+	+	3	0
+	+	2	19
+	+	8	0
+	+	1	28
+	+	9	8
+	+	1	0
+	+	8	0
+	+	1	0
+	+	4	0
+
+> /usr/share/vim/vim90/doc/options.txt
+	*	1736065513	0
+	"	8414	6
+
+> ~/.config/tmux/tmux.conf
+	*	1736065355	0
+	"	57	9
+	.	20	0
+	+	3	0
+	+	35	0
+	+	33	0
+	+	22	0
+	+	33	1
+	+	22	0
+	+	25	39
+	+	24	19
+	+	25	45
+	+	33	0
+	+	28	1
+	+	34	0
+	+	35	0
+	+	28	0
+	+	33	0
+	+	31	36
+	+	32	0
+	+	30	43
+	+	30	39
+	+	30	82
+	+	31	69
+	+	30	0
+	+	32	0
+	+	35	62
+	+	32	0
+	+	35	0
+	+	35	64
+	+	3	19
+	+	35	0
+	+	37	32
+	+	30	44
+	+	31	30
+	+	28	66
+	+	30	43
+	+	31	30
+	+	31	0
+	+	25	34
+	+	28	73
+	+	41	27
+	+	42	20
+	+	43	21
+	+	44	21
+	+	41	7
+	+	46	82
+	+	44	50
+	+	45	48
+	+	46	54
+	+	43	51
+	+	44	51
+	+	45	49
+	+	43	52
+	+	49	45
+	+	51	0
+	+	52	50
+	+	53	0
+	+	47	0
+	+	2	10
+	+	2	5
+	+	2	0
+	+	7	2
+	+	1	0
+	+	3	9
+	+	5	0
+	+	1	34
+	+	7	0
+	+	1	0
+	+	5	0
+	+	11	0
+	+	2	0
+	+	7	0
+	+	2	0
+	+	11	89
+	+	11	0
+	+	3	6
+	+	5	10
+	+	3	10
+	+	39	20
+	+	40	0
+	+	1	0
+	+	16	41
+	+	13	119
+	+	20	0
+	+	20	1
+	+	11	0
+	+	20	0
+	+	14	147
+	+	14	0
+	+	11	33
+	+	11	0
+	+	63	56
+	+	65	20
+	+	65	0
+	+	10	21
+	+	9	92
+	+	15	0
+	+	16	1
+	+	19	38
+	+	18	56
+	+	46	50
+	+	20	0
+	a	1	9
+	b	1	9
 
 > ~/pyscripts/viewlog.py
-	*	1736027423	0
+	*	1736065053	0
 	"	1	0
-	^	120	19
+	^	2	0
 	.	120	18
 	+	133	26
 	+	142	30
@@ -18103,6 +18390,209 @@ $
 	+	279	0
 	+	120	18
 	b	105	33
+
+> ~/.vim/vimrc
+	*	1736064999	0
+	"	91	1
+	^	91	2
+	.	91	1
+	+	1	41
+	+	1	44
+	+	1	40
+	+	1	28
+	+	1	0
+	+	1	11
+	+	1	18
+	+	1	43
+	+	1	64
+	+	1	54
+	+	1	0
+	+	1	31
+	+	1	0
+	+	1	6
+	+	1	0
+	+	1	1
+	+	1	0
+	+	1	80
+	+	1	75
+	+	1	0
+	+	1	52
+	+	1	41
+	+	1	0
+	+	1	26
+	+	1	0
+	+	1	22
+	+	1	25
+	+	1	0
+	+	1	57
+	+	1	59
+	+	1	55
+	+	1	0
+	+	1	25
+	+	1	1
+	+	1	0
+	+	1	24
+	+	1	0
+	+	1	12
+	+	1	0
+	+	1	49
+	+	1	0
+	+	1	13
+	+	1	0
+	+	1	16
+	+	1	0
+	+	1	25
+	+	1	3
+	+	1	5
+	+	1	16
+	+	1	0
+	+	1	16
+	+	1	0
+	+	1	5
+	+	1	3
+	+	1	0
+	+	1	4
+	+	1	0
+	+	1	40
+	+	1	36
+	+	1	0
+	+	1	26
+	+	1	9
+	+	1	0
+	+	1	31
+	+	1	4
+	+	1	30
+	+	1	4
+	+	1	0
+	+	1	5
+	+	1	8
+	+	1	29
+	+	1	33
+	+	1	1
+	+	1	21
+	+	1	20
+	+	1	1
+	+	1	0
+	+	121	0
+	+	425	0
+	+	1147	0
+	+	573	5
+	+	91	0
+	+	42	0
+	+	91	25
+	+	90	21
+	+	91	1
+
+> ~/.vim/plugged/copilot.vim/doc/copilot.txt
+	*	1736063488	0
+	"	18	0
+
+> ~/bash/backup.crontab
+	*	1736063471	0
+	"	33	0
+	^	26	4
+	.	26	3
+	+	26	3
+
+> ~/.config/symlinks.txt
+	*	1736063424	0
+	"	4	91
+	^	13	0
+	.	13	0
+	+	7	42
+	+	4	3
+	+	5	3
+	+	6	3
+	+	7	3
+	+	3	7
+	+	4	5
+	+	3	5
+	+	5	5
+	+	6	5
+	+	7	5
+	+	3	53
+	+	11	27
+	+	12	11
+	+	11	14
+	+	13	0
+
+> ~/pyscripts/tests/test_viewlog.py
+	*	1736027718	0
+	"	28	0
+	^	57	39
+	.	57	38
+	+	5	10
+	+	56	0
+	+	7	28
+	+	8	25
+	+	56	15
+	+	57	15
+	+	56	38
+	+	57	38
+
+> ~/projects.txt
+	*	1736027425	0
+	"	5	0
+	^	7	0
+	.	7	0
+	+	10	33
+	+	11	67
+	+	12	51
+	+	13	20
+	+	14	83
+	+	14	0
+	+	13	28
+	+	15	24
+	+	15	0
+	+	15	9
+	+	15	38
+	+	15	65
+	+	15	27
+	+	15	54
+	+	15	80
+	+	15	28
+	+	15	55
+	+	15	21
+	+	15	44
+	+	10	0
+	+	15	0
+	+	15	28
+	+	10	1
+	+	11	0
+	+	15	0
+	+	1	0
+	+	15	0
+	+	2	0
+	+	15	0
+	+	11	0
+	+	2	100
+	+	15	62
+	+	15	336
+	+	15	68
+	+	15	106
+	+	15	150
+	+	15	64
+	+	15	104
+	+	15	146
+	+	15	103
+	+	15	145
+	+	15	185
+	+	15	103
+	+	15	145
+	+	15	0
+	+	14	0
+	+	15	0
+	+	4	0
+	+	3	0
+	+	9	0
+	+	11	0
+	+	5	0
+	+	15	0
+	+	6	0
+	+	4	0
+	+	15	0
+	+	8	0
+	+	7	0
 
 > ~/.config/setup.fish
 	*	1736027396	0
@@ -18778,90 +19268,6 @@ $
 	+	119	40
 	+	126	22
 	+	127	40
-
-> ~/bash/oldfiles.bash
-	*	1735930509	0
-	"	6	2
-	.	5	0
-	+	2	1
-	+	2	12
-	+	2	49
-	+	2	12
-	+	2	0
-	+	5	1
-	+	1	10
-	+	2	62
-	+	2	34
-	+	2	1
-	+	2	16
-	+	2	0
-	+	8	33
-	+	2	68
-	+	5	66
-	+	5	0
-	+	2	13
-	+	5	23
-	+	6	51
-	+	8	28
-	+	16	22
-	+	2	107
-	+	10	0
-	+	7	0
-	+	1	0
-	+	10	0
-	+	2	83
-	+	2	0
-	+	18	0
-	+	17	1
-	+	18	16
-	+	4	0
-	+	2	1
-	+	4	97
-	+	4	1
-	+	2	0
-	+	3	27
-	+	4	1
-	+	5	1
-	+	4	0
-	+	5	0
-
-> ~/bash/pwd-oldfiles.bash
-	*	1735930475	0
-	"	2	0
-	.	2	0
-	+	1	0
-	+	1	10
-	+	1	0
-	+	1	1
-	+	1	0
-	+	1	71
-	+	1	0
-	+	2	53
-	+	1	0
-	+	6	5
-	+	10	7
-	+	11	0
-	+	12	0
-	+	4	0
-	+	5	47
-	+	2	0
-	+	2	119
-	+	2	0
-	+	2	131
-	+	3	0
-	+	2	285
-	+	2	163
-	+	3	0
-	+	2	0
-	+	2	163
-	+	3	80
-	+	3	0
-	+	2	131
-	+	3	80
-	+	3	0
-	+	2	0
-	+	2	104
-	+	2	0
 
 > ~/tooling/python-orms.txt
 	*	1735930039	0
@@ -19989,76 +20395,6 @@ $
 	+	2	0
 	+	4	0
 
-> ~/.vim/templates/template.bash
-	*	1735757204	0
-	"	3	0
-	.	61	0
-	+	1	31
-	+	1	41
-	+	1	0
-	+	1	10
-	+	33	2
-	+	1	0
-	+	1	19
-	+	1	44
-	+	1	13
-	+	1	0
-	+	1	2
-	+	1	46
-	+	1	0
-	+	1	68
-	+	1	80
-	+	1	0
-	+	30	0
-	+	30	2
-	+	29	18
-	+	30	0
-	+	29	10
-	+	29	16
-	+	30	0
-	+	29	0
-	+	32	16
-	+	1	44
-	+	1	0
-	+	34	0
-	+	1	0
-	+	21	0
-	+	23	0
-	+	20	0
-	+	39	1
-	+	40	1
-	+	27	44
-	+	17	12
-	+	23	0
-	+	17	64
-	+	41	5
-	+	43	0
-	+	44	0
-	+	26	0
-	+	3	17
-	+	1	0
-	+	44	0
-	+	3	29
-	+	44	5
-	+	42	1
-	+	44	0
-	+	42	0
-	+	44	29
-	+	44	85
-	+	44	0
-	+	59	4
-	+	52	6
-	+	48	0
-	+	53	0
-	+	54	0
-	+	43	46
-	+	60	0
-	+	3	32
-	+	61	0
-	+	21	1
-	+	23	2
-	+	61	0
-
 > ~/.config/env.bash
 	*	1735756798	0
 	"	3	60
@@ -20312,101 +20648,9 @@ $
 	+	4	0
 	+	2	0
 
-> ~/.vim/vimrc
-	*	1735728021	0
-	"	43	6
-	.	42	0
-	+	1	41
-	+	1	44
-	+	1	40
-	+	1	28
-	+	1	0
-	+	1	11
-	+	1	18
-	+	1	43
-	+	1	64
-	+	1	54
-	+	1	0
-	+	1	31
-	+	1	0
-	+	1	6
-	+	1	0
-	+	1	1
-	+	1	0
-	+	1	80
-	+	1	75
-	+	1	0
-	+	1	52
-	+	1	41
-	+	1	0
-	+	1	26
-	+	1	0
-	+	1	22
-	+	1	25
-	+	1	0
-	+	1	57
-	+	1	59
-	+	1	55
-	+	1	0
-	+	1	25
-	+	1	1
-	+	1	0
-	+	1	24
-	+	1	0
-	+	1	12
-	+	1	0
-	+	1	49
-	+	1	0
-	+	1	13
-	+	1	0
-	+	1	16
-	+	1	0
-	+	1	25
-	+	1	3
-	+	1	5
-	+	1	16
-	+	1	0
-	+	1	16
-	+	1	0
-	+	1	5
-	+	1	3
-	+	1	0
-	+	1	4
-	+	1	0
-	+	1	40
-	+	1	36
-	+	1	0
-	+	1	26
-	+	1	9
-	+	1	0
-	+	1	31
-	+	1	4
-	+	1	30
-	+	1	4
-	+	1	0
-	+	1	5
-	+	1	8
-	+	1	29
-	+	1	33
-	+	1	1
-	+	1	21
-	+	1	20
-	+	1	1
-	+	1	0
-	+	120	0
-	+	424	0
-	+	1146	0
-	+	572	5
-	+	90	0
-	+	42	0
-
 > /usr/share/vim/vim90/doc/builtin.txt
 	*	1735727962	0
 	"	9916	16
-
-> /usr/share/vim/vim90/doc/options.txt
-	*	1735723461	0
-	"	8682	6
 
 > /usr/share/vim/vim90/doc/autocmd.txt
 	*	1735723447	0
@@ -21090,113 +21334,6 @@ $
 	+	1	7
 	+	3	25
 	+	1	0
-
-> ~/.config/tmux/tmux.conf
-	*	1735650897	0
-	"	19	30
-	.	20	0
-	+	3	0
-	+	35	0
-	+	33	0
-	+	22	0
-	+	33	1
-	+	22	0
-	+	25	39
-	+	24	19
-	+	25	45
-	+	33	0
-	+	28	1
-	+	34	0
-	+	35	0
-	+	28	0
-	+	33	0
-	+	31	36
-	+	32	0
-	+	30	43
-	+	30	39
-	+	30	82
-	+	31	69
-	+	30	0
-	+	32	0
-	+	35	62
-	+	32	0
-	+	35	0
-	+	35	64
-	+	3	19
-	+	35	0
-	+	37	32
-	+	30	44
-	+	31	30
-	+	28	66
-	+	30	43
-	+	31	30
-	+	31	0
-	+	25	34
-	+	28	73
-	+	41	27
-	+	42	20
-	+	43	21
-	+	44	21
-	+	41	7
-	+	46	82
-	+	44	50
-	+	45	48
-	+	46	54
-	+	43	51
-	+	44	51
-	+	45	49
-	+	43	52
-	+	49	45
-	+	51	0
-	+	52	50
-	+	53	0
-	+	47	0
-	+	2	10
-	+	2	5
-	+	2	0
-	+	7	2
-	+	1	0
-	+	3	9
-	+	5	0
-	+	1	34
-	+	7	0
-	+	1	0
-	+	5	0
-	+	11	0
-	+	2	0
-	+	7	0
-	+	2	0
-	+	11	89
-	+	11	0
-	+	3	6
-	+	5	10
-	+	3	10
-	+	39	20
-	+	40	0
-	+	1	0
-	+	16	41
-	+	13	119
-	+	20	0
-	+	20	1
-	+	11	0
-	+	20	0
-	+	14	147
-	+	14	0
-	+	11	33
-	+	11	0
-	+	63	56
-	+	65	20
-	+	65	0
-	+	10	21
-	+	9	92
-	+	15	0
-	+	16	1
-	+	19	38
-	+	18	56
-	+	46	50
-	+	20	0
-	a	1	9
-	b	1	9
 
 > ~/remote_utils/commit.tmp
 	*	1735645860	0
@@ -25959,20 +26096,6 @@ $
 	+	37	0
 	+	24	0
 
-> ~/pyscripts/tests/test_viewlog.py
-	*	1731538013	0
-	"	57	38
-	^	57	39
-	.	57	38
-	+	5	10
-	+	56	0
-	+	7	28
-	+	8	25
-	+	56	15
-	+	57	15
-	+	56	38
-	+	57	38
-
 > ~/pyscripts/test_viewlog.py
 	*	1731537406	0
 	"	1	0
@@ -28063,24 +28186,6 @@ $
 	+	5	0
 	+	4	0
 	+	10	37
-
-> ~/.vim/plugin/tmux.vim
-	*	1730623740	0
-	"	1	0
-	.	1	0
-	+	1	24
-	+	1	11
-	+	1	64
-	+	1	0
-	+	7	5
-	+	3	0
-	+	2	19
-	+	8	0
-	+	1	28
-	+	9	8
-	+	1	0
-	+	8	0
-	+	1	0
 
 > ~/hateoas/.direnv/python-3.10.12/lib/python3.10/site-packages/rich/table.py
 	*	1730622676	0

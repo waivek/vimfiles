@@ -87,7 +87,8 @@ Plug 'leafOfTree/vim-vue-plugin'
 Plug 'arcticicestudio/nord-vim'
 Plug 'AndrewRadev/splitjoin.vim'
 
-Plug 'github/copilot.vim'
+" Disabled till Jan 19
+" Plug 'github/copilot.vim'
 call plug#end()
 if has("win32")
     source ~/vimfiles/ide.vim

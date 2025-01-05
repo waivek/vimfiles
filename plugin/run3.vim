@@ -5,12 +5,51 @@ endif
 
 function! s:GetRunners()
     let l:ft_to_runner = {
-                \ "python"     : "vert term python %",
-                \ "javascript" : "vert term node %",
-                \ "go"         : "vert term go run %",
-                \ "sh"         : "vert term bash -c 'source %'",
+                \ "python"     : "python %",
+                \ "javascript" : "node %",
+                \ "go"         : "go run %",
+                \ "sh"         : "bash -c \"source %\"",
                 \ }
     return l:ft_to_runner
+endfunction
+
+function! s:RunCreateCommandCompletion(A, L, P)
+    return filter([ "vertical", "horizontal", "full" ], 'v:val =~ "^' . a:A . '"')
+endfunction
+
+function! s:RunCreateCommand(...)
+    let l:last_line = getline("$")
+    if l:last_line =~ '^# run.vim:'
+        echon "Last line already contains run.vim config: "
+        echohl String | echo l:last_line | echohl None
+        return
+    endif
+
+    let l:ft = &filetype
+    let l:runners = s:GetRunners()
+    let l:runner = get(l:runners, l:ft, "")
+    if l:runner == ""
+        echo "No runner found for filetype: " . l:ft
+        return
+    endif
+
+    if len(a:000) == 0
+        let l:run_command_name = "vertical"
+    else
+        let l:run_command_name = a:1 " a:0 is len(a:000), not the first arg
+    endif
+    if l:run_command_name == "horizontal"
+        let l:run_command = 'term ' . l:runner
+    elseif l:run_command_name == "full"
+        let l:run_command = 'term ++rows=100 ' . l:runner
+    elseif l:run_command_name == "vertical"
+        let l:run_command = 'vert term ' . l:runner
+    else
+        echo printf("Invalid run command name: %s", l:run_command_name)
+        return
+    endif
+    call append("$", printf("# run.vim: %s", l:run_command))
+    normal! G
 endfunction
 
 function! s:ReplacePercentWithFilename(input, filename) 
@@ -68,13 +107,14 @@ function! s:Run3()
         echo "No runner found for filetype: " . l:ft
         return
     endif
-    let l:command = s:ReplacePercentWithFilename(l:runner, expand('%'))
+    let l:command = 'vert term ' . s:ReplacePercentWithFilename(l:runner, expand('%'))
     call execute(l:command)
     setlocal nonumber
 
 endfunction
 
 nnoremap <Plug>Run3 :call <SID>Run3()<CR>
+command! -complete=customlist,s:RunCreateCommandCompletion -nargs=? RunCreateCommand call s:RunCreateCommand(<f-args>)
 
 " if v:vim_did_enter
 "     Capture call s:RunLineToExecuteCommand('# run.vim: term \% python %', "test.py")
