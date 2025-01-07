@@ -58,6 +58,7 @@ Plug 'dag/vim-fish'
 Plug 'preservim/vim-markdown'
 Plug 'godlygeek/tabular'
 Plug 'posva/vim-vue'
+Plug 'peitalin/vim-jsx-typescript'
 Plug 'dense-analysis/ale'
 " Plug 'neoclide/coc.nvim', { 'tag': 'v0.0.81' }
 

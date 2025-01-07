@@ -11,27 +11,121 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0/diff 
+~MSle0~/symlink
 
 # Last Substitute Search Pattern:
-~MSle0~&diff 
+~MSle0&diff 
 
 # Last Substitute String:
-$
+$getbufline(a:buffer_number, 1, '$')
 
 # Command Line History (newest to oldest):
 :qa
-|2,0,1736074427,,"qa"
+|2,0,1736280748,,"qa"
+:q
+|2,0,1736280695,,"q"
+:h builtin
+|2,0,1736278799,,"h builtin"
+:h parse
+|2,0,1736278798,,"h parse"
+:h int
+|2,0,1736278790,,"h int"
+:h /ordinary-atom
+|2,0,1736278789,,"h /ordinary-atom"
+:h intro
+|2,0,1736278786,,"h intro"
+:h a:000
+|2,0,1736278624,,"h a:000"
+:echo bufnr()
+|2,0,1736278447,,"echo bufnr()"
+:echo getbufline(bufnr(), 1, '$')
+|2,0,1736278283,,"echo getbufline(bufnr(), 1, '$')"
+:echo getbufline(bufnr(), 1)
+|2,0,1736278275,,"echo getbufline(bufnr(), 1)"
+:h getbufline(
+|2,0,1736278266,,"h getbufline("
+:h getbufline
+|2,0,1736278255,,"h getbufline"
+:echo getbufline(".")
+|2,0,1736278253,,"echo getbufline(\".\")"
+:echo getbufline()
+|2,0,1736278247,,"echo getbufline()"
+:HotReload
+|2,0,1736278233,,"HotReload"
+:e ~/.vim/plugin/sum_lines.vim
+|2,0,1736278206,,"e ~/.vim/plugin/sum_lines.vim"
+:pwd
+|2,0,1736278128,,"pwd"
+:e ~/expenses.txt
+|2,0,1736278123,,"e ~/expenses.txt"
+:e src/utils/dom.test.ts
+|2,0,1736278033,,"e src/utils/dom.test.ts"
+:e src/main.tsx
+|2,0,1736277996,,"e src/main.tsx"
+:e src/App.tsx
+|2,0,1736277987,,"e src/App.tsx"
+:Rg
+|2,0,1736270618,,"Rg"
+:set isk?
+|2,0,1736265702,,"set isk?"
+:e src/core/sum.ts
+|2,0,1736262233,,"e src/core/sum.ts"
+:e
+|2,0,1736261997,,"e"
+:PlugInstall
+|2,0,1736261990,,"PlugInstall"
+:so %
+|2,0,1736261988,,"so %"
+:edit $MYVIMRC
+|2,0,1736261977,,"edit $MYVIMRC"
+:e index.html
+|2,0,1736258276,,"e index.html"
+:e dist/index.html
+|2,0,1736253463,,"e dist/index.html"
+:e tsconfig.app.json
+|2,0,1736252691,,"e tsconfig.app.json"
+:e vite.config.ts
+|2,0,1736252674,,"e vite.config.ts"
+:T
+|2,0,1736253538,,"T"
+:q!
+|2,0,1736252461,,"q!"
+:e demo.html
+|2,0,1736252440,,"e demo.html"
+:e src/index.css
+|2,0,1736251928,,"e src/index.css"
+:e tailwind.config.js
+|2,0,1736251909,,"e tailwind.config.js"
+:e mai
+|2,0,1736250006,,"e mai"
+:e dist/typography-react-ts.umd.cjs
+|2,0,1736202534,,"e dist/typography-react-ts.umd.cjs"
+:e 
+|2,0,1736202084,,"e "
+:e vite-env.d.ts
+|2,0,1736202080,,"e vite-env.d.ts"
+:evi
+|2,0,1736202078,,"evi"
+:set ft=man
+|2,0,1736249642,,"set ft=man"
+:e!
+|2,0,1736201632,,"e!"
+:.,.+1e 
+|2,0,1736201087,,".,.+1e "
+:e dist/demo.html
+|2,0,1736197646,,"e dist/demo.html"
+:Rename suggestions-1.md
+|2,0,1736188897,,"Rename suggestions-1.md"
+:e suggestions-1.txt
+|2,0,1736188812,,"e suggestions-1.txt"
+:e suggestions-2.txt
+|2,0,1736188669,,"e suggestions-2.txt"
 :bd!
 |2,0,1736074426,,"bd!"
 :v/diff /d
 |2,0,1736074423,,"v/diff /d"
 :set ft=
 |2,0,1736074413,,"set ft="
-:q
-|2,0,1736071623,,"q"
-:e
-|2,0,1736071448,,"e"
 :set ft=bash
 |2,0,1736071445,,"set ft=bash"
 :set ft?
@@ -40,8 +134,6 @@ $
 |2,0,1736071394,,"RunCreateCommand vertical (default)"
 :RunCreateCommand 
 |2,0,1736071093,,"RunCreateCommand "
-:Rg
-|2,0,1736066429,,"Rg"
 :e ~/tooling/my-shell-scripting-language.txt
 |2,0,1736066299,,"e ~/tooling/my-shell-scripting-language.txt"
 :qa!
@@ -56,8 +148,6 @@ $
 |2,0,1736068592,,"diffoff"
 :next
 |2,0,1736068569,,"next"
-:e!
-|2,0,1736068498,,"e!"
 :prev
 |2,0,1736068449,,"prev"
 :set title
@@ -74,16 +164,10 @@ $
 |2,0,1736065500,,"set tit"
 :set title?
 |2,0,1736065493,,"set title?"
-:pwd
-|2,0,1736065053,,"pwd"
-:edit $MYVIMRC
-|2,0,1736064981,,"edit $MYVIMRC"
 :Copilot
 |2,0,1736064963,,"Copilot"
 :Copilot status
 |2,0,1736064960,,"Copilot status"
-:q!
-|2,0,1736028865,,"q!"
 :h copilot
 |2,0,1736063473,,"h copilot"
 :e todo.txt
@@ -150,12 +234,8 @@ $
 |2,0,1735841202,,"OpenDB"
 :ToList
 |2,0,1735841119,,"ToList"
-:T
-|2,0,1735841106,,"T"
 :enew
 |2,0,1735841101,,"enew"
-:e 
-|2,0,1735840457,,"e "
 :g/Not provided/d
 |2,0,1735836299,,"g/Not provided/d"
 :Template
@@ -216,8 +296,6 @@ $
 |2,0,1735728020,,"UndotreeToggle"
 :UndoTree
 |2,0,1735728012,,"UndoTree"
-:PlugInstall
-|2,0,1735728008,,"PlugInstall"
 :UndoTreeShow
 |2,0,1735727986,,"UndoTreeShow"
 :h undotree
@@ -314,8 +392,6 @@ $
 |2,0,1735652361,,"e e"
 : w ~/tmp/tmux-unicode.bash
 |2,0,1735651054,," w ~/tmp/tmux-unicode.bash"
-:set ft=man
-|2,0,1735650968,,"set ft=man"
 :set ft=markdown
 |2,0,1735645843,,"set ft=markdown"
 :set tw=70
@@ -700,8 +776,6 @@ $
 |2,0,1732359318,,"Tab /,/0l1"
 :Tab /,/0c1
 |2,0,1732359312,,"Tab /,/0c1"
-:so %
-|2,0,1732359179,,"so %"
 :'{,'}s/\s*\zs\d\+\ze/\=line('.')-line("'{")
 |2,0,1732359137,,"'{,'}s/\\s*\\zs\\d\\+\\ze/\\=line('.')-line(\"'{\")"
 :'{,'}s/\s*\zs\d\+\ze/\=line('.')-5
@@ -710,8 +784,6 @@ $
 |2,0,1732359076,,"'{,'}s/\\s*\\zs\\d\\+\\ze/\\=line('.')"
 :'{,'}s/\s*\zs\d\+\ze/\='0'
 |2,0,1732359063,,"'{,'}s/\\s*\\zs\\d\\+\\ze/\\='0'"
-:HotReload
-|2,0,1732359007,,"HotReload"
 :e ~/.vim/tmp/renumber-list.vim
 |2,0,1732359003,,"e ~/.vim/tmp/renumber-list.vim"
 :!
@@ -994,8 +1066,6 @@ $
 |2,0,1730139542,,".,.+1!"
 :e pac
 |2,0,1730111144,,"e pac"
-:e src/index.css
-|2,0,1730109530,,"e src/index.css"
 :e tmp_parse.py
 |2,0,1729806043,,"e tmp_parse.py"
 :set ft=log
@@ -2180,8 +2250,6 @@ $
 |2,0,1725439369,,"Capture call PrintPersonalMappings()"
 :echo getbufinfo(3)
 |2,0,1725379231,,"echo getbufinfo(3)"
-:echo bufnr()
-|2,0,1725379228,,"echo bufnr()"
 :echo getbufinfo('$')
 |2,0,1725379216,,"echo getbufinfo('$')"
 :echo getbufinfo('1')
@@ -3182,8 +3250,6 @@ $
 |2,0,1723457688,,"h map-self-destroy"
 :h g:ale_python_pycodestyle_options
 |2,0,1723457685,,"h g:ale_python_pycodestyle_options"
-:h builtin
-|2,0,1723456168,,"h builtin"
 :h >frame
 |2,0,1723456164,,"h >frame"
 :h frame
@@ -4884,8 +4950,6 @@ $
 |2,0,1719399706,,"FIND "
 :term bash
 |2,0,1719399146,,"term bash"
-:e tailwind.config.js
-|2,0,1719397967,,"e tailwind.config.js"
 :Rename python-flask-tailwind.sh
 |2,0,1719397900,,"Rename python-flask-tailwind.sh"
 :MRU 9:ui-components-css/tailwind.config.js
@@ -5564,8 +5628,6 @@ $
 |2,0,1717932513,,"FIND wi"
 :set isk-=-
 |2,0,1717929101,,"set isk-=-"
-:set isk?
-|2,0,1717929090,,"set isk?"
 :FIND *ele
 |2,0,1717929076,,"FIND *ele"
 :MRU ele
@@ -8016,8 +8078,6 @@ $
 |2,0,1711008453,,"e Ind"
 :e src/Index.vue
 |2,0,1711008193,,"e src/Index.vue"
-:e index.html
-|2,0,1711008108,,"e index.html"
 :template
 |2,0,1711008056,,"template"
 :FIND main
@@ -9612,8 +9672,6 @@ $
 |2,0,1693055951,,"e tailwind.config.cjs"
 :e ~/.bun/bin/
 |2,0,1693048834,,"e ~/.bun/bin/"
-:e vite.config.ts
-|2,0,1693047598,,"e vite.config.ts"
 :e pro
 |2,0,1693047555,,"e pro"
 :vim vite.config.ts
@@ -11534,6 +11592,52 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/symlink
+|2,1,1736280688,47,"symlink"
+?/num
+|2,1,1736278816,47,"num"
+?/number
+|2,1,1736278812,47,"number"
+?/numbre
+|2,1,1736278805,47,"numbre"
+?/int
+|2,1,1736278801,47,"int"
+? \<l:lines\>
+|2,1,1736278713,,"\\<l:lines\\>"
+? \<l:bufnr\>
+|2,1,1736278711,,"\\<l:bufnr\\>"
+?/argument
+|2,1,1736278627,47,"argument"
+?/vue
+|2,1,1736261980,47,"vue"
+?/alt
+|2,1,1736261882,47,"alt"
+?/logo
+|2,1,1736261873,47,"logo"
+?/card
+|2,1,1736261855,47,"card"
+?/Wor
+|2,1,1736252478,47,"Wor"
+?/Hello
+|2,1,1736252428,47,"Hello"
+?/prefix
+|2,1,1736249881,47,"prefix"
+?/Error
+|2,1,1736202734,47,"Error"
+?/session
+|2,1,1736249703,47,"session"
+?/move-window
+|2,1,1736249644,47,"move-window"
+?/hello
+|2,1,1736201169,47,"hello"
+? ^\s*$\n\s*$
+|2,1,1736188875,,"^\\s*$\\n\\s*$"
+?/^\d\. 
+|2,1,1736188735,47,"^\\d\\. "
+?/weight
+|2,1,1736188567,47,"weight"
+?/iglob
+|2,1,1736186885,47,"iglob"
 ? diff 
 |2,1,1736074423,,"diff "
 ?/SHELL
@@ -11648,8 +11752,6 @@ $
 |2,1,1735823720,47,"Chr"
 ?/selenium
 |2,1,1735823690,47,"selenium"
-? ^\s*$\n\s*$
-|2,1,1735823452,,"^\\s*$\\n\\s*$"
 ?/\/tmp
 |2,1,1735822045,47,"\\/tmp"
 ?/chromedri
@@ -12016,8 +12118,6 @@ $
 |2,1,1732653835,47,"^@app.route([\"']\\/\\w*com"
 ?/name
 |2,1,1732648068,47,"name"
-?/weight
-|2,1,1732647694,47,"weight"
 ?/underl
 |2,1,1732647619,47,"underl"
 ?/black
@@ -12740,8 +12840,6 @@ $
 |2,1,1729153354,47,"flush"
 ?/samples
 |2,1,1729152528,47,"samples"
-?/Hello
-|2,1,1729151327,47,"Hello"
 ??graph_
 |2,1,1729110288,63,"graph_"
 ?/^@app.route("\/\w*sync
@@ -13020,8 +13118,6 @@ $
 |2,1,1727131989,,"timer\\..*\\\"sec2\\\""
 ?/count
 |2,1,1727050452,47,"count"
-?/iglob
-|2,1,1727042146,47,"iglob"
 ?/--color
 |2,1,1727041997,47,"--color"
 ?/--follow
@@ -13186,8 +13282,6 @@ $
 |2,1,1725752369,47,"right_toke"
 ?/iter
 |2,1,1725688395,47,"iter"
-?/number
-|2,1,1725633298,47,"number"
 ?/getline
 |2,1,1725633158,47,"getline"
 ?/5
@@ -15158,8 +15252,6 @@ $
 |2,1,1716898240,47,"Load"
 ?/\.cookie
 |2,1,1716897901,47,"\\.cookie"
-?/session
-|2,1,1716897853,47,"session"
 ?/\(def\|class\)\s\+\w*State
 |2,1,1716896201,47,"\\(def\\|class\\)\\s\\+\\w*State"
 ? timer\..*\"decode\"
@@ -15440,8 +15532,6 @@ $
 |2,1,1716314173,47,"-C"
 ?/--do-comp
 |2,1,1716314149,47,"--do-comp"
-?/prefix
-|2,1,1716285361,47,"prefix"
 ?/startswith
 |2,1,1716177922,47,"startswith"
 ? timer\..*\"basename\"
@@ -15746,8 +15836,6 @@ $
 |2,1,1713790151,47,"vimspector"
 ?/^\S*\s*\zs
 |2,1,1713790010,47,"^\\S*\\s*\\zs"
-?/alt
-|2,1,1713774327,47,"alt"
 ?/shopt
 |2,1,1713773510,47,"shopt"
 ?/history 
@@ -16102,8 +16190,6 @@ $
 |2,1,1711876837,47,"routes"
 ??pyright
 |2,1,1711875194,63,"pyright"
-?/vue
-|2,1,1711570849,47,"vue"
 ?/\C\<embed\>
 |2,1,1711567624,47,"\\C\\<embed\\>"
 ?/embed
@@ -17296,8 +17382,6 @@ $
 |2,1,1688302254,47,"^\\s*function!\\?\\s\\+\\(s:\\)\\?\\(\\w\\+#\\)\\?\\w*Increment"
 ?/--ignore
 |2,1,1685560969,47,"--ignore"
-?/hello
-|2,1,1685531031,47,"hello"
 ?/z\.1
 |2,1,1685447380,47,"z\\.1"
 ?/_z --add
@@ -17324,6 +17408,8 @@ $
 |2,1,1685152394,47,"handle_error"
 
 # Expression History (newest to oldest):
+=expand("%:d")
+|2,2,1736248902,,"expand(\"%:d\")"
 =expand("#:p")
 |2,2,1735757784,,"expand(\"#:p\")"
 =expand("#")
@@ -17348,12 +17434,12 @@ $
 |2,2,1688309303,,"v:oldfiles"
 
 # Input Line History (newest to oldest):
+@div>
+|2,3,1736262127,,"div>"
 @vivek
 |2,3,1735227181,,"vivek"
 @div class="wide">
 |2,3,1732631639,,"div class=\"wide\">"
-@div>
-|2,3,1732611518,,"div>"
 @div
 |2,3,1732611399,,"div"
 @create_engine
@@ -17588,39 +17674,40 @@ $
 |2,4,1693311567,,"cont"
 
 # Registers:
-"0	CHAR	0
-	mapfile
-|3,0,0,0,1,0,1736074421,"mapfile"
-""1	LINE	0
-	     source ~/vimfiles/ide.vim
-|3,1,1,1,1,0,1736074423,"     source ~/vimfiles/ide.vim"
+"0	LINE	0
+	    let l:
+|3,0,0,1,1,0,1736278819,"    let l:"
+"1	LINE	0
+	    let l:
+|3,0,1,1,1,0,1736278776,"    let l:"
 "2	LINE	0
-	 if has("win32")
-|3,0,2,1,1,0,1736074423," if has(\"win32\")"
+	
+|3,0,2,1,1,0,1736278762,""
 "3	LINE	0
-	 call plug#end()
-|3,0,3,1,1,0,1736074423," call plug#end()"
+	
+|3,0,3,1,1,0,1736278759,""
 "4	LINE	0
-	+" Plug 'github/copilot.vim'
-|3,0,4,1,1,0,1736074423,"+\" Plug 'github/copilot.vim'"
+	
+|3,0,4,1,1,0,1736278738,""
 "5	LINE	0
-	+" Disabled till Jan 19
-|3,0,5,1,1,0,1736074423,"+\" Disabled till Jan 19"
+	function! s:GetBuffer(buffer_number)
+	endfunction
+|3,0,5,1,2,0,1736278737,"function! s:GetBuffer(buffer_number)","endfunction"
 "6	LINE	0
-	-Plug 'github/copilot.vim'
-|3,0,6,1,1,0,1736074423,"-Plug 'github/copilot.vim'"
+	    return getbufline(a:buffer_number, 1, '$')
+|3,0,6,1,1,0,1736278735,"    return getbufline(a:buffer_number, 1, '$')"
 "7	LINE	0
-	 
-|3,0,7,1,1,0,1736074423," "
+	    return getbufline(a:buffer_number, 1, '$')
+|3,0,7,1,1,0,1736278725,"    return getbufline(a:buffer_number, 1, '$')"
 "8	LINE	0
-	 Plug 'AndrewRadev/splitjoin.vim'
-|3,0,8,1,1,0,1736074423," Plug 'AndrewRadev/splitjoin.vim'"
+	    let l:lines = getbufline(a:buffer_number, 1, '$')
+|3,0,8,1,1,0,1736278713,"    let l:lines = getbufline(a:buffer_number, 1, '$')"
 "9	LINE	0
-	 Plug 'arcticicestudio/nord-vim'
-|3,0,9,1,1,0,1736074423," Plug 'arcticicestudio/nord-vim'"
-"a	CHAR	0
-	Tabularize /:/l1c1l1
-|3,0,10,0,1,0,1736071486,"Tabularize /:/l1c1l1"
+	    let l:bufnr = a:buffer_number
+|3,0,9,1,1,0,1736278711,"    let l:bufnr = a:buffer_number"
+""a@	CHAR	0
+	nojkVnl>nO€ýa
+|3,3,10,0,1,0,1736280694,"nojkVnl>nO€ýa"
 "i	CHAR	0
 	ado_up()jk:q!
 |3,0,18,0,1,0,1724200553,"ado_up()jk:q!"
@@ -17689,234 +17776,850 @@ $
 |<"    assert x_min < x_max, f\"Invalid x coordinates: min ({x_min}) >= max ({x_max})\"","    assert y_min < y_max, f\"Invalid y coordinates: min ({y_min}) >= max ({y_max})\"","    ","    # Additional geometric checks","    assert abs(y1 - y2) < (y_max - y_min), \"Top edge is not roughly horizontal\"","    assert abs(y3 - y4) < (y_max - y_min), \"Bottom edge is not roughly horizontal\"","    assert abs(x1 - x4) < (x_max - x_min), \"Left edge is not roughly vertical\"",>83
 |<"    assert abs(x2 - x3) < (x_max - x_min), \"Right edge is not roughly vertical\"","","    pretty_string_flat = {","        \"left\": x_min,","        \"right\": x_max,","        \"top\": y_min,","        \"bottom\": y_max,","        \"top_left\": (x1, y1),","        \"top_right\": (x2, y2),","        \"bottom_right\": (x3, y3),","        \"bottom_left\": (x4, y4),","    }","    ","    print(f\"{box} => {pretty_string_flat}\")",""
 "-	CHAR	0
-	mapfile
-|3,0,36,0,1,0,1736071530,"mapfile"
+	)
+|3,0,36,0,1,0,1736278734,")"
 
 # File marks:
-'0  1  0  ~/bash/pwd-oldfiles.bash
-|4,48,1,0,1736071625,"~/bash/pwd-oldfiles.bash"
-'1  1  0  ~/bash/pwd-oldfiles.bash
-|4,49,1,0,1736071625,"~/bash/pwd-oldfiles.bash"
-'2  2  8  ~/bash/pwd-oldfiles.bash
-|4,50,2,8,1736071536,"~/bash/pwd-oldfiles.bash"
-'3  2  8  ~/bash/pwd-oldfiles.bash
-|4,51,2,8,1736071536,"~/bash/pwd-oldfiles.bash"
-'4  2  8  ~/bash/pwd-oldfiles.bash
-|4,52,2,8,1736071536,"~/bash/pwd-oldfiles.bash"
-'5  2  8  ~/bash/pwd-oldfiles.bash
-|4,53,2,8,1736071536,"~/bash/pwd-oldfiles.bash"
-'6  1  0  ~/bash/pwd-oldfiles.bash
-|4,54,1,0,1736071433,"~/bash/pwd-oldfiles.bash"
-'7  1  0  ~/bash/pwd-oldfiles.bash
-|4,55,1,0,1736071433,"~/bash/pwd-oldfiles.bash"
-'8  39  0  ~/tmp/environ.txt
-|4,56,39,0,1736068646,"~/tmp/environ.txt"
-'9  39  0  ~/tmp/environ.txt
-|4,57,39,0,1736068646,"~/tmp/environ.txt"
+'0  34  190  /tmp/crontab.IwrMzF/crontab
+|4,48,34,190,1736280748,"/tmp/crontab.IwrMzF/crontab"
+'1  34  8  /tmp/crontab.iJJqal/crontab
+|4,49,34,8,1736280696,"/tmp/crontab.iJJqal/crontab"
+'2  34  8  /tmp/crontab.iJJqal/crontab
+|4,50,34,8,1736280696,"/tmp/crontab.iJJqal/crontab"
+'3  20  15  /usr/share/vim/vim90/doc/builtin.txt
+|4,51,20,15,1736278823,"/usr/share/vim/vim90/doc/builtin.txt"
+'4  20  15  /usr/share/vim/vim90/doc/builtin.txt
+|4,52,20,15,1736278823,"/usr/share/vim/vim90/doc/builtin.txt"
+'5  20  15  /usr/share/vim/vim90/doc/builtin.txt
+|4,53,20,15,1736278823,"/usr/share/vim/vim90/doc/builtin.txt"
+'6  20  15  /usr/share/vim/vim90/doc/builtin.txt
+|4,54,20,15,1736278823,"/usr/share/vim/vim90/doc/builtin.txt"
+'7  3  0  ~/typography-react-ts/src/App.tsx
+|4,55,3,0,1736261774,"~/typography-react-ts/src/App.tsx"
+'8  3  0  ~/typography-react-ts/src/App.tsx
+|4,56,3,0,1736261774,"~/typography-react-ts/src/App.tsx"
+'9  3  0  ~/typography-react-ts/src/App.tsx
+|4,57,3,0,1736261774,"~/typography-react-ts/src/App.tsx"
 
 # Jumplist (newest first):
--'  1  0  ~/.vim/diff.txt
-|4,39,1,0,1736074426,"~/.vim/diff.txt"
--'  2  0  ~/.vim/diff.txt
-|4,39,2,0,1736074423,"~/.vim/diff.txt"
--'  1  0  ~/bash/pwd-oldfiles.bash
-|4,39,1,0,1736071625,"~/bash/pwd-oldfiles.bash"
--'  1  0  ~/bash/pwd-oldfiles.bash
-|4,39,1,0,1736071625,"~/bash/pwd-oldfiles.bash"
--'  2  8  ~/bash/pwd-oldfiles.bash
-|4,39,2,8,1736071536,"~/bash/pwd-oldfiles.bash"
--'  2  8  ~/bash/pwd-oldfiles.bash
-|4,39,2,8,1736071536,"~/bash/pwd-oldfiles.bash"
--'  2  8  ~/bash/pwd-oldfiles.bash
-|4,39,2,8,1736071536,"~/bash/pwd-oldfiles.bash"
--'  1  0  ~/bash/pwd-oldfiles.bash
-|4,39,1,0,1736071433,"~/bash/pwd-oldfiles.bash"
--'  4  4  ~/bash/pwd-oldfiles.bash
-|4,39,4,4,1736071429,"~/bash/pwd-oldfiles.bash"
--'  4  4  ~/bash/pwd-oldfiles.bash
-|4,39,4,4,1736071429,"~/bash/pwd-oldfiles.bash"
--'  4  4  ~/bash/pwd-oldfiles.bash
-|4,39,4,4,1736071429,"~/bash/pwd-oldfiles.bash"
--'  15  0  ~/bash/pwd-oldfiles.bash
-|4,39,15,0,1736071414,"~/bash/pwd-oldfiles.bash"
--'  15  0  ~/bash/pwd-oldfiles.bash
-|4,39,15,0,1736071414,"~/bash/pwd-oldfiles.bash"
--'  15  0  ~/bash/pwd-oldfiles.bash
-|4,39,15,0,1736071414,"~/bash/pwd-oldfiles.bash"
--'  14  1  ~/bash/pwd-oldfiles.bash
-|4,39,14,1,1736071413,"~/bash/pwd-oldfiles.bash"
--'  16  21  ~/bash/pwd-oldfiles.bash
-|4,39,16,21,1736071413,"~/bash/pwd-oldfiles.bash"
--'  14  1  ~/bash/pwd-oldfiles.bash
-|4,39,14,1,1736071413,"~/bash/pwd-oldfiles.bash"
--'  16  21  ~/bash/pwd-oldfiles.bash
-|4,39,16,21,1736071413,"~/bash/pwd-oldfiles.bash"
--'  14  1  ~/bash/pwd-oldfiles.bash
-|4,39,14,1,1736071413,"~/bash/pwd-oldfiles.bash"
--'  16  21  ~/bash/pwd-oldfiles.bash
-|4,39,16,21,1736071413,"~/bash/pwd-oldfiles.bash"
--'  3  0  ~/bash/pwd-oldfiles.bash
-|4,39,3,0,1736071176,"~/bash/pwd-oldfiles.bash"
--'  3  0  ~/bash/pwd-oldfiles.bash
-|4,39,3,0,1736071176,"~/bash/pwd-oldfiles.bash"
--'  3  0  ~/bash/pwd-oldfiles.bash
-|4,39,3,0,1736071176,"~/bash/pwd-oldfiles.bash"
--'  1  0  ~/bash/pwd-oldfiles.bash
-|4,39,1,0,1736071134,"~/bash/pwd-oldfiles.bash"
--'  39  0  ~/tmp/environ.txt
-|4,39,39,0,1736068646,"~/tmp/environ.txt"
--'  39  0  ~/tmp/environ.txt
-|4,39,39,0,1736068646,"~/tmp/environ.txt"
--'  39  0  ~/tmp/environ.txt
-|4,39,39,0,1736068646,"~/tmp/environ.txt"
--'  39  0  ~/tmp/environ.txt
-|4,39,39,0,1736068646,"~/tmp/environ.txt"
--'  9  9  ~/tmp/environ.txt
-|4,39,9,9,1736068584,"~/tmp/environ.txt"
--'  9  9  ~/tmp/environ.txt
-|4,39,9,9,1736068584,"~/tmp/environ.txt"
--'  9  9  ~/tmp/environ.txt
-|4,39,9,9,1736068584,"~/tmp/environ.txt"
--'  9  9  ~/tmp/environ.txt
-|4,39,9,9,1736068584,"~/tmp/environ.txt"
--'  1  0  ~/tmp/environ.txt
-|4,39,1,0,1736068583,"~/tmp/environ.txt"
--'  1  0  ~/tmp/environ.txt
-|4,39,1,0,1736068583,"~/tmp/environ.txt"
--'  1  0  ~/tmp/environ.txt
-|4,39,1,0,1736068583,"~/tmp/environ.txt"
--'  1  0  ~/tmp/environ.txt
-|4,39,1,0,1736068583,"~/tmp/environ.txt"
--'  1  0  ~/tmp/env.txt
-|4,39,1,0,1736068573,"~/tmp/env.txt"
--'  1  0  ~/tmp/env.txt
-|4,39,1,0,1736068573,"~/tmp/env.txt"
--'  1  0  ~/tmp/env.txt
-|4,39,1,0,1736068573,"~/tmp/env.txt"
--'  1  0  ~/tmp/env.txt
-|4,39,1,0,1736068573,"~/tmp/env.txt"
--'  42  0  ~/tmp/printenv.txt
-|4,39,42,0,1736068540,"~/tmp/printenv.txt"
--'  42  0  ~/tmp/printenv.txt
-|4,39,42,0,1736068540,"~/tmp/printenv.txt"
--'  42  0  ~/tmp/printenv.txt
-|4,39,42,0,1736068540,"~/tmp/printenv.txt"
--'  42  0  ~/tmp/printenv.txt
-|4,39,42,0,1736068540,"~/tmp/printenv.txt"
--'  42  0  ~/tmp/printenv.txt
-|4,39,42,0,1736068540,"~/tmp/printenv.txt"
--'  1  0  ~/tmp/printenv.txt
-|4,39,1,0,1736068453,"~/tmp/printenv.txt"
--'  1  0  ~/tmp/printenv.txt
-|4,39,1,0,1736068453,"~/tmp/printenv.txt"
--'  1  0  ~/tmp/printenv.txt
-|4,39,1,0,1736068453,"~/tmp/printenv.txt"
--'  1  0  ~/tmp/printenv.txt
-|4,39,1,0,1736068453,"~/tmp/printenv.txt"
--'  1  0  ~/tmp/printenv.txt
-|4,39,1,0,1736068453,"~/tmp/printenv.txt"
--'  1  0  ~/tmp/env.txt
-|4,39,1,0,1736068453,"~/tmp/env.txt"
--'  1  0  ~/tmp/environ.txt
-|4,39,1,0,1736068445,"~/tmp/environ.txt"
--'  8  24  ~/bash/pwd-oldfiles.bash
-|4,39,8,24,1736065720,"~/bash/pwd-oldfiles.bash"
--'  8  24  ~/bash/pwd-oldfiles.bash
-|4,39,8,24,1736065720,"~/bash/pwd-oldfiles.bash"
--'  8  24  ~/bash/pwd-oldfiles.bash
-|4,39,8,24,1736065720,"~/bash/pwd-oldfiles.bash"
--'  8  24  ~/bash/pwd-oldfiles.bash
-|4,39,8,24,1736065720,"~/bash/pwd-oldfiles.bash"
--'  8  24  ~/bash/pwd-oldfiles.bash
-|4,39,8,24,1736065720,"~/bash/pwd-oldfiles.bash"
--'  8  24  ~/bash/pwd-oldfiles.bash
-|4,39,8,24,1736065720,"~/bash/pwd-oldfiles.bash"
--'  1  0  ~/bash/pwd-oldfiles.bash
-|4,39,1,0,1736065716,"~/bash/pwd-oldfiles.bash"
--'  1  0  ~/bash/pwd-oldfiles.bash
-|4,39,1,0,1736065716,"~/bash/pwd-oldfiles.bash"
--'  1  0  ~/bash/pwd-oldfiles.bash
-|4,39,1,0,1736065716,"~/bash/pwd-oldfiles.bash"
--'  1  0  ~/bash/pwd-oldfiles.bash
-|4,39,1,0,1736065708,"~/bash/pwd-oldfiles.bash"
--'  14  4  ~/bash/pwd-oldfiles.bash
-|4,39,14,4,1736065703,"~/bash/pwd-oldfiles.bash"
--'  14  4  ~/bash/pwd-oldfiles.bash
-|4,39,14,4,1736065703,"~/bash/pwd-oldfiles.bash"
--'  14  4  ~/bash/pwd-oldfiles.bash
-|4,39,14,4,1736065703,"~/bash/pwd-oldfiles.bash"
--'  14  4  ~/bash/pwd-oldfiles.bash
-|4,39,14,4,1736065703,"~/bash/pwd-oldfiles.bash"
--'  14  4  ~/bash/pwd-oldfiles.bash
-|4,39,14,4,1736065703,"~/bash/pwd-oldfiles.bash"
--'  14  4  ~/bash/pwd-oldfiles.bash
-|4,39,14,4,1736065703,"~/bash/pwd-oldfiles.bash"
--'  7  4  ~/bash/pwd-oldfiles.bash
-|4,39,7,4,1736065700,"~/bash/pwd-oldfiles.bash"
--'  13  0  ~/bash/pwd-oldfiles.bash
-|4,39,13,0,1736065700,"~/bash/pwd-oldfiles.bash"
--'  7  4  ~/bash/pwd-oldfiles.bash
-|4,39,7,4,1736065700,"~/bash/pwd-oldfiles.bash"
--'  13  0  ~/bash/pwd-oldfiles.bash
-|4,39,13,0,1736065700,"~/bash/pwd-oldfiles.bash"
--'  7  4  ~/bash/pwd-oldfiles.bash
-|4,39,7,4,1736065700,"~/bash/pwd-oldfiles.bash"
--'  13  0  ~/bash/pwd-oldfiles.bash
-|4,39,13,0,1736065700,"~/bash/pwd-oldfiles.bash"
--'  7  4  ~/bash/pwd-oldfiles.bash
-|4,39,7,4,1736065700,"~/bash/pwd-oldfiles.bash"
--'  13  0  ~/bash/pwd-oldfiles.bash
-|4,39,13,0,1736065700,"~/bash/pwd-oldfiles.bash"
--'  7  4  ~/bash/pwd-oldfiles.bash
-|4,39,7,4,1736065700,"~/bash/pwd-oldfiles.bash"
--'  13  0  ~/bash/pwd-oldfiles.bash
-|4,39,13,0,1736065700,"~/bash/pwd-oldfiles.bash"
--'  7  4  ~/bash/pwd-oldfiles.bash
-|4,39,7,4,1736065700,"~/bash/pwd-oldfiles.bash"
--'  13  0  ~/bash/pwd-oldfiles.bash
-|4,39,13,0,1736065700,"~/bash/pwd-oldfiles.bash"
--'  7  4  ~/bash/pwd-oldfiles.bash
-|4,39,7,4,1736065700,"~/bash/pwd-oldfiles.bash"
--'  13  0  ~/bash/pwd-oldfiles.bash
-|4,39,13,0,1736065700,"~/bash/pwd-oldfiles.bash"
--'  7  4  ~/bash/pwd-oldfiles.bash
-|4,39,7,4,1736065700,"~/bash/pwd-oldfiles.bash"
--'  13  0  ~/bash/pwd-oldfiles.bash
-|4,39,13,0,1736065700,"~/bash/pwd-oldfiles.bash"
--'  8  4  ~/bash/pwd-oldfiles.bash
-|4,39,8,4,1736065698,"~/bash/pwd-oldfiles.bash"
--'  8  4  ~/bash/pwd-oldfiles.bash
-|4,39,8,4,1736065698,"~/bash/pwd-oldfiles.bash"
--'  15  4  ~/bash/pwd-oldfiles.bash
-|4,39,15,4,1736065696,"~/bash/pwd-oldfiles.bash"
--'  15  4  ~/bash/pwd-oldfiles.bash
-|4,39,15,4,1736065696,"~/bash/pwd-oldfiles.bash"
--'  15  4  ~/bash/pwd-oldfiles.bash
-|4,39,15,4,1736065696,"~/bash/pwd-oldfiles.bash"
--'  15  4  ~/bash/pwd-oldfiles.bash
-|4,39,15,4,1736065696,"~/bash/pwd-oldfiles.bash"
--'  15  4  ~/bash/pwd-oldfiles.bash
-|4,39,15,4,1736065696,"~/bash/pwd-oldfiles.bash"
--'  15  4  ~/bash/pwd-oldfiles.bash
-|4,39,15,4,1736065696,"~/bash/pwd-oldfiles.bash"
--'  1  0  ~/bash/pwd-oldfiles.bash
-|4,39,1,0,1736065684,"~/bash/pwd-oldfiles.bash"
--'  1  0  ~/bash/pwd-oldfiles.bash
-|4,39,1,0,1736065676,"~/bash/pwd-oldfiles.bash"
--'  14  38  ~/bash/pwd-oldfiles.bash
-|4,39,14,38,1736065672,"~/bash/pwd-oldfiles.bash"
--'  14  38  ~/bash/pwd-oldfiles.bash
-|4,39,14,38,1736065672,"~/bash/pwd-oldfiles.bash"
--'  7  4  ~/bash/pwd-oldfiles.bash
-|4,39,7,4,1736065654,"~/bash/pwd-oldfiles.bash"
--'  7  4  ~/bash/pwd-oldfiles.bash
-|4,39,7,4,1736065654,"~/bash/pwd-oldfiles.bash"
--'  1  0  ~/bash/pwd-oldfiles.bash
-|4,39,1,0,1736065648,"~/bash/pwd-oldfiles.bash"
+-'  34  190  /tmp/crontab.IwrMzF/crontab
+|4,39,34,190,1736280748,"/tmp/crontab.IwrMzF/crontab"
+-'  1  0  /tmp/crontab.IwrMzF/crontab
+|4,39,1,0,1736280738,"/tmp/crontab.IwrMzF/crontab"
+-'  34  8  /tmp/crontab.iJJqal/crontab
+|4,39,34,8,1736280696,"/tmp/crontab.iJJqal/crontab"
+-'  34  8  /tmp/crontab.iJJqal/crontab
+|4,39,34,8,1736280696,"/tmp/crontab.iJJqal/crontab"
+-'  1  0  /tmp/crontab.iJJqal/crontab
+|4,39,1,0,1736280688,"/tmp/crontab.iJJqal/crontab"
+-'  1  0  /tmp/crontab.iJJqal/crontab
+|4,39,1,0,1736280688,"/tmp/crontab.iJJqal/crontab"
+-'  20  15  /usr/share/vim/vim90/doc/builtin.txt
+|4,39,20,15,1736278823,"/usr/share/vim/vim90/doc/builtin.txt"
+-'  20  15  /usr/share/vim/vim90/doc/builtin.txt
+|4,39,20,15,1736278823,"/usr/share/vim/vim90/doc/builtin.txt"
+-'  20  15  /usr/share/vim/vim90/doc/builtin.txt
+|4,39,20,15,1736278823,"/usr/share/vim/vim90/doc/builtin.txt"
+-'  22  41  /usr/share/vim/vim90/doc/builtin.txt
+|4,39,22,41,1736278816,"/usr/share/vim/vim90/doc/builtin.txt"
+-'  22  41  /usr/share/vim/vim90/doc/builtin.txt
+|4,39,22,41,1736278816,"/usr/share/vim/vim90/doc/builtin.txt"
+-'  22  41  /usr/share/vim/vim90/doc/builtin.txt
+|4,39,22,41,1736278816,"/usr/share/vim/vim90/doc/builtin.txt"
+-'  18  0  /usr/share/vim/vim90/doc/builtin.txt
+|4,39,18,0,1736278812,"/usr/share/vim/vim90/doc/builtin.txt"
+-'  18  0  /usr/share/vim/vim90/doc/builtin.txt
+|4,39,18,0,1736278812,"/usr/share/vim/vim90/doc/builtin.txt"
+-'  18  0  /usr/share/vim/vim90/doc/builtin.txt
+|4,39,18,0,1736278812,"/usr/share/vim/vim90/doc/builtin.txt"
+-'  1  0  /usr/share/vim/vim90/doc/builtin.txt
+|4,39,1,0,1736278801,"/usr/share/vim/vim90/doc/builtin.txt"
+-'  1  0  /usr/share/vim/vim90/doc/builtin.txt
+|4,39,1,0,1736278801,"/usr/share/vim/vim90/doc/builtin.txt"
+-'  1  0  /usr/share/vim/vim90/doc/builtin.txt
+|4,39,1,0,1736278801,"/usr/share/vim/vim90/doc/builtin.txt"
+-'  1  0  ~/typography-react-ts/index.html
+|4,39,1,0,1736278799,"~/typography-react-ts/index.html"
+-'  1  0  ~/typography-react-ts/index.html
+|4,39,1,0,1736278799,"~/typography-react-ts/index.html"
+-'  1  0  ~/typography-react-ts/index.html
+|4,39,1,0,1736278799,"~/typography-react-ts/index.html"
+-'  2  4  ~/.vim/plugin/sum_lines.vim
+|4,39,2,4,1736278782,"~/.vim/plugin/sum_lines.vim"
+-'  2  4  ~/.vim/plugin/sum_lines.vim
+|4,39,2,4,1736278782,"~/.vim/plugin/sum_lines.vim"
+-'  2  4  ~/.vim/plugin/sum_lines.vim
+|4,39,2,4,1736278782,"~/.vim/plugin/sum_lines.vim"
+-'  3  0  ~/.vim/plugin/sum_lines.vim
+|4,39,3,0,1736278777,"~/.vim/plugin/sum_lines.vim"
+-'  3  0  ~/.vim/plugin/sum_lines.vim
+|4,39,3,0,1736278777,"~/.vim/plugin/sum_lines.vim"
+-'  3  0  ~/.vim/plugin/sum_lines.vim
+|4,39,3,0,1736278777,"~/.vim/plugin/sum_lines.vim"
+-'  13  18  ~/.vim/plugin/sum_lines.vim
+|4,39,13,18,1736278723,"~/.vim/plugin/sum_lines.vim"
+-'  13  18  ~/.vim/plugin/sum_lines.vim
+|4,39,13,18,1736278723,"~/.vim/plugin/sum_lines.vim"
+-'  13  18  ~/.vim/plugin/sum_lines.vim
+|4,39,13,18,1736278723,"~/.vim/plugin/sum_lines.vim"
+-'  6  4  ~/.vim/plugin/sum_lines.vim
+|4,39,6,4,1736278713,"~/.vim/plugin/sum_lines.vim"
+-'  6  4  ~/.vim/plugin/sum_lines.vim
+|4,39,6,4,1736278713,"~/.vim/plugin/sum_lines.vim"
+-'  6  4  ~/.vim/plugin/sum_lines.vim
+|4,39,6,4,1736278713,"~/.vim/plugin/sum_lines.vim"
+-'  16  0  ~/.vim/plugin/sum_lines.vim
+|4,39,16,0,1736278700,"~/.vim/plugin/sum_lines.vim"
+-'  16  0  ~/.vim/plugin/sum_lines.vim
+|4,39,16,0,1736278700,"~/.vim/plugin/sum_lines.vim"
+-'  16  0  ~/.vim/plugin/sum_lines.vim
+|4,39,16,0,1736278700,"~/.vim/plugin/sum_lines.vim"
+-'  14  23  ~/.vim/plugin/sum_lines.vim
+|4,39,14,23,1736278689,"~/.vim/plugin/sum_lines.vim"
+-'  14  23  ~/.vim/plugin/sum_lines.vim
+|4,39,14,23,1736278689,"~/.vim/plugin/sum_lines.vim"
+-'  14  23  ~/.vim/plugin/sum_lines.vim
+|4,39,14,23,1736278689,"~/.vim/plugin/sum_lines.vim"
+-'  17  14  ~/.vim/plugin/sum_lines.vim
+|4,39,17,14,1736278520,"~/.vim/plugin/sum_lines.vim"
+-'  17  14  ~/.vim/plugin/sum_lines.vim
+|4,39,17,14,1736278520,"~/.vim/plugin/sum_lines.vim"
+-'  17  14  ~/.vim/plugin/sum_lines.vim
+|4,39,17,14,1736278520,"~/.vim/plugin/sum_lines.vim"
+-'  3  0  ~/expenses.txt
+|4,39,3,0,1736278206,"~/expenses.txt"
+-'  3  0  ~/expenses.txt
+|4,39,3,0,1736278206,"~/expenses.txt"
+-'  3  0  ~/expenses.txt
+|4,39,3,0,1736278206,"~/expenses.txt"
+-'  1  0  ~/typography-react-ts/src/utils/dom.test.ts
+|4,39,1,0,1736278123,"~/typography-react-ts/src/utils/dom.test.ts"
+-'  1  0  ~/typography-react-ts/src/utils/dom.test.ts
+|4,39,1,0,1736278123,"~/typography-react-ts/src/utils/dom.test.ts"
+-'  1  0  ~/typography-react-ts/src/utils/dom.test.ts
+|4,39,1,0,1736278123,"~/typography-react-ts/src/utils/dom.test.ts"
+-'  20  0  ~/typography-react-ts/src/utils/dom.ts
+|4,39,20,0,1736278060,"~/typography-react-ts/src/utils/dom.ts"
+-'  20  0  ~/typography-react-ts/src/utils/dom.ts
+|4,39,20,0,1736278060,"~/typography-react-ts/src/utils/dom.ts"
+-'  20  0  ~/typography-react-ts/src/utils/dom.ts
+|4,39,20,0,1736278060,"~/typography-react-ts/src/utils/dom.ts"
+-'  5  13  ~/typography-react-ts/src/utils/dom.ts
+|4,39,5,13,1736278033,"~/typography-react-ts/src/utils/dom.ts"
+-'  5  13  ~/typography-react-ts/src/utils/dom.ts
+|4,39,5,13,1736278033,"~/typography-react-ts/src/utils/dom.ts"
+-'  5  13  ~/typography-react-ts/src/utils/dom.ts
+|4,39,5,13,1736278033,"~/typography-react-ts/src/utils/dom.ts"
+-'  17  24  ~/typography-react-ts/src/main.tsx
+|4,39,17,24,1736278023,"~/typography-react-ts/src/main.tsx"
+-'  17  24  ~/typography-react-ts/src/main.tsx
+|4,39,17,24,1736278023,"~/typography-react-ts/src/main.tsx"
+-'  17  24  ~/typography-react-ts/src/main.tsx
+|4,39,17,24,1736278023,"~/typography-react-ts/src/main.tsx"
+-'  33  16  ~/typography-react-ts/src/App.tsx
+|4,39,33,16,1736277996,"~/typography-react-ts/src/App.tsx"
+-'  33  16  ~/typography-react-ts/src/App.tsx
+|4,39,33,16,1736277996,"~/typography-react-ts/src/App.tsx"
+-'  33  16  ~/typography-react-ts/src/App.tsx
+|4,39,33,16,1736277996,"~/typography-react-ts/src/App.tsx"
+-'  7  46  ~/typography-react-ts/docs/project-requirements-document.prd
+|4,39,7,46,1736277987,"~/typography-react-ts/docs/project-requirements-document.prd"
+-'  7  46  ~/typography-react-ts/docs/project-requirements-document.prd
+|4,39,7,46,1736277987,"~/typography-react-ts/docs/project-requirements-document.prd"
+-'  7  46  ~/typography-react-ts/docs/project-requirements-document.prd
+|4,39,7,46,1736277987,"~/typography-react-ts/docs/project-requirements-document.prd"
+-'  25  107  ~/typography-react-ts/docs/project-requirements-document.prd
+|4,39,25,107,1736270654,"~/typography-react-ts/docs/project-requirements-document.prd"
+-'  25  107  ~/typography-react-ts/docs/project-requirements-document.prd
+|4,39,25,107,1736270654,"~/typography-react-ts/docs/project-requirements-document.prd"
+-'  25  107  ~/typography-react-ts/docs/project-requirements-document.prd
+|4,39,25,107,1736270654,"~/typography-react-ts/docs/project-requirements-document.prd"
+-'  2  0  ~/typography-react-ts/src/utils/dom.test.ts
+|4,39,2,0,1736270633,"~/typography-react-ts/src/utils/dom.test.ts"
+-'  2  0  ~/typography-react-ts/src/utils/dom.test.ts
+|4,39,2,0,1736270633,"~/typography-react-ts/src/utils/dom.test.ts"
+-'  2  0  ~/typography-react-ts/src/utils/dom.test.ts
+|4,39,2,0,1736270633,"~/typography-react-ts/src/utils/dom.test.ts"
+-'  8  0  ~/typography-react-ts/docs/project-requirements-document.prd
+|4,39,8,0,1736270599,"~/typography-react-ts/docs/project-requirements-document.prd"
+-'  8  0  ~/typography-react-ts/docs/project-requirements-document.prd
+|4,39,8,0,1736270599,"~/typography-react-ts/docs/project-requirements-document.prd"
+-'  8  0  ~/typography-react-ts/docs/project-requirements-document.prd
+|4,39,8,0,1736270599,"~/typography-react-ts/docs/project-requirements-document.prd"
+-'  28  116  ~/typography-react-ts/src/App.tsx
+|4,39,28,116,1736270595,"~/typography-react-ts/src/App.tsx"
+-'  28  116  ~/typography-react-ts/src/App.tsx
+|4,39,28,116,1736270595,"~/typography-react-ts/src/App.tsx"
+-'  28  116  ~/typography-react-ts/src/App.tsx
+|4,39,28,116,1736270595,"~/typography-react-ts/src/App.tsx"
+-'  1  0  ~/typography-react-ts/src/App.css
+|4,39,1,0,1736265923,"~/typography-react-ts/src/App.css"
+-'  1  0  ~/typography-react-ts/src/App.css
+|4,39,1,0,1736265923,"~/typography-react-ts/src/App.css"
+-'  1  0  ~/typography-react-ts/src/App.css
+|4,39,1,0,1736265923,"~/typography-react-ts/src/App.css"
+-'  4  14  ~/typography-react-ts/src/App.tsx
+|4,39,4,14,1736265919,"~/typography-react-ts/src/App.tsx"
+-'  4  14  ~/typography-react-ts/src/App.tsx
+|4,39,4,14,1736265919,"~/typography-react-ts/src/App.tsx"
+-'  4  14  ~/typography-react-ts/src/App.tsx
+|4,39,4,14,1736265919,"~/typography-react-ts/src/App.tsx"
+-'  23  63  ~/typography-react-ts/src/App.tsx
+|4,39,23,63,1736265701,"~/typography-react-ts/src/App.tsx"
+-'  22  63  ~/typography-react-ts/src/App.tsx
+|4,39,22,63,1736265701,"~/typography-react-ts/src/App.tsx"
+-'  21  23  ~/typography-react-ts/src/App.tsx
+|4,39,21,23,1736265701,"~/typography-react-ts/src/App.tsx"
+-'  20  0  ~/typography-react-ts/src/App.tsx
+|4,39,20,0,1736265701,"~/typography-react-ts/src/App.tsx"
+-'  19  61  ~/typography-react-ts/src/App.tsx
+|4,39,19,61,1736265701,"~/typography-react-ts/src/App.tsx"
+-'  18  62  ~/typography-react-ts/src/App.tsx
+|4,39,18,62,1736265701,"~/typography-react-ts/src/App.tsx"
+-'  17  58  ~/typography-react-ts/src/App.tsx
+|4,39,17,58,1736265701,"~/typography-react-ts/src/App.tsx"
+-'  23  63  ~/typography-react-ts/src/App.tsx
+|4,39,23,63,1736265701,"~/typography-react-ts/src/App.tsx"
+-'  22  63  ~/typography-react-ts/src/App.tsx
+|4,39,22,63,1736265701,"~/typography-react-ts/src/App.tsx"
+-'  21  23  ~/typography-react-ts/src/App.tsx
+|4,39,21,23,1736265701,"~/typography-react-ts/src/App.tsx"
+-'  20  0  ~/typography-react-ts/src/App.tsx
+|4,39,20,0,1736265701,"~/typography-react-ts/src/App.tsx"
+-'  19  61  ~/typography-react-ts/src/App.tsx
+|4,39,19,61,1736265701,"~/typography-react-ts/src/App.tsx"
+-'  18  62  ~/typography-react-ts/src/App.tsx
+|4,39,18,62,1736265701,"~/typography-react-ts/src/App.tsx"
+-'  17  58  ~/typography-react-ts/src/App.tsx
+|4,39,17,58,1736265701,"~/typography-react-ts/src/App.tsx"
+-'  23  63  ~/typography-react-ts/src/App.tsx
+|4,39,23,63,1736265701,"~/typography-react-ts/src/App.tsx"
+-'  22  63  ~/typography-react-ts/src/App.tsx
+|4,39,22,63,1736265701,"~/typography-react-ts/src/App.tsx"
+-'  21  23  ~/typography-react-ts/src/App.tsx
+|4,39,21,23,1736265701,"~/typography-react-ts/src/App.tsx"
+-'  20  0  ~/typography-react-ts/src/App.tsx
+|4,39,20,0,1736265701,"~/typography-react-ts/src/App.tsx"
+-'  19  61  ~/typography-react-ts/src/App.tsx
+|4,39,19,61,1736265701,"~/typography-react-ts/src/App.tsx"
 
 # Buffer list:
+%/tmp/crontab.IwrMzF/crontab	34	190
 
 # History of marks within files (newest to oldest):
+
+> /tmp/crontab.IwrMzF/crontab
+	*	1736280747	0
+	"	34	190
+	^	34	151
+	.	34	150
+	+	34	150
+
+> /tmp/crontab.iJJqal/crontab
+	*	1736280694	0
+	"	34	8
+
+> /usr/share/vim/vim90/doc/builtin.txt
+	*	1736278821	0
+	"	20	15
+
+> ~/.vim/plugin/sum_lines.vim
+	*	1736278798	0
+	"	1	0
+	^	3	0
+	.	3	0
+	+	6	23
+	+	6	10
+	+	6	9
+	+	6	26
+	+	6	0
+	+	6	24
+	+	6	11
+	+	6	17
+	+	6	20
+	+	6	0
+	+	6	35
+	+	6	0
+	+	6	22
+	+	17	17
+	+	6	0
+	+	6	11
+	+	6	0
+	+	6	11
+	+	6	0
+	+	17	18
+	+	4	10
+	+	3	0
+	+	6	0
+	+	6	17
+	+	6	0
+	+	15	10
+	+	13	35
+	+	6	23
+	+	14	23
+	+	17	14
+	+	6	0
+	+	6	35
+	+	6	34
+	+	6	0
+	+	7	0
+	+	6	0
+	+	6	32
+	+	6	0
+	+	13	36
+	+	17	0
+	+	6	4
+	+	6	0
+	+	13	0
+	+	6	0
+	+	3	0
+
+> /usr/share/vim/vim90/doc/intro.txt
+	*	1736278790	0
+	"	19	21
+
+> /usr/share/vim/vim90/doc/userfunc.txt
+	*	1736278631	0
+	"	199	1
+
+> ~/expenses.txt
+	*	1736278447	0
+	"	2	0
+	.	3	0
+	+	2	6
+	+	3	0
+
+> ~/typography-react-ts/src/utils/dom.test.ts
+	*	1736278064	0
+	"	1	0
+
+> ~/typography-react-ts/src/utils/dom.ts
+	*	1736278054	0
+	"	20	0
+
+> ~/typography-react-ts/src/main.tsx
+	*	1736278023	0
+	"	17	24
+	.	4	0
+	+	5	0
+	+	3	0
+	+	5	0
+	+	4	0
+
+> ~/typography-react-ts/src/App.tsx
+	*	1736277990	0
+	"	33	16
+	^	28	117
+	.	28	118
+	+	9	29
+	+	9	0
+	+	9	3
+	+	7	0
+	+	1	0
+	+	6	0
+	+	9	0
+	+	9	26
+	+	8	0
+	+	9	0
+	+	1	17
+	+	4	31
+	+	36	13
+	+	36	26
+	+	3	0
+	+	36	22
+	+	8	0
+	+	36	13
+	+	36	11
+	+	36	72
+	+	36	33
+	+	10	0
+	+	36	0
+	+	36	59
+	+	36	0
+	+	10	0
+	+	36	0
+	+	36	50
+	+	36	0
+	+	20	0
+	+	11	48
+	+	17	50
+	+	16	88
+	+	12	88
+	+	26	88
+	+	17	31
+	+	27	54
+	+	13	45
+	+	4	33
+	+	14	0
+	+	13	57
+	+	28	118
+	+	4	0
+	+	28	118
+
+> ~/typography-react-ts/docs/project-requirements-document.prd
+	*	1736271358	0
+	"	7	46
+	^	25	77
+	.	25	104
+	+	7	53
+	+	25	104
+
+> ~/typography-react-ts/src/App.css
+	*	1736265922	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/.vim/vimrc
+	*	1736261994	0
+	"	61	33
+	^	61	34
+	.	61	33
+	+	1	41
+	+	1	44
+	+	1	40
+	+	1	28
+	+	1	0
+	+	1	11
+	+	1	18
+	+	1	43
+	+	1	64
+	+	1	54
+	+	1	0
+	+	1	31
+	+	1	0
+	+	1	6
+	+	1	0
+	+	1	1
+	+	1	0
+	+	1	80
+	+	1	75
+	+	1	0
+	+	1	52
+	+	1	41
+	+	1	0
+	+	1	26
+	+	1	0
+	+	1	22
+	+	1	25
+	+	1	0
+	+	1	57
+	+	1	59
+	+	1	55
+	+	1	0
+	+	1	25
+	+	1	1
+	+	1	0
+	+	1	24
+	+	1	0
+	+	1	12
+	+	1	0
+	+	1	49
+	+	1	0
+	+	1	13
+	+	1	0
+	+	1	16
+	+	1	0
+	+	1	25
+	+	1	3
+	+	1	5
+	+	1	16
+	+	1	0
+	+	1	16
+	+	1	0
+	+	1	5
+	+	1	3
+	+	1	0
+	+	1	4
+	+	1	0
+	+	1	40
+	+	1	36
+	+	1	0
+	+	1	26
+	+	1	9
+	+	1	0
+	+	1	31
+	+	1	4
+	+	1	30
+	+	1	4
+	+	1	0
+	+	1	5
+	+	1	8
+	+	1	29
+	+	1	33
+	+	1	1
+	+	1	21
+	+	1	20
+	+	1	1
+	+	1	0
+	+	122	0
+	+	426	0
+	+	1148	0
+	+	574	5
+	+	92	0
+	+	42	0
+	+	92	25
+	+	91	21
+	+	92	1
+	+	61	33
+
+> ~/typography-react-ts/src/styles/main.css
+	*	1736258306	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/typography-react-ts/index.html
+	*	1736258286	0
+	"	1	0
+	.	10	38
+	+	15	0
+	+	11	38
+	+	12	0
+	+	10	38
+
+> ~/typography-react-ts/.gitignore
+	*	1736253542	0
+	"	1	0
+
+> ~/typography-react-ts/dist/index.html
+	*	1736253467	0
+	"	1	0
+
+> ~/typography-react-ts/tailwind.config.js
+	*	1736252845	0
+	"	5	12
+	^	3	34
+	.	3	33
+	+	3	33
+
+> ~/typography-react-ts/vite.config.ts
+	*	1736252701	0
+	"	1	0
+	.	14	0
+	+	9	0
+	+	9	38
+	+	9	8
+	+	9	0
+	+	9	10
+	+	9	0
+	+	3	0
+	+	9	0
+	+	8	0
+	+	8	12
+	+	8	0
+	+	8	30
+	+	8	0
+	+	8	20
+	+	8	0
+	+	13	46
+	+	14	0
+
+> ~/typography-react-ts/tsconfig.app.json
+	*	1736252695	0
+	"	1	0
+
+> ~/typography-react-ts/src/index.css
+	*	1736252522	0
+	"	1	0
+	.	1	0
+	+	1	15
+	+	1	19
+	+	1	0
+
+> ~/typography-react-ts/src/tests/core/sum.test.ts
+	*	1736252500	0
+	"	1	0
+	^	11	6
+	.	11	5
+	+	1	36
+	+	2	33
+	+	15	0
+	+	14	0
+	+	13	0
+	+	12	2
+	+	2	20
+	+	5	42
+	+	6	25
+	+	2	28
+	+	7	5
+	+	11	5
+
+> ~/typography-react-ts/demo.html
+	*	1736252460	0
+	"	1	0
+	.	1	0
+	+	1	6
+	+	1	22
+	+	1	0
+	+	1	32
+	+	1	0
+	+	1	65
+	+	1	4
+	+	1	49
+	+	1	0
+
+> ~/.config/tmux/tmux.conf
+	*	1736249927	0
+	"	9	2
+	.	20	0
+	+	3	0
+	+	35	0
+	+	33	0
+	+	22	0
+	+	33	1
+	+	22	0
+	+	25	39
+	+	24	19
+	+	25	45
+	+	33	0
+	+	28	1
+	+	34	0
+	+	35	0
+	+	28	0
+	+	33	0
+	+	31	36
+	+	32	0
+	+	30	43
+	+	30	39
+	+	30	82
+	+	31	69
+	+	30	0
+	+	32	0
+	+	35	62
+	+	32	0
+	+	35	0
+	+	35	64
+	+	3	19
+	+	35	0
+	+	37	32
+	+	30	44
+	+	31	30
+	+	28	66
+	+	30	43
+	+	31	30
+	+	31	0
+	+	25	34
+	+	28	73
+	+	41	27
+	+	42	20
+	+	43	21
+	+	44	21
+	+	41	7
+	+	46	82
+	+	44	50
+	+	45	48
+	+	46	54
+	+	43	51
+	+	44	51
+	+	45	49
+	+	43	52
+	+	49	45
+	+	51	0
+	+	52	50
+	+	53	0
+	+	47	0
+	+	2	10
+	+	2	5
+	+	2	0
+	+	7	2
+	+	1	0
+	+	3	9
+	+	5	0
+	+	1	34
+	+	7	0
+	+	1	0
+	+	5	0
+	+	11	0
+	+	2	0
+	+	7	0
+	+	2	0
+	+	11	89
+	+	11	0
+	+	3	6
+	+	5	10
+	+	3	10
+	+	39	20
+	+	40	0
+	+	1	0
+	+	16	41
+	+	13	119
+	+	20	0
+	+	20	1
+	+	11	0
+	+	20	0
+	+	14	147
+	+	14	0
+	+	11	33
+	+	11	0
+	+	63	56
+	+	65	20
+	+	65	0
+	+	10	21
+	+	9	92
+	+	15	0
+	+	16	1
+	+	19	38
+	+	18	56
+	+	46	50
+	+	20	0
+	a	1	9
+	b	1	9
+
+> ~/typography-react-ts/src/core/sum.ts
+	*	1736249480	0
+	"	2	0
+	^	2	41
+	.	5	0
+	+	5	0
+	+	2	20
+	+	4	0
+	+	2	12
+	+	5	0
+	+	2	40
+	+	5	0
+
+> ~/typography-react-ts/dist/assets/index-Dj94ZxMo.js
+	*	1736202769	0
+	"	1	0
+
+> ~/typography-react-ts/dist/typography-react-ts.umd.cjs
+	*	1736202542	0
+	"	1	0
+
+> ~/typography-react-ts/src/vite-env.d.ts
+	*	1736202133	0
+	"	1	0
+
+> ~/typography-react-ts/dist/typography-tool.umd.js
+	*	1736201169	0
+	"	1	0
+
+> ~/typography-react-ts/dist/demo.html
+	*	1736197657	0
+	"	9	27
+	^	9	28
+	.	9	27
+	+	9	27
+
+> ~/typography-react-ts/suggestions-1.md
+	*	1736194261	0
+	"	7	0
+	.	35	0
+	+	34	0
+	+	35	17
+	+	45	10
+	+	47	0
+	+	46	0
+	+	35	0
+
+> ~/typography-react-ts/suggestions-1.txt
+	*	1736188893	0
+	"	5	0
+	^	53	3
+	.	53	2
+	+	1	76
+	+	60	85
+	+	1	6
+	+	2	0
+	+	10	0
+	+	9	0
+	+	17	0
+	+	27	0
+	+	34	0
+	+	48	0
+	+	55	0
+	+	9	0
+	+	8	2
+	+	15	0
+	+	25	2
+	+	32	2
+	+	46	2
+	+	53	2
+
+> ~/typography-react-ts/suggestions-2.txt
+	*	1736188855	0
+	"	2	0
+	^	1	28
+	.	1	27
+	+	55	32
+	+	6	2
+	+	20	2
+	+	28	2
+	+	35	2
+	+	42	2
+	+	50	2
+	+	6	0
+	+	8	0
+	+	13	0
+	+	15	0
+	+	20	0
+	+	6	0
+	+	7	0
+	+	12	0
+	+	19	0
+	+	27	0
+	+	34	0
+	+	41	0
+	+	49	0
+	+	51	0
+	+	3	0
+	+	5	0
+	+	2	55
+	+	1	27
+
+> ~/typography-react-ts/project-requirements-document.prd
+	*	1736188808	0
+	"	20	4
+	^	20	212
+	.	20	211
+	+	5	69
+	+	7	45
+	+	19	56
+	+	18	45
+	+	15	8
+	+	18	0
+	+	19	0
+	+	18	108
+	+	19	103
+	+	20	25
+	+	18	25
+	+	19	22
+	+	20	171
+	+	21	89
+	+	20	171
+	+	16	0
+	+	2	0
+	+	23	0
+	+	9	0
+	+	14	0
+	+	8	0
+	+	9	0
+	+	12	100
+	+	14	0
+	+	13	71
+	+	18	0
+	+	17	159
+	+	1	58
+	+	20	211
+
+> ~/prompts/241204.react_button_designer.txt
+	*	1736187986	0
+	"	29	0
+
+> ~/tooling/docs/rg.man
+	*	1736186889	0
+	"	448	9
+
+> ~/tooling/app_ideas/typography.txt
+	*	1736186849	0
+	"	1	0
+	^	5	0
+	.	5	0
+	+	1	54
+	+	4	68
+	+	3	31
+	+	5	0
 
 > ~/.vim/diff.txt
 	*	1736074425	0
@@ -18179,113 +18882,6 @@ $
 	*	1736065513	0
 	"	8414	6
 
-> ~/.config/tmux/tmux.conf
-	*	1736065355	0
-	"	57	9
-	.	20	0
-	+	3	0
-	+	35	0
-	+	33	0
-	+	22	0
-	+	33	1
-	+	22	0
-	+	25	39
-	+	24	19
-	+	25	45
-	+	33	0
-	+	28	1
-	+	34	0
-	+	35	0
-	+	28	0
-	+	33	0
-	+	31	36
-	+	32	0
-	+	30	43
-	+	30	39
-	+	30	82
-	+	31	69
-	+	30	0
-	+	32	0
-	+	35	62
-	+	32	0
-	+	35	0
-	+	35	64
-	+	3	19
-	+	35	0
-	+	37	32
-	+	30	44
-	+	31	30
-	+	28	66
-	+	30	43
-	+	31	30
-	+	31	0
-	+	25	34
-	+	28	73
-	+	41	27
-	+	42	20
-	+	43	21
-	+	44	21
-	+	41	7
-	+	46	82
-	+	44	50
-	+	45	48
-	+	46	54
-	+	43	51
-	+	44	51
-	+	45	49
-	+	43	52
-	+	49	45
-	+	51	0
-	+	52	50
-	+	53	0
-	+	47	0
-	+	2	10
-	+	2	5
-	+	2	0
-	+	7	2
-	+	1	0
-	+	3	9
-	+	5	0
-	+	1	34
-	+	7	0
-	+	1	0
-	+	5	0
-	+	11	0
-	+	2	0
-	+	7	0
-	+	2	0
-	+	11	89
-	+	11	0
-	+	3	6
-	+	5	10
-	+	3	10
-	+	39	20
-	+	40	0
-	+	1	0
-	+	16	41
-	+	13	119
-	+	20	0
-	+	20	1
-	+	11	0
-	+	20	0
-	+	14	147
-	+	14	0
-	+	11	33
-	+	11	0
-	+	63	56
-	+	65	20
-	+	65	0
-	+	10	21
-	+	9	92
-	+	15	0
-	+	16	1
-	+	19	38
-	+	18	56
-	+	46	50
-	+	20	0
-	a	1	9
-	b	1	9
-
 > ~/pyscripts/viewlog.py
 	*	1736065053	0
 	"	1	0
@@ -18390,98 +18986,6 @@ $
 	+	279	0
 	+	120	18
 	b	105	33
-
-> ~/.vim/vimrc
-	*	1736064999	0
-	"	91	1
-	^	91	2
-	.	91	1
-	+	1	41
-	+	1	44
-	+	1	40
-	+	1	28
-	+	1	0
-	+	1	11
-	+	1	18
-	+	1	43
-	+	1	64
-	+	1	54
-	+	1	0
-	+	1	31
-	+	1	0
-	+	1	6
-	+	1	0
-	+	1	1
-	+	1	0
-	+	1	80
-	+	1	75
-	+	1	0
-	+	1	52
-	+	1	41
-	+	1	0
-	+	1	26
-	+	1	0
-	+	1	22
-	+	1	25
-	+	1	0
-	+	1	57
-	+	1	59
-	+	1	55
-	+	1	0
-	+	1	25
-	+	1	1
-	+	1	0
-	+	1	24
-	+	1	0
-	+	1	12
-	+	1	0
-	+	1	49
-	+	1	0
-	+	1	13
-	+	1	0
-	+	1	16
-	+	1	0
-	+	1	25
-	+	1	3
-	+	1	5
-	+	1	16
-	+	1	0
-	+	1	16
-	+	1	0
-	+	1	5
-	+	1	3
-	+	1	0
-	+	1	4
-	+	1	0
-	+	1	40
-	+	1	36
-	+	1	0
-	+	1	26
-	+	1	9
-	+	1	0
-	+	1	31
-	+	1	4
-	+	1	30
-	+	1	4
-	+	1	0
-	+	1	5
-	+	1	8
-	+	1	29
-	+	1	33
-	+	1	1
-	+	1	21
-	+	1	20
-	+	1	1
-	+	1	0
-	+	121	0
-	+	425	0
-	+	1147	0
-	+	573	5
-	+	91	0
-	+	42	0
-	+	91	25
-	+	90	21
-	+	91	1
 
 > ~/.vim/plugged/copilot.vim/doc/copilot.txt
 	*	1736063488	0
@@ -19273,16 +19777,6 @@ $
 	*	1735930039	0
 	"	1	0
 
-> ~/tooling/app_ideas/typography.txt
-	*	1735921053	0
-	"	5	0
-	^	5	0
-	.	5	0
-	+	1	54
-	+	4	68
-	+	3	31
-	+	5	0
-
 > ~/tooling/app_ideas/design-inspo-tracker.txt
 	*	1735919541	0
 	"	1	0
@@ -19810,10 +20304,6 @@ $
 > ~/.config/shell_data/history.db
 	*	1735841151	0
 	"	1	0
-
-> ~/tooling/docs/rg.man
-	*	1735840934	0
-	"	1276	14
 
 > ~/tooling/docs/fd.man
 	*	1735840879	0
@@ -20647,10 +21137,6 @@ $
 	.	2	0
 	+	4	0
 	+	2	0
-
-> /usr/share/vim/vim90/doc/builtin.txt
-	*	1735727962	0
-	"	9916	16
 
 > /usr/share/vim/vim90/doc/autocmd.txt
 	*	1735723447	0
@@ -40340,10 +40826,6 @@ $
 	*	1723462318	0
 	"	1541	7
 
-> /usr/share/vim/vim90/doc/userfunc.txt
-	*	1723462317	0
-	"	284	5
-
 > /usr/share/vim/vim90/doc/index.txt
 	*	1723462315	0
 	"	1308	2
@@ -51744,10 +52226,6 @@ $
 > ~/shopt.ok
 	*	1713776860	0
 	"	1	0
-
-> /usr/share/vim/vim90/doc/intro.txt
-	*	1713774365	0
-	"	512	4
 
 > /etc/bash_completion
 	*	1713773311	0
