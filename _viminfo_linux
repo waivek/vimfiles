@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/symlink
+~MSle0~/\C\<nextStep\>
 
 # Last Substitute Search Pattern:
 ~MSle0&diff 
@@ -21,11 +21,67 @@ $getbufline(a:buffer_number, 1, '$')
 
 # Command Line History (newest to oldest):
 :qa
-|2,0,1736280748,,"qa"
+|2,0,1736454714,,"qa"
 :q
-|2,0,1736280695,,"q"
+|2,0,1736451864,,"q"
+:Rg
+|2,0,1736382000,,"Rg"
+:e src/utils/elementSelector.ts
+|2,0,1736374672,,"e src/utils/elementSelector.ts"
+:e
+|2,0,1736374644,,"e"
+:q!
+|2,0,1736374643,,"q!"
+:term
+|2,0,1736374635,,"term"
+:e src/utils/elementSelector.test.ts
+|2,0,1736374626,,"e src/utils/elementSelector.test.ts"
+:CocStatus
+|2,0,1736374531,,"CocStatus"
+:CocInfo
+|2,0,1736374527,,"CocInfo"
+:h coc-tree
+|2,0,1736374523,,"h coc-tree"
+:CocCommand
+|2,0,1736374491,,"CocCommand"
+:ALE
+|2,0,1736373288,,"ALE"
+:ALEDisable
+|2,0,1736373284,,"ALEDisable"
+:e tsconfig.json
+|2,0,1736374396,,"e tsconfig.json"
+:Su
+|2,0,1736369238,,"Su"
+:SumIt
+|2,0,1736369234,,"SumIt"
+:e exp
+|2,0,1736282020,,"e exp"
+:'<,'>SumIt
+|2,0,1736280422,,"'<,'>SumIt"
+:h <line1>
+|2,0,1736280259,,"h <line1>"
+:h mode()
+|2,0,1736280224,,"h mode()"
+:'<,'>Sum
+|2,0,1736280163,,"'<,'>Sum"
+:'<,'>w
+|2,0,1736280154,,"'<,'>w"
+:h visual
+|2,0,1736280089,,"h visual"
+:h command
+|2,0,1736280013,,"h command"
 :h builtin
-|2,0,1736278799,,"h builtin"
+|2,0,1736279428,,"h builtin"
+:echo bufnr('%')
+|2,0,1736279051,,"echo bufnr('%')"
+:HotReload
+|2,0,1736279041,,"HotReload"
+:ExtractArguments
+|2,0,1736279002,,"ExtractArguments"
+:e ../uti
+|2,0,1736278935,,"e ../uti"
+:h builtin.txt
+|2,0,1736278835,,"h builtin.txt"
 :h parse
 |2,0,1736278798,,"h parse"
 :h int
@@ -50,8 +106,6 @@ $getbufline(a:buffer_number, 1, '$')
 |2,0,1736278253,,"echo getbufline(\".\")"
 :echo getbufline()
 |2,0,1736278247,,"echo getbufline()"
-:HotReload
-|2,0,1736278233,,"HotReload"
 :e ~/.vim/plugin/sum_lines.vim
 |2,0,1736278206,,"e ~/.vim/plugin/sum_lines.vim"
 :pwd
@@ -64,14 +118,10 @@ $getbufline(a:buffer_number, 1, '$')
 |2,0,1736277996,,"e src/main.tsx"
 :e src/App.tsx
 |2,0,1736277987,,"e src/App.tsx"
-:Rg
-|2,0,1736270618,,"Rg"
 :set isk?
 |2,0,1736265702,,"set isk?"
 :e src/core/sum.ts
 |2,0,1736262233,,"e src/core/sum.ts"
-:e
-|2,0,1736261997,,"e"
 :PlugInstall
 |2,0,1736261990,,"PlugInstall"
 :so %
@@ -88,8 +138,6 @@ $getbufline(a:buffer_number, 1, '$')
 |2,0,1736252674,,"e vite.config.ts"
 :T
 |2,0,1736253538,,"T"
-:q!
-|2,0,1736252461,,"q!"
 :e demo.html
 |2,0,1736252440,,"e demo.html"
 :e src/index.css
@@ -278,8 +326,6 @@ $getbufline(a:buffer_number, 1, '$')
 |2,0,1735751593,,".,.+1qa"
 :e data/secret.txt
 |2,0,1735750949,,"e data/secret.txt"
-:term
-|2,0,1735750862,,"term"
 :e data/.gitkeep
 |2,0,1735750604,,"e data/.gitkeep"
 :e tests/test_db_api_base.py
@@ -1018,8 +1064,6 @@ $getbufline(a:buffer_number, 1, '$')
 |2,0,1730412319,,"e worker_download_video.py"
 :e worker_download_chat.py
 |2,0,1730412199,,"e worker_download_chat.py"
-:CocInfo
-|2,0,1730201063,,"CocInfo"
 :CocI
 |2,0,1730201061,,"CocI"
 :b
@@ -1028,8 +1072,6 @@ $getbufline(a:buffer_number, 1, '$')
 |2,0,1730200971,,"CocList"
 :CocList services
 |2,0,1730200952,,"CocList services"
-:CocStatus
-|2,0,1730200947,,"CocStatus"
 :CocConfig
 |2,0,1730200938,,"CocConfig"
 :ll
@@ -1990,8 +2032,6 @@ $getbufline(a:buffer_number, 1, '$')
 |2,0,1725564281,,"execute term "
 :execute term
 |2,0,1725564276,,"execute term"
-:ExtractArguments
-|2,0,1725564251,,"ExtractArguments"
 :source hello-world.vim
 |2,0,1725564069,,"source hello-world.vim"
 :e hello-world.vim
@@ -3736,8 +3776,6 @@ $getbufline(a:buffer_number, 1, '$')
 |2,0,1722523796,,"MRU ide"
 :echo g:AddTabularPattern(
 |2,0,1722523786,,"echo g:AddTabularPattern("
-:ALEDisable
-|2,0,1722523422,,"ALEDisable"
 :MRU p
 |2,0,1722523314,,"MRU p"
 :h coc-codeaction-source
@@ -4122,8 +4160,6 @@ $getbufline(a:buffer_number, 1, '$')
 |2,0,1722168240,,"MRU 5:edit-plugin/edit.vim"
 :e backup.vim
 |2,0,1722168231,,"e backup.vim"
-:CocCommand
-|2,0,1722168214,,"CocCommand"
 :Copy
 |2,0,1722168064,,"Copy"
 :grep -g '*.vim' -g 'vimrc' --fixed-strings xclip
@@ -5436,8 +5472,6 @@ $getbufline(a:buffer_number, 1, '$')
 |2,0,1718269629,,"Rename ui-components-css-tailwind-output.css"
 :e static/css-utilities/tailwind-colors.css
 |2,0,1718216929,,"e static/css-utilities/tailwind-colors.css"
-:'<,'>w
-|2,0,1718216837,,"'<,'>w"
 :%sort! /^.*<0\.\zs/ n
 |2,0,1718198995,,"%sort! /^.*<0\\.\\zs/ n"
 :%sort /^.*<0\.\zs/ n
@@ -9636,8 +9670,6 @@ $getbufline(a:buffer_number, 1, '$')
 |2,0,1693059894,,"e auto-imports.d.ts"
 :e shi
 |2,0,1693059869,,"e shi"
-:e tsconfig.json
-|2,0,1693059857,,"e tsconfig.json"
 :e ../components.d.ts
 |2,0,1693059667,,"e ../components.d.ts"
 :e actions.ts
@@ -10632,8 +10664,6 @@ $getbufline(a:buffer_number, 1, '$')
 |2,0,1691399038,,"h ale"
 :ALENext
 |2,0,1691399024,,"ALENext"
-:ALE
-|2,0,1691399020,,"ALE"
 :echo g:ale_linters
 |2,0,1691398974,,"echo g:ale_linters"
 :echo g:ale_linter_aliases
@@ -11592,12 +11622,20 @@ $getbufline(a:buffer_number, 1, '$')
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/nextSep
+|2,1,1736372296,47,"nextSep"
+?/visual
+|2,1,1736280019,47,"visual"
+?/add(
+|2,1,1736279433,47,"add("
+?/sum(
+|2,1,1736279430,47,"sum("
+?/number
+|2,1,1736278837,47,"number"
 ?/symlink
 |2,1,1736280688,47,"symlink"
 ?/num
 |2,1,1736278816,47,"num"
-?/number
-|2,1,1736278812,47,"number"
 ?/numbre
 |2,1,1736278805,47,"numbre"
 ?/int
@@ -13760,8 +13798,6 @@ $getbufline(a:buffer_number, 1, '$')
 |2,1,1723277899,47,"TAB"
 ?/<TAB
 |2,1,1723277898,47,"<TAB"
-?/visual
-|2,1,1723276686,47,"visual"
 ?/k
 |2,1,1723276480,47,"k"
 ?/echo
@@ -17674,40 +17710,42 @@ $getbufline(a:buffer_number, 1, '$')
 |2,4,1693311567,,"cont"
 
 # Registers:
-"0	LINE	0
-	    let l:
-|3,0,0,1,1,0,1736278819,"    let l:"
+""0	CHAR	0
+	, vi
+|3,1,0,0,1,0,1736382108,", vi"
 "1	LINE	0
-	    let l:
-|3,0,1,1,1,0,1736278776,"    let l:"
+	let x: number = 2
+	let y: string = 'hello'
+	let z: number = x + y
+|3,0,1,1,3,0,1736374605,"let x: number = 2","let y: string = 'hello'","let z: number = x + y"
 "2	LINE	0
-	
-|3,0,2,1,1,0,1736278762,""
+	x + y
+|3,0,2,1,1,0,1736373354,"x + y"
 "3	LINE	0
-	
-|3,0,3,1,1,0,1736278759,""
+	console.log(x);
+|3,0,3,1,1,0,1736373330,"console.log(x);"
 "4	LINE	0
-	
-|3,0,4,1,1,0,1736278738,""
+	Auto             :   800
+|3,0,4,1,1,0,1736369759,"Auto             :   800"
 "5	LINE	0
-	function! s:GetBuffer(buffer_number)
-	endfunction
-|3,0,5,1,2,0,1736278737,"function! s:GetBuffer(buffer_number)","endfunction"
+	
+|3,0,5,1,1,0,1736369759,""
 "6	LINE	0
-	    return getbufline(a:buffer_number, 1, '$')
-|3,0,6,1,1,0,1736278735,"    return getbufline(a:buffer_number, 1, '$')"
+	
+|3,0,6,1,1,0,1736369759,""
 "7	LINE	0
-	    return getbufline(a:buffer_number, 1, '$')
-|3,0,7,1,1,0,1736278725,"    return getbufline(a:buffer_number, 1, '$')"
+	Auto             :   800
+|3,0,7,1,1,0,1736369759,"Auto             :   800"
 "8	LINE	0
-	    let l:lines = getbufline(a:buffer_number, 1, '$')
-|3,0,8,1,1,0,1736278713,"    let l:lines = getbufline(a:buffer_number, 1, '$')"
+	Electricity      :  1000
+|3,0,8,1,1,0,1736369759,"Electricity      :  1000"
 "9	LINE	0
-	    let l:bufnr = a:buffer_number
-|3,0,9,1,1,0,1736278711,"    let l:bufnr = a:buffer_number"
-""a@	CHAR	0
+	
+	" call s:SumLines(7)
+|3,0,9,1,2,0,1736369759,"","\" call s:SumLines(7)"
+"a@	CHAR	0
 	nojkVnl>nO€ýa
-|3,3,10,0,1,0,1736280694,"nojkVnl>nO€ýa"
+|3,2,10,0,1,0,1736280694,"nojkVnl>nO€ýa"
 "i	CHAR	0
 	ado_up()jk:q!
 |3,0,18,0,1,0,1724200553,"ado_up()jk:q!"
@@ -17776,339 +17814,337 @@ $getbufline(a:buffer_number, 1, '$')
 |<"    assert x_min < x_max, f\"Invalid x coordinates: min ({x_min}) >= max ({x_max})\"","    assert y_min < y_max, f\"Invalid y coordinates: min ({y_min}) >= max ({y_max})\"","    ","    # Additional geometric checks","    assert abs(y1 - y2) < (y_max - y_min), \"Top edge is not roughly horizontal\"","    assert abs(y3 - y4) < (y_max - y_min), \"Bottom edge is not roughly horizontal\"","    assert abs(x1 - x4) < (x_max - x_min), \"Left edge is not roughly vertical\"",>83
 |<"    assert abs(x2 - x3) < (x_max - x_min), \"Right edge is not roughly vertical\"","","    pretty_string_flat = {","        \"left\": x_min,","        \"right\": x_max,","        \"top\": y_min,","        \"bottom\": y_max,","        \"top_left\": (x1, y1),","        \"top_right\": (x2, y2),","        \"bottom_right\": (x3, y3),","        \"bottom_left\": (x4, y4),","    }","    ","    print(f\"{box} => {pretty_string_flat}\")",""
 "-	CHAR	0
-	)
-|3,0,36,0,1,0,1736278734,")"
+	, vi
+|3,0,36,0,1,0,1736374648,", vi"
 
 # File marks:
-'0  34  190  /tmp/crontab.IwrMzF/crontab
-|4,48,34,190,1736280748,"/tmp/crontab.IwrMzF/crontab"
-'1  34  8  /tmp/crontab.iJJqal/crontab
-|4,49,34,8,1736280696,"/tmp/crontab.iJJqal/crontab"
-'2  34  8  /tmp/crontab.iJJqal/crontab
-|4,50,34,8,1736280696,"/tmp/crontab.iJJqal/crontab"
-'3  20  15  /usr/share/vim/vim90/doc/builtin.txt
-|4,51,20,15,1736278823,"/usr/share/vim/vim90/doc/builtin.txt"
-'4  20  15  /usr/share/vim/vim90/doc/builtin.txt
-|4,52,20,15,1736278823,"/usr/share/vim/vim90/doc/builtin.txt"
-'5  20  15  /usr/share/vim/vim90/doc/builtin.txt
-|4,53,20,15,1736278823,"/usr/share/vim/vim90/doc/builtin.txt"
-'6  20  15  /usr/share/vim/vim90/doc/builtin.txt
-|4,54,20,15,1736278823,"/usr/share/vim/vim90/doc/builtin.txt"
-'7  3  0  ~/typography-react-ts/src/App.tsx
-|4,55,3,0,1736261774,"~/typography-react-ts/src/App.tsx"
-'8  3  0  ~/typography-react-ts/src/App.tsx
-|4,56,3,0,1736261774,"~/typography-react-ts/src/App.tsx"
-'9  3  0  ~/typography-react-ts/src/App.tsx
-|4,57,3,0,1736261774,"~/typography-react-ts/src/App.tsx"
+'0  861  18  ~/typography-react-ts/vitest.error.txt
+|4,48,861,18,1736454715,"~/typography-react-ts/vitest.error.txt"
+'1  60  12  ~/typography-react-ts/src/components/TypographyControls/TypographyControls.tsx
+|4,49,60,12,1736451865,"~/typography-react-ts/src/components/TypographyControls/TypographyControls.tsx"
+'2  60  12  ~/typography-react-ts/src/components/TypographyControls/TypographyControls.tsx
+|4,50,60,12,1736451865,"~/typography-react-ts/src/components/TypographyControls/TypographyControls.tsx"
+'3  1  0  ~/typography-react-ts/src/utils/elementSelector.test.ts
+|4,51,1,0,1736380329,"~/typography-react-ts/src/utils/elementSelector.test.ts"
+'4  1  0  ~/typography-react-ts/src/utils/elementSelector.test.ts
+|4,52,1,0,1736380329,"~/typography-react-ts/src/utils/elementSelector.test.ts"
+'5  1  0  ~/typography-react-ts/src/utils/elementSelector.test.ts
+|4,53,1,0,1736380329,"~/typography-react-ts/src/utils/elementSelector.test.ts"
+'6  1  0  ~/typography-react-ts/src/utils/elementSelector.test.ts
+|4,54,1,0,1736380329,"~/typography-react-ts/src/utils/elementSelector.test.ts"
+'7  6  0  ~/typography-react-ts/tsconfig.json
+|4,55,6,0,1736374477,"~/typography-react-ts/tsconfig.json"
+'8  6  0  ~/typography-react-ts/tsconfig.json
+|4,56,6,0,1736374477,"~/typography-react-ts/tsconfig.json"
+'9  6  0  ~/typography-react-ts/tsconfig.json
+|4,57,6,0,1736374477,"~/typography-react-ts/tsconfig.json"
 
 # Jumplist (newest first):
--'  34  190  /tmp/crontab.IwrMzF/crontab
-|4,39,34,190,1736280748,"/tmp/crontab.IwrMzF/crontab"
--'  1  0  /tmp/crontab.IwrMzF/crontab
-|4,39,1,0,1736280738,"/tmp/crontab.IwrMzF/crontab"
--'  34  8  /tmp/crontab.iJJqal/crontab
-|4,39,34,8,1736280696,"/tmp/crontab.iJJqal/crontab"
--'  34  8  /tmp/crontab.iJJqal/crontab
-|4,39,34,8,1736280696,"/tmp/crontab.iJJqal/crontab"
--'  1  0  /tmp/crontab.iJJqal/crontab
-|4,39,1,0,1736280688,"/tmp/crontab.iJJqal/crontab"
--'  1  0  /tmp/crontab.iJJqal/crontab
-|4,39,1,0,1736280688,"/tmp/crontab.iJJqal/crontab"
--'  20  15  /usr/share/vim/vim90/doc/builtin.txt
-|4,39,20,15,1736278823,"/usr/share/vim/vim90/doc/builtin.txt"
--'  20  15  /usr/share/vim/vim90/doc/builtin.txt
-|4,39,20,15,1736278823,"/usr/share/vim/vim90/doc/builtin.txt"
--'  20  15  /usr/share/vim/vim90/doc/builtin.txt
-|4,39,20,15,1736278823,"/usr/share/vim/vim90/doc/builtin.txt"
--'  22  41  /usr/share/vim/vim90/doc/builtin.txt
-|4,39,22,41,1736278816,"/usr/share/vim/vim90/doc/builtin.txt"
--'  22  41  /usr/share/vim/vim90/doc/builtin.txt
-|4,39,22,41,1736278816,"/usr/share/vim/vim90/doc/builtin.txt"
--'  22  41  /usr/share/vim/vim90/doc/builtin.txt
-|4,39,22,41,1736278816,"/usr/share/vim/vim90/doc/builtin.txt"
--'  18  0  /usr/share/vim/vim90/doc/builtin.txt
-|4,39,18,0,1736278812,"/usr/share/vim/vim90/doc/builtin.txt"
--'  18  0  /usr/share/vim/vim90/doc/builtin.txt
-|4,39,18,0,1736278812,"/usr/share/vim/vim90/doc/builtin.txt"
--'  18  0  /usr/share/vim/vim90/doc/builtin.txt
-|4,39,18,0,1736278812,"/usr/share/vim/vim90/doc/builtin.txt"
--'  1  0  /usr/share/vim/vim90/doc/builtin.txt
-|4,39,1,0,1736278801,"/usr/share/vim/vim90/doc/builtin.txt"
--'  1  0  /usr/share/vim/vim90/doc/builtin.txt
-|4,39,1,0,1736278801,"/usr/share/vim/vim90/doc/builtin.txt"
--'  1  0  /usr/share/vim/vim90/doc/builtin.txt
-|4,39,1,0,1736278801,"/usr/share/vim/vim90/doc/builtin.txt"
--'  1  0  ~/typography-react-ts/index.html
-|4,39,1,0,1736278799,"~/typography-react-ts/index.html"
--'  1  0  ~/typography-react-ts/index.html
-|4,39,1,0,1736278799,"~/typography-react-ts/index.html"
--'  1  0  ~/typography-react-ts/index.html
-|4,39,1,0,1736278799,"~/typography-react-ts/index.html"
--'  2  4  ~/.vim/plugin/sum_lines.vim
-|4,39,2,4,1736278782,"~/.vim/plugin/sum_lines.vim"
--'  2  4  ~/.vim/plugin/sum_lines.vim
-|4,39,2,4,1736278782,"~/.vim/plugin/sum_lines.vim"
--'  2  4  ~/.vim/plugin/sum_lines.vim
-|4,39,2,4,1736278782,"~/.vim/plugin/sum_lines.vim"
--'  3  0  ~/.vim/plugin/sum_lines.vim
-|4,39,3,0,1736278777,"~/.vim/plugin/sum_lines.vim"
--'  3  0  ~/.vim/plugin/sum_lines.vim
-|4,39,3,0,1736278777,"~/.vim/plugin/sum_lines.vim"
--'  3  0  ~/.vim/plugin/sum_lines.vim
-|4,39,3,0,1736278777,"~/.vim/plugin/sum_lines.vim"
--'  13  18  ~/.vim/plugin/sum_lines.vim
-|4,39,13,18,1736278723,"~/.vim/plugin/sum_lines.vim"
--'  13  18  ~/.vim/plugin/sum_lines.vim
-|4,39,13,18,1736278723,"~/.vim/plugin/sum_lines.vim"
--'  13  18  ~/.vim/plugin/sum_lines.vim
-|4,39,13,18,1736278723,"~/.vim/plugin/sum_lines.vim"
--'  6  4  ~/.vim/plugin/sum_lines.vim
-|4,39,6,4,1736278713,"~/.vim/plugin/sum_lines.vim"
--'  6  4  ~/.vim/plugin/sum_lines.vim
-|4,39,6,4,1736278713,"~/.vim/plugin/sum_lines.vim"
--'  6  4  ~/.vim/plugin/sum_lines.vim
-|4,39,6,4,1736278713,"~/.vim/plugin/sum_lines.vim"
--'  16  0  ~/.vim/plugin/sum_lines.vim
-|4,39,16,0,1736278700,"~/.vim/plugin/sum_lines.vim"
--'  16  0  ~/.vim/plugin/sum_lines.vim
-|4,39,16,0,1736278700,"~/.vim/plugin/sum_lines.vim"
--'  16  0  ~/.vim/plugin/sum_lines.vim
-|4,39,16,0,1736278700,"~/.vim/plugin/sum_lines.vim"
--'  14  23  ~/.vim/plugin/sum_lines.vim
-|4,39,14,23,1736278689,"~/.vim/plugin/sum_lines.vim"
--'  14  23  ~/.vim/plugin/sum_lines.vim
-|4,39,14,23,1736278689,"~/.vim/plugin/sum_lines.vim"
--'  14  23  ~/.vim/plugin/sum_lines.vim
-|4,39,14,23,1736278689,"~/.vim/plugin/sum_lines.vim"
--'  17  14  ~/.vim/plugin/sum_lines.vim
-|4,39,17,14,1736278520,"~/.vim/plugin/sum_lines.vim"
--'  17  14  ~/.vim/plugin/sum_lines.vim
-|4,39,17,14,1736278520,"~/.vim/plugin/sum_lines.vim"
--'  17  14  ~/.vim/plugin/sum_lines.vim
-|4,39,17,14,1736278520,"~/.vim/plugin/sum_lines.vim"
--'  3  0  ~/expenses.txt
-|4,39,3,0,1736278206,"~/expenses.txt"
--'  3  0  ~/expenses.txt
-|4,39,3,0,1736278206,"~/expenses.txt"
--'  3  0  ~/expenses.txt
-|4,39,3,0,1736278206,"~/expenses.txt"
--'  1  0  ~/typography-react-ts/src/utils/dom.test.ts
-|4,39,1,0,1736278123,"~/typography-react-ts/src/utils/dom.test.ts"
--'  1  0  ~/typography-react-ts/src/utils/dom.test.ts
-|4,39,1,0,1736278123,"~/typography-react-ts/src/utils/dom.test.ts"
--'  1  0  ~/typography-react-ts/src/utils/dom.test.ts
-|4,39,1,0,1736278123,"~/typography-react-ts/src/utils/dom.test.ts"
--'  20  0  ~/typography-react-ts/src/utils/dom.ts
-|4,39,20,0,1736278060,"~/typography-react-ts/src/utils/dom.ts"
--'  20  0  ~/typography-react-ts/src/utils/dom.ts
-|4,39,20,0,1736278060,"~/typography-react-ts/src/utils/dom.ts"
--'  20  0  ~/typography-react-ts/src/utils/dom.ts
-|4,39,20,0,1736278060,"~/typography-react-ts/src/utils/dom.ts"
--'  5  13  ~/typography-react-ts/src/utils/dom.ts
-|4,39,5,13,1736278033,"~/typography-react-ts/src/utils/dom.ts"
--'  5  13  ~/typography-react-ts/src/utils/dom.ts
-|4,39,5,13,1736278033,"~/typography-react-ts/src/utils/dom.ts"
--'  5  13  ~/typography-react-ts/src/utils/dom.ts
-|4,39,5,13,1736278033,"~/typography-react-ts/src/utils/dom.ts"
+-'  861  18  ~/typography-react-ts/vitest.error.txt
+|4,39,861,18,1736454715,"~/typography-react-ts/vitest.error.txt"
+-'  1  0  ~/typography-react-ts/vitest.error.txt
+|4,39,1,0,1736454659,"~/typography-react-ts/vitest.error.txt"
+-'  60  12  ~/typography-react-ts/src/components/TypographyControls/TypographyControls.tsx
+|4,39,60,12,1736451865,"~/typography-react-ts/src/components/TypographyControls/TypographyControls.tsx"
+-'  60  12  ~/typography-react-ts/src/components/TypographyControls/TypographyControls.tsx
+|4,39,60,12,1736451865,"~/typography-react-ts/src/components/TypographyControls/TypographyControls.tsx"
+-'  55  12  ~/typography-react-ts/src/components/TypographyControls/TypographyControls.tsx
+|4,39,55,12,1736382106,"~/typography-react-ts/src/components/TypographyControls/TypographyControls.tsx"
+-'  55  12  ~/typography-react-ts/src/components/TypographyControls/TypographyControls.tsx
+|4,39,55,12,1736382106,"~/typography-react-ts/src/components/TypographyControls/TypographyControls.tsx"
+-'  42  12  ~/typography-react-ts/src/components/TypographyControls/TypographyControls.tsx
+|4,39,42,12,1736382092,"~/typography-react-ts/src/components/TypographyControls/TypographyControls.tsx"
+-'  42  12  ~/typography-react-ts/src/components/TypographyControls/TypographyControls.tsx
+|4,39,42,12,1736382092,"~/typography-react-ts/src/components/TypographyControls/TypographyControls.tsx"
+-'  45  12  ~/typography-react-ts/src/components/TypographyControls/TypographyControls.tsx
+|4,39,45,12,1736382080,"~/typography-react-ts/src/components/TypographyControls/TypographyControls.tsx"
+-'  45  12  ~/typography-react-ts/src/components/TypographyControls/TypographyControls.tsx
+|4,39,45,12,1736382080,"~/typography-react-ts/src/components/TypographyControls/TypographyControls.tsx"
+-'  48  16  ~/typography-react-ts/src/components/TypographyControls/TypographyControls.tsx
+|4,39,48,16,1736382065,"~/typography-react-ts/src/components/TypographyControls/TypographyControls.tsx"
+-'  48  16  ~/typography-react-ts/src/components/TypographyControls/TypographyControls.tsx
+|4,39,48,16,1736382065,"~/typography-react-ts/src/components/TypographyControls/TypographyControls.tsx"
+-'  1  0  ~/typography-react-ts/src/utils/elementSelector.test.ts
+|4,39,1,0,1736382040,"~/typography-react-ts/src/utils/elementSelector.test.ts"
+-'  1  0  ~/typography-react-ts/src/utils/elementSelector.test.ts
+|4,39,1,0,1736382040,"~/typography-react-ts/src/utils/elementSelector.test.ts"
+-'  1  0  ~/typography-react-ts/src/utils/elementSelector.test.ts
+|4,39,1,0,1736380329,"~/typography-react-ts/src/utils/elementSelector.test.ts"
+-'  22  0  ~/typography-react-ts/src/utils/elementSelector.ts
+|4,39,22,0,1736380325,"~/typography-react-ts/src/utils/elementSelector.ts"
+-'  22  0  ~/typography-react-ts/src/utils/elementSelector.ts
+|4,39,22,0,1736380325,"~/typography-react-ts/src/utils/elementSelector.ts"
+-'  22  0  ~/typography-react-ts/src/utils/elementSelector.ts
+|4,39,22,0,1736380325,"~/typography-react-ts/src/utils/elementSelector.ts"
+-'  3  0  ~/typography-react-ts/src/core/sum.ts
+|4,39,3,0,1736374626,"~/typography-react-ts/src/core/sum.ts"
+-'  3  0  ~/typography-react-ts/src/core/sum.ts
+|4,39,3,0,1736374626,"~/typography-react-ts/src/core/sum.ts"
+-'  3  0  ~/typography-react-ts/src/core/sum.ts
+|4,39,3,0,1736374626,"~/typography-react-ts/src/core/sum.ts"
+-'  6  0  ~/typography-react-ts/tsconfig.json
+|4,39,6,0,1736374477,"~/typography-react-ts/tsconfig.json"
+-'  6  0  ~/typography-react-ts/tsconfig.json
+|4,39,6,0,1736374477,"~/typography-react-ts/tsconfig.json"
+-'  6  0  ~/typography-react-ts/tsconfig.json
+|4,39,6,0,1736374477,"~/typography-react-ts/tsconfig.json"
+-'  7  27  ~/typography-react-ts/tsconfig.json
+|4,39,7,27,1736374474,"~/typography-react-ts/tsconfig.json"
+-'  7  27  ~/typography-react-ts/tsconfig.json
+|4,39,7,27,1736374474,"~/typography-react-ts/tsconfig.json"
+-'  7  27  ~/typography-react-ts/tsconfig.json
+|4,39,7,27,1736374474,"~/typography-react-ts/tsconfig.json"
+-'  1  0  ~/typography-react-ts/tsconfig.json
+|4,39,1,0,1736374471,"~/typography-react-ts/tsconfig.json"
+-'  1  0  ~/typography-react-ts/tsconfig.json
+|4,39,1,0,1736374471,"~/typography-react-ts/tsconfig.json"
+-'  1  0  ~/typography-react-ts/tsconfig.json
+|4,39,1,0,1736374471,"~/typography-react-ts/tsconfig.json"
+-'  25  0  ~/typography-react-ts/tsconfig.app.json
+|4,39,25,0,1736374412,"~/typography-react-ts/tsconfig.app.json"
+-'  25  0  ~/typography-react-ts/tsconfig.app.json
+|4,39,25,0,1736374412,"~/typography-react-ts/tsconfig.app.json"
+-'  25  0  ~/typography-react-ts/tsconfig.app.json
+|4,39,25,0,1736374412,"~/typography-react-ts/tsconfig.app.json"
+-'  25  0  ~/typography-react-ts/tsconfig.app.json
+|4,39,25,0,1736374412,"~/typography-react-ts/tsconfig.app.json"
+-'  6  3  ~/typography-react-ts/tsconfig.json
+|4,39,6,3,1736374409,"~/typography-react-ts/tsconfig.json"
+-'  26  27  ~/typography-react-ts/tsconfig.app.json
+|4,39,26,27,1736374392,"~/typography-react-ts/tsconfig.app.json"
+-'  1  0  ~/typography-react-ts/tsconfig.app.json
+|4,39,1,0,1736374392,"~/typography-react-ts/tsconfig.app.json"
+-'  26  27  ~/typography-react-ts/tsconfig.app.json
+|4,39,26,27,1736374392,"~/typography-react-ts/tsconfig.app.json"
+-'  1  0  ~/typography-react-ts/tsconfig.app.json
+|4,39,1,0,1736374392,"~/typography-react-ts/tsconfig.app.json"
+-'  26  27  ~/typography-react-ts/tsconfig.app.json
+|4,39,26,27,1736374392,"~/typography-react-ts/tsconfig.app.json"
+-'  1  0  ~/typography-react-ts/tsconfig.app.json
+|4,39,1,0,1736374392,"~/typography-react-ts/tsconfig.app.json"
+-'  26  27  ~/typography-react-ts/tsconfig.app.json
+|4,39,26,27,1736374392,"~/typography-react-ts/tsconfig.app.json"
+-'  1  0  ~/typography-react-ts/tsconfig.app.json
+|4,39,1,0,1736374392,"~/typography-react-ts/tsconfig.app.json"
+-'  25  26  ~/typography-react-ts/tsconfig.app.json
+|4,39,25,26,1736374384,"~/typography-react-ts/tsconfig.app.json"
+-'  1  0  ~/typography-react-ts/tsconfig.app.json
+|4,39,1,0,1736374375,"~/typography-react-ts/tsconfig.app.json"
+-'  1  0  ~/typography-react-ts/src/utils/dom.ts
+|4,39,1,0,1736373300,"~/typography-react-ts/src/utils/dom.ts"
+-'  1  0  ~/typography-react-ts/src/utils/dom.ts
+|4,39,1,0,1736373300,"~/typography-react-ts/src/utils/dom.ts"
+-'  1  0  ~/typography-react-ts/src/utils/dom.ts
+|4,39,1,0,1736373300,"~/typography-react-ts/src/utils/dom.ts"
+-'  13  0  ~/typography-react-ts/src/utils/logger.ts
+|4,39,13,0,1736372329,"~/typography-react-ts/src/utils/logger.ts"
+-'  13  0  ~/typography-react-ts/src/utils/logger.ts
+|4,39,13,0,1736372329,"~/typography-react-ts/src/utils/logger.ts"
+-'  13  0  ~/typography-react-ts/src/utils/logger.ts
+|4,39,13,0,1736372329,"~/typography-react-ts/src/utils/logger.ts"
+-'  16  17  ~/typography-react-ts/src/utils/dom.ts
+|4,39,16,17,1736372303,"~/typography-react-ts/src/utils/dom.ts"
+-'  27  17  ~/typography-react-ts/src/utils/dom.ts
+|4,39,27,17,1736372303,"~/typography-react-ts/src/utils/dom.ts"
+-'  16  17  ~/typography-react-ts/src/utils/dom.ts
+|4,39,16,17,1736372303,"~/typography-react-ts/src/utils/dom.ts"
+-'  27  17  ~/typography-react-ts/src/utils/dom.ts
+|4,39,27,17,1736372303,"~/typography-react-ts/src/utils/dom.ts"
+-'  16  17  ~/typography-react-ts/src/utils/dom.ts
+|4,39,16,17,1736372303,"~/typography-react-ts/src/utils/dom.ts"
+-'  27  17  ~/typography-react-ts/src/utils/dom.ts
+|4,39,27,17,1736372303,"~/typography-react-ts/src/utils/dom.ts"
+-'  6  69  ~/typography-react-ts/src/main.tsx
+|4,39,6,69,1736372277,"~/typography-react-ts/src/main.tsx"
+-'  6  69  ~/typography-react-ts/src/main.tsx
+|4,39,6,69,1736372277,"~/typography-react-ts/src/main.tsx"
+-'  6  69  ~/typography-react-ts/src/main.tsx
+|4,39,6,69,1736372277,"~/typography-react-ts/src/main.tsx"
 -'  17  24  ~/typography-react-ts/src/main.tsx
-|4,39,17,24,1736278023,"~/typography-react-ts/src/main.tsx"
+|4,39,17,24,1736372272,"~/typography-react-ts/src/main.tsx"
 -'  17  24  ~/typography-react-ts/src/main.tsx
-|4,39,17,24,1736278023,"~/typography-react-ts/src/main.tsx"
+|4,39,17,24,1736372272,"~/typography-react-ts/src/main.tsx"
 -'  17  24  ~/typography-react-ts/src/main.tsx
-|4,39,17,24,1736278023,"~/typography-react-ts/src/main.tsx"
--'  33  16  ~/typography-react-ts/src/App.tsx
-|4,39,33,16,1736277996,"~/typography-react-ts/src/App.tsx"
--'  33  16  ~/typography-react-ts/src/App.tsx
-|4,39,33,16,1736277996,"~/typography-react-ts/src/App.tsx"
--'  33  16  ~/typography-react-ts/src/App.tsx
-|4,39,33,16,1736277996,"~/typography-react-ts/src/App.tsx"
--'  7  46  ~/typography-react-ts/docs/project-requirements-document.prd
-|4,39,7,46,1736277987,"~/typography-react-ts/docs/project-requirements-document.prd"
--'  7  46  ~/typography-react-ts/docs/project-requirements-document.prd
-|4,39,7,46,1736277987,"~/typography-react-ts/docs/project-requirements-document.prd"
--'  7  46  ~/typography-react-ts/docs/project-requirements-document.prd
-|4,39,7,46,1736277987,"~/typography-react-ts/docs/project-requirements-document.prd"
--'  25  107  ~/typography-react-ts/docs/project-requirements-document.prd
-|4,39,25,107,1736270654,"~/typography-react-ts/docs/project-requirements-document.prd"
--'  25  107  ~/typography-react-ts/docs/project-requirements-document.prd
-|4,39,25,107,1736270654,"~/typography-react-ts/docs/project-requirements-document.prd"
--'  25  107  ~/typography-react-ts/docs/project-requirements-document.prd
-|4,39,25,107,1736270654,"~/typography-react-ts/docs/project-requirements-document.prd"
--'  2  0  ~/typography-react-ts/src/utils/dom.test.ts
-|4,39,2,0,1736270633,"~/typography-react-ts/src/utils/dom.test.ts"
--'  2  0  ~/typography-react-ts/src/utils/dom.test.ts
-|4,39,2,0,1736270633,"~/typography-react-ts/src/utils/dom.test.ts"
--'  2  0  ~/typography-react-ts/src/utils/dom.test.ts
-|4,39,2,0,1736270633,"~/typography-react-ts/src/utils/dom.test.ts"
--'  8  0  ~/typography-react-ts/docs/project-requirements-document.prd
-|4,39,8,0,1736270599,"~/typography-react-ts/docs/project-requirements-document.prd"
--'  8  0  ~/typography-react-ts/docs/project-requirements-document.prd
-|4,39,8,0,1736270599,"~/typography-react-ts/docs/project-requirements-document.prd"
--'  8  0  ~/typography-react-ts/docs/project-requirements-document.prd
-|4,39,8,0,1736270599,"~/typography-react-ts/docs/project-requirements-document.prd"
--'  28  116  ~/typography-react-ts/src/App.tsx
-|4,39,28,116,1736270595,"~/typography-react-ts/src/App.tsx"
--'  28  116  ~/typography-react-ts/src/App.tsx
-|4,39,28,116,1736270595,"~/typography-react-ts/src/App.tsx"
--'  28  116  ~/typography-react-ts/src/App.tsx
-|4,39,28,116,1736270595,"~/typography-react-ts/src/App.tsx"
--'  1  0  ~/typography-react-ts/src/App.css
-|4,39,1,0,1736265923,"~/typography-react-ts/src/App.css"
--'  1  0  ~/typography-react-ts/src/App.css
-|4,39,1,0,1736265923,"~/typography-react-ts/src/App.css"
--'  1  0  ~/typography-react-ts/src/App.css
-|4,39,1,0,1736265923,"~/typography-react-ts/src/App.css"
--'  4  14  ~/typography-react-ts/src/App.tsx
-|4,39,4,14,1736265919,"~/typography-react-ts/src/App.tsx"
--'  4  14  ~/typography-react-ts/src/App.tsx
-|4,39,4,14,1736265919,"~/typography-react-ts/src/App.tsx"
--'  4  14  ~/typography-react-ts/src/App.tsx
-|4,39,4,14,1736265919,"~/typography-react-ts/src/App.tsx"
--'  23  63  ~/typography-react-ts/src/App.tsx
-|4,39,23,63,1736265701,"~/typography-react-ts/src/App.tsx"
--'  22  63  ~/typography-react-ts/src/App.tsx
-|4,39,22,63,1736265701,"~/typography-react-ts/src/App.tsx"
--'  21  23  ~/typography-react-ts/src/App.tsx
-|4,39,21,23,1736265701,"~/typography-react-ts/src/App.tsx"
--'  20  0  ~/typography-react-ts/src/App.tsx
-|4,39,20,0,1736265701,"~/typography-react-ts/src/App.tsx"
--'  19  61  ~/typography-react-ts/src/App.tsx
-|4,39,19,61,1736265701,"~/typography-react-ts/src/App.tsx"
--'  18  62  ~/typography-react-ts/src/App.tsx
-|4,39,18,62,1736265701,"~/typography-react-ts/src/App.tsx"
--'  17  58  ~/typography-react-ts/src/App.tsx
-|4,39,17,58,1736265701,"~/typography-react-ts/src/App.tsx"
--'  23  63  ~/typography-react-ts/src/App.tsx
-|4,39,23,63,1736265701,"~/typography-react-ts/src/App.tsx"
--'  22  63  ~/typography-react-ts/src/App.tsx
-|4,39,22,63,1736265701,"~/typography-react-ts/src/App.tsx"
--'  21  23  ~/typography-react-ts/src/App.tsx
-|4,39,21,23,1736265701,"~/typography-react-ts/src/App.tsx"
--'  20  0  ~/typography-react-ts/src/App.tsx
-|4,39,20,0,1736265701,"~/typography-react-ts/src/App.tsx"
--'  19  61  ~/typography-react-ts/src/App.tsx
-|4,39,19,61,1736265701,"~/typography-react-ts/src/App.tsx"
--'  18  62  ~/typography-react-ts/src/App.tsx
-|4,39,18,62,1736265701,"~/typography-react-ts/src/App.tsx"
--'  17  58  ~/typography-react-ts/src/App.tsx
-|4,39,17,58,1736265701,"~/typography-react-ts/src/App.tsx"
--'  23  63  ~/typography-react-ts/src/App.tsx
-|4,39,23,63,1736265701,"~/typography-react-ts/src/App.tsx"
--'  22  63  ~/typography-react-ts/src/App.tsx
-|4,39,22,63,1736265701,"~/typography-react-ts/src/App.tsx"
--'  21  23  ~/typography-react-ts/src/App.tsx
-|4,39,21,23,1736265701,"~/typography-react-ts/src/App.tsx"
--'  20  0  ~/typography-react-ts/src/App.tsx
-|4,39,20,0,1736265701,"~/typography-react-ts/src/App.tsx"
--'  19  61  ~/typography-react-ts/src/App.tsx
-|4,39,19,61,1736265701,"~/typography-react-ts/src/App.tsx"
+|4,39,17,24,1736372272,"~/typography-react-ts/src/main.tsx"
+-'  1  0  ~/typography-react-ts/src/main.tsx
+|4,39,1,0,1736372267,"~/typography-react-ts/src/main.tsx"
+-'  1  0  ~/typography-react-ts/src/main.tsx
+|4,39,1,0,1736372267,"~/typography-react-ts/src/main.tsx"
+-'  1  0  ~/typography-react-ts/src/main.tsx
+|4,39,1,0,1736372267,"~/typography-react-ts/src/main.tsx"
+-'  1  1  ~/expenses.txt
+|4,39,1,1,1736371703,"~/expenses.txt"
+-'  1  1  ~/expenses.txt
+|4,39,1,1,1736371703,"~/expenses.txt"
+-'  1  1  ~/expenses.txt
+|4,39,1,1,1736371703,"~/expenses.txt"
+-'  1  1  ~/expenses.txt
+|4,39,1,1,1736371703,"~/expenses.txt"
+-'  1  1  ~/expenses.txt
+|4,39,1,1,1736371703,"~/expenses.txt"
+-'  1  1  ~/expenses.txt
+|4,39,1,1,1736371703,"~/expenses.txt"
+-'  1  1  ~/expenses.txt
+|4,39,1,1,1736371703,"~/expenses.txt"
+-'  1  0  ~/expenses.txt
+|4,39,1,0,1736369824,"~/expenses.txt"
+-'  6  0  ~/expenses.txt
+|4,39,6,0,1736369243,"~/expenses.txt"
+-'  6  0  ~/expenses.txt
+|4,39,6,0,1736369243,"~/expenses.txt"
+-'  6  0  ~/expenses.txt
+|4,39,6,0,1736369243,"~/expenses.txt"
+-'  6  0  ~/expenses.txt
+|4,39,6,0,1736369243,"~/expenses.txt"
+-'  6  0  ~/expenses.txt
+|4,39,6,0,1736369243,"~/expenses.txt"
+-'  6  0  ~/expenses.txt
+|4,39,6,0,1736369243,"~/expenses.txt"
+-'  6  0  ~/expenses.txt
+|4,39,6,0,1736369243,"~/expenses.txt"
+-'  7  0  ~/expenses.txt
+|4,39,7,0,1736369242,"~/expenses.txt"
+-'  7  0  ~/expenses.txt
+|4,39,7,0,1736369242,"~/expenses.txt"
+-'  7  0  ~/expenses.txt
+|4,39,7,0,1736369242,"~/expenses.txt"
+-'  7  0  ~/expenses.txt
+|4,39,7,0,1736369242,"~/expenses.txt"
+-'  7  0  ~/expenses.txt
+|4,39,7,0,1736369242,"~/expenses.txt"
+-'  7  0  ~/expenses.txt
+|4,39,7,0,1736369242,"~/expenses.txt"
+-'  7  0  ~/expenses.txt
+|4,39,7,0,1736369242,"~/expenses.txt"
+-'  3  23  ~/expenses.txt
+|4,39,3,23,1736334404,"~/expenses.txt"
+-'  3  23  ~/expenses.txt
+|4,39,3,23,1736334404,"~/expenses.txt"
+-'  3  23  ~/expenses.txt
+|4,39,3,23,1736334404,"~/expenses.txt"
+-'  3  23  ~/expenses.txt
+|4,39,3,23,1736334404,"~/expenses.txt"
+-'  3  23  ~/expenses.txt
+|4,39,3,23,1736334404,"~/expenses.txt"
+-'  3  23  ~/expenses.txt
+|4,39,3,23,1736334404,"~/expenses.txt"
+-'  3  23  ~/expenses.txt
+|4,39,3,23,1736334404,"~/expenses.txt"
+-'  2  23  ~/expenses.txt
+|4,39,2,23,1736334398,"~/expenses.txt"
+-'  2  23  ~/expenses.txt
+|4,39,2,23,1736334398,"~/expenses.txt"
+-'  2  23  ~/expenses.txt
+|4,39,2,23,1736334398,"~/expenses.txt"
+-'  2  23  ~/expenses.txt
+|4,39,2,23,1736334398,"~/expenses.txt"
+-'  2  23  ~/expenses.txt
+|4,39,2,23,1736334398,"~/expenses.txt"
 
 # Buffer list:
-%/tmp/crontab.IwrMzF/crontab	34	190
+%~/typography-react-ts/vitest.error.txt	861	18
 
 # History of marks within files (newest to oldest):
 
-> /tmp/crontab.IwrMzF/crontab
-	*	1736280747	0
-	"	34	190
-	^	34	151
-	.	34	150
-	+	34	150
+> ~/typography-react-ts/vitest.error.txt
+	*	1736454667	0
+	"	861	18
 
-> /tmp/crontab.iJJqal/crontab
-	*	1736280694	0
-	"	34	8
+> ~/typography-react-ts/src/components/TypographyControls/TypographyControls.tsx
+	*	1736436151	0
+	"	60	12
+	^	48	17
+	.	60	0
+	+	48	0
+	+	45	0
+	+	42	0
+	+	55	0
+	+	60	0
 
-> /usr/share/vim/vim90/doc/builtin.txt
-	*	1736278821	0
-	"	20	15
-
-> ~/.vim/plugin/sum_lines.vim
-	*	1736278798	0
+> ~/typography-react-ts/src/utils/elementSelector.test.ts
+	*	1736381999	0
 	"	1	0
-	^	3	0
+	.	1	52
+	+	1	52
+
+> ~/typography-react-ts/src/utils/elementSelector.ts
+	*	1736379443	0
+	"	22	0
+
+> ~/typography-react-ts/src/core/sum.ts
+	*	1736374609	0
+	"	3	0
 	.	3	0
-	+	6	23
-	+	6	10
-	+	6	9
-	+	6	26
-	+	6	0
-	+	6	24
-	+	6	11
-	+	6	17
-	+	6	20
-	+	6	0
-	+	6	35
-	+	6	0
-	+	6	22
-	+	17	17
-	+	6	0
-	+	6	11
-	+	6	0
-	+	6	11
-	+	6	0
-	+	17	18
-	+	4	10
+	+	5	0
+	+	2	20
+	+	4	0
+	+	2	12
+	+	5	0
+	+	2	40
+	+	5	0
+	+	3	3
 	+	3	0
-	+	6	0
-	+	6	17
-	+	6	0
-	+	15	10
-	+	13	35
-	+	6	23
-	+	14	23
-	+	17	14
-	+	6	0
-	+	6	35
-	+	6	34
-	+	6	0
+	+	3	23
+	+	3	0
+
+> ~/typography-react-ts/tsconfig.json
+	*	1736374474	0
+	"	6	0
+	^	6	4
+	.	7	0
+	+	7	27
 	+	7	0
-	+	6	0
-	+	6	32
-	+	6	0
-	+	13	36
-	+	17	0
-	+	6	4
-	+	6	0
-	+	13	0
-	+	6	0
-	+	3	0
 
-> /usr/share/vim/vim90/doc/intro.txt
-	*	1736278790	0
-	"	19	21
-
-> /usr/share/vim/vim90/doc/userfunc.txt
-	*	1736278631	0
-	"	199	1
-
-> ~/expenses.txt
-	*	1736278447	0
-	"	2	0
-	.	3	0
-	+	2	6
-	+	3	0
-
-> ~/typography-react-ts/src/utils/dom.test.ts
-	*	1736278064	0
-	"	1	0
+> ~/typography-react-ts/tsconfig.app.json
+	*	1736374409	0
+	"	25	0
+	.	26	0
+	+	26	0
 
 > ~/typography-react-ts/src/utils/dom.ts
-	*	1736278054	0
-	"	20	0
+	*	1736373299	0
+	"	1	0
+
+> ~/typography-react-ts/src/utils/logger.ts
+	*	1736372320	0
+	"	13	0
 
 > ~/typography-react-ts/src/main.tsx
-	*	1736278023	0
-	"	17	24
+	*	1736372277	0
+	"	6	69
 	.	4	0
 	+	5	0
 	+	3	0
 	+	5	0
 	+	4	0
+	k	1	0
+
+> ~/expenses.txt
+	*	1736369763	0
+	"	1	1
+	^	7	1
+	.	7	0
+	+	7	6
+	+	7	0
+	+	7	20
+	+	7	0
+	+	1	0
+	+	7	0
+	+	6	0
+	+	7	23
+	+	1	0
+	+	2	23
+	+	8	0
+	+	4	21
+	+	7	0
+
+> ~/typography-react-ts/node_modules/@types/react-dom/client.d.ts
+	*	1736281769	0
+	"	53	16
 
 > ~/typography-react-ts/src/App.tsx
-	*	1736277990	0
-	"	33	16
+	*	1736281746	0
+	"	40	0
 	^	28	117
 	.	28	118
 	+	9	29
@@ -18155,6 +18191,209 @@ $getbufline(a:buffer_number, 1, '$')
 	+	28	118
 	+	4	0
 	+	28	118
+
+> /tmp/crontab.IwrMzF/crontab
+	*	1736280747	0
+	"	34	190
+	^	34	151
+	.	34	150
+	+	34	150
+
+> /tmp/crontab.iJJqal/crontab
+	*	1736280694	0
+	"	34	8
+
+> ~/.vim/plugin/sum_lines.vim
+	*	1736280646	0
+	"	68	0
+	^	61	9
+	.	68	0
+	+	68	17
+	+	42	0
+	+	42	11
+	+	42	0
+	+	42	11
+	+	42	0
+	+	68	18
+	+	40	10
+	+	37	0
+	+	42	0
+	+	42	17
+	+	42	0
+	+	54	10
+	+	49	35
+	+	42	23
+	+	50	23
+	+	68	14
+	+	42	0
+	+	42	35
+	+	42	34
+	+	42	0
+	+	43	0
+	+	42	0
+	+	42	32
+	+	42	0
+	+	49	36
+	+	68	0
+	+	42	4
+	+	42	0
+	+	49	0
+	+	42	0
+	+	37	0
+	+	34	11
+	+	37	0
+	+	34	11
+	+	37	11
+	+	35	31
+	+	36	0
+	+	37	59
+	+	39	23
+	+	50	5
+	+	51	33
+	+	68	16
+	+	34	40
+	+	34	0
+	+	34	45
+	+	34	0
+	+	19	11
+	+	37	33
+	+	2	40
+	+	18	50
+	+	39	17
+	+	52	23
+	+	36	30
+	+	37	17
+	+	51	16
+	+	38	37
+	+	18	54
+	+	54	0
+	+	52	0
+	+	42	0
+	+	32	11
+	+	20	0
+	+	21	11
+	+	52	42
+	+	53	31
+	+	68	0
+	+	69	0
+	+	68	1
+	+	66	0
+	+	67	28
+	+	65	10
+	+	68	0
+	+	67	44
+	+	65	0
+	+	56	29
+	+	65	14
+	+	68	1
+	+	68	4
+	+	56	31
+	+	67	15
+	+	65	0
+	+	65	15
+	+	65	0
+	+	67	59
+	+	56	36
+	+	56	30
+	+	67	51
+	+	65	0
+	+	58	58
+	+	57	15
+	+	59	0
+	+	60	48
+	+	61	0
+	+	68	0
+	+	65	0
+	+	62	0
+	+	68	0
+
+> /usr/share/vim/vim90/doc/map.txt
+	*	1736280270	0
+	"	1790	28
+
+> /usr/share/vim/vim90/doc/builtin.txt
+	*	1736280257	0
+	"	6272	20
+
+> /usr/share/vim/vim90/doc/editing.txt
+	*	1736280089	0
+	"	262	13
+
+> ~/.vim/.fzf/doc/fzf.txt
+	*	1736279402	0
+	"	71	67
+
+> ~/.vim/autoload/utils.vim
+	*	1736278942	0
+	"	83	8
+	^	71	29
+	.	52	0
+	+	2	0
+	+	4	21
+	+	38	27
+	+	42	0
+	+	40	0
+	+	42	0
+	+	40	13
+	+	40	17
+	+	40	0
+	+	41	0
+	+	40	40
+	+	41	30
+	+	42	0
+	+	51	0
+	+	37	0
+	+	4	0
+	+	3	7
+	+	40	23
+	+	37	0
+	+	5	21
+	+	40	0
+	+	40	46
+	+	35	10
+	+	40	0
+	+	7	0
+	+	40	0
+	+	32	0
+	+	40	0
+	+	33	0
+	+	34	36
+	+	11	25
+	+	39	37
+	+	43	0
+	+	44	33
+	+	50	0
+	+	49	10
+	+	50	0
+	+	36	0
+	+	2	0
+	+	1	1
+	+	52	35
+	+	78	10
+	+	52	10
+	+	73	44
+	+	57	45
+	+	69	66
+	+	73	36
+	+	70	20
+	+	71	15
+	+	72	16
+	+	74	16
+	+	73	0
+	+	71	28
+	+	52	0
+
+> /usr/share/vim/vim90/doc/intro.txt
+	*	1736278790	0
+	"	19	21
+
+> /usr/share/vim/vim90/doc/userfunc.txt
+	*	1736278631	0
+	"	199	1
+
+> ~/typography-react-ts/src/utils/dom.test.ts
+	*	1736278064	0
+	"	1	0
 
 > ~/typography-react-ts/docs/project-requirements-document.prd
 	*	1736271358	0
@@ -18315,10 +18554,6 @@ $getbufline(a:buffer_number, 1, '$')
 	+	13	46
 	+	14	0
 
-> ~/typography-react-ts/tsconfig.app.json
-	*	1736252695	0
-	"	1	0
-
 > ~/typography-react-ts/src/index.css
 	*	1736252522	0
 	"	1	0
@@ -18465,19 +18700,6 @@ $getbufline(a:buffer_number, 1, '$')
 	+	20	0
 	a	1	9
 	b	1	9
-
-> ~/typography-react-ts/src/core/sum.ts
-	*	1736249480	0
-	"	2	0
-	^	2	41
-	.	5	0
-	+	5	0
-	+	2	20
-	+	4	0
-	+	2	12
-	+	5	0
-	+	2	40
-	+	5	0
 
 > ~/typography-react-ts/dist/assets/index-Dj94ZxMo.js
 	*	1736202769	0
@@ -22763,10 +22985,6 @@ $getbufline(a:buffer_number, 1, '$')
 	^	1	11
 	.	1	10
 	+	1	10
-
-> ~/.vim/.fzf/doc/fzf.txt
-	*	1735227343	0
-	"	2	67
 
 > ftp://128.140.63.20/home/vivek/file.txt
 	*	1735227188	0
@@ -32878,10 +33096,6 @@ $getbufline(a:buffer_number, 1, '$')
 	*	1729152855	0
 	"	3346	7
 
-> /usr/share/vim/vim90/doc/map.txt
-	*	1729152501	0
-	"	1493	20
-
 > ~/tooling/app_ideas/notetaking.txt
 	*	1729150098	0
 	"	22	25
@@ -37345,66 +37559,6 @@ $getbufline(a:buffer_number, 1, '$')
 	+	224	19
 	+	192	154
 
-> ~/.vim/autoload/utils.vim
-	*	1725378817	0
-	"	88	10
-	^	71	29
-	.	52	0
-	+	2	0
-	+	4	21
-	+	38	27
-	+	42	0
-	+	40	0
-	+	42	0
-	+	40	13
-	+	40	17
-	+	40	0
-	+	41	0
-	+	40	40
-	+	41	30
-	+	42	0
-	+	51	0
-	+	37	0
-	+	4	0
-	+	3	7
-	+	40	23
-	+	37	0
-	+	5	21
-	+	40	0
-	+	40	46
-	+	35	10
-	+	40	0
-	+	7	0
-	+	40	0
-	+	32	0
-	+	40	0
-	+	33	0
-	+	34	36
-	+	11	25
-	+	39	37
-	+	43	0
-	+	44	33
-	+	50	0
-	+	49	10
-	+	50	0
-	+	36	0
-	+	2	0
-	+	1	1
-	+	52	35
-	+	78	10
-	+	52	10
-	+	73	44
-	+	57	45
-	+	69	66
-	+	73	36
-	+	70	20
-	+	71	15
-	+	72	16
-	+	74	16
-	+	73	0
-	+	71	28
-	+	52	0
-
 > ~/golang/viminfo_utils/oldutils/oldutils.go
 	*	1725367389	0
 	"	1	0
@@ -38379,10 +38533,6 @@ $getbufline(a:buffer_number, 1, '$')
 	+	11	0
 	+	399	0
 	+	398	0
-
-> /usr/share/vim/vim90/doc/editing.txt
-	*	1724981125	0
-	"	287	35
 
 > ~/pyscripts/server.py
 	*	1724980592	0
