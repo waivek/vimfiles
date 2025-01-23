@@ -25,6 +25,11 @@ function! s:SearchVimFunction()
 endfunction
 
 
+function! s:SearchManPageFunction()
+    call s:RestoreWrapscanOnCmdlineLeave()
+    return '/^\s*\zs[-a-zA-Z]*'
+endfunction
+
 function! s:SearchPythonFunction()
     call s:RestoreWrapscanOnCmdlineLeave()
     return '/\(def\|class\)\s\+\w*'
@@ -94,6 +99,7 @@ au BufRead *.vim nnoremap  <expr> <buffer> gm <SID>SearchVimFunction()
 au BufRead vimrc nnoremap  <expr> <buffer> gm <SID>SearchVimFunction()
 au BufRead *.py nnoremap  <expr> <buffer> gm <SID>SearchPythonFunction()
 au BufRead *.js,*.html nnoremap  <expr> <buffer> gm <SID>SearchJavascriptFunction()
+au BufRead *.man nnoremap  <expr> <buffer> gm <SID>SearchManPageFunction()
 au BufRead ~/vimfiles/performance/*.txt nnoremap  <expr> <buffer> gm <SID>SearchVimProfileFunction()
 au BufRead builtin.txt nnoremap <expr> <buffer> gm <SID>SearchEvalFunction()
 

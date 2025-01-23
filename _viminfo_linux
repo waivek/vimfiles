@@ -11,29 +11,305 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/\C\<nextStep\>
+~MSle0~/preview-window
 
 # Last Substitute Search Pattern:
 ~MSle0&diff 
 
 # Last Substitute String:
-$getbufline(a:buffer_number, 1, '$')
+$
 
 # Command Line History (newest to oldest):
 :qa
-|2,0,1736454714,,"qa"
-:q
-|2,0,1736451864,,"q"
+|2,0,1737591153,,"qa"
+:Grep -g '*.vim' enter
+|2,0,1737590395,,"Grep -g '*.vim' enter"
 :Rg
-|2,0,1736382000,,"Rg"
+|2,0,1737571178,,"Rg"
+:Grep
+|2,0,1737571177,,"Grep"
+:Grep -uu -g '*.vim' '#.*preview'
+|2,0,1737571160,,"Grep -uu -g '*.vim' '#.*preview'"
+:Grep -uu -g '*.vim' '\bbat'
+|2,0,1737571144,,"Grep -uu -g '*.vim' '\\bbat'"
+:Grep -uu -g '*.vim' \bbat
+|2,0,1737571140,,"Grep -uu -g '*.vim' \\bbat"
+:Grep -uu -g '*.vim' bat
+|2,0,1737571133,,"Grep -uu -g '*.vim' bat"
+:pwd
+|2,0,1737571117,,"pwd"
+:Grep -uu -g '*.vim' preview
+|2,0,1737571013,,"Grep -uu -g '*.vim' preview"
+:Grep -uu -g '*.vim' fzf#run
+|2,0,1737570990,,"Grep -uu -g '*.vim' fzf#run"
+:Grep -uu -g '*.vim' fzf
+|2,0,1737570936,,"Grep -uu -g '*.vim' fzf"
+:Grep -g '*.vim' fzf
+|2,0,1737570915,,"Grep -g '*.vim' fzf"
+:Grep -g '*.vim' fzf#vim#run
+|2,0,1737570910,,"Grep -g '*.vim' fzf#vim#run"
+:Grep -g '*.vim' preview
+|2,0,1737570869,,"Grep -g '*.vim' preview"
+:Grep -g '*.vim' preview\
+|2,0,1737570866,,"Grep -g '*.vim' preview\\"
+:Grep -g '*.vim' preview\.sh
+|2,0,1737570861,,"Grep -g '*.vim' preview\\.sh"
+:cd ~/.vim/plugged/
+|2,0,1737570838,,"cd ~/.vim/plugged/"
+:HotReload
+|2,0,1737570784,,"HotReload"
+:h fzf#run
+|2,0,1737570569,,"h fzf#run"
+:h fzf-vim
+|2,0,1737570528,,"h fzf-vim"
+:q!
+|2,0,1737570489,,"q!"
+:term
+|2,0,1737570480,,"term"
+:Grep '^\s*Capture'
+|2,0,1737570353,,"Grep '^\\s*Capture'"
+:Grep Capture
+|2,0,1737570341,,"Grep Capture"
+:grep -g '*.vim' -g 'vimrc' --fixed-strings 
+|2,0,1737570338,,"grep -g '*.vim' -g 'vimrc' --fixed-strings "
+:Grep ^\s*Capture
+|2,0,1737570331,,"Grep ^\\s*Capture"
+:Grep ^if
+|2,0,1737570311,,"Grep ^if"
+:Grep if.*enter
+|2,0,1737570304,,"Grep if.*enter"
+:Grep _enter
+|2,0,1737570288,,"Grep _enter"
+:Grep   
+|2,0,1737570179,,"Grep   "
+:Grep enter
+|2,0,1737570143,,"Grep enter"
+:Grep 
+|2,0,1737568852,,"Grep "
+:Grename
+|2,0,1737568830,,"Grename"
+:h fzf#vim#with_preview
+|2,0,1737568577,,"h fzf#vim#with_preview"
+:BetterRg -uu -g '*.vim' preview
+|2,0,1737568280,,"BetterRg -uu -g '*.vim' preview"
+:BetterR
+|2,0,1737568266,,"BetterR"
+:h fzf
+|2,0,1737567502,,"h fzf"
+:h :edit
+|2,0,1737567268,,"h :edit"
+: :edit
+|2,0,1737567265,," :edit"
+:ExtractArguments
+|2,0,1737567170,,"ExtractArguments"
+:bd
+|2,0,1737567020,,"bd"
+:cl
+|2,0,1737563590,,"cl"
+:h fzf.vim
+|2,0,1737563391,,"h fzf.vim"
+:h --files
+|2,0,1737563249,,"h --files"
+:h f-args
+|2,0,1737562975,,"h f-args"
+:Tab /->/
+|2,0,1737544097,,"Tab /->/"
+:q
+|2,0,1737543528,,"q"
+:verbose command Rg
+|2,0,1737534731,,"verbose command Rg"
+:h :c
+|2,0,1737534729,,"h :c"
+:Bg 'abc'
+|2,0,1737534724,,"Bg 'abc'"
+:Bg abc
+|2,0,1737534721,,"Bg abc"
+:Bb abc
+|2,0,1737534717,,"Bb abc"
+:Bg
+|2,0,1737523505,,"Bg"
+:Bg asdf
+|2,0,1737523503,,"Bg asdf"
+:so %
+|2,0,1737523497,,"so %"
+:echo $FZF_DEFAULT_COMMAND
+|2,0,1737523458,,"echo $FZF_DEFAULT_COMMAND"
+:29
+|2,0,1737523437,,"29"
+:Capture verbose command Rg
+|2,0,1737521828,,"Capture verbose command Rg"
+:Template
+|2,0,1737521819,,"Template"
+:e better-rg.vim
+|2,0,1737521816,,"e better-rg.vim"
+:cd ~/.vim/plugin/
+|2,0,1737521750,,"cd ~/.vim/plugin/"
+:Capture
+|2,0,1737521740,,"Capture"
+:Capture 
+|2,0,1737521733,,"Capture "
+:e ~/tooling/app_ideas/ripgrep-helper.txt
+|2,0,1737519593,,"e ~/tooling/app_ideas/ripgrep-helper.txt"
+:h :Rg
+|2,0,1737519524,,"h :Rg"
+:H :Rg
+|2,0,1737519521,,"H :Rg"
+:%!ansi2txt
+|2,0,1737442254,,"%!ansi2txt"
+:e
+|2,0,1737438999,,"e"
+:e CustomReporter.ts
+|2,0,1737437974,,"e CustomReporter.ts"
+:e vitest.error.txt
+|2,0,1737437950,,"e vitest.error.txt"
+:e!
+|2,0,1737434743,,"e!"
+:e test-errors.txt
+|2,0,1737425306,,"e test-errors.txt"
+:echo expand("%:p")
+|2,0,1737424261,,"echo expand(\"%:p\")"
+:copen
+|2,0,1737423661,,"copen"
+:Cfilter vitest
+|2,0,1737423610,,"Cfilter vitest"
+:cfile ~/tmp/cfile
+|2,0,1737423567,,"cfile ~/tmp/cfile"
+:w
+|2,0,1737430260,,"w"
+:e vitest/dist/chunks/index.DsZFoqi9.js
+|2,0,1737423125,,"e vitest/dist/chunks/index.DsZFoqi9.js"
+:e tasks-3ZnPj1LR.d.ts
+|2,0,1737423021,,"e tasks-3ZnPj1LR.d.ts"
+:R
+|2,0,1737423001,,"R"
+:e dist/utils.js
+|2,0,1737422770,,"e dist/utils.js"
+:e dist/utils.d.ts
+|2,0,1737422763,,"e dist/utils.d.ts"
+:e utils.d.ts
+|2,0,1737422758,,"e utils.d.ts"
+:e dist/chunk-tasks.js
+|2,0,1737422735,,"e dist/chunk-tasks.js"
+:e chunk
+|2,0,1737422731,,"e chunk"
+:e 
+|2,0,1737422721,,"e "
+:e node_modules/@vitest/runner/dist/chunk-tasks.js
+|2,0,1737422717,,"e node_modules/@vitest/runner/dist/chunk-tasks.js"
+:e runne
+|2,0,1737421289,,"e runne"
+:e node_modules/vitest/dist/chunks/index.DsZFoqi9.js
+|2,0,1737420487,,"e node_modules/vitest/dist/chunks/index.DsZFoqi9.js"
+:e vitest.config.ts
+|2,0,1737420307,,"e vitest.config.ts"
+:cn
+|2,0,1737423536,,"cn"
+:cfile %
+|2,0,1737423533,,"cfile %"
+: w ~/tmp/cfile
+|2,0,1737423531,," w ~/tmp/cfile"
+:e tsconfig.json
+|2,0,1737414968,,"e tsconfig.json"
+:e tsconfig.app.json
+|2,0,1737414852,,"e tsconfig.app.json"
+:e tsconfig.node.json
+|2,0,1737414848,,"e tsconfig.node.json"
+:CocRestart
+|2,0,1737414789,,"CocRestart"
+:h cfile
+|2,0,1737017569,,"h cfile"
+:b!# | bd! #
+|2,0,1737004123,,"b!# | bd! #"
+:.!git log
+|2,0,1737004115,,".!git log"
+:%!git log
+|2,0,1737004089,,"%!git log"
+:b
+|2,0,1737004084,,"b"
+:!git log
+|2,0,1737004068,,"!git log"
+:e commit.md
+|2,0,1737004058,,"e commit.md"
+:Rename format.md
+|2,0,1737003182,,"Rename format.md"
+:e journey/format.txt
+|2,0,1737003176,,"e journey/format.txt"
+:e journey_create.py
+|2,0,1736994384,,"e journey_create.py"
+:e .gitignore
+|2,0,1736900435,,"e .gitignore"
+:e vi
+|2,0,1736898786,,"e vi"
+:RunCreateCommand
+|2,0,1736893547,,"RunCreateCommand"
+:A
+|2,0,1736892701,,"A"
+:e oldfiles.py
+|2,0,1736892653,,"e oldfiles.py"
+:%!strip-ansi
+|2,0,1736555479,,"%!strip-ansi"
+:%!bat %
+|2,0,1736555464,,"%!bat %"
+:1,$?RERUN?-1d
+|2,0,1736554327,,"1,$?RERUN?-1d"
+:$?RERUN?-1,1d
+|2,0,1736554286,,"$?RERUN?-1,1d"
+:$?RERUN?-1,1
+|2,0,1736554271,,"$?RERUN?-1,1"
+:%!strip-ansi | 1,$?RERUN?-1d
+|2,0,1736554266,,"%!strip-ansi | 1,$?RERUN?-1d"
+:.,.+1e
+|2,0,1736554144,,".,.+1e"
+:%!strip-ansi \| :
+|2,0,1736553800,,"%!strip-ansi \\| :"
+:1,$?RERUN?-1
+|2,0,1736553751,,"1,$?RERUN?-1"
+:$?RERUN?-1,2
+|2,0,1736553739,,"$?RERUN?-1,2"
+:$?RERUN?-1,0
+|2,0,1736553734,,"$?RERUN?-1,0"
+:$?RERUN?-1
+|2,0,1736553725,,"$?RERUN?-1"
+:$?RERUN?
+|2,0,1736553722,,"$?RERUN?"
+:?RERUN?
+|2,0,1736553720,,"?RERUN?"
+:?RERUN?.-1
+|2,0,1736553715,,"?RERUN?.-1"
+:?RERUN?-1
+|2,0,1736553711,,"?RERUN?-1"
+:$?RERUN\|DEV?+1,1d
+|2,0,1736553364,,"$?RERUN\\|DEV?+1,1d"
+:$?RERUN\|DEV?,1d
+|2,0,1736553343,,"$?RERUN\\|DEV?,1d"
+:$?RERUN\|DEV?,.1d
+|2,0,1736553335,,"$?RERUN\\|DEV?,.1d"
+:$?RERUN\|DEV,d1
+|2,0,1736553281,,"$?RERUN\\|DEV,d1"
+:$?RERUN\|DEVd1
+|2,0,1736553276,,"$?RERUN\\|DEVd1"
+:$?RERUN\|DEVd0
+|2,0,1736553266,,"$?RERUN\\|DEVd0"
+:$?RERUN\|DEV
+|2,0,1736553259,,"$?RERUN\\|DEV"
+:$?RERUN|DEV
+|2,0,1736553254,,"$?RERUN|DEV"
+:!start everything -path .
+|2,0,1736553068,,"!start everything -path ."
+:e vitest.reporter.json
+|2,0,1736552004,,"e vitest.reporter.json"
+:set ft=man
+|2,0,1736553173,,"set ft=man"
+:qa!
+|2,0,1736551455,,"qa!"
+:set wrap
+|2,0,1736551436,,"set wrap"
+:e tsconfig.strict.json
+|2,0,1736551191,,"e tsconfig.strict.json"
+:`
+|2,0,1736538861,,"`"
 :e src/utils/elementSelector.ts
 |2,0,1736374672,,"e src/utils/elementSelector.ts"
-:e
-|2,0,1736374644,,"e"
-:q!
-|2,0,1736374643,,"q!"
-:term
-|2,0,1736374635,,"term"
 :e src/utils/elementSelector.test.ts
 |2,0,1736374626,,"e src/utils/elementSelector.test.ts"
 :CocStatus
@@ -48,8 +324,6 @@ $getbufline(a:buffer_number, 1, '$')
 |2,0,1736373288,,"ALE"
 :ALEDisable
 |2,0,1736373284,,"ALEDisable"
-:e tsconfig.json
-|2,0,1736374396,,"e tsconfig.json"
 :Su
 |2,0,1736369238,,"Su"
 :SumIt
@@ -74,10 +348,6 @@ $getbufline(a:buffer_number, 1, '$')
 |2,0,1736279428,,"h builtin"
 :echo bufnr('%')
 |2,0,1736279051,,"echo bufnr('%')"
-:HotReload
-|2,0,1736279041,,"HotReload"
-:ExtractArguments
-|2,0,1736279002,,"ExtractArguments"
 :e ../uti
 |2,0,1736278935,,"e ../uti"
 :h builtin.txt
@@ -108,8 +378,6 @@ $getbufline(a:buffer_number, 1, '$')
 |2,0,1736278247,,"echo getbufline()"
 :e ~/.vim/plugin/sum_lines.vim
 |2,0,1736278206,,"e ~/.vim/plugin/sum_lines.vim"
-:pwd
-|2,0,1736278128,,"pwd"
 :e ~/expenses.txt
 |2,0,1736278123,,"e ~/expenses.txt"
 :e src/utils/dom.test.ts
@@ -124,16 +392,12 @@ $getbufline(a:buffer_number, 1, '$')
 |2,0,1736262233,,"e src/core/sum.ts"
 :PlugInstall
 |2,0,1736261990,,"PlugInstall"
-:so %
-|2,0,1736261988,,"so %"
 :edit $MYVIMRC
 |2,0,1736261977,,"edit $MYVIMRC"
 :e index.html
 |2,0,1736258276,,"e index.html"
 :e dist/index.html
 |2,0,1736253463,,"e dist/index.html"
-:e tsconfig.app.json
-|2,0,1736252691,,"e tsconfig.app.json"
 :e vite.config.ts
 |2,0,1736252674,,"e vite.config.ts"
 :T
@@ -148,16 +412,10 @@ $getbufline(a:buffer_number, 1, '$')
 |2,0,1736250006,,"e mai"
 :e dist/typography-react-ts.umd.cjs
 |2,0,1736202534,,"e dist/typography-react-ts.umd.cjs"
-:e 
-|2,0,1736202084,,"e "
 :e vite-env.d.ts
 |2,0,1736202080,,"e vite-env.d.ts"
 :evi
 |2,0,1736202078,,"evi"
-:set ft=man
-|2,0,1736249642,,"set ft=man"
-:e!
-|2,0,1736201632,,"e!"
 :.,.+1e 
 |2,0,1736201087,,".,.+1e "
 :e dist/demo.html
@@ -184,10 +442,6 @@ $getbufline(a:buffer_number, 1, '$')
 |2,0,1736071093,,"RunCreateCommand "
 :e ~/tooling/my-shell-scripting-language.txt
 |2,0,1736066299,,"e ~/tooling/my-shell-scripting-language.txt"
-:qa!
-|2,0,1736068645,,"qa!"
-:b!# | bd! #
-|2,0,1736068643,,"b!# | bd! #"
 :diffthis
 |2,0,1736068599,,"diffthis"
 :%sort u
@@ -240,12 +494,8 @@ $getbufline(a:buffer_number, 1, '$')
 |2,0,1735908967,,"e commit-message-unwrapped.txt"
 :e commit-message-buggy.txt
 |2,0,1735908956,,"e commit-message-buggy.txt"
-:bd
-|2,0,1735908197,,"bd"
 :e commit-message.txt
 |2,0,1735907921,,"e commit-message.txt"
-:CocRestart
-|2,0,1735907614,,"CocRestart"
 :e requirements.txt
 |2,0,1735907589,,"e requirements.txt"
 :e cache.py
@@ -286,8 +536,6 @@ $getbufline(a:buffer_number, 1, '$')
 |2,0,1735841101,,"enew"
 :g/Not provided/d
 |2,0,1735836299,,"g/Not provided/d"
-:Template
-|2,0,1735835719,,"Template"
 :a
 |2,0,1735828230,,"a"
 :e src/utils/leaderboard_chrome.py
@@ -368,8 +616,6 @@ $getbufline(a:buffer_number, 1, '$')
 |2,0,1735724340,,"ln"
 :lnext
 |2,0,1735724335,,"lnext"
-:cn
-|2,0,1735724334,,"cn"
 :set updatetime
 |2,0,1735723465,,"set updatetime"
 :h 'updatetime'
@@ -420,12 +666,8 @@ $getbufline(a:buffer_number, 1, '$')
 |2,0,1735675931,,"%!uniq -c"
 :%sor
 |2,0,1735675928,,"%sor"
-:copen
-|2,0,1735675906,,"copen"
 :grep -g '*.py' --fixed-strings 'from worker'
 |2,0,1735675903,,"grep -g '*.py' --fixed-strings 'from worker'"
-:cfile %
-|2,0,1735675521,,"cfile %"
 :e requirements-large.txt
 |2,0,1735675494,,"e requirements-large.txt"
 :e .config/setup.fish
@@ -596,8 +838,6 @@ $getbufline(a:buffer_number, 1, '$')
 |2,0,1735229521,,"h netrw"
 :Explore
 |2,0,1735229457,,"Explore"
-:!start everything -path .
-|2,0,1735229453,,"!start everything -path ."
 :netrw
 |2,0,1735229452,,"netrw"
 :h 
@@ -610,8 +850,6 @@ $getbufline(a:buffer_number, 1, '$')
 |2,0,1735229222,,"e ~/.vim/plugin/profile.vim"
 :verbose command Profile
 |2,0,1735229216,,"verbose command Profile"
-:h fzf
-|2,0,1735227340,,"h fzf"
 :e scp://128.140.63.20//home/vivek/file1.txt
 |2,0,1735227312,,"e scp://128.140.63.20//home/vivek/file1.txt"
 :e config
@@ -702,8 +940,6 @@ $getbufline(a:buffer_number, 1, '$')
 |2,0,1734097404,," write!"
 : w!
 |2,0,1734097393,," w!"
-:w
-|2,0,1734097281,,"w"
 :e ~/.ssh/known_hosts
 |2,0,1734093381,,"e ~/.ssh/known_hosts"
 ::q!q!
@@ -738,8 +974,6 @@ $getbufline(a:buffer_number, 1, '$')
 |2,0,1732663577,,"set ft=htmldjango"
 :e tmp_peewee_endpoint.py
 |2,0,1732653784,,"e tmp_peewee_endpoint.py"
-:set wrap
-|2,0,1732631302,,"set wrap"
 :e base.html
 |2,0,1732610715,,"e base.html"
 :e tem
@@ -924,8 +1158,6 @@ $getbufline(a:buffer_number, 1, '$')
 |2,0,1731534361,,"Date 2024-11-14"
 :e __init__.py
 |2,0,1731277908,,"e __init__.py"
-:29
-|2,0,1731266217,,"29"
 :%!python3 -m json.tool
 |2,0,1731264693,,"%!python3 -m json.tool"
 : w data/page-pretty.json 
@@ -936,8 +1168,6 @@ $getbufline(a:buffer_number, 1, '$')
 |2,0,1731264092,,".! w"
 :e tests/test_pflix_scrape.py
 |2,0,1731264078,,"e tests/test_pflix_scrape.py"
-:A
-|2,0,1731262762,,"A"
 :syntax on
 |2,0,1731257557,,"syntax on"
 :syntax off
@@ -1004,8 +1234,6 @@ $getbufline(a:buffer_number, 1, '$')
 |2,0,1730731661,,"e viewworkers.py"
 :e worker_single.py
 |2,0,1730731347,,"e worker_single.py"
-:R
-|2,0,1730730960,,"R"
 :jjj
 |2,0,1730729618,,"jjj"
 :jpre
@@ -1066,8 +1294,6 @@ $getbufline(a:buffer_number, 1, '$')
 |2,0,1730412199,,"e worker_download_chat.py"
 :CocI
 |2,0,1730201061,,"CocI"
-:b
-|2,0,1730201049,,"b"
 :CocList
 |2,0,1730200971,,"CocList"
 :CocList services
@@ -1296,8 +1522,6 @@ $getbufline(a:buffer_number, 1, '$')
 |2,0,1729195877,,"33"
 :Ru
 |2,0,1729195175,,"Ru"
-:RunCreateCommand
-|2,0,1729193722,,"RunCreateCommand"
 : w ~/tmp/python_common_slow_imports.txt
 |2,0,1729193200,," w ~/tmp/python_common_slow_imports.txt"
 :g/0\.00 seconds/d
@@ -2314,8 +2538,6 @@ $getbufline(a:buffer_number, 1, '$')
 |2,0,1725378363,,"MRU mapp"
 :MRU vim
 |2,0,1725378169,,"MRU vim"
-:h fzf#run
-|2,0,1725377712,,"h fzf#run"
 :e oldutils/
 |2,0,1725365832,,"e oldutils/"
 :find X11/
@@ -2744,8 +2966,6 @@ $getbufline(a:buffer_number, 1, '$')
 |2,0,1724279145,,"OpenDB data/oldfiles.db"
 :Rename ipython-debug.py
 |2,0,1724276080,,"Rename ipython-debug.py"
-:echo expand("%:p")
-|2,0,1724274169,,"echo expand(\"%:p\")"
 :e ~/.custompy
 |2,0,1724274147,,"e ~/.custompy"
 :e ~/.
@@ -2966,8 +3186,6 @@ $getbufline(a:buffer_number, 1, '$')
 |2,0,1724015654,,"MRU 2:worker_oldfiles_to_sqlite.py"
 :!rm data/oldfiles.db
 |2,0,1724015544,,"!rm data/oldfiles.db"
-:e oldfiles.py
-|2,0,1724014102,,"e oldfiles.py"
 :e worker_oldfiles_to_sqlite.py
 |2,0,1724014097,,"e worker_oldfiles_to_sqlite.py"
 :MRU l
@@ -3108,8 +3326,6 @@ $getbufline(a:buffer_number, 1, '$')
 |2,0,1723624099,,"e tmp/file.ansilog"
 :e ~/.vim/syntax/ansilog.vim
 |2,0,1723624033,,"e ~/.vim/syntax/ansilog.vim"
-:%!bat %
-|2,0,1723589152,,"%!bat %"
 :let g:colorizer_conceal_cursor_mode='nvc'
 |2,0,1723589077,,"let g:colorizer_conceal_cursor_mode='nvc'"
 :let g:colorizer_auto_color = 1
@@ -3894,10 +4110,6 @@ $getbufline(a:buffer_number, 1, '$')
 |2,0,1722482230,,"MRU common"
 :verbose command
 |2,0,1722481803,,"verbose command"
-:Capture 
-|2,0,1722481801,,"Capture "
-:Capture
-|2,0,1722481797,,"Capture"
 :Buffers plugin/print-personal-mappings.vim
 |2,0,1722480767,,"Buffers plugin/print-personal-mappings.vim"
 :Buffers personal
@@ -3970,8 +4182,6 @@ $getbufline(a:buffer_number, 1, '$')
 |2,0,1722455371,,"call fzf#vim#commands(<bang>0)"
 :call
 |2,0,1722455366,,"call"
-:h :Rg
-|2,0,1722455308,,"h :Rg"
 :MRU fzf
 |2,0,1722455214,,"MRU fzf"
 :Command
@@ -4774,8 +4984,6 @@ $getbufline(a:buffer_number, 1, '$')
 |2,0,1720873371,,"RG "
 :RgHome
 |2,0,1720873368,,"RgHome"
-:verbose command Rg
-|2,0,1720873349,,"verbose command Rg"
 :verbose command RG
 |2,0,1720873344,,"verbose command RG"
 :RG
@@ -4898,8 +5106,6 @@ $getbufline(a:buffer_number, 1, '$')
 |2,0,1720619441,,"ecoh \""
 :kk
 |2,0,1720576787,,"kk"
-:e .gitignore
-|2,0,1720527721,,"e .gitignore"
 :g/200/d
 |2,0,1720527517,,"g/200/d"
 :v/200/d
@@ -4964,8 +5170,6 @@ $getbufline(a:buffer_number, 1, '$')
 |2,0,1719694993,,"changes 3"
 :v/[A-Za-z0-9-]\{14,\}/d
 |2,0,1719684816,,"v/[A-Za-z0-9-]\\{14,\\}/d"
-:grep -g '*.vim' -g 'vimrc' --fixed-strings 
-|2,0,1719684811,,"grep -g '*.vim' -g 'vimrc' --fixed-strings "
 :v/[A-Za-z0-9-]\{10,\}/d
 |2,0,1719684777,,"v/[A-Za-z0-9-]\\{10,\\}/d"
 :e .git/config
@@ -6020,8 +6224,6 @@ $getbufline(a:buffer_number, 1, '$')
 |2,0,1717148480,,"b __init__.py"
 :grep -g '*.py' --fixed-strings Frozen
 |2,0,1717148223,,"grep -g '*.py' --fixed-strings Frozen"
-:Grep 
-|2,0,1717148215,,"Grep "
 :e iterator.json
 |2,0,1717147718,,"e iterator.json"
 :e iter
@@ -6230,8 +6432,6 @@ $getbufline(a:buffer_number, 1, '$')
 |2,0,1716959543,,"15"
 ::q
 |2,0,1716959219,,":q"
-:`
-|2,0,1716956207,,"`"
 :GitFiles 
 |2,0,1716956152,,"GitFiles "
 :GitFiles css
@@ -9568,8 +9768,6 @@ $getbufline(a:buffer_number, 1, '$')
 |2,0,1693233151,,"call fzf#run({})"
 :call fzf#run()
 |2,0,1693233143,,"call fzf#run()"
-:h fzf-vim
-|2,0,1693233116,,"h fzf-vim"
 :echo $FZF_D
 |2,0,1693233114,,"echo $FZF_D"
 :h FZF_DE
@@ -9684,8 +9882,6 @@ $getbufline(a:buffer_number, 1, '$')
 |2,0,1693059550,,"set modeline"
 :set modeline?
 |2,0,1693059547,,"set modeline?"
-:e tsconfig.node.json
-|2,0,1693059513,,"e tsconfig.node.json"
 :MRU Videos
 |2,0,1693059384,,"MRU Videos"
 :e src/components/Label.vue
@@ -11622,6 +11818,208 @@ $getbufline(a:buffer_number, 1, '$')
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+? ^\s*$\n\s*$
+|2,1,1737591150,,"^\\s*$\\n\\s*$"
+?/preview-window
+|2,1,1737571518,47,"preview-window"
+?/preview
+|2,1,1737571483,47,"preview"
+?/call
+|2,1,1737571212,47,"call"
+?/\C\<bat\>
+|2,1,1737571081,47,"\\C\\<bat\\>"
+?/b
+|2,1,1737571079,47,"b"
+?/fzf#vim#run
+|2,1,1737570967,47,"fzf#vim#run"
+?/preview\.sh
+|2,1,1737570584,47,"preview\\.sh"
+?/fzf#run
+|2,1,1737570566,47,"fzf#run"
+?/line
+|2,1,1737570419,47,"line"
+?/a:
+|2,1,1737570203,47,"a:"
+?/\\b
+|2,1,1737570051,47,"\\\\b"
+?/grep
+|2,1,1737568675,47,"grep"
+?/previe
+|2,1,1737568648,47,"previe"
+?/run
+|2,1,1737568637,47,"run"
+?/fzf#vim#files
+|2,1,1737568590,47,"fzf#vim#files"
+?/ansi
+|2,1,1737568365,47,"ansi"
+?/sink
+|2,1,1737567147,47,"sink"
+?/'sink'
+|2,1,1737567139,47,"'sink'"
+?/nth
+|2,1,1737567105,47,"nth"
+?/^\s*\zs[-a-zA-Z]*--with-nth
+|2,1,1737567095,47,"^\\s*\\zs[-a-zA-Z]*--with-nth"
+?/with-n
+|2,1,1737567083,47,"with-n"
+?/fzf
+|2,1,1737564528,47,"fzf"
+?/--files
+|2,1,1737563708,47,"--files"
+?/^\s*\zs[-a-zA-Z]*--files
+|2,1,1737563272,47,"^\\s*\\zs[-a-zA-Z]*--files"
+?/^\s*\zs[-a-zA-Z]*fil
+|2,1,1737563271,47,"^\\s*\\zs[-a-zA-Z]*fil"
+?/--fi
+|2,1,1737563269,47,"--fi"
+?/dot
+|2,1,1737543639,47,"dot"
+?/^\s*\zs[-a-zA-Z]*-g
+|2,1,1737535273,47,"^\\s*\\zs[-a-zA-Z]*-g"
+?/\C\<rg\>
+|2,1,1737531209,47,"\\C\\<rg\\>"
+?/rg
+|2,1,1737531206,47,"rg"
+?/sour
+|2,1,1737531086,47,"sour"
+?/source
+|2,1,1737531008,47,"source"
+?/s:fzf
+|2,1,1737531002,47,"s:fzf"
+?/#grep
+|2,1,1737530845,47,"#grep"
+?/s:ag_handler
+|2,1,1737523538,47,"s:ag_handler"
+?/s:
+|2,1,1737523521,47,"s:"
+?/s:type
+|2,1,1737523516,47,"s:type"
+?/arg
+|2,1,1737523388,47,"arg"
+?/RG
+|2,1,1737522002,47,"RG"
+?/fzf#vim#grep
+|2,1,1737521993,47,"fzf#vim#grep"
+?/(
+|2,1,1737521944,47,"("
+?/\(
+|2,1,1737521943,47,"\\("
+?/\\(
+|2,1,1737521941,47,"\\\\("
+?/\f*
+|2,1,1737521939,47,"\\f*"
+?/Rg
+|2,1,1737521776,47,"Rg"
+??Catpure
+|2,1,1737521737,63,"Catpure"
+?/ripgrep
+|2,1,1737519531,47,"ripgrep"
+?/gap-2
+|2,1,1737440549,47,"gap-2"
+?/color
+|2,1,1737437975,47,"color"
+?/codeframe
+|2,1,1737425072,47,"codeframe"
+?/toBe
+|2,1,1737424886,47,"toBe"
+?/27
+|2,1,1737424733,47,"27"
+?/function
+|2,1,1737423663,47,"function"
+?/txt
+|2,1,1737426911,47,"txt"
+?/Test Files
+|2,1,1737423133,47,"Test Files"
+?/["']fail
+|2,1,1737422980,47,"[\"']fail"
+?/["']pass
+|2,1,1737422974,47,"[\"']pass"
+?/"pass
+|2,1,1737422967,47,"\"pass"
+?/fail
+|2,1,1737422962,47,"fail"
+?/getTests
+|2,1,1737422737,47,"getTests"
+?/flat
+|2,1,1737422005,47,"flat"
+?/suite
+|2,1,1737421995,47,"suite"
+?/length
+|2,1,1737421062,47,"length"
+?/\C\<Tests\>
+|2,1,1737420991,47,"\\C\\<Tests\\>"
+?/Tests
+|2,1,1737420987,47,"Tests"
+?/util
+|2,1,1737418799,47,"util"
+?/vitest
+|2,1,1737420165,47,"vitest"
+?/src
+|2,1,1737065903,47,"src"
+?/restart
+|2,1,1737002193,47,"restart"
+?/RERUN
+|2,1,1736898902,47,"RERUN"
+?/jest-dom
+|2,1,1736897052,47,"jest-dom"
+? RERUN
+|2,1,1736554327,,"RERUN"
+?/184ms
+|2,1,1736553767,47,"184ms"
+? RERUN\|DEV
+|2,1,1736553364,,"RERUN\\|DEV"
+? RERUN\|DEV,d1
+|2,1,1736553281,,"RERUN\\|DEV,d1"
+? RERUN\|DEVd1
+|2,1,1736553276,,"RERUN\\|DEVd1"
+? RERUN\|DEVd0
+|2,1,1736553266,,"RERUN\\|DEVd0"
+? RERUN|DEV
+|2,1,1736553254,,"RERUN|DEV"
+?/RER
+|2,1,1736552396,47,"RER"
+?/--outputFile
+|2,1,1736551434,47,"--outputFile"
+?/outdir
+|2,1,1736551338,47,"outdir"
+?/file
+|2,1,1736551067,47,"file"
+?/^\s*\zs[-a-zA-Z]*send-key
+|2,1,1736544098,47,"^\\s*\\zs[-a-zA-Z]*send-key"
+?/^\s*\zs[-a-zA-Z]*--
+|2,1,1736544093,47,"^\\s*\\zs[-a-zA-Z]*--"
+?/^\s*\zs[-a-zA-Z]*send-keys
+|2,1,1736544084,47,"^\\s*\\zs[-a-zA-Z]*send-keys"
+?/\s*\zs[-a-zA-Z]*send-keys
+|2,1,1736544069,47,"\\s*\\zs[-a-zA-Z]*send-keys"
+?/man
+|2,1,1736543922,47,"man"
+?/^\s*send-keys
+|2,1,1736543908,47,"^\\s*send-keys"
+?/command
+|2,1,1736539489,47,"command"
+?/-t
+|2,1,1736538882,47,"-t"
+?/^\s*attach
+|2,1,1736538876,47,"^\\s*attach"
+?/attach
+|2,1,1736538866,47,"attach"
+?/session
+|2,1,1736538808,47,"session"
+?/new-window
+|2,1,1736538784,47,"new-window"
+?/SHELL
+|2,1,1736538762,47,"SHELL"
+?/envirnment
+|2,1,1736538751,47,"envirnment"
+?/-session
+|2,1,1736538386,47,"-session"
+?/new-session
+|2,1,1736538097,47,"new-session"
+?/-d
+|2,1,1736537991,47,"-d"
+?/tmu
+|2,1,1736537783,47,"tmu"
 ?/nextSep
 |2,1,1736372296,47,"nextSep"
 ?/visual
@@ -11662,14 +12060,10 @@ $getbufline(a:buffer_number, 1, '$')
 |2,1,1736249881,47,"prefix"
 ?/Error
 |2,1,1736202734,47,"Error"
-?/session
-|2,1,1736249703,47,"session"
 ?/move-window
 |2,1,1736249644,47,"move-window"
 ?/hello
 |2,1,1736201169,47,"hello"
-? ^\s*$\n\s*$
-|2,1,1736188875,,"^\\s*$\\n\\s*$"
 ?/^\d\. 
 |2,1,1736188735,47,"^\\d\\. "
 ?/weight
@@ -11678,8 +12072,6 @@ $getbufline(a:buffer_number, 1, '$')
 |2,1,1736186885,47,"iglob"
 ? diff 
 |2,1,1736074423,,"diff "
-?/SHELL
-|2,1,1736068583,47,"SHELL"
 ?/tmux
 |2,1,1736065486,47,"tmux"
 ?/automatic
@@ -11940,8 +12332,6 @@ $getbufline(a:buffer_number, 1, '$')
 |2,1,1735565800,47,"back"
 ?/background
 |2,1,1735565654,47,"background"
-?/color
-|2,1,1735565471,47,"color"
 ?/f"\zs
 |2,1,1735565176,47,"f\"\\zs"
 ?/padding
@@ -12700,8 +13090,6 @@ $getbufline(a:buffer_number, 1, '$')
 |2,1,1729259495,47,"\\C\\<fd\\>"
 ?/sqlite3
 |2,1,1729267201,47,"sqlite3"
-?/file
-|2,1,1729267065,47,"file"
 ?/FIEL
 |2,1,1729255703,47,"FIEL"
 ?/--nth
@@ -13072,8 +13460,6 @@ $getbufline(a:buffer_number, 1, '$')
 |2,1,1727865598,47,"bat"
 ?/vcs
 |2,1,1727860487,47,"vcs"
-?/nth
-|2,1,1727860333,47,"nth"
 ?/vim$
 |2,1,1727860327,47,"vim$"
 ?/rename
@@ -13094,8 +13480,6 @@ $getbufline(a:buffer_number, 1, '$')
 |2,1,1727781088,,"https:\\/\\/github\\.com\\/[^)]*"
 ? github
 |2,1,1727781033,,"github"
-?/source
-|2,1,1727780567,47,"source"
 ?/bot
 |2,1,1727778559,47,"bot"
 ?/default
@@ -13118,8 +13502,6 @@ $getbufline(a:buffer_number, 1, '$')
 |2,1,1727579717,,"^\\s\\s\\s\\s\\zs.*\\s\\{2,}"
 ?/if 
 |2,1,1727579523,47,"if "
-?/fzf
-|2,1,1727446916,47,"fzf"
 ?/timeago
 |2,1,1727446676,47,"timeago"
 ?/reoad
@@ -13214,10 +13596,6 @@ $getbufline(a:buffer_number, 1, '$')
 |2,1,1726963329,47,"ll"
 ?/bugs
 |2,1,1726963276,47,"bugs"
-?/preview
-|2,1,1726962481,47,"preview"
-?/ansi
-|2,1,1726305723,47,"ansi"
 ?/workspaces
 |2,1,1726233806,47,"workspaces"
 ?/showoutput
@@ -13634,8 +14012,6 @@ $getbufline(a:buffer_number, 1, '$')
 |2,1,1724243145,47,"Pdb("
 ?/Frame
 |2,1,1724221317,47,"Frame"
-?/line
-|2,1,1724221312,47,"line"
 ?/handler
 |2,1,1724220891,47,"handler"
 ?/write
@@ -13776,8 +14152,6 @@ $getbufline(a:buffer_number, 1, '$')
 |2,1,1723472120,47,"box drawing"
 ?/signature
 |2,1,1723461241,47,"signature"
-?/call
-|2,1,1723460237,47,"call"
 ?/filepath
 |2,1,1723459877,47,"filepath"
 ?/lnum
@@ -14068,8 +14442,6 @@ $getbufline(a:buffer_number, 1, '$')
 |2,1,1722454881,47,"\\f*\\S("
 ?/\f*(
 |2,1,1722454856,47,"\\f*("
-?/dot
-|2,1,1722454844,47,"dot"
 ? Last set from
 |2,1,1722454812,,"Last set from"
 ?/^[|! ]\{4\}[A-Z][a-z0-9A-Z]*\s*[01*+?]\s*:\?custom\(list\)\?,\(s:\)\?\f*\s*:\?\(call\|exe\)
@@ -14904,8 +15276,6 @@ $getbufline(a:buffer_number, 1, '$')
 |2,1,1717923746,,"p[xy]\\?-"
 ?/ui
 |2,1,1717922038,47,"ui"
-?/-d
-|2,1,1717918657,47,"-d"
 ?/3
 |2,1,1717918096,47,"3"
 ??Click
@@ -15842,12 +16212,8 @@ $getbufline(a:buffer_number, 1, '$')
 |2,1,1713929386,47,"commnd"
 ?/tailwind
 |2,1,1713929233,47,"tailwind"
-?/command
-|2,1,1713929166,47,"command"
 ?/list-symbols
 |2,1,1713928386,47,"list-symbols"
-?/function
-|2,1,1713928369,47,"function"
 ?/\(def\|class\)\s\+\w*down
 |2,1,1713887622,47,"\\(def\\|class\\)\\s\\+\\w*down"
 ?/method
@@ -16152,8 +16518,6 @@ $getbufline(a:buffer_number, 1, '$')
 |2,1,1712004297,47,"request\\.args"
 ?/pageCount
 |2,1,1712003127,47,"pageCount"
-?/(
-|2,1,1712001677,47,"("
 ?/sqlite:
 |2,1,1711998922,47,"sqlite:"
 ?/\(def\|class\)\s\+\w*query_videos
@@ -16818,8 +17182,6 @@ $getbufline(a:buffer_number, 1, '$')
 |2,1,1692344079,63,":q"
 ?/\(def\|class\)\s\+\w*print_
 |2,1,1692342214,47,"\\(def\\|class\\)\\s\\+\\w*print_"
-?/arg
-|2,1,1692342070,47,"arg"
 ?/expec
 |2,1,1692301153,47,"expec"
 ?/db.Model
@@ -17710,42 +18072,44 @@ $getbufline(a:buffer_number, 1, '$')
 |2,4,1693311567,,"cont"
 
 # Registers:
-""0	CHAR	0
-	, vi
-|3,1,0,0,1,0,1736382108,", vi"
-"1	LINE	0
-	let x: number = 2
-	let y: string = 'hello'
-	let z: number = x + y
-|3,0,1,1,3,0,1736374605,"let x: number = 2","let y: string = 'hello'","let z: number = x + y"
+"0	CHAR	0
+	'--preview-window', '+{2}-/2'
+|3,0,0,0,1,0,1737571608,"'--preview-window', '+{2}-/2'"
+""1	LINE	0
+	command! -nargs=* Grep call s:Grep(<q-args>)
+|3,1,1,1,1,0,1737590995,"command! -nargs=* Grep call s:Grep(<q-args>)"
 "2	LINE	0
-	x + y
-|3,0,2,1,1,0,1736373354,"x + y"
+	" Grep -uu -g '**/*gged*/**' 'fun'
+|3,0,2,1,1,0,1737590991,"\" Grep -uu -g '**/*gged*/**' 'fun'"
 "3	LINE	0
-	console.log(x);
-|3,0,3,1,1,0,1736373330,"console.log(x);"
+	" Grep -uu -g '**/*gged*/**' 'fun'
+|3,0,3,1,1,0,1737590989,"\" Grep -uu -g '**/*gged*/**' 'fun'"
 "4	LINE	0
-	Auto             :   800
-|3,0,4,1,1,0,1736369759,"Auto             :   800"
+	" if 
+	" Grep 
+|3,0,4,1,2,0,1737590988,"\" if ","\" Grep "
 "5	LINE	0
-	
-|3,0,5,1,1,0,1736369759,""
+	" Use `path`, `ext` and anything else if req to filter ripgrep results before
+	" loading into fzf. After load, use `nth` magic to display the files but
+	" for search and filter it happens via lines on the text.
+|3,0,5,1,3,0,1737590983,"\" Use `path`, `ext` and anything else if req to filter ripgrep results before","\" loading into fzf. After load, use `nth` magic to display the files but","\" for search and filter it happens via lines on the text."
 "6	LINE	0
-	
-|3,0,6,1,1,0,1736369759,""
+	    " let l:fzf_options = ['--no-sort', '--delimiter=:', '--nth=4..', '--preview', 'echo {}']
+|3,0,6,1,1,0,1737590440,"    \" let l:fzf_options = ['--no-sort', '--delimiter=:', '--nth=4..', '--preview', 'echo {}']"
 "7	LINE	0
-	Auto             :   800
-|3,0,7,1,1,0,1736369759,"Auto             :   800"
+	    let l:fzf_options = ''
+	    " let l:fzf_options = '--multi --delimiter=/ --nth -1.. --no-sort --preview "bat --color=always --style=plain {}"'
+	    let l:fzf_options = '--no-sort --delimiter=: --nth 4.. --preview cat'
+|3,0,7,1,3,0,1737590436,"    let l:fzf_options = ''","    \" let l:fzf_options = '--multi --delimiter=/ --nth -1.. --no-sort --preview \"bat --color=always --style=plain {}\"'","    let l:fzf_options = '--no-sort --delimiter=: --nth 4.. --preview cat'"
 "8	LINE	0
-	Electricity      :  1000
-|3,0,8,1,1,0,1736369759,"Electricity      :  1000"
+	    " echo l:source
+|3,0,8,1,1,0,1737590431,"    \" echo l:source"
 "9	LINE	0
-	
-	" call s:SumLines(7)
-|3,0,9,1,2,0,1736369759,"","\" call s:SumLines(7)"
-"a@	CHAR	0
+	" inoremap <expr> <c-x><c-f> fzf#vim#complete#path('rg --files')
+|3,0,9,1,1,0,1737590423,"\" inoremap <expr> <c-x><c-f> fzf#vim#complete#path('rg --files')"
+"a	CHAR	0
 	nojkVnl>nO€ýa
-|3,2,10,0,1,0,1736280694,"nojkVnl>nO€ýa"
+|3,0,10,0,1,0,1737563103,"nojkVnl>nO€ýa"
 "i	CHAR	0
 	ado_up()jk:q!
 |3,0,18,0,1,0,1724200553,"ado_up()jk:q!"
@@ -17814,262 +18178,1494 @@ $getbufline(a:buffer_number, 1, '$')
 |<"    assert x_min < x_max, f\"Invalid x coordinates: min ({x_min}) >= max ({x_max})\"","    assert y_min < y_max, f\"Invalid y coordinates: min ({y_min}) >= max ({y_max})\"","    ","    # Additional geometric checks","    assert abs(y1 - y2) < (y_max - y_min), \"Top edge is not roughly horizontal\"","    assert abs(y3 - y4) < (y_max - y_min), \"Bottom edge is not roughly horizontal\"","    assert abs(x1 - x4) < (x_max - x_min), \"Left edge is not roughly vertical\"",>83
 |<"    assert abs(x2 - x3) < (x_max - x_min), \"Right edge is not roughly vertical\"","","    pretty_string_flat = {","        \"left\": x_min,","        \"right\": x_max,","        \"top\": y_min,","        \"bottom\": y_max,","        \"top_left\": (x1, y1),","        \"top_right\": (x2, y2),","        \"bottom_right\": (x3, y3),","        \"bottom_left\": (x4, y4),","    }","    ","    print(f\"{box} => {pretty_string_flat}\")",""
 "-	CHAR	0
-	, vi
-|3,0,36,0,1,0,1736374648,", vi"
+	"
+|3,0,36,0,1,0,1737590993,"\""
 
 # File marks:
-'0  861  18  ~/typography-react-ts/vitest.error.txt
-|4,48,861,18,1736454715,"~/typography-react-ts/vitest.error.txt"
-'1  60  12  ~/typography-react-ts/src/components/TypographyControls/TypographyControls.tsx
-|4,49,60,12,1736451865,"~/typography-react-ts/src/components/TypographyControls/TypographyControls.tsx"
-'2  60  12  ~/typography-react-ts/src/components/TypographyControls/TypographyControls.tsx
-|4,50,60,12,1736451865,"~/typography-react-ts/src/components/TypographyControls/TypographyControls.tsx"
-'3  1  0  ~/typography-react-ts/src/utils/elementSelector.test.ts
-|4,51,1,0,1736380329,"~/typography-react-ts/src/utils/elementSelector.test.ts"
-'4  1  0  ~/typography-react-ts/src/utils/elementSelector.test.ts
-|4,52,1,0,1736380329,"~/typography-react-ts/src/utils/elementSelector.test.ts"
-'5  1  0  ~/typography-react-ts/src/utils/elementSelector.test.ts
-|4,53,1,0,1736380329,"~/typography-react-ts/src/utils/elementSelector.test.ts"
-'6  1  0  ~/typography-react-ts/src/utils/elementSelector.test.ts
-|4,54,1,0,1736380329,"~/typography-react-ts/src/utils/elementSelector.test.ts"
-'7  6  0  ~/typography-react-ts/tsconfig.json
-|4,55,6,0,1736374477,"~/typography-react-ts/tsconfig.json"
-'8  6  0  ~/typography-react-ts/tsconfig.json
-|4,56,6,0,1736374477,"~/typography-react-ts/tsconfig.json"
-'9  6  0  ~/typography-react-ts/tsconfig.json
-|4,57,6,0,1736374477,"~/typography-react-ts/tsconfig.json"
+'0  36  0  ~/.vim/plugin/better-rg.vim
+|4,48,36,0,1737591155,"~/.vim/plugin/better-rg.vim"
+'1  7  36  ~/.vim/plugged/fzf.vim/bin/preview.sh
+|4,49,7,36,1737570490,"~/.vim/plugged/fzf.vim/bin/preview.sh"
+'2  7  36  ~/.vim/plugged/fzf.vim/bin/preview.sh
+|4,50,7,36,1737570490,"~/.vim/plugged/fzf.vim/bin/preview.sh"
+'3  30  33  ~/.vim/plugin/better-rg.vim
+|4,51,30,33,1737543529,"~/.vim/plugin/better-rg.vim"
+'4  20  33  ~/.vim/plugin/better-rg.vim
+|4,52,20,33,1737543529,"~/.vim/plugin/better-rg.vim"
+'5  33  33  ~/.vim/plugin/better-rg.vim
+|4,53,33,33,1737543529,"~/.vim/plugin/better-rg.vim"
+'6  17  33  ~/.vim/plugin/better-rg.vim
+|4,54,17,33,1737543529,"~/.vim/plugin/better-rg.vim"
+'7  63  153  ~/.vim/plugged/fzf.vim/plugin/fzf.vim
+|4,55,63,153,1737531235,"~/.vim/plugged/fzf.vim/plugin/fzf.vim"
+'8  63  153  ~/.vim/plugged/fzf.vim/plugin/fzf.vim
+|4,56,63,153,1737531235,"~/.vim/plugged/fzf.vim/plugin/fzf.vim"
+'9  63  153  ~/.vim/plugged/fzf.vim/plugin/fzf.vim
+|4,57,63,153,1737531235,"~/.vim/plugged/fzf.vim/plugin/fzf.vim"
 
 # Jumplist (newest first):
--'  861  18  ~/typography-react-ts/vitest.error.txt
-|4,39,861,18,1736454715,"~/typography-react-ts/vitest.error.txt"
--'  1  0  ~/typography-react-ts/vitest.error.txt
-|4,39,1,0,1736454659,"~/typography-react-ts/vitest.error.txt"
--'  60  12  ~/typography-react-ts/src/components/TypographyControls/TypographyControls.tsx
-|4,39,60,12,1736451865,"~/typography-react-ts/src/components/TypographyControls/TypographyControls.tsx"
--'  60  12  ~/typography-react-ts/src/components/TypographyControls/TypographyControls.tsx
-|4,39,60,12,1736451865,"~/typography-react-ts/src/components/TypographyControls/TypographyControls.tsx"
--'  55  12  ~/typography-react-ts/src/components/TypographyControls/TypographyControls.tsx
-|4,39,55,12,1736382106,"~/typography-react-ts/src/components/TypographyControls/TypographyControls.tsx"
--'  55  12  ~/typography-react-ts/src/components/TypographyControls/TypographyControls.tsx
-|4,39,55,12,1736382106,"~/typography-react-ts/src/components/TypographyControls/TypographyControls.tsx"
--'  42  12  ~/typography-react-ts/src/components/TypographyControls/TypographyControls.tsx
-|4,39,42,12,1736382092,"~/typography-react-ts/src/components/TypographyControls/TypographyControls.tsx"
--'  42  12  ~/typography-react-ts/src/components/TypographyControls/TypographyControls.tsx
-|4,39,42,12,1736382092,"~/typography-react-ts/src/components/TypographyControls/TypographyControls.tsx"
--'  45  12  ~/typography-react-ts/src/components/TypographyControls/TypographyControls.tsx
-|4,39,45,12,1736382080,"~/typography-react-ts/src/components/TypographyControls/TypographyControls.tsx"
--'  45  12  ~/typography-react-ts/src/components/TypographyControls/TypographyControls.tsx
-|4,39,45,12,1736382080,"~/typography-react-ts/src/components/TypographyControls/TypographyControls.tsx"
--'  48  16  ~/typography-react-ts/src/components/TypographyControls/TypographyControls.tsx
-|4,39,48,16,1736382065,"~/typography-react-ts/src/components/TypographyControls/TypographyControls.tsx"
--'  48  16  ~/typography-react-ts/src/components/TypographyControls/TypographyControls.tsx
-|4,39,48,16,1736382065,"~/typography-react-ts/src/components/TypographyControls/TypographyControls.tsx"
--'  1  0  ~/typography-react-ts/src/utils/elementSelector.test.ts
-|4,39,1,0,1736382040,"~/typography-react-ts/src/utils/elementSelector.test.ts"
--'  1  0  ~/typography-react-ts/src/utils/elementSelector.test.ts
-|4,39,1,0,1736382040,"~/typography-react-ts/src/utils/elementSelector.test.ts"
--'  1  0  ~/typography-react-ts/src/utils/elementSelector.test.ts
-|4,39,1,0,1736380329,"~/typography-react-ts/src/utils/elementSelector.test.ts"
--'  22  0  ~/typography-react-ts/src/utils/elementSelector.ts
-|4,39,22,0,1736380325,"~/typography-react-ts/src/utils/elementSelector.ts"
--'  22  0  ~/typography-react-ts/src/utils/elementSelector.ts
-|4,39,22,0,1736380325,"~/typography-react-ts/src/utils/elementSelector.ts"
--'  22  0  ~/typography-react-ts/src/utils/elementSelector.ts
-|4,39,22,0,1736380325,"~/typography-react-ts/src/utils/elementSelector.ts"
--'  3  0  ~/typography-react-ts/src/core/sum.ts
-|4,39,3,0,1736374626,"~/typography-react-ts/src/core/sum.ts"
--'  3  0  ~/typography-react-ts/src/core/sum.ts
-|4,39,3,0,1736374626,"~/typography-react-ts/src/core/sum.ts"
--'  3  0  ~/typography-react-ts/src/core/sum.ts
-|4,39,3,0,1736374626,"~/typography-react-ts/src/core/sum.ts"
--'  6  0  ~/typography-react-ts/tsconfig.json
-|4,39,6,0,1736374477,"~/typography-react-ts/tsconfig.json"
--'  6  0  ~/typography-react-ts/tsconfig.json
-|4,39,6,0,1736374477,"~/typography-react-ts/tsconfig.json"
--'  6  0  ~/typography-react-ts/tsconfig.json
-|4,39,6,0,1736374477,"~/typography-react-ts/tsconfig.json"
--'  7  27  ~/typography-react-ts/tsconfig.json
-|4,39,7,27,1736374474,"~/typography-react-ts/tsconfig.json"
--'  7  27  ~/typography-react-ts/tsconfig.json
-|4,39,7,27,1736374474,"~/typography-react-ts/tsconfig.json"
--'  7  27  ~/typography-react-ts/tsconfig.json
-|4,39,7,27,1736374474,"~/typography-react-ts/tsconfig.json"
--'  1  0  ~/typography-react-ts/tsconfig.json
-|4,39,1,0,1736374471,"~/typography-react-ts/tsconfig.json"
--'  1  0  ~/typography-react-ts/tsconfig.json
-|4,39,1,0,1736374471,"~/typography-react-ts/tsconfig.json"
--'  1  0  ~/typography-react-ts/tsconfig.json
-|4,39,1,0,1736374471,"~/typography-react-ts/tsconfig.json"
--'  25  0  ~/typography-react-ts/tsconfig.app.json
-|4,39,25,0,1736374412,"~/typography-react-ts/tsconfig.app.json"
--'  25  0  ~/typography-react-ts/tsconfig.app.json
-|4,39,25,0,1736374412,"~/typography-react-ts/tsconfig.app.json"
--'  25  0  ~/typography-react-ts/tsconfig.app.json
-|4,39,25,0,1736374412,"~/typography-react-ts/tsconfig.app.json"
--'  25  0  ~/typography-react-ts/tsconfig.app.json
-|4,39,25,0,1736374412,"~/typography-react-ts/tsconfig.app.json"
--'  6  3  ~/typography-react-ts/tsconfig.json
-|4,39,6,3,1736374409,"~/typography-react-ts/tsconfig.json"
--'  26  27  ~/typography-react-ts/tsconfig.app.json
-|4,39,26,27,1736374392,"~/typography-react-ts/tsconfig.app.json"
--'  1  0  ~/typography-react-ts/tsconfig.app.json
-|4,39,1,0,1736374392,"~/typography-react-ts/tsconfig.app.json"
--'  26  27  ~/typography-react-ts/tsconfig.app.json
-|4,39,26,27,1736374392,"~/typography-react-ts/tsconfig.app.json"
--'  1  0  ~/typography-react-ts/tsconfig.app.json
-|4,39,1,0,1736374392,"~/typography-react-ts/tsconfig.app.json"
--'  26  27  ~/typography-react-ts/tsconfig.app.json
-|4,39,26,27,1736374392,"~/typography-react-ts/tsconfig.app.json"
--'  1  0  ~/typography-react-ts/tsconfig.app.json
-|4,39,1,0,1736374392,"~/typography-react-ts/tsconfig.app.json"
--'  26  27  ~/typography-react-ts/tsconfig.app.json
-|4,39,26,27,1736374392,"~/typography-react-ts/tsconfig.app.json"
--'  1  0  ~/typography-react-ts/tsconfig.app.json
-|4,39,1,0,1736374392,"~/typography-react-ts/tsconfig.app.json"
--'  25  26  ~/typography-react-ts/tsconfig.app.json
-|4,39,25,26,1736374384,"~/typography-react-ts/tsconfig.app.json"
--'  1  0  ~/typography-react-ts/tsconfig.app.json
-|4,39,1,0,1736374375,"~/typography-react-ts/tsconfig.app.json"
--'  1  0  ~/typography-react-ts/src/utils/dom.ts
-|4,39,1,0,1736373300,"~/typography-react-ts/src/utils/dom.ts"
--'  1  0  ~/typography-react-ts/src/utils/dom.ts
-|4,39,1,0,1736373300,"~/typography-react-ts/src/utils/dom.ts"
--'  1  0  ~/typography-react-ts/src/utils/dom.ts
-|4,39,1,0,1736373300,"~/typography-react-ts/src/utils/dom.ts"
--'  13  0  ~/typography-react-ts/src/utils/logger.ts
-|4,39,13,0,1736372329,"~/typography-react-ts/src/utils/logger.ts"
--'  13  0  ~/typography-react-ts/src/utils/logger.ts
-|4,39,13,0,1736372329,"~/typography-react-ts/src/utils/logger.ts"
--'  13  0  ~/typography-react-ts/src/utils/logger.ts
-|4,39,13,0,1736372329,"~/typography-react-ts/src/utils/logger.ts"
--'  16  17  ~/typography-react-ts/src/utils/dom.ts
-|4,39,16,17,1736372303,"~/typography-react-ts/src/utils/dom.ts"
--'  27  17  ~/typography-react-ts/src/utils/dom.ts
-|4,39,27,17,1736372303,"~/typography-react-ts/src/utils/dom.ts"
--'  16  17  ~/typography-react-ts/src/utils/dom.ts
-|4,39,16,17,1736372303,"~/typography-react-ts/src/utils/dom.ts"
--'  27  17  ~/typography-react-ts/src/utils/dom.ts
-|4,39,27,17,1736372303,"~/typography-react-ts/src/utils/dom.ts"
--'  16  17  ~/typography-react-ts/src/utils/dom.ts
-|4,39,16,17,1736372303,"~/typography-react-ts/src/utils/dom.ts"
--'  27  17  ~/typography-react-ts/src/utils/dom.ts
-|4,39,27,17,1736372303,"~/typography-react-ts/src/utils/dom.ts"
--'  6  69  ~/typography-react-ts/src/main.tsx
-|4,39,6,69,1736372277,"~/typography-react-ts/src/main.tsx"
--'  6  69  ~/typography-react-ts/src/main.tsx
-|4,39,6,69,1736372277,"~/typography-react-ts/src/main.tsx"
--'  6  69  ~/typography-react-ts/src/main.tsx
-|4,39,6,69,1736372277,"~/typography-react-ts/src/main.tsx"
--'  17  24  ~/typography-react-ts/src/main.tsx
-|4,39,17,24,1736372272,"~/typography-react-ts/src/main.tsx"
--'  17  24  ~/typography-react-ts/src/main.tsx
-|4,39,17,24,1736372272,"~/typography-react-ts/src/main.tsx"
--'  17  24  ~/typography-react-ts/src/main.tsx
-|4,39,17,24,1736372272,"~/typography-react-ts/src/main.tsx"
--'  1  0  ~/typography-react-ts/src/main.tsx
-|4,39,1,0,1736372267,"~/typography-react-ts/src/main.tsx"
--'  1  0  ~/typography-react-ts/src/main.tsx
-|4,39,1,0,1736372267,"~/typography-react-ts/src/main.tsx"
--'  1  0  ~/typography-react-ts/src/main.tsx
-|4,39,1,0,1736372267,"~/typography-react-ts/src/main.tsx"
--'  1  1  ~/expenses.txt
-|4,39,1,1,1736371703,"~/expenses.txt"
--'  1  1  ~/expenses.txt
-|4,39,1,1,1736371703,"~/expenses.txt"
--'  1  1  ~/expenses.txt
-|4,39,1,1,1736371703,"~/expenses.txt"
--'  1  1  ~/expenses.txt
-|4,39,1,1,1736371703,"~/expenses.txt"
--'  1  1  ~/expenses.txt
-|4,39,1,1,1736371703,"~/expenses.txt"
--'  1  1  ~/expenses.txt
-|4,39,1,1,1736371703,"~/expenses.txt"
--'  1  1  ~/expenses.txt
-|4,39,1,1,1736371703,"~/expenses.txt"
--'  1  0  ~/expenses.txt
-|4,39,1,0,1736369824,"~/expenses.txt"
--'  6  0  ~/expenses.txt
-|4,39,6,0,1736369243,"~/expenses.txt"
--'  6  0  ~/expenses.txt
-|4,39,6,0,1736369243,"~/expenses.txt"
--'  6  0  ~/expenses.txt
-|4,39,6,0,1736369243,"~/expenses.txt"
--'  6  0  ~/expenses.txt
-|4,39,6,0,1736369243,"~/expenses.txt"
--'  6  0  ~/expenses.txt
-|4,39,6,0,1736369243,"~/expenses.txt"
--'  6  0  ~/expenses.txt
-|4,39,6,0,1736369243,"~/expenses.txt"
--'  6  0  ~/expenses.txt
-|4,39,6,0,1736369243,"~/expenses.txt"
--'  7  0  ~/expenses.txt
-|4,39,7,0,1736369242,"~/expenses.txt"
--'  7  0  ~/expenses.txt
-|4,39,7,0,1736369242,"~/expenses.txt"
--'  7  0  ~/expenses.txt
-|4,39,7,0,1736369242,"~/expenses.txt"
--'  7  0  ~/expenses.txt
-|4,39,7,0,1736369242,"~/expenses.txt"
--'  7  0  ~/expenses.txt
-|4,39,7,0,1736369242,"~/expenses.txt"
--'  7  0  ~/expenses.txt
-|4,39,7,0,1736369242,"~/expenses.txt"
--'  7  0  ~/expenses.txt
-|4,39,7,0,1736369242,"~/expenses.txt"
--'  3  23  ~/expenses.txt
-|4,39,3,23,1736334404,"~/expenses.txt"
--'  3  23  ~/expenses.txt
-|4,39,3,23,1736334404,"~/expenses.txt"
--'  3  23  ~/expenses.txt
-|4,39,3,23,1736334404,"~/expenses.txt"
--'  3  23  ~/expenses.txt
-|4,39,3,23,1736334404,"~/expenses.txt"
--'  3  23  ~/expenses.txt
-|4,39,3,23,1736334404,"~/expenses.txt"
--'  3  23  ~/expenses.txt
-|4,39,3,23,1736334404,"~/expenses.txt"
--'  3  23  ~/expenses.txt
-|4,39,3,23,1736334404,"~/expenses.txt"
--'  2  23  ~/expenses.txt
-|4,39,2,23,1736334398,"~/expenses.txt"
--'  2  23  ~/expenses.txt
-|4,39,2,23,1736334398,"~/expenses.txt"
--'  2  23  ~/expenses.txt
-|4,39,2,23,1736334398,"~/expenses.txt"
--'  2  23  ~/expenses.txt
-|4,39,2,23,1736334398,"~/expenses.txt"
--'  2  23  ~/expenses.txt
-|4,39,2,23,1736334398,"~/expenses.txt"
+-'  36  0  ~/.vim/plugin/better-rg.vim
+|4,39,36,0,1737591155,"~/.vim/plugin/better-rg.vim"
+-'  35  0  ~/.vim/plugin/better-rg.vim
+|4,39,35,0,1737591150,"~/.vim/plugin/better-rg.vim"
+-'  1  0  ~/.vim/plugin/better-rg.vim
+|4,39,1,0,1737590986,"~/.vim/plugin/better-rg.vim"
+-'  23  17  ~/.vim/plugin/better-rg.vim
+|4,39,23,17,1737590382,"~/.vim/plugin/better-rg.vim"
+-'  22  150  ~/.vim/plugin/better-rg.vim
+|4,39,22,150,1737581334,"~/.vim/plugin/better-rg.vim"
+-'  859  160  ~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim
+|4,39,859,160,1737571610,"~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim"
+-'  194  23  ~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim
+|4,39,194,23,1737571590,"~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim"
+-'  1  0  ~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim
+|4,39,1,0,1737571585,"~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim"
+-'  537  21  ~/tooling/docs/fzf.man
+|4,39,537,21,1737571574,"~/tooling/docs/fzf.man"
+-'  552  33  ~/tooling/docs/fzf.man
+|4,39,552,33,1737571551,"~/tooling/docs/fzf.man"
+-'  533  9  ~/tooling/docs/fzf.man
+|4,39,533,9,1737571550,"~/tooling/docs/fzf.man"
+-'  515  126  ~/tooling/docs/fzf.man
+|4,39,515,126,1737571527,"~/tooling/docs/fzf.man"
+-'  1  0  ~/tooling/docs/fzf.man
+|4,39,1,0,1737571526,"~/tooling/docs/fzf.man"
+-'  185  4  ~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim
+|4,39,185,4,1737571518,"~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim"
+-'  173  10  ~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim
+|4,39,173,10,1737571489,"~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim"
+-'  153  23  ~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim
+|4,39,153,23,1737571488,"~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim"
+-'  152  55  ~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim
+|4,39,152,55,1737571488,"~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim"
+-'  103  24  ~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim
+|4,39,103,24,1737571487,"~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim"
+-'  62  26  ~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim
+|4,39,62,26,1737571484,"~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim"
+-'  54  28  ~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim
+|4,39,54,28,1737571484,"~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim"
+-'  322  0  ~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim
+|4,39,322,0,1737571482,"~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim"
+-'  70  2  ~/.vim/plugged/fzf.vim/bin/preview.sh
+|4,39,70,2,1737571245,"~/.vim/plugged/fzf.vim/bin/preview.sh"
+-'  980  13  ~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim
+|4,39,980,13,1737571236,"~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim"
+-'  995  4  ~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim
+|4,39,995,4,1737571215,"~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim"
+-'  968  4  ~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim
+|4,39,968,4,1737571213,"~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim"
+-'  957  4  ~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim
+|4,39,957,4,1737571213,"~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim"
+-'  951  0  ~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim
+|4,39,951,0,1737571212,"~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim"
+-'  69  41  ~/.vim/plugged/fzf.vim/bin/preview.sh
+|4,39,69,41,1737571085,"~/.vim/plugged/fzf.vim/bin/preview.sh"
+-'  65  4  ~/.vim/plugged/fzf.vim/bin/preview.sh
+|4,39,65,4,1737571085,"~/.vim/plugged/fzf.vim/bin/preview.sh"
+-'  64  18  ~/.vim/plugged/fzf.vim/bin/preview.sh
+|4,39,64,18,1737571083,"~/.vim/plugged/fzf.vim/bin/preview.sh"
+-'  60  12  ~/.vim/plugged/fzf.vim/bin/preview.sh
+|4,39,60,12,1737571082,"~/.vim/plugged/fzf.vim/bin/preview.sh"
+-'  1  0  ~/.vim/plugged/fzf.vim/bin/preview.sh
+|4,39,1,0,1737571081,"~/.vim/plugged/fzf.vim/bin/preview.sh"
+-'  237  0  ~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim
+|4,39,237,0,1737571078,"~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim"
+-'  1718  7  ~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim
+|4,39,1718,7,1737570978,"~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim"
+-'  1  0  ~/.vim/plugged/fzf.vim/plugin/fzf.vim
+|4,39,1,0,1737570973,"~/.vim/plugged/fzf.vim/plugin/fzf.vim"
+-'  75  0  ~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim
+|4,39,75,0,1737570895,"~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim"
+-'  40  0  ~/.vim/plugin/better-rg.vim
+|4,39,40,0,1737570779,"~/.vim/plugin/better-rg.vim"
+-'  378  68  ~/.vim/plugged/fzf.vim/doc/fzf-vim.txt
+|4,39,378,68,1737570764,"~/.vim/plugged/fzf.vim/doc/fzf-vim.txt"
+-'  364  53  ~/.vim/plugged/fzf.vim/doc/fzf-vim.txt
+|4,39,364,53,1737570658,"~/.vim/plugged/fzf.vim/doc/fzf-vim.txt"
+-'  348  130  ~/.vim/plugged/fzf.vim/doc/fzf-vim.txt
+|4,39,348,130,1737570657,"~/.vim/plugged/fzf.vim/doc/fzf-vim.txt"
+-'  387  68  ~/.vim/plugged/fzf.vim/doc/fzf-vim.txt
+|4,39,387,68,1737570597,"~/.vim/plugged/fzf.vim/doc/fzf-vim.txt"
+-'  381  0  ~/.vim/plugged/fzf.vim/doc/fzf-vim.txt
+|4,39,381,0,1737570596,"~/.vim/plugged/fzf.vim/doc/fzf-vim.txt"
+-'  449  49  ~/.vim/plugged/fzf.vim/doc/fzf-vim.txt
+|4,39,449,49,1737570588,"~/.vim/plugged/fzf.vim/doc/fzf-vim.txt"
+-'  1  0  ~/.vim/plugged/fzf.vim/doc/fzf-vim.txt
+|4,39,1,0,1737570566,"~/.vim/plugged/fzf.vim/doc/fzf-vim.txt"
+-'  7  36  ~/.vim/plugged/fzf.vim/bin/preview.sh
+|4,39,7,36,1737570490,"~/.vim/plugged/fzf.vim/bin/preview.sh"
+-'  7  36  ~/.vim/plugged/fzf.vim/bin/preview.sh
+|4,39,7,36,1737570490,"~/.vim/plugged/fzf.vim/bin/preview.sh"
+-'  71  18  ~/.vim/plugged/fzf.vim/bin/preview.sh
+|4,39,71,18,1737570429,"~/.vim/plugged/fzf.vim/bin/preview.sh"
+-'  71  18  ~/.vim/plugged/fzf.vim/bin/preview.sh
+|4,39,71,18,1737570429,"~/.vim/plugged/fzf.vim/bin/preview.sh"
+-'  1  0  ~/.vim/plugged/fzf.vim/bin/preview.sh
+|4,39,1,0,1737570419,"~/.vim/plugged/fzf.vim/bin/preview.sh"
+-'  23  108  ~/.vim/plugin/better-rg.vim
+|4,39,23,108,1737570415,"~/.vim/plugin/better-rg.vim"
+-'  16  24  ~/.vim/plugin/better-rg.vim
+|4,39,16,24,1737570276,"~/.vim/plugin/better-rg.vim"
+-'  46  0  ~/.vim/plugin/better-rg.vim
+|4,39,46,0,1737570276,"~/.vim/plugin/better-rg.vim"
+-'  13  24  ~/.vim/plugin/better-rg.vim
+|4,39,13,24,1737570276,"~/.vim/plugin/better-rg.vim"
+-'  10  22  ~/.vim/plugin/better-rg.vim
+|4,39,10,22,1737570229,"~/.vim/plugin/better-rg.vim"
+-'  7  22  ~/.vim/plugin/better-rg.vim
+|4,39,7,22,1737570229,"~/.vim/plugin/better-rg.vim"
+-'  15  22  ~/.vim/plugin/better-rg.vim
+|4,39,15,22,1737570213,"~/.vim/plugin/better-rg.vim"
+-'  12  22  ~/.vim/plugin/better-rg.vim
+|4,39,12,22,1737570213,"~/.vim/plugin/better-rg.vim"
+-'  38  23  ~/.vim/plugin/better-rg.vim
+|4,39,38,23,1737570136,"~/.vim/plugin/better-rg.vim"
+-'  45  23  ~/.vim/plugin/better-rg.vim
+|4,39,45,23,1737570136,"~/.vim/plugin/better-rg.vim"
+-'  32  39  ~/.vim/plugin/better-rg.vim
+|4,39,32,39,1737570107,"~/.vim/plugin/better-rg.vim"
+-'  35  39  ~/.vim/plugin/better-rg.vim
+|4,39,35,39,1737570107,"~/.vim/plugin/better-rg.vim"
+-'  6  29  ~/tooling/search-syntax.txt
+|4,39,6,29,1737570052,"~/tooling/search-syntax.txt"
+-'  6  29  ~/tooling/search-syntax.txt
+|4,39,6,29,1737570052,"~/tooling/search-syntax.txt"
+-'  1  0  ~/tooling/search-syntax.txt
+|4,39,1,0,1737570051,"~/tooling/search-syntax.txt"
+-'  1  0  ~/tooling/search-syntax.txt
+|4,39,1,0,1737570051,"~/tooling/search-syntax.txt"
+-'  37  3  ~/.vim/plugin/better-rg.vim
+|4,39,37,3,1737569993,"~/.vim/plugin/better-rg.vim"
+-'  42  3  ~/.vim/plugin/better-rg.vim
+|4,39,42,3,1737569993,"~/.vim/plugin/better-rg.vim"
+-'  33  5  ~/.vim/plugin/better-rg.vim
+|4,39,33,5,1737568843,"~/.vim/plugin/better-rg.vim"
+-'  36  5  ~/.vim/plugin/better-rg.vim
+|4,39,36,5,1737568843,"~/.vim/plugin/better-rg.vim"
+-'  31  5  ~/.vim/plugin/better-rg.vim
+|4,39,31,5,1737568842,"~/.vim/plugin/better-rg.vim"
+-'  30  5  ~/.vim/plugin/better-rg.vim
+|4,39,30,5,1737568842,"~/.vim/plugin/better-rg.vim"
+-'  34  5  ~/.vim/plugin/better-rg.vim
+|4,39,34,5,1737568842,"~/.vim/plugin/better-rg.vim"
+-'  33  5  ~/.vim/plugin/better-rg.vim
+|4,39,33,5,1737568842,"~/.vim/plugin/better-rg.vim"
+-'  31  33  ~/.vim/plugin/better-rg.vim
+|4,39,31,33,1737568842,"~/.vim/plugin/better-rg.vim"
+-'  14  15  ~/.vim/plugin/better-rg.vim
+|4,39,14,15,1737568841,"~/.vim/plugin/better-rg.vim"
+-'  11  15  ~/.vim/plugin/better-rg.vim
+|4,39,11,15,1737568841,"~/.vim/plugin/better-rg.vim"
+-'  34  0  ~/.vim/plugin/better-rg.vim
+|4,39,34,0,1737568834,"~/.vim/plugin/better-rg.vim"
+-'  37  0  ~/.vim/plugin/better-rg.vim
+|4,39,37,0,1737568834,"~/.vim/plugin/better-rg.vim"
+-'  195  15  ~/tooling/docs/rg.man
+|4,39,195,15,1737568371,"~/tooling/docs/rg.man"
+-'  195  15  ~/tooling/docs/rg.man
+|4,39,195,15,1737568371,"~/tooling/docs/rg.man"
+-'  1  0  ~/tooling/docs/rg.man
+|4,39,1,0,1737568365,"~/tooling/docs/rg.man"
+-'  1  0  ~/tooling/docs/rg.man
+|4,39,1,0,1737568365,"~/tooling/docs/rg.man"
+-'  22  25  ~/.vim/plugin/better-rg.vim
+|4,39,22,25,1737568363,"~/.vim/plugin/better-rg.vim"
+-'  7  4  ~/.vim/plugin/better-rg.vim
+|4,39,7,4,1737568266,"~/.vim/plugin/better-rg.vim"
+-'  4  4  ~/.vim/plugin/better-rg.vim
+|4,39,4,4,1737568266,"~/.vim/plugin/better-rg.vim"
+-'  177  0  ~/.vim/syntax/javascript.vim
+|4,39,177,0,1737567461,"~/.vim/syntax/javascript.vim"
+-'  177  0  ~/.vim/syntax/javascript.vim
+|4,39,177,0,1737567461,"~/.vim/syntax/javascript.vim"
+-'  16  0  ~/.vim/edit-plugin/edit.vim
+|4,39,16,0,1737567443,"~/.vim/edit-plugin/edit.vim"
+-'  16  0  ~/.vim/edit-plugin/edit.vim
+|4,39,16,0,1737567443,"~/.vim/edit-plugin/edit.vim"
+-'  11  20  ~/.vim/plugin/better-rg.vim
+|4,39,11,20,1737567441,"~/.vim/plugin/better-rg.vim"
+-'  8  20  ~/.vim/plugin/better-rg.vim
+|4,39,8,20,1737567441,"~/.vim/plugin/better-rg.vim"
+-'  5  27  ~/.vim/plugin/better-rg.vim
+|4,39,5,27,1737567368,"~/.vim/plugin/better-rg.vim"
+-'  6  13  ~/.vim/plugin/better-rg.vim
+|4,39,6,13,1737567360,"~/.vim/plugin/better-rg.vim"
+-'  25  36  ~/.vim/plugin/better-rg.vim
+|4,39,25,36,1737567233,"~/.vim/plugin/better-rg.vim"
+-'  26  44  ~/.vim/plugin/better-rg.vim
+|4,39,26,44,1737567225,"~/.vim/plugin/better-rg.vim"
+-'  3  0  ~/.vim/plugin/better-rg.vim
+|4,39,3,0,1737567170,"~/.vim/plugin/better-rg.vim"
+-'  1104  36  ~/tooling/docs/fzf.man
+|4,39,1104,36,1737567128,"~/tooling/docs/fzf.man"
+-'  767  115  ~/tooling/docs/fzf.man
+|4,39,767,115,1737567126,"~/tooling/docs/fzf.man"
+-'  338  91  ~/tooling/docs/fzf.man
+|4,39,338,91,1737567123,"~/tooling/docs/fzf.man"
+-'  335  31  ~/tooling/docs/fzf.man
+|4,39,335,31,1737567123,"~/tooling/docs/fzf.man"
 
 # Buffer list:
-%~/typography-react-ts/vitest.error.txt	861	18
+%~/.vim/plugged/fzf.vim/doc/fzf-vim.txt	378	68
+%~/.vim/plugin/better-rg.vim	36	0
+%~/.vim/plugged/fzf.vim/bin/preview.sh	70	2
+%~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim	859	160
+%~/.vim/plugged/fzf.vim/plugin/fzf.vim	1	0
 
 # History of marks within files (newest to oldest):
 
+> ~/.vim/plugin/better-rg.vim
+	*	1737591152	0
+	"	36	0
+	^	39	5
+	.	29	0
+	+	21	5
+	+	24	41
+	+	26	16
+	+	23	25
+	+	22	5
+	+	24	42
+	+	40	0
+	+	37	1
+	+	40	0
+	+	40	1
+	+	24	40
+	+	37	0
+	+	24	36
+	+	37	35
+	+	22	4
+	+	23	0
+	+	22	0
+	+	23	0
+	+	22	5
+	+	23	0
+	+	20	33
+	+	22	0
+	+	22	47
+	+	37	0
+	+	38	17
+	+	37	1
+	+	22	55
+	+	38	0
+	+	22	58
+	+	12	10
+	+	5	26
+	+	6	0
+	+	7	35
+	+	25	26
+	+	5	12
+	+	25	44
+	+	12	0
+	+	7	36
+	+	7	5
+	+	7	0
+	+	9	13
+	+	8	27
+	+	7	40
+	+	10	56
+	+	11	17
+	+	10	56
+	+	11	20
+	+	7	0
+	+	20	23
+	+	22	0
+	+	20	47
+	+	22	71
+	+	22	81
+	+	14	15
+	+	30	33
+	+	30	5
+	+	31	5
+	+	33	5
+	+	37	5
+	+	38	3
+	+	22	0
+	+	38	18
+	+	32	19
+	+	37	1
+	+	38	0
+	+	19	0
+	+	15	0
+	+	18	26
+	+	20	52
+	+	16	22
+	+	40	0
+	+	37	5
+	+	38	1
+	+	16	24
+	+	37	1
+	+	38	1
+	+	23	0
+	+	22	5
+	+	23	85
+	+	38	0
+	+	23	5
+	+	22	4
+	+	22	0
+	+	22	150
+	+	22	0
+	+	37	17
+	+	38	3
+	+	39	0
+	+	40	0
+	+	21	0
+	+	22	0
+	+	23	0
+	+	36	0
+	+	1	0
+	+	37	0
+	+	38	0
+	+	34	0
+	+	30	0
+	+	35	0
+	+	29	0
+
+> ~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim
+	*	1737571608	0
+	"	859	160
+	^	237	1
+
+> ~/tooling/docs/fzf.man
+	*	1737571559	0
+	"	537	21
+	^	34	12
+	.	34	0
+	+	34	0
+
+> ~/.vim/plugged/fzf.vim/bin/preview.sh
+	*	1737571242	0
+	"	70	2
+
+> ~/.vim/plugged/fzf.vim/plugin/fzf.vim
+	*	1737570967	0
+	"	1	0
+
+> ~/.vim/plugged/fzf.vim/doc/fzf-vim.txt
+	*	1737570760	0
+	"	378	68
+	^	133	2
+	.	133	0
+	+	133	0
+
+> ~/.vim/.fzf/doc/fzf.txt
+	*	1737570595	0
+	"	257	71
+
+> ~/tooling/search-syntax.txt
+	*	1737570051	0
+	"	6	29
+	^	16	67
+	.	16	66
+	+	11	28
+	+	12	27
+	+	13	1
+	+	10	0
+	+	2	51
+	+	6	27
+	+	10	0
+	+	8	0
+	+	6	38
+	+	3	27
+	+	1	0
+	+	15	87
+	+	16	66
+
+> ~/tooling/docs/rg.man
+	*	1737568369	0
+	"	195	15
+
+> ~/.vim/syntax/javascript.vim
+	*	1737567459	0
+	"	177	0
+
+> ~/.vim/edit-plugin/edit.vim
+	*	1737567441	0
+	"	16	0
+	^	22	29
+	.	22	28
+	+	22	15
+	+	22	25
+	+	22	0
+	+	22	32
+	+	18	37
+	+	22	67
+	+	22	0
+	+	22	18
+	+	19	28
+	+	22	0
+	+	19	0
+	+	20	33
+	+	22	63
+	+	22	31
+	+	22	0
+	+	22	4
+	+	22	0
+	+	22	9
+	+	22	0
+	+	22	39
+	+	22	32
+	+	22	74
+	+	22	10
+	+	22	4
+	+	22	10
+	+	22	1
+	+	22	0
+	+	22	1
+	+	22	71
+	+	22	46
+	+	22	35
+	+	22	0
+	+	22	16
+	+	22	52
+	+	22	0
+	+	22	17
+	+	22	54
+	+	22	4
+	+	22	9
+	+	22	14
+	+	22	0
+	+	22	38
+	+	12	25
+	+	11	69
+	+	13	15
+	+	14	22
+	+	22	28
+
+> /usr/share/vim/vim90/doc/editing.txt
+	*	1737567292	0
+	"	507	22
+
+> ~/.vim/edit-plugin/sqlite-functions.vim:17:4:endfunction
+	*	1737567018	0
+	"	1	0
+
+> ~/.vim/ftplugin/html.vim:5:4:endfunction
+	*	1737564862	0
+	"	1	0
+
+> ~/.vim/ftplugin/html.vim:2:1:function! s:TidySelection()
+	*	1737564861	0
+	"	1	0
+
+> ~/.vim/ftplugin/todo.vim:116:4:endfunction
+	*	1737564859	0
+	"	1	0
+
+> ~/.vim/ftplugin/todo.vim:95:1:function! s:HighlightExistingFiles()
+	*	1737564857	0
+	"	1	0
+
+> ~/.config/fzf/.fzfrc
+	*	1737564693	0
+	"	1	0
+	.	13	0
+	+	2	0
+	+	2	1
+	+	2	37
+	+	2	0
+	+	2	1
+	+	4	0
+	+	9	210
+	+	9	0
+	+	9	166
+	+	9	1
+	+	9	17
+	+	9	0
+	+	10	0
+	+	9	23
+	+	9	14
+	+	9	34
+	+	6	0
+	+	2	0
+	+	9	20
+	+	6	1
+	+	9	0
+	+	3	0
+	+	4	0
+	+	9	0
+	+	9	21
+	+	7	1
+	+	9	0
+	+	9	58
+	+	9	0
+	+	5	0
+	+	9	0
+	+	1	0
+	+	9	0
+	+	8	0
+	+	12	0
+	+	13	0
+	+	12	0
+	+	13	0
+
+> ~/.config/env.bash
+	*	1737564544	0
+	"	1	0
+	^	3	61
+	.	3	60
+	+	9	0
+	+	11	0
+	+	10	0
+	+	15	0
+	+	7	0
+	+	4	0
+	+	15	0
+	+	5	0
+	+	6	0
+	+	5	112
+	+	17	0
+	+	16	0
+	+	17	138
+	+	2	65
+	+	3	60
+
+> ~/.config/setup.bash
+	*	1737564543	0
+	"	8	0
+	^	54	0
+	.	18	0
+	+	16	0
+	+	16	54
+	+	28	0
+	+	31	28
+	+	30	0
+	+	31	1
+	+	31	0
+	+	31	5
+	+	30	1
+	+	31	0
+	+	30	0
+	+	28	0
+	+	16	23
+	+	16	0
+	+	16	25
+	+	16	0
+	+	27	37
+	+	27	1
+	+	27	0
+	+	58	33
+	+	58	51
+	+	58	0
+	+	56	0
+	+	58	0
+	+	58	1
+	+	58	0
+	+	58	1
+	+	58	38
+	+	59	0
+	+	58	4
+	+	58	16
+	+	58	0
+	+	57	0
+	+	58	1
+	+	59	53
+	+	59	0
+	+	58	0
+	+	11	3
+	+	16	0
+	+	12	0
+	+	15	0
+	+	12	30
+	+	14	57
+	+	11	23
+	+	11	0
+	+	16	0
+	+	34	20
+	+	7	25
+	+	7	0
+	+	7	90
+	+	7	27
+	+	7	25
+	+	11	0
+	+	7	0
+	+	11	0
+	+	16	0
+	+	6	0
+	+	4	24
+	+	4	0
+	+	5	0
+	+	7	0
+	+	16	0
+	+	7	0
+	+	8	0
+	+	7	0
+	+	10	0
+	+	16	0
+	+	8	0
+	+	22	0
+	+	8	0
+	+	55	0
+	+	54	0
+	+	18	0
+	+	32	0
+	+	18	0
+
+> ~/bash/python-direnv.bash
+	*	1737564517	0
+	"	1	0
+	^	4	19
+	.	4	0
+	+	5	8
+	+	4	0
+	+	2	25
+	+	5	10
+	+	2	1
+	+	1	1
+	+	4	18
+	+	2	0
+	+	4	0
+
+> /usr/share/vim/vim90/doc/help.txt
+	*	1737564462	0
+	"	1	0
+
+> ~/.vim/plugged/undotree/LICENSE
+	*	1737564362	0
+	"	1	0
+
+> /usr/share/vim/vim90/doc/map.txt
+	*	1737562986	0
+	"	1779	16
+
+> ~/.vim/plugin/oldfiles.vim
+	*	1737530990	0
+	"	58	12
+	^	63	34
+	.	63	33
+	+	84	0
+	+	49	10
+	+	45	0
+	+	47	16
+	+	47	0
+	+	46	0
+	+	81	0
+	+	65	10
+	+	58	21
+	+	60	8
+	+	63	63
+	+	59	99
+	+	63	30
+	+	71	0
+	+	59	0
+	+	71	0
+	+	70	26
+	+	74	4
+	+	77	10
+	+	84	40
+	+	67	26
+	+	80	25
+	+	83	48
+	+	73	23
+	+	84	3
+	+	85	0
+	+	84	22
+	+	80	15
+	+	59	23
+	+	59	80
+	+	59	20
+	+	59	51
+	+	70	5
+	+	69	5
+	+	68	5
+	+	68	0
+	+	83	51
+	+	70	0
+	+	83	54
+	+	59	20
+	+	63	33
+
+> ~/.vim/plugin/print-personal-commands.vim
+	*	1737521811	0
+	"	101	0
+	^	17	11
+	.	100	4
+	+	78	8
+	+	78	0
+	+	78	8
+	+	78	0
+	+	76	44
+	+	78	40
+	+	77	64
+	+	78	80
+	+	77	53
+	+	78	21
+	+	69	19
+	+	79	114
+	+	80	31
+	+	78	9
+	+	83	23
+	+	92	0
+	+	87	24
+	+	91	0
+	+	74	26
+	+	78	58
+	+	79	65
+	+	90	68
+	+	85	75
+	+	89	78
+	+	90	65
+	+	86	49
+	+	90	56
+	+	89	9
+	+	85	37
+	+	90	65
+	+	89	8
+	+	84	78
+	+	88	78
+	+	84	71
+	+	88	74
+	+	90	53
+	+	88	42
+	+	85	100
+	+	85	0
+	+	85	101
+	+	86	0
+	+	85	29
+	+	86	59
+	+	89	112
+	+	89	35
+	+	90	26
+	+	86	0
+	+	2	41
+	+	3	10
+	+	2	20
+	+	3	40
+	+	6	2
+	+	18	0
+	+	6	36
+	+	8	31
+	+	9	36
+	+	12	8
+	+	18	0
+	+	13	55
+	+	14	0
+	+	16	0
+	+	15	39
+	+	16	9
+	+	13	66
+	+	90	0
+	+	100	5
+	+	7	24
+	+	10	49
+	+	13	79
+	+	10	106
+	+	13	96
+	+	4	0
+	+	16	0
+	+	6	0
+	+	5	19
+	+	6	0
+	+	16	0
+	+	17	10
+	+	100	4
+
+> ~/tooling/app_ideas/ripgrep-helper.txt
+	*	1737519714	0
+	"	1	0
+	^	1	30
+	.	1	29
+	+	4	25
+	+	5	34
+	+	6	57
+	+	1	29
+
+> ~/typography-react-ts/journey/250121T1101+0530_ui_improvements.md
+	*	1737442513	0
+	"	265	92
+	.	265	92
+	+	240	0
+	+	241	0
+	+	242	0
+	+	266	0
+	+	265	92
+
 > ~/typography-react-ts/vitest.error.txt
-	*	1736454667	0
-	"	861	18
+	*	1737442260	0
+	"	356	0
+	.	1	0
+	+	1	0
+	+	1	54
+	+	1	70
+	+	1	0
+	+	1	70
+	+	1	0
+	+	1	70
+	+	1	0
+	+	1	70
+	+	1	0
+	+	1	50
+	+	22	0
+	+	1	0
+
+> ~/typography-react-ts/vite.config.ts
+	*	1737442250	0
+	"	1	0
+	.	14	0
+	+	9	0
+	+	9	38
+	+	9	8
+	+	9	0
+	+	9	10
+	+	9	0
+	+	3	0
+	+	9	0
+	+	8	0
+	+	8	12
+	+	8	0
+	+	8	30
+	+	8	0
+	+	8	20
+	+	8	0
+	+	13	46
+	+	14	0
+
+> ~/typography-react-ts/src/components/FontControls/FontControls.tsx
+	*	1737440633	0
+	"	66	53
+	^	66	56
+	.	66	53
+	+	60	34
+	+	66	53
+
+> ~/typography-react-ts/src/components/BoxModelControls/BoxModelControls.tsx
+	*	1737440163	0
+	"	71	60
+	^	71	71
+	.	71	63
+	+	71	63
 
 > ~/typography-react-ts/src/components/TypographyControls/TypographyControls.tsx
-	*	1736436151	0
-	"	60	12
-	^	48	17
-	.	60	0
+	*	1737440078	0
+	"	137	74
+	^	137	75
+	.	137	74
 	+	48	0
 	+	45	0
 	+	42	0
 	+	55	0
 	+	60	0
+	+	137	74
+
+> ~/typography-react-ts/CustomReporter.ts
+	*	1737437978	0
+	"	69	12
+	.	9	0
+	+	23	31
+	+	23	0
+	+	23	23
+	+	23	0
+	+	23	17
+	+	23	0
+	+	23	83
+	+	23	0
+	+	23	23
+	+	23	22
+	+	23	40
+	+	23	27
+	+	23	5
+	+	23	0
+	+	23	11
+	+	23	7
+	+	23	22
+	+	23	0
+	+	23	19
+	+	23	25
+	+	23	0
+	+	23	11
+	+	23	26
+	+	23	53
+	+	23	0
+	+	18	0
+	+	18	36
+	+	18	41
+	+	18	80
+	+	18	0
+	+	18	46
+	+	18	39
+	+	9	0
+	+	18	0
+	+	18	32
+	+	18	43
+	+	18	34
+	+	18	41
+	+	18	0
+	+	18	39
+	+	18	0
+	+	18	44
+	+	18	0
+	+	18	33
+	+	18	0
+	+	18	38
+	+	6	0
+	+	9	0
+	+	7	0
+	+	18	29
+	+	18	0
+	+	18	40
+	+	18	0
+	+	18	38
+	+	18	0
+	+	18	37
+	+	18	38
+	+	18	0
+	+	18	24
+	+	18	25
+	+	18	0
+	+	18	26
+	+	18	24
+	+	18	40
+	+	18	0
+	+	18	43
+	+	18	0
+	+	3	27
+	+	4	0
+	+	8	21
+	+	9	0
+	+	18	0
+	+	29	22
+	+	9	0
+
+> ~/typography-react-ts/src/utils/dom.test.ts
+	*	1737436672	0
+	"	21	0
+	.	29	0
+	+	29	0
+
+> ~/tmp/lg-washing-machine.txt
+	*	1737431655	0
+	"	2	8
+	^	2	9
+	.	2	8
+	+	1	15
+	+	2	8
+
+> ~/typography-react-ts/test-errors.txt
+	*	1737425502	0
+	"	5	0
+	^	1	4
+	.	1	3
+	+	1	3
+
+> ~/typography-react-ts/node_modules/vitest/dist/chunks/index.DsZFoqi9.js
+	*	1737424575	0
+	"	3401	2
+
+> ~/typography-react-ts/node_modules/typescript/lib/typescript.js
+	*	1737423601	0
+	"	131485	4
+	^	131485	16
+	.	131485	15
+	+	131485	15
+
+> ~/typography-react-ts/node_modules/vitest/dist/chunks/reporters.D7Jzd9GS.d.ts
+	*	1737423569	0
+	"	80	4
+
+> ~/tmp/cfile
+	*	1737423547	0
+	"	1	0
+
+> ~/typography-react-ts/node_modules/@vitest/runner/dist/utils.d.ts
+	*	1737423161	0
+	"	27	0
+	.	25	0
+	+	25	0
+
+> ~/typography-react-ts/node_modules/@vitest/runner/dist/tasks-3ZnPj1LR.d.ts
+	*	1737423041	0
+	"	24	5
+
+> ~/typography-react-ts/node_modules/@vitest/runner/dist/chunk-tasks.js
+	*	1737423016	0
+	"	224	63
+
+> ~/typography-react-ts/node_modules/@vitest/runner/dist/utils.js
+	*	1737422770	0
+	"	1	0
+
+> ~/typography-react-ts/node_modules/@vitest/runner/utils.d.ts
+	*	1737422758	0
+	"	1	0
+
+> ~/typography-react-ts/node_modules/@vitest/utils/dist/helpers.d.ts
+	*	1737422749	0
+	"	21	17
+
+> ~/typography-react-ts/node_modules/@vitest/runner/node_modules/@vitest/runner/dist/chunk-tasks.js
+	*	1737422721	0
+	"	1	0
+
+> ~/typography-react-ts/node_modules/vitest/dist/chunks/utils.DNoFbBUZ.js
+	*	1737422362	0
+	"	109	2
+
+> ~/typography-react-ts/vitest/dist/chunks/index.DsZFoqi9.js
+	*	1737420484	0
+	"	1	0
+
+> ~/typography-react-ts/vitest.config.ts
+	*	1737420311	0
+	"	1	0
+
+> ~/typography-react-ts/package.json
+	*	1737420170	0
+	"	37	5
+
+> ~/typography-react-ts/src/setup-tests.ts
+	*	1737420155	0
+	"	7	0
+
+> ~/typography-react-ts/node_modules/vitest/dist/index.d.ts
+	*	1737419118	0
+	"	131	14
+
+> ~/typography-react-ts/tsconfig.json
+	*	1737418722	0
+	"	1	0
+	.	2	0
+	+	7	27
+	+	7	0
+	+	6	0
+	+	5	38
+	+	7	22
+	+	7	0
+	+	7	30
+	+	7	0
+	+	6	3
+	+	2	0
+
+> ~/typography-react-ts/tsconfig.app.json
+	*	1737415005	0
+	"	21	4
+	^	21	31
+	.	21	30
+	+	25	0
+	+	24	39
+	+	9	0
+	+	23	0
+	+	22	38
+	+	20	26
+	+	21	30
+
+> ~/typography-react-ts/tsconfig.node.json
+	*	1737414848	0
+	"	1	0
+	^	19	31
+	.	19	30
+	+	18	26
+	+	19	30
+
+> ~/typography-react-ts/src/components/BoxModelControls/BoxModelControls.test.tsx
+	*	1737413229	0
+	"	85	49
+	.	85	0
+	+	85	0
+
+> ~/typography-react-ts/src/components/TypographyControls/SpacingControls.test.tsx
+	*	1737017637	0
+	"	6	0
+	.	7	0
+	+	7	0
+
+> ~/typography-react-ts/cfile.txt
+	*	1737017597	0
+	"	2	63
+	.	2	63
+	+	1	57
+	+	2	58
+	+	1	59
+	+	2	60
+	+	1	61
+	+	2	62
+	+	1	62
+	+	2	63
+
+> /usr/share/vim/vim90/doc/quickfix.txt
+	*	1737017576	0
+	"	212	33
+
+> ~/typography-react-ts/journey/250116T1347+0530_label_text_refactor.md
+	*	1737017464	0
+	"	71	0
+	.	72	0
+	+	51	0
+	+	52	6
+	+	71	6
+	+	52	0
+	+	71	0
+	+	72	0
+
+> ~/typography-react-ts/journey/250116T0757+0530_ui_improvements.md
+	*	1737004165	0
+	"	99	6
+	.	90	0
+	+	90	15
+	+	90	0
+
+> ~/typography-react-ts/commit.md
+	*	1737004122	0
+	"	26	47
+	.	1	0
+	+	1	0
+
+> ~/typography-react-ts/journey/format.md
+	*	1737003935	0
+	"	1	0
+
+> ~/typography-react-ts/journey/format.txt
+	*	1737003176	0
+	"	1	0
+
+> ~/pyscripts/journey_create.py
+	*	1736994418	0
+	"	17	4
+	.	17	0
+	+	22	0
+	+	5	28
+	+	10	37
+	+	16	3
+	+	10	24
+	+	18	0
+	+	16	11
+	+	17	18
+	+	1	0
+	+	11	23
+	+	6	0
+	+	8	0
+	+	13	18
+	+	12	35
+	+	14	57
+	+	16	48
+	+	22	32
+	+	16	0
+	+	15	36
+	+	16	40
+	+	22	38
+	+	16	15
+	+	17	0
+	+	7	8
+	+	17	4
+	+	17	0
+
+> ~/typography-react-ts/.gitignore
+	*	1736900550	0
+	"	26	0
+	^	26	16
+	.	26	0
+	+	26	0
+
+> ~/typography-react-ts/.git/COMMIT_EDITMSG
+	*	1736895759	0
+	"	1	0
+
+> ~/pyscripts/oldfiles.py
+	*	1736892658	0
+	"	1	0
+	^	33	16
+	.	33	15
+	+	38	24
+	+	38	23
+	+	40	0
+	+	38	29
+	+	39	16
+	+	1	0
+	+	37	0
+	+	37	83
+	+	34	0
+	+	37	42
+	+	37	9
+	+	34	0
+	+	37	28
+	+	37	11
+	+	37	0
+	+	18	0
+	+	21	10
+	+	34	14
+	+	34	4
+	+	34	10
+	+	34	22
+	+	21	0
+	+	37	0
+	+	34	0
+	+	34	9
+	+	34	20
+	+	34	0
+	+	34	48
+	+	34	0
+	+	19	9
+	+	34	66
+	+	34	0
+	+	34	48
+	+	34	80
+	+	37	47
+	+	34	78
+	+	34	11
+	+	34	0
+	+	34	52
+	+	34	57
+	+	34	0
+	+	34	54
+	+	34	0
+	+	4	11
+	+	37	0
+	+	3	56
+	+	7	0
+	+	3	67
+	+	4	10
+	+	5	42
+	+	6	0
+	+	21	27
+	+	37	0
+	+	22	0
+	+	36	21
+	+	33	15
+
+> ~/typography-react-ts/tsconfig.strict.json
+	*	1736600204	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/servers/typography-react-ts.bash
+	*	1736599892	0
+	"	70	0
+	.	70	0
+	+	64	19
+	+	65	0
+	+	63	0
+	+	65	0
+	+	64	21
+	+	65	0
+	+	71	0
+	+	66	65
+	+	68	29
+	+	71	19
+	+	71	0
+	+	75	17
+	+	75	0
+	+	67	32
+	+	68	19
+	+	69	32
+	+	68	23
+	+	69	19
+	+	71	0
+	+	76	0
+	+	71	0
+	+	71	56
+	+	72	43
+	+	69	38
+	+	75	0
+	+	76	0
+	+	75	0
+	+	62	14
+	+	60	0
+	+	62	0
+	+	61	20
+	+	75	0
+	+	76	0
+	+	74	0
+	+	76	0
+	+	68	18
+	+	70	0
+
+> ~/typography-react-ts/src/utils/elementSelector.ts
+	*	1736552905	0
+	"	4	11
+	^	4	12
+	.	4	11
+	+	4	11
+
+> ~/typography-react-ts/vitest.reporter.json
+	*	1736552135	0
+	"	1	0
+	^	1	0
+	.	1	0
+	+	1	0
+
+> ~/bash/source_vs_bash.bash
+	*	1736545347	0
+	"	1	0
+	^	3	0
+	.	2	0
+	+	4	0
+	+	3	0
+	+	1	0
+	+	2	0
+
+> ~/.vim/plugin/goto_method.vim
+	*	1736544117	0
+	"	30	0
+	^	30	14
+	.	30	13
+	+	43	59
+	+	44	0
+	+	43	0
+	+	44	64
+	+	45	0
+	+	44	0
+	+	45	0
+	+	46	0
+	+	45	0
+	+	46	0
+	+	45	46
+	+	31	10
+	+	101	0
+	+	102	53
+	+	31	0
+	+	102	73
+	+	31	0
+	+	29	0
+	+	31	0
+	+	30	13
+
+> ~/tooling/docs/tmux.man
+	*	1736544113	0
+	"	619	61
+	^	5468	95
+	.	1	0
+	+	5468	0
+	+	1	0
+
+> ~/bash/oldfiles.bash
+	*	1736537814	0
+	"	18	4
+	.	18	0
+	+	2	1
+	+	2	12
+	+	2	49
+	+	2	12
+	+	2	0
+	+	5	1
+	+	1	10
+	+	2	62
+	+	2	34
+	+	2	1
+	+	2	16
+	+	2	0
+	+	10	33
+	+	2	68
+	+	5	66
+	+	5	0
+	+	2	13
+	+	5	23
+	+	6	51
+	+	10	28
+	+	19	22
+	+	2	107
+	+	12	0
+	+	7	0
+	+	1	0
+	+	12	0
+	+	2	83
+	+	2	0
+	+	20	0
+	+	20	1
+	+	20	16
+	+	4	0
+	+	2	1
+	+	4	97
+	+	4	1
+	+	2	0
+	+	3	27
+	+	4	1
+	+	5	1
+	+	4	0
+	+	5	0
+	+	14	0
+	+	10	0
+	+	12	0
+	+	9	0
+	+	12	0
+	+	11	0
+	+	19	0
+	+	20	0
+	+	8	0
+	+	18	0
+
+> ~/bash/pwd-oldfiles.bash
+	*	1736537812	0
+	"	13	0
+	^	6	46
+	.	13	4
+	+	2	0
+	+	2	10
+	+	2	0
+	+	2	1
+	+	2	0
+	+	2	71
+	+	2	0
+	+	2	53
+	+	2	0
+	+	16	5
+	+	16	7
+	+	16	0
+	+	16	47
+	+	2	0
+	+	2	119
+	+	2	0
+	+	2	131
+	+	16	0
+	+	2	285
+	+	2	163
+	+	16	0
+	+	2	0
+	+	2	163
+	+	16	80
+	+	16	0
+	+	2	131
+	+	16	80
+	+	16	0
+	+	2	0
+	+	2	104
+	+	2	0
+	+	16	0
+	+	16	27
+	+	16	0
+	+	16	34
+	+	16	0
+	+	16	4
+	+	16	0
+	+	16	145
+	+	2	27
+	+	16	86
+	+	2	1
+	+	16	0
+	+	16	38
+	+	16	0
+	+	2	7
+	+	16	0
+	+	16	38
+	+	2	0
+	+	16	0
+	+	2	0
+	+	16	0
+	+	2	0
+	+	16	0
+	+	3	0
+	+	2	0
+	+	3	0
+	+	14	0
+	+	4	38
+	+	4	0
+	+	14	0
+	+	16	0
+	+	14	33
+	+	16	0
+	+	4	0
+	+	13	0
+	+	4	0
+	+	7	0
+	+	2	8
+	+	6	0
+	+	6	26
+	+	6	0
+	+	13	4
 
 > ~/typography-react-ts/src/utils/elementSelector.test.ts
 	*	1736381999	0
 	"	1	0
 	.	1	52
 	+	1	52
-
-> ~/typography-react-ts/src/utils/elementSelector.ts
-	*	1736379443	0
-	"	22	0
 
 > ~/typography-react-ts/src/core/sum.ts
 	*	1736374609	0
@@ -18086,20 +19682,6 @@ $getbufline(a:buffer_number, 1, '$')
 	+	3	0
 	+	3	23
 	+	3	0
-
-> ~/typography-react-ts/tsconfig.json
-	*	1736374474	0
-	"	6	0
-	^	6	4
-	.	7	0
-	+	7	27
-	+	7	0
-
-> ~/typography-react-ts/tsconfig.app.json
-	*	1736374409	0
-	"	25	0
-	.	26	0
-	+	26	0
 
 > ~/typography-react-ts/src/utils/dom.ts
 	*	1736373299	0
@@ -18307,21 +19889,9 @@ $getbufline(a:buffer_number, 1, '$')
 	+	62	0
 	+	68	0
 
-> /usr/share/vim/vim90/doc/map.txt
-	*	1736280270	0
-	"	1790	28
-
 > /usr/share/vim/vim90/doc/builtin.txt
 	*	1736280257	0
 	"	6272	20
-
-> /usr/share/vim/vim90/doc/editing.txt
-	*	1736280089	0
-	"	262	13
-
-> ~/.vim/.fzf/doc/fzf.txt
-	*	1736279402	0
-	"	71	67
 
 > ~/.vim/autoload/utils.vim
 	*	1736278942	0
@@ -18390,10 +19960,6 @@ $getbufline(a:buffer_number, 1, '$')
 > /usr/share/vim/vim90/doc/userfunc.txt
 	*	1736278631	0
 	"	199	1
-
-> ~/typography-react-ts/src/utils/dom.test.ts
-	*	1736278064	0
-	"	1	0
 
 > ~/typography-react-ts/docs/project-requirements-document.prd
 	*	1736271358	0
@@ -18517,10 +20083,6 @@ $getbufline(a:buffer_number, 1, '$')
 	+	12	0
 	+	10	38
 
-> ~/typography-react-ts/.gitignore
-	*	1736253542	0
-	"	1	0
-
 > ~/typography-react-ts/dist/index.html
 	*	1736253467	0
 	"	1	0
@@ -18531,28 +20093,6 @@ $getbufline(a:buffer_number, 1, '$')
 	^	3	34
 	.	3	33
 	+	3	33
-
-> ~/typography-react-ts/vite.config.ts
-	*	1736252701	0
-	"	1	0
-	.	14	0
-	+	9	0
-	+	9	38
-	+	9	8
-	+	9	0
-	+	9	10
-	+	9	0
-	+	3	0
-	+	9	0
-	+	8	0
-	+	8	12
-	+	8	0
-	+	8	30
-	+	8	0
-	+	8	20
-	+	8	0
-	+	13	46
-	+	14	0
 
 > ~/typography-react-ts/src/index.css
 	*	1736252522	0
@@ -18829,10 +20369,6 @@ $getbufline(a:buffer_number, 1, '$')
 	*	1736187986	0
 	"	29	0
 
-> ~/tooling/docs/rg.man
-	*	1736186889	0
-	"	448	9
-
 > ~/tooling/app_ideas/typography.txt
 	*	1736186849	0
 	"	1	0
@@ -18848,81 +20384,6 @@ $getbufline(a:buffer_number, 1, '$')
 	"	1	0
 	.	5	0
 	+	5	0
-
-> ~/bash/pwd-oldfiles.bash
-	*	1736071620	0
-	"	1	0
-	^	2	9
-	.	2	8
-	+	2	0
-	+	2	10
-	+	2	0
-	+	2	1
-	+	2	0
-	+	2	71
-	+	2	0
-	+	2	53
-	+	2	0
-	+	16	5
-	+	16	7
-	+	16	0
-	+	16	47
-	+	2	0
-	+	2	119
-	+	2	0
-	+	2	131
-	+	16	0
-	+	2	285
-	+	2	163
-	+	16	0
-	+	2	0
-	+	2	163
-	+	16	80
-	+	16	0
-	+	2	131
-	+	16	80
-	+	16	0
-	+	2	0
-	+	2	104
-	+	2	0
-	+	16	0
-	+	16	27
-	+	16	0
-	+	16	34
-	+	16	0
-	+	16	4
-	+	16	0
-	+	16	145
-	+	2	27
-	+	16	86
-	+	2	1
-	+	16	0
-	+	16	38
-	+	16	0
-	+	2	7
-	+	16	0
-	+	16	38
-	+	2	0
-	+	16	0
-	+	2	0
-	+	16	0
-	+	2	0
-	+	16	0
-	+	3	0
-	+	2	0
-	+	3	0
-	+	14	0
-	+	4	38
-	+	4	0
-	+	14	0
-	+	16	0
-	+	14	33
-	+	16	0
-	+	4	0
-	+	13	0
-	+	4	0
-	+	7	0
-	+	2	8
 
 > ~/tmp/environ.txt
 	*	1736068643	0
@@ -19025,61 +20486,6 @@ $getbufline(a:buffer_number, 1, '$')
 	+	6	43
 	+	11	67
 	+	10	71
-
-> ~/bash/oldfiles.bash
-	*	1736066270	0
-	"	1	4
-	.	20	0
-	+	2	1
-	+	2	12
-	+	2	49
-	+	2	12
-	+	2	0
-	+	5	1
-	+	1	10
-	+	2	62
-	+	2	34
-	+	2	1
-	+	2	16
-	+	2	0
-	+	10	33
-	+	2	68
-	+	5	66
-	+	5	0
-	+	2	13
-	+	5	23
-	+	6	51
-	+	10	28
-	+	19	22
-	+	2	107
-	+	12	0
-	+	7	0
-	+	1	0
-	+	12	0
-	+	2	83
-	+	2	0
-	+	20	0
-	+	20	1
-	+	20	16
-	+	4	0
-	+	2	1
-	+	4	97
-	+	4	1
-	+	2	0
-	+	3	27
-	+	4	1
-	+	5	1
-	+	4	0
-	+	5	0
-	+	14	0
-	+	10	0
-	+	12	0
-	+	8	0
-	+	9	0
-	+	12	0
-	+	11	0
-	+	18	0
-	+	20	0
 
 > ~/.vim/plugin/tmux.vim
 	*	1736065531	0
@@ -19424,87 +20830,6 @@ $getbufline(a:buffer_number, 1, '$')
 	+	6	0
 	+	18	0
 	+	23	0
-
-> ~/.config/setup.bash
-	*	1736027395	0
-	"	13	0
-	^	54	0
-	.	18	0
-	+	16	0
-	+	16	54
-	+	28	0
-	+	31	28
-	+	30	0
-	+	31	1
-	+	31	0
-	+	31	5
-	+	30	1
-	+	31	0
-	+	30	0
-	+	28	0
-	+	16	23
-	+	16	0
-	+	16	25
-	+	16	0
-	+	27	37
-	+	27	1
-	+	27	0
-	+	58	33
-	+	58	51
-	+	58	0
-	+	56	0
-	+	58	0
-	+	58	1
-	+	58	0
-	+	58	1
-	+	58	38
-	+	59	0
-	+	58	4
-	+	58	16
-	+	58	0
-	+	57	0
-	+	58	1
-	+	59	53
-	+	59	0
-	+	58	0
-	+	11	3
-	+	16	0
-	+	12	0
-	+	15	0
-	+	12	30
-	+	14	57
-	+	11	23
-	+	11	0
-	+	16	0
-	+	34	20
-	+	7	25
-	+	7	0
-	+	7	90
-	+	7	27
-	+	7	25
-	+	11	0
-	+	7	0
-	+	11	0
-	+	16	0
-	+	6	0
-	+	4	24
-	+	4	0
-	+	5	0
-	+	7	0
-	+	16	0
-	+	7	0
-	+	8	0
-	+	7	0
-	+	10	0
-	+	16	0
-	+	8	0
-	+	22	0
-	+	8	0
-	+	55	0
-	+	54	0
-	+	18	0
-	+	32	0
-	+	18	0
 
 > ~/python-types/page_lsp.py
 	*	1735983184	0
@@ -21092,42 +22417,6 @@ $getbufline(a:buffer_number, 1, '$')
 	*	1735757586	0
 	"	1229	0
 
-> ~/bash/python-direnv.bash
-	*	1735757289	0
-	"	3	0
-	^	4	19
-	.	4	0
-	+	5	8
-	+	4	0
-	+	2	25
-	+	5	10
-	+	2	1
-	+	1	1
-	+	4	18
-	+	2	0
-	+	4	0
-
-> ~/.config/env.bash
-	*	1735756798	0
-	"	3	60
-	^	3	61
-	.	3	60
-	+	9	0
-	+	11	0
-	+	10	0
-	+	15	0
-	+	7	0
-	+	4	0
-	+	15	0
-	+	5	0
-	+	6	0
-	+	5	112
-	+	17	0
-	+	16	0
-	+	17	138
-	+	2	65
-	+	3	60
-
 > ~/bash/zdirs.bash
 	*	1735756076	0
 	"	1	0
@@ -21267,16 +22556,6 @@ $getbufline(a:buffer_number, 1, '$')
 	+	20	0
 	+	8	0
 	+	1	0
-
-> ~/bash/source_vs_bash.bash
-	*	1735752694	0
-	"	2	0
-	^	3	0
-	.	2	0
-	+	4	0
-	+	3	0
-	+	1	0
-	+	2	0
 
 > ~/bash/logs/gh-timeago-updates.log
 	*	1735751593	0
@@ -22275,10 +23554,6 @@ $getbufline(a:buffer_number, 1, '$')
 	+	110	0
 	+	111	0
 	+	121	0
-
-> /usr/share/vim/vim90/doc/help.txt
-	*	1735565162	0
-	"	2	0
 
 > ~/disc-bot/leaderboard_StarCookiez.html
 	*	1735543312	0
@@ -28423,49 +29698,6 @@ $getbufline(a:buffer_number, 1, '$')
 	+	475	0
 	a	20	0
 
-> ~/.config/fzf/.fzfrc
-	*	1730724621	0
-	"	11	0
-	.	13	0
-	+	2	0
-	+	2	1
-	+	2	37
-	+	2	0
-	+	2	1
-	+	4	0
-	+	9	210
-	+	9	0
-	+	9	166
-	+	9	1
-	+	9	17
-	+	9	0
-	+	10	0
-	+	9	23
-	+	9	14
-	+	9	34
-	+	6	0
-	+	2	0
-	+	9	20
-	+	6	1
-	+	9	0
-	+	3	0
-	+	4	0
-	+	9	0
-	+	9	21
-	+	7	1
-	+	9	0
-	+	9	58
-	+	9	0
-	+	5	0
-	+	9	0
-	+	1	0
-	+	9	0
-	+	8	0
-	+	12	0
-	+	13	0
-	+	12	0
-	+	13	0
-
 > ~/tooling/app_ideas/worker_multiplexer.txt
 	*	1730721349	0
 	"	14	4
@@ -31659,25 +32891,6 @@ $getbufline(a:buffer_number, 1, '$')
 	+	52	0
 	+	53	0
 
-> ~/tooling/search-syntax.txt
-	*	1729277600	0
-	"	16	66
-	^	16	67
-	.	16	66
-	+	11	28
-	+	12	27
-	+	13	1
-	+	10	0
-	+	2	51
-	+	6	27
-	+	10	0
-	+	8	0
-	+	6	38
-	+	3	27
-	+	1	0
-	+	15	87
-	+	16	66
-
 > ~/hateoas/pid_info.py
 	*	1729276750	0
 	"	26	0
@@ -32158,13 +33371,6 @@ $getbufline(a:buffer_number, 1, '$')
 > /proc/41299/attr/exec
 	*	1729258463	0
 	"	1	0
-
-> ~/tooling/docs/fzf.man
-	*	1729255767	0
-	"	54	11
-	^	34	12
-	.	34	0
-	+	34	0
 
 > ~/.vim/mappings.vim
 	*	1729255553	0
@@ -33839,23 +35045,6 @@ $getbufline(a:buffer_number, 1, '$')
 	*	1728812527	0
 	"	376	1
 
-> ~/.vim/plugin/goto_method.vim
-	*	1728811742	0
-	"	3	0
-	^	40	47
-	.	40	46
-	+	38	59
-	+	39	0
-	+	38	0
-	+	39	64
-	+	40	0
-	+	39	0
-	+	40	0
-	+	41	0
-	+	40	0
-	+	41	0
-	+	40	46
-
 > ~/.vim/plugin/workspace.vim
 	*	1728811604	0
 	"	17	4
@@ -34579,53 +35768,6 @@ $getbufline(a:buffer_number, 1, '$')
 	.	1	0
 	+	1	36
 	+	1	0
-
-> ~/.vim/plugin/oldfiles.vim
-	*	1727860384	0
-	"	73	25
-	^	63	34
-	.	63	33
-	+	84	0
-	+	49	10
-	+	45	0
-	+	47	16
-	+	47	0
-	+	46	0
-	+	81	0
-	+	65	10
-	+	58	21
-	+	60	8
-	+	63	63
-	+	59	99
-	+	63	30
-	+	71	0
-	+	59	0
-	+	71	0
-	+	70	26
-	+	74	4
-	+	77	10
-	+	84	40
-	+	67	26
-	+	80	25
-	+	83	48
-	+	73	23
-	+	84	3
-	+	85	0
-	+	84	22
-	+	80	15
-	+	59	23
-	+	59	80
-	+	59	20
-	+	59	51
-	+	70	5
-	+	69	5
-	+	68	5
-	+	68	0
-	+	83	51
-	+	70	0
-	+	83	54
-	+	59	20
-	+	63	33
 
 > ~/tooling/fzf-command-samples.txt
 	*	1727860330	0
@@ -39589,68 +40731,6 @@ $getbufline(a:buffer_number, 1, '$')
 	+	42	0
 	a	41	13
 
-> ~/pyscripts/oldfiles.py
-	*	1724111769	0
-	"	1	0
-	^	33	16
-	.	33	15
-	+	38	24
-	+	38	23
-	+	40	0
-	+	38	29
-	+	39	16
-	+	1	0
-	+	37	0
-	+	37	83
-	+	34	0
-	+	37	42
-	+	37	9
-	+	34	0
-	+	37	28
-	+	37	11
-	+	37	0
-	+	18	0
-	+	21	10
-	+	34	14
-	+	34	4
-	+	34	10
-	+	34	22
-	+	21	0
-	+	37	0
-	+	34	0
-	+	34	9
-	+	34	20
-	+	34	0
-	+	34	48
-	+	34	0
-	+	19	9
-	+	34	66
-	+	34	0
-	+	34	48
-	+	34	80
-	+	37	47
-	+	34	78
-	+	34	11
-	+	34	0
-	+	34	52
-	+	34	57
-	+	34	0
-	+	34	54
-	+	34	0
-	+	4	11
-	+	37	0
-	+	3	56
-	+	7	0
-	+	3	67
-	+	4	10
-	+	5	42
-	+	6	0
-	+	21	27
-	+	37	0
-	+	22	0
-	+	36	21
-	+	33	15
-
 > ~/pyscripts/port.py
 	*	1724109143	0
 	"	17	0
@@ -42763,91 +43843,6 @@ $getbufline(a:buffer_number, 1, '$')
 	*	1722512867	0
 	"	714	26
 
-> ~/.vim/plugin/print-personal-commands.vim
-	*	1722487405	0
-	"	100	4
-	^	17	11
-	.	100	4
-	+	78	8
-	+	78	0
-	+	78	8
-	+	78	0
-	+	76	44
-	+	78	40
-	+	77	64
-	+	78	80
-	+	77	53
-	+	78	21
-	+	69	19
-	+	79	114
-	+	80	31
-	+	78	9
-	+	83	23
-	+	92	0
-	+	87	24
-	+	91	0
-	+	74	26
-	+	78	58
-	+	79	65
-	+	90	68
-	+	85	75
-	+	89	78
-	+	90	65
-	+	86	49
-	+	90	56
-	+	89	9
-	+	85	37
-	+	90	65
-	+	89	8
-	+	84	78
-	+	88	78
-	+	84	71
-	+	88	74
-	+	90	53
-	+	88	42
-	+	85	100
-	+	85	0
-	+	85	101
-	+	86	0
-	+	85	29
-	+	86	59
-	+	89	112
-	+	89	35
-	+	90	26
-	+	86	0
-	+	2	41
-	+	3	10
-	+	2	20
-	+	3	40
-	+	6	2
-	+	18	0
-	+	6	36
-	+	8	31
-	+	9	36
-	+	12	8
-	+	18	0
-	+	13	55
-	+	14	0
-	+	16	0
-	+	15	39
-	+	16	9
-	+	13	66
-	+	90	0
-	+	100	5
-	+	7	24
-	+	10	49
-	+	13	79
-	+	10	106
-	+	13	96
-	+	4	0
-	+	16	0
-	+	6	0
-	+	5	19
-	+	6	0
-	+	16	0
-	+	17	10
-	+	100	4
-
 > ~/.vim/autoload/plug.vim
 	*	1722486423	0
 	"	239	0
@@ -42941,24 +43936,9 @@ $getbufline(a:buffer_number, 1, '$')
 	+	4	10
 	+	3	27
 
-> ~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim
-	*	1722457207	0
-	"	296	0
-
 > /usr/share/vim/vim90/doc/indent.txt
 	*	1722455602	0
 	"	1	0
-
-> ~/.vim/plugged/fzf.vim/plugin/fzf.vim
-	*	1722455501	0
-	"	68	0
-
-> ~/.vim/plugged/fzf.vim/doc/fzf-vim.txt
-	*	1722455321	0
-	"	123	89
-	^	133	2
-	.	133	0
-	+	133	0
 
 > ~/.vim/tmp/command-output.txt
 	*	1722455209	0
@@ -43578,59 +44558,6 @@ $getbufline(a:buffer_number, 1, '$')
 	+	21	0
 	+	19	0
 	+	18	0
-
-> ~/.vim/edit-plugin/edit.vim
-	*	1722168247	0
-	"	22	9
-	^	22	29
-	.	22	28
-	+	22	15
-	+	22	25
-	+	22	0
-	+	22	32
-	+	18	37
-	+	22	67
-	+	22	0
-	+	22	18
-	+	19	28
-	+	22	0
-	+	19	0
-	+	20	33
-	+	22	63
-	+	22	31
-	+	22	0
-	+	22	4
-	+	22	0
-	+	22	9
-	+	22	0
-	+	22	39
-	+	22	32
-	+	22	74
-	+	22	10
-	+	22	4
-	+	22	10
-	+	22	1
-	+	22	0
-	+	22	1
-	+	22	71
-	+	22	46
-	+	22	35
-	+	22	0
-	+	22	16
-	+	22	52
-	+	22	0
-	+	22	17
-	+	22	54
-	+	22	4
-	+	22	9
-	+	22	14
-	+	22	0
-	+	22	38
-	+	12	25
-	+	11	69
-	+	13	15
-	+	14	22
-	+	22	28
 
 > ~/.vim/plugin/database.c
 	*	1722168238	0
@@ -46980,10 +47907,6 @@ $getbufline(a:buffer_number, 1, '$')
 > ~/Twitch/chrome-extensions/extension_controls/content_script.js
 	*	1719317437	0
 	"	50	13
-
-> /usr/share/vim/vim90/doc/quickfix.txt
-	*	1719317422	0
-	"	322	14
 
 > ~/ui-components-css/static/css-resets/button-reset.css
 	*	1719317129	0
