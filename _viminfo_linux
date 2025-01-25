@@ -11,17 +11,49 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/preview-window
+~MSle0~/symlink
 
 # Last Substitute Search Pattern:
-~MSle0&diff 
+~MSle0&^\s*$
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
+:q
+|2,0,1737792652,,"q"
 :qa
-|2,0,1737591153,,"qa"
+|2,0,1737792459,,"qa"
+:reg
+|2,0,1737792452,,"reg"
+:e *llm
+|2,0,1737792426,,"e *llm"
+:e commit-message-gemini.py
+|2,0,1737792424,,"e commit-message-gemini.py"
+:e README.md
+|2,0,1737792419,,"e README.md"
+:bd!
+|2,0,1737791755,,"bd!"
+:g/^\s*$/d
+|2,0,1737787564,,"g/^\\s*$/d"
+:%
+|2,0,1737787560,,"%"
+:g/RUB 0\.00/d
+|2,0,1737787554,,"g/RUB 0\\.00/d"
+:g/\C\<purchased\>/d
+|2,0,1737787547,,"g/\\C\\<purchased\\>/d"
+:g/\$0\.00/d
+|2,0,1737787544,,"g/\\$0\\.00/d"
+:g/Epic Games Store/d
+|2,0,1737787541,,"g/Epic Games Store/d"
+:q!
+|2,0,1737758034,,"q!"
+:qa!
+|2,0,1737752830,,"qa!"
+:bd
+|2,0,1737752788,,"bd"
+:e
+|2,0,1737752787,,"e"
 :Grep -g '*.vim' enter
 |2,0,1737590395,,"Grep -g '*.vim' enter"
 :Rg
@@ -62,8 +94,6 @@ $
 |2,0,1737570569,,"h fzf#run"
 :h fzf-vim
 |2,0,1737570528,,"h fzf-vim"
-:q!
-|2,0,1737570489,,"q!"
 :term
 |2,0,1737570480,,"term"
 :Grep '^\s*Capture'
@@ -102,8 +132,6 @@ $
 |2,0,1737567265,," :edit"
 :ExtractArguments
 |2,0,1737567170,,"ExtractArguments"
-:bd
-|2,0,1737567020,,"bd"
 :cl
 |2,0,1737563590,,"cl"
 :h fzf.vim
@@ -114,8 +142,6 @@ $
 |2,0,1737562975,,"h f-args"
 :Tab /->/
 |2,0,1737544097,,"Tab /->/"
-:q
-|2,0,1737543528,,"q"
 :verbose command Rg
 |2,0,1737534731,,"verbose command Rg"
 :h :c
@@ -156,8 +182,6 @@ $
 |2,0,1737519521,,"H :Rg"
 :%!ansi2txt
 |2,0,1737442254,,"%!ansi2txt"
-:e
-|2,0,1737438999,,"e"
 :e CustomReporter.ts
 |2,0,1737437974,,"e CustomReporter.ts"
 :e vitest.error.txt
@@ -300,8 +324,6 @@ $
 |2,0,1736552004,,"e vitest.reporter.json"
 :set ft=man
 |2,0,1736553173,,"set ft=man"
-:qa!
-|2,0,1736551455,,"qa!"
 :set wrap
 |2,0,1736551436,,"set wrap"
 :e tsconfig.strict.json
@@ -426,8 +448,6 @@ $
 |2,0,1736188812,,"e suggestions-1.txt"
 :e suggestions-2.txt
 |2,0,1736188669,,"e suggestions-2.txt"
-:bd!
-|2,0,1736074426,,"bd!"
 :v/diff /d
 |2,0,1736074423,,"v/diff /d"
 :set ft=
@@ -1324,8 +1344,6 @@ $
 |2,0,1730140692,,"verbose set readonly"
 :e eslint.config.js
 |2,0,1730140657,,"e eslint.config.js"
-:e README.md
-|2,0,1730140654,,"e README.md"
 :set readonly!
 |2,0,1730140617,,"set readonly!"
 :set readonly
@@ -2472,8 +2490,6 @@ $
 |2,0,1725458059,,"verbose pwd"
 :Gro
 |2,0,1725457985,,"Gro"
-:%
-|2,0,1725457962,,"%"
 :set verbosefile?
 |2,0,1725457907,,"set verbosefile?"
 :echo &verbosefile
@@ -3458,8 +3474,6 @@ $
 |2,0,1723472588,,"MRU insert_w"
 :h digraph
 |2,0,1723472175,,"h digraph"
-:reg
-|2,0,1723472069,,"reg"
 :MRU prog
 |2,0,1723472058,,"MRU prog"
 :MRU 3:errors.vim
@@ -11818,6 +11832,34 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/symlink
+|2,1,1737792628,47,"symlink"
+?/GEMINI
+|2,1,1737792433,47,"GEMINI"
+?/secrets
+|2,1,1737792307,47,"secrets"
+? ^\s*$
+|2,1,1737787564,,"^\\s*$"
+? RUB 0\.00
+|2,1,1737787554,,"RUB 0\\.00"
+? \C\<purchased\>
+|2,1,1737787547,,"\\C\\<purchased\\>"
+? \$0\.00
+|2,1,1737787544,,"\\$0\\.00"
+? Epic Games Store
+|2,1,1737787541,,"Epic Games Store"
+?/go\.dev
+|2,1,1737758030,47,"go\\.dev"
+?/aria.*go
+|2,1,1737758020,47,"aria.*go"
+?/go1
+|2,1,1737758014,47,"go1"
+?/\<go\>
+|2,1,1737757943,47,"\\<go\\>"
+??\<go
+|2,1,1737757934,63,"\\<go"
+?/gopath
+|2,1,1737757922,47,"gopath"
 ? ^\s*$\n\s*$
 |2,1,1737591150,,"^\\s*$\\n\\s*$"
 ?/preview-window
@@ -12030,8 +12072,6 @@ $
 |2,1,1736279430,47,"sum("
 ?/number
 |2,1,1736278837,47,"number"
-?/symlink
-|2,1,1736280688,47,"symlink"
 ?/num
 |2,1,1736278816,47,"num"
 ?/numbre
@@ -12722,8 +12762,6 @@ $
 |2,1,1731252056,47,"touc"
 ?/, vla
 |2,1,1731247758,47,", vla"
-?/GEMINI
-|2,1,1731247588,47,"GEMINI"
 ?/err
 |2,1,1731247442,47,"err"
 ? download
@@ -16634,8 +16672,6 @@ $
 |2,1,1711020339,47,"cener-h"
 ?/data2
 |2,1,1711019663,47,"data2"
-? ^\s*$
-|2,1,1711008769,,"^\\s*$"
 ? }
 |2,1,1711008757,,"}"
 ?/CREATE
@@ -18072,44 +18108,39 @@ $
 |2,4,1693311567,,"cont"
 
 # Registers:
-"0	CHAR	0
-	'--preview-window', '+{2}-/2'
-|3,0,0,0,1,0,1737571608,"'--preview-window', '+{2}-/2'"
+"0	LINE	0
+	            err("Go to: https://aistudio.google.com/apikey")
+|3,0,0,1,1,0,1737792379,"            err(\"Go to: https://aistudio.google.com/apikey\")"
 ""1	LINE	0
-	command! -nargs=* Grep call s:Grep(<q-args>)
-|3,1,1,1,1,0,1737590995,"command! -nargs=* Grep call s:Grep(<q-args>)"
+	
+|3,1,1,1,1,0,1737792455,""
 "2	LINE	0
-	" Grep -uu -g '**/*gged*/**' 'fun'
-|3,0,2,1,1,0,1737590991,"\" Grep -uu -g '**/*gged*/**' 'fun'"
+	bin/
+|3,0,2,1,1,0,1737792196,"bin/"
 "3	LINE	0
-	" Grep -uu -g '**/*gged*/**' 'fun'
-|3,0,3,1,1,0,1737590989,"\" Grep -uu -g '**/*gged*/**' 'fun'"
+	
+|3,0,3,1,1,0,1737787564,""
 "4	LINE	0
-	" if 
-	" Grep 
-|3,0,4,1,2,0,1737590988,"\" if ","\" Grep "
+	
+|3,0,4,1,1,0,1737787564,""
 "5	LINE	0
-	" Use `path`, `ext` and anything else if req to filter ripgrep results before
-	" loading into fzf. After load, use `nth` magic to display the files but
-	" for search and filter it happens via lines on the text.
-|3,0,5,1,3,0,1737590983,"\" Use `path`, `ext` and anything else if req to filter ripgrep results before","\" loading into fzf. After load, use `nth` magic to display the files but","\" for search and filter it happens via lines on the text."
+	
+|3,0,5,1,1,0,1737787564,""
 "6	LINE	0
-	    " let l:fzf_options = ['--no-sort', '--delimiter=:', '--nth=4..', '--preview', 'echo {}']
-|3,0,6,1,1,0,1737590440,"    \" let l:fzf_options = ['--no-sort', '--delimiter=:', '--nth=4..', '--preview', 'echo {}']"
+	
+|3,0,6,1,1,0,1737787564,""
 "7	LINE	0
-	    let l:fzf_options = ''
-	    " let l:fzf_options = '--multi --delimiter=/ --nth -1.. --no-sort --preview "bat --color=always --style=plain {}"'
-	    let l:fzf_options = '--no-sort --delimiter=: --nth 4.. --preview cat'
-|3,0,7,1,3,0,1737590436,"    let l:fzf_options = ''","    \" let l:fzf_options = '--multi --delimiter=/ --nth -1.. --no-sort --preview \"bat --color=always --style=plain {}\"'","    let l:fzf_options = '--no-sort --delimiter=: --nth 4.. --preview cat'"
+	
+|3,0,7,1,1,0,1737787564,""
 "8	LINE	0
-	    " echo l:source
-|3,0,8,1,1,0,1737590431,"    \" echo l:source"
+	
+|3,0,8,1,1,0,1737787564,""
 "9	LINE	0
-	" inoremap <expr> <c-x><c-f> fzf#vim#complete#path('rg --files')
-|3,0,9,1,1,0,1737590423,"\" inoremap <expr> <c-x><c-f> fzf#vim#complete#path('rg --files')"
+	
+|3,0,9,1,1,0,1737787564,""
 "a	CHAR	0
 	nojkVnl>nO€ýa
-|3,0,10,0,1,0,1737563103,"nojkVnl>nO€ýa"
+|3,0,10,0,1,0,1737791752,"nojkVnl>nO€ýa"
 "i	CHAR	0
 	ado_up()jk:q!
 |3,0,18,0,1,0,1724200553,"ado_up()jk:q!"
@@ -18178,244 +18209,410 @@ $
 |<"    assert x_min < x_max, f\"Invalid x coordinates: min ({x_min}) >= max ({x_max})\"","    assert y_min < y_max, f\"Invalid y coordinates: min ({y_min}) >= max ({y_max})\"","    ","    # Additional geometric checks","    assert abs(y1 - y2) < (y_max - y_min), \"Top edge is not roughly horizontal\"","    assert abs(y3 - y4) < (y_max - y_min), \"Bottom edge is not roughly horizontal\"","    assert abs(x1 - x4) < (x_max - x_min), \"Left edge is not roughly vertical\"",>83
 |<"    assert abs(x2 - x3) < (x_max - x_min), \"Right edge is not roughly vertical\"","","    pretty_string_flat = {","        \"left\": x_min,","        \"right\": x_max,","        \"top\": y_min,","        \"bottom\": y_max,","        \"top_left\": (x1, y1),","        \"top_right\": (x2, y2),","        \"bottom_right\": (x3, y3),","        \"bottom_left\": (x4, y4),","    }","    ","    print(f\"{box} => {pretty_string_flat}\")",""
 "-	CHAR	0
-	"
-|3,0,36,0,1,0,1737590993,"\""
+	f
+|3,0,36,0,1,0,1737792326,"f"
 
 # File marks:
-'0  36  0  ~/.vim/plugin/better-rg.vim
-|4,48,36,0,1737591155,"~/.vim/plugin/better-rg.vim"
-'1  7  36  ~/.vim/plugged/fzf.vim/bin/preview.sh
-|4,49,7,36,1737570490,"~/.vim/plugged/fzf.vim/bin/preview.sh"
-'2  7  36  ~/.vim/plugged/fzf.vim/bin/preview.sh
-|4,50,7,36,1737570490,"~/.vim/plugged/fzf.vim/bin/preview.sh"
-'3  30  33  ~/.vim/plugin/better-rg.vim
-|4,51,30,33,1737543529,"~/.vim/plugin/better-rg.vim"
-'4  20  33  ~/.vim/plugin/better-rg.vim
-|4,52,20,33,1737543529,"~/.vim/plugin/better-rg.vim"
-'5  33  33  ~/.vim/plugin/better-rg.vim
-|4,53,33,33,1737543529,"~/.vim/plugin/better-rg.vim"
-'6  17  33  ~/.vim/plugin/better-rg.vim
-|4,54,17,33,1737543529,"~/.vim/plugin/better-rg.vim"
-'7  63  153  ~/.vim/plugged/fzf.vim/plugin/fzf.vim
-|4,55,63,153,1737531235,"~/.vim/plugged/fzf.vim/plugin/fzf.vim"
-'8  63  153  ~/.vim/plugged/fzf.vim/plugin/fzf.vim
-|4,56,63,153,1737531235,"~/.vim/plugged/fzf.vim/plugin/fzf.vim"
-'9  63  153  ~/.vim/plugged/fzf.vim/plugin/fzf.vim
-|4,57,63,153,1737531235,"~/.vim/plugged/fzf.vim/plugin/fzf.vim"
+'0  34  0  /tmp/crontab.wDihqF/crontab
+|4,48,34,0,1737792653,"/tmp/crontab.wDihqF/crontab"
+'1  1  0  ~/pyscripts/secrets.env
+|4,49,1,0,1737792459,"~/pyscripts/secrets.env"
+'2  1  0  ~/pyscripts/secrets.env
+|4,50,1,0,1737792459,"~/pyscripts/secrets.env"
+'3  123  383  ~/pyscripts/commit-message-gemini.py
+|4,51,123,383,1737792385,"~/pyscripts/commit-message-gemini.py"
+'4  123  383  ~/pyscripts/commit-message-gemini.py
+|4,52,123,383,1737792385,"~/pyscripts/commit-message-gemini.py"
+'5  123  383  ~/pyscripts/commit-message-gemini.py
+|4,53,123,383,1737792385,"~/pyscripts/commit-message-gemini.py"
+'6  123  383  ~/pyscripts/commit-message-gemini.py
+|4,54,123,383,1737792385,"~/pyscripts/commit-message-gemini.py"
+'7  1  0  ~/pyscripts/commit-message-gemini.py
+|4,55,1,0,1737792334,"~/pyscripts/commit-message-gemini.py"
+'8  1  0  ~/pyscripts/commit-message-gemini.py
+|4,56,1,0,1737792334,"~/pyscripts/commit-message-gemini.py"
+'9  1  0  ~/pyscripts/commit-message-gemini.py
+|4,57,1,0,1737792334,"~/pyscripts/commit-message-gemini.py"
 
 # Jumplist (newest first):
--'  36  0  ~/.vim/plugin/better-rg.vim
-|4,39,36,0,1737591155,"~/.vim/plugin/better-rg.vim"
--'  35  0  ~/.vim/plugin/better-rg.vim
-|4,39,35,0,1737591150,"~/.vim/plugin/better-rg.vim"
--'  1  0  ~/.vim/plugin/better-rg.vim
-|4,39,1,0,1737590986,"~/.vim/plugin/better-rg.vim"
--'  23  17  ~/.vim/plugin/better-rg.vim
-|4,39,23,17,1737590382,"~/.vim/plugin/better-rg.vim"
--'  22  150  ~/.vim/plugin/better-rg.vim
-|4,39,22,150,1737581334,"~/.vim/plugin/better-rg.vim"
--'  859  160  ~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim
-|4,39,859,160,1737571610,"~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim"
--'  194  23  ~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim
-|4,39,194,23,1737571590,"~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim"
--'  1  0  ~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim
-|4,39,1,0,1737571585,"~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim"
--'  537  21  ~/tooling/docs/fzf.man
-|4,39,537,21,1737571574,"~/tooling/docs/fzf.man"
--'  552  33  ~/tooling/docs/fzf.man
-|4,39,552,33,1737571551,"~/tooling/docs/fzf.man"
--'  533  9  ~/tooling/docs/fzf.man
-|4,39,533,9,1737571550,"~/tooling/docs/fzf.man"
--'  515  126  ~/tooling/docs/fzf.man
-|4,39,515,126,1737571527,"~/tooling/docs/fzf.man"
--'  1  0  ~/tooling/docs/fzf.man
-|4,39,1,0,1737571526,"~/tooling/docs/fzf.man"
--'  185  4  ~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim
-|4,39,185,4,1737571518,"~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim"
--'  173  10  ~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim
-|4,39,173,10,1737571489,"~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim"
--'  153  23  ~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim
-|4,39,153,23,1737571488,"~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim"
--'  152  55  ~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim
-|4,39,152,55,1737571488,"~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim"
--'  103  24  ~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim
-|4,39,103,24,1737571487,"~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim"
--'  62  26  ~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim
-|4,39,62,26,1737571484,"~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim"
--'  54  28  ~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim
-|4,39,54,28,1737571484,"~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim"
--'  322  0  ~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim
-|4,39,322,0,1737571482,"~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim"
--'  70  2  ~/.vim/plugged/fzf.vim/bin/preview.sh
-|4,39,70,2,1737571245,"~/.vim/plugged/fzf.vim/bin/preview.sh"
--'  980  13  ~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim
-|4,39,980,13,1737571236,"~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim"
--'  995  4  ~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim
-|4,39,995,4,1737571215,"~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim"
--'  968  4  ~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim
-|4,39,968,4,1737571213,"~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim"
--'  957  4  ~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim
-|4,39,957,4,1737571213,"~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim"
--'  951  0  ~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim
-|4,39,951,0,1737571212,"~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim"
--'  69  41  ~/.vim/plugged/fzf.vim/bin/preview.sh
-|4,39,69,41,1737571085,"~/.vim/plugged/fzf.vim/bin/preview.sh"
--'  65  4  ~/.vim/plugged/fzf.vim/bin/preview.sh
-|4,39,65,4,1737571085,"~/.vim/plugged/fzf.vim/bin/preview.sh"
--'  64  18  ~/.vim/plugged/fzf.vim/bin/preview.sh
-|4,39,64,18,1737571083,"~/.vim/plugged/fzf.vim/bin/preview.sh"
--'  60  12  ~/.vim/plugged/fzf.vim/bin/preview.sh
-|4,39,60,12,1737571082,"~/.vim/plugged/fzf.vim/bin/preview.sh"
--'  1  0  ~/.vim/plugged/fzf.vim/bin/preview.sh
-|4,39,1,0,1737571081,"~/.vim/plugged/fzf.vim/bin/preview.sh"
--'  237  0  ~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim
-|4,39,237,0,1737571078,"~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim"
--'  1718  7  ~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim
-|4,39,1718,7,1737570978,"~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim"
--'  1  0  ~/.vim/plugged/fzf.vim/plugin/fzf.vim
-|4,39,1,0,1737570973,"~/.vim/plugged/fzf.vim/plugin/fzf.vim"
--'  75  0  ~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim
-|4,39,75,0,1737570895,"~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim"
--'  40  0  ~/.vim/plugin/better-rg.vim
-|4,39,40,0,1737570779,"~/.vim/plugin/better-rg.vim"
--'  378  68  ~/.vim/plugged/fzf.vim/doc/fzf-vim.txt
-|4,39,378,68,1737570764,"~/.vim/plugged/fzf.vim/doc/fzf-vim.txt"
--'  364  53  ~/.vim/plugged/fzf.vim/doc/fzf-vim.txt
-|4,39,364,53,1737570658,"~/.vim/plugged/fzf.vim/doc/fzf-vim.txt"
--'  348  130  ~/.vim/plugged/fzf.vim/doc/fzf-vim.txt
-|4,39,348,130,1737570657,"~/.vim/plugged/fzf.vim/doc/fzf-vim.txt"
--'  387  68  ~/.vim/plugged/fzf.vim/doc/fzf-vim.txt
-|4,39,387,68,1737570597,"~/.vim/plugged/fzf.vim/doc/fzf-vim.txt"
--'  381  0  ~/.vim/plugged/fzf.vim/doc/fzf-vim.txt
-|4,39,381,0,1737570596,"~/.vim/plugged/fzf.vim/doc/fzf-vim.txt"
--'  449  49  ~/.vim/plugged/fzf.vim/doc/fzf-vim.txt
-|4,39,449,49,1737570588,"~/.vim/plugged/fzf.vim/doc/fzf-vim.txt"
--'  1  0  ~/.vim/plugged/fzf.vim/doc/fzf-vim.txt
-|4,39,1,0,1737570566,"~/.vim/plugged/fzf.vim/doc/fzf-vim.txt"
--'  7  36  ~/.vim/plugged/fzf.vim/bin/preview.sh
-|4,39,7,36,1737570490,"~/.vim/plugged/fzf.vim/bin/preview.sh"
--'  7  36  ~/.vim/plugged/fzf.vim/bin/preview.sh
-|4,39,7,36,1737570490,"~/.vim/plugged/fzf.vim/bin/preview.sh"
--'  71  18  ~/.vim/plugged/fzf.vim/bin/preview.sh
-|4,39,71,18,1737570429,"~/.vim/plugged/fzf.vim/bin/preview.sh"
--'  71  18  ~/.vim/plugged/fzf.vim/bin/preview.sh
-|4,39,71,18,1737570429,"~/.vim/plugged/fzf.vim/bin/preview.sh"
--'  1  0  ~/.vim/plugged/fzf.vim/bin/preview.sh
-|4,39,1,0,1737570419,"~/.vim/plugged/fzf.vim/bin/preview.sh"
--'  23  108  ~/.vim/plugin/better-rg.vim
-|4,39,23,108,1737570415,"~/.vim/plugin/better-rg.vim"
--'  16  24  ~/.vim/plugin/better-rg.vim
-|4,39,16,24,1737570276,"~/.vim/plugin/better-rg.vim"
--'  46  0  ~/.vim/plugin/better-rg.vim
-|4,39,46,0,1737570276,"~/.vim/plugin/better-rg.vim"
--'  13  24  ~/.vim/plugin/better-rg.vim
-|4,39,13,24,1737570276,"~/.vim/plugin/better-rg.vim"
--'  10  22  ~/.vim/plugin/better-rg.vim
-|4,39,10,22,1737570229,"~/.vim/plugin/better-rg.vim"
--'  7  22  ~/.vim/plugin/better-rg.vim
-|4,39,7,22,1737570229,"~/.vim/plugin/better-rg.vim"
--'  15  22  ~/.vim/plugin/better-rg.vim
-|4,39,15,22,1737570213,"~/.vim/plugin/better-rg.vim"
--'  12  22  ~/.vim/plugin/better-rg.vim
-|4,39,12,22,1737570213,"~/.vim/plugin/better-rg.vim"
--'  38  23  ~/.vim/plugin/better-rg.vim
-|4,39,38,23,1737570136,"~/.vim/plugin/better-rg.vim"
--'  45  23  ~/.vim/plugin/better-rg.vim
-|4,39,45,23,1737570136,"~/.vim/plugin/better-rg.vim"
--'  32  39  ~/.vim/plugin/better-rg.vim
-|4,39,32,39,1737570107,"~/.vim/plugin/better-rg.vim"
--'  35  39  ~/.vim/plugin/better-rg.vim
-|4,39,35,39,1737570107,"~/.vim/plugin/better-rg.vim"
--'  6  29  ~/tooling/search-syntax.txt
-|4,39,6,29,1737570052,"~/tooling/search-syntax.txt"
--'  6  29  ~/tooling/search-syntax.txt
-|4,39,6,29,1737570052,"~/tooling/search-syntax.txt"
--'  1  0  ~/tooling/search-syntax.txt
-|4,39,1,0,1737570051,"~/tooling/search-syntax.txt"
--'  1  0  ~/tooling/search-syntax.txt
-|4,39,1,0,1737570051,"~/tooling/search-syntax.txt"
--'  37  3  ~/.vim/plugin/better-rg.vim
-|4,39,37,3,1737569993,"~/.vim/plugin/better-rg.vim"
--'  42  3  ~/.vim/plugin/better-rg.vim
-|4,39,42,3,1737569993,"~/.vim/plugin/better-rg.vim"
--'  33  5  ~/.vim/plugin/better-rg.vim
-|4,39,33,5,1737568843,"~/.vim/plugin/better-rg.vim"
--'  36  5  ~/.vim/plugin/better-rg.vim
-|4,39,36,5,1737568843,"~/.vim/plugin/better-rg.vim"
--'  31  5  ~/.vim/plugin/better-rg.vim
-|4,39,31,5,1737568842,"~/.vim/plugin/better-rg.vim"
--'  30  5  ~/.vim/plugin/better-rg.vim
-|4,39,30,5,1737568842,"~/.vim/plugin/better-rg.vim"
--'  34  5  ~/.vim/plugin/better-rg.vim
-|4,39,34,5,1737568842,"~/.vim/plugin/better-rg.vim"
--'  33  5  ~/.vim/plugin/better-rg.vim
-|4,39,33,5,1737568842,"~/.vim/plugin/better-rg.vim"
--'  31  33  ~/.vim/plugin/better-rg.vim
-|4,39,31,33,1737568842,"~/.vim/plugin/better-rg.vim"
--'  14  15  ~/.vim/plugin/better-rg.vim
-|4,39,14,15,1737568841,"~/.vim/plugin/better-rg.vim"
--'  11  15  ~/.vim/plugin/better-rg.vim
-|4,39,11,15,1737568841,"~/.vim/plugin/better-rg.vim"
--'  34  0  ~/.vim/plugin/better-rg.vim
-|4,39,34,0,1737568834,"~/.vim/plugin/better-rg.vim"
--'  37  0  ~/.vim/plugin/better-rg.vim
-|4,39,37,0,1737568834,"~/.vim/plugin/better-rg.vim"
--'  195  15  ~/tooling/docs/rg.man
-|4,39,195,15,1737568371,"~/tooling/docs/rg.man"
--'  195  15  ~/tooling/docs/rg.man
-|4,39,195,15,1737568371,"~/tooling/docs/rg.man"
--'  1  0  ~/tooling/docs/rg.man
-|4,39,1,0,1737568365,"~/tooling/docs/rg.man"
--'  1  0  ~/tooling/docs/rg.man
-|4,39,1,0,1737568365,"~/tooling/docs/rg.man"
--'  22  25  ~/.vim/plugin/better-rg.vim
-|4,39,22,25,1737568363,"~/.vim/plugin/better-rg.vim"
--'  7  4  ~/.vim/plugin/better-rg.vim
-|4,39,7,4,1737568266,"~/.vim/plugin/better-rg.vim"
--'  4  4  ~/.vim/plugin/better-rg.vim
-|4,39,4,4,1737568266,"~/.vim/plugin/better-rg.vim"
--'  177  0  ~/.vim/syntax/javascript.vim
-|4,39,177,0,1737567461,"~/.vim/syntax/javascript.vim"
--'  177  0  ~/.vim/syntax/javascript.vim
-|4,39,177,0,1737567461,"~/.vim/syntax/javascript.vim"
--'  16  0  ~/.vim/edit-plugin/edit.vim
-|4,39,16,0,1737567443,"~/.vim/edit-plugin/edit.vim"
--'  16  0  ~/.vim/edit-plugin/edit.vim
-|4,39,16,0,1737567443,"~/.vim/edit-plugin/edit.vim"
--'  11  20  ~/.vim/plugin/better-rg.vim
-|4,39,11,20,1737567441,"~/.vim/plugin/better-rg.vim"
--'  8  20  ~/.vim/plugin/better-rg.vim
-|4,39,8,20,1737567441,"~/.vim/plugin/better-rg.vim"
--'  5  27  ~/.vim/plugin/better-rg.vim
-|4,39,5,27,1737567368,"~/.vim/plugin/better-rg.vim"
--'  6  13  ~/.vim/plugin/better-rg.vim
-|4,39,6,13,1737567360,"~/.vim/plugin/better-rg.vim"
--'  25  36  ~/.vim/plugin/better-rg.vim
-|4,39,25,36,1737567233,"~/.vim/plugin/better-rg.vim"
--'  26  44  ~/.vim/plugin/better-rg.vim
-|4,39,26,44,1737567225,"~/.vim/plugin/better-rg.vim"
--'  3  0  ~/.vim/plugin/better-rg.vim
-|4,39,3,0,1737567170,"~/.vim/plugin/better-rg.vim"
--'  1104  36  ~/tooling/docs/fzf.man
-|4,39,1104,36,1737567128,"~/tooling/docs/fzf.man"
--'  767  115  ~/tooling/docs/fzf.man
-|4,39,767,115,1737567126,"~/tooling/docs/fzf.man"
--'  338  91  ~/tooling/docs/fzf.man
-|4,39,338,91,1737567123,"~/tooling/docs/fzf.man"
--'  335  31  ~/tooling/docs/fzf.man
-|4,39,335,31,1737567123,"~/tooling/docs/fzf.man"
+-'  34  0  /tmp/crontab.wDihqF/crontab
+|4,39,34,0,1737792653,"/tmp/crontab.wDihqF/crontab"
+-'  1  0  /tmp/crontab.wDihqF/crontab
+|4,39,1,0,1737792628,"/tmp/crontab.wDihqF/crontab"
+-'  38  0  /tmp/crontab.wDihqF/crontab
+|4,39,38,0,1737792626,"/tmp/crontab.wDihqF/crontab"
+-'  1  0  ~/pyscripts/secrets.env
+|4,39,1,0,1737792459,"~/pyscripts/secrets.env"
+-'  1  0  ~/pyscripts/secrets.env
+|4,39,1,0,1737792459,"~/pyscripts/secrets.env"
+-'  123  383  ~/pyscripts/commit-message-gemini.py
+|4,39,123,383,1737792385,"~/pyscripts/commit-message-gemini.py"
+-'  123  383  ~/pyscripts/commit-message-gemini.py
+|4,39,123,383,1737792385,"~/pyscripts/commit-message-gemini.py"
+-'  123  383  ~/pyscripts/commit-message-gemini.py
+|4,39,123,383,1737792385,"~/pyscripts/commit-message-gemini.py"
+-'  122  311  ~/pyscripts/commit-message-gemini.py
+|4,39,122,311,1737792382,"~/pyscripts/commit-message-gemini.py"
+-'  122  311  ~/pyscripts/commit-message-gemini.py
+|4,39,122,311,1737792382,"~/pyscripts/commit-message-gemini.py"
+-'  122  311  ~/pyscripts/commit-message-gemini.py
+|4,39,122,311,1737792382,"~/pyscripts/commit-message-gemini.py"
+-'  83  8  ~/pyscripts/commit-message-gemini.py
+|4,39,83,8,1737792381,"~/pyscripts/commit-message-gemini.py"
+-'  83  8  ~/pyscripts/commit-message-gemini.py
+|4,39,83,8,1737792381,"~/pyscripts/commit-message-gemini.py"
+-'  83  8  ~/pyscripts/commit-message-gemini.py
+|4,39,83,8,1737792381,"~/pyscripts/commit-message-gemini.py"
+-'  84  17  ~/pyscripts/commit-message-gemini.py
+|4,39,84,17,1737792376,"~/pyscripts/commit-message-gemini.py"
+-'  84  17  ~/pyscripts/commit-message-gemini.py
+|4,39,84,17,1737792376,"~/pyscripts/commit-message-gemini.py"
+-'  84  17  ~/pyscripts/commit-message-gemini.py
+|4,39,84,17,1737792376,"~/pyscripts/commit-message-gemini.py"
+-'  82  17  ~/pyscripts/commit-message-gemini.py
+|4,39,82,17,1737792375,"~/pyscripts/commit-message-gemini.py"
+-'  78  21  ~/pyscripts/commit-message-gemini.py
+|4,39,78,21,1737792375,"~/pyscripts/commit-message-gemini.py"
+-'  82  17  ~/pyscripts/commit-message-gemini.py
+|4,39,82,17,1737792375,"~/pyscripts/commit-message-gemini.py"
+-'  78  21  ~/pyscripts/commit-message-gemini.py
+|4,39,78,21,1737792375,"~/pyscripts/commit-message-gemini.py"
+-'  82  17  ~/pyscripts/commit-message-gemini.py
+|4,39,82,17,1737792375,"~/pyscripts/commit-message-gemini.py"
+-'  78  21  ~/pyscripts/commit-message-gemini.py
+|4,39,78,21,1737792375,"~/pyscripts/commit-message-gemini.py"
+-'  1  0  ~/pyscripts/commit-message-gemini.py
+|4,39,1,0,1737792353,"~/pyscripts/commit-message-gemini.py"
+-'  1  0  ~/pyscripts/commit-message-gemini.py
+|4,39,1,0,1737792353,"~/pyscripts/commit-message-gemini.py"
+-'  1  0  ~/pyscripts/commit-message-gemini.py
+|4,39,1,0,1737792353,"~/pyscripts/commit-message-gemini.py"
+-'  1  0  ~/pyscripts/commit-message-gemini.py
+|4,39,1,0,1737792334,"~/pyscripts/commit-message-gemini.py"
+-'  78  4  ~/pyscripts/commit-message-gemini.py
+|4,39,78,4,1737792330,"~/pyscripts/commit-message-gemini.py"
+-'  78  4  ~/pyscripts/commit-message-gemini.py
+|4,39,78,4,1737792330,"~/pyscripts/commit-message-gemini.py"
+-'  79  12  ~/pyscripts/commit-message-gemini.py
+|4,39,79,12,1737792327,"~/pyscripts/commit-message-gemini.py"
+-'  79  12  ~/pyscripts/commit-message-gemini.py
+|4,39,79,12,1737792327,"~/pyscripts/commit-message-gemini.py"
+-'  79  12  ~/pyscripts/commit-message-gemini.py
+|4,39,79,12,1737792327,"~/pyscripts/commit-message-gemini.py"
+-'  79  12  ~/pyscripts/commit-message-gemini.py
+|4,39,79,12,1737792327,"~/pyscripts/commit-message-gemini.py"
+-'  79  12  ~/pyscripts/commit-message-gemini.py
+|4,39,79,12,1737792327,"~/pyscripts/commit-message-gemini.py"
+-'  75  48  ~/pyscripts/commit-message-gemini.py
+|4,39,75,48,1737792311,"~/pyscripts/commit-message-gemini.py"
+-'  75  48  ~/pyscripts/commit-message-gemini.py
+|4,39,75,48,1737792311,"~/pyscripts/commit-message-gemini.py"
+-'  75  48  ~/pyscripts/commit-message-gemini.py
+|4,39,75,48,1737792311,"~/pyscripts/commit-message-gemini.py"
+-'  75  48  ~/pyscripts/commit-message-gemini.py
+|4,39,75,48,1737792311,"~/pyscripts/commit-message-gemini.py"
+-'  75  48  ~/pyscripts/commit-message-gemini.py
+|4,39,75,48,1737792311,"~/pyscripts/commit-message-gemini.py"
+-'  68  18  ~/pyscripts/commit-message-gemini.py
+|4,39,68,18,1737792310,"~/pyscripts/commit-message-gemini.py"
+-'  66  24  ~/pyscripts/commit-message-gemini.py
+|4,39,66,24,1737792310,"~/pyscripts/commit-message-gemini.py"
+-'  68  18  ~/pyscripts/commit-message-gemini.py
+|4,39,68,18,1737792310,"~/pyscripts/commit-message-gemini.py"
+-'  66  24  ~/pyscripts/commit-message-gemini.py
+|4,39,66,24,1737792310,"~/pyscripts/commit-message-gemini.py"
+-'  68  18  ~/pyscripts/commit-message-gemini.py
+|4,39,68,18,1737792310,"~/pyscripts/commit-message-gemini.py"
+-'  66  24  ~/pyscripts/commit-message-gemini.py
+|4,39,66,24,1737792310,"~/pyscripts/commit-message-gemini.py"
+-'  68  18  ~/pyscripts/commit-message-gemini.py
+|4,39,68,18,1737792310,"~/pyscripts/commit-message-gemini.py"
+-'  66  24  ~/pyscripts/commit-message-gemini.py
+|4,39,66,24,1737792310,"~/pyscripts/commit-message-gemini.py"
+-'  68  18  ~/pyscripts/commit-message-gemini.py
+|4,39,68,18,1737792310,"~/pyscripts/commit-message-gemini.py"
+-'  66  24  ~/pyscripts/commit-message-gemini.py
+|4,39,66,24,1737792310,"~/pyscripts/commit-message-gemini.py"
+-'  62  60  ~/pyscripts/commit-message-gemini.py
+|4,39,62,60,1737792309,"~/pyscripts/commit-message-gemini.py"
+-'  62  60  ~/pyscripts/commit-message-gemini.py
+|4,39,62,60,1737792309,"~/pyscripts/commit-message-gemini.py"
+-'  62  60  ~/pyscripts/commit-message-gemini.py
+|4,39,62,60,1737792309,"~/pyscripts/commit-message-gemini.py"
+-'  62  60  ~/pyscripts/commit-message-gemini.py
+|4,39,62,60,1737792309,"~/pyscripts/commit-message-gemini.py"
+-'  62  60  ~/pyscripts/commit-message-gemini.py
+|4,39,62,60,1737792309,"~/pyscripts/commit-message-gemini.py"
+-'  1  0  ~/pyscripts/commit-message-gemini.py
+|4,39,1,0,1737792307,"~/pyscripts/commit-message-gemini.py"
+-'  4  0  ~/golang/.gitignore
+|4,39,4,0,1737792198,"~/golang/.gitignore"
+-'  4  0  ~/golang/.gitignore
+|4,39,4,0,1737792198,"~/golang/.gitignore"
+-'  4  0  ~/golang/.gitignore
+|4,39,4,0,1737792198,"~/golang/.gitignore"
+-'  4  0  ~/golang/.gitignore
+|4,39,4,0,1737792198,"~/golang/.gitignore"
+-'  4  0  ~/golang/.gitignore
+|4,39,4,0,1737792198,"~/golang/.gitignore"
+-'  4  0  ~/golang/.gitignore
+|4,39,4,0,1737792198,"~/golang/.gitignore"
+-'  6  3  ~/golang/.gitignore
+|4,39,6,3,1737792196,"~/golang/.gitignore"
+-'  7  3  ~/golang/.gitignore
+|4,39,7,3,1737792196,"~/golang/.gitignore"
+-'  6  3  ~/golang/.gitignore
+|4,39,6,3,1737792196,"~/golang/.gitignore"
+-'  7  3  ~/golang/.gitignore
+|4,39,7,3,1737792196,"~/golang/.gitignore"
+-'  6  3  ~/golang/.gitignore
+|4,39,6,3,1737792196,"~/golang/.gitignore"
+-'  7  3  ~/golang/.gitignore
+|4,39,7,3,1737792196,"~/golang/.gitignore"
+-'  6  3  ~/golang/.gitignore
+|4,39,6,3,1737792196,"~/golang/.gitignore"
+-'  7  3  ~/golang/.gitignore
+|4,39,7,3,1737792196,"~/golang/.gitignore"
+-'  6  3  ~/golang/.gitignore
+|4,39,6,3,1737792196,"~/golang/.gitignore"
+-'  7  3  ~/golang/.gitignore
+|4,39,7,3,1737792196,"~/golang/.gitignore"
+-'  6  3  ~/golang/.gitignore
+|4,39,6,3,1737792196,"~/golang/.gitignore"
+-'  7  3  ~/golang/.gitignore
+|4,39,7,3,1737792196,"~/golang/.gitignore"
+-'  1  0  ~/golang/.gitignore
+|4,39,1,0,1737792188,"~/golang/.gitignore"
+-'  1  0  ~/golang/.gitignore
+|4,39,1,0,1737792188,"~/golang/.gitignore"
+-'  1  0  ~/golang/.gitignore
+|4,39,1,0,1737792188,"~/golang/.gitignore"
+-'  1  0  ~/golang/.gitignore
+|4,39,1,0,1737792188,"~/golang/.gitignore"
+-'  1  0  ~/golang/.gitignore
+|4,39,1,0,1737792188,"~/golang/.gitignore"
+-'  1  0  ~/golang/.gitignore
+|4,39,1,0,1737792188,"~/golang/.gitignore"
+-'  7  5  ~/golang/.gitignore
+|4,39,7,5,1737792174,"~/golang/.gitignore"
+-'  1  0  ~/golang/.gitignore
+|4,39,1,0,1737792169,"~/golang/.gitignore"
+-'  1  0  ~/tmp/epic-games.txt
+|4,39,1,0,1737791757,"~/tmp/epic-games.txt"
+-'  1  0  ~/tmp/epic-games.txt
+|4,39,1,0,1737791757,"~/tmp/epic-games.txt"
+-'  1  0  ~/tmp/epic-games.txt
+|4,39,1,0,1737791757,"~/tmp/epic-games.txt"
+-'  1  0  ~/tmp/epic-games.txt
+|4,39,1,0,1737791757,"~/tmp/epic-games.txt"
+-'  1  0  ~/tmp/epic-games.txt
+|4,39,1,0,1737791757,"~/tmp/epic-games.txt"
+-'  1  0  ~/tmp/epic-games.txt
+|4,39,1,0,1737791757,"~/tmp/epic-games.txt"
+-'  1  0  ~/tmp/epic-games.txt
+|4,39,1,0,1737791757,"~/tmp/epic-games.txt"
+-'  1  0  ~/tmp/epic-games.txt
+|4,39,1,0,1737791757,"~/tmp/epic-games.txt"
+-'  1  0  ~/tmp/epic-games.txt
+|4,39,1,0,1737791420,"~/tmp/epic-games.txt"
+-'  58  0  ~/tmp/epic-games.txt
+|4,39,58,0,1737787569,"~/tmp/epic-games.txt"
+-'  58  0  ~/tmp/epic-games.txt
+|4,39,58,0,1737787569,"~/tmp/epic-games.txt"
+-'  58  0  ~/tmp/epic-games.txt
+|4,39,58,0,1737787569,"~/tmp/epic-games.txt"
+-'  58  0  ~/tmp/epic-games.txt
+|4,39,58,0,1737787569,"~/tmp/epic-games.txt"
+-'  58  0  ~/tmp/epic-games.txt
+|4,39,58,0,1737787569,"~/tmp/epic-games.txt"
+-'  58  0  ~/tmp/epic-games.txt
+|4,39,58,0,1737787569,"~/tmp/epic-games.txt"
+-'  58  0  ~/tmp/epic-games.txt
+|4,39,58,0,1737787569,"~/tmp/epic-games.txt"
+-'  58  0  ~/tmp/epic-games.txt
+|4,39,58,0,1737787569,"~/tmp/epic-games.txt"
+-'  58  0  ~/tmp/epic-games.txt
+|4,39,58,0,1737787569,"~/tmp/epic-games.txt"
+-'  59  0  ~/tmp/epic-games.txt
+|4,39,59,0,1737787554,"~/tmp/epic-games.txt"
 
 # Buffer list:
-%~/.vim/plugged/fzf.vim/doc/fzf-vim.txt	378	68
-%~/.vim/plugin/better-rg.vim	36	0
-%~/.vim/plugged/fzf.vim/bin/preview.sh	70	2
-%~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim	859	160
-%~/.vim/plugged/fzf.vim/plugin/fzf.vim	1	0
+%/tmp/crontab.wDihqF/crontab	34	0
 
 # History of marks within files (newest to oldest):
 
+> /tmp/crontab.wDihqF/crontab
+	*	1737792649	0
+	"	34	0
+
+> ~/pyscripts/secrets.env
+	*	1737792455	0
+	"	1	0
+	.	2	0
+	+	1	15
+	+	2	8
+	+	1	53
+	+	2	0
+
+> ~/pyscripts/commit-message-gemini.py
+	*	1737792433	0
+	"	63	8
+	^	79	61
+	.	83	0
+	+	164	3
+	+	118	32
+	+	25	35
+	+	14	65
+	+	118	0
+	+	43	0
+	+	120	5
+	+	120	0
+	+	121	5
+	+	122	0
+	+	119	0
+	+	125	54
+	+	127	4
+	+	150	53
+	+	162	37
+	+	126	26
+	+	135	0
+	+	136	0
+	+	137	47
+	+	145	7
+	+	145	19
+	+	139	33
+	+	138	53
+	+	145	0
+	+	139	0
+	+	139	17
+	+	139	30
+	+	139	0
+	+	136	0
+	+	139	0
+	+	136	0
+	+	145	0
+	+	139	0
+	+	136	0
+	+	145	19
+	+	137	33
+	+	139	62
+	+	142	33
+	+	143	7
+	+	145	0
+	+	143	0
+	+	145	0
+	+	103	38
+	+	103	0
+	+	111	103
+	+	111	0
+	+	104	0
+	+	104	33
+	+	104	71
+	+	104	28
+	+	104	0
+	+	103	0
+	+	89	21
+	+	90	13
+	+	97	76
+	+	98	24
+	+	94	88
+	+	94	12
+	+	97	0
+	+	92	26
+	+	91	42
+	+	93	57
+	+	95	53
+	+	98	105
+	+	99	70
+	+	100	67
+	+	104	0
+	+	105	19
+	+	99	31
+	+	100	31
+	+	99	33
+	+	100	33
+	+	99	45
+	+	100	45
+	+	98	20
+	+	99	37
+	+	100	37
+	+	99	49
+	+	100	49
+	+	99	23
+	+	100	23
+	+	96	13
+	+	97	99
+	+	95	24
+	+	93	53
+	+	105	0
+	+	110	7
+	+	106	0
+	+	107	0
+	+	106	9
+	+	107	20
+	+	146	0
+	+	136	0
+	+	138	0
+	+	144	13
+	+	146	0
+	+	79	16
+	+	84	0
+	+	83	0
+	a	136	16
+
+> ~/golang/.gitignore
+	*	1737792197	0
+	"	4	0
+	^	7	4
+	.	4	0
+	+	4	3
+	+	4	8
+	+	7	13
+	+	6	2
+	+	7	3
+	+	4	0
+
+> ~/tmp/epic-games.txt
+	*	1737791755	0
+	"	1	0
+	.	58	0
+	+	59	9
+	+	58	0
+	+	56	0
+	+	59	0
+	+	58	0
+
+> ~/.config/env.bash
+	*	1737786624	0
+	"	1	0
+	^	3	61
+	.	3	60
+	+	9	0
+	+	11	0
+	+	10	0
+	+	15	0
+	+	7	0
+	+	4	0
+	+	15	0
+	+	5	0
+	+	6	0
+	+	5	112
+	+	17	0
+	+	16	0
+	+	17	138
+	+	2	65
+	+	3	60
+
+> /tmp/crontab.REExyS/crontab
+	*	1737757081	0
+	"	1	0
+
+> /tmp/crontab.hm8GYj/crontab
+	*	1737752829	0
+	"	43	134
+
 > ~/.vim/plugin/better-rg.vim
-	*	1737591152	0
+	*	1737752792	0
 	"	36	0
 	^	39	5
 	.	29	0
@@ -18697,27 +18894,6 @@ $
 	+	13	0
 	+	12	0
 	+	13	0
-
-> ~/.config/env.bash
-	*	1737564544	0
-	"	1	0
-	^	3	61
-	.	3	60
-	+	9	0
-	+	11	0
-	+	10	0
-	+	15	0
-	+	7	0
-	+	4	0
-	+	15	0
-	+	5	0
-	+	6	0
-	+	5	112
-	+	17	0
-	+	16	0
-	+	17	138
-	+	2	65
-	+	3	60
 
 > ~/.config/setup.bash
 	*	1737564543	0
@@ -21093,109 +21269,6 @@ $
 	+	19	0
 	+	13	0
 	+	9	0
-
-> ~/pyscripts/commit-message-gemini.py
-	*	1735936653	0
-	"	144	4
-	^	142	14
-	.	144	0
-	+	162	3
-	+	116	32
-	+	25	35
-	+	14	65
-	+	116	0
-	+	43	0
-	+	118	5
-	+	118	0
-	+	119	5
-	+	120	0
-	+	117	0
-	+	123	54
-	+	125	4
-	+	148	53
-	+	160	37
-	+	124	26
-	+	133	0
-	+	134	0
-	+	135	47
-	+	143	7
-	+	143	19
-	+	137	33
-	+	136	53
-	+	143	0
-	+	137	0
-	+	137	17
-	+	137	30
-	+	137	0
-	+	134	0
-	+	137	0
-	+	134	0
-	+	143	0
-	+	137	0
-	+	134	0
-	+	143	19
-	+	135	33
-	+	137	62
-	+	140	33
-	+	141	7
-	+	143	0
-	+	141	0
-	+	143	0
-	+	101	38
-	+	101	0
-	+	109	103
-	+	109	0
-	+	102	0
-	+	102	33
-	+	102	71
-	+	102	28
-	+	102	0
-	+	101	0
-	+	87	21
-	+	88	13
-	+	95	76
-	+	96	24
-	+	92	88
-	+	92	12
-	+	95	0
-	+	90	26
-	+	89	42
-	+	91	57
-	+	93	53
-	+	96	105
-	+	97	70
-	+	98	67
-	+	102	0
-	+	103	19
-	+	97	31
-	+	98	31
-	+	97	33
-	+	98	33
-	+	97	45
-	+	98	45
-	+	96	20
-	+	97	37
-	+	98	37
-	+	97	49
-	+	98	49
-	+	97	23
-	+	98	23
-	+	94	13
-	+	95	99
-	+	93	24
-	+	91	53
-	+	103	0
-	+	108	7
-	+	104	0
-	+	105	0
-	+	104	9
-	+	105	20
-	+	144	0
-	+	134	0
-	+	136	0
-	+	142	13
-	+	144	0
-	a	134	16
 
 > ~/python_common/box/todo.txt
 	*	1735936308	0
@@ -36013,14 +36086,6 @@ $
 	*	1727782574	0
 	"	1	0
 
-> ~/pyscripts/secrets.env
-	*	1727781502	0
-	"	2	8
-	^	2	9
-	.	2	8
-	+	1	15
-	+	2	8
-
 > ~/tmp/tmux-plugins.txt
 	*	1727781300	0
 	"	1	0
@@ -38900,14 +38965,6 @@ $
 	+	5	0
 	+	2	0
 	+	4	0
-
-> ~/golang/.gitignore
-	*	1725199155	0
-	"	5	8
-	^	5	9
-	.	5	8
-	+	4	3
-	+	5	8
 
 > ~/golang/viminfo_utils/.gitignore
 	*	1725199126	0
