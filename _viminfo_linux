@@ -11,29 +11,223 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/symlink
+~MSle0~/\C\<INDENT\>
 
 # Last Substitute Search Pattern:
-~MSle0&^\s*$
+~MSle0&  *
 
 # Last Substitute String:
-$
+$ 
 
 # Command Line History (newest to oldest):
-:q
-|2,0,1737858311,,"q"
 :qa
-|2,0,1737792459,,"qa"
+|2,0,1738266469,,"qa"
+:q
+|2,0,1738196704,,"q"
+:RunCreateCommand horizontal
+|2,0,1738196696,,"RunCreateCommand horizontal"
+:e!
+|2,0,1738196054,,"e!"
+:e
+|2,0,1738195780,,"e"
+:bd!
+|2,0,1738195701,,"bd!"
+:enew
+|2,0,1738195621,,"enew"
+:b!# | bd! #
+|2,0,1738195120,,"b!# | bd! #"
+:h
+|2,0,1738195106,,"h"
+:e schema-shopping.sql
+|2,0,1738195097,,"e schema-shopping.sql"
+:bd
+|2,0,1738195078,,"bd"
+:q!
+|2,0,1738194818,,"q!"
+:CocRestart
+|2,0,1738194756,,"CocRestart"
+:Template
+|2,0,1738194740,,"Template"
+:Rename parse-schema.py
+|2,0,1738194736,,"Rename parse-schema.py"
+:e parse-schema.sql
+|2,0,1738194728,,"e parse-schema.sql"
+:e scaffold-and-validate.py
+|2,0,1738193193,,"e scaffold-and-validate.py"
+:s/  */ /g
+|2,0,1738185177,,"s/  */ /g"
+:s/  \*/ /g
+|2,0,1738185168,,"s/  \\*/ /g"
+:redraw!
+|2,0,1738183963,,"redraw!"
+:redraw
+|2,0,1738183961,,"redraw"
+:Copilot enable
+|2,0,1738183568,,"Copilot enable"
+:e strings
+|2,0,1738182833,,"e strings"
+:e s
+|2,0,1738182818,,"e s"
+:e backup.py
+|2,0,1738182773,,"e backup.py"
+:e models/model_pydantic_shopping.py
+|2,0,1738182690,,"e models/model_pydantic_shopping.py"
+:e models/model_attrs_shopping.py
+|2,0,1738182600,,"e models/model_attrs_shopping.py"
+:Copilot disable
+|2,0,1738182430,,"Copilot disable"
+: 
+|2,0,1738182193,," "
+:Rename schema-shopping.sql
+|2,0,1738182068,,"Rename schema-shopping.sql"
+:e shopping-schema.sql
+|2,0,1738182044,,"e shopping-schema.sql"
+:e sch
+|2,0,1738182039,,"e sch"
+:Enumerate
+|2,0,1738181657,,"Enumerate"
+:Copilot setup
+|2,0,1738180892,,"Copilot setup"
+:Copilot status
+|2,0,1738180889,,"Copilot status"
+:Copilot feedback
+|2,0,1738180887,,"Copilot feedback"
+:PlugInstall
+|2,0,1738180863,,"PlugInstall"
+:Copi
+|2,0,1738180786,,"Copi"
+:edit $MYVIMRC
+|2,0,1738180769,,"edit $MYVIMRC"
+:CopyToHost
+|2,0,1738180764,,"CopyToHost"
+:CocCommand
+|2,0,1738180762,,"CocCommand"
+:C
+|2,0,1738180750,,"C"
+:diffget
+|2,0,1738179919,,"diffget"
+:diffthis
+|2,0,1738179904,,"diffthis"
+:pwd
+|2,0,1738179631,,"pwd"
+:e models/model_
+|2,0,1738179626,,"e models/model_"
+:e 
+|2,0,1738179573,,"e "
+:Rg
+|2,0,1738179299,,"Rg"
+:R
+|2,0,1738179297,,"R"
+:e model_attrs.py
+|2,0,1738179277,,"e model_attrs.py"
+:e model_pydantic.py
+|2,0,1738179276,,"e model_pydantic.py"
+:MRU 25:.gitignore
+|2,0,1738179065,,"MRU 25:.gitignore"
+:MRU 2:.gitignore
+|2,0,1738179062,,"MRU 2:.gitignore"
+:e shopping-model.
+|2,0,1738179041,,"e shopping-model."
+:Tab /INTEGER\|TEXT
+|2,0,1738178655,,"Tab /INTEGER\\|TEXT"
+:'<,'>Tab /NOT NULL/
+|2,0,1738178422,,"'<,'>Tab /NOT NULL/"
+:.,.+1qa
+|2,0,1738178198,,".,.+1qa"
+:JsonPath
+|2,0,1738157678,,"JsonPath"
+:h :JsonPath
+|2,0,1738157670,,"h :JsonPath"
+:Template flask
+|2,0,1738177933,,"Template flask"
+:Date 2025-01-29
+|2,0,1738157125,,"Date 2025-01-29"
+:.,$!jq --indent 4
+|2,0,1738156242,,".,$!jq --indent 4"
+:Grep formatprg
+|2,0,1738156193,,"Grep formatprg"
+:cd ~/.vim
+|2,0,1738156188,,"cd ~/.vim"
+:set formatprg=jq\ --indent\ 4
+|2,0,1738156174,,"set formatprg=jq\\ --indent\\ 4"
+:'<,'>!jq
+|2,0,1738156124,,"'<,'>!jq"
+:.,$!jq
+|2,0,1738156103,,".,$!jq"
+:set formatprg=jq
+|2,0,1738156101,,"set formatprg=jq"
+:%!jq
+|2,0,1738156096,,"%!jq"
+:.,$!jsonfmt
+|2,0,1738156085,,".,$!jsonfmt"
+:!jsonfmt
+|2,0,1738156031,,"!jsonfmt"
+:jsonfmt
+|2,0,1738156028,,"jsonfmt"
+:set formatprg?
+|2,0,1738156025,,"set formatprg?"
+:qa!
+|2,0,1738156009,,"qa!"
+:h ale-json
+|2,0,1738155692,,"h ale-json"
+:Grep -g '*.txt' fi
+|2,0,1738120042,,"Grep -g '*.txt' fi"
+:Grep -g 
+|2,0,1738120027,,"Grep -g "
+:Grep remap
+|2,0,1738120004,,"Grep remap"
+:Grep -g '*.txt'
+|2,0,1738119999,,"Grep -g '*.txt'"
+:Grep -g "*.txt"
+|2,0,1738119993,,"Grep -g \"*.txt\""
+:Grep
+|2,0,1738119981,,"Grep"
+:e ~/.vim/plugin/better-rg.vim
+|2,0,1738119969,,"e ~/.vim/plugin/better-rg.vim"
+:e ~/.vim/plugin/backup.vim
+|2,0,1738119961,,"e ~/.vim/plugin/backup.vim"
+:Tab /->
+|2,0,1738070178,,"Tab /->"
+:e ~/bash/oldfiles.bash
+|2,0,1738070171,,"e ~/bash/oldfiles.bash"
+:e bash
+|2,0,1738070152,,"e bash"
+:e .
+|2,0,1738070149,,"e ."
+:e ~/bash
+|2,0,1738070138,,"e ~/bash"
+:e bahs
+|2,0,1738070135,,"e bahs"
+:e commit-message-gemini.py
+|2,0,1738066319,,"e commit-message-gemini.py"
+:set ft=text
+|2,0,1738060862,,"set ft=text"
+:set ft=
+|2,0,1738060857,,"set ft="
+:set ft=markdown
+|2,0,1738060788,,"set ft=markdown"
+:h digraph
+|2,0,1738060735,,"h digraph"
+:e bash/
+|2,0,1738060625,,"e bash/"
+:set cms?
+|2,0,1738060565,,"set cms?"
+:e bash-guides.txt
+|2,0,1738060475,,"e bash-guides.txt"
+:e README.md
+|2,0,1738060443,,"e README.md"
+:e journey/format.txt
+|2,0,1738060392,,"e journey/format.txt"
+:140
+|2,0,1738051623,,"140"
+:Be
+|2,0,1738031847,,"Be"
+:e chrome-howto.txt
+|2,0,1738031216,,"e chrome-howto.txt"
 :reg
 |2,0,1737792452,,"reg"
 :e *llm
 |2,0,1737792426,,"e *llm"
-:e commit-message-gemini.py
-|2,0,1737792424,,"e commit-message-gemini.py"
-:e README.md
-|2,0,1737792419,,"e README.md"
-:bd!
-|2,0,1737791755,,"bd!"
 :g/^\s*$/d
 |2,0,1737787564,,"g/^\\s*$/d"
 :%
@@ -46,20 +240,8 @@ $
 |2,0,1737787544,,"g/\\$0\\.00/d"
 :g/Epic Games Store/d
 |2,0,1737787541,,"g/Epic Games Store/d"
-:q!
-|2,0,1737758034,,"q!"
-:qa!
-|2,0,1737752830,,"qa!"
-:bd
-|2,0,1737752788,,"bd"
-:e
-|2,0,1737752787,,"e"
 :Grep -g '*.vim' enter
 |2,0,1737590395,,"Grep -g '*.vim' enter"
-:Rg
-|2,0,1737571178,,"Rg"
-:Grep
-|2,0,1737571177,,"Grep"
 :Grep -uu -g '*.vim' '#.*preview'
 |2,0,1737571160,,"Grep -uu -g '*.vim' '#.*preview'"
 :Grep -uu -g '*.vim' '\bbat'
@@ -68,8 +250,6 @@ $
 |2,0,1737571140,,"Grep -uu -g '*.vim' \\bbat"
 :Grep -uu -g '*.vim' bat
 |2,0,1737571133,,"Grep -uu -g '*.vim' bat"
-:pwd
-|2,0,1737571117,,"pwd"
 :Grep -uu -g '*.vim' preview
 |2,0,1737571013,,"Grep -uu -g '*.vim' preview"
 :Grep -uu -g '*.vim' fzf#run
@@ -164,8 +344,6 @@ $
 |2,0,1737523437,,"29"
 :Capture verbose command Rg
 |2,0,1737521828,,"Capture verbose command Rg"
-:Template
-|2,0,1737521819,,"Template"
 :e better-rg.vim
 |2,0,1737521816,,"e better-rg.vim"
 :cd ~/.vim/plugin/
@@ -186,8 +364,6 @@ $
 |2,0,1737437974,,"e CustomReporter.ts"
 :e vitest.error.txt
 |2,0,1737437950,,"e vitest.error.txt"
-:e!
-|2,0,1737434743,,"e!"
 :e test-errors.txt
 |2,0,1737425306,,"e test-errors.txt"
 :echo expand("%:p")
@@ -204,8 +380,6 @@ $
 |2,0,1737423125,,"e vitest/dist/chunks/index.DsZFoqi9.js"
 :e tasks-3ZnPj1LR.d.ts
 |2,0,1737423021,,"e tasks-3ZnPj1LR.d.ts"
-:R
-|2,0,1737423001,,"R"
 :e dist/utils.js
 |2,0,1737422770,,"e dist/utils.js"
 :e dist/utils.d.ts
@@ -216,8 +390,6 @@ $
 |2,0,1737422735,,"e dist/chunk-tasks.js"
 :e chunk
 |2,0,1737422731,,"e chunk"
-:e 
-|2,0,1737422721,,"e "
 :e node_modules/@vitest/runner/dist/chunk-tasks.js
 |2,0,1737422717,,"e node_modules/@vitest/runner/dist/chunk-tasks.js"
 :e runne
@@ -238,12 +410,8 @@ $
 |2,0,1737414852,,"e tsconfig.app.json"
 :e tsconfig.node.json
 |2,0,1737414848,,"e tsconfig.node.json"
-:CocRestart
-|2,0,1737414789,,"CocRestart"
 :h cfile
 |2,0,1737017569,,"h cfile"
-:b!# | bd! #
-|2,0,1737004123,,"b!# | bd! #"
 :.!git log
 |2,0,1737004115,,".!git log"
 :%!git log
@@ -256,8 +424,6 @@ $
 |2,0,1737004058,,"e commit.md"
 :Rename format.md
 |2,0,1737003182,,"Rename format.md"
-:e journey/format.txt
-|2,0,1737003176,,"e journey/format.txt"
 :e journey_create.py
 |2,0,1736994384,,"e journey_create.py"
 :e .gitignore
@@ -340,8 +506,6 @@ $
 |2,0,1736374527,,"CocInfo"
 :h coc-tree
 |2,0,1736374523,,"h coc-tree"
-:CocCommand
-|2,0,1736374491,,"CocCommand"
 :ALE
 |2,0,1736373288,,"ALE"
 :ALEDisable
@@ -412,10 +576,6 @@ $
 |2,0,1736265702,,"set isk?"
 :e src/core/sum.ts
 |2,0,1736262233,,"e src/core/sum.ts"
-:PlugInstall
-|2,0,1736261990,,"PlugInstall"
-:edit $MYVIMRC
-|2,0,1736261977,,"edit $MYVIMRC"
 :e index.html
 |2,0,1736258276,,"e index.html"
 :e dist/index.html
@@ -450,8 +610,6 @@ $
 |2,0,1736188669,,"e suggestions-2.txt"
 :v/diff /d
 |2,0,1736074423,,"v/diff /d"
-:set ft=
-|2,0,1736074413,,"set ft="
 :set ft=bash
 |2,0,1736071445,,"set ft=bash"
 :set ft?
@@ -462,8 +620,6 @@ $
 |2,0,1736071093,,"RunCreateCommand "
 :e ~/tooling/my-shell-scripting-language.txt
 |2,0,1736066299,,"e ~/tooling/my-shell-scripting-language.txt"
-:diffthis
-|2,0,1736068599,,"diffthis"
 :%sort u
 |2,0,1736068594,,"%sort u"
 :diffoff
@@ -488,8 +644,6 @@ $
 |2,0,1736065493,,"set title?"
 :Copilot
 |2,0,1736064963,,"Copilot"
-:Copilot status
-|2,0,1736064960,,"Copilot status"
 :h copilot
 |2,0,1736063473,,"h copilot"
 :e todo.txt
@@ -552,8 +706,6 @@ $
 |2,0,1735841202,,"OpenDB"
 :ToList
 |2,0,1735841119,,"ToList"
-:enew
-|2,0,1735841101,,"enew"
 :g/Not provided/d
 |2,0,1735836299,,"g/Not provided/d"
 :a
@@ -590,8 +742,6 @@ $
 |2,0,1735756003,,"e com"
 :e env.bash
 |2,0,1735756000,,"e env.bash"
-:.,.+1qa
-|2,0,1735751593,,".,.+1qa"
 :e data/secret.txt
 |2,0,1735750949,,"e data/secret.txt"
 :e data/.gitkeep
@@ -700,8 +850,6 @@ $
 |2,0,1735652361,,"e e"
 : w ~/tmp/tmux-unicode.bash
 |2,0,1735651054,," w ~/tmp/tmux-unicode.bash"
-:set ft=markdown
-|2,0,1735645843,,"set ft=markdown"
 :set tw=70
 |2,0,1735645819,,"set tw=70"
 :v/season/d
@@ -740,8 +888,6 @@ $
 |2,0,1735629497,,"v/Error"
 :Rg 
 |2,0,1735571661,,"Rg "
-:RunCreateCommand horizontal
-|2,0,1735567158,,"RunCreateCommand horizontal"
 :term pi
 |2,0,1735566902,,"term pi"
 :e src/utils/flask_endpoint.py
@@ -750,8 +896,6 @@ $
 |2,0,1735495983,,"e assets/template.html"
 :10
 |2,0,1735493939,,"10"
-:CopyToHost
-|2,0,1735492079,,"CopyToHost"
 :e src/utils/leader_image_chrome.py
 |2,0,1735468801,,"e src/utils/leader_image_chrome.py"
 :e src/utils/__pycache__/
@@ -780,8 +924,6 @@ $
 |2,0,1735415756,,"e data/guilds.json"
 :e src/commands/member.py
 |2,0,1735415289,,"e src/commands/member.py"
-:.,$!jsonfmt
-|2,0,1735415005,,".,$!jsonfmt"
 :e data/leaderboard_messages.json
 |2,0,1735414957,,"e data/leaderboard_messages.json"
 :e src/commands/officer.py
@@ -1020,12 +1162,8 @@ $
 |2,0,1732563598,,"Copilot log"
 :Copilot help
 |2,0,1732563595,,"Copilot help"
-:Copilot setup
-|2,0,1732563587,,"Copilot setup"
 :Copilot panel
 |2,0,1732563577,,"Copilot panel"
-:Copilot enable
-|2,0,1732563572,,"Copilot enable"
 :Copilot auth
 |2,0,1732563566,,"Copilot auth"
 :e versions.json
@@ -1134,8 +1272,6 @@ $
 |2,0,1732276814,,"e models/comment.py"
 :e secrets.env
 |2,0,1732274762,,"e secrets.env"
-:Template flask
-|2,0,1732290424,,"Template flask"
 :grep -g '*.py' --fixed-strings waivek
 |2,0,1732279967,,"grep -g '*.py' --fixed-strings waivek"
 :e .envrc
@@ -1366,8 +1502,6 @@ $
 |2,0,1729799703,,"diffput"
 :e ~/.sqlfluff
 |2,0,1729797853,,"e ~/.sqlfluff"
-:Tab /INTEGER\|TEXT
-|2,0,1729797784,,"Tab /INTEGER\\|TEXT"
 :e main.sql
 |2,0,1729797423,,"e main.sql"
 :e schema/jobs.sql
@@ -1602,8 +1736,6 @@ $
 |2,0,1729091036,,"SQL"
 :Cfilter! manual
 |2,0,1729090750,,"Cfilter! manual"
-:C
-|2,0,1729090739,,"C"
 :grep -g '*.py' --fixed-strings api.twitch.tv/helix
 |2,0,1729090734,,"grep -g '*.py' --fixed-strings api.twitch.tv/helix"
 :Cfilter! helix
@@ -1646,12 +1778,8 @@ $
 |2,0,1729018793,,"e req"
 :Docker
 |2,0,1728929823,,"Docker"
-:h
-|2,0,1728911642,,"h"
 :e video_utils.py
 |2,0,1728893999,,"e video_utils.py"
-:redraw
-|2,0,1728893639,,"redraw"
 :e query_user_ids.py
 |2,0,1728893512,,"e query_user_ids.py"
 :145
@@ -1710,8 +1838,6 @@ $
 |2,0,1728805921,,"e models/"
 :MRU vide
 |2,0,1728805892,,"MRU vide"
-:Enumerate
-|2,0,1728799469,,"Enumerate"
 :e auth.py
 |2,0,1728798696,,"e auth.py"
 :MRU uti
@@ -1844,8 +1970,6 @@ $
 |2,0,1727776285,,"MRU py"
 :MRU tmux.
 |2,0,1727753533,,"MRU tmux."
-:diffget
-|2,0,1727664339,,"diffget"
 :e .bashrc
 |2,0,1727656588,,"e .bashrc"
 :call <SNR>68_ShowPwdOldfiles()k
@@ -1944,8 +2068,6 @@ $
 |2,0,1727040711,," w ~/.vim/tmp/fzf-command-samples.txt"
 :Rename ripgrep-fd-fzf-flags-cheat-sheet.txt
 |2,0,1727012698,,"Rename ripgrep-fd-fzf-flags-cheat-sheet.txt"
-:e .
-|2,0,1727012138,,"e ."
 :e fzf.txt
 |2,0,1727012109,,"e fzf.txt"
 :MRU rg
@@ -2180,8 +2302,6 @@ $
 |2,0,1725691790,,"set foldmethod?"
 :set cms=#%s
 |2,0,1725691782,,"set cms=#%s"
-:set cms?
-|2,0,1725691777,,"set cms?"
 :MRU truncate.py
 |2,0,1725691574,,"MRU truncate.py"
 :e trun
@@ -2358,8 +2478,6 @@ $
 |2,0,1725532488,,"nmap g; <Plug>Run"
 :MRU 39:zdirs_one_wk.go
 |2,0,1725532442,,"MRU 39:zdirs_one_wk.go"
-:cd ~/.vim
-|2,0,1725532333,,"cd ~/.vim"
 :TmpMain
 |2,0,1725532258,,"TmpMain"
 :kkkk
@@ -3472,8 +3590,6 @@ $
 |2,0,1723473628,,"e ide-python-variable-debug-helper.vim"
 :MRU insert_w
 |2,0,1723472588,,"MRU insert_w"
-:h digraph
-|2,0,1723472175,,"h digraph"
 :MRU prog
 |2,0,1723472058,,"MRU prog"
 :MRU 3:errors.vim
@@ -3778,8 +3894,6 @@ $
 |2,0,1722719488,,"e test-log-1.py"
 :e experiments.log
 |2,0,1722718631,,"e experiments.log"
-: 
-|2,0,1722717732,," "
 :h add(
 |2,0,1722717628,,"h add("
 :%s/ /\t/g
@@ -4068,8 +4182,6 @@ $
 |2,0,1722513219,,"e .vimrc"
 :e .vimspector.json
 |2,0,1722513216,,"e .vimspector.json"
-:Copilot disable
-|2,0,1722512798,,"Copilot disable"
 :imap <down>
 |2,0,1722512751,,"imap <down>"
 :verbose imap <C-n>
@@ -4568,16 +4680,12 @@ $
 |2,0,1722029645,,"%s/Video//g"
 :g/@enforce_types/d
 |2,0,1722029631,,"g/@enforce_types/d"
-:e model_attrs.py
-|2,0,1722029623,,"e model_attrs.py"
 :e ~/.vim/templates/template.py
 |2,0,1722014775,,"e ~/.vim/templates/template.py"
 :e parse_attrs.py
 |2,0,1722014437,,"e parse_attrs.py"
 :e validation.py
 |2,0,1722014421,,"e validation.py"
-:e model_pydantic.py
-|2,0,1722014252,,"e model_pydantic.py"
 :grep -g '*.py' --fixed-strings "class Token"
 |2,0,1722014224,,"grep -g '*.py' --fixed-strings \"class Token\""
 :grep -g '*.py' --fixed-strings class Token
@@ -4950,8 +5058,6 @@ $
 |2,0,1721143048,,"grep -g '*.py' --fixed-strings truncat"
 :find stab.h
 |2,0,1721143042,,"find stab.h"
-:JsonPath
-|2,0,1721142215,,"JsonPath"
 :T<F1>
 |2,0,1721126074,,"T<F1>"
 :e payload_sample.json
@@ -5896,8 +6002,6 @@ $
 |2,0,1717928384,,"FIND elements"
 :FIND but
 |2,0,1717928283,,"FIND but"
-:e s
-|2,0,1717928282,,"e s"
 :e bu
 |2,0,1717928280,,"e bu"
 :echo @/
@@ -6878,8 +6982,6 @@ $
 |2,0,1715895890,,"colo mono"
 :MRU Elem
 |2,0,1715178765,,"MRU Elem"
-:set ft=text
-|2,0,1715178174,,"set ft=text"
 :MRU fis
 |2,0,1715082600,,"MRU fis"
 :e functions.fish
@@ -8350,8 +8452,6 @@ $
 |2,0,1711005385,,"MRU genre"
 :e scrape/schemas/pflix.sql
 |2,0,1711005096,,"e scrape/schemas/pflix.sql"
-:e sch
-|2,0,1711005088,,"e sch"
 :e scrape/scrape_pflix.py
 |2,0,1711005082,,"e scrape/scrape_pflix.py"
 :e pflix_frontend/
@@ -10768,8 +10868,6 @@ $
 |2,0,1691569400,,"e ~/.vim/ftplugin/json.vim"
 :verbose set formatprg?
 |2,0,1691569395,,"verbose set formatprg?"
-:set formatprg?
-|2,0,1691569388,,"set formatprg?"
 :map gq
 |2,0,1691569386,,"map gq"
 :.,$!C:\Users\vivek\go\src\jsonfmt\jsonfmt.exe
@@ -11626,8 +11724,6 @@ $
 |2,0,1688309363,,"%sort /.*\\//"
 :%sort /.*\/
 |2,0,1688309358,,"%sort /.*\\/"
-:MRU 2:.gitignore
-|2,0,1688309220,,"MRU 2:.gitignore"
 :MRU 18:.gitconfig
 |2,0,1688309205,,"MRU 18:.gitconfig"
 :%!uniq 
@@ -11832,10 +11928,82 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/red
+|2,1,1738196042,47,"red"
+?/Not pre
+|2,1,1738195264,47,"Not pre"
+?/DEBUG
+|2,1,1738194587,47,"DEBUG"
+?/TABLE users
+|2,1,1738194401,47,"TABLE users"
+?/users
+|2,1,1738194395,47,"users"
+?/sessions
+|2,1,1738194388,47,"sessions"
+?/connection
+|2,1,1738193239,47,"connection"
+?   *
+|2,1,1738185177,,"  *"
+?   \*
+|2,1,1738185168,,"  \\*"
+?/session
+|2,1,1738184359,47,"session"
+?/price
+|2,1,1738182609,47,"price"
+? in \zs[^:]\+
+|2,1,1738181657,,"in \\zs[^:]\\+"
+?/mage
+|2,1,1738181631,47,"mage"
+? ^\s*$\n\s*$
+|2,1,1738181546,,"^\\s*$\\n\\s*$"
+?/copilot
+|2,1,1738180707,47,"copilot"
+?/any
+|2,1,1738179866,47,"any"
+?/autoinc
+|2,1,1738178721,47,"autoinc"
+?/jq
+|2,1,1738157672,47,"jq"
+?/screen
+|2,1,1738157377,47,"screen"
+?/full
+|2,1,1738157376,47,"full"
+?/compac
+|2,1,1738157343,47,"compac"
+?/--int
+|2,1,1738156168,47,"--int"
+?/space
+|2,1,1738156153,47,"space"
+?/\t
+|2,1,1738156226,47,"\\t"
+? @$
+|2,1,1738070160,,"@$"
+??\a
+|2,1,1738070149,63,"\\a"
+?/\.bash
+|2,1,1738070092,47,"\\.bash"
+?/bash
+|2,1,1738070089,47,"bash"
+?/crontab
+|2,1,1738070087,47,"crontab"
+?/pyton
+|2,1,1738070038,47,"pyton"
+?/GEMINI
+|2,1,1738068577,47,"GEMINI"
+??KEY
+|2,1,1738066323,63,"KEY"
+?/OPEN
+|2,1,1738066322,47,"OPEN"
+?/OK
+|2,1,1738060738,47,"OK"
+?/interaction
+|2,1,1738051594,47,"interaction"
+?/--siz
+|2,1,1738026471,47,"--siz"
+?/style
+|2,1,1737983370,47,"style"
 ?/symlink
 |2,1,1737792628,47,"symlink"
-?/GEMINI
-|2,1,1737792433,47,"GEMINI"
 ?/secrets
 |2,1,1737792307,47,"secrets"
 ? ^\s*$
@@ -11860,8 +12028,6 @@ $
 |2,1,1737757934,63,"\\<go"
 ?/gopath
 |2,1,1737757922,47,"gopath"
-? ^\s*$\n\s*$
-|2,1,1737591150,,"^\\s*$\\n\\s*$"
 ?/preview-window
 |2,1,1737571518,47,"preview-window"
 ?/preview
@@ -12046,8 +12212,6 @@ $
 |2,1,1736538876,47,"^\\s*attach"
 ?/attach
 |2,1,1736538866,47,"attach"
-?/session
-|2,1,1736538808,47,"session"
 ?/new-window
 |2,1,1736538784,47,"new-window"
 ?/SHELL
@@ -12116,8 +12280,6 @@ $
 |2,1,1736065486,47,"tmux"
 ?/automatic
 |2,1,1736065335,47,"automatic"
-?/copilot
-|2,1,1736064984,47,"copilot"
 ?/get_diff
 |2,1,1735936500,47,"get_diff"
 ?/bold
@@ -12212,8 +12374,6 @@ $
 |2,1,1735824655,47,"win64"
 ?/linux64
 |2,1,1735824651,47,"linux64"
-? @$
-|2,1,1735824210,,"@$"
 ?/bin\/
 |2,1,1735824102,47,"bin\\/"
 ?/markup
@@ -12522,8 +12682,6 @@ $
 |2,1,1732745748,47,"rose"
 ?/checked
 |2,1,1732745744,47,"checked"
-?/red
-|2,1,1732745736,47,"red"
 ?/page.*1
 |2,1,1732745245,47,"page.*1"
 ?/paginat
@@ -12696,8 +12854,6 @@ $
 |2,1,1732309865,47,"Showing"
 ?/Quick
 |2,1,1732309843,47,"Quick"
-??\a
-|2,1,1732293193,63,"\\a"
 ?/limit
 |2,1,1732291637,47,"limit"
 ?/u
@@ -12838,8 +12994,6 @@ $
 |2,1,1730505478,47,"Delete"
 ?/hover:
 |2,1,1730505428,47,"hover:"
-?/screen
-|2,1,1730504828,47,"screen"
 ? bear
 |2,1,1730504610,,"bear"
 ?/session\.post
@@ -13456,8 +13610,6 @@ $
 |2,1,1728805916,47,"Video"
 ?/seconds
 |2,1,1728799744,47,"seconds"
-? in \zs[^:]\+
-|2,1,1728799469,,"in \\zs[^:]\\+"
 ?/helix\/clips
 |2,1,1728794996,47,"helix\\/clips"
 ?/cascade
@@ -13546,8 +13698,6 @@ $
 |2,1,1727446290,47,"reoad"
 ?/todos
 |2,1,1727446238,47,"todos"
-?/\t
-|2,1,1727425461,47,"\\t"
 ?/\(def\|class\)\s\+\w*fzf
 |2,1,1727425328,47,"\\(def\\|class\\)\\s\\+\\w*fzf"
 ?/to
@@ -13920,8 +14070,6 @@ $
 |2,1,1725110506,47,"sprintf"
 ?/Final text
 |2,1,1725106487,47,"Final text"
-?/DEBUG
-|2,1,1725105701,47,"DEBUG"
 ?/epoch
 |2,1,1725077091,47,"epoch"
 ?/\.sh
@@ -14494,8 +14642,6 @@ $
 |2,1,1722397733,47,"theme"
 ? timer\..*\"get_console\"
 |2,1,1722395920,,"timer\\..*\\\"get_console\\\""
-?/connection
-|2,1,1722395105,47,"connection"
 ?/convert
 |2,1,1722369609,47,"convert"
 ? GREEN
@@ -16102,8 +16248,6 @@ $
 |2,1,1714948752,47,"\\\\t"
 ?/\\r
 |2,1,1714947364,47,"\\\\r"
-?/space
-|2,1,1714943651,47,"space"
 ?/ready
 |2,1,1714633252,47,"ready"
 ?/directory
@@ -16150,8 +16294,6 @@ $
 |2,1,1714307274,47,"\\<sh\\>"
 ?/sh
 |2,1,1714307266,47,"sh"
-?/bash
-|2,1,1714307264,47,"bash"
 ?/\$1
 |2,1,1714228358,47,"\\$1"
 ?/%w
@@ -17292,8 +17434,6 @@ $
 |2,1,1691680606,47,"durat"
 ?/\(def\|class\)\s\+\w*twitch
 |2,1,1691678692,47,"\\(def\\|class\\)\\s\\+\\w*twitch"
-?/users
-|2,1,1691678592,47,"users"
 ?/\.length > 0
 |2,1,1691673197,47,"\\.length > 0"
 ?/option
@@ -17868,6 +18008,8 @@ $
 |2,2,1688309303,,"v:oldfiles"
 
 # Input Line History (newest to oldest):
+@markup
+|2,3,1738196102,,"markup"
 @div>
 |2,3,1736262127,,"div>"
 @vivek
@@ -18108,39 +18250,50 @@ $
 |2,4,1693311567,,"cont"
 
 # Registers:
-"0	LINE	0
-	            err("Go to: https://aistudio.google.com/apikey")
-|3,0,0,1,1,0,1737792379,"            err(\"Go to: https://aistudio.google.com/apikey\")"
-""1	LINE	0
+""0	CHAR	0
+	(incomplete)
+|3,1,0,0,1,0,1738196986,"(incomplete)"
+"1	LINE	0
 	
-|3,1,1,1,1,0,1737792455,""
+|3,0,1,1,1,0,1738196778,""
 "2	LINE	0
-	bin/
-|3,0,2,1,1,0,1737792196,"bin/"
-"3	LINE	0
 	
-|3,0,3,1,1,0,1737787564,""
+|3,0,2,1,1,0,1738196773,""
+"3	LINE	0
+	        print(markup(f"[bold green]OK[/] [bold magenta]{db_path}[/] schema matches [bold magenta]{schema_path}[/]"))
+|3,0,3,1,1,0,1738196764,"        print(markup(f\"[bold green]OK[/] [bold magenta]{db_path}[/] schema matches [bold magenta]{schema_path}[/]\"))"
 "4	LINE	0
 	
-|3,0,4,1,1,0,1737787564,""
+|3,0,4,1,1,0,1738196693,""
 "5	LINE	0
-	
-|3,0,5,1,1,0,1737787564,""
+	    # Rest of the detailed differences...
+|3,0,5,1,1,0,1738195933,"    # Rest of the detailed differences..."
 "6	LINE	0
+	    table = [
+	            { "name": markup("[bold red]China[/]"), "population": 1439323776 },
+	            { "name": "India", "population": 1380004385 },
+	            { "name": "USA", "population": 331002651 },
+	            ]
+	    ic(table)
+	    name   population
 	
-|3,0,6,1,1,0,1737787564,""
+	    China  1439323776
+	    India  1380004385
+	    USA     331002651
+|3,0,6,1,11,0,1738195919,"    table = [","            { \"name\": markup(\"[bold red]China[/]\"), \"population\": 1439323776 },","            { \"name\": \"India\", \"population\": 1380004385 },","            { \"name\": \"USA\", \"population\": 331002651 },","            ]","    ic(table)","    name   population","","    China  1439323776","    India  1380004385","    USA     331002651"
 "7	LINE	0
-	
-|3,0,7,1,1,0,1737787564,""
+	    table = [
+	            { "name": markup("[red]China[/]"), "population": 1439323776 },
+|3,0,7,1,2,0,1738195885,"    table = [","            { \"name\": markup(\"[red]China[/]\"), \"population\": 1439323776 },"
 "8	LINE	0
-	
-|3,0,8,1,1,0,1737787564,""
+	    ic
+|3,0,8,1,1,0,1738195842,"    ic"
 "9	LINE	0
-	
-|3,0,9,1,1,0,1737787564,""
+	    ic({ "dog": "1", "dog":})
+|3,0,9,1,1,0,1738195841,"    ic({ \"dog\": \"1\", \"dog\":})"
 "a	CHAR	0
 	nojkVnl>nO€ýa
-|3,0,10,0,1,0,1737791752,"nojkVnl>nO€ýa"
+|3,0,10,0,1,0,1738196096,"nojkVnl>nO€ýa"
 "i	CHAR	0
 	ado_up()jk:q!
 |3,0,18,0,1,0,1724200553,"ado_up()jk:q!"
@@ -18209,409 +18362,894 @@ $
 |<"    assert x_min < x_max, f\"Invalid x coordinates: min ({x_min}) >= max ({x_max})\"","    assert y_min < y_max, f\"Invalid y coordinates: min ({y_min}) >= max ({y_max})\"","    ","    # Additional geometric checks","    assert abs(y1 - y2) < (y_max - y_min), \"Top edge is not roughly horizontal\"","    assert abs(y3 - y4) < (y_max - y_min), \"Bottom edge is not roughly horizontal\"","    assert abs(x1 - x4) < (x_max - x_min), \"Left edge is not roughly vertical\"",>83
 |<"    assert abs(x2 - x3) < (x_max - x_min), \"Right edge is not roughly vertical\"","","    pretty_string_flat = {","        \"left\": x_min,","        \"right\": x_max,","        \"top\": y_min,","        \"bottom\": y_max,","        \"top_left\": (x1, y1),","        \"top_right\": (x2, y2),","        \"bottom_right\": (x3, y3),","        \"bottom_left\": (x4, y4),","    }","    ","    print(f\"{box} => {pretty_string_flat}\")",""
 "-	CHAR	0
-	f
-|3,0,36,0,1,0,1737792326,"f"
+	(incomplete)
+|3,0,36,0,1,0,1738196952,"(incomplete)"
 
 # File marks:
-'0  34  0  /tmp/crontab.wDihqF/crontab
-|4,48,34,0,1737792653,"/tmp/crontab.wDihqF/crontab"
-'1  34  0  /tmp/crontab.wDihqF/crontab
-|4,49,34,0,1737792653,"/tmp/crontab.wDihqF/crontab"
-'2  34  0  /tmp/crontab.wDihqF/crontab
-|4,50,34,0,1737792653,"/tmp/crontab.wDihqF/crontab"
-'3  34  0  /tmp/crontab.wDihqF/crontab
-|4,51,34,0,1737792653,"/tmp/crontab.wDihqF/crontab"
-'4  1  0  ~/pyscripts/secrets.env
-|4,52,1,0,1737792459,"~/pyscripts/secrets.env"
-'5  1  0  ~/pyscripts/secrets.env
-|4,53,1,0,1737792459,"~/pyscripts/secrets.env"
-'6  1  0  ~/pyscripts/secrets.env
-|4,54,1,0,1737792459,"~/pyscripts/secrets.env"
-'7  1  0  ~/pyscripts/secrets.env
-|4,55,1,0,1737792459,"~/pyscripts/secrets.env"
-'8  1  0  ~/pyscripts/secrets.env
-|4,56,1,0,1737792459,"~/pyscripts/secrets.env"
-'9  1  0  ~/pyscripts/secrets.env
-|4,57,1,0,1737792459,"~/pyscripts/secrets.env"
+'0  1  0  /var/log/dmesg
+|4,48,1,0,1738266176,"/var/log/dmesg"
+'1  1  0  /var/log/dmesg
+|4,49,1,0,1738266176,"/var/log/dmesg"
+'2  152  14  ~/shopping/scaffold-and-validate.py
+|4,50,152,14,1738226172,"~/shopping/scaffold-and-validate.py"
+'3  152  14  ~/shopping/scaffold-and-validate.py
+|4,51,152,14,1738226172,"~/shopping/scaffold-and-validate.py"
+'4  152  14  ~/shopping/scaffold-and-validate.py
+|4,52,152,14,1738226172,"~/shopping/scaffold-and-validate.py"
+'5  152  14  ~/shopping/scaffold-and-validate.py
+|4,53,152,14,1738226172,"~/shopping/scaffold-and-validate.py"
+'6  31  0  ~/shopping/schema-shopping.sql
+|4,54,31,0,1738196704,"~/shopping/schema-shopping.sql"
+'7  30  0  ~/shopping/schema-shopping.sql
+|4,55,30,0,1738196704,"~/shopping/schema-shopping.sql"
+'8  31  0  ~/shopping/schema-shopping.sql
+|4,56,31,0,1738196704,"~/shopping/schema-shopping.sql"
+'9  30  0  ~/shopping/schema-shopping.sql
+|4,57,30,0,1738196704,"~/shopping/schema-shopping.sql"
 
 # Jumplist (newest first):
--'  34  0  /tmp/crontab.wDihqF/crontab
-|4,39,34,0,1737792653,"/tmp/crontab.wDihqF/crontab"
--'  34  0  /tmp/crontab.wDihqF/crontab
-|4,39,34,0,1737792653,"/tmp/crontab.wDihqF/crontab"
--'  34  0  /tmp/crontab.wDihqF/crontab
-|4,39,34,0,1737792653,"/tmp/crontab.wDihqF/crontab"
--'  1  0  /tmp/crontab.wDihqF/crontab
-|4,39,1,0,1737792628,"/tmp/crontab.wDihqF/crontab"
--'  1  0  /tmp/crontab.wDihqF/crontab
-|4,39,1,0,1737792628,"/tmp/crontab.wDihqF/crontab"
--'  1  0  /tmp/crontab.wDihqF/crontab
-|4,39,1,0,1737792628,"/tmp/crontab.wDihqF/crontab"
--'  38  0  /tmp/crontab.wDihqF/crontab
-|4,39,38,0,1737792626,"/tmp/crontab.wDihqF/crontab"
--'  38  0  /tmp/crontab.wDihqF/crontab
-|4,39,38,0,1737792626,"/tmp/crontab.wDihqF/crontab"
--'  38  0  /tmp/crontab.wDihqF/crontab
-|4,39,38,0,1737792626,"/tmp/crontab.wDihqF/crontab"
--'  1  0  ~/pyscripts/secrets.env
-|4,39,1,0,1737792459,"~/pyscripts/secrets.env"
--'  1  0  ~/pyscripts/secrets.env
-|4,39,1,0,1737792459,"~/pyscripts/secrets.env"
--'  1  0  ~/pyscripts/secrets.env
-|4,39,1,0,1737792459,"~/pyscripts/secrets.env"
--'  1  0  ~/pyscripts/secrets.env
-|4,39,1,0,1737792459,"~/pyscripts/secrets.env"
--'  123  383  ~/pyscripts/commit-message-gemini.py
-|4,39,123,383,1737792385,"~/pyscripts/commit-message-gemini.py"
--'  123  383  ~/pyscripts/commit-message-gemini.py
-|4,39,123,383,1737792385,"~/pyscripts/commit-message-gemini.py"
--'  123  383  ~/pyscripts/commit-message-gemini.py
-|4,39,123,383,1737792385,"~/pyscripts/commit-message-gemini.py"
--'  123  383  ~/pyscripts/commit-message-gemini.py
-|4,39,123,383,1737792385,"~/pyscripts/commit-message-gemini.py"
--'  123  383  ~/pyscripts/commit-message-gemini.py
-|4,39,123,383,1737792385,"~/pyscripts/commit-message-gemini.py"
--'  122  311  ~/pyscripts/commit-message-gemini.py
-|4,39,122,311,1737792382,"~/pyscripts/commit-message-gemini.py"
--'  122  311  ~/pyscripts/commit-message-gemini.py
-|4,39,122,311,1737792382,"~/pyscripts/commit-message-gemini.py"
--'  122  311  ~/pyscripts/commit-message-gemini.py
-|4,39,122,311,1737792382,"~/pyscripts/commit-message-gemini.py"
--'  122  311  ~/pyscripts/commit-message-gemini.py
-|4,39,122,311,1737792382,"~/pyscripts/commit-message-gemini.py"
--'  122  311  ~/pyscripts/commit-message-gemini.py
-|4,39,122,311,1737792382,"~/pyscripts/commit-message-gemini.py"
--'  83  8  ~/pyscripts/commit-message-gemini.py
-|4,39,83,8,1737792381,"~/pyscripts/commit-message-gemini.py"
--'  83  8  ~/pyscripts/commit-message-gemini.py
-|4,39,83,8,1737792381,"~/pyscripts/commit-message-gemini.py"
--'  83  8  ~/pyscripts/commit-message-gemini.py
-|4,39,83,8,1737792381,"~/pyscripts/commit-message-gemini.py"
--'  83  8  ~/pyscripts/commit-message-gemini.py
-|4,39,83,8,1737792381,"~/pyscripts/commit-message-gemini.py"
--'  83  8  ~/pyscripts/commit-message-gemini.py
-|4,39,83,8,1737792381,"~/pyscripts/commit-message-gemini.py"
--'  84  17  ~/pyscripts/commit-message-gemini.py
-|4,39,84,17,1737792376,"~/pyscripts/commit-message-gemini.py"
--'  84  17  ~/pyscripts/commit-message-gemini.py
-|4,39,84,17,1737792376,"~/pyscripts/commit-message-gemini.py"
--'  84  17  ~/pyscripts/commit-message-gemini.py
-|4,39,84,17,1737792376,"~/pyscripts/commit-message-gemini.py"
--'  84  17  ~/pyscripts/commit-message-gemini.py
-|4,39,84,17,1737792376,"~/pyscripts/commit-message-gemini.py"
--'  84  17  ~/pyscripts/commit-message-gemini.py
-|4,39,84,17,1737792376,"~/pyscripts/commit-message-gemini.py"
--'  82  17  ~/pyscripts/commit-message-gemini.py
-|4,39,82,17,1737792375,"~/pyscripts/commit-message-gemini.py"
--'  78  21  ~/pyscripts/commit-message-gemini.py
-|4,39,78,21,1737792375,"~/pyscripts/commit-message-gemini.py"
--'  82  17  ~/pyscripts/commit-message-gemini.py
-|4,39,82,17,1737792375,"~/pyscripts/commit-message-gemini.py"
--'  78  21  ~/pyscripts/commit-message-gemini.py
-|4,39,78,21,1737792375,"~/pyscripts/commit-message-gemini.py"
--'  82  17  ~/pyscripts/commit-message-gemini.py
-|4,39,82,17,1737792375,"~/pyscripts/commit-message-gemini.py"
--'  78  21  ~/pyscripts/commit-message-gemini.py
-|4,39,78,21,1737792375,"~/pyscripts/commit-message-gemini.py"
--'  82  17  ~/pyscripts/commit-message-gemini.py
-|4,39,82,17,1737792375,"~/pyscripts/commit-message-gemini.py"
--'  78  21  ~/pyscripts/commit-message-gemini.py
-|4,39,78,21,1737792375,"~/pyscripts/commit-message-gemini.py"
--'  82  17  ~/pyscripts/commit-message-gemini.py
-|4,39,82,17,1737792375,"~/pyscripts/commit-message-gemini.py"
--'  78  21  ~/pyscripts/commit-message-gemini.py
-|4,39,78,21,1737792375,"~/pyscripts/commit-message-gemini.py"
--'  1  0  ~/pyscripts/commit-message-gemini.py
-|4,39,1,0,1737792353,"~/pyscripts/commit-message-gemini.py"
--'  1  0  ~/pyscripts/commit-message-gemini.py
-|4,39,1,0,1737792353,"~/pyscripts/commit-message-gemini.py"
--'  1  0  ~/pyscripts/commit-message-gemini.py
-|4,39,1,0,1737792353,"~/pyscripts/commit-message-gemini.py"
--'  1  0  ~/pyscripts/commit-message-gemini.py
-|4,39,1,0,1737792353,"~/pyscripts/commit-message-gemini.py"
--'  1  0  ~/pyscripts/commit-message-gemini.py
-|4,39,1,0,1737792353,"~/pyscripts/commit-message-gemini.py"
--'  1  0  ~/pyscripts/commit-message-gemini.py
-|4,39,1,0,1737792334,"~/pyscripts/commit-message-gemini.py"
--'  78  4  ~/pyscripts/commit-message-gemini.py
-|4,39,78,4,1737792330,"~/pyscripts/commit-message-gemini.py"
--'  78  4  ~/pyscripts/commit-message-gemini.py
-|4,39,78,4,1737792330,"~/pyscripts/commit-message-gemini.py"
--'  79  12  ~/pyscripts/commit-message-gemini.py
-|4,39,79,12,1737792327,"~/pyscripts/commit-message-gemini.py"
--'  79  12  ~/pyscripts/commit-message-gemini.py
-|4,39,79,12,1737792327,"~/pyscripts/commit-message-gemini.py"
--'  79  12  ~/pyscripts/commit-message-gemini.py
-|4,39,79,12,1737792327,"~/pyscripts/commit-message-gemini.py"
--'  79  12  ~/pyscripts/commit-message-gemini.py
-|4,39,79,12,1737792327,"~/pyscripts/commit-message-gemini.py"
--'  79  12  ~/pyscripts/commit-message-gemini.py
-|4,39,79,12,1737792327,"~/pyscripts/commit-message-gemini.py"
--'  79  12  ~/pyscripts/commit-message-gemini.py
-|4,39,79,12,1737792327,"~/pyscripts/commit-message-gemini.py"
--'  79  12  ~/pyscripts/commit-message-gemini.py
-|4,39,79,12,1737792327,"~/pyscripts/commit-message-gemini.py"
--'  75  48  ~/pyscripts/commit-message-gemini.py
-|4,39,75,48,1737792311,"~/pyscripts/commit-message-gemini.py"
--'  75  48  ~/pyscripts/commit-message-gemini.py
-|4,39,75,48,1737792311,"~/pyscripts/commit-message-gemini.py"
--'  75  48  ~/pyscripts/commit-message-gemini.py
-|4,39,75,48,1737792311,"~/pyscripts/commit-message-gemini.py"
--'  75  48  ~/pyscripts/commit-message-gemini.py
-|4,39,75,48,1737792311,"~/pyscripts/commit-message-gemini.py"
--'  75  48  ~/pyscripts/commit-message-gemini.py
-|4,39,75,48,1737792311,"~/pyscripts/commit-message-gemini.py"
--'  75  48  ~/pyscripts/commit-message-gemini.py
-|4,39,75,48,1737792311,"~/pyscripts/commit-message-gemini.py"
--'  75  48  ~/pyscripts/commit-message-gemini.py
-|4,39,75,48,1737792311,"~/pyscripts/commit-message-gemini.py"
--'  68  18  ~/pyscripts/commit-message-gemini.py
-|4,39,68,18,1737792310,"~/pyscripts/commit-message-gemini.py"
--'  66  24  ~/pyscripts/commit-message-gemini.py
-|4,39,66,24,1737792310,"~/pyscripts/commit-message-gemini.py"
--'  68  18  ~/pyscripts/commit-message-gemini.py
-|4,39,68,18,1737792310,"~/pyscripts/commit-message-gemini.py"
--'  66  24  ~/pyscripts/commit-message-gemini.py
-|4,39,66,24,1737792310,"~/pyscripts/commit-message-gemini.py"
--'  68  18  ~/pyscripts/commit-message-gemini.py
-|4,39,68,18,1737792310,"~/pyscripts/commit-message-gemini.py"
--'  66  24  ~/pyscripts/commit-message-gemini.py
-|4,39,66,24,1737792310,"~/pyscripts/commit-message-gemini.py"
--'  68  18  ~/pyscripts/commit-message-gemini.py
-|4,39,68,18,1737792310,"~/pyscripts/commit-message-gemini.py"
--'  66  24  ~/pyscripts/commit-message-gemini.py
-|4,39,66,24,1737792310,"~/pyscripts/commit-message-gemini.py"
--'  68  18  ~/pyscripts/commit-message-gemini.py
-|4,39,68,18,1737792310,"~/pyscripts/commit-message-gemini.py"
--'  66  24  ~/pyscripts/commit-message-gemini.py
-|4,39,66,24,1737792310,"~/pyscripts/commit-message-gemini.py"
--'  68  18  ~/pyscripts/commit-message-gemini.py
-|4,39,68,18,1737792310,"~/pyscripts/commit-message-gemini.py"
--'  66  24  ~/pyscripts/commit-message-gemini.py
-|4,39,66,24,1737792310,"~/pyscripts/commit-message-gemini.py"
--'  68  18  ~/pyscripts/commit-message-gemini.py
-|4,39,68,18,1737792310,"~/pyscripts/commit-message-gemini.py"
--'  66  24  ~/pyscripts/commit-message-gemini.py
-|4,39,66,24,1737792310,"~/pyscripts/commit-message-gemini.py"
--'  62  60  ~/pyscripts/commit-message-gemini.py
-|4,39,62,60,1737792309,"~/pyscripts/commit-message-gemini.py"
--'  62  60  ~/pyscripts/commit-message-gemini.py
-|4,39,62,60,1737792309,"~/pyscripts/commit-message-gemini.py"
--'  62  60  ~/pyscripts/commit-message-gemini.py
-|4,39,62,60,1737792309,"~/pyscripts/commit-message-gemini.py"
--'  62  60  ~/pyscripts/commit-message-gemini.py
-|4,39,62,60,1737792309,"~/pyscripts/commit-message-gemini.py"
--'  62  60  ~/pyscripts/commit-message-gemini.py
-|4,39,62,60,1737792309,"~/pyscripts/commit-message-gemini.py"
--'  62  60  ~/pyscripts/commit-message-gemini.py
-|4,39,62,60,1737792309,"~/pyscripts/commit-message-gemini.py"
--'  62  60  ~/pyscripts/commit-message-gemini.py
-|4,39,62,60,1737792309,"~/pyscripts/commit-message-gemini.py"
--'  1  0  ~/pyscripts/commit-message-gemini.py
-|4,39,1,0,1737792307,"~/pyscripts/commit-message-gemini.py"
--'  4  0  ~/golang/.gitignore
-|4,39,4,0,1737792198,"~/golang/.gitignore"
--'  4  0  ~/golang/.gitignore
-|4,39,4,0,1737792198,"~/golang/.gitignore"
--'  4  0  ~/golang/.gitignore
-|4,39,4,0,1737792198,"~/golang/.gitignore"
--'  4  0  ~/golang/.gitignore
-|4,39,4,0,1737792198,"~/golang/.gitignore"
--'  4  0  ~/golang/.gitignore
-|4,39,4,0,1737792198,"~/golang/.gitignore"
--'  4  0  ~/golang/.gitignore
-|4,39,4,0,1737792198,"~/golang/.gitignore"
--'  4  0  ~/golang/.gitignore
-|4,39,4,0,1737792198,"~/golang/.gitignore"
--'  4  0  ~/golang/.gitignore
-|4,39,4,0,1737792198,"~/golang/.gitignore"
--'  6  3  ~/golang/.gitignore
-|4,39,6,3,1737792196,"~/golang/.gitignore"
--'  7  3  ~/golang/.gitignore
-|4,39,7,3,1737792196,"~/golang/.gitignore"
--'  6  3  ~/golang/.gitignore
-|4,39,6,3,1737792196,"~/golang/.gitignore"
--'  7  3  ~/golang/.gitignore
-|4,39,7,3,1737792196,"~/golang/.gitignore"
+-'  1  0  /var/log/dmesg
+|4,39,1,0,1738266176,"/var/log/dmesg"
+-'  1  0  /var/log/dmesg
+|4,39,1,0,1738266176,"/var/log/dmesg"
+-'  152  14  ~/shopping/scaffold-and-validate.py
+|4,39,152,14,1738226172,"~/shopping/scaffold-and-validate.py"
+-'  152  14  ~/shopping/scaffold-and-validate.py
+|4,39,152,14,1738226172,"~/shopping/scaffold-and-validate.py"
+-'  152  14  ~/shopping/scaffold-and-validate.py
+|4,39,152,14,1738226172,"~/shopping/scaffold-and-validate.py"
+-'  158  25  ~/shopping/scaffold-and-validate.py
+|4,39,158,25,1738196987,"~/shopping/scaffold-and-validate.py"
+-'  158  25  ~/shopping/scaffold-and-validate.py
+|4,39,158,25,1738196987,"~/shopping/scaffold-and-validate.py"
+-'  158  25  ~/shopping/scaffold-and-validate.py
+|4,39,158,25,1738196987,"~/shopping/scaffold-and-validate.py"
+-'  146  40  ~/shopping/scaffold-and-validate.py
+|4,39,146,40,1738196946,"~/shopping/scaffold-and-validate.py"
+-'  146  40  ~/shopping/scaffold-and-validate.py
+|4,39,146,40,1738196946,"~/shopping/scaffold-and-validate.py"
+-'  146  40  ~/shopping/scaffold-and-validate.py
+|4,39,146,40,1738196946,"~/shopping/scaffold-and-validate.py"
+-'  145  70  ~/shopping/scaffold-and-validate.py
+|4,39,145,70,1738196945,"~/shopping/scaffold-and-validate.py"
+-'  145  70  ~/shopping/scaffold-and-validate.py
+|4,39,145,70,1738196945,"~/shopping/scaffold-and-validate.py"
+-'  145  70  ~/shopping/scaffold-and-validate.py
+|4,39,145,70,1738196945,"~/shopping/scaffold-and-validate.py"
+-'  29  0  ~/shopping/schema-shopping.sql
+|4,39,29,0,1738196906,"~/shopping/schema-shopping.sql"
+-'  29  0  ~/shopping/schema-shopping.sql
+|4,39,29,0,1738196906,"~/shopping/schema-shopping.sql"
+-'  29  0  ~/shopping/schema-shopping.sql
+|4,39,29,0,1738196906,"~/shopping/schema-shopping.sql"
+-'  140  0  ~/shopping/scaffold-and-validate.py
+|4,39,140,0,1738196900,"~/shopping/scaffold-and-validate.py"
+-'  140  0  ~/shopping/scaffold-and-validate.py
+|4,39,140,0,1738196900,"~/shopping/scaffold-and-validate.py"
+-'  140  0  ~/shopping/scaffold-and-validate.py
+|4,39,140,0,1738196900,"~/shopping/scaffold-and-validate.py"
+-'  130  0  ~/shopping/scaffold-and-validate.py
+|4,39,130,0,1738196880,"~/shopping/scaffold-and-validate.py"
+-'  130  0  ~/shopping/scaffold-and-validate.py
+|4,39,130,0,1738196880,"~/shopping/scaffold-and-validate.py"
+-'  130  0  ~/shopping/scaffold-and-validate.py
+|4,39,130,0,1738196880,"~/shopping/scaffold-and-validate.py"
+-'  129  0  ~/shopping/scaffold-and-validate.py
+|4,39,129,0,1738196773,"~/shopping/scaffold-and-validate.py"
+-'  129  0  ~/shopping/scaffold-and-validate.py
+|4,39,129,0,1738196773,"~/shopping/scaffold-and-validate.py"
+-'  129  0  ~/shopping/scaffold-and-validate.py
+|4,39,129,0,1738196773,"~/shopping/scaffold-and-validate.py"
+-'  28  4  ~/shopping/schema-shopping.sql
+|4,39,28,4,1738196740,"~/shopping/schema-shopping.sql"
+-'  28  4  ~/shopping/schema-shopping.sql
+|4,39,28,4,1738196740,"~/shopping/schema-shopping.sql"
+-'  28  4  ~/shopping/schema-shopping.sql
+|4,39,28,4,1738196740,"~/shopping/schema-shopping.sql"
+-'  1  0  ~/shopping/scaffold-and-validate.py
+|4,39,1,0,1738196738,"~/shopping/scaffold-and-validate.py"
+-'  1  0  ~/shopping/scaffold-and-validate.py
+|4,39,1,0,1738196738,"~/shopping/scaffold-and-validate.py"
+-'  1  0  ~/shopping/scaffold-and-validate.py
+|4,39,1,0,1738196738,"~/shopping/scaffold-and-validate.py"
+-'  1  0  ~/shopping/schema-shopping.sql
+|4,39,1,0,1738196710,"~/shopping/schema-shopping.sql"
+-'  1  0  ~/shopping/schema-shopping.sql
+|4,39,1,0,1738196710,"~/shopping/schema-shopping.sql"
+-'  1  0  ~/shopping/schema-shopping.sql
+|4,39,1,0,1738196710,"~/shopping/schema-shopping.sql"
+-'  31  0  ~/shopping/schema-shopping.sql
+|4,39,31,0,1738196704,"~/shopping/schema-shopping.sql"
+-'  30  0  ~/shopping/schema-shopping.sql
+|4,39,30,0,1738196704,"~/shopping/schema-shopping.sql"
+-'  31  0  ~/shopping/schema-shopping.sql
+|4,39,31,0,1738196704,"~/shopping/schema-shopping.sql"
+-'  30  0  ~/shopping/schema-shopping.sql
+|4,39,30,0,1738196704,"~/shopping/schema-shopping.sql"
+-'  31  0  ~/shopping/schema-shopping.sql
+|4,39,31,0,1738196704,"~/shopping/schema-shopping.sql"
+-'  30  0  ~/shopping/schema-shopping.sql
+|4,39,30,0,1738196704,"~/shopping/schema-shopping.sql"
+-'  1  0  ~/shopping/schema-shopping.sql
+|4,39,1,0,1738196687,"~/shopping/schema-shopping.sql"
+-'  27  33  ~/shopping/schema-shopping.sql
+|4,39,27,33,1738196492,"~/shopping/schema-shopping.sql"
+-'  27  33  ~/shopping/schema-shopping.sql
+|4,39,27,33,1738196492,"~/shopping/schema-shopping.sql"
+-'  27  33  ~/shopping/schema-shopping.sql
+|4,39,27,33,1738196492,"~/shopping/schema-shopping.sql"
+-'  27  33  ~/shopping/schema-shopping.sql
+|4,39,27,33,1738196492,"~/shopping/schema-shopping.sql"
+-'  27  33  ~/shopping/schema-shopping.sql
+|4,39,27,33,1738196492,"~/shopping/schema-shopping.sql"
+-'  25  4  ~/shopping/scaffold-and-validate.py
+|4,39,25,4,1738196429,"~/shopping/scaffold-and-validate.py"
+-'  25  4  ~/shopping/scaffold-and-validate.py
+|4,39,25,4,1738196429,"~/shopping/scaffold-and-validate.py"
+-'  25  4  ~/shopping/scaffold-and-validate.py
+|4,39,25,4,1738196429,"~/shopping/scaffold-and-validate.py"
+-'  25  4  ~/shopping/scaffold-and-validate.py
+|4,39,25,4,1738196429,"~/shopping/scaffold-and-validate.py"
+-'  25  4  ~/shopping/scaffold-and-validate.py
+|4,39,25,4,1738196429,"~/shopping/scaffold-and-validate.py"
+-'  18  20  ~/shopping/scaffold-and-validate.py
+|4,39,18,20,1738196215,"~/shopping/scaffold-and-validate.py"
+-'  18  20  ~/shopping/scaffold-and-validate.py
+|4,39,18,20,1738196215,"~/shopping/scaffold-and-validate.py"
+-'  18  20  ~/shopping/scaffold-and-validate.py
+|4,39,18,20,1738196215,"~/shopping/scaffold-and-validate.py"
+-'  18  20  ~/shopping/scaffold-and-validate.py
+|4,39,18,20,1738196215,"~/shopping/scaffold-and-validate.py"
+-'  18  20  ~/shopping/scaffold-and-validate.py
+|4,39,18,20,1738196215,"~/shopping/scaffold-and-validate.py"
+-'  98  19  ~/shopping/scaffold-and-validate.py
+|4,39,98,19,1738196169,"~/shopping/scaffold-and-validate.py"
+-'  98  19  ~/shopping/scaffold-and-validate.py
+|4,39,98,19,1738196169,"~/shopping/scaffold-and-validate.py"
+-'  98  19  ~/shopping/scaffold-and-validate.py
+|4,39,98,19,1738196169,"~/shopping/scaffold-and-validate.py"
+-'  98  19  ~/shopping/scaffold-and-validate.py
+|4,39,98,19,1738196169,"~/shopping/scaffold-and-validate.py"
+-'  98  19  ~/shopping/scaffold-and-validate.py
+|4,39,98,19,1738196169,"~/shopping/scaffold-and-validate.py"
+-'  97  20  ~/shopping/scaffold-and-validate.py
+|4,39,97,20,1738196154,"~/shopping/scaffold-and-validate.py"
+-'  97  20  ~/shopping/scaffold-and-validate.py
+|4,39,97,20,1738196154,"~/shopping/scaffold-and-validate.py"
+-'  97  20  ~/shopping/scaffold-and-validate.py
+|4,39,97,20,1738196154,"~/shopping/scaffold-and-validate.py"
+-'  97  20  ~/shopping/scaffold-and-validate.py
+|4,39,97,20,1738196154,"~/shopping/scaffold-and-validate.py"
+-'  97  20  ~/shopping/scaffold-and-validate.py
+|4,39,97,20,1738196154,"~/shopping/scaffold-and-validate.py"
+-'  96  148  ~/shopping/scaffold-and-validate.py
+|4,39,96,148,1738196102,"~/shopping/scaffold-and-validate.py"
+-'  96  148  ~/shopping/scaffold-and-validate.py
+|4,39,96,148,1738196102,"~/shopping/scaffold-and-validate.py"
+-'  96  148  ~/shopping/scaffold-and-validate.py
+|4,39,96,148,1738196102,"~/shopping/scaffold-and-validate.py"
+-'  96  148  ~/shopping/scaffold-and-validate.py
+|4,39,96,148,1738196102,"~/shopping/scaffold-and-validate.py"
+-'  96  148  ~/shopping/scaffold-and-validate.py
+|4,39,96,148,1738196102,"~/shopping/scaffold-and-validate.py"
+-'  101  35  ~/shopping/scaffold-and-validate.py
+|4,39,101,35,1738196097,"~/shopping/scaffold-and-validate.py"
+-'  101  35  ~/shopping/scaffold-and-validate.py
+|4,39,101,35,1738196097,"~/shopping/scaffold-and-validate.py"
+-'  101  35  ~/shopping/scaffold-and-validate.py
+|4,39,101,35,1738196097,"~/shopping/scaffold-and-validate.py"
+-'  101  35  ~/shopping/scaffold-and-validate.py
+|4,39,101,35,1738196097,"~/shopping/scaffold-and-validate.py"
+-'  101  35  ~/shopping/scaffold-and-validate.py
+|4,39,101,35,1738196097,"~/shopping/scaffold-and-validate.py"
+-'  53  34  ~/shopping/scaffold-and-validate.py
+|4,39,53,34,1738196063,"~/shopping/scaffold-and-validate.py"
+-'  53  34  ~/shopping/scaffold-and-validate.py
+|4,39,53,34,1738196063,"~/shopping/scaffold-and-validate.py"
+-'  53  34  ~/shopping/scaffold-and-validate.py
+|4,39,53,34,1738196063,"~/shopping/scaffold-and-validate.py"
+-'  53  34  ~/shopping/scaffold-and-validate.py
+|4,39,53,34,1738196063,"~/shopping/scaffold-and-validate.py"
+-'  53  34  ~/shopping/scaffold-and-validate.py
+|4,39,53,34,1738196063,"~/shopping/scaffold-and-validate.py"
+-'  65  38  ~/shopping/scaffold-and-validate.py
+|4,39,65,38,1738196045,"~/shopping/scaffold-and-validate.py"
+-'  113  29  ~/shopping/scaffold-and-validate.py
+|4,39,113,29,1738196045,"~/shopping/scaffold-and-validate.py"
+-'  65  38  ~/shopping/scaffold-and-validate.py
+|4,39,65,38,1738196045,"~/shopping/scaffold-and-validate.py"
+-'  113  29  ~/shopping/scaffold-and-validate.py
+|4,39,113,29,1738196045,"~/shopping/scaffold-and-validate.py"
+-'  65  38  ~/shopping/scaffold-and-validate.py
+|4,39,65,38,1738196045,"~/shopping/scaffold-and-validate.py"
+-'  113  29  ~/shopping/scaffold-and-validate.py
+|4,39,113,29,1738196045,"~/shopping/scaffold-and-validate.py"
+-'  65  38  ~/shopping/scaffold-and-validate.py
+|4,39,65,38,1738196045,"~/shopping/scaffold-and-validate.py"
+-'  113  29  ~/shopping/scaffold-and-validate.py
+|4,39,113,29,1738196045,"~/shopping/scaffold-and-validate.py"
+-'  65  38  ~/shopping/scaffold-and-validate.py
+|4,39,65,38,1738196045,"~/shopping/scaffold-and-validate.py"
+-'  113  29  ~/shopping/scaffold-and-validate.py
+|4,39,113,29,1738196045,"~/shopping/scaffold-and-validate.py"
+-'  67  4  ~/shopping/scaffold-and-validate.py
+|4,39,67,4,1738196042,"~/shopping/scaffold-and-validate.py"
+-'  67  4  ~/shopping/scaffold-and-validate.py
+|4,39,67,4,1738196042,"~/shopping/scaffold-and-validate.py"
+-'  67  4  ~/shopping/scaffold-and-validate.py
+|4,39,67,4,1738196042,"~/shopping/scaffold-and-validate.py"
+-'  67  4  ~/shopping/scaffold-and-validate.py
+|4,39,67,4,1738196042,"~/shopping/scaffold-and-validate.py"
+-'  67  4  ~/shopping/scaffold-and-validate.py
+|4,39,67,4,1738196042,"~/shopping/scaffold-and-validate.py"
+-'  76  0  ~/shopping/scaffold-and-validate.py
+|4,39,76,0,1738196034,"~/shopping/scaffold-and-validate.py"
+-'  76  0  ~/shopping/scaffold-and-validate.py
+|4,39,76,0,1738196034,"~/shopping/scaffold-and-validate.py"
 
 # Buffer list:
-%/tmp/crontab.wDihqF/crontab	34	0
+%/var/log/dmesg	1	0
 
 # History of marks within files (newest to oldest):
 
-> /tmp/crontab.wDihqF/crontab
-	*	1737792649	0
-	"	34	0
+> ~/shopping/scaffold-and-validate.py
+	*	1738197005	0
+	"	152	14
+	^	152	15
+	.	152	0
+	+	1	0
+	+	1	28
+	+	1	0
+	+	1	29
+	+	1	18
+	+	1	46
+	+	1	61
+	+	1	40
+	+	1	88
+	+	1	35
+	+	1	90
+	+	1	37
+	+	1	39
+	+	1	0
+	+	1	8
+	+	1	0
+	+	1	9
+	+	1	18
+	+	1	0
+	+	1	19
+	+	1	57
+	+	1	4
+	+	1	59
+	+	1	22
+	+	1	0
+	+	1	54
+	+	1	58
+	+	1	46
+	+	1	4
+	+	1	48
+	+	1	0
+	+	1	70
+	+	1	67
+	+	1	71
+	+	1	4
+	+	1	25
+	+	1	8
+	+	1	0
+	+	1	55
+	+	1	14
+	+	1	0
+	+	8	29
+	+	8	56
+	+	8	58
+	+	8	39
+	+	50	0
+	+	51	0
+	+	8	49
+	+	8	29
+	+	8	50
+	+	9	7
+	+	22	9
+	+	23	67
+	+	9	0
+	+	153	0
+	+	63	134
+	+	77	134
+	+	78	76
+	+	63	121
+	+	77	121
+	+	8	0
+	+	63	116
+	+	77	116
+	+	63	127
+	+	77	127
+	+	64	13
+	+	77	31
+	+	77	12
+	+	77	0
+	+	77	35
+	+	77	0
+	+	77	3
+	+	77	0
+	+	65	0
+	+	75	0
+	+	70	12
+	+	77	0
+	+	76	0
+	+	53	0
+	+	101	49
+	+	96	139
+	+	97	139
+	+	97	0
+	+	101	0
+	+	96	115
+	+	97	115
+	+	129	115
+	+	129	116
+	+	130	0
+	+	145	6
+	+	149	29
+	+	145	70
+	+	149	18
+	+	148	0
+	+	147	0
+	+	148	5
+	+	149	86
+	+	152	0
 
-> ~/pyscripts/secrets.env
-	*	1737792455	0
+> ~/shopping/schema-shopping.sql
+	*	1738196905	0
+	"	29	0
+	^	28	22
+	.	28	21
+	+	12	7
+	+	14	7
+	+	14	0
+	+	14	22
+	+	14	35
+	+	14	34
+	+	3	34
+	+	10	34
+	+	14	7
+	+	14	0
+	+	32	0
+	+	14	0
+	+	13	0
+	+	32	19
+	+	32	4
+	+	32	0
+	+	32	35
+	+	32	33
+	+	22	0
+	+	20	35
+	+	21	63
+	+	18	34
+	+	20	10
+	+	31	14
+	+	1	0
+	+	31	61
+	+	1	0
+	+	1	34
+	+	20	25
+	+	21	25
+	+	22	0
+	+	22	65
+	+	31	0
+	+	31	149
+	+	32	0
+	+	31	149
+	+	31	83
+	+	31	110
+	+	31	214
+	+	31	23
+	+	31	199
+	+	21	0
+	+	22	0
+	+	21	64
+	+	31	88
+	+	31	149
+	+	31	61
+	+	31	149
+	+	31	91
+	+	22	0
+	+	31	32
+	+	31	71
+	+	32	0
+	+	32	21
+	+	1	0
+	+	20	33
+	+	32	0
+	+	24	0
+	+	30	0
+	+	32	0
+	+	31	61
+	+	31	23
+	+	31	61
+	+	31	88
+	+	31	0
+	+	31	149
+	+	32	0
+	+	31	0
+	+	31	1
+	+	29	23
+	+	29	0
+	+	31	0
+	+	29	0
+	+	27	34
+	+	31	0
+	+	28	21
+
+> ~/shopping/backup.py
+	*	1738195118	0
 	"	1	0
 	.	2	0
-	+	1	15
-	+	2	8
-	+	1	53
 	+	2	0
 
-> ~/pyscripts/commit-message-gemini.py
-	*	1737792433	0
-	"	63	8
-	^	79	61
-	.	83	0
-	+	164	3
-	+	118	32
-	+	25	35
-	+	14	65
-	+	118	0
-	+	43	0
-	+	120	5
-	+	120	0
-	+	121	5
+> ~/shopping/parse-schema.sql
+	*	1738195113	0
+	"	1	0
+
+> ~/shopping/shopping-schema.sql
+	*	1738195108	0
+	"	1	0
+	^	11	64
+	.	18	34
+	+	2	37
+	+	13	0
+	+	2	36
+	+	12	1
+	+	13	0
+	+	2	41
+	+	12	0
+	+	3	29
+	+	6	22
+	+	2	15
+	+	6	16
+	+	12	0
+	+	8	20
+	+	6	29
+	+	8	30
+	+	12	0
+	+	8	0
+	+	6	0
+	+	7	16
+	+	8	29
+	+	8	34
+	+	12	11
+	+	3	0
+	+	12	36
+	+	12	0
+	+	14	20
+	+	19	1
+	+	15	39
+	+	16	25
+	+	17	25
+	+	12	0
+	+	4	0
+	+	16	0
+	+	17	0
+	+	18	0
+	+	17	26
+	+	5	35
+	+	15	0
+	+	16	20
+	+	17	22
+	+	18	18
+	+	17	24
+	+	18	25
+	+	15	50
+	+	12	0
+	+	11	63
+	+	18	34
+
+> ~/shopping/parse-schema.py
+	*	1738194947	0
+	"	14	0
+	^	14	24
+	.	14	23
+	+	21	0
+	+	17	0
+	+	5	0
+	+	4	14
+	+	8	30
+	+	9	22
+	+	17	36
+	+	17	8
+	+	17	23
+	+	17	19
+	+	4	25
+	+	17	0
+	+	4	0
+	+	17	0
+	+	10	13
+	+	16	0
+	+	10	38
+	+	11	27
+	+	12	32
+	+	15	0
+	+	12	56
+	+	13	4
+	+	14	23
+
+> ~/shopping/models/model_pydantic_shopping.py
+	*	1738182710	0
+	"	22	4
+	^	14	0
+	.	14	0
+	+	1	31
+	+	1	0
+	+	4	13
+	+	15	26
+	+	4	0
+	+	15	0
+	+	4	0
+	+	15	0
+	+	22	0
+	+	16	11
+	+	15	11
+	+	15	0
+	+	15	13
+	+	15	11
+	+	4	9
+	+	15	0
+	+	5	0
+	+	15	0
+	+	23	0
+	+	22	0
+	+	20	0
+	+	22	0
+	+	21	17
+	+	9	0
+	+	6	0
+	+	9	0
+	+	7	0
+	+	9	0
+	+	8	0
+	+	9	0
+	+	15	0
+	+	12	0
+	+	15	0
+	+	4	0
+	+	15	23
+	+	15	0
+	+	14	0
+
+> ~/shopping/models/model_attrs_shopping.py
+	*	1738182687	0
+	"	15	0
+	^	15	0
+	.	15	0
+	+	16	0
+	+	2	32
+	+	16	0
+	+	6	0
+	+	16	19
+	+	24	0
+	+	17	0
+	+	16	0
+	+	16	11
+	+	16	0
+	+	15	0
+
+> ~/.vim/vimrc
+	*	1738180935	0
+	"	1	0
+	^	92	0
+	.	43	0
+	+	1	41
+	+	1	44
+	+	1	40
+	+	1	28
+	+	1	0
+	+	1	11
+	+	1	18
+	+	1	43
+	+	1	64
+	+	1	54
+	+	1	0
+	+	1	31
+	+	1	0
+	+	1	6
+	+	1	0
+	+	1	1
+	+	1	0
+	+	1	80
+	+	1	75
+	+	1	0
+	+	1	52
+	+	1	41
+	+	1	0
+	+	1	26
+	+	1	0
+	+	1	22
+	+	1	25
+	+	1	0
+	+	1	57
+	+	1	59
+	+	1	55
+	+	1	0
+	+	1	25
+	+	1	1
+	+	1	0
+	+	1	24
+	+	1	0
+	+	1	12
+	+	1	0
+	+	1	49
+	+	1	0
+	+	1	13
+	+	1	0
+	+	1	16
+	+	1	0
+	+	1	25
+	+	1	3
+	+	1	5
+	+	1	16
+	+	1	0
+	+	1	16
+	+	1	0
+	+	1	5
+	+	1	3
+	+	1	0
+	+	1	4
+	+	1	0
+	+	1	40
+	+	1	36
+	+	1	0
+	+	1	26
+	+	1	9
+	+	1	0
+	+	1	31
+	+	1	4
+	+	1	30
+	+	1	4
+	+	1	0
+	+	1	5
+	+	1	8
+	+	1	29
+	+	1	33
+	+	1	1
+	+	1	21
+	+	1	20
+	+	1	1
+	+	1	0
 	+	122	0
-	+	119	0
-	+	125	54
-	+	127	4
-	+	150	53
-	+	162	37
-	+	126	26
-	+	135	0
-	+	136	0
-	+	137	47
-	+	145	7
-	+	145	19
-	+	139	33
-	+	138	53
-	+	145	0
-	+	139	0
-	+	139	17
-	+	139	30
-	+	139	0
-	+	136	0
-	+	139	0
-	+	136	0
-	+	145	0
-	+	139	0
-	+	136	0
-	+	145	19
-	+	137	33
-	+	139	62
-	+	142	33
-	+	143	7
-	+	145	0
-	+	143	0
-	+	145	0
-	+	103	38
-	+	103	0
-	+	111	103
-	+	111	0
-	+	104	0
-	+	104	33
-	+	104	71
-	+	104	28
-	+	104	0
-	+	103	0
-	+	89	21
-	+	90	13
-	+	97	76
-	+	98	24
-	+	94	88
-	+	94	12
-	+	97	0
-	+	92	26
-	+	91	42
-	+	93	57
-	+	95	53
-	+	98	105
-	+	99	70
-	+	100	67
-	+	104	0
-	+	105	19
-	+	99	31
-	+	100	31
-	+	99	33
-	+	100	33
-	+	99	45
-	+	100	45
-	+	98	20
-	+	99	37
-	+	100	37
-	+	99	49
-	+	100	49
-	+	99	23
-	+	100	23
-	+	96	13
-	+	97	99
-	+	95	24
-	+	93	53
-	+	105	0
-	+	110	7
-	+	106	0
-	+	107	0
-	+	106	9
-	+	107	20
-	+	146	0
-	+	136	0
-	+	138	0
-	+	144	13
-	+	146	0
-	+	79	16
-	+	84	0
-	+	83	0
-	a	136	16
+	+	426	0
+	+	1148	0
+	+	574	5
+	+	92	0
+	+	42	0
+	+	92	25
+	+	92	21
+	+	92	1
+	+	62	33
+	+	92	0
+	+	43	0
+
+> ~/.vim/.vimrc
+	*	1738180848	0
+	"	1	0
+
+> ~/hateoas/models/model_attrs.py
+	*	1738180373	0
+	"	2	7
+	^	41	34
+	.	41	33
+	+	33	0
+	+	41	33
+
+> ~/hateoas/models/model_pydantic.py
+	*	1738180368	0
+	"	56	0
+	^	36	34
+	.	36	33
+	+	36	33
+
+> ~/hateoas/page_lsp.py
+	*	1738179631	0
+	"	10	0
+	.	19	0
+	+	34	0
+	+	20	0
+	+	9	10
+	+	10	11
+	+	30	14
+	+	3	0
+	+	2	0
+	+	30	42
+	+	2	0
+	+	30	0
+	+	30	12
+	+	11	0
+	+	30	0
+	+	15	6
+	+	22	9
+	+	23	19
+	+	30	0
+	+	15	20
+	+	19	23
+	+	20	0
+	+	27	0
+	+	26	38
+	+	25	0
+	+	24	61
+	+	27	0
+	+	28	91
+	+	14	36
+	+	14	4
+	+	14	0
+	+	18	0
+	+	18	23
+	+	1	41
+	+	18	0
+	+	2	7
+	+	4	7
+	+	5	7
+	+	6	7
+	+	7	7
+	+	8	7
+	+	19	0
+	+	28	0
+	+	19	0
+
+> ~/shopping/.gitignore
+	*	1738179352	0
+	"	13	0
+	.	15	0
+	+	22	0
+	+	9	0
+	+	13	0
+	+	16	16
+	+	14	0
+	+	15	1
+	+	15	0
 
 > ~/golang/.gitignore
-	*	1737792197	0
-	"	4	0
-	^	7	4
-	.	4	0
+	*	1738179065	0
+	"	1	0
+	^	9	4
+	.	9	3
 	+	4	3
 	+	4	8
 	+	7	13
 	+	6	2
 	+	7	3
 	+	4	0
-
-> ~/tmp/epic-games.txt
-	*	1737791755	0
-	"	1	0
-	.	58	0
-	+	59	9
-	+	58	0
-	+	56	0
-	+	59	0
-	+	58	0
-
-> ~/.config/env.bash
-	*	1737786624	0
-	"	1	0
-	^	3	61
-	.	3	60
-	+	9	0
-	+	11	0
-	+	10	0
-	+	15	0
-	+	7	0
-	+	4	0
-	+	15	0
-	+	5	0
 	+	6	0
-	+	5	112
-	+	17	0
-	+	16	0
-	+	17	138
-	+	2	65
-	+	3	60
+	+	7	0
+	+	8	2
+	+	9	3
 
-> /tmp/crontab.REExyS/crontab
-	*	1737757081	0
+> ~/disc-bot/data/guilds.json
+	*	1738178198	0
+	"	9	19
+	^	374	1
+	.	374	0
+	+	374	0
+
+> ~/shopping/shopping-api.py
+	*	1738178084	0
+	"	14	36
+	^	14	37
+	.	14	36
+	+	18	0
+	+	14	36
+
+> ~/shopping/.venv/lib/python3.12/site-packages/flask_cors/extension.py
+	*	1738178068	0
+	"	27	6
+
+> ~/shopping/.envrc
+	*	1738177744	0
+	"	1	8
+	^	1	9
+	.	1	8
+	+	1	8
+
+> ~/.config/direnv/direnvrc
+	*	1738177732	0
+	"	24	0
+	^	24	0
+	.	24	0
+	+	23	0
+	+	25	8
+	+	39	0
+	+	25	0
+	+	24	0
+
+> ~/.vim/plugged/vim-jsonpath/doc/jsonpath.txt
+	*	1738157673	0
+	"	86	67
+
+> ~/.config/atuin/config.toml
+	*	1738157402	0
+	"	64	0
+	^	64	2
+	.	64	0
+	+	41	22
+	+	42	6
+	+	64	12
+	+	68	0
+	+	64	0
+
+> ~/tooling/json-sqlite-third-party-tools.txt
+	*	1738157136	0
+	"	2	4
+	^	1	13
+	.	1	38
+	+	4	24
+	+	2	15
+	+	3	0
+	+	1	25
+	+	2	3
+	+	1	38
+
+> ~/tmp/sample.json
+	*	1738156293	0
+	"	17	0
+	^	17	1
+	.	1	0
+	+	1	0
+
+> ~/.vim/ftplugin/json.vim
+	*	1738156235	0
+	"	1	0
+	^	4	34
+	.	5	0
+	+	1	11
+	+	2	0
+	+	4	28
+	+	5	0
+	+	5	3
+	+	4	33
+	+	5	0
+
+> ~/file.json
+	*	1738156032	0
 	"	1	0
 
-> /tmp/crontab.hm8GYj/crontab
-	*	1737752829	0
-	"	43	134
+> ~/.vim/plugged/ale/doc/ale-json.txt
+	*	1738155716	0
+	"	80	2
+
+> ~/tooling/remaps.txt
+	*	1738120051	0
+	"	1	0
+	^	1	1
+	.	1	0
+	+	20	0
+	+	15	0
+	+	13	3
+	+	18	19
+	+	13	11
+	+	25	17
+	+	23	22
+	+	26	5
+	+	26	0
+	+	27	20
+	+	26	0
+	+	28	0
+	+	25	0
+	+	24	0
+	+	20	0
+	+	19	0
+	+	15	0
+	+	14	0
+	+	12	0
+	+	11	35
+	+	7	0
+	+	1	19
+	+	1	0
+	+	5	144
+	+	7	0
+	+	6	103
+	+	4	0
+	+	5	4
+	+	6	4
+	+	1	0
 
 > ~/.vim/plugin/better-rg.vim
-	*	1737752792	0
-	"	36	0
+	*	1738120032	0
+	"	1	0
 	^	39	5
 	.	29	0
 	+	21	5
@@ -18714,6 +19352,799 @@ $
 	+	30	0
 	+	35	0
 	+	29	0
+
+> ~/tooling/expansions.txt
+	*	1738119917	0
+	"	1	0
+	^	1	16
+	.	1	15
+	+	5	15
+	+	2	0
+	+	1	15
+
+> ~/file1.txt
+	*	1738070394	0
+	"	1	0
+
+> ~/tmp/repos.txt
+	*	1738070236	0
+	"	18	8
+	^	18	9
+	.	18	8
+	+	5	0
+	+	23	0
+	+	15	0
+	+	20	8
+	+	23	0
+	+	15	3
+	+	5	0
+	+	12	0
+	+	11	0
+	+	12	0
+	+	5	0
+	+	11	0
+	+	15	0
+	+	9	7
+	+	8	0
+	+	9	0
+	+	7	0
+	+	9	0
+	+	1	0
+	+	5	0
+	+	22	3
+	+	5	0
+	+	21	3
+	+	5	0
+	+	12	3
+	+	12	21
+	+	12	111
+	+	11	12
+	+	12	0
+	+	10	0
+	+	11	15
+	+	5	0
+	+	13	4
+	+	5	0
+	+	14	3
+	+	13	18
+	+	14	15
+	+	5	0
+	+	24	3
+	+	6	0
+	+	2	11
+	+	3	0
+	+	11	104
+	+	14	0
+	+	9	0
+	+	16	0
+	+	3	7
+	+	4	7
+	+	5	7
+	+	7	3
+	+	11	0
+	+	10	5
+	+	10	0
+	+	17	8
+	+	18	8
+
+> ~/bash/todo_vim_fzf_select.bash
+	*	1738070145	0
+	"	1	0
+	.	3	0
+	+	2	0
+	+	2	13
+	+	2	0
+	+	2	9
+	+	2	118
+	+	2	10
+	+	2	119
+	+	2	1
+	+	2	2
+	+	2	0
+	+	2	10
+	+	2	35
+	+	2	0
+	+	2	1
+	+	6	0
+	+	3	0
+
+> ~/bahs
+	*	1738070135	0
+	"	1	0
+
+> ~/bash/git_fzf_select.bash
+	*	1738070132	0
+	"	1	0
+	^	10	64
+	.	10	63
+	+	37	2
+	+	37	0
+	+	37	2
+	+	1	2
+	+	1	0
+	+	37	0
+	+	9	0
+	+	4	46
+	+	34	0
+	+	36	0
+	+	34	3
+	+	35	2
+	+	7	73
+	+	10	63
+
+> ~/bash/search-gfiles.bash
+	*	1738070129	0
+	"	1	0
+
+> ~/bash/backup.crontab
+	*	1738070111	0
+	"	49	40
+	^	26	4
+	.	26	3
+	+	26	3
+
+> ~/pyscripts/commit-message-gemini.py
+	*	1738068585	0
+	"	63	8
+	^	63	8
+	.	63	0
+	+	164	3
+	+	118	32
+	+	25	35
+	+	14	65
+	+	118	0
+	+	43	0
+	+	120	5
+	+	120	0
+	+	121	5
+	+	122	0
+	+	119	0
+	+	125	54
+	+	127	4
+	+	150	53
+	+	162	37
+	+	126	26
+	+	135	0
+	+	136	0
+	+	137	47
+	+	145	7
+	+	145	19
+	+	139	33
+	+	138	53
+	+	145	0
+	+	139	0
+	+	139	17
+	+	139	30
+	+	139	0
+	+	136	0
+	+	139	0
+	+	136	0
+	+	145	0
+	+	139	0
+	+	136	0
+	+	145	19
+	+	137	33
+	+	139	62
+	+	142	33
+	+	143	7
+	+	145	0
+	+	143	0
+	+	145	0
+	+	103	38
+	+	103	0
+	+	111	103
+	+	111	0
+	+	104	0
+	+	104	33
+	+	104	71
+	+	104	28
+	+	104	0
+	+	103	0
+	+	89	21
+	+	90	13
+	+	97	76
+	+	98	24
+	+	94	88
+	+	94	12
+	+	97	0
+	+	92	26
+	+	91	42
+	+	93	57
+	+	95	53
+	+	98	105
+	+	99	70
+	+	100	67
+	+	104	0
+	+	105	19
+	+	99	31
+	+	100	31
+	+	99	33
+	+	100	33
+	+	99	45
+	+	100	45
+	+	98	20
+	+	99	37
+	+	100	37
+	+	99	49
+	+	100	49
+	+	99	23
+	+	100	23
+	+	96	13
+	+	97	99
+	+	95	24
+	+	93	53
+	+	105	0
+	+	110	7
+	+	106	0
+	+	107	0
+	+	106	9
+	+	107	20
+	+	146	0
+	+	136	0
+	+	138	0
+	+	144	13
+	+	146	0
+	+	79	16
+	+	84	0
+	+	83	0
+	+	63	0
+	a	136	16
+
+> ~/pyscripts/secrets.env
+	*	1738066333	0
+	"	1	60
+	^	1	61
+	.	1	60
+	+	1	15
+	+	2	8
+	+	1	53
+	+	2	0
+	+	1	60
+
+> ~/tooling/shell-completion-behaviour.txt
+	*	1738063618	0
+	"	1	0
+	^	3	1
+	.	4	0
+	+	13	28
+	+	19	8
+	+	19	0
+	+	2	0
+	+	1	45
+	+	12	0
+	+	15	37
+	+	12	0
+	+	9	52
+	+	16	55
+	+	19	0
+	+	18	0
+	+	11	46
+	+	10	103
+	+	11	100
+	+	6	97
+	+	7	0
+	+	10	0
+	+	16	0
+	+	8	0
+	+	6	0
+	+	11	0
+	+	17	0
+	+	4	0
+	+	14	0
+	+	5	0
+	+	6	0
+	+	6	4
+	+	5	2
+	+	6	0
+	+	5	3
+	+	4	0
+	+	3	0
+	+	4	0
+
+> /usr/share/vim/vim90/doc/digraph.txt
+	*	1738060748	0
+	"	1230	4
+
+> ~/.config/bindings.inputrc
+	*	1738059418	0
+	"	4	0
+	^	16	30
+	.	16	29
+	+	16	29
+
+> ~/file.bash
+	*	1738058817	0
+	"	1	0
+	.	61	0
+	+	61	0
+
+> ~/disc-bot/pre-deploy.bash
+	*	1738058426	0
+	"	1	0
+	^	5	5
+	.	4	0
+	+	4	19
+	+	4	8
+	+	5	0
+	+	4	0
+	+	2	0
+	+	3	0
+	+	1	19
+	+	4	4
+	+	4	0
+
+> ~/disc-bot/src/commands/member.py
+	*	1738051702	0
+	"	136	15
+	^	153	58
+	.	153	57
+	+	14	0
+	+	15	0
+	+	15	18
+	+	14	53
+	+	15	0
+	+	14	0
+	+	153	57
+
+> ~/.config/starship/starship.toml
+	*	1738048135	0
+	"	6	11
+	^	6	30
+	.	6	0
+	+	24	1
+	+	24	0
+	+	4	0
+	+	4	16
+	+	24	10
+	+	4	22
+	+	24	7
+	+	24	1
+	+	24	9
+	+	24	16
+	+	4	24
+	+	24	17
+	+	24	50
+	+	24	0
+	+	4	22
+	+	24	19
+	+	4	0
+	+	24	20
+	+	24	24
+	+	24	0
+	+	28	0
+	+	4	0
+	+	29	0
+	+	4	10
+	+	25	20
+	+	4	17
+	+	28	10
+	+	25	28
+	+	4	0
+	+	24	17
+	+	25	26
+	+	26	31
+	+	27	9
+	+	25	60
+	+	29	0
+	+	4	21
+	+	29	0
+	+	28	10
+	+	29	0
+	+	29	86
+	+	28	0
+	+	29	2
+	+	25	0
+	+	29	0
+	+	25	11
+	+	29	0
+	+	25	0
+	+	27	0
+	+	26	15
+	+	25	17
+	+	25	113
+	+	27	23
+	+	28	11
+	+	28	105
+	+	29	0
+	+	28	8
+	+	28	107
+	+	28	7
+	+	28	107
+	+	25	73
+	+	28	67
+	+	29	0
+	+	4	0
+	+	27	44
+	+	26	0
+	+	28	0
+	+	22	25
+	+	22	0
+	+	27	40
+	+	28	0
+	+	25	11
+	+	25	0
+	+	25	108
+	+	29	10
+	+	29	0
+	+	26	11
+	+	27	0
+	+	29	0
+	+	26	12
+	+	16	0
+	+	28	0
+	+	16	0
+	+	1	0
+	+	6	8
+	+	12	3
+	+	12	0
+	+	8	0
+	+	7	0
+	+	6	9
+	+	6	8
+	+	6	9
+	+	4	0
+	+	6	26
+	+	6	12
+	+	6	16
+	+	6	20
+	+	6	25
+	+	7	0
+	+	6	0
+
+> ~/disc-bot/loop.py
+	*	1738036912	0
+	"	5	16
+	^	5	17
+	.	5	16
+	+	5	16
+
+> ~/disc-bot/src/utils/setup_chrome_testing_binaries.py
+	*	1738032763	0
+	"	47	0
+	^	69	103
+	.	69	102
+	+	27	55
+	+	11	0
+	+	10	0
+	+	11	68
+	+	15	32
+	+	18	68
+	+	11	69
+	+	15	33
+	+	18	69
+	+	11	97
+	+	15	61
+	+	18	97
+	+	2	0
+	+	1	0
+	+	2	21
+	+	4	41
+	+	85	0
+	+	81	5
+	+	82	0
+	+	82	70
+	+	82	0
+	+	81	0
+	+	82	55
+	+	82	0
+	+	61	0
+	+	9	54
+	+	11	72
+	+	15	36
+	+	18	72
+	+	27	57
+	+	59	23
+	+	64	26
+	+	72	32
+	+	75	59
+	+	78	30
+	+	81	23
+	+	82	29
+	+	9	70
+	+	11	88
+	+	15	52
+	+	18	88
+	+	26	50
+	+	61	17
+	+	66	20
+	+	73	26
+	+	76	62
+	+	78	46
+	+	81	39
+	+	82	45
+	+	61	27
+	+	66	30
+	+	69	83
+	+	82	0
+	+	58	0
+	+	56	69
+	+	57	75
+	+	58	72
+	+	58	73
+	+	60	0
+	+	59	5
+	+	60	103
+	+	62	0
+	+	61	0
+	+	62	126
+	+	46	26
+	+	54	129
+	+	55	148
+	+	56	57
+	+	57	75
+	+	59	0
+	+	54	26
+	+	55	36
+	+	56	35
+	+	57	44
+	+	54	0
+	+	53	0
+	+	58	0
+	+	48	0
+	+	58	0
+	+	51	0
+	+	49	14
+	+	58	0
+	+	47	41
+	+	50	45
+	+	56	100
+	+	58	0
+	+	70	0
+	+	71	9
+	+	72	0
+	+	58	93
+	+	58	0
+	+	49	24
+	+	47	8
+	+	50	8
+	+	56	72
+	+	69	102
+
+> ~/disc-bot/src/utils/leaderboard_chrome.py
+	*	1738031884	0
+	"	90	11
+	^	78	48
+	.	78	47
+	+	1	60
+	+	1	0
+	+	1	44
+	+	1	77
+	+	1	0
+	+	107	0
+	+	106	0
+	+	107	0
+	+	108	0
+	+	107	0
+	+	107	4
+	+	107	0
+	+	105	5
+	+	41	29
+	+	43	121
+	+	43	119
+	+	43	84
+	+	41	0
+	+	43	24
+	+	43	141
+	+	43	128
+	+	43	60
+	+	43	107
+	+	43	87
+	+	43	0
+	+	42	49
+	+	43	107
+	+	44	0
+	+	43	103
+	+	82	16
+	+	83	22
+	+	8	9
+	+	82	51
+	+	9	21
+	+	82	133
+	+	83	92
+	+	84	18
+	+	75	0
+	+	76	0
+	+	78	91
+	+	82	38
+	+	78	22
+	+	77	14
+	+	82	26
+	+	82	0
+	+	79	0
+	+	78	47
+
+> ~/disc-bot/dependencies.txt
+	*	1738031491	0
+	"	1	0
+	^	36	9
+	.	36	8
+	+	36	8
+
+> ~/disc-bot/chrome-howto.txt
+	*	1738031221	0
+	"	7	4
+	^	6	0
+	.	5	34
+	+	3	48
+	+	1	20
+	+	3	3
+	+	2	0
+	+	7	48
+	+	5	34
+	+	7	0
+	+	6	0
+	+	5	34
+
+> ~/disc-bot/requirements.txt
+	*	1738030578	0
+	"	9	1
+	^	11	2
+	.	11	1
+	+	4	5
+	+	4	7
+	+	6	24
+	+	6	2
+	+	9	5
+	+	12	10
+	+	12	11
+	+	13	8
+	+	12	0
+	+	6	0
+	+	4	0
+	+	3	0
+	+	11	15
+	+	14	0
+	+	7	0
+	+	8	0
+	+	12	1
+	+	13	1
+	+	11	1
+
+> ~/tooling/docs/fd.man
+	*	1738026473	0
+	"	183	11
+
+> ~/.vim/ide.vim
+	*	1737983565	0
+	"	213	0
+	^	1	0
+	.	62	0
+	+	183	5
+	+	183	0
+	+	183	35
+	+	183	0
+	+	175	0
+	+	183	0
+	+	175	0
+	+	176	3
+	+	183	0
+	+	180	3
+	+	179	0
+	+	177	59
+	+	182	0
+	+	177	94
+	+	180	81
+	+	182	0
+	+	180	80
+	+	1	150
+	+	143	36
+	+	178	0
+	+	177	0
+	+	178	41
+	+	181	0
+	+	180	0
+	+	181	41
+	+	143	43
+	+	177	4
+	+	178	4
+	+	180	4
+	+	181	4
+	+	296	7
+	+	465	14
+	+	466	0
+	+	467	0
+	+	468	45
+	+	469	0
+	+	69	0
+	+	65	18
+	+	69	0
+	+	234	0
+	+	167	46
+	+	168	0
+	+	154	19
+	+	168	0
+	+	167	34
+	+	134	7
+	+	134	51
+	+	134	0
+	+	134	50
+	+	134	8
+	+	134	38
+	+	134	73
+	+	134	0
+	+	111	0
+	+	111	32
+	+	111	0
+	+	111	16
+	+	111	30
+	+	111	0
+	+	111	45
+	+	111	0
+	+	111	43
+	+	111	0
+	+	111	16
+	+	111	0
+	+	111	24
+	+	134	50
+	+	134	73
+	+	111	0
+	+	134	0
+	+	147	32
+	+	134	0
+	+	154	0
+	+	168	0
+	+	167	34
+	+	143	52
+	+	152	46
+	+	143	45
+	+	152	39
+	+	472	16
+	+	473	23
+	+	473	0
+	+	327	0
+	+	330	0
+	+	327	10
+	+	329	0
+	+	327	30
+	+	325	77
+	+	326	63
+	+	473	0
+	+	320	0
+	+	2	161
+	+	62	0
+
+> /tmp/crontab.wDihqF/crontab
+	*	1737792649	0
+	"	34	0
+
+> ~/tmp/epic-games.txt
+	*	1737791755	0
+	"	1	0
+	.	58	0
+	+	59	9
+	+	58	0
+	+	56	0
+	+	59	0
+	+	58	0
+
+> ~/.config/env.bash
+	*	1737786624	0
+	"	1	0
+	^	3	61
+	.	3	60
+	+	9	0
+	+	11	0
+	+	10	0
+	+	15	0
+	+	7	0
+	+	4	0
+	+	15	0
+	+	5	0
+	+	6	0
+	+	5	112
+	+	17	0
+	+	16	0
+	+	17	138
+	+	2	65
+	+	3	60
+
+> /tmp/crontab.REExyS/crontab
+	*	1737757081	0
+	"	1	0
+
+> /tmp/crontab.hm8GYj/crontab
+	*	1737752829	0
+	"	43	134
 
 > ~/.vim/plugged/fzf.vim/autoload/fzf/vim.vim
 	*	1737571608	0
@@ -20149,99 +21580,6 @@ $
 	.	1	0
 	+	1	0
 
-> ~/.vim/vimrc
-	*	1736261994	0
-	"	61	33
-	^	61	34
-	.	61	33
-	+	1	41
-	+	1	44
-	+	1	40
-	+	1	28
-	+	1	0
-	+	1	11
-	+	1	18
-	+	1	43
-	+	1	64
-	+	1	54
-	+	1	0
-	+	1	31
-	+	1	0
-	+	1	6
-	+	1	0
-	+	1	1
-	+	1	0
-	+	1	80
-	+	1	75
-	+	1	0
-	+	1	52
-	+	1	41
-	+	1	0
-	+	1	26
-	+	1	0
-	+	1	22
-	+	1	25
-	+	1	0
-	+	1	57
-	+	1	59
-	+	1	55
-	+	1	0
-	+	1	25
-	+	1	1
-	+	1	0
-	+	1	24
-	+	1	0
-	+	1	12
-	+	1	0
-	+	1	49
-	+	1	0
-	+	1	13
-	+	1	0
-	+	1	16
-	+	1	0
-	+	1	25
-	+	1	3
-	+	1	5
-	+	1	16
-	+	1	0
-	+	1	16
-	+	1	0
-	+	1	5
-	+	1	3
-	+	1	0
-	+	1	4
-	+	1	0
-	+	1	40
-	+	1	36
-	+	1	0
-	+	1	26
-	+	1	9
-	+	1	0
-	+	1	31
-	+	1	4
-	+	1	30
-	+	1	4
-	+	1	0
-	+	1	5
-	+	1	8
-	+	1	29
-	+	1	33
-	+	1	1
-	+	1	21
-	+	1	20
-	+	1	1
-	+	1	0
-	+	122	0
-	+	426	0
-	+	1148	0
-	+	574	5
-	+	92	0
-	+	42	0
-	+	92	25
-	+	91	21
-	+	92	1
-	+	61	33
-
 > ~/typography-react-ts/src/styles/main.css
 	*	1736258306	0
 	"	1	0
@@ -20793,13 +22131,6 @@ $
 	*	1736063488	0
 	"	18	0
 
-> ~/bash/backup.crontab
-	*	1736063471	0
-	"	33	0
-	^	26	4
-	.	26	3
-	+	26	3
-
 > ~/.config/symlinks.txt
 	*	1736063424	0
 	"	4	91
@@ -21120,108 +22451,6 @@ $
 	+	53	0
 	+	47	0
 	+	53	0
-
-> ~/disc-bot/src/utils/setup_chrome_testing_binaries.py
-	*	1735981174	0
-	"	44	4
-	^	69	103
-	.	69	102
-	+	27	55
-	+	11	0
-	+	10	0
-	+	11	68
-	+	15	32
-	+	18	68
-	+	11	69
-	+	15	33
-	+	18	69
-	+	11	97
-	+	15	61
-	+	18	97
-	+	2	0
-	+	1	0
-	+	2	21
-	+	4	41
-	+	85	0
-	+	81	5
-	+	82	0
-	+	82	70
-	+	82	0
-	+	81	0
-	+	82	55
-	+	82	0
-	+	61	0
-	+	9	54
-	+	11	72
-	+	15	36
-	+	18	72
-	+	27	57
-	+	59	23
-	+	64	26
-	+	72	32
-	+	75	59
-	+	78	30
-	+	81	23
-	+	82	29
-	+	9	70
-	+	11	88
-	+	15	52
-	+	18	88
-	+	26	50
-	+	61	17
-	+	66	20
-	+	73	26
-	+	76	62
-	+	78	46
-	+	81	39
-	+	82	45
-	+	61	27
-	+	66	30
-	+	69	83
-	+	82	0
-	+	58	0
-	+	56	69
-	+	57	75
-	+	58	72
-	+	58	73
-	+	60	0
-	+	59	5
-	+	60	103
-	+	62	0
-	+	61	0
-	+	62	126
-	+	46	26
-	+	54	129
-	+	55	148
-	+	56	57
-	+	57	75
-	+	59	0
-	+	54	26
-	+	55	36
-	+	56	35
-	+	57	44
-	+	54	0
-	+	53	0
-	+	58	0
-	+	48	0
-	+	58	0
-	+	51	0
-	+	49	14
-	+	58	0
-	+	47	41
-	+	50	45
-	+	56	100
-	+	58	0
-	+	70	0
-	+	71	9
-	+	72	0
-	+	58	93
-	+	58	0
-	+	49	24
-	+	47	8
-	+	50	8
-	+	56	72
-	+	69	102
 
 > ~/crk-coupon/get_chrome_and_chromedriver.bash
 	*	1735979441	0
@@ -21923,10 +23152,6 @@ $
 	*	1735841151	0
 	"	1	0
 
-> ~/tooling/docs/fd.man
-	*	1735840879	0
-	"	267	0
-
 > ~/sqlite-editor/editor-api.py
 	*	1735840773	0
 	"	1	0
@@ -22207,59 +23432,6 @@ $
 	+	29	0
 	+	22	0
 
-> ~/disc-bot/src/utils/leaderboard_chrome.py
-	*	1735824158	0
-	"	71	0
-	^	78	48
-	.	78	47
-	+	1	60
-	+	1	0
-	+	1	44
-	+	1	77
-	+	1	0
-	+	107	0
-	+	106	0
-	+	107	0
-	+	108	0
-	+	107	0
-	+	107	4
-	+	107	0
-	+	105	5
-	+	41	29
-	+	43	121
-	+	43	119
-	+	43	84
-	+	41	0
-	+	43	24
-	+	43	141
-	+	43	128
-	+	43	60
-	+	43	107
-	+	43	87
-	+	43	0
-	+	42	49
-	+	43	107
-	+	44	0
-	+	43	103
-	+	82	16
-	+	83	22
-	+	8	9
-	+	82	51
-	+	9	21
-	+	82	133
-	+	83	92
-	+	84	18
-	+	75	0
-	+	76	0
-	+	78	91
-	+	82	38
-	+	78	22
-	+	77	14
-	+	82	26
-	+	82	0
-	+	79	0
-	+	78	47
-
 > ~/disc-bot/src/utils/download_chromedriver.py
 	*	1735823728	0
 	"	4	0
@@ -22359,24 +23531,6 @@ $
 	+	58	82
 	+	59	0
 
-> ~/disc-bot/src/commands/member.py
-	*	1735808906	0
-	"	14	0
-	.	14	0
-	+	14	0
-	+	15	0
-	+	15	18
-	+	14	53
-	+	15	0
-	+	14	0
-
-> ~/disc-bot/data/guilds.json
-	*	1735807739	0
-	"	1	0
-	^	374	1
-	.	374	0
-	+	374	0
-
 > ~/disc-bot/.env
 	*	1735805421	0
 	"	1	0
@@ -22414,28 +23568,6 @@ $
 > ~/disc-bot/bin/chrome-headless-shell-linux64/chrome-headless-shell
 	*	1735765108	0
 	"	1	0
-
-> ~/disc-bot/requirements.txt
-	*	1735763230	0
-	"	8	0
-	^	8	0
-	.	8	0
-	+	4	5
-	+	4	7
-	+	6	24
-	+	6	2
-	+	9	5
-	+	12	10
-	+	12	11
-	+	13	8
-	+	12	0
-	+	6	0
-	+	4	0
-	+	3	0
-	+	11	15
-	+	14	0
-	+	7	0
-	+	8	0
 
 > ~/tmp/unzip_url_commands.txt
 	*	1735762825	0
@@ -22484,10 +23616,6 @@ $
 	*	1735759681	0
 	"	1	0
 
-> /usr/share/vim/vim90/doc/digraph.txt
-	*	1735757586	0
-	"	1229	0
-
 > ~/bash/zdirs.bash
 	*	1735756076	0
 	"	1	0
@@ -22521,112 +23649,6 @@ $
 	+	17	47
 	+	13	0
 	+	18	53
-
-> ~/.config/starship/starship.toml
-	*	1735755885	0
-	"	13	0
-	^	8	19
-	.	1	0
-	+	4	0
-	+	2	51
-	+	16	0
-	+	12	0
-	+	7	0
-	+	5	0
-	+	7	0
-	+	4	0
-	+	7	0
-	+	6	0
-	+	5	0
-	+	6	0
-	+	7	8
-	+	7	0
-	+	12	0
-	+	16	19
-	+	16	31
-	+	16	1
-	+	16	0
-	+	4	0
-	+	4	16
-	+	16	10
-	+	4	22
-	+	16	7
-	+	16	1
-	+	16	9
-	+	16	16
-	+	4	24
-	+	16	17
-	+	16	50
-	+	16	0
-	+	4	22
-	+	16	19
-	+	4	0
-	+	16	20
-	+	16	24
-	+	16	0
-	+	20	0
-	+	4	0
-	+	21	0
-	+	4	10
-	+	17	20
-	+	4	17
-	+	20	10
-	+	17	28
-	+	4	0
-	+	16	17
-	+	17	26
-	+	18	31
-	+	19	9
-	+	17	60
-	+	21	0
-	+	4	21
-	+	21	0
-	+	20	10
-	+	21	0
-	+	21	86
-	+	20	0
-	+	21	2
-	+	17	0
-	+	21	0
-	+	17	11
-	+	21	0
-	+	17	0
-	+	19	0
-	+	18	15
-	+	17	17
-	+	17	113
-	+	19	23
-	+	20	11
-	+	20	105
-	+	21	0
-	+	20	8
-	+	20	107
-	+	20	7
-	+	20	107
-	+	17	73
-	+	20	67
-	+	21	0
-	+	4	0
-	+	19	44
-	+	18	0
-	+	20	0
-	+	14	25
-	+	14	0
-	+	19	40
-	+	20	0
-	+	17	11
-	+	17	0
-	+	17	108
-	+	21	10
-	+	21	0
-	+	18	11
-	+	19	0
-	+	21	0
-	+	18	12
-	+	8	0
-	+	20	0
-	+	8	0
-	+	1	0
 
 > ~/bash/logs/gh-timeago-updates.log
 	*	1735751593	0
@@ -24448,13 +25470,6 @@ $
 	+	14	0
 	+	15	0
 	+	14	25
-
-> ~/.config/bindings.inputrc
-	*	1735221372	0
-	"	12	0
-	^	16	30
-	.	16	29
-	+	16	29
 
 > ~/tmp/minimal.bash
 	*	1735221351	0
@@ -28276,27 +29291,6 @@ $
 	+	96	48
 	+	15	10
 
-> ~/bash/todo_vim_fzf_select.bash
-	*	1731535151	0
-	"	2	22
-	.	3	0
-	+	2	0
-	+	2	13
-	+	2	0
-	+	2	9
-	+	2	118
-	+	2	10
-	+	2	119
-	+	2	1
-	+	2	2
-	+	2	0
-	+	2	10
-	+	2	35
-	+	2	0
-	+	2	1
-	+	6	0
-	+	3	0
-
 > ~/tooling/swe_knowledge.txt
 	*	1731534419	0
 	"	1	0
@@ -30356,105 +31350,6 @@ $
 	^	1	6
 	.	1	5
 	+	1	5
-
-> ~/.vim/ide.vim
-	*	1730201049	0
-	"	1	0
-	^	2	162
-	.	62	0
-	+	183	5
-	+	183	0
-	+	183	35
-	+	183	0
-	+	175	0
-	+	183	0
-	+	175	0
-	+	176	3
-	+	183	0
-	+	180	3
-	+	179	0
-	+	177	59
-	+	182	0
-	+	177	94
-	+	180	81
-	+	182	0
-	+	180	80
-	+	1	150
-	+	143	36
-	+	178	0
-	+	177	0
-	+	178	41
-	+	181	0
-	+	180	0
-	+	181	41
-	+	143	43
-	+	177	4
-	+	178	4
-	+	180	4
-	+	181	4
-	+	296	7
-	+	465	14
-	+	466	0
-	+	467	0
-	+	468	45
-	+	469	0
-	+	69	0
-	+	65	18
-	+	69	0
-	+	234	0
-	+	167	46
-	+	168	0
-	+	154	19
-	+	168	0
-	+	167	34
-	+	134	7
-	+	134	51
-	+	134	0
-	+	134	50
-	+	134	8
-	+	134	38
-	+	134	73
-	+	134	0
-	+	111	0
-	+	111	32
-	+	111	0
-	+	111	16
-	+	111	30
-	+	111	0
-	+	111	45
-	+	111	0
-	+	111	43
-	+	111	0
-	+	111	16
-	+	111	0
-	+	111	24
-	+	134	50
-	+	134	73
-	+	111	0
-	+	134	0
-	+	147	32
-	+	134	0
-	+	154	0
-	+	168	0
-	+	167	34
-	+	143	52
-	+	152	46
-	+	143	45
-	+	152	39
-	+	472	16
-	+	473	23
-	+	473	0
-	+	327	0
-	+	330	0
-	+	327	10
-	+	329	0
-	+	327	30
-	+	325	77
-	+	326	63
-	+	473	0
-	+	320	0
-	+	2	161
-	+	62	0
 
 > ~/.vim/coc-settings.json
 	*	1730200939	0
@@ -35637,21 +36532,6 @@ $
 	+	65	0
 	+	14	0
 
-> ~/hateoas/models/model_attrs.py
-	*	1728805928	0
-	"	30	0
-	^	41	34
-	.	41	33
-	+	33	0
-	+	41	33
-
-> ~/hateoas/models/model_pydantic.py
-	*	1728805923	0
-	"	1	0
-	^	36	34
-	.	36	33
-	+	36	33
-
 > ~/Twitch/coffee-vps/code/auth.py
 	*	1728798724	0
 	"	1	0
@@ -35682,41 +36562,6 @@ $
 	+	7	35
 	+	8	34
 	+	6	38
-
-> ~/tooling/remaps.txt
-	*	1727960297	0
-	"	27	0
-	.	1	0
-	+	20	0
-	+	15	0
-	+	13	3
-	+	18	19
-	+	13	11
-	+	25	17
-	+	23	22
-	+	26	5
-	+	26	0
-	+	27	20
-	+	26	0
-	+	28	0
-	+	25	0
-	+	24	0
-	+	20	0
-	+	19	0
-	+	15	0
-	+	14	0
-	+	12	0
-	+	11	35
-	+	7	0
-	+	1	19
-	+	1	0
-	+	5	144
-	+	7	0
-	+	6	103
-	+	4	0
-	+	5	4
-	+	6	4
-	+	1	0
 
 > ~/oldfiles-fzf/index.txt
 	*	1727923867	0
@@ -35823,15 +36668,6 @@ $
 	+	3	0
 	+	2	5
 	+	3	24
-
-> ~/tooling/expansions.txt
-	*	1727919833	0
-	"	1	0
-	^	1	16
-	.	1	15
-	+	5	15
-	+	2	0
-	+	1	15
 
 > ~/.config/tmux/colon_bind.bash
 	*	1727861081	0
@@ -36363,26 +37199,6 @@ $
 	+	1	0
 	+	1	14
 
-> ~/bash/git_fzf_select.bash
-	*	1727580919	0
-	"	14	0
-	^	10	64
-	.	10	63
-	+	37	2
-	+	37	0
-	+	37	2
-	+	1	2
-	+	1	0
-	+	37	0
-	+	9	0
-	+	4	46
-	+	34	0
-	+	36	0
-	+	34	3
-	+	35	2
-	+	7	73
-	+	10	63
-
 > ~/.vim/plugin/print-personal-mappings.vim
 	*	1727446668	0
 	"	1	0
@@ -36705,13 +37521,6 @@ $
 	*	1727220059	0
 	"	12	24
 
-> ~/tooling/json-sqlite-third-party-tools.txt
-	*	1727219995	0
-	"	1	24
-	^	1	25
-	.	1	24
-	+	1	24
-
 > ~/bash/fzf-command-samples.txt
 	*	1727050378	0
 	"	14	4
@@ -36825,14 +37634,6 @@ $
 	.	3	0
 	+	20	0
 	+	3	0
-
-> ~/.config/atuin/config.toml
-	*	1727039841	0
-	"	42	6
-	^	42	7
-	.	42	6
-	+	41	22
-	+	42	6
 
 > ~/tooling/ripgrep-fd-flags-cheat-sheet.txt
 	*	1727012691	0
@@ -43826,10 +44627,6 @@ $
 	+	5	0
 	+	4	0
 
-> ~/.vim/.vimrc
-	*	1722513219	0
-	"	1	0
-
 > ~/.vim/.vimspector.json
 	*	1722513216	0
 	"	1	0
@@ -44814,45 +45611,6 @@ $
 	+	11	0
 	+	10	0
 	+	13	0
-
-> ~/hateoas/page_lsp.py
-	*	1722112580	0
-	"	13	4
-	^	1	55
-	.	18	0
-	+	34	0
-	+	20	0
-	+	9	10
-	+	10	11
-	+	30	14
-	+	3	0
-	+	2	0
-	+	30	42
-	+	2	0
-	+	30	0
-	+	30	12
-	+	11	0
-	+	30	0
-	+	15	6
-	+	22	9
-	+	23	19
-	+	30	0
-	+	15	20
-	+	19	23
-	+	20	0
-	+	27	0
-	+	26	38
-	+	25	0
-	+	24	61
-	+	27	0
-	+	28	91
-	+	14	36
-	+	14	4
-	+	14	0
-	+	18	0
-	+	18	23
-	+	1	41
-	+	18	0
 
 > ~/.vim/plugin/gf.vim
 	*	1722111774	0
@@ -60237,10 +60995,6 @@ $
 	.	1	0
 	+	1	0
 
-> ~/.vim/plugged/vim-jsonpath/doc/jsonpath.txt
-	*	1693666974	0
-	"	46	4
-
 > ~/zomato/zomatosearch.py
 	*	1693666086	0
 	"	65	0
@@ -61016,13 +61770,6 @@ $
 	+	7	31
 	+	16	36
 	+	6	0
-
-> ~/.config/direnv/direnvrc
-	*	1693027799	0
-	"	1	0
-	^	23	1
-	.	23	0
-	+	23	0
 
 > ~/frontend/src/components/Profile.vue
 	*	1692965958	0
@@ -64422,16 +65169,6 @@ $
 > ~/Twitch/coffee-vps/code/yt_no_user_name_fmt.json
 	*	1691571339	0
 	"	1	0
-
-> ~/.vim/ftplugin/json.vim
-	*	1691569444	0
-	"	5	4
-	^	5	5
-	.	5	0
-	+	1	11
-	+	2	0
-	+	4	28
-	+	5	0
 
 > ~/Twitch/coffee-vps/code/data/videos.db
 	*	1691489946	0

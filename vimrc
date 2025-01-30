@@ -40,6 +40,7 @@ endif
 filetype indent plugin on | syntax on 
 
 call plug#begin()
+Plug 'github/copilot.vim'
 Plug 'mbbill/undotree'
 " Make sure pyflakes and eslint are installed
 " Install tabular
@@ -88,8 +89,7 @@ Plug 'leafOfTree/vim-vue-plugin'
 Plug 'arcticicestudio/nord-vim'
 Plug 'AndrewRadev/splitjoin.vim'
 
-" Disabled till Jan 19
-" Plug 'github/copilot.vim'
+
 call plug#end()
 if has("win32")
     source ~/vimfiles/ide.vim
