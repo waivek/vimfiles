@@ -311,9 +311,9 @@ iabbrev 't ’t
 let &pythonthreedll='C:\Program Files (x86)\Python\Python37-32\python37.dll'
 let &pythonthreedll='C:\Program Files\Python310\python310.dll'
 
-if has('python3')
-    silent! python3 1
-endif
+" if has('python3')
+"     silent! python3 1
+" endif
 " au VimEnter * call UltiSnips#TrackChange()
 if &guifont !=# 'Consolas:h12:cANSI:qDRAFT'
     " Setting guifont causes vim to go from maximized mode to windowed mode

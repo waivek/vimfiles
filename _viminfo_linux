@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/viminfo
+~MSle0~/python
 
 # Last Substitute Search Pattern:
 ~MSle0&  *
@@ -20,12 +20,12 @@
 $ 
 
 # Command Line History (newest to oldest):
+:q
+|2,0,1738503539,,"q"
 :qa
 |2,0,1738479785,,"qa"
 :echo &viminfo
 |2,0,1738479776,,"echo &viminfo"
-:q
-|2,0,1738479771,,"q"
 :RunCreateCommand horizontal
 |2,0,1738196696,,"RunCreateCommand horizontal"
 :e!
@@ -11930,6 +11930,8 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/python
+|2,1,1738503533,47,"python"
 ?/viminfo
 |2,1,1738479373,47,"viminfo"
 ?/red
@@ -14580,8 +14582,6 @@ $
 |2,1,1722521125,47,"coc-range-sele"
 ?/Plug
 |2,1,1722521023,47,"Plug"
-?/python
-|2,1,1722513360,47,"python"
 ?/<C-p>
 |2,1,1722512953,47,"<C-p>"
 ?/<TAB>
@@ -18357,34 +18357,44 @@ $
 |3,0,36,0,1,0,1738479664,"vimfiles"
 
 # File marks:
-'0  50  0  ~/.vim/vimrc
-|4,48,50,0,1738479786,"~/.vim/vimrc"
-'1  36  0  ~/.vim/vimrc
-|4,49,36,0,1738479771,"~/.vim/vimrc"
-'2  36  0  ~/.vim/vimrc
-|4,50,36,0,1738479771,"~/.vim/vimrc"
-'3  1  0  ~/.vim/.vimspector.json
-|4,51,1,0,1738479618,"~/.vim/.vimspector.json"
-'4  1  0  ~/.vim/.vimspector.json
-|4,52,1,0,1738479618,"~/.vim/.vimspector.json"
-'5  1  0  ~/.vim/.vimspector.json
-|4,53,1,0,1738479618,"~/.vim/.vimspector.json"
-'6  1  0  ~/.vim/.vimspector.json
-|4,54,1,0,1738479618,"~/.vim/.vimspector.json"
-'7  40  39  ~/.vim/vimrc
-|4,55,40,39,1738479435,"~/.vim/vimrc"
-'8  40  39  ~/.vim/vimrc
-|4,56,40,39,1738479435,"~/.vim/vimrc"
-'9  37  39  ~/.vim/vimrc
-|4,57,37,39,1738479435,"~/.vim/vimrc"
+'0  314  0  ~/.vim/vimrc
+|4,48,314,0,1738503539,"~/.vim/vimrc"
+'1  50  0  ~/.vim/vimrc
+|4,49,50,0,1738479786,"~/.vim/vimrc"
+'2  50  0  ~/.vim/vimrc
+|4,50,50,0,1738479786,"~/.vim/vimrc"
+'3  36  0  ~/.vim/vimrc
+|4,51,36,0,1738479771,"~/.vim/vimrc"
+'4  36  0  ~/.vim/vimrc
+|4,52,36,0,1738479771,"~/.vim/vimrc"
+'5  36  0  ~/.vim/vimrc
+|4,53,36,0,1738479771,"~/.vim/vimrc"
+'6  36  0  ~/.vim/vimrc
+|4,54,36,0,1738479771,"~/.vim/vimrc"
+'7  1  0  ~/.vim/.vimspector.json
+|4,55,1,0,1738479618,"~/.vim/.vimspector.json"
+'8  1  0  ~/.vim/.vimspector.json
+|4,56,1,0,1738479618,"~/.vim/.vimspector.json"
+'9  1  0  ~/.vim/.vimspector.json
+|4,57,1,0,1738479618,"~/.vim/.vimspector.json"
 
 # Jumplist (newest first):
+-'  314  0  ~/.vim/vimrc
+|4,39,314,0,1738503539,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1738503533,"~/.vim/vimrc"
+-'  50  0  ~/.vim/vimrc
+|4,39,50,0,1738479786,"~/.vim/vimrc"
 -'  50  0  ~/.vim/vimrc
 |4,39,50,0,1738479786,"~/.vim/vimrc"
 -'  36  0  ~/.vim/vimrc
 |4,39,36,0,1738479771,"~/.vim/vimrc"
 -'  36  0  ~/.vim/vimrc
 |4,39,36,0,1738479771,"~/.vim/vimrc"
+-'  36  0  ~/.vim/vimrc
+|4,39,36,0,1738479771,"~/.vim/vimrc"
+-'  38  54  ~/.vim/vimrc
+|4,39,38,54,1738479665,"~/.vim/vimrc"
 -'  38  54  ~/.vim/vimrc
 |4,39,38,54,1738479665,"~/.vim/vimrc"
 -'  38  54  ~/.vim/vimrc
@@ -18397,6 +18407,12 @@ $
 |4,39,37,4,1738479644,"~/.vim/vimrc"
 -'  40  0  ~/.vim/vimrc
 |4,39,40,0,1738479644,"~/.vim/vimrc"
+-'  37  4  ~/.vim/vimrc
+|4,39,37,4,1738479644,"~/.vim/vimrc"
+-'  40  0  ~/.vim/vimrc
+|4,39,40,0,1738479644,"~/.vim/vimrc"
+-'  1259  0  ~/.vim/vimrc
+|4,39,1259,0,1738479621,"~/.vim/vimrc"
 -'  1259  0  ~/.vim/vimrc
 |4,39,1259,0,1738479621,"~/.vim/vimrc"
 -'  1259  0  ~/.vim/vimrc
@@ -18405,6 +18421,8 @@ $
 |4,39,1,0,1738479620,"~/.vim/vimrc"
 -'  1  0  ~/.vim/vimrc
 |4,39,1,0,1738479620,"~/.vim/vimrc"
+-'  1  0  ~/.vim/.vimspector.json
+|4,39,1,0,1738479618,"~/.vim/.vimspector.json"
 -'  1  0  ~/.vim/.vimspector.json
 |4,39,1,0,1738479618,"~/.vim/.vimspector.json"
 -'  1  0  ~/.vim/.vimspector.json
@@ -18423,6 +18441,8 @@ $
 |4,39,35,17,1738479376,"~/.vim/vimrc"
 -'  35  17  ~/.vim/vimrc
 |4,39,35,17,1738479376,"~/.vim/vimrc"
+-'  35  17  ~/.vim/vimrc
+|4,39,35,17,1738479376,"~/.vim/vimrc"
 -'  32  43  ~/.vim/vimrc
 |4,39,32,43,1738479375,"~/.vim/vimrc"
 -'  32  43  ~/.vim/vimrc
@@ -18431,6 +18451,14 @@ $
 |4,39,32,43,1738479375,"~/.vim/vimrc"
 -'  32  43  ~/.vim/vimrc
 |4,39,32,43,1738479375,"~/.vim/vimrc"
+-'  32  43  ~/.vim/vimrc
+|4,39,32,43,1738479375,"~/.vim/vimrc"
+-'  30  19  ~/.vim/vimrc
+|4,39,30,19,1738479374,"~/.vim/vimrc"
+-'  26  4  ~/.vim/vimrc
+|4,39,26,4,1738479374,"~/.vim/vimrc"
+-'  25  57  ~/.vim/vimrc
+|4,39,25,57,1738479374,"~/.vim/vimrc"
 -'  30  19  ~/.vim/vimrc
 |4,39,30,19,1738479374,"~/.vim/vimrc"
 -'  26  4  ~/.vim/vimrc
@@ -18469,6 +18497,8 @@ $
 |4,39,1,0,1738479350,"~/tooling/ssh-knowledge.txt"
 -'  1  0  ~/tooling/ssh-knowledge.txt
 |4,39,1,0,1738479350,"~/tooling/ssh-knowledge.txt"
+-'  1  0  ~/tooling/ssh-knowledge.txt
+|4,39,1,0,1738479350,"~/tooling/ssh-knowledge.txt"
 -'  48  0  ~/tooling/ssh-knowledge.txt
 |4,39,48,0,1738479346,"~/tooling/ssh-knowledge.txt"
 -'  48  0  ~/tooling/ssh-knowledge.txt
@@ -18479,6 +18509,8 @@ $
 |4,39,48,0,1738479346,"~/tooling/ssh-knowledge.txt"
 -'  48  0  ~/tooling/ssh-knowledge.txt
 |4,39,48,0,1738479346,"~/tooling/ssh-knowledge.txt"
+-'  48  0  ~/tooling/ssh-knowledge.txt
+|4,39,48,0,1738479346,"~/tooling/ssh-knowledge.txt"
 -'  1  0  /var/log/dmesg
 |4,39,1,0,1738266176,"/var/log/dmesg"
 -'  1  0  /var/log/dmesg
@@ -18493,6 +18525,10 @@ $
 |4,39,1,0,1738266176,"/var/log/dmesg"
 -'  1  0  /var/log/dmesg
 |4,39,1,0,1738266176,"/var/log/dmesg"
+-'  1  0  /var/log/dmesg
+|4,39,1,0,1738266176,"/var/log/dmesg"
+-'  152  14  ~/shopping/scaffold-and-validate.py
+|4,39,152,14,1738226172,"~/shopping/scaffold-and-validate.py"
 -'  152  14  ~/shopping/scaffold-and-validate.py
 |4,39,152,14,1738226172,"~/shopping/scaffold-and-validate.py"
 -'  152  14  ~/shopping/scaffold-and-validate.py
@@ -18525,6 +18561,8 @@ $
 |4,39,158,25,1738196987,"~/shopping/scaffold-and-validate.py"
 -'  158  25  ~/shopping/scaffold-and-validate.py
 |4,39,158,25,1738196987,"~/shopping/scaffold-and-validate.py"
+-'  158  25  ~/shopping/scaffold-and-validate.py
+|4,39,158,25,1738196987,"~/shopping/scaffold-and-validate.py"
 -'  146  40  ~/shopping/scaffold-and-validate.py
 |4,39,146,40,1738196946,"~/shopping/scaffold-and-validate.py"
 -'  146  40  ~/shopping/scaffold-and-validate.py
@@ -18541,53 +18579,17 @@ $
 |4,39,146,40,1738196946,"~/shopping/scaffold-and-validate.py"
 -'  146  40  ~/shopping/scaffold-and-validate.py
 |4,39,146,40,1738196946,"~/shopping/scaffold-and-validate.py"
--'  145  70  ~/shopping/scaffold-and-validate.py
-|4,39,145,70,1738196945,"~/shopping/scaffold-and-validate.py"
--'  145  70  ~/shopping/scaffold-and-validate.py
-|4,39,145,70,1738196945,"~/shopping/scaffold-and-validate.py"
--'  145  70  ~/shopping/scaffold-and-validate.py
-|4,39,145,70,1738196945,"~/shopping/scaffold-and-validate.py"
--'  145  70  ~/shopping/scaffold-and-validate.py
-|4,39,145,70,1738196945,"~/shopping/scaffold-and-validate.py"
--'  145  70  ~/shopping/scaffold-and-validate.py
-|4,39,145,70,1738196945,"~/shopping/scaffold-and-validate.py"
--'  145  70  ~/shopping/scaffold-and-validate.py
-|4,39,145,70,1738196945,"~/shopping/scaffold-and-validate.py"
--'  145  70  ~/shopping/scaffold-and-validate.py
-|4,39,145,70,1738196945,"~/shopping/scaffold-and-validate.py"
--'  145  70  ~/shopping/scaffold-and-validate.py
-|4,39,145,70,1738196945,"~/shopping/scaffold-and-validate.py"
--'  29  0  ~/shopping/schema-shopping.sql
-|4,39,29,0,1738196906,"~/shopping/schema-shopping.sql"
--'  29  0  ~/shopping/schema-shopping.sql
-|4,39,29,0,1738196906,"~/shopping/schema-shopping.sql"
--'  29  0  ~/shopping/schema-shopping.sql
-|4,39,29,0,1738196906,"~/shopping/schema-shopping.sql"
--'  29  0  ~/shopping/schema-shopping.sql
-|4,39,29,0,1738196906,"~/shopping/schema-shopping.sql"
--'  29  0  ~/shopping/schema-shopping.sql
-|4,39,29,0,1738196906,"~/shopping/schema-shopping.sql"
--'  29  0  ~/shopping/schema-shopping.sql
-|4,39,29,0,1738196906,"~/shopping/schema-shopping.sql"
--'  29  0  ~/shopping/schema-shopping.sql
-|4,39,29,0,1738196906,"~/shopping/schema-shopping.sql"
--'  29  0  ~/shopping/schema-shopping.sql
-|4,39,29,0,1738196906,"~/shopping/schema-shopping.sql"
--'  140  0  ~/shopping/scaffold-and-validate.py
-|4,39,140,0,1738196900,"~/shopping/scaffold-and-validate.py"
--'  140  0  ~/shopping/scaffold-and-validate.py
-|4,39,140,0,1738196900,"~/shopping/scaffold-and-validate.py"
 
 # Buffer list:
-%~/.vim/vimrc	50	0
+%~/.vim/vimrc	314	0
 
 # History of marks within files (newest to oldest):
 
 > ~/.vim/vimrc
-	*	1738479781	0
-	"	50	0
+	*	1738503538	0
+	"	314	0
 	^	41	9
-	.	37	0
+	.	316	0
 	+	1	41
 	+	1	44
 	+	1	40
@@ -18684,6 +18686,7 @@ $
 	+	40	0
 	+	41	0
 	+	37	0
+	+	316	0
 
 > ~/.vim/.vimspector.json
 	*	1738479617	0
