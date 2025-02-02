@@ -72,7 +72,6 @@ endfunction
 
 
 " Introducing Latency for startup but worth it to remove the lag when typing MRU
-let g:existing_oldfiles = v:null
 augroup UpdateOldfilesOnStartup
     au!
     au VimEnter * let g:existing_oldfiles = s:GetExistingOldFilesDictionaries()
@@ -90,7 +89,7 @@ function! s:OldFilesSource(glob="*", get_first_match=v:false)
     "
     " Primary use point is by wildcard for extensions and word boundaries
     let MinusOne = { s -> strpart(s, 0, len(s)-1) }
-    if !exists("g:existing_oldfiles") || g:existing_oldfiles == v:null
+    if !exists("g:existing_oldfiles")
         let g:existing_oldfiles = s:GetExistingOldFilesDictionaries()
     endif
 
