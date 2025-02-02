@@ -11,25 +11,41 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/g:exi
+~MSle0~/\t
 
 # Last Substitute Search Pattern:
 ~MSle0&  *
 
 # Last Substitute String:
-$ 
+$
 
 # Command Line History (newest to oldest):
+:q!
+|2,0,1738512514,,"q!"
+:qa
+|2,0,1738512511,,"qa"
+:%!jq
+|2,0,1738512504,,"%!jq"
+:qa!
+|2,0,1738506046,,"qa!"
+:RunCreateCommand full
+|2,0,1738506002,,"RunCreateCommand full"
+:RunCreateCommand horizontal
+|2,0,1738505996,,"RunCreateCommand horizontal"
+:e data/profile.log
+|2,0,1738505498,,"e data/profile.log"
+:e profile.py
+|2,0,1738505496,,"e profile.py"
+:Template
+|2,0,1738504840,,"Template"
+:term
+|2,0,1738504801,,"term"
 :q
 |2,0,1738503770,,"q"
 :MRU 
 |2,0,1738503768,,"MRU "
-:qa
-|2,0,1738479785,,"qa"
 :echo &viminfo
 |2,0,1738479776,,"echo &viminfo"
-:RunCreateCommand horizontal
-|2,0,1738196696,,"RunCreateCommand horizontal"
 :e!
 |2,0,1738196054,,"e!"
 :e
@@ -46,12 +62,8 @@ $
 |2,0,1738195097,,"e schema-shopping.sql"
 :bd
 |2,0,1738195078,,"bd"
-:q!
-|2,0,1738194818,,"q!"
 :CocRestart
 |2,0,1738194756,,"CocRestart"
-:Template
-|2,0,1738194740,,"Template"
 :Rename parse-schema.py
 |2,0,1738194736,,"Rename parse-schema.py"
 :e parse-schema.sql
@@ -160,8 +172,6 @@ $
 |2,0,1738156103,,".,$!jq"
 :set formatprg=jq
 |2,0,1738156101,,"set formatprg=jq"
-:%!jq
-|2,0,1738156096,,"%!jq"
 :.,$!jsonfmt
 |2,0,1738156085,,".,$!jsonfmt"
 :!jsonfmt
@@ -170,8 +180,6 @@ $
 |2,0,1738156028,,"jsonfmt"
 :set formatprg?
 |2,0,1738156025,,"set formatprg?"
-:qa!
-|2,0,1738156009,,"qa!"
 :h ale-json
 |2,0,1738155692,,"h ale-json"
 :Grep -g '*.txt' fi
@@ -278,8 +286,6 @@ $
 |2,0,1737570569,,"h fzf#run"
 :h fzf-vim
 |2,0,1737570528,,"h fzf-vim"
-:term
-|2,0,1737570480,,"term"
 :Grep '^\s*Capture'
 |2,0,1737570353,,"Grep '^\\s*Capture'"
 :Grep Capture
@@ -658,8 +664,6 @@ $
 |2,0,1735937764,,"set ft=todo"
 :Date
 |2,0,1735934541,,"Date"
-:RunCreateCommand full
-|2,0,1735930327,,"RunCreateCommand full"
 :!/bin/bash %
 |2,0,1735930277,,"!/bin/bash %"
 :!/bin/bash -c "source %"
@@ -11930,6 +11934,12 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/\t
+|2,1,1738505499,47,"\\t"
+?/strip
+|2,1,1738505389,47,"strip"
+? ^\s*$\n\s*$
+|2,1,1738505037,,"^\\s*$\\n\\s*$"
 ?/g:exi
 |2,1,1738503736,47,"g:exi"
 ?/python
@@ -11962,8 +11972,6 @@ $
 |2,1,1738181657,,"in \\zs[^:]\\+"
 ?/mage
 |2,1,1738181631,47,"mage"
-? ^\s*$\n\s*$
-|2,1,1738181546,,"^\\s*$\\n\\s*$"
 ?/copilot
 |2,1,1738180707,47,"copilot"
 ?/any
@@ -11982,8 +11990,6 @@ $
 |2,1,1738156168,47,"--int"
 ?/space
 |2,1,1738156153,47,"space"
-?/\t
-|2,1,1738156226,47,"\\t"
 ? @$
 |2,1,1738070160,,"@$"
 ??\a
@@ -12308,8 +12314,6 @@ $
 |2,1,1735909112,,"timer\\..*\\\"get_diff\\\""
 ?/\\n
 |2,1,1735908418,47,"\\\\n"
-?/strip
-|2,1,1735907840,47,"strip"
 ?/genai
 |2,1,1735907515,47,"genai"
 ?/confi
@@ -18255,38 +18259,40 @@ $
 
 # Registers:
 "0	CHAR	0
-	v:null
-|3,0,0,0,1,0,1738503753,"v:null"
-"1	LINE	0
-	let g:existing_oldfiles = []
-|3,0,1,1,1,0,1738503758,"let g:existing_oldfiles = []"
+	cmd_string)
+|3,0,0,0,1,0,1738505851,"cmd_string)"
+""1	LINE	0
+	        cmd_string
+|3,1,1,1,1,0,1738506036,"        cmd_string"
 "2	LINE	0
-	    " check if `$WSL_DISTRO_NAME` is set
-|3,0,2,1,1,0,1738479698,"    \" check if `$WSL_DISTRO_NAME` is set"
+	# run.vim: term python %
+|3,0,2,1,1,0,1738505999,"# run.vim: term python %"
 "3	LINE	0
-	
-|3,0,3,1,1,0,1738479669,""
+	            current_section[2].append(cmd)
+|3,0,3,1,1,0,1738505667,"            current_section[2].append(cmd)"
 "4	LINE	0
-	    if has
-|3,0,4,1,1,0,1738479643,"    if has"
+	            breakpoint()
+|3,0,4,1,1,0,1738505596,"            breakpoint()"
 "5	LINE	0
-	    #
-|3,0,5,1,1,0,1738479631,"    #"
+	        print
+|3,0,5,1,1,0,1738505292,"        print"
 "6	LINE	0
-	
-|3,0,6,1,1,0,1738196778,""
+	        print(f"count={count}, total={total}")
+	        for cmd in cmds:
+	            print(f"  {cmd}")
+|3,0,6,1,3,0,1738505233,"        print(f\"count={count}, total={total}\")","        for cmd in cmds:","            print(f\"  {cmd}\")"
 "7	LINE	0
-	
-|3,0,7,1,1,0,1738196773,""
+	    print(f"sections: {len(sections)}")
+|3,0,7,1,1,0,1738505221,"    print(f\"sections: {len(sections)}\")"
 "8	LINE	0
-	        print(markup(f"[bold green]OK[/] [bold magenta]{db_path}[/] schema matches [bold magenta]{schema_path}[/]"))
-|3,0,8,1,1,0,1738196764,"        print(markup(f\"[bold green]OK[/] [bold magenta]{db_path}[/] schema matches [bold magenta]{schema_path}[/]\"))"
-"9	LINE	0
 	
-|3,0,9,1,1,0,1738196693,""
+|3,0,8,1,1,0,1738505191,""
+"9	LINE	0
+	    print("Done!")
+|3,0,9,1,1,0,1738505189,"    print(\"Done!\")"
 "a	CHAR	0
 	nojkVnl>nO€ýa
-|3,0,10,0,1,0,1738479714,"nojkVnl>nO€ýa"
+|3,0,10,0,1,0,1738505824,"nojkVnl>nO€ýa"
 "i	CHAR	0
 	ado_up()jk:q!
 |3,0,18,0,1,0,1724200553,"ado_up()jk:q!"
@@ -18354,33 +18360,177 @@ $
 |<"        for line in res:","            print(line)","","def pretty_print_box(box):","    # box sample: [[[138.0, 36.0], [462.0, 36.0], [462.0, 77.0], [138.0, 77.0]]","    (top_left, top_right, bottom_right, bottom_left) = box","    (x1, y1), (x2, y2), (x3, y3), (x4, y4) = box","","    x_min = min(x1, x2, x3, x4)","    x_max = max(x1, x2, x3, x4)","    y_min = min(y1, y2, y3, y4)","    y_max = max(y1, y2, y3, y4)","","    # Validation checks",>86
 |<"    assert x_min < x_max, f\"Invalid x coordinates: min ({x_min}) >= max ({x_max})\"","    assert y_min < y_max, f\"Invalid y coordinates: min ({y_min}) >= max ({y_max})\"","    ","    # Additional geometric checks","    assert abs(y1 - y2) < (y_max - y_min), \"Top edge is not roughly horizontal\"","    assert abs(y3 - y4) < (y_max - y_min), \"Bottom edge is not roughly horizontal\"","    assert abs(x1 - x4) < (x_max - x_min), \"Left edge is not roughly vertical\"",>83
 |<"    assert abs(x2 - x3) < (x_max - x_min), \"Right edge is not roughly vertical\"","","    pretty_string_flat = {","        \"left\": x_min,","        \"right\": x_max,","        \"top\": y_min,","        \"bottom\": y_max,","        \"top_left\": (x1, y1),","        \"top_right\": (x2, y2),","        \"bottom_right\": (x3, y3),","        \"bottom_left\": (x4, y4),","    }","    ","    print(f\"{box} => {pretty_string_flat}\")",""
-""-	CHAR	0
+"-	CHAR	0
 	 
-|3,1,36,0,1,0,1738503765," "
+|3,0,36,0,1,0,1738505886," "
 
 # File marks:
-'0  92  36  ~/.vim/plugin/mru.vim
-|4,48,92,36,1738503766,"~/.vim/plugin/mru.vim"
-'1  92  36  ~/.vim/plugin/mru.vim
-|4,49,92,36,1738503766,"~/.vim/plugin/mru.vim"
-'2  314  0  ~/.vim/vimrc
-|4,50,314,0,1738503539,"~/.vim/vimrc"
-'3  314  0  ~/.vim/vimrc
-|4,51,314,0,1738503539,"~/.vim/vimrc"
-'4  314  0  ~/.vim/vimrc
-|4,52,314,0,1738503539,"~/.vim/vimrc"
-'5  314  0  ~/.vim/vimrc
-|4,53,314,0,1738503539,"~/.vim/vimrc"
-'6  50  0  ~/.vim/vimrc
-|4,54,50,0,1738479786,"~/.vim/vimrc"
-'7  50  0  ~/.vim/vimrc
-|4,55,50,0,1738479786,"~/.vim/vimrc"
-'8  50  0  ~/.vim/vimrc
-|4,56,50,0,1738479786,"~/.vim/vimrc"
-'9  50  0  ~/.vim/vimrc
-|4,57,50,0,1738479786,"~/.vim/vimrc"
+'0  23  0  ~/.config/uv/uv-receipt.json
+|4,48,23,0,1738512514,"~/.config/uv/uv-receipt.json"
+'1  41  8  ~/pyscripts/tmp-vimrc-analyze.py
+|4,49,41,8,1738506047,"~/pyscripts/tmp-vimrc-analyze.py"
+'2  41  8  ~/pyscripts/tmp-vimrc-analyze.py
+|4,50,41,8,1738506047,"~/pyscripts/tmp-vimrc-analyze.py"
+'3  92  36  ~/.vim/plugin/mru.vim
+|4,51,92,36,1738503766,"~/.vim/plugin/mru.vim"
+'4  92  36  ~/.vim/plugin/mru.vim
+|4,52,92,36,1738503766,"~/.vim/plugin/mru.vim"
+'5  92  36  ~/.vim/plugin/mru.vim
+|4,53,92,36,1738503766,"~/.vim/plugin/mru.vim"
+'6  92  36  ~/.vim/plugin/mru.vim
+|4,54,92,36,1738503766,"~/.vim/plugin/mru.vim"
+'7  92  36  ~/.vim/plugin/mru.vim
+|4,55,92,36,1738503766,"~/.vim/plugin/mru.vim"
+'8  92  36  ~/.vim/plugin/mru.vim
+|4,56,92,36,1738503766,"~/.vim/plugin/mru.vim"
+'9  92  36  ~/.vim/plugin/mru.vim
+|4,57,92,36,1738503766,"~/.vim/plugin/mru.vim"
 
 # Jumplist (newest first):
+-'  23  0  ~/.config/uv/uv-receipt.json
+|4,39,23,0,1738512514,"~/.config/uv/uv-receipt.json"
+-'  1  0  ~/.config/uv/uv-receipt.json
+|4,39,1,0,1738512501,"~/.config/uv/uv-receipt.json"
+-'  41  8  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,41,8,1738506047,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  41  8  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,41,8,1738506047,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  48  0  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,48,0,1738506004,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  48  0  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,48,0,1738506004,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  47  8  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,47,8,1738506002,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  47  8  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,47,8,1738506002,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  49  0  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,49,0,1738505997,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  49  0  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,49,0,1738505997,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  33  50  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,33,50,1738505993,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  33  50  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,33,50,1738505993,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  40  58  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,40,58,1738505923,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  40  58  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,40,58,1738505923,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  1  0  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,1,0,1738505912,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  1  0  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,1,0,1738505912,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  39  57  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,39,57,1738505904,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  39  57  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,39,57,1738505904,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  42  24  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,42,24,1738505891,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  42  24  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,42,24,1738505891,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  41  24  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,41,24,1738505891,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  40  32  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,40,32,1738505851,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  37  29  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,37,29,1738505824,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  36  29  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,36,29,1738505824,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  37  29  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,37,29,1738505824,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  36  29  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,36,29,1738505824,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  6  0  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,6,0,1738505790,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  6  0  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,6,0,1738505790,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  6  0  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,6,0,1738505790,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  28  45  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,28,45,1738505727,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  28  45  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,28,45,1738505727,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  28  45  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,28,45,1738505727,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  29  64  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,29,64,1738505707,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  29  64  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,29,64,1738505707,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  29  64  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,29,64,1738505707,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  32  42  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,32,42,1738505649,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  32  42  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,32,42,1738505649,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  32  42  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,32,42,1738505649,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  24  23  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,24,23,1738505544,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  24  23  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,24,23,1738505544,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  24  23  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,24,23,1738505544,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  11  34  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,11,34,1738505439,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  11  34  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,11,34,1738505439,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  11  34  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,11,34,1738505439,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  43  23  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,43,23,1738505228,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  43  23  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,43,23,1738505228,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  42  23  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,42,23,1738505228,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  34  38  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,34,38,1738505214,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  34  38  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,34,38,1738505214,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  33  38  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,33,38,1738505214,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  27  43  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,27,43,1738505209,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  27  43  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,27,43,1738505209,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  27  43  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,27,43,1738505209,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  44  0  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,44,0,1738505172,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  44  0  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,44,0,1738505172,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  43  0  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,43,0,1738505172,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  26  46  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,26,46,1738505157,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  26  46  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,26,46,1738505157,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  26  46  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,26,46,1738505157,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  17  4  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,17,4,1738505038,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  17  4  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,17,4,1738505038,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  17  4  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,17,4,1738505038,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  45  0  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,45,0,1738505036,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  45  0  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,45,0,1738505036,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  44  0  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,44,0,1738505036,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  8  28  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,8,28,1738504851,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  8  28  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,8,28,1738504851,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  8  28  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,8,28,1738504851,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  47  0  ~/pyscripts/tmp-vimrc-analyze.py
+|4,39,47,0,1738504774,"~/pyscripts/tmp-vimrc-analyze.py"
+-'  92  36  ~/.vim/plugin/mru.vim
+|4,39,92,36,1738503766,"~/.vim/plugin/mru.vim"
+-'  92  36  ~/.vim/plugin/mru.vim
+|4,39,92,36,1738503766,"~/.vim/plugin/mru.vim"
+-'  92  36  ~/.vim/plugin/mru.vim
+|4,39,92,36,1738503766,"~/.vim/plugin/mru.vim"
 -'  92  36  ~/.vim/plugin/mru.vim
 |4,39,92,36,1738503766,"~/.vim/plugin/mru.vim"
 -'  92  36  ~/.vim/plugin/mru.vim
@@ -18389,10 +18539,28 @@ $
 |4,39,75,27,1738503753,"~/.vim/plugin/mru.vim"
 -'  75  27  ~/.vim/plugin/mru.vim
 |4,39,75,27,1738503753,"~/.vim/plugin/mru.vim"
+-'  75  27  ~/.vim/plugin/mru.vim
+|4,39,75,27,1738503753,"~/.vim/plugin/mru.vim"
+-'  75  27  ~/.vim/plugin/mru.vim
+|4,39,75,27,1738503753,"~/.vim/plugin/mru.vim"
+-'  75  27  ~/.vim/plugin/mru.vim
+|4,39,75,27,1738503753,"~/.vim/plugin/mru.vim"
 -'  1  0  ~/.vim/plugin/mru.vim
 |4,39,1,0,1738503736,"~/.vim/plugin/mru.vim"
 -'  1  0  ~/.vim/plugin/mru.vim
 |4,39,1,0,1738503736,"~/.vim/plugin/mru.vim"
+-'  1  0  ~/.vim/plugin/mru.vim
+|4,39,1,0,1738503736,"~/.vim/plugin/mru.vim"
+-'  1  0  ~/.vim/plugin/mru.vim
+|4,39,1,0,1738503736,"~/.vim/plugin/mru.vim"
+-'  1  0  ~/.vim/plugin/mru.vim
+|4,39,1,0,1738503736,"~/.vim/plugin/mru.vim"
+-'  314  0  ~/.vim/vimrc
+|4,39,314,0,1738503539,"~/.vim/vimrc"
+-'  314  0  ~/.vim/vimrc
+|4,39,314,0,1738503539,"~/.vim/vimrc"
+-'  314  0  ~/.vim/vimrc
+|4,39,314,0,1738503539,"~/.vim/vimrc"
 -'  314  0  ~/.vim/vimrc
 |4,39,314,0,1738503539,"~/.vim/vimrc"
 -'  314  0  ~/.vim/vimrc
@@ -18405,6 +18573,10 @@ $
 |4,39,1,0,1738503533,"~/.vim/vimrc"
 -'  1  0  ~/.vim/vimrc
 |4,39,1,0,1738503533,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1738503533,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1738503533,"~/.vim/vimrc"
 -'  50  0  ~/.vim/vimrc
 |4,39,50,0,1738479786,"~/.vim/vimrc"
 -'  50  0  ~/.vim/vimrc
@@ -18413,177 +18585,113 @@ $
 |4,39,50,0,1738479786,"~/.vim/vimrc"
 -'  50  0  ~/.vim/vimrc
 |4,39,50,0,1738479786,"~/.vim/vimrc"
--'  36  0  ~/.vim/vimrc
-|4,39,36,0,1738479771,"~/.vim/vimrc"
--'  36  0  ~/.vim/vimrc
-|4,39,36,0,1738479771,"~/.vim/vimrc"
--'  36  0  ~/.vim/vimrc
-|4,39,36,0,1738479771,"~/.vim/vimrc"
--'  36  0  ~/.vim/vimrc
-|4,39,36,0,1738479771,"~/.vim/vimrc"
--'  36  0  ~/.vim/vimrc
-|4,39,36,0,1738479771,"~/.vim/vimrc"
--'  38  54  ~/.vim/vimrc
-|4,39,38,54,1738479665,"~/.vim/vimrc"
--'  38  54  ~/.vim/vimrc
-|4,39,38,54,1738479665,"~/.vim/vimrc"
--'  38  54  ~/.vim/vimrc
-|4,39,38,54,1738479665,"~/.vim/vimrc"
--'  38  54  ~/.vim/vimrc
-|4,39,38,54,1738479665,"~/.vim/vimrc"
--'  38  54  ~/.vim/vimrc
-|4,39,38,54,1738479665,"~/.vim/vimrc"
--'  37  4  ~/.vim/vimrc
-|4,39,37,4,1738479644,"~/.vim/vimrc"
--'  40  0  ~/.vim/vimrc
-|4,39,40,0,1738479644,"~/.vim/vimrc"
--'  37  4  ~/.vim/vimrc
-|4,39,37,4,1738479644,"~/.vim/vimrc"
--'  40  0  ~/.vim/vimrc
-|4,39,40,0,1738479644,"~/.vim/vimrc"
--'  37  4  ~/.vim/vimrc
-|4,39,37,4,1738479644,"~/.vim/vimrc"
--'  40  0  ~/.vim/vimrc
-|4,39,40,0,1738479644,"~/.vim/vimrc"
--'  37  4  ~/.vim/vimrc
-|4,39,37,4,1738479644,"~/.vim/vimrc"
--'  40  0  ~/.vim/vimrc
-|4,39,40,0,1738479644,"~/.vim/vimrc"
--'  37  4  ~/.vim/vimrc
-|4,39,37,4,1738479644,"~/.vim/vimrc"
--'  40  0  ~/.vim/vimrc
-|4,39,40,0,1738479644,"~/.vim/vimrc"
--'  1259  0  ~/.vim/vimrc
-|4,39,1259,0,1738479621,"~/.vim/vimrc"
--'  1259  0  ~/.vim/vimrc
-|4,39,1259,0,1738479621,"~/.vim/vimrc"
--'  1259  0  ~/.vim/vimrc
-|4,39,1259,0,1738479621,"~/.vim/vimrc"
--'  1259  0  ~/.vim/vimrc
-|4,39,1259,0,1738479621,"~/.vim/vimrc"
--'  1259  0  ~/.vim/vimrc
-|4,39,1259,0,1738479621,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1738479620,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1738479620,"~/.vim/vimrc"
--'  1  0  ~/.vim/.vimspector.json
-|4,39,1,0,1738479618,"~/.vim/.vimspector.json"
--'  1  0  ~/.vim/.vimspector.json
-|4,39,1,0,1738479618,"~/.vim/.vimspector.json"
--'  1  0  ~/.vim/.vimspector.json
-|4,39,1,0,1738479618,"~/.vim/.vimspector.json"
--'  1  0  ~/.vim/.vimspector.json
-|4,39,1,0,1738479618,"~/.vim/.vimspector.json"
--'  1  0  ~/.vim/.vimspector.json
-|4,39,1,0,1738479618,"~/.vim/.vimspector.json"
--'  1  0  ~/.vim/.vimspector.json
-|4,39,1,0,1738479618,"~/.vim/.vimspector.json"
--'  37  39  ~/.vim/vimrc
-|4,39,37,39,1738479435,"~/.vim/vimrc"
--'  37  39  ~/.vim/vimrc
-|4,39,37,39,1738479435,"~/.vim/vimrc"
--'  35  17  ~/.vim/vimrc
-|4,39,35,17,1738479376,"~/.vim/vimrc"
--'  35  17  ~/.vim/vimrc
-|4,39,35,17,1738479376,"~/.vim/vimrc"
--'  35  17  ~/.vim/vimrc
-|4,39,35,17,1738479376,"~/.vim/vimrc"
--'  35  17  ~/.vim/vimrc
-|4,39,35,17,1738479376,"~/.vim/vimrc"
--'  35  17  ~/.vim/vimrc
-|4,39,35,17,1738479376,"~/.vim/vimrc"
--'  35  17  ~/.vim/vimrc
-|4,39,35,17,1738479376,"~/.vim/vimrc"
--'  35  17  ~/.vim/vimrc
-|4,39,35,17,1738479376,"~/.vim/vimrc"
--'  32  43  ~/.vim/vimrc
-|4,39,32,43,1738479375,"~/.vim/vimrc"
--'  32  43  ~/.vim/vimrc
-|4,39,32,43,1738479375,"~/.vim/vimrc"
--'  32  43  ~/.vim/vimrc
-|4,39,32,43,1738479375,"~/.vim/vimrc"
--'  32  43  ~/.vim/vimrc
-|4,39,32,43,1738479375,"~/.vim/vimrc"
--'  32  43  ~/.vim/vimrc
-|4,39,32,43,1738479375,"~/.vim/vimrc"
--'  32  43  ~/.vim/vimrc
-|4,39,32,43,1738479375,"~/.vim/vimrc"
--'  32  43  ~/.vim/vimrc
-|4,39,32,43,1738479375,"~/.vim/vimrc"
--'  30  19  ~/.vim/vimrc
-|4,39,30,19,1738479374,"~/.vim/vimrc"
--'  26  4  ~/.vim/vimrc
-|4,39,26,4,1738479374,"~/.vim/vimrc"
--'  25  57  ~/.vim/vimrc
-|4,39,25,57,1738479374,"~/.vim/vimrc"
--'  30  19  ~/.vim/vimrc
-|4,39,30,19,1738479374,"~/.vim/vimrc"
--'  26  4  ~/.vim/vimrc
-|4,39,26,4,1738479374,"~/.vim/vimrc"
--'  25  57  ~/.vim/vimrc
-|4,39,25,57,1738479374,"~/.vim/vimrc"
--'  30  19  ~/.vim/vimrc
-|4,39,30,19,1738479374,"~/.vim/vimrc"
--'  26  4  ~/.vim/vimrc
-|4,39,26,4,1738479374,"~/.vim/vimrc"
--'  25  57  ~/.vim/vimrc
-|4,39,25,57,1738479374,"~/.vim/vimrc"
--'  30  19  ~/.vim/vimrc
-|4,39,30,19,1738479374,"~/.vim/vimrc"
--'  26  4  ~/.vim/vimrc
-|4,39,26,4,1738479374,"~/.vim/vimrc"
--'  25  57  ~/.vim/vimrc
-|4,39,25,57,1738479374,"~/.vim/vimrc"
--'  30  19  ~/.vim/vimrc
-|4,39,30,19,1738479374,"~/.vim/vimrc"
--'  26  4  ~/.vim/vimrc
-|4,39,26,4,1738479374,"~/.vim/vimrc"
--'  25  57  ~/.vim/vimrc
-|4,39,25,57,1738479374,"~/.vim/vimrc"
--'  30  19  ~/.vim/vimrc
-|4,39,30,19,1738479374,"~/.vim/vimrc"
--'  26  4  ~/.vim/vimrc
-|4,39,26,4,1738479374,"~/.vim/vimrc"
--'  25  57  ~/.vim/vimrc
-|4,39,25,57,1738479374,"~/.vim/vimrc"
--'  30  19  ~/.vim/vimrc
-|4,39,30,19,1738479374,"~/.vim/vimrc"
--'  26  4  ~/.vim/vimrc
-|4,39,26,4,1738479374,"~/.vim/vimrc"
--'  25  57  ~/.vim/vimrc
-|4,39,25,57,1738479374,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1738479373,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1738479373,"~/.vim/vimrc"
--'  1  0  ~/tooling/ssh-knowledge.txt
-|4,39,1,0,1738479350,"~/tooling/ssh-knowledge.txt"
--'  1  0  ~/tooling/ssh-knowledge.txt
-|4,39,1,0,1738479350,"~/tooling/ssh-knowledge.txt"
--'  1  0  ~/tooling/ssh-knowledge.txt
-|4,39,1,0,1738479350,"~/tooling/ssh-knowledge.txt"
--'  1  0  ~/tooling/ssh-knowledge.txt
-|4,39,1,0,1738479350,"~/tooling/ssh-knowledge.txt"
--'  1  0  ~/tooling/ssh-knowledge.txt
-|4,39,1,0,1738479350,"~/tooling/ssh-knowledge.txt"
--'  1  0  ~/tooling/ssh-knowledge.txt
-|4,39,1,0,1738479350,"~/tooling/ssh-knowledge.txt"
--'  1  0  ~/tooling/ssh-knowledge.txt
-|4,39,1,0,1738479350,"~/tooling/ssh-knowledge.txt"
--'  1  0  ~/tooling/ssh-knowledge.txt
-|4,39,1,0,1738479350,"~/tooling/ssh-knowledge.txt"
--'  48  0  ~/tooling/ssh-knowledge.txt
-|4,39,48,0,1738479346,"~/tooling/ssh-knowledge.txt"
--'  48  0  ~/tooling/ssh-knowledge.txt
-|4,39,48,0,1738479346,"~/tooling/ssh-knowledge.txt"
--'  48  0  ~/tooling/ssh-knowledge.txt
-|4,39,48,0,1738479346,"~/tooling/ssh-knowledge.txt"
+-'  50  0  ~/.vim/vimrc
+|4,39,50,0,1738479786,"~/.vim/vimrc"
 
 # Buffer list:
-%~/.vim/plugin/mru.vim	92	36
+%~/.config/uv/uv-receipt.json	23	0
 
 # History of marks within files (newest to oldest):
+
+> ~/.config/uv/uv-receipt.json
+	*	1738512513	0
+	"	23	0
+	.	1	0
+	+	1	0
+
+> ~/pyscripts/tmp-vimrc-analyze.py
+	*	1738506036	0
+	"	41	8
+	.	41	0
+	+	49	0
+	+	8	28
+	+	9	25
+	+	10	29
+	+	11	44
+	+	45	0
+	+	12	12
+	+	13	29
+	+	14	25
+	+	45	0
+	+	4	8
+	+	17	21
+	+	16	5
+	+	15	13
+	+	17	14
+	+	17	0
+	+	15	12
+	+	17	44
+	+	45	0
+	+	17	12
+	+	44	16
+	+	45	0
+	+	45	28
+	+	45	15
+	+	45	0
+	+	44	0
+	+	19	25
+	+	20	0
+	+	21	33
+	+	23	17
+	+	44	0
+	+	26	48
+	+	30	13
+	+	32	22
+	+	44	27
+	+	44	0
+	+	26	46
+	+	27	41
+	+	32	42
+	+	44	0
+	+	43	0
+	+	31	45
+	+	43	0
+	+	18	16
+	+	27	43
+	+	34	21
+	+	36	29
+	+	37	37
+	+	38	36
+	+	41	24
+	+	5	26
+	+	41	40
+	+	37	14
+	+	41	47
+	+	41	27
+	+	41	37
+	+	11	34
+	+	37	0
+	+	41	24
+	+	24	0
+	+	28	45
+	+	27	0
+	+	29	64
+	+	28	46
+	+	37	36
+	+	39	38
+	+	5	34
+	+	40	46
+	+	37	15
+	+	40	56
+	+	41	20
+	+	42	13
+	+	40	58
+	+	41	0
+	+	33	50
+	+	49	0
+	+	48	0
+	+	41	0
+
+> ~/pyscripts/data/profile.log
+	*	1738505512	0
+	"	249	32
+	^	1	29
+	.	1	0
+	+	1	0
+
+> ~/pyscripts/profile.py
+	*	1738505496	0
+	"	1	0
 
 > ~/.vim/plugin/mru.vim
 	*	1738503765	0
