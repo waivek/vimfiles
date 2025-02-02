@@ -34,7 +34,11 @@ endif
 
 " Linux-specific viminfo file
 if has('unix') || has('linux')
-    let &viminfo = &viminfo . '~/.vim/_viminfo_linux'
+    if exists('$WSL_DISTRO_NAME')
+        let &viminfo = &viminfo . '~/.vim/_viminfo_wsl'
+    else
+        let &viminfo = &viminfo . '~/.vim/_viminfo_linux'
+    endif
 endif
 
 filetype indent plugin on | syntax on 

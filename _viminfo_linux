@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/\C\<INDENT\>
+~MSle0~/viminfo
 
 # Last Substitute Search Pattern:
 ~MSle0&  *
@@ -21,9 +21,11 @@ $
 
 # Command Line History (newest to oldest):
 :qa
-|2,0,1738266469,,"qa"
+|2,0,1738479785,,"qa"
+:echo &viminfo
+|2,0,1738479776,,"echo &viminfo"
 :q
-|2,0,1738196704,,"q"
+|2,0,1738479771,,"q"
 :RunCreateCommand horizontal
 |2,0,1738196696,,"RunCreateCommand horizontal"
 :e!
@@ -11928,6 +11930,8 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/viminfo
+|2,1,1738479373,47,"viminfo"
 ?/red
 |2,1,1738196042,47,"red"
 ?/Not pre
@@ -12284,8 +12288,6 @@ $
 |2,1,1735936500,47,"get_diff"
 ?/bold
 |2,1,1735936407,47,"bold"
-?/viminfo
-|2,1,1735936073,47,"viminfo"
 ?/1730556532
 |2,1,1735935305,47,"1730556532"
 ?/17020
@@ -18250,50 +18252,39 @@ $
 |2,4,1693311567,,"cont"
 
 # Registers:
-""0	CHAR	0
-	(incomplete)
-|3,1,0,0,1,0,1738196986,"(incomplete)"
+"0	CHAR	0
+	vimfiles
+|3,0,0,0,1,0,1738479665,"vimfiles"
 "1	LINE	0
-	
-|3,0,1,1,1,0,1738196778,""
+	    " check if `$WSL_DISTRO_NAME` is set
+|3,0,1,1,1,0,1738479698,"    \" check if `$WSL_DISTRO_NAME` is set"
 "2	LINE	0
 	
-|3,0,2,1,1,0,1738196773,""
+|3,0,2,1,1,0,1738479669,""
 "3	LINE	0
-	        print(markup(f"[bold green]OK[/] [bold magenta]{db_path}[/] schema matches [bold magenta]{schema_path}[/]"))
-|3,0,3,1,1,0,1738196764,"        print(markup(f\"[bold green]OK[/] [bold magenta]{db_path}[/] schema matches [bold magenta]{schema_path}[/]\"))"
+	    if has
+|3,0,3,1,1,0,1738479643,"    if has"
 "4	LINE	0
-	
-|3,0,4,1,1,0,1738196693,""
+	    #
+|3,0,4,1,1,0,1738479631,"    #"
 "5	LINE	0
-	    # Rest of the detailed differences...
-|3,0,5,1,1,0,1738195933,"    # Rest of the detailed differences..."
-"6	LINE	0
-	    table = [
-	            { "name": markup("[bold red]China[/]"), "population": 1439323776 },
-	            { "name": "India", "population": 1380004385 },
-	            { "name": "USA", "population": 331002651 },
-	            ]
-	    ic(table)
-	    name   population
 	
-	    China  1439323776
-	    India  1380004385
-	    USA     331002651
-|3,0,6,1,11,0,1738195919,"    table = [","            { \"name\": markup(\"[bold red]China[/]\"), \"population\": 1439323776 },","            { \"name\": \"India\", \"population\": 1380004385 },","            { \"name\": \"USA\", \"population\": 331002651 },","            ]","    ic(table)","    name   population","","    China  1439323776","    India  1380004385","    USA     331002651"
+|3,0,5,1,1,0,1738196778,""
+"6	LINE	0
+	
+|3,0,6,1,1,0,1738196773,""
 "7	LINE	0
-	    table = [
-	            { "name": markup("[red]China[/]"), "population": 1439323776 },
-|3,0,7,1,2,0,1738195885,"    table = [","            { \"name\": markup(\"[red]China[/]\"), \"population\": 1439323776 },"
+	        print(markup(f"[bold green]OK[/] [bold magenta]{db_path}[/] schema matches [bold magenta]{schema_path}[/]"))
+|3,0,7,1,1,0,1738196764,"        print(markup(f\"[bold green]OK[/] [bold magenta]{db_path}[/] schema matches [bold magenta]{schema_path}[/]\"))"
 "8	LINE	0
-	    ic
-|3,0,8,1,1,0,1738195842,"    ic"
+	
+|3,0,8,1,1,0,1738196693,""
 "9	LINE	0
-	    ic({ "dog": "1", "dog":})
-|3,0,9,1,1,0,1738195841,"    ic({ \"dog\": \"1\", \"dog\":})"
-"a	CHAR	0
+	    # Rest of the detailed differences...
+|3,0,9,1,1,0,1738195933,"    # Rest of the detailed differences..."
+""a	CHAR	0
 	nojkVnl>nO€ýa
-|3,0,10,0,1,0,1738196096,"nojkVnl>nO€ýa"
+|3,1,10,0,1,0,1738479714,"nojkVnl>nO€ýa"
 "i	CHAR	0
 	ado_up()jk:q!
 |3,0,18,0,1,0,1724200553,"ado_up()jk:q!"
@@ -18362,36 +18353,156 @@ $
 |<"    assert x_min < x_max, f\"Invalid x coordinates: min ({x_min}) >= max ({x_max})\"","    assert y_min < y_max, f\"Invalid y coordinates: min ({y_min}) >= max ({y_max})\"","    ","    # Additional geometric checks","    assert abs(y1 - y2) < (y_max - y_min), \"Top edge is not roughly horizontal\"","    assert abs(y3 - y4) < (y_max - y_min), \"Bottom edge is not roughly horizontal\"","    assert abs(x1 - x4) < (x_max - x_min), \"Left edge is not roughly vertical\"",>83
 |<"    assert abs(x2 - x3) < (x_max - x_min), \"Right edge is not roughly vertical\"","","    pretty_string_flat = {","        \"left\": x_min,","        \"right\": x_max,","        \"top\": y_min,","        \"bottom\": y_max,","        \"top_left\": (x1, y1),","        \"top_right\": (x2, y2),","        \"bottom_right\": (x3, y3),","        \"bottom_left\": (x4, y4),","    }","    ","    print(f\"{box} => {pretty_string_flat}\")",""
 "-	CHAR	0
-	(incomplete)
-|3,0,36,0,1,0,1738196952,"(incomplete)"
+	vimfiles
+|3,0,36,0,1,0,1738479664,"vimfiles"
 
 # File marks:
-'0  1  0  /var/log/dmesg
-|4,48,1,0,1738266176,"/var/log/dmesg"
-'1  1  0  /var/log/dmesg
-|4,49,1,0,1738266176,"/var/log/dmesg"
-'2  152  14  ~/shopping/scaffold-and-validate.py
-|4,50,152,14,1738226172,"~/shopping/scaffold-and-validate.py"
-'3  152  14  ~/shopping/scaffold-and-validate.py
-|4,51,152,14,1738226172,"~/shopping/scaffold-and-validate.py"
-'4  152  14  ~/shopping/scaffold-and-validate.py
-|4,52,152,14,1738226172,"~/shopping/scaffold-and-validate.py"
-'5  152  14  ~/shopping/scaffold-and-validate.py
-|4,53,152,14,1738226172,"~/shopping/scaffold-and-validate.py"
-'6  31  0  ~/shopping/schema-shopping.sql
-|4,54,31,0,1738196704,"~/shopping/schema-shopping.sql"
-'7  30  0  ~/shopping/schema-shopping.sql
-|4,55,30,0,1738196704,"~/shopping/schema-shopping.sql"
-'8  31  0  ~/shopping/schema-shopping.sql
-|4,56,31,0,1738196704,"~/shopping/schema-shopping.sql"
-'9  30  0  ~/shopping/schema-shopping.sql
-|4,57,30,0,1738196704,"~/shopping/schema-shopping.sql"
+'0  50  0  ~/.vim/vimrc
+|4,48,50,0,1738479786,"~/.vim/vimrc"
+'1  36  0  ~/.vim/vimrc
+|4,49,36,0,1738479771,"~/.vim/vimrc"
+'2  36  0  ~/.vim/vimrc
+|4,50,36,0,1738479771,"~/.vim/vimrc"
+'3  1  0  ~/.vim/.vimspector.json
+|4,51,1,0,1738479618,"~/.vim/.vimspector.json"
+'4  1  0  ~/.vim/.vimspector.json
+|4,52,1,0,1738479618,"~/.vim/.vimspector.json"
+'5  1  0  ~/.vim/.vimspector.json
+|4,53,1,0,1738479618,"~/.vim/.vimspector.json"
+'6  1  0  ~/.vim/.vimspector.json
+|4,54,1,0,1738479618,"~/.vim/.vimspector.json"
+'7  40  39  ~/.vim/vimrc
+|4,55,40,39,1738479435,"~/.vim/vimrc"
+'8  40  39  ~/.vim/vimrc
+|4,56,40,39,1738479435,"~/.vim/vimrc"
+'9  37  39  ~/.vim/vimrc
+|4,57,37,39,1738479435,"~/.vim/vimrc"
 
 # Jumplist (newest first):
+-'  50  0  ~/.vim/vimrc
+|4,39,50,0,1738479786,"~/.vim/vimrc"
+-'  36  0  ~/.vim/vimrc
+|4,39,36,0,1738479771,"~/.vim/vimrc"
+-'  36  0  ~/.vim/vimrc
+|4,39,36,0,1738479771,"~/.vim/vimrc"
+-'  38  54  ~/.vim/vimrc
+|4,39,38,54,1738479665,"~/.vim/vimrc"
+-'  38  54  ~/.vim/vimrc
+|4,39,38,54,1738479665,"~/.vim/vimrc"
+-'  37  4  ~/.vim/vimrc
+|4,39,37,4,1738479644,"~/.vim/vimrc"
+-'  40  0  ~/.vim/vimrc
+|4,39,40,0,1738479644,"~/.vim/vimrc"
+-'  37  4  ~/.vim/vimrc
+|4,39,37,4,1738479644,"~/.vim/vimrc"
+-'  40  0  ~/.vim/vimrc
+|4,39,40,0,1738479644,"~/.vim/vimrc"
+-'  1259  0  ~/.vim/vimrc
+|4,39,1259,0,1738479621,"~/.vim/vimrc"
+-'  1259  0  ~/.vim/vimrc
+|4,39,1259,0,1738479621,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1738479620,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1738479620,"~/.vim/vimrc"
+-'  1  0  ~/.vim/.vimspector.json
+|4,39,1,0,1738479618,"~/.vim/.vimspector.json"
+-'  1  0  ~/.vim/.vimspector.json
+|4,39,1,0,1738479618,"~/.vim/.vimspector.json"
+-'  1  0  ~/.vim/.vimspector.json
+|4,39,1,0,1738479618,"~/.vim/.vimspector.json"
+-'  37  39  ~/.vim/vimrc
+|4,39,37,39,1738479435,"~/.vim/vimrc"
+-'  37  39  ~/.vim/vimrc
+|4,39,37,39,1738479435,"~/.vim/vimrc"
+-'  35  17  ~/.vim/vimrc
+|4,39,35,17,1738479376,"~/.vim/vimrc"
+-'  35  17  ~/.vim/vimrc
+|4,39,35,17,1738479376,"~/.vim/vimrc"
+-'  35  17  ~/.vim/vimrc
+|4,39,35,17,1738479376,"~/.vim/vimrc"
+-'  35  17  ~/.vim/vimrc
+|4,39,35,17,1738479376,"~/.vim/vimrc"
+-'  32  43  ~/.vim/vimrc
+|4,39,32,43,1738479375,"~/.vim/vimrc"
+-'  32  43  ~/.vim/vimrc
+|4,39,32,43,1738479375,"~/.vim/vimrc"
+-'  32  43  ~/.vim/vimrc
+|4,39,32,43,1738479375,"~/.vim/vimrc"
+-'  32  43  ~/.vim/vimrc
+|4,39,32,43,1738479375,"~/.vim/vimrc"
+-'  30  19  ~/.vim/vimrc
+|4,39,30,19,1738479374,"~/.vim/vimrc"
+-'  26  4  ~/.vim/vimrc
+|4,39,26,4,1738479374,"~/.vim/vimrc"
+-'  25  57  ~/.vim/vimrc
+|4,39,25,57,1738479374,"~/.vim/vimrc"
+-'  30  19  ~/.vim/vimrc
+|4,39,30,19,1738479374,"~/.vim/vimrc"
+-'  26  4  ~/.vim/vimrc
+|4,39,26,4,1738479374,"~/.vim/vimrc"
+-'  25  57  ~/.vim/vimrc
+|4,39,25,57,1738479374,"~/.vim/vimrc"
+-'  30  19  ~/.vim/vimrc
+|4,39,30,19,1738479374,"~/.vim/vimrc"
+-'  26  4  ~/.vim/vimrc
+|4,39,26,4,1738479374,"~/.vim/vimrc"
+-'  25  57  ~/.vim/vimrc
+|4,39,25,57,1738479374,"~/.vim/vimrc"
+-'  30  19  ~/.vim/vimrc
+|4,39,30,19,1738479374,"~/.vim/vimrc"
+-'  26  4  ~/.vim/vimrc
+|4,39,26,4,1738479374,"~/.vim/vimrc"
+-'  25  57  ~/.vim/vimrc
+|4,39,25,57,1738479374,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1738479373,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1738479373,"~/.vim/vimrc"
+-'  1  0  ~/tooling/ssh-knowledge.txt
+|4,39,1,0,1738479350,"~/tooling/ssh-knowledge.txt"
+-'  1  0  ~/tooling/ssh-knowledge.txt
+|4,39,1,0,1738479350,"~/tooling/ssh-knowledge.txt"
+-'  1  0  ~/tooling/ssh-knowledge.txt
+|4,39,1,0,1738479350,"~/tooling/ssh-knowledge.txt"
+-'  1  0  ~/tooling/ssh-knowledge.txt
+|4,39,1,0,1738479350,"~/tooling/ssh-knowledge.txt"
+-'  1  0  ~/tooling/ssh-knowledge.txt
+|4,39,1,0,1738479350,"~/tooling/ssh-knowledge.txt"
+-'  48  0  ~/tooling/ssh-knowledge.txt
+|4,39,48,0,1738479346,"~/tooling/ssh-knowledge.txt"
+-'  48  0  ~/tooling/ssh-knowledge.txt
+|4,39,48,0,1738479346,"~/tooling/ssh-knowledge.txt"
+-'  48  0  ~/tooling/ssh-knowledge.txt
+|4,39,48,0,1738479346,"~/tooling/ssh-knowledge.txt"
+-'  48  0  ~/tooling/ssh-knowledge.txt
+|4,39,48,0,1738479346,"~/tooling/ssh-knowledge.txt"
+-'  48  0  ~/tooling/ssh-knowledge.txt
+|4,39,48,0,1738479346,"~/tooling/ssh-knowledge.txt"
 -'  1  0  /var/log/dmesg
 |4,39,1,0,1738266176,"/var/log/dmesg"
 -'  1  0  /var/log/dmesg
 |4,39,1,0,1738266176,"/var/log/dmesg"
+-'  1  0  /var/log/dmesg
+|4,39,1,0,1738266176,"/var/log/dmesg"
+-'  1  0  /var/log/dmesg
+|4,39,1,0,1738266176,"/var/log/dmesg"
+-'  1  0  /var/log/dmesg
+|4,39,1,0,1738266176,"/var/log/dmesg"
+-'  1  0  /var/log/dmesg
+|4,39,1,0,1738266176,"/var/log/dmesg"
+-'  1  0  /var/log/dmesg
+|4,39,1,0,1738266176,"/var/log/dmesg"
+-'  152  14  ~/shopping/scaffold-and-validate.py
+|4,39,152,14,1738226172,"~/shopping/scaffold-and-validate.py"
+-'  152  14  ~/shopping/scaffold-and-validate.py
+|4,39,152,14,1738226172,"~/shopping/scaffold-and-validate.py"
+-'  152  14  ~/shopping/scaffold-and-validate.py
+|4,39,152,14,1738226172,"~/shopping/scaffold-and-validate.py"
+-'  152  14  ~/shopping/scaffold-and-validate.py
+|4,39,152,14,1738226172,"~/shopping/scaffold-and-validate.py"
+-'  152  14  ~/shopping/scaffold-and-validate.py
+|4,39,152,14,1738226172,"~/shopping/scaffold-and-validate.py"
 -'  152  14  ~/shopping/scaffold-and-validate.py
 |4,39,152,14,1738226172,"~/shopping/scaffold-and-validate.py"
 -'  152  14  ~/shopping/scaffold-and-validate.py
@@ -18404,6 +18515,26 @@ $
 |4,39,158,25,1738196987,"~/shopping/scaffold-and-validate.py"
 -'  158  25  ~/shopping/scaffold-and-validate.py
 |4,39,158,25,1738196987,"~/shopping/scaffold-and-validate.py"
+-'  158  25  ~/shopping/scaffold-and-validate.py
+|4,39,158,25,1738196987,"~/shopping/scaffold-and-validate.py"
+-'  158  25  ~/shopping/scaffold-and-validate.py
+|4,39,158,25,1738196987,"~/shopping/scaffold-and-validate.py"
+-'  158  25  ~/shopping/scaffold-and-validate.py
+|4,39,158,25,1738196987,"~/shopping/scaffold-and-validate.py"
+-'  158  25  ~/shopping/scaffold-and-validate.py
+|4,39,158,25,1738196987,"~/shopping/scaffold-and-validate.py"
+-'  158  25  ~/shopping/scaffold-and-validate.py
+|4,39,158,25,1738196987,"~/shopping/scaffold-and-validate.py"
+-'  146  40  ~/shopping/scaffold-and-validate.py
+|4,39,146,40,1738196946,"~/shopping/scaffold-and-validate.py"
+-'  146  40  ~/shopping/scaffold-and-validate.py
+|4,39,146,40,1738196946,"~/shopping/scaffold-and-validate.py"
+-'  146  40  ~/shopping/scaffold-and-validate.py
+|4,39,146,40,1738196946,"~/shopping/scaffold-and-validate.py"
+-'  146  40  ~/shopping/scaffold-and-validate.py
+|4,39,146,40,1738196946,"~/shopping/scaffold-and-validate.py"
+-'  146  40  ~/shopping/scaffold-and-validate.py
+|4,39,146,40,1738196946,"~/shopping/scaffold-and-validate.py"
 -'  146  40  ~/shopping/scaffold-and-validate.py
 |4,39,146,40,1738196946,"~/shopping/scaffold-and-validate.py"
 -'  146  40  ~/shopping/scaffold-and-validate.py
@@ -18416,6 +18547,26 @@ $
 |4,39,145,70,1738196945,"~/shopping/scaffold-and-validate.py"
 -'  145  70  ~/shopping/scaffold-and-validate.py
 |4,39,145,70,1738196945,"~/shopping/scaffold-and-validate.py"
+-'  145  70  ~/shopping/scaffold-and-validate.py
+|4,39,145,70,1738196945,"~/shopping/scaffold-and-validate.py"
+-'  145  70  ~/shopping/scaffold-and-validate.py
+|4,39,145,70,1738196945,"~/shopping/scaffold-and-validate.py"
+-'  145  70  ~/shopping/scaffold-and-validate.py
+|4,39,145,70,1738196945,"~/shopping/scaffold-and-validate.py"
+-'  145  70  ~/shopping/scaffold-and-validate.py
+|4,39,145,70,1738196945,"~/shopping/scaffold-and-validate.py"
+-'  145  70  ~/shopping/scaffold-and-validate.py
+|4,39,145,70,1738196945,"~/shopping/scaffold-and-validate.py"
+-'  29  0  ~/shopping/schema-shopping.sql
+|4,39,29,0,1738196906,"~/shopping/schema-shopping.sql"
+-'  29  0  ~/shopping/schema-shopping.sql
+|4,39,29,0,1738196906,"~/shopping/schema-shopping.sql"
+-'  29  0  ~/shopping/schema-shopping.sql
+|4,39,29,0,1738196906,"~/shopping/schema-shopping.sql"
+-'  29  0  ~/shopping/schema-shopping.sql
+|4,39,29,0,1738196906,"~/shopping/schema-shopping.sql"
+-'  29  0  ~/shopping/schema-shopping.sql
+|4,39,29,0,1738196906,"~/shopping/schema-shopping.sql"
 -'  29  0  ~/shopping/schema-shopping.sql
 |4,39,29,0,1738196906,"~/shopping/schema-shopping.sql"
 -'  29  0  ~/shopping/schema-shopping.sql
@@ -18426,171 +18577,236 @@ $
 |4,39,140,0,1738196900,"~/shopping/scaffold-and-validate.py"
 -'  140  0  ~/shopping/scaffold-and-validate.py
 |4,39,140,0,1738196900,"~/shopping/scaffold-and-validate.py"
--'  140  0  ~/shopping/scaffold-and-validate.py
-|4,39,140,0,1738196900,"~/shopping/scaffold-and-validate.py"
--'  130  0  ~/shopping/scaffold-and-validate.py
-|4,39,130,0,1738196880,"~/shopping/scaffold-and-validate.py"
--'  130  0  ~/shopping/scaffold-and-validate.py
-|4,39,130,0,1738196880,"~/shopping/scaffold-and-validate.py"
--'  130  0  ~/shopping/scaffold-and-validate.py
-|4,39,130,0,1738196880,"~/shopping/scaffold-and-validate.py"
--'  129  0  ~/shopping/scaffold-and-validate.py
-|4,39,129,0,1738196773,"~/shopping/scaffold-and-validate.py"
--'  129  0  ~/shopping/scaffold-and-validate.py
-|4,39,129,0,1738196773,"~/shopping/scaffold-and-validate.py"
--'  129  0  ~/shopping/scaffold-and-validate.py
-|4,39,129,0,1738196773,"~/shopping/scaffold-and-validate.py"
--'  28  4  ~/shopping/schema-shopping.sql
-|4,39,28,4,1738196740,"~/shopping/schema-shopping.sql"
--'  28  4  ~/shopping/schema-shopping.sql
-|4,39,28,4,1738196740,"~/shopping/schema-shopping.sql"
--'  28  4  ~/shopping/schema-shopping.sql
-|4,39,28,4,1738196740,"~/shopping/schema-shopping.sql"
--'  1  0  ~/shopping/scaffold-and-validate.py
-|4,39,1,0,1738196738,"~/shopping/scaffold-and-validate.py"
--'  1  0  ~/shopping/scaffold-and-validate.py
-|4,39,1,0,1738196738,"~/shopping/scaffold-and-validate.py"
--'  1  0  ~/shopping/scaffold-and-validate.py
-|4,39,1,0,1738196738,"~/shopping/scaffold-and-validate.py"
--'  1  0  ~/shopping/schema-shopping.sql
-|4,39,1,0,1738196710,"~/shopping/schema-shopping.sql"
--'  1  0  ~/shopping/schema-shopping.sql
-|4,39,1,0,1738196710,"~/shopping/schema-shopping.sql"
--'  1  0  ~/shopping/schema-shopping.sql
-|4,39,1,0,1738196710,"~/shopping/schema-shopping.sql"
--'  31  0  ~/shopping/schema-shopping.sql
-|4,39,31,0,1738196704,"~/shopping/schema-shopping.sql"
--'  30  0  ~/shopping/schema-shopping.sql
-|4,39,30,0,1738196704,"~/shopping/schema-shopping.sql"
--'  31  0  ~/shopping/schema-shopping.sql
-|4,39,31,0,1738196704,"~/shopping/schema-shopping.sql"
--'  30  0  ~/shopping/schema-shopping.sql
-|4,39,30,0,1738196704,"~/shopping/schema-shopping.sql"
--'  31  0  ~/shopping/schema-shopping.sql
-|4,39,31,0,1738196704,"~/shopping/schema-shopping.sql"
--'  30  0  ~/shopping/schema-shopping.sql
-|4,39,30,0,1738196704,"~/shopping/schema-shopping.sql"
--'  1  0  ~/shopping/schema-shopping.sql
-|4,39,1,0,1738196687,"~/shopping/schema-shopping.sql"
--'  27  33  ~/shopping/schema-shopping.sql
-|4,39,27,33,1738196492,"~/shopping/schema-shopping.sql"
--'  27  33  ~/shopping/schema-shopping.sql
-|4,39,27,33,1738196492,"~/shopping/schema-shopping.sql"
--'  27  33  ~/shopping/schema-shopping.sql
-|4,39,27,33,1738196492,"~/shopping/schema-shopping.sql"
--'  27  33  ~/shopping/schema-shopping.sql
-|4,39,27,33,1738196492,"~/shopping/schema-shopping.sql"
--'  27  33  ~/shopping/schema-shopping.sql
-|4,39,27,33,1738196492,"~/shopping/schema-shopping.sql"
--'  25  4  ~/shopping/scaffold-and-validate.py
-|4,39,25,4,1738196429,"~/shopping/scaffold-and-validate.py"
--'  25  4  ~/shopping/scaffold-and-validate.py
-|4,39,25,4,1738196429,"~/shopping/scaffold-and-validate.py"
--'  25  4  ~/shopping/scaffold-and-validate.py
-|4,39,25,4,1738196429,"~/shopping/scaffold-and-validate.py"
--'  25  4  ~/shopping/scaffold-and-validate.py
-|4,39,25,4,1738196429,"~/shopping/scaffold-and-validate.py"
--'  25  4  ~/shopping/scaffold-and-validate.py
-|4,39,25,4,1738196429,"~/shopping/scaffold-and-validate.py"
--'  18  20  ~/shopping/scaffold-and-validate.py
-|4,39,18,20,1738196215,"~/shopping/scaffold-and-validate.py"
--'  18  20  ~/shopping/scaffold-and-validate.py
-|4,39,18,20,1738196215,"~/shopping/scaffold-and-validate.py"
--'  18  20  ~/shopping/scaffold-and-validate.py
-|4,39,18,20,1738196215,"~/shopping/scaffold-and-validate.py"
--'  18  20  ~/shopping/scaffold-and-validate.py
-|4,39,18,20,1738196215,"~/shopping/scaffold-and-validate.py"
--'  18  20  ~/shopping/scaffold-and-validate.py
-|4,39,18,20,1738196215,"~/shopping/scaffold-and-validate.py"
--'  98  19  ~/shopping/scaffold-and-validate.py
-|4,39,98,19,1738196169,"~/shopping/scaffold-and-validate.py"
--'  98  19  ~/shopping/scaffold-and-validate.py
-|4,39,98,19,1738196169,"~/shopping/scaffold-and-validate.py"
--'  98  19  ~/shopping/scaffold-and-validate.py
-|4,39,98,19,1738196169,"~/shopping/scaffold-and-validate.py"
--'  98  19  ~/shopping/scaffold-and-validate.py
-|4,39,98,19,1738196169,"~/shopping/scaffold-and-validate.py"
--'  98  19  ~/shopping/scaffold-and-validate.py
-|4,39,98,19,1738196169,"~/shopping/scaffold-and-validate.py"
--'  97  20  ~/shopping/scaffold-and-validate.py
-|4,39,97,20,1738196154,"~/shopping/scaffold-and-validate.py"
--'  97  20  ~/shopping/scaffold-and-validate.py
-|4,39,97,20,1738196154,"~/shopping/scaffold-and-validate.py"
--'  97  20  ~/shopping/scaffold-and-validate.py
-|4,39,97,20,1738196154,"~/shopping/scaffold-and-validate.py"
--'  97  20  ~/shopping/scaffold-and-validate.py
-|4,39,97,20,1738196154,"~/shopping/scaffold-and-validate.py"
--'  97  20  ~/shopping/scaffold-and-validate.py
-|4,39,97,20,1738196154,"~/shopping/scaffold-and-validate.py"
--'  96  148  ~/shopping/scaffold-and-validate.py
-|4,39,96,148,1738196102,"~/shopping/scaffold-and-validate.py"
--'  96  148  ~/shopping/scaffold-and-validate.py
-|4,39,96,148,1738196102,"~/shopping/scaffold-and-validate.py"
--'  96  148  ~/shopping/scaffold-and-validate.py
-|4,39,96,148,1738196102,"~/shopping/scaffold-and-validate.py"
--'  96  148  ~/shopping/scaffold-and-validate.py
-|4,39,96,148,1738196102,"~/shopping/scaffold-and-validate.py"
--'  96  148  ~/shopping/scaffold-and-validate.py
-|4,39,96,148,1738196102,"~/shopping/scaffold-and-validate.py"
--'  101  35  ~/shopping/scaffold-and-validate.py
-|4,39,101,35,1738196097,"~/shopping/scaffold-and-validate.py"
--'  101  35  ~/shopping/scaffold-and-validate.py
-|4,39,101,35,1738196097,"~/shopping/scaffold-and-validate.py"
--'  101  35  ~/shopping/scaffold-and-validate.py
-|4,39,101,35,1738196097,"~/shopping/scaffold-and-validate.py"
--'  101  35  ~/shopping/scaffold-and-validate.py
-|4,39,101,35,1738196097,"~/shopping/scaffold-and-validate.py"
--'  101  35  ~/shopping/scaffold-and-validate.py
-|4,39,101,35,1738196097,"~/shopping/scaffold-and-validate.py"
--'  53  34  ~/shopping/scaffold-and-validate.py
-|4,39,53,34,1738196063,"~/shopping/scaffold-and-validate.py"
--'  53  34  ~/shopping/scaffold-and-validate.py
-|4,39,53,34,1738196063,"~/shopping/scaffold-and-validate.py"
--'  53  34  ~/shopping/scaffold-and-validate.py
-|4,39,53,34,1738196063,"~/shopping/scaffold-and-validate.py"
--'  53  34  ~/shopping/scaffold-and-validate.py
-|4,39,53,34,1738196063,"~/shopping/scaffold-and-validate.py"
--'  53  34  ~/shopping/scaffold-and-validate.py
-|4,39,53,34,1738196063,"~/shopping/scaffold-and-validate.py"
--'  65  38  ~/shopping/scaffold-and-validate.py
-|4,39,65,38,1738196045,"~/shopping/scaffold-and-validate.py"
--'  113  29  ~/shopping/scaffold-and-validate.py
-|4,39,113,29,1738196045,"~/shopping/scaffold-and-validate.py"
--'  65  38  ~/shopping/scaffold-and-validate.py
-|4,39,65,38,1738196045,"~/shopping/scaffold-and-validate.py"
--'  113  29  ~/shopping/scaffold-and-validate.py
-|4,39,113,29,1738196045,"~/shopping/scaffold-and-validate.py"
--'  65  38  ~/shopping/scaffold-and-validate.py
-|4,39,65,38,1738196045,"~/shopping/scaffold-and-validate.py"
--'  113  29  ~/shopping/scaffold-and-validate.py
-|4,39,113,29,1738196045,"~/shopping/scaffold-and-validate.py"
--'  65  38  ~/shopping/scaffold-and-validate.py
-|4,39,65,38,1738196045,"~/shopping/scaffold-and-validate.py"
--'  113  29  ~/shopping/scaffold-and-validate.py
-|4,39,113,29,1738196045,"~/shopping/scaffold-and-validate.py"
--'  65  38  ~/shopping/scaffold-and-validate.py
-|4,39,65,38,1738196045,"~/shopping/scaffold-and-validate.py"
--'  113  29  ~/shopping/scaffold-and-validate.py
-|4,39,113,29,1738196045,"~/shopping/scaffold-and-validate.py"
--'  67  4  ~/shopping/scaffold-and-validate.py
-|4,39,67,4,1738196042,"~/shopping/scaffold-and-validate.py"
--'  67  4  ~/shopping/scaffold-and-validate.py
-|4,39,67,4,1738196042,"~/shopping/scaffold-and-validate.py"
--'  67  4  ~/shopping/scaffold-and-validate.py
-|4,39,67,4,1738196042,"~/shopping/scaffold-and-validate.py"
--'  67  4  ~/shopping/scaffold-and-validate.py
-|4,39,67,4,1738196042,"~/shopping/scaffold-and-validate.py"
--'  67  4  ~/shopping/scaffold-and-validate.py
-|4,39,67,4,1738196042,"~/shopping/scaffold-and-validate.py"
--'  76  0  ~/shopping/scaffold-and-validate.py
-|4,39,76,0,1738196034,"~/shopping/scaffold-and-validate.py"
--'  76  0  ~/shopping/scaffold-and-validate.py
-|4,39,76,0,1738196034,"~/shopping/scaffold-and-validate.py"
 
 # Buffer list:
-%/var/log/dmesg	1	0
+%~/.vim/vimrc	50	0
 
 # History of marks within files (newest to oldest):
+
+> ~/.vim/vimrc
+	*	1738479781	0
+	"	50	0
+	^	41	9
+	.	37	0
+	+	1	41
+	+	1	44
+	+	1	40
+	+	1	28
+	+	1	0
+	+	1	11
+	+	1	18
+	+	1	43
+	+	1	64
+	+	1	54
+	+	1	0
+	+	1	31
+	+	1	0
+	+	1	6
+	+	1	0
+	+	1	1
+	+	1	0
+	+	1	80
+	+	1	75
+	+	1	0
+	+	1	52
+	+	1	41
+	+	1	0
+	+	1	26
+	+	1	0
+	+	1	22
+	+	1	25
+	+	1	0
+	+	1	57
+	+	1	59
+	+	1	55
+	+	1	0
+	+	1	25
+	+	1	1
+	+	1	0
+	+	1	24
+	+	1	0
+	+	1	12
+	+	1	0
+	+	1	49
+	+	1	0
+	+	1	13
+	+	1	0
+	+	1	16
+	+	1	0
+	+	1	25
+	+	1	3
+	+	1	5
+	+	1	16
+	+	1	0
+	+	1	16
+	+	1	0
+	+	1	5
+	+	1	3
+	+	1	0
+	+	1	4
+	+	1	0
+	+	1	40
+	+	1	36
+	+	1	0
+	+	1	26
+	+	1	9
+	+	1	0
+	+	1	31
+	+	1	4
+	+	1	30
+	+	1	4
+	+	1	0
+	+	1	5
+	+	1	8
+	+	1	29
+	+	1	33
+	+	1	1
+	+	1	21
+	+	1	20
+	+	1	1
+	+	1	0
+	+	126	0
+	+	430	0
+	+	1152	0
+	+	578	5
+	+	96	0
+	+	46	0
+	+	96	25
+	+	96	21
+	+	96	1
+	+	66	33
+	+	96	0
+	+	47	0
+	+	40	0
+	+	37	40
+	+	37	6
+	+	38	40
+	+	40	0
+	+	41	0
+	+	37	0
+
+> ~/.vim/.vimspector.json
+	*	1738479617	0
+	"	1	0
+	.	13	0
+	+	36	16
+	+	13	9
+	+	13	12
+	+	13	0
+	+	4	0
+	+	13	24
+	+	13	0
+	+	13	29
+	+	13	0
+	+	13	33
+	+	13	30
+	+	13	32
+	+	13	0
+
+> ~/tooling/ssh-knowledge.txt
+	*	1738479347	0
+	"	1	0
+	^	14	26
+	.	14	25
+	+	39	11
+	+	39	0
+	+	24	18
+	+	26	0
+	+	25	0
+	+	39	77
+	+	39	67
+	+	41	50
+	+	49	0
+	+	30	4
+	+	35	5
+	+	35	28
+	+	30	79
+	+	39	4
+	+	35	85
+	+	39	0
+	+	35	0
+	+	29	0
+	+	30	12
+	+	29	0
+	+	30	0
+	+	35	0
+	+	42	33
+	+	48	22
+	+	48	29
+	+	48	28
+	+	48	43
+	+	48	0
+	+	42	62
+	+	44	4
+	+	48	0
+	+	43	16
+	+	47	6
+	+	43	8
+	+	31	40
+	+	27	0
+	+	35	0
+	+	34	46
+	+	39	0
+	+	35	0
+	+	41	0
+	+	35	0
+	+	39	0
+	+	35	0
+	+	39	0
+	+	36	42
+	+	35	0
+	+	35	17
+	+	39	17
+	+	34	17
+	+	32	0
+	+	35	0
+	+	39	0
+	+	35	0
+	+	37	0
+	+	36	132
+	+	34	4
+	+	35	4
+	+	37	4
+	+	38	4
+	+	39	4
+	+	33	37
+	+	40	0
+	+	33	13
+	+	40	0
+	+	33	83
+	+	40	81
+	+	33	24
+	+	40	22
+	+	20	75
+	+	24	0
+	+	29	0
+	+	28	76
+	+	49	379
+	+	49	0
+	+	16	0
+	+	19	0
+	+	16	0
+	+	17	75
+	+	17	78
+	+	15	0
+	+	1	15
+	+	5	30
+	+	6	34
+	+	7	19
+	+	7	0
+	+	4	0
+	+	6	116
+	+	5	84
+	+	4	22
+	+	10	43
+	+	11	71
+	+	12	25
+	+	13	44
+	+	14	58
+	+	15	0
+	+	14	0
+	+	15	0
+	+	14	25
 
 > ~/shopping/scaffold-and-validate.py
 	*	1738197005	0
@@ -18929,101 +19145,6 @@ $
 	+	16	11
 	+	16	0
 	+	15	0
-
-> ~/.vim/vimrc
-	*	1738180935	0
-	"	1	0
-	^	92	0
-	.	43	0
-	+	1	41
-	+	1	44
-	+	1	40
-	+	1	28
-	+	1	0
-	+	1	11
-	+	1	18
-	+	1	43
-	+	1	64
-	+	1	54
-	+	1	0
-	+	1	31
-	+	1	0
-	+	1	6
-	+	1	0
-	+	1	1
-	+	1	0
-	+	1	80
-	+	1	75
-	+	1	0
-	+	1	52
-	+	1	41
-	+	1	0
-	+	1	26
-	+	1	0
-	+	1	22
-	+	1	25
-	+	1	0
-	+	1	57
-	+	1	59
-	+	1	55
-	+	1	0
-	+	1	25
-	+	1	1
-	+	1	0
-	+	1	24
-	+	1	0
-	+	1	12
-	+	1	0
-	+	1	49
-	+	1	0
-	+	1	13
-	+	1	0
-	+	1	16
-	+	1	0
-	+	1	25
-	+	1	3
-	+	1	5
-	+	1	16
-	+	1	0
-	+	1	16
-	+	1	0
-	+	1	5
-	+	1	3
-	+	1	0
-	+	1	4
-	+	1	0
-	+	1	40
-	+	1	36
-	+	1	0
-	+	1	26
-	+	1	9
-	+	1	0
-	+	1	31
-	+	1	4
-	+	1	30
-	+	1	4
-	+	1	0
-	+	1	5
-	+	1	8
-	+	1	29
-	+	1	33
-	+	1	1
-	+	1	21
-	+	1	20
-	+	1	1
-	+	1	0
-	+	122	0
-	+	426	0
-	+	1148	0
-	+	574	5
-	+	92	0
-	+	42	0
-	+	92	25
-	+	92	21
-	+	92	1
-	+	62	33
-	+	92	0
-	+	43	0
 
 > ~/.vim/.vimrc
 	*	1738180848	0
@@ -25365,111 +25486,6 @@ $
 > scp://vivek@128.140.63.20/home/vivek/minimal.bash
 	*	1735226942	0
 	"	1	0
-
-> ~/tooling/ssh-knowledge.txt
-	*	1735224920	0
-	"	14	60
-	^	14	26
-	.	14	25
-	+	39	11
-	+	39	0
-	+	24	18
-	+	26	0
-	+	25	0
-	+	39	77
-	+	39	67
-	+	41	50
-	+	49	0
-	+	30	4
-	+	35	5
-	+	35	28
-	+	30	79
-	+	39	4
-	+	35	85
-	+	39	0
-	+	35	0
-	+	29	0
-	+	30	12
-	+	29	0
-	+	30	0
-	+	35	0
-	+	42	33
-	+	48	22
-	+	48	29
-	+	48	28
-	+	48	43
-	+	48	0
-	+	42	62
-	+	44	4
-	+	48	0
-	+	43	16
-	+	47	6
-	+	43	8
-	+	31	40
-	+	27	0
-	+	35	0
-	+	34	46
-	+	39	0
-	+	35	0
-	+	41	0
-	+	35	0
-	+	39	0
-	+	35	0
-	+	39	0
-	+	36	42
-	+	35	0
-	+	35	17
-	+	39	17
-	+	34	17
-	+	32	0
-	+	35	0
-	+	39	0
-	+	35	0
-	+	37	0
-	+	36	132
-	+	34	4
-	+	35	4
-	+	37	4
-	+	38	4
-	+	39	4
-	+	33	37
-	+	40	0
-	+	33	13
-	+	40	0
-	+	33	83
-	+	40	81
-	+	33	24
-	+	40	22
-	+	20	75
-	+	24	0
-	+	29	0
-	+	28	76
-	+	49	379
-	+	49	0
-	+	16	0
-	+	19	0
-	+	16	0
-	+	17	75
-	+	17	78
-	+	15	0
-	+	1	15
-	+	5	30
-	+	6	34
-	+	7	19
-	+	7	0
-	+	4	0
-	+	6	116
-	+	5	84
-	+	4	22
-	+	10	43
-	+	11	71
-	+	12	25
-	+	13	44
-	+	14	58
-	+	15	0
-	+	14	0
-	+	15	0
-	+	14	25
 
 > ~/tmp/minimal.bash
 	*	1735221351	0
@@ -44626,24 +44642,6 @@ $
 	+	13	56
 	+	5	0
 	+	4	0
-
-> ~/.vim/.vimspector.json
-	*	1722513216	0
-	"	1	0
-	.	13	0
-	+	36	16
-	+	13	9
-	+	13	12
-	+	13	0
-	+	4	0
-	+	13	24
-	+	13	0
-	+	13	29
-	+	13	0
-	+	13	33
-	+	13	30
-	+	13	32
-	+	13	0
 
 > ~/.vim/plugin/test-command-fzf-print.vim
 	*	1722513048	0
