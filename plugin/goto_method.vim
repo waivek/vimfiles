@@ -100,6 +100,7 @@ au BufRead vimrc nnoremap  <expr> <buffer> gm <SID>SearchVimFunction()
 au BufRead *.py nnoremap  <expr> <buffer> gm <SID>SearchPythonFunction()
 au BufRead *.js,*.html nnoremap  <expr> <buffer> gm <SID>SearchJavascriptFunction()
 au BufRead *.man nnoremap  <expr> <buffer> gm <SID>SearchManPageFunction()
+au FileType man nnoremap  <expr> <buffer> gm <SID>SearchManPageFunction()
 au BufRead ~/vimfiles/performance/*.txt nnoremap  <expr> <buffer> gm <SID>SearchVimProfileFunction()
 au BufRead builtin.txt nnoremap <expr> <buffer> gm <SID>SearchEvalFunction()
 

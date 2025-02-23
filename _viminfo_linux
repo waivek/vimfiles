@@ -11,59 +11,189 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/\t
+~MSle0~/url_validity
 
 # Last Substitute Search Pattern:
-~MSle0&  *
+~MSle0&py$
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
-:q!
-|2,0,1738512514,,"q!"
+:q
+|2,0,1740318680,,"q"
 :qa
-|2,0,1738512511,,"qa"
+|2,0,1740317501,,"qa"
+:e workflow.txt
+|2,0,1740105787,,"e workflow.txt"
+:bd!
+|2,0,1740242714,,"bd!"
+:Template
+|2,0,1740215704,,"Template"
+:e setup.fish
+|2,0,1740212834,,"e setup.fish"
+:e env.bash
+|2,0,1740212812,,"e env.bash"
+:e .
+|2,0,1740212810,,"e ."
+:qa!
+|2,0,1740105656,,"qa!"
+:enew
+|2,0,1740104618,,"enew"
+:q!
+|2,0,1740104275,,"q!"
+:RunCreateCommand full
+|2,0,1740103843,,"RunCreateCommand full"
+:e data/videos/
+|2,0,1740103747,,"e data/videos/"
+:e pflix_download_pages_html.py
+|2,0,1740103322,,"e pflix_download_pages_html.py"
+:e ~/.vim/templates/template.py
+|2,0,1740103070,,"e ~/.vim/templates/template.py"
+: ;
+|2,0,1740102801,," ;"
+:CocRestart
+|2,0,1740102741,,"CocRestart"
+:e requirements.txt
+|2,0,1740102729,,"e requirements.txt"
+:Rename pflix_download_videos_html.py
+|2,0,1740102604,,"Rename pflix_download_videos_html.py"
+:e pflix_download_p
+|2,0,1740102596,,"e pflix_download_p"
+:e pflix_videos.py
+|2,0,1740102590,,"e pflix_videos.py"
+:b!# | bd! #
+|2,0,1740101648,,"b!# | bd! #"
+:e pflix_populate_db.py
+|2,0,1740100716,,"e pflix_populate_db.py"
+:Rename pflix_videos.py
+|2,0,1740100585,,"Rename pflix_videos.py"
+:e pflix_schema.sql
+|2,0,1740100558,,"e pflix_schema.sql"
+:e sche
+|2,0,1740100556,,"e sche"
+:e pflix_tags.py
+|2,0,1740100418,,"e pflix_tags.py"
+:Tab /->
+|2,0,1740100386,,"Tab /->"
+:e pflix_scrape.py
+|2,0,1740100318,,"e pflix_scrape.py"
+:v/py$/d
+|2,0,1740100279,,"v/py$/d"
+:v/py$/
+|2,0,1740100276,,"v/py$/"
+:e box/db_insert_unique.py
+|2,0,1740098360,,"e box/db_insert_unique.py"
+:next
+|2,0,1740098226,,"next"
+:bd schema.sql
+|2,0,1740021920,,"bd schema.sql"
+:e pflix-api.py
+|2,0,1740021687,,"e pflix-api.py"
+:e sch
+|2,0,1740021684,,"e sch"
+:e schema.sql
+|2,0,1740021681,,"e schema.sql"
+:e
+|2,0,1740020377,,"e"
+:pwd
+|2,0,1740020344,,"pwd"
+:e models/model_video.py
+|2,0,1740020203,,"e models/model_video.py"
+:bd
+|2,0,1740018846,,"bd"
+:e pflix_scrape_page.py
+|2,0,1740018622,,"e pflix_scrape_page.py"
+:Enumerate
+|2,0,1740018403,,"Enumerate"
+:45
+|2,0,1740014811,,"45"
+:RunCreateCommand horizontal
+|2,0,1740014140,,"RunCreateCommand horizontal"
+:e pflix
+|2,0,1740013482,,"e pflix"
+:redraw!
+|2,0,1740013225,,"redraw!"
+:redraw
+|2,0,1740013223,,"redraw"
+:.,.+1!
+|2,0,1740013217,,".,.+1!"
+:e data/urls.json
+|2,0,1740013169,,"e data/urls.json"
+:cn
+|2,0,1740012886,,"cn"
+:grep -g '*.py' waivek
+|2,0,1740012875,,"grep -g '*.py' waivek"
+:Grep -g '*.py' waivek
+|2,0,1740012864,,"Grep -g '*.py' waivek"
+:Rg
+|2,0,1740012856,,"Rg"
+:e .gitignore
+|2,0,1740012150,,"e .gitignore"
+:e 
+|2,0,1740012114,,"e "
+:e!
+|2,0,1740011462,,"e!"
+:e seconds.py
+|2,0,1740010996,,"e seconds.py"
+:Copilot enable
+|2,0,1740010897,,"Copilot enable"
+:bd ~/hateoas/models/model_attrs.py
+|2,0,1740010314,,"bd ~/hateoas/models/model_attrs.py"
+:bd #
+|2,0,1740010302,,"bd #"
+:Rename pflix_scrape_page.py
+|2,0,1740010287,,"Rename pflix_scrape_page.py"
+:e pflix_scrape_page.yp
+|2,0,1740010276,,"e pflix_scrape_page.yp"
+:Copilot disable
+|2,0,1740010106,,"Copilot disable"
+:Copilot setup
+|2,0,1740010047,,"Copilot setup"
+:Copilot status
+|2,0,1740010041,,"Copilot status"
+:PlugInstall
+|2,0,1740010012,,"PlugInstall"
+:Copilot
+|2,0,1740009982,,"Copilot"
+:edit $MYVIMRC
+|2,0,1740009970,,"edit $MYVIMRC"
+:V
+|2,0,1740009967,,"V"
+:e models
+|2,0,1739933605,,"e models"
+:e da
+|2,0,1739933125,,"e da"
+:h :Man
+|2,0,1739010872,,"h :Man"
+:Man ssh-keygen
+|2,0,1739010863,,"Man ssh-keygen"
+:set ft=man
+|2,0,1739010748,,"set ft=man"
+: w ~/tmp/vim-plugins-categorized.txt
+|2,0,1739006158,," w ~/tmp/vim-plugins-categorized.txt"
+:colo codedark
+|2,0,1739006082,,"colo codedark"
+:colo onedark
+|2,0,1739006075,,"colo onedark"
+:set ft=vim
+|2,0,1739006033,,"set ft=vim"
 :%!jq
 |2,0,1738512504,,"%!jq"
-:qa!
-|2,0,1738506046,,"qa!"
-:RunCreateCommand full
-|2,0,1738506002,,"RunCreateCommand full"
-:RunCreateCommand horizontal
-|2,0,1738505996,,"RunCreateCommand horizontal"
 :e data/profile.log
 |2,0,1738505498,,"e data/profile.log"
 :e profile.py
 |2,0,1738505496,,"e profile.py"
-:Template
-|2,0,1738504840,,"Template"
 :term
 |2,0,1738504801,,"term"
-:q
-|2,0,1738503770,,"q"
 :MRU 
 |2,0,1738503768,,"MRU "
 :echo &viminfo
 |2,0,1738479776,,"echo &viminfo"
-:e!
-|2,0,1738196054,,"e!"
-:e
-|2,0,1738195780,,"e"
-:bd!
-|2,0,1738195701,,"bd!"
-:enew
-|2,0,1738195621,,"enew"
-:b!# | bd! #
-|2,0,1738195120,,"b!# | bd! #"
 :h
 |2,0,1738195106,,"h"
 :e schema-shopping.sql
 |2,0,1738195097,,"e schema-shopping.sql"
-:bd
-|2,0,1738195078,,"bd"
-:CocRestart
-|2,0,1738194756,,"CocRestart"
 :Rename parse-schema.py
 |2,0,1738194736,,"Rename parse-schema.py"
 :e parse-schema.sql
@@ -74,12 +204,6 @@ $
 |2,0,1738185177,,"s/  */ /g"
 :s/  \*/ /g
 |2,0,1738185168,,"s/  \\*/ /g"
-:redraw!
-|2,0,1738183963,,"redraw!"
-:redraw
-|2,0,1738183961,,"redraw"
-:Copilot enable
-|2,0,1738183568,,"Copilot enable"
 :e strings
 |2,0,1738182833,,"e strings"
 :e s
@@ -90,30 +214,16 @@ $
 |2,0,1738182690,,"e models/model_pydantic_shopping.py"
 :e models/model_attrs_shopping.py
 |2,0,1738182600,,"e models/model_attrs_shopping.py"
-:Copilot disable
-|2,0,1738182430,,"Copilot disable"
 : 
 |2,0,1738182193,," "
 :Rename schema-shopping.sql
 |2,0,1738182068,,"Rename schema-shopping.sql"
 :e shopping-schema.sql
 |2,0,1738182044,,"e shopping-schema.sql"
-:e sch
-|2,0,1738182039,,"e sch"
-:Enumerate
-|2,0,1738181657,,"Enumerate"
-:Copilot setup
-|2,0,1738180892,,"Copilot setup"
-:Copilot status
-|2,0,1738180889,,"Copilot status"
 :Copilot feedback
 |2,0,1738180887,,"Copilot feedback"
-:PlugInstall
-|2,0,1738180863,,"PlugInstall"
 :Copi
 |2,0,1738180786,,"Copi"
-:edit $MYVIMRC
-|2,0,1738180769,,"edit $MYVIMRC"
 :CopyToHost
 |2,0,1738180764,,"CopyToHost"
 :CocCommand
@@ -124,14 +234,8 @@ $
 |2,0,1738179919,,"diffget"
 :diffthis
 |2,0,1738179904,,"diffthis"
-:pwd
-|2,0,1738179631,,"pwd"
 :e models/model_
 |2,0,1738179626,,"e models/model_"
-:e 
-|2,0,1738179573,,"e "
-:Rg
-|2,0,1738179299,,"Rg"
 :R
 |2,0,1738179297,,"R"
 :e model_attrs.py
@@ -198,14 +302,10 @@ $
 |2,0,1738119969,,"e ~/.vim/plugin/better-rg.vim"
 :e ~/.vim/plugin/backup.vim
 |2,0,1738119961,,"e ~/.vim/plugin/backup.vim"
-:Tab /->
-|2,0,1738070178,,"Tab /->"
 :e ~/bash/oldfiles.bash
 |2,0,1738070171,,"e ~/bash/oldfiles.bash"
 :e bash
 |2,0,1738070152,,"e bash"
-:e .
-|2,0,1738070149,,"e ."
 :e ~/bash
 |2,0,1738070138,,"e ~/bash"
 :e bahs
@@ -408,8 +508,6 @@ $
 |2,0,1737420487,,"e node_modules/vitest/dist/chunks/index.DsZFoqi9.js"
 :e vitest.config.ts
 |2,0,1737420307,,"e vitest.config.ts"
-:cn
-|2,0,1737423536,,"cn"
 :cfile %
 |2,0,1737423533,,"cfile %"
 : w ~/tmp/cfile
@@ -436,8 +534,6 @@ $
 |2,0,1737003182,,"Rename format.md"
 :e journey_create.py
 |2,0,1736994384,,"e journey_create.py"
-:e .gitignore
-|2,0,1736900435,,"e .gitignore"
 :e vi
 |2,0,1736898786,,"e vi"
 :RunCreateCommand
@@ -498,8 +594,6 @@ $
 |2,0,1736553068,,"!start everything -path ."
 :e vitest.reporter.json
 |2,0,1736552004,,"e vitest.reporter.json"
-:set ft=man
-|2,0,1736553173,,"set ft=man"
 :set wrap
 |2,0,1736551436,,"set wrap"
 :e tsconfig.strict.json
@@ -634,8 +728,6 @@ $
 |2,0,1736068594,,"%sort u"
 :diffoff
 |2,0,1736068592,,"diffoff"
-:next
-|2,0,1736068569,,"next"
 :prev
 |2,0,1736068449,,"prev"
 :set title
@@ -652,8 +744,6 @@ $
 |2,0,1736065500,,"set tit"
 :set title?
 |2,0,1736065493,,"set title?"
-:Copilot
-|2,0,1736064963,,"Copilot"
 :h copilot
 |2,0,1736063473,,"h copilot"
 :e todo.txt
@@ -678,8 +768,6 @@ $
 |2,0,1735908956,,"e commit-message-buggy.txt"
 :e commit-message.txt
 |2,0,1735907921,,"e commit-message.txt"
-:e requirements.txt
-|2,0,1735907589,,"e requirements.txt"
 :e cache.py
 |2,0,1735904534,,"e cache.py"
 :e cac
@@ -748,8 +836,6 @@ $
 |2,0,1735756012,,"e bash_completions/find-all-files-completion.bash"
 :e com
 |2,0,1735756003,,"e com"
-:e env.bash
-|2,0,1735756000,,"e env.bash"
 :e data/secret.txt
 |2,0,1735750949,,"e data/secret.txt"
 :e data/.gitkeep
@@ -852,8 +938,6 @@ $
 |2,0,1735654977,,"e .config/setup.fish"
 :e setup.bash
 |2,0,1735653846,,"e setup.bash"
-:e setup.fish
-|2,0,1735653355,,"e setup.fish"
 :e e
 |2,0,1735652361,,"e e"
 : w ~/tmp/tmux-unicode.bash
@@ -1264,8 +1348,6 @@ $
 |2,0,1732292474,,"e data/Const_Velocity.db"
 :55
 |2,0,1732291680,,"55"
-: ;
-|2,0,1732281770,," ;"
 :e pydantic_to_sqlite.py
 |2,0,1732281242,,"e pydantic_to_sqlite.py"
 :Co
@@ -1324,8 +1406,6 @@ $
 |2,0,1731264693,,"%!python3 -m json.tool"
 : w data/page-pretty.json 
 |2,0,1731264690,," w data/page-pretty.json "
-:e pflix_scrape.py
-|2,0,1731264218,,"e pflix_scrape.py"
 :.! w
 |2,0,1731264092,,".! w"
 :e tests/test_pflix_scrape.py
@@ -1490,8 +1570,6 @@ $
 |2,0,1730140617,,"set readonly!"
 :set readonly
 |2,0,1730140603,,"set readonly"
-:.,.+1!
-|2,0,1730139542,,".,.+1!"
 :e pac
 |2,0,1730111144,,"e pac"
 :e tmp_parse.py
@@ -2598,8 +2676,6 @@ $
 |2,0,1725458987,,"b better.vim"
 :GMF
 |2,0,1725458975,,"GMF"
-:colo codedark
-|2,0,1725458645,,"colo codedark"
 :colo apprentice
 |2,0,1725458642,,"colo apprentice"
 :hi clear
@@ -3290,8 +3366,6 @@ $
 |2,0,1724022722,,"MRU 7:syntax/ansilog.vim"
 :MRU 53:tmp/file.ansilog
 |2,0,1724022716,,"MRU 53:tmp/file.ansilog"
-:V
-|2,0,1724022381,,"V"
 :verbose hi ansiColorBlack
 |2,0,1724022239,,"verbose hi ansiColorBlack"
 :colo nord
@@ -3920,8 +3994,6 @@ $
 |2,0,1722704430,,"e ~/.vim/tmp/python-oldfiles-length.py"
 :%s/.*\//
 |2,0,1722704365,,"%s/.*\\//"
-:v/py$/d
-|2,0,1722704344,,"v/py$/d"
 :Capture echo join(v:oldfiles, "\n")
 |2,0,1722704329,,"Capture echo join(v:oldfiles, \"\\n\")"
 :Capture join(v:oldfiles, "\n")
@@ -4686,8 +4758,6 @@ $
 |2,0,1722029645,,"%s/Video//g"
 :g/@enforce_types/d
 |2,0,1722029631,,"g/@enforce_types/d"
-:e ~/.vim/templates/template.py
-|2,0,1722014775,,"e ~/.vim/templates/template.py"
 :e parse_attrs.py
 |2,0,1722014437,,"e parse_attrs.py"
 :e validation.py
@@ -6166,8 +6236,6 @@ $
 |2,0,1717910495,,"e static/css-utilities/wide-tall.css"
 :colo morning
 |2,0,1717883218,,"colo morning"
-:colo onedark
-|2,0,1717883207,,"colo onedark"
 :hi ClapDisplay
 |2,0,1717883203,,"hi ClapDisplay"
 :col
@@ -8110,8 +8178,6 @@ $
 |2,0,1712521388,,"bd downloads.sql"
 :bd *.sql
 |2,0,1712521384,,"bd *.sql"
-:bd #
-|2,0,1712521380,,"bd #"
 :b downloader.py
 |2,0,1712521374,,"b downloader.py"
 :e download_logs.sql
@@ -10860,8 +10926,6 @@ $
 |2,0,1691572361,,"!rm data/videos.db"
 :e sc
 |2,0,1691572102,,"e sc"
-:e schema.sql
-|2,0,1691571894,,"e schema.sql"
 :Tab /TEXT
 |2,0,1691571835,,"Tab /TEXT"
 :Tab TEXT
@@ -11344,8 +11408,6 @@ $
 |2,0,1688922319,,"echo \"EH"
 :MRU des
 |2,0,1688915013,,"MRU des"
-:e da
-|2,0,1688914860,,"e da"
 :MRU templ
 |2,0,1688914713,,"MRU templ"
 :echo g:python_indent.search_pair_timeout
@@ -11446,8 +11508,6 @@ $
 |2,0,1688662495,,"grep autocomplete -g *.vue"
 :e Autocomplete.vue
 |2,0,1688662484,,"e Autocomplete.vue"
-:45
-|2,0,1688646200,,"45"
 :ALEDetail
 |2,0,1688587140,,"ALEDetail"
 :e PovVideos.vue
@@ -11934,24 +11994,106 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+? ^\s*$\n\s*$
+|2,1,1740318679,,"^\\s*$\\n\\s*$"
+?/alias
+|2,1,1740215028,47,"alias"
+?/atuin
+|2,1,1740215016,47,"atuin"
+?/\<z
+|2,1,1740213506,47,"\\<z"
+?/z
+|2,1,1740213381,47,"z"
+?/fzf
+|2,1,1740213222,47,"fzf"
+?/FZF_DEFA
+|2,1,1740212841,47,"FZF_DEFA"
+?/--size
+|2,1,1740212521,47,"--size"
+?/^\s*\zs[-a-zA-Z]*size
+|2,1,1740212519,47,"^\\s*\\zs[-a-zA-Z]*size"
+?/^S\s*\zs[-a-zA-Z]*
+|2,1,1740212513,47,"^S\\s*\\zs[-a-zA-Z]*"
+?/size
+|2,1,1740212479,47,"size"
+?/category-
+|2,1,1740105654,47,"category-"
+?/limit
+|2,1,1740105383,47,"limit"
+?/D
+|2,1,1740104621,47,"D"
+?/len
+|2,1,1740104200,47,"len"
+?/aget
+|2,1,1740103326,47,"aget"
+?/schema
+|2,1,1740102112,47,"schema"
+?/<schema
+|2,1,1740102108,47,"<schema"
+? \<url\>
+|2,1,1740101713,,"\\<url\\>"
+?/aan
+|2,1,1740101617,47,"aan"
+? py$
+|2,1,1740100279,,"py$"
+? @$
+|2,1,1740100267,,"@$"
+?/def
+|2,1,1740098374,47,"def"
+?/full
+|2,1,1740097988,47,"full"
+?/tags
+|2,1,1740021993,47,"tags"
+?/image_tag
+|2,1,1740018624,47,"image_tag"
+? in \zs[^:]\+
+|2,1,1740018403,,"in \\zs[^:]\\+"
+?/10
+|2,1,1740017310,47,"10"
+?/status
+|2,1,1740015096,47,"status"
+?/DEBUG
+|2,1,1740015073,47,"DEBUG"
+?/debug
+|2,1,1740015037,47,"debug"
+?/red
+|2,1,1740015008,47,"red"
+?/Response
+|2,1,1740014995,47,"Response"
+?/pages
+|2,1,1740012690,47,"pages"
+?/\(def\|class\)\s\+\w*
+|2,1,1740011184,47,"\\(def\\|class\\)\\s\\+\\w*"
+?/copilot
+|2,1,1740009986,47,"copilot"
+?/^\s*\zs[-a-zA-Z]*
+|2,1,1739010750,47,"^\\s*\\zs[-a-zA-Z]*"
+?/exc
+|2,1,1739006292,47,"exc"
+?/coc
+|2,1,1739006110,47,"coc"
+?/type
+|2,1,1739006106,47,"type"
+?/vue
+|2,1,1739006102,47,"vue"
+?/call
+|2,1,1739006025,47,"call"
+?/ssh-copy-id
+|2,1,1738967315,47,"ssh-copy-id"
+?/copy-id
+|2,1,1738962139,47,"copy-id"
 ?/\t
 |2,1,1738505499,47,"\\t"
 ?/strip
 |2,1,1738505389,47,"strip"
-? ^\s*$\n\s*$
-|2,1,1738505037,,"^\\s*$\\n\\s*$"
 ?/g:exi
 |2,1,1738503736,47,"g:exi"
 ?/python
 |2,1,1738503533,47,"python"
 ?/viminfo
 |2,1,1738479373,47,"viminfo"
-?/red
-|2,1,1738196042,47,"red"
 ?/Not pre
 |2,1,1738195264,47,"Not pre"
-?/DEBUG
-|2,1,1738194587,47,"DEBUG"
 ?/TABLE users
 |2,1,1738194401,47,"TABLE users"
 ?/users
@@ -11968,12 +12110,8 @@ $
 |2,1,1738184359,47,"session"
 ?/price
 |2,1,1738182609,47,"price"
-? in \zs[^:]\+
-|2,1,1738181657,,"in \\zs[^:]\\+"
 ?/mage
 |2,1,1738181631,47,"mage"
-?/copilot
-|2,1,1738180707,47,"copilot"
 ?/any
 |2,1,1738179866,47,"any"
 ?/autoinc
@@ -11982,16 +12120,12 @@ $
 |2,1,1738157672,47,"jq"
 ?/screen
 |2,1,1738157377,47,"screen"
-?/full
-|2,1,1738157376,47,"full"
 ?/compac
 |2,1,1738157343,47,"compac"
 ?/--int
 |2,1,1738156168,47,"--int"
 ?/space
 |2,1,1738156153,47,"space"
-? @$
-|2,1,1738070160,,"@$"
 ??\a
 |2,1,1738070149,63,"\\a"
 ?/\.bash
@@ -12046,8 +12180,6 @@ $
 |2,1,1737571518,47,"preview-window"
 ?/preview
 |2,1,1737571483,47,"preview"
-?/call
-|2,1,1737571212,47,"call"
 ?/\C\<bat\>
 |2,1,1737571081,47,"\\C\\<bat\\>"
 ?/b
@@ -12084,8 +12216,6 @@ $
 |2,1,1737567095,47,"^\\s*\\zs[-a-zA-Z]*--with-nth"
 ?/with-n
 |2,1,1737567083,47,"with-n"
-?/fzf
-|2,1,1737564528,47,"fzf"
 ?/--files
 |2,1,1737563708,47,"--files"
 ?/^\s*\zs[-a-zA-Z]*--files
@@ -12262,8 +12392,6 @@ $
 |2,1,1736278711,,"\\<l:bufnr\\>"
 ?/argument
 |2,1,1736278627,47,"argument"
-?/vue
-|2,1,1736261980,47,"vue"
 ?/alt
 |2,1,1736261882,47,"alt"
 ?/logo
@@ -12494,8 +12622,6 @@ $
 |2,1,1735654236,47,"config"
 ?/bind
 |2,1,1735653924,47,"bind"
-?/atuin
-|2,1,1735653217,47,"atuin"
 ?/starship
 |2,1,1735652410,47,"starship"
 ?/utf
@@ -12864,8 +12990,6 @@ $
 |2,1,1732309865,47,"Showing"
 ?/Quick
 |2,1,1732309843,47,"Quick"
-?/limit
-|2,1,1732291637,47,"limit"
 ?/u
 |2,1,1732291549,47,"u"
 ?/page.* = 
@@ -12886,8 +13010,6 @@ $
 |2,1,1731541252,47,"read"
 ??exit_code=1
 |2,1,1731541108,63,"exit_code=1"
-?/def
-|2,1,1731540698,47,"def"
 ?/exit_code=[^0]
 |2,1,1731540420,47,"exit_code=[^0]"
 ?/not found
@@ -13238,8 +13360,6 @@ $
 |2,1,1729525814,47,"unused"
 ?/worker.*status
 |2,1,1729515318,47,"worker.*status"
-?/status
-|2,1,1729515311,47,"status"
 ?/active
 |2,1,1729515298,47,"active"
 ?/downloaded
@@ -13472,8 +13592,6 @@ $
 |2,1,1729110288,63,"graph_"
 ?/^@app.route("\/\w*sync
 |2,1,1729109968,47,"^@app.route(\"\\/\\w*sync"
-?/\(def\|class\)\s\+\w*
-|2,1,1729109964,47,"\\(def\\|class\\)\\s\\+\\w*"
 ?/pandas
 |2,1,1729106526,47,"pandas"
 ?/Twitch
@@ -13532,14 +13650,10 @@ $
 |2,1,1728890940,47,"\\?login"
 ? timer\..*\"helix_name2id\"
 |2,1,1728890886,,"timer\\..*\\\"helix_name2id\\\""
-?/schema
-|2,1,1728890428,47,"schema"
 ?/truncate
 |2,1,1728890319,47,"truncate"
 ?/Creating
 |2,1,1728889922,47,"Creating"
-?/aget
-|2,1,1728889707,47,"aget"
 ?/Start
 |2,1,1728889493,47,"Start"
 ?/video['c
@@ -13816,8 +13930,6 @@ $
 |2,1,1726085774,47,"get_max"
 ?/\(def\|class\)\s\+\w*Table
 |2,1,1726085695,47,"\\(def\\|class\\)\\s\\+\\w*Table"
-?/10
-|2,1,1726003795,47,"10"
 ?/just
 |2,1,1726003747,47,"just"
 ?/ignore
@@ -13850,8 +13962,6 @@ $
 |2,1,1725821509,47,"len("
 ?/get_di
 |2,1,1725821498,47,"get_di"
-?/len
-|2,1,1725821482,47,"len"
 ?/pad
 |2,1,1725821429,47,"pad"
 ?/get_displa
@@ -13928,8 +14038,6 @@ $
 |2,1,1725562448,47,"ru"
 ?/HELLO
 |2,1,1725551755,47,"HELLO"
-?/type
-|2,1,1725543739,47,"type"
 ?/dateutils
 |2,1,1725543162,47,"dateutils"
 ?/staging
@@ -14072,8 +14180,6 @@ $
 |2,1,1725116975,47,"main"
 ?/main()
 |2,1,1725116973,47,"main()"
-?/debug
-|2,1,1725110937,47,"debug"
 ?/richsp
 |2,1,1725110510,47,"richsp"
 ?/sprintf
@@ -14086,8 +14192,6 @@ $
 |2,1,1725074390,47,"\\.sh"
 ?/golang
 |2,1,1725074082,47,"golang"
-?/alias
-|2,1,1725022318,47,"alias"
 ?/s
 |2,1,1725022077,47,"s"
 ?/st
@@ -14126,8 +14230,6 @@ $
 |2,1,1724913387,47,"colorscheme"
 ?/si
 |2,1,1724913384,47,"si"
-?/z
-|2,1,1724656974,47,"z"
 ?/pushd
 |2,1,1724656580,47,"pushd"
 ?/cd
@@ -14506,8 +14608,6 @@ $
 |2,1,1722704682,,"PythonOldfilesLength()"
 ? .*\/
 |2,1,1722704365,,".*\\/"
-? py$
-|2,1,1722704344,,"py$"
 ?/\v\f+\.\w+
 |2,1,1722630922,47,"\\v\\f+\\.\\w+"
 ?/\v\S+\.\w+
@@ -14574,8 +14674,6 @@ $
 |2,1,1722523275,47,"lens"
 ?/cursors
 |2,1,1722521696,47,"cursors"
-?/coc
-|2,1,1722521693,47,"coc"
 ? <Plug>([^)]*)
 |2,1,1722521657,,"<Plug>([^)]*)"
 ?/<Plug>([^)]*)
@@ -17330,8 +17428,6 @@ $
 |2,1,1692442953,47,"obj"
 ?/\(def\|class\)\s\+\w*noop
 |2,1,1692442632,47,"\\(def\\|class\\)\\s\\+\\w*noop"
-?/D
-|2,1,1692442117,47,"D"
 ?/\(def\|class\)\s\+\w*unpack
 |2,1,1692440473,47,"\\(def\\|class\\)\\s\\+\\w*unpack"
 ?/^[a-z_]*term
@@ -17684,8 +17780,6 @@ $
 |2,1,1690908657,63,"Vue"
 ?/for.*page
 |2,1,1690907888,47,"for.*page"
-?/pages
-|2,1,1690907884,47,"pages"
 ?/view
 |2,1,1690907768,47,"view"
 ?/ceil
@@ -18016,6 +18110,12 @@ $
 |2,2,1688309303,,"v:oldfiles"
 
 # Input Line History (newest to oldest):
+@download-check
+|2,3,1740105853,,"download-check"
+@url_validity
+|2,3,1740105845,,"url_validity"
+@dict
+|2,3,1740104595,,"dict"
 @markup
 |2,3,1738196102,,"markup"
 @div>
@@ -18166,8 +18266,6 @@ $
 |2,3,1716620122,,"div style=\"text-align: left;\">"
 @/home/vivek/hateoas
 |2,3,1714631440,,"/home/vivek/hateoas"
-@dict
-|2,3,1714484932,,"dict"
 @div class="tall box">
 |2,3,1713932038,,"div class=\"tall box\">"
 @n
@@ -18259,40 +18357,43 @@ $
 
 # Registers:
 "0	CHAR	0
-	cmd_string)
-|3,0,0,0,1,0,1738505851,"cmd_string)"
+	f"Current time: {now}"
+|3,0,0,0,1,0,1740215761,"f\"Current time: {now}\""
 ""1	LINE	0
-	        cmd_string
-|3,1,1,1,1,0,1738506036,"        cmd_string"
+	>>>>>>> refs/remotes/origin/master
+|3,1,1,1,1,0,1740318626,">>>>>>> refs/remotes/origin/master"
 "2	LINE	0
-	# run.vim: term python %
-|3,0,2,1,1,0,1738505999,"# run.vim: term python %"
+	<<<<<<< HEAD
+	**/bin/*
+	!bin/.gitkeep
+	=======
+|3,0,2,1,4,0,1740318625,"<<<<<<< HEAD","**/bin/*","!bin/.gitkeep","======="
 "3	LINE	0
-	            current_section[2].append(cmd)
-|3,0,3,1,1,0,1738505667,"            current_section[2].append(cmd)"
+	=======
+	# bin/*
+	# !bin/.gitkeep
+|3,0,3,1,3,0,1740318620,"=======","# bin/*","# !bin/.gitkeep"
 "4	LINE	0
-	            breakpoint()
-|3,0,4,1,1,0,1738505596,"            breakpoint()"
+	<<<<<<< HEAD
+|3,0,4,1,1,0,1740318619,"<<<<<<< HEAD"
 "5	LINE	0
-	        print
-|3,0,5,1,1,0,1738505292,"        print"
+	>>>>>>> refs/remotes/origin/master
+|3,0,5,1,1,0,1740318617,">>>>>>> refs/remotes/origin/master"
 "6	LINE	0
-	        print(f"count={count}, total={total}")
-	        for cmd in cmds:
-	            print(f"  {cmd}")
-|3,0,6,1,3,0,1738505233,"        print(f\"count={count}, total={total}\")","        for cmd in cmds:","            print(f\"  {cmd}\")"
+	]
+|3,0,6,1,1,0,1740216186,"]"
 "7	LINE	0
-	    print(f"sections: {len(sections)}")
-|3,0,7,1,1,0,1738505221,"    print(f\"sections: {len(sections)}\")"
+	L = [
+|3,0,7,1,1,0,1740216185,"L = ["
 "8	LINE	0
-	
-|3,0,8,1,1,0,1738505191,""
+	        time = datetime.now().strftime("%H:%M:%S")
+|3,0,8,1,1,0,1740215742,"        time = datetime.now().strftime(\"%H:%M:%S\")"
 "9	LINE	0
-	    print("Done!")
-|3,0,9,1,1,0,1738505189,"    print(\"Done!\")"
+	    now = datetime.now().strftime("%H:%M:%S")
+|3,0,9,1,1,0,1740215741,"    now = datetime.now().strftime(\"%H:%M:%S\")"
 "a	CHAR	0
 	nojkVnl>nO€ýa
-|3,0,10,0,1,0,1738505824,"nojkVnl>nO€ýa"
+|3,0,10,0,1,0,1740216188,"nojkVnl>nO€ýa"
 "i	CHAR	0
 	ado_up()jk:q!
 |3,0,18,0,1,0,1724200553,"ado_up()jk:q!"
@@ -18361,241 +18462,1913 @@ $
 |<"    assert x_min < x_max, f\"Invalid x coordinates: min ({x_min}) >= max ({x_max})\"","    assert y_min < y_max, f\"Invalid y coordinates: min ({y_min}) >= max ({y_max})\"","    ","    # Additional geometric checks","    assert abs(y1 - y2) < (y_max - y_min), \"Top edge is not roughly horizontal\"","    assert abs(y3 - y4) < (y_max - y_min), \"Bottom edge is not roughly horizontal\"","    assert abs(x1 - x4) < (x_max - x_min), \"Left edge is not roughly vertical\"",>83
 |<"    assert abs(x2 - x3) < (x_max - x_min), \"Right edge is not roughly vertical\"","","    pretty_string_flat = {","        \"left\": x_min,","        \"right\": x_max,","        \"top\": y_min,","        \"bottom\": y_max,","        \"top_left\": (x1, y1),","        \"top_right\": (x2, y2),","        \"bottom_right\": (x3, y3),","        \"bottom_left\": (x4, y4),","    }","    ","    print(f\"{box} => {pretty_string_flat}\")",""
 "-	CHAR	0
-	 
-|3,0,36,0,1,0,1738505886," "
+	)
+|3,0,36,0,1,0,1740215856,")"
 
 # File marks:
-'0  23  0  ~/.config/uv/uv-receipt.json
-|4,48,23,0,1738512514,"~/.config/uv/uv-receipt.json"
-'1  41  8  ~/pyscripts/tmp-vimrc-analyze.py
-|4,49,41,8,1738506047,"~/pyscripts/tmp-vimrc-analyze.py"
-'2  41  8  ~/pyscripts/tmp-vimrc-analyze.py
-|4,50,41,8,1738506047,"~/pyscripts/tmp-vimrc-analyze.py"
-'3  92  36  ~/.vim/plugin/mru.vim
-|4,51,92,36,1738503766,"~/.vim/plugin/mru.vim"
-'4  92  36  ~/.vim/plugin/mru.vim
-|4,52,92,36,1738503766,"~/.vim/plugin/mru.vim"
-'5  92  36  ~/.vim/plugin/mru.vim
-|4,53,92,36,1738503766,"~/.vim/plugin/mru.vim"
-'6  92  36  ~/.vim/plugin/mru.vim
-|4,54,92,36,1738503766,"~/.vim/plugin/mru.vim"
-'7  92  36  ~/.vim/plugin/mru.vim
-|4,55,92,36,1738503766,"~/.vim/plugin/mru.vim"
-'8  92  36  ~/.vim/plugin/mru.vim
-|4,56,92,36,1738503766,"~/.vim/plugin/mru.vim"
-'9  92  36  ~/.vim/plugin/mru.vim
-|4,57,92,36,1738503766,"~/.vim/plugin/mru.vim"
+'0  1  0  ~/python_common/box/db_insert_unique.py
+|4,48,1,0,1740318680,"~/python_common/box/db_insert_unique.py"
+'1  6  0  ~/golang/.gitignore
+|4,49,6,0,1740318630,"~/golang/.gitignore"
+'2  6  0  ~/golang/.gitignore
+|4,50,6,0,1740318630,"~/golang/.gitignore"
+'3  6  2  ~/golang/.gitignore
+|4,51,6,2,1740318590,"~/golang/.gitignore"
+'4  6  2  ~/golang/.gitignore
+|4,52,6,2,1740318590,"~/golang/.gitignore"
+'5  1  0  ~/golang/.gitignore
+|4,53,1,0,1740318582,"~/golang/.gitignore"
+'6  1  0  ~/golang/.gitignore
+|4,54,1,0,1740318582,"~/golang/.gitignore"
+'7  1  0  ~/golang/.gitignore
+|4,55,1,0,1740318582,"~/golang/.gitignore"
+'8  1  0  ~/golang/.gitignore
+|4,56,1,0,1740318582,"~/golang/.gitignore"
+'9  1  0  ~/golang/.gitignore
+|4,57,1,0,1740318582,"~/golang/.gitignore"
 
 # Jumplist (newest first):
--'  23  0  ~/.config/uv/uv-receipt.json
-|4,39,23,0,1738512514,"~/.config/uv/uv-receipt.json"
--'  1  0  ~/.config/uv/uv-receipt.json
-|4,39,1,0,1738512501,"~/.config/uv/uv-receipt.json"
--'  41  8  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,41,8,1738506047,"~/pyscripts/tmp-vimrc-analyze.py"
--'  41  8  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,41,8,1738506047,"~/pyscripts/tmp-vimrc-analyze.py"
--'  48  0  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,48,0,1738506004,"~/pyscripts/tmp-vimrc-analyze.py"
--'  48  0  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,48,0,1738506004,"~/pyscripts/tmp-vimrc-analyze.py"
--'  47  8  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,47,8,1738506002,"~/pyscripts/tmp-vimrc-analyze.py"
--'  47  8  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,47,8,1738506002,"~/pyscripts/tmp-vimrc-analyze.py"
--'  49  0  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,49,0,1738505997,"~/pyscripts/tmp-vimrc-analyze.py"
--'  49  0  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,49,0,1738505997,"~/pyscripts/tmp-vimrc-analyze.py"
--'  33  50  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,33,50,1738505993,"~/pyscripts/tmp-vimrc-analyze.py"
--'  33  50  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,33,50,1738505993,"~/pyscripts/tmp-vimrc-analyze.py"
--'  40  58  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,40,58,1738505923,"~/pyscripts/tmp-vimrc-analyze.py"
--'  40  58  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,40,58,1738505923,"~/pyscripts/tmp-vimrc-analyze.py"
--'  1  0  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,1,0,1738505912,"~/pyscripts/tmp-vimrc-analyze.py"
--'  1  0  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,1,0,1738505912,"~/pyscripts/tmp-vimrc-analyze.py"
--'  39  57  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,39,57,1738505904,"~/pyscripts/tmp-vimrc-analyze.py"
--'  39  57  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,39,57,1738505904,"~/pyscripts/tmp-vimrc-analyze.py"
--'  42  24  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,42,24,1738505891,"~/pyscripts/tmp-vimrc-analyze.py"
--'  42  24  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,42,24,1738505891,"~/pyscripts/tmp-vimrc-analyze.py"
--'  41  24  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,41,24,1738505891,"~/pyscripts/tmp-vimrc-analyze.py"
--'  40  32  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,40,32,1738505851,"~/pyscripts/tmp-vimrc-analyze.py"
--'  37  29  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,37,29,1738505824,"~/pyscripts/tmp-vimrc-analyze.py"
--'  36  29  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,36,29,1738505824,"~/pyscripts/tmp-vimrc-analyze.py"
--'  37  29  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,37,29,1738505824,"~/pyscripts/tmp-vimrc-analyze.py"
--'  36  29  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,36,29,1738505824,"~/pyscripts/tmp-vimrc-analyze.py"
--'  6  0  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,6,0,1738505790,"~/pyscripts/tmp-vimrc-analyze.py"
--'  6  0  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,6,0,1738505790,"~/pyscripts/tmp-vimrc-analyze.py"
--'  6  0  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,6,0,1738505790,"~/pyscripts/tmp-vimrc-analyze.py"
--'  28  45  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,28,45,1738505727,"~/pyscripts/tmp-vimrc-analyze.py"
--'  28  45  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,28,45,1738505727,"~/pyscripts/tmp-vimrc-analyze.py"
--'  28  45  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,28,45,1738505727,"~/pyscripts/tmp-vimrc-analyze.py"
--'  29  64  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,29,64,1738505707,"~/pyscripts/tmp-vimrc-analyze.py"
--'  29  64  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,29,64,1738505707,"~/pyscripts/tmp-vimrc-analyze.py"
--'  29  64  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,29,64,1738505707,"~/pyscripts/tmp-vimrc-analyze.py"
--'  32  42  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,32,42,1738505649,"~/pyscripts/tmp-vimrc-analyze.py"
--'  32  42  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,32,42,1738505649,"~/pyscripts/tmp-vimrc-analyze.py"
--'  32  42  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,32,42,1738505649,"~/pyscripts/tmp-vimrc-analyze.py"
--'  24  23  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,24,23,1738505544,"~/pyscripts/tmp-vimrc-analyze.py"
--'  24  23  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,24,23,1738505544,"~/pyscripts/tmp-vimrc-analyze.py"
--'  24  23  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,24,23,1738505544,"~/pyscripts/tmp-vimrc-analyze.py"
--'  11  34  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,11,34,1738505439,"~/pyscripts/tmp-vimrc-analyze.py"
--'  11  34  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,11,34,1738505439,"~/pyscripts/tmp-vimrc-analyze.py"
--'  11  34  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,11,34,1738505439,"~/pyscripts/tmp-vimrc-analyze.py"
--'  43  23  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,43,23,1738505228,"~/pyscripts/tmp-vimrc-analyze.py"
--'  43  23  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,43,23,1738505228,"~/pyscripts/tmp-vimrc-analyze.py"
--'  42  23  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,42,23,1738505228,"~/pyscripts/tmp-vimrc-analyze.py"
--'  34  38  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,34,38,1738505214,"~/pyscripts/tmp-vimrc-analyze.py"
--'  34  38  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,34,38,1738505214,"~/pyscripts/tmp-vimrc-analyze.py"
--'  33  38  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,33,38,1738505214,"~/pyscripts/tmp-vimrc-analyze.py"
--'  27  43  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,27,43,1738505209,"~/pyscripts/tmp-vimrc-analyze.py"
--'  27  43  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,27,43,1738505209,"~/pyscripts/tmp-vimrc-analyze.py"
--'  27  43  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,27,43,1738505209,"~/pyscripts/tmp-vimrc-analyze.py"
--'  44  0  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,44,0,1738505172,"~/pyscripts/tmp-vimrc-analyze.py"
--'  44  0  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,44,0,1738505172,"~/pyscripts/tmp-vimrc-analyze.py"
--'  43  0  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,43,0,1738505172,"~/pyscripts/tmp-vimrc-analyze.py"
--'  26  46  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,26,46,1738505157,"~/pyscripts/tmp-vimrc-analyze.py"
--'  26  46  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,26,46,1738505157,"~/pyscripts/tmp-vimrc-analyze.py"
--'  26  46  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,26,46,1738505157,"~/pyscripts/tmp-vimrc-analyze.py"
--'  17  4  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,17,4,1738505038,"~/pyscripts/tmp-vimrc-analyze.py"
--'  17  4  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,17,4,1738505038,"~/pyscripts/tmp-vimrc-analyze.py"
--'  17  4  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,17,4,1738505038,"~/pyscripts/tmp-vimrc-analyze.py"
--'  45  0  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,45,0,1738505036,"~/pyscripts/tmp-vimrc-analyze.py"
--'  45  0  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,45,0,1738505036,"~/pyscripts/tmp-vimrc-analyze.py"
--'  44  0  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,44,0,1738505036,"~/pyscripts/tmp-vimrc-analyze.py"
--'  8  28  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,8,28,1738504851,"~/pyscripts/tmp-vimrc-analyze.py"
--'  8  28  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,8,28,1738504851,"~/pyscripts/tmp-vimrc-analyze.py"
--'  8  28  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,8,28,1738504851,"~/pyscripts/tmp-vimrc-analyze.py"
--'  47  0  ~/pyscripts/tmp-vimrc-analyze.py
-|4,39,47,0,1738504774,"~/pyscripts/tmp-vimrc-analyze.py"
--'  92  36  ~/.vim/plugin/mru.vim
-|4,39,92,36,1738503766,"~/.vim/plugin/mru.vim"
--'  92  36  ~/.vim/plugin/mru.vim
-|4,39,92,36,1738503766,"~/.vim/plugin/mru.vim"
--'  92  36  ~/.vim/plugin/mru.vim
-|4,39,92,36,1738503766,"~/.vim/plugin/mru.vim"
--'  92  36  ~/.vim/plugin/mru.vim
-|4,39,92,36,1738503766,"~/.vim/plugin/mru.vim"
--'  92  36  ~/.vim/plugin/mru.vim
-|4,39,92,36,1738503766,"~/.vim/plugin/mru.vim"
--'  75  27  ~/.vim/plugin/mru.vim
-|4,39,75,27,1738503753,"~/.vim/plugin/mru.vim"
--'  75  27  ~/.vim/plugin/mru.vim
-|4,39,75,27,1738503753,"~/.vim/plugin/mru.vim"
--'  75  27  ~/.vim/plugin/mru.vim
-|4,39,75,27,1738503753,"~/.vim/plugin/mru.vim"
--'  75  27  ~/.vim/plugin/mru.vim
-|4,39,75,27,1738503753,"~/.vim/plugin/mru.vim"
--'  75  27  ~/.vim/plugin/mru.vim
-|4,39,75,27,1738503753,"~/.vim/plugin/mru.vim"
--'  1  0  ~/.vim/plugin/mru.vim
-|4,39,1,0,1738503736,"~/.vim/plugin/mru.vim"
--'  1  0  ~/.vim/plugin/mru.vim
-|4,39,1,0,1738503736,"~/.vim/plugin/mru.vim"
--'  1  0  ~/.vim/plugin/mru.vim
-|4,39,1,0,1738503736,"~/.vim/plugin/mru.vim"
--'  1  0  ~/.vim/plugin/mru.vim
-|4,39,1,0,1738503736,"~/.vim/plugin/mru.vim"
--'  1  0  ~/.vim/plugin/mru.vim
-|4,39,1,0,1738503736,"~/.vim/plugin/mru.vim"
--'  314  0  ~/.vim/vimrc
-|4,39,314,0,1738503539,"~/.vim/vimrc"
--'  314  0  ~/.vim/vimrc
-|4,39,314,0,1738503539,"~/.vim/vimrc"
--'  314  0  ~/.vim/vimrc
-|4,39,314,0,1738503539,"~/.vim/vimrc"
--'  314  0  ~/.vim/vimrc
-|4,39,314,0,1738503539,"~/.vim/vimrc"
--'  314  0  ~/.vim/vimrc
-|4,39,314,0,1738503539,"~/.vim/vimrc"
--'  314  0  ~/.vim/vimrc
-|4,39,314,0,1738503539,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1738503533,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1738503533,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1738503533,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1738503533,"~/.vim/vimrc"
--'  1  0  ~/.vim/vimrc
-|4,39,1,0,1738503533,"~/.vim/vimrc"
--'  50  0  ~/.vim/vimrc
-|4,39,50,0,1738479786,"~/.vim/vimrc"
--'  50  0  ~/.vim/vimrc
-|4,39,50,0,1738479786,"~/.vim/vimrc"
--'  50  0  ~/.vim/vimrc
-|4,39,50,0,1738479786,"~/.vim/vimrc"
--'  50  0  ~/.vim/vimrc
-|4,39,50,0,1738479786,"~/.vim/vimrc"
--'  50  0  ~/.vim/vimrc
-|4,39,50,0,1738479786,"~/.vim/vimrc"
+-'  1  0  ~/python_common/box/db_insert_unique.py
+|4,39,1,0,1740318680,"~/python_common/box/db_insert_unique.py"
+-'  6  0  ~/golang/.gitignore
+|4,39,6,0,1740318630,"~/golang/.gitignore"
+-'  6  0  ~/golang/.gitignore
+|4,39,6,0,1740318630,"~/golang/.gitignore"
+-'  8  0  ~/golang/.gitignore
+|4,39,8,0,1740318621,"~/golang/.gitignore"
+-'  8  0  ~/golang/.gitignore
+|4,39,8,0,1740318621,"~/golang/.gitignore"
+-'  1  0  ~/golang/.gitignore
+|4,39,1,0,1740318610,"~/golang/.gitignore"
+-'  1  0  ~/golang/.gitignore
+|4,39,1,0,1740318610,"~/golang/.gitignore"
+-'  6  2  ~/golang/.gitignore
+|4,39,6,2,1740318590,"~/golang/.gitignore"
+-'  1  0  ~/golang/.gitignore
+|4,39,1,0,1740318585,"~/golang/.gitignore"
+-'  1  0  ~/golang/.gitignore
+|4,39,1,0,1740318582,"~/golang/.gitignore"
+-'  1  0  ~/tooling/.git/MERGE_MSG
+|4,39,1,0,1740317605,"~/tooling/.git/MERGE_MSG"
+-'  1  0  ~/tooling/.git/MERGE_MSG
+|4,39,1,0,1740317605,"~/tooling/.git/MERGE_MSG"
+-'  1  0  ~/tooling/.git/MERGE_MSG
+|4,39,1,0,1740317605,"~/tooling/.git/MERGE_MSG"
+-'  1  0  ~/tooling/.git/MERGE_MSG
+|4,39,1,0,1740317605,"~/tooling/.git/MERGE_MSG"
+-'  1  0  ~/tooling/.git/MERGE_MSG
+|4,39,1,0,1740317605,"~/tooling/.git/MERGE_MSG"
+-'  44  25  ~/pflix/pflix_download_videos_html.py
+|4,39,44,25,1740317502,"~/pflix/pflix_download_videos_html.py"
+-'  44  25  ~/pflix/pflix_download_videos_html.py
+|4,39,44,25,1740317502,"~/pflix/pflix_download_videos_html.py"
+-'  44  25  ~/pflix/pflix_download_videos_html.py
+|4,39,44,25,1740317502,"~/pflix/pflix_download_videos_html.py"
+-'  44  25  ~/pflix/pflix_download_videos_html.py
+|4,39,44,25,1740317502,"~/pflix/pflix_download_videos_html.py"
+-'  44  25  ~/pflix/pflix_download_videos_html.py
+|4,39,44,25,1740317502,"~/pflix/pflix_download_videos_html.py"
+-'  44  25  ~/pflix/pflix_download_videos_html.py
+|4,39,44,25,1740317502,"~/pflix/pflix_download_videos_html.py"
+-'  12  0  ~/tooling/digest/why_i_still_like_sublime_in_2025.txt
+|4,39,12,0,1740317462,"~/tooling/digest/why_i_still_like_sublime_in_2025.txt"
+-'  12  0  ~/tooling/digest/why_i_still_like_sublime_in_2025.txt
+|4,39,12,0,1740317462,"~/tooling/digest/why_i_still_like_sublime_in_2025.txt"
+-'  12  0  ~/tooling/digest/why_i_still_like_sublime_in_2025.txt
+|4,39,12,0,1740317462,"~/tooling/digest/why_i_still_like_sublime_in_2025.txt"
+-'  12  0  ~/tooling/digest/why_i_still_like_sublime_in_2025.txt
+|4,39,12,0,1740317462,"~/tooling/digest/why_i_still_like_sublime_in_2025.txt"
+-'  12  0  ~/tooling/digest/why_i_still_like_sublime_in_2025.txt
+|4,39,12,0,1740317462,"~/tooling/digest/why_i_still_like_sublime_in_2025.txt"
+-'  12  0  ~/tooling/digest/why_i_still_like_sublime_in_2025.txt
+|4,39,12,0,1740317462,"~/tooling/digest/why_i_still_like_sublime_in_2025.txt"
+-'  1  0  ~/tooling/digest/why_i_still_like_sublime_in_2025.txt
+|4,39,1,0,1740317459,"~/tooling/digest/why_i_still_like_sublime_in_2025.txt"
+-'  1  0  ~/tooling/digest/why_i_still_like_sublime_in_2025.txt
+|4,39,1,0,1740317459,"~/tooling/digest/why_i_still_like_sublime_in_2025.txt"
+-'  1  0  ~/tooling/digest/why_i_still_like_sublime_in_2025.txt
+|4,39,1,0,1740317459,"~/tooling/digest/why_i_still_like_sublime_in_2025.txt"
+-'  1  0  ~/tooling/digest/why_i_still_like_sublime_in_2025.txt
+|4,39,1,0,1740317459,"~/tooling/digest/why_i_still_like_sublime_in_2025.txt"
+-'  1  0  ~/tooling/digest/why_i_still_like_sublime_in_2025.txt
+|4,39,1,0,1740317459,"~/tooling/digest/why_i_still_like_sublime_in_2025.txt"
+-'  1  0  ~/tooling/digest/why_i_still_like_sublime_in_2025.txt
+|4,39,1,0,1740317459,"~/tooling/digest/why_i_still_like_sublime_in_2025.txt"
+-'  10  0  ~/pyscripts/tmp_timer.py
+|4,39,10,0,1740242717,"~/pyscripts/tmp_timer.py"
+-'  10  0  ~/pyscripts/tmp_timer.py
+|4,39,10,0,1740242717,"~/pyscripts/tmp_timer.py"
+-'  10  0  ~/pyscripts/tmp_timer.py
+|4,39,10,0,1740242717,"~/pyscripts/tmp_timer.py"
+-'  10  0  ~/pyscripts/tmp_timer.py
+|4,39,10,0,1740242717,"~/pyscripts/tmp_timer.py"
+-'  10  0  ~/pyscripts/tmp_timer.py
+|4,39,10,0,1740242717,"~/pyscripts/tmp_timer.py"
+-'  10  0  ~/pyscripts/tmp_timer.py
+|4,39,10,0,1740242717,"~/pyscripts/tmp_timer.py"
+-'  10  0  ~/pyscripts/tmp_timer.py
+|4,39,10,0,1740242717,"~/pyscripts/tmp_timer.py"
+-'  10  29  ~/pyscripts/tmp_timer.py
+|4,39,10,29,1740215859,"~/pyscripts/tmp_timer.py"
+-'  1  0  ~/pyscripts/tmp_timer.py
+|4,39,1,0,1740215854,"~/pyscripts/tmp_timer.py"
+-'  1  0  ~/pyscripts/tmp_timer.py
+|4,39,1,0,1740215854,"~/pyscripts/tmp_timer.py"
+-'  1  0  ~/pyscripts/tmp_timer.py
+|4,39,1,0,1740215854,"~/pyscripts/tmp_timer.py"
+-'  1  0  ~/pyscripts/tmp_timer.py
+|4,39,1,0,1740215854,"~/pyscripts/tmp_timer.py"
+-'  1  0  ~/pyscripts/tmp_timer.py
+|4,39,1,0,1740215854,"~/pyscripts/tmp_timer.py"
+-'  1  0  ~/pyscripts/tmp_timer.py
+|4,39,1,0,1740215854,"~/pyscripts/tmp_timer.py"
+-'  1  0  ~/pyscripts/tmp_timer.py
+|4,39,1,0,1740215854,"~/pyscripts/tmp_timer.py"
+-'  1  0  ~/pyscripts/tmp_timer.py
+|4,39,1,0,1740215854,"~/pyscripts/tmp_timer.py"
+-'  10  16  ~/pyscripts/tmp_timer.py
+|4,39,10,16,1740215772,"~/pyscripts/tmp_timer.py"
+-'  1  20  ~/pyscripts/tmp_timer.py
+|4,39,1,20,1740215749,"~/pyscripts/tmp_timer.py"
+-'  9  33  ~/pyscripts/tmp_timer.py
+|4,39,9,33,1740215748,"~/pyscripts/tmp_timer.py"
+-'  9  33  ~/pyscripts/tmp_timer.py
+|4,39,9,33,1740215748,"~/pyscripts/tmp_timer.py"
+-'  9  33  ~/pyscripts/tmp_timer.py
+|4,39,9,33,1740215748,"~/pyscripts/tmp_timer.py"
+-'  9  33  ~/pyscripts/tmp_timer.py
+|4,39,9,33,1740215748,"~/pyscripts/tmp_timer.py"
+-'  9  33  ~/pyscripts/tmp_timer.py
+|4,39,9,33,1740215748,"~/pyscripts/tmp_timer.py"
+-'  9  33  ~/pyscripts/tmp_timer.py
+|4,39,9,33,1740215748,"~/pyscripts/tmp_timer.py"
+-'  9  33  ~/pyscripts/tmp_timer.py
+|4,39,9,33,1740215748,"~/pyscripts/tmp_timer.py"
+-'  9  33  ~/pyscripts/tmp_timer.py
+|4,39,9,33,1740215748,"~/pyscripts/tmp_timer.py"
+-'  9  33  ~/pyscripts/tmp_timer.py
+|4,39,9,33,1740215748,"~/pyscripts/tmp_timer.py"
+-'  8  29  ~/pyscripts/tmp_timer.py
+|4,39,8,29,1740215738,"~/pyscripts/tmp_timer.py"
+-'  8  29  ~/pyscripts/tmp_timer.py
+|4,39,8,29,1740215738,"~/pyscripts/tmp_timer.py"
+-'  8  29  ~/pyscripts/tmp_timer.py
+|4,39,8,29,1740215738,"~/pyscripts/tmp_timer.py"
+-'  8  29  ~/pyscripts/tmp_timer.py
+|4,39,8,29,1740215738,"~/pyscripts/tmp_timer.py"
+-'  8  29  ~/pyscripts/tmp_timer.py
+|4,39,8,29,1740215738,"~/pyscripts/tmp_timer.py"
+-'  8  29  ~/pyscripts/tmp_timer.py
+|4,39,8,29,1740215738,"~/pyscripts/tmp_timer.py"
+-'  8  29  ~/pyscripts/tmp_timer.py
+|4,39,8,29,1740215738,"~/pyscripts/tmp_timer.py"
+-'  8  29  ~/pyscripts/tmp_timer.py
+|4,39,8,29,1740215738,"~/pyscripts/tmp_timer.py"
+-'  8  29  ~/pyscripts/tmp_timer.py
+|4,39,8,29,1740215738,"~/pyscripts/tmp_timer.py"
+-'  11  11  ~/pyscripts/tmp_timer.py
+|4,39,11,11,1740215727,"~/pyscripts/tmp_timer.py"
+-'  11  11  ~/pyscripts/tmp_timer.py
+|4,39,11,11,1740215727,"~/pyscripts/tmp_timer.py"
+-'  11  11  ~/pyscripts/tmp_timer.py
+|4,39,11,11,1740215727,"~/pyscripts/tmp_timer.py"
+-'  11  11  ~/pyscripts/tmp_timer.py
+|4,39,11,11,1740215727,"~/pyscripts/tmp_timer.py"
+-'  11  11  ~/pyscripts/tmp_timer.py
+|4,39,11,11,1740215727,"~/pyscripts/tmp_timer.py"
+-'  11  11  ~/pyscripts/tmp_timer.py
+|4,39,11,11,1740215727,"~/pyscripts/tmp_timer.py"
+-'  11  11  ~/pyscripts/tmp_timer.py
+|4,39,11,11,1740215727,"~/pyscripts/tmp_timer.py"
+-'  11  11  ~/pyscripts/tmp_timer.py
+|4,39,11,11,1740215727,"~/pyscripts/tmp_timer.py"
+-'  11  11  ~/pyscripts/tmp_timer.py
+|4,39,11,11,1740215727,"~/pyscripts/tmp_timer.py"
+-'  7  3  ~/pyscripts/tmp_timer.py
+|4,39,7,3,1740215709,"~/pyscripts/tmp_timer.py"
+-'  12  3  ~/pyscripts/tmp_timer.py
+|4,39,12,3,1740215709,"~/pyscripts/tmp_timer.py"
+-'  7  3  ~/pyscripts/tmp_timer.py
+|4,39,7,3,1740215709,"~/pyscripts/tmp_timer.py"
+-'  12  3  ~/pyscripts/tmp_timer.py
+|4,39,12,3,1740215709,"~/pyscripts/tmp_timer.py"
+-'  7  3  ~/pyscripts/tmp_timer.py
+|4,39,7,3,1740215709,"~/pyscripts/tmp_timer.py"
+-'  12  3  ~/pyscripts/tmp_timer.py
+|4,39,12,3,1740215709,"~/pyscripts/tmp_timer.py"
+-'  7  3  ~/pyscripts/tmp_timer.py
+|4,39,7,3,1740215709,"~/pyscripts/tmp_timer.py"
+-'  12  3  ~/pyscripts/tmp_timer.py
+|4,39,12,3,1740215709,"~/pyscripts/tmp_timer.py"
+-'  7  3  ~/pyscripts/tmp_timer.py
+|4,39,7,3,1740215709,"~/pyscripts/tmp_timer.py"
+-'  12  3  ~/pyscripts/tmp_timer.py
+|4,39,12,3,1740215709,"~/pyscripts/tmp_timer.py"
+-'  7  3  ~/pyscripts/tmp_timer.py
+|4,39,7,3,1740215709,"~/pyscripts/tmp_timer.py"
+-'  12  3  ~/pyscripts/tmp_timer.py
+|4,39,12,3,1740215709,"~/pyscripts/tmp_timer.py"
+-'  7  3  ~/pyscripts/tmp_timer.py
+|4,39,7,3,1740215709,"~/pyscripts/tmp_timer.py"
+-'  12  3  ~/pyscripts/tmp_timer.py
+|4,39,12,3,1740215709,"~/pyscripts/tmp_timer.py"
+-'  7  3  ~/pyscripts/tmp_timer.py
+|4,39,7,3,1740215709,"~/pyscripts/tmp_timer.py"
+-'  12  3  ~/pyscripts/tmp_timer.py
+|4,39,12,3,1740215709,"~/pyscripts/tmp_timer.py"
+-'  7  3  ~/pyscripts/tmp_timer.py
+|4,39,7,3,1740215709,"~/pyscripts/tmp_timer.py"
+-'  12  3  ~/pyscripts/tmp_timer.py
+|4,39,12,3,1740215709,"~/pyscripts/tmp_timer.py"
+-'  17  0  ~/pyscripts/tmp_timer.py
+|4,39,17,0,1740215702,"~/pyscripts/tmp_timer.py"
+-'  17  0  ~/pyscripts/tmp_timer.py
+|4,39,17,0,1740215702,"~/pyscripts/tmp_timer.py"
+-'  17  0  ~/pyscripts/tmp_timer.py
+|4,39,17,0,1740215702,"~/pyscripts/tmp_timer.py"
+-'  17  0  ~/pyscripts/tmp_timer.py
+|4,39,17,0,1740215702,"~/pyscripts/tmp_timer.py"
 
 # Buffer list:
-%~/.config/uv/uv-receipt.json	23	0
+%~/python_common/box/db_insert_unique.py	1	0
 
 # History of marks within files (newest to oldest):
 
+> ~/python_common/box/db_insert_unique.py
+	*	1740318679	0
+	"	1	0
+	^	16	83
+	.	17	0
+	+	24	0
+	+	5	55
+	+	6	0
+	+	6	7
+	+	5	35
+	+	2	0
+	+	4	0
+	+	2	0
+	+	5	24
+	+	19	7
+	+	6	0
+	+	5	27
+	+	6	32
+	+	18	0
+	+	9	42
+	+	17	91
+	+	17	0
+	+	8	41
+	+	10	96
+	+	12	33
+	+	13	102
+	+	15	49
+	+	16	82
+	+	16	0
+	+	17	0
+
+> ~/golang/.gitignore
+	*	1740318629	0
+	"	6	0
+	.	10	0
+	+	4	3
+	+	4	8
+	+	6	13
+	+	6	2
+	+	6	3
+	+	4	0
+	+	6	0
+	+	6	2
+	+	8	3
+	+	6	2
+	+	10	0
+	+	6	0
+	+	10	0
+	+	6	0
+	+	10	0
+
+> ~/tooling/.git/MERGE_MSG
+	*	1740317601	0
+	"	1	0
+
+> ~/tooling/digest/why_i_still_like_sublime_in_2025.txt
+	*	1740317461	0
+	"	12	0
+
+> ~/pyscripts/tmp_timer.py
+	*	1740242714	0
+	"	10	0
+	^	10	30
+	.	10	29
+	+	17	0
+	+	12	4
+	+	4	28
+	+	8	45
+	+	8	9
+	+	11	11
+	+	5	10
+	+	8	0
+	+	12	0
+	+	9	10
+	+	10	29
+
+> ~/.config/setup.bash
+	*	1740215673	0
+	"	54	0
+	^	53	0
+	.	9	0
+	+	15	0
+	+	15	54
+	+	27	0
+	+	30	28
+	+	29	0
+	+	30	1
+	+	30	0
+	+	30	5
+	+	29	1
+	+	30	0
+	+	29	0
+	+	27	0
+	+	15	23
+	+	15	0
+	+	15	25
+	+	15	0
+	+	26	37
+	+	26	1
+	+	26	0
+	+	57	33
+	+	57	51
+	+	57	0
+	+	55	0
+	+	57	0
+	+	57	1
+	+	57	0
+	+	57	1
+	+	57	38
+	+	58	0
+	+	57	4
+	+	57	16
+	+	57	0
+	+	56	0
+	+	57	1
+	+	58	53
+	+	58	0
+	+	57	0
+	+	10	3
+	+	15	0
+	+	11	0
+	+	14	0
+	+	11	30
+	+	13	57
+	+	10	23
+	+	10	0
+	+	15	0
+	+	33	20
+	+	7	25
+	+	7	0
+	+	7	90
+	+	7	27
+	+	7	25
+	+	10	0
+	+	7	0
+	+	10	0
+	+	15	0
+	+	6	0
+	+	4	24
+	+	4	0
+	+	5	0
+	+	7	0
+	+	15	0
+	+	7	0
+	+	8	0
+	+	7	0
+	+	9	0
+	+	15	0
+	+	8	0
+	+	21	0
+	+	8	0
+	+	54	0
+	+	53	0
+	+	17	0
+	+	31	0
+	+	17	0
+	+	8	0
+	+	9	0
+
+> ~/.config/setup.fish
+	*	1740215028	0
+	"	16	17
+	^	4	8
+	.	23	0
+	+	26	0
+	+	26	42
+	+	26	0
+	+	25	0
+	+	26	0
+	+	7	0
+	+	7	44
+	+	7	0
+	+	7	4
+	+	7	0
+	+	7	7
+	+	7	37
+	+	7	24
+	+	7	7
+	+	7	5
+	+	7	25
+	+	7	13
+	+	7	30
+	+	7	7
+	+	7	0
+	+	7	21
+	+	7	0
+	+	13	0
+	+	13	1
+	+	7	0
+	+	13	0
+	+	13	32
+	+	7	23
+	+	7	0
+	+	7	19
+	+	7	0
+	+	7	26
+	+	7	10
+	+	7	5
+	+	7	0
+	+	7	37
+	+	7	0
+	+	7	22
+	+	7	58
+	+	7	0
+	+	8	30
+	+	13	18
+	+	26	0
+	+	27	0
+	+	28	0
+	+	27	29
+	+	28	11
+	+	30	34
+	+	31	0
+	+	13	0
+	+	21	55
+	+	21	0
+	+	16	82
+	+	17	80
+	+	4	0
+	+	14	26
+	+	4	13
+	+	16	12
+	+	22	0
+	+	21	11
+	+	31	12
+	+	4	0
+	+	16	0
+	+	21	0
+	+	31	0
+	+	11	33
+	+	12	0
+	+	13	0
+	+	10	0
+	+	13	0
+	+	9	0
+	+	13	0
+	+	5	33
+	+	6	25
+	+	1	0
+	+	8	0
+	+	18	33
+	+	18	36
+	+	18	0
+	+	19	4
+	+	19	0
+	+	18	0
+	+	19	0
+	+	18	0
+	+	6	0
+	+	4	0
+	+	2	0
+	+	3	0
+	+	2	1
+	+	3	0
+	+	2	0
+	+	3	0
+	+	3	1
+	+	3	36
+	+	3	0
+	+	18	0
+	+	19	0
+	+	6	0
+	+	18	0
+	+	23	0
+
+> ~/pflix/pflix_download_videos_html.py
+	*	1740213279	0
+	"	44	25
+	^	42	26
+	.	42	25
+	+	63	0
+	+	40	31
+	+	63	0
+	+	1	0
+	+	62	0
+	+	5	60
+	+	9	0
+	+	40	90
+	+	40	65
+	+	62	0
+	+	40	0
+	+	40	88
+	+	40	82
+	+	62	0
+	+	45	63
+	+	46	88
+	+	47	156
+	+	48	85
+	+	62	0
+	+	48	19
+	+	52	30
+	+	62	0
+	+	5	66
+	+	62	0
+	+	53	42
+	+	62	0
+	+	36	51
+	+	56	9
+	+	60	48
+	+	3	0
+	+	61	31
+	+	61	47
+	+	61	24
+	+	22	25
+	+	18	0
+	+	8	39
+	+	19	0
+	+	40	0
+	+	40	98
+	+	40	0
+	+	54	19
+	+	53	0
+	+	40	0
+	+	52	0
+	+	53	0
+	+	56	36
+	+	54	20
+	+	37	0
+	+	40	19
+	+	53	0
+	+	54	0
+	+	56	0
+	+	47	0
+	+	43	44
+	+	40	0
+	+	43	0
+	+	53	32
+	+	66	0
+	+	67	0
+	+	61	16
+	+	62	0
+	+	25	21
+	+	26	66
+	+	29	25
+	+	30	28
+	+	32	0
+	+	32	55
+	+	34	18
+	+	34	9
+	+	27	44
+	+	28	31
+	+	32	0
+	+	30	27
+	+	31	7
+	+	26	21
+	+	32	0
+	+	34	0
+	+	41	95
+	+	61	9
+	+	56	9
+	+	49	119
+	+	61	0
+	+	57	77
+	+	58	8
+	+	60	0
+	+	56	0
+	+	61	99
+	+	61	45
+	+	55	101
+	+	61	0
+	+	60	0
+	+	36	42
+	+	53	43
+	+	38	0
+	+	44	0
+	+	38	25
+	+	42	25
+
+> ~/.config/env.bash
+	*	1740213248	0
+	"	20	0
+	^	20	0
+	.	20	0
+	+	9	0
+	+	11	0
+	+	10	0
+	+	15	0
+	+	7	0
+	+	4	0
+	+	15	0
+	+	5	0
+	+	6	0
+	+	5	112
+	+	17	0
+	+	16	0
+	+	17	138
+	+	2	65
+	+	3	60
+	+	19	45
+	+	21	0
+	+	20	0
+
+> ~/.config/fzf/.fzfrc
+	*	1740213217	0
+	"	1	0
+	.	13	0
+	+	2	0
+	+	2	1
+	+	2	37
+	+	2	0
+	+	2	1
+	+	4	0
+	+	9	210
+	+	9	0
+	+	9	166
+	+	9	1
+	+	9	17
+	+	9	0
+	+	10	0
+	+	9	23
+	+	9	14
+	+	9	34
+	+	6	0
+	+	2	0
+	+	9	20
+	+	6	1
+	+	9	0
+	+	3	0
+	+	4	0
+	+	9	0
+	+	9	21
+	+	7	1
+	+	9	0
+	+	9	58
+	+	9	0
+	+	5	0
+	+	9	0
+	+	1	0
+	+	9	0
+	+	8	0
+	+	12	0
+	+	13	0
+	+	12	0
+	+	13	0
+
+> ~/tooling/docs/fd.man
+	*	1740212527	0
+	"	183	11
+
+> ~/pflix/workflow.txt
+	*	1740105816	0
+	"	3	0
+	^	3	107
+	.	3	106
+	+	1	0
+	+	2	0
+	+	1	0
+	+	2	3
+	+	1	3
+	+	1	0
+	+	1	3
+	+	1	49
+	+	1	41
+	+	1	25
+	+	1	1
+	+	2	1
+	+	1	96
+	+	2	44
+	+	3	0
+	+	2	94
+	+	2	0
+	+	3	106
+
+> ~/pflix/data/videos/nag-iba-ang-ngiti-ni-cristy-nang-pasukan-ng-titi.html
+	*	1740105655	0
+	"	653	150
+
+> ~/pflix/pflix_download_pages_html.py
+	*	1740103394	0
+	"	38	12
+	^	38	45
+	.	38	44
+	+	34	37
+	+	35	30
+	+	36	32
+	+	37	62
+	+	38	45
+	+	61	43
+	+	61	38
+	+	62	0
+	+	61	0
+	+	61	46
+	+	61	0
+	+	61	4
+	+	61	38
+	+	61	9
+	+	43	82
+	+	43	38
+	+	44	28
+	+	45	8
+	+	61	0
+	+	48	12
+	+	60	15
+	+	61	0
+	+	56	53
+	+	56	29
+	+	56	35
+	+	56	41
+	+	56	35
+	+	56	59
+	+	56	38
+	+	57	8
+	+	40	42
+	+	42	18
+	+	56	41
+	+	56	31
+	+	41	25
+	+	46	49
+	+	47	48
+	+	61	0
+	+	60	27
+	+	49	0
+	+	93	0
+	+	93	46
+	+	93	0
+	+	69	45
+	+	93	44
+	+	93	95
+	+	93	0
+	+	70	22
+	+	72	22
+	+	93	0
+	+	79	20
+	+	1	0
+	+	78	96
+	+	2	0
+	+	67	16
+	+	93	6
+	+	93	0
+	+	93	6
+	+	70	0
+	+	71	25
+	+	78	0
+	+	79	0
+	+	77	48
+	+	78	0
+	+	93	0
+	+	76	0
+	+	75	76
+	+	78	25
+	+	84	8
+	+	85	49
+	+	86	36
+	+	87	42
+	+	93	10
+	+	93	13
+	+	93	0
+	+	87	0
+	+	93	0
+	+	87	14
+	+	87	12
+	+	87	23
+	+	93	0
+	+	88	12
+	+	93	0
+	+	87	0
+	+	90	48
+	+	87	21
+	+	88	0
+	+	91	96
+	+	92	39
+	+	67	0
+	+	65	0
+	+	80	8
+	+	82	0
+	+	38	44
+
+> ~/.vim/templates/template.py
+	*	1740103076	0
+	"	3	48
+	^	3	50
+	.	3	49
+	+	1	0
+	+	4	12
+	+	1	0
+	+	11	0
+	+	3	103
+	+	4	0
+	+	3	26
+	+	3	27
+	+	3	77
+	+	3	34
+	+	4	0
+	+	1	7
+	+	3	49
+
+> ~/pflix/requirements.txt
+	*	1740102736	0
+	"	9	3
+	^	9	4
+	.	9	3
+	+	6	13
+	+	1	2
+	+	9	3
+
+> ~/pflix/pflix_schema.sql
+	*	1740102669	0
+	"	1	0
+	^	6	23
+	.	6	13
+	+	8	8
+	+	2	41
+	+	5	24
+	+	8	0
+	+	3	21
+	+	7	20
+	+	8	0
+	+	7	17
+	+	8	0
+	+	9	17
+	+	1	5
+	+	7	9
+	+	9	0
+	+	1	26
+	+	10	26
+	+	15	26
+	+	3	27
+	+	7	0
+	+	4	0
+	+	6	13
+
+> ~/pflix/pflix_videos.py
+	*	1740102596	0
+	"	1	0
+
+> ~/pflix/pflix_stats.py
+	*	1740102579	0
+	"	44	12
+	^	44	14
+	.	44	12
+	+	58	0
+	+	14	0
+	+	6	60
+	+	15	0
+	+	8	28
+	+	2	0
+	+	6	77
+	+	4	0
+	+	15	0
+	+	21	0
+	+	27	0
+	+	17	0
+	+	21	51
+	+	54	0
+	+	54	49
+	+	54	12
+	+	14	0
+	+	54	0
+	+	18	22
+	+	27	17
+	+	28	26
+	+	28	45
+	+	54	0
+	+	31	43
+	+	54	0
+	+	53	0
+	+	9	30
+	+	19	26
+	+	29	32
+	+	53	0
+	+	52	0
+	+	32	8
+	+	33	31
+	+	34	39
+	+	31	0
+	+	52	0
+	+	34	64
+	+	40	34
+	+	41	12
+	+	58	0
+	+	57	0
+	+	40	0
+	+	36	53
+	+	40	12
+	+	41	0
+	+	51	35
+	+	21	52
+	+	38	32
+	+	39	53
+	+	40	0
+	+	39	65
+	+	49	0
+	+	45	28
+	+	46	38
+	+	47	15
+	+	48	21
+	+	42	55
+	+	48	22
+	+	42	13
+	+	44	79
+	+	21	51
+	+	30	10
+	+	21	51
+	+	44	115
+	+	30	13
+	+	21	51
+	+	18	8
+	+	28	16
+	+	32	25
+	+	28	0
+	+	29	12
+	+	29	0
+	+	32	12
+	+	33	36
+	+	34	97
+	+	17	0
+	+	27	0
+	+	18	49
+	+	43	55
+	+	11	35
+	+	12	72
+	+	43	0
+	+	44	121
+	+	45	0
+	+	44	106
+	+	34	110
+	+	45	0
+	+	44	180
+	+	44	0
+	+	45	34
+	+	44	13
+	+	45	0
+	+	44	12
+
+> ~/pflix/.gitignore
+	*	1740100616	0
+	"	16	0
+	.	1	0
+	+	1	0
+
+> ~/pflix/pflix_tags.py
+	*	1740100580	0
+	"	7	0
+	.	7	0
+	+	11	0
+	+	4	0
+	+	3	52
+	+	6	43
+	+	7	44
+	+	7	0
+
+> ~/pflix/data/pflix.db
+	*	1740100379	0
+	"	1	0
+
+> ~/pflix/pflix_scrape.py
+	*	1740100329	0
+	"	159	8
+	^	12	8
+	.	12	7
+	+	125	35
+	+	126	53
+	+	126	42
+	+	127	43
+	+	128	20
+	+	134	0
+	+	106	0
+	+	80	4
+	+	126	0
+	+	80	0
+	+	79	52
+	+	80	0
+	+	93	21
+	+	13	8
+	+	93	0
+	+	93	23
+	+	81	7
+	+	82	100
+	+	83	23
+	+	84	42
+	+	93	4
+	+	93	40
+	+	85	59
+	+	93	23
+	+	85	0
+	+	85	22
+	+	86	48
+	+	90	27
+	+	91	34
+	+	92	60
+	+	84	47
+	+	78	72
+	+	127	25
+	+	128	29
+	+	87	7
+	+	88	125
+	+	117	59
+	+	117	4
+	+	128	53
+	+	117	0
+	+	129	11
+	+	117	81
+	+	1	0
+	+	117	0
+	+	107	0
+	+	128	30
+	+	129	31
+	+	130	4
+	+	29	0
+	+	26	45
+	+	130	37
+	+	147	0
+	+	73	46
+	+	74	4
+	+	131	28
+	+	128	39
+	+	129	0
+	+	130	0
+	+	95	62
+	+	99	7
+	+	101	51
+	+	95	87
+	+	106	0
+	+	97	32
+	+	104	57
+	+	105	34
+	+	101	39
+	+	103	41
+	+	106	0
+	+	124	28
+	+	133	28
+	+	134	0
+	+	122	0
+	+	119	36
+	+	120	41
+	+	144	0
+	+	122	0
+	+	121	73
+	+	122	51
+	+	122	0
+	+	122	31
+	+	122	0
+	+	99	0
+	+	98	34
+	+	99	20
+	+	96	27
+	+	7	29
+	+	8	23
+	+	101	19
+	+	103	44
+	+	102	23
+	+	101	0
+	+	122	34
+	+	122	11
+	+	122	15
+	+	122	0
+	+	123	0
+	+	3	7
+	+	5	7
+	+	12	7
+
+> ~/pflix/pflix_scrape_page.py
+	*	1740100326	0
+	"	59	0
+	^	41	13
+	.	43	0
+	+	12	0
+	+	4	0
+	+	2	0
+	+	24	0
+	+	51	0
+	+	64	0
+	+	63	0
+	+	5	0
+	+	61	31
+	+	5	0
+	+	9	0
+	+	67	0
+	+	58	0
+	+	24	0
+	+	58	0
+	+	6	0
+	+	61	0
+	+	50	0
+	+	27	0
+	+	2	0
+	+	26	40
+	+	49	0
+	+	31	0
+	+	28	0
+	+	30	7
+	+	33	22
+	+	37	52
+	+	38	35
+	+	49	0
+	+	42	0
+	+	5	0
+	+	47	26
+	+	49	19
+	+	30	0
+	+	42	25
+	+	8	0
+	+	35	69
+	+	5	0
+	+	36	31
+	+	37	0
+	+	49	0
+	+	47	0
+	+	42	42
+	+	43	8
+	+	47	29
+	+	47	65
+	+	32	51
+	+	49	0
+	+	48	0
+	+	29	33
+	+	50	0
+	+	48	27
+	+	55	0
+	+	56	7
+	+	57	0
+	+	59	26
+	+	60	0
+	+	70	0
+	+	67	13
+	+	67	0
+	+	68	19
+	+	70	13
+	+	69	14
+	+	68	31
+	+	47	30
+	+	47	12
+	+	47	0
+	+	44	26
+	+	47	0
+	+	55	0
+	+	47	0
+	+	55	38
+	+	45	30
+	+	46	12
+	+	47	0
+	+	48	0
+	+	79	0
+	+	70	15
+	+	70	0
+	+	70	24
+	+	70	34
+	+	70	19
+	+	70	5
+	+	70	39
+	+	1	0
+	+	70	0
+	+	67	0
+	+	72	0
+	+	74	0
+	+	73	18
+	+	71	0
+	+	72	8
+	+	73	11
+	+	74	0
+	+	5	7
+	+	39	8
+	+	40	27
+	+	41	12
+	+	42	0
+	+	43	0
+
+> ~/pflix/pflix_populate_db.py
+	*	1740098962	0
+	"	31	51
+	^	46	69
+	.	31	51
+	+	51	0
+	+	48	4
+	+	7	10
+	+	23	42
+	+	24	64
+	+	25	12
+	+	48	0
+	+	25	18
+	+	48	0
+	+	8	28
+	+	31	4
+	+	48	0
+	+	35	16
+	+	2	0
+	+	48	0
+	+	27	0
+	+	31	25
+	+	48	0
+	+	48	27
+	+	48	0
+	+	26	21
+	+	3	0
+	+	47	0
+	+	35	12
+	+	41	33
+	+	47	21
+	+	31	26
+	+	48	0
+	+	19	14
+	+	19	0
+	+	47	26
+	+	31	16
+	+	1	0
+	+	32	68
+	+	1	0
+	+	32	74
+	+	47	0
+	+	31	51
+	+	9	25
+	+	21	13
+	+	11	13
+	+	12	0
+	+	13	38
+	+	19	0
+	+	13	32
+	+	14	4
+	+	16	30
+	+	18	22
+	+	19	0
+	+	17	22
+	+	22	12
+	+	16	27
+	+	31	51
+	+	47	0
+	+	28	31
+	+	36	15
+	+	41	0
+	+	36	70
+	+	37	8
+	+	38	93
+	+	38	0
+	+	38	139
+	+	45	22
+	+	47	0
+	+	38	0
+	+	38	165
+	+	37	53
+	+	37	42
+	+	41	53
+	+	41	41
+	+	37	0
+	+	29	0
+	+	41	0
+	+	43	0
+	+	37	0
+	+	30	0
+	+	41	0
+	+	44	0
+	+	46	98
+	+	42	10
+	+	46	68
+	+	31	51
+
+> ~/python_common/box/dbutils.py
+	*	1740098471	0
+	"	22	4
+	^	47	31
+	.	47	30
+	+	1	7
+	+	47	30
+
+> ~/python_common/box/db_api_base.py
+	*	1740098404	0
+	"	37	0
+	^	37	27
+	.	37	26
+	+	4	0
+	+	4	77
+	+	4	0
+	+	4	55
+	+	4	16
+	+	4	0
+	+	4	31
+	+	4	0
+	+	4	24
+	+	4	0
+	+	4	31
+	+	4	35
+	+	4	0
+	+	4	19
+	+	4	29
+	+	4	24
+	+	4	0
+	+	4	24
+	+	4	16
+	+	4	0
+	+	4	31
+	+	4	0
+	+	4	35
+	+	4	0
+	+	4	19
+	+	4	0
+	+	4	24
+	+	4	0
+	+	4	23
+	+	4	0
+	+	4	64
+	+	4	14
+	+	40	0
+	+	4	0
+	+	3	0
+	+	5	0
+	+	37	64
+	+	5	0
+	+	38	0
+	+	38	51
+	+	3	0
+	+	38	7
+	+	59	0
+	+	58	6
+	+	58	0
+	+	45	4
+	+	44	40
+	+	58	0
+	+	57	33
+	+	98	0
+	+	112	51
+	+	97	0
+	+	95	0
+	+	148	52
+	+	95	0
+	+	76	9
+	+	85	9
+	+	2	16
+	+	3	0
+	+	37	64
+	+	3	0
+	+	105	0
+	+	106	0
+	+	1	0
+	+	37	26
+	a	85	9
+	b	85	9
+
+> ~/python_common/box/db.py
+	*	1740098220	0
+	"	472	0
+	^	469	12
+	.	469	11
+	+	5	7
+	+	7	7
+	+	8	7
+	+	9	7
+	+	469	11
+
+> ~/.config/atuin/config.toml
+	*	1740098055	0
+	"	188	0
+	^	64	13
+	.	64	0
+	+	41	22
+	+	42	6
+	+	64	12
+	+	68	0
+	+	64	0
+
+> ~/pyscripts/reddit_gallery_downloader.py
+	*	1740097904	0
+	"	10	4
+	.	15	0
+	+	23	0
+	+	8	119
+	+	18	0
+	+	4	14
+	+	9	40
+	+	8	123
+	+	10	26
+	+	11	8
+	+	12	42
+	+	13	11
+	+	14	12
+	+	3	48
+	+	14	92
+	+	15	14
+	+	17	0
+	+	13	0
+	+	16	18
+	+	17	0
+	+	16	9
+	+	5	10
+	+	16	36
+	+	12	70
+	+	14	128
+	+	8	0
+	+	15	0
+
+> ~/pflix/models/model_video.py
+	*	1740021968	0
+	"	1	0
+	^	10	10
+	.	10	9
+	+	11	0
+	+	2	32
+	+	10	17
+	+	9	13
+	+	8	16
+	+	7	11
+	+	11	0
+	+	5	12
+	+	11	23
+	+	12	28
+	+	8	26
+	+	16	11
+	+	9	27
+	+	18	9
+	+	17	55
+	+	18	58
+	+	10	9
+
+> ~/pflix/schema.sql
+	*	1740021917	0
+	"	1	0
+
+> ~/pflix/.direnv/python-3.10.12/lib/python3.10/site-packages/box/markup.py
+	*	1740018500	0
+	"	28	4
+
+> ~/pflix/.direnv/python-3.10.12/lib/python3.10/site-packages/box/get.py
+	*	1740015112	0
+	"	65	26
+	^	227	17
+	.	227	17
+	+	227	17
+
+> ~/pflix/data/urls.json
+	*	1740013605	0
+	"	2	0
+	^	2	47
+	.	2	46
+	+	4	51
+	+	10	0
+	+	4	51
+	+	5	57
+	+	10	0
+	+	5	56
+	+	10	0
+	+	4	18
+	+	5	61
+	+	6	8
+	+	10	0
+	+	7	45
+	+	8	0
+	+	10	0
+	+	5	0
+	+	2	0
+	+	9	16
+	+	4	0
+	+	2	0
+	+	3	55
+	+	2	46
+
+> ~/pflix/pflix_pretty.py
+	*	1740012891	0
+	"	3	7
+	^	3	8
+	.	3	7
+	+	46	0
+	+	30	33
+	+	42	22
+	+	42	27
+	+	42	0
+	+	31	13
+	+	42	0
+	+	31	9
+	+	4	14
+	+	42	0
+	+	5	28
+	+	32	25
+	+	33	23
+	+	42	4
+	+	34	47
+	+	42	0
+	+	37	19
+	+	38	45
+	+	39	4
+	+	42	0
+	+	6	10
+	+	41	63
+	+	42	0
+	+	30	11
+	+	1	0
+	+	9	28
+	+	10	25
+	+	28	0
+	+	14	18
+	+	15	37
+	+	16	69
+	+	17	4
+	+	28	0
+	+	18	106
+	+	19	23
+	+	28	0
+	+	20	29
+	+	21	28
+	+	7	10
+	+	41	0
+	+	35	48
+	+	22	8
+	+	23	56
+	+	24	20
+	+	25	48
+	+	26	14
+	+	24	24
+	+	26	14
+	+	27	24
+	+	36	21
+	+	1	7
+	+	3	7
+
+> ~/pyscripts/secrets.env
+	*	1740012356	0
+	"	1	0
+	^	1	61
+	.	1	60
+	+	1	15
+	+	2	8
+	+	1	53
+	+	2	0
+	+	1	60
+
+> ~/pflix/seconds.py
+	*	1740011765	0
+	"	1	0
+
+> ~/pflix/pflix_scrape_page.yp
+	*	1740010295	0
+	"	1	0
+	.	2	0
+	+	2	0
+
+> ~/hateoas/models/model_attrs.py
+	*	1740010233	0
+	"	1	0
+	^	41	34
+	.	41	33
+	+	33	0
+	+	41	33
+
+> ~/.vim/vimrc
+	*	1740009996	0
+	"	47	13
+	^	41	9
+	.	87	0
+	+	1	41
+	+	1	44
+	+	1	40
+	+	1	28
+	+	1	0
+	+	1	11
+	+	1	18
+	+	1	43
+	+	1	64
+	+	1	54
+	+	1	0
+	+	1	31
+	+	1	0
+	+	1	6
+	+	1	0
+	+	1	1
+	+	1	0
+	+	1	80
+	+	1	75
+	+	1	0
+	+	1	52
+	+	1	41
+	+	1	0
+	+	1	26
+	+	1	0
+	+	1	22
+	+	1	25
+	+	1	0
+	+	1	57
+	+	1	59
+	+	1	55
+	+	1	0
+	+	1	25
+	+	1	1
+	+	1	0
+	+	1	24
+	+	1	0
+	+	1	12
+	+	1	0
+	+	1	49
+	+	1	0
+	+	1	13
+	+	1	0
+	+	1	16
+	+	1	0
+	+	1	25
+	+	1	3
+	+	1	5
+	+	1	16
+	+	1	0
+	+	1	16
+	+	1	0
+	+	1	5
+	+	1	3
+	+	1	0
+	+	1	4
+	+	1	0
+	+	1	40
+	+	1	36
+	+	1	0
+	+	1	26
+	+	1	9
+	+	1	0
+	+	1	31
+	+	1	4
+	+	1	30
+	+	1	4
+	+	1	0
+	+	1	5
+	+	1	8
+	+	1	29
+	+	1	33
+	+	1	1
+	+	1	21
+	+	1	20
+	+	1	1
+	+	1	0
+	+	124	0
+	+	428	0
+	+	1150	0
+	+	576	5
+	+	94	0
+	+	46	0
+	+	94	25
+	+	94	21
+	+	94	1
+	+	66	33
+	+	94	0
+	+	47	0
+	+	40	0
+	+	37	40
+	+	37	6
+	+	38	40
+	+	40	0
+	+	41	0
+	+	37	0
+	+	314	0
+	+	87	0
+
+> /usr/share/vim/vim90/doc/filetype.txt
+	*	1739010904	0
+	"	689	8
+
+> ~/.vim/ssh-copy-id manpage
+	*	1739010868	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> /usr/share/vim/vim90/doc/usr_12.txt
+	*	1739010864	0
+	"	232	27
+
+> ~/.vim/plugin/goto_method.vim
+	*	1739010737	0
+	"	108	70
+	^	103	16
+	.	103	16
+	+	43	59
+	+	44	0
+	+	43	0
+	+	44	64
+	+	45	0
+	+	44	0
+	+	45	0
+	+	46	0
+	+	45	0
+	+	46	0
+	+	45	46
+	+	31	10
+	+	101	0
+	+	102	53
+	+	31	0
+	+	102	73
+	+	31	0
+	+	29	0
+	+	31	0
+	+	30	13
+	+	103	16
+
+> ~/tmp/vim-plugins-categorized.txt
+	*	1739006343	0
+	"	11	6
+	^	11	6
+	.	11	0
+	+	5	0
+	+	23	0
+	+	22	1
+	+	20	0
+	+	22	0
+	+	36	0
+	+	27	17
+	+	23	0
+	+	36	0
+	+	23	0
+	+	38	0
+	+	23	0
+	+	28	0
+	+	39	0
+	+	29	0
+	+	35	0
+	+	23	0
+	+	30	0
+	+	22	0
+	+	21	0
+	+	23	0
+	+	39	0
+	+	23	0
+	+	41	0
+	+	23	0
+	+	42	0
+	+	22	0
+	+	34	0
+	+	32	0
+	+	36	0
+	+	33	0
+	+	22	0
+	+	31	0
+	+	24	0
+	+	37	0
+	+	24	0
+	+	23	0
+	+	19	0
+	+	23	0
+	+	2	0
+	+	23	0
+	+	13	0
+	+	18	0
+	+	24	0
+	+	8	0
+	+	5	0
+	+	23	0
+	+	10	0
+	+	23	0
+	+	11	0
+	+	23	0
+	+	12	0
+	+	23	0
+	+	19	0
+	+	16	0
+	+	1	10
+	+	7	18
+	+	17	14
+	+	23	0
+	+	24	0
+	+	21	0
+	+	19	0
+	+	11	0
+
+> ~/tooling/ssh-knowledge.txt
+	*	1738968069	0
+	"	14	28
+	^	14	26
+	.	14	25
+	+	39	11
+	+	39	0
+	+	24	18
+	+	26	0
+	+	25	0
+	+	39	77
+	+	39	67
+	+	41	50
+	+	49	0
+	+	30	4
+	+	35	5
+	+	35	28
+	+	30	79
+	+	39	4
+	+	35	85
+	+	39	0
+	+	35	0
+	+	29	0
+	+	30	12
+	+	29	0
+	+	30	0
+	+	35	0
+	+	42	33
+	+	48	22
+	+	48	29
+	+	48	28
+	+	48	43
+	+	48	0
+	+	42	62
+	+	44	4
+	+	48	0
+	+	43	16
+	+	47	6
+	+	43	8
+	+	31	40
+	+	27	0
+	+	35	0
+	+	34	46
+	+	39	0
+	+	35	0
+	+	41	0
+	+	35	0
+	+	39	0
+	+	35	0
+	+	39	0
+	+	36	42
+	+	35	0
+	+	35	17
+	+	39	17
+	+	34	17
+	+	32	0
+	+	35	0
+	+	39	0
+	+	35	0
+	+	37	0
+	+	36	132
+	+	34	4
+	+	35	4
+	+	37	4
+	+	38	4
+	+	39	4
+	+	33	37
+	+	40	0
+	+	33	13
+	+	40	0
+	+	33	83
+	+	40	81
+	+	33	24
+	+	40	22
+	+	20	75
+	+	24	0
+	+	29	0
+	+	28	76
+	+	49	379
+	+	49	0
+	+	16	0
+	+	19	0
+	+	16	0
+	+	17	75
+	+	17	78
+	+	15	0
+	+	1	15
+	+	5	30
+	+	6	34
+	+	7	19
+	+	7	0
+	+	4	0
+	+	6	116
+	+	5	84
+	+	4	22
+	+	10	43
+	+	11	71
+	+	12	25
+	+	13	44
+	+	14	58
+	+	15	0
+	+	14	0
+	+	15	0
+	+	14	25
+
+> ~/tooling/devops-bash-resources.txt
+	*	1738960730	0
+	"	1	0
+	^	2	6
+	.	11	0
+	+	11	0
+	+	10	197
+	+	11	0
+	+	7	119
+	+	7	36
+	+	8	0
+	+	10	54
+	+	9	0
+	+	6	0
+	+	11	0
+	+	3	0
+	+	11	0
+	+	3	0
+	+	4	0
+	+	3	0
+	+	2	5
+	+	11	0
+
 > ~/.config/uv/uv-receipt.json
-	*	1738512513	0
-	"	23	0
+	*	1738865864	0
+	"	1	0
 	.	1	0
 	+	1	0
 
@@ -18798,109 +20571,6 @@ $
 	a	339	42
 	b	339	43
 
-> ~/.vim/vimrc
-	*	1738503538	0
-	"	314	0
-	^	41	9
-	.	316	0
-	+	1	41
-	+	1	44
-	+	1	40
-	+	1	28
-	+	1	0
-	+	1	11
-	+	1	18
-	+	1	43
-	+	1	64
-	+	1	54
-	+	1	0
-	+	1	31
-	+	1	0
-	+	1	6
-	+	1	0
-	+	1	1
-	+	1	0
-	+	1	80
-	+	1	75
-	+	1	0
-	+	1	52
-	+	1	41
-	+	1	0
-	+	1	26
-	+	1	0
-	+	1	22
-	+	1	25
-	+	1	0
-	+	1	57
-	+	1	59
-	+	1	55
-	+	1	0
-	+	1	25
-	+	1	1
-	+	1	0
-	+	1	24
-	+	1	0
-	+	1	12
-	+	1	0
-	+	1	49
-	+	1	0
-	+	1	13
-	+	1	0
-	+	1	16
-	+	1	0
-	+	1	25
-	+	1	3
-	+	1	5
-	+	1	16
-	+	1	0
-	+	1	16
-	+	1	0
-	+	1	5
-	+	1	3
-	+	1	0
-	+	1	4
-	+	1	0
-	+	1	40
-	+	1	36
-	+	1	0
-	+	1	26
-	+	1	9
-	+	1	0
-	+	1	31
-	+	1	4
-	+	1	30
-	+	1	4
-	+	1	0
-	+	1	5
-	+	1	8
-	+	1	29
-	+	1	33
-	+	1	1
-	+	1	21
-	+	1	20
-	+	1	1
-	+	1	0
-	+	126	0
-	+	430	0
-	+	1152	0
-	+	578	5
-	+	96	0
-	+	46	0
-	+	96	25
-	+	96	21
-	+	96	1
-	+	66	33
-	+	96	0
-	+	47	0
-	+	40	0
-	+	37	40
-	+	37	6
-	+	38	40
-	+	40	0
-	+	41	0
-	+	37	0
-	+	316	0
-
 > ~/.vim/.vimspector.json
 	*	1738479617	0
 	"	1	0
@@ -18918,111 +20588,6 @@ $
 	+	13	30
 	+	13	32
 	+	13	0
-
-> ~/tooling/ssh-knowledge.txt
-	*	1738479347	0
-	"	1	0
-	^	14	26
-	.	14	25
-	+	39	11
-	+	39	0
-	+	24	18
-	+	26	0
-	+	25	0
-	+	39	77
-	+	39	67
-	+	41	50
-	+	49	0
-	+	30	4
-	+	35	5
-	+	35	28
-	+	30	79
-	+	39	4
-	+	35	85
-	+	39	0
-	+	35	0
-	+	29	0
-	+	30	12
-	+	29	0
-	+	30	0
-	+	35	0
-	+	42	33
-	+	48	22
-	+	48	29
-	+	48	28
-	+	48	43
-	+	48	0
-	+	42	62
-	+	44	4
-	+	48	0
-	+	43	16
-	+	47	6
-	+	43	8
-	+	31	40
-	+	27	0
-	+	35	0
-	+	34	46
-	+	39	0
-	+	35	0
-	+	41	0
-	+	35	0
-	+	39	0
-	+	35	0
-	+	39	0
-	+	36	42
-	+	35	0
-	+	35	17
-	+	39	17
-	+	34	17
-	+	32	0
-	+	35	0
-	+	39	0
-	+	35	0
-	+	37	0
-	+	36	132
-	+	34	4
-	+	35	4
-	+	37	4
-	+	38	4
-	+	39	4
-	+	33	37
-	+	40	0
-	+	33	13
-	+	40	0
-	+	33	83
-	+	40	81
-	+	33	24
-	+	40	22
-	+	20	75
-	+	24	0
-	+	29	0
-	+	28	76
-	+	49	379
-	+	49	0
-	+	16	0
-	+	19	0
-	+	16	0
-	+	17	75
-	+	17	78
-	+	15	0
-	+	1	15
-	+	5	30
-	+	6	34
-	+	7	19
-	+	7	0
-	+	4	0
-	+	6	116
-	+	5	84
-	+	4	22
-	+	10	43
-	+	11	71
-	+	12	25
-	+	13	44
-	+	14	58
-	+	15	0
-	+	14	0
-	+	15	0
-	+	14	25
 
 > ~/shopping/scaffold-and-validate.py
 	*	1738197005	0
@@ -19366,14 +20931,6 @@ $
 	*	1738180848	0
 	"	1	0
 
-> ~/hateoas/models/model_attrs.py
-	*	1738180373	0
-	"	2	7
-	^	41	34
-	.	41	33
-	+	33	0
-	+	41	33
-
 > ~/hateoas/models/model_pydantic.py
 	*	1738180368	0
 	"	56	0
@@ -19440,22 +20997,6 @@ $
 	+	15	1
 	+	15	0
 
-> ~/golang/.gitignore
-	*	1738179065	0
-	"	1	0
-	^	9	4
-	.	9	3
-	+	4	3
-	+	4	8
-	+	7	13
-	+	6	2
-	+	7	3
-	+	4	0
-	+	6	0
-	+	7	0
-	+	8	2
-	+	9	3
-
 > ~/disc-bot/data/guilds.json
 	*	1738178198	0
 	"	9	19
@@ -19496,17 +21037,6 @@ $
 > ~/.vim/plugged/vim-jsonpath/doc/jsonpath.txt
 	*	1738157673	0
 	"	86	67
-
-> ~/.config/atuin/config.toml
-	*	1738157402	0
-	"	64	0
-	^	64	2
-	.	64	0
-	+	41	22
-	+	42	6
-	+	64	12
-	+	68	0
-	+	64	0
 
 > ~/tooling/json-sqlite-third-party-tools.txt
 	*	1738157136	0
@@ -19927,17 +21457,6 @@ $
 	+	63	0
 	a	136	16
 
-> ~/pyscripts/secrets.env
-	*	1738066333	0
-	"	1	60
-	^	1	61
-	.	1	60
-	+	1	15
-	+	2	8
-	+	1	53
-	+	2	0
-	+	1	60
-
 > ~/tooling/shell-completion-behaviour.txt
 	*	1738063618	0
 	"	1	0
@@ -20337,10 +21856,6 @@ $
 	+	13	1
 	+	11	1
 
-> ~/tooling/docs/fd.man
-	*	1738026473	0
-	"	183	11
-
 > ~/.vim/ide.vim
 	*	1737983565	0
 	"	213	0
@@ -20453,27 +21968,6 @@ $
 	+	56	0
 	+	59	0
 	+	58	0
-
-> ~/.config/env.bash
-	*	1737786624	0
-	"	1	0
-	^	3	61
-	.	3	60
-	+	9	0
-	+	11	0
-	+	10	0
-	+	15	0
-	+	7	0
-	+	4	0
-	+	15	0
-	+	5	0
-	+	6	0
-	+	5	112
-	+	17	0
-	+	16	0
-	+	17	138
-	+	2	65
-	+	3	60
 
 > /tmp/crontab.REExyS/crontab
 	*	1737757081	0
@@ -20617,130 +22111,6 @@ $
 > ~/.vim/ftplugin/todo.vim:95:1:function! s:HighlightExistingFiles()
 	*	1737564857	0
 	"	1	0
-
-> ~/.config/fzf/.fzfrc
-	*	1737564693	0
-	"	1	0
-	.	13	0
-	+	2	0
-	+	2	1
-	+	2	37
-	+	2	0
-	+	2	1
-	+	4	0
-	+	9	210
-	+	9	0
-	+	9	166
-	+	9	1
-	+	9	17
-	+	9	0
-	+	10	0
-	+	9	23
-	+	9	14
-	+	9	34
-	+	6	0
-	+	2	0
-	+	9	20
-	+	6	1
-	+	9	0
-	+	3	0
-	+	4	0
-	+	9	0
-	+	9	21
-	+	7	1
-	+	9	0
-	+	9	58
-	+	9	0
-	+	5	0
-	+	9	0
-	+	1	0
-	+	9	0
-	+	8	0
-	+	12	0
-	+	13	0
-	+	12	0
-	+	13	0
-
-> ~/.config/setup.bash
-	*	1737564543	0
-	"	8	0
-	^	54	0
-	.	18	0
-	+	16	0
-	+	16	54
-	+	28	0
-	+	31	28
-	+	30	0
-	+	31	1
-	+	31	0
-	+	31	5
-	+	30	1
-	+	31	0
-	+	30	0
-	+	28	0
-	+	16	23
-	+	16	0
-	+	16	25
-	+	16	0
-	+	27	37
-	+	27	1
-	+	27	0
-	+	58	33
-	+	58	51
-	+	58	0
-	+	56	0
-	+	58	0
-	+	58	1
-	+	58	0
-	+	58	1
-	+	58	38
-	+	59	0
-	+	58	4
-	+	58	16
-	+	58	0
-	+	57	0
-	+	58	1
-	+	59	53
-	+	59	0
-	+	58	0
-	+	11	3
-	+	16	0
-	+	12	0
-	+	15	0
-	+	12	30
-	+	14	57
-	+	11	23
-	+	11	0
-	+	16	0
-	+	34	20
-	+	7	25
-	+	7	0
-	+	7	90
-	+	7	27
-	+	7	25
-	+	11	0
-	+	7	0
-	+	11	0
-	+	16	0
-	+	6	0
-	+	4	24
-	+	4	0
-	+	5	0
-	+	7	0
-	+	16	0
-	+	7	0
-	+	8	0
-	+	7	0
-	+	10	0
-	+	16	0
-	+	8	0
-	+	22	0
-	+	8	0
-	+	55	0
-	+	54	0
-	+	18	0
-	+	32	0
-	+	18	0
 
 > ~/bash/python-direnv.bash
 	*	1737564517	0
@@ -21433,32 +22803,6 @@ $
 	+	3	0
 	+	1	0
 	+	2	0
-
-> ~/.vim/plugin/goto_method.vim
-	*	1736544117	0
-	"	30	0
-	^	30	14
-	.	30	13
-	+	43	59
-	+	44	0
-	+	43	0
-	+	44	64
-	+	45	0
-	+	44	0
-	+	45	0
-	+	46	0
-	+	45	0
-	+	46	0
-	+	45	46
-	+	31	10
-	+	101	0
-	+	102	53
-	+	31	0
-	+	102	73
-	+	31	0
-	+	29	0
-	+	31	0
-	+	30	13
 
 > ~/tooling/docs/tmux.man
 	*	1736544113	0
@@ -22567,111 +23911,6 @@ $
 	+	15	0
 	+	8	0
 	+	7	0
-
-> ~/.config/setup.fish
-	*	1736027396	0
-	"	1	0
-	.	23	0
-	+	26	0
-	+	26	42
-	+	26	0
-	+	25	0
-	+	26	0
-	+	7	0
-	+	7	44
-	+	7	0
-	+	7	4
-	+	7	0
-	+	7	7
-	+	7	37
-	+	7	24
-	+	7	7
-	+	7	5
-	+	7	25
-	+	7	13
-	+	7	30
-	+	7	7
-	+	7	0
-	+	7	21
-	+	7	0
-	+	13	0
-	+	13	1
-	+	7	0
-	+	13	0
-	+	13	32
-	+	7	23
-	+	7	0
-	+	7	19
-	+	7	0
-	+	7	26
-	+	7	10
-	+	7	5
-	+	7	0
-	+	7	37
-	+	7	0
-	+	7	22
-	+	7	58
-	+	7	0
-	+	8	30
-	+	13	18
-	+	26	0
-	+	27	0
-	+	28	0
-	+	27	29
-	+	28	11
-	+	30	34
-	+	31	0
-	+	13	0
-	+	21	55
-	+	21	0
-	+	16	82
-	+	17	80
-	+	4	0
-	+	14	26
-	+	4	13
-	+	16	12
-	+	22	0
-	+	21	11
-	+	31	12
-	+	4	0
-	+	16	0
-	+	21	0
-	+	31	0
-	+	11	33
-	+	12	0
-	+	13	0
-	+	10	0
-	+	13	0
-	+	9	0
-	+	13	0
-	+	5	33
-	+	6	25
-	+	1	0
-	+	8	0
-	+	18	33
-	+	18	36
-	+	18	0
-	+	19	4
-	+	19	0
-	+	18	0
-	+	19	0
-	+	18	0
-	+	6	0
-	+	4	0
-	+	2	0
-	+	3	0
-	+	2	1
-	+	3	0
-	+	2	0
-	+	3	0
-	+	3	1
-	+	3	36
-	+	3	0
-	+	18	0
-	+	19	0
-	+	6	0
-	+	18	0
-	+	23	0
 
 > ~/python-types/page_lsp.py
 	*	1735983184	0
@@ -26650,79 +27889,6 @@ $
 	+	4	0
 	+	8	0
 
-> ~/python_common/box/db_api_base.py
-	*	1732731410	0
-	"	1	0
-	^	37	27
-	.	37	26
-	+	4	0
-	+	4	77
-	+	4	0
-	+	4	55
-	+	4	16
-	+	4	0
-	+	4	31
-	+	4	0
-	+	4	24
-	+	4	0
-	+	4	31
-	+	4	35
-	+	4	0
-	+	4	19
-	+	4	29
-	+	4	24
-	+	4	0
-	+	4	24
-	+	4	16
-	+	4	0
-	+	4	31
-	+	4	0
-	+	4	35
-	+	4	0
-	+	4	19
-	+	4	0
-	+	4	24
-	+	4	0
-	+	4	23
-	+	4	0
-	+	4	64
-	+	4	14
-	+	40	0
-	+	4	0
-	+	3	0
-	+	5	0
-	+	37	64
-	+	5	0
-	+	38	0
-	+	38	51
-	+	3	0
-	+	38	7
-	+	59	0
-	+	58	6
-	+	58	0
-	+	45	4
-	+	44	40
-	+	58	0
-	+	57	33
-	+	98	0
-	+	112	51
-	+	97	0
-	+	95	0
-	+	148	52
-	+	95	0
-	+	76	9
-	+	85	9
-	+	2	16
-	+	3	0
-	+	37	64
-	+	3	0
-	+	105	0
-	+	106	0
-	+	1	0
-	+	37	26
-	a	85	9
-	b	85	9
-
 > ~/ui-components-css/filter-and-pagination-schemas.txt
 	*	1732727631	0
 	"	1	0
@@ -27278,25 +28444,6 @@ $
 	+	7	7
 	+	16	11
 	+	18	22
-
-> ~/python_common/box/dbutils.py
-	*	1732399245	0
-	"	6	0
-	^	47	31
-	.	47	30
-	+	1	7
-	+	47	30
-
-> ~/python_common/box/db.py
-	*	1732399145	0
-	"	1	0
-	^	469	12
-	.	469	11
-	+	5	7
-	+	7	7
-	+	8	7
-	+	9	7
-	+	469	11
 
 > ~/hateoas/schema/clips.sql
 	*	1732395762	0
@@ -27947,25 +29094,6 @@ $
 	+	3	7
 	+	4	7
 	+	5	7
-
-> ~/.vim/templates/template.py
-	*	1732281227	0
-	"	3	0
-	^	3	8
-	.	3	7
-	+	1	0
-	+	4	12
-	+	1	0
-	+	11	0
-	+	3	103
-	+	4	0
-	+	3	26
-	+	3	27
-	+	3	77
-	+	3	34
-	+	4	0
-	+	1	7
-	+	3	7
 
 > ~/reddit-user-comments/.direnv/python-3.10.12/lib/python3.10/site-packages/box/reltools.py
 	*	1732280827	0
@@ -29828,133 +30956,6 @@ $
 	+	14	16
 	+	50	0
 
-> ~/pflix/pflix_scrape.py
-	*	1731275075	0
-	"	105	27
-	^	95	28
-	.	95	27
-	+	104	0
-	+	77	50
-	+	104	4
-	+	133	21
-	+	140	0
-	+	139	3
-	+	140	0
-	+	133	0
-	+	133	4
-	+	134	0
-	+	116	0
-	+	133	0
-	+	124	35
-	+	125	53
-	+	125	42
-	+	126	43
-	+	127	20
-	+	133	0
-	+	104	0
-	+	79	4
-	+	125	0
-	+	79	0
-	+	78	52
-	+	79	0
-	+	92	21
-	+	12	8
-	+	92	0
-	+	92	23
-	+	80	7
-	+	81	100
-	+	82	23
-	+	83	42
-	+	92	4
-	+	92	40
-	+	84	59
-	+	92	23
-	+	84	0
-	+	84	22
-	+	85	48
-	+	89	27
-	+	90	34
-	+	91	60
-	+	83	47
-	+	77	72
-	+	126	25
-	+	127	29
-	+	86	7
-	+	87	125
-	+	115	59
-	+	115	4
-	+	127	53
-	+	115	0
-	+	128	11
-	+	115	81
-	+	1	0
-	+	115	0
-	+	105	0
-	+	127	30
-	+	128	31
-	+	129	4
-	+	28	0
-	+	25	45
-	+	129	37
-	+	146	0
-	+	72	46
-	+	73	4
-	+	130	28
-	+	127	39
-	+	128	0
-	+	129	0
-	+	94	62
-	+	98	7
-	+	100	51
-	+	94	87
-	+	104	0
-	+	96	32
-	+	102	57
-	+	103	34
-	+	100	39
-	+	101	41
-	+	104	0
-	+	123	28
-	+	132	28
-	+	133	0
-	+	122	0
-	+	117	36
-	+	118	41
-	+	143	0
-	+	121	0
-	+	119	73
-	+	120	51
-	+	121	0
-	+	120	31
-	+	121	0
-	+	98	0
-	+	97	34
-	+	98	20
-	+	95	27
-
-> ~/pflix/data/urls.json
-	*	1731265162	0
-	"	8	16
-	^	8	17
-	.	8	16
-	+	3	51
-	+	9	0
-	+	3	51
-	+	4	57
-	+	9	0
-	+	4	56
-	+	9	0
-	+	3	18
-	+	4	61
-	+	5	8
-	+	9	0
-	+	6	45
-	+	7	0
-	+	9	0
-	+	4	0
-	+	2	0
-	+	8	16
-
 > ~/pflix/data/page-pretty.json
 	*	1731264708	0
 	"	1	0
@@ -29962,69 +30963,6 @@ $
 	+	1	1
 	+	1	1009
 	+	1	0
-
-> ~/pflix/requirements.txt
-	*	1731263960	0
-	"	3	0
-	^	6	14
-	.	6	13
-	+	6	13
-
-> ~/pflix/pflix_pretty.py
-	*	1731262638	0
-	"	21	0
-	^	36	22
-	.	36	21
-	+	46	0
-	+	30	33
-	+	42	22
-	+	42	27
-	+	42	0
-	+	31	13
-	+	42	0
-	+	31	9
-	+	4	14
-	+	42	0
-	+	5	28
-	+	32	25
-	+	33	23
-	+	42	4
-	+	34	47
-	+	42	0
-	+	37	19
-	+	38	45
-	+	39	4
-	+	42	0
-	+	6	10
-	+	41	63
-	+	42	0
-	+	30	11
-	+	1	0
-	+	9	28
-	+	10	25
-	+	28	0
-	+	14	18
-	+	15	37
-	+	16	69
-	+	17	4
-	+	28	0
-	+	18	106
-	+	19	23
-	+	28	0
-	+	20	29
-	+	21	28
-	+	7	10
-	+	41	0
-	+	35	48
-	+	22	8
-	+	23	56
-	+	24	20
-	+	25	48
-	+	26	14
-	+	24	24
-	+	26	14
-	+	27	24
-	+	36	21
 
 > ~/pflix/data/pretty.html
 	*	1731257553	0
@@ -46810,29 +47748,6 @@ $
 	*	1721314276	0
 	"	1	0
 
-> ~/tooling/devops-bash-resources.txt
-	*	1721312893	0
-	"	7	4
-	^	2	6
-	.	11	0
-	+	11	0
-	+	10	197
-	+	11	0
-	+	7	119
-	+	7	36
-	+	8	0
-	+	10	54
-	+	9	0
-	+	6	0
-	+	11	0
-	+	3	0
-	+	11	0
-	+	3	0
-	+	4	0
-	+	3	0
-	+	2	5
-	+	11	0
-
 > /tmp/crontab.hUz7C4/crontab
 	*	1721312011	0
 	"	1	0
@@ -52103,10 +53018,6 @@ $
 > ~/hateoas/static/downloads/filter filetype
 	*	1716103161	0
 	"	1	0
-
-> /usr/share/vim/vim90/doc/filetype.txt
-	*	1716103152	0
-	"	180	66
 
 > ~/.vim/plugged/tcomment_vim/doc/tcomment.txt
 	*	1716103143	0
