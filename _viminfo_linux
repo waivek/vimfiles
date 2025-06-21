@@ -11,39 +11,79 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/url_validity
+~MSle0~/sort
 
 # Last Substitute Search Pattern:
-~MSle0&py$
+~MSle0&=
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1740318680,,"q"
+|2,0,1750467079,,"q"
+:e backup.crontab
+|2,0,1750467012,,"e backup.crontab"
+:q!
+|2,0,1750466296,,"q!"
+:reg
+|2,0,1750466165,,"reg"
+:w
+|2,0,1749202665,,"w"
+:edit $MYVIMRC
+|2,0,1749202658,,"edit $MYVIMRC"
+:!start %
+|2,0,1749202554,,"!start %"
+:e data/mining_traits.html
+|2,0,1749202482,,"e data/mining_traits.html"
+:Template
+|2,0,1749202429,,"Template"
+:Template1
+|2,0,1749202426,,"Template1"
+:v/=/d
+|2,0,1747710417,,"v/=/d"
+:set linebreak
+|2,0,1746347491,,"set linebreak"
+:set wordbreak
+|2,0,1746347488,,"set wordbreak"
+:set wrap
+|2,0,1746347471,,"set wrap"
+::qa!
+|2,0,1743123954,,":qa!"
 :qa
-|2,0,1740317501,,"qa"
+|2,0,1743023437,,"qa"
+:bd!
+|2,0,1742744337,,"bd!"
+:%s/\$//
+|2,0,1742744295,,"%s/\\$//"
+:qa!
+|2,0,1740691930,,"qa!"
+:bd
+|2,0,1740689230,,"bd"
+:28
+|2,0,1740688489,,"28"
+:e data/time.txt
+|2,0,1740687993,,"e data/time.txt"
+:v/defense/d
+|2,0,1740644020,,"v/defense/d"
+:RunCreateCommand full
+|2,0,1740643939,,"RunCreateCommand full"
+:Enumerate
+|2,0,1740643176,,"Enumerate"
+:e data/crk-beascuit-1.html
+|2,0,1740643072,,"e data/crk-beascuit-1.html"
+:Tempalte
+|2,0,1740642783,,"Tempalte"
 :e workflow.txt
 |2,0,1740105787,,"e workflow.txt"
-:bd!
-|2,0,1740242714,,"bd!"
-:Template
-|2,0,1740215704,,"Template"
 :e setup.fish
 |2,0,1740212834,,"e setup.fish"
 :e env.bash
 |2,0,1740212812,,"e env.bash"
 :e .
 |2,0,1740212810,,"e ."
-:qa!
-|2,0,1740105656,,"qa!"
 :enew
 |2,0,1740104618,,"enew"
-:q!
-|2,0,1740104275,,"q!"
-:RunCreateCommand full
-|2,0,1740103843,,"RunCreateCommand full"
 :e data/videos/
 |2,0,1740103747,,"e data/videos/"
 :e pflix_download_pages_html.py
@@ -100,12 +140,8 @@ $
 |2,0,1740020344,,"pwd"
 :e models/model_video.py
 |2,0,1740020203,,"e models/model_video.py"
-:bd
-|2,0,1740018846,,"bd"
 :e pflix_scrape_page.py
 |2,0,1740018622,,"e pflix_scrape_page.py"
-:Enumerate
-|2,0,1740018403,,"Enumerate"
 :45
 |2,0,1740014811,,"45"
 :RunCreateCommand horizontal
@@ -156,8 +192,6 @@ $
 |2,0,1740010012,,"PlugInstall"
 :Copilot
 |2,0,1740009982,,"Copilot"
-:edit $MYVIMRC
-|2,0,1740009970,,"edit $MYVIMRC"
 :V
 |2,0,1740009967,,"V"
 :e models
@@ -336,8 +370,6 @@ $
 |2,0,1738031847,,"Be"
 :e chrome-howto.txt
 |2,0,1738031216,,"e chrome-howto.txt"
-:reg
-|2,0,1737792452,,"reg"
 :e *llm
 |2,0,1737792426,,"e *llm"
 :g/^\s*$/d
@@ -484,8 +516,6 @@ $
 |2,0,1737423610,,"Cfilter vitest"
 :cfile ~/tmp/cfile
 |2,0,1737423567,,"cfile ~/tmp/cfile"
-:w
-|2,0,1737430260,,"w"
 :e vitest/dist/chunks/index.DsZFoqi9.js
 |2,0,1737423125,,"e vitest/dist/chunks/index.DsZFoqi9.js"
 :e tasks-3ZnPj1LR.d.ts
@@ -594,8 +624,6 @@ $
 |2,0,1736553068,,"!start everything -path ."
 :e vitest.reporter.json
 |2,0,1736552004,,"e vitest.reporter.json"
-:set wrap
-|2,0,1736551436,,"set wrap"
 :e tsconfig.strict.json
 |2,0,1736551191,,"e tsconfig.strict.json"
 :`
@@ -2820,8 +2848,6 @@ $
 |2,0,1725192697,,"e choice-olddirs.bash"
 :emenu
 |2,0,1725192693,,"emenu"
-:e backup.crontab
-|2,0,1725192687,,"e backup.crontab"
 :MRU 3:output.txt
 |2,0,1725192685,,"MRU 3:output.txt"
 :Rename zdirs_one_wk.go
@@ -7200,8 +7226,6 @@ $
 |2,0,1714560537,,"20"
 :MRU test_tas
 |2,0,1714560534,,"MRU test_tas"
-:28
-|2,0,1714560504,,"28"
 :18
 |2,0,1714560464,,"18"
 :MRU download_wo
@@ -7768,8 +7792,6 @@ $
 |2,0,1713607171,,"vert term ./%"
 :vert term source %
 |2,0,1713607165,,"vert term source %"
-:!start %
-|2,0,1713607055,,"!start %"
 :map <space`
 |2,0,1713607055,,"map <space`"
 :MRU stars
@@ -8330,8 +8352,6 @@ $
 |2,0,1712057557,,"MRU 6:hateoas_backend/pov_videos.sql"
 :e ~/genproject/sql_checklist.txt
 |2,0,1712057465,,"e ~/genproject/sql_checklist.txt"
-:set linebreak
-|2,0,1712030419,,"set linebreak"
 :e pov_videos.sql
 |2,0,1712025409,,"e pov_videos.sql"
 :MRU 3:hateoas-api.py
@@ -11994,8 +12014,60 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/sort
+|2,1,1750465999,47,"sort"
+?/copil
+|2,1,1749202661,47,"copil"
+? =
+|2,1,1747710417,,"="
+?/\$
+|2,1,1742744299,47,"\\$"
+? \$
+|2,1,1742744295,,"\\$"
+?/http
+|2,1,1741344002,47,"http"
 ? ^\s*$\n\s*$
-|2,1,1740318679,,"^\\s*$\\n\\s*$"
+|2,1,1740817840,,"^\\s*$\\n\\s*$"
+?/is_burn
+|2,1,1740798187,47,"is_burn"
+? \<next_12_hour\>
+|2,1,1740771359,,"\\<next_12_hour\\>"
+?/dict
+|2,1,1740689261,47,"dict"
+?/to
+|2,1,1740689260,47,"to"
+?/\.get
+|2,1,1740688718,47,"\\.get"
+? \<href\>
+|2,1,1740688426,,"\\<href\\>"
+?/bomber magic
+|2,1,1740648978,47,"bomber magic"
+?/,
+|2,1,1740644719,47,","
+?/legendary.*defense
+|2,1,1740644060,47,"legendary.*defense"
+?/defense
+|2,1,1740644030,47,"defense"
+? defense
+|2,1,1740644020,,"defense"
+?/hard
+|2,1,1740644007,47,"hard"
+?/defence
+|2,1,1740644001,47,"defence"
+? \<stage_int\>
+|2,1,1740643594,,"\\<stage_int\\>"
+? \<stage_url\>
+|2,1,1740643590,,"\\<stage_url\\>"
+? in \zs[^:]\+
+|2,1,1740643176,,"in \\zs[^:]\\+"
+?/HEAD
+|2,1,1740327075,47,"HEAD"
+?/>>
+|2,1,1740327030,47,">>"
+?/\C\<<\>
+|2,1,1740327027,47,"\\C\\<<\\>"
+?/symlink
+|2,1,1740318862,47,"symlink"
 ?/alias
 |2,1,1740215028,47,"alias"
 ?/atuin
@@ -12046,8 +12118,6 @@ $
 |2,1,1740021993,47,"tags"
 ?/image_tag
 |2,1,1740018624,47,"image_tag"
-? in \zs[^:]\+
-|2,1,1740018403,,"in \\zs[^:]\\+"
 ?/10
 |2,1,1740017310,47,"10"
 ?/status
@@ -12150,8 +12220,6 @@ $
 |2,1,1738026471,47,"--siz"
 ?/style
 |2,1,1737983370,47,"style"
-?/symlink
-|2,1,1737792628,47,"symlink"
 ?/secrets
 |2,1,1737792307,47,"secrets"
 ? ^\s*$
@@ -13824,8 +13892,6 @@ $
 |2,1,1727446238,47,"todos"
 ?/\(def\|class\)\s\+\w*fzf
 |2,1,1727425328,47,"\\(def\\|class\\)\\s\\+\\w*fzf"
-?/to
-|2,1,1727425094,47,"to"
 ?/module
 |2,1,1727361756,47,"module"
 ?/--
@@ -14906,8 +14972,6 @@ $
 |2,1,1722007791,47,"VideoComment"
 ?/startCompletion
 |2,1,1722002203,47,"startCompletion"
-?/sort
-|2,1,1722001913,47,"sort"
 ?/sugges
 |2,1,1722001900,47,"sugges"
 ?/\<order
@@ -16392,8 +16456,6 @@ $
 |2,1,1714328421,47,"flock"
 ?/expan
 |2,1,1714326045,47,"expan"
-?/\$
-|2,1,1714325731,47,"\\$"
 ?/lock
 |2,1,1714309033,47,"lock"
 ?/\<sh\>
@@ -16454,8 +16516,6 @@ $
 |2,1,1714027548,47,"dialect sqlite"
 ?/sqlf
 |2,1,1714027467,47,"sqlf"
-?/,
-|2,1,1714027223,47,","
 ?/;\nCR
 |2,1,1714027048,47,";\\nCR"
 ?/\r
@@ -18110,14 +18170,16 @@ $
 |2,2,1688309303,,"v:oldfiles"
 
 # Input Line History (newest to oldest):
+@markup
+|2,3,1740693397,,"markup"
+@str
+|2,3,1740644277,,"str"
 @download-check
 |2,3,1740105853,,"download-check"
 @url_validity
 |2,3,1740105845,,"url_validity"
 @dict
 |2,3,1740104595,,"dict"
-@markup
-|2,3,1738196102,,"markup"
 @div>
 |2,3,1736262127,,"div>"
 @vivek
@@ -18222,8 +18284,6 @@ $
 |2,3,1721946267,,"gzip.open"
 @parser
 |2,3,1721142632,,"parser"
-@str
-|2,3,1720527467,,"str"
 @os.expanduser
 |2,3,1718900065,,"os.expanduser"
 @hsl
@@ -18357,43 +18417,38 @@ $
 
 # Registers:
 "0	CHAR	0
-	f"Current time: {now}"
-|3,0,0,0,1,0,1740215761,"f\"Current time: {now}\""
-""1	LINE	0
-	>>>>>>> refs/remotes/origin/master
-|3,1,1,1,1,0,1740318626,">>>>>>> refs/remotes/origin/master"
+	4
+|3,0,0,0,1,0,1750466086,"4"
+"1	LINE	0
+	2h
+|3,0,1,1,1,0,1747710417,"2h"
 "2	LINE	0
-	<<<<<<< HEAD
-	**/bin/*
-	!bin/.gitkeep
-	=======
-|3,0,2,1,4,0,1740318625,"<<<<<<< HEAD","**/bin/*","!bin/.gitkeep","======="
+	Â·
+|3,0,2,1,1,0,1747710417,"Â·"
 "3	LINE	0
-	=======
-	# bin/*
-	# !bin/.gitkeep
-|3,0,3,1,3,0,1740318620,"=======","# bin/*","# !bin/.gitkeep"
+	@icanvardar
+|3,0,3,1,1,0,1747710417,"@icanvardar"
 "4	LINE	0
-	<<<<<<< HEAD
-|3,0,4,1,1,0,1740318619,"<<<<<<< HEAD"
+	Can Vardar
+|3,0,4,1,1,0,1747710417,"Can Vardar"
 "5	LINE	0
-	>>>>>>> refs/remotes/origin/master
-|3,0,5,1,1,0,1740318617,">>>>>>> refs/remotes/origin/master"
+	2h
+|3,0,5,1,1,0,1747710417,"2h"
 "6	LINE	0
-	]
-|3,0,6,1,1,0,1740216186,"]"
+	Â·
+|3,0,6,1,1,0,1747710417,"Â·"
 "7	LINE	0
-	L = [
-|3,0,7,1,1,0,1740216185,"L = ["
+	@icanvardar
+|3,0,7,1,1,0,1747710417,"@icanvardar"
 "8	LINE	0
-	        time = datetime.now().strftime("%H:%M:%S")
-|3,0,8,1,1,0,1740215742,"        time = datetime.now().strftime(\"%H:%M:%S\")"
+	Can Vardar
+|3,0,8,1,1,0,1747710417,"Can Vardar"
 "9	LINE	0
-	    now = datetime.now().strftime("%H:%M:%S")
-|3,0,9,1,1,0,1740215741,"    now = datetime.now().strftime(\"%H:%M:%S\")"
-"a	CHAR	0
-	nojkVnl>nO€ýa
-|3,0,10,0,1,0,1740216188,"nojkVnl>nO€ýa"
+	2h
+|3,0,9,1,1,0,1747710417,"2h"
+"a@	CHAR	0
+	0;iStage(number0€kb=2, url="jkA"),€ýa
+|3,2,10,0,1,0,1740817881,"0;iStage(number0€kb=2, url=\"jkA\"),€ýa"
 "i	CHAR	0
 	ado_up()jk:q!
 |3,0,18,0,1,0,1724200553,"ado_up()jk:q!"
@@ -18461,238 +18516,920 @@ $
 |<"        for line in res:","            print(line)","","def pretty_print_box(box):","    # box sample: [[[138.0, 36.0], [462.0, 36.0], [462.0, 77.0], [138.0, 77.0]]","    (top_left, top_right, bottom_right, bottom_left) = box","    (x1, y1), (x2, y2), (x3, y3), (x4, y4) = box","","    x_min = min(x1, x2, x3, x4)","    x_max = max(x1, x2, x3, x4)","    y_min = min(y1, y2, y3, y4)","    y_max = max(y1, y2, y3, y4)","","    # Validation checks",>86
 |<"    assert x_min < x_max, f\"Invalid x coordinates: min ({x_min}) >= max ({x_max})\"","    assert y_min < y_max, f\"Invalid y coordinates: min ({y_min}) >= max ({y_max})\"","    ","    # Additional geometric checks","    assert abs(y1 - y2) < (y_max - y_min), \"Top edge is not roughly horizontal\"","    assert abs(y3 - y4) < (y_max - y_min), \"Bottom edge is not roughly horizontal\"","    assert abs(x1 - x4) < (x_max - x_min), \"Left edge is not roughly vertical\"",>83
 |<"    assert abs(x2 - x3) < (x_max - x_min), \"Right edge is not roughly vertical\"","","    pretty_string_flat = {","        \"left\": x_min,","        \"right\": x_max,","        \"top\": y_min,","        \"bottom\": y_max,","        \"top_left\": (x1, y1),","        \"top_right\": (x2, y2),","        \"bottom_right\": (x3, y3),","        \"bottom_left\": (x4, y4),","    }","    ","    print(f\"{box} => {pretty_string_flat}\")",""
-"-	CHAR	0
-	)
-|3,0,36,0,1,0,1740215856,")"
+""-	CHAR	0
+	r
+|3,1,36,0,1,0,1750466156,"r"
 
 # File marks:
-'0  1  0  ~/python_common/box/db_insert_unique.py
-|4,48,1,0,1740318680,"~/python_common/box/db_insert_unique.py"
-'1  6  0  ~/golang/.gitignore
-|4,49,6,0,1740318630,"~/golang/.gitignore"
-'2  6  0  ~/golang/.gitignore
-|4,50,6,0,1740318630,"~/golang/.gitignore"
-'3  6  2  ~/golang/.gitignore
-|4,51,6,2,1740318590,"~/golang/.gitignore"
-'4  6  2  ~/golang/.gitignore
-|4,52,6,2,1740318590,"~/golang/.gitignore"
-'5  1  0  ~/golang/.gitignore
-|4,53,1,0,1740318582,"~/golang/.gitignore"
-'6  1  0  ~/golang/.gitignore
-|4,54,1,0,1740318582,"~/golang/.gitignore"
-'7  1  0  ~/golang/.gitignore
-|4,55,1,0,1740318582,"~/golang/.gitignore"
-'8  1  0  ~/golang/.gitignore
-|4,56,1,0,1740318582,"~/golang/.gitignore"
-'9  1  0  ~/golang/.gitignore
-|4,57,1,0,1740318582,"~/golang/.gitignore"
+'0  49  0  /tmp/crontab.ZPHDvQ/crontab
+|4,48,49,0,1750467079,"/tmp/crontab.ZPHDvQ/crontab"
+'1  34  151  ~/bash/backup.crontab
+|4,49,34,151,1750467052,"~/bash/backup.crontab"
+'2  34  151  ~/bash/backup.crontab
+|4,50,34,151,1750467052,"~/bash/backup.crontab"
+'3  32  0  ~/bash/backup.crontab
+|4,51,32,0,1750467025,"~/bash/backup.crontab"
+'4  32  0  ~/bash/backup.crontab
+|4,52,32,0,1750467025,"~/bash/backup.crontab"
+'5  32  0  ~/bash/backup.crontab
+|4,53,32,0,1750467025,"~/bash/backup.crontab"
+'6  32  0  ~/bash/backup.crontab
+|4,54,32,0,1750467025,"~/bash/backup.crontab"
+'7  1  0  ~/.config/symlinks.txt
+|4,55,1,0,1750466809,"~/.config/symlinks.txt"
+'8  1  0  ~/.config/symlinks.txt
+|4,56,1,0,1750466809,"~/.config/symlinks.txt"
+'9  1  0  ~/.config/symlinks.txt
+|4,57,1,0,1750466809,"~/.config/symlinks.txt"
 
 # Jumplist (newest first):
--'  1  0  ~/python_common/box/db_insert_unique.py
-|4,39,1,0,1740318680,"~/python_common/box/db_insert_unique.py"
--'  6  0  ~/golang/.gitignore
-|4,39,6,0,1740318630,"~/golang/.gitignore"
--'  6  0  ~/golang/.gitignore
-|4,39,6,0,1740318630,"~/golang/.gitignore"
--'  8  0  ~/golang/.gitignore
-|4,39,8,0,1740318621,"~/golang/.gitignore"
--'  8  0  ~/golang/.gitignore
-|4,39,8,0,1740318621,"~/golang/.gitignore"
--'  1  0  ~/golang/.gitignore
-|4,39,1,0,1740318610,"~/golang/.gitignore"
--'  1  0  ~/golang/.gitignore
-|4,39,1,0,1740318610,"~/golang/.gitignore"
--'  6  2  ~/golang/.gitignore
-|4,39,6,2,1740318590,"~/golang/.gitignore"
--'  1  0  ~/golang/.gitignore
-|4,39,1,0,1740318585,"~/golang/.gitignore"
--'  1  0  ~/golang/.gitignore
-|4,39,1,0,1740318582,"~/golang/.gitignore"
--'  1  0  ~/tooling/.git/MERGE_MSG
-|4,39,1,0,1740317605,"~/tooling/.git/MERGE_MSG"
--'  1  0  ~/tooling/.git/MERGE_MSG
-|4,39,1,0,1740317605,"~/tooling/.git/MERGE_MSG"
--'  1  0  ~/tooling/.git/MERGE_MSG
-|4,39,1,0,1740317605,"~/tooling/.git/MERGE_MSG"
--'  1  0  ~/tooling/.git/MERGE_MSG
-|4,39,1,0,1740317605,"~/tooling/.git/MERGE_MSG"
--'  1  0  ~/tooling/.git/MERGE_MSG
-|4,39,1,0,1740317605,"~/tooling/.git/MERGE_MSG"
--'  44  25  ~/pflix/pflix_download_videos_html.py
-|4,39,44,25,1740317502,"~/pflix/pflix_download_videos_html.py"
--'  44  25  ~/pflix/pflix_download_videos_html.py
-|4,39,44,25,1740317502,"~/pflix/pflix_download_videos_html.py"
--'  44  25  ~/pflix/pflix_download_videos_html.py
-|4,39,44,25,1740317502,"~/pflix/pflix_download_videos_html.py"
--'  44  25  ~/pflix/pflix_download_videos_html.py
-|4,39,44,25,1740317502,"~/pflix/pflix_download_videos_html.py"
--'  44  25  ~/pflix/pflix_download_videos_html.py
-|4,39,44,25,1740317502,"~/pflix/pflix_download_videos_html.py"
--'  44  25  ~/pflix/pflix_download_videos_html.py
-|4,39,44,25,1740317502,"~/pflix/pflix_download_videos_html.py"
--'  12  0  ~/tooling/digest/why_i_still_like_sublime_in_2025.txt
-|4,39,12,0,1740317462,"~/tooling/digest/why_i_still_like_sublime_in_2025.txt"
--'  12  0  ~/tooling/digest/why_i_still_like_sublime_in_2025.txt
-|4,39,12,0,1740317462,"~/tooling/digest/why_i_still_like_sublime_in_2025.txt"
--'  12  0  ~/tooling/digest/why_i_still_like_sublime_in_2025.txt
-|4,39,12,0,1740317462,"~/tooling/digest/why_i_still_like_sublime_in_2025.txt"
--'  12  0  ~/tooling/digest/why_i_still_like_sublime_in_2025.txt
-|4,39,12,0,1740317462,"~/tooling/digest/why_i_still_like_sublime_in_2025.txt"
--'  12  0  ~/tooling/digest/why_i_still_like_sublime_in_2025.txt
-|4,39,12,0,1740317462,"~/tooling/digest/why_i_still_like_sublime_in_2025.txt"
--'  12  0  ~/tooling/digest/why_i_still_like_sublime_in_2025.txt
-|4,39,12,0,1740317462,"~/tooling/digest/why_i_still_like_sublime_in_2025.txt"
--'  1  0  ~/tooling/digest/why_i_still_like_sublime_in_2025.txt
-|4,39,1,0,1740317459,"~/tooling/digest/why_i_still_like_sublime_in_2025.txt"
--'  1  0  ~/tooling/digest/why_i_still_like_sublime_in_2025.txt
-|4,39,1,0,1740317459,"~/tooling/digest/why_i_still_like_sublime_in_2025.txt"
--'  1  0  ~/tooling/digest/why_i_still_like_sublime_in_2025.txt
-|4,39,1,0,1740317459,"~/tooling/digest/why_i_still_like_sublime_in_2025.txt"
--'  1  0  ~/tooling/digest/why_i_still_like_sublime_in_2025.txt
-|4,39,1,0,1740317459,"~/tooling/digest/why_i_still_like_sublime_in_2025.txt"
--'  1  0  ~/tooling/digest/why_i_still_like_sublime_in_2025.txt
-|4,39,1,0,1740317459,"~/tooling/digest/why_i_still_like_sublime_in_2025.txt"
--'  1  0  ~/tooling/digest/why_i_still_like_sublime_in_2025.txt
-|4,39,1,0,1740317459,"~/tooling/digest/why_i_still_like_sublime_in_2025.txt"
--'  10  0  ~/pyscripts/tmp_timer.py
-|4,39,10,0,1740242717,"~/pyscripts/tmp_timer.py"
--'  10  0  ~/pyscripts/tmp_timer.py
-|4,39,10,0,1740242717,"~/pyscripts/tmp_timer.py"
--'  10  0  ~/pyscripts/tmp_timer.py
-|4,39,10,0,1740242717,"~/pyscripts/tmp_timer.py"
--'  10  0  ~/pyscripts/tmp_timer.py
-|4,39,10,0,1740242717,"~/pyscripts/tmp_timer.py"
--'  10  0  ~/pyscripts/tmp_timer.py
-|4,39,10,0,1740242717,"~/pyscripts/tmp_timer.py"
--'  10  0  ~/pyscripts/tmp_timer.py
-|4,39,10,0,1740242717,"~/pyscripts/tmp_timer.py"
--'  10  0  ~/pyscripts/tmp_timer.py
-|4,39,10,0,1740242717,"~/pyscripts/tmp_timer.py"
--'  10  29  ~/pyscripts/tmp_timer.py
-|4,39,10,29,1740215859,"~/pyscripts/tmp_timer.py"
--'  1  0  ~/pyscripts/tmp_timer.py
-|4,39,1,0,1740215854,"~/pyscripts/tmp_timer.py"
--'  1  0  ~/pyscripts/tmp_timer.py
-|4,39,1,0,1740215854,"~/pyscripts/tmp_timer.py"
--'  1  0  ~/pyscripts/tmp_timer.py
-|4,39,1,0,1740215854,"~/pyscripts/tmp_timer.py"
--'  1  0  ~/pyscripts/tmp_timer.py
-|4,39,1,0,1740215854,"~/pyscripts/tmp_timer.py"
--'  1  0  ~/pyscripts/tmp_timer.py
-|4,39,1,0,1740215854,"~/pyscripts/tmp_timer.py"
--'  1  0  ~/pyscripts/tmp_timer.py
-|4,39,1,0,1740215854,"~/pyscripts/tmp_timer.py"
--'  1  0  ~/pyscripts/tmp_timer.py
-|4,39,1,0,1740215854,"~/pyscripts/tmp_timer.py"
--'  1  0  ~/pyscripts/tmp_timer.py
-|4,39,1,0,1740215854,"~/pyscripts/tmp_timer.py"
--'  10  16  ~/pyscripts/tmp_timer.py
-|4,39,10,16,1740215772,"~/pyscripts/tmp_timer.py"
--'  1  20  ~/pyscripts/tmp_timer.py
-|4,39,1,20,1740215749,"~/pyscripts/tmp_timer.py"
--'  9  33  ~/pyscripts/tmp_timer.py
-|4,39,9,33,1740215748,"~/pyscripts/tmp_timer.py"
--'  9  33  ~/pyscripts/tmp_timer.py
-|4,39,9,33,1740215748,"~/pyscripts/tmp_timer.py"
--'  9  33  ~/pyscripts/tmp_timer.py
-|4,39,9,33,1740215748,"~/pyscripts/tmp_timer.py"
--'  9  33  ~/pyscripts/tmp_timer.py
-|4,39,9,33,1740215748,"~/pyscripts/tmp_timer.py"
--'  9  33  ~/pyscripts/tmp_timer.py
-|4,39,9,33,1740215748,"~/pyscripts/tmp_timer.py"
--'  9  33  ~/pyscripts/tmp_timer.py
-|4,39,9,33,1740215748,"~/pyscripts/tmp_timer.py"
--'  9  33  ~/pyscripts/tmp_timer.py
-|4,39,9,33,1740215748,"~/pyscripts/tmp_timer.py"
--'  9  33  ~/pyscripts/tmp_timer.py
-|4,39,9,33,1740215748,"~/pyscripts/tmp_timer.py"
--'  9  33  ~/pyscripts/tmp_timer.py
-|4,39,9,33,1740215748,"~/pyscripts/tmp_timer.py"
--'  8  29  ~/pyscripts/tmp_timer.py
-|4,39,8,29,1740215738,"~/pyscripts/tmp_timer.py"
--'  8  29  ~/pyscripts/tmp_timer.py
-|4,39,8,29,1740215738,"~/pyscripts/tmp_timer.py"
--'  8  29  ~/pyscripts/tmp_timer.py
-|4,39,8,29,1740215738,"~/pyscripts/tmp_timer.py"
--'  8  29  ~/pyscripts/tmp_timer.py
-|4,39,8,29,1740215738,"~/pyscripts/tmp_timer.py"
--'  8  29  ~/pyscripts/tmp_timer.py
-|4,39,8,29,1740215738,"~/pyscripts/tmp_timer.py"
--'  8  29  ~/pyscripts/tmp_timer.py
-|4,39,8,29,1740215738,"~/pyscripts/tmp_timer.py"
--'  8  29  ~/pyscripts/tmp_timer.py
-|4,39,8,29,1740215738,"~/pyscripts/tmp_timer.py"
--'  8  29  ~/pyscripts/tmp_timer.py
-|4,39,8,29,1740215738,"~/pyscripts/tmp_timer.py"
--'  8  29  ~/pyscripts/tmp_timer.py
-|4,39,8,29,1740215738,"~/pyscripts/tmp_timer.py"
--'  11  11  ~/pyscripts/tmp_timer.py
-|4,39,11,11,1740215727,"~/pyscripts/tmp_timer.py"
--'  11  11  ~/pyscripts/tmp_timer.py
-|4,39,11,11,1740215727,"~/pyscripts/tmp_timer.py"
--'  11  11  ~/pyscripts/tmp_timer.py
-|4,39,11,11,1740215727,"~/pyscripts/tmp_timer.py"
--'  11  11  ~/pyscripts/tmp_timer.py
-|4,39,11,11,1740215727,"~/pyscripts/tmp_timer.py"
--'  11  11  ~/pyscripts/tmp_timer.py
-|4,39,11,11,1740215727,"~/pyscripts/tmp_timer.py"
--'  11  11  ~/pyscripts/tmp_timer.py
-|4,39,11,11,1740215727,"~/pyscripts/tmp_timer.py"
--'  11  11  ~/pyscripts/tmp_timer.py
-|4,39,11,11,1740215727,"~/pyscripts/tmp_timer.py"
--'  11  11  ~/pyscripts/tmp_timer.py
-|4,39,11,11,1740215727,"~/pyscripts/tmp_timer.py"
--'  11  11  ~/pyscripts/tmp_timer.py
-|4,39,11,11,1740215727,"~/pyscripts/tmp_timer.py"
--'  7  3  ~/pyscripts/tmp_timer.py
-|4,39,7,3,1740215709,"~/pyscripts/tmp_timer.py"
--'  12  3  ~/pyscripts/tmp_timer.py
-|4,39,12,3,1740215709,"~/pyscripts/tmp_timer.py"
--'  7  3  ~/pyscripts/tmp_timer.py
-|4,39,7,3,1740215709,"~/pyscripts/tmp_timer.py"
--'  12  3  ~/pyscripts/tmp_timer.py
-|4,39,12,3,1740215709,"~/pyscripts/tmp_timer.py"
--'  7  3  ~/pyscripts/tmp_timer.py
-|4,39,7,3,1740215709,"~/pyscripts/tmp_timer.py"
--'  12  3  ~/pyscripts/tmp_timer.py
-|4,39,12,3,1740215709,"~/pyscripts/tmp_timer.py"
--'  7  3  ~/pyscripts/tmp_timer.py
-|4,39,7,3,1740215709,"~/pyscripts/tmp_timer.py"
--'  12  3  ~/pyscripts/tmp_timer.py
-|4,39,12,3,1740215709,"~/pyscripts/tmp_timer.py"
--'  7  3  ~/pyscripts/tmp_timer.py
-|4,39,7,3,1740215709,"~/pyscripts/tmp_timer.py"
--'  12  3  ~/pyscripts/tmp_timer.py
-|4,39,12,3,1740215709,"~/pyscripts/tmp_timer.py"
--'  7  3  ~/pyscripts/tmp_timer.py
-|4,39,7,3,1740215709,"~/pyscripts/tmp_timer.py"
--'  12  3  ~/pyscripts/tmp_timer.py
-|4,39,12,3,1740215709,"~/pyscripts/tmp_timer.py"
--'  7  3  ~/pyscripts/tmp_timer.py
-|4,39,7,3,1740215709,"~/pyscripts/tmp_timer.py"
--'  12  3  ~/pyscripts/tmp_timer.py
-|4,39,12,3,1740215709,"~/pyscripts/tmp_timer.py"
--'  7  3  ~/pyscripts/tmp_timer.py
-|4,39,7,3,1740215709,"~/pyscripts/tmp_timer.py"
--'  12  3  ~/pyscripts/tmp_timer.py
-|4,39,12,3,1740215709,"~/pyscripts/tmp_timer.py"
--'  7  3  ~/pyscripts/tmp_timer.py
-|4,39,7,3,1740215709,"~/pyscripts/tmp_timer.py"
--'  12  3  ~/pyscripts/tmp_timer.py
-|4,39,12,3,1740215709,"~/pyscripts/tmp_timer.py"
--'  17  0  ~/pyscripts/tmp_timer.py
-|4,39,17,0,1740215702,"~/pyscripts/tmp_timer.py"
--'  17  0  ~/pyscripts/tmp_timer.py
-|4,39,17,0,1740215702,"~/pyscripts/tmp_timer.py"
--'  17  0  ~/pyscripts/tmp_timer.py
-|4,39,17,0,1740215702,"~/pyscripts/tmp_timer.py"
--'  17  0  ~/pyscripts/tmp_timer.py
-|4,39,17,0,1740215702,"~/pyscripts/tmp_timer.py"
+-'  49  0  /tmp/crontab.ZPHDvQ/crontab
+|4,39,49,0,1750467079,"/tmp/crontab.ZPHDvQ/crontab"
+-'  1  0  /tmp/crontab.ZPHDvQ/crontab
+|4,39,1,0,1750467072,"/tmp/crontab.ZPHDvQ/crontab"
+-'  34  151  ~/bash/backup.crontab
+|4,39,34,151,1750467052,"~/bash/backup.crontab"
+-'  34  151  ~/bash/backup.crontab
+|4,39,34,151,1750467052,"~/bash/backup.crontab"
+-'  1  0  ~/bash/backup.crontab
+|4,39,1,0,1750467046,"~/bash/backup.crontab"
+-'  1  0  ~/bash/backup.crontab
+|4,39,1,0,1750467046,"~/bash/backup.crontab"
+-'  1  0  ~/bash/cronjob.bash
+|4,39,1,0,1750467045,"~/bash/cronjob.bash"
+-'  1  0  ~/bash/cronjob.bash
+|4,39,1,0,1750467045,"~/bash/cronjob.bash"
+-'  32  0  ~/bash/backup.crontab
+|4,39,32,0,1750467025,"~/bash/backup.crontab"
+-'  32  0  ~/bash/backup.crontab
+|4,39,32,0,1750467025,"~/bash/backup.crontab"
+-'  32  0  ~/bash/backup.crontab
+|4,39,32,0,1750467025,"~/bash/backup.crontab"
+-'  1  0  ~/bash/backup.crontab
+|4,39,1,0,1750467012,"~/bash/backup.crontab"
+-'  1  0  ~/bash/cronjob.bash
+|4,39,1,0,1750467012,"~/bash/cronjob.bash"
+-'  1  0  ~/.config/symlinks.txt
+|4,39,1,0,1750466809,"~/.config/symlinks.txt"
+-'  1  0  ~/.config/symlinks.txt
+|4,39,1,0,1750466809,"~/.config/symlinks.txt"
+-'  1  0  ~/.config/symlinks.txt
+|4,39,1,0,1750466809,"~/.config/symlinks.txt"
+-'  1  0  ~/.config/symlinks.txt
+|4,39,1,0,1750466809,"~/.config/symlinks.txt"
+-'  1  0  /proc/1/environ
+|4,39,1,0,1750466297,"/proc/1/environ"
+-'  1  0  /proc/1/environ
+|4,39,1,0,1750466297,"/proc/1/environ"
+-'  1  0  /proc/1/environ
+|4,39,1,0,1750466297,"/proc/1/environ"
+-'  1  0  /proc/1/environ
+|4,39,1,0,1750466297,"/proc/1/environ"
+-'  1  0  /proc/1/environ
+|4,39,1,0,1750466297,"/proc/1/environ"
+-'  1  0  ~/.config/git/config
+|4,39,1,0,1750466269,"~/.config/git/config"
+-'  1  0  ~/.config/git/config
+|4,39,1,0,1750466269,"~/.config/git/config"
+-'  1  0  ~/.config/git/config
+|4,39,1,0,1750466269,"~/.config/git/config"
+-'  1  0  ~/.config/git/config
+|4,39,1,0,1750466269,"~/.config/git/config"
+-'  1  0  ~/.config/git/config
+|4,39,1,0,1750466269,"~/.config/git/config"
+-'  1  0  ~/.config/git/config
+|4,39,1,0,1750466269,"~/.config/git/config"
+-'  1  0  ~/tmp/token.txt
+|4,39,1,0,1750466170,"~/tmp/token.txt"
+-'  1  0  ~/tmp/token.txt
+|4,39,1,0,1750466170,"~/tmp/token.txt"
+-'  1  0  ~/tmp/token.txt
+|4,39,1,0,1750466170,"~/tmp/token.txt"
+-'  1  0  ~/tmp/token.txt
+|4,39,1,0,1750466170,"~/tmp/token.txt"
+-'  1  0  ~/tmp/token.txt
+|4,39,1,0,1750466170,"~/tmp/token.txt"
+-'  1  0  ~/tmp/token.txt
+|4,39,1,0,1750466170,"~/tmp/token.txt"
+-'  1  0  ~/tmp/token.txt
+|4,39,1,0,1750466170,"~/tmp/token.txt"
+-'  2  0  ~/tmp/token.txt
+|4,39,2,0,1750466161,"~/tmp/token.txt"
+-'  2  0  ~/tmp/token.txt
+|4,39,2,0,1750466161,"~/tmp/token.txt"
+-'  2  0  ~/tmp/token.txt
+|4,39,2,0,1750466161,"~/tmp/token.txt"
+-'  2  0  ~/tmp/token.txt
+|4,39,2,0,1750466161,"~/tmp/token.txt"
+-'  2  0  ~/tmp/token.txt
+|4,39,2,0,1750466161,"~/tmp/token.txt"
+-'  2  0  ~/tmp/token.txt
+|4,39,2,0,1750466161,"~/tmp/token.txt"
+-'  2  0  ~/tmp/token.txt
+|4,39,2,0,1750466161,"~/tmp/token.txt"
+-'  2  0  ~/tmp/token.txt
+|4,39,2,0,1750466161,"~/tmp/token.txt"
+-'  1  0  ~/tmp/token.txt
+|4,39,1,0,1750466152,"~/tmp/token.txt"
+-'  1  36  ~/.config/git/token.gitconfig
+|4,39,1,36,1750466089,"~/.config/git/token.gitconfig"
+-'  1  36  ~/.config/git/token.gitconfig
+|4,39,1,36,1750466089,"~/.config/git/token.gitconfig"
+-'  1  36  ~/.config/git/token.gitconfig
+|4,39,1,36,1750466089,"~/.config/git/token.gitconfig"
+-'  1  36  ~/.config/git/token.gitconfig
+|4,39,1,36,1750466089,"~/.config/git/token.gitconfig"
+-'  1  36  ~/.config/git/token.gitconfig
+|4,39,1,36,1750466089,"~/.config/git/token.gitconfig"
+-'  1  36  ~/.config/git/token.gitconfig
+|4,39,1,36,1750466089,"~/.config/git/token.gitconfig"
+-'  1  36  ~/.config/git/token.gitconfig
+|4,39,1,36,1750466089,"~/.config/git/token.gitconfig"
+-'  1  36  ~/.config/git/token.gitconfig
+|4,39,1,36,1750466089,"~/.config/git/token.gitconfig"
+-'  1  36  ~/.config/git/token.gitconfig
+|4,39,1,36,1750466089,"~/.config/git/token.gitconfig"
+-'  34  175  /tmp/crontab.edUYib/crontab
+|4,39,34,175,1750466006,"/tmp/crontab.edUYib/crontab"
+-'  34  175  /tmp/crontab.edUYib/crontab
+|4,39,34,175,1750466006,"/tmp/crontab.edUYib/crontab"
+-'  34  175  /tmp/crontab.edUYib/crontab
+|4,39,34,175,1750466006,"/tmp/crontab.edUYib/crontab"
+-'  34  175  /tmp/crontab.edUYib/crontab
+|4,39,34,175,1750466006,"/tmp/crontab.edUYib/crontab"
+-'  34  175  /tmp/crontab.edUYib/crontab
+|4,39,34,175,1750466006,"/tmp/crontab.edUYib/crontab"
+-'  34  175  /tmp/crontab.edUYib/crontab
+|4,39,34,175,1750466006,"/tmp/crontab.edUYib/crontab"
+-'  34  175  /tmp/crontab.edUYib/crontab
+|4,39,34,175,1750466006,"/tmp/crontab.edUYib/crontab"
+-'  34  175  /tmp/crontab.edUYib/crontab
+|4,39,34,175,1750466006,"/tmp/crontab.edUYib/crontab"
+-'  34  175  /tmp/crontab.edUYib/crontab
+|4,39,34,175,1750466006,"/tmp/crontab.edUYib/crontab"
+-'  34  175  /tmp/crontab.edUYib/crontab
+|4,39,34,175,1750466006,"/tmp/crontab.edUYib/crontab"
+-'  1  0  /tmp/crontab.edUYib/crontab
+|4,39,1,0,1750465992,"/tmp/crontab.edUYib/crontab"
+-'  1  0  /tmp/crontab.edUYib/crontab
+|4,39,1,0,1750465992,"/tmp/crontab.edUYib/crontab"
+-'  1  0  /tmp/crontab.edUYib/crontab
+|4,39,1,0,1750465992,"/tmp/crontab.edUYib/crontab"
+-'  1  0  /tmp/crontab.edUYib/crontab
+|4,39,1,0,1750465992,"/tmp/crontab.edUYib/crontab"
+-'  1  0  /tmp/crontab.edUYib/crontab
+|4,39,1,0,1750465992,"/tmp/crontab.edUYib/crontab"
+-'  1  0  /tmp/crontab.edUYib/crontab
+|4,39,1,0,1750465992,"/tmp/crontab.edUYib/crontab"
+-'  1  0  /tmp/crontab.edUYib/crontab
+|4,39,1,0,1750465992,"/tmp/crontab.edUYib/crontab"
+-'  1  0  /tmp/crontab.edUYib/crontab
+|4,39,1,0,1750465992,"/tmp/crontab.edUYib/crontab"
+-'  1  0  /tmp/crontab.edUYib/crontab
+|4,39,1,0,1750465992,"/tmp/crontab.edUYib/crontab"
+-'  1  0  /tmp/crontab.edUYib/crontab
+|4,39,1,0,1750465992,"/tmp/crontab.edUYib/crontab"
+-'  393  0  ~/.config/nushell/history.txt
+|4,39,393,0,1750465977,"~/.config/nushell/history.txt"
+-'  393  0  ~/.config/nushell/history.txt
+|4,39,393,0,1750465977,"~/.config/nushell/history.txt"
+-'  393  0  ~/.config/nushell/history.txt
+|4,39,393,0,1750465977,"~/.config/nushell/history.txt"
+-'  393  0  ~/.config/nushell/history.txt
+|4,39,393,0,1750465977,"~/.config/nushell/history.txt"
+-'  393  0  ~/.config/nushell/history.txt
+|4,39,393,0,1750465977,"~/.config/nushell/history.txt"
+-'  393  0  ~/.config/nushell/history.txt
+|4,39,393,0,1750465977,"~/.config/nushell/history.txt"
+-'  393  0  ~/.config/nushell/history.txt
+|4,39,393,0,1750465977,"~/.config/nushell/history.txt"
+-'  393  0  ~/.config/nushell/history.txt
+|4,39,393,0,1750465977,"~/.config/nushell/history.txt"
+-'  393  0  ~/.config/nushell/history.txt
+|4,39,393,0,1750465977,"~/.config/nushell/history.txt"
+-'  393  0  ~/.config/nushell/history.txt
+|4,39,393,0,1750465977,"~/.config/nushell/history.txt"
+-'  393  0  ~/.config/nushell/history.txt
+|4,39,393,0,1750465977,"~/.config/nushell/history.txt"
+-'  1  0  ~/.config/nushell/history.txt
+|4,39,1,0,1750465975,"~/.config/nushell/history.txt"
+-'  1  0  ~/.config/nushell/history.txt
+|4,39,1,0,1750465975,"~/.config/nushell/history.txt"
+-'  1  0  ~/.config/nushell/history.txt
+|4,39,1,0,1750465975,"~/.config/nushell/history.txt"
+-'  1  0  ~/.config/nushell/history.txt
+|4,39,1,0,1750465975,"~/.config/nushell/history.txt"
+-'  1  0  ~/.config/nushell/history.txt
+|4,39,1,0,1750465975,"~/.config/nushell/history.txt"
+-'  1  0  ~/.config/nushell/history.txt
+|4,39,1,0,1750465975,"~/.config/nushell/history.txt"
+-'  1  0  ~/.config/nushell/history.txt
+|4,39,1,0,1750465975,"~/.config/nushell/history.txt"
+-'  1  0  ~/.config/nushell/history.txt
+|4,39,1,0,1750465975,"~/.config/nushell/history.txt"
+-'  1  0  ~/.config/nushell/history.txt
+|4,39,1,0,1750465975,"~/.config/nushell/history.txt"
+-'  1  0  ~/.config/nushell/history.txt
+|4,39,1,0,1750465975,"~/.config/nushell/history.txt"
+-'  1  0  ~/.config/nushell/history.txt
+|4,39,1,0,1750465975,"~/.config/nushell/history.txt"
+-'  34  4  ~/pyscripts/crk_mining_traits.py
+|4,39,34,4,1750465666,"~/pyscripts/crk_mining_traits.py"
+-'  34  4  ~/pyscripts/crk_mining_traits.py
+|4,39,34,4,1750465666,"~/pyscripts/crk_mining_traits.py"
+-'  34  4  ~/pyscripts/crk_mining_traits.py
+|4,39,34,4,1750465666,"~/pyscripts/crk_mining_traits.py"
+-'  34  4  ~/pyscripts/crk_mining_traits.py
+|4,39,34,4,1750465666,"~/pyscripts/crk_mining_traits.py"
+-'  34  4  ~/pyscripts/crk_mining_traits.py
+|4,39,34,4,1750465666,"~/pyscripts/crk_mining_traits.py"
 
 # Buffer list:
-%~/python_common/box/db_insert_unique.py	1	0
+%/tmp/crontab.ZPHDvQ/crontab	49	0
 
 # History of marks within files (newest to oldest):
+
+> /tmp/crontab.ZPHDvQ/crontab
+	*	1750467076	0
+	"	49	0
+
+> ~/bash/backup.crontab
+	*	1750467051	0
+	"	34	151
+	^	34	152
+	.	34	151
+	+	26	3
+	+	34	151
+
+> ~/bash/cronjob.bash
+	*	1750467041	0
+	"	1	0
+	^	8	0
+	.	8	0
+	+	3	16
+	+	4	0
+	+	5	17
+	+	6	15
+	+	6	0
+	+	6	22
+	+	6	0
+	+	6	97
+	+	6	0
+	+	5	32
+	+	6	30
+	+	8	0
+
+> ~/.config/symlinks.txt
+	*	1750466807	0
+	"	1	0
+	.	9	0
+	+	6	42
+	+	3	3
+	+	4	3
+	+	5	3
+	+	6	3
+	+	2	7
+	+	3	5
+	+	2	5
+	+	4	5
+	+	5	5
+	+	6	5
+	+	2	53
+	+	9	27
+	+	9	11
+	+	9	14
+	+	9	0
+	+	1	0
+	+	9	0
+
+> ~/.config/git/config
+	*	1750466265	0
+	"	1	0
+	.	14	0
+	+	8	17
+	+	9	8
+	+	10	0
+	+	14	0
+
+> ~/tmp/token.txt
+	*	1750466167	0
+	"	1	0
+	^	2	0
+	.	2	0
+	+	1	39
+	+	2	0
+
+> ~/.config/git/token.gitconfig
+	*	1750466088	0
+	"	1	36
+	^	2	62
+	.	1	36
+	+	2	21
+	+	2	0
+	+	1	0
+	+	2	0
+	+	1	0
+	+	2	21
+	+	1	36
+	a	1	36
+	b	1	36
+
+> /tmp/crontab.edUYib/crontab
+	*	1750466004	0
+	"	34	175
+
+> ~/.config/nushell/history.txt
+	*	1750465975	0
+	"	393	0
+
+> ~/pyscripts/crk_mining_traits.py
+	*	1750465663	0
+	"	34	4
+	.	11	0
+	+	11	0
+
+> ~/.vim/vimrc
+	*	1749202665	0
+	"	47	26
+	^	47	2
+	.	47	1
+	+	1	41
+	+	1	44
+	+	1	40
+	+	1	28
+	+	1	0
+	+	1	11
+	+	1	18
+	+	1	43
+	+	1	64
+	+	1	54
+	+	1	0
+	+	1	31
+	+	1	0
+	+	1	6
+	+	1	0
+	+	1	1
+	+	1	0
+	+	1	80
+	+	1	75
+	+	1	0
+	+	1	52
+	+	1	41
+	+	1	0
+	+	1	26
+	+	1	0
+	+	1	22
+	+	1	25
+	+	1	0
+	+	1	57
+	+	1	59
+	+	1	55
+	+	1	0
+	+	1	25
+	+	1	1
+	+	1	0
+	+	1	24
+	+	1	0
+	+	1	12
+	+	1	0
+	+	1	49
+	+	1	0
+	+	1	13
+	+	1	0
+	+	1	16
+	+	1	0
+	+	1	25
+	+	1	3
+	+	1	5
+	+	1	16
+	+	1	0
+	+	1	16
+	+	1	0
+	+	1	5
+	+	1	3
+	+	1	0
+	+	1	4
+	+	1	0
+	+	1	40
+	+	1	36
+	+	1	0
+	+	1	26
+	+	1	9
+	+	1	0
+	+	1	31
+	+	1	4
+	+	1	30
+	+	1	4
+	+	1	0
+	+	1	5
+	+	1	8
+	+	1	29
+	+	1	33
+	+	1	1
+	+	1	21
+	+	1	20
+	+	1	1
+	+	1	0
+	+	124	0
+	+	428	0
+	+	1150	0
+	+	576	5
+	+	94	0
+	+	46	0
+	+	94	25
+	+	94	21
+	+	94	1
+	+	66	33
+	+	94	0
+	+	47	0
+	+	40	0
+	+	37	40
+	+	37	6
+	+	38	40
+	+	40	0
+	+	41	0
+	+	37	0
+	+	314	0
+	+	87	0
+	+	47	1
+
+> ~/pyscripts/crk-beascuits.py
+	*	1749202644	0
+	"	1	0
+	.	59	0
+	+	97	46
+	+	92	0
+	+	94	0
+	+	90	0
+	+	89	25
+	+	94	46
+	+	97	24
+	+	89	0
+	+	96	79
+	+	97	0
+	+	96	82
+	+	96	0
+	+	96	86
+	+	95	46
+	+	96	103
+	+	95	54
+	+	96	23
+	+	95	27
+	+	95	32
+	+	95	0
+	+	69	20
+	+	101	0
+	+	87	0
+	+	82	0
+	+	90	0
+	+	96	48
+	+	23	87
+	+	58	0
+	+	18	0
+	+	8	0
+	+	58	0
+	+	31	42
+	+	32	35
+	+	33	58
+	+	58	0
+	+	34	31
+	+	37	53
+	+	39	46
+	+	41	11
+	+	27	17
+	+	26	17
+	+	41	43
+	+	57	0
+	+	24	18
+	+	31	34
+	+	41	8
+	+	41	19
+	+	42	23
+	+	43	8
+	+	44	36
+	+	41	11
+	+	41	22
+	+	41	0
+	+	35	38
+	+	36	17
+	+	37	25
+	+	57	0
+	+	39	44
+	+	59	9
+	+	59	0
+	+	41	36
+	+	41	24
+	+	41	27
+	+	41	31
+	+	41	61
+	+	28	32
+	+	30	51
+	+	30	0
+	+	31	25
+	+	34	34
+	+	29	13
+	+	41	44
+	+	56	16
+	+	29	9
+	+	15	31
+	+	39	0
+	+	59	12
+	+	59	13
+	+	41	27
+	+	41	0
+	+	39	20
+	+	39	0
+	+	41	0
+	+	39	0
+	+	38	0
+	+	39	0
+	+	47	0
+	+	46	0
+	+	59	40
+	+	40	8
+	+	14	0
+	+	40	0
+	+	59	23
+	+	12	0
+	+	13	0
+	+	59	0
+	a	61	25
+	b	61	25
+
+> ~/pyscripts/data/mining_traits.html
+	*	1749202555	0
+	"	1	0
+	^	297	26
+	.	297	25
+	+	297	25
+
+> ~/pyscripts/crk-mining-traits.py
+	*	1749202407	0
+	"	1	0
+
+> ~/tmp/keys.txt
+	*	1747710434	0
+	"	1	0
+	^	15	0
+	.	15	0
+	+	17	55
+	+	16	0
+	+	3	0
+	+	6	0
+	+	9	0
+	+	11	0
+	+	15	0
+
+> ~/tooling/errors.txt
+	*	1746350634	0
+	"	1	51
+	^	26	190
+	.	35	0
+	+	2	0
+	+	24	0
+	+	25	162
+	+	35	0
+	+	26	189
+	+	35	0
+
+> ~/.ssh/config
+	*	1743639719	0
+	"	13	38
+	^	13	39
+	.	13	38
+	+	10	18
+	+	16	0
+	+	11	13
+	+	16	22
+	+	16	0
+	+	14	0
+	+	16	0
+	+	16	35
+	+	16	4
+	+	14	4
+	+	15	4
+	+	16	4
+	+	16	5
+	+	15	5
+	+	14	5
+	+	16	5
+	+	16	4
+	+	16	0
+	+	16	4
+	+	16	117
+	+	16	4
+	+	9	0
+	+	2	5
+	+	16	0
+	+	3	0
+	+	1	16
+	+	16	0
+	+	12	35
+	+	4	95
+	+	5	48
+	+	13	124
+	+	13	38
+
+> ~/tooling/devops-bash-resources.txt
+	*	1742744341	0
+	"	2	0
+	^	2	6
+	.	11	0
+	+	11	0
+	+	10	197
+	+	11	0
+	+	7	119
+	+	7	36
+	+	8	0
+	+	10	54
+	+	9	0
+	+	6	0
+	+	11	0
+	+	3	0
+	+	11	0
+	+	3	0
+	+	4	0
+	+	3	0
+	+	2	5
+	+	11	0
+
+> ~/tooling/ssh-knowledge.txt
+	*	1741344010	0
+	"	1	0
+	^	14	26
+	.	14	25
+	+	39	11
+	+	39	0
+	+	24	18
+	+	26	0
+	+	25	0
+	+	39	77
+	+	39	67
+	+	41	50
+	+	49	0
+	+	30	4
+	+	35	5
+	+	35	28
+	+	30	79
+	+	39	4
+	+	35	85
+	+	39	0
+	+	35	0
+	+	29	0
+	+	30	12
+	+	29	0
+	+	30	0
+	+	35	0
+	+	42	33
+	+	48	22
+	+	48	29
+	+	48	28
+	+	48	43
+	+	48	0
+	+	42	62
+	+	44	4
+	+	48	0
+	+	43	16
+	+	47	6
+	+	43	8
+	+	31	40
+	+	27	0
+	+	35	0
+	+	34	46
+	+	39	0
+	+	35	0
+	+	41	0
+	+	35	0
+	+	39	0
+	+	35	0
+	+	39	0
+	+	36	42
+	+	35	0
+	+	35	17
+	+	39	17
+	+	34	17
+	+	32	0
+	+	35	0
+	+	39	0
+	+	35	0
+	+	37	0
+	+	36	132
+	+	34	4
+	+	35	4
+	+	37	4
+	+	38	4
+	+	39	4
+	+	33	37
+	+	40	0
+	+	33	13
+	+	40	0
+	+	33	83
+	+	40	81
+	+	33	24
+	+	40	22
+	+	20	75
+	+	24	0
+	+	29	0
+	+	28	76
+	+	49	379
+	+	49	0
+	+	16	0
+	+	19	0
+	+	16	0
+	+	17	75
+	+	17	78
+	+	15	0
+	+	1	15
+	+	5	30
+	+	6	34
+	+	7	19
+	+	7	0
+	+	4	0
+	+	6	116
+	+	5	84
+	+	4	22
+	+	10	43
+	+	11	71
+	+	12	25
+	+	13	44
+	+	14	58
+	+	15	0
+	+	14	0
+	+	15	0
+	+	14	25
+
+> ~/pyscripts/crk_monster_menace_calculator.py
+	*	1740864291	0
+	"	62	49
+	.	62	49
+	+	60	0
+	+	60	53
+	+	60	12
+	+	60	0
+	+	61	24
+	+	16	17
+	+	16	0
+	+	16	16
+	+	60	0
+	+	16	0
+	+	60	4
+	+	7	39
+	+	16	0
+	+	8	0
+	+	16	0
+	+	9	38
+	+	10	74
+	+	11	73
+	+	12	4
+	+	60	44
+	+	60	0
+	+	44	76
+	+	60	0
+	+	60	62
+	+	60	32
+	+	60	0
+	+	20	29
+	+	20	4
+	+	20	12
+	+	20	0
+	+	20	10
+	+	20	0
+	+	60	0
+	+	44	39
+	+	45	40
+	+	46	5
+	+	45	38
+	+	46	37
+	+	47	37
+	+	60	0
+	+	49	78
+	+	50	73
+	+	51	42
+	+	52	4
+	+	59	0
+	+	43	23
+	+	46	27
+	+	52	4
+	+	46	36
+	+	47	37
+	+	48	37
+	+	52	4
+	+	58	12
+	+	37	40
+	+	38	38
+	+	39	35
+	+	40	36
+	+	61	0
+	+	58	0
+	+	68	65
+	+	36	49
+	+	37	51
+	+	38	49
+	+	39	44
+	+	7	49
+	+	7	37
+	+	7	0
+	+	7	56
+	+	7	0
+	+	7	44
+	+	7	51
+	+	7	44
+	+	7	40
+	+	7	44
+	+	7	256
+	+	7	0
+	+	7	80
+	+	7	0
+	+	7	18
+	+	7	8
+	+	7	37
+	+	7	4
+	+	7	131
+	+	7	19
+	+	7	0
+	+	62	49
+	a	34	46
+	b	34	46
+
+> ~/.mitmproxy/mitmproxy-ca-cert.pem
+	*	1740831367	0
+	"	1	0
+
+> ~/crk-gb-bot/.envrc
+	*	1740830859	0
+	"	1	13
+	^	1	14
+	.	1	13
+	+	1	13
+
+> ~/tmp/local_install.bash
+	*	1740818863	0
+	"	5	1
+	^	5	2
+	.	5	1
+	+	5	27
+	+	2	4
+	+	5	4
+	+	3	37
+	+	4	21
+	+	2	0
+	+	5	58
+	+	4	105
+	+	5	0
+	+	1	0
+	+	6	0
+	+	5	1
+
+> ~/pflix/models/model_video.py
+	*	1740689229	0
+	"	13	8
+	^	10	10
+	.	10	9
+	+	11	0
+	+	2	32
+	+	10	17
+	+	9	13
+	+	8	16
+	+	7	11
+	+	11	0
+	+	5	12
+	+	11	23
+	+	12	28
+	+	8	26
+	+	16	11
+	+	9	27
+	+	18	9
+	+	17	55
+	+	18	58
+	+	10	9
+
+> ~/pyscripts/data/crk-beascuit-1.html
+	*	1740643073	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> /tmp/tU0CNY_.z
+	*	1740327229	0
+	"	1	0
+
+> /tmp/xxXi6b_.z
+	*	1740327223	0
+	"	3	0
+
+> ~/.config/shell_data/.z
+	*	1740327079	0
+	"	51	8
+	.	34	0
+	+	34	0
+
+> ~/.config/shell_data/.bash_history
+	*	1740327033	0
+	"	1830	9
+
+> /tmp/crontab.U1Ovsm/crontab
+	*	1740318871	0
+	"	34	8
 
 > ~/python_common/box/db_insert_unique.py
 	*	1740318679	0
@@ -19872,29 +20609,6 @@ $
 	+	8	0
 	+	15	0
 
-> ~/pflix/models/model_video.py
-	*	1740021968	0
-	"	1	0
-	^	10	10
-	.	10	9
-	+	11	0
-	+	2	32
-	+	10	17
-	+	9	13
-	+	8	16
-	+	7	11
-	+	11	0
-	+	5	12
-	+	11	23
-	+	12	28
-	+	8	26
-	+	16	11
-	+	9	27
-	+	18	9
-	+	17	55
-	+	18	58
-	+	10	9
-
 > ~/pflix/schema.sql
 	*	1740021917	0
 	"	1	0
@@ -20024,110 +20738,6 @@ $
 	+	33	0
 	+	41	33
 
-> ~/.vim/vimrc
-	*	1740009996	0
-	"	47	13
-	^	41	9
-	.	87	0
-	+	1	41
-	+	1	44
-	+	1	40
-	+	1	28
-	+	1	0
-	+	1	11
-	+	1	18
-	+	1	43
-	+	1	64
-	+	1	54
-	+	1	0
-	+	1	31
-	+	1	0
-	+	1	6
-	+	1	0
-	+	1	1
-	+	1	0
-	+	1	80
-	+	1	75
-	+	1	0
-	+	1	52
-	+	1	41
-	+	1	0
-	+	1	26
-	+	1	0
-	+	1	22
-	+	1	25
-	+	1	0
-	+	1	57
-	+	1	59
-	+	1	55
-	+	1	0
-	+	1	25
-	+	1	1
-	+	1	0
-	+	1	24
-	+	1	0
-	+	1	12
-	+	1	0
-	+	1	49
-	+	1	0
-	+	1	13
-	+	1	0
-	+	1	16
-	+	1	0
-	+	1	25
-	+	1	3
-	+	1	5
-	+	1	16
-	+	1	0
-	+	1	16
-	+	1	0
-	+	1	5
-	+	1	3
-	+	1	0
-	+	1	4
-	+	1	0
-	+	1	40
-	+	1	36
-	+	1	0
-	+	1	26
-	+	1	9
-	+	1	0
-	+	1	31
-	+	1	4
-	+	1	30
-	+	1	4
-	+	1	0
-	+	1	5
-	+	1	8
-	+	1	29
-	+	1	33
-	+	1	1
-	+	1	21
-	+	1	20
-	+	1	1
-	+	1	0
-	+	124	0
-	+	428	0
-	+	1150	0
-	+	576	5
-	+	94	0
-	+	46	0
-	+	94	25
-	+	94	21
-	+	94	1
-	+	66	33
-	+	94	0
-	+	47	0
-	+	40	0
-	+	37	40
-	+	37	6
-	+	38	40
-	+	40	0
-	+	41	0
-	+	37	0
-	+	314	0
-	+	87	0
-
 > /usr/share/vim/vim90/doc/filetype.txt
 	*	1739010904	0
 	"	689	8
@@ -20236,134 +20846,6 @@ $
 	+	24	0
 	+	21	0
 	+	19	0
-	+	11	0
-
-> ~/tooling/ssh-knowledge.txt
-	*	1738968069	0
-	"	14	28
-	^	14	26
-	.	14	25
-	+	39	11
-	+	39	0
-	+	24	18
-	+	26	0
-	+	25	0
-	+	39	77
-	+	39	67
-	+	41	50
-	+	49	0
-	+	30	4
-	+	35	5
-	+	35	28
-	+	30	79
-	+	39	4
-	+	35	85
-	+	39	0
-	+	35	0
-	+	29	0
-	+	30	12
-	+	29	0
-	+	30	0
-	+	35	0
-	+	42	33
-	+	48	22
-	+	48	29
-	+	48	28
-	+	48	43
-	+	48	0
-	+	42	62
-	+	44	4
-	+	48	0
-	+	43	16
-	+	47	6
-	+	43	8
-	+	31	40
-	+	27	0
-	+	35	0
-	+	34	46
-	+	39	0
-	+	35	0
-	+	41	0
-	+	35	0
-	+	39	0
-	+	35	0
-	+	39	0
-	+	36	42
-	+	35	0
-	+	35	17
-	+	39	17
-	+	34	17
-	+	32	0
-	+	35	0
-	+	39	0
-	+	35	0
-	+	37	0
-	+	36	132
-	+	34	4
-	+	35	4
-	+	37	4
-	+	38	4
-	+	39	4
-	+	33	37
-	+	40	0
-	+	33	13
-	+	40	0
-	+	33	83
-	+	40	81
-	+	33	24
-	+	40	22
-	+	20	75
-	+	24	0
-	+	29	0
-	+	28	76
-	+	49	379
-	+	49	0
-	+	16	0
-	+	19	0
-	+	16	0
-	+	17	75
-	+	17	78
-	+	15	0
-	+	1	15
-	+	5	30
-	+	6	34
-	+	7	19
-	+	7	0
-	+	4	0
-	+	6	116
-	+	5	84
-	+	4	22
-	+	10	43
-	+	11	71
-	+	12	25
-	+	13	44
-	+	14	58
-	+	15	0
-	+	14	0
-	+	15	0
-	+	14	25
-
-> ~/tooling/devops-bash-resources.txt
-	*	1738960730	0
-	"	1	0
-	^	2	6
-	.	11	0
-	+	11	0
-	+	10	197
-	+	11	0
-	+	7	119
-	+	7	36
-	+	8	0
-	+	10	54
-	+	9	0
-	+	6	0
-	+	11	0
-	+	3	0
-	+	11	0
-	+	3	0
-	+	4	0
-	+	3	0
-	+	2	5
 	+	11	0
 
 > ~/.config/uv/uv-receipt.json
@@ -21342,13 +21824,6 @@ $
 > ~/bash/search-gfiles.bash
 	*	1738070129	0
 	"	1	0
-
-> ~/bash/backup.crontab
-	*	1738070111	0
-	"	49	40
-	^	26	4
-	.	26	3
-	+	26	3
 
 > ~/pyscripts/commit-message-gemini.py
 	*	1738068585	0
@@ -23812,28 +24287,6 @@ $
 	*	1736063488	0
 	"	18	0
 
-> ~/.config/symlinks.txt
-	*	1736063424	0
-	"	4	91
-	^	13	0
-	.	13	0
-	+	7	42
-	+	4	3
-	+	5	3
-	+	6	3
-	+	7	3
-	+	3	7
-	+	4	5
-	+	3	5
-	+	5	5
-	+	6	5
-	+	7	5
-	+	3	53
-	+	11	27
-	+	12	11
-	+	11	14
-	+	13	0
-
 > ~/pyscripts/tests/test_viewlog.py
 	*	1736027718	0
 	"	28	0
@@ -25338,27 +25791,6 @@ $
 	+	2	0
 	+	202	0
 
-> ~/.config/git/token.gitconfig
-	*	1735681509	0
-	"	1	21
-	^	2	62
-	.	2	21
-	+	2	21
-	+	2	0
-	+	1	0
-	+	2	0
-	+	1	0
-	+	2	21
-
-> ~/.config/git/config
-	*	1735681493	0
-	"	11	0
-	.	14	0
-	+	8	17
-	+	9	8
-	+	10	0
-	+	14	0
-
 > /tmp/crontab.f4FFSp/crontab
 	*	1735680312	0
 	"	38	39
@@ -26686,43 +27118,6 @@ $
 	+	9	0
 	+	8	0
 	+	12	0
-
-> ~/.ssh/config
-	*	1735307557	0
-	"	13	124
-	^	13	125
-	.	13	124
-	+	10	18
-	+	16	0
-	+	11	13
-	+	16	22
-	+	16	0
-	+	14	0
-	+	16	0
-	+	16	35
-	+	16	4
-	+	14	4
-	+	15	4
-	+	16	4
-	+	16	5
-	+	15	5
-	+	14	5
-	+	16	5
-	+	16	4
-	+	16	0
-	+	16	4
-	+	16	117
-	+	16	4
-	+	9	0
-	+	2	5
-	+	16	0
-	+	3	0
-	+	1	16
-	+	16	0
-	+	12	35
-	+	4	95
-	+	5	48
-	+	13	124
 
 > ~/.config/alias.bash
 	*	1735236611	0
@@ -30666,18 +31061,6 @@ $
 	+	1	7
 	+	1	0
 	+	7	74
-
-> ~/tooling/errors.txt
-	*	1731534386	0
-	"	34	0
-	^	26	190
-	.	35	0
-	+	2	0
-	+	24	0
-	+	25	162
-	+	35	0
-	+	26	189
-	+	35	0
 
 > ~/tooling/digest/all_the_data_can_be_yours.txt
 	*	1731534363	0
@@ -38533,10 +38916,6 @@ $
 	*	1727445919	0
 	"	10164	7
 
-> ~/.config/shell_data/.bash_history
-	*	1727445808	0
-	"	1995	0
-
 > ~/.vim/todo.txt:1
 	*	1727445623	0
 	"	1	0
@@ -38973,12 +39352,6 @@ $
 	+	90	0
 	+	89	0
 	+	85	25
-
-> ~/.config/shell_data/.z
-	*	1726750526	0
-	"	40	12
-	.	34	0
-	+	34	0
 
 > ~/telegram_bots/reaction_alerts_bot.py
 	*	1726512437	0
@@ -48086,24 +48459,6 @@ $
 	+	16	18
 	+	18	14
 
-> ~/bash/cronjob.bash
-	*	1721216501	0
-	"	33	0
-	^	8	0
-	.	8	0
-	+	3	16
-	+	4	0
-	+	5	17
-	+	6	15
-	+	6	0
-	+	6	22
-	+	6	0
-	+	6	97
-	+	6	0
-	+	5	32
-	+	6	30
-	+	8	0
-
 > ~/.vim/plugin/cool.vim
 	*	1721150408	0
 	"	52	21
@@ -50871,10 +51226,6 @@ $
 	+	2	0
 	+	5	35
 	+	6	12
-
-> ~/.config/nushell/history.txt
-	*	1718096564	0
-	"	1	0
 
 > ~/ui-components-css/static/fonts/Proxima_Nova.css
 	*	1717941180	0
@@ -67528,6 +67879,12 @@ $
 > ~/python_common/db.py
 	*	1685152396	0
 	"	1	0
+
+> /tmp/5hTvAY_.z
+	"	1	0
+
+> /tmp/Jpuhbc_.z
+	"	3	0
 
 > /tmp/s6AadW_setup_chrome_testing_binaries.py
 	"	40	4

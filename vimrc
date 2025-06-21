@@ -44,7 +44,7 @@ endif
 filetype indent plugin on | syntax on 
 
 call plug#begin()
-Plug 'github/copilot.vim'
+" Plug 'github/copilot.vim'
 Plug 'mbbill/undotree'
 " Make sure pyflakes and eslint are installed
 " Install tabular
