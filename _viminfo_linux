@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/sort
+~MSle0~/log_request
 
 # Last Substitute Search Pattern:
 ~MSle0&=
@@ -21,7 +21,21 @@ $
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1750467079,,"q"
+|2,0,1754422525,,"q"
+:qa
+|2,0,1754421233,,"qa"
+:e alias.bash
+|2,0,1754421232,,"e alias.bash"
+:e fish/config.fish
+|2,0,1754421229,,"e fish/config.fish"
+:e oldfiles.bash
+|2,0,1754421157,,"e oldfiles.bash"
+:bd
+|2,0,1754403817,,"bd"
+:e data/ui-components-css-history.db
+|2,0,1754403815,,"e data/ui-components-css-history.db"
+:189
+|2,0,1754403801,,"189"
 :e backup.crontab
 |2,0,1750467012,,"e backup.crontab"
 :q!
@@ -50,16 +64,12 @@ $
 |2,0,1746347471,,"set wrap"
 ::qa!
 |2,0,1743123954,,":qa!"
-:qa
-|2,0,1743023437,,"qa"
 :bd!
 |2,0,1742744337,,"bd!"
 :%s/\$//
 |2,0,1742744295,,"%s/\\$//"
 :qa!
 |2,0,1740691930,,"qa!"
-:bd
-|2,0,1740689230,,"bd"
 :28
 |2,0,1740688489,,"28"
 :e data/time.txt
@@ -1774,8 +1784,6 @@ $
 |2,0,1729267282,,"199"
 :e templates/
 |2,0,1729257143,,"e templates/"
-:e oldfiles.bash
-|2,0,1729255794,,"e oldfiles.bash"
 :Cfilter **
 |2,0,1729244507,,"Cfilter **"
 :e jsonfile.py
@@ -12014,6 +12022,24 @@ $
 |2,0,1685142682,,"570"
 
 # Search String History (newest to oldest):
+?/log_request
+|2,1,1754403952,47,"log_request"
+?/insert_oldfil
+|2,1,1754421244,47,"insert_oldfil"
+?/insert_oldfiles
+|2,1,1754421223,47,"insert_oldfiles"
+?/oldfiles
+|2,1,1754421203,47,"oldfiles"
+?/log
+|2,1,1754403884,47,"log"
+?/\C\<history\>
+|2,1,1754403825,47,"\\C\\<history\\>"
+?/hist
+|2,1,1754403823,47,"hist"
+?/history
+|2,1,1754403790,47,"history"
+?/ssh
+|2,1,1750501192,47,"ssh"
 ?/sort
 |2,1,1750465999,47,"sort"
 ?/copil
@@ -12572,8 +12598,6 @@ $
 |2,1,1735831288,47,"bin"
 ?/\(def\|class\)\s\+\w*history
 |2,1,1735828323,47,"\\(def\\|class\\)\\s\\+\\w*history"
-?/history
-|2,1,1735828315,47,"history"
 ?/win
 |2,1,1735825151,47,"win"
 ?/win64
@@ -12822,8 +12846,6 @@ $
 |2,1,1735229225,47,"vimfiles"
 ?/remote
 |2,1,1735227343,47,"remote"
-?/ssh
-|2,1,1735227116,47,"ssh"
 ?/ssh-agent
 |2,1,1735227080,47,"ssh-agent"
 ?/known_
@@ -13410,8 +13432,6 @@ $
 |2,1,1729538545,47,"log("
 ?/\(def\|class\)\s\+\w*log
 |2,1,1729538540,47,"\\(def\\|class\\)\\s\\+\\w*log"
-?/log
-|2,1,1729538538,47,"log"
 ?/Job: 
 |2,1,1729538166,47,"Job: "
 ?/dead
@@ -13898,8 +13918,6 @@ $
 |2,1,1727347621,47,"--"
 ?/-1
 |2,1,1727328042,47,"-1"
-?/oldfiles
-|2,1,1727327318,47,"oldfiles"
 ? timer\..*\"get_todo_files\"
 |2,1,1727327150,,"timer\\..*\\\"get_todo_files\\\""
 ? timer\..*\"main\"
@@ -16590,8 +16608,6 @@ $
 |2,1,1713757202,47,"history "
 ?/histfie
 |2,1,1713756142,47,"histfie"
-?/hist
-|2,1,1713754955,47,"hist"
 ?/bash_
 |2,1,1713754778,47,"bash_"
 ?/PHP
@@ -18416,36 +18432,36 @@ $
 |2,4,1693311567,,"cont"
 
 # Registers:
-"0	CHAR	0
-	4
-|3,0,0,0,1,0,1750466086,"4"
+""0	LINE	0
+	    connection.execute("INSERT INTO history (epoch, method, status_code, path) VALUES (?, ?, ?, ?)", (epoch, method, status_code, path))
+|3,1,0,1,1,0,1754422524,"    connection.execute(\"INSERT INTO history (epoch, method, status_code, path) VALUES (?, ?, ?, ?)\", (epoch, method, status_code, path))"
 "1	LINE	0
-	2h
-|3,0,1,1,1,0,1747710417,"2h"
+	    connection.execute("INSERT INTO history (epoch, method, status_code, path) VALUES (?, ?, ?, ?)", (epoch, method, status_code, path))
+|3,0,1,1,1,0,1754403991,"    connection.execute(\"INSERT INTO history (epoch, method, status_code, path) VALUES (?, ?, ?, ?)\", (epoch, method, status_code, path))"
 "2	LINE	0
-	Â·
-|3,0,2,1,1,0,1747710417,"Â·"
+	    print(markup("[cyan bold]log_request[/]"))
+|3,0,2,1,1,0,1754403955,"    print(markup(\"[cyan bold]log_request[/]\"))"
 "3	LINE	0
-	@icanvardar
-|3,0,3,1,1,0,1747710417,"@icanvardar"
+	2h
+|3,0,3,1,1,0,1747710417,"2h"
 "4	LINE	0
-	Can Vardar
-|3,0,4,1,1,0,1747710417,"Can Vardar"
-"5	LINE	0
-	2h
-|3,0,5,1,1,0,1747710417,"2h"
-"6	LINE	0
 	Â·
-|3,0,6,1,1,0,1747710417,"Â·"
-"7	LINE	0
+|3,0,4,1,1,0,1747710417,"Â·"
+"5	LINE	0
 	@icanvardar
-|3,0,7,1,1,0,1747710417,"@icanvardar"
-"8	LINE	0
+|3,0,5,1,1,0,1747710417,"@icanvardar"
+"6	LINE	0
 	Can Vardar
-|3,0,8,1,1,0,1747710417,"Can Vardar"
-"9	LINE	0
+|3,0,6,1,1,0,1747710417,"Can Vardar"
+"7	LINE	0
 	2h
-|3,0,9,1,1,0,1747710417,"2h"
+|3,0,7,1,1,0,1747710417,"2h"
+"8	LINE	0
+	Â·
+|3,0,8,1,1,0,1747710417,"Â·"
+"9	LINE	0
+	@icanvardar
+|3,0,9,1,1,0,1747710417,"@icanvardar"
 "a@	CHAR	0
 	0;iStage(number0€kb=2, url="jkA"),€ýa
 |3,2,10,0,1,0,1740817881,"0;iStage(number0€kb=2, url=\"jkA\"),€ýa"
@@ -18516,238 +18532,695 @@ $
 |<"        for line in res:","            print(line)","","def pretty_print_box(box):","    # box sample: [[[138.0, 36.0], [462.0, 36.0], [462.0, 77.0], [138.0, 77.0]]","    (top_left, top_right, bottom_right, bottom_left) = box","    (x1, y1), (x2, y2), (x3, y3), (x4, y4) = box","","    x_min = min(x1, x2, x3, x4)","    x_max = max(x1, x2, x3, x4)","    y_min = min(y1, y2, y3, y4)","    y_max = max(y1, y2, y3, y4)","","    # Validation checks",>86
 |<"    assert x_min < x_max, f\"Invalid x coordinates: min ({x_min}) >= max ({x_max})\"","    assert y_min < y_max, f\"Invalid y coordinates: min ({y_min}) >= max ({y_max})\"","    ","    # Additional geometric checks","    assert abs(y1 - y2) < (y_max - y_min), \"Top edge is not roughly horizontal\"","    assert abs(y3 - y4) < (y_max - y_min), \"Bottom edge is not roughly horizontal\"","    assert abs(x1 - x4) < (x_max - x_min), \"Left edge is not roughly vertical\"",>83
 |<"    assert abs(x2 - x3) < (x_max - x_min), \"Right edge is not roughly vertical\"","","    pretty_string_flat = {","        \"left\": x_min,","        \"right\": x_max,","        \"top\": y_min,","        \"bottom\": y_max,","        \"top_left\": (x1, y1),","        \"top_right\": (x2, y2),","        \"bottom_right\": (x3, y3),","        \"bottom_left\": (x4, y4),","    }","    ","    print(f\"{box} => {pretty_string_flat}\")",""
-""-	CHAR	0
+"-	CHAR	0
 	r
-|3,1,36,0,1,0,1750466156,"r"
+|3,0,36,0,1,0,1750466156,"r"
 
 # File marks:
-'0  49  0  /tmp/crontab.ZPHDvQ/crontab
-|4,48,49,0,1750467079,"/tmp/crontab.ZPHDvQ/crontab"
-'1  34  151  ~/bash/backup.crontab
-|4,49,34,151,1750467052,"~/bash/backup.crontab"
-'2  34  151  ~/bash/backup.crontab
-|4,50,34,151,1750467052,"~/bash/backup.crontab"
-'3  32  0  ~/bash/backup.crontab
-|4,51,32,0,1750467025,"~/bash/backup.crontab"
-'4  32  0  ~/bash/backup.crontab
-|4,52,32,0,1750467025,"~/bash/backup.crontab"
-'5  32  0  ~/bash/backup.crontab
-|4,53,32,0,1750467025,"~/bash/backup.crontab"
-'6  32  0  ~/bash/backup.crontab
-|4,54,32,0,1750467025,"~/bash/backup.crontab"
-'7  1  0  ~/.config/symlinks.txt
-|4,55,1,0,1750466809,"~/.config/symlinks.txt"
-'8  1  0  ~/.config/symlinks.txt
-|4,56,1,0,1750466809,"~/.config/symlinks.txt"
-'9  1  0  ~/.config/symlinks.txt
-|4,57,1,0,1750466809,"~/.config/symlinks.txt"
+'0  74  4  ~/ui-components-css/ui-components-css-api.py
+|4,48,74,4,1754422525,"~/ui-components-css/ui-components-css-api.py"
+'1  54  30  ~/.config/setup.bash
+|4,49,54,30,1754422052,"~/.config/setup.bash"
+'2  29  0  ~/.config/alias.bash
+|4,50,29,0,1754421234,"~/.config/alias.bash"
+'3  29  0  ~/.config/alias.bash
+|4,51,29,0,1754421234,"~/.config/alias.bash"
+'4  1  0  ~/bash/insert_oldfiles.bash
+|4,52,1,0,1754421161,"~/bash/insert_oldfiles.bash"
+'5  1  0  ~/bash/insert_oldfiles.bash
+|4,53,1,0,1754421161,"~/bash/insert_oldfiles.bash"
+'6  1  0  ~/bash/insert_oldfiles.bash
+|4,54,1,0,1754421161,"~/bash/insert_oldfiles.bash"
+'7  1  0  ~/bash/insert_oldfiles.bash
+|4,55,1,0,1754421161,"~/bash/insert_oldfiles.bash"
+'8  196  0  ~/ui-components-css/filters_and_pagination.py
+|4,56,196,0,1754404063,"~/ui-components-css/filters_and_pagination.py"
+'9  196  0  ~/ui-components-css/filters_and_pagination.py
+|4,57,196,0,1754404063,"~/ui-components-css/filters_and_pagination.py"
 
 # Jumplist (newest first):
--'  49  0  /tmp/crontab.ZPHDvQ/crontab
-|4,39,49,0,1750467079,"/tmp/crontab.ZPHDvQ/crontab"
--'  1  0  /tmp/crontab.ZPHDvQ/crontab
-|4,39,1,0,1750467072,"/tmp/crontab.ZPHDvQ/crontab"
--'  34  151  ~/bash/backup.crontab
-|4,39,34,151,1750467052,"~/bash/backup.crontab"
--'  34  151  ~/bash/backup.crontab
-|4,39,34,151,1750467052,"~/bash/backup.crontab"
--'  1  0  ~/bash/backup.crontab
-|4,39,1,0,1750467046,"~/bash/backup.crontab"
--'  1  0  ~/bash/backup.crontab
-|4,39,1,0,1750467046,"~/bash/backup.crontab"
--'  1  0  ~/bash/cronjob.bash
-|4,39,1,0,1750467045,"~/bash/cronjob.bash"
--'  1  0  ~/bash/cronjob.bash
-|4,39,1,0,1750467045,"~/bash/cronjob.bash"
--'  32  0  ~/bash/backup.crontab
-|4,39,32,0,1750467025,"~/bash/backup.crontab"
--'  32  0  ~/bash/backup.crontab
-|4,39,32,0,1750467025,"~/bash/backup.crontab"
--'  32  0  ~/bash/backup.crontab
-|4,39,32,0,1750467025,"~/bash/backup.crontab"
--'  1  0  ~/bash/backup.crontab
-|4,39,1,0,1750467012,"~/bash/backup.crontab"
--'  1  0  ~/bash/cronjob.bash
-|4,39,1,0,1750467012,"~/bash/cronjob.bash"
--'  1  0  ~/.config/symlinks.txt
-|4,39,1,0,1750466809,"~/.config/symlinks.txt"
--'  1  0  ~/.config/symlinks.txt
-|4,39,1,0,1750466809,"~/.config/symlinks.txt"
--'  1  0  ~/.config/symlinks.txt
-|4,39,1,0,1750466809,"~/.config/symlinks.txt"
--'  1  0  ~/.config/symlinks.txt
-|4,39,1,0,1750466809,"~/.config/symlinks.txt"
--'  1  0  /proc/1/environ
-|4,39,1,0,1750466297,"/proc/1/environ"
--'  1  0  /proc/1/environ
-|4,39,1,0,1750466297,"/proc/1/environ"
--'  1  0  /proc/1/environ
-|4,39,1,0,1750466297,"/proc/1/environ"
--'  1  0  /proc/1/environ
-|4,39,1,0,1750466297,"/proc/1/environ"
--'  1  0  /proc/1/environ
-|4,39,1,0,1750466297,"/proc/1/environ"
--'  1  0  ~/.config/git/config
-|4,39,1,0,1750466269,"~/.config/git/config"
--'  1  0  ~/.config/git/config
-|4,39,1,0,1750466269,"~/.config/git/config"
--'  1  0  ~/.config/git/config
-|4,39,1,0,1750466269,"~/.config/git/config"
--'  1  0  ~/.config/git/config
-|4,39,1,0,1750466269,"~/.config/git/config"
--'  1  0  ~/.config/git/config
-|4,39,1,0,1750466269,"~/.config/git/config"
--'  1  0  ~/.config/git/config
-|4,39,1,0,1750466269,"~/.config/git/config"
--'  1  0  ~/tmp/token.txt
-|4,39,1,0,1750466170,"~/tmp/token.txt"
--'  1  0  ~/tmp/token.txt
-|4,39,1,0,1750466170,"~/tmp/token.txt"
--'  1  0  ~/tmp/token.txt
-|4,39,1,0,1750466170,"~/tmp/token.txt"
--'  1  0  ~/tmp/token.txt
-|4,39,1,0,1750466170,"~/tmp/token.txt"
--'  1  0  ~/tmp/token.txt
-|4,39,1,0,1750466170,"~/tmp/token.txt"
--'  1  0  ~/tmp/token.txt
-|4,39,1,0,1750466170,"~/tmp/token.txt"
--'  1  0  ~/tmp/token.txt
-|4,39,1,0,1750466170,"~/tmp/token.txt"
--'  2  0  ~/tmp/token.txt
-|4,39,2,0,1750466161,"~/tmp/token.txt"
--'  2  0  ~/tmp/token.txt
-|4,39,2,0,1750466161,"~/tmp/token.txt"
--'  2  0  ~/tmp/token.txt
-|4,39,2,0,1750466161,"~/tmp/token.txt"
--'  2  0  ~/tmp/token.txt
-|4,39,2,0,1750466161,"~/tmp/token.txt"
--'  2  0  ~/tmp/token.txt
-|4,39,2,0,1750466161,"~/tmp/token.txt"
--'  2  0  ~/tmp/token.txt
-|4,39,2,0,1750466161,"~/tmp/token.txt"
--'  2  0  ~/tmp/token.txt
-|4,39,2,0,1750466161,"~/tmp/token.txt"
--'  2  0  ~/tmp/token.txt
-|4,39,2,0,1750466161,"~/tmp/token.txt"
--'  1  0  ~/tmp/token.txt
-|4,39,1,0,1750466152,"~/tmp/token.txt"
--'  1  36  ~/.config/git/token.gitconfig
-|4,39,1,36,1750466089,"~/.config/git/token.gitconfig"
--'  1  36  ~/.config/git/token.gitconfig
-|4,39,1,36,1750466089,"~/.config/git/token.gitconfig"
--'  1  36  ~/.config/git/token.gitconfig
-|4,39,1,36,1750466089,"~/.config/git/token.gitconfig"
--'  1  36  ~/.config/git/token.gitconfig
-|4,39,1,36,1750466089,"~/.config/git/token.gitconfig"
--'  1  36  ~/.config/git/token.gitconfig
-|4,39,1,36,1750466089,"~/.config/git/token.gitconfig"
--'  1  36  ~/.config/git/token.gitconfig
-|4,39,1,36,1750466089,"~/.config/git/token.gitconfig"
--'  1  36  ~/.config/git/token.gitconfig
-|4,39,1,36,1750466089,"~/.config/git/token.gitconfig"
--'  1  36  ~/.config/git/token.gitconfig
-|4,39,1,36,1750466089,"~/.config/git/token.gitconfig"
--'  1  36  ~/.config/git/token.gitconfig
-|4,39,1,36,1750466089,"~/.config/git/token.gitconfig"
--'  34  175  /tmp/crontab.edUYib/crontab
-|4,39,34,175,1750466006,"/tmp/crontab.edUYib/crontab"
--'  34  175  /tmp/crontab.edUYib/crontab
-|4,39,34,175,1750466006,"/tmp/crontab.edUYib/crontab"
--'  34  175  /tmp/crontab.edUYib/crontab
-|4,39,34,175,1750466006,"/tmp/crontab.edUYib/crontab"
--'  34  175  /tmp/crontab.edUYib/crontab
-|4,39,34,175,1750466006,"/tmp/crontab.edUYib/crontab"
--'  34  175  /tmp/crontab.edUYib/crontab
-|4,39,34,175,1750466006,"/tmp/crontab.edUYib/crontab"
--'  34  175  /tmp/crontab.edUYib/crontab
-|4,39,34,175,1750466006,"/tmp/crontab.edUYib/crontab"
--'  34  175  /tmp/crontab.edUYib/crontab
-|4,39,34,175,1750466006,"/tmp/crontab.edUYib/crontab"
--'  34  175  /tmp/crontab.edUYib/crontab
-|4,39,34,175,1750466006,"/tmp/crontab.edUYib/crontab"
--'  34  175  /tmp/crontab.edUYib/crontab
-|4,39,34,175,1750466006,"/tmp/crontab.edUYib/crontab"
--'  34  175  /tmp/crontab.edUYib/crontab
-|4,39,34,175,1750466006,"/tmp/crontab.edUYib/crontab"
--'  1  0  /tmp/crontab.edUYib/crontab
-|4,39,1,0,1750465992,"/tmp/crontab.edUYib/crontab"
--'  1  0  /tmp/crontab.edUYib/crontab
-|4,39,1,0,1750465992,"/tmp/crontab.edUYib/crontab"
--'  1  0  /tmp/crontab.edUYib/crontab
-|4,39,1,0,1750465992,"/tmp/crontab.edUYib/crontab"
--'  1  0  /tmp/crontab.edUYib/crontab
-|4,39,1,0,1750465992,"/tmp/crontab.edUYib/crontab"
--'  1  0  /tmp/crontab.edUYib/crontab
-|4,39,1,0,1750465992,"/tmp/crontab.edUYib/crontab"
--'  1  0  /tmp/crontab.edUYib/crontab
-|4,39,1,0,1750465992,"/tmp/crontab.edUYib/crontab"
--'  1  0  /tmp/crontab.edUYib/crontab
-|4,39,1,0,1750465992,"/tmp/crontab.edUYib/crontab"
--'  1  0  /tmp/crontab.edUYib/crontab
-|4,39,1,0,1750465992,"/tmp/crontab.edUYib/crontab"
--'  1  0  /tmp/crontab.edUYib/crontab
-|4,39,1,0,1750465992,"/tmp/crontab.edUYib/crontab"
--'  1  0  /tmp/crontab.edUYib/crontab
-|4,39,1,0,1750465992,"/tmp/crontab.edUYib/crontab"
--'  393  0  ~/.config/nushell/history.txt
-|4,39,393,0,1750465977,"~/.config/nushell/history.txt"
--'  393  0  ~/.config/nushell/history.txt
-|4,39,393,0,1750465977,"~/.config/nushell/history.txt"
--'  393  0  ~/.config/nushell/history.txt
-|4,39,393,0,1750465977,"~/.config/nushell/history.txt"
--'  393  0  ~/.config/nushell/history.txt
-|4,39,393,0,1750465977,"~/.config/nushell/history.txt"
--'  393  0  ~/.config/nushell/history.txt
-|4,39,393,0,1750465977,"~/.config/nushell/history.txt"
--'  393  0  ~/.config/nushell/history.txt
-|4,39,393,0,1750465977,"~/.config/nushell/history.txt"
--'  393  0  ~/.config/nushell/history.txt
-|4,39,393,0,1750465977,"~/.config/nushell/history.txt"
--'  393  0  ~/.config/nushell/history.txt
-|4,39,393,0,1750465977,"~/.config/nushell/history.txt"
--'  393  0  ~/.config/nushell/history.txt
-|4,39,393,0,1750465977,"~/.config/nushell/history.txt"
--'  393  0  ~/.config/nushell/history.txt
-|4,39,393,0,1750465977,"~/.config/nushell/history.txt"
--'  393  0  ~/.config/nushell/history.txt
-|4,39,393,0,1750465977,"~/.config/nushell/history.txt"
--'  1  0  ~/.config/nushell/history.txt
-|4,39,1,0,1750465975,"~/.config/nushell/history.txt"
--'  1  0  ~/.config/nushell/history.txt
-|4,39,1,0,1750465975,"~/.config/nushell/history.txt"
--'  1  0  ~/.config/nushell/history.txt
-|4,39,1,0,1750465975,"~/.config/nushell/history.txt"
--'  1  0  ~/.config/nushell/history.txt
-|4,39,1,0,1750465975,"~/.config/nushell/history.txt"
--'  1  0  ~/.config/nushell/history.txt
-|4,39,1,0,1750465975,"~/.config/nushell/history.txt"
--'  1  0  ~/.config/nushell/history.txt
-|4,39,1,0,1750465975,"~/.config/nushell/history.txt"
--'  1  0  ~/.config/nushell/history.txt
-|4,39,1,0,1750465975,"~/.config/nushell/history.txt"
--'  1  0  ~/.config/nushell/history.txt
-|4,39,1,0,1750465975,"~/.config/nushell/history.txt"
--'  1  0  ~/.config/nushell/history.txt
-|4,39,1,0,1750465975,"~/.config/nushell/history.txt"
--'  1  0  ~/.config/nushell/history.txt
-|4,39,1,0,1750465975,"~/.config/nushell/history.txt"
--'  1  0  ~/.config/nushell/history.txt
-|4,39,1,0,1750465975,"~/.config/nushell/history.txt"
--'  34  4  ~/pyscripts/crk_mining_traits.py
-|4,39,34,4,1750465666,"~/pyscripts/crk_mining_traits.py"
--'  34  4  ~/pyscripts/crk_mining_traits.py
-|4,39,34,4,1750465666,"~/pyscripts/crk_mining_traits.py"
--'  34  4  ~/pyscripts/crk_mining_traits.py
-|4,39,34,4,1750465666,"~/pyscripts/crk_mining_traits.py"
--'  34  4  ~/pyscripts/crk_mining_traits.py
-|4,39,34,4,1750465666,"~/pyscripts/crk_mining_traits.py"
--'  34  4  ~/pyscripts/crk_mining_traits.py
-|4,39,34,4,1750465666,"~/pyscripts/crk_mining_traits.py"
+-'  74  4  ~/ui-components-css/ui-components-css-api.py
+|4,39,74,4,1754422525,"~/ui-components-css/ui-components-css-api.py"
+-'  54  30  ~/.config/setup.bash
+|4,39,54,30,1754422052,"~/.config/setup.bash"
+-'  1  0  ~/.config/setup.bash
+|4,39,1,0,1754421244,"~/.config/setup.bash"
+-'  29  0  ~/.config/alias.bash
+|4,39,29,0,1754421234,"~/.config/alias.bash"
+-'  29  0  ~/.config/alias.bash
+|4,39,29,0,1754421234,"~/.config/alias.bash"
+-'  1  0  ~/bash/insert_oldfiles.bash
+|4,39,1,0,1754421220,"~/bash/insert_oldfiles.bash"
+-'  1  0  ~/bash/insert_oldfiles.bash
+|4,39,1,0,1754421220,"~/bash/insert_oldfiles.bash"
+-'  1  0  ~/.config/alias.bash
+|4,39,1,0,1754421203,"~/.config/alias.bash"
+-'  1  0  ~/.config/alias.bash
+|4,39,1,0,1754421203,"~/.config/alias.bash"
+-'  1  0  ~/bash/insert_oldfiles.bash
+|4,39,1,0,1754421161,"~/bash/insert_oldfiles.bash"
+-'  196  0  ~/ui-components-css/filters_and_pagination.py
+|4,39,196,0,1754404063,"~/ui-components-css/filters_and_pagination.py"
+-'  196  0  ~/ui-components-css/filters_and_pagination.py
+|4,39,196,0,1754404063,"~/ui-components-css/filters_and_pagination.py"
+-'  196  0  ~/ui-components-css/filters_and_pagination.py
+|4,39,196,0,1754404063,"~/ui-components-css/filters_and_pagination.py"
+-'  196  0  ~/ui-components-css/filters_and_pagination.py
+|4,39,196,0,1754404063,"~/ui-components-css/filters_and_pagination.py"
+-'  211  4  ~/ui-components-css/filters_and_pagination.py
+|4,39,211,4,1754404058,"~/ui-components-css/filters_and_pagination.py"
+-'  239  8  ~/ui-components-css/filters_and_pagination.py
+|4,39,239,8,1754404058,"~/ui-components-css/filters_and_pagination.py"
+-'  240  12  ~/ui-components-css/filters_and_pagination.py
+|4,39,240,12,1754404058,"~/ui-components-css/filters_and_pagination.py"
+-'  211  4  ~/ui-components-css/filters_and_pagination.py
+|4,39,211,4,1754404058,"~/ui-components-css/filters_and_pagination.py"
+-'  239  8  ~/ui-components-css/filters_and_pagination.py
+|4,39,239,8,1754404058,"~/ui-components-css/filters_and_pagination.py"
+-'  240  12  ~/ui-components-css/filters_and_pagination.py
+|4,39,240,12,1754404058,"~/ui-components-css/filters_and_pagination.py"
+-'  211  4  ~/ui-components-css/filters_and_pagination.py
+|4,39,211,4,1754404058,"~/ui-components-css/filters_and_pagination.py"
+-'  239  8  ~/ui-components-css/filters_and_pagination.py
+|4,39,239,8,1754404058,"~/ui-components-css/filters_and_pagination.py"
+-'  240  12  ~/ui-components-css/filters_and_pagination.py
+|4,39,240,12,1754404058,"~/ui-components-css/filters_and_pagination.py"
+-'  211  4  ~/ui-components-css/filters_and_pagination.py
+|4,39,211,4,1754404058,"~/ui-components-css/filters_and_pagination.py"
+-'  239  8  ~/ui-components-css/filters_and_pagination.py
+|4,39,239,8,1754404058,"~/ui-components-css/filters_and_pagination.py"
+-'  240  12  ~/ui-components-css/filters_and_pagination.py
+|4,39,240,12,1754404058,"~/ui-components-css/filters_and_pagination.py"
+-'  1  0  ~/ui-components-css/filters_and_pagination.py
+|4,39,1,0,1754404055,"~/ui-components-css/filters_and_pagination.py"
+-'  1  0  ~/ui-components-css/filters_and_pagination.py
+|4,39,1,0,1754404055,"~/ui-components-css/filters_and_pagination.py"
+-'  1  0  ~/ui-components-css/filters_and_pagination.py
+|4,39,1,0,1754404055,"~/ui-components-css/filters_and_pagination.py"
+-'  1  0  ~/ui-components-css/filters_and_pagination.py
+|4,39,1,0,1754404055,"~/ui-components-css/filters_and_pagination.py"
+-'  1  0  ~/ui-components-css/filter-and-pagination-schemas.txt
+|4,39,1,0,1754404050,"~/ui-components-css/filter-and-pagination-schemas.txt"
+-'  1  0  ~/ui-components-css/filter-and-pagination-schemas.txt
+|4,39,1,0,1754404050,"~/ui-components-css/filter-and-pagination-schemas.txt"
+-'  1  0  ~/ui-components-css/filter-and-pagination-schemas.txt
+|4,39,1,0,1754404050,"~/ui-components-css/filter-and-pagination-schemas.txt"
+-'  1  0  ~/ui-components-css/filter-and-pagination-schemas.txt
+|4,39,1,0,1754404050,"~/ui-components-css/filter-and-pagination-schemas.txt"
+-'  1  0  ~/ui-components-css/filter-and-pagination-schemas.txt
+|4,39,1,0,1754404050,"~/ui-components-css/filter-and-pagination-schemas.txt"
+-'  25  4  ~/ui-components-css/flask-history-dashboard.py
+|4,39,25,4,1754404043,"~/ui-components-css/flask-history-dashboard.py"
+-'  25  4  ~/ui-components-css/flask-history-dashboard.py
+|4,39,25,4,1754404043,"~/ui-components-css/flask-history-dashboard.py"
+-'  25  4  ~/ui-components-css/flask-history-dashboard.py
+|4,39,25,4,1754404043,"~/ui-components-css/flask-history-dashboard.py"
+-'  25  4  ~/ui-components-css/flask-history-dashboard.py
+|4,39,25,4,1754404043,"~/ui-components-css/flask-history-dashboard.py"
+-'  25  4  ~/ui-components-css/flask-history-dashboard.py
+|4,39,25,4,1754404043,"~/ui-components-css/flask-history-dashboard.py"
+-'  25  4  ~/ui-components-css/flask-history-dashboard.py
+|4,39,25,4,1754404043,"~/ui-components-css/flask-history-dashboard.py"
+-'  1  0  ~/ui-components-css/flask-history-dashboard.py
+|4,39,1,0,1754404037,"~/ui-components-css/flask-history-dashboard.py"
+-'  1  0  ~/ui-components-css/flask-history-dashboard.py
+|4,39,1,0,1754404037,"~/ui-components-css/flask-history-dashboard.py"
+-'  1  0  ~/ui-components-css/flask-history-dashboard.py
+|4,39,1,0,1754404037,"~/ui-components-css/flask-history-dashboard.py"
+-'  1  0  ~/ui-components-css/flask-history-dashboard.py
+|4,39,1,0,1754404037,"~/ui-components-css/flask-history-dashboard.py"
+-'  1  0  ~/ui-components-css/flask-history-dashboard.py
+|4,39,1,0,1754404037,"~/ui-components-css/flask-history-dashboard.py"
+-'  1  0  ~/ui-components-css/flask-history-dashboard.py
+|4,39,1,0,1754404037,"~/ui-components-css/flask-history-dashboard.py"
+-'  1  0  ~/ui-components-css/ui-components-css-api.py
+|4,39,1,0,1754403952,"~/ui-components-css/ui-components-css-api.py"
+-'  153  4  ~/ui-components-css/ui-components-css-api.py
+|4,39,153,4,1754403950,"~/ui-components-css/ui-components-css-api.py"
+-'  258  0  ~/ui-components-css/ui-components-css-api.py
+|4,39,258,0,1754403947,"~/ui-components-css/ui-components-css-api.py"
+-'  1  0  ~/ui-components-css/ui-components-css-api.py
+|4,39,1,0,1754403922,"~/ui-components-css/ui-components-css-api.py"
+-'  1  0  ~/ui-components-css/ui-components-css-api.py
+|4,39,1,0,1754403922,"~/ui-components-css/ui-components-css-api.py"
+-'  1  0  ~/ui-components-css/ui-components-css-api.py
+|4,39,1,0,1754403922,"~/ui-components-css/ui-components-css-api.py"
+-'  1  0  ~/ui-components-css/ui-components-css-api.py
+|4,39,1,0,1754403922,"~/ui-components-css/ui-components-css-api.py"
+-'  1  0  ~/ui-components-css/ui-components-css-api.py
+|4,39,1,0,1754403922,"~/ui-components-css/ui-components-css-api.py"
+-'  1  0  ~/ui-components-css/ui-components-css-api.py
+|4,39,1,0,1754403922,"~/ui-components-css/ui-components-css-api.py"
+-'  1  0  ~/ui-components-css/ui-components-css-api.py
+|4,39,1,0,1754403922,"~/ui-components-css/ui-components-css-api.py"
+-'  65  10  ~/ui-components-css/ui-components-css-api.py
+|4,39,65,10,1754403919,"~/ui-components-css/ui-components-css-api.py"
+-'  65  10  ~/ui-components-css/ui-components-css-api.py
+|4,39,65,10,1754403919,"~/ui-components-css/ui-components-css-api.py"
+-'  65  10  ~/ui-components-css/ui-components-css-api.py
+|4,39,65,10,1754403919,"~/ui-components-css/ui-components-css-api.py"
+-'  65  10  ~/ui-components-css/ui-components-css-api.py
+|4,39,65,10,1754403919,"~/ui-components-css/ui-components-css-api.py"
+-'  65  10  ~/ui-components-css/ui-components-css-api.py
+|4,39,65,10,1754403919,"~/ui-components-css/ui-components-css-api.py"
+-'  65  10  ~/ui-components-css/ui-components-css-api.py
+|4,39,65,10,1754403919,"~/ui-components-css/ui-components-css-api.py"
+-'  65  10  ~/ui-components-css/ui-components-css-api.py
+|4,39,65,10,1754403919,"~/ui-components-css/ui-components-css-api.py"
+-'  65  10  ~/ui-components-css/ui-components-css-api.py
+|4,39,65,10,1754403919,"~/ui-components-css/ui-components-css-api.py"
+-'  65  10  ~/ui-components-css/ui-components-css-api.py
+|4,39,65,10,1754403919,"~/ui-components-css/ui-components-css-api.py"
+-'  63  17  ~/ui-components-css/ui-components-css-api.py
+|4,39,63,17,1754403885,"~/ui-components-css/ui-components-css-api.py"
+-'  63  17  ~/ui-components-css/ui-components-css-api.py
+|4,39,63,17,1754403885,"~/ui-components-css/ui-components-css-api.py"
+-'  63  17  ~/ui-components-css/ui-components-css-api.py
+|4,39,63,17,1754403885,"~/ui-components-css/ui-components-css-api.py"
+-'  63  17  ~/ui-components-css/ui-components-css-api.py
+|4,39,63,17,1754403885,"~/ui-components-css/ui-components-css-api.py"
+-'  63  17  ~/ui-components-css/ui-components-css-api.py
+|4,39,63,17,1754403885,"~/ui-components-css/ui-components-css-api.py"
+-'  63  17  ~/ui-components-css/ui-components-css-api.py
+|4,39,63,17,1754403885,"~/ui-components-css/ui-components-css-api.py"
+-'  63  17  ~/ui-components-css/ui-components-css-api.py
+|4,39,63,17,1754403885,"~/ui-components-css/ui-components-css-api.py"
+-'  63  17  ~/ui-components-css/ui-components-css-api.py
+|4,39,63,17,1754403885,"~/ui-components-css/ui-components-css-api.py"
+-'  63  17  ~/ui-components-css/ui-components-css-api.py
+|4,39,63,17,1754403885,"~/ui-components-css/ui-components-css-api.py"
+-'  1  0  ~/ui-components-css/ui-components-css-api.py
+|4,39,1,0,1754403884,"~/ui-components-css/ui-components-css-api.py"
+-'  73  23  ~/ui-components-css/ui-components-css-api.py
+|4,39,73,23,1754403869,"~/ui-components-css/ui-components-css-api.py"
+-'  75  23  ~/ui-components-css/ui-components-css-api.py
+|4,39,75,23,1754403869,"~/ui-components-css/ui-components-css-api.py"
+-'  74  23  ~/ui-components-css/ui-components-css-api.py
+|4,39,74,23,1754403869,"~/ui-components-css/ui-components-css-api.py"
+-'  75  23  ~/ui-components-css/ui-components-css-api.py
+|4,39,75,23,1754403869,"~/ui-components-css/ui-components-css-api.py"
+-'  74  23  ~/ui-components-css/ui-components-css-api.py
+|4,39,74,23,1754403869,"~/ui-components-css/ui-components-css-api.py"
+-'  75  23  ~/ui-components-css/ui-components-css-api.py
+|4,39,75,23,1754403869,"~/ui-components-css/ui-components-css-api.py"
+-'  74  23  ~/ui-components-css/ui-components-css-api.py
+|4,39,74,23,1754403869,"~/ui-components-css/ui-components-css-api.py"
+-'  75  23  ~/ui-components-css/ui-components-css-api.py
+|4,39,75,23,1754403869,"~/ui-components-css/ui-components-css-api.py"
+-'  74  23  ~/ui-components-css/ui-components-css-api.py
+|4,39,74,23,1754403869,"~/ui-components-css/ui-components-css-api.py"
+-'  75  23  ~/ui-components-css/ui-components-css-api.py
+|4,39,75,23,1754403869,"~/ui-components-css/ui-components-css-api.py"
+-'  74  23  ~/ui-components-css/ui-components-css-api.py
+|4,39,74,23,1754403869,"~/ui-components-css/ui-components-css-api.py"
+-'  75  23  ~/ui-components-css/ui-components-css-api.py
+|4,39,75,23,1754403869,"~/ui-components-css/ui-components-css-api.py"
+-'  74  23  ~/ui-components-css/ui-components-css-api.py
+|4,39,74,23,1754403869,"~/ui-components-css/ui-components-css-api.py"
+-'  75  23  ~/ui-components-css/ui-components-css-api.py
+|4,39,75,23,1754403869,"~/ui-components-css/ui-components-css-api.py"
+-'  74  23  ~/ui-components-css/ui-components-css-api.py
+|4,39,74,23,1754403869,"~/ui-components-css/ui-components-css-api.py"
+-'  75  23  ~/ui-components-css/ui-components-css-api.py
+|4,39,75,23,1754403869,"~/ui-components-css/ui-components-css-api.py"
+-'  74  23  ~/ui-components-css/ui-components-css-api.py
+|4,39,74,23,1754403869,"~/ui-components-css/ui-components-css-api.py"
+-'  46  4  ~/ui-components-css/ui-components-css-api.py
+|4,39,46,4,1754403829,"~/ui-components-css/ui-components-css-api.py"
+-'  46  4  ~/ui-components-css/ui-components-css-api.py
+|4,39,46,4,1754403829,"~/ui-components-css/ui-components-css-api.py"
+-'  46  4  ~/ui-components-css/ui-components-css-api.py
+|4,39,46,4,1754403829,"~/ui-components-css/ui-components-css-api.py"
+-'  46  4  ~/ui-components-css/ui-components-css-api.py
+|4,39,46,4,1754403829,"~/ui-components-css/ui-components-css-api.py"
+-'  46  4  ~/ui-components-css/ui-components-css-api.py
+|4,39,46,4,1754403829,"~/ui-components-css/ui-components-css-api.py"
+-'  46  4  ~/ui-components-css/ui-components-css-api.py
+|4,39,46,4,1754403829,"~/ui-components-css/ui-components-css-api.py"
 
 # Buffer list:
-%/tmp/crontab.ZPHDvQ/crontab	49	0
+%~/ui-components-css/ui-components-css-api.py	74	4
 
 # History of marks within files (newest to oldest):
+
+> ~/ui-components-css/ui-components-css-api.py
+	*	1754422524	0
+	"	74	4
+	^	185	47
+	.	185	46
+	+	85	12
+	+	85	18
+	+	85	0
+	+	85	45
+	+	85	25
+	+	43	22
+	+	85	0
+	+	85	41
+	+	85	8
+	+	85	32
+	+	85	0
+	+	64	0
+	+	63	0
+	+	68	0
+	+	62	0
+	+	69	3
+	+	70	0
+	+	70	84
+	+	71	33
+	+	72	46
+	+	72	37
+	+	72	4
+	+	74	11
+	+	74	33
+	+	74	4
+	+	76	4
+	+	82	10
+	+	83	4
+	+	84	66
+	+	76	23
+	+	73	0
+	+	72	0
+	+	72	3
+	+	74	0
+	+	77	0
+	+	76	33
+	+	79	32
+	+	77	24
+	+	79	38
+	+	77	25
+	+	79	84
+	+	7	10
+	+	41	67
+	+	156	19
+	+	156	0
+	+	156	36
+	+	156	27
+	+	156	19
+	+	156	5
+	+	1	0
+	+	156	0
+	+	156	15
+	+	156	20
+	+	156	11
+	+	156	5
+	+	156	0
+	+	23	0
+	+	40	4
+	+	41	81
+	+	6	49
+	+	10	0
+	+	58	0
+	+	72	0
+	+	58	37
+	+	58	41
+	+	5	7
+	+	7	7
+	+	5	7
+	+	7	7
+	+	46	54
+	+	10	0
+	+	58	41
+	+	32	52
+	+	58	15
+	+	58	9
+	+	58	11
+	+	362	141
+	+	363	0
+	+	362	141
+	+	56	24
+	+	56	12
+	+	54	26
+	+	55	67
+	+	56	14
+	+	52	25
+	+	53	66
+	+	56	13
+	+	56	39
+	+	56	25
+	+	13	83
+	+	20	42
+	+	58	0
+	+	56	0
+	+	13	73
+	+	10	0
+	+	65	45
+	+	5	0
+	+	65	0
+	+	185	135
+	+	185	46
+
+> ~/.config/setup.bash
+	*	1754421248	0
+	"	54	30
+	^	53	0
+	.	9	0
+	+	15	0
+	+	15	54
+	+	27	0
+	+	30	28
+	+	29	0
+	+	30	1
+	+	30	0
+	+	30	5
+	+	29	1
+	+	30	0
+	+	29	0
+	+	27	0
+	+	15	23
+	+	15	0
+	+	15	25
+	+	15	0
+	+	26	37
+	+	26	1
+	+	26	0
+	+	57	33
+	+	57	51
+	+	57	0
+	+	55	0
+	+	57	0
+	+	57	1
+	+	57	0
+	+	57	1
+	+	57	38
+	+	58	0
+	+	57	4
+	+	57	16
+	+	57	0
+	+	56	0
+	+	57	1
+	+	58	53
+	+	58	0
+	+	57	0
+	+	10	3
+	+	15	0
+	+	11	0
+	+	14	0
+	+	11	30
+	+	13	57
+	+	10	23
+	+	10	0
+	+	15	0
+	+	33	20
+	+	7	25
+	+	7	0
+	+	7	90
+	+	7	27
+	+	7	25
+	+	10	0
+	+	7	0
+	+	10	0
+	+	15	0
+	+	6	0
+	+	4	24
+	+	4	0
+	+	5	0
+	+	7	0
+	+	15	0
+	+	7	0
+	+	8	0
+	+	7	0
+	+	9	0
+	+	15	0
+	+	8	0
+	+	21	0
+	+	8	0
+	+	54	0
+	+	53	0
+	+	17	0
+	+	31	0
+	+	17	0
+	+	8	0
+	+	9	0
+
+> ~/.config/alias.bash
+	*	1754421232	0
+	"	29	0
+	^	22	130
+	.	22	129
+	+	27	32
+	+	16	72
+	+	18	38
+	+	31	0
+	+	29	0
+	+	15	0
+	+	34	0
+	+	32	8
+	+	29	0
+	+	32	33
+	+	33	6
+	+	32	1
+	+	34	0
+	+	33	108
+	+	33	6
+	+	31	1
+	+	18	162
+	+	18	14
+	+	18	163
+	+	23	169
+	+	23	0
+	+	18	58
+	+	34	0
+	+	19	0
+	+	20	17
+	+	21	6
+	+	11	58
+	+	12	26
+	+	21	54
+	+	16	41
+	+	17	15
+	+	22	129
+
+> ~/bash/insert_oldfiles.bash
+	*	1754421216	0
+	"	1	0
+	^	5	1
+	.	5	0
+	+	1	33
+	+	1	14
+	+	1	13
+	+	1	134
+	+	1	0
+	+	1	32
+	+	1	0
+	+	1	32
+	+	1	45
+	+	1	88
+	+	1	52
+	+	1	9
+	+	1	0
+	+	1	10
+	+	1	27
+	+	1	0
+	+	1	37
+	+	1	0
+	+	1	2
+	+	1	0
+	+	1	10
+	+	1	0
+	+	1	1
+	+	1	0
+	+	1	1
+	+	1	0
+	+	1	10
+	+	1	0
+	+	2	0
+	+	10	0
+	+	5	0
+
+> ~/bash/oldfiles.bash
+	*	1754421157	0
+	"	1	0
+	.	18	0
+	+	2	1
+	+	2	12
+	+	2	49
+	+	2	12
+	+	2	0
+	+	5	1
+	+	1	10
+	+	2	62
+	+	2	34
+	+	2	1
+	+	2	16
+	+	2	0
+	+	10	33
+	+	2	68
+	+	5	66
+	+	5	0
+	+	2	13
+	+	5	23
+	+	6	51
+	+	10	28
+	+	19	22
+	+	2	107
+	+	12	0
+	+	7	0
+	+	1	0
+	+	12	0
+	+	2	83
+	+	2	0
+	+	20	0
+	+	20	1
+	+	20	16
+	+	4	0
+	+	2	1
+	+	4	97
+	+	4	1
+	+	2	0
+	+	3	27
+	+	4	1
+	+	5	1
+	+	4	0
+	+	5	0
+	+	14	0
+	+	10	0
+	+	12	0
+	+	9	0
+	+	12	0
+	+	11	0
+	+	19	0
+	+	20	0
+	+	8	0
+	+	18	0
+
+> ~/ui-components-css/filters_and_pagination.py
+	*	1754404058	0
+	"	196	0
+	^	205	0
+	.	216	0
+	+	135	0
+	+	95	0
+	+	1	0
+	+	2	0
+	+	1	0
+	+	2	12
+	+	3	0
+	+	9	0
+	+	24	0
+	+	5	0
+	+	6	0
+	+	52	54
+	+	5	0
+	+	8	0
+	+	87	0
+	+	147	0
+	+	79	0
+	+	85	48
+	+	3	26
+	+	4	0
+	+	3	26
+	+	177	53
+	+	211	53
+	+	155	0
+	+	152	0
+	+	39	0
+	+	154	0
+	+	112	27
+	+	216	0
+	+	214	37
+	+	216	33
+	+	217	0
+	+	215	33
+	+	203	0
+	+	204	12
+	+	205	0
+	+	216	0
+
+> ~/ui-components-css/filter-and-pagination-schemas.txt
+	*	1754404049	0
+	"	1	0
+	.	13	0
+	+	9	21
+	+	10	25
+	+	7	16
+	+	11	33
+	+	12	0
+	+	9	8
+	+	10	12
+	+	11	14
+	+	12	11
+	+	9	48
+	+	12	21
+	+	2	37
+	+	3	0
+	+	1	0
+	+	13	0
+
+> ~/ui-components-css/flask-history-dashboard.py
+	*	1754404040	0
+	"	25	4
+	.	24	0
+	+	32	0
+	+	36	0
+	+	35	0
+	+	13	59
+	+	14	4
+	+	18	0
+	+	14	7
+	+	18	0
+	+	13	36
+	+	18	0
+	+	16	3
+	+	19	35
+	+	17	7
+	+	1	0
+	+	19	86
+	+	24	0
+	+	25	0
+	+	21	34
+	+	22	27
+	+	23	73
+	+	24	0
+
+> ~/ui-components-css/data/ui-components-css-history.db
+	*	1754403815	0
+	"	1	0
+
+> ~/dockerfiles/Dockerfile-ubuntu
+	*	1750501197	0
+	"	157	0
+
+> ~/.ssh/config
+	*	1750495879	0
+	"	1	0
+	^	13	39
+	.	13	38
+	+	10	18
+	+	16	0
+	+	11	13
+	+	16	22
+	+	16	0
+	+	14	0
+	+	16	0
+	+	16	35
+	+	16	4
+	+	14	4
+	+	15	4
+	+	16	4
+	+	16	5
+	+	15	5
+	+	14	5
+	+	16	5
+	+	16	4
+	+	16	0
+	+	16	4
+	+	16	117
+	+	16	4
+	+	9	0
+	+	2	5
+	+	16	0
+	+	3	0
+	+	1	16
+	+	16	0
+	+	12	35
+	+	4	95
+	+	5	48
+	+	13	124
+	+	13	38
+
+> ~/.config/gomi/config.yaml
+	*	1750495720	0
+	"	1	0
 
 > /tmp/crontab.ZPHDvQ/crontab
 	*	1750467076	0
@@ -19091,44 +19564,6 @@ $
 	+	35	0
 	+	26	189
 	+	35	0
-
-> ~/.ssh/config
-	*	1743639719	0
-	"	13	38
-	^	13	39
-	.	13	38
-	+	10	18
-	+	16	0
-	+	11	13
-	+	16	22
-	+	16	0
-	+	14	0
-	+	16	0
-	+	16	35
-	+	16	4
-	+	14	4
-	+	15	4
-	+	16	4
-	+	16	5
-	+	15	5
-	+	14	5
-	+	16	5
-	+	16	4
-	+	16	0
-	+	16	4
-	+	16	117
-	+	16	4
-	+	9	0
-	+	2	5
-	+	16	0
-	+	3	0
-	+	1	16
-	+	16	0
-	+	12	35
-	+	4	95
-	+	5	48
-	+	13	124
-	+	13	38
 
 > ~/tooling/devops-bash-resources.txt
 	*	1742744341	0
@@ -19506,89 +19941,6 @@ $
 	+	12	0
 	+	9	10
 	+	10	29
-
-> ~/.config/setup.bash
-	*	1740215673	0
-	"	54	0
-	^	53	0
-	.	9	0
-	+	15	0
-	+	15	54
-	+	27	0
-	+	30	28
-	+	29	0
-	+	30	1
-	+	30	0
-	+	30	5
-	+	29	1
-	+	30	0
-	+	29	0
-	+	27	0
-	+	15	23
-	+	15	0
-	+	15	25
-	+	15	0
-	+	26	37
-	+	26	1
-	+	26	0
-	+	57	33
-	+	57	51
-	+	57	0
-	+	55	0
-	+	57	0
-	+	57	1
-	+	57	0
-	+	57	1
-	+	57	38
-	+	58	0
-	+	57	4
-	+	57	16
-	+	57	0
-	+	56	0
-	+	57	1
-	+	58	53
-	+	58	0
-	+	57	0
-	+	10	3
-	+	15	0
-	+	11	0
-	+	14	0
-	+	11	30
-	+	13	57
-	+	10	23
-	+	10	0
-	+	15	0
-	+	33	20
-	+	7	25
-	+	7	0
-	+	7	90
-	+	7	27
-	+	7	25
-	+	10	0
-	+	7	0
-	+	10	0
-	+	15	0
-	+	6	0
-	+	4	24
-	+	4	0
-	+	5	0
-	+	7	0
-	+	15	0
-	+	7	0
-	+	8	0
-	+	7	0
-	+	9	0
-	+	15	0
-	+	8	0
-	+	21	0
-	+	8	0
-	+	54	0
-	+	53	0
-	+	17	0
-	+	31	0
-	+	17	0
-	+	8	0
-	+	9	0
 
 > ~/.config/setup.fish
 	*	1740215028	0
@@ -23287,62 +23639,6 @@ $
 	+	5468	0
 	+	1	0
 
-> ~/bash/oldfiles.bash
-	*	1736537814	0
-	"	18	4
-	.	18	0
-	+	2	1
-	+	2	12
-	+	2	49
-	+	2	12
-	+	2	0
-	+	5	1
-	+	1	10
-	+	2	62
-	+	2	34
-	+	2	1
-	+	2	16
-	+	2	0
-	+	10	33
-	+	2	68
-	+	5	66
-	+	5	0
-	+	2	13
-	+	5	23
-	+	6	51
-	+	10	28
-	+	19	22
-	+	2	107
-	+	12	0
-	+	7	0
-	+	1	0
-	+	12	0
-	+	2	83
-	+	2	0
-	+	20	0
-	+	20	1
-	+	20	16
-	+	4	0
-	+	2	1
-	+	4	97
-	+	4	1
-	+	2	0
-	+	3	27
-	+	4	1
-	+	5	1
-	+	4	0
-	+	5	0
-	+	14	0
-	+	10	0
-	+	12	0
-	+	9	0
-	+	12	0
-	+	11	0
-	+	19	0
-	+	20	0
-	+	8	0
-	+	18	0
-
 > ~/bash/pwd-oldfiles.bash
 	*	1736537812	0
 	"	13	0
@@ -24781,49 +25077,6 @@ $
 	+	15	0
 	+	21	0
 
-> ~/ui-components-css/filters_and_pagination.py
-	*	1735902845	0
-	"	213	12
-	^	205	0
-	.	216	0
-	+	135	0
-	+	95	0
-	+	1	0
-	+	2	0
-	+	1	0
-	+	2	12
-	+	3	0
-	+	9	0
-	+	24	0
-	+	5	0
-	+	6	0
-	+	52	54
-	+	5	0
-	+	8	0
-	+	87	0
-	+	147	0
-	+	79	0
-	+	85	48
-	+	3	26
-	+	4	0
-	+	3	26
-	+	177	53
-	+	211	53
-	+	155	0
-	+	152	0
-	+	39	0
-	+	154	0
-	+	112	27
-	+	216	0
-	+	214	37
-	+	216	33
-	+	217	0
-	+	215	33
-	+	203	0
-	+	204	12
-	+	205	0
-	+	216	0
-
 > ~/tmp/cheem.txt
 	*	1735846910	0
 	"	6	0
@@ -24836,137 +25089,6 @@ $
 	+	2	11
 	+	4	0
 	+	6	0
-
-> ~/ui-components-css/flask-history-dashboard.py
-	*	1735843691	0
-	"	24	0
-	.	24	0
-	+	32	0
-	+	36	0
-	+	35	0
-	+	13	59
-	+	14	4
-	+	18	0
-	+	14	7
-	+	18	0
-	+	13	36
-	+	18	0
-	+	16	3
-	+	19	35
-	+	17	7
-	+	1	0
-	+	19	86
-	+	24	0
-	+	25	0
-	+	21	34
-	+	22	27
-	+	23	73
-	+	24	0
-
-> ~/ui-components-css/ui-components-css-api.py
-	*	1735842191	0
-	"	155	4
-	^	20	43
-	.	10	0
-	+	85	17
-	+	85	7
-	+	85	18
-	+	85	17
-	+	85	12
-	+	85	18
-	+	85	0
-	+	85	45
-	+	85	25
-	+	43	22
-	+	85	0
-	+	85	41
-	+	85	8
-	+	85	32
-	+	85	0
-	+	64	0
-	+	63	0
-	+	68	0
-	+	62	0
-	+	69	3
-	+	70	0
-	+	70	84
-	+	71	33
-	+	72	46
-	+	72	37
-	+	72	4
-	+	74	11
-	+	74	33
-	+	74	4
-	+	76	4
-	+	82	10
-	+	83	4
-	+	84	66
-	+	76	23
-	+	73	0
-	+	72	0
-	+	72	3
-	+	74	0
-	+	77	0
-	+	76	33
-	+	79	32
-	+	77	24
-	+	79	38
-	+	77	25
-	+	79	84
-	+	7	10
-	+	41	67
-	+	156	19
-	+	156	0
-	+	156	36
-	+	156	27
-	+	156	19
-	+	156	5
-	+	1	0
-	+	156	0
-	+	156	15
-	+	156	20
-	+	156	11
-	+	156	5
-	+	156	0
-	+	23	0
-	+	40	4
-	+	41	81
-	+	6	49
-	+	10	0
-	+	58	0
-	+	72	0
-	+	58	37
-	+	58	41
-	+	5	7
-	+	7	7
-	+	5	7
-	+	7	7
-	+	46	54
-	+	10	0
-	+	58	41
-	+	32	52
-	+	58	15
-	+	58	9
-	+	58	11
-	+	361	141
-	+	362	0
-	+	361	141
-	+	56	24
-	+	56	12
-	+	54	26
-	+	55	67
-	+	56	14
-	+	52	25
-	+	53	66
-	+	56	13
-	+	56	39
-	+	56	25
-	+	13	83
-	+	20	42
-	+	58	0
-	+	56	0
-	+	13	73
-	+	10	0
 
 > ~/ui-components-css/flask-history.py
 	*	1735842014	0
@@ -25171,10 +25293,6 @@ $
 
 > ~/hateoas/data/ui-components-css-history.db
 	*	1735841173	0
-	"	1	0
-
-> ~/ui-components-css/data/ui-components-css-history.db
-	*	1735841165	0
 	"	1	0
 
 > ~/.config/shell_data/history.db
@@ -26362,43 +26480,6 @@ $
 	.	1	0
 	+	1	0
 
-> ~/bash/insert_oldfiles.bash
-	*	1735655095	0
-	"	1	0
-	^	5	1
-	.	5	0
-	+	1	33
-	+	1	14
-	+	1	13
-	+	1	134
-	+	1	0
-	+	1	32
-	+	1	0
-	+	1	32
-	+	1	45
-	+	1	88
-	+	1	52
-	+	1	9
-	+	1	0
-	+	1	10
-	+	1	27
-	+	1	0
-	+	1	37
-	+	1	0
-	+	1	2
-	+	1	0
-	+	1	10
-	+	1	0
-	+	1	1
-	+	1	0
-	+	1	1
-	+	1	0
-	+	1	10
-	+	1	0
-	+	2	0
-	+	10	0
-	+	5	0
-
 > /usr/bin/bash
 	*	1735654434	0
 	"	1	0
@@ -27118,44 +27199,6 @@ $
 	+	9	0
 	+	8	0
 	+	12	0
-
-> ~/.config/alias.bash
-	*	1735236611	0
-	"	1	0
-	^	22	130
-	.	22	129
-	+	27	32
-	+	16	72
-	+	18	38
-	+	31	0
-	+	29	0
-	+	15	0
-	+	34	0
-	+	32	8
-	+	29	0
-	+	32	33
-	+	33	6
-	+	32	1
-	+	34	0
-	+	33	108
-	+	33	6
-	+	31	1
-	+	18	162
-	+	18	14
-	+	18	163
-	+	23	169
-	+	23	0
-	+	18	58
-	+	34	0
-	+	19	0
-	+	20	17
-	+	21	6
-	+	11	58
-	+	12	26
-	+	21	54
-	+	16	41
-	+	17	15
-	+	22	129
 
 > ~/.config/functions.fish
 	*	1735236430	0
@@ -28283,26 +28326,6 @@ $
 	+	7	0
 	+	4	0
 	+	8	0
-
-> ~/ui-components-css/filter-and-pagination-schemas.txt
-	*	1732727631	0
-	"	1	0
-	.	13	0
-	+	9	21
-	+	10	25
-	+	7	16
-	+	11	33
-	+	12	0
-	+	9	8
-	+	10	12
-	+	11	14
-	+	12	11
-	+	9	48
-	+	12	21
-	+	2	37
-	+	3	0
-	+	1	0
-	+	13	0
 
 > ~/ui-components-css/requirements.txt
 	*	1732656257	0
